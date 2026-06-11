@@ -5,48 +5,40 @@ import sharp from 'sharp'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
+import { Users } from './collections/Users'
+import { Media } from './collections/Media'
+import { Tours } from './collections/Tours'
+import { Transfers } from './collections/Transfers'
+import { Bookings } from './collections/Bookings'
+import { GlobalSettings } from './globals/GlobalSettings'
+
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfig({
   admin: {
-    user: 'users',
+    user: Users.slug,
     importMap: {
       baseDir: path.resolve(dirname),
     },
   },
 
+  localization: {
+    locales: ['en', 'es'],
+    defaultLocale: 'en',
+    fallback: true,
+  },
+
   collections: [
-    // Users collection (required for admin auth)
-    {
-      slug: 'users',
-      auth: true,
-      admin: {
-        useAsTitle: 'email',
-      },
-      fields: [],
-    },
-    // Media collection (placeholder — fully configured in Phase 2)
-    {
-      slug: 'media',
-      upload: {
-        staticDir: path.resolve(dirname, '../media'),
-        imageSizes: [
-          { name: 'thumbnail', width: 400, height: undefined, position: 'centre' },
-          { name: 'card', width: 800, height: undefined, position: 'centre' },
-          { name: 'hero', width: 1600, height: undefined, position: 'centre' },
-          { name: 'og', width: 1200, height: 630, position: 'centre' },
-        ],
-        mimeTypes: ['image/*'],
-      },
-      fields: [
-        {
-          name: 'alt',
-          type: 'text',
-          required: true,
-        },
-      ],
-    },
+    Users,
+    Media,
+    Tours,
+    Transfers,
+    Bookings,
+  ],
+
+  globals: [
+    GlobalSettings,
   ],
 
   db: mongooseAdapter({

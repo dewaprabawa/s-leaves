@@ -20,6 +20,12 @@ export const GlobalSettings: GlobalConfig = {
               defaultValue: 'S-Leaves',
             },
             {
+              name: 'logo',
+              type: 'upload',
+              relationTo: 'media',
+              label: 'Website Logo Image',
+            },
+            {
               name: 'contactInfo',
               type: 'group',
               fields: [

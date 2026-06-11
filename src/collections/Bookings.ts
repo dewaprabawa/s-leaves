@@ -123,7 +123,21 @@ export const Bookings: CollectionConfig = {
           type: 'number',
           defaultValue: 0,
         },
+        {
+          name: 'infants',
+          type: 'number',
+          defaultValue: 0,
+        },
       ],
+    },
+    {
+      name: 'selectedAddons',
+      type: 'relationship',
+      relationTo: 'addons',
+      hasMany: true,
+      admin: {
+        description: 'Selected add-ons for this booking',
+      },
     },
     {
       name: 'flightDetails',
@@ -135,6 +149,56 @@ export const Bookings: CollectionConfig = {
       ],
       admin: {
         description: 'Required only for airport transfers',
+      },
+    },
+    {
+      name: 'selectedVehicle',
+      type: 'text',
+      admin: {
+        description: 'Selected vehicle class for transfers',
+      },
+    },
+    {
+      name: 'selectedDropPoints',
+      type: 'array',
+      admin: {
+        description: 'List of extra drop-off locations selected',
+      },
+      fields: [
+        {
+          name: 'name',
+          type: 'text',
+          required: true,
+        },
+      ],
+    },
+    {
+      name: 'transferNotes',
+      type: 'textarea',
+      admin: {
+        description: 'Custom notes or details specifically for the transfer booking',
+      },
+    },
+    {
+      name: 'specialRequests',
+      type: 'textarea',
+      admin: {
+        description: 'Any special requests or instructions from the customer',
+      },
+    },
+    {
+      name: 'selectedActivityOption',
+      type: 'text',
+      admin: {
+        description: 'Selected activity/package option for tours',
+      },
+    },
+    {
+      name: 'totalPrice',
+      type: 'number',
+      admin: {
+        position: 'sidebar',
+        readOnly: true,
       },
     },
     {

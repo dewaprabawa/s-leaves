@@ -5,11 +5,15 @@ import sharp from 'sharp'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
+import { Pages } from './collections/Pages'
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
 import { Tours } from './collections/Tours'
 import { Transfers } from './collections/Transfers'
 import { Bookings } from './collections/Bookings'
+import { Addons } from './collections/Addons'
+import { Reviews } from './collections/Reviews'
+import { Activities } from './collections/Activities'
 import { GlobalSettings } from './globals/GlobalSettings'
 
 const filename = fileURLToPath(import.meta.url)
@@ -30,11 +34,15 @@ export default buildConfig({
   },
 
   collections: [
+    Pages,
     Users,
     Media,
     Tours,
     Transfers,
     Bookings,
+    Addons,
+    Reviews,
+    Activities,
   ],
 
   globals: [

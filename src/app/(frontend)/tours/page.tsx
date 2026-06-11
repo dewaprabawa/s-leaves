@@ -1,5 +1,7 @@
 import { getPayload } from "@/lib/payload"
-import Link from "next/link"
+import ToursListClient from "@/components/ToursListClient"
+import type { Metadata } from "next"
+import { Suspense } from "react"
 
 export const revalidate = 3600 // Cache for 1 hour
 
@@ -11,6 +13,9 @@ const MOCK_TOURS = [
     slug: 'bali-highlights',
     duration: 'Full Day (8 Hours)',
     location: 'Ubud, Bali',
+    rating: 4.9,
+    reviewCount: 1568,
+    isBestseller: true,
     pricing: { currency: 'USD', basePrice: 85 },
     categoryTags: [{ id: '1', tag: 'Culture' }, { id: '2', tag: 'Nature' }]
   },
@@ -20,17 +25,36 @@ const MOCK_TOURS = [
     slug: 'komodo-expedition',
     duration: '3 Days, 2 Nights',
     location: 'Flores, Indonesia',
+    rating: 5.0,
+    reviewCount: 9210,
+    isBestseller: true,
     pricing: { currency: 'USD', basePrice: 450 },
-    categoryTags: [{ id: '3', tag: 'Adventure' }, { id: '4', tag: 'Wildlife' }]
+    categoryTags: [{ id: '3', tag: 'Adventure' }, { id: '4', tag: 'Wildlife' }, { id: '5', tag: 'Ocean' }]
+  },
+  {
+    id: 'mock-3',
+    title: 'Mount Batur Sunrise Volcano Trekking',
+    slug: 'mount-batur-trek',
+    duration: '6 Hours (Early Morning)',
+    location: 'Kintamani, Bali',
+    rating: 4.8,
+    reviewCount: 776,
+    isBestseller: false,
+    pricing: { currency: 'USD', basePrice: 60 },
+    categoryTags: [{ id: '6', tag: 'Adventure' }, { id: '7', tag: 'Nature' }]
   }
 ]
 
-export const metadata = {
-  title: "Explore Tours | S-Leaves",
-  description: "Discover our curated selection of premium travel experiences.",
+export const metadata: Metadata = {
+  title: "Explore Curated Tours | S-Leaves",
+  description: "Browse our hand-picked day tours, volcano trekking packages, and luxury island expeditions across Bali and Flores.",
 }
 
-export default async function ToursPage() {
+type Props = {
+  searchParams: Promise<{ search?: string; category?: string; date?: string; wishlist?: string }>
+}
+
+export default async function ToursPage({ searchParams }: Props) {
   const payload = await getPayload()
   
   let tours: any[] = []
@@ -40,8 +64,8 @@ export default async function ToursPage() {
     try {
       const { docs } = await payload.find({
         collection: 'tours',
-        depth: 1,
-        limit: 50,
+        depth: 2, // Fetch relations (specifically, media heroImage etc.)
+        limit: 100,
       })
       tours = docs
     } catch (e) {
@@ -60,87 +84,38 @@ export default async function ToursPage() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 py-16 px-6">
+    <main className="min-h-screen bg-gray-50 dark:bg-gray-950/40 py-16 px-4 sm:px-6 transition-colors duration-200">
       <div className="max-w-7xl mx-auto space-y-12">
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Curated Experiences
+        
+        {/* Title Header */}
+        <div className="text-center space-y-4 max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-4 py-1.5 text-[10px] font-black uppercase tracking-wider text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-300 border border-emerald-100/30">
+            Guided Adventures
+          </div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white leading-none">
+            Curated S-Leaves Experiences
           </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-550 dark:text-gray-400 font-medium leading-relaxed">
             Embark on unforgettable journeys with our expertly crafted tours. 
-            From serene nature walks to thrilling multi-day expeditions.
+            From serene nature walks to thrilling multi-day island expeditions.
           </p>
         </div>
 
         {isUsingMockData && (
-          <div className="rounded-lg bg-amber-50 dark:bg-amber-900/30 p-4 text-sm text-amber-800 dark:text-amber-200 border border-amber-200 dark:border-amber-800/50 text-center max-w-2xl mx-auto">
-            <strong>Database Connection Error:</strong> We are currently unable to connect to the database. Displaying mock data for demonstration purposes.
+          <div className="rounded-2xl bg-amber-50 dark:bg-amber-955/20 p-4 text-xs font-semibold text-amber-850 dark:text-amber-300 border border-amber-200/50 dark:border-amber-900/30 text-center max-w-md mx-auto">
+            <strong>Demo Mode:</strong> Displaying offline mock experiences.
           </div>
         )}
 
-        {tours.length === 0 ? (
-          <div className="text-center py-20 bg-white dark:bg-gray-900 rounded-2xl shadow-sm ring-1 ring-gray-900/5">
-            <h3 className="text-xl font-medium text-gray-900 dark:text-white">No tours available</h3>
-            <p className="mt-2 text-gray-500">Check back soon for new experiences!</p>
+        {/* Sidebar + Filter Grid layout client component */}
+        <Suspense fallback={
+          <div className="text-center py-24">
+            <p className="text-gray-500 font-semibold">Loading experiences catalog...</p>
           </div>
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {tours.map((tour) => (
-              <Link 
-                key={tour.id} 
-                href={`/tours/${tour.slug}`}
-                className="group relative flex flex-col bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1"
-              >
-                {/* Hero Image Placeholder */}
-                <div className="aspect-[4/3] bg-gray-200 dark:bg-gray-800 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                  {/* Mock logic: Normally we'd render the relationTo media URL here */}
-                  <div className="absolute inset-0 flex items-center justify-center text-gray-400 dark:text-gray-600">
-                    <svg className="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  
-                  {/* Price Badge */}
-                  <div className="absolute bottom-4 left-4 z-20">
-                    <span className="inline-flex items-center rounded-md bg-white/90 backdrop-blur-sm px-3 py-1 text-sm font-semibold text-gray-900">
-                      {tour.pricing?.currency} {tour.pricing?.basePrice}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="flex flex-col flex-1 p-6">
-                  <div className="flex items-center gap-2 mb-3 flex-wrap">
-                    {tour.categoryTags?.map((t: any) => (
-                      <span key={t.id || t.tag} className="inline-flex items-center rounded-full bg-emerald-50 dark:bg-emerald-950/50 px-2.5 py-0.5 text-xs font-medium text-emerald-700 dark:text-emerald-400">
-                        {t.tag}
-                      </span>
-                    ))}
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
-                    {tour.title}
-                  </h3>
-                  
-                  <div className="mt-auto pt-6 flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
-                    <div className="flex items-center gap-1.5">
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      {tour.duration}
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      {tour.location}
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        )}
+        }>
+          <ToursListClient initialTours={tours} />
+        </Suspense>
+        
       </div>
     </main>
   )

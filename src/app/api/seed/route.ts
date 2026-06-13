@@ -24,7 +24,7 @@ async function getMediaBuffer(url: string, filename: string) {
   }
 }
 
-export async function GET() {
+export async function POST() {
   try {
     const payload = await getPayload()
     if (!payload) {

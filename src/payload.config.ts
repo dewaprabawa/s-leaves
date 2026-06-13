@@ -15,6 +15,7 @@ import { Addons } from './collections/Addons'
 import { Reviews } from './collections/Reviews'
 import { Activities } from './collections/Activities'
 import { GlobalSettings } from './globals/GlobalSettings'
+import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -47,6 +48,16 @@ export default buildConfig({
 
   globals: [
     GlobalSettings,
+  ],
+
+  plugins: [
+    vercelBlobStorage({
+      enabled: true,
+      collections: {
+        media: true,
+      },
+      token: process.env.BLOB_READ_WRITE_TOKEN,
+    }),
   ],
 
   db: mongooseAdapter({

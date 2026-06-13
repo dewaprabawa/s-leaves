@@ -1,10 +1,19 @@
 import type { GlobalConfig } from 'payload'
+import { revalidatePath } from 'next/cache'
 
 export const GlobalSettings: GlobalConfig = {
   slug: 'global-settings',
   label: 'Global Settings',
   access: {
     read: () => true,
+  },
+  hooks: {
+    afterChange: [
+      ({ doc }) => {
+        revalidatePath('/', 'layout')
+        return doc
+      }
+    ]
   },
   fields: [
     {

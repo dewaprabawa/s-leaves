@@ -396,13 +396,14 @@ async function run() {
           from: 'Ngurah Rai Airport (DPS)',
           to: 'Ubud Area',
         },
-        vehicleType: 'Toyota Avanza / Suzuki Ertiga (Standard MPV)',
-        capacity: 4,
-        media: mediaDocs[3]?.id,
-        pricing: {
-          currency: 'USD',
-          basePrice: 35,
-        },
+        vehicles: [
+          {
+            name: 'Toyota Avanza / Suzuki Ertiga (Standard MPV)',
+            capacity: 4,
+            basePrice: 35,
+            media: mediaDocs[3]?.id,
+          }
+        ],
         metaTitle: 'Private Airport Transfer from DPS Airport to Ubud | S-Leaves',
         metaDescription: 'Book a hassle-free private transfer from Ngurah Rai Bali Airport directly to Ubud. English-speaking driver, toll fee and parking included.',
       },
@@ -413,13 +414,14 @@ async function run() {
           from: 'Ngurah Rai Airport (DPS)',
           to: 'Seminyak / Canggu / Kuta Area',
         },
-        vehicleType: 'Toyota Alphard (Executive Premium Class)',
-        capacity: 6,
-        media: mediaDocs[3]?.id,
-        pricing: {
-          currency: 'USD',
-          basePrice: 85,
-        },
+        vehicles: [
+          {
+            name: 'Toyota Alphard (Executive Premium Class)',
+            capacity: 6,
+            basePrice: 85,
+            media: mediaDocs[3]?.id,
+          }
+        ],
         metaTitle: 'Luxury Airport Transfer: DPS to Seminyak & Canggu | S-Leaves',
         metaDescription: 'Experience VIP travel with our premium Toyota Alphard private airport transfer from Bali airport to Seminyak or Canggu.',
       },

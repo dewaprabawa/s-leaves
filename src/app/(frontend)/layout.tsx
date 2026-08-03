@@ -14,6 +14,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Sekar Bali Activity | Premium Bali Tours",
   description: "Discover extraordinary tours and private transfers across Bali and Indonesia.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 }
 
 const SETTINGS = {
@@ -41,7 +46,7 @@ export default function RootLayout({
             <Link href="#experiences" className="hover:text-brand-green transition-colors">Experiences</Link>
             <Link href="#itinerary" className="hover:text-brand-green transition-colors">The route</Link>
             <Link href="#about" className="hover:text-brand-green transition-colors">Our way</Link>
-            <Link href="https://wa.me/6281234567890" target="_blank" className="ml-4 px-5 py-2.5 rounded-full bg-brand-green text-sand hover:bg-brand-green-light transition-colors shadow-sm font-semibold">
+            <Link href="https://wa.me/6281775723663" target="_blank" className="ml-4 px-5 py-2.5 rounded-full bg-brand-green text-sand hover:bg-brand-green-light transition-colors shadow-sm font-semibold">
               Book a place
             </Link>
           </nav>

@@ -149,7 +149,7 @@ Available Schedules:
   },
   {
     id: "luwak-coffee-plantation",
-    title: "Luwak Coffee Plantation Experience",
+    title: "Luwak Coffee Plantation Experience (Umah Kuno)",
     slug: "luwak-coffee-plantation",
     category: "Culture",
     duration: "1.5 Hours",
@@ -164,8 +164,10 @@ Available Schedules:
         alt: "Traditional Umah Kuno Balinese Compound",
       },
     ],
-    shortDescription: "Discover the secrets behind Bali's world-famous coffee with a jungle walk, traditional roasting, and tasting flight.",
-    fullDescription: `Discover the secrets behind Bali's world-famous coffee. This standalone visit is perfect for a relaxing morning or a slow afternoon in the jungle.
+    shortDescription: "Discover the secrets behind Bali's world-famous coffee at Umah Kuno with a jungle walk, traditional roasting, and tasting flight.",
+    fullDescription: `Discover the secrets behind Bali's world-famous coffee at **Umah Kuno**. This standalone visit is perfect for a relaxing morning or a slow afternoon in the jungle.
+
+📍 **Location:** [Umah Kuno on Google Maps](https://share.google/VOs6vwV16r2bVERjV)
     
 Available Schedules (Flexible):
 - **Morning Session:** 10:00 AM – 11:30 AM

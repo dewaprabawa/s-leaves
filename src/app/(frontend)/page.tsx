@@ -190,10 +190,18 @@ export default function Home() {
               </div>
             </div>
             <div className="p-8 pt-12 flex flex-col flex-1">
-              <h3 className="text-2xl font-bold text-brand-green mb-3">Luwak Coffee Plantation Experience</h3>
-              <p className="text-brand-green-light text-sm mb-6 flex-1">
-                Discover the secrets behind Bali's world-famous coffee. This standalone visit is perfect for a relaxing morning or a slow afternoon in the jungle.
+              <h3 className="text-2xl font-bold text-brand-green mb-3">Luwak Coffee Plantation Experience (Umah Kuno)</h3>
+              <p className="text-brand-green-light text-sm mb-4 flex-1">
+                Discover the secrets behind Bali's world-famous coffee at Umah Kuno. This standalone visit is perfect for a relaxing morning or a slow afternoon in the jungle.
               </p>
+              <a 
+                href="https://share.google/VOs6vwV16r2bVERjV" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:underline mb-6"
+              >
+                📍 View Umah Kuno on Google Maps →
+              </a>
               
               <ul className="space-y-3 mb-8 border-t border-b border-brand-green/10 py-6">
                 <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
@@ -494,7 +502,7 @@ export default function Home() {
           </p>
           
           <Link 
-            href="https://wa.me/6281234567890" 
+            href="https://wa.me/6281775723663" 
             target="_blank"
             className="inline-flex items-center gap-3 bg-sand text-brand-green px-10 py-5 rounded-full text-xl font-bold hover:scale-105 hover:bg-white transition-all shadow-xl"
           >

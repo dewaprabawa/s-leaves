@@ -51,8 +51,8 @@ export default function ContactPage() {
             <div>
               <h4 className="font-bold text-gray-900 dark:text-white">Call or WhatsApp</h4>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">Our support line is available 24/7.</p>
-              <a href="tel:+6281234567890" className="text-emerald-600 dark:text-emerald-400 font-semibold text-sm hover:underline">
-                +62 812 3456 7890
+              <a href="https://wa.me/6281775723663" target="_blank" className="text-emerald-600 dark:text-emerald-400 font-semibold text-sm hover:underline">
+                +62 817-7572-3663
               </a>
             </div>
           </div>

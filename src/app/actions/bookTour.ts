@@ -2,6 +2,14 @@
 
 import { bookingSchema, type BookingFormData } from "@/lib/validations/booking"
 
+export async function checkAvailability(tourId: string, dateStr: string) {
+  return {
+    remainingSpots: 15,
+    isSoldOut: false,
+    maxCapacity: 20,
+  }
+}
+
 export async function submitBooking(data: BookingFormData) {
   try {
     const validatedData = bookingSchema.parse(data)

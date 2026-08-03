@@ -62,6 +62,10 @@ export default buildConfig({
 
   db: mongooseAdapter({
     url: process.env.DATABASE_URI || '',
+    connectOptions: {
+      family: 4,
+      serverSelectionTimeoutMS: 5000,
+    },
   }),
 
   editor: lexicalEditor(),

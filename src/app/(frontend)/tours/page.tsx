@@ -8,6 +8,45 @@ export const revalidate = 3600 // Cache for 1 hour
 // Mock data fallback if MongoDB is down
 const MOCK_TOURS = [
   {
+    id: 'mock-cycling',
+    title: 'Pejeng Village & Terrace Cycling',
+    slug: 'pejeng-village-cycling',
+    duration: '4 Hours (Morning / Afternoon)',
+    location: 'Pejeng, Ubud, Bali',
+    rating: 4.9,
+    reviewCount: 342,
+    isBestseller: true,
+    hasFreeCancellation: true,
+    pricing: { currency: 'USD', basePrice: 25 },
+    categoryTags: [{ id: 'c1', tag: 'Cycling' }, { id: 'c2', tag: 'Culture' }, { id: 'c3', tag: 'Nature' }]
+  },
+  {
+    id: 'mock-coffee',
+    title: 'Luwak Coffee Plantation Experience',
+    slug: 'luwak-coffee-experience',
+    duration: '1.5 Hours (Flexible)',
+    location: 'Ubud, Bali',
+    rating: 4.8,
+    reviewCount: 215,
+    isBestseller: true,
+    hasFreeCancellation: true,
+    pricing: { currency: 'USD', basePrice: 25 },
+    categoryTags: [{ id: 'k1', tag: 'Culinary' }, { id: 'k2', tag: 'Culture' }]
+  },
+  {
+    id: 'mock-cooking',
+    title: 'Traditional Balinese Dinner Cooking Class',
+    slug: 'balinese-cooking-class',
+    duration: '3 Hours (5:30 PM – 8:30 PM)',
+    location: 'Ubud, Bali',
+    rating: 5.0,
+    reviewCount: 418,
+    isBestseller: true,
+    hasFreeCancellation: true,
+    pricing: { currency: 'USD', basePrice: 25 },
+    categoryTags: [{ id: 'b1', tag: 'Culinary' }, { id: 'b2', tag: 'Culture' }]
+  },
+  {
     id: 'mock-1',
     title: 'Bali Highlights: Temples & Terraces',
     slug: 'bali-highlights',
@@ -16,6 +55,7 @@ const MOCK_TOURS = [
     rating: 4.9,
     reviewCount: 1568,
     isBestseller: true,
+    hasFreeCancellation: true,
     pricing: { currency: 'USD', basePrice: 85 },
     categoryTags: [{ id: '1', tag: 'Culture' }, { id: '2', tag: 'Nature' }]
   },
@@ -28,6 +68,7 @@ const MOCK_TOURS = [
     rating: 5.0,
     reviewCount: 9210,
     isBestseller: true,
+    hasFreeCancellation: true,
     pricing: { currency: 'USD', basePrice: 450 },
     categoryTags: [{ id: '3', tag: 'Adventure' }, { id: '4', tag: 'Wildlife' }, { id: '5', tag: 'Ocean' }]
   },
@@ -40,6 +81,7 @@ const MOCK_TOURS = [
     rating: 4.8,
     reviewCount: 776,
     isBestseller: false,
+    hasFreeCancellation: true,
     pricing: { currency: 'USD', basePrice: 60 },
     categoryTags: [{ id: '6', tag: 'Adventure' }, { id: '7', tag: 'Nature' }]
   }

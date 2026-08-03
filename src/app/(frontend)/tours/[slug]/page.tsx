@@ -11,36 +11,118 @@ import { Star, Award, ShieldCheck, ArrowLeft, MapPin, Clock } from "lucide-react
 
 export const revalidate = 3600 // Cache for 1 hour
 
-// Mock data fallback
-const MOCK_TOUR = {
-  id: 'mock-1',
-  title: 'Bali Highlights: Temples & Terraces',
-  slug: 'bali-highlights',
-  duration: 'Full Day (8 Hours)',
-  location: 'Ubud, Bali',
-  pricing: { currency: 'USD', basePrice: 85, childPrice: 45 },
-  categoryTags: [{ id: '1', tag: 'Culture' }, { id: '2', tag: 'Nature' }],
-  description: [
-    {
-      type: 'paragraph',
-      children: [{ text: 'Experience the spiritual heart of Bali on this comprehensive full-day tour. Visit sacred water temples, iconic rice terraces, and witness traditional craftsmanship.' }]
-    }
-  ],
-  itinerary: [
-    {
-      id: 'day1',
-      dayTitle: 'Morning: Sacred Monkeys & Temples',
-      description: [{ type: 'paragraph', children: [{ text: 'Start your day at the Sacred Monkey Forest Sanctuary, followed by a purification ritual at Tirta Empul.' }] }]
-    },
-    {
-      id: 'day2',
-      dayTitle: 'Afternoon: Tegalalang & Coffee',
-      description: [{ type: 'paragraph', children: [{ text: 'Walk through the breathtaking Tegalalang rice terraces and enjoy a local Luwak coffee tasting.' }] }]
-    }
-  ],
-  metaTitle: 'Bali Highlights Tour - S-Leaves',
-  metaDescription: 'Book the ultimate Bali highlights tour including Ubud, temples, and rice terraces.',
-  canonicalURL: 'https://s-leaves.com/tours/bali-highlights'
+const MOCK_TOURS_DETAIL: Record<string, any> = {
+  'pejeng-village-cycling': {
+    id: 'mock-cycling',
+    title: 'Pejeng Village & Terrace Cycling',
+    slug: 'pejeng-village-cycling',
+    duration: '4 Hours (Morning / Afternoon)',
+    location: 'Pejeng, Ubud, Bali',
+    rating: 4.9,
+    reviewCount: 342,
+    isBestseller: true,
+    hasFreeCancellation: true,
+    pricing: { currency: 'USD', basePrice: 25, childPrice: 22 },
+    categoryTags: [{ id: 'c1', tag: 'Cycling' }, { id: 'c2', tag: 'Culture' }, { id: 'c3', tag: 'Nature' }],
+    description: [
+      {
+        type: 'paragraph',
+        children: [{ text: 'Explore the real Bali. This dedicated cycling tour takes you away from the crowds and deep into the historic Pejeng district. Ride through local morning markets, ancient village pathways, and expansive rice terraces.' }]
+      }
+    ],
+    itinerary: [
+      { id: 'it1', dayTitle: '08:30 AM: Pickup & Briefing', description: [{ type: 'paragraph', children: [{ text: 'Driver picks you up from your Ubud hotel. Arrive at our Pejeng starting base for bike fitting and a safety briefing.' }] }] },
+      { id: 'it2', dayTitle: '09:00 AM: Pejeng Local Market', description: [{ type: 'paragraph', children: [{ text: 'Walk your bikes through the bustling traditional market. Learn about local spices, exotic fruits, and daily Balinese life.' }] }] },
+      { id: 'it3', dayTitle: '09:45 AM: Village & Temple Cruising', description: [{ type: 'paragraph', children: [{ text: 'Cycle through quiet neighborhood paths. Pass ancient temples and stop briefly at a traditional family compound to understand Balinese architecture.' }] }] },
+      { id: 'it4', dayTitle: '10:45 AM: Subak Rice Terraces', description: [{ type: 'paragraph', children: [{ text: 'The trail opens up to stunning, endless rice paddies. Cycle right on the field edges while learning about the traditional Subak irrigation system.' }] }] },
+      { id: 'it5', dayTitle: '12:00 PM: Fresh Coconut & Wind Down', description: [{ type: 'paragraph', children: [{ text: 'Finish the ride and celebrate with a freshly opened young coconut before heading back.' }] }] },
+      { id: 'it6', dayTitle: '12:30 PM: Hotel Drop-off', description: [{ type: 'paragraph', children: [{ text: 'Arrive back at your accommodation in Ubud.' }] }] }
+    ],
+    metaTitle: 'Pejeng Village & Terrace Cycling Tour - S-Leaves',
+    metaDescription: 'Ride through local morning markets, ancient village pathways, and expansive rice terraces in Pejeng, Ubud.'
+  },
+  'luwak-coffee-experience': {
+    id: 'mock-coffee',
+    title: 'Luwak Coffee Plantation Experience',
+    slug: 'luwak-coffee-experience',
+    duration: '1.5 Hours (Flexible)',
+    location: 'Ubud, Bali',
+    rating: 4.8,
+    reviewCount: 215,
+    isBestseller: true,
+    hasFreeCancellation: true,
+    pricing: { currency: 'USD', basePrice: 25, childPrice: 25 },
+    categoryTags: [{ id: 'k1', tag: 'Culinary' }, { id: 'k2', tag: 'Culture' }],
+    description: [
+      {
+        type: 'paragraph',
+        children: [{ text: "Discover the secrets behind Bali's world-famous coffee. This standalone visit is perfect for a relaxing morning or a slow afternoon in the jungle. Enjoy a guided jungle walk, learn the traditional roasting process, and savor a 10-variety tasting flight." }]
+      }
+    ],
+    itinerary: [
+      { id: 'lc1', dayTitle: 'Jungle Walk & Raw Farming', description: [{ type: 'paragraph', children: [{ text: 'Stroll through a lush, shaded plantation to see raw cocoa, vanilla, and coffee beans growing on the vine.' }] }] },
+      { id: 'lc2', dayTitle: 'Traditional Roasting Process', description: [{ type: 'paragraph', children: [{ text: 'Watch how local farmers traditionally roast coffee beans over open wood fires and try your hand at grinding them.' }] }] },
+      { id: 'lc3', dayTitle: 'Tasting Flight & Luwak Coffee', description: [{ type: 'paragraph', children: [{ text: 'Sit on a wooden deck overlooking a jungle ravine and enjoy a tasting board of 10 different local teas and coffees, including the famous Luwak coffee.' }] }] }
+    ],
+    metaTitle: 'Luwak Coffee Plantation Experience - S-Leaves',
+    metaDescription: 'Discover the secrets behind Balis world-famous Luwak coffee with a guided plantation walk and 10-variety tasting flight.'
+  },
+  'balinese-cooking-class': {
+    id: 'mock-cooking',
+    title: 'Traditional Balinese Dinner Cooking Class',
+    slug: 'balinese-cooking-class',
+    duration: '3 Hours (5:30 PM – 8:30 PM)',
+    location: 'Ubud, Bali',
+    rating: 5.0,
+    reviewCount: 418,
+    isBestseller: true,
+    hasFreeCancellation: true,
+    pricing: { currency: 'USD', basePrice: 25, childPrice: 22 },
+    categoryTags: [{ id: 'b1', tag: 'Culinary' }, { id: 'b2', tag: 'Culture' }],
+    description: [
+      {
+        type: 'paragraph',
+        children: [{ text: 'Immerse yourself in the flavors of Indonesia. Set in a beautiful traditional kitchen, this hands-on class teaches you the secrets of Balinese spices and techniques for cooking authentic dishes.' }]
+      }
+    ],
+    itinerary: [
+      { id: 'bc1', dayTitle: 'Spice Introduction', description: [{ type: 'paragraph', children: [{ text: 'Start the evening by learning about the roots, herbs, and spices essential to Balinese cooking (like galangal, turmeric, and lemongrass).' }] }] },
+      { id: 'bc2', dayTitle: 'Hands-on Cooking Station', description: [{ type: 'paragraph', children: [{ text: 'Work at your own station to chop, pound (using a traditional stone mortar), and cook 5 authentic dishes, including chicken satay and traditional sambal.' }] }] },
+      { id: 'bc3', dayTitle: 'The Feast & Digital Recipe Book', description: [{ type: 'paragraph', children: [{ text: 'Sit down with your fellow chefs in an open-air dining pavilion to enjoy the dinner you just prepared. Take home a digital recipe book!' }] }] }
+    ],
+    metaTitle: 'Traditional Balinese Dinner Cooking Class - S-Leaves',
+    metaDescription: 'Learn authentic Balinese cooking techniques, prepare 5 delicious dishes, and feast in an open-air pavilion in Ubud.'
+  },
+  'bali-highlights': {
+    id: 'mock-1',
+    title: 'Bali Highlights: Temples & Terraces',
+    slug: 'bali-highlights',
+    duration: 'Full Day (8 Hours)',
+    location: 'Ubud, Bali',
+    pricing: { currency: 'USD', basePrice: 85, childPrice: 45 },
+    categoryTags: [{ id: '1', tag: 'Culture' }, { id: '2', tag: 'Nature' }],
+    description: [
+      {
+        type: 'paragraph',
+        children: [{ text: 'Experience the spiritual heart of Bali on this comprehensive full-day tour. Visit sacred water temples, iconic rice terraces, and witness traditional craftsmanship.' }]
+      }
+    ],
+    itinerary: [
+      {
+        id: 'day1',
+        dayTitle: 'Morning: Sacred Monkeys & Temples',
+        description: [{ type: 'paragraph', children: [{ text: 'Start your day at the Sacred Monkey Forest Sanctuary, followed by a purification ritual at Tirta Empul.' }] }]
+      },
+      {
+        id: 'day2',
+        dayTitle: 'Afternoon: Tegalalang & Coffee',
+        description: [{ type: 'paragraph', children: [{ text: 'Walk through the breathtaking Tegalalang rice terraces and enjoy a local Luwak coffee tasting.' }] }]
+      }
+    ],
+    metaTitle: 'Bali Highlights Tour - S-Leaves',
+    metaDescription: 'Book the ultimate Bali highlights tour including Ubud, temples, and rice terraces.',
+    canonicalURL: 'https://s-leaves.com/tours/bali-highlights'
+  }
 }
 
 type Props = {
@@ -66,8 +148,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
-  if (!tour && resolvedParams.slug === 'bali-highlights') {
-    tour = MOCK_TOUR
+  if (!tour && MOCK_TOURS_DETAIL[resolvedParams.slug]) {
+    tour = MOCK_TOURS_DETAIL[resolvedParams.slug]
   }
 
   if (!tour) return { title: 'Tour Not Found' }
@@ -128,8 +210,8 @@ export default async function TourDetailPage({ params }: Props) {
     isMock = true
   }
 
-  if (!tour && resolvedParams.slug === 'bali-highlights') {
-    tour = MOCK_TOUR
+  if (!tour && MOCK_TOURS_DETAIL[resolvedParams.slug]) {
+    tour = MOCK_TOURS_DETAIL[resolvedParams.slug]
   }
 
   if (!tour) {

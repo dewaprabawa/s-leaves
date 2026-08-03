@@ -4,7 +4,7 @@ import { LivePreviewListener } from "@/components/LivePreviewListener"
 import { RenderBlocks } from "@/components/RenderBlocks"
 import Link from "next/link"
 
-export const revalidate = 3600 // Cache for 1 hour
+export const dynamic = 'force-dynamic'
 
 export default async function Home() {
   const payload = await getPayload()

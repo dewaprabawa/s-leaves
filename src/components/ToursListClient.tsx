@@ -303,9 +303,11 @@ export default function ToursListClient({ initialTours }: Props) {
                       </div>
 
                       {/* Flex Cancellation */}
-                      <div className="text-[9px] font-bold text-emerald-650 dark:text-emerald-450 flex items-center gap-1 bg-emerald-50/50 dark:bg-emerald-950/10 px-2 py-1 rounded-lg border border-emerald-100/10 w-fit">
-                        <ShieldCheck className="w-3 h-3 text-emerald-500" /> Free cancellation
-                      </div>
+                      {tour.hasFreeCancellation !== false && (
+                        <div className="text-[10px] font-bold text-emerald-650 dark:text-emerald-450 flex items-center gap-1 mt-1 bg-emerald-50/50 dark:bg-emerald-950/10 px-2 py-0.5 rounded-lg border border-emerald-100/10 w-fit">
+                          <ShieldCheck className="w-3 h-3 text-emerald-500" /> Free cancellation
+                        </div>
+                      )}
                     </div>
 
                     {/* Footer */}

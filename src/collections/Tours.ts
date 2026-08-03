@@ -86,6 +86,14 @@ export const Tours: CollectionConfig = {
               },
             },
             {
+              name: 'hasFreeCancellation',
+              type: 'checkbox',
+              defaultValue: true,
+              admin: {
+                description: 'Enable to display "Free cancellation up to 24h before" on the frontend.',
+              },
+            },
+            {
               name: 'categoryTags',
               type: 'array',
               fields: [

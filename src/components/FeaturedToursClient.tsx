@@ -213,9 +213,11 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
                     </div>
 
                     {/* Flexibility Indicator */}
-                    <div className="text-[10px] font-bold text-emerald-650 dark:text-emerald-450 flex items-center gap-1 bg-emerald-50/50 dark:bg-emerald-950/10 px-2.5 py-1.5 rounded-xl border border-emerald-100/10 w-fit">
-                      <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" /> Free cancellation up to 24h before
-                    </div>
+                    {tour.hasFreeCancellation !== false && (
+                      <span className="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 text-[10px] font-bold px-2 py-1 rounded-md border border-emerald-100 dark:border-emerald-800/50">
+                        <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" /> Free cancellation up to 24h before
+                      </span>
+                    )}
                   </div>
 
                   {/* Pricing and Action Footer */}

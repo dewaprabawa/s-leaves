@@ -284,9 +284,11 @@ export default async function TourDetailPage({ params }: Props) {
               </div>
 
               {/* Flex Cancellation */}
-              <div className="inline-flex items-center gap-1 text-emerald-300 bg-emerald-950/45 backdrop-blur-sm px-3 py-1.5 rounded-xl border border-emerald-500/20">
-                <ShieldCheck className="w-4 h-4 text-emerald-450" /> Free cancellation up to 24h before
-              </div>
+              {tour.hasFreeCancellation !== false && (
+                <div className="flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-50 dark:bg-emerald-900/20 text-emerald-750 dark:text-emerald-400 font-medium text-xs border border-emerald-100 dark:border-emerald-800">
+                  <ShieldCheck className="w-4 h-4 text-emerald-450" /> Free cancellation up to 24h before
+                </div>
+              )}
 
               <div className="flex items-center gap-4 text-white/80">
                 <span className="flex items-center gap-1.5">

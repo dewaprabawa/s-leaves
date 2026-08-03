@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Suspense } from "react"
-import { getPayload } from "@/lib/payload"
 import "../globals.css"
 import Link from "next/link"
 import { CurrencyProvider } from "@/context/CurrencyContext"
@@ -13,50 +12,31 @@ const inter = Inter({
   subsets: ["latin"],
 })
 
-export async function generateMetadata(): Promise<Metadata> {
-  const payload = await getPayload()
-  let settings: any = null
-
-  if (payload) {
-    try {
-      settings = await payload.findGlobal({
-        slug: 'global-settings',
-      })
-    } catch (e) {
-      // Fallback
-    }
-  }
-
-  const title = settings?.defaultMetaTitle || "S-Leaves | Premium Travel Experiences"
-  const description = settings?.defaultMetaDescription || "Discover extraordinary tours and unforgettable travel experiences."
-
-  return {
-    title,
-    description,
-  }
+export const metadata: Metadata = {
+  title: "S-Leaves | Premium Bali Tours & Transfers",
+  description: "Discover extraordinary tours and private transfers across Bali and Indonesia.",
 }
 
-export default async function RootLayout({
+const SETTINGS = {
+  siteName: "S-Leaves",
+  logoUrl: "/logo.png",
+  contactInfo: {
+    email: "info@sekarbaliactivity.com",
+    phone: "+62 812 3456 7890",
+  },
+  socialLinks: [
+    { platform: "Instagram", url: "https://instagram.com" },
+    { platform: "Facebook", url: "https://facebook.com" },
+  ]
+}
+
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const payload = await getPayload()
-  let settings: any = null
-
-  if (payload) {
-    try {
-      settings = await payload.findGlobal({
-        slug: 'global-settings',
-        depth: 2,
-      })
-    } catch (e) {
-      // Fallback
-    }
-  }
-
-  const siteName = settings?.siteName || "S-Leaves"
-  const logoUrl = settings?.logo?.url || "/logo.png"
+  const siteName = SETTINGS.siteName
+  const logoUrl = SETTINGS.logoUrl
 
   return (
     <html lang="en">
@@ -67,7 +47,6 @@ export default async function RootLayout({
           <Suspense fallback={
             <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-white/90 dark:bg-gray-950/90 border-b border-gray-200/80 dark:border-gray-800/80 h-16 flex items-center justify-between px-6">
               <div className="flex items-center gap-2 font-bold text-xl">
-                <img src={logoUrl} alt="S-Leaves Logo" className="w-9 h-9 rounded-xl object-cover" />
                 <span>{siteName}</span>
               </div>
               <div className="w-20 h-8 bg-gray-100 dark:bg-gray-800 rounded-lg animate-pulse" />
@@ -88,7 +67,6 @@ export default async function RootLayout({
               {/* Column 1: Brand & Bio */}
               <div className="space-y-4">
                 <div className="flex items-center gap-2.5 font-extrabold text-xl tracking-tight">
-                  <img src={logoUrl} alt="S-Leaves Logo" className="w-8 h-8 rounded-lg object-cover" />
                   <span>{siteName}</span>
                 </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed max-w-xs">
@@ -123,7 +101,6 @@ export default async function RootLayout({
                 <ul className="space-y-2 text-sm font-semibold text-gray-600 dark:text-gray-300">
                   <li><Link href="/about" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">About S-Leaves</Link></li>
                   <li><Link href="/contact" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Help & Contact</Link></li>
-                  <li><a href="/admin" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">CMS Admin Panel</a></li>
                   <li className="text-gray-400 text-xs font-normal">Opening Hours: 24/7 Support</li>
                 </ul>
               </div>
@@ -132,19 +109,15 @@ export default async function RootLayout({
               <div className="space-y-4">
                 <h4 className="text-xs font-black uppercase text-gray-400 tracking-wider">Contact Info</h4>
                 <div className="space-y-2 text-sm text-gray-600 dark:text-gray-300">
-                  {settings?.contactInfo?.email && (
-                    <p className="font-semibold">Email: <span className="text-gray-500 font-normal">{settings.contactInfo.email}</span></p>
-                  )}
-                  {settings?.contactInfo?.phone && (
-                    <p className="font-semibold">Phone: <span className="text-gray-500 font-normal">{settings.contactInfo.phone}</span></p>
-                  )}
+                  <p className="font-semibold">Email: <span className="text-gray-500 font-normal">{SETTINGS.contactInfo.email}</span></p>
+                  <p className="font-semibold">Phone: <span className="text-gray-500 font-normal">{SETTINGS.contactInfo.phone}</span></p>
                 </div>
                 
                 {/* Social links */}
                 <div className="flex items-center gap-3 pt-2">
-                  {settings?.socialLinks?.map((social: any, i: number) => {
-                    const isInstagram = social.platform?.toLowerCase() === 'instagram'
-                    const isFacebook = social.platform?.toLowerCase() === 'facebook'
+                  {SETTINGS.socialLinks.map((social: any, i: number) => {
+                    const isInstagram = social.platform.toLowerCase() === 'instagram'
+                    const isFacebook = social.platform.toLowerCase() === 'facebook'
                     return (
                       <a 
                         key={i} 

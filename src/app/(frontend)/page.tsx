@@ -1,91 +1,85 @@
-import { getPayload } from "@/lib/payload"
-import { draftMode } from "next/headers"
-import { LivePreviewListener } from "@/components/LivePreviewListener"
 import { RenderBlocks } from "@/components/RenderBlocks"
-import Link from "next/link"
+import { TOURS } from "@/data/tours"
+import { TRANSFERS } from "@/data/transfers"
 
-export const dynamic = 'force-dynamic'
-
-export default async function Home() {
-  const payload = await getPayload()
-  
-  if (!payload) {
-    return (
-      <main className="flex-1 flex flex-col items-center justify-center px-6 py-24">
-        <div className="text-center space-y-4">
-          <p className="text-red-500 font-semibold">Database Connection Offline</p>
-          <p className="text-sm text-gray-500">Could not initialize Payload CMS.</p>
-        </div>
-      </main>
-    )
+const HOME_LAYOUT = [
+  {
+    blockType: 'hero',
+    headline: 'Bespoke Journeys Through the Indonesian Archipelago',
+    subheadline: 'Discover the untouched beauty of Bali, Flores, and beyond with our private luxury tours, volcano treks, and premium transfers.',
+    backgroundImage: { url: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80' },
+  },
+  {
+    blockType: 'featuredTours',
+    title: 'Discover Our Featured Tours',
+    subtitle: 'Carefully curated day trips and multi-day expeditions across Indonesia’s most beautiful destinations.',
+    tours: TOURS,
+    buttonLabel: 'Explore All Tours',
+    buttonLink: '/tours',
+  },
+  {
+    blockType: 'featuredTransfers',
+    title: 'Private Airport & Hotel Transfers',
+    subtitle: 'Arrive in style and comfort. Enjoy a direct, private transfer with custom vehicle options and multiple drop locations.',
+    transfers: TRANSFERS,
+    buttonLabel: 'Explore All Transfers',
+    buttonLink: '/transfers',
+  },
+  {
+    blockType: 'testimonials',
+    title: 'Loved by Travelers Worldwide',
+    reviews: [
+      {
+        quote: 'My sunrise trek up Mount Batur was absolutely magical! The guides from S-Leaves were incredibly professional, prepared a delicious breakfast over volcanic steam, and took us to natural hot springs afterward.',
+        author: 'Sarah Jenkins',
+        role: 'Solo Explorer, United Kingdom',
+        rating: 5,
+      },
+      {
+        quote: 'S-Leaves made our luxury transfer from DPS airport to Ubud completely seamless. The driver was waiting for us with cold towels and water, and the vehicle was exceptionally clean and comfortable. A true 5-star service.',
+        author: 'Marc & Elena',
+        role: 'Family Vacation, France',
+        rating: 5,
+      },
+      {
+        quote: 'The Komodo National Park tour was the highlight of our Indonesian trip. Spotting the dragons, swimming alongside giant manta rays, and hiking Padar Island at sunset is something we will never forget.',
+        author: 'David K.',
+        role: 'Adventure Enthusiast, Australia',
+        rating: 5,
+      }
+    ],
+  },
+  {
+    blockType: 'faqs',
+    title: 'Frequently Asked Questions',
+    items: [
+      {
+        question: 'What is included in the tour packages?',
+        answer: 'Most day tours include private air-conditioned transportation, hotel pickup/dropoff, all entrance tickets, mineral water, and an English-speaking driver/guide. Meal packages and photography packages can be added as optional extras during checkout.',
+      },
+      {
+        question: 'Are pickup and drop-off included in airport transfers?',
+        answer: 'Yes! Our private airport transfers include airport pickup (with meet & greet service), drop-off directly to your hotel lobby, fuel fees, highway toll fees, and airport parking fees. There are no hidden charges.',
+      },
+      {
+        question: 'What is your cancellation and booking policy?',
+        answer: 'We offer full refunds for cancellations made up to 48 hours prior to your scheduled activity. Customized group bookings or luxury liveaboard voyages may follow a custom cancellation policy detailed in your booking summary.',
+      }
+    ],
+  },
+  {
+    blockType: 'callToAction',
+    title: 'Ready to Begin Your Next Adventure?',
+    text: 'Explore our selection of private day tours, multi-day expeditions, and luxury transport options.',
+    buttonLabel: 'Explore Tours',
+    buttonLink: '/tours',
   }
+]
 
-  const { isEnabled: isDraftMode } = await draftMode()
-
-  try {
-    const { docs } = await payload.find({
-      collection: 'pages',
-      where: { slug: { equals: 'home' } },
-      draft: isDraftMode,
-      limit: 1,
-      depth: 2, // Fetch relations (background images)
-    })
-
-    const page = docs[0] as any
-
-    if (!page) {
-      // Fallback instructions if seeding is not done yet
-      return (
-        <main className="flex-1 flex flex-col items-center justify-center px-6 py-24 bg-gray-50 dark:bg-gray-950 min-h-[70vh]">
-          <div className="text-center max-w-2xl mx-auto space-y-6 bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-800">
-            <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-1.5 text-sm font-medium text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
-              Setup Pending
-            </div>
-
-            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Welcome to <span className="text-emerald-600">S-Leaves</span>
-            </h1>
-
-            <p className="text-gray-600 dark:text-gray-400">
-              The dynamic Home page CMS data has not been seeded yet. Please run the database seed to create default content for landing, about, and contact pages.
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-              <form action="/api/seed" method="POST">
-                <button
-                  type="submit"
-                  className="inline-flex items-center justify-center rounded-lg bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 transition-colors"
-                >
-                  Run Database Seed
-                </button>
-              </form>
-              <Link
-                href="/admin"
-                className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:bg-gray-800 dark:text-white dark:ring-gray-700 dark:hover:bg-gray-700 transition-colors"
-              >
-                Open Admin Panel
-              </Link>
-            </div>
-          </div>
-        </main>
-      )
-    }
-
-    return (
-      <main className="min-h-screen bg-white dark:bg-gray-950 flex flex-col w-full">
-        {isDraftMode && <LivePreviewListener />}
-        <RenderBlocks layout={page.layout} />
-      </main>
-    )
-  } catch (error) {
-    console.error("Failed to load home page dynamic blocks", error)
-    return (
-      <main className="flex-1 flex flex-col items-center justify-center px-6 py-24">
-        <div className="text-center space-y-4">
-          <p className="text-red-500 font-semibold">Error Loading Page</p>
-          <p className="text-sm text-gray-500">Failed to render home page blocks from the database.</p>
-        </div>
-      </main>
-    )
-  }
+export default function Home() {
+  return (
+    <main className="min-h-screen bg-white dark:bg-gray-950 flex flex-col w-full">
+      <RenderBlocks layout={HOME_LAYOUT} />
+    </main>
+  )
 }

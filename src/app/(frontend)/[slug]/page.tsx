@@ -1,89 +1,49 @@
-import { getPayload } from "@/lib/payload"
 import { notFound } from "next/navigation"
-import { draftMode } from "next/headers"
 import type { Metadata } from "next"
-import { LivePreviewListener } from "@/components/LivePreviewListener"
-import { RenderBlocks } from "@/components/RenderBlocks"
-
-export const revalidate = 3600 // Cache for 1 hour
 
 type Props = {
   params: Promise<{ slug: string }>
 }
 
-export async function generateStaticParams() {
-  const payload = await getPayload()
-  if (!payload) return []
-
-  try {
-    const { docs } = await payload.find({
-      collection: 'pages',
-      limit: 100,
-    })
-    return docs
-      .filter((page: any) => page.slug !== 'home')
-      .map((page: any) => ({
-        slug: page.slug,
-      }))
-  } catch (e) {
-    return []
-  }
-}
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params
-  const payload = await getPayload()
-  
-  if (!payload) return { title: 'Not Found' }
-
-  try {
-    const { docs } = await payload.find({
-      collection: 'pages',
-      where: { slug: { equals: resolvedParams.slug } },
-      limit: 1,
-    })
-    const page = docs[0] as any
-    if (!page) return { title: 'Not Found' }
-
-    return {
-      title: `${page.title} | S-Leaves`,
-    }
-  } catch {
-    return { title: 'S-Leaves' }
+  return {
+    title: `${resolvedParams.slug.toUpperCase()} | S-Leaves`,
   }
 }
 
 export default async function CustomPage({ params }: Props) {
   const resolvedParams = await params
-  const payload = await getPayload()
-  
-  if (!payload) notFound()
 
-  const { isEnabled: isDraftMode } = await draftMode()
-
-  try {
-    const { docs } = await payload.find({
-      collection: 'pages',
-      where: { slug: { equals: resolvedParams.slug } },
-      draft: isDraftMode,
-      limit: 1,
-      depth: 2, // Fetch relation data for background images
-    })
-    
-    const page = docs[0] as any
-
-    if (!page) {
-      notFound()
-    }
-
+  if (resolvedParams.slug === 'about') {
     return (
-      <main className="min-h-screen bg-white dark:bg-gray-950 flex flex-col">
-        {isDraftMode && <LivePreviewListener />}
-        <RenderBlocks layout={page.layout} />
+      <main className="min-h-screen bg-white dark:bg-gray-950 py-20 px-6">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white">About S-Leaves</h1>
+          <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            At S-Leaves, we believe travel should be immersive, sustainable, and unforgettable. Our carefully curated itineraries connect conscious travelers with local guides, hidden natural wonders, and deep cultural heritage across Bali and Indonesia.
+          </p>
+        </div>
       </main>
     )
-  } catch (e) {
-    console.error("Failed to fetch page", e)
-    notFound()
   }
+
+  if (resolvedParams.slug === 'contact') {
+    return (
+      <main className="min-h-screen bg-white dark:bg-gray-950 py-20 px-6">
+        <div className="max-w-4xl mx-auto space-y-8">
+          <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white">Contact Us</h1>
+          <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            Have questions about our private tours or custom transfer packages? Get in touch with our 24/7 support team.
+          </p>
+          <div className="bg-gray-50 dark:bg-gray-900 p-6 rounded-2xl border border-gray-200 dark:border-gray-800 space-y-4">
+            <p className="font-semibold">Email: <span className="font-normal text-gray-600 dark:text-gray-400">info@sekarbaliactivity.com</span></p>
+            <p className="font-semibold">Phone/WhatsApp: <span className="font-normal text-gray-600 dark:text-gray-400">+62 812 3456 7890</span></p>
+          </div>
+        </div>
+      </main>
+    )
+  }
+
+  notFound()
 }

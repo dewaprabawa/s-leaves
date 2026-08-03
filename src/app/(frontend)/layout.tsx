@@ -4,6 +4,7 @@ import { Suspense } from "react"
 import "../globals.css"
 import Link from "next/link"
 import { Menu, Leaf } from "lucide-react"
+import { CurrencyProvider } from "@/context/CurrencyContext"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -52,7 +53,9 @@ export default function RootLayout({
 
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col w-full">
-          {children}
+          <CurrencyProvider>
+            {children}
+          </CurrencyProvider>
         </div>
 
         {/* Minimal Footer */}

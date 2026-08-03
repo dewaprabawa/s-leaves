@@ -1,206 +1,288 @@
+export interface TourAddon {
+  id: string
+  name: string
+  price: number
+  description?: string
+  isRequired?: boolean
+}
+
+export interface TourFaq {
+  id: string
+  question: string
+  answer: string
+}
+
+export interface TourItineraryItem {
+  id: string
+  time: string
+  title: string
+  description: string
+}
+
+export interface TourReview {
+  id: string
+  authorName: string
+  rating: number
+  comment: string
+  visitDate?: string
+}
+
 export interface Tour {
   id: string
   title: string
   slug: string
-  type: 'day-tour' | 'multi-day'
-  location: string
+  category: "Activity" | "Adventure" | "Culture"
   duration: string
-  rating: number
-  reviewCount: number
-  isBestseller: boolean
-  hasFreeCancellation: boolean
-  categoryTags: { id: string; tag: string }[]
-  pricing: {
-    currency: string
-    basePrice: number
-    childPrice?: number
-    infantPrice?: number
+  basePrice: number
+  childPrice?: number
+  heroImage: {
+    url: string
+    alt: string
   }
-  heroImage?: string
-  gallery?: string[]
-  description: string
-  itinerary: {
-    id: string
-    dayTitle: string
-    description: string
-  }[]
-  activityOptions?: {
-    name: string
-    priceDiff: number
-    description: string
-  }[]
-  metaTitle: string
-  metaDescription: string
+  gallery: { url: string; alt: string }[]
+  shortDescription: string
+  fullDescription: string
+  highlights: string[]
+  included: string[]
+  notIncluded: string[]
+  itinerary: TourItineraryItem[]
+  addons: TourAddon[]
+  faqs: TourFaq[]
+  reviews: TourReview[]
 }
 
 export const TOURS: Tour[] = [
   {
-    id: 'cycling-1',
-    title: 'Pejeng Village & Terrace Cycling',
-    slug: 'pejeng-village-cycling',
-    type: 'day-tour',
-    location: 'Pejeng, Ubud, Bali',
-    duration: '4 Hours (Morning / Afternoon)',
-    rating: 4.9,
-    reviewCount: 342,
-    isBestseller: true,
-    hasFreeCancellation: true,
-    categoryTags: [{ id: 'c1', tag: 'Cycling' }, { id: 'c2', tag: 'Culture' }, { id: 'c3', tag: 'Nature' }],
-    pricing: { currency: 'USD', basePrice: 25, childPrice: 22 },
-    heroImage: 'https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=1200&q=80',
+    id: "pejeng-cycling-tour",
+    title: "Pejeng Village & Terrace Cycling",
+    slug: "pejeng-cycling-tour",
+    category: "Activity",
+    duration: "4 Hours",
+    basePrice: 400000,
+    childPrice: 350000,
+    heroImage: {
+      url: "https://images.unsplash.com/photo-1554466989-bf8eec4c5408?q=80&w=2000&auto=format&fit=crop",
+      alt: "Cycling in Bali rice terraces",
+    },
     gallery: [
-      'https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80'
+      {
+        url: "https://images.unsplash.com/photo-1536768393526-9d3cc681aab2?q=80&w=1200&auto=format&fit=crop",
+        alt: "Balinese village",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
+        alt: "Rice paddies",
+      },
     ],
-    description: 'Explore the real Bali. This dedicated cycling tour takes you away from the crowds and deep into the historic Pejeng district. Ride through local morning markets, ancient village pathways, and expansive rice terraces.',
+    shortDescription: "Explore the real Bali away from the crowds through historic Pejeng district, morning markets, and expansive rice terraces.",
+    fullDescription: `**Explore the real Bali.** This dedicated cycling tour takes you away from the crowds and deep into the historic Pejeng district. Ride through local morning markets, ancient village pathways, and expansive rice terraces. 
+    
+Available Schedules:
+- **Morning Ride:** 8:30 AM – 12:30 PM
+- **Afternoon Ride:** 1:30 PM – 5:30 PM`,
+    highlights: [
+      "Cycle through quiet ancient village pathways",
+      "Visit a bustling traditional morning market",
+      "Ride along the edges of stunning Subak rice terraces",
+      "Enjoy a fresh young coconut to finish the ride",
+    ],
+    included: [
+      "Well-maintained mountain bikes and helmets",
+      "Professional English-speaking cycling guide",
+      "Mineral water during the ride",
+      "Fresh young coconut",
+      "Hotel pick-up and drop-off in Ubud area",
+    ],
+    notIncluded: ["Personal expenses", "Gratuities"],
     itinerary: [
-      { id: 'it1', dayTitle: '08:30 AM: Pickup & Briefing', description: 'Driver picks you up from your Ubud hotel. Arrive at our Pejeng starting base for bike fitting and a safety briefing.' },
-      { id: 'it2', dayTitle: '09:00 AM: Pejeng Local Market', description: 'Walk your bikes through the bustling traditional market. Learn about local spices, exotic fruits, and daily Balinese life.' },
-      { id: 'it3', dayTitle: '09:45 AM: Village & Temple Cruising', description: 'Cycle through quiet neighborhood paths. Pass ancient temples and stop briefly at a traditional family compound to understand Balinese architecture.' },
-      { id: 'it4', dayTitle: '10:45 AM: Subak Rice Terraces', description: 'The trail opens up to stunning, endless rice paddies. Cycle right on the field edges while learning about the traditional Subak irrigation system.' },
-      { id: 'it5', dayTitle: '12:00 PM: Fresh Coconut & Wind Down', description: 'Finish the ride and celebrate with a freshly opened young coconut before heading back.' },
-      { id: 'it6', dayTitle: '12:30 PM: Hotel Drop-off', description: 'Arrive back at your accommodation in Ubud.' }
+      {
+        id: "iti-pej-1",
+        time: "08:30 AM",
+        title: "Pickup & Briefing",
+        description: "Driver picks you up from your Ubud hotel. Arrive at our Pejeng starting base for bike fitting and a safety briefing.",
+      },
+      {
+        id: "iti-pej-2",
+        time: "09:00 AM",
+        title: "Pejeng Local Market",
+        description: "Walk your bikes through the bustling traditional market. Learn about local spices, exotic fruits, and daily Balinese life.",
+      },
+      {
+        id: "iti-pej-3",
+        time: "09:45 AM",
+        title: "Village & Temple Cruising",
+        description: "Cycle through quiet neighborhood paths. Pass ancient temples and stop briefly at a traditional family compound to understand Balinese architecture.",
+      },
+      {
+        id: "iti-pej-4",
+        time: "10:45 AM",
+        title: "Subak Rice Terraces",
+        description: "The trail opens up to stunning, endless rice paddies. Cycle right on the field edges while learning about the traditional Subak irrigation system.",
+      },
+      {
+        id: "iti-pej-5",
+        time: "12:00 PM",
+        title: "Fresh Coconut & Wind Down",
+        description: "Finish the ride and celebrate with a freshly opened young coconut before heading back.",
+      },
+      {
+        id: "iti-pej-6",
+        time: "12:30 PM",
+        title: "Hotel Drop-off",
+        description: "Arrive back at your accommodation in Ubud.",
+      },
     ],
-    activityOptions: [
-      { name: 'Morning Ride (8:30 AM – 12:30 PM)', priceDiff: 0, description: 'Morning tour session including market walk and coconut.' },
-      { name: 'Afternoon Ride (1:30 PM – 5:30 PM)', priceDiff: 0, description: 'Afternoon tour session including village cruising and rice terraces.' },
+    addons: [],
+    faqs: [
+      {
+        id: "faq-pej-1",
+        question: "Is the route difficult?",
+        answer: "The route is mostly flat with a few gentle inclines. It is suitable for all fitness levels.",
+      },
+      {
+        id: "faq-pej-2",
+        question: "Do you provide kids bikes?",
+        answer: "Yes, we have a limited number of smaller bikes and baby seats available. Please request them during booking.",
+      },
     ],
-    metaTitle: 'Pejeng Village & Terrace Cycling Tour | S-Leaves',
-    metaDescription: 'Ride through local morning markets, ancient village pathways, and expansive rice terraces in Pejeng, Ubud.'
+    reviews: [],
   },
   {
-    id: 'coffee-1',
-    title: 'Luwak Coffee Plantation Experience',
-    slug: 'luwak-coffee-experience',
-    type: 'day-tour',
-    location: 'Ubud, Bali',
-    duration: '1.5 Hours (Flexible Schedule)',
-    rating: 4.8,
-    reviewCount: 215,
-    isBestseller: true,
-    hasFreeCancellation: true,
-    categoryTags: [{ id: 'k1', tag: 'Culinary' }, { id: 'k2', tag: 'Culture' }],
-    pricing: { currency: 'USD', basePrice: 25, childPrice: 25 },
-    heroImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80',
+    id: "luwak-coffee-plantation",
+    title: "Luwak Coffee Plantation Experience",
+    slug: "luwak-coffee-plantation",
+    category: "Culture",
+    duration: "1.5 Hours",
+    basePrice: 400000,
+    heroImage: {
+      url: "https://images.unsplash.com/photo-1518057111178-44a106bad636?q=80&w=2000&auto=format&fit=crop",
+      alt: "Coffee beans roasting",
+    },
     gallery: [
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80'
+      {
+        url: "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1200&auto=format&fit=crop",
+        alt: "Coffee plantation",
+      },
     ],
-    description: "Discover the secrets behind Bali's world-famous coffee. This standalone visit is perfect for a relaxing morning or a slow afternoon in the jungle. Enjoy a guided jungle walk, learn the traditional roasting process, and savor a 10-variety tasting flight.",
+    shortDescription: "Discover the secrets behind Bali's world-famous coffee with a jungle walk, traditional roasting, and tasting flight.",
+    fullDescription: `Discover the secrets behind Bali's world-famous coffee. This standalone visit is perfect for a relaxing morning or a slow afternoon in the jungle.
+    
+Available Schedules (Flexible):
+- **Morning Session:** 10:00 AM – 11:30 AM
+- **Afternoon Session:** 2:00 PM – 3:30 PM
+
+*(Note: Minimum booking of 3 people required for this experience)*`,
+    highlights: [
+      "Stroll through a lush, shaded plantation",
+      "Watch local farmers roast coffee beans over open wood fires",
+      "Enjoy a tasting board of 10 different local teas and coffees",
+    ],
+    included: [
+      "Guided plantation tour",
+      "Coffee roasting demonstration",
+      "Tasting flight of 10 teas and coffees (including Luwak coffee)",
+    ],
+    notIncluded: ["Transportation to the plantation", "Additional food or drinks"],
     itinerary: [
-      { id: 'lc1', dayTitle: 'Jungle Walk & Raw Farming', description: 'Stroll through a lush, shaded plantation to see raw cocoa, vanilla, and coffee beans growing on the vine.' },
-      { id: 'lc2', dayTitle: 'Traditional Roasting Process', description: 'Watch how local farmers traditionally roast coffee beans over open wood fires and try your hand at grinding them.' },
-      { id: 'lc3', dayTitle: 'Tasting Flight & Luwak Coffee', description: 'Sit on a wooden deck overlooking a jungle ravine and enjoy a tasting board of 10 different local teas and coffees, including the famous Luwak coffee.' }
+      {
+        id: "iti-cof-1",
+        time: "Start",
+        title: "Jungle Walk",
+        description: "Stroll through a lush, shaded plantation to see raw cocoa, vanilla, and coffee beans growing on the vine.",
+      },
+      {
+        id: "iti-cof-2",
+        time: "Midway",
+        title: "The Roasting Process",
+        description: "Watch how local farmers traditionally roast coffee beans over open wood fires and try your hand at grinding them.",
+      },
+      {
+        id: "iti-cof-3",
+        time: "End",
+        title: "Tasting Flight",
+        description: "Sit on a wooden deck overlooking a jungle ravine and enjoy a tasting board of 10 different local teas and coffees, including the famous Luwak coffee.",
+      },
     ],
-    activityOptions: [
-      { name: 'Morning Session (10:00 AM – 11:30 AM)', priceDiff: 0, description: 'Morning plantation tour and tasting flight.' },
-      { name: 'Afternoon Session (2:00 PM – 3:30 PM)', priceDiff: 0, description: 'Afternoon plantation tour and tasting flight.' },
+    addons: [],
+    faqs: [
+      {
+        id: "faq-cof-1",
+        question: "Is transportation included?",
+        answer: "No, this is a standalone experience. You will need to arrange your own transport to the plantation.",
+      },
     ],
-    metaTitle: 'Luwak Coffee Plantation Experience | S-Leaves',
-    metaDescription: 'Discover the secrets behind Balis world-famous Luwak coffee with a guided plantation walk and 10-variety tasting flight.'
+    reviews: [],
   },
   {
-    id: 'cooking-1',
-    title: 'Traditional Balinese Dinner Cooking Class',
-    slug: 'balinese-cooking-class',
-    type: 'day-tour',
-    location: 'Ubud, Bali',
-    duration: '3 Hours (5:30 PM – 8:30 PM)',
-    rating: 5.0,
-    reviewCount: 418,
-    isBestseller: true,
-    hasFreeCancellation: true,
-    categoryTags: [{ id: 'b1', tag: 'Culinary' }, { id: 'b2', tag: 'Culture' }],
-    pricing: { currency: 'USD', basePrice: 25, childPrice: 22 },
-    heroImage: 'https://images.unsplash.com/photo-1518548419070-28628344d2cee?auto=format&fit=crop&w=1200&q=80',
+    id: "balinese-cooking-class",
+    title: "Traditional Balinese Dinner Cooking Class",
+    slug: "balinese-cooking-class",
+    category: "Culture",
+    duration: "3 Hours",
+    basePrice: 400000,
+    childPrice: 350000,
+    heroImage: {
+      url: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2000&auto=format&fit=crop",
+      alt: "Balinese cooking class ingredients",
+    },
     gallery: [
-      'https://images.unsplash.com/photo-1518548419070-28628344d2cee?auto=format&fit=crop&w=1200&q=80'
+      {
+        url: "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop",
+        alt: "Cooking with mortar and pestle",
+      },
     ],
-    description: 'Immerse yourself in the flavors of Indonesia. Set in a beautiful traditional kitchen, this hands-on class teaches you the secrets of Balinese spices and techniques for cooking authentic dishes.',
+    shortDescription: "Immerse yourself in the flavors of Indonesia with a hands-on cooking class in a beautiful traditional kitchen.",
+    fullDescription: `Immerse yourself in the flavors of Indonesia. Set in a beautiful traditional kitchen, this hands-on class teaches you the secrets of Balinese spices.
+    
+Available Schedule:
+- **Dinner Class:** 5:30 PM (17:30) – 8:30 PM`,
+    highlights: [
+      "Learn about essential Balinese spices and herbs",
+      "Cook 5 authentic dishes at your own station",
+      "Use traditional tools like a stone mortar",
+      "Enjoy your culinary creations in an open-air pavilion",
+    ],
+    included: [
+      "All cooking ingredients and equipment",
+      "English-speaking culinary instructor",
+      "The dinner you prepared",
+      "Digital recipe book",
+    ],
+    notIncluded: ["Transportation to the class venue"],
     itinerary: [
-      { id: 'bc1', dayTitle: 'Spice Introduction', description: 'Start the evening by learning about the roots, herbs, and spices essential to Balinese cooking (like galangal, turmeric, and lemongrass).' },
-      { id: 'bc2', dayTitle: 'Hands-on Cooking Station', description: 'Work at your own station to chop, pound (using a traditional stone mortar), and cook 5 authentic dishes, including chicken satay and traditional sambal.' },
-      { id: 'bc3', dayTitle: 'The Feast & Digital Recipe Book', description: 'Sit down with your fellow chefs in an open-air dining pavilion to enjoy the dinner you just prepared. Take home a digital recipe book!' }
+      {
+        id: "iti-cook-1",
+        time: "05:30 PM",
+        title: "Spice Introduction",
+        description: "Start the evening by learning about the roots, herbs, and spices essential to Balinese cooking (like galangal, turmeric, and lemongrass).",
+      },
+      {
+        id: "iti-cook-2",
+        time: "06:00 PM",
+        title: "Hands-on Cooking",
+        description: "Work at your own station to chop, pound (using a traditional stone mortar), and cook 5 authentic dishes, including chicken satay and traditional sambal.",
+      },
+      {
+        id: "iti-cook-3",
+        time: "07:30 PM",
+        title: "The Feast",
+        description: "Sit down with your fellow chefs in an open-air dining pavilion to enjoy the dinner you just prepared.",
+      },
+      {
+        id: "iti-cook-4",
+        time: "08:30 PM",
+        title: "Recipe Book",
+        description: "Take home a digital recipe book so you can recreate the magic in your own kitchen.",
+      },
     ],
-    activityOptions: [
-      { name: 'Dinner Class (5:30 PM – 8:30 PM)', priceDiff: 0, description: 'Evening hands-on cooking class and 5-course dinner feast.' },
+    addons: [],
+    faqs: [
+      {
+        id: "faq-cook-1",
+        question: "Can you accommodate dietary restrictions?",
+        answer: "Yes! We can adjust the recipes for vegetarians, vegans, and most allergies. Please let us know when booking.",
+      },
     ],
-    metaTitle: 'Traditional Balinese Dinner Cooking Class | S-Leaves',
-    metaDescription: 'Learn authentic Balinese cooking techniques, prepare 5 delicious dishes, and feast in an open-air pavilion in Ubud.'
-  },
-  {
-    id: 'highlight-1',
-    title: 'Bali Highlights: Temples & Terraces',
-    slug: 'bali-highlights',
-    type: 'day-tour',
-    location: 'Ubud, Bali',
-    duration: 'Full Day (8 Hours)',
-    rating: 4.9,
-    reviewCount: 1568,
-    isBestseller: true,
-    hasFreeCancellation: true,
-    categoryTags: [{ id: '1', tag: 'Culture' }, { id: '2', tag: 'Nature' }],
-    pricing: { currency: 'USD', basePrice: 85, childPrice: 45 },
-    heroImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80'
-    ],
-    description: 'Experience the spiritual heart of Bali on this comprehensive full-day tour. Visit sacred water temples, iconic rice terraces, and witness traditional craftsmanship.',
-    itinerary: [
-      { id: 'day1', dayTitle: 'Morning: Sacred Monkeys & Temples', description: 'Start your day at the Sacred Monkey Forest Sanctuary, followed by a purification ritual at Tirta Empul.' },
-      { id: 'day2', dayTitle: 'Afternoon: Tegalalang & Coffee', description: 'Walk through the breathtaking Tegalalang rice terraces and enjoy a local Luwak coffee tasting.' }
-    ],
-    metaTitle: 'Bali Highlights Tour | S-Leaves',
-    metaDescription: 'Book the ultimate Bali highlights tour including Ubud, temples, and rice terraces.'
-  },
-  {
-    id: 'komodo-1',
-    title: 'Komodo Dragon 3-Day Expedition',
-    slug: 'komodo-expedition',
-    type: 'multi-day',
-    location: 'Flores, Indonesia',
-    duration: '3 Days, 2 Nights',
-    rating: 5.0,
-    reviewCount: 9210,
-    isBestseller: true,
-    hasFreeCancellation: true,
-    categoryTags: [{ id: '3', tag: 'Adventure' }, { id: '4', tag: 'Wildlife' }, { id: '5', tag: 'Ocean' }],
-    pricing: { currency: 'USD', basePrice: 450, childPrice: 280 },
-    heroImage: 'https://images.unsplash.com/photo-1518548419070-28628344d2cee?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1518548419070-28628344d2cee?auto=format&fit=crop&w=1200&q=80'
-    ],
-    description: 'Embark on a voyage of a lifetime into the Komodo National Park. Track the ancient Komodo dragons in their natural habitat, hike majestic hills for panoramic island views, and snorkel in pristine waters filled with rich marine life.',
-    itinerary: [
-      { id: 'k1', dayTitle: 'Day 1: Welcome & Sunset Hike', description: 'Board our luxury liveaboard ship at Labuan Bajo. Sail to Kelor Island for snorkeling and continue to Padar Island.' },
-      { id: 'k2', dayTitle: 'Day 2: Dragons & Pink Beach', description: 'Trek with official park rangers to see the majestic Komodo dragons on Komodo Island. Relax on Pink Beach.' },
-      { id: 'k3', dayTitle: 'Day 3: Swim with Mantas', description: 'Visit Manta Point for a once-in-a-lifetime chance to swim alongside giant manta rays.' }
-    ],
-    metaTitle: 'Komodo Dragon 3-Day Expedition | S-Leaves',
-    metaDescription: 'Explore the stunning Komodo National Park on a 3-day luxury cruise.'
-  },
-  {
-    id: 'batur-1',
-    title: 'Mount Batur Sunrise Volcano Trekking',
-    slug: 'mount-batur-trek',
-    type: 'day-tour',
-    location: 'Kintamani, Bali',
-    duration: '6 Hours (Early Morning)',
-    rating: 4.8,
-    reviewCount: 776,
-    isBestseller: false,
-    hasFreeCancellation: true,
-    categoryTags: [{ id: '6', tag: 'Adventure' }, { id: '7', tag: 'Nature' }],
-    pricing: { currency: 'USD', basePrice: 60, childPrice: 35 },
-    heroImage: 'https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1542856391-010fb87dcfed?auto=format&fit=crop&w=1200&q=80'
-    ],
-    description: 'Ascend the sacred active volcano, Mount Batur, under a blanket of stars. Watch a magical sunrise over the Caldera lake, enjoy a breakfast cooked by volcanic steam, and relax in natural hot springs.',
-    itinerary: [
-      { id: 'b1', dayTitle: '03:30 AM: Start the Ascent', description: 'Arrive at the base of Mount Batur. Equip torches and follow your professional guide up the volcanic path.' },
-      { id: 'b2', dayTitle: '06:00 AM: Sunrise & Steam Breakfast', description: 'Reach the summit just in time for sunrise. Marvel at the golden hour views and enjoy hot tea with steam-cooked eggs.' }
-    ],
-    metaTitle: 'Mount Batur Sunrise Trekking & Hot Springs | S-Leaves',
-    metaDescription: 'Hike Mount Batur for a breathtaking volcanic sunrise, cook breakfast with natural steam, and soak in Kintamani hot springs.'
+    reviews: [],
   }
 ]

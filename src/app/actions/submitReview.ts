@@ -1,17 +1,22 @@
 "use server"
 
-import { reviewSchema, type ReviewFormData } from "@/lib/validations/review"
+export type ReviewFormData = {
+  tourId: string;
+  authorName: string;
+  rating: number;
+  comment: string;
+  visitDate?: string;
+}
 
 export async function submitReview(data: ReviewFormData) {
   try {
-    const validatedData = reviewSchema.parse(data)
     return {
       success: true,
       review: {
         id: `REV-${Date.now()}`,
-        authorName: validatedData.authorName,
-        rating: validatedData.rating,
-        comment: validatedData.comment,
+        authorName: data.authorName,
+        rating: data.rating,
+        comment: data.comment,
       }
     }
   } catch (error: any) {

@@ -11,23 +11,6 @@ import { Star, Award, ShieldCheck, ArrowLeft, MapPin, Clock } from "lucide-react
 
 export const revalidate = 3600 // Cache for 1 hour
 
-export async function generateStaticParams() {
-  const payload = await getPayload()
-  if (!payload) return []
-
-  try {
-    const { docs } = await payload.find({
-      collection: 'tours',
-      limit: 100,
-    })
-    return docs.map((tour: any) => ({
-      slug: tour.slug,
-    }))
-  } catch (e) {
-    return []
-  }
-}
-
 // Mock data fallback
 const MOCK_TOUR = {
   id: 'mock-1',

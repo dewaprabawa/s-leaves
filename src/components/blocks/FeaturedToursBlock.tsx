@@ -1,55 +1,9 @@
 import React from 'react'
-import { getPayload } from '@/lib/payload'
 import FeaturedToursClient from '../FeaturedToursClient'
+import { TOURS } from '@/data/tours'
 
 export const FeaturedToursBlock = async ({ block }: { block: any }) => {
-  const payload = await getPayload()
-  let tours: any[] = []
-
-  if (payload) {
-    try {
-      if (block.tours && block.tours.length > 0) {
-        // Resolve relationship field
-        const firstItem = block.tours[0]
-        if (typeof firstItem === 'object' && firstItem !== null && 'slug' in firstItem) {
-          tours = block.tours
-        } else {
-          // Array of IDs (strings), fetch them to ensure proper depth and population
-          const ids = block.tours.map((t: any) => typeof t === 'object' ? t.id : t)
-          const { docs } = await payload.find({
-            collection: 'tours',
-            where: {
-              id: {
-                in: ids,
-              },
-            },
-            depth: 2,
-            limit: ids.length,
-          })
-          // Sort matched documents by the order they were selected
-          tours = ids
-            .map((id: string) => docs.find((doc: any) => doc.id === id))
-            .filter(Boolean)
-        }
-      }
-    } catch (e) {
-      console.error('Failed to resolve selected tours for Featured block:', e)
-    }
-
-    // Fallback: If no tours selected or resolve failed, fetch default latest tours
-    if (tours.length === 0) {
-      try {
-        const { docs } = await payload.find({
-          collection: 'tours',
-          limit: 12, // Retrieve up to 12 tours to support robust dynamic filtering
-          depth: 2,  // Populate related media
-        })
-        tours = docs
-      } catch (e) {
-        console.error('Failed to fetch fallback tours for Featured block:', e)
-      }
-    }
-  }
+  const tours = block.tours?.length ? block.tours : TOURS
 
   return (
     <section className="py-20 px-4 sm:px-6 bg-gray-50 dark:bg-gray-950/40 border-t border-b border-gray-200/50 dark:border-gray-900/40">

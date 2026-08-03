@@ -1,48 +1,9 @@
 import React from 'react'
-import { getPayload } from '@/lib/payload'
 import TransfersListClient from '../TransfersListClient'
+import { TRANSFERS } from '@/data/transfers'
 
 export const FeaturedTransfersBlock = async ({ block }: { block: any }) => {
-  const payload = await getPayload()
-  let transfers: any[] = []
-
-  if (payload) {
-    try {
-      if (block.transfers && block.transfers.length > 0) {
-        // Resolve selected transfers relationship
-        const firstItem = block.transfers[0]
-        if (typeof firstItem === 'object' && firstItem !== null && 'slug' in firstItem) {
-          transfers = block.transfers
-        } else {
-          const ids = block.transfers.map((t: any) => typeof t === 'object' ? t.id : t)
-          const { docs } = await payload.find({
-            collection: 'transfers',
-            where: {
-              id: { in: ids }
-            },
-            depth: 2,
-            limit: ids.length,
-          })
-          transfers = ids.map((id: string) => docs.find((doc: any) => doc.id === id)).filter(Boolean)
-        }
-      }
-    } catch (e) {
-      console.error('Failed to resolve selected transfers for block:', e)
-    }
-
-    if (transfers.length === 0) {
-      try {
-        const { docs } = await payload.find({
-          collection: 'transfers',
-          limit: 10,
-          depth: 2,
-        })
-        transfers = docs
-      } catch (e) {
-        console.error('Failed to fetch fallback transfers for block:', e)
-      }
-    }
-  }
+  const transfers = block.transfers?.length ? block.transfers : TRANSFERS
 
   return (
     <section className="py-20 px-4 sm:px-6 bg-white dark:bg-gray-950 border-t border-b border-gray-200/50 dark:border-gray-900/40">

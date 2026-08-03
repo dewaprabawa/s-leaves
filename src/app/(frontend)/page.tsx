@@ -1,10 +1,43 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import Link from 'next/link'
+import { BookingPopup, TourConfig } from '@/components/BookingPopup'
 import { ArrowRight, MapPin, Users, Leaf, Check, Clock3, Bike, Coffee, CookingPot, Mountain } from 'lucide-react'
 
 export default function Home() {
+  const [activeTour, setActiveTour] = useState<TourConfig | null>(null);
+  const [activeItinerary, setActiveItinerary] = useState<"cycling" | "coffee" | "cooking">("cycling");
+
+  const cyclingConfig: TourConfig = {
+    id: "cycling",
+    title: "Pejeng Village & Terrace Cycling Tour",
+    times: ["08:30 AM (Morning Ride)", "01:30 PM (Afternoon Ride)"],
+    adultPrice: 400000,
+    kidPrice: 350000,
+    minPax: 2
+  };
+
+  const coffeeConfig: TourConfig = {
+    id: "coffee",
+    title: "Luwak Coffee Plantation Experience",
+    times: ["10:00 AM", "02:00 PM"],
+    adultPrice: 400000,
+    kidPrice: null,
+    minPax: 3
+  };
+
+  const cookingConfig: TourConfig = {
+    id: "cooking",
+    title: "Traditional Balinese Dinner Cooking Class",
+    times: ["08:30 AM", "02:30 PM", "05:30 PM"],
+    adultPrice: 400000,
+    kidPrice: 350000,
+    minPax: 2
+  };
+
   return (
     <main className="w-full flex flex-col bg-sand">
+      <BookingPopup isOpen={activeTour !== null} onClose={() => setActiveTour(null)} tour={activeTour} />
       {/* Hero Section */}
       <section id="top" className="relative w-full min-h-[85vh] flex flex-col lg:flex-row items-center justify-center px-6 lg:px-12 py-12 lg:py-0 overflow-hidden">
         <div className="lg:w-1/2 flex flex-col justify-center max-w-2xl z-10 pr-0 lg:pr-12">
@@ -141,9 +174,9 @@ export default function Home() {
                 </div>
               </div>
 
-              <Link href="https://wa.me/6281234567890?text=I'm%20interested%20in%20the%20Pejeng%20Village%20&%20Terrace%20Cycling%20Tour" target="_blank" className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors">
+              <button onClick={() => setActiveTour(cyclingConfig)} className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors cursor-pointer">
                 Book this experience <ArrowRight className="w-4 h-4" />
-              </Link>
+              </button>
             </div>
           </article>
 
@@ -188,9 +221,9 @@ export default function Home() {
                 </div>
               </div>
 
-              <Link href="https://wa.me/6281234567890?text=I'm%20interested%20in%20the%20Luwak%20Coffee%20Plantation%20Experience" target="_blank" className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors">
+              <button onClick={() => setActiveTour(coffeeConfig)} className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors cursor-pointer">
                 Book this experience <ArrowRight className="w-4 h-4" />
-              </Link>
+              </button>
             </div>
           </article>
 
@@ -235,9 +268,9 @@ export default function Home() {
                 </div>
               </div>
 
-              <Link href="https://wa.me/6281234567890?text=I'm%20interested%20in%20the%20Traditional%20Balinese%20Dinner%20Cooking%20Class" target="_blank" className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors">
+              <button onClick={() => setActiveTour(cookingConfig)} className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors cursor-pointer">
                 Book this experience <ArrowRight className="w-4 h-4" />
-              </Link>
+              </button>
             </div>
           </article>
 
@@ -246,49 +279,169 @@ export default function Home() {
 
       {/* Itinerary Section */}
       <section id="itinerary" className="py-24 px-6 lg:px-12 bg-white w-full">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-16">
-          <div className="md:w-1/3">
-            <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">A morning on two wheels</p>
-            <h2 className="text-4xl font-serif text-brand-green font-bold leading-tight mb-6">
-              Follow the<br/>
-              <span className="italic font-light">Pejeng route.</span>
-            </h2>
-            <p className="text-lg text-brand-green-light">
-              The morning cycling itinerary, from Ubud pickup to the last sip of coconut water.
-            </p>
-            
-            <div className="mt-12 p-6 bg-sand rounded-2xl flex items-start gap-4">
-              <Mountain className="w-8 h-8 text-brand-green shrink-0 mt-1" />
-              <p className="text-brand-green font-medium text-sm leading-relaxed">
-                Mostly gentle riding<br/>with frequent stops for stories and photos.
-              </p>
-            </div>
+        <div className="max-w-4xl mx-auto">
+          {/* Tabs */}
+          <div className="flex flex-wrap gap-4 mb-16 justify-center">
+            <button 
+              onClick={() => setActiveItinerary('cycling')}
+              className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeItinerary === 'cycling' ? 'bg-brand-green text-sand' : 'bg-sand text-brand-green hover:bg-brand-green/10'}`}
+            >
+              Cycling Tour
+            </button>
+            <button 
+              onClick={() => setActiveItinerary('coffee')}
+              className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeItinerary === 'coffee' ? 'bg-brand-green text-sand' : 'bg-sand text-brand-green hover:bg-brand-green/10'}`}
+            >
+              Coffee Plantation
+            </button>
+            <button 
+              onClick={() => setActiveItinerary('cooking')}
+              className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeItinerary === 'cooking' ? 'bg-brand-green text-sand' : 'bg-sand text-brand-green hover:bg-brand-green/10'}`}
+            >
+              Cooking Class
+            </button>
           </div>
 
-          <div className="md:w-2/3 relative py-4">
-            <div className="space-y-12">
-              {[
-                { time: "08:30 AM", title: "Pickup & Briefing", desc: "Driver picks you up from your Ubud hotel. Arrive at our Pejeng starting base for bike fitting and a safety briefing." },
-                { time: "09:00 AM", title: "Pejeng Local Market", desc: "Walk your bikes through the bustling traditional market. Learn about local spices, exotic fruits, and daily Balinese life." },
-                { time: "09:45 AM", title: "Village & Temple Cruising", desc: "Cycle through quiet neighborhood paths. Pass ancient temples and stop briefly at a traditional family compound to understand Balinese architecture." },
-                { time: "10:45 AM", title: "Subak Rice Terraces", desc: "The trail opens up to stunning, endless rice paddies. Cycle right on the field edges while learning about the traditional Subak irrigation system." },
-                { time: "12:00 PM", title: "Fresh Coconut & Wind Down", desc: "Finish the ride and celebrate with a freshly opened young coconut before heading back." },
-                { time: "12:30 PM", title: "Hotel Drop-off", desc: "Arrive back at your accommodation in Ubud." },
-              ].map((step, idx) => (
-                <div key={idx} className="relative pl-10 timeline-row">
-                  <div className="timeline-dot"></div>
-                  <div className="timeline-line"></div>
-                  <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
-                    <span className="text-brand-green-light font-semibold text-sm w-20 shrink-0">{step.time}</span>
-                    <h3 className="text-xl font-bold text-brand-green">{step.title}</h3>
-                  </div>
-                  <p className="text-brand-green-light sm:pl-26 leading-relaxed">
-                    {step.desc}
+          {activeItinerary === 'cycling' && (
+            <div className="flex flex-col md:flex-row gap-16 animate-in fade-in duration-500">
+              <div className="md:w-1/3">
+                <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">A morning on two wheels</p>
+                <h2 className="text-4xl font-serif text-brand-green font-bold leading-tight mb-6">
+                  Follow the<br/>
+                  <span className="italic font-light">Pejeng route.</span>
+                </h2>
+                <p className="text-lg text-brand-green-light">
+                  The morning cycling itinerary, from Ubud pickup to the last sip of coconut water.
+                </p>
+                
+                <div className="mt-12 p-6 bg-sand rounded-2xl flex items-start gap-4">
+                  <Mountain className="w-8 h-8 text-brand-green shrink-0 mt-1" />
+                  <p className="text-brand-green font-medium text-sm leading-relaxed">
+                    Mostly gentle riding<br/>with frequent stops for stories and photos.
                   </p>
                 </div>
-              ))}
+              </div>
+
+              <div className="md:w-2/3 relative py-4">
+                <div className="space-y-12">
+                  {[
+                    { time: "08:30 AM", title: "Pickup & Briefing", desc: "Driver picks you up from your Ubud hotel. Arrive at our Pejeng starting base for bike fitting and a safety briefing." },
+                    { time: "09:00 AM", title: "Pejeng Local Market", desc: "Walk your bikes through the bustling traditional market. Learn about local spices, exotic fruits, and daily Balinese life." },
+                    { time: "09:45 AM", title: "Village & Temple Cruising", desc: "Cycle through quiet neighborhood paths. Pass ancient temples and stop briefly at a traditional family compound to understand Balinese architecture." },
+                    { time: "10:45 AM", title: "Subak Rice Terraces", desc: "The trail opens up to stunning, endless rice paddies. Cycle right on the field edges while learning about the traditional Subak irrigation system." },
+                    { time: "12:00 PM", title: "Fresh Coconut & Wind Down", desc: "Finish the ride and celebrate with a freshly opened young coconut before heading back." },
+                    { time: "12:30 PM", title: "Hotel Drop-off", desc: "Arrive back at your accommodation in Ubud." },
+                  ].map((step, idx) => (
+                    <div key={idx} className="relative pl-10 timeline-row">
+                      <div className="timeline-dot"></div>
+                      <div className="timeline-line"></div>
+                      <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
+                        <span className="text-brand-green-light font-semibold text-sm w-20 shrink-0">{step.time}</span>
+                        <h3 className="text-xl font-bold text-brand-green">{step.title}</h3>
+                      </div>
+                      <p className="text-brand-green-light sm:pl-26 leading-relaxed">
+                        {step.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
+          )}
+
+          {activeItinerary === 'coffee' && (
+            <div className="flex flex-col md:flex-row gap-16 animate-in fade-in duration-500">
+              <div className="md:w-1/3">
+                <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">A sip of tradition</p>
+                <h2 className="text-4xl font-serif text-brand-green font-bold leading-tight mb-6">
+                  Taste the<br/>
+                  <span className="italic font-light">Luwak magic.</span>
+                </h2>
+                <p className="text-lg text-brand-green-light">
+                  A relaxing stroll through lush plantations followed by authentic roasting and tasting.
+                </p>
+                
+                <div className="mt-12 p-6 bg-sand rounded-2xl flex items-start gap-4">
+                  <Coffee className="w-8 h-8 text-brand-green shrink-0 mt-1" />
+                  <p className="text-brand-green font-medium text-sm leading-relaxed">
+                    Learn the intricate process<br/>of world-famous Luwak Coffee.
+                  </p>
+                </div>
+              </div>
+
+              <div className="md:w-2/3 relative py-4">
+                <div className="space-y-12">
+                  {[
+                    { time: "10:00 AM", title: "Arrival & Welcome", desc: "Arrive at the beautiful coffee plantation. Enjoy the fresh air and a quick introduction to the estate." },
+                    { time: "10:15 AM", title: "Spice & Coffee Walk", desc: "Take a guided walk through the gardens. See raw coffee beans, cacao, vanilla, and other local spices growing." },
+                    { time: "10:45 AM", title: "Traditional Roasting", desc: "Witness the traditional Balinese method of roasting coffee beans over a wood fire and try grinding them yourself." },
+                    { time: "11:15 AM", title: "Coffee & Tea Tasting", desc: "Sit back and enjoy a flight of various local coffees and herbal teas overlooking the jungle valley." },
+                    { time: "12:00 PM", title: "Luwak Coffee Experience", desc: "Sip on a cup of authentic Luwak coffee (optional) and explore the plantation shop before heading back." },
+                  ].map((step, idx) => (
+                    <div key={idx} className="relative pl-10 timeline-row">
+                      <div className="timeline-dot"></div>
+                      <div className="timeline-line"></div>
+                      <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
+                        <span className="text-brand-green-light font-semibold text-sm w-20 shrink-0">{step.time}</span>
+                        <h3 className="text-xl font-bold text-brand-green">{step.title}</h3>
+                      </div>
+                      <p className="text-brand-green-light sm:pl-26 leading-relaxed">
+                        {step.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {activeItinerary === 'cooking' && (
+            <div className="flex flex-col md:flex-row gap-16 animate-in fade-in duration-500">
+              <div className="md:w-1/3">
+                <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">Hands-on culinary</p>
+                <h2 className="text-4xl font-serif text-brand-green font-bold leading-tight mb-6">
+                  Cook like<br/>
+                  <span className="italic font-light">a Balinese.</span>
+                </h2>
+                <p className="text-lg text-brand-green-light">
+                  From preparing fresh spices to feasting on your own traditional dinner.
+                </p>
+                
+                <div className="mt-12 p-6 bg-sand rounded-2xl flex items-start gap-4">
+                  <CookingPot className="w-8 h-8 text-brand-green shrink-0 mt-1" />
+                  <p className="text-brand-green font-medium text-sm leading-relaxed">
+                    Take the secret recipes<br/>home to your own kitchen.
+                  </p>
+                </div>
+              </div>
+
+              <div className="md:w-2/3 relative py-4">
+                <div className="space-y-12">
+                  {[
+                    { time: "05:30 PM", title: "Welcome Drink & Setup", desc: "Arrive at our traditional outdoor kitchen. Enjoy a welcome drink while putting on your apron." },
+                    { time: "05:45 PM", title: "Spice Paste Prep", desc: "Learn about the essential Balinese ingredients. Chop, grind, and blend the famous 'Base Genep' spice paste." },
+                    { time: "06:30 PM", title: "Cooking Session", desc: "Get hands-on preparing traditional dishes like Sate Lilit, Chicken Curry, and Lawar under expert guidance." },
+                    { time: "07:30 PM", title: "Balinese Dessert", desc: "Prepare a sweet traditional dessert, like Dadar Gulung (pandan crepes with palm sugar)." },
+                    { time: "08:00 PM", title: "Feast Together", desc: "Sit down with your host and enjoy the delicious dinner you just cooked in a beautiful setting." },
+                    { time: "08:30 PM", title: "End of Experience", desc: "Receive your digital recipe book before heading back to your hotel." },
+                  ].map((step, idx) => (
+                    <div key={idx} className="relative pl-10 timeline-row">
+                      <div className="timeline-dot"></div>
+                      <div className="timeline-line"></div>
+                      <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
+                        <span className="text-brand-green-light font-semibold text-sm w-20 shrink-0">{step.time}</span>
+                        <h3 className="text-xl font-bold text-brand-green">{step.title}</h3>
+                      </div>
+                      <p className="text-brand-green-light sm:pl-26 leading-relaxed">
+                        {step.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
         </div>
       </section>
 

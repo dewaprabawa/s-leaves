@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!tour) return { title: 'Tour Not Found' }
 
   return {
-    title: `${tour.metaTitle || tour.title} | S-Leaves`,
-    description: tour.metaDescription,
+    title: `${tour.title} | Sekar Bali Activity`,
+    description: tour.shortDescription,
   }
 }
 
@@ -37,10 +37,10 @@ export default async function TourDetailPage({ params }: Props) {
     notFound()
   }
 
-  const basePrice = tour.pricing?.basePrice || 0
-  const childPrice = tour.pricing?.childPrice || Math.round(basePrice * 0.7)
-  const currencySymbol = tour.pricing?.currency === 'IDR' ? 'Rp' : '$'
-  const heroImage = tour.heroImage || 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80'
+  const basePrice = tour.basePrice || 0
+  const childPrice = tour.childPrice || Math.round(basePrice * 0.7)
+  const currencySymbol = 'Rp'
+  const heroImage = tour.heroImage?.url || 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80'
 
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-950 py-10 transition-colors duration-200">
@@ -60,21 +60,7 @@ export default async function TourDetailPage({ params }: Props) {
           {/* Main Details (Left 2 cols) */}
           <div className="lg:col-span-2 space-y-8">
             
-            {/* Title & Badges */}
             <div className="space-y-4">
-              <div className="flex flex-wrap items-center gap-2">
-                {tour.isBestseller && (
-                  <span className="inline-flex items-center gap-1 bg-amber-500 text-white text-[11px] font-black px-2.5 py-1 rounded-md uppercase tracking-wider">
-                    <Award className="w-3.5 h-3.5" /> Bestseller
-                  </span>
-                )}
-                {tour.hasFreeCancellation !== false && (
-                  <span className="inline-flex items-center gap-1 bg-emerald-50 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-100 dark:border-emerald-800/50">
-                    <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" /> Free cancellation up to 24h before
-                  </span>
-                )}
-              </div>
-
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight leading-tight">
                 {tour.title}
               </h1>
@@ -82,12 +68,12 @@ export default async function TourDetailPage({ params }: Props) {
               <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 dark:text-gray-400 font-medium">
                 <div className="flex items-center gap-1.5 text-amber-500 font-bold">
                   <Star className="w-4 h-4 fill-amber-500 text-amber-500" />
-                  <span>{tour.rating || 4.9}</span>
-                  <span className="text-gray-400 font-normal">({tour.reviewCount || 120} reviews)</span>
+                  <span>4.9</span>
+                  <span className="text-gray-400 font-normal">(120 reviews)</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <MapPin className="w-4 h-4 text-emerald-500" />
-                  <span>{tour.location}</span>
+                  <span>Ubud, Bali</span>
                 </div>
                 <div className="flex items-center gap-1.5">
                   <Clock className="w-4 h-4 text-emerald-500" />
@@ -111,7 +97,7 @@ export default async function TourDetailPage({ params }: Props) {
             <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 space-y-4">
               <h2 className="text-xl font-bold text-gray-900 dark:text-white">About This Experience</h2>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed font-normal">
-                {tour.description}
+                {tour.fullDescription}
               </p>
             </div>
 
@@ -126,7 +112,7 @@ export default async function TourDetailPage({ params }: Props) {
                         {index + 1}
                       </div>
                       <div className="space-y-1">
-                        <h3 className="font-bold text-gray-900 dark:text-white">{item.dayTitle}</h3>
+                        <h3 className="font-bold text-gray-900 dark:text-white">{item.title}</h3>
                         <p className="text-sm text-gray-600 dark:text-gray-400">{item.description}</p>
                       </div>
                     </div>

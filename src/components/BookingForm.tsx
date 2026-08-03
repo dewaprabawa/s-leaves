@@ -59,7 +59,7 @@ export default function BookingForm({ tour }: Props) {
     checkAvailability(tour.id, date).then((res) => {
       if (!active) return
       setCheckingAvailability(false)
-      if (res.success) {
+      if (res) {
         setAvailability({
           remainingSpots: res.remainingSpots ?? null,
           isSoldOut: res.isSoldOut ?? false,

@@ -31,10 +31,9 @@ export default function RootLayout({
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground transition-colors duration-200`}>
         
         {/* Navigation Header */}
-        <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-sand/90 border-b border-brand-green/10 h-16 flex items-center justify-between px-6 lg:px-12">
+        <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-sand/90 border-b border-brand-green/10 h-20 flex items-center justify-between px-6 lg:px-12">
           <Link href="#top" className="flex items-center gap-2 font-bold text-xl text-brand-green hover:opacity-80 transition-opacity">
-            <Leaf className="w-5 h-5" />
-            <span>{siteName}</span>
+            <img src="/logo.png" alt={siteName} className="h-16 w-auto mix-blend-multiply object-contain rounded-full" />
           </Link>
           
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-brand-green-light">

@@ -20,8 +20,8 @@ export async function submitBooking(data: BookingFormData) {
       booking: {
         id: `BK-${Date.now()}`,
         status: 'confirmed',
-        customerName: validatedData.customerName,
-        customerEmail: validatedData.customerEmail,
+        customerName: validatedData.guestName,
+        customerEmail: validatedData.email,
         date: validatedData.date,
         totalPrice: validatedData.totalPrice || 50,
       }

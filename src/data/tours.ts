@@ -61,17 +61,17 @@ export const TOURS: Tour[] = [
     basePrice: 400000,
     childPrice: 350000,
     heroImage: {
-      url: "https://images.unsplash.com/photo-1554466989-bf8eec4c5408?q=80&w=2000&auto=format&fit=crop",
+      url: "/images/cycling/rice-field-bikes.jpg",
       alt: "Cycling in Bali rice terraces",
     },
     gallery: [
       {
-        url: "https://images.unsplash.com/photo-1536768393526-9d3cc681aab2?q=80&w=1200&auto=format&fit=crop",
-        alt: "Balinese village",
+        url: "/images/cycling/rider.jpg",
+        alt: "Balinese village cycling",
       },
       {
-        url: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?q=80&w=1200&auto=format&fit=crop",
-        alt: "Rice paddies",
+        url: "/images/cycling/farmer-terraces.jpg",
+        alt: "Beautiful rice terraces",
       },
     ],
     shortDescription: "Explore the real Bali away from the crowds through historic Pejeng district, morning markets, and expansive rice terraces.",
@@ -155,13 +155,13 @@ Available Schedules:
     duration: "1.5 Hours",
     basePrice: 400000,
     heroImage: {
-      url: "https://images.unsplash.com/photo-1518057111178-44a106bad636?q=80&w=2000&auto=format&fit=crop",
-      alt: "Coffee beans roasting",
+      url: "/coffee.jpg",
+      alt: "Luwak Coffee Plantation Umah Kuno",
     },
     gallery: [
       {
-        url: "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1200&auto=format&fit=crop",
-        alt: "Coffee plantation",
+        url: "/images/coffee/umah-kuno.jpg",
+        alt: "Traditional Umah Kuno Balinese Compound",
       },
     ],
     shortDescription: "Discover the secrets behind Bali's world-famous coffee with a jungle walk, traditional roasting, and tasting flight.",
@@ -222,13 +222,25 @@ Available Schedules (Flexible):
     basePrice: 400000,
     childPrice: 350000,
     heroImage: {
-      url: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2000&auto=format&fit=crop",
-      alt: "Balinese cooking class ingredients",
+      url: "/images/cooking/pancake-toss.jpg",
+      alt: "Balinese cooking class",
     },
     gallery: [
       {
-        url: "https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop",
-        alt: "Cooking with mortar and pestle",
+        url: "/images/cooking/dish.jpg",
+        alt: "Dadar Gulung Balinese dessert",
+      },
+      {
+        url: "/images/cooking/group-plate.jpg",
+        alt: "Happy cooking class guests",
+      },
+      {
+        url: "/images/cooking/table-prep.jpg",
+        alt: "Cooking class table preparation",
+      },
+      {
+        url: "/images/cooking/temple-view.jpg",
+        alt: "Guests at village shrine",
       },
     ],
     shortDescription: "Immerse yourself in the flavors of Indonesia with a hands-on cooking class in a beautiful traditional kitchen.",

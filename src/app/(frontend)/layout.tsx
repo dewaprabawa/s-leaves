@@ -34,7 +34,7 @@ export default function RootLayout({
         {/* Navigation Header */}
         <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-sand/90 border-b border-brand-green/10 h-20 flex items-center justify-between px-6 lg:px-12">
           <Link href="#top" className="flex items-center gap-2 font-bold text-xl text-brand-green hover:opacity-80 transition-opacity">
-            <img src="/logo.png" alt={siteName} className="h-16 w-auto mix-blend-multiply object-contain rounded-full" />
+            <img src="/logo.png" alt={siteName} className="h-14 w-auto object-contain" />
           </Link>
           
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-brand-green-light">

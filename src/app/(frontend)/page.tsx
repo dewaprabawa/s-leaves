@@ -135,7 +135,7 @@ export default function Home() {
               Our signature experience
             </div>
             <div className="relative h-64 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1596422846543-7dc3eb79be84?auto=format&fit=crop&w=800&q=80" alt="Cycling" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
+              <img src="/images/cycling/rice-field-bikes.jpg" alt="Cycling Tour" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute top-4 left-4 w-10 h-10 bg-sand rounded-full flex items-center justify-center text-brand-green font-bold shadow-md">01</div>
               <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-lg">
                 <Bike className="w-6 h-6" />
@@ -183,7 +183,7 @@ export default function Home() {
           {/* Tour 2: Coffee */}
           <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group">
             <div className="relative h-64 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1611162458324-aae1eb4129a4?auto=format&fit=crop&w=800&q=80" alt="Coffee Plantation" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
+              <img src="/coffee.jpg" alt="Luwak Coffee Plantation Umah Kuno" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute top-4 left-4 w-10 h-10 bg-sand rounded-full flex items-center justify-center text-brand-green font-bold shadow-md">02</div>
               <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-lg">
                 <Coffee className="w-6 h-6" />
@@ -230,7 +230,7 @@ export default function Home() {
           {/* Tour 3: Cooking */}
           <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group">
             <div className="relative h-64 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80" alt="Cooking Class" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
+              <img src="/images/cooking/pancake-toss.jpg" alt="Cooking Class" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute top-4 left-4 w-10 h-10 bg-sand rounded-full flex items-center justify-center text-brand-green font-bold shadow-md">03</div>
               <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-lg">
                 <CookingPot className="w-6 h-6" />

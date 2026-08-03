@@ -131,7 +131,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
             <img 
               src={logoUrl || "/logo.png"} 
               alt="S-Leaves Logo" 
-              className="w-9 h-9 rounded-xl object-cover shadow-md shadow-emerald-500/10 group-hover:scale-105 transition-transform duration-200"
+              className="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
             />
             <span className="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200 bg-clip-text text-transparent font-extrabold group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
               {siteName}

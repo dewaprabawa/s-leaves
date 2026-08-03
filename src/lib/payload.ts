@@ -21,11 +21,10 @@ export const getPayload = async () => {
     return cached.client
   }
 
-  if (!cached.promise) {
-    cached.promise = getPayloadInstance({ config })
-  }
-
   try {
+    if (!cached.promise) {
+      cached.promise = getPayloadInstance({ config })
+    }
     cached.client = await cached.promise
   } catch (e) {
     cached.promise = null

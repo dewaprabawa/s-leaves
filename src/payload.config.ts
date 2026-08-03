@@ -52,11 +52,11 @@ export default buildConfig({
 
   plugins: [
     vercelBlobStorage({
-      enabled: true,
+      enabled: Boolean(process.env.BLOB_READ_WRITE_TOKEN),
       collections: {
         media: true,
       },
-      token: process.env.BLOB_READ_WRITE_TOKEN,
+      token: process.env.BLOB_READ_WRITE_TOKEN || '',
     }),
   ],
 
@@ -66,7 +66,7 @@ export default buildConfig({
 
   editor: lexicalEditor(),
 
-  secret: process.env.PAYLOAD_SECRET || '',
+  secret: process.env.PAYLOAD_SECRET || 's-leaves-payload-secret-2026-a7b3c9d1e5f2g8h4',
 
   sharp,
 

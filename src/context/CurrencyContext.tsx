@@ -7,15 +7,15 @@ export type Currency = "USD" | "IDR" | "EUR"
 type CurrencyContextType = {
   currency: Currency
   setCurrency: (c: Currency) => void
-  formatPrice: (amountUSD: number) => string
-  convertPrice: (amountUSD: number) => number
+  formatPrice: (amountIDR: number) => string
+  convertPrice: (amountIDR: number) => number
   currencySymbol: string
 }
 
 const RATES: Record<Currency, number> = {
-  USD: 1.0,
-  IDR: 16000,
-  EUR: 0.92,
+  USD: 1 / 16000,
+  IDR: 1.0,
+  EUR: 1 / 17300,
 }
 
 const SYMBOLS: Record<Currency, string> = {
@@ -27,7 +27,7 @@ const SYMBOLS: Record<Currency, string> = {
 const CurrencyContext = createContext<CurrencyContextType | undefined>(undefined)
 
 export const CurrencyProvider = ({ children }: { children: React.ReactNode }) => {
-  const [currency, setCurrencyState] = useState<Currency>("USD")
+  const [currency, setCurrencyState] = useState<Currency>("IDR")
 
   useEffect(() => {
     const saved = localStorage.getItem("preferred_currency") as Currency
@@ -41,18 +41,15 @@ export const CurrencyProvider = ({ children }: { children: React.ReactNode }) =>
     localStorage.setItem("preferred_currency", c)
   }
 
-  const convertPrice = (amountUSD: number) => {
-    return amountUSD * RATES[currency]
+  const convertPrice = (amountIDR: number) => {
+    return amountIDR * RATES[currency]
   }
 
-  const formatPrice = (amountUSD: number) => {
-    const converted = convertPrice(amountUSD)
+  const formatPrice = (amountIDR: number) => {
+    const converted = convertPrice(amountIDR)
     const symbol = SYMBOLS[currency]
     if (currency === "IDR") {
       return `${symbol} ${Math.round(converted).toLocaleString("id-ID")}`
-    }
-    if (currency === "EUR") {
-      return `${symbol}${converted.toFixed(2)}`
     }
     return `${symbol}${converted.toFixed(2)}`
   }

@@ -23,6 +23,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
       
       {/* Desktop Navigation Links */}
       <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-brand-green-light">
+        <Link href="/tours" className="hover:text-brand-green transition-colors text-brand-green font-semibold">Tours</Link>
         <Link href="/#experiences" className="hover:text-brand-green transition-colors">Experiences</Link>
         <Link href="/#itinerary" className="hover:text-brand-green transition-colors">The route</Link>
         <Link href="/#about" className="hover:text-brand-green transition-colors">Our way</Link>
@@ -49,6 +50,13 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
       {/* Mobile Dropdown Drawer */}
       {isOpen && (
         <div className="absolute top-20 left-0 w-full bg-sand/98 border-b border-brand-green/15 shadow-2xl md:hidden flex flex-col p-6 space-y-4 animate-in slide-in-from-top duration-200 z-50">
+          <Link 
+            href="/tours" 
+            onClick={closeMenu}
+            className="text-lg font-semibold text-brand-green hover:text-brand-green-light py-2 border-b border-brand-green/10"
+          >
+            Tours
+          </Link>
           <Link 
             href="/#experiences" 
             onClick={closeMenu}

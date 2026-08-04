@@ -212,7 +212,7 @@ export default function ToursListClient({ initialTours }: Props) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTours.map((tour) => {
               const heroUrl = tour.media?.heroImage?.url || ""
-              const basePrice = tour.pricing?.basePrice || 0
+              const basePrice = tour.pricing?.basePrice || (tour as any).basePrice || 0
               const rating = tour.rating || 5
               const reviewCount = tour.reviewCount || 85
               const isBestseller = tour.isBestseller || false

@@ -337,6 +337,15 @@ export default function Home() {
           </article>
 
         </div>
+
+        <div className="mt-16 text-center flex justify-center">
+          <Link 
+            href="/tours" 
+            className="inline-flex items-center gap-2 bg-brand-green text-sand px-8 py-4 rounded-full font-bold hover:bg-brand-green-light transition-colors shadow-sm"
+          >
+            View All Our Tours <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
       </section>
 
       {/* Itinerary Section */}

@@ -505,8 +505,8 @@ export default function Home() {
       {/* FAQ Section */}
       <FAQSection />
 
-      {/* Booking Section */}
-      <section id="booking" className="py-24 px-6 lg:px-12 bg-brand-green text-sand w-full">
+      {/* Contact & Booking Section */}
+      <section id="contact" className="py-24 px-6 lg:px-12 bg-brand-green text-sand w-full">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4 opacity-80">Start the conversation</p>
           <h2 className="text-4xl lg:text-5xl font-serif font-bold leading-tight mb-8">

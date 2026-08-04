@@ -68,28 +68,32 @@ export const TOURS: Tour[] = [
     },
     gallery: [
       {
+        url: "/images/cycling/rice-field-bikes.jpg",
+        alt: "Cycling in Bali rice terraces",
+      },
+      {
         url: "/images/cycling/rider.jpg",
         alt: "Balinese village cycling",
       },
       {
-        url: "/images/cycling/farmer-terraces.jpg",
-        alt: "Beautiful rice terraces",
+        url: "/images/cycling/temple-gate.jpg",
+        alt: "Group standing before ancient temple gates",
       },
       {
-        url: "/images/cycling/family-temple-gates.jpg",
-        alt: "Family standing before ancient temple gates",
+        url: "/images/cycling/trail-group.jpg",
+        alt: "Group cycling along village trail",
       },
       {
-        url: "/images/cycling/family-lunch-break.jpg",
-        alt: "Family enjoying a traditional meal together",
+        url: "/images/cycling/jungle-path.jpg",
+        alt: "Riding through green lush pathways",
       },
       {
-        url: "/images/cycling/family-on-bikes.jpg",
-        alt: "Family posing on their bikes in the village",
+        url: "/images/cycling/rice-field-walk.jpg",
+        alt: "Standing in golden rice fields",
       },
       {
-        url: "/images/cycling/family-rice-fields.jpg",
-        alt: "Family standing in the beautiful Subak rice fields",
+        url: "/images/cycling/lunch-stop.jpg",
+        alt: "Group enjoying a traditional meal together",
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID

@@ -50,6 +50,7 @@ export interface Tour {
   faqs: TourFaq[]
   reviews: TourReview[]
   getYourGuideUrl?: string
+  youtubeVideoId?: string
 }
 
 export const TOURS: Tour[] = [
@@ -74,7 +75,24 @@ export const TOURS: Tour[] = [
         url: "/images/cycling/farmer-terraces.jpg",
         alt: "Beautiful rice terraces",
       },
+      {
+        url: "/images/cycling/family-temple-gates.jpg",
+        alt: "Family standing before ancient temple gates",
+      },
+      {
+        url: "/images/cycling/family-lunch-break.jpg",
+        alt: "Family enjoying a traditional meal together",
+      },
+      {
+        url: "/images/cycling/family-on-bikes.jpg",
+        alt: "Family posing on their bikes in the village",
+      },
+      {
+        url: "/images/cycling/family-rice-fields.jpg",
+        alt: "Family standing in the beautiful Subak rice fields",
+      },
     ],
+    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
     shortDescription: "Explore the real Bali away from the crowds through historic Pejeng district, morning markets, and expansive rice terraces.",
     fullDescription: `**Escape the Tourist Trail and Discover the Real Bali**
 
@@ -158,12 +176,22 @@ Whether you are a solo traveler, a couple, or a family with children, this cycli
       {
         id: "faq-pej-1",
         question: "Is the route difficult?",
-        answer: "The route is mostly flat with a few gentle inclines. It is suitable for all fitness levels.",
+        answer: "The route is mostly flat with a few gentle inclines. It is entirely paved or hard-packed dirt, and spans about 15km. It is suitable for all fitness levels, including older adults and children.",
       },
       {
         id: "faq-pej-2",
         question: "Do you provide kids bikes?",
         answer: "Yes, we have a limited number of smaller bikes and baby seats available. Please request them during booking.",
+      },
+      {
+        id: "faq-pej-3",
+        question: "What should I wear?",
+        answer: "We recommend comfortable, breathable clothing, closed-toe shoes (sneakers are fine), and sunglasses. Don't forget sunscreen!",
+      },
+      {
+        id: "faq-pej-4",
+        question: "Is hotel pickup included?",
+        answer: "Yes, we provide complimentary air-conditioned transport from any hotel within the central Ubud area.",
       },
     ],
     reviews: [],
@@ -186,6 +214,7 @@ Whether you are a solo traveler, a couple, or a family with children, this cycli
         alt: "Traditional Umah Kuno Balinese Compound",
       },
     ],
+    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder
     shortDescription: "Discover the secrets behind Bali's world-famous coffee at Umah Kuno with a jungle walk, traditional roasting, and tasting flight.",
     fullDescription: `**A Journey Into the Heart of Bali's Coffee Culture**
 
@@ -254,8 +283,18 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
       {
         id: "faq-cof-1",
         question: "Is transportation included?",
-        answer: "No, this is a standalone experience. You will need to arrange your own transport to the plantation.",
+        answer: "No, this is a standalone experience. You will need to arrange your own transport to the plantation in Tampaksiring, which is about 25 minutes from central Ubud.",
       },
+      {
+        id: "faq-cof-2",
+        question: "Is the Luwak coffee truly ethical?",
+        answer: "Yes! 100%. Umah Kuno strictly forbids caged civets. The beans are gathered from the forest floor where wild, free-roaming civets have naturally dropped them. This is the authentic, ethical way Kopi Luwak has been harvested for centuries.",
+      },
+      {
+        id: "faq-cof-3",
+        question: "Can kids join?",
+        answer: "Absolutely! Kids love the jungle walk and participating in grinding the beans. We have non-caffeinated chocolate and teas for them to taste.",
+      }
     ],
     reviews: [],
   },
@@ -289,6 +328,7 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
         alt: "Guests at village shrine",
       },
     ],
+    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder
     shortDescription: "Immerse yourself in the flavors of Indonesia with a hands-on cooking class in a beautiful traditional kitchen.",
     fullDescription: `**Master the Art of Balinese Cuisine in a Traditional Setting**
 
@@ -366,7 +406,17 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
       {
         id: "faq-cook-1",
         question: "Can you accommodate dietary restrictions?",
-        answer: "Yes! We can adjust the recipes for vegetarians, vegans, and most allergies. Please let us know when booking.",
+        answer: "Yes! We can adjust the recipes for vegetarians, vegans, and most allergies (including gluten and peanuts). Please let us know when booking.",
+      },
+      {
+        id: "faq-cook-2",
+        question: "Do we get to eat what we cook?",
+        answer: "Yes! The class culminates in a grand feast where you sit down to enjoy the 5 dishes you just prepared.",
+      },
+      {
+        id: "faq-cook-3",
+        question: "Is the class hands-on or just a demonstration?",
+        answer: "This is a 100% hands-on experience. You will have your own cooking station, mortar, and wok.",
       },
     ],
     reviews: [],

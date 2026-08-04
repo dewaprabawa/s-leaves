@@ -61,7 +61,12 @@ const schemaData = [
       "addressRegion": "Bali",
       "addressCountry": "ID"
     },
-    "image": "https://www.sekarbaliactivity.com/logo.png"
+    "image": "https://www.sekarbaliactivity.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/sekarbaliactivity",
+      "https://www.facebook.com/sekarbaliactivity",
+      "https://www.tripadvisor.com/Attraction_Review-g297701-d1234567-Reviews-Sekar_Bali_Activity-Ubud_Gianyar_Regency_Bali.html"
+    ]
   },
   {
     "@context": "https://schema.org",
@@ -156,7 +161,7 @@ export default function RootLayout({
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-brand-green-light">
             <Link href="/#experiences" className="hover:text-brand-green transition-colors">Experiences</Link>
             <Link href="/#itinerary" className="hover:text-brand-green transition-colors">The route</Link>
-            <Link href="/#about" className="hover:text-brand-green transition-colors">Our way</Link>
+            <Link href="/about" className="hover:text-brand-green transition-colors">Our way</Link>
             <Link href="/blog" className="hover:text-brand-green transition-colors text-brand-green font-semibold">Blog</Link>
             <Link href="https://wa.me/6281775723663" target="_blank" className="ml-4 px-5 py-2.5 rounded-full bg-brand-green text-sand hover:bg-brand-green-light transition-colors shadow-sm font-semibold">
               Book a place
@@ -188,7 +193,7 @@ export default function RootLayout({
             <p className="text-sm opacity-80 mt-4 flex gap-6 justify-center">
               <Link href="/#experiences" className="hover:text-brand-green-light transition-colors">Experiences</Link>
               <Link href="/blog" className="hover:text-brand-green-light transition-colors">Blog</Link>
-              <Link href="/#about" className="hover:text-brand-green-light transition-colors">About</Link>
+              <Link href="/about" className="hover:text-brand-green-light transition-colors">About</Link>
             </p>
             <p className="text-xs opacity-50 mt-4">
               © {new Date().getFullYear()} {siteName}. All rights reserved.

@@ -46,6 +46,7 @@ export interface Tour {
   included: string[]
   notIncluded: string[]
   itinerary: TourItineraryItem[]
+  activityOptions?: { name: string; priceDiff: number; description?: string }[]
   addons: TourAddon[]
   faqs: TourFaq[]
   reviews: TourReview[]
@@ -535,6 +536,131 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     ],
     addons: [],
     faqs: [],
+    reviews: []
+  },
+  {
+    id: "bali-dirt-bike-adventure",
+    title: "Bali Dirt Bike & Adventure Tour 2026",
+    slug: "bali-dirt-bike-adventure",
+    category: "Activity",
+    duration: "Half Day or Full Day",
+    basePrice: 1200000,
+    heroImage: {
+      url: "https://images.unsplash.com/photo-1519444334051-a39396328670?auto=format&fit=crop&w=1200&q=80",
+      alt: "Bali Dirt Bike Adventure",
+    },
+    gallery: [],
+    shortDescription: "Experience the ultimate adrenaline rush with our dirt bike tours across Bali's forests, beaches, and volcanic terrains.",
+    fullDescription: `**PAKET TOUR DIRT BIKE & ADVENTURE BALI 2026**\n\n_Base Kintamani, Bali_\n\nExplore Bali like never before with our premium Dirt Bike & Adventure tours. Whether you are a beginner looking for a scenic ride through the rice paddies and beaches of Tabanan, or an experienced rider seeking the ultimate adrenaline rush on the volcanic trails of Mount Batur, we have the perfect package for you.\n\n**A. PAKET DIRT BIKE TOUR**\n\n1. **TABANAN FOREST + BEACH TRAIL**\nLewat sawah, hutan, pantai pasir hitam & trail seru. (Half Day: 3-4 Jam / Full Day: 6-8 Jam)\n\n2. **KINTAMANI FOREST + VOLCANO TRAIL**\nKeliling Gunung Batur, lahar, hutan pinus & view Danau Batur. (Half Day: 3-4 Jam / Full Day: 6-8 Jam)\n\n3. **FULL DAY UBUD + VOLCANO RIDE**\nGabungan hutan Ubud + jalur vulkanik Kintamani.\n\n4. **SUNRISE RIDE GUNUNG BATUR**\nRide pagi buta liat sunrise di atas gunung.\n\n5. **SUNSET RIDE PANTAI**\nRide sore hari di pantai Tabanan.\n\n**B. PAKET KOMBO ADVENTURE**\n\nCombine your ride with other exciting Bali activities like White Water Rafting, ATV Rides, and River Tubing!\n\n**SUDAH TERMASUK SEMUA PAKET**\n- Guide Profesional & Berpengalaman\n- 1x Makan Siang + Air Mineral / Soft Drink\n- Helm, Sepatu, Jersey, Sarung Tangan, Pelindung Dada\n- Antar Jemput Hotel Area Bali Gratis\n- Asuransi & P3K\n- Foto & Video saat riding`,
+    highlights: [
+      "Ride through Tabanan forests and black sand beaches",
+      "Explore the volcanic trails of Mount Batur",
+      "Top-of-the-line dirt bikes (KLX, YZ, KTM)",
+      "Professional guides and full riding gear included",
+      "Free hotel pick-up and drop-off in Bali"
+    ],
+    included: [
+      "Professional & Experienced Guide",
+      "1x Lunch + Mineral Water / Soft Drink",
+      "Helmet, Boots, Jersey, Gloves, Chest Protector",
+      "Free Hotel Pick-up/Drop-off in Bali Area",
+      "Insurance & First Aid Kit",
+      "Photos & Videos during riding"
+    ],
+    notIncluded: ["Personal expenses", "Gratuities"],
+    itinerary: [
+      {
+        id: "iti-db-1",
+        time: "Morning",
+        title: "Hotel Pickup & Gear Fitting",
+        description: "Our driver will pick you up from your hotel and bring you to our base in Kintamani or Tabanan for gear fitting and safety briefing."
+      },
+      {
+        id: "iti-db-2",
+        time: "Mid-Morning",
+        title: "Start Riding Adventure",
+        description: "Hit the trails! Ride through forests, beaches, or volcanic terrain depending on your chosen package."
+      },
+      {
+        id: "iti-db-3",
+        time: "Lunch",
+        title: "Lunch Break",
+        description: "Enjoy a delicious lunch to refuel for the rest of the day."
+      },
+      {
+        id: "iti-db-4",
+        time: "Afternoon",
+        title: "Continue Riding / Return",
+        description: "Complete your ride and head back to base. Review your photos and videos before being dropped off at your hotel."
+      }
+    ],
+    activityOptions: [
+      { name: "23/24 KLX/CRF 150 4T - Half Day Tabanan", priceDiff: 0, description: "3-4 Jam" },
+      { name: "23/24 KLX/CRF 150 4T - Full Day Tabanan", priceDiff: 500000, description: "6-8 Jam" },
+      { name: "23/24 KLX/CRF 150 4T - Full Day Volcano", priceDiff: 800000, description: "6-8 Jam" },
+      { name: "24/25 KLX 230R 4T - Half Day Tabanan", priceDiff: 800000, description: "3-4 Jam" },
+      { name: "24/25 KLX 230R 4T - Full Day Tabanan", priceDiff: 1300000, description: "6-8 Jam" },
+      { name: "24/25 KLX 230R 4T - Full Day Volcano", priceDiff: 1300000, description: "6-8 Jam" },
+      { name: "24/25 KLX 250 - Full Day Volcano", priceDiff: 1300000, description: "6-8 Jam" },
+      { name: "2024 YZ 250F 4T - Half Day Tabanan", priceDiff: 1550000, description: "3-4 Jam" },
+      { name: "2024 YZ 250F 4T - Full Day Tabanan", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "2024 YZ 250F 4T - Full Day Volcano", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "23/24 KTM 250 2T - Half Day Tabanan", priceDiff: 1550000, description: "3-4 Jam" },
+      { name: "23/24 KTM 250 2T - Full Day Tabanan", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "23/24 KTM 250 2T - Full Day Volcano", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "23/24 KTM 300 2T - Half Day Tabanan", priceDiff: 1550000, description: "3-4 Jam" },
+      { name: "23/24 KTM 300 2T - Full Day Tabanan", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "23/24 KTM 300 2T - Full Day Volcano", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "23/24 KTM 250 4T - Half Day Tabanan", priceDiff: 1550000, description: "3-4 Jam" },
+      { name: "23/24 KTM 250 4T - Full Day Tabanan", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "23/24 KTM 250 4T - Full Day Volcano", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "23/24 KTM 350 4T - Half Day Tabanan", priceDiff: 1550000, description: "3-4 Jam" },
+      { name: "23/24 KTM 350 4T - Full Day Tabanan", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "23/24 KTM 350 4T - Full Day Volcano", priceDiff: 2300000, description: "6-8 Jam" },
+      { name: "2025 KTM 250 2T - Half Day Tabanan", priceDiff: 2050000, description: "3-4 Jam" },
+      { name: "2025 KTM 250 2T - Full Day Tabanan", priceDiff: 2800000, description: "6-8 Jam" },
+      { name: "2025 KTM 250 2T - Full Day Volcano", priceDiff: 2800000, description: "6-8 Jam" },
+      { name: "2025 KTM 300 2T - Half Day Tabanan", priceDiff: 2050000, description: "3-4 Jam" },
+      { name: "2025 KTM 300 2T - Full Day Tabanan", priceDiff: 2800000, description: "6-8 Jam" },
+      { name: "2025 KTM 300 2T - Full Day Volcano", priceDiff: 2800000, description: "6-8 Jam" },
+      { name: "2025 KTM 250 4T - Half Day Tabanan", priceDiff: 2050000, description: "3-4 Jam" },
+      { name: "2025 KTM 250 4T - Full Day Tabanan", priceDiff: 2800000, description: "6-8 Jam" },
+      { name: "2025 KTM 250 4T - Full Day Volcano", priceDiff: 2800000, description: "6-8 Jam" },
+      { name: "2025 KTM 350 4T - Half Day Tabanan", priceDiff: 2050000, description: "3-4 Jam" },
+      { name: "2025 KTM 350 4T - Full Day Tabanan", priceDiff: 2800000, description: "6-8 Jam" },
+      { name: "2025 KTM 350 4T - Full Day Volcano", priceDiff: 2800000, description: "6-8 Jam" },
+      { name: "2026 KTM 300 2T - Half Day Tabanan", priceDiff: 2550000, description: "3-4 Jam" },
+      { name: "2026 KTM 300 2T - Full Day Tabanan", priceDiff: 3300000, description: "6-8 Jam" },
+      { name: "2026 KTM 300 2T - Full Day Volcano", priceDiff: 3300000, description: "6-8 Jam" },
+      { name: "2026 KTM 350 4T - Half Day Tabanan", priceDiff: 2550000, description: "3-4 Jam" },
+      { name: "2026 KTM 350 4T - Full Day Tabanan", priceDiff: 3300000, description: "6-8 Jam" },
+      { name: "2026 KTM 350 4T - Full Day Volcano", priceDiff: 3300000, description: "6-8 Jam" }
+    ],
+    addons: [
+      { id: "combo-ultimate", name: "PACKAGE 1: THE ULTIMATE (with Infinity Pool)", price: 2200000, description: "White Water Rafting + Full Adventure ATV + Tlaga Singha Infinity Pool Ticket + Transport" },
+      { id: "combo-ultimate-no-pool", name: "PACKAGE 1: THE ULTIMATE (without Pool)", price: 2000000, description: "White Water Rafting + Full Adventure ATV + Transport" },
+      { id: "combo-atv-water", name: "PACKAGE 2: ATV + WATER FUN (with Infinity Pool)", price: 2000000, description: "ATV Ride + River Tubing + Tlaga Singha Infinity Pool Ticket + Transport" },
+      { id: "combo-atv-water-no-pool", name: "PACKAGE 2: ATV + WATER FUN (without Pool)", price: 2000000, description: "ATV Ride + River Tubing + Transport" },
+      { id: "combo-atv-rafting", name: "PACKAGE 3: ATV + RAFTING", price: 2000000, description: "ATV Ride + White Water Rafting + Transport" },
+      { id: "combo-atv-tubing", name: "PACKAGE 4: ATV + TUBING", price: 2000000, description: "ATV Ride + River Tubing + Transport" }
+    ],
+    faqs: [
+      {
+        id: "faq-db-1",
+        question: "Is there a minimum number of riders?",
+        answer: "Yes, a minimum of 2 riders is required for the Dirt Bike Tour."
+      },
+      {
+        id: "faq-db-2",
+        question: "What do I need to wear?",
+        answer: "You are required to wear shoes and long pants. We will provide all other protective riding gear."
+      },
+      {
+        id: "faq-db-3",
+        question: "Is there an age limit?",
+        answer: "Minimum age is 12 years old for pillion (passenger), and 16+ years old for riding (must bring a driver's license)."
+      }
+    ],
     reviews: []
   }
 ]

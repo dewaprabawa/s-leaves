@@ -47,7 +47,7 @@ export function calculateTourPrice(
     selectedActivityOption?: string
   }
 ): PricingCalculationResult {
-  const basePrice = tour.pricing?.basePrice || 0
+  const basePrice = tour.pricing?.basePrice || (tour as any).basePrice || 0
   const childPrice = tour.pricing?.childPrice || 0
   const infantPrice = tour.pricing?.infantPrice || 0
 

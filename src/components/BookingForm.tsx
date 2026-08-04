@@ -35,7 +35,7 @@ export default function BookingForm({ tour }: Props) {
       infants: 0,
       selectedAddons: [],
       selectedActivityOption: tour.activityOptions && tour.activityOptions.length > 0 ? tour.activityOptions[0].name : undefined,
-      totalPrice: tour.pricing?.basePrice || 0
+      totalPrice: tour.pricing?.basePrice || tour.basePrice || 0
     }
   })
 

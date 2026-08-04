@@ -6,7 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { bookingSchema, type BookingFormData } from "@/lib/validations/booking"
 import { submitBooking, checkAvailability } from "@/app/actions/bookTour"
 import { calculateTourPrice } from "@/lib/pricing"
-import { Calendar, Users, User, Mail, Phone, MessageSquare, CheckCircle2, ChevronRight, ChevronLeft, Loader2, Sparkles, AlertCircle, ShoppingBag } from "lucide-react"
+import { Calendar, Users, User, Mail, Phone, MessageSquare, CheckCircle2, ChevronRight, ChevronLeft, Loader2, Sparkles, AlertCircle, ShoppingBag, ExternalLink } from "lucide-react"
 import { useCurrency } from "@/context/CurrencyContext"
 
 type Props = {
@@ -161,6 +161,25 @@ export default function BookingForm({ tour }: Props) {
 
   return (
     <div className="bg-white dark:bg-gray-900 rounded-3xl shadow-xl border border-gray-150 dark:border-gray-800 p-6 md:p-8">
+      
+      {tour.getYourGuideUrl && (
+        <div className="mb-8">
+          <a 
+            href={tour.getYourGuideUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="w-full py-3 px-4 bg-[#FF5533] hover:bg-[#e64a2c] text-white rounded-xl font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm shadow-[#FF5533]/20"
+          >
+            Book via GetYourGuide <ExternalLink className="w-4 h-4" />
+          </a>
+          <div className="mt-6 flex items-center gap-4">
+            <div className="h-px flex-1 bg-gray-200 dark:bg-gray-800"></div>
+            <span className="text-xs text-gray-500 font-medium uppercase tracking-wider">or book directly</span>
+            <div className="h-px flex-1 bg-gray-200 dark:bg-gray-800"></div>
+          </div>
+        </div>
+      )}
+
       {/* Progress Indicator */}
       <div className="flex items-center justify-between mb-8 relative">
         <div className="absolute left-0 top-1/2 -translate-y-1/2 w-full h-0.5 bg-gray-100 dark:bg-gray-800 rounded-full z-0"></div>

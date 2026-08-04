@@ -49,6 +49,7 @@ export interface Tour {
   addons: TourAddon[]
   faqs: TourFaq[]
   reviews: TourReview[]
+  getYourGuideUrl?: string
 }
 
 export const TOURS: Tour[] = [
@@ -166,6 +167,7 @@ Whether you are a solo traveler, a couple, or a family with children, this cycli
       },
     ],
     reviews: [],
+    getYourGuideUrl: "https://gyg.me/2pBDrw5s",
   },
   {
     id: "luwak-coffee-plantation",
@@ -368,5 +370,6 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
       },
     ],
     reviews: [],
+    getYourGuideUrl: "https://gyg.me/rqpV6ZI5",
   }
 ]

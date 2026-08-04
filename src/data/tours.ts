@@ -75,11 +75,31 @@ export const TOURS: Tour[] = [
       },
     ],
     shortDescription: "Explore the real Bali away from the crowds through historic Pejeng district, morning markets, and expansive rice terraces.",
-    fullDescription: `**Explore the real Bali.** This dedicated cycling tour takes you away from the crowds and deep into the historic Pejeng district. Ride through local morning markets, ancient village pathways, and expansive rice terraces. 
+    fullDescription: `**Escape the Tourist Trail and Discover the Real Bali**
+
+If you are looking for an authentic, off-the-beaten-path experience in Bali, our Pejeng Village & Terrace Cycling Tour is exactly what you need. While most tourists crowd into the center of Ubud, this dedicated cycling tour takes you away from the traffic and deep into the historic Pejeng district—an ancient kingdom that time forgot. 
+
+This is not a high-intensity mountain biking excursion; it is a cultural immersion on two wheels. Designed for all fitness levels, our leisurely route spans approximately 15 kilometers mostly downhill and flat terrain. You will ride through local morning markets, ancient village pathways, and expansive, breathtaking rice terraces that stretch as far as the eye can see.
+
+### The Journey Begins: The Pejeng Morning Market
+Your day starts with a comfortable pickup from your Ubud hotel. We transport you a short distance to our starting base in Pejeng, where you will be fitted with a well-maintained mountain bike and a helmet. After a quick safety briefing from our professional, English-speaking local guide, the adventure begins.
+
+Our first stop is a sensory explosion: the bustling traditional morning market of Pejeng. Here, you will step off your bike and walk through the vibrant stalls. Your guide will introduce you to exotic local fruits you may have never seen before (like snake fruit and mangosteen), pungent Balinese spices, and traditional snacks. This is where the locals shop, and you will get a genuine glimpse into the daily rhythm of Balinese life.
+
+### Cruising Through Ancient History
+Leaving the market behind, we cycle into the heart of the village. Pejeng is not just any village; it was once the epicenter of the mighty Pejeng Kingdom in the 13th century. As you cruise along the quiet, shaded neighborhood paths, you will pass ancient, moss-covered temples and traditional family compounds. We will make a brief stop at a local Balinese home, where your guide will explain the fascinating architecture and layout of a traditional family compound, including the family shrines and the communal living spaces.
+
+### The Majestic Subak Rice Terraces
+As we leave the village behind, the trail opens up to a landscape that defines Bali: stunning, endless rice paddies. But these aren't just beautiful fields; they are part of the ancient *Subak* irrigation system, recognized by UNESCO for its cultural significance. You will cycle right along the edges of the fields on narrow dirt paths. Your guide will explain how this cooperative water management system works, how the farmers coordinate their planting cycles, and why the small shrines you see in the fields are so vital to the harvest. 
+
+### A Refreshing Finish
+After a few hours of cycling, learning, and taking countless photographs, we conclude our journey in a shaded pavilion overlooking the fields. You will be greeted with a freshly opened, ice-cold young coconut to rehydrate and celebrate the completion of the ride. 
+
+Whether you are a solo traveler, a couple, or a family with children, this cycling tour offers a safe, unforgettable way to connect with the soul of Bali. 
     
-Available Schedules:
-- **Morning Ride:** 8:30 AM – 12:30 PM
-- **Afternoon Ride:** 1:30 PM – 5:30 PM`,
+**Available Schedules:**
+- **Morning Ride:** 8:30 AM – 12:30 PM (Highly recommended for the best market experience and cooler weather)
+- **Afternoon Ride:** 1:30 PM – 5:30 PM (Perfect for those looking to catch the late afternoon golden hour light over the rice fields)`,
     highlights: [
       "Cycle through quiet ancient village pathways",
       "Visit a bustling traditional morning market",
@@ -165,11 +185,33 @@ Available Schedules:
       },
     ],
     shortDescription: "Discover the secrets behind Bali's world-famous coffee at Umah Kuno with a jungle walk, traditional roasting, and tasting flight.",
-    fullDescription: `Discover the secrets behind Bali's world-famous coffee at **Umah Kuno**. This standalone visit is perfect for a relaxing morning or a slow afternoon in the jungle.
+    fullDescription: `**A Journey Into the Heart of Bali's Coffee Culture**
+
+Bali is world-renowned for its coffee, but the story behind the cup is often hidden from visitors. Our Luwak Coffee Plantation Experience at the beautiful **Umah Kuno** estate offers you a transparent, ethical, and deeply educational look into how Bali's most famous export is cultivated, processed, and enjoyed. 
+
+This standalone 1.5-hour experience is perfect for a relaxing morning or a slow afternoon in the jungle. It is designed for coffee lovers, culture enthusiasts, and families looking for a peaceful escape into nature.
+
+### The Umah Kuno Difference: Ethical and Authentic
+The highlight of this tour is learning about *Kopi Luwak*, the most expensive and exclusive coffee in the world, famous for its incredibly smooth, non-bitter taste. The coffee is made from beans that have been naturally fermented in the digestive tract of the Asian Palm Civet (the *Luwak*). 
+
+Unfortunately, much of the industry now relies on caged animals to meet tourist demand. We strongly oppose this practice. We partner exclusively with Umah Kuno because they are a traditional, family-run plantation that relies entirely on wild, free-roaming civets. The civets naturally forage in the jungle at night, selecting only the ripest, most perfect coffee cherries. The farmers collect the beans from the forest floor in the morning. This ethical approach not only protects local wildlife but results in a vastly superior cup of coffee.
+
+### The Jungle Walk
+Your experience begins with a guided stroll through a lush, shaded plantation. Your local guide will point out raw cocoa pods hanging from the trees, vanilla orchids climbing up trunks, and various spices like cinnamon and cloves growing wild. You will see exactly how Arabica and Robusta coffee cherries grow on the vine and learn how the farmers determine when they are perfectly ripe for hand-picking.
+
+### The Traditional Roasting Process
+Next, you will step into a traditional Balinese outdoor kitchen. Here, the magic happens. You will watch local farmers roast the cleaned coffee beans over an open wood fire in a massive clay pan. The smell of the roasting beans mingling with the woodsmoke is intoxicating. 
+
+You won't just be watching; you will be invited to participate! Grab the heavy wooden pestle and try your hand at grinding the freshly roasted beans in a giant stone mortar, just as the Balinese have done for centuries. 
+
+### The Grand Tasting Flight
+The tour concludes on a stunning wooden deck suspended over a lush jungle ravine. Sit back, relax, and enjoy the breathtaking views as your host brings out a massive wooden tasting board. You will be served a flight of 10 different locally produced teas and coffees. You will taste everything from ginger tea and mangosteen peel tea to ginseng coffee and pure Balinese cocoa. 
+
+Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luwak. Sip it slowly, note the incredibly smooth finish, and enjoy the serenity of the jungle.
 
 📍 **Location:** [Umah Kuno on Google Maps](https://share.google/VOs6vwV16r2bVERjV)
     
-Available Schedules (Flexible):
+**Available Schedules (Flexible):**
 - **Morning Session:** 10:00 AM – 11:30 AM
 - **Afternoon Session:** 2:00 PM – 3:30 PM
 
@@ -246,9 +288,37 @@ Available Schedules (Flexible):
       },
     ],
     shortDescription: "Immerse yourself in the flavors of Indonesia with a hands-on cooking class in a beautiful traditional kitchen.",
-    fullDescription: `Immerse yourself in the flavors of Indonesia. Set in a beautiful traditional kitchen, this hands-on class teaches you the secrets of Balinese spices.
+    fullDescription: `**Master the Art of Balinese Cuisine in a Traditional Setting**
+
+Balinese food is famous for its explosive flavors, aromatic spices, and vibrant colors. But eating it in a restaurant is only half the experience. To truly understand the culture, you have to learn how to cook it. Our Traditional Balinese Dinner Cooking Class offers you an immersive, hands-on culinary journey that you will remember long after you return home.
+
+Set in a beautiful, open-air traditional Balinese kitchen surrounded by lush tropical gardens, this 3-hour evening class is the perfect blend of education, culture, and gastronomy. It is ideal for couples, groups of friends, and families who want to bond over a shared culinary adventure.
+
+### The Foundation: Understanding Balinese Spices
+Your evening begins with a warm welcome and a refreshing herbal drink. Your English-speaking culinary instructor will then introduce you to the core ingredients of Balinese cuisine. You will learn about the essential roots, herbs, and spices that make up the foundational spice paste known as *Base Genep*. 
+
+You will handle fresh galangal, turmeric, lemongrass, candlenut, and lesser galangal (*kencur*). Your instructor will explain not only how these ingredients are used in cooking, but also their significance in traditional Balinese medicine and culture.
+
+### Hands-On Cooking
+Once you understand the ingredients, it is time to roll up your sleeves and get cooking! Unlike other classes where you just watch a demonstration, this is a fully hands-on experience. You will work at your own dedicated cooking station, equipped with a traditional stone mortar and pestle (*ulekan*), a cutting board, and a wok.
+
+Under the patient guidance of our expert chefs, you will learn the traditional techniques of chopping, pounding, and blending the spices to create a fragrant paste. Over the course of the evening, you will prepare 5 authentic dishes from scratch. 
+
+The menu typically includes:
+1. **Sate Lilit Ayam:** Minced chicken satay blended with grated coconut and spices, wrapped around bamboo sticks and grilled.
+2. **Ayam Betutu:** The iconic Balinese spiced chicken, slow-cooked in rich coconut milk.
+3. **Lawar:** A vibrant, traditional salad made of finely chopped long beans, grated coconut, and spices.
+4. **Sambal Matah:** Bali's famous raw shallot, lemongrass, and chili relish that pairs perfectly with everything.
+5. **Dadar Gulung:** For dessert, you will make these delightful green pandan crepes stuffed with sweet palm sugar and grated coconut.
+
+*(Vegetarian, vegan, and allergy-friendly menus are easily accommodated upon request!)*
+
+### The Grand Feast
+After the hard work is done, you will transition to our beautifully lit, open-air dining pavilion. Here, you will sit down with your fellow chefs to enjoy the incredible feast you have just prepared, served family-style with steaming hot white rice. 
+
+Before you leave, you will be provided with a comprehensive digital recipe book. This ensures you can easily recreate these authentic Balinese flavors in your own kitchen back home, bringing a taste of your holiday to your everyday life.
     
-Available Schedule:
+**Available Schedule:**
 - **Dinner Class:** 5:30 PM (17:30) – 8:30 PM`,
     highlights: [
       "Learn about essential Balinese spices and herbs",

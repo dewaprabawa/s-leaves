@@ -211,7 +211,7 @@ export default function ToursListClient({ initialTours }: Props) {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTours.map((tour) => {
-              const heroUrl = tour.media?.heroImage?.url || ""
+              const heroUrl = tour.media?.heroImage?.url || (tour as any).heroImage?.url || ""
               const basePrice = tour.pricing?.basePrice || (tour as any).basePrice || 0
               const rating = tour.rating || 5
               const reviewCount = tour.reviewCount || 85
@@ -240,7 +240,7 @@ export default function ToursListClient({ initialTours }: Props) {
                     {/* Positioned Overlays */}
                     <div className="absolute inset-x-0 top-0 p-3 flex items-start justify-between z-10 pointer-events-none">
                       <div className="inline-flex items-center gap-1 bg-white/95 dark:bg-gray-950/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[9px] font-black text-gray-900 dark:text-white shadow-sm border border-gray-150/50 pointer-events-auto">
-                        <MapPin className="w-3 h-3 text-emerald-500" /> {tour.location}
+                        <MapPin className="w-3 h-3 text-emerald-500" /> {(tour as any).location || "Bali"}
                       </div>
 
                       <div className="flex flex-col items-end gap-1.5 pointer-events-auto">

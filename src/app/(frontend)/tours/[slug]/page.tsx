@@ -187,21 +187,7 @@ export default async function TourDetailPage({ params }: Props) {
               </div>
             )}
 
-            {/* Video Player */}
-            {tour.youtubeVideoId && (
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 space-y-4">
-                <h2 className="text-xl font-bold text-gray-900 dark:text-white">Experience Highlight</h2>
-                <div className="relative aspect-video w-full rounded-xl overflow-hidden bg-gray-100 dark:bg-gray-800">
-                  <iframe 
-                    className="absolute inset-0 w-full h-full"
-                    src={`https://www.youtube.com/embed/${tour.youtubeVideoId}?rel=0`}
-                    title={`${tour.title} video`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen
-                  />
-                </div>
-              </div>
-            )}
+
 
             {/* Itinerary */}
             {tour.itinerary && tour.itinerary.length > 0 && (

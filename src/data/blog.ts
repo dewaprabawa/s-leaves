@@ -169,10 +169,8 @@ When you sit down on the wooden deck overlooking the jungle ravine with your tas
     title: "Ubud Travel Guide: How to Escape the Crowds in 2026",
     excerpt: "Ubud is famous worldwide, which means the center is often packed. Here is our local guide on how to experience the real, quiet, and spiritual side of Ubud.",
     publishedAt: "2026-08-01T08:00:00Z",
-    author: {
-      name: "Sekar Bali Activity Team",
-      role: "Local Pejeng Guides"
-    },
+    author: "Sekar Bali Activity Team",
+    image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
     content: `
 If you look up "Ubud" on social media today, you will see beautiful jungle swings, lush rice terraces, and aesthetic cafes. What the pictures *don't* show you is the heavy traffic on Jalan Raya Ubud, the packed sidewalks, and the hour-long waits to get into popular restaurants.
 
@@ -220,10 +218,8 @@ Bali is covered in rice terraces. You can find equally beautiful, completely emp
     title: "Morning vs. Afternoon Tours in Bali: Which is Better?",
     excerpt: "Trying to plan your Bali itinerary? We break down the pros, cons, and weather patterns to help you choose the best time for your activities.",
     publishedAt: "2026-08-15T08:00:00Z",
-    author: {
-      name: "Sekar Bali Activity Team",
-      role: "Local Pejeng Guides"
-    },
+    author: "Sekar Bali Activity Team",
+    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
     content: `
 When booking activities in Bali, you are almost always faced with a choice: do you want to start in the morning or the afternoon? 
 

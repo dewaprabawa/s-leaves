@@ -195,6 +195,9 @@ export default function RootLayout({
               <Link href="/blog" className="hover:text-brand-green-light transition-colors">Blog</Link>
               <Link href="/about" className="hover:text-brand-green-light transition-colors">About</Link>
             </p>
+            <p className="text-xs opacity-60 mt-4">
+              Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-brand-green-light/30 underline-offset-4">Tumang Bali Class</a>
+            </p>
             <p className="text-xs opacity-50 mt-4">
               © {new Date().getFullYear()} {siteName}. All rights reserved.
             </p>

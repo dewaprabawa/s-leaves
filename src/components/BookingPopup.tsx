@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import { X } from 'lucide-react';
+import { X, ExternalLink } from 'lucide-react';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -15,6 +15,7 @@ export interface TourConfig {
   adultPrice: number;
   kidPrice?: number | null; // null if kids are not supported/have same price
   minPax: number;
+  getYourGuideUrl?: string;
 }
 
 export function BookingPopup({ isOpen, onClose, tour }: { isOpen: boolean, onClose: () => void, tour: TourConfig | null }) {
@@ -100,6 +101,24 @@ Please confirm my booking!`;
         <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col">
           <h2 className="text-3xl font-serif text-brand-green font-bold mb-2">Book Experience</h2>
           <p className="text-brand-green-light text-sm mb-6 pb-4 border-b border-brand-green/10 font-bold">{tour.title}</p>
+          
+          {tour.getYourGuideUrl && (
+            <div className="mb-6">
+              <a 
+                href={tour.getYourGuideUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full py-3 px-4 bg-[#FF5533] hover:bg-[#e64a2c] text-white rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm shadow-[#FF5533]/20"
+              >
+                Book via GetYourGuide <ExternalLink className="w-4 h-4" />
+              </a>
+              <div className="mt-5 flex items-center gap-4">
+                <div className="h-px flex-1 bg-brand-green/10"></div>
+                <span className="text-[10px] text-brand-green/60 font-bold uppercase tracking-wider">or book directly via whatsapp</span>
+                <div className="h-px flex-1 bg-brand-green/10"></div>
+              </div>
+            </div>
+          )}
 
           <div className="space-y-6 flex-1">
             {/* Time */}

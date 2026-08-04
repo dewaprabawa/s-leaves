@@ -15,7 +15,8 @@ export default function Home() {
     times: ["08:30 AM (Morning Ride)", "01:30 PM (Afternoon Ride)"],
     adultPrice: 400000,
     kidPrice: 350000,
-    minPax: 2
+    minPax: 2,
+    getYourGuideUrl: "https://gyg.me/2pBDrw5s"
   };
 
   const coffeeConfig: TourConfig = {
@@ -33,7 +34,8 @@ export default function Home() {
     times: ["08:30 AM", "02:30 PM", "05:30 PM"],
     adultPrice: 400000,
     kidPrice: 350000,
-    minPax: 2
+    minPax: 2,
+    getYourGuideUrl: "https://gyg.me/rqpV6ZI5"
   };
 
   return (

@@ -4,7 +4,7 @@ import BookingForm from "@/components/BookingForm"
 import ReviewForm from "@/components/ReviewForm"
 import Image from "next/image"
 import Link from "next/link"
-import { Star, Award, ShieldCheck, ArrowLeft, MapPin, Clock, Info, HelpCircle } from "lucide-react"
+import { Star, Award, ShieldCheck, ArrowLeft, MapPin, Clock, Info, HelpCircle, Camera } from "lucide-react"
 import { TOURS, type Tour } from "@/data/tours"
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -160,6 +160,32 @@ export default async function TourDetailPage({ params }: Props) {
                 </ReactMarkdown>
               </div>
             </div>
+
+            {/* Photo Gallery */}
+            {tour.gallery && tour.gallery.length > 0 && (
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 space-y-6">
+                <h2 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                  <Camera className="w-5 h-5 text-emerald-500" /> Experience Photo Gallery
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {tour.gallery.map((imgItem, idx) => (
+                    <div key={idx} className="relative aspect-[4/3] w-full rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800 group">
+                      <Image
+                        src={imgItem.url}
+                        alt={imgItem.alt || tour.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      {imgItem.alt && (
+                        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-3 text-xs text-white font-medium opacity-90">
+                          {imgItem.alt}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
 
             {/* Video Player */}
             {tour.youtubeVideoId && (

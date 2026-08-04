@@ -316,20 +316,36 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     },
     gallery: [
       {
+        url: "/images/cooking/crepe-flip-fun.jpg",
+        alt: "Guests flipping Dadar Gulung pandan crepes in the pan",
+      },
+      {
+        url: "/images/cooking/buffet-spread.jpg",
+        alt: "Traditional Balinese buffet feast prepared by hosts and guests",
+      },
+      {
+        url: "/images/cooking/market-guide.jpg",
+        alt: "Local guide explaining fresh market ingredients in Pejeng",
+      },
+      {
+        url: "/images/cooking/stovetop-class.jpg",
+        alt: "Guests cooking at individual traditional stovetops",
+      },
+      {
+        url: "/images/cooking/sate-lilit-prep.jpg",
+        alt: "Shaping traditional Balinese Sate Lilit skewers",
+      },
+      {
+        url: "/images/cooking/pancake-toss.jpg",
+        alt: "Fun pancake tossing moment during cooking class",
+      },
+      {
         url: "/images/cooking/dish.jpg",
-        alt: "Dadar Gulung Balinese dessert",
+        alt: "Freshly prepared Dadar Gulung dessert",
       },
       {
         url: "/images/cooking/group-plate.jpg",
-        alt: "Happy cooking class guests",
-      },
-      {
-        url: "/images/cooking/table-prep.jpg",
-        alt: "Cooking class table preparation",
-      },
-      {
-        url: "/images/cooking/temple-view.jpg",
-        alt: "Guests at village shrine",
+        alt: "Happy guests presenting their homemade dishes",
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder

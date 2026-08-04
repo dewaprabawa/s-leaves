@@ -430,5 +430,46 @@ Renting a scooter costs about $5-$8 USD per day. It is cheap and fun, but please
 ### 4. Walking
 Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walkable. However, sidewalks are often uneven or non-existent once you leave the main commercial triangles, so comfortable walking shoes are a must!
 `
+  },
+  {
+    slug: "inside-balinese-cooking-class-pejeng",
+    title: "Inside Our Traditional Balinese Cooking Class in Pejeng: Market Walk, Base Genep & Family Feast",
+    excerpt: "Take a step-by-step look into our hands-on Balinese cooking class in Pejeng. From exploring the local morning market to flipping Dadar Gulung pandan crepes!",
+    publishedAt: "2026-08-12",
+    author: "Sekar Bali Activity Team",
+    image: "/images/cooking/stovetop-class.jpg",
+    content: `
+**What happens during a traditional Balinese cooking class in Ubud?** Our [Traditional Balinese Cooking Class](/tours/balinese-cooking-class) in Pejeng begins with an authentic morning market walk where guests learn to identify exotic herbs and spices from local sellers. Back in our traditional open-air kitchen, guests get hands-on experience pounding fresh *Base Genep* spice paste, molding *Sate Lilit* skewers around bamboo, and mastering the art of flipping green *Dadar Gulung* pandan crepes over flame before feasting together on a buffet spread of their own creations.
+
+![Local guide explaining fresh market ingredients in Pejeng market](/images/cooking/market-guide.jpg)
+
+### 1. The Morning Market Walk: Where Flavor Begins
+Before any fire is lit or any knife is picked up, great Balinese food starts at the market. Accompanied by our local host, you will walk through the traditional Pejeng morning market. Here, you won't just look—you will smell, touch, and sample fresh galangal, turmeric, lemongrass, kaffir lime, and tiny red bird's eye chilies.
+
+Our host explains how every ingredient serves a dual purpose in Balinese life: adding rich flavor to dishes and offering medicinal *Jamui* benefits for bodily balance.
+
+![Shaping traditional Balinese Sate Lilit skewers](/images/cooking/sate-lilit-prep.jpg)
+
+### 2. Pounding Base Genep & Shaping Sate Lilit
+In the open-air kitchen pavilion overlooking Pejeng's lush greenery, each guest has their own dedicated cooking station. We start by preparing **Base Genep**—the sacred yellow spice paste that forms the flavor foundation of Balinese cuisine. Using heavy stone mortars and pestles, you will crush fresh shallots, garlic, aromatic ginger, candlelight nuts, and chili into a smooth, fragrance-filled paste.
+
+Next, you will blend this paste with minced meat and grated coconut to mold traditional **Sate Lilit** around bamboo skewers, learning the delicate hand technique passed down through generations of Balinese families.
+
+![Guests flipping Dadar Gulung pandan crepes in the pan](/images/cooking/crepe-flip-fun.jpg)
+
+### 3. Flipping Dadar Gulung & Stovetop Fun
+Cooking should be fun, interactive, and joyous! During the dessert portion of the class, our guests learn to make **Dadar Gulung**—vibrant green Balinese crepes infused with natural pandan juice and stuffed with sweet shredded coconut simmered in palm sugar (*gula merah*).
+
+Flipping these delicate crepes live over individual gas burners always brings laughter and great photos as everyone tries their hand at the perfect pancake toss!
+
+![Traditional Balinese buffet feast prepared by hosts and guests](/images/cooking/buffet-spread.jpg)
+
+### 4. The Family Feast
+After all five traditional dishes are cooked to perfection, we set out a lavish buffet spread in our open pavilion. Guests sit together family-style to enjoy the delicious meal they prepared with their own hands, accompanied by cold drinks, fresh tropical fruits, and great conversation.
+
+Every guest receives a digital recipe book to take home so you can recreate authentic Balinese dinners for your family and friends back home.
+
+Ready to cook with us? [Book Your Balinese Cooking Class](/tours/balinese-cooking-class) now or send us a message on [WhatsApp](https://wa.me/6281775723663)!
+`
   }
 ]

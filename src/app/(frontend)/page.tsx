@@ -55,12 +55,16 @@ export default function Home() {
             Authentic Bali Tours & Village Cycling in Pejeng. Three intimate ways to meet the island beyond the postcard—by bicycle, by coffee cup, and around the family table.
           </h2>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-12">
-            <Link 
+            <a 
               href="#experiences" 
-              className="inline-flex items-center gap-2 bg-brand-green text-sand px-7 py-4 rounded-full font-semibold hover:bg-brand-green-light transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('experiences')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="inline-flex items-center gap-2 bg-brand-green text-sand px-7 py-4 rounded-full font-semibold hover:bg-brand-green-light transition-colors cursor-pointer"
             >
               Find your experience <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
           </div>
           
           <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm font-medium text-brand-green-light">

@@ -22,6 +22,7 @@ export function BookingPopup({ isOpen, onClose, tour }: { isOpen: boolean, onClo
   const [adults, setAdults] = useState(2);
   const [kids, setKids] = useState(0);
   const [time, setTime] = useState("");
+  const [date, setDate] = useState("");
   const [location, setLocation] = useState<{lat: number, lng: number} | null>(UBUD_CENTER);
   const [isOutUbud, setIsOutUbud] = useState(false);
   const [locationDetails, setLocationDetails] = useState("");
@@ -33,6 +34,7 @@ export function BookingPopup({ isOpen, onClose, tour }: { isOpen: boolean, onClo
       setAdults(tour.minPax);
       setKids(0);
       setTime(tour.times[0] || "");
+      setDate(new Date().toISOString().split('T')[0]);
       setLocation(UBUD_CENTER);
       setIsOutUbud(false);
       setLocationDetails("");
@@ -62,6 +64,7 @@ export function BookingPopup({ isOpen, onClose, tour }: { isOpen: boolean, onClo
     const paxText = hasKidPricing ? `- Adults: ${adults}\n- Kids: ${kids}` : `- People: ${adults}`;
 
     const msg = `Hello Sekar Bali Activity! I'd like to book the ${tour.title}.
+- Date: ${date}
 - Time: ${time}
 ${paxText}
 - Pickup Location: https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}
@@ -121,14 +124,26 @@ Please confirm my booking!`;
           )}
 
           <div className="space-y-6 flex-1">
-            {/* Time */}
-            <div>
-              <label className="block text-brand-green font-bold text-sm mb-2">Pickup Time</label>
-              <select value={time} onChange={e => setTime(e.target.value)} className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm appearance-none cursor-pointer">
-                {tour.times.map((t, idx) => (
-                  <option key={idx} value={t}>{t}</option>
-                ))}
-              </select>
+            {/* Date & Time */}
+            <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex-1">
+                <label className="block text-brand-green font-bold text-sm mb-2">Date</label>
+                <input 
+                  type="date" 
+                  value={date} 
+                  onChange={e => setDate(e.target.value)} 
+                  min={new Date().toISOString().split('T')[0]} 
+                  className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm cursor-pointer"
+                />
+              </div>
+              <div className="flex-1">
+                <label className="block text-brand-green font-bold text-sm mb-2">Pickup Time</label>
+                <select value={time} onChange={e => setTime(e.target.value)} className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm appearance-none cursor-pointer">
+                  {tour.times.map((t, idx) => (
+                    <option key={idx} value={t}>{t}</option>
+                  ))}
+                </select>
+              </div>
             </div>
 
             {/* Pax */}

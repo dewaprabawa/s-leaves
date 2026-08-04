@@ -371,5 +371,87 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     ],
     reviews: [],
     getYourGuideUrl: "https://gyg.me/rqpV6ZI5",
+  },
+  {
+    id: "full-day-ubud-tour",
+    title: "Full Day Ubud Tour: Royal Palace, Art Market & Rice Terraces",
+    slug: "full-day-ubud-tour",
+    category: "Culture",
+    duration: "10 Hours",
+    basePrice: 650000,
+    heroImage: {
+      url: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+      alt: "Full Day Ubud Tour",
+    },
+    gallery: [],
+    shortDescription: "Experience the ultimate Full Day Ubud Tour featuring the Ubud Royal Palace, vibrant Art Market, and breathtaking rice terraces.",
+    fullDescription: `**The Ultimate Full Day Ubud Tour**\n\nWhen searching for the perfect *full day ubud tour*, look no further. This comprehensive itinerary is designed to cover the very best cultural highlights in central Bali. \n\nWe begin our journey at the historic **Ubud Royal Palace**, where you can marvel at traditional Balinese architecture. Just across the street, we dive into the bustling **Ubud Art Market**, a perfect spot to find authentic handicrafts and souvenirs.\n\nAfter a morning of culture and shopping, we head to the lush jungles for an optional *atv ride bali swing tour* experience or a relaxing walk through the Tegalalang rice terraces. This is a private tour, meaning you can customize the pace to suit your needs.`,
+    highlights: ["Ubud Royal Palace", "Ubud Art Market", "Tegalalang Rice Terraces"],
+    included: ["Private transport", "English speaking driver", "Mineral water"],
+    notIncluded: ["Entrance fees", "Lunch"],
+    itinerary: [
+      {
+        id: "iti-fdu-1",
+        time: "08:30 AM",
+        title: "Hotel Pickup",
+        description: "Your private driver will pick you up from your hotel in Bali."
+      },
+      {
+        id: "iti-fdu-2",
+        time: "10:00 AM",
+        title: "Ubud Royal Palace & Art Market",
+        description: "Explore the center of Ubud, taking in the historical palace and shopping at the traditional market."
+      },
+      {
+        id: "iti-fdu-3",
+        time: "02:00 PM",
+        title: "Tegalalang Rice Terraces",
+        description: "Walk the stunning terraces and optionally experience the famous Bali Swing."
+      }
+    ],
+    addons: [],
+    faqs: [],
+    reviews: []
+  },
+  {
+    id: "half-day-ubud-tanah-lot-tour",
+    title: "Half Day Trip: Explore Ubud Culture & Amazing Sunset at Tanah Lot Temple",
+    slug: "half-day-ubud-tanah-lot-tour",
+    category: "Adventure",
+    duration: "6 Hours",
+    basePrice: 450000,
+    heroImage: {
+      url: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
+      alt: "Tanah Lot Sunset",
+    },
+    gallery: [],
+    shortDescription: "A perfect half day trip explore ubud culture amazing sunset tanah lot temple. Ideal for those short on time.",
+    fullDescription: `**Half Day Ubud & Tanah Lot Sunset Experience**\n\nIf you want to experience the magic of Bali but are short on time, this is the perfect *half day trip explore ubud culture amazing sunset tanah lot temple*.\n\nWe start in the afternoon, visiting key cultural sites around Ubud before making our way to the coast. As the afternoon cools, we arrive at the iconic sea temple of Tanah Lot. Watching the sun dip below the Indian Ocean with the temple silhouetted in the foreground is a breathtaking experience.\n\nThis *half day ubud tour* alternative ensures you get maximum value and unforgettable memories without committing to a full 10-hour day.`,
+    highlights: ["Ubud Cultural Stops", "Tanah Lot Temple", "Sunset views"],
+    included: ["Private transport", "English speaking driver", "Mineral water"],
+    notIncluded: ["Entrance fees", "Dinner"],
+    itinerary: [
+      {
+        id: "iti-hdu-1",
+        time: "01:00 PM",
+        title: "Hotel Pickup",
+        description: "Start your half day adventure with a private pickup."
+      },
+      {
+        id: "iti-hdu-2",
+        time: "02:30 PM",
+        title: "Ubud Surrounds",
+        description: "Visit key cultural sites or temples around the Ubud area."
+      },
+      {
+        id: "iti-hdu-3",
+        time: "05:00 PM",
+        title: "Tanah Lot Temple Sunset",
+        description: "Arrive at Tanah Lot to secure the perfect spot for the iconic sunset over the ocean."
+      }
+    ],
+    addons: [],
+    faqs: [],
+    reviews: []
   }
 ]

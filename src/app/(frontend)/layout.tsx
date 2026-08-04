@@ -47,21 +47,84 @@ export const metadata: Metadata = {
   },
 }
 
-const localBusinessSchema = {
-  "@context": "https://schema.org",
-  "@type": "TravelAgency",
-  "name": "Sekar Bali Activity",
-  "description": "Authentic village-led tours, cycling, and cooking classes in Pejeng, Bali.",
-  "url": "https://www.sekarbaliactivity.com",
-  "telephone": "+6281775723663",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Pejeng",
-    "addressRegion": "Bali",
-    "addressCountry": "ID"
+const schemaData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Sekar Bali Activity",
+    "description": "Authentic village-led tours, cycling, and cooking classes in Pejeng, Bali.",
+    "url": "https://www.sekarbaliactivity.com",
+    "telephone": "+6281775723663",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pejeng",
+      "addressRegion": "Bali",
+      "addressCountry": "ID"
+    },
+    "image": "https://www.sekarbaliactivity.com/logo.png"
   },
-  "image": "https://www.sekarbaliactivity.com/logo.png"
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Pejeng Village & Terrace Cycling Tour",
+    "description": "Explore the real Bali on a cycling tour through historic Pejeng, passing ancient temples, markets, and Subak rice terraces.",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Sekar Bali Activity"
+    },
+    "touristType": [
+      "Couples",
+      "Families",
+      "Small groups"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "400000",
+      "priceCurrency": "IDR",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Luwak Coffee Plantation Experience",
+    "description": "Discover the secrets behind Bali's world-famous coffee at Umah Kuno. Jungle walk, traditional roasting, and coffee tasting.",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Sekar Bali Activity"
+    },
+    "touristType": [
+      "Couples",
+      "Small groups"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "400000",
+      "priceCurrency": "IDR",
+      "availability": "https://schema.org/InStock"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Traditional Balinese Dinner Cooking Class",
+    "description": "Immerse yourself in the flavors of Indonesia in our hands-on cooking class in a traditional outdoor kitchen.",
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Sekar Bali Activity"
+    },
+    "touristType": [
+      "Couples",
+      "Families"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "400000",
+      "priceCurrency": "IDR",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+];
 
 const SETTINGS = {
   siteName: "Sekar Bali Activity",
@@ -79,7 +142,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </head>
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground transition-colors duration-200`}>

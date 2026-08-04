@@ -1,0 +1,1038 @@
+{
+  "url": "https://www.sekarbaliactivity.com",
+  "scores": {
+    "overall": 64,
+    "categories": {
+      "security": 45,
+      "social": 85,
+      "robots": 20,
+      "article": 50,
+      "broken_links": 100,
+      "internal_links": 80,
+      "redirects": 100,
+      "llms_txt": 0,
+      "pagespeed": 0,
+      "onpage": 100,
+      "readability": 82,
+      "entity": 0,
+      "link_profile": 33,
+      "hreflang": 0,
+      "duplicate_content": 100
+    },
+    "weights": {
+      "security": 8,
+      "social": 5,
+      "robots": 8,
+      "broken_links": 10,
+      "internal_links": 8,
+      "redirects": 3,
+      "llms_txt": 5,
+      "pagespeed": 13,
+      "onpage": 10,
+      "readability": 8,
+      "entity": 5,
+      "link_profile": 7,
+      "hreflang": 5,
+      "duplicate_content": 5
+    },
+    "scoring_version": 1
+  },
+  "data": {
+    "url": "https://www.sekarbaliactivity.com",
+    "domain": "www.sekarbaliactivity.com",
+    "timestamp": "2026-08-04T19:31:49.997322",
+    "sections": {
+      "robots": {
+        "url": "https://www.sekarbaliactivity.com/robots.txt",
+        "status": 404,
+        "user_agents": {},
+        "sitemaps": [],
+        "crawl_delays": {},
+        "ai_crawler_status": {
+          "GPTBot": "allowed (no robots.txt)",
+          "ChatGPT-User": "allowed (no robots.txt)",
+          "ClaudeBot": "allowed (no robots.txt)",
+          "PerplexityBot": "allowed (no robots.txt)",
+          "Google-Extended": "allowed (no robots.txt)",
+          "Applebot-Extended": "allowed (no robots.txt)",
+          "Bytespider": "allowed (no robots.txt)",
+          "CCBot": "allowed (no robots.txt)",
+          "anthropic-ai": "allowed (no robots.txt)",
+          "FacebookBot": "allowed (no robots.txt)",
+          "Amazonbot": "allowed (no robots.txt)"
+        },
+        "issues": [
+          "\ud83d\udd34 No robots.txt found \u2014 all crawlers allowed by default"
+        ],
+        "error": null
+      },
+      "security": {
+        "url": "https://www.sekarbaliactivity.com",
+        "score": 45,
+        "https": true,
+        "headers_present": {
+          "HSTS (Strict-Transport-Security)": "max-age=63072000"
+        },
+        "headers_missing": {
+          "Content-Security-Policy (CSP)": "Prevents XSS, clickjacking, and code injection.",
+          "X-Frame-Options": "Prevents clickjacking by controlling iframe embedding.",
+          "X-Content-Type-Options": "Prevents MIME-type sniffing.",
+          "Referrer-Policy": "Controls how much referrer info is shared.",
+          "Permissions-Policy": "Controls browser feature access (camera, microphone, geolocation)."
+        },
+        "header_values": {
+          "strict-transport-security": "max-age=63072000"
+        },
+        "issues": [
+          "\u26a0\ufe0f HSTS missing includeSubDomains directive",
+          "\ud83d\udd34 5 security headers missing \u2014 poor security posture"
+        ],
+        "recommendations": [
+          "Content-Security-Policy (CSP): Add a Content-Security-Policy header restricting script/style sources.",
+          "X-Frame-Options: Add header: X-Frame-Options: SAMEORIGIN",
+          "X-Content-Type-Options: Add header: X-Content-Type-Options: nosniff",
+          "Referrer-Policy: Add header: Referrer-Policy: strict-origin-when-cross-origin",
+          "Permissions-Policy: Add header: Permissions-Policy: camera=(), microphone=(), geolocation=()"
+        ],
+        "error": null
+      },
+      "social": {
+        "url": "https://www.sekarbaliactivity.com",
+        "score": 85,
+        "og_tags": {
+          "og:title": "Sekar Bali Activity | Authentic Bali Tours in Pejeng",
+          "og:description": "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
+          "og:url": "https://www.sekarbaliactivity.com",
+          "og:site_name": "Sekar Bali Activity",
+          "og:locale": "en_US",
+          "og:image": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg",
+          "og:image:width": "1200",
+          "og:image:height": "630",
+          "og:image:alt": "Sekar Bali Activity Village Tours",
+          "og:type": "website"
+        },
+        "twitter_tags": {
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Sekar Bali Activity | Authentic Bali Tours",
+          "twitter:description": "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
+          "twitter:image": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg"
+        },
+        "og_present": [
+          "og:title",
+          "og:description",
+          "og:image",
+          "og:url",
+          "og:type",
+          "og:site_name",
+          "og:locale"
+        ],
+        "og_missing": [],
+        "twitter_present": [
+          "twitter:card",
+          "twitter:title",
+          "twitter:description",
+          "twitter:image"
+        ],
+        "twitter_missing": [],
+        "issues": [],
+        "recommendations": [],
+        "preview": {
+          "title": "Sekar Bali Activity | Authentic Bali Tours in Pejeng",
+          "description": "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
+          "image": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg",
+          "site_name": "Sekar Bali Activity"
+        },
+        "error": null
+      },
+      "redirects": {
+        "url": "https://www.sekarbaliactivity.com",
+        "final_url": "https://www.sekarbaliactivity.com",
+        "chain": [
+          {
+            "step": 1,
+            "url": "https://www.sekarbaliactivity.com",
+            "status": 200,
+            "time_ms": 393,
+            "final": true
+          }
+        ],
+        "total_hops": 0,
+        "total_time_ms": 393,
+        "has_loop": false,
+        "has_mixed_protocol": false,
+        "issues": [],
+        "error": null
+      },
+      "llms_txt": {
+        "url": "https://www.sekarbaliactivity.com/llms.txt",
+        "full_url": "https://www.sekarbaliactivity.com/llms-full.txt",
+        "exists": false,
+        "full_exists": false,
+        "status": 404,
+        "full_status": 404,
+        "parsed": {
+          "title": null,
+          "description": null,
+          "sections": [],
+          "links": []
+        },
+        "quality": {
+          "score": 0,
+          "issues": [
+            "\ud83d\udd34 No llms.txt found"
+          ],
+          "suggestions": [
+            "Create /llms.txt with site name, description, and key page links"
+          ]
+        },
+        "error": null
+      },
+      "broken_links": {
+        "page_url": "https://www.sekarbaliactivity.com",
+        "total_links": 2,
+        "checked": 2,
+        "broken": [],
+        "redirected": [
+          {
+            "url": "https://share.google/VOs6vwV16r2bVERjV",
+            "anchor_text": "\ud83d\udccd View Umah Kuno on Google Maps \u2192",
+            "is_internal": false,
+            "status": 200,
+            "error": null,
+            "redirect": {
+              "from": "https://share.google/VOs6vwV16r2bVERjV",
+              "to": "https://www.google.com/share.google?q=VOs6vwV16r2bVERjV",
+              "hops": 1,
+              "codes": [
+                302
+              ]
+            },
+            "response_time_ms": 673
+          },
+          {
+            "url": "https://wa.me/6281775723663",
+            "anchor_text": "Book a place",
+            "is_internal": false,
+            "status": 200,
+            "error": null,
+            "redirect": {
+              "from": "https://wa.me/6281775723663",
+              "to": "https://api.whatsapp.com/send/?phone=6281775723663&text&type=phone_number&app_absent=0",
+              "hops": 1,
+              "codes": [
+                302
+              ]
+            },
+            "response_time_ms": 523
+          }
+        ],
+        "timeout": [],
+        "healthy": 0,
+        "summary": {
+          "total": 2,
+          "healthy": 0,
+          "broken": 0,
+          "redirected": 2,
+          "timeout": 0
+        },
+        "issues": [],
+        "error": null
+      },
+      "internal_links": {
+        "start_url": "https://www.sekarbaliactivity.com",
+        "domain": "www.sekarbaliactivity.com",
+        "pages_crawled": 1,
+        "total_internal_links": 0,
+        "unique_pages_found": 0,
+        "max_depth_reached": 0,
+        "pages": {
+          "https://www.sekarbaliactivity.com": {
+            "outgoing_links": 0,
+            "incoming_links": 0
+          }
+        },
+        "anchor_texts": {},
+        "link_distribution": {
+          "min": 0,
+          "max": 0,
+          "avg": 0.0
+        },
+        "orphan_candidates": [],
+        "nofollow_links": [],
+        "issues": [
+          "\u26a0\ufe0f 1 page(s) have fewer than 3 internal links"
+        ],
+        "recommendations": [
+          "Increase internal linking \u2014 aim for 3-5 relevant links per 1000 words"
+        ],
+        "error": null
+      },
+      "pagespeed": {
+        "url": "https://www.sekarbaliactivity.com",
+        "strategy": "mobile",
+        "performance_score": null,
+        "metrics": {},
+        "opportunities": [],
+        "diagnostics": [],
+        "field_data_available": false,
+        "error": "Rate limited by Google API. Wait a few minutes or add an API key."
+      },
+      "entity": {
+        "url": "https://www.sekarbaliactivity.com",
+        "entity_name": "Sekar Bali Activity",
+        "entities_in_schema": [],
+        "sameas_analysis": {
+          "found": {},
+          "missing": {
+            "Wikipedia": {
+              "domain": "wikipedia.org",
+              "priority": "Critical",
+              "kg_signal": "Primary"
+            },
+            "Wikidata": {
+              "domain": "wikidata.org",
+              "priority": "Critical",
+              "kg_signal": "Primary"
+            },
+            "LinkedIn": {
+              "domain": "linkedin.com",
+              "priority": "High",
+              "kg_signal": "Strong"
+            },
+            "Twitter/X": {
+              "domain": "x.com",
+              "priority": "High",
+              "kg_signal": "Strong"
+            }
+          },
+          "issues": [],
+          "total_found": 0,
+          "total_missing_critical": 4
+        },
+        "wikidata": {
+          "found": false,
+          "qid": null,
+          "url": null
+        },
+        "wikipedia": {
+          "found": false,
+          "url": null
+        },
+        "google_kg": {
+          "checked": false,
+          "found": false,
+          "result": null
+        },
+        "nap_issues": [],
+        "issues": [
+          {
+            "severity": "Critical",
+            "area": "Schema",
+            "finding": "No Organization/Person entity found in JSON-LD.",
+            "fix": "Add Organization or Person schema with name, url, logo, and sameAs properties."
+          },
+          {
+            "severity": "Info",
+            "area": "Wikidata",
+            "finding": "No Wikidata entry found for 'Sekar Bali Activity'.",
+            "fix": "If the entity meets Wikidata notability guidelines, create or improve an item with accurate third-party references. Do not create one solely for SEO."
+          },
+          {
+            "severity": "Info",
+            "area": "Wikipedia",
+            "finding": "No Wikipedia article found for 'Sekar Bali Activity'.",
+            "fix": "Only pursue Wikipedia if the entity meets independent notability standards. Otherwise, strengthen official schema, sameAs profiles, citations, and About/Contact signals."
+          },
+          {
+            "severity": "Info",
+            "area": "sameAs",
+            "finding": "Missing sameAs link to Wikipedia (Primary KG signal).",
+            "fix": "Add the existing official 'wikipedia.org' URL to sameAs; do not create this profile solely for SEO."
+          },
+          {
+            "severity": "Info",
+            "area": "sameAs",
+            "finding": "Missing sameAs link to Wikidata (Primary KG signal).",
+            "fix": "Add the existing official 'wikidata.org' URL to sameAs; do not create this profile solely for SEO."
+          },
+          {
+            "severity": "Info",
+            "area": "sameAs",
+            "finding": "Missing sameAs link to LinkedIn (Strong KG signal).",
+            "fix": "Add 'linkedin.com' profile URL to sameAs array in your entity schema."
+          },
+          {
+            "severity": "Info",
+            "area": "sameAs",
+            "finding": "Missing sameAs link to Twitter/X (Strong KG signal).",
+            "fix": "Add 'x.com' profile URL to sameAs array in your entity schema."
+          }
+        ],
+        "summary": {
+          "entities_found": 0,
+          "sameas_count": 0,
+          "sameas_missing_critical": 4,
+          "wikidata_found": false,
+          "wikipedia_found": false,
+          "google_kg_checked": false,
+          "google_kg_found": false,
+          "total_issues": 7
+        }
+      },
+      "link_profile": {
+        "pages_crawled": 14,
+        "total_internal_links": 34,
+        "total_external_links": 19,
+        "unique_internal_targets": 12,
+        "unique_external_domains": 3,
+        "avg_internal_links_per_page": 2.4,
+        "orphan_pages": {
+          "count": 2,
+          "urls": [
+            "https://www.sekarbaliactivity.com/contact",
+            "https://www.sekarbaliactivity.com/about"
+          ]
+        },
+        "dead_end_pages": {
+          "count": 4,
+          "urls": [
+            "https://www.sekarbaliactivity.com",
+            "https://www.sekarbaliactivity.com/tours",
+            "https://www.sekarbaliactivity.com/about",
+            "https://www.sekarbaliactivity.com/contact"
+          ]
+        },
+        "top_linked_pages": [
+          {
+            "url": "https://www.sekarbaliactivity.com/blog",
+            "inbound_links": 6
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/tours/pejeng-cycling-tour",
+            "inbound_links": 5
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/tours",
+            "inbound_links": 4
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/tours/balinese-cooking-class",
+            "inbound_links": 4
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/blog/history-of-pejeng-bali-ancient-kingdom",
+            "inbound_links": 2
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/blog/what-is-the-subak-system-bali",
+            "inbound_links": 2
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/blog/5-essential-balinese-spices",
+            "inbound_links": 2
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/blog/luwak-coffee-ethical-sourcing",
+            "inbound_links": 2
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/blog/ubud-travel-guide-escape-crowds-2026",
+            "inbound_links": 2
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/blog/morning-vs-afternoon-tours-bali",
+            "inbound_links": 2
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/tours/luwak-coffee-plantation",
+            "inbound_links": 2
+          },
+          {
+            "url": "https://www.sekarbaliactivity.com/",
+            "inbound_links": 1
+          }
+        ],
+        "top_external_domains": [
+          {
+            "domain": "gyg.me",
+            "links": 2
+          },
+          {
+            "domain": "wa.me",
+            "links": 1
+          },
+          {
+            "domain": "share.google",
+            "links": 1
+          }
+        ],
+        "issues": [
+          {
+            "type": "orphan_pages",
+            "severity": "High",
+            "count": 2,
+            "finding": "2 orphan page(s) with zero inbound internal links.",
+            "pages": [
+              "https://www.sekarbaliactivity.com/contact",
+              "https://www.sekarbaliactivity.com/about"
+            ],
+            "fix": "Add internal links from relevant content pages to these orphan pages."
+          },
+          {
+            "type": "dead_end_pages",
+            "severity": "Medium",
+            "count": 4,
+            "finding": "4 page(s) with no outbound internal links (dead ends).",
+            "pages": [
+              "https://www.sekarbaliactivity.com",
+              "https://www.sekarbaliactivity.com/tours",
+              "https://www.sekarbaliactivity.com/about",
+              "https://www.sekarbaliactivity.com/contact"
+            ],
+            "fix": "Add contextual internal links to related content from these pages."
+          },
+          {
+            "type": "low_internal_linking",
+            "severity": "High",
+            "finding": "Average internal links per page is only 2.4 (target: 5-10).",
+            "fix": "Increase internal linking by adding contextual links within content."
+          }
+        ],
+        "site_url": "https://www.sekarbaliactivity.com"
+      },
+      "hreflang": {
+        "url": "https://www.sekarbaliactivity.com/",
+        "implementation_method": "none",
+        "hreflang_tags_found": 0,
+        "tags": [],
+        "sitemap": {
+          "found": false,
+          "url": "https://www.sekarbaliactivity.com/sitemap.xml",
+          "has_xhtml_namespace": false,
+          "language_variants_found": [],
+          "note": "No hreflang found in sitemap."
+        },
+        "checks": {
+          "hreflang_present": {
+            "passed": false,
+            "severity": "Info",
+            "finding": "No hreflang tags found (HTML, HTTP headers, or sitemap).",
+            "fix": "If this is a single-language site, hreflang is not needed. For multi-language sites, implement hreflang via HTML link tags or sitemap."
+          }
+        },
+        "language_code_issues": [],
+        "return_tag_checks": [],
+        "summary": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0,
+          "passed": 0
+        }
+      },
+      "duplicate_content": {
+        "pages_analyzed": 1,
+        "exact_duplicates": [],
+        "near_duplicates": [],
+        "thin_content": [],
+        "summary": {
+          "exact_duplicate_groups": 0,
+          "near_duplicate_pairs": 0,
+          "thin_pages": 0,
+          "avg_word_count": 917
+        }
+      },
+      "onpage": {
+        "title": "Sekar Bali Activity | Premium Bali Tours",
+        "meta_description": "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
+        "meta_robots": null,
+        "x_robots_tag": null,
+        "canonical": "https://www.sekarbaliactivity.com",
+        "lang": "en",
+        "charset": "utf-8",
+        "viewport": "width=device-width, initial-scale=1",
+        "favicon": "https://www.sekarbaliactivity.com/logo.png",
+        "h1": [
+          "Authentic Bali Tours & Village Cycling in Pejeng"
+        ],
+        "h2": [
+          "Three windowsinto everyday Bali.",
+          "Follow thePejeng route.",
+          "Frequently Asked Questions",
+          "Save your placein Pejeng."
+        ],
+        "h3": [
+          "Pejeng Village & Terrace Cycling",
+          "Luwak Coffee Plantation Experience (Umah Kuno)",
+          "Traditional Balinese Dinner Cooking Class",
+          "Pickup & Briefing",
+          "Pejeng Local Market",
+          "Village & Temple Cruising",
+          "Subak Rice Terraces",
+          "Fresh Coconut & Wind Down",
+          "Hotel Drop-off",
+          "Local by design",
+          "Comfortably small",
+          "Ready for you"
+        ],
+        "h4": [],
+        "h5": [],
+        "h6": [],
+        "images": [
+          {
+            "src": "https://www.sekarbaliactivity.com/logo.png",
+            "alt": "Sekar Bali Activity",
+            "width": null,
+            "height": null,
+            "is_responsive_fill": false,
+            "loading": null
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+            "alt": "Ancient Balinese temple surrounded by lush tropical greenery",
+            "width": null,
+            "height": null,
+            "is_responsive_fill": false,
+            "loading": null
+          },
+          {
+            "src": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg",
+            "alt": "Cycling Tour",
+            "width": null,
+            "height": null,
+            "is_responsive_fill": false,
+            "loading": null
+          },
+          {
+            "src": "https://www.sekarbaliactivity.com/coffee.jpg",
+            "alt": "Luwak Coffee Plantation Umah Kuno",
+            "width": null,
+            "height": null,
+            "is_responsive_fill": false,
+            "loading": null
+          },
+          {
+            "src": "https://www.sekarbaliactivity.com/images/cooking/pancake-toss.jpg",
+            "alt": "Cooking Class",
+            "width": null,
+            "height": null,
+            "is_responsive_fill": false,
+            "loading": null
+          }
+        ],
+        "links": {
+          "internal": [],
+          "external": [
+            {
+              "href": "https://wa.me/6281775723663",
+              "text": "Book a place",
+              "rel": []
+            },
+            {
+              "href": "https://share.google/VOs6vwV16r2bVERjV",
+              "text": "\ud83d\udccd View Umah Kuno on Google Maps \u2192",
+              "rel": [
+                "noopener",
+                "noreferrer"
+              ]
+            },
+            {
+              "href": "https://wa.me/6281775723663",
+              "text": "Book via WhatsApp",
+              "rel": []
+            }
+          ]
+        },
+        "pagination": {
+          "prev": null,
+          "next": null
+        },
+        "resource_hints": {
+          "preload": [
+            {
+              "href": "https://www.sekarbaliactivity.com/_next/static/media/83afe278b6a6bb3c-s.p.2bn3s6zvc0dyp.woff2",
+              "as": "font",
+              "type": "font/woff2",
+              "crossorigin": ""
+            },
+            {
+              "href": "https://www.sekarbaliactivity.com/logo.png",
+              "as": "image",
+              "type": null,
+              "crossorigin": null
+            },
+            {
+              "href": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+              "as": "image",
+              "type": null,
+              "crossorigin": null
+            },
+            {
+              "href": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg",
+              "as": "image",
+              "type": null,
+              "crossorigin": null
+            },
+            {
+              "href": "https://www.sekarbaliactivity.com/coffee.jpg",
+              "as": "image",
+              "type": null,
+              "crossorigin": null
+            },
+            {
+              "href": "https://www.sekarbaliactivity.com/images/cooking/pancake-toss.jpg",
+              "as": "image",
+              "type": null,
+              "crossorigin": null
+            },
+            {
+              "href": "https://www.sekarbaliactivity.com/_next/static/chunks/37v5ulr6qjozi.js",
+              "as": "script",
+              "type": null,
+              "crossorigin": null
+            }
+          ],
+          "preconnect": [],
+          "dns-prefetch": [],
+          "prefetch": [],
+          "prerender": []
+        },
+        "schema": [
+          {
+            "@type": "TravelAgency",
+            "@types": [
+              "TravelAgency"
+            ],
+            "@id": null,
+            "@context": "https://schema.org",
+            "status": "active",
+            "note": "",
+            "has_context": true,
+            "has_type": true,
+            "from_graph": false,
+            "raw": {
+              "@context": "https://schema.org",
+              "@type": "TravelAgency",
+              "name": "Sekar Bali Activity",
+              "description": "Authentic village-led tours, cycling, and cooking classes in Pejeng, Bali.",
+              "url": "https://www.sekarbaliactivity.com",
+              "telephone": "+6281775723663",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Pejeng",
+                "addressRegion": "Bali",
+                "addressCountry": "ID"
+              },
+              "image": "https://www.sekarbaliactivity.com/logo.png"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@types": [
+              "FAQPage"
+            ],
+            "@id": null,
+            "@context": "https://schema.org",
+            "status": "restricted",
+            "note": "FAQPage is restricted to government/healthcare authority sites only.",
+            "has_context": true,
+            "has_type": true,
+            "from_graph": false,
+            "raw": {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What types of experiences does Sekar Bali Activity offer?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer three intimate, village-led experiences in the historic Pejeng district (near Ubud, Bali): a scenic Village & Terrace Cycling Tour, an authentic Luwak Coffee Plantation Experience (Umah Kuno), and a hands-on Traditional Balinese Dinner Cooking Class."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Where do the tours take place, and is pickup included?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All our experiences take place in the peaceful village of Pejeng, away from the typical tourist crowds. We offer convenient pickup services in the Ubud area so you can relax and enjoy the day."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Are your tours suitable for large groups?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We deliberately keep our groups comfortably small. This ensures a safe, unhurried pace, allowing for more personal conversations with our local hosts and a deeper connection to the Balinese culture around you."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do I book a tour, and do I need to pay in advance?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Booking is incredibly simple and direct! You can click the WhatsApp button on our website to chat with our local team and check availability. No payment is required just to inquire or reserve your spot."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How much do the Bali tours cost?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our authentic experiences start at a highly accessible price point to support the local village economy: Cycling Tour & Cooking Class are IDR 400,000 per adult (IDR 350,000 per child), and the Luwak Coffee Experience is IDR 400,000 per person (requires a minimum booking of 3 people)."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How long do the activities last?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our activities are designed to give you a real morning, afternoon, or evening without feeling rushed. The maximum tour length is 4 hours (for example, the cycling tour runs from 8:30 AM to 12:30 PM), while the coffee tasting is a shorter, relaxing 1.5-hour session."
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "open_graph": {
+          "og:title": "Sekar Bali Activity | Authentic Bali Tours in Pejeng",
+          "og:description": "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
+          "og:url": "https://www.sekarbaliactivity.com",
+          "og:site_name": "Sekar Bali Activity",
+          "og:locale": "en_US",
+          "og:image": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg",
+          "og:image:width": "1200",
+          "og:image:height": "630",
+          "og:image:alt": "Sekar Bali Activity Village Tours",
+          "og:type": "website"
+        },
+        "twitter_card": {
+          "twitter:card": "summary_large_image",
+          "twitter:title": "Sekar Bali Activity | Authentic Bali Tours",
+          "twitter:description": "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
+          "twitter:image": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg"
+        },
+        "word_count": 923,
+        "hreflang": []
+      },
+      "readability": {
+        "word_count": 632,
+        "sentence_count": 40,
+        "paragraph_count": 40,
+        "syllable_count": 1058,
+        "avg_sentence_length": 15.8,
+        "avg_paragraph_length": 1.0,
+        "avg_syllables_per_word": 1.67,
+        "flesch_reading_ease": 49.2,
+        "flesch_kincaid_grade": 10.3,
+        "reading_level": "Difficult (9th-12th grade)",
+        "estimated_reading_time_min": 3.2,
+        "complex_words": 96,
+        "complex_word_pct": 15.2,
+        "issues": [
+          "\u2139\ufe0f Content readability is moderate (Flesch: 49.2) \u2014 suitable for educated audience"
+        ],
+        "recommendations": [
+          "Rewrite the flagged long sentences below using the suggested replacements."
+        ],
+        "sentence_rewrites": [
+          {
+            "current": "The maximum tour length is 4 hours (for example, the cycling tour runs from 8:30 AM to 12:30 PM), while the coffee tasting is a shorter, relaxing 1.5-hour session.",
+            "suggested": "The maximum tour length is 4 hours (for example, the cycling tour runs from 8:30 AM to 12:30. PM), while the coffee tasting is a shorter, relaxing 1.5-hour session..",
+            "current_word_count": 26,
+            "target_word_count": "15-20"
+          }
+        ]
+      },
+      "article": {
+        "url": "https://www.sekarbaliactivity.com",
+        "cms_detected": "generic",
+        "title": "Sekar Bali Activity | Premium Bali Tours",
+        "meta_description": "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
+        "og_description": "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
+        "author": "",
+        "publish_date": "",
+        "labels": [],
+        "headings": {
+          "h1": [],
+          "h2": [],
+          "h3": [
+            "Pejeng Village & Terrace Cycling"
+          ]
+        },
+        "paragraphs": [
+          "Explore the real Bali. This dedicated cycling tour takes you away from the crowds and deep into the historic Pejeng district. Ride through local morning markets, ancient village pathways, and expansive rice terraces."
+        ],
+        "images": [
+          {
+            "src": "/images/cycling/rice-field-bikes.jpg",
+            "alt": "Cycling Tour",
+            "width": "",
+            "height": "",
+            "loading": ""
+          }
+        ],
+        "structured_data": [
+          {
+            "@type": "TravelAgency",
+            "@context": "https://schema.org",
+            "status": "active",
+            "note": "",
+            "has_context": true,
+            "has_type": true,
+            "raw": {
+              "@context": "https://schema.org",
+              "@type": "TravelAgency",
+              "name": "Sekar Bali Activity",
+              "description": "Authentic village-led tours, cycling, and cooking classes in Pejeng, Bali.",
+              "url": "https://www.sekarbaliactivity.com",
+              "telephone": "+6281775723663",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Pejeng",
+                "addressRegion": "Bali",
+                "addressCountry": "ID"
+              },
+              "image": "https://www.sekarbaliactivity.com/logo.png"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@context": "https://schema.org",
+            "status": "restricted",
+            "note": "FAQPage is restricted to government/healthcare authority sites only.",
+            "has_context": true,
+            "has_type": true,
+            "raw": {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What types of experiences does Sekar Bali Activity offer?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We offer three intimate, village-led experiences in the historic Pejeng district (near Ubud, Bali): a scenic Village & Terrace Cycling Tour, an authentic Luwak Coffee Plantation Experience (Umah Kuno), and a hands-on Traditional Balinese Dinner Cooking Class."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Where do the tours take place, and is pickup included?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "All our experiences take place in the peaceful village of Pejeng, away from the typical tourist crowds. We offer convenient pickup services in the Ubud area so you can relax and enjoy the day."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Are your tours suitable for large groups?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We deliberately keep our groups comfortably small. This ensures a safe, unhurried pace, allowing for more personal conversations with our local hosts and a deeper connection to the Balinese culture around you."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How do I book a tour, and do I need to pay in advance?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Booking is incredibly simple and direct! You can click the WhatsApp button on our website to chat with our local team and check availability. No payment is required just to inquire or reserve your spot."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How much do the Bali tours cost?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our authentic experiences start at a highly accessible price point to support the local village economy: Cycling Tour & Cooking Class are IDR 400,000 per adult (IDR 350,000 per child), and the Luwak Coffee Experience is IDR 400,000 per person (requires a minimum booking of 3 people)."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How long do the activities last?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our activities are designed to give you a real morning, afternoon, or evening without feeling rushed. The maximum tour length is 4 hours (for example, the cycling tour runs from 8:30 AM to 12:30 PM), while the coffee tasting is a shorter, relaxing 1.5-hour session."
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "readability": {
+          "flesch_reading_ease": 48.0,
+          "fkgl": 9.6,
+          "grade_label": "Difficult (technical / specialist audience)",
+          "word_count": 37,
+          "sentence_count": 3,
+          "avg_sentence_length": 12.3,
+          "avg_syllables_per_word": 1.73
+        },
+        "target_keyword": "",
+        "extracted_keywords": [],
+        "related_keywords": [],
+        "seo_issues": [
+          {
+            "severity": "Critical",
+            "area": "H1",
+            "finding": "No H1 tag detected.",
+            "fix": "Add a single, descriptive H1 containing the primary keyword."
+          },
+          {
+            "severity": "Critical",
+            "area": "Content",
+            "finding": "Very thin content (37 words).",
+            "fix": "Expand content to at least 1,500 words for blog posts."
+          },
+          {
+            "severity": "Warning",
+            "area": "E-E-A-T",
+            "finding": "No author attribution detected.",
+            "fix": "Add a visible author byline with credentials. Critical post-Dec 2025 E-E-A-T update."
+          },
+          {
+            "severity": "Info",
+            "area": "Freshness",
+            "finding": "No publish date detected in markup.",
+            "fix": "Add visible publish/update date and datePublished in Article schema."
+          },
+          {
+            "severity": "Warning",
+            "area": "Schema",
+            "finding": "FAQPage is restricted to government/healthcare authority sites only.",
+            "fix": "Remove FAQPage schema unless you are a government or healthcare authority site."
+          }
+        ]
+      }
+    },
+    "environment": {
+      "primary": "Next.js",
+      "runtime": "JavaScript Framework",
+      "confidence": "medium",
+      "signals": [
+        "Next.js runtime/build markers detected"
+      ],
+      "alternatives": []
+    },
+    "environment_fixes": [
+      {
+        "severity": "critical",
+        "title": "5 security headers missing",
+        "reason": "Missing headers reduce trust and can expose the site to browser/security risks.",
+        "fix": "Set security headers in `next.config.js` `headers()` or at your edge/CDN."
+      },
+      {
+        "severity": "warning",
+        "title": "No llms.txt found",
+        "reason": "AI crawlers and assistants have no curated machine-readable guidance for key pages.",
+        "fix": "Serve `/llms.txt` from `/public/llms.txt`."
+      },
+      {
+        "severity": "info",
+        "title": "Performance measurement incomplete",
+        "reason": "PageSpeed API returned an error, so CWV recommendations are less reliable.",
+        "fix": "Set `PAGESPEED_API_KEY` in your environment or `.env` file (see `.env.example`), then rerun. The CLI also accepts `--api-key`. Prioritize LCP/INP/CLS fixes from that output."
+      }
+    ]
+  }
+}

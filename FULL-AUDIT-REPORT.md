@@ -1,100 +1,54 @@
-# FULL AUDIT REPORT: Sekar Bali Activity (Homepage)
+# Full Audit Report
 
-**Target URL**: https://www.sekarbaliactivity.com/
-**Audit Method**: LLM-First Analysis (Environment limitation: Python scripts blocked)
-**Date**: August 4, 2026
+- URL: `https://www.sekarbaliactivity.com`
+- Generated: `2026-08-04T19:31:49.997322`
+- Overall score: `64/100`
+- Score confidence: `Medium`
+- Scoring version: `1`
 
-## Page Score Card
+## Score Card
 
-Overall Score: 60/100
+| Category | Weight | Score |
+| --- | ---: | ---: |
+| Security Headers | 8 | 45 |
+| Social Meta | 5 | 85 |
+| Robots and Crawlers | 8 | 20 |
+| Broken Links | 10 | 100 |
+| Internal Links | 8 | 80 |
+| Redirects | 3 | 100 |
+| AI Search | 5 | 0 |
+| Performance and Core Web Vitals | 13 | 0 |
+| On-Page SEO | 10 | 100 |
+| Readability | 8 | 82 |
+| Entity SEO | 5 | 0 |
+| Link Profile | 7 | 33 |
+| Hreflang | 5 | 0 |
+| Content Uniqueness | 5 | 100 |
 
-On-Page SEO:     65/100  ██████░░░░
-Content Quality: 70/100  ███████░░░
-Technical:       40/100  ████░░░░░░
-Schema:          0/100   ░░░░░░░░░░
-Images:          85/100  ████████░░
+## Findings
 
-## Environment Limitations
-*Automated scripts (readability, PageSpeed, Core Web Vitals) could not be run because Python is not installed on this system. The analysis relies on LLM-first reasoning and source code inspection of the live URL.*
+| Severity | Area | Finding | Evidence | Fix |
+| --- | --- | --- | --- | --- |
+| Critical | Schema | No Organization/Person entity found in JSON-LD. |  | Add Organization or Person schema with name, url, logo, and sameAs properties. |
+| Critical | environment | 5 security headers missing | Missing headers reduce trust and can expose the site to browser/security risks. | Set security headers in `next.config.js` `headers()` or at your edge/CDN. |
+| Critical | link_profile | 2 orphan page(s) with zero inbound internal links. |  | Add internal links from relevant content pages to these orphan pages. |
+| Critical | link_profile | Average internal links per page is only 2.4 (target: 5-10). |  | Increase internal linking by adding contextual links within content. |
+| Critical | robots | 🔴 No robots.txt found — all crawlers allowed by default |  |  |
+| Critical | security | 🔴 5 security headers missing — poor security posture |  |  |
+| Warning | environment | No llms.txt found | AI crawlers and assistants have no curated machine-readable guidance for key pages. | Serve `/llms.txt` from `/public/llms.txt`. |
+| Warning | internal_links | ⚠️ 1 page(s) have fewer than 3 internal links |  |  |
+| Warning | link_profile | 4 page(s) with no outbound internal links (dead ends). |  | Add contextual internal links to related content from these pages. |
+| Warning | security | ⚠️ HSTS missing includeSubDomains directive |  |  |
+| Info | Wikidata | No Wikidata entry found for 'Sekar Bali Activity'. |  | If the entity meets Wikidata notability guidelines, create or improve an item with accurate third-party references. Do not create one solely for SEO. |
+| Info | Wikipedia | No Wikipedia article found for 'Sekar Bali Activity'. |  | Only pursue Wikipedia if the entity meets independent notability standards. Otherwise, strengthen official schema, sameAs profiles, citations, and About/Contact signals. |
+| Info | environment | Performance measurement incomplete | PageSpeed API returned an error, so CWV recommendations are less reliable. | Set `PAGESPEED_API_KEY` in your environment or `.env` file (see `.env.example`), then rerun. The CLI also accepts `--api-key`. Prioritize LCP/INP/CLS fixes from that output. |
+| info | pagespeed | pagespeed measurement incomplete | Rate limited by Google API. Wait a few minutes or add an API key. | Rerun this check after resolving the environment/API/network limitation. |
+| Info | readability | ℹ️ Content readability is moderate (Flesch: 49.2) — suitable for educated audience |  |  |
+| Info | sameAs | Missing sameAs link to Wikipedia (Primary KG signal). |  | Add the existing official 'wikipedia.org' URL to sameAs; do not create this profile solely for SEO. |
+| Info | sameAs | Missing sameAs link to Wikidata (Primary KG signal). |  | Add the existing official 'wikidata.org' URL to sameAs; do not create this profile solely for SEO. |
+| Info | sameAs | Missing sameAs link to LinkedIn (Strong KG signal). |  | Add 'linkedin.com' profile URL to sameAs array in your entity schema. |
+| Info | sameAs | Missing sameAs link to Twitter/X (Strong KG signal). |  | Add 'x.com' profile URL to sameAs array in your entity schema. |
 
-## 1. On-Page SEO (65/100)
+## Measurement Notes
 
-**Title Tag**: 
-* **Finding**: `Sekar Bali Activity | Premium Bali Tours`
-* **Evidence**: Source code `<title>` tag.
-* **Impact**: Good length (40 chars) and includes a solid keyword ("Premium Bali Tours").
-* **Severity**: ✅ Pass
-
-**Meta Description**:
-* **Finding**: `Discover extraordinary tours and private transfers across Bali and Indonesia.`
-* **Evidence**: Source code `<meta name="description">` tag.
-* **Impact**: Too short (~77 characters, target is 150-160). It misses long-tail keywords about Pejeng, cycling, or cooking classes.
-* **Severity**: ⚠️ Warning
-
-**H1 Tag**:
-* **Finding**: `Bali, at village pace.`
-* **Evidence**: Source code `<h1>` tag.
-* **Impact**: Very poetic for UX, but poor for SEO. It lacks primary keywords like "Bali Tours", "Activities", or location modifiers. Search engines rely heavily on the H1 to understand page context.
-* **Severity**: 🔴 Critical
-
-**Heading Hierarchy (H2-H3)**:
-* **Finding**: Good logical structure.
-* **Evidence**: H2s include "Three windows into everyday Bali" and "Follow the Pejeng route". H3s cover tour names.
-* **Impact**: Helps search engines parse the sections.
-* **Severity**: ✅ Pass
-
-## 2. Content Quality (70/100)
-
-**Word Count & Depth**:
-* **Finding**: The homepage is visually heavy but content-light (< 400 words).
-* **Evidence**: Text extraction from source.
-* **Impact**: Google struggles to rank pages with thin content, especially for competitive travel keywords.
-* **Severity**: ⚠️ Warning
-
-**E-E-A-T Signals**:
-* **Finding**: High emphasis on "local hosts," "village-led," and "family table."
-* **Evidence**: "Your visit directly supports village hosts..."
-* **Impact**: Great trust signals (Experience and Trust). Missing author/founder names or exact addresses (only "Pejeng, Gianyar").
-* **Severity**: ✅ Pass
-
-## 3. Technical SEO (40/100)
-
-**Canonical Tag**:
-* **Finding**: Missing.
-* **Evidence**: No `<link rel="canonical">` found in the `<head>`.
-* **Impact**: Could lead to duplicate content issues if the site is accessed via HTTP/HTTPS or WWW/non-WWW without strict redirects.
-* **Severity**: 🔴 Critical
-
-**Social Meta Tags (Open Graph & Twitter)**:
-* **Finding**: Missing.
-* **Evidence**: No `og:` or `twitter:` tags in the `<head>`.
-* **Impact**: When the site is shared on WhatsApp, Facebook, or Twitter, it will not display a rich preview image or custom title, severely hurting CTR.
-* **Severity**: 🔴 Critical
-
-**Language & Hreflang**:
-* **Finding**: Uses `<html lang="en">` but lacks hreflang.
-* **Evidence**: Source code.
-* **Impact**: Good for English localization, but missing opportunities if targeting multiple countries/languages.
-* **Severity**: ℹ️ Info
-
-## 4. Schema / Structured Data (0/100)
-
-**JSON-LD Markup**:
-* **Finding**: No structured data detected on the live site.
-* **Evidence**: Checked `<script type="application/ld+json">`.
-* **Impact**: Missing out on Rich Snippets in Google Search. The site sells tours but lacks `LocalBusiness`, `Product`, or `Tour` schema. (Note: A new FAQPage schema was recently implemented in the codebase but is not yet deployed to the live URL).
-* **Severity**: 🔴 Critical
-
-## 5. Images & Performance (85/100)
-
-**Alt Text**:
-* **Finding**: Present and descriptive.
-* **Evidence**: `<img alt="Ancient Balinese temple surrounded by lush tropical greenery">`, `<img alt="Cycling Tour">`.
-* **Impact**: Excellent for accessibility and Google Images ranking.
-* **Severity**: ✅ Pass
-
-**Preloading & Core Web Vitals (INP/LCP)**:
-* **Finding**: Next.js optimizations are active.
-* **Evidence**: Font and hero images use `<link rel="preload">`. Next.js static chunks are used.
-* **Impact**: Likely fast LCP (Largest Contentful Paint) and good CLS.
-* **Severity**: ✅ Pass
+1 checks returned errors or incomplete measurements; treat affected scores as directional.

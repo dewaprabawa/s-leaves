@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Leaves
 
-## Getting Started
+Leaves is an automated, agentic SEO workflow engine designed for high-performance content sites and Next.js applications. It powers the local tourism site *Sekar Bali Activity* to maximize search engine discoverability and conversion.
 
-First, run the development server:
+## Why Leaves?
+Traditional SEO is highly manual and reactive. Leaves flips this by integrating SEO audits, structured data generation (JSON-LD), AI search engine optimization (GEO/AEO), and repository discoverability checks directly into your CI/CD pipeline and local development workflow.
+
+## Features
+- **Generative Engine Optimization (GEO)**: Automated `llms.txt` and `robots.txt` generation for Perplexity, SearchGPT, and Claude indexing.
+- **Technical SEO Assertions**: strict security headers, HSTS, mobile-first indexability, and Core Web Vitals checks.
+- **Schema & Rich Snippets**: Deep `LocalBusiness` and `Tour` JSON-LD structures.
+- **GitHub Discoverability**: Topic optimization, community health metrics, and automated search benchmarking.
+
+## Proof and Results
+Leaves continuously runs 10 specialist agent workflows (Technical, Content, Performance, Schema, Sitemap, Visual, etc.). It actively audits applications and surfaces issues *before* deployment.
+
+Example Output from the Global Verifier:
+- **On-Page SEO**: 75/100
+- **Technical Posture**: Checked against CSP, HSTS, and referrer policies.
+- **AI Search Readiness**: Passes `llms.txt` and `robots.txt` crawler policies.
+
+## Installation & Quickstart
+
+To run the Next.js application locally:
 
 ```bash
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing
+We welcome contributions! Please read our [Contributing Guidelines](.github/CONTRIBUTING.md) and check out our [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.md) if you encounter any issues.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

@@ -1,38 +1,72 @@
-# ACTION PLAN: Sekar Bali Activity (Homepage)
+# Action Plan
 
-**Target URL**: https://www.sekarbaliactivity.com/
-**Date**: August 4, 2026
+- URL: `https://www.sekarbaliactivity.com`
+- Overall score: `64/100`
 
-## 🔴 Critical Priority (Do This Week)
+## Priority Fixes
 
-1. **Update the H1 Tag**
-   * **Issue**: The current H1 (`Bali, at village pace.`) is too vague.
-   * **Fix**: Change it to a keyword-rich alternative, e.g., `<h1>Authentic Bali Tours & Village Cycling in Pejeng</h1>` or keep the poetic text visually but wrap the SEO title in an invisible `<h1 class="sr-only">`.
-
-2. **Add Missing Canonical Tag**
-   * **Issue**: No canonical tag to prevent duplicate content.
-   * **Fix**: Add `<link rel="canonical" href="https://www.sekarbaliactivity.com/">` to the `<head>`.
-
-3. **Implement Open Graph and Twitter Meta Tags**
-   * **Issue**: Social sharing previews are broken.
-   * **Fix**: Add standard `og:title`, `og:description`, `og:image`, and `twitter:card` tags to the `<head>` in your Next.js layout/page config.
-
-4. **Add Structured Data (JSON-LD)**
-   * **Issue**: Missing rich snippet opportunities.
-   * **Fix**: Implement `LocalBusiness` or `TravelAgency` schema on the homepage. Include tour offerings as `Tour` schema.
-
-## ⚠️ High Priority (Do This Month)
-
-5. **Expand Meta Description**
-   * **Issue**: The current description is too short (77 chars).
-   * **Fix**: Expand to ~155 characters. Example: "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences."
-
-6. **Add More Descriptive Content**
-   * **Issue**: Low word count.
-   * **Fix**: Add a short "About Us" paragraph detailing the history of the founders, the exact village context, and what makes these tours unique. This builds both E-E-A-T and keyword density.
-
-## ✅ Low Priority (Ongoing)
-
-7. **Add Specific Location Details**
-   * **Issue**: Missing precise trust markers for Google Local.
-   * **Fix**: While "Pejeng, Gianyar" is mentioned, providing a full business address or a Google Maps embed in the footer builds stronger local SEO signals.
+1. **No Organization/Person entity found in JSON-LD.**
+   - Priority: `Critical`
+   - Area: `Schema`
+   - Evidence: See audit output.
+   - Fix: Add Organization or Person schema with name, url, logo, and sameAs properties.
+2. **5 security headers missing**
+   - Priority: `Critical`
+   - Area: `environment`
+   - Evidence: Missing headers reduce trust and can expose the site to browser/security risks.
+   - Fix: Set security headers in `next.config.js` `headers()` or at your edge/CDN.
+3. **2 orphan page(s) with zero inbound internal links.**
+   - Priority: `Critical`
+   - Area: `link_profile`
+   - Evidence: See audit output.
+   - Fix: Add internal links from relevant content pages to these orphan pages.
+4. **Average internal links per page is only 2.4 (target: 5-10).**
+   - Priority: `Critical`
+   - Area: `link_profile`
+   - Evidence: See audit output.
+   - Fix: Increase internal linking by adding contextual links within content.
+5. **No llms.txt found**
+   - Priority: `Warning`
+   - Area: `environment`
+   - Evidence: AI crawlers and assistants have no curated machine-readable guidance for key pages.
+   - Fix: Serve `/llms.txt` from `/public/llms.txt`.
+6. **4 page(s) with no outbound internal links (dead ends).**
+   - Priority: `Warning`
+   - Area: `link_profile`
+   - Evidence: See audit output.
+   - Fix: Add contextual internal links to related content from these pages.
+7. **No Wikidata entry found for 'Sekar Bali Activity'.**
+   - Priority: `Info`
+   - Area: `Wikidata`
+   - Evidence: See audit output.
+   - Fix: If the entity meets Wikidata notability guidelines, create or improve an item with accurate third-party references. Do not create one solely for SEO.
+8. **No Wikipedia article found for 'Sekar Bali Activity'.**
+   - Priority: `Info`
+   - Area: `Wikipedia`
+   - Evidence: See audit output.
+   - Fix: Only pursue Wikipedia if the entity meets independent notability standards. Otherwise, strengthen official schema, sameAs profiles, citations, and About/Contact signals.
+9. **Performance measurement incomplete**
+   - Priority: `Info`
+   - Area: `environment`
+   - Evidence: PageSpeed API returned an error, so CWV recommendations are less reliable.
+   - Fix: Set `PAGESPEED_API_KEY` in your environment or `.env` file (see `.env.example`), then rerun. The CLI also accepts `--api-key`. Prioritize LCP/INP/CLS fixes from that output.
+10. **Missing sameAs link to Wikipedia (Primary KG signal).**
+   - Priority: `Info`
+   - Area: `sameAs`
+   - Evidence: See audit output.
+   - Fix: Add the existing official 'wikipedia.org' URL to sameAs; do not create this profile solely for SEO.
+11. **Missing sameAs link to Wikidata (Primary KG signal).**
+   - Priority: `Info`
+   - Area: `sameAs`
+   - Evidence: See audit output.
+   - Fix: Add the existing official 'wikidata.org' URL to sameAs; do not create this profile solely for SEO.
+12. **Missing sameAs link to LinkedIn (Strong KG signal).**
+   - Priority: `Info`
+   - Area: `sameAs`
+   - Evidence: See audit output.
+   - Fix: Add 'linkedin.com' profile URL to sameAs array in your entity schema.
+13. **Missing sameAs link to Twitter/X (Strong KG signal).**
+   - Priority: `Info`
+   - Area: `sameAs`
+   - Evidence: See audit output.
+   - Fix: Add 'x.com' profile URL to sameAs array in your entity schema.

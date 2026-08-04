@@ -47,14 +47,13 @@ export default function Home() {
           <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">
             Village-led experiences · Pejeng, Bali
           </p>
-          <h1 className="sr-only">Authentic Bali Tours & Village Cycling in Pejeng</h1>
-          <div aria-hidden="true" className="text-5xl lg:text-7xl font-serif text-brand-green font-bold leading-tight mb-6">
+          <h1 className="text-5xl lg:text-7xl font-serif text-brand-green font-bold leading-tight mb-6">
             Bali,<br />
             <span className="italic font-light">at village pace.</span>
-          </div>
-          <p className="text-lg lg:text-xl text-brand-green-light mb-10 max-w-lg leading-relaxed">
-            Three intimate ways to meet the island beyond the postcard—by bicycle, by coffee cup, and around the family table.
-          </p>
+          </h1>
+          <h2 className="text-lg lg:text-xl text-brand-green-light mb-10 max-w-lg leading-relaxed">
+            Authentic Bali Tours & Village Cycling in Pejeng. Three intimate ways to meet the island beyond the postcard—by bicycle, by coffee cup, and around the family table.
+          </h2>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-12">
             <Link 
               href="#experiences" 

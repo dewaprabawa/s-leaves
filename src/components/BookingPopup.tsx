@@ -78,8 +78,8 @@ Please confirm my booking!`;
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6">
       <div className="bg-sand w-full max-w-4xl max-h-[95vh] overflow-y-auto rounded-3xl shadow-2xl relative flex flex-col md:flex-row">
-        <button onClick={onClose} className="absolute top-4 right-4 z-10 p-2 bg-white/80 hover:bg-white rounded-full text-brand-green transition-colors shadow-sm">
-          <X className="w-5 h-5" />
+        <button onClick={onClose} className="fixed top-4 right-4 md:absolute md:top-4 md:right-4 z-[2000] p-2.5 bg-white hover:bg-gray-100 rounded-full text-brand-green transition-colors shadow-xl border border-brand-green/10">
+          <X className="w-6 h-6 md:w-5 md:h-5" />
         </button>
         
         {/* Map Section */}

@@ -269,5 +269,37 @@ If you are booking a more relaxed cultural experience, like our **Balinese Cooki
 
 No matter when you decide to explore, our family is ready to welcome you. Check out our [Full List of Experiences](/tours) to find the perfect addition to your Bali itinerary.
 `
+  },
+  {
+    slug: "perfect-one-day-ubud-itinerary",
+    title: "The Perfect One-Day Ubud Itinerary: Royal Palace to Tanah Lot Sunset",
+    excerpt: "Short on time? Here is exactly how to spend one full day in Ubud, covering the Royal Palace, Art Market, Rice Terraces, and ending with a spectacular sunset at Tanah Lot.",
+    publishedAt: "2026-08-04",
+    author: "Sekar Bali Activity Team",
+    image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
+    content: `
+**What is the best way to spend one full day in Ubud?** The ideal full day Ubud tour itinerary starts at 9:00 AM at the historic Ubud Royal Palace and the adjacent Art Market for morning cultural exploration. By midday, travelers should escape the town center and head to the Tegalalang Rice Terraces for iconic views and optional jungle swings. Finally, to maximize a single day, hire a private driver in the late afternoon to travel from Ubud to the coast, arriving at Tanah Lot Temple by 5:30 PM to witness one of Bali's most famous and breathtaking ocean sunsets. This exact route combines central culture, agricultural heritage, and coastal beauty into a single 10-hour experience.
+
+### Why You Need a Plan
+Ubud is beautiful, but it can be overwhelming. If you only have one day to spare, you cannot afford to waste time haggling with taxis or getting stuck in traffic. Having a solid *full day ubud tour* plan is critical.
+
+### Morning: Central Culture
+Start your day at the **Ubud Royal Palace** (Puri Saren Agung). It is located right at the main intersection of town. After admiring the traditional architecture, walk directly across the street to the **Ubud Art Market**. This is the perfect time to buy souvenirs, as the market is less crowded and vendors are eager for their first sale of the day.
+
+### Midday: The Lush Terraces
+By lunchtime, the center of Ubud gets hot and crowded. Escape to the north to visit the famous **Tegalalang Rice Terraces**. Here you can walk along the ridges, take photos, and even try an *atv ride bali swing tour* if you are feeling adventurous.
+
+*(Want us to handle the driving? Book our [Full Day Ubud Tour: Royal Palace, Art Market & Rice Terraces](/tours/full-day-ubud-tour) today!)*
+
+### Afternoon: The Journey to the Coast
+If you only have one day, you might think you have to choose between the jungle of Ubud and the ocean. You don't! 
+
+In the late afternoon, make the journey westward toward the coast. The drive takes about 1.5 hours, giving you a chance to rest in air conditioning. 
+
+### Evening: Tanah Lot Sunset
+Arrive at **Tanah Lot Temple** by 5:00 PM. This ancient sea temple sits on a dramatic rock formation rising out of the Indian Ocean. Secure a spot on the cliffs, order a fresh coconut, and watch the sky explode in color as the sun dips below the horizon.
+
+*(Short on time? We offer a dedicated [Half Day Trip: Explore Ubud Culture & Amazing Sunset at Tanah Lot Temple](/tours/half-day-ubud-tanah-lot-tour) that perfectly times this experience for you!)*
+`
   }
 ]

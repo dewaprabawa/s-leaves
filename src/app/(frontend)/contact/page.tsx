@@ -38,8 +38,8 @@ export default function ContactPage() {
             <div>
               <h4 className="font-bold text-gray-900 dark:text-white">Email Us</h4>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">For general inquiries and custom quotes.</p>
-              <a href="mailto:info@s-leaves.com" className="text-emerald-600 dark:text-emerald-400 font-semibold text-sm hover:underline">
-                info@s-leaves.com
+              <a href="mailto:sekarprivatebaliactivity@gmail.com" className="text-emerald-600 dark:text-emerald-400 font-semibold text-sm hover:underline">
+                sekarprivatebaliactivity@gmail.com
               </a>
             </div>
           </div>

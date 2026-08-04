@@ -5,6 +5,7 @@ import "../globals.css"
 import Link from "next/link"
 import { Menu, Leaf } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
+import HeaderNav from "@/components/HeaderNav"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -152,27 +153,8 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground transition-colors duration-200`}>
         
-        {/* Navigation Header */}
-        <header className="sticky top-0 z-50 w-full backdrop-blur-md bg-sand/90 border-b border-brand-green/10 h-20 flex items-center justify-between px-6 lg:px-12">
-          <Link href="#top" className="flex items-center gap-2 font-bold text-xl text-brand-green hover:opacity-80 transition-opacity">
-            <img src="/logo.png" alt={siteName} className="h-14 w-auto object-contain" />
-          </Link>
-          
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-brand-green-light">
-            <Link href="/#experiences" className="hover:text-brand-green transition-colors">Experiences</Link>
-            <Link href="/#itinerary" className="hover:text-brand-green transition-colors">The route</Link>
-            <Link href="/#about" className="hover:text-brand-green transition-colors">Our way</Link>
-            <Link href="/#contact" className="hover:text-brand-green transition-colors">Contact</Link>
-            <Link href="/blog" className="hover:text-brand-green transition-colors text-brand-green font-semibold">Blog</Link>
-            <Link href="https://www.sekarbaliactivity.com/#experiences" className="ml-4 px-5 py-2.5 rounded-full bg-brand-green text-sand hover:bg-brand-green-light transition-colors shadow-sm font-semibold">
-              Book a place
-            </Link>
-          </nav>
-          
-          <button className="md:hidden p-2 text-brand-green" aria-label="Open menu">
-            <Menu className="w-6 h-6" />
-          </button>
-        </header>
+        {/* Interactive Navigation Header */}
+        <HeaderNav siteName={siteName} />
 
         {/* Main Content Area */}
         <div className="flex-1 flex flex-col w-full">

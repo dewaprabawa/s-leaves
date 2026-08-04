@@ -394,7 +394,7 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
 - [Top Ranked Best Cooking Classes in Bali](https://tumangbaliclass.com/best-cooking-classes-bali)
 
 **Available Schedule:**
-- **Dinner Class:** 5:30 PM (17:30) – 8:30 PM`,StartLine:380,TargetContent:,
+- **Dinner Class:** 5:30 PM (17:30) – 8:30 PM`,
     highlights: [
       "Learn about essential Balinese spices and herbs",
       "Cook 5 authentic dishes at your own station",

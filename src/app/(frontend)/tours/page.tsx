@@ -4,8 +4,8 @@ import type { Metadata } from "next"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Explore Curated Tours | S-Leaves",
-  description: "Browse our hand-picked day tours, volcano trekking packages, and luxury island expeditions across Bali and Flores.",
+  title: "Explore Curated Tours | Selaras",
+  description: "Browse our collection of authentic, village-led experiences and adventures in Bali. Book securely online.",
 }
 
 export default function ToursPage() {
@@ -19,7 +19,7 @@ export default function ToursPage() {
             Guided Adventures
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-gray-900 dark:text-white leading-none">
-            Curated S-Leaves Experiences
+            Curated Selaras Experiences
           </h1>
           <p className="text-base sm:text-lg text-gray-550 dark:text-gray-400 font-medium leading-relaxed">
             Embark on unforgettable journeys with our expertly crafted tours. 
@@ -33,7 +33,7 @@ export default function ToursPage() {
             <p className="text-gray-500 font-semibold">Loading experiences catalog...</p>
           </div>
         }>
-          <ToursListClient initialTours={TOURS as any} />
+          <ToursListClient initialTours={TOURS.filter(t => !t.isHidden) as any} />
         </Suspense>
         
       </div>

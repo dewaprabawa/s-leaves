@@ -3,8 +3,8 @@ import TransfersListClient from "@/components/TransfersListClient"
 import { TRANSFERS } from "@/data/transfers"
 
 export const metadata: Metadata = {
-  title: "Private Airport Transfers | S-Leaves",
-  description: "Book reliable, premium private airport transfers in Bali. Professional English-speaking drivers, flat rates, and flight tracking.",
+  title: "Private Airport Transfers | Selaras",
+  description: "Book reliable, air-conditioned private transfers from DPS airport to your hotel in Bali. Professional English-speaking drivers, flat rates, and flight tracking.",
 }
 
 export default function TransfersPage() {

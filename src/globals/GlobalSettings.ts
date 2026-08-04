@@ -26,7 +26,7 @@ export const GlobalSettings: GlobalConfig = {
               name: 'siteName',
               type: 'text',
               required: true,
-              defaultValue: 'S-Leaves',
+              defaultValue: 'Selaras',
             },
             {
               name: 'logo',

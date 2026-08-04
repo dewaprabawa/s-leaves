@@ -4,8 +4,8 @@ import { Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react";
 import ContactFormClient from "./ContactFormClient";
 
 export const metadata: Metadata = {
-  title: "Contact Us | S-Leaves Travel",
-  description: "Get in touch with our travel specialists to plan your next adventure.",
+  title: "Contact Us | Selaras Travel",
+  description: "Get in touch with our team for bookings, inquiries, and custom tour packages.",
 };
 
 export default function ContactPage() {

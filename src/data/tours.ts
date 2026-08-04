@@ -52,11 +52,13 @@ export interface Tour {
   reviews: TourReview[]
   getYourGuideUrl?: string
   youtubeVideoId?: string
+  isHidden?: boolean
 }
 
 export const TOURS: Tour[] = [
   {
     id: "pejeng-cycling-tour",
+    isHidden: true,
     title: "Pejeng Village & Terrace Cycling",
     slug: "pejeng-cycling-tour",
     category: "Activity",
@@ -204,6 +206,7 @@ Whether you are a solo traveler, a couple, or a family with children, this cycli
   },
   {
     id: "luwak-coffee-plantation",
+    isHidden: true,
     title: "Luwak Coffee Plantation Experience (Umah Kuno)",
     slug: "luwak-coffee-plantation",
     category: "Culture",
@@ -304,7 +307,8 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     reviews: [],
   },
   {
-    id: "balinese-cooking-class",
+    id: "traditional-balinese-cooking",
+    isHidden: true,
     title: "Traditional Balinese Dinner Cooking Class",
     slug: "balinese-cooking-class",
     category: "Culture",

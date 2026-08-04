@@ -12,13 +12,55 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.sekarbaliactivity.com'),
   title: "Sekar Bali Activity | Premium Bali Tours",
-  description: "Discover extraordinary tours and private transfers across Bali and Indonesia.",
+  description: "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Sekar Bali Activity | Authentic Bali Tours in Pejeng',
+    description: 'Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.',
+    url: 'https://www.sekarbaliactivity.com',
+    siteName: 'Sekar Bali Activity',
+    images: [
+      {
+        url: '/images/cycling/rice-field-bikes.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Sekar Bali Activity Village Tours',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sekar Bali Activity | Authentic Bali Tours',
+    description: 'Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.',
+    images: ['/images/cycling/rice-field-bikes.jpg'],
+  },
+}
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Sekar Bali Activity",
+  "description": "Authentic village-led tours, cycling, and cooking classes in Pejeng, Bali.",
+  "url": "https://www.sekarbaliactivity.com",
+  "telephone": "+6281775723663",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pejeng",
+    "addressRegion": "Bali",
+    "addressCountry": "ID"
+  },
+  "image": "https://www.sekarbaliactivity.com/logo.png"
 }
 
 const SETTINGS = {
@@ -34,6 +76,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground transition-colors duration-200`}>
         
         {/* Navigation Header */}

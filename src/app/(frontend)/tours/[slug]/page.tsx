@@ -42,8 +42,34 @@ export default async function TourDetailPage({ params }: Props) {
   const currencySymbol = 'Rp'
   const heroImage = tour.heroImage?.url || 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80'
 
+  const tourSchema = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": tour.title,
+    "description": tour.shortDescription,
+    "image": heroImage,
+    "touristType": [
+      "Sightseeing",
+      "Cultural"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": basePrice,
+      "priceCurrency": "IDR",
+      "availability": "https://schema.org/InStock"
+    },
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Sekar Bali Activity"
+    }
+  }
+
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-950 py-10 transition-colors duration-200">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(tourSchema) }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-8">
         
         {/* Back Link */}

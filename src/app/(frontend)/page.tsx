@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { BookingPopup, TourConfig } from '@/components/BookingPopup'
+import { FAQSection } from '@/components/FAQSection'
 import { ArrowRight, MapPin, Users, Leaf, Check, Clock3, Bike, Coffee, CookingPot, Mountain } from 'lucide-react'
 
 export default function Home() {
@@ -44,10 +45,11 @@ export default function Home() {
           <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">
             Village-led experiences · Pejeng, Bali
           </p>
-          <h1 className="text-5xl lg:text-7xl font-serif text-brand-green font-bold leading-tight mb-6">
+          <h1 className="sr-only">Authentic Bali Tours & Village Cycling in Pejeng</h1>
+          <div aria-hidden="true" className="text-5xl lg:text-7xl font-serif text-brand-green font-bold leading-tight mb-6">
             Bali,<br />
             <span className="italic font-light">at village pace.</span>
-          </h1>
+          </div>
           <p className="text-lg lg:text-xl text-brand-green-light mb-10 max-w-lg leading-relaxed">
             Three intimate ways to meet the island beyond the postcard—by bicycle, by coffee cup, and around the family table.
           </p>
@@ -489,6 +491,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* Booking Section */}
       <section id="booking" className="py-24 px-6 lg:px-12 bg-brand-green text-sand w-full">

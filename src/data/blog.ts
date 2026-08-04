@@ -469,6 +469,19 @@ After all five traditional dishes are cooked to perfection, we set out a lavish 
 
 Every guest receives a digital recipe book to take home so you can recreate authentic Balinese dinners for your family and friends back home.
 
+### Recommended Cooking Class Resources:
+- [Authentic Balinese Cooking Class](https://tumangbaliclass.com/authentic-balinese-cooking-class)
+- [Best Bali Cooking Class Experience](https://tumangbaliclass.com/best-bali-cooking-class)
+- [Bali Cooking Class for Beginners](https://tumangbaliclass.com/bali-cooking-class-for-beginners)
+- [Vegetarian Cooking Class in Ubud](https://tumangbaliclass.com/vegetarian-cooking-class-ubud)
+- [Private Cooking Class Ubud](https://tumangbaliclass.com/private-cooking-class-ubud)
+- [Cooking Class with Market Tour Ubud](https://tumangbaliclass.com/cooking-class-with-market-tour-ubud)
+- [Half Day Cooking Class Bali](https://tumangbaliclass.com/half-day-cooking-class-bali)
+- [Where to Stay for Bali Cooking Class](https://tumangbaliclass.com/where-to-stay-bali-cooking-class)
+- [What to Wear for Bali Cooking Class](https://tumangbaliclass.com/what-to-wear-bali-cooking-class)
+- [Balinese Cooking Class Ubud Guide](https://tumangbaliclass.com/balinese-cooking-class-ubud)
+- [Best Cooking Classes in Bali Overview](https://tumangbaliclass.com/best-cooking-classes-bali)
+
 Ready to cook with us? [Book Your Balinese Cooking Class](/tours/balinese-cooking-class) now or send us a message on [WhatsApp](https://wa.me/6281775723663)!
 `
   }

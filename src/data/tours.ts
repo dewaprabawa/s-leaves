@@ -379,9 +379,22 @@ The menu typically includes:
 After the hard work is done, you will transition to our beautifully lit, open-air dining pavilion. Here, you will sit down with your fellow chefs to enjoy the incredible feast you have just prepared, served family-style with steaming hot white rice. 
 
 Before you leave, you will be provided with a comprehensive digital recipe book. This ensures you can easily recreate these authentic Balinese flavors in your own kitchen back home, bringing a taste of your holiday to your everyday life.
-    
+
+### Recommended Culinary Guides & External Resources:
+- [Authentic Balinese Cooking Class Guide](https://tumangbaliclass.com/authentic-balinese-cooking-class)
+- [Best Bali Cooking Class Experiences](https://tumangbaliclass.com/best-bali-cooking-class)
+- [Bali Cooking Class for Beginners](https://tumangbaliclass.com/bali-cooking-class-for-beginners)
+- [Vegetarian Cooking Class in Ubud](https://tumangbaliclass.com/vegetarian-cooking-class-ubud)
+- [Private Cooking Class Experience Ubud](https://tumangbaliclass.com/private-cooking-class-ubud)
+- [Cooking Class with Market Tour in Ubud](https://tumangbaliclass.com/cooking-class-with-market-tour-ubud)
+- [Half Day Cooking Class in Bali](https://tumangbaliclass.com/half-day-cooking-class-bali)
+- [Where to Stay for your Bali Cooking Class](https://tumangbaliclass.com/where-to-stay-bali-cooking-class)
+- [What to Wear for a Bali Cooking Class](https://tumangbaliclass.com/what-to-wear-bali-cooking-class)
+- [Balinese Cooking Class Ubud Guide](https://tumangbaliclass.com/balinese-cooking-class-ubud)
+- [Top Ranked Best Cooking Classes in Bali](https://tumangbaliclass.com/best-cooking-classes-bali)
+
 **Available Schedule:**
-- **Dinner Class:** 5:30 PM (17:30) – 8:30 PM`,
+- **Dinner Class:** 5:30 PM (17:30) – 8:30 PM`,StartLine:380,TargetContent:,
     highlights: [
       "Learn about essential Balinese spices and herbs",
       "Cook 5 authentic dishes at your own station",

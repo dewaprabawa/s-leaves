@@ -7,7 +7,7 @@ import { ArrowRight, MapPin, Users, Leaf, Check, Clock3, Bike, Coffee, CookingPo
 
 export default function Home() {
   const [activeTour, setActiveTour] = useState<TourConfig | null>(null);
-  const [activeItinerary, setActiveItinerary] = useState<"cycling" | "coffee" | "cooking">("cycling");
+  const [activeItinerary, setActiveItinerary] = useState<"cycling" | "coffee" | "cooking" | "dirtbike">("cycling");
 
   const cyclingConfig: TourConfig = {
     id: "cycling",
@@ -109,11 +109,11 @@ export default function Home() {
         </p>
         <div className="flex flex-wrap justify-center lg:justify-end gap-12 lg:gap-20">
           <div className="flex items-center gap-4">
-            <strong className="text-5xl font-serif">3</strong>
+            <strong className="text-5xl font-serif">4</strong>
             <span className="text-sm font-medium opacity-80 leading-tight">thoughtful<br/>experiences</span>
           </div>
           <div className="flex items-center gap-4">
-            <strong className="text-5xl font-serif">4h</strong>
+            <strong className="text-5xl font-serif">8h</strong>
             <span className="text-sm font-medium opacity-80 leading-tight">maximum<br/>tour length</span>
           </div>
           <div className="flex items-center gap-4">
@@ -128,14 +128,14 @@ export default function Home() {
         <div className="mb-16">
           <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">Choose your pace</p>
           <h2 className="text-4xl lg:text-5xl font-serif text-brand-green font-bold leading-tight mb-6">
-            Three windows<br/>into everyday Bali.
+            Four windows<br/>into everyday Bali.
           </h2>
           <p className="text-lg text-brand-green-light max-w-2xl">
-            Each experience stands beautifully on its own. Pair two across a day for a deeper Pejeng story.
+            Each experience stands beautifully on its own. Pair two across a day for a deeper Bali story.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* Tour 1: Cycling */}
           <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group relative">
             <div className="absolute top-4 right-4 bg-brand-green text-sand text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-sm">
@@ -289,6 +289,53 @@ export default function Home() {
             </div>
           </article>
 
+          {/* Tour 4: Dirt Bike */}
+          <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group">
+            <div className="relative h-64 overflow-hidden">
+              <img src="/images/dirt-bike.jpg" alt="Bali Dirt Bike Adventure" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 bg-gray-200" />
+              <div className="absolute top-4 left-4 w-10 h-10 bg-sand rounded-full flex items-center justify-center text-brand-green font-bold shadow-md">04</div>
+              <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-lg">
+                <Mountain className="w-6 h-6" />
+              </div>
+            </div>
+            <div className="p-8 pt-12 flex flex-col flex-1">
+              <h3 className="text-2xl font-bold text-brand-green mb-3">Bali Dirt Bike & Adventure Tour</h3>
+              <p className="text-brand-green-light text-sm mb-6 flex-1">
+                Explore Bali's volcanic landscapes, forests, and black sand beaches on two wheels. Choose your own pace and adventure level.
+              </p>
+              
+              <ul className="space-y-3 mb-8 border-t border-b border-brand-green/10 py-6">
+                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
+                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Volcanic trails & forests
+                </li>
+                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
+                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Full riding gear provided
+                </li>
+                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
+                  <Check className="w-5 h-5 text-brand-green shrink-0" /> All skill levels welcome
+                </li>
+              </ul>
+
+              <div className="flex flex-col gap-3 text-sm text-brand-green-light mb-8">
+                <div className="flex items-center gap-3">
+                  <Clock3 className="w-5 h-5 opacity-70" />
+                  <span>Half Day (3-4h) or Full Day (6-8h)</span>
+                </div>
+                <div className="flex items-start gap-3 mt-2">
+                  <div className="flex items-center justify-center w-5 font-semibold text-brand-green">Rp</div>
+                  <div className="flex flex-col">
+                    <span className="font-bold text-brand-green text-base">IDR 1,200,000 <span className="font-normal text-sm text-brand-green-light">starting</span></span>
+                    <span className="text-xs">Based on bike & track selection</span>
+                  </div>
+                </div>
+              </div>
+
+              <Link href="/tours/bali-dirt-bike-adventure" className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors cursor-pointer">
+                View & Book Tour <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
+          </article>
+
         </div>
       </section>
 
@@ -314,6 +361,12 @@ export default function Home() {
               className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeItinerary === 'cooking' ? 'bg-brand-green text-sand' : 'bg-sand text-brand-green hover:bg-brand-green/10'}`}
             >
               Cooking Class
+            </button>
+            <button 
+              onClick={() => setActiveItinerary('dirtbike')}
+              className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeItinerary === 'dirtbike' ? 'bg-brand-green text-sand' : 'bg-sand text-brand-green hover:bg-brand-green/10'}`}
+            >
+              Dirt Bike Tour
             </button>
           </div>
 
@@ -439,6 +492,53 @@ export default function Home() {
                     { time: "07:30 PM", title: "Balinese Dessert", desc: "Prepare a sweet traditional dessert, like Dadar Gulung (pandan crepes with palm sugar)." },
                     { time: "08:00 PM", title: "Feast Together", desc: "Sit down with your host and enjoy the delicious dinner you just cooked in a beautiful setting." },
                     { time: "08:30 PM", title: "End of Experience", desc: "Receive your digital recipe book before heading back to your hotel." },
+                  ].map((step, idx) => (
+                    <div key={idx} className="relative pl-10 timeline-row">
+                      <div className="timeline-dot"></div>
+                      <div className="timeline-line"></div>
+                      <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
+                        <span className="text-brand-green-light font-semibold text-sm w-20 shrink-0">{step.time}</span>
+                        <h3 className="text-xl font-bold text-brand-green">{step.title}</h3>
+                      </div>
+                      <p className="text-brand-green-light sm:pl-26 leading-relaxed">
+                        {step.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {activeItinerary === 'dirtbike' && (
+            <div className="flex flex-col md:flex-row gap-16 animate-in fade-in duration-500">
+              <div className="md:w-1/3">
+                <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">Unleash the adventure</p>
+                <h2 className="text-4xl font-serif text-brand-green font-bold leading-tight mb-6">
+                  Conquer the<br/>
+                  <span className="italic font-light">volcanic trails.</span>
+                </h2>
+                <p className="text-lg text-brand-green-light">
+                  A thrilling ride through Bali's untouched nature, forests, and black sand beaches.
+                </p>
+                
+                <div className="mt-12 p-6 bg-sand rounded-2xl flex items-start gap-4">
+                  <Mountain className="w-8 h-8 text-brand-green shrink-0 mt-1" />
+                  <p className="text-brand-green font-medium text-sm leading-relaxed">
+                    Designed for all levels,<br/>from beginners to seasoned pros.
+                  </p>
+                </div>
+              </div>
+
+              <div className="md:w-2/3 relative py-4">
+                <div className="space-y-12">
+                  {[
+                    { time: "08:00 AM", title: "Hotel Pickup", desc: "Our driver will pick you up from your hotel in Bali and take you to our base camp in Kintamani." },
+                    { time: "09:30 AM", title: "Gear & Briefing", desc: "Arrive at the base. Get fitted with top-tier safety gear, choose your bike, and receive a comprehensive safety briefing." },
+                    { time: "10:00 AM", title: "Start Riding", desc: "Hit the trails! Ride through pine forests, tackle the volcanic black sand, and navigate exciting terrain tailored to your skill level." },
+                    { time: "12:00 PM", title: "Lunch Break", desc: "Stop for a delicious, hearty lunch in the middle of nature to recharge your energy." },
+                    { time: "01:00 PM", title: "Afternoon Ride", desc: "Continue your adventure, conquering new paths and enjoying the spectacular views of Mount Batur." },
+                    { time: "03:00 PM", title: "Return & Drop-off", desc: "Return to base camp, return your gear, review your photos, and relax on the drive back to your hotel." },
                   ].map((step, idx) => (
                     <div key={idx} className="relative pl-10 timeline-row">
                       <div className="timeline-dot"></div>

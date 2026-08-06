@@ -80,7 +80,7 @@ export default async function TourDetailPage({ params }: Props) {
   } : null;
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 py-10 transition-colors duration-200">
+    <main className="min-h-screen bg-sand py-10 transition-colors duration-200">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(tourSchema) }}
@@ -96,7 +96,7 @@ export default async function TourDetailPage({ params }: Props) {
         {/* Back Link */}
         <Link
           href="/tours"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 dark:text-gray-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-brand-green-light hover:text-brand-green transition-colors"
         >
           <ArrowLeft className="w-4 h-4" /> Back to all experiences
         </Link>
@@ -108,29 +108,29 @@ export default async function TourDetailPage({ params }: Props) {
           <div className="lg:col-span-2 space-y-8">
             
             <div className="space-y-4">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-brand-green tracking-tight leading-tight">
                 {tour.title}
               </h1>
 
-              <div className="flex flex-wrap items-center gap-6 text-sm text-gray-600 dark:text-gray-400 font-medium">
+              <div className="flex flex-wrap items-center gap-6 text-sm text-brand-green-light font-medium">
                 <div className="flex items-center gap-1.5 text-amber-500 font-bold">
                   <Star className="w-4 h-4 fill-amber-500 text-amber-500" />
                   <span>4.9</span>
-                  <span className="text-gray-400 font-normal">(120 reviews)</span>
+                  <span className="text-brand-green-light/60 font-normal">(120 reviews)</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-emerald-500" />
+                  <MapPin className="w-4 h-4 text-brand-green" />
                   <span>Ubud, Bali</span>
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Clock className="w-4 h-4 text-emerald-500" />
+                  <Clock className="w-4 h-4 text-brand-green" />
                   <span>{tour.duration}</span>
                 </div>
               </div>
             </div>
 
             {/* Main Image */}
-            <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-gray-800">
+            <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-lg border border-brand-green/10">
               <Image
                 src={heroImage}
                 alt={tour.title}
@@ -141,17 +141,17 @@ export default async function TourDetailPage({ params }: Props) {
             </div>
 
             {/* Description */}
-            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 space-y-4">
-              <h2 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-                <Info className="w-5 h-5 text-emerald-500" /> About This Experience
+            <div className="bg-white p-8 rounded-2xl border border-brand-green/10 space-y-4">
+              <h2 className="text-xl font-bold text-brand-green flex items-center gap-2">
+                <Info className="w-5 h-5 text-brand-green" /> About This Experience
               </h2>
-              <div className="text-gray-600 dark:text-gray-300 leading-relaxed font-normal">
+              <div className="text-brand-green-light leading-relaxed font-normal">
                 <ReactMarkdown 
                   remarkPlugins={[remarkGfm]}
                   components={{
                     p: ({node, ...props}) => <p className="mb-4 last:mb-0" {...props} />,
-                    strong: ({node, ...props}) => <strong className="font-bold text-gray-900 dark:text-white" {...props} />,
-                    h3: ({node, ...props}) => <h3 className="text-lg font-bold text-gray-900 dark:text-white mt-6 mb-3" {...props} />,
+                    strong: ({node, ...props}) => <strong className="font-bold text-brand-green" {...props} />,
+                    h3: ({node, ...props}) => <h3 className="text-lg font-bold text-brand-green mt-6 mb-3" {...props} />,
                     ul: ({node, ...props}) => <ul className="list-disc pl-5 mb-4 space-y-2" {...props} />,
                     li: ({node, ...props}) => <li {...props} />
                   }}
@@ -163,13 +163,13 @@ export default async function TourDetailPage({ params }: Props) {
 
             {/* Photo Gallery */}
             {tour.gallery && tour.gallery.length > 0 && (
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 space-y-6">
-                <h2 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-                  <Camera className="w-5 h-5 text-emerald-500" /> Experience Photo Gallery
+              <div className="bg-white p-8 rounded-2xl border border-brand-green/10 space-y-6">
+                <h2 className="text-xl font-bold text-brand-green flex items-center gap-2">
+                  <Camera className="w-5 h-5 text-brand-green" /> Experience Photo Gallery
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {tour.gallery.map((imgItem, idx) => (
-                    <div key={idx} className="relative aspect-[4/3] w-full rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800 group">
+                    <div key={idx} className="relative aspect-[4/3] w-full rounded-xl overflow-hidden shadow-sm border border-brand-green/10 group">
                       <Image
                         src={imgItem.url}
                         alt={imgItem.alt || tour.title}
@@ -191,17 +191,17 @@ export default async function TourDetailPage({ params }: Props) {
 
             {/* Itinerary */}
             {tour.itinerary && tour.itinerary.length > 0 && (
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 space-y-6">
-                <h2 className="text-xl font-bold text-gray-900 dark:text-white">Experience Itinerary</h2>
+              <div className="bg-white p-8 rounded-2xl border border-brand-green/10 space-y-6">
+                <h2 className="text-xl font-bold text-brand-green">Experience Itinerary</h2>
                 <div className="space-y-6">
                   {tour.itinerary.map((item, index) => (
                     <div key={item.id || index} className="flex gap-4 items-start">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400 flex items-center justify-center font-bold text-sm">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-brand-green/10 text-brand-green flex items-center justify-center font-bold text-sm">
                         {index + 1}
                       </div>
                       <div className="space-y-1">
-                        <h3 className="font-bold text-gray-900 dark:text-white">{item.title}</h3>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">{item.description}</p>
+                        <h3 className="font-bold text-brand-green">{item.title}</h3>
+                        <p className="text-sm text-brand-green-light">{item.description}</p>
                       </div>
                     </div>
                   ))}
@@ -211,15 +211,15 @@ export default async function TourDetailPage({ params }: Props) {
 
             {/* FAQs */}
             {tour.faqs && tour.faqs.length > 0 && (
-              <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 space-y-6">
-                <h2 className="text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-                  <HelpCircle className="w-5 h-5 text-emerald-500" /> Frequently Asked Questions
+              <div className="bg-white p-8 rounded-2xl border border-brand-green/10 space-y-6">
+                <h2 className="text-xl font-bold text-brand-green flex items-center gap-2">
+                  <HelpCircle className="w-5 h-5 text-brand-green" /> Frequently Asked Questions
                 </h2>
                 <div className="space-y-4">
                   {tour.faqs.map((faq) => (
-                    <div key={faq.id} className="p-4 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-100 dark:border-gray-800">
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-2">{faq.question}</h3>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{faq.answer}</p>
+                    <div key={faq.id} className="p-4 bg-sand rounded-xl border border-brand-green/10">
+                      <h3 className="font-bold text-brand-green mb-2">{faq.question}</h3>
+                      <p className="text-sm text-brand-green-light leading-relaxed">{faq.answer}</p>
                     </div>
                   ))}
                 </div>
@@ -227,8 +227,8 @@ export default async function TourDetailPage({ params }: Props) {
             )}
 
             {/* Reviews Section */}
-            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl border border-gray-200 dark:border-gray-800 space-y-6">
-              <h2 className="text-xl font-bold text-gray-900 dark:text-white">Customer Reviews</h2>
+            <div className="bg-white p-8 rounded-2xl border border-brand-green/10 space-y-6">
+              <h2 className="text-xl font-bold text-brand-green">Customer Reviews</h2>
               <ReviewForm tourId={tour.id} />
             </div>
 

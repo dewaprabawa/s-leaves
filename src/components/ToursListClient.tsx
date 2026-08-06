@@ -101,10 +101,10 @@ export default function ToursListClient({ initialTours }: Props) {
       
       {/* Left Column: Sidebar Filters */}
       <div className="lg:col-span-1 space-y-6">
-        <div className="bg-white dark:bg-gray-900 p-6 rounded-3xl border border-gray-250/50 dark:border-gray-800 shadow-sm space-y-6">
-          <div className="flex items-center justify-between border-b border-gray-100 dark:border-gray-800 pb-4">
-            <h3 className="font-black text-sm uppercase tracking-wider text-gray-900 dark:text-white flex items-center gap-1.5">
-              <Filter className="w-4 h-4 text-emerald-500" /> Filters
+        <div className="bg-white p-6 rounded-3xl border border-brand-green/10 shadow-sm space-y-6">
+          <div className="flex items-center justify-between border-b border-brand-green/10 pb-4">
+            <h3 className="font-black text-sm uppercase tracking-wider text-brand-green flex items-center gap-1.5">
+              <Filter className="w-4 h-4 text-brand-green" /> Filters
             </h3>
             {(search || category !== "All" || wishlistOnly) && (
               <button 
@@ -118,22 +118,22 @@ export default function ToursListClient({ initialTours }: Props) {
 
           {/* Keyword Search */}
           <div className="space-y-2">
-            <label className="block text-xs font-bold text-gray-700 dark:text-gray-300">Search</label>
+            <label className="block text-xs font-bold text-brand-green">Search</label>
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-green-light" />
               <input
                 type="text"
                 placeholder="Where to? e.g. Ubud"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full pl-9 pr-4 py-2.5 text-xs font-semibold rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 focus:border-emerald-500 outline-none transition-all text-gray-900 dark:text-white"
+                className="w-full pl-9 pr-4 py-2.5 text-xs font-semibold rounded-xl bg-sand border border-brand-green/20 focus:border-brand-green outline-none transition-all text-brand-green"
               />
             </div>
           </div>
 
           {/* Categories Radio/Checkboxes */}
           <div className="space-y-3">
-            <label className="block text-xs font-bold text-gray-700 dark:text-gray-300">Category</label>
+            <label className="block text-xs font-bold text-brand-green">Category</label>
             <div className="flex flex-col gap-2">
               {categories.map((cat: any) => (
                 <button
@@ -141,8 +141,8 @@ export default function ToursListClient({ initialTours }: Props) {
                   onClick={() => setCategory(cat)}
                   className={`w-full text-left px-3 py-2 text-xs font-bold rounded-lg border transition-all cursor-pointer ${
                     category === cat
-                      ? "bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-450 border-emerald-500/20"
-                      : "bg-white dark:bg-gray-900 border-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800"
+                      ? "bg-brand-green/10 text-brand-green border-brand-green/20"
+                      : "bg-white border-transparent text-brand-green-light hover:bg-sand"
                   }`}
                 >
                   {cat}
@@ -152,13 +152,13 @@ export default function ToursListClient({ initialTours }: Props) {
           </div>
 
           {/* Wishlist filter toggle */}
-          <div className="space-y-2 pt-2 border-t border-gray-100 dark:border-gray-800">
+          <div className="space-y-2 pt-2 border-t border-brand-green/10">
             <button
               onClick={() => setWishlistOnly(!wishlistOnly)}
               className={`w-full py-2.5 rounded-xl text-xs font-bold border flex items-center justify-center gap-2 cursor-pointer transition-colors ${
                 wishlistOnly
                   ? "bg-red-500 border-red-500 text-white shadow-sm"
-                  : "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-red-500 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-950/20"
+                  : "bg-white border-brand-green/10 text-red-500 hover:bg-red-50"
               }`}
             >
               <Heart className={`w-3.5 h-3.5 ${wishlistOnly ? "fill-current" : ""}`} />
@@ -172,24 +172,24 @@ export default function ToursListClient({ initialTours }: Props) {
       <div className="lg:col-span-3 space-y-6">
         
         {/* Results Metadata */}
-        <div className="bg-white dark:bg-gray-900 p-4 px-6 rounded-3xl border border-gray-250/50 dark:border-gray-800 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-xs font-semibold text-gray-500 dark:text-gray-400">
-            Showing <span className="font-bold text-gray-900 dark:text-white">{filteredTours.length}</span> matching experiences
+        <div className="bg-white p-4 px-6 rounded-3xl border border-brand-green/10 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-2">
+          <p className="text-xs font-semibold text-brand-green-light">
+            Showing <span className="font-bold text-brand-green">{filteredTours.length}</span> matching experiences
           </p>
           {(search || category !== "All" || wishlistOnly) && (
             <div className="flex items-center gap-1.5 flex-wrap">
               {search && (
-                <span className="text-[10px] font-bold bg-gray-100 dark:bg-gray-800 text-gray-650 dark:text-gray-300 px-2.5 py-1 rounded-lg border border-gray-200 dark:border-gray-700">
+                <span className="text-[10px] font-bold bg-sand text-brand-green px-2.5 py-1 rounded-lg border border-brand-green/20">
                   Search: &quot;{search}&quot;
                 </span>
               )}
               {category !== "All" && (
-                <span className="text-[10px] font-bold bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-300 px-2.5 py-1 rounded-lg border border-emerald-100/30">
+                <span className="text-[10px] font-bold bg-brand-green/10 text-brand-green px-2.5 py-1 rounded-lg border border-brand-green/20">
                   Category: {category}
                 </span>
               )}
               {wishlistOnly && (
-                <span className="text-[10px] font-bold bg-red-50 dark:bg-red-950/30 text-red-700 dark:text-red-300 px-2.5 py-1 rounded-lg border border-red-100/30">
+                <span className="text-[10px] font-bold bg-red-50 text-red-700 px-2.5 py-1 rounded-lg border border-red-100/30">
                   Wishlist Only
                 </span>
               )}
@@ -198,12 +198,12 @@ export default function ToursListClient({ initialTours }: Props) {
         </div>
 
         {filteredTours.length === 0 ? (
-          <div className="text-center py-24 bg-white dark:bg-gray-900 rounded-3xl border border-gray-250/50 dark:border-gray-850 shadow-sm">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white">No experiences match your search</h3>
-            <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">Try modifying your filter settings or search terms.</p>
+          <div className="text-center py-24 bg-white rounded-3xl border border-brand-green/10 shadow-sm">
+            <h3 className="text-lg font-bold text-brand-green">No experiences match your search</h3>
+            <p className="mt-2 text-sm text-brand-green-light">Try modifying your filter settings or search terms.</p>
             <button
               onClick={clearAllFilters}
-              className="mt-6 px-6 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-black uppercase tracking-wider shadow-md shadow-emerald-500/10 cursor-pointer"
+              className="mt-6 px-6 py-2.5 rounded-full bg-brand-green hover:bg-brand-green-light text-sand text-xs font-black uppercase tracking-wider shadow-md shadow-brand-green/10 cursor-pointer"
             >
               Reset Filters
             </button>
@@ -221,10 +221,10 @@ export default function ToursListClient({ initialTours }: Props) {
               return (
                 <div 
                   key={tour.id} 
-                  className="group bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-200/60 dark:border-gray-850 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex flex-col"
+                  className="group bg-white rounded-3xl overflow-hidden border border-brand-green/10 shadow-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 flex flex-col"
                 >
                   {/* Card Image */}
-                  <div className="relative h-48 w-full overflow-hidden bg-gray-100 dark:bg-gray-950">
+                  <div className="relative h-48 w-full overflow-hidden bg-sand">
                     {heroUrl ? (
                       <Image 
                         src={heroUrl} 
@@ -234,13 +234,13 @@ export default function ToursListClient({ initialTours }: Props) {
                         className="object-cover group-hover:scale-103 transition-transform duration-500"
                       />
                     ) : (
-                      <div className="absolute inset-0 bg-gradient-to-tr from-emerald-900/10 to-teal-900/20" />
+                      <div className="absolute inset-0 bg-gradient-to-tr from-brand-green/10 to-brand-green-light/20" />
                     )}
                     
                     {/* Positioned Overlays */}
                     <div className="absolute inset-x-0 top-0 p-3 flex items-start justify-between z-10 pointer-events-none">
-                      <div className="inline-flex items-center gap-1 bg-white/95 dark:bg-gray-950/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-[9px] font-black text-gray-900 dark:text-white shadow-sm border border-gray-150/50 pointer-events-auto">
-                        <MapPin className="w-3 h-3 text-emerald-500" /> {(tour as any).location || "Bali"}
+                      <div className="inline-flex items-center gap-1 bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-full text-[9px] font-black text-brand-green shadow-sm border border-brand-green/10 pointer-events-auto">
+                        <MapPin className="w-3 h-3 text-brand-green" /> {(tour as any).location || "Bali"}
                       </div>
 
                       <div className="flex flex-col items-end gap-1.5 pointer-events-auto">
@@ -254,7 +254,7 @@ export default function ToursListClient({ initialTours }: Props) {
                           className={`p-1.5 rounded-full backdrop-blur-md transition-all border shadow-sm cursor-pointer ${
                             isFavorited
                               ? "bg-red-500 border-red-400 text-white"
-                              : "bg-white/90 dark:bg-gray-950/90 border-gray-200 dark:border-gray-800 text-gray-500 dark:text-gray-400 hover:text-red-500"
+                              : "bg-white/90 border-brand-green/10 text-brand-green-light hover:text-red-500"
                           }`}
                         >
                           <Heart className={`w-3.5 h-3.5 ${isFavorited ? "fill-current" : ""}`} />
@@ -272,7 +272,7 @@ export default function ToursListClient({ initialTours }: Props) {
                           {tour.categoryTags.slice(0, 2).map((t: any, idx: number) => (
                             <span 
                               key={idx} 
-                              className="text-[8px] font-extrabold tracking-wide uppercase px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-300 border border-emerald-100/10"
+                              className="text-[8px] font-extrabold tracking-wide uppercase px-2 py-0.5 rounded bg-brand-green/10 text-brand-green border border-brand-green/20"
                             >
                               {t.tag}
                             </span>
@@ -280,7 +280,7 @@ export default function ToursListClient({ initialTours }: Props) {
                         </div>
                       )}
 
-                      <h4 className="text-base font-bold text-gray-900 dark:text-white leading-tight group-hover:text-emerald-600 dark:group-hover:text-emerald-450 transition-colors">
+                      <h4 className="text-base font-bold text-brand-green leading-tight group-hover:text-brand-green-light transition-colors">
                         <Link href={`/tours/${tour.slug}`}>{tour.title}</Link>
                       </h4>
 
@@ -293,37 +293,37 @@ export default function ToursListClient({ initialTours }: Props) {
                               className={`w-3 h-3 ${
                                 idx < Math.floor(rating) 
                                   ? "text-amber-500 fill-amber-500" 
-                                  : "text-gray-200 dark:text-gray-850"
+                                  : "text-brand-green/20"
                               }`} 
                             />
                           ))}
                         </div>
-                        <span className="text-[10px] font-bold text-gray-800 dark:text-gray-200">{rating.toFixed(1)}</span>
-                        <span className="text-[10px] text-gray-400">({reviewCount})</span>
+                        <span className="text-[10px] font-bold text-brand-green">{rating.toFixed(1)}</span>
+                        <span className="text-[10px] text-brand-green-light/60">({reviewCount})</span>
                       </div>
 
                       {/* Flex Cancellation */}
                       {tour.hasFreeCancellation !== false && (
-                        <div className="text-[10px] font-bold text-emerald-650 dark:text-emerald-450 flex items-center gap-1 mt-1 bg-emerald-50/50 dark:bg-emerald-950/10 px-2 py-0.5 rounded-lg border border-emerald-100/10 w-fit">
-                          <ShieldCheck className="w-3 h-3 text-emerald-500" /> Free cancellation
+                        <div className="text-[10px] font-bold text-brand-green flex items-center gap-1 mt-1 bg-brand-green/5 px-2 py-0.5 rounded-lg border border-brand-green/10 w-fit">
+                          <ShieldCheck className="w-3 h-3 text-brand-green" /> Free cancellation
                         </div>
                       )}
                     </div>
 
                     {/* Footer */}
-                    <div className="pt-3 border-t border-gray-150 dark:border-gray-850 flex items-center justify-between gap-3">
-                      <div className="text-[10px] text-gray-450 dark:text-gray-400 flex items-center gap-1">
-                        <Clock className="w-3.5 h-3.5 text-emerald-500" /> {tour.duration}
+                    <div className="pt-3 border-t border-brand-green/10 flex items-center justify-between gap-3">
+                      <div className="text-[10px] text-brand-green-light flex items-center gap-1">
+                        <Clock className="w-3.5 h-3.5 text-brand-green" /> {tour.duration}
                       </div>
                       <div className="text-right">
-                        <span className="text-[8px] text-gray-400 block uppercase font-bold tracking-wider leading-none">From</span>
-                        <span className="text-base font-black text-gray-900 dark:text-white">{formatPrice(basePrice)}</span>
+                        <span className="text-[8px] text-brand-green-light/60 block uppercase font-bold tracking-wider leading-none">From</span>
+                        <span className="text-base font-black text-brand-green">{formatPrice(basePrice)}</span>
                       </div>
                     </div>
 
                     <Link 
                       href={`/tours/${tour.slug}`}
-                      className="w-full inline-flex items-center justify-center rounded-xl bg-gray-50 hover:bg-emerald-600 hover:text-white dark:bg-gray-800/40 dark:hover:bg-emerald-650 px-3 py-2.5 text-[10px] font-black uppercase tracking-wider text-gray-750 dark:text-gray-200 border border-gray-200 dark:border-gray-800 hover:border-emerald-600 cursor-pointer transition-all gap-1"
+                      className="w-full inline-flex items-center justify-center rounded-xl bg-sand hover:bg-brand-green hover:text-sand px-3 py-2.5 text-[10px] font-black uppercase tracking-wider text-brand-green border border-brand-green/20 hover:border-brand-green cursor-pointer transition-all gap-1"
                     >
                       Explore Tour <ArrowRight className="w-3.5 h-3.5" />
                     </Link>

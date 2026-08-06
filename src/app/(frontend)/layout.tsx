@@ -51,23 +51,57 @@ export const metadata: Metadata = {
 const schemaData = [
   {
     "@context": "https://schema.org",
-    "@type": "TravelAgency",
+    "@type": ["TravelAgency", "Organization"],
+    "@id": "https://www.sekarbaliactivity.com/#organization",
     "name": "Sekar Bali Activity",
-    "description": "Authentic village-led tours, cycling, and cooking classes in Pejeng, Bali.",
+    "legalName": "Sekar Bali Activity",
+    "description": "Authentic village-led tours, cycling, and cooking classes in Pejeng, Ubud, Bali.",
     "url": "https://www.sekarbaliactivity.com",
     "telephone": "+6281775723663",
+    "email": "sekarprivatebaliactivity@gmail.com",
+    "logo": "https://www.sekarbaliactivity.com/logo.png",
+    "image": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Pejeng",
+      "streetAddress": "Pejeng Village",
+      "addressLocality": "Ubud, Gianyar",
       "addressRegion": "Bali",
+      "postalCode": "80552",
       "addressCountry": "ID"
     },
-    "image": "https://www.sekarbaliactivity.com/logo.png",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -8.5133,
+      "longitude": 115.2989
+    },
     "sameAs": [
       "https://www.instagram.com/sekarbaliactivity",
       "https://www.facebook.com/sekarbaliactivity",
       "https://www.tripadvisor.com/Attraction_Review-g297701-d1234567-Reviews-Sekar_Bali_Activity-Ubud_Gianyar_Regency_Bali.html"
-    ]
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+6281775723663",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Indonesian"]
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.sekarbaliactivity.com/#website",
+    "url": "https://www.sekarbaliactivity.com",
+    "name": "Sekar Bali Activity",
+    "description": "Authentic Pejeng village tours, cycling, and cooking classes in Bali.",
+    "publisher": {
+      "@id": "https://www.sekarbaliactivity.com/#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.sekarbaliactivity.com/tours?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   },
   {
     "@context": "https://schema.org",
@@ -75,14 +109,9 @@ const schemaData = [
     "name": "Pejeng Village & Terrace Cycling Tour",
     "description": "Explore the real Bali on a cycling tour through historic Pejeng, passing ancient temples, markets, and Subak rice terraces.",
     "provider": {
-      "@type": "TravelAgency",
-      "name": "Sekar Bali Activity"
+      "@id": "https://www.sekarbaliactivity.com/#organization"
     },
-    "touristType": [
-      "Couples",
-      "Families",
-      "Small groups"
-    ],
+    "touristType": ["Couples", "Families", "Small groups"],
     "offers": {
       "@type": "Offer",
       "price": "400000",
@@ -96,13 +125,9 @@ const schemaData = [
     "name": "Luwak Coffee Plantation Experience",
     "description": "Discover the secrets behind Bali's world-famous coffee at Umah Kuno. Jungle walk, traditional roasting, and coffee tasting.",
     "provider": {
-      "@type": "TravelAgency",
-      "name": "Sekar Bali Activity"
+      "@id": "https://www.sekarbaliactivity.com/#organization"
     },
-    "touristType": [
-      "Couples",
-      "Small groups"
-    ],
+    "touristType": ["Couples", "Small groups"],
     "offers": {
       "@type": "Offer",
       "price": "400000",
@@ -116,13 +141,9 @@ const schemaData = [
     "name": "Traditional Balinese Dinner Cooking Class",
     "description": "Immerse yourself in the flavors of Indonesia in our hands-on cooking class in a traditional outdoor kitchen.",
     "provider": {
-      "@type": "TravelAgency",
-      "name": "Sekar Bali Activity"
+      "@id": "https://www.sekarbaliactivity.com/#organization"
     },
-    "touristType": [
-      "Couples",
-      "Families"
-    ],
+    "touristType": ["Couples", "Families"],
     "offers": {
       "@type": "Offer",
       "price": "400000",
@@ -173,10 +194,12 @@ export default function RootLayout({
             <p className="text-sm opacity-80">
               Village paths · Rice terraces · Shared tables
             </p>
-            <p className="text-sm opacity-80 mt-4 flex gap-6 justify-center">
-              <Link href="/#experiences" className="hover:text-brand-green-light transition-colors">Experiences</Link>
+            <p className="text-sm opacity-80 mt-4 flex flex-wrap gap-6 justify-center">
+              <Link href="/tours" className="hover:text-brand-green-light transition-colors">Tours & Experiences</Link>
+              <Link href="/transfers" className="hover:text-brand-green-light transition-colors">Airport Transfers</Link>
               <Link href="/blog" className="hover:text-brand-green-light transition-colors">Blog</Link>
-              <Link href="/about" className="hover:text-brand-green-light transition-colors">About</Link>
+              <Link href="/about" className="hover:text-brand-green-light transition-colors">About Us</Link>
+              <Link href="/contact" className="hover:text-brand-green-light transition-colors">Contact</Link>
             </p>
             <p className="text-xs opacity-60 mt-4">
               Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-brand-green-light/30 underline-offset-4">Tumang Bali Class</a>

@@ -5,7 +5,22 @@ import { Suspense } from "react"
 
 export const metadata: Metadata = {
   title: "Explore Curated Tours | Sekar Bali Activity",
-  description: "Browse our hand-picked day tours, volcano trekking packages, and luxury island expeditions across Bali and Flores.",
+  description: "Browse our hand-picked day tours, rice terrace cycling, authentic cooking classes, and Luwak coffee plantation experiences in Pejeng, Ubud, Bali.",
+  alternates: {
+    canonical: "/tours",
+  },
+  openGraph: {
+    title: "Explore Curated Tours | Sekar Bali Activity",
+    description: "Browse our hand-picked day tours, rice terrace cycling, authentic cooking classes, and Luwak coffee plantation experiences in Pejeng, Ubud, Bali.",
+    url: "https://www.sekarbaliactivity.com/tours",
+    siteName: "Sekar Bali Activity",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Explore Curated Tours | Sekar Bali Activity",
+    description: "Browse authentic village tours and experiences in Pejeng, Ubud, Bali.",
+  },
 }
 
 export default function ToursPage() {

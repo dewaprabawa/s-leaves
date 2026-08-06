@@ -3,8 +3,23 @@ import TransfersListClient from "@/components/TransfersListClient"
 import { TRANSFERS } from "@/data/transfers"
 
 export const metadata: Metadata = {
-  title: "Private Airport Transfers | S-Leaves",
-  description: "Book reliable, premium private airport transfers in Bali. Professional English-speaking drivers, flat rates, and flight tracking.",
+  title: "Private Airport Transfers | Sekar Bali Activity",
+  description: "Book reliable, premium private airport transfers in Bali with Sekar Bali Activity. Professional English-speaking drivers, flat rates, and flight tracking.",
+  alternates: {
+    canonical: "/transfers",
+  },
+  openGraph: {
+    title: "Private Airport Transfers | Sekar Bali Activity",
+    description: "Book reliable, premium private airport transfers in Bali with Sekar Bali Activity. Professional English-speaking drivers, flat rates, and flight tracking.",
+    url: "https://www.sekarbaliactivity.com/transfers",
+    siteName: "Sekar Bali Activity",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Private Airport Transfers | Sekar Bali Activity",
+    description: "Book reliable, premium private airport transfers in Bali with Sekar Bali Activity.",
+  },
 }
 
 export default function TransfersPage() {

@@ -47,8 +47,13 @@ export default async function BlogPostPage({ params }: Props) {
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://www.sekarbaliactivity.com/blog/${post.slug}`
+    },
     "headline": post.title,
+    "description": post.excerpt,
     "image": [post.image],
     "datePublished": post.publishedAt,
     "dateModified": post.publishedAt,
@@ -56,7 +61,41 @@ export default async function BlogPostPage({ params }: Props) {
       "@type": "Person",
       "name": post.author,
       "url": "https://www.sekarbaliactivity.com/about"
-    }]
+    }],
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://www.sekarbaliactivity.com/#organization",
+      "name": "Sekar Bali Activity",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.sekarbaliactivity.com/logo.png"
+      }
+    }
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.sekarbaliactivity.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.sekarbaliactivity.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://www.sekarbaliactivity.com/blog/${post.slug}`
+      }
+    ]
   }
 
   return (
@@ -64,6 +103,10 @@ export default async function BlogPostPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="max-w-3xl mx-auto px-6 space-y-8">
         

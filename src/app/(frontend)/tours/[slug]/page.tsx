@@ -49,35 +49,59 @@ export default async function TourDetailPage({ params }: Props) {
     "@type": "TouristTrip",
     "name": tour.title,
     "description": tour.shortDescription,
-    "image": heroImage,
-    "touristType": [
-      "Sightseeing",
-      "Cultural"
-    ],
+    "image": [heroImage],
+    "touristType": ["Sightseeing", "Cultural", "Families", "Couples"],
     "offers": {
       "@type": "Offer",
+      "url": `https://www.sekarbaliactivity.com/tours/${tour.slug}`,
       "price": basePrice,
       "priceCurrency": "IDR",
-      "availability": "https://schema.org/InStock"
+      "priceValidUntil": "2027-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemOffered": {
+        "@type": "Service",
+        "name": tour.title,
+        "description": tour.shortDescription
+      }
     },
     "provider": {
-      "@type": "LocalBusiness",
-      "name": "Sekar Bali Activity"
-    }
+      "@type": "TravelAgency",
+      "@id": "https://www.sekarbaliactivity.com/#organization",
+      "name": "Sekar Bali Activity",
+      "url": "https://www.sekarbaliactivity.com"
+    },
+    "itinerary": (tour.itinerary || []).map((step, idx) => ({
+      "@type": "ItemList",
+      "position": idx + 1,
+      "name": step.title,
+      "description": step.description
+    }))
   }
 
-  const faqSchema = tour.faqs && tour.faqs.length > 0 ? {
+  const breadcrumbSchema = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": tour.faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.sekarbaliactivity.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tours",
+        "item": "https://www.sekarbaliactivity.com/tours"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": tour.title,
+        "item": `https://www.sekarbaliactivity.com/tours/${tour.slug}`
       }
-    }))
-  } : null;
+    ]
+  }
 
   return (
     <main className="min-h-screen bg-sand py-10 transition-colors duration-200">
@@ -85,12 +109,10 @@ export default async function TourDetailPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(tourSchema) }}
       />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 space-y-8">
         
         {/* Back Link */}

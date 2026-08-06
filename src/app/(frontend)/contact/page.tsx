@@ -4,9 +4,24 @@ import { Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react";
 import ContactFormClient from "./ContactFormClient";
 
 export const metadata: Metadata = {
-  title: "Contact Us | S-Leaves Travel",
-  description: "Get in touch with our travel specialists to plan your next adventure.",
-};
+  title: "Contact Us | Sekar Bali Activity",
+  description: "Get in touch with Sekar Bali Activity. Contact our Pejeng family team via WhatsApp, phone, or email to plan your village tour or cooking class in Ubud, Bali.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Us | Sekar Bali Activity",
+    description: "Get in touch with Sekar Bali Activity. Contact our Pejeng family team via WhatsApp, phone, or email to plan your village tour or cooking class in Ubud, Bali.",
+    url: "https://www.sekarbaliactivity.com/contact",
+    siteName: "Sekar Bali Activity",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Sekar Bali Activity",
+    description: "Get in touch with Sekar Bali Activity to book authentic Pejeng village experiences in Bali.",
+  },
+}
 
 export default function ContactPage() {
   return (

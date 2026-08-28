@@ -3,637 +3,553 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import { BookingPopup, TourConfig } from '@/components/BookingPopup'
 import { FAQSection } from '@/components/FAQSection'
-import { ArrowRight, MapPin, Users, Leaf, Check, Clock3, Bike, Coffee, CookingPot, Mountain } from 'lucide-react'
+import { 
+  ArrowRight, MapPin, Users, Shield, Check, Clock3, 
+  Mountain, Zap, Star, ChevronRight, Bike, Coffee, 
+  CookingPot, TreePine, Droplets, Eye, Flame, Heart
+} from 'lucide-react'
 
 export default function Home() {
   const [activeTour, setActiveTour] = useState<TourConfig | null>(null);
-  const [activeItinerary, setActiveItinerary] = useState<"cycling" | "coffee" | "cooking" | "dirtbike">("cycling");
 
-  const cyclingConfig: TourConfig = {
-    id: "cycling",
-    title: "Pejeng Village & Terrace Cycling Tour",
-    times: ["08:30 AM (Morning Ride)", "01:30 PM (Afternoon Ride)"],
-    adultPrice: 400000,
-    kidPrice: 350000,
-    minPax: 2,
-    getYourGuideUrl: "https://gyg.me/2pBDrw5s"
+  const jungleTrailConfig: TourConfig = {
+    id: "atv-jungle",
+    title: "ATV Jungle Trail Adventure",
+    times: ["08:00 AM", "10:30 AM", "01:00 PM"],
+    adultPrice: 850000,
+    kidPrice: 650000,
+    minPax: 1,
   };
 
-  const coffeeConfig: TourConfig = {
-    id: "coffee",
-    title: "Luwak Coffee Plantation Experience",
-    times: ["10:00 AM", "02:00 PM"],
-    adultPrice: 400000,
-    kidPrice: null,
-    minPax: 3
+  const volcanoRouteConfig: TourConfig = {
+    id: "atv-volcano",
+    title: "ATV Volcano Route",
+    times: ["08:00 AM", "10:00 AM"],
+    adultPrice: 1200000,
+    kidPrice: 900000,
+    minPax: 1,
   };
 
-  const cookingConfig: TourConfig = {
-    id: "cooking",
-    title: "Traditional Balinese Dinner Cooking Class",
-    times: ["08:30 AM", "02:30 PM", "05:30 PM"],
-    adultPrice: 400000,
-    kidPrice: 350000,
-    minPax: 2,
-    getYourGuideUrl: "https://gyg.me/rqpV6ZI5"
+  const riceTerraceConfig: TourConfig = {
+    id: "atv-rice-terrace",
+    title: "ATV Rice Terrace Signature Trail",
+    times: ["08:00 AM"],
+    adultPrice: 1500000,
+    kidPrice: 1100000,
+    minPax: 1,
   };
 
   return (
     <main className="w-full flex flex-col bg-sand">
       <BookingPopup isOpen={activeTour !== null} onClose={() => setActiveTour(null)} tour={activeTour} />
-      {/* Hero Section */}
-      <section id="top" className="relative w-full min-h-[85vh] flex flex-col lg:flex-row items-center justify-center px-6 lg:px-12 py-12 lg:py-0 overflow-hidden">
-        <div className="lg:w-1/2 flex flex-col justify-center max-w-2xl z-10 pr-0 lg:pr-12">
-          <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">
-            Village-led experiences · Pejeng, Bali
-          </p>
-          <h1 className="text-5xl lg:text-7xl font-serif text-brand-green font-bold leading-tight mb-6">
-            Bali,<br />
-            <span className="italic font-light">at village pace.</span>
-          </h1>
-          <h2 className="text-lg lg:text-xl text-brand-green-light mb-10 max-w-lg leading-relaxed">
-            Authentic Bali Tours & Village Cycling in Pejeng. Three intimate ways to meet the island beyond the postcard—by bicycle, by coffee cup, and around the family table.
-          </h2>
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-12">
-            <a 
-              href="#experiences" 
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById('experiences')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="inline-flex items-center gap-2 bg-brand-green text-sand px-7 py-4 rounded-full font-semibold hover:bg-brand-green-light transition-colors cursor-pointer"
-            >
-              Find your experience <ArrowRight className="w-5 h-5" />
-            </a>
-          </div>
-          
-          <div className="flex flex-wrap gap-x-8 gap-y-4 text-sm font-medium text-brand-green-light">
-            <span className="flex items-center gap-2">
-              <MapPin className="w-4 h-4" /> Pickup in Ubud
-            </span>
-            <span className="flex items-center gap-2">
-              <Users className="w-4 h-4" /> Small groups
-            </span>
-            <span className="flex items-center gap-2">
-              <Leaf className="w-4 h-4" /> Local hosts
-            </span>
-          </div>
-        </div>
-
-        <div className="lg:w-1/2 w-full mt-12 lg:mt-0 relative aspect-[4/3] lg:aspect-auto lg:h-[80vh] rounded-3xl overflow-hidden shadow-2xl">
+      
+      {/* ============================================================= */}
+      {/* HERO SECTION — Full-width immersive ATV */}
+      {/* ============================================================= */}
+      <section id="top" className="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80" 
-            alt="Ancient Balinese temple surrounded by lush tropical greenery"
+            src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1920&q=80" 
+            alt="ATV quad bike adventure through Bali jungle trails"
             className="object-cover w-full h-full"
           />
-          <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end text-sand drop-shadow-md">
-            <div className="flex flex-col text-sm font-medium tracking-wide">
-              <span>08°30' S</span>
-              <span>Pejeng, Gianyar</span>
+          <div className="atv-hero-overlay absolute inset-0" />
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-brand-accent/90 text-white px-5 py-2 rounded-full text-sm font-bold mb-8 shadow-lg">
+            <Zap className="w-4 h-4" />
+            #1 ATV Adventure in Bali
+          </div>
+
+          <h1 className="text-5xl sm:text-6xl lg:text-8xl font-serif font-bold leading-tight mb-6 text-white drop-shadow-lg">
+            Conquer Bali&apos;s<br/>
+            <span className="italic font-light text-brand-accent-light">Wild Trails.</span>
+          </h1>
+          
+          <p className="text-lg lg:text-xl text-white/90 max-w-2xl leading-relaxed mb-10">
+            Ride powerful ATVs through jungles, volcanic landscapes, and iconic rice terraces. 
+            An unforgettable adventure for all skill levels — from first-timers to pros.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-12">
+            <a 
+              href="#atv-packages" 
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('atv-packages')?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="inline-flex items-center gap-2 bg-brand-accent text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-brand-accent-light hover:scale-105 transition-all shadow-xl cursor-pointer"
+            >
+              Explore ATV Tours <ArrowRight className="w-5 h-5" />
+            </a>
+            <a
+              href="https://wa.me/6281775723663"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border-2 border-white/40 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all cursor-pointer"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Book via WhatsApp
+            </a>
+          </div>
+
+          {/* Hero Stats */}
+          <div className="flex flex-wrap justify-center gap-8 lg:gap-16 text-white/80">
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <Shield className="w-5 h-5 text-brand-accent-light" /> Full safety gear included
+            </div>
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <Users className="w-5 h-5 text-brand-accent-light" /> All skill levels
+            </div>
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <Star className="w-5 h-5 text-brand-accent-light" /> Expert local guides
+            </div>
+            <div className="flex items-center gap-2 text-sm font-medium">
+              <MapPin className="w-5 h-5 text-brand-accent-light" /> Hotel pickup included
             </div>
           </div>
-          {/* Sun Stamp Element */}
-          <div className="absolute top-8 right-8 w-28 h-28 bg-sand rounded-full flex flex-col items-center justify-center text-brand-green rotate-12 shadow-lg hidden md:flex">
-            <span className="text-[10px] tracking-widest font-semibold uppercase">Meet</span>
-            <strong className="text-xl font-bold tracking-wider uppercase">Bali</strong>
-            <span className="text-[10px] tracking-widest font-semibold uppercase">Slowly</span>
-          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/60 animate-bounce">
+          <span className="text-xs font-medium tracking-widest uppercase">Scroll</span>
+          <ChevronRight className="w-5 h-5 rotate-90" />
         </div>
       </section>
 
-      {/* Intro Strip */}
-      <section className="bg-brand-green text-sand py-16 px-6 lg:px-12 flex flex-col lg:flex-row justify-between items-center gap-12">
-        <p className="text-2xl lg:text-3xl font-light leading-snug max-w-xl text-center lg:text-left">
-          Not a checklist.<br />
-          <span className="font-medium">A real morning, afternoon, or evening.</span>
-        </p>
-        <div className="flex flex-wrap justify-center lg:justify-end gap-12 lg:gap-20">
-          <div className="flex items-center gap-4">
-            <strong className="text-5xl font-serif">4</strong>
-            <span className="text-sm font-medium opacity-80 leading-tight">thoughtful<br/>experiences</span>
+      {/* ============================================================= */}
+      {/* STATS STRIP — Key numbers */}
+      {/* ============================================================= */}
+      <section className="bg-brand-green text-sand py-16 px-6 lg:px-12 section-divider-wave">
+        <div className="max-w-6xl mx-auto flex flex-wrap justify-center lg:justify-between gap-12 lg:gap-8">
+          <div className="flex items-center gap-4 text-center sm:text-left">
+            <strong className="text-5xl font-serif text-brand-accent-light">3</strong>
+            <span className="text-sm font-medium opacity-80 leading-tight">epic trail<br/>routes</span>
           </div>
-          <div className="flex items-center gap-4">
-            <strong className="text-5xl font-serif">8h</strong>
-            <span className="text-sm font-medium opacity-80 leading-tight">maximum<br/>tour length</span>
+          <div className="flex items-center gap-4 text-center sm:text-left">
+            <strong className="text-5xl font-serif text-brand-accent-light">4h</strong>
+            <span className="text-sm font-medium opacity-80 leading-tight">maximum<br/>adventure</span>
           </div>
-          <div className="flex items-center gap-4">
-            <strong className="text-5xl font-serif">400k</strong>
+          <div className="flex items-center gap-4 text-center sm:text-left">
+            <strong className="text-5xl font-serif text-brand-accent-light">850k</strong>
             <span className="text-sm font-medium opacity-80 leading-tight">IDR starting<br/>price</span>
           </div>
+          <div className="flex items-center gap-4 text-center sm:text-left">
+            <strong className="text-5xl font-serif text-brand-accent-light">500+</strong>
+            <span className="text-sm font-medium opacity-80 leading-tight">happy<br/>riders</span>
+          </div>
         </div>
       </section>
 
-      {/* Experiences Section */}
-      <section id="experiences" className="py-24 px-6 lg:px-12 max-w-7xl mx-auto w-full">
-        <div className="mb-16">
-          <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">Choose your pace</p>
-          <h2 className="text-4xl lg:text-5xl font-serif text-brand-green font-bold leading-tight mb-6">
-            Four windows<br/>into everyday Bali.
+      {/* ============================================================= */}
+      {/* ATV PACKAGES — Main product cards */}
+      {/* ============================================================= */}
+      <section id="atv-packages" className="py-24 px-6 lg:px-12 max-w-7xl mx-auto w-full">
+        <div className="mb-16 text-center">
+          <p className="text-brand-accent font-semibold tracking-wide uppercase text-sm mb-4">Choose your trail</p>
+          <h2 className="text-4xl lg:text-6xl font-serif text-brand-green font-bold leading-tight mb-6">
+            Three legendary<br/>ATV adventures.
           </h2>
-          <p className="text-lg text-brand-green-light max-w-2xl">
-            Each experience stands beautifully on its own. Pair two across a day for a deeper Bali story.
+          <p className="text-lg text-brand-green-light max-w-2xl mx-auto">
+            Every route is guided by local experts who know every turn, river crossing, and hidden viewpoint. 
+            Pick your level and let&apos;s ride.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {/* Tour 1: Cycling */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          {/* ATV Package 1: Jungle Trail */}
           <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group relative">
-            <div className="absolute top-4 right-4 bg-brand-green text-sand text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-sm">
-              Our signature experience
+            <div className="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-sm">
+              Beginner Friendly
             </div>
-            <div className="relative h-64 overflow-hidden">
-              <img src="/images/cycling/rice-field-bikes.jpg" alt="Cycling Tour" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute top-4 left-4 w-10 h-10 bg-sand rounded-full flex items-center justify-center text-brand-green font-bold shadow-md">01</div>
-              <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-lg">
-                <Bike className="w-6 h-6" />
+            <div className="relative h-72 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80" 
+                alt="ATV Jungle Trail through Bali tropical forest" 
+                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" 
+              />
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+                <Clock3 className="w-4 h-4" />
+                <span className="text-sm font-bold">2 Hours</span>
+              </div>
+              <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-accent text-white rounded-full flex items-center justify-center shadow-lg">
+                <TreePine className="w-6 h-6" />
               </div>
             </div>
             <div className="p-8 pt-12 flex flex-col flex-1">
-              <h3 className="text-2xl font-bold text-brand-green mb-3">Pejeng Village & Terrace Cycling</h3>
+              <h3 className="text-2xl font-bold text-brand-green mb-3">Jungle Trail Adventure</h3>
               <p className="text-brand-green-light text-sm mb-6 flex-1">
-                <strong className="block text-brand-green mb-1 font-semibold">Explore the real Bali.</strong>
-                This dedicated cycling tour takes you away from the crowds and deep into the historic Pejeng district. Ride through local morning markets, ancient village pathways, and expansive rice terraces.
+                <strong className="block text-brand-green mb-1 font-semibold">The perfect introduction to ATV riding.</strong>
+                Navigate through lush tropical forests, splash across shallow rivers, and discover hidden waterfalls on this beginner-friendly trail.
               </p>
               
               <ul className="space-y-3 mb-8 border-t border-b border-brand-green/10 py-6">
                 <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Traditional market walk
+                  <Check className="w-5 h-5 text-brand-accent shrink-0" /> Tropical jungle trails
                 </li>
                 <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Subak terrace riding
+                  <Check className="w-5 h-5 text-brand-accent shrink-0" /> River crossings & waterfall stop
                 </li>
                 <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Fresh coconut finish
+                  <Check className="w-5 h-5 text-brand-accent shrink-0" /> Full safety gear & guide
                 </li>
               </ul>
 
               <div className="flex flex-col gap-3 text-sm text-brand-green-light mb-8">
                 <div className="flex items-center gap-3">
                   <Clock3 className="w-5 h-5 opacity-70" />
-                  <span>8:30 AM – 12:30 PM <span className="opacity-50">or</span> 1:30 PM – 5:30 PM</span>
+                  <span>8:00 AM · 10:30 AM · 1:00 PM</span>
                 </div>
                 <div className="flex items-start gap-3 mt-2">
                   <div className="flex items-center justify-center w-5 font-semibold text-brand-green">Rp</div>
                   <div className="flex flex-col">
-                    <span className="font-bold text-brand-green text-base">IDR 400,000 <span className="font-normal text-sm text-brand-green-light">Adult</span></span>
-                    <span className="text-xs">Children IDR 350,000</span>
+                    <span className="font-bold text-brand-green text-lg">IDR 850,000 <span className="font-normal text-sm text-brand-green-light">/ person</span></span>
+                    <span className="text-xs">Children (7-12) IDR 650,000</span>
                   </div>
                 </div>
               </div>
 
-              <button onClick={() => setActiveTour(cyclingConfig)} className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors cursor-pointer">
-                Book this experience <ArrowRight className="w-4 h-4" />
+              <button onClick={() => setActiveTour(jungleTrailConfig)} className="mt-auto w-full flex items-center justify-center gap-2 bg-brand-accent text-white font-bold py-4 rounded-xl hover:bg-brand-accent-light transition-colors cursor-pointer shadow-md">
+                Book Jungle Trail <ArrowRight className="w-4 h-4" />
               </button>
             </div>
           </article>
 
-          {/* Tour 2: Coffee */}
-          <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group">
-            <div className="relative h-64 overflow-hidden">
-              <img src="/coffee.jpg" alt="Luwak Coffee Plantation Umah Kuno" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute top-4 left-4 w-10 h-10 bg-sand rounded-full flex items-center justify-center text-brand-green font-bold shadow-md">02</div>
-              <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-lg">
-                <Coffee className="w-6 h-6" />
-              </div>
+          {/* ATV Package 2: Volcano Route */}
+          <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group relative ring-2 ring-brand-accent/30">
+            <div className="absolute top-4 left-4 bg-brand-accent text-white text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-sm flex items-center gap-1">
+              <Flame className="w-3 h-3" /> Most Popular
             </div>
-            <div className="p-8 pt-12 flex flex-col flex-1">
-              <h3 className="text-2xl font-bold text-brand-green mb-3">Luwak Coffee Plantation Experience (Umah Kuno)</h3>
-              <p className="text-brand-green-light text-sm mb-4 flex-1">
-                Discover the secrets behind Bali's world-famous coffee at Umah Kuno. This standalone visit is perfect for a relaxing morning or a slow afternoon in the jungle.
-              </p>
-              <a 
-                href="https://share.google/VOs6vwV16r2bVERjV" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-700 hover:underline mb-6"
-              >
-                📍 View Umah Kuno on Google Maps →
-              </a>
-              
-              <ul className="space-y-3 mb-8 border-t border-b border-brand-green/10 py-6">
-                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Cocoa, vanilla & coffee jungle walk
-                </li>
-                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Traditional fire roasting
-                </li>
-                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> 10-tea-and-coffee tasting flight
-                </li>
-              </ul>
-
-              <div className="flex flex-col gap-3 text-sm text-brand-green-light mb-8">
-                <div className="flex items-center gap-3">
-                  <Clock3 className="w-5 h-5 opacity-70" />
-                  <span>10:00 AM – 11:30 AM <span className="opacity-50">or</span> 2:00 PM – 3:30 PM</span>
-                </div>
-                <div className="flex items-start gap-3 mt-2">
-                  <div className="flex items-center justify-center w-5 font-semibold text-brand-green">Rp</div>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-brand-green text-base">IDR 400,000 <span className="font-normal text-sm text-brand-green-light">Per Person</span></span>
-                    <span className="text-xs">Minimum booking of 3 people</span>
-                  </div>
-                </div>
+            <div className="relative h-72 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1570459027562-4a916cc6113f?auto=format&fit=crop&w=800&q=80" 
+                alt="ATV Volcano Route with Mount Batur views" 
+                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" 
+              />
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+                <Clock3 className="w-4 h-4" />
+                <span className="text-sm font-bold">3 Hours</span>
               </div>
-
-              <button onClick={() => setActiveTour(coffeeConfig)} className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors cursor-pointer">
-                Book this experience <ArrowRight className="w-4 h-4" />
-              </button>
-            </div>
-          </article>
-
-          {/* Tour 3: Cooking */}
-          <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group">
-            <div className="relative h-64 overflow-hidden">
-              <img src="/images/cooking/pancake-toss.jpg" alt="Cooking Class" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute top-4 left-4 w-10 h-10 bg-sand rounded-full flex items-center justify-center text-brand-green font-bold shadow-md">03</div>
-              <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-lg">
-                <CookingPot className="w-6 h-6" />
-              </div>
-            </div>
-            <div className="p-8 pt-12 flex flex-col flex-1">
-              <h3 className="text-2xl font-bold text-brand-green mb-3">Traditional Balinese Dinner Cooking Class</h3>
-              <p className="text-brand-green-light text-sm mb-6 flex-1">
-                Immerse yourself in the flavors of Indonesia. Set in a beautiful traditional kitchen, this hands-on class teaches you the secrets of Balinese spices.
-              </p>
-              
-              <ul className="space-y-3 mb-8 border-t border-b border-brand-green/10 py-6">
-                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Balinese spice introduction
-                </li>
-                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Five hands-on dishes & pounding
-                </li>
-                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Digital recipe book to take home
-                </li>
-              </ul>
-
-              <div className="flex flex-col gap-3 text-sm text-brand-green-light mb-8">
-                <div className="flex items-center gap-3">
-                  <Clock3 className="w-5 h-5 opacity-70" />
-                  <span>5:30 PM (17:30) – 8:30 PM</span>
-                </div>
-                <div className="flex items-start gap-3 mt-2">
-                  <div className="flex items-center justify-center w-5 font-semibold text-brand-green">Rp</div>
-                  <div className="flex flex-col">
-                    <span className="font-bold text-brand-green text-base">IDR 400,000 <span className="font-normal text-sm text-brand-green-light">Adult</span></span>
-                    <span className="text-xs">Children IDR 350,000</span>
-                  </div>
-                </div>
-              </div>
-
-              <button onClick={() => setActiveTour(cookingConfig)} className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors cursor-pointer">
-                Book this experience <ArrowRight className="w-4 h-4" />
-              </button>
-            </div>
-          </article>
-
-          {/* Tour 4: Dirt Bike */}
-          <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group">
-            <div className="relative h-64 overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1519444334051-a39396328670?auto=format&fit=crop&w=1200&q=80" alt="Bali Dirt Bike Adventure" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 bg-gray-200" />
-              <div className="absolute top-4 left-4 w-10 h-10 bg-sand rounded-full flex items-center justify-center text-brand-green font-bold shadow-md">04</div>
-              <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-lg">
+              <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-accent text-white rounded-full flex items-center justify-center shadow-lg">
                 <Mountain className="w-6 h-6" />
               </div>
             </div>
             <div className="p-8 pt-12 flex flex-col flex-1">
-              <h3 className="text-2xl font-bold text-brand-green mb-3">Bali Dirt Bike & Adventure Tour</h3>
+              <h3 className="text-2xl font-bold text-brand-green mb-3">Volcano Route</h3>
               <p className="text-brand-green-light text-sm mb-6 flex-1">
-                Explore Bali's volcanic landscapes, forests, and black sand beaches on two wheels. Choose your own pace and adventure level.
+                <strong className="block text-brand-green mb-1 font-semibold">Our most thrilling route.</strong>
+                Tear through volcanic black sand, tackle rugged pine forest trails, and ride with jaw-dropping views of Mount Batur as your backdrop.
               </p>
               
               <ul className="space-y-3 mb-8 border-t border-b border-brand-green/10 py-6">
                 <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Volcanic trails & forests
+                  <Check className="w-5 h-5 text-brand-accent shrink-0" /> Volcanic black sand terrain
                 </li>
                 <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> Full riding gear provided
+                  <Check className="w-5 h-5 text-brand-accent shrink-0" /> Pine forest & Mount Batur views
                 </li>
                 <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
-                  <Check className="w-5 h-5 text-brand-green shrink-0" /> All skill levels welcome
+                  <Check className="w-5 h-5 text-brand-accent shrink-0" /> Lunch stop included
                 </li>
               </ul>
 
               <div className="flex flex-col gap-3 text-sm text-brand-green-light mb-8">
                 <div className="flex items-center gap-3">
                   <Clock3 className="w-5 h-5 opacity-70" />
-                  <span>Half Day (3-4h) or Full Day (6-8h)</span>
+                  <span>8:00 AM · 10:00 AM</span>
                 </div>
                 <div className="flex items-start gap-3 mt-2">
                   <div className="flex items-center justify-center w-5 font-semibold text-brand-green">Rp</div>
                   <div className="flex flex-col">
-                    <span className="font-bold text-brand-green text-base">IDR 1,200,000 <span className="font-normal text-sm text-brand-green-light">starting</span></span>
-                    <span className="text-xs">Based on bike & track selection</span>
+                    <span className="font-bold text-brand-green text-lg">IDR 1,200,000 <span className="font-normal text-sm text-brand-green-light">/ person</span></span>
+                    <span className="text-xs">Children (7-12) IDR 900,000</span>
                   </div>
                 </div>
               </div>
 
-              <Link href="/tours/bali-dirt-bike-adventure" className="mt-auto w-full flex items-center justify-center gap-2 bg-sand text-brand-green font-bold py-3.5 rounded-xl border border-brand-green/20 hover:bg-brand-green hover:text-sand transition-colors cursor-pointer">
-                View & Book Tour <ArrowRight className="w-4 h-4" />
-              </Link>
+              <button onClick={() => setActiveTour(volcanoRouteConfig)} className="mt-auto w-full flex items-center justify-center gap-2 bg-brand-accent text-white font-bold py-4 rounded-xl hover:bg-brand-accent-light transition-colors cursor-pointer shadow-md">
+                Book Volcano Route <ArrowRight className="w-4 h-4" />
+              </button>
+            </div>
+          </article>
+
+          {/* ATV Package 3: Rice Terrace Signature */}
+          <article className="bg-white rounded-3xl overflow-hidden shadow-xl shadow-brand-green/5 flex flex-col group relative">
+            <div className="absolute top-4 left-4 bg-brand-green text-sand text-xs font-bold px-3 py-1.5 rounded-full z-10 shadow-sm flex items-center gap-1">
+              <Star className="w-3 h-3" /> Signature Experience
+            </div>
+            <div className="relative h-72 overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80" 
+                alt="ATV Rice Terrace Trail through Bali's iconic paddy fields" 
+                className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" 
+              />
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+                <Clock3 className="w-4 h-4" />
+                <span className="text-sm font-bold">4 Hours</span>
+              </div>
+              <div className="absolute bottom-0 right-4 translate-y-1/2 w-14 h-14 bg-brand-accent text-white rounded-full flex items-center justify-center shadow-lg">
+                <Eye className="w-6 h-6" />
+              </div>
+            </div>
+            <div className="p-8 pt-12 flex flex-col flex-1">
+              <h3 className="text-2xl font-bold text-brand-green mb-3">Rice Terrace Signature Trail</h3>
+              <p className="text-brand-green-light text-sm mb-6 flex-1">
+                <strong className="block text-brand-green mb-1 font-semibold">The ultimate Bali ATV experience.</strong>
+                Our full-length signature ride takes you through rice terraces, traditional villages, jungle canopies, rivers, and finishes with a feast.
+              </p>
+              
+              <ul className="space-y-3 mb-8 border-t border-b border-brand-green/10 py-6">
+                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
+                  <Check className="w-5 h-5 text-brand-accent shrink-0" /> Rice terraces & village trails
+                </li>
+                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
+                  <Check className="w-5 h-5 text-brand-accent shrink-0" /> Jungle, rivers & waterfall swim
+                </li>
+                <li className="flex items-start gap-3 text-sm font-medium text-brand-green">
+                  <Check className="w-5 h-5 text-brand-accent shrink-0" /> Traditional lunch included
+                </li>
+              </ul>
+
+              <div className="flex flex-col gap-3 text-sm text-brand-green-light mb-8">
+                <div className="flex items-center gap-3">
+                  <Clock3 className="w-5 h-5 opacity-70" />
+                  <span>8:00 AM (Morning only)</span>
+                </div>
+                <div className="flex items-start gap-3 mt-2">
+                  <div className="flex items-center justify-center w-5 font-semibold text-brand-green">Rp</div>
+                  <div className="flex flex-col">
+                    <span className="font-bold text-brand-green text-lg">IDR 1,500,000 <span className="font-normal text-sm text-brand-green-light">/ person</span></span>
+                    <span className="text-xs">Children (7-12) IDR 1,100,000</span>
+                  </div>
+                </div>
+              </div>
+
+              <button onClick={() => setActiveTour(riceTerraceConfig)} className="mt-auto w-full flex items-center justify-center gap-2 bg-brand-green text-sand font-bold py-4 rounded-xl hover:bg-brand-green-light transition-colors cursor-pointer shadow-md">
+                Book Signature Trail <ArrowRight className="w-4 h-4" />
+              </button>
             </div>
           </article>
 
         </div>
-
-        <div className="mt-16 text-center flex justify-center">
-          <Link 
-            href="/tours" 
-            className="inline-flex items-center gap-2 bg-brand-green text-sand px-8 py-4 rounded-full font-bold hover:bg-brand-green-light transition-colors shadow-sm"
-          >
-            View All Our Tours <ArrowRight className="w-5 h-5" />
-          </Link>
-        </div>
       </section>
 
-      {/* Itinerary Section */}
-      <section id="itinerary" className="py-24 px-6 lg:px-12 bg-white w-full">
-        <div className="max-w-4xl mx-auto">
-          {/* Tabs */}
-          <div className="flex flex-wrap gap-4 mb-16 justify-center">
-            <button 
-              onClick={() => setActiveItinerary('cycling')}
-              className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeItinerary === 'cycling' ? 'bg-brand-green text-sand' : 'bg-sand text-brand-green hover:bg-brand-green/10'}`}
-            >
-              Cycling Tour
-            </button>
-            <button 
-              onClick={() => setActiveItinerary('coffee')}
-              className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeItinerary === 'coffee' ? 'bg-brand-green text-sand' : 'bg-sand text-brand-green hover:bg-brand-green/10'}`}
-            >
-              Coffee Plantation
-            </button>
-            <button 
-              onClick={() => setActiveItinerary('cooking')}
-              className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeItinerary === 'cooking' ? 'bg-brand-green text-sand' : 'bg-sand text-brand-green hover:bg-brand-green/10'}`}
-            >
-              Cooking Class
-            </button>
-            <button 
-              onClick={() => setActiveItinerary('dirtbike')}
-              className={`px-6 py-3 rounded-full font-bold text-sm transition-all ${activeItinerary === 'dirtbike' ? 'bg-brand-green text-sand' : 'bg-sand text-brand-green hover:bg-brand-green/10'}`}
-            >
-              Dirt Bike Tour
-            </button>
+      {/* ============================================================= */}
+      {/* HOW IT WORKS — 4-step process */}
+      {/* ============================================================= */}
+      <section className="py-24 px-6 lg:px-12 bg-white w-full">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-brand-accent font-semibold tracking-wide uppercase text-sm mb-4">Simple & easy</p>
+            <h2 className="text-4xl lg:text-5xl font-serif text-brand-green font-bold leading-tight mb-6">
+              How your ATV<br/>adventure works.
+            </h2>
           </div>
 
-          {activeItinerary === 'cycling' && (
-            <div className="flex flex-col md:flex-row gap-16 animate-in fade-in duration-500">
-              <div className="md:w-1/3">
-                <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">A morning on two wheels</p>
-                <h2 className="text-4xl font-serif text-brand-green font-bold leading-tight mb-6">
-                  Follow the<br/>
-                  <span className="italic font-light">Pejeng route.</span>
-                </h2>
-                <p className="text-lg text-brand-green-light">
-                  The morning cycling itinerary, from Ubud pickup to the last sip of coconut water.
-                </p>
-                
-                <div className="mt-12 p-6 bg-sand rounded-2xl flex items-start gap-4">
-                  <Mountain className="w-8 h-8 text-brand-green shrink-0 mt-1" />
-                  <p className="text-brand-green font-medium text-sm leading-relaxed">
-                    Mostly gentle riding<br/>with frequent stops for stories and photos.
-                  </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { step: "01", icon: <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>, title: "Book via WhatsApp", desc: "Message our team with your date, group size, and chosen trail. We'll confirm instantly." },
+              { step: "02", icon: <MapPin className="w-7 h-7" />, title: "Hotel Pickup", desc: "Our driver picks you up from your hotel in Ubud/Bali area and takes you to the ATV base camp." },
+              { step: "03", icon: <Shield className="w-7 h-7" />, title: "Gear Up & Ride", desc: "Get fitted with full safety gear, choose your ATV, receive a briefing, and hit the trails!" },
+              { step: "04", icon: <Star className="w-7 h-7" />, title: "Celebrate", desc: "Return to base, enjoy refreshments, review your photos, and head back with epic memories." },
+            ].map((item) => (
+              <div key={item.step} className="bg-sand rounded-2xl p-8 flex flex-col items-center text-center group hover:shadow-lg transition-shadow">
+                <span className="text-brand-accent font-bold text-sm mb-4">{item.step}</span>
+                <div className="w-16 h-16 bg-brand-green text-sand rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent transition-colors">
+                  {item.icon}
                 </div>
+                <h3 className="text-lg font-bold text-brand-green mb-3">{item.title}</h3>
+                <p className="text-brand-green-light text-sm leading-relaxed">{item.desc}</p>
               </div>
-
-              <div className="md:w-2/3 relative py-4">
-                <div className="space-y-12">
-                  {[
-                    { time: "08:30 AM", title: "Pickup & Briefing", desc: "Driver picks you up from your Ubud hotel. Arrive at our Pejeng starting base for bike fitting and a safety briefing." },
-                    { time: "09:00 AM", title: "Pejeng Local Market", desc: "Walk your bikes through the bustling traditional market. Learn about local spices, exotic fruits, and daily Balinese life." },
-                    { time: "09:45 AM", title: "Village & Temple Cruising", desc: "Cycle through quiet neighborhood paths. Pass ancient temples and stop briefly at a traditional family compound to understand Balinese architecture." },
-                    { time: "10:45 AM", title: "Subak Rice Terraces", desc: "The trail opens up to stunning, endless rice paddies. Cycle right on the field edges while learning about the traditional Subak irrigation system." },
-                    { time: "12:00 PM", title: "Fresh Coconut & Wind Down", desc: "Finish the ride and celebrate with a freshly opened young coconut before heading back." },
-                    { time: "12:30 PM", title: "Hotel Drop-off", desc: "Arrive back at your accommodation in Ubud." },
-                  ].map((step, idx) => (
-                    <div key={idx} className="relative pl-10 timeline-row">
-                      <div className="timeline-dot"></div>
-                      <div className="timeline-line"></div>
-                      <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
-                        <span className="text-brand-green-light font-semibold text-sm w-20 shrink-0">{step.time}</span>
-                        <h3 className="text-xl font-bold text-brand-green">{step.title}</h3>
-                      </div>
-                      <p className="text-brand-green-light sm:pl-26 leading-relaxed">
-                        {step.desc}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
-
-          {activeItinerary === 'coffee' && (
-            <div className="flex flex-col md:flex-row gap-16 animate-in fade-in duration-500">
-              <div className="md:w-1/3">
-                <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">A sip of tradition</p>
-                <h2 className="text-4xl font-serif text-brand-green font-bold leading-tight mb-6">
-                  Taste the<br/>
-                  <span className="italic font-light">Luwak magic.</span>
-                </h2>
-                <p className="text-lg text-brand-green-light">
-                  A relaxing stroll through lush plantations followed by authentic roasting and tasting.
-                </p>
-                
-                <div className="mt-12 p-6 bg-sand rounded-2xl flex items-start gap-4">
-                  <Coffee className="w-8 h-8 text-brand-green shrink-0 mt-1" />
-                  <p className="text-brand-green font-medium text-sm leading-relaxed">
-                    Learn the intricate process<br/>of world-famous Luwak Coffee.
-                  </p>
-                </div>
-              </div>
-
-              <div className="md:w-2/3 relative py-4">
-                <div className="space-y-12">
-                  {[
-                    { time: "10:00 AM", title: "Arrival & Welcome", desc: "Arrive at the beautiful coffee plantation. Enjoy the fresh air and a quick introduction to the estate." },
-                    { time: "10:15 AM", title: "Spice & Coffee Walk", desc: "Take a guided walk through the gardens. See raw coffee beans, cacao, vanilla, and other local spices growing." },
-                    { time: "10:45 AM", title: "Traditional Roasting", desc: "Witness the traditional Balinese method of roasting coffee beans over a wood fire and try grinding them yourself." },
-                    { time: "11:15 AM", title: "Coffee & Tea Tasting", desc: "Sit back and enjoy a flight of various local coffees and herbal teas overlooking the jungle valley." },
-                    { time: "12:00 PM", title: "Luwak Coffee Experience", desc: "Sip on a cup of authentic Luwak coffee (optional) and explore the plantation shop before heading back." },
-                  ].map((step, idx) => (
-                    <div key={idx} className="relative pl-10 timeline-row">
-                      <div className="timeline-dot"></div>
-                      <div className="timeline-line"></div>
-                      <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
-                        <span className="text-brand-green-light font-semibold text-sm w-20 shrink-0">{step.time}</span>
-                        <h3 className="text-xl font-bold text-brand-green">{step.title}</h3>
-                      </div>
-                      <p className="text-brand-green-light sm:pl-26 leading-relaxed">
-                        {step.desc}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
-
-          {activeItinerary === 'cooking' && (
-            <div className="flex flex-col md:flex-row gap-16 animate-in fade-in duration-500">
-              <div className="md:w-1/3">
-                <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">Hands-on culinary</p>
-                <h2 className="text-4xl font-serif text-brand-green font-bold leading-tight mb-6">
-                  Cook like<br/>
-                  <span className="italic font-light">a Balinese.</span>
-                </h2>
-                <p className="text-lg text-brand-green-light">
-                  From preparing fresh spices to feasting on your own traditional dinner.
-                </p>
-                
-                <div className="mt-12 p-6 bg-sand rounded-2xl flex items-start gap-4">
-                  <CookingPot className="w-8 h-8 text-brand-green shrink-0 mt-1" />
-                  <p className="text-brand-green font-medium text-sm leading-relaxed">
-                    Take the secret recipes<br/>home to your own kitchen.
-                  </p>
-                </div>
-              </div>
-
-              <div className="md:w-2/3 relative py-4">
-                <div className="space-y-12">
-                  {[
-                    { time: "05:30 PM", title: "Welcome Drink & Setup", desc: "Arrive at our traditional outdoor kitchen. Enjoy a welcome drink while putting on your apron." },
-                    { time: "05:45 PM", title: "Spice Paste Prep", desc: "Learn about the essential Balinese ingredients. Chop, grind, and blend the famous 'Base Genep' spice paste." },
-                    { time: "06:30 PM", title: "Cooking Session", desc: "Get hands-on preparing traditional dishes like Sate Lilit, Chicken Curry, and Lawar under expert guidance." },
-                    { time: "07:30 PM", title: "Balinese Dessert", desc: "Prepare a sweet traditional dessert, like Dadar Gulung (pandan crepes with palm sugar)." },
-                    { time: "08:00 PM", title: "Feast Together", desc: "Sit down with your host and enjoy the delicious dinner you just cooked in a beautiful setting." },
-                    { time: "08:30 PM", title: "End of Experience", desc: "Receive your digital recipe book before heading back to your hotel." },
-                  ].map((step, idx) => (
-                    <div key={idx} className="relative pl-10 timeline-row">
-                      <div className="timeline-dot"></div>
-                      <div className="timeline-line"></div>
-                      <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
-                        <span className="text-brand-green-light font-semibold text-sm w-20 shrink-0">{step.time}</span>
-                        <h3 className="text-xl font-bold text-brand-green">{step.title}</h3>
-                      </div>
-                      <p className="text-brand-green-light sm:pl-26 leading-relaxed">
-                        {step.desc}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
-
-          {activeItinerary === 'dirtbike' && (
-            <div className="flex flex-col md:flex-row gap-16 animate-in fade-in duration-500">
-              <div className="md:w-1/3">
-                <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">Unleash the adventure</p>
-                <h2 className="text-4xl font-serif text-brand-green font-bold leading-tight mb-6">
-                  Conquer the<br/>
-                  <span className="italic font-light">volcanic trails.</span>
-                </h2>
-                <p className="text-lg text-brand-green-light">
-                  A thrilling ride through Bali's untouched nature, forests, and black sand beaches.
-                </p>
-                
-                <div className="mt-12 p-6 bg-sand rounded-2xl flex items-start gap-4">
-                  <Mountain className="w-8 h-8 text-brand-green shrink-0 mt-1" />
-                  <p className="text-brand-green font-medium text-sm leading-relaxed">
-                    Designed for all levels,<br/>from beginners to seasoned pros.
-                  </p>
-                </div>
-              </div>
-
-              <div className="md:w-2/3 relative py-4">
-                <div className="space-y-12">
-                  {[
-                    { time: "08:00 AM", title: "Hotel Pickup", desc: "Our driver will pick you up from your hotel in Bali and take you to our base camp in Kintamani." },
-                    { time: "09:30 AM", title: "Gear & Briefing", desc: "Arrive at the base. Get fitted with top-tier safety gear, choose your bike, and receive a comprehensive safety briefing." },
-                    { time: "10:00 AM", title: "Start Riding", desc: "Hit the trails! Ride through pine forests, tackle the volcanic black sand, and navigate exciting terrain tailored to your skill level." },
-                    { time: "12:00 PM", title: "Lunch Break", desc: "Stop for a delicious, hearty lunch in the middle of nature to recharge your energy." },
-                    { time: "01:00 PM", title: "Afternoon Ride", desc: "Continue your adventure, conquering new paths and enjoying the spectacular views of Mount Batur." },
-                    { time: "03:00 PM", title: "Return & Drop-off", desc: "Return to base camp, return your gear, review your photos, and relax on the drive back to your hotel." },
-                  ].map((step, idx) => (
-                    <div key={idx} className="relative pl-10 timeline-row">
-                      <div className="timeline-dot"></div>
-                      <div className="timeline-line"></div>
-                      <div className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 mb-2">
-                        <span className="text-brand-green-light font-semibold text-sm w-20 shrink-0">{step.time}</span>
-                        <h3 className="text-xl font-bold text-brand-green">{step.title}</h3>
-                      </div>
-                      <p className="text-brand-green-light sm:pl-26 leading-relaxed">
-                        {step.desc}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
-
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-24 px-6 lg:px-12 max-w-5xl mx-auto w-full">
-        <div className="text-center mb-20">
-          <span className="text-6xl text-brand-green font-serif leading-none block mb-4 opacity-40">"</span>
-          <blockquote className="text-2xl lg:text-3xl font-serif text-brand-green leading-relaxed mb-6">
-            We show you the lanes we use, the market we shop, and the food we cook at home.
-          </blockquote>
-          <p className="text-brand-green-light font-medium uppercase tracking-wide text-sm">
-            — Your Sekar Bali Activity team
+      {/* ============================================================= */}
+      {/* GALLERY — ATV Action Mosaic */}
+      {/* ============================================================= */}
+      <section className="py-24 px-6 lg:px-12 bg-sand w-full">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-brand-accent font-semibold tracking-wide uppercase text-sm mb-4">The experience</p>
+            <h2 className="text-4xl lg:text-5xl font-serif text-brand-green font-bold leading-tight mb-6">
+              Your ride awaits.
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px] lg:auto-rows-[250px]">
+            <div className="col-span-2 row-span-2 rounded-3xl overflow-hidden relative group">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=1000&q=80" alt="ATV riding through jungle" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm text-brand-green px-4 py-2 rounded-full text-sm font-bold shadow-md">
+                🌿 Jungle Trail
+              </div>
+            </div>
+            <div className="rounded-3xl overflow-hidden group">
+              <img src="https://images.unsplash.com/photo-1570459027562-4a916cc6113f?auto=format&fit=crop&w=600&q=80" alt="Volcanic landscape ATV" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div className="rounded-3xl overflow-hidden group">
+              <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Bali temple" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div className="rounded-3xl overflow-hidden relative group">
+              <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=600&q=80" alt="Rice terrace views" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm text-brand-green px-4 py-2 rounded-full text-sm font-bold shadow-md">
+                🌾 Rice Terraces
+              </div>
+            </div>
+            <div className="rounded-3xl overflow-hidden relative group">
+              <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=600&q=80" alt="Adventure celebration" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm text-brand-green px-4 py-2 rounded-full text-sm font-bold shadow-md">
+                🌋 Volcano Route
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================= */}
+      {/* SAFETY & EQUIPMENT */}
+      {/* ============================================================= */}
+      <section className="py-24 px-6 lg:px-12 bg-brand-green text-sand w-full section-divider-wave">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <p className="text-brand-accent-light font-semibold tracking-wide uppercase text-sm mb-4">Your safety first</p>
+            <h2 className="text-4xl lg:text-5xl font-serif font-bold leading-tight mb-6">
+              Ride with<br/>
+              <span className="italic font-light text-brand-accent-light">total confidence.</span>
+            </h2>
+            <p className="text-lg opacity-80 max-w-2xl mx-auto">
+              Every ATV is inspected daily. Every rider gets top-tier safety gear. Every tour has an expert guide.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { icon: <Shield className="w-8 h-8" />, title: "Full Safety Gear", desc: "Helmets, goggles, gloves, and boots included with every ride — all sanitized and maintained." },
+              { icon: <Zap className="w-8 h-8" />, title: "Maintained ATVs", desc: "Our fleet is serviced daily and replaced regularly. Automatic and manual options available." },
+              { icon: <Users className="w-8 h-8" />, title: "Expert Guides", desc: "Every group has a dedicated local guide who knows every turn, river, and the best photo spots." },
+              { icon: <Droplets className="w-8 h-8" />, title: "Shower & Change", desc: "Clean up at our base camp after the ride. Towels, showers, and changing rooms provided." },
+              { icon: <Heart className="w-8 h-8" />, title: "Insurance Included", desc: "All riders are covered by our comprehensive adventure insurance for total peace of mind." },
+              { icon: <Star className="w-8 h-8" />, title: "Photo Package", desc: "Professional action shots along the trail captured by our photographer. Available digitally." },
+            ].map((item, idx) => (
+              <div key={idx} className="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/15 transition-colors">
+                <div className="text-brand-accent-light mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="text-sm opacity-80 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================= */}
+      {/* OTHER EXPERIENCES — Secondary tours */}
+      {/* ============================================================= */}
+      <section className="py-24 px-6 lg:px-12 max-w-7xl mx-auto w-full">
+        <div className="mb-16 text-center">
+          <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">Beyond the ATV</p>
+          <h2 className="text-4xl lg:text-5xl font-serif text-brand-green font-bold leading-tight mb-6">
+            More ways to<br/>experience Bali.
+          </h2>
+          <p className="text-lg text-brand-green-light max-w-2xl mx-auto">
+            Combine your ATV adventure with our other village-led experiences for the ultimate Bali day.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div>
-            <span className="text-brand-green opacity-50 font-bold text-xl mb-4 block">01</span>
-            <h3 className="text-xl font-bold text-brand-green mb-3">Local by design</h3>
-            <p className="text-brand-green-light leading-relaxed">
-              Your visit directly supports village hosts, drivers, farmers, and family-run spaces in our community.
-            </p>
-          </div>
-          <div>
-            <span className="text-brand-green opacity-50 font-bold text-xl mb-4 block">02</span>
-            <h3 className="text-xl font-bold text-brand-green mb-3">Comfortably small</h3>
-            <p className="text-brand-green-light leading-relaxed">
-              Unhurried groups mean more conversation, safer riding, and room to notice the beautiful details.
-            </p>
-          </div>
-          <div>
-            <span className="text-brand-green opacity-50 font-bold text-xl mb-4 block">03</span>
-            <h3 className="text-xl font-bold text-brand-green mb-3">Ready for you</h3>
-            <p className="text-brand-green-light leading-relaxed">
-              Bikes, helmets, tastings, ingredients, and Ubud-area pickup are all arranged in advance. Just arrive ready.
-            </p>
-          </div>
-        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Cycling */}
+          <article className="bg-white rounded-2xl overflow-hidden shadow-md group">
+            <div className="relative h-48 overflow-hidden">
+              <img src="/images/cycling/rice-field-bikes.jpg" alt="Village Cycling Tour" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute bottom-0 right-4 translate-y-1/2 w-10 h-10 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-md">
+                <Bike className="w-5 h-5" />
+              </div>
+            </div>
+            <div className="p-6 pt-8">
+              <h3 className="text-lg font-bold text-brand-green mb-2">Village Cycling Tour</h3>
+              <p className="text-brand-green-light text-sm mb-4">Ride through rice terraces and ancient temples at village pace.</p>
+              <div className="flex items-center justify-between">
+                <span className="font-bold text-brand-green">IDR 400,000</span>
+                <Link href="/tours" className="text-brand-accent font-bold text-sm hover:underline flex items-center gap-1">
+                  View <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </article>
 
-        <div className="mt-16 text-center flex justify-center">
-          <Link 
-            href="/about" 
-            className="inline-flex items-center gap-2 border-2 border-brand-green text-brand-green px-8 py-4 rounded-full font-bold hover:bg-brand-green hover:text-sand transition-colors shadow-sm"
-          >
-            Read our family story <ArrowRight className="w-5 h-5" />
-          </Link>
+          {/* Coffee */}
+          <article className="bg-white rounded-2xl overflow-hidden shadow-md group">
+            <div className="relative h-48 overflow-hidden">
+              <img src="/coffee.jpg" alt="Luwak Coffee Plantation" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute bottom-0 right-4 translate-y-1/2 w-10 h-10 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-md">
+                <Coffee className="w-5 h-5" />
+              </div>
+            </div>
+            <div className="p-6 pt-8">
+              <h3 className="text-lg font-bold text-brand-green mb-2">Coffee Plantation Experience</h3>
+              <p className="text-brand-green-light text-sm mb-4">Discover the world-famous Luwak coffee process and taste.</p>
+              <div className="flex items-center justify-between">
+                <span className="font-bold text-brand-green">IDR 400,000</span>
+                <Link href="/tours" className="text-brand-accent font-bold text-sm hover:underline flex items-center gap-1">
+                  View <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </article>
+
+          {/* Cooking */}
+          <article className="bg-white rounded-2xl overflow-hidden shadow-md group">
+            <div className="relative h-48 overflow-hidden">
+              <img src="/images/cooking/pancake-toss.jpg" alt="Cooking Class" className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute bottom-0 right-4 translate-y-1/2 w-10 h-10 bg-brand-green text-sand rounded-full flex items-center justify-center shadow-md">
+                <CookingPot className="w-5 h-5" />
+              </div>
+            </div>
+            <div className="p-6 pt-8">
+              <h3 className="text-lg font-bold text-brand-green mb-2">Balinese Cooking Class</h3>
+              <p className="text-brand-green-light text-sm mb-4">Hands-on traditional dinner cooking with local family hosts.</p>
+              <div className="flex items-center justify-between">
+                <span className="font-bold text-brand-green">IDR 400,000</span>
+                <Link href="/tours" className="text-brand-accent font-bold text-sm hover:underline flex items-center gap-1">
+                  View <ChevronRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
+      {/* ============================================================= */}
       {/* FAQ Section */}
+      {/* ============================================================= */}
       <FAQSection />
 
-      {/* Contact & Booking Section */}
+      {/* ============================================================= */}
+      {/* CTA / CONTACT — Bold booking section */}
+      {/* ============================================================= */}
       <section id="contact" className="py-24 px-6 lg:px-12 bg-brand-green text-sand w-full">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4 opacity-80">Start the conversation</p>
-          <h2 className="text-4xl lg:text-5xl font-serif font-bold leading-tight mb-8">
-            Save your place<br/>in Pejeng.
+          <p className="text-brand-accent-light font-semibold tracking-wide uppercase text-sm mb-4 opacity-80">Ready to ride?</p>
+          <h2 className="text-4xl lg:text-6xl font-serif font-bold leading-tight mb-8">
+            Book your<br/>ATV adventure.
           </h2>
           <p className="text-lg opacity-90 max-w-xl mx-auto mb-12">
-            Click the button below to reach out directly to our local team on WhatsApp. Let us know your preferred date and group details, and we'll confirm availability immediately.
+            Click below to reach our team on WhatsApp. Tell us your date, group size, and chosen trail — we&apos;ll confirm your spot immediately.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link 
               href="https://wa.me/6281775723663" 
               target="_blank"
-              className="inline-flex items-center justify-center gap-3 bg-sand text-brand-green px-10 py-5 rounded-full text-xl font-bold hover:scale-105 hover:bg-white transition-all shadow-xl w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-3 bg-brand-accent text-white px-10 py-5 rounded-full text-xl font-bold hover:scale-105 hover:bg-brand-accent-light transition-all shadow-xl w-full sm:w-auto"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               Book via WhatsApp
@@ -647,8 +563,10 @@ export default function Home() {
             </Link>
           </div>
           
-          <div className="mt-8 flex items-center justify-center gap-2 text-brand-green-light font-medium">
-            <Check className="w-5 h-5" /> No payment required to inquire
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-6 text-brand-green-light font-medium text-sm">
+            <span className="flex items-center gap-2"><Check className="w-5 h-5 text-brand-accent-light" /> No payment to inquire</span>
+            <span className="flex items-center gap-2"><Check className="w-5 h-5 text-brand-accent-light" /> Free cancellation</span>
+            <span className="flex items-center gap-2"><Check className="w-5 h-5 text-brand-accent-light" /> Hotel pickup included</span>
           </div>
         </div>
       </section>

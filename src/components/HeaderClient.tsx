@@ -140,10 +140,11 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
 
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-600 dark:text-gray-300">
-            <Link href="/tours" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Tours</Link>
-            <Link href="/transfers" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Transfers</Link>
-            <Link href="/about" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">About Us</Link>
-            <Link href="/contact" className="hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Contact</Link>
+            <Link href="/#atv-packages" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-bold">ATV Tours</Link>
+            <Link href="/tours" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">All Tours</Link>
+            <Link href="/transfers" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Transfers</Link>
+            <Link href="/about" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About Us</Link>
+            <Link href="/contact" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Contact</Link>
           </nav>
         </div>
 
@@ -313,37 +314,44 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
           {/* Mobile Nav Links */}
           <div className="flex flex-col gap-4 text-base font-semibold text-gray-700 dark:text-gray-200">
             <Link 
+              href="/#atv-packages" 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="hover:text-amber-600 dark:hover:text-amber-400 py-1 font-bold"
+            >
+              🏍️ ATV Tours
+            </Link>
+            <Link 
               href="/tours" 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-emerald-600 dark:hover:text-emerald-400 py-1"
+              className="hover:text-amber-600 dark:hover:text-amber-400 py-1"
             >
-              Tours
+              All Tours
             </Link>
             <Link 
               href="/transfers" 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-emerald-600 dark:hover:text-emerald-400 py-1"
+              className="hover:text-amber-600 dark:hover:text-amber-400 py-1"
             >
               Transfers
             </Link>
             <Link 
               href="/about" 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-emerald-600 dark:hover:text-emerald-400 py-1"
+              className="hover:text-amber-600 dark:hover:text-amber-400 py-1"
             >
               About Us
             </Link>
             <Link 
               href="/contact" 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-emerald-600 dark:hover:text-emerald-400 py-1"
+              className="hover:text-amber-600 dark:hover:text-amber-400 py-1"
             >
               Contact
             </Link>
             <Link 
               href="/admin" 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-emerald-600 dark:hover:text-emerald-400 py-1 border-t border-gray-100 dark:border-gray-900 pt-4"
+              className="hover:text-amber-600 dark:hover:text-amber-400 py-1 border-t border-gray-100 dark:border-gray-900 pt-4"
             >
               Admin Panel
             </Link>

@@ -4,28 +4,28 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
-    question: "What types of experiences does Sekar Bali Activity offer?",
-    answer: "We offer three intimate, village-led experiences in the historic Pejeng district (near Ubud, Bali): a scenic Village & Terrace Cycling Tour, an authentic Luwak Coffee Plantation Experience (Umah Kuno), and a hands-on Traditional Balinese Dinner Cooking Class."
+    question: "What ATV experience levels do you cater to?",
+    answer: "We welcome all skill levels — from complete beginners to experienced riders. Our professional guides will provide a thorough safety briefing and riding tutorial before every tour. Beginners start on easier terrain and progress at their own pace, while experienced riders can tackle more challenging routes."
   },
   {
-    question: "Where do the tours take place, and is pickup included?",
-    answer: "All our experiences take place in the peaceful village of Pejeng, away from the typical tourist crowds. We offer convenient pickup services in the Ubud area so you can relax and enjoy the day."
+    question: "Is safety gear provided?",
+    answer: "Absolutely. Full safety gear is included with every ATV tour — helmets, goggles, gloves, and boots. Our ATVs are regularly maintained and inspected before each ride. We also have a dedicated safety marshal on every tour to ensure a safe and thrilling experience."
   },
   {
-    question: "Are your tours suitable for large groups?",
-    answer: "We deliberately keep our groups comfortably small. This ensures a safe, unhurried pace, allowing for more personal conversations with our local hosts and a deeper connection to the Balinese culture around you."
+    question: "What should I wear for an ATV ride?",
+    answer: "We recommend wearing comfortable clothes that you don't mind getting muddy — long pants, a t-shirt, and closed-toe shoes or sandals with a strap. We provide boots, helmets, and goggles. Bring sunscreen and a change of clothes if you prefer."
   },
   {
-    question: "How do I book a tour, and do I need to pay in advance?",
-    answer: "Booking is incredibly simple and direct! You can click the WhatsApp button on our website to chat with our local team and check availability. No payment is required just to inquire or reserve your spot."
+    question: "Can children ride ATVs?",
+    answer: "Children aged 7–12 can ride as a tandem passenger with a parent/guardian on a single ATV. Children aged 12 and above can operate their own ATV on our beginner-friendly trails under close supervision. All children must wear full safety gear."
   },
   {
-    question: "How much do the Bali tours cost?",
-    answer: "Our authentic experiences start at a highly accessible price point to support the local village economy: Cycling Tour & Cooking Class are IDR 400,000 per adult (IDR 350,000 per child), and the Luwak Coffee Experience is IDR 400,000 per person (requires a minimum booking of 3 people)."
+    question: "What trail routes are available?",
+    answer: "We offer three exciting trail routes: the Jungle Trail (2 hours, beginner-friendly through tropical forests and rivers), the Volcano Route (3 hours, intermediate with stunning views of Mount Batur), and the Rice Terrace Trail (4 hours, our signature full experience through Bali's iconic landscapes)."
   },
   {
-    question: "How long do the activities last?",
-    answer: "Our activities are designed to give you a real morning, afternoon, or evening without feeling rushed. The maximum tour length is 4 hours (for example, the cycling tour runs from 8:30 AM to 12:30 PM), while the coffee tasting is a shorter, relaxing 1.5-hour session."
+    question: "How do I book an ATV tour?",
+    answer: "Booking is easy! Click the WhatsApp button on our website to message our team directly. Let us know your preferred date, group size, and chosen trail, and we'll confirm availability right away. No upfront payment is required to reserve your spot."
   }
 ];
 
@@ -56,10 +56,13 @@ export function FAQSection() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
       <div className="text-center mb-16">
-        <p className="text-brand-green-light font-semibold tracking-wide uppercase text-sm mb-4">Got questions?</p>
+        <p className="text-brand-accent font-semibold tracking-wide uppercase text-sm mb-4">Got questions?</p>
         <h2 className="text-4xl lg:text-5xl font-serif text-brand-green font-bold leading-tight mb-6">
           Frequently Asked Questions
         </h2>
+        <p className="text-brand-green-light text-lg max-w-2xl mx-auto">
+          Everything you need to know before your ATV adventure in Bali.
+        </p>
       </div>
 
       <div className="space-y-4">
@@ -70,11 +73,11 @@ export function FAQSection() {
           >
             <button
               onClick={() => toggle(index)}
-              className="w-full px-8 py-6 flex items-center justify-between text-left text-brand-green focus:outline-none"
+              className="w-full px-8 py-6 flex items-center justify-between text-left text-brand-green focus:outline-none cursor-pointer"
             >
               <span className="font-bold text-lg pr-8">{faq.question}</span>
               <ChevronDown 
-                className={`w-6 h-6 text-brand-green-light shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`} 
+                className={`w-6 h-6 text-brand-accent shrink-0 transition-transform duration-300 ${openIndex === index ? 'rotate-180' : ''}`} 
               />
             </button>
             <div 

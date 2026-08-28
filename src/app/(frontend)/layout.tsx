@@ -3,7 +3,7 @@ import { Inter } from "next/font/google"
 import { Suspense } from "react"
 import "../globals.css"
 import Link from "next/link"
-import { Menu, Leaf } from "lucide-react"
+import { Menu, Leaf, Mountain } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import HeaderNav from "@/components/HeaderNav"
 
@@ -14,8 +14,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.sekarbaliactivity.com'),
-  title: "Sekar Bali Activity | Premium Bali Tours",
-  description: "Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.",
+  title: "Sekar Bali Activity | Bali ATV Adventure Tours",
+  description: "Conquer Bali's wild trails on a thrilling ATV quad bike adventure! Ride through jungles, volcanoes, rice terraces & rivers. All skill levels welcome. Book your Bali ATV tour today.",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Sekar Bali Activity | Authentic Bali Tours in Pejeng',
-    description: 'Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.',
+    title: 'Sekar Bali Activity | Bali ATV Quad Bike Adventures',
+    description: 'Conquer Bali\'s wild trails on a thrilling ATV quad bike adventure! Ride through jungles, volcanoes, rice terraces & rivers. All skill levels welcome.',
     url: 'https://www.sekarbaliactivity.com',
     siteName: 'Sekar Bali Activity',
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         url: '/images/cycling/rice-field-bikes.jpg',
         width: 1200,
         height: 630,
-        alt: 'Sekar Bali Activity Village Tours',
+        alt: 'Bali ATV Adventure Tour through jungle trails',
       },
     ],
     locale: 'en_US',
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sekar Bali Activity | Authentic Bali Tours',
-    description: 'Discover extraordinary village-led tours in Pejeng, Bali. Join our small-group cycling tours, authentic cooking classes, and Luwak coffee plantation experiences.',
+    title: 'Sekar Bali Activity | Bali ATV Adventures',
+    description: 'Conquer Bali\'s wild trails on a thrilling ATV quad bike adventure! All skill levels. Book now.',
     images: ['/images/cycling/rice-field-bikes.jpg'],
   },
 }
@@ -55,7 +55,7 @@ const schemaData = [
     "@id": "https://www.sekarbaliactivity.com/#organization",
     "name": "Sekar Bali Activity",
     "legalName": "Sekar Bali Activity",
-    "description": "Authentic village-led tours, cycling, and cooking classes in Pejeng, Ubud, Bali.",
+    "description": "Bali's premier ATV quad bike adventure tours through jungles, volcanoes, and rice terraces. Plus village cycling, cooking classes, and coffee plantation experiences.",
     "url": "https://www.sekarbaliactivity.com",
     "telephone": "+6281775723663",
     "email": "sekarprivatebaliactivity@gmail.com",
@@ -93,7 +93,7 @@ const schemaData = [
     "@id": "https://www.sekarbaliactivity.com/#website",
     "url": "https://www.sekarbaliactivity.com",
     "name": "Sekar Bali Activity",
-    "description": "Authentic Pejeng village tours, cycling, and cooking classes in Bali.",
+    "description": "Bali ATV quad bike adventures, village cycling tours, cooking classes, and coffee plantation experiences.",
     "publisher": {
       "@id": "https://www.sekarbaliactivity.com/#organization"
     },
@@ -106,15 +106,15 @@ const schemaData = [
   {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    "name": "Pejeng Village & Terrace Cycling Tour",
-    "description": "Explore the real Bali on a cycling tour through historic Pejeng, passing ancient temples, markets, and Subak rice terraces.",
+    "name": "Bali ATV Jungle Trail Adventure",
+    "description": "Ride through tropical jungles, cross rivers, and explore hidden waterfalls on a powerful ATV quad bike. Suitable for beginners and experienced riders.",
     "provider": {
       "@id": "https://www.sekarbaliactivity.com/#organization"
     },
-    "touristType": ["Couples", "Families", "Small groups"],
+    "touristType": ["Couples", "Families", "Adventure seekers", "Small groups"],
     "offers": {
       "@type": "Offer",
-      "price": "400000",
+      "price": "850000",
       "priceCurrency": "IDR",
       "availability": "https://schema.org/InStock"
     }
@@ -122,15 +122,15 @@ const schemaData = [
   {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    "name": "Luwak Coffee Plantation Experience",
-    "description": "Discover the secrets behind Bali's world-famous coffee at Umah Kuno. Jungle walk, traditional roasting, and coffee tasting.",
+    "name": "Bali ATV Volcano Route",
+    "description": "An intermediate ATV adventure through volcanic black sand, pine forests, and stunning Mount Batur views.",
     "provider": {
       "@id": "https://www.sekarbaliactivity.com/#organization"
     },
-    "touristType": ["Couples", "Small groups"],
+    "touristType": ["Couples", "Adventure seekers"],
     "offers": {
       "@type": "Offer",
-      "price": "400000",
+      "price": "1200000",
       "priceCurrency": "IDR",
       "availability": "https://schema.org/InStock"
     }
@@ -138,15 +138,15 @@ const schemaData = [
   {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    "name": "Traditional Balinese Dinner Cooking Class",
-    "description": "Immerse yourself in the flavors of Indonesia in our hands-on cooking class in a traditional outdoor kitchen.",
+    "name": "Bali ATV Rice Terrace Signature Trail",
+    "description": "Our signature 4-hour ATV experience through Bali's iconic rice terraces, villages, jungles, and rivers.",
     "provider": {
       "@id": "https://www.sekarbaliactivity.com/#organization"
     },
-    "touristType": ["Couples", "Families"],
+    "touristType": ["Couples", "Families", "Adventure seekers"],
     "offers": {
       "@type": "Offer",
-      "price": "400000",
+      "price": "1500000",
       "priceCurrency": "IDR",
       "availability": "https://schema.org/InStock"
     }
@@ -184,22 +184,23 @@ export default function RootLayout({
           </CurrencyProvider>
         </div>
 
-        {/* Minimal Footer */}
+        {/* Footer — ATV Focused */}
         <footer className="border-t border-brand-green/10 bg-brand-green text-sand pt-16 pb-16 transition-colors duration-200">
           <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center gap-6 text-center">
             <Link href="#top" className="flex items-center gap-2 font-bold text-2xl opacity-90 hover:opacity-100 transition-opacity">
-              <Leaf className="w-6 h-6" />
+              <Mountain className="w-6 h-6" />
               <span>{siteName}</span>
             </Link>
             <p className="text-sm opacity-80">
-              Village paths · Rice terraces · Shared tables
+              ATV Adventures · Jungle Trails · Volcano Routes · Rice Terraces
             </p>
             <p className="text-sm opacity-80 mt-4 flex flex-wrap gap-6 justify-center">
-              <Link href="/tours" className="hover:text-brand-green-light transition-colors">Tours & Experiences</Link>
-              <Link href="/transfers" className="hover:text-brand-green-light transition-colors">Airport Transfers</Link>
-              <Link href="/blog" className="hover:text-brand-green-light transition-colors">Blog</Link>
-              <Link href="/about" className="hover:text-brand-green-light transition-colors">About Us</Link>
-              <Link href="/contact" className="hover:text-brand-green-light transition-colors">Contact</Link>
+              <Link href="/#atv-packages" className="hover:text-brand-accent-light transition-colors font-semibold">ATV Tours</Link>
+              <Link href="/tours" className="hover:text-brand-accent-light transition-colors">All Tours</Link>
+              <Link href="/transfers" className="hover:text-brand-accent-light transition-colors">Airport Transfers</Link>
+              <Link href="/blog" className="hover:text-brand-accent-light transition-colors">Blog</Link>
+              <Link href="/about" className="hover:text-brand-accent-light transition-colors">About Us</Link>
+              <Link href="/contact" className="hover:text-brand-accent-light transition-colors">Contact</Link>
             </p>
             <p className="text-xs opacity-60 mt-4">
               Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-brand-green-light/30 underline-offset-4">Tumang Bali Class</a>

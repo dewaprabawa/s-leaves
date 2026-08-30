@@ -5,15 +5,15 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     question: "What adventure activities do you offer?",
-    answer: "We offer four thrilling adventure packages: Single ATV Ride (1 pax), Tandem ATV Ride (2 pax), Whitewater Rafting, and Canyon Tubing. We also offer village cycling tours and coffee plantation experiences."
+    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Village Cycling Tour (promo from IDR 888,000 to IDR 650,000 with lunch or breakfast included)."
   },
   {
     question: "Is hotel pickup included in the price?",
     answer: "Yes! All our adventure packages include free hotel pickup and drop-off within the Ubud and surrounding areas. For pickups further away (e.g. Seminyak, Kuta, Canggu), a small surcharge applies."
   },
   {
-    question: "Do I need experience to ride an ATV or go rafting?",
-    answer: "No experience necessary! Our expert guides provide a thorough safety briefing before every activity. ATVs are easy to operate, and the rafting route is suitable for beginners (Class II-III rapids). All safety equipment is provided."
+    question: "Do I need experience to ride an ATV, go rafting, or cycle?",
+    answer: "No experience necessary! Our expert guides provide a thorough safety briefing before every activity. ATVs are easy to operate, the rafting route is suitable for beginners (Class II-III rapids), and our cycling tour follows gentle village trails. All safety equipment is provided."
   },
   {
     question: "How do I book, and do I need to pay upfront?",

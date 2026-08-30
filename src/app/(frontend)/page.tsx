@@ -3,16 +3,19 @@ import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FAQSection } from '@/components/FAQSection'
+import { BookingPopup, type TourConfig } from '@/components/BookingPopup'
 import {
   ArrowRight, MapPin, Users, Check, Clock3, Shield,
   Star, ChevronLeft, ChevronRight, Waves,
   Bike, Compass, Zap
 } from 'lucide-react'
-import { CONTACT_EMAIL, CONTACT_WHATSAPP_URL } from '@/lib/contact'
+import { CONTACT_EMAIL } from '@/lib/contact'
 
 /** Tiny LQIP for the hero — keeps LCP fast while the optimized image loads */
 const HERO_BLUR_DATA_URL =
   'data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBAv/EACIQAAICAgEEAwEAAAAAAAAAAAECAxEAEiEEMUFhBRMigf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwCL42dFV2mNDlmPm/H9yfqXjmEv12Qw2J93mdK0UV7saq+11iYpM7aPuzc2V1v1mRjjp5qDLNsEZOPzyQTxkpmdWYRjZQoJOvYducYyi//Z'
+
+const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
 /* ─── Adventure Data ─── */
 const adventures = [
@@ -22,12 +25,15 @@ const adventures = [
     tagline: "Solo jungle thrill",
     pax: "1 Pax",
     price: 650000,
+    childPrice: 550000,
     image: "/images/adventures/atv-adventure.jpg",
     description: "Looking for a fresh Bali adventure? Race solo on a powerful quad bike through jungle trails, muddy tracks, and river crossings — then add optional river tubing on the Wos River for a full day of sensation and joy.",
     highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Zap,
     href: "/tours/bali-atv-adventure",
+    minPax: 1,
+    times: DEFAULT_TIMES,
   },
   {
     id: "tandem-atv",
@@ -35,12 +41,15 @@ const adventures = [
     tagline: "Share the adventure",
     pax: "2 Pax",
     price: 859000,
+    childPrice: null as number | null,
     image: "/images/adventures/atv-adventure.jpg",
     description: "Share a complete Bali ATV experience with a partner. Tackle adrenaline-pumping jungle trails together, then combine with Wos River tubing packages for double the excitement.",
     highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Users,
     href: "/tours/bali-atv-adventure",
+    minPax: 2,
+    times: DEFAULT_TIMES,
   },
   {
     id: "rafting",
@@ -48,11 +57,14 @@ const adventures = [
     tagline: "Ride the rapids",
     pax: "Per Person",
     price: 400000,
+    childPrice: 350000,
     image: "/images/adventures/rafting.jpg",
     description: "Navigate Class II-III rapids through a stunning river canyon surrounded by towering jungle cliffs, waterfalls, and ancient stone carvings.",
     highlights: ["Class II-III rapids", "Canyon scenery", "Lunch included", "Professional crew"],
     duration: "3 hours",
     icon: Waves,
+    minPax: 2,
+    times: ["08:30", "11:00", "14:00"],
   },
   {
     id: "canyon-tubing",
@@ -60,11 +72,14 @@ const adventures = [
     tagline: "Float through paradise",
     pax: "Per Person",
     price: 359000,
+    childPrice: 300000,
     image: "/images/adventures/canyon-tubing.jpg",
     description: "Drift through hidden canyons on an inflatable tube. Crystal-clear waters, moss-covered walls, and shafts of sunlight create a magical underground world. Pair it with an ATV ride for the ultimate combo.",
     highlights: ["Hidden canyons", "Crystal-clear water", "Life jacket provided", "Nature guide"],
     duration: "2.5 hours",
     icon: Compass,
+    minPax: 1,
+    times: DEFAULT_TIMES,
   },
   {
     id: "cycling",
@@ -72,14 +87,29 @@ const adventures = [
     tagline: "Rice terraces & villages",
     pax: "Per Person",
     price: 650000,
+    childPrice: 550000,
     originalPrice: 888000,
     image: "/images/adventures/cycling.jpg",
     description: "Pedal through Pejeng's quiet village lanes, temples, and Subak rice terraces. Includes hotel pickup and your choice of lunch or breakfast.",
     highlights: ["Lunch or breakfast included", "Rice terrace trails", "Local village guide", "Hotel pickup"],
     duration: "4 hours",
     icon: Bike,
+    href: "/tours/pejeng-cycling-tour",
+    minPax: 1,
+    times: ["08:30", "13:30"],
   },
-]
+] as const
+
+function toTourConfig(adv: (typeof adventures)[number]): TourConfig {
+  return {
+    id: adv.id,
+    title: adv.name,
+    times: [...adv.times],
+    adultPrice: adv.price,
+    kidPrice: "childPrice" in adv ? adv.childPrice : null,
+    minPax: adv.minPax,
+  }
+}
 
 const stats = [
   { value: "5", label: "Epic Activities" },
@@ -132,12 +162,13 @@ function HeroCarousel() {
 
 /* ─── Pricing Data ─── */
 const pricingData = [
-  { activity: "Single ATV", pax: "1 Pax", price: 650000, highlight: false },
-  { activity: "Tandem ATV", pax: "2 Pax", price: 859000, highlight: true },
-  { activity: "Whitewater Rafting", pax: "Per Person", price: 400000, highlight: false },
-  { activity: "Canyon Tubing", pax: "Per Person", price: 359000, highlight: false },
+  { activity: "Single ATV", adventureId: "single-atv", pax: "1 Pax", price: 650000, highlight: false },
+  { activity: "Tandem ATV", adventureId: "tandem-atv", pax: "2 Pax", price: 859000, highlight: true },
+  { activity: "Whitewater Rafting", adventureId: "rafting", pax: "Per Person", price: 400000, highlight: false },
+  { activity: "Canyon Tubing", adventureId: "canyon-tubing", pax: "Per Person", price: 359000, highlight: false },
   {
     activity: "Village Cycling Tour",
+    adventureId: "cycling",
     pax: "Per Person · Lunch or breakfast included",
     price: 650000,
     originalPrice: 888000,
@@ -148,6 +179,15 @@ const pricingData = [
 /* ─── Main Page ─── */
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set())
+  const [bookingTour, setBookingTour] = useState<TourConfig | null>(null)
+  const [bookingOpen, setBookingOpen] = useState(false)
+
+  const openBooking = (adventureId: string) => {
+    const adv = adventures.find((a) => a.id === adventureId)
+    if (!adv) return
+    setBookingTour(toTourConfig(adv))
+    setBookingOpen(true)
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -169,6 +209,11 @@ export default function Home() {
 
   return (
     <main className="w-full flex flex-col bg-sand">
+      <BookingPopup
+        isOpen={bookingOpen}
+        onClose={() => setBookingOpen(false)}
+        tour={bookingTour}
+      />
 
       {/* ═══ HERO ═══ */}
       <section id="top" className="relative w-full min-h-screen flex flex-col justify-center overflow-hidden">
@@ -197,10 +242,14 @@ export default function Home() {
             Looking for fresh activities in Bali? Conquer jungle trails on ATVs, combine with Wos River tubing, ride whitewater rapids, or cycle Pejeng&apos;s rice terraces.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
-            <Link href={CONTACT_WHATSAPP_URL} target="_blank" className="inline-flex items-center h-12 md:h-14 px-8 md:px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm md:text-base uppercase tracking-wider border border-accent-gold-dark/20">
+            <button
+              type="button"
+              onClick={() => openBooking("single-atv")}
+              className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm md:text-base uppercase tracking-wider border border-accent-gold-dark/20"
+            >
               Book Now
-            </Link>
-            <Link href="#adventures" className="inline-flex items-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-transparent border-2 border-sand/40 text-sand font-bold text-sm md:text-base uppercase tracking-wider hover:bg-sand/10 transition-colors">
+            </button>
+            <Link href="#adventures" className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-transparent border-2 border-sand/40 text-sand font-bold text-sm md:text-base uppercase tracking-wider hover:bg-sand/10 transition-colors">
               Explore Activities
             </Link>
           </div>
@@ -285,9 +334,13 @@ export default function Home() {
                         View Details
                       </Link>
                     ) : null}
-                    <Link href={`${CONTACT_WHATSAPP_URL}?text=Hi! I'm interested in the ${adv.name} package.`} target="_blank" className="flex-1 flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors">
+                    <button
+                      type="button"
+                      onClick={() => openBooking(adv.id)}
+                      className="flex-1 flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                    >
                       Book This Adventure <ArrowRight className="w-4 h-4" />
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </article>
@@ -386,13 +439,21 @@ export default function Home() {
                       </span>
                     )}
                   </div>
-                  <Link href={`${CONTACT_WHATSAPP_URL}?text=Hi! I'd like to book ${item.activity}.`} target="_blank" className="hidden sm:inline-flex items-center h-10 px-6 rounded-full bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors">
+                  <button
+                    type="button"
+                    onClick={() => openBooking(item.adventureId)}
+                    className="hidden sm:inline-flex items-center h-10 px-6 rounded-full bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                  >
                     Book
-                  </Link>
+                  </button>
                 </div>
-                <Link href={`${CONTACT_WHATSAPP_URL}?text=Hi! I'd like to book ${item.activity}.`} target="_blank" className="sm:hidden w-full flex items-center justify-center h-11 rounded-xl bg-brand-green text-sand text-sm font-bold uppercase tracking-wider">
+                <button
+                  type="button"
+                  onClick={() => openBooking(item.adventureId)}
+                  className="sm:hidden w-full flex items-center justify-center h-11 rounded-xl bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
+                >
                   Book Now
-                </Link>
+                </button>
               </div>
             ))}
           </div>
@@ -460,10 +521,14 @@ export default function Home() {
             Message us directly on WhatsApp. Tell us your preferred date, group size, and activity — we&apos;ll confirm availability immediately.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href={CONTACT_WHATSAPP_URL} target="_blank" className="inline-flex items-center justify-center gap-3 h-14 md:h-16 px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-lg uppercase tracking-wider border border-accent-gold-dark/20 w-full sm:w-auto">
+            <button
+              type="button"
+              onClick={() => openBooking("single-atv")}
+              className="inline-flex items-center justify-center gap-3 h-14 md:h-16 px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-lg uppercase tracking-wider border border-accent-gold-dark/20 w-full sm:w-auto"
+            >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               Book via WhatsApp
-            </Link>
+            </button>
             <Link href={`mailto:${CONTACT_EMAIL}`} className="inline-flex items-center justify-center gap-2 h-14 md:h-16 px-10 rounded-full border-2 border-sand/30 text-sand font-bold text-lg uppercase tracking-wider hover:bg-sand/10 transition-colors w-full sm:w-auto">
               Send an Email
             </Link>

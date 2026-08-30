@@ -10,6 +10,140 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'bali-atv-tour-ubud-guide',
+    title: 'Bali ATV Tour Near Ubud: Trails, Prices, and What Is Included (2026)',
+    excerpt: 'A practical guide to booking a Bali ATV / quad bike adventure near Ubud and Pejeng — prices from IDR 650,000, what to bring, lunch and gear inclusions, and how to add Wos River tubing.',
+    publishedAt: '2026-08-30',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**What is the best way to book a Bali ATV tour near Ubud?** Book a beginner-friendly Single or Tandem ATV ride based in Pejeng with gear, lunch, and insurance included. Sekar Bali Activity offers Single ATV from **IDR 650,000** and Tandem ATV from **IDR 859,000**, with optional **Wos River tubing** after the track.
+
+> **Key Takeaways**
+> - Single ATV from IDR 650,000 (1 pax); Tandem from IDR 859,000 (2 pax)
+> - Included: boot shoes, helmet, simple lunch, insurance, safety briefing
+> - Bring: changing clothes / dry cloth, sunscreen, cash
+> - Optional combo: race the ATV track, then tube the Wos River
+> - Book via WhatsApp with your name, age, adult/child, location, activity, and price
+
+---
+
+## Why Pejeng / Ubud for ATV?
+
+Pejeng sits just east of central Ubud, so hotel pickup is fast and the trails reach jungle paths, muddy tracks, and river crossings without a long transfer. Riders get a full safety briefing — no prior ATV experience is required.
+
+## What You Get on the ATV Package
+
+| Include | Details |
+| --- | --- |
+| Boot shoes & helmet | Fitted at base before the ride |
+| Simple menu lunch | Served after the adventure |
+| Insurance | Coverage included in the package price |
+| Guide & briefing | English-speaking trail guidance |
+
+## What To Bring
+
+1. Changing clothes or a dry cloth  
+2. Sunscreen (recommended)  
+3. Cash for personal expenses  
+
+## ATV + River Tubing Combo
+
+Looking for a fuller day? After racing the ATV track you can combine with **river tubing on the Wos River** — a popular land-and-water package. Ask for combo availability when you book.
+
+## How to Book
+
+Use the booking form on our site or message WhatsApp. Send your **name, age, adult or child, hotel/pickup location, activity, and estimated price** so we can confirm the same day.
+
+Ready to ride? Book the [Bali ATV Adventure & River Tubing](/tours/bali-atv-adventure) experience.
+`
+  },
+  {
+    slug: 'atv-river-tubing-wos-river-bali',
+    title: 'ATV + River Tubing on the Wos River: Bali’s Land-and-Water Adventure Day',
+    excerpt: 'How the ATV + Wos River tubing combo works in Bali — trail riding first, then float the river. Ideal for couples and first-timers staying in Ubud.',
+    publishedAt: '2026-08-30',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/canyon-tubing.jpg',
+    content: `
+**What is ATV + river tubing on the Wos River?** It is a combined Bali adventure: you ride a quad bike (ATV) on jungle trails, then float the **Wos River** on a tube. Sekar Bali Activity packages the combo for guests who want sensation, excitement, and joy in one day near Ubud.
+
+> **Key Takeaways**
+> - Sequence: ATV track first → Wos River tubing after
+> - Great for first-timers with a guided safety briefing
+> - ATV packages already include lunch, boots, helmet, and insurance
+> - Ask WhatsApp for current combo pricing and pickup times
+
+---
+
+## Why Combine ATV and Tubing?
+
+Solo ATV is pure off-road adrenaline. Adding river tubing cools you down and adds a second environment — crystal water, canyon walls, and a float after muddy trails. Couples often choose **Tandem ATV** then tubing together.
+
+## Typical Flow
+
+1. Hotel pickup (Ubud area usually free)  
+2. Gear fitting: boot shoes & helmet  
+3. Safety briefing and ATV trail ride  
+4. Optional Wos River tubing session  
+5. Simple menu lunch and change into dry clothes  
+
+## Who It Is For
+
+Beginners, couples, and small groups. Children can join when age-appropriate — tell us ages when booking so we assign Adult or Child rates correctly.
+
+## Book the Combo
+
+Open [Bali ATV Adventure & River Tubing](/tours/bali-atv-adventure), choose **ATV + River Tubing Combo**, and send your booking details on WhatsApp.
+`
+  },
+  {
+    slug: 'how-to-book-bali-adventure-whatsapp',
+    title: 'How to Book a Bali Adventure on WhatsApp (Name, Age, Location, Price)',
+    excerpt: 'Step-by-step: what to send on WhatsApp when booking Sekar Bali Activity — name, age, adult or child, pickup location, activity, and price — so confirmation is fast.',
+    publishedAt: '2026-08-30',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/hero-banner.jpg',
+    content: `
+**How do you book Sekar Bali Activity on WhatsApp?** Tap Book on the website, fill the short form, and WhatsApp opens with a ready message including your **name, age, adult/child type, location, activity, and price**. Or message +62 817 7572 3663 directly with the same details.
+
+> **Key Takeaways**
+> - No upfront payment is required to inquire
+> - Include: name · age · Adult or Child · hotel/pickup · activity · price
+> - Add children ages if kids are joining
+> - We reply during operating hours, usually within minutes
+
+---
+
+## What to Include in Your WhatsApp Message
+
+| Field | Example |
+| --- | --- |
+| Name | Sarah Kim |
+| Age | 29 |
+| Guest type | Adult |
+| Adults / Children | 2 adults, 1 child (age 9) |
+| Activity | Single ATV Ride |
+| Date & time | 2026-09-12 · 09:00 |
+| Location | Maya Ubud Resort |
+| Price | IDR 650,000 |
+
+## Why These Details Matter
+
+Accurate **age** and **Adult/Child** selection sets the right rate. **Location** confirms free Ubud pickup vs out-of-area surcharge. **Activity + price** prevents mix-ups between Single ATV, Tandem, rafting, tubing, or cycling.
+
+## Website Booking Form
+
+On [sekarbaliactivity.com](/) tap **Book Now** or **Book This Adventure**. The popup asks for name, age, adult/child, map pin + hotel name, date, and guest counts — then sends everything to WhatsApp in one tap.
+
+## Contact
+
+- WhatsApp: +62 817 7572 3663  
+- Email: sekarprivatebaliactivity@gmail.com  
+- Tours: [/tours](/tours)
+`
+  },
+  {
     slug: 'history-of-pejeng-bali-ancient-kingdom',
     title: "The History of Pejeng: Bali's Ancient Kingdom Near Ubud",
     excerpt: "Discover the hidden history of Pejeng, once the center of the mighty Pejeng Kingdom. Learn why this small village holds some of Bali's most significant archaeological treasures.",

@@ -177,6 +177,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM content summary" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full context" />
         {schemaData.map((schema, index) => (
           <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         ))}

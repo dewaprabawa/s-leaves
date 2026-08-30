@@ -6,7 +6,8 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { bookingSchema, type BookingFormData } from "@/lib/validations/booking"
 import { submitBooking, checkAvailability } from "@/app/actions/bookTour"
 import { calculateTourPrice } from "@/lib/pricing"
-import { Calendar, Users, User, Mail, Phone, MessageSquare, CheckCircle2, ChevronRight, ChevronLeft, Loader2, Sparkles, AlertCircle, ShoppingBag, ExternalLink } from "lucide-react"
+import { formatIdr, openWhatsAppBooking } from "@/lib/whatsapp"
+import { Calendar, Users, User, Mail, Phone, MessageSquare, CheckCircle2, ChevronRight, ChevronLeft, Loader2, Sparkles, AlertCircle, ShoppingBag, ExternalLink, MapPin } from "lucide-react"
 import { useCurrency } from "@/context/CurrencyContext"
 
 type Props = {
@@ -33,6 +34,7 @@ export default function BookingForm({ tour }: Props) {
       adults: 1,
       children: 0,
       infants: 0,
+      guestType: "Adult",
       selectedAddons: [],
       selectedActivityOption: tour.activityOptions && tour.activityOptions.length > 0 ? tour.activityOptions[0].name : undefined,
       totalPrice: tour.pricing?.basePrice || tour.basePrice || 0
@@ -102,7 +104,7 @@ export default function BookingForm({ tour }: Props) {
   const handleNextStep = async () => {
     let fieldsToValidate: (keyof BookingFormData)[] = []
     if (step === 1) fieldsToValidate = ["date", "adults", "children", "infants"]
-    if (step === 2) fieldsToValidate = ["guestName", "email", "phone"]
+    if (step === 2) fieldsToValidate = ["guestName", "guestAge", "guestType", "pickupLocation", "email", "phone"]
 
     const isStepValid = await trigger(fieldsToValidate)
     if (!isStepValid) return
@@ -127,8 +129,33 @@ export default function BookingForm({ tour }: Props) {
     setServerResult(null)
     
     try {
-      const result = await submitBooking(data)
-      setServerResult(result)
+      // Persist booking attempt, then open WhatsApp with full details
+      await submitBooking(data)
+
+      openWhatsAppBooking({
+        guestName: data.guestName,
+        guestAge: data.guestAge,
+        guestType: data.guestType,
+        adults: data.adults,
+        children: data.children,
+        childrenAges: data.childrenAges,
+        activity: data.tourTitle,
+        activityOption: data.selectedActivityOption,
+        date: data.date,
+        location: data.pickupLocation,
+        price: data.totalPrice,
+        notes: [
+          data.specialRequests,
+          data.email ? `Email: ${data.email}` : null,
+          data.phone ? `Phone: ${data.phone}` : null,
+          data.infants > 0 ? `Infants: ${data.infants}` : null,
+        ].filter(Boolean).join(" · ") || undefined,
+      })
+
+      setServerResult({
+        success: true,
+        message: `Thanks ${data.guestName}! WhatsApp should open with your booking for ${data.tourTitle} (${formatIdr(data.totalPrice)}). If it did not open, message us on WhatsApp manually.`,
+      })
     } catch (e) {
       setServerResult({ success: false, error: "Network error. Please try again." })
     } finally {
@@ -414,6 +441,63 @@ export default function BookingForm({ tour }: Props) {
               {errors.guestName && <p className="text-red-500 text-xs mt-1">{errors.guestName.message}</p>}
             </div>
 
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                  Age
+                </label>
+                <input 
+                  type="number"
+                  min={1}
+                  max={120}
+                  placeholder="28"
+                  {...register("guestAge", { valueAsNumber: true })}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                />
+                {errors.guestAge && <p className="text-red-500 text-xs mt-1">{errors.guestAge.message}</p>}
+              </div>
+              <div>
+                <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                  Adult or Child
+                </label>
+                <select
+                  {...register("guestType")}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                >
+                  <option value="Adult">Adult</option>
+                  <option value="Child">Child</option>
+                </select>
+                {errors.guestType && <p className="text-red-500 text-xs mt-1">{errors.guestType.message}</p>}
+              </div>
+            </div>
+
+            {children > 0 && (
+              <div>
+                <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                  Children ages
+                </label>
+                <input 
+                  type="text" 
+                  placeholder="e.g. 8, 10"
+                  {...register("childrenAges")}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                />
+              </div>
+            )}
+
+            <div>
+              <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+                <MapPin className="w-4 h-4 text-emerald-500" /> Hotel / Pickup Location
+              </label>
+              <input 
+                type="text" 
+                placeholder="e.g. Maya Ubud Resort"
+                {...register("pickupLocation")}
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+              />
+              {errors.pickupLocation && <p className="text-red-500 text-xs mt-1">{errors.pickupLocation.message}</p>}
+            </div>
+
             <div>
               <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
                 <Mail className="w-4 h-4 text-emerald-500" /> Email Address
@@ -531,7 +615,13 @@ export default function BookingForm({ tour }: Props) {
             {/* Lead Guest */}
             <div className="flex justify-between border-b border-gray-200 dark:border-gray-800 pb-3 text-xs">
               <span className="text-gray-500">Lead Guest</span>
-              <span className="font-semibold text-gray-900 dark:text-white">{watch("guestName")}</span>
+              <span className="font-semibold text-gray-900 dark:text-white text-right">
+                {watch("guestName")} · {watch("guestType")} · Age {watch("guestAge")}
+              </span>
+            </div>
+            <div className="flex justify-between border-b border-gray-200 dark:border-gray-800 pb-3 text-xs">
+              <span className="text-gray-500">Pickup Location</span>
+              <span className="font-semibold text-gray-900 dark:text-white text-right max-w-[200px]">{watch("pickupLocation")}</span>
             </div>
             
             {/* Grand Total */}
@@ -602,9 +692,9 @@ export default function BookingForm({ tour }: Props) {
               className="flex-1 py-3 px-6 bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-xl font-semibold transition-colors flex items-center justify-center shadow-lg shadow-emerald-600/20"
             >
               {isSubmitting ? (
-                <><Loader2 className="w-5 h-5 mr-2 animate-spin" /> Processing...</>
+                <><Loader2 className="w-5 h-5 mr-2 animate-spin" /> Opening WhatsApp...</>
               ) : (
-                'Confirm Booking'
+                'Send to WhatsApp'
               )}
             </button>
           )}

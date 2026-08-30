@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { X, ExternalLink } from 'lucide-react';
-import { CONTACT_WHATSAPP_URL } from '@/lib/contact';
+import { formatIdr, openWhatsAppBooking } from '@/lib/whatsapp';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -14,26 +14,49 @@ export interface TourConfig {
   title: string;
   times: string[];
   adultPrice: number;
-  kidPrice?: number | null; // null if kids are not supported/have same price
+  kidPrice?: number | null;
   minPax: number;
   getYourGuideUrl?: string;
 }
 
-export function BookingPopup({ isOpen, onClose, tour }: { isOpen: boolean, onClose: () => void, tour: TourConfig | null }) {
+export function BookingPopup({
+  isOpen,
+  onClose,
+  tour,
+  tourOptions,
+}: {
+  isOpen: boolean
+  onClose: () => void
+  tour: TourConfig | null
+  tourOptions?: TourConfig[]
+}) {
+  const [guestName, setGuestName] = useState("");
+  const [guestAge, setGuestAge] = useState("");
+  const [guestType, setGuestType] = useState<"Adult" | "Child">("Adult");
   const [adults, setAdults] = useState(2);
   const [kids, setKids] = useState(0);
+  const [childrenAges, setChildrenAges] = useState("");
   const [time, setTime] = useState("");
   const [date, setDate] = useState("");
   const [location, setLocation] = useState<{lat: number, lng: number} | null>(UBUD_CENTER);
   const [isOutUbud, setIsOutUbud] = useState(false);
   const [locationDetails, setLocationDetails] = useState("");
   const [notes, setNotes] = useState("");
+  const [selectedTourId, setSelectedTourId] = useState(tour?.id || "");
 
-  // Initialize defaults when tour opens
+  const activeTour =
+    (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
+    tour
+
   useEffect(() => {
     if (isOpen && tour) {
-      setAdults(tour.minPax);
+      setSelectedTourId(tour.id);
+      setGuestName("");
+      setGuestAge("");
+      setGuestType("Adult");
+      setAdults(Math.max(tour.minPax, 1));
       setKids(0);
+      setChildrenAges("");
       setTime(tour.times[0] || "");
       setDate(new Date().toISOString().split('T')[0]);
       setLocation(UBUD_CENTER);
@@ -43,51 +66,60 @@ export function BookingPopup({ isOpen, onClose, tour }: { isOpen: boolean, onClo
     }
   }, [isOpen, tour]);
 
-  if (!isOpen || !tour) return null;
+  useEffect(() => {
+    if (!activeTour) return
+    setAdults((prev) => Math.max(activeTour.minPax, prev || activeTour.minPax))
+    setTime(activeTour.times[0] || "")
+  }, [activeTour?.id])
 
-  const hasKidPricing = tour.kidPrice !== null && tour.kidPrice !== undefined;
-  
+  if (!isOpen || !activeTour) return null;
+
+  const hasKidPricing = activeTour.kidPrice !== null && activeTour.kidPrice !== undefined;
   const totalPax = adults + kids;
-  const isInvalidPax = totalPax < tour.minPax;
-  
-  const adultPrice = tour.adultPrice;
-  const kidPrice = tour.kidPrice || 0;
+  const isInvalidPax = totalPax < activeTour.minPax;
+  const adultPrice = activeTour.adultPrice;
+  const kidPrice = activeTour.kidPrice || 0;
   const outOfUbudFee = 120000;
-
   const totalCost = (adults * adultPrice) + (kids * kidPrice) + (isOutUbud && location ? outOfUbudFee : 0);
-
-  const formatIDR = (num: number) => new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', maximumFractionDigits: 0 }).format(num);
+  const nameOk = guestName.trim().length >= 2;
+  const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
+  const locationOk = Boolean(location) && locationDetails.trim().length >= 2;
+  const canSubmit = nameOk && ageOk && locationOk && !isInvalidPax;
 
   const handleBook = () => {
-    if (isInvalidPax) return alert(`Minimum ${tour.minPax} persons required.`);
+    if (!nameOk) return alert("Please enter your name.");
+    if (!ageOk) return alert("Please enter your age.");
+    if (isInvalidPax) return alert(`Minimum ${activeTour.minPax} persons required.`);
     if (!location) return alert("Please select a pickup location on the map.");
+    if (!locationOk) return alert("Please enter your hotel / pickup location name.");
 
-    const paxText = hasKidPricing ? `- Adults: ${adults}\n- Kids: ${kids}` : `- People: ${adults}`;
-
-    const msg = `Hello Sekar Bali Activity! I'd like to book the ${tour.title}.
-- Date: ${date}
-- Time: ${time}
-${paxText}
-- Pickup Location: https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}
-- Location Details: ${locationDetails || "None provided"}
-- Special Notes: ${notes || "None provided"}
-- Out of Ubud Fee: ${isOutUbud ? "Yes (+120,000 IDR)" : "No (Free)"}
-- Total Price: ${formatIDR(totalCost)}
-
-Please confirm my booking!`;
-
-    const waUrl = `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(msg)}`;
-    window.open(waUrl, '_blank');
+    openWhatsAppBooking({
+      guestName: guestName.trim(),
+      guestAge: guestAge.trim(),
+      guestType,
+      adults,
+      children: kids,
+      childrenAges: kids > 0 ? childrenAges.trim() || undefined : undefined,
+      activity: activeTour.title,
+      date,
+      time,
+      location: locationDetails.trim(),
+      locationMapUrl: `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}`,
+      price: totalCost,
+      notes: [
+        notes.trim() || null,
+        isOutUbud ? "Out of Ubud pickup (+IDR 120,000)" : "Ubud area pickup (free)",
+      ].filter(Boolean).join(" · ") || undefined,
+    });
   };
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6">
       <div className="bg-sand w-full max-w-4xl max-h-[95vh] overflow-y-auto rounded-3xl shadow-2xl relative flex flex-col md:flex-row">
-        <button onClick={onClose} className="fixed top-4 right-4 md:absolute md:top-4 md:right-4 z-[2000] p-2.5 bg-white hover:bg-gray-100 rounded-full text-brand-green transition-colors shadow-xl border border-brand-green/10">
+        <button onClick={onClose} className="fixed top-4 right-4 md:absolute md:top-4 md:right-4 z-[2000] p-2.5 bg-white hover:bg-gray-100 rounded-full text-brand-green transition-colors shadow-xl border border-brand-green/10" aria-label="Close booking">
           <X className="w-6 h-6 md:w-5 md:h-5" />
         </button>
         
-        {/* Map Section */}
         <div className="w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
           <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={(lat, lng, isOut) => {
             setLocation({lat, lng});
@@ -96,20 +128,34 @@ Please confirm my booking!`;
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
             <strong className="block mb-1">Pickup Location</strong>
             {location ? (
-               isOutUbud ? <span className="text-red-600 font-bold block">Out of Ubud: +120,000 IDR charge</span> : <span className="text-brand-green font-bold block flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free Pickup</span>
+               isOutUbud ? <span className="text-red-600 font-bold block">Out of Ubud: +120,000 IDR charge</span> : <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free Pickup</span>
             ) : <span className="opacity-70">Tap on the map to set your pickup pin.</span>}
           </div>
         </div>
 
-        {/* Form Section */}
         <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col">
           <h2 className="text-3xl font-serif text-brand-green font-bold mb-2">Book Experience</h2>
-          <p className="text-brand-green-light text-sm mb-6 pb-4 border-b border-brand-green/10 font-bold">{tour.title}</p>
+          {tourOptions && tourOptions.length > 1 ? (
+            <div className="mb-6 pb-4 border-b border-brand-green/10">
+              <label className="block text-brand-green font-bold text-sm mb-2">Activity *</label>
+              <select
+                value={activeTour.id}
+                onChange={(e) => setSelectedTourId(e.target.value)}
+                className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-bold focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
+              >
+                {tourOptions.map((t) => (
+                  <option key={t.id} value={t.id}>{t.title}</option>
+                ))}
+              </select>
+            </div>
+          ) : (
+            <p className="text-brand-green-light text-sm mb-6 pb-4 border-b border-brand-green/10 font-bold">{activeTour.title}</p>
+          )}
           
-          {tour.getYourGuideUrl && (
+          {activeTour.getYourGuideUrl && (
             <div className="mb-6">
               <a 
-                href={tour.getYourGuideUrl} 
+                href={activeTour.getYourGuideUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-full py-3 px-4 bg-[#FF5533] hover:bg-[#e64a2c] text-white rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm shadow-[#FF5533]/20"
@@ -124,8 +170,62 @@ Please confirm my booking!`;
             </div>
           )}
 
-          <div className="space-y-6 flex-1">
-            {/* Date & Time */}
+          <div className="space-y-5 flex-1">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="sm:col-span-2">
+                <label className="block text-brand-green font-bold text-sm mb-2">Your Name *</label>
+                <input 
+                  type="text" 
+                  value={guestName} 
+                  onChange={e => setGuestName(e.target.value)} 
+                  placeholder="Full name"
+                  className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
+                />
+              </div>
+              <div>
+                <label className="block text-brand-green font-bold text-sm mb-2">Age *</label>
+                <input 
+                  type="number" 
+                  min={1}
+                  max={120}
+                  value={guestAge} 
+                  onChange={e => setGuestAge(e.target.value)} 
+                  placeholder="e.g. 28"
+                  className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
+                />
+              </div>
+              <div>
+                <label className="block text-brand-green font-bold text-sm mb-2">You are *</label>
+                <div className="flex gap-2">
+                  {(["Adult", "Child"] as const).map((type) => (
+                    <button
+                      key={type}
+                      type="button"
+                      onClick={() => setGuestType(type)}
+                      className={`flex-1 py-3 rounded-xl font-bold text-sm border transition-colors ${
+                        guestType === type
+                          ? "bg-brand-green text-sand border-brand-green"
+                          : "bg-white text-brand-green border-brand-green/20 hover:bg-sand"
+                      }`}
+                    >
+                      {type}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-brand-green font-bold text-sm mb-2">Hotel / Pickup Location *</label>
+              <input 
+                type="text" 
+                value={locationDetails} 
+                onChange={(e) => setLocationDetails(e.target.value)}
+                placeholder="e.g. Maya Ubud, Room 102" 
+                className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
+              />
+            </div>
+
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex-1">
                 <label className="block text-brand-green font-bold text-sm mb-2">Date</label>
@@ -140,74 +240,78 @@ Please confirm my booking!`;
               <div className="flex-1">
                 <label className="block text-brand-green font-bold text-sm mb-2">Pickup Time</label>
                 <select value={time} onChange={e => setTime(e.target.value)} className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm appearance-none cursor-pointer">
-                  {tour.times.map((t, idx) => (
+                  {activeTour.times.map((t, idx) => (
                     <option key={idx} value={t}>{t}</option>
                   ))}
                 </select>
               </div>
             </div>
 
-            {/* Pax */}
             <div className="flex gap-4">
               <div className="flex-1">
-                <label className="block text-brand-green font-bold text-sm mb-2">{hasKidPricing ? "Adults" : "People"} ({tour.adultPrice / 1000}k)</label>
+                <label className="block text-brand-green font-bold text-sm mb-2">{hasKidPricing ? "Adults" : "People"} ({activeTour.adultPrice / 1000}k)</label>
                 <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
-                  <button onClick={() => setAdults(Math.max(0, adults - 1))} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">-</button>
+                  <button type="button" onClick={() => setAdults(Math.max(0, adults - 1))} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">-</button>
                   <span className="flex-1 text-center font-bold text-brand-green text-lg">{adults}</span>
-                  <button onClick={() => setAdults(adults + 1)} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">+</button>
+                  <button type="button" onClick={() => setAdults(adults + 1)} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">+</button>
                 </div>
               </div>
               {hasKidPricing && (
                 <div className="flex-1">
-                  <label className="block text-brand-green font-bold text-sm mb-2">Kids ({(tour.kidPrice || 0) / 1000}k)</label>
+                  <label className="block text-brand-green font-bold text-sm mb-2">Children ({(activeTour.kidPrice || 0) / 1000}k)</label>
                   <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
-                    <button onClick={() => setKids(Math.max(0, kids - 1))} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">-</button>
+                    <button type="button" onClick={() => setKids(Math.max(0, kids - 1))} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">-</button>
                     <span className="flex-1 text-center font-bold text-brand-green text-lg">{kids}</span>
-                    <button onClick={() => setKids(kids + 1)} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">+</button>
+                    <button type="button" onClick={() => setKids(kids + 1)} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">+</button>
                   </div>
                 </div>
               )}
             </div>
-            {isInvalidPax && <p className="text-red-500 text-sm font-bold mt-2 bg-red-50 p-2 rounded-lg border border-red-100">⚠️ Minimum {tour.minPax} persons required.</p>}
 
-            {/* Additional Info */}
-            <div className="space-y-4 pt-2">
+            {hasKidPricing && kids > 0 && (
               <div>
-                <label className="block text-brand-green font-bold text-sm mb-2">Location Details (Optional)</label>
+                <label className="block text-brand-green font-bold text-sm mb-2">Children ages</label>
                 <input 
                   type="text" 
-                  value={locationDetails} 
-                  onChange={(e) => setLocationDetails(e.target.value)}
-                  placeholder="e.g. Maya Resort, Room 102" 
+                  value={childrenAges} 
+                  onChange={(e) => setChildrenAges(e.target.value)}
+                  placeholder="e.g. 8, 10" 
                   className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
                 />
               </div>
-              <div>
-                <label className="block text-brand-green font-bold text-sm mb-2">Special Notes (Optional)</label>
-                <textarea 
-                  value={notes} 
-                  onChange={(e) => setNotes(e.target.value)}
-                  placeholder="e.g. Dietary requirements, specific requests..." 
-                  rows={2}
-                  className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm resize-none"
-                />
-              </div>
+            )}
+
+            {isInvalidPax && <p className="text-red-500 text-sm font-bold bg-red-50 p-2 rounded-lg border border-red-100">Minimum {activeTour.minPax} persons required.</p>}
+
+            <div>
+              <label className="block text-brand-green font-bold text-sm mb-2">Special Notes (Optional)</label>
+              <textarea 
+                value={notes} 
+                onChange={(e) => setNotes(e.target.value)}
+                placeholder="Dietary requirements, special requests..." 
+                rows={2}
+                className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm resize-none"
+              />
             </div>
           </div>
 
           <div className="mt-6 pt-6 border-t border-brand-green/10">
             <div className="flex justify-between items-end mb-5">
               <span className="text-brand-green-light font-bold">Total Estimate</span>
-              <span className="text-3xl font-bold text-brand-green">{formatIDR(totalCost)}</span>
+              <span className="text-3xl font-bold text-brand-green">{formatIdr(totalCost)}</span>
             </div>
             
             <button 
+              type="button"
               onClick={handleBook}
-              disabled={isInvalidPax || !location}
-              className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${isInvalidPax || !location ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : 'bg-brand-green text-sand hover:bg-brand-green-light shadow-lg hover:shadow-xl hover:-translate-y-0.5'}`}
+              disabled={!canSubmit}
+              className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${!canSubmit ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : 'bg-brand-green text-sand hover:bg-brand-green-light shadow-lg hover:shadow-xl hover:-translate-y-0.5'}`}
             >
-              Continue to WhatsApp
+              Send Booking to WhatsApp
             </button>
+            <p className="text-xs text-brand-green-light text-center mt-3">
+              Sends your name, age, adult/child, location, activity, and price to WhatsApp.
+            </p>
           </div>
         </div>
       </div>

@@ -43,6 +43,8 @@ export const metadata: Metadata = {
   keywords: [
     'Bali ATV tour',
     'Ubud ATV adventure',
+    'Bali ATV river tubing',
+    'Wos River tubing',
     'Bali whitewater rafting',
     'Bali canyon tubing',
     'Pejeng cycling tour',
@@ -90,13 +92,15 @@ export const metadata: Metadata = {
 const adventureOffers = [
   {
     name: 'Single ATV Jungle Ride',
-    description: "Conquer Bali's volcanic trails solo on a powerful ATV.",
+    description:
+      'Complete Bali quad bike adventure with lunch, boot shoes, helmet, and insurance. Optional river tubing on the Wos River.',
     price: '650000',
     image: '/images/adventures/atv-adventure.jpg',
   },
   {
     name: 'Tandem ATV Ride',
-    description: 'Share the thrill with a partner on a powerful tandem ATV.',
+    description:
+      'Share a complete Bali ATV experience with a partner. Boot shoes, helmet, lunch, and insurance included.',
     price: '859000',
     image: '/images/adventures/atv-adventure.jpg',
   },
@@ -108,7 +112,7 @@ const adventureOffers = [
   },
   {
     name: 'Canyon Tubing Experience',
-    description: 'Float through hidden canyons on an inflatable tube.',
+    description: 'Float through hidden canyons on an inflatable tube. Pair with an ATV ride for the ultimate combo.',
     price: '359000',
     image: '/images/adventures/canyon-tubing.jpg',
   },
@@ -153,7 +157,7 @@ const SETTINGS = { siteName: SITE_NAME }
 
 const footerLinks = {
   adventures: [
-    { label: "ATV Rides", href: "/#adventures" },
+    { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
     { label: "Whitewater Rafting", href: "/#adventures" },
     { label: "Canyon Tubing", href: "/#adventures" },
     { label: "Village Cycling", href: "/#adventures" },

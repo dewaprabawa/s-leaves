@@ -56,6 +56,146 @@ export interface Tour {
 
 export const TOURS: Tour[] = [
   {
+    id: "bali-atv-adventure",
+    title: "Bali ATV Adventure & River Tubing",
+    slug: "bali-atv-adventure",
+    category: "Adventure",
+    duration: "2–4 Hours",
+    basePrice: 650000,
+    childPrice: 550000,
+    heroImage: {
+      url: "/images/adventures/atv-adventure.jpg",
+      alt: "ATV jungle adventure ride through tropical rainforest trails",
+    },
+    gallery: [
+      {
+        url: "/images/adventures/atv-adventure.jpg",
+        alt: "Quad bike ATV ride through Bali jungle trails",
+      },
+      {
+        url: "/images/adventures/canyon-tubing.jpg",
+        alt: "River tubing through crystal-clear Bali waters",
+      },
+    ],
+    shortDescription:
+      "Looking for fresh activities in Bali? Complete quad bike (ATV) trips with optional Wos River tubing — boot shoes, helmet, lunch, and insurance included.",
+    fullDescription: `**Looking for New and Fresh Activities in Bali?**
+
+If you want an adrenaline-packed day beyond the usual tourist trail, our Bali ATV Adventure delivers a complete quad bike experience through jungle paths, muddy tracks, and river crossings. Every ride is designed for sensation, excitement, and joy — whether you go solo or share a tandem ATV with a partner.
+
+### Complete Bali Quad Bike (ATV) Trips
+Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing, you are fitted with boot shoes and a helmet, then you hit the track for an unforgettable ride through Bali's green countryside.
+
+### Combine with River Tubing on the Wos River
+Want even more adventure? Pair your ATV ride with river tubing on the Wos River. After racing the ATV track, cool down as you float and explore the river on a tube — a favourite combo for guests who want a full day of thrills on land and water.
+
+### What You Get
+Every ATV package includes:
+- **Simple menu lunch** to refuel after the ride
+- **Boot shoes & helmet** for safety and comfort
+- **Insurance** for peace of mind
+
+### What To Bring
+- Changing clothes / dry cloth
+- Sunscreen (recommended)
+- Cash for personal expenses
+
+Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing combo for your preferred date.`,
+    highlights: [
+      "Complete Bali quad bike (ATV) adventure",
+      "Optional river tubing on the Wos River",
+      "Boot shoes, helmet, lunch & insurance included",
+      "Suitable for beginners with full safety briefing",
+    ],
+    included: [
+      "ATV ride (single or tandem)",
+      "Boot shoes & helmet",
+      "Simple menu lunch",
+      "Insurance",
+      "Safety briefing and trail guide",
+    ],
+    notIncluded: [
+      "River tubing combo (optional — ask when booking)",
+      "Personal expenses",
+      "Gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-atv-1",
+        time: "Start",
+        title: "Pickup & Safety Briefing",
+        description:
+          "Meet your guide, get fitted with boot shoes and helmet, and receive a clear safety briefing before the ride.",
+      },
+      {
+        id: "iti-atv-2",
+        time: "Midway",
+        title: "ATV Jungle Trail",
+        description:
+          "Race the ATV track through jungle paths, muddy stretches, and scenic river crossings packed with sensation and excitement.",
+      },
+      {
+        id: "iti-atv-3",
+        time: "Optional",
+        title: "Wos River Tubing",
+        description:
+          "Combine your package with river tubing — explore the Wos River on a tube after your ATV adventure.",
+      },
+      {
+        id: "iti-atv-4",
+        time: "Finish",
+        title: "Lunch & Wind Down",
+        description:
+          "Enjoy a simple menu lunch, change into dry clothes, and head back with unforgettable memories.",
+      },
+    ],
+    activityOptions: [
+      {
+        name: "Single ATV Ride",
+        priceDiff: 0,
+        description: "1 pax · solo jungle thrill",
+      },
+      {
+        name: "Tandem ATV Ride",
+        priceDiff: 209000,
+        description: "2 pax · share the adventure",
+      },
+      {
+        name: "ATV + River Tubing Combo",
+        priceDiff: 0,
+        description: "Ask us for combo pricing · Wos River tubing after the ATV track",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-atv-1",
+        question: "What should I bring?",
+        answer:
+          "Bring changing clothes or a dry cloth, sunscreen (recommended), and some cash. We provide boot shoes, helmet, lunch, and insurance.",
+      },
+      {
+        id: "faq-atv-2",
+        question: "Can I combine ATV with river tubing?",
+        answer:
+          "Yes! After racing the ATV track you can explore the Wos River on a tube. Ask us for ATV + River Tubing combo availability when you book.",
+      },
+      {
+        id: "faq-atv-3",
+        question: "Do I need riding experience?",
+        answer:
+          "No. Guides give a full safety briefing and ATVs are easy to operate for beginners. Tandem options are great if you prefer to ride with a partner.",
+      },
+      {
+        id: "faq-atv-4",
+        question: "What is included in the price?",
+        answer:
+          "Boot shoes and helmet, a simple menu lunch, and insurance are included with your ATV adventure.",
+      },
+    ],
+    reviews: [],
+  },
+  {
     id: "pejeng-cycling-tour",
     title: "Pejeng Village & Terrace Cycling",
     slug: "pejeng-cycling-tour",

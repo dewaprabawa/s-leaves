@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FAQSection } from '@/components/FAQSection'
 import {
@@ -8,6 +9,10 @@ import {
   Bike, Compass
 } from 'lucide-react'
 import { CONTACT_EMAIL, CONTACT_WHATSAPP_URL } from '@/lib/contact'
+
+/** Tiny LQIP for the hero — keeps LCP fast while the optimized image loads */
+const HERO_BLUR_DATA_URL =
+  'data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBAv/EACIQAAICAgEEAwEAAAAAAAAAAAECAxEAEiEEMUFhBRMigf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwCL42dFV2mNDlmPm/H9yfqXjmEv12Qw2J93mdK0UV7saq+11iYpM7aPuzc2V1v1mRjjp5qDLNsEZOPzyQTxkpmdWYRjZQoJOvYducYyi//Z'
 
 /* ─── Adventure Data ─── */
 const adventures = [
@@ -145,10 +150,16 @@ export default function Home() {
       {/* ═══ HERO ═══ */}
       <section id="top" className="relative w-full min-h-screen flex flex-col justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/adventures/hero-banner.jpg"
             alt="ATV jungle adventure ride through tropical rainforest trails"
-            className="w-full h-full object-cover object-[center_35%]"
+            fill
+            preload
+            sizes="100vw"
+            quality={70}
+            placeholder="blur"
+            blurDataURL={HERO_BLUR_DATA_URL}
+            className="object-cover object-[center_35%]"
           />
           <div className="hero-overlay absolute inset-0" />
         </div>

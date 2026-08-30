@@ -1,85 +1,60 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Inter, Outfit } from "next/font/google"
 import "../globals.css"
 import Link from "next/link"
-import { Mountain, Mail } from "lucide-react"
+import { Leaf, Mail, Phone } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import HeaderNav from "@/components/HeaderNav"
-import { CONTACT_EMAIL, CONTACT_PHONE_E164 } from "@/lib/contact"
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_E164, CONTACT_WHATSAPP_URL } from "@/lib/contact"
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 })
 
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+})
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.sekarbaliactivity.com'),
-  title: "Sekar Bali Activity | Bali ATV Adventure Tours",
-  description: "Conquer Bali's wild trails on a thrilling ATV quad bike adventure! Ride through jungles, volcanoes, rice terraces & rivers. All skill levels welcome. Book your Bali ATV tour today.",
-  icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
-  },
+  title: "Sekar Bali Activity | Premium Bali Adventure Tours — ATV, Rafting, Canyon Tubing",
+  description: "Book Bali's best adventure experiences: ATV jungle rides, whitewater rafting, canyon tubing. Expert guides, all-inclusive pricing, hotel pickup included.",
+
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Sekar Bali Activity | Bali ATV Quad Bike Adventures',
-    description: 'Conquer Bali\'s wild trails on a thrilling ATV quad bike adventure! Ride through jungles, volcanoes, rice terraces & rivers. All skill levels welcome.',
+    title: 'Sekar Bali Activity | Premium Bali Adventure Tours',
+    description: 'Book Bali\'s best adventure experiences: ATV jungle rides, whitewater rafting, canyon tubing. Expert guides, all-inclusive pricing, hotel pickup included.',
     url: 'https://www.sekarbaliactivity.com',
     siteName: 'Sekar Bali Activity',
-    images: [
-      {
-        url: '/images/cycling/rice-field-bikes.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Bali ATV Adventure Tour through jungle trails',
-      },
-    ],
+    images: [{ url: '/images/adventures/hero-banner.jpg', width: 1200, height: 630, alt: 'Bali Adventure Tours' }],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sekar Bali Activity | Bali ATV Adventures',
-    description: 'Conquer Bali\'s wild trails on a thrilling ATV quad bike adventure! All skill levels. Book now.',
-    images: ['/images/cycling/rice-field-bikes.jpg'],
+    title: 'Sekar Bali Activity | Premium Bali Adventure Tours',
+    description: 'Book Bali\'s best adventure experiences: ATV jungle rides, whitewater rafting, canyon tubing.',
+    images: ['/images/adventures/hero-banner.jpg'],
   },
 }
 
 const schemaData = [
   {
     "@context": "https://schema.org",
-    "@type": ["TravelAgency", "Organization"],
-    "@id": "https://www.sekarbaliactivity.com/#organization",
+    "@type": "TravelAgency",
     "name": "Sekar Bali Activity",
-    "legalName": "Sekar Bali Activity",
-    "description": "Bali's premier ATV quad bike adventure tours through jungles, volcanoes, and rice terraces. Plus village cycling, cooking classes, and coffee plantation experiences.",
+    "description": "Premium adventure tours in Bali — ATV rides, whitewater rafting, canyon tubing.",
     "url": "https://www.sekarbaliactivity.com",
     "telephone": CONTACT_PHONE_E164,
     "email": CONTACT_EMAIL,
-    "logo": "https://www.sekarbaliactivity.com/logo.png",
-    "image": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Pejeng Village",
-      "addressLocality": "Ubud, Gianyar",
-      "addressRegion": "Bali",
-      "postalCode": "80552",
-      "addressCountry": "ID"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -8.5133,
-      "longitude": 115.2989
-    },
-    "sameAs": [
-      "https://www.instagram.com/sekarbaliactivity",
-      "https://www.facebook.com/sekarbaliactivity",
-      "https://www.tripadvisor.com/Attraction_Review-g297701-d1234567-Reviews-Sekar_Bali_Activity-Ubud_Gianyar_Regency_Bali.html"
-    ],
+    "address": { "@type": "PostalAddress", "addressLocality": "Pejeng", "addressRegion": "Bali", "addressCountry": "ID" },
+    "image": "https://www.sekarbaliactivity.com/logo.png",
+    "sameAs": ["https://www.instagram.com/sekarbaliactivity", "https://www.facebook.com/sekarbaliactivity"],
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": CONTACT_PHONE_E164,
@@ -90,135 +65,124 @@ const schemaData = [
   },
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://www.sekarbaliactivity.com/#website",
-    "url": "https://www.sekarbaliactivity.com",
-    "name": "Sekar Bali Activity",
-    "description": "Bali ATV quad bike adventures, village cycling tours, cooking classes, and coffee plantation experiences.",
-    "publisher": {
-      "@id": "https://www.sekarbaliactivity.com/#organization"
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.sekarbaliactivity.com/tours?search={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "@type": "TouristTrip",
+    "name": "Single ATV Jungle Ride",
+    "description": "Conquer Bali's volcanic trails solo on a powerful ATV.",
+    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
+    "offers": { "@type": "Offer", "price": "650000", "priceCurrency": "IDR", "availability": "https://schema.org/InStock" }
   },
   {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    "name": "Bali ATV Jungle Trail Adventure",
-    "description": "Ride through tropical jungles, cross rivers, and explore hidden waterfalls on a powerful ATV quad bike. Suitable for beginners and experienced riders.",
-    "provider": {
-      "@id": "https://www.sekarbaliactivity.com/#organization"
-    },
-    "touristType": ["Couples", "Families", "Adventure seekers", "Small groups"],
-    "offers": {
-      "@type": "Offer",
-      "price": "850000",
-      "priceCurrency": "IDR",
-      "availability": "https://schema.org/InStock"
-    }
+    "name": "Tandem ATV Ride",
+    "description": "Share the thrill with a partner on a powerful tandem ATV.",
+    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
+    "offers": { "@type": "Offer", "price": "859000", "priceCurrency": "IDR", "availability": "https://schema.org/InStock" }
   },
   {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    "name": "Bali ATV Volcano Route",
-    "description": "An intermediate ATV adventure through volcanic black sand, pine forests, and stunning Mount Batur views.",
-    "provider": {
-      "@id": "https://www.sekarbaliactivity.com/#organization"
-    },
-    "touristType": ["Couples", "Adventure seekers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "1200000",
-      "priceCurrency": "IDR",
-      "availability": "https://schema.org/InStock"
-    }
+    "name": "Whitewater Rafting Adventure",
+    "description": "Navigate Class II-III rapids through a stunning river canyon.",
+    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
+    "offers": { "@type": "Offer", "price": "400000", "priceCurrency": "IDR", "availability": "https://schema.org/InStock" }
   },
   {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
-    "name": "Bali ATV Rice Terrace Signature Trail",
-    "description": "Our signature 4-hour ATV experience through Bali's iconic rice terraces, villages, jungles, and rivers.",
-    "provider": {
-      "@id": "https://www.sekarbaliactivity.com/#organization"
-    },
-    "touristType": ["Couples", "Families", "Adventure seekers"],
-    "offers": {
-      "@type": "Offer",
-      "price": "1500000",
-      "priceCurrency": "IDR",
-      "availability": "https://schema.org/InStock"
-    }
+    "name": "Canyon Tubing Experience",
+    "description": "Float through hidden canyons on an inflatable tube.",
+    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
+    "offers": { "@type": "Offer", "price": "359000", "priceCurrency": "IDR", "availability": "https://schema.org/InStock" }
   }
 ];
 
-const SETTINGS = {
-  siteName: "Sekar Bali Activity",
+const SETTINGS = { siteName: "Sekar Bali Activity" }
+
+const footerLinks = {
+  adventures: [
+    { label: "ATV Rides", href: "/#adventures" },
+    { label: "Whitewater Rafting", href: "/#adventures" },
+    { label: "Canyon Tubing", href: "/#adventures" },
+    { label: "All Pricing", href: "/#pricing" },
+  ],
+  explore: [
+    { label: "Tours", href: "/tours" },
+    { label: "Blog", href: "/blog" },
+    { label: "About Us", href: "/about" },
+    { label: "Contact", href: "/contact" },
+  ],
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const siteName = SETTINGS.siteName
 
   return (
     <html lang="en">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
-        />
+        {schemaData.map((schema, index) => (
+          <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+        ))}
       </head>
-      <body className={`${inter.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground transition-colors duration-200`}>
-        
-        {/* Interactive Navigation Header */}
+      <body className={`${inter.variable} ${outfit.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground`}>
         <HeaderNav siteName={siteName} />
-
-        {/* Main Content Area */}
         <div className="flex-1 flex flex-col w-full">
-          <CurrencyProvider>
-            {children}
-          </CurrencyProvider>
+          <CurrencyProvider>{children}</CurrencyProvider>
         </div>
 
-        {/* Footer — ATV Focused */}
-        <footer className="border-t border-brand-green/10 bg-brand-green text-sand pt-16 pb-16 transition-colors duration-200">
-          <div className="max-w-7xl mx-auto px-6 flex flex-col items-center justify-center gap-6 text-center">
-            <Link href="#top" className="flex items-center gap-2 font-bold text-2xl opacity-90 hover:opacity-100 transition-opacity">
-              <Mountain className="w-6 h-6" />
-              <span>{siteName}</span>
-            </Link>
-            <p className="text-sm opacity-80">
-              ATV Adventures · Jungle Trails · Volcano Routes · Rice Terraces
-            </p>
-            <a
-              href={`mailto:${CONTACT_EMAIL}`}
-              className="inline-flex items-center gap-2 text-sm opacity-90 hover:text-brand-accent-light transition-colors"
-            >
-              <Mail className="w-4 h-4" />
-              {CONTACT_EMAIL}
-            </a>
-            <p className="text-sm opacity-80 mt-4 flex flex-wrap gap-6 justify-center">
-              <Link href="/#atv-packages" className="hover:text-brand-accent-light transition-colors font-semibold">ATV Tours</Link>
-              <Link href="/tours" className="hover:text-brand-accent-light transition-colors">All Tours</Link>
-              <Link href="/transfers" className="hover:text-brand-accent-light transition-colors">Airport Transfers</Link>
-              <Link href="/blog" className="hover:text-brand-accent-light transition-colors">Blog</Link>
-              <Link href="/about" className="hover:text-brand-accent-light transition-colors">About Us</Link>
-              <Link href="/contact" className="hover:text-brand-accent-light transition-colors">Contact</Link>
-            </p>
-            <p className="text-xs opacity-60 mt-4">
-              Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline decoration-brand-green-light/30 underline-offset-4">Tumang Bali Class</a>
-            </p>
-            <p className="text-xs opacity-50 mt-4">
-              © {new Date().getFullYear()} {siteName}. All rights reserved.
-            </p>
+        {/* Footer */}
+        <footer className="bg-brand-green text-sand pt-16 pb-8">
+          <div className="max-w-7xl mx-auto px-6 lg:px-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+              {/* Brand */}
+              <div className="lg:col-span-1">
+                <Link href="/#top" className="flex items-center gap-2 mb-4">
+                  <img src="/logo.png" alt={siteName} className="h-12 w-auto object-contain brightness-0 invert opacity-90" />
+                </Link>
+                <p className="text-sm opacity-70 leading-relaxed mb-6">Premium adventure experiences in Bali. ATV rides, whitewater rafting, canyon tubing, and more. Expert local guides and all-inclusive packages.</p>
+                <div className="flex items-center gap-3">
+                  <a href="https://www.instagram.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-sand/20 transition-colors" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  </a>
+                  <a href="https://www.facebook.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-sand/20 transition-colors" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  </a>
+                </div>
+              </div>
+              {/* Adventures */}
+              <div>
+                <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Adventures</h4>
+                <ul className="space-y-3">
+                  {footerLinks.adventures.map((link) => (
+                    <li key={link.label}><Link href={link.href} className="text-sm opacity-70 hover:opacity-100 transition-opacity">{link.label}</Link></li>
+                  ))}
+                </ul>
+              </div>
+              {/* Explore */}
+              <div>
+                <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Explore</h4>
+                <ul className="space-y-3">
+                  {footerLinks.explore.map((link) => (
+                    <li key={link.label}><Link href={link.href} className="text-sm opacity-70 hover:opacity-100 transition-opacity">{link.label}</Link></li>
+                  ))}
+                </ul>
+              </div>
+              {/* Contact */}
+              <div>
+                <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Get in Touch</h4>
+                <ul className="space-y-4">
+                  <li><a href={CONTACT_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Phone className="w-4 h-4 shrink-0" />{CONTACT_PHONE_DISPLAY}</a></li>
+                  <li><a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Mail className="w-4 h-4 shrink-0" />{CONTACT_EMAIL}</a></li>
+                  <li className="flex items-start gap-3 text-sm opacity-70"><Leaf className="w-4 h-4 shrink-0 mt-0.5" /><span>Pejeng, Ubud<br />Bali, Indonesia</span></li>
+                </ul>
+              </div>
+            </div>
+            <div className="border-t border-sand/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+              <p className="text-xs opacity-50">© {new Date().getFullYear()} {siteName}. All rights reserved.</p>
+              <p className="text-xs opacity-40">Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-4">Tumang Bali Class</a></p>
+            </div>
           </div>
         </footer>
-
       </body>
     </html>
   )

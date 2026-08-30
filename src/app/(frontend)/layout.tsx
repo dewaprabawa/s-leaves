@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Leaf, Mail, Phone } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import HeaderNav from "@/components/HeaderNav"
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_E164, CONTACT_WHATSAPP_URL } from "@/lib/contact"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -49,10 +50,18 @@ const schemaData = [
     "name": "Sekar Bali Activity",
     "description": "Premium adventure tours in Bali — ATV rides, whitewater rafting, canyon tubing.",
     "url": "https://www.sekarbaliactivity.com",
-    "telephone": "+6281775723663",
+    "telephone": CONTACT_PHONE_E164,
+    "email": CONTACT_EMAIL,
     "address": { "@type": "PostalAddress", "addressLocality": "Pejeng", "addressRegion": "Bali", "addressCountry": "ID" },
     "image": "https://www.sekarbaliactivity.com/logo.png",
-    "sameAs": ["https://www.instagram.com/sekarbaliactivity", "https://www.facebook.com/sekarbaliactivity"]
+    "sameAs": ["https://www.instagram.com/sekarbaliactivity", "https://www.facebook.com/sekarbaliactivity"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": CONTACT_PHONE_E164,
+      "email": CONTACT_EMAIL,
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Indonesian"]
+    }
   },
   {
     "@context": "https://schema.org",
@@ -162,8 +171,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <div>
                 <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Get in Touch</h4>
                 <ul className="space-y-4">
-                  <li><a href="https://wa.me/6281775723663" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Phone className="w-4 h-4 shrink-0" />+62 817 7572 3663</a></li>
-                  <li><a href="mailto:info@sekarbaliactivity.com" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Mail className="w-4 h-4 shrink-0" />info@sekarbaliactivity.com</a></li>
+                  <li><a href={CONTACT_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Phone className="w-4 h-4 shrink-0" />{CONTACT_PHONE_DISPLAY}</a></li>
+                  <li><a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Mail className="w-4 h-4 shrink-0" />{CONTACT_EMAIL}</a></li>
                   <li className="flex items-start gap-3 text-sm opacity-70"><Leaf className="w-4 h-4 shrink-0 mt-0.5" /><span>Pejeng, Ubud<br />Bali, Indonesia</span></li>
                 </ul>
               </div>

@@ -23,10 +23,11 @@ const adventures = [
     pax: "1 Pax",
     price: 650000,
     image: "/images/adventures/atv-adventure.jpg",
-    description: "Conquer Bali's volcanic trails solo on a powerful ATV. Splash through rivers, navigate jungle paths, and experience the ultimate off-road adrenaline rush.",
-    highlights: ["Solo ride freedom", "Full safety gear", "Expert trail guide", "Photo package"],
+    description: "Looking for a fresh Bali adventure? Race solo on a powerful quad bike through jungle trails, muddy tracks, and river crossings — then add optional river tubing on the Wos River for a full day of sensation and joy.",
+    highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Zap,
+    href: "/tours/bali-atv-adventure",
   },
   {
     id: "tandem-atv",
@@ -35,10 +36,11 @@ const adventures = [
     pax: "2 Pax",
     price: 859000,
     image: "/images/adventures/atv-adventure.jpg",
-    description: "Share the thrill with a partner or friend on a powerful tandem ATV. Double the fun as you tackle muddy jungle trails together.",
-    highlights: ["Ride together", "Perfect for couples", "Full safety gear", "Photo package"],
+    description: "Share a complete Bali ATV experience with a partner. Tackle adrenaline-pumping jungle trails together, then combine with Wos River tubing packages for double the excitement.",
+    highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Users,
+    href: "/tours/bali-atv-adventure",
   },
   {
     id: "rafting",
@@ -59,7 +61,7 @@ const adventures = [
     pax: "Per Person",
     price: 359000,
     image: "/images/adventures/canyon-tubing.jpg",
-    description: "Drift through hidden canyons on an inflatable tube. Crystal-clear waters, moss-covered walls, and shafts of sunlight create a magical underground world.",
+    description: "Drift through hidden canyons on an inflatable tube. Crystal-clear waters, moss-covered walls, and shafts of sunlight create a magical underground world. Pair it with an ATV ride for the ultimate combo.",
     highlights: ["Hidden canyons", "Crystal-clear water", "Life jacket provided", "Nature guide"],
     duration: "2.5 hours",
     icon: Compass,
@@ -192,7 +194,7 @@ export default function Home() {
             Bali Adventures<br /><span className="text-accent-gold">Await</span>
           </h1>
           <p className="text-sand/80 text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
-            Conquer volcanic trails on ATVs, ride whitewater rapids, float through hidden canyons, or cycle Pejeng&apos;s rice terraces. Your Bali adventure starts here.
+            Looking for fresh activities in Bali? Conquer jungle trails on ATVs, combine with Wos River tubing, ride whitewater rapids, or cycle Pejeng&apos;s rice terraces.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
             <Link href={CONTACT_WHATSAPP_URL} target="_blank" className="inline-flex items-center h-12 md:h-14 px-8 md:px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm md:text-base uppercase tracking-wider border border-accent-gold-dark/20">
@@ -277,13 +279,67 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-                  <Link href={`${CONTACT_WHATSAPP_URL}?text=Hi! I'm interested in the ${adv.name} package.`} target="_blank" className="w-full flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors">
-                    Book This Adventure <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    {"href" in adv && adv.href ? (
+                      <Link href={adv.href} className="flex-1 flex items-center justify-center gap-2 h-12 rounded-xl border-2 border-brand-green/15 text-brand-green font-bold text-sm uppercase tracking-wider hover:bg-sand transition-colors">
+                        View Details
+                      </Link>
+                    ) : null}
+                    <Link href={`${CONTACT_WHATSAPP_URL}?text=Hi! I'm interested in the ${adv.name} package.`} target="_blank" className="flex-1 flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors">
+                      Book This Adventure <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
                 </div>
               </article>
             )
           })}
+        </div>
+      </section>
+
+      {/* ═══ KNOW BEFORE YOU GO ═══ */}
+      <section id="know-before-you-go" data-animate className="py-20 md:py-28 px-6 lg:px-12 bg-brand-green w-full">
+        <div className="max-w-5xl mx-auto">
+          <div className={`text-center mb-14 ${isVisible("know-before-you-go") ? "animate-fade-in-up" : "opacity-0"}`}>
+            <p className="text-accent-gold font-semibold tracking-[0.15em] uppercase text-sm mb-4">ATV &amp; river adventures</p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-sand uppercase leading-tight mb-4">
+              Know Before You Go
+            </h2>
+            <p className="text-lg text-sand/75 max-w-2xl mx-auto">
+              Complete Bali quad bike trips packed with sensation, excitement, and joy — with optional river tubing on the Wos River after you race the ATV track.
+            </p>
+          </div>
+          <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 ${isVisible("know-before-you-go") ? "animate-fade-in-up-delay-1" : "opacity-0"}`}>
+            <div className="rounded-3xl bg-sand/5 border border-sand/10 p-8 md:p-10">
+              <h3 className="font-display text-2xl font-bold text-accent-gold uppercase mb-6">What To Bring</h3>
+              <ul className="space-y-4">
+                {[
+                  "Changing clothes / dry cloth",
+                  "Sunscreen (recommended)",
+                  "Cash for personal expenses",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sand">
+                    <Check className="w-5 h-5 text-accent-gold shrink-0 mt-0.5" />
+                    <span className="text-base leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="rounded-3xl bg-sand/5 border border-sand/10 p-8 md:p-10">
+              <h3 className="font-display text-2xl font-bold text-accent-gold uppercase mb-6">What You Get</h3>
+              <ul className="space-y-4">
+                {[
+                  "Simple menu lunch",
+                  "Boot shoes & helmet",
+                  "Insurance coverage",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sand">
+                    <Shield className="w-5 h-5 text-accent-gold shrink-0 mt-0.5" />
+                    <span className="text-base leading-relaxed">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

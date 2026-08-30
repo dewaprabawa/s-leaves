@@ -6,7 +6,7 @@ export const SITE_NAME = 'Sekar Bali Activity'
 export const DEFAULT_TITLE =
   'Sekar Bali Activity | Bali ATV, Rafting, Canyon Tubing & Cycling Tours'
 export const DEFAULT_DESCRIPTION =
-  'Book Bali adventures in Pejeng, Ubud: ATV jungle rides, whitewater rafting, canyon tubing, and village cycling. All-inclusive prices, hotel pickup, and WhatsApp booking — inquire free today.'
+  'Book Bali adventures in Pejeng, Ubud: ATV jungle rides with optional Wos River tubing, whitewater rafting, canyon tubing, and village cycling. All-inclusive prices, hotel pickup, and WhatsApp booking — inquire free today.'
 
 export const OG_IMAGE = {
   url: '/images/adventures/og-cover.jpg',

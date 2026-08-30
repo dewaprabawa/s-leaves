@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     question: "What adventure activities do you offer?",
-    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Village Cycling Tour (promo from IDR 888,000 to IDR 650,000 with lunch or breakfast included)."
+    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Village Cycling Tour (promo from IDR 888,000 to IDR 650,000 with lunch or breakfast included). ATV trips can also be combined with river tubing on the Wos River."
   },
   {
     question: "Is hotel pickup included in the price?",
@@ -21,7 +21,11 @@ const faqs = [
   },
   {
     question: "What should I bring for the activities?",
-    answer: "Bring a change of clothes, sunscreen, and a waterproof phone case. We provide safety gear, helmets, life jackets, bikes/ATVs/rafts as needed. For the Village Cycling Tour, lunch or breakfast is included — just tell us your meal preference when you book."
+    answer: "Bring changing clothes or a dry cloth, sunscreen (recommended), and some cash for personal expenses. A waterproof phone case is also helpful. We provide boot shoes, helmet, a simple menu lunch, and insurance on ATV adventures. Towels and changing facilities are available at our base."
+  },
+  {
+    question: "What is included in the ATV adventure?",
+    answer: "Your ATV package includes boot shoes and helmet, a simple menu lunch, and insurance. You can combine your ride with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
   },
   {
     question: "Are group discounts available?",

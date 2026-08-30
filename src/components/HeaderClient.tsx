@@ -140,7 +140,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
 
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-600 dark:text-gray-300">
-            <Link href="/#atv-packages" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-bold">ATV Tours</Link>
+            <Link href="/tours/bali-atv-adventure" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-bold">ATV Tours</Link>
             <Link href="/tours" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">All Tours</Link>
             <Link href="/transfers" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Transfers</Link>
             <Link href="/about" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">About Us</Link>
@@ -314,7 +314,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
           {/* Mobile Nav Links */}
           <div className="flex flex-col gap-4 text-base font-semibold text-gray-700 dark:text-gray-200">
             <Link 
-              href="/#atv-packages" 
+              href="/tours/bali-atv-adventure" 
               onClick={() => setIsMobileMenuOpen(false)}
               className="hover:text-amber-600 dark:hover:text-amber-400 py-1 font-bold"
             >

@@ -94,6 +94,21 @@ const schemaData = [
     "description": "Float through hidden canyons on an inflatable tube.",
     "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
     "offers": { "@type": "Offer", "price": "359000", "priceCurrency": "IDR", "availability": "https://schema.org/InStock" }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Village Cycling Tour",
+    "description": "Cycle through Pejeng village lanes, temples, and Subak rice terraces. Includes lunch or breakfast.",
+    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
+    "offers": {
+      "@type": "Offer",
+      "price": "650000",
+      "priceCurrency": "IDR",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2026-12-31",
+      "description": "Promo price (was IDR 888,000). Lunch or breakfast included."
+    }
   }
 ];
 
@@ -104,6 +119,7 @@ const footerLinks = {
     { label: "ATV Rides", href: "/#adventures" },
     { label: "Whitewater Rafting", href: "/#adventures" },
     { label: "Canyon Tubing", href: "/#adventures" },
+    { label: "Village Cycling", href: "/#adventures" },
     { label: "All Pricing", href: "/#pricing" },
   ],
   explore: [
@@ -139,7 +155,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <Link href="/#top" className="flex items-center gap-2 mb-4">
                   <img src="/logo.png" alt={siteName} className="h-12 w-auto object-contain brightness-0 invert opacity-90" />
                 </Link>
-                <p className="text-sm opacity-70 leading-relaxed mb-6">Premium adventure experiences in Bali. ATV rides, whitewater rafting, canyon tubing, and more. Expert local guides and all-inclusive packages.</p>
+                <p className="text-sm opacity-70 leading-relaxed mb-6">Premium adventure experiences in Bali. ATV rides, whitewater rafting, canyon tubing, village cycling, and more. Expert local guides and all-inclusive packages.</p>
                 <div className="flex items-center gap-3">
                   <a href="https://www.instagram.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-sand/20 transition-colors" aria-label="Instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>

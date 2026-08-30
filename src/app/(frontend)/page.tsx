@@ -6,7 +6,7 @@ import { FAQSection } from '@/components/FAQSection'
 import {
   ArrowRight, MapPin, Users, Check, Clock3, Shield,
   Star, ChevronLeft, ChevronRight, Waves,
-  Bike, Compass
+  Bike, Compass, Zap
 } from 'lucide-react'
 import { CONTACT_EMAIL, CONTACT_WHATSAPP_URL } from '@/lib/contact'
 
@@ -26,7 +26,7 @@ const adventures = [
     description: "Conquer Bali's volcanic trails solo on a powerful ATV. Splash through rivers, navigate jungle paths, and experience the ultimate off-road adrenaline rush.",
     highlights: ["Solo ride freedom", "Full safety gear", "Expert trail guide", "Photo package"],
     duration: "2 hours",
-    icon: Bike,
+    icon: Zap,
   },
   {
     id: "tandem-atv",
@@ -64,10 +64,23 @@ const adventures = [
     duration: "2.5 hours",
     icon: Compass,
   },
+  {
+    id: "cycling",
+    name: "Village Cycling Tour",
+    tagline: "Rice terraces & villages",
+    pax: "Per Person",
+    price: 650000,
+    originalPrice: 888000,
+    image: "/images/adventures/cycling.jpg",
+    description: "Pedal through Pejeng's quiet village lanes, temples, and Subak rice terraces. Includes hotel pickup and your choice of lunch or breakfast.",
+    highlights: ["Lunch or breakfast included", "Rice terrace trails", "Local village guide", "Hotel pickup"],
+    duration: "4 hours",
+    icon: Bike,
+  },
 ]
 
 const stats = [
-  { value: "4", label: "Epic Activities" },
+  { value: "5", label: "Epic Activities" },
   { value: "2,500+", label: "Happy Guests" },
   { value: "5★", label: "Rated Experience" },
   { value: "24/7", label: "WhatsApp Support" },
@@ -77,6 +90,7 @@ const heroCarouselImages = [
   { src: "/images/adventures/atv-adventure.jpg", alt: "ATV Jungle Adventure", label: "ATV Adventure" },
   { src: "/images/adventures/rafting.jpg", alt: "Whitewater Rafting", label: "Rafting" },
   { src: "/images/adventures/canyon-tubing.jpg", alt: "Canyon Tubing", label: "Canyon Tubing" },
+  { src: "/images/adventures/cycling.jpg", alt: "Village Cycling Tour", label: "Cycling" },
 ]
 
 function formatIDR(amount: number) {
@@ -116,10 +130,17 @@ function HeroCarousel() {
 
 /* ─── Pricing Data ─── */
 const pricingData = [
-  { activity: "Single ATV", pax: "1 Pax", price: "IDR 650,000", highlight: false },
-  { activity: "Tandem ATV", pax: "2 Pax", price: "IDR 859,000", highlight: true },
-  { activity: "Whitewater Rafting", pax: "Per Person", price: "IDR 400,000", highlight: false },
-  { activity: "Canyon Tubing", pax: "Per Person", price: "IDR 359,000", highlight: false },
+  { activity: "Single ATV", pax: "1 Pax", price: 650000, highlight: false },
+  { activity: "Tandem ATV", pax: "2 Pax", price: 859000, highlight: true },
+  { activity: "Whitewater Rafting", pax: "Per Person", price: 400000, highlight: false },
+  { activity: "Canyon Tubing", pax: "Per Person", price: 359000, highlight: false },
+  {
+    activity: "Village Cycling Tour",
+    pax: "Per Person · Lunch or breakfast included",
+    price: 650000,
+    originalPrice: 888000,
+    highlight: false,
+  },
 ]
 
 /* ─── Main Page ─── */
@@ -171,7 +192,7 @@ export default function Home() {
             Bali Adventures<br /><span className="text-accent-gold">Await</span>
           </h1>
           <p className="text-sand/80 text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
-            Conquer volcanic trails on ATVs, ride whitewater rapids, and float through hidden canyons. Your Bali adventure starts here.
+            Conquer volcanic trails on ATVs, ride whitewater rapids, float through hidden canyons, or cycle Pejeng&apos;s rice terraces. Your Bali adventure starts here.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
             <Link href={CONTACT_WHATSAPP_URL} target="_blank" className="inline-flex items-center h-12 md:h-14 px-8 md:px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm md:text-base uppercase tracking-wider border border-accent-gold-dark/20">
@@ -204,7 +225,7 @@ export default function Home() {
         <div className={`text-center mb-16 ${isVisible("adventures") ? "animate-fade-in-up" : "opacity-0"}`}>
           <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Choose your thrill</p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Packages</h2>
-          <p className="text-lg text-brand-green-light max-w-2xl mx-auto">From heart-pumping ATV rides to serene canyon floats — we have the perfect adventure for every traveler.</p>
+          <p className="text-lg text-brand-green-light max-w-2xl mx-auto">From heart-pumping ATV rides to serene village cycling — we have the perfect adventure for every traveler.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
@@ -215,8 +236,24 @@ export default function Home() {
                 <div className="relative h-56 md:h-64 overflow-hidden">
                   <img src={adv.image} alt={adv.name} className="adventure-card-image w-full h-full object-cover" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  <div className="absolute top-4 right-4 bg-accent-gold text-brand-green text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-wide">
-                    From {formatIDR(adv.price)}
+                  <div className="absolute top-4 right-4 flex flex-col items-end gap-1.5">
+                    {"originalPrice" in adv && adv.originalPrice ? (
+                      <>
+                        <span className="bg-brand-green text-sand text-[10px] font-bold px-2.5 py-1 rounded-full shadow-lg uppercase tracking-wide">
+                          Save {formatIDR(adv.originalPrice - adv.price)}
+                        </span>
+                        <div className="bg-accent-gold text-brand-green text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-wide text-right">
+                          <span className="block text-[10px] line-through opacity-70 font-semibold normal-case tracking-normal">
+                            {formatIDR(adv.originalPrice)}
+                          </span>
+                          <span>From {formatIDR(adv.price)}</span>
+                        </div>
+                      </>
+                    ) : (
+                      <div className="bg-accent-gold text-brand-green text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-wide">
+                        From {formatIDR(adv.price)}
+                      </div>
+                    )}
                   </div>
                   <div className="absolute bottom-4 left-4 flex items-center gap-2 text-sand text-sm font-medium">
                     <Clock3 className="w-4 h-4" /><span>{adv.duration}</span>
@@ -262,6 +299,11 @@ export default function Home() {
             {pricingData.map((item, i) => (
               <div key={i} className={`pricing-row relative flex flex-col sm:flex-row items-center justify-between gap-4 p-6 md:p-8 rounded-2xl border-2 ${item.highlight ? "border-accent-gold bg-accent-gold/5 shadow-md" : "border-brand-green/10 bg-sand/50"}`}>
                 {item.highlight && <span className="absolute -top-3 left-6 bg-accent-gold text-brand-green text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>}
+                {"originalPrice" in item && item.originalPrice && (
+                  <span className="absolute -top-3 right-6 bg-brand-green text-sand text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                    Promo
+                  </span>
+                )}
                 <div className="flex flex-col sm:flex-row items-center gap-4 flex-1">
                   <div className="w-12 h-12 rounded-full bg-brand-green/8 flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5 text-brand-green" />
@@ -272,7 +314,22 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
-                  <span className="text-2xl md:text-3xl font-display font-bold text-brand-green">{item.price}</span>
+                  <div className="text-center sm:text-right">
+                    {"originalPrice" in item && item.originalPrice ? (
+                      <>
+                        <span className="block text-sm text-brand-green-light line-through opacity-70">
+                          {formatIDR(item.originalPrice)}
+                        </span>
+                        <span className="text-2xl md:text-3xl font-display font-bold text-brand-green">
+                          {formatIDR(item.price)}
+                        </span>
+                      </>
+                    ) : (
+                      <span className="text-2xl md:text-3xl font-display font-bold text-brand-green">
+                        {formatIDR(item.price)}
+                      </span>
+                    )}
+                  </div>
                   <Link href={`${CONTACT_WHATSAPP_URL}?text=Hi! I'd like to book ${item.activity}.`} target="_blank" className="hidden sm:inline-flex items-center h-10 px-6 rounded-full bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors">
                     Book
                   </Link>

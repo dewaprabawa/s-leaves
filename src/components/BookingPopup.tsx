@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { X, ExternalLink } from 'lucide-react';
+import { CONTACT_WHATSAPP_URL } from '@/lib/contact';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -75,7 +76,7 @@ ${paxText}
 
 Please confirm my booking!`;
 
-    const waUrl = `https://wa.me/6281775723663?text=${encodeURIComponent(msg)}`;
+    const waUrl = `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(msg)}`;
     window.open(waUrl, '_blank');
   };
 

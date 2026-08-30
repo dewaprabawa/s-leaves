@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { Suspense } from "react"
 import "../globals.css"
 import Link from "next/link"
-import { Menu, Leaf, Mountain } from "lucide-react"
+import { Mountain, Mail } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import HeaderNav from "@/components/HeaderNav"
+import { CONTACT_EMAIL, CONTACT_PHONE_E164 } from "@/lib/contact"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -57,8 +57,8 @@ const schemaData = [
     "legalName": "Sekar Bali Activity",
     "description": "Bali's premier ATV quad bike adventure tours through jungles, volcanoes, and rice terraces. Plus village cycling, cooking classes, and coffee plantation experiences.",
     "url": "https://www.sekarbaliactivity.com",
-    "telephone": "+6281775723663",
-    "email": "sekarprivatebaliactivity@gmail.com",
+    "telephone": CONTACT_PHONE_E164,
+    "email": CONTACT_EMAIL,
     "logo": "https://www.sekarbaliactivity.com/logo.png",
     "image": "https://www.sekarbaliactivity.com/images/cycling/rice-field-bikes.jpg",
     "priceRange": "$$",
@@ -82,7 +82,8 @@ const schemaData = [
     ],
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+6281775723663",
+      "telephone": CONTACT_PHONE_E164,
+      "email": CONTACT_EMAIL,
       "contactType": "customer service",
       "availableLanguage": ["English", "Indonesian"]
     }
@@ -194,6 +195,13 @@ export default function RootLayout({
             <p className="text-sm opacity-80">
               ATV Adventures · Jungle Trails · Volcano Routes · Rice Terraces
             </p>
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="inline-flex items-center gap-2 text-sm opacity-90 hover:text-brand-accent-light transition-colors"
+            >
+              <Mail className="w-4 h-4" />
+              {CONTACT_EMAIL}
+            </a>
             <p className="text-sm opacity-80 mt-4 flex flex-wrap gap-6 justify-center">
               <Link href="/#atv-packages" className="hover:text-brand-accent-light transition-colors font-semibold">ATV Tours</Link>
               <Link href="/tours" className="hover:text-brand-accent-light transition-colors">All Tours</Link>

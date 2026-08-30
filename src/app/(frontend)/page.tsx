@@ -8,6 +8,7 @@ import {
   Mountain, Zap, Star, ChevronRight, Bike, Coffee, 
   CookingPot, TreePine, Droplets, Eye, Flame, Heart
 } from 'lucide-react'
+import { CONTACT_EMAIL, CONTACT_WHATSAPP_URL } from '@/lib/contact'
 
 export default function Home() {
   const [activeTour, setActiveTour] = useState<TourConfig | null>(null);
@@ -87,7 +88,7 @@ export default function Home() {
               Explore ATV Tours <ArrowRight className="w-5 h-5" />
             </a>
             <a
-              href="https://wa.me/6281775723663"
+              href={CONTACT_WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 border-2 border-white/40 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-all cursor-pointer"
@@ -547,7 +548,7 @@ export default function Home() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link 
-              href="https://wa.me/6281775723663" 
+              href={CONTACT_WHATSAPP_URL} 
               target="_blank"
               className="inline-flex items-center justify-center gap-3 bg-brand-accent text-white px-10 py-5 rounded-full text-xl font-bold hover:scale-105 hover:bg-brand-accent-light transition-all shadow-xl w-full sm:w-auto"
             >
@@ -556,7 +557,7 @@ export default function Home() {
             </Link>
             
             <Link 
-              href="/contact" 
+              href={`mailto:${CONTACT_EMAIL}`} 
               className="inline-flex items-center justify-center gap-2 border-2 border-sand/30 text-sand px-10 py-5 rounded-full text-xl font-bold hover:bg-sand/10 transition-colors w-full sm:w-auto"
             >
               Or send an email

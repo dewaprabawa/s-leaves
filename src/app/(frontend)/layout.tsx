@@ -21,11 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.sekarbaliactivity.com'),
   title: "Sekar Bali Activity | Premium Bali Adventure Tours — ATV, Rafting, Canyon Tubing",
   description: "Book Bali's best adventure experiences: ATV jungle rides, whitewater rafting, canyon tubing. Expert guides, all-inclusive pricing, hotel pickup included.",
-  icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
-  },
+
   alternates: {
     canonical: '/',
   },

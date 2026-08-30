@@ -5,7 +5,17 @@ import Link from "next/link"
 import { Leaf, Mail, Phone } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import HeaderNav from "@/components/HeaderNav"
-import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_PHONE_E164, CONTACT_WHATSAPP_URL } from "@/lib/contact"
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from "@/lib/contact"
+import {
+  DEFAULT_DESCRIPTION,
+  DEFAULT_TITLE,
+  OG_IMAGE,
+  SITE_NAME,
+  SITE_URL,
+  buildAdventureItemListSchema,
+  buildOrganizationSchema,
+  buildWebsiteSchema,
+} from "@/lib/seo"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -19,100 +29,127 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.sekarbaliactivity.com'),
-  title: "Sekar Bali Activity | Premium Bali Adventure Tours — ATV, Rafting, Canyon Tubing",
-  description: "Book Bali's best adventure experiences: ATV jungle rides, whitewater rafting, canyon tubing. Expert guides, all-inclusive pricing, hotel pickup included.",
-
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: DEFAULT_TITLE,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: DEFAULT_DESCRIPTION,
+  applicationName: SITE_NAME,
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  category: 'travel',
+  keywords: [
+    'Bali ATV tour',
+    'Ubud ATV adventure',
+    'Bali whitewater rafting',
+    'Bali canyon tubing',
+    'Pejeng cycling tour',
+    'Ubud adventure packages',
+    'Sekar Bali Activity',
+    'Bali hotel pickup adventure',
+  ],
   alternates: {
     canonical: '/',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   openGraph: {
-    title: 'Sekar Bali Activity | Premium Bali Adventure Tours',
-    description: 'Book Bali\'s best adventure experiences: ATV jungle rides, whitewater rafting, canyon tubing. Expert guides, all-inclusive pricing, hotel pickup included.',
-    url: 'https://www.sekarbaliactivity.com',
-    siteName: 'Sekar Bali Activity',
-    images: [{ url: '/images/adventures/hero-banner.jpg', width: 896, height: 1195, alt: 'ATV jungle adventure through tropical rainforest trails' }],
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    images: [OG_IMAGE],
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sekar Bali Activity | Premium Bali Adventure Tours',
-    description: 'Book Bali\'s best adventure experiences: ATV jungle rides, whitewater rafting, canyon tubing.',
-    images: ['/images/adventures/hero-banner.jpg'],
+    title: DEFAULT_TITLE,
+    description: DEFAULT_DESCRIPTION,
+    images: [OG_IMAGE.url],
+  },
+  other: {
+    'geo.region': 'ID-BA',
+    'geo.placename': 'Pejeng, Ubud, Bali',
+    'geo.position': '-8.5133;115.2989',
+    ICBM: '-8.5133, 115.2989',
   },
 }
 
-const schemaData = [
+const adventureOffers = [
   {
-    "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Sekar Bali Activity",
-    "description": "Premium adventure tours in Bali — ATV rides, whitewater rafting, canyon tubing.",
-    "url": "https://www.sekarbaliactivity.com",
-    "telephone": CONTACT_PHONE_E164,
-    "email": CONTACT_EMAIL,
-    "address": { "@type": "PostalAddress", "addressLocality": "Pejeng", "addressRegion": "Bali", "addressCountry": "ID" },
-    "image": "https://www.sekarbaliactivity.com/logo.png",
-    "sameAs": ["https://www.instagram.com/sekarbaliactivity", "https://www.facebook.com/sekarbaliactivity"],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": CONTACT_PHONE_E164,
-      "email": CONTACT_EMAIL,
-      "contactType": "customer service",
-      "availableLanguage": ["English", "Indonesian"]
-    }
+    name: 'Single ATV Jungle Ride',
+    description: "Conquer Bali's volcanic trails solo on a powerful ATV.",
+    price: '650000',
+    image: '/images/adventures/atv-adventure.jpg',
   },
   {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Single ATV Jungle Ride",
-    "description": "Conquer Bali's volcanic trails solo on a powerful ATV.",
-    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
-    "offers": { "@type": "Offer", "price": "650000", "priceCurrency": "IDR", "availability": "https://schema.org/InStock" }
+    name: 'Tandem ATV Ride',
+    description: 'Share the thrill with a partner on a powerful tandem ATV.',
+    price: '859000',
+    image: '/images/adventures/atv-adventure.jpg',
   },
   {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Tandem ATV Ride",
-    "description": "Share the thrill with a partner on a powerful tandem ATV.",
-    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
-    "offers": { "@type": "Offer", "price": "859000", "priceCurrency": "IDR", "availability": "https://schema.org/InStock" }
+    name: 'Whitewater Rafting Adventure',
+    description: 'Navigate Class II-III rapids through a stunning river canyon.',
+    price: '400000',
+    image: '/images/adventures/rafting.jpg',
   },
   {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Whitewater Rafting Adventure",
-    "description": "Navigate Class II-III rapids through a stunning river canyon.",
-    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
-    "offers": { "@type": "Offer", "price": "400000", "priceCurrency": "IDR", "availability": "https://schema.org/InStock" }
+    name: 'Canyon Tubing Experience',
+    description: 'Float through hidden canyons on an inflatable tube.',
+    price: '359000',
+    image: '/images/adventures/canyon-tubing.jpg',
   },
   {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Canyon Tubing Experience",
-    "description": "Float through hidden canyons on an inflatable tube.",
-    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
-    "offers": { "@type": "Offer", "price": "359000", "priceCurrency": "IDR", "availability": "https://schema.org/InStock" }
+    name: 'Village Cycling Tour',
+    description: 'Cycle through Pejeng village lanes, temples, and Subak rice terraces. Includes lunch or breakfast.',
+    price: '650000',
+    originalPrice: '888000',
+    image: '/images/adventures/cycling.jpg',
   },
-  {
-    "@context": "https://schema.org",
-    "@type": "TouristTrip",
-    "name": "Village Cycling Tour",
-    "description": "Cycle through Pejeng village lanes, temples, and Subak rice terraces. Includes lunch or breakfast.",
-    "provider": { "@type": "TravelAgency", "name": "Sekar Bali Activity" },
-    "offers": {
-      "@type": "Offer",
-      "price": "650000",
-      "priceCurrency": "IDR",
-      "availability": "https://schema.org/InStock",
-      "priceValidUntil": "2026-12-31",
-      "description": "Promo price (was IDR 888,000). Lunch or breakfast included."
-    }
-  }
-];
+]
 
-const SETTINGS = { siteName: "Sekar Bali Activity" }
+const schemaData = [
+  buildOrganizationSchema(),
+  buildWebsiteSchema(),
+  buildAdventureItemListSchema(adventureOffers),
+  ...adventureOffers.map((adv) => ({
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    name: adv.name,
+    description: adv.description,
+    touristType: ['Couples', 'Families', 'Adventure seekers'],
+    provider: { '@id': `${SITE_URL}/#organization` },
+    image: adv.image ? `${SITE_URL}${adv.image}` : undefined,
+    offers: {
+      '@type': 'Offer',
+      price: adv.price,
+      priceCurrency: 'IDR',
+      availability: 'https://schema.org/InStock',
+      url: `${SITE_URL}/#adventures`,
+      ...(adv.originalPrice
+        ? {
+            priceValidUntil: '2026-12-31',
+            description: `Promo price (was IDR ${Number(adv.originalPrice).toLocaleString('id-ID')}). Lunch or breakfast included.`,
+          }
+        : {}),
+    },
+  })),
+]
+
+const SETTINGS = { siteName: SITE_NAME }
 
 const footerLinks = {
   adventures: [

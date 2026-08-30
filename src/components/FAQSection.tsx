@@ -17,15 +17,15 @@ const faqs = [
   },
   {
     question: "How do I book, and do I need to pay upfront?",
-    answer: "Booking is simple — just click 'Book Now' to message us directly on WhatsApp. Tell us your preferred date, group size, and activity. No upfront payment is required to reserve your spot."
+    answer: "Booking is simple — tap Book Now to message us on WhatsApp (+62 817 7572 3663). Tell us your date, group size, and activity (ATV, rafting, tubing, or cycling). No upfront payment is required to reserve your spot, and we usually reply within minutes during operating hours."
   },
   {
     question: "What should I bring for the activities?",
-    answer: "Just bring a change of clothes, sunscreen, and a waterproof phone case. We provide all safety gear, helmets, life jackets, and equipment. Towels and changing facilities are available at our base."
+    answer: "Bring a change of clothes, sunscreen, and a waterproof phone case. We provide safety gear, helmets, life jackets, bikes/ATVs/rafts as needed. For the Village Cycling Tour, lunch or breakfast is included — just tell us your meal preference when you book."
   },
   {
     question: "Are group discounts available?",
-    answer: "Yes! We offer special rates for groups of 4 or more. Contact us via WhatsApp for a custom group quote. We can also arrange private tours for larger parties."
+    answer: "Yes! Groups of 4+ get special rates. Message us on WhatsApp for a custom quote — we also arrange private tours for families and larger parties."
   }
 ];
 

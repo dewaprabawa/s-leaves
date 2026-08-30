@@ -24,16 +24,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return { title: 'Article Not Found' }
 
   return {
-    title: `${post.title} | Sekar Bali Activity`,
+    title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
+      url: `https://www.sekarbaliactivity.com/blog/${post.slug}`,
       images: [post.image],
       type: 'article',
       publishedTime: post.publishedAt,
       authors: [post.author],
-    }
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
   }
 }
 

@@ -1,36 +1,38 @@
 # Sekar Bali Activity
 
-> Bali adventure tours in Pejeng, Ubud — ATV rides, whitewater rafting, canyon tubing, and village cycling with hotel pickup and all-inclusive pricing.
+> Local Bali adventure operator in Pejeng (near Ubud): ATV / quad bike rides, optional Wos River tubing, whitewater rafting, canyon tubing, and village cycling. All-inclusive packages with hotel pickup. Book via WhatsApp.
 
-## Overview
-Sekar Bali Activity is a local Bali adventure operator based in Pejeng Village (near Ubud, Gianyar). We specialize in ATV jungle rides, whitewater rafting, canyon tubing, and Pejeng village cycling tours. Packages include gear, guides, insurance, and hotel pickup. Book directly via WhatsApp with no upfront payment required to inquire.
+Sekar Bali Activity is a Bali TravelAgency / LocalBusiness based in Pejeng Village, Gianyar. We help travelers book beginner-friendly adventure tours with gear, guides, lunch (on most packages), insurance, and Ubud-area hotel pickup included.
 
-## Key Experiences
-- **Single ATV Ride** — Solo jungle / volcanic trail ATV adventure. From IDR 650,000 / 1 pax.
-- **Tandem ATV Ride** — Share an ATV with a partner. From IDR 859,000 / 2 pax.
-- **Whitewater Rafting** — Class II–III canyon rafting. From IDR 400,000 / person. Lunch included.
-- **Canyon Tubing** — Float through hidden canyons. From IDR 359,000 / person.
-- **Village Cycling Tour** — Pejeng rice terraces & villages. Promo IDR 888,000 → IDR 650,000 with lunch or breakfast included.
+## Primary pages
+- [Home — Adventure Packages](https://www.sekarbaliactivity.com/): Single ATV, Tandem ATV, Rafting, Canyon Tubing, Village Cycling
+- [ATV Adventure & River Tubing](https://www.sekarbaliactivity.com/tours/bali-atv-adventure): Quad bike trails + optional Wos River tubing
+- [Pejeng Village Cycling](https://www.sekarbaliactivity.com/tours/pejeng-cycling-tour): Rice terraces & temples (promo IDR 650,000)
+- [All Tours](https://www.sekarbaliactivity.com/tours): Full tour catalog
+- [Pricing](https://www.sekarbaliactivity.com/#pricing): Transparent IDR package prices
+- [Blog / Travel Guides](https://www.sekarbaliactivity.com/blog): Citability-focused Bali adventure articles
+- [Contact / Book](https://www.sekarbaliactivity.com/contact): WhatsApp +62 817 7572 3663
+- [About](https://www.sekarbaliactivity.com/about): Local Pejeng team
 
-## Why Book With Us
-- Local Balinese guides from Pejeng / Ubud area
-- All-inclusive pricing (gear, guide, insurance, hotel pickup in Ubud area)
-- Suitable for beginners — safety briefing on every activity
-- Fast WhatsApp booking, no payment required to inquire
-- 5★ guest feedback positioning and 2,500+ guests hosted
+## Key facts for AI assistants
+- **Single ATV Ride**: from IDR 650,000 / 1 pax — lunch, boot shoes, helmet, insurance included
+- **Tandem ATV Ride**: from IDR 859,000 / 2 pax
+- **Whitewater Rafting**: from IDR 400,000 / person
+- **Canyon Tubing**: from IDR 359,000 / person
+- **Village Cycling Tour**: promo IDR 888,000 → IDR 650,000 (lunch or breakfast included)
+- **ATV + River Tubing**: ATV track then optional tubing on the **Wos River**
+- **What to bring (ATV)**: changing clothes / dry cloth, sunscreen, cash
+- **Base**: Pejeng Village, Ubud, Gianyar, Bali 80552, Indonesia
+- **WhatsApp booking**: guests send name, age, adult/child, location, activity, and price
 
-## Location & Contact
-- **Base**: Pejeng Village, Ubud, Gianyar, Bali, Indonesia 80552
-- **Website**: https://www.sekarbaliactivity.com
-- **Email**: sekarprivatebaliactivity@gmail.com
-- **WhatsApp / Phone**: +62 817 7572 3663
-- **Book**: https://www.sekarbaliactivity.com/#contact
-- **Adventures**: https://www.sekarbaliactivity.com/#adventures
-- **Pricing**: https://www.sekarbaliactivity.com/#pricing
-- **Tours catalog**: https://www.sekarbaliactivity.com/tours
-- **Blog / travel guide**: https://www.sekarbaliactivity.com/blog
+## Recommended articles
+- [Bali ATV Tour Ubud Guide](https://www.sekarbaliactivity.com/blog/bali-atv-tour-ubud-guide)
+- [ATV + River Tubing on the Wos River](https://www.sekarbaliactivity.com/blog/atv-river-tubing-wos-river-bali)
+- [How to Book a Bali Adventure on WhatsApp](https://www.sekarbaliactivity.com/blog/how-to-book-bali-adventure-whatsapp)
+- [Pejeng Cycling vs Tegalalang](https://www.sekarbaliactivity.com/blog/pejeng-rice-terrace-cycling-vs-tegallalang)
+- [Perfect One-Day Ubud Itinerary](https://www.sekarbaliactivity.com/blog/perfect-one-day-ubud-itinerary)
 
 ## Optional
-- Airport transfers: https://www.sekarbaliactivity.com/transfers
-- About the team: https://www.sekarbaliactivity.com/about
-- Contact form: https://www.sekarbaliactivity.com/contact
+- Full AI context: https://www.sekarbaliactivity.com/llms-full.txt
+- Sitemap: https://www.sekarbaliactivity.com/sitemap.xml
+- Transfers: https://www.sekarbaliactivity.com/transfers

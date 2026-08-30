@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X, Clock, MapPin } from "lucide-react"
+import BookNowButton from "@/components/BookNowButton"
 
 type HeaderNavProps = {
   siteName: string
@@ -70,9 +71,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link href="https://wa.me/6281775723663" target="_blank" className="hidden sm:inline-flex items-center h-10 md:h-11 px-6 md:px-8 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm uppercase tracking-wider border border-accent-gold-dark/20">
-              Book Now
-            </Link>
+            <BookNowButton className="hidden sm:inline-flex items-center h-10 md:h-11 px-6 md:px-8 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm uppercase tracking-wider border border-accent-gold-dark/20" />
             <button onClick={toggleMenu} className="lg:hidden flex items-center justify-center w-11 h-11 rounded-full bg-brand-green/8 text-brand-green transition-colors hover:bg-brand-green/15" aria-label="Toggle navigation menu" aria-expanded={isOpen}>
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
@@ -99,9 +98,10 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
             ))}
           </div>
           <div className="px-8 pb-10 flex flex-col gap-3">
-            <Link href="https://wa.me/6281775723663" target="_blank" onClick={closeMenu} className="w-full flex items-center justify-center h-14 rounded-full btn-gold-shimmer text-brand-green font-bold text-lg uppercase tracking-wider">
-              Book Now
-            </Link>
+            <BookNowButton
+              onOpen={closeMenu}
+              className="w-full flex items-center justify-center h-14 rounded-full btn-gold-shimmer text-brand-green font-bold text-lg uppercase tracking-wider"
+            />
             <p className="text-center text-xs text-brand-green-light opacity-60">Or call +62 817 7572 3663</p>
           </div>
         </div>

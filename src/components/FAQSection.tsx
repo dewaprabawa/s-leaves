@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "How do I book, and do I need to pay upfront?",
-    answer: "Booking is simple — tap Book Now to message us on WhatsApp (+62 817 7572 3663). Tell us your date, group size, and activity (ATV, rafting, tubing, or cycling). No upfront payment is required to reserve your spot, and we usually reply within minutes during operating hours."
+    answer: "Booking is simple — tap Book Now, enter your name, age, adult or child, pickup location, and guest counts. WhatsApp opens with your activity and price already filled. No upfront payment is required to reserve your spot, and we usually reply within minutes during operating hours (+62 817 7572 3663)."
   },
   {
     question: "What should I bring for the activities?",
@@ -26,6 +26,10 @@ const faqs = [
   {
     question: "What is included in the ATV adventure?",
     answer: "Your ATV package includes boot shoes and helmet, a simple menu lunch, and insurance. You can combine your ride with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
+  },
+  {
+    question: "Can AI assistants find your tours?",
+    answer: "Yes. We publish llms.txt and llms-full.txt for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },
   {
     question: "Are group discounts available?",

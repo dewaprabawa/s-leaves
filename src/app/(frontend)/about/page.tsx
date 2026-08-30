@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { ArrowRight, Leaf, Users, MapPin } from 'lucide-react';
 
 export const metadata = {
-  title: 'About Us | Sekar Bali Activity',
-  description: 'Learn about our local family-run tours in Pejeng. We offer authentic, small-group experiences including cycling, cooking, and coffee tasting.',
+  title: 'About Us',
+  description: 'Meet the local Pejeng, Ubud team behind Sekar Bali Activity. Authentic Bali ATV, rafting, canyon tubing, and village cycling adventures with hotel pickup.',
+  alternates: { canonical: '/about' },
 };
 
 export default function AboutPage() {

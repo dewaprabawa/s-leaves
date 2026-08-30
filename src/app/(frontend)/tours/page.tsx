@@ -4,22 +4,24 @@ import type { Metadata } from "next"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Explore Curated Tours | Sekar Bali Activity",
-  description: "Browse our hand-picked day tours, rice terrace cycling, authentic cooking classes, and Luwak coffee plantation experiences in Pejeng, Ubud, Bali.",
+  title: "Bali Adventure Tours",
+  description: "Browse Bali ATV rides, whitewater rafting, canyon tubing, Pejeng village cycling, cooking classes, and coffee tours. All-inclusive packages with hotel pickup — book via WhatsApp.",
   alternates: {
     canonical: "/tours",
   },
   openGraph: {
-    title: "Explore Curated Tours | Sekar Bali Activity",
-    description: "Browse our hand-picked day tours, rice terrace cycling, authentic cooking classes, and Luwak coffee plantation experiences in Pejeng, Ubud, Bali.",
+    title: "Bali Adventure Tours | Sekar Bali Activity",
+    description: "Browse Bali ATV rides, whitewater rafting, canyon tubing, Pejeng village cycling, and more. All-inclusive packages with hotel pickup.",
     url: "https://www.sekarbaliactivity.com/tours",
     siteName: "Sekar Bali Activity",
     type: "website",
+    images: [{ url: "/images/adventures/og-cover.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Explore Curated Tours | Sekar Bali Activity",
-    description: "Browse authentic village tours and experiences in Pejeng, Ubud, Bali.",
+    title: "Bali Adventure Tours | Sekar Bali Activity",
+    description: "ATV, rafting, canyon tubing, and village cycling in Ubud / Pejeng. Book via WhatsApp.",
+    images: ["/images/adventures/og-cover.jpg"],
   },
 }
 

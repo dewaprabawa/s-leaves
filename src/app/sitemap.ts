@@ -1,63 +1,61 @@
 import { MetadataRoute } from 'next'
 import { TOURS } from '@/data/tours'
 import { BLOG_POSTS } from '@/data/blog'
+import { SITE_URL } from '@/lib/seo'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.sekarbaliactivity.com'
+  const now = new Date()
 
-  // Core static pages
-  const corePages = [
+  const corePages: MetadataRoute.Sitemap = [
     {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
+      url: SITE_URL,
+      lastModified: now,
+      changeFrequency: 'weekly',
       priority: 1,
     },
     {
-      url: `${baseUrl}/tours`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
+      url: `${SITE_URL}/tours`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: now,
+      changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
+      url: `${SITE_URL}/transfers`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
     },
     {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
+      url: `${SITE_URL}/contact`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.85,
     },
     {
-      url: `${baseUrl}/transfers`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
+      url: `${SITE_URL}/about`,
+      lastModified: now,
+      changeFrequency: 'monthly',
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    }
   ]
 
-  // Dynamic Tour Pages
-  const tourPages = TOURS.map((tour) => ({
-    url: `${baseUrl}/tours/${tour.slug}`,
-    lastModified: new Date(),
-    changeFrequency: 'monthly' as const,
-    priority: 0.9,
+  const tourPages: MetadataRoute.Sitemap = TOURS.map((tour) => ({
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly',
+    priority: tour.slug === 'pejeng-cycling-tour' ? 0.95 : 0.9,
   }))
 
-  // Dynamic Blog Pages
-  const blogPages = BLOG_POSTS.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+  const blogPages: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.publishedAt),
-    changeFrequency: 'monthly' as const,
+    changeFrequency: 'monthly',
     priority: 0.7,
   }))
 

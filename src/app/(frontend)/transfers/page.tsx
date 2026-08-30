@@ -3,22 +3,24 @@ import TransfersListClient from "@/components/TransfersListClient"
 import { TRANSFERS } from "@/data/transfers"
 
 export const metadata: Metadata = {
-  title: "Private Airport Transfers | Sekar Bali Activity",
-  description: "Book reliable, premium private airport transfers in Bali with Sekar Bali Activity. Professional English-speaking drivers, flat rates, and flight tracking.",
+  title: "Private Airport Transfers",
+  description: "Book premium private Bali airport transfers with English-speaking drivers, flat rates, and flight tracking. Pair with ATV, rafting, or cycling adventures in Ubud.",
   alternates: {
     canonical: "/transfers",
   },
   openGraph: {
     title: "Private Airport Transfers | Sekar Bali Activity",
-    description: "Book reliable, premium private airport transfers in Bali with Sekar Bali Activity. Professional English-speaking drivers, flat rates, and flight tracking.",
+    description: "Book premium private Bali airport transfers with English-speaking drivers, flat rates, and flight tracking.",
     url: "https://www.sekarbaliactivity.com/transfers",
     siteName: "Sekar Bali Activity",
     type: "website",
+    images: [{ url: "/images/adventures/og-cover.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Private Airport Transfers | Sekar Bali Activity",
-    description: "Book reliable, premium private airport transfers in Bali with Sekar Bali Activity.",
+    description: "Flat-rate private Bali airport transfers with flight tracking.",
+    images: ["/images/adventures/og-cover.jpg"],
   },
 }
 

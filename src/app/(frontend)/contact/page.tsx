@@ -5,22 +5,24 @@ import ContactFormClient from "./ContactFormClient";
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Sekar Bali Activity",
-  description: "Get in touch with Sekar Bali Activity. Contact our Pejeng family team via WhatsApp, phone, or email to plan your village tour or cooking class in Ubud, Bali.",
+  title: "Contact Us",
+  description: "Contact Sekar Bali Activity in Pejeng, Ubud via WhatsApp (+62 817 7572 3663) or email sekarprivatebaliactivity@gmail.com to book ATV, rafting, tubing, or cycling adventures.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
     title: "Contact Us | Sekar Bali Activity",
-    description: "Get in touch with Sekar Bali Activity. Contact our Pejeng family team via WhatsApp, phone, or email to plan your village tour or cooking class in Ubud, Bali.",
+    description: "WhatsApp or email our Pejeng team to book Bali ATV, rafting, canyon tubing, or village cycling — free to inquire.",
     url: "https://www.sekarbaliactivity.com/contact",
     siteName: "Sekar Bali Activity",
     type: "website",
+    images: [{ url: "/images/adventures/og-cover.jpg", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact Us | Sekar Bali Activity",
-    description: "Get in touch with Sekar Bali Activity to book authentic Pejeng village experiences in Bali.",
+    description: "Book Bali adventures via WhatsApp or email. Free to inquire.",
+    images: ["/images/adventures/og-cover.jpg"],
   },
 }
 

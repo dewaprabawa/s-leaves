@@ -5,8 +5,9 @@ import { BLOG_POSTS } from '@/data/blog'
 import { ArrowRight, Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Blog & Travel Guide | Sekar Bali Activity',
-  description: 'Read the latest travel tips, cultural insights, and stories from Pejeng and Ubud, Bali.',
+  title: 'Blog & Travel Guide',
+  description: 'Bali travel tips, Pejeng culture, ATV & adventure guides, and Ubud itinerary ideas from Sekar Bali Activity — written to help you plan and book with confidence.',
+  alternates: { canonical: '/blog' },
 }
 
 export default function BlogIndexPage() {

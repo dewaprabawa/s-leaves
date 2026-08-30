@@ -145,7 +145,11 @@ export default function Home() {
       {/* ═══ HERO ═══ */}
       <section id="top" className="relative w-full min-h-screen flex flex-col justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/adventures/hero-banner.jpg" alt="Bali adventure landscape" className="w-full h-full object-cover" />
+          <img
+            src="/images/adventures/hero-banner.jpg"
+            alt="ATV jungle adventure ride through tropical rainforest trails"
+            className="w-full h-full object-cover object-[center_35%]"
+          />
           <div className="hero-overlay absolute inset-0" />
         </div>
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-32 pb-8 flex-1">

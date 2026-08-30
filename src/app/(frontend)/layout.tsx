@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description: 'Book Bali\'s best adventure experiences: ATV jungle rides, whitewater rafting, canyon tubing. Expert guides, all-inclusive pricing, hotel pickup included.',
     url: 'https://www.sekarbaliactivity.com',
     siteName: 'Sekar Bali Activity',
-    images: [{ url: '/images/adventures/hero-banner.jpg', width: 1200, height: 630, alt: 'Bali Adventure Tours' }],
+    images: [{ url: '/images/adventures/hero-banner.jpg', width: 896, height: 1195, alt: 'ATV jungle adventure through tropical rainforest trails' }],
     locale: 'en_US',
     type: 'website',
   },

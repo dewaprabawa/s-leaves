@@ -105,6 +105,21 @@ export function buildWebsiteSchema() {
     description: DEFAULT_DESCRIPTION,
     publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: 'en-US',
+    dateModified: '2026-08-31',
+    hasPart: [
+      {
+        '@type': 'WebPage',
+        name: 'llms.txt — AI assistant summary',
+        url: `${SITE_URL}/llms.txt`,
+        encodingFormat: 'text/plain',
+      },
+      {
+        '@type': 'WebPage',
+        name: 'llms-full.txt — extended AI context',
+        url: `${SITE_URL}/llms-full.txt`,
+        encodingFormat: 'text/plain',
+      },
+    ],
     potentialAction: {
       '@type': 'SearchAction',
       target: `${SITE_URL}/tours?search={search_term_string}`,

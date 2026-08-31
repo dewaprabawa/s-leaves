@@ -16,6 +16,11 @@ import {
   buildOrganizationSchema,
   buildWebsiteSchema,
 } from "@/lib/seo"
+import {
+  buildGeoQASchemas,
+  buildGeoWebPageSchema,
+  buildLlmsDiscoverySchema,
+} from "@/lib/geo"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -128,6 +133,9 @@ const adventureOffers = [
 const schemaData = [
   buildOrganizationSchema(),
   buildWebsiteSchema(),
+  buildGeoWebPageSchema(),
+  buildLlmsDiscoverySchema(),
+  ...buildGeoQASchemas(),
   buildAdventureItemListSchema(adventureOffers),
   ...adventureOffers.map((adv) => ({
     '@context': 'https://schema.org',
@@ -179,6 +187,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM content summary" />
         <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full context" />
+        <link rel="alternate" type="text/plain" href="/.well-known/llms.txt" title="LLM well-known summary" />
         {schemaData.map((schema, index) => (
           <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         ))}

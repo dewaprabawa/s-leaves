@@ -250,7 +250,7 @@ export default function Home() {
             >
               Book Now
             </button>
-            <Link href="#adventures" className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-transparent border-2 border-sand/40 text-sand font-bold text-sm md:text-base uppercase tracking-wider hover:bg-sand/10 transition-colors">
+            <Link href="#adventures" className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-white/70 border-2 border-brand-green/25 text-brand-green font-bold text-sm md:text-base uppercase tracking-wider hover:bg-white transition-colors shadow-sm">
               Explore Activities
             </Link>
           </div>

@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FAQSection } from '@/components/FAQSection'
+import GeoAnswerBlock from '@/components/GeoAnswerBlock'
 import { BookingPopup, type TourConfig } from '@/components/BookingPopup'
 import {
   ArrowRight, MapPin, Users, Check, Clock3, Shield,
@@ -502,6 +503,9 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-wider opacity-70">— Sarah M. · GetYourGuide Review</p>
         </div>
       </section>
+
+      {/* ═══ GEO / AI citability ═══ */}
+      <GeoAnswerBlock />
 
       {/* ═══ FAQ ═══ */}
       <FAQSection />

@@ -27,6 +27,8 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'CCBot', allow: '/' },
       { userAgent: 'FacebookBot', allow: '/' },
       { userAgent: 'meta-externalagent', allow: '/' },
+      { userAgent: 'cohere-ai', allow: '/' },
+      { userAgent: 'Amazonbot', allow: '/' },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,

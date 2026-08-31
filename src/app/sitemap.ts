@@ -59,5 +59,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...corePages, ...tourPages, ...blogPages]
+  const geoPages: MetadataRoute.Sitemap = [
+    {
+      url: `${SITE_URL}/llms.txt`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    {
+      url: `${SITE_URL}/llms-full.txt`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${SITE_URL}/.well-known/llms.txt`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.75,
+    },
+  ]
+
+  return [...corePages, ...tourPages, ...blogPages, ...geoPages]
 }

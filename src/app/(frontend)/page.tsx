@@ -233,13 +233,13 @@ export default function Home() {
           <div className="hero-overlay absolute inset-0" />
         </div>
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-32 pb-8 flex-1">
-          <p className="text-sand/80 text-sm md:text-base font-semibold tracking-[0.2em] uppercase mb-4 animate-fade-in-up">
+          <p className="hero-eyebrow text-sm md:text-base font-semibold tracking-[0.2em] uppercase mb-4 animate-fade-in-up">
             Premium Adventure Experiences · Bali
           </p>
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-sand uppercase leading-[0.9] tracking-tight mb-6 animate-fade-in-up-delay-1">
-            Bali Adventures<br /><span className="text-accent-gold">Await</span>
+          <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold uppercase leading-[0.9] tracking-tight mb-6 animate-fade-in-up-delay-1">
+            Bali Adventures<br /><span className="hero-headline-accent">Await</span>
           </h1>
-          <p className="text-sand/80 text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
+          <p className="hero-subcopy text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
             Looking for fresh activities in Bali? Conquer jungle trails on ATVs, combine with Wos River tubing, ride whitewater rapids, or cycle Pejeng&apos;s rice terraces.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">

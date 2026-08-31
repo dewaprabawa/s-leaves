@@ -30,7 +30,6 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
   const navLinks = [
     { href: "/#adventures", label: "Adventures" },
     { href: "/#pricing", label: "Pricing" },
-    { href: "/tours", label: "Tours" },
     { href: "/blog", label: "Blog" },
     { href: "/about", label: "About" },
     { href: "/#contact", label: "Contact" },

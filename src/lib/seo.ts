@@ -122,7 +122,7 @@ export function buildWebsiteSchema() {
     ],
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${SITE_URL}/tours?search={search_term_string}`,
+      target: `${SITE_URL}/#adventures`,
       'query-input': 'required name=search_term_string',
     },
   }

@@ -54,7 +54,7 @@ export default function HeroSearchPanel() {
     if (search.trim()) params.set("search", search.trim())
     if (date) params.set("date", date)
     
-    router.push(`/tours?${params.toString()}`)
+    router.push(`/#adventures`)
   }
 
   return (
@@ -91,7 +91,7 @@ export default function HeroSearchPanel() {
                 onClick={() => {
                   setSearch(tour.title)
                   setShowSuggestions(false)
-                  router.push(`/tours/${tour.slug}`)
+                  router.push('/#adventures')
                 }}
                 className="flex items-center gap-3 px-4 py-3 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 cursor-pointer transition-colors"
               >

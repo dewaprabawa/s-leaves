@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import dynamic from 'next/dynamic';
 import { X, ExternalLink } from 'lucide-react';
 import { formatIdr, openWhatsAppBooking } from '@/lib/whatsapp';
@@ -30,6 +31,7 @@ export function BookingPopup({
   tour: TourConfig | null
   tourOptions?: TourConfig[]
 }) {
+  const [mounted, setMounted] = useState(false);
   const [guestName, setGuestName] = useState("");
   const [guestAge, setGuestAge] = useState("");
   const [guestType, setGuestType] = useState<"Adult" | "Child">("Adult");
@@ -47,6 +49,10 @@ export function BookingPopup({
   const activeTour =
     (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
     tour
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (isOpen && tour) {
@@ -72,7 +78,17 @@ export function BookingPopup({
     setTime(activeTour.times[0] || "")
   }, [activeTour?.id])
 
-  if (!isOpen || !activeTour) return null;
+  // Keep dialog above the fixed navbar and lock page scroll while open
+  useEffect(() => {
+    if (!isOpen) return
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = "hidden"
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
+  }, [isOpen])
+
+  if (!mounted || !isOpen || !activeTour) return null;
 
   const hasKidPricing = activeTour.kidPrice !== null && activeTour.kidPrice !== undefined;
   const totalPax = adults + kids;
@@ -113,10 +129,15 @@ export function BookingPopup({
     });
   };
 
-  return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6">
+  return createPortal(
+    <div
+      className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Book experience"
+    >
       <div className="bg-sand w-full max-w-4xl max-h-[95vh] overflow-y-auto rounded-3xl shadow-2xl relative flex flex-col md:flex-row">
-        <button onClick={onClose} className="fixed top-4 right-4 md:absolute md:top-4 md:right-4 z-[2000] p-2.5 bg-white hover:bg-gray-100 rounded-full text-brand-green transition-colors shadow-xl border border-brand-green/10" aria-label="Close booking">
+        <button onClick={onClose} className="absolute top-4 right-4 z-[210] p-2.5 bg-white hover:bg-gray-100 rounded-full text-brand-green transition-colors shadow-xl border border-brand-green/10" aria-label="Close booking">
           <X className="w-6 h-6 md:w-5 md:h-5" />
         </button>
         
@@ -315,6 +336,7 @@ export function BookingPopup({
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   )
 }

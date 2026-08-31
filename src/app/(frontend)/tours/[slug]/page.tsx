@@ -1,11 +1,10 @@
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
-import BookingForm from "@/components/BookingForm"
-import ReviewForm from "@/components/ReviewForm"
+import TourBookingCard from "@/components/TourBookingCard"
 import Image from "next/image"
 import Link from "next/link"
-import { Star, Award, ShieldCheck, ArrowLeft, MapPin, Clock, Info, HelpCircle, Camera } from "lucide-react"
-import { TOURS, type Tour } from "@/data/tours"
+import { Star, ArrowLeft, MapPin, Clock, Info, HelpCircle, Camera } from "lucide-react"
+import { TOURS } from "@/data/tours"
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
@@ -40,8 +39,6 @@ export default async function TourDetailPage({ params }: Props) {
   }
 
   const basePrice = tour.basePrice || 0
-  const childPrice = tour.childPrice || Math.round(basePrice * 0.7)
-  const currencySymbol = 'Rp'
   const heroImage = tour.heroImage?.url || 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80'
 
   const tourSchema = {
@@ -248,18 +245,21 @@ export default async function TourDetailPage({ params }: Props) {
               </div>
             )}
 
-            {/* Reviews Section */}
-            <div className="bg-white p-8 rounded-2xl border border-brand-green/10 space-y-6">
-              <h2 className="text-xl font-bold text-brand-green">Customer Reviews</h2>
-              <ReviewForm tourId={tour.id} />
-            </div>
-
           </div>
 
-          {/* Booking Card (Right 1 col) */}
+          {/* Book card (Right 1 col) */}
           <div className="lg:col-span-1">
             <div className="sticky top-24">
-              <BookingForm tour={tour as any} />
+              <TourBookingCard
+                tourId={tour.id}
+                tourSlug={tour.slug}
+                title={tour.title}
+                duration={tour.duration}
+                basePrice={basePrice}
+                childPrice={tour.childPrice}
+                getYourGuideUrl={tour.getYourGuideUrl}
+                activityOptions={tour.activityOptions}
+              />
             </div>
           </div>
 

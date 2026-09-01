@@ -35,7 +35,7 @@ const adventures = [
     price: 650000,
     childPrice: 550000,
     image: "/images/adventures/atv-adventure.jpg",
-    description: "Looking for a fresh Bali adventure? Race solo on a powerful quad bike through jungle trails, muddy tracks, and river crossings — then add optional river tubing on the Wos River for a full day of sensation and joy.",
+    description: "Private Bali ATV tour through jungle trails, muddy tracks, and river crossings — beginner friendly with expert guides. Add optional Wos River tubing for the best ATV + tubing combo near Ubud.",
     highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Zap,
@@ -50,7 +50,7 @@ const adventures = [
     price: 859000,
     childPrice: null as number | null,
     image: "/images/adventures/atv-adventure.jpg",
-    description: "Share a complete Bali ATV experience with a partner. Tackle adrenaline-pumping jungle trails together, then combine with Wos River tubing packages for double the excitement.",
+    description: "Private tandem ATV tour Bali — share a quad bike adventure with a partner through jungle trails. All-inclusive with lunch, safety gear, and optional Wos River tubing combo.",
     highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Users,
@@ -96,7 +96,7 @@ const adventures = [
     childPrice: 550000,
     originalPrice: 888000,
     image: "/images/adventures/cycling.jpg",
-    description: "Pedal through Pejeng's quiet village lanes, temples, and Subak rice terraces. Includes hotel pickup and your choice of lunch or breakfast.",
+    description: "Small-group Pejeng village cycling tour — downhill routes through morning markets, ancient temples, and UNESCO Subak rice terraces. Hotel pickup and lunch or breakfast included.",
     highlights: ["Lunch or breakfast included", "Rice terrace trails", "Local village guide", "Hotel pickup"],
     duration: "4 hours",
     icon: Bike,
@@ -259,11 +259,11 @@ export default function Home() {
             Premium Adventure Experiences · Bali
           </p>
           <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold uppercase leading-[0.9] tracking-tight mb-6 animate-fade-in-up-delay-1">
-            <span className="block">Bali Adventures</span>
-            <span className="hero-headline-accent block">Await</span>
+            <span className="block">Private Bali ATV</span>
+            <span className="hero-headline-accent block">& Ubud Adventures</span>
           </h1>
           <p className="hero-subcopy text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
-            Looking for fresh activities in Bali? Conquer jungle trails on ATVs, combine with Wos River tubing, ride whitewater rapids, or cycle Pejeng&apos;s rice terraces.
+            Book all-inclusive quad bike tours, ATV + Wos River tubing combos, whitewater rafting, or small-group Pejeng village cycling — with hotel pickup across Ubud.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
             <button

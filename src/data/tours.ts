@@ -78,7 +78,7 @@ export const TOURS: Tour[] = [
       },
     ],
     shortDescription:
-      "Looking for fresh activities in Bali? Complete quad bike (ATV) trips with optional Wos River tubing — boot shoes, helmet, lunch, and insurance included.",
+      "Private Bali ATV tour & quad bike adventure through jungle trails — beginner friendly, all-inclusive with lunch, helmet, and insurance. Add Wos River tubing for the best ATV combo near Ubud.",
     fullDescription: `**Looking for New and Fresh Activities in Bali?**
 
 If you want an adrenaline-packed day beyond the usual tourist trail, our Bali ATV Adventure delivers a complete quad bike experience through jungle paths, muddy tracks, and river crossings. Every ride is designed for sensation, excitement, and joy — whether you go solo or share a tandem ATV with a partner.
@@ -228,7 +228,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Explore the real Bali away from the crowds through historic Pejeng district, morning markets, and expansive rice terraces.",
+    shortDescription: "Small-group Pejeng village cycling tour — downhill routes through morning markets, Subak rice terraces, and ancient temples away from Ubud crowds.",
     fullDescription: `**Escape the Tourist Trail and Discover the Real Bali**
 
 If you are looking for an authentic, off-the-beaten-path experience in Bali, our Pejeng Village & Terrace Cycling Tour is exactly what you need. While most tourists crowd into the center of Ubud, this dedicated cycling tour takes you away from the traffic and deep into the historic Pejeng district—an ancient kingdom that time forgot. 

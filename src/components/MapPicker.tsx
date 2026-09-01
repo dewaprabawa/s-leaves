@@ -109,7 +109,7 @@ export default function MapPicker({
   return (
     <div className="relative w-full h-full">
       {/* Search Bar Overlay */}
-      <div className="absolute top-4 left-4 right-4 z-[400]">
+      <div className="absolute top-4 left-4 right-16 md:right-4 z-[400]">
         <form onSubmit={handleSearch} className="flex bg-white rounded-xl shadow-lg border border-brand-green/20 overflow-hidden">
           <input 
             type="text" 

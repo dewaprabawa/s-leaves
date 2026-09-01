@@ -8,6 +8,11 @@ export const DEFAULT_TITLE =
 export const DEFAULT_DESCRIPTION =
   'Book Bali adventures in Pejeng, Ubud: ATV jungle rides with optional Wos River tubing, whitewater rafting, canyon tubing, and village cycling. All-inclusive prices, hotel pickup, and WhatsApp booking — inquire free today.'
 
+/** Shorter variants for social previews (og:title ≤60, og:description ≤200) */
+export const OG_TITLE = 'Sekar Bali Activity | Bali ATV & Adventure Tours'
+export const OG_DESCRIPTION =
+  'Bali ATV, rafting, tubing & cycling near Ubud. All-inclusive packages with hotel pickup. Book via WhatsApp — free to inquire.'
+
 export const OG_IMAGE = {
   url: '/images/adventures/og-cover.jpg',
   width: 1200,
@@ -84,14 +89,6 @@ export function buildOrganizationSchema() {
       opens: '07:00',
       closes: '20:00',
     },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5',
-      bestRating: '5',
-      worstRating: '1',
-      ratingCount: '2500',
-      reviewCount: '2500',
-    },
   }
 }
 
@@ -120,11 +117,6 @@ export function buildWebsiteSchema() {
         encodingFormat: 'text/plain',
       },
     ],
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${SITE_URL}/#adventures`,
-      'query-input': 'required name=search_term_string',
-    },
   }
 }
 

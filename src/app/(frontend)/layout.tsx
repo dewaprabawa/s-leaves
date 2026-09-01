@@ -9,7 +9,9 @@ import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from "@/li
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
+  OG_DESCRIPTION,
   OG_IMAGE,
+  OG_TITLE,
   SITE_NAME,
   SITE_URL,
   buildAdventureItemListSchema,
@@ -72,8 +74,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
+    title: OG_TITLE,
+    description: OG_DESCRIPTION,
     url: SITE_URL,
     siteName: SITE_NAME,
     images: [OG_IMAGE],
@@ -82,8 +84,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: DEFAULT_TITLE,
-    description: DEFAULT_DESCRIPTION,
+    title: OG_TITLE,
+    description: OG_DESCRIPTION,
     images: [OG_IMAGE.url],
   },
   other: {

@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     question: "What adventure activities do you offer?",
-    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Village Cycling Tour (promo from IDR 888,000 to IDR 650,000 with lunch or breakfast included). ATV trips can also be combined with river tubing on the Wos River."
+    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Ubud Ricefield Cycling Tour (IDR 450,000 per person with breakfast, lunch & dinner included). ATV trips can also be combined with river tubing on the Wos River."
   },
   {
     question: "Is hotel pickup included in the price?",

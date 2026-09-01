@@ -89,19 +89,18 @@ const adventures = [
   },
   {
     id: "cycling",
-    name: "Village Cycling Tour",
-    tagline: "Rice terraces & villages",
+    name: "Ubud Ricefield Cycling Tour",
+    tagline: "Ricefields & village life",
     pax: "Per Person",
-    price: 650000,
-    childPrice: 550000,
-    originalPrice: 888000,
+    price: 450000,
+    childPrice: null as number | null,
     image: "/images/adventures/cycling.jpg",
-    description: "Small-group Pejeng village cycling tour — downhill routes through morning markets, ancient temples, and UNESCO Subak rice terraces. Hotel pickup and lunch or breakfast included.",
-    highlights: ["Lunch or breakfast included", "Rice terrace trails", "Local village guide", "Hotel pickup"],
-    duration: "4 hours",
+    description: "Relaxing bike ride through green Ubud ricefields and quiet village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
+    highlights: ["Breakfast, lunch & dinner included", "Rice harvesting activity", "Balinese house & carving studio", "Hotel pickup & insurance"],
+    duration: "Full day",
     icon: Bike,
     minPax: 1,
-    times: ["08:30", "13:30"],
+    times: ["13:30"],
   },
 ] as const
 
@@ -127,7 +126,7 @@ const heroCarouselImages = [
   { src: "/images/adventures/atv-adventure.jpg", alt: "ATV Jungle Adventure", label: "ATV Adventure" },
   { src: "/images/adventures/rafting.jpg", alt: "Whitewater Rafting", label: "Rafting" },
   { src: "/images/adventures/canyon-tubing.jpg", alt: "Canyon Tubing", label: "Canyon Tubing" },
-  { src: "/images/adventures/cycling.jpg", alt: "Village Cycling Tour", label: "Cycling" },
+  { src: "/images/adventures/cycling.jpg", alt: "Ubud Ricefield Cycling Tour", label: "Cycling" },
 ]
 
 const travelGuides = [
@@ -190,11 +189,10 @@ const pricingData = [
   { activity: "Whitewater Rafting", adventureId: "rafting", pax: "Per Person", price: 400000, highlight: false },
   { activity: "Canyon Tubing", adventureId: "canyon-tubing", pax: "Per Person", price: 359000, highlight: false },
   {
-    activity: "Village Cycling Tour",
+    activity: "Ubud Ricefield Cycling Tour",
     adventureId: "cycling",
-    pax: "Per Person · Lunch or breakfast included",
-    price: 650000,
-    originalPrice: 888000,
+    pax: "Per Person · Breakfast, lunch & dinner included",
+    price: 450000,
     highlight: false,
   },
 ]

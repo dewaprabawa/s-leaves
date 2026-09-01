@@ -8,7 +8,7 @@ import { BookingPopup, type TourConfig } from '@/components/BookingPopup'
 import {
   ArrowRight, MapPin, Users, Check, Clock3, Shield,
   Star, ChevronLeft, ChevronRight, Waves,
-  Bike, Compass, Zap
+  Bike, Compass, Zap, type LucideIcon
 } from 'lucide-react'
 import { KnowBeforeCards } from '@/components/KnowBeforeCards'
 import {
@@ -25,8 +25,34 @@ const HERO_BLUR_DATA_URL =
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
+type Adventure = {
+  id: string
+  name: string
+  tagline: string
+  pax: string
+  price: number
+  originalPrice?: number
+  childPrice?: number | null
+  image: string
+  description: string
+  highlights: string[]
+  duration: string
+  icon: LucideIcon
+  minPax: number
+  times: string[]
+}
+
+type PricingRow = {
+  activity: string
+  adventureId: string
+  pax: string
+  price: number
+  originalPrice?: number
+  highlight: boolean
+}
+
 /* ─── Adventure Data ─── */
-const adventures = [
+const adventures: Adventure[] = [
   {
     id: "single-atv",
     name: "Single ATV Ride",
@@ -102,9 +128,9 @@ const adventures = [
     minPax: 1,
     times: ["13:30"],
   },
-] as const
+]
 
-function toTourConfig(adv: (typeof adventures)[number]): TourConfig {
+function toTourConfig(adv: Adventure): TourConfig {
   return {
     id: adv.id,
     title: adv.name,
@@ -183,7 +209,7 @@ function HeroCarousel() {
 }
 
 /* ─── Pricing Data ─── */
-const pricingData = [
+const pricingData: PricingRow[] = [
   { activity: "Single ATV", adventureId: "single-atv", pax: "1 Pax", price: 650000, highlight: false },
   { activity: "Tandem ATV", adventureId: "tandem-atv", pax: "2 Pax", price: 859000, highlight: true },
   { activity: "Whitewater Rafting", adventureId: "rafting", pax: "Per Person", price: 400000, highlight: false },

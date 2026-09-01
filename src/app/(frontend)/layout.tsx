@@ -17,6 +17,7 @@ import {
   buildAdventureItemListSchema,
   buildOrganizationSchema,
   buildWebsiteSchema,
+  type AdventureOffer,
 } from "@/lib/seo"
 import {
   buildGeoQASchemas,
@@ -104,7 +105,7 @@ export const metadata: Metadata = {
   },
 }
 
-const adventureOffers = [
+const adventureOffers: AdventureOffer[] = [
   {
     name: 'Single ATV Jungle Ride',
     description:

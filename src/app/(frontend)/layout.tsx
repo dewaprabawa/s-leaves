@@ -14,6 +14,7 @@ import {
   OG_TITLE,
   SITE_NAME,
   SITE_URL,
+  type AdventureOffer,
   buildAdventureItemListSchema,
   buildOrganizationSchema,
   buildWebsiteSchema,
@@ -104,7 +105,7 @@ export const metadata: Metadata = {
   },
 }
 
-const adventureOffers = [
+const adventureOffers: AdventureOffer[] = [
   {
     name: 'Single ATV Jungle Ride',
     description:

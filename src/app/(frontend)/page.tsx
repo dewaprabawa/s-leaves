@@ -25,8 +25,34 @@ const HERO_BLUR_DATA_URL =
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
+type AdventureCard = {
+  id: string
+  name: string
+  tagline: string
+  pax: string
+  price: number
+  childPrice: number | null
+  image: string
+  description: string
+  highlights: string[]
+  duration: string
+  icon: React.ComponentType<{ className?: string }>
+  minPax: number
+  times: string[]
+  originalPrice?: number
+}
+
+type PricingRow = {
+  activity: string
+  adventureId: string
+  pax: string
+  price: number
+  highlight: boolean
+  originalPrice?: number
+}
+
 /* ─── Adventure Data ─── */
-const adventures = [
+const adventures: AdventureCard[] = [
   {
     id: "single-atv",
     name: "Single ATV Ride",
@@ -102,9 +128,9 @@ const adventures = [
     minPax: 1,
     times: ["13:30"],
   },
-] as const
+]
 
-function toTourConfig(adv: (typeof adventures)[number]): TourConfig {
+function toTourConfig(adv: AdventureCard): TourConfig {
   return {
     id: adv.id,
     title: adv.name,
@@ -183,7 +209,7 @@ function HeroCarousel() {
 }
 
 /* ─── Pricing Data ─── */
-const pricingData = [
+const pricingData: PricingRow[] = [
   { activity: "Single ATV", adventureId: "single-atv", pax: "1 Pax", price: 650000, highlight: false },
   { activity: "Tandem ATV", adventureId: "tandem-atv", pax: "2 Pax", price: 859000, highlight: true },
   { activity: "Whitewater Rafting", adventureId: "rafting", pax: "Per Person", price: 400000, highlight: false },
@@ -310,7 +336,7 @@ export default function Home() {
                   <img src={adv.image} alt={adv.name} className="adventure-card-image w-full h-full object-cover" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <div className="absolute top-4 right-4 flex flex-col items-end gap-1.5">
-                    {"originalPrice" in adv && adv.originalPrice ? (
+                    {adv.originalPrice ? (
                       <>
                         <span className="bg-brand-green text-sand text-[10px] font-bold px-2.5 py-1 rounded-full shadow-lg uppercase tracking-wide">
                           Save {formatIDR(adv.originalPrice - adv.price)}
@@ -400,11 +426,11 @@ export default function Home() {
             {pricingData.map((item, i) => (
               <div key={i} className={`pricing-row relative flex flex-col sm:flex-row items-center justify-between gap-4 p-6 md:p-8 rounded-2xl border-2 ${item.highlight ? "border-accent-gold bg-accent-gold/5 shadow-md" : "border-brand-green/10 bg-sand/50"}`}>
                 {item.highlight && <span className="absolute -top-3 left-6 bg-accent-gold text-brand-green text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>}
-                {"originalPrice" in item && item.originalPrice && (
+                {item.originalPrice ? (
                   <span className="absolute -top-3 right-6 bg-brand-green text-sand text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                     Promo
                   </span>
-                )}
+                ) : null}
                 <div className="flex flex-col sm:flex-row items-center gap-4 flex-1">
                   <div className="w-12 h-12 rounded-full bg-brand-green/8 flex items-center justify-center shrink-0">
                     <MapPin className="w-5 h-5 text-brand-green" />
@@ -416,7 +442,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-6">
                   <div className="text-center sm:text-right">
-                    {"originalPrice" in item && item.originalPrice ? (
+                    {item.originalPrice ? (
                       <>
                         <span className="block text-sm text-brand-green-light line-through opacity-70">
                           {formatIDR(item.originalPrice)}

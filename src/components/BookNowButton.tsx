@@ -43,6 +43,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     adultPrice: 450000,
     kidPrice: null,
     minPax: 1,
+    freeUbudPickup: true,
   },
 ]
 

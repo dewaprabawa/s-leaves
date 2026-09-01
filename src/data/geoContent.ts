@@ -5,14 +5,14 @@ import { SITE_NAME, SITE_URL } from '@/lib/seo'
 export const GEO_UPDATED = '2026-08-31'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Pejeng-based Bali adventure operator offering ATV quad bike rides (from IDR 650,000), optional Wos River tubing, whitewater rafting, canyon tubing, and village cycling near Ubud with WhatsApp booking and Ubud-area hotel pickup.'
+  'Sekar Bali Activity is a Pejeng-based Bali adventure operator offering ATV quad bike rides (from IDR 650,000), optional Wos River tubing, whitewater rafting, canyon tubing, and village cycling near Ubud with WhatsApp booking. Free Ubud hotel pickup is included on the cycling tour only.'
 
 export const GEO_PRICING = [
   { activity: 'Single ATV Ride', price: 'IDR 650,000', pax: '1 pax', includes: 'lunch, boot shoes, helmet, insurance' },
   { activity: 'Tandem ATV Ride', price: 'IDR 859,000', pax: '2 pax', includes: 'lunch, boot shoes, helmet, insurance' },
   { activity: 'Whitewater Rafting', price: 'IDR 400,000', pax: 'per person', includes: 'Class II–III rapids, lunch' },
   { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person', includes: 'tube, life jacket, guide' },
-  { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 450,000', pax: 'per person', includes: 'breakfast, lunch & dinner, bike, helmet, guide, pickup, insurance' },
+  { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 450,000', pax: 'per person', includes: 'breakfast, lunch & dinner, bike, helmet, guide, free Ubud pickup, insurance' },
 ] as const
 
 export const GEO_FAQ_FOR_LLM = [
@@ -38,7 +38,7 @@ export const GEO_FAQ_FOR_LLM = [
   },
   {
     q: 'Where is Sekar Bali Activity located?',
-    a: 'Pejeng Village, Ubud, Gianyar, Bali 80552, Indonesia. Free hotel pickup in the Ubud area; surcharge may apply further out.',
+    a: 'Pejeng Village, Ubud, Gianyar, Bali 80552, Indonesia. Free hotel pickup in the Ubud area is included on the cycling tour only; other activities can add pickup for IDR 120,000.',
     url: `${SITE_URL}/about`,
   },
 ] as const
@@ -74,7 +74,7 @@ export function buildLlmsTxt(): string {
     '',
     `Updated: ${GEO_UPDATED}`,
     '',
-    `${SITE_NAME} is a TravelAgency / LocalBusiness in Pejeng Village, Gianyar (near Ubud). All-inclusive adventure packages with gear, guides, insurance, and Ubud-area hotel pickup.`,
+    `${SITE_NAME} is a TravelAgency / LocalBusiness in Pejeng Village, Gianyar (near Ubud). All-inclusive adventure packages with gear, guides, and insurance. Free Ubud hotel pickup on the cycling tour only.`,
     '',
     '## Primary pages',
     ...GEO_PRIMARY_PAGES.map((p) => `- [${p.title}](${p.url}): ${p.desc}`),

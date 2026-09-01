@@ -21,7 +21,7 @@ export const atvWhatYouGetItems: KnowBeforeItem[] = [
   {
     icon: Car,
     title: "Hotel pickup & drop-off",
-    desc: "Free within Ubud and nearby areas — small surcharge for Seminyak, Kuta, or Canggu.",
+    desc: "Optional add-on — IDR 120,000 surcharge. Free Ubud pickup is included on the cycling tour only.",
   },
   {
     icon: Bike,

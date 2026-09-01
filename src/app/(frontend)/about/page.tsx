@@ -4,7 +4,7 @@ import { ArrowRight, Leaf, Users, MapPin } from 'lucide-react';
 
 export const metadata = {
   title: 'About Us',
-  description: 'Meet the local Pejeng, Ubud team behind Sekar Bali Activity. Authentic Bali ATV, rafting, canyon tubing, and village cycling adventures with hotel pickup.',
+  description: 'Meet the local Pejeng, Ubud team behind Sekar Bali Activity. Authentic Bali ATV, rafting, canyon tubing, and village cycling adventures. Free Ubud hotel pickup on the cycling tour only.',
   alternates: { canonical: '/about' },
 };
 

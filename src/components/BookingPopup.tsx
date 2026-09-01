@@ -11,13 +11,14 @@ const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: ()
 const UBUD_CENTER = { lat: -8.5069, lng: 115.2625 };
 
 export interface TourConfig {
-  id: string;
-  title: string;
-  times: string[];
-  adultPrice: number;
-  kidPrice?: number | null;
-  minPax: number;
-  getYourGuideUrl?: string;
+  id: string
+  title: string
+  times: string[]
+  adultPrice: number
+  kidPrice?: number | null
+  minPax: number
+  getYourGuideUrl?: string
+  freeUbudPickup?: boolean
 }
 
 export function BookingPopup({
@@ -96,7 +97,10 @@ export function BookingPopup({
   const adultPrice = activeTour.adultPrice;
   const kidPrice = activeTour.kidPrice || 0;
   const outOfUbudFee = 120000;
-  const totalCost = (adults * adultPrice) + (kids * kidPrice) + (isOutUbud && location ? outOfUbudFee : 0);
+  const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
+  const pickupFee =
+    location && (hasFreeUbudPickup ? isOutUbud : true) ? outOfUbudFee : 0;
+  const totalCost = (adults * adultPrice) + (kids * kidPrice) + pickupFee;
   const nameOk = guestName.trim().length >= 2;
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
   const locationOk = Boolean(location) && locationDetails.trim().length >= 2;
@@ -124,7 +128,13 @@ export function BookingPopup({
       price: totalCost,
       notes: [
         notes.trim() || null,
-        isOutUbud ? "Out of Ubud pickup (+IDR 120,000)" : "Ubud area pickup (free)",
+        !location
+          ? null
+          : hasFreeUbudPickup
+            ? isOutUbud
+              ? "Out of Ubud pickup (+IDR 120,000)"
+              : "Ubud area pickup (free)"
+            : "Hotel pickup (+IDR 120,000)",
       ].filter(Boolean).join(" · ") || undefined,
     });
   };
@@ -149,7 +159,15 @@ export function BookingPopup({
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
             <strong className="block mb-1">Pickup Location</strong>
             {location ? (
-               isOutUbud ? <span className="text-red-600 font-bold block">Out of Ubud: +120,000 IDR charge</span> : <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free Pickup</span>
+               hasFreeUbudPickup ? (
+                 isOutUbud ? (
+                   <span className="text-red-600 font-bold block">Out of Ubud: +120,000 IDR charge</span>
+                 ) : (
+                   <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free Pickup</span>
+                 )
+               ) : (
+                 <span className="text-red-600 font-bold block">Pickup surcharge: +120,000 IDR</span>
+               )
             ) : <span className="opacity-70">Tap on the map to set your pickup pin.</span>}
           </div>
         </div>
@@ -317,6 +335,12 @@ export function BookingPopup({
           </div>
 
           <div className="mt-6 pt-6 border-t border-brand-green/10">
+            {pickupFee > 0 && (
+              <div className="flex justify-between items-center mb-3 text-sm text-brand-green-light">
+                <span>Pickup surcharge</span>
+                <span className="font-semibold text-brand-green">{formatIdr(pickupFee)}</span>
+              </div>
+            )}
             <div className="flex justify-between items-end mb-5">
               <span className="text-brand-green-light font-bold">Total Estimate</span>
               <span className="text-3xl font-bold text-brand-green">{formatIdr(totalCost)}</span>

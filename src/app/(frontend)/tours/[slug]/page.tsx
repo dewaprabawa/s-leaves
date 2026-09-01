@@ -3,8 +3,15 @@ import type { Metadata } from "next"
 import TourBookingCard from "@/components/TourBookingCard"
 import Image from "next/image"
 import Link from "next/link"
-import { Star, ArrowLeft, MapPin, Clock, Info, HelpCircle, Camera } from "lucide-react"
+import { Star, ArrowLeft, MapPin, Clock, Info, HelpCircle, Camera, Package } from "lucide-react"
 import { TOURS } from "@/data/tours"
+import { KnowBeforeCards } from "@/components/KnowBeforeCards"
+import {
+  atvWhatYouGetItems,
+  atvWhatToBringItems,
+  atvWhatYouGetFooter,
+  atvWhatToBringFooter,
+} from "@/data/atvKnowBefore"
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 
@@ -179,6 +186,21 @@ export default async function TourDetailPage({ params }: Props) {
                 </ReactMarkdown>
               </div>
             </div>
+
+            {tour.slug === "bali-atv-adventure" ? (
+              <div className="space-y-6">
+                <h2 className="text-xl font-bold text-brand-green flex items-center gap-2">
+                  <Package className="w-5 h-5 text-brand-green" /> Know Before You Go
+                </h2>
+                <KnowBeforeCards
+                  whatYouGet={atvWhatYouGetItems}
+                  whatToBring={atvWhatToBringItems}
+                  whatYouGetFooter={atvWhatYouGetFooter}
+                  whatToBringFooter={atvWhatToBringFooter}
+                  variant="light"
+                />
+              </div>
+            ) : null}
 
             {/* Photo Gallery */}
             {tour.gallery && tour.gallery.length > 0 && (

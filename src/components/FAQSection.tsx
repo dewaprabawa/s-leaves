@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "What is included in the ATV adventure?",
-    answer: "Your ATV package includes boot shoes and helmet, a simple menu lunch, and insurance. You can combine your ride with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
+    answer: "Your ATV package includes hotel pickup and drop-off (Ubud area), a guided ATV ride, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Combine with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
   },
   {
     question: "Can AI assistants find your tours?",

@@ -8,9 +8,15 @@ import { BookingPopup, type TourConfig } from '@/components/BookingPopup'
 import {
   ArrowRight, MapPin, Users, Check, Clock3, Shield,
   Star, ChevronLeft, ChevronRight, Waves,
-  Bike, Compass, Zap, Car, Utensils, UserCheck,
-  Shirt, Sun, Wallet, Smartphone, type LucideIcon,
+  Bike, Compass, Zap
 } from 'lucide-react'
+import { KnowBeforeCards } from '@/components/KnowBeforeCards'
+import {
+  atvWhatYouGetItems,
+  atvWhatToBringItems,
+  atvWhatYouGetFooter,
+  atvWhatToBringFooter,
+} from '@/data/atvKnowBefore'
 import { CONTACT_EMAIL } from '@/lib/contact'
 
 /** Tiny LQIP for the hero — keeps LCP fast while the optimized image loads */
@@ -175,63 +181,6 @@ const pricingData = [
     price: 650000,
     originalPrice: 888000,
     highlight: false,
-  },
-]
-
-type KnowBeforeItem = {
-  icon: LucideIcon
-  title: string
-  desc: string
-}
-
-const whatYouGetItems: KnowBeforeItem[] = [
-  {
-    icon: Car,
-    title: "Hotel pickup & drop-off",
-    desc: "Free within Ubud and nearby areas — small surcharge for Seminyak, Kuta, or Canggu.",
-  },
-  {
-    icon: Bike,
-    title: "Guided ATV trail ride",
-    desc: "Single or tandem quad bike through jungle paths, muddy tracks, and river crossings.",
-  },
-  {
-    icon: Shield,
-    title: "Boot shoes, helmet & insurance",
-    desc: "Full safety gear fitted at our base before you hit the track.",
-  },
-  {
-    icon: Utensils,
-    title: "Simple menu lunch",
-    desc: "A satisfying meal served after your ride so you can refuel.",
-  },
-  {
-    icon: UserCheck,
-    title: "Safety briefing & expert guide",
-    desc: "English-speaking guidance — no prior ATV experience required.",
-  },
-]
-
-const whatToBringItems: KnowBeforeItem[] = [
-  {
-    icon: Shirt,
-    title: "Changing clothes or dry cloth",
-    desc: "Trails get muddy — fresh clothes make the ride home comfortable.",
-  },
-  {
-    icon: Sun,
-    title: "Sunscreen",
-    desc: "Recommended for open trail sections and midday rides.",
-  },
-  {
-    icon: Wallet,
-    title: "Cash for extras",
-    desc: "Snacks, souvenirs, gratuities, or optional combo upgrades.",
-  },
-  {
-    icon: Smartphone,
-    title: "Waterproof phone case",
-    desc: "Optional but handy for photos on muddy trails and river crossings.",
   },
 ]
 
@@ -420,69 +369,14 @@ export default function Home() {
               Complete Bali quad bike trips packed with sensation, excitement, and joy — with optional river tubing on the Wos River after you race the ATV track.
             </p>
           </div>
-          <div className={`grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 ${isVisible("know-before-you-go") ? "animate-fade-in-up-delay-1" : "opacity-0"}`}>
-            <div className="rounded-3xl bg-sand/5 border border-sand/10 p-8 md:p-10">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 rounded-xl bg-accent-gold/15 flex items-center justify-center shrink-0">
-                  <Shield className="w-5 h-5 text-accent-gold" />
-                </div>
-                <h3 className="font-display text-2xl font-bold text-accent-gold uppercase">What You Get</h3>
-              </div>
-              <p className="text-sand/60 text-sm mb-6 leading-relaxed">
-                Every ATV package is all-inclusive — gear, guide, lunch, and insurance are covered in your price.
-              </p>
-              <ul className="space-y-5">
-                {whatYouGetItems.map((item) => {
-                  const Icon = item.icon
-                  return (
-                    <li key={item.title} className="flex items-start gap-4">
-                      <div className="w-9 h-9 rounded-lg bg-sand/10 flex items-center justify-center shrink-0 mt-0.5">
-                        <Icon className="w-4 h-4 text-accent-gold" />
-                      </div>
-                      <div>
-                        <p className="text-sand font-semibold text-base leading-snug">{item.title}</p>
-                        <p className="text-sand/65 text-sm leading-relaxed mt-1">{item.desc}</p>
-                      </div>
-                    </li>
-                  )
-                })}
-              </ul>
-              <p className="mt-6 pt-6 border-t border-sand/10 text-sand/55 text-sm leading-relaxed">
-                Want more thrills? Ask about combining your ATV ride with{" "}
-                <span className="text-sand/80 font-medium">river tubing on the Wos River</span> when you book.
-              </p>
-            </div>
-            <div className="rounded-3xl bg-sand/5 border border-sand/10 p-8 md:p-10">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 rounded-xl bg-accent-gold/15 flex items-center justify-center shrink-0">
-                  <Shirt className="w-5 h-5 text-accent-gold" />
-                </div>
-                <h3 className="font-display text-2xl font-bold text-accent-gold uppercase">What To Bring</h3>
-              </div>
-              <p className="text-sand/60 text-sm mb-6 leading-relaxed">
-                A short packing list so you stay comfortable on muddy trails and cool after the ride.
-              </p>
-              <ul className="space-y-5">
-                {whatToBringItems.map((item) => {
-                  const Icon = item.icon
-                  return (
-                    <li key={item.title} className="flex items-start gap-4">
-                      <div className="w-9 h-9 rounded-lg bg-sand/10 flex items-center justify-center shrink-0 mt-0.5">
-                        <Icon className="w-4 h-4 text-accent-gold" />
-                      </div>
-                      <div>
-                        <p className="text-sand font-semibold text-base leading-snug">{item.title}</p>
-                        <p className="text-sand/65 text-sm leading-relaxed mt-1">{item.desc}</p>
-                      </div>
-                    </li>
-                  )
-                })}
-              </ul>
-              <p className="mt-6 pt-6 border-t border-sand/10 text-sand/55 text-sm leading-relaxed">
-                <Check className="w-4 h-4 text-accent-gold inline-block mr-1.5 align-text-bottom" />
-                Towels and changing facilities are available at our base — no need to pack your own.
-              </p>
-            </div>
+          <div className={isVisible("know-before-you-go") ? "animate-fade-in-up-delay-1" : "opacity-0"}>
+            <KnowBeforeCards
+              whatYouGet={atvWhatYouGetItems}
+              whatToBring={atvWhatToBringItems}
+              whatYouGetFooter={atvWhatYouGetFooter}
+              whatToBringFooter={atvWhatToBringFooter}
+              variant="dark"
+            />
           </div>
         </div>
       </section>

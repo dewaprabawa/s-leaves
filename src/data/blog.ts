@@ -21,8 +21,8 @@ export const BLOG_POSTS: BlogPost[] = [
 
 > **Key Takeaways**
 > - Single ATV from IDR 650,000 (1 pax); Tandem from IDR 859,000 (2 pax)
-> - Included: boot shoes, helmet, simple lunch, insurance, safety briefing
-> - Bring: changing clothes / dry cloth, sunscreen, cash
+> - Included: hotel pickup, guided ATV ride, boot shoes, helmet, lunch, insurance, safety briefing
+> - Bring: changing clothes / dry cloth, sunscreen, cash, waterproof phone case (optional)
 > - Optional combo: race the ATV track, then tube the Wos River
 > - Book via WhatsApp with your name, age, adult/child, location, activity, and price
 
@@ -36,16 +36,20 @@ Pejeng sits just east of central Ubud, so hotel pickup is fast and the trails re
 
 | Include | Details |
 | --- | --- |
-| Boot shoes & helmet | Fitted at base before the ride |
+| Hotel pickup & drop-off | Free within Ubud and nearby areas |
+| Guided ATV trail ride | Single or tandem through jungle, mud, and river crossings |
+| Boot shoes, helmet & insurance | Fitted at base before the ride |
 | Simple menu lunch | Served after the adventure |
-| Insurance | Coverage included in the package price |
-| Guide & briefing | English-speaking trail guidance |
+| Safety briefing & expert guide | English-speaking — no experience needed |
 
 ## What To Bring
 
-1. Changing clothes or a dry cloth  
-2. Sunscreen (recommended)  
-3. Cash for personal expenses  
+1. **Changing clothes or a dry cloth** — trails get muddy  
+2. **Sunscreen** (recommended) — for open trail sections  
+3. **Cash for extras** — snacks, souvenirs, or gratuities  
+4. **Waterproof phone case** (optional) — handy for trail photos  
+
+Towels and changing facilities are available at our base.
 
 ## ATV + River Tubing Combo
 

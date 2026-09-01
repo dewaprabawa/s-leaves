@@ -261,7 +261,7 @@ export default function Home() {
             <span className="hero-headline-accent block">& Ubud Adventures</span>
           </h1>
           <p className="hero-subcopy text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
-            Book all-inclusive quad bike tours, ATV + Wos River tubing combos, whitewater rafting, or small-group Pejeng village cycling — with hotel pickup across Ubud.
+            Book all-inclusive quad bike tours, ATV + Wos River tubing combos, whitewater rafting, or Ubud ricefield cycling — with hotel pickup across Ubud.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
             <button

@@ -89,6 +89,15 @@ export function BookingPopup({
     }
   }, [isOpen])
 
+  useEffect(() => {
+    if (!isOpen) return
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose()
+    }
+    document.addEventListener("keydown", handleKeyDown)
+    return () => document.removeEventListener("keydown", handleKeyDown)
+  }, [isOpen, onClose])
+
   if (!mounted || !isOpen || !activeTour) return null;
 
   const hasKidPricing = activeTour.kidPrice !== null && activeTour.kidPrice !== undefined;
@@ -145,13 +154,35 @@ export function BookingPopup({
       role="dialog"
       aria-modal="true"
       aria-label="Book experience"
+      onClick={onClose}
     >
-      <div className="bg-sand w-full max-w-4xl max-h-[95vh] overflow-y-auto rounded-3xl shadow-2xl relative flex flex-col md:flex-row">
-        <button onClick={onClose} className="absolute top-4 right-4 z-[210] p-2.5 bg-white hover:bg-gray-100 rounded-full text-brand-green transition-colors shadow-xl border border-brand-green/10" aria-label="Close booking">
-          <X className="w-6 h-6 md:w-5 md:h-5" />
+      <div
+        className="relative w-full max-w-4xl max-h-[95vh]"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <button
+          type="button"
+          onClick={onClose}
+          className="hidden md:inline-flex absolute top-4 right-4 z-[250] p-2.5 bg-white hover:bg-gray-100 rounded-full text-brand-green transition-colors shadow-xl border border-brand-green/10"
+          aria-label="Close booking"
+        >
+          <X className="w-5 h-5" />
         </button>
-        
-        <div className="w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
+
+        <div className="bg-sand w-full max-h-[95vh] overflow-y-auto rounded-3xl shadow-2xl relative flex flex-col md:flex-row">
+        <div className="md:hidden sticky top-0 z-[300] flex items-center justify-between gap-3 px-4 py-3 bg-sand/95 backdrop-blur border-b border-brand-green/10 rounded-t-3xl">
+          <h2 className="text-xl font-serif text-brand-green font-bold truncate">Book Experience</h2>
+          <button
+            type="button"
+            onClick={onClose}
+            className="shrink-0 p-2.5 bg-white hover:bg-gray-100 rounded-full text-brand-green transition-colors shadow-lg border border-brand-green/10"
+            aria-label="Close booking"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+
+        <div className="w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
           <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={(lat, lng, isOut) => {
             setLocation({lat, lng});
             setIsOutUbud(isOut);
@@ -173,7 +204,7 @@ export function BookingPopup({
         </div>
 
         <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col">
-          <h2 className="text-3xl font-serif text-brand-green font-bold mb-2">Book Experience</h2>
+          <h2 className="hidden md:block text-3xl font-serif text-brand-green font-bold mb-2">Book Experience</h2>
           {tourOptions && tourOptions.length > 1 ? (
             <div className="mb-6 pb-4 border-b border-brand-green/10">
               <label className="block text-brand-green font-bold text-sm mb-2">Activity *</label>
@@ -358,6 +389,7 @@ export function BookingPopup({
               Sends your name, age, adult/child, location, activity, and price to WhatsApp.
             </p>
           </div>
+        </div>
         </div>
       </div>
     </div>,

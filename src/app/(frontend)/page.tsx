@@ -62,7 +62,7 @@ const adventures: Adventure[] = [
     price: 650000,
     childPrice: 550000,
     image: "/images/adventures/atv-adventure.jpg",
-    description: "Private Bali ATV tour through jungle trails, muddy tracks, and river crossings — beginner friendly with expert guides. Add optional Wos River tubing for the best ATV + tubing combo near Ubud.",
+    description: "Private Bali ATV tour at All New Bali Adventure arena — jungle trails, muddy tracks, and river crossings. Beginner friendly with expert guides. Add optional Wos River tubing for the best ATV + tubing combo near Ubud.",
     highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Zap,
@@ -78,7 +78,7 @@ const adventures: Adventure[] = [
     price: 859000,
     childPrice: null as number | null,
     image: "/images/adventures/atv-adventure.jpg",
-    description: "Private tandem ATV tour Bali — share a quad bike adventure with a partner through jungle trails. All-inclusive with lunch, safety gear, and optional Wos River tubing combo.",
+    description: "Private tandem ATV tour at All New Bali Adventure arena — share a quad bike adventure with a partner through jungle trails. All-inclusive with lunch, safety gear, and optional Wos River tubing combo.",
     highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Users,
@@ -416,7 +416,7 @@ export default function Home() {
               Know Before You Go
             </h2>
             <p className="text-lg text-sand/90 max-w-2xl mx-auto">
-              Complete Bali quad bike trips packed with sensation, excitement, and joy — with optional river tubing on the Wos River after you race the ATV track.
+              Complete Bali quad bike trips at All New Bali Adventure — packed with sensation, excitement, and joy, with optional river tubing on the Wos River after you race the ATV track.
             </p>
           </div>
           <KnowBeforeCards

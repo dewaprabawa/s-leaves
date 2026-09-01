@@ -78,19 +78,23 @@ export const TOURS: Tour[] = [
       },
     ],
     shortDescription:
-      "Private Bali ATV tour & quad bike adventure through jungle trails — beginner friendly, all-inclusive with lunch, helmet, and insurance. Add Wos River tubing for the best ATV combo near Ubud.",
+      "Private Bali ATV tour at the All New Bali Adventure arena — quad bike rides through jungle trails, beginner friendly, all-inclusive with lunch, helmet, and insurance. Add Wos River tubing for the best ATV combo near Ubud.",
     fullDescription: `**Looking for New and Fresh Activities in Bali?**
 
 If you want an adrenaline-packed day beyond the usual tourist trail, our Bali ATV Adventure delivers a complete quad bike experience through jungle paths, muddy tracks, and river crossings. Every ride is designed for sensation, excitement, and joy — whether you go solo or share a tandem ATV with a partner.
 
+### ATV Arena Location: All New Bali Adventure
+All ATV rides take place at **All New Bali Adventure** — our dedicated jungle ATV arena near Ubud. This is where you will meet your guide, get fitted with boot shoes and a helmet, and start your safety briefing before hitting the track.
+
 ### Complete Bali Quad Bike (ATV) Trips
-Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing, you are fitted with boot shoes and a helmet, then you hit the track for an unforgettable ride through Bali's green countryside.
+Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing at All New Bali Adventure, you hit the track for an unforgettable ride through Bali's green countryside.
 
 ### Combine with River Tubing on the Wos River
 Want even more adventure? Pair your ATV ride with river tubing on the Wos River. After racing the ATV track, cool down as you float and explore the river on a tube — a favourite combo for guests who want a full day of thrills on land and water.
 
 Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing combo for your preferred date.`,
     highlights: [
+      "ATV arena at All New Bali Adventure",
       "Complete Bali quad bike (ATV) adventure",
       "Optional river tubing on the Wos River",
       "Boot shoes, helmet, lunch & insurance included",
@@ -113,16 +117,16 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       {
         id: "iti-atv-1",
         time: "Start",
-        title: "Pickup & Safety Briefing",
+        title: "Arrive at All New Bali Adventure",
         description:
-          "Meet your guide, get fitted with boot shoes and helmet, and receive a clear safety briefing before the ride.",
+          "Meet your guide at the All New Bali Adventure ATV arena, get fitted with boot shoes and helmet, and receive a clear safety briefing before the ride.",
       },
       {
         id: "iti-atv-2",
         time: "Midway",
-        title: "ATV Jungle Trail",
+        title: "ATV Jungle Trail at All New Bali Adventure",
         description:
-          "Race the ATV track through jungle paths, muddy stretches, and scenic river crossings packed with sensation and excitement.",
+          "Race the ATV track at All New Bali Adventure through jungle paths, muddy stretches, and scenic river crossings packed with sensation and excitement.",
       },
       {
         id: "iti-atv-3",
@@ -180,7 +184,13 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-4",
         question: "What is included in the price?",
         answer:
-          "Your guided ATV ride, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. River tubing on the Wos River is an optional combo — ask when you book.",
+          "Your guided ATV ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. River tubing on the Wos River is an optional combo — ask when you book.",
+      },
+      {
+        id: "faq-atv-5",
+        question: "Where is the ATV arena?",
+        answer:
+          "All ATV rides take place at All New Bali Adventure — our dedicated jungle ATV arena near Ubud. Hotel pickup is available for an additional IDR 120,000 if you need transport to the arena.",
       },
     ],
     reviews: [],

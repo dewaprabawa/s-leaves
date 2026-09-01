@@ -366,7 +366,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
             <p className="text-accent-gold font-semibold tracking-[0.15em] uppercase text-sm mb-4">ATV &amp; river adventures</p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-sand uppercase leading-tight mb-4">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold !text-sand uppercase leading-tight mb-4">
               Know Before You Go
             </h2>
             <p className="text-lg text-sand/90 max-w-2xl mx-auto">
@@ -374,32 +374,32 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            <div className="rounded-3xl bg-white/10 border border-sand/25 p-8 md:p-10 shadow-lg shadow-black/10">
-              <h3 className="font-display text-2xl font-bold text-accent-gold uppercase mb-6">What To Bring</h3>
+            <div className="rounded-3xl bg-sand p-8 md:p-10 shadow-xl border border-sand-dark/40">
+              <h3 className="font-display text-2xl font-bold text-brand-green uppercase mb-6">What To Bring</h3>
               <ul className="space-y-4">
                 {[
                   "Changing clothes / dry cloth",
                   "Sunscreen (recommended)",
                   "Cash for personal expenses",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sand">
-                    <Check className="w-5 h-5 text-accent-gold shrink-0 mt-0.5" />
-                    <span className="text-base leading-relaxed">{item}</span>
+                  <li key={item} className="flex items-start gap-3 text-brand-green">
+                    <Check className="w-5 h-5 text-accent-gold-dark shrink-0 mt-0.5" />
+                    <span className="text-base leading-relaxed text-brand-green-light">{item}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="rounded-3xl bg-white/10 border border-sand/25 p-8 md:p-10 shadow-lg shadow-black/10">
-              <h3 className="font-display text-2xl font-bold text-accent-gold uppercase mb-6">What You Get</h3>
+            <div className="rounded-3xl bg-sand p-8 md:p-10 shadow-xl border border-sand-dark/40">
+              <h3 className="font-display text-2xl font-bold text-brand-green uppercase mb-6">What You Get</h3>
               <ul className="space-y-4">
                 {[
                   "Simple menu lunch",
                   "Boot shoes & helmet",
                   "Insurance coverage",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-sand">
-                    <Shield className="w-5 h-5 text-accent-gold shrink-0 mt-0.5" />
-                    <span className="text-base leading-relaxed">{item}</span>
+                  <li key={item} className="flex items-start gap-3 text-brand-green">
+                    <Shield className="w-5 h-5 text-accent-gold-dark shrink-0 mt-0.5" />
+                    <span className="text-base leading-relaxed text-brand-green-light">{item}</span>
                   </li>
                 ))}
               </ul>

@@ -123,6 +123,24 @@ const heroCarouselImages = [
   { src: "/images/adventures/cycling.jpg", alt: "Village Cycling Tour", label: "Cycling" },
 ]
 
+const travelGuides = [
+  {
+    title: "Bali ATV Tour Ubud Guide",
+    excerpt: "Trails, prices, and what is included for quad bike rides near Ubud.",
+    href: "/blog/bali-atv-tour-ubud-guide",
+  },
+  {
+    title: "ATV + River Tubing on the Wos River",
+    excerpt: "Combine jungle ATV with a float down Bali's Wos River.",
+    href: "/blog/atv-river-tubing-wos-river-bali",
+  },
+  {
+    title: "How to Book on WhatsApp",
+    excerpt: "Send your name, age, location, activity, and price in one message.",
+    href: "/blog/how-to-book-bali-adventure-whatsapp",
+  },
+] as const
+
 function formatIDR(amount: number) {
   return `IDR ${amount.toLocaleString("id-ID")}`
 }
@@ -234,7 +252,8 @@ export default function Home() {
             Premium Adventure Experiences · Bali
           </p>
           <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold uppercase leading-[0.9] tracking-tight mb-6 animate-fade-in-up-delay-1">
-            Bali Adventures<br /><span className="hero-headline-accent">Await</span>
+            <span className="block">Bali Adventures</span>
+            <span className="hero-headline-accent block">Await</span>
           </h1>
           <p className="hero-subcopy text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
             Looking for fresh activities in Bali? Conquer jungle trails on ATVs, combine with Wos River tubing, ride whitewater rapids, or cycle Pejeng&apos;s rice terraces.
@@ -493,6 +512,38 @@ export default function Home() {
             {[...Array(5)].map((_, i) => (<Star key={i} className="w-5 h-5 text-accent-gold fill-accent-gold" />))}
           </div>
           <p className="text-sm font-semibold uppercase tracking-wider opacity-70">— Sarah M. · GetYourGuide Review</p>
+        </div>
+      </section>
+
+      {/* ═══ TRAVEL GUIDES ═══ */}
+      <section id="guides" className="py-16 md:py-20 px-6 lg:px-12 max-w-5xl mx-auto w-full">
+        <div className="text-center mb-10">
+          <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-3">
+            Plan your trip
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-brand-green uppercase leading-tight mb-4">
+            Bali Adventure Guides
+          </h2>
+          <p className="text-brand-green-light max-w-2xl mx-auto">
+            Detailed guides on ATV near Ubud, Wos River tubing combos, and WhatsApp booking.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {travelGuides.map((guide) => (
+            <Link
+              key={guide.href}
+              href={guide.href}
+              className="group bg-white rounded-2xl border border-brand-green/10 p-6 shadow-sm hover:shadow-md hover:border-brand-green/20 transition-all"
+            >
+              <h3 className="font-bold text-brand-green mb-2 leading-snug group-hover:text-brand-green-light transition-colors">
+                {guide.title}
+              </h3>
+              <p className="text-sm text-brand-green-light leading-relaxed mb-4">{guide.excerpt}</p>
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-green uppercase tracking-wider">
+                Read guide <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
 

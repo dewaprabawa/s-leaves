@@ -122,7 +122,7 @@ const adventures: Adventure[] = [
     childPrice: null as number | null,
     image: "/images/adventures/cycling.jpg",
     description: "Relaxing bike ride through green Ubud ricefields and quiet village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
-    highlights: ["Breakfast, lunch & dinner included", "Rice harvesting activity", "Balinese house & carving studio", "Hotel pickup & insurance"],
+    highlights: ["Breakfast, lunch & dinner included", "Rice harvesting activity", "Balinese house & carving studio", "Free Ubud hotel pickup & insurance"],
     duration: "Full day",
     icon: Bike,
     minPax: 1,
@@ -138,12 +138,13 @@ function toTourConfig(adv: Adventure): TourConfig {
     adultPrice: adv.price,
     kidPrice: "childPrice" in adv ? adv.childPrice : null,
     minPax: adv.minPax,
+    freeUbudPickup: adv.id === "cycling",
   }
 }
 
 const stats = [
   { value: "5", label: "Epic Activities" },
-  { value: "2,500+", label: "Happy Guests" },
+  { value: "100+", label: "Happy Guests" },
   { value: "5★", label: "Rated Experience" },
   { value: "24/7", label: "WhatsApp Support" },
 ]
@@ -217,7 +218,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Ubud Ricefield Cycling Tour",
     adventureId: "cycling",
-    pax: "Per Person · Breakfast, lunch & dinner included",
+    pax: "Per Person · Free Ubud pickup · Breakfast, lunch & dinner included",
     price: 450000,
     highlight: false,
   },
@@ -287,7 +288,7 @@ export default function Home() {
             <span className="hero-headline-accent block">& Ubud Adventures</span>
           </h1>
           <p className="hero-subcopy text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
-            Book all-inclusive quad bike tours, ATV + Wos River tubing combos, whitewater rafting, or Ubud ricefield cycling — with hotel pickup across Ubud.
+            Book all-inclusive quad bike tours, ATV + Wos River tubing combos, whitewater rafting, or Ubud ricefield cycling — free Ubud hotel pickup on the cycling tour only.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
             <button
@@ -420,7 +421,7 @@ export default function Home() {
           <div className={`text-center mb-16 ${isVisible("pricing") ? "animate-fade-in-up" : ""}`}>
             <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Transparent pricing</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Pricing</h2>
-            <p className="text-lg text-brand-green-light max-w-xl mx-auto">All-inclusive packages with gear, guides, insurance, and hotel pickup.</p>
+            <p className="text-lg text-brand-green-light max-w-xl mx-auto">All-inclusive packages with gear, guides, and insurance. Free Ubud hotel pickup on the cycling tour only.</p>
           </div>
           <div className={`space-y-4 ${isVisible("pricing") ? "animate-fade-in-up-delay-1" : ""}`}>
             {pricingData.map((item, i) => (
@@ -475,7 +476,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-brand-green-light mt-8 opacity-70">Prices include all equipment, guide, insurance & hotel pickup. Group discounts available.</p>
+          <p className="text-center text-sm text-brand-green-light mt-8 opacity-70">Prices include equipment, guide, and insurance. Free Ubud pickup on the cycling tour only; other activities add IDR 120,000 for hotel pickup. Group discounts available.</p>
         </div>
       </section>
 
@@ -490,7 +491,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             { icon: Shield, title: "Safety First", desc: "International-standard safety gear, certified guides, and comprehensive insurance on every adventure. Your safety is non-negotiable." },
-            { icon: Star, title: "5-Star Rated", desc: "Over 2,500 guests and counting. Consistently rated 5 stars on GetYourGuide, Google, and TripAdvisor by adventurers worldwide." },
+            { icon: Star, title: "5-Star Rated", desc: "Over 100 guests and counting. Consistently rated 5 stars on GetYourGuide, Google, and TripAdvisor by adventurers worldwide." },
             { icon: MapPin, title: "Local Experts", desc: "Our Balinese guides know every hidden trail, secret waterfall, and canyon passage. Experience the real Bali most tourists never see." },
           ].map((item, i) => {
             const IconComp = item.icon

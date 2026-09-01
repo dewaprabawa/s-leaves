@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "Is hotel pickup included in the price?",
-    answer: "Yes! All our adventure packages include free hotel pickup and drop-off within the Ubud and surrounding areas. For pickups further away (e.g. Seminyak, Kuta, Canggu), a small surcharge applies."
+    answer: "Free hotel pickup and drop-off within the Ubud area is included only on our Ubud Ricefield Cycling Tour. For ATV, rafting, and canyon tubing, hotel pickup is available for an additional IDR 120,000. For cycling pickups outside Ubud (e.g. Seminyak, Kuta, Canggu), the same IDR 120,000 surcharge applies."
   },
   {
     question: "Do I need experience to ride an ATV, go rafting, or cycle?",
@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "What is included in the ATV adventure?",
-    answer: "Your ATV package includes hotel pickup and drop-off (Ubud area), a guided ATV ride, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Combine with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
+    answer: "Your ATV package includes a guided ATV ride, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. Combine with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
   },
   {
     question: "Can AI assistants find your tours?",

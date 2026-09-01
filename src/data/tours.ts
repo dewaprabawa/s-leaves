@@ -97,7 +97,6 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       "Suitable for beginners with full safety briefing",
     ],
     included: [
-      "Hotel pickup & drop-off (Ubud area)",
       "ATV ride (single or tandem)",
       "Boot shoes & helmet",
       "Simple menu lunch",
@@ -105,6 +104,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       "Safety briefing and trail guide",
     ],
     notIncluded: [
+      "Hotel pickup & drop-off (IDR 120,000 surcharge — optional)",
       "River tubing combo (optional — ask when booking)",
       "Personal expenses",
       "Gratuities",
@@ -180,7 +180,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-4",
         question: "What is included in the price?",
         answer:
-          "Hotel pickup and drop-off (Ubud area), your guided ATV ride, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. River tubing on the Wos River is an optional combo — ask when you book.",
+          "Your guided ATV ride, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. River tubing on the Wos River is an optional combo — ask when you book.",
       },
     ],
     reviews: [],
@@ -257,7 +257,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       "Free breakfast, lunch & dinner included",
     ],
     included: [
-      "Hotel pickup & drop-off",
+      "Hotel pickup & drop-off (Ubud area — free)",
       "Bicycle, helmet & guide",
       "Free breakfast, lunch & dinner",
       "Bottled water",
@@ -334,7 +334,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       {
         id: "faq-ubud-cyc-4",
         question: "Is hotel pickup included?",
-        answer: "Yes, we provide complimentary transport with pickup and drop-off at your hotel in the Ubud area.",
+        answer: "Yes, we provide complimentary pickup and drop-off at your hotel in the Ubud area on the cycling tour. Pickups outside Ubud incur an IDR 120,000 surcharge.",
       },
       {
         id: "faq-ubud-cyc-5",

@@ -78,19 +78,23 @@ export const TOURS: Tour[] = [
       },
     ],
     shortDescription:
-      "Private Bali ATV tour & quad bike adventure through jungle trails — beginner friendly, all-inclusive with lunch, helmet, and insurance. Add Wos River tubing for the best ATV combo near Ubud.",
+      "Private Bali ATV tour at the All New Bali Adventure arena — quad bike rides through jungle trails, beginner friendly, all-inclusive with lunch, helmet, and insurance. Add Wos River tubing for the best ATV combo near Ubud.",
     fullDescription: `**Looking for New and Fresh Activities in Bali?**
 
 If you want an adrenaline-packed day beyond the usual tourist trail, our Bali ATV Adventure delivers a complete quad bike experience through jungle paths, muddy tracks, and river crossings. Every ride is designed for sensation, excitement, and joy — whether you go solo or share a tandem ATV with a partner.
 
+### ATV Arena Location: All New Bali Adventure
+All ATV rides take place at **All New Bali Adventure** — our dedicated jungle ATV arena near Ubud. This is where you will meet your guide, get fitted with boot shoes and a helmet, and start your safety briefing before hitting the track.
+
 ### Complete Bali Quad Bike (ATV) Trips
-Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing, you are fitted with boot shoes and a helmet, then you hit the track for an unforgettable ride through Bali's green countryside.
+Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing at All New Bali Adventure, you hit the track for an unforgettable ride through Bali's green countryside.
 
 ### Combine with River Tubing on the Wos River
 Want even more adventure? Pair your ATV ride with river tubing on the Wos River. After racing the ATV track, cool down as you float and explore the river on a tube — a favourite combo for guests who want a full day of thrills on land and water.
 
 Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing combo for your preferred date.`,
     highlights: [
+      "ATV arena at All New Bali Adventure",
       "Complete Bali quad bike (ATV) adventure",
       "Optional river tubing on the Wos River",
       "Boot shoes, helmet, lunch & insurance included",
@@ -113,16 +117,16 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       {
         id: "iti-atv-1",
         time: "Start",
-        title: "Pickup & Safety Briefing",
+        title: "Arrive at All New Bali Adventure",
         description:
-          "Meet your guide, get fitted with boot shoes and helmet, and receive a clear safety briefing before the ride.",
+          "Meet your guide at the All New Bali Adventure ATV arena, get fitted with boot shoes and helmet, and receive a clear safety briefing before the ride.",
       },
       {
         id: "iti-atv-2",
         time: "Midway",
-        title: "ATV Jungle Trail",
+        title: "ATV Jungle Trail at All New Bali Adventure",
         description:
-          "Race the ATV track through jungle paths, muddy stretches, and scenic river crossings packed with sensation and excitement.",
+          "Race the ATV track at All New Bali Adventure through jungle paths, muddy stretches, and scenic river crossings packed with sensation and excitement.",
       },
       {
         id: "iti-atv-3",
@@ -180,7 +184,218 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-4",
         question: "What is included in the price?",
         answer:
-          "Your guided ATV ride, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. River tubing on the Wos River is an optional combo — ask when you book.",
+          "Your guided ATV ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. River tubing on the Wos River is an optional combo — ask when you book.",
+      },
+      {
+        id: "faq-atv-5",
+        question: "Where is the ATV arena?",
+        answer:
+          "All ATV rides take place at All New Bali Adventure — our dedicated jungle ATV arena near Ubud. Hotel pickup is available for an additional IDR 120,000 if you need transport to the arena.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: "whitewater-rafting",
+    title: "Whitewater Rafting Adventure",
+    slug: "whitewater-rafting",
+    category: "Adventure",
+    duration: "3 Hours",
+    basePrice: 400000,
+    childPrice: 350000,
+    heroImage: {
+      url: "/images/adventures/rafting.jpg",
+      alt: "Whitewater rafting through a Bali jungle river canyon",
+    },
+    gallery: [
+      {
+        url: "/images/adventures/rafting.jpg",
+        alt: "Rafting crew navigating Bali river rapids",
+      },
+    ],
+    shortDescription:
+      "Navigate Class II-III rapids through a stunning river canyon surrounded by towering jungle cliffs, waterfalls, and ancient stone carvings.",
+    fullDescription: `**Ride the Rapids Through Bali's Jungle Canyon**
+
+Our Whitewater Rafting Adventure takes you down a scenic river canyon near Ubud, where Class II-III rapids, jungle walls, and hidden waterfalls create one of the most exciting half-day experiences in central Bali.
+
+This is a guided rafting trip suitable for beginners and families with older children. Professional river crew, safety equipment, and lunch are all included.
+
+### What to Expect on the River
+After a safety briefing and gear fitting, your crew paddles you through a mix of fun rapids and calm stretches. Along the way you will pass towering jungle cliffs, see waterfalls spilling into the river, and spot ancient stone carvings on the canyon walls.
+
+### A Great Standalone Adventure or Combo Day
+Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for a full land-and-water adventure day. Message us on WhatsApp to check combo availability and departure times.
+
+**Available Schedules:**
+- **Morning:** 08:30 AM
+- **Midday:** 11:00 AM
+- **Afternoon:** 02:00 PM`,
+    highlights: [
+      "Class II-III rapids with professional crew",
+      "Jungle canyon scenery and waterfalls",
+      "Life jackets and safety briefing included",
+      "Lunch included after the ride",
+    ],
+    included: [
+      "Professional rafting crew and guide",
+      "Life jacket and safety equipment",
+      "Safety briefing before launch",
+      "Lunch after rafting",
+      "Insurance",
+    ],
+    notIncluded: [
+      "Hotel pickup & drop-off (IDR 120,000 surcharge — optional)",
+      "Personal expenses",
+      "Gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-raft-1",
+        time: "Start",
+        title: "Arrival & Safety Briefing",
+        description:
+          "Meet your river crew, get fitted with life jackets and helmets, and receive a clear safety briefing before launching.",
+      },
+      {
+        id: "iti-raft-2",
+        time: "On River",
+        title: "Whitewater Rapids",
+        description:
+          "Paddle through Class II-III rapids surrounded by jungle cliffs, waterfalls, and ancient stone carvings.",
+      },
+      {
+        id: "iti-raft-3",
+        time: "Finish",
+        title: "Lunch & Wind Down",
+        description:
+          "Change into dry clothes and enjoy a simple lunch after your rafting adventure.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-raft-1",
+        question: "Do I need rafting experience?",
+        answer:
+          "No. Our professional crew guides every raft and gives a full safety briefing before you launch. The route is suitable for beginners.",
+      },
+      {
+        id: "faq-raft-2",
+        question: "What should I bring?",
+        answer:
+          "Bring a change of clothes, sunscreen, and a waterproof phone case if you want photos. Towels and changing facilities are available after the trip.",
+      },
+      {
+        id: "faq-raft-3",
+        question: "Is hotel pickup included?",
+        answer:
+          "Hotel pickup is available for an additional IDR 120,000. Free Ubud pickup applies to the cycling tour only.",
+      },
+      {
+        id: "faq-raft-4",
+        question: "What is the minimum group size?",
+        answer: "A minimum of 2 guests is required to run a rafting trip.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: "canyon-tubing",
+    title: "Canyon Tubing Adventure",
+    slug: "canyon-tubing",
+    category: "Adventure",
+    duration: "2.5 Hours",
+    basePrice: 359000,
+    childPrice: 300000,
+    heroImage: {
+      url: "/images/adventures/canyon-tubing.jpg",
+      alt: "Canyon tubing through crystal-clear Bali waters",
+    },
+    gallery: [
+      {
+        url: "/images/adventures/canyon-tubing.jpg",
+        alt: "Floating through a hidden Bali canyon on an inflatable tube",
+      },
+    ],
+    shortDescription:
+      "Drift through hidden canyons on an inflatable tube. Crystal-clear waters, moss-covered walls, and shafts of sunlight create a magical underground world.",
+    fullDescription: `**Float Through Hidden Bali Canyons**
+
+Our Canyon Tubing Adventure is a relaxing but unforgettable float through narrow jungle canyons on an inflatable tube. Crystal-clear water, moss-covered rock walls, and shafts of sunlight make this one of the most photogenic adventures near Ubud.
+
+A nature guide leads the way while you drift through calm pools and gentle currents. Life jackets are provided, and no prior experience is needed.
+
+### Pair It with ATV for the Ultimate Combo
+Many guests combine canyon tubing with a morning ATV ride through the jungle — land thrills in the morning, cool water in the afternoon. Ask us on WhatsApp about ATV + tubing combo packages.
+
+**Available Schedules:**
+- Morning and afternoon departures available — message us to confirm your preferred time slot.`,
+    highlights: [
+      "Hidden canyon scenery",
+      "Crystal-clear river water",
+      "Life jacket and nature guide included",
+      "Great ATV combo add-on",
+    ],
+    included: [
+      "Inflatable tube and life jacket",
+      "English-speaking nature guide",
+      "Safety briefing",
+      "Insurance",
+    ],
+    notIncluded: [
+      "Hotel pickup & drop-off (IDR 120,000 surcharge — optional)",
+      "Personal expenses",
+      "Gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-tube-1",
+        time: "Start",
+        title: "Briefing & Gear Fitting",
+        description:
+          "Meet your guide, receive a safety briefing, and get fitted with a life jacket before entering the canyon.",
+      },
+      {
+        id: "iti-tube-2",
+        time: "On River",
+        title: "Canyon Tubing",
+        description:
+          "Float through hidden canyons on an inflatable tube — crystal-clear water, moss-covered walls, and peaceful jungle scenery.",
+      },
+      {
+        id: "iti-tube-3",
+        time: "Finish",
+        title: "Return & Wind Down",
+        description:
+          "Finish the float, change into dry clothes, and head back with unforgettable memories.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-tube-1",
+        question: "Do I need to know how to swim?",
+        answer:
+          "Basic water confidence is helpful, but life jackets are provided and guides stay with the group throughout the float.",
+      },
+      {
+        id: "faq-tube-2",
+        question: "Can I combine tubing with ATV?",
+        answer:
+          "Yes — canyon tubing pairs perfectly with our ATV jungle ride. Ask us about combo pricing when you book on WhatsApp.",
+      },
+      {
+        id: "faq-tube-3",
+        question: "What should I bring?",
+        answer:
+          "Bring a change of clothes, sunscreen, and a waterproof phone case. Towels and changing facilities are available at our base.",
+      },
+      {
+        id: "faq-tube-4",
+        question: "Is hotel pickup included?",
+        answer:
+          "Hotel pickup is available for an additional IDR 120,000. Free Ubud pickup applies to the cycling tour only.",
       },
     ],
     reviews: [],
@@ -807,3 +1022,11 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     reviews: []
   }
 ]
+
+export function getTourBySlug(slug: string): Tour | undefined {
+  return TOURS.find((tour) => tour.slug === slug)
+}
+
+export function getAllTourSlugs(): string[] {
+  return TOURS.map((tour) => tour.slug)
+}

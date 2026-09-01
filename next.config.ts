@@ -9,8 +9,8 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/tours/:slug',
-        destination: '/#adventures',
+        source: '/tours/pejeng-cycling-tour',
+        destination: '/tours/ubud-ricefield-cycling-tour',
         permanent: true,
       },
     ]

@@ -9,6 +9,7 @@ import {
   Sun,
   Wallet,
   Smartphone,
+  MapPin,
 } from "lucide-react"
 
 export type KnowBeforeItem = {
@@ -19,6 +20,11 @@ export type KnowBeforeItem = {
 
 export const atvWhatYouGetItems: KnowBeforeItem[] = [
   {
+    icon: MapPin,
+    title: "ATV arena location",
+    desc: "All rides take place at All New Bali Adventure — our dedicated jungle ATV arena near Ubud.",
+  },
+  {
     icon: Car,
     title: "Hotel pickup & drop-off",
     desc: "Optional add-on — IDR 120,000 surcharge. Free Ubud pickup is included on the cycling tour only.",
@@ -26,12 +32,12 @@ export const atvWhatYouGetItems: KnowBeforeItem[] = [
   {
     icon: Bike,
     title: "Guided ATV trail ride",
-    desc: "Single or tandem quad bike through jungle paths, muddy tracks, and river crossings.",
+    desc: "Single or tandem quad bike through jungle paths, muddy tracks, and river crossings at All New Bali Adventure.",
   },
   {
     icon: Shield,
     title: "Boot shoes, helmet & insurance",
-    desc: "Full safety gear fitted at our base before you hit the track.",
+    desc: "Full safety gear fitted at All New Bali Adventure before you hit the track.",
   },
   {
     icon: Utensils,

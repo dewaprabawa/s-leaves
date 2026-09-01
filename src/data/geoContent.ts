@@ -12,7 +12,7 @@ export const GEO_PRICING = [
   { activity: 'Tandem ATV Ride', price: 'IDR 859,000', pax: '2 pax', includes: 'lunch, boot shoes, helmet, insurance' },
   { activity: 'Whitewater Rafting', price: 'IDR 400,000', pax: 'per person', includes: 'Class II–III rapids, lunch' },
   { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person', includes: 'tube, life jacket, guide' },
-  { activity: 'Village Cycling Tour', price: 'IDR 650,000 (promo from IDR 888,000)', pax: 'per person', includes: 'lunch or breakfast, bike, guide, pickup' },
+  { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 450,000', pax: 'per person', includes: 'breakfast, lunch & dinner, bike, helmet, guide, pickup, insurance' },
 ] as const
 
 export const GEO_FAQ_FOR_LLM = [

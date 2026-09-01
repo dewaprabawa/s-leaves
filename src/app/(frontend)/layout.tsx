@@ -132,10 +132,9 @@ const adventureOffers = [
     image: '/images/adventures/canyon-tubing.jpg',
   },
   {
-    name: 'Pejeng Village Cycling Tour',
-    description: 'Small-group downhill village cycling through Pejeng morning markets, ancient temples, and UNESCO Subak rice terraces. Lunch or breakfast included.',
-    price: '650000',
-    originalPrice: '888000',
+    name: 'Ubud Ricefield Cycling Tour',
+    description: 'Relaxing bike ride through green Ubud ricefields and quiet village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.',
+    price: '450000',
     image: '/images/adventures/cycling.jpg',
   },
 ]
@@ -178,7 +177,7 @@ const footerLinks = {
     { label: "ATV Rides", href: "/#adventures" },
     { label: "Whitewater Rafting", href: "/#adventures" },
     { label: "Canyon Tubing", href: "/#adventures" },
-    { label: "Village Cycling", href: "/#adventures" },
+    { label: "Ubud Ricefield Cycling", href: "/#adventures" },
     { label: "All Pricing", href: "/#pricing" },
   ],
   explore: [

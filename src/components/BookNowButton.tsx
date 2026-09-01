@@ -38,10 +38,10 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   },
   {
     id: "cycling",
-    title: "Village Cycling Tour",
-    times: ["08:30", "13:30"],
-    adultPrice: 650000,
-    kidPrice: 550000,
+    title: "Ubud Ricefield Cycling Tour",
+    times: ["13:30"],
+    adultPrice: 450000,
+    kidPrice: null,
     minPax: 1,
   },
 ]

@@ -186,13 +186,12 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     reviews: [],
   },
   {
-    id: "pejeng-cycling-tour",
-    title: "Pejeng Village & Terrace Cycling",
-    slug: "pejeng-cycling-tour",
+    id: "ubud-ricefield-cycling-tour",
+    title: "Ubud Ricefield Cycling Tour",
+    slug: "ubud-ricefield-cycling-tour",
     category: "Activity",
-    duration: "4 Hours",
-    basePrice: 650000,
-    childPrice: 550000,
+    duration: "Full Day",
+    basePrice: 450000,
     heroImage: {
       url: "/images/cycling/rice-field-bikes.jpg",
       alt: "Cycling in Bali rice terraces",
@@ -228,106 +227,119 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Small-group Pejeng village cycling tour — downhill routes through morning markets, Subak rice terraces, and ancient temples away from Ubud crowds.",
-    fullDescription: `**Escape the Tourist Trail and Discover the Real Bali**
+    shortDescription: "Relaxing Ubud ricefield cycling tour through green paddies and quiet village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
+    fullDescription: `**Ubud Ricefield Cycling Tour**
 
-If you are looking for an authentic, off-the-beaten-path experience in Bali, our Pejeng Village & Terrace Cycling Tour is exactly what you need. While most tourists crowd into the center of Ubud, this dedicated cycling tour takes you away from the traffic and deep into the historic Pejeng district—an ancient kingdom that time forgot. 
+Discover the real Bali on two wheels with our Ubud Ricefield Cycling Tour. This is a relaxing bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
 
-This is not a high-intensity mountain biking excursion; it is a cultural immersion on two wheels. Designed for all fitness levels, our leisurely route spans approximately 15 kilometers mostly downhill and flat terrain. You will ride through local morning markets, ancient village pathways, and expansive, breathtaking rice terraces that stretch as far as the eye can see.
+We pick you up from your hotel in the Ubud area and transport you to the starting point, where you are fitted with a bicycle, helmet, and briefed by your English-speaking guide before setting off into the countryside.
 
-### The Journey Begins: The Pejeng Morning Market
-Your day starts with a comfortable pickup from your Ubud hotel. We transport you a short distance to our starting base in Pejeng, where you will be fitted with a well-maintained mountain bike and a helmet. After a quick safety briefing from our professional, English-speaking local guide, the adventure begins.
+### Ricefield Cycling & Harvesting
+Cycle through stunning green rice paddies and village trails. Stop to see local farmers at work and try harvesting rice with them. Your guide explains traditional Balinese farming methods and the daily rhythm of rural life.
 
-Our first stop is a sensory explosion: the bustling traditional morning market of Pejeng. Here, you will step off your bike and walk through the vibrant stalls. Your guide will introduce you to exotic local fruits you may have never seen before (like snake fruit and mangosteen), pungent Balinese spices, and traditional snacks. This is where the locals shop, and you will get a genuine glimpse into the daily rhythm of Balinese life.
+### Village Culture & Local Life
+Enter a real Balinese family house and see daily local life up close. Visit a local wood carving studio and watch artists at work. Continue cycling through the village past temples, schools, and everyday community activities.
 
-### Cruising Through Ancient History
-Leaving the market behind, we cycle into the heart of the village. Pejeng is not just any village; it was once the epicenter of the mighty Pejeng Kingdom in the 13th century. As you cruise along the quiet, shaded neighborhood paths, you will pass ancient, moss-covered temples and traditional family compounds. We will make a brief stop at a local Balinese home, where your guide will explain the fascinating architecture and layout of a traditional family compound, including the family shrines and the communal living spaces.
+### Meals Included
+Enjoy free breakfast, lunch, and dinner at a chill local village restaurant serving authentic Balinese food — all included in your package.
 
-### The Majestic Subak Rice Terraces
-As we leave the village behind, the trail opens up to a landscape that defines Bali: stunning, endless rice paddies. But these aren't just beautiful fields; they are part of the ancient *Subak* irrigation system, recognized by UNESCO for its cultural significance. You will cycle right along the edges of the fields on narrow dirt paths. Your guide will explain how this cooperative water management system works, how the farmers coordinate their planting cycles, and why the small shrines you see in the fields are so vital to the harvest. 
+After the tour we drop you back at your Ubud hotel.
 
-### A Refreshing Finish
-After a few hours of cycling, learning, and taking countless photographs, we conclude our journey in a shaded pavilion overlooking the fields. You will be greeted with a freshly opened, ice-cold young coconut to rehydrate and celebrate the completion of the ride. 
+**Available Schedule:**
+- **Afternoon departure** — ideal for travelers who prefer a later start
 
-Whether you are a solo traveler, a couple, or a family with children, this cycling tour offers a safe, unforgettable way to connect with the soul of Bali. 
-    
-**Available Schedules:**
-- **Morning Ride:** 8:30 AM – 12:30 PM (Highly recommended for the best market experience and cooler weather)
-- **Afternoon Ride:** 1:30 PM – 5:30 PM (Perfect for those looking to catch the late afternoon golden hour light over the rice fields)`,
+**Important Note:**
+The itinerary may sometimes change due to field conditions, weather, or village activities. We will always adjust to make sure you still have the best and safest experience.`,
     highlights: [
-      "Cycle through quiet ancient village pathways",
-      "Visit a bustling traditional morning market",
-      "Ride along the edges of stunning Subak rice terraces",
-      "Lunch or breakfast included",
+      "Relaxing ride through Ubud ricefields and village paths",
+      "Rice harvesting activity with local farmers",
+      "Visit a Balinese family house and wood carving studio",
+      "Free breakfast, lunch & dinner included",
     ],
     included: [
-      "Well-maintained mountain bikes and helmets",
-      "Professional English-speaking cycling guide",
-      "Lunch or breakfast",
-      "Mineral water during the ride",
-      "Fresh young coconut",
-      "Hotel pick-up and drop-off in Ubud area",
+      "Hotel pickup & drop-off",
+      "Bicycle, helmet & guide",
+      "Free breakfast, lunch & dinner",
+      "Bottled water",
+      "Insurance",
     ],
     notIncluded: ["Personal expenses", "Gratuities"],
     itinerary: [
       {
-        id: "iti-pej-1",
-        time: "08:30 AM",
-        title: "Pickup & Briefing",
-        description: "Driver picks you up from your Ubud hotel. Arrive at our Pejeng starting base for bike fitting and a safety briefing.",
+        id: "iti-ubud-cyc-1",
+        time: "Start",
+        title: "Pickup from Hotel",
+        description: "We pick you up at your hotel in the Ubud area and transport you to the cycling starting point.",
       },
       {
-        id: "iti-pej-2",
-        time: "09:00 AM",
-        title: "Pejeng Local Market",
-        description: "Walk your bikes through the bustling traditional market. Learn about local spices, exotic fruits, and daily Balinese life.",
+        id: "iti-ubud-cyc-2",
+        time: "Morning",
+        title: "Ricefield Cycling",
+        description: "Relaxing bike ride through beautiful green ricefields and quiet village paths.",
       },
       {
-        id: "iti-pej-3",
-        time: "09:45 AM",
-        title: "Village & Temple Cruising",
-        description: "Cycle through quiet neighborhood paths. Pass ancient temples and stop briefly at a traditional family compound to understand Balinese architecture.",
+        id: "iti-ubud-cyc-3",
+        time: "Midday",
+        title: "Sightseeing & Harvesting Activity",
+        description: "See local farmers and try harvesting rice with them. Learn about traditional farming.",
       },
       {
-        id: "iti-pej-4",
-        time: "10:45 AM",
-        title: "Subak Rice Terraces",
-        description: "The trail opens up to stunning, endless rice paddies. Cycle right on the field edges while learning about the traditional Subak irrigation system.",
+        id: "iti-ubud-cyc-4",
+        time: "Afternoon",
+        title: "Visit Balinese House",
+        description: "Enter a real Balinese family house and see daily local life.",
       },
       {
-        id: "iti-pej-5",
-        time: "12:00 PM",
-        title: "Fresh Coconut & Wind Down",
-        description: "Finish the ride and celebrate with a freshly opened young coconut before heading back.",
+        id: "iti-ubud-cyc-5",
+        time: "Afternoon",
+        title: "Balinese Carving Art",
+        description: "Visit a local wood carving studio and see artists at work.",
       },
       {
-        id: "iti-pej-6",
-        time: "12:30 PM",
-        title: "Hotel Drop-off",
-        description: "Arrive back at your accommodation in Ubud.",
+        id: "iti-ubud-cyc-6",
+        time: "Afternoon",
+        title: "See Local People Life",
+        description: "Cycle through the village to see temples, schools, and local activities.",
+      },
+      {
+        id: "iti-ubud-cyc-7",
+        time: "Throughout",
+        title: "Free Breakfast, Lunch & Dinner",
+        description: "Enjoy free breakfast, lunch, and dinner at a chill local village restaurant with authentic Balinese food.",
+      },
+      {
+        id: "iti-ubud-cyc-8",
+        time: "Finish",
+        title: "Drop Back to Hotel",
+        description: "After the tour we drop you back at your hotel in Ubud.",
       },
     ],
     addons: [],
     faqs: [
       {
-        id: "faq-pej-1",
+        id: "faq-ubud-cyc-1",
         question: "Is the route difficult?",
-        answer: "The route is mostly flat with a few gentle inclines. It is entirely paved or hard-packed dirt, and spans about 15km. It is suitable for all fitness levels, including older adults and children.",
+        answer: "The route is mostly flat with gentle terrain through ricefields and village paths. It is suitable for all fitness levels, including older adults and families.",
       },
       {
-        id: "faq-pej-2",
-        question: "Do you provide kids bikes?",
-        answer: "Yes, we have a limited number of smaller bikes and baby seats available. Please request them during booking.",
+        id: "faq-ubud-cyc-2",
+        question: "Are meals really included?",
+        answer: "Yes — breakfast, lunch, and dinner at a local village restaurant are all included in the tour price.",
       },
       {
-        id: "faq-pej-3",
+        id: "faq-ubud-cyc-3",
         question: "What should I wear?",
         answer: "We recommend comfortable, breathable clothing, closed-toe shoes (sneakers are fine), and sunglasses. Don't forget sunscreen!",
       },
       {
-        id: "faq-pej-4",
+        id: "faq-ubud-cyc-4",
         question: "Is hotel pickup included?",
-        answer: "Yes, we provide complimentary air-conditioned transport from any hotel within the central Ubud area.",
+        answer: "Yes, we provide complimentary transport with pickup and drop-off at your hotel in the Ubud area.",
+      },
+      {
+        id: "faq-ubud-cyc-5",
+        question: "Can the itinerary change?",
+        answer: "The itinerary may sometimes change due to field conditions, weather, or village activities. We always adjust to ensure you have the best and safest experience.",
       },
     ],
     reviews: [],

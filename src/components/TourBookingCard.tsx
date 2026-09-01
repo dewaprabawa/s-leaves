@@ -21,7 +21,7 @@ export type TourBookingCardProps = {
 
 const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
   "bali-atv-adventure": ["single-atv", "tandem-atv"],
-  "pejeng-cycling-tour": ["cycling"],
+  "ubud-ricefield-cycling-tour": ["cycling"],
 }
 
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {

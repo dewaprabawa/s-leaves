@@ -100,6 +100,7 @@ const adventures: Adventure[] = [
     icon: Waves,
     minPax: 2,
     times: ["08:30", "11:00", "14:00"],
+    tourSlug: "whitewater-rafting",
   },
   {
     id: "canyon-tubing",
@@ -115,6 +116,7 @@ const adventures: Adventure[] = [
     icon: Compass,
     minPax: 1,
     times: DEFAULT_TIMES,
+    tourSlug: "canyon-tubing",
   },
   {
     id: "cycling",
@@ -385,9 +387,9 @@ export default function Home() {
                     {adv.tourSlug ? (
                       <Link
                         href={`/tours/${adv.tourSlug}`}
-                        className="w-full flex items-center justify-center gap-2 h-12 rounded-xl border-2 border-brand-green/20 text-brand-green font-bold text-sm uppercase tracking-wider hover:bg-white transition-colors"
+                        className="w-full flex items-center justify-center gap-2 h-12 rounded-xl border-2 border-brand-green/15 text-brand-green font-bold text-sm uppercase tracking-wider hover:bg-sand transition-colors"
                       >
-                        View Itinerary
+                        View Details
                       </Link>
                     ) : null}
                     <button

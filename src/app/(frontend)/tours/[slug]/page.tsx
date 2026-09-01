@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Check, Clock } from "lucide-react"
+import { ArrowLeft, Camera, Check, Clock } from "lucide-react"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
@@ -174,12 +174,43 @@ export default async function TourPage({ params }: Props) {
             )}
 
             <section className="rounded-3xl border border-brand-green/10 bg-white p-6 md:p-8 shadow-sm">
+              <h2 className="text-xl font-bold text-brand-green mb-4">About This Experience</h2>
               <article className="prose prose-lg prose-emerald max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {tour.fullDescription}
                 </ReactMarkdown>
               </article>
             </section>
+
+            {tour.gallery.length > 0 && (
+              <section className="rounded-3xl border border-brand-green/10 bg-white p-6 md:p-8 shadow-sm space-y-6">
+                <h2 className="text-xl font-bold text-brand-green flex items-center gap-2">
+                  <Camera className="w-5 h-5 text-brand-green" />
+                  Experience Photo Gallery
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {tour.gallery.map((imgItem, idx) => (
+                    <div
+                      key={`${imgItem.url}-${idx}`}
+                      className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-brand-green/10 shadow-sm group"
+                    >
+                      <Image
+                        src={imgItem.url}
+                        alt={imgItem.alt || tour.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, 50vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      {imgItem.alt ? (
+                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-3 text-xs text-white font-medium">
+                          {imgItem.alt}
+                        </div>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              </section>
+            )}
 
             <TourItinerary items={tour.itinerary} />
 

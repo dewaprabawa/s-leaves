@@ -1,5 +1,7 @@
 # Competitor Analysis: Sekar Bali Activity
 
+> **Keyword deep-dive:** See [COMPETITOR-KEYWORD-REPORT.md](./COMPETITOR-KEYWORD-REPORT.md) for sales-focused keyword map, gap analysis, and implementation checklist.
+
 ## 1. Competitor Landscape in Ubud/Gianyar
 The Ubud area is highly saturated with tour operators. We face two main types of competitors:
 1. **Mass-Market Operators (e.g., Bali Eco Cycling, Mason Adventures):** High domain authority, thousands of reviews, but offer large group, commercialized experiences.

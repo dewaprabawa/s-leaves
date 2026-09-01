@@ -4,14 +4,14 @@ export const SITE_URL = 'https://www.sekarbaliactivity.com'
 export const SITE_NAME = 'Sekar Bali Activity'
 
 export const DEFAULT_TITLE =
-  'Sekar Bali Activity | Bali ATV, Rafting, Canyon Tubing & Cycling Tours'
+  'Sekar Bali Activity | Private ATV, River Tubing & Village Cycling Tours Ubud'
 export const DEFAULT_DESCRIPTION =
-  'Book Bali adventures in Pejeng, Ubud: ATV jungle rides with optional Wos River tubing, whitewater rafting, canyon tubing, and village cycling. All-inclusive prices, hotel pickup, and WhatsApp booking — inquire free today.'
+  'Book private Bali ATV tours near Ubud from IDR 650K — jungle quad bike rides with optional Wos River tubing combo, whitewater rafting, canyon tubing, and small-group Pejeng village cycling. All-inclusive: lunch, helmet, insurance, hotel pickup. WhatsApp booking — free to inquire.'
 
 /** Shorter variants for social previews (og:title ≤60, og:description ≤200) */
-export const OG_TITLE = 'Sekar Bali Activity | Bali ATV & Adventure Tours'
+export const OG_TITLE = 'Private Bali ATV & Ubud Adventure Tours | Sekar Bali'
 export const OG_DESCRIPTION =
-  'Bali ATV, rafting, tubing & cycling near Ubud. All-inclusive packages with hotel pickup. Book via WhatsApp — free to inquire.'
+  'Private ATV jungle rides, Wos River tubing combo, rafting & Pejeng village cycling from IDR 650K. All-inclusive with hotel pickup. Book via WhatsApp.'
 
 export const OG_IMAGE = {
   url: '/images/adventures/og-cover.jpg',

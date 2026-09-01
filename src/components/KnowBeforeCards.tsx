@@ -14,19 +14,19 @@ type KnowBeforeCardsProps = {
 function ItemList({ items, variant }: { items: KnowBeforeItem[]; variant: "dark" | "light" }) {
   const iconWrap =
     variant === "dark"
-      ? "bg-sand/10"
+      ? "bg-brand-green/8"
       : "bg-brand-green/8"
   const iconColor =
     variant === "dark"
-      ? "text-accent-gold"
+      ? "text-accent-gold-dark"
       : "text-brand-green"
   const titleColor =
     variant === "dark"
-      ? "text-sand"
+      ? "text-brand-green"
       : "text-brand-green"
   const descColor =
     variant === "dark"
-      ? "text-sand/65"
+      ? "text-brand-green-light"
       : "text-brand-green-light"
 
   return (
@@ -60,27 +60,27 @@ export function KnowBeforeCards({
 }: KnowBeforeCardsProps) {
   const cardClass =
     variant === "dark"
-      ? "rounded-3xl bg-sand/5 border border-sand/10 p-8 md:p-10"
+      ? "rounded-3xl bg-sand p-8 md:p-10 shadow-xl border border-sand-dark/40"
       : "rounded-2xl bg-white border border-brand-green/10 p-8"
   const headingClass =
     variant === "dark"
-      ? "font-display text-2xl font-bold text-accent-gold uppercase"
+      ? "font-display text-2xl font-bold text-brand-green uppercase"
       : "font-display text-xl font-bold text-brand-green uppercase"
   const introClass =
     variant === "dark"
-      ? "text-sand/60 text-sm mb-6 leading-relaxed"
+      ? "text-brand-green-light text-sm mb-6 leading-relaxed"
       : "text-brand-green-light text-sm mb-6 leading-relaxed"
   const footerClass =
     variant === "dark"
-      ? "mt-6 pt-6 border-t border-sand/10 text-sand/55 text-sm leading-relaxed"
+      ? "mt-6 pt-6 border-t border-brand-green/10 text-brand-green-light text-sm leading-relaxed"
       : "mt-6 pt-6 border-t border-brand-green/10 text-brand-green-light text-sm leading-relaxed"
   const headerIconWrap =
     variant === "dark"
-      ? "bg-accent-gold/15"
+      ? "bg-brand-green/8"
       : "bg-brand-green/8"
   const headerIconColor =
     variant === "dark"
-      ? "text-accent-gold"
+      ? "text-accent-gold-dark"
       : "text-brand-green"
 
   return (

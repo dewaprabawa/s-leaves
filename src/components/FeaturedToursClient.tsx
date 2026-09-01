@@ -185,7 +185,7 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
                     )}
 
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white leading-snug group-hover:text-emerald-600 dark:group-hover:text-emerald-450 transition-colors">
-                      <Link href={`/tours/${tour.slug}`}>
+                      <Link href="/#adventures">
                         {tour.title}
                       </Link>
                     </h3>
@@ -235,7 +235,7 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
 
                   <div className="pt-1">
                     <Link 
-                      href={`/tours/${tour.slug}`}
+                      href="/#adventures"
                       className="w-full inline-flex items-center justify-center rounded-2xl bg-gray-50 dark:bg-gray-800/40 hover:bg-emerald-600 hover:text-white dark:hover:bg-emerald-650 dark:hover:text-white px-4 py-3 text-xs font-black uppercase tracking-wider text-gray-750 dark:text-gray-200 transition-all gap-1.5 border border-gray-200 dark:border-gray-800 hover:border-emerald-600 cursor-pointer"
                     >
                       View Experience <ArrowRight className="w-4 h-4" />

@@ -39,7 +39,6 @@ const adventures = [
     highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Zap,
-    href: "/tours/bali-atv-adventure",
     minPax: 1,
     times: DEFAULT_TIMES,
   },
@@ -55,7 +54,6 @@ const adventures = [
     highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Users,
-    href: "/tours/bali-atv-adventure",
     minPax: 2,
     times: DEFAULT_TIMES,
   },
@@ -102,7 +100,6 @@ const adventures = [
     highlights: ["Lunch or breakfast included", "Rice terrace trails", "Local village guide", "Hotel pickup"],
     duration: "4 hours",
     icon: Bike,
-    href: "/tours/pejeng-cycling-tour",
     minPax: 1,
     times: ["08:30", "13:30"],
   },
@@ -132,6 +129,24 @@ const heroCarouselImages = [
   { src: "/images/adventures/canyon-tubing.jpg", alt: "Canyon Tubing", label: "Canyon Tubing" },
   { src: "/images/adventures/cycling.jpg", alt: "Village Cycling Tour", label: "Cycling" },
 ]
+
+const travelGuides = [
+  {
+    title: "Bali ATV Tour Ubud Guide",
+    excerpt: "Trails, prices, and what is included for quad bike rides near Ubud.",
+    href: "/blog/bali-atv-tour-ubud-guide",
+  },
+  {
+    title: "ATV + River Tubing on the Wos River",
+    excerpt: "Combine jungle ATV with a float down Bali's Wos River.",
+    href: "/blog/atv-river-tubing-wos-river-bali",
+  },
+  {
+    title: "How to Book on WhatsApp",
+    excerpt: "Send your name, age, location, activity, and price in one message.",
+    href: "/blog/how-to-book-bali-adventure-whatsapp",
+  },
+] as const
 
 function formatIDR(amount: number) {
   return `IDR ${amount.toLocaleString("id-ID")}`
@@ -206,7 +221,7 @@ export default function Home() {
           }
         })
       },
-      { threshold: 0.15 }
+      { threshold: 0.08, rootMargin: '80px 0px' }
     )
     const sections = document.querySelectorAll("[data-animate]")
     sections.forEach((section) => observer.observe(section))
@@ -244,7 +259,8 @@ export default function Home() {
             Premium Adventure Experiences · Bali
           </p>
           <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold uppercase leading-[0.9] tracking-tight mb-6 animate-fade-in-up-delay-1">
-            Bali Adventures<br /><span className="hero-headline-accent">Await</span>
+            <span className="block">Bali Adventures</span>
+            <span className="hero-headline-accent block">Await</span>
           </h1>
           <p className="hero-subcopy text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
             Looking for fresh activities in Bali? Conquer jungle trails on ATVs, combine with Wos River tubing, ride whitewater rapids, or cycle Pejeng&apos;s rice terraces.
@@ -271,7 +287,7 @@ export default function Home() {
       <section id="stats-strip" data-animate className="bg-brand-green text-sand py-10 md:py-14 px-6 lg:px-12">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, i) => (
-            <div key={i} className={`flex flex-col items-center text-center ${isVisible("stats-strip") ? "animate-count-up" : "opacity-0"}`} style={{ animationDelay: `${i * 0.12}s` }}>
+            <div key={i} className={`flex flex-col items-center text-center ${isVisible("stats-strip") ? "animate-count-up" : ""}`} style={{ animationDelay: `${i * 0.12}s` }}>
               <span className="text-4xl md:text-5xl font-display font-bold text-accent-gold mb-1">{stat.value}</span>
               <span className="text-sm font-medium opacity-70 tracking-wide uppercase">{stat.label}</span>
             </div>
@@ -281,7 +297,7 @@ export default function Home() {
 
       {/* ═══ ADVENTURE CARDS ═══ */}
       <section id="adventures" data-animate className="py-20 md:py-28 px-6 lg:px-12 max-w-7xl mx-auto w-full">
-        <div className={`text-center mb-16 ${isVisible("adventures") ? "animate-fade-in-up" : "opacity-0"}`}>
+        <div className={`text-center mb-16 ${isVisible("adventures") ? "animate-fade-in-up" : ""}`}>
           <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Choose your thrill</p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Packages</h2>
           <p className="text-lg text-brand-green-light max-w-2xl mx-auto">From heart-pumping ATV rides to serene village cycling — we have the perfect adventure for every traveler.</p>
@@ -291,7 +307,7 @@ export default function Home() {
           {adventures.map((adv, i) => {
             const IconComponent = adv.icon
             return (
-              <article key={adv.id} className={`adventure-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-brand-green/5 relative group ${isVisible("adventures") ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: `${i * 0.1}s` }}>
+              <article key={adv.id} className={`adventure-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-brand-green/5 relative group ${isVisible("adventures") ? "animate-fade-in-up" : ""}`} style={{ animationDelay: `${i * 0.1}s` }}>
                 <div className="relative h-56 md:h-64 overflow-hidden">
                   <img src={adv.image} alt={adv.name} className="adventure-card-image w-full h-full object-cover" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
@@ -337,15 +353,10 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3">
-                    {"href" in adv && adv.href ? (
-                      <Link href={adv.href} className="flex-1 flex items-center justify-center gap-2 h-12 rounded-xl border-2 border-brand-green/15 text-brand-green font-bold text-sm uppercase tracking-wider hover:bg-sand transition-colors">
-                        View Details
-                      </Link>
-                    ) : null}
                     <button
                       type="button"
                       onClick={() => openBooking(adv.id)}
-                      className="flex-1 flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                      className="w-full flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
                     >
                       Book This Adventure <ArrowRight className="w-4 h-4" />
                     </button>
@@ -358,38 +369,36 @@ export default function Home() {
       </section>
 
       {/* ═══ KNOW BEFORE YOU GO ═══ */}
-      <section id="know-before-you-go" data-animate className="py-20 md:py-28 px-6 lg:px-12 bg-brand-green w-full">
+      <section id="know-before-you-go" className="py-20 md:py-28 px-6 lg:px-12 bg-brand-green w-full">
         <div className="max-w-5xl mx-auto">
-          <div className={`text-center mb-14 ${isVisible("know-before-you-go") ? "animate-fade-in-up" : "opacity-0"}`}>
+          <div className="text-center mb-14">
             <p className="text-accent-gold font-semibold tracking-[0.15em] uppercase text-sm mb-4">ATV &amp; river adventures</p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-sand uppercase leading-tight mb-4">
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold !text-sand uppercase leading-tight mb-4">
               Know Before You Go
             </h2>
-            <p className="text-lg text-sand/75 max-w-2xl mx-auto">
+            <p className="text-lg text-sand/90 max-w-2xl mx-auto">
               Complete Bali quad bike trips packed with sensation, excitement, and joy — with optional river tubing on the Wos River after you race the ATV track.
             </p>
           </div>
-          <div className={isVisible("know-before-you-go") ? "animate-fade-in-up-delay-1" : "opacity-0"}>
-            <KnowBeforeCards
-              whatYouGet={atvWhatYouGetItems}
-              whatToBring={atvWhatToBringItems}
-              whatYouGetFooter={atvWhatYouGetFooter}
-              whatToBringFooter={atvWhatToBringFooter}
-              variant="dark"
-            />
-          </div>
+          <KnowBeforeCards
+            whatYouGet={atvWhatYouGetItems}
+            whatToBring={atvWhatToBringItems}
+            whatYouGetFooter={atvWhatYouGetFooter}
+            whatToBringFooter={atvWhatToBringFooter}
+            variant="dark"
+          />
         </div>
       </section>
 
       {/* ═══ PRICING TABLE ═══ */}
       <section id="pricing" data-animate className="py-20 md:py-28 px-6 lg:px-12 bg-white w-full">
         <div className="max-w-4xl mx-auto">
-          <div className={`text-center mb-16 ${isVisible("pricing") ? "animate-fade-in-up" : "opacity-0"}`}>
+          <div className={`text-center mb-16 ${isVisible("pricing") ? "animate-fade-in-up" : ""}`}>
             <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Transparent pricing</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Pricing</h2>
             <p className="text-lg text-brand-green-light max-w-xl mx-auto">All-inclusive packages with gear, guides, insurance, and hotel pickup.</p>
           </div>
-          <div className={`space-y-4 ${isVisible("pricing") ? "animate-fade-in-up-delay-1" : "opacity-0"}`}>
+          <div className={`space-y-4 ${isVisible("pricing") ? "animate-fade-in-up-delay-1" : ""}`}>
             {pricingData.map((item, i) => (
               <div key={i} className={`pricing-row relative flex flex-col sm:flex-row items-center justify-between gap-4 p-6 md:p-8 rounded-2xl border-2 ${item.highlight ? "border-accent-gold bg-accent-gold/5 shadow-md" : "border-brand-green/10 bg-sand/50"}`}>
                 {item.highlight && <span className="absolute -top-3 left-6 bg-accent-gold text-brand-green text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>}
@@ -448,7 +457,7 @@ export default function Home() {
 
       {/* ═══ WHY CHOOSE US ═══ */}
       <section id="why-us" data-animate className="py-20 md:py-28 px-6 lg:px-12 max-w-6xl mx-auto w-full">
-        <div className={`text-center mb-16 ${isVisible("why-us") ? "animate-fade-in-up" : "opacity-0"}`}>
+        <div className={`text-center mb-16 ${isVisible("why-us") ? "animate-fade-in-up" : ""}`}>
           <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Why adventure with us</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-brand-green uppercase leading-tight">
             Built for Thrills.<br /><span className="text-accent-gold-dark">Backed by Safety.</span>
@@ -462,7 +471,7 @@ export default function Home() {
           ].map((item, i) => {
             const IconComp = item.icon
             return (
-              <div key={i} className={`bg-white rounded-3xl p-8 md:p-10 text-center shadow-sm shadow-brand-green/5 border border-brand-green/5 ${isVisible("why-us") ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: `${i * 0.12}s` }}>
+              <div key={i} className={`bg-white rounded-3xl p-8 md:p-10 text-center shadow-sm shadow-brand-green/5 border border-brand-green/5 ${isVisible("why-us") ? "animate-fade-in-up" : ""}`} style={{ animationDelay: `${i * 0.12}s` }}>
                 <div className="w-16 h-16 rounded-2xl bg-accent-gold/15 flex items-center justify-center mx-auto mb-6">
                   <IconComp className="w-7 h-7 text-accent-gold-dark" />
                 </div>
@@ -485,6 +494,38 @@ export default function Home() {
             {[...Array(5)].map((_, i) => (<Star key={i} className="w-5 h-5 text-accent-gold fill-accent-gold" />))}
           </div>
           <p className="text-sm font-semibold uppercase tracking-wider opacity-70">— Sarah M. · GetYourGuide Review</p>
+        </div>
+      </section>
+
+      {/* ═══ TRAVEL GUIDES ═══ */}
+      <section id="guides" className="py-16 md:py-20 px-6 lg:px-12 max-w-5xl mx-auto w-full">
+        <div className="text-center mb-10">
+          <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-3">
+            Plan your trip
+          </p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-brand-green uppercase leading-tight mb-4">
+            Bali Adventure Guides
+          </h2>
+          <p className="text-brand-green-light max-w-2xl mx-auto">
+            Detailed guides on ATV near Ubud, Wos River tubing combos, and WhatsApp booking.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {travelGuides.map((guide) => (
+            <Link
+              key={guide.href}
+              href={guide.href}
+              className="group bg-white rounded-2xl border border-brand-green/10 p-6 shadow-sm hover:shadow-md hover:border-brand-green/20 transition-all"
+            >
+              <h3 className="font-bold text-brand-green mb-2 leading-snug group-hover:text-brand-green-light transition-colors">
+                {guide.title}
+              </h3>
+              <p className="text-sm text-brand-green-light leading-relaxed mb-4">{guide.excerpt}</p>
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-green uppercase tracking-wider">
+                Read guide <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
 

@@ -59,7 +59,7 @@ Looking for a fuller day? After racing the ATV track you can combine with **rive
 
 Use the booking form on our site or message WhatsApp. Send your **name, age, adult or child, hotel/pickup location, activity, and estimated price** so we can confirm the same day.
 
-Ready to ride? Book the [Bali ATV Adventure & River Tubing](/tours/bali-atv-adventure) experience.
+Ready to ride? Book the [Bali ATV Adventure & River Tubing](/#adventures) experience.
 `
   },
   {
@@ -98,7 +98,7 @@ Beginners, couples, and small groups. Children can join when age-appropriate —
 
 ## Book the Combo
 
-Open [Bali ATV Adventure & River Tubing](/tours/bali-atv-adventure), choose **ATV + River Tubing Combo**, and send your booking details on WhatsApp.
+Open [Bali ATV Adventure & River Tubing](/#adventures), choose **ATV + River Tubing Combo**, and send your booking details on WhatsApp.
 `
   },
   {
@@ -144,7 +144,7 @@ On [sekarbaliactivity.com](/) tap **Book Now** or **Book This Adventure**. The p
 
 - WhatsApp: +62 817 7572 3663  
 - Email: sekarprivatebaliactivity@gmail.com  
-- Tours: [/tours](/tours)
+- Adventures: [/#adventures](/#adventures)
 `
   },
   {
@@ -159,7 +159,7 @@ On [sekarbaliactivity.com](/) tap **Book Now** or **Book This Adventure**. The p
 
 When most travelers think of Bali's cultural heart, Ubud immediately comes to mind. But just a few kilometers east lies **Pejeng**, a village that predates the modern concept of tourism by centuries. In fact, long before Ubud became a sanctuary for yogis and digital nomads, Pejeng was the epicenter of power in ancient Bali.
 
-If you join our [Pejeng Village Cycling Tour](/tours/pejeng-cycling-tour), you aren't just riding through random rice paddies—you are cycling through the remnants of a kingdom.
+If you join our [Pejeng Village Cycling Tour](/#adventures), you aren't just riding through random rice paddies—you are cycling through the remnants of a kingdom.
 
 ## The Pejeng Kingdom (13th - 14th Century)
 
@@ -179,7 +179,7 @@ Today, Pejeng is a quiet, authentic village that offers a stark contrast to the 
 
 When you book a tour with **Sekar Bali Activity**, you are hosted by locals whose families have lived in Pejeng for generations. We take pride in showing you the hidden temples, the lush rice terraces, and sharing a meal around our family table.
 
-Ready to explore the ancient kingdom? Book your [Authentic Pejeng Cycling Tour](/tours/pejeng-cycling-tour) with us today and experience Bali at a village pace.
+Ready to explore the ancient kingdom? Book your [Authentic Pejeng Cycling Tour](/#adventures) with us today and experience Bali at a village pace.
     `
   },
   {
@@ -194,7 +194,7 @@ Ready to explore the ancient kingdom? Book your [Authentic Pejeng Cycling Tour](
 
 If you have ever gazed at the cascading green rice terraces of Bali, you have witnessed the **Subak** system in action. Recognized by UNESCO as a World Heritage concept, the Subak is often described simply as an irrigation system. However, for the Balinese people, it is a complex social, religious, and agricultural ecosystem that has sustained the island for over a thousand years.
 
-When you join our [Authentic Pejeng Cycling Tour](/tours/pejeng-cycling-tour), you will cycle directly through these ancient waterways, and our local guides will show you exactly how this incredible system functions.
+When you join our [Authentic Pejeng Cycling Tour](/#adventures), you will cycle directly through these ancient waterways, and our local guides will show you exactly how this incredible system functions.
 
 ## The Philosophy of Tri Hita Karana
 
@@ -234,7 +234,7 @@ Ready to see this living heritage up close? Join us in Pejeng and cycle through 
 
 If you have tasted authentic Balinese food, you know that the flavors are complex, deeply aromatic, and utterly unforgettable. The secret behind almost every traditional dish—from *Ayam Betutu* to *Sate Lilit*—is a master spice paste known as **Base Genep** (pronounced *Bah-say Guh-nup*).
 
-When you book our [Traditional Balinese Dinner Cooking Class](/tours/balinese-cooking-class), the very first thing you will do is learn how to make Base Genep from scratch using a traditional stone mortar and pestle (*ulekan*). 
+When you book our [Traditional Balinese Dinner Cooking Class](/#adventures), the very first thing you will do is learn how to make Base Genep from scratch using a traditional stone mortar and pestle (*ulekan*). 
 
 Here are 5 of the essential spices you will be working with:
 
@@ -260,7 +260,7 @@ This is perhaps the most unique flavor in Balinese cooking. Kencur is a tiny rhi
 
 ## Ready to Cook?
 
-Reading about these spices is one thing, but smelling them as you pound them together in a stone mortar is an experience you won't forget. In our [Balinese Cooking Class](/tours/balinese-cooking-class), our local chefs will guide you through the creation of 5 authentic dishes, all starting with these incredible raw ingredients.
+Reading about these spices is one thing, but smelling them as you pound them together in a stone mortar is an experience you won't forget. In our [Balinese Cooking Class](/#adventures), our local chefs will guide you through the creation of 5 authentic dishes, all starting with these incredible raw ingredients.
     `
   },
   {
@@ -287,7 +287,7 @@ As responsible hosts, we believe that experiencing Bali's agricultural heritage 
 
 ## How Umah Kuno Does It Differently
 
-This is why our [Luwak Coffee Plantation Experience](/tours/luwak-coffee-plantation) takes place exclusively at **Umah Kuno**.
+This is why our [Luwak Coffee Plantation Experience](/#adventures) takes place exclusively at **Umah Kuno**.
 
 Umah Kuno is a traditional, family-run plantation that refuses to cage civets. Instead, they rely on wild, free-roaming civets that naturally visit their sprawling jungle property at night. The civets are free to roam, eat a varied, natural diet of fruits and insects, and only select the absolute ripest coffee cherries as a snack. 
 
@@ -326,7 +326,7 @@ By staying just 10-15 minutes outside the center by scooter or taxi, you wake up
 
 There are dozens of massive tour operators that pack 30+ people into a bus and shuttle them between the biggest tourist traps. Instead, look for micro-tours operated by local families. 
 
-For example, instead of renting a bicycle on a crowded main road, you can join our [Authentic Pejeng Cycling Tour](/tours/pejeng-cycling-tour). We ride through the quiet, ancient village of Pejeng, navigating secret paths through the Subak rice terraces where you won't see another tourist all morning. 
+For example, instead of renting a bicycle on a crowded main road, you can join our [Authentic Pejeng Cycling Tour](/#adventures). We ride through the quiet, ancient village of Pejeng, navigating secret paths through the Subak rice terraces where you won't see another tourist all morning. 
 
 ### 3. Visit Temples During "Off-Peak" Hours
 
@@ -338,7 +338,7 @@ If you arrive right when the gates open (usually around 7:00 AM or 8:00 AM), you
 
 Ubud has incredible world-class restaurants, but if you want to understand the soul of Balinese culture, you need to taste food cooked over a traditional wood fire. 
 
-Skip the crowded brunch spots for one day and join a [Traditional Balinese Cooking Class](/tours/balinese-cooking-class). You will learn how to grind spices with a stone mortar, cook authentic dishes, and share a meal with a local family in their home compound.
+Skip the crowded brunch spots for one day and join a [Traditional Balinese Cooking Class](/#adventures). You will learn how to grind spices with a stone mortar, cook authentic dishes, and share a meal with a local family in their home compound.
 
 ### 5. Explore the "Other" Rice Terraces
 
@@ -373,7 +373,7 @@ In general, morning is the absolute best time to be active in Bali.
 * **Cooler Temperatures:** Bali is close to the equator. By 1:00 PM, the sun is blazing and the humidity peaks. Mornings (especially before 10:00 AM) are significantly cooler and much more comfortable for physical activities.
 * **Clearer Skies:** During the wet season (November to April), rain almost always falls in the late afternoon. Mornings are usually bright, sunny, and clear.
 * **Fewer Crowds:** Most tourists are still eating breakfast at their hotels at 8:00 AM. If you start early, you get the roads and the sights to yourself.
-* **Local Life is Active:** Traditional markets, like the one we visit on our [Pejeng Cycling Tour](/tours/pejeng-cycling-tour), only operate in the early morning. It is the best time to see the island waking up.
+* **Local Life is Active:** Traditional markets, like the one we visit on our [Pejeng Cycling Tour](/#adventures), only operate in the early morning. It is the best time to see the island waking up.
 
 **Best Activities for the Morning:**
 * Cycling tours
@@ -392,8 +392,8 @@ While mornings are great for physical activity, afternoons have a completely dif
 * **Sunset Views:** Afternoon tours often perfectly transition into sunset viewing, which is a daily ritual in Bali.
 
 **Best Activities for the Afternoon:**
-* [Traditional Cooking Classes](/tours/balinese-cooking-class) (Ending with dinner!)
-* [Luwak Coffee Tastings](/tours/luwak-coffee-plantation) (A great afternoon pick-me-up)
+* [Traditional Cooking Classes](/#adventures) (Ending with dinner!)
+* [Luwak Coffee Tastings](/#adventures) (A great afternoon pick-me-up)
 * Spa treatments
 * Beach walks
 
@@ -405,7 +405,7 @@ If you are booking a more relaxed cultural experience, like our **Balinese Cooki
 
 ***
 
-No matter when you decide to explore, our family is ready to welcome you. Check out our [Full List of Experiences](/tours) to find the perfect addition to your Bali itinerary.
+No matter when you decide to explore, our family is ready to welcome you. Check out our [Full List of Experiences](/#adventures) to find the perfect addition to your Bali itinerary.
 `
   },
   {
@@ -427,7 +427,7 @@ Start your day at the **Ubud Royal Palace** (Puri Saren Agung). It is located ri
 ### Midday: The Lush Terraces
 By lunchtime, the center of Ubud gets hot and crowded. Escape to the north to visit the famous **Tegalalang Rice Terraces**. Here you can walk along the ridges, take photos, and even try an *atv ride bali swing tour* if you are feeling adventurous.
 
-*(Want us to handle the driving? Book our [Full Day Ubud Tour: Royal Palace, Art Market & Rice Terraces](/tours/full-day-ubud-tour) today!)*
+*(Want us to handle the driving? Book our [Full Day Ubud Tour: Royal Palace, Art Market & Rice Terraces](/#adventures) today!)*
 
 ### Afternoon: The Journey to the Coast
 If you only have one day, you might think you have to choose between the jungle of Ubud and the ocean. You don't! 
@@ -437,7 +437,7 @@ In the late afternoon, make the journey westward toward the coast. The drive tak
 ### Evening: Tanah Lot Sunset
 Arrive at **Tanah Lot Temple** by 5:00 PM. This ancient sea temple sits on a dramatic rock formation rising out of the Indian Ocean. Secure a spot on the cliffs, order a fresh coconut, and watch the sky explode in color as the sun dips below the horizon.
 
-*(Short on time? We offer a dedicated [Half Day Trip: Explore Ubud Culture & Amazing Sunset at Tanah Lot Temple](/tours/half-day-ubud-tanah-lot-tour) that perfectly times this experience for you!)*
+*(Short on time? We offer a dedicated [Half Day Trip: Explore Ubud Culture & Amazing Sunset at Tanah Lot Temple](/#adventures) that perfectly times this experience for you!)*
 `
   },
   {
@@ -448,7 +448,7 @@ Arrive at **Tanah Lot Temple** by 5:00 PM. This ancient sea temple sits on a dra
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
     content: `
-**What is the best time to visit Bali?** For travelers seeking the perfect balance of dry weather and vibrant cultural festivals, the absolute best time to visit Bali is between May and August. During these months, humidity drops significantly and rain is rare, making it ideal for outdoor excursions like our [Full Day Ubud Tour](/tours/full-day-ubud-tour). Furthermore, this window aligns with the Bali Arts Festival (June-July), offering visitors unparalleled access to traditional dances, gamelan performances, and local artistry in Denpasar and Ubud. While September and October are also pleasant, visiting during the peak dry season guarantees clear skies for iconic photos at the Tegalalang Rice Terraces and Mount Batur.
+**What is the best time to visit Bali?** For travelers seeking the perfect balance of dry weather and vibrant cultural festivals, the absolute best time to visit Bali is between May and August. During these months, humidity drops significantly and rain is rare, making it ideal for outdoor excursions like our [Full Day Ubud Tour](/#adventures). Furthermore, this window aligns with the Bali Arts Festival (June-July), offering visitors unparalleled access to traditional dances, gamelan performances, and local artistry in Denpasar and Ubud. While September and October are also pleasant, visiting during the peak dry season guarantees clear skies for iconic photos at the Tegalalang Rice Terraces and Mount Batur.
 
 ### The Dry Season (April - October)
 The dry season is the most popular time to visit Bali. The weather is sunny, the ocean is generally clear, and the humidity is bearable. 
@@ -472,7 +472,7 @@ If your main goal is to experience Balinese culture, any time of year is excelle
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
     content: `
-**What is the dress code for temples in Bali?** The strict dress code for entering any Balinese Hindu temple requires both men and women to cover their legs below the knee by wearing a traditional *kamen* (sarong). Additionally, a *selendang* (temple sash) must be tied around the waist to symbolically separate the pure upper body from the impure lower body. Shoulders and upper arms must also be covered; sleeveless shirts, tank tops, and beachwear are strictly prohibited. When booking our [Half Day Tanah Lot Sunset Tour](/tours/half-day-ubud-tanah-lot-tour), proper temple attire is provided, ensuring all guests can respectfully enter the sacred grounds without needing to purchase their own sarongs at inflated tourist prices.
+**What is the dress code for temples in Bali?** The strict dress code for entering any Balinese Hindu temple requires both men and women to cover their legs below the knee by wearing a traditional *kamen* (sarong). Additionally, a *selendang* (temple sash) must be tied around the waist to symbolically separate the pure upper body from the impure lower body. Shoulders and upper arms must also be covered; sleeveless shirts, tank tops, and beachwear are strictly prohibited. When booking our [Half Day Tanah Lot Sunset Tour](/#adventures), proper temple attire is provided, ensuring all guests can respectfully enter the sacred grounds without needing to purchase their own sarongs at inflated tourist prices.
 
 ### Why the Strict Rules?
 Balinese Hinduism is deeply rooted in respect and purity. Temples are not just tourist attractions; they are active, sacred spaces where locals come to pray and connect with the divine. Dressing appropriately is a fundamental sign of respect.
@@ -489,7 +489,7 @@ Tied over the sarong at the waist. It is believed to bind negative energy and ke
 T-shirts or shirts with sleeves are required. Ladies should avoid low-cut tops. 
 
 ### What If I Don't Have a Sarong?
-Most major temples, including Tanah Lot and Tirta Empul, offer sarongs for rent or borrow at the entrance. However, if you are traveling with a private guide, like on our [Full Day Ubud Tour](/tours/full-day-ubud-tour), your driver will usually provide pristine sarongs and sashes for you to use throughout the day.
+Most major temples, including Tanah Lot and Tirta Empul, offer sarongs for rent or borrow at the entrance. However, if you are traveling with a private guide, like on our [Full Day Ubud Tour](/#adventures), your driver will usually provide pristine sarongs and sashes for you to use throughout the day.
 `
   },
   {
@@ -500,7 +500,7 @@ Most major temples, including Tanah Lot and Tirta Empul, offer sarongs for rent 
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
     content: `
-**Is the Bali Swing worth the money?** Whether the Bali Swing is worth the cost depends entirely on your priority for social media photography. For travelers focused on capturing iconic, highly-curated Instagram content, the $30-$40 entry fee is justified by the sweeping jungle backdrops, professional photographers, and long-flowing dress rentals available on-site. However, for travelers seeking authentic cultural experiences, the long queues (often exceeding an hour) and highly commercialized atmosphere can be disappointing. If you choose to experience the swings overlooking the Tegalalang Rice Terraces, it is best combined with a broader cultural itinerary, such as our [Full Day Ubud Tour](/tours/full-day-ubud-tour), which balances the modern swing photo-op with authentic visits to the Ubud Royal Palace and local art markets.
+**Is the Bali Swing worth the money?** Whether the Bali Swing is worth the cost depends entirely on your priority for social media photography. For travelers focused on capturing iconic, highly-curated Instagram content, the $30-$40 entry fee is justified by the sweeping jungle backdrops, professional photographers, and long-flowing dress rentals available on-site. However, for travelers seeking authentic cultural experiences, the long queues (often exceeding an hour) and highly commercialized atmosphere can be disappointing. If you choose to experience the swings overlooking the Tegalalang Rice Terraces, it is best combined with a broader cultural itinerary, such as our [Full Day Ubud Tour](/#adventures), which balances the modern swing photo-op with authentic visits to the Ubud Royal Palace and local art markets.
 
 ### What to Expect at the Bali Swing
 The "Bali Swing" is not just one swing; it is an entire industry. There are dozens of swing parks clustered around the Tegalalang and Bongkawan areas. 
@@ -525,7 +525,7 @@ If you are traveling with teenagers, on a honeymoon, or simply love photography,
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1596649845347-f58c73c2ea6f?auto=format&fit=crop&w=1200&q=80",
     content: `
-**What is the best traditional food in Bali?** The most iconic and culturally significant traditional Balinese food is **Ayam Betutu**, a whole chicken heavily marinated in a complex spice paste (Base Genep), wrapped in banana leaves, and slow-roasted for up to 12 hours. Other absolute must-try dishes include **Babi Guling** (spit-roasted suckling pig), **Sate Lilit** (minced meat wrapped around lemongrass stalks), **Lawar** (a vibrant salad of long beans, grated coconut, and rich spices), and the ubiquitous **Sambal Matah** (a raw, spicy shallot and lemongrass relish). To truly appreciate these complex flavors, travelers can learn to prepare them from scratch by booking our highly-rated [Traditional Balinese Cooking Class](/tours/balinese-cooking-class).
+**What is the best traditional food in Bali?** The most iconic and culturally significant traditional Balinese food is **Ayam Betutu**, a whole chicken heavily marinated in a complex spice paste (Base Genep), wrapped in banana leaves, and slow-roasted for up to 12 hours. Other absolute must-try dishes include **Babi Guling** (spit-roasted suckling pig), **Sate Lilit** (minced meat wrapped around lemongrass stalks), **Lawar** (a vibrant salad of long beans, grated coconut, and rich spices), and the ubiquitous **Sambal Matah** (a raw, spicy shallot and lemongrass relish). To truly appreciate these complex flavors, travelers can learn to prepare them from scratch by booking our highly-rated [Traditional Balinese Cooking Class](/#adventures).
 
 ### 1. Ayam Betutu (Slow-Cooked Spiced Chicken)
 This is the king of Balinese cuisine. The secret is the *Base Genep* spice paste, which is stuffed inside the chicken and rubbed all over the skin before a long, slow roasting process. The meat becomes incredibly tender and intensely flavorful.
@@ -542,7 +542,7 @@ You will find this on almost every table in Bali. It is a fresh, raw mixture of 
 ### 5. Babi Guling (Suckling Pig)
 Usually reserved for special ceremonies, Babi Guling is famous for its crispy skin and tender meat, achieved by slow-roasting the pig over an open fire while basting it with coconut water and spices.
 
-*(Want to learn how to cook Sate Lilit, Lawar, and Sambal Matah? Join our [Balinese Cooking Class](/tours/balinese-cooking-class) tonight!)*
+*(Want to learn how to cook Sate Lilit, Lawar, and Sambal Matah? Join our [Balinese Cooking Class](/#adventures) tonight!)*
 `
   },
   {
@@ -553,7 +553,7 @@ Usually reserved for special ceremonies, Babi Guling is famous for its crispy sk
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
     content: `
-**How do you get around in Ubud, Bali?** The safest and most efficient way to get around Ubud in 2026 is by hiring a private driver for full-day excursions or using authorized ride-sharing apps (like Grab or Gojek) for short, point-to-point trips within the town center. While renting a scooter offers maximum flexibility and is very popular, it is only recommended for highly experienced riders with an international license due to the heavy traffic, steep ravines, and unpredictable road conditions surrounding the Ubud area. For travelers planning to visit multiple dispersed sites in one day, booking a comprehensive package like our [Full Day Ubud Tour](/tours/full-day-ubud-tour) is the most cost-effective option, as it includes private, air-conditioned transport and completely eliminates the stress of navigation and parking.
+**How do you get around in Ubud, Bali?** The safest and most efficient way to get around Ubud in 2026 is by hiring a private driver for full-day excursions or using authorized ride-sharing apps (like Grab or Gojek) for short, point-to-point trips within the town center. While renting a scooter offers maximum flexibility and is very popular, it is only recommended for highly experienced riders with an international license due to the heavy traffic, steep ravines, and unpredictable road conditions surrounding the Ubud area. For travelers planning to visit multiple dispersed sites in one day, booking a comprehensive package like our [Full Day Ubud Tour](/#adventures) is the most cost-effective option, as it includes private, air-conditioned transport and completely eliminates the stress of navigation and parking.
 
 ### 1. Private Drivers (Best for Day Trips)
 If you want to visit waterfalls, rice terraces, and temples outside of the town center, hiring a private driver for the day is the standard. It costs between $40-$60 USD for 10 hours. Your driver handles the traffic, knows the shortcuts, and waits for you at every stop.
@@ -577,7 +577,7 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
     author: "Sekar Bali Activity Team",
     image: "/images/cooking/stovetop-class.jpg",
     content: `
-**What happens during a traditional Balinese cooking class in Ubud?** Our [Traditional Balinese Cooking Class](/tours/balinese-cooking-class) in Pejeng begins with an authentic morning market walk where guests learn to identify exotic herbs and spices from local sellers. Back in our traditional open-air kitchen, guests get hands-on experience pounding fresh *Base Genep* spice paste, molding *Sate Lilit* skewers around bamboo, and mastering the art of flipping green *Dadar Gulung* pandan crepes over flame before feasting together on a buffet spread of their own creations.
+**What happens during a traditional Balinese cooking class in Ubud?** Our [Traditional Balinese Cooking Class](/#adventures) in Pejeng begins with an authentic morning market walk where guests learn to identify exotic herbs and spices from local sellers. Back in our traditional open-air kitchen, guests get hands-on experience pounding fresh *Base Genep* spice paste, molding *Sate Lilit* skewers around bamboo, and mastering the art of flipping green *Dadar Gulung* pandan crepes over flame before feasting together on a buffet spread of their own creations.
 
 ![Local guide explaining fresh market ingredients in Pejeng market](/images/cooking/market-guide.jpg)
 
@@ -620,7 +620,7 @@ Every guest receives a digital recipe book to take home so you can recreate auth
 - [Balinese Cooking Class Ubud Guide](https://tumangbaliclass.com/balinese-cooking-class-ubud)
 - [Best Cooking Classes in Bali Overview](https://tumangbaliclass.com/best-cooking-classes-bali)
 
-Ready to cook with us? [Book Your Balinese Cooking Class](/tours/balinese-cooking-class) now or send us a message on [WhatsApp](https://wa.me/6281775723663)!
+Ready to cook with us? [Book Your Balinese Cooking Class](/#adventures) now or send us a message on [WhatsApp](https://wa.me/6281775723663)!
 `
   },
   {
@@ -648,7 +648,7 @@ In contrast, **Tegallalang** receives thousands of visitors daily. The main road
 
 ### 2. Terrain & Activity Type: Gentle Cycling vs. Steep Climbing
 
-- **Pejeng Cycling Tour**: Paved, gently sloping village lanes and dirt ridge paths suitable for families, couples, and seniors. Our [Pejeng Village Cycling Tour](/tours/pejeng-cycling-tour) includes comfortable mountain bikes, helmets, and a dedicated local guide.
+- **Pejeng Cycling Tour**: Paved, gently sloping village lanes and dirt ridge paths suitable for families, couples, and seniors. Our [Pejeng Village Cycling Tour](/#adventures) includes comfortable mountain bikes, helmets, and a dedicated local guide.
 - **Tegallalang Walking**: Requires climbing hundreds of steep concrete steps down into the ravine and up the opposing ridge. It can be exhausting in 30°C (86°F) heat.
 
 ### 3. Cultural Value & Subak Heritage
@@ -657,7 +657,7 @@ While both locations use the UNESCO-recognized **Subak** cooperative irrigation 
 
 ***
 
-**Ready to ride through the real Bali?** Join our local family guides for a morning [Pejeng Village Cycling Tour](/tours/pejeng-cycling-tour) and experience Ubud at a peaceful pace.
+**Ready to ride through the real Bali?** Join our local family guides for a morning [Pejeng Village Cycling Tour](/#adventures) and experience Ubud at a peaceful pace.
 `
   },
   {
@@ -674,7 +674,7 @@ While both locations use the UNESCO-recognized **Subak** cooperative irrigation 
 > - **Core Rhizomes**: Galangal, Turmeric, Ginger, and Lesser Galangal (*Kencur*).
 > - **Aromatic Seeds**: Coriander seeds, white pepper, black pepper, and nutmeg.
 > - **Traditional Tool**: Always ground manually using a heavy granite mortar and pestle (*ulekan*) to release essential oils without scorching the spices.
-> - **Hands-On Experience**: Included as step one in our [Traditional Balinese Cooking Class](/tours/balinese-cooking-class).
+> - **Hands-On Experience**: Included as step one in our [Traditional Balinese Cooking Class](/#adventures).
 
 ---
 
@@ -689,7 +689,7 @@ Balinese cuisine categorizes spices by color and cosmic energy according to anci
 
 ### Why Mortar & Pestle Beats a Food Processor
 
-In our [Balinese Cooking Class](/tours/balinese-cooking-class), we teach guests why electric food processors are avoided by traditional cooks. High-speed blades shear the cell walls of fresh rhizomes and heat up the mixture, bittering the delicate volatile oils. 
+In our [Balinese Cooking Class](/#adventures), we teach guests why electric food processors are avoided by traditional cooks. High-speed blades shear the cell walls of fresh rhizomes and heat up the mixture, bittering the delicate volatile oils. 
 
 Hand-pounding with a stone mortar (*ulekan*) crushes the fibers gently, releasing deep, aromatic fragrance without overheating the paste.
 
@@ -699,7 +699,7 @@ Hand-pounding with a stone mortar (*ulekan*) crushes the fibers gently, releasin
 
 Nothing matches the experience of smelling Base Genep as it sizzles in coconut oil over an open flame in a traditional outdoor kitchen. 
 
-Book your seat at our [Traditional Balinese Dinner Cooking Class](/tours/balinese-cooking-class) in Pejeng, where you'll make Base Genep from scratch and cook a 5-course feast!
+Book your seat at our [Traditional Balinese Dinner Cooking Class](/#adventures) in Pejeng, where you'll make Base Genep from scratch and cook a 5-course feast!
 `
   },
   {
@@ -733,7 +733,7 @@ Book your seat at our [Traditional Balinese Dinner Cooking Class](/tours/balines
 
 1. **Meet Your Driver Past Customs**: After passing baggage claim and customs, walk past the currency exchange booths toward the designated **Driver Meeting Area**. Your pre-booked driver will be holding a clear sign with your name.
 2. **Flight Tracking Included**: When you book through [Sekar Bali Activity Transfers](/transfers), we track your flight number in real-time. If your flight is delayed 2 hours, your driver automatically adjusts arrival time without extra penalty fees.
-3. **Combine Airport Pickups with Tours**: Arriving early in the morning? Many guests combine their airport transfer with a stop at Tanah Lot or a peaceful evening [Balinese Cooking Class](/tours/balinese-cooking-class).
+3. **Combine Airport Pickups with Tours**: Arriving early in the morning? Many guests combine their airport transfer with a stop at Tanah Lot or a peaceful evening [Balinese Cooking Class](/#adventures).
 
 ***
 
@@ -766,17 +766,17 @@ If you accidentally step on an unlit offering, don't panic! Simply say a quiet *
 
 ### 2. Visiting Family Compounds & Local Homes
 
-When joining our [Balinese Cooking Class](/tours/balinese-cooking-class) or visiting a local Pejeng family compound, always take off your sandals or shoes at the entrance of the sleeping and kitchen pavilions. 
+When joining our [Balinese Cooking Class](/#adventures) or visiting a local Pejeng family compound, always take off your sandals or shoes at the entrance of the sleeping and kitchen pavilions. 
 
 Greetings are usually given with a gentle nod and a smile, or by placing your hands together at chest height (*Om Swastiastu*).
 
 ### 3. Cycling & Walking Through Village Trails
 
-When cycling on narrow village trails during our [Pejeng Cycling Tour](/tours/pejeng-cycling-tour), dismount your bicycle if passing through an active temple ceremony or village procession (*Melasti*). Ringing bike bells or rushing through a religious gathering is considered disrespectful.
+When cycling on narrow village trails during our [Pejeng Cycling Tour](/#adventures), dismount your bicycle if passing through an active temple ceremony or village procession (*Melasti*). Ringing bike bells or rushing through a religious gathering is considered disrespectful.
 
 ***
 
-**Want to experience authentic village life with local hosts?** Explore Pejeng with born-and-raised local guides on our [Full Day & Half Day Experiences](/tours).
+**Want to experience authentic village life with local hosts?** Explore Pejeng with born-and-raised local guides on our [Full Day & Half Day Experiences](/#adventures).
 `
   },
   {
@@ -793,7 +793,7 @@ When cycling on narrow village trails during our [Pejeng Cycling Tour](/tours/pe
 > - **Red Flag**: Any plantation keeping civets in small wire cages for tourist display or photo-ops.
 > - **Wild Sourcing**: Natural civets eat a varied diet of wild fruits, insects, and ripe cherries, resulting in chemical-free digestive fermentation.
 > - **Flavor Difference**: Wild Luwak coffee is smooth, naturally low in acidity, and caramel-toned without bitter aftertastes.
-> - **Ethical Visit**: Book our [Luwak Coffee Plantation Experience](/tours/luwak-coffee-plantation) at Umah Kuno.
+> - **Ethical Visit**: Book our [Luwak Coffee Plantation Experience](/#adventures) at Umah Kuno.
 
 ---
 
@@ -817,7 +817,7 @@ At **Umah Kuno**, wild-harvested beans are washed, solar-dried, and hand-roasted
 
 Enjoy a tasting flight of wild Luwak coffee and traditional Balinese herbal teas overlooking the Pejeng jungle ravine.
 
-Book your seat on our [Luwak Coffee Plantation Experience](/tours/luwak-coffee-plantation) today!
+Book your seat on our [Luwak Coffee Plantation Experience](/#adventures) today!
 `
   }
 ]

@@ -27,7 +27,7 @@ export function buildGeoWebPageSchema() {
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/llms-full.txt`,
       `${SITE_URL}/.well-known/llms.txt`,
-      `${SITE_URL}/tours/bali-atv-adventure`,
+      `${SITE_URL}/#adventures`,
       `${SITE_URL}/blog`,
     ],
   }

@@ -40,6 +40,12 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--brand-green);
 }
 
+/* Let utility text colors win on dark sections */
+#know-before-you-go h2,
+#know-before-you-go h3 {
+  color: inherit;
+}
+
 /* ─── Animations ─── */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }

@@ -40,6 +40,7 @@ type Adventure = {
   icon: LucideIcon
   minPax: number
   times: string[]
+  tourSlug?: string
 }
 
 type PricingRow = {
@@ -67,6 +68,7 @@ const adventures: Adventure[] = [
     icon: Zap,
     minPax: 1,
     times: DEFAULT_TIMES,
+    tourSlug: "bali-atv-adventure",
   },
   {
     id: "tandem-atv",
@@ -82,6 +84,7 @@ const adventures: Adventure[] = [
     icon: Users,
     minPax: 2,
     times: DEFAULT_TIMES,
+    tourSlug: "bali-atv-adventure",
   },
   {
     id: "rafting",
@@ -127,6 +130,7 @@ const adventures: Adventure[] = [
     icon: Bike,
     minPax: 1,
     times: ["13:30"],
+    tourSlug: "ubud-ricefield-cycling-tour",
   },
 ]
 
@@ -378,6 +382,14 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3">
+                    {adv.tourSlug ? (
+                      <Link
+                        href={`/tours/${adv.tourSlug}`}
+                        className="w-full flex items-center justify-center gap-2 h-12 rounded-xl border-2 border-brand-green/20 text-brand-green font-bold text-sm uppercase tracking-wider hover:bg-white transition-colors"
+                      >
+                        View Itinerary
+                      </Link>
+                    ) : null}
                     <button
                       type="button"
                       onClick={() => openBooking(adv.id)}

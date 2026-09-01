@@ -807,3 +807,11 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     reviews: []
   }
 ]
+
+export function getTourBySlug(slug: string): Tour | undefined {
+  return TOURS.find((tour) => tour.slug === slug)
+}
+
+export function getAllTourSlugs(): string[] {
+  return TOURS.map((tour) => tour.slug)
+}

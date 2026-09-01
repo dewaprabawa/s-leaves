@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { BLOG_POSTS } from '@/data/blog'
+import { TOURS } from '@/data/tours'
 import { SITE_URL } from '@/lib/seo'
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -45,6 +46,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  const tourPages: MetadataRoute.Sitemap = TOURS.map((tour) => ({
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    lastModified: now,
+    changeFrequency: 'monthly',
+    priority: 0.85,
+  }))
+
   const geoPages: MetadataRoute.Sitemap = [
     {
       url: `${SITE_URL}/llms.txt`,
@@ -66,5 +74,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
 
-  return [...corePages, ...blogPages, ...geoPages]
+  return [...corePages, ...tourPages, ...blogPages, ...geoPages]
 }

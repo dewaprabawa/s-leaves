@@ -165,14 +165,13 @@ const SETTINGS = { siteName: SITE_NAME }
 
 const footerLinks = {
   adventures: [
-    { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
+    { label: "ATV Rides", href: "/#adventures" },
     { label: "Whitewater Rafting", href: "/#adventures" },
     { label: "Canyon Tubing", href: "/#adventures" },
     { label: "Village Cycling", href: "/#adventures" },
     { label: "All Pricing", href: "/#pricing" },
   ],
   explore: [
-    { label: "Tours", href: "/tours" },
     { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },

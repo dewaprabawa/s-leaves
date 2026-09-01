@@ -32,7 +32,6 @@ const adventures = [
     highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Zap,
-    href: "/tours/bali-atv-adventure",
     minPax: 1,
     times: DEFAULT_TIMES,
   },
@@ -48,7 +47,6 @@ const adventures = [
     highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Users,
-    href: "/tours/bali-atv-adventure",
     minPax: 2,
     times: DEFAULT_TIMES,
   },
@@ -95,7 +93,6 @@ const adventures = [
     highlights: ["Lunch or breakfast included", "Rice terrace trails", "Local village guide", "Hotel pickup"],
     duration: "4 hours",
     icon: Bike,
-    href: "/tours/pejeng-cycling-tour",
     minPax: 1,
     times: ["08:30", "13:30"],
   },
@@ -330,15 +327,10 @@ export default function Home() {
                     ))}
                   </div>
                   <div className="flex flex-col sm:flex-row gap-3">
-                    {"href" in adv && adv.href ? (
-                      <Link href={adv.href} className="flex-1 flex items-center justify-center gap-2 h-12 rounded-xl border-2 border-brand-green/15 text-brand-green font-bold text-sm uppercase tracking-wider hover:bg-sand transition-colors">
-                        View Details
-                      </Link>
-                    ) : null}
                     <button
                       type="button"
                       onClick={() => openBooking(adv.id)}
-                      className="flex-1 flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                      className="w-full flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
                     >
                       Book This Adventure <ArrowRight className="w-4 h-4" />
                     </button>

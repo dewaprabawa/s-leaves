@@ -1,6 +1,20 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/tours',
+        destination: '/#adventures',
+        permanent: true,
+      },
+      {
+        source: '/tours/:slug',
+        destination: '/#adventures',
+        permanent: true,
+      },
+    ]
+  },
   images: {
     formats: ['image/avif', 'image/webp'],
     qualities: [70, 75],

@@ -10,6 +10,13 @@ import {
   Star, ChevronLeft, ChevronRight, Waves,
   Bike, Compass, Zap
 } from 'lucide-react'
+import { KnowBeforeCards } from '@/components/KnowBeforeCards'
+import {
+  atvWhatYouGetItems,
+  atvWhatToBringItems,
+  atvWhatYouGetFooter,
+  atvWhatToBringFooter,
+} from '@/data/atvKnowBefore'
 import { CONTACT_EMAIL } from '@/lib/contact'
 
 /** Tiny LQIP for the hero — keeps LCP fast while the optimized image loads */
@@ -373,38 +380,13 @@ export default function Home() {
               Complete Bali quad bike trips packed with sensation, excitement, and joy — with optional river tubing on the Wos River after you race the ATV track.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            <div className="rounded-3xl bg-sand p-8 md:p-10 shadow-xl border border-sand-dark/40">
-              <h3 className="font-display text-2xl font-bold text-brand-green uppercase mb-6">What To Bring</h3>
-              <ul className="space-y-4">
-                {[
-                  "Changing clothes / dry cloth",
-                  "Sunscreen (recommended)",
-                  "Cash for personal expenses",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-brand-green">
-                    <Check className="w-5 h-5 text-accent-gold-dark shrink-0 mt-0.5" />
-                    <span className="text-base leading-relaxed text-brand-green-light">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-3xl bg-sand p-8 md:p-10 shadow-xl border border-sand-dark/40">
-              <h3 className="font-display text-2xl font-bold text-brand-green uppercase mb-6">What You Get</h3>
-              <ul className="space-y-4">
-                {[
-                  "Simple menu lunch",
-                  "Boot shoes & helmet",
-                  "Insurance coverage",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-brand-green">
-                    <Shield className="w-5 h-5 text-accent-gold-dark shrink-0 mt-0.5" />
-                    <span className="text-base leading-relaxed text-brand-green-light">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <KnowBeforeCards
+            whatYouGet={atvWhatYouGetItems}
+            whatToBring={atvWhatToBringItems}
+            whatYouGetFooter={atvWhatYouGetFooter}
+            whatToBringFooter={atvWhatToBringFooter}
+            variant="dark"
+          />
         </div>
       </section>
 

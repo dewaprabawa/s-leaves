@@ -89,17 +89,6 @@ Hop on a powerful ATV and race scenic off-road trails with expert guides. Packag
 ### Combine with River Tubing on the Wos River
 Want even more adventure? Pair your ATV ride with river tubing on the Wos River. After racing the ATV track, cool down as you float and explore the river on a tube — a favourite combo for guests who want a full day of thrills on land and water.
 
-### What You Get
-Every ATV package includes:
-- **Simple menu lunch** to refuel after the ride
-- **Boot shoes & helmet** for safety and comfort
-- **Insurance** for peace of mind
-
-### What To Bring
-- Changing clothes / dry cloth
-- Sunscreen (recommended)
-- Cash for personal expenses
-
 Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing combo for your preferred date.`,
     highlights: [
       "Complete Bali quad bike (ATV) adventure",
@@ -108,6 +97,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       "Suitable for beginners with full safety briefing",
     ],
     included: [
+      "Hotel pickup & drop-off (Ubud area)",
       "ATV ride (single or tandem)",
       "Boot shoes & helmet",
       "Simple menu lunch",
@@ -172,7 +162,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-1",
         question: "What should I bring?",
         answer:
-          "Bring changing clothes or a dry cloth, sunscreen (recommended), and some cash. We provide boot shoes, helmet, lunch, and insurance.",
+          "Bring changing clothes or a dry cloth, sunscreen (recommended), and some cash for extras. A waterproof phone case is optional but handy for trail photos. Towels and changing facilities are available at our base.",
       },
       {
         id: "faq-atv-2",
@@ -190,7 +180,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-4",
         question: "What is included in the price?",
         answer:
-          "Boot shoes and helmet, a simple menu lunch, and insurance are included with your ATV adventure.",
+          "Hotel pickup and drop-off (Ubud area), your guided ATV ride, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. River tubing on the Wos River is an optional combo — ask when you book.",
       },
     ],
     reviews: [],

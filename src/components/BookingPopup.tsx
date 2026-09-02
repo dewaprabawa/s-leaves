@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 import { X, ExternalLink, Info } from 'lucide-react';
 import { formatIdr, openWhatsAppBooking } from '@/lib/whatsapp';
 import { getTourSlugForActivity } from '@/lib/bookingTourDetails';
-import { MEETING_POINT, type PickupMode } from '@/lib/meetingPoint';
+import { MEETING_POINT } from '@/lib/meetingPoint';
 import BookingTourDetailPanel from '@/components/BookingTourDetailPanel';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
@@ -50,7 +50,7 @@ export function BookingPopup({
   const [notes, setNotes] = useState("");
   const [selectedTourId, setSelectedTourId] = useState(tour?.id || "");
   const [showDetails, setShowDetails] = useState(false);
-  const [pickupMode, setPickupMode] = useState<PickupMode>("hotel");
+  const [wantsPickup, setWantsPickup] = useState(false);
 
   const activeTour =
     (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
@@ -76,7 +76,7 @@ export function BookingPopup({
       setLocationDetails("");
       setNotes("");
       setShowDetails(false);
-      setPickupMode("hotel");
+      setWantsPickup(false);
     }
   }, [isOpen, tour]);
 
@@ -115,19 +115,16 @@ export function BookingPopup({
   const kidPrice = activeTour.kidPrice || 0;
   const outOfUbudFee = 120000;
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
-  const isMeetingPoint = pickupMode === "meeting-point";
   const pickupFee =
-    isMeetingPoint
-      ? 0
-      : location && (hasFreeUbudPickup ? isOutUbud : true)
-        ? outOfUbudFee
-        : 0;
+    wantsPickup && location && (hasFreeUbudPickup ? isOutUbud : true)
+      ? outOfUbudFee
+      : 0;
   const totalCost = (adults * adultPrice) + (kids * kidPrice) + pickupFee;
   const nameOk = guestName.trim().length >= 2;
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
-  const locationOk = isMeetingPoint
-    ? true
-    : Boolean(location) && locationDetails.trim().length >= 2;
+  const locationOk = wantsPickup
+    ? Boolean(location) && locationDetails.trim().length >= 2
+    : true;
   const canSubmit = nameOk && ageOk && locationOk && !isInvalidPax;
   const detailTourSlug = getTourSlugForActivity(activeTour.id);
 
@@ -135,17 +132,22 @@ export function BookingPopup({
     if (!nameOk) return alert("Please enter your name.");
     if (!ageOk) return alert("Please enter your age.");
     if (isInvalidPax) return alert(`Minimum ${activeTour.minPax} persons required.`);
-    if (!isMeetingPoint && !location) return alert("Please select a pickup location on the map.");
-    if (!isMeetingPoint && !locationOk) return alert("Please enter your hotel / pickup location name.");
+    if (!wantsPickup) {
+      // meet at arena — no address needed
+    } else if (!location) {
+      return alert("Please select a pickup location on the map.");
+    } else if (!locationOk) {
+      return alert("Please enter your hotel / pickup address.");
+    }
 
-    const bookingLocation = isMeetingPoint
-      ? `No pickup — meet at ${MEETING_POINT.label}`
-      : locationDetails.trim();
-    const bookingMapUrl = isMeetingPoint
-      ? MEETING_POINT.mapUrl
-      : location
+    const bookingLocation = wantsPickup
+      ? locationDetails.trim()
+      : `Meet at ${MEETING_POINT.label}`;
+    const bookingMapUrl = wantsPickup
+      ? location
         ? `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}`
-        : undefined;
+        : undefined
+      : MEETING_POINT.mapUrl;
 
     openWhatsAppBooking({
       guestName: guestName.trim(),
@@ -162,15 +164,15 @@ export function BookingPopup({
       price: totalCost,
       notes: [
         notes.trim() || null,
-        isMeetingPoint
-          ? "Self meet at All New Bali Adventure — no pickup surcharge"
-          : !location
+        wantsPickup
+          ? !location
             ? null
             : hasFreeUbudPickup
               ? isOutUbud
                 ? "Out of Ubud pickup (+IDR 120,000)"
                 : "Ubud area pickup (free)"
-              : "Hotel pickup (+IDR 120,000)",
+              : "Hotel pickup (+IDR 120,000)"
+          : "Self meet at All New Bali Adventure — no pickup surcharge",
       ].filter(Boolean).join(" · ") || undefined,
     });
   };
@@ -216,7 +218,7 @@ export function BookingPopup({
         </div>
 
         <div className="w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
-          {isMeetingPoint ? (
+          {!wantsPickup ? (
             <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">
               <p className="text-xs font-bold uppercase tracking-wider text-brand-green-light mb-2">
                 Meeting point
@@ -244,8 +246,8 @@ export function BookingPopup({
             }} />
           )}
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
-            <strong className="block mb-1">{isMeetingPoint ? "Meeting Point" : "Pickup Location"}</strong>
-            {isMeetingPoint ? (
+            <strong className="block mb-1">{wantsPickup ? "Pickup Location" : "Meeting Point"}</strong>
+            {!wantsPickup ? (
               <span className="text-brand-green font-bold flex items-center gap-1">
                 <span className="w-2 h-2 rounded-full bg-brand-green"></span>
                 {MEETING_POINT.name} — no pickup fee
@@ -370,37 +372,24 @@ export function BookingPopup({
               </div>
             </div>
 
-            <div>
-              <label className="block text-brand-green font-bold text-sm mb-2">Transport *</label>
-              <div className="flex flex-col sm:flex-row gap-2">
-                <button
-                  type="button"
-                  onClick={() => setPickupMode("hotel")}
-                  className={`flex-1 py-3 px-4 rounded-xl font-bold text-sm border transition-colors text-left ${
-                    pickupMode === "hotel"
-                      ? "bg-brand-green text-sand border-brand-green"
-                      : "bg-white text-brand-green border-brand-green/20 hover:bg-sand"
-                  }`}
-                >
-                  Hotel pickup
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setPickupMode("meeting-point")}
-                  className={`flex-1 py-3 px-4 rounded-xl font-bold text-sm border transition-colors text-left ${
-                    pickupMode === "meeting-point"
-                      ? "bg-brand-green text-sand border-brand-green"
-                      : "bg-white text-brand-green border-brand-green/20 hover:bg-sand"
-                  }`}
-                >
-                  No pickup — meet at {MEETING_POINT.name}
-                </button>
-              </div>
-            </div>
+            <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 shadow-sm">
+              <input
+                type="checkbox"
+                checked={wantsPickup}
+                onChange={(e) => setWantsPickup(e.target.checked)}
+                className="mt-0.5 h-4 w-4 shrink-0 rounded border-brand-green/30 text-brand-green focus:ring-brand-green"
+              />
+              <span className="text-sm leading-relaxed">
+                <span className="font-bold text-brand-green block mb-0.5">I need hotel pickup</span>
+                <span className="text-brand-green-light">
+                  Optional. If unchecked, meet us at {MEETING_POINT.name}. Check this to add your hotel address on the map.
+                </span>
+              </span>
+            </label>
 
-            {!isMeetingPoint ? (
+            {wantsPickup ? (
             <div>
-              <label className="block text-brand-green font-bold text-sm mb-2">Hotel / Pickup Location *</label>
+              <label className="block text-brand-green font-bold text-sm mb-2">Hotel / Pickup Address *</label>
               <input 
                 type="text" 
                 value={locationDetails} 
@@ -427,7 +416,7 @@ export function BookingPopup({
                 />
               </div>
               <div className="flex-1">
-                <label className="block text-brand-green font-bold text-sm mb-2">{isMeetingPoint ? "Meeting Time" : "Pickup Time"}</label>
+                <label className="block text-brand-green font-bold text-sm mb-2">{wantsPickup ? "Pickup Time" : "Meeting Time"}</label>
                 <select value={time} onChange={e => setTime(e.target.value)} className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm appearance-none cursor-pointer">
                   {activeTour.times.map((t, idx) => (
                     <option key={idx} value={t}>{t}</option>

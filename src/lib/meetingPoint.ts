@@ -1,4 +1,4 @@
-/** Self-meet option — no hotel pickup; guests arrive at the ATV arena */
+/** Self-meet option when hotel pickup is not selected */
 export const MEETING_POINT = {
   name: 'All New Bali Adventure',
   label: 'All New Bali Adventure (meeting point)',
@@ -8,5 +8,3 @@ export const MEETING_POINT = {
   mapUrl:
     'https://www.google.com/maps/search/?api=1&query=All+New+Bali+Adventure+Pejeng+Ubud+Bali',
 } as const
-
-export type PickupMode = 'hotel' | 'meeting-point'

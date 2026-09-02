@@ -116,7 +116,7 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: 'Tandem ATV Ride',
     description:
-      'Private tandem ATV tour Bali for couples and friends. Share a complete quad bike experience with lunch, safety gear, insurance, and optional river tubing.',
+      'Private tandem ATV tour at All New Bali Adventure for couples and friends. Share a complete quad bike experience with lunch, safety gear, insurance, and optional river tubing.',
     price: '859000',
     image: '/images/adventures/atv-adventure.jpg',
   },

@@ -164,14 +164,29 @@ const heroCarouselImages = [
 
 const travelGuides = [
   {
+    title: "Bali Adventure Packages & Prices",
+    excerpt: "Compare ATV, rafting, tubing, and cycling packages with transparent IDR pricing.",
+    href: "/blog/bali-adventure-packages-prices-2026",
+  },
+  {
+    title: "Ubud Ricefield Cycling Tour Guide",
+    excerpt: "Full itinerary, IDR 450K pricing, and what is included on the cycling day tour.",
+    href: "/blog/ubud-ricefield-cycling-tour-guide-2026",
+  },
+  {
     title: "Bali ATV Tour Ubud Guide",
-    excerpt: "Trails, prices, and what is included for quad bike rides near Ubud.",
+    excerpt: "Trails, prices, and what is included for quad bike rides at All New Bali Adventure.",
     href: "/blog/bali-atv-tour-ubud-guide",
   },
   {
     title: "ATV + River Tubing on the Wos River",
     excerpt: "Combine jungle ATV with a float down Bali's Wos River.",
     href: "/blog/atv-river-tubing-wos-river-bali",
+  },
+  {
+    title: "Whitewater Rafting Near Ubud",
+    excerpt: "Class II-III rapids, prices from IDR 400K, and how to book.",
+    href: "/blog/bali-whitewater-rafting-near-ubud-guide",
   },
   {
     title: "How to Book on WhatsApp",

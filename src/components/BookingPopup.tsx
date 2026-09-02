@@ -3,8 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import dynamic from 'next/dynamic';
-import { X, ExternalLink } from 'lucide-react';
+import { X, ExternalLink, Info } from 'lucide-react';
 import { formatIdr, openWhatsAppBooking } from '@/lib/whatsapp';
+import { getTourSlugForActivity } from '@/lib/bookingTourDetails';
+import BookingTourDetailPanel from '@/components/BookingTourDetailPanel';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -46,6 +48,7 @@ export function BookingPopup({
   const [locationDetails, setLocationDetails] = useState("");
   const [notes, setNotes] = useState("");
   const [selectedTourId, setSelectedTourId] = useState(tour?.id || "");
+  const [showDetails, setShowDetails] = useState(false);
 
   const activeTour =
     (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
@@ -70,6 +73,7 @@ export function BookingPopup({
       setIsOutUbud(false);
       setLocationDetails("");
       setNotes("");
+      setShowDetails(false);
     }
   }, [isOpen, tour]);
 
@@ -77,6 +81,7 @@ export function BookingPopup({
     if (!activeTour) return
     setAdults((prev) => Math.max(activeTour.minPax, prev || activeTour.minPax))
     setTime(activeTour.times[0] || "")
+    setShowDetails(false)
   }, [activeTour?.id])
 
   // Keep dialog above the fixed navbar and lock page scroll while open
@@ -114,6 +119,7 @@ export function BookingPopup({
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
   const locationOk = Boolean(location) && locationDetails.trim().length >= 2;
   const canSubmit = nameOk && ageOk && locationOk && !isInvalidPax;
+  const detailTourSlug = getTourSlugForActivity(activeTour.id);
 
   const handleBook = () => {
     if (!nameOk) return alert("Please enter your name.");
@@ -170,6 +176,12 @@ export function BookingPopup({
         </button>
 
         <div className="bg-sand w-full max-h-[95vh] overflow-y-auto rounded-3xl shadow-2xl relative flex flex-col md:flex-row">
+        {showDetails && detailTourSlug ? (
+          <BookingTourDetailPanel
+            tourSlug={detailTourSlug}
+            onClose={() => setShowDetails(false)}
+          />
+        ) : null}
         <div className="md:hidden sticky top-0 z-[300] flex items-center justify-between gap-3 px-4 py-3 bg-sand/95 backdrop-blur border-b border-brand-green/10 rounded-t-3xl">
           <h2 className="text-xl font-serif text-brand-green font-bold truncate">Book Experience</h2>
           <button
@@ -207,7 +219,19 @@ export function BookingPopup({
           <h2 className="hidden md:block text-3xl font-serif text-brand-green font-bold mb-2">Book Experience</h2>
           {tourOptions && tourOptions.length > 1 ? (
             <div className="mb-6 pb-4 border-b border-brand-green/10">
-              <label className="block text-brand-green font-bold text-sm mb-2">Activity *</label>
+              <div className="flex items-center justify-between gap-3 mb-2">
+                <label className="block text-brand-green font-bold text-sm">Activity *</label>
+                {detailTourSlug ? (
+                  <button
+                    type="button"
+                    onClick={() => setShowDetails(true)}
+                    className="shrink-0 inline-flex items-center gap-1.5 rounded-full border border-brand-green/20 bg-white px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-green hover:bg-sand transition-colors"
+                  >
+                    <Info className="w-3.5 h-3.5" />
+                    Details
+                  </button>
+                ) : null}
+              </div>
               <select
                 value={activeTour.id}
                 onChange={(e) => setSelectedTourId(e.target.value)}
@@ -219,7 +243,19 @@ export function BookingPopup({
               </select>
             </div>
           ) : (
-            <p className="text-brand-green-light text-sm mb-6 pb-4 border-b border-brand-green/10 font-bold">{activeTour.title}</p>
+            <div className="mb-6 pb-4 border-b border-brand-green/10 flex items-start justify-between gap-3">
+              <p className="text-brand-green-light text-sm font-bold">{activeTour.title}</p>
+              {detailTourSlug ? (
+                <button
+                  type="button"
+                  onClick={() => setShowDetails(true)}
+                  className="shrink-0 inline-flex items-center gap-1.5 rounded-full border border-brand-green/20 bg-white px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-green hover:bg-sand transition-colors"
+                >
+                  <Info className="w-3.5 h-3.5" />
+                  Details
+                </button>
+              ) : null}
+            </div>
           )}
           
           {activeTour.getYourGuideUrl && (

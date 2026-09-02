@@ -59,7 +59,7 @@ Looking for a fuller day? After racing the ATV track you can combine with **rive
 
 Use the booking form on our site or message WhatsApp. Send your **name, age, adult or child, hotel/pickup location, activity, and estimated price** so we can confirm the same day.
 
-Ready to ride? Book the [Bali ATV Adventure & River Tubing](/#adventures) experience.
+Ready to ride? Book the [Bali ATV Adventure at All New Bali Adventure](/tours/bali-atv-adventure) or see all [adventure packages](/#adventures).
 `
   },
   {
@@ -98,7 +98,7 @@ Beginners, couples, and small groups. Children can join when age-appropriate —
 
 ## Book the Combo
 
-Open [Bali ATV Adventure & River Tubing](/#adventures), choose **ATV + River Tubing Combo**, and send your booking details on WhatsApp.
+Open [Bali ATV Adventure & River Tubing](/tours/bali-atv-adventure), choose **ATV + River Tubing Combo**, and send your booking details on WhatsApp. For tubing-only, see [Canyon Tubing on the Wos River](/tours/canyon-tubing).
 `
   },
   {
@@ -159,7 +159,7 @@ On [sekarbaliactivity.com](/) tap **Book Now** or **Book This Adventure**. The p
 
 When most travelers think of Bali's cultural heart, Ubud immediately comes to mind. But just a few kilometers east lies **Pejeng**, a village that predates the modern concept of tourism by centuries. In fact, long before Ubud became a sanctuary for yogis and digital nomads, Pejeng was the epicenter of power in ancient Bali.
 
-If you join our [Pejeng Village Cycling Tour](/#adventures), you aren't just riding through random rice paddies—you are cycling through the remnants of a kingdom.
+If you join our [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour), you aren't just riding through random rice paddies—you are cycling through the remnants of a kingdom.
 
 ## The Pejeng Kingdom (13th - 14th Century)
 
@@ -179,7 +179,7 @@ Today, Pejeng is a quiet, authentic village that offers a stark contrast to the 
 
 When you book a tour with **Sekar Bali Activity**, you are hosted by locals whose families have lived in Pejeng for generations. We take pride in showing you the hidden temples, the lush rice terraces, and sharing a meal around our family table.
 
-Ready to explore the ancient kingdom? Book your [Authentic Pejeng Cycling Tour](/#adventures) with us today and experience Bali at a village pace.
+Ready to explore the ancient kingdom? Book your [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) with us today and experience Bali at a village pace.
     `
   },
   {
@@ -194,7 +194,7 @@ Ready to explore the ancient kingdom? Book your [Authentic Pejeng Cycling Tour](
 
 If you have ever gazed at the cascading green rice terraces of Bali, you have witnessed the **Subak** system in action. Recognized by UNESCO as a World Heritage concept, the Subak is often described simply as an irrigation system. However, for the Balinese people, it is a complex social, religious, and agricultural ecosystem that has sustained the island for over a thousand years.
 
-When you join our [Authentic Pejeng Cycling Tour](/#adventures), you will cycle directly through these ancient waterways, and our local guides will show you exactly how this incredible system functions.
+When you join our [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour), you will cycle directly through these ancient waterways, and our local guides will show you exactly how this incredible system functions.
 
 ## The Philosophy of Tri Hita Karana
 
@@ -326,7 +326,7 @@ By staying just 10-15 minutes outside the center by scooter or taxi, you wake up
 
 There are dozens of massive tour operators that pack 30+ people into a bus and shuttle them between the biggest tourist traps. Instead, look for micro-tours operated by local families. 
 
-For example, instead of renting a bicycle on a crowded main road, you can join our [Authentic Pejeng Cycling Tour](/#adventures). We ride through the quiet, ancient village of Pejeng, navigating secret paths through the Subak rice terraces where you won't see another tourist all morning. 
+For example, instead of renting a bicycle on a crowded main road, you can join our [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour). We ride through the quiet, ancient village of Pejeng, navigating secret paths through the Subak rice terraces where you won't see another tourist all morning. 
 
 ### 3. Visit Temples During "Off-Peak" Hours
 
@@ -373,7 +373,7 @@ In general, morning is the absolute best time to be active in Bali.
 * **Cooler Temperatures:** Bali is close to the equator. By 1:00 PM, the sun is blazing and the humidity peaks. Mornings (especially before 10:00 AM) are significantly cooler and much more comfortable for physical activities.
 * **Clearer Skies:** During the wet season (November to April), rain almost always falls in the late afternoon. Mornings are usually bright, sunny, and clear.
 * **Fewer Crowds:** Most tourists are still eating breakfast at their hotels at 8:00 AM. If you start early, you get the roads and the sights to yourself.
-* **Local Life is Active:** Traditional markets, like the one we visit on our [Pejeng Cycling Tour](/#adventures), only operate in the early morning. It is the best time to see the island waking up.
+* **Local Life is Active:** Traditional markets, like the one we visit on our [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour), only operate in the early morning. It is the best time to see the island waking up.
 
 **Best Activities for the Morning:**
 * Cycling tours
@@ -648,7 +648,7 @@ In contrast, **Tegallalang** receives thousands of visitors daily. The main road
 
 ### 2. Terrain & Activity Type: Gentle Cycling vs. Steep Climbing
 
-- **Pejeng Cycling Tour**: Paved, gently sloping village lanes and dirt ridge paths suitable for families, couples, and seniors. Our [Pejeng Village Cycling Tour](/#adventures) includes comfortable mountain bikes, helmets, and a dedicated local guide.
+- **Ubud Ricefield Cycling Tour**: Paved, gently sloping village lanes and dirt ridge paths suitable for families, couples, and seniors. Our [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) includes comfortable mountain bikes, helmets, and a dedicated local guide.
 - **Tegallalang Walking**: Requires climbing hundreds of steep concrete steps down into the ravine and up the opposing ridge. It can be exhausting in 30°C (86°F) heat.
 
 ### 3. Cultural Value & Subak Heritage
@@ -657,7 +657,7 @@ While both locations use the UNESCO-recognized **Subak** cooperative irrigation 
 
 ***
 
-**Ready to ride through the real Bali?** Join our local family guides for a morning [Pejeng Village Cycling Tour](/#adventures) and experience Ubud at a peaceful pace.
+**Ready to ride through the real Bali?** Join our local family guides for a morning [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) and experience Ubud at a peaceful pace.
 `
   },
   {
@@ -772,7 +772,7 @@ Greetings are usually given with a gentle nod and a smile, or by placing your ha
 
 ### 3. Cycling & Walking Through Village Trails
 
-When cycling on narrow village trails during our [Pejeng Cycling Tour](/#adventures), dismount your bicycle if passing through an active temple ceremony or village procession (*Melasti*). Ringing bike bells or rushing through a religious gathering is considered disrespectful.
+When cycling on narrow village trails during our [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour), dismount your bicycle if passing through an active temple ceremony or village procession (*Melasti*). Ringing bike bells or rushing through a religious gathering is considered disrespectful.
 
 ***
 
@@ -818,6 +818,224 @@ At **Umah Kuno**, wild-harvested beans are washed, solar-dried, and hand-roasted
 Enjoy a tasting flight of wild Luwak coffee and traditional Balinese herbal teas overlooking the Pejeng jungle ravine.
 
 Book your seat on our [Luwak Coffee Plantation Experience](/#adventures) today!
+`
+  },
+  {
+    slug: 'ubud-ricefield-cycling-tour-guide-2026',
+    title: 'Ubud Ricefield Cycling Tour: Full Itinerary, Price & What Is Included (2026)',
+    excerpt: 'Everything you need to book the Ubud Ricefield Cycling Tour — IDR 450,000 per person, free Ubud pickup, three meals included, and an 8-step village itinerary through Pejeng rice terraces.',
+    publishedAt: '2026-09-01',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/cycling.jpg',
+    content: `
+**How much does the Ubud Ricefield Cycling Tour cost?** Sekar Bali Activity offers the full-day Ubud Ricefield Cycling Tour for **IDR 450,000 per person**, including **free hotel pickup within Ubud**, breakfast, lunch, and dinner, plus a guided ride through Pejeng rice terraces and village life.
+
+> **Key Takeaways**
+> - **IDR 450,000** per person — the only tour with free Ubud pickup
+> - 8-step itinerary: ricefield cycling, harvesting, Balinese house visit, carving art, and local village life
+> - Three meals included: breakfast, lunch, and dinner
+> - Gentle village paths — suitable for families, couples, and first-time cyclists
+> - Book via WhatsApp or tap **Details** in the booking popup to preview the full itinerary
+
+---
+
+## Why Choose the Ubud Ricefield Cycling Tour?
+
+Unlike crowded main-road bike rentals, this tour follows quiet village lanes east of central Ubud through **Pejeng** — one of Bali's oldest cultural areas. You cycle past Subak irrigation channels, meet local families, and see rice harvesting in season without rushing through tourist hotspots.
+
+## Full Day Itinerary (8 Steps)
+
+1. **Hotel pickup** — free within Ubud (other areas may incur a surcharge)
+2. **Ricefield cycling** — gentle trails through green terraces
+3. **Sightseeing & harvesting activity** — seasonal hands-on experience
+4. **Visit a Balinese house** — see traditional compound life
+5. **Balinese carving art** — watch or try local craftsmanship
+6. **See local people life** — village pace, not tourist buses
+7. **Breakfast, lunch & dinner** — all included in one price
+8. **Drop back to hotel** — relaxed end to a full cultural day
+
+## What Is Included
+
+| Include | Details |
+| --- | --- |
+| Free Ubud pickup & drop-off | Cycling tour only — ATV, rafting, and tubing have a pickup surcharge outside Ubud |
+| Mountain bike & helmet | Comfortable bikes for village paths |
+| English-speaking local guide | Born-and-raised Pejeng guides |
+| Breakfast, lunch & dinner | Full-day meals included |
+| Village experiences | House visit, carving, harvesting (seasonal) |
+
+## Who Is This Tour For?
+
+Families with children, couples wanting a slower Bali day, and anyone who prefers culture over adrenaline. If you want mud and motors instead, see our [Bali ATV Adventure at All New Bali Adventure](/tours/bali-atv-adventure) or combine land and water with [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali).
+
+## How to Book
+
+Tap **Book Now** on the homepage, select **Ubud Ricefield Cycling Tour**, and use the **Details** button in the booking popup to read the full itinerary without leaving the form. Or open the [full tour page](/tours/ubud-ricefield-cycling-tour) and message us on WhatsApp with your date and hotel.
+
+**Ready to ride?** [Book the Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) — from IDR 450,000 with meals and free Ubud pickup.
+`
+  },
+  {
+    slug: 'bali-whitewater-rafting-near-ubud-guide',
+    title: 'Whitewater Rafting Near Ubud: Rapids, Prices & Booking Guide (2026)',
+    excerpt: 'Plan a Bali whitewater rafting day near Ubud — Class II–III rapids, IDR 400,000 per person, safety gear included, and how to combine rafting with ATV or cycling.',
+    publishedAt: '2026-09-01',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/rafting.jpg',
+    content: `
+**How much does whitewater rafting near Ubud cost?** Sekar Bali Activity offers whitewater rafting from **IDR 400,000 per person**, including safety equipment, professional guides, and a post-ride lunch. Pickup from Ubud and nearby areas is available (surcharge applies outside the free cycling pickup zone).
+
+> **Key Takeaways**
+> - **IDR 400,000** per person on Class II–III rapids
+> - Includes helmet, life jacket, safety briefing, guide, and lunch
+> - Best for ages 7+ with basic swimming confidence
+> - Pair with [ATV jungle trails](/tours/bali-atv-adventure) or [canyon tubing](/tours/canyon-tubing) for a multi-activity day
+> - Use the booking popup **Details** button to preview the rafting itinerary before you confirm
+
+---
+
+## What to Expect on the River
+
+After hotel pickup and a safety briefing, you paddle through jungle-lined rapids with an experienced guide. The route balances splashy sections with calmer stretches so first-timers can enjoy the ride without extreme whitewater.
+
+## Typical Rafting Day Flow
+
+1. Pickup from your hotel (Ubud area)
+2. Arrival, gear fitting, and safety briefing
+3. Guided whitewater run on Class II–III rapids
+4. Lunch and return transfer
+
+## What Is Included
+
+| Include | Details |
+| --- | --- |
+| Professional river guide | English-speaking, safety-focused |
+| Helmet & life jacket | Fitted before launch |
+| Lunch | Served after the river section |
+| Insurance | Covered on the package |
+
+## Build a Full Adventure Day
+
+Many guests book rafting as one half of a bigger Bali adventure:
+
+- **Land + water:** [Bali ATV at All New Bali Adventure](/tours/bali-atv-adventure) in the morning, rafting in the afternoon
+- **Gentle float alternative:** [Canyon tubing](/tours/canyon-tubing) on the Wos River — lower intensity than rafting
+- **Culture day:** [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) with free Ubud pickup and three meals
+
+Compare all options in our [Bali adventure packages & prices guide](/blog/bali-adventure-packages-prices-2026).
+
+## How to Book
+
+Open the [Whitewater Rafting tour page](/tours/whitewater-rafting), tap **Book Now**, and send your name, date, group size, and pickup hotel on WhatsApp. Need help choosing between rafting and tubing? Read [ATV + River Tubing on the Wos River](/blog/atv-river-tubing-wos-river-bali).
+
+**Book rafting near Ubud** — [Whitewater Rafting Adventure from IDR 400,000](/tours/whitewater-rafting).
+`
+  },
+  {
+    slug: 'bali-canyon-tubing-guide-ubud',
+    title: 'Bali Canyon Tubing Near Ubud: Wos River Float, Prices & Tips (2026)',
+    excerpt: 'Float the Wos River on a canyon tubing adventure near Ubud — IDR 359,000 per person, beginner-friendly, and easy to combine with ATV jungle trails.',
+    publishedAt: '2026-09-01',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/canyon-tubing.jpg',
+    content: `
+**What is canyon tubing in Bali?** Canyon tubing is a guided float down the **Wos River** on an inflatable tube, passing jungle canyon walls and calm crystal water. Sekar Bali Activity offers canyon tubing from **IDR 359,000 per person** — a gentler water adventure than whitewater rafting, ideal for couples and families.
+
+> **Key Takeaways**
+> - **IDR 359,000** per person on the Wos River
+> - Beginner-friendly — no rafting paddle skills required
+> - Popular combo: [ATV jungle track](/tours/bali-atv-adventure) first, then tube the river
+> - Bring a change of clothes; towels available at base
+> - Preview the itinerary in the booking popup via **Details**
+
+---
+
+## Canyon Tubing vs Whitewater Rafting
+
+| | Canyon Tubing | Whitewater Rafting |
+| --- | --- | --- |
+| **Intensity** | Gentle float, canyon scenery | Class II–III rapids, more splash |
+| **Price** | From IDR 359,000 | From IDR 400,000 |
+| **Best for** | First-timers, couples | Thrill-seekers, ages 7+ |
+| **Tour page** | [Canyon Tubing](/tours/canyon-tubing) | [Whitewater Rafting](/tours/whitewater-rafting) |
+
+## Typical Tubing Flow
+
+1. Hotel pickup (Ubud area — surcharge may apply outside free cycling pickup zone)
+2. Briefing and gear fitting
+3. Guided canyon tubing on the Wos River
+4. Change into dry clothes and return transfer
+
+## ATV + Tubing Combo (Most Popular)
+
+The classic land-and-water day: race quad bikes through jungle mud at **All New Bali Adventure**, then cool off on the Wos River. Read the full combo guide: [ATV + River Tubing on the Wos River](/blog/atv-river-tubing-wos-river-bali).
+
+## What to Bring
+
+- Changing clothes or dry outfit
+- Sunscreen for open sections
+- Waterproof phone case (optional)
+- Cash for extras
+
+## How to Book
+
+Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing in the homepage booking form. Tap **Details** in the popup to see the itinerary without navigating away.
+
+**Float the Wos River** — [Book Canyon Tubing from IDR 359,000](/tours/canyon-tubing).
+`
+  },
+  {
+    slug: 'bali-adventure-packages-prices-2026',
+    title: 'Bali Adventure Packages & Prices 2026: ATV, Rafting, Tubing & Cycling',
+    excerpt: 'Compare Sekar Bali Activity adventure prices in one place — ATV from IDR 650K, rafting IDR 400K, canyon tubing IDR 359K, and Ubud ricefield cycling IDR 450K with free pickup and meals.',
+    publishedAt: '2026-09-01',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/hero-banner.jpg',
+    content: `
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 650,000**, **Tandem ATV from IDR 859,000**, **Whitewater Rafting IDR 400,000**, **Canyon Tubing IDR 359,000**, and **Ubud Ricefield Cycling Tour IDR 450,000** with free Ubud pickup and three meals included.
+
+> **Key Takeaways**
+> - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
+> - **Free Ubud pickup** applies to the cycling tour only; other activities add IDR 120,000 outside Ubud
+> - Every tour includes gear, guide, and insurance where listed on the tour page
+> - Book on WhatsApp — send name, age, hotel, activity, and price
+> - Tap **Details** in the booking popup to preview any tour itinerary instantly
+
+---
+
+## 2026 Price List (Near Ubud)
+
+| Adventure | Price | Per | Tour Page |
+| --- | --- | --- | --- |
+| Single ATV | IDR 650,000 | 1 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
+| Tandem ATV | IDR 859,000 | 2 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
+| Whitewater Rafting | IDR 400,000 | person | [Whitewater Rafting](/tours/whitewater-rafting) |
+| Canyon Tubing | IDR 359,000 | person | [Canyon Tubing](/tours/canyon-tubing) |
+| Ubud Ricefield Cycling | IDR 450,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
+
+## Pickup Policy
+
+- **Ubud Ricefield Cycling Tour:** Free pickup and drop-off within Ubud
+- **ATV, rafting, tubing:** Pickup available; **IDR 120,000 surcharge** applies for locations outside Ubud
+
+## Popular Combos & Pairings
+
+1. **ATV + Wos River tubing** — jungle mud then river float. Guide: [ATV + River Tubing combo](/blog/atv-river-tubing-wos-river-bali) · Book: [Bali ATV Adventure](/tours/bali-atv-adventure)
+2. **Rafting + cycling** — adrenaline morning, cultural afternoon. [Rafting guide](/blog/bali-whitewater-rafting-near-ubud-guide) · [Cycling guide](/blog/ubud-ricefield-cycling-tour-guide-2026)
+3. **ATV only** — best for first-time quad riders. [Bali ATV tour guide](/blog/bali-atv-tour-ubud-guide)
+
+## What Every Package Includes
+
+Most adventures include hotel transfer (see pickup policy), safety gear, English-speaking guide, and lunch. The cycling tour uniquely includes **breakfast, lunch, and dinner**. Confirm inclusions on each tour page or via the booking **Details** button.
+
+## How to Book (Fastest Path)
+
+1. Open [sekarbaliactivity.com](/)
+2. Tap **Book Now** on your chosen activity
+3. Tap **Details** in the popup to read the full itinerary
+4. Fill the form and send to WhatsApp — or read [How to Book on WhatsApp](/blog/how-to-book-bali-adventure-whatsapp)
+
+**Compare and book** — [View all adventures on the homepage](/#adventures) or go direct to any [tour detail page](/tours/bali-atv-adventure).
 `
   }
 ]

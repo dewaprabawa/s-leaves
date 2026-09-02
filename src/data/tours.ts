@@ -61,7 +61,7 @@ export const TOURS: Tour[] = [
     slug: "bali-atv-adventure",
     category: "Adventure",
     duration: "2–4 Hours",
-    basePrice: 650000,
+    basePrice: 600000,
     childPrice: 550000,
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
@@ -819,7 +819,7 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     slug: "full-day-ubud-tour",
     category: "Culture",
     duration: "10 Hours",
-    basePrice: 650000,
+    basePrice: 600000,
     heroImage: {
       url: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
       alt: "Full Day Ubud Tour",

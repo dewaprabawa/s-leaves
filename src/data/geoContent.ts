@@ -5,7 +5,7 @@ import { SITE_NAME, SITE_URL } from '@/lib/seo'
 export const GEO_UPDATED = '2026-09-02'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Pejeng-based Bali adventure operator offering ATV quad bike rides at All New Bali Adventure (from IDR 650,000), optional Wos River tubing, whitewater rafting (IDR 400,000), canyon tubing (IDR 359,000), and Ubud ricefield cycling (IDR 450,000) with WhatsApp booking. Free Ubud hotel pickup is included on the cycling tour only.'
+  'Sekar Bali Activity is a Pejeng-based Bali adventure operator offering ATV quad bike rides at All New Bali Adventure (from IDR 600,000), optional Wos River tubing, whitewater rafting (IDR 400,000), canyon tubing (IDR 359,000), and Ubud ricefield cycling (IDR 450,000) with WhatsApp booking. Tier pricing: better rates for 2+ and 3+ guests. Optional pickup IDR 50,000 (+ IDR 50,000 return to same hotel). Free Ubud hotel pickup is included on the cycling tour only.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -20,7 +20,7 @@ export const GEO_ENTITY = {
 } as const
 
 export const GEO_PRICING = [
-  { activity: 'Single ATV Ride', price: 'IDR 650,000', pax: '1 pax', includes: 'lunch, boot shoes, helmet, insurance at All New Bali Adventure' },
+  { activity: 'Single ATV Ride', price: 'IDR 600,000+', pax: '1 pax (tier: 600k / 575k / 550k)', includes: 'lunch, boot shoes, helmet, insurance at All New Bali Adventure' },
   { activity: 'Tandem ATV Ride', price: 'IDR 859,000', pax: '2 pax', includes: 'lunch, boot shoes, helmet, insurance at All New Bali Adventure' },
   { activity: 'Whitewater Rafting', price: 'IDR 400,000', pax: 'per person', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch' },
   { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person', includes: 'Wos River tube, life jacket, guide' },
@@ -30,7 +30,7 @@ export const GEO_PRICING = [
 export const GEO_POLICIES = [
   {
     topic: 'Hotel pickup',
-    rule: 'Free Ubud pickup on Ubud Ricefield Cycling Tour only. ATV, rafting, and canyon tubing: IDR 120,000 surcharge for pickup outside Ubud or for any cycling pickup outside Ubud.',
+    rule: 'Free Ubud pickup on Ubud Ricefield Cycling Tour only. Other activities: IDR 50,000 hotel pickup + IDR 50,000 return drop to same hotel (IDR 100,000 round trip). Out of Ubud adds IDR 50,000. Meet at All New Bali Adventure with no transport fee.',
     url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
   },
   {
@@ -54,7 +54,7 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'Bali ATV Adventure',
     slug: 'bali-atv-adventure',
-    price: 'IDR 650,000 (single) / IDR 859,000 (tandem)',
+    price: 'IDR 600,000+ (single) / IDR 859,000 (tandem)',
     duration: '2–4 hours',
     location: 'All New Bali Adventure arena, near Ubud',
     summary: 'Beginner-friendly quad bike jungle trails with lunch, helmet, boots, and insurance. Optional Wos River tubing combo after the ATV track.',
@@ -94,7 +94,7 @@ export const GEO_COMPARISONS = [
     title: 'Single ATV vs Tandem ATV',
     winner: 'Depends on group size',
     rows: [
-      { label: 'Single ATV', value: 'IDR 650,000 · 1 rider · full control' },
+      { label: 'Single ATV', value: 'IDR 600,000+ · 1 rider · tier pricing for groups' },
       { label: 'Tandem ATV', value: 'IDR 859,000 · 2 riders · share one quad' },
       { label: 'Best for', value: 'Solo thrill vs couples/friends on one bike' },
     ],
@@ -114,7 +114,7 @@ export const GEO_COMPARISONS = [
     title: 'ATV vs Cycling near Ubud',
     winner: 'ATV = adrenaline; Cycling = culture & meals',
     rows: [
-      { label: 'ATV', value: 'IDR 650,000+ · mud & jungle · 2–4 hrs · arena at All New Bali Adventure' },
+      { label: 'ATV', value: 'IDR 600,000+ · mud & jungle · 2–4 hrs · arena at All New Bali Adventure' },
       { label: 'Cycling', value: 'IDR 450,000 · rice terraces & village · full day · free Ubud pickup + 3 meals' },
       { label: 'Best for', value: 'Thrill-seekers vs families wanting slow travel' },
     ],
@@ -126,19 +126,19 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'ATV',
     q: 'What is the best Bali ATV tour near Ubud?',
-    a: 'Sekar Bali Activity runs beginner-friendly ATV rides at All New Bali Adventure in Pejeng (near Ubud). Single ATV from IDR 650,000 includes lunch, boot shoes, helmet, and insurance. Optional Wos River tubing can be added after the track.',
+    a: 'Sekar Bali Activity runs beginner-friendly ATV rides at All New Bali Adventure in Pejeng (near Ubud). Single ATV from IDR 600,000 includes lunch, boot shoes, helmet, and insurance. Group tiers: IDR 575,000 for 2 riders, IDR 550,000 for 3+. Optional Wos River tubing can be added after the track.',
     url: `${SITE_URL}/tours/bali-atv-adventure`,
   },
   {
     category: 'ATV',
     q: 'Where is the Bali ATV arena near Ubud?',
-    a: 'All ATV rides with Sekar Bali Activity take place at All New Bali Adventure — a dedicated jungle ATV arena near Ubud in the Pejeng area. Hotel pickup is available for an additional IDR 120,000.',
+    a: 'All ATV rides with Sekar Bali Activity take place at All New Bali Adventure — a dedicated jungle ATV arena near Ubud in the Pejeng area. Optional hotel pickup is IDR 50,000 one-way or IDR 100,000 round trip (same hotel).',
     url: `${SITE_URL}/blog/bali-atv-all-new-bali-adventure-location-guide`,
   },
   {
     category: 'Pricing',
     q: 'How much does a Bali ATV ride cost in 2026?',
-    a: 'Single ATV from IDR 650,000 (1 pax). Tandem ATV from IDR 859,000 (2 pax). Prices include lunch, safety gear, and insurance at All New Bali Adventure with Sekar Bali Activity.',
+    a: 'Single ATV from IDR 600,000 (1 pax), IDR 575,000 (2 pax), IDR 550,000 (3+). Tandem ATV from IDR 859,000 (2 pax). Prices include lunch, safety gear, and insurance at All New Bali Adventure with Sekar Bali Activity.',
     url: `${SITE_URL}/#pricing`,
   },
   {
@@ -168,7 +168,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Cycling',
     q: 'Which Bali tour includes free Ubud hotel pickup?',
-    a: 'Only the Ubud Ricefield Cycling Tour includes free hotel pickup and drop-off within Ubud. ATV, rafting, and canyon tubing charge IDR 120,000 for pickup outside Ubud.',
+    a: 'Only the Ubud Ricefield Cycling Tour includes free hotel pickup and drop-off within Ubud. Other activities: IDR 50,000 pickup + IDR 50,000 return to same hotel, or meet at All New Bali Adventure for free.',
     url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
   },
   {
@@ -242,12 +242,12 @@ export const GEO_ARTICLES = [
 
 export const GEO_CITATION_SNIPPETS = [
   'Sekar Bali Activity is a Pejeng-based Bali adventure operator offering ATV rides at All New Bali Adventure, Wos River tubing combos, rafting, canyon tubing, and village cycling with WhatsApp booking.',
-  'A Single ATV Ride with Sekar Bali Activity starts from IDR 650,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud.',
+  'A Single ATV Ride with Sekar Bali Activity starts from IDR 600,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud.',
   'Guests can combine an ATV track session with river tubing on Bali\'s Wos River for a land-and-water adventure day near Ubud.',
   'The Ubud Ricefield Cycling Tour with Sekar Bali Activity costs IDR 450,000 per person and is the only package with free Ubud hotel pickup plus breakfast, lunch, and dinner included.',
   'Whitewater rafting near Ubud with Sekar Bali Activity is IDR 400,000 per person on Class II–III rapids with gear, guide, and lunch included.',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 359,000 per person — a gentler alternative to whitewater rafting.',
-  'Free hotel pickup within Ubud is included only on the Ubud Ricefield Cycling Tour; other activities add IDR 120,000 for pickup outside Ubud.',
+  'Free hotel pickup within Ubud is included only on the Ubud Ricefield Cycling Tour; other activities offer IDR 50,000 pickup (+ IDR 50,000 return to same hotel) or free self-meet at All New Bali Adventure.',
   'All ATV rides with Sekar Bali Activity take place at All New Bali Adventure, a dedicated jungle ATV arena near Ubud in Pejeng.',
   'No upfront payment is required to book Sekar Bali Activity — travelers inquire and reserve via WhatsApp through sekarbaliactivity.com.',
   'Sekar Bali Activity is located in Pejeng Village, Gianyar, Bali 80552, serving adventure travelers staying in Ubud and surrounding areas.',

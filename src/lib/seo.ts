@@ -6,7 +6,7 @@ export const SITE_NAME = 'Sekar Bali Activity'
 export const DEFAULT_TITLE =
   'Sekar Bali Activity | Private ATV, River Tubing & Village Cycling Tours Ubud'
 export const DEFAULT_DESCRIPTION =
-  'Book private Bali ATV tours near Ubud from IDR 650K — jungle quad bike rides with optional Wos River tubing combo, whitewater rafting, canyon tubing, and Ubud ricefield cycling from IDR 450K. All-inclusive: meals, helmet, insurance. Free Ubud pickup on the cycling tour only. WhatsApp booking — free to inquire.'
+  'Book private Bali ATV tours near Ubud from IDR 600K — jungle quad bike rides with optional Wos River tubing combo, whitewater rafting, canyon tubing, and Ubud ricefield cycling from IDR 450K. Tier pricing for groups. Optional pickup IDR 50K. All-inclusive: meals, helmet, insurance. Free Ubud pickup on the cycling tour only. WhatsApp booking — free to inquire.'
 
 /** Shorter variants for social previews (og:title ≤60, og:description ≤200) */
 export const OG_TITLE = 'Private Bali ATV & Ubud Adventure Tours | Sekar Bali'

@@ -87,11 +87,11 @@ export const ADVENTURES: AdventureCatalogItem[] = [
   },
   {
     id: "cycling",
-    name: "Ubud Ricefield Cycling Tour",
-    tagline: "Ricefields & village life",
+    name: "Ubud Ricefield & Village Cycling Tour",
+    tagline: "Rice paddies & village life",
     paxLabel: "Per person",
     description:
-      "Relaxing bike ride through green Ubud ricefields and quiet village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
+      "Authentic Ubud countryside cycling through rice paddies and quiet Pejeng village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
     highlights: [
       "Breakfast, lunch & dinner included",
       "Rice harvesting activity",
@@ -100,7 +100,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     ],
     duration: "Full day",
     image: "/images/adventures/cycling.jpg",
-    imageAlt: "Cycling through green Ubud ricefields and village paths",
+    imageAlt: "Rice paddy and village cycling tour through green Ubud countryside",
     tourSlug: "ubud-ricefield-cycling-tour",
     times: ["13:30"],
     minPax: 1,

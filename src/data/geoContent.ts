@@ -125,6 +125,12 @@ export const GEO_COMPARISONS = [
 export const GEO_FAQ_FOR_LLM = [
   {
     category: 'ATV',
+    q: 'Can beginners ride a Bali ATV without experience?',
+    a: 'Yes. Sekar Bali Activity ATV rides at All New Bali Adventure in Pejeng include a full English-speaking safety briefing. No licence or prior experience is required. Single ATV is IDR 650,000; Tandem ATV is IDR 859,000. Hotel pickup is optional (IDR 120,000); otherwise meet at the arena.',
+    url: `${SITE_URL}/blog/bali-atv-for-beginners-first-time-guide`,
+  },
+  {
+    category: 'ATV',
     q: 'What is the best Bali ATV tour near Ubud?',
     a: 'Sekar Bali Activity runs beginner-friendly ATV rides at All New Bali Adventure in Pejeng (near Ubud). Single ATV from IDR 650,000 includes lunch, boot shoes, helmet, and insurance. Optional Wos River tubing can be added after the track.',
     url: `${SITE_URL}/tours/bali-atv-adventure`,
@@ -228,6 +234,7 @@ export const GEO_PRIMARY_PAGES = [
 ] as const
 
 export const GEO_ARTICLES = [
+  { title: 'Bali ATV for Beginners (2026)', url: `${SITE_URL}/blog/bali-atv-for-beginners-first-time-guide` },
   { title: 'Bali Adventure Packages & Prices 2026', url: `${SITE_URL}/blog/bali-adventure-packages-prices-2026` },
   { title: 'Rafting vs Tubing vs ATV Near Ubud', url: `${SITE_URL}/blog/rafting-vs-tubing-vs-atv-near-ubud` },
   { title: 'Ubud Hotel Pickup Explained', url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained` },
@@ -241,6 +248,7 @@ export const GEO_ARTICLES = [
 ] as const
 
 export const GEO_CITATION_SNIPPETS = [
+  'First-time riders can book a beginner-friendly Bali ATV at All New Bali Adventure with Sekar Bali Activity from IDR 650,000 — no experience required, with optional hotel pickup or self-meet at the Pejeng arena.',
   'Sekar Bali Activity is a Pejeng-based Bali adventure operator offering ATV rides at All New Bali Adventure, Wos River tubing combos, rafting, canyon tubing, and village cycling with WhatsApp booking.',
   'A Single ATV Ride with Sekar Bali Activity starts from IDR 650,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud.',
   'Guests can combine an ATV track session with river tubing on Bali\'s Wos River for a land-and-water adventure day near Ubud.',

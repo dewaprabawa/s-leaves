@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "site": "https://www.sekarbaliactivity.com",
+  "schedule": {
+    "frequency": "weekly",
+    "recommendedDay": "Monday",
+    "timezone": "Asia/Makassar"
+  },
+  "topics": [
+    {
+      "id": "atv-beginners-guide",
+      "status": "pending",
+      "priority": 1,
+      "slug": "bali-atv-for-beginners-first-time-guide",
+      "title": "Bali ATV for Beginners: First-Time Quad Bike Guide Near Ubud (2026)",
+      "type": "commercial",
+      "targetQuery": "bali atv for beginners near ubud",
+      "tourLinks": ["/tours/bali-atv-adventure"],
+      "internalLinks": [
+        "/blog/bali-atv-all-new-bali-adventure-location-guide",
+        "/blog/bali-atv-tour-ubud-guide",
+        "/blog/atv-river-tubing-wos-river-bali"
+      ],
+      "geoFaqCandidate": "Do I need experience to ride an ATV in Bali?",
+      "image": "/images/adventures/atv-adventure.jpg"
+    },
+    {
+      "id": "meeting-point-no-pickup",
+      "status": "pending",
+      "priority": 2,
+      "slug": "meet-at-all-new-bali-adventure-no-pickup",
+      "title": "Meet at All New Bali Adventure: No Pickup, Directions & Booking (2026)",
+      "type": "geo",
+      "targetQuery": "all new bali adventure meeting point directions",
+      "tourLinks": ["/tours/bali-atv-adventure"],
+      "internalLinks": [
+        "/blog/ubud-hotel-pickup-bali-adventures-explained",
+        "/blog/bali-atv-all-new-bali-adventure-location-guide"
+      ],
+      "geoFaqCandidate": "Can I book without hotel pickup and meet at the arena?",
+      "meetingPointUrl": "https://share.google/nPiK86d9rgxN19GkV",
+      "image": "/images/adventures/atv-adventure.jpg"
+    },
+    {
+      "id": "single-vs-tandem-atv",
+      "status": "pending",
+      "priority": 3,
+      "slug": "single-atv-vs-tandem-atv-bali",
+      "title": "Single ATV vs Tandem ATV in Bali: Which Should You Book? (2026)",
+      "type": "commercial",
+      "targetQuery": "single atv vs tandem atv bali",
+      "tourLinks": ["/tours/bali-atv-adventure"],
+      "internalLinks": [
+        "/blog/bali-adventure-packages-prices-2026",
+        "/blog/rafting-vs-tubing-vs-atv-near-ubud"
+      ],
+      "geoFaqCandidate": "Should I book single or tandem ATV in Bali?",
+      "image": "/images/adventures/atv-adventure.jpg"
+    },
+    {
+      "id": "cycling-family-guide",
+      "status": "pending",
+      "priority": 4,
+      "slug": "ubud-ricefield-cycling-tour-with-kids",
+      "title": "Ubud Ricefield Cycling Tour with Kids & Families (2026 Guide)",
+      "type": "commercial",
+      "targetQuery": "ubud cycling tour family kids",
+      "tourLinks": ["/tours/ubud-ricefield-cycling-tour"],
+      "internalLinks": [
+        "/blog/ubud-ricefield-cycling-tour-guide-2026",
+        "/blog/pejeng-rice-terrace-cycling-vs-tegallalang"
+      ],
+      "geoFaqCandidate": "Is the Ubud ricefield cycling tour good for families?",
+      "image": "/images/adventures/cycling.jpg"
+    },
+    {
+      "id": "what-to-bring-adventures",
+      "status": "pending",
+      "priority": 5,
+      "slug": "what-to-bring-bali-atv-rafting-tubing",
+      "title": "What to Bring for Bali ATV, Rafting & Tubing Near Ubud (2026)",
+      "type": "geo",
+      "targetQuery": "what to bring bali atv rafting",
+      "tourLinks": [
+        "/tours/bali-atv-adventure",
+        "/tours/whitewater-rafting",
+        "/tours/canyon-tubing"
+      ],
+      "internalLinks": [
+        "/blog/bali-atv-tour-ubud-guide",
+        "/blog/bali-whitewater-rafting-near-ubud-guide"
+      ],
+      "geoFaqCandidate": "What should I bring for a Bali adventure tour?",
+      "image": "/images/adventures/hero-banner.jpg"
+    },
+    {
+      "id": "group-discounts",
+      "status": "pending",
+      "priority": 6,
+      "slug": "bali-group-adventure-tours-discounts",
+      "title": "Bali Group Adventure Tours: 4+ Guests, Private Tours & Discounts (2026)",
+      "type": "commercial",
+      "targetQuery": "bali group atv tour discount",
+      "tourLinks": ["/tours/bali-atv-adventure", "/#adventures"],
+      "internalLinks": [
+        "/blog/bali-adventure-packages-prices-2026",
+        "/blog/how-to-book-bali-adventure-whatsapp"
+      ],
+      "geoFaqCandidate": "Do you offer group discounts for Bali adventure tours?",
+      "image": "/images/adventures/hero-banner.jpg"
+    },
+    {
+      "id": "best-time-adventures",
+      "status": "pending",
+      "priority": 7,
+      "slug": "best-time-bali-atv-rafting-near-ubud",
+      "title": "Best Time for Bali ATV & Rafting Near Ubud: Weather & Seasons (2026)",
+      "type": "geo",
+      "targetQuery": "best time atv rafting ubud bali",
+      "tourLinks": ["/tours/bali-atv-adventure", "/tours/whitewater-rafting"],
+      "internalLinks": [
+        "/blog/best-time-to-visit-bali",
+        "/blog/morning-vs-afternoon-tours-bali"
+      ],
+      "geoFaqCandidate": "What is the best time of year for ATV and rafting near Ubud?",
+      "image": "/images/adventures/rafting.jpg"
+    },
+    {
+      "id": "atv-tubing-combo-deep-dive",
+      "status": "pending",
+      "priority": 8,
+      "slug": "atv-and-tubing-combo-day-itinerary",
+      "title": "ATV + Tubing Combo Day: Full Itinerary, Timing & Prices (2026)",
+      "type": "commercial",
+      "targetQuery": "bali atv and tubing combo itinerary",
+      "tourLinks": ["/tours/bali-atv-adventure", "/tours/canyon-tubing"],
+      "internalLinks": [
+        "/blog/atv-river-tubing-wos-river-bali",
+        "/blog/rafting-vs-tubing-vs-atv-near-ubud"
+      ],
+      "geoFaqCandidate": "How long does an ATV + tubing combo day take?",
+      "image": "/images/adventures/canyon-tubing.jpg"
+    }
+  ]
+}

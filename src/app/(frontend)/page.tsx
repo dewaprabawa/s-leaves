@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { FAQSection } from '@/components/FAQSection'
 import GeoAnswerBlock from '@/components/GeoAnswerBlock'
 import { BookingPopup, type TourConfig } from '@/components/BookingPopup'
+import { getListPrice, formatTierPriceTable } from '@/lib/pricing'
 import {
   ArrowRight, MapPin, Users, Check, Clock3, Shield,
   Star, ChevronLeft, ChevronRight, Waves,
@@ -59,7 +60,7 @@ const adventures: Adventure[] = [
     name: "Single ATV Ride",
     tagline: "Solo jungle thrill",
     pax: "1 Pax",
-    price: 650000,
+    price: getListPrice("single-atv"),
     childPrice: 550000,
     image: "/images/adventures/atv-adventure.jpg",
     description: "Private Bali ATV tour at All New Bali Adventure arena — jungle trails, muddy tracks, and river crossings. Beginner friendly with expert guides. Add optional Wos River tubing for the best ATV + tubing combo near Ubud.",
@@ -75,7 +76,7 @@ const adventures: Adventure[] = [
     name: "Tandem ATV Ride",
     tagline: "Share the adventure",
     pax: "2 Pax",
-    price: 859000,
+    price: getListPrice("tandem-atv"),
     childPrice: null as number | null,
     image: "/images/adventures/atv-adventure.jpg",
     description: "Private tandem ATV tour at All New Bali Adventure arena — share a quad bike adventure with a partner through jungle trails. All-inclusive with lunch, safety gear, and optional Wos River tubing combo.",
@@ -91,7 +92,7 @@ const adventures: Adventure[] = [
     name: "Whitewater Rafting",
     tagline: "Ride the rapids",
     pax: "Per Person",
-    price: 400000,
+    price: getListPrice("rafting"),
     childPrice: 350000,
     image: "/images/adventures/rafting.jpg",
     description: "Navigate Class II-III rapids through a stunning river canyon surrounded by towering jungle cliffs, waterfalls, and ancient stone carvings.",
@@ -107,7 +108,7 @@ const adventures: Adventure[] = [
     name: "Canyon Tubing",
     tagline: "Float through paradise",
     pax: "Per Person",
-    price: 359000,
+    price: getListPrice("canyon-tubing"),
     childPrice: 300000,
     image: "/images/adventures/canyon-tubing.jpg",
     description: "Drift through hidden canyons on an inflatable tube. Crystal-clear waters, moss-covered walls, and shafts of sunlight create a magical underground world. Pair it with an ATV ride for the ultimate combo.",
@@ -123,7 +124,7 @@ const adventures: Adventure[] = [
     name: "Ubud Ricefield Cycling Tour",
     tagline: "Ricefields & village life",
     pax: "Per Person",
-    price: 450000,
+    price: getListPrice("cycling"),
     childPrice: null as number | null,
     image: "/images/adventures/cycling.jpg",
     description: "Relaxing bike ride through green Ubud ricefields and quiet village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
@@ -141,7 +142,7 @@ function toTourConfig(adv: Adventure): TourConfig {
     id: adv.id,
     title: adv.name,
     times: [...adv.times],
-    adultPrice: adv.price,
+    adultPrice: getListPrice(adv.id),
     kidPrice: "childPrice" in adv ? adv.childPrice : null,
     minPax: adv.minPax,
     freeUbudPickup: adv.id === "cycling",
@@ -170,7 +171,7 @@ const travelGuides = [
   },
   {
     title: "Ubud Hotel Pickup Explained",
-    excerpt: "Which tours include free Ubud pickup and when the IDR 120K surcharge applies.",
+    excerpt: "Which tours include free Ubud pickup and when the IDR 50K pickup fee applies.",
     href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
   },
   {
@@ -232,15 +233,15 @@ function HeroCarousel() {
 
 /* ─── Pricing Data ─── */
 const pricingData: PricingRow[] = [
-  { activity: "Single ATV", adventureId: "single-atv", pax: "1 Pax", price: 650000, highlight: false },
-  { activity: "Tandem ATV", adventureId: "tandem-atv", pax: "2 Pax", price: 859000, highlight: true },
-  { activity: "Whitewater Rafting", adventureId: "rafting", pax: "Per Person", price: 400000, highlight: false },
-  { activity: "Canyon Tubing", adventureId: "canyon-tubing", pax: "Per Person", price: 359000, highlight: false },
+  { activity: "Single ATV", adventureId: "single-atv", pax: formatTierPriceTable('single-atv'), price: getListPrice('single-atv'), highlight: false },
+  { activity: "Tandem ATV", adventureId: "tandem-atv", pax: formatTierPriceTable('tandem-atv'), price: getListPrice('tandem-atv'), highlight: true },
+  { activity: "Whitewater Rafting", adventureId: "rafting", pax: formatTierPriceTable('rafting'), price: getListPrice('rafting'), highlight: false },
+  { activity: "Canyon Tubing", adventureId: "canyon-tubing", pax: formatTierPriceTable('canyon-tubing'), price: getListPrice('canyon-tubing'), highlight: false },
   {
     activity: "Ubud Ricefield Cycling Tour",
     adventureId: "cycling",
-    pax: "Per Person · Free Ubud pickup · Breakfast, lunch & dinner included",
-    price: 450000,
+    pax: `${formatTierPriceTable('cycling')} · Free Ubud pickup · 3 meals included`,
+    price: getListPrice('cycling'),
     highlight: false,
   },
 ]
@@ -450,7 +451,7 @@ export default function Home() {
           <div className={`text-center mb-16 ${isVisible("pricing") ? "animate-fade-in-up" : ""}`}>
             <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Transparent pricing</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Pricing</h2>
-            <p className="text-lg text-brand-green-light max-w-xl mx-auto">All-inclusive packages with gear, guides, and insurance. Free Ubud hotel pickup on the cycling tour only.</p>
+            <p className="text-lg text-brand-green-light max-w-xl mx-auto">Tier pricing: better rates for 2+ and 3+ guests. Optional pickup IDR 50k (+ IDR 50k return to same hotel). Compare Grab/GoCar in the booking form.</p>
           </div>
           <div className={`space-y-4 ${isVisible("pricing") ? "animate-fade-in-up-delay-1" : ""}`}>
             {pricingData.map((item, i) => (
@@ -467,7 +468,7 @@ export default function Home() {
                   </div>
                   <div className="text-center sm:text-left">
                     <h3 className="text-lg md:text-xl font-bold text-brand-green">{item.activity}</h3>
-                    <span className="text-sm text-brand-green-light">{item.pax}</span>
+                    <span className="text-sm text-brand-green-light block mt-1">{item.pax}</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
@@ -505,7 +506,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-brand-green-light mt-8 opacity-70">Prices include equipment, guide, and insurance. Free Ubud pickup on the cycling tour only; other activities add IDR 120,000 for hotel pickup. Group discounts available.</p>
+          <p className="text-center text-sm text-brand-green-light mt-8 opacity-70">From prices shown for 1 guest. Group tiers: 2+ and 3+ discounts in booking. Pickup IDR 50,000 (+ IDR 50,000 drop same hotel). Free Ubud pickup on cycling only. Meet at All New Bali Adventure with no transport fee.</p>
         </div>
       </section>
 

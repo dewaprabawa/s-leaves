@@ -7,6 +7,13 @@ import { X, ExternalLink, Info } from 'lucide-react';
 import { formatIdr, openWhatsAppBooking } from '@/lib/whatsapp';
 import { getTourSlugForActivity } from '@/lib/bookingTourDetails';
 import { MEETING_POINT } from '@/lib/meetingPoint';
+import {
+  DROP_SAME_HOTEL_FEE_IDR,
+  OUT_OF_UBUD_EXTRA_IDR,
+  PICKUP_FEE_IDR,
+  quoteActivity,
+  quotePickup,
+} from '@/lib/pricing';
 import BookingTourDetailPanel from '@/components/BookingTourDetailPanel';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
@@ -51,6 +58,7 @@ export function BookingPopup({
   const [selectedTourId, setSelectedTourId] = useState(tour?.id || "");
   const [showDetails, setShowDetails] = useState(false);
   const [wantsPickup, setWantsPickup] = useState(false);
+  const [sameDropOff, setSameDropOff] = useState(false);
 
   const activeTour =
     (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
@@ -77,6 +85,7 @@ export function BookingPopup({
       setNotes("");
       setShowDetails(false);
       setWantsPickup(false);
+      setSameDropOff(false);
     }
   }, [isOpen, tour]);
 
@@ -110,16 +119,27 @@ export function BookingPopup({
 
   const hasKidPricing = activeTour.kidPrice !== null && activeTour.kidPrice !== undefined;
   const totalPax = adults + kids;
-  const isInvalidPax = totalPax < activeTour.minPax;
-  const adultPrice = activeTour.adultPrice;
-  const kidPrice = activeTour.kidPrice || 0;
-  const outOfUbudFee = 120000;
+  const isTandem = activeTour.id === 'tandem-atv';
+  const isInvalidPax =
+    totalPax < activeTour.minPax || (isTandem && (adults < 2 || adults % 2 !== 0));
+
+  const activityQuote = quoteActivity({
+    activityId: activeTour.id,
+    adults,
+    children: kids,
+  });
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
-  const pickupFee =
-    wantsPickup && location && (hasFreeUbudPickup ? isOutUbud : true)
-      ? outOfUbudFee
-      : 0;
-  const totalCost = (adults * adultPrice) + (kids * kidPrice) + pickupFee;
+  const pickupQuote = quotePickup({
+    wantsPickup,
+    freeUbudPickup: hasFreeUbudPickup,
+    isOutUbud,
+    sameDropOff,
+  });
+
+  const activityTotal =
+    (activityQuote?.activitySubtotal ?? 0) + (activityQuote?.childSubtotal ?? 0);
+  const pickupFee = pickupQuote.total;
+  const totalCost = activityTotal + pickupFee;
   const nameOk = guestName.trim().length >= 2;
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
   const locationOk = wantsPickup
@@ -131,7 +151,9 @@ export function BookingPopup({
   const handleBook = () => {
     if (!nameOk) return alert("Please enter your name.");
     if (!ageOk) return alert("Please enter your age.");
-    if (isInvalidPax) return alert(`Minimum ${activeTour.minPax} persons required.`);
+    if (isTandem && (adults < 2 || adults % 2 !== 0)) {
+      return alert('Tandem ATV requires an even number of riders (2, 4, 6…).');
+    }
     if (!wantsPickup) {
       // meet at arena — no address needed
     } else if (!location) {
@@ -149,6 +171,22 @@ export function BookingPopup({
         : undefined
       : MEETING_POINT.mapUrl;
 
+    if (isInvalidPax) return alert(`Minimum ${activeTour.minPax} persons required.`);
+
+    const pickupNoteParts: string[] = [];
+    if (!wantsPickup) {
+      pickupNoteParts.push('Self meet at All New Bali Adventure — no pickup fee');
+    } else if (hasFreeUbudPickup && !isOutUbud) {
+      pickupNoteParts.push('Free Ubud pickup (cycling tour)');
+    } else {
+      if (pickupQuote.pickupFee) pickupNoteParts.push(`Pickup +IDR ${pickupQuote.pickupFee.toLocaleString('id-ID')}`);
+      if (pickupQuote.dropFee) pickupNoteParts.push(`Return drop same hotel +IDR ${pickupQuote.dropFee.toLocaleString('id-ID')}`);
+      if (pickupQuote.outOfUbudFee) pickupNoteParts.push(`Out of Ubud +IDR ${pickupQuote.outOfUbudFee.toLocaleString('id-ID')}`);
+    }
+    if (activityQuote) {
+      pickupNoteParts.unshift(`${activityQuote.tierLabel}: ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`);
+    }
+
     openWhatsAppBooking({
       guestName: guestName.trim(),
       guestAge: guestAge.trim(),
@@ -164,16 +202,8 @@ export function BookingPopup({
       price: totalCost,
       notes: [
         notes.trim() || null,
-        wantsPickup
-          ? !location
-            ? null
-            : hasFreeUbudPickup
-              ? isOutUbud
-                ? "Out of Ubud pickup (+IDR 120,000)"
-                : "Ubud area pickup (free)"
-              : "Hotel pickup (+IDR 120,000)"
-          : "Self meet at All New Bali Adventure — no pickup surcharge",
-      ].filter(Boolean).join(" · ") || undefined,
+        pickupNoteParts.join(' · '),
+      ].filter(Boolean).join(' · ') || undefined,
     });
   };
 
@@ -255,12 +285,12 @@ export function BookingPopup({
             ) : location ? (
                hasFreeUbudPickup ? (
                  isOutUbud ? (
-                   <span className="text-red-600 font-bold block">Out of Ubud: +120,000 IDR charge</span>
+                   <span className="text-red-600 font-bold block">Out of Ubud: +{PICKUP_FEE_IDR / 1000}k pickup +{DROP_SAME_HOTEL_FEE_IDR / 1000}k drop if same hotel</span>
                  ) : (
-                   <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free Pickup</span>
+                   <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free Pickup (cycling)</span>
                  )
                ) : (
-                 <span className="text-red-600 font-bold block">Pickup surcharge: +120,000 IDR</span>
+                 <span className="text-red-600 font-bold block">Pickup from IDR {PICKUP_FEE_IDR / 1000}k · +{DROP_SAME_HOTEL_FEE_IDR / 1000}k return to same hotel</span>
                )
             ) : <span className="opacity-70">Tap on the map to set your pickup pin.</span>}
           </div>
@@ -388,6 +418,7 @@ export function BookingPopup({
             </label>
 
             {wantsPickup ? (
+            <>
             <div>
               <label className="block text-brand-green font-bold text-sm mb-2">Hotel / Pickup Address *</label>
               <input 
@@ -398,10 +429,51 @@ export function BookingPopup({
                 className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
               />
             </div>
+            {(!hasFreeUbudPickup || isOutUbud) ? (
+              <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3 shadow-sm">
+                <input
+                  type="checkbox"
+                  checked={sameDropOff}
+                  onChange={(e) => setSameDropOff(e.target.checked)}
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-brand-green/30 text-brand-green focus:ring-brand-green"
+                />
+                <span className="text-sm leading-relaxed text-brand-green-light">
+                  <span className="font-bold text-brand-green block mb-0.5">Return drop-off to same hotel (+IDR {DROP_SAME_HOTEL_FEE_IDR.toLocaleString('id-ID')})</span>
+                  Pickup IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')}
+                  {sameDropOff ? ` + drop IDR ${DROP_SAME_HOTEL_FEE_IDR.toLocaleString('id-ID')} = IDR ${(PICKUP_FEE_IDR + DROP_SAME_HOTEL_FEE_IDR).toLocaleString('id-ID')} round trip` : ' one-way'}
+                  {isOutUbud ? ` · Out of Ubud +IDR ${OUT_OF_UBUD_EXTRA_IDR.toLocaleString('id-ID')}` : ''}
+                </span>
+              </label>
+            ) : null}
+            <div className="rounded-xl border border-brand-green/10 bg-brand-green/5 px-4 py-3 text-xs text-brand-green-light space-y-1.5">
+              <p className="font-bold text-brand-green text-sm">Grab / GoCar vs our pickup</p>
+              <p>Typical Grab or GoCar one-way Ubud ↔ arena: ~IDR {pickupQuote.grabOneWayTypical.toLocaleString('id-ID')} (est.)</p>
+              <p>
+                Our pickup: <strong className="text-brand-green">{pickupQuote.total > 0 ? formatIdr(pickupQuote.total) : 'Free (cycling in Ubud)'}</strong>
+                {pickupQuote.total > 0 && pickupQuote.savingsVsGrabRoundTrip > 0 && sameDropOff
+                  ? ` · saves ~${formatIdr(pickupQuote.savingsVsGrabRoundTrip)} vs Grab round trip`
+                  : pickupQuote.total > 0 && pickupQuote.savingsVsGrabOneWay > 0 && !sameDropOff
+                    ? ` · saves ~${formatIdr(pickupQuote.savingsVsGrabOneWay)} vs Grab one-way`
+                    : ''}
+              </p>
+              <p className="opacity-80">Or meet at {MEETING_POINT.name} with no transport fee — <a href={MEETING_POINT.mapUrl} target="_blank" rel="noopener noreferrer" className="underline font-semibold text-brand-green">open map</a></p>
+            </div>
+            </>
             ) : (
+            <>
             <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
               <span className="font-bold text-brand-green">Meeting at:</span> {MEETING_POINT.label}, {MEETING_POINT.address}
             </div>
+            <div className="rounded-xl border border-brand-green/10 bg-brand-green/5 px-4 py-3 text-xs text-brand-green-light space-y-1.5">
+              <p className="font-bold text-brand-green text-sm">Grab / GoCar vs meet at arena</p>
+              <p>Typical Grab or GoCar one-way Ubud ↔ arena: ~IDR {pickupQuote.grabOneWayTypical.toLocaleString('id-ID')} (est.)</p>
+              <p>
+                Meet at {MEETING_POINT.name}: <strong className="text-brand-green">IDR 0 transport fee</strong>
+                {' '}· saves ~{formatIdr(pickupQuote.grabOneWayTypical)} vs Grab one-way
+              </p>
+              <p className="opacity-80">Need pickup? Check &quot;I need hotel pickup&quot; above — IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')} one-way or IDR {(PICKUP_FEE_IDR + DROP_SAME_HOTEL_FEE_IDR).toLocaleString('id-ID')} round trip to same hotel.</p>
+            </div>
+            </>
             )}
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -427,7 +499,10 @@ export function BookingPopup({
 
             <div className="flex gap-4">
               <div className="flex-1">
-                <label className="block text-brand-green font-bold text-sm mb-2">{hasKidPricing ? "Adults" : "People"} ({activeTour.adultPrice / 1000}k)</label>
+                <label className="block text-brand-green font-bold text-sm mb-2">
+                  {hasKidPricing ? 'Adults' : isTandem ? 'Riders' : 'People'}
+                  {activityQuote ? ` (${activityQuote.unitPrice / 1000}k · ${activityQuote.tierLabel})` : ''}
+                </label>
                 <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
                   <button type="button" onClick={() => setAdults(Math.max(0, adults - 1))} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">-</button>
                   <span className="flex-1 text-center font-bold text-brand-green text-lg">{adults}</span>
@@ -459,7 +534,10 @@ export function BookingPopup({
               </div>
             )}
 
-            {isInvalidPax && <p className="text-red-500 text-sm font-bold bg-red-50 p-2 rounded-lg border border-red-100">Minimum {activeTour.minPax} persons required.</p>}
+            {isTandem && adults % 2 !== 0 && adults >= 2 && (
+              <p className="text-amber-700 text-sm font-bold bg-amber-50 p-2 rounded-lg border border-amber-100">Tandem ATV needs an even number of riders (2, 4, 6…).</p>
+            )}
+            {isInvalidPax && <p className="text-red-500 text-sm font-bold bg-red-50 p-2 rounded-lg border border-red-100">Minimum {activeTour.minPax} persons required{isTandem ? ' (even count for tandem)' : ''}.</p>}
 
             <div>
               <label className="block text-brand-green font-bold text-sm mb-2">Special Notes (Optional)</label>
@@ -474,9 +552,21 @@ export function BookingPopup({
           </div>
 
           <div className="mt-6 pt-6 border-t border-brand-green/10">
+            {activityQuote && (
+              <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
+                <span>{activityQuote.tierLabel} · {formatIdr(activityQuote.unitPrice)} × {activityQuote.units} {activityQuote.unitLabel}</span>
+                <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
+              </div>
+            )}
+            {activityQuote && activityQuote.childSubtotal > 0 && (
+              <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
+                <span>Children</span>
+                <span className="font-semibold text-brand-green">{formatIdr(activityQuote.childSubtotal)}</span>
+              </div>
+            )}
             {pickupFee > 0 && (
               <div className="flex justify-between items-center mb-3 text-sm text-brand-green-light">
-                <span>Pickup surcharge</span>
+                <span>Pickup &amp; transfer{sameDropOff ? ' (round trip)' : ''}</span>
                 <span className="font-semibold text-brand-green">{formatIdr(pickupFee)}</span>
               </div>
             )}

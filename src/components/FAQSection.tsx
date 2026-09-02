@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "Is hotel pickup included in the price?",
-    answer: "Free hotel pickup and drop-off within the Ubud area is included only on our Ubud Ricefield Cycling Tour. For ATV, rafting, and canyon tubing, hotel pickup is available for an additional IDR 120,000. For cycling pickups outside Ubud (e.g. Seminyak, Kuta, Canggu), the same IDR 120,000 surcharge applies."
+    answer: "Free hotel pickup and drop-off within the Ubud area is included only on our Ubud Ricefield Cycling Tour. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 50,000 one-way or IDR 100,000 round trip (pickup + return to same hotel). Out of Ubud adds IDR 50,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
   },
   {
     question: "Do I need experience to ride an ATV, go rafting, or cycle?",

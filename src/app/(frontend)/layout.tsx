@@ -110,7 +110,7 @@ const adventureOffers: AdventureOffer[] = [
     name: 'Single ATV Jungle Ride',
     description:
       'Private Bali quad bike adventure at All New Bali Adventure arena through jungle trails and muddy tracks. All-inclusive: lunch, boot shoes, helmet, insurance, and optional Wos River tubing combo.',
-    price: '650000',
+    price: '600000',
     image: '/images/adventures/atv-adventure.jpg',
   },
   {

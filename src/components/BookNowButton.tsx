@@ -2,13 +2,14 @@
 
 import { useState } from "react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
+import { getListPrice } from "@/lib/pricing"
 
 export const BOOKABLE_TOURS: TourConfig[] = [
   {
     id: "single-atv",
     title: "Single ATV Ride",
     times: ["08:00", "09:00", "10:00", "13:00", "14:00"],
-    adultPrice: 650000,
+    adultPrice: getListPrice("single-atv"),
     kidPrice: 550000,
     minPax: 1,
   },
@@ -16,7 +17,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     id: "tandem-atv",
     title: "Tandem ATV Ride",
     times: ["08:00", "09:00", "10:00", "13:00", "14:00"],
-    adultPrice: 859000,
+    adultPrice: getListPrice("tandem-atv"),
     kidPrice: null,
     minPax: 2,
   },
@@ -24,7 +25,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     id: "rafting",
     title: "Whitewater Rafting",
     times: ["08:30", "11:00", "14:00"],
-    adultPrice: 400000,
+    adultPrice: getListPrice("rafting"),
     kidPrice: 350000,
     minPax: 2,
   },
@@ -32,7 +33,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     id: "canyon-tubing",
     title: "Canyon Tubing",
     times: ["08:00", "09:00", "10:00", "13:00", "14:00"],
-    adultPrice: 359000,
+    adultPrice: getListPrice("canyon-tubing"),
     kidPrice: 300000,
     minPax: 1,
   },
@@ -40,7 +41,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     id: "cycling",
     title: "Ubud Ricefield Cycling Tour",
     times: ["13:30"],
-    adultPrice: 450000,
+    adultPrice: getListPrice("cycling"),
     kidPrice: null,
     minPax: 1,
     freeUbudPickup: true,

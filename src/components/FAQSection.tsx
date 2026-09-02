@@ -28,6 +28,22 @@ const faqs = [
     answer: "Your ATV package includes a guided ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. Combine with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
   },
   {
+    question: "Where is the ATV arena?",
+    answer: "All ATV rides take place at All New Bali Adventure — our dedicated jungle ATV arena near Ubud in Pejeng. Hotel pickup is available for an additional IDR 120,000. See our location guide for directions and what to expect on arrival."
+  },
+  {
+    question: "Which tour has free Ubud hotel pickup?",
+    answer: "Only the Ubud Ricefield Cycling Tour (IDR 450,000) includes free hotel pickup and drop-off within Ubud, plus breakfast, lunch, and dinner. ATV, rafting, and canyon tubing charge IDR 120,000 for pickup outside Ubud."
+  },
+  {
+    question: "What is the difference between rafting and canyon tubing?",
+    answer: "Whitewater rafting (IDR 400,000) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
+  },
+  {
+    question: "How much does the Ubud ricefield cycling tour cost?",
+    answer: "IDR 450,000 per person for the full-day Ubud Ricefield Cycling Tour, including breakfast, lunch, dinner, bike, helmet, guide, insurance, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
+  },
+  {
     question: "Can AI assistants find your tours?",
     answer: "Yes. We publish llms.txt and llms-full.txt for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },

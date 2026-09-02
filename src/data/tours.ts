@@ -558,7 +558,6 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       },
     ],
     reviews: [],
-    getYourGuideUrl: "https://gyg.me/2pBDrw5s",
   },
   {
     id: "luwak-coffee-plantation",

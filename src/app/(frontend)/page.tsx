@@ -164,6 +164,11 @@ const heroCarouselImages = [
 
 const travelGuides = [
   {
+    title: "Bali ATV for Beginners",
+    excerpt: "First-time quad bike rides near Ubud from IDR 650,000 at All New Bali Adventure.",
+    href: "/blog/bali-atv-for-beginners-first-time-guide",
+  },
+  {
     title: "Bali ATV Tour Ubud Guide",
     excerpt: "Trails, prices, and what is included for quad bike rides near Ubud.",
     href: "/blog/bali-atv-tour-ubud-guide",

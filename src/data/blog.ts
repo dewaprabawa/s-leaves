@@ -10,6 +10,87 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'bali-atv-for-beginners-first-time-guide',
+    title: 'Bali ATV for Beginners (2026)',
+    excerpt: 'First-time Bali ATV near Ubud from IDR 650,000 at All New Bali Adventure in Pejeng — gear, lunch, and a full beginner briefing.',
+    publishedAt: '2026-09-02',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**Can beginners ride an ATV in Bali with no experience?** Yes. Sekar Bali Activity runs beginner-friendly Single ATV rides from **IDR 650,000** at **All New Bali Adventure** in Pejeng, near Ubud — with a full safety briefing, boot shoes, helmet, lunch, and insurance included. Prefer to share the quad bike? Tandem ATV starts from **IDR 859,000** for two riders.
+
+> **Key Takeaways**
+> - No riding experience required — English-speaking guides brief every first-timer at All New Bali Adventure in Pejeng
+> - Single ATV from IDR 650,000 (1 pax); Tandem ATV from IDR 859,000 (2 pax); lunch, helmet, boot shoes, and insurance included
+> - Hotel pickup is optional (IDR 120,000); skip it and meet at the arena: [All New Bali Adventure on Google Maps](https://share.google/nPiK86d9rgxN19GkV)
+> - Book on WhatsApp with no upfront payment — +62 817 7572 3663
+
+---
+
+## Why Pejeng is the easiest place to try ATV for the first time
+
+Most guests staying in Ubud do not want a long transfer before their first quad bike ride. **All New Bali Adventure**, the ATV arena used by Sekar Bali Activity, is in Pejeng — just east of central Ubud — so you spend the morning on jungle trails rather than in traffic.
+
+The track mixes jungle paths, muddy stretches, and river crossings. That sounds intense on paper. On the ground, the pace is set by your guide after a clear briefing. First-timers are the usual guest profile, not a special exception. You do not need off-road hours. You need closed-toe comfort with getting muddy, and ten minutes of listening before the engine starts.
+
+For a full price-and-inclusions overview, read the [Bali ATV tour near Ubud guide](/blog/bali-atv-tour-ubud-guide). This article is the first-timer version: what happens, what you control, and how to arrive.
+
+## Single ATV or Tandem ATV for a first ride?
+
+**Single ATV (IDR 650,000 / 1 pax)** is the right pick if you want the throttle in your own hands. After the briefing, most beginners settle into the controls within the first few minutes of the trail.
+
+**Tandem ATV (IDR 859,000 / 2 pax)** is better if you would rather share one machine with a partner. Couples and friends often choose tandem for a first Bali ATV day so one person can drive while the other rides.
+
+Both options run at the same arena, use the same gear, and include the same lunch and insurance. Book either on the [Bali ATV Adventure](/tours/bali-atv-adventure) page. If children are joining, tell us ages when you message WhatsApp so we can assign Adult or Child rates correctly.
+
+## What a beginner day looks like at All New Bali Adventure
+
+The ATV package runs about **2–4 hours**, depending on trail conditions and whether you add water time after the ride.
+
+1. **Arrive at All New Bali Adventure.** Meet your guide, get fitted with boot shoes and a helmet, and complete a safety briefing in English.
+2. **Ride the jungle track.** Follow your guide through jungle paths, muddy sections, and scenic river crossings. You are learning the machine on a guided trail, not racing.
+3. **Optional water combo.** After the ATV, many guests add river tubing on the Wos River or a separate [canyon tubing](/tours/canyon-tubing) float (**IDR 359,000**). See how the land-and-water day works in [ATV + river tubing on the Wos River](/blog/atv-river-tubing-wos-river-bali).
+4. **Lunch and change.** A simple menu lunch is included. Towels and changing facilities are at the base, so you do not need to pack a beach towel.
+
+Whitewater rafting is another easy add-on for a bigger adventure day. [Class II–III rafting near Ubud](/tours/whitewater-rafting) is **IDR 400,000** per person, with a professional crew and a full safety briefing — also suitable for beginners.
+
+## What is included (and what is not)
+
+| Included | Not included |
+| --- | --- |
+| Guided Single or Tandem ATV ride at All New Bali Adventure | Hotel pickup and drop-off (optional, IDR 120,000) |
+| Boot shoes and helmet | River tubing or canyon tubing combo (ask when you book) |
+| Simple menu lunch | Personal expenses |
+| Insurance | Gratuities |
+| Safety briefing and trail guide | |
+
+Combo pricing for ATV + Wos River tubing is confirmed on WhatsApp so we only quote numbers that are on the published rate card. Standalone canyon tubing is **IDR 359,000**.
+
+## Pickup is optional — or meet at the arena
+
+Hotel pickup is **not** bundled into the ATV price. In the booking form it is an optional add-on (**IDR 120,000**). If you skip pickup, meet us at **All New Bali Adventure**: [open the meeting point in Google Maps](https://share.google/nPiK86d9rgxN19GkV). That is the same arena where you collect gear and start the briefing.
+
+Free Ubud hotel pickup applies only to the [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) (**IDR 450,000**, with breakfast, lunch, and dinner). Cycling pickups outside Ubud use the same IDR 120,000 surcharge.
+
+## What first-timers should bring
+
+- Changing clothes or a dry cloth — trails get muddy
+- Sunscreen for open trail sections
+- Some cash for extras or a tip
+- A waterproof phone case if you want photos on river crossings
+
+You do not need your own boots or helmet. Those are fitted at All New Bali Adventure before you hit the track.
+
+## How to book with no upfront payment
+
+Tap Book on [sekarbaliactivity.com](https://www.sekarbaliactivity.com) or message WhatsApp **+62 817 7572 3663**. Send your name, age, adult or child, hotel or meeting-point plan, activity (Single ATV or Tandem ATV), date, and estimated price. There is **no upfront payment to inquire**.
+
+The full WhatsApp checklist lives in [how to book a Bali adventure on WhatsApp](/blog/how-to-book-bali-adventure-whatsapp).
+
+**Book now** — [Bali ATV Adventure](/tours/bali-atv-adventure).
+`
+  },
+  {
     slug: 'bali-atv-tour-ubud-guide',
     title: 'Bali ATV Tour Near Ubud: Trails, Prices, and What Is Included (2026)',
     excerpt: 'A practical guide to booking a Bali ATV / quad bike adventure near Ubud and Pejeng — prices from IDR 650,000, what to bring, lunch and gear inclusions, and how to add Wos River tubing.',
@@ -30,13 +111,13 @@ export const BLOG_POSTS: BlogPost[] = [
 
 ## Why Pejeng / Ubud for ATV?
 
-Pejeng sits just east of central Ubud, so hotel pickup is fast and the trails reach jungle paths, muddy tracks, and river crossings without a long transfer. Riders get a full safety briefing — no prior ATV experience is required.
+Pejeng sits just east of central Ubud, so the trails reach jungle paths, muddy tracks, and river crossings without a long transfer. Riders get a full safety briefing — no prior ATV experience is required. First-timers should start with [Bali ATV for Beginners](/blog/bali-atv-for-beginners-first-time-guide).
 
 ## What You Get on the ATV Package
 
 | Include | Details |
 | --- | --- |
-| Hotel pickup & drop-off | Free within Ubud and nearby areas |
+| Hotel pickup & drop-off | Optional add-on, IDR 120,000 — or meet at All New Bali Adventure |
 | Guided ATV trail ride | Single or tandem through jungle, mud, and river crossings |
 | Boot shoes, helmet & insurance | Fitted at base before the ride |
 | Simple menu lunch | Served after the adventure |
@@ -86,7 +167,8 @@ Solo ATV is pure off-road adrenaline. Adding river tubing cools you down and add
 
 ## Typical Flow
 
-1. Hotel pickup (Ubud area usually free)  
+1. Optional hotel pickup (IDR 120,000) or meet at All New Bali Adventure  
+
 2. Gear fitting: boot shoes & helmet  
 3. Safety briefing and ATV trail ride  
 4. Optional Wos River tubing session  
@@ -94,7 +176,7 @@ Solo ATV is pure off-road adrenaline. Adding river tubing cools you down and add
 
 ## Who It Is For
 
-Beginners, couples, and small groups. Children can join when age-appropriate — tell us ages when booking so we assign Adult or Child rates correctly.
+Beginners, couples, and small groups. If this is your first quad bike ride, read [Bali ATV for Beginners](/blog/bali-atv-for-beginners-first-time-guide) before adding tubing. Children can join when age-appropriate — tell us ages when booking so we assign Adult or Child rates correctly.
 
 ## Book the Combo
 

@@ -5,6 +5,5 @@ export const MEETING_POINT = {
   address: 'Pejeng, Ubud, Gianyar, Bali',
   lat: -8.5133,
   lng: 115.2989,
-  mapUrl:
-    'https://www.google.com/maps/search/?api=1&query=All+New+Bali+Adventure+Pejeng+Ubud+Bali',
+  mapUrl: 'https://share.google/nPiK86d9rgxN19GkV',
 } as const

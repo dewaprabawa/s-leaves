@@ -400,7 +400,16 @@ export function BookingPopup({
             </div>
             ) : (
             <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
-              <span className="font-bold text-brand-green">Meeting at:</span> {MEETING_POINT.label}, {MEETING_POINT.address}
+              <span className="font-bold text-brand-green">Meeting at:</span>{' '}
+              <a
+                href={MEETING_POINT.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-brand-green underline underline-offset-2 hover:text-brand-green-light"
+              >
+                {MEETING_POINT.label}
+              </a>
+              , {MEETING_POINT.address}
             </div>
             )}
 

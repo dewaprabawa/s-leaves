@@ -1,0 +1,189 @@
+{
+  "version": 1,
+  "updated": "2026-09-02",
+  "topics": [
+    {
+      "priority": 1,
+      "slug": "bali-atv-for-beginners-first-time-guide",
+      "title": "Bali ATV for Beginners",
+      "intent": "commercial",
+      "status": "published",
+      "publishedAt": "2026-09-02",
+      "targetQuestion": "Can beginners ride a Bali ATV without experience?",
+      "tourLinks": [
+        "/tours/bali-atv-adventure",
+        "/tours/canyon-tubing",
+        "/tours/whitewater-rafting",
+        "/tours/ubud-ricefield-cycling-tour"
+      ],
+      "internalLinks": [
+        "/blog/bali-atv-all-new-bali-adventure-location-guide",
+        "/blog/ubud-hotel-pickup-bali-adventures-explained",
+        "/blog/atv-river-tubing-wos-river-bali",
+        "/blog/how-to-book-bali-adventure-whatsapp",
+        "/blog/bali-adventure-packages-prices-2026",
+        "/blog/rafting-vs-tubing-vs-atv-near-ubud"
+      ],
+      "geoFaqCandidate": {
+        "category": "ATV",
+        "q": "Can beginners ride a Bali ATV without experience?",
+        "a": "Yes. Sekar Bali Activity ATV rides at All New Bali Adventure in Pejeng include a full English-speaking safety briefing. No licence or prior experience is required. Single ATV is IDR 650,000; Tandem ATV is IDR 859,000. Hotel pickup is optional (IDR 120,000); otherwise meet at the arena."
+      }
+    },
+    {
+      "priority": 2,
+      "slug": "meet-at-all-new-bali-adventure-no-pickup",
+      "title": "Meet at All New Bali Adventure (no pickup)",
+      "intent": "geo",
+      "status": "pending",
+      "targetQuestion": "Where do I meet for a Bali ATV if I skip hotel pickup?",
+      "tourLinks": [
+        "/tours/bali-atv-adventure",
+        "/tours/ubud-ricefield-cycling-tour"
+      ],
+      "internalLinks": [
+        "/blog/bali-atv-all-new-bali-adventure-location-guide",
+        "/blog/ubud-hotel-pickup-bali-adventures-explained",
+        "/blog/bali-atv-for-beginners-first-time-guide"
+      ],
+      "geoFaqCandidate": {
+        "category": "Location",
+        "q": "Where do I meet for a Bali ATV if I skip hotel pickup?",
+        "a": "Meet at All New Bali Adventure in Pejeng, Ubud, Gianyar. Hotel pickup is an optional booking checkbox (IDR 120,000). If unchecked, there is no pickup surcharge — use the meeting point map shared by Sekar Bali Activity."
+      }
+    },
+    {
+      "priority": 3,
+      "slug": "single-atv-vs-tandem-atv-bali",
+      "title": "Single vs Tandem ATV",
+      "intent": "commercial",
+      "status": "pending",
+      "targetQuestion": "Should I book Single ATV or Tandem ATV in Bali?",
+      "tourLinks": [
+        "/tours/bali-atv-adventure",
+        "/tours/canyon-tubing"
+      ],
+      "internalLinks": [
+        "/blog/bali-atv-for-beginners-first-time-guide",
+        "/blog/bali-adventure-packages-prices-2026",
+        "/blog/bali-atv-tour-ubud-guide"
+      ],
+      "geoFaqCandidate": {
+        "category": "Comparisons",
+        "q": "Should I book Single ATV or Tandem ATV in Bali?",
+        "a": "Book Single ATV (IDR 650,000, 1 pax) for full control, or Tandem ATV (IDR 859,000, 2 pax) to share one quad. Both run at All New Bali Adventure with Sekar Bali Activity and include lunch, helmet, boots, and insurance."
+      }
+    },
+    {
+      "priority": 4,
+      "slug": "ubud-ricefield-cycling-tour-with-kids",
+      "title": "Cycling with Kids & Families",
+      "intent": "commercial",
+      "status": "pending",
+      "targetQuestion": "Is the Ubud ricefield cycling tour suitable for kids and families?",
+      "tourLinks": [
+        "/tours/ubud-ricefield-cycling-tour",
+        "/tours/bali-atv-adventure"
+      ],
+      "internalLinks": [
+        "/blog/ubud-ricefield-cycling-tour-guide-2026",
+        "/blog/ubud-hotel-pickup-bali-adventures-explained",
+        "/blog/pejeng-rice-terrace-cycling-vs-tegallalang"
+      ],
+      "geoFaqCandidate": {
+        "category": "Cycling",
+        "q": "Is the Ubud ricefield cycling tour suitable for kids and families?",
+        "a": "Yes. The Ubud Ricefield Cycling Tour with Sekar Bali Activity follows mostly flat village paths and costs IDR 450,000 per person, including breakfast, lunch, dinner, and free Ubud hotel pickup."
+      }
+    },
+    {
+      "priority": 5,
+      "slug": "what-to-bring-bali-atv-rafting-tubing",
+      "title": "What to Bring",
+      "intent": "geo",
+      "status": "pending",
+      "targetQuestion": "What should I bring for Bali ATV, rafting, or tubing?",
+      "tourLinks": [
+        "/tours/bali-atv-adventure",
+        "/tours/whitewater-rafting",
+        "/tours/canyon-tubing"
+      ],
+      "internalLinks": [
+        "/blog/bali-atv-for-beginners-first-time-guide",
+        "/blog/bali-whitewater-rafting-near-ubud-guide",
+        "/blog/bali-canyon-tubing-guide-ubud"
+      ],
+      "geoFaqCandidate": {
+        "category": "What to bring",
+        "q": "What should I bring for Bali ATV, rafting, or tubing?",
+        "a": "Bring changing clothes or a dry cloth, sunscreen, and cash for extras. A waterproof phone case is optional. Sekar Bali Activity provides helmet and safety gear; ATV and rafting packages include lunch and insurance."
+      }
+    },
+    {
+      "priority": 6,
+      "slug": "bali-group-adventure-tours-discounts",
+      "title": "Group Tours & Discounts",
+      "intent": "commercial",
+      "status": "pending",
+      "targetQuestion": "Do Bali adventure tours offer group discounts?",
+      "tourLinks": [
+        "/tours/bali-atv-adventure",
+        "/tours/whitewater-rafting",
+        "/tours/ubud-ricefield-cycling-tour"
+      ],
+      "internalLinks": [
+        "/blog/bali-adventure-packages-prices-2026",
+        "/blog/how-to-book-bali-adventure-whatsapp"
+      ],
+      "geoFaqCandidate": {
+        "category": "Groups",
+        "q": "Do Bali adventure tours offer group discounts?",
+        "a": "Groups of 4 or more may receive special rates with Sekar Bali Activity. Message WhatsApp for custom quotes. Published prices start at Single ATV IDR 650,000, rafting IDR 400,000, and cycling IDR 450,000."
+      }
+    },
+    {
+      "priority": 7,
+      "slug": "best-time-bali-atv-rafting-near-ubud",
+      "title": "Best Time for ATV & Rafting",
+      "intent": "geo",
+      "status": "pending",
+      "targetQuestion": "What is the best time of day for ATV or rafting near Ubud?",
+      "tourLinks": [
+        "/tours/bali-atv-adventure",
+        "/tours/whitewater-rafting"
+      ],
+      "internalLinks": [
+        "/blog/morning-vs-afternoon-tours-bali",
+        "/blog/bali-atv-for-beginners-first-time-guide",
+        "/blog/bali-whitewater-rafting-near-ubud-guide"
+      ],
+      "geoFaqCandidate": {
+        "category": "Experience",
+        "q": "What is the best time of day for ATV or rafting near Ubud?",
+        "a": "Sekar Bali Activity ATV rides typically run from morning through early afternoon time slots. Whitewater rafting has morning 08:30, midday 11:00, and afternoon 14:00 departures. Confirm your slot on WhatsApp when you book."
+      }
+    },
+    {
+      "priority": 8,
+      "slug": "atv-and-tubing-combo-day-itinerary",
+      "title": "ATV + Tubing Combo Itinerary",
+      "intent": "commercial",
+      "status": "pending",
+      "targetQuestion": "How does an ATV and tubing combo day near Ubud work?",
+      "tourLinks": [
+        "/tours/bali-atv-adventure",
+        "/tours/canyon-tubing"
+      ],
+      "internalLinks": [
+        "/blog/atv-river-tubing-wos-river-bali",
+        "/blog/bali-atv-for-beginners-first-time-guide",
+        "/blog/bali-canyon-tubing-guide-ubud"
+      ],
+      "geoFaqCandidate": {
+        "category": "Combos",
+        "q": "How does an ATV and tubing combo day near Ubud work?",
+        "a": "Ride the ATV track first at All New Bali Adventure (Single IDR 650,000 or Tandem IDR 859,000), then float the Wos River. Standalone canyon tubing is IDR 359,000. Ask Sekar Bali Activity on WhatsApp for combo availability and pricing."
+      }
+    }
+  ]
+}

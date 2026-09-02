@@ -164,6 +164,11 @@ const heroCarouselImages = [
 
 const travelGuides = [
   {
+    title: "Bali ATV for Beginners",
+    excerpt: "First-time quad bike guide at All New Bali Adventure from IDR 650,000 — no experience needed.",
+    href: "/blog/bali-atv-for-beginners-first-time-guide",
+  },
+  {
     title: "Rafting vs Tubing vs ATV Near Ubud",
     excerpt: "Compare intensity, prices, and which adventure fits your style.",
     href: "/blog/rafting-vs-tubing-vs-atv-near-ubud",
@@ -187,11 +192,6 @@ const travelGuides = [
     title: "Ubud Ricefield Cycling Tour Guide",
     excerpt: "Full itinerary, IDR 450K pricing, and what is included on the cycling day tour.",
     href: "/blog/ubud-ricefield-cycling-tour-guide-2026",
-  },
-  {
-    title: "Bali ATV Tour Ubud Guide",
-    excerpt: "Trails, prices, and what is included for quad bike rides at All New Bali Adventure.",
-    href: "/blog/bali-atv-tour-ubud-guide",
   },
 ] as const
 

@@ -24,6 +24,7 @@ import {
   buildGeoWebPageSchema,
   buildLlmsDiscoverySchema,
 } from "@/lib/geo"
+import { SEO_FOOTER_HEADING, SEO_FOOTER_LINKS } from "@/data/seoFooterLinks"
 
 const inter = Inter({
   variable: "--font-inter",
@@ -160,7 +161,7 @@ const schemaData = [
       price: adv.price,
       priceCurrency: 'IDR',
       availability: 'https://schema.org/InStock',
-      url: `${SITE_URL}/#adventures`,
+      url: `${SITE_URL}/book`,
       ...(adv.originalPrice
         ? {
             priceValidUntil: '2026-12-31',
@@ -175,16 +176,19 @@ const SETTINGS = { siteName: SITE_NAME }
 
 const footerLinks = {
   adventures: [
-    { label: "ATV Rides", href: "/#adventures" },
-    { label: "Whitewater Rafting", href: "/#adventures" },
-    { label: "Canyon Tubing", href: "/#adventures" },
-    { label: "Ubud Ricefield Cycling", href: "/#adventures" },
+    { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
+    { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
+    { label: "Canyon Tubing", href: "/tours/canyon-tubing" },
+    { label: "Ubud Ricefield Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
+    { label: "Book All Activities", href: "/book" },
     { label: "All Pricing", href: "/#pricing" },
   ],
   explore: [
+    { label: "Book Adventures", href: "/book" },
     { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
+    { label: "Transfers", href: "/transfers" },
   ],
 }
 
@@ -254,6 +258,28 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 </ul>
               </div>
             </div>
+
+            {/* SEO keyword link cloud */}
+            <div className="border-t border-sand/10 pt-10 pb-8 mb-2">
+              <h4 className="font-display text-sm font-bold uppercase tracking-wider text-center text-accent-gold mb-6">
+                {SEO_FOOTER_HEADING}
+              </h4>
+              <nav aria-label="Popular adventure searches" className="max-w-4xl mx-auto">
+                <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2.5 text-center">
+                  {SEO_FOOTER_LINKS.map((link) => (
+                    <li key={link.href + link.label}>
+                      <Link
+                        href={link.href}
+                        className="text-xs sm:text-sm text-sand/55 hover:text-sand transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+
             <div className="border-t border-sand/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-xs opacity-50">© {new Date().getFullYear()} {siteName}. All rights reserved.</p>
               <p className="text-xs opacity-40">Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-4">Tumang Bali Class</a></p>

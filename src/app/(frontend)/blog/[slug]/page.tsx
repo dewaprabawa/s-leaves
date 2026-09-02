@@ -109,7 +109,7 @@ export default async function BlogPostPage({ params }: Props) {
   }
 
   return (
-    <main className="min-h-screen bg-sand py-10 transition-colors duration-200">
+    <main className="min-h-screen bg-sand pt-32 pb-16 md:pb-24 transition-colors duration-200">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -118,7 +118,7 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <div className="max-w-3xl mx-auto px-6 space-y-8">
+      <div className="max-w-3xl mx-auto px-6 space-y-10 md:space-y-12">
         
         {/* Back Link */}
         <Link
@@ -129,11 +129,11 @@ export default async function BlogPostPage({ params }: Props) {
         </Link>
 
         {/* Header */}
-        <header className="space-y-6">
-          <h1 className="text-3xl md:text-5xl font-serif font-bold text-brand-green leading-tight">
+        <header className="space-y-5 md:space-y-6">
+          <h1 className="text-3xl md:text-5xl font-display font-bold text-brand-green leading-tight tracking-tight">
             {post.title}
           </h1>
-          <div className="flex items-center gap-6 text-sm text-gray-600">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-brand-green-light">
             <div className="flex items-center gap-2">
               <User className="w-4 h-4" />
               <span>{post.author}</span>
@@ -159,7 +159,7 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
 
         {/* Content */}
-        <article className="prose prose-lg prose-emerald max-w-none prose-headings:font-serif prose-headings:text-brand-green prose-a:text-emerald-600 hover:prose-a:text-emerald-700">
+        <article className="blog-content prose prose-lg max-w-none prose-headings:font-display prose-headings:font-bold prose-headings:text-brand-green prose-p:text-brand-green-light prose-li:text-brand-green-light prose-strong:text-brand-green prose-a:text-brand-green hover:prose-a:text-brand-green-light">
           <ReactMarkdown remarkPlugins={[remarkGfm]}>
             {post.content}
           </ReactMarkdown>

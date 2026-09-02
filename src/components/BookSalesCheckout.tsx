@@ -4,7 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Check, Clock, MapPin } from "lucide-react"
 import BookActivityButton from "@/components/BookActivityButton"
-import { ADVENTURES, getAdventureChildPrice, getAdventureListPrice } from "@/data/adventures"
+import PromoPrice from "@/components/PromoPrice"
+import { ADVENTURES, getAdventureChildPrice, getAdventureListPrice, getAdventurePromoPrice } from "@/data/adventures"
 import { formatTierPriceTable } from "@/lib/pricing"
 import { formatIdr } from "@/lib/whatsapp"
 
@@ -27,7 +28,8 @@ export default function BookSalesCheckout({ initialActivityId }: Props) {
   return (
     <div className="space-y-8 md:space-y-10">
       {sorted.map((adv) => {
-        const price = getAdventureListPrice(adv.id)
+        const price = getAdventurePromoPrice(adv.id)
+        const originalPrice = getAdventureListPrice(adv.id)
         const childPrice = getAdventureChildPrice(adv.id)
         const isHighlight = adv.id === highlighted
 
@@ -103,7 +105,13 @@ export default function BookSalesCheckout({ initialActivityId }: Props) {
                 <p className="text-xs font-medium text-brand-green-light uppercase tracking-wider mb-1">
                   From
                 </p>
-                <p className="font-display text-2xl font-bold text-brand-green">{formatIdr(price)}</p>
+                <PromoPrice
+                  price={price}
+                  originalPrice={originalPrice}
+                  variant="card"
+                  from
+                  tierLabel="3+ group rate — book more, save more"
+                />
                 {childPrice ? (
                   <p className="text-xs text-brand-green-light mt-1">
                     Child from {formatIdr(childPrice)}

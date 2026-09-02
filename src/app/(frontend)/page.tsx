@@ -5,7 +5,8 @@ import Link from 'next/link'
 import { FAQSection } from '@/components/FAQSection'
 import GeoAnswerBlock from '@/components/GeoAnswerBlock'
 import { BookingPopup, type TourConfig } from '@/components/BookingPopup'
-import { getListPrice, formatTierPriceTable } from '@/lib/pricing'
+import PromoPrice from '@/components/PromoPrice'
+import { getListPrice, getPromoListPrice, formatTierPriceTable } from '@/lib/pricing'
 import {
   ArrowRight, MapPin, Users, Check, Clock3, Shield,
   Star, ChevronLeft, ChevronRight, Waves,
@@ -60,7 +61,8 @@ const adventures: Adventure[] = [
     name: "Single ATV Ride",
     tagline: "Solo jungle thrill",
     pax: "1 Pax",
-    price: getListPrice("single-atv"),
+    price: getPromoListPrice("single-atv"),
+    originalPrice: getListPrice("single-atv"),
     childPrice: 550000,
     image: "/images/adventures/atv-adventure.jpg",
     description: "Private Bali ATV tour at All New Bali Adventure arena — jungle trails, muddy tracks, and river crossings. Beginner friendly with expert guides. Add optional Wos River tubing for the best ATV + tubing combo near Ubud.",
@@ -76,7 +78,8 @@ const adventures: Adventure[] = [
     name: "Tandem ATV Ride",
     tagline: "Share the adventure",
     pax: "2 Pax",
-    price: getListPrice("tandem-atv"),
+    price: getPromoListPrice("tandem-atv"),
+    originalPrice: getListPrice("tandem-atv"),
     childPrice: null as number | null,
     image: "/images/adventures/atv-adventure.jpg",
     description: "Private tandem ATV tour at All New Bali Adventure arena — share a quad bike adventure with a partner through jungle trails. All-inclusive with lunch, safety gear, and optional Wos River tubing combo.",
@@ -92,7 +95,8 @@ const adventures: Adventure[] = [
     name: "Whitewater Rafting",
     tagline: "Ride the rapids",
     pax: "Per Person",
-    price: getListPrice("rafting"),
+    price: getPromoListPrice("rafting"),
+    originalPrice: getListPrice("rafting"),
     childPrice: 350000,
     image: "/images/adventures/rafting.jpg",
     description: "Navigate Class II-III rapids through a stunning river canyon surrounded by towering jungle cliffs, waterfalls, and ancient stone carvings.",
@@ -108,7 +112,8 @@ const adventures: Adventure[] = [
     name: "Canyon Tubing",
     tagline: "Float through paradise",
     pax: "Per Person",
-    price: getListPrice("canyon-tubing"),
+    price: getPromoListPrice("canyon-tubing"),
+    originalPrice: getListPrice("canyon-tubing"),
     childPrice: 300000,
     image: "/images/adventures/canyon-tubing.jpg",
     description: "Drift through hidden canyons on an inflatable tube. Crystal-clear waters, moss-covered walls, and shafts of sunlight create a magical underground world. Pair it with an ATV ride for the ultimate combo.",
@@ -124,7 +129,8 @@ const adventures: Adventure[] = [
     name: "Ubud Ricefield Cycling Tour",
     tagline: "Ricefields & village life",
     pax: "Per Person",
-    price: getListPrice("cycling"),
+    price: getPromoListPrice("cycling"),
+    originalPrice: getListPrice("cycling"),
     childPrice: null as number | null,
     image: "/images/adventures/cycling.jpg",
     description: "Relaxing bike ride through green Ubud ricefields and quiet village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
@@ -196,10 +202,6 @@ const travelGuides = [
   },
 ] as const
 
-function formatIDR(amount: number) {
-  return `IDR ${amount.toLocaleString("id-ID")}`
-}
-
 /* ─── Hero Carousel ─── */
 function HeroCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null)
@@ -233,15 +235,16 @@ function HeroCarousel() {
 
 /* ─── Pricing Data ─── */
 const pricingData: PricingRow[] = [
-  { activity: "Single ATV", adventureId: "single-atv", pax: formatTierPriceTable('single-atv'), price: getListPrice('single-atv'), highlight: false },
-  { activity: "Tandem ATV", adventureId: "tandem-atv", pax: formatTierPriceTable('tandem-atv'), price: getListPrice('tandem-atv'), highlight: true },
-  { activity: "Whitewater Rafting", adventureId: "rafting", pax: formatTierPriceTable('rafting'), price: getListPrice('rafting'), highlight: false },
-  { activity: "Canyon Tubing", adventureId: "canyon-tubing", pax: formatTierPriceTable('canyon-tubing'), price: getListPrice('canyon-tubing'), highlight: false },
+  { activity: "Single ATV", adventureId: "single-atv", pax: formatTierPriceTable('single-atv'), price: getPromoListPrice('single-atv'), originalPrice: getListPrice('single-atv'), highlight: false },
+  { activity: "Tandem ATV", adventureId: "tandem-atv", pax: formatTierPriceTable('tandem-atv'), price: getPromoListPrice('tandem-atv'), originalPrice: getListPrice('tandem-atv'), highlight: true },
+  { activity: "Whitewater Rafting", adventureId: "rafting", pax: formatTierPriceTable('rafting'), price: getPromoListPrice('rafting'), originalPrice: getListPrice('rafting'), highlight: false },
+  { activity: "Canyon Tubing", adventureId: "canyon-tubing", pax: formatTierPriceTable('canyon-tubing'), price: getPromoListPrice('canyon-tubing'), originalPrice: getListPrice('canyon-tubing'), highlight: false },
   {
     activity: "Ubud Ricefield Cycling Tour",
     adventureId: "cycling",
     pax: `${formatTierPriceTable('cycling')} · Free Ubud pickup · 3 meals included`,
-    price: getListPrice('cycling'),
+    price: getPromoListPrice('cycling'),
+    originalPrice: getListPrice('cycling'),
     highlight: false,
   },
 ]
@@ -359,23 +362,12 @@ export default function Home() {
                   <img src={adv.image} alt={adv.name} className="adventure-card-image w-full h-full object-cover" loading="lazy" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <div className="absolute top-4 right-4 flex flex-col items-end gap-1.5">
-                    {"originalPrice" in adv && adv.originalPrice ? (
-                      <>
-                        <span className="bg-brand-green text-sand text-[10px] font-bold px-2.5 py-1 rounded-full shadow-lg uppercase tracking-wide">
-                          Save {formatIDR(adv.originalPrice - adv.price)}
-                        </span>
-                        <div className="bg-accent-gold text-brand-green text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-wide text-right">
-                          <span className="block text-[10px] line-through opacity-70 font-semibold normal-case tracking-normal">
-                            {formatIDR(adv.originalPrice)}
-                          </span>
-                          <span>From {formatIDR(adv.price)}</span>
-                        </div>
-                      </>
-                    ) : (
-                      <div className="bg-accent-gold text-brand-green text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-wide">
-                        From {formatIDR(adv.price)}
-                      </div>
-                    )}
+                    <PromoPrice
+                      price={adv.price}
+                      originalPrice={adv.originalPrice ?? adv.price}
+                      variant="badge"
+                      from
+                    />
                   </div>
                   <div className="absolute bottom-4 left-4 flex items-center gap-2 text-sand text-sm font-medium">
                     <Clock3 className="w-4 h-4" /><span>{adv.duration}</span>
@@ -457,7 +449,7 @@ export default function Home() {
             {pricingData.map((item, i) => (
               <div key={i} className={`pricing-row relative flex flex-col sm:flex-row items-center justify-between gap-4 p-6 md:p-8 rounded-2xl border-2 ${item.highlight ? "border-accent-gold bg-accent-gold/5 shadow-md" : "border-brand-green/10 bg-sand/50"}`}>
                 {item.highlight && <span className="absolute -top-3 left-6 bg-accent-gold text-brand-green text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>}
-                {"originalPrice" in item && item.originalPrice && (
+                {item.originalPrice && item.originalPrice > item.price && (
                   <span className="absolute -top-3 right-6 bg-brand-green text-sand text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                     Promo
                   </span>
@@ -473,20 +465,12 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-6">
                   <div className="text-center sm:text-right">
-                    {"originalPrice" in item && item.originalPrice ? (
-                      <>
-                        <span className="block text-sm text-brand-green-light line-through opacity-70">
-                          {formatIDR(item.originalPrice)}
-                        </span>
-                        <span className="text-2xl md:text-3xl font-display font-bold text-brand-green">
-                          {formatIDR(item.price)}
-                        </span>
-                      </>
-                    ) : (
-                      <span className="text-2xl md:text-3xl font-display font-bold text-brand-green">
-                        {formatIDR(item.price)}
-                      </span>
-                    )}
+                    <PromoPrice
+                      price={item.price}
+                      originalPrice={item.originalPrice ?? item.price}
+                      variant="inline"
+                      from
+                    />
                   </div>
                   <button
                     type="button"

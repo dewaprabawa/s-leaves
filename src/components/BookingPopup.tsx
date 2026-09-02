@@ -3,8 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import dynamic from 'next/dynamic';
-import { X, ExternalLink } from 'lucide-react';
+import { X, ExternalLink, Info } from 'lucide-react';
 import { formatIdr, openWhatsAppBooking } from '@/lib/whatsapp';
+import { getTourSlugForActivity } from '@/lib/bookingTourDetails';
+import { MEETING_POINT } from '@/lib/meetingPoint';
+import BookingTourDetailPanel from '@/components/BookingTourDetailPanel';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -46,6 +49,8 @@ export function BookingPopup({
   const [locationDetails, setLocationDetails] = useState("");
   const [notes, setNotes] = useState("");
   const [selectedTourId, setSelectedTourId] = useState(tour?.id || "");
+  const [showDetails, setShowDetails] = useState(false);
+  const [wantsPickup, setWantsPickup] = useState(false);
 
   const activeTour =
     (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
@@ -70,6 +75,8 @@ export function BookingPopup({
       setIsOutUbud(false);
       setLocationDetails("");
       setNotes("");
+      setShowDetails(false);
+      setWantsPickup(false);
     }
   }, [isOpen, tour]);
 
@@ -77,6 +84,7 @@ export function BookingPopup({
     if (!activeTour) return
     setAdults((prev) => Math.max(activeTour.minPax, prev || activeTour.minPax))
     setTime(activeTour.times[0] || "")
+    setShowDetails(false)
   }, [activeTour?.id])
 
   // Keep dialog above the fixed navbar and lock page scroll while open
@@ -108,19 +116,38 @@ export function BookingPopup({
   const outOfUbudFee = 120000;
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupFee =
-    location && (hasFreeUbudPickup ? isOutUbud : true) ? outOfUbudFee : 0;
+    wantsPickup && location && (hasFreeUbudPickup ? isOutUbud : true)
+      ? outOfUbudFee
+      : 0;
   const totalCost = (adults * adultPrice) + (kids * kidPrice) + pickupFee;
   const nameOk = guestName.trim().length >= 2;
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
-  const locationOk = Boolean(location) && locationDetails.trim().length >= 2;
+  const locationOk = wantsPickup
+    ? Boolean(location) && locationDetails.trim().length >= 2
+    : true;
   const canSubmit = nameOk && ageOk && locationOk && !isInvalidPax;
+  const detailTourSlug = getTourSlugForActivity(activeTour.id);
 
   const handleBook = () => {
     if (!nameOk) return alert("Please enter your name.");
     if (!ageOk) return alert("Please enter your age.");
     if (isInvalidPax) return alert(`Minimum ${activeTour.minPax} persons required.`);
-    if (!location) return alert("Please select a pickup location on the map.");
-    if (!locationOk) return alert("Please enter your hotel / pickup location name.");
+    if (!wantsPickup) {
+      // meet at arena — no address needed
+    } else if (!location) {
+      return alert("Please select a pickup location on the map.");
+    } else if (!locationOk) {
+      return alert("Please enter your hotel / pickup address.");
+    }
+
+    const bookingLocation = wantsPickup
+      ? locationDetails.trim()
+      : `Meet at ${MEETING_POINT.label}`;
+    const bookingMapUrl = wantsPickup
+      ? location
+        ? `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}`
+        : undefined
+      : MEETING_POINT.mapUrl;
 
     openWhatsAppBooking({
       guestName: guestName.trim(),
@@ -132,18 +159,20 @@ export function BookingPopup({
       activity: activeTour.title,
       date,
       time,
-      location: locationDetails.trim(),
-      locationMapUrl: `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}`,
+      location: bookingLocation,
+      locationMapUrl: bookingMapUrl,
       price: totalCost,
       notes: [
         notes.trim() || null,
-        !location
-          ? null
-          : hasFreeUbudPickup
-            ? isOutUbud
-              ? "Out of Ubud pickup (+IDR 120,000)"
-              : "Ubud area pickup (free)"
-            : "Hotel pickup (+IDR 120,000)",
+        wantsPickup
+          ? !location
+            ? null
+            : hasFreeUbudPickup
+              ? isOutUbud
+                ? "Out of Ubud pickup (+IDR 120,000)"
+                : "Ubud area pickup (free)"
+              : "Hotel pickup (+IDR 120,000)"
+          : "Self meet at All New Bali Adventure — no pickup surcharge",
       ].filter(Boolean).join(" · ") || undefined,
     });
   };
@@ -170,6 +199,12 @@ export function BookingPopup({
         </button>
 
         <div className="bg-sand w-full max-h-[95vh] overflow-y-auto rounded-3xl shadow-2xl relative flex flex-col md:flex-row">
+        {showDetails && detailTourSlug ? (
+          <BookingTourDetailPanel
+            tourSlug={detailTourSlug}
+            onClose={() => setShowDetails(false)}
+          />
+        ) : null}
         <div className="md:hidden sticky top-0 z-[300] flex items-center justify-between gap-3 px-4 py-3 bg-sand/95 backdrop-blur border-b border-brand-green/10 rounded-t-3xl">
           <h2 className="text-xl font-serif text-brand-green font-bold truncate">Book Experience</h2>
           <button
@@ -183,13 +218,41 @@ export function BookingPopup({
         </div>
 
         <div className="w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
-          <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={(lat, lng, isOut) => {
-            setLocation({lat, lng});
-            setIsOutUbud(isOut);
-          }} />
+          {!wantsPickup ? (
+            <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">
+              <p className="text-xs font-bold uppercase tracking-wider text-brand-green-light mb-2">
+                Meeting point
+              </p>
+              <h3 className="font-display text-2xl font-bold text-brand-green uppercase leading-tight mb-3">
+                {MEETING_POINT.name}
+              </h3>
+              <p className="text-sm text-brand-green-light leading-relaxed mb-4">
+                No hotel pickup — meet us directly at the arena. Arrive at your selected time; no pickup surcharge applies.
+              </p>
+              <p className="text-sm text-brand-green-light mb-6">{MEETING_POINT.address}</p>
+              <a
+                href={MEETING_POINT.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-green px-4 py-3 text-sm font-bold text-sand hover:bg-brand-green-light transition-colors"
+              >
+                Open in Google Maps <ExternalLink className="w-4 h-4" />
+              </a>
+            </div>
+          ) : (
+            <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={(lat, lng, isOut) => {
+              setLocation({lat, lng});
+              setIsOutUbud(isOut);
+            }} />
+          )}
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
-            <strong className="block mb-1">Pickup Location</strong>
-            {location ? (
+            <strong className="block mb-1">{wantsPickup ? "Pickup Location" : "Meeting Point"}</strong>
+            {!wantsPickup ? (
+              <span className="text-brand-green font-bold flex items-center gap-1">
+                <span className="w-2 h-2 rounded-full bg-brand-green"></span>
+                {MEETING_POINT.name} — no pickup fee
+              </span>
+            ) : location ? (
                hasFreeUbudPickup ? (
                  isOutUbud ? (
                    <span className="text-red-600 font-bold block">Out of Ubud: +120,000 IDR charge</span>
@@ -207,7 +270,19 @@ export function BookingPopup({
           <h2 className="hidden md:block text-3xl font-serif text-brand-green font-bold mb-2">Book Experience</h2>
           {tourOptions && tourOptions.length > 1 ? (
             <div className="mb-6 pb-4 border-b border-brand-green/10">
-              <label className="block text-brand-green font-bold text-sm mb-2">Activity *</label>
+              <div className="flex items-center justify-between gap-3 mb-2">
+                <label className="block text-brand-green font-bold text-sm">Activity *</label>
+                {detailTourSlug ? (
+                  <button
+                    type="button"
+                    onClick={() => setShowDetails(true)}
+                    className="shrink-0 inline-flex items-center gap-1.5 rounded-full border border-brand-green/20 bg-white px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-green hover:bg-sand transition-colors"
+                  >
+                    <Info className="w-3.5 h-3.5" />
+                    Details
+                  </button>
+                ) : null}
+              </div>
               <select
                 value={activeTour.id}
                 onChange={(e) => setSelectedTourId(e.target.value)}
@@ -219,7 +294,19 @@ export function BookingPopup({
               </select>
             </div>
           ) : (
-            <p className="text-brand-green-light text-sm mb-6 pb-4 border-b border-brand-green/10 font-bold">{activeTour.title}</p>
+            <div className="mb-6 pb-4 border-b border-brand-green/10 flex items-start justify-between gap-3">
+              <p className="text-brand-green-light text-sm font-bold">{activeTour.title}</p>
+              {detailTourSlug ? (
+                <button
+                  type="button"
+                  onClick={() => setShowDetails(true)}
+                  className="shrink-0 inline-flex items-center gap-1.5 rounded-full border border-brand-green/20 bg-white px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-brand-green hover:bg-sand transition-colors"
+                >
+                  <Info className="w-3.5 h-3.5" />
+                  Details
+                </button>
+              ) : null}
+            </div>
           )}
           
           {activeTour.getYourGuideUrl && (
@@ -285,8 +372,24 @@ export function BookingPopup({
               </div>
             </div>
 
+            <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 shadow-sm">
+              <input
+                type="checkbox"
+                checked={wantsPickup}
+                onChange={(e) => setWantsPickup(e.target.checked)}
+                className="mt-0.5 h-4 w-4 shrink-0 rounded border-brand-green/30 text-brand-green focus:ring-brand-green"
+              />
+              <span className="text-sm leading-relaxed">
+                <span className="font-bold text-brand-green block mb-0.5">I need hotel pickup</span>
+                <span className="text-brand-green-light">
+                  Optional. If unchecked, meet us at {MEETING_POINT.name}. Check this to add your hotel address on the map.
+                </span>
+              </span>
+            </label>
+
+            {wantsPickup ? (
             <div>
-              <label className="block text-brand-green font-bold text-sm mb-2">Hotel / Pickup Location *</label>
+              <label className="block text-brand-green font-bold text-sm mb-2">Hotel / Pickup Address *</label>
               <input 
                 type="text" 
                 value={locationDetails} 
@@ -295,6 +398,11 @@ export function BookingPopup({
                 className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
               />
             </div>
+            ) : (
+            <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
+              <span className="font-bold text-brand-green">Meeting at:</span> {MEETING_POINT.label}, {MEETING_POINT.address}
+            </div>
+            )}
 
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex-1">
@@ -308,7 +416,7 @@ export function BookingPopup({
                 />
               </div>
               <div className="flex-1">
-                <label className="block text-brand-green font-bold text-sm mb-2">Pickup Time</label>
+                <label className="block text-brand-green font-bold text-sm mb-2">{wantsPickup ? "Pickup Time" : "Meeting Time"}</label>
                 <select value={time} onChange={e => setTime(e.target.value)} className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm appearance-none cursor-pointer">
                   {activeTour.times.map((t, idx) => (
                     <option key={idx} value={t}>{t}</option>

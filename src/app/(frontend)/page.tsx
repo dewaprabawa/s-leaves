@@ -169,19 +169,29 @@ const travelGuides = [
     href: "/blog/bali-atv-for-beginners-first-time-guide",
   },
   {
-    title: "Bali ATV Tour Ubud Guide",
-    excerpt: "Trails, prices, and what is included for quad bike rides near Ubud.",
-    href: "/blog/bali-atv-tour-ubud-guide",
+    title: "Rafting vs Tubing vs ATV Near Ubud",
+    excerpt: "Compare intensity, prices, and which adventure fits your style.",
+    href: "/blog/rafting-vs-tubing-vs-atv-near-ubud",
   },
   {
-    title: "ATV + River Tubing on the Wos River",
-    excerpt: "Combine jungle ATV with a float down Bali's Wos River.",
-    href: "/blog/atv-river-tubing-wos-river-bali",
+    title: "Ubud Hotel Pickup Explained",
+    excerpt: "Which tours include free Ubud pickup and when the IDR 120K surcharge applies.",
+    href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
   },
   {
-    title: "How to Book on WhatsApp",
-    excerpt: "Send your name, age, location, activity, and price in one message.",
-    href: "/blog/how-to-book-bali-adventure-whatsapp",
+    title: "All New Bali Adventure ATV Location",
+    excerpt: "Where the ATV arena is, how to get there, and what to expect on arrival.",
+    href: "/blog/bali-atv-all-new-bali-adventure-location-guide",
+  },
+  {
+    title: "Bali Adventure Packages & Prices",
+    excerpt: "Compare ATV, rafting, tubing, and cycling packages with transparent IDR pricing.",
+    href: "/blog/bali-adventure-packages-prices-2026",
+  },
+  {
+    title: "Ubud Ricefield Cycling Tour Guide",
+    excerpt: "Full itinerary, IDR 450K pricing, and what is included on the cycling day tour.",
+    href: "/blog/ubud-ricefield-cycling-tour-guide-2026",
   },
 ] as const
 

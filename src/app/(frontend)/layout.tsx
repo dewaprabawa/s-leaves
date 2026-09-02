@@ -218,7 +218,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               {/* Brand */}
               <div className="lg:col-span-1">
                 <Link href="/#top" className="flex items-center gap-2 mb-4">
-                  <img src="/logo.png" alt={siteName} className="h-12 w-auto object-contain brightness-0 invert opacity-90" />
+                  <img src="/logo.png" alt={siteName} className="h-14 w-14 object-contain rounded-full" />
                 </Link>
                 <p className="text-sm opacity-70 leading-relaxed mb-6">Premium adventure experiences in Bali. ATV rides, whitewater rafting, canyon tubing, village cycling, and more. Expert local guides and all-inclusive packages.</p>
                 <div className="flex items-center gap-3">

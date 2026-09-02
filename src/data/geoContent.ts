@@ -221,9 +221,10 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Ubud Ricefield Cycling Tour', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`, desc: 'Full-day cycling with meals and free Ubud pickup' },
   { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III rapids near Ubud' },
   { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float adventure' },
+  { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book ATV, rafting, tubing, or cycling via WhatsApp' },
   { title: 'Pricing', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices' },
   { title: 'Blog / Travel Guides', url: `${SITE_URL}/blog`, desc: 'Citability-focused Bali adventure articles' },
-  { title: 'Contact / Book', url: `${SITE_URL}/contact`, desc: `WhatsApp ${CONTACT_PHONE_E164}` },
+  { title: 'Contact', url: `${SITE_URL}/contact`, desc: `WhatsApp ${CONTACT_PHONE_E164}` },
   { title: 'About', url: `${SITE_URL}/about`, desc: 'Local Pejeng team' },
 ] as const
 

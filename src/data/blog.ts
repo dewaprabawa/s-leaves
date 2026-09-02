@@ -1037,5 +1037,157 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
 
 **Compare and book** — [View all adventures on the homepage](/#adventures) or go direct to any [tour detail page](/tours/bali-atv-adventure).
 `
+  },
+  {
+    slug: 'bali-atv-all-new-bali-adventure-location-guide',
+    title: 'All New Bali Adventure: ATV Arena Location, Directions & What to Expect (2026)',
+    excerpt: 'Where is the Bali ATV arena near Ubud? All Sekar Bali Activity quad bike rides run at All New Bali Adventure in Pejeng — directions, pickup options, and what happens on arrival.',
+    publishedAt: '2026-09-02',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**Where is the Bali ATV arena near Ubud?** All ATV rides booked through Sekar Bali Activity take place at **All New Bali Adventure** — a dedicated jungle ATV arena in the Pejeng area, east of central Ubud, Gianyar, Bali.
+
+> **Key Takeaways**
+> - **Arena name:** All New Bali Adventure
+> - **Operator:** Sekar Bali Activity (Pejeng-based, near Ubud)
+> - **Single ATV:** IDR 650,000 · **Tandem ATV:** IDR 859,000
+> - **Included:** lunch, boot shoes, helmet, insurance, safety briefing
+> - **Pickup:** IDR 120,000 surcharge outside Ubud (cycling tour has free Ubud pickup only)
+
+---
+
+## What Is All New Bali Adventure?
+
+All New Bali Adventure is the jungle ATV arena where Sekar Bali Activity runs all quad bike tours. This is not a roadside rental — it is a purpose-built off-road track through jungle paths, muddy stretches, and river crossings with professional guides and on-site gear fitting.
+
+## What Happens When You Arrive
+
+1. **Meet your guide** at the All New Bali Adventure base
+2. **Gear fitting** — boot shoes and helmet sized for you
+3. **Safety briefing** — English-speaking guide explains controls (no experience needed)
+4. **ATV trail ride** — single or tandem through the jungle track
+5. **Optional Wos River tubing** — float the river after the ATV session
+6. **Lunch** — simple menu meal and change into dry clothes
+
+## How to Get There
+
+- **Hotel pickup:** Available for IDR 120,000 (outside Ubud). Book via [Bali ATV Adventure](/tours/bali-atv-adventure).
+- **Self-drive:** Pejeng Village area, near Ubud, Gianyar. Message WhatsApp with your hotel for exact pickup time.
+- **Free Ubud pickup:** Not included on ATV — only on the [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour).
+
+## Single vs Tandem at All New Bali Adventure
+
+| Option | Price | Best for |
+| --- | --- | --- |
+| Single ATV | IDR 650,000 (1 pax) | Solo riders wanting full control |
+| Tandem ATV | IDR 859,000 (2 pax) | Couples and friends sharing one quad |
+
+## Combine ATV with River Tubing
+
+After the track at All New Bali Adventure, many guests add [Wos River tubing](/tours/canyon-tubing) for a land-and-water day. Read the full combo guide: [ATV + River Tubing](/blog/atv-river-tubing-wos-river-bali).
+
+**Book ATV at All New Bali Adventure** — [Bali ATV Adventure from IDR 650,000](/tours/bali-atv-adventure).
+`
+  },
+  {
+    slug: 'ubud-hotel-pickup-bali-adventures-explained',
+    title: 'Ubud Hotel Pickup for Bali Adventures: Free vs Surcharge Explained (2026)',
+    excerpt: 'Which Sekar Bali Activity tours include free Ubud pickup? Only the cycling tour. ATV, rafting, and tubing add IDR 120,000 outside Ubud — full pickup policy explained.',
+    publishedAt: '2026-09-02',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/cycling.jpg',
+    content: `
+**Which Bali adventure tour includes free Ubud hotel pickup?** Only the **Ubud Ricefield Cycling Tour** (IDR 450,000) includes free hotel pickup and drop-off within Ubud. ATV, whitewater rafting, and canyon tubing do not include free pickup — IDR 120,000 surcharge applies for locations outside Ubud.
+
+> **Key Takeaways**
+> - **Free Ubud pickup:** Ubud Ricefield Cycling Tour only
+> - **Surcharge:** IDR 120,000 for ATV, rafting, tubing pickup outside Ubud
+> - **Cycling outside Ubud:** IDR 120,000 surcharge (e.g. Seminyak, Canggu, Kuta)
+> - **Booking:** Set your hotel pin in the booking popup map
+
+---
+
+## Pickup Policy by Activity
+
+| Activity | Free Ubud Pickup | Outside Ubud |
+| --- | --- | --- |
+| Ubud Ricefield Cycling Tour | ✅ Yes | +IDR 120,000 |
+| Single / Tandem ATV | ❌ No | +IDR 120,000 |
+| Whitewater Rafting | ❌ No | +IDR 120,000 |
+| Canyon Tubing | ❌ No | +IDR 120,000 |
+
+## Why Cycling Includes Free Pickup
+
+The cycling tour is a full-day village experience starting from Pejeng. Pickup within Ubud is built into the IDR 450,000 price along with breakfast, lunch, and dinner. See the [cycling tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026).
+
+## How Pickup Works When You Book
+
+1. Tap **Book Now** on [sekarbaliactivity.com](/)
+2. Pin your hotel on the map in the booking popup
+3. The form shows **Within Ubud: Free Pickup** (cycling only) or the IDR 120,000 surcharge
+4. Send to WhatsApp — your price includes any pickup fee
+
+## ATV Pickup to All New Bali Adventure
+
+ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup for IDR 120,000 rather than self-driving. Details: [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide).
+
+**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure).
+`
+  },
+  {
+    slug: 'rafting-vs-tubing-vs-atv-near-ubud',
+    title: 'Rafting vs Tubing vs ATV Near Ubud: Which Bali Adventure Is Right for You? (2026)',
+    excerpt: 'Compare Bali whitewater rafting, Wos River canyon tubing, and ATV at All New Bali Adventure near Ubud — prices, intensity, duration, and best combos for 2026.',
+    publishedAt: '2026-09-02',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/hero-banner.jpg',
+    content: `
+**What is the best adventure near Ubud — ATV, rafting, or tubing?** It depends on your style: **ATV** (IDR 650,000+) for jungle mud and quad bikes at All New Bali Adventure; **rafting** (IDR 400,000) for Class II–III rapids; **canyon tubing** (IDR 359,000) for a gentle Wos River float. Sekar Bali Activity offers all three with WhatsApp booking.
+
+> **Key Takeaways**
+> - **Most adrenaline:** Single ATV at All New Bali Adventure
+> - **Most splash:** Whitewater rafting (Class II–III)
+> - **Most relaxed water:** Canyon tubing on the Wos River
+> - **Best value + meals:** Ubud Ricefield Cycling (IDR 450,000, 3 meals, free Ubud pickup)
+> - **Best combo:** ATV + Wos River tubing
+
+---
+
+## Side-by-Side Comparison
+
+| | ATV | Rafting | Canyon Tubing | Cycling |
+| --- | --- | --- | --- | --- |
+| **Price** | IDR 650K+ | IDR 400K | IDR 359K | IDR 450K |
+| **Intensity** | High | Medium–High | Low–Medium | Low |
+| **Duration** | 2–4 hrs | Half day | 2–3 hrs | Full day |
+| **Environment** | Jungle mud track | River rapids | River float | Rice terraces |
+| **Free Ubud pickup** | No | No | No | Yes |
+| **Tour page** | [ATV](/tours/bali-atv-adventure) | [Rafting](/tours/whitewater-rafting) | [Tubing](/tours/canyon-tubing) | [Cycling](/tours/ubud-ricefield-cycling-tour) |
+
+## Who Should Choose ATV?
+
+Choose [Bali ATV Adventure](/tours/bali-atv-adventure) if you want mud, motors, and jungle trails. Beginners welcome — full briefing at All New Bali Adventure. Couples often pick tandem (IDR 859,000 for 2 pax).
+
+## Who Should Choose Rafting?
+
+Choose [Whitewater Rafting](/tours/whitewater-rafting) if you want team paddling through rapids. Best for ages 7+ with basic swimming confidence. More intense than tubing.
+
+## Who Should Choose Canyon Tubing?
+
+Choose [Canyon Tubing](/tours/canyon-tubing) for a calm float through jungle canyon walls. Cheapest water activity and the natural partner for an [ATV + tubing combo](/blog/atv-river-tubing-wos-river-bali).
+
+## Who Should Choose Cycling?
+
+Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture over adrenaline — village paths, Balinese house visit, three meals, and the only tour with free Ubud pickup.
+
+## Best Combo Days
+
+1. **ATV + tubing** — morning quad bikes, afternoon river float
+2. **Rafting + cycling** — adrenaline AM, cultural PM (2-day or long day)
+3. **Full price comparison** — [Bali adventure packages 2026](/blog/bali-adventure-packages-prices-2026)
+
+**Ready to book?** Compare all tours on the [homepage](/#adventures) or tap **Details** in the booking popup to preview any itinerary.
+`
   }
 ]

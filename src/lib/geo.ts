@@ -66,7 +66,7 @@ export function buildLlmsDiscoverySchema() {
 
 /** Visible Q&A pairs as structured data (not FAQPage — commercial-safe QAPage-style blocks) */
 export function buildGeoQASchemas() {
-  return GEO_FAQ_FOR_LLM.slice(0, 3).map((item, index) => ({
+  return GEO_FAQ_FOR_LLM.slice(0, 8).map((item, index) => ({
     '@context': 'https://schema.org',
     '@type': 'Question',
     '@id': `${SITE_URL}/#geo-qa-${index + 1}`,

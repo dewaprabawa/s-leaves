@@ -1,4 +1,9 @@
-import { CHILD_PRICE_IDR, getListPrice, type ActivityId } from "@/lib/pricing"
+import {
+  CHILD_PRICE_IDR,
+  getListPrice,
+  getPromoListPrice,
+  type ActivityId,
+} from "@/lib/pricing"
 
 export type AdventureCatalogItem = {
   id: ActivityId
@@ -109,6 +114,11 @@ export function getAdventureById(id: string): AdventureCatalogItem | undefined {
 
 export function getAdventureListPrice(id: ActivityId): number {
   return getListPrice(id)
+}
+
+/** Best group tier (3+) unit price for promo display */
+export function getAdventurePromoPrice(id: ActivityId): number {
+  return getPromoListPrice(id)
 }
 
 export function getAdventureChildPrice(id: ActivityId): number | null {

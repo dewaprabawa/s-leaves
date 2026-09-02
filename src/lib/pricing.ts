@@ -202,6 +202,22 @@ export function getListPrice(activityId: string): number {
   return getUnitPrice(activityId, 1)
 }
 
+/** Best group tier unit price (3+) for promo listings */
+export function getPromoListPrice(activityId: string): number {
+  return getUnitPrice(activityId, 3)
+}
+
+/** Standard-rate subtotal at tier 0 for the same units as a quote */
+export function getCompareAtSubtotal(quote: ActivityQuote): number {
+  const standardUnit = getUnitPrice(quote.activityId, 1)
+  return quote.units * standardUnit
+}
+
+/** Whether a quote qualifies for tier promo display */
+export function hasTierPromo(quote: ActivityQuote): boolean {
+  return quote.tierLabel !== 'Standard rate'
+}
+
 export interface PricingCalculationResult {
   baseAdultPrice: number
   adultTotal: number

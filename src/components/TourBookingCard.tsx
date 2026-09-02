@@ -4,6 +4,8 @@ import { useState } from "react"
 import { ArrowRight, Clock, ExternalLink } from "lucide-react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
+import PromoPrice from "@/components/PromoPrice"
+import { getListPrice, getPromoListPrice } from "@/lib/pricing"
 import { formatIdr } from "@/lib/whatsapp"
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
@@ -17,6 +19,24 @@ export type TourBookingCardProps = {
   childPrice?: number
   getYourGuideUrl?: string
   activityOptions?: { name: string; priceDiff: number; description?: string }[]
+}
+
+const SLUG_TO_ACTIVITY_ID: Record<string, string> = {
+  "bali-atv-adventure": "single-atv",
+  "whitewater-rafting": "rafting",
+  "canyon-tubing": "canyon-tubing",
+  "ubud-ricefield-cycling-tour": "cycling",
+}
+
+function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
+  const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
+  if (!activityId) {
+    return { promoPrice: fallbackBase, standardPrice: fallbackBase }
+  }
+  return {
+    promoPrice: getPromoListPrice(activityId),
+    standardPrice: getListPrice(activityId),
+  }
 }
 
 const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
@@ -62,6 +82,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const [open, setOpen] = useState(false)
   const configs = buildTourConfigs(props)
   const primary = configs[0]
+  const { promoPrice, standardPrice } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
 
   return (
     <>
@@ -79,9 +100,13 @@ export default function TourBookingCard(props: TourBookingCardProps) {
 
         <div>
           <p className="text-sm text-brand-green-light font-medium mb-1">From</p>
-          <p className="text-3xl font-display font-bold text-brand-green">
-            {formatIdr(props.basePrice)}
-          </p>
+          <PromoPrice
+            price={promoPrice}
+            originalPrice={standardPrice}
+            variant="card"
+            from
+            tierLabel="3+ group rate — book more, save more"
+          />
           {props.childPrice ? (
             <p className="text-sm text-brand-green-light mt-1">
               Child from {formatIdr(props.childPrice)}

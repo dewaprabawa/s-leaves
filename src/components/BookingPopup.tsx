@@ -11,10 +11,13 @@ import {
   DROP_SAME_HOTEL_FEE_IDR,
   OUT_OF_UBUD_EXTRA_IDR,
   PICKUP_FEE_IDR,
+  getCompareAtSubtotal,
+  hasTierPromo,
   quoteActivity,
   quotePickup,
 } from '@/lib/pricing';
 import BookingTourDetailPanel from '@/components/BookingTourDetailPanel';
+import PromoPrice from '@/components/PromoPrice';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -140,6 +143,9 @@ export function BookingPopup({
     (activityQuote?.activitySubtotal ?? 0) + (activityQuote?.childSubtotal ?? 0);
   const pickupFee = pickupQuote.total;
   const totalCost = activityTotal + pickupFee;
+  const compareAtActivityTotal = activityQuote ? getCompareAtSubtotal(activityQuote) : 0;
+  const compareAtTotal = compareAtActivityTotal + (activityQuote?.childSubtotal ?? 0) + pickupFee;
+  const tierPromoActive = activityQuote ? hasTierPromo(activityQuote) : false;
   const nameOk = guestName.trim().length >= 2;
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
   const locationOk = wantsPickup
@@ -555,7 +561,14 @@ export function BookingPopup({
             {activityQuote && (
               <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
                 <span>{activityQuote.tierLabel} · {formatIdr(activityQuote.unitPrice)} × {activityQuote.units} {activityQuote.unitLabel}</span>
-                <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
+                {tierPromoActive ? (
+                  <div className="text-right">
+                    <span className="block text-xs line-through opacity-70">{formatIdr(compareAtActivityTotal)}</span>
+                    <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
+                  </div>
+                ) : (
+                  <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
+                )}
               </div>
             )}
             {activityQuote && activityQuote.childSubtotal > 0 && (
@@ -572,7 +585,16 @@ export function BookingPopup({
             )}
             <div className="flex justify-between items-end mb-5">
               <span className="text-brand-green-light font-bold">Total Estimate</span>
-              <span className="text-3xl font-bold text-brand-green">{formatIdr(totalCost)}</span>
+              {tierPromoActive ? (
+                <PromoPrice
+                  price={totalCost}
+                  originalPrice={compareAtTotal}
+                  variant="total"
+                  tierLabel={activityQuote?.tierLabel}
+                />
+              ) : (
+                <span className="text-3xl font-bold text-brand-green">{formatIdr(totalCost)}</span>
+              )}
             </div>
             
             <button 

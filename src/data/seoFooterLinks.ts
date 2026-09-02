@@ -10,19 +10,32 @@ export type SeoFooterLink = {
 export const SEO_FOOTER_HEADING = "Our Bali Adventures Near Ubud"
 
 export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
+  // ATV / quad bike (competitor head terms + our arena differentiators)
   { label: "Bali ATV Tour Ubud", href: "/tours/bali-atv-adventure" },
+  { label: "ATV Ride Ubud", href: "/tours/bali-atv-adventure" },
+  { label: "Bali Quad Bike Tour", href: "/tours/bali-atv-adventure" },
   { label: "Private ATV Jungle Ride", href: "/book?activity=single-atv" },
+  { label: "Beginner ATV Ubud", href: "/blog/bali-atv-tour-ubud-guide" },
   { label: "Tandem ATV Bali", href: "/book?activity=tandem-atv" },
   { label: "Best ATV Near Ubud", href: "/blog/bali-atv-tour-ubud-guide" },
+  { label: "ATV Mud Track Ubud", href: "/tours/bali-atv-adventure" },
   { label: "ATV + River Tubing Combo", href: "/blog/atv-river-tubing-wos-river-bali" },
+  { label: "ATV Rafting Combo Bali", href: "/blog/rafting-vs-tubing-vs-atv-near-ubud" },
   { label: "All New Bali Adventure Arena", href: "/blog/bali-atv-all-new-bali-adventure-location-guide" },
+  // Rafting / tubing
   { label: "Whitewater Rafting Bali", href: "/tours/whitewater-rafting" },
   { label: "Rafting Near Ubud", href: "/blog/bali-whitewater-rafting-near-ubud-guide" },
   { label: "Canyon Tubing Bali", href: "/tours/canyon-tubing" },
   { label: "Wos River Tubing", href: "/blog/bali-canyon-tubing-guide-ubud" },
+  // Cycling (rice paddy / countryside / Pejeng — competitor mid-tail)
   { label: "Ubud Ricefield Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
+  { label: "Rice Paddy Cycling Ubud", href: "/tours/ubud-ricefield-cycling-tour" },
+  { label: "Ubud Countryside Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
   { label: "Bali Cycling Tour", href: "/book?activity=cycling" },
   { label: "Village Cycling Pejeng", href: "/blog/ubud-ricefield-cycling-tour-guide-2026" },
+  { label: "Pejeng vs Tegallalang Cycling", href: "/blog/pejeng-rice-terrace-cycling-vs-tegallalang" },
+  { label: "Cycling Tour with Lunch Ubud", href: "/tours/ubud-ricefield-cycling-tour" },
+  // Booking / packages
   { label: "Book Bali Adventures", href: "/book" },
   { label: "Bali Adventure Packages 2026", href: "/blog/bali-adventure-packages-prices-2026" },
   { label: "Compare Rafting vs ATV vs Tubing", href: "/blog/rafting-vs-tubing-vs-atv-near-ubud" },

@@ -57,7 +57,7 @@ export interface Tour {
 export const TOURS: Tour[] = [
   {
     id: "bali-atv-adventure",
-    title: "Bali ATV Adventure & River Tubing",
+    title: "Bali ATV Quad Bike Adventure & River Tubing",
     slug: "bali-atv-adventure",
     category: "Adventure",
     duration: "2–4 Hours",
@@ -78,19 +78,19 @@ export const TOURS: Tour[] = [
       },
     ],
     shortDescription:
-      "Private Bali ATV tour at the All New Bali Adventure arena — quad bike rides through jungle trails, beginner friendly, all-inclusive with lunch, helmet, and insurance. Add Wos River tubing for the best ATV combo near Ubud.",
-    fullDescription: `**Looking for New and Fresh Activities in Bali?**
+      "Private ATV ride Ubud at All New Bali Adventure — beginner-friendly Bali quad bike tour through jungle mud tracks, river crossings, and scenic trails. All-inclusive: lunch, helmet, boot shoes & insurance. Add Wos River tubing or rafting for the best ATV combo near Ubud. From IDR 600K.",
+    fullDescription: `**Looking for a Bali Quad Bike / ATV Ride Near Ubud?**
 
-If you want an adrenaline-packed day beyond the usual tourist trail, our Bali ATV Adventure delivers a complete quad bike experience through jungle paths, muddy tracks, and river crossings. Every ride is designed for sensation, excitement, and joy — whether you go solo or share a tandem ATV with a partner.
+If you want an adrenaline-packed day beyond the usual tourist trail, our Bali ATV Quad Bike Adventure delivers a complete private ATV ride through jungle mud tracks, muddy trails, and river crossings. Every ride is designed for sensation, excitement, and joy — whether you go solo (single ATV) or share a tandem ATV with a partner. Beginner-friendly with a full safety briefing.
 
 ### ATV Arena Location: All New Bali Adventure
 All ATV rides take place at **All New Bali Adventure** — our dedicated jungle ATV arena near Ubud. This is where you will meet your guide, get fitted with boot shoes and a helmet, and start your safety briefing before hitting the track.
 
 ### Complete Bali Quad Bike (ATV) Trips
-Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing at All New Bali Adventure, you hit the track for an unforgettable ride through Bali's green countryside.
+Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing at All New Bali Adventure, you hit the track for an unforgettable ride through Bali's green countryside — lunch, helmet, boot shoes, and insurance included.
 
-### Combine with River Tubing on the Wos River
-Want even more adventure? Pair your ATV ride with river tubing on the Wos River. After racing the ATV track, cool down as you float and explore the river on a tube — a favourite combo for guests who want a full day of thrills on land and water.
+### Combine with River Tubing or Rafting
+Want even more adventure? Pair your ATV ride with river tubing on the Wos River, or ask about an ATV + rafting combo. After racing the ATV mud track, cool down as you float the river or paddle whitewater — favourite combos for guests who want a full day of thrills on land and water.
 
 Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing combo for your preferred date.`,
     highlights: [
@@ -402,7 +402,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
   },
   {
     id: "ubud-ricefield-cycling-tour",
-    title: "Ubud Ricefield Cycling Tour",
+    title: "Ubud Ricefield & Village Cycling Tour",
     slug: "ubud-ricefield-cycling-tour",
     category: "Activity",
     duration: "Full Day",
@@ -442,10 +442,10 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Relaxing Ubud ricefield cycling tour through green paddies and quiet village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
-    fullDescription: `**Ubud Ricefield Cycling Tour**
+    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and free breakfast, lunch & dinner. Small-group village bike tour from IDR 450K with free Ubud hotel pickup.",
+    fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
-Discover the real Bali on two wheels with our Ubud Ricefield Cycling Tour. This is a relaxing bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
+Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
 
 We pick you up from your hotel in the Ubud area and transport you to the starting point, where you are fitted with a bicycle, helmet, and briefed by your English-speaking guide before setting off into the countryside.
 

@@ -35,6 +35,8 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: "Village Cycling Pejeng", href: "/blog/ubud-ricefield-cycling-tour-guide-2026" },
   { label: "Pejeng vs Tegallalang Cycling", href: "/blog/pejeng-rice-terrace-cycling-vs-tegallalang" },
   { label: "Cycling Tour with Lunch Ubud", href: "/tours/ubud-ricefield-cycling-tour" },
+  { label: "Cycling & Cooking Class Ubud", href: "/blog/cycling-cooking-class-ubud-full-day-itinerary" },
+  { label: "Rice Paddy Cycling + Cooking", href: "/blog/cycling-cooking-class-ubud-full-day-itinerary" },
   // Booking / packages
   { label: "Book Bali Adventures", href: "/book" },
   { label: "Bali Adventure Packages 2026", href: "/blog/bali-adventure-packages-prices-2026" },
@@ -43,6 +45,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: "How to Book on WhatsApp", href: "/blog/how-to-book-bali-adventure-whatsapp" },
   { label: "Airport Transfer DPS to Ubud", href: "/transfers" },
   { label: "Balinese Cooking Class", href: "/tours/balinese-cooking-class" },
+  { label: "Hands-on Cooking Class Pejeng", href: "/blog/inside-balinese-cooking-class-pejeng" },
   { label: "Luwak Coffee Plantation", href: "/tours/luwak-coffee-plantation" },
   { label: "Bali Dirt Bike Adventure", href: "/tours/bali-dirt-bike-adventure" },
   { label: "Adventure Pricing", href: "/#pricing" },

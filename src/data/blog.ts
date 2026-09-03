@@ -12,16 +12,17 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'bali-atv-tour-ubud-guide',
     title: 'Bali ATV Tour Near Ubud: Trails, Prices, and What Is Included (2026)',
-    excerpt: 'A practical guide to booking a Bali ATV / quad bike adventure near Ubud and Pejeng — prices from IDR 650,000, what to bring, lunch and gear inclusions, and how to add Wos River tubing.',
+    excerpt: 'A practical guide to booking a Bali ATV / quad bike adventure near Ubud and Pejeng — prices from IDR 600,000, what to bring, lunch and gear inclusions, and how to add Wos River tubing.',
     publishedAt: '2026-08-30',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**What is the best way to book a Bali ATV tour near Ubud?** Book a beginner-friendly Single or Tandem ATV ride based in Pejeng with gear, lunch, and insurance included. Sekar Bali Activity offers Single ATV from **IDR 650,000** and Tandem ATV from **IDR 859,000**, with optional **Wos River tubing** after the track.
+**What is the best way to book a Bali ATV tour near Ubud?** Book a beginner-friendly Single or Tandem ATV ride based in Pejeng with gear, lunch, and insurance included. Sekar Bali Activity offers Single ATV from **IDR 600,000** (group tiers lower) and Tandem ATV from **IDR 859,000**, with optional **Wos River tubing** after the track.
 
 > **Key Takeaways**
-> - Single ATV from IDR 650,000 (1 pax); Tandem from IDR 859,000 (2 pax)
-> - Included: hotel pickup, guided ATV ride, boot shoes, helmet, lunch, insurance, safety briefing
+> - Single ATV from IDR 600,000 (1 pax); tier rates for 2+ / 3+; Tandem from IDR 859,000 (2 pax)
+> - Included: guided ATV ride, boot shoes, helmet, lunch, insurance, safety briefing
+> - Hotel pickup optional (IDR 50,000 one-way / IDR 100,000 round trip) or meet at All New Bali Adventure
 > - Bring: changing clothes / dry cloth, sunscreen, cash, waterproof phone case (optional)
 > - Optional combo: race the ATV track, then tube the Wos River
 > - Book via WhatsApp with your name, age, adult/child, location, activity, and price
@@ -30,17 +31,17 @@ export const BLOG_POSTS: BlogPost[] = [
 
 ## Why Pejeng / Ubud for ATV?
 
-Pejeng sits just east of central Ubud, so hotel pickup is fast and the trails reach jungle paths, muddy tracks, and river crossings without a long transfer. Riders get a full safety briefing — no prior ATV experience is required.
+Pejeng sits just east of central Ubud, so transfer times are short and the trails reach jungle paths, muddy tracks, and river crossings without a long haul. Riders get a full safety briefing — no prior ATV experience is required.
 
 ## What You Get on the ATV Package
 
 | Include | Details |
 | --- | --- |
-| Hotel pickup & drop-off | Free within Ubud and nearby areas |
 | Guided ATV trail ride | Single or tandem through jungle, mud, and river crossings |
-| Boot shoes, helmet & insurance | Fitted at base before the ride |
+| Boot shoes, helmet & insurance | Fitted at base before the ride — full safety equipment |
 | Simple menu lunch | Served after the adventure |
 | Safety briefing & expert guide | English-speaking — no experience needed |
+| Optional hotel pickup | IDR 50,000 pickup + IDR 50,000 return to same hotel |
 
 ## What To Bring
 
@@ -620,7 +621,9 @@ Every guest receives a digital recipe book to take home so you can recreate auth
 - [Balinese Cooking Class Ubud Guide](https://tumangbaliclass.com/balinese-cooking-class-ubud)
 - [Best Cooking Classes in Bali Overview](https://tumangbaliclass.com/best-cooking-classes-bali)
 
-Ready to cook with us? [Book Your Balinese Cooking Class](/#adventures) now or send us a message on [WhatsApp](https://wa.me/6281775723663)!
+Want rice paddies *and* the kitchen in one day? See our [Cycling & Cooking Class Ubud full-day itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+
+Ready to cook with us? [Book Your Balinese Cooking Class](/tours/balinese-cooking-class) now or send us a message on [WhatsApp](https://wa.me/6281775723663)!
 `
   },
   {
@@ -871,6 +874,8 @@ Families with children, couples wanting a slower Bali day, and anyone who prefer
 ## How to Book
 
 Tap **Book Now** on the homepage, select **Ubud Ricefield Cycling Tour**, and use the **Details** button in the booking popup to read the full itinerary without leaving the form. Or open the [full tour page](/tours/ubud-ricefield-cycling-tour) and message us on WhatsApp with your date and hotel.
+
+Want a full cultural day? Pair this ride with an evening [Balinese cooking class](/tours/balinese-cooking-class) — see the [Cycling & Cooking Class Ubud itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
 
 **Ready to ride?** [Book the Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) — from IDR 450,000 with meals and free Ubud pickup.
 `
@@ -1143,14 +1148,14 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What is the best adventure near Ubud — ATV, rafting, or tubing?** It depends on your style: **ATV** (IDR 650,000+) for jungle mud and quad bikes at All New Bali Adventure; **rafting** (IDR 400,000) for Class II–III rapids; **canyon tubing** (IDR 359,000) for a gentle Wos River float. Sekar Bali Activity offers all three with WhatsApp booking.
+**What is the best adventure near Ubud — ATV, rafting, or tubing?** It depends on your style: **ATV** (from IDR 600,000) for jungle mud and quad bikes at All New Bali Adventure; **rafting** (IDR 400,000) for Class II–III rapids; **canyon tubing** (IDR 359,000) for a gentle Wos River float. Sekar Bali Activity offers all three with WhatsApp booking.
 
 > **Key Takeaways**
 > - **Most adrenaline:** Single ATV at All New Bali Adventure
 > - **Most splash:** Whitewater rafting (Class II–III)
 > - **Most relaxed water:** Canyon tubing on the Wos River
 > - **Best value + meals:** Ubud Ricefield Cycling (IDR 450,000, 3 meals, free Ubud pickup)
-> - **Best combo:** ATV + Wos River tubing
+> - **Best combos:** ATV + Wos River tubing · [Cycling + cooking class Ubud](/blog/cycling-cooking-class-ubud-full-day-itinerary)
 
 ---
 
@@ -1158,7 +1163,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 
 | | ATV | Rafting | Canyon Tubing | Cycling |
 | --- | --- | --- | --- | --- |
-| **Price** | IDR 650K+ | IDR 400K | IDR 359K | IDR 450K |
+| **Price** | IDR 600K+ | IDR 400K | IDR 359K | IDR 450K |
 | **Intensity** | High | Medium–High | Low–Medium | Low |
 | **Duration** | 2–4 hrs | Half day | 2–3 hrs | Full day |
 | **Environment** | Jungle mud track | River rapids | River float | Rice terraces |
@@ -1184,10 +1189,102 @@ Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture 
 ## Best Combo Days
 
 1. **ATV + tubing** — morning quad bikes, afternoon river float
-2. **Rafting + cycling** — adrenaline AM, cultural PM (2-day or long day)
-3. **Full price comparison** — [Bali adventure packages 2026](/blog/bali-adventure-packages-prices-2026)
+2. **Cycling + cooking class** — rice paddies by day, Balinese kitchen by night ([full itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary))
+3. **Rafting + cycling** — adrenaline AM, cultural PM (2-day or long day)
+4. **Full price comparison** — [Bali adventure packages 2026](/blog/bali-adventure-packages-prices-2026)
 
 **Ready to book?** Compare all tours on the [homepage](/#adventures) or tap **Details** in the booking popup to preview any itinerary.
 `
-  }
+  },
+  {
+    slug: 'cycling-cooking-class-ubud-full-day-itinerary',
+    title: 'Cycling & Cooking Class in Ubud: Full-Day Itinerary, Prices & How to Book (2026)',
+    excerpt:
+      'Plan a cycling and Balinese cooking class day in Ubud — Pejeng rice paddy bike tour (IDR 450,000) plus evening hands-on cooking class (IDR 400,000). Full itinerary, inclusions, and WhatsApp booking.',
+    publishedAt: '2026-09-03',
+    author: 'Sekar Bali Activity',
+    image: '/images/cycling/rice-field-bikes.jpg',
+    content: `
+**What is the best cycling and cooking class combo in Ubud?** Pair Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** (IDR 450,000 — free Ubud hotel pickup, breakfast, lunch & dinner) with a **Traditional Balinese Dinner Cooking Class** (IDR 400,000 — 5 dishes, Base Genep, recipe book) for a full cultural day in Pejeng near Ubud.
+
+> **Key Takeaways**
+> - Competitor-style combo day: **rice paddy cycling** first, **hands-on Balinese cooking class** in the evening
+> - Cycling: **IDR 450,000** / person · free Ubud pickup · bike, helmet, guide, 3 meals, insurance
+> - Cooking class: **IDR 400,000** / person · 17:30–20:30 · cook 5 authentic dishes at your own station
+> - Route is **gentle Pejeng village / countryside cycling** — not a crowded Tegallalang photo stop
+> - Book both on WhatsApp in one message for the same date — no upfront payment to inquire
+
+---
+
+## Why Travelers Search “Cycling & Cooking Class Ubud”
+
+Operators like ubudcyclingtour.com and multi-day packages on ByFood and Bali Travel Life rank for **cycling cooking class Ubud** because guests want activity *and* culture in one day. Sekar Bali Activity delivers the same intent with two bookable experiences based in **Pejeng** — quieter Subak rice terraces by day, open-air kitchen by night — instead of mass-market tourist routes.
+
+## Full-Day Sample Itinerary
+
+| Time | What you do | Product |
+| --- | --- | --- |
+| Morning | Free hotel pickup (Ubud), bike fitting, safety briefing | [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
+| Mid-morning | Rice paddy / countryside cycling through Pejeng village paths | Cycling |
+| Midday | Rice harvesting (seasonal), Balinese house visit, wood carving stop | Cycling |
+| Afternoon | Continue village life sights; breakfast, lunch & dinner included on the cycling package | Cycling |
+| Hotel return | Drop-off at your Ubud hotel to rest and freshen up | Cycling |
+| 17:30–20:30 | Hands-on dinner cooking class: Base Genep, Sate Lilit, Lawar, Sambal Matah, Dadar Gulung | [Balinese Cooking Class](/tours/balinese-cooking-class) |
+
+Ask WhatsApp if you prefer a lighter cycling half-day before the dinner class — we can adjust timing around your hotel location.
+
+## What’s Included (Each Part)
+
+### Ricefield / countryside cycling (day)
+
+| Include | Details |
+| --- | --- |
+| Free Ubud hotel pickup & drop-off | Only on the cycling tour |
+| Bicycle, helmet & English-speaking guide | All fitness levels — mostly flat village paths |
+| Breakfast, lunch & dinner | Village restaurant meals included |
+| Cultural stops | Harvesting (seasonal), family house, carving studio |
+| Insurance | Included |
+
+### Balinese cooking class (evening)
+
+| Include | Details |
+| --- | --- |
+| All ingredients & cooking station | Mortar (*ulekan*), wok, utensils |
+| English-speaking culinary instructor | Spice intro + hands-on coaching |
+| 5 dishes you cook yourself | Then eat family-style |
+| Digital recipe book | Take home |
+
+Cooking-class transport is **not** included — most Ubud hotels are a short ride from the Pejeng kitchen after your cycling drop-off. Message us if you need help arranging the evening transfer.
+
+## Prices 2026 (Transparent IDR)
+
+| Experience | From price | Notes |
+| --- | --- | --- |
+| Ubud Ricefield Cycling Tour | **IDR 450,000** / person | Tier rates for 2+ and 3+ groups |
+| Traditional Balinese Dinner Cooking Class | **IDR 400,000** / person | Child rate available |
+| Same-day combo (both) | Ask via WhatsApp | We confirm availability for one date |
+
+Competitor combo packages online often list ~USD 90–130. Our transparent IDR rates let you book **direct via WhatsApp** without aggregator markups.
+
+## Who This Day Is For
+
+- Couples and small groups who want **culture over adrenaline**
+- Travelers comparing **Pejeng village cycling** vs Tegallalang crowds
+- Food lovers who want a real **Balinese cooking class Ubud** (not a demo-only kitchen)
+- Guests who already booked ATV/rafting and want a slower second day — see also [Pejeng vs Tegallalang](/blog/pejeng-rice-terrace-cycling-vs-tegallalang) and [Inside our cooking class](/blog/inside-balinese-cooking-class-pejeng)
+
+Prefer mud and motors instead? Start with [Bali ATV for Ubud](/blog/bali-atv-tour-ubud-guide) or the [ATV + Wos River tubing combo](/blog/atv-river-tubing-wos-river-bali).
+
+## How to Book the Combo on WhatsApp
+
+1. Tap **Book** on [sekarbaliactivity.com](/) or message +62 817 7572 3663  
+2. Send: **name, ages, adult/child counts, hotel, date, “cycling + cooking class”**  
+3. We confirm timing for ricefield cycling pickup and the 17:30 dinner class  
+4. No upfront payment is required to inquire  
+
+Full cycling details: [Ubud Ricefield Cycling Tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026). Full kitchen walkthrough: [Inside our Pejeng cooking class](/blog/inside-balinese-cooking-class-pejeng).
+
+**Ready for a full cultural day?** Book [ricefield cycling](/tours/ubud-ricefield-cycling-tour) and the [Balinese cooking class](/tours/balinese-cooking-class) together via WhatsApp.
+`
+  },
 ]

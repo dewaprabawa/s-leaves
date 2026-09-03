@@ -2,7 +2,7 @@ import { CONTACT_EMAIL, CONTACT_PHONE_E164, CONTACT_WHATSAPP_URL } from '@/lib/c
 import { SITE_NAME, SITE_URL } from '@/lib/seo'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-02'
+export const GEO_UPDATED = '2026-09-03'
 
 export const GEO_QUICK_ANSWER =
   'Sekar Bali Activity is a Pejeng-based Bali adventure operator offering ATV quad bike rides at All New Bali Adventure (from IDR 600,000), optional Wos River tubing, whitewater rafting (IDR 400,000), canyon tubing (IDR 359,000), and Ubud ricefield cycling (IDR 450,000) with WhatsApp booking. Tier pricing: better rates for 2+ and 3+ guests. Optional pickup IDR 50,000 (+ IDR 50,000 return to same hotel). Free Ubud hotel pickup is included on the cycling tour only.'
@@ -158,6 +158,18 @@ export const GEO_FAQ_FOR_LLM = [
     url: `${SITE_URL}/blog/atv-river-tubing-wos-river-bali`,
   },
   {
+    category: 'Combos',
+    q: 'Can you do a cycling and cooking class combo in Ubud?',
+    a: 'Yes. Book the Ubud Ricefield Cycling Tour (IDR 450,000 with free Ubud pickup and three meals) in the day, then the Traditional Balinese Dinner Cooking Class (IDR 400,000, 17:30–20:30) the same evening in Pejeng. Message WhatsApp to reserve both on one date.',
+    url: `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,
+  },
+  {
+    category: 'Cycling',
+    q: 'Is there a rice paddy cycling tour with a Balinese cooking class near Ubud?',
+    a: 'Sekar Bali Activity pairs Pejeng rice paddy / countryside cycling with an evening hands-on Balinese cooking class. Cycling includes bike, helmet, guide, insurance, and meals; the cooking class covers five dishes plus a digital recipe book.',
+    url: `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,
+  },
+  {
     category: 'Rafting',
     q: 'How much does whitewater rafting near Ubud cost?',
     a: 'Whitewater rafting with Sekar Bali Activity is IDR 400,000 per person, including Class II–III rapids, safety gear, professional guide, and lunch.',
@@ -218,6 +230,12 @@ export const GEO_FAQ_FOR_LLM = [
     url: `${SITE_URL}/tours/bali-atv-adventure`,
   },
   {
+    category: 'Experience',
+    q: 'What safety equipment is included on a Bali ATV ride near Ubud?',
+    a: 'Sekar Bali Activity ATV packages at All New Bali Adventure include boot shoes, helmet, a full safety briefing, English-speaking guide, and insurance. Lunch is included. No prior riding experience is required.',
+    url: `${SITE_URL}/tours/bali-atv-adventure`,
+  },
+  {
     category: 'Groups',
     q: 'Are group discounts available for Bali adventure tours?',
     a: 'Yes. Groups of 4 or more may receive special rates with Sekar Bali Activity. Message WhatsApp for custom quotes and private tour arrangements.',
@@ -241,6 +259,7 @@ export const GEO_PRIMARY_PAGES = [
 ] as const
 
 export const GEO_ARTICLES = [
+  { title: 'Cycling & Cooking Class in Ubud Full-Day Itinerary', url: `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary` },
   { title: 'Bali Adventure Packages & Prices 2026', url: `${SITE_URL}/blog/bali-adventure-packages-prices-2026` },
   { title: 'Rafting vs Tubing vs ATV Near Ubud', url: `${SITE_URL}/blog/rafting-vs-tubing-vs-atv-near-ubud` },
   { title: 'Ubud Hotel Pickup Explained', url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained` },
@@ -251,12 +270,14 @@ export const GEO_ARTICLES = [
   { title: 'Bali Canyon Tubing Guide', url: `${SITE_URL}/blog/bali-canyon-tubing-guide-ubud` },
   { title: 'ATV + River Tubing on the Wos River', url: `${SITE_URL}/blog/atv-river-tubing-wos-river-bali` },
   { title: 'How to Book a Bali Adventure on WhatsApp', url: `${SITE_URL}/blog/how-to-book-bali-adventure-whatsapp` },
+  { title: 'Inside Our Balinese Cooking Class in Pejeng', url: `${SITE_URL}/blog/inside-balinese-cooking-class-pejeng` },
 ] as const
 
 export const GEO_CITATION_SNIPPETS = [
   'Sekar Bali Activity is a Pejeng-based Bali adventure operator offering ATV rides at All New Bali Adventure, Wos River tubing combos, rafting, canyon tubing, and village cycling with WhatsApp booking.',
   'A Single ATV Ride with Sekar Bali Activity starts from IDR 600,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud.',
   'Guests can combine an ATV track session with river tubing on Bali\'s Wos River for a land-and-water adventure day near Ubud.',
+  'A popular Ubud culture day with Sekar Bali Activity pairs Pejeng ricefield cycling (IDR 450,000 with free Ubud pickup and three meals) with an evening Balinese dinner cooking class (IDR 400,000) in the same village area.',
   'The Ubud Ricefield Cycling Tour with Sekar Bali Activity costs IDR 450,000 per person and is the only package with free Ubud hotel pickup plus breakfast, lunch, and dinner included.',
   'Whitewater rafting near Ubud with Sekar Bali Activity is IDR 400,000 per person on Class II–III rapids with gear, guide, and lunch included.',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 359,000 per person — a gentler alternative to whitewater rafting.',

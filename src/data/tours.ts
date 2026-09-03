@@ -442,7 +442,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and free breakfast, lunch & dinner. Small-group village bike tour from IDR 450K with free Ubud hotel pickup.",
+    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and free breakfast, lunch & dinner. Small-group village bike tour from IDR 450K with free Ubud hotel pickup. Pair with an evening Balinese cooking class for a full cultural day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
@@ -707,7 +707,7 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder
-    shortDescription: "Immerse yourself in the flavors of Indonesia with a hands-on cooking class in a beautiful traditional kitchen.",
+    shortDescription: "Hands-on Balinese cooking class Ubud / Pejeng — Base Genep spice paste, 5 authentic dishes, evening dinner class from IDR 400K. Ideal after rice paddy cycling for a cycling & cooking class combo day.",
     fullDescription: `**Master the Art of Balinese Cuisine in a Traditional Setting**
 
 Balinese food is famous for its explosive flavors, aromatic spices, and vibrant colors. But eating it in a restaurant is only half the experience. To truly understand the culture, you have to learn how to cook it. Our Traditional Balinese Dinner Cooking Class offers you an immersive, hands-on culinary journey that you will remember long after you return home.

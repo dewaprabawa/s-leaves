@@ -16,6 +16,7 @@ import {
   SITE_URL,
   buildAdventureItemListSchema,
   buildOrganizationSchema,
+  buildSiteNavigationSchema,
   buildWebsiteSchema,
   type AdventureOffer,
 } from "@/lib/seo"
@@ -163,6 +164,7 @@ const adventureOffers: AdventureOffer[] = [
 const schemaData = [
   buildOrganizationSchema(),
   buildWebsiteSchema(),
+  buildSiteNavigationSchema(),
   buildGeoWebPageSchema(),
   buildLlmsDiscoverySchema(),
   ...buildGeoQASchemas(),
@@ -208,6 +210,8 @@ const footerLinks = {
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Transfers", href: "/transfers" },
+    { label: "Cancellation Policy", href: "/cancellation-policy" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
   ],
 }
 
@@ -301,7 +305,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
             <div className="border-t border-sand/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-xs opacity-50">© {new Date().getFullYear()} {siteName}. All rights reserved.</p>
-              <p className="text-xs opacity-40">Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors underline underline-offset-4">Tumang Bali Class</a></p>
+              <nav aria-label="Legal" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs opacity-50">
+                <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Privacy Policy</Link>
+                <Link href="/cancellation-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Cancellation Policy</Link>
+                <span className="opacity-60">Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity underline underline-offset-4">Tumang Bali Class</a></span>
+              </nav>
             </div>
           </div>
         </footer>

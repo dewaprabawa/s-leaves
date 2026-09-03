@@ -39,6 +39,16 @@ export const GEO_POLICIES = [
     url: `${SITE_URL}/blog/how-to-book-bali-adventure-whatsapp`,
   },
   {
+    topic: 'Cancellation',
+    rule: 'Free cancellation up to 24 hours before the activity start time. Cancel or reschedule via WhatsApp or email. Weather/safety cancellations by the operator are fully refundable or free to reschedule. No-shows are non-refundable.',
+    url: `${SITE_URL}/cancellation-policy`,
+  },
+  {
+    topic: 'Privacy',
+    rule: 'Booking details (name, contact, hotel, guest counts) are used only to fulfill tours and support. We do not sell personal data. Full terms on the privacy policy page.',
+    url: `${SITE_URL}/privacy-policy`,
+  },
+  {
     topic: 'Experience level',
     rule: 'No prior experience required for ATV, rafting, tubing, or cycling. Safety briefing and gear provided on every activity.',
     url: `${SITE_URL}/#faq`,
@@ -226,6 +236,8 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Blog / Travel Guides', url: `${SITE_URL}/blog`, desc: 'Citability-focused Bali adventure articles' },
   { title: 'Contact', url: `${SITE_URL}/contact`, desc: `WhatsApp ${CONTACT_PHONE_E164}` },
   { title: 'About', url: `${SITE_URL}/about`, desc: 'Local Pejeng team' },
+  { title: 'Cancellation Policy', url: `${SITE_URL}/cancellation-policy`, desc: 'Free cancellation up to 24 hours before start time' },
+  { title: 'Privacy Policy', url: `${SITE_URL}/privacy-policy`, desc: 'How we handle booking and contact data' },
 ] as const
 
 export const GEO_ARTICLES = [

@@ -304,9 +304,12 @@ export default function ToursListClient({ initialTours }: Props) {
 
                       {/* Flex Cancellation */}
                       {tour.hasFreeCancellation !== false && (
-                        <div className="text-[10px] font-bold text-brand-green flex items-center gap-1 mt-1 bg-brand-green/5 px-2 py-0.5 rounded-lg border border-brand-green/10 w-fit">
+                        <Link
+                          href="/cancellation-policy"
+                          className="text-[10px] font-bold text-brand-green flex items-center gap-1 mt-1 bg-brand-green/5 px-2 py-0.5 rounded-lg border border-brand-green/10 w-fit hover:bg-brand-green/10 transition-colors"
+                        >
                           <ShieldCheck className="w-3 h-3 text-brand-green" /> Free cancellation
-                        </div>
+                        </Link>
                       )}
                     </div>
 

@@ -92,6 +92,20 @@ export function buildOrganizationSchema() {
   }
 }
 
+/** Primary nav URLs that help Google understand site structure for sitelinks */
+export const SITE_NAV_LINKS = [
+  { name: 'Book Adventures', url: `${SITE_URL}/book` },
+  { name: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure` },
+  { name: 'Ubud Ricefield Cycling', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour` },
+  { name: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting` },
+  { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },
+  { name: 'About Us', url: `${SITE_URL}/about` },
+  { name: 'Contact', url: `${SITE_URL}/contact` },
+  { name: 'Blog', url: `${SITE_URL}/blog` },
+  { name: 'Cancellation Policy', url: `${SITE_URL}/cancellation-policy` },
+  { name: 'Privacy Policy', url: `${SITE_URL}/privacy-policy` },
+] as const
+
 export function buildWebsiteSchema() {
   return {
     '@context': 'https://schema.org',
@@ -102,7 +116,7 @@ export function buildWebsiteSchema() {
     description: DEFAULT_DESCRIPTION,
     publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: 'en-US',
-    dateModified: '2026-08-31',
+    dateModified: '2026-09-03',
     hasPart: [
       {
         '@type': 'WebPage',
@@ -117,6 +131,22 @@ export function buildWebsiteSchema() {
         encodingFormat: 'text/plain',
       },
     ],
+  }
+}
+
+/** SiteNavigationElement ItemList — clarifies important pages for crawlers / sitelinks */
+export function buildSiteNavigationSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': `${SITE_URL}/#sitenavigation`,
+    name: `${SITE_NAME} main navigation`,
+    itemListElement: SITE_NAV_LINKS.map((link, index) => ({
+      '@type': 'SiteNavigationElement',
+      position: index + 1,
+      name: link.name,
+      url: link.url,
+    })),
   }
 }
 

@@ -1,96 +1,59 @@
 # SEO Action Plan — sekarbaliactivity.com
 
-**Date:** 2026-09-01  
-**Overall priority:** Internal linking and commercial content → Technical polish → Performance verification
+**Date:** 2026-09-03  
+**Source:** SEOmator audit (88/100 on-page; Lighthouse Performance 44)  
+**Overall priority:** SERP metadata → content density/headings → images/LCP → E-E-A-T polish
 
 ---
 
-## Completed in This PR
+## Completed in This PR (SEOmator remediation)
 
-| Action | Impact | Status |
-|--------|--------|--------|
-| Booking popup **Details** button — view tour itinerary without leaving dialog | UX + conversion | ✅ Done |
-| 4 new sales articles with `/tours/*` internal links | Commercial SEO + internal links | ✅ Done |
-| Homepage travel guides → new commercial blog URLs | Hub linking | ✅ Done |
-| Updated cycling/ATV/tubing links in existing blog posts | Link equity to tour pages | ✅ Done |
-| `geoContent.ts` — tour pages + new articles in llms.txt | AI citation | ✅ Done |
-| Tour detail pages in sitemap | Indexability | ✅ Done (prior PR) |
-
----
-
-## Priority 1 — High Impact (Do Next)
-
-### 1. Cross-link orphan blog posts from related articles
-
-**Finding:** 18 blog posts have only 1 internal link (from `/blog` index).  
-**Fix:** Add a "Related guides" block at the bottom of each commercial article linking to 3–4 related posts. Start with culture posts (Pejeng history, Subak, spices) linking to the new cycling guide.
-
-**Effort:** Medium — template component on blog post page  
-**Confidence:** Confirmed
-
-### 2. Replace remaining `/#adventures` links in blog content
-
-**Finding:** Cooking class, Luwak coffee, and tour-package posts still anchor to homepage hash.  
-**Fix:** Map each CTA to the correct `/tours/[slug]` where a tour page exists; keep `/#adventures` only as a fallback hub link.
-
-**Effort:** Low — search/replace in `src/data/blog.ts`  
-**Confidence:** Confirmed
-
-### 3. Add footer "Popular Tours" links
-
-**Finding:** Tour pages discovered mainly via homepage cards and sitemap.  
-**Fix:** Add footer links: ATV, Rafting, Tubing, Cycling tour pages.
-
-**Effort:** Low — `layout.tsx` footer nav  
-**Confidence:** Likely
+| Action | Audit finding | Status |
+|--------|---------------|--------|
+| Shorten title to ≤60 chars | Title 76 chars | ✅ |
+| Shorten meta description to ≤160 chars | Description 361 chars / pixel width fail | ✅ |
+| Remove `max-snippet:-1` googleBot directive | False “snippet blocking” warn | ✅ |
+| Fix H1 spacing (`ATV & Village`) | Truncated H1 text | ✅ |
+| Footer section labels → `<p>` (not `h4`) | h2 → h4 hierarchy skip | ✅ |
+| Skip-to-content link | Accessibility warn | ✅ |
+| Trim footer keyword cloud (48 → 20 unique links) | Keyword stuffing + 115 links | ✅ |
+| Soften repeated ATV/Bali/Ubud/IDR copy | Keyword stuffing (4 terms >2%) | ✅ |
+| Homepage GEO FAQ subset (8 of 20) | DOM size + density + HTML weight | ✅ |
+| Descriptive GEO/comparison anchors | Non-descriptive “Read more” | ✅ |
+| Hero `fetchPriority="high"` + next/image for cards | LCP + missing dims + legacy formats | ✅ |
+| Eager-load first carousel images | Above-fold lazy-load warn | ✅ |
+| Drop duplicate homepage TouristTrip JSON-LD | HTML 211KB / text-to-HTML ratio | ✅ |
+| Booking Terms + Our Team footer links | E-E-A-T terms / expertise | ✅ |
+| Visible review trust line | Trust signals warn | ✅ |
+| `twitter:site` | Social polish | ✅ |
 
 ---
 
-## Priority 2 — Medium Impact (Within 2 Weeks)
+## Priority 1 — After Deploy (Verify)
 
-### 4. Add `twitter:site` metadata
-
-**Fix:** In `src/lib/seo.ts` or root layout metadata:
-```ts
-twitter: { site: '@sekarbaliactivity', card: 'summary_large_image', ... }
-```
-
-**Effort:** Low  
-**Confidence:** Confirmed
-
-### 5. Verify Core Web Vitals in Search Console
-
-**Fix:** Check LCP, INP, CLS for homepage and `/tours/*` in GSC → Experience → Core Web Vitals. Re-run PageSpeed with API key if available.
-
-**Effort:** Low (monitoring)  
-**Confidence:** Environment limitation during audit
-
-### 6. Blog index category grouping
-
-**Fix:** Group `/blog` into "Adventure Guides" vs "Culture & Food" with section headers and cross-links between categories.
-
-**Effort:** Medium  
-**Confidence:** Likely
+1. Re-run SEOmator / Lighthouse on production homepage.
+2. Confirm SERP title/description lengths in rich results preview.
+3. Confirm Googlebot meta no longer includes `max-snippet:-1`.
+4. Spot-check WebP/AVIF via Next image optimizer in Network tab.
 
 ---
 
-## Priority 3 — Ongoing Content
+## Priority 2 — Performance (Hosting / Build)
 
-### 7. Publish 2–4 articles per quarter targeting commercial queries
+| Item | Note |
+|------|------|
+| Text compression / Brotli | CDN/hosting config (not app HTML) |
+| HTTP/3 alt-svc | CDN/edge config |
+| Inline JS ~56KB | Client homepage — consider splitting booking popup |
+| DOM still large | Further reduce FAQ accordion overlap with GEO block if needed |
 
-Suggested next topics:
-- "Bali ATV for beginners — what to expect at All New Bali Adventure"
-- "Ubud pickup zones and surcharges explained (2026)"
-- "Best Bali adventure combo: ATV + tubing vs rafting + cycling"
+---
 
-Each article should link to 2+ tour pages and 1+ related blog post.
+## Priority 3 — Ongoing Content / E-E-A-T
 
-### 8. Add author/team snippet to blog posts
-
-**Fix:** Short bio + link to `/about` on each post for E-E-A-T signals.
-
-**Effort:** Low  
-**Confidence:** Likely
+1. Author bio snippet on blog posts linking to `/about`.
+2. Related guides block for orphan blog posts.
+3. Optional editorial/safety notes page if YMYL-adjacent auditors keep flagging (tour operator, not medical/finance).
 
 ---
 
@@ -98,29 +61,7 @@ Each article should link to 2+ tour pages and 1+ related blog post.
 
 | Item | Reason |
 |------|--------|
-| FAQPage JSON-LD | Restricted to government/healthcare authorities |
-| HowTo JSON-LD | Deprecated for rich results (Sept 2023) |
-| Location spam pages | Not applicable; single service area in Pejeng/Ubud |
-| FID references | Replaced by INP since Sept 2024 |
-
----
-
-## Success Metrics
-
-| Metric | Target (90 days) |
-|--------|------------------|
-| Orphan blog posts | ≤5 (from 18) |
-| Tour page internal links | ≥3 per tour page from blog + footer |
-| Indexed `/tours/*` pages | 5+ in GSC |
-| Organic clicks on commercial guides | Track in GSC for new article URLs |
-
----
-
-## Files Touched This Sprint
-
-- `src/components/BookingPopup.tsx` — Details button
-- `src/components/BookingTourDetailPanel.tsx` — in-dialog tour panel
-- `src/lib/bookingTourDetails.ts` — activity → tour slug map
-- `src/data/blog.ts` — 4 new articles + internal link updates
-- `src/data/geoContent.ts` — llms.txt article/tour URLs
-- `src/app/(frontend)/page.tsx` — travel guides hub
+| FAQPage schema | Restricted to gov/health authority sites |
+| HowTo schema | Deprecated for rich results |
+| Restore dense keyword footer cloud | Inflates density + link count |
+| Re-add `max-snippet:-1` | Triggers false “snippet blocking” in some tools |

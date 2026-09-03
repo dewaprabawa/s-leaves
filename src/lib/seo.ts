@@ -8,15 +8,15 @@ import {
 export const SITE_URL = 'https://www.sekarbaliactivity.com'
 export const SITE_NAME = 'Sekar Bali Activity'
 
-export const DEFAULT_TITLE =
-  'Sekar Bali Activity | Private ATV, River Tubing & Village Cycling Tours Ubud'
+/** SERP title target: brand + offer, ≤60 characters */
+export const DEFAULT_TITLE = 'Sekar Bali Activity | ATV & Ubud Adventures'
 export const DEFAULT_DESCRIPTION =
-  'Book private Bali ATV tours near Ubud from IDR 600K — jungle quad bike rides with optional Wos River tubing combo, whitewater rafting, canyon tubing, and Ubud ricefield cycling from IDR 450K. Tier pricing for groups. Optional pickup IDR 50K. All-inclusive: meals, helmet, insurance. Free Ubud pickup on the cycling tour only. WhatsApp booking — free to inquire.'
+  'Jungle ATV from IDR 600K near Ubud, plus rafting, canyon tubing & ricefield cycling from IDR 450K. Free Ubud pickup on cycling. Book via WhatsApp.'
 
-/** Shorter variants for social previews (og:title ≤60, og:description ≤200) */
-export const OG_TITLE = 'Private Bali ATV & Ubud Adventure Tours | Sekar Bali'
+/** Social previews (og:title ≤60, og:description ≤160) */
+export const OG_TITLE = 'Private ATV & Ubud Adventures | Sekar Bali'
 export const OG_DESCRIPTION =
-  'Private ATV jungle rides, Wos River tubing combo, rafting & Ubud ricefield cycling from IDR 450K. Free Ubud pickup on cycling only. Book via WhatsApp.'
+  'Jungle ATV from IDR 600K, rafting, tubing & ricefield cycling from IDR 450K. Free Ubud pickup on cycling. Book via WhatsApp.'
 
 export const OG_IMAGE = {
   url: '/images/adventures/og-cover.jpg',

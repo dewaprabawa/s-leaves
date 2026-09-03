@@ -52,53 +52,14 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   category: 'travel',
   keywords: [
-    // ATV / quad bike — competitor-supported head + mid-tail
     'private ATV tour Bali',
-    'Bali jungle ATV Ubud',
     'ATV ride Ubud',
-    'Bali quad bike tour Ubud',
-    'quad bike adventure Bali',
-    'beginner ATV Ubud',
-    'ATV mud track Ubud',
-    'All New Bali Adventure ATV',
-    'ATV river tubing combo Bali',
-    'ATV rafting combo Bali',
-    'Wos River tubing',
-    'tandem ATV ride Bali',
-    'single ATV solo ride Bali',
-    'ATV with lunch included Bali',
-    'ATV Ubud price 2026',
-    'how much does ATV cost in Bali',
-    'is Ubud cycling tour worth it',
-    'private ATV vs mass market Ubud',
-    'private ATV near Ubud',
-    // Cycling — competitor-supported countryside / ricefield terms
+    'Bali quad bike tour',
+    'ATV river tubing combo',
     'Ubud ricefield cycling tour',
-    'rice paddy cycling Ubud',
-    'Ubud countryside cycling tour',
-    'Pejeng village cycling tour',
-    'village bike tour Bali',
-    'downhill cycling tour Ubud',
-    'small group cycling Bali',
-    'cycling tour with lunch Ubud',
-    'authentic village cycling Pejeng',
-    'cycling cooking class Ubud',
-    'cycling and cooking class in Ubud',
-    'rice paddy cycling cooking class Bali',
-    'Balinese cooking class after cycling Ubud',
-    // Other adventures
     'Bali whitewater rafting',
     'Bali canyon tubing',
-    'Balinese cooking class Ubud',
-    'morning cooking class Ubud',
-    'farm to table cooking class Ubud',
-    'luwak coffee plantation Ubud',
-    'Bali dirt bike tour',
-    'Ubud adventure packages all-inclusive',
     'Sekar Bali Activity',
-    'Bali hotel pickup adventure',
-    'book ATV online Bali',
-    'ATV safety equipment Bali',
   ],
   alternates: {
     canonical: '/',
@@ -106,12 +67,12 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    // Omit max-snippet:-1 — some auditors misread -1 as snippet blocking.
+    // Default Google behavior already allows full snippets when unspecified.
     googleBot: {
       index: true,
       follow: true,
       'max-image-preview': 'large',
-      'max-snippet': -1,
-      'max-video-preview': -1,
     },
   },
   openGraph: {
@@ -125,6 +86,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@sekarbaliactivity',
     title: OG_TITLE,
     description: OG_DESCRIPTION,
     images: [OG_IMAGE.url],
@@ -174,6 +136,8 @@ const adventureOffers: AdventureOffer[] = [
   },
 ]
 
+// Keep homepage JSON-LD lean: ItemList already covers package offers.
+// Separate TouristTrip blocks live on /tours/[slug] detail pages.
 const schemaData = [
   buildOrganizationSchema(),
   buildWebsiteSchema(),
@@ -182,28 +146,6 @@ const schemaData = [
   buildLlmsDiscoverySchema(),
   ...buildGeoQASchemas(),
   buildAdventureItemListSchema(adventureOffers),
-  ...adventureOffers.map((adv) => ({
-    '@context': 'https://schema.org',
-    '@type': 'TouristTrip',
-    name: adv.name,
-    description: adv.description,
-    touristType: ['Couples', 'Families', 'Adventure seekers'],
-    provider: { '@id': `${SITE_URL}/#organization` },
-    image: adv.image ? `${SITE_URL}${adv.image}` : undefined,
-    offers: {
-      '@type': 'Offer',
-      price: adv.price,
-      priceCurrency: 'IDR',
-      availability: 'https://schema.org/InStock',
-      url: `${SITE_URL}/book`,
-      ...(adv.originalPrice
-        ? {
-            priceValidUntil: '2026-12-31',
-            description: `Promo price (was IDR ${Number(adv.originalPrice).toLocaleString('id-ID')}). Lunch or breakfast included.`,
-          }
-        : {}),
-    },
-  })),
 ]
 
 const SETTINGS = { siteName: SITE_NAME }
@@ -242,8 +184,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         ))}
       </head>
       <body className={`${inter.variable} ${outfit.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground`}>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:rounded-lg focus:bg-sand focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-brand-green focus:shadow-lg"
+        >
+          Skip to content
+        </a>
         <HeaderNav siteName={siteName} />
-        <div className="flex-1 flex flex-col w-full">
+        <div id="main-content" className="flex-1 flex flex-col w-full">
           <CurrencyProvider>{children}</CurrencyProvider>
         </div>
 
@@ -254,21 +202,31 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               {/* Brand */}
               <div className="lg:col-span-1">
                 <Link href="/#top" className="flex items-center gap-2 mb-4">
-                  <img src="/logo.png" alt={siteName} className="h-14 w-14 object-contain rounded-full" />
+                  <img
+                    src="/logo.png"
+                    alt={`${siteName} logo`}
+                    width={56}
+                    height={56}
+                    className="h-14 w-14 object-contain rounded-full"
+                  />
                 </Link>
-                <p className="text-sm opacity-70 leading-relaxed mb-6">Premium adventure experiences in Bali. ATV rides, whitewater rafting, canyon tubing, village cycling, and more. Expert local guides and all-inclusive packages.</p>
+                <p className="text-sm opacity-70 leading-relaxed mb-6">
+                  Pejeng-based adventure operator near Ubud — guided quad rides, rafting, canyon floats, and village cycling with local crews and all-inclusive packages.
+                </p>
                 <div className="flex items-center gap-3">
-                  <a href="https://www.instagram.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-sand/20 transition-colors" aria-label="Instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                  <a href="https://www.instagram.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-sand/20 transition-colors">
+                    <span className="sr-only">Sekar Bali Activity on Instagram</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                   </a>
-                  <a href="https://www.facebook.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-sand/20 transition-colors" aria-label="Facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  <a href="https://www.facebook.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-sand/20 transition-colors">
+                    <span className="sr-only">Sekar Bali Activity on Facebook</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                   </a>
                 </div>
               </div>
-              {/* Adventures */}
+              {/* Adventures — use styled p (not h4) to avoid h2→h4 skips after page content */}
               <div>
-                <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Adventures</h4>
+                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Adventures</p>
                 <ul className="space-y-3">
                   {footerLinks.adventures.map((link) => (
                     <li key={link.label}><Link href={link.href} className="text-sm opacity-70 hover:opacity-100 transition-opacity">{link.label}</Link></li>
@@ -277,7 +235,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </div>
               {/* Explore */}
               <div>
-                <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Explore</h4>
+                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Explore</p>
                 <ul className="space-y-3">
                   {footerLinks.explore.map((link) => (
                     <li key={link.label}><Link href={link.href} className="text-sm opacity-70 hover:opacity-100 transition-opacity">{link.label}</Link></li>
@@ -286,7 +244,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </div>
               {/* Contact */}
               <div>
-                <h4 className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Get in Touch</h4>
+                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Get in Touch</p>
                 <ul className="space-y-4">
                   <li><a href={CONTACT_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Phone className="w-4 h-4 shrink-0" />{CONTACT_PHONE_DISPLAY}</a></li>
                   <li><a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Mail className="w-4 h-4 shrink-0" />{CONTACT_EMAIL}</a></li>
@@ -304,11 +262,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </div>
             </div>
 
-            {/* SEO keyword link cloud */}
+            {/* Curated internal links */}
             <div className="border-t border-sand/10 pt-10 pb-8 mb-2">
-              <h4 className="font-display text-sm font-bold uppercase tracking-wider text-center text-accent-gold mb-6">
+              <p className="font-display text-sm font-bold uppercase tracking-wider text-center text-accent-gold mb-6">
                 {SEO_FOOTER_HEADING}
-              </h4>
+              </p>
               <nav aria-label="Popular adventure searches" className="max-w-4xl mx-auto">
                 <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2.5 text-center">
                   {SEO_FOOTER_LINKS.map((link) => (
@@ -329,7 +287,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <p className="text-xs opacity-50">© {new Date().getFullYear()} {siteName}. All rights reserved.</p>
               <nav aria-label="Legal" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs opacity-50">
                 <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Privacy Policy</Link>
-                <Link href="/cancellation-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Cancellation Policy</Link>
+                <Link href="/cancellation-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Booking Terms &amp; Cancellation</Link>
+                <Link href="/about" className="hover:opacity-100 transition-opacity underline underline-offset-4">Our Team</Link>
                 <span className="opacity-60">Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity underline underline-offset-4">Tumang Bali Class</a></span>
               </nav>
             </div>

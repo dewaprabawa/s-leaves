@@ -171,6 +171,21 @@ const heroCarouselImages = [
 
 const travelGuides = [
   {
+    title: "How Much Does an ATV Cost in Bali?",
+    excerpt: "2026 Single & Tandem IDR prices near Ubud — lunch, gear, insurance, and pickup fees explained.",
+    href: "/blog/how-much-does-atv-cost-bali-ubud-2026",
+  },
+  {
+    title: "Is an Ubud Cycling Tour Worth It?",
+    excerpt: "Honest pros and cons of Pejeng ricefield cycling vs Tegallalang crowds — IDR 450K with free pickup.",
+    href: "/blog/is-ubud-cycling-tour-worth-it",
+  },
+  {
+    title: "Private ATV vs Mass-Market Tours",
+    excerpt: "What changes when you book small-group ATV at All New Bali Adventure with WhatsApp clarity.",
+    href: "/blog/private-atv-vs-mass-market-ubud",
+  },
+  {
     title: "Cycling & Cooking Class in Ubud",
     excerpt: "Full-day rice paddy cycling plus evening Balinese cooking class — prices and itinerary.",
     href: "/blog/cycling-cooking-class-ubud-full-day-itinerary",
@@ -184,21 +199,6 @@ const travelGuides = [
     title: "Ubud Hotel Pickup Explained",
     excerpt: "Which tours include free Ubud pickup and when the IDR 50K pickup fee applies.",
     href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
-  },
-  {
-    title: "All New Bali Adventure ATV Location",
-    excerpt: "Where the ATV arena is, how to get there, and what to expect on arrival.",
-    href: "/blog/bali-atv-all-new-bali-adventure-location-guide",
-  },
-  {
-    title: "Bali Adventure Packages & Prices",
-    excerpt: "Compare ATV, rafting, tubing, and cycling packages with transparent IDR pricing.",
-    href: "/blog/bali-adventure-packages-prices-2026",
-  },
-  {
-    title: "Ubud Ricefield Cycling Tour Guide",
-    excerpt: "Full itinerary, IDR 450K pricing, and what is included on the cycling day tour.",
-    href: "/blog/ubud-ricefield-cycling-tour-guide-2026",
   },
 ] as const
 

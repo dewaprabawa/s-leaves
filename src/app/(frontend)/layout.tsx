@@ -68,6 +68,10 @@ export const metadata: Metadata = {
     'single ATV solo ride Bali',
     'ATV with lunch included Bali',
     'ATV Ubud price 2026',
+    'how much does ATV cost in Bali',
+    'is Ubud cycling tour worth it',
+    'private ATV vs mass market Ubud',
+    'private ATV near Ubud',
     // Cycling — competitor-supported countryside / ricefield terms
     'Ubud ricefield cycling tour',
     'rice paddy cycling Ubud',

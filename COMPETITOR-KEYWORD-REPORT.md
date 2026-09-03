@@ -123,11 +123,11 @@ These modifiers appear repeatedly in competitor titles, meta descriptions, and C
 ### Short-term (2–4 weeks) — new content for gaps
 - [x] Publish blog: **"ATV + River Tubing Combo: Wos River Guide"** (targets ubudcyclingtour.com combo gap)
 - [x] Publish blog: **"Cycling & Cooking Class in Ubud: Full Day Itinerary"** (partner with Tumang Bali Class) — live at `/blog/cycling-cooking-class-ubud-full-day-itinerary` (2026-09-03)
-- [ ] Add FAQ blocks targeting PAA: "How much does ATV cost in Bali?", "Is Ubud cycling tour worth it?"
+- [x] Add FAQ blocks targeting PAA: "How much does ATV cost in Bali?", "Is Ubud cycling tour worth it?"
+- [x] Create comparison content: "Private ATV vs Mass-Market ATV Operators" (AEO)
 
 ### Medium-term — architecture fix for sales
 - [ ] **Remove `/tours/:slug` redirect** — dedicated tour landing pages rank for long-tail; currently 301 to `/#adventures` loses SEO value
-- [ ] Create comparison content: "Sekar Bali vs Mass-Market ATV Operators" (parasite SEO / AEO)
 - [ ] Google Business Profile posts using P0 keywords weekly
 
 ---

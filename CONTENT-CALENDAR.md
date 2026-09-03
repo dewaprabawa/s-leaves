@@ -26,7 +26,13 @@ To build topical authority around "Ubud Culture & Activities", we need to publis
   * **Intent:** Decision-making
   * **CTA:** Book your preferred time slot for our experiences.
 
+## Month 4: Commercial PAA & Comparison (2026-09-03)
+* **How Much Does an ATV Cost in Bali (Ubud)?** → `/blog/how-much-does-atv-cost-bali-ubud-2026`
+* **Is an Ubud Cycling Tour Worth It?** → `/blog/is-ubud-cycling-tour-worth-it`
+* **Private ATV vs Mass-Market Quad Tours** → `/blog/private-atv-vs-mass-market-ubud`
+
 ## Content Guidelines
 * **Word Count:** 800 - 1,500 words per post.
 * **Media:** Must include original photos taken during actual tours (no stock photos).
 * **Author Bios:** Include a short bio of the local host writing or contributing to the article to boost E-E-A-T.
+* **GEO:** Answer-first intro + Key Takeaways; cite transparent IDR and WhatsApp booking.

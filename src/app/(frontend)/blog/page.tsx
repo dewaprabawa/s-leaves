@@ -6,7 +6,7 @@ import { ArrowRight, Calendar } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Blog & Travel Guide',
-  description: 'Bali travel tips, Pejeng culture, ATV & adventure guides, and Ubud itinerary ideas from Sekar Bali Activity — written to help you plan and book with confidence.',
+  description: 'Bali travel tips, Pejeng culture, ATV prices near Ubud, cycling tour reviews, and adventure booking guides from Sekar Bali Activity — written to help you plan and book with confidence.',
   alternates: { canonical: '/blog' },
 }
 

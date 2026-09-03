@@ -4,6 +4,14 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
+    question: "How much does an ATV cost in Bali near Ubud?",
+    answer: "In 2026, Single ATV with Sekar Bali Activity starts at IDR 600,000 (IDR 575,000 for 2 riders, IDR 550,000 for 3+). Tandem ATV starts at IDR 859,000 for two people. Prices include lunch, boot shoes, helmet, insurance, and briefing at All New Bali Adventure. Optional hotel pickup is IDR 50,000 one-way or IDR 100,000 round trip."
+  },
+  {
+    question: "Is an Ubud cycling tour worth it?",
+    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and meals included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 450,000 with free Ubud hotel pickup, breakfast, lunch & dinner, bike, helmet, guide, and insurance. Prefer adrenaline? Choose ATV or rafting instead."
+  },
+  {
     question: "What adventure activities do you offer?",
     answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Ubud Ricefield Cycling Tour (IDR 450,000 per person with breakfast, lunch & dinner included). ATV trips can also be combined with river tubing on the Wos River."
   },
@@ -92,7 +100,7 @@ export function FAQSection() {
             </button>
             <div 
               className={`px-6 md:px-8 overflow-hidden transition-all duration-300 ease-in-out ${
-                openIndex === index ? 'max-h-96 pb-6 opacity-100' : 'max-h-0 opacity-0'
+                openIndex === index ? 'max-h-[40rem] pb-6 opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
               <p className="text-brand-green-light leading-relaxed text-sm md:text-base">

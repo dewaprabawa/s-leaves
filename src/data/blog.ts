@@ -10,6 +10,203 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'how-much-does-atv-cost-bali-ubud-2026',
+    title: 'How Much Does an ATV Cost in Bali (Ubud)? 2026 Prices & What’s Included',
+    excerpt:
+      'ATV / quad bike prices near Ubud in 2026: Single from IDR 600,000, Tandem from IDR 859,000 at All New Bali Adventure — lunch, gear, insurance included. Pickup fees and combos explained.',
+    publishedAt: '2026-09-03',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**How much does an ATV cost in Bali near Ubud?** With Sekar Bali Activity in 2026, a **Single ATV** starts at **IDR 600,000** (lower tier rates for 2+ and 3+ riders) and a **Tandem ATV** starts at **IDR 859,000** for two people. Packages at **All New Bali Adventure** include lunch, boot shoes, helmet, insurance, and a full safety briefing. Hotel pickup is optional.
+
+> **Key Takeaways**
+> - Single ATV: **IDR 600,000** (1 pax) · **IDR 575,000** (2) · **IDR 550,000** (3+)
+> - Tandem ATV: **IDR 859,000** for 2 pax sharing one quad
+> - Included: lunch, boot shoes, helmet, insurance, English-speaking guide
+> - Pickup: **IDR 50,000** one-way or **IDR 100,000** round trip (same hotel); out of Ubud +IDR 50,000 — or self-meet free
+> - Optional: **ATV + Wos River tubing** combo after the track
+> - Book on WhatsApp — **no upfront payment** to inquire
+
+---
+
+## Bali ATV Price Table (Ubud / Pejeng, 2026)
+
+| Package | Guests | From price (IDR) | What’s included |
+| --- | --- | --- | --- |
+| Single ATV | 1 | 600,000 | Lunch, gear, insurance, briefing |
+| Single ATV | 2 | 575,000 each | Same inclusions · group tier |
+| Single ATV | 3+ | 550,000 each | Same inclusions · group tier |
+| Tandem ATV | 2 sharing | 859,000 | Same inclusions · one bike for two |
+| Optional pickup | — | 50,000 / 100,000 | One-way / round trip to same hotel |
+| Canyon tubing add-on | Ask | From 359,000 | Wos River float after ATV |
+
+Aggregator listings often hide whether lunch, insurance, or pickup are extras. Our [adventure packages page](/blog/bali-adventure-packages-prices-2026) and [ATV tour guide](/blog/bali-atv-tour-ubud-guide) keep IDR totals transparent before you message WhatsApp.
+
+## What “From IDR 600K” Actually Buys
+
+At **All New Bali Adventure** (our Pejeng activity base near Ubud) you get:
+
+1. Safety briefing and English-speaking guide  
+2. Boot shoes and helmet fitted on site  
+3. Guided jungle / mud / river-crossing trail ride  
+4. Simple menu lunch after the ride  
+5. Insurance on the included package  
+
+You do **not** need prior ATV experience. See the [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide) for directions and self-meet tips.
+
+## Hidden Costs to Watch (Industry-Wide)
+
+When comparing Bali ATV prices, ask:
+
+- Is **lunch** included?  
+- Are **boot shoes + helmet** included or rented?  
+- Is **insurance** mentioned?  
+- Is the arena **All New Bali Adventure** or a different track?  
+- Is **hotel pickup** in the base price or IDR 50K–120K extra?  
+
+Sekar Bali Activity lists pickup separately so the trail price stays honest — details in [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
+
+## Single vs Tandem: Which Price Fits You?
+
+- **Single** — one person controls the ATV; best for thrill-seekers and solo travelers  
+- **Tandem** — two share one bike; popular with couples and friends who want photos together  
+
+Compare intensity with rafting and tubing in [Rafting vs Tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+
+## Want a Full Day? Add Wos River Tubing
+
+After the track, many guests add **river tubing on the Wos River** for a land-and-water day. Combo planning: [ATV + River Tubing guide](/blog/atv-river-tubing-wos-river-bali).
+
+## How to Book the Exact Price on WhatsApp
+
+1. Tap **Book ATV on WhatsApp** on [sekarbaliactivity.com](/)  
+2. Send name, age, adult/child, hotel, date, guest count  
+3. We confirm the tier rate and pickup total — **no payment to inquire**  
+
+Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsapp).
+
+**Ready to lock a 2026 ATV price?** Book the [Bali ATV Adventure](/tours/bali-atv-adventure) or compare all [packages & prices](/#pricing).
+`
+  },
+  {
+    slug: 'is-ubud-cycling-tour-worth-it',
+    title: 'Is an Ubud Cycling Tour Worth It? Honest Pros, Cons & 2026 Prices',
+    excerpt:
+      'Is a ricefield cycling tour in Ubud worth booking? Compare Pejeng village rides vs Tegallalang crowds — IDR 450,000 with free Ubud pickup, three meals, and what first-timers should know.',
+    publishedAt: '2026-09-03',
+    author: 'Sekar Bali Activity',
+    image: '/images/cycling/rice-field-bikes.jpg',
+    content: `
+**Is an Ubud cycling tour worth it?** Yes — if you want **quiet rice paddies, village culture, and meals included**, not another crowded Tegallalang photo stop. Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** is **IDR 450,000** per person with **free Ubud hotel pickup**, breakfast, lunch & dinner, bike, helmet, guide, and insurance through **Pejeng** village paths.
+
+> **Key Takeaways**
+> - Worth it for culture travelers, couples, and families who want a gentle full day  
+> - **IDR 450,000** · free Ubud pickup · **3 meals** · insurance  
+> - Route: **Pejeng** countryside / rice paddy paths — not mass Tegallalang traffic  
+> - Skip it if you only want motors/mud — book [ATV](/tours/bali-atv-adventure) instead  
+> - Pair with an evening [cooking class](/blog/cycling-cooking-class-ubud-full-day-itinerary) for a full culture day  
+> - Book on WhatsApp — no upfront payment to inquire
+
+---
+
+## Who Gets the Most Value
+
+| Traveler | Worth it? | Why |
+| --- | --- | --- |
+| Couples / honeymooners | Yes | Slow pace, village photos, meals included |
+| Families with kids (comfortable on bikes) | Yes | Gentle paths; cultural stops |
+| Fitness cyclists seeking climbs | Maybe not | Route is mostly flat / downhill village riding |
+| Adrenaline-only guests | Prefer ATV / rafting | See [comparison guide](/blog/rafting-vs-tubing-vs-atv-near-ubud) |
+| Guests tired of Tegallalang crowds | Yes | Pejeng Subak paths stay quieter |
+
+## What You Actually Get for IDR 450,000
+
+- Free hotel pickup & drop-off in the **Ubud area** (only this tour includes free pickup)  
+- Bicycle, helmet, English-speaking guide  
+- Breakfast, lunch & dinner  
+- Seasonal rice harvesting, Balinese home visit, wood carving stop  
+- Insurance  
+
+Full itinerary: [Ubud Ricefield Cycling Tour guide 2026](/blog/ubud-ricefield-cycling-tour-guide-2026).
+
+## Pejeng vs Tegallalang: Why Location Matters
+
+Many “Ubud cycling” reviews complain about traffic and selfie crowds. Our ride stays in **Pejeng** — historic village east of central Ubud with living Subak terraces. Side-by-side: [Pejeng vs Tegallalang cycling](/blog/pejeng-rice-terrace-cycling-vs-tegallalang).
+
+## Honest Cons
+
+- **Not a mountain-bike climb** — expect relaxed village paths  
+- **Full day** — plan sun protection and comfortable clothes  
+- **Cooking class transfer** (if combo) is separate — cycling drop-off returns you to your hotel first  
+
+## Make It a Culture Combo Day
+
+Morning/afternoon ricefield cycling + evening Balinese dinner cooking class is one of the highest-intent searches near Ubud. Full plan: [Cycling & cooking class itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+
+## Verdict
+
+If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 450,000 — especially with free pickup and three meals. If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
+
+**Ready to decide?** Book [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) on WhatsApp or message +62 817 7572 3663 with your hotel and date.
+`
+  },
+  {
+    slug: 'private-atv-vs-mass-market-ubud',
+    title: 'Private ATV Near Ubud vs Mass-Market Quad Tours: What Changes for Guests',
+    excerpt:
+      'Private / small-group ATV near Ubud vs big-bus quad tours — how All New Bali Adventure rides, transparent IDR pricing, WhatsApp booking, and Pejeng basing change the guest experience.',
+    publishedAt: '2026-09-03',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**What’s the difference between a private ATV near Ubud and a mass-market quad tour?** Private / small-group operators emphasize **clear arena location, inclusions, and WhatsApp confirmation** — not the cheapest anonymous listing. Sekar Bali Activity runs beginner-friendly ATV at **All New Bali Adventure** in Pejeng from **IDR 600,000**, with lunch, gear, and insurance included and **no upfront payment** to inquire.
+
+> **Key Takeaways**
+> - Mass listings often bury pickup fees, lunch, and which arena you ride  
+> - Private / small-group focus: safety briefing, English guide, transparent IDR tiers  
+> - Our arena: **All New Bali Adventure** · activity base in **Pejeng** near Ubud  
+> - Corporate office (GBP) ≠ activity base — see [Contact](/contact) for address roles  
+> - Combos: ATV + Wos River tubing for a full land-and-water day  
+> - Book direct on WhatsApp to lock price before you pay
+
+---
+
+## Side-by-Side: What Guests Notice
+
+| Factor | Mass-market style | Sekar Bali Activity approach |
+| --- | --- | --- |
+| Booking | Aggregator cart, unclear operator | WhatsApp with name, date, price prefilled |
+| Price clarity | “From $XX” with add-ons later | IDR tiers published; pickup listed separately |
+| Group feel | Large mixed groups | Private / small-group pacing |
+| Arena | Sometimes unspecified | Always **All New Bali Adventure** |
+| Inclusions | Variable | Lunch, boot shoes, helmet, insurance |
+| Local story | Generic “Bali ATV” | Pejeng-based team + village cycling/culture |
+
+## Why “Private ATV Ubud” Searches Convert
+
+Travelers typing **private ATV Ubud**, **beginner ATV Ubud**, or **Bali quad bike tour Ubud** usually want:
+
+1. A real address / map pin for the arena  
+2. Proof lunch and gear are included  
+3. A human reply before paying  
+
+Our answers live on the [ATV Ubud guide](/blog/bali-atv-tour-ubud-guide), [price breakdown](/blog/how-much-does-atv-cost-bali-ubud-2026), and [arena directions](/blog/bali-atv-all-new-bali-adventure-location-guide).
+
+## Don’t Confuse Corporate Pin With the Track
+
+Google Business Profile / corporate office is in **Banjar Kenderan**. Self-drive ATV guests meet at the **Pejeng activity base (All New Bali Adventure)** — not the corporate pin. Full NAP roles: [Contact page](/contact).
+
+## When a Larger Operator Might Fit
+
+Choose a big-group operator if you only want the lowest headline price and don’t mind mixed groups or unclear extras. Choose Sekar Bali if you want **WhatsApp clarity**, Pejeng basing, and optional culture days like [cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+
+## Next Step
+
+Compare packages on [prices 2026](/blog/bali-adventure-packages-prices-2026), then book [Bali ATV Adventure](/tours/bali-atv-adventure) or message WhatsApp — free to inquire.
+`
+  },
+  {
     slug: 'bali-atv-tour-ubud-guide',
     title: 'Bali ATV Tour Near Ubud: Trails, Prices, and What Is Included (2026)',
     excerpt: 'A practical guide to booking a Bali ATV / quad bike adventure near Ubud and Pejeng — prices from IDR 600,000, what to bring, lunch and gear inclusions, and how to add Wos River tubing.',
@@ -60,7 +257,7 @@ Looking for a fuller day? After racing the ATV track you can combine with **rive
 
 Use the booking form on our site or message WhatsApp. Send your **name, age, adult or child, hotel/pickup location, activity, and estimated price** so we can confirm the same day.
 
-Ready to ride? Book the [Bali ATV Adventure at All New Bali Adventure](/tours/bali-atv-adventure) or see all [adventure packages](/#adventures).
+Ready to ride? Book the [Bali ATV Adventure at All New Bali Adventure](/tours/bali-atv-adventure) or see all [adventure packages](/#adventures). For a full 2026 price breakdown see [How much does an ATV cost in Bali](/blog/how-much-does-atv-cost-bali-ubud-2026).
 `
   },
   {

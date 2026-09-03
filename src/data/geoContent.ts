@@ -11,7 +11,7 @@ import { SITE_NAME, SITE_URL } from '@/lib/seo'
 export const GEO_UPDATED = '2026-09-03'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Pejeng-based Bali adventure operator offering ATV quad bike rides at All New Bali Adventure (from IDR 600,000), optional Wos River tubing, whitewater rafting (IDR 400,000), canyon tubing (IDR 359,000), and Ubud ricefield cycling (IDR 450,000) with WhatsApp booking. Tier pricing: better rates for 2+ and 3+ guests. Optional pickup IDR 50,000 (+ IDR 50,000 return to same hotel). Free Ubud hotel pickup is included on the cycling tour only.'
+  'Sekar Bali Activity is a Pejeng-based adventure operator offering jungle quad rides at All New Bali Adventure (from 600,000 IDR), optional Wos River tubing, whitewater rafting (400,000), canyon tubing (359,000), and ricefield cycling (450,000) with WhatsApp booking. Better rates for 2+ and 3+ guests. Optional pickup 50,000 one-way (+ 50,000 return). Free hotel pickup in Ubud on the cycling tour only.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,

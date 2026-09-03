@@ -65,7 +65,7 @@ const adventures: Adventure[] = [
     originalPrice: getListPrice("single-atv"),
     childPrice: 550000,
     image: "/images/adventures/atv-adventure.jpg",
-    description: "Private ATV ride Ubud at All New Bali Adventure — beginner-friendly Bali quad bike tour through jungle mud tracks and river crossings. Lunch, helmet & insurance included. Add optional Wos River tubing or rafting combo near Ubud.",
+    description: "Beginner-friendly jungle quad ride at All New Bali Adventure — muddy tracks, river crossings, lunch, helmet & insurance included. Optional Wos River tubing or rafting combo after the track.",
     highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Zap,
@@ -82,7 +82,7 @@ const adventures: Adventure[] = [
     originalPrice: getListPrice("tandem-atv"),
     childPrice: null as number | null,
     image: "/images/adventures/atv-adventure.jpg",
-    description: "Private tandem ATV tour at All New Bali Adventure arena — share a quad bike adventure with a partner through jungle trails. All-inclusive with lunch, safety gear, and optional Wos River tubing combo.",
+    description: "Share a tandem quad bike with a partner through jungle trails at All New Bali Adventure. Lunch, safety gear, and optional Wos River tubing included.",
     highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
     duration: "2 hours",
     icon: Users,
@@ -133,7 +133,7 @@ const adventures: Adventure[] = [
     originalPrice: getListPrice("cycling"),
     childPrice: null as number | null,
     image: "/images/adventures/cycling.jpg",
-    description: "Authentic Ubud countryside cycling through rice paddies and quiet Pejeng village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
+    description: "Quiet Pejeng rice-paddy paths with rice harvesting, a Balinese home visit, wood carving studio, and breakfast, lunch & dinner included.",
     highlights: ["Breakfast, lunch & dinner included", "Rice harvesting activity", "Balinese house & carving studio", "Free Ubud hotel pickup & insurance"],
     duration: "Full day",
     icon: Bike,
@@ -222,7 +222,16 @@ function HeroCarousel() {
         {heroCarouselImages.map((img, i) => (
           <div key={i} className="shrink-0 w-44 md:w-52 snap-start">
             <div className="relative aspect-[3/4] rounded-2xl lg:rounded-3xl overflow-hidden group cursor-pointer">
-              <img src={img.src} alt={img.alt} loading="lazy" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={208}
+                height={277}
+                sizes="(max-width: 768px) 176px, 208px"
+                // Carousel sits in the first viewport — avoid lazy-loading above-fold images
+                loading={i < 2 ? 'eager' : 'lazy'}
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
               <span className="absolute bottom-3 left-3 text-white text-sm font-semibold drop-shadow-md">{img.label}</span>
             </div>
@@ -296,6 +305,7 @@ export default function Home() {
             alt="ATV jungle adventure ride through tropical rainforest trails"
             fill
             preload
+            fetchPriority="high"
             sizes="100vw"
             quality={70}
             placeholder="blur"
@@ -309,7 +319,7 @@ export default function Home() {
             Sekar Bali Activity · Pejeng, Ubud
           </p>
           <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold uppercase leading-[0.9] tracking-tight mb-6 animate-fade-in-up-delay-1">
-            <span className="block">Private ATV &amp;</span>
+            <span className="block">Private ATV &amp; </span>
             <span className="hero-headline-accent block">Village Adventures</span>
           </h1>
           <p className="hero-subcopy text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
@@ -359,7 +369,15 @@ export default function Home() {
             return (
               <article key={adv.id} className={`adventure-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-brand-green/5 relative group ${isVisible("adventures") ? "animate-fade-in-up" : ""}`} style={{ animationDelay: `${i * 0.1}s` }}>
                 <div className="relative h-56 md:h-64 overflow-hidden">
-                  <img src={adv.image} alt={adv.name} className="adventure-card-image w-full h-full object-cover" loading="lazy" />
+                  <Image
+                    src={adv.image}
+                    alt={adv.name}
+                    width={800}
+                    height={512}
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    loading="lazy"
+                    className="adventure-card-image w-full h-full object-cover"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <div className="absolute top-4 right-4 flex flex-col items-end gap-1.5">
                     <PromoPrice
@@ -424,7 +442,7 @@ export default function Home() {
               Know Before You Go
             </h2>
             <p className="text-lg text-sand/90 max-w-2xl mx-auto">
-              Complete Bali quad bike trips at All New Bali Adventure — packed with sensation, excitement, and joy, with optional river tubing on the Wos River after you race the ATV track.
+              Complete quad bike trips at All New Bali Adventure — packed with sensation and joy, with optional tubing on the Wos River after you race the track.
             </p>
           </div>
           <KnowBeforeCards
@@ -541,6 +559,9 @@ export default function Home() {
             {[...Array(5)].map((_, i) => (<Star key={i} className="w-5 h-5 text-accent-gold fill-accent-gold" />))}
           </div>
           <p className="text-sm font-semibold uppercase tracking-wider opacity-70">— Sarah M. · GetYourGuide Review</p>
+          <p className="mt-4 text-xs uppercase tracking-wider text-sand/60">
+            Trusted by guests on GetYourGuide, Google, and TripAdvisor
+          </p>
         </div>
       </section>
 
@@ -554,7 +575,7 @@ export default function Home() {
             Bali Adventure Guides
           </h2>
           <p className="text-brand-green-light max-w-2xl mx-auto">
-            Detailed guides on ATV near Ubud, Wos River tubing combos, and WhatsApp booking.
+            Practical guides on pricing, pickup rules, and which package fits your trip.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -585,7 +606,14 @@ export default function Home() {
       {/* ═══ CONTACT CTA ═══ */}
       <section id="contact" data-animate className="relative py-24 md:py-32 px-6 lg:px-12 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/adventures/rafting.jpg" alt="Adventure background" className="w-full h-full object-cover" />
+          <Image
+            src="/images/adventures/rafting.jpg"
+            alt="Guests rafting through a jungle river canyon"
+            fill
+            sizes="100vw"
+            loading="lazy"
+            className="object-cover"
+          />
           <div className="absolute inset-0 bg-brand-green/85" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto text-center text-sand">

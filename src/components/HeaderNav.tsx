@@ -58,7 +58,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
       <header className={`fixed left-0 right-0 z-50 transition-all duration-300 ease-in-out ${scrolled ? "top-0 pt-2 px-3 md:px-6" : "top-10 pt-3 px-4 md:px-8"}`}>
         <div className={`max-w-7xl mx-auto rounded-full flex items-center justify-between px-4 md:px-6 transition-all duration-300 ${scrolled ? "floating-header-scrolled h-14 md:h-16" : "floating-header h-14 md:h-16"}`}>
           <Link href="/#top" onClick={closeMenu} className="flex items-center gap-2 font-bold text-lg text-brand-green hover:opacity-80 transition-opacity shrink-0">
-            <img src="/logo.png" alt={siteName} className="h-10 md:h-12 w-auto object-contain" />
+            <img src="/logo.png" alt={siteName} width={48} height={48} className="h-10 md:h-12 w-auto object-contain" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-1 xl:gap-2">
@@ -88,7 +88,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
         <div className="fixed inset-0 z-[55] bg-sand flex flex-col animate-fade-in-up">
           <div className="flex items-center justify-between px-6 pt-4 pb-4">
             <Link href="/#top" onClick={closeMenu} className="flex items-center gap-2">
-              <img src="/logo.png" alt={siteName} className="h-12 w-auto object-contain" />
+              <img src="/logo.png" alt={siteName} width={48} height={48} className="h-12 w-auto object-contain" />
             </Link>
             <button onClick={closeMenu} className="flex items-center justify-center w-11 h-11 rounded-full bg-brand-green/8 text-brand-green" aria-label="Close navigation">
               <X className="w-6 h-6" />

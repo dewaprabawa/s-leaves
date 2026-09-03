@@ -7,6 +7,9 @@ import {
   GEO_UPDATED,
 } from '@/data/geoContent'
 
+/** Show a curated subset on the homepage; full set remains in llms.txt */
+const HOMEPAGE_GEO_FAQS = GEO_FAQ_FOR_LLM.slice(0, 8)
+
 /** Answer-first SSR block for GEO / ChatGPT / Gemini citability */
 export default function GeoAnswerBlock() {
   return (
@@ -68,24 +71,31 @@ export default function GeoAnswerBlock() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-        {GEO_FAQ_FOR_LLM.map((item) => (
-          <article
-            key={item.q}
-            className="geo-answer-block bg-white rounded-2xl border border-brand-green/10 p-6 shadow-sm"
-          >
-            <p className="text-[10px] font-bold uppercase tracking-wider text-accent-gold-dark mb-2">
-              {item.category}
-            </p>
-            <h3 className="font-bold text-brand-green mb-2 text-base leading-snug">{item.q}</h3>
-            <p className="text-sm text-brand-green-light leading-relaxed mb-3">{item.a}</p>
-            <Link
-              href={item.url.replace('https://www.sekarbaliactivity.com', '') || '/'}
-              className="text-xs font-semibold text-brand-green hover:text-brand-green-light underline underline-offset-2"
+        {HOMEPAGE_GEO_FAQS.map((item) => {
+          const href = item.url.replace('https://www.sekarbaliactivity.com', '') || '/'
+          return (
+            <article
+              key={item.q}
+              className="geo-answer-block bg-white rounded-2xl border border-brand-green/10 p-6 shadow-sm"
             >
-              Read more
-            </Link>
-          </article>
-        ))}
+              <p className="text-[10px] font-bold uppercase tracking-wider text-accent-gold-dark mb-2">
+                {item.category}
+              </p>
+              <h3 className="font-bold text-brand-green mb-2 text-base leading-snug">{item.q}</h3>
+              <p className="text-sm text-brand-green-light leading-relaxed mb-3">{item.a}</p>
+              <Link
+                href={href}
+                className="text-xs font-semibold text-brand-green hover:text-brand-green-light underline underline-offset-2"
+              >
+                {href.startsWith('/blog')
+                  ? 'Read the full guide'
+                  : href.startsWith('/tours')
+                    ? `View ${item.category.toLowerCase()} tour details`
+                    : 'See booking details'}
+              </Link>
+            </article>
+          )
+        })}
       </div>
 
       <div className="mb-10">
@@ -111,7 +121,7 @@ export default function GeoAnswerBlock() {
                 href={comparison.url.replace('https://www.sekarbaliactivity.com', '') || '/'}
                 className="text-xs font-semibold text-brand-green hover:text-brand-green-light underline underline-offset-2"
               >
-                Compare & book
+                Compare {comparison.title}
               </Link>
             </article>
           ))}

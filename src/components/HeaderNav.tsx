@@ -74,7 +74,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
               href="/book"
               className="hidden sm:inline-flex items-center h-10 md:h-11 px-6 md:px-8 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm uppercase tracking-wider border border-accent-gold-dark/20"
             >
-              Book Now
+              Book on WhatsApp
             </Link>
             <button onClick={toggleMenu} className="lg:hidden flex items-center justify-center w-11 h-11 rounded-full bg-brand-green/8 text-brand-green transition-colors hover:bg-brand-green/15" aria-label="Toggle navigation menu" aria-expanded={isOpen}>
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -107,7 +107,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
               onClick={closeMenu}
               className="w-full flex items-center justify-center h-14 rounded-full btn-gold-shimmer text-brand-green font-bold text-lg uppercase tracking-wider"
             >
-              Book Now
+              Book on WhatsApp
             </Link>
             <p className="text-center text-xs text-brand-green-light opacity-60">Or call +62 817 7572 3663</p>
           </div>

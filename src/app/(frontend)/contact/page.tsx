@@ -64,10 +64,10 @@ export default function ContactPage() {
           Support is Online
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-4">
-          Get in touch.
+          Book or ask on WhatsApp.
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl">
-          Whether you have a question about our tours, need a customized itinerary, or want to arrange a transfer, our travel specialists are ready to help. Use the addresses below so corporate office, meeting point, and activity base stay clear.
+          Tell us your date, guest count, and activity — we confirm availability and the IDR total with no payment to inquire. Addresses below separate corporate office, central Ubud meeting point, and Pejeng activity base.
         </p>
       </div>
 

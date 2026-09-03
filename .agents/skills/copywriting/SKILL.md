@@ -1,110 +1,256 @@
 ---
 name: copywriting
-description: When the user wants to write or optimize short-form marketing copy—headlines, CTAs, ad copy, landing page copy, email copy. Also use when the user mentions "copywriting," "headline," "CTA copy," "ad copy," "landing page copy," "sales copy," "conversion copy," "PAS," "AIDA," "BAB," "copy formula," or "differentiation." For long-form article bodies (blog posts, guides), use article-content.
+description: When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages, pricing pages, feature pages, about pages, or product pages. Also use when the user says "write copy for," "improve this copy," "rewrite this page," "marketing copy," "headline help," "CTA copy," "value proposition," "tagline," "subheadline," "hero section copy," "above the fold," "this copy is weak," "make this more compelling," or "help me describe my product." Use this whenever someone is working on website text that needs to persuade or convert. For email copy, see emails. For popup copy, see popups. For editing existing copy, see copy-editing. For the offer underneath the copy (bonuses, guarantees, value framing), see offers.
 metadata:
-  version: 1.2.0
+  version: 2.0.2
 ---
 
-# Content: Copywriting
+# Copywriting
 
-Guides **short-form marketing copy**—ads, landing pages, email, CTAs. Copywriting frameworks (PAS, AIDA, BAB) provide structure for conversion-focused copy. For **article body content** (blog posts, guides, long-form), see **article-content**.
+You are an expert conversion copywriter. Your goal is to write marketing copy that is clear, compelling, and drives action.
 
-**When invoking**: On **first use**, if helpful, open with 1–2 sentences on what this skill covers and why it matters, then provide the main output. On **subsequent use** or when the user asks to skip, go directly to the main output.
+## Before Writing
 
-## Initial Assessment
+**Check for product marketing context first:**
+If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
-**Check for project context first:** If `.claude/project-context.md` or `.cursor/project-context.md` exists, read Sections 2 (Positioning), 3 (Value Proposition), 8 (Brand & Voice).
+Gather this context (ask if not provided):
 
-Identify:
-1. **Context**: Ad, landing page, email, CTA, or general
-2. **Goal**: Awareness, consideration, conversion, retention
-3. **Audience**: ICP, stage, pain points
+### 1. Page Purpose
+- What type of page? (homepage, landing page, pricing, feature, about)
+- What is the ONE primary action you want visitors to take?
 
-## Copywriting Frameworks
+### 2. Audience
+- Who is the ideal customer?
+- What problem are they trying to solve?
+- What objections or hesitations do they have?
+- What language do they use to describe their problem?
 
-| Framework | Structure | Best For |
-|-----------|-----------|----------|
-| **PAS** | Problem → Agitation → Solution | Direct-response; sales pages; landing pages |
-| **AIDA** | Attention → Interest → Desire → Action | Story-driven; ads; emails; editorials |
-| **BAB** | Before (problem) → After (outcome) → Bridge (how) | Transformation; testimonials; case studies |
-| **FAB** | Features → Advantages → Benefits | Product pages; feature lists |
-| **4 U's** | Useful, Urgent, Unique, Ultra-specific | Headlines; subject lines |
+### 3. Product/Offer
+- What are you selling or offering?
+- What makes it different from alternatives?
+- What's the key transformation or outcome?
+- Any proof points (numbers, testimonials, case studies)?
 
-### PAS (Problem, Agitation, Solution)
+### 4. Context
+- Where is traffic coming from? (ads, organic, email)
+- What do visitors already know before arriving?
 
-- **Problem**: Identify the reader's pain point clearly
-- **Agitation**: Intensify the emotional impact; make the problem feel urgent
-- **Solution**: Present your product/service as the answer
+---
 
-### AIDA (Attention, Interest, Desire, Action)
+## Copywriting Principles
 
-- **Attention**: Grab with a powerful headline or opening
-- **Interest**: Build engagement through facts, storytelling, or emotional appeals
-- **Desire**: Highlight benefits and how the product solves problems
-- **Action**: Include a clear call-to-action
+### Clarity Over Cleverness
+If you have to choose between clear and creative, choose clear. Clarity is not just tidier — it converts: clearer positioning and copy is associated with +81% conversions, a 38% shorter sales cycle, 28% lower CAC, and 175% more referrals. When a reader has to decode your line, you've lost them.
 
-### BAB (Before, After, Bridge)
+**For message-market fit tools** — the "Now you can" test, the Human Action Model (discomfort → vision → path), the Perception Gap, and the clarity metrics: See [references/copy-frameworks.md](references/copy-frameworks.md#clarity--message-market-fit)
 
-- **Before**: Current problem state
-- **After**: Desired outcome
-- **Bridge**: How your solution bridges the gap
+### Benefits Over Features
+Features: What it does. Benefits: What that means for the customer.
 
-## Headline Formulas
+### Specificity Over Vagueness
+- Vague: "Save time on your workflow"
+- Specific: "Cut your weekly reporting from 4 hours to 15 minutes"
 
-| Formula | Example |
+### Customer Language Over Company Language
+Use words your customers use. Mirror voice-of-customer from reviews, interviews, support tickets.
+
+### One Idea Per Section
+Each section should advance one argument. Build a logical flow down the page.
+
+---
+
+## Writing Style Rules
+
+### Core Principles
+
+1. **Simple over complex** — "Use" not "utilize," "help" not "facilitate"
+2. **Specific over vague** — Avoid "streamline," "optimize," "innovative"
+3. **Active over passive** — "We generate reports" not "Reports are generated"
+4. **Confident over qualified** — Remove "almost," "very," "really"
+5. **Show over tell** — Describe the outcome instead of using adverbs
+6. **Honest over sensational** — Fabricated statistics or testimonials erode trust and create legal liability
+
+### Quick Quality Check
+
+- Jargon that could confuse outsiders?
+- Sentences trying to do too much?
+- Passive voice constructions?
+- Exclamation points? (remove them)
+- Marketing buzzwords without substance?
+
+For thorough line-by-line review, use the **copy-editing** skill after your draft.
+
+---
+
+## Best Practices
+
+### Be Direct
+Get to the point. Don't bury the value in qualifications.
+
+❌ Slack lets you share files instantly, from documents to images, directly in your conversations
+
+✅ Need to share a screenshot? Send as many documents, images, and audio files as your heart desires.
+
+### Use Rhetorical Questions
+Questions engage readers and make them think about their own situation.
+- "Hate returning stuff to Amazon?"
+- "Tired of chasing approvals?"
+
+### Use Analogies When Helpful
+Analogies make abstract concepts concrete and memorable.
+
+### Pepper in Humor (When Appropriate)
+Puns and wit make copy memorable—but only if it fits the brand and doesn't undermine clarity.
+
+---
+
+## Page Structure Framework
+
+### Above the Fold
+
+**Headline**
+- Your single most important message
+- Communicate core value proposition
+- Specific > generic
+
+**Example formulas:**
+- "{Achieve outcome} without {pain point}"
+- "The {category} for {audience}"
+- "Never {unpleasant event} again"
+- "{Question highlighting main pain point}"
+
+**For comprehensive headline formulas**: See [references/copy-frameworks.md](references/copy-frameworks.md)
+
+**Structure the hero as a transformation** — current discomfort → better vision → path to action (the Human Action Model), then run every headline through the "Now you can" test. See [references/copy-frameworks.md](references/copy-frameworks.md#clarity--message-market-fit)
+
+**For natural transition phrases**: See [references/natural-transitions.md](references/natural-transitions.md)
+
+**Subheadline**
+- Expands on headline
+- Adds specificity
+- 1-2 sentences max
+
+**Primary CTA**
+- Action-oriented button text
+- Communicate what they get: "Start Free Trial" > "Sign Up"
+
+### Core Sections
+
+| Section | Purpose |
 |---------|---------|
-| **How to [outcome]** | "How to Double Your Conversions in 30 Days" |
-| **[Number] Ways to [benefit]** | "7 Ways to Reduce Churn Without Hiring" |
-| **[Who] + [benefit]** | "For Marketers Who Want to Ship Faster" |
-| **[Problem]? Here's [solution]** | "Struggling with SEO? Here's the Fix" |
-| **[Before] → [After]** | "From 0 to 10K Users in 90 Days" |
-| **The [adjective] [noun] for [audience]** | "The Ultimate Guide for SaaS Founders" |
+| Social Proof | Build credibility (logos, stats, testimonials) |
+| Problem/Pain | Show you understand their situation |
+| Solution/Benefits | Connect to outcomes (3-5 key benefits) |
+| How It Works | Reduce perceived complexity (3-4 steps) |
+| Objection Handling | FAQ, comparisons, guarantees |
+| Final CTA | Recap value, repeat CTA, risk reversal |
 
-**Rules**: Front-load keywords; keep under 60 chars for SERP; avoid clickbait; match ad-to-page alignment.
+**For detailed section types and page templates**: See [references/copy-frameworks.md](references/copy-frameworks.md)
 
-**Information gain (differentiation)**: Copy that restates what competitors say adds zero value. Lead with unique angle, proprietary data, or contrarian insight. "What does this headline/promise add that others don't?" See **article-content** for full information gain strategy in long-form.
+---
 
-## Copy by Context
+## CTA Copy Guidelines
 
-| Context | Focus | Skills |
-|---------|-------|--------|
-| **Ad copy** | Hook, benefit, CTA; platform limits | paid-ads-strategy, google-ads, meta-ads |
-| **Landing page** | Headline, value prop, CTA; above fold | landing-page-generator, hero-generator |
-| **Email** | Subject line, preview, body, CTA | email-marketing |
-| **CTA** | Value-focused; action verb; avoid "Submit" | cta-generator |
-| **Article / blog** | Headline formulas, CTA copy; body → **article-content** | article-content, article-page-generator |
+**Weak CTAs (avoid):**
+- Submit, Sign Up, Learn More, Click Here, Get Started
 
-## Ad copy vs Landing page copy
+**Strong CTAs (use):**
+- Start Free Trial
+- Get [Specific Thing]
+- See [Product] in Action
+- Create Your First [Thing]
+- Download the Guide
 
-| Element | Ad | Landing Page |
-|---------|-----|--------------|
-| **Promise** | Must match page headline | Same promise; expand on it |
-| **Length** | Concise; platform limits | Enough to explain value |
-| **CTA** | Click-through; "Learn More" | Conversion; "Start Free Trial" |
+**Formula:** [Action Verb] + [What They Get] + [Qualifier if needed]
 
-**Avoid**: Ad promise not visible on page; mismatch increases bounce.
+Examples:
+- "Start My Free Trial"
+- "Get the Complete Checklist"
+- "See Pricing for My Team"
 
-## CTA Copy Best Practices
+---
 
-- **Value-focused**: "Start Free Trial" not "Submit"
-- **Action verb**: "Get," "Try," "Download," "Join"
-- **Specific**: "Get Your Free Audit" not "Click Here"
-- **A/B test**: Color, copy, placement, size
+## Page-Specific Guidance
+
+### Homepage
+- Serve multiple audiences without being generic
+- Lead with broadest value proposition
+- Provide clear paths for different visitor intents
+
+### Landing Page
+- Single message, single CTA
+- Match headline to ad/traffic source
+- Complete argument on one page
+
+### Pricing Page
+- Help visitors choose the right plan
+- Address "which is right for me?" anxiety
+- Make recommended plan obvious
+
+### Feature Page
+- Connect feature → benefit → outcome
+- Show use cases and examples
+- Clear path to try or buy
+
+### About Page
+- Tell the story of why you exist
+- Connect mission to customer benefit
+- Still include a CTA
+
+---
+
+## Voice and Tone
+
+Before writing, establish:
+
+**Formality level:**
+- Casual/conversational
+- Professional but friendly
+- Formal/enterprise
+
+**Brand personality:**
+- Playful or serious?
+- Bold or understated?
+- Technical or accessible?
+
+Maintain consistency, but adjust intensity:
+- Headlines can be bolder
+- Body copy should be clearer
+- CTAs should be action-oriented
+
+---
 
 ## Output Format
 
-- **Framework** (PAS, AIDA, BAB) recommendation
-- **Headline** options (2–3 variants)
-- **Body** copy structure
-- **CTA** copy options
-- **A/B test** suggestions (if applicable)
+When writing copy, provide:
+
+### Page Copy
+Organized by section:
+- Headline, Subheadline, CTA
+- Section headers and body copy
+- Secondary CTAs
+
+### Annotations
+For key elements, explain:
+- Why you made this choice
+- What principle it applies
+
+### Alternatives
+For headlines and CTAs, provide 2-3 options:
+- Option A: [copy] — [rationale]
+- Option B: [copy] — [rationale]
+
+### Meta Content (if relevant)
+- Page title (for SEO)
+- Meta description
+
+---
 
 ## Related Skills
 
-- **article-content**: Article body creation; applies PAS, AIDA, BAB to long-form; headline formulas for article titles
-- **landing-page-generator**: Landing page copy and structure
-- **hero-generator**: Hero headline, subheadline, CTA
-- **cta-generator**: CTA design and copy
-- **paid-ads-strategy**: Ad copy frameworks (PAS, BAB, Social Proof)
-- **email-marketing**: Email subject lines, body copy
-- **branding**: Brand voice, tone consistency
+- **copy-editing**: For polishing existing copy (use after your draft)
+- **cro**: If page structure/strategy needs work, not just copy
+- **emails**: For email copywriting
+- **popups**: For popup and modal copy
+- **ab-testing**: To test copy variations

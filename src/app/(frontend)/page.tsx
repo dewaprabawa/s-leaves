@@ -306,14 +306,14 @@ export default function Home() {
         </div>
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-32 pb-8 flex-1">
           <p className="hero-eyebrow text-sm md:text-base font-semibold tracking-[0.2em] uppercase mb-4 animate-fade-in-up">
-            Premium Adventure Experiences · Bali
+            Sekar Bali Activity · Pejeng, Ubud
           </p>
           <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold uppercase leading-[0.9] tracking-tight mb-6 animate-fade-in-up-delay-1">
-            <span className="block">Private Bali ATV</span>
-            <span className="hero-headline-accent block">& Ubud Adventures</span>
+            <span className="block">Private ATV &amp;</span>
+            <span className="hero-headline-accent block">Village Adventures</span>
           </h1>
           <p className="hero-subcopy text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
-            Book all-inclusive quad bike tours, ATV + Wos River tubing combos, whitewater rafting, or Ubud ricefield cycling — free Ubud hotel pickup on the cycling tour only.
+            All-inclusive jungle ATV from IDR 600K, rafting, canyon tubing, or Pejeng ricefield cycling with free Ubud pickup. Book on WhatsApp — no payment to inquire.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
             <button
@@ -321,10 +321,10 @@ export default function Home() {
               onClick={() => openBooking("single-atv")}
               className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm md:text-base uppercase tracking-wider border border-accent-gold-dark/20"
             >
-              Book Now
+              Book ATV on WhatsApp
             </button>
             <Link href="#adventures" className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-white/70 border-2 border-brand-green/25 text-brand-green font-bold text-sm md:text-base uppercase tracking-wider hover:bg-white transition-colors shadow-sm">
-              Explore Activities
+              See packages &amp; prices
             </Link>
           </div>
         </div>
@@ -348,9 +348,9 @@ export default function Home() {
       {/* ═══ ADVENTURE CARDS ═══ */}
       <section id="adventures" data-animate className="py-20 md:py-28 px-6 lg:px-12 max-w-7xl mx-auto w-full">
         <div className={`text-center mb-16 ${isVisible("adventures") ? "animate-fade-in-up" : ""}`}>
-          <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Choose your thrill</p>
+          <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Transparent IDR pricing</p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Packages</h2>
-          <p className="text-lg text-brand-green-light max-w-2xl mx-auto">From heart-pumping ATV rides to serene village cycling — we have the perfect adventure for every traveler.</p>
+          <p className="text-lg text-brand-green-light max-w-2xl mx-auto">Pick ATV, rafting, tubing, or Pejeng village cycling — inclusions and pickup rules listed before you message WhatsApp.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
@@ -589,19 +589,19 @@ export default function Home() {
           <div className="absolute inset-0 bg-brand-green/85" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto text-center text-sand">
-          <p className="text-accent-gold font-semibold tracking-[0.2em] uppercase text-sm mb-4">Ready for your adventure?</p>
+          <p className="text-accent-gold font-semibold tracking-[0.2em] uppercase text-sm mb-4">No payment to inquire</p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight mb-6">
-            Book Your<br /><span className="text-accent-gold">Bali Adventure</span><br />Today
+            Message WhatsApp.<br /><span className="text-accent-gold">Confirm your date</span><br />in minutes.
           </h2>
           <p className="text-lg opacity-80 max-w-xl mx-auto mb-10">
-            Message us directly on WhatsApp. Tell us your preferred date, group size, and activity — we&apos;ll confirm availability immediately.
+            Send your date, guest count, and activity. We reply with availability and the exact IDR total — including pickup if you need it.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/book"
               className="inline-flex items-center justify-center gap-3 h-14 md:h-16 px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-lg uppercase tracking-wider border border-accent-gold-dark/20 w-full sm:w-auto"
             >
-              Book All Activities
+              Start booking
             </Link>
             <button
               type="button"
@@ -609,11 +609,11 @@ export default function Home() {
               className="inline-flex items-center justify-center gap-3 h-14 md:h-16 px-10 rounded-full border-2 border-sand/30 text-sand font-bold text-lg uppercase tracking-wider hover:bg-sand/10 transition-colors w-full sm:w-auto"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-              WhatsApp Quick Book
+              WhatsApp ATV from IDR 600K
             </button>
           </div>
           <div className="mt-8 flex items-center justify-center gap-2 text-sm text-sand/70 font-medium">
-            <Check className="w-4 h-4" />No payment required to inquire · Instant response
+            <Check className="w-4 h-4" />Free cancellation up to 24 hours · No payment to inquire
           </div>
         </div>
       </section>

@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    // Omit max-snippet:-1 — some auditors misread -1 as snippet blocking.
+    // Omit unlimited-snippet googleBot overrides — some auditors misread -1 as blocking.
     // Default Google behavior already allows full snippets when unspecified.
     googleBot: {
       index: true,

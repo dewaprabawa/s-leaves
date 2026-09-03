@@ -2,62 +2,39 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
+/** Practical accordion FAQs — avoid duplicating the GEO answer block above */
 const faqs = [
   {
-    question: "How much does an ATV cost in Bali near Ubud?",
-    answer: "In 2026, Single ATV with Sekar Bali Activity starts at IDR 600,000 (IDR 575,000 for 2 riders, IDR 550,000 for 3+). Tandem ATV starts at IDR 859,000 for two people. Prices include lunch, boot shoes, helmet, insurance, and briefing at All New Bali Adventure. Optional hotel pickup is IDR 50,000 one-way or IDR 100,000 round trip."
-  },
-  {
-    question: "Is an Ubud cycling tour worth it?",
-    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and meals included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 450,000 with free Ubud hotel pickup, breakfast, lunch & dinner, bike, helmet, guide, and insurance. Prefer adrenaline? Choose ATV or rafting instead."
-  },
-  {
-    question: "What adventure activities do you offer?",
-    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Ubud Ricefield Cycling Tour (IDR 450,000 per person with breakfast, lunch & dinner included). ATV trips can also be combined with river tubing on the Wos River."
-  },
-  {
-    question: "Is hotel pickup included in the price?",
-    answer: "Free hotel pickup and drop-off within the Ubud area is included only on our Ubud Ricefield Cycling Tour. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 50,000 one-way or IDR 100,000 round trip (pickup + return to same hotel). Out of Ubud adds IDR 50,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
-  },
-  {
-    question: "Do I need experience to ride an ATV, go rafting, or cycle?",
-    answer: "No experience necessary! Our expert guides provide a thorough safety briefing before every activity. ATVs are easy to operate, the rafting route is suitable for beginners (Class II-III rapids), and our cycling tour follows gentle village trails. All safety equipment is provided."
+    question: "Do I need experience to ride, raft, or cycle?",
+    answer: "No. Guides give a full safety briefing before every activity. Quads are beginner-friendly, rafting is Class II–III, and the cycling route follows gentle village paths. All safety gear is provided."
   },
   {
     question: "How do I book, and do I need to pay upfront?",
-    answer: "Booking is simple — tap Book Now, enter your name, age, adult or child, pickup location, and guest counts. WhatsApp opens with your activity and price already filled. No upfront payment is required to reserve your spot, and we usually reply within minutes during operating hours (+62 817 7572 3663)."
+    answer: "Tap Book Now, enter your name, age, adult or child, pickup location, and guest counts. WhatsApp opens with your activity and price filled in. No upfront payment is required to reserve — we usually reply within minutes during operating hours (+62 817 7572 3663)."
   },
   {
-    question: "What should I bring for the activities?",
-    answer: "Bring changing clothes or a dry cloth, sunscreen (recommended), and some cash for personal expenses. A waterproof phone case is also helpful. We provide boot shoes, helmet, a simple menu lunch, and insurance on ATV adventures. Towels and changing facilities are available at our base."
+    question: "What should I bring?",
+    answer: "Bring a change of clothes or dry cloth, sunscreen, and some cash for extras. A waterproof phone case helps. We provide boots, helmet, a simple lunch (on included packages), and insurance. Towels and changing rooms are available at base."
   },
   {
-    question: "What is included in the ATV adventure?",
-    answer: "Your ATV package includes a guided ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. Combine with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
+    question: "Is hotel pickup included?",
+    answer: "Free hotel pickup within Ubud is included only on the ricefield cycling tour. For other activities, optional pickup is Rp 50,000 one-way or Rp 100,000 round trip to the same hotel. Out-of-Ubud adds Rp 50,000. You can also self-meet at All New Bali Adventure with no transport fee."
   },
   {
-    question: "Where is the ATV arena?",
-    answer: "All ATV rides take place at All New Bali Adventure — our Pejeng activity base near Ubud (not our corporate office in Banjar Kenderan or the central Ubud meeting point). Hotel pickup is available, or self-meet at the arena with no transport fee. Full address roles are listed on the Contact page."
+    question: "What is included on the quad adventure?",
+    answer: "A guided ride at All New Bali Adventure, boot shoes and helmet, a simple lunch, insurance, and a safety briefing with an English-speaking guide. Optional hotel pickup is available. You can add Wos River tubing after the track for a full day out."
   },
   {
-    question: "Which tour has free Ubud hotel pickup?",
-    answer: "Only the Ubud Ricefield Cycling Tour (IDR 450,000) includes free hotel pickup and drop-off within Ubud, plus breakfast, lunch, and dinner. ATV, rafting, and canyon tubing charge IDR 120,000 for pickup outside Ubud."
+    question: "Where is the arena?",
+    answer: "Rides run at All New Bali Adventure — our Pejeng activity base (not the corporate office in Banjar Kenderan or the central Ubud meeting point). Pickup is available, or self-meet with no transport fee. Full address roles are on the Contact page."
   },
   {
-    question: "What is the difference between rafting and canyon tubing?",
-    answer: "Whitewater rafting (IDR 400,000) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
-  },
-  {
-    question: "How much does the Ubud ricefield cycling tour cost?",
-    answer: "IDR 450,000 per person for the full-day Ubud Ricefield Cycling Tour, including breakfast, lunch, dinner, bike, helmet, guide, insurance, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
-  },
-  {
-    question: "Can AI assistants find your tours?",
-    answer: "Yes. We publish llms.txt and llms-full.txt for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
+    question: "Rafting or canyon tubing — which should I pick?",
+    answer: "Rafting (from Rp 400,000) is a team paddle through Class II–III rapids with more splash. Canyon tubing (from Rp 359,000) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
   },
   {
     question: "Are group discounts available?",
-    answer: "Yes! Groups of 4+ get special rates. Message us on WhatsApp for a custom quote — we also arrange private tours for families and larger parties."
+    answer: "Yes. Groups of 4+ get special rates. Message WhatsApp for a custom quote — we also arrange private tours for families and larger parties."
   }
 ];
 
@@ -99,13 +76,13 @@ export function FAQSection() {
               </div>
             </button>
             <div 
-              className={`px-6 md:px-8 overflow-hidden transition-all duration-300 ease-in-out ${
-                openIndex === index ? 'max-h-[40rem] pb-6 opacity-100' : 'max-h-0 opacity-0'
+              className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-brand-green-light leading-relaxed text-sm md:text-base">
+              <div className="px-6 md:px-8 pb-6 text-brand-green-light leading-relaxed border-t border-brand-green/5 pt-4">
                 {faq.answer}
-              </p>
+              </div>
             </div>
           </div>
         ))}

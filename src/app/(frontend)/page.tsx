@@ -171,6 +171,11 @@ const heroCarouselImages = [
 
 const travelGuides = [
   {
+    title: "Cycling & Cooking Class in Ubud",
+    excerpt: "Full-day rice paddy cycling plus evening Balinese cooking class — prices and itinerary.",
+    href: "/blog/cycling-cooking-class-ubud-full-day-itinerary",
+  },
+  {
     title: "Rafting vs Tubing vs ATV Near Ubud",
     excerpt: "Compare intensity, prices, and which adventure fits your style.",
     href: "/blog/rafting-vs-tubing-vs-atv-near-ubud",
@@ -194,11 +199,6 @@ const travelGuides = [
     title: "Ubud Ricefield Cycling Tour Guide",
     excerpt: "Full itinerary, IDR 450K pricing, and what is included on the cycling day tour.",
     href: "/blog/ubud-ricefield-cycling-tour-guide-2026",
-  },
-  {
-    title: "Bali ATV Tour Ubud Guide",
-    excerpt: "Trails, prices, and what is included for quad bike rides at All New Bali Adventure.",
-    href: "/blog/bali-atv-tour-ubud-guide",
   },
 ] as const
 

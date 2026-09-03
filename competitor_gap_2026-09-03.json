@@ -1,0 +1,433 @@
+{
+  "your_site": "https://www.sekarbaliactivity.com",
+  "your_pages_crawled": 48,
+  "your_topics": 320,
+  "competitors": {
+    "https://ubudcyclingtour.com": {
+      "pages_crawled": 25,
+      "topics": 48
+    },
+    "https://www.baliquadbiking.com": {
+      "pages_crawled": 50,
+      "topics": 400
+    },
+    "https://cookingclassinubud.com": {
+      "pages_crawled": 26,
+      "topics": 96
+    },
+    "https://atvrideubud.com": {
+      "pages_crawled": 36,
+      "topics": 276
+    }
+  },
+  "analysis": {
+    "gaps": [
+      {
+        "topic": "safety equipment",
+        "covered_by_competitors": 2,
+        "competitors": [
+          "https://www.baliquadbiking.com",
+          "https://atvrideubud.com"
+        ],
+        "priority": "High"
+      },
+      {
+        "topic": "atv ride bali",
+        "covered_by_competitors": 2,
+        "competitors": [
+          "https://www.baliquadbiking.com",
+          "https://atvrideubud.com"
+        ],
+        "priority": "High"
+      },
+      {
+        "topic": "please bring",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "agung sunrise trekking ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "balinese cooking class",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "check tripadvisor",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "tour included",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "blog ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling rafting ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling tour downhill",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling tour downhill ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "dolphin show wild life lovina beach",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "balinese cooking class atv quadbike tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "balinese cooking class atv quadbike tour ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "atv rafting",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "atv quad bike adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "special packages ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "sunrise trekking mount batur ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "dolphin show wild life lovina beach ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "balinese cooking class ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling tubing",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling rafting",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling flying fox ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling cooking class ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "agung sunrise trekking",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "atv tubing ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling tour atv quadbike ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "sunrise trekking mount batur",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling flying fox",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "flying fox adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling tour atv quadbike",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "flying fox adventure ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "atv rafting ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "gallery ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling cooking class",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "contact ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "rafting ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "tubing ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "tours ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "leave info",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "atv quadbike",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "atv quadbike ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "atv tubing",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "snorkeling ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "cycling tubing ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "booking form",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "mount batur trekking cycling",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "pick time",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "mount batur trekking cycling ubud cycling tour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://ubudcyclingtour.com"
+        ],
+        "priority": "Medium"
+      }
+    ],
+    "your_unique_topics": 320,
+    "competitor_unique_topics": 815,
+    "overlap_topics": 0,
+    "total_your_topics": 320
+  }
+}

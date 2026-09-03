@@ -49,7 +49,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
           </div>
           <div className="hidden md:flex items-center gap-3 text-xs opacity-80">
             <MapPin className="w-3.5 h-3.5" />
-            <span>Ubud · Kintamani · Bali, Indonesia</span>
+            <span>Pejeng activity base · Ubud, Bali</span>
           </div>
         </div>
       </div>

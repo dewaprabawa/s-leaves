@@ -6,6 +6,7 @@ import { Leaf, Mail, Phone } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import HeaderNav from "@/components/HeaderNav"
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from "@/lib/contact"
+import { ACTIVITY_BASE } from "@/lib/locations"
 import {
   DEFAULT_DESCRIPTION,
   DEFAULT_TITLE,
@@ -126,9 +127,10 @@ export const metadata: Metadata = {
   },
   other: {
     'geo.region': 'ID-BA',
-    'geo.placename': 'Pejeng, Ubud, Bali',
-    'geo.position': '-8.5133;115.2989',
-    ICBM: '-8.5133, 115.2989',
+    // Activity base geography for discovery; NAP / GBP uses corporate office
+    'geo.placename': ACTIVITY_BASE.formatted,
+    'geo.position': `${ACTIVITY_BASE.lat};${ACTIVITY_BASE.lng}`,
+    ICBM: `${ACTIVITY_BASE.lat}, ${ACTIVITY_BASE.lng}`,
   },
 }
 
@@ -284,7 +286,16 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                 <ul className="space-y-4">
                   <li><a href={CONTACT_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Phone className="w-4 h-4 shrink-0" />{CONTACT_PHONE_DISPLAY}</a></li>
                   <li><a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Mail className="w-4 h-4 shrink-0" />{CONTACT_EMAIL}</a></li>
-                  <li className="flex items-start gap-3 text-sm opacity-70"><Leaf className="w-4 h-4 shrink-0 mt-0.5" /><span>Pejeng, Ubud<br />Bali, Indonesia</span></li>
+                  <li className="flex items-start gap-3 text-sm opacity-70">
+                    <Leaf className="w-4 h-4 shrink-0 mt-0.5" />
+                    <span>
+                      <span className="block font-medium opacity-90">Activity base</span>
+                      Pejeng Village, Ubud<br />Bali, Indonesia
+                      <Link href="/contact" className="block mt-1.5 text-xs underline underline-offset-2 opacity-80 hover:opacity-100">
+                        Corporate office &amp; meeting point
+                      </Link>
+                    </span>
+                  </li>
                 </ul>
               </div>
             </div>

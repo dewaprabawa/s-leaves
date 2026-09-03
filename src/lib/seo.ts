@@ -1,4 +1,9 @@
 import { CONTACT_EMAIL, CONTACT_PHONE_E164, CONTACT_WHATSAPP_URL } from '@/lib/contact'
+import {
+  ACTIVITY_BASE,
+  PRIMARY_NAP_ADDRESS,
+  postalAddressSchema,
+} from '@/lib/locations'
 
 export const SITE_URL = 'https://www.sekarbaliactivity.com'
 export const SITE_NAME = 'Sekar Bali Activity'
@@ -36,22 +41,31 @@ export function buildOrganizationSchema() {
     image: `${SITE_URL}/logo.png`,
     logo: `${SITE_URL}/logo.png`,
     priceRange: 'IDR 359000 - IDR 859000',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Pejeng Village',
-      addressLocality: 'Ubud, Gianyar',
-      addressRegion: 'Bali',
-      postalCode: '80552',
-      addressCountry: 'ID',
-    },
+    // NAP must match Google Business Profile (corporate / registered office)
+    address: postalAddressSchema(PRIMARY_NAP_ADDRESS),
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: -8.5133,
-      longitude: 115.2989,
+      latitude: PRIMARY_NAP_ADDRESS.lat,
+      longitude: PRIMARY_NAP_ADDRESS.lng,
     },
+    hasMap: PRIMARY_NAP_ADDRESS.mapUrl,
+    additionalProperty: [
+      {
+        '@type': 'PropertyValue',
+        name: 'activityBase',
+        value: ACTIVITY_BASE.formatted,
+      },
+      {
+        '@type': 'PropertyValue',
+        name: 'activityBaseNote',
+        value:
+          'Adventures run from Pejeng / All New Bali Adventure near Ubud — not from the corporate office pin.',
+      },
+    ],
     areaServed: [
       { '@type': 'Place', name: 'Ubud' },
       { '@type': 'Place', name: 'Pejeng' },
+      { '@type': 'Place', name: 'Kenderan' },
       { '@type': 'Place', name: 'Gianyar' },
       { '@type': 'Place', name: 'Bali' },
     ],

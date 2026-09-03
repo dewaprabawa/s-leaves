@@ -2,6 +2,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from '@/lib/contact'
+import { ACTIVITY_BASE, PRIMARY_NAP_ADDRESS } from '@/lib/locations'
 import { SITE_NAME, SITE_URL } from '@/lib/seo'
 
 export const metadata: Metadata = {
@@ -45,8 +46,9 @@ export default function PrivacyPolicyPage() {
               <a href={SITE_URL} className="text-brand-green underline underline-offset-2 hover:opacity-80">
                 sekarbaliactivity.com
               </a>
-              . We offer adventure experiences based in Pejeng, Ubud, Bali — including ATV rides,
-              whitewater rafting, canyon tubing, village cycling, and private transfers.
+              . We offer adventure experiences based in {ACTIVITY_BASE.formatted} — including ATV rides,
+              whitewater rafting, canyon tubing, village cycling, and private transfers. Our registered
+              corporate office (Google Business Profile) is {PRIMARY_NAP_ADDRESS.formatted}.
             </p>
           </section>
 
@@ -200,7 +202,8 @@ export default function PrivacyPolicyPage() {
                   {CONTACT_PHONE_DISPLAY}
                 </a>
               </li>
-              <li>Location: Pejeng, Ubud, Bali, Indonesia</li>
+              <li>Corporate office: {PRIMARY_NAP_ADDRESS.formatted}</li>
+              <li>Activity base: {ACTIVITY_BASE.formatted}</li>
             </ul>
           </section>
 

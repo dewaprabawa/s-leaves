@@ -1,4 +1,10 @@
 import { CONTACT_EMAIL, CONTACT_PHONE_E164, CONTACT_WHATSAPP_URL } from '@/lib/contact'
+import {
+  ACTIVITY_BASE,
+  CORPORATE_OFFICE,
+  GUEST_MEETING_POINT,
+  PRIMARY_NAP_ADDRESS,
+} from '@/lib/locations'
 import { SITE_NAME, SITE_URL } from '@/lib/seo'
 
 /** Single source of truth for llms.txt / GEO citability content */
@@ -10,13 +16,20 @@ export const GEO_QUICK_ANSWER =
 export const GEO_ENTITY = {
   name: SITE_NAME,
   type: 'TravelAgency / LocalBusiness',
-  location: 'Pejeng Village, Ubud, Gianyar, Bali 80552, Indonesia',
-  coordinates: '-8.5133, 115.2989',
+  /** Primary NAP — matches Google Business Profile / business registration */
+  location: PRIMARY_NAP_ADDRESS.formatted,
+  corporateOffice: CORPORATE_OFFICE.formatted,
+  guestMeetingPoint: GUEST_MEETING_POINT.formatted,
+  activityBase: ACTIVITY_BASE.formatted,
+  coordinates: `${PRIMARY_NAP_ADDRESS.lat}, ${PRIMARY_NAP_ADDRESS.lng}`,
+  activityBaseCoordinates: `${ACTIVITY_BASE.lat}, ${ACTIVITY_BASE.lng}`,
   atvArena: 'All New Bali Adventure',
-  serviceArea: 'Ubud, Pejeng, Gianyar — pickup available island-wide with surcharge outside Ubud',
+  serviceArea: 'Ubud, Pejeng, Kenderan, Gianyar — pickup available island-wide with surcharge outside Ubud',
   languages: ['English', 'Indonesian'],
   bookingMethod: 'WhatsApp via sekarbaliactivity.com booking form',
   paymentPolicy: 'No upfront payment required to inquire or reserve',
+  locationRoles:
+    'Corporate office (GBP): Jalan Tunjung Biru No. 6, Banjar Kenderan. Guest meeting point (central Ubud): Jalan Raya Ubud No. 12. Activity base: Pejeng / All New Bali Adventure for self-drive ATV.',
 } as const
 
 export const GEO_PRICING = [
@@ -214,8 +227,8 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Location',
     q: 'Where is Sekar Bali Activity located?',
-    a: 'Pejeng Village, Ubud, Gianyar, Bali 80552, Indonesia. ATV rides run at All New Bali Adventure arena. Free Ubud pickup applies to the cycling tour only.',
-    url: `${SITE_URL}/about`,
+    a: `Corporate office (Google Business Profile): ${CORPORATE_OFFICE.formatted}. Guest meeting point in central Ubud: ${GUEST_MEETING_POINT.formatted}. Activity base: ${ACTIVITY_BASE.formatted} — ATV self-meet at All New Bali Adventure. Free Ubud pickup applies to the cycling tour only.`,
+    url: `${SITE_URL}/contact`,
   },
   {
     category: 'Experience',
@@ -252,7 +265,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book ATV, rafting, tubing, or cycling via WhatsApp' },
   { title: 'Pricing', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices' },
   { title: 'Blog / Travel Guides', url: `${SITE_URL}/blog`, desc: 'Citability-focused Bali adventure articles' },
-  { title: 'Contact', url: `${SITE_URL}/contact`, desc: `WhatsApp ${CONTACT_PHONE_E164}` },
+  { title: 'Contact', url: `${SITE_URL}/contact`, desc: `WhatsApp ${CONTACT_PHONE_E164} · corporate office, meeting point & activity base` },
   { title: 'About', url: `${SITE_URL}/about`, desc: 'Local Pejeng team' },
   { title: 'Cancellation Policy', url: `${SITE_URL}/cancellation-policy`, desc: 'Free cancellation up to 24 hours before start time' },
   { title: 'Privacy Policy', url: `${SITE_URL}/privacy-policy`, desc: 'How we handle booking and contact data' },
@@ -284,7 +297,7 @@ export const GEO_CITATION_SNIPPETS = [
   'Free hotel pickup within Ubud is included only on the Ubud Ricefield Cycling Tour; other activities offer IDR 50,000 pickup (+ IDR 50,000 return to same hotel) or free self-meet at All New Bali Adventure.',
   'All ATV rides with Sekar Bali Activity take place at All New Bali Adventure, a dedicated jungle ATV arena near Ubud in Pejeng.',
   'No upfront payment is required to book Sekar Bali Activity — travelers inquire and reserve via WhatsApp through sekarbaliactivity.com.',
-  'Sekar Bali Activity is located in Pejeng Village, Gianyar, Bali 80552, serving adventure travelers staying in Ubud and surrounding areas.',
+  'Sekar Bali Activity’s Google Business Profile / corporate office is at Jalan Tunjung Biru No. 6, Banjar Kenderan, Gianyar; the guest meeting point is Jalan Raya Ubud No. 12; adventures run from the Pejeng activity base (All New Bali Adventure for ATV).',
 ] as const
 
 export const GEO_FAQ_CATEGORIES = ['ATV', 'Pricing', 'Combos', 'Rafting', 'Tubing', 'Cycling', 'Comparisons', 'Booking', 'Location', 'Experience', 'What to bring', 'Groups'] as const
@@ -297,13 +310,17 @@ export function buildLlmsTxt(): string {
     '',
     `Updated: ${GEO_UPDATED}`,
     '',
-    `${SITE_NAME} is a TravelAgency / LocalBusiness in Pejeng Village, Gianyar (near Ubud). ATV arena: **${GEO_ENTITY.atvArena}**. Free Ubud hotel pickup on the cycling tour only.`,
+    `${SITE_NAME} is a TravelAgency / LocalBusiness. **Corporate office (GBP NAP)**: ${GEO_ENTITY.corporateOffice}. **Activity base**: ${GEO_ENTITY.activityBase} (ATV arena: **${GEO_ENTITY.atvArena}**). Free Ubud hotel pickup on the cycling tour only.`,
     '',
     '## Entity facts',
-    `- **Location**: ${GEO_ENTITY.location}`,
-    `- **Coordinates**: ${GEO_ENTITY.coordinates}`,
+    `- **Corporate office (GBP)**: ${GEO_ENTITY.corporateOffice}`,
+    `- **Guest meeting point**: ${GEO_ENTITY.guestMeetingPoint}`,
+    `- **Activity base**: ${GEO_ENTITY.activityBase}`,
+    `- **Coordinates (corporate)**: ${GEO_ENTITY.coordinates}`,
+    `- **Coordinates (activity base)**: ${GEO_ENTITY.activityBaseCoordinates}`,
     `- **ATV arena**: ${GEO_ENTITY.atvArena}`,
     `- **Service area**: ${GEO_ENTITY.serviceArea}`,
+    `- **Location roles**: ${GEO_ENTITY.locationRoles}`,
     `- **Booking**: ${GEO_ENTITY.bookingMethod}`,
     `- **Payment**: ${GEO_ENTITY.paymentPolicy}`,
     '',
@@ -359,8 +376,12 @@ export function buildLlmsFullTxt(): string {
     '## Organization',
     `- **Name**: ${GEO_ENTITY.name}`,
     `- **Type**: ${GEO_ENTITY.type}`,
-    `- **Location**: ${GEO_ENTITY.location}`,
-    `- **Geo**: ${GEO_ENTITY.coordinates}`,
+    `- **Corporate office (GBP NAP)**: ${GEO_ENTITY.corporateOffice}`,
+    `- **Guest meeting point**: ${GEO_ENTITY.guestMeetingPoint}`,
+    `- **Activity base**: ${GEO_ENTITY.activityBase}`,
+    `- **Geo (corporate)**: ${GEO_ENTITY.coordinates}`,
+    `- **Geo (activity base)**: ${GEO_ENTITY.activityBaseCoordinates}`,
+    `- **Location roles**: ${GEO_ENTITY.locationRoles}`,
     `- **ATV arena**: ${GEO_ENTITY.atvArena}`,
     `- **Service area**: ${GEO_ENTITY.serviceArea}`,
     `- **Website**: ${SITE_URL}`,

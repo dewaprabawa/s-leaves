@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     question: "Where is the ATV arena?",
-    answer: "All ATV rides take place at All New Bali Adventure — our dedicated jungle ATV arena near Ubud in Pejeng. Hotel pickup is available for an additional IDR 120,000. See our location guide for directions and what to expect on arrival."
+    answer: "All ATV rides take place at All New Bali Adventure — our Pejeng activity base near Ubud (not our corporate office in Banjar Kenderan or the central Ubud meeting point). Hotel pickup is available, or self-meet at the arena with no transport fee. Full address roles are listed on the Contact page."
   },
   {
     question: "Which tour has free Ubud hotel pickup?",

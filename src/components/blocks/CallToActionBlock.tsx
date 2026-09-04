@@ -3,14 +3,14 @@ import Link from 'next/link'
 
 export const CallToActionBlock = ({ block }: { block: any }) => {
   return (
-    <section className="py-24 px-6 bg-emerald-50 dark:bg-emerald-950/20">
-      <div className="max-w-4xl mx-auto text-center space-y-8 bg-white dark:bg-gray-900 p-12 rounded-3xl shadow-xl ring-1 ring-emerald-900/5">
+    <section className="py-24 px-6 section-atmosphere">
+      <div className="max-w-4xl mx-auto text-center space-y-8 bg-white p-12 border border-brand-green/10">
         <div className="space-y-4">
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white tracking-tight">
+          <h2 className="font-display text-4xl font-bold uppercase text-brand-green tracking-tight">
             {block.title}
           </h2>
           {block.text && (
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-xl text-brand-green-light max-w-2xl mx-auto">
               {block.text}
             </p>
           )}
@@ -19,7 +19,7 @@ export const CallToActionBlock = ({ block }: { block: any }) => {
         <div className="pt-4">
           <Link 
             href={block.buttonLink}
-            className="inline-flex items-center justify-center rounded-full bg-emerald-600 px-8 py-4 text-lg font-semibold text-white hover:bg-emerald-700 hover:scale-105 transition-all shadow-md hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-full btn-gold-shimmer px-8 py-4 text-lg font-semibold hover:scale-105 transition-all focus:outline-none focus:ring-2 focus:ring-accent-gold focus:ring-offset-2"
           >
             {block.buttonLabel}
           </Link>

@@ -60,12 +60,12 @@ export default function ContactFormClient() {
 
   if (isSuccess) {
     return (
-      <div className="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-3xl p-8 text-center space-y-4 shadow-sm h-full flex flex-col items-center justify-center min-h-[400px]">
-        <div className="w-16 h-16 bg-emerald-100 dark:bg-emerald-800 rounded-full flex items-center justify-center mx-auto mb-2">
-          <CheckCircle2 className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
+      <div className="bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800 rounded-3xl p-8 text-center space-y-4 shadow-sm h-full flex flex-col items-center justify-center min-h-[400px]">
+        <div className="w-16 h-16 bg-sky-100 dark:bg-sky-800 rounded-full flex items-center justify-center mx-auto mb-2">
+          <CheckCircle2 className="w-8 h-8 text-sky-600 dark:text-sky-400" />
         </div>
         <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Message Sent!</h3>
-        <p className="text-emerald-800 dark:text-emerald-200 max-w-sm mx-auto">
+        <p className="text-sky-800 dark:text-sky-200 max-w-sm mx-auto">
           Thank you for reaching out. Our travel specialists will contact you shortly.
         </p>
         <button
@@ -96,11 +96,11 @@ export default function ContactFormClient() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
             <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-              <User className="w-4 h-4 text-emerald-500" /> Full Name
+              <User className="w-4 h-4 text-sky-500" /> Full Name
             </label>
             <input
               {...register("name")}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600"
               placeholder="John Doe"
             />
             {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
@@ -108,11 +108,11 @@ export default function ContactFormClient() {
 
           <div>
             <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-              <Mail className="w-4 h-4 text-emerald-500" /> Email Address
+              <Mail className="w-4 h-4 text-sky-500" /> Email Address
             </label>
             <input
               {...register("email")}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600"
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600"
               placeholder="john@example.com"
             />
             {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
@@ -121,11 +121,11 @@ export default function ContactFormClient() {
 
         <div>
           <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-            <MessageSquare className="w-4 h-4 text-emerald-500" /> Subject
+            <MessageSquare className="w-4 h-4 text-sky-500" /> Subject
           </label>
           <input
             {...register("subject")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600"
+            className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600"
             placeholder="How can we help you?"
           />
           {errors.subject && <p className="text-red-500 text-xs mt-1">{errors.subject.message}</p>}
@@ -138,7 +138,7 @@ export default function ContactFormClient() {
           <textarea
             {...register("message")}
             rows={4}
-            className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600 resize-none"
+            className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600 resize-none"
             placeholder="Tell us about your dream trip..."
           />
           {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message.message}</p>}
@@ -148,7 +148,7 @@ export default function ContactFormClient() {
           <button
             type="submit"
             disabled={isSubmitting || !isValid}
-            className="w-full py-3 px-6 bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-xl font-semibold transition-colors flex items-center justify-center shadow-lg shadow-emerald-600/20"
+            className="w-full py-3 px-6 bg-sky-600 hover:bg-sky-500 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-xl font-semibold transition-colors flex items-center justify-center shadow-lg shadow-sky-600/20"
           >
             {isSubmitting ? (
               <><Loader2 className="w-5 h-5 mr-2 animate-spin" /> Sending...</>

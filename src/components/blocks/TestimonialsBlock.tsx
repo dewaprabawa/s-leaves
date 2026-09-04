@@ -10,7 +10,7 @@ export const TestimonialsBlock = ({ block }: { block: any }) => {
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-300 border border-emerald-100/30">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-sky-50 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-sky-700 dark:bg-sky-950/30 dark:text-sky-300 border border-sky-100/30">
             Reviews
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 dark:text-white tracking-tight">
@@ -62,7 +62,7 @@ export const TestimonialsBlock = ({ block }: { block: any }) => {
                       />
                     </div>
                   ) : (
-                    <div className="w-11 h-11 rounded-full bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center font-bold text-emerald-700 dark:text-emerald-300 uppercase shrink-0">
+                    <div className="w-11 h-11 rounded-full bg-sky-100 dark:bg-sky-950 flex items-center justify-center font-bold text-sky-700 dark:text-sky-300 uppercase shrink-0">
                       {rev.author[0]}
                     </div>
                   )}

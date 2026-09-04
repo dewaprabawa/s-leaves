@@ -2,15 +2,18 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #F6EEDA;
-  --foreground: #1c2e26;
-  --brand-green: #17372b;
-  --brand-green-light: #2c5847;
-  --sand: #F6EEDA;
-  --sand-dark: #f0ebe1;
-  --accent-gold: #D4A843;
-  --accent-amber: #E8B84B;
-  --accent-gold-dark: #B8922F;
+  /* Sport & travel palette — navy ink + coral energy (no jungle green) */
+  --background: #f2f5f9;
+  --foreground: #0a1628;
+  --brand-green: #0a1628;
+  --brand-green-light: #3d5168;
+  --sand: #f2f5f9;
+  --sand-dark: #e3e9f1;
+  --accent-gold: #ff4d2e;
+  --accent-amber: #ff6b4a;
+  --accent-gold-dark: #e03a1c;
+  --sky: #1e6bb8;
+  --ink-soft: #152238;
 }
 
 @theme inline {
@@ -23,8 +26,10 @@
   --color-accent-gold: var(--accent-gold);
   --color-accent-amber: var(--accent-amber);
   --color-accent-gold-dark: var(--accent-gold-dark);
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-outfit);
+  --color-sky: var(--sky);
+  --color-ink-soft: var(--ink-soft);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-barlow);
 }
 
 html {
@@ -49,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ─── Animations ─── */
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
+  from { opacity: 0; transform: translateY(28px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -59,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes scaleIn {
-  from { opacity: 0; transform: scale(0.9); }
+  from { opacity: 0; transform: scale(0.94); }
   to { opacity: 1; transform: scale(1); }
 }
 
@@ -73,17 +78,32 @@ h1, h2, h3, h4, h5, h6 {
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes heroZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+@keyframes driftUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 8px 28px rgba(255, 77, 46, 0.28); }
+  50% { box-shadow: 0 10px 36px rgba(255, 77, 46, 0.42); }
+}
+
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out both;
 }
 .animate-fade-in-up-delay-1 {
-  animation: fadeInUp 0.8s ease-out 0.15s both;
+  animation: fadeInUp 0.8s ease-out 0.12s both;
 }
 .animate-fade-in-up-delay-2 {
-  animation: fadeInUp 0.8s ease-out 0.3s both;
+  animation: fadeInUp 0.8s ease-out 0.24s both;
 }
 .animate-fade-in-up-delay-3 {
-  animation: fadeInUp 0.8s ease-out 0.45s both;
+  animation: fadeInUp 0.8s ease-out 0.36s both;
 }
 .animate-slide-in-right {
   animation: slideInRight 0.7s ease-out both;
@@ -94,92 +114,117 @@ h1, h2, h3, h4, h5, h6 {
 .animate-count-up {
   animation: countUp 0.6s ease-out both;
 }
-
-/* ─── Hero overlay gradient ─── */
-.hero-overlay {
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.78) 0%,
-    rgba(255, 255, 255, 0.72) 35%,
-    rgba(246, 238, 218, 0.68) 60%,
-    rgba(246, 238, 218, 0.55) 80%,
-    rgba(23, 55, 43, 0.35) 100%
-  );
+.animate-drift-up {
+  animation: driftUp 0.7s ease-out both;
 }
 
-/* Hero copy on white/sand scrim */
+.hero-media {
+  animation: heroZoom 22s ease-out forwards;
+}
+
+/* ─── Hero overlay — dark sport/travel scrim on full-bleed photo ─── */
+.hero-overlay {
+  background:
+    linear-gradient(
+      105deg,
+      rgba(10, 22, 40, 0.82) 0%,
+      rgba(10, 22, 40, 0.55) 42%,
+      rgba(10, 22, 40, 0.28) 70%,
+      rgba(10, 22, 40, 0.45) 100%
+    ),
+    linear-gradient(
+      to top,
+      rgba(10, 22, 40, 0.75) 0%,
+      transparent 42%
+    );
+}
+
 .hero-headline {
-  color: var(--brand-green);
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  text-shadow: 0 2px 24px rgba(10, 22, 40, 0.45);
 }
 .hero-headline-accent {
-  color: var(--accent-gold-dark);
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+  color: var(--accent-amber);
+  text-shadow: 0 2px 24px rgba(10, 22, 40, 0.35);
 }
 .hero-eyebrow {
-  color: var(--brand-green-light);
+  color: rgba(255, 255, 255, 0.88);
+  letter-spacing: 0.22em;
 }
 .hero-subcopy {
-  color: var(--brand-green);
-  opacity: 0.88;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.hero-brand {
+  font-family: var(--font-display), sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.04em;
 }
 
 /* ─── Floating header ─── */
 .floating-header {
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background: rgba(246, 238, 218, 0.92);
-  box-shadow: 0 4px 30px rgba(23, 55, 43, 0.08);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  background: rgba(242, 245, 249, 0.92);
+  box-shadow: 0 8px 32px rgba(10, 22, 40, 0.1);
 }
 .floating-header-scrolled {
-  background: rgba(246, 238, 218, 0.98);
-  box-shadow: 0 4px 30px rgba(23, 55, 43, 0.15);
+  background: rgba(242, 245, 249, 0.97);
+  box-shadow: 0 10px 36px rgba(10, 22, 40, 0.14);
 }
 
-/* ─── Card hover effects ─── */
+/* ─── Adventure card hover ─── */
 .adventure-card {
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
               box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .adventure-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 60px rgba(23, 55, 43, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 22px 50px rgba(10, 22, 40, 0.14);
 }
 .adventure-card:hover .adventure-card-image {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 .adventure-card-image {
   transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* ─── Gold shimmer button ─── */
+/* ─── Coral energy button ─── */
 .btn-gold-shimmer {
   background: linear-gradient(135deg, var(--accent-gold), var(--accent-amber), var(--accent-gold));
   background-size: 200% 100%;
+  color: #ffffff;
   transition: all 0.3s ease;
 }
 .btn-gold-shimmer:hover {
-  animation: shimmer 2s linear infinite;
-  box-shadow: 0 8px 25px rgba(212, 168, 67, 0.35);
+  animation: shimmer 1.8s linear infinite, pulseGlow 1.6s ease-in-out infinite;
+}
+
+/* Atmosphere wash for secondary sections */
+.section-atmosphere {
+  background:
+    radial-gradient(ellipse 80% 60% at 10% 0%, rgba(30, 107, 184, 0.07), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 90% 20%, rgba(255, 77, 46, 0.06), transparent 50%),
+    var(--sand);
 }
 
 /* ─── Pricing row hover ─── */
 .pricing-row {
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
 }
 .pricing-row:hover {
-  background-color: rgba(23, 55, 43, 0.04);
+  background-color: rgba(10, 22, 40, 0.03);
 }
 
 /* ─── Timeline ─── */
 .timeline-dot {
   position: absolute; left: 0; top: 6px;
   width: 12px; height: 12px; border-radius: 50%;
-  background-color: var(--brand-green); z-index: 10;
+  background-color: var(--accent-gold); z-index: 10;
 }
 .timeline-line {
   position: absolute; left: 5px; top: 18px; bottom: -20px;
-  width: 2px; background-color: var(--brand-green-light); opacity: 0.3;
+  width: 2px; background-color: var(--brand-green-light); opacity: 0.25;
 }
 .timeline-row:last-child .timeline-line { display: none; }
 
@@ -238,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2.25em;
   padding: 1.5em 1.5em 1.5em 1.6em;
   border-left: 4px solid var(--accent-gold);
-  background: rgba(23, 55, 43, 0.05);
+  background: rgba(10, 22, 40, 0.04);
   border-radius: 0 0.75rem 0.75rem 0;
 }
 
@@ -260,7 +305,7 @@ h1, h2, h3, h4, h5, h6 {
 .blog-content :where(hr) {
   margin-top: 3em;
   margin-bottom: 3em;
-  border-color: rgba(23, 55, 43, 0.12);
+  border-color: rgba(10, 22, 40, 0.12);
 }
 
 .blog-content :where(table) {
@@ -274,13 +319,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .blog-content :where(th, td) {
   padding: 0.9em 1.1em;
-  border: 1px solid rgba(23, 55, 43, 0.12);
+  border: 1px solid rgba(10, 22, 40, 0.12);
   vertical-align: top;
   line-height: 1.6;
 }
 
 .blog-content :where(th) {
-  background: rgba(23, 55, 43, 0.06);
+  background: rgba(10, 22, 40, 0.05);
   color: var(--brand-green);
   font-weight: 700;
 }
@@ -291,14 +336,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blog-content :where(a) {
-  color: var(--brand-green);
+  color: var(--sky);
   text-decoration-line: underline;
   text-underline-offset: 3px;
-  text-decoration-color: rgba(23, 55, 43, 0.35);
+  text-decoration-color: rgba(30, 107, 184, 0.35);
 }
 
 .blog-content :where(a:hover) {
-  color: var(--brand-green-light);
+  color: var(--accent-gold-dark);
   text-decoration-color: var(--accent-gold);
 }
 

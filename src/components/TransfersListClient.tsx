@@ -59,7 +59,7 @@ export default function TransfersListClient({ initialTransfers }: Props) {
             >
               {/* Header / Route info */}
               <div className="space-y-4">
-                <div className="flex items-center gap-2 text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wide">
+                <div className="flex items-center gap-2 text-xs font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-wide">
                   <Shield className="w-4 h-4" /> Private Transfer Service
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -78,7 +78,7 @@ export default function TransfersListClient({ initialTransfers }: Props) {
                   <div className="flex flex-col space-y-1">
                     <span className="text-xs text-gray-400">Drop-off</span>
                     <span className="font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-1.5">
-                      <MapPin className="w-3.5 h-3.5 text-emerald-500" /> {transfer.route?.to}
+                      <MapPin className="w-3.5 h-3.5 text-sky-500" /> {transfer.route?.to}
                     </span>
                   </div>
                 </div>
@@ -102,14 +102,14 @@ export default function TransfersListClient({ initialTransfers }: Props) {
               <div className="flex items-center justify-between pt-2">
                 <div>
                   <span className="block text-xs text-gray-400">Rates From</span>
-                  <span className="text-2xl font-extrabold text-emerald-600 dark:text-emerald-400">
+                  <span className="text-2xl font-extrabold text-sky-600 dark:text-sky-400">
                     {formatPrice(startingPrice)}
                   </span>
                 </div>
                 
                 <button 
                   onClick={() => setSelectedTransfer(transfer)}
-                  className="inline-flex items-center justify-center rounded-xl bg-emerald-600 hover:bg-emerald-500 px-5 py-3 text-sm font-semibold text-white shadow-md transition-colors"
+                  className="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-500 px-5 py-3 text-sm font-semibold text-white shadow-md transition-colors"
                 >
                   Book Transfer
                 </button>

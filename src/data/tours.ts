@@ -410,10 +410,10 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     slug: "ubud-ricefield-cycling-tour",
     category: "Activity",
     duration: "Full Day",
-    basePrice: 450000,
+    basePrice: 475000,
     seoTitle: "Ubud Rice Paddy Cycling Tour | Pejeng Village",
     seoDescription:
-      "Pejeng rice paddy cycling near Ubud — lunch included, free hotel pickup from IDR 450K. Small-group countryside bike tour. Book via WhatsApp.",
+      "Pejeng rice paddy cycling near Ubud — lunch included, free hotel pickup from IDR 475K. Small-group countryside bike tour. Book via WhatsApp.",
     heroImage: {
       url: "/images/cycling/rice-field-bikes.jpg",
       alt: "Rice paddy cycling tour through Pejeng village terraces near Ubud",
@@ -449,7 +449,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 450K with free Ubud hotel pickup. Pair with an evening Balinese cooking class for a full cultural day.",
+    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 475K with free Ubud hotel pickup. Pair with an evening Balinese cooking class for a full cultural day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.

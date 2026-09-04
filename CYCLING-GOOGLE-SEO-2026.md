@@ -47,7 +47,7 @@ Kintamani downhill volcano cycling, Tegallalang-only mass routes, “3 meals” 
 | Element | Target | Status |
 |---------|--------|--------|
 | Title | ≤60 chars; rice paddy + Pejeng | ✅ `seoTitle` |
-| Meta description | ≤160; lunch + free pickup + IDR 450K + WhatsApp | ✅ `seoDescription` |
+| Meta description | ≤160; lunch + free pickup + IDR 475K + WhatsApp | ✅ `seoDescription` |
 | H1 | Clear product name (on-page) | ✅ tour title |
 | H2s | Rice paddy / countryside, village culture, lunch | ✅ |
 | Canonical | `/tours/ubud-ricefield-cycling-tour` | ✅ |

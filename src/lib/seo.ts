@@ -11,12 +11,12 @@ export const SITE_NAME = 'Sekar Bali Activity'
 /** SERP title target: brand + offer, ≤60 characters */
 export const DEFAULT_TITLE = 'Sekar Bali Activity | ATV & Ubud Adventures'
 export const DEFAULT_DESCRIPTION =
-  'Jungle ATV from IDR 600K near Ubud, plus rafting, canyon tubing & ricefield cycling from IDR 450K. Free Ubud pickup on cycling. Book via WhatsApp.'
+  'Jungle ATV from IDR 600K near Ubud, plus rafting, canyon tubing & ricefield cycling from IDR 475K. Free Ubud pickup on cycling. Book via WhatsApp.'
 
 /** Social previews (og:title ≤60, og:description ≤160) */
 export const OG_TITLE = 'Private ATV & Ubud Adventures | Sekar Bali'
 export const OG_DESCRIPTION =
-  'Jungle ATV from IDR 600K, rafting, tubing & ricefield cycling from IDR 450K. Free Ubud pickup on cycling. Book via WhatsApp.'
+  'Jungle ATV from IDR 600K, rafting, tubing & ricefield cycling from IDR 475K. Free Ubud pickup on cycling. Book via WhatsApp.'
 
 export const OG_IMAGE = {
   url: '/images/adventures/og-cover.jpg',

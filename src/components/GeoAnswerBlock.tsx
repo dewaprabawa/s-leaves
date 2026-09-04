@@ -103,7 +103,7 @@ export default function GeoAnswerBlock() {
         <h3 className="font-display text-xl font-bold text-brand-green uppercase text-center mb-6">
           Activity comparisons
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {GEO_COMPARISONS.map((comparison) => (
             <article
               key={comparison.title}

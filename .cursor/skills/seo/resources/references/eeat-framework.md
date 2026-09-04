@@ -1,8 +1,8 @@
-<!-- Updated: 2026-05-14 -->
+<!-- Updated: 2026-09-04 -->
 
 # E-E-A-T Evaluation Framework
 ## Updated per Google Quality Rater Guidelines — September 11, 2025
-## Plus December 2025 Core Update Implications
+## Plus December 2025 + March/May 2026 Core Update Implications
 
 ## Overview
 
@@ -29,6 +29,22 @@ The December 2025 core update was described as a "watershed moment" that:
 | E-commerce | 52% average decline |
 
 **Key takeaway:** Even entertainment and lifestyle content now requires demonstrated expertise. Generic content no longer ranks.
+
+## CRITICAL: March & May 2026 Core Updates
+
+> **Originality, information gain, and first-hand expertise outweigh aggregated or SEO-templated pages.**
+
+Confirmed focus areas across the two broad 2026 cores:
+- Surface more relevant, satisfying, high-quality content across site types
+- Reward first-party data, original insights, case studies, and real-world operator experience
+- Strengthen brand/authoritative signals alongside classic E-E-A-T
+- Sustained pressure on AI-generated commodity / scaled low-effort publishing
+
+**Agent evaluation rules (post–May 2026):**
+- Prefer pages with unique photos, itineraries, prices from the operator, local specifics, and verifiable experience
+- Flag thin aggregators, near-duplicate programmatic pages, and generic AI roundups as high risk
+- Do not advise “wait for the next update” as a recovery plan — real content changes are required
+- Keep Discover advice separate from Search ranking advice (Feb 2026 Discover core was Discover-only)
 
 ## YMYL (Your Money or Your Life)
 
@@ -148,9 +164,13 @@ Raters now formally evaluate whether content appears AI-generated:
 - **Expired domain abuse**: Buying expired domains for their backlinks
 - **Site reputation abuse**: Using reputable site to host low-quality content
 - **Scaled content abuse**: Mass-producing content without value
+- **AI search citation manipulation** (confirmed 2026): Buying or otherwise manipulating citations to influence AI Overviews / AI Mode answers — spam policies explicitly extend to AI search features
 
 ### AI Overview Evaluation
 Raters assess quality of AI-generated summaries in search results.
+
+### Measurement note (2026)
+Search Console is rolling out an **AI Performance** report separating AI Overviews / AI Mode visibility from classic organic — treat AI citation as its own KPI.
 
 ### RSL 1.0 (Really Simple Licensing)
 New machine-readable content licensing standard (December 2025) for AI training:

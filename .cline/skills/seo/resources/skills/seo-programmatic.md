@@ -75,11 +75,19 @@ Design templates that produce unique, valuable pages:
 
 ### Scaled Content Abuse — Enforcement Context (2025-2026)
 
-Google's Scaled Content Abuse policy (introduced March 2024) saw major enforcement escalation in 2025:
+Google's Scaled Content Abuse policy (introduced March 2024) saw major enforcement escalation in 2025–2026:
 
 - **June 2025:** Wave of manual actions targeting websites with AI-generated content at scale
 - **August 2025:** SpamBrain spam update enhanced pattern detection for AI-generated link schemes and content farms
-- **Result:** Google reported 45% reduction in low-quality, unoriginal content in search results post-March 2024 enforcement
+- **March 2026 Spam Update:** Very fast rollout targeting scaled low-quality / bulk AI-spam before the March core
+- **March & May 2026 Core Updates:** Sustained demotion of AI “commodity content” and templated publishing; sites hit earlier showed little recovery without real rewrites (industry observed)
+- **June 2026 Spam Update:** Global, fast enforcement of existing policies amid AI-spam / citation-manipulation speculation (mechanism unconfirmed by Google)
+- **Result:** Google reported 45% reduction in low-quality, unoriginal content in search results post-March 2024 enforcement; 2026 continued the same direction harder
+
+**Hard agent rules:**
+- Never recommend publishing hundreds of near-duplicate AI location/guide pages
+- Never recommend citation buying or AI Overview manipulation
+- Prefer fewer pages with first-party data, unique media, and real expertise over scaled templates
 
 **Enhanced quality gates for programmatic pages:**
 - **Content differentiation:** ≥30-40% of content must be genuinely unique between any two programmatic pages (not just city/keyword string replacement)

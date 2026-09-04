@@ -10,7 +10,7 @@ description: >
   "ChatGPT search", or "AI visibility".
 ---
 
-# AI Search / GEO Optimization (February 2026)
+# AI Search / GEO Optimization (September 2026)
 
 ## Key Statistics
 
@@ -36,6 +36,14 @@ description: >
 | Domain Rating (backlinks) | ~0.266 (weak) |
 
 **Only 11% of domains** are cited by both ChatGPT and Google AI Overviews for the same query — platform-specific optimization is essential.
+
+### 2026 Policy Guardrails (Mandatory)
+
+1. **AI citation manipulation is spam** — Do not buy, exchange, or engineer fake citations to influence AI Overviews or AI Mode. Earn citations via original, citable content and legitimate brand mentions.
+2. **FAQ rich results are gone** (~May 7, 2026) — Keep visible FAQ / Q&A for citability; do **not** recommend FAQPage schema for commercial sites or pitch rich-result recovery.
+3. **Track AI Performance separately** — Use Search Console’s AI Performance report (rolling out) alongside classic organic; AI visibility ≠ ranking visibility.
+4. **Agentic search (I/O 2026)** — AI Mode Search Agents favor structured, up-to-date facts (pricing, policies, availability). Prefer machine-readable surfaces (`llms.txt`, pricing.md, clean Product/Service schema) over keyword-stuffed prose.
+5. **Commodity AI content loses** — Mar/May 2026 cores + spam updates continued demoting scaled low-effort AI pages. GEO wins come from unique operator facts, not mass-generated answer pages.
 
 ---
 
@@ -253,7 +261,7 @@ Google Passage Indexing (active since 2021) ranks individual passages independen
 3. Ensure server-side rendering for key content
 4. Build entity presence on Reddit, YouTube
 5. Add comparison tables with data
-6. Implement FAQ sections (structured, not schema for commercial sites)
+6. Implement FAQ sections (structured visible Q&A; **not** FAQPage schema for commercial sites; do not chase FAQ rich results — removed May 2026)
 
 ## High Impact
 

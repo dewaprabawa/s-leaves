@@ -1,5 +1,5 @@
-<!-- Updated: 2026-02-07 -->
-# Schema.org Types — Status & Recommendations (February 2026)
+<!-- Updated: 2026-09-04 -->
+# Schema.org Types — Status & Recommendations (September 2026)
 
 **Schema.org Version:** 29.4 (December 8, 2025)
 
@@ -47,9 +47,11 @@ Google's documentation explicitly recommends JSON-LD over Microdata and RDFa.
 
 | Type | Restriction | Since |
 |------|------------|-------|
-| FAQPage | Government and healthcare authority sites ONLY | August 2023 |
+| FAQPage | Government and healthcare authority sites ONLY (do not recommend for commercial) | August 2023 |
 
-> Google severely limited FAQ rich results. Only authoritative sources (government, health organizations) now receive FAQ rich results. Do NOT recommend FAQPage schema for commercial sites.
+> **May 7, 2026:** FAQ **rich results** stopped appearing across all site types. Even qualifying sites no longer get expandable FAQ SERP rows. FAQPage schema may still help Google/AI systems understand Q&A content and can support AI Overview eligibility, but it must **not** be recommended for commercial sites and must **not** be pitched as a rich-result tactic.
+>
+> Prefer visible FAQ sections + `Question`/`Answer` (or Article/WebPage speakable blocks) for commercial sites — matching user-facing content only.
 
 ---
 

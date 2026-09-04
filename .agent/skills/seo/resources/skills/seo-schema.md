@@ -28,7 +28,7 @@ description: >
   - Invalid date formats
 - Flag deprecated types (see below)
 
-## Schema Type Status (as of Feb 2026)
+## Schema Type Status (as of Sep 2026)
 
 Read `references/schema-types.md` for the full list. Key rules:
 
@@ -43,7 +43,7 @@ See `schema/templates.json` for ready-to-use JSON-LD templates for these types.
 > **JSON-LD and JavaScript rendering:** Per Google's December 2025 JS SEO guidance, structured data injected via JavaScript may face delayed processing. For time-sensitive markup (especially Product, Offer), include JSON-LD in the initial server-rendered HTML.
 
 ### RESTRICTED — only for specific sites:
-- **FAQ**: ONLY for government and healthcare authority sites (restricted Aug 2023)
+- **FAQ**: ONLY for government and healthcare authority sites (restricted Aug 2023). FAQ **rich results** stopped appearing across all site types ~May 7, 2026 — do not recommend FAQPage for commercial sites or as a rich-result tactic. Visible Q&A + non-FAQPage Question/Answer markup is preferred for commercial/GEO use.
 
 ### DEPRECATED — never recommend:
 - **HowTo**: Rich results removed September 2023

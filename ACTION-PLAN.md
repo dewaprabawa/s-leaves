@@ -1,8 +1,27 @@
 # SEO Action Plan — sekarbaliactivity.com
 
-**Date:** 2026-09-04 (GEO follow-up)  
-**Prior:** 2026-09-03 SEOmator remediation  
-**Overall priority:** GEO agent-readiness → citation consistency → off-site presence
+**Date:** 2026-09-04 (Google Search focus — cycling)  
+**Prior:** 2026-09-04 GEO follow-up; 2026-09-03 SEOmator remediation  
+**Overall priority:** **Google classic SEO (cycling money page)** → local/GBP → GEO consistency
+
+---
+
+## Priority 0 — Cycling Google Search 2026 (this pass)
+
+| Action | Google 2026 rationale | Status |
+|--------|----------------------|--------|
+| Correct cycling inclusions to **lunch only** | Avoid SERP/snippet & trust conflicts | ✅ |
+| Add `seoTitle` / `seoDescription` on cycling tour | Title ≤60 / meta ≤160; P0 rice paddy + Pejeng | ✅ |
+| Use SERP fields in `generateMetadata` | Stop truncating long `shortDescription` in snippets | ✅ |
+| Strengthen H2s, highlights, image alts | Mid-tail countryside / Pejeng / lunch CTR | ✅ |
+| Enrich `TouristTrip` Offer with inclusions | Clear commercial entity for Search | ✅ |
+| Publish `CYCLING-GOOGLE-SEO-2026.md` | Execution plan + keyword map | ✅ |
+| Refocus `SEO-STRATEGY.md` on Google-first cycling | Strategy matches Search KPIs | ✅ |
+
+**Next (ops / content — not code):**
+1. GSC: filter queries containing cycling / rice paddy / Pejeng — baseline impressions & CTR.
+2. GBP: upload real Pejeng rice-paddy + lunch-stop photos; reply to reviews with place specifics.
+3. Publish/refresh one spoke only if it adds first-hand info (Subak / Pejeng history) — no thin AI posts.
 
 ---
 
@@ -46,9 +65,9 @@
 
 ## Priority 1 — After Deploy (Verify)
 
-1. Confirm production `/pricing.md`, `/llms.txt`, Link headers.
-2. Re-run `llms_txt_checker.py` + `robots_checker.py` on live URL.
-3. Spot-check WebP/AVIF + SERP title/description lengths.
+1. Confirm production cycling SERP title/description lengths in rich results / view-source.
+2. Confirm production `/pricing.md`, `/llms.txt`, Link headers (lunch-only cycling inclusions).
+3. Spot-check WebP/AVIF + GSC URL inspection for `/tours/ubud-ricefield-cycling-tour`.
 
 ---
 
@@ -63,12 +82,12 @@
 
 ---
 
-## Priority 3 — Ongoing GEO / E-E-A-T
+## Priority 3 — Ongoing Local + light GEO
 
-1. Monthly 20-query AI citation log (ChatGPT / Perplexity / AIO).
+1. Monthly GSC cycling query review (impressions, CTR, position).
 2. Author bio on blog posts → `/about`.
 3. Verified review platform URLs in Organization `sameAs`.
-4. YouTube how-to text layer for ATV arena + pickup FAQs.
+4. Optional: monthly 20-query AI citation log (secondary to Search).
 
 ---
 
@@ -76,8 +95,9 @@
 
 | Item | Reason |
 |------|--------|
-| FAQPage schema | Restricted to gov/health authority sites |
+| FAQPage schema | Restricted / no commercial FAQ rich results (May 2026) |
 | HowTo schema | Deprecated for rich results |
 | Restore dense keyword footer cloud | Inflates density + link count |
 | Re-add `max-snippet:-1` | Triggers false “snippet blocking” in some tools |
-| Fork prices outside `pricing.ts` / `geoContent.ts` | Creates AI citation conflicts |
+| Fork prices or meal claims outside `tours` / `pricing.ts` / `geoContent.ts` | Creates Search + AI citation conflicts |
+| Thin AI “cycling keyword” doorway pages | Mar/Jun 2026 spam + helpful-content risk |

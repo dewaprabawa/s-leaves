@@ -49,7 +49,7 @@ They rank on **route type + village authenticity**:
 - ATV + Wos River tubing combo
 - Pejeng village / Subak authenticity
 - WhatsApp booking
-- Ubud ricefield cycling + free pickup + 3 meals
+- Ubud ricefield cycling + free pickup + lunch included
 
 ### Missing or weak supporting keywords (priority)
 
@@ -75,7 +75,7 @@ They rank on **route type + village authenticity**:
 | P0 | **rice paddy cycling Ubud** | Synonym of ricefield; high search volume | Tour meta, footer, H2 |
 | P0 | **Ubud countryside cycling tour** | Countryside / village bike SERPs | Tour title support, meta |
 | P0 | **Pejeng village cycling / bike tour** | Unique geo moat competitors lack | Own this term |
-| P1 | **cycling tour with lunch Ubud** | Meal-included CTR (you include 3 meals) | Meta + highlights |
+| P1 | **cycling tour with lunch Ubud** | Meal-included CTR (you include lunch) | Meta + highlights |
 | P1 | **small group village bike tour Bali** | Soft-private differentiator | Card copy |
 | P1 | **authentic village cycling Pejeng** | Anti-Tegallalang mass tourism | Blog + about |
 | P2 | Pejeng vs Tegallalang cycling | Comparison SERP already has blog | Internal links |

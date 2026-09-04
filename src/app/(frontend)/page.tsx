@@ -262,8 +262,20 @@ export default function Home() {
             quality={70}
             placeholder="blur"
             blurDataURL={HERO_BLUR_DATA_URL}
-            className="hero-media object-cover object-[center_35%]"
+            className="object-cover object-[center_35%]"
           />
+          <video
+            className="absolute inset-0 h-full w-full object-cover object-[center_35%]"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster="/images/adventures/hero-banner.jpg"
+            aria-hidden="true"
+          >
+            <source src="/images/adventures/hero-sport-bg.mp4" type="video/mp4" />
+          </video>
           <div className="hero-overlay absolute inset-0" />
         </div>
         <div className="relative z-10 flex flex-col items-start justify-end text-left px-6 md:px-12 lg:px-16 pt-36 pb-16 md:pb-20 max-w-5xl">

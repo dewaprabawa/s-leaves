@@ -571,7 +571,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 max-w-3xl mx-auto text-center text-sand">
           <p className="text-accent-amber font-semibold tracking-[0.2em] uppercase text-sm mb-4">No payment to inquire</p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight mb-6">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight mb-6 text-white">
             Message WhatsApp.<br /><span className="text-accent-amber">Confirm your date</span><br />in minutes.
           </h2>
           <p className="text-lg opacity-80 max-w-xl mx-auto mb-10">

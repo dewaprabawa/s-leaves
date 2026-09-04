@@ -336,10 +336,10 @@ Structure reports as:
 ## Critical Rules
 
 1. **INP not FID** — FID was removed September 9, 2024. The sole interactivity metric is INP (Interaction to Next Paint). Never reference FID.
-2. **FAQ schema is restricted** — FAQPage schema is limited to government and healthcare authority sites only (August 2023). Do NOT recommend for commercial sites.
+2. **FAQ rich results are gone; FAQPage stays restricted** — FAQ SERP rich results stopped appearing ~May 7, 2026. FAQPage schema remains limited to government/healthcare authority sites (August 2023). Do NOT recommend FAQPage for commercial sites or as a rich-result tactic.
 3. **HowTo schema is deprecated** — Rich results fully removed September 2023. Never recommend.
 4. **JSON-LD only** — Always use `<script type="application/ld+json">`. Never recommend Microdata or RDFa.
-5. **E-E-A-T everywhere** — As of December 2025, E-E-A-T applies to ALL competitive queries, not just YMYL.
+5. **E-E-A-T everywhere + originality** — As of December 2025, E-E-A-T applies to ALL competitive queries. March/May 2026 cores further reward first-party insight and first-hand experience over aggregated/commodity content.
 6. **Mobile-first is complete** — 100% mobile-first indexing since July 5, 2024.
 7. **Location page limits** — Warning at 30+ pages, hard stop at 50+ pages. Enforce unique content requirements.
 8. **AI crawler management** — Check robots.txt for GPTBot, ClaudeBot, PerplexityBot, Applebot-Extended, Google-Extended, Bytespider, CCBot.
@@ -347,7 +347,9 @@ Structure reports as:
 10. **Always produce file artifacts for audit flows** — `FULL-AUDIT-REPORT.md` and `ACTION-PLAN.md` are required outputs for full/page audit requests.
 11. **Bound evidence retries** — Avoid long search/retry loops. If core checks fail due DNS/network, finalize promptly with confidence labels and file outputs.
 12. **Avoid redundant web fallbacks** — If direct fetch/scripts fail and one fallback also fails, stop retrying and finish the report with explicit limitations.
-13. **Signal freshness tracking** — Every reference file should contain a `<!-- Updated: YYYY-MM-DD -->` comment. Flag any reference file older than 90 days for review. When Google announces algorithm changes, verify affected reference files within 7 days. Key dates to track: core updates (quarterly), schema deprecations (schema-types.md), CWV threshold changes (cwv-thresholds.md).
+13. **Signal freshness tracking** — Every reference file should contain a `<!-- Updated: YYYY-MM-DD -->` comment. Flag any reference file older than 90 days for review. When Google announces algorithm changes, verify affected reference files within 7 days. Key dates to track: core updates (quarterly), schema deprecations (schema-types.md), CWV threshold changes (cwv-thresholds.md). See `resources/references/google-seo-reference.md` H1 2026 timeline.
+14. **No AI citation spam** — Manipulating or buying citations for AI Overviews / AI Mode is spam. Never recommend it.
+15. **Discover ≠ Search** — February 2026 Discover Core Update affected Discover only. Do not give Discover-only fixes as Search ranking recovery advice.
 
 ---
 

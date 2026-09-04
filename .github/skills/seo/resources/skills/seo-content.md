@@ -128,7 +128,8 @@ Optimize for AI search engines (ChatGPT, Perplexity, Google AI Overviews):
 - **Schema markup:** Article, FAQ (for non-Google AI platforms), and structured content schemas help AI systems parse and attribute content
 - **Topical authority:** AI systems preferentially cite sources that demonstrate deep expertise — build content clusters, not isolated pages
 - **Entity clarity:** Ensure brand, authors, and key concepts are clearly defined with structured data (Organization, Person schema)
-- **Multi-platform tracking:** Monitor visibility across Google AI Overviews, AI Mode, ChatGPT, Perplexity, and Bing Copilot — not just traditional rankings. Treat AI citation as a standalone KPI alongside organic rankings and traffic.
+- **Multi-platform tracking:** Monitor visibility across Google AI Overviews, AI Mode, ChatGPT, Perplexity, and Bing Copilot — not just traditional rankings. Treat AI citation as a standalone KPI alongside organic rankings and traffic. Use Search Console’s AI Performance report when available. **Never manipulate or buy AI citations** — that is confirmed spam under 2026 policy extensions.
+- **Post–Mar/May 2026 cores:** Prefer first-hand operator content and original insights over aggregated commodity pages; recovery from demotions requires real rewrites, not waiting.
 
 **Generative Engine Optimization (GEO):**
 GEO is the emerging discipline of optimizing content specifically for AI-generated answers. Key GEO signals include: quotability (clear, concise extractable facts), attribution (source citations within your content), structure (well-organized heading hierarchy), and freshness (regularly updated data). Cross-reference the `seo-geo` skill for detailed GEO workflows.

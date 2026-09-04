@@ -211,7 +211,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     alt={`${siteName} logo`}
                     width={56}
                     height={56}
-                    className="h-14 w-14 object-contain rounded-full"
+                    className="h-14 w-14 rounded-full object-cover shrink-0"
                   />
                   <span className="font-display text-2xl font-bold uppercase tracking-wide text-sand">
                     Sekar Bali

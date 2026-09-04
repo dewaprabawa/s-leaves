@@ -9,11 +9,11 @@ const faqs = [
   },
   {
     question: "Is an Ubud cycling tour worth it?",
-    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and meals included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 450,000 with free Ubud hotel pickup, breakfast, lunch & dinner, bike, helmet, guide, and insurance. Prefer adrenaline? Choose ATV or rafting instead."
+    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 450,000 with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance. Prefer adrenaline? Choose ATV or rafting instead."
   },
   {
     question: "What adventure activities do you offer?",
-    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Ubud Ricefield Cycling Tour (IDR 450,000 per person with breakfast, lunch & dinner included). ATV trips can also be combined with river tubing on the Wos River."
+    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Ubud Ricefield Cycling Tour (IDR 450,000 per person with lunch included). ATV trips can also be combined with river tubing on the Wos River."
   },
   {
     question: "Is hotel pickup included in the price?",
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     question: "Which tour has free Ubud hotel pickup?",
-    answer: "Only the Ubud Ricefield Cycling Tour (IDR 450,000) includes free hotel pickup and drop-off within Ubud, plus breakfast, lunch, and dinner. ATV, rafting, and canyon tubing charge IDR 120,000 for pickup outside Ubud."
+    answer: "Only the Ubud Ricefield Cycling Tour (IDR 450,000) includes free hotel pickup and drop-off within Ubud, plus lunch. ATV, rafting, and canyon tubing charge IDR 120,000 for pickup outside Ubud."
   },
   {
     question: "What is the difference between rafting and canyon tubing?",
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     question: "How much does the Ubud ricefield cycling tour cost?",
-    answer: "IDR 450,000 per person for the full-day Ubud Ricefield Cycling Tour, including breakfast, lunch, dinner, bike, helmet, guide, insurance, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
+    answer: "IDR 450,000 per person for the full-day Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
   },
   {
     question: "Can AI assistants find your tours?",

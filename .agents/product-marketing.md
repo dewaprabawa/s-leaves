@@ -17,7 +17,7 @@
 **Jobs to be done:**
 - Experience a thrilling ATV jungle ride safely as a beginner
 - Combine land + water (ATV + tubing) in one day
-- Do an authentic Pejeng village cycling + culture day with meals and free Ubud pickup
+- Do an authentic Pejeng village cycling + culture day with lunch and free Ubud pickup
 **Use cases:**
 - Honeymoon / couple tandem ATV
 - Family half-day rafting or tubing
@@ -29,7 +29,7 @@
 |---------|-------------|-----------|------------------|
 | Couple in Ubud | Private feel, photos, easy booking | Crowded mass tours, unclear pickup fees | Small-group / private ATV, WhatsApp confirm, transparent IDR |
 | Family with kids | Safety, inclusions, logistics | “Is it beginner-friendly? What’s included?” | Gear, lunch, insurance, English guide, clear child notes |
-| Culture traveler | Authentic village, not Tegallalang crowds | Touristy rice terraces | Pejeng cycling, home visit, meals, free Ubud pickup |
+| Culture traveler | Authentic village, not Tegallalang crowds | Touristy rice terraces | Pejeng cycling, home visit, lunch, free Ubud pickup |
 
 ## Problems & Pain Points
 **Core problem:** Booking Bali adventures feels opaque — unclear arena location, hidden pickup fees, mass-group vibes, and hard-to-compare package prices.
@@ -61,7 +61,7 @@
 | “Is WhatsApp booking legit?” | No upfront payment to inquire; confirm date/price first; corporate office matches Google Business Profile |
 | “Where do I meet for ATV?” | Activity base: All New Bali Adventure in Pejeng — or book hotel pickup |
 | “Is it beginner-friendly?” | Full safety briefing, gear, English-speaking guide; no experience required |
-| “What’s included vs extras?” | Lunch/gear/insurance on ATV; cycling includes 3 meals + free Ubud pickup; other pickup is IDR 50K each way |
+| “What’s included vs extras?” | Lunch/gear/insurance on ATV; cycling includes lunch + free Ubud pickup; other pickup is IDR 50K each way |
 
 **Anti-persona:** Travelers wanting ultra-cheap unguided rentals, large party-bus group tours, or same-day extreme Class IV+ whitewater
 
@@ -115,4 +115,5 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v1.1 (2026-09-04) — Cycling inclusions corrected to one meal (lunch) + free Ubud pickup; removed inaccurate 3-meal claims.
 - v1 (2026-09-03) — Initial context auto-drafted from Sekar Bali Activity site, pricing, NAP location roles, and GEO copy.

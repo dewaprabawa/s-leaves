@@ -442,7 +442,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and free breakfast, lunch & dinner. Small-group village bike tour from IDR 450K with free Ubud hotel pickup. Pair with an evening Balinese cooking class for a full cultural day.",
+    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 450K with free Ubud hotel pickup. Pair with an evening Balinese cooking class for a full cultural day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
@@ -455,8 +455,8 @@ Cycle through stunning green rice paddies and village trails. Stop to see local 
 ### Village Culture & Local Life
 Enter a real Balinese family house and see daily local life up close. Visit a local wood carving studio and watch artists at work. Continue cycling through the village past temples, schools, and everyday community activities.
 
-### Meals Included
-Enjoy free breakfast, lunch, and dinner at a chill local village restaurant serving authentic Balinese food — all included in your package.
+### Lunch Included
+Enjoy a free lunch at a chill local village restaurant serving authentic Balinese food — included in your package.
 
 After the tour we drop you back at your Ubud hotel.
 
@@ -469,12 +469,12 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       "Relaxing ride through Ubud ricefields and village paths",
       "Rice harvesting activity with local farmers",
       "Visit a Balinese family house and wood carving studio",
-      "Free breakfast, lunch & dinner included",
+      "Lunch included",
     ],
     included: [
       "Hotel pickup & drop-off (Ubud area — free)",
       "Bicycle, helmet & guide",
-      "Free breakfast, lunch & dinner",
+      "Lunch included",
       "Bottled water",
       "Insurance",
     ],
@@ -518,9 +518,9 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       },
       {
         id: "iti-ubud-cyc-7",
-        time: "Throughout",
-        title: "Free Breakfast, Lunch & Dinner",
-        description: "Enjoy free breakfast, lunch, and dinner at a chill local village restaurant with authentic Balinese food.",
+        time: "Midday",
+        title: "Lunch Stop",
+        description: "Enjoy a free lunch at a chill local village restaurant with authentic Balinese food.",
       },
       {
         id: "iti-ubud-cyc-8",
@@ -539,7 +539,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       {
         id: "faq-ubud-cyc-2",
         question: "Are meals really included?",
-        answer: "Yes — breakfast, lunch, and dinner at a local village restaurant are all included in the tour price.",
+        answer: "Yes — lunch at a local village restaurant is included in the tour price.",
       },
       {
         id: "faq-ubud-cyc-3",

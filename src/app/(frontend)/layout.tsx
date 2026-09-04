@@ -132,7 +132,7 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: 'Ubud Ricefield & Village Cycling Tour',
     description:
-      'Authentic Ubud countryside / rice paddy cycling tour through Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, free breakfast, lunch & dinner, and free Ubud hotel pickup.',
+      'Authentic Ubud countryside / rice paddy cycling tour through Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, lunch included, and free Ubud hotel pickup.',
     price: '450000',
     image: '/images/adventures/cycling.jpg',
   },

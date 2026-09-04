@@ -91,9 +91,9 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     tagline: "Rice paddies & village life",
     paxLabel: "Per person",
     description:
-      "Authentic Ubud countryside cycling through rice paddies and quiet Pejeng village paths — with rice harvesting, a Balinese home visit, wood carving studio, and free breakfast, lunch & dinner included.",
+      "Authentic Ubud countryside cycling through rice paddies and quiet Pejeng village paths — with rice harvesting, a Balinese home visit, wood carving studio, and lunch included.",
     highlights: [
-      "Breakfast, lunch & dinner included",
+      "Lunch included",
       "Rice harvesting activity",
       "Balinese house & carving studio",
       "Free Ubud hotel pickup & insurance",

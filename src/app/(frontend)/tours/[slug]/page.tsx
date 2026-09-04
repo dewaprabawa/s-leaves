@@ -25,23 +25,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!tour) return { title: "Tour Not Found" }
 
+  const title = tour.seoTitle ?? tour.title
+  const description = tour.seoDescription ?? tour.shortDescription
+
   return {
-    title: tour.title,
-    description: tour.shortDescription,
+    title,
+    description,
     alternates: {
       canonical: `/tours/${tour.slug}`,
     },
     openGraph: {
-      title: tour.title,
-      description: tour.shortDescription,
+      title,
+      description,
       url: `${SITE_URL}/tours/${tour.slug}`,
       images: [tour.heroImage.url],
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
-      title: tour.title,
-      description: tour.shortDescription,
+      title,
+      description,
       images: [tour.heroImage.url],
     },
   }
@@ -59,23 +62,25 @@ export default async function TourPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "TouristTrip",
     name: tour.title,
-    description: tour.shortDescription,
+    description: tour.seoDescription ?? tour.shortDescription,
     image: `${SITE_URL}${tour.heroImage.url}`,
     touristType: ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
-    offers: {
-      "@type": "Offer",
-      price: tour.basePrice,
-      priceCurrency: "IDR",
-      availability: "https://schema.org/InStock",
-      url: `${SITE_URL}/tours/${tour.slug}`,
-    },
     itinerary: tour.itinerary.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: item.title,
       description: item.description,
     })),
+    offers: {
+      "@type": "Offer",
+      name: tour.title,
+      price: tour.basePrice,
+      priceCurrency: "IDR",
+      availability: "https://schema.org/InStock",
+      url: `${SITE_URL}/tours/${tour.slug}`,
+      description: tour.included.join(", "),
+    },
   }
 
   const breadcrumbSchema = {

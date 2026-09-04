@@ -133,7 +133,7 @@ const adventures: Adventure[] = [
     childPrice: null as number | null,
     image: "/images/adventures/cycling.jpg",
     description: "Quiet Pejeng rice-paddy paths with rice harvesting, a Balinese home visit, wood carving studio, and lunch included.",
-    highlights: ["Lunch included", "Rice harvesting activity", "Balinese house & carving studio", "Free Ubud hotel pickup & insurance"],
+    highlights: ["Rice paddy & countryside cycling", "Lunch included", "Balinese house & carving studio", "Free Ubud hotel pickup & insurance"],
     duration: "Full day",
     icon: Bike,
     minPax: 1,

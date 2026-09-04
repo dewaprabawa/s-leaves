@@ -1,25 +1,29 @@
 # Strategic SEO Plan: Sekar Bali Activity
 
 ## 1. Executive Summary
-Sekar Bali Activity is a local service and tourism business offering premium, village-led experiences in Pejeng (near Ubud), Bali. The primary goal of this SEO strategy is to capture high-intent travelers searching for authentic, small-group activities in the Ubud area and drive direct WhatsApp bookings.
+Sekar Bali Activity is a local tourism operator offering Pejeng/Ubud adventures (ATV at All New Bali Adventure, rafting, canyon tubing, ricefield cycling, Balinese cooking class). The goal is high-intent WhatsApp bookings plus **citation in AI answers** (GEO/AEO), not only classic rankings.
 
 ## 2. Target Audience
-* **Demographics:** Couples, solo travelers, and small families visiting Bali.
-* **Psychographics:** Travelers seeking "authentic," "slow travel," and "cultural" experiences. They want to avoid massive tourist traps and prefer supporting local communities.
-* **Search Intent:** High commercial intent (e.g., "Ubud cycling tour booking," "authentic cooking class Bali") and informational intent (e.g., "best things to do near Ubud").
+* Couples, families, and small friend groups staying in/near Ubud.
+* Search intents: commercial (“ATV Ubud price”, “cycling tour Ubud booking”) and comparison (“rafting vs tubing near Ubud”).
+* AI-assistant intents: “best beginner ATV near Ubud”, “does this include hotel pickup?”, transparent IDR packaging.
 
-## 3. Core Strategy (Local Service Model)
-Because this is a highly localized tourism business, the strategy relies heavily on the **Local Service SEO Template**:
-1. **Google Business Profile (GBP):** Dominating the local "Map Pack" for queries like "cooking class near me" or "Ubud cycling tours".
-2. **Niche Positioning:** Emphasizing the "Pejeng village" and "small group" differentiators in all meta tags and content.
-3. **E-E-A-T Building:** Highlighting the local hosts, showing real photos of the village, and displaying verified reviews.
+## 3. Core Strategy (Local + GEO)
+1. **Local Service SEO:** GBP NAP consistency, tour landing pages, review velocity.
+2. **Niche positioning:** Pejeng village + All New Bali Adventure arena clarity + WhatsApp / no-upfront-payment trust.
+3. **GEO (owned site):** Extractable answer blocks, `llms.txt` / `llms-full.txt`, **`/pricing.md`**, speakable selectors, category-diverse homepage Q&As.
+4. **GEO (presence):** Diversify third-party mentions over time (reviews, YouTube text layer, directories) — do not bet on a single forum.
 
-## 4. Key Performance Indicators (KPIs)
-* **Primary:** Number of inbound WhatsApp inquiries per month.
-* **Secondary:** Local Map Pack rankings for core terms (Top 3).
-* **Tertiary:** Organic traffic growth to individual tour pages.
+## 4. KPIs
+* Primary: WhatsApp inquiries / month.
+* Secondary: Map Pack + tour-page organic sessions.
+* GEO: Monthly DIY check of top 20 queries in ChatGPT / Perplexity / Google AI Overviews (cited? which URL?).
+* Agent readiness: `/pricing.md` and `/llms.txt` return 200; no IDR conflicts across blog vs tiers.
 
 ## 5. Technical & Schema Foundation
-* **Schema Markup:** Implement `LocalBusiness` (or `TravelAgency`) on the homepage, and `Tour` schema on individual service pages to trigger rich snippets for pricing and duration.
-* **Mobile-First:** Ensure the site loads instantly on mobile networks, as tourists often book while already in Bali using roaming data.
-* **WhatsApp Integration:** Keep the direct WhatsApp link prominent and track clicks as primary conversions.
+* `TravelAgency` / `LocalBusiness` + tour detail schema; commercial-safe `Question`/`Answer` (no FAQPage).
+* AI crawlers explicitly allowed in `robots.txt` (including `anthropic-ai` alias).
+* Machine-readable discovery: `llms.txt`, `llms-full.txt`, `pricing.md`, HTTP `Link` alternates.
+* Single source of truth: `src/data/geoContent.ts` + `src/lib/pricing.ts` tiers.
+
+See **GEO-ANALYSIS.md** for scored readiness and the executable GEO backlog.

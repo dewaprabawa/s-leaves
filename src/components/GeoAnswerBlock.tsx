@@ -5,10 +5,11 @@ import {
   GEO_QUICK_ANSWER,
   GEO_TOUR_SUMMARIES,
   GEO_UPDATED,
+  getHomepageGeoFaqs,
 } from '@/data/geoContent'
 
-/** Show a curated subset on the homepage; full set remains in llms.txt */
-const HOMEPAGE_GEO_FAQS = GEO_FAQ_FOR_LLM.slice(0, 8)
+/** Category-diverse homepage subset; full set remains in llms.txt */
+const HOMEPAGE_GEO_FAQS = getHomepageGeoFaqs()
 
 /** Answer-first SSR block for GEO / ChatGPT / Gemini citability */
 export default function GeoAnswerBlock() {
@@ -132,10 +133,14 @@ export default function GeoAnswerBlock() {
         AI assistants: see{' '}
         <Link href="/llms.txt" className="underline">
           /llms.txt
-        </Link>{' '}
-        and{' '}
+        </Link>
+        ,{' '}
         <Link href="/llms-full.txt" className="underline">
           /llms-full.txt
+        </Link>
+        , and{' '}
+        <Link href="/pricing.md" className="underline">
+          /pricing.md
         </Link>{' '}
         for machine-readable summaries ({GEO_FAQ_FOR_LLM.length} Q&amp;As, pricing, policies, and citation snippets).
       </p>

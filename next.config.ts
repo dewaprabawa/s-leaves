@@ -78,8 +78,26 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        source: '/pricing.md',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=86400, s-maxage=86400',
+          },
+          {
+            key: 'Content-Type',
+            value: 'text/markdown; charset=utf-8',
+          },
+        ],
+      },
+      {
         source: '/:path*',
         headers: [
+          {
+            key: 'Link',
+            value:
+              '</llms.txt>; rel="alternate"; type="text/plain"; title="LLM summary", </llms-full.txt>; rel="alternate"; type="text/plain"; title="LLM full context", </pricing.md>; rel="alternate"; type="text/markdown"; title="Agent pricing"',
+          },
           {
             key: 'Strict-Transport-Security',
             value: 'max-age=63072000; includeSubDomains; preload',

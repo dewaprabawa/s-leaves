@@ -19,6 +19,8 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'OAI-SearchBot', allow: '/' },
       { userAgent: 'ClaudeBot', allow: '/' },
       { userAgent: 'Anthropic-AI', allow: '/' },
+      // Lowercase alias — some checkers / crawlers use anthropic-ai
+      { userAgent: 'anthropic-ai', allow: '/' },
       { userAgent: 'PerplexityBot', allow: '/' },
       { userAgent: 'Google-Extended', allow: '/' },
       { userAgent: 'GoogleOther', allow: '/' },

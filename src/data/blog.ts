@@ -328,7 +328,7 @@ Open [Bali ATV Adventure & River Tubing](/tours/bali-atv-adventure), choose **AT
 | Activity | Single ATV Ride |
 | Date & time | 2026-09-12 · 09:00 |
 | Location | Maya Ubud Resort |
-| Price | IDR 650,000 |
+| Price | IDR 600,000 |
 
 ## Why These Details Matter
 
@@ -1189,12 +1189,12 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
   {
     slug: 'bali-adventure-packages-prices-2026',
     title: 'Bali Adventure Packages & Prices 2026: ATV, Rafting, Tubing & Cycling',
-    excerpt: 'Compare Sekar Bali Activity adventure prices in one place — ATV from IDR 650K, rafting IDR 400K, canyon tubing IDR 359K, and Ubud ricefield cycling IDR 450K with free pickup and meals.',
+    excerpt: 'Compare Sekar Bali Activity adventure prices in one place — ATV from IDR 600K, rafting IDR 400K, canyon tubing IDR 359K, and Ubud ricefield cycling IDR 450K with free pickup and meals.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 650,000**, **Tandem ATV from IDR 859,000**, **Whitewater Rafting IDR 400,000**, **Canyon Tubing IDR 359,000**, and **Ubud Ricefield Cycling Tour IDR 450,000** with free Ubud pickup and three meals included.
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 600,000**, **Tandem ATV from IDR 859,000**, **Whitewater Rafting IDR 400,000**, **Canyon Tubing IDR 359,000**, and **Ubud Ricefield Cycling Tour IDR 450,000** with free Ubud pickup and three meals included.
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
@@ -1209,7 +1209,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 
 | Adventure | Price | Per | Tour Page |
 | --- | --- | --- | --- |
-| Single ATV | IDR 650,000 | 1 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
+| Single ATV | IDR 600,000 | 1 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
 | Tandem ATV | IDR 859,000 | 2 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
 | Whitewater Rafting | IDR 400,000 | person | [Whitewater Rafting](/tours/whitewater-rafting) |
 | Canyon Tubing | IDR 359,000 | person | [Canyon Tubing](/tours/canyon-tubing) |
@@ -1253,7 +1253,7 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
 > **Key Takeaways**
 > - **Arena name:** All New Bali Adventure
 > - **Operator:** Sekar Bali Activity (Pejeng-based, near Ubud)
-> - **Single ATV:** IDR 650,000 · **Tandem ATV:** IDR 859,000
+> - **Single ATV:** IDR 600,000 · **Tandem ATV:** IDR 859,000
 > - **Included:** lunch, boot shoes, helmet, insurance, safety briefing
 > - **Pickup:** IDR 120,000 surcharge outside Ubud (cycling tour has free Ubud pickup only)
 
@@ -1282,14 +1282,14 @@ All New Bali Adventure is the jungle ATV arena where Sekar Bali Activity runs al
 
 | Option | Price | Best for |
 | --- | --- | --- |
-| Single ATV | IDR 650,000 (1 pax) | Solo riders wanting full control |
+| Single ATV | IDR 600,000 (1 pax) | Solo riders wanting full control |
 | Tandem ATV | IDR 859,000 (2 pax) | Couples and friends sharing one quad |
 
 ## Combine ATV with River Tubing
 
 After the track at All New Bali Adventure, many guests add [Wos River tubing](/tours/canyon-tubing) for a land-and-water day. Read the full combo guide: [ATV + River Tubing](/blog/atv-river-tubing-wos-river-bali).
 
-**Book ATV at All New Bali Adventure** — [Bali ATV Adventure from IDR 650,000](/tours/bali-atv-adventure).
+**Book ATV at All New Bali Adventure** — [Bali ATV Adventure from IDR 600,000](/tours/bali-atv-adventure).
 `
   },
   {

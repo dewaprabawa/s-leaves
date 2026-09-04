@@ -26,6 +26,7 @@ export function buildGeoWebPageSchema() {
     significantLink: [
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/llms-full.txt`,
+      `${SITE_URL}/pricing.md`,
       `${SITE_URL}/.well-known/llms.txt`,
       `${SITE_URL}/#adventures`,
       `${SITE_URL}/blog`,
@@ -59,6 +60,13 @@ export function buildLlmsDiscoverySchema() {
         url: `${SITE_URL}/llms-full.txt`,
         encodingFormat: 'text/plain',
         description: 'Extended FAQ and citation corpus for AI assistants',
+      },
+      {
+        '@type': 'Dataset',
+        name: 'pricing.md — agent-readable IDR pricing',
+        url: `${SITE_URL}/pricing.md`,
+        encodingFormat: 'text/markdown',
+        description: 'Structured package prices, inclusions, and pickup fees for AI agents',
       },
     ],
   }

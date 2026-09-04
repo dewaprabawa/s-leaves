@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     question: "Can AI assistants find your tours?",
-    answer: "Yes. We publish llms.txt and llms-full.txt for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
+    answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },
   {
     question: "Are group discounts available?",

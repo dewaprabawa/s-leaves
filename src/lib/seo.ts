@@ -34,7 +34,7 @@ export function buildOrganizationSchema() {
     name: SITE_NAME,
     legalName: SITE_NAME,
     description:
-      'Bali adventure tours in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, and Ubud ricefield cycling. Free Ubud hotel pickup on the cycling tour only.',
+      'Bali adventure tours in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Ubud ricefield cycling, and Balinese cooking class. Free Ubud hotel pickup on the cycling tour only.',
     url: SITE_URL,
     telephone: CONTACT_PHONE_E164,
     email: CONTACT_EMAIL,
@@ -113,6 +113,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Ubud Ricefield Cycling', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour` },
   { name: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting` },
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },
+  { name: 'Balinese Cooking Class', url: `${SITE_URL}/tours/balinese-cooking-class` },
   { name: 'About Us', url: `${SITE_URL}/about` },
   { name: 'Contact', url: `${SITE_URL}/contact` },
   { name: 'Blog', url: `${SITE_URL}/blog` },
@@ -130,7 +131,7 @@ export function buildWebsiteSchema() {
     description: DEFAULT_DESCRIPTION,
     publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: 'en-US',
-    dateModified: '2026-09-03',
+    dateModified: '2026-09-04',
     hasPart: [
       {
         '@type': 'WebPage',
@@ -143,6 +144,12 @@ export function buildWebsiteSchema() {
         name: 'llms-full.txt — extended AI context',
         url: `${SITE_URL}/llms-full.txt`,
         encodingFormat: 'text/plain',
+      },
+      {
+        '@type': 'WebPage',
+        name: 'pricing.md — agent-readable pricing',
+        url: `${SITE_URL}/pricing.md`,
+        encodingFormat: 'text/markdown',
       },
     ],
   }

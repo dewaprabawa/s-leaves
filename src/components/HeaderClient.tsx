@@ -131,7 +131,9 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
             <img 
               src={logoUrl || "/logo.png"} 
               alt={`${siteName} Logo`} 
-              className="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+              width={40}
+              height={40}
+              className="h-10 w-10 rounded-full object-cover shrink-0 transition-transform duration-200 group-hover:scale-105"
             />
             <span className="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200 bg-clip-text text-transparent font-extrabold group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
               {siteName}

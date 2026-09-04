@@ -78,11 +78,6 @@ h1, h2, h3, h4, h5, h6 {
   to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes heroZoom {
-  from { transform: scale(1); }
-  to { transform: scale(1.08); }
-}
-
 @keyframes driftUp {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
@@ -116,10 +111,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .animate-drift-up {
   animation: driftUp 0.7s ease-out both;
-}
-
-.hero-media {
-  animation: heroZoom 22s ease-out forwards;
 }
 
 /* ─── Hero overlay — dark sport/travel scrim on full-bleed photo ─── */

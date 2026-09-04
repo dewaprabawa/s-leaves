@@ -169,7 +169,7 @@ const travelGuides = [
   },
   {
     title: "Is an Ubud Cycling Tour Worth It?",
-    excerpt: "Honest pros and cons of Pejeng ricefield cycling vs Tegallalang crowds — IDR 450K with free pickup.",
+    excerpt: "Honest pros and cons of Pejeng ricefield cycling vs Tegallalang crowds — IDR 475K with free pickup.",
     href: "/blog/is-ubud-cycling-tour-worth-it",
   },
   {

@@ -31,7 +31,7 @@ Automated crawl (2026-09-03): `competitor_gap_2026-09-03.json` — 4 competitors
 - **URL:** `/blog/cycling-cooking-class-ubud-full-day-itinerary`
 - **Title:** Cycling & Cooking Class in Ubud: Full-Day Itinerary, Prices & How to Book (2026)
 - **GEO:** Answer-first open + Key Takeaways + price tables + citability FAQ entries in `geoContent.ts`
-- **Truthful packaging:** Day = Ricefield Cycling (IDR 450,000); Evening = Dinner Cooking Class (IDR 400,000, 17:30–20:30)
+- **Truthful packaging:** Day = Ricefield Cycling (IDR 475,000); Evening = Dinner Cooking Class (IDR 400,000, 17:30–20:30)
 
 ## On-site SEO / GEO updates
 

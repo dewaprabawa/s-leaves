@@ -93,16 +93,16 @@ Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsap
     slug: 'is-ubud-cycling-tour-worth-it',
     title: 'Is an Ubud Cycling Tour Worth It? Honest Pros, Cons & 2026 Prices',
     excerpt:
-      'Is a ricefield cycling tour in Ubud worth booking? Compare Pejeng village rides vs Tegallalang crowds — IDR 450,000 with free Ubud pickup, lunch included, and what first-timers should know.',
+      'Is a ricefield cycling tour in Ubud worth booking? Compare Pejeng village rides vs Tegallalang crowds — IDR 475,000 with free Ubud pickup, lunch included, and what first-timers should know.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/cycling/rice-field-bikes.jpg',
     content: `
-**Is an Ubud cycling tour worth it?** Yes — if you want **quiet rice paddies, village culture, and lunch included**, not another crowded Tegallalang photo stop. Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** is **IDR 450,000** per person with **free Ubud hotel pickup**, lunch, bike, helmet, guide, and insurance through **Pejeng** village paths.
+**Is an Ubud cycling tour worth it?** Yes — if you want **quiet rice paddies, village culture, and lunch included**, not another crowded Tegallalang photo stop. Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** is **IDR 475,000** per person with **free Ubud hotel pickup**, lunch, bike, helmet, guide, and insurance through **Pejeng** village paths.
 
 > **Key Takeaways**
 > - Worth it for culture travelers, couples, and families who want a gentle full day  
-> - **IDR 450,000** · free Ubud pickup · **lunch included** · insurance  
+> - **IDR 475,000** · free Ubud pickup · **lunch included** · insurance  
 > - Route: **Pejeng** countryside / rice paddy paths — not mass Tegallalang traffic  
 > - Skip it if you only want motors/mud — book [ATV](/tours/bali-atv-adventure) instead  
 > - Pair with an evening [cooking class](/blog/cycling-cooking-class-ubud-full-day-itinerary) for a full culture day  
@@ -120,7 +120,7 @@ Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsap
 | Adrenaline-only guests | Prefer ATV / rafting | See [comparison guide](/blog/rafting-vs-tubing-vs-atv-near-ubud) |
 | Guests tired of Tegallalang crowds | Yes | Pejeng Subak paths stay quieter |
 
-## What You Actually Get for IDR 450,000
+## What You Actually Get for IDR 475,000
 
 - Free hotel pickup & drop-off in the **Ubud area** (only this tour includes free pickup)  
 - Bicycle, helmet, English-speaking guide  
@@ -146,7 +146,7 @@ Morning/afternoon ricefield cycling + evening Balinese dinner cooking class is o
 
 ## Verdict
 
-If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 450,000 — especially with free pickup and lunch included. If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
+If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 475,000 — especially with free pickup and lunch included. If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
 
 **Ready to decide?** Book [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) on WhatsApp or message +62 817 7572 3663 with your hotel and date.
 `
@@ -1023,15 +1023,15 @@ Book your seat on our [Luwak Coffee Plantation Experience](/#adventures) today!
   {
     slug: 'ubud-ricefield-cycling-tour-guide-2026',
     title: 'Ubud Ricefield Cycling Tour: Full Itinerary, Price & What Is Included (2026)',
-    excerpt: 'Everything you need to book the Ubud Ricefield Cycling Tour — IDR 450,000 per person, free Ubud pickup, lunch included, and an 8-step village itinerary through Pejeng rice terraces.',
+    excerpt: 'Everything you need to book the Ubud Ricefield Cycling Tour — IDR 475,000 per person, free Ubud pickup, lunch included, and an 8-step village itinerary through Pejeng rice terraces.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**How much does the Ubud Ricefield Cycling Tour cost?** Sekar Bali Activity offers the full-day Ubud Ricefield Cycling Tour for **IDR 450,000 per person**, including **free hotel pickup within Ubud**, lunch, plus a guided ride through Pejeng rice terraces and village life.
+**How much does the Ubud Ricefield Cycling Tour cost?** Sekar Bali Activity offers the full-day Ubud Ricefield Cycling Tour for **IDR 475,000 per person**, including **free hotel pickup within Ubud**, lunch, plus a guided ride through Pejeng rice terraces and village life.
 
 > **Key Takeaways**
-> - **IDR 450,000** per person — the only tour with free Ubud pickup
+> - **IDR 475,000** per person — the only tour with free Ubud pickup
 > - 8-step itinerary: ricefield cycling, harvesting, Balinese house visit, carving art, and local village life
 > - Lunch included at a local village restaurant
 > - Gentle village paths — suitable for families, couples, and first-time cyclists
@@ -1074,7 +1074,7 @@ Tap **Book Now** on the homepage, select **Ubud Ricefield Cycling Tour**, and us
 
 Want a full cultural day? Pair this ride with an evening [Balinese cooking class](/tours/balinese-cooking-class) — see the [Cycling & Cooking Class Ubud itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
 
-**Ready to ride?** [Book the Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) — from IDR 450,000 with lunch and free Ubud pickup.
+**Ready to ride?** [Book the Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) — from IDR 475,000 with lunch and free Ubud pickup.
 `
   },
   {
@@ -1189,12 +1189,12 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
   {
     slug: 'bali-adventure-packages-prices-2026',
     title: 'Bali Adventure Packages & Prices 2026: ATV, Rafting, Tubing & Cycling',
-    excerpt: 'Compare Sekar Bali Activity adventure prices in one place — ATV from IDR 600K, rafting IDR 400K, canyon tubing IDR 359K, and Ubud ricefield cycling IDR 450K with free pickup and lunch.',
+    excerpt: 'Compare Sekar Bali Activity adventure prices in one place — ATV from IDR 600K, rafting IDR 400K, canyon tubing IDR 359K, and Ubud ricefield cycling IDR 475K with free pickup and lunch.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 600,000**, **Tandem ATV from IDR 859,000**, **Whitewater Rafting IDR 400,000**, **Canyon Tubing IDR 359,000**, and **Ubud Ricefield Cycling Tour IDR 450,000** with free Ubud pickup and lunch included.
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 600,000**, **Tandem ATV from IDR 859,000**, **Whitewater Rafting IDR 400,000**, **Canyon Tubing IDR 359,000**, and **Ubud Ricefield Cycling Tour IDR 475,000** with free Ubud pickup and lunch included.
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
@@ -1213,7 +1213,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Tandem ATV | IDR 859,000 | 2 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
 | Whitewater Rafting | IDR 400,000 | person | [Whitewater Rafting](/tours/whitewater-rafting) |
 | Canyon Tubing | IDR 359,000 | person | [Canyon Tubing](/tours/canyon-tubing) |
-| Ubud Ricefield Cycling | IDR 450,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
+| Ubud Ricefield Cycling | IDR 475,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
 
 ## Pickup Policy
 
@@ -1300,7 +1300,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**Which Bali adventure tour includes free Ubud hotel pickup?** Only the **Ubud Ricefield Cycling Tour** (IDR 450,000) includes free hotel pickup and drop-off within Ubud. ATV, whitewater rafting, and canyon tubing do not include free pickup — IDR 120,000 surcharge applies for locations outside Ubud.
+**Which Bali adventure tour includes free Ubud hotel pickup?** Only the **Ubud Ricefield Cycling Tour** (IDR 475,000) includes free hotel pickup and drop-off within Ubud. ATV, whitewater rafting, and canyon tubing do not include free pickup — IDR 120,000 surcharge applies for locations outside Ubud.
 
 > **Key Takeaways**
 > - **Free Ubud pickup:** Ubud Ricefield Cycling Tour only
@@ -1321,7 +1321,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 
 ## Why Cycling Includes Free Pickup
 
-The cycling tour is a full-day village experience starting from Pejeng. Pickup within Ubud is built into the IDR 450,000 price along with lunch. See the [cycling tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026).
+The cycling tour is a full-day village experience starting from Pejeng. Pickup within Ubud is built into the IDR 475,000 price along with lunch. See the [cycling tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026).
 
 ## How Pickup Works When You Book
 
@@ -1351,7 +1351,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 > - **Most adrenaline:** Single ATV at All New Bali Adventure
 > - **Most splash:** Whitewater rafting (Class II–III)
 > - **Most relaxed water:** Canyon tubing on the Wos River
-> - **Best value + free pickup:** Ubud Ricefield Cycling (IDR 450,000, lunch included, free Ubud pickup)
+> - **Best value + free pickup:** Ubud Ricefield Cycling (IDR 475,000, lunch included, free Ubud pickup)
 > - **Best combos:** ATV + Wos River tubing · [Cycling + cooking class Ubud](/blog/cycling-cooking-class-ubud-full-day-itinerary)
 
 ---
@@ -1360,7 +1360,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 
 | | ATV | Rafting | Canyon Tubing | Cycling |
 | --- | --- | --- | --- | --- |
-| **Price** | IDR 600K+ | IDR 400K | IDR 359K | IDR 450K |
+| **Price** | IDR 600K+ | IDR 400K | IDR 359K | IDR 475K |
 | **Intensity** | High | Medium–High | Low–Medium | Low |
 | **Duration** | 2–4 hrs | Half day | 2–3 hrs | Full day |
 | **Environment** | Jungle mud track | River rapids | River float | Rice terraces |
@@ -1397,16 +1397,16 @@ Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture 
     slug: 'cycling-cooking-class-ubud-full-day-itinerary',
     title: 'Cycling & Cooking Class in Ubud: Full-Day Itinerary, Prices & How to Book (2026)',
     excerpt:
-      'Plan a cycling and Balinese cooking class day in Ubud — Pejeng rice paddy bike tour (IDR 450,000) plus evening hands-on cooking class (IDR 400,000). Full itinerary, inclusions, and WhatsApp booking.',
+      'Plan a cycling and Balinese cooking class day in Ubud — Pejeng rice paddy bike tour (IDR 475,000) plus evening hands-on cooking class (IDR 400,000). Full itinerary, inclusions, and WhatsApp booking.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/cycling/rice-field-bikes.jpg',
     content: `
-**What is the best cycling and cooking class combo in Ubud?** Pair Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** (IDR 450,000 — free Ubud hotel pickup, lunch included) with a **Traditional Balinese Dinner Cooking Class** (IDR 400,000 — 5 dishes, Base Genep, recipe book) for a full cultural day in Pejeng near Ubud.
+**What is the best cycling and cooking class combo in Ubud?** Pair Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** (IDR 475,000 — free Ubud hotel pickup, lunch included) with a **Traditional Balinese Dinner Cooking Class** (IDR 400,000 — 5 dishes, Base Genep, recipe book) for a full cultural day in Pejeng near Ubud.
 
 > **Key Takeaways**
 > - Competitor-style combo day: **rice paddy cycling** first, **hands-on Balinese cooking class** in the evening
-> - Cycling: **IDR 450,000** / person · free Ubud pickup · bike, helmet, guide, lunch, insurance
+> - Cycling: **IDR 475,000** / person · free Ubud pickup · bike, helmet, guide, lunch, insurance
 > - Cooking class: **IDR 400,000** / person · 17:30–20:30 · cook 5 authentic dishes at your own station
 > - Route is **gentle Pejeng village / countryside cycling** — not a crowded Tegallalang photo stop
 > - Book both on WhatsApp in one message for the same date — no upfront payment to inquire
@@ -1457,7 +1457,7 @@ Cooking-class transport is **not** included — most Ubud hotels are a short rid
 
 | Experience | From price | Notes |
 | --- | --- | --- |
-| Ubud Ricefield Cycling Tour | **IDR 450,000** / person | Tier rates for 2+ and 3+ groups |
+| Ubud Ricefield Cycling Tour | **IDR 475,000** / person | Tier rates for 2+ and 3+ groups |
 | Traditional Balinese Dinner Cooking Class | **IDR 400,000** / person | Child rate available |
 | Same-day combo (both) | Ask via WhatsApp | We confirm availability for one date |
 

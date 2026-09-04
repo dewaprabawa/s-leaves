@@ -33,7 +33,7 @@ export default function PromoPrice({
     if (variant === "badge") {
       return (
         <div
-          className={`bg-accent-gold text-brand-green text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-wide ${className}`}
+          className={`bg-accent-gold text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-wide ${className}`}
         >
           {from ? "From " : ""}
           {format(price)}
@@ -69,7 +69,7 @@ export default function PromoPrice({
         <span className="bg-brand-green text-sand text-[10px] font-bold px-2.5 py-1 rounded-full shadow-lg uppercase tracking-wide">
           Save {format(savings)}
         </span>
-        <div className="bg-accent-gold text-brand-green text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-wide text-right">
+        <div className="bg-accent-gold text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg uppercase tracking-wide text-right">
           <span className="block text-[10px] line-through opacity-70 font-semibold normal-case tracking-normal">
             {format(originalPrice)}
           </span>

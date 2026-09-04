@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { Inter, Outfit } from "next/font/google"
+import { Barlow_Condensed, DM_Sans } from "next/font/google"
 import "../globals.css"
 import Link from "next/link"
-import { Leaf, Mail, Phone } from "lucide-react"
+import { Compass, Mail, Phone } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
 import HeaderNav from "@/components/HeaderNav"
@@ -29,15 +29,16 @@ import {
 } from "@/lib/geo"
 import { SEO_FOOTER_HEADING, SEO_FOOTER_LINKS } from "@/data/seoFooterLinks"
 
-const inter = Inter({
-  variable: "--font-inter",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 })
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const barlow = Barlow_Condensed({
+  variable: "--font-barlow",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["500", "600", "700", "800"],
 })
 
 export const metadata: Metadata = {
@@ -185,7 +186,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         ))}
       </head>
-      <body className={`${inter.variable} ${outfit.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground`}>
+      <body className={`${dmSans.variable} ${barlow.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground`}>
         <GoogleAnalytics />
         <a
           href="#main-content"
@@ -199,12 +200,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         </div>
 
         {/* Footer */}
-        <footer className="bg-brand-green text-sand pt-16 pb-8">
+        <footer className="bg-ink-soft text-sand pt-16 pb-8">
           <div className="max-w-7xl mx-auto px-6 lg:px-12">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
               {/* Brand */}
               <div className="lg:col-span-1">
-                <Link href="/#top" className="flex items-center gap-2 mb-4">
+                <Link href="/#top" className="flex items-center gap-3 mb-5">
                   <img
                     src="/logo.png"
                     alt={`${siteName} logo`}
@@ -212,16 +213,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     height={56}
                     className="h-14 w-14 object-contain rounded-full"
                   />
+                  <span className="font-display text-2xl font-bold uppercase tracking-wide text-sand">
+                    Sekar Bali
+                  </span>
                 </Link>
                 <p className="text-sm opacity-70 leading-relaxed mb-6">
-                  Pejeng-based adventure operator near Ubud — guided quad rides, rafting, canyon floats, and village cycling with local crews and all-inclusive packages.
+                  Sport and travel adventures near Ubud — ATV trails, whitewater rafting, canyon tubing, and village cycling with local crews.
                 </p>
                 <div className="flex items-center gap-3">
-                  <a href="https://www.instagram.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-sand/20 transition-colors">
+                  <a href="https://www.instagram.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-accent-gold/90 hover:text-white transition-colors">
                     <span className="sr-only">Sekar Bali Activity on Instagram</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                   </a>
-                  <a href="https://www.facebook.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-sand/20 transition-colors">
+                  <a href="https://www.facebook.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-accent-gold/90 hover:text-white transition-colors">
                     <span className="sr-only">Sekar Bali Activity on Facebook</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
                   </a>
@@ -229,7 +233,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </div>
               {/* Adventures — use styled p (not h4) to avoid h2→h4 skips after page content */}
               <div>
-                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Adventures</p>
+                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-amber">Adventures</p>
                 <ul className="space-y-3">
                   {footerLinks.adventures.map((link) => (
                     <li key={link.label}><Link href={link.href} className="text-sm opacity-70 hover:opacity-100 transition-opacity">{link.label}</Link></li>
@@ -238,7 +242,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </div>
               {/* Explore */}
               <div>
-                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Explore</p>
+                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-amber">Explore</p>
                 <ul className="space-y-3">
                   {footerLinks.explore.map((link) => (
                     <li key={link.label}><Link href={link.href} className="text-sm opacity-70 hover:opacity-100 transition-opacity">{link.label}</Link></li>
@@ -247,12 +251,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </div>
               {/* Contact */}
               <div>
-                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-gold">Get in Touch</p>
+                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-amber">Get in Touch</p>
                 <ul className="space-y-4">
                   <li><a href={CONTACT_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Phone className="w-4 h-4 shrink-0" />{CONTACT_PHONE_DISPLAY}</a></li>
                   <li><a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Mail className="w-4 h-4 shrink-0" />{CONTACT_EMAIL}</a></li>
                   <li className="flex items-start gap-3 text-sm opacity-70">
-                    <Leaf className="w-4 h-4 shrink-0 mt-0.5" />
+                    <Compass className="w-4 h-4 shrink-0 mt-0.5 text-accent-amber" />
                     <span>
                       <span className="block font-medium opacity-90">Activity base</span>
                       Pejeng Village, Ubud<br />Bali, Indonesia
@@ -267,7 +271,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
             {/* Curated internal links */}
             <div className="border-t border-sand/10 pt-10 pb-8 mb-2">
-              <p className="font-display text-sm font-bold uppercase tracking-wider text-center text-accent-gold mb-6">
+              <p className="font-display text-sm font-bold uppercase tracking-wider text-center text-accent-amber mb-6">
                 {SEO_FOOTER_HEADING}
               </p>
               <nav aria-label="Popular adventure searches" className="max-w-4xl mx-auto">

@@ -56,10 +56,10 @@ export default function ContactPage() {
   return (
     <main className="max-w-7xl mx-auto px-6 py-12 md:py-20 w-full flex-1">
       <div className="mb-12">
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200/50 text-emerald-700 dark:text-emerald-400 font-semibold text-xs mb-4">
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sky-50 dark:bg-sky-950/20 border border-sky-200/50 text-sky-700 dark:text-sky-400 font-semibold text-xs mb-4">
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
           </span>
           Support is Online
         </div>
@@ -75,27 +75,27 @@ export default function ContactPage() {
         
         {/* Left Column: Contact Methods */}
         <div className="lg:col-span-5 space-y-4">
-          <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 border border-gray-150 dark:border-gray-800 shadow-sm flex items-start gap-4 hover:border-emerald-200 dark:hover:border-emerald-800/50 transition-colors">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center shrink-0">
-              <Mail className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+          <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 border border-gray-150 dark:border-gray-800 shadow-sm flex items-start gap-4 hover:border-sky-200 dark:hover:border-sky-800/50 transition-colors">
+            <div className="w-12 h-12 rounded-2xl bg-sky-50 dark:bg-sky-900/20 flex items-center justify-center shrink-0">
+              <Mail className="w-6 h-6 text-sky-600 dark:text-sky-400" />
             </div>
             <div>
               <h4 className="font-bold text-gray-900 dark:text-white">Email Us</h4>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">For general inquiries and custom quotes.</p>
-              <a href={`mailto:${CONTACT_EMAIL}`} className="text-emerald-600 dark:text-emerald-400 font-semibold text-sm hover:underline">
+              <a href={`mailto:${CONTACT_EMAIL}`} className="text-sky-600 dark:text-sky-400 font-semibold text-sm hover:underline">
                 {CONTACT_EMAIL}
               </a>
             </div>
           </div>
 
-          <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 border border-gray-150 dark:border-gray-800 shadow-sm flex items-start gap-4 hover:border-emerald-200 dark:hover:border-emerald-800/50 transition-colors">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center shrink-0">
-              <Phone className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+          <div className="bg-white dark:bg-gray-900 rounded-3xl p-6 border border-gray-150 dark:border-gray-800 shadow-sm flex items-start gap-4 hover:border-sky-200 dark:hover:border-sky-800/50 transition-colors">
+            <div className="w-12 h-12 rounded-2xl bg-sky-50 dark:bg-sky-900/20 flex items-center justify-center shrink-0">
+              <Phone className="w-6 h-6 text-sky-600 dark:text-sky-400" />
             </div>
             <div>
               <h4 className="font-bold text-gray-900 dark:text-white">Call or WhatsApp</h4>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">Our support line is available 24/7.</p>
-              <a href={CONTACT_WHATSAPP_URL} target="_blank" className="text-emerald-600 dark:text-emerald-400 font-semibold text-sm hover:underline">
+              <a href={CONTACT_WHATSAPP_URL} target="_blank" className="text-sky-600 dark:text-sky-400 font-semibold text-sm hover:underline">
                 {CONTACT_PHONE_DISPLAY}
               </a>
             </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
       {/* Location roles — NAP clarity */}
       <section className="mt-16 md:mt-20" aria-labelledby="locations-heading">
         <div className="mb-8 max-w-3xl">
-          <p className="text-emerald-700 dark:text-emerald-400 font-semibold text-sm tracking-wide uppercase mb-2">
+          <p className="text-sky-700 dark:text-sky-400 font-semibold text-sm tracking-wide uppercase mb-2">
             Where to find us
           </p>
           <h2 id="locations-heading" className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight mb-3">
@@ -139,10 +139,10 @@ export default function ContactPage() {
               className="bg-white dark:bg-gray-900 rounded-3xl p-6 border border-gray-150 dark:border-gray-800 shadow-sm flex flex-col gap-4"
             >
               <div className="flex items-start justify-between gap-3">
-                <div className="w-12 h-12 rounded-2xl bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center shrink-0">
-                  <Icon className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+                <div className="w-12 h-12 rounded-2xl bg-sky-50 dark:bg-sky-900/20 flex items-center justify-center shrink-0">
+                  <Icon className="w-6 h-6 text-sky-600 dark:text-sky-400" />
                 </div>
-                <span className="text-[11px] font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/40 px-2.5 py-1 rounded-full">
+                <span className="text-[11px] font-semibold uppercase tracking-wide text-sky-700 dark:text-sky-400 bg-sky-50 dark:bg-sky-950/40 px-2.5 py-1 rounded-full">
                   {badge}
                 </span>
               </div>
@@ -161,7 +161,7 @@ export default function ContactPage() {
                 href={loc.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline"
+                className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-sky-600 dark:text-sky-400 hover:underline"
               >
                 <MapPin className="w-4 h-4" />
                 Open in Google Maps
@@ -176,7 +176,7 @@ export default function ContactPage() {
             href={MEETING_POINT.mapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="font-semibold text-emerald-600 dark:text-emerald-400 hover:underline"
+            className="font-semibold text-sky-600 dark:text-sky-400 hover:underline"
           >
             {MEETING_POINT.name}
           </a>{' '}

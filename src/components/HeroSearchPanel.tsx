@@ -60,14 +60,14 @@ export default function HeroSearchPanel() {
   return (
     <form 
       onSubmit={handleSearch}
-      className="w-full max-w-3xl mx-auto bg-white/95 dark:bg-gray-900/95 backdrop-blur-md p-4 sm:p-5 rounded-3xl shadow-2xl border border-gray-200/60 dark:border-gray-800/80 flex flex-col md:flex-row items-center gap-4 transition-all duration-300 hover:shadow-emerald-500/5 z-40"
+      className="w-full max-w-3xl mx-auto bg-white/95 dark:bg-gray-900/95 backdrop-blur-md p-4 sm:p-5 rounded-3xl shadow-2xl border border-gray-200/60 dark:border-gray-800/80 flex flex-col md:flex-row items-center gap-4 transition-all duration-300 hover:shadow-sky-500/5 z-40"
     >
       
       {/* Destination Field with Autocomplete */}
       <div ref={dropdownRef} className="flex-1 w-full relative group">
         <label className="block text-[10px] font-black uppercase text-gray-400 tracking-wider mb-1 ml-1.5">Where to?</label>
         <div className="relative">
-          <Compass className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-emerald-500 group-hover:scale-110 transition-transform duration-200" />
+          <Compass className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-sky-500 group-hover:scale-110 transition-transform duration-200" />
           <input
             type="text"
             placeholder="e.g. Ubud, Komodo, Kintamani..."
@@ -78,7 +78,7 @@ export default function HeroSearchPanel() {
                 setShowSuggestions(true)
               }
             }}
-            className="w-full pl-10 pr-4 py-2.5 text-sm font-semibold rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700/50 focus:border-emerald-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-4 focus:ring-emerald-500/10 text-gray-900 dark:text-white placeholder-gray-450 outline-none transition-all"
+            className="w-full pl-10 pr-4 py-2.5 text-sm font-semibold rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700/50 focus:border-sky-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-4 focus:ring-sky-500/10 text-gray-900 dark:text-white placeholder-gray-450 outline-none transition-all"
           />
         </div>
 
@@ -93,9 +93,9 @@ export default function HeroSearchPanel() {
                   setShowSuggestions(false)
                   router.push('/#adventures')
                 }}
-                className="flex items-center gap-3 px-4 py-3 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 cursor-pointer transition-colors"
+                className="flex items-center gap-3 px-4 py-3 hover:bg-sky-50 dark:hover:bg-sky-950/20 cursor-pointer transition-colors"
               >
-                <Compass className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                <Compass className="w-4 h-4 text-sky-500 flex-shrink-0" />
                 <div className="flex-1 min-w-0">
                   <span className="block text-sm font-bold text-gray-900 dark:text-white truncate">{tour.title}</span>
                   <span className="block text-[9px] text-gray-400 dark:text-gray-500 uppercase font-black tracking-wider leading-none mt-1">{tour.duration || "Experience"}</span>
@@ -110,13 +110,13 @@ export default function HeroSearchPanel() {
       <div className="w-full md:w-64 relative group">
         <label className="block text-[10px] font-black uppercase text-gray-400 tracking-wider mb-1 ml-1.5">When?</label>
         <div className="relative">
-          <Calendar className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-emerald-500" />
+          <Calendar className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-sky-500" />
           <input
             type="date"
             value={date}
             min={new Date().toISOString().split("T")[0]}
             onChange={(e) => setDate(e.target.value)}
-            className="w-full pl-10 pr-4 py-2.5 text-sm font-semibold rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700/50 focus:border-emerald-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-4 focus:ring-emerald-500/10 text-gray-900 dark:text-white placeholder-gray-450 outline-none transition-all cursor-pointer"
+            className="w-full pl-10 pr-4 py-2.5 text-sm font-semibold rounded-2xl bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700/50 focus:border-sky-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-4 focus:ring-sky-500/10 text-gray-900 dark:text-white placeholder-gray-450 outline-none transition-all cursor-pointer"
           />
         </div>
       </div>
@@ -124,7 +124,7 @@ export default function HeroSearchPanel() {
       {/* Submit Button */}
       <button
         type="submit"
-        className="w-full md:w-auto md:self-end px-8 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 flex items-center justify-center gap-2 hover:-translate-y-0.5 transition-all cursor-pointer md:h-[42px] md:mb-[1px]"
+        className="w-full md:w-auto md:self-end px-8 py-3 rounded-2xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-sm shadow-lg shadow-sky-500/20 hover:shadow-sky-500/30 flex items-center justify-center gap-2 hover:-translate-y-0.5 transition-all cursor-pointer md:h-[42px] md:mb-[1px]"
       >
         <Search className="w-4 h-4" />
         <span>Search</span>

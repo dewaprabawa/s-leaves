@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FAQSection } from '@/components/FAQSection'
@@ -9,7 +9,7 @@ import PromoPrice from '@/components/PromoPrice'
 import { getListPrice, getPromoListPrice, formatTierPriceTable } from '@/lib/pricing'
 import {
   ArrowRight, MapPin, Users, Check, Clock3, Shield,
-  Star, ChevronLeft, ChevronRight, Waves,
+  Star, Waves,
   Bike, Compass, Zap, type LucideIcon
 } from 'lucide-react'
 import { KnowBeforeCards } from '@/components/KnowBeforeCards'
@@ -19,7 +19,6 @@ import {
   atvWhatYouGetFooter,
   atvWhatToBringFooter,
 } from '@/data/atvKnowBefore'
-import { CONTACT_EMAIL } from '@/lib/contact'
 
 /** Tiny LQIP for the hero — keeps LCP fast while the optimized image loads */
 const HERO_BLUR_DATA_URL =
@@ -156,17 +155,10 @@ function toTourConfig(adv: Adventure): TourConfig {
 }
 
 const stats = [
-  { value: "5", label: "Epic Activities" },
-  { value: "100+", label: "Happy Guests" },
+  { value: "5", label: "Sport Activities" },
+  { value: "100+", label: "Happy Travelers" },
   { value: "5★", label: "Rated Experience" },
   { value: "24/7", label: "WhatsApp Support" },
-]
-
-const heroCarouselImages = [
-  { src: "/images/adventures/atv-adventure.jpg", alt: "ATV Jungle Adventure", label: "ATV Adventure" },
-  { src: "/images/adventures/rafting.jpg", alt: "Whitewater Rafting", label: "Rafting" },
-  { src: "/images/adventures/canyon-tubing.jpg", alt: "Canyon Tubing", label: "Canyon Tubing" },
-  { src: "/images/adventures/cycling.jpg", alt: "Ubud Ricefield Cycling Tour", label: "Cycling" },
 ]
 
 const travelGuides = [
@@ -201,46 +193,6 @@ const travelGuides = [
     href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
   },
 ] as const
-
-/* ─── Hero Carousel ─── */
-function HeroCarousel() {
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const scroll = (direction: "left" | "right") => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: direction === "left" ? -280 : 280, behavior: "smooth" })
-    }
-  }
-  return (
-    <div className="relative">
-      <button onClick={() => scroll("left")} className="absolute -left-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-sand/90 text-brand-green shadow-lg hidden md:flex items-center justify-center hover:bg-sand transition-colors" aria-label="Scroll left">
-        <ChevronLeft className="w-5 h-5" />
-      </button>
-      <button onClick={() => scroll("right")} className="absolute -right-3 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-sand/90 text-brand-green shadow-lg hidden md:flex items-center justify-center hover:bg-sand transition-colors" aria-label="Scroll right">
-        <ChevronRight className="w-5 h-5" />
-      </button>
-      <div ref={scrollRef} className="flex gap-4 overflow-x-auto pb-2 snap-x snap-mandatory" style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}>
-        {heroCarouselImages.map((img, i) => (
-          <div key={i} className="shrink-0 w-44 md:w-52 snap-start">
-            <div className="relative aspect-[3/4] rounded-2xl lg:rounded-3xl overflow-hidden group cursor-pointer">
-              <Image
-                src={img.src}
-                alt={img.alt}
-                width={208}
-                height={277}
-                sizes="(max-width: 768px) 176px, 208px"
-                // Carousel sits in the first viewport — avoid lazy-loading above-fold images
-                loading={i < 2 ? 'eager' : 'lazy'}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-              <span className="absolute bottom-3 left-3 text-white text-sm font-semibold drop-shadow-md">{img.label}</span>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
 
 /* ─── Pricing Data ─── */
 const pricingData: PricingRow[] = [
@@ -298,7 +250,7 @@ export default function Home() {
       />
 
       {/* ═══ HERO ═══ */}
-      <section id="top" className="relative w-full min-h-screen flex flex-col justify-center overflow-hidden">
+      <section id="top" className="relative w-full min-h-[100svh] flex flex-col justify-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/images/adventures/hero-banner.jpg"
@@ -310,45 +262,42 @@ export default function Home() {
             quality={70}
             placeholder="blur"
             blurDataURL={HERO_BLUR_DATA_URL}
-            className="object-cover object-[center_35%]"
+            className="hero-media object-cover object-[center_35%]"
           />
           <div className="hero-overlay absolute inset-0" />
         </div>
-        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-32 pb-8 flex-1">
-          <p className="hero-eyebrow text-sm md:text-base font-semibold tracking-[0.2em] uppercase mb-4 animate-fade-in-up">
-            Sekar Bali Activity · Pejeng, Ubud
+        <div className="relative z-10 flex flex-col items-start justify-end text-left px-6 md:px-12 lg:px-16 pt-36 pb-16 md:pb-20 max-w-5xl">
+          <p className="hero-brand text-3xl sm:text-4xl md:text-5xl font-bold uppercase mb-5 animate-fade-in-up">
+            Sekar Bali Activity
           </p>
-          <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold uppercase leading-[0.9] tracking-tight mb-6 animate-fade-in-up-delay-1">
-            <span className="block">Private ATV &amp; </span>
-            <span className="hero-headline-accent block">Village Adventures</span>
+          <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold uppercase leading-[0.92] tracking-tight mb-5 animate-fade-in-up-delay-1">
+            Sport &amp; travel<br />
+            <span className="hero-headline-accent">adventures in Ubud</span>
           </h1>
-          <p className="hero-subcopy text-base md:text-lg max-w-xl mb-10 animate-fade-in-up-delay-2">
-            All-inclusive jungle ATV from IDR 600K, rafting, canyon tubing, or Pejeng ricefield cycling with free Ubud pickup. Book on WhatsApp — no payment to inquire.
+          <p className="hero-subcopy text-base md:text-lg max-w-lg mb-9 animate-fade-in-up-delay-2">
+            Private ATV, rafting, canyon tubing, and ricefield cycling — all-inclusive packages with WhatsApp booking.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
             <button
               type="button"
               onClick={() => openBooking("single-atv")}
-              className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm md:text-base uppercase tracking-wider border border-accent-gold-dark/20"
+              className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full btn-gold-shimmer font-bold text-sm md:text-base uppercase tracking-wider"
             >
-              Book ATV on WhatsApp
+              Book ATV Adventure
             </button>
-            <Link href="#adventures" className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-white/70 border-2 border-brand-green/25 text-brand-green font-bold text-sm md:text-base uppercase tracking-wider hover:bg-white transition-colors shadow-sm">
-              See packages &amp; prices
+            <Link href="#adventures" className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-white/12 border border-white/35 text-white font-bold text-sm md:text-base uppercase tracking-wider hover:bg-white/20 transition-colors backdrop-blur-sm">
+              Explore packages
             </Link>
           </div>
-        </div>
-        <div className="relative z-10 px-6 md:px-12 pb-8">
-          <HeroCarousel />
         </div>
       </section>
 
       {/* ═══ STATS STRIP ═══ */}
-      <section id="stats-strip" data-animate className="bg-brand-green text-sand py-10 md:py-14 px-6 lg:px-12">
+      <section id="stats-strip" data-animate className="bg-ink-soft text-sand py-10 md:py-12 px-6 lg:px-12">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, i) => (
             <div key={i} className={`flex flex-col items-center text-center ${isVisible("stats-strip") ? "animate-count-up" : ""}`} style={{ animationDelay: `${i * 0.12}s` }}>
-              <span className="text-4xl md:text-5xl font-display font-bold text-accent-gold mb-1">{stat.value}</span>
+              <span className="text-4xl md:text-5xl font-display font-bold text-accent-amber mb-1">{stat.value}</span>
               <span className="text-sm font-medium opacity-70 tracking-wide uppercase">{stat.label}</span>
             </div>
           ))}
@@ -356,18 +305,19 @@ export default function Home() {
       </section>
 
       {/* ═══ ADVENTURE CARDS ═══ */}
-      <section id="adventures" data-animate className="py-20 md:py-28 px-6 lg:px-12 max-w-7xl mx-auto w-full">
+      <section id="adventures" data-animate className="section-atmosphere py-20 md:py-28 px-6 lg:px-12 w-full">
+        <div className="max-w-7xl mx-auto">
         <div className={`text-center mb-16 ${isVisible("adventures") ? "animate-fade-in-up" : ""}`}>
-          <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Transparent IDR pricing</p>
+          <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">Choose your sport</p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Packages</h2>
-          <p className="text-lg text-brand-green-light max-w-2xl mx-auto">Pick ATV, rafting, tubing, or Pejeng village cycling — inclusions and pickup rules listed before you message WhatsApp.</p>
+          <p className="text-lg text-brand-green-light max-w-2xl mx-auto">ATV trails, river sports, and village cycling near Ubud — clear inclusions before you message WhatsApp.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {adventures.map((adv, i) => {
             const IconComponent = adv.icon
             return (
-              <article key={adv.id} className={`adventure-card bg-white rounded-3xl overflow-hidden shadow-lg shadow-brand-green/5 relative group ${isVisible("adventures") ? "animate-fade-in-up" : ""}`} style={{ animationDelay: `${i * 0.1}s` }}>
+              <article key={adv.id} className={`adventure-card bg-white overflow-hidden relative group border border-brand-green/8 ${isVisible("adventures") ? "animate-fade-in-up" : ""}`} style={{ animationDelay: `${i * 0.1}s` }}>
                 <div className="relative h-56 md:h-64 overflow-hidden">
                   <Image
                     src={adv.image}
@@ -378,7 +328,7 @@ export default function Home() {
                     loading="lazy"
                     className="adventure-card-image w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-green/50 to-transparent" />
                   <div className="absolute top-4 right-4 flex flex-col items-end gap-1.5">
                     <PromoPrice
                       price={adv.price}
@@ -390,7 +340,7 @@ export default function Home() {
                   <div className="absolute bottom-4 left-4 flex items-center gap-2 text-sand text-sm font-medium">
                     <Clock3 className="w-4 h-4" /><span>{adv.duration}</span>
                   </div>
-                  <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-brand-green/90 text-sand flex items-center justify-center shadow-lg backdrop-blur-sm">
+                  <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-accent-gold text-white flex items-center justify-center shadow-lg">
                     <IconComponent className="w-5 h-5" />
                   </div>
                 </div>
@@ -402,10 +352,10 @@ export default function Home() {
                     </div>
                   </div>
                   <p className="text-brand-green-light text-sm leading-relaxed mb-6">{adv.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6">
                     {adv.highlights.map((h, j) => (
-                      <span key={j} className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-green bg-sand rounded-full px-3 py-1.5">
-                        <Check className="w-3.5 h-3.5 text-accent-gold-dark" />{h}
+                      <span key={j} className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-green">
+                        <Check className="w-3.5 h-3.5 text-accent-gold" />{h}
                       </span>
                     ))}
                   </div>
@@ -413,7 +363,7 @@ export default function Home() {
                     {adv.tourSlug ? (
                       <Link
                         href={`/tours/${adv.tourSlug}`}
-                        className="w-full flex items-center justify-center gap-2 h-12 rounded-xl border-2 border-brand-green/15 text-brand-green font-bold text-sm uppercase tracking-wider hover:bg-sand transition-colors"
+                        className="w-full flex items-center justify-center gap-2 h-12 border-2 border-brand-green/15 text-brand-green font-bold text-sm uppercase tracking-wider hover:border-brand-green/30 hover:bg-sand transition-colors"
                       >
                         View Details
                       </Link>
@@ -421,7 +371,7 @@ export default function Home() {
                     <button
                       type="button"
                       onClick={() => openBooking(adv.id)}
-                      className="w-full flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                      className="w-full flex items-center justify-center gap-2 h-12 bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-ink-soft transition-colors"
                     >
                       Book This Adventure <ArrowRight className="w-4 h-4" />
                     </button>
@@ -431,13 +381,14 @@ export default function Home() {
             )
           })}
         </div>
+        </div>
       </section>
 
       {/* ═══ KNOW BEFORE YOU GO ═══ */}
-      <section id="know-before-you-go" className="py-20 md:py-28 px-6 lg:px-12 bg-brand-green w-full">
+      <section id="know-before-you-go" className="py-20 md:py-28 px-6 lg:px-12 bg-ink-soft w-full">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-accent-gold font-semibold tracking-[0.15em] uppercase text-sm mb-4">ATV &amp; river adventures</p>
+            <p className="text-accent-amber font-semibold tracking-[0.15em] uppercase text-sm mb-4">ATV &amp; river sports</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold !text-sand uppercase leading-tight mb-4">
               Know Before You Go
             </h2>
@@ -459,25 +410,25 @@ export default function Home() {
       <section id="pricing" data-animate className="py-20 md:py-28 px-6 lg:px-12 bg-white w-full">
         <div className="max-w-4xl mx-auto">
           <div className={`text-center mb-16 ${isVisible("pricing") ? "animate-fade-in-up" : ""}`}>
-            <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Transparent pricing</p>
+            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">Transparent pricing</p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Pricing</h2>
             <p className="text-lg text-brand-green-light max-w-xl mx-auto">Tier pricing: better rates for 2+ and 3+ guests. Optional pickup IDR 50k (+ IDR 50k return to same hotel). Compare Grab/GoCar in the booking form.</p>
           </div>
-          <div className={`space-y-4 ${isVisible("pricing") ? "animate-fade-in-up-delay-1" : ""}`}>
+          <div className={`space-y-3 ${isVisible("pricing") ? "animate-fade-in-up-delay-1" : ""}`}>
             {pricingData.map((item, i) => (
-              <div key={i} className={`pricing-row relative flex flex-col sm:flex-row items-center justify-between gap-4 p-6 md:p-8 rounded-2xl border-2 ${item.highlight ? "border-accent-gold bg-accent-gold/5 shadow-md" : "border-brand-green/10 bg-sand/50"}`}>
-                {item.highlight && <span className="absolute -top-3 left-6 bg-accent-gold text-brand-green text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>}
+              <div key={i} className={`pricing-row relative flex flex-col sm:flex-row items-center justify-between gap-4 p-6 md:p-8 border ${item.highlight ? "border-accent-gold bg-accent-gold/5" : "border-brand-green/10 bg-sand/40"}`}>
+                {item.highlight && <span className="absolute -top-3 left-6 bg-accent-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">Most Popular</span>}
                 {item.originalPrice && item.originalPrice > item.price && (
-                  <span className="absolute -top-3 right-6 bg-brand-green text-sand text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                  <span className="absolute -top-3 right-6 bg-brand-green text-sand text-xs font-bold px-3 py-1 uppercase tracking-wider">
                     Promo
                   </span>
                 )}
                 <div className="flex flex-col sm:flex-row items-center gap-4 flex-1">
-                  <div className="w-12 h-12 rounded-full bg-brand-green/8 flex items-center justify-center shrink-0">
-                    <MapPin className="w-5 h-5 text-brand-green" />
+                  <div className="w-12 h-12 rounded-full bg-sky/10 flex items-center justify-center shrink-0">
+                    <MapPin className="w-5 h-5 text-sky" />
                   </div>
                   <div className="text-center sm:text-left">
-                    <h3 className="text-lg md:text-xl font-bold text-brand-green">{item.activity}</h3>
+                    <h3 className="text-lg md:text-xl font-bold text-brand-green font-display uppercase">{item.activity}</h3>
                     <span className="text-sm text-brand-green-light block mt-1">{item.pax}</span>
                   </div>
                 </div>
@@ -493,7 +444,7 @@ export default function Home() {
                   <button
                     type="button"
                     onClick={() => openBooking(item.adventureId)}
-                    className="hidden sm:inline-flex items-center h-10 px-6 rounded-full bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                    className="hidden sm:inline-flex items-center h-10 px-6 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
                   >
                     Book
                   </button>
@@ -501,7 +452,7 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={() => openBooking(item.adventureId)}
-                  className="sm:hidden w-full flex items-center justify-center h-11 rounded-xl bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
+                  className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
                 >
                   Book Now
                 </button>
@@ -512,7 +463,7 @@ export default function Home() {
           <div className="mt-8 text-center">
             <Link
               href="/book"
-              className="inline-flex items-center gap-2 h-12 px-8 rounded-full border-2 border-brand-green/20 text-brand-green font-bold text-sm uppercase tracking-wider hover:bg-brand-green hover:text-sand transition-colors"
+              className="inline-flex items-center gap-2 h-12 px-8 border-2 border-brand-green/20 text-brand-green font-bold text-sm uppercase tracking-wider hover:bg-brand-green hover:text-sand transition-colors"
             >
               Open full sales &amp; checkout page <ArrowRight className="w-4 h-4" />
             </Link>
@@ -521,14 +472,15 @@ export default function Home() {
       </section>
 
       {/* ═══ WHY CHOOSE US ═══ */}
-      <section id="why-us" data-animate className="py-20 md:py-28 px-6 lg:px-12 max-w-6xl mx-auto w-full">
+      <section id="why-us" data-animate className="section-atmosphere py-20 md:py-28 px-6 lg:px-12 w-full">
+        <div className="max-w-6xl mx-auto">
         <div className={`text-center mb-16 ${isVisible("why-us") ? "animate-fade-in-up" : ""}`}>
-          <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-4">Why adventure with us</p>
+          <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">Why travel with us</p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-brand-green uppercase leading-tight">
-            Built for Thrills.<br /><span className="text-accent-gold-dark">Backed by Safety.</span>
+            Built for thrills.<br /><span className="text-accent-gold-dark">Backed by safety.</span>
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {[
             { icon: Shield, title: "Safety First", desc: "International-standard safety gear, certified guides, and comprehensive insurance on every adventure. Your safety is non-negotiable." },
             { icon: Star, title: "5-Star Rated", desc: "Over 100 guests and counting. Consistently rated 5 stars on GetYourGuide, Google, and TripAdvisor by adventurers worldwide." },
@@ -536,9 +488,9 @@ export default function Home() {
           ].map((item, i) => {
             const IconComp = item.icon
             return (
-              <div key={i} className={`bg-white rounded-3xl p-8 md:p-10 text-center shadow-sm shadow-brand-green/5 border border-brand-green/5 ${isVisible("why-us") ? "animate-fade-in-up" : ""}`} style={{ animationDelay: `${i * 0.12}s` }}>
-                <div className="w-16 h-16 rounded-2xl bg-accent-gold/15 flex items-center justify-center mx-auto mb-6">
-                  <IconComp className="w-7 h-7 text-accent-gold-dark" />
+              <div key={i} className={`${isVisible("why-us") ? "animate-fade-in-up" : ""}`} style={{ animationDelay: `${i * 0.12}s` }}>
+                <div className="w-14 h-14 rounded-full bg-accent-gold/12 flex items-center justify-center mb-5">
+                  <IconComp className="w-6 h-6 text-accent-gold-dark" />
                 </div>
                 <h3 className="text-xl font-bold text-brand-green mb-3 font-display uppercase">{item.title}</h3>
                 <p className="text-brand-green-light leading-relaxed text-sm">{item.desc}</p>
@@ -546,17 +498,18 @@ export default function Home() {
             )
           })}
         </div>
+        </div>
       </section>
 
       {/* ═══ TESTIMONIAL ═══ */}
-      <section className="bg-brand-green py-20 md:py-24 px-6 lg:px-12 w-full">
+      <section className="bg-ink-soft py-20 md:py-24 px-6 lg:px-12 w-full">
         <div className="max-w-4xl mx-auto text-center text-sand">
-          <span className="text-6xl font-display leading-none block mb-4 opacity-30 text-accent-gold">&ldquo;</span>
+          <span className="text-6xl font-display leading-none block mb-4 opacity-30 text-accent-amber">&ldquo;</span>
           <blockquote className="text-2xl md:text-3xl lg:text-4xl font-display leading-relaxed mb-6">
             The ATV ride through the jungle was the best thing we did in Bali. Absolutely incredible guides and views.
           </blockquote>
           <div className="flex items-center justify-center gap-1 mb-2">
-            {[...Array(5)].map((_, i) => (<Star key={i} className="w-5 h-5 text-accent-gold fill-accent-gold" />))}
+            {[...Array(5)].map((_, i) => (<Star key={i} className="w-5 h-5 text-accent-amber fill-accent-amber" />))}
           </div>
           <p className="text-sm font-semibold uppercase tracking-wider opacity-70">— Sarah M. · GetYourGuide Review</p>
           <p className="mt-4 text-xs uppercase tracking-wider text-sand/60">
@@ -568,7 +521,7 @@ export default function Home() {
       {/* ═══ TRAVEL GUIDES ═══ */}
       <section id="guides" className="py-16 md:py-20 px-6 lg:px-12 max-w-5xl mx-auto w-full">
         <div className="text-center mb-10">
-          <p className="text-brand-green-light font-semibold tracking-[0.15em] uppercase text-sm mb-3">
+          <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-3">
             Plan your trip
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-brand-green uppercase leading-tight mb-4">
@@ -578,18 +531,18 @@ export default function Home() {
             Practical guides on pricing, pickup rules, and which package fits your trip.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {travelGuides.map((guide) => (
             <Link
               key={guide.href}
               href={guide.href}
-              className="group bg-white rounded-2xl border border-brand-green/10 p-6 shadow-sm hover:shadow-md hover:border-brand-green/20 transition-all"
+              className="group border-b border-brand-green/15 pb-5 hover:border-accent-gold transition-colors"
             >
-              <h3 className="font-bold text-brand-green mb-2 leading-snug group-hover:text-brand-green-light transition-colors">
+              <h3 className="font-bold text-brand-green mb-2 leading-snug group-hover:text-accent-gold-dark transition-colors font-display uppercase text-lg">
                 {guide.title}
               </h3>
               <p className="text-sm text-brand-green-light leading-relaxed mb-4">{guide.excerpt}</p>
-              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-green uppercase tracking-wider">
+              <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky uppercase tracking-wider">
                 Read guide <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </span>
             </Link>
@@ -614,12 +567,12 @@ export default function Home() {
             loading="lazy"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-brand-green/85" />
+          <div className="absolute inset-0 bg-ink-soft/88" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto text-center text-sand">
-          <p className="text-accent-gold font-semibold tracking-[0.2em] uppercase text-sm mb-4">No payment to inquire</p>
+          <p className="text-accent-amber font-semibold tracking-[0.2em] uppercase text-sm mb-4">No payment to inquire</p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight mb-6">
-            Message WhatsApp.<br /><span className="text-accent-gold">Confirm your date</span><br />in minutes.
+            Message WhatsApp.<br /><span className="text-accent-amber">Confirm your date</span><br />in minutes.
           </h2>
           <p className="text-lg opacity-80 max-w-xl mx-auto mb-10">
             Send your date, guest count, and activity. We reply with availability and the exact IDR total — including pickup if you need it.
@@ -627,7 +580,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/book"
-              className="inline-flex items-center justify-center gap-3 h-14 md:h-16 px-10 rounded-full btn-gold-shimmer text-brand-green font-bold text-lg uppercase tracking-wider border border-accent-gold-dark/20 w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-3 h-14 md:h-16 px-10 rounded-full btn-gold-shimmer font-bold text-lg uppercase tracking-wider w-full sm:w-auto"
             >
               Start booking
             </Link>

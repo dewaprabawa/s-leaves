@@ -49,9 +49,9 @@ export default function ReviewForm({ tourId }: Props) {
 
   if (result?.success) {
     return (
-      <div className="bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-100 dark:border-emerald-900/40 p-6 sm:p-8 rounded-3xl text-center space-y-4">
-        <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-800 rounded-full flex items-center justify-center mx-auto">
-          <CheckCircle2 className="w-6 h-6 text-emerald-600 dark:text-emerald-400" />
+      <div className="bg-sky-50/50 dark:bg-sky-950/20 border border-sky-100 dark:border-sky-900/40 p-6 sm:p-8 rounded-3xl text-center space-y-4">
+        <div className="w-12 h-12 bg-sky-100 dark:bg-sky-800 rounded-full flex items-center justify-center mx-auto">
+          <CheckCircle2 className="w-6 h-6 text-sky-600 dark:text-sky-400" />
         </div>
         <h4 className="font-bold text-lg text-gray-900 dark:text-white">Review Submitted!</h4>
         <p className="text-sm text-gray-600 dark:text-gray-400 max-w-sm mx-auto">
@@ -59,7 +59,7 @@ export default function ReviewForm({ tourId }: Props) {
         </p>
         <button
           onClick={() => setResult(null)}
-          className="mt-2 text-xs font-bold text-emerald-650 hover:underline cursor-pointer"
+          className="mt-2 text-xs font-bold text-sky-650 hover:underline cursor-pointer"
         >
           Submit another review
         </button>
@@ -74,7 +74,7 @@ export default function ReviewForm({ tourId }: Props) {
     >
       <div className="space-y-1.5">
         <h3 className="text-lg font-bold text-gray-900 dark:text-white flex items-center gap-2">
-          <MessageSquare className="w-5 h-5 text-emerald-500" /> Write a Review
+          <MessageSquare className="w-5 h-5 text-sky-500" /> Write a Review
         </h3>
         <p className="text-xs text-gray-450 dark:text-gray-400 leading-normal">
           Share your experience with other travelers. All submitted reviews are subject to standard moderation.
@@ -100,7 +100,7 @@ export default function ReviewForm({ tourId }: Props) {
               placeholder="e.g. Sarah J."
               value={authorName}
               onChange={(e) => setAuthorName(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 text-xs font-semibold rounded-xl bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 outline-none text-gray-900 dark:text-white"
+              className="w-full pl-10 pr-4 py-2.5 text-xs font-semibold rounded-xl bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 focus:border-sky-500 focus:ring-4 focus:ring-sky-500/10 outline-none text-gray-900 dark:text-white"
             />
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function ReviewForm({ tourId }: Props) {
               max={new Date().toISOString().split("T")[0]}
               value={visitDate}
               onChange={(e) => setVisitDate(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 text-xs font-semibold rounded-xl bg-white dark:bg-gray-955 border border-gray-200 dark:border-gray-800 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 outline-none text-gray-900 dark:text-white cursor-pointer"
+              className="w-full pl-10 pr-4 py-2.5 text-xs font-semibold rounded-xl bg-white dark:bg-gray-955 border border-gray-200 dark:border-gray-800 focus:border-sky-500 focus:ring-4 focus:ring-sky-500/10 outline-none text-gray-900 dark:text-white cursor-pointer"
             />
           </div>
         </div>
@@ -163,14 +163,14 @@ export default function ReviewForm({ tourId }: Props) {
           placeholder="Describe your tour details, guides, itinerary tips..."
           value={comment}
           onChange={(e) => setComment(e.target.value)}
-          className="w-full px-4 py-3 text-xs font-semibold rounded-xl bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 focus:border-emerald-500 focus:ring-4 focus:ring-emerald-500/10 outline-none text-gray-900 dark:text-white resize-none"
+          className="w-full px-4 py-3 text-xs font-semibold rounded-xl bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 focus:border-sky-500 focus:ring-4 focus:ring-sky-500/10 outline-none text-gray-900 dark:text-white resize-none"
         />
       </div>
 
       <button
         type="submit"
         disabled={isSubmitting || !authorName.trim() || !comment.trim()}
-        className="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white font-bold text-xs uppercase tracking-wider shadow-md shadow-emerald-500/10 hover:shadow-emerald-500/20 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+        className="w-full sm:w-auto px-6 py-3 rounded-xl bg-sky-600 hover:bg-sky-500 disabled:opacity-50 text-white font-bold text-xs uppercase tracking-wider shadow-md shadow-sky-500/10 hover:shadow-sky-500/20 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
       >
         {isSubmitting ? (
           <><Loader2 className="w-4 h-4 animate-spin" /> Submitting...</>

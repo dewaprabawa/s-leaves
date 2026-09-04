@@ -133,7 +133,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
               alt={`${siteName} Logo`} 
               className="h-10 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
             />
-            <span className="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200 bg-clip-text text-transparent font-extrabold group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+            <span className="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200 bg-clip-text text-transparent font-extrabold group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
               {siteName}
             </span>
           </Link>
@@ -166,7 +166,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
                   setShowSuggestions(true)
                 }
               }}
-              className="w-full pl-10 pr-4 py-2 text-sm rounded-full bg-gray-150/60 dark:bg-gray-800/60 border border-transparent focus:border-emerald-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-emerald-500/20 text-gray-900 dark:text-white placeholder-gray-400 outline-none transition-all"
+              className="w-full pl-10 pr-4 py-2 text-sm rounded-full bg-gray-150/60 dark:bg-gray-800/60 border border-transparent focus:border-sky-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-sky-500/20 text-gray-900 dark:text-white placeholder-gray-400 outline-none transition-all"
             />
           </div>
 
@@ -177,9 +177,9 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
                 <div
                   key={tour.id}
                   onClick={() => selectSuggestion(tour)}
-                  className="flex items-center gap-3 px-4 py-3 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 cursor-pointer transition-colors"
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-sky-50 dark:hover:bg-sky-950/20 cursor-pointer transition-colors"
                 >
-                  <Compass className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                  <Compass className="w-4 h-4 text-sky-500 flex-shrink-0" />
                   <div className="flex-1 min-w-0 text-left">
                     <span className="block text-sm font-bold text-gray-900 dark:text-white truncate">{tour.title}</span>
                     <span className="block text-[9px] text-gray-400 dark:text-gray-500 uppercase font-black tracking-wider leading-none mt-1">{tour.duration || "Experience"}</span>
@@ -201,7 +201,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
           >
             <Heart className="w-5 h-5" />
             {wishlistCount > 0 && (
-              <span className="absolute -top-0.5 -right-0.5 w-4.5 h-4.5 bg-emerald-500 text-white rounded-full text-[10px] font-bold flex items-center justify-center animate-pulse">
+              <span className="absolute -top-0.5 -right-0.5 w-4.5 h-4.5 bg-sky-500 text-white rounded-full text-[10px] font-bold flex items-center justify-center animate-pulse">
                 {wishlistCount}
               </span>
             )}
@@ -233,7 +233,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
                       onClick={() => selectCurrency(c)}
                       className={`w-full text-left px-4 py-2 text-sm font-semibold flex items-center justify-between ${
                         currency === c 
-                          ? "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-450" 
+                          ? "bg-sky-50 dark:bg-sky-950/40 text-sky-600 dark:text-sky-450" 
                           : "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
                       } transition-colors cursor-pointer`}
                     >
@@ -298,9 +298,9 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
                       selectSuggestion(tour)
                       setIsMobileMenuOpen(false)
                     }}
-                    className="flex items-center gap-3 px-4 py-3 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 cursor-pointer transition-colors"
+                    className="flex items-center gap-3 px-4 py-3 hover:bg-sky-50 dark:hover:bg-sky-950/20 cursor-pointer transition-colors"
                   >
-                    <Compass className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                    <Compass className="w-4 h-4 text-sky-500 flex-shrink-0" />
                     <div className="flex-1 min-w-0 text-left">
                       <span className="block text-sm font-bold text-gray-900 dark:text-white truncate">{tour.title}</span>
                       <span className="block text-[9px] text-gray-400 dark:text-gray-500 uppercase font-black tracking-wider leading-none mt-1">{tour.duration || "Experience"}</span>

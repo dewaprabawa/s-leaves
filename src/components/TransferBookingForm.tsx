@@ -137,12 +137,12 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
 
   if (serverResult?.success) {
     return (
-      <div className="bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 rounded-2xl p-8 text-center space-y-4">
-        <div className="w-16 h-16 bg-emerald-100 dark:bg-emerald-800 rounded-full flex items-center justify-center mx-auto mb-6">
-          <CheckCircle2 className="w-8 h-8 text-emerald-600 dark:text-emerald-400" />
+      <div className="bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800 rounded-2xl p-8 text-center space-y-4">
+        <div className="w-16 h-16 bg-sky-100 dark:bg-sky-800 rounded-full flex items-center justify-center mx-auto mb-6">
+          <CheckCircle2 className="w-8 h-8 text-sky-600 dark:text-sky-400" />
         </div>
         <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Transfer Booked!</h3>
-        <p className="text-emerald-800 dark:text-emerald-200">
+        <p className="text-sky-800 dark:text-sky-200">
           {serverResult.message}
         </p>
         <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
@@ -158,7 +158,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
       <div className="flex items-center justify-between mb-8 relative">
         <div className="absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-gray-100 dark:bg-gray-800 rounded-full z-0"></div>
         <div 
-          className="absolute left-0 top-1/2 -translate-y-1/2 h-1 bg-emerald-500 rounded-full z-0 transition-all duration-300"
+          className="absolute left-0 top-1/2 -translate-y-1/2 h-1 bg-sky-500 rounded-full z-0 transition-all duration-300"
           style={{ width: `${((step - 1) / 2) * 100}%` }}
         ></div>
         
@@ -167,7 +167,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
             key={s} 
             className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold z-10 transition-colors duration-300 ${
               step >= s 
-                ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/30' 
+                ? 'bg-sky-500 text-white shadow-lg shadow-sky-500/30' 
                 : 'bg-white dark:bg-gray-900 text-gray-400 border-2 border-gray-200 dark:border-gray-700'
             }`}
           >
@@ -185,13 +185,13 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
           <div className="space-y-6">
             <div>
               <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                <Calendar className="w-4 h-4 text-emerald-500" /> Transfer Date
+                <Calendar className="w-4 h-4 text-sky-500" /> Transfer Date
               </label>
               <input 
                 type="date" 
                 {...register("date")}
                 min={new Date().toISOString().split('T')[0]}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white"
               />
               {errors.date && <p className="text-red-500 text-xs mt-1">{errors.date.message}</p>}
             </div>
@@ -199,26 +199,26 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                  <Users className="w-4 h-4 text-emerald-500" /> Adults
+                  <Users className="w-4 h-4 text-sky-500" /> Adults
                 </label>
                 <input 
                   type="number" 
                   min="1" max="10"
                   {...register("adults", { valueAsNumber: true })}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white"
                 />
                 {errors.adults && <p className="text-red-500 text-xs mt-1">{errors.adults.message}</p>}
               </div>
               
               <div>
                 <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                  <Users className="w-4 h-4 text-emerald-500" /> Children
+                  <Users className="w-4 h-4 text-sky-500" /> Children
                 </label>
                 <input 
                   type="number" 
                   min="0" max="10"
                   {...register("children", { valueAsNumber: true })}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white"
                 />
                 {errors.children && <p className="text-red-500 text-xs mt-1">{errors.children.message}</p>}
               </div>
@@ -238,7 +238,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
                       onClick={() => handleVehicleSelect(vehicle.name)}
                       className={`flex flex-col p-4 rounded-2xl border-2 cursor-pointer transition-all duration-300 select-none ${
                         isSelected
-                          ? "border-emerald-600 bg-emerald-50/20 dark:bg-emerald-950/15 ring-1 ring-emerald-600"
+                          ? "border-sky-600 bg-sky-50/20 dark:bg-sky-950/15 ring-1 ring-sky-600"
                           : "border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 bg-white dark:bg-gray-950"
                       }`}
                     >
@@ -249,13 +249,13 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
                             <p className="text-xs text-gray-550 dark:text-gray-400 mt-1 leading-normal">{vehicle.description}</p>
                           )}
                         </div>
-                        <span className="text-base font-black text-emerald-600 dark:text-emerald-400 flex-shrink-0">
+                        <span className="text-base font-black text-sky-600 dark:text-sky-400 flex-shrink-0">
                           {formatPrice(vehicle.basePrice)}
                         </span>
                       </div>
                       
                       <div className="mt-4 pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400">
-                        <Users className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                        <Users className="w-4 h-4 text-sky-500 flex-shrink-0" />
                         <span>Fits up to {vehicle.capacity} Passengers</span>
                       </div>
                     </div>
@@ -280,7 +280,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
                         onClick={() => handleDropPointToggle(dp.name)}
                         className={`flex items-center justify-between p-3.5 rounded-xl border cursor-pointer transition-all duration-200 select-none ${
                           isChecked
-                            ? "border-emerald-500/50 bg-emerald-50/10 dark:bg-emerald-950/5"
+                            ? "border-sky-500/50 bg-sky-50/10 dark:bg-sky-950/5"
                             : "border-gray-150 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-950/50"
                         }`}
                       >
@@ -289,7 +289,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
                             type="checkbox"
                             checked={isChecked}
                             onChange={() => {}} // handled by parent div onClick
-                            className="w-4.5 h-4.5 rounded text-emerald-600 border-gray-300 dark:border-gray-700 dark:bg-gray-900 focus:ring-emerald-500 focus:ring-opacity-25"
+                            className="w-4.5 h-4.5 rounded text-sky-600 border-gray-300 dark:border-gray-700 dark:bg-gray-900 focus:ring-sky-500 focus:ring-opacity-25"
                           />
                           <div>
                             <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">{dp.name}</span>
@@ -298,7 +298,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
                             )}
                           </div>
                         </div>
-                        <span className="text-sm font-bold text-emerald-600 dark:text-emerald-400">
+                        <span className="text-sm font-bold text-sky-600 dark:text-sky-400">
                           +{formatPrice(dp.additionalPrice)}
                         </span>
                       </div>
@@ -321,13 +321,13 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
               {transferType === 'airport' && (
                 <div>
                   <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                    <Plane className="w-4 h-4 text-emerald-500" /> Flight Number
+                    <Plane className="w-4 h-4 text-sky-500" /> Flight Number
                   </label>
                   <input 
                     type="text" 
                     placeholder="e.g. SQ938"
                     {...register("flightNumber")}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white"
                   />
                   {errors.flightNumber && <p className="text-red-500 text-xs mt-1">{errors.flightNumber.message}</p>}
                 </div>
@@ -335,13 +335,13 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
               
               <div className={transferType === 'airport' ? "" : "col-span-1 sm:col-span-2"}>
                 <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                  <Clock className="w-4 h-4 text-emerald-500" /> {transferType === 'airport' ? 'Arrival Time' : 'Pickup Time'}
+                  <Clock className="w-4 h-4 text-sky-500" /> {transferType === 'airport' ? 'Arrival Time' : 'Pickup Time'}
                 </label>
                 <input 
                   type="text" 
                   placeholder={transferType === 'airport' ? "e.g. 14:35" : "e.g. 09:00 AM"}
                   {...register("arrivalTime")}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white"
                 />
                 {errors.arrivalTime && <p className="text-red-500 text-xs mt-1">{errors.arrivalTime.message}</p>}
               </div>
@@ -349,13 +349,13 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
 
             <div>
               <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                <MapPin className="w-4 h-4 text-emerald-500" /> {transferType === 'airport' ? 'Drop-off Hotel & Zone' : 'Drop-off Address / Hotel'}
+                <MapPin className="w-4 h-4 text-sky-500" /> {transferType === 'airport' ? 'Drop-off Hotel & Zone' : 'Drop-off Address / Hotel'}
               </label>
               <input 
                 type="text" 
                 placeholder={transferType === 'airport' ? "e.g. W Bali Seminyak Hotel" : "e.g. Maya Ubud Hotel or Canggu bypass address"}
                 {...register("hotelZone")}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white"
               />
               {errors.hotelZone && <p className="text-red-500 text-xs mt-1">{errors.hotelZone.message}</p>}
             </div>
@@ -370,39 +370,39 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div>
                 <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                  <User className="w-4 h-4 text-emerald-500" /> Full Name
+                  <User className="w-4 h-4 text-sky-500" /> Full Name
                 </label>
                 <input 
                   type="text" 
                   placeholder="John Doe"
                   {...register("guestName")}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white"
                 />
                 {errors.guestName && <p className="text-red-500 text-xs mt-1">{errors.guestName.message}</p>}
               </div>
 
               <div>
                 <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                  <Mail className="w-4 h-4 text-emerald-500" /> Email
+                  <Mail className="w-4 h-4 text-sky-500" /> Email
                 </label>
                 <input 
                   type="email" 
                   placeholder="john@example.com"
                   {...register("email")}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white"
                 />
                 {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
               </div>
 
               <div>
                 <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                  <Phone className="w-4 h-4 text-emerald-500" /> Phone (WhatsApp)
+                  <Phone className="w-4 h-4 text-sky-500" /> Phone (WhatsApp)
                 </label>
                 <input 
                   type="tel" 
                   placeholder="+1 (555) 000-0000"
                   {...register("phone")}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white"
                 />
                 {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>}
               </div>
@@ -410,25 +410,25 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
 
             <div>
               <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                <MessageSquare className="w-4 h-4 text-emerald-500" /> Transfer Notes / Instructions (Optional)
+                <MessageSquare className="w-4 h-4 text-sky-500" /> Transfer Notes / Instructions (Optional)
               </label>
               <textarea 
                 rows={2}
                 placeholder="Flight details, driver instructions, child seat requests, etc."
                 {...register("transferNotes")}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white resize-none"
               />
             </div>
 
             <div>
               <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-                <MessageSquare className="w-4 h-4 text-emerald-500" /> Special Requests (Optional)
+                <MessageSquare className="w-4 h-4 text-sky-500" /> Special Requests (Optional)
               </label>
               <textarea 
                 rows={2}
                 placeholder="Extra luggage requests, medical requests, etc."
                 {...register("specialRequests")}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-emerald-500/50 outline-none transition-all dark:text-white resize-none"
+                className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white resize-none"
               />
             </div>
 
@@ -449,7 +449,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
               {selectedDropPoints.length > 0 && (
                 <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-800">
                   <span className="text-gray-500">Drop Stops ({selectedDropPoints.length})</span>
-                  <span className="font-semibold text-emerald-600 dark:text-emerald-400">+{formatPrice(dropPointsSurcharge)}</span>
+                  <span className="font-semibold text-sky-600 dark:text-sky-400">+{formatPrice(dropPointsSurcharge)}</span>
                 </div>
               )}
               <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-800">
@@ -458,7 +458,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
               </div>
               <div className="flex justify-between items-center text-base font-bold pt-1">
                 <span>Total Price</span>
-                <span className="text-emerald-600 dark:text-emerald-400 text-lg font-black">{formatPrice(totalPrice)}</span>
+                <span className="text-sky-600 dark:text-sky-400 text-lg font-black">{formatPrice(totalPrice)}</span>
               </div>
             </div>
           </div>
@@ -487,7 +487,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
             <button 
               type="button" 
               onClick={handleNextStep}
-              className="flex-1 py-3 px-6 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl font-semibold transition-colors flex items-center justify-center shadow-lg shadow-emerald-600/20"
+              className="flex-1 py-3 px-6 bg-sky-600 hover:bg-sky-500 text-white rounded-xl font-semibold transition-colors flex items-center justify-center shadow-lg shadow-sky-600/20"
             >
               Next Step <ChevronRight className="w-5 h-5 ml-1" />
             </button>
@@ -495,7 +495,7 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
             <button 
               type="submit" 
               disabled={isSubmitting || !isValid}
-              className="flex-1 py-3 px-6 bg-emerald-600 hover:bg-emerald-500 disabled:bg-emerald-600/50 text-white rounded-xl font-semibold transition-colors flex items-center justify-center shadow-lg shadow-emerald-600/20"
+              className="flex-1 py-3 px-6 bg-sky-600 hover:bg-sky-500 disabled:bg-sky-600/50 text-white rounded-xl font-semibold transition-colors flex items-center justify-center shadow-lg shadow-sky-600/20"
             >
               {isSubmitting ? (
                 <><Loader2 className="w-5 h-5 mr-2 animate-spin" /> Processing...</>

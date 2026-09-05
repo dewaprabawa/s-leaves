@@ -915,6 +915,9 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     category: "Activity",
     duration: "Half Day or Full Day",
     basePrice: 1200000,
+    seoTitle: "Bali Dirt Bike Tour Near Ubud",
+    seoDescription:
+      "Guided Bali dirt bike rides — forest, beach & volcano trails. Gear, lunch & hotel pickup included. Ask WhatsApp for bike tiers.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1519444334051-a39396328670?auto=format&fit=crop&w=1200&q=80",
       alt: "Bali Dirt Bike Adventure",

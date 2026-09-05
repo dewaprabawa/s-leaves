@@ -20,13 +20,13 @@
 
 ## Priority 1 — Next 2 sprints (Commercial visibility)
 
-| # | Action | Why | KPI |
-|---|--------|-----|-----|
-| 1.1 | Strengthen `/blog/bali-atv-tour-ubud-guide` as ATV hub spoke (price table, inclusions, WhatsApp CTA, link to `/tours/bali-atv-adventure`) | Already pos ~8 with 34 imp / 1 click | ATV tour impressions ≥50 / 28d |
-| 1.2 | Expand temple-dress article to **900–1,200 words** with first-hand Pejeng/Ubud temple visit notes (no AI filler) | Thin (~300 words) on competitive query | Position → top 20; CTR >3% |
-| 1.3 | Publish/refresh **one** cycling spoke only if it adds operator-real info (Subak / Pejeng vs Tegallalang already exists — improve that page’s title/CTR instead of new thin posts) | Cycling money page has **2 impressions** | Cycling URL impressions ≥30 / 28d |
-| 1.4 | Dirt-bike tour page: unique `seoTitle`/`seoDescription`, clearer H1/offer, photos | 32 imp / 0 clk / pos 24 | CTR >2% or prune if non-core |
-| 1.5 | Brand query pack: GBP name consistency, homepage brand in title, review `sameAs` | `sekar bali` pos 6.9 / 0 clicks | Brand query CTR >10% |
+| # | Action | Why | KPI | Status |
+|---|--------|-----|-----|--------|
+| 1.1 | Strengthen `/blog/bali-atv-tour-ubud-guide` as ATV hub spoke (price table, inclusions, WhatsApp CTA, link to `/tours/bali-atv-adventure`) | Already pos ~8 with 34 imp / 1 click | ATV tour impressions ≥50 / 28d | ✅ Shipped 2026-09-05 |
+| 1.2 | Expand temple-dress article to **900–1,200 words** with first-hand Pejeng/Ubud temple visit notes (no AI filler) | Thin (~300 words) on competitive query | Position → top 20; CTR >3% | ✅ ~910 words + Pejeng guide notes |
+| 1.3 | Publish/refresh **one** cycling spoke only if it adds operator-real info (Subak / Pejeng vs Tegallalang already exists — improve that page’s title/CTR instead of new thin posts) | Cycling money page has **2 impressions** | Cycling URL impressions ≥30 / 28d | ✅ Title shortened + CTA → cycling/cooking |
+| 1.4 | Dirt-bike tour page: unique `seoTitle`/`seoDescription`, clearer H1/offer, photos | 32 imp / 0 clk / pos 24 | CTR >2% or prune if non-core | ✅ seoTitle/seoDescription added |
+| 1.5 | Brand query pack: GBP name consistency, homepage brand in title, review `sameAs` | `sekar bali` pos 6.9 / 0 clicks | Brand query CTR >10% | ✅ `alternateName` for Sekar Bali variants |
 
 ---
 
@@ -34,7 +34,7 @@
 
 | # | Action | Evidence |
 |---|--------|----------|
-| 2.1 | From homepage + `/blog` index, add descriptive links to top GSC blogs (temple dress, airport, luwak ethical, ATV guide, Pejeng history) | 17 near-orphan blogs |
+| 2.1 | From homepage + `/blog` index, add descriptive links to top GSC blogs (temple dress, airport, luwak ethical, ATV guide, Pejeng history) | 17 near-orphan blogs | ✅ Homepage `travelGuides` features ATV guide, Pejeng vs Tegallalang, temple dress |
 | 2.2 | Keep `/tours` → `/#adventures` redirect; do **not** create a thin duplicate tours index unless building a real unique hub | `/tours` 48 GSC imp via redirect target |
 | 2.3 | Ensure sitemap lists only final tour slugs (already true) + no legacy pejeng-cycling URL | Sitemap check 2026-09-05 |
 
@@ -83,12 +83,13 @@
 - [x] 0.3 Airport guide title/meta shorten *(shipped 2026-09-05)*
 - [x] 0.4 Internal links temple dress → cycling / cooking / ATV *(shipped 2026-09-05)*
 - [x] 0.5 Kill legacy cycling internal links *(confirmed none in `src/`; 308 kept)*
-- [ ] 1.1 ATV guide spoke hardening
-- [ ] 1.2 Expand temple dress (first-hand)
-- [ ] 1.3 Cycling spoke CTR / impressions lift
-- [ ] 1.4 Dirt-bike page decision (optimize or de-emphasize)
-- [ ] 1.5 Brand / GBP pack
-- [ ] 2.x Orphan link pass
+- [x] 1.1 ATV guide spoke hardening *(price table, inclusions, WhatsApp CTA)*
+- [x] 1.2 Expand temple dress (first-hand Pejeng notes, ~900+ words)
+- [x] 1.3 Cycling spoke CTR / impressions lift *(Pejeng vs Tegallalang title/CTA)*
+- [x] 1.4 Dirt-bike page `seoTitle`/`seoDescription`
+- [x] 1.5 Brand / GBP pack *(Organization `alternateName` for Sekar Bali)*
+- [x] 2.1 Homepage travel guides → ATV guide / Pejeng cycling / temple dress
+- [ ] 2.x Remaining orphan link pass on `/blog` body copy
 - [ ] 3.x Weekly GSC review started
 
 ---

@@ -163,29 +163,29 @@ const stats = [
 
 const travelGuides = [
   {
+    title: "Bali ATV Tour Near Ubud (2026)",
+    excerpt: "Trails, IDR price table, inclusions, and WhatsApp booking for Single & Tandem ATV at All New Bali Adventure.",
+    href: "/blog/bali-atv-tour-ubud-guide",
+  },
+  {
     title: "How Much Does an ATV Cost in Bali?",
     excerpt: "2026 Single & Tandem IDR prices near Ubud — lunch, gear, insurance, and pickup fees explained.",
     href: "/blog/how-much-does-atv-cost-bali-ubud-2026",
   },
   {
-    title: "Is an Ubud Cycling Tour Worth It?",
-    excerpt: "Honest pros and cons of Pejeng ricefield cycling vs Tegallalang crowds — IDR 475K with free pickup.",
-    href: "/blog/is-ubud-cycling-tour-worth-it",
+    title: "Pejeng vs Tegallalang Cycling",
+    excerpt: "Quiet Pejeng Subak lanes vs busy Tegallalang photo terraces — lunch and free Ubud pickup on our ride.",
+    href: "/blog/pejeng-rice-terrace-cycling-vs-tegallalang",
   },
   {
-    title: "Private ATV vs Mass-Market Tours",
-    excerpt: "What changes when you book small-group ATV at All New Bali Adventure with WhatsApp clarity.",
-    href: "/blog/private-atv-vs-mass-market-ubud",
+    title: "Bali Temple Dress Code Guide",
+    excerpt: "Sarong, sash, covered shoulders — what temples require, plus what we provide on guided stops.",
+    href: "/blog/bali-temple-dress-code",
   },
   {
     title: "Cycling & Cooking Class in Ubud",
     excerpt: "Full-day rice paddy cycling plus evening Balinese cooking class — prices and itinerary.",
     href: "/blog/cycling-cooking-class-ubud-full-day-itinerary",
-  },
-  {
-    title: "Rafting vs Tubing vs ATV Near Ubud",
-    excerpt: "Compare intensity, prices, and which adventure fits your style.",
-    href: "/blog/rafting-vs-tubing-vs-atv-near-ubud",
   },
   {
     title: "Ubud Hotel Pickup Explained",

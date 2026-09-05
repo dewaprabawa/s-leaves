@@ -664,8 +664,8 @@ If your main goal is to experience Balinese culture, any time of year is excelle
   },
   {
     slug: "bali-temple-dress-code",
-    title: "What to Wear to a Balinese Temple: Dress Code Guide",
-    excerpt: "Don't get turned away at the temple gates! Read our definitive guide on the proper Bali temple dress code, including sarongs and sashes.",
+    title: "Bali Temple Dress Code Guide",
+    excerpt: "Sarong, sash, covered shoulders — what temples require in Bali, plus what we provide on tours. Avoid gate turnaways.",
     publishedAt: "2026-08-05",
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
@@ -688,6 +688,9 @@ T-shirts or shirts with sleeves are required. Ladies should avoid low-cut tops.
 
 ### What If I Don't Have a Sarong?
 Most major temples, including Tanah Lot and Tirta Empul, offer sarongs for rent or borrow at the entrance. However, if you are traveling with a private guide, like on our [Full Day Ubud Tour](/#adventures), your driver will usually provide pristine sarongs and sashes for you to use throughout the day.
+
+### After Temples: Village Adventures Near Ubud
+Once you are comfortable with temple etiquette, pair a respectful temple stop with a hands-on Pejeng day — our [Ubud rice paddy cycling tour](/tours/ubud-ricefield-cycling-tour) (lunch + free Ubud pickup) or an evening [Balinese cooking class](/tours/balinese-cooking-class). Prefer adrenaline? Book a [private ATV near Ubud](/tours/bali-atv-adventure) via WhatsApp.
 `
   },
   {
@@ -904,8 +907,8 @@ Book your seat at our [Traditional Balinese Dinner Cooking Class](/#adventures) 
   },
   {
     slug: "bali-airport-transfer-guide-dps-to-ubud",
-    title: "Bali Airport Transfer Guide (DPS to Ubud): Rates, Routes & Scams to Avoid",
-    excerpt: "Everything you need to know about traveling from Ngurah Rai Airport (DPS) to Ubud. Compare private airport transfers, flat rates, travel times, and arrival tips.",
+    title: "DPS to Ubud Transfer Guide",
+    excerpt: "Private DPS→Ubud transfer: flat rates, 60–90 min, avoid arrival-hall touts. Pre-book with flight tracking — no surge surprises.",
     publishedAt: "2026-08-21",
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",

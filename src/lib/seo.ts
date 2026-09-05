@@ -32,6 +32,7 @@ export function buildOrganizationSchema() {
     '@type': ['TravelAgency', 'LocalBusiness'],
     '@id': `${SITE_URL}/#organization`,
     name: SITE_NAME,
+    alternateName: ['Sekar Bali', 'Sekar Bali Activity Ubud', 'Sekar Bali Pejeng'],
     legalName: SITE_NAME,
     description:
       'Bali adventure tours in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Ubud ricefield cycling, and Balinese cooking class. Free Ubud hotel pickup on the cycling tour only.',

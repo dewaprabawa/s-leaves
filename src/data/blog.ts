@@ -208,56 +208,74 @@ Compare packages on [prices 2026](/blog/bali-adventure-packages-prices-2026), th
   },
   {
     slug: 'bali-atv-tour-ubud-guide',
-    title: 'Bali ATV Tour Near Ubud: Trails, Prices, and What Is Included (2026)',
-    excerpt: 'A practical guide to booking a Bali ATV / quad bike adventure near Ubud and Pejeng — prices from IDR 600,000, what to bring, lunch and gear inclusions, and how to add Wos River tubing.',
+    title: 'Bali ATV Tour Near Ubud (2026)',
+    excerpt: 'ATV near Ubud from IDR 600K — trails, lunch, gear, insurance. Optional Wos tubing. WhatsApp booking, no upfront payment.',
     publishedAt: '2026-08-30',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**What is the best way to book a Bali ATV tour near Ubud?** Book a beginner-friendly Single or Tandem ATV ride based in Pejeng with gear, lunch, and insurance included. Sekar Bali Activity offers Single ATV from **IDR 600,000** (group tiers lower) and Tandem ATV from **IDR 859,000**, with optional **Wos River tubing** after the track.
+**What is the best way to book a Bali ATV tour near Ubud?** Book a beginner-friendly Single or Tandem ATV ride at **All New Bali Adventure** in Pejeng with gear, lunch, and insurance included. Sekar Bali Activity offers Single ATV from **IDR 600,000** (group tiers lower) and Tandem ATV from **IDR 859,000**, with optional **Wos River tubing** after the track.
 
 > **Key Takeaways**
 > - Single ATV from IDR 600,000 (1 pax); tier rates for 2+ / 3+; Tandem from IDR 859,000 (2 pax)
 > - Included: guided ATV ride, boot shoes, helmet, lunch, insurance, safety briefing
-> - Hotel pickup optional (IDR 50,000 one-way / IDR 100,000 round trip) or meet at All New Bali Adventure
+> - Hotel pickup optional (IDR 50,000 one-way / IDR 100,000 round trip) or self-meet at All New Bali Adventure
 > - Bring: changing clothes / dry cloth, sunscreen, cash, waterproof phone case (optional)
 > - Optional combo: race the ATV track, then tube the Wos River
-> - Book via WhatsApp with your name, age, adult/child, location, activity, and price
+> - Book via WhatsApp — no upfront payment to inquire
 
 ---
 
+## 2026 ATV Price Table (Ubud / Pejeng)
+
+| Package | Guests | From price (IDR) | Notes |
+| --- | --- | --- | --- |
+| Single ATV | 1 | 600,000 | Own quad · lunch + gear + insurance |
+| Single ATV | 2 | 575,000 each | Same inclusions · group tier |
+| Single ATV | 3+ | 550,000 each | Same inclusions · group tier |
+| Tandem ATV | 2 sharing | 859,000 | One bike for two · same inclusions |
+| ATV + Wos tubing | ask | combo quote | Trail first, then river float |
+
+Prices match our live [Bali ATV Adventure](/tours/bali-atv-adventure) page. Confirm the day’s rate on WhatsApp before you ride.
+
 ## Why Pejeng / Ubud for ATV?
 
-Pejeng sits just east of central Ubud, so transfer times are short and the trails reach jungle paths, muddy tracks, and river crossings without a long haul. Riders get a full safety briefing — no prior ATV experience is required.
+Pejeng sits just east of central Ubud, so transfer times are short and the trails reach jungle paths, muddy tracks, and river crossings without a long haul north. Riders get a full safety briefing — **no prior ATV experience is required**. Our Google Business / corporate pin is in Banjar Kenderan; the ATV meet point is the Pejeng activity base (All New Bali Adventure), not the office pin.
 
-## What You Get on the ATV Package
+## What Is Included
 
 | Include | Details |
 | --- | --- |
 | Guided ATV trail ride | Single or tandem through jungle, mud, and river crossings |
-| Boot shoes, helmet & insurance | Fitted at base before the ride — full safety equipment |
+| Boot shoes, helmet & insurance | Fitted at base before the ride |
 | Simple menu lunch | Served after the adventure |
-| Safety briefing & expert guide | English-speaking — no experience needed |
-| Optional hotel pickup | IDR 50,000 pickup + IDR 50,000 return to same hotel |
+| Safety briefing & guide | English-speaking — beginner-friendly |
+| Optional hotel pickup | IDR 50,000 each way to the same Ubud-area hotel |
+
+**Not included:** personal expenses, gratuities, out-of-area pickup surcharges, and tubing unless you choose the combo.
 
 ## What To Bring
 
 1. **Changing clothes or a dry cloth** — trails get muddy  
-2. **Sunscreen** (recommended) — for open trail sections  
-3. **Cash for extras** — snacks, souvenirs, or gratuities  
+2. **Sunscreen** — for open trail sections  
+3. **Cash for extras** — snacks, souvenirs, or tips  
 4. **Waterproof phone case** (optional) — handy for trail photos  
 
-Towels and changing facilities are available at our base.
+Towels and changing facilities are available at the base.
 
-## ATV + River Tubing Combo
+## ATV + Wos River Tubing Combo
 
-Looking for a fuller day? After racing the ATV track you can combine with **river tubing on the Wos River** — a popular land-and-water package. Ask for combo availability when you book.
+Want a fuller day? After the ATV track, add **river tubing on the Wos River** — land then water in one booking. Ask WhatsApp for current combo timing and price. Details: [ATV + River Tubing guide](/blog/atv-river-tubing-wos-river-bali).
 
-## How to Book
+## Who It Is For
 
-Use the booking form on our site or message WhatsApp. Send your **name, age, adult or child, hotel/pickup location, activity, and estimated price** so we can confirm the same day.
+Couples, friends, and first-timers staying in/near Ubud. Children can join when age-appropriate — tell us ages when you message so we assign Adult or Child correctly.
 
-Ready to ride? Book the [Bali ATV Adventure at All New Bali Adventure](/tours/bali-atv-adventure) or see all [adventure packages](/#adventures). For a full 2026 price breakdown see [How much does an ATV cost in Bali](/blog/how-much-does-atv-cost-bali-ubud-2026).
+## How to Book on WhatsApp
+
+Message us with **name, age, adult/child, hotel or meet preference, activity (Single / Tandem / combo), and date**. No deposit is required to inquire.
+
+**CTA:** Open the [Bali ATV Adventure tour page](/tours/bali-atv-adventure) and tap WhatsApp, or see [how WhatsApp booking works](/blog/how-to-book-bali-adventure-whatsapp). Full 2026 rate notes: [How much does an ATV cost in Bali](/blog/how-much-does-atv-cost-bali-ubud-2026).
 `
   },
   {
@@ -670,27 +688,80 @@ If your main goal is to experience Balinese culture, any time of year is excelle
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
     content: `
-**What is the dress code for temples in Bali?** The strict dress code for entering any Balinese Hindu temple requires both men and women to cover their legs below the knee by wearing a traditional *kamen* (sarong). Additionally, a *selendang* (temple sash) must be tied around the waist to symbolically separate the pure upper body from the impure lower body. Shoulders and upper arms must also be covered; sleeveless shirts, tank tops, and beachwear are strictly prohibited. When booking our [Half Day Tanah Lot Sunset Tour](/#adventures), proper temple attire is provided, ensuring all guests can respectfully enter the sacred grounds without needing to purchase their own sarongs at inflated tourist prices.
+**What is the dress code for temples in Bali?** Both men and women must cover legs below the knee with a *kamen* (sarong) and tie a *selendang* (sash) at the waist. Shoulders and upper arms must be covered — no tank tops, sleeveless shirts, or beachwear. When you visit temples with Sekar Bali Activity (for example on a [Half Day Tanah Lot sunset stop](/#adventures)), we bring clean sarongs and sashes so you are not pushed into buying tourist-mark-up fabric at the gate.
 
-### Why the Strict Rules?
-Balinese Hinduism is deeply rooted in respect and purity. Temples are not just tourist attractions; they are active, sacred spaces where locals come to pray and connect with the divine. Dressing appropriately is a fundamental sign of respect.
+> **Quick checklist before you enter**
+> - Sarong covering knees to ankles  
+> - Sash tied at the waist  
+> - Sleeved top covering shoulders  
+> - Remove hat inside the inner courtyard when asked  
+> - Do not enter the jeroan (innermost courtyard) during menstruation — this is a living religious rule, not a tourist suggestion  
 
-### The Essential Items
+---
 
-**1. The Sarong (Kamen)**
-A piece of fabric wrapped around the waist that falls to the ankles. It is mandatory for everyone.
+### Why temples enforce dress codes
 
-**2. The Sash (Selendang)**
-Tied over the sarong at the waist. It is believed to bind negative energy and keep it from rising to the upper body.
+Balinese Hindu temples are active prayer spaces, not outdoor museums. Families from Pejeng, Ubud, and Gianyar bring daily offerings; priests (*pemangku*) lead ceremonies on the 210-day Pawukon calendar. Clothing signals respect for *suci* (ritual purity). Locals notice guests who arrive in beachwear — and gate staff will turn you away or rent you a sarong at a premium.
 
-**3. The Upper Body**
-T-shirts or shirts with sleeves are required. Ladies should avoid low-cut tops. 
+From our Pejeng base we regularly stop at village temples and water temples near Tirta Empul / Tampaksiring routes. The pattern is the same every time: covered legs, sash on, quiet voices near the shrine.
 
-### What If I Don't Have a Sarong?
-Most major temples, including Tanah Lot and Tirta Empul, offer sarongs for rent or borrow at the entrance. However, if you are traveling with a private guide, like on our [Full Day Ubud Tour](/#adventures), your driver will usually provide pristine sarongs and sashes for you to use throughout the day.
+### The three pieces that matter
 
-### After Temples: Village Adventures Near Ubud
-Once you are comfortable with temple etiquette, pair a respectful temple stop with a hands-on Pejeng day — our [Ubud rice paddy cycling tour](/tours/ubud-ricefield-cycling-tour) (lunch + free Ubud pickup) or an evening [Balinese cooking class](/tours/balinese-cooking-class). Prefer adrenaline? Book a [private ATV near Ubud](/tours/bali-atv-adventure) via WhatsApp.
+**1. Sarong (*kamen*)**  
+Wrap fabric so it falls to the ankles. Men and women both wear one. A beach sarong is fine if it is opaque and long enough; sheer cover-ups are not.
+
+**2. Sash (*selendang*)**  
+Tied over the sarong at the waist. It marks the boundary between the “upper” and “lower” body in temple symbolism. Staff at major sites will help you tie it if you ask.
+
+**3. Upper body**  
+T-shirt or shirt with sleeves. Avoid deep necklines. Sport bras alone or crop tops will not pass.
+
+**Shoes:** You usually keep sandals on in outer courtyards; follow the local lead if a pavilion asks you to remove them.
+
+### What we see guests get wrong
+
+1. **Wearing the sash like a scarf around the neck** — it belongs at the waist.  
+2. **Rolling the sarong above the knee** for photos — gate attendants will stop you.  
+3. **Assuming “tourist temple” rules are softer** — Tanah Lot, Uluwatu, and Tirta Empul still enforce coverage.  
+4. **Buying the first sarong at the parking lot** — prices are higher than Ubud market stalls; borrow ours on a guided stop when you can.
+
+### Renting vs bringing your own
+
+Tanah Lot, Tirta Empul, and Uluwatu offer rental or loan sarongs at the entrance. Quality varies and queues build mid-morning. If you travel with a private driver on our [Full Day Ubud Tour](/#adventures), we pack clean sarongs and sashes in the car so you move straight from village roads to the courtyard without a retail stop.
+
+For independent visits, a simple cotton sarong from an Ubud stall (often under IDR 50,000) pays for itself after two temples.
+
+### Temple etiquette beyond clothing
+
+- Walk clockwise around shrines unless a priest directs otherwise.  
+- Do not stand higher than the priest or climb on *meru* roofs for photos.  
+- Point with your thumb or open hand, not a single finger, when asking directions.  
+- If a ceremony is underway, wait at the outer wall until invited closer.  
+- Drones are usually banned inside temple compounds — ask first.
+
+These habits matter as much as the sarong when you cycle past village temples on rice-paddy lanes in Pejeng.
+
+### After temples: a Pejeng day that fits the same respect
+
+Temple mornings pair well with slow village time:
+
+- **Ride the paddies:** [Ubud ricefield cycling tour](/tours/ubud-ricefield-cycling-tour) — lunch included, free Ubud hotel pickup, small group on Subak paths (not the Tegallalang swing strip).  
+- **Cook dinner:** [Balinese cooking class in Pejeng](/tours/balinese-cooking-class) — Base Genep spice paste and a shared evening meal.  
+- **Need mud and engines instead?** [Private ATV near Ubud](/tours/bali-atv-adventure) at All New Bali Adventure — still book via WhatsApp with name, date, and hotel.
+
+Coming from the airport first? Skim our [DPS to Ubud transfer guide](/blog/bali-airport-transfer-guide-dps-to-ubud), then plan temple clothes before your first courtyard stop.
+
+### A note from Pejeng guides
+
+Guests who stay east of Ubud often combine Tirta Empul or a village temple with the same day’s cycling. We keep spare sashes in the cycling van because Subak lanes pass shrines where a short prayer stop is normal — you should already be covered before you roll past. If you are only doing ATV mud tracks that day, temple clothes still matter for any side stop your driver suggests.
+
+For families: children wear the same sarong/sash rules at major temples. Ask us for a child-length sash when you WhatsApp your ages.
+
+Bring a light long-sleeve layer for early temple visits — stone courtyards stay cool before 9am, then heat builds fast. We would rather you over-cover and roll sleeves later than argue with gate staff over bare shoulders. Keep water and a small towel in your bag — Tirta Empul courtyards get wet, and Pejeng village paths get dusty by late morning.
+
+### Book with clear questions
+
+Message WhatsApp with your temple stop (if any), preferred adventure, and hotel area. We confirm sarong provision, pickup rules, and IDR pricing in one thread — no surprise “dress rental” add-ons at the gate.
 `
   },
   {
@@ -828,8 +899,8 @@ Ready to cook with us? [Book Your Balinese Cooking Class](/tours/balinese-cookin
   },
   {
     slug: "pejeng-rice-terrace-cycling-vs-tegallalang",
-    title: "Pejeng Rice Terrace Cycling vs. Tegallalang: Which Ubud Experience is Best in 2026?",
-    excerpt: "Comparing Pejeng's peaceful Subak rice terraces with Tegallalang's famous tourist hills. Discover which Ubud cycling and walking experience fits your travel style.",
+    title: "Pejeng vs Tegallalang Cycling",
+    excerpt: "Quiet Pejeng Subak lanes vs busy Tegallalang photo terraces — which Ubud rice-field day fits you. Lunch + free Ubud pickup on our ride.",
     publishedAt: "2026-08-16",
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1552033501-8316dfc633a1?auto=format&fit=crop&w=1200&q=80",
@@ -860,7 +931,7 @@ While both locations use the UNESCO-recognized **Subak** cooperative irrigation 
 
 ***
 
-**Ready to ride through the real Bali?** Join our local family guides for a morning [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) and experience Ubud at a peaceful pace.
+**Ready to ride the quiet side of Ubud?** Book the [Ubud ricefield cycling tour](/tours/ubud-ricefield-cycling-tour) — lunch included, free Ubud hotel pickup, Pejeng Subak lanes (not the Tegallalang swing strip). Pair with an evening [Balinese cooking class](/tours/balinese-cooking-class) for a full culture day.
 `
   },
   {

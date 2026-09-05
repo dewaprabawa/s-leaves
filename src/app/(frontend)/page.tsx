@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { FAQSection } from '@/components/FAQSection'
 import GeoAnswerBlock from '@/components/GeoAnswerBlock'
 import { BookingPopup, type TourConfig } from '@/components/BookingPopup'
+import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from '@/lib/combos'
 import PromoPrice from '@/components/PromoPrice'
 import { getListPrice, getPromoListPrice, formatTierPriceTable } from '@/lib/pricing'
 import {
@@ -215,12 +216,20 @@ export default function Home() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set())
   const [bookingTour, setBookingTour] = useState<TourConfig | null>(null)
   const [bookingOpen, setBookingOpen] = useState(false)
+  const [bookingMixIds, setBookingMixIds] = useState<string[]>([])
 
-  const openBooking = (adventureId: string) => {
+  const openBooking = (adventureId: string, mixIds: string[] = []) => {
     const adv = adventures.find((a) => a.id === adventureId)
     if (!adv) return
     setBookingTour(toTourConfig(adv))
+    setBookingMixIds(mixIds)
     setBookingOpen(true)
+  }
+
+  const openComboBooking = (comboId: string) => {
+    const combo = FEATURED_COMBOS.find((c) => c.id === comboId)
+    if (!combo) return
+    openBooking(combo.primaryId, combo.mixIds)
   }
 
   useEffect(() => {
@@ -245,8 +254,12 @@ export default function Home() {
     <main className="w-full flex flex-col bg-sand">
       <BookingPopup
         isOpen={bookingOpen}
-        onClose={() => setBookingOpen(false)}
+        onClose={() => {
+          setBookingOpen(false)
+          setBookingMixIds([])
+        }}
         tour={bookingTour}
+        initialMixIds={bookingMixIds}
       />
 
       {/* ═══ HERO ═══ */}
@@ -472,7 +485,63 @@ export default function Home() {
       </section>
 
       {/* ═══ WHY CHOOSE US ═══ */}
-      <section id="why-us" data-animate className="section-atmosphere py-20 md:py-28 px-6 lg:px-12 w-full">
+      
+      {/* ═══ MIX & MATCH COMBOS ═══ */}
+      <section id="combos" data-animate className="bg-sand py-20 md:py-28 px-6 lg:px-12 w-full">
+        <div className="max-w-6xl mx-auto">
+          <div className={`text-center mb-14 ${isVisible("combos") ? "animate-fade-in-up" : ""}`}>
+            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">Mix & match</p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-brand-green uppercase leading-tight">
+              Combine your adventures
+            </h2>
+            <p className="mt-4 text-brand-green-light max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+              Book ATV + tubing, tubing + rafting, or stack all three in one day. Same-day combos save 10–12% versus booking separately.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {FEATURED_COMBOS.map((combo, i) => {
+              const price = getComboListPrice(combo)
+              const compareAt = getComboCompareAtPrice(combo)
+              return (
+                <article
+                  key={combo.id}
+                  className={`rounded-3xl bg-white border border-brand-green/10 overflow-hidden shadow-sm ${isVisible("combos") ? "animate-fade-in-up" : ""}`}
+                  style={{ animationDelay: `${i * 0.08}s` }}
+                >
+                  <div className="p-6 md:p-8 flex flex-col h-full">
+                    <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-2">{combo.tagline}</p>
+                    <h3 className="font-display text-2xl font-bold text-brand-green uppercase mb-2">{combo.name}</h3>
+                    <p className="text-sm text-brand-green-light leading-relaxed mb-4 flex-1">{combo.description}</p>
+                    <p className="text-xs text-brand-green-light mb-4">{combo.duration} · Insurance ages 6–65</p>
+                    <div className="flex items-end justify-between gap-4 mt-auto">
+                      <div>
+                        <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">From</p>
+                        {compareAt > price ? (
+                          <div>
+                            <span className="text-sm line-through text-brand-green-light/70 mr-2">IDR {compareAt.toLocaleString("id-ID")}</span>
+                            <span className="text-2xl font-bold text-brand-green">IDR {price.toLocaleString("id-ID")}</span>
+                          </div>
+                        ) : (
+                          <span className="text-2xl font-bold text-brand-green">IDR {price.toLocaleString("id-ID")}</span>
+                        )}
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => openComboBooking(combo.id)}
+                        className="shrink-0 rounded-full bg-brand-green text-sand px-5 py-3 text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                      >
+                        Book combo
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              )
+            })}
+          </div>
+        </div>
+      </section>
+
+<section id="why-us" data-animate className="section-atmosphere py-20 md:py-28 px-6 lg:px-12 w-full">
         <div className="max-w-6xl mx-auto">
         <div className={`text-center mb-16 ${isVisible("why-us") ? "animate-fade-in-up" : ""}`}>
           <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">Why travel with us</p>

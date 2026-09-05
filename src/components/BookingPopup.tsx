@@ -21,6 +21,12 @@ import {
   quoteActivity,
   quotePickup,
 } from '@/lib/pricing';
+import {
+  ACTIVITY_SHORT_LABEL,
+  MIX_ADDON_OPTIONS,
+  quoteMixedActivities,
+  type MixableActivityId,
+} from '@/lib/combos';
 import BookingTourDetailPanel from '@/components/BookingTourDetailPanel';
 import PromoPrice from '@/components/PromoPrice';
 
@@ -44,11 +50,14 @@ export function BookingPopup({
   onClose,
   tour,
   tourOptions,
+  initialMixIds,
 }: {
   isOpen: boolean
   onClose: () => void
   tour: TourConfig | null
   tourOptions?: TourConfig[]
+  /** Pre-selected mix-in activities for combo packages */
+  initialMixIds?: string[]
 }) {
   const [mounted, setMounted] = useState(false);
   const [guestName, setGuestName] = useState("");
@@ -69,6 +78,7 @@ export function BookingPopup({
   const [sameDropOff, setSameDropOff] = useState(false);
   const [step, setStep] = useState<'form' | 'invoice'>('form');
   const [invoice, setInvoice] = useState<InvoiceDraft | null>(null);
+  const [mixIds, setMixIds] = useState<string[]>([]);
 
   const activeTour =
     (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
@@ -98,14 +108,17 @@ export function BookingPopup({
       setSameDropOff(false);
       setStep('form');
       setInvoice(null);
+      setMixIds(initialMixIds ?? []);
     }
-  }, [isOpen, tour]);
+  }, [isOpen, tour, initialMixIds]);
 
   useEffect(() => {
     if (!activeTour) return
     setAdults((prev) => Math.max(activeTour.minPax, prev || activeTour.minPax))
     setTime(activeTour.times[0] || "")
     setShowDetails(false)
+    const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
+    setMixIds((prev) => prev.filter((id) => allowed.has(id as MixableActivityId) && id !== activeTour.id))
   }, [activeTour?.id])
 
   // Keep dialog above the fixed navbar and lock page scroll while open
@@ -135,6 +148,16 @@ export function BookingPopup({
   const isInvalidPax =
     totalPax < activeTour.minPax || (isTandem && (adults < 2 || adults % 2 !== 0));
 
+  const mixOptions = MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? [];
+  const isCombo = mixIds.length > 0;
+  const mixedQuote = isCombo
+    ? quoteMixedActivities({
+        primaryId: activeTour.id,
+        mixIds,
+        adults,
+        children: kids,
+      })
+    : null;
   const activityQuote = quoteActivity({
     activityId: activeTour.id,
     adults,
@@ -148,13 +171,31 @@ export function BookingPopup({
     sameDropOff,
   });
 
-  const activityTotal =
-    (activityQuote?.activitySubtotal ?? 0) + (activityQuote?.childSubtotal ?? 0);
+  const activityTotal = mixedQuote
+    ? mixedQuote.discountedSubtotal
+    : (activityQuote?.activitySubtotal ?? 0) + (activityQuote?.childSubtotal ?? 0);
   const pickupFee = pickupQuote.total;
   const totalCost = activityTotal + pickupFee;
-  const compareAtActivityTotal = activityQuote ? getCompareAtSubtotal(activityQuote) : 0;
-  const compareAtTotal = compareAtActivityTotal + (activityQuote?.childSubtotal ?? 0) + pickupFee;
-  const tierPromoActive = activityQuote ? hasTierPromo(activityQuote) : false;
+  const compareAtActivityTotal = mixedQuote
+    ? mixedQuote.compareAtSubtotal
+    : activityQuote
+      ? getCompareAtSubtotal(activityQuote)
+      : 0;
+  const compareAtTotal =
+    compareAtActivityTotal +
+    (mixedQuote ? 0 : activityQuote?.childSubtotal ?? 0) +
+    pickupFee;
+  const tierPromoActive = mixedQuote
+    ? mixedQuote.discountAmount > 0 || mixedQuote.discountedSubtotal < mixedQuote.compareAtSubtotal
+    : activityQuote
+      ? hasTierPromo(activityQuote)
+      : false;
+
+  const toggleMixId = (id: string) => {
+    setMixIds((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
+    )
+  };
   const nameOk = guestName.trim().length >= 2;
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
   const locationOk = wantsPickup
@@ -198,7 +239,13 @@ export function BookingPopup({
       if (pickupQuote.dropFee) pickupNoteParts.push(`Return drop same hotel +IDR ${pickupQuote.dropFee.toLocaleString('id-ID')}`);
       if (pickupQuote.outOfUbudFee) pickupNoteParts.push(`Out of Ubud +IDR ${pickupQuote.outOfUbudFee.toLocaleString('id-ID')}`);
     }
-    if (activityQuote) {
+    if (mixedQuote) {
+      for (const q of mixedQuote.quotes) {
+        pickupNoteParts.unshift(
+          `${ACTIVITY_SHORT_LABEL[q.activityId]} · ${q.tierLabel}: ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`,
+        );
+      }
+    } else if (activityQuote) {
       pickupNoteParts.unshift(`${activityQuote.tierLabel}: ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`);
     }
 
@@ -230,11 +277,22 @@ export function BookingPopup({
       adults,
       children: kids,
       childrenAges: kids > 0 ? childrenAges.trim() || undefined : undefined,
-      activity: activeTour.title,
+      activity: mixedQuote
+        ? `${activeTour.title} + ${mixedQuote.labels.slice(1).join(' + ')}`
+        : activeTour.title,
+      activityOption: mixedQuote
+        ? `Combo (${mixedQuote.discountPercent}% mix discount)`
+        : undefined,
       date,
       time,
       location: bookingLocation,
-      notes: [notes.trim() || null, pickupNoteParts.join(' · ')].filter(Boolean).join(' · ') || undefined,
+      notes: [
+        notes.trim() || null,
+        mixedQuote
+          ? `Mixed activities: ${mixedQuote.labels.join(' + ')} · save ${formatIdr(mixedQuote.discountAmount)}`
+          : null,
+        pickupNoteParts.join(' · '),
+      ].filter(Boolean).join(' · ') || undefined,
       lineItems,
       total: totalCost,
     };
@@ -383,6 +441,41 @@ export function BookingPopup({
             </div>
           )}
           
+          {mixOptions.length > 0 ? (
+            <div className="mb-6 pb-4 border-b border-brand-green/10">
+              <p className="text-brand-green font-bold text-sm mb-1">Mix activities (combo)</p>
+              <p className="text-brand-green-light text-xs mb-3 leading-relaxed">
+                Add tubing, rafting, or ATV for a same-day package. Combos save 10% (2 activities) or 12% (3+).
+              </p>
+              <div className="space-y-2">
+                {mixOptions.map((opt) => {
+                  const checked = mixIds.includes(opt.id)
+                  return (
+                    <label
+                      key={opt.id}
+                      className={`flex items-start gap-3 rounded-xl border px-3 py-3 cursor-pointer transition-colors ${
+                        checked
+                          ? 'border-brand-green bg-brand-green/5'
+                          : 'border-brand-green/15 bg-white hover:border-brand-green/30'
+                      }`}
+                    >
+                      <input
+                        type="checkbox"
+                        className="mt-1 accent-[#1B4332]"
+                        checked={checked}
+                        onChange={() => toggleMixId(opt.id)}
+                      />
+                      <span className="min-w-0">
+                        <span className="block text-sm font-bold text-brand-green">{opt.label}</span>
+                        <span className="block text-xs text-brand-green-light mt-0.5">{opt.blurb}</span>
+                      </span>
+                    </label>
+                  )
+                })}
+              </div>
+            </div>
+          ) : null}
+
           {activeTour.getYourGuideUrl && (
             <div className="mb-6">
               <a 
@@ -596,7 +689,22 @@ export function BookingPopup({
           </div>
 
           <div className="mt-6 pt-6 border-t border-brand-green/10">
-            {activityQuote && (
+            {mixedQuote ? (
+              <>
+                {mixedQuote.quotes.map((q) => (
+                  <div key={q.activityId} className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
+                    <span>{ACTIVITY_SHORT_LABEL[q.activityId]} · {formatIdr(q.unitPrice)} × {q.units}</span>
+                    <span className="font-semibold text-brand-green">{formatIdr(q.activitySubtotal + q.childSubtotal)}</span>
+                  </div>
+                ))}
+                {mixedQuote.discountAmount > 0 ? (
+                  <div className="flex justify-between items-center mb-2 text-sm text-emerald-700">
+                    <span>Combo discount ({mixedQuote.discountPercent}%)</span>
+                    <span className="font-semibold">−{formatIdr(mixedQuote.discountAmount)}</span>
+                  </div>
+                ) : null}
+              </>
+            ) : activityQuote ? (
               <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
                 <span>{activityQuote.tierLabel} · {formatIdr(activityQuote.unitPrice)} × {activityQuote.units} {activityQuote.unitLabel}</span>
                 {tierPromoActive ? (
@@ -608,8 +716,8 @@ export function BookingPopup({
                   <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
                 )}
               </div>
-            )}
-            {activityQuote && activityQuote.childSubtotal > 0 && (
+            ) : null}
+            {!mixedQuote && activityQuote && activityQuote.childSubtotal > 0 && (
               <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
                 <span>Children</span>
                 <span className="font-semibold text-brand-green">{formatIdr(activityQuote.childSubtotal)}</span>
@@ -623,12 +731,12 @@ export function BookingPopup({
             )}
             <div className="flex justify-between items-end mb-5">
               <span className="text-brand-green-light font-bold">Total Estimate</span>
-              {tierPromoActive ? (
+              {tierPromoActive || (mixedQuote && mixedQuote.discountAmount > 0) ? (
                 <PromoPrice
                   price={totalCost}
                   originalPrice={compareAtTotal}
                   variant="total"
-                  tierLabel={activityQuote?.tierLabel}
+                  tierLabel={mixedQuote ? `Combo · ${mixedQuote.discountPercent}% off` : activityQuote?.tierLabel}
                 />
               ) : (
                 <span className="text-3xl font-bold text-brand-green">{formatIdr(totalCost)}</span>

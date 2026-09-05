@@ -60,6 +60,14 @@ const faqs = [
     answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },
   {
+    question: "How do I pay after I agree to a booking?",
+    answer: "After you agree in the booking form, download the PDF invoice (with our logo) and send it to our WhatsApp. Transfer the total to Seabank account 901823638817 a/n I Dewa Gede Agus Prabawa, then tap Confirm payment on WhatsApp so we can verify your transfer."
+  },
+  {
+    question: "What is your bank account for payment?",
+    answer: "Seabank account number 901823638817, account name I Dewa Gede Agus Prabawa. Always use the invoice number from your PDF when you confirm payment on WhatsApp."
+  },
+  {
     question: "Can I mix activities like ATV + tubing or tubing + rafting?",
     answer: "Yes. In the booking form you can mix ATV, canyon tubing, and rafting into a same-day combo. Two activities save 10%; three or more save 12% versus booking separately. Popular mixes: ATV + tubing, tubing + rafting, and ATV + tubing + rafting."
   },

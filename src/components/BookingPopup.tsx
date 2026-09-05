@@ -4,7 +4,12 @@ import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import dynamic from 'next/dynamic';
 import { X, ExternalLink, Info } from 'lucide-react';
-import { formatIdr, openWhatsAppBooking } from '@/lib/whatsapp';
+import { formatIdr } from '@/lib/whatsapp';
+import {
+  createInvoiceNumber,
+  type InvoiceDraft,
+} from '@/lib/invoice';
+import InvoicePaymentPanel from '@/components/InvoicePaymentPanel';
 import { getTourSlugForActivity } from '@/lib/bookingTourDetails';
 import { MEETING_POINT } from '@/lib/meetingPoint';
 import {
@@ -71,6 +76,8 @@ export function BookingPopup({
   const [showDetails, setShowDetails] = useState(false);
   const [wantsPickup, setWantsPickup] = useState(false);
   const [sameDropOff, setSameDropOff] = useState(false);
+  const [step, setStep] = useState<'form' | 'invoice'>('form');
+  const [invoice, setInvoice] = useState<InvoiceDraft | null>(null);
   const [mixIds, setMixIds] = useState<string[]>([]);
 
   const activeTour =
@@ -99,6 +106,8 @@ export function BookingPopup({
       setShowDetails(false);
       setWantsPickup(false);
       setSameDropOff(false);
+      setStep('form');
+      setInvoice(null);
       setMixIds(initialMixIds ?? []);
     }
   }, [isOpen, tour, initialMixIds]);
@@ -240,9 +249,30 @@ export function BookingPopup({
       pickupNoteParts.unshift(`${activityQuote.tierLabel}: ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`);
     }
 
-    openWhatsAppBooking({
+    const lineItems = [
+      {
+        label: activityQuote
+          ? `${activeTour.title} (${activityQuote.tierLabel} · ${activityQuote.units} ${activityQuote.unitLabel})`
+          : activeTour.title,
+        amount: activityTotal,
+      },
+    ];
+    if (pickupFee > 0) {
+      lineItems.push({
+        label: sameDropOff ? 'Hotel pickup & return transfer' : 'Hotel pickup transfer',
+        amount: pickupFee,
+      });
+    }
+
+    const draft: InvoiceDraft = {
+      invoiceNumber: createInvoiceNumber(),
+      issuedAt: new Date().toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric',
+      }),
       guestName: guestName.trim(),
-      guestAge: guestAge.trim(),
+      guestAge: guestAge.trim() || undefined,
       guestType,
       adults,
       children: kids,
@@ -256,8 +286,6 @@ export function BookingPopup({
       date,
       time,
       location: bookingLocation,
-      locationMapUrl: bookingMapUrl,
-      price: totalCost,
       notes: [
         notes.trim() || null,
         mixedQuote
@@ -265,7 +293,12 @@ export function BookingPopup({
           : null,
         pickupNoteParts.join(' · '),
       ].filter(Boolean).join(' · ') || undefined,
-    });
+      lineItems,
+      total: totalCost,
+    };
+
+    setInvoice(draft);
+    setStep('invoice');
   };
 
   return createPortal(
@@ -357,7 +390,15 @@ export function BookingPopup({
           </div>
         </div>
 
-        <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col">
+        <div className="w-full md:w-1/2 flex flex-col min-h-0">
+          {step === 'invoice' && invoice ? (
+            <InvoicePaymentPanel
+              invoice={invoice}
+              onBack={() => setStep('form')}
+              onClose={onClose}
+            />
+          ) : (
+          <div className="p-6 md:p-8 flex flex-col">
           <h2 className="hidden md:block text-3xl font-serif text-brand-green font-bold mb-2">Book Experience</h2>
           {tourOptions && tourOptions.length > 1 ? (
             <div className="mb-6 pb-4 border-b border-brand-green/10">
@@ -708,12 +749,14 @@ export function BookingPopup({
               disabled={!canSubmit}
               className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${!canSubmit ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : 'bg-brand-green text-sand hover:bg-brand-green-light shadow-lg hover:shadow-xl hover:-translate-y-0.5'}`}
             >
-              Send Booking to WhatsApp
+              Agree &amp; get invoice
             </button>
             <p className="text-xs text-brand-green-light text-center mt-3">
-              Sends your name, age, adult/child, location, activity, and price to WhatsApp.
+              Next: download PDF invoice with our logo, send it on WhatsApp, then pay via Seabank and confirm.
             </p>
           </div>
+          </div>
+          )}
         </div>
         </div>
       </div>

@@ -104,14 +104,14 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       "ATV arena at All New Bali Adventure",
       "Complete Bali quad bike (ATV) adventure",
       "Optional river tubing on the Wos River",
-      "Boot shoes, helmet, lunch & insurance included",
+      "Boot shoes, helmet, lunch & insurance for ages 6–65 included",
       "Suitable for beginners with full safety briefing",
     ],
     included: [
       "ATV ride (single or tandem)",
       "Boot shoes & helmet",
       "Simple menu lunch",
-      "Insurance",
+      "Insurance for ages 6–65",
       "Safety briefing and trail guide",
     ],
     notIncluded: [
@@ -191,7 +191,13 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-4",
         question: "What is included in the price?",
         answer:
-          "Your guided ATV ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. River tubing on the Wos River is an optional combo — ask when you book.",
+          "Your guided ATV ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance for ages 6–65, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. River tubing on the Wos River is an optional combo — ask when you book.",
+      },
+      {
+        id: "faq-atv-6",
+        question: "Do you provide insurance?",
+        answer:
+          "Yes. We provide insurance for guests aged 6–65 years old on our adventure packages.",
       },
       {
         id: "faq-atv-5",
@@ -249,7 +255,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
       "Life jacket and safety equipment",
       "Safety briefing before launch",
       "Lunch after rafting",
-      "Insurance",
+      "Insurance for ages 6–65",
     ],
     notIncluded: [
       "Hotel pickup & drop-off (IDR 120,000 surcharge — optional)",
@@ -304,6 +310,12 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         question: "What is the minimum group size?",
         answer: "A minimum of 2 guests is required to run a rafting trip.",
       },
+      {
+        id: "faq-raft-5",
+        question: "Do you provide insurance?",
+        answer:
+          "Yes. We provide insurance for guests aged 6–65 years old on our rafting packages.",
+      },
     ],
     reviews: [],
   },
@@ -348,7 +360,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       "Inflatable tube and life jacket",
       "English-speaking nature guide",
       "Safety briefing",
-      "Insurance",
+      "Insurance for ages 6–65",
     ],
     notIncluded: [
       "Hotel pickup & drop-off (IDR 120,000 surcharge — optional)",
@@ -403,6 +415,12 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         question: "Is hotel pickup included?",
         answer:
           "Hotel pickup is available for an additional IDR 120,000. Free Ubud pickup applies to the cycling tour only.",
+      },
+      {
+        id: "faq-tube-5",
+        question: "Do you provide insurance?",
+        answer:
+          "Yes. We provide insurance for guests aged 6–65 years old on our canyon tubing packages.",
       },
     ],
     reviews: [],
@@ -486,7 +504,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       "Bicycle, helmet & guide",
       "Lunch included",
       "Bottled water",
-      "Insurance",
+      "Insurance for ages 6–65",
     ],
     notIncluded: ["Personal expenses", "Gratuities"],
     itinerary: [
@@ -565,6 +583,12 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-5",
         question: "Can the itinerary change?",
         answer: "The itinerary may sometimes change due to field conditions, weather, or village activities. We always adjust to ensure you have the best and safest experience.",
+      },
+      {
+        id: "faq-ubud-cyc-6",
+        question: "Do you provide insurance?",
+        answer:
+          "Yes. We provide insurance for guests aged 6–65 years old on the Ubud Ricefield Cycling Tour.",
       },
     ],
     reviews: [],
@@ -937,7 +961,7 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
       "1x Lunch + Mineral Water / Soft Drink",
       "Helmet, Boots, Jersey, Gloves, Chest Protector",
       "Free Hotel Pick-up/Drop-off in Bali Area",
-      "Insurance & First Aid Kit",
+      "Insurance for ages 6–65 & First Aid Kit",
       "Photos & Videos during riding"
     ],
     notIncluded: ["Personal expenses", "Gratuities"],

@@ -32,7 +32,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     paxLabel: "Per rider",
     description:
       "Private Bali ATV tour at All New Bali Adventure arena — jungle trails, muddy tracks, and river crossings. Beginner friendly with expert guides. Add optional Wos River tubing for the best ATV + tubing combo near Ubud.",
-    highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
+    highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance for ages 6–65"],
     duration: "2 hours",
     image: "/images/adventures/atv-adventure.jpg",
     imageAlt: "ATV jungle adventure ride through tropical rainforest trails",
@@ -47,7 +47,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     paxLabel: "Per tandem bike",
     description:
       "Private tandem ATV tour at All New Bali Adventure arena — share a quad bike adventure with a partner through jungle trails. All-inclusive with lunch, safety gear, and optional Wos River tubing combo.",
-    highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
+    highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance for ages 6–65"],
     duration: "2 hours",
     image: "/images/adventures/atv-adventure.jpg",
     imageAlt: "Tandem ATV ride through Bali jungle trails",
@@ -96,7 +96,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
       "Rice paddy & countryside cycling in Pejeng",
       "Lunch included",
       "Balinese house & carving studio",
-      "Free Ubud hotel pickup & insurance",
+      "Free Ubud hotel pickup & insurance (ages 6–65)",
     ],
     duration: "Full day",
     image: "/images/adventures/cycling.jpg",

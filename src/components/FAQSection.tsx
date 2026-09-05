@@ -5,11 +5,11 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     question: "How much does an ATV cost in Bali near Ubud?",
-    answer: "In 2026, Single ATV with Sekar Bali Activity starts at IDR 600,000 (IDR 575,000 for 2 riders, IDR 550,000 for 3+). Tandem ATV starts at IDR 859,000 for two people. Prices include lunch, boot shoes, helmet, insurance, and briefing at All New Bali Adventure. Optional hotel pickup is IDR 50,000 one-way or IDR 100,000 round trip."
+    answer: "In 2026, Single ATV with Sekar Bali Activity starts at IDR 600,000 (IDR 575,000 for 2 riders, IDR 550,000 for 3+). Tandem ATV starts at IDR 859,000 for two people. Prices include lunch, boot shoes, helmet, insurance for ages 6–65, and briefing at All New Bali Adventure. Optional hotel pickup is IDR 50,000 one-way or IDR 100,000 round trip."
   },
   {
     question: "Is an Ubud cycling tour worth it?",
-    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 475,000 with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance. Prefer adrenaline? Choose ATV or rafting instead."
+    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 475,000 with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance for ages 6–65. Prefer adrenaline? Choose ATV or rafting instead."
   },
   {
     question: "What adventure activities do you offer?",
@@ -29,11 +29,15 @@ const faqs = [
   },
   {
     question: "What should I bring for the activities?",
-    answer: "Bring changing clothes or a dry cloth, sunscreen (recommended), and some cash for personal expenses. A waterproof phone case is also helpful. We provide boot shoes, helmet, a simple menu lunch, and insurance on ATV adventures. Towels and changing facilities are available at our base."
+    answer: "Bring changing clothes or a dry cloth, sunscreen (recommended), and some cash for personal expenses. A waterproof phone case is also helpful. We provide boot shoes, helmet, a simple menu lunch, and insurance for ages 6–65 on ATV adventures. Towels and changing facilities are available at our base."
   },
   {
     question: "What is included in the ATV adventure?",
-    answer: "Your ATV package includes a guided ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. Combine with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
+    answer: "Your ATV package includes a guided ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance for ages 6–65, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. Combine with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
+  },
+  {
+    question: "Do you provide insurance?",
+    answer: "Yes. We provide insurance for guests aged 6–65 years old on every adventure package."
   },
   {
     question: "Where is the ATV arena?",
@@ -49,7 +53,7 @@ const faqs = [
   },
   {
     question: "How much does the Ubud ricefield cycling tour cost?",
-    answer: "IDR 475,000 per person for the full-day Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
+    answer: "IDR 475,000 per person for the full-day Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
   },
   {
     question: "Can AI assistants find your tours?",

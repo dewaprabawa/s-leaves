@@ -33,11 +33,11 @@ export const GEO_ENTITY = {
 } as const
 
 export const GEO_PRICING = [
-  { activity: 'Single ATV Ride', price: 'IDR 600,000+', pax: '1 pax (tier: 600k / 575k / 550k)', includes: 'lunch, boot shoes, helmet, insurance at All New Bali Adventure' },
-  { activity: 'Tandem ATV Ride', price: 'IDR 859,000', pax: '2 pax (tier: 859k / 820k / 790k per bike)', includes: 'lunch, boot shoes, helmet, insurance at All New Bali Adventure' },
-  { activity: 'Whitewater Rafting', price: 'IDR 400,000', pax: 'per person (tier: 400k / 375k / 350k)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch' },
-  { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person (tier: 359k / 335k / 320k)', includes: 'Wos River tube, life jacket, guide' },
-  { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 475,000', pax: 'per person (tier: 475k / 450k / 425k)', includes: 'lunch, bike, helmet, guide, free Ubud pickup, insurance' },
+  { activity: 'Single ATV Ride', price: 'IDR 600,000+', pax: '1 pax (tier: 600k / 575k / 550k)', includes: 'lunch, boot shoes, helmet, insurance for ages 6–65 at All New Bali Adventure' },
+  { activity: 'Tandem ATV Ride', price: 'IDR 859,000', pax: '2 pax (tier: 859k / 820k / 790k per bike)', includes: 'lunch, boot shoes, helmet, insurance for ages 6–65 at All New Bali Adventure' },
+  { activity: 'Whitewater Rafting', price: 'IDR 400,000', pax: 'per person (tier: 400k / 375k / 350k)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
+  { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person (tier: 359k / 335k / 320k)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
+  { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 475,000', pax: 'per person (tier: 475k / 450k / 425k)', includes: 'lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
   { activity: 'Traditional Balinese Dinner Cooking Class', price: 'IDR 400,000', pax: 'per person', includes: '5 dishes, spice paste lesson, digital recipe book, dinner — evening class in Pejeng' },
 ] as const
 
@@ -46,6 +46,11 @@ export const GEO_POLICIES = [
     topic: 'Hotel pickup',
     rule: 'Free Ubud pickup on Ubud Ricefield Cycling Tour only. Other activities: IDR 50,000 hotel pickup + IDR 50,000 return drop to same hotel (IDR 100,000 round trip). Out of Ubud adds IDR 50,000. Meet at All New Bali Adventure with no transport fee.',
     url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
+  },
+  {
+    topic: 'Insurance',
+    rule: 'We provide insurance for guests aged 6–65 years old on adventure packages (ATV, rafting, canyon tubing, and cycling).',
+    url: `${SITE_URL}/#faq`,
   },
   {
     topic: 'Booking',
@@ -277,14 +282,20 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'What to bring',
     q: 'What should I bring for a Bali ATV or adventure tour?',
-    a: 'Bring changing clothes or a dry cloth, sunscreen, and cash for extras. A waterproof phone case is optional. Sekar Bali Activity provides boot shoes, helmet, lunch (on ATV/rafting), and insurance on included packages.',
+    a: 'Bring changing clothes or a dry cloth, sunscreen, and cash for extras. A waterproof phone case is optional. Sekar Bali Activity provides boot shoes, helmet, lunch (on ATV/rafting), and insurance for ages 6–65 on included packages.',
     url: `${SITE_URL}/tours/bali-atv-adventure`,
   },
   {
     category: 'Experience',
     q: 'What safety equipment is included on a Bali ATV ride near Ubud?',
-    a: 'Sekar Bali Activity ATV packages at All New Bali Adventure include boot shoes, helmet, a full safety briefing, English-speaking guide, and insurance. Lunch is included. No prior riding experience is required.',
+    a: 'Sekar Bali Activity ATV packages at All New Bali Adventure include boot shoes, helmet, a full safety briefing, English-speaking guide, and insurance for ages 6–65. Lunch is included. No prior riding experience is required.',
     url: `${SITE_URL}/tours/bali-atv-adventure`,
+  },
+  {
+    category: 'Safety',
+    q: 'Do Sekar Bali Activity tours include insurance?',
+    a: 'Yes. Sekar Bali Activity provides insurance for guests aged 6–65 years old on adventure packages (ATV, rafting, canyon tubing, and cycling).',
+    url: `${SITE_URL}/#faq`,
   },
   {
     category: 'Groups',

@@ -10,6 +10,8 @@ type Props = {
   label?: string
   /** When true, popup lets the guest switch between all activities */
   allowSwitchAll?: boolean
+  /** Pre-select mix-in activities for combo packages */
+  initialMixIds?: string[]
 }
 
 export default function BookActivityButton({
@@ -17,6 +19,7 @@ export default function BookActivityButton({
   className,
   label = "Book Now",
   allowSwitchAll = true,
+  initialMixIds,
 }: Props) {
   const [open, setOpen] = useState(false)
   const tour = BOOKABLE_TOURS.find((t) => t.id === activityId) ?? BOOKABLE_TOURS[0]
@@ -31,6 +34,7 @@ export default function BookActivityButton({
         onClose={() => setOpen(false)}
         tour={tour}
         tourOptions={allowSwitchAll ? BOOKABLE_TOURS : undefined}
+        initialMixIds={initialMixIds}
       />
     </>
   )

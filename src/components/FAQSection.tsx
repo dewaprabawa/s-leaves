@@ -60,6 +60,10 @@ const faqs = [
     answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },
   {
+    question: "Can I mix activities like ATV + tubing or tubing + rafting?",
+    answer: "Yes. In the booking form you can mix ATV, canyon tubing, and rafting into a same-day combo. Two activities save 10%; three or more save 12% versus booking separately. Popular mixes: ATV + tubing, tubing + rafting, and ATV + tubing + rafting."
+  },
+  {
     question: "Are group discounts available?",
     answer: "Yes! Groups of 4+ get special rates. Message us on WhatsApp for a custom quote — we also arrange private tours for families and larger parties."
   }

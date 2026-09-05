@@ -6,6 +6,7 @@ import { ArrowRight, Check, Clock, MapPin } from "lucide-react"
 import BookActivityButton from "@/components/BookActivityButton"
 import PromoPrice from "@/components/PromoPrice"
 import { ADVENTURES, getAdventureChildPrice, getAdventureListPrice, getAdventurePromoPrice } from "@/data/adventures"
+import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
 import { formatTierPriceTable } from "@/lib/pricing"
 import { formatIdr } from "@/lib/whatsapp"
 
@@ -27,6 +28,65 @@ export default function BookSalesCheckout({ initialActivityId }: Props) {
 
   return (
     <div className="space-y-8 md:space-y-10">
+
+      <section id="combos" className="space-y-6 pt-4">
+        <div>
+          <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-1">Mix & match</p>
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-brand-green">
+            Popular activity combos
+          </h2>
+          <p className="text-sm text-brand-green-light mt-2 max-w-2xl">
+            Mix ATV, canyon tubing, and rafting in one day. Combos save 10% for two activities or 12% for three+.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          {FEATURED_COMBOS.map((combo) => {
+            const price = getComboListPrice(combo)
+            const compareAt = getComboCompareAtPrice(combo)
+            return (
+              <article
+                key={combo.id}
+                className="rounded-2xl border border-brand-green/10 bg-white p-5 md:p-6 flex flex-col gap-4 shadow-sm"
+              >
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-1">
+                    {combo.tagline}
+                  </p>
+                  <h3 className="font-display text-xl font-bold text-brand-green">{combo.name}</h3>
+                  <p className="text-sm text-brand-green-light mt-2 leading-relaxed">{combo.description}</p>
+                  <p className="text-xs text-brand-green-light mt-2">{combo.duration}</p>
+                </div>
+                <div className="mt-auto flex items-end justify-between gap-3">
+                  <div>
+                    <p className="text-[11px] uppercase tracking-wider text-brand-green-light mb-0.5">From</p>
+                    {compareAt > price ? (
+                      <div>
+                        <span className="text-xs line-through text-brand-green-light/70 mr-1.5">
+                          IDR {compareAt.toLocaleString("id-ID")}
+                        </span>
+                        <span className="text-lg font-bold text-brand-green">
+                          IDR {price.toLocaleString("id-ID")}
+                        </span>
+                      </div>
+                    ) : (
+                      <span className="text-lg font-bold text-brand-green">
+                        IDR {price.toLocaleString("id-ID")}
+                      </span>
+                    )}
+                  </div>
+                  <BookActivityButton
+                    activityId={combo.primaryId}
+                    initialMixIds={combo.mixIds}
+                    label="Book Combo"
+                    className="shrink-0 rounded-xl bg-brand-green text-sand px-4 py-2.5 text-xs font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                  />
+                </div>
+              </article>
+            )
+          })}
+        </div>
+      </section>
+
       {sorted.map((adv) => {
         const price = getAdventurePromoPrice(adv.id)
         const originalPrice = getAdventureListPrice(adv.id)

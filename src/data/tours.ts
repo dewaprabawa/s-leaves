@@ -67,6 +67,9 @@ export const TOURS: Tour[] = [
     duration: "2–4 Hours",
     basePrice: 600000,
     childPrice: 550000,
+    seoTitle: "Bali ATV Quad Bike Near Ubud",
+    seoDescription:
+      "Private jungle ATV near Ubud from IDR 600K — lunch, helmet, boots & insurance. Optional Wos River tubing. Book via WhatsApp.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV jungle adventure ride through tropical rainforest trails",
@@ -675,6 +678,9 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     duration: "3 Hours",
     basePrice: 400000,
     childPrice: 350000,
+    seoTitle: "Balinese Cooking Class in Pejeng",
+    seoDescription:
+      "Hands-on Balinese cooking class near Ubud — Base Genep, 5 dishes, dinner from IDR 400K. Pair with rice-paddy cycling. Book WhatsApp.",
     heroImage: {
       url: "/images/cooking/pancake-toss.jpg",
       alt: "Balinese cooking class",

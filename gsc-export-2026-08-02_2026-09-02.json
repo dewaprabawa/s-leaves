@@ -1,0 +1,1312 @@
+{
+  "Chart": [
+    {
+      "Date": "2026-08-02",
+      "Clicks": 0,
+      "Impressions": 0,
+      "CTR": null,
+      "Position": null
+    },
+    {
+      "Date": "2026-08-03",
+      "Clicks": 0,
+      "Impressions": 0,
+      "CTR": null,
+      "Position": null
+    },
+    {
+      "Date": "2026-08-04",
+      "Clicks": 5,
+      "Impressions": 5,
+      "CTR": 1.0,
+      "Position": 1.0
+    },
+    {
+      "Date": "2026-08-05",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0.0,
+      "Position": 16.0
+    },
+    {
+      "Date": "2026-08-06",
+      "Clicks": 0,
+      "Impressions": 5,
+      "CTR": 0.0,
+      "Position": 19.4
+    },
+    {
+      "Date": "2026-08-07",
+      "Clicks": 1,
+      "Impressions": 29,
+      "CTR": 0.0345,
+      "Position": 45.5
+    },
+    {
+      "Date": "2026-08-08",
+      "Clicks": 0,
+      "Impressions": 24,
+      "CTR": 0.0,
+      "Position": 44.2
+    },
+    {
+      "Date": "2026-08-09",
+      "Clicks": 0,
+      "Impressions": 24,
+      "CTR": 0.0,
+      "Position": 42.1
+    },
+    {
+      "Date": "2026-08-10",
+      "Clicks": 0,
+      "Impressions": 30,
+      "CTR": 0.0,
+      "Position": 38.1
+    },
+    {
+      "Date": "2026-08-11",
+      "Clicks": 0,
+      "Impressions": 25,
+      "CTR": 0.0,
+      "Position": 25.1
+    },
+    {
+      "Date": "2026-08-12",
+      "Clicks": 1,
+      "Impressions": 33,
+      "CTR": 0.030299999999999997,
+      "Position": 52.7
+    },
+    {
+      "Date": "2026-08-13",
+      "Clicks": 0,
+      "Impressions": 30,
+      "CTR": 0.0,
+      "Position": 56.2
+    },
+    {
+      "Date": "2026-08-14",
+      "Clicks": 0,
+      "Impressions": 17,
+      "CTR": 0.0,
+      "Position": 42.1
+    },
+    {
+      "Date": "2026-08-15",
+      "Clicks": 0,
+      "Impressions": 11,
+      "CTR": 0.0,
+      "Position": 29.2
+    },
+    {
+      "Date": "2026-08-16",
+      "Clicks": 0,
+      "Impressions": 7,
+      "CTR": 0.0,
+      "Position": 40.4
+    },
+    {
+      "Date": "2026-08-17",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0.0,
+      "Position": 36.7
+    },
+    {
+      "Date": "2026-08-18",
+      "Clicks": 0,
+      "Impressions": 10,
+      "CTR": 0.0,
+      "Position": 28.8
+    },
+    {
+      "Date": "2026-08-19",
+      "Clicks": 0,
+      "Impressions": 12,
+      "CTR": 0.0,
+      "Position": 32.0
+    },
+    {
+      "Date": "2026-08-20",
+      "Clicks": 0,
+      "Impressions": 5,
+      "CTR": 0.0,
+      "Position": 38.8
+    },
+    {
+      "Date": "2026-08-21",
+      "Clicks": 0,
+      "Impressions": 6,
+      "CTR": 0.0,
+      "Position": 20.0
+    },
+    {
+      "Date": "2026-08-22",
+      "Clicks": 1,
+      "Impressions": 13,
+      "CTR": 0.07690000000000001,
+      "Position": 31.2
+    },
+    {
+      "Date": "2026-08-23",
+      "Clicks": 1,
+      "Impressions": 7,
+      "CTR": 0.1429,
+      "Position": 24.9
+    },
+    {
+      "Date": "2026-08-24",
+      "Clicks": 0,
+      "Impressions": 4,
+      "CTR": 0.0,
+      "Position": 19.8
+    },
+    {
+      "Date": "2026-08-25",
+      "Clicks": 0,
+      "Impressions": 9,
+      "CTR": 0.0,
+      "Position": 51.6
+    },
+    {
+      "Date": "2026-08-26",
+      "Clicks": 0,
+      "Impressions": 13,
+      "CTR": 0.0,
+      "Position": 35.9
+    },
+    {
+      "Date": "2026-08-27",
+      "Clicks": 0,
+      "Impressions": 7,
+      "CTR": 0.0,
+      "Position": 24.1
+    },
+    {
+      "Date": "2026-08-28",
+      "Clicks": 0,
+      "Impressions": 5,
+      "CTR": 0.0,
+      "Position": 23.6
+    },
+    {
+      "Date": "2026-08-29",
+      "Clicks": 0,
+      "Impressions": 10,
+      "CTR": 0.0,
+      "Position": 24.7
+    },
+    {
+      "Date": "2026-08-30",
+      "Clicks": 1,
+      "Impressions": 11,
+      "CTR": 0.0909,
+      "Position": 32.4
+    },
+    {
+      "Date": "2026-08-31",
+      "Clicks": 2,
+      "Impressions": 16,
+      "CTR": 0.125,
+      "Position": 22.5
+    },
+    {
+      "Date": "2026-09-01",
+      "Clicks": 1,
+      "Impressions": 18,
+      "CTR": 0.0556,
+      "Position": 8.7
+    },
+    {
+      "Date": "2026-09-02",
+      "Clicks": 7,
+      "Impressions": 63,
+      "CTR": 0.11109999999999999,
+      "Position": 3.0
+    }
+  ],
+  "Queries": [
+    {
+      "Top queries": "what to wear in bali temples",
+      "Clicks": 0,
+      "Impressions": 20,
+      "CTR": 0,
+      "Position": 41.45
+    },
+    {
+      "Top queries": "luwak coffee",
+      "Clicks": 0,
+      "Impressions": 12,
+      "CTR": 0,
+      "Position": 50.33
+    },
+    {
+      "Top queries": "traditional balinese food",
+      "Clicks": 0,
+      "Impressions": 12,
+      "CTR": 0,
+      "Position": 85.67
+    },
+    {
+      "Top queries": "sekar bali",
+      "Clicks": 0,
+      "Impressions": 8,
+      "CTR": 0,
+      "Position": 6.88
+    },
+    {
+      "Top queries": "pejeng bali",
+      "Clicks": 0,
+      "Impressions": 5,
+      "CTR": 0,
+      "Position": 12.0
+    },
+    {
+      "Top queries": "luwak",
+      "Clicks": 0,
+      "Impressions": 5,
+      "CTR": 0,
+      "Position": 90.2
+    },
+    {
+      "Top queries": "bali",
+      "Clicks": 0,
+      "Impressions": 4,
+      "CTR": 0,
+      "Position": 1.0
+    },
+    {
+      "Top queries": "base genep",
+      "Clicks": 0,
+      "Impressions": 4,
+      "CTR": 0,
+      "Position": 10.5
+    },
+    {
+      "Top queries": "hrk dirtbike",
+      "Clicks": 0,
+      "Impressions": 4,
+      "CTR": 0,
+      "Position": 46.75
+    },
+    {
+      "Top queries": "coffee luwak",
+      "Clicks": 0,
+      "Impressions": 4,
+      "CTR": 0,
+      "Position": 56.75
+    },
+    {
+      "Top queries": "cening bagus bali",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0,
+      "Position": 60.67
+    },
+    {
+      "Top queries": "denpasar to ubud",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0,
+      "Position": 72.33
+    },
+    {
+      "Top queries": "denpasar bali to ubud",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0,
+      "Position": 76.33
+    },
+    {
+      "Top queries": "taxi from denpasar airport to ubud",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0,
+      "Position": 81.67
+    },
+    {
+      "Top queries": "denpasar airport to ubud",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0,
+      "Position": 85.33
+    },
+    {
+      "Top queries": "pejeng",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 6.0
+    },
+    {
+      "Top queries": "balinese spices",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 11.5
+    },
+    {
+      "Top queries": "balinese temple dress",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 20.0
+    },
+    {
+      "Top queries": "dress code for bali temples",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 40.0
+    },
+    {
+      "Top queries": "bali dirtbike",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 42.5
+    },
+    {
+      "Top queries": "dress code tirta empul temple",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 58.5
+    },
+    {
+      "Top queries": "airport transfers bali to ubud",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 62.5
+    },
+    {
+      "Top queries": "traditional balinese",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 69.0
+    },
+    {
+      "Top queries": "bali to ubud",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 70.0
+    },
+    {
+      "Top queries": "dps airport to ubud",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0,
+      "Position": 76.0
+    },
+    {
+      "Top queries": "basa genep",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 8.0
+    },
+    {
+      "Top queries": "pejeng village",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 10.0
+    },
+    {
+      "Top queries": "hindu temple dress code",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 12.0
+    },
+    {
+      "Top queries": "genep",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 15.0
+    },
+    {
+      "Top queries": "tanah lot temple dress code",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 21.0
+    },
+    {
+      "Top queries": "what to wear to temples in bali",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 24.0
+    },
+    {
+      "Top queries": "temple dress code",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 25.0
+    },
+    {
+      "Top queries": "1 day ubud itinerary",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 26.0
+    },
+    {
+      "Top queries": "sarong bali temple",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 26.0
+    },
+    {
+      "Top queries": "oskar bali",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 34.0
+    },
+    {
+      "Top queries": "sekar bali homestay keramas",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 34.0
+    },
+    {
+      "Top queries": "uluwatu temple bali dress code",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 34.0
+    },
+    {
+      "Top queries": "south indian temple dress code",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 36.0
+    },
+    {
+      "Top queries": "dirt bike bali tabanan",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 37.0
+    },
+    {
+      "Top queries": "ubud to dps airport",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 43.0
+    },
+    {
+      "Top queries": "pura tirta empul dress code",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 52.0
+    },
+    {
+      "Top queries": "denpasar to ubud taxi cost",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 57.0
+    },
+    {
+      "Top queries": "ubud to airport",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 58.0
+    },
+    {
+      "Top queries": "how far is ubud from denpasar airport",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 60.0
+    },
+    {
+      "Top queries": "ubud to denpasar airport",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 61.0
+    },
+    {
+      "Top queries": "batik sekar bali guest house",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 62.0
+    },
+    {
+      "Top queries": "ethical kopi luwak",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 62.0
+    },
+    {
+      "Top queries": "bale peyadnyan",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 63.0
+    },
+    {
+      "Top queries": "karang buncing",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 64.0
+    },
+    {
+      "Top queries": "kesari bali tours",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 65.0
+    },
+    {
+      "Top queries": "nearest airport to ubud",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 66.0
+    },
+    {
+      "Top queries": "closest airport to ubud indonesia",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 67.0
+    },
+    {
+      "Top queries": "how to get from airport to ubud",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 67.0
+    },
+    {
+      "Top queries": "ubud bali airport",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 67.0
+    },
+    {
+      "Top queries": "cening bagus",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 68.0
+    },
+    {
+      "Top queries": "nearest airport to ubud bali",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 69.0
+    },
+    {
+      "Top queries": "bali denpasar to ubud",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 70.0
+    },
+    {
+      "Top queries": "ubud bali to airport",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 70.0
+    },
+    {
+      "Top queries": "ubud from airport",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 72.0
+    },
+    {
+      "Top queries": "balli food",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 73.0
+    },
+    {
+      "Top queries": "transport from denpasar airport to ubud",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 73.0
+    },
+    {
+      "Top queries": "kertalangu cultural village",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 76.0
+    },
+    {
+      "Top queries": "airport denpasar to ubud",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 79.0
+    },
+    {
+      "Top queries": "bali ubud airport",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 82.0
+    },
+    {
+      "Top queries": "taxi denpasar airport to ubud",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 83.0
+    },
+    {
+      "Top queries": "balinese traditional food",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 84.0
+    },
+    {
+      "Top queries": "pura muncak sari",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 86.0
+    },
+    {
+      "Top queries": "tengkleng balak mas priyo",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 88.0
+    },
+    {
+      "Top queries": "traditional balinese dishes",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 91.0
+    },
+    {
+      "Top queries": "luwak coffee from bali",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0,
+      "Position": 100.0
+    }
+  ],
+  "Pages": [
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/",
+      "Clicks": 10,
+      "Impressions": 79,
+      "CTR": 0.1266,
+      "Position": 4.75
+    },
+    {
+      "Top pages": "http://sekarbaliactivity.com/",
+      "Clicks": 4,
+      "Impressions": 4,
+      "CTR": 1.0,
+      "Position": 1.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/how-to-spot-ethical-luwak-coffee-in-bali",
+      "Clicks": 2,
+      "Impressions": 29,
+      "CTR": 0.069,
+      "Position": 11.79
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/bali-atv-tour-ubud-guide",
+      "Clicks": 1,
+      "Impressions": 34,
+      "CTR": 0.0294,
+      "Position": 8.12
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/ubud-travel-guide-escape-crowds-2026",
+      "Clicks": 1,
+      "Impressions": 6,
+      "CTR": 0.16670000000000001,
+      "Position": 6.67
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/atv-river-tubing-wos-river-bali",
+      "Clicks": 1,
+      "Impressions": 5,
+      "CTR": 0.2,
+      "Position": 18.8
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/morning-vs-afternoon-tours-bali",
+      "Clicks": 1,
+      "Impressions": 2,
+      "CTR": 0.5,
+      "Position": 10.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/bali-temple-dress-code",
+      "Clicks": 0,
+      "Impressions": 69,
+      "CTR": 0.0,
+      "Position": 27.61
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/bali-airport-transfer-guide-dps-to-ubud",
+      "Clicks": 0,
+      "Impressions": 69,
+      "CTR": 0.0,
+      "Position": 60.74
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/tours",
+      "Clicks": 0,
+      "Impressions": 48,
+      "CTR": 0.0,
+      "Position": 5.23
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/tours/bali-dirt-bike-adventure",
+      "Clicks": 0,
+      "Impressions": 32,
+      "CTR": 0.0,
+      "Position": 24.12
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/contact",
+      "Clicks": 0,
+      "Impressions": 29,
+      "CTR": 0.0,
+      "Position": 7.86
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog",
+      "Clicks": 0,
+      "Impressions": 29,
+      "CTR": 0.0,
+      "Position": 56.97
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/5-essential-balinese-spices",
+      "Clicks": 0,
+      "Impressions": 28,
+      "CTR": 0.0,
+      "Position": 19.39
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/luwak-coffee-ethical-sourcing",
+      "Clicks": 0,
+      "Impressions": 28,
+      "CTR": 0.0,
+      "Position": 61.04
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/top-5-traditional-balinese-foods",
+      "Clicks": 0,
+      "Impressions": 28,
+      "CTR": 0.0,
+      "Position": 72.14
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/history-of-pejeng-bali-ancient-kingdom",
+      "Clicks": 0,
+      "Impressions": 20,
+      "CTR": 0.0,
+      "Position": 9.5
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/book",
+      "Clicks": 0,
+      "Impressions": 18,
+      "CTR": 0.0,
+      "Position": 5.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/what-is-base-genep-balinese-spice-paste-guide",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0.0,
+      "Position": 9.44
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/how-to-get-around-ubud",
+      "Clicks": 0,
+      "Impressions": 16,
+      "CTR": 0.0,
+      "Position": 23.38
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/how-to-book-bali-adventure-whatsapp",
+      "Clicks": 0,
+      "Impressions": 15,
+      "CTR": 0.0,
+      "Position": 8.27
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/tours/bali-atv-adventure",
+      "Clicks": 0,
+      "Impressions": 12,
+      "CTR": 0.0,
+      "Position": 9.92
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/tours/whitewater-rafting",
+      "Clicks": 0,
+      "Impressions": 12,
+      "CTR": 0.0,
+      "Position": 13.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/pejeng-rice-terrace-cycling-vs-tegallalang",
+      "Clicks": 0,
+      "Impressions": 9,
+      "CTR": 0.0,
+      "Position": 9.56
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/about",
+      "Clicks": 0,
+      "Impressions": 8,
+      "CTR": 0.0,
+      "Position": 5.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/tours/pejeng-cycling-tour",
+      "Clicks": 0,
+      "Impressions": 7,
+      "CTR": 0.0,
+      "Position": 7.86
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/rafting-vs-tubing-vs-atv-near-ubud",
+      "Clicks": 0,
+      "Impressions": 7,
+      "CTR": 0.0,
+      "Position": 8.43
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/inside-balinese-cooking-class-pejeng",
+      "Clicks": 0,
+      "Impressions": 6,
+      "CTR": 0.0,
+      "Position": 13.17
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/perfect-one-day-ubud-itinerary",
+      "Clicks": 0,
+      "Impressions": 5,
+      "CTR": 0.0,
+      "Position": 20.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/is-bali-swing-worth-it",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0.0,
+      "Position": 13.67
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/tours/ubud-ricefield-cycling-tour",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0.0,
+      "Position": 19.5
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/what-is-the-subak-system-bali",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0.0,
+      "Position": 32.5
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/authentic-balinese-village-etiquette-for-travelers",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 10.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/tours/balinese-cooking-class",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 11.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/best-time-to-visit-bali",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 12.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/blog/ubud-hotel-pickup-bali-adventures-explained",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 22.0
+    },
+    {
+      "Top pages": "https://www.sekarbaliactivity.com/tours/luwak-coffee-plantation",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 31.0
+    }
+  ],
+  "Countries": [
+    {
+      "Country": "Indonesia",
+      "Clicks": 17,
+      "Impressions": 147,
+      "CTR": 0.11560000000000001,
+      "Position": 15.69
+    },
+    {
+      "Country": "Canada",
+      "Clicks": 1,
+      "Impressions": 3,
+      "CTR": 0.3333,
+      "Position": 6.0
+    },
+    {
+      "Country": "Poland",
+      "Clicks": 1,
+      "Impressions": 2,
+      "CTR": 0.5,
+      "Position": 3.0
+    },
+    {
+      "Country": "Taiwan",
+      "Clicks": 1,
+      "Impressions": 1,
+      "CTR": 1.0,
+      "Position": 1.0
+    },
+    {
+      "Country": "United States",
+      "Clicks": 0,
+      "Impressions": 70,
+      "CTR": 0.0,
+      "Position": 38.81
+    },
+    {
+      "Country": "India",
+      "Clicks": 0,
+      "Impressions": 45,
+      "CTR": 0.0,
+      "Position": 43.0
+    },
+    {
+      "Country": "Australia",
+      "Clicks": 0,
+      "Impressions": 32,
+      "CTR": 0.0,
+      "Position": 49.25
+    },
+    {
+      "Country": "United Kingdom",
+      "Clicks": 0,
+      "Impressions": 25,
+      "CTR": 0.0,
+      "Position": 32.16
+    },
+    {
+      "Country": "Philippines",
+      "Clicks": 0,
+      "Impressions": 21,
+      "CTR": 0.0,
+      "Position": 54.24
+    },
+    {
+      "Country": "Malaysia",
+      "Clicks": 0,
+      "Impressions": 12,
+      "CTR": 0.0,
+      "Position": 57.75
+    },
+    {
+      "Country": "Netherlands",
+      "Clicks": 0,
+      "Impressions": 8,
+      "CTR": 0.0,
+      "Position": 9.88
+    },
+    {
+      "Country": "Bangladesh",
+      "Clicks": 0,
+      "Impressions": 8,
+      "CTR": 0.0,
+      "Position": 54.12
+    },
+    {
+      "Country": "Thailand",
+      "Clicks": 0,
+      "Impressions": 8,
+      "CTR": 0.0,
+      "Position": 64.5
+    },
+    {
+      "Country": "United Arab Emirates",
+      "Clicks": 0,
+      "Impressions": 7,
+      "CTR": 0.0,
+      "Position": 45.71
+    },
+    {
+      "Country": "Germany",
+      "Clicks": 0,
+      "Impressions": 6,
+      "CTR": 0.0,
+      "Position": 9.5
+    },
+    {
+      "Country": "Pakistan",
+      "Clicks": 0,
+      "Impressions": 6,
+      "CTR": 0.0,
+      "Position": 23.17
+    },
+    {
+      "Country": "France",
+      "Clicks": 0,
+      "Impressions": 6,
+      "CTR": 0.0,
+      "Position": 46.5
+    },
+    {
+      "Country": "Singapore",
+      "Clicks": 0,
+      "Impressions": 5,
+      "CTR": 0.0,
+      "Position": 11.4
+    },
+    {
+      "Country": "Vietnam",
+      "Clicks": 0,
+      "Impressions": 5,
+      "CTR": 0.0,
+      "Position": 67.2
+    },
+    {
+      "Country": "Japan",
+      "Clicks": 0,
+      "Impressions": 4,
+      "CTR": 0.0,
+      "Position": 5.25
+    },
+    {
+      "Country": "Ukraine",
+      "Clicks": 0,
+      "Impressions": 4,
+      "CTR": 0.0,
+      "Position": 51.0
+    },
+    {
+      "Country": "New Zealand",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0.0,
+      "Position": 11.0
+    },
+    {
+      "Country": "Turkey",
+      "Clicks": 0,
+      "Impressions": 3,
+      "CTR": 0.0,
+      "Position": 49.33
+    },
+    {
+      "Country": "Italy",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0.0,
+      "Position": 7.5
+    },
+    {
+      "Country": "Hong Kong",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0.0,
+      "Position": 8.0
+    },
+    {
+      "Country": "Belgium",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0.0,
+      "Position": 11.0
+    },
+    {
+      "Country": "Hungary",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0.0,
+      "Position": 11.0
+    },
+    {
+      "Country": "Algeria",
+      "Clicks": 0,
+      "Impressions": 2,
+      "CTR": 0.0,
+      "Position": 54.0
+    },
+    {
+      "Country": "Timor-Leste",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 1.0
+    },
+    {
+      "Country": "South Africa",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 1.0
+    },
+    {
+      "Country": "Colombia",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 4.0
+    },
+    {
+      "Country": "Sweden",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 4.0
+    },
+    {
+      "Country": "Czechia",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 8.0
+    },
+    {
+      "Country": "Spain",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 9.0
+    },
+    {
+      "Country": "Greece",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 10.0
+    },
+    {
+      "Country": "Ireland",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 11.0
+    },
+    {
+      "Country": "Kyrgyzstan",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 11.0
+    },
+    {
+      "Country": "Russia",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 34.0
+    },
+    {
+      "Country": "Norway",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 39.0
+    },
+    {
+      "Country": "Mexico",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 51.0
+    },
+    {
+      "Country": "Saudi Arabia",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 76.0
+    },
+    {
+      "Country": "Morocco",
+      "Clicks": 0,
+      "Impressions": 1,
+      "CTR": 0.0,
+      "Position": 81.0
+    }
+  ],
+  "Devices": [
+    {
+      "Device": "Desktop",
+      "Clicks": 16,
+      "Impressions": 304,
+      "CTR": 0.0526,
+      "Position": 42.2
+    },
+    {
+      "Device": "Mobile",
+      "Clicks": 4,
+      "Impressions": 151,
+      "CTR": 0.0265,
+      "Position": 10.01
+    }
+  ],
+  "Search appearance": [
+    {
+      "Search Appearance": "Product snippets",
+      "Clicks": 0,
+      "Impressions": 5,
+      "CTR": 0,
+      "Position": 22
+    }
+  ],
+  "Filters": [
+    {
+      "Filter": "Search type",
+      "Value": "Web"
+    },
+    {
+      "Filter": "Date",
+      "Value": "Last 3 months"
+    }
+  ]
+}

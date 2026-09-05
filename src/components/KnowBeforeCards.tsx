@@ -52,7 +52,7 @@ function ItemList({ items, variant }: { items: KnowBeforeItem[]; variant: "dark"
 export function KnowBeforeCards({
   whatYouGet,
   whatToBring,
-  whatYouGetIntro = "Every ATV package is all-inclusive — gear, guide, lunch, and insurance are covered in your price.",
+  whatYouGetIntro = "Every ATV package is all-inclusive — gear, guide, lunch, and insurance for ages 6–65 are covered in your price.",
   whatToBringIntro = "A short packing list so you stay comfortable on muddy trails and cool after the ride.",
   whatYouGetFooter,
   whatToBringFooter,

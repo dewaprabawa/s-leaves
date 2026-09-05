@@ -37,7 +37,7 @@ export const atvWhatYouGetItems: KnowBeforeItem[] = [
   {
     icon: Shield,
     title: "Boot shoes, helmet & insurance",
-    desc: "Full safety gear fitted at All New Bali Adventure before you hit the track.",
+    desc: "Full safety gear fitted at All New Bali Adventure before you hit the track. We provide insurance for guests aged 6–65.",
   },
   {
     icon: Utensils,

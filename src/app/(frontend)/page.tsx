@@ -65,7 +65,7 @@ const adventures: Adventure[] = [
     childPrice: 550000,
     image: "/images/adventures/atv-adventure.jpg",
     description: "Beginner-friendly jungle quad ride at All New Bali Adventure — muddy tracks, river crossings, lunch, helmet & insurance included. Optional Wos River tubing or rafting combo after the track.",
-    highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
+    highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance for ages 6–65"],
     duration: "2 hours",
     icon: Zap,
     minPax: 1,
@@ -82,7 +82,7 @@ const adventures: Adventure[] = [
     childPrice: null as number | null,
     image: "/images/adventures/atv-adventure.jpg",
     description: "Share a tandem quad bike with a partner through jungle trails at All New Bali Adventure. Lunch, safety gear, and optional Wos River tubing included.",
-    highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance included"],
+    highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance for ages 6–65"],
     duration: "2 hours",
     icon: Users,
     minPax: 2,
@@ -133,7 +133,7 @@ const adventures: Adventure[] = [
     childPrice: null as number | null,
     image: "/images/adventures/cycling.jpg",
     description: "Quiet Pejeng rice-paddy paths with rice harvesting, a Balinese home visit, wood carving studio, and lunch included.",
-    highlights: ["Rice paddy & countryside cycling", "Lunch included", "Balinese house & carving studio", "Free Ubud hotel pickup & insurance"],
+    highlights: ["Rice paddy & countryside cycling", "Lunch included", "Balinese house & carving studio", "Free Ubud hotel pickup & insurance (ages 6–65)"],
     duration: "Full day",
     icon: Bike,
     minPax: 1,
@@ -482,7 +482,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {[
-            { icon: Shield, title: "Safety First", desc: "International-standard safety gear, certified guides, and comprehensive insurance on every adventure. Your safety is non-negotiable." },
+            { icon: Shield, title: "Safety First", desc: "International-standard safety gear, certified guides, and comprehensive insurance for ages 6–65 on every adventure. Your safety is non-negotiable." },
             { icon: Star, title: "5-Star Rated", desc: "Over 100 guests and counting. Consistently rated 5 stars on GetYourGuide, Google, and TripAdvisor by adventurers worldwide." },
             { icon: MapPin, title: "Local Experts", desc: "Our Balinese guides know every hidden trail, secret waterfall, and canyon passage. Experience the real Bali most tourists never see." },
           ].map((item, i) => {

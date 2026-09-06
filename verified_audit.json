@@ -1,0 +1,203 @@
+{
+  "findings": [
+    {
+      "id": "F1",
+      "area": "On-Page SEO / GSC",
+      "severity": "Critical",
+      "confidence": "Confirmed",
+      "finding": "Commercial tour URLs earn almost no Search clicks; discovery is concentrated on homepage + informational blogs.",
+      "evidence": "GSC 2026-08-02\u219209-02: ATV tour 12 imp/0 clk; cycling 2/0; cooking 1/0; rafting 12/0; homepage 79/10. Chart totals 20 clicks / 455 impressions.",
+      "impact": "Money keywords are not converting discoverability into booked-intent traffic.",
+      "fix": "Push internal links + CTR from ranking blogs into /tours/bali-atv-adventure, /tours/ubud-ricefield-cycling-tour, /tours/balinese-cooking-class; expand commercial hub content with unique operator facts.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F2",
+      "area": "On-Page SEO / CTR",
+      "severity": "Warning",
+      "confidence": "Confirmed",
+      "finding": "High-impression blogs still show 0% CTR in the audited GSC window (pre-rewrite baseline).",
+      "evidence": "temple-dress 69 imp/0 clk/pos 27.6; airport-transfer 69/0/pos 60.7. Live titles now 50/48 chars after 2026-09-05 rewrites \u2014 CTR impact not yet in this export.",
+      "impact": "Wasted impressions and weak funnel into commercial pages.",
+      "fix": "Monitor next 14\u201328 days CTR; if still <2%, A/B stronger benefit-led titles and add early WhatsApp/tour CTAs.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F3",
+      "area": "Content Quality",
+      "severity": "Warning",
+      "confidence": "Confirmed",
+      "finding": "Multiple blog posts remain below the 1,500-word quality gate and several titles exceed ~60 characters.",
+      "evidence": "Live parse: private-atv-vs-mass 400w/title 94; luwak ethical 360w/title 94; cycling-worth-it 440w/title 87; ATV cost 567w/title 93. Temple dress improved to 909w.",
+      "impact": "Thin posts struggle for competitive informational queries; long titles truncate in SERPs.",
+      "fix": "Either deepen top commercial spokes to 1,200\u20131,500+ with first-hand Pejeng/operator detail, or consolidate/prune thin non-converting posts. Shorten titles to \u226460 with brand at end.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F4",
+      "area": "Internal Linking",
+      "severity": "Warning",
+      "confidence": "Confirmed",
+      "finding": "Depth-1 crawl still finds many near-orphan blog URLs (\u22641 inbound internal link).",
+      "evidence": "internal_links.py: 15 potential orphans including pejeng history, subak, spices, luwak, itinerary posts. orphan_pages_from_sitemap depth-1: 31 sitemap URLs not reached (includes blogs + policy pages).",
+      "impact": "Crawl equity and topical authority do not flow to spokes or back to money pages.",
+      "fix": "From /blog index + related posts, add 2\u20133 contextual links per orphan; ensure every commercial spoke links to its tour money page.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F5",
+      "area": "On-Page SEO",
+      "severity": "Warning",
+      "confidence": "Confirmed",
+      "finding": "Several meta descriptions exceed 160 characters (likely SERP truncation).",
+      "evidence": "book 198; blog index 184; ATV-cost 185; cycling-worth-it 189; private-atv 183; is-ubud meta 189.",
+      "impact": "Truncated snippets reduce CTR control.",
+      "fix": "Cap seoDescription / excerpts at \u2264155\u2013160 characters on those templates.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F6",
+      "area": "Brand / E-E-A-T",
+      "severity": "Warning",
+      "confidence": "Confirmed",
+      "finding": "Brand query 'sekar bali' ranks but earned 0 clicks in the window.",
+      "evidence": "GSC query: sekar bali \u2014 8 impressions, position 6.9, 0 clicks.",
+      "impact": "Brand SERP underperformance; possible title/snippet or Knowledge Panel competition.",
+      "fix": "Align GBP + Organization alternateName; ensure homepage title leads with brand; review sitelinks/snippet; gather reviews/sameAs.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F13",
+      "area": "Content / Commercial",
+      "severity": "Warning",
+      "confidence": "Confirmed",
+      "finding": "Dirt-bike tour page gets more impressions than core ATV/cycling money pages but 0 clicks.",
+      "evidence": "GSC: /tours/bali-dirt-bike-adventure 32 imp / 0 clk / pos 24.1 vs ATV 12/0.",
+      "impact": "SERP attention on a peripheral offer may dilute commercial focus.",
+      "fix": "Improve CTR with clearer offer title or noindex/prune if non-core; ensure ATV/cycling outrank it for adventure intent.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F11",
+      "area": "Performance (CWV)",
+      "severity": "Info",
+      "confidence": "Hypothesis",
+      "finding": "Core Web Vitals could not be confirmed this run.",
+      "evidence": "pagespeed.py rate-limited twice by Google API (no key).",
+      "impact": "Unknown mobile LCP/INP/CLS status.",
+      "fix": "Re-run pagespeed.py with PSI API key; optimize hero LCP candidate (/images/adventures/hero-banner.jpg via next/image).",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F12",
+      "area": "Technical SEO",
+      "severity": "Info",
+      "confidence": "Confirmed",
+      "finding": "HTTP apex uses a 2-hop redirect chain to https www.",
+      "evidence": "redirect_checker: http://sekarbaliactivity.com \u2192 https://sekarbaliactivity.com \u2192 https://www.sekarbaliactivity.com (2 hops).",
+      "impact": "Minor crawl/latency inefficiency; GSC still recorded some http:// rows.",
+      "fix": "Prefer single hop http+apex \u2192 https://www directly if DNS/hosting allows.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F14",
+      "area": "International SEO",
+      "severity": "Info",
+      "confidence": "Confirmed",
+      "finding": "No hreflang (single-language EN site) \u2014 acceptable.",
+      "evidence": "parse_html hreflang=[] ; lang=en.",
+      "impact": "None for EN-only local tour site.",
+      "fix": "Only add hreflang if launching localized locales.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F7",
+      "area": "Technical SEO",
+      "severity": "Pass",
+      "confidence": "Confirmed",
+      "finding": "Crawlability and security baseline are strong.",
+      "evidence": "robots 200 with AI bots allowed; sitemap.xml 53 URLs; HTTPS+HSTS preload; CSP/XFO/nosniff/Referrer/Permissions; security score 100; broken_links 0 broken; apex/www 308 redirects.",
+      "impact": "No indexing blockers from robots/security.",
+      "fix": "Keep disallowing /admin/ and /api/; maintain single sitemap.xml declaration (ignore checker 404s for unused sitemap_index.xml).",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F8",
+      "area": "AI Search Readiness (GEO)",
+      "severity": "Pass",
+      "confidence": "Confirmed",
+      "finding": "llms.txt / llms-full.txt / pricing.md are present and high quality.",
+      "evidence": "llms_txt_checker Quality Score 100/100; robots allows GPTBot/ClaudeBot/PerplexityBot/Google-Extended/etc.",
+      "impact": "Strong citability for AI assistants.",
+      "fix": "Keep price/NAP facts synchronized with tours.ts and GBP.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F9",
+      "area": "Schema",
+      "severity": "Pass",
+      "confidence": "Confirmed",
+      "finding": "LocalBusiness/TravelAgency, TouristTrip with Offer, Product ItemList, BreadcrumbList, and standalone Question/Answer present; no FAQPage/HowTo.",
+      "evidence": "Homepage + ATV/cycling tour JSON-LD type inventory; GSC Search appearance shows Product snippets (5 imp).",
+      "impact": "Eligible for product/offer understanding; FAQ rich results correctly not pursued.",
+      "fix": "Optional: add sku-like tour identifiers on Product nodes; skip shippingDetails (not applicable to local tours).",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    },
+    {
+      "id": "F10",
+      "area": "Social / On-Page",
+      "severity": "Pass",
+      "confidence": "Confirmed",
+      "finding": "Homepage title/meta/OG/Twitter within healthy ranges; images have alt text.",
+      "evidence": "title 43 chars; meta 148; social_meta 92/100; image_inventory missing_alt=0 on homepage and audited tours.",
+      "impact": "Solid sharing and basic on-page hygiene.",
+      "fix": "Optional twitter:creator.",
+      "source": "llm-audit-2026-09-06",
+      "sources": [
+        "llm-audit-2026-09-06"
+      ]
+    }
+  ],
+  "dropped": [],
+  "raw_count": 14,
+  "verified_count": 14
+}

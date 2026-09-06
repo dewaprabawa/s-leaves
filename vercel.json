@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "sekarbaliactivity.com" }],
+      "destination": "https://www.sekarbaliactivity.com/:path*",
+      "permanent": true
+    }
+  ]
+}

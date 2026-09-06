@@ -1,65 +1,67 @@
 # SEO Action Plan — sekarbaliactivity.com
 
-**Date:** 2026-09-05  
-**Based on:** GSC export 2026-08-02 → 2026-09-02 + live verification (`FULL-AUDIT-REPORT.md`)  
-**Overall priority:** Earn **commercial impressions + CTR** on money pages → fix zero-CTR blogs → protect brand/home
+**Date:** 2026-09-06  
+**Based on:** Live audit + GSC `2026-08-02 → 2026-09-02` (`FULL-AUDIT-REPORT.md`)  
+**Overall score:** Needs Improvement **61/100**  
+**North star:** Earn **commercial impressions + clicks** on ATV / cycling / cooking money pages without bloating thin informational content.
 
 ---
 
 ## Priority 0 — This week (Critical / Quick wins)
 
-| # | Action | Evidence | Owner | Done when |
-|---|--------|----------|-------|-----------|
-| 0.1 | Add `seoDescription` ≤160 on **ATV** + **cooking** tours (same pattern as cycling) | Live metas 285 / 199 chars from `shortDescription` | Code (`src/data/tours.ts`) | ✅ Shipped 2026-09-05 |
-| 0.2 | Rewrite SERP title + meta for `/blog/bali-temple-dress-code` | 69 imp / 0 clk / pos 27.6; title OK length but weak CTR | Content | ✅ Title/excerpt rewritten; monitor CTR |
-| 0.3 | Rewrite SERP title + meta for `/blog/bali-airport-transfer-guide-dps-to-ubud` | 69 imp / 0 clk / pos 60.7; title **95 chars** | Content | ✅ Title ≤60 with brand template |
-| 0.4 | Add 2–3 contextual internal links from temple-dress blog → ATV / cycling / cooking | Orphan crawl ≤1 inbound; commercial pages starved | Content | ✅ Links added; expand to more blogs next |
-| 0.5 | Point all internal links at final cycling URL only (`/tours/ubud-ricefield-cycling-tour`) | Legacy `/tours/pejeng-cycling-tour` still has 7 GSC impressions via 308 | Code/content | ✅ No src hrefs to legacy; keep 308 in `next.config.ts` |
+| # | Action | Evidence | Done when |
+|---|--------|----------|-----------|
+| 0.1 | From temple-dress, airport-transfer, luwak, ATV-guide, Pejeng-history: add **2–3 contextual links each** → `/tours/bali-atv-adventure`, `/tours/ubud-ricefield-cycling-tour`, `/tours/balinese-cooking-class`, and/or `/book` | GSC: tours ≈0 clicks; 15 near-orphan blogs | ✅ Shipped 2026-09-06 — airport, luwak×2, spices, Base Genep, WhatsApp-book, cycling-worth, private-ATV CTAs point at money URLs |
+| 0.2 | Shorten titles to **≤60** + metas to **≤160** on: ATV-cost, private-vs-mass, cycling-worth-it, luwak-ethical, `/book` | Live title 87–94 / meta 183–198 | ✅ Shipped 2026-09-06 — page titles 27–36 chars (≤60 with `\| Sekar Bali Activity`); book meta 110 chars |
+| 0.3 | Monitor GSC CTR on temple-dress + airport (rewrites already shipped 2026-09-05) | Prior 69+69 imp / 0 clk | 14-day CTR ≥2% or iterate copy |
+| 0.4 | Prefer single-hop redirect `http://sekarbaliactivity.com` → `https://www…` | 2-hop chain Confirmed | Partial: `vercel.json` apex→www host redirect added; **still set Vercel domain “Redirect to www”** so HTTP apex is one hop |
 
 ---
 
-## Priority 1 — Next 2 sprints (Commercial visibility)
+## Priority 1 — Next sprints (Commercial visibility)
 
-| # | Action | Why | KPI | Status |
-|---|--------|-----|-----|--------|
-| 1.1 | Strengthen `/blog/bali-atv-tour-ubud-guide` as ATV hub spoke (price table, inclusions, WhatsApp CTA, link to `/tours/bali-atv-adventure`) | Already pos ~8 with 34 imp / 1 click | ATV tour impressions ≥50 / 28d | ✅ Shipped 2026-09-05 |
-| 1.2 | Expand temple-dress article to **900–1,200 words** with first-hand Pejeng/Ubud temple visit notes (no AI filler) | Thin (~300 words) on competitive query | Position → top 20; CTR >3% | ✅ ~910 words + Pejeng guide notes |
-| 1.3 | Publish/refresh **one** cycling spoke only if it adds operator-real info (Subak / Pejeng vs Tegallalang already exists — improve that page’s title/CTR instead of new thin posts) | Cycling money page has **2 impressions** | Cycling URL impressions ≥30 / 28d | ✅ Title shortened + CTA → cycling/cooking |
-| 1.4 | Dirt-bike tour page: unique `seoTitle`/`seoDescription`, clearer H1/offer, photos | 32 imp / 0 clk / pos 24 | CTR >2% or prune if non-core | ✅ seoTitle/seoDescription added |
-| 1.5 | Brand query pack: GBP name consistency, homepage brand in title, review `sameAs` | `sekar bali` pos 6.9 / 0 clicks | Brand query CTR >10% | ✅ `alternateName` for Sekar Bali variants |
+| # | Action | Why | KPI |
+|---|--------|-----|-----|
+| 1.1 | Deepen **ATV hub cluster only**: `/blog/bali-atv-tour-ubud-guide`, ATV-cost, private-vs-mass — first-hand All New Bali Adventure details, price table, inclusions, WhatsApp CTA → tour URL | ATV tour 12 imp / 0 clk; guide already pos ~8 | ATV tour impressions ≥50 / 28d; ≥3 clicks |
+| 1.2 | Deepen **cycling hub**: cycling-worth-it + Pejeng vs Tegallalang — operator lunch/pickup truth, link to `/tours/ubud-ricefield-cycling-tour` | Cycling money page **2 impressions** | Cycling URL impressions ≥30 / 28d |
+| 1.3 | Cooking: ensure `/blog/inside-balinese-cooking-class-pejeng` + Base Genep spoke link to cooking tour + evening timing | Cooking tour **1 impression** | Cooking URL impressions ≥20 / 28d |
+| 1.4 | Dirt-bike page: stronger unique offer CTR **or** de-index/prune if non-core | 32 imp / 0 clk distracting from ATV | Either CTR &gt;2% or removed from sitemap |
+| 1.5 | Brand pack: homepage/GBP title consistency; keep `alternateName`; pursue real reviews for future AggregateRating (never fake) | `sekar bali` pos 6.9 / 0 clicks | Brand query CTR &gt;10% |
 
 ---
 
-## Priority 2 — Internal linking & IA
+## Priority 2 — Content hygiene (do less, better)
 
 | # | Action | Evidence |
 |---|--------|----------|
-| 2.1 | From homepage + `/blog` index, add descriptive links to top GSC blogs (temple dress, airport, luwak ethical, ATV guide, Pejeng history) | 17 near-orphan blogs | ✅ Homepage `travelGuides` features ATV guide, Pejeng vs Tegallalang, temple dress |
-| 2.2 | Keep `/tours` → `/#adventures` redirect; do **not** create a thin duplicate tours index unless building a real unique hub | `/tours` 48 GSC imp via redirect target |
-| 2.3 | Ensure sitemap lists only final tour slugs (already true) + no legacy pejeng-cycling URL | Sitemap check 2026-09-05 |
+| 2.1 | **Do not** mass-publish more dress-code / airport / generic food posts | Already consume impressions without commercial clicks |
+| 2.2 | Expand or merge posts &lt;600 words that lack operator-unique insight; target 1,200–1,500+ only for commercial hubs | Quality gate + thin GSC winners |
+| 2.3 | From `/blog` index, feature top commercial spokes (not only cultural long-tail) | Orphan crawl + IA |
+| 2.4 | Keep `/tours` → `/#adventures` unless building a **unique** tours hub (avoid thin duplicate) | `/tours` 48 GSC impressions via redirect |
 
 ---
 
-## Priority 3 — Measurement cadence
+## Priority 3 — Measurement
 
-1. **Weekly GSC:** filter queries containing `atv`, `cycling`, `rice paddy`, `pejeng`, `cooking`, `rafting` — track impressions, CTR, position.
-2. **Weekly pages:** homepage, ATV tour, cycling tour, cooking tour, temple dress, airport guide, ATV guide.
-3. **Re-run PSI** (mobile) once API key available; record LCP / INP / CLS in this file.
-4. **Countries:** watch US/AU/UK CTR separately — currently impressions without clicks.
-5. When available: Search Console **AI Performance** vs classic Web (do not mix KPIs).
+1. **Weekly GSC queries:** `atv`, `quad`, `cycling`, `rice paddy`, `pejeng`, `cooking`, `rafting`, `sekar bali`.
+2. **Weekly pages:** `/`, ATV, cycling, cooking, temple-dress, airport, ATV-guide, dirt-bike.
+3. **Re-run PSI mobile** with `PAGESPEED_API_KEY`; log LCP / INP / CLS (not FID).
+4. Split US/AU/UK CTR vs Indonesia — English traveler queries show impressions without clicks.
+5. Track Web Search separate from any future AI Performance / Discover reports.
 
 ---
 
-## Priority 4 — Keep doing (already green)
+## Priority 4 — Keep green (do not regress)
 
 | Item | Status |
 |------|--------|
 | Homepage title ≤60 / meta ≤160 | ✅ |
-| Cycling `seoTitle` / `seoDescription` + lunch-only truth | ✅ |
-| Security headers / HSTS / AI crawler allow | ✅ |
-| `llms.txt` / `pricing.md` discovery | ✅ |
+| Tour `seoDescription` on ATV + cooking (fixed 2026-09-05) | ✅ |
+| Security headers / HSTS / AI crawler Allow | ✅ |
+| `llms.txt` + `pricing.md` | ✅ |
 | No FAQPage / HowTo schema | ✅ keep |
-| http → https → www redirects | ✅ |
+| http → https → www working | ✅ (optimize hop count) |
+| Image alt text on audited pages | ✅ |
 
 ---
 
@@ -67,40 +69,34 @@
 
 | Item | Reason |
 |------|--------|
-| Mass new informational blogs (dress codes, airport, generic food) | Already consume impressions without commercial clicks |
 | FAQPage / HowTo schema | Restricted / deprecated rich results |
-| Thin AI doorway pages for cycling keywords | Mar/Jun 2026 spam risk |
-| Re-expand homepage GEO FAQ DOM / keyword footer cloud | Prior density + HTML weight wins |
-| Fork prices outside `tours.ts` / `pricing.ts` / `geoContent.ts` | Citation + SERP conflicts |
-| Treat Discover tactics as Search ranking fixes | Discover ≠ Search (Feb 2026) |
+| Fake AggregateRating / review spam | Trust + spam policy risk |
+| Mass thin AI blogs for head terms | Mar/May 2026 originality / spam risk |
+| Wikipedia/Wikidata solely for SEO | Notability + no ranking guarantee |
+| Treat Discover-only tactics as Search fixes | Discover ≠ Search |
+| Fork prices outside shared tour/pricing/geo sources | Citation + SERP conflicts |
 
 ---
 
-## Suggested execution order (checklist)
+## Suggested execution order
 
-- [x] 0.1 ATV + cooking `seoDescription` *(shipped 2026-09-05)*
-- [x] 0.2 Temple dress title/meta CTR rewrite *(shipped 2026-09-05)*
-- [x] 0.3 Airport guide title/meta shorten *(shipped 2026-09-05)*
-- [x] 0.4 Internal links temple dress → cycling / cooking / ATV *(shipped 2026-09-05)*
-- [x] 0.5 Kill legacy cycling internal links *(confirmed none in `src/`; 308 kept)*
-- [x] 1.1 ATV guide spoke hardening *(price table, inclusions, WhatsApp CTA)*
-- [x] 1.2 Expand temple dress (first-hand Pejeng notes, ~900+ words)
-- [x] 1.3 Cycling spoke CTR / impressions lift *(Pejeng vs Tegallalang title/CTA)*
-- [x] 1.4 Dirt-bike page `seoTitle`/`seoDescription`
-- [x] 1.5 Brand / GBP pack *(Organization `alternateName` for Sekar Bali)*
-- [x] 2.1 Homepage travel guides → ATV guide / Pejeng cycling / temple dress
-- [ ] 2.x Remaining orphan link pass on `/blog` body copy
-- [ ] 3.x Weekly GSC review started
+- [x] 0.1 Internal links spokes → money pages  
+- [x] 0.2 Title/meta length fixes on flagged URLs  
+- [ ] 0.3 CTR monitor temple-dress + airport  
+- [~] 0.4 Apex→www redirect (`vercel.json` + confirm Vercel domain setting)  
+- [ ] 1.1–1.3 Commercial hub deepening (ATV → cycling → cooking)  
+- [ ] 1.4 Dirt-bike decision  
+- [ ] 1.5 Brand/reviews  
+- [ ] 3.x PSI + weekly GSC cadence  
 
 ---
 
-## Success criteria (28 days after Priority 0–1)
+## Score interpretation
 
-| KPI | Baseline (this export) | Target |
-|-----|------------------------|--------|
-| Site clicks / 28d | 20 | ≥40 |
-| Cycling tour impressions | 2 | ≥30 |
-| ATV tour impressions | 12 | ≥50 |
-| Temple dress CTR | 0% | ≥3% |
-| Airport guide CTR | 0% | ≥2% **or** retarget/noindex if off-strategy |
-| Brand `sekar bali` CTR | 0% | ≥10% |
+| Band | Meaning |
+|------|---------|
+| 90–100 Excellent | — |
+| 70–89 Good | Technical/GEO already near here |
+| **50–69 Needs Improvement** | **Current 61 — commercial Search outcomes** |
+| 30–49 Poor | — |
+| 0–29 Critical | — |

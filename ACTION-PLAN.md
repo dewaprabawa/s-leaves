@@ -84,7 +84,7 @@
 - [x] 0.2 Title/meta length fixes on flagged URLs  
 - [ ] 0.3 CTR monitor temple-dress + airport  
 - [~] 0.4 Apex→www redirect (`vercel.json` + confirm Vercel domain setting)  
-- [ ] 1.1–1.3 Commercial hub deepening (ATV → cycling → cooking)  
+- [~] 1.1–1.3 ATV/cycling query research + SEO marketing pack shipped (`ATV-CYCLING-SEO-MARKETING.md`); money-page SEO/FAQs + hub titles updated — still deepen hub body copy  
 - [ ] 1.4 Dirt-bike decision  
 - [ ] 1.5 Brand/reviews  
 - [ ] 3.x PSI + weekly GSC cadence  

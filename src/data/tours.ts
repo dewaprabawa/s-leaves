@@ -85,7 +85,7 @@ export const TOURS: Tour[] = [
       },
     ],
     shortDescription:
-      "Private ATV ride Ubud at All New Bali Adventure — beginner-friendly Bali quad bike tour through jungle mud tracks, river crossings, and scenic trails. All-inclusive: lunch, helmet, boot shoes & insurance. Add Wos River tubing or rafting for the best ATV combo near Ubud. From IDR 600K.",
+      "Private muddy sport ATV ride near Ubud at All New Bali Adventure — beginner-friendly Bali quad bike through jungle mud tracks, river crossings, and scenic trails. All-inclusive: lunch, helmet, boot shoes & insurance. Add Wos River tubing or rafting. From IDR 600K.",
     fullDescription: `**Looking for a Bali Quad Bike / ATV Ride Near Ubud?**
 
 If you want an adrenaline-packed day beyond the usual tourist trail, our Bali ATV Quad Bike Adventure delivers a complete private ATV ride through jungle mud tracks, muddy trails, and river crossings. Every ride is designed for sensation, excitement, and joy — whether you go solo (single ATV) or share a tandem ATV with a partner. Beginner-friendly with a full safety briefing.
@@ -210,6 +210,12 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         question: "Do you provide insurance?",
         answer:
           "Yes. We provide insurance for guests aged 6–65 on our adventure packages.",
+      },
+      {
+        id: "faq-atv-8",
+        question: "Is this a muddy sport ATV / mud bike ride?",
+        answer:
+          "Yes — the All New Bali Adventure track includes jungle mud, soft soil, and river crossings on a 4-wheel sport ATV (quad). That is different from a 2-wheel dirt bike / enduro tour. If you want clutch motocross bikes (KLX/KTM), book our Bali Dirt Bike Adventure instead.",
       },
     ],
     reviews: [],
@@ -962,9 +968,9 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     category: "Activity",
     duration: "Half Day or Full Day",
     basePrice: 1200000,
-    seoTitle: "Bali Dirt Bike Tour Near Ubud",
+    seoTitle: "Dirt Bike Tour Bali | Tabanan & Volcano",
     seoDescription:
-      "Guided Bali dirt bike rides — forest, beach & volcano trails. Gear, lunch & hotel pickup included. Ask WhatsApp for bike tiers.",
+      "Bali dirt bike tours — Tabanan forest/beach or Kintamani volcano. KLX to KTM tiers, full gear, lunch, hotel pickup. WhatsApp booking.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1519444334051-a39396328670?auto=format&fit=crop&w=1200&q=80",
       alt: "Bali Dirt Bike Adventure",
@@ -1067,19 +1073,51 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     faqs: [
       {
         id: "faq-db-1",
-        question: "Is there a minimum number of riders?",
-        answer: "Yes, a minimum of 2 riders is required for the Dirt Bike Tour."
+        question: "How much is a dirt bike tour in Bali?",
+        answer:
+          "Packages start from IDR 1,200,000 for entry KLX/CRF half-day Tabanan trails. Full-day and larger bikes (KLX 230R, YZ, KTM) cost more — pick your bike tier and route (Tabanan forest/beach or Kintamani volcano) when you WhatsApp us.",
       },
       {
         id: "faq-db-2",
-        question: "What do I need to wear?",
-        answer: "You are required to wear shoes and long pants. We will provide all other protective riding gear."
+        question: "Is a dirt bike the same as an ATV / mud ATV?",
+        answer:
+          "No. Dirt bikes are 2-wheel enduro/motocross machines (clutch and balance required). ATVs / muddy sport ATVs are 4-wheel quads — more stable and beginner-friendly — booked on our Bali ATV Adventure page instead.",
       },
       {
         id: "faq-db-3",
-        question: "Is there an age limit?",
-        answer: "Minimum age is 12 years old for pillion (passenger), and 16+ years old for riding (must bring a driver's license)."
-      }
+        question: "Do I need experience or a license?",
+        answer:
+          "Riders must be 16+ with a valid driver’s license and prior manual-motorcycle experience. Absolute beginners who only ride automatic scooters should choose ATV instead, or ask about tandem/pillion options (passenger from age 12).",
+      },
+      {
+        id: "faq-db-4",
+        question: "What trails can I ride — Tabanan or volcano?",
+        answer:
+          "Main options: Tabanan forest + black-sand beach trails, Kintamani / Mount Batur forest + volcano trails, full-day Ubud + volcano, plus sunrise or sunset specialty rides. Tell us your skill level and we match the route.",
+      },
+      {
+        id: "faq-db-5",
+        question: "What bikes do you offer (KLX, CRF, KTM)?",
+        answer:
+          "Tiers from 23/24 KLX/CRF 150 up through KLX 230R/250 and YZ/KTM 250–350 (2T and 4T). Choose the bike when booking — price follows the model and half-day vs full-day.",
+      },
+      {
+        id: "faq-db-6",
+        question: "Is hotel pickup included?",
+        answer:
+          "Yes — hotel pickup and drop-off in the Bali area is included on dirt bike packages, along with guide, lunch, full protective gear, insurance (ages 6–65), and riding photos/video.",
+      },
+      {
+        id: "faq-db-7",
+        question: "Is there a minimum number of riders?",
+        answer: "Yes — a minimum of 2 riders is required for the dirt bike tour.",
+      },
+      {
+        id: "faq-db-8",
+        question: "What should I wear?",
+        answer:
+          "Wear closed shoes and long pants. We provide helmet, boots, jersey, gloves, and chest protection. Bring a change of clothes — trails get muddy.",
+      },
     ],
     reviews: []
   }

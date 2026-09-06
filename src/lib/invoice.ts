@@ -35,7 +35,8 @@ export function createInvoiceNumber(date = new Date()): string {
 }
 
 function formatPdfAmount(amount: number): string {
-  return `IDR ${amount.toLocaleString('id-ID')}`
+  const abs = Math.abs(amount).toLocaleString('id-ID')
+  return amount < 0 ? `- IDR ${abs}` : `IDR ${abs}`
 }
 
 async function loadLogoDataUrl(): Promise<string | null> {

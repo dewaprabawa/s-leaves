@@ -140,16 +140,35 @@ export function BookingPopup({
     return () => document.removeEventListener("keydown", handleKeyDown)
   }, [isOpen, onClose])
 
+  // Keep adult count in sync with activity minimums (rafting / tandem need 2+)
+  useEffect(() => {
+    if (!isOpen || !activeTour) return
+    const rafting = activeTour.id === 'rafting' || mixIds.includes('rafting')
+    const tandem = activeTour.id === 'tandem-atv'
+    const min = tandem || rafting ? 2 : Math.max(activeTour.minPax, 1)
+    setAdults((prev) => {
+      const next = Math.max(min, prev || min)
+      if (tandem && next % 2 !== 0) return next + 1
+      return next
+    })
+  }, [isOpen, activeTour?.id, mixIds])
+
   if (!mounted || !isOpen || !activeTour) return null;
 
   const hasKidPricing = activeTour.kidPrice !== null && activeTour.kidPrice !== undefined;
   const totalPax = adults + kids;
   const isTandem = activeTour.id === 'tandem-atv';
-  const isInvalidPax =
-    totalPax < activeTour.minPax || (isTandem && (adults < 2 || adults % 2 !== 0));
-
   const mixOptions = MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? [];
   const isCombo = mixIds.length > 0;
+  const includesRafting =
+    activeTour.id === 'rafting' || mixIds.includes('rafting');
+  /** Adults used for pricing — must match steppers; rafting requires 2+ */
+  const minAdults = isTandem || includesRafting ? 2 : Math.max(activeTour.minPax, 1);
+  const isInvalidPax =
+    adults < minAdults ||
+    totalPax < activeTour.minPax ||
+    (isTandem && adults % 2 !== 0);
+
   const mixedQuote = isCombo
     ? quoteMixedActivities({
         primaryId: activeTour.id,
@@ -227,7 +246,7 @@ export function BookingPopup({
         : undefined
       : MEETING_POINT.mapUrl;
 
-    if (isInvalidPax) return alert(`Minimum ${activeTour.minPax} persons required.`);
+    if (isInvalidPax) return alert(`Minimum ${minAdults} adult(s) required${includesRafting ? ' when rafting is included' : ''}.`);
 
     const pickupNoteParts: string[] = [];
     if (!wantsPickup) {
@@ -239,24 +258,65 @@ export function BookingPopup({
       if (pickupQuote.dropFee) pickupNoteParts.push(`Return drop same hotel +IDR ${pickupQuote.dropFee.toLocaleString('id-ID')}`);
       if (pickupQuote.outOfUbudFee) pickupNoteParts.push(`Out of Ubud +IDR ${pickupQuote.outOfUbudFee.toLocaleString('id-ID')}`);
     }
-    if (mixedQuote) {
-      for (const q of mixedQuote.quotes) {
+    const appendQuoteNotes = (q: NonNullable<typeof activityQuote>) => {
+      const label = ACTIVITY_SHORT_LABEL[q.activityId] ?? q.activityId
+      if (q.activityId === 'tandem-atv') {
         pickupNoteParts.unshift(
-          `${ACTIVITY_SHORT_LABEL[q.activityId]} · ${q.tierLabel}: ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`,
-        );
+          `${label} · ${adults} riders (${q.tierLabel}): ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`,
+        )
+      } else {
+        pickupNoteParts.unshift(
+          `${label} · ${q.tierLabel}: ${formatIdr(q.unitPrice)} × ${q.units} adult(s)`,
+        )
       }
+      if (q.childCount > 0 && q.childSubtotal > 0) {
+        pickupNoteParts.unshift(
+          `${label} · children: ${formatIdr(q.childUnitPrice)} × ${q.childCount}`,
+        )
+      }
+    }
+    if (mixedQuote) {
+      for (const q of mixedQuote.quotes) appendQuoteNotes(q)
     } else if (activityQuote) {
-      pickupNoteParts.unshift(`${activityQuote.tierLabel}: ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`);
+      appendQuoteNotes(activityQuote)
     }
 
-    const lineItems = [
-      {
-        label: activityQuote
-          ? `${activeTour.title} (${activityQuote.tierLabel} · ${activityQuote.units} ${activityQuote.unitLabel})`
-          : activeTour.title,
-        amount: activityTotal,
-      },
-    ];
+    const lineItems: { label: string; amount: number }[] = []
+    const pushQuoteLines = (
+      q: NonNullable<typeof activityQuote>,
+      title: string,
+    ) => {
+      if (q.activityId === 'tandem-atv') {
+        lineItems.push({
+          label: `${title} — ${adults} riders · ${q.units} ${q.unitLabel} × ${formatIdr(q.unitPrice)} (${q.tierLabel})`,
+          amount: q.activitySubtotal,
+        })
+      } else {
+        lineItems.push({
+          label: `${title} — ${q.units} adult(s) × ${formatIdr(q.unitPrice)} (${q.tierLabel})`,
+          amount: q.activitySubtotal,
+        })
+      }
+      if (q.childCount > 0 && q.childSubtotal > 0) {
+        lineItems.push({
+          label: `${title} — ${q.childCount} child(ren) × ${formatIdr(q.childUnitPrice)}`,
+          amount: q.childSubtotal,
+        })
+      }
+    }
+    if (mixedQuote) {
+      for (const q of mixedQuote.quotes) {
+        pushQuoteLines(q, ACTIVITY_SHORT_LABEL[q.activityId] ?? q.activityId)
+      }
+      if (mixedQuote.discountAmount > 0) {
+        lineItems.push({
+          label: `Combo discount (${mixedQuote.discountPercent}%)`,
+          amount: -mixedQuote.discountAmount,
+        })
+      }
+    } else if (activityQuote) {
+      pushQuoteLines(activityQuote, activeTour.title)
+    }
     if (pickupFee > 0) {
       lineItems.push({
         label: sameDropOff ? 'Hotel pickup & return transfer' : 'Hotel pickup transfer',
@@ -641,7 +701,7 @@ export function BookingPopup({
                   {activityQuote ? ` (${activityQuote.unitPrice / 1000}k · ${activityQuote.tierLabel})` : ''}
                 </label>
                 <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
-                  <button type="button" onClick={() => setAdults(Math.max(0, adults - 1))} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">-</button>
+                  <button type="button" onClick={() => setAdults(Math.max(minAdults, adults - 1))} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">-</button>
                   <span className="flex-1 text-center font-bold text-brand-green text-lg">{adults}</span>
                   <button type="button" onClick={() => setAdults(adults + 1)} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">+</button>
                 </div>
@@ -674,7 +734,7 @@ export function BookingPopup({
             {isTandem && adults % 2 !== 0 && adults >= 2 && (
               <p className="text-amber-700 text-sm font-bold bg-amber-50 p-2 rounded-lg border border-amber-100">Tandem ATV needs an even number of riders (2, 4, 6…).</p>
             )}
-            {isInvalidPax && <p className="text-red-500 text-sm font-bold bg-red-50 p-2 rounded-lg border border-red-100">Minimum {activeTour.minPax} persons required{isTandem ? ' (even count for tandem)' : ''}.</p>}
+            {isInvalidPax && <p className="text-red-500 text-sm font-bold bg-red-50 p-2 rounded-lg border border-red-100">Minimum {minAdults} adult{minAdults > 1 ? 's' : ''} required{includesRafting ? ' for rafting' : ''}{isTandem ? ' (even count for tandem)' : ''}{totalPax < activeTour.minPax ? ` · ${activeTour.minPax} persons total` : ''}.</p>}
 
             <div>
               <label className="block text-brand-green font-bold text-sm mb-2">Special Notes (Optional)</label>
@@ -692,9 +752,21 @@ export function BookingPopup({
             {mixedQuote ? (
               <>
                 {mixedQuote.quotes.map((q) => (
-                  <div key={q.activityId} className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
-                    <span>{ACTIVITY_SHORT_LABEL[q.activityId]} · {formatIdr(q.unitPrice)} × {q.units}</span>
-                    <span className="font-semibold text-brand-green">{formatIdr(q.activitySubtotal + q.childSubtotal)}</span>
+                  <div key={q.activityId} className="mb-2 space-y-1">
+                    <div className="flex justify-between items-center text-sm text-brand-green-light">
+                      <span>
+                        {ACTIVITY_SHORT_LABEL[q.activityId]} · {q.activityId === 'tandem-atv'
+                          ? `${adults} riders · ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`
+                          : `${formatIdr(q.unitPrice)} × ${q.units} adult(s)`}
+                      </span>
+                      <span className="font-semibold text-brand-green">{formatIdr(q.activitySubtotal)}</span>
+                    </div>
+                    {q.childCount > 0 && q.childSubtotal > 0 ? (
+                      <div className="flex justify-between items-center text-sm text-brand-green-light">
+                        <span>{ACTIVITY_SHORT_LABEL[q.activityId]} · {formatIdr(q.childUnitPrice)} × {q.childCount} child(ren)</span>
+                        <span className="font-semibold text-brand-green">{formatIdr(q.childSubtotal)}</span>
+                      </div>
+                    ) : null}
                   </div>
                 ))}
                 {mixedQuote.discountAmount > 0 ? (
@@ -705,24 +777,30 @@ export function BookingPopup({
                 ) : null}
               </>
             ) : activityQuote ? (
-              <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
-                <span>{activityQuote.tierLabel} · {formatIdr(activityQuote.unitPrice)} × {activityQuote.units} {activityQuote.unitLabel}</span>
-                {tierPromoActive ? (
-                  <div className="text-right">
-                    <span className="block text-xs line-through opacity-70">{formatIdr(compareAtActivityTotal)}</span>
+              <>
+                <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
+                  <span>
+                    {activityQuote.activityId === 'tandem-atv'
+                      ? `${adults} riders · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`
+                      : `${activityQuote.tierLabel} · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} adult(s)`}
+                  </span>
+                  {tierPromoActive ? (
+                    <div className="text-right">
+                      <span className="block text-xs line-through opacity-70">{formatIdr(compareAtActivityTotal)}</span>
+                      <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
+                    </div>
+                  ) : (
                     <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
+                  )}
+                </div>
+                {activityQuote.childCount > 0 && activityQuote.childSubtotal > 0 ? (
+                  <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
+                    <span>Children · {formatIdr(activityQuote.childUnitPrice)} × {activityQuote.childCount}</span>
+                    <span className="font-semibold text-brand-green">{formatIdr(activityQuote.childSubtotal)}</span>
                   </div>
-                ) : (
-                  <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
-                )}
-              </div>
+                ) : null}
+              </>
             ) : null}
-            {!mixedQuote && activityQuote && activityQuote.childSubtotal > 0 && (
-              <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
-                <span>Children</span>
-                <span className="font-semibold text-brand-green">{formatIdr(activityQuote.childSubtotal)}</span>
-              </div>
-            )}
             {pickupFee > 0 && (
               <div className="flex justify-between items-center mb-3 text-sm text-brand-green-light">
                 <span>Pickup &amp; transfer{sameDropOff ? ' (round trip)' : ''}</span>

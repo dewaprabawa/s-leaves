@@ -67,9 +67,9 @@ export const TOURS: Tour[] = [
     duration: "2–4 Hours",
     basePrice: 600000,
     childPrice: 550000,
-    seoTitle: "Bali ATV Quad Bike Near Ubud",
+    seoTitle: "ATV Ride Ubud from IDR 600K",
     seoDescription:
-      "Private jungle ATV near Ubud from IDR 600K — lunch, helmet, boots & insurance. Optional Wos River tubing. Book via WhatsApp.",
+      "ATV ride Ubud at All New Bali Adventure — single from IDR 600K, tandem 859K. Lunch, gear, insurance. Optional Wos tubing. WhatsApp booking.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV jungle adventure ride through tropical rainforest trails",
@@ -171,39 +171,45 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     faqs: [
       {
         id: "faq-atv-1",
-        question: "What should I bring?",
+        question: "How much does an ATV ride near Ubud cost in 2026?",
         answer:
-          "Bring changing clothes or a dry cloth, sunscreen (recommended), and some cash for extras. A waterproof phone case is optional but handy for trail photos. Towels and changing facilities are available at our base.",
+          "Single ATV starts from IDR 600,000 per person and tandem from IDR 859,000 for two sharing one bike. Packages include lunch, helmet, boot shoes, insurance (ages 6–65), and a safety briefing at All New Bali Adventure. Hotel pickup is optional at IDR 120,000.",
       },
       {
         id: "faq-atv-2",
-        question: "Can I combine ATV with river tubing?",
+        question: "Is this ATV tour beginner-friendly?",
         answer:
-          "Yes! After racing the ATV track you can explore the Wos River on a tube. Ask us for ATV + River Tubing combo availability when you book.",
+          "Yes. No riding experience is required. Guides give a full safety briefing before you start, and tandem ATVs are available if you prefer to ride with a partner.",
       },
       {
         id: "faq-atv-3",
-        question: "Do I need riding experience?",
+        question: "Where is the ATV arena near Ubud?",
         answer:
-          "No. Guides give a full safety briefing and ATVs are easy to operate for beginners. Tandem options are great if you prefer to ride with a partner.",
+          "All of our ATV rides run at All New Bali Adventure — a dedicated jungle arena near Ubud / Pejeng. We are not the Kuber tunnel or Dragon Cave tracks; ask WhatsApp if you need pin directions or hotel pickup.",
       },
       {
         id: "faq-atv-4",
-        question: "What is included in the price?",
+        question: "What is included in the ATV price?",
         answer:
-          "Your guided ATV ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance for ages 6–65, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. River tubing on the Wos River is an optional combo — ask when you book.",
-      },
-      {
-        id: "faq-atv-6",
-        question: "Do you provide insurance?",
-        answer:
-          "Yes. We provide insurance for guests aged 6–65 years old on our adventure packages.",
+          "Guided ATV ride, boot shoes and helmet, simple menu lunch, insurance for ages 6–65, and an English-speaking safety briefing. Hotel pickup and Wos River tubing are optional add-ons — confirm when you book.",
       },
       {
         id: "faq-atv-5",
-        question: "Where is the ATV arena?",
+        question: "Can I combine ATV with river tubing or rafting?",
         answer:
-          "All ATV rides take place at All New Bali Adventure — our dedicated jungle ATV arena near Ubud. Hotel pickup is available for an additional IDR 120,000 if you need transport to the arena.",
+          "Yes. Many guests add Wos River tubing after the ATV track for a land-and-water day. Rafting combos are also available on request — message WhatsApp with your date and guest count.",
+      },
+      {
+        id: "faq-atv-6",
+        question: "What should I bring?",
+        answer:
+          "Bring a change of clothes or dry cloth, sunscreen, and cash for extras. A waterproof phone case helps for trail photos. Towels and changing space are available at the arena.",
+      },
+      {
+        id: "faq-atv-7",
+        question: "Do you provide insurance?",
+        answer:
+          "Yes. We provide insurance for guests aged 6–65 on our adventure packages.",
       },
     ],
     reviews: [],
@@ -432,9 +438,9 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     category: "Activity",
     duration: "Full Day",
     basePrice: 475000,
-    seoTitle: "Ubud Rice Paddy Cycling Tour | Pejeng Village",
+    seoTitle: "Rice Paddy Cycling Ubud | Pejeng",
     seoDescription:
-      "Pejeng rice paddy cycling near Ubud — lunch included, free hotel pickup from IDR 475K. Small-group countryside bike tour. Book via WhatsApp.",
+      "Rice paddy cycling in Pejeng near Ubud — quiet Subak lanes, lunch included, free Ubud hotel pickup from IDR 475K. Book on WhatsApp.",
     heroImage: {
       url: "/images/cycling/rice-field-bikes.jpg",
       alt: "Rice paddy cycling tour through Pejeng village terraces near Ubud",
@@ -561,34 +567,51 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     faqs: [
       {
         id: "faq-ubud-cyc-1",
-        question: "Is the route difficult?",
-        answer: "The route is mostly flat with gentle terrain through ricefields and village paths. It is suitable for all fitness levels, including older adults and families.",
+        question: "How much is the Ubud rice paddy cycling tour?",
+        answer:
+          "IDR 475,000 per person in 2026. That includes the guided Pejeng village / ricefield ride, bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
       },
       {
         id: "faq-ubud-cyc-2",
-        question: "Are meals really included?",
-        answer: "Yes — lunch at a local village restaurant is included in the tour price.",
+        question: "Is hotel pickup included for the cycling tour?",
+        answer:
+          "Yes — complimentary pickup and drop-off for hotels in the Ubud area. Pickups outside Ubud add an IDR 120,000 surcharge. This is the only tour where Ubud hotel pickup is free.",
       },
       {
         id: "faq-ubud-cyc-3",
-        question: "What should I wear?",
-        answer: "We recommend comfortable, breathable clothing, closed-toe shoes (sneakers are fine), and sunglasses. Don't forget sunscreen!",
+        question: "Is this the same as Tegallalang or Kintamani downhill cycling?",
+        answer:
+          "No. We ride quiet Pejeng Subak ricefield and village paths — not the busy Tegallalang photo terraces and not a Kintamani volcano downhill shuttle tour. Ideal if you want culture and scenery without the big-bus crowd.",
       },
       {
         id: "faq-ubud-cyc-4",
-        question: "Is hotel pickup included?",
-        answer: "Yes, we provide complimentary pickup and drop-off at your hotel in the Ubud area on the cycling tour. Pickups outside Ubud incur an IDR 120,000 surcharge.",
+        question: "Is the cycling route difficult?",
+        answer:
+          "The route is mostly flat with gentle village and ricefield paths. It suits most fitness levels, including couples and families comfortable on a bike.",
       },
       {
         id: "faq-ubud-cyc-5",
-        question: "Can the itinerary change?",
-        answer: "The itinerary may sometimes change due to field conditions, weather, or village activities. We always adjust to ensure you have the best and safest experience.",
+        question: "Is lunch included?",
+        answer:
+          "Yes — lunch at a local village restaurant is included in the tour price.",
       },
       {
         id: "faq-ubud-cyc-6",
+        question: "Can I combine cycling with a cooking class?",
+        answer:
+          "Yes. Many guests ride ricefields by day and join our evening Balinese cooking class in Pejeng. Ask WhatsApp for a same-day timeline.",
+      },
+      {
+        id: "faq-ubud-cyc-7",
+        question: "What should I wear?",
+        answer:
+          "Comfortable breathable clothing, closed-toe shoes (sneakers are fine), sunglasses, and sunscreen.",
+      },
+      {
+        id: "faq-ubud-cyc-8",
         question: "Do you provide insurance?",
         answer:
-          "Yes. We provide insurance for guests aged 6–65 years old on the Ubud Ricefield Cycling Tour.",
+          "Yes. We provide insurance for guests aged 6–65 on the Ubud Ricefield Cycling Tour.",
       },
     ],
     reviews: [],

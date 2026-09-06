@@ -107,7 +107,8 @@ export function quoteActivity(input: ActivityQuoteInput): ActivityQuote | null {
     }
   }
 
-  const billableAdults = Math.max(input.adults, id === 'rafting' ? 2 : 1)
+  // Bill the selected adult count (UI enforces rafting minimum of 2)
+  const billableAdults = Math.max(1, input.adults)
   const unitPrice = getUnitPrice(id, billableAdults)
   const childPrice = CHILD_PRICE_IDR[id] ?? 0
 

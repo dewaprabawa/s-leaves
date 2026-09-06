@@ -81,6 +81,15 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
           <span className="font-semibold text-brand-green">{invoice.guestName}</span>
         </div>
         <div className="flex justify-between gap-3 text-sm">
+          <span className="text-brand-green-light">Participants</span>
+          <span className="font-semibold text-brand-green text-right">
+            {invoice.adults} adult{invoice.adults === 1 ? '' : 's'}
+            {invoice.children > 0
+              ? `, ${invoice.children} child${invoice.children === 1 ? '' : 'ren'}`
+              : ''}
+          </span>
+        </div>
+        <div className="flex justify-between gap-3 text-sm">
           <span className="text-brand-green-light">Activity</span>
           <span className="font-semibold text-brand-green text-right">{invoice.activity}</span>
         </div>
@@ -89,6 +98,16 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
           <span className="font-semibold text-brand-green">
             {invoice.date} · {invoice.time}
           </span>
+        </div>
+        <div className="pt-2 border-t border-brand-green/10 space-y-1.5">
+          {invoice.lineItems.map((item) => (
+            <div key={item.label + String(item.amount)} className="flex justify-between gap-3 text-sm">
+              <span className="text-brand-green-light text-left">{item.label}</span>
+              <span className="font-semibold text-brand-green whitespace-nowrap">
+                {item.amount < 0 ? '−' : ''}{formatIdr(Math.abs(item.amount))}
+              </span>
+            </div>
+          ))}
         </div>
         <div className="flex justify-between gap-3 text-base pt-2 border-t border-brand-green/10">
           <span className="font-bold text-brand-green">Total due</span>

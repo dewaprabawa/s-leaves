@@ -12,14 +12,14 @@ type Props = {
 }
 
 export const metadata: Metadata = {
-  title: "Book Bali Adventures",
+  title: "Book ATV, Rafting & Cycling",
   description:
-    "Book all Sekar Bali Activity adventures in one place — Single & Tandem ATV, whitewater rafting, canyon tubing, and Ubud ricefield cycling. Transparent IDR prices, WhatsApp checkout, free to inquire.",
+    "Book ATV, rafting, tubing & ricefield cycling near Ubud. Clear IDR prices, WhatsApp checkout, free to inquire.",
   alternates: {
     canonical: "/book",
   },
   openGraph: {
-    title: "Book Bali Adventures | Sekar Bali Activity",
+    title: "Book ATV, Rafting & Cycling | Sekar Bali Activity",
     description:
       "Choose ATV, rafting, canyon tubing, or ricefield cycling — then book via WhatsApp with your price included.",
     url: `${SITE_URL}/book`,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book Bali Adventures | Sekar Bali Activity",
+    title: "Book ATV, Rafting & Cycling | Sekar Bali Activity",
     description: "Checkout for ATV, rafting, tubing & cycling near Ubud. WhatsApp booking.",
     images: ["/images/adventures/og-cover.jpg"],
   },

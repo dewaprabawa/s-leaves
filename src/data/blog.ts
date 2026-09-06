@@ -11,9 +11,9 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'how-much-does-atv-cost-bali-ubud-2026',
-    title: 'How Much Does an ATV Cost in Bali (Ubud)? 2026 Prices & What’s Included',
+    title: 'ATV Cost Near Ubud (2026 Prices)',
     excerpt:
-      'ATV / quad bike prices near Ubud in 2026: Single from IDR 600,000, Tandem from IDR 859,000 at All New Bali Adventure — lunch, gear, insurance included. Pickup fees and combos explained.',
+      'ATV near Ubud from IDR 600K (single) / 859K (tandem). Lunch, gear, insurance included. Pickup fees and tubing combos explained.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
@@ -91,9 +91,9 @@ Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsap
   },
   {
     slug: 'is-ubud-cycling-tour-worth-it',
-    title: 'Is an Ubud Cycling Tour Worth It? Honest Pros, Cons & 2026 Prices',
+    title: 'Is an Ubud Cycling Tour Worth It?',
     excerpt:
-      'Is a ricefield cycling tour in Ubud worth booking? Compare Pejeng village rides vs Tegallalang crowds — IDR 475,000 with free Ubud pickup, lunch included, and what first-timers should know.',
+      'Ricefield cycling in Pejeng vs Tegallalang crowds — IDR 475K with free Ubud pickup and lunch. Honest pros, cons, and who should skip it.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/cycling/rice-field-bikes.jpg',
@@ -148,14 +148,14 @@ Morning/afternoon ricefield cycling + evening Balinese dinner cooking class is o
 
 If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 475,000 — especially with free pickup and lunch included. If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
 
-**Ready to decide?** Book [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) on WhatsApp or message +62 817 7572 3663 with your hotel and date.
+**Ready to decide?** Book [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) on WhatsApp, add an evening [Balinese cooking class](/tours/balinese-cooking-class), or open [Book](/book) with your hotel and date.
 `
   },
   {
     slug: 'private-atv-vs-mass-market-ubud',
-    title: 'Private ATV Near Ubud vs Mass-Market Quad Tours: What Changes for Guests',
+    title: 'Private vs Mass-Market ATV Near Ubud',
     excerpt:
-      'Private / small-group ATV near Ubud vs big-bus quad tours — how All New Bali Adventure rides, transparent IDR pricing, WhatsApp booking, and Pejeng basing change the guest experience.',
+      'Private / small-group ATV at All New Bali Adventure vs big-bus quads — clear IDR pricing, WhatsApp booking, and a Pejeng base near Ubud.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
@@ -203,7 +203,7 @@ Choose a big-group operator if you only want the lowest headline price and don�
 
 ## Next Step
 
-Compare packages on [prices 2026](/blog/bali-adventure-packages-prices-2026), then book [Bali ATV Adventure](/tours/bali-atv-adventure) or message WhatsApp — free to inquire.
+Compare packages on [prices 2026](/blog/bali-adventure-packages-prices-2026), then book [Bali ATV Adventure](/tours/bali-atv-adventure), pair with [ricefield cycling](/tours/ubud-ricefield-cycling-tour), or open [Book](/book) — free to inquire.
 `
   },
   {
@@ -319,8 +319,8 @@ Open [Bali ATV Adventure & River Tubing](/tours/bali-atv-adventure), choose **AT
   },
   {
     slug: 'how-to-book-bali-adventure-whatsapp',
-    title: 'How to Book a Bali Adventure on WhatsApp (Name, Age, Location, Price)',
-    excerpt: 'Step-by-step: what to send on WhatsApp when booking Sekar Bali Activity — name, age, adult or child, pickup location, activity, and price — so confirmation is fast.',
+    title: 'Book a Bali Adventure on WhatsApp',
+    excerpt: 'What to send on WhatsApp — name, age, adult/child, hotel, activity, and price — so Sekar Bali Activity can confirm fast.',
     publishedAt: '2026-08-30',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
@@ -360,7 +360,8 @@ On [sekarbaliactivity.com](/) tap **Book Now** or **Book This Adventure**. The p
 
 - WhatsApp: +62 817 7572 3663  
 - Email: sekarprivatebaliactivity@gmail.com  
-- Adventures: [/#adventures](/#adventures)
+- Start checkout: [Book](/book)
+- Popular trips: [ATV](/tours/bali-atv-adventure) · [Cycling](/tours/ubud-ricefield-cycling-tour) · [Cooking class](/tours/balinese-cooking-class)
 `
   },
   {
@@ -440,8 +441,8 @@ Ready to see this living heritage up close? Join us in Pejeng and cycle through 
   },
   {
     slug: '5-essential-balinese-spices',
-    title: "5 Essential Balinese Spices You Will Use in Our Cooking Class",
-    excerpt: "Balinese food is famous for its complex, explosive flavors. Discover the core spices that make up Base Genep, the foundational paste of Balinese cuisine.",
+    title: "5 Balinese Spices for Cooking Class",
+    excerpt: "Turmeric, galangal, lemongrass, candlenut, kencur — the Base Genep spices you pound in our Pejeng cooking class.",
     publishedAt: "2026-08-18",
     author: "Sekar Bali Activity",
     image: "https://images.unsplash.com/photo-1596649845347-f58c73c2ea6f?auto=format&fit=crop&w=1200&q=80",
@@ -476,13 +477,13 @@ This is perhaps the most unique flavor in Balinese cooking. Kencur is a tiny rhi
 
 ## Ready to Cook?
 
-Reading about these spices is one thing, but smelling them as you pound them together in a stone mortar is an experience you won't forget. In our [Balinese Cooking Class](/#adventures), our local chefs will guide you through the creation of 5 authentic dishes, all starting with these incredible raw ingredients.
+Reading about these spices is one thing, but smelling them as you pound them together in a stone mortar is an experience you won't forget. In our [Balinese Cooking Class](/tours/balinese-cooking-class), our local chefs will guide you through the creation of 5 authentic dishes, all starting with these incredible raw ingredients. Prefer a full culture day? Pair it with the [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) or [book both](/book) on WhatsApp.
     `
   },
   {
     slug: 'luwak-coffee-ethical-sourcing',
-    title: "The Truth About Luwak Coffee: How We Source Ethically",
-    excerpt: "Luwak coffee is the most expensive coffee in the world, but the industry has a dark side. Here is how you can ensure your coffee tasting experience in Bali is ethical and sustainable.",
+    title: "Ethical Luwak Coffee in Pejeng",
+    excerpt: "Cage-free vs commercial Luwak in Bali — how Umah Kuno wild-harvests beans in Pejeng and which red flags to avoid.",
     publishedAt: "2026-08-25",
     author: "Sekar Bali Activity",
     image: "https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=1200&q=80",
@@ -503,7 +504,7 @@ As responsible hosts, we believe that experiencing Bali's agricultural heritage 
 
 ## How Umah Kuno Does It Differently
 
-This is why our [Luwak Coffee Plantation Experience](/#adventures) takes place exclusively at **Umah Kuno**.
+This is why our [Luwak Coffee Plantation Experience](/tours/luwak-coffee-plantation) takes place exclusively at **Umah Kuno**.
 
 Umah Kuno is a traditional, family-run plantation that refuses to cage civets. Instead, they rely on wild, free-roaming civets that naturally visit their sprawling jungle property at night. The civets are free to roam, eat a varied, natural diet of fruits and insects, and only select the absolute ripest coffee cherries as a snack. 
 
@@ -516,6 +517,15 @@ During our experience, you will see exactly how these wild-sourced beans are pro
 ## Taste the Difference
 
 When you sit down on the wooden deck overlooking the jungle ravine with your tasting flight, you can enjoy your Kopi Luwak with a clear conscience. You are supporting ethical farming practices, protecting local wildlife, and tasting coffee exactly the way it was meant to be enjoyed.
+
+## Visit Umah Kuno on a Pejeng day
+
+Pair an ethical tasting with village adventures we run from Pejeng:
+
+- [Luwak Coffee Plantation](/tours/luwak-coffee-plantation) — cage-free tasting walkthrough
+- [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) — Subak lanes + lunch
+- [Balinese Cooking Class](/tours/balinese-cooking-class) — Base Genep dinner class
+- Or [book on WhatsApp](/book) with your hotel and preferred date
     `
   },
   {
@@ -554,7 +564,7 @@ If you arrive right when the gates open (usually around 7:00 AM or 8:00 AM), you
 
 Ubud has incredible world-class restaurants, but if you want to understand the soul of Balinese culture, you need to taste food cooked over a traditional wood fire. 
 
-Skip the crowded brunch spots for one day and join a [Traditional Balinese Cooking Class](/#adventures). You will learn how to grind spices with a stone mortar, cook authentic dishes, and share a meal with a local family in their home compound.
+Skip the crowded brunch spots for one day and join a [Traditional Balinese Cooking Class](/tours/balinese-cooking-class). You will learn how to grind spices with a stone mortar, cook authentic dishes, and share a meal with a local family in their home compound.
 
 ### 5. Explore the "Other" Rice Terraces
 
@@ -843,8 +853,8 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
   },
   {
     slug: "inside-balinese-cooking-class-pejeng",
-    title: "Inside Our Traditional Balinese Cooking Class in Pejeng: Market Walk, Base Genep & Family Feast",
-    excerpt: "Take a step-by-step look into our hands-on Balinese cooking class in Pejeng. From exploring the local morning market to flipping Dadar Gulung pandan crepes!",
+    title: "Inside Our Pejeng Cooking Class",
+    excerpt: "Market walk, Base Genep pounding, and a shared dinner — what happens in our hands-on Balinese cooking class in Pejeng.",
     publishedAt: "2026-08-12",
     author: "Sekar Bali Activity Team",
     image: "/images/cooking/stovetop-class.jpg",
@@ -936,8 +946,8 @@ While both locations use the UNESCO-recognized **Subak** cooperative irrigation 
   },
   {
     slug: "what-is-base-genep-balinese-spice-paste-guide",
-    title: "What is Base Genep? The Secret 15-Ingredient Spice Paste of Balinese Cooking",
-    excerpt: "Learn the origins, ingredients, and medicinal history of Base Genep—the foundational spice paste essential to authentic Balinese cooking classes and village feasts.",
+    title: "What Is Base Genep Spice Paste?",
+    excerpt: "Base Genep explained — 15-spice Balinese paste, why hand-pounding matters, and where to cook it in Pejeng.",
     publishedAt: "2026-08-19",
     author: "Sekar Bali Activity Team",
     image: "/images/cooking/stovetop-class.jpg",
@@ -963,7 +973,7 @@ Balinese cuisine categorizes spices by color and cosmic energy according to anci
 
 ### Why Mortar & Pestle Beats a Food Processor
 
-In our [Balinese Cooking Class](/#adventures), we teach guests why electric food processors are avoided by traditional cooks. High-speed blades shear the cell walls of fresh rhizomes and heat up the mixture, bittering the delicate volatile oils. 
+In our [Balinese Cooking Class](/tours/balinese-cooking-class), we teach guests why electric food processors are avoided by traditional cooks. High-speed blades shear the cell walls of fresh rhizomes and heat up the mixture, bittering the delicate volatile oils. 
 
 Hand-pounding with a stone mortar (*ulekan*) crushes the fibers gently, releasing deep, aromatic fragrance without overheating the paste.
 
@@ -973,7 +983,7 @@ Hand-pounding with a stone mortar (*ulekan*) crushes the fibers gently, releasin
 
 Nothing matches the experience of smelling Base Genep as it sizzles in coconut oil over an open flame in a traditional outdoor kitchen. 
 
-Book your seat at our [Traditional Balinese Dinner Cooking Class](/#adventures) in Pejeng, where you'll make Base Genep from scratch and cook a 5-course feast!
+Book your seat at our [Traditional Balinese Dinner Cooking Class](/tours/balinese-cooking-class) in Pejeng, where you'll make Base Genep from scratch and cook a 5-course feast. Add [ricefield cycling](/tours/ubud-ricefield-cycling-tour) earlier the same day, or open [Book](/book) to send dates on WhatsApp.
 `
   },
   {
@@ -1007,7 +1017,17 @@ Book your seat at our [Traditional Balinese Dinner Cooking Class](/#adventures) 
 
 1. **Meet Your Driver Past Customs**: After passing baggage claim and customs, walk past the currency exchange booths toward the designated **Driver Meeting Area**. Your pre-booked driver will be holding a clear sign with your name.
 2. **Flight Tracking Included**: When you book through [Sekar Bali Activity Transfers](/transfers), we track your flight number in real-time. If your flight is delayed 2 hours, your driver automatically adjusts arrival time without extra penalty fees.
-3. **Combine Airport Pickups with Tours**: Arriving early in the morning? Many guests combine their airport transfer with a stop at Tanah Lot or a peaceful evening [Balinese Cooking Class](/#adventures).
+3. **Combine Airport Pickups with Tours**: Arriving early in the morning? Many guests combine their airport transfer with a stop at Tanah Lot or a peaceful evening [Balinese Cooking Class](/tours/balinese-cooking-class).
+
+### After you land: plan your first Ubud adventures
+
+Once you settle in Ubud / Pejeng, most guests book:
+
+- [Bali ATV Adventure](/tours/bali-atv-adventure) at All New Bali Adventure (from IDR 600K)
+- [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) with free Ubud hotel pickup (IDR 475K)
+- [Balinese Cooking Class](/tours/balinese-cooking-class) for an evening dinner class (IDR 400K)
+
+Or open [Book](/book) and send the WhatsApp form — no upfront payment to inquire.
 
 ***
 
@@ -1055,8 +1075,8 @@ When cycling on narrow village trails during our [Ubud Ricefield Cycling Tour](/
   },
   {
     slug: "how-to-spot-ethical-luwak-coffee-in-bali",
-    title: "How to Spot Ethical Luwak Coffee in Bali: Cage-Free vs. Commercial Farms",
-    excerpt: "A local guide to finding authentic, wild-harvested Luwak coffee at Umah Kuno in Pejeng. Learn why cage-free sourcing protects civets and tastes vastly superior.",
+    title: "Spot Ethical Luwak Coffee in Bali",
+    excerpt: "Cage-free vs commercial Luwak farms near Ubud — wild harvest signs, tasting tips at Umah Kuno, and how to book a Pejeng visit.",
     publishedAt: "2026-08-27",
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=1200&q=80",
@@ -1091,7 +1111,7 @@ At **Umah Kuno**, wild-harvested beans are washed, solar-dried, and hand-roasted
 
 Enjoy a tasting flight of wild Luwak coffee and traditional Balinese herbal teas overlooking the Pejeng jungle ravine.
 
-Book your seat on our [Luwak Coffee Plantation Experience](/#adventures) today!
+Book the [Luwak Coffee Plantation](/tours/luwak-coffee-plantation) tasting, or build a Pejeng day with [ricefield cycling](/tours/ubud-ricefield-cycling-tour) and a [Balinese cooking class](/tours/balinese-cooking-class). Start on [Book](/book) if you already know your date.
 `
   },
   {
@@ -1469,9 +1489,9 @@ Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture 
   },
   {
     slug: 'cycling-cooking-class-ubud-full-day-itinerary',
-    title: 'Cycling & Cooking Class in Ubud: Full-Day Itinerary, Prices & How to Book (2026)',
+    title: 'Cycling + Cooking Class Day in Ubud',
     excerpt:
-      'Plan a cycling and Balinese cooking class day in Ubud — Pejeng rice paddy bike tour (IDR 475,000) plus evening hands-on cooking class (IDR 400,000). Full itinerary, inclusions, and WhatsApp booking.',
+      'Pejeng ricefield cycling (IDR 475K) plus evening cooking class (IDR 400K) — full-day timeline, inclusions, and WhatsApp booking.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/cycling/rice-field-bikes.jpg',

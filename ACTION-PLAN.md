@@ -11,10 +11,10 @@
 
 | # | Action | Evidence | Done when |
 |---|--------|----------|-----------|
-| 0.1 | From temple-dress, airport-transfer, luwak, ATV-guide, Pejeng-history: add **2–3 contextual links each** → `/tours/bali-atv-adventure`, `/tours/ubud-ricefield-cycling-tour`, `/tours/balinese-cooking-class`, and/or `/book` | GSC: tours ≈0 clicks; 15 near-orphan blogs | Each spoke has outbound money-page link; orphans drop |
-| 0.2 | Shorten titles to **≤60** + metas to **≤160** on: ATV-cost, private-vs-mass, cycling-worth-it, luwak-ethical, `/book` | Live title 87–94 / meta 183–198 | SERP preview no truncation |
+| 0.1 | From temple-dress, airport-transfer, luwak, ATV-guide, Pejeng-history: add **2–3 contextual links each** → `/tours/bali-atv-adventure`, `/tours/ubud-ricefield-cycling-tour`, `/tours/balinese-cooking-class`, and/or `/book` | GSC: tours ≈0 clicks; 15 near-orphan blogs | ✅ Shipped 2026-09-06 — airport, luwak×2, spices, Base Genep, WhatsApp-book, cycling-worth, private-ATV CTAs point at money URLs |
+| 0.2 | Shorten titles to **≤60** + metas to **≤160** on: ATV-cost, private-vs-mass, cycling-worth-it, luwak-ethical, `/book` | Live title 87–94 / meta 183–198 | ✅ Shipped 2026-09-06 — page titles 27–36 chars (≤60 with `\| Sekar Bali Activity`); book meta 110 chars |
 | 0.3 | Monitor GSC CTR on temple-dress + airport (rewrites already shipped 2026-09-05) | Prior 69+69 imp / 0 clk | 14-day CTR ≥2% or iterate copy |
-| 0.4 | Prefer single-hop redirect `http://sekarbaliactivity.com` → `https://www…` | 2-hop chain Confirmed | One 308/301 hop |
+| 0.4 | Prefer single-hop redirect `http://sekarbaliactivity.com` → `https://www…` | 2-hop chain Confirmed | Partial: `vercel.json` apex→www host redirect added; **still set Vercel domain “Redirect to www”** so HTTP apex is one hop |
 
 ---
 
@@ -80,10 +80,10 @@
 
 ## Suggested execution order
 
-- [ ] 0.1 Internal links spokes → money pages  
-- [ ] 0.2 Title/meta length fixes on flagged URLs  
+- [x] 0.1 Internal links spokes → money pages  
+- [x] 0.2 Title/meta length fixes on flagged URLs  
 - [ ] 0.3 CTR monitor temple-dress + airport  
-- [ ] 0.4 Single-hop www redirect  
+- [~] 0.4 Apex→www redirect (`vercel.json` + confirm Vercel domain setting)  
 - [ ] 1.1–1.3 Commercial hub deepening (ATV → cycling → cooking)  
 - [ ] 1.4 Dirt-bike decision  
 - [ ] 1.5 Brand/reviews  

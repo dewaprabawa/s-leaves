@@ -166,3 +166,10 @@ Each commercial query cluster gets **one** hub post that answers the question in
 - Competitor ATV pricing/pages: ubudatvbali.com, atvridebali.id, atvrideubud.com/kuber, baliquadbiking.com (2026)  
 - Cycling SERPs: Viator countryside / Kintamani downhill, cyclinginubud.com, Explorevia rice-terrace listings  
 - Internal: `ATV-CYCLING-KEYWORD-REPORT.md`, GSC export, `.agents/product-marketing.md`  
+
+
+---
+
+## Related: Dirt bike / mud bike / sport ATV
+
+See **`DIRT-MUD-BIKE-SEO-MARKETING.md`** for 2-wheel dirt bike vs 4-wheel muddy ATV query taxonomy, SERP copy, and KPIs. Dirt bike money page already has ~32 GSC impressions / 0 clicks — CTR and skill-clarity are the first levers.

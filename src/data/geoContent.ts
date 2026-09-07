@@ -402,7 +402,6 @@ export function buildPricingMd(): string {
     '- Free Ubud hotel pickup: Ubud Ricefield Cycling Tour only',
     '- Other activities: IDR 400,000 hotel pickup charge',
     '- Self-meet at All New Bali Adventure: no transport fee',
-    '- Self-meet at All New Bali Adventure: no transport fee',
     '',
     '## Booking',
     `- Method: WhatsApp via ${SITE_URL}/book`,

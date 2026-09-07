@@ -109,10 +109,34 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
             </div>
           ))}
         </div>
-        <div className="flex justify-between gap-3 text-base pt-2 border-t border-brand-green/10">
-          <span className="font-bold text-brand-green">Total due</span>
-          <span className="font-bold text-brand-green text-xl">{formatIdr(invoice.total)}</span>
-        </div>
+        {invoice.paymentMode === 'deposit' &&
+        (invoice.amountDue ?? invoice.total) < invoice.total ? (
+          <>
+            <div className="flex justify-between gap-3 text-sm pt-2 border-t border-brand-green/10">
+              <span className="text-brand-green-light">Package total</span>
+              <span className="font-semibold text-brand-green">{formatIdr(invoice.total)}</span>
+            </div>
+            <div className="flex justify-between gap-3 text-base">
+              <span className="font-bold text-brand-green">
+                Deposit due
+                {invoice.depositPercent ? ` (${invoice.depositPercent}%)` : ''}
+              </span>
+              <span className="font-bold text-brand-green text-xl">
+                {formatIdr(invoice.amountDue ?? invoice.total)}
+              </span>
+            </div>
+          </>
+        ) : (
+          <div className="flex justify-between gap-3 text-base pt-2 border-t border-brand-green/10">
+            <span className="font-bold text-brand-green">Total due</span>
+            <span className="font-bold text-brand-green text-xl">
+              {formatIdr(invoice.amountDue ?? invoice.total)}
+            </span>
+          </div>
+        )}
+        {invoice.createdBy ? (
+          <p className="text-xs text-brand-green-light pt-1">Prepared by {invoice.createdBy}</p>
+        ) : null}
       </div>
 
       <div className="rounded-2xl border border-accent-gold/30 bg-accent-gold/5 p-4 md:p-5 mb-5">

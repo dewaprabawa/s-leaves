@@ -21,22 +21,23 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
 
 /** Tier 1 = 1 unit/pax, tier 2 = 2, tier 3 = 3+ */
 export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
-  'single-atv': [600_000, 575_000, 550_000],
-  'tandem-atv': [859_000, 820_000, 790_000], // per tandem bike
-  'rafting': [400_000, 375_000, 350_000],
+  'single-atv': [750_000, 725_000, 700_000],
+  'tandem-atv': [1_100_000, 1_060_000, 1_030_000], // per tandem bike
+  'rafting': [500_000, 475_000, 450_000],
   'canyon-tubing': [359_000, 335_000, 320_000],
-  'cycling': [475_000, 450_000, 425_000],
+  'cycling': [750_000, 725_000, 700_000],
 }
 
 export const CHILD_PRICE_IDR: Partial<Record<ActivityId, number>> = {
-  'single-atv': 550_000,
-  'rafting': 350_000,
+  'single-atv': 700_000,
+  'rafting': 450_000,
   'canyon-tubing': 300_000,
 }
 
-export const PICKUP_FEE_IDR = 50_000
-export const DROP_SAME_HOTEL_FEE_IDR = 50_000
-export const OUT_OF_UBUD_EXTRA_IDR = 50_000 // added on top of pickup fees
+/** Flat hotel pickup & drop-off surcharge (optional; free on Ubud cycling only) */
+export const PICKUP_FEE_IDR = 400_000
+export const DROP_SAME_HOTEL_FEE_IDR = 0
+export const OUT_OF_UBUD_EXTRA_IDR = 0 // included in flat pickup charge
 
 /** Typical Grab / GoCar one-way Ubud ↔ arena (for comparison UI) */
 export const GRAB_GOCAR_ESTIMATE = {

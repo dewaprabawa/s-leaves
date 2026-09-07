@@ -5,19 +5,19 @@ import { ChevronDown } from 'lucide-react';
 const faqs = [
   {
     question: "How much does an ATV cost in Bali near Ubud?",
-    answer: "In 2026, Single ATV with Sekar Bali Activity starts at IDR 600,000 (IDR 575,000 for 2 riders, IDR 550,000 for 3+). Tandem ATV starts at IDR 859,000 for two people. Prices include lunch, boot shoes, helmet, insurance for ages 6–65, and briefing at All New Bali Adventure. Optional hotel pickup is IDR 50,000 one-way or IDR 100,000 round trip."
+    answer: "In 2026, Single ATV with Sekar Bali Activity starts at IDR 750,000 (IDR 725,000 for 2 riders, IDR 700,000 for 3+). Tandem ATV starts at IDR 1,100,000 for two people. Prices include lunch, boot shoes, helmet, insurance for ages 6–65, and briefing at All New Bali Adventure. Optional hotel pickup is IDR 400,000."
   },
   {
     question: "Is an Ubud cycling tour worth it?",
-    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 475,000 with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance for ages 6–65. Prefer adrenaline? Choose ATV or rafting instead."
+    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 750,000 with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance for ages 6–65. Prefer adrenaline? Choose ATV or rafting instead."
   },
   {
     question: "What adventure activities do you offer?",
-    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Ubud Ricefield Cycling Tour (IDR 475,000 per person with lunch included). ATV trips can also be combined with river tubing on the Wos River."
+    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Ubud Ricefield Cycling Tour (IDR 750,000 per person with lunch included). ATV trips can also be combined with river tubing on the Wos River."
   },
   {
     question: "Is hotel pickup included in the price?",
-    answer: "Free hotel pickup and drop-off within the Ubud area is included only on our Ubud Ricefield Cycling Tour. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 50,000 one-way or IDR 100,000 round trip (pickup + return to same hotel). Out of Ubud adds IDR 50,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
+    answer: "Free hotel pickup and drop-off within the Ubud area is included only on our Ubud Ricefield Cycling Tour. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 400,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
   },
   {
     question: "Do I need experience to ride an ATV, go rafting, or cycle?",
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: "What is included in the ATV adventure?",
-    answer: "Your ATV package includes a guided ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance for ages 6–65, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 120,000. Combine with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
+    answer: "Your ATV package includes a guided ride at All New Bali Adventure, boot shoes and helmet, a simple menu lunch, insurance for ages 6–65, and a full safety briefing with an English-speaking guide. Hotel pickup is available for an additional IDR 400,000. Combine with river tubing on the Wos River — race the ATV track, then float the river for a full day of sensation, excitement, and joy."
   },
   {
     question: "Do you provide insurance?",
@@ -45,15 +45,15 @@ const faqs = [
   },
   {
     question: "Which tour has free Ubud hotel pickup?",
-    answer: "Only the Ubud Ricefield Cycling Tour (IDR 475,000) includes free hotel pickup and drop-off within Ubud, plus lunch. ATV, rafting, and canyon tubing charge IDR 120,000 for pickup outside Ubud."
+    answer: "Only the Ubud Ricefield Cycling Tour (IDR 750,000) includes free hotel pickup and drop-off within Ubud, plus lunch. ATV, rafting, and canyon tubing charge IDR 400,000 for hotel pickup."
   },
   {
     question: "What is the difference between rafting and canyon tubing?",
-    answer: "Whitewater rafting (IDR 400,000) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
+    answer: "Whitewater rafting (IDR 500,000) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
   },
   {
     question: "How much does the Ubud ricefield cycling tour cost?",
-    answer: "IDR 475,000 per person for the full-day Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
+    answer: "IDR 750,000 per person for the full-day Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
   },
   {
     question: "Can AI assistants find your tours?",

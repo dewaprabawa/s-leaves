@@ -37,14 +37,14 @@
 
 ### Market price anchors (2026 SERP research)
 
-Competitors advertise Single roughly **IDR 400K–800K** and Tandem **IDR 500K–1.05M** (promo strikethroughs common). Our published tiers (Single from **600K**, Tandem **859K** with lunch/gear/insurance) sit mid-market — marketing must stress **inclusions + private/small-group**, not “cheapest.”
+Competitors advertise Single roughly **IDR 400K–800K** and Tandem **IDR 500K–1.05M** (promo strikethroughs common). Our published tiers (Single from **750K**, Tandem **1.1M** with lunch/gear/insurance) sit mid-market — marketing must stress **inclusions + private/small-group**, not “cheapest.”
 
 ### Primary keyword map → URLs
 
 | Primary query | Supporting queries | Target URL | SERP title (≤60 w/ brand) | Meta (~155) |
 |---------------|--------------------|------------|---------------------------|-------------|
 | ATV ride Ubud | Bali ATV tour, quad bike Ubud | `/tours/bali-atv-adventure` | ATV Ride Ubud from IDR 600K | Jungle ATV at All New Bali Adventure near Ubud. Lunch, gear, insurance. Optional Wos tubing. WhatsApp booking. |
-| ATV Ubud price 2026 | how much ATV Bali | `/blog/how-much-does-atv-cost-bali-ubud-2026` | ATV Cost Near Ubud (2026) | Single from 600K / tandem 859K — lunch, gear, insurance. Pickup fees & tubing combos explained. |
+| ATV Ubud price 2026 | how much ATV Bali | `/blog/how-much-does-atv-cost-bali-ubud-2026` | ATV Cost Near Ubud (2026) | Single from 750K / tandem 1.1M — lunch, gear, insurance. Pickup fees & tubing combos explained. |
 | private ATV Ubud | small group ATV Ubud | `/blog/private-atv-vs-mass-market-ubud` | Private vs Mass-Market ATV | What changes vs big-bus quads — arena, pricing clarity, WhatsApp booking. |
 | ATV tubing combo | ATV rafting Ubud | `/blog/atv-river-tubing-wos-river-bali` | ATV + Wos River Tubing | Land-then-water day near Ubud — how the combo works and who it suits. |
 | All New Bali Adventure | ATV arena Pejeng | `/blog/bali-atv-all-new-bali-adventure-location-guide` | All New Bali Adventure ATV | Arena location, directions, what to expect before your ride. |
@@ -69,10 +69,10 @@ Competitors advertise Single roughly **IDR 400K–800K** and Tandem **IDR 500K�
 
 | Primary query | Supporting | Target URL | SERP title | Meta |
 |---------------|------------|------------|------------|------|
-| rice paddy cycling Ubud | Ubud ricefield cycling tour | `/tours/ubud-ricefield-cycling-tour` | Rice Paddy Cycling Ubud \| Pejeng | Quiet Pejeng Subak lanes — lunch + free Ubud hotel pickup from IDR 475K. Book WhatsApp. |
+| rice paddy cycling Ubud | Ubud ricefield cycling tour | `/tours/ubud-ricefield-cycling-tour` | Rice Paddy Cycling Ubud \| Pejeng | Quiet Pejeng Subak lanes — lunch + free Ubud hotel pickup from IDR 750K. Book WhatsApp. |
 | is Ubud cycling worth it | ricefield tour reviews | `/blog/is-ubud-cycling-tour-worth-it` | Is Ubud Cycling Worth It? | Pejeng vs Tegallalang — honest pros/cons, price, who should skip. |
 | Pejeng vs Tegallalang cycling | quiet rice terraces | `/blog/pejeng-rice-terrace-cycling-vs-tegallalang` | Pejeng vs Tegallalang Cycling | Crowd vs village Subak paths — which rice-field day fits you. |
-| Ubud cycling itinerary 2026 | what included lunch pickup | `/blog/ubud-ricefield-cycling-tour-guide-2026` | Ubud Cycling Tour Guide 2026 | Full itinerary, IDR 475K inclusions, free pickup rules. |
+| Ubud cycling itinerary 2026 | what included lunch pickup | `/blog/ubud-ricefield-cycling-tour-guide-2026` | Ubud Cycling Tour Guide 2026 | Full itinerary, IDR 750K inclusions, free pickup rules. |
 | cycling cooking class Ubud | full day Ubud culture | `/blog/cycling-cooking-class-ubud-full-day-itinerary` | Cycling + Cooking Day Ubud | Ricefield ride + evening class — timeline & WhatsApp booking. |
 
 ---
@@ -112,7 +112,7 @@ Each commercial query cluster gets **one** hub post that answers the question in
 
 ### Cycling — ads / WhatsApp / social hooks
 1. **Rice paddy cycling in Pejeng** — quieter than Tegallalang photo strips.  
-2. **IDR 475K** with **lunch + free Ubud hotel pickup**.  
+2. **IDR 750K** with **lunch + free Ubud hotel pickup**.  
 3. Flat village / Subak paths — couples, families, culture travelers.  
 4. Add evening **Balinese cooking class** for a full culture day.
 

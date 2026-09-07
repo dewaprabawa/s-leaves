@@ -65,11 +65,11 @@ export const TOURS: Tour[] = [
     slug: "bali-atv-adventure",
     category: "Adventure",
     duration: "2–4 Hours",
-    basePrice: 600000,
-    childPrice: 550000,
-    seoTitle: "ATV Ride Ubud from IDR 600K",
+    basePrice: 750000,
+    childPrice: 700000,
+    seoTitle: "ATV Ride Ubud from IDR 750K",
     seoDescription:
-      "ATV ride Ubud at All New Bali Adventure — single from IDR 600K, tandem 859K. Lunch, gear, insurance. Optional Wos tubing. WhatsApp booking.",
+      "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Optional Wos tubing. WhatsApp booking.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV jungle adventure ride through tropical rainforest trails",
@@ -85,7 +85,7 @@ export const TOURS: Tour[] = [
       },
     ],
     shortDescription:
-      "Private muddy sport ATV ride near Ubud at All New Bali Adventure — beginner-friendly Bali quad bike through jungle mud tracks, river crossings, and scenic trails. All-inclusive: lunch, helmet, boot shoes & insurance. Add Wos River tubing or rafting. From IDR 600K.",
+      "Private muddy sport ATV ride near Ubud at All New Bali Adventure — beginner-friendly Bali quad bike through jungle mud tracks, river crossings, and scenic trails. All-inclusive: lunch, helmet, boot shoes & insurance. Add Wos River tubing or rafting. From IDR 750K.",
     fullDescription: `**Looking for a Bali Quad Bike / ATV Ride Near Ubud?**
 
 If you want an adrenaline-packed day beyond the usual tourist trail, our Bali ATV Quad Bike Adventure delivers a complete private ATV ride through jungle mud tracks, muddy trails, and river crossings. Every ride is designed for sensation, excitement, and joy — whether you go solo (single ATV) or share a tandem ATV with a partner. Beginner-friendly with a full safety briefing.
@@ -115,7 +115,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       "Safety briefing and trail guide",
     ],
     notIncluded: [
-      "Hotel pickup & drop-off (IDR 120,000 surcharge — optional)",
+      "Hotel pickup & drop-off (IDR 400,000 surcharge — optional)",
       "River tubing combo (optional — ask when booking)",
       "Personal expenses",
       "Gratuities",
@@ -158,7 +158,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       },
       {
         name: "Tandem ATV Ride",
-        priceDiff: 209000,
+        priceDiff: 350000,
         description: "2 pax · share the adventure",
       },
       {
@@ -173,7 +173,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-1",
         question: "How much does an ATV ride near Ubud cost in 2026?",
         answer:
-          "Single ATV starts from IDR 600,000 per person and tandem from IDR 859,000 for two sharing one bike. Packages include lunch, helmet, boot shoes, insurance (ages 6–65), and a safety briefing at All New Bali Adventure. Hotel pickup is optional at IDR 120,000.",
+          "Single ATV starts from IDR 750,000 per person and tandem from IDR 1,100,000 for two sharing one bike. Packages include lunch, helmet, boot shoes, insurance (ages 6–65), and a safety briefing at All New Bali Adventure. Hotel pickup is optional at IDR 400,000.",
       },
       {
         id: "faq-atv-2",
@@ -226,8 +226,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     slug: "whitewater-rafting",
     category: "Adventure",
     duration: "3 Hours",
-    basePrice: 400000,
-    childPrice: 350000,
+    basePrice: 500000,
+    childPrice: 450000,
     heroImage: {
       url: "/images/adventures/rafting.jpg",
       alt: "Whitewater rafting through a Bali jungle river canyon",
@@ -270,7 +270,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
       "Insurance for ages 6–65",
     ],
     notIncluded: [
-      "Hotel pickup & drop-off (IDR 120,000 surcharge — optional)",
+      "Hotel pickup & drop-off (IDR 400,000 surcharge — optional)",
       "Personal expenses",
       "Gratuities",
     ],
@@ -315,7 +315,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         id: "faq-raft-3",
         question: "Is hotel pickup included?",
         answer:
-          "Hotel pickup is available for an additional IDR 120,000. Free Ubud pickup applies to the cycling tour only.",
+          "Hotel pickup is available for an additional IDR 400,000. Free Ubud pickup applies to the cycling tour only.",
       },
       {
         id: "faq-raft-4",
@@ -375,7 +375,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       "Insurance for ages 6–65",
     ],
     notIncluded: [
-      "Hotel pickup & drop-off (IDR 120,000 surcharge — optional)",
+      "Hotel pickup & drop-off (IDR 400,000 surcharge — optional)",
       "Personal expenses",
       "Gratuities",
     ],
@@ -426,7 +426,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         id: "faq-tube-4",
         question: "Is hotel pickup included?",
         answer:
-          "Hotel pickup is available for an additional IDR 120,000. Free Ubud pickup applies to the cycling tour only.",
+          "Hotel pickup is available for an additional IDR 400,000. Free Ubud pickup applies to the cycling tour only.",
       },
       {
         id: "faq-tube-5",
@@ -443,10 +443,10 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     slug: "ubud-ricefield-cycling-tour",
     category: "Activity",
     duration: "Full Day",
-    basePrice: 475000,
+    basePrice: 750000,
     seoTitle: "Rice Paddy Cycling Ubud | Pejeng",
     seoDescription:
-      "Rice paddy cycling in Pejeng near Ubud — quiet Subak lanes, lunch included, free Ubud hotel pickup from IDR 475K. Book on WhatsApp.",
+      "Rice paddy cycling in Pejeng near Ubud — quiet Subak lanes, lunch included, free Ubud hotel pickup from IDR 750K. Book on WhatsApp.",
     heroImage: {
       url: "/images/cycling/rice-field-bikes.jpg",
       alt: "Rice paddy cycling tour through Pejeng village terraces near Ubud",
@@ -482,7 +482,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 475K with free Ubud hotel pickup. Pair with an evening Balinese cooking class for a full cultural day.",
+    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an evening Balinese cooking class for a full cultural day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
@@ -575,13 +575,13 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-1",
         question: "How much is the Ubud rice paddy cycling tour?",
         answer:
-          "IDR 475,000 per person in 2026. That includes the guided Pejeng village / ricefield ride, bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
+          "IDR 750,000 per person in 2026. That includes the guided Pejeng village / ricefield ride, bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
       },
       {
         id: "faq-ubud-cyc-2",
         question: "Is hotel pickup included for the cycling tour?",
         answer:
-          "Yes — complimentary pickup and drop-off for hotels in the Ubud area. Pickups outside Ubud add an IDR 120,000 surcharge. This is the only tour where Ubud hotel pickup is free.",
+          "Yes — complimentary pickup and drop-off for hotels in the Ubud area. Pickups outside Ubud add an IDR 400,000 surcharge. This is the only tour where Ubud hotel pickup is free.",
       },
       {
         id: "faq-ubud-cyc-3",
@@ -729,8 +729,8 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     slug: "balinese-cooking-class",
     category: "Culture",
     duration: "3 Hours",
-    basePrice: 400000,
-    childPrice: 350000,
+    basePrice: 500000,
+    childPrice: 450000,
     seoTitle: "Balinese Cooking Class in Pejeng",
     seoDescription:
       "Hands-on Balinese cooking class near Ubud — Base Genep, 5 dishes, dinner from IDR 400K. Pair with rice-paddy cycling. Book WhatsApp.",

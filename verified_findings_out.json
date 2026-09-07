@@ -1,0 +1,77 @@
+{
+  "findings": [
+    {
+      "id": "gsc-cycling-invisible",
+      "area": "GSC",
+      "severity": "critical",
+      "confidence": "confirmed",
+      "finding": "Cycling money page nearly zero Search clicks",
+      "evidence": "GSC Pages: ubud-ricefield-cycling-tour 2 impressions, 0 clicks, position 19.5",
+      "fix": "Internal links + CTR + mid-tail content; GSC inspect canonical",
+      "sources": []
+    },
+    {
+      "id": "legacy-pejeng-slug",
+      "area": "Technical",
+      "severity": "warning",
+      "confidence": "confirmed",
+      "finding": "Legacy pejeng-cycling-tour still out-impresses canonical",
+      "evidence": "7 imp pos 7.86; 308 redirect to ricefield URL confirmed",
+      "fix": "Keep 308; request indexing on canonical",
+      "sources": []
+    },
+    {
+      "id": "combo-not-featured",
+      "area": "Conversion IA",
+      "severity": "warning",
+      "confidence": "confirmed",
+      "finding": "Cycling+cooking combo not in featured book combos",
+      "evidence": "FEATURED_COMBOS adventure-only; book copy Mix ATV canyon tubing rafting; cycling excluded from mix",
+      "fix": "Add culture combo card + cooking book section",
+      "sources": []
+    },
+    {
+      "id": "pejeng-vs-no-h2",
+      "area": "Content",
+      "severity": "warning",
+      "confidence": "confirmed",
+      "finding": "Pejeng vs Tegallalang post has no H2s and thin word count",
+      "evidence": "h2_count=0; word_count_main=402; GSC 9/0",
+      "fix": "Add H2 hierarchy and expand with operator facts",
+      "sources": []
+    },
+    {
+      "id": "youtube-placeholder",
+      "area": "Trust",
+      "severity": "warning",
+      "confidence": "confirmed",
+      "finding": "Rickroll YouTube placeholder IDs in tour data",
+      "evidence": "tours.ts youtubeVideoId dQw4w9WgXcQ on cycling cooking luwak",
+      "fix": "Remove or replace with real video IDs",
+      "sources": []
+    },
+    {
+      "id": "geo-artifacts-pass",
+      "area": "GEO",
+      "severity": "pass",
+      "confidence": "confirmed",
+      "finding": "llms.txt and AI crawlers strong for cycling/combo",
+      "evidence": "llms_txt_checker 100/100; robots allow GPTBot ClaudeBot PerplexityBot Google-Extended; pricing.md lists cycling+cooking",
+      "fix": "Keep synced with live prices",
+      "sources": []
+    },
+    {
+      "id": "schema-touristtrip-pass",
+      "area": "Schema",
+      "severity": "pass",
+      "confidence": "confirmed",
+      "finding": "TouristTrip Offer present on cycling page",
+      "evidence": "JSON-LD TouristTrip offers.price 475000 IDR with itinerary",
+      "fix": "Do not add FAQPage",
+      "sources": []
+    }
+  ],
+  "dropped": [],
+  "raw_count": 7,
+  "verified_count": 7
+}

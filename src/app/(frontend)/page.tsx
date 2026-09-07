@@ -9,8 +9,12 @@ import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from '@/li
 import PromoPrice from '@/components/PromoPrice'
 import { getListPrice, getPromoListPrice, formatTierPriceTable } from '@/lib/pricing'
 import {
+  buildCyclingCookingComboWhatsAppUrl,
+  getCyclingCookingCombo,
+} from '@/data/cultureSales'
+import {
   ArrowRight, MapPin, Users, Check, Clock3, Shield,
-  Star, Waves,
+  Star, Waves, MessageCircle,
   Bike, Compass, Zap, type LucideIcon
 } from 'lucide-react'
 import { KnowBeforeCards } from '@/components/KnowBeforeCards'
@@ -495,7 +499,7 @@ export default function Home() {
               Combine your adventures
             </h2>
             <p className="mt-4 text-brand-green-light max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-              Book ATV + tubing, tubing + rafting, or stack all three in one day. Same-day combos save 10–12% versus booking separately.
+              Book ATV + tubing, tubing + rafting, or stack all three in one day. Same-day combos save 10–12% versus booking separately. Culture travelers: cycling + cooking below.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
@@ -538,6 +542,62 @@ export default function Home() {
               )
             })}
           </div>
+
+          {(() => {
+            const cultureCombo = getCyclingCookingCombo()
+            return (
+              <article
+                className={`mt-8 rounded-3xl bg-white border border-accent-gold/30 overflow-hidden shadow-sm ${isVisible("combos") ? "animate-fade-in-up" : ""}`}
+              >
+                <div className="p-6 md:p-8 flex flex-col md:flex-row md:items-end gap-6">
+                  <div className="flex-1 space-y-3">
+                    <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark">
+                      {cultureCombo.tagline}
+                    </p>
+                    <h3 className="font-display text-2xl md:text-3xl font-bold text-brand-green uppercase">
+                      {cultureCombo.name}
+                    </h3>
+                    <p className="text-sm text-brand-green-light leading-relaxed max-w-2xl">
+                      {cultureCombo.description}
+                    </p>
+                    <ul className="space-y-1.5 pt-1">
+                      {cultureCombo.timeline.map((line) => (
+                        <li key={line} className="flex items-start gap-2 text-sm text-brand-green">
+                          <Check className="w-4 h-4 text-accent-gold-dark shrink-0 mt-0.5" />
+                          <span>{line}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="shrink-0 space-y-3 md:text-right">
+                    <div>
+                      <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">From (both)</p>
+                      <p className="text-2xl font-bold text-brand-green">
+                        IDR {cultureCombo.totalFromIdr.toLocaleString("id-ID")}
+                      </p>
+                    </div>
+                    <div className="flex flex-wrap md:justify-end gap-2">
+                      <a
+                        href={buildCyclingCookingComboWhatsAppUrl()}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 rounded-full bg-brand-green text-sand px-5 py-3 text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                      >
+                        <MessageCircle className="w-4 h-4" />
+                        Book culture day
+                      </a>
+                      <Link
+                        href="/book?activity=combo-cycling-cooking"
+                        className="inline-flex items-center gap-1 rounded-full border border-brand-green/20 px-5 py-3 text-sm font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
+                      >
+                        Sales page <ArrowRight className="w-4 h-4" />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            )
+          })()}
         </div>
       </section>
 

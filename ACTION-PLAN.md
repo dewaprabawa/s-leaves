@@ -21,8 +21,8 @@
 
 | ID | Action | Impact | Effort |
 |----|--------|--------|--------|
-| 1.1 | Add **Cycling + Cooking Class** card to `/book` featured combos (and homepage culture strip) with IDR 475K + 400K, timeline, WhatsApp prefill for both | Closes product gap vs ubudcyclingtour / ByFood package SERPs | M |
-| 1.2 | Add **Balinese Cooking Class** as a primary section on `/book` (parity with cycling) | Cooking is only footer-linked today | S |
+| 1.1 | Add **Cycling + Cooking Class** card to `/book` featured combos (and homepage culture strip) with IDR cycling + cooking totals, timeline, WhatsApp prefill for both | Closes product gap vs ubudcyclingtour / ByFood package SERPs | M | ✅ Done 2026-09-07 |
+| 1.2 | Add **Balinese Cooking Class** as a primary section on `/book` (parity with cycling) | Cooking is only footer-linked today | S | ✅ Done 2026-09-07 |
 | 1.3 | Rebuild **Pejeng vs Tegallalang** with H2/H3s + comparison table + lunch/pickup facts; expand to ~900–1,200 words | Best cycling foothold (9 imp @ ~9.6) is structurally weak for SEO/GEO | M |
 | 1.4 | Expand combo itinerary post: fixed sample total (or clear “from IDR X when booked together”), seasonal harvest note, hotel→kitchen logistics after free cycling drop-off | Competitor package pages are deeper; agents need parseable totals | M |
 | 1.5 | Homepage: add 1 contextual link to `/blog/ubud-ricefield-cycling-tour-guide-2026` near cycling card | Guide currently **0** homepage inlinks | S |
@@ -77,8 +77,8 @@
 
 ## Priority order (execute)
 
-1. 0.2 placeholder YouTube cleanup  
-2. 1.1–1.2 book/homepage culture combo + cooking section  
+1. ~~0.2 placeholder YouTube cleanup~~ (still open — see 0.2)
+2. ~~1.1–1.2 book/homepage culture combo + cooking section~~ ✅
 3. 1.3 Pejeng vs Tegallalang restructure  
 4. 1.4 combo blog deepen + 0.1 GSC consolidation  
 5. 2.2 reviews → E-E-A-T  

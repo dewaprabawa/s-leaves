@@ -1,11 +1,14 @@
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from '@/lib/contact'
 import { formatIdr } from '@/lib/whatsapp'
 import { formatBankTransferBlock, PAYMENT_BANK } from '@/lib/payment'
+import type { TransferOption } from '@/lib/adminInvoiceCatalog'
 
 export type InvoiceLineItem = {
   label: string
   amount: number
 }
+
+export type InvoicePaymentMode = 'full' | 'deposit'
 
 export type InvoiceDraft = {
   invoiceNumber: string
@@ -23,7 +26,16 @@ export type InvoiceDraft = {
   location: string
   notes?: string
   lineItems: InvoiceLineItem[]
+  /** Full package / booking total before deposit split */
   total: number
+  /** Staff member who created this invoice */
+  createdBy?: string
+  paymentMode?: InvoicePaymentMode
+  /** Amount guest should transfer now (deposit or full) */
+  amountDue?: number
+  depositPercent?: number
+  transferOption?: TransferOption
+  guestWhatsApp?: string
 }
 
 export function createInvoiceNumber(date = new Date()): string {
@@ -164,11 +176,39 @@ export async function downloadInvoicePdf(invoice: InvoiceDraft): Promise<void> {
   y += 8
   doc.setFont('helvetica', 'bold')
   doc.setFontSize(12)
-  doc.text('Total due', margin, y)
-  doc.text(formatPdfAmount(invoice.total), 160, y)
+  const amountDue = invoice.amountDue ?? invoice.total
+  const isDeposit = invoice.paymentMode === 'deposit' && amountDue < invoice.total
+  if (isDeposit) {
+    doc.setFont('helvetica', 'normal')
+    doc.setFontSize(10)
+    doc.text('Package total', margin, y)
+    doc.text(formatPdfAmount(invoice.total), 160, y)
+    y += 6
+    doc.setFont('helvetica', 'bold')
+    doc.setFontSize(12)
+    doc.text(
+      `Deposit due now${invoice.depositPercent ? ` (${invoice.depositPercent}%)` : ''}`,
+      margin,
+      y,
+    )
+    doc.text(formatPdfAmount(amountDue), 160, y)
+  } else {
+    doc.text('Total due', margin, y)
+    doc.text(formatPdfAmount(amountDue), 160, y)
+  }
+
+  if (invoice.createdBy) {
+    y += 7
+    doc.setFont('helvetica', 'normal')
+    doc.setFontSize(9)
+    doc.setTextColor(90, 90, 90)
+    doc.text(`Prepared by: ${invoice.createdBy}`, margin, y)
+    doc.setTextColor(40, 40, 40)
+  }
 
   y += 14
   doc.setFontSize(11)
+  doc.setFont('helvetica', 'bold')
   doc.text('Payment details (Seabank transfer)', margin, y)
   y += 7
   doc.setFont('helvetica', 'normal')
@@ -190,8 +230,14 @@ export async function downloadInvoicePdf(invoice: InvoiceDraft): Promise<void> {
   doc.save(`${invoice.invoiceNumber}.pdf`)
 }
 
+function amountDueNow(invoice: InvoiceDraft): number {
+  return invoice.amountDue ?? invoice.total
+}
+
 /** WhatsApp message: guest agrees and sends invoice details to the business number */
 export function buildInvoiceWhatsAppMessage(invoice: InvoiceDraft): string {
+  const due = amountDueNow(invoice)
+  const isDeposit = invoice.paymentMode === 'deposit' && due < invoice.total
   const lines = [
     'Hello Sekar Bali Activity! I agree to this booking and am sending my invoice.',
     '',
@@ -210,7 +256,16 @@ export function buildInvoiceWhatsAppMessage(invoice: InvoiceDraft): string {
   lines.push(`*Date:* ${invoice.date}`)
   lines.push(`*Time:* ${invoice.time}`)
   lines.push(`*Location / pickup:* ${invoice.location}`)
-  lines.push(`*Total:* ${formatIdr(invoice.total)}`)
+  if (invoice.transferOption && invoice.transferOption !== 'none') {
+    lines.push(`*Transfer:* ${invoice.transferOption}`)
+  }
+  lines.push(`*Package total:* ${formatIdr(invoice.total)}`)
+  lines.push(
+    isDeposit
+      ? `*Deposit due now${invoice.depositPercent ? ` (${invoice.depositPercent}%)` : ''}:* ${formatIdr(due)}`
+      : `*Amount due:* ${formatIdr(due)}`,
+  )
+  if (invoice.createdBy) lines.push(`*Prepared by:* ${invoice.createdBy}`)
   lines.push('')
   lines.push('*Transfer to:*')
   lines.push(formatBankTransferBlock())
@@ -225,8 +280,52 @@ export function buildInvoiceWhatsAppMessage(invoice: InvoiceDraft): string {
   return lines.join('\n')
 }
 
+/** Staff → guest WhatsApp with shareable invoice link */
+export function buildStaffToGuestInvoiceMessage(
+  invoice: InvoiceDraft,
+  shareUrl: string,
+): string {
+  const due = amountDueNow(invoice)
+  const isDeposit = invoice.paymentMode === 'deposit' && due < invoice.total
+  const lines = [
+    `Hello ${invoice.guestName}! Here is your Sekar Bali Activity invoice.`,
+    '',
+    `*Invoice:* ${invoice.invoiceNumber}`,
+    `*Activity:* ${invoice.activity}`,
+    `*Date:* ${invoice.date} · ${invoice.time}`,
+    `*Location:* ${invoice.location}`,
+    `*Package total:* ${formatIdr(invoice.total)}`,
+    isDeposit
+      ? `*Deposit due now:* ${formatIdr(due)}`
+      : `*Amount due:* ${formatIdr(due)}`,
+    '',
+    `View / pay invoice: ${shareUrl}`,
+    '',
+    '*Transfer to Seabank:*',
+    formatBankTransferBlock(),
+  ]
+  if (invoice.createdBy) {
+    lines.push('', `Prepared by ${invoice.createdBy} — reply here if you have questions.`)
+  }
+  return lines.join('\n')
+}
+
+export function buildStaffToGuestWhatsAppUrl(
+  invoice: InvoiceDraft,
+  shareUrl: string,
+  guestPhoneE164?: string,
+): string {
+  const text = buildStaffToGuestInvoiceMessage(invoice, shareUrl)
+  const digits = (guestPhoneE164 || '').replace(/\D/g, '')
+  if (digits.length >= 8) {
+    return `https://wa.me/${digits}?text=${encodeURIComponent(text)}`
+  }
+  return `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(text)}`
+}
+
 /** WhatsApp message after guest finishes Seabank transfer */
 export function buildPaymentConfirmationWhatsAppMessage(invoice: InvoiceDraft): string {
+  const paid = amountDueNow(invoice)
   return [
     'Hello Sekar Bali Activity! I have finished payment.',
     '',
@@ -234,7 +333,7 @@ export function buildPaymentConfirmationWhatsAppMessage(invoice: InvoiceDraft): 
     `*Name:* ${invoice.guestName}`,
     `*Activity:* ${invoice.activity}`,
     `*Date:* ${invoice.date}`,
-    `*Amount paid:* ${formatIdr(invoice.total)}`,
+    `*Amount paid:* ${formatIdr(paid)}`,
     '',
     '*Paid to:*',
     formatBankTransferBlock(),
@@ -242,6 +341,50 @@ export function buildPaymentConfirmationWhatsAppMessage(invoice: InvoiceDraft): 
     'Please confirm you received the transfer. I can send the receipt screenshot next.',
     'Thank you!',
   ].join('\n')
+}
+
+/** Encode invoice for unlisted share links (URL-safe base64 JSON) */
+export function encodeInvoiceSharePayload(invoice: InvoiceDraft): string {
+  const json = JSON.stringify(invoice)
+  if (typeof window !== 'undefined' && typeof window.btoa === 'function') {
+    const bytes = new TextEncoder().encode(json)
+    let binary = ''
+    bytes.forEach((b) => {
+      binary += String.fromCharCode(b)
+    })
+    return window.btoa(binary).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
+  }
+  return Buffer.from(json, 'utf8').toString('base64url')
+}
+
+export function decodeInvoiceSharePayload(payload: string): InvoiceDraft | null {
+  try {
+    const normalized = payload.replace(/-/g, '+').replace(/_/g, '/')
+    const pad = normalized.length % 4 === 0 ? '' : '='.repeat(4 - (normalized.length % 4))
+    const b64 = normalized + pad
+    let json: string
+    if (typeof window !== 'undefined' && typeof window.atob === 'function') {
+      const binary = window.atob(b64)
+      const bytes = Uint8Array.from(binary, (c) => c.charCodeAt(0))
+      json = new TextDecoder().decode(bytes)
+    } else {
+      json = Buffer.from(b64, 'base64').toString('utf8')
+    }
+    const parsed = JSON.parse(json) as InvoiceDraft
+    if (!parsed?.invoiceNumber || !parsed?.guestName || typeof parsed.total !== 'number') {
+      return null
+    }
+    return parsed
+  } catch {
+    return null
+  }
+}
+
+export function buildInvoiceShareUrl(invoice: InvoiceDraft, origin?: string): string {
+  const base =
+    origin ||
+    (typeof window !== 'undefined' ? window.location.origin : 'https://www.sekarbaliactivity.com')
+  return `${base}/invoice?d=${encodeInvoiceSharePayload(invoice)}`
 }
 
 export function buildInvoiceWhatsAppUrl(invoice: InvoiceDraft): string {

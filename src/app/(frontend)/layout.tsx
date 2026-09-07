@@ -59,8 +59,11 @@ export const metadata: Metadata = {
     'Bali quad bike tour',
     'ATV river tubing combo',
     'Ubud ricefield cycling tour',
+    'cycling cooking class Ubud',
+    'Balinese cooking class Ubud',
     'Bali whitewater rafting',
     'Bali canyon tubing',
+    'book Bali adventure WhatsApp',
     'Sekar Bali Activity',
   ],
   alternates: {

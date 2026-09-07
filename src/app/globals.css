@@ -350,25 +350,3 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-track { background: var(--sand-dark); }
 ::-webkit-scrollbar-thumb { background: var(--brand-green-light); border-radius: 999px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--brand-green); }
-
-/* Zapier chatbot: keep host in DOM; hide default launcher so our AI Assistant button is primary */
-.sekar-zapier-host {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  overflow: visible;
-  z-index: 80;
-  pointer-events: none;
-}
-.sekar-zapier-host zapier-interfaces-chatbot-embed {
-  pointer-events: auto;
-}
-/* When Zapier renders launcher in light DOM, hide it (shadow DOM launchers stay for open() fallback) */
-.sekar-zapier-host .chatbot-icon-button {
-  opacity: 0 !important;
-  pointer-events: none !important;
-  width: 1px !important;
-  height: 1px !important;
-}

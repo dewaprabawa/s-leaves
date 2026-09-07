@@ -50,6 +50,10 @@ function mountInlineChat(container: HTMLElement) {
   embed.setAttribute("chatbot-id", CHATBOT_ID)
   embed.setAttribute("height", "100%")
   embed.setAttribute("width", "100%")
+  embed.style.display = "block"
+  embed.style.width = "100%"
+  embed.style.height = "100%"
+  embed.style.minHeight = "420px"
   container.appendChild(embed)
 }
 

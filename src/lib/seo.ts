@@ -11,12 +11,12 @@ export const SITE_NAME = 'Sekar Bali Activity'
 /** SERP title target: brand + offer, ≤60 characters */
 export const DEFAULT_TITLE = 'Sekar Bali Activity | ATV & Ubud Adventures'
 export const DEFAULT_DESCRIPTION =
-  'Jungle ATV from IDR 600K near Ubud, plus rafting, canyon tubing & ricefield cycling from IDR 475K. Free Ubud pickup on cycling. Book via WhatsApp.'
+  'Jungle ATV from IDR 750K near Ubud, plus rafting from IDR 500K & ricefield cycling from IDR 750K. Free Ubud pickup on cycling. Book via WhatsApp.'
 
 /** Social previews (og:title ≤60, og:description ≤160) */
 export const OG_TITLE = 'Private ATV & Ubud Adventures | Sekar Bali'
 export const OG_DESCRIPTION =
-  'Jungle ATV from IDR 600K, rafting, tubing & ricefield cycling from IDR 475K. Free Ubud pickup on cycling. Book via WhatsApp.'
+  'Jungle ATV from IDR 750K, rafting from IDR 500K & ricefield cycling from IDR 750K. Free Ubud pickup on cycling. Book via WhatsApp.'
 
 export const OG_IMAGE = {
   url: '/images/adventures/og-cover.jpg',
@@ -41,7 +41,7 @@ export function buildOrganizationSchema() {
     email: CONTACT_EMAIL,
     image: `${SITE_URL}/logo.png`,
     logo: `${SITE_URL}/logo.png`,
-    priceRange: 'IDR 359000 - IDR 859000',
+    priceRange: 'IDR 359000 - IDR 1100000',
     // NAP must match Google Business Profile (corporate / registered office)
     address: postalAddressSchema(PRIMARY_NAP_ADDRESS),
     geo: {

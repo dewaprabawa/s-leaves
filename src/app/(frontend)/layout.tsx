@@ -107,20 +107,20 @@ const adventureOffers: AdventureOffer[] = [
     name: 'Single ATV Jungle Ride',
     description:
       'Private Bali quad bike adventure at All New Bali Adventure arena through jungle trails and muddy tracks. All-inclusive: lunch, boot shoes, helmet, insurance, and optional Wos River tubing combo.',
-    price: '600000',
+    price: '750000',
     image: '/images/adventures/atv-adventure.jpg',
   },
   {
     name: 'Tandem ATV Ride',
     description:
       'Private tandem ATV tour at All New Bali Adventure for couples and friends. Share a complete quad bike experience with lunch, safety gear, insurance, and optional river tubing.',
-    price: '859000',
+    price: '1100000',
     image: '/images/adventures/atv-adventure.jpg',
   },
   {
     name: 'Whitewater Rafting Adventure',
     description: 'Class II-III whitewater rafting through a jungle river canyon. All-inclusive with professional crew and lunch.',
-    price: '400000',
+    price: '500000',
     image: '/images/adventures/rafting.jpg',
   },
   {
@@ -132,8 +132,8 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: 'Ubud Ricefield & Village Cycling Tour',
     description:
-      'Ubud rice paddy & countryside cycling through Pejeng — lunch included, free Ubud hotel pickup from IDR 475K.',
-    price: '475000',
+      'Ubud rice paddy & countryside cycling through Pejeng — lunch included, free Ubud hotel pickup from IDR 750K.',
+    price: '750000',
     image: '/images/adventures/cycling.jpg',
   },
 ]

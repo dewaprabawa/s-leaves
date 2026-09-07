@@ -439,12 +439,12 @@ export function BookingPopup({
             ) : location ? (
                hasFreeUbudPickup ? (
                  isOutUbud ? (
-                   <span className="text-red-600 font-bold block">Out of Ubud: +{PICKUP_FEE_IDR / 1000}k pickup +{DROP_SAME_HOTEL_FEE_IDR / 1000}k drop if same hotel</span>
+                   <span className="text-red-600 font-bold block">Out of Ubud: hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
                  ) : (
                    <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free Pickup (cycling)</span>
                  )
                ) : (
-                 <span className="text-red-600 font-bold block">Pickup from IDR {PICKUP_FEE_IDR / 1000}k · +{DROP_SAME_HOTEL_FEE_IDR / 1000}k return to same hotel</span>
+                 <span className="text-red-600 font-bold block">Hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
                )
             ) : <span className="opacity-70">Tap on the map to set your pickup pin.</span>}
           </div>
@@ -635,10 +635,9 @@ export function BookingPopup({
                   className="mt-0.5 h-4 w-4 shrink-0 rounded border-brand-green/30 text-brand-green focus:ring-brand-green"
                 />
                 <span className="text-sm leading-relaxed text-brand-green-light">
-                  <span className="font-bold text-brand-green block mb-0.5">Return drop-off to same hotel (+IDR {DROP_SAME_HOTEL_FEE_IDR.toLocaleString('id-ID')})</span>
-                  Pickup IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')}
-                  {sameDropOff ? ` + drop IDR ${DROP_SAME_HOTEL_FEE_IDR.toLocaleString('id-ID')} = IDR ${(PICKUP_FEE_IDR + DROP_SAME_HOTEL_FEE_IDR).toLocaleString('id-ID')} round trip` : ' one-way'}
-                  {isOutUbud ? ` · Out of Ubud +IDR ${OUT_OF_UBUD_EXTRA_IDR.toLocaleString('id-ID')}` : ''}
+                  <span className="font-bold text-brand-green block mb-0.5">Return drop-off to same hotel (included)</span>
+                  Hotel pickup charge IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')}
+                  {sameDropOff ? ' · includes return to same hotel' : ' · pickup only'}
                 </span>
               </label>
             ) : null}
@@ -668,7 +667,7 @@ export function BookingPopup({
                 Meet at {MEETING_POINT.name}: <strong className="text-brand-green">IDR 0 transport fee</strong>
                 {' '}· saves ~{formatIdr(pickupQuote.grabOneWayTypical)} vs Grab one-way
               </p>
-              <p className="opacity-80">Need pickup? Check &quot;I need hotel pickup&quot; above — IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')} one-way or IDR {(PICKUP_FEE_IDR + DROP_SAME_HOTEL_FEE_IDR).toLocaleString('id-ID')} round trip to same hotel.</p>
+              <p className="opacity-80">Need pickup? Check &quot;I need hotel pickup&quot; above — hotel pickup charge IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')}.</p>
             </div>
             </>
             )}

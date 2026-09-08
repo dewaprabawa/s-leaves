@@ -96,8 +96,8 @@ export default async function TourPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Adventures",
-        item: `${SITE_URL}/#adventures`,
+        name: "Experiences",
+        item: `${SITE_URL}/#experiences`,
       },
       {
         "@type": "ListItem",
@@ -121,10 +121,10 @@ export default async function TourPage({ params }: Props) {
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link
-          href="/#adventures"
+          href="/#experiences"
           className="inline-flex items-center gap-2 text-sm font-semibold text-brand-green-light hover:text-brand-green transition-colors mb-8"
         >
-          <ArrowLeft className="w-4 h-4" /> Back to adventures
+          <ArrowLeft className="w-4 h-4" /> Back to experiences
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px] gap-10 lg:gap-12 items-start">

@@ -88,7 +88,7 @@ export default function HomeActivitySearch({ className = "" }: Props) {
       </div>
 
       {open && (
-        <div className="absolute left-0 right-0 top-[calc(100%+0.5rem)] z-30 overflow-hidden rounded-2xl border border-brand-green/10 bg-white shadow-xl">
+        <div className="absolute left-0 right-0 top-[calc(100%+0.5rem)] z-[80] overflow-hidden rounded-2xl border border-brand-green/10 bg-white shadow-xl">
           {results.length === 0 ? (
             <p className="px-4 py-3 text-sm text-brand-green-light">
               No exact match — browse all experiences below.

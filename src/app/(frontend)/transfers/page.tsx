@@ -26,16 +26,21 @@ export const metadata: Metadata = {
 
 export default function TransfersPage() {
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 py-16 px-6">
-      <div className="max-w-7xl mx-auto space-y-12">
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Private Airport Transfers
-          </h1>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Arrive in style and comfort. Enjoy a direct, private transfer from Ngurah Rai Bali Airport (DPS) to your hotel. Includes toll fees, parking, and a professional driver.
+    <main className="w-full flex flex-col bg-sand pt-32 pb-24 px-6 lg:px-12 flex-1">
+      <div className="max-w-7xl mx-auto w-full space-y-12">
+        <header className="max-w-3xl space-y-4">
+          <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm">
+            Airport & hotel
           </p>
-        </div>
+          <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-green tracking-tight uppercase leading-tight">
+            Private Airport{" "}
+            <span className="text-accent-gold-dark">Transfers.</span>
+          </h1>
+          <p className="text-base md:text-lg text-brand-green-light leading-relaxed max-w-2xl">
+            Arrive in style and comfort. Enjoy a direct, private transfer from Ngurah Rai Bali Airport
+            (DPS) to your hotel. Includes toll fees, parking, and a professional driver.
+          </p>
+        </header>
 
         <TransfersListClient initialTransfers={TRANSFERS as any} />
       </div>

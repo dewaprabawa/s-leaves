@@ -133,7 +133,7 @@ export default function MapPicker({
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Circle center={[UBUD_CENTER.lat, UBUD_CENTER.lng]} radius={UBUD_RADIUS_METERS} pathOptions={{ color: '#17372b', fillColor: '#17372b', fillOpacity: 0.15 }} />
+        <Circle center={[UBUD_CENTER.lat, UBUD_CENTER.lng]} radius={UBUD_RADIUS_METERS} pathOptions={{ color: '#0a1628', fillColor: '#0a1628', fillOpacity: 0.15 }} />
         <LocationMarker />
         <MapController center={mapCenter} />
       </MapContainer>

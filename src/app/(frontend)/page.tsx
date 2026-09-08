@@ -53,7 +53,7 @@ import {
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
 
 const HERO_BLUR_DATA_URL =
-  "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBAv/EACIQAAICAgEEAwEAAAAAAAAAAAECAxEAEiEEMUFhBRMigf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwCL42dFV2mNDlmPm/H9yfqXjmEv12Qw2J93mdK0UV7saq+11iYpM7aPuzc2V1v1mRjjp5qDLNsEZOPzyQTxkpmdWYRjZQoJOvYducYyi//Z"
+  "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAKABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EACAQAAIABQUBAAAAAAAAAAAAAAECAAMEESEFEhMxQYH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAAMBAAAAAAAAAAAAAAAAAAABIRH/2gAMAwEAAhEDEQA/AM7RUdmYJMEsFLMffgiCqmvUzGQHcexjJEP0djynJ6HsBWALVzdotZsWiETHkP/Z"
 
 const ADVENTURE_ICONS: Record<string, LucideIcon> = {
   "single-atv": Zap,
@@ -299,49 +299,51 @@ export default function Home() {
       />
 
       {/* ═══ HERO ═══ */}
-      <section id="top" className="relative w-full min-h-[100svh] flex flex-col justify-end overflow-x-clip overflow-y-visible">
-        <div className="absolute inset-0 overflow-hidden">
+      <section id="top" className="relative w-full min-h-[100svh] flex flex-col justify-end overflow-hidden">
+        <div className="absolute inset-0">
           <Image
             src="/images/adventures/hero-banner.jpg"
-            alt="Bali travel activities — jungle trails, village paths, and Ubud day experiences"
+            alt="ATV jungle trail near Ubud — Bali adventure with Sekar Bali Activity"
             fill
             preload
             fetchPriority="high"
             sizes="100vw"
-            quality={70}
+            quality={72}
             placeholder="blur"
             blurDataURL={HERO_BLUR_DATA_URL}
-            className="object-cover object-[center_35%] hero-kenburns"
+            className="object-cover object-[center_42%] hero-kenburns"
           />
           <div className="hero-overlay absolute inset-0" />
         </div>
-        <div className="relative z-20 flex flex-col items-start justify-end text-left px-6 md:px-12 lg:px-16 pt-36 pb-14 md:pb-20 max-w-5xl">
-          <p className="hero-brand text-3xl sm:text-4xl md:text-5xl font-bold uppercase mb-5 animate-fade-in-up">
-            Sekar Bali Activity
-          </p>
-          <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold uppercase leading-[0.92] tracking-tight mb-5 animate-fade-in-up-delay-1">
-            Your Bali day,<br />
-            <span className="hero-headline-accent">booked clear</span>
-          </h1>
-          <p className="hero-subcopy text-base md:text-lg max-w-lg mb-7 animate-fade-in-up-delay-2">
-            Adventure, village cycling, cooking class, coffee, and private day tours near Ubud — transparent IDR and WhatsApp booking.
-          </p>
-          <div className="w-full animate-fade-in-up-delay-3 mb-6">
-            <HomeActivitySearch />
-          </div>
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
-            <Link
-              href="#experiences"
-              className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full btn-gold-shimmer font-bold text-sm md:text-base uppercase tracking-wider"
-            >
-              Browse experiences
-            </Link>
-            <Link
-              href="/book"
-              className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-white/12 border border-white/35 text-white font-bold text-sm md:text-base uppercase tracking-wider hover:bg-white/20 transition-colors backdrop-blur-sm"
-            >
-              Open booking
-            </Link>
+        <div className="relative z-20 w-full px-6 md:px-12 lg:px-16 pt-32 pb-12 md:pb-16">
+          <div className="max-w-3xl flex flex-col items-start text-left">
+            <p className="hero-brand text-4xl sm:text-5xl md:text-6xl font-bold uppercase mb-4 animate-fade-in-up">
+              Sekar Bali
+            </p>
+            <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-[5.25rem] font-bold uppercase leading-[0.9] tracking-tight mb-4 animate-fade-in-up-delay-1">
+              Your Bali day,<br />
+              <span className="hero-headline-accent">booked clear</span>
+            </h1>
+            <p className="hero-subcopy text-base md:text-lg max-w-md mb-8 animate-fade-in-up-delay-2">
+              ATV, cycling, cooking, and day tours near Ubud — clear IDR pricing, WhatsApp booking.
+            </p>
+            <div className="w-full max-w-xl space-y-3 animate-fade-in-up-delay-3">
+              <HomeActivitySearch />
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="#experiences"
+                  className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
+                >
+                  Browse experiences
+                </Link>
+                <Link
+                  href="/book"
+                  className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full bg-white/12 border border-white/35 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/20 transition-colors backdrop-blur-sm"
+                >
+                  Open booking
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

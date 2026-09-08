@@ -315,7 +315,7 @@ export default function BookSalesCheckout({
             </span>
             <span className="inline-flex items-center gap-1.5">
               <MapPin className="w-4 h-4 text-brand-green shrink-0" />
-              Per person · Pejeng near Ubud
+              Shared · Tumang village near Ubud
             </span>
           </div>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
@@ -333,8 +333,16 @@ export default function BookSalesCheckout({
             >
               Full class details <ArrowRight className="w-3.5 h-3.5" />
             </Link>
+            <a
+              href={COOKING_CLASS_SALES.externalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-sm font-semibold text-brand-green hover:text-brand-green-light transition-colors w-fit"
+            >
+              tumangbaliclass.com <ArrowRight className="w-3.5 h-3.5" />
+            </a>
             <Link
-              href={COOKING_CLASS_SALES.itineraryHref}
+              href="/book?activity=combo-cycling-cooking"
               className="inline-flex items-center gap-1 text-sm font-semibold text-brand-green hover:text-brand-green-light transition-colors w-fit"
             >
               Pair with cycling <ArrowRight className="w-3.5 h-3.5" />
@@ -345,12 +353,14 @@ export default function BookSalesCheckout({
         <div className="flex flex-col justify-center gap-4 md:col-span-2 lg:col-span-1 bg-white rounded-2xl border border-brand-green/10 p-5 shadow-sm">
           <div>
             <p className="text-xs font-medium text-brand-green-light uppercase tracking-wider mb-1">
-              From
+              Shared from
             </p>
             <p className="text-2xl font-bold text-brand-green">
               {formatIdr(COOKING_CLASS_SALES.priceIdr)}
             </p>
-            <p className="text-xs text-brand-green-light mt-1">Per person · evening dinner class</p>
+            <p className="text-xs text-brand-green-light mt-1">
+              Private 1 guest {formatIdr(COOKING_CLASS_SALES.privateSoloIdr)} · Ubud pickup included
+            </p>
           </div>
           <a
             href={cookingWhatsApp}
@@ -362,7 +372,7 @@ export default function BookSalesCheckout({
             Book on WhatsApp
           </a>
           <p className="text-[11px] text-center text-brand-green-light leading-relaxed">
-            Evening dinner class — free to inquire. Ask to add ricefield cycling the same day.
+            Morning (market tour) or afternoon — free to inquire. Ask to add ricefield cycling the same day.
           </p>
         </div>
       </article>

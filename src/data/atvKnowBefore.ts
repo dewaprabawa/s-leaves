@@ -27,7 +27,7 @@ export const atvWhatYouGetItems: KnowBeforeItem[] = [
   {
     icon: Car,
     title: "Hotel pickup & drop-off",
-    desc: "Optional add-on — IDR 400,000 surcharge. Free Ubud pickup is included on the cycling tour only.",
+    desc: "Optional add-on — IDR 400,000 surcharge. Free Ubud pickup is included on the cycling tour and Tumang cooking class.",
   },
   {
     icon: Bike,

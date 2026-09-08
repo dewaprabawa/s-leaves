@@ -13,11 +13,11 @@ const faqs = [
   },
   {
     question: "What activities and tours do you offer?",
-    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and dirt bike. Village: Pejeng ricefield cycling with free Ubud pickup. Food: Balinese cooking class and luwak coffee tasting. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and dirt bike. Village: Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",
-    answer: "Free hotel pickup and drop-off within the Ubud area is included only on our Ubud Ricefield Cycling Tour. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 400,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
+    answer: "Free hotel pickup within Ubud is included on our Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 400,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
   },
   {
     question: "Do I need experience to ride an ATV, go rafting, or cycle?",
@@ -44,8 +44,12 @@ const faqs = [
     answer: "All ATV rides take place at All New Bali Adventure — our Pejeng activity base near Ubud (not our corporate office in Banjar Kenderan or the central Ubud meeting point). Hotel pickup is available, or self-meet at the arena with no transport fee. Full address roles are listed on the Contact page."
   },
   {
-    question: "Which tour has free Ubud hotel pickup?",
-    answer: "Only the Ubud Ricefield Cycling Tour (IDR 750,000) includes free hotel pickup and drop-off within Ubud, plus lunch. ATV, rafting, and canyon tubing charge IDR 400,000 for hotel pickup."
+    question: "Which tours have free Ubud hotel pickup?",
+    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared from IDR 506,370) include complimentary hotel pickup within Ubud. ATV, rafting, and canyon tubing charge IDR 400,000 for hotel pickup."
+  },
+  {
+    question: "How much is Tumang Bali Cooking Class?",
+    answer: "Shared small-group Tumang Bali Cooking Class is IDR 506,370 per person (max 8 guests) with complimentary Ubud-area pickup — morning sessions include a market tour, plus rice-field walk and 10+ dishes. Private kitchen is IDR 633,090 for 1 guest or IDR 1,266,180 for 2 guests. Book via WhatsApp on our cooking class page."
   },
   {
     question: "What is the difference between rafting and canyon tubing?",

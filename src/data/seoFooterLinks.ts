@@ -28,7 +28,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Book on WhatsApp', href: '/book' },
   { label: 'Adventure package prices', href: '/blog/bali-adventure-packages-prices-2026' },
   { label: 'Airport transfer DPS → Ubud', href: '/transfers' },
-  { label: 'Balinese cooking class', href: '/tours/balinese-cooking-class' },
+  { label: 'Tumang Bali Cooking Class', href: '/tours/balinese-cooking-class' },
   { label: 'Book cooking class', href: '/book?activity=balinese-cooking-class' },
   { label: 'Blog & travel guides', href: '/blog' },
   { label: 'Contact & meeting point', href: '/contact' },

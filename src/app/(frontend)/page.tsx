@@ -82,7 +82,7 @@ const CATEGORY_SECTION_META: {
     anchor: "food",
     eyebrow: "Taste Bali",
     title: "Food & workshops",
-    subtitle: "Hands-on Balinese cooking and a calm coffee plantation tasting — culture you can eat.",
+    subtitle: "Tumang Bali Cooking Class (market tour, 10+ dishes) and a calm coffee plantation tasting.",
   },
   {
     id: "village",
@@ -160,7 +160,7 @@ const travelGuides = [
   },
   {
     title: "Cycling & Cooking Class in Ubud",
-    excerpt: "Full-day rice paddy cycling plus evening Balinese cooking class — prices and itinerary.",
+    excerpt: "Pejeng ricefield cycling plus afternoon Tumang cooking class — prices and itinerary.",
     href: "/blog/cycling-cooking-class-ubud-full-day-itinerary",
   },
   {

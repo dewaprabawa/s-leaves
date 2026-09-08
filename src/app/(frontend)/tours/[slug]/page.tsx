@@ -7,9 +7,22 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
-import { getAllTourSlugs, getTourBySlug, getTourCategoryLabel } from "@/data/tours"
-import { SITE_URL } from "@/lib/seo"
+import CookingGeoBlock from "@/components/CookingGeoBlock"
+import {
+  getAllTourSlugs,
+  getTourBySlug,
+  getTourCategoryLabel,
+  type Tour,
+} from "@/data/tours"
+import { SITE_NAME, SITE_URL } from "@/lib/seo"
 import { formatIdr } from "@/lib/whatsapp"
+import {
+  COOKING_GEO_ENTITY,
+  COOKING_GEO_FAQS,
+  COOKING_GEO_TLDR,
+  COOKING_GEO_UPDATED,
+} from "@/data/cookingGeo"
+import { GEO_UPDATED } from "@/data/geoContent"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -17,6 +30,10 @@ type Props = {
 
 export async function generateStaticParams() {
   return getAllTourSlugs().map((slug) => ({ slug }))
+}
+
+function isCookingTour(tour: Tour) {
+  return tour.slug === "balinese-cooking-class"
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -27,10 +44,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = tour.seoTitle ?? tour.title
   const description = tour.seoDescription ?? tour.shortDescription
+  const keywords = isCookingTour(tour)
+    ? [
+        "cooking class Ubud",
+        "Tumang Bali Cooking Class",
+        "Balinese cooking class Ubud",
+        "cooking class Ubud market tour",
+        "cooking class Ubud price",
+        "small group cooking class Ubud",
+        "vegetarian cooking class Ubud",
+        "private cooking class Ubud",
+        "Sekar Bali Activity",
+      ]
+    : undefined
 
   return {
     title,
     description,
+    keywords,
     alternates: {
       canonical: `/tours/${tour.slug}`,
     },
@@ -38,8 +69,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: `${SITE_URL}/tours/${tour.slug}`,
-      images: [tour.heroImage.url],
+      images: [
+        {
+          url: tour.heroImage.url,
+          alt: tour.heroImage.alt,
+        },
+      ],
       type: "website",
+      siteName: SITE_NAME,
     },
     twitter: {
       card: "summary_large_image",
@@ -47,31 +84,99 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       images: [tour.heroImage.url],
     },
+    other: isCookingTour(tour)
+      ? {
+          "geo.region": "ID-BA",
+          "geo.placename": "Ubud, Bali",
+        }
+      : undefined,
   }
 }
 
-export default async function TourPage({ params }: Props) {
-  const { slug } = await params
-  const tour = getTourBySlug(slug)
-
-  if (!tour) {
-    notFound()
-  }
-
-  const tourSchema = {
+function buildTourSchema(tour: Tour) {
+  const cooking = isCookingTour(tour)
+  const base = {
     "@context": "https://schema.org",
-    "@type": "TouristTrip",
+    "@type": cooking ? (["TouristTrip", "Product"] as const) : "TouristTrip",
+    "@id": `${SITE_URL}/tours/${tour.slug}#trip`,
     name: tour.title,
-    description: tour.seoDescription ?? tour.shortDescription,
-    image: `${SITE_URL}${tour.heroImage.url}`,
-    touristType: ["Couples", "Families", "Adventure seekers"],
+    description: cooking ? COOKING_GEO_TLDR : (tour.seoDescription ?? tour.shortDescription),
+    image: tour.heroImage.url.startsWith("http")
+      ? tour.heroImage.url
+      : `${SITE_URL}${tour.heroImage.url}`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    touristType: cooking
+      ? ["Couples", "Families", "Food travelers", "Culture travelers"]
+      : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
+    areaServed: {
+      "@type": "Place",
+      name: cooking ? COOKING_GEO_ENTITY.area : "Ubud, Bali",
+    },
     itinerary: tour.itinerary.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: item.title,
       description: item.description,
     })),
+  }
+
+  if (cooking) {
+    return {
+      ...base,
+      brand: {
+        "@type": "Brand",
+        name: "Tumang Bali",
+      },
+      category: "Food & Workshops",
+      offers: {
+        "@type": "AggregateOffer",
+        lowPrice: COOKING_GEO_ENTITY.sharedPriceIdr,
+        highPrice: COOKING_GEO_ENTITY.privateCoupleIdr,
+        priceCurrency: "IDR",
+        offerCount: 4,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Shared morning class (market tour)",
+            price: COOKING_GEO_ENTITY.sharedPriceIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/book?activity=balinese-cooking-class`,
+          },
+          {
+            "@type": "Offer",
+            name: "Shared afternoon class",
+            price: COOKING_GEO_ENTITY.sharedPriceIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/book?activity=balinese-cooking-class`,
+          },
+          {
+            "@type": "Offer",
+            name: "Private class (1 guest)",
+            price: COOKING_GEO_ENTITY.privateSoloIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/book?activity=balinese-cooking-class`,
+          },
+          {
+            "@type": "Offer",
+            name: "Private class (2 guests)",
+            price: COOKING_GEO_ENTITY.privateCoupleIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/book?activity=balinese-cooking-class`,
+          },
+        ],
+      },
+    }
+  }
+
+  return {
+    ...base,
     offers: {
       "@type": "Offer",
       name: tour.title,
@@ -82,6 +187,58 @@ export default async function TourPage({ params }: Props) {
       description: tour.included.join(", "),
     },
   }
+}
+
+function buildCookingWebPageSchema(tour: Tour) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    dateModified: COOKING_GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".cooking-geo-tldr", ".cooking-geo-answer", ".geo-tldr"],
+    },
+    significantLink: [
+      `${SITE_URL}/book?activity=balinese-cooking-class`,
+      `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/pricing.md`,
+      COOKING_GEO_ENTITY.moneyPage,
+    ],
+  }
+}
+
+function buildCookingQaSchemas() {
+  return COOKING_GEO_FAQS.map((item, index) => ({
+    "@context": "https://schema.org",
+    "@type": "Question",
+    "@id": `${SITE_URL}/tours/balinese-cooking-class#qa-${index + 1}`,
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+      url: `${SITE_URL}/tours/balinese-cooking-class#cooking-geo`,
+    },
+  }))
+}
+
+export default async function TourPage({ params }: Props) {
+  const { slug } = await params
+  const tour = getTourBySlug(slug)
+
+  if (!tour) {
+    notFound()
+  }
+
+  const cooking = isCookingTour(tour)
+  const tourSchema = buildTourSchema(tour)
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -118,6 +275,23 @@ export default async function TourPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {cooking ? (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(buildCookingWebPageSchema(tour)),
+            }}
+          />
+          {buildCookingQaSchemas().map((qa) => (
+            <script
+              key={qa["@id"]}
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
+            />
+          ))}
+        </>
+      ) : null}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link
@@ -153,6 +327,11 @@ export default async function TourPage({ params }: Props) {
                   <span className="text-sm font-bold text-brand-green">
                     From {formatIdr(tour.basePrice)}
                   </span>
+                  {cooking ? (
+                    <span className="text-xs text-brand-green-light">
+                      Updated {COOKING_GEO_UPDATED || GEO_UPDATED}
+                    </span>
+                  ) : null}
                 </div>
 
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight">
@@ -178,8 +357,12 @@ export default async function TourPage({ params }: Props) {
               </section>
             )}
 
+            {cooking ? <CookingGeoBlock /> : null}
+
             <section className="rounded-3xl border border-brand-green/10 bg-white p-6 md:p-8 shadow-sm">
-              <h2 className="text-xl font-bold text-brand-green mb-4">About This Experience</h2>
+              <h2 className="text-xl font-bold text-brand-green mb-4">
+                {cooking ? "About Tumang Bali Cooking Class" : "About This Experience"}
+              </h2>
               <article className="prose prose-lg prose-emerald max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {tour.fullDescription}

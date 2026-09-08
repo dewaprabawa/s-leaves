@@ -28,7 +28,8 @@ export function buildGeoWebPageSchema() {
       `${SITE_URL}/llms-full.txt`,
       `${SITE_URL}/pricing.md`,
       `${SITE_URL}/.well-known/llms.txt`,
-      `${SITE_URL}/#adventures`,
+      `${SITE_URL}/#experiences`,
+      `${SITE_URL}/tours/balinese-cooking-class`,
       `${SITE_URL}/blog`,
     ],
   }

@@ -68,7 +68,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_URL}/tours/${tour.slug}`,
     lastModified: now,
     changeFrequency: 'monthly',
-    priority: 0.85,
+    // Flagship food money page gets the same priority tier as /book
+    priority: tour.slug === 'balinese-cooking-class' ? 0.95 : 0.85,
   }))
 
   const geoPages: MetadataRoute.Sitemap = [

@@ -129,6 +129,13 @@ function buildTourSchema(tour: Tour) {
         name: "Tumang Bali",
       },
       category: "Food & Workshops",
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: COOKING_GEO_ENTITY.ratingValue,
+        reviewCount: COOKING_GEO_ENTITY.reviewCount,
+        bestRating: 5,
+        worstRating: 1,
+      },
       offers: {
         "@type": "AggregateOffer",
         lowPrice: COOKING_GEO_ENTITY.sharedPriceIdr,

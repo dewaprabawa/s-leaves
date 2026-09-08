@@ -900,14 +900,14 @@ export default function Home() {
       <section id="contact" data-animate className="relative py-24 md:py-32 px-6 lg:px-12 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/cooking/stovetop-class.jpg"
-            alt="Guests cooking Balinese dishes in a hands-on class"
+            src="/images/adventures/footer-cta-rafting.jpg"
+            alt="Whitewater rafting near Ubud — orange raft through tropical river rapids"
             fill
             sizes="100vw"
             loading="lazy"
-            className="object-cover"
+            className="object-cover object-center"
           />
-          <div className="absolute inset-0 bg-ink-soft/88" />
+          <div className="absolute inset-0 bg-ink-soft/80" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto text-center text-sand">
           <p className="text-accent-amber font-semibold tracking-[0.2em] uppercase text-sm mb-4">

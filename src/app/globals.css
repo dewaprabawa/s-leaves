@@ -2,7 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  /* Sport & travel palette — navy ink + coral energy (no jungle green) */
+  /* Travel & activities palette — navy ink + coral energy */
   --background: #f2f5f9;
   --foreground: #0a1628;
   --brand-green: #0a1628;
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   animation: driftUp 0.7s ease-out both;
 }
 
-/* ─── Hero overlay — dark sport/travel scrim on full-bleed photo ─── */
+/* ─── Hero overlay — dark travel scrim on full-bleed photo ─── */
 .hero-overlay {
   background:
     linear-gradient(
@@ -129,6 +129,15 @@ h1, h2, h3, h4, h5, h6 {
       rgba(10, 22, 40, 0.75) 0%,
       transparent 42%
     );
+}
+
+@keyframes kenBurns {
+  from { transform: scale(1); }
+  to { transform: scale(1.06); }
+}
+
+.hero-kenburns {
+  animation: kenBurns 18s ease-out forwards;
 }
 
 .hero-headline {

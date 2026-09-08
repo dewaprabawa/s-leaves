@@ -27,11 +27,31 @@ export interface TourReview {
   visitDate?: string
 }
 
+/** Browse taxonomy for travel & activities (not sports-only). */
+export type TourCategoryId =
+  | "adventure"
+  | "food"
+  | "culture"
+  | "village"
+  | "day-tour"
+
+export const TOUR_CATEGORY_LABELS: Record<TourCategoryId, string> = {
+  adventure: "Adventure",
+  food: "Food & Workshops",
+  culture: "Culture & Heritage",
+  village: "Village & Nature",
+  "day-tour": "Day Tours",
+}
+
 export interface Tour {
   id: string
   title: string
   slug: string
-  category: "Activity" | "Adventure" | "Culture"
+  category: TourCategoryId
+  /** Optional area label shown on discovery cards (e.g. Ubud / Pejeng). */
+  area?: string
+  /** Featured on homepage top-picks rail when true. */
+  isTopPick?: boolean
   duration: string
   basePrice: number
   childPrice?: number
@@ -63,7 +83,9 @@ export const TOURS: Tour[] = [
     id: "bali-atv-adventure",
     title: "Bali ATV Quad Bike Adventure & River Tubing",
     slug: "bali-atv-adventure",
-    category: "Adventure",
+    category: "adventure",
+    area: "Pejeng / Ubud",
+    isTopPick: true,
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
@@ -224,7 +246,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     id: "whitewater-rafting",
     title: "Whitewater Rafting Adventure",
     slug: "whitewater-rafting",
-    category: "Adventure",
+    category: "adventure",
+    area: "Ayung River / Ubud",
+    isTopPick: true,
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
@@ -335,7 +359,8 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
     id: "canyon-tubing",
     title: "Canyon Tubing Adventure",
     slug: "canyon-tubing",
-    category: "Adventure",
+    category: "adventure",
+    area: "Wos River / Pejeng",
     duration: "2.5 Hours",
     basePrice: 359000,
     childPrice: 300000,
@@ -441,7 +466,9 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     id: "ubud-ricefield-cycling-tour",
     title: "Ubud Ricefield & Village Cycling Tour",
     slug: "ubud-ricefield-cycling-tour",
-    category: "Activity",
+    category: "village",
+    area: "Pejeng / Ubud",
+    isTopPick: true,
     duration: "Full Day",
     basePrice: 750000,
     seoTitle: "Rice Paddy Cycling Ubud | Pejeng",
@@ -626,7 +653,9 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     id: "luwak-coffee-plantation",
     title: "Luwak Coffee Plantation Experience (Umah Kuno)",
     slug: "luwak-coffee-plantation",
-    category: "Culture",
+    category: "food",
+    area: "Tampaksiring / Ubud",
+    isTopPick: true,
     duration: "1.5 Hours",
     basePrice: 400000,
     heroImage: {
@@ -727,7 +756,9 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     id: "balinese-cooking-class",
     title: "Traditional Balinese Dinner Cooking Class",
     slug: "balinese-cooking-class",
-    category: "Culture",
+    category: "food",
+    area: "Pejeng / Ubud",
+    isTopPick: true,
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
@@ -883,7 +914,9 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     id: "full-day-ubud-tour",
     title: "Full Day Ubud Tour: Royal Palace, Art Market & Rice Terraces",
     slug: "full-day-ubud-tour",
-    category: "Culture",
+    category: "day-tour",
+    area: "Ubud & surrounds",
+    isTopPick: true,
     duration: "10 Hours",
     basePrice: 600000,
     heroImage: {
@@ -924,7 +957,8 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     id: "half-day-ubud-tanah-lot-tour",
     title: "Half Day Trip: Explore Ubud Culture & Amazing Sunset at Tanah Lot Temple",
     slug: "half-day-ubud-tanah-lot-tour",
-    category: "Adventure",
+    category: "day-tour",
+    area: "Ubud → Tanah Lot",
     duration: "6 Hours",
     basePrice: 450000,
     heroImage: {
@@ -965,7 +999,8 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     id: "bali-dirt-bike-adventure",
     title: "Bali Dirt Bike & Adventure Tour 2026",
     slug: "bali-dirt-bike-adventure",
-    category: "Activity",
+    category: "adventure",
+    area: "Tabanan / Kintamani",
     duration: "Half Day or Full Day",
     basePrice: 1200000,
     seoTitle: "Dirt Bike Tour Bali | Tabanan & Volcano",
@@ -1129,4 +1164,33 @@ export function getTourBySlug(slug: string): Tour | undefined {
 
 export function getAllTourSlugs(): string[] {
   return TOURS.map((tour) => tour.slug)
+}
+
+export function getTourCategoryLabel(category: TourCategoryId): string {
+  return TOUR_CATEGORY_LABELS[category]
+}
+
+export function getToursByCategory(category: TourCategoryId): Tour[] {
+  return TOURS.filter((tour) => tour.category === category)
+}
+
+export function getTopPickTours(): Tour[] {
+  return TOURS.filter((tour) => tour.isTopPick)
+}
+
+export function searchTours(query: string, limit = 8): Tour[] {
+  const q = query.trim().toLowerCase()
+  if (!q) return []
+  return TOURS.filter((tour) => {
+    const haystack = [
+      tour.title,
+      tour.shortDescription,
+      tour.area ?? "",
+      TOUR_CATEGORY_LABELS[tour.category],
+      ...tour.highlights,
+    ]
+      .join(" ")
+      .toLowerCase()
+    return haystack.includes(q)
+  }).slice(0, limit)
 }

@@ -7,7 +7,7 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
-import { getAllTourSlugs, getTourBySlug } from "@/data/tours"
+import { getAllTourSlugs, getTourBySlug, getTourCategoryLabel } from "@/data/tours"
 import { SITE_URL } from "@/lib/seo"
 import { formatIdr } from "@/lib/whatsapp"
 
@@ -144,7 +144,7 @@ export default async function TourPage({ params }: Props) {
               <div className="space-y-4">
                 <div className="flex flex-wrap items-center gap-3">
                   <span className="inline-flex rounded-full bg-brand-green/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-green">
-                    {tour.category}
+                    {getTourCategoryLabel(tour.category)}
                   </span>
                   <span className="inline-flex items-center gap-1.5 text-sm text-brand-green-light">
                     <Clock className="w-4 h-4 text-brand-green" />

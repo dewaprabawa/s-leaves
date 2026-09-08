@@ -4,7 +4,7 @@ import { ArrowRight, Compass, Users, MapPin } from 'lucide-react';
 
 export const metadata = {
   title: 'About Us',
-  description: 'Meet the local Pejeng, Ubud team behind Sekar Bali Activity. Authentic Bali ATV, rafting, canyon tubing, and village cycling adventures. Free Ubud hotel pickup on the cycling tour only.',
+  description: 'Meet the local Pejeng, Ubud team behind Sekar Bali Activity. Authentic Bali travel — ATV, rafting, village cycling, cooking class, coffee, and day tours. Free Ubud hotel pickup on the cycling tour only.',
   alternates: { canonical: '/about' },
 };
 
@@ -19,7 +19,7 @@ export default function AboutPage() {
             <span className="text-accent-gold-dark">Pejeng Village.</span>
           </h1>
           <p className="text-xl text-brand-green-light max-w-2xl mx-auto leading-relaxed">
-            Local sport and travel guides sharing authentic Bali adventures — away from the commercial crowds.
+            Local travel and activity guides sharing authentic Bali days — adventure, village, food, and culture away from the commercial crowds.
           </p>
         </div>
 
@@ -63,9 +63,9 @@ export default function AboutPage() {
             <div className="w-16 h-16 bg-accent-gold/12 text-accent-gold-dark rounded-full flex items-center justify-center mb-6">
               <Compass className="w-8 h-8" />
             </div>
-            <h3 className="text-xl font-bold text-brand-green mb-3 font-display uppercase">Adventure Ready</h3>
+            <h3 className="text-xl font-bold text-brand-green mb-3 font-display uppercase">Travel Ready</h3>
             <p className="text-brand-green-light leading-relaxed">
-              From ATV trails to river sports, every package is built for travelers who want real Bali thrills.
+              From ATV trails and river days to cooking class and private Ubud tours — packages built for real Bali travel.
             </p>
           </div>
         </div>
@@ -84,10 +84,10 @@ export default function AboutPage() {
               Contact Us <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/#adventures"
+              href="/#experiences"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-sand/30 text-sand font-bold uppercase tracking-wider hover:bg-sand/10 transition-colors"
             >
-              See Adventures
+              Browse experiences
             </Link>
           </div>
         </div>

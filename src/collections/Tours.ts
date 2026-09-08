@@ -55,6 +55,23 @@ export const Tours: CollectionConfig = {
               required: true,
             },
             {
+              name: 'browseCategory',
+              type: 'select',
+              required: true,
+              defaultValue: 'adventure',
+              options: [
+                { label: 'Adventure', value: 'adventure' },
+                { label: 'Food & Workshops', value: 'food' },
+                { label: 'Culture & Heritage', value: 'culture' },
+                { label: 'Village & Nature', value: 'village' },
+                { label: 'Day Tours', value: 'day-tour' },
+              ],
+              admin: {
+                position: 'sidebar',
+                description: 'Homepage discovery category (travel & activities — not sports-only).',
+              },
+            },
+            {
               name: 'duration',
               type: 'text',
               required: true,

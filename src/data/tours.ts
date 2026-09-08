@@ -207,7 +207,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-3",
         question: "Where is the ATV arena near Ubud?",
         answer:
-          "All of our ATV rides run at All New Bali Adventure — a dedicated jungle arena near Ubud / Pejeng. We are not the Kuber tunnel or Dragon Cave tracks; ask WhatsApp if you need pin directions or hotel pickup.",
+          "All of our ATV rides run at All New Bali Adventure — a dedicated jungle arena on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 (near Ubud). We are not the Kuber tunnel or Dragon Cave tracks; ask WhatsApp if you need pin directions or hotel pickup.",
       },
       {
         id: "faq-atv-4",

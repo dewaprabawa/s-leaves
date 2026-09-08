@@ -45,7 +45,7 @@ Aggregator listings often hide whether lunch, insurance, or pickup are extras. O
 
 ## What “From IDR 750K” Actually Buys
 
-At **All New Bali Adventure** (our Pejeng activity base near Ubud) you get:
+At **All New Bali Adventure** (our activity base on Jl. Raya Krasan, Sedang, Abiansemal near Ubud) you get:
 
 1. Safety briefing and English-speaking guide  
 2. Boot shoes and helmet fitted on site  
@@ -155,17 +155,17 @@ If your Bali day goal is **authentic village time with logistics handled**, an U
     slug: 'private-atv-vs-mass-market-ubud',
     title: 'Private vs Mass-Market ATV Near Ubud',
     excerpt:
-      'Private / small-group ATV at All New Bali Adventure vs big-bus quads — clear IDR pricing, WhatsApp booking, and a Pejeng base near Ubud.',
+      'Private / small-group ATV at All New Bali Adventure vs big-bus quads — clear IDR pricing, WhatsApp booking, and a Sedang (Abiansemal) base near Ubud.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**What’s the difference between a private ATV near Ubud and a mass-market quad tour?** Private / small-group operators emphasize **clear arena location, inclusions, and WhatsApp confirmation** — not the cheapest anonymous listing. Sekar Bali Activity runs beginner-friendly ATV at **All New Bali Adventure** in Pejeng from **IDR 750,000**, with lunch, gear, and insurance included and **no upfront payment** to inquire.
+**What’s the difference between a private ATV near Ubud and a mass-market quad tour?** Private / small-group operators emphasize **clear arena location, inclusions, and WhatsApp confirmation** — not the cheapest anonymous listing. Sekar Bali Activity runs beginner-friendly ATV at **All New Bali Adventure** in Sedang, Abiansemal from **IDR 750,000**, with lunch, gear, and insurance included and **no upfront payment** to inquire.
 
 > **Key Takeaways**
 > - Mass listings often bury pickup fees, lunch, and which arena you ride  
 > - Private / small-group focus: safety briefing, English guide, transparent IDR tiers  
-> - Our arena: **All New Bali Adventure** · activity base in **Pejeng** near Ubud  
+> - Our arena: **All New Bali Adventure** · activity base on **Jl. Raya Krasan, Sedang** (Abiansemal) near Ubud  
 > - Corporate office (GBP) ≠ activity base — see [Contact](/contact) for address roles  
 > - Combos: ATV + Wos River tubing for a full land-and-water day  
 > - Book direct on WhatsApp to lock price before you pay
@@ -195,7 +195,7 @@ Our answers live on the [ATV Ubud guide](/blog/bali-atv-tour-ubud-guide), [price
 
 ## Don’t Confuse Corporate Pin With the Track
 
-Google Business Profile / corporate office is in **Banjar Kenderan**. Self-drive ATV guests meet at the **Pejeng activity base (All New Bali Adventure)** — not the corporate pin. Full NAP roles: [Contact page](/contact).
+Google Business Profile / corporate office is in **Banjar Kenderan**. Self-drive ATV guests meet at the **Sedang activity base (All New Bali Adventure)** on Jl. Raya Krasan, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — not the corporate pin. Full NAP roles: [Contact page](/contact).
 
 ## When a Larger Operator Might Fit
 
@@ -214,7 +214,7 @@ Compare packages on [prices 2026](/blog/bali-adventure-packages-prices-2026), th
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**What is the best way to book a Bali ATV tour near Ubud?** Book a beginner-friendly Single or Tandem ATV ride at **All New Bali Adventure** in Pejeng with gear, lunch, and insurance included. Sekar Bali Activity offers Single ATV from **IDR 750,000** (group tiers lower) and Tandem ATV from **IDR 1,100,000**, with optional **Wos River tubing** after the track.
+**What is the best way to book a Bali ATV tour near Ubud?** Book a beginner-friendly Single or Tandem ATV ride at **All New Bali Adventure** in Sedang, Abiansemal with gear, lunch, and insurance included. Sekar Bali Activity offers Single ATV from **IDR 750,000** (group tiers lower) and Tandem ATV from **IDR 1,100,000**, with optional **Wos River tubing** after the track.
 
 > **Key Takeaways**
 > - Single ATV from IDR 750,000 (1 pax); tier rates for 2+ / 3+; Tandem from IDR 1,100,000 (2 pax)
@@ -240,7 +240,7 @@ Prices match our live [Bali ATV Adventure](/tours/bali-atv-adventure) page. Conf
 
 ## Why Pejeng / Ubud for ATV?
 
-Pejeng sits just east of central Ubud, so transfer times are short and the trails reach jungle paths, muddy tracks, and river crossings without a long haul north. Riders get a full safety briefing — **no prior ATV experience is required**. Our Google Business / corporate pin is in Banjar Kenderan; the ATV meet point is the Pejeng activity base (All New Bali Adventure), not the office pin.
+Sedang (Abiansemal, Badung) sits southwest of central Ubud, so transfer times stay practical and the trails reach jungle paths, muddy tracks, and river crossings without a long haul north. Riders get a full safety briefing — **no prior ATV experience is required**. Our Google Business / corporate pin is in Banjar Kenderan; the ATV meet point is the activity base at **Jl. Raya Krasan, Sedang** (All New Bali Adventure), not the office pin.
 
 ## What Is Included
 
@@ -1346,11 +1346,11 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**Where is the Bali ATV arena near Ubud?** All ATV rides booked through Sekar Bali Activity take place at **All New Bali Adventure** — a dedicated jungle ATV arena in the Pejeng area, east of central Ubud, Gianyar, Bali.
+**Where is the Bali ATV arena near Ubud?** All ATV rides booked through Sekar Bali Activity take place at **All New Bali Adventure** — a dedicated jungle ATV arena on **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**, near Ubud.
 
 > **Key Takeaways**
 > - **Arena name:** All New Bali Adventure
-> - **Operator:** Sekar Bali Activity (Pejeng-based, near Ubud)
+> - **Operator:** Sekar Bali Activity (near Ubud)
 > - **Single ATV:** IDR 750,000 · **Tandem ATV:** IDR 1,100,000
 > - **Included:** lunch, boot shoes, helmet, insurance, safety briefing
 > - **Pickup:** IDR 400,000 hotel pickup charge (cycling tour has free Ubud pickup only)
@@ -1373,7 +1373,7 @@ All New Bali Adventure is the jungle ATV arena where Sekar Bali Activity runs al
 ## How to Get There
 
 - **Hotel pickup:** Available for IDR 400,000. Book via [Bali ATV Adventure](/tours/bali-atv-adventure).
-- **Self-drive:** Pejeng Village area, near Ubud, Gianyar. Message WhatsApp with your hotel for exact pickup time.
+- **Self-drive:** Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352. Message WhatsApp with your hotel for exact pickup time.
 - **Free Ubud pickup:** Not included on ATV — free Ubud pickup applies to [ricefield cycling](/tours/ubud-ricefield-cycling-tour) and [Tumang cooking class](/tours/balinese-cooking-class).
 
 ## Single vs Tandem at All New Bali Adventure

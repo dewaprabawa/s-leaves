@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     question: "Where is the ATV arena?",
-    answer: "All ATV rides take place at All New Bali Adventure — our Pejeng activity base near Ubud (not our corporate office in Banjar Kenderan or the central Ubud meeting point). Hotel pickup is available, or self-meet at the arena with no transport fee. Full address roles are listed on the Contact page."
+    answer: "All ATV rides take place at All New Bali Adventure — our activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 (not our corporate office in Banjar Kenderan or the central Ubud meeting point). Hotel pickup is available, or self-meet at the arena with no transport fee. Full address roles are listed on the Contact page."
   },
   {
     question: "Which tours have free Ubud hotel pickup?",

@@ -75,25 +75,31 @@ export const GUEST_MEETING_POINT: BusinessLocation = {
 }
 
 /**
- * Where adventures run (village geography + ATV arena).
+ * Where adventures run (ATV arena + self-meet).
  * Self-drive / no-pickup guests meet at All New Bali Adventure here.
  */
 export const ACTIVITY_BASE: BusinessLocation = {
   role: 'activityBase',
   label: 'Activity Base',
   purpose:
-    'Pejeng village near Ubud — home of our cycling routes, the All New Bali Adventure ATV arena, and nearby Tumang Bali Cooking Class.',
-  lines: ['Pejeng Village', 'Ubud, Gianyar, Bali, Indonesia'],
-  formatted: 'Pejeng Village, Ubud, Gianyar, Bali, Indonesia',
-  streetAddress: 'Pejeng Village',
-  addressLocality: 'Ubud, Gianyar',
+    'Sedang, Abiansemal (Badung) near Ubud — home of the All New Bali Adventure ATV arena and self-meet for adventure tours.',
+  lines: [
+    'Jl. Raya Krasan, Sedang',
+    'Kec. Abiansemal, Kabupaten Badung',
+    'Bali 80352, Indonesia',
+  ],
+  formatted:
+    'Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352',
+  streetAddress: 'Jl. Raya Krasan, Sedang, Kec. Abiansemal',
+  addressLocality: 'Kabupaten Badung',
   addressRegion: 'Bali',
-  postalCode: '80552',
+  postalCode: '80352',
   addressCountry: 'ID',
-  lat: -8.5133,
-  lng: 115.2989,
+  // Desa Sedang (Abiansemal) centroid — Maps search uses full street address
+  lat: -8.56717,
+  lng: 115.24133,
   mapUrl:
-    'https://www.google.com/maps/search/?api=1&query=All+New+Bali+Adventure+Pejeng+Ubud+Bali',
+    'https://www.google.com/maps/search/?api=1&query=Jl.+Raya+Krasan+Sedang+Abiansemal+Badung+Bali+80352',
 }
 
 /** Primary NAP for LocalBusiness schema & citations = GBP corporate address */

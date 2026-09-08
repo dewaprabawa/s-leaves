@@ -267,7 +267,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     <Compass className="w-4 h-4 shrink-0 mt-0.5 text-accent-amber" />
                     <span>
                       <span className="block font-medium opacity-90">Activity base</span>
-                      Pejeng Village, Ubud<br />Bali, Indonesia
+                      {ACTIVITY_BASE.lines[0]}
+                      <br />
+                      {ACTIVITY_BASE.lines[1]}
+                      <br />
+                      {ACTIVITY_BASE.lines[2]}
                       <Link href="/contact" className="block mt-1.5 text-xs underline underline-offset-2 opacity-80 hover:opacity-100">
                         Corporate office &amp; meeting point
                       </Link>

@@ -29,6 +29,10 @@ export const COOKING_GEO_ENTITY = {
   privateCoupleIdr: COOKING_CLASS_PRIVATE_COUPLE_IDR,
   maxGuestsShared: 8,
   recognition: 'TripAdvisor Traveler’s Choice 2026 · 5.0 rating (1500+ reviews)',
+  /** Mirrors the TripAdvisor rating already stated in visible on-page copy above (Recognition) — required by Google's structured data policy for aggregateRating. */
+  ratingValue: 5.0,
+  reviewCount: 1500,
+  ratingSource: 'TripAdvisor',
 } as const
 
 export type CookingGeoFaq = {

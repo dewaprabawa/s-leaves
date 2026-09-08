@@ -143,6 +143,13 @@ const adventureOffers: AdventureOffer[] = [
     price: '750000',
     image: '/images/adventures/cycling.jpg',
   },
+  {
+    name: 'Tumang Bali Cooking Class',
+    description:
+      'Family-run Balinese cooking class near Ubud with Chef Wayan Sudiana — morning market tour, rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. TripAdvisor Traveler\u2019s Choice 2026.',
+    price: '506370',
+    image: '/images/cooking/pancake-toss.jpg',
+  },
 ]
 
 // Keep homepage JSON-LD lean: ItemList already covers package offers.
@@ -165,6 +172,7 @@ const footerLinks = {
     { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
     { label: "Canyon Tubing", href: "/tours/canyon-tubing" },
     { label: "Ubud Ricefield Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
+    { label: "Tumang Bali Cooking Class", href: "/tours/balinese-cooking-class" },
     { label: "Book All Activities", href: "/book" },
     { label: "All Pricing", href: "/#pricing" },
   ],

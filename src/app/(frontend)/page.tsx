@@ -299,8 +299,8 @@ export default function Home() {
       />
 
       {/* ═══ HERO ═══ */}
-      <section id="top" className="relative w-full min-h-[100svh] flex flex-col justify-end overflow-hidden">
-        <div className="absolute inset-0">
+      <section id="top" className="relative w-full min-h-[100svh] flex flex-col justify-end overflow-x-clip overflow-y-visible">
+        <div className="absolute inset-0 overflow-hidden">
           <Image
             src="/images/adventures/hero-banner.jpg"
             alt="Bali travel activities — jungle trails, village paths, and Ubud day experiences"
@@ -315,7 +315,7 @@ export default function Home() {
           />
           <div className="hero-overlay absolute inset-0" />
         </div>
-        <div className="relative z-10 flex flex-col items-start justify-end text-left px-6 md:px-12 lg:px-16 pt-36 pb-14 md:pb-20 max-w-5xl">
+        <div className="relative z-20 flex flex-col items-start justify-end text-left px-6 md:px-12 lg:px-16 pt-36 pb-14 md:pb-20 max-w-5xl">
           <p className="hero-brand text-3xl sm:text-4xl md:text-5xl font-bold uppercase mb-5 animate-fade-in-up">
             Sekar Bali Activity
           </p>

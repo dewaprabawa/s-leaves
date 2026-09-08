@@ -15,14 +15,14 @@ import { SITE_NAME, SITE_URL } from "@/lib/seo"
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Sekar Bali Activity — corporate office in Banjar Kenderan (Google Business Profile), central Ubud meeting point, and Pejeng activity base. WhatsApp +62 817 7572 3663.",
+    "Contact Sekar Bali Activity — corporate office in Banjar Kenderan (Google Business Profile), central Ubud meeting point, and Sedang (Abiansemal) activity base. WhatsApp +62 817 7572 3663.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
     title: `Contact Us | ${SITE_NAME}`,
     description:
-      "WhatsApp or email our team. Corporate office matches Google Maps; Pejeng is the activity base for ATV and village tours.",
+      "WhatsApp or email our team. Corporate office matches Google Maps; Sedang, Abiansemal is the activity base for ATV and adventure tours.",
     url: `${SITE_URL}/contact`,
     siteName: SITE_NAME,
     type: "website",
@@ -69,7 +69,7 @@ export default function ContactPage() {
           <p className="text-base md:text-lg text-brand-green-light leading-relaxed max-w-2xl">
             Tell us your date, guest count, and activity — we confirm availability and the IDR
             total with no payment to inquire. Addresses below separate corporate office, central
-            Ubud meeting point, and Pejeng activity base.
+            Ubud meeting point, and the Sedang (Abiansemal) activity base.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <a
@@ -232,7 +232,7 @@ export default function ContactPage() {
             >
               {MEETING_POINT.name}
             </a>{" "}
-            at our Pejeng activity base — not at the corporate office pin.
+            at our Sedang (Abiansemal) activity base — not at the corporate office pin.
           </p>
         </section>
 

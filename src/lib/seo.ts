@@ -60,11 +60,14 @@ export function buildOrganizationSchema() {
         '@type': 'PropertyValue',
         name: 'activityBaseNote',
         value:
-          'Adventures run from Pejeng / All New Bali Adventure near Ubud — not from the corporate office pin.',
+          'Adventures run from Jl. Raya Krasan, Sedang (Abiansemal) / All New Bali Adventure near Ubud — not from the corporate office pin.',
       },
     ],
     areaServed: [
       { '@type': 'Place', name: 'Ubud' },
+      { '@type': 'Place', name: 'Sedang' },
+      { '@type': 'Place', name: 'Abiansemal' },
+      { '@type': 'Place', name: 'Badung' },
       { '@type': 'Place', name: 'Pejeng' },
       { '@type': 'Place', name: 'Kenderan' },
       { '@type': 'Place', name: 'Gianyar' },

@@ -10,5 +10,5 @@ export const MEETING_POINT = {
   mapUrl: ACTIVITY_BASE.mapUrl,
   /** Role note for UI copy */
   roleNote:
-    'Activity base in Pejeng — where ATV rides start. Not the corporate office or central Ubud meeting point.',
+    'Activity base on Jl. Raya Krasan, Sedang (Abiansemal) — where ATV rides start. Not the corporate office or central Ubud meeting point.',
 } as const

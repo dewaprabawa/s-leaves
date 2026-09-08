@@ -308,7 +308,7 @@ export default function Home() {
             preload
             fetchPriority="high"
             sizes="100vw"
-            quality={72}
+            quality={75}
             placeholder="blur"
             blurDataURL={HERO_BLUR_DATA_URL}
             className="object-cover object-[center_42%] hero-kenburns"

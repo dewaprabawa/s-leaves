@@ -1,24 +1,28 @@
-"use client";
+"use client"
 
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-import { Send, CheckCircle2, Loader2, AlertCircle, User, Mail, MessageSquare } from "lucide-react";
+import React, { useState } from "react"
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import * as z from "zod"
+import { Send, CheckCircle2, Loader2, AlertCircle, User, Mail, MessageSquare } from "lucide-react"
+import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Please enter a valid email address"),
   subject: z.string().min(5, "Subject must be at least 5 characters"),
   message: z.string().min(10, "Message must be at least 10 characters"),
-});
+})
 
-type FormValues = z.infer<typeof formSchema>;
+type FormValues = z.infer<typeof formSchema>
+
+const fieldClass =
+  "w-full px-4 py-3 border border-brand-green/15 bg-sand/40 text-brand-green placeholder:text-brand-green-light/60 focus:ring-2 focus:ring-accent-gold/40 focus:border-accent-gold/50 outline-none transition-all"
 
 export default function ContactFormClient() {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSuccess, setIsSuccess] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const {
     register,
@@ -27,137 +31,174 @@ export default function ContactFormClient() {
     reset,
   } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
-    mode: "onChange"
-  });
+    mode: "onChange",
+  })
 
   const onSubmit = async (data: FormValues) => {
-    setIsSubmitting(true);
-    setError(null);
-    
+    setIsSubmitting(true)
+    setError(null)
+
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      
-      const webhookUrl = process.env.NEXT_PUBLIC_CRM_WEBHOOK_URL || "https://placeholder-webhook.site/s-leaves/crm";
-      
+      await new Promise((resolve) => setTimeout(resolve, 1500))
+
+      const webhookUrl =
+        process.env.NEXT_PUBLIC_CRM_WEBHOOK_URL ||
+        "https://placeholder-webhook.site/s-leaves/crm"
+
       await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       }).catch(() => {
-        console.log("Webhook submission simulated:", data);
-      });
+        console.log("Webhook submission simulated:", data)
+      })
 
-      setIsSuccess(true);
-      reset();
-      
-      setTimeout(() => setIsSuccess(false), 5000);
-    } catch (err) {
-      setError("Something went wrong. Please try again later.");
+      setIsSuccess(true)
+      reset()
+      setTimeout(() => setIsSuccess(false), 5000)
+    } catch {
+      setError("Something went wrong. Please try WhatsApp instead.")
     } finally {
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   if (isSuccess) {
     return (
-      <div className="bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800 rounded-3xl p-8 text-center space-y-4 shadow-sm h-full flex flex-col items-center justify-center min-h-[400px]">
-        <div className="w-16 h-16 bg-sky-100 dark:bg-sky-800 rounded-full flex items-center justify-center mx-auto mb-2">
-          <CheckCircle2 className="w-8 h-8 text-sky-600 dark:text-sky-400" />
+      <div className="bg-white border border-brand-green/10 p-8 md:p-10 text-center space-y-4 min-h-[420px] flex flex-col items-center justify-center">
+        <div className="w-14 h-14 rounded-full bg-accent-gold/12 text-accent-gold-dark flex items-center justify-center mb-1">
+          <CheckCircle2 className="w-7 h-7" />
         </div>
-        <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Message Sent!</h3>
-        <p className="text-sky-800 dark:text-sky-200 max-w-sm mx-auto">
-          Thank you for reaching out. Our travel specialists will contact you shortly.
+        <h3 className="font-display text-2xl font-bold uppercase text-brand-green">
+          Message sent
+        </h3>
+        <p className="text-brand-green-light max-w-sm mx-auto text-sm leading-relaxed">
+          Thank you for reaching out. Our team will reply shortly — WhatsApp is fastest if you
+          need a same-day booking.
         </p>
-        <button
-          onClick={() => setIsSuccess(false)}
-          className="mt-6 px-6 py-2.5 rounded-xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-900 dark:text-white transition-colors text-sm font-semibold shadow-sm"
-        >
-          Send another message
-        </button>
+        <div className="flex flex-wrap gap-3 justify-center pt-4">
+          <button
+            type="button"
+            onClick={() => setIsSuccess(false)}
+            className="h-11 px-6 rounded-full border border-brand-green/20 text-brand-green text-sm font-semibold hover:bg-brand-green/5 transition-colors"
+          >
+            Send another message
+          </button>
+          <a
+            href={CONTACT_WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center h-11 px-6 rounded-full btn-gold-shimmer text-sm font-bold uppercase tracking-wider"
+          >
+            WhatsApp us
+          </a>
+        </div>
       </div>
-    );
+    )
   }
 
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-3xl shadow-xl border border-gray-150 dark:border-gray-800 p-6 md:p-8">
+    <div className="bg-white border border-brand-green/10 p-6 md:p-8 lg:p-10">
       <div className="mb-8">
-        <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">Send us a message</h3>
-        <p className="text-gray-500 dark:text-gray-400 text-sm">We'll get back to you within 24 hours.</p>
+        <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-xs mb-2">
+          Message
+        </p>
+        <h2 className="font-display text-2xl md:text-3xl font-bold uppercase text-brand-green mb-2">
+          Send us a note
+        </h2>
+        <p className="text-brand-green-light text-sm leading-relaxed">
+          We usually reply within 24 hours. For bookings today or tomorrow, use WhatsApp.
+        </p>
       </div>
 
-      {error && (
-        <div className="mb-6 p-3.5 rounded-xl bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 text-sm border border-red-200 dark:border-red-800 flex gap-2">
+      {error ? (
+        <div className="mb-6 p-3.5 bg-accent-gold/10 text-accent-gold-dark text-sm border border-accent-gold/25 flex gap-2">
           <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
           <p>{error}</p>
         </div>
-      )}
+      ) : null}
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           <div>
-            <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-              <User className="w-4 h-4 text-sky-500" /> Full Name
+            <label className="flex items-center gap-2 text-sm font-medium text-brand-green mb-1.5">
+              <User className="w-4 h-4 text-accent-gold-dark" /> Full name
             </label>
             <input
               {...register("name")}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600"
-              placeholder="John Doe"
+              className={fieldClass}
+              placeholder="Your name"
+              autoComplete="name"
             />
-            {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
+            {errors.name ? (
+              <p className="text-accent-gold-dark text-xs mt-1">{errors.name.message}</p>
+            ) : null}
           </div>
 
           <div>
-            <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-              <Mail className="w-4 h-4 text-sky-500" /> Email Address
+            <label className="flex items-center gap-2 text-sm font-medium text-brand-green mb-1.5">
+              <Mail className="w-4 h-4 text-accent-gold-dark" /> Email
             </label>
             <input
               {...register("email")}
-              className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600"
-              placeholder="john@example.com"
+              type="email"
+              className={fieldClass}
+              placeholder="you@email.com"
+              autoComplete="email"
             />
-            {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
+            {errors.email ? (
+              <p className="text-accent-gold-dark text-xs mt-1">{errors.email.message}</p>
+            ) : null}
           </div>
         </div>
 
         <div>
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
-            <MessageSquare className="w-4 h-4 text-sky-500" /> Subject
+          <label className="flex items-center gap-2 text-sm font-medium text-brand-green mb-1.5">
+            <MessageSquare className="w-4 h-4 text-accent-gold-dark" /> Subject
           </label>
           <input
             {...register("subject")}
-            className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600"
-            placeholder="How can we help you?"
+            className={fieldClass}
+            placeholder="Booking question, pickup, custom quote…"
           />
-          {errors.subject && <p className="text-red-500 text-xs mt-1">{errors.subject.message}</p>}
+          {errors.subject ? (
+            <p className="text-accent-gold-dark text-xs mt-1">{errors.subject.message}</p>
+          ) : null}
         </div>
 
         <div>
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5">
+          <label className="flex items-center gap-2 text-sm font-medium text-brand-green mb-1.5">
             Message
           </label>
           <textarea
             {...register("message")}
-            rows={4}
-            className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 focus:ring-2 focus:ring-sky-500/50 outline-none transition-all dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-600 resize-none"
-            placeholder="Tell us about your dream trip..."
+            rows={5}
+            className={`${fieldClass} resize-none`}
+            placeholder="Date, hotel area, guests, and which activity you want…"
           />
-          {errors.message && <p className="text-red-500 text-xs mt-1">{errors.message.message}</p>}
+          {errors.message ? (
+            <p className="text-accent-gold-dark text-xs mt-1">{errors.message.message}</p>
+          ) : null}
         </div>
 
-        <div className="pt-2">
+        <div className="pt-1">
           <button
             type="submit"
             disabled={isSubmitting || !isValid}
-            className="w-full py-3 px-6 bg-sky-600 hover:bg-sky-500 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-xl font-semibold transition-colors flex items-center justify-center shadow-lg shadow-sky-600/20"
+            className="w-full h-12 px-6 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2"
           >
             {isSubmitting ? (
-              <><Loader2 className="w-5 h-5 mr-2 animate-spin" /> Sending...</>
+              <>
+                <Loader2 className="w-5 h-5 animate-spin" /> Sending…
+              </>
             ) : (
-              <>Send Message <Send className="w-4 h-4 ml-2" /></>
+              <>
+                Send message <Send className="w-4 h-4" />
+              </>
             )}
           </button>
         </div>
       </form>
     </div>
-  );
+  )
 }

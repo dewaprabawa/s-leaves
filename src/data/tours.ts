@@ -761,9 +761,9 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     isTopPick: true,
     duration: "3–4 Hours",
     basePrice: 506370,
-    seoTitle: "Tumang Bali Cooking Class Ubud",
+    seoTitle: "Cooking Class Ubud | Tumang from IDR 506K",
     seoDescription:
-      "Tumang Bali Cooking Class near Ubud — market tour, rice-field walk, 10+ dishes, max 8 guests. Shared from IDR 506,370. Free Ubud pickup. Book WhatsApp.",
+      "Tumang Bali Cooking Class near Ubud — market tour, rice-field walk, 10+ dishes, max 8 guests. Shared IDR 506,370. Free Ubud pickup. Book on WhatsApp.",
     heroImage: {
       url: "/images/cooking/pancake-toss.jpg",
       alt: "Hands-on Tumang Bali Cooking Class near Ubud",

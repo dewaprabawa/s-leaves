@@ -160,7 +160,7 @@ const travelGuides = [
   },
   {
     title: "Cycling & Cooking Class in Ubud",
-    excerpt: "Full-day rice paddy cycling plus evening Balinese cooking class — prices and itinerary.",
+    excerpt: "Pejeng ricefield cycling plus afternoon Tumang cooking class — prices and itinerary.",
     href: "/blog/cycling-cooking-class-ubud-full-day-itinerary",
   },
   {

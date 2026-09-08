@@ -105,7 +105,7 @@ Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsap
 > - **IDR 750,000** · free Ubud pickup · **lunch included** · insurance  
 > - Route: **Pejeng** countryside / rice paddy paths — not mass Tegallalang traffic  
 > - Skip it if you only want motors/mud — book [ATV](/tours/bali-atv-adventure) instead  
-> - Pair with an evening [cooking class](/blog/cycling-cooking-class-ubud-full-day-itinerary) for a full culture day  
+> - Pair with an afternoon [Tumang cooking class](/blog/cycling-cooking-class-ubud-full-day-itinerary) for a full culture day  
 > - Book on WhatsApp — no upfront payment to inquire
 
 ---
@@ -142,13 +142,13 @@ Many “Ubud cycling” reviews complain about traffic and selfie crowds. Our ri
 
 ## Make It a Culture Combo Day
 
-Morning/afternoon ricefield cycling + evening Balinese dinner cooking class is one of the highest-intent searches near Ubud. Full plan: [Cycling & cooking class itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+Morning/afternoon ricefield cycling + afternoon Tumang Bali Cooking Class is one of the highest-intent searches near Ubud. Full plan: [Cycling & cooking class itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
 
 ## Verdict
 
 If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 750,000 — especially with free pickup and lunch included. If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
 
-**Ready to decide?** Book [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) on WhatsApp, add an evening [Balinese cooking class](/tours/balinese-cooking-class), or open [Book](/book) with your hotel and date.
+**Ready to decide?** Book [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) on WhatsApp, add [Tumang Bali Cooking Class](/tours/balinese-cooking-class), or open [Book](/book) with your hotel and date.
 `
   },
   {
@@ -354,7 +354,7 @@ Accurate **age** and **Adult/Child** selection sets the right rate. **Location**
 
 ## Website Booking Form
 
-On [sekarbaliactivity.com](/) tap **Book Now** or **Book This Adventure**. The popup asks for name, age, adult/child, map pin + hotel name, date, and guest counts — then sends everything to WhatsApp in one tap.
+On [sekarbaliactivity.com](/) tap **Book Now** or **Book This Experience**. The popup asks for name, age, adult/child, map pin + hotel name, date, and guest counts — then sends everything to WhatsApp in one tap.
 
 ## Contact
 
@@ -442,7 +442,7 @@ Ready to see this living heritage up close? Join us in Pejeng and cycle through 
   {
     slug: '5-essential-balinese-spices',
     title: "5 Balinese Spices for Cooking Class",
-    excerpt: "Turmeric, galangal, lemongrass, candlenut, kencur — the Base Genep spices you pound in our Pejeng cooking class.",
+    excerpt: "Turmeric, galangal, lemongrass, candlenut, kencur — the Base Genep spices you pound in Tumang Bali Cooking Class.",
     publishedAt: "2026-08-18",
     author: "Sekar Bali Activity",
     image: "https://images.unsplash.com/photo-1596649845347-f58c73c2ea6f?auto=format&fit=crop&w=1200&q=80",
@@ -451,7 +451,7 @@ Ready to see this living heritage up close? Join us in Pejeng and cycle through 
 
 If you have tasted authentic Balinese food, you know that the flavors are complex, deeply aromatic, and utterly unforgettable. The secret behind almost every traditional dish—from *Ayam Betutu* to *Sate Lilit*—is a master spice paste known as **Base Genep** (pronounced *Bah-say Guh-nup*).
 
-When you book our [Traditional Balinese Dinner Cooking Class](/#adventures), the very first thing you will do is learn how to make Base Genep from scratch using a traditional stone mortar and pestle (*ulekan*). 
+When you book [Tumang Bali Cooking Class](/tours/balinese-cooking-class), one of the first skills you learn is how to make Base Genep from scratch using a traditional stone mortar and pestle (*ulekan*). 
 
 Here are 5 of the essential spices you will be working with:
 
@@ -756,7 +756,7 @@ These habits matter as much as the sarong when you cycle past village temples on
 Temple mornings pair well with slow village time:
 
 - **Ride the paddies:** [Ubud ricefield cycling tour](/tours/ubud-ricefield-cycling-tour) — lunch included, free Ubud hotel pickup, small group on Subak paths (not the Tegallalang swing strip).  
-- **Cook dinner:** [Balinese cooking class in Pejeng](/tours/balinese-cooking-class) — Base Genep spice paste and a shared evening meal.  
+- **Cook:** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) — market tour (AM), 10+ dishes, shared from IDR 506,370 with Ubud pickup.  
 - **Need mud and engines instead?** [Private ATV near Ubud](/tours/bali-atv-adventure) at All New Bali Adventure — still book via WhatsApp with name, date, and hotel.
 
 Coming from the airport first? Skim our [DPS to Ubud transfer guide](/blog/bali-airport-transfer-guide-dps-to-ubud), then plan temple clothes before your first courtyard stop.
@@ -807,7 +807,7 @@ If you are traveling with teenagers, on a honeymoon, or simply love photography,
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1596649845347-f58c73c2ea6f?auto=format&fit=crop&w=1200&q=80",
     content: `
-**What is the best traditional food in Bali?** The most iconic and culturally significant traditional Balinese food is **Ayam Betutu**, a whole chicken heavily marinated in a complex spice paste (Base Genep), wrapped in banana leaves, and slow-roasted for up to 12 hours. Other absolute must-try dishes include **Babi Guling** (spit-roasted suckling pig), **Sate Lilit** (minced meat wrapped around lemongrass stalks), **Lawar** (a vibrant salad of long beans, grated coconut, and rich spices), and the ubiquitous **Sambal Matah** (a raw, spicy shallot and lemongrass relish). To truly appreciate these complex flavors, travelers can learn to prepare them from scratch by booking our highly-rated [Traditional Balinese Cooking Class](/#adventures).
+**What is the best traditional food in Bali?** The most iconic and culturally significant traditional Balinese food is **Ayam Betutu**, a whole chicken heavily marinated in a complex spice paste (Base Genep), wrapped in banana leaves, and slow-roasted for up to 12 hours. Other absolute must-try dishes include **Babi Guling** (spit-roasted suckling pig), **Sate Lilit** (minced meat wrapped around lemongrass stalks), **Lawar** (a vibrant salad of long beans, grated coconut, and rich spices), and the ubiquitous **Sambal Matah** (a raw, spicy shallot and lemongrass relish). To truly appreciate these complex flavors, travelers can learn to prepare them from scratch by booking [Tumang Bali Cooking Class](/tours/balinese-cooking-class).
 
 ### 1. Ayam Betutu (Slow-Cooked Spiced Chicken)
 This is the king of Balinese cuisine. The secret is the *Base Genep* spice paste, which is stuffed inside the chicken and rubbed all over the skin before a long, slow roasting process. The meat becomes incredibly tender and intensely flavorful.
@@ -824,7 +824,7 @@ You will find this on almost every table in Bali. It is a fresh, raw mixture of 
 ### 5. Babi Guling (Suckling Pig)
 Usually reserved for special ceremonies, Babi Guling is famous for its crispy skin and tender meat, achieved by slow-roasting the pig over an open fire while basting it with coconut water and spices.
 
-*(Want to learn how to cook Sate Lilit, Lawar, and Sambal Matah? Join our [Balinese Cooking Class](/#adventures) tonight!)*
+*(Want to learn how to cook Sate Lilit, Lawar, and Sambal Matah? Join [Tumang Bali Cooking Class](/tours/balinese-cooking-class)!)*
 `
   },
   {
@@ -853,58 +853,59 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
   },
   {
     slug: "inside-balinese-cooking-class-pejeng",
-    title: "Inside Our Pejeng Cooking Class",
-    excerpt: "Market walk, Base Genep pounding, and a shared dinner — what happens in our hands-on Balinese cooking class in Pejeng.",
-    publishedAt: "2026-08-12",
+    title: "Inside Tumang Bali Cooking Class Near Ubud",
+    excerpt:
+      "Market tour, rice-field walk, Base Genep, and 10+ dishes — what happens in Tumang Bali Cooking Class (shared from IDR 506,370).",
+    publishedAt: "2026-09-08",
     author: "Sekar Bali Activity Team",
     image: "/images/cooking/stovetop-class.jpg",
     content: `
-**What happens during a traditional Balinese cooking class in Ubud?** Our [Traditional Balinese Cooking Class](/#adventures) in Pejeng begins with an authentic morning market walk where guests learn to identify exotic herbs and spices from local sellers. Back in our traditional open-air kitchen, guests get hands-on experience pounding fresh *Base Genep* spice paste, molding *Sate Lilit* skewers around bamboo, and mastering the art of flipping green *Dadar Gulung* pandan crepes over flame before feasting together on a buffet spread of their own creations.
+**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Sudiana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Shared from **IDR 506,370**; private from **IDR 633,090**. TripAdvisor Traveler’s Choice 2026.
 
-![Local guide explaining fresh market ingredients in Pejeng market](/images/cooking/market-guide.jpg)
+> **Key Takeaways**
+> - Shared class: **IDR 506,370** / person · max **8** guests · Ubud pickup included  
+> - Private: **IDR 633,090** (1) · **IDR 1,266,180** (2)  
+> - Morning = market tour + kitchen; afternoon pairs well with Pejeng ricefield cycling  
+> - Fully hands-on stations — not a hotel demo  
+> - Book via Sekar Bali Activity WhatsApp — no upfront payment to inquire  
 
-### 1. The Morning Market Walk: Where Flavor Begins
-Before any fire is lit or any knife is picked up, great Balinese food starts at the market. Accompanied by our local host, you will walk through the traditional Pejeng morning market. Here, you won't just look—you will smell, touch, and sample fresh galangal, turmeric, lemongrass, kaffir lime, and tiny red bird's eye chilies.
+![Local guide explaining fresh market ingredients](/images/cooking/market-guide.jpg)
 
-Our host explains how every ingredient serves a dual purpose in Balinese life: adding rich flavor to dishes and offering medicinal *Jamui* benefits for bodily balance.
+### 1. Morning Market Walk (AM sessions)
+
+Great Balinese food starts at the pasar. On morning shared classes, guests walk a traditional market with the host — smell, touch, and sample galangal, turmeric, lemongrass, kaffir lime, and bird’s eye chilies before cooking.
+
+Afternoon sessions skip the market and go straight into the rice-field walk and kitchen — ideal after [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour).
 
 ![Shaping traditional Balinese Sate Lilit skewers](/images/cooking/sate-lilit-prep.jpg)
 
-### 2. Pounding Base Genep & Shaping Sate Lilit
-In the open-air kitchen pavilion overlooking Pejeng's lush greenery, each guest has their own dedicated cooking station. We start by preparing **Base Genep**—the sacred yellow spice paste that forms the flavor foundation of Balinese cuisine. Using heavy stone mortars and pestles, you will crush fresh shallots, garlic, aromatic ginger, candlelight nuts, and chili into a smooth, fragrance-filled paste.
+### 2. Base Genep, Sate Lilit & 10+ Dishes
 
-Next, you will blend this paste with minced meat and grated coconut to mold traditional **Sate Lilit** around bamboo skewers, learning the delicate hand technique passed down through generations of Balinese families.
+In the open-air kitchen, each guest works at their own station. You pound **Base Genep**, mold **Sate Lilit**, build sambals, and cook a full spread of classic dishes under Chef Wayan Sudiana’s English instruction.
 
-![Guests flipping Dadar Gulung pandan crepes in the pan](/images/cooking/crepe-flip-fun.jpg)
+![Guests flipping Dadar Gulung pandan crepes](/images/cooking/crepe-flip-fun.jpg)
 
-### 3. Flipping Dadar Gulung & Stovetop Fun
-Cooking should be fun, interactive, and joyous! During the dessert portion of the class, our guests learn to make **Dadar Gulung**—vibrant green Balinese crepes infused with natural pandan juice and stuffed with sweet shredded coconut simmered in palm sugar (*gula merah*).
+### 3. Dadar Gulung & Stovetop Fun
 
-Flipping these delicate crepes live over individual gas burners always brings laughter and great photos as everyone tries their hand at the perfect pancake toss!
+Dessert often includes **Dadar Gulung** — green pandan crepes with palm-sugar coconut. Flipping crepes over individual burners is the photo moment of the class.
 
-![Traditional Balinese buffet feast prepared by hosts and guests](/images/cooking/buffet-spread.jpg)
+![Traditional Balinese buffet feast](/images/cooking/buffet-spread.jpg)
 
 ### 4. The Family Feast
-After all five traditional dishes are cooked to perfection, we set out a lavish buffet spread in our open pavilion. Guests sit together family-style to enjoy the delicious meal they prepared with their own hands, accompanied by cold drinks, fresh tropical fruits, and great conversation.
 
-Every guest receives a digital recipe book to take home so you can recreate authentic Balinese dinners for your family and friends back home.
+After cooking, the group sits family-style and eats what everyone prepared — cold drinks, tropical fruit, and conversation included in the shared experience.
 
-### Recommended Cooking Class Resources:
-- [Authentic Balinese Cooking Class](https://tumangbaliclass.com/authentic-balinese-cooking-class)
-- [Best Bali Cooking Class Experience](https://tumangbaliclass.com/best-bali-cooking-class)
-- [Bali Cooking Class for Beginners](https://tumangbaliclass.com/bali-cooking-class-for-beginners)
-- [Vegetarian Cooking Class in Ubud](https://tumangbaliclass.com/vegetarian-cooking-class-ubud)
-- [Private Cooking Class Ubud](https://tumangbaliclass.com/private-cooking-class-ubud)
-- [Cooking Class with Market Tour Ubud](https://tumangbaliclass.com/cooking-class-with-market-tour-ubud)
-- [Half Day Cooking Class Bali](https://tumangbaliclass.com/half-day-cooking-class-bali)
-- [Where to Stay for Bali Cooking Class](https://tumangbaliclass.com/where-to-stay-bali-cooking-class)
-- [What to Wear for Bali Cooking Class](https://tumangbaliclass.com/what-to-wear-bali-cooking-class)
-- [Balinese Cooking Class Ubud Guide](https://tumangbaliclass.com/balinese-cooking-class-ubud)
-- [Best Cooking Classes in Bali Overview](https://tumangbaliclass.com/best-cooking-classes-bali)
+### Prices & Booking (2026)
 
-Want rice paddies *and* the kitchen in one day? See our [Cycling & Cooking Class Ubud full-day itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+| Option | Price | Notes |
+| --- | --- | --- |
+| Shared morning / afternoon | **IDR 506,370** / person | Max 8 · Ubud pickup |
+| Private (1 guest) | **IDR 633,090** | Exclusive kitchen |
+| Private (2 guests) | **IDR 1,266,180** | Total for two |
 
-Ready to cook with us? [Book Your Balinese Cooking Class](/tours/balinese-cooking-class) now or send us a message on [WhatsApp](https://wa.me/6281775723663)!
+Pair with cycling the same day: [Cycling + Tumang cooking itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary). Operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud).
+
+**Ready to cook?** [Book Tumang Bali Cooking Class](/tours/balinese-cooking-class) or message [WhatsApp](https://wa.me/6281775723663).
 `
   },
   {
@@ -941,7 +942,7 @@ While both locations use the UNESCO-recognized **Subak** cooperative irrigation 
 
 ***
 
-**Ready to ride the quiet side of Ubud?** Book the [Ubud ricefield cycling tour](/tours/ubud-ricefield-cycling-tour) — lunch included, free Ubud hotel pickup, Pejeng Subak lanes (not the Tegallalang swing strip). Pair with an evening [Balinese cooking class](/tours/balinese-cooking-class) for a full culture day.
+**Ready to ride the quiet side of Ubud?** Book the [Ubud ricefield cycling tour](/tours/ubud-ricefield-cycling-tour) — lunch included, free Ubud hotel pickup, Pejeng Subak lanes (not the Tegallalang swing strip). Pair with an afternoon [Tumang Bali Cooking Class](/tours/balinese-cooking-class) for a full culture day.
 `
   },
   {
@@ -958,7 +959,7 @@ While both locations use the UNESCO-recognized **Subak** cooperative irrigation 
 > - **Core Rhizomes**: Galangal, Turmeric, Ginger, and Lesser Galangal (*Kencur*).
 > - **Aromatic Seeds**: Coriander seeds, white pepper, black pepper, and nutmeg.
 > - **Traditional Tool**: Always ground manually using a heavy granite mortar and pestle (*ulekan*) to release essential oils without scorching the spices.
-> - **Hands-On Experience**: Included as step one in our [Traditional Balinese Cooking Class](/#adventures).
+> - **Hands-On Experience**: Included as step one in [Tumang Bali Cooking Class](/tours/balinese-cooking-class).
 
 ---
 
@@ -983,7 +984,7 @@ Hand-pounding with a stone mortar (*ulekan*) crushes the fibers gently, releasin
 
 Nothing matches the experience of smelling Base Genep as it sizzles in coconut oil over an open flame in a traditional outdoor kitchen. 
 
-Book your seat at our [Traditional Balinese Dinner Cooking Class](/tours/balinese-cooking-class) in Pejeng, where you'll make Base Genep from scratch and cook a 5-course feast. Add [ricefield cycling](/tours/ubud-ricefield-cycling-tour) earlier the same day, or open [Book](/book) to send dates on WhatsApp.
+Book your seat at [Tumang Bali Cooking Class](/tours/balinese-cooking-class) near Ubud — make Base Genep from scratch and cook 10+ dishes (shared from IDR 506,370 with Ubud pickup). Add [ricefield cycling](/tours/ubud-ricefield-cycling-tour) earlier the same day, or open [Book](/book) to send dates on WhatsApp.
 `
   },
   {
@@ -1017,7 +1018,7 @@ Book your seat at our [Traditional Balinese Dinner Cooking Class](/tours/balines
 
 1. **Meet Your Driver Past Customs**: After passing baggage claim and customs, walk past the currency exchange booths toward the designated **Driver Meeting Area**. Your pre-booked driver will be holding a clear sign with your name.
 2. **Flight Tracking Included**: When you book through [Sekar Bali Activity Transfers](/transfers), we track your flight number in real-time. If your flight is delayed 2 hours, your driver automatically adjusts arrival time without extra penalty fees.
-3. **Combine Airport Pickups with Tours**: Arriving early in the morning? Many guests combine their airport transfer with a stop at Tanah Lot or a peaceful evening [Balinese Cooking Class](/tours/balinese-cooking-class).
+3. **Combine Airport Pickups with Tours**: Arriving early in the morning? Many guests combine their airport transfer with a stop at Tanah Lot or a [Tumang Bali Cooking Class](/tours/balinese-cooking-class) the same day.
 
 ### After you land: plan your first Ubud adventures
 
@@ -1025,7 +1026,7 @@ Once you settle in Ubud / Pejeng, most guests book:
 
 - [Bali ATV Adventure](/tours/bali-atv-adventure) at All New Bali Adventure (from IDR 750K)
 - [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) with free Ubud hotel pickup (IDR 750K)
-- [Balinese Cooking Class](/tours/balinese-cooking-class) for an evening dinner class (IDR 400K)
+- [Tumang Bali Cooking Class](/tours/balinese-cooking-class) — shared from IDR 506,370 with Ubud pickup
 
 Or open [Book](/book) and send the WhatsApp form — no upfront payment to inquire.
 
@@ -1152,7 +1153,7 @@ Unlike crowded main-road bike rentals, this tour follows quiet village lanes eas
 
 | Include | Details |
 | --- | --- |
-| Free Ubud pickup & drop-off | Cycling tour only — ATV, rafting, and tubing have a pickup surcharge outside Ubud |
+| Free Ubud pickup & drop-off | Included on cycling — Tumang cooking also includes complimentary Ubud pickup; ATV/rafting/tubing add a hotel pickup charge |
 | Mountain bike & helmet | Comfortable bikes for village paths |
 | English-speaking local guide | Born-and-raised Pejeng guides |
 | Lunch | One meal at a local village restaurant |
@@ -1166,7 +1167,7 @@ Families with children, couples wanting a slower Bali day, and anyone who prefer
 
 Tap **Book Now** on the homepage, select **Ubud Ricefield Cycling Tour**, and use the **Details** button in the booking popup to read the full itinerary without leaving the form. Or open the [full tour page](/tours/ubud-ricefield-cycling-tour) and message us on WhatsApp with your date and hotel.
 
-Want a full cultural day? Pair this ride with an evening [Balinese cooking class](/tours/balinese-cooking-class) — see the [Cycling & Cooking Class Ubud itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+Want a full cultural day? Pair this ride with an afternoon [Tumang Bali Cooking Class](/tours/balinese-cooking-class) — see the [Cycling & Cooking Class Ubud itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
 
 **Ready to ride?** [Book the Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) — from IDR 750,000 with lunch and free Ubud pickup.
 `
@@ -1288,11 +1289,11 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000**, **Canyon Tubing IDR 359,000**, and **Ubud Ricefield Cycling Tour IDR 750,000** with free Ubud pickup and lunch included.
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000**, **Canyon Tubing IDR 359,000**, **Ubud Ricefield Cycling Tour IDR 750,000**, and **Tumang Bali Cooking Class from IDR 506,370** (shared, Ubud pickup included).
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
-> - **Free Ubud pickup** applies to the cycling tour only; other activities add IDR 400,000 hotel pickup
+> - **Free Ubud pickup** on ricefield cycling and Tumang cooking; ATV/rafting/tubing add IDR 400,000 hotel pickup
 > - Every tour includes gear, guide, and insurance where listed on the tour page
 > - Book on WhatsApp — send name, age, hotel, activity, and price
 > - Tap **Details** in the booking popup to preview any tour itinerary instantly
@@ -1308,17 +1309,20 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Whitewater Rafting | IDR 500,000 | person | [Whitewater Rafting](/tours/whitewater-rafting) |
 | Canyon Tubing | IDR 359,000 | person | [Canyon Tubing](/tours/canyon-tubing) |
 | Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
+| Tumang Bali Cooking Class | IDR 506,370 | person shared | [Cooking Class](/tours/balinese-cooking-class) |
 
 ## Pickup Policy
 
 - **Ubud Ricefield Cycling Tour:** Free pickup and drop-off within Ubud
+- **Tumang Bali Cooking Class:** Complimentary Ubud-area pickup (shared & private)
 - **ATV, rafting, tubing:** Pickup available; **IDR 400,000** hotel pickup charge applies
 
 ## Popular Combos & Pairings
 
 1. **ATV + Wos River tubing** — jungle mud then river float. Guide: [ATV + River Tubing combo](/blog/atv-river-tubing-wos-river-bali) · Book: [Bali ATV Adventure](/tours/bali-atv-adventure)
-2. **Rafting + cycling** — adrenaline morning, cultural afternoon. [Rafting guide](/blog/bali-whitewater-rafting-near-ubud-guide) · [Cycling guide](/blog/ubud-ricefield-cycling-tour-guide-2026)
-3. **ATV only** — best for first-time quad riders. [Bali ATV tour guide](/blog/bali-atv-tour-ubud-guide)
+2. **Cycling + Tumang cooking** — rice paddies then village kitchen. [Full itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary)
+3. **Rafting + cycling** — adrenaline morning, cultural afternoon. [Rafting guide](/blog/bali-whitewater-rafting-near-ubud-guide) · [Cycling guide](/blog/ubud-ricefield-cycling-tour-guide-2026)
+4. **ATV only** — best for first-time quad riders. [Bali ATV tour guide](/blog/bali-atv-tour-ubud-guide)
 
 ## What Every Package Includes
 
@@ -1370,7 +1374,7 @@ All New Bali Adventure is the jungle ATV arena where Sekar Bali Activity runs al
 
 - **Hotel pickup:** Available for IDR 400,000. Book via [Bali ATV Adventure](/tours/bali-atv-adventure).
 - **Self-drive:** Pejeng Village area, near Ubud, Gianyar. Message WhatsApp with your hotel for exact pickup time.
-- **Free Ubud pickup:** Not included on ATV — only on the [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour).
+- **Free Ubud pickup:** Not included on ATV — free Ubud pickup applies to [ricefield cycling](/tours/ubud-ricefield-cycling-tour) and [Tumang cooking class](/tours/balinese-cooking-class).
 
 ## Single vs Tandem at All New Bali Adventure
 
@@ -1480,16 +1484,16 @@ Choose [Canyon Tubing](/tours/canyon-tubing) for a calm float through jungle can
 
 ## Who Should Choose Cycling?
 
-Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture over adrenaline — village paths, Balinese house visit, lunch included, and the only tour with free Ubud pickup.
+Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture over adrenaline — village paths, Balinese house visit, lunch included, and free Ubud pickup (also included on Tumang cooking class).
 
 ## Best Combo Days
 
 1. **ATV + tubing** — morning quad bikes, afternoon river float
-2. **Cycling + cooking class** — rice paddies by day, Balinese kitchen by night ([full itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary))
+2. **Cycling + Tumang cooking** — rice paddies by day, village kitchen in the afternoon ([full itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary))
 3. **Rafting + cycling** — adrenaline AM, cultural PM (2-day or long day)
 4. **Full price comparison** — [Bali adventure packages 2026](/blog/bali-adventure-packages-prices-2026)
 
-**Ready to book?** Compare all tours on the [homepage](/#adventures) or tap **Details** in the booking popup to preview any itinerary.
+**Ready to book?** Compare all tours on the [homepage](/#experiences) or tap **Details** in the booking popup to preview any itinerary.
 `
   },
   {

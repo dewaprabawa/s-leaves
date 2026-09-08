@@ -1,11 +1,11 @@
 # Product Marketing Context
 
-**Document version:** v2
+**Document version:** v2.1
 **Last updated:** 2026-09-08
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — adventure, village, food, and day tours with clear IDR pricing and WhatsApp booking.
-**What it does:** Sekar Bali Activity sells curated Ubud-area experiences: ATV (All New Bali Adventure), river rafting/tubing, Pejeng ricefield cycling, Balinese cooking class, coffee tasting, private day tours, and same-day combos — with transparent tier pricing and optional hotel pickup.
+**What it does:** Sekar Bali Activity sells curated Ubud-area experiences: ATV (All New Bali Adventure), river rafting/tubing, Pejeng ricefield cycling, Tumang Bali Cooking Class, coffee tasting, private day tours, and same-day combos — with transparent tier pricing and optional hotel pickup.
 **Product category:** Bali travel activities / Ubud tours & experiences
 **Product type:** Local tour operator / service business
 **Business model:** Direct WhatsApp booking; pay on confirm/experience; packages from ~IDR 359K–1.2M+; group tier discounts; pickup add-ons
@@ -22,7 +22,7 @@
 - Honeymoon / couple tandem ATV
 - Family half-day rafting or tubing
 - Full-day ricefield cycling with free Ubud pickup
-- Cycling + evening Balinese cooking class combo
+- Cycling + afternoon Tumang Bali Cooking Class combo
 - Private full-day Ubud or Tanah Lot sunset tour
 - Coffee plantation tasting as a calm morning stop
 
@@ -32,7 +32,7 @@
 | Couple in Ubud | Private feel, photos, easy booking | Crowded mass tours, unclear pickup fees | Small-group / private ATV, WhatsApp confirm, transparent IDR |
 | Family with kids | Safety, inclusions, logistics | “Is it beginner-friendly? What’s included?” | Gear, lunch, insurance, English guide, clear child notes |
 | Culture traveler | Authentic village, not Tegallalang crowds | Touristy rice terraces | Pejeng cycling, home visit, lunch, free Ubud pickup |
-| Food traveler | Hands-on cooking / tasting | Hard to compare class quality & price | Evening cooking class + coffee experience with clear IDR |
+| Food traveler | Hands-on cooking / tasting | Hard to compare class quality & price | Tumang cooking class + coffee experience with clear IDR |
 
 ## Problems & Pain Points
 **Core problem:** Booking Bali activities feels opaque — unclear arena location, hidden pickup fees, mass-group vibes, and hard-to-compare package prices; many local sites only push sports.
@@ -54,7 +54,7 @@
 - Pejeng-based local family operator (not a faceless marketplace listing)
 - Full travel & activities mix — adventure *plus* food, village, and day tours
 - Clear ATV arena: All New Bali Adventure + labeled corporate / meeting / activity-base addresses
-- Transparent tier pricing + free Ubud pickup on cycling only (stated upfront)
+- Transparent tier pricing + free Ubud pickup on cycling and Tumang cooking class (stated upfront)
 - WhatsApp-first booking with no upfront payment to inquire
 **How we do it differently:** One site for discovery by mood, packages, pickup rules, location roles, and ready WhatsApp message
 **Why that's better:** Less confusion, faster confirmation, trust before payment
@@ -66,7 +66,7 @@
 | “Is WhatsApp booking legit?” | No upfront payment to inquire; confirm date/price first; corporate office matches Google Business Profile |
 | “Where do I meet for ATV?” | Activity base: All New Bali Adventure in Pejeng — or book hotel pickup |
 | “Is it beginner-friendly?” | Full safety briefing, gear, English-speaking guide; no experience required |
-| “What’s included vs extras?” | Lunch/gear/insurance on ATV; cycling includes lunch + free Ubud pickup; other pickup is IDR 400K |
+| “What’s included vs extras?” | Lunch/gear/insurance on ATV; cycling includes lunch + free Ubud pickup; Tumang cooking includes Ubud pickup; ATV/rafting/tubing hotel pickup is IDR 400K |
 | “Do you only do sports?” | No — also cooking class, coffee, village cycling, and private day tours |
 
 **Anti-persona:** Travelers wanting ultra-cheap unguided rentals, large party-bus group tours, or same-day extreme Class IV+ whitewater
@@ -88,8 +88,8 @@
 - “Pejeng village cycling”
 - “All New Bali Adventure ATV”
 - “WhatsApp booking”
-**Words to use:** activities, experiences, day tours, private, all-inclusive, Pejeng, Ubud, All New Bali Adventure, WhatsApp, free Ubud pickup (cycling only), beginner-friendly, insurance, lunch included
-**Words to avoid:** luxury spa fluff, vague “best in Bali,” unpaid “guaranteed,” claiming free pickup on all tours, sports-only framing as the whole brand
+**Words to use:** activities, experiences, day tours, private, all-inclusive, Pejeng, Ubud, Tumang Bali Cooking Class, All New Bali Adventure, WhatsApp, free Ubud pickup (cycling + Tumang cooking), beginner-friendly, insurance, lunch included
+**Words to avoid:** luxury spa fluff, vague “best in Bali,” unpaid “guaranteed,” claiming free pickup on ATV/rafting/tubing, sports-only framing as the whole brand
 **Glossary:**
 | Term | Meaning |
 |------|---------|
@@ -123,6 +123,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.1 (2026-09-08) — Flagship food product is Tumang Bali Cooking Class (shared from IDR 506,370, free Ubud pickup); GEO/SEO answer surfaces updated for cooking-class queries.
 - v2 (2026-09-08) — Repositioned from sports-focused to travel & activities discovery (adventure, food, village, day tours); marketplace-inspired browse model without copying aggregator checkout.
 - v1.1 (2026-09-04) — Cycling inclusions corrected to one meal (lunch) + free Ubud pickup; removed inaccurate 3-meal claims.
 - v1 (2026-09-03) — Initial context auto-drafted from Sekar Bali Activity site, pricing, NAP location roles, and GEO copy.

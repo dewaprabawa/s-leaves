@@ -46,10 +46,10 @@ export default function BlogIndexPage() {
                     {post.title}
                   </Link>
                 </h2>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-brand-green-light leading-relaxed">
                   {post.excerpt}
                 </p>
-                <Link href={`/blog/${post.slug}`} className="inline-flex items-center gap-2 text-sky-600 font-semibold hover:text-sky-700 transition-colors">
+                <Link href={`/blog/${post.slug}`} className="inline-flex items-center gap-2 text-accent-gold-dark font-semibold hover:text-accent-gold-dark transition-colors">
                   Read article <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>

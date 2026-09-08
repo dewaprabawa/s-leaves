@@ -135,13 +135,13 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
               height={40}
               className="h-10 w-10 rounded-full object-cover shrink-0 transition-transform duration-200 group-hover:scale-105"
             />
-            <span className="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200 bg-clip-text text-transparent font-extrabold group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors">
+            <span className="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-200 bg-clip-text text-transparent font-extrabold group-hover:text-accent-gold-dark transition-colors">
               {siteName}
             </span>
           </Link>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-600 dark:text-gray-300">
+          <nav className="hidden lg:flex items-center gap-6 text-sm font-semibold text-brand-green-light dark:text-gray-300">
             <Link href="/tours/bali-atv-adventure" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-bold">ATV Tours</Link>
             <Link href="/tours" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">All Tours</Link>
             <Link href="/transfers" className="hover:text-amber-600 dark:hover:text-amber-400 transition-colors">Transfers</Link>
@@ -157,7 +157,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
           className="hidden md:flex flex-1 max-w-sm relative z-40"
         >
           <div className="relative w-full">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-green-light pointer-events-none" />
             <input
               type="text"
               placeholder="Search things to do..."
@@ -168,23 +168,23 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
                   setShowSuggestions(true)
                 }
               }}
-              className="w-full pl-10 pr-4 py-2 text-sm rounded-full bg-gray-150/60 dark:bg-gray-800/60 border border-transparent focus:border-sky-500 focus:bg-white dark:focus:bg-gray-900 focus:ring-2 focus:ring-sky-500/20 text-gray-900 dark:text-white placeholder-gray-400 outline-none transition-all"
+              className="w-full pl-10 pr-4 py-2 text-sm rounded-full bg-gray-150/60 dark:bg-gray-800/60 border border-transparent focus:border-accent-gold focus:bg-white focus:ring-2 focus:ring-accent-gold/20 text-brand-green placeholder-gray-400 outline-none transition-all"
             />
           </div>
 
           {/* Suggestions Dropdown panel */}
           {showSuggestions && suggestions.length > 0 && (
-            <div className="absolute left-0 right-0 top-full mt-2 bg-white dark:bg-gray-900 border border-gray-200/60 dark:border-gray-800/80 rounded-2xl shadow-xl z-50 overflow-hidden divide-y divide-gray-100 dark:divide-gray-800 animate-in fade-in slide-in-from-top-2 duration-150">
+            <div className="absolute left-0 right-0 top-full mt-2 bg-white border border-brand-green/10 rounded-2xl shadow-xl z-50 overflow-hidden divide-y divide-brand-green/10 animate-in fade-in slide-in-from-top-2 duration-150">
               {suggestions.map((tour) => (
                 <div
                   key={tour.id}
                   onClick={() => selectSuggestion(tour)}
-                  className="flex items-center gap-3 px-4 py-3 hover:bg-sky-50 dark:hover:bg-sky-950/20 cursor-pointer transition-colors"
+                  className="flex items-center gap-3 px-4 py-3 hover:bg-accent-gold/8 cursor-pointer transition-colors"
                 >
-                  <Compass className="w-4 h-4 text-sky-500 flex-shrink-0" />
+                  <Compass className="w-4 h-4 text-accent-gold flex-shrink-0" />
                   <div className="flex-1 min-w-0 text-left">
-                    <span className="block text-sm font-bold text-gray-900 dark:text-white truncate">{tour.title}</span>
-                    <span className="block text-[9px] text-gray-400 dark:text-gray-500 uppercase font-black tracking-wider leading-none mt-1">{tour.duration || "Experience"}</span>
+                    <span className="block text-sm font-bold text-brand-green truncate">{tour.title}</span>
+                    <span className="block text-[9px] text-brand-green-light uppercase font-black tracking-wider leading-none mt-1">{tour.duration || "Experience"}</span>
                   </div>
                 </div>
               ))}
@@ -198,12 +198,12 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
           {/* Wishlist Link */}
           <Link 
             href="/tours?wishlist=true" 
-            className="p-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors relative"
+            className="p-2 text-brand-green-light dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full transition-colors relative"
             aria-label="View Wishlist"
           >
             <Heart className="w-5 h-5" />
             {wishlistCount > 0 && (
-              <span className="absolute -top-0.5 -right-0.5 w-4.5 h-4.5 bg-sky-500 text-white rounded-full text-[10px] font-bold flex items-center justify-center animate-pulse">
+              <span className="absolute -top-0.5 -right-0.5 w-4.5 h-4.5 bg-accent-gold text-white rounded-full text-[10px] font-bold flex items-center justify-center animate-pulse">
                 {wishlistCount}
               </span>
             )}
@@ -213,9 +213,9 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
           <div className="relative">
             <button
               onClick={() => setIsCurrencyOpen(!isCurrencyOpen)}
-              className="flex items-center gap-1.5 px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-800 transition-all cursor-pointer"
+              className="flex items-center gap-1.5 px-3 py-2 text-sm font-semibold text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg border border-brand-green/15 transition-all cursor-pointer"
             >
-              <Globe className="w-4 h-4 text-gray-400" />
+              <Globe className="w-4 h-4 text-brand-green-light" />
               <span>{currency} ({currencySymbol})</span>
             </button>
 
@@ -225,8 +225,8 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
                   className="fixed inset-0 z-10" 
                   onClick={() => setIsCurrencyOpen(false)}
                 />
-                <div className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-900 border border-gray-250 dark:border-gray-850 rounded-xl shadow-xl z-20 py-1.5 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-150">
-                  <div className="px-3 py-1 text-[10px] font-black uppercase text-gray-400 tracking-wider">
+                <div className="absolute right-0 mt-2 w-40 bg-white border border-gray-250 dark:border-gray-850 rounded-xl shadow-xl z-20 py-1.5 overflow-hidden animate-in fade-in slide-in-from-top-2 duration-150">
+                  <div className="px-3 py-1 text-[10px] font-black uppercase text-brand-green-light tracking-wider">
                     Select Currency
                   </div>
                   {(["USD", "EUR", "IDR"] as Currency[]).map((c) => (
@@ -235,8 +235,8 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
                       onClick={() => selectCurrency(c)}
                       className={`w-full text-left px-4 py-2 text-sm font-semibold flex items-center justify-between ${
                         currency === c 
-                          ? "bg-sky-50 dark:bg-sky-950/40 text-sky-600 dark:text-sky-450" 
-                          : "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
+                          ? "bg-accent-gold/10 text-accent-gold-dark" 
+                          : "text-gray-700 dark:text-gray-200 hover:bg-sand dark:hover:bg-gray-800"
                       } transition-colors cursor-pointer`}
                     >
                       <span>{c === "USD" ? "US Dollar" : c === "EUR" ? "Euro" : "Indonesian Rupiah"}</span>
@@ -268,7 +268,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
 
       {/* Mobile Drawer Menu */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-250/50 dark:border-gray-800 bg-white dark:bg-gray-950 px-6 py-6 space-y-6 animate-in slide-in-from-top duration-200">
+        <div className="lg:hidden border-t border-gray-250/50 dark:border-gray-800 bg-sand px-6 py-6 space-y-6 animate-in slide-in-from-top duration-200">
           
           {/* Mobile Search */}
           <form 
@@ -276,7 +276,7 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
             onSubmit={handleSearchSubmit} 
             className="relative w-full z-45"
           >
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-green-light" />
             <input
               type="text"
               placeholder="Search destinations..."
@@ -287,12 +287,12 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
                   setShowMobileSuggestions(true)
                 }
               }}
-              className="w-full pl-9 pr-4 py-2 text-sm rounded-xl bg-gray-100 dark:bg-gray-800 border-none text-gray-900 dark:text-white outline-none"
+              className="w-full pl-9 pr-4 py-2 text-sm rounded-xl bg-sand-dark border-none text-brand-green outline-none"
             />
 
             {/* Suggestions Dropdown panel */}
             {showMobileSuggestions && suggestions.length > 0 && (
-              <div className="absolute left-0 right-0 top-full mt-2 bg-white dark:bg-gray-900 border border-gray-200/60 dark:border-gray-800/80 rounded-2xl shadow-xl z-50 overflow-hidden divide-y divide-gray-100 dark:divide-gray-800 animate-in fade-in slide-in-from-top-2 duration-150">
+              <div className="absolute left-0 right-0 top-full mt-2 bg-white border border-brand-green/10 rounded-2xl shadow-xl z-50 overflow-hidden divide-y divide-brand-green/10 animate-in fade-in slide-in-from-top-2 duration-150">
                 {suggestions.map((tour) => (
                   <div
                     key={tour.id}
@@ -300,12 +300,12 @@ export default function HeaderClient({ siteName, logoUrl }: Props) {
                       selectSuggestion(tour)
                       setIsMobileMenuOpen(false)
                     }}
-                    className="flex items-center gap-3 px-4 py-3 hover:bg-sky-50 dark:hover:bg-sky-950/20 cursor-pointer transition-colors"
+                    className="flex items-center gap-3 px-4 py-3 hover:bg-accent-gold/8 cursor-pointer transition-colors"
                   >
-                    <Compass className="w-4 h-4 text-sky-500 flex-shrink-0" />
+                    <Compass className="w-4 h-4 text-accent-gold flex-shrink-0" />
                     <div className="flex-1 min-w-0 text-left">
-                      <span className="block text-sm font-bold text-gray-900 dark:text-white truncate">{tour.title}</span>
-                      <span className="block text-[9px] text-gray-400 dark:text-gray-500 uppercase font-black tracking-wider leading-none mt-1">{tour.duration || "Experience"}</span>
+                      <span className="block text-sm font-bold text-brand-green truncate">{tour.title}</span>
+                      <span className="block text-[9px] text-brand-green-light uppercase font-black tracking-wider leading-none mt-1">{tour.duration || "Experience"}</span>
                     </div>
                   </div>
                 ))}

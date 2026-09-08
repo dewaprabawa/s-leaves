@@ -67,10 +67,10 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
       {/* Category Slider/Pills Section */}
       <div className="flex flex-col items-center justify-center gap-6">
         <div className="text-center max-w-xl mx-auto">
-          <p className="text-xs font-black uppercase text-sky-600 dark:text-sky-400 tracking-wider mb-2">
+          <p className="text-xs font-black uppercase text-accent-gold-dark tracking-wider mb-2">
             Explore by Interests
           </p>
-          <h3 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
+          <h3 className="text-xl sm:text-2xl font-bold text-brand-green">
             Choose Your Travel Style
           </h3>
         </div>
@@ -85,8 +85,8 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold border transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? "bg-sky-600 text-white border-sky-650 shadow-md shadow-sky-500/10 scale-[1.02]"
-                    : "bg-white dark:bg-gray-900 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-800 hover:border-gray-350 dark:hover:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-850"
+                    ? "bg-accent-gold text-white border-accent-gold-dark shadow-md shadow-accent-gold/15 scale-[1.02]"
+                    : "bg-white text-brand-green-light border-brand-green/15 hover:border-accent-gold/40 hover:bg-sand"
                 }`}
               >
                 {cat}
@@ -98,8 +98,8 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
 
       {/* Dynamic Tours Grid */}
       {filteredTours.length === 0 ? (
-        <div className="text-center py-12 bg-white dark:bg-gray-900 rounded-3xl border border-gray-200 dark:border-gray-800 max-w-2xl mx-auto shadow-sm">
-          <p className="text-gray-500 dark:text-gray-400 font-semibold">No tours found matching this category.</p>
+        <div className="text-center py-12 bg-white rounded-3xl border border-brand-green/15 max-w-2xl mx-auto shadow-sm">
+          <p className="text-brand-green-light font-semibold">No tours found matching this category.</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -114,7 +114,7 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
             return (
               <div 
                 key={tour.id} 
-                className="group relative bg-white dark:bg-gray-900 rounded-3xl overflow-hidden border border-gray-200/60 dark:border-gray-850 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
+                className="group relative bg-white rounded-3xl overflow-hidden border border-gray-200/60 dark:border-gray-850 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
                 
                 {/* Image Section */}
@@ -128,15 +128,15 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
                       className="object-cover group-hover:scale-104 transition-transform duration-500"
                     />
                   ) : (
-                    <div className="absolute inset-0 bg-gradient-to-tr from-sky-900/10 to-teal-900/20" />
+                    <div className="absolute inset-0 bg-gradient-to-tr from-brand-green/20 to-ink-soft/30" />
                   )}
                   
                   {/* Top Overlays */}
                   <div className="absolute inset-x-0 top-0 p-4 flex items-start justify-between z-10 pointer-events-none">
                     
                     {/* Location Badge */}
-                    <div className="inline-flex items-center gap-1 bg-white/95 dark:bg-gray-950/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-[10px] font-black text-gray-900 dark:text-white shadow-sm border border-gray-150/50 dark:border-gray-800 pointer-events-auto">
-                      <MapPin className="w-3.5 h-3.5 text-sky-500" /> 
+                    <div className="inline-flex items-center gap-1 bg-white/95 dark:bg-gray-950/90 backdrop-blur-sm px-3.5 py-1.5 rounded-full text-[10px] font-black text-brand-green shadow-sm border border-gray-150/50 dark:border-gray-800 pointer-events-auto">
+                      <MapPin className="w-3.5 h-3.5 text-accent-gold" /> 
                       <span>{tour.location}</span>
                     </div>
 
@@ -155,7 +155,7 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
                         className={`p-2 rounded-full backdrop-blur-md transition-all border shadow-sm cursor-pointer ${
                           isFavorited
                             ? "bg-red-500 border-red-400 text-white hover:scale-110"
-                            : "bg-white/90 dark:bg-gray-950/90 border-gray-200 dark:border-gray-800 text-gray-500 dark:text-gray-400 hover:text-red-500 hover:bg-white"
+                            : "bg-white/90 dark:bg-gray-950/90 border-brand-green/15 text-brand-green-light hover:text-red-500 hover:bg-white"
                         }`}
                         aria-label={isFavorited ? "Remove from wishlist" : "Add to wishlist"}
                       >
@@ -176,7 +176,7 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
                         {tour.categoryTags.map((t: any, idx: number) => (
                           <span 
                             key={idx} 
-                            className="text-[9px] font-extrabold tracking-wide uppercase px-2.5 py-1 rounded-lg bg-sky-50 text-sky-700 dark:bg-sky-950/30 dark:text-sky-300 border border-sky-100/20"
+                            className="text-[9px] font-extrabold tracking-wide uppercase px-2.5 py-1 rounded-lg bg-accent-gold/10 text-accent-gold-dark border border-accent-gold/20"
                           >
                             {t.tag}
                           </span>
@@ -184,7 +184,7 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
                       </div>
                     )}
 
-                    <h3 className="text-lg font-bold text-gray-900 dark:text-white leading-snug group-hover:text-sky-600 dark:group-hover:text-sky-450 transition-colors">
+                    <h3 className="text-lg font-bold text-brand-green leading-snug group-hover:text-accent-gold-dark transition-colors">
                       <Link href="/#adventures">
                         {tour.title}
                       </Link>
@@ -207,7 +207,7 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
                       <span className="text-xs font-bold text-gray-850 dark:text-gray-200">
                         {rating.toFixed(1)}
                       </span>
-                      <span className="text-xs text-gray-400 dark:text-gray-500">
+                      <span className="text-xs text-brand-green-light">
                         ({reviewCount.toLocaleString()} reviews)
                       </span>
                     </div>
@@ -216,30 +216,30 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
                     {tour.hasFreeCancellation !== false && (
                       <Link
                         href="/cancellation-policy"
-                        className="inline-flex items-center gap-1.5 bg-sky-50 text-sky-700 dark:bg-sky-900/30 dark:text-sky-400 text-[10px] font-bold px-2 py-1 rounded-md border border-sky-100 dark:border-sky-800/50 hover:bg-sky-100 dark:hover:bg-sky-900/50 transition-colors"
+                        className="inline-flex items-center gap-1.5 bg-accent-gold/10 text-accent-gold-dark text-[10px] font-bold px-2 py-1 rounded-md border border-accent-gold/20 hover:bg-accent-gold/15 transition-colors"
                       >
-                        <ShieldCheck className="w-3.5 h-3.5 text-sky-500" /> Free cancellation up to 24h before
+                        <ShieldCheck className="w-3.5 h-3.5 text-accent-gold" /> Free cancellation up to 24h before
                       </Link>
                     )}
                   </div>
 
                   {/* Pricing and Action Footer */}
-                  <div className="pt-4 border-t border-gray-150 dark:border-gray-800 flex items-center justify-between gap-4">
-                    <div className="text-xs text-gray-450 dark:text-gray-400 flex items-center gap-1.5">
-                      <Clock className="w-4 h-4 text-sky-500" /> 
+                  <div className="pt-4 border-t border-brand-green/15 flex items-center justify-between gap-4">
+                    <div className="text-xs text-gray-450 dark:text-brand-green-light flex items-center gap-1.5">
+                      <Clock className="w-4 h-4 text-accent-gold" /> 
                       <span className="font-semibold">{tour.duration}</span>
                     </div>
                     <div className="text-right">
-                      <span className="text-[9px] text-gray-400 dark:text-gray-500 block uppercase font-black tracking-wider leading-none">From</span>
-                      <span className="text-lg font-black text-gray-900 dark:text-white">{formatPrice(basePrice)}</span>
-                      <span className="text-[9px] text-gray-400 dark:text-gray-500 block leading-none mt-0.5">per adult</span>
+                      <span className="text-[9px] text-brand-green-light block uppercase font-black tracking-wider leading-none">From</span>
+                      <span className="text-lg font-black text-brand-green">{formatPrice(basePrice)}</span>
+                      <span className="text-[9px] text-brand-green-light block leading-none mt-0.5">per adult</span>
                     </div>
                   </div>
 
                   <div className="pt-1">
                     <Link 
                       href="/#adventures"
-                      className="w-full inline-flex items-center justify-center rounded-2xl bg-gray-50 dark:bg-gray-800/40 hover:bg-sky-600 hover:text-white dark:hover:bg-sky-650 dark:hover:text-white px-4 py-3 text-xs font-black uppercase tracking-wider text-gray-750 dark:text-gray-200 transition-all gap-1.5 border border-gray-200 dark:border-gray-800 hover:border-sky-600 cursor-pointer"
+                      className="w-full inline-flex items-center justify-center rounded-2xl bg-sand hover:bg-accent-gold hover:text-white px-4 py-3 text-xs font-black uppercase tracking-wider text-brand-green transition-all gap-1.5 border border-brand-green/15 hover:border-accent-gold cursor-pointer"
                     >
                       View Experience <ArrowRight className="w-4 h-4" />
                     </Link>

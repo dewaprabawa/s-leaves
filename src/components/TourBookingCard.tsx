@@ -101,7 +101,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             href={props.getYourGuideUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full py-3 px-4 bg-[#FF5533] hover:bg-[#e64a2c] text-white rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm"
+            className="w-full py-3 px-4 bg-accent-gold hover:bg-accent-gold-dark text-white rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm"
           >
             Book via GetYourGuide <ExternalLink className="w-4 h-4" />
           </a>
@@ -135,7 +135,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="w-full flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+          className="w-full flex items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
         >
           Book This Experience <ArrowRight className="w-4 h-4" />
         </button>

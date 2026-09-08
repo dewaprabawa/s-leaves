@@ -363,7 +363,7 @@ export default async function TourPage({ params }: Props) {
               <h2 className="text-xl font-bold text-brand-green mb-4">
                 {cooking ? "About Tumang Bali Cooking Class" : "About This Experience"}
               </h2>
-              <article className="prose prose-lg prose-emerald max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">
+              <article className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {tour.fullDescription}
                 </ReactMarkdown>

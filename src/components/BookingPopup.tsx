@@ -521,7 +521,7 @@ export function BookingPopup({
                     >
                       <input
                         type="checkbox"
-                        className="mt-1 accent-[#1B4332]"
+                        className="mt-1 accent-brand-green"
                         checked={checked}
                         onChange={() => toggleMixId(opt.id)}
                       />
@@ -542,7 +542,7 @@ export function BookingPopup({
                 href={activeTour.getYourGuideUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-full py-3 px-4 bg-[#FF5533] hover:bg-[#e64a2c] text-white rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm shadow-[#FF5533]/20"
+                className="w-full py-3 px-4 bg-accent-gold hover:bg-accent-gold-dark text-white rounded-xl font-bold transition-colors flex items-center justify-center gap-2 shadow-sm shadow-accent-gold/20"
               >
                 Book via GetYourGuide <ExternalLink className="w-4 h-4" />
               </a>
@@ -700,18 +700,18 @@ export function BookingPopup({
                   {activityQuote ? ` (${activityQuote.unitPrice / 1000}k · ${activityQuote.tierLabel})` : ''}
                 </label>
                 <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
-                  <button type="button" onClick={() => setAdults(Math.max(minAdults, adults - 1))} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">-</button>
+                  <button type="button" onClick={() => setAdults(Math.max(minAdults, adults - 1))} className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors">-</button>
                   <span className="flex-1 text-center font-bold text-brand-green text-lg">{adults}</span>
-                  <button type="button" onClick={() => setAdults(adults + 1)} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">+</button>
+                  <button type="button" onClick={() => setAdults(adults + 1)} className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors">+</button>
                 </div>
               </div>
               {hasKidPricing && (
                 <div className="flex-1">
                   <label className="block text-brand-green font-bold text-sm mb-2">Children ({(activeTour.kidPrice || 0) / 1000}k)</label>
                   <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
-                    <button type="button" onClick={() => setKids(Math.max(0, kids - 1))} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">-</button>
+                    <button type="button" onClick={() => setKids(Math.max(0, kids - 1))} className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors">-</button>
                     <span className="flex-1 text-center font-bold text-brand-green text-lg">{kids}</span>
-                    <button type="button" onClick={() => setKids(kids + 1)} className="px-4 py-3.5 hover:bg-gray-50 text-brand-green font-bold text-lg active:bg-gray-100 transition-colors">+</button>
+                    <button type="button" onClick={() => setKids(kids + 1)} className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors">+</button>
                   </div>
                 </div>
               )}
@@ -769,7 +769,7 @@ export function BookingPopup({
                   </div>
                 ))}
                 {mixedQuote.discountAmount > 0 ? (
-                  <div className="flex justify-between items-center mb-2 text-sm text-emerald-700">
+                  <div className="flex justify-between items-center mb-2 text-sm text-brand-green">
                     <span>Combo discount ({mixedQuote.discountPercent}%)</span>
                     <span className="font-semibold">−{formatIdr(mixedQuote.discountAmount)}</span>
                   </div>
@@ -824,7 +824,7 @@ export function BookingPopup({
               type="button"
               onClick={handleBook}
               disabled={!canSubmit}
-              className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${!canSubmit ? 'bg-gray-200 text-gray-400 cursor-not-allowed' : 'bg-brand-green text-sand hover:bg-brand-green-light shadow-lg hover:shadow-xl hover:-translate-y-0.5'}`}
+              className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${!canSubmit ? 'bg-gray-200 text-brand-green-light cursor-not-allowed' : 'bg-brand-green text-sand hover:bg-brand-green-light shadow-lg hover:shadow-xl hover:-translate-y-0.5'}`}
             >
               Agree &amp; get invoice
             </button>

@@ -401,7 +401,7 @@ export default function Home() {
       </section>
 
       {/* ═══ DAY PACKAGES ═══ */}
-      <section id="packages" data-animate className="bg-white py-20 md:py-28 px-6 lg:px-12">
+      <section id="packages" data-animate className="bg-sand py-20 md:py-28 px-6 lg:px-12">
         <div className="max-w-6xl mx-auto">
           <div className={`mb-12 ${isVisible("packages") ? "animate-fade-in-up" : ""}`}>
             <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">
@@ -647,7 +647,7 @@ export default function Home() {
       </section>
 
       {/* ═══ PRICING ═══ */}
-      <section id="pricing" data-animate className="py-20 md:py-28 px-6 lg:px-12 bg-white w-full">
+      <section id="pricing" data-animate className="py-20 md:py-28 px-6 lg:px-12 bg-sand w-full">
         <div className="max-w-4xl mx-auto">
           <div className={`text-center mb-16 ${isVisible("pricing") ? "animate-fade-in-up" : ""}`}>
             <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">

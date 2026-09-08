@@ -55,61 +55,61 @@ export default function TransfersListClient({ initialTransfers }: Props) {
           return (
             <div 
               key={transfer.id}
-              className="flex flex-col bg-white dark:bg-gray-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 p-6 md:p-8 space-y-6"
+              className="flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl border border-brand-green/10 transition-all duration-300 p-6 md:p-8 space-y-6"
             >
               {/* Header / Route info */}
               <div className="space-y-4">
-                <div className="flex items-center gap-2 text-xs font-semibold text-sky-600 dark:text-sky-400 uppercase tracking-wide">
+                <div className="flex items-center gap-2 text-xs font-semibold text-accent-gold-dark uppercase tracking-wide">
                   <Shield className="w-4 h-4" /> Private Transfer Service
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-2xl font-bold text-brand-green">
                   {transfer.title}
                 </h3>
                 
                 {/* Route Path Graphic */}
-                <div className="flex items-center gap-4 bg-gray-50 dark:bg-gray-950 p-4 rounded-xl text-sm border border-gray-100 dark:border-gray-800">
+                <div className="flex items-center gap-4 bg-sand p-4 rounded-xl text-sm border border-brand-green/10">
                   <div className="flex flex-col space-y-1">
-                    <span className="text-xs text-gray-400">Pickup</span>
-                    <span className="font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-1.5">
+                    <span className="text-xs text-brand-green-light">Pickup</span>
+                    <span className="font-semibold text-brand-green flex items-center gap-1.5">
                       <MapPin className="w-3.5 h-3.5 text-red-500" /> {transfer.route?.from}
                     </span>
                   </div>
-                  <ArrowRight className="w-5 h-5 text-gray-400 flex-shrink-0" />
+                  <ArrowRight className="w-5 h-5 text-brand-green-light flex-shrink-0" />
                   <div className="flex flex-col space-y-1">
-                    <span className="text-xs text-gray-400">Drop-off</span>
-                    <span className="font-semibold text-gray-700 dark:text-gray-300 flex items-center gap-1.5">
-                      <MapPin className="w-3.5 h-3.5 text-sky-500" /> {transfer.route?.to}
+                    <span className="text-xs text-brand-green-light">Drop-off</span>
+                    <span className="font-semibold text-brand-green flex items-center gap-1.5">
+                      <MapPin className="w-3.5 h-3.5 text-accent-gold" /> {transfer.route?.to}
                     </span>
                   </div>
                 </div>
               </div>
 
               {/* Vehicle Details */}
-              <div className="grid grid-cols-2 gap-4 text-sm py-2 border-t border-b border-gray-100 dark:border-gray-800">
+              <div className="grid grid-cols-2 gap-4 text-sm py-2 border-t border-b border-brand-green/10">
                 <div>
-                  <span className="block text-xs text-gray-400">Vehicle Types</span>
-                  <span className="font-medium text-gray-800 dark:text-gray-200">{vehicleClassesCount} Tiers Available</span>
+                  <span className="block text-xs text-brand-green-light">Vehicle Types</span>
+                  <span className="font-medium text-brand-green">{vehicleClassesCount} Tiers Available</span>
                 </div>
                 <div>
-                  <span className="block text-xs text-gray-400 flex items-center gap-1">
+                  <span className="block text-xs text-brand-green-light flex items-center gap-1">
                     <Users className="w-3 h-3" /> Max Capacity
                   </span>
-                  <span className="font-medium text-gray-800 dark:text-gray-200">Up to {maxCapacity} Passengers</span>
+                  <span className="font-medium text-brand-green">Up to {maxCapacity} Passengers</span>
                 </div>
               </div>
 
               {/* Price & Action */}
               <div className="flex items-center justify-between pt-2">
                 <div>
-                  <span className="block text-xs text-gray-400">Rates From</span>
-                  <span className="text-2xl font-extrabold text-sky-600 dark:text-sky-400">
+                  <span className="block text-xs text-brand-green-light">Rates From</span>
+                  <span className="text-2xl font-extrabold text-accent-gold-dark">
                     {formatPrice(startingPrice)}
                   </span>
                 </div>
                 
                 <button 
                   onClick={() => setSelectedTransfer(transfer)}
-                  className="inline-flex items-center justify-center rounded-xl bg-sky-600 hover:bg-sky-500 px-5 py-3 text-sm font-semibold text-white shadow-md transition-colors"
+                  className="inline-flex items-center justify-center rounded-xl bg-accent-gold hover:bg-accent-gold-dark px-5 py-3 text-sm font-semibold text-white shadow-md transition-colors"
                 >
                   Book Transfer
                 </button>
@@ -122,20 +122,20 @@ export default function TransfersListClient({ initialTransfers }: Props) {
       {/* Booking Modal Overlay */}
       {selectedTransfer && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6 overflow-y-auto">
-          <div className="relative w-full max-w-2xl bg-white dark:bg-gray-900 rounded-3xl overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-200 my-8">
+          <div className="relative w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-200 my-8">
             {/* Modal Header */}
-            <div className="flex items-center justify-between border-b border-gray-100 dark:border-gray-800 p-6">
+            <div className="flex items-center justify-between border-b border-brand-green/10 p-6">
               <div>
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                <h2 className="text-2xl font-bold text-brand-green">
                   Book {selectedTransfer.title}
                 </h2>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <p className="text-sm text-brand-green-light mt-1">
                   Private one-way flat-rate transfer
                 </p>
               </div>
               <button 
                 onClick={() => setSelectedTransfer(null)}
-                className="p-2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                className="p-2 text-brand-green-light hover:text-brand-green-light dark:hover:text-gray-200 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
               >
                 <X className="w-6 h-6" />
               </button>

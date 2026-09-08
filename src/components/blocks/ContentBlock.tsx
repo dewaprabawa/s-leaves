@@ -25,8 +25,8 @@ const renderRichText = (content: any) => {
 
 export const ContentBlock = ({ block }: { block: any }) => {
   return (
-    <section className="py-24 px-6 bg-white dark:bg-gray-950">
-      <div className="max-w-3xl mx-auto prose prose-lg dark:prose-invert prose-emerald">
+    <section className="py-24 px-6 bg-sand">
+      <div className="max-w-3xl mx-auto prose prose-lg dark:prose-invert prose-slate">
         {renderRichText(block.richText)}
       </div>
     </section>

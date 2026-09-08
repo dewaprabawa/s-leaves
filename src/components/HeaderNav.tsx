@@ -27,7 +27,8 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
   }, [isOpen])
 
   const navLinks = [
-    { href: "/#adventures", label: "Adventures" },
+    { href: "/#experiences", label: "Experiences" },
+    { href: "/#packages", label: "Packages" },
     { href: "/#pricing", label: "Pricing" },
     { href: "/book", label: "Book" },
     { href: "/blog", label: "Blog" },
@@ -41,7 +42,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
       <div className="fixed top-0 left-0 right-0 z-[60] bg-ink-soft text-sand h-10 flex items-center justify-center">
         <div className="max-w-7xl mx-auto w-full px-4 flex items-center justify-center md:justify-between">
           <div className="flex items-center gap-4 text-xs sm:text-sm">
-            <span className="font-semibold tracking-wide hidden md:inline">Bali Sport &amp; Travel</span>
+            <span className="font-semibold tracking-wide hidden md:inline">Bali Travel &amp; Activities</span>
             <div className="flex items-center gap-1.5 opacity-90">
               <Clock className="w-3.5 h-3.5 text-accent-amber" />
               <span>Open Daily · Pickup from 7 AM</span>
@@ -77,7 +78,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
               href="/book"
               className="hidden sm:inline-flex items-center h-10 md:h-11 px-6 md:px-8 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
             >
-              Book Adventure
+              Book Now
             </Link>
             <button onClick={toggleMenu} className="lg:hidden flex items-center justify-center w-11 h-11 rounded-full bg-brand-green/8 text-brand-green transition-colors hover:bg-brand-green/15" aria-label="Toggle navigation menu" aria-expanded={isOpen}>
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -111,7 +112,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
               onClick={closeMenu}
               className="w-full flex items-center justify-center h-14 rounded-full btn-gold-shimmer font-bold text-lg uppercase tracking-wider"
             >
-              Book Adventure
+              Book Now
             </Link>
             <p className="text-center text-xs text-brand-green-light opacity-60">Or call +62 817 7572 3663</p>
           </div>

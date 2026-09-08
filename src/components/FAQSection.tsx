@@ -12,8 +12,8 @@ const faqs = [
     answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 750,000 with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance for ages 6–65. Prefer adrenaline? Choose ATV or rafting instead."
   },
   {
-    question: "What adventure activities do you offer?",
-    answer: "We offer five adventure packages: Single ATV Ride, Tandem ATV Ride, Whitewater Rafting, Canyon Tubing, and our Ubud Ricefield Cycling Tour (IDR 750,000 per person with lunch included). ATV trips can also be combined with river tubing on the Wos River."
+    question: "What activities and tours do you offer?",
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and dirt bike. Village: Pejeng ricefield cycling with free Ubud pickup. Food: Balinese cooking class and luwak coffee tasting. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",

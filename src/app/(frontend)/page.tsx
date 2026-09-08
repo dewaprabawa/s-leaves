@@ -1,53 +1,104 @@
-"use client";
-import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { FAQSection } from '@/components/FAQSection'
-import GeoAnswerBlock from '@/components/GeoAnswerBlock'
-import { BookingPopup, type TourConfig } from '@/components/BookingPopup'
-import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from '@/lib/combos'
-import PromoPrice from '@/components/PromoPrice'
-import { getListPrice, getPromoListPrice, formatTierPriceTable } from '@/lib/pricing'
+"use client"
+
+import React, { useState, useEffect } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { FAQSection } from "@/components/FAQSection"
+import GeoAnswerBlock from "@/components/GeoAnswerBlock"
+import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
+import HomeActivitySearch from "@/components/HomeActivitySearch"
+import PromoPrice from "@/components/PromoPrice"
 import {
-  buildCyclingCookingComboWhatsAppUrl,
-  getCyclingCookingCombo,
-} from '@/data/cultureSales'
-import {
-  ArrowRight, MapPin, Users, Check, Clock3, Shield,
-  Star, Waves, MessageCircle,
-  Bike, Compass, Zap, type LucideIcon
-} from 'lucide-react'
-import { KnowBeforeCards } from '@/components/KnowBeforeCards'
+  ArrowRight,
+  MapPin,
+  Check,
+  Clock3,
+  Shield,
+  Star,
+  MessageCircle,
+  Bike,
+  Compass,
+  Zap,
+  Users,
+  Waves,
+  Utensils,
+  type LucideIcon,
+} from "lucide-react"
+import { KnowBeforeCards } from "@/components/KnowBeforeCards"
 import {
   atvWhatYouGetItems,
   atvWhatToBringItems,
   atvWhatYouGetFooter,
   atvWhatToBringFooter,
-} from '@/data/atvKnowBefore'
+} from "@/data/atvKnowBefore"
+import { ADVENTURES, getAdventureChildPrice, type AdventureCatalogItem } from "@/data/adventures"
+import { getListPrice, getPromoListPrice, formatTierPriceTable } from "@/lib/pricing"
+import {
+  DISCOVERY_CATEGORIES,
+  getCatalogSection,
+  getCatalogTopPicks,
+  getFeaturedPackages,
+  WHY_SEKAR,
+  GUEST_STORIES,
+} from "@/data/activityCatalog"
+import {
+  getTourCategoryLabel,
+  type Tour,
+  type TourCategoryId,
+} from "@/data/tours"
+import {
+  buildCyclingCookingComboWhatsAppUrl,
+  getCyclingCookingCombo,
+} from "@/data/cultureSales"
+import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
 
-/** Tiny LQIP for the hero — keeps LCP fast while the optimized image loads */
 const HERO_BLUR_DATA_URL =
-  'data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBAv/EACIQAAICAgEEAwEAAAAAAAAAAAECAxEAEiEEMUFhBRMigf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwCL42dFV2mNDlmPm/H9yfqXjmEv12Qw2J93mdK0UV7saq+11iYpM7aPuzc2V1v1mRjjp5qDLNsEZOPzyQTxkpmdWYRjZQoJOvYducYyi//Z'
+  "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAYABADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBAv/EACIQAAICAgEEAwEAAAAAAAAAAAECAxEAEiEEMUFhBRMigf/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwCL42dFV2mNDlmPm/H9yfqXjmEv12Qw2J93mdK0UV7saq+11iYpM7aPuzc2V1v1mRjjp5qDLNsEZOPzyQTxkpmdWYRjZQoJOvYducYyi//Z"
 
-const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
-
-type Adventure = {
-  id: string
-  name: string
-  tagline: string
-  pax: string
-  price: number
-  originalPrice?: number
-  childPrice?: number | null
-  image: string
-  description: string
-  highlights: string[]
-  duration: string
-  icon: LucideIcon
-  minPax: number
-  times: string[]
-  tourSlug?: string
+const ADVENTURE_ICONS: Record<string, LucideIcon> = {
+  "single-atv": Zap,
+  "tandem-atv": Users,
+  rafting: Waves,
+  "canyon-tubing": Compass,
+  cycling: Bike,
 }
+
+const CATEGORY_SECTION_META: {
+  id: TourCategoryId
+  anchor: string
+  eyebrow: string
+  title: string
+  subtitle: string
+}[] = [
+  {
+    id: "adventure",
+    anchor: "adventure",
+    eyebrow: "Thrill days",
+    title: "Adventure",
+    subtitle: "Jungle ATV, river rafting, canyon tubing, and dirt bike — clear gear and insurance notes before you book.",
+  },
+  {
+    id: "food",
+    anchor: "food",
+    eyebrow: "Taste Bali",
+    title: "Food & workshops",
+    subtitle: "Hands-on Balinese cooking and a calm coffee plantation tasting — culture you can eat.",
+  },
+  {
+    id: "village",
+    anchor: "village",
+    eyebrow: "Slow travel",
+    title: "Village & nature",
+    subtitle: "Quiet Pejeng ricefield cycling with lunch and free Ubud hotel pickup.",
+  },
+  {
+    id: "day-tour",
+    anchor: "day-tours",
+    eyebrow: "See more in a day",
+    title: "Day tours",
+    subtitle: "Private Ubud highlights and Tanah Lot sunset runs with driver included.",
+  },
+]
 
 type PricingRow = {
   activity: string
@@ -58,134 +109,54 @@ type PricingRow = {
   highlight: boolean
 }
 
-/* ─── Adventure Data ─── */
-const adventures: Adventure[] = [
+const pricingData: PricingRow[] = [
   {
-    id: "single-atv",
-    name: "Single ATV Ride",
-    tagline: "Solo jungle thrill",
-    pax: "1 Pax",
+    activity: "Single ATV",
+    adventureId: "single-atv",
+    pax: formatTierPriceTable("single-atv"),
     price: getPromoListPrice("single-atv"),
     originalPrice: getListPrice("single-atv"),
-    childPrice: 700000,
-    image: "/images/adventures/atv-adventure.jpg",
-    description: "Beginner-friendly jungle quad ride at All New Bali Adventure — muddy tracks, river crossings, lunch, helmet & insurance included. Optional Wos River tubing or rafting combo after the track.",
-    highlights: ["Solo ride freedom", "Boot shoes & helmet", "Simple lunch included", "Insurance for ages 6–65"],
-    duration: "2 hours",
-    icon: Zap,
-    minPax: 1,
-    times: DEFAULT_TIMES,
-    tourSlug: "bali-atv-adventure",
+    highlight: false,
   },
   {
-    id: "tandem-atv",
-    name: "Tandem ATV Ride",
-    tagline: "Share the adventure",
-    pax: "2 Pax",
+    activity: "Tandem ATV",
+    adventureId: "tandem-atv",
+    pax: formatTierPriceTable("tandem-atv"),
     price: getPromoListPrice("tandem-atv"),
     originalPrice: getListPrice("tandem-atv"),
-    childPrice: null as number | null,
-    image: "/images/adventures/atv-adventure.jpg",
-    description: "Share a tandem quad bike with a partner through jungle trails at All New Bali Adventure. Lunch, safety gear, and optional Wos River tubing included.",
-    highlights: ["Ride together", "Boot shoes & helmet", "Simple lunch included", "Insurance for ages 6–65"],
-    duration: "2 hours",
-    icon: Users,
-    minPax: 2,
-    times: DEFAULT_TIMES,
-    tourSlug: "bali-atv-adventure",
+    highlight: true,
   },
   {
-    id: "rafting",
-    name: "Whitewater Rafting",
-    tagline: "Ride the rapids",
-    pax: "Per Person",
+    activity: "Whitewater Rafting",
+    adventureId: "rafting",
+    pax: formatTierPriceTable("rafting"),
     price: getPromoListPrice("rafting"),
     originalPrice: getListPrice("rafting"),
-    childPrice: 450000,
-    image: "/images/adventures/rafting.jpg",
-    description: "Navigate Class II-III rapids through a stunning river canyon surrounded by towering jungle cliffs, waterfalls, and ancient stone carvings.",
-    highlights: ["Class II-III rapids", "Canyon scenery", "Lunch included", "Professional crew"],
-    duration: "3 hours",
-    icon: Waves,
-    minPax: 2,
-    times: ["08:30", "11:00", "14:00"],
-    tourSlug: "whitewater-rafting",
+    highlight: false,
   },
   {
-    id: "canyon-tubing",
-    name: "Canyon Tubing",
-    tagline: "Float through paradise",
-    pax: "Per Person",
+    activity: "Canyon Tubing",
+    adventureId: "canyon-tubing",
+    pax: formatTierPriceTable("canyon-tubing"),
     price: getPromoListPrice("canyon-tubing"),
     originalPrice: getListPrice("canyon-tubing"),
-    childPrice: 300000,
-    image: "/images/adventures/canyon-tubing.jpg",
-    description: "Drift through hidden canyons on an inflatable tube. Crystal-clear waters, moss-covered walls, and shafts of sunlight create a magical underground world. Pair it with an ATV ride for the ultimate combo.",
-    highlights: ["Hidden canyons", "Crystal-clear water", "Life jacket provided", "Nature guide"],
-    duration: "2.5 hours",
-    icon: Compass,
-    minPax: 1,
-    times: DEFAULT_TIMES,
-    tourSlug: "canyon-tubing",
+    highlight: false,
   },
   {
-    id: "cycling",
-    name: "Ubud Ricefield & Village Cycling Tour",
-    tagline: "Rice paddies & village life",
-    pax: "Per Person",
+    activity: "Ubud Ricefield Cycling Tour",
+    adventureId: "cycling",
+    pax: `${formatTierPriceTable("cycling")} · Free Ubud pickup · Lunch included`,
     price: getPromoListPrice("cycling"),
     originalPrice: getListPrice("cycling"),
-    childPrice: null as number | null,
-    image: "/images/adventures/cycling.jpg",
-    description: "Quiet Pejeng rice-paddy paths with rice harvesting, a Balinese home visit, wood carving studio, and lunch included.",
-    highlights: ["Rice paddy & countryside cycling", "Lunch included", "Balinese house & carving studio", "Free Ubud hotel pickup & insurance (ages 6–65)"],
-    duration: "Full day",
-    icon: Bike,
-    minPax: 1,
-    times: ["13:30"],
-    tourSlug: "ubud-ricefield-cycling-tour",
+    highlight: false,
   },
-]
-
-function toTourConfig(adv: Adventure): TourConfig {
-  return {
-    id: adv.id,
-    title: adv.name,
-    times: [...adv.times],
-    adultPrice: getListPrice(adv.id),
-    kidPrice: "childPrice" in adv ? adv.childPrice : null,
-    minPax: adv.minPax,
-    freeUbudPickup: adv.id === "cycling",
-  }
-}
-
-const stats = [
-  { value: "5", label: "Sport Activities" },
-  { value: "100+", label: "Happy Travelers" },
-  { value: "5★", label: "Rated Experience" },
-  { value: "24/7", label: "WhatsApp Support" },
 ]
 
 const travelGuides = [
   {
     title: "Bali ATV Tour Near Ubud (2026)",
-    excerpt: "Trails, IDR price table, inclusions, and WhatsApp booking for Single & Tandem ATV at All New Bali Adventure.",
+    excerpt: "Trails, IDR price table, inclusions, and WhatsApp booking for Single & Tandem ATV.",
     href: "/blog/bali-atv-tour-ubud-guide",
-  },
-  {
-    title: "How Much Does an ATV Cost in Bali?",
-    excerpt: "2026 Single & Tandem IDR prices near Ubud — lunch, gear, insurance, and pickup fees explained.",
-    href: "/blog/how-much-does-atv-cost-bali-ubud-2026",
-  },
-  {
-    title: "Pejeng vs Tegallalang Cycling",
-    excerpt: "Quiet Pejeng Subak lanes vs busy Tegallalang photo terraces — lunch and free Ubud pickup on our ride.",
-    href: "/blog/pejeng-rice-terrace-cycling-vs-tegallalang",
-  },
-  {
-    title: "Bali Temple Dress Code Guide",
-    excerpt: "Sarong, sash, covered shoulders — what temples require, plus what we provide on guided stops.",
-    href: "/blog/bali-temple-dress-code",
   },
   {
     title: "Cycling & Cooking Class in Ubud",
@@ -193,37 +164,90 @@ const travelGuides = [
     href: "/blog/cycling-cooking-class-ubud-full-day-itinerary",
   },
   {
+    title: "Pejeng vs Tegallalang Cycling",
+    excerpt: "Quiet Pejeng Subak lanes vs busy Tegallalang photo terraces.",
+    href: "/blog/pejeng-rice-terrace-cycling-vs-tegallalang",
+  },
+  {
     title: "Ubud Hotel Pickup Explained",
-    excerpt: "Which tours include free Ubud pickup and when the IDR 400K hotel pickup charge applies.",
+    excerpt: "Which tours include free Ubud pickup and when the hotel pickup charge applies.",
     href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
+  },
+  {
+    title: "Bali Temple Dress Code Guide",
+    excerpt: "Sarong, sash, covered shoulders — what temples require on guided stops.",
+    href: "/blog/bali-temple-dress-code",
+  },
+  {
+    title: "How Much Does an ATV Cost in Bali?",
+    excerpt: "2026 Single & Tandem IDR prices near Ubud — lunch, gear, insurance, and pickup.",
+    href: "/blog/how-much-does-atv-cost-bali-ubud-2026",
   },
 ] as const
 
-/* ─── Pricing Data ─── */
-const pricingData: PricingRow[] = [
-  { activity: "Single ATV", adventureId: "single-atv", pax: formatTierPriceTable('single-atv'), price: getPromoListPrice('single-atv'), originalPrice: getListPrice('single-atv'), highlight: false },
-  { activity: "Tandem ATV", adventureId: "tandem-atv", pax: formatTierPriceTable('tandem-atv'), price: getPromoListPrice('tandem-atv'), originalPrice: getListPrice('tandem-atv'), highlight: true },
-  { activity: "Whitewater Rafting", adventureId: "rafting", pax: formatTierPriceTable('rafting'), price: getPromoListPrice('rafting'), originalPrice: getListPrice('rafting'), highlight: false },
-  { activity: "Canyon Tubing", adventureId: "canyon-tubing", pax: formatTierPriceTable('canyon-tubing'), price: getPromoListPrice('canyon-tubing'), originalPrice: getListPrice('canyon-tubing'), highlight: false },
-  {
-    activity: "Ubud Ricefield Cycling Tour",
-    adventureId: "cycling",
-    pax: `${formatTierPriceTable('cycling')} · Free Ubud pickup · Lunch included`,
-    price: getPromoListPrice('cycling'),
-    originalPrice: getListPrice('cycling'),
-    highlight: false,
-  },
-]
+function toTourConfig(adv: AdventureCatalogItem): TourConfig {
+  return {
+    id: adv.id,
+    title: adv.name,
+    times: [...adv.times],
+    adultPrice: getListPrice(adv.id),
+    kidPrice: getAdventureChildPrice(adv.id),
+    minPax: adv.minPax,
+    freeUbudPickup: adv.freeUbudPickup ?? false,
+  }
+}
 
-/* ─── Main Page ─── */
+function ExperienceCard({ tour }: { tour: Tour }) {
+  return (
+    <Link
+      href={`/tours/${tour.slug}`}
+      className="group block border-b border-brand-green/12 pb-6 hover:border-accent-gold transition-colors"
+    >
+      <div className="relative mb-4 aspect-[16/10] overflow-hidden">
+        <Image
+          src={tour.heroImage.url}
+          alt={tour.heroImage.alt}
+          fill
+          sizes="(max-width: 768px) 100vw, 33vw"
+          className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+        />
+      </div>
+      <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-accent-gold-dark mb-2">
+        {getTourCategoryLabel(tour.category)}
+        {tour.area ? ` · ${tour.area}` : ""}
+      </p>
+      <h3 className="font-display text-xl md:text-2xl font-bold uppercase text-brand-green leading-tight mb-2 group-hover:text-accent-gold-dark transition-colors">
+        {tour.title}
+      </h3>
+      <p className="text-sm text-brand-green-light leading-relaxed mb-3 line-clamp-2">
+        {tour.shortDescription}
+      </p>
+      <div className="flex items-center justify-between gap-3 text-sm">
+        <span className="inline-flex items-center gap-1.5 text-brand-green-light">
+          <Clock3 className="w-3.5 h-3.5" />
+          {tour.duration}
+        </span>
+        <span className="font-bold text-brand-green">
+          from IDR {tour.basePrice.toLocaleString("id-ID")}
+        </span>
+      </div>
+    </Link>
+  )
+}
+
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set())
   const [bookingTour, setBookingTour] = useState<TourConfig | null>(null)
   const [bookingOpen, setBookingOpen] = useState(false)
   const [bookingMixIds, setBookingMixIds] = useState<string[]>([])
+  const [storyIndex, setStoryIndex] = useState(0)
+
+  const topPicks = getCatalogTopPicks()
+  const packages = getFeaturedPackages()
+  const cultureCombo = getCyclingCookingCombo()
 
   const openBooking = (adventureId: string, mixIds: string[] = []) => {
-    const adv = adventures.find((a) => a.id === adventureId)
+    const adv = ADVENTURES.find((a) => a.id === adventureId)
     if (!adv) return
     setBookingTour(toTourConfig(adv))
     setBookingMixIds(mixIds)
@@ -245,14 +269,22 @@ export default function Home() {
           }
         })
       },
-      { threshold: 0.08, rootMargin: '80px 0px' }
+      { threshold: 0.08, rootMargin: "80px 0px" }
     )
     const sections = document.querySelectorAll("[data-animate]")
     sections.forEach((section) => observer.observe(section))
     return () => observer.disconnect()
   }, [])
 
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setStoryIndex((i) => (i + 1) % GUEST_STORIES.length)
+    }, 7000)
+    return () => window.clearInterval(timer)
+  }, [])
+
   const isVisible = (id: string) => visibleSections.has(id)
+  const story = GUEST_STORIES[storyIndex]
 
   return (
     <main className="w-full flex flex-col bg-sand">
@@ -271,7 +303,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <Image
             src="/images/adventures/hero-banner.jpg"
-            alt="ATV jungle adventure ride through tropical rainforest trails"
+            alt="Bali travel activities — jungle trails, village paths, and Ubud day experiences"
             fill
             preload
             fetchPriority="high"
@@ -279,125 +311,314 @@ export default function Home() {
             quality={70}
             placeholder="blur"
             blurDataURL={HERO_BLUR_DATA_URL}
-            className="object-cover object-[center_35%]"
+            className="object-cover object-[center_35%] hero-kenburns"
           />
           <div className="hero-overlay absolute inset-0" />
         </div>
-        <div className="relative z-10 flex flex-col items-start justify-end text-left px-6 md:px-12 lg:px-16 pt-36 pb-16 md:pb-20 max-w-5xl">
+        <div className="relative z-10 flex flex-col items-start justify-end text-left px-6 md:px-12 lg:px-16 pt-36 pb-14 md:pb-20 max-w-5xl">
           <p className="hero-brand text-3xl sm:text-4xl md:text-5xl font-bold uppercase mb-5 animate-fade-in-up">
             Sekar Bali Activity
           </p>
           <h1 className="hero-headline font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold uppercase leading-[0.92] tracking-tight mb-5 animate-fade-in-up-delay-1">
-            Sport &amp; travel<br />
-            <span className="hero-headline-accent">adventures in Ubud</span>
+            Your Bali day,<br />
+            <span className="hero-headline-accent">booked clear</span>
           </h1>
-          <p className="hero-subcopy text-base md:text-lg max-w-lg mb-9 animate-fade-in-up-delay-2">
-            Private ATV, rafting, canyon tubing, and ricefield cycling — all-inclusive packages with WhatsApp booking.
+          <p className="hero-subcopy text-base md:text-lg max-w-lg mb-7 animate-fade-in-up-delay-2">
+            Adventure, village cycling, cooking class, coffee, and private day tours near Ubud — transparent IDR and WhatsApp booking.
           </p>
+          <div className="w-full animate-fade-in-up-delay-3 mb-6">
+            <HomeActivitySearch />
+          </div>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in-up-delay-3">
-            <button
-              type="button"
-              onClick={() => openBooking("single-atv")}
+            <Link
+              href="#experiences"
               className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full btn-gold-shimmer font-bold text-sm md:text-base uppercase tracking-wider"
             >
-              Book ATV Adventure
-            </button>
-            <Link href="#adventures" className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-white/12 border border-white/35 text-white font-bold text-sm md:text-base uppercase tracking-wider hover:bg-white/20 transition-colors backdrop-blur-sm">
-              Explore packages
+              Browse experiences
+            </Link>
+            <Link
+              href="/book"
+              className="inline-flex items-center justify-center h-12 md:h-14 px-8 md:px-10 rounded-full bg-white/12 border border-white/35 text-white font-bold text-sm md:text-base uppercase tracking-wider hover:bg-white/20 transition-colors backdrop-blur-sm"
+            >
+              Open booking
             </Link>
           </div>
         </div>
       </section>
 
-      {/* ═══ STATS STRIP ═══ */}
-      <section id="stats-strip" data-animate className="bg-ink-soft text-sand py-10 md:py-12 px-6 lg:px-12">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
-          {stats.map((stat, i) => (
-            <div key={i} className={`flex flex-col items-center text-center ${isVisible("stats-strip") ? "animate-count-up" : ""}`} style={{ animationDelay: `${i * 0.12}s` }}>
-              <span className="text-4xl md:text-5xl font-display font-bold text-accent-amber mb-1">{stat.value}</span>
-              <span className="text-sm font-medium opacity-70 tracking-wide uppercase">{stat.label}</span>
-            </div>
-          ))}
+      {/* ═══ CATEGORY DISCOVERY ═══ */}
+      <section id="experiences" data-animate className="bg-ink-soft text-sand py-12 md:py-16 px-6 lg:px-12">
+        <div className="max-w-6xl mx-auto">
+          <div className={`mb-8 md:mb-10 ${isVisible("experiences") ? "animate-fade-in-up" : ""}`}>
+            <p className="text-accent-amber font-semibold tracking-[0.15em] uppercase text-sm mb-3">
+              Travel & activities
+            </p>
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold uppercase leading-tight !text-sand">
+              Pick a mood for your Ubud day
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+            {DISCOVERY_CATEGORIES.map((cat, i) => (
+              <Link
+                key={cat.id}
+                href={cat.href}
+                className={`group border border-sand/15 px-5 py-6 hover:border-accent-amber/60 hover:bg-white/5 transition-all ${isVisible("experiences") ? "animate-fade-in-up" : ""}`}
+                style={{ animationDelay: `${i * 0.08}s` }}
+              >
+                <p className="font-display text-xl uppercase font-bold mb-2 group-hover:text-accent-amber transition-colors">
+                  {cat.label}
+                </p>
+                <p className="text-sm text-sand/70 leading-relaxed mb-4">{cat.blurb}</p>
+                <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-accent-amber">
+                  Explore <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* ═══ ADVENTURE CARDS ═══ */}
+      {/* ═══ TOP PICKS ═══ */}
+      <section id="top-picks" data-animate className="section-atmosphere py-20 md:py-28 px-6 lg:px-12">
+        <div className="max-w-7xl mx-auto">
+          <div className={`mb-12 md:mb-14 max-w-2xl ${isVisible("top-picks") ? "animate-fade-in-up" : ""}`}>
+            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">
+              Handpicked
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">
+              Top picks near Ubud
+            </h2>
+            <p className="text-lg text-brand-green-light">
+              A mix of thrills, food, village paths, and private day tours — not a sports-only list.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
+            {topPicks.map((tour) => (
+              <ExperienceCard key={tour.id} tour={tour} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ DAY PACKAGES ═══ */}
+      <section id="packages" data-animate className="bg-white py-20 md:py-28 px-6 lg:px-12">
+        <div className="max-w-6xl mx-auto">
+          <div className={`mb-12 ${isVisible("packages") ? "animate-fade-in-up" : ""}`}>
+            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">
+              Stack your day
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-brand-green uppercase leading-tight mb-4">
+              Tour packages
+            </h2>
+            <p className="text-brand-green-light max-w-2xl">
+              Same-day combos and private circuits with inclusions spelled out before WhatsApp.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {packages.map((pkg, i) => (
+              <article
+                key={pkg.id}
+                className={`border border-brand-green/10 p-6 md:p-8 flex flex-col ${isVisible("packages") ? "animate-fade-in-up" : ""}`}
+                style={{ animationDelay: `${i * 0.06}s` }}
+              >
+                <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-2">
+                  {pkg.tagline}
+                </p>
+                <h3 className="font-display text-2xl font-bold uppercase text-brand-green mb-2">
+                  {pkg.name}
+                </h3>
+                <p className="text-sm text-brand-green-light leading-relaxed mb-4 flex-1">
+                  {pkg.description}
+                </p>
+                <div className="flex items-end justify-between gap-4">
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">
+                      {pkg.duration} · from
+                    </p>
+                    <p className="text-2xl font-bold text-brand-green">
+                      IDR {pkg.priceFrom.toLocaleString("id-ID")}
+                    </p>
+                  </div>
+                  {pkg.kind === "combo" ? (
+                    <button
+                      type="button"
+                      onClick={() => openComboBooking(pkg.id)}
+                      className="shrink-0 h-11 px-5 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
+                    >
+                      Book package
+                    </button>
+                  ) : (
+                    <Link
+                      href={pkg.href}
+                      className="shrink-0 inline-flex items-center h-11 px-5 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
+                    >
+                      View details
+                    </Link>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ CATEGORY SECTIONS ═══ */}
+      {CATEGORY_SECTION_META.map((section) => {
+        const items = getCatalogSection(section.id)
+        if (items.length === 0) return null
+        return (
+          <section
+            key={section.id}
+            id={section.anchor}
+            data-animate
+            className="py-16 md:py-24 px-6 lg:px-12 border-t border-brand-green/8"
+          >
+            <div className="max-w-7xl mx-auto">
+              <div className={`mb-10 max-w-2xl ${isVisible(section.anchor) ? "animate-fade-in-up" : ""}`}>
+                <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-3">
+                  {section.eyebrow}
+                </p>
+                <h2 className="font-display text-3xl md:text-5xl font-bold text-brand-green uppercase leading-tight mb-3">
+                  {section.title}
+                </h2>
+                <p className="text-brand-green-light">{section.subtitle}</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                {items.map((tour) => (
+                  <ExperienceCard key={tour.id} tour={tour} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )
+      })}
+
+      {/* ═══ QUICK BOOK ADVENTURES (WhatsApp-ready SKUs) ═══ */}
       <section id="adventures" data-animate className="section-atmosphere py-20 md:py-28 px-6 lg:px-12 w-full">
         <div className="max-w-7xl mx-auto">
-        <div className={`text-center mb-16 ${isVisible("adventures") ? "animate-fade-in-up" : ""}`}>
-          <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">Choose your sport</p>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Packages</h2>
-          <p className="text-lg text-brand-green-light max-w-2xl mx-auto">ATV trails, river sports, and village cycling near Ubud — clear inclusions before you message WhatsApp.</p>
-        </div>
+          <div className={`text-center mb-14 ${isVisible("adventures") ? "animate-fade-in-up" : ""}`}>
+            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">
+              Instant WhatsApp booking
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">
+              Core activity packages
+            </h2>
+            <p className="text-lg text-brand-green-light max-w-2xl mx-auto">
+              ATV, river days, and ricefield cycling with tier pricing — book in minutes.
+            </p>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {adventures.map((adv, i) => {
-            const IconComponent = adv.icon
-            return (
-              <article key={adv.id} className={`adventure-card bg-white overflow-hidden relative group border border-brand-green/8 ${isVisible("adventures") ? "animate-fade-in-up" : ""}`} style={{ animationDelay: `${i * 0.1}s` }}>
-                <div className="relative h-56 md:h-64 overflow-hidden">
-                  <Image
-                    src={adv.image}
-                    alt={adv.name}
-                    width={800}
-                    height={512}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    loading="lazy"
-                    className="adventure-card-image w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-green/50 to-transparent" />
-                  <div className="absolute top-4 right-4 flex flex-col items-end gap-1.5">
-                    <PromoPrice
-                      price={adv.price}
-                      originalPrice={adv.originalPrice ?? adv.price}
-                      variant="badge"
-                      from
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {ADVENTURES.map((adv, i) => {
+              const IconComponent = ADVENTURE_ICONS[adv.id] ?? Compass
+              const price = getPromoListPrice(adv.id)
+              const original = getListPrice(adv.id)
+              return (
+                <article
+                  key={adv.id}
+                  className={`adventure-card bg-white overflow-hidden relative group border border-brand-green/8 ${isVisible("adventures") ? "animate-fade-in-up" : ""}`}
+                  style={{ animationDelay: `${i * 0.1}s` }}
+                >
+                  <div className="relative h-56 md:h-64 overflow-hidden">
+                    <Image
+                      src={adv.image}
+                      alt={adv.imageAlt}
+                      width={800}
+                      height={512}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      loading="lazy"
+                      className="adventure-card-image w-full h-full object-cover"
                     />
-                  </div>
-                  <div className="absolute bottom-4 left-4 flex items-center gap-2 text-sand text-sm font-medium">
-                    <Clock3 className="w-4 h-4" /><span>{adv.duration}</span>
-                  </div>
-                  <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-accent-gold text-white flex items-center justify-center shadow-lg">
-                    <IconComponent className="w-5 h-5" />
-                  </div>
-                </div>
-                <div className="p-6 md:p-8">
-                  <div className="flex items-start justify-between mb-3">
-                    <div>
-                      <h3 className="text-2xl font-bold text-brand-green font-display uppercase">{adv.name}</h3>
-                      <span className="text-sm text-brand-green-light font-medium">{adv.tagline} · {adv.pax}</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-brand-green/50 to-transparent" />
+                    <div className="absolute top-4 right-4">
+                      <PromoPrice price={price} originalPrice={original} variant="badge" from />
+                    </div>
+                    <div className="absolute bottom-4 left-4 flex items-center gap-2 text-sand text-sm font-medium">
+                      <Clock3 className="w-4 h-4" />
+                      <span>{adv.duration}</span>
+                    </div>
+                    <div className="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-accent-gold text-white flex items-center justify-center shadow-lg">
+                      <IconComponent className="w-5 h-5" />
                     </div>
                   </div>
-                  <p className="text-brand-green-light text-sm leading-relaxed mb-6">{adv.description}</p>
-                  <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6">
-                    {adv.highlights.map((h, j) => (
-                      <span key={j} className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-green">
-                        <Check className="w-3.5 h-3.5 text-accent-gold" />{h}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    {adv.tourSlug ? (
+                  <div className="p-6 md:p-8">
+                    <h3 className="text-2xl font-bold text-brand-green font-display uppercase mb-1">
+                      {adv.name}
+                    </h3>
+                    <span className="text-sm text-brand-green-light font-medium">
+                      {adv.tagline} · {adv.paxLabel}
+                    </span>
+                    <p className="text-brand-green-light text-sm leading-relaxed mt-4 mb-6">
+                      {adv.description}
+                    </p>
+                    <div className="flex flex-wrap gap-x-4 gap-y-2 mb-6">
+                      {adv.highlights.map((h) => (
+                        <span key={h} className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-green">
+                          <Check className="w-3.5 h-3.5 text-accent-gold" />
+                          {h}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-3">
                       <Link
                         href={`/tours/${adv.tourSlug}`}
                         className="w-full flex items-center justify-center gap-2 h-12 border-2 border-brand-green/15 text-brand-green font-bold text-sm uppercase tracking-wider hover:border-brand-green/30 hover:bg-sand transition-colors"
                       >
                         View Details
                       </Link>
-                    ) : null}
-                    <button
-                      type="button"
-                      onClick={() => openBooking(adv.id)}
-                      className="w-full flex items-center justify-center gap-2 h-12 bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-ink-soft transition-colors"
-                    >
-                      Book This Adventure <ArrowRight className="w-4 h-4" />
-                    </button>
+                      <button
+                        type="button"
+                        onClick={() => openBooking(adv.id)}
+                        className="w-full flex items-center justify-center gap-2 h-12 bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-ink-soft transition-colors"
+                      >
+                        Book now <ArrowRight className="w-4 h-4" />
+                      </button>
+                    </div>
                   </div>
-                </div>
-              </article>
-            )
-          })}
-        </div>
+                </article>
+              )
+            })}
+          </div>
+
+          <article className="mt-8 border border-accent-gold/30 bg-white p-6 md:p-8 flex flex-col md:flex-row md:items-end gap-6">
+            <div className="flex-1 space-y-3">
+              <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark inline-flex items-center gap-2">
+                <Utensils className="w-3.5 h-3.5" />
+                {cultureCombo.tagline}
+              </p>
+              <h3 className="font-display text-2xl md:text-3xl font-bold text-brand-green uppercase">
+                {cultureCombo.name}
+              </h3>
+              <p className="text-sm text-brand-green-light leading-relaxed max-w-2xl">
+                {cultureCombo.description}
+              </p>
+            </div>
+            <div className="shrink-0 space-y-3 md:text-right">
+              <div>
+                <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">From (both)</p>
+                <p className="text-2xl font-bold text-brand-green">
+                  IDR {cultureCombo.totalFromIdr.toLocaleString("id-ID")}
+                </p>
+              </div>
+              <div className="flex flex-wrap md:justify-end gap-2">
+                <a
+                  href={buildCyclingCookingComboWhatsAppUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-brand-green text-sand px-5 py-3 text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Book culture day
+                </a>
+                <Link
+                  href="/book?activity=combo-cycling-cooking"
+                  className="inline-flex items-center gap-1 border border-brand-green/20 px-5 py-3 text-sm font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
+                >
+                  Sales page <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -405,12 +626,14 @@ export default function Home() {
       <section id="know-before-you-go" className="py-20 md:py-28 px-6 lg:px-12 bg-ink-soft w-full">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14">
-            <p className="text-accent-amber font-semibold tracking-[0.15em] uppercase text-sm mb-4">ATV &amp; river sports</p>
+            <p className="text-accent-amber font-semibold tracking-[0.15em] uppercase text-sm mb-4">
+              ATV &amp; river days
+            </p>
             <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold !text-sand uppercase leading-tight mb-4">
               Know Before You Go
             </h2>
             <p className="text-lg text-sand/90 max-w-2xl mx-auto">
-              Complete quad bike trips at All New Bali Adventure — packed with sensation and joy, with optional tubing on the Wos River after you race the track.
+              Complete quad bike trips at All New Bali Adventure — with optional tubing on the Wos River after the track.
             </p>
           </div>
           <KnowBeforeCards
@@ -423,21 +646,29 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ PRICING TABLE ═══ */}
+      {/* ═══ PRICING ═══ */}
       <section id="pricing" data-animate className="py-20 md:py-28 px-6 lg:px-12 bg-white w-full">
         <div className="max-w-4xl mx-auto">
           <div className={`text-center mb-16 ${isVisible("pricing") ? "animate-fade-in-up" : ""}`}>
-            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">Transparent pricing</p>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">Adventure Pricing</h2>
-            <p className="text-lg text-brand-green-light max-w-xl mx-auto">Tier pricing: better rates for 2+ and 3+ guests. Optional pickup IDR 50k (+ IDR 50k return to same hotel). Compare Grab/GoCar in the booking form.</p>
+            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">
+              Transparent pricing
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">
+              Activity pricing
+            </h2>
+            <p className="text-lg text-brand-green-light max-w-xl mx-auto">
+              Tier pricing for 2+ and 3+ guests. Optional pickup IDR 400K. Free Ubud pickup on cycling only.
+            </p>
           </div>
           <div className={`space-y-3 ${isVisible("pricing") ? "animate-fade-in-up-delay-1" : ""}`}>
-            {pricingData.map((item, i) => (
-              <div key={i} className={`pricing-row relative flex flex-col sm:flex-row items-center justify-between gap-4 p-6 md:p-8 border ${item.highlight ? "border-accent-gold bg-accent-gold/5" : "border-brand-green/10 bg-sand/40"}`}>
-                {item.highlight && <span className="absolute -top-3 left-6 bg-accent-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">Most Popular</span>}
-                {item.originalPrice && item.originalPrice > item.price && (
-                  <span className="absolute -top-3 right-6 bg-brand-green text-sand text-xs font-bold px-3 py-1 uppercase tracking-wider">
-                    Promo
+            {pricingData.map((item) => (
+              <div
+                key={item.adventureId}
+                className={`pricing-row relative flex flex-col sm:flex-row items-center justify-between gap-4 p-6 md:p-8 border ${item.highlight ? "border-accent-gold bg-accent-gold/5" : "border-brand-green/10 bg-sand/40"}`}
+              >
+                {item.highlight && (
+                  <span className="absolute -top-3 left-6 bg-accent-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
+                    Most Popular
                   </span>
                 )}
                 <div className="flex flex-col sm:flex-row items-center gap-4 flex-1">
@@ -445,19 +676,19 @@ export default function Home() {
                     <MapPin className="w-5 h-5 text-sky" />
                   </div>
                   <div className="text-center sm:text-left">
-                    <h3 className="text-lg md:text-xl font-bold text-brand-green font-display uppercase">{item.activity}</h3>
+                    <h3 className="text-lg md:text-xl font-bold text-brand-green font-display uppercase">
+                      {item.activity}
+                    </h3>
                     <span className="text-sm text-brand-green-light block mt-1">{item.pax}</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
-                  <div className="text-center sm:text-right">
-                    <PromoPrice
-                      price={item.price}
-                      originalPrice={item.originalPrice ?? item.price}
-                      variant="inline"
-                      from
-                    />
-                  </div>
+                  <PromoPrice
+                    price={item.price}
+                    originalPrice={item.originalPrice ?? item.price}
+                    variant="inline"
+                    from
+                  />
                   <button
                     type="button"
                     onClick={() => openBooking(item.adventureId)}
@@ -476,7 +707,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-brand-green-light mt-8 opacity-70">From prices shown for 1 guest. Group tiers: 2+ and 3+ discounts in booking. Hotel pickup IDR 400,000. Free Ubud pickup on cycling only. Meet at All New Bali Adventure with no transport fee.</p>
           <div className="mt-8 text-center">
             <Link
               href="/book"
@@ -488,18 +718,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ WHY CHOOSE US ═══ */}
-      
-      {/* ═══ MIX & MATCH COMBOS ═══ */}
+      {/* ═══ MIX COMBOS ═══ */}
       <section id="combos" data-animate className="bg-sand py-20 md:py-28 px-6 lg:px-12 w-full">
         <div className="max-w-6xl mx-auto">
           <div className={`text-center mb-14 ${isVisible("combos") ? "animate-fade-in-up" : ""}`}>
-            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">Mix & match</p>
+            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">
+              Mix &amp; match
+            </p>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-brand-green uppercase leading-tight">
-              Combine your adventures
+              Combine land &amp; water
             </h2>
             <p className="mt-4 text-brand-green-light max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-              Book ATV + tubing, tubing + rafting, or stack all three in one day. Same-day combos save 10–12% versus booking separately. Culture travelers: cycling + cooking below.
+              Same-day ATV + tubing or tubing + rafting saves 10–12% versus booking separately.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
@@ -509,30 +739,41 @@ export default function Home() {
               return (
                 <article
                   key={combo.id}
-                  className={`rounded-3xl bg-white border border-brand-green/10 overflow-hidden shadow-sm ${isVisible("combos") ? "animate-fade-in-up" : ""}`}
+                  className={`bg-white border border-brand-green/10 overflow-hidden ${isVisible("combos") ? "animate-fade-in-up" : ""}`}
                   style={{ animationDelay: `${i * 0.08}s` }}
                 >
                   <div className="p-6 md:p-8 flex flex-col h-full">
-                    <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-2">{combo.tagline}</p>
-                    <h3 className="font-display text-2xl font-bold text-brand-green uppercase mb-2">{combo.name}</h3>
-                    <p className="text-sm text-brand-green-light leading-relaxed mb-4 flex-1">{combo.description}</p>
-                    <p className="text-xs text-brand-green-light mb-4">{combo.duration} · Insurance ages 6–65</p>
+                    <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-2">
+                      {combo.tagline}
+                    </p>
+                    <h3 className="font-display text-2xl font-bold text-brand-green uppercase mb-2">
+                      {combo.name}
+                    </h3>
+                    <p className="text-sm text-brand-green-light leading-relaxed mb-4 flex-1">
+                      {combo.description}
+                    </p>
                     <div className="flex items-end justify-between gap-4 mt-auto">
                       <div>
                         <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">From</p>
                         {compareAt > price ? (
                           <div>
-                            <span className="text-sm line-through text-brand-green-light/70 mr-2">IDR {compareAt.toLocaleString("id-ID")}</span>
-                            <span className="text-2xl font-bold text-brand-green">IDR {price.toLocaleString("id-ID")}</span>
+                            <span className="text-sm line-through text-brand-green-light/70 mr-2">
+                              IDR {compareAt.toLocaleString("id-ID")}
+                            </span>
+                            <span className="text-2xl font-bold text-brand-green">
+                              IDR {price.toLocaleString("id-ID")}
+                            </span>
                           </div>
                         ) : (
-                          <span className="text-2xl font-bold text-brand-green">IDR {price.toLocaleString("id-ID")}</span>
+                          <span className="text-2xl font-bold text-brand-green">
+                            IDR {price.toLocaleString("id-ID")}
+                          </span>
                         )}
                       </div>
                       <button
                         type="button"
                         onClick={() => openComboBooking(combo.id)}
-                        className="shrink-0 rounded-full bg-brand-green text-sand px-5 py-3 text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                        className="shrink-0 bg-brand-green text-sand px-5 py-3 text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
                       >
                         Book combo
                       </button>
@@ -542,122 +783,95 @@ export default function Home() {
               )
             })}
           </div>
-
-          {(() => {
-            const cultureCombo = getCyclingCookingCombo()
-            return (
-              <article
-                className={`mt-8 rounded-3xl bg-white border border-accent-gold/30 overflow-hidden shadow-sm ${isVisible("combos") ? "animate-fade-in-up" : ""}`}
-              >
-                <div className="p-6 md:p-8 flex flex-col md:flex-row md:items-end gap-6">
-                  <div className="flex-1 space-y-3">
-                    <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark">
-                      {cultureCombo.tagline}
-                    </p>
-                    <h3 className="font-display text-2xl md:text-3xl font-bold text-brand-green uppercase">
-                      {cultureCombo.name}
-                    </h3>
-                    <p className="text-sm text-brand-green-light leading-relaxed max-w-2xl">
-                      {cultureCombo.description}
-                    </p>
-                    <ul className="space-y-1.5 pt-1">
-                      {cultureCombo.timeline.map((line) => (
-                        <li key={line} className="flex items-start gap-2 text-sm text-brand-green">
-                          <Check className="w-4 h-4 text-accent-gold-dark shrink-0 mt-0.5" />
-                          <span>{line}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="shrink-0 space-y-3 md:text-right">
-                    <div>
-                      <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">From (both)</p>
-                      <p className="text-2xl font-bold text-brand-green">
-                        IDR {cultureCombo.totalFromIdr.toLocaleString("id-ID")}
-                      </p>
-                    </div>
-                    <div className="flex flex-wrap md:justify-end gap-2">
-                      <a
-                        href={buildCyclingCookingComboWhatsAppUrl()}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 rounded-full bg-brand-green text-sand px-5 py-3 text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
-                      >
-                        <MessageCircle className="w-4 h-4" />
-                        Book culture day
-                      </a>
-                      <Link
-                        href="/book?activity=combo-cycling-cooking"
-                        className="inline-flex items-center gap-1 rounded-full border border-brand-green/20 px-5 py-3 text-sm font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
-                      >
-                        Sales page <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            )
-          })()}
         </div>
       </section>
 
-<section id="why-us" data-animate className="section-atmosphere py-20 md:py-28 px-6 lg:px-12 w-full">
+      {/* ═══ WHY US ═══ */}
+      <section id="why-us" data-animate className="section-atmosphere py-20 md:py-28 px-6 lg:px-12 w-full">
         <div className="max-w-6xl mx-auto">
-        <div className={`text-center mb-16 ${isVisible("why-us") ? "animate-fade-in-up" : ""}`}>
-          <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">Why travel with us</p>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-brand-green uppercase leading-tight">
-            Built for thrills.<br /><span className="text-accent-gold-dark">Backed by safety.</span>
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
-          {[
-            { icon: Shield, title: "Safety First", desc: "International-standard safety gear, certified guides, and comprehensive insurance for ages 6–65 on every adventure. Your safety is non-negotiable." },
-            { icon: Star, title: "5-Star Rated", desc: "Over 100 guests and counting. Consistently rated 5 stars on GetYourGuide, Google, and TripAdvisor by adventurers worldwide." },
-            { icon: MapPin, title: "Local Experts", desc: "Our Balinese guides know every hidden trail, secret waterfall, and canyon passage. Experience the real Bali most tourists never see." },
-          ].map((item, i) => {
-            const IconComp = item.icon
-            return (
-              <div key={i} className={`${isVisible("why-us") ? "animate-fade-in-up" : ""}`} style={{ animationDelay: `${i * 0.12}s` }}>
+          <div className={`text-center mb-16 ${isVisible("why-us") ? "animate-fade-in-up" : ""}`}>
+            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">
+              Why book with Sekar
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-brand-green uppercase leading-tight">
+              Book the fun part.<br />
+              <span className="text-accent-gold-dark">We keep the details clear.</span>
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+            {WHY_SEKAR.map((item, i) => (
+              <div
+                key={item.title}
+                className={isVisible("why-us") ? "animate-fade-in-up" : ""}
+                style={{ animationDelay: `${i * 0.12}s` }}
+              >
                 <div className="w-14 h-14 rounded-full bg-accent-gold/12 flex items-center justify-center mb-5">
-                  <IconComp className="w-6 h-6 text-accent-gold-dark" />
+                  {i === 0 ? (
+                    <Compass className="w-6 h-6 text-accent-gold-dark" />
+                  ) : i === 1 ? (
+                    <Shield className="w-6 h-6 text-accent-gold-dark" />
+                  ) : (
+                    <MapPin className="w-6 h-6 text-accent-gold-dark" />
+                  )}
                 </div>
-                <h3 className="text-xl font-bold text-brand-green mb-3 font-display uppercase">{item.title}</h3>
+                <h3 className="text-xl font-bold text-brand-green mb-3 font-display uppercase">
+                  {item.title}
+                </h3>
                 <p className="text-brand-green-light leading-relaxed text-sm">{item.desc}</p>
               </div>
-            )
-          })}
-        </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* ═══ TESTIMONIAL ═══ */}
+      {/* ═══ STORIES ═══ */}
       <section className="bg-ink-soft py-20 md:py-24 px-6 lg:px-12 w-full">
         <div className="max-w-4xl mx-auto text-center text-sand">
-          <span className="text-6xl font-display leading-none block mb-4 opacity-30 text-accent-amber">&ldquo;</span>
-          <blockquote className="text-2xl md:text-3xl lg:text-4xl font-display leading-relaxed mb-6">
-            The ATV ride through the jungle was the best thing we did in Bali. Absolutely incredible guides and views.
+          <p className="text-accent-amber font-semibold tracking-[0.15em] uppercase text-sm mb-6">
+            Guest stories
+          </p>
+          <span className="text-6xl font-display leading-none block mb-4 opacity-30 text-accent-amber">
+            &ldquo;
+          </span>
+          <blockquote
+            key={story.name}
+            className="text-2xl md:text-3xl lg:text-4xl font-display leading-relaxed mb-6 animate-fade-in-up"
+          >
+            {story.quote}
           </blockquote>
           <div className="flex items-center justify-center gap-1 mb-2">
-            {[...Array(5)].map((_, i) => (<Star key={i} className="w-5 h-5 text-accent-amber fill-accent-amber" />))}
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-5 h-5 text-accent-amber fill-accent-amber" />
+            ))}
           </div>
-          <p className="text-sm font-semibold uppercase tracking-wider opacity-70">— Sarah M. · GetYourGuide Review</p>
-          <p className="mt-4 text-xs uppercase tracking-wider text-sand/60">
-            Trusted by guests on GetYourGuide, Google, and TripAdvisor
+          <p className="text-sm font-semibold uppercase tracking-wider opacity-70">
+            — {story.name} · {story.source}
           </p>
+          <div className="mt-8 flex items-center justify-center gap-2">
+            {GUEST_STORIES.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                aria-label={`Show review ${i + 1}`}
+                onClick={() => setStoryIndex(i)}
+                className={`h-2 rounded-full transition-all ${i === storyIndex ? "w-8 bg-accent-amber" : "w-2 bg-sand/30"}`}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* ═══ TRAVEL GUIDES ═══ */}
+      {/* ═══ GUIDES ═══ */}
       <section id="guides" className="py-16 md:py-20 px-6 lg:px-12 max-w-5xl mx-auto w-full">
         <div className="text-center mb-10">
           <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-3">
             Plan your trip
           </p>
           <h2 className="font-display text-3xl md:text-4xl font-bold text-brand-green uppercase leading-tight mb-4">
-            Bali Adventure Guides
+            Bali travel guides
           </h2>
           <p className="text-brand-green-light max-w-2xl mx-auto">
-            Practical guides on pricing, pickup rules, and which package fits your trip.
+            Practical guides on pricing, pickup rules, and which experience fits your day.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -679,18 +893,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══ GEO / AI citability ═══ */}
       <GeoAnswerBlock />
-
-      {/* ═══ FAQ ═══ */}
       <FAQSection />
 
       {/* ═══ CONTACT CTA ═══ */}
       <section id="contact" data-animate className="relative py-24 md:py-32 px-6 lg:px-12 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/adventures/rafting.jpg"
-            alt="Guests rafting through a jungle river canyon"
+            src="/images/cooking/stovetop-class.jpg"
+            alt="Guests cooking Balinese dishes in a hands-on class"
             fill
             sizes="100vw"
             loading="lazy"
@@ -699,9 +910,14 @@ export default function Home() {
           <div className="absolute inset-0 bg-ink-soft/88" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto text-center text-sand">
-          <p className="text-accent-amber font-semibold tracking-[0.2em] uppercase text-sm mb-4">No payment to inquire</p>
+          <p className="text-accent-amber font-semibold tracking-[0.2em] uppercase text-sm mb-4">
+            No payment to inquire
+          </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold uppercase leading-tight mb-6 !text-white">
-            Message WhatsApp.<br /><span className="text-accent-amber">Confirm your date</span><br />in minutes.
+            Message WhatsApp.<br />
+            <span className="text-accent-amber">Confirm your date</span>
+            <br />
+            in minutes.
           </h2>
           <p className="text-lg opacity-80 max-w-xl mx-auto mb-10">
             Send your date, guest count, and activity. We reply with availability and the exact IDR total — including pickup if you need it.
@@ -718,12 +934,12 @@ export default function Home() {
               onClick={() => openBooking("single-atv")}
               className="inline-flex items-center justify-center gap-3 h-14 md:h-16 px-10 rounded-full border-2 border-sand/30 text-sand font-bold text-lg uppercase tracking-wider hover:bg-sand/10 transition-colors w-full sm:w-auto"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
               WhatsApp ATV from IDR 750K
             </button>
           </div>
           <div className="mt-8 flex items-center justify-center gap-2 text-sm text-sand/70 font-medium">
-            <Check className="w-4 h-4" />Free cancellation up to 24 hours · No payment to inquire
+            <Check className="w-4 h-4" />
+            Free cancellation up to 24 hours · No payment to inquire
           </div>
         </div>
       </section>

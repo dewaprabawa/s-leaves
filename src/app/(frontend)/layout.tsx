@@ -55,16 +55,17 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   category: 'travel',
   keywords: [
+    'Bali travel activities Ubud',
+    'Ubud day tours',
     'private ATV tour Bali',
     'ATV ride Ubud',
     'Bali quad bike tour',
-    'ATV river tubing combo',
     'Ubud ricefield cycling tour',
     'cycling cooking class Ubud',
     'Balinese cooking class Ubud',
     'Bali whitewater rafting',
     'Bali canyon tubing',
-    'book Bali adventure WhatsApp',
+    'book Bali activity WhatsApp',
     'Sekar Bali Activity',
   ],
   alternates: {
@@ -223,7 +224,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                   </span>
                 </Link>
                 <p className="text-sm opacity-70 leading-relaxed mb-6">
-                  Sport and travel adventures near Ubud — ATV trails, whitewater rafting, canyon tubing, and village cycling with local crews.
+                  Travel and activities near Ubud — adventure, village cycling, cooking class, coffee, and private day tours with local crews.
                 </p>
                 <div className="flex items-center gap-3">
                   <a href="https://www.instagram.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-accent-gold/90 hover:text-white transition-colors">
@@ -238,7 +239,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               </div>
               {/* Adventures — use styled p (not h4) to avoid h2→h4 skips after page content */}
               <div>
-                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-amber">Adventures</p>
+                <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-amber">Experiences</p>
                 <ul className="space-y-3">
                   {footerLinks.adventures.map((link) => (
                     <li key={link.label}><Link href={link.href} className="text-sm opacity-70 hover:opacity-100 transition-opacity">{link.label}</Link></li>

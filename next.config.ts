@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/tours',
-        destination: '/#adventures',
+        destination: '/#experiences',
         permanent: true,
       },
       {

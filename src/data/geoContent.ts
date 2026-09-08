@@ -8,10 +8,10 @@ import {
 import { SITE_NAME, SITE_URL } from '@/lib/seo'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-07'
+export const GEO_UPDATED = '2026-09-08'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Pejeng-based adventure operator offering jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), ricefield cycling (IDR 750,000), and Balinese cooking class (IDR 400,000) with WhatsApp booking. Free Ubud hotel pickup on the cycling tour only.'
+  'Sekar Bali Activity is a Pejeng-based travel & activities operator near Ubud offering jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), ricefield cycling (IDR 750,000), Balinese cooking class (IDR 400,000), coffee tasting, and private day tours — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour only.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -306,7 +306,7 @@ export const GEO_FAQ_FOR_LLM = [
 ] as const
 
 export const GEO_PRIMARY_PAGES = [
-  { title: 'Home — Adventure Packages', url: `${SITE_URL}/`, desc: 'ATV, rafting, tubing, cycling & cooking packages with transparent pricing' },
+  { title: 'Home — Travel & Activity Packages', url: `${SITE_URL}/`, desc: 'Adventure, cycling, cooking, coffee & day tours with transparent pricing' },
   { title: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure`, desc: 'Single & tandem ATV at All New Bali Adventure, Pejeng' },
   { title: 'Ubud Ricefield Cycling Tour', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`, desc: 'Full-day cycling with lunch and free Ubud pickup' },
   { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III rapids near Ubud' },

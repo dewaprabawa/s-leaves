@@ -27,7 +27,7 @@ export default function GeoAnswerBlock() {
           id="geo-answers-heading"
           className="font-display text-3xl md:text-4xl font-bold text-brand-green uppercase leading-tight mb-4"
         >
-          Bali Adventure FAQ
+          Bali Travel FAQ
         </h2>
         <p className="geo-tldr text-brand-green-light max-w-3xl mx-auto leading-relaxed">
           {GEO_QUICK_ANSWER}

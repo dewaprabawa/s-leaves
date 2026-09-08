@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { ArrowLeft, Check, Clock, ExternalLink, X } from "lucide-react"
-import { getTourBySlug } from "@/data/tours"
+import { getTourBySlug, getTourCategoryLabel } from "@/data/tours"
 import { formatIdr } from "@/lib/whatsapp"
 
 type Props = {
@@ -40,7 +40,7 @@ export default function BookingTourDetailPanel({ tourSlug, onClose }: Props) {
         <div className="space-y-3">
           <div className="flex flex-wrap items-center gap-2 text-sm text-brand-green-light">
             <span className="inline-flex rounded-full bg-brand-green/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-green">
-              {tour.category}
+              {getTourCategoryLabel(tour.category)}
             </span>
             <span className="inline-flex items-center gap-1.5">
               <Clock className="w-4 h-4 text-brand-green" />

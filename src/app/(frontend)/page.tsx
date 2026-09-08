@@ -75,7 +75,7 @@ const CATEGORY_SECTION_META: {
     anchor: "adventure",
     eyebrow: "Thrill days",
     title: "Adventure",
-    subtitle: "Jungle ATV, river rafting, canyon tubing, and dirt bike — clear gear and insurance notes before you book.",
+    subtitle: "Jungle ATV, river rafting, and canyon tubing — clear gear and insurance notes before you book.",
   },
   {
     id: "food",

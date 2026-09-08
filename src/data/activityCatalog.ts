@@ -26,7 +26,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "adventure",
     label: TOUR_CATEGORY_LABELS.adventure,
-    blurb: "ATV, rafting, tubing & dirt bike",
+    blurb: "ATV, rafting & canyon tubing",
     href: "/#adventure",
   },
   {

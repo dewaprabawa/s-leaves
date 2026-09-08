@@ -32,7 +32,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "food",
     label: TOUR_CATEGORY_LABELS.food,
-    blurb: "Cooking class & coffee tasting",
+    blurb: "Tumang cooking class & coffee tasting",
     href: "/#food",
   },
   {
@@ -138,8 +138,8 @@ export const GUEST_STORIES = [
   },
   {
     quote:
-      "Evening cooking class after cycling made the perfect culture day. Clear pricing and fast WhatsApp replies.",
+      "Afternoon cooking class after cycling made the perfect culture day. Clear Tumang pricing and fast WhatsApp replies.",
     name: "Chloe M.",
-    source: "Guest review · Cycling + Cooking",
+    source: "Guest review · Cycling + Tumang Cooking",
   },
 ] as const

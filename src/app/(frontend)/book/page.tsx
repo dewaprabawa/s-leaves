@@ -22,9 +22,9 @@ const minAdventurePrice = Math.min(
 )
 
 export const metadata: Metadata = {
-  title: "Book ATV, Cycling & Cooking",
+  title: "Book ATV, Cycling & Tumang Cooking",
   description:
-    "Book private ATV, rafting, tubing, ricefield cycling & Balinese cooking class near Ubud. Clear IDR prices from " +
+    "Book private ATV, rafting, tubing, ricefield cycling & Tumang Bali Cooking Class near Ubud. Clear IDR prices from " +
     formatIdr(minAdventurePrice) +
     ". WhatsApp checkout — free to inquire.",
   keywords: [
@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     "private ATV tour Bali",
     "ATV river tubing combo",
     "cycling cooking class Ubud",
+    "Tumang Bali Cooking Class",
     "Balinese cooking class Ubud",
     "Ubud ricefield cycling tour",
     "book Bali adventure WhatsApp",
@@ -41,9 +42,9 @@ export const metadata: Metadata = {
     canonical: "/book",
   },
   openGraph: {
-    title: "Book ATV, Cycling & Cooking | Sekar Bali Activity",
+    title: "Book ATV, Cycling & Tumang Cooking | Sekar Bali Activity",
     description:
-      "Choose ATV, rafting, canyon tubing, ricefield cycling, or Balinese cooking — plus cycling + cooking culture day. WhatsApp booking with price included.",
+      "Choose ATV, rafting, canyon tubing, ricefield cycling, or Tumang Bali Cooking Class — plus cycling + cooking culture day. WhatsApp booking with price included.",
     url: `${SITE_URL}/book`,
     siteName: SITE_NAME,
     type: "website",
@@ -51,9 +52,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book ATV, Cycling & Cooking | Sekar Bali Activity",
+    title: "Book ATV, Cycling & Tumang Cooking | Sekar Bali Activity",
     description:
-      "Sales checkout for ATV, rafting, tubing, cycling & cooking near Ubud. Clear IDR · WhatsApp.",
+      "Sales checkout for ATV, rafting, tubing, cycling & Tumang cooking near Ubud. Clear IDR · WhatsApp.",
     images: ["/images/adventures/og-cover.jpg"],
   },
 }

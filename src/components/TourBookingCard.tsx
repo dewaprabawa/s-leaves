@@ -54,26 +54,35 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   }
 
   if (props.activityOptions?.length) {
-    return props.activityOptions.map((opt, index) => ({
-      id: `${props.tourId}-opt-${index}`,
-      title: opt.name,
-      times: DEFAULT_TIMES,
-      adultPrice: props.basePrice + opt.priceDiff,
-      kidPrice: props.childPrice ?? null,
-      minPax: /tandem/i.test(opt.name) ? 2 : 1,
-      getYourGuideUrl: props.getYourGuideUrl,
-    }))
+    return props.activityOptions.map((opt, index) => {
+      const isMorning = /morning/i.test(opt.name)
+      const isPrivate = /private/i.test(opt.name)
+      return {
+        id: `${props.tourId}-opt-${index}`,
+        title: opt.name,
+        times: isMorning ? ["08:30"] : isPrivate ? ["08:30", "13:30"] : ["13:30"],
+        adultPrice: props.basePrice + opt.priceDiff,
+        kidPrice: props.childPrice ?? null,
+        minPax: /tandem/i.test(opt.name) ? 2 : 1,
+        getYourGuideUrl: props.getYourGuideUrl,
+        freeUbudPickup: props.tourSlug === "balinese-cooking-class",
+      }
+    })
   }
 
   return [
     {
       id: props.tourId,
       title: props.title,
-      times: DEFAULT_TIMES,
+      times:
+        props.tourSlug === "balinese-cooking-class"
+          ? ["08:30", "13:30"]
+          : DEFAULT_TIMES,
       adultPrice: props.basePrice,
       kidPrice: props.childPrice ?? null,
       minPax: 1,
       getYourGuideUrl: props.getYourGuideUrl,
+      freeUbudPickup: props.tourSlug === "balinese-cooking-class",
     },
   ]
 }

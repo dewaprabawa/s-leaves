@@ -82,7 +82,7 @@ export const ACTIVITY_BASE: BusinessLocation = {
   role: 'activityBase',
   label: 'Activity Base',
   purpose:
-    'Pejeng village near Ubud — home of our cycling routes, cooking class area, and the All New Bali Adventure ATV arena where self-drive guests check in.',
+    'Pejeng village near Ubud — home of our cycling routes, the All New Bali Adventure ATV arena, and nearby Tumang Bali Cooking Class.',
   lines: ['Pejeng Village', 'Ubud, Gianyar, Bali, Indonesia'],
   formatted: 'Pejeng Village, Ubud, Gianyar, Bali, Indonesia',
   streetAddress: 'Pejeng Village',

@@ -82,7 +82,7 @@ const CATEGORY_SECTION_META: {
     anchor: "food",
     eyebrow: "Taste Bali",
     title: "Food & workshops",
-    subtitle: "Hands-on Balinese cooking and a calm coffee plantation tasting — culture you can eat.",
+    subtitle: "Tumang Bali Cooking Class (market tour, 10+ dishes) and a calm coffee plantation tasting.",
   },
   {
     id: "village",

@@ -509,7 +509,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an evening Balinese cooking class for a full cultural day.",
+    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
@@ -608,7 +608,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-2",
         question: "Is hotel pickup included for the cycling tour?",
         answer:
-          "Yes — complimentary pickup and drop-off for hotels in the Ubud area. Pickups outside Ubud add an IDR 400,000 surcharge. This is the only tour where Ubud hotel pickup is free.",
+          "Yes — complimentary pickup and drop-off for hotels in the Ubud area. Pickups outside Ubud add an IDR 400,000 surcharge. Tumang Bali Cooking Class also includes complimentary Ubud pickup.",
       },
       {
         id: "faq-ubud-cyc-3",
@@ -632,7 +632,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-6",
         question: "Can I combine cycling with a cooking class?",
         answer:
-          "Yes. Many guests ride ricefields by day and join our evening Balinese cooking class in Pejeng. Ask WhatsApp for a same-day timeline.",
+          "Yes. Many guests ride Pejeng ricefields by day and join an afternoon Tumang Bali Cooking Class (shared from IDR 506,370, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
       },
       {
         id: "faq-ubud-cyc-7",
@@ -754,161 +754,200 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
   },
   {
     id: "balinese-cooking-class",
-    title: "Traditional Balinese Dinner Cooking Class",
+    title: "Tumang Bali Cooking Class",
     slug: "balinese-cooking-class",
     category: "food",
-    area: "Pejeng / Ubud",
+    area: "Tumang village / Ubud",
     isTopPick: true,
-    duration: "3 Hours",
-    basePrice: 500000,
-    childPrice: 450000,
-    seoTitle: "Balinese Cooking Class in Pejeng",
+    duration: "3–4 Hours",
+    basePrice: 506370,
+    seoTitle: "Tumang Bali Cooking Class Ubud",
     seoDescription:
-      "Hands-on Balinese cooking class near Ubud — Base Genep, 5 dishes, dinner from IDR 400K. Pair with rice-paddy cycling. Book WhatsApp.",
+      "Tumang Bali Cooking Class near Ubud — market tour, rice-field walk, 10+ dishes, max 8 guests. Shared from IDR 506,370. Free Ubud pickup. Book WhatsApp.",
     heroImage: {
       url: "/images/cooking/pancake-toss.jpg",
-      alt: "Balinese cooking class",
+      alt: "Hands-on Tumang Bali Cooking Class near Ubud",
     },
     gallery: [
       {
-        url: "/images/cooking/crepe-flip-fun.jpg",
-        alt: "Guests flipping Dadar Gulung pandan crepes in the pan",
-      },
-      {
-        url: "/images/cooking/buffet-spread.jpg",
-        alt: "Traditional Balinese buffet feast prepared by hosts and guests",
-      },
-      {
         url: "/images/cooking/market-guide.jpg",
-        alt: "Local guide explaining fresh market ingredients in Pejeng",
+        alt: "Morning market tour before Tumang Bali Cooking Class",
       },
       {
         url: "/images/cooking/stovetop-class.jpg",
-        alt: "Guests cooking at individual traditional stovetops",
+        alt: "Guests cooking at individual stations in the village kitchen",
       },
       {
         url: "/images/cooking/sate-lilit-prep.jpg",
-        alt: "Shaping traditional Balinese Sate Lilit skewers",
+        alt: "Shaping sate lilit on lemongrass during class",
       },
       {
-        url: "/images/cooking/pancake-toss.jpg",
-        alt: "Fun pancake tossing moment during cooking class",
+        url: "/images/cooking/crepe-flip-fun.jpg",
+        alt: "Guests flipping Dadar Gulung pandan crepes",
       },
       {
-        url: "/images/cooking/dish.jpg",
-        alt: "Freshly prepared Dadar Gulung dessert",
+        url: "/images/cooking/buffet-spread.jpg",
+        alt: "Feast of dishes cooked during Tumang Bali Cooking Class",
       },
       {
         url: "/images/cooking/group-plate.jpg",
-        alt: "Happy guests presenting their homemade dishes",
+        alt: "Happy guests with homemade Balinese dishes",
+      },
+      {
+        url: "/images/cooking/dish.jpg",
+        alt: "Freshly prepared Balinese dessert from class",
       },
     ],
-    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder
-    shortDescription: "Hands-on Balinese cooking class Ubud / Pejeng — Base Genep spice paste, 5 authentic dishes, evening dinner class from IDR 400K. Ideal after rice paddy cycling for a cycling & cooking class combo day.",
-    fullDescription: `**Master the Art of Balinese Cuisine in a Traditional Setting**
+    shortDescription:
+      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Sudiana, max 8 guests, English instruction. Shared from IDR 506,370 with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
+    fullDescription: `**Tumang Bali Cooking Class — authentic village kitchen near Ubud**
 
-Balinese food is famous for its explosive flavors, aromatic spices, and vibrant colors. But eating it in a restaurant is only half the experience. To truly understand the culture, you have to learn how to cook it. Our Traditional Balinese Dinner Cooking Class offers you an immersive, hands-on culinary journey that you will remember long after you return home.
+[Tumang Bali](https://tumangbaliclass.com/) is a family-run cooking school in Tumang village near Ubud for travellers who want hands-on Balinese cuisine — not a hotel demo. Head Chef **Wayan Sudiana** teaches Base Genep (bumbu), sate lilit, pepes ikan, sambal matah, lawar, and more. Classes are taught in English. Complimentary pickup in the Ubud area. Max **8 guests** per shared class.
 
-Set in a beautiful, open-air traditional Balinese kitchen surrounded by lush tropical gardens, this 3-hour evening class is the perfect blend of education, culture, and gastronomy. It is ideal for couples, groups of friends, and families who want to bond over a shared culinary adventure.
+### Why book Tumang through Sekar Bali Activity
+We list Tumang as our flagship food experience so you can book adventure, village cycling, and this cooking class on one WhatsApp thread — with clear IDR before you confirm.
 
-### The Foundation: Understanding Balinese Spices
-Your evening begins with a warm welcome and a refreshing herbal drink. Your English-speaking culinary instructor will then introduce you to the core ingredients of Balinese cuisine. You will learn about the essential roots, herbs, and spices that make up the foundational spice paste known as *Base Genep*. 
+### What’s included
+- Hands-on cooking of **10+ Balinese dishes**
+- **Morning market tour** on the AM session only
+- Guided **rice-field walk**
+- English instruction with Chef Wayan Sudiana
+- Vegetarian / vegan menus available
+- Complimentary **hotel pickup in the Ubud area**
+- Small group — max 8 guests (shared)
 
-You will handle fresh galangal, turmeric, lemongrass, candlenut, and lesser galangal (*kencur*). Your instructor will explain not only how these ingredients are used in cooking, but also their significance in traditional Balinese medicine and culture.
+### Sessions
+- **Morning shared class** — includes traditional pasar (market) tour
+- **Afternoon shared class** — rice-field walk + kitchen (ideal after ricefield cycling)
+- **Private class** — exclusive kitchen from IDR 633,090 (1 guest); private for 2 from IDR 1,266,180
 
-### Hands-On Cooking
-Once you understand the ingredients, it is time to roll up your sleeves and get cooking! Unlike other classes where you just watch a demonstration, this is a fully hands-on experience. You will work at your own dedicated cooking station, equipped with a traditional stone mortar and pestle (*ulekan*), a cutting board, and a wok.
+### Pricing (2026)
+| Option | Price |
+|--------|-------|
+| Shared class | **IDR 506,370** per person |
+| Private (1 guest) | **IDR 633,090** |
+| Private (2 guests) | **IDR 1,266,180** total |
 
-Under the patient guidance of our expert chefs, you will learn the traditional techniques of chopping, pounding, and blending the spices to create a fragrant paste. Over the course of the evening, you will prepare 5 authentic dishes from scratch. 
+### Recognition
+TripAdvisor **Traveler’s Choice 2026** · **5.0** rating (1500+ reviews).
 
-The menu typically includes:
-1. **Sate Lilit Ayam:** Minced chicken satay blended with grated coconut and spices, wrapped around bamboo sticks and grilled.
-2. **Ayam Betutu:** The iconic Balinese spiced chicken, slow-cooked in rich coconut milk.
-3. **Lawar:** A vibrant, traditional salad made of finely chopped long beans, grated coconut, and spices.
-4. **Sambal Matah:** Bali's famous raw shallot, lemongrass, and chili relish that pairs perfectly with everything.
-5. **Dadar Gulung:** For dessert, you will make these delightful green pandan crepes stuffed with sweet palm sugar and grated coconut.
-
-*(Vegetarian, vegan, and allergy-friendly menus are easily accommodated upon request!)*
-
-### The Grand Feast
-After the hard work is done, you will transition to our beautifully lit, open-air dining pavilion. Here, you will sit down with your fellow chefs to enjoy the incredible feast you have just prepared, served family-style with steaming hot white rice. 
-
-Before you leave, you will be provided with a comprehensive digital recipe book. This ensures you can easily recreate these authentic Balinese flavors in your own kitchen back home, bringing a taste of your holiday to your everyday life.
-
-### Recommended Culinary Guides & External Resources:
-- [Authentic Balinese Cooking Class Guide](https://tumangbaliclass.com/authentic-balinese-cooking-class)
-- [Best Bali Cooking Class Experiences](https://tumangbaliclass.com/best-bali-cooking-class)
-- [Bali Cooking Class for Beginners](https://tumangbaliclass.com/bali-cooking-class-for-beginners)
-- [Vegetarian Cooking Class in Ubud](https://tumangbaliclass.com/vegetarian-cooking-class-ubud)
-- [Private Cooking Class Experience Ubud](https://tumangbaliclass.com/private-cooking-class-ubud)
-- [Cooking Class with Market Tour in Ubud](https://tumangbaliclass.com/cooking-class-with-market-tour-ubud)
-- [Half Day Cooking Class in Bali](https://tumangbaliclass.com/half-day-cooking-class-bali)
-- [Where to Stay for your Bali Cooking Class](https://tumangbaliclass.com/where-to-stay-bali-cooking-class)
-- [What to Wear for a Bali Cooking Class](https://tumangbaliclass.com/what-to-wear-bali-cooking-class)
-- [Balinese Cooking Class Ubud Guide](https://tumangbaliclass.com/balinese-cooking-class-ubud)
-- [Top Ranked Best Cooking Classes in Bali](https://tumangbaliclass.com/best-cooking-classes-bali)
-
-**Available Schedule:**
-- **Dinner Class:** 5:30 PM (17:30) – 8:30 PM`,
+### Learn more
+Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes)`,
     highlights: [
-      "Learn about essential Balinese spices and herbs",
-      "Cook 5 authentic dishes at your own station",
-      "Use traditional tools like a stone mortar",
-      "Enjoy your culinary creations in an open-air pavilion",
+      "10+ dishes with Chef Wayan Sudiana",
+      "Morning market tour (AM class) + rice-field walk",
+      "Max 8 guests · fully hands-on · English",
+      "Complimentary Ubud-area hotel pickup",
+      "TripAdvisor Traveler’s Choice 2026",
     ],
     included: [
-      "All cooking ingredients and equipment",
-      "English-speaking culinary instructor",
-      "The dinner you prepared",
-      "Digital recipe book",
+      "Hands-on cooking class (10+ dishes)",
+      "Morning market tour (morning session only)",
+      "Rice-field walk",
+      "All ingredients and cooking equipment",
+      "English-speaking chef / instructor",
+      "Meal of the dishes you prepare",
+      "Complimentary hotel pickup in the Ubud area",
     ],
-    notIncluded: ["Transportation to the class venue"],
+    notIncluded: [
+      "Hotel pickup outside the Ubud area (ask WhatsApp for a quote)",
+      "Personal expenses and gratuities",
+      "Private kitchen surcharge (optional)",
+    ],
     itinerary: [
       {
         id: "iti-cook-1",
-        time: "05:30 PM",
-        title: "Spice Introduction",
-        description: "Start the evening by learning about the roots, herbs, and spices essential to Balinese cooking (like galangal, turmeric, and lemongrass).",
+        time: "Pickup",
+        title: "Ubud hotel pickup",
+        description:
+          "Complimentary pickup from hotels in the Ubud area. Morning guests continue to the traditional market; afternoon guests head toward the village kitchen and rice fields.",
       },
       {
         id: "iti-cook-2",
-        time: "06:00 PM",
-        title: "Hands-on Cooking",
-        description: "Work at your own station to chop, pound (using a traditional stone mortar), and cook 5 authentic dishes, including chicken satay and traditional sambal.",
+        time: "Market (AM)",
+        title: "Traditional pasar tour",
+        description:
+          "Morning class only — walk the market with your chef, learn herbs and spices used in Base Genep, and shop fresh ingredients for class.",
       },
       {
         id: "iti-cook-3",
-        time: "07:30 PM",
-        title: "The Feast",
-        description: "Sit down with your fellow chefs in an open-air dining pavilion to enjoy the dinner you just prepared.",
+        time: "Village",
+        title: "Rice-field walk + kitchen briefing",
+        description:
+          "Stroll the paddies near Tumang, then settle into the family kitchen for a safety and spice introduction.",
       },
       {
         id: "iti-cook-4",
-        time: "08:30 PM",
-        title: "Recipe Book",
-        description: "Take home a digital recipe book so you can recreate the magic in your own kitchen.",
+        time: "Cook",
+        title: "Hands-on cooking (10+ dishes)",
+        description:
+          "Pound Base Genep, shape sate lilit, prepare sambal matah, pepes, lawar, and more at your station under Chef Wayan Sudiana’s guidance.",
+      },
+      {
+        id: "iti-cook-5",
+        time: "Feast",
+        title: "Eat what you cooked",
+        description:
+          "Sit down together for the meal you prepared — vegetarian and vegan menus available when requested at booking.",
+      },
+    ],
+    activityOptions: [
+      {
+        name: "Shared morning class (market tour)",
+        priceDiff: 0,
+        description: "08:30 start · pasar + rice-field walk · max 8 · IDR 506,370",
+      },
+      {
+        name: "Shared afternoon class",
+        priceDiff: 0,
+        description: "Afternoon · rice-field walk + kitchen · max 8 · IDR 506,370",
+      },
+      {
+        name: "Private class (1 guest)",
+        priceDiff: 126720,
+        description: "Exclusive kitchen · IDR 633,090",
       },
     ],
     addons: [],
     faqs: [
       {
         id: "faq-cook-1",
-        question: "Can you accommodate dietary restrictions?",
-        answer: "Yes! We can adjust the recipes for vegetarians, vegans, and most allergies (including gluten and peanuts). Please let us know when booking.",
+        question: "How much is Tumang Bali Cooking Class?",
+        answer:
+          "Shared small-group class is IDR 506,370 per person. Private kitchen is IDR 633,090 for 1 guest, or IDR 1,266,180 for 2 guests. Complimentary Ubud-area hotel pickup is included.",
       },
       {
         id: "faq-cook-2",
-        question: "Do we get to eat what we cook?",
-        answer: "Yes! The class culminates in a grand feast where you sit down to enjoy the 5 dishes you just prepared.",
+        question: "Is there a market tour?",
+        answer:
+          "Yes — the morning shared class includes a traditional pasar (market) tour. Afternoon classes focus on the rice-field walk and kitchen.",
       },
       {
         id: "faq-cook-3",
-        question: "Is the class hands-on or just a demonstration?",
-        answer: "This is a 100% hands-on experience. You will have your own cooking station, mortar, and wok.",
+        question: "How many people are in a class?",
+        answer:
+          "Shared classes are capped at 8 guests so everyone cooks hands-on. Private kitchen options are available.",
+      },
+      {
+        id: "faq-cook-4",
+        question: "Can you do vegetarian or vegan?",
+        answer:
+          "Yes. Tumang offers a full vegetarian / vegan menu — request it when you WhatsApp book, not only as a side option.",
+      },
+      {
+        id: "faq-cook-5",
+        question: "Is hotel pickup included?",
+        answer:
+          "Complimentary pickup is included for hotels in the Ubud area. Pickup from Canggu, Seminyak, or other areas — ask WhatsApp for a transfer quote.",
+      },
+      {
+        id: "faq-cook-6",
+        question: "Can I combine this with ricefield cycling?",
+        answer:
+          "Yes. A popular culture day is Pejeng ricefield cycling (free Ubud pickup + lunch) then an afternoon Tumang cooking class. Message WhatsApp to reserve both.",
       },
     ],
     reviews: [],
-    getYourGuideUrl: "https://gyg.me/rqpV6ZI5",
   },
   {
     id: "full-day-ubud-tour",

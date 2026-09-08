@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         destination: '/tours/ubud-ricefield-cycling-tour',
         permanent: true,
       },
+      {
+        source: '/tours/bali-dirt-bike-adventure',
+        destination: '/tours/bali-atv-adventure',
+        permanent: true,
+      },
     ]
   },
   images: {

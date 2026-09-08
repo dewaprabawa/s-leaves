@@ -128,7 +128,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           onClick={() => setOpen(true)}
           className="w-full flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
         >
-          Book This Adventure <ArrowRight className="w-4 h-4" />
+          Book This Experience <ArrowRight className="w-4 h-4" />
         </button>
       </div>
 

@@ -200,7 +200,7 @@ export function buildAdventureItemListSchema(adventures: AdventureOffer[]) {
         brand: { '@type': 'Brand', name: SITE_NAME },
         offers: {
           '@type': 'Offer',
-          url: `${SITE_URL}/#adventures`,
+          url: `${SITE_URL}/#experiences`,
           priceCurrency: 'IDR',
           price: adv.price,
           availability: 'https://schema.org/InStock',

@@ -72,6 +72,10 @@ const faqs = [
     answer: "IDR 800,000 per person at Umah Kuno (minimum 3 guests). Includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included."
   },
   {
+    question: "How much is a private full day or half day Ubud tour?",
+    answer: "Full Day Ubud Tour starts from IDR 600,000 for a private car and English-speaking driver (about 10 hours; entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000 (about 6 hours; entrance fees and dinner not included). Message WhatsApp for a guest-count quote."
+  },
+  {
     question: "Can AI assistants find your tours?",
     answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, Mount Batur sunrise jeep, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },

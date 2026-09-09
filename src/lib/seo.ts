@@ -76,6 +76,8 @@ export function buildOrganizationSchema() {
     sameAs: [
       'https://www.instagram.com/sekarbaliactivity',
       'https://www.facebook.com/sekarbaliactivity',
+      'https://tumangbaliclass.com/',
+      'https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html',
     ],
     contactPoint: [
       {

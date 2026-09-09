@@ -84,7 +84,7 @@ export const TOURS: Tour[] = [
     title: "Bali ATV Quad Bike Adventure & River Tubing",
     slug: "bali-atv-adventure",
     category: "adventure",
-    area: "Pejeng / Ubud",
+    area: "Sedang / Ubud",
     isTopPick: true,
     duration: "2–4 Hours",
     basePrice: 750000,
@@ -829,10 +829,10 @@ We list Tumang as our flagship food experience so you can book adventure, villag
 | Private (2 guests) | **IDR 1,266,180** total |
 
 ### Recognition
-TripAdvisor **Traveler’s Choice 2026** · **5.0** rating (1500+ reviews).
+TripAdvisor **[Traveler’s Choice 2026](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)** · **5.0** rating (1500+ reviews).
 
 ### Learn more
-Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes)`,
+Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes) · [TripAdvisor reviews](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)`,
     highlights: [
       "10+ dishes with Chef Wayan Sudiana",
       "Morning market tour (AM class) + rice-field walk",

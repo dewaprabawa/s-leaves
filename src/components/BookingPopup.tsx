@@ -187,6 +187,10 @@ export function BookingPopup({
     activityId: activeTour.id,
     adults,
     children: kids,
+    // Keeps the price visible for tours without a tiered pricing table
+    // (cooking class, coffee plantation, private day tours, etc.)
+    fallbackAdultPrice: activeTour.adultPrice,
+    fallbackChildPrice: activeTour.kidPrice,
   });
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupIncluded = activeTour.pickupIncluded === true;
@@ -276,8 +280,8 @@ export function BookingPopup({
       if (pickupQuote.dropFee) pickupNoteParts.push(`Return drop same hotel +IDR ${pickupQuote.dropFee.toLocaleString('id-ID')}`);
       if (pickupQuote.outOfUbudFee) pickupNoteParts.push(`Out of Ubud +IDR ${pickupQuote.outOfUbudFee.toLocaleString('id-ID')}`);
     }
-    const appendQuoteNotes = (q: NonNullable<typeof activityQuote>) => {
-      const label = ACTIVITY_SHORT_LABEL[q.activityId] ?? q.activityId
+    const appendQuoteNotes = (q: NonNullable<typeof activityQuote>, labelOverride?: string) => {
+      const label = labelOverride ?? ACTIVITY_SHORT_LABEL[q.activityId] ?? q.activityId
       if (q.activityId === 'tandem-atv') {
         pickupNoteParts.unshift(
           `${label} · ${adults} riders (${q.tierLabel}): ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`,
@@ -296,7 +300,7 @@ export function BookingPopup({
     if (mixedQuote) {
       for (const q of mixedQuote.quotes) appendQuoteNotes(q)
     } else if (activityQuote) {
-      appendQuoteNotes(activityQuote)
+      appendQuoteNotes(activityQuote, activeTour.title)
     }
 
     const lineItems: { label: string; amount: number }[] = []

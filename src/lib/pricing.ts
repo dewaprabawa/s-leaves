@@ -75,10 +75,18 @@ export type ActivityQuoteInput = {
   activityId: string
   adults: number
   children?: number
+  /**
+   * Flat per-adult / per-child price to use when the activity has no tiered
+   * pricing table (e.g. cooking class, coffee plantation, private day tours).
+   * Without this, unrecognized activity ids quote as null and the price
+   * silently disappears from the booking dialog / invoice.
+   */
+  fallbackAdultPrice?: number
+  fallbackChildPrice?: number | null
 }
 
 export type ActivityQuote = {
-  activityId: ActivityId
+  activityId: string
   unitLabel: string
   units: number
   unitPrice: number
@@ -91,9 +99,24 @@ export type ActivityQuote = {
 
 export function quoteActivity(input: ActivityQuoteInput): ActivityQuote | null {
   const id = input.activityId as ActivityId
-  if (!TIER_PRICES_IDR[id]) return null
-
   const children = input.children ?? 0
+
+  if (!TIER_PRICES_IDR[id]) {
+    if (!input.fallbackAdultPrice) return null
+    const billableAdults = Math.max(1, input.adults)
+    const childPrice = input.fallbackChildPrice ?? 0
+    return {
+      activityId: input.activityId,
+      unitLabel: 'person',
+      units: billableAdults,
+      unitPrice: input.fallbackAdultPrice,
+      tierLabel: 'Standard rate',
+      activitySubtotal: billableAdults * input.fallbackAdultPrice,
+      childCount: children,
+      childUnitPrice: childPrice,
+      childSubtotal: children * childPrice,
+    }
+  }
 
   if (id === 'tandem-atv') {
     const units = Math.max(1, Math.floor(input.adults / 2))

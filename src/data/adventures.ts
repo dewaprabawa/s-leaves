@@ -26,6 +26,27 @@ const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"] as const
 /** Shared catalog for sales/checkout (/book), SEO, and cross-page links */
 export const ADVENTURES: AdventureCatalogItem[] = [
   {
+    id: "cycling",
+    name: "Ubud Ricefield & Village Cycling Tour",
+    tagline: "Rice paddies & village life",
+    paxLabel: "Per person",
+    description:
+      "Authentic Ubud countryside / rice paddy cycling through Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
+    highlights: [
+      "Rice paddy & countryside cycling in Pejeng",
+      "Lunch included",
+      "Balinese house & carving studio",
+      "Free Ubud hotel pickup & insurance (ages 6–65)",
+    ],
+    duration: "Full day",
+    image: "/images/adventures/cycling.jpg",
+    imageAlt: "Rice paddy and village cycling tour through green Ubud countryside",
+    tourSlug: "ubud-ricefield-cycling-tour",
+    times: ["13:30"],
+    minPax: 1,
+    freeUbudPickup: true,
+  },
+  {
     id: "single-atv",
     name: "Single ATV Ride",
     tagline: "Solo jungle thrill",
@@ -84,27 +105,6 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     tourSlug: "canyon-tubing",
     times: [...DEFAULT_TIMES],
     minPax: 1,
-  },
-  {
-    id: "cycling",
-    name: "Ubud Ricefield & Village Cycling Tour",
-    tagline: "Rice paddies & village life",
-    paxLabel: "Per person",
-    description:
-      "Authentic Ubud countryside / rice paddy cycling through Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included.",
-    highlights: [
-      "Rice paddy & countryside cycling in Pejeng",
-      "Lunch included",
-      "Balinese house & carving studio",
-      "Free Ubud hotel pickup & insurance (ages 6–65)",
-    ],
-    duration: "Full day",
-    image: "/images/adventures/cycling.jpg",
-    imageAlt: "Rice paddy and village cycling tour through green Ubud countryside",
-    tourSlug: "ubud-ricefield-cycling-tour",
-    times: ["13:30"],
-    minPax: 1,
-    freeUbudPickup: true,
   },
 ]
 

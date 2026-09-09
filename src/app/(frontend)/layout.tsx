@@ -55,16 +55,17 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   category: 'travel',
   keywords: [
+    'Tumang Bali Cooking Class',
+    'Balinese cooking class Ubud',
+    'cooking class Ubud market tour',
+    'Ubud ricefield cycling tour',
+    'Pejeng ricefield cycling',
+    'cycling cooking class Ubud',
     'Bali travel activities Ubud',
     'Ubud day tours',
     'private ATV tour Bali',
     'ATV ride Ubud',
     'Bali quad bike tour',
-    'Ubud ricefield cycling tour',
-    'cycling cooking class Ubud',
-    'Tumang Bali Cooking Class',
-    'Balinese cooking class Ubud',
-    'cooking class Ubud market tour',
     'Bali whitewater rafting',
     'Bali canyon tubing',
     'book Bali activity WhatsApp',
@@ -168,11 +169,12 @@ const SETTINGS = { siteName: SITE_NAME }
 
 const footerLinks = {
   adventures: [
+    { label: "Tumang Bali Cooking Class", href: "/tours/balinese-cooking-class" },
+    { label: "Ubud Ricefield Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
+    { label: "Cycling + Cooking Combo", href: "/book?activity=combo-cycling-cooking" },
     { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
     { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
     { label: "Canyon Tubing", href: "/tours/canyon-tubing" },
-    { label: "Ubud Ricefield Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
-    { label: "Tumang Bali Cooking Class", href: "/tours/balinese-cooking-class" },
     { label: "Book All Activities", href: "/book" },
     { label: "All Pricing", href: "/#pricing" },
   ],
@@ -234,7 +236,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                   </span>
                 </Link>
                 <p className="text-sm opacity-70 leading-relaxed mb-6">
-                  Travel and activities near Ubud — adventure, village cycling, cooking class, coffee, and private day tours with local crews.
+                  Tumang cooking class and Pejeng ricefield cycling near Ubud — plus ATV, rafting, coffee, and private day tours with local crews.
                 </p>
                 <div className="flex items-center gap-3">
                   <a href="https://www.instagram.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-accent-gold/90 hover:text-white transition-colors">

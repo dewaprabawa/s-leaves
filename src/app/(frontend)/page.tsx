@@ -47,6 +47,7 @@ import {
   type TourCategoryId,
 } from "@/data/tours"
 import {
+  COOKING_CLASS_PRICE_IDR,
   buildCyclingCookingComboWhatsAppUrl,
   getCyclingCookingCombo,
 } from "@/data/cultureSales"
@@ -71,25 +72,27 @@ const CATEGORY_SECTION_META: {
   subtitle: string
 }[] = [
   {
-    id: "adventure",
-    anchor: "adventure",
-    eyebrow: "Thrill days",
-    title: "Adventure",
-    subtitle: "Jungle ATV, river rafting, and canyon tubing — clear gear and insurance notes before you book.",
-  },
-  {
     id: "food",
     anchor: "food",
     eyebrow: "Taste Bali",
     title: "Food & workshops",
-    subtitle: "Tumang Bali Cooking Class (market tour, 10+ dishes) and a calm coffee plantation tasting.",
+    subtitle:
+      "Tumang Bali Cooking Class near Ubud — morning market tour, 10+ dishes, max 8 guests, free hotel pickup from IDR 506K.",
   },
   {
     id: "village",
     anchor: "village",
     eyebrow: "Slow travel",
     title: "Village & nature",
-    subtitle: "Quiet Pejeng ricefield cycling with lunch and free Ubud hotel pickup.",
+    subtitle:
+      "Quiet Pejeng ricefield cycling with lunch and free Ubud hotel pickup from IDR 750K — not the Tegallalang swing strip.",
+  },
+  {
+    id: "adventure",
+    anchor: "adventure",
+    eyebrow: "Thrill days",
+    title: "Adventure",
+    subtitle: "Jungle ATV, river rafting, and canyon tubing — clear gear and insurance notes before you book.",
   },
   {
     id: "day-tour",
@@ -102,7 +105,8 @@ const CATEGORY_SECTION_META: {
 
 type PricingRow = {
   activity: string
-  adventureId: string
+  adventureId?: string
+  bookHref?: string
   pax: string
   price: number
   originalPrice?: number
@@ -110,6 +114,21 @@ type PricingRow = {
 }
 
 const pricingData: PricingRow[] = [
+  {
+    activity: "Tumang Bali Cooking Class",
+    bookHref: "/book?activity=balinese-cooking-class",
+    pax: "Shared class · Max 8 guests · Free Ubud pickup · Market tour",
+    price: COOKING_CLASS_PRICE_IDR,
+    highlight: true,
+  },
+  {
+    activity: "Ubud Ricefield Cycling Tour",
+    adventureId: "cycling",
+    pax: `${formatTierPriceTable("cycling")} · Free Ubud pickup · Lunch included`,
+    price: getPromoListPrice("cycling"),
+    originalPrice: getListPrice("cycling"),
+    highlight: true,
+  },
   {
     activity: "Single ATV",
     adventureId: "single-atv",
@@ -124,7 +143,7 @@ const pricingData: PricingRow[] = [
     pax: formatTierPriceTable("tandem-atv"),
     price: getPromoListPrice("tandem-atv"),
     originalPrice: getListPrice("tandem-atv"),
-    highlight: true,
+    highlight: false,
   },
   {
     activity: "Whitewater Rafting",
@@ -142,26 +161,18 @@ const pricingData: PricingRow[] = [
     originalPrice: getListPrice("canyon-tubing"),
     highlight: false,
   },
-  {
-    activity: "Ubud Ricefield Cycling Tour",
-    adventureId: "cycling",
-    pax: `${formatTierPriceTable("cycling")} · Free Ubud pickup · Lunch included`,
-    price: getPromoListPrice("cycling"),
-    originalPrice: getListPrice("cycling"),
-    highlight: false,
-  },
 ]
 
 const travelGuides = [
   {
-    title: "Bali ATV Tour Near Ubud (2026)",
-    excerpt: "Trails, IDR price table, inclusions, and WhatsApp booking for Single & Tandem ATV.",
-    href: "/blog/bali-atv-tour-ubud-guide",
-  },
-  {
     title: "Cycling & Cooking Class in Ubud",
     excerpt: "Pejeng ricefield cycling plus afternoon Tumang cooking class — prices and itinerary.",
     href: "/blog/cycling-cooking-class-ubud-full-day-itinerary",
+  },
+  {
+    title: "Inside Tumang Bali Cooking Class",
+    excerpt: "Market shopping, 10+ dishes, free Ubud pickup, and what to expect in a hands-on class.",
+    href: "/blog/inside-balinese-cooking-class-pejeng",
   },
   {
     title: "Pejeng vs Tegallalang Cycling",
@@ -169,19 +180,19 @@ const travelGuides = [
     href: "/blog/pejeng-rice-terrace-cycling-vs-tegallalang",
   },
   {
+    title: "Is an Ubud Cycling Tour Worth It?",
+    excerpt: "Honest pros and cons of Pejeng ricefield cycling with lunch and free pickup.",
+    href: "/blog/is-ubud-cycling-tour-worth-it",
+  },
+  {
     title: "Ubud Hotel Pickup Explained",
     excerpt: "Which tours include free Ubud pickup and when the hotel pickup charge applies.",
     href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
   },
   {
-    title: "Bali Temple Dress Code Guide",
-    excerpt: "Sarong, sash, covered shoulders — what temples require on guided stops.",
-    href: "/blog/bali-temple-dress-code",
-  },
-  {
-    title: "How Much Does an ATV Cost in Bali?",
-    excerpt: "2026 Single & Tandem IDR prices near Ubud — lunch, gear, insurance, and pickup.",
-    href: "/blog/how-much-does-atv-cost-bali-ubud-2026",
+    title: "Bali ATV Tour Near Ubud (2026)",
+    excerpt: "Trails, IDR price table, inclusions, and WhatsApp booking for Single & Tandem ATV.",
+    href: "/blog/bali-atv-tour-ubud-guide",
   },
 ] as const
 
@@ -325,7 +336,7 @@ export default function Home() {
               <span className="hero-headline-accent">booked clear</span>
             </h1>
             <p className="hero-subcopy text-base md:text-lg max-w-md mb-8 animate-fade-in-up-delay-2">
-              ATV, cycling, cooking, and day tours near Ubud — clear IDR pricing, WhatsApp booking.
+              Tumang cooking class &amp; Pejeng ricefield cycling near Ubud — free hotel pickup, clear IDR, WhatsApp booking.
             </p>
             <div className="w-full max-w-xl space-y-3 animate-fade-in-up-delay-3">
               <HomeActivitySearch />
@@ -391,7 +402,7 @@ export default function Home() {
               Top picks near Ubud
             </h2>
             <p className="text-lg text-brand-green-light">
-              A mix of thrills, food, village paths, and private day tours — not a sports-only list.
+              Start with Tumang cooking class and Pejeng ricefield cycling — then ATV, rafting, and private day tours.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
@@ -506,7 +517,7 @@ export default function Home() {
               Core activity packages
             </h2>
             <p className="text-lg text-brand-green-light max-w-2xl mx-auto">
-              ATV, river days, and ricefield cycling with tier pricing — book in minutes.
+              Ricefield cycling with free Ubud pickup, plus ATV and river days — book in minutes on WhatsApp.
             </p>
           </div>
 
@@ -659,18 +670,18 @@ export default function Home() {
               Activity pricing
             </h2>
             <p className="text-lg text-brand-green-light max-w-xl mx-auto">
-              Tier pricing for 2+ and 3+ guests. Optional pickup IDR 400K. Free Ubud pickup on cycling only.
+              Cooking class and ricefield cycling lead the list — both include free Ubud hotel pickup. ATV and river days use tier pricing; optional pickup IDR 400K.
             </p>
           </div>
           <div className={`space-y-3 ${isVisible("pricing") ? "animate-fade-in-up-delay-1" : ""}`}>
             {pricingData.map((item) => (
               <div
-                key={item.adventureId}
+                key={item.adventureId ?? item.bookHref ?? item.activity}
                 className={`pricing-row relative flex flex-col sm:flex-row items-center justify-between gap-4 p-6 md:p-8 border ${item.highlight ? "border-accent-gold bg-accent-gold/5" : "border-brand-green/10 bg-sand/40"}`}
               >
                 {item.highlight && (
                   <span className="absolute -top-3 left-6 bg-accent-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
-                    Most Popular
+                    Culture pick
                   </span>
                 )}
                 <div className="flex flex-col sm:flex-row items-center gap-4 flex-1">
@@ -691,21 +702,39 @@ export default function Home() {
                     variant="inline"
                     from
                   />
+                  {item.bookHref ? (
+                    <Link
+                      href={item.bookHref}
+                      className="hidden sm:inline-flex items-center h-10 px-6 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
+                    >
+                      Book
+                    </Link>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => item.adventureId && openBooking(item.adventureId)}
+                      className="hidden sm:inline-flex items-center h-10 px-6 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
+                    >
+                      Book
+                    </button>
+                  )}
+                </div>
+                {item.bookHref ? (
+                  <Link
+                    href={item.bookHref}
+                    className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
+                  >
+                    Book Now
+                  </Link>
+                ) : (
                   <button
                     type="button"
-                    onClick={() => openBooking(item.adventureId)}
-                    className="hidden sm:inline-flex items-center h-10 px-6 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
+                    onClick={() => item.adventureId && openBooking(item.adventureId)}
+                    className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
                   >
-                    Book
+                    Book Now
                   </button>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => openBooking(item.adventureId)}
-                  className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
-                >
-                  Book Now
-                </button>
+                )}
               </div>
             ))}
           </div>

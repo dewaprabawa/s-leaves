@@ -3,6 +3,7 @@
 - **Site:** https://www.sekarbaliactivity.com/
 - **Audit date:** 2026-09-09
 - **Implementation branch:** `cursor/seo-geo-action-plan-2c12`
+- **Merged with:** `origin/main` (includes audit report #75)
 
 ## Done in this PR
 
@@ -18,10 +19,14 @@
 
 - Re-run PageSpeed with `PAGESPEED_API_KEY` after deploy (CWV unknown in audit)
 - Optional: claim/create real Sekar Bali Activity TripAdvisor or GMB URL for brand `sameAs` (do not invent)
-- Optional SEO skill script fixes for multi-type `@type` arrays
+- Optional SEO skill script fixes for multi-type `@type` arrays (auto-report false Critical on Organization)
 
 ## Do not do (unchanged)
 
 - No FAQPage schema for commercial rich-result recovery
 - No Wikipedia created solely for SEO
 - No purchased AI citations
+
+## Note on audit auto-report items (from #75 runner)
+
+Machine `generate_report.py` listed “No Organization/Person entity” and Wikipedia/Wikidata `sameAs` gaps as Critical/Info. Organization already ships as `TravelAgency` + `LocalBusiness` (false Critical). Wikipedia/Wikidata remain optional and must not be created for SEO alone.

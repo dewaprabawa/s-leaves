@@ -9,6 +9,7 @@ export type ActivityId =
   | 'rafting'
   | 'canyon-tubing'
   | 'cycling'
+  | 'jeep-sunrise'
 
 /** Operator base cost (IDR) — do not sell at or below these */
 export const BASE_COST_IDR: Record<ActivityId, number> = {
@@ -17,6 +18,7 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
   'rafting': 200_000, // per person
   'canyon-tubing': 175_000, // per person
   'cycling': 300_000, // per person (internal floor)
+  'jeep-sunrise': 600_000, // per person (internal floor — private 4x4 + driver)
 }
 
 /** Tier 1 = 1 unit/pax, tier 2 = 2, tier 3 = 3+ */
@@ -26,6 +28,7 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'rafting': [500_000, 475_000, 450_000],
   'canyon-tubing': [359_000, 335_000, 320_000],
   'cycling': [750_000, 725_000, 700_000],
+  'jeep-sunrise': [1_350_000, 825_000, 750_000], // per person — solo pays full jeep, 2-3 pax share it
 }
 
 export const CHILD_PRICE_IDR: Partial<Record<ActivityId, number>> = {

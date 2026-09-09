@@ -15,6 +15,7 @@ export const ACTIVITY_SHORT_LABEL: Record<ActivityId, string> = {
   rafting: 'Whitewater Rafting',
   'canyon-tubing': 'Canyon Tubing',
   cycling: 'Ricefield Cycling',
+  'jeep-sunrise': 'Batur Sunrise Jeep Tour',
 }
 
 /** Compatible add-ons for each primary activity (excluding cycling) */

@@ -46,6 +46,14 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     minPax: 1,
     freeUbudPickup: true,
   },
+  {
+    id: "jeep-sunrise",
+    title: "Mount Batur Sunrise Jeep Tour",
+    times: ["02:30", "03:00"],
+    adultPrice: getListPrice("jeep-sunrise"),
+    kidPrice: null,
+    minPax: 1,
+  },
 ]
 
 type Props = {

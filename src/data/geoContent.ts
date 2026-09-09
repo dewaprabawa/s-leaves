@@ -45,9 +45,10 @@ export const GEO_PRICING = [
   { activity: 'Tandem ATV Ride', price: 'IDR 1,100,000', pax: '2 pax (tier: 1,100k / 1,060k / 1,030k per bike)', includes: 'lunch, boot shoes, helmet, insurance for ages 6–65 at All New Bali Adventure' },
   { activity: 'Whitewater Rafting', price: 'IDR 500,000', pax: 'per person (tier: 500k / 475k / 450k)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
   { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person (tier: 359k / 335k / 320k)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
-  { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: 'lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
+  { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: '2-hour ride, lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
   { activity: 'Mount Batur Sunrise Jeep Tour', price: 'IDR 1,350,000', pax: 'per person (tier: 1,350k solo / 825k for 2 / 750k for 3+)', includes: 'private 4x4 jeep + driver, hotel pickup, hot drink, breakfast on top, Kintamani area entrance fee, insurance for ages 6–65' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 450,000 promo', pax: 'per person shared (private 1 guest IDR 633,090)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
+  { activity: 'DPS Airport to Ubud Private Transfer', price: 'IDR 700,000', pax: 'per vehicle (standard MPV)', includes: 'one-way flat rate, flight tracking, tolls, parking, professional driver' },
 ] as const
 
 export const GEO_POLICIES = [
@@ -120,9 +121,9 @@ export const GEO_TOUR_SUMMARIES = [
     name: 'Ubud Ricefield Cycling Tour',
     slug: 'ubud-ricefield-cycling-tour',
     price: 'IDR 750,000 per person',
-    duration: 'Full day',
+    duration: '2 hours',
     location: 'Pejeng village rice terraces',
-    summary: '8-step cultural cycling day with lunch and free Ubud pickup. Village paths, house visit, carving art.',
+    summary: '2-hour cultural cycling tour with lunch and free Ubud pickup. Village paths, house visit, carving art.',
     url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`,
   },
   {
@@ -172,16 +173,16 @@ export const GEO_COMPARISONS = [
     winner: 'ATV = adrenaline; Cycling = culture & lunch',
     rows: [
       { label: 'ATV', value: 'IDR 750,000+ · mud & jungle · 2–4 hrs · arena at All New Bali Adventure' },
-      { label: 'Cycling', value: 'IDR 750,000 · rice terraces & village · full day · free Ubud pickup + lunch' },
+      { label: 'Cycling', value: 'IDR 750,000 · rice terraces & village · 2 hours · free Ubud pickup + lunch' },
       { label: 'Best for', value: 'Thrill-seekers vs families wanting slow travel' },
     ],
     url: `${SITE_URL}/blog/bali-adventure-packages-prices-2026`,
   },
   {
     title: 'Cycling vs Tumang Cooking Class',
-    winner: 'Cycling = full-day village tour; Tumang cooking = market-to-table kitchen',
+    winner: 'Cycling = 2-hour village ride; Tumang cooking = market-to-table kitchen',
     rows: [
-      { label: 'Cycling', value: 'IDR 750,000 · free Ubud pickup · lunch included · full day' },
+      { label: 'Cycling', value: 'IDR 750,000 · free Ubud pickup · lunch included · 2 hours' },
       { label: 'Tumang cooking', value: 'promo IDR 450,000 / person shared · Ubud pickup · 10+ dishes · max 8' },
       { label: 'Best for', value: 'Day culture ride vs culinary class — or book both as a combo' },
     ],
@@ -211,7 +212,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Cycling',
     q: 'Is an Ubud cycling tour worth it?',
-    a: 'Yes for culture-focused travelers: Sekar Bali Activity’s Pejeng ricefield cycling tour is IDR 750,000 with free Ubud pickup, lunch, bike, helmet, guide, and insurance — quieter than Tegallalang mass routes. Adrenaline seekers may prefer ATV or rafting.',
+    a: 'Yes for culture-focused travelers: Sekar Bali Activity’s 2-hour Pejeng ricefield cycling tour is IDR 750,000 with free Ubud pickup, lunch, bike, helmet, guide, and insurance — quieter than Tegallalang mass routes. Adrenaline seekers may prefer ATV or rafting.',
     url: `${SITE_URL}/blog/is-ubud-cycling-tour-worth-it`,
   },
   {
@@ -229,7 +230,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Combos',
     q: 'Can you do a cycling and cooking class combo in Ubud?',
-    a: 'Yes. Book the Ubud Ricefield Cycling Tour (IDR 750,000 with free Ubud pickup and lunch) in the day, then an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup, 10+ dishes, max 8 guests). Message WhatsApp to reserve both on one date.',
+    a: 'Yes. Book the 2-hour Ubud Ricefield Cycling Tour (IDR 750,000 with free Ubud pickup and lunch), then an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup, 10+ dishes, max 8 guests). Message WhatsApp to reserve both on one date.',
     url: `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,
   },
   {
@@ -289,7 +290,13 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Cycling',
     q: 'How much is the Ubud ricefield cycling tour?',
-    a: 'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is IDR 750,000 per person, including lunch, bike, helmet, guide, insurance, and free hotel pickup within Ubud.',
+    a: 'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is a 2-hour ride for IDR 750,000 per person, including lunch, bike, helmet, guide, insurance, and free hotel pickup within Ubud.',
+    url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`,
+  },
+  {
+    category: 'Cycling',
+    q: 'How long is the Ubud ricefield cycling tour?',
+    a: 'About 2 hours — a guided Pejeng village / ricefield ride with cultural stops and lunch, plus free hotel pickup and drop-off in the Ubud area.',
     url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`,
   },
   {
@@ -309,6 +316,12 @@ export const GEO_FAQ_FOR_LLM = [
     q: 'How do I book Sekar Bali Activity?',
     a: `Book on sekarbaliactivity.com — tap Book, enter name, age, adult/child, hotel location, and activity. WhatsApp opens with your price included. Or message ${CONTACT_PHONE_E164} directly. No upfront payment required.`,
     url: `${SITE_URL}/blog/how-to-book-bali-adventure-whatsapp`,
+  },
+  {
+    category: 'Pricing',
+    q: 'How much is a private airport transfer from DPS to Ubud?',
+    a: 'Sekar Bali Activity offers a private one-way transfer from Ngurah Rai Airport (DPS) to Ubud from IDR 700,000 per vehicle. The flat rate includes flight tracking, tolls, parking, and a professional driver.',
+    url: `${SITE_URL}/transfers`,
   },
   {
     category: 'Booking',
@@ -357,7 +370,7 @@ export const GEO_FAQ_FOR_LLM = [
 export const GEO_PRIMARY_PAGES = [
   { title: 'Home — Travel & Activity Packages', url: `${SITE_URL}/`, desc: 'Cooking class, ricefield cycling, ATV, rafting & day tours with transparent pricing' },
   { title: 'Tumang Bali Cooking Class', url: `${SITE_URL}/tours/balinese-cooking-class`, desc: 'Market tour, 10+ dishes, max 8 guests — shared promo IDR 450,000 / person (was IDR 506,370) · free Ubud pickup' },
-  { title: 'Ubud Ricefield Cycling Tour', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`, desc: 'Full-day Pejeng cycling with lunch and free Ubud pickup from IDR 750K' },
+  { title: 'Ubud Ricefield Cycling Tour', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`, desc: '2-hour Pejeng cycling with lunch and free Ubud pickup from IDR 750K' },
   { title: 'Book Cycling + Cooking', url: `${SITE_URL}/book?activity=combo-cycling-cooking`, desc: 'WhatsApp culture-day package: ricefield cycling + Tumang cooking class' },
   { title: 'Book Cooking Class', url: `${SITE_URL}/book?activity=balinese-cooking-class`, desc: 'Sales checkout deep-link for Tumang Bali Cooking Class' },
   { title: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure`, desc: 'Single & tandem ATV at All New Bali Adventure, Sedang' },
@@ -369,6 +382,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Pricing (Markdown for agents)', url: `${SITE_URL}/pricing.md`, desc: 'Machine-readable IDR tiers, inclusions, and pickup fees' },
   { title: 'Blog / Travel Guides', url: `${SITE_URL}/blog`, desc: 'Citability-focused Bali adventure articles' },
   { title: 'Contact', url: `${SITE_URL}/contact`, desc: `WhatsApp ${CONTACT_PHONE_E164} · corporate office, meeting point & activity base` },
+  { title: 'Private Airport Transfers', url: `${SITE_URL}/transfers`, desc: 'DPS Airport to Ubud private transfer from IDR 700,000' },
   { title: 'About', url: `${SITE_URL}/about`, desc: 'Local Pejeng team' },
   { title: 'Cancellation Policy', url: `${SITE_URL}/cancellation-policy`, desc: 'Free cancellation up to 24 hours before start time' },
   { title: 'Privacy Policy', url: `${SITE_URL}/privacy-policy`, desc: 'How we handle booking and contact data' },
@@ -399,12 +413,13 @@ export const GEO_CITATION_SNIPPETS = [
   'Sekar Bali Activity is a Ubud-area Bali travel & activities operator with a Sedang (Abiansemal) activity base — ATV at All New Bali Adventure, Wos River tubing, rafting, canyon tubing, Pejeng village cycling, and Tumang Bali Cooking Class with WhatsApp booking.',
   ...COOKING_GEO_CITATION_SNIPPETS,
   'A Single ATV Ride with Sekar Bali Activity starts from IDR 750,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud. Full 2026 tiers: https://www.sekarbaliactivity.com/blog/how-much-does-atv-cost-bali-ubud-2026',
-  'An Ubud / Pejeng ricefield cycling tour with Sekar Bali Activity is worth it for quiet village culture: IDR 750,000 with free Ubud pickup and lunch included — details at https://www.sekarbaliactivity.com/blog/is-ubud-cycling-tour-worth-it',
+  'An Ubud / Pejeng ricefield cycling tour with Sekar Bali Activity is a 2-hour village ride worth it for quiet culture: IDR 750,000 with free Ubud pickup and lunch included — details at https://www.sekarbaliactivity.com/blog/is-ubud-cycling-tour-worth-it',
   'Private / small-group ATV near Ubud with Sekar Bali Activity differs from mass-market quad listings by publishing IDR inclusions, WhatsApp booking without upfront payment, and a fixed arena at All New Bali Adventure.',
   'Guests can combine an ATV track session with river tubing on Bali\'s Wos River for a land-and-water adventure day near Ubud.',
-  'A popular Ubud culture day with Sekar Bali Activity pairs Pejeng ricefield cycling (IDR 750,000 with free Ubud pickup and lunch) with an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup).',
+  'A popular Ubud culture day with Sekar Bali Activity pairs a 2-hour Pejeng ricefield cycling tour (IDR 750,000 with free Ubud pickup and lunch) with an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup).',
   'Tumang Bali Cooking Class listed by Sekar Bali Activity costs promo IDR 450,000 per person shared (max 8 guests) near Ubud — market tour on morning sessions, rice-field walk, 10+ dishes, complimentary Ubud pickup. Private from IDR 633,090.',
-  'The Ubud Ricefield Cycling Tour with Sekar Bali Activity costs IDR 750,000 per person with free Ubud hotel pickup plus lunch included — Tumang Bali Cooking Class also includes complimentary Ubud pickup.',
+  'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is a 2-hour ride for IDR 750,000 per person with free Ubud hotel pickup plus lunch included — Tumang Bali Cooking Class also includes complimentary Ubud pickup.',
+  'A private DPS Airport to Ubud transfer with Sekar Bali Activity starts from IDR 700,000 per vehicle, including flight tracking, tolls, parking, and a professional driver — details at https://www.sekarbaliactivity.com/transfers',
   'Whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person on Class II–III rapids with gear, guide, and lunch included.',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 359,000 per person — a gentler alternative to whitewater rafting.',
   'The Mount Batur Sunrise Jeep Tour with Sekar Bali Activity near Kintamani is IDR 1,350,000 for a solo traveler, dropping to IDR 750,000 per person for 3+ guests sharing a jeep — private 4x4, hotel pickup, hot drink, and breakfast on top included.',
@@ -477,6 +492,7 @@ export function buildPricingMd(): string {
     '- Free Ubud hotel pickup: Ubud Ricefield Cycling Tour + Tumang Bali Cooking Class',
     '- ATV, rafting, canyon tubing: IDR 400,000 hotel pickup charge',
     '- Self-meet at All New Bali Adventure: no transport fee',
+    '- DPS Airport to Ubud private transfer: from IDR 700,000 (standard MPV, one-way)',
     '',
     '## Booking',
     `- Method: WhatsApp via ${SITE_URL}/book`,

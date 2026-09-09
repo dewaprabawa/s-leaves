@@ -7,6 +7,10 @@ import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
 import { getListPrice, getPromoListPrice } from "@/lib/pricing"
 import { formatIdr } from "@/lib/whatsapp"
+import {
+  COOKING_CLASS_PRICE_IDR,
+  COOKING_CLASS_STANDARD_PRICE_IDR,
+} from "@/data/cultureSales"
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
@@ -30,13 +34,21 @@ const SLUG_TO_ACTIVITY_ID: Record<string, string> = {
 }
 
 function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
+  if (tourSlug === "balinese-cooking-class") {
+    return {
+      promoPrice: COOKING_CLASS_PRICE_IDR,
+      standardPrice: COOKING_CLASS_STANDARD_PRICE_IDR,
+      tierLabel: "Shared class promo / person",
+    }
+  }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
   if (!activityId) {
-    return { promoPrice: fallbackBase, standardPrice: fallbackBase }
+    return { promoPrice: fallbackBase, standardPrice: fallbackBase, tierLabel: undefined }
   }
   return {
     promoPrice: getPromoListPrice(activityId),
     standardPrice: getListPrice(activityId),
+    tierLabel: "3+ group rate — book more, save more",
   }
 }
 
@@ -98,7 +110,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const [open, setOpen] = useState(false)
   const configs = buildTourConfigs(props)
   const primary = configs[0]
-  const { promoPrice, standardPrice } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
+  const { promoPrice, standardPrice, tierLabel } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
 
   return (
     <>
@@ -121,7 +133,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             originalPrice={standardPrice}
             variant="card"
             from
-            tierLabel="3+ group rate — book more, save more"
+            tierLabel={tierLabel}
           />
           {props.childPrice ? (
             <p className="text-sm text-brand-green-light mt-1">

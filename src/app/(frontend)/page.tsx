@@ -48,6 +48,7 @@ import {
 } from "@/data/tours"
 import {
   COOKING_CLASS_PRICE_IDR,
+  COOKING_CLASS_STANDARD_PRICE_IDR,
   buildCyclingCookingComboWhatsAppUrl,
   getCyclingCookingCombo,
 } from "@/data/cultureSales"
@@ -77,7 +78,7 @@ const CATEGORY_SECTION_META: {
     eyebrow: "Taste Bali",
     title: "Food & workshops",
     subtitle:
-      "Tumang Bali Cooking Class near Ubud — morning market tour, 10+ dishes, max 8 guests, free hotel pickup from IDR 506K.",
+      "Tumang Bali Cooking Class near Ubud — morning market tour, 10+ dishes, max 8 guests, free hotel pickup. Promo from IDR 450K / person.",
   },
   {
     id: "village",
@@ -117,8 +118,9 @@ const pricingData: PricingRow[] = [
   {
     activity: "Tumang Bali Cooking Class",
     bookHref: "/book?activity=balinese-cooking-class",
-    pax: "Shared class · Max 8 guests · Free Ubud pickup · Market tour",
+    pax: "Shared class · Max 8 guests · Free Ubud pickup · Market tour · Promo",
     price: COOKING_CLASS_PRICE_IDR,
+    originalPrice: COOKING_CLASS_STANDARD_PRICE_IDR,
     highlight: true,
   },
   {

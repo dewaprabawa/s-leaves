@@ -353,11 +353,14 @@ export default function BookSalesCheckout({
         <div className="flex flex-col justify-center gap-4 md:col-span-2 lg:col-span-1 bg-white rounded-2xl border border-brand-green/10 p-5 shadow-sm">
           <div>
             <p className="text-xs font-medium text-brand-green-light uppercase tracking-wider mb-1">
-              Shared from
+              Shared promo / person
             </p>
-            <p className="text-2xl font-bold text-brand-green">
-              {formatIdr(COOKING_CLASS_SALES.priceIdr)}
-            </p>
+            <PromoPrice
+              price={COOKING_CLASS_SALES.priceIdr}
+              originalPrice={COOKING_CLASS_SALES.standardPriceIdr}
+              variant="card"
+              from
+            />
             <p className="text-xs text-brand-green-light mt-1">
               Private 1 guest {formatIdr(COOKING_CLASS_SALES.privateSoloIdr)} · Ubud pickup included
             </p>

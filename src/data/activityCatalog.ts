@@ -32,7 +32,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "food",
     label: TOUR_CATEGORY_LABELS.food,
-    blurb: "Tumang cooking class from IDR 506K · market tour & max 8 guests",
+    blurb: "Tumang cooking class promo IDR 450K / person · market tour & max 8 guests",
     href: "/#food",
   },
   {

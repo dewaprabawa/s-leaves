@@ -423,7 +423,7 @@ export default function Home() {
               Top picks near Ubud
             </h2>
             <p className="text-lg text-brand-green-light">
-              Start with Tumang cooking class and Pejeng ricefield cycling — then ATV, rafting, and private day tours.
+              Start with Tumang cooking class and Pejeng ricefield cycling — then ATV, the Mount Batur sunrise jeep, rafting, and private day tours.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">

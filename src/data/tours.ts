@@ -894,10 +894,6 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         alt: "Traditional Umah Kuno Balinese Compound",
       },
     ],
-<<<<<<< HEAD
-    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder
-=======
->>>>>>> origin/main
     shortDescription:
       "Ethical Luwak coffee tasting at Umah Kuno — jungle walk, traditional roasting, and a 10-drink tasting flight. IDR 800,000 per person (minimum 3 guests).",
     fullDescription: `**A Journey Into the Heart of Bali's Coffee Culture**

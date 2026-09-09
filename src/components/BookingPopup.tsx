@@ -42,7 +42,12 @@ export interface TourConfig {
   kidPrice?: number | null
   minPax: number
   getYourGuideUrl?: string
+  /** Free pickup within Ubud only (surcharge applies outside Ubud) — cycling, cooking class */
   freeUbudPickup?: boolean
+  /** Pickup is bundled into the tour price island-wide, no arena self-meet — jeep tour, private day tours */
+  pickupIncluded?: boolean
+  /** True only for activities that actually depart from the All New Bali Adventure arena (ATV, rafting, canyon tubing) */
+  meetsAtArena?: boolean
 }
 
 export function BookingPopup({
@@ -104,7 +109,7 @@ export function BookingPopup({
       setLocationDetails("");
       setNotes("");
       setShowDetails(false);
-      setWantsPickup(false);
+      setWantsPickup(tour.pickupIncluded === true || tour.freeUbudPickup === true);
       setSameDropOff(false);
       setStep('form');
       setInvoice(null);
@@ -117,6 +122,7 @@ export function BookingPopup({
     setAdults((prev) => Math.max(activeTour.minPax, prev || activeTour.minPax))
     setTime(activeTour.times[0] || "")
     setShowDetails(false)
+    setWantsPickup(activeTour.pickupIncluded === true || activeTour.freeUbudPickup === true)
     const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
     setMixIds((prev) => prev.filter((id) => allowed.has(id as MixableActivityId) && id !== activeTour.id))
   }, [activeTour?.id])
@@ -183,10 +189,12 @@ export function BookingPopup({
     children: kids,
   });
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
+  const pickupIncluded = activeTour.pickupIncluded === true;
+  const meetsAtArena = activeTour.meetsAtArena === true;
   const pickupQuote = quotePickup({
     wantsPickup,
-    freeUbudPickup: hasFreeUbudPickup,
-    isOutUbud,
+    freeUbudPickup: hasFreeUbudPickup || pickupIncluded,
+    isOutUbud: pickupIncluded ? false : isOutUbud,
     sameDropOff,
   });
 
@@ -230,7 +238,7 @@ export function BookingPopup({
       return alert('Tandem ATV requires an even number of riders (2, 4, 6…).');
     }
     if (!wantsPickup) {
-      // meet at arena — no address needed
+      // meet at arena / self-arranged — no address needed
     } else if (!location) {
       return alert("Please select a pickup location on the map.");
     } else if (!locationOk) {
@@ -239,18 +247,28 @@ export function BookingPopup({
 
     const bookingLocation = wantsPickup
       ? locationDetails.trim()
-      : `Meet at ${MEETING_POINT.label}`;
+      : meetsAtArena
+        ? `Meet at ${MEETING_POINT.label}`
+        : "Self-arranged — no operator pickup";
     const bookingMapUrl = wantsPickup
       ? location
         ? `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}`
         : undefined
-      : MEETING_POINT.mapUrl;
+      : meetsAtArena
+        ? MEETING_POINT.mapUrl
+        : undefined;
 
     if (isInvalidPax) return alert(`Minimum ${minAdults} adult(s) required${includesRafting ? ' when rafting is included' : ''}.`);
 
     const pickupNoteParts: string[] = [];
     if (!wantsPickup) {
-      pickupNoteParts.push('Self meet at All New Bali Adventure — no pickup fee');
+      pickupNoteParts.push(
+        meetsAtArena
+          ? 'Self meet at All New Bali Adventure — no pickup fee'
+          : 'Self-arranged — no operator pickup',
+      );
+    } else if (pickupIncluded) {
+      pickupNoteParts.push('Hotel pickup & drop-off included in tour price');
     } else if (hasFreeUbudPickup && !isOutUbud) {
       pickupNoteParts.push('Free Ubud pickup (cycling tour)');
     } else {
@@ -403,26 +421,40 @@ export function BookingPopup({
 
         <div className="w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
           {!wantsPickup ? (
-            <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">
-              <p className="text-xs font-bold uppercase tracking-wider text-brand-green-light mb-2">
-                Meeting point
-              </p>
-              <h3 className="font-display text-2xl font-bold text-brand-green uppercase leading-tight mb-3">
-                {MEETING_POINT.name}
-              </h3>
-              <p className="text-sm text-brand-green-light leading-relaxed mb-4">
-                No hotel pickup — meet us directly at the arena. Arrive at your selected time; no pickup surcharge applies.
-              </p>
-              <p className="text-sm text-brand-green-light mb-6">{MEETING_POINT.address}</p>
-              <a
-                href={MEETING_POINT.mapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-green px-4 py-3 text-sm font-bold text-sand hover:bg-brand-green-light transition-colors"
-              >
-                Open in Google Maps <ExternalLink className="w-4 h-4" />
-              </a>
-            </div>
+            meetsAtArena ? (
+              <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">
+                <p className="text-xs font-bold uppercase tracking-wider text-brand-green-light mb-2">
+                  Meeting point
+                </p>
+                <h3 className="font-display text-2xl font-bold text-brand-green uppercase leading-tight mb-3">
+                  {MEETING_POINT.name}
+                </h3>
+                <p className="text-sm text-brand-green-light leading-relaxed mb-4">
+                  No hotel pickup — meet us directly at the arena. Arrive at your selected time; no pickup surcharge applies.
+                </p>
+                <p className="text-sm text-brand-green-light mb-6">{MEETING_POINT.address}</p>
+                <a
+                  href={MEETING_POINT.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-green px-4 py-3 text-sm font-bold text-sand hover:bg-brand-green-light transition-colors"
+                >
+                  Open in Google Maps <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            ) : (
+              <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">
+                <p className="text-xs font-bold uppercase tracking-wider text-brand-green-light mb-2">
+                  Meeting point
+                </p>
+                <h3 className="font-display text-2xl font-bold text-brand-green uppercase leading-tight mb-3">
+                  Self-arranged
+                </h3>
+                <p className="text-sm text-brand-green-light leading-relaxed mb-4">
+                  This tour doesn&apos;t use the All New Bali Adventure arena. Check &quot;I need hotel pickup&quot; to add your address, or tell us your plan in Special Notes.
+                </p>
+              </div>
+            )
           ) : (
             <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={(lat, lng, isOut) => {
               setLocation({lat, lng});
@@ -432,12 +464,18 @@ export function BookingPopup({
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
             <strong className="block mb-1">{wantsPickup ? "Pickup Location" : "Meeting Point"}</strong>
             {!wantsPickup ? (
-              <span className="text-brand-green font-bold flex items-center gap-1">
-                <span className="w-2 h-2 rounded-full bg-brand-green"></span>
-                {MEETING_POINT.name} — no pickup fee
-              </span>
+              meetsAtArena ? (
+                <span className="text-brand-green font-bold flex items-center gap-1">
+                  <span className="w-2 h-2 rounded-full bg-brand-green"></span>
+                  {MEETING_POINT.name} — no pickup fee
+                </span>
+              ) : (
+                <span className="opacity-70">Self-arranged — no operator pickup</span>
+              )
             ) : location ? (
-               hasFreeUbudPickup ? (
+               pickupIncluded ? (
+                 <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Pickup included in tour price</span>
+               ) : hasFreeUbudPickup ? (
                  isOutUbud ? (
                    <span className="text-red-600 font-bold block">Out of Ubud: hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
                  ) : (
@@ -599,20 +637,33 @@ export function BookingPopup({
               </div>
             </div>
 
-            <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 shadow-sm">
-              <input
-                type="checkbox"
-                checked={wantsPickup}
-                onChange={(e) => setWantsPickup(e.target.checked)}
-                className="mt-0.5 h-4 w-4 shrink-0 rounded border-brand-green/30 text-brand-green focus:ring-brand-green"
-              />
-              <span className="text-sm leading-relaxed">
-                <span className="font-bold text-brand-green block mb-0.5">I need hotel pickup</span>
+            {pickupIncluded ? (
+              <div className="rounded-xl border border-brand-green/15 bg-brand-green/5 px-4 py-3.5 text-sm">
+                <span className="font-bold text-brand-green block mb-0.5">Hotel pickup included</span>
                 <span className="text-brand-green-light">
-                  Optional. If unchecked, meet us at {MEETING_POINT.name}. Check this to add your hotel address on the map.
+                  Pickup &amp; drop-off is included in this tour&apos;s price — no arena self-meet and no extra fee. Add your hotel address below.
                 </span>
-              </span>
-            </label>
+              </div>
+            ) : (
+              <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 shadow-sm">
+                <input
+                  type="checkbox"
+                  checked={wantsPickup}
+                  onChange={(e) => setWantsPickup(e.target.checked)}
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-brand-green/30 text-brand-green focus:ring-brand-green"
+                />
+                <span className="text-sm leading-relaxed">
+                  <span className="font-bold text-brand-green block mb-0.5">I need hotel pickup</span>
+                  <span className="text-brand-green-light">
+                    {meetsAtArena
+                      ? `Optional. If unchecked, meet us at ${MEETING_POINT.name}. Check this to add your hotel address on the map.`
+                      : hasFreeUbudPickup
+                        ? "Free within Ubud (surcharge applies outside Ubud). Check this to add your hotel address on the map."
+                        : "Optional — a hotel pickup fee may apply. Check this to add your hotel address on the map."}
+                  </span>
+                </span>
+              </label>
+            )}
 
             {wantsPickup ? (
             <>
@@ -626,7 +677,7 @@ export function BookingPopup({
                 className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
               />
             </div>
-            {(!hasFreeUbudPickup || isOutUbud) ? (
+            {(!hasFreeUbudPickup && !pickupIncluded) || (isOutUbud && !pickupIncluded) ? (
               <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3 shadow-sm">
                 <input
                   type="checkbox"
@@ -641,6 +692,7 @@ export function BookingPopup({
                 </span>
               </label>
             ) : null}
+            {pickupIncluded ? null : (
             <div className="rounded-xl border border-brand-green/10 bg-brand-green/5 px-4 py-3 text-xs text-brand-green-light space-y-1.5">
               <p className="font-bold text-brand-green text-sm">Grab / GoCar vs our pickup</p>
               <p>Typical Grab or GoCar one-way Ubud ↔ arena: ~IDR {pickupQuote.grabOneWayTypical.toLocaleString('id-ID')} (est.)</p>
@@ -652,10 +704,13 @@ export function BookingPopup({
                     ? ` · saves ~${formatIdr(pickupQuote.savingsVsGrabOneWay)} vs Grab one-way`
                     : ''}
               </p>
-              <p className="opacity-80">Or meet at {MEETING_POINT.name} with no transport fee — <a href={MEETING_POINT.mapUrl} target="_blank" rel="noopener noreferrer" className="underline font-semibold text-brand-green">open map</a></p>
+              {meetsAtArena ? (
+                <p className="opacity-80">Or meet at {MEETING_POINT.name} with no transport fee — <a href={MEETING_POINT.mapUrl} target="_blank" rel="noopener noreferrer" className="underline font-semibold text-brand-green">open map</a></p>
+              ) : null}
             </div>
+            )}
             </>
-            ) : (
+            ) : meetsAtArena ? (
             <>
             <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
               <span className="font-bold text-brand-green">Meeting at:</span> {MEETING_POINT.label}, {MEETING_POINT.address}
@@ -670,6 +725,10 @@ export function BookingPopup({
               <p className="opacity-80">Need pickup? Check &quot;I need hotel pickup&quot; above — hotel pickup charge IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')}.</p>
             </div>
             </>
+            ) : (
+            <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
+              <span className="font-bold text-brand-green">Meeting:</span> Self-arranged — no fixed arena for this tour. Check &quot;I need hotel pickup&quot; above, or add details in Special Notes.
+            </div>
             )}
 
             <div className="flex flex-col sm:flex-row gap-4">

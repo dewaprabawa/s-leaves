@@ -55,6 +55,10 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
     if (configs.length) return configs
   }
 
+  const isPrivateDayTour =
+    props.tourSlug === "full-day-ubud-tour" ||
+    props.tourSlug === "half-day-ubud-tanah-lot-tour"
+
   if (props.activityOptions?.length) {
     return props.activityOptions.map((opt, index) => {
       const isMorning = /morning/i.test(opt.name)
@@ -85,6 +89,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       minPax: 1,
       getYourGuideUrl: props.getYourGuideUrl,
       freeUbudPickup: props.tourSlug === "balinese-cooking-class",
+      pickupIncluded: isPrivateDayTour,
     },
   ]
 }

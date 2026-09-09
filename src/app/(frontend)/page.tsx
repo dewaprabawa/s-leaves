@@ -163,6 +163,14 @@ const pricingData: PricingRow[] = [
     originalPrice: getListPrice("canyon-tubing"),
     highlight: false,
   },
+  {
+    activity: "Mount Batur Sunrise Jeep Tour",
+    adventureId: "jeep-sunrise",
+    pax: `${formatTierPriceTable("jeep-sunrise")} · Hotel pickup included · No hike`,
+    price: getPromoListPrice("jeep-sunrise"),
+    originalPrice: getListPrice("jeep-sunrise"),
+    highlight: false,
+  },
 ]
 
 const travelGuides = [
@@ -196,6 +204,16 @@ const travelGuides = [
     excerpt: "Trails, IDR price table, inclusions, and WhatsApp booking for Single & Tandem ATV.",
     href: "/blog/bali-atv-tour-ubud-guide",
   },
+  {
+    title: "Mount Batur Sunrise Jeep Guide 2026",
+    excerpt: "No-hike 4×4 to the crater rim — IDR tiers, pickup times, breakfast on top.",
+    href: "/blog/mount-batur-sunrise-jeep-tour-guide-2026",
+  },
+  {
+    title: "Mount Batur Jeep vs Sunrise Trek",
+    excerpt: "Private 4×4 crater-rim viewpoint vs the 2-hour summit hike — who should skip the trek.",
+    href: "/blog/mount-batur-jeep-vs-sunrise-trek",
+  },
 ] as const
 
 function toTourConfig(adv: AdventureCatalogItem): TourConfig {
@@ -207,6 +225,7 @@ function toTourConfig(adv: AdventureCatalogItem): TourConfig {
     kidPrice: getAdventureChildPrice(adv.id),
     minPax: adv.minPax,
     freeUbudPickup: adv.freeUbudPickup ?? false,
+    pickupIncluded: adv.pickupIncluded ?? false,
   }
 }
 

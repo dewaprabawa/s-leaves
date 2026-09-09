@@ -1,7 +1,8 @@
 /**
- * Browser helper for lead emails. The Web3Forms access key stays on the server
- * (`WEB3FORMS_ACCESS_KEY`) and is never sent to the client.
+ * Client-side Web3Forms submissions (required on the free plan).
+ * Set NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY in Vercel / .env.local — do not commit the value.
  */
+const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit'
 
 export type Web3FormFields = {
   name: string
@@ -16,21 +17,40 @@ export type Web3FormResult = {
   message: string
 }
 
+function getAccessKey() {
+  return process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY?.trim() || ''
+}
+
 export async function submitWeb3Form(fields: Web3FormFields): Promise<Web3FormResult> {
+  const accessKey = getAccessKey()
+  if (!accessKey) {
+    return { success: false, message: 'Lead inbox is not configured. Please try WhatsApp.' }
+  }
+
+  const payload: Record<string, string> = {
+    access_key: accessKey,
+    name: fields.name.trim() || 'Website visitor',
+    email: (fields.email || '').trim() || 'noreply@sekarbaliactivity.com',
+    subject: fields.subject,
+    message: fields.message,
+    from_name: 'Sekar Bali Activity',
+    botcheck: '',
+  }
+
+  if (fields.extra) {
+    for (const [key, value] of Object.entries(fields.extra)) {
+      if (value) payload[key] = value
+    }
+  }
+
   try {
-    const response = await fetch('/api/web3forms', {
+    const response = await fetch(WEB3FORMS_ENDPOINT, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
-      body: JSON.stringify({
-        name: fields.name,
-        email: fields.email,
-        subject: fields.subject,
-        message: fields.message,
-        extra: fields.extra,
-      }),
+      body: JSON.stringify(payload),
     })
     const data = (await response.json()) as { success?: boolean; message?: string }
     return {

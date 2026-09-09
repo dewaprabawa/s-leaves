@@ -8,6 +8,7 @@ import GeoAnswerBlock from "@/components/GeoAnswerBlock"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import HomeActivitySearch from "@/components/HomeActivitySearch"
 import PromoPrice from "@/components/PromoPrice"
+import { notifyActivityClick } from "@/lib/web3forms"
 import {
   ArrowRight,
   MapPin,
@@ -214,6 +215,7 @@ function ExperienceCard({ tour }: { tour: Tour }) {
   return (
     <Link
       href={`/tours/${tour.slug}`}
+      onClick={() => notifyActivityClick(tour.title, "experience-card")}
       className="group block border-b border-brand-green/12 pb-6 hover:border-accent-gold transition-colors"
     >
       <div className="relative mb-4 aspect-[16/10] overflow-hidden">
@@ -577,6 +579,7 @@ export default function Home() {
                     <div className="flex flex-col sm:flex-row gap-3">
                       <Link
                         href={`/tours/${adv.tourSlug}`}
+                        onClick={() => notifyActivityClick(adv.name, "view-details")}
                         className="w-full flex items-center justify-center gap-2 h-12 border-2 border-brand-green/15 text-brand-green font-bold text-sm uppercase tracking-wider hover:border-brand-green/30 hover:bg-sand transition-colors"
                       >
                         View Details

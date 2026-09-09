@@ -7,6 +7,7 @@ import { transferBookingSchema, type TransferBookingFormData } from "@/lib/valid
 import { submitTransferBooking } from "@/app/actions/bookTransfer"
 import { Calendar, Users, User, Mail, Phone, MessageSquare, CheckCircle2, ChevronRight, ChevronLeft, Loader2, Plane, MapPin, Clock } from "lucide-react"
 import { useCurrency } from "@/context/CurrencyContext"
+import { notifyBookingSubmitted } from "@/lib/web3forms"
 
 type Vehicle = {
   name: string
@@ -127,6 +128,21 @@ export default function TransferBookingForm({ transferId, transferTitle, transfe
     
     try {
       const result = await submitTransferBooking(data)
+      if (result?.success) {
+        void notifyBookingSubmitted({
+          guestName: data.guestName,
+          email: data.email,
+          activity: data.transferTitle,
+          date: data.date,
+          guests: `${data.adults} adult(s)${data.children ? `, ${data.children} child(ren)` : ""}`,
+          location: data.hotelZone,
+          price: String(data.totalPrice),
+          notes: [data.flightNumber && `Flight ${data.flightNumber}`, data.specialRequests]
+            .filter(Boolean)
+            .join(" · "),
+          source: "transfer-booking-form",
+        })
+      }
       setServerResult(result)
     } catch (e) {
       setServerResult({ success: false, error: "Network error. Please try again." })

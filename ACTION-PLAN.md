@@ -1,32 +1,48 @@
-# Action Plan — SEO + GEO (implementation status)
+# SEO Action Plan — Luwak Coffee Plantation (Umah Kuno)
 
-- **Site:** https://www.sekarbaliactivity.com/
-- **Audit date:** 2026-09-09
-- **Implementation branch:** `cursor/seo-geo-action-plan-2c12`
-- **Merged with:** `origin/main` (includes audit report #75)
+**Source audit:** `FULL-AUDIT-REPORT.md` (2026-09-09)  
+**URL:** https://www.sekarbaliactivity.com/tours/luwak-coffee-plantation
 
-## Done in this PR
+## 1) Immediate blockers
 
-1. **GEO opening blurb NAP conflict** — `geoContent.ts` one-liners now lead with Sedang / Abiansemal activity base; Pejeng reserved for cycling routes; `GEO_UPDATED` → 2026-09-09
-2. **Hero without T-rex** — cherry-picked landscape ATV hero assets + layout from PR #72
-3. **TripAdvisor citation** — linked Tumang listing `Attraction_Review-g297701-d26364507` on cooking money page, GEO FAQs, `sameAs`, and tour markdown
-4. **Internal-link pass** — `tourGuides.ts` + “Guides for this activity” on each `/tours/*` money page
-5. **Host E-E-A-T notes** — first-hand host blocks for ATV, cycling, cooking, rafting
-6. **TouristTrip enrichment** — ISO `duration`, clearer `areaServed` for ATV (Sedang)
-7. **sameAs expansion** — Tumang operator + TripAdvisor (IG/FB kept). Skipped X/Twitter (handle 404)
+| # | Action | Impact | Effort | Type |
+|---|--------|--------|--------|------|
+| 1 | **Merge & deploy [PR #90](https://github.com/dewaprabawa/s-leaves/pull/90)** so UI, `Offer.price`, FAQ, GEO, `seoTitle`/`seoDescription` all show **IDR 800,000** | Stops wrong-price indexing & AI citations | Low | Quick win |
+| 2 | After deploy, **spot-check** live HTML + JSON-LD for `800000` / “IDR 800” and request indexing if needed | Confirms cache freshness | Low | Quick win |
 
-## Still open / ops
+## 2) Quick wins (this week)
 
-- Re-run PageSpeed with `PAGESPEED_API_KEY` after deploy (CWV unknown in audit)
-- Optional: claim/create real Sekar Bali Activity TripAdvisor or GMB URL for brand `sameAs` (do not invent)
-- Optional SEO skill script fixes for multi-type `@type` arrays (auto-report false Critical on Organization)
+| # | Action | Impact | Effort | Type |
+|---|--------|--------|--------|------|
+| 3 | Fix `durationToIso` in `src/app/(frontend)/tours/[slug]/page.tsx` so `1.5 Hours` → **`PT1H30M`** (not `PT5H`) | Schema accuracy | Low | Quick win |
+| 4 | Remove or replace `youtubeVideoId: "dQw4w9WgXcQ"` placeholders (Luwak + cycling) | Trust / E-E-A-T | Low | Quick win |
+| 5 | Compress `/coffee.jpg` (&lt;200KB WebP/AVIF) and set OG `width`/`height` | LCP + social preview | Low–Med | Quick win |
+| 6 | Confirm live `/pricing.md` and `/llms.txt` list **Luwak Coffee Plantation (Umah Kuno) — IDR 800,000** | GEO / AEO | Low (after #1) | Quick win |
 
-## Do not do (unchanged)
+## 3) Strategic improvements
 
-- No FAQPage schema for commercial rich-result recovery
-- No Wikipedia created solely for SEO
-- No purchased AI citations
+| # | Action | Impact | Effort | Type |
+|---|--------|--------|--------|------|
+| 7 | Add **page-scoped `WebPage` schema** for Luwak (and other tours missing it), mirroring jeep/cooking | Clearer entity graph | Med | Strategic |
+| 8 | Scope sitewide GEO `Question` JSON-LD so ATV Q&A is not emitted on coffee URLs | Topical focus | Med | Strategic |
+| 9 | Add Luwak-specific `keywords` + `geo.placename` (Tampaksiring/Ubud) in `generateMetadata` | On-page relevance | Low–Med | Strategic |
+| 10 | Re-run PageSpeed (mobile) with API key; fix any LCP/INP issues tied to hero/JS | CWV | Med | Strategic |
 
-## Note on audit auto-report items (from #75 runner)
+## 4) Do not do
 
-Machine `generate_report.py` listed “No Organization/Person entity” and Wikipedia/Wikidata `sameAs` gaps as Critical/Info. Organization already ships as `TravelAgency` + `LocalBusiness` (false Critical). Wikipedia/Wikidata remain optional and must not be created for SEO alone.
+- Do **not** add `FAQPage` schema for commercial rich results (restricted; FAQ rich results retired).
+- Do **not** add `HowTo` schema (deprecated).
+- Do **not** buy/manipulate AI Overview citations.
+
+## 5) Execution order
+
+1. Ship price PR #90 → verify live 800k  
+2. Patch `durationToIso` + remove Rick-Roll YouTube IDs  
+3. Optimize `coffee.jpg` + OG dimensions  
+4. Page-scoped WebPage + GEO Q&A scoping  
+5. PSI follow-up and CWV polish  
+
+## 6) Environment limitations
+
+- PageSpeed Insights API rate-limited during audit — treat performance score as **unknown**.
+- `article_seo.py` / `finding_verifier.py` failed on script bugs — findings verified manually against fetched HTML.

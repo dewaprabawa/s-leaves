@@ -646,6 +646,12 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         answer:
           "Yes. We provide insurance for guests aged 6–65 on the Ubud Ricefield Cycling Tour.",
       },
+      {
+        id: "faq-ubud-cyc-9",
+        question: "Is this an e-bike (electric) tour?",
+        answer:
+          "No — it's a standard pedal bicycle with helmet included. Because the Pejeng route is mostly flat with gentle village and ricefield paths, most guests don't need electric assist to enjoy the ride comfortably.",
+      },
     ],
     reviews: [],
   },
@@ -958,38 +964,84 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
     isTopPick: true,
     duration: "10 Hours",
     basePrice: 600000,
+    seoTitle: "Full Day Ubud Tour | Palace, Market & Rice Terraces",
+    seoDescription:
+      "Private full-day Ubud tour: Royal Palace, Art Market & Tegalalang Rice Terraces from IDR 600K. English driver, custom pace. WhatsApp booking.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
       alt: "Full Day Ubud Tour",
     },
     gallery: [],
-    shortDescription: "Experience the ultimate Full Day Ubud Tour featuring the Ubud Royal Palace, vibrant Art Market, and breathtaking rice terraces.",
-    fullDescription: `**The Ultimate Full Day Ubud Tour**\n\nWhen searching for the perfect *full day ubud tour*, look no further. This comprehensive itinerary is designed to cover the very best cultural highlights in central Bali. \n\nWe begin our journey at the historic **Ubud Royal Palace**, where you can marvel at traditional Balinese architecture. Just across the street, we dive into the bustling **Ubud Art Market**, a perfect spot to find authentic handicrafts and souvenirs.\n\nAfter a morning of culture and shopping, we head to the lush jungles for an optional *atv ride bali swing tour* experience or a relaxing walk through the Tegalalang rice terraces. This is a private tour, meaning you can customize the pace to suit your needs.`,
-    highlights: ["Ubud Royal Palace", "Ubud Art Market", "Tegalalang Rice Terraces"],
-    included: ["Private transport", "English speaking driver", "Mineral water"],
-    notIncluded: ["Entrance fees", "Lunch"],
+    shortDescription:
+      "Private full-day Ubud tour covering the Royal Palace, Art Market, and Tegalalang Rice Terraces — private car, English-speaking driver, and a pace you set yourself. From IDR 600,000.",
+    fullDescription: `**Full Day Ubud Tour: Royal Palace, Art Market & Rice Terraces**
+
+Looking for a private full day Ubud tour that covers the classic central-Bali stops without a fixed group schedule? This itinerary pairs Ubud's cultural core with the countryside north of town, with your own car and English-speaking driver setting the pace.
+
+### Morning: Ubud Royal Palace & Art Market
+Start at the historic **Ubud Royal Palace** (Puri Saren Agung) to see traditional Balinese architecture, then cross the street to the **Ubud Art Market** for handicrafts, textiles, and souvenirs while the morning trade is still quiet.
+
+### Afternoon: Tegalalang Rice Terraces
+After lunch (on your own — see inclusions below), continue north to the **Tegalalang Rice Terraces**. Walk the ridges for classic Bali photos, or add on the Bali Swing nearby at your own cost if you want the jungle-swing photo stop.
+
+### Private & Flexible
+This is a private car and driver, not a shared minibus — so you can linger longer at the palace, skip the market, or ask your driver to adjust timing around your flight or dinner plans.`,
+    highlights: [
+      "Ubud Royal Palace (Puri Saren Agung)",
+      "Ubud Art Market for handicrafts & textiles",
+      "Tegalalang Rice Terraces",
+      "Private car — pace set by you, not a group schedule",
+      "English-speaking driver for the full 10 hours",
+    ],
+    included: ["Private car & transport for 10 hours", "English-speaking driver", "Mineral water"],
+    notIncluded: ["Entrance fees (Palace, rice terraces, Bali Swing if added)", "Lunch", "Personal expenses", "Gratuities"],
     itinerary: [
       {
         id: "iti-fdu-1",
         time: "08:30 AM",
         title: "Hotel Pickup",
-        description: "Your private driver will pick you up from your hotel in Bali."
+        description: "Your private driver picks you up from your hotel in the Ubud area."
       },
       {
         id: "iti-fdu-2",
         time: "10:00 AM",
         title: "Ubud Royal Palace & Art Market",
-        description: "Explore the center of Ubud, taking in the historical palace and shopping at the traditional market."
+        description: "Explore the center of Ubud — the historic palace, then the traditional Art Market across the street."
       },
       {
         id: "iti-fdu-3",
         time: "02:00 PM",
         title: "Tegalalang Rice Terraces",
-        description: "Walk the stunning terraces and optionally experience the famous Bali Swing."
+        description: "Walk the terraces and optionally add the Bali Swing (own cost) before heading back to your hotel."
       }
     ],
     addons: [],
-    faqs: [],
+    faqs: [
+      {
+        id: "faq-fdu-1",
+        question: "How much does the Full Day Ubud Tour cost?",
+        answer:
+          "From IDR 600,000 for private car, transport, and an English-speaking driver for the full 10-hour day. Entrance fees and lunch are not included — message WhatsApp for a guest-count quote.",
+      },
+      {
+        id: "faq-fdu-2",
+        question: "Is this a private tour or a shared group tour?",
+        answer:
+          "Private. You get your own car and driver, so you can spend more time at the palace or market and less at the rice terraces (or the reverse) — the schedule above is a guide, not a fixed timetable.",
+      },
+      {
+        id: "faq-fdu-3",
+        question: "Is the Bali Swing included at Tegalalang?",
+        answer:
+          "No — the Bali Swing is a separate paid attraction near the rice terraces. Your driver can stop there if you want to add it at your own cost.",
+      },
+      {
+        id: "faq-fdu-4",
+        question: "Can I customize the stops or timing?",
+        answer:
+          "Yes. Since it's a private car and driver (not a shared minibus), tell us your priorities on WhatsApp and we'll adjust the order or timing around your flight or dinner plans.",
+      },
+    ],
     reviews: []
   },
   {
@@ -1000,38 +1052,83 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
     area: "Ubud → Tanah Lot",
     duration: "6 Hours",
     basePrice: 450000,
+    seoTitle: "Half Day Ubud & Tanah Lot Sunset Tour | From IDR 450K",
+    seoDescription:
+      "Half day private tour: Ubud cultural stops then Tanah Lot sea-temple sunset. From IDR 450K, English driver. Ideal if you're short on time. WhatsApp booking.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
       alt: "Tanah Lot Sunset",
     },
     gallery: [],
-    shortDescription: "A perfect half day trip explore ubud culture amazing sunset tanah lot temple. Ideal for those short on time.",
-    fullDescription: `**Half Day Ubud & Tanah Lot Sunset Experience**\n\nIf you want to experience the magic of Bali but are short on time, this is the perfect *half day trip explore ubud culture amazing sunset tanah lot temple*.\n\nWe start in the afternoon, visiting key cultural sites around Ubud before making our way to the coast. As the afternoon cools, we arrive at the iconic sea temple of Tanah Lot. Watching the sun dip below the Indian Ocean with the temple silhouetted in the foreground is a breathtaking experience.\n\nThis *half day ubud tour* alternative ensures you get maximum value and unforgettable memories without committing to a full 10-hour day.`,
-    highlights: ["Ubud Cultural Stops", "Tanah Lot Temple", "Sunset views"],
-    included: ["Private transport", "English speaking driver", "Mineral water"],
-    notIncluded: ["Entrance fees", "Dinner"],
+    shortDescription:
+      "Half day private tour pairing Ubud cultural stops with a Tanah Lot sea-temple sunset — private car, English-speaking driver, from IDR 450,000. Ideal if you're short on time.",
+    fullDescription: `**Half Day Ubud & Tanah Lot Sunset Tour**
+
+Short on time but don't want to miss the coast? This half day trip pairs an afternoon around Ubud with the classic Tanah Lot sunset — without committing to a full 10-hour day.
+
+### Afternoon: Ubud Surrounds
+We start in the early afternoon with a private car and English-speaking driver, visiting cultural sites or temples around the Ubud area (tell us your interests on WhatsApp so your driver can prioritize accordingly).
+
+### Sunset: Tanah Lot Temple
+As the afternoon cools, we head to the coast and the iconic sea temple of **Tanah Lot**. Watching the sun dip below the Indian Ocean with the temple silhouetted in the foreground is one of Bali's most photographed sunsets.
+
+### Why Choose the Half Day Option
+If your schedule is tight — an early flight, a late arrival, or a full day already booked elsewhere — this half day version still delivers Ubud culture and the Tanah Lot sunset in about 6 hours.`,
+    highlights: [
+      "Ubud cultural stops in the early afternoon",
+      "Tanah Lot Temple sunset over the Indian Ocean",
+      "Private car — 6 hours total, ideal for tight schedules",
+      "English-speaking driver",
+    ],
+    included: ["Private car & transport for 6 hours", "English-speaking driver", "Mineral water"],
+    notIncluded: ["Entrance fees (temples, Tanah Lot)", "Dinner", "Personal expenses", "Gratuities"],
     itinerary: [
       {
         id: "iti-hdu-1",
         time: "01:00 PM",
         title: "Hotel Pickup",
-        description: "Start your half day adventure with a private pickup."
+        description: "Start your half day trip with a private car pickup from your hotel."
       },
       {
         id: "iti-hdu-2",
         time: "02:30 PM",
         title: "Ubud Surrounds",
-        description: "Visit key cultural sites or temples around the Ubud area."
+        description: "Visit key cultural sites or temples around the Ubud area based on your interests."
       },
       {
         id: "iti-hdu-3",
         time: "05:00 PM",
         title: "Tanah Lot Temple Sunset",
-        description: "Arrive at Tanah Lot to secure the perfect spot for the iconic sunset over the ocean."
+        description: "Arrive at Tanah Lot to secure a good spot before sunset over the ocean."
       }
     ],
     addons: [],
-    faqs: [],
+    faqs: [
+      {
+        id: "faq-hdu-1",
+        question: "How much does the half day Ubud & Tanah Lot tour cost?",
+        answer:
+          "From IDR 450,000 for a private car, transport, and an English-speaking driver for the 6-hour trip. Entrance fees are not included — message WhatsApp for a guest-count quote.",
+      },
+      {
+        id: "faq-hdu-2",
+        question: "What time does the tour start?",
+        answer:
+          "Typically an early-afternoon pickup (around 1:00 PM) so you reach Tanah Lot in time for sunset — exact start time can shift slightly by season since sunset time changes through the year. Confirm your date on WhatsApp for the recommended pickup time.",
+      },
+      {
+        id: "faq-hdu-3",
+        question: "Is this better than the full day Ubud tour?",
+        answer:
+          "It depends on your schedule. Choose this half day option if you have a flight, arrival, or another activity taking up the rest of your day — choose the full day tour if you want more time at the Royal Palace, Art Market, and Tegalalang Rice Terraces.",
+      },
+      {
+        id: "faq-hdu-4",
+        question: "Is the tour private or shared with other travelers?",
+        answer:
+          "Private — your own car and English-speaking driver, so timing can flex around sunset and your own pace.",
+      },
+    ],
     reviews: []
   }
 ]

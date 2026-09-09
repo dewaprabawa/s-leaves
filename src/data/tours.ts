@@ -248,11 +248,12 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     slug: "batur-sunrise-jeep-tour",
     category: "adventure",
     area: "Kintamani / Mount Batur",
+    isTopPick: true,
     duration: "Approx. 6–7 Hours",
     basePrice: 1350000,
-    seoTitle: "Batur Sunrise Jeep Tour | Kintamani from IDR 1.35M",
+    seoTitle: "Mount Batur Sunrise Jeep | No Hike, From IDR 750K",
     seoDescription:
-      "4x4 jeep tour to the Mount Batur crater rim near Kintamani — hot drink, breakfast on top, sunrise over Lake Batur. From IDR 750K/person for 3+. WhatsApp book.",
+      "Private 4×4 jeep to the Mount Batur crater rim near Kintamani. Hot drink, breakfast on top, hotel pickup included. Solo IDR 1.35M · 3+ from IDR 750K. No trekking.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
@@ -277,21 +278,45 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     ],
     shortDescription:
       "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, and breakfast served on top as the sun rises over Lake Batur and Mount Agung. Solo from IDR 1,350,000, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
-    fullDescription: `**Mount Batur Sunrise Jeep Tour: Kintamani's Classic Crater-Rim Sunrise, Without the 2-Hour Hike**
+    fullDescription: `**What is the Mount Batur Sunrise Jeep Tour?** It is a private 4×4 jeep ride up Mount Batur’s volcanic tracks to a crater-rim viewpoint near Kintamani — about 1,350 metres above sea level — so you watch sunrise over **Lake Batur** and **Mount Agung** without the classic 2-hour summit trek. A local driver, hot drink en route, breakfast served on top of the jeep, and hotel pickup are included. Solo from **IDR 1,350,000**, or **IDR 750,000 per person** once 3+ guests share one jeep.
 
-Want the famous Mount Batur sunrise without lacing up hiking boots at 2 AM? Our 4×4 jeep tour drives you up the rugged volcanic tracks to a crater-rim viewpoint near Kintamani, so you catch the same golden light over Lake Batur and Mount Agung that trekkers queue for — while you sip a hot drink from the comfort of your seat.
+Want the famous Mount Batur sunrise without lacing up hiking boots at 2 AM? You stay in the jeep. The viewpoint is on Mount Batur’s eastern flank — the same golden caldera light trekkers queue for, without scrambling lava rock in the dark.
 
 ### How the Morning Works
-We collect you from your hotel in the very early hours — pickup time depends on your area, with south Bali areas (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leaving earliest and Ubud guests getting a slightly later start. At our Kintamani base camp you transfer into a rugged 4×4 jeep with an experienced local driver, who navigates the dirt and lava-rock tracks up toward the sunrise viewpoint on Mount Batur's eastern flank — roughly 1,350 metres above sea level — while a hot drink is served along the way.
+We collect you from your hotel in the very early hours — pickup time depends on your area, with south Bali areas (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leaving earliest and Ubud guests getting a slightly later start. At our Kintamani base camp you transfer into a rugged 4×4 jeep with an experienced local driver, who navigates the dirt and lava-rock tracks up toward the sunrise viewpoint while a hot drink is served along the way.
 
 ### Sunrise & Breakfast on Top
 Settle in as the sky shifts from black to orange, with Lake Batur and Mount Agung spread out below the crater rim. Once the sun clears the horizon, your driver serves a simple breakfast right there on top of the jeep, so you can keep watching the light change over the caldera instead of rushing back down.
 
+### Jeep vs Mount Batur sunrise trek
+
+| | Sunrise jeep (this tour) | Classic Batur summit trek |
+| --- | --- | --- |
+| How you go up | Private 4×4 on volcanic tracks | ~2-hour hike in the dark |
+| Fitness needed | Sit in the jeep | Moderate–hard walking |
+| View | Crater-rim viewpoint ~1,350m | Summit trail (different route) |
+| Breakfast | Served on top of the jeep | Usually at a trek stop |
+| Hotel pickup | Included island-wide | Varies by operator |
+| Best for | Families, couples, anyone skipping the hike | Fit hikers who want the summit |
+
+Side-by-side detail: [Mount Batur jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek). Full itinerary: [Batur sunrise jeep guide 2026](/blog/mount-batur-sunrise-jeep-tour-guide-2026).
+
 ### Optional Coffee Plantation Stop
-On the way back to the meeting point, we can swing by a local Kintamani coffee plantation for a short, no-obligation stop — a relaxed way to try Balinese coffee before heading back to your hotel.
+On the way back we can swing by a local Kintamani coffee plantation for a short, no-obligation stop — a relaxed way to try Balinese coffee before heading back to your hotel. For a dedicated ethical tasting near Ubud, see [Luwak Coffee Plantation (Umah Kuno)](/tours/luwak-coffee-plantation).
 
 ### Group-Friendly Pricing
-A private jeep costs the same whether one or three people ride, so the per-person rate drops the more guests you bring — solo travellers pay the full jeep rate, while groups of two or three split it. Message us on WhatsApp with your guest count for an exact quote.`,
+A private jeep costs the same whether one or three people ride, so the per-person rate drops the more guests you bring — solo travellers pay the full jeep rate, while groups of two or three split it.
+
+| Guests in one jeep | Price per person (IDR) |
+| --- | --- |
+| 1 | 1,350,000 |
+| 2 | 825,000 |
+| 3+ | 750,000 |
+
+Hotel pickup and drop-off are built into those rates (not the IDR 400,000 ATV/rafting pickup add-on). Message WhatsApp with your guest count for an exact quote.
+
+### What to bring
+Warm layer (it is cold on the rim before sunrise), closed shoes, phone/camera, and a little cash if you want coffee-plantation souvenirs. We handle the jeep, driver, entrance fee, hot drink, breakfast, and insurance for ages 6–65.`,
     highlights: [
       "4×4 jeep ride up Mount Batur's volcanic tracks",
       "Sunrise over Lake Batur and Mount Agung from ~1,350m",
@@ -378,7 +403,7 @@ A private jeep costs the same whether one or three people ride, so the per-perso
         id: "faq-jeep-3",
         question: "Do we hike up Mount Batur, or stay in the jeep?",
         answer:
-          "You stay in the jeep. This tour drives the volcanic tracks up to a crater-rim viewpoint by 4×4, so you get the same sunrise view without the roughly 2-hour trekking hike that the classic Batur summit hike requires.",
+          "You stay in the jeep. This tour drives volcanic tracks to a crater-rim viewpoint on Mount Batur’s eastern flank (~1,350m) — sunrise over Lake Batur and Mount Agung without the roughly 2-hour summit trek. It is not the same pin as the summit trail.",
       },
       {
         id: "faq-jeep-4",
@@ -397,6 +422,36 @@ A private jeep costs the same whether one or three people ride, so the per-perso
         question: "Why does the per-person price drop with more guests?",
         answer:
           "A private jeep and driver cost the same whether one or three people ride along, so we split that flat cost across your group — a solo traveller pays the full rate, while 2 or 3 guests sharing a jeep each pay less.",
+      },
+      {
+        id: "faq-jeep-7",
+        question: "Is hotel pickup included on the Mount Batur jeep tour?",
+        answer:
+          "Yes. Hotel pickup and drop-off are included in the jeep price island-wide — Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua, and nearby areas. Exact pickup time (usually 02:00–03:00 AM) is confirmed on WhatsApp.",
+      },
+      {
+        id: "faq-jeep-8",
+        question: "Is the Mount Batur sunrise jeep tour suitable for families and non-hikers?",
+        answer:
+          "Yes. You stay seated in the 4×4 — there is no summit hike. It suits couples, families, and guests who want the caldera sunrise without dark lava-rock walking. Insurance covers ages 6–65.",
+      },
+      {
+        id: "faq-jeep-9",
+        question: "How long is the Mount Batur Sunrise Jeep Tour?",
+        answer:
+          "About 6–7 hours door to door, including hotel pickup, the volcanic-track jeep ride, sunrise and breakfast on the rim, an optional coffee stop, and drop-off.",
+      },
+      {
+        id: "faq-jeep-10",
+        question: "What should I wear for a Batur sunrise jeep tour?",
+        answer:
+          "A warm layer (it is cold before sunrise at ~1,350m), closed shoes, and a jacket you can peel off after the sun is up. Bring a camera. Breakfast and a hot drink are included.",
+      },
+      {
+        id: "faq-jeep-11",
+        question: "Do we reach the Mount Batur summit in the jeep?",
+        answer:
+          "No. This tour drives volcanic tracks to a crater-rim viewpoint on Mount Batur’s eastern flank (~1,350m). It is not the classic summit trek. Choose the jeep if you want sunrise over Lake Batur without hiking; choose a trek operator if summit walking is the goal.",
       },
     ],
     reviews: [],
@@ -839,7 +894,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
 
 Bali is world-renowned for its coffee, but the story behind the cup is often hidden from visitors. Our Luwak Coffee Plantation Experience at the beautiful **Umah Kuno** estate offers you a transparent, ethical, and deeply educational look into how Bali's most famous export is cultivated, processed, and enjoyed. 
 
-This standalone 1.5-hour experience is perfect for a relaxing morning or a slow afternoon in the jungle. It is designed for coffee lovers, culture enthusiasts, and families looking for a peaceful escape into nature.
+This standalone 1.5-hour experience is perfect for a relaxing morning or a slow afternoon in the jungle. It is designed for coffee lovers, culture enthusiasts, and families looking for a peaceful escape into nature. It is a dedicated tasting at Umah Kuno near Ubud — not the short optional Kintamani coffee stop on our [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour).
 
 ### The Umah Kuno Difference: Ethical and Authentic
 The highlight of this tour is learning about *Kopi Luwak*, the most expensive and exclusive coffee in the world, famous for its incredibly smooth, non-bitter taste. The coffee is made from beans that have been naturally fermented in the digestive tract of the Asian Palm Civet (the *Luwak*). 

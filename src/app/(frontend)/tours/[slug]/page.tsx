@@ -27,6 +27,7 @@ import {
   COOKING_GEO_UPDATED,
 } from "@/data/cookingGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
+import { TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
 
 type Props = {
@@ -39,6 +40,10 @@ export async function generateStaticParams() {
 
 function isCookingTour(tour: Tour) {
   return tour.slug === "balinese-cooking-class"
+}
+
+function isJeepTour(tour: Tour) {
+  return tour.slug === "batur-sunrise-jeep-tour"
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -61,6 +66,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "private cooking class Ubud",
         "Sekar Bali Activity",
       ]
+    : isJeepTour(tour)
+      ? [
+          "Mount Batur sunrise jeep tour",
+          "Mount Batur jeep tour Kintamani",
+          "Batur sunrise without hiking",
+          "Mount Batur jeep vs trek",
+          "sunrise jeep Lake Batur",
+          "private 4x4 Mount Batur",
+          "Sekar Bali Activity",
+        ]
     : undefined
 
   return {
@@ -94,6 +109,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           "geo.region": "ID-BA",
           "geo.placename": "Ubud, Bali",
         }
+      : isJeepTour(tour)
+        ? {
+            "geo.region": "ID-BA",
+            "geo.placename": "Kintamani, Mount Batur, Bali",
+          }
       : undefined,
   }
 }
@@ -126,6 +146,8 @@ function buildTourSchema(tour: Tour) {
     ...(isoDuration ? { duration: isoDuration } : {}),
     touristType: cooking
       ? ["Couples", "Families", "Food travelers", "Culture travelers"]
+      : tour.slug === "batur-sunrise-jeep-tour"
+        ? ["Couples", "Families", "Non-hikers", "Sunrise photographers"]
       : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
@@ -134,6 +156,8 @@ function buildTourSchema(tour: Tour) {
         ? COOKING_GEO_ENTITY.area
         : tour.slug === "bali-atv-adventure"
           ? "Sedang, Abiansemal, Badung, Bali"
+          : tour.slug === "batur-sunrise-jeep-tour"
+            ? "Kintamani, Mount Batur, Bali"
           : tour.area ?? "Ubud, Bali",
     },
     itinerary: tour.itinerary.map((item, index) => ({
@@ -205,6 +229,49 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  if (tour.slug === "batur-sunrise-jeep-tour") {
+    return {
+      ...base,
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: "750000",
+        highPrice: "1350000",
+        priceCurrency: "IDR",
+        offerCount: 3,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Solo private jeep",
+            price: "1350000",
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "2 guests sharing a jeep",
+            price: "825000",
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "3+ guests sharing a jeep",
+            price: "750000",
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+        ],
+      },
+    }
+  }
+
   return {
     ...base,
     offers: {
@@ -216,6 +283,27 @@ function buildTourSchema(tour: Tour) {
       url: `${SITE_URL}/tours/${tour.slug}`,
       description: tour.included.join(", "),
     },
+  }
+}
+
+function buildJeepWebPageSchema(tour: Tour) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    dateModified: GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    significantLink: [
+      `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-guide-2026`,
+      `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`,
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/pricing.md`,
+    ],
   }
 }
 
@@ -323,6 +411,14 @@ export default async function TourPage({ params }: Props) {
           ))}
         </>
       ) : null}
+      {isJeepTour(tour) ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(buildJeepWebPageSchema(tour)),
+          }}
+        />
+      ) : null}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link
@@ -361,6 +457,11 @@ export default async function TourPage({ params }: Props) {
                         {formatIdr(COOKING_CLASS_STANDARD_PRICE_IDR)}
                       </span>
                       Promo {formatIdr(COOKING_CLASS_PRICE_IDR)} / person
+                    </span>
+                  ) : isJeepTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · solo{" "}
+                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][0])}
                     </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">

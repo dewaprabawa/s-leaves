@@ -68,6 +68,9 @@ export const metadata: Metadata = {
     'Bali quad bike tour',
     'Bali whitewater rafting',
     'Bali canyon tubing',
+    'Mount Batur sunrise jeep tour',
+    'Mount Batur jeep vs trek',
+    'Kintamani sunrise jeep',
     'book Bali activity WhatsApp',
     'Sekar Bali Activity',
   ],
@@ -145,6 +148,13 @@ const adventureOffers: AdventureOffer[] = [
     image: '/images/adventures/cycling.jpg',
   },
   {
+    name: 'Mount Batur Sunrise Jeep Tour',
+    description:
+      'Private 4×4 jeep to the Mount Batur crater rim near Kintamani — no hike, hot drink, breakfast on top, hotel pickup. Solo IDR 1.35M · 3+ from IDR 750K.',
+    price: '750000',
+    image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
+  },
+  {
     name: 'Tumang Bali Cooking Class',
     description:
       'Family-run Balinese cooking class near Ubud with Chef Wayan Sudiana — morning market tour, rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. TripAdvisor Traveler\u2019s Choice 2026.',
@@ -175,6 +185,7 @@ const footerLinks = {
     { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
     { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
     { label: "Canyon Tubing", href: "/tours/canyon-tubing" },
+    { label: "Mount Batur Sunrise Jeep", href: "/tours/batur-sunrise-jeep-tour" },
     { label: "Book All Activities", href: "/book" },
     { label: "All Pricing", href: "/#pricing" },
   ],

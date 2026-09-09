@@ -163,6 +163,14 @@ const pricingData: PricingRow[] = [
     originalPrice: getListPrice("canyon-tubing"),
     highlight: false,
   },
+  {
+    activity: "Mount Batur Sunrise Jeep Tour",
+    adventureId: "jeep-sunrise",
+    pax: `${formatTierPriceTable("jeep-sunrise")} · Hotel pickup included · No hike`,
+    price: getPromoListPrice("jeep-sunrise"),
+    originalPrice: getListPrice("jeep-sunrise"),
+    highlight: false,
+  },
 ]
 
 const travelGuides = [
@@ -196,6 +204,16 @@ const travelGuides = [
     excerpt: "Trails, IDR price table, inclusions, and WhatsApp booking for Single & Tandem ATV.",
     href: "/blog/bali-atv-tour-ubud-guide",
   },
+  {
+    title: "Mount Batur Sunrise Jeep Guide 2026",
+    excerpt: "No-hike 4×4 to the crater rim — IDR tiers, pickup times, breakfast on top.",
+    href: "/blog/mount-batur-sunrise-jeep-tour-guide-2026",
+  },
+  {
+    title: "Mount Batur Jeep vs Sunrise Trek",
+    excerpt: "Private 4×4 crater-rim viewpoint vs the 2-hour summit hike — who should skip the trek.",
+    href: "/blog/mount-batur-jeep-vs-sunrise-trek",
+  },
 ] as const
 
 function toTourConfig(adv: AdventureCatalogItem): TourConfig {
@@ -207,6 +225,7 @@ function toTourConfig(adv: AdventureCatalogItem): TourConfig {
     kidPrice: getAdventureChildPrice(adv.id),
     minPax: adv.minPax,
     freeUbudPickup: adv.freeUbudPickup ?? false,
+    pickupIncluded: adv.pickupIncluded ?? false,
   }
 }
 
@@ -404,7 +423,7 @@ export default function Home() {
               Top picks near Ubud
             </h2>
             <p className="text-lg text-brand-green-light">
-              Start with Tumang cooking class and Pejeng ricefield cycling — then ATV, rafting, and private day tours.
+              Start with Tumang cooking class and Pejeng ricefield cycling — then ATV, the Mount Batur sunrise jeep, rafting, and private day tours.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">

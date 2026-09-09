@@ -35,13 +35,13 @@ export function buildOrganizationSchema() {
     alternateName: ['Sekar Bali', 'Sekar Bali Activity Ubud', 'Sekar Bali Pejeng'],
     legalName: SITE_NAME,
     description:
-      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, ricefield cycling, Tumang Bali Cooking Class, coffee tasting, and private day tours. Free Ubud hotel pickup on cycling and Tumang cooking class.',
+      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, ricefield cycling, Mount Batur sunrise jeep (Kintamani), Tumang Bali Cooking Class, coffee tasting, and private day tours. Free Ubud hotel pickup on cycling and Tumang cooking class.',
     url: SITE_URL,
     telephone: CONTACT_PHONE_E164,
     email: CONTACT_EMAIL,
     image: `${SITE_URL}/logo.png`,
     logo: `${SITE_URL}/logo.png`,
-    priceRange: 'IDR 359000 - IDR 1100000',
+    priceRange: 'IDR 359000 - IDR 1350000',
     // NAP must match Google Business Profile (corporate / registered office)
     address: postalAddressSchema(PRIMARY_NAP_ADDRESS),
     geo: {
@@ -70,7 +70,8 @@ export function buildOrganizationSchema() {
       { '@type': 'Place', name: 'Badung' },
       { '@type': 'Place', name: 'Pejeng' },
       { '@type': 'Place', name: 'Kenderan' },
-      { '@type': 'Place', name: 'Gianyar' },
+      { '@type': 'Place', name: 'Kintamani' },
+      { '@type': 'Place', name: 'Mount Batur' },
       { '@type': 'Place', name: 'Bali' },
     ],
     sameAs: [
@@ -121,6 +122,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure` },
   { name: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting` },
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },
+  { name: 'Mount Batur Sunrise Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour` },
   { name: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour` },
   { name: 'About Us', url: `${SITE_URL}/about` },
   { name: 'Contact', url: `${SITE_URL}/contact` },

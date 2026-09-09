@@ -86,7 +86,7 @@ const CATEGORY_SECTION_META: {
     eyebrow: "Slow travel",
     title: "Village & nature",
     subtitle:
-      "Quiet Pejeng ricefield cycling with lunch and free Ubud hotel pickup from IDR 750K — not the Tegallalang swing strip.",
+      "Quiet 2-hour Pejeng ricefield cycling with lunch and free Ubud hotel pickup from IDR 750K — not the Tegallalang swing strip.",
   },
   {
     id: "adventure",

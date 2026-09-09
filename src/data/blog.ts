@@ -101,7 +101,7 @@ Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsap
 **Is an Ubud cycling tour worth it?** Yes — if you want **quiet rice paddies, village culture, and lunch included**, not another crowded Tegallalang photo stop. Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** is **IDR 750,000** per person with **free Ubud hotel pickup**, lunch, bike, helmet, guide, and insurance through **Pejeng** village paths.
 
 > **Key Takeaways**
-> - Worth it for culture travelers, couples, and families who want a gentle full day  
+> - Worth it for culture travelers, couples, and families who want a gentle 2-hour village ride  
 > - **IDR 750,000** · free Ubud pickup · **lunch included** · insurance  
 > - Route: **Pejeng** countryside / rice paddy paths — not mass Tegallalang traffic  
 > - Skip it if you only want motors/mud — book [ATV](/tours/bali-atv-adventure) instead  
@@ -137,12 +137,12 @@ Many “Ubud cycling” reviews complain about traffic and selfie crowds. Our ri
 ## Honest Cons
 
 - **Not a mountain-bike climb** — expect relaxed village paths  
-- **Full day** — plan sun protection and comfortable clothes  
+- **About 2 hours** — plan sun protection and comfortable clothes  
 - **Cooking class transfer** (if combo) is separate — cycling drop-off returns you to your hotel first  
 
 ## Make It a Culture Combo Day
 
-Morning/afternoon ricefield cycling + afternoon Tumang Bali Cooking Class is one of the highest-intent searches near Ubud. Full plan: [Cycling & cooking class itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+Morning 2-hour ricefield cycling + afternoon Tumang Bali Cooking Class is one of the highest-intent searches near Ubud. Full plan: [Cycling & cooking class itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
 
 ## Verdict
 
@@ -990,18 +990,18 @@ Book your seat at [Tumang Bali Cooking Class](/tours/balinese-cooking-class) nea
   {
     slug: "bali-airport-transfer-guide-dps-to-ubud",
     title: "DPS to Ubud Transfer Guide",
-    excerpt: "Private DPS→Ubud transfer: flat rates, 60–90 min, avoid arrival-hall touts. Pre-book with flight tracking — no surge surprises.",
+    excerpt: "Private DPS→Ubud transfer from IDR 700,000: 60–90 min, avoid arrival-hall touts. Pre-book with flight tracking — no surge surprises.",
     publishedAt: "2026-08-21",
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
     content: `
-**What is the best way to travel from Bali Airport (DPS) to Ubud?** The safest, most stress-free option for arriving travelers is booking a pre-arranged **private airport transfer**. The drive from Ngurah Rai International Airport (DPS) to Ubud takes approximately **60 to 90 minutes** depending on traffic via the Sanur bypass route. Pre-booked private transfers cost a fixed flat rate (approx. 350,000 to 450,000 IDR / $22-$29 USD), including flight tracking, toll fees, luggage assistance, and a dedicated driver holding a name sign inside the arrival hall.
+**What is the best way to travel from Bali Airport (DPS) to Ubud?** The safest, most stress-free option for arriving travelers is booking a pre-arranged **private airport transfer**. The drive from Ngurah Rai International Airport (DPS) to Ubud takes approximately **60 to 90 minutes** depending on traffic via the Sanur bypass route. Pre-booked private transfers with Sekar Bali Activity are a fixed flat rate of **IDR 700,000**, including flight tracking, toll fees, luggage assistance, and a dedicated driver holding a name sign inside the arrival hall.
 
 > **Key Takeaways (TL;DR)**
 > - **Distance**: 37 km (23 miles) from DPS Airport to central Ubud / Pejeng.
 > - **Travel Time**: 60 min (early morning / late night) to 105 min (peak afternoon traffic 3 PM - 7 PM).
 > - **Avoid Airport Touts**: Unregulated airport hawkers inside the arrival hall often charge 600,000 - 800,000 IDR ($40-$55 USD).
-> - **Fixed Pre-Booking**: Secure flat-rate pricing with our [Private Airport Transfers](/transfers).
+> - **Fixed Pre-Booking**: Secure flat-rate pricing from **IDR 700,000** with our [Private Airport Transfers](/transfers).
 
 ---
 
@@ -1009,7 +1009,7 @@ Book your seat at [Tumang Bali Cooking Class](/tours/balinese-cooking-class) nea
 
 | Option | Fixed Price (IDR) | Pros | Cons |
 | --- | --- | --- | --- |
-| **Private Driver (Pre-booked)** | 350,000 - 450,000 | Name sign at arrivals, flight tracking, flat rate, AC vehicle | Requires booking 24h prior |
+| **Private Driver (Pre-booked)** | 700,000 | Name sign at arrivals, flight tracking, flat rate, AC vehicle | Requires booking 24h prior |
 | **Official Airport Taxi Desk** | 450,000 - 550,000 | Legitimate desk | Queue lines can exceed 45 minutes during peak flights |
 | **Arrival Hall Touts** | 600,000 - 800,000+ | Immediate departure | Unregulated, aggressive bargaining required |
 | **Ride-Share Apps (Grab/Gojek)** | 320,000 - 400,000 | App convenience | Must walk to distant pickup zone; surge pricing during rain |
@@ -1123,7 +1123,7 @@ Book the [Luwak Coffee Plantation](/tours/luwak-coffee-plantation) tasting, or b
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**How much does the Ubud Ricefield Cycling Tour cost?** Sekar Bali Activity offers the full-day Ubud Ricefield Cycling Tour for **IDR 750,000 per person**, including **free hotel pickup within Ubud**, lunch, plus a guided ride through Pejeng rice terraces and village life.
+**How much does the Ubud Ricefield Cycling Tour cost?** Sekar Bali Activity offers the 2-hour Ubud Ricefield Cycling Tour for **IDR 750,000 per person**, including **free hotel pickup within Ubud**, lunch, plus a guided ride through Pejeng rice terraces and village life.
 
 > **Key Takeaways**
 > - **IDR 750,000** per person — the only tour with free Ubud pickup
@@ -1138,7 +1138,7 @@ Book the [Luwak Coffee Plantation](/tours/luwak-coffee-plantation) tasting, or b
 
 Unlike crowded main-road bike rentals, this tour follows quiet village lanes east of central Ubud through **Pejeng** — one of Bali's oldest cultural areas. You cycle past Subak irrigation channels, meet local families, and see rice harvesting in season without rushing through tourist hotspots.
 
-## Full Day Itinerary (8 Steps)
+## 2-Hour Itinerary (8 Steps)
 
 1. **Hotel pickup** — free within Ubud (other areas may incur a surcharge)
 2. **Ricefield cycling** — gentle trails through green terraces
@@ -1147,7 +1147,7 @@ Unlike crowded main-road bike rentals, this tour follows quiet village lanes eas
 5. **Balinese carving art** — watch or try local craftsmanship
 6. **See local people life** — village pace, not tourist buses
 7. **Lunch stop** — village restaurant meal included
-8. **Drop back to hotel** — relaxed end to a full cultural day
+8. **Drop back to hotel** — relaxed end to a 2-hour cultural ride
 
 ## What Is Included
 
@@ -1420,7 +1420,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 
 ## Why Cycling Includes Free Pickup
 
-The cycling tour is a full-day village experience starting from Pejeng. Pickup within Ubud is built into the IDR 750,000 price along with lunch. See the [cycling tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026).
+The cycling tour is a 2-hour village experience starting from Pejeng. Pickup within Ubud is built into the IDR 750,000 price along with lunch. See the [cycling tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026).
 
 ## Tumang Cooking Class Pickup
 
@@ -1465,7 +1465,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 | --- | --- | --- | --- | --- |
 | **Price** | IDR 750K+ | IDR 500K | IDR 359K | IDR 750K |
 | **Intensity** | High | Medium–High | Low–Medium | Low |
-| **Duration** | 2–4 hrs | Half day | 2–3 hrs | Full day |
+| **Duration** | 2–4 hrs | Half day | 2–3 hrs | 2 hours |
 | **Environment** | Jungle mud track | River rapids | River float | Rice terraces |
 | **Free Ubud pickup** | No | No | No | Yes |
 | **Tour page** | [ATV](/tours/bali-atv-adventure) | [Rafting](/tours/whitewater-rafting) | [Tubing](/tours/canyon-tubing) | [Cycling](/tours/ubud-ricefield-cycling-tour) |
@@ -1525,17 +1525,15 @@ Operators like ubudcyclingtour.com and multi-day packages on ByFood and Bali Tra
 
 | Time | What you do | Product |
 | --- | --- | --- |
-| Morning | Free hotel pickup (Ubud), bike fitting, safety briefing | [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
-| Mid-morning | Rice paddy / countryside cycling through Pejeng village paths | Cycling |
-| Midday | Rice harvesting (seasonal), Balinese house visit, wood carving stop | Cycling |
-| Afternoon | Lunch included; return to hotel to freshen up | Cycling |
+| Morning (2 hours) | Free hotel pickup (Ubud), bike fitting, Pejeng ricefield ride, village stops, lunch | [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
+| Late morning | Drop back to hotel to freshen up | Cycling |
 | Afternoon class | Tumang kitchen: rice-field walk, Base Genep, 10+ dishes, feast | [Tumang Bali Cooking Class](/tours/balinese-cooking-class) |
 
 Prefer a morning Tumang class with market tour? Book cooking first, then a lighter afternoon ride — ask WhatsApp to flip the order.
 
 ## What’s Included (Each Part)
 
-### Ricefield / countryside cycling (day)
+### Ricefield / countryside cycling (2 hours)
 
 | Include | Details |
 | --- | --- |

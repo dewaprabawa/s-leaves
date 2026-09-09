@@ -628,7 +628,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     category: "village",
     area: "Pejeng / Ubud",
     isTopPick: true,
-    duration: "Full Day",
+    duration: "2 Hours",
     basePrice: 750000,
     seoTitle: "Rice Paddy Cycling Ubud | Pejeng",
     seoDescription:
@@ -668,7 +668,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       },
     ],
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
+    shortDescription: "Authentic 2-hour Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
@@ -687,7 +687,7 @@ Enjoy a free lunch at a chill local village restaurant serving authentic Balines
 After the tour we drop you back at your Ubud hotel.
 
 **Available Schedule:**
-- **Afternoon departure** — ideal for travelers who prefer a later start
+- **Afternoon departure** — 2-hour tour, ideal for travelers who prefer a later start
 
 **Important Note:**
 The itinerary may sometimes change due to field conditions, weather, or village activities. We will always adjust to make sure you still have the best and safest experience.`,
@@ -714,37 +714,37 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       },
       {
         id: "iti-ubud-cyc-2",
-        time: "Morning",
+        time: "~15 min",
         title: "Ricefield Cycling",
         description: "Relaxing bike ride through beautiful green ricefields and quiet village paths.",
       },
       {
         id: "iti-ubud-cyc-3",
-        time: "Midday",
+        time: "~15 min",
         title: "Sightseeing & Harvesting Activity",
         description: "See local farmers and try harvesting rice with them. Learn about traditional farming.",
       },
       {
         id: "iti-ubud-cyc-4",
-        time: "Afternoon",
+        time: "~15 min",
         title: "Visit Balinese House",
         description: "Enter a real Balinese family house and see daily local life.",
       },
       {
         id: "iti-ubud-cyc-5",
-        time: "Afternoon",
+        time: "~15 min",
         title: "Balinese Carving Art",
         description: "Visit a local wood carving studio and see artists at work.",
       },
       {
         id: "iti-ubud-cyc-6",
-        time: "Afternoon",
+        time: "~15 min",
         title: "See Local People Life",
         description: "Cycle through the village to see temples, schools, and local activities.",
       },
       {
         id: "iti-ubud-cyc-7",
-        time: "Midday",
+        time: "~20 min",
         title: "Lunch Stop",
         description: "Enjoy a free lunch at a chill local village restaurant with authentic Balinese food.",
       },
@@ -752,7 +752,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "iti-ubud-cyc-8",
         time: "Finish",
         title: "Drop Back to Hotel",
-        description: "After the tour we drop you back at your hotel in Ubud.",
+        description: "After the 2-hour tour we drop you back at your hotel in Ubud.",
       },
     ],
     addons: [],
@@ -761,7 +761,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-1",
         question: "How much is the Ubud rice paddy cycling tour?",
         answer:
-          "IDR 750,000 per person in 2026. That includes the guided Pejeng village / ricefield ride, bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
+          "IDR 750,000 per person in 2026 for a 2-hour guided Pejeng village / ricefield ride, including bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
       },
       {
         id: "faq-ubud-cyc-2",
@@ -791,7 +791,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-6",
         question: "Can I combine cycling with a cooking class?",
         answer:
-          "Yes. Many guests ride Pejeng ricefields by day and join an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
+          "Yes. The cycling tour is 2 hours, so many guests ride Pejeng ricefields first and join an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
       },
       {
         id: "faq-ubud-cyc-7",
@@ -810,6 +810,12 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         question: "Is this an e-bike (electric) tour?",
         answer:
           "No — it's a standard pedal bicycle with helmet included. Because the Pejeng route is mostly flat with gentle village and ricefield paths, most guests don't need electric assist to enjoy the ride comfortably.",
+      },
+      {
+        id: "faq-ubud-cyc-10",
+        question: "How long is the Ubud ricefield cycling tour?",
+        answer:
+          "About 2 hours, including the guided Pejeng village ride, cultural stops, and lunch. Hotel pickup and drop-off in the Ubud area are included.",
       },
     ],
     reviews: [],

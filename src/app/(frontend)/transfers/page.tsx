@@ -4,13 +4,13 @@ import { TRANSFERS } from "@/data/transfers"
 
 export const metadata: Metadata = {
   title: "Private Airport Transfers",
-  description: "Book premium private Bali airport transfers with English-speaking drivers, flat rates, and flight tracking. Pair with ATV, rafting, or cycling adventures in Ubud.",
+  description: "Private Bali airport transfers from IDR 700,000. English-speaking drivers, flat rates, and flight tracking. Pair with ATV, rafting, or cycling adventures in Ubud.",
   alternates: {
     canonical: "/transfers",
   },
   openGraph: {
     title: "Private Airport Transfers | Sekar Bali Activity",
-    description: "Book premium private Bali airport transfers with English-speaking drivers, flat rates, and flight tracking.",
+    description: "Private DPS to Ubud airport transfers from IDR 700,000 with English-speaking drivers, flat rates, and flight tracking.",
     url: "https://www.sekarbaliactivity.com/transfers",
     siteName: "Sekar Bali Activity",
     type: "website",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Private Airport Transfers | Sekar Bali Activity",
-    description: "Flat-rate private Bali airport transfers with flight tracking.",
+    description: "Private Bali airport transfers from IDR 700,000 with flight tracking.",
     images: ["/images/adventures/og-cover.jpg"],
   },
 }
@@ -38,7 +38,7 @@ export default function TransfersPage() {
           </h1>
           <p className="text-base md:text-lg text-brand-green-light leading-relaxed max-w-2xl">
             Arrive in style and comfort. Enjoy a direct, private transfer from Ngurah Rai Bali Airport
-            (DPS) to your hotel. Includes toll fees, parking, and a professional driver.
+            (DPS) to your hotel from <strong>IDR 700,000</strong>. Includes toll fees, parking, and a professional driver.
           </p>
         </header>
 

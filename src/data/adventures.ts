@@ -38,7 +38,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
       "Balinese house & carving studio",
       "Free Ubud hotel pickup & insurance (ages 6–65)",
     ],
-    duration: "Full day",
+    duration: "2 hours",
     image: "/images/adventures/cycling.jpg",
     imageAlt: "Rice paddy and village cycling tour through green Ubud countryside",
     tourSlug: "ubud-ricefield-cycling-tour",

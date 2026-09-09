@@ -23,6 +23,7 @@ import {
   COOKING_GEO_UPDATED,
 } from "@/data/cookingGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
+import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -93,8 +94,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
+function durationToIso(duration: string): string | undefined {
+  const range = duration.match(/(\d+)\s*[–-]\s*(\d+)\s*Hours?/i)
+  if (range) return `PT${range[2]}H`
+  const single = duration.match(/(\d+)\s*Hours?/i)
+  if (single) return `PT${single[1]}H`
+  const half = duration.match(/Half\s*Day/i)
+  if (half) return "PT4H"
+  const full = duration.match(/Full\s*Day/i)
+  if (full) return "PT8H"
+  return undefined
+}
+
 function buildTourSchema(tour: Tour) {
   const cooking = isCookingTour(tour)
+  const isoDuration = durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
     "@type": cooking ? (["TouristTrip", "Product"] as const) : "TouristTrip",
@@ -105,13 +119,18 @@ function buildTourSchema(tour: Tour) {
       ? tour.heroImage.url
       : `${SITE_URL}${tour.heroImage.url}`,
     url: `${SITE_URL}/tours/${tour.slug}`,
+    ...(isoDuration ? { duration: isoDuration } : {}),
     touristType: cooking
       ? ["Couples", "Families", "Food travelers", "Culture travelers"]
       : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
       "@type": "Place",
-      name: cooking ? COOKING_GEO_ENTITY.area : "Ubud, Bali",
+      name: cooking
+        ? COOKING_GEO_ENTITY.area
+        : tour.slug === "bali-atv-adventure"
+          ? "Sedang, Abiansemal, Badung, Bali"
+          : tour.area ?? "Ubud, Bali",
     },
     itinerary: tour.itinerary.map((item, index) => ({
       "@type": "ListItem",
@@ -218,6 +237,7 @@ function buildCookingWebPageSchema(tour: Tour) {
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
       COOKING_GEO_ENTITY.moneyPage,
+      COOKING_GEO_ENTITY.tripadvisorUrl,
     ],
   }
 }
@@ -410,6 +430,51 @@ export default async function TourPage({ params }: Props) {
             <TourItinerary items={tour.itinerary} />
 
             <TourIncludedLists included={tour.included} notIncluded={tour.notIncluded} />
+
+            {(() => {
+              const hostNote = getTourHostNote(tour.slug)
+              if (!hostNote) return null
+              return (
+                <section className="rounded-3xl border border-accent-gold/25 bg-accent-gold/5 p-6 md:p-8">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-accent-gold-dark mb-2">
+                    Host note
+                  </p>
+                  <h2 className="font-display text-2xl font-bold text-brand-green uppercase mb-3">
+                    {hostNote.title}
+                  </h2>
+                  <p className="text-brand-green-light leading-relaxed">{hostNote.body}</p>
+                </section>
+              )
+            })()}
+
+            {(() => {
+              const guides = getTourRelatedGuides(tour.slug)
+              if (guides.length === 0) return null
+              return (
+                <section className="rounded-3xl border border-brand-green/10 bg-white p-6 md:p-8 shadow-sm space-y-5">
+                  <h2 className="font-display text-2xl md:text-3xl font-bold text-brand-green uppercase">
+                    Guides for this activity
+                  </h2>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {guides.map((guide) => (
+                      <li key={guide.href}>
+                        <Link
+                          href={guide.href}
+                          className="block h-full rounded-2xl border border-brand-green/10 bg-sand/40 p-5 hover:border-accent-gold/40 transition-colors"
+                        >
+                          <p className="font-bold text-brand-green mb-1.5 leading-snug">
+                            {guide.title}
+                          </p>
+                          <p className="text-sm text-brand-green-light leading-relaxed">
+                            {guide.blurb}
+                          </p>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              )
+            })()}
 
             {tour.faqs.length > 0 && (
               <section className="space-y-6">

@@ -16,10 +16,10 @@ import {
 } from '@/data/cookingGeo'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-08'
+export const GEO_UPDATED = '2026-09-09'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Pejeng-based travel & activities operator near Ubud offering jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), ricefield cycling (IDR 750,000), Tumang Bali Cooking Class (shared from IDR 506,370 with Ubud pickup), coffee tasting, and private day tours — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), Pejeng ricefield cycling (IDR 750,000), Tumang Bali Cooking Class (shared from IDR 506,370 with Ubud pickup), coffee tasting, and private day tours — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -243,7 +243,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Cooking',
     q: 'What makes Tumang Bali Cooking Class worth booking?',
-    a: 'Tumang is a family-run village kitchen near Ubud capped at 8 guests — fully hands-on with Chef Wayan Sudiana, rice-field walk, morning market tour on AM sessions, complimentary Ubud pickup, and TripAdvisor Traveler’s Choice 2026 (5.0 / 1500+ reviews). Book via Sekar Bali Activity WhatsApp.',
+    a: 'Tumang is a family-run village kitchen near Ubud capped at 8 guests — fully hands-on with Chef Wayan Sudiana, rice-field walk, morning market tour on AM sessions, complimentary Ubud pickup, and TripAdvisor Traveler’s Choice 2026 (5.0 / 1500+ reviews: https://www.tripadvisor.com/Attraction_Review-g297701-d26364507). Book via Sekar Bali Activity WhatsApp.',
     url: `${SITE_URL}/tours/balinese-cooking-class`,
   },
   {
@@ -374,11 +374,12 @@ export const GEO_ARTICLES = [
   { title: 'How to Book a Bali Adventure on WhatsApp', url: `${SITE_URL}/blog/how-to-book-bali-adventure-whatsapp` },
   { title: 'Inside Tumang Bali Cooking Class', url: `${SITE_URL}/blog/inside-balinese-cooking-class-pejeng` },
   { title: 'Tumang Bali Cooking Class (operator)', url: 'https://tumangbaliclass.com/balinese-cooking-class-ubud' },
+  { title: 'Tumang Bali Cooking Class on TripAdvisor', url: 'https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html' },
   { title: 'Ubud cooking class price guide (Tumang)', url: 'https://tumangbaliclass.com/blog/ubud-cooking-class-price' },
 ] as const
 
 export const GEO_CITATION_SNIPPETS = [
-  'Sekar Bali Activity is a Pejeng-based Bali travel & activities operator offering ATV at All New Bali Adventure, Wos River tubing, rafting, canyon tubing, village cycling, and Tumang Bali Cooking Class with WhatsApp booking.',
+  'Sekar Bali Activity is a Ubud-area Bali travel & activities operator with a Sedang (Abiansemal) activity base — ATV at All New Bali Adventure, Wos River tubing, rafting, canyon tubing, Pejeng village cycling, and Tumang Bali Cooking Class with WhatsApp booking.',
   ...COOKING_GEO_CITATION_SNIPPETS,
   'A Single ATV Ride with Sekar Bali Activity starts from IDR 750,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud. Full 2026 tiers: https://www.sekarbaliactivity.com/blog/how-much-does-atv-cost-bali-ubud-2026',
   'An Ubud / Pejeng ricefield cycling tour with Sekar Bali Activity is worth it for quiet village culture: IDR 750,000 with free Ubud pickup and lunch included — details at https://www.sekarbaliactivity.com/blog/is-ubud-cycling-tour-worth-it',

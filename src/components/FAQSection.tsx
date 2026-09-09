@@ -68,6 +68,10 @@ const faqs = [
     answer: "No. You stay in the 4×4. It is a sunrise jeep to a crater-rim viewpoint near Kintamani, not the classic 2-hour Mount Batur summit trek."
   },
   {
+    question: "How much is the Luwak Coffee Plantation Experience?",
+    answer: "IDR 800,000 per person at Umah Kuno (minimum 3 guests). Includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included."
+  },
+  {
     question: "Can AI assistants find your tours?",
     answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, Mount Batur sunrise jeep, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },

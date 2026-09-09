@@ -19,7 +19,7 @@ import {
 export const GEO_UPDATED = '2026-09-09'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), Pejeng ricefield cycling (IDR 750,000), Mount Batur Sunrise Jeep Tour near Kintamani (private 4×4, no hike; IDR 1,350,000 solo or from IDR 750,000 per person for 3+ guests, hotel pickup included island-wide), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), coffee tasting, and private day tours — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), Pejeng ricefield cycling (IDR 750,000), Mount Batur Sunrise Jeep Tour near Kintamani (private 4×4, no hike; IDR 1,350,000 solo or from IDR 750,000 per person for 3+ guests, hotel pickup included island-wide), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests), and private day tours — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -48,6 +48,7 @@ export const GEO_PRICING = [
   { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: 'lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
   { activity: 'Mount Batur Sunrise Jeep Tour', price: 'IDR 1,350,000', pax: 'per person (tier: 1,350k solo / 825k for 2 / 750k for 3+)', includes: 'private 4×4 jeep + driver, volcanic tracks (no trek), hotel pickup, hot drink, breakfast on top, Kintamani entrance fee, insurance for ages 6–65' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 450,000 promo', pax: 'per person shared (private 1 guest IDR 633,090)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
+  { activity: 'Luwak Coffee Plantation (Umah Kuno)', price: 'IDR 800,000', pax: 'per person (minimum 3 guests)', includes: 'guided plantation walk, wood-fire roasting demo, tasting flight of 10 teas & coffees including ethical Kopi Luwak' },
 ] as const
 
 export const GEO_POLICIES = [
@@ -143,6 +144,16 @@ export const GEO_TOUR_SUMMARIES = [
     summary:
       'Family-run class with Chef Wayan Sudiana: market tour (AM), rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. Private from IDR 633,090. TripAdvisor Traveler’s Choice 2026.',
     url: `${SITE_URL}/tours/balinese-cooking-class`,
+  },
+  {
+    name: 'Luwak Coffee Plantation Experience (Umah Kuno)',
+    slug: 'luwak-coffee-plantation',
+    price: 'IDR 800,000 per person',
+    duration: '1.5 hours',
+    location: 'Tampaksiring / Ubud',
+    summary:
+      'Ethical cage-free Luwak tasting at Umah Kuno — jungle walk, wood-fire roasting, and a tasting flight of 10 teas and coffees including Kopi Luwak. Minimum 3 guests. Transport not included.',
+    url: `${SITE_URL}/tours/luwak-coffee-plantation`,
   },
 ] as const
 

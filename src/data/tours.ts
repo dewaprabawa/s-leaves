@@ -791,7 +791,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-6",
         question: "Can I combine cycling with a cooking class?",
         answer:
-          "Yes. Many guests ride Pejeng ricefields by day and join an afternoon Tumang Bali Cooking Class (shared from IDR 506,370, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
+          "Yes. Many guests ride Pejeng ricefields by day and join an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
       },
       {
         id: "faq-ubud-cyc-7",
@@ -925,13 +925,13 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     area: "Tumang village / Ubud",
     isTopPick: true,
     duration: "3–4 Hours",
-    basePrice: 506370,
-    seoTitle: "Cooking Class Ubud | Tumang from IDR 506K",
+    basePrice: 450000,
+    seoTitle: "Cooking Class Ubud | Tumang Promo IDR 450K",
     seoDescription:
-      "Tumang Bali Cooking Class near Ubud — market tour, rice-field walk, 10+ dishes, max 8 guests. Shared IDR 506,370. Free Ubud pickup. Book on WhatsApp.",
+      "Tumang Bali Cooking Class near Ubud — market tour, rice-field walk, 10+ dishes, max 8 guests. Promo IDR 450,000 / person (was 506,370). Free Ubud pickup. Book on WhatsApp.",
     heroImage: {
-      url: "/images/cooking/pancake-toss.jpg",
-      alt: "Hands-on Tumang Bali Cooking Class near Ubud",
+      url: "/images/cooking/satay-class.jpg",
+      alt: "Guests preparing sate skewers during Tumang Bali Cooking Class near Ubud",
     },
     gallery: [
       {
@@ -964,7 +964,7 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
       },
     ],
     shortDescription:
-      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Sudiana, max 8 guests, English instruction. Shared from IDR 506,370 with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
+      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Sudiana, max 8 guests, English instruction. Promo IDR 450,000 / person (was IDR 506,370) with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
     fullDescription: `**Tumang Bali Cooking Class — authentic village kitchen near Ubud**
 
 [Tumang Bali](https://tumangbaliclass.com/) is a family-run cooking school in Tumang village near Ubud for travellers who want hands-on Balinese cuisine — not a hotel demo. Head Chef **Wayan Sudiana** teaches Base Genep (bumbu), sate lilit, pepes ikan, sambal matah, lawar, and more. Classes are taught in English. Complimentary pickup in the Ubud area. Max **8 guests** per shared class.
@@ -989,7 +989,7 @@ We list Tumang as our flagship food experience so you can book adventure, villag
 ### Pricing (2026)
 | Option | Price |
 |--------|-------|
-| Shared class | **IDR 506,370** per person |
+| Shared class (promo) | **IDR 450,000** per person (was IDR 506,370) |
 | Private (1 guest) | **IDR 633,090** |
 | Private (2 guests) | **IDR 1,266,180** total |
 
@@ -1060,12 +1060,12 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         name: "Shared morning class (market tour)",
         priceDiff: 0,
-        description: "08:30 start · pasar + rice-field walk · max 8 · IDR 506,370",
+        description: "08:30 start · pasar + rice-field walk · max 8 · promo IDR 450,000",
       },
       {
         name: "Shared afternoon class",
         priceDiff: 0,
-        description: "Afternoon · rice-field walk + kitchen · max 8 · IDR 506,370",
+        description: "Afternoon · rice-field walk + kitchen · max 8 · promo IDR 450,000",
       },
       {
         name: "Private class (1 guest)",
@@ -1079,7 +1079,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
         id: "faq-cook-1",
         question: "How much is Tumang Bali Cooking Class?",
         answer:
-          "Shared small-group class is IDR 506,370 per person. Private kitchen is IDR 633,090 for 1 guest, or IDR 1,266,180 for 2 guests. Complimentary Ubud-area hotel pickup is included.",
+          "Shared small-group class is promo IDR 450,000 per person (was IDR 506,370). Private kitchen is IDR 633,090 for 1 guest, or IDR 1,266,180 for 2 guests. Complimentary Ubud-area hotel pickup is included.",
       },
       {
         id: "faq-cook-2",

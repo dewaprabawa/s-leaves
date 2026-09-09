@@ -1057,9 +1057,10 @@ export function getTopPickTours(): Tour[] {
 }
 
 export function searchTours(query: string, limit = 8): Tour[] {
-  const q = query.trim().toLowerCase()
-  if (!q) return []
-  return TOURS.filter((tour) => {
+  const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean)
+  if (terms.length === 0) return []
+
+  const matches = TOURS.map((tour) => {
     const haystack = [
       tour.title,
       tour.shortDescription,
@@ -1069,6 +1070,15 @@ export function searchTours(query: string, limit = 8): Tour[] {
     ]
       .join(" ")
       .toLowerCase()
-    return haystack.includes(q)
-  }).slice(0, limit)
+
+    const matchedTerms = terms.filter((term) => haystack.includes(term)).length
+    return { tour, matchedTerms }
+  }).filter((entry) => entry.matchedTerms > 0)
+
+  // Rank tours that match more of the typed words higher, so multi-word
+  // queries (e.g. "atv ubud tour") still surface the best match even when
+  // no single field contains that exact phrase verbatim.
+  matches.sort((a, b) => b.matchedTerms - a.matchedTerms)
+
+  return matches.slice(0, limit).map((entry) => entry.tour)
 }

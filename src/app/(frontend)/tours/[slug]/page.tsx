@@ -46,6 +46,10 @@ function isJeepTour(tour: Tour) {
   return tour.slug === "batur-sunrise-jeep-tour"
 }
 
+function isLuwakTour(tour: Tour) {
+  return tour.slug === "luwak-coffee-plantation"
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const tour = getTourBySlug(slug)
@@ -76,7 +80,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           "private 4x4 Mount Batur",
           "Sekar Bali Activity",
         ]
-    : undefined
+      : isLuwakTour(tour)
+        ? [
+            "luwak coffee plantation Ubud",
+            "Umah Kuno luwak coffee",
+            "ethical Kopi Luwak Bali",
+            "cage-free luwak coffee tasting",
+            "coffee plantation Tampaksiring",
+            "luwak coffee price Bali",
+            "Sekar Bali Activity",
+          ]
+        : undefined
+
+  const ogImage = {
+    url: tour.heroImage.url,
+    alt: tour.heroImage.alt,
+    ...(tour.heroImage.width ? { width: tour.heroImage.width } : {}),
+    ...(tour.heroImage.height ? { height: tour.heroImage.height } : {}),
+  }
 
   return {
     title,
@@ -89,12 +110,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: `${SITE_URL}/tours/${tour.slug}`,
-      images: [
-        {
-          url: tour.heroImage.url,
-          alt: tour.heroImage.alt,
-        },
-      ],
+      images: [ogImage],
       type: "website",
       siteName: SITE_NAME,
     },
@@ -114,15 +130,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             "geo.region": "ID-BA",
             "geo.placename": "Kintamani, Mount Batur, Bali",
           }
-      : undefined,
+        : isLuwakTour(tour)
+          ? {
+              "geo.region": "ID-BA",
+              "geo.placename": "Tampaksiring, Ubud, Bali",
+            }
+          : undefined,
   }
 }
 
+function hoursToIso(hours: number): string {
+  const wholeHours = Math.floor(hours)
+  const minutes = Math.round((hours - wholeHours) * 60)
+  if (minutes === 0) return `PT${wholeHours}H`
+  if (wholeHours === 0) return `PT${minutes}M`
+  return `PT${wholeHours}H${minutes}M`
+}
+
 function durationToIso(duration: string): string | undefined {
-  const range = duration.match(/(\d+)\s*[–-]\s*(\d+)\s*Hours?/i)
-  if (range) return `PT${range[2]}H`
-  const single = duration.match(/(\d+)\s*Hours?/i)
-  if (single) return `PT${single[1]}H`
+  const range = duration.match(/(\d+(?:\.\d+)?)\s*[–-]\s*(\d+(?:\.\d+)?)\s*Hours?/i)
+  if (range) return hoursToIso(parseFloat(range[2]))
+  const single = duration.match(/(\d+(?:\.\d+)?)\s*Hours?/i)
+  if (single) return hoursToIso(parseFloat(single[1]))
   const half = duration.match(/Half\s*Day/i)
   if (half) return "PT4H"
   const full = duration.match(/Full\s*Day/i)
@@ -148,7 +177,9 @@ function buildTourSchema(tour: Tour) {
       ? ["Couples", "Families", "Food travelers", "Culture travelers"]
       : tour.slug === "batur-sunrise-jeep-tour"
         ? ["Couples", "Families", "Non-hikers", "Sunrise photographers"]
-      : ["Couples", "Families", "Adventure seekers"],
+        : tour.slug === "luwak-coffee-plantation"
+          ? ["Couples", "Families", "Food travelers", "Culture travelers"]
+          : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
       "@type": "Place",
@@ -286,6 +317,34 @@ function buildTourSchema(tour: Tour) {
   }
 }
 
+function buildTourWebPageSchema(tour: Tour) {
+  if (isCookingTour(tour)) return buildCookingWebPageSchema(tour)
+  if (isJeepTour(tour)) return buildJeepWebPageSchema(tour)
+
+  const significantLink = [
+    `${SITE_URL}/book?activity=${tour.slug}`,
+    `${SITE_URL}/llms.txt`,
+    `${SITE_URL}/pricing.md`,
+    ...getTourRelatedGuides(tour.slug).map((guide) =>
+      guide.href.startsWith("http") ? guide.href : `${SITE_URL}${guide.href}`,
+    ),
+  ]
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    dateModified: GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    significantLink,
+  }
+}
+
 function buildJeepWebPageSchema(tour: Tour) {
   return {
     "@context": "https://schema.org",
@@ -358,6 +417,7 @@ export default async function TourPage({ params }: Props) {
 
   const cooking = isCookingTour(tour)
   const tourSchema = buildTourSchema(tour)
+  const webPageSchema = buildTourWebPageSchema(tour)
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -394,31 +454,19 @@ export default async function TourPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      {cooking ? (
-        <>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(buildCookingWebPageSchema(tour)),
-            }}
-          />
-          {buildCookingQaSchemas().map((qa) => (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      {cooking
+        ? buildCookingQaSchemas().map((qa) => (
             <script
               key={qa["@id"]}
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
             />
-          ))}
-        </>
-      ) : null}
-      {isJeepTour(tour) ? (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(buildJeepWebPageSchema(tour)),
-          }}
-        />
-      ) : null}
+          ))
+        : null}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link

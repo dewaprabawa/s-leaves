@@ -62,6 +62,8 @@ export interface Tour {
   heroImage: {
     url: string
     alt: string
+    width?: number
+    height?: number
   }
   gallery: { url: string; alt: string }[]
   shortDescription: string
@@ -722,7 +724,6 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         alt: "Lunch included on the Ubud ricefield cycling tour",
       },
     ],
-    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
     shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
@@ -884,6 +885,8 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     heroImage: {
       url: "/coffee.jpg",
       alt: "Luwak Coffee Plantation Umah Kuno",
+      width: 767,
+      height: 1024,
     },
     gallery: [
       {
@@ -891,7 +894,10 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         alt: "Traditional Umah Kuno Balinese Compound",
       },
     ],
+<<<<<<< HEAD
     youtubeVideoId: "dQw4w9WgXcQ", // Placeholder
+=======
+>>>>>>> origin/main
     shortDescription:
       "Ethical Luwak coffee tasting at Umah Kuno — jungle walk, traditional roasting, and a 10-drink tasting flight. IDR 800,000 per person (minimum 3 guests).",
     fullDescription: `**A Journey Into the Heart of Bali's Coffee Culture**

@@ -1587,4 +1587,85 @@ Full cycling details: [Ubud Ricefield Cycling Tour guide](/blog/ubud-ricefield-c
 **Ready for a full cultural day?** Book [ricefield cycling](/tours/ubud-ricefield-cycling-tour) and [Tumang Bali Cooking Class](/tours/balinese-cooking-class) together via WhatsApp.
 `
   },
+  {
+    slug: 'ubud-atv-track-types-mud-jungle-vs-cave-tunnel',
+    title: 'Ubud ATV Tracks Explained: Jungle Mud Trail vs Cave & Tunnel Routes',
+    excerpt:
+      'Ubud ATV operators run different track styles — jungle mud + river crossings vs cave/tunnel routes. What each feels like, and how to pick the right one.',
+    publishedAt: '2026-09-09',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**Are all Ubud ATV tours the same track?** No. "ATV near Ubud" covers several genuinely different tracks and terrain styles run by separate operators, not one shared trail. The two most common styles travelers compare are a **jungle mud + river-crossing trail** (our track at All New Bali Adventure) and **cave/tunnel-style routes** run by other Ubud-area operators such as Kuber Bali Adventure or the Dragon Cave circuit. Neither is "better" in general — they suit different riders.
+
+> **Key Takeaways**
+> - Ubud has multiple separate ATV arenas, not one shared track — always confirm which operator and location you booked
+> - Jungle mud + river-crossing style (our track): muddy soil, river crossings, jungle canopy, optional Wos River tubing after
+> - Cave/tunnel style (other Ubud operators): a signature cave or tunnel section plus waterfall and rice-field views
+> - We are **not** the Kuber tunnel or Dragon Cave tracks — our arena is **All New Bali Adventure** in Sedang, Abiansemal
+> - Single ATV from IDR 750,000, tandem from IDR 1,100,000 — lunch, gear, insurance included
+> - Book on WhatsApp — no upfront payment to inquire
+
+---
+
+## Why This Matters Before You Book
+
+Aggregator listings and social media often blur which arena a photo or review actually came from — "ATV Ubud" is used as a generic label by several unrelated operators. If you arrive expecting a cave/tunnel route and your booking is actually a jungle mud track (or the reverse), your day feels off even though nothing went "wrong." Confirming the track style in advance avoids that mismatch.
+
+## Track Style 1: Jungle Mud & River-Crossing (Our Track)
+
+At **All New Bali Adventure** — our activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — the ride is built around:
+
+- Jungle canopy trails with soft soil and mud sections
+- River crossings on the quad itself
+- A stable 4-wheel sport ATV (no clutch or motocross balance needed)
+- Optional **Wos River tubing** immediately after the track for a land-and-water day
+
+This style suits riders who want mud, splash, and a "got dirty and loved it" photo at the end, plus the option to keep the adventure going in the water. See the full [ATV Ubud guide](/blog/bali-atv-tour-ubud-guide) and [ATV + Wos River tubing combo](/blog/atv-river-tubing-wos-river-bali).
+
+## Track Style 2: Cave & Tunnel Routes (Other Ubud Operators)
+
+Some other Ubud-area ATV operators — Kuber Bali Adventure and the Dragon Cave circuit among them — build their signature experience around a dedicated cave or historic tunnel section, usually paired with a waterfall stop and rice-field views. If a friend's photo or review mentions riding through a tunnel or cave, that's almost certainly this style of track, not ours.
+
+Both styles are legitimate ways to experience an ATV in the Ubud area — the difference is terrain character, not safety or quality. Choose based on what you actually want to ride through: mud and river crossings, or a cave/tunnel centerpiece.
+
+## Quick Comparison
+
+| Factor | Jungle Mud & River (our track) | Cave & Tunnel (other operators) |
+| --- | --- | --- |
+| Signature feature | River crossings + mud trail | Cave or tunnel passage |
+| Arena | All New Bali Adventure, Sedang | Separate operator arenas elsewhere near Ubud |
+| Good combo | ATV + Wos River tubing same day | Varies by operator |
+| Booking with us | WhatsApp, no upfront payment | Not applicable — different operator |
+
+## How to Confirm You're Booking Our Track
+
+1. Look for **All New Bali Adventure** as the named arena in your confirmation
+2. Check the address: Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352
+3. If your WhatsApp confirmation doesn't mention that address, ask us before you pay — we're not the Kuber tunnel or Dragon Cave tracks
+
+Full location detail: [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide).
+
+## Pricing on Our Track (2026)
+
+| Package | From price (IDR) | Includes |
+| --- | --- | --- |
+| Single ATV | 750,000 | Lunch, boot shoes, helmet, insurance |
+| Tandem ATV | 1,100,000 | Same inclusions, one bike for two |
+| ATV + Wos River tubing | Ask via WhatsApp | Trail first, then river float |
+
+Full breakdown: [How much does an ATV cost near Ubud](/blog/how-much-does-atv-cost-bali-ubud-2026).
+
+## Who Should Choose Which Style
+
+- **Choose jungle mud + river crossings (us)** if you want mud, water, a tubing add-on, and a Pejeng/Sedang-based small local team you can reach on WhatsApp before paying.
+- **Choose a cave/tunnel-style operator** if a cave or tunnel passage is the specific highlight you're after — book directly with that operator so pricing and inclusions match their track, not ours.
+
+## Book Our Track on WhatsApp
+
+Message us with **name, age, adult/child, hotel or self-meet preference, Single or Tandem, and date**. No deposit is required to inquire — see [how WhatsApp booking works](/blog/how-to-book-bali-adventure-whatsapp).
+
+**Ready to ride the mud and river-crossing track?** Book the [Bali ATV Adventure](/tours/bali-atv-adventure) at All New Bali Adventure, or compare it with mass-market operators in [Private vs Mass-Market ATV](/blog/private-atv-vs-mass-market-ubud).
+`
+  },
 ]

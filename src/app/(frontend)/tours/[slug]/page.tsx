@@ -297,7 +297,7 @@ export default async function TourPage({ params }: Props) {
   }
 
   return (
-    <main className="w-full bg-sand pt-32 pb-24">
+    <main className="w-full bg-sand pt-32 pb-28 lg:pb-24">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(tourSchema) }}

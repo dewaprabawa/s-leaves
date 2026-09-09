@@ -355,6 +355,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 1rem;
 }
 
+/* ─── Keep the floating AI Assistant button clear of the mobile sticky booking bar ─── */
+@media (max-width: 1023px) {
+  html.has-mobile-book-bar .ai-assistant-fab {
+    bottom: calc(5.5rem + env(safe-area-inset-bottom));
+  }
+}
+
 /* ─── Custom scrollbar ─── */
 ::-webkit-scrollbar { width: 8px; }
 ::-webkit-scrollbar-track { background: var(--sand-dark); }

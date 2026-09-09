@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ArrowRight, Clock, ExternalLink } from "lucide-react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
@@ -111,9 +111,44 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const configs = buildTourConfigs(props)
   const primary = configs[0]
   const { promoPrice, standardPrice, tierLabel } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
+  const hasPromo = standardPrice > promoPrice
+
+  // Nudge the floating AI Assistant button above our mobile sticky CTA so they don't overlap
+  useEffect(() => {
+    document.documentElement.classList.add("has-mobile-book-bar")
+    return () => {
+      document.documentElement.classList.remove("has-mobile-book-bar")
+    }
+  }, [])
 
   return (
     <>
+      {/* Mobile-only sticky CTA so guests can book right away without scrolling to the bottom */}
+      <div className="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-brand-green/10 bg-white/95 backdrop-blur px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] [padding-bottom:max(0.75rem,env(safe-area-inset-bottom))]">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
+          <div className="min-w-0">
+            <p className="text-[11px] font-medium text-brand-green-light leading-none">From</p>
+            <div className="flex items-baseline gap-2">
+              <span className="font-display text-xl font-bold text-brand-green leading-tight">
+                {formatIdr(promoPrice)}
+              </span>
+              {hasPromo ? (
+                <span className="text-xs text-brand-green-light line-through opacity-70">
+                  {formatIdr(standardPrice)}
+                </span>
+              ) : null}
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            className="flex shrink-0 items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer px-6 font-bold text-sm uppercase tracking-wider"
+          >
+            Book Now <ArrowRight className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
+
       <div className="bg-white rounded-3xl shadow-xl border border-brand-green/10 p-6 md:p-8 space-y-6">
         {props.getYourGuideUrl && (
           <a

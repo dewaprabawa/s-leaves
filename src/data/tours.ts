@@ -1182,10 +1182,15 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
     seoDescription:
       "Private full-day Ubud tour: Royal Palace, Art Market & Tegalalang Rice Terraces from IDR 600K. English driver, custom pace. WhatsApp booking.",
     heroImage: {
-      url: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
-      alt: "Full Day Ubud Tour",
+      url: "/images/adventures/full-day-ubud-tour.jpg",
+      alt: "Tegalalang rice terraces framed by jungle palms on the Full Day Ubud Tour",
     },
-    gallery: [],
+    gallery: [
+      {
+        url: "/images/adventures/full-day-ubud-tour.jpg",
+        alt: "Tegalalang rice terraces framed by jungle palms on the Full Day Ubud Tour",
+      },
+    ],
     shortDescription:
       "Private full-day Ubud tour covering the Royal Palace, Art Market, and Tegalalang Rice Terraces — private car, English-speaking driver, and a pace you set yourself. From IDR 600,000.",
     fullDescription: `**Full Day Ubud Tour: Royal Palace, Art Market & Rice Terraces**

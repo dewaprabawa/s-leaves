@@ -12,6 +12,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     adultPrice: getListPrice("single-atv"),
     kidPrice: 700000,
     minPax: 1,
+    meetsAtArena: true,
   },
   {
     id: "tandem-atv",
@@ -20,6 +21,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     adultPrice: getListPrice("tandem-atv"),
     kidPrice: null,
     minPax: 2,
+    meetsAtArena: true,
   },
   {
     id: "rafting",
@@ -28,6 +30,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     adultPrice: getListPrice("rafting"),
     kidPrice: 450000,
     minPax: 2,
+    meetsAtArena: true,
   },
   {
     id: "canyon-tubing",
@@ -36,6 +39,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     adultPrice: getListPrice("canyon-tubing"),
     kidPrice: 300000,
     minPax: 1,
+    meetsAtArena: true,
   },
   {
     id: "cycling",
@@ -53,6 +57,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     adultPrice: getListPrice("jeep-sunrise"),
     kidPrice: null,
     minPax: 1,
+    pickupIncluded: true,
   },
 ]
 

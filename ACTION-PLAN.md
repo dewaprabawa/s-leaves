@@ -1,32 +1,35 @@
-# Action Plan — SEO + GEO (implementation status)
+# SEO Action Plan — Luwak Coffee Plantation (Umah Kuno)
 
-- **Site:** https://www.sekarbaliactivity.com/
-- **Audit date:** 2026-09-09
-- **Implementation branch:** `cursor/seo-geo-action-plan-2c12`
-- **Merged with:** `origin/main` (includes audit report #75)
+**Source audit:** `FULL-AUDIT-REPORT.md` (2026-09-09)  
+**URL:** https://www.sekarbaliactivity.com/tours/luwak-coffee-plantation  
+**Status:** Implementation in progress on `cursor/luwak-coffee-seo-fixes-e817` (includes 800k price commits)
 
-## Done in this PR
+## 1) Immediate blockers
 
-1. **GEO opening blurb NAP conflict** — `geoContent.ts` one-liners now lead with Sedang / Abiansemal activity base; Pejeng reserved for cycling routes; `GEO_UPDATED` → 2026-09-09
-2. **Hero without T-rex** — cherry-picked landscape ATV hero assets + layout from PR #72
-3. **TripAdvisor citation** — linked Tumang listing `Attraction_Review-g297701-d26364507` on cooking money page, GEO FAQs, `sameAs`, and tour markdown
-4. **Internal-link pass** — `tourGuides.ts` + “Guides for this activity” on each `/tours/*` money page
-5. **Host E-E-A-T notes** — first-hand host blocks for ATV, cycling, cooking, rafting
-6. **TouristTrip enrichment** — ISO `duration`, clearer `areaServed` for ATV (Sedang)
-7. **sameAs expansion** — Tumang operator + TripAdvisor (IG/FB kept). Skipped X/Twitter (handle 404)
+| # | Action | Status |
+|---|--------|--------|
+| 1 | Merge & deploy price + SEO fixes so live shows **IDR 800,000** | Ready for review (this PR) |
+| 2 | Post-deploy spot-check live HTML + JSON-LD for `800000` / “IDR 800” | After merge |
 
-## Still open / ops
+## 2) Quick wins
 
-- Re-run PageSpeed with `PAGESPEED_API_KEY` after deploy (CWV unknown in audit)
-- Optional: claim/create real Sekar Bali Activity TripAdvisor or GMB URL for brand `sameAs` (do not invent)
-- Optional SEO skill script fixes for multi-type `@type` arrays (auto-report false Critical on Organization)
+| # | Action | Status |
+|---|--------|--------|
+| 3 | Fix `durationToIso` → `1.5 Hours` = **`PT1H30M`** | Done |
+| 4 | Remove YouTube `dQw4w9WgXcQ` placeholders (Luwak + cycling) | Done |
+| 5 | Compress `/coffee.jpg` (~122KB) + OG width/height | Done |
+| 6 | `pricing.md` / `llms.txt` list Luwak at **IDR 800,000** via GEO_PRICING | Done (ships with price commits) |
 
-## Do not do (unchanged)
+## 3) Strategic improvements
 
-- No FAQPage schema for commercial rich-result recovery
-- No Wikipedia created solely for SEO
-- No purchased AI citations
+| # | Action | Status |
+|---|--------|--------|
+| 7 | Page-scoped `WebPage` schema for all tours (incl. Luwak) | Done |
+| 8 | Move GEO `Question` + homepage `WebPage`/`ItemList` off global layout → homepage only | Done |
+| 9 | Luwak keywords + `geo.placename` Tampaksiring/Ubud | Done |
+| 10 | Re-run PageSpeed / CWV polish | Pending (API rate limits; hero already compressed) |
 
-## Note on audit auto-report items (from #75 runner)
+## 4) Do not do
 
-Machine `generate_report.py` listed “No Organization/Person entity” and Wikipedia/Wikidata `sameAs` gaps as Critical/Info. Organization already ships as `TravelAgency` + `LocalBusiness` (false Critical). Wikipedia/Wikidata remain optional and must not be created for SEO alone.
+- Do **not** add `FAQPage` or `HowTo` schema.
+- Do **not** buy/manipulate AI Overview citations.

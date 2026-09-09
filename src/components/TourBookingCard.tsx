@@ -26,6 +26,7 @@ const SLUG_TO_ACTIVITY_ID: Record<string, string> = {
   "whitewater-rafting": "rafting",
   "canyon-tubing": "canyon-tubing",
   "ubud-ricefield-cycling-tour": "cycling",
+  "batur-sunrise-jeep-tour": "jeep-sunrise",
 }
 
 function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
@@ -44,6 +45,7 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
   "whitewater-rafting": ["rafting"],
   "canyon-tubing": ["canyon-tubing"],
   "ubud-ricefield-cycling-tour": ["cycling"],
+  "batur-sunrise-jeep-tour": ["jeep-sunrise"],
 }
 
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {

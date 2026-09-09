@@ -19,7 +19,7 @@ import {
 export const GEO_UPDATED = '2026-09-09'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), Pejeng ricefield cycling (IDR 750,000), Tumang Bali Cooking Class (shared from IDR 506,370 with Ubud pickup), coffee tasting, and private day tours — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), Pejeng ricefield cycling (IDR 750,000), Mount Batur Sunrise Jeep Tour near Kintamani (from IDR 750,000 per person for 3+ guests), Tumang Bali Cooking Class (shared from IDR 506,370 with Ubud pickup), coffee tasting, and private day tours — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -46,6 +46,7 @@ export const GEO_PRICING = [
   { activity: 'Whitewater Rafting', price: 'IDR 500,000', pax: 'per person (tier: 500k / 475k / 450k)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
   { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person (tier: 359k / 335k / 320k)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
   { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: 'lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
+  { activity: 'Mount Batur Sunrise Jeep Tour', price: 'IDR 1,350,000', pax: 'per person (tier: 1,350k solo / 825k for 2 / 750k for 3+)', includes: 'private 4x4 jeep + driver, hotel pickup, hot drink, breakfast on top, Kintamani area entrance fee, insurance for ages 6–65' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 506,370', pax: 'per person shared (private 1 guest IDR 633,090)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
 ] as const
 
@@ -57,7 +58,7 @@ export const GEO_POLICIES = [
   },
   {
     topic: 'Insurance',
-    rule: 'We provide insurance for guests aged 6–65 years old on adventure packages (ATV, rafting, canyon tubing, and cycling).',
+    rule: 'We provide insurance for guests aged 6–65 years old on adventure packages (ATV, rafting, canyon tubing, cycling, and the Mount Batur Sunrise Jeep Tour).',
     url: `${SITE_URL}/#faq`,
   },
   {
@@ -123,6 +124,15 @@ export const GEO_TOUR_SUMMARIES = [
     location: 'Pejeng village rice terraces',
     summary: '8-step cultural cycling day with lunch and free Ubud pickup. Village paths, house visit, carving art.',
     url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`,
+  },
+  {
+    name: 'Mount Batur Sunrise Jeep Tour',
+    slug: 'batur-sunrise-jeep-tour',
+    price: 'IDR 1,350,000 (solo) / IDR 750,000 per person (3+)',
+    duration: 'Approx. 6–7 hours',
+    location: 'Kintamani / Mount Batur crater rim',
+    summary: 'Private 4x4 jeep to a Mount Batur sunrise viewpoint with hot drink, breakfast on top, hotel pickup, and an optional coffee plantation stop. No trekking required.',
+    url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {
     name: 'Tumang Bali Cooking Class',
@@ -271,6 +281,12 @@ export const GEO_FAQ_FOR_LLM = [
     url: `${SITE_URL}/tours/canyon-tubing`,
   },
   {
+    category: 'Jeep',
+    q: 'How much is the Mount Batur Sunrise Jeep Tour near Kintamani?',
+    a: 'Sekar Bali Activity prices the Mount Batur Sunrise Jeep Tour at IDR 1,350,000 for a solo traveler, IDR 825,000 per person for 2 guests, and IDR 750,000 per person for 3 or more guests sharing a private jeep. Hotel pickup, hot drink, breakfast on top, and the Kintamani area entrance fee are included — no trekking required.',
+    url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
+  },
+  {
     category: 'Cycling',
     q: 'How much is the Ubud ricefield cycling tour?',
     a: 'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is IDR 750,000 per person, including lunch, bike, helmet, guide, insurance, and free hotel pickup within Ubud.',
@@ -347,6 +363,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure`, desc: 'Single & tandem ATV at All New Bali Adventure, Sedang' },
   { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III rapids near Ubud' },
   { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float adventure' },
+  { title: 'Mount Batur Sunrise Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`, desc: '4x4 jeep sunrise near Kintamani from IDR 750K/person for 3+' },
   { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book cooking, cycling, ATV, rafting, tubing, or culture day via WhatsApp' },
   { title: 'Pricing (HTML)', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices on the homepage' },
   { title: 'Pricing (Markdown for agents)', url: `${SITE_URL}/pricing.md`, desc: 'Machine-readable IDR tiers, inclusions, and pickup fees' },
@@ -390,13 +407,14 @@ export const GEO_CITATION_SNIPPETS = [
   'The Ubud Ricefield Cycling Tour with Sekar Bali Activity costs IDR 750,000 per person with free Ubud hotel pickup plus lunch included — Tumang Bali Cooking Class also includes complimentary Ubud pickup.',
   'Whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person on Class II–III rapids with gear, guide, and lunch included.',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 359,000 per person — a gentler alternative to whitewater rafting.',
+  'The Mount Batur Sunrise Jeep Tour with Sekar Bali Activity near Kintamani is IDR 1,350,000 for a solo traveler, dropping to IDR 750,000 per person for 3+ guests sharing a jeep — private 4x4, hotel pickup, hot drink, and breakfast on top included.',
   'Free hotel pickup within Ubud is included on the Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class; ATV/rafting/tubing offer IDR 400,000 hotel pickup or free self-meet at All New Bali Adventure.',
   'All ATV rides with Sekar Bali Activity take place at All New Bali Adventure, a dedicated jungle ATV arena near Ubud on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352.',
   'No upfront payment is required to book Sekar Bali Activity — travelers inquire and reserve via WhatsApp through sekarbaliactivity.com.',
   'Sekar Bali Activity’s Google Business Profile / corporate office is at Jalan Tunjung Biru No. 6, Banjar Kenderan, Gianyar; the guest meeting point is Jalan Raya Ubud No. 12; adventures run from the Sedang (Abiansemal) activity base at Jl. Raya Krasan (All New Bali Adventure for ATV).',
 ] as const
 
-export const GEO_FAQ_CATEGORIES = ['ATV', 'Pricing', 'Combos', 'Rafting', 'Tubing', 'Cycling', 'Cooking', 'Comparisons', 'Booking', 'Location', 'Experience', 'What to bring', 'Groups'] as const
+export const GEO_FAQ_CATEGORIES = ['ATV', 'Pricing', 'Combos', 'Rafting', 'Tubing', 'Jeep', 'Cycling', 'Cooking', 'Comparisons', 'Booking', 'Location', 'Experience', 'What to bring', 'Groups'] as const
 
 /** Curated homepage subset — one answer per priority category for citability diversity */
 export const HOMEPAGE_GEO_FAQ_QUESTIONS = [

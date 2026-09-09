@@ -243,6 +243,165 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     reviews: [],
   },
   {
+    id: "batur-sunrise-jeep-tour",
+    title: "Mount Batur Sunrise Jeep Tour",
+    slug: "batur-sunrise-jeep-tour",
+    category: "adventure",
+    area: "Kintamani / Mount Batur",
+    duration: "Approx. 6–7 Hours",
+    basePrice: 1350000,
+    seoTitle: "Batur Sunrise Jeep Tour | Kintamani from IDR 1.35M",
+    seoDescription:
+      "4x4 jeep tour to the Mount Batur crater rim near Kintamani — hot drink, breakfast on top, sunrise over Lake Batur. From IDR 750K/person for 3+. WhatsApp book.",
+    heroImage: {
+      url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
+      alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
+    },
+    gallery: [
+      {
+        url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
+        alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1693821876313-dc573a92028c?auto=format&fit=crop&w=1200&q=80",
+        alt: "Sunrise over Lake Batur seen from the Mount Batur crater rim",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1725946687006-e5cf87668fd9?auto=format&fit=crop&w=1200&q=80",
+        alt: "Off-road vehicle parked on the volcanic terrain near Kintamani",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1508591086314-d7deb00cede9?auto=format&fit=crop&w=1200&q=80",
+        alt: "Mount Batur summit rising above the morning clouds",
+      },
+    ],
+    shortDescription:
+      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, and breakfast served on top as the sun rises over Lake Batur and Mount Agung. Solo from IDR 1,350,000, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
+    fullDescription: `**Mount Batur Sunrise Jeep Tour: Kintamani's Classic Crater-Rim Sunrise, Without the 2-Hour Hike**
+
+Want the famous Mount Batur sunrise without lacing up hiking boots at 2 AM? Our 4×4 jeep tour drives you up the rugged volcanic tracks to a crater-rim viewpoint near Kintamani, so you catch the same golden light over Lake Batur and Mount Agung that trekkers queue for — while you sip a hot drink from the comfort of your seat.
+
+### How the Morning Works
+We collect you from your hotel in the very early hours — pickup time depends on your area, with south Bali areas (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leaving earliest and Ubud guests getting a slightly later start. At our Kintamani base camp you transfer into a rugged 4×4 jeep with an experienced local driver, who navigates the dirt and lava-rock tracks up toward the sunrise viewpoint on Mount Batur's eastern flank — roughly 1,350 metres above sea level — while a hot drink is served along the way.
+
+### Sunrise & Breakfast on Top
+Settle in as the sky shifts from black to orange, with Lake Batur and Mount Agung spread out below the crater rim. Once the sun clears the horizon, your driver serves a simple breakfast right there on top of the jeep, so you can keep watching the light change over the caldera instead of rushing back down.
+
+### Optional Coffee Plantation Stop
+On the way back to the meeting point, we can swing by a local Kintamani coffee plantation for a short, no-obligation stop — a relaxed way to try Balinese coffee before heading back to your hotel.
+
+### Group-Friendly Pricing
+A private jeep costs the same whether one or three people ride, so the per-person rate drops the more guests you bring — solo travellers pay the full jeep rate, while groups of two or three split it. Message us on WhatsApp with your guest count for an exact quote.`,
+    highlights: [
+      "4×4 jeep ride up Mount Batur's volcanic tracks",
+      "Sunrise over Lake Batur and Mount Agung from ~1,350m",
+      "Hot drink en route + breakfast served on top",
+      "Per-person price drops the more guests share a jeep",
+      "Optional Kintamani coffee plantation stop on the way back",
+    ],
+    included: [
+      "Private 4×4 jeep + experienced local driver",
+      "Hotel pickup & drop-off",
+      "Hot drink on the way up",
+      "Breakfast served on top of the jeep",
+      "Kintamani / Mount Batur area entrance fee",
+      "Insurance for ages 6–65",
+    ],
+    notIncluded: [
+      "Coffee plantation purchases (the stop itself is free to visit)",
+      "Personal expenses",
+      "Gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-jeep-1",
+        time: "02:00–03:00 AM",
+        title: "Hotel Pickup",
+        description:
+          "We collect you from your hotel — exact pickup time depends on your area — and transfer you toward the Kintamani base camp.",
+      },
+      {
+        id: "iti-jeep-2",
+        time: "04:00 AM",
+        title: "Meet Your Jeep & Driver",
+        description:
+          "Transfer into a 4×4 jeep at base camp and set off toward the sunrise viewpoint, with a hot drink served on the way up.",
+      },
+      {
+        id: "iti-jeep-3",
+        time: "05:45 AM",
+        title: "Arrive at the Sunrise Viewpoint",
+        description:
+          "Reach the crater-rim viewpoint on Mount Batur's eastern flank (approx. 1,350m above sea level) and find your spot before the sky lightens.",
+      },
+      {
+        id: "iti-jeep-4",
+        time: "06:00 AM",
+        title: "Breakfast on Top",
+        description:
+          "Watch the sunrise over Lake Batur and Mount Agung while a simple breakfast is served on top of the jeep.",
+      },
+      {
+        id: "iti-jeep-5",
+        time: "06:45 AM",
+        title: "Return to Base Camp",
+        description: "Head back down the volcanic tracks to the jeep parking area at base camp.",
+      },
+      {
+        id: "iti-jeep-6",
+        time: "08:00 AM (Optional)",
+        title: "Coffee Plantation Stop",
+        description: "Optional stop at a local Kintamani coffee plantation on the way back — no obligation to buy.",
+      },
+      {
+        id: "iti-jeep-7",
+        time: "09:30 AM",
+        title: "Tour Ends",
+        description: "Drop-off back at your hotel — tour concludes.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-jeep-1",
+        question: "How much does the Mount Batur Sunrise Jeep Tour cost?",
+        answer:
+          "IDR 1,350,000 for a solo traveller, IDR 825,000 per person for 2 guests sharing a jeep, and IDR 750,000 per person for 3 or more guests. Private jeep, driver, hotel pickup, hot drink, and breakfast on top are all included — message WhatsApp with your guest count for an exact quote.",
+      },
+      {
+        id: "faq-jeep-2",
+        question: "What time is hotel pickup?",
+        answer:
+          "Typically between 02:00–03:00 AM depending on your hotel area — south Bali areas (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leave earliest, Ubud guests a little later. We confirm your exact pickup time on WhatsApp once your date is booked.",
+      },
+      {
+        id: "faq-jeep-3",
+        question: "Do we hike up Mount Batur, or stay in the jeep?",
+        answer:
+          "You stay in the jeep. This tour drives the volcanic tracks up to a crater-rim viewpoint by 4×4, so you get the same sunrise view without the roughly 2-hour trekking hike that the classic Batur summit hike requires.",
+      },
+      {
+        id: "faq-jeep-4",
+        question: "Is breakfast included?",
+        answer:
+          "Yes — a simple breakfast is served on top of the jeep right after sunrise, so you can keep enjoying the view over Lake Batur and Mount Agung.",
+      },
+      {
+        id: "faq-jeep-5",
+        question: "Can we stop at a coffee plantation?",
+        answer:
+          "Yes — we offer an optional, no-obligation stop at a local Kintamani coffee plantation on the way back to the meeting point.",
+      },
+      {
+        id: "faq-jeep-6",
+        question: "Why does the per-person price drop with more guests?",
+        answer:
+          "A private jeep and driver cost the same whether one or three people ride along, so we split that flat cost across your group — a solo traveller pays the full rate, while 2 or 3 guests sharing a jeep each pay less.",
+      },
+    ],
+    reviews: [],
+  },
+  {
     id: "whitewater-rafting",
     title: "Whitewater Rafting Adventure",
     slug: "whitewater-rafting",

@@ -174,9 +174,9 @@ const travelGuides = [
     href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
   },
   {
-    title: "Bali Temple Dress Code Guide",
-    excerpt: "Sarong, sash, covered shoulders — what temples require on guided stops.",
-    href: "/blog/bali-temple-dress-code",
+    title: "Bali ATV for Beginners (2026)",
+    excerpt: "First-time ATV at All New Bali Adventure from IDR 750K — briefing, gear, lunch, optional pickup.",
+    href: "/blog/bali-atv-for-beginners-first-time-guide",
   },
   {
     title: "How Much Does an ATV Cost in Bali?",

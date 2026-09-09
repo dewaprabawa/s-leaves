@@ -10,6 +10,108 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'bali-atv-for-beginners-first-time-guide',
+    title: 'Bali ATV for Beginners (2026)',
+    excerpt:
+      'First-time Bali ATV at All New Bali Adventure near Ubud from IDR 750,000 — no experience needed, optional pickup or self-meet.',
+    publishedAt: '2026-09-09',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**Can beginners ride a Bali ATV without experience?** Yes. Sekar Bali Activity runs beginner-friendly quad bike rides at **All New Bali Adventure** in Sedang, Abiansemal, near Ubud. A Single ATV starts at **IDR 750,000** (1 pax; lower tiers for 2+ and 3+) and a Tandem ATV starts at **IDR 1,100,000** (2 pax sharing one bike). Every ride includes an English-speaking safety briefing, boot shoes, helmet, a simple lunch, and insurance for ages 6–65. You do not need a riding licence or prior ATV experience.
+
+> **Key Takeaways**
+> - First-timers are the usual guest — the briefing covers throttle, brake, and trail etiquette before you start
+> - Single ATV from IDR 750,000 · Tandem ATV from IDR 1,100,000 at All New Bali Adventure near Ubud
+> - Included: boot shoes, helmet, lunch, insurance (ages 6–65), trail guide (2–4 hours)
+> - Pickup is an optional booking checkbox (IDR 400,000); unchecked means meet at the arena
+
+---
+
+## Do you need ATV experience for a first ride in Bali?
+
+No. Most guests on the [Bali ATV Adventure](/tours/bali-atv-adventure) have never sat on a quad bike. Guides start on flat ground at All New Bali Adventure, show you how the machine starts and stops, then lead the group onto jungle paths, muddy stretches, and shallow river crossings. The pace follows the least experienced rider, not the most confident one.
+
+If you can sit upright and follow a guide, you can do this ride. The arena is a dedicated off-road track — not a public road — so you are not mixing with Bali scooter traffic. That is the main reason first-timers feel safer here than on a rented motorbike.
+
+Worried about speed? You control the throttle after the briefing. Guides keep the group together and stop at photo spots and river crossings. If you want a passenger seat instead of the controls, book Tandem.
+
+## Single ATV vs Tandem ATV for first-timers
+
+| Option | Price | Riders | Why beginners pick it |
+| --- | --- | --- | --- |
+| Single ATV | From IDR 750,000 | 1 pax | You steer after the briefing |
+| Single ATV (2 riders) | IDR 725,000 each | 2 singles | Same inclusions · group tier |
+| Single ATV (3+) | IDR 700,000 each | 3+ | Same inclusions · group tier |
+| Tandem ATV | From IDR 1,100,000 | 2 pax | One person drives; one rides as passenger |
+
+Choose **Single** if you want the full sensation of steering yourself through mud and jungle. Choose **Tandem** if you are a couple, or if one guest prefers not to drive. Child Single ATV is **IDR 700,000** where age-appropriate — send ages on WhatsApp so the team assigns Adult or Child correctly.
+
+Need the full 2026 price list? See [Bali adventure packages and prices](/blog/bali-adventure-packages-prices-2026). Still choosing between land and water? Read [rafting vs tubing vs ATV near Ubud](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+
+## What happens at All New Bali Adventure
+
+All Sekar Bali Activity ATV rides start at **All New Bali Adventure** — the jungle ATV arena on **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**, near Ubud. This is where you meet your guide, get fitted with boot shoes and a helmet, and hear the safety briefing before the track. It is not a roadside rental stand, and it is not the corporate office pin in Banjar Kenderan.
+
+A typical first-timer sequence:
+
+1. Arrive at All New Bali Adventure (hotel pickup or self-meet)
+2. Gear fitting — boot shoes and helmet sized to you
+3. Safety briefing — English-speaking guide, no experience assumed
+4. Guided trail — jungle paths, mud, and river crossings
+5. Optional [canyon tubing](/tours/canyon-tubing) on the Wos River after the ATV session
+6. Simple menu lunch and time to change into dry clothes
+
+Package duration on the tour page is **2–4 hours**. Arrival details and what the base looks like: [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide).
+
+## What is included in the beginner ATV price
+
+Your package price covers the guided ATV ride (single or tandem), boot shoes and helmet, a simple menu lunch, insurance for guests aged 6–65, and the safety briefing with a trail guide.
+
+Not included:
+
+- Hotel pickup (optional add-on — see below)
+- River tubing combo (ask when you book; combo pricing is confirmed on WhatsApp)
+- Personal expenses and gratuities
+
+You do **not** pay upfront to inquire. Open the booking form on [sekarbaliactivity.com](https://www.sekarbaliactivity.com) or message WhatsApp **+62 817 7572 3663** with your name, age, adult or child, date, and activity.
+
+## Hotel pickup or meet at the arena?
+
+On the booking form, hotel pickup is an **optional checkbox** labelled “I need hotel pickup.”
+
+- **Leave it unchecked** if you will self-meet. Go to All New Bali Adventure on Jl. Raya Krasan, Sedang, Abiansemal. Open the [meeting point map](https://www.google.com/maps/search/?api=1&query=Jl.+Raya+Krasan+Sedang+Abiansemal+Badung+Bali+80352). There is no pickup surcharge when you meet at the arena.
+- **Check the box** to add hotel pickup for **IDR 400,000**.
+- **Free Ubud pickup** is only on the [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) (IDR 750,000 with lunch) and Tumang Bali Cooking Class — not on ATV, [whitewater rafting](/tours/whitewater-rafting), or tubing.
+
+If you stay in central Ubud and have a driver or scooter, self-meet is often simpler. If you stay farther out or do not want to navigate Sedang lanes, tick the pickup box and the surcharge is added in the WhatsApp message. Full policy: [Ubud hotel pickup for Bali adventures](/blog/ubud-hotel-pickup-bali-adventures-explained).
+
+## What first-time riders should bring
+
+Trails get muddy. Pack changing clothes or a dry cloth, sunscreen, and some cash for extras. A waterproof phone case is optional but useful at river crossings. Towels and changing facilities are at the base — you do not need to bring your own towel.
+
+Closed-toe shoes are replaced by the boot shoes provided at the arena, so you can arrive in sandals if you prefer and change on site. Leave jewellery and loose bags in a dry bag or at the hotel.
+
+Step-by-step message format: [How to book a Bali adventure on WhatsApp](/blog/how-to-book-bali-adventure-whatsapp).
+
+## After the track: tubing, rafting, or a slower day
+
+Many first-timers add [canyon tubing](/tours/canyon-tubing) on the Wos River after the ATV session — land then water. Ask WhatsApp for combo availability rather than guessing a bundled price. The combo flow is in [ATV + River Tubing](/blog/atv-river-tubing-wos-river-bali).
+
+Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) near Ubud is IDR 500,000 on Class II–III rapids with gear, guide, and lunch. Want culture instead of motors? The [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) is IDR 750,000 with lunch and free Ubud pickup.
+
+## How to book your first Bali ATV
+
+1. Open [Bali ATV Adventure](/tours/bali-atv-adventure)
+2. Choose Single or Tandem, then tap Book
+3. Leave “I need hotel pickup” unchecked to self-meet, or check it for IDR 400,000 pickup
+4. Send name, age, adult/child, date, and guest count on WhatsApp
+5. We confirm the tier rate — **no payment to inquire**
+
+**Book now** — [Bali ATV Adventure at All New Bali Adventure](/tours/bali-atv-adventure).
+`
+  },
+  {
     slug: 'how-much-does-atv-cost-bali-ubud-2026',
     title: 'ATV Cost Near Ubud (2026 Prices)',
     excerpt:
@@ -53,7 +155,7 @@ At **All New Bali Adventure** (our activity base on Jl. Raya Krasan, Sedang, Abi
 4. Simple menu lunch after the ride  
 5. Insurance on the included package  
 
-You do **not** need prior ATV experience. See the [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide) for directions and self-meet tips.
+You do **not** need prior ATV experience. First ride? Read the [Bali ATV for beginners guide](/blog/bali-atv-for-beginners-first-time-guide). See the [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide) for directions and self-meet tips.
 
 ## Hidden Costs to Watch (Industry-Wide)
 
@@ -191,7 +293,7 @@ Travelers typing **private ATV Ubud**, **beginner ATV Ubud**, or **Bali quad bik
 2. Proof lunch and gear are included  
 3. A human reply before paying  
 
-Our answers live on the [ATV Ubud guide](/blog/bali-atv-tour-ubud-guide), [price breakdown](/blog/how-much-does-atv-cost-bali-ubud-2026), and [arena directions](/blog/bali-atv-all-new-bali-adventure-location-guide).
+Our answers live on the [ATV Ubud guide](/blog/bali-atv-tour-ubud-guide), [beginner first-ride guide](/blog/bali-atv-for-beginners-first-time-guide), [price breakdown](/blog/how-much-does-atv-cost-bali-ubud-2026), and [arena directions](/blog/bali-atv-all-new-bali-adventure-location-guide).
 
 ## Don’t Confuse Corporate Pin With the Track
 
@@ -240,7 +342,7 @@ Prices match our live [Bali ATV Adventure](/tours/bali-atv-adventure) page. Conf
 
 ## Why Pejeng / Ubud for ATV?
 
-Sedang (Abiansemal, Badung) sits southwest of central Ubud, so transfer times stay practical and the trails reach jungle paths, muddy tracks, and river crossings without a long haul north. Riders get a full safety briefing — **no prior ATV experience is required**. Our Google Business / corporate pin is in Banjar Kenderan; the ATV meet point is the activity base at **Jl. Raya Krasan, Sedang** (All New Bali Adventure), not the office pin.
+Sedang (Abiansemal, Badung) sits southwest of central Ubud, so transfer times stay practical and the trails reach jungle paths, muddy tracks, and river crossings without a long haul north. Riders get a full safety briefing — **no prior ATV experience is required**. First ride? Read the [Bali ATV for beginners guide](/blog/bali-atv-for-beginners-first-time-guide). Our Google Business / corporate pin is in Banjar Kenderan; the ATV meet point is the activity base at **Jl. Raya Krasan, Sedang** (All New Bali Adventure), not the office pin.
 
 ## What Is Included
 
@@ -310,7 +412,7 @@ Solo ATV is pure off-road adrenaline. Adding river tubing cools you down and add
 
 ## Who It Is For
 
-Beginners, couples, and small groups. Children can join when age-appropriate — tell us ages when booking so we assign Adult or Child rates correctly.
+Beginners, couples, and small groups. Children can join when age-appropriate — tell us ages when booking so we assign Adult or Child rates correctly. Never ridden a quad? Start with the [Bali ATV for beginners guide](/blog/bali-atv-for-beginners-first-time-guide).
 
 ## Book the Combo
 
@@ -1362,6 +1464,8 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
 All New Bali Adventure is the jungle ATV arena where Sekar Bali Activity runs all quad bike tours. This is not a roadside rental — it is a purpose-built off-road track through jungle paths, muddy stretches, and river crossings with professional guides and on-site gear fitting.
 
 ## What Happens When You Arrive
+
+No riding experience is required — the first-timer flow is in the [Bali ATV for beginners guide](/blog/bali-atv-for-beginners-first-time-guide).
 
 1. **Meet your guide** at the All New Bali Adventure base
 2. **Gear fitting** — boot shoes and helmet sized for you

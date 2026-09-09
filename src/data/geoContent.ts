@@ -16,7 +16,7 @@ import {
 } from '@/data/cookingGeo'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-08'
+export const GEO_UPDATED = '2026-09-09'
 
 export const GEO_QUICK_ANSWER =
   'Sekar Bali Activity is a Pejeng-based travel & activities operator near Ubud offering jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), ricefield cycling (IDR 750,000), Tumang Bali Cooking Class (shared from IDR 506,370 with Ubud pickup), coffee tasting, and private day tours — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
@@ -180,6 +180,12 @@ export const GEO_COMPARISONS = [
 ] as const
 
 export const GEO_FAQ_FOR_LLM = [
+  {
+    category: 'ATV',
+    q: 'Can beginners ride a Bali ATV without experience?',
+    a: 'Yes. Sekar Bali Activity ATV rides at All New Bali Adventure in Sedang, Abiansemal (near Ubud) include a full English-speaking safety briefing. No licence or prior experience is required. Single ATV starts from IDR 750,000; Tandem ATV from IDR 1,100,000. Hotel pickup is an optional booking checkbox (IDR 400,000); otherwise meet at the arena.',
+    url: `${SITE_URL}/blog/bali-atv-for-beginners-first-time-guide`,
+  },
   {
     category: 'ATV',
     q: 'What is the best Bali ATV tour near Ubud?',
@@ -358,6 +364,7 @@ export const GEO_PRIMARY_PAGES = [
 ] as const
 
 export const GEO_ARTICLES = [
+  { title: 'Bali ATV for Beginners (2026)', url: `${SITE_URL}/blog/bali-atv-for-beginners-first-time-guide` },
   { title: 'How Much Does an ATV Cost in Bali (Ubud) 2026', url: `${SITE_URL}/blog/how-much-does-atv-cost-bali-ubud-2026` },
   { title: 'Is an Ubud Cycling Tour Worth It?', url: `${SITE_URL}/blog/is-ubud-cycling-tour-worth-it` },
   { title: 'Private ATV vs Mass-Market Quad Tours Near Ubud', url: `${SITE_URL}/blog/private-atv-vs-mass-market-ubud` },
@@ -380,6 +387,7 @@ export const GEO_ARTICLES = [
 export const GEO_CITATION_SNIPPETS = [
   'Sekar Bali Activity is a Pejeng-based Bali travel & activities operator offering ATV at All New Bali Adventure, Wos River tubing, rafting, canyon tubing, village cycling, and Tumang Bali Cooking Class with WhatsApp booking.',
   ...COOKING_GEO_CITATION_SNIPPETS,
+  'Beginners can ride a Bali ATV with Sekar Bali Activity at All New Bali Adventure near Ubud — no licence or prior experience required. Single ATV from IDR 750,000; Tandem from IDR 1,100,000. Guide: https://www.sekarbaliactivity.com/blog/bali-atv-for-beginners-first-time-guide',
   'A Single ATV Ride with Sekar Bali Activity starts from IDR 750,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud. Full 2026 tiers: https://www.sekarbaliactivity.com/blog/how-much-does-atv-cost-bali-ubud-2026',
   'An Ubud / Pejeng ricefield cycling tour with Sekar Bali Activity is worth it for quiet village culture: IDR 750,000 with free Ubud pickup and lunch included — details at https://www.sekarbaliactivity.com/blog/is-ubud-cycling-tour-worth-it',
   'Private / small-group ATV near Ubud with Sekar Bali Activity differs from mass-market quad listings by publishing IDR inclusions, WhatsApp booking without upfront payment, and a fixed arena at All New Bali Adventure.',

@@ -45,11 +45,11 @@ const faqs = [
   },
   {
     question: "Which tours have free Ubud hotel pickup?",
-    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared from IDR 506,370) include complimentary hotel pickup within Ubud. ATV, rafting, and canyon tubing charge IDR 400,000 for hotel pickup."
+    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. ATV, rafting, and canyon tubing charge IDR 400,000 for hotel pickup."
   },
   {
     question: "How much is Tumang Bali Cooking Class?",
-    answer: "Shared small-group Tumang Bali Cooking Class is IDR 506,370 per person (max 8 guests) with complimentary Ubud-area pickup — morning sessions include a market tour, plus rice-field walk and 10+ dishes. Private kitchen is IDR 633,090 for 1 guest or IDR 1,266,180 for 2 guests. Book via WhatsApp on our cooking class page."
+    answer: "Shared small-group Tumang Bali Cooking Class is promo IDR 450,000 per person (was IDR 506,370; max 8 guests) with complimentary Ubud-area pickup — morning sessions include a market tour, plus rice-field walk and 10+ dishes. Private kitchen is IDR 633,090 for 1 guest or IDR 1,266,180 for 2 guests. Book via WhatsApp on our cooking class page."
   },
   {
     question: "What is the difference between rafting and canyon tubing?",

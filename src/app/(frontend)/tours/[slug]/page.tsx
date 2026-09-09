@@ -17,6 +17,10 @@ import {
 import { SITE_NAME, SITE_URL } from "@/lib/seo"
 import { formatIdr } from "@/lib/whatsapp"
 import {
+  COOKING_CLASS_PRICE_IDR,
+  COOKING_CLASS_STANDARD_PRICE_IDR,
+} from "@/data/cultureSales"
+import {
   COOKING_GEO_ENTITY,
   COOKING_GEO_FAQS,
   COOKING_GEO_TLDR,
@@ -351,9 +355,18 @@ export default async function TourPage({ params }: Props) {
                     <Clock className="w-4 h-4 text-brand-green" />
                     {tour.duration}
                   </span>
-                  <span className="text-sm font-bold text-brand-green">
-                    From {formatIdr(tour.basePrice)}
-                  </span>
+                  {cooking ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
+                        {formatIdr(COOKING_CLASS_STANDARD_PRICE_IDR)}
+                      </span>
+                      Promo {formatIdr(COOKING_CLASS_PRICE_IDR)} / person
+                    </span>
+                  ) : (
+                    <span className="text-sm font-bold text-brand-green">
+                      From {formatIdr(tour.basePrice)}
+                    </span>
+                  )}
                   {cooking ? (
                     <span className="text-xs text-brand-green-light">
                       Updated {COOKING_GEO_UPDATED || GEO_UPDATED}

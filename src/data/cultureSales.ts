@@ -1,8 +1,11 @@
 import { getListPrice } from '@/lib/pricing'
 import { buildWhatsAppBookingUrl, formatIdr } from '@/lib/whatsapp'
 
-/** Tumang Bali Cooking Class — shared small-group rate (matches tumangbaliclass.com). */
-export const COOKING_CLASS_PRICE_IDR = 506_370
+/** Shared small-group list / compare-at rate (matches tumangbaliclass.com). */
+export const COOKING_CLASS_STANDARD_PRICE_IDR = 506_370
+
+/** Active shared-class promo rate — IDR 450k / person. */
+export const COOKING_CLASS_PRICE_IDR = 450_000
 
 /** Private kitchen — 1 guest */
 export const COOKING_CLASS_PRIVATE_SOLO_IDR = 633_090
@@ -16,7 +19,7 @@ export const COOKING_CLASS_SALES = {
   shortName: 'Tumang Cooking Class',
   tagline: 'Market-to-table village kitchen',
   description:
-    'Family-run Tumang Bali cooking class near Ubud with Chef Wayan Sudiana — morning market tour (AM session), rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Shared from IDR 506,370. TripAdvisor Traveler’s Choice 2026.',
+    'Family-run Tumang Bali cooking class near Ubud with Chef Wayan Sudiana — morning market tour (AM session), rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo IDR 450,000 / person (was IDR 506,370). TripAdvisor Traveler’s Choice 2026.',
   highlights: [
     '10+ dishes · Base Genep, sate lilit, sambal matah & more',
     'Morning market tour (AM class) + rice-field walk',
@@ -24,12 +27,14 @@ export const COOKING_CLASS_SALES = {
     'Complimentary hotel pickup in the Ubud area',
   ],
   duration: '3–4 hours',
-  image: '/images/cooking/stovetop-class.jpg',
-  imageAlt: 'Guests cooking at traditional stovetops in Tumang Bali Cooking Class',
+  image: '/images/cooking/satay-class.jpg',
+  imageAlt:
+    'Guests preparing sate skewers during Tumang Bali Cooking Class near Ubud',
   tourSlug: 'balinese-cooking-class',
   itineraryHref: '/tours/balinese-cooking-class',
   externalUrl: 'https://tumangbaliclass.com/balinese-cooking-class-ubud',
   priceIdr: COOKING_CLASS_PRICE_IDR,
+  standardPriceIdr: COOKING_CLASS_STANDARD_PRICE_IDR,
   privateSoloIdr: COOKING_CLASS_PRIVATE_SOLO_IDR,
 } as const
 
@@ -61,7 +66,7 @@ export function getCyclingCookingCombo(): CultureComboOffer {
     duration: 'Full day',
     timeline: [
       `Day: Ubud Ricefield Cycling Tour — ${formatIdr(cyclingPriceIdr)} (free Ubud pickup + lunch)`,
-      `Afternoon: Tumang Bali Cooking Class — ${formatIdr(cookingPriceIdr)} (shared · Ubud pickup included)`,
+      `Afternoon: Tumang Bali Cooking Class — ${formatIdr(cookingPriceIdr)} promo / person (shared · Ubud pickup included)`,
     ],
     cyclingPriceIdr,
     cookingPriceIdr,
@@ -77,11 +82,11 @@ export function buildCookingClassWhatsAppUrl(guestName = 'Guest') {
     guestName,
     activity: COOKING_CLASS_SALES.name,
     activityOption:
-      'Shared class · choose morning (market tour) or afternoon · max 8 guests · Ubud pickup included',
+      'Shared class · choose morning (market tour) or afternoon · max 8 guests · Ubud pickup included · promo IDR 450k / person',
     time: '08:30',
     price: COOKING_CLASS_SALES.priceIdr,
     notes:
-      'Please confirm Tumang Bali Cooking Class seats (shared IDR 506,370 or private IDR 633,090 for 1 guest). Morning includes market tour. Happy to pair with ricefield cycling the same day.',
+      'Please confirm Tumang Bali Cooking Class seats (shared promo IDR 450,000 / person, was IDR 506,370; or private IDR 633,090 for 1 guest). Morning includes market tour. Happy to pair with ricefield cycling the same day.',
   })
 }
 

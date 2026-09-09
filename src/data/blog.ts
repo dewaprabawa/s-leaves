@@ -756,7 +756,7 @@ These habits matter as much as the sarong when you cycle past village temples on
 Temple mornings pair well with slow village time:
 
 - **Ride the paddies:** [Ubud ricefield cycling tour](/tours/ubud-ricefield-cycling-tour) — lunch included, free Ubud hotel pickup, small group on Subak paths (not the Tegallalang swing strip).  
-- **Cook:** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) — market tour (AM), 10+ dishes, shared from IDR 506,370 with Ubud pickup.  
+- **Cook:** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) — market tour (AM), 10+ dishes, shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup.  
 - **Need mud and engines instead?** [Private ATV near Ubud](/tours/bali-atv-adventure) at All New Bali Adventure — still book via WhatsApp with name, date, and hotel.
 
 Coming from the airport first? Skim our [DPS to Ubud transfer guide](/blog/bali-airport-transfer-guide-dps-to-ubud), then plan temple clothes before your first courtyard stop.
@@ -855,15 +855,15 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
     slug: "inside-balinese-cooking-class-pejeng",
     title: "Inside Tumang Bali Cooking Class Near Ubud",
     excerpt:
-      "Market tour, rice-field walk, Base Genep, and 10+ dishes — what happens in Tumang Bali Cooking Class (shared from IDR 506,370).",
+      "Market tour, rice-field walk, Base Genep, and 10+ dishes — what happens in Tumang Bali Cooking Class (promo IDR 450,000 / person; was IDR 506,370).",
     publishedAt: "2026-09-08",
     author: "Sekar Bali Activity Team",
     image: "/images/cooking/stovetop-class.jpg",
     content: `
-**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Sudiana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Shared from **IDR 506,370**; private from **IDR 633,090**. TripAdvisor Traveler’s Choice 2026.
+**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Sudiana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo **IDR 450,000** / person (was IDR 506,370); private from **IDR 633,090**. TripAdvisor Traveler’s Choice 2026.
 
 > **Key Takeaways**
-> - Shared class: **IDR 506,370** / person · max **8** guests · Ubud pickup included  
+> - Shared class promo: **IDR 450,000** / person · max **8** guests · Ubud pickup included  
 > - Private: **IDR 633,090** (1) · **IDR 1,266,180** (2)  
 > - Morning = market tour + kitchen; afternoon pairs well with Pejeng ricefield cycling  
 > - Fully hands-on stations — not a hotel demo  
@@ -899,7 +899,7 @@ After cooking, the group sits family-style and eats what everyone prepared — c
 
 | Option | Price | Notes |
 | --- | --- | --- |
-| Shared morning / afternoon | **IDR 506,370** / person | Max 8 · Ubud pickup |
+| Shared morning / afternoon | **IDR 450,000** promo / person | Max 8 · Ubud pickup |
 | Private (1 guest) | **IDR 633,090** | Exclusive kitchen |
 | Private (2 guests) | **IDR 1,266,180** | Total for two |
 
@@ -984,7 +984,7 @@ Hand-pounding with a stone mortar (*ulekan*) crushes the fibers gently, releasin
 
 Nothing matches the experience of smelling Base Genep as it sizzles in coconut oil over an open flame in a traditional outdoor kitchen. 
 
-Book your seat at [Tumang Bali Cooking Class](/tours/balinese-cooking-class) near Ubud — make Base Genep from scratch and cook 10+ dishes (shared from IDR 506,370 with Ubud pickup). Add [ricefield cycling](/tours/ubud-ricefield-cycling-tour) earlier the same day, or open [Book](/book) to send dates on WhatsApp.
+Book your seat at [Tumang Bali Cooking Class](/tours/balinese-cooking-class) near Ubud — make Base Genep from scratch and cook 10+ dishes (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup). Add [ricefield cycling](/tours/ubud-ricefield-cycling-tour) earlier the same day, or open [Book](/book) to send dates on WhatsApp.
 `
   },
   {
@@ -1026,7 +1026,7 @@ Once you settle in Ubud / Pejeng, most guests book:
 
 - [Bali ATV Adventure](/tours/bali-atv-adventure) at All New Bali Adventure (from IDR 750K)
 - [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) with free Ubud hotel pickup (IDR 750K)
-- [Tumang Bali Cooking Class](/tours/balinese-cooking-class) — shared from IDR 506,370 with Ubud pickup
+- [Tumang Bali Cooking Class](/tours/balinese-cooking-class) — shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup
 
 Or open [Book](/book) and send the WhatsApp form — no upfront payment to inquire.
 
@@ -1289,7 +1289,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000**, **Canyon Tubing IDR 359,000**, **Ubud Ricefield Cycling Tour IDR 750,000**, and **Tumang Bali Cooking Class from IDR 506,370** (shared, Ubud pickup included).
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000**, **Canyon Tubing IDR 359,000**, **Ubud Ricefield Cycling Tour IDR 750,000**, and **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included).
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
@@ -1309,7 +1309,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Whitewater Rafting | IDR 500,000 | person | [Whitewater Rafting](/tours/whitewater-rafting) |
 | Canyon Tubing | IDR 359,000 | person | [Canyon Tubing](/tours/canyon-tubing) |
 | Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
-| Tumang Bali Cooking Class | IDR 506,370 | person shared | [Cooking Class](/tours/balinese-cooking-class) |
+| Tumang Bali Cooking Class | IDR 450,000 promo | person shared | [Cooking Class](/tours/balinese-cooking-class) |
 
 ## Pickup Policy
 
@@ -1398,7 +1398,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (IDR 750,000) and **Tumang Bali Cooking Class** (shared from IDR 506,370) include complimentary hotel pickup within Ubud. ATV, whitewater rafting, and canyon tubing do not — IDR 400,000 hotel pickup charge applies.
+**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (IDR 750,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. ATV, whitewater rafting, and canyon tubing do not — IDR 400,000 hotel pickup charge applies.
 
 > **Key Takeaways**
 > - **Free Ubud pickup:** Ricefield cycling + Tumang Bali Cooking Class
@@ -1500,17 +1500,17 @@ Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture 
     slug: 'cycling-cooking-class-ubud-full-day-itinerary',
     title: 'Cycling + Tumang Cooking Class Day in Ubud',
     excerpt:
-      'Pejeng ricefield cycling (IDR 750K) plus Tumang Bali Cooking Class (from IDR 506,370) — full-day timeline, inclusions, and WhatsApp booking.',
+      'Pejeng ricefield cycling (IDR 750K) plus Tumang Bali Cooking Class (promo from IDR 450,000) — full-day timeline, inclusions, and WhatsApp booking.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/cycling/rice-field-bikes.jpg',
     content: `
-**What is the best cycling and cooking class combo in Ubud?** Pair Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** (IDR 750,000 — free Ubud hotel pickup, lunch included) with **Tumang Bali Cooking Class** (shared from IDR 506,370 — market tour on morning sessions, rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup) for a full cultural day near Ubud.
+**What is the best cycling and cooking class combo in Ubud?** Pair Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** (IDR 750,000 — free Ubud hotel pickup, lunch included) with **Tumang Bali Cooking Class** (shared promo IDR 450,000 / person (was IDR 506,370) — market tour on morning sessions, rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup) for a full cultural day near Ubud.
 
 > **Key Takeaways**
 > - Competitor-style combo day: **rice paddy cycling** first, **Tumang cooking class** in the afternoon
 > - Cycling: **IDR 750,000** / person · free Ubud pickup · bike, helmet, guide, lunch, insurance
-> - Tumang cooking: **IDR 506,370** shared / person · Ubud pickup included · 10+ dishes · max 8 guests
+> - Tumang cooking: **IDR 450,000** promo / person · Ubud pickup included · 10+ dishes · max 8 guests
 > - Private Tumang kitchen: **IDR 633,090** (1 guest) or **IDR 1,266,180** (2 guests)
 > - Route is **gentle Pejeng village / countryside cycling** — not a crowded Tegallalang photo stop
 > - Book both on WhatsApp in one message for the same date — no upfront payment to inquire
@@ -1560,7 +1560,7 @@ Prefer a morning Tumang class with market tour? Book cooking first, then a light
 | Experience | From price | Notes |
 | --- | --- | --- |
 | Ubud Ricefield Cycling Tour | **IDR 750,000** / person | Tier rates for 2+ and 3+ groups |
-| Tumang Bali Cooking Class (shared) | **IDR 506,370** / person | Ubud pickup included |
+| Tumang Bali Cooking Class (shared) | **IDR 450,000** promo / person | Ubud pickup included |
 | Tumang private (1 guest) | **IDR 633,090** | Exclusive kitchen |
 | Same-day combo (both) | Ask via WhatsApp | We confirm availability for one date |
 

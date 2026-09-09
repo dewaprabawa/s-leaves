@@ -11,7 +11,7 @@ export const SITE_NAME = 'Sekar Bali Activity'
 /** SERP title target: brand + offer, ≤60 characters */
 export const DEFAULT_TITLE = 'Sekar Bali Activity | Cooking Class & Cycling Ubud'
 export const DEFAULT_DESCRIPTION =
-  'Book Tumang Bali Cooking Class from IDR 506K and Pejeng ricefield cycling from IDR 750K near Ubud — free hotel pickup on both. Also ATV, rafting & day tours. Clear IDR. WhatsApp booking.'
+  'Book Tumang Bali Cooking Class promo from IDR 450K / person and Pejeng ricefield cycling from IDR 750K near Ubud — free hotel pickup on both. Also ATV, rafting & day tours. Clear IDR. WhatsApp booking.'
 
 /** Social previews (og:title ≤60, og:description ≤160) */
 export const OG_TITLE = 'Cooking Class & Cycling Ubud | Sekar Bali'

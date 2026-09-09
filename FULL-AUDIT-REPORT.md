@@ -1,156 +1,152 @@
-# SEO + GEO Audit — Cycling & Combo Tours
+# Full SEO + GEO Audit Report
 
-**Audit date:** 2026-09-07  
-**Scope:** Single-cluster / multi-URL — ricefield cycling money page, cooking class money page, cycling↔cooking combo content, adventure combo UX on `/book`, and supporting spokes  
-**Primary URLs:**
-- https://www.sekarbaliactivity.com/tours/ubud-ricefield-cycling-tour
-- https://www.sekarbaliactivity.com/tours/balinese-cooking-class
-- https://www.sekarbaliactivity.com/blog/cycling-cooking-class-ubud-full-day-itinerary
-- https://www.sekarbaliactivity.com/book (`#combos`)
-**Business type:** Local adventure / culture tour operator (Pejeng · Ubud)  
-**Product context:** `.agents/product-marketing.md`  
-**Evidence:** Live HTML fetch/parse, GSC export `gsc-export-2026-08-02_2026-09-02.json`, robots/llms/social/broken-links/redirects/citation/eeat/readability scripts  
-**Score confidence:** Medium (GSC Confirmed; PageSpeed rate-limited — CWV Unknown)
+- **Site:** https://www.sekarbaliactivity.com/
+- **Scope:** Full-site technical + on-page + schema + GEO/AI search readiness (homepage + money pages + machine-readable surfaces)
+- **Business type:** Local travel / activities operator (ATV, rafting, tubing, cycling, cooking class, day tours near Ubud)
+- **Generated:** 2026-09-09
+- **Overall SEO Health Score:** **84 / 100** (band: Strong)
+- **Score confidence:** Medium — PageSpeed/CWV incomplete (API rate limit); entity script false-negatives corrected manually
 
----
+## Audit Summary
 
-## A) Audit Summary
+Sekar Bali Activity already has an unusually strong AI/GEO stack for a local operator (`llms.txt` 100/100, `llms-full.txt`, `pricing.md`, AI crawlers allowed, Question/answer blocks, TouristTrip + Offer schema). Traditional SEO foundations (HTTPS, security headers, social meta, sitemap, money-page titles) are also solid.
 
-| Metric | Value |
-|--------|-------|
-| Overall rating (cluster) | **Needs Improvement (58/100)** |
-| On-page / technical for cycling money page | Strong |
-| Commercial Search visibility | Critical weakness |
-| GEO / AI discovery artifacts | Strong |
-| Combo product discoverability (book + SERP) | Weak vs competitors |
-
-### Category scores (cycling + combo cluster)
-
-| Category | Weight | Score | Notes |
-|----------|-------:|------:|-------|
-| Technical SEO | 25% | 86 | Indexable, canonical, 308 legacy slug, 0 broken links, AI bots allowed |
-| Content Quality | 20% | 48 | Money pages OK; spokes thin (402–436w); Pejeng vs Tegallalang has **no H2s** |
-| On-Page SEO | 15% | 72 | Titles/metas/H1 aligned on hubs; book page under-represents cooking + culture combo |
-| Schema / Structured Data | 15% | 84 | `TouristTrip`+`Offer`, `BlogPosting`, LocalBusiness; Question/Answer (not FAQPage) |
-| Performance (CWV) | 10% | — | **Unknown** (PSI rate-limited) — excluded |
-| Image Optimization | 10% | 92 | 0 missing alt on audited pages |
-| AI Search Readiness (GEO) | 5% | 88 | llms.txt 100; combo FAQs + pricing.md; mid citability (60–63) |
-| **Weighted overall** | | **58** | Commercial GSC + thin spokes + combo UX gap dominate |
+The biggest gaps are **entity consistency after the Sedang activity-base move**, **weak citation/E-E-A-T source signals**, **orphan-heavy blog internal linking**, and an **unmerged / still-live fantasy T-rex hero** that undermines trust and brand perception.
 
 ### Top 3 issues
-1. **Cycling / cooking / combo earn almost no Search clicks** — cycling tour 2 imp / 0 clk / pos **19.5**; cooking 1/0; Pejeng vs Tegallalang 9/0; legacy `/tours/pejeng-cycling-tour` still 7 imp at pos **7.86** (better than canonical).
-2. **Culture combo is content-only, not a bookable featured product** — `/book` featured combos are ATV/tubing/rafting only; cooking class is not a primary book section; cycling is excluded from mixable discount logic.
-3. **Thin / weakly structured spokes** — guide 436w, worth-it 424w, Pejeng vs Tegallalang 402w with **zero H2s** (hurts SEO depth + AI passage extraction).
+1. GEO entity conflict: `llms.txt` opens with “Pejeng-based…” while NAP/schema/activity base correctly say Sedang / Abiansemal (`Confirmed`)
+2. Live homepage hero is still the old portrait banner (896×1195) with photoreal T-rex — trust / brand / LCP risk (`Confirmed`)
+3. Citation readiness 45/100 — many factual IDR claims, almost no high-trust external sources (`Confirmed`)
 
 ### Top 3 opportunities
-1. **Promote cycling + cooking as a featured culture combo** on `/book` + homepage (parity with ATV+tubing), with transparent IDR sum and WhatsApp prefill.
-2. **Deepen 3 spokes only** (combo itinerary, Pejeng vs Tegallalang with H2s, worth-it) with operator-first facts — do not mass-publish more Bali blogs.
-3. **Consolidate legacy equity** — keep 308; request GSC inspection on canonical; ensure no remaining internal links to `/tours/pejeng-cycling-tour`.
+1. Align all GEO one-liners to Sedang activity base + Pejeng cycling geography (quick win)
+2. Strengthen internal links from homepage/tours → blog money posts; reduce orphan blogs
+3. Expand `sameAs` (TripAdvisor / Google Business / X if real) and add first-hand host bylines on key guides
 
 ---
 
-## B) Findings Table
+## Score Card (LLM-adjusted)
 
-| Area | Severity | Confidence | Finding | Evidence | Fix |
-|------|----------|------------|---------|----------|-----|
-| GSC / Commercial | 🔴 Critical | Confirmed | Cycling money page nearly invisible | GSC Pages: `/tours/ubud-ricefield-cycling-tour` **2 imp / 0 clk / pos 19.5** | Route equity from spokes + GBP; strengthen unique Pejeng SERP title/CTR; build mid-tail (“rice paddy cycling Ubud”, “free hotel pickup cycling”) |
-| GSC / Commercial | 🔴 Critical | Confirmed | Cooking + combo cluster also ~0 clicks | Cooking tour **1/0**; Pejeng vs **9/0**; combo blog not in top-37 pages | Treat combo blog as commercial hub: expand + internal links from high-imp blogs; feature on `/book` |
-| Architecture | ⚠️ Warning | Confirmed | Legacy slug still impresses more than canonical | `/tours/pejeng-cycling-tour` **7 imp / pos 7.86** → **308** → ricefield URL (`redirect_checker`, `next.config.ts`) | Keep permanent redirect; GSC URL inspection on canonical; remove any leftover refs |
-| Conversion IA | ⚠️ Warning | Confirmed | Featured combos omit cycling + cooking | `/book` H2 “Popular activity combos” lists ATV+tubing/rafting only; copy: “Mix ATV, canyon tubing, and rafting”; `FEATURED_COMBOS` + `Exclude<ActivityId,'cycling'>` in `combos.ts` | Add “Cycling + Cooking Class” featured card; allow culture-day WhatsApp prefill (even if discount rules stay adventure-only) |
-| Conversion IA | ⚠️ Warning | Confirmed | Cooking class under-represented on `/book` | Book H2s: ATV×2, rafting, tubing, cycling — **no cooking H2**; only footer/blog links | Add cooking as bookable activity section with price IDR 400K |
-| Content | ⚠️ Warning | Confirmed | Comparison spoke has no H2 hierarchy | `/blog/pejeng-rice-terrace-cycling-vs-tegallalang`: **h2_count=0**, 402 words | Add H2s matching queries (Pejeng vs Tegallalang, who should choose which, pickup/lunch); expand to ~900–1,200 words with first-hand Pejeng detail |
-| Content | ⚠️ Warning | Confirmed | Cycling spokes below depth gate | Guide **436w**; worth-it **424w**; combo itinerary **677w** | Expand with itinerary specificity, seasonal Subak notes, real pickup rules — no keyword stuffing |
-| GEO / Citability | ⚠️ Warning | Confirmed | Mid citation readiness on hubs | `citation_readiness`: cycling **63**, combo blog **60**; E-E-A-T tour **43** (no credentials/reviews) | Add review quotes / guest outcomes; keep dated IDR facts; avoid FAQPage schema |
-| On-Page | ✅ Pass | Confirmed | Cycling money page title/meta/H1/canonical solid | Title 54 chars; meta 131; H1 “Ubud Ricefield & Village Cycling Tour”; self-canonical; index,follow | Maintain; optional CTR test: lead with “Pejeng” or “lunch + free pickup” |
-| On-Page | ✅ Pass | Confirmed | Combo blog targets competitor query pattern | Title/H1 “Cycling + Cooking Class Day in Ubud”; H2s for itinerary, inclusions, prices, WhatsApp; 4 tables | Keep; align title toward “Cycling & Cooking Class in Ubud” if CTR stays weak |
-| Schema | ✅ Pass | Confirmed | TouristTrip + Offer + itinerary present | Live JSON-LD Offer price **475000 IDR**, inclusions string, 8-step itinerary | Optional: add `sku`; do **not** add FAQPage/HowTo |
-| GEO | ✅ Pass | Confirmed | AI crawler + llms corpus cover cycling/combo | robots: GPTBot/ClaudeBot/PerplexityBot/Google-Extended allowed; llms.txt quality **100**; GEO FAQs include combo Qs; `/pricing.md` lists cycling + cooking | Keep prices synced with `tours.ts` / `pricing.ts` |
-| Images / links | ✅ Pass | Confirmed | Alts complete; no broken links | cycling `missing_alt=0`; broken_links 0/30 and 0/35 | Maintain |
-| Social | ℹ️ Info | Confirmed | OG/Twitter present; optional tags missing | social_meta **69/100** (no og:site_name / image dimensions) | Add width/height 1200×630 if assets allow |
-| Code hygiene | ⚠️ Warning | Confirmed | Placeholder YouTube IDs in tour data | `tours.ts`: `youtubeVideoId: "dQw4w9WgXcQ"` on cycling, luwak, cooking | Remove placeholders or replace with real embeds — never ship rickroll IDs |
-| CWV | ℹ️ Info | Hypothesis | Mobile CWV unmeasured this run | `pagespeed.py` rate-limited twice | Re-run with `PAGESPEED_API_KEY` |
+| Category | Weight | Score | Notes |
+| --- | ---: | ---: | --- |
+| Technical SEO | 25% | 90 | Security 100, robots/AI crawlers 100, redirects clean, 0 broken on homepage crawl sample |
+| Content Quality | 20% | 78 | Strong pricing transparency & guides; E-E-A-T 59; citation 45 |
+| On-Page SEO | 15% | 88 | Titles/metas/H1s strong on home + ATV + cooking |
+| Schema / Structured Data | 15% | 86 | TravelAgency+LocalBusiness, TouristTrip/Product Offers, Question blocks — **not** missing Organization |
+| Performance (CWV) | 10% | — | **Unknown** (PageSpeed rate-limited) |
+| Images | 10% | 72 | Homepage 0 missing alt; live hero still old T-rex portrait asset |
+| AI Search / GEO | 5% | 88 | llms.txt 100, answer blocks 100; NAP conflict in opening blurb |
+
+**Weighted estimate (excluding CWV):** ~84/100
 
 ---
 
-## C) Detailed Analysis
+## Findings Table
 
-### 1) Cycling money page (`/tours/ubud-ricefield-cycling-tour`)
-
-**What works**
-- Keyword-aligned `seoTitle` / `seoDescription` (rice paddy, Pejeng, lunch, free pickup, IDR 475K, WhatsApp).
-- Clear H1 + H3s for rice paddy, village culture, lunch; 8 visible FAQs including cooking-combo question.
-- `TouristTrip` + `Offer` with itinerary ListItems; LocalBusiness entity graph.
-- Internal links to cooking tour, combo blog, `/book`, WhatsApp.
-- Gallery alts descriptive (Pejeng / rice paddy / lunch).
-
-**What fails commercially**
-- GSC: **2 impressions, 0 clicks, average position ~19.5** in the Aug 2–Sep 2 window — page is optimized but not yet winning retrieval/CTR.
-- Legacy `/tours/pejeng-cycling-tour` still surfaces in GSC with better position while 308ing — equity not fully consolidated.
-- Tour `reviews: []` and E-E-A-T checker score **43** — weak trust vs aggregators.
-
-**Readability:** ~601–898 words (script vs main extract); Flesch ~54 — acceptable for travel commercial pages.
-
-### 2) Combo tour (cycling + cooking)
-
-**Product truth (from marketing context + site)**  
-Day = Ricefield Cycling (IDR 475K, free Ubud pickup, lunch). Evening = Dinner Cooking Class (IDR 400K, 17:30–20:30). Booked via WhatsApp — not a single SKU in `FEATURED_COMBOS`.
-
-**Combo blog** (`/blog/cycling-cooking-class-ubud-full-day-itinerary`)
-- Strong GEO structure: answer-first open, Key Takeaways, **4 tables**, query-matched H2s, links to both money URLs (5 each).
-- Meta ≤160; social OG type `article`.
-- Gaps: ~677 words (competitors often ship full package pages); no dedicated `/tours/...` combo URL; “Same-day combo (both) · Ask via WhatsApp” without a fixed package price can lose agent/buyer comparison clarity vs USD 90–130 competitor packages.
-
-**Book / mix logic gap**
-- Adventure combos (ATV + tubing/rafting) get homepage/book cards + 10–12% mix discount.
-- Cycling is **explicitly excluded** from mixable activities (`Exclude<ActivityId, 'cycling'>`).
-- Cooking is not in the adventure mix engine at all.
-- Result: the highest-intent culture query competitors rank for (“cycling and cooking class Ubud”) has a blog, not a first-class bookable combo surface.
-
-### 3) Supporting spokes
-
-| URL | Words | Structure | GSC (window) | Role |
-|-----|------:|-----------|--------------|------|
-| `/blog/cycling-cooking-class-ubud-full-day-itinerary` | 677 | Strong H2 + tables | Not in top pages | Commercial combo hub |
-| `/blog/ubud-ricefield-cycling-tour-guide-2026` | 436 | H2s OK | — | Thin guide |
-| `/blog/is-ubud-cycling-tour-worth-it` | 424 | — | — | Thin decision page |
-| `/blog/pejeng-rice-terrace-cycling-vs-tegallalang` | 402 | **No H2s** | 9 imp / 0 clk / pos 9.6 | Best organic foothold — under-built |
-| `/blog/inside-balinese-cooking-class-pejeng` | — | — | 6 imp / 0 clk | Cooking spoke |
-
-Homepage links cycling tour (4) and combo blog (4) but **0** links to the 2026 cycling guide — missed hub→spoke reinforcement.
-
-### 4) GEO / AI search readiness
-
-| Check | Status |
-|-------|--------|
-| AI bots (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, …) | Explicitly allowed |
-| `llms.txt` / `llms-full.txt` | 200; quality 100; cycling + cooking + combo FAQs present |
-| `/pricing.md` | Present; lists cycling + cooking |
-| Extractable FAQ / comparison blocks | Homepage GEO + combo blog tables |
-| FAQPage schema | Not used (correct for commercial — rich results gone / restricted) |
-| Brand third-party (`sameAs`) | Instagram + Facebook only — weak vs TripAdvisor/YouTube |
-| Live AI citation share | **Not measured** this run (readiness ≠ observed citations) |
-
-**GEO score (cluster): ~82/100 readiness** — discovery files excellent; citability limited by thin spokes, missing reviews, and no featured culture-combo entity for buying agents.
-
-### 5) Adventure combos (ATV + water) — adjacent note
-
-Featured ATV/tubing/rafting combos on `/book` are clearer for conversion than the culture combo, and ATV pages historically out-impress cycling. For this audit’s scope, treat adventure combos as **already productized**; the gap is the **cycling + cooking** culture day competitors sell as a named package.
+| Severity | Confidence | Area | Finding | Evidence | Impact | Fix |
+| --- | --- | --- | --- | --- | --- | --- |
+| Warning | Confirmed | GEO / NAP | Opening GEO blurb still says “Pejeng-based operator” while activity base is Sedang | `llms.txt` line 3 vs Entity facts activity base `Jl. Raya Krasan…80352`; `src/data/geoContent.ts` GEO one-liner | AI engines may cite the wrong village for ATV self-meet | Rewrite GEO one-liners to “Ubud-area operator · activity base Sedang (Abiansemal); Pejeng cycling routes” |
+| Warning | Confirmed | Brand / Images | Live hero banner still portrait T-rex composite | Live `hero-banner.jpg` = 896×1195, 173570 bytes (old asset). PR #72 not on production | Hurts trust, CTR, and brand; wrong visual for Bali ATV | Merge/deploy hero-without-trex + landscape crop |
+| Warning | Confirmed | GEO / Citations | Factual claims outnumber source signals (score 45) | `citation_readiness.py`: 20 claims, 0 trusted external domains, 5 external links | Lower citability in ChatGPT/Perplexity vs aggregators | Link TripAdvisor Traveler’s Choice claim; cite official tourism/Subak sources on culture posts |
+| Warning | Confirmed | Internal links | Many blog URLs look underlinked / orphan-like | `internal_links` script: 24 potential orphans ≤1 inbound | Crawl depth + topical authority diluted | Add contextual links from tour pages + homepage guides strip to money blogs |
+| Warning | Likely | E-E-A-T | Thin first-hand / host identity on commercial pages | `eeat_signal_checker.py` score 59; no editorial policy; authors = brand name only | Harder to win AI Overview + long-tail trust vs named chef/host pages | Add named host/chef bios (already strong on Tumang); author boxes on ATV/cycling guides |
+| Info | Confirmed | Entity KG | No Wikipedia/Wikidata; `sameAs` only IG + Facebook | `entity_checker.py` + homepage JSON-LD `sameAs` | Weaker Knowledge Graph / AI brand graph | Add real profiles only (GMB, TripAdvisor, X). Do **not** create Wikipedia for SEO |
+| Info | Confirmed | Schema script false positive | Auto-report marked “No Organization” as Critical | Homepage JSON-LD `@type: ["TravelAgency","LocalBusiness"]` with address/geo/sameAs | Misleading Critical in machine report | Ignore; keep multi-type LocalBusiness (correct for GBP NAP) |
+| Info | Confirmed | Schema | TouristTrip Offers present; cooking uses AggregateOffer | ATV Offer price 750000 IDR; cooking AggregateOffer 506370–1266180 | Good rich-result eligibility for products/trips | Add `itinerary` / duration where accurate; keep FAQPage **out** (commercial-safe Question blocks already used) |
+| Pass | Confirmed | AI crawlability | All major AI bots allowed; sitemap referenced | `robots.txt` GPTBot/ClaudeBot/PerplexityBot/Google-Extended Allow; Sitemap present | Agents can train/cite | Maintain |
+| Pass | Confirmed | GEO surfaces | `llms.txt` 100/100; `llms-full.txt` + `pricing.md` + `.well-known/llms.txt` | `llms_txt_checker.py` Quality 100; HTTP 200 all companions | Strong agent readiness | Keep dates/prices in sync with site |
+| Pass | Confirmed | Answer extractability | Homepage answer-block score 100 (8 direct answers) | `answer_block_scanner.py` | High passage citability | Keep 40–60 word lead answers on money FAQs |
+| Pass | Confirmed | Security | Security headers 100/100 | HSTS preload, CSP, XFO, nosniff, Referrer-Policy, Permissions-Policy | Trust + HTTPS hygiene | Maintain |
+| Pass | Confirmed | Social meta | OG/Twitter 92/100 | All required OG tags; twitter:creator optional missing | Share previews solid | Optional: add twitter:creator |
+| Pass | Confirmed | Sitemap | 52 indexable URLs incl. 8 tours + 32 blogs + AI files | Live sitemap.xml HTTP 200 | Coverage healthy | Ensure lastmod updates on content edits |
+| Pass | Confirmed | Links | Homepage broken-link sample: 0 broken / 4 redirects | `broken_links.py` | Crawl health | Investigate the 1 broken flagged in aggregate runner if reproducible |
+| Unknown | — | CWV | Mobile/Desktop PSI unavailable | Google PageSpeed API rate limited | Can’t confirm LCP/INP/CLS | Rerun with `PAGESPEED_API_KEY` |
 
 ---
 
-## D) Scoring notes & environment limitations
+## Technical SEO
 
-- Weighted **58/100** excludes CWV (PSI rate limit).
-- GSC window ends 2026-09-02 — some internal-link shipping after that may not be reflected.
-- No live ChatGPT/Perplexity citation checks — platform GEO scores are readiness only.
-- `article_seo.py` crashed on multi-type `@type` lists — manual/schema parse used instead.
+**Crawlability:** `robots.txt` allows `/`, blocks `/admin/`, `/api/`, `/tools/`, `/invoice`. AI crawlers explicitly allowed. Sitemap at `/sitemap.xml` lists 52 URLs.
+
+**Indexability:** Homepage `meta robots: index, follow`. Canonical `https://www.sekarbaliactivity.com` (no trailing slash) — consistent with most loc entries.
+
+**Security:** Full modern header set (score 100).
+
+**Redirects:** Apex/www settle cleanly; dirt-bike URL resolves to ATV money page (product removed correctly).
 
 ---
 
-## E) Unknowns / follow-ups
+## On-Page SEO (money pages)
 
-1. Re-measure GSC for cycling + combo URLs after 14–28 days.
-2. PageSpeed mobile CWV for cycling tour + combo blog.
-3. Manual AI citation check for: “cycling and cooking class Ubud”, “rice paddy cycling Ubud”, “Pejeng cycling tour”.
-4. Confirm whether `youtubeVideoId` is rendered anywhere in UI before shipping real video.
-5. GBP insights for cycling-related photos/reviews (ops — outside HTML audit).
+| URL | Title | H1 | Notes |
+| --- | --- | --- | --- |
+| `/` | Sekar Bali Activity \| Ubud Travel & Tours | Your Bali day, booked clear | Clear commercial intent |
+| `/tours/bali-atv-adventure` | ATV Ride Ubud from IDR 750K \| … | Bali ATV Quad Bike Adventure & River Tubing | Price in title — strong CTR |
+| `/tours/balinese-cooking-class` | Cooking Class Ubud \| Tumang from IDR 506K \| … | Tumang Bali Cooking Class | Partner product well marked up |
+| `/contact` | Contact Us \| … | Book or ask on WhatsApp. | Location roles documented |
+
+Homepage H2/H3 structure is deep (pricing, combos, FAQ, guides) — good for long-tail and fan-out queries.
+
+---
+
+## Schema & Structured Data
+
+**Present (confirmed in SSR HTML):**
+- `TravelAgency` + `LocalBusiness` with corporate NAP (Banjar Kenderan) + `additionalProperty` activityBase (Sedang address)
+- `WebSite`, `WebPage`, `ItemList`, `DataCatalog`
+- Multiple standalone `Question` / `Answer` nodes (commercial-safe; **not** FAQPage — correct per 2026 guidance)
+- Tour pages: `TouristTrip` (+ `Product` on cooking) with `Offer` / `AggregateOffer`
+- Blog posts: `BlogPosting` with `datePublished` / `author`
+
+**Gaps:**
+- Entity graph `sameAs` limited to Instagram + Facebook
+- ATV `TouristTrip` lacks rich `itinerary` object
+- Auto `entity_checker` fails on multi-type `@type` arrays — treat its “Critical missing Organization” as **false positive**
+
+---
+
+## GEO / AI Search Readiness
+
+### Strengths
+- Agent stack: `/llms.txt`, `/llms-full.txt`, `/pricing.md`, `/.well-known/llms.txt` linked via `<link rel="alternate">` and schema DataCatalog
+- Explicit AI bot allow-list in robots
+- Quotable pricing tiers + pickup rules in Markdown (agent-parseable without JS)
+- Homepage FAQ / GeoAnswerBlock with direct answers (scanner 100)
+- AreaServed includes Sedang, Abiansemal, Badung, Pejeng, Ubud
+
+### Weaknesses
+1. **Entity contradiction in the first sentence of `llms.txt`** (“Pejeng-based”) vs accurate activity-base block below — LLMs often overweight the opening blurb
+2. Homepage body still Pejeng-heavy (23 mentions) vs Sedang (4) — fine for cycling, confusing for ATV arena
+3. Citation readiness 45 — TripAdvisor Traveler’s Choice claimed without outbound trust link in samples
+4. Brand graph thin outside IG/FB (no YouTube/Reddit density observed in this pass)
+
+### Platform notes
+- **Google AI Overviews:** Win via classic ranking + people-first guides; keep E-E-A-T / unique operator facts
+- **ChatGPT / Perplexity / Claude:** Already well served by llms.txt + pricing.md; fix opening NAP blurb immediately
+- Do **not** add FAQPage schema for rich-result recovery (deprecated for commercial)
+
+---
+
+## Content & E-E-A-T
+
+- Readability: Flesch 56.7 / grade ~9.2 — acceptable for travel commercial copy
+- Blog cluster coverage is strong (ATV price, arena guide, combos, cycling vs Tegallalang, pickup policy)
+- Tumang cooking page has excellent partner specificity (Chef Wayan, TripAdvisor TC 2026)
+- Missing: named ATV guide bios, editorial/corrections policy, outbound citations on factual culture claims
+
+---
+
+## Images & Performance
+
+- Homepage images: 23 with **0 missing alt** (`Confirmed`)
+- **Live hero still old portrait T-rex asset** — merge PR #72 / redeploy
+- CWV: **Unknown** this run (PSI rate limit). Re-check LCP on hero after landscape deploy
+
+---
+
+## Measurement Notes
+
+- `pagespeed.py`: rate-limited — CWV score withheld
+- `entity_checker.py`: false Critical on Organization (multi-type JSON-LD)
+- `article_seo.py`: crashed on list `@type` (`TypeError: unhashable type: 'list'`) — script bug, not site bug
+- `generate_report.py` raw overall 87/100 overstated Entity=0 and CWV=0 penalties; LLM-adjusted **84** with Entity corrected and CWV excluded

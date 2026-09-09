@@ -391,6 +391,12 @@ export const GEO_FAQ_FOR_LLM = [
     a: 'Yes. Groups of 4 or more may receive special rates with Sekar Bali Activity. Message WhatsApp for custom quotes and private tour arrangements.',
     url: `${SITE_URL}/contact`,
   },
+  {
+    category: 'Cooking',
+    q: 'How much is the Luwak Coffee Plantation Experience at Umah Kuno?',
+    a: 'Sekar Bali Activity lists the Luwak Coffee Plantation Experience at Umah Kuno at IDR 800,000 per person, with a minimum of 3 guests. The price includes a guided plantation walk, wood-fire roasting demonstration, and a tasting flight of 10 teas and coffees including ethical cage-free Kopi Luwak. Transport to Tampaksiring is not included.',
+    url: `${SITE_URL}/tours/luwak-coffee-plantation`,
+  },
 ] as const
 
 export const GEO_PRIMARY_PAGES = [
@@ -403,6 +409,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III rapids near Ubud' },
   { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float adventure' },
   { title: 'Mount Batur Sunrise Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`, desc: 'No-hike 4×4 crater-rim sunrise near Kintamani — from IDR 750K/person for 3+ · hotel pickup included' },
+  { title: 'Luwak Coffee Plantation (Umah Kuno)', url: `${SITE_URL}/tours/luwak-coffee-plantation`, desc: 'Ethical Luwak tasting — IDR 800,000 per person · min 3 guests' },
   { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book cooking, cycling, ATV, rafting, tubing, or culture day via WhatsApp' },
   { title: 'Pricing (HTML)', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices on the homepage' },
   { title: 'Pricing (Markdown for agents)', url: `${SITE_URL}/pricing.md`, desc: 'Machine-readable IDR tiers, inclusions, and pickup fees' },

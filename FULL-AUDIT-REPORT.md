@@ -1,152 +1,99 @@
-# Full SEO + GEO Audit Report
+# SEO Audit Report — Luwak Coffee Plantation (Umah Kuno)
 
-- **Site:** https://www.sekarbaliactivity.com/
-- **Scope:** Full-site technical + on-page + schema + GEO/AI search readiness (homepage + money pages + machine-readable surfaces)
-- **Business type:** Local travel / activities operator (ATV, rafting, tubing, cycling, cooking class, day tours near Ubud)
-- **Generated:** 2026-09-09
-- **Overall SEO Health Score:** **84 / 100** (band: Strong)
-- **Score confidence:** Medium — PageSpeed/CWV incomplete (API rate limit); entity script false-negatives corrected manually
+**Scope:** Single-page audit (`single-page`)  
+**URL:** https://www.sekarbaliactivity.com/tours/luwak-coffee-plantation  
+**Date:** 2026-09-09  
+**Score confidence:** Medium (CWV unavailable — PageSpeed API rate-limited)
 
-## Audit Summary
+## A) Audit Summary
 
-Sekar Bali Activity already has an unusually strong AI/GEO stack for a local operator (`llms.txt` 100/100, `llms-full.txt`, `pricing.md`, AI crawlers allowed, Question/answer blocks, TouristTrip + Offer schema). Traditional SEO foundations (HTTPS, security headers, social meta, sitemap, money-page titles) are also solid.
+| | |
+|---|---|
+| **Overall** | **62/100 — Needs Improvement** (live). ~78/100 after PR #90 deploy + duration/schema fixes |
+| **Rating band** | Needs Improvement (50–69) |
 
-The biggest gaps are **entity consistency after the Sedang activity-base move**, **weak citation/E-E-A-T source signals**, **orphan-heavy blog internal linking**, and an **unmerged / still-live fantasy T-rex hero** that undermines trust and brand perception.
+### Page Score Card (live production)
+
+```
+Overall Score: 62/100
+
+On-Page SEO:     58/100  ██████░░░░
+Content Quality: 78/100  ████████░░
+Technical:       88/100  █████████░
+Schema:          55/100  ██████░░░░
+Images:          52/100  █████░░░░░
+AI Search (GEO): 60/100  ██████░░░░
+Performance:     n/a     (PSI rate-limited)
+```
 
 ### Top 3 issues
-1. GEO entity conflict: `llms.txt` opens with “Pejeng-based…” while NAP/schema/activity base correctly say Sedang / Abiansemal (`Confirmed`)
-2. Live homepage hero is still the old portrait banner (896×1195) with photoreal T-rex — trust / brand / LCP risk (`Confirmed`)
-3. Citation readiness 45/100 — many factual IDR claims, almost no high-trust external sources (`Confirmed`)
+1. **Stale price IDR 400,000** in UI + `TouristTrip` `Offer` schema (business rate is **IDR 800,000**; PR #90 not live yet).
+2. **Wrong ISO duration `PT5H`** for a **1.5-hour** experience (`durationToIso` matches `.5 Hours` as `5`).
+3. **Hero/OG image ~557KB** JPEG (`/coffee.jpg`) without explicit dimensions — LCP/CLS risk.
 
 ### Top 3 opportunities
-1. Align all GEO one-liners to Sedang activity base + Pejeng cycling geography (quick win)
-2. Strengthen internal links from homepage/tours → blog money posts; reduce orphan blogs
-3. Expand `sameAs` (TripAdvisor / Google Business / X if real) and add first-hand host bylines on key guides
+1. Deploy priced `seoTitle` / `seoDescription` (already on PR #90): include **IDR 800K**, ethical Luwak, Ubud/Umah Kuno.
+2. Add **page-scoped `WebPage` schema** for Luwak (jeep/cooking already have this pattern).
+3. Ensure **`pricing.md` / `llms.txt`** list Luwak at **IDR 800,000** (branch GEO_PRICING already does; production still says generic “coffee tasting”).
 
 ---
 
-## Score Card (LLM-adjusted)
+## B) Findings Table
 
-| Category | Weight | Score | Notes |
-| --- | ---: | ---: | --- |
-| Technical SEO | 25% | 90 | Security 100, robots/AI crawlers 100, redirects clean, 0 broken on homepage crawl sample |
-| Content Quality | 20% | 78 | Strong pricing transparency & guides; E-E-A-T 59; citation 45 |
-| On-Page SEO | 15% | 88 | Titles/metas/H1s strong on home + ATV + cooking |
-| Schema / Structured Data | 15% | 86 | TravelAgency+LocalBusiness, TouristTrip/Product Offers, Question blocks — **not** missing Organization |
-| Performance (CWV) | 10% | — | **Unknown** (PageSpeed rate-limited) |
-| Images | 10% | 72 | Homepage 0 missing alt; live hero still old T-rex portrait asset |
-| AI Search / GEO | 5% | 88 | llms.txt 100, answer blocks 100; NAP conflict in opening blurb |
-
-**Weighted estimate (excluding CWV):** ~84/100
-
----
-
-## Findings Table
-
-| Severity | Confidence | Area | Finding | Evidence | Impact | Fix |
-| --- | --- | --- | --- | --- | --- | --- |
-| Warning | Confirmed | GEO / NAP | Opening GEO blurb still says “Pejeng-based operator” while activity base is Sedang | `llms.txt` line 3 vs Entity facts activity base `Jl. Raya Krasan…80352`; `src/data/geoContent.ts` GEO one-liner | AI engines may cite the wrong village for ATV self-meet | Rewrite GEO one-liners to “Ubud-area operator · activity base Sedang (Abiansemal); Pejeng cycling routes” |
-| Warning | Confirmed | Brand / Images | Live hero banner still portrait T-rex composite | Live `hero-banner.jpg` = 896×1195, 173570 bytes (old asset). PR #72 not on production | Hurts trust, CTR, and brand; wrong visual for Bali ATV | Merge/deploy hero-without-trex + landscape crop |
-| Warning | Confirmed | GEO / Citations | Factual claims outnumber source signals (score 45) | `citation_readiness.py`: 20 claims, 0 trusted external domains, 5 external links | Lower citability in ChatGPT/Perplexity vs aggregators | Link TripAdvisor Traveler’s Choice claim; cite official tourism/Subak sources on culture posts |
-| Warning | Confirmed | Internal links | Many blog URLs look underlinked / orphan-like | `internal_links` script: 24 potential orphans ≤1 inbound | Crawl depth + topical authority diluted | Add contextual links from tour pages + homepage guides strip to money blogs |
-| Warning | Likely | E-E-A-T | Thin first-hand / host identity on commercial pages | `eeat_signal_checker.py` score 59; no editorial policy; authors = brand name only | Harder to win AI Overview + long-tail trust vs named chef/host pages | Add named host/chef bios (already strong on Tumang); author boxes on ATV/cycling guides |
-| Info | Confirmed | Entity KG | No Wikipedia/Wikidata; `sameAs` only IG + Facebook | `entity_checker.py` + homepage JSON-LD `sameAs` | Weaker Knowledge Graph / AI brand graph | Add real profiles only (GMB, TripAdvisor, X). Do **not** create Wikipedia for SEO |
-| Info | Confirmed | Schema script false positive | Auto-report marked “No Organization” as Critical | Homepage JSON-LD `@type: ["TravelAgency","LocalBusiness"]` with address/geo/sameAs | Misleading Critical in machine report | Ignore; keep multi-type LocalBusiness (correct for GBP NAP) |
-| Info | Confirmed | Schema | TouristTrip Offers present; cooking uses AggregateOffer | ATV Offer price 750000 IDR; cooking AggregateOffer 506370–1266180 | Good rich-result eligibility for products/trips | Add `itinerary` / duration where accurate; keep FAQPage **out** (commercial-safe Question blocks already used) |
-| Pass | Confirmed | AI crawlability | All major AI bots allowed; sitemap referenced | `robots.txt` GPTBot/ClaudeBot/PerplexityBot/Google-Extended Allow; Sitemap present | Agents can train/cite | Maintain |
-| Pass | Confirmed | GEO surfaces | `llms.txt` 100/100; `llms-full.txt` + `pricing.md` + `.well-known/llms.txt` | `llms_txt_checker.py` Quality 100; HTTP 200 all companions | Strong agent readiness | Keep dates/prices in sync with site |
-| Pass | Confirmed | Answer extractability | Homepage answer-block score 100 (8 direct answers) | `answer_block_scanner.py` | High passage citability | Keep 40–60 word lead answers on money FAQs |
-| Pass | Confirmed | Security | Security headers 100/100 | HSTS preload, CSP, XFO, nosniff, Referrer-Policy, Permissions-Policy | Trust + HTTPS hygiene | Maintain |
-| Pass | Confirmed | Social meta | OG/Twitter 92/100 | All required OG tags; twitter:creator optional missing | Share previews solid | Optional: add twitter:creator |
-| Pass | Confirmed | Sitemap | 52 indexable URLs incl. 8 tours + 32 blogs + AI files | Live sitemap.xml HTTP 200 | Coverage healthy | Ensure lastmod updates on content edits |
-| Pass | Confirmed | Links | Homepage broken-link sample: 0 broken / 4 redirects | `broken_links.py` | Crawl health | Investigate the 1 broken flagged in aggregate runner if reproducible |
-| Unknown | — | CWV | Mobile/Desktop PSI unavailable | Google PageSpeed API rate limited | Can’t confirm LCP/INP/CLS | Rerun with `PAGESPEED_API_KEY` |
+| Area | Severity | Confidence | Finding | Evidence | Fix |
+|------|----------|------------|---------|----------|-----|
+| Pricing / On-page | Critical | Confirmed | Live price still **IDR 400,000** in UI and schema | Visible “From IDR 400.000”; JSON-LD `offers.price: 400000`; RSC `basePrice:400000` | Merge/deploy [PR #90](https://github.com/dewaprabawa/s-leaves/pull/90) |
+| Schema | Warning | Confirmed | `TouristTrip.duration` is **PT5H** vs content **1.5 Hours** | Live schema `duration: "PT5H"`; `durationToIso("1.5 Hours")` matches `5` via `/(\d+)\s*Hours?/i` | Parse decimals → `PT1H30M` |
+| Schema | Warning | Confirmed | Homepage `WebPage` (`#webpage`) injected on tour URL | `WebPage.url` = site root; name = homepage title | Add Luwak page `WebPage` like jeep/cooking builders |
+| On-page | Warning | Confirmed | Title **68 chars**, no price; meta **129 chars**, no price/Ubud/ethical | Title: `Luwak Coffee Plantation Experience (Umah Kuno) \| Sekar Bali Activity`; meta omits IDR | Use PR #90 `seoTitle` / `seoDescription` |
+| Images | Warning | Confirmed | Hero/OG `coffee.jpg` ≈ **557KB** | `content-length: 557287`; hero `width`/`height` null (fill) | Compress &lt;200KB WebP/AVIF; set OG w/h 1200×630 |
+| Content / Trust | Warning | Confirmed | Placeholder YouTube ID `dQw4w9WgXcQ` in tour data | `tours.ts` `youtubeVideoId: "dQw4w9WgXcQ" // Placeholder` | Remove or replace; embed not currently rendered on tour page |
+| GEO | Warning | Confirmed | Live `llms.txt` / `pricing.md` lack priced Luwak line | `llms.txt` “coffee tasting” only; `pricing.md` has no Luwak row on live | Deploy GEO_PRICING Luwak row (800k) from PR #90 |
+| Schema / topical | Info | Confirmed | 8 sitewide GEO `Question` nodes (ATV-heavy) on coffee URL | e.g. `#geo-qa-1` “best Bali ATV tour” on Luwak HTML | Scope Q&A by page; **do not** add commercial `FAQPage` for rich results |
+| Social | Info | Confirmed | OG/Twitter mostly OK (77/100); no `og:locale` / image dimensions | `social_meta.py` score 77 | Add dimensions; sync OG copy after price deploy |
+| Technical | Pass | Confirmed | Indexable, canonical, HTTPS, security headers, sitemap, AI bots allowed, 0 broken links | `index,follow`; canonical www; security 100/100; sitemap loc present; apex→www 308 | Maintain |
+| Content | Pass | Confirmed | Solid unique copy, H1–H3 hierarchy, ethical E-E-A-T angle, related internal links | ~756–924 words; Flesch 50.8; 56 internal / 6 external; guides to ethical Luwak blogs | Keep min-3 + transport-not-included consistent post-deploy |
+| Performance | Info | Hypothesis | CWV unknown | PSI: “Rate limited by Google API” | Re-run PSI with key; treat hero as LCP candidate |
 
 ---
 
-## Technical SEO
+## C) Evidence notes (scripts)
 
-**Crawlability:** `robots.txt` allows `/`, blocks `/admin/`, `/api/`, `/tools/`, `/invoice`. AI crawlers explicitly allowed. Sitemap at `/sitemap.xml` lists 52 URLs.
+| Check | Result |
+|-------|--------|
+| `fetch_page.py` | HTTP 200 (apex redirects to www) |
+| `parse_html.py` | Title/meta/H1/schema/images extracted |
+| `readability.py` | 756 words, Flesch 50.8, grade 10.6 |
+| `social_meta.py` | 77/100 |
+| `robots_checker.py` | AI crawlers explicitly allowed; sitemap declared |
+| `llms_txt_checker.py` | `llms.txt` + `llms-full.txt` present (quality 100) |
+| `security_headers.py` | 100/100 |
+| `broken_links.py` | 0 broken / 36 checked |
+| `redirect_checker.py` | www final 200; apex 308→www |
+| `pagespeed.py` | **Failed** — API rate limit (environment limitation) |
+| `article_seo.py` | **Failed** — script bug (`DEPRECATED_SCHEMA` list unhashable) |
+| `finding_verifier.py` | **Failed** — schema mismatch on findings wrapper |
 
-**Indexability:** Homepage `meta robots: index, follow`. Canonical `https://www.sekarbaliactivity.com` (no trailing slash) — consistent with most loc entries.
+**Schema present (live):** `TravelAgency`/`LocalBusiness`, `WebSite`, `WebPage` (homepage-scoped), `TouristTrip`+`Offer`, `BreadcrumbList`, `ItemList`, `DataCatalog`, multiple `Question`.
 
-**Security:** Full modern header set (score 100).
-
-**Redirects:** Apex/www settle cleanly; dirt-bike URL resolves to ATV money page (product removed correctly).
-
----
-
-## On-Page SEO (money pages)
-
-| URL | Title | H1 | Notes |
-| --- | --- | --- | --- |
-| `/` | Sekar Bali Activity \| Ubud Travel & Tours | Your Bali day, booked clear | Clear commercial intent |
-| `/tours/bali-atv-adventure` | ATV Ride Ubud from IDR 750K \| … | Bali ATV Quad Bike Adventure & River Tubing | Price in title — strong CTR |
-| `/tours/balinese-cooking-class` | Cooking Class Ubud \| Tumang from IDR 506K \| … | Tumang Bali Cooking Class | Partner product well marked up |
-| `/contact` | Contact Us \| … | Book or ask on WhatsApp. | Location roles documented |
-
-Homepage H2/H3 structure is deep (pricing, combos, FAQ, guides) — good for long-tail and fan-out queries.
+**Do not recommend:** `FAQPage` (restricted; FAQ rich results retired) or `HowTo` (deprecated).
 
 ---
 
-## Schema & Structured Data
+## D) Unknowns and follow-ups
 
-**Present (confirmed in SSR HTML):**
-- `TravelAgency` + `LocalBusiness` with corporate NAP (Banjar Kenderan) + `additionalProperty` activityBase (Sedang address)
-- `WebSite`, `WebPage`, `ItemList`, `DataCatalog`
-- Multiple standalone `Question` / `Answer` nodes (commercial-safe; **not** FAQPage — correct per 2026 guidance)
-- Tour pages: `TouristTrip` (+ `Product` on cooking) with `Offer` / `AggregateOffer`
-- Blog posts: `BlogPosting` with `datePublished` / `author`
-
-**Gaps:**
-- Entity graph `sameAs` limited to Instagram + Facebook
-- ATV `TouristTrip` lacks rich `itinerary` object
-- Auto `entity_checker` fails on multi-type `@type` arrays — treat its “Critical missing Organization” as **false positive**
+- Mobile LCP / INP / CLS field or lab data (PSI blocked).
+- Whether Search Console shows rich-result warnings for `PT5H` / offer price mismatch.
+- Confirm post-deploy that Googlebot/AI caches refresh for `llms.txt` and `pricing.md`.
 
 ---
 
-## GEO / AI Search Readiness
+## E) Branch vs live
 
-### Strengths
-- Agent stack: `/llms.txt`, `/llms-full.txt`, `/pricing.md`, `/.well-known/llms.txt` linked via `<link rel="alternate">` and schema DataCatalog
-- Explicit AI bot allow-list in robots
-- Quotable pricing tiers + pickup rules in Markdown (agent-parseable without JS)
-- Homepage FAQ / GeoAnswerBlock with direct answers (scanner 100)
-- AreaServed includes Sedang, Abiansemal, Badung, Pejeng, Ubud
-
-### Weaknesses
-1. **Entity contradiction in the first sentence of `llms.txt`** (“Pejeng-based”) vs accurate activity-base block below — LLMs often overweight the opening blurb
-2. Homepage body still Pejeng-heavy (23 mentions) vs Sedang (4) — fine for cycling, confusing for ATV arena
-3. Citation readiness 45 — TripAdvisor Traveler’s Choice claimed without outbound trust link in samples
-4. Brand graph thin outside IG/FB (no YouTube/Reddit density observed in this pass)
-
-### Platform notes
-- **Google AI Overviews:** Win via classic ranking + people-first guides; keep E-E-A-T / unique operator facts
-- **ChatGPT / Perplexity / Claude:** Already well served by llms.txt + pricing.md; fix opening NAP blurb immediately
-- Do **not** add FAQPage schema for rich-result recovery (deprecated for commercial)
-
----
-
-## Content & E-E-A-T
-
-- Readability: Flesch 56.7 / grade ~9.2 — acceptable for travel commercial copy
-- Blog cluster coverage is strong (ATV price, arena guide, combos, cycling vs Tegallalang, pickup policy)
-- Tumang cooking page has excellent partner specificity (Chef Wayan, TripAdvisor TC 2026)
-- Missing: named ATV guide bios, editorial/corrections policy, outbound citations on factual culture claims
-
----
-
-## Images & Performance
-
-- Homepage images: 23 with **0 missing alt** (`Confirmed`)
-- **Live hero still old portrait T-rex asset** — merge PR #72 / redeploy
-- CWV: **Unknown** this run (PSI rate limit). Re-check LCP on hero after landscape deploy
-
----
-
-## Measurement Notes
-
-- `pagespeed.py`: rate-limited — CWV score withheld
-- `entity_checker.py`: false Critical on Organization (multi-type JSON-LD)
-- `article_seo.py`: crashed on list `@type` (`TypeError: unhashable type: 'list'`) — script bug, not site bug
-- `generate_report.py` raw overall 87/100 overstated Entity=0 and CWV=0 penalties; LLM-adjusted **84** with Entity corrected and CWV excluded
+| Signal | Live (2026-09-09) | Branch `cursor/luwak-coffee-price-800k-e817` |
+|--------|-------------------|-----------------------------------------------|
+| `basePrice` / Offer | 400000 | **800000** |
+| `seoTitle` | Falls back to long title | `Luwak Coffee Plantation Umah Kuno \| IDR 800K` |
+| Body / FAQ price | 400k UI | 800k copy + FAQ |
+| GEO / FAQ / primary pages | Generic coffee tasting | Explicit Umah Kuno **IDR 800,000** |
+| `duration` ISO | Still wrong until code fix | Still wrong until `durationToIso` fix |

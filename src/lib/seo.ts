@@ -9,20 +9,20 @@ export const SITE_URL = 'https://www.sekarbaliactivity.com'
 export const SITE_NAME = 'Sekar Bali Activity'
 
 /** SERP title target: brand + offer, ≤60 characters */
-export const DEFAULT_TITLE = 'Sekar Bali Activity | Ubud Travel & Tours'
+export const DEFAULT_TITLE = 'Sekar Bali Activity | Cooking Class & Cycling Ubud'
 export const DEFAULT_DESCRIPTION =
-  'Book Ubud travel activities — ATV, rafting, ricefield cycling, cooking class, coffee & day tours. Clear IDR pricing. Free Ubud pickup on cycling. WhatsApp booking.'
+  'Book Tumang Bali Cooking Class from IDR 506K and Pejeng ricefield cycling from IDR 750K near Ubud — free hotel pickup on both. Also ATV, rafting & day tours. Clear IDR. WhatsApp booking.'
 
 /** Social previews (og:title ≤60, og:description ≤160) */
-export const OG_TITLE = 'Ubud Travel & Activities | Sekar Bali'
+export const OG_TITLE = 'Cooking Class & Cycling Ubud | Sekar Bali'
 export const OG_DESCRIPTION =
-  'Adventure, village cycling, cooking class, coffee & private day tours near Ubud. Transparent IDR. Free cycling pickup. Book via WhatsApp.'
+  'Tumang cooking class + Pejeng ricefield cycling near Ubud with free pickup. Transparent IDR, TripAdvisor Traveler’s Choice kitchen, WhatsApp booking.'
 
 export const OG_IMAGE = {
   url: '/images/adventures/og-cover.jpg',
   width: 1200,
   height: 630,
-  alt: 'Bali travel activities and tours with Sekar Bali Activity in Ubud',
+  alt: 'Tumang cooking class and Pejeng ricefield cycling near Ubud with Sekar Bali Activity',
 }
 
 /** Organization + Product ItemList JSON-LD for homepage technical SEO & AI citation */
@@ -115,11 +115,12 @@ export function buildOrganizationSchema() {
 /** Primary nav URLs that help Google understand site structure for sitelinks */
 export const SITE_NAV_LINKS = [
   { name: 'Book Activities', url: `${SITE_URL}/book` },
-  { name: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure` },
+  { name: 'Tumang Bali Cooking Class', url: `${SITE_URL}/tours/balinese-cooking-class` },
   { name: 'Ubud Ricefield Cycling', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour` },
+  { name: 'Cycling + Cooking Combo', url: `${SITE_URL}/book?activity=combo-cycling-cooking` },
+  { name: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure` },
   { name: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting` },
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },
-  { name: 'Tumang Bali Cooking Class', url: `${SITE_URL}/tours/balinese-cooking-class` },
   { name: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour` },
   { name: 'About Us', url: `${SITE_URL}/about` },
   { name: 'Contact', url: `${SITE_URL}/contact` },
@@ -192,7 +193,7 @@ export function buildAdventureItemListSchema(adventures: AdventureOffer[]) {
     '@type': 'ItemList',
     '@id': `${SITE_URL}/#adventure-packages`,
     name: 'Bali Travel & Activity Packages',
-    description: 'ATV, rafting, canyon tubing, and village cycling tours in Bali',
+    description: 'Ricefield cycling, Tumang cooking class, ATV, rafting, and day tours near Ubud',
     numberOfItems: adventures.length,
     itemListElement: adventures.map((adv, index) => ({
       '@type': 'ListItem',

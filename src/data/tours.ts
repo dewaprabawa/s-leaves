@@ -62,6 +62,8 @@ export interface Tour {
   heroImage: {
     url: string
     alt: string
+    width?: number
+    height?: number
   }
   gallery: { url: string; alt: string }[]
   shortDescription: string
@@ -722,7 +724,6 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         alt: "Lunch included on the Ubud ricefield cycling tour",
       },
     ],
-    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
     shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
@@ -877,10 +878,15 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     area: "Tampaksiring / Ubud",
     isTopPick: true,
     duration: "1.5 Hours",
-    basePrice: 400000,
+    basePrice: 800000,
+    seoTitle: "Luwak Coffee Plantation Umah Kuno | IDR 800K",
+    seoDescription:
+      "Ethical Luwak coffee tasting at Umah Kuno near Ubud — jungle walk, wood-fire roasting, and a 10-drink tasting flight including Kopi Luwak. IDR 800,000 per person. Min 3 guests.",
     heroImage: {
       url: "/coffee.jpg",
       alt: "Luwak Coffee Plantation Umah Kuno",
+      width: 767,
+      height: 1024,
     },
     gallery: [
       {
@@ -888,8 +894,8 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         alt: "Traditional Umah Kuno Balinese Compound",
       },
     ],
-    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder
-    shortDescription: "Discover the secrets behind Bali's world-famous coffee at Umah Kuno with a jungle walk, traditional roasting, and tasting flight.",
+    shortDescription:
+      "Ethical Luwak coffee tasting at Umah Kuno — jungle walk, traditional roasting, and a 10-drink tasting flight. IDR 800,000 per person (minimum 3 guests).",
     fullDescription: `**A Journey Into the Heart of Bali's Coffee Culture**
 
 Bali is world-renowned for its coffee, but the story behind the cup is often hidden from visitors. Our Luwak Coffee Plantation Experience at the beautiful **Umah Kuno** estate offers you a transparent, ethical, and deeply educational look into how Bali's most famous export is cultivated, processed, and enjoyed. 
@@ -920,7 +926,7 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
 - **Morning Session:** 10:00 AM – 11:30 AM
 - **Afternoon Session:** 2:00 PM – 3:30 PM
 
-*(Note: Minimum booking of 3 people required for this experience)*`,
+*(Note: **IDR 800,000 per person**. Minimum booking of 3 people required for this experience)*`,
     highlights: [
       "Stroll through a lush, shaded plantation",
       "Watch local farmers roast coffee beans over open wood fires",
@@ -954,6 +960,12 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     ],
     addons: [],
     faqs: [
+      {
+        id: "faq-cof-price",
+        question: "How much is the Luwak Coffee Plantation Experience?",
+        answer:
+          "IDR 800,000 per person. Minimum booking is 3 guests. The price includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included.",
+      },
       {
         id: "faq-cof-1",
         question: "Is transportation included?",

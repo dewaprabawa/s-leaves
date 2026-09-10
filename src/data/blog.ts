@@ -10,6 +10,168 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'mount-batur-sunrise-jeep-tour-guide-2026',
+    title: 'Mount Batur Sunrise Jeep Tour Guide 2026',
+    excerpt:
+      'Private 4×4 to the Mount Batur crater rim near Kintamani — no hike. Solo IDR 1,350,000 · 3+ from IDR 750,000. Hotel pickup, hot drink, breakfast on top.',
+    publishedAt: '2026-09-09',
+    author: 'Sekar Bali Activity',
+    image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
+    content: `
+**What is the Mount Batur Sunrise Jeep Tour?** Sekar Bali Activity’s **private 4×4 jeep** drives volcanic tracks to a **crater-rim viewpoint near Kintamani** (~1,350m) so you watch sunrise over **Lake Batur** and **Mount Agung** **without the 2-hour summit trek**. A local driver, hot drink en route, breakfast served on top of the jeep, and **hotel pickup** are included. **Solo IDR 1,350,000** · **2 guests IDR 825,000 each** · **3+ guests IDR 750,000 each**.
+
+> **Key Takeaways**
+> - **No hiking** — you stay in the 4×4 on Mount Batur’s volcanic tracks
+> - Viewpoint is the **eastern-flank crater rim**, not the summit trail
+> - **Hotel pickup included** (Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua)
+> - Breakfast + hot drink served **on top of the jeep** after sunrise
+> - Optional **Kintamani coffee plantation** stop on the way back
+> - Book on WhatsApp — **no upfront payment** to inquire
+
+---
+
+## 2026 Price Table (Private Jeep)
+
+| Guests sharing one jeep | Price per person (IDR) | What’s included |
+| --- | --- | --- |
+| 1 (solo) | 1,350,000 | Private 4×4, driver, hotel pickup, hot drink, breakfast, entrance fee, insurance (ages 6–65) |
+| 2 | 825,000 | Same inclusions — you split the jeep |
+| 3+ | 750,000 | Same inclusions — lowest per-person rate |
+
+A private jeep costs the same to run whether one or three people ride, so the per-person rate drops as you add guests. Pickup is **not** the IDR 400,000 ATV/rafting add-on — it is built into the jeep package. Full booking page: [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour).
+
+## How the Morning Works (6–7 Hours)
+
+| Time | What happens |
+| --- | --- |
+| 02:00–03:00 | Hotel pickup (south Bali earliest; Ubud a little later) |
+| ~04:00 | Transfer into the 4×4 at Kintamani base camp; hot drink on the way up |
+| ~05:45 | Arrive at the crater-rim viewpoint (~1,350m) |
+| ~06:00 | Sunrise over Lake Batur and Mount Agung; breakfast on top of the jeep |
+| ~06:45 | Drive back down the volcanic tracks |
+| ~08:00 | Optional coffee plantation stop (no obligation to buy) |
+| ~09:30 | Drop-off at your hotel |
+
+Exact pickup depends on traffic and your area — we confirm it on WhatsApp after you send the date and hotel.
+
+## Mount Batur Sunrise Jeep from Ubud (and South Bali)
+
+**Can you do a Mount Batur sunrise jeep from Ubud?** Yes. Hotel pickup is **included** on this tour — not the IDR 400,000 ATV/rafting add-on. Ubud guests typically leave a little later than south Bali. From Canggu, Seminyak, Sanur, Kuta, or Nusa Dua we collect you earlier (often closer to 02:00 AM) so the 4×4 still reaches the crater-rim viewpoint before first light.
+
+You do not drive your hotel car up the volcanic tracks. We transfer you to Kintamani base camp, then you switch into the private jeep with a local driver.
+
+## What Is Included (and What Is Not)
+
+Included: private 4×4 + driver, hotel pickup and drop-off, hot drink on the way up, breakfast served on top of the jeep, Kintamani / Mount Batur area entrance fee, and insurance for ages 6–65. The optional coffee plantation stop is a short visit — purchases are extra.
+
+Not included: summit hiking (this tour does not hike), coffee souvenirs, and gratuities.
+
+## How Cold Is the Crater Rim?
+
+Before sunrise at ~1,350m it is **cold enough for a jacket** even in dry-season Bali. Bring a warm layer you can peel off after the sun is up, plus closed shoes. You stay seated in the jeep on the way up; once parked you can stand at the viewpoint for photos.
+
+## Do You Hike Mount Batur?
+
+**No.** This is a **jeep sunrise**, not the classic Batur **summit trek**. You sit in a 4×4 on dirt and lava-rock tracks to a rim viewpoint. If you want a 2-hour dark hike to the summit, book a trek operator instead. Honest comparison: [Mount Batur jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
+
+## Who This Tour Is For
+
+- Couples and families who want the caldera sunrise **without hiking**
+- Guests staying in **Ubud or south Bali** who need pickup handled
+- Anyone who prefers a **private jeep** over a packed shared minibus
+- Photographers who want time on the rim with breakfast, not a rushed descent
+
+Skip it if summit walking is the point of your morning.
+
+## What to Bring
+
+Warm layer (it is cold before sunrise), closed shoes, camera, and a little cash for optional coffee-plantation souvenirs. Breakfast and a hot drink are included.
+
+## Optional Coffee Stop vs Ubud Tasting
+
+The Kintamani plantation stop is a **short add-on on the way back**. For a dedicated ethical tasting near Ubud, book [Luwak Coffee Plantation at Umah Kuno](/tours/luwak-coffee-plantation) on a different day.
+
+## How to Book on WhatsApp
+
+1. Open the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) page  
+2. Tap **Book**, send name, guest count, hotel, and date  
+3. We confirm the per-person tier and pickup time — **no payment to inquire**
+
+Compare other IDR packages: [Bali adventure prices 2026](/blog/bali-adventure-packages-prices-2026). After you are back from Kintamani, many guests book [ATV at All New Bali Adventure](/tours/bali-atv-adventure) or [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) later the same trip.
+
+**Ready for a no-hike Batur sunrise?** [Book the Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour).
+`
+  },
+  {
+    slug: 'mount-batur-jeep-vs-sunrise-trek',
+    title: 'Mount Batur Jeep vs Sunrise Trek',
+    excerpt:
+      'Jeep 4×4 to a crater-rim viewpoint vs the 2-hour Batur summit hike. Prices, fitness, views, and who should skip the trek.',
+    publishedAt: '2026-09-09',
+    author: 'Sekar Bali Activity',
+    image: 'https://images.unsplash.com/photo-1693821876313-dc573a92028c?auto=format&fit=crop&w=1200&q=80',
+    content: `
+**Should you do a Mount Batur sunrise jeep or the summit trek?** Choose the **jeep** if you want sunrise over **Lake Batur** and **Mount Agung** **without hiking**. Sekar Bali Activity’s private 4×4 drives volcanic tracks to a **crater-rim viewpoint** (~1,350m) near Kintamani. Choose a **trek** if walking the dark lava trail to the **summit** is the goal. They are different products — the jeep is not a shortcut to the same summit pin.
+
+> **Key Takeaways**
+> - **Jeep:** sit in a private 4×4 · no 2-hour hike · breakfast on top of the jeep
+> - **Trek:** ~2 hours up in the dark · summit trail · higher fitness
+> - Jeep prices (2026): **IDR 1,350,000 solo** · **IDR 825,000** (2 pax) · **IDR 750,000** (3+)
+> - **Hotel pickup included** on our jeep tour
+> - Book the jeep: [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour)
+
+---
+
+## Side-by-Side Comparison
+
+| | **Sunrise jeep (Sekar Bali)** | **Classic Batur sunrise trek** |
+| --- | --- | --- |
+| How you go up | Private 4×4 on volcanic tracks | Walk ~2 hours in the dark |
+| Where you watch sunrise | Eastern-flank crater-rim viewpoint (~1,350m) | Summit trail (different route) |
+| Fitness | None beyond sitting in a jeep | Moderate–hard hiking |
+| Start | Hotel pickup ~02:00–03:00 | Usually similar pre-dawn start |
+| Food | Hot drink + breakfast **on the jeep** | Often a simple trek breakfast |
+| Best for | Families, couples, non-hikers | Fit hikers who want the summit |
+| Honest limit | Not the summit | Steeper, darker, more effort |
+
+## Why Travelers Search “Batur Jeep vs Trek”
+
+Most “Mount Batur sunrise” results push the **hike**. A large share of Ubud and south-Bali guests then ask: *can I see the caldera sunrise if I cannot (or will not) hike?* The truthful answer is **yes, by jeep** — if you accept a **rim viewpoint**, not the summit.
+
+## Price: What the Jeep Includes
+
+With Sekar Bali Activity the jeep is private:
+
+- 1 guest: **IDR 1,350,000**
+- 2 guests: **IDR 825,000** each
+- 3+ guests: **IDR 750,000** each
+
+Included: 4×4, local driver, hotel pickup & drop-off, hot drink, breakfast on top, Kintamani / Batur area entrance fee, insurance for ages 6–65. Optional coffee plantation stop on the way back (no purchase required).
+
+Trek prices vary widely by group size and whether a guide, headlamp, and pickup are extras. Compare inclusions before you assume “cheaper hike.”
+
+## Pickup From Ubud vs South Bali
+
+Our jeep **includes hotel pickup island-wide**. South Bali (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leaves earliest; Ubud is a little later. Confirm the exact time on WhatsApp. That is different from ATV/rafting, which add **IDR 400,000** for hotel pickup — see [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
+
+## Who Should Book the Jeep
+
+Book the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) if you want:
+
+- Sunrise photographs of the lake and Agung **without scrambling rock**
+- A **private** vehicle, not a packed shared van
+- Breakfast while you stay on the viewpoint
+
+Do **not** book the jeep if your checklist says “stand on the Mount Batur summit.” We will not pretend the 4×4 replaces that hike.
+
+## After Sunrise
+
+Many guests sleep, then book a quieter Ubud activity later: [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) or [Tumang Bali Cooking Class](/tours/balinese-cooking-class). Full jeep timing: [Batur sunrise jeep guide 2026](/blog/mount-batur-sunrise-jeep-tour-guide-2026).
+
+**Want the no-hike option?** [Book the Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) on WhatsApp.
+`
+  },
+  {
     slug: 'how-much-does-atv-cost-bali-ubud-2026',
     title: 'ATV Cost Near Ubud (2026 Prices)',
     excerpt:
@@ -1284,16 +1446,16 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
   {
     slug: 'bali-adventure-packages-prices-2026',
     title: 'Bali Adventure Prices 2026',
-    excerpt: 'ATV from IDR 750K, rafting 500K, tubing 359K, ricefield cycling 750K — 2026 package prices in one place.',
+    excerpt: 'ATV from IDR 750K, rafting 500K, tubing 359K, ricefield cycling 750K, Mount Batur sunrise jeep from 750K/person (3+), Luwak 800K, cooking 450K, full-day Ubud from 600K — 2026 package prices in one place.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000**, **Canyon Tubing IDR 359,000**, **Ubud Ricefield Cycling Tour IDR 750,000**, and **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included).
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000**, **Canyon Tubing IDR 359,000**, **Ubud Ricefield Cycling Tour IDR 750,000**, **Mount Batur Sunrise Jeep Tour IDR 1,350,000 solo / IDR 825,000 for 2 / from IDR 750,000 per person for 3+**, **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Luwak Coffee Plantation IDR 800,000** (min 3 guests; transport not included), **Full Day Ubud Tour from IDR 600,000**, and **Half Day Ubud & Tanah Lot from IDR 450,000**.
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
-> - **Free Ubud pickup** on ricefield cycling and Tumang cooking; ATV/rafting/tubing add IDR 400,000 hotel pickup
+> - **Free Ubud pickup** on ricefield cycling and Tumang cooking; **island-wide pickup included** on the Mount Batur sunrise jeep; ATV/rafting/tubing add IDR 400,000 hotel pickup
 > - Every tour includes gear, guide, and insurance where listed on the tour page
 > - Book on WhatsApp — send name, age, hotel, activity, and price
 > - Tap **Details** in the booking popup to preview any tour itinerary instantly
@@ -1309,13 +1471,20 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Whitewater Rafting | IDR 500,000 | person | [Whitewater Rafting](/tours/whitewater-rafting) |
 | Canyon Tubing | IDR 359,000 | person | [Canyon Tubing](/tours/canyon-tubing) |
 | Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
+| Mount Batur Sunrise Jeep | IDR 1,350,000 solo · 825,000 (2) · 750,000 (3+) | person, private 4×4 | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Tumang Bali Cooking Class | IDR 450,000 promo | person shared | [Cooking Class](/tours/balinese-cooking-class) |
+| Luwak Coffee Plantation (Umah Kuno) | IDR 800,000 | person (min 3) | [Luwak Coffee](/tours/luwak-coffee-plantation) |
+| Full Day Ubud Tour | from IDR 600,000 | private car | [Full Day Ubud](/tours/full-day-ubud-tour) |
+| Half Day Ubud & Tanah Lot | from IDR 450,000 | private car | [Half Day Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) |
 
 ## Pickup Policy
 
 - **Ubud Ricefield Cycling Tour:** Free pickup and drop-off within Ubud
 - **Tumang Bali Cooking Class:** Complimentary Ubud-area pickup (shared & private)
+- **Mount Batur Sunrise Jeep Tour:** Hotel pickup included island-wide (not the IDR 400,000 add-on)
 - **ATV, rafting, tubing:** Pickup available; **IDR 400,000** hotel pickup charge applies
+- **Luwak Coffee Plantation:** Transport not included — arrange your own ride to Tampaksiring / Umah Kuno
+- **Full Day / Half Day private tours:** Private car & driver included in the from-price; entrance fees extra
 
 ## Popular Combos & Pairings
 
@@ -1323,6 +1492,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 2. **Cycling + Tumang cooking** — rice paddies then village kitchen. [Full itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary)
 3. **Rafting + cycling** — adrenaline morning, cultural afternoon. [Rafting guide](/blog/bali-whitewater-rafting-near-ubud-guide) · [Cycling guide](/blog/ubud-ricefield-cycling-tour-guide-2026)
 4. **ATV only** — best for first-time quad riders. [Bali ATV tour guide](/blog/bali-atv-tour-ubud-guide)
+5. **Mount Batur sunrise jeep** — no-hike 4×4 to a crater-rim viewpoint near Kintamani. [Jeep guide](/blog/mount-batur-sunrise-jeep-tour-guide-2026) · [Jeep vs trek](/blog/mount-batur-jeep-vs-sunrise-trek)
 
 ## What Every Package Includes
 
@@ -1393,15 +1563,16 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
   {
     slug: 'ubud-hotel-pickup-bali-adventures-explained',
     title: 'Ubud Hotel Pickup for Bali Adventures: Free vs Surcharge Explained (2026)',
-    excerpt: 'Which Sekar Bali Activity tours include free Ubud pickup? Cycling and Tumang cooking class. ATV, rafting, and tubing add IDR 400,000 hotel pickup — full pickup policy explained.',
+    excerpt: 'Which Sekar Bali Activity tours include pickup? Cycling and Tumang cooking (Ubud). Mount Batur sunrise jeep (island-wide). ATV, rafting, and tubing add IDR 400,000.',
     publishedAt: '2026-09-02',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (IDR 750,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. ATV, whitewater rafting, and canyon tubing do not — IDR 400,000 hotel pickup charge applies.
+**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (IDR 750,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. The **Mount Batur Sunrise Jeep Tour** includes hotel pickup **island-wide** in the jeep price. ATV, whitewater rafting, and canyon tubing do not — IDR 400,000 hotel pickup charge applies.
 
 > **Key Takeaways**
 > - **Free Ubud pickup:** Ricefield cycling + Tumang Bali Cooking Class
+> - **Island-wide pickup included:** Mount Batur Sunrise Jeep Tour
 > - **Hotel pickup:** IDR 400,000 for ATV, rafting, tubing
 > - **Cycling outside Ubud:** IDR 400,000 surcharge (e.g. Seminyak, Canggu, Kuta)
 > - **Booking:** Set your hotel pin in the booking popup map
@@ -1414,6 +1585,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 | --- | --- | --- |
 | Ubud Ricefield Cycling Tour | ✅ Yes | +IDR 400,000 |
 | Tumang Bali Cooking Class | ✅ Yes | Ask WhatsApp |
+| Mount Batur Sunrise Jeep | ✅ Island-wide (included) | Included in jeep price |
 | Single / Tandem ATV | ❌ No | +IDR 400,000 |
 | Whitewater Rafting | ❌ No | +IDR 400,000 |
 | Canyon Tubing | ❌ No | +IDR 400,000 |
@@ -1426,6 +1598,10 @@ The cycling tour is a full-day village experience starting from Pejeng. Pickup w
 
 Tumang Bali Cooking Class includes complimentary pickup for hotels in the Ubud area on shared and private sessions. Details: [Tumang cooking class](/tours/balinese-cooking-class).
 
+## Mount Batur Jeep Pickup (Island-Wide)
+
+The [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) includes hotel pickup and drop-off from Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua, and nearby areas — typically 02:00–03:00 AM. You do **not** pay the IDR 400,000 ATV/rafting pickup add-on. South Bali leaves earliest; Ubud is a little later. Confirm the exact time on WhatsApp.
+
 ## How Pickup Works When You Book
 
 1. Tap **Book Now** on [sekarbaliactivity.com](/)
@@ -1437,7 +1613,7 @@ Tumang Bali Cooking Class includes complimentary pickup for hotels in the Ubud a
 
 ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup for IDR 400,000 rather than self-driving. Details: [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide).
 
-**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure).
+**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Mount Batur sunrise jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure).
 `
   },
   {

@@ -13,11 +13,11 @@ const faqs = [
   },
   {
     question: "What activities and tours do you offer?",
-    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, and canyon tubing. Village: Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the Mount Batur Sunrise Jeep Tour (no hike). Village: Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",
-    answer: "Free hotel pickup within Ubud is included on our Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 400,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
+    answer: "Free hotel pickup within Ubud is included on our Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. The Mount Batur Sunrise Jeep Tour includes hotel pickup island-wide (Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua) in the jeep price. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 400,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
   },
   {
     question: "Do I need experience to ride an ATV, go rafting, or cycle?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: "Which tours have free Ubud hotel pickup?",
-    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. ATV, rafting, and canyon tubing charge IDR 400,000 for hotel pickup."
+    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. The Mount Batur Sunrise Jeep Tour includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, and canyon tubing charge IDR 400,000 for hotel pickup."
   },
   {
     question: "How much is Tumang Bali Cooking Class?",
@@ -60,8 +60,24 @@ const faqs = [
     answer: "IDR 750,000 per person for the full-day Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
   },
   {
+    question: "How much is the Mount Batur Sunrise Jeep Tour?",
+    answer: "IDR 1,350,000 for a solo traveller, IDR 825,000 per person for 2 guests, and IDR 750,000 per person for 3+ guests sharing a private 4×4. Hotel pickup, hot drink, breakfast on top of the jeep, and the Kintamani entrance fee are included — no summit hike. You ride volcanic tracks to a crater-rim viewpoint (~1,350m)."
+  },
+  {
+    question: "Is the Mount Batur jeep tour a hike?",
+    answer: "No. You stay in the 4×4. It is a sunrise jeep to a crater-rim viewpoint near Kintamani, not the classic 2-hour Mount Batur summit trek."
+  },
+  {
+    question: "How much is the Luwak Coffee Plantation Experience?",
+    answer: "IDR 800,000 per person at Umah Kuno (minimum 3 guests). Includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included."
+  },
+  {
+    question: "How much is a private full day or half day Ubud tour?",
+    answer: "Full Day Ubud Tour starts from IDR 600,000 for a private car and English-speaking driver (about 10 hours; entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000 (about 6 hours; entrance fees and dinner not included). Message WhatsApp for a guest-count quote."
+  },
+  {
     question: "Can AI assistants find your tours?",
-    answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
+    answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, Mount Batur sunrise jeep, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },
   {
     question: "How do I pay after I agree to a booking?",

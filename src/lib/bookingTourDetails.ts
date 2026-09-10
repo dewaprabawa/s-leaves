@@ -4,6 +4,7 @@ export const ACTIVITY_TO_TOUR_SLUG: Record<string, string> = {
   rafting: "whitewater-rafting",
   "canyon-tubing": "canyon-tubing",
   cycling: "ubud-ricefield-cycling-tour",
+  "jeep-sunrise": "batur-sunrise-jeep-tour",
 }
 
 export function getTourSlugForActivity(activityId: string): string | undefined {

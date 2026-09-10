@@ -81,3 +81,25 @@ export function buildWhatsAppBookingUrl(payload: WhatsAppBookingPayload) {
 export function openWhatsAppBooking(payload: WhatsAppBookingPayload) {
   window.open(buildWhatsAppBookingUrl(payload), '_blank', 'noopener,noreferrer')
 }
+
+/** Pre-filled WhatsApp consult for an activity detail page (no booking form required). */
+export function buildWhatsAppConsultationMessage(activity: string, pageUrl?: string) {
+  const lines = [
+    'Hello Sekar Bali Activity! I would like a WhatsApp consultation.',
+    '',
+    `*Activity:* ${activity}`,
+  ]
+  if (pageUrl) {
+    lines.push(`*Page:* ${pageUrl}`)
+  }
+  lines.push(
+    '',
+    'Please help with availability, group pricing, and pickup options. Thank you!',
+  )
+  return lines.join('\n')
+}
+
+export function buildWhatsAppConsultationUrl(activity: string, pageUrl?: string) {
+  const text = buildWhatsAppConsultationMessage(activity, pageUrl)
+  return `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(text)}`
+}

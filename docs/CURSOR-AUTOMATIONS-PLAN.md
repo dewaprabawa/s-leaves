@@ -1,5 +1,8 @@
 # Cursor Automations Plan — Sekar Bali SEO / GEO / Sales
 
+> **Install kit (copy-paste prompts):** [`docs/cursor-automations/README.md`](./cursor-automations/README.md)  
+> Open each `prompts/A*.md` file and paste into [cursor.com/automations](https://cursor.com/automations).
+
 Paste these into [cursor.com/automations](https://cursor.com/automations) (or `/automate` in chat).  
 Repo: **`dewaprabawa/s-leaves`** (this project).  
 Base branch for PRs: **`main`**.  

@@ -372,7 +372,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/book"
-                  className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full bg-white/12 border border-white/35 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/20 transition-colors backdrop-blur-sm"
+                  className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full bg-white/15 border-2 border-white/70 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/25 hover:border-white transition-colors backdrop-blur-sm"
                 >
                   Open booking
                 </Link>

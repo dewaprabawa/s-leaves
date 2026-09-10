@@ -196,7 +196,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'batur-sunrise-jeep-tour': {
     title: 'From our Kintamani jeep drivers',
-    body: 'We run the pre-dawn 4×4 tracks on Mount Batur\u2019s eastern flank most mornings — hotel pickup, a hot drink on the way up, and breakfast served on top of the jeep at the crater-rim viewpoint (~1,350m). This is not the summit trek: you stay in the jeep and watch Lake Batur and Mount Agung light up without a 2-hour hike in the dark.',
+    body: 'We run the pre-dawn 4×4 tracks on Mount Batur’s eastern flank most mornings — hotel pickup, a hot drink on the way up, and breakfast served on top of the jeep at the crater-rim viewpoint (~1,350m). This is not the summit trek: you stay in the jeep and watch Lake Batur and Mount Agung light up without a 2-hour hike in the dark.',
   },
 }
 

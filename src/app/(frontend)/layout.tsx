@@ -132,6 +132,7 @@ const footerLinks = {
     { label: "All Pricing", href: "/#pricing" },
   ],
   explore: [
+    { label: "All Experiences", href: "/experiences" },
     { label: "Book Adventures", href: "/book" },
     { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },

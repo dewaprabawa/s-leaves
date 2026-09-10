@@ -8,6 +8,7 @@ import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import CookingGeoBlock from "@/components/CookingGeoBlock"
+import JeepGeoBlock from "@/components/JeepGeoBlock"
 import {
   getAllTourSlugs,
   getTourBySlug,
@@ -26,6 +27,12 @@ import {
   COOKING_GEO_TLDR,
   COOKING_GEO_UPDATED,
 } from "@/data/cookingGeo"
+import {
+  JEEP_GEO_ENTITY,
+  JEEP_GEO_FAQS,
+  JEEP_GEO_TLDR,
+  JEEP_GEO_UPDATED,
+} from "@/data/jeepGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
 
@@ -39,6 +46,10 @@ export async function generateStaticParams() {
 
 function isCookingTour(tour: Tour) {
   return tour.slug === "balinese-cooking-class"
+}
+
+function isJeepTour(tour: Tour) {
+  return tour.slug === "batur-sunrise-jeep-tour"
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -61,7 +72,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "private cooking class Ubud",
         "Sekar Bali Activity",
       ]
-    : undefined
+    : isJeepTour(tour)
+      ? [
+          "Mount Batur sunrise jeep tour",
+          "Batur sunrise jeep tour price",
+          "Kintamani jeep tour",
+          "Mount Batur 4x4 tour",
+          "Mount Batur sunrise tour without trekking",
+          "Batur sunrise tour Ubud pickup",
+          "Kintamani coffee plantation jeep tour",
+          "Sekar Bali Activity",
+        ]
+      : undefined
 
   return {
     title,
@@ -94,7 +116,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           "geo.region": "ID-BA",
           "geo.placename": "Ubud, Bali",
         }
-      : undefined,
+      : isJeepTour(tour)
+        ? {
+            "geo.region": "ID-BA",
+            "geo.placename": "Kintamani, Bali",
+          }
+        : undefined,
   }
 }
 
@@ -112,13 +139,18 @@ function durationToIso(duration: string): string | undefined {
 
 function buildTourSchema(tour: Tour) {
   const cooking = isCookingTour(tour)
+  const jeep = isJeepTour(tour)
   const isoDuration = durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
     "@type": cooking ? (["TouristTrip", "Product"] as const) : "TouristTrip",
     "@id": `${SITE_URL}/tours/${tour.slug}#trip`,
     name: tour.title,
-    description: cooking ? COOKING_GEO_TLDR : (tour.seoDescription ?? tour.shortDescription),
+    description: cooking
+      ? COOKING_GEO_TLDR
+      : jeep
+        ? JEEP_GEO_TLDR
+        : (tour.seoDescription ?? tour.shortDescription),
     image: tour.heroImage.url.startsWith("http")
       ? tour.heroImage.url
       : `${SITE_URL}${tour.heroImage.url}`,
@@ -132,9 +164,11 @@ function buildTourSchema(tour: Tour) {
       "@type": "Place",
       name: cooking
         ? COOKING_GEO_ENTITY.area
-        : tour.slug === "bali-atv-adventure"
-          ? "Sedang, Abiansemal, Badung, Bali"
-          : tour.area ?? "Ubud, Bali",
+        : jeep
+          ? JEEP_GEO_ENTITY.area
+          : tour.slug === "bali-atv-adventure"
+            ? "Sedang, Abiansemal, Badung, Bali"
+            : tour.area ?? "Ubud, Bali",
     },
     itinerary: tour.itinerary.map((item, index) => ({
       "@type": "ListItem",
@@ -142,6 +176,48 @@ function buildTourSchema(tour: Tour) {
       name: item.title,
       description: item.description,
     })),
+  }
+
+  if (jeep) {
+    return {
+      ...base,
+      category: "Sightseeing Tours",
+      offers: {
+        "@type": "AggregateOffer",
+        lowPrice: JEEP_GEO_ENTITY.groupPerPersonIdr,
+        highPrice: JEEP_GEO_ENTITY.soloIdr,
+        priceCurrency: "IDR",
+        offerCount: 3,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Solo traveler (1 guest)",
+            price: JEEP_GEO_ENTITY.soloIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "2 guests sharing",
+            price: JEEP_GEO_ENTITY.pairPerPersonIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "3+ guests sharing",
+            price: JEEP_GEO_ENTITY.groupPerPersonIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+        ],
+      },
+    }
   }
 
   if (cooking) {
@@ -260,6 +336,45 @@ function buildCookingQaSchemas() {
   }))
 }
 
+function buildJeepWebPageSchema(tour: Tour) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    dateModified: JEEP_GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".jeep-geo-tldr", ".jeep-geo-answer", ".geo-tldr"],
+    },
+    significantLink: [
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/pricing.md`,
+      `${SITE_URL}/tours/balinese-cooking-class`,
+      `${SITE_URL}/tours/ubud-ricefield-cycling-tour`,
+    ],
+  }
+}
+
+function buildJeepQaSchemas() {
+  return JEEP_GEO_FAQS.map((item, index) => ({
+    "@context": "https://schema.org",
+    "@type": "Question",
+    "@id": `${SITE_URL}/tours/batur-sunrise-jeep-tour#qa-${index + 1}`,
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+      url: `${SITE_URL}/tours/batur-sunrise-jeep-tour#jeep-geo`,
+    },
+  }))
+}
+
 export default async function TourPage({ params }: Props) {
   const { slug } = await params
   const tour = getTourBySlug(slug)
@@ -269,6 +384,7 @@ export default async function TourPage({ params }: Props) {
   }
 
   const cooking = isCookingTour(tour)
+  const jeep = isJeepTour(tour)
   const tourSchema = buildTourSchema(tour)
 
   const breadcrumbSchema = {
@@ -315,6 +431,23 @@ export default async function TourPage({ params }: Props) {
             }}
           />
           {buildCookingQaSchemas().map((qa) => (
+            <script
+              key={qa["@id"]}
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
+            />
+          ))}
+        </>
+      ) : null}
+      {jeep ? (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(buildJeepWebPageSchema(tour)),
+            }}
+          />
+          {buildJeepQaSchemas().map((qa) => (
             <script
               key={qa["@id"]}
               type="application/ld+json"
@@ -372,6 +505,11 @@ export default async function TourPage({ params }: Props) {
                       Updated {COOKING_GEO_UPDATED || GEO_UPDATED}
                     </span>
                   ) : null}
+                  {jeep ? (
+                    <span className="text-xs text-brand-green-light">
+                      Updated {JEEP_GEO_UPDATED || GEO_UPDATED}
+                    </span>
+                  ) : null}
                 </div>
 
                 <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight">
@@ -398,10 +536,15 @@ export default async function TourPage({ params }: Props) {
             )}
 
             {cooking ? <CookingGeoBlock /> : null}
+            {jeep ? <JeepGeoBlock /> : null}
 
             <section className="rounded-3xl border border-brand-green/10 bg-white p-6 md:p-8 shadow-sm">
               <h2 className="text-xl font-bold text-brand-green mb-4">
-                {cooking ? "About Tumang Bali Cooking Class" : "About This Experience"}
+                {cooking
+                  ? "About Tumang Bali Cooking Class"
+                  : jeep
+                    ? "About the Mount Batur Sunrise Jeep Tour"
+                    : "About This Experience"}
               </h2>
               <article className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>

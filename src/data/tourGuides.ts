@@ -137,6 +137,23 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Sarong rules before temple stops.',
     },
   ],
+  'batur-sunrise-jeep-tour': [
+    {
+      title: 'Mount Batur jeep tour price guide (2026)',
+      href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026',
+      blurb: 'Solo, pair, and group IDR tiers plus what\u2019s included.',
+    },
+    {
+      title: 'Jeep vs trekking to Mount Batur',
+      href: '/blog/mount-batur-jeep-vs-trekking',
+      blurb: 'Why most travelers skip the 2am hike for a 4\u00d7 4.',
+    },
+    {
+      title: 'Ubud hotel pickup explained',
+      href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
+      blurb: 'How early-morning pickup timing works by area.',
+    },
+  ],
   'half-day-ubud-tanah-lot-tour': [
     {
       title: 'Morning vs afternoon tours',
@@ -176,6 +193,10 @@ export const TOUR_HOST_NOTES: Record<
   'whitewater-rafting': {
     title: 'From our rafting crew',
     body: 'English-speaking river guides run Class II–III sections near Ubud with a full safety briefing, helmets, and life jackets before launch. We pace the day for first-timers and families — splash without extreme drops — then lunch after you dry off.',
+  },
+  'batur-sunrise-jeep-tour': {
+    title: 'From our Kintamani jeep drivers',
+    body: 'Our drivers know the volcanic tracks on Mount Batur\u2019s eastern flank well enough to time the climb for first light — hot drink in hand before the sky turns pink over Lake Batur and Mount Agung. No trekking boots needed; you stay seated in a private 4\u00d7 4 the whole way up, with breakfast served on top and an optional coffee plantation stop on the way home.',
   },
 }
 

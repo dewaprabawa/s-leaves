@@ -29,6 +29,7 @@ import {
 } from '@/lib/combos';
 import BookingTourDetailPanel from '@/components/BookingTourDetailPanel';
 import PromoPrice from '@/components/PromoPrice';
+import { notifyActivityClick, notifyBookingSubmitted } from '@/lib/web3forms';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -66,6 +67,7 @@ export function BookingPopup({
 }) {
   const [mounted, setMounted] = useState(false);
   const [guestName, setGuestName] = useState("");
+  const [guestEmail, setGuestEmail] = useState("");
   const [guestAge, setGuestAge] = useState("");
   const [guestType, setGuestType] = useState<"Adult" | "Child">("Adult");
   const [adults, setAdults] = useState(2);
@@ -97,6 +99,7 @@ export function BookingPopup({
     if (isOpen && tour) {
       setSelectedTourId(tour.id);
       setGuestName("");
+      setGuestEmail("");
       setGuestAge("");
       setGuestType("Adult");
       setAdults(Math.max(tour.minPax, 1));
@@ -116,6 +119,11 @@ export function BookingPopup({
       setMixIds(initialMixIds ?? []);
     }
   }, [isOpen, tour, initialMixIds]);
+
+  useEffect(() => {
+    if (!isOpen || !activeTour?.title) return
+    notifyActivityClick(activeTour.title, 'booking-popup')
+  }, [isOpen, activeTour?.id, activeTour?.title]);
 
   useEffect(() => {
     if (!activeTour) return
@@ -379,6 +387,19 @@ export function BookingPopup({
       total: totalCost,
     };
 
+    void notifyBookingSubmitted({
+      guestName: draft.guestName,
+      email: guestEmail.trim() || undefined,
+      activity: draft.activity,
+      date: draft.date,
+      time: draft.time,
+      guests: `${adults} adult(s)${kids > 0 ? `, ${kids} child(ren)` : ''}`,
+      location: draft.location,
+      price: formatIdr(draft.total),
+      notes: draft.notes,
+      source: 'booking-popup',
+    })
+
     setInvoice(draft);
     setStep('invoice');
   };
@@ -605,6 +626,16 @@ export function BookingPopup({
                   value={guestName} 
                   onChange={e => setGuestName(e.target.value)} 
                   placeholder="Full name"
+                  className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
+                />
+              </div>
+              <div className="sm:col-span-2">
+                <label className="block text-brand-green font-bold text-sm mb-2">Email</label>
+                <input
+                  type="email"
+                  value={guestEmail}
+                  onChange={(e) => setGuestEmail(e.target.value)}
+                  placeholder="you@email.com (optional — for booking copy)"
                   className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
                 />
               </div>

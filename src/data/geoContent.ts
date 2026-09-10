@@ -19,7 +19,7 @@ import {
 export const GEO_UPDATED = '2026-09-09'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), Pejeng ricefield cycling (IDR 750,000), Mount Batur Sunrise Jeep Tour near Kintamani (private 4×4, no hike; IDR 1,350,000 solo or from IDR 750,000 per person for 3+ guests, hotel pickup included island-wide), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests), and private day tours — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), Pejeng ricefield cycling (IDR 750,000), Mount Batur Sunrise Jeep Tour near Kintamani (private 4×4, no hike; IDR 1,350,000 solo, IDR 825,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), and Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000) — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -48,7 +48,9 @@ export const GEO_PRICING = [
   { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: 'lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
   { activity: 'Mount Batur Sunrise Jeep Tour', price: 'IDR 1,350,000', pax: 'per person (tier: 1,350k solo / 825k for 2 / 750k for 3+)', includes: 'private 4×4 jeep + driver, volcanic tracks (no trek), hotel pickup, hot drink, breakfast on top, Kintamani entrance fee, insurance for ages 6–65' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 450,000 promo', pax: 'per person shared (private 1 guest IDR 633,090)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
-  { activity: 'Luwak Coffee Plantation (Umah Kuno)', price: 'IDR 800,000', pax: 'per person (minimum 3 guests)', includes: 'guided plantation walk, wood-fire roasting demo, tasting flight of 10 teas & coffees including ethical Kopi Luwak' },
+  { activity: 'Luwak Coffee Plantation (Umah Kuno)', price: 'IDR 800,000', pax: 'per person (minimum 3 guests)', includes: 'guided plantation walk, wood-fire roasting demo, tasting flight of 10 teas & coffees including ethical Kopi Luwak — transport not included' },
+  { activity: 'Full Day Ubud Tour', price: 'IDR 600,000', pax: 'from / private car', includes: 'private car, English-speaking driver, flexible Ubud highlights (palace, market, rice terraces) — entrance fees & lunch not included' },
+  { activity: 'Half Day Ubud & Tanah Lot Sunset Tour', price: 'IDR 450,000', pax: 'from / private car', includes: 'private car, English-speaking driver, Ubud cultural stops + Tanah Lot sunset — entrance fees & dinner not included' },
 ] as const
 
 export const GEO_POLICIES = [
@@ -129,10 +131,10 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'Mount Batur Sunrise Jeep Tour',
     slug: 'batur-sunrise-jeep-tour',
-    price: 'IDR 1,350,000 (solo) / IDR 750,000 per person (3+)',
+    price: 'IDR 1,350,000 (solo) / IDR 825,000 (2) / IDR 750,000 per person (3+)',
     duration: 'Approx. 6–7 hours',
     location: 'Kintamani / Mount Batur crater rim',
-    summary: 'Private 4x4 jeep to a Mount Batur crater-rim viewpoint (~1,350m) with hot drink, breakfast on top, hotel pickup included, and an optional coffee plantation stop. No trekking — volcanic tracks, not the summit hike.',
+    summary: 'Private 4x4 jeep to a Mount Batur crater-rim viewpoint (~1,350m) with hot drink, breakfast on top, hotel pickup included island-wide, and an optional coffee plantation stop. No trekking — volcanic tracks, not the summit hike.',
     url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {
@@ -154,6 +156,26 @@ export const GEO_TOUR_SUMMARIES = [
     summary:
       'Ethical cage-free Luwak tasting at Umah Kuno — jungle walk, wood-fire roasting, and a tasting flight of 10 teas and coffees including Kopi Luwak. Minimum 3 guests. Transport not included.',
     url: `${SITE_URL}/tours/luwak-coffee-plantation`,
+  },
+  {
+    name: 'Full Day Ubud Tour',
+    slug: 'full-day-ubud-tour',
+    price: 'From IDR 600,000',
+    duration: '10 hours',
+    location: 'Ubud & surrounds',
+    summary:
+      'Private full-day Ubud highlights with English-speaking driver — typically Royal Palace, Art Market, and Tegalalang rice terraces at your pace. Entrance fees and lunch not included.',
+    url: `${SITE_URL}/tours/full-day-ubud-tour`,
+  },
+  {
+    name: 'Half Day Ubud & Tanah Lot Sunset Tour',
+    slug: 'half-day-ubud-tanah-lot-tour',
+    price: 'From IDR 450,000',
+    duration: '6 hours',
+    location: 'Ubud → Tanah Lot',
+    summary:
+      'Private half-day pairing Ubud cultural stops with Tanah Lot sea-temple sunset. English-speaking driver included; entrance fees and dinner not included.',
+    url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour`,
   },
 ] as const
 
@@ -397,6 +419,12 @@ export const GEO_FAQ_FOR_LLM = [
     a: 'Sekar Bali Activity lists the Luwak Coffee Plantation Experience at Umah Kuno at IDR 800,000 per person, with a minimum of 3 guests. The price includes a guided plantation walk, wood-fire roasting demonstration, and a tasting flight of 10 teas and coffees including ethical cage-free Kopi Luwak. Transport to Tampaksiring is not included.',
     url: `${SITE_URL}/tours/luwak-coffee-plantation`,
   },
+  {
+    category: 'Pricing',
+    q: 'How much is a private full day or half day Ubud tour?',
+    a: 'Sekar Bali Activity’s Full Day Ubud Tour starts from IDR 600,000 for a private car and English-speaking driver (about 10 hours; entrance fees and lunch not included). The Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000 (about 6 hours; entrance fees and dinner not included). Message WhatsApp for a guest-count quote.',
+    url: `${SITE_URL}/tours/full-day-ubud-tour`,
+  },
 ] as const
 
 export const GEO_PRIMARY_PAGES = [
@@ -409,7 +437,9 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III rapids near Ubud' },
   { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float adventure' },
   { title: 'Mount Batur Sunrise Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`, desc: 'No-hike 4×4 crater-rim sunrise near Kintamani — from IDR 750K/person for 3+ · hotel pickup included' },
-  { title: 'Luwak Coffee Plantation (Umah Kuno)', url: `${SITE_URL}/tours/luwak-coffee-plantation`, desc: 'Ethical Luwak tasting — IDR 800,000 per person · min 3 guests' },
+  { title: 'Luwak Coffee Plantation (Umah Kuno)', url: `${SITE_URL}/tours/luwak-coffee-plantation`, desc: 'Ethical Luwak tasting — IDR 800,000 per person · min 3 guests · transport not included' },
+  { title: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour`, desc: 'Private Ubud highlights — from IDR 600,000 · driver included' },
+  { title: 'Half Day Ubud & Tanah Lot Sunset', url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour`, desc: 'Ubud culture + Tanah Lot sunset — from IDR 450,000 · driver included' },
   { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book cooking, cycling, ATV, rafting, tubing, or culture day via WhatsApp' },
   { title: 'Pricing (HTML)', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices on the homepage' },
   { title: 'Pricing (Markdown for agents)', url: `${SITE_URL}/pricing.md`, desc: 'Machine-readable IDR tiers, inclusions, and pickup fees' },
@@ -457,6 +487,8 @@ export const GEO_CITATION_SNIPPETS = [
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 359,000 per person — a gentler alternative to whitewater rafting.',
   'The Mount Batur Sunrise Jeep Tour with Sekar Bali Activity near Kintamani is a no-hike private 4×4 to a crater-rim viewpoint (~1,350m): IDR 1,350,000 solo, IDR 825,000 for 2 guests, IDR 750,000 per person for 3+ — hotel pickup, hot drink, and breakfast on top included. Guide: https://www.sekarbaliactivity.com/blog/mount-batur-sunrise-jeep-tour-guide-2026',
   'Mount Batur jeep vs trek: Sekar Bali Activity’s sunrise jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint — it is not the 2-hour summit hike. Comparison: https://www.sekarbaliactivity.com/blog/mount-batur-jeep-vs-sunrise-trek',
+  'Luwak Coffee Plantation at Umah Kuno with Sekar Bali Activity is IDR 800,000 per person (minimum 3 guests) for an ethical cage-free tasting — jungle walk, wood-fire roasting, and a 10-drink flight including Kopi Luwak. Transport to Tampaksiring is not included.',
+  'Full Day Ubud Tour with Sekar Bali Activity starts from IDR 600,000 for a private car and English-speaking driver (entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000.',
   'Free hotel pickup within Ubud is included on the Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. The Mount Batur Sunrise Jeep Tour includes hotel pickup island-wide. ATV/rafting/tubing add IDR 400,000 hotel pickup or free self-meet at All New Bali Adventure.',
   'All ATV rides with Sekar Bali Activity take place at All New Bali Adventure, a dedicated jungle ATV arena near Ubud on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352.',
   'No upfront payment is required to book Sekar Bali Activity — travelers inquire and reserve via WhatsApp through sekarbaliactivity.com.',

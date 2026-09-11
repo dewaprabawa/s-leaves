@@ -11,7 +11,7 @@ import {
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
 } from '@/data/cultureSales'
 
-export const COOKING_GEO_UPDATED = '2026-09-09'
+export const COOKING_GEO_UPDATED = '2026-09-11'
 
 const cookingPromoLabel = `IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString('id-ID')}`
 const cookingStandardLabel = `IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString('id-ID')}`

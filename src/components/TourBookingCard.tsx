@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ArrowRight, Clock, ExternalLink, MessageCircle } from "lucide-react"
+import { ArrowRight, Car, Clock, ExternalLink, MapPin, MessageCircle } from "lucide-react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
@@ -20,6 +20,8 @@ export type TourBookingCardProps = {
   tourSlug: string
   title: string
   duration: string
+  pickup?: string
+  venue?: string
   basePrice: number
   childPrice?: number
   getYourGuideUrl?: string
@@ -82,7 +84,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         times: isMorning ? ["08:30"] : isPrivate ? ["08:30", "13:30"] : ["13:30"],
         adultPrice: props.basePrice + opt.priceDiff,
         kidPrice: props.childPrice ?? null,
-        minPax: /tandem/i.test(opt.name) ? 2 : 1,
+        minPax: /tandem|2 guests/i.test(opt.name) ? 2 : 1,
         getYourGuideUrl: props.getYourGuideUrl,
         freeUbudPickup: props.tourSlug === "balinese-cooking-class",
       }
@@ -113,8 +115,12 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const primary = configs[0]
   const { promoPrice, standardPrice, tierLabel } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
   const hasPromo = standardPrice > promoPrice
+  const consultationActivity =
+    props.tourSlug === "balinese-cooking-class"
+      ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
+      : props.title
   const consultationUrl = buildWhatsAppConsultationUrl(
-    props.title,
+    consultationActivity,
     `${SITE_URL}/tours/${props.tourSlug}`,
   )
 
@@ -192,9 +198,23 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           ) : null}
         </div>
 
-        <div className="flex items-center gap-2 text-sm text-brand-green-light">
-          <Clock className="w-4 h-4 text-brand-green shrink-0" />
-          <span>{props.duration}</span>
+        <div className="space-y-1.5 text-sm text-brand-green-light">
+          <div className="flex items-center gap-2">
+            <Clock className="w-4 h-4 text-brand-green shrink-0" />
+            <span>{props.duration}</span>
+          </div>
+          {props.pickup ? (
+            <div className="flex items-center gap-2">
+              <Car className="w-4 h-4 text-brand-green shrink-0" />
+              <span>{props.pickup}</span>
+            </div>
+          ) : null}
+          {props.venue ? (
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-brand-green shrink-0" />
+              <span>{props.venue}</span>
+            </div>
+          ) : null}
         </div>
 
         <p className="text-xs text-brand-green-light leading-relaxed">

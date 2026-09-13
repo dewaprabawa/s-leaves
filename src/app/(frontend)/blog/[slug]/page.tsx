@@ -23,9 +23,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) return { title: 'Article Not Found' }
 
+  const keywords =
+    post.slug === 'mount-batur-sunrise-jeep-tour-guide-2026' ||
+    post.slug === 'mount-batur-jeep-vs-sunrise-trek'
+      ? [
+          'Mount Batur sunrise jeep tour',
+          'Mount Batur jeep vs trek',
+          'Kintamani sunrise jeep',
+          'Batur sunrise without hiking',
+        ]
+      : undefined
+
   return {
     title: post.title,
     description: post.excerpt,
+    keywords,
     alternates: {
       canonical: `/blog/${post.slug}`,
     },
@@ -55,6 +67,10 @@ export default async function BlogPostPage({ params }: Props) {
     notFound()
   }
 
+  const isBaturJeepPost =
+    post.slug === 'mount-batur-sunrise-jeep-tour-guide-2026' ||
+    post.slug === 'mount-batur-jeep-vs-sunrise-trek'
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -80,7 +96,18 @@ export default async function BlogPostPage({ params }: Props) {
         "@type": "ImageObject",
         "url": "https://www.sekarbaliactivity.com/logo.png"
       }
-    }
+    },
+    ...(isBaturJeepPost
+      ? {
+          about: {
+            "@type": "TouristTrip",
+            name: "Mount Batur Sunrise Jeep Tour",
+            url: "https://www.sekarbaliactivity.com/tours/batur-sunrise-jeep-tour",
+          },
+          keywords:
+            "Mount Batur sunrise jeep, Kintamani, no hike, Lake Batur, Mount Agung, private 4x4",
+        }
+      : {}),
   }
 
   const breadcrumbSchema = {

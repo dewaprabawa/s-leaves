@@ -38,7 +38,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "adventure",
     label: TOUR_CATEGORY_LABELS.adventure,
-    blurb: "ATV, rafting & canyon tubing",
+    blurb: "ATV, rafting, canyon tubing & Mount Batur sunrise jeep",
     href: "/#adventure",
   },
   {
@@ -65,6 +65,7 @@ export function getCatalogTopPicks(): Tour[] {
   const priority = [
     'balinese-cooking-class',
     'ubud-ricefield-cycling-tour',
+    'batur-sunrise-jeep-tour',
     'bali-atv-adventure',
   ]
   const ranked = [...picks].sort((a, b) => {

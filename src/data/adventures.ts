@@ -19,6 +19,7 @@ export type AdventureCatalogItem = {
   times: string[]
   minPax: number
   freeUbudPickup?: boolean
+  pickupIncluded?: boolean
 }
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"] as const
@@ -105,6 +106,27 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     tourSlug: "canyon-tubing",
     times: [...DEFAULT_TIMES],
     minPax: 1,
+  },
+  {
+    id: "jeep-sunrise",
+    name: "Mount Batur Sunrise Jeep Tour",
+    tagline: "Sunrise without the hike",
+    paxLabel: "Per person (private jeep)",
+    description:
+      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, and breakfast served on top as the sun rises over Lake Batur and Mount Agung. Solo from IDR 1,350,000, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
+    highlights: [
+      "4×4 jeep ride up Mount Batur's volcanic tracks",
+      "Sunrise over Lake Batur and Mount Agung",
+      "Hot drink en route + breakfast on top",
+      "Hotel pickup included · no trekking",
+    ],
+    duration: "6–7 hours",
+    image: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
+    tourSlug: "batur-sunrise-jeep-tour",
+    times: ["02:30", "03:00"],
+    minPax: 1,
+    pickupIncluded: true,
   },
 ]
 

@@ -7,6 +7,7 @@ import { bookingSchema, type BookingFormData } from "@/lib/validations/booking"
 import { submitBooking, checkAvailability } from "@/app/actions/bookTour"
 import { calculateTourPrice } from "@/lib/pricing"
 import { formatIdr, openWhatsAppBooking } from "@/lib/whatsapp"
+import { notifyBookingSubmitted } from "@/lib/web3forms"
 import { Calendar, Users, User, Mail, Phone, MessageSquare, CheckCircle2, ChevronRight, ChevronLeft, Loader2, Sparkles, AlertCircle, ShoppingBag, ExternalLink, MapPin } from "lucide-react"
 import { useCurrency } from "@/context/CurrencyContext"
 
@@ -131,6 +132,18 @@ export default function BookingForm({ tour }: Props) {
     try {
       // Persist booking attempt, then open WhatsApp with full details
       await submitBooking(data)
+
+      void notifyBookingSubmitted({
+        guestName: data.guestName,
+        email: data.email,
+        activity: data.tourTitle,
+        date: data.date,
+        guests: `${data.adults} adult(s)${data.children ? `, ${data.children} child(ren)` : ""}`,
+        location: data.pickupLocation,
+        price: formatIdr(data.totalPrice),
+        notes: data.specialRequests,
+        source: "tour-booking-form",
+      })
 
       openWhatsAppBooking({
         guestName: data.guestName,

@@ -80,7 +80,7 @@ export const Transfers: CollectionConfig = {
                   name: 'basePrice',
                   type: 'number',
                   required: true,
-                  label: 'Base Flat Price (USD)',
+                  label: 'Base Flat Price (IDR)',
                 },
                 {
                   name: 'media',
@@ -110,7 +110,7 @@ export const Transfers: CollectionConfig = {
                   name: 'additionalPrice',
                   type: 'number',
                   required: true,
-                  label: 'Additional Fee (USD)',
+                  label: 'Additional Fee (IDR)',
                 },
                 {
                   name: 'description',

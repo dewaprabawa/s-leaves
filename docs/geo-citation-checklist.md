@@ -1,19 +1,45 @@
 # GEO / LLM citation readiness checklist
 
-**Last run:** (automation A5 will update)  
-**Brand:** Sekar Bali Activity · https://www.sekarbaliactivity.com
+**Last run:** 2026-09-11  
+**Brand:** Sekar Bali Activity · https://www.sekarbaliactivity.com  
+**Scope:** Repo readiness for extractable answers — **not** a live ChatGPT / Perplexity / AI Overview citation scrape. No citation claims without tool evidence.
 
-| # | Prompt | Money URL | Must-include facts | Repo ready? | Notes |
-|---|--------|-----------|--------------------|-------------|-------|
-| 1 | How much is ATV in Ubud 2026? | /tours/… | | | |
-| 2 | Mount Batur sunrise without hiking | /tours/… | | | |
-| 3 | Best small-group cooking class Ubud price | /tours/… | | | |
-| 4 | Ubud ricefield cycling with hotel pickup | /tours/… | | | |
-| 5 | Ethical luwak coffee tasting near Ubud | /tours/… | | | |
-| 6 | ATV + river tubing Ubud combo | /tours/… | | | |
-| 7 | Rafting vs canyon tubing near Ubud | /tours/… | | | |
-| 8 | Which tours include free Ubud hotel pickup? | /tours/… + policies | | | |
+**Sources checked:** `src/data/tours.ts` (canonical IDR / pickup / venue), `src/lib/pricing.ts` (tiers + IDR 400,000 pickup fee), `src/data/geoContent.ts` (`buildLlmsTxt` / `buildPricingMd`, `GEO_UPDATED` 2026-09-09), supporting blog slugs in `src/data/blog.ts`.
+
+| # | Prompt | Money URL | Must-include facts (price · pickup · venue) | Repo ready? | Gaps |
+|---|--------|-----------|---------------------------------------------|-------------|------|
+| 1 | How much is ATV in Ubud 2026? | [/tours/bali-atv-adventure](https://www.sekarbaliactivity.com/tours/bali-atv-adventure) · spoke [/blog/how-much-does-atv-cost-bali-ubud-2026](https://www.sekarbaliactivity.com/blog/how-much-does-atv-cost-bali-ubud-2026) | **Price:** Single ATV IDR 750,000 / 725,000 / 700,000 (1 / 2 / 3+ riders); tandem IDR 1,100,000 / 1,060,000 / 1,030,000 per bike. Includes lunch, helmet, boot shoes, insurance ages 6–65. **Pickup:** optional IDR 400,000 hotel pickup, or free self-meet. **Venue:** All New Bali Adventure, Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 (near Ubud). | Yes | None for this prompt. Tiers + arena NAP are on the money page, FAQ, `GEO_PRICING`, and `llms.txt`. |
+| 2 | Mount Batur sunrise without hiking | [/tours/batur-sunrise-jeep-tour](https://www.sekarbaliactivity.com/tours/batur-sunrise-jeep-tour) · compare [/blog/mount-batur-jeep-vs-sunrise-trek](https://www.sekarbaliactivity.com/blog/mount-batur-jeep-vs-sunrise-trek) | **Price:** IDR 1,350,000 solo · 825,000 pp (2) · 750,000 pp (3+). Includes private 4×4 + driver, hot drink, breakfast on top, Kintamani entrance fee, insurance 6–65. **Pickup:** hotel pickup & drop-off **included island-wide** (typical 02:00–03:00). **Venue:** crater-rim viewpoint on Mount Batur’s eastern flank near Kintamani (~1,350 m) — **not** the summit trek. | Yes | None. Do not let answers claim the jeep reaches the summit. Optional Kintamani coffee stop ≠ Umah Kuno Luwak tour. |
+| 3 | Best small-group cooking class Ubud price | [/tours/balinese-cooking-class](https://www.sekarbaliactivity.com/tours/balinese-cooking-class) | **Price:** shared promo IDR 450,000 / person (was IDR 506,370); private 1 guest IDR 633,090; private 2 guests IDR 1,266,180. Max 8 on shared; 10+ dishes; AM market tour. **Pickup:** complimentary Ubud-area hotel pickup. **Venue:** Tumang village near Ubud; Chef Wayan Sudiana / Tumang Bali Cooking Class. | Yes | “Best” is subjective — repo is ready to be cited for **price, cap, pickup, and named kitchen**, not as a ranked roundup. |
+| 4 | Ubud ricefield cycling with hotel pickup | [/tours/ubud-ricefield-cycling-tour](https://www.sekarbaliactivity.com/tours/ubud-ricefield-cycling-tour) | **Price:** IDR 750,000 / person (tiers 750k / 725k / 700k). Includes bike, helmet, guide, lunch, insurance 6–65. **Pickup:** **free Ubud** hotel pickup & drop-off; outside Ubud + IDR 400,000. **Venue:** Pejeng village ricefields / Subak lanes — not Tegallalang mass terraces, not Kintamani downhill. | Yes | None for facts. Afternoon departure is the published schedule. |
+| 5 | Ethical luwak coffee tasting near Ubud | [/tours/luwak-coffee-plantation](https://www.sekarbaliactivity.com/tours/luwak-coffee-plantation) · spoke [/blog/how-to-spot-ethical-luwak-coffee-in-bali](https://www.sekarbaliactivity.com/blog/how-to-spot-ethical-luwak-coffee-in-bali) | **Price:** IDR 800,000 / person; **minimum 3 guests**. Includes guided walk, wood-fire roast, 10-drink flight including Kopi Luwak. **Pickup:** **transport not included** (~25 min from central Ubud). **Venue:** Umah Kuno, Tampaksiring / Ubud — wild, cage-free civets; not the optional Kintamani jeep coffee stop. | Yes | Pickup must stay “not included.” Do not merge this with the Batur jeep plantation stop. |
+| 6 | ATV + river tubing Ubud combo | [/tours/bali-atv-adventure](https://www.sekarbaliactivity.com/tours/bali-atv-adventure) · spoke [/blog/atv-river-tubing-wos-river-bali](https://www.sekarbaliactivity.com/blog/atv-river-tubing-wos-river-bali) | **Price:** ATV + Wos River tubing is a published **combo option**, but GEO / tour copy say **ask WhatsApp** — no fixed combo IDR on money or agent files. Standalone floor: ATV from IDR 750,000 + canyon tubing from IDR 359,000. **Pickup:** same as ATV/tubing — IDR 400,000 hotel pickup or free self-meet at the arena. **Venue:** All New Bali Adventure (ATV) then Wos River (tubing). | Partial | **No citable combo IDR** on `/llms.txt` or `/pricing.md`. Booking mix (`src/lib/combos.ts`) applies a 10% 2-activity discount, but that figure is **not** published on GEO surfaces — do not invent a combo price in answers. |
+| 7 | Rafting vs canyon tubing near Ubud | Compare [/blog/rafting-vs-tubing-vs-atv-near-ubud](https://www.sekarbaliactivity.com/blog/rafting-vs-tubing-vs-atv-near-ubud) · money [/tours/whitewater-rafting](https://www.sekarbaliactivity.com/tours/whitewater-rafting) · [/tours/canyon-tubing](https://www.sekarbaliactivity.com/tours/canyon-tubing) | **Price:** rafting IDR 500,000 (tiers 500k / 475k / 450k) · Class II–III, lunch, gear; tubing IDR 359,000 (359k / 335k / 320k) · Wos River float, no lunch in GEO includes. **Pickup:** both IDR 400,000 hotel pickup or self-meet. **Venue:** rafting near Ubud (Ayung / jungle canyon); tubing Wos River canyon / Pejeng. | Yes | Rafting + tubing **tour-page FAQs** still say “free Ubud pickup applies to the cycling tour only” and omit cooking-class free pickup. Comparison blog + `GEO_COMPARISONS` are accurate. |
+| 8 | Which tours include free Ubud hotel pickup? | Policy [/blog/ubud-hotel-pickup-bali-adventures-explained](https://www.sekarbaliactivity.com/blog/ubud-hotel-pickup-bali-adventures-explained) · plus cycling / cooking / jeep money pages | **Free Ubud pickup:** Ricefield Cycling + Tumang Cooking Class. **Island-wide pickup included:** Mount Batur Sunrise Jeep. **IDR 400,000 pickup (or free self-meet at All New Bali Adventure):** ATV, rafting, canyon tubing. **Not included:** Luwak (self-arrange to Tampaksiring). **Private-car tours:** Full Day Ubud + Half Day Tanah Lot include a driver/car (itinerary starts at hotel pickup) — that is the product, not the cycling-style “free Ubud add-on.” | Yes (policy + GEO FAQ) | `/pricing.md` **Pickup & transport** bullets cover cycling, cooking, jeep, ATV/rafting/tubing, self-meet — they do **not** mention day-tour hotel start or Luwak “no transport.” Rafting/tubing FAQs (see #7) under-state cooking free pickup. |
+| 9 | Full day private Ubud tour price | [/tours/full-day-ubud-tour](https://www.sekarbaliactivity.com/tours/full-day-ubud-tour) | **Price:** from IDR 600,000 — private car + English-speaking driver, ~10 hours. Entrance fees and lunch **not** included. **Pickup:** private driver collects from hotel (Ubud-area itinerary). **Venue / stops:** Ubud Royal Palace, Art Market, Tegalalang rice terraces (flexible). | Yes | Pickup is implied by “private car” in `GEO_PRICING` / `pricing.md` rather than an explicit “hotel pickup included” bullet. Guest-count quote still goes to WhatsApp. |
+| 10 | Half day Tanah Lot sunset from Ubud price | [/tours/half-day-ubud-tanah-lot-tour](https://www.sekarbaliactivity.com/tours/half-day-ubud-tanah-lot-tour) | **Price:** from IDR 450,000 — private car + English-speaking driver, ~6 hours. Entrance fees and dinner **not** included. **Pickup:** typical ~13:00 hotel pickup (shifts with sunset). **Venue:** Ubud cultural stops → Tanah Lot sea temple sunset. | Yes | Same pickup-bullet gap as #9. Do not imply dinner or temple tickets are included. |
 
 ## llms.txt / pricing.md sync
-- [ ] All tours listed with IDR
-- [ ] Pickup rules accurate
+
+Generators: `src/data/geoContent.ts` → `buildLlmsTxt()` (`/llms.txt`, `/.well-known/llms.txt`) and `buildPricingMd()` (`/pricing.md`). Compared to all 9 slugs in `TOURS`.
+
+| Tour | Slug | Canonical IDR (`tours.ts`) | In `GEO_PRICING` / `/pricing.md` | In `GEO_TOUR_SUMMARIES` / `/llms.txt` | Pickup rule in generators |
+|------|------|----------------------------|-----------------------------------|---------------------------------------|---------------------------|
+| ATV (single / tandem) | `bali-atv-adventure` | 750,000+ / 1,100,000 tandem | Yes — tiers match `TIER_PRICES_IDR` | Yes | IDR 400,000 or self-meet at All New Bali Adventure |
+| Whitewater rafting | `whitewater-rafting` | 500,000 | Yes — 500k / 475k / 450k | Yes | IDR 400,000 or self-meet |
+| Canyon tubing | `canyon-tubing` | 359,000 | Yes — 359k / 335k / 320k | Yes | IDR 400,000 or self-meet |
+| Ricefield cycling | `ubud-ricefield-cycling-tour` | 750,000 | Yes — 750k / 725k / 700k | Yes | Free Ubud |
+| Mount Batur sunrise jeep | `batur-sunrise-jeep-tour` | 1,350,000 (825k / 750k) | Yes | Yes | Island-wide included |
+| Tumang cooking class | `balinese-cooking-class` | 450,000 promo | Yes + cooking detail block | Yes | Complimentary Ubud |
+| Luwak (Umah Kuno) | `luwak-coffee-plantation` | 800,000 · min 3 | Yes | Yes | Transport not included |
+| Full Day Ubud | `full-day-ubud-tour` | 600,000 | Yes | Yes | Private car (pickup not in the shared pickup bullet list) |
+| Half Day Tanah Lot | `half-day-ubud-tanah-lot-tour` | 450,000 | Yes | Yes | Private car (same) |
+
+- [x] All 9 tours listed with IDR in `/llms.txt` and `/pricing.md` generators
+- [x] Pickup rules accurate for ATV / rafting / tubing (400k), cycling + cooking (free Ubud), jeep (island-wide), Luwak (no transport)
+- [ ] Pickup bullet list does not yet name day-tour hotel start (not wrong — incomplete)
+- [ ] ATV + tubing combo IDR not published on agent files (intentional WhatsApp quote)
+
+**GEO copy this run:** no `geoContent.ts` edits. Prices and pickup rules match `tours.ts` / `pricing.ts`. Nothing was clearly wrong enough for a one-line fact fix.
+
+**Live citations:** not tested. This file is readiness only.

@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Camera, Check, Clock } from "lucide-react"
+import { ArrowLeft, Camera, Car, Check, Clock, MapPin } from "lucide-react"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
@@ -58,6 +58,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = tour.seoTitle ?? tour.title
   const description = tour.seoDescription ?? tour.shortDescription
+  // seoTitle is already a complete SERP string (≤60). Absolute avoids
+  // `| Sekar Bali Activity` from the root template truncating price/CTA.
   const keywords = isCookingTour(tour)
     ? [
         "cooking class Ubud",
@@ -100,7 +102,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title,
+    title: tour.seoTitle ? { absolute: tour.seoTitle } : title,
     description,
     keywords,
     alternates: {
@@ -191,6 +193,14 @@ function buildTourSchema(tour: Tour) {
             ? "Kintamani, Mount Batur, Bali"
           : tour.area ?? "Ubud, Bali",
     },
+    ...(tour.venue
+      ? {
+          location: {
+            "@type": "Place",
+            name: tour.venue,
+          },
+        }
+      : {}),
     itinerary: tour.itinerary.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -385,6 +395,8 @@ function buildCookingWebPageSchema(tour: Tour) {
     significantLink: [
       `${SITE_URL}/book?activity=balinese-cooking-class`,
       `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,
+      `${SITE_URL}/blog/inside-balinese-cooking-class-pejeng`,
+      `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
       COOKING_GEO_ENTITY.moneyPage,
@@ -499,6 +511,18 @@ export default async function TourPage({ params }: Props) {
                     <Clock className="w-4 h-4 text-brand-green" />
                     {tour.duration}
                   </span>
+                  {tour.pickup ? (
+                    <span className="inline-flex items-center gap-1.5 text-sm text-brand-green-light">
+                      <Car className="w-4 h-4 text-brand-green" />
+                      {tour.pickup}
+                    </span>
+                  ) : null}
+                  {tour.venue ? (
+                    <span className="inline-flex items-center gap-1.5 text-sm text-brand-green-light">
+                      <MapPin className="w-4 h-4 text-brand-green" />
+                      {tour.venue}
+                    </span>
+                  ) : null}
                   {cooking ? (
                     <span className="text-sm font-bold text-brand-green">
                       <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
@@ -666,6 +690,8 @@ export default async function TourPage({ params }: Props) {
               tourSlug={tour.slug}
               title={tour.title}
               duration={tour.duration}
+              pickup={tour.pickup}
+              venue={tour.venue}
               basePrice={tour.basePrice}
               childPrice={tour.childPrice}
               getYourGuideUrl={tour.getYourGuideUrl}

@@ -1,3 +1,13 @@
+import {
+  COOKING_CLASS_PRICE_IDR,
+  COOKING_CLASS_PRIVATE_COUPLE_IDR,
+  COOKING_CLASS_PRIVATE_SOLO_IDR,
+  COOKING_CLASS_STANDARD_PRICE_IDR,
+} from "@/data/cultureSales"
+
+const COOKING_PRIVATE_SOLO_DIFF =
+  COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
+
 export interface TourAddon {
   id: string
   name: string
@@ -50,6 +60,10 @@ export interface Tour {
   category: TourCategoryId
   /** Optional area label shown on discovery cards (e.g. Ubud / Pejeng). */
   area?: string
+  /** Above-the-fold venue chip (kitchen, arena, trailhead). */
+  venue?: string
+  /** Above-the-fold pickup chip (free Ubud, island-wide, surcharge). */
+  pickup?: string
   /** Featured on homepage top-picks rail when true. */
   isTopPick?: boolean
   duration: string
@@ -986,16 +1000,18 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
   },
   {
     id: "balinese-cooking-class",
-    title: "Tumang Bali Cooking Class",
+    title: "Tumang Bali Cooking Class near Ubud",
     slug: "balinese-cooking-class",
     category: "food",
     area: "Tumang village / Ubud",
+    venue: "Tumang village near Ubud",
+    pickup: "Free Ubud-area hotel pickup",
     isTopPick: true,
     duration: "3–4 Hours",
-    basePrice: 450000,
-    seoTitle: "Cooking Class Ubud | Tumang Promo IDR 450K",
+    basePrice: COOKING_CLASS_PRICE_IDR,
+    seoTitle: "Cooking Class Ubud | Tumang · Free Pickup 450K",
     seoDescription:
-      "Tumang Bali Cooking Class near Ubud — market tour, rice-field walk, 10+ dishes, max 8 guests. Promo IDR 450,000 / person (was 506,370). Free Ubud pickup. Book on WhatsApp.",
+      "Tumang Bali Cooking Class near Ubud — AM market tour, 10+ dishes, max 8 guests. Promo IDR 450,000 (was 506,370) + free Ubud pickup. WhatsApp booking.",
     heroImage: {
       url: "/images/cooking/satay-class.jpg",
       alt: "Guests preparing sate skewers during Tumang Bali Cooking Class near Ubud",
@@ -1127,17 +1143,22 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         name: "Shared morning class (market tour)",
         priceDiff: 0,
-        description: "08:30 start · pasar + rice-field walk · max 8 · promo IDR 450,000",
+        description: `08:30 start · pasar + rice-field walk · max 8 · promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}`,
       },
       {
         name: "Shared afternoon class",
         priceDiff: 0,
-        description: "Afternoon · rice-field walk + kitchen · max 8 · promo IDR 450,000",
+        description: `Afternoon · rice-field walk + kitchen · max 8 · promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}`,
       },
       {
         name: "Private class (1 guest)",
-        priceDiff: 126720,
-        description: "Exclusive kitchen · IDR 633,090",
+        priceDiff: COOKING_PRIVATE_SOLO_DIFF,
+        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")}`,
+      },
+      {
+        name: "Private class (2 guests)",
+        priceDiff: COOKING_PRIVATE_SOLO_DIFF,
+        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} total`,
       },
     ],
     addons: [],
@@ -1145,8 +1166,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         id: "faq-cook-1",
         question: "How much is Tumang Bali Cooking Class?",
-        answer:
-          "Shared small-group class is promo IDR 450,000 per person (was IDR 506,370). Private kitchen is IDR 633,090 for 1 guest, or IDR 1,266,180 for 2 guests. Complimentary Ubud-area hotel pickup is included.",
+        answer: `Shared small-group class is promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")} per person (was IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString("id-ID")}). Private kitchen is IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")} for 1 guest, or IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} for 2 guests. Complimentary Ubud-area hotel pickup is included.`,
       },
       {
         id: "faq-cook-2",

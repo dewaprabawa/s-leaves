@@ -98,6 +98,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'What the day feels like with a village chef.',
     },
     {
+      title: 'Ubud hotel pickup explained',
+      href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
+      blurb: 'Free Ubud pickup on Tumang cooking — when a surcharge applies.',
+    },
+    {
       title: 'Base Genep spice paste guide',
       href: '/blog/what-is-base-genep-balinese-spice-paste-guide',
       blurb: 'The bumbu foundation you’ll grind in class.',

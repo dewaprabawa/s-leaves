@@ -1,6 +1,6 @@
 # SEO weekly backlog
 
-**Last run:** 2026-09-11 (A6 Tour QA — `balinese-cooking-class`)  
+**Last run:** 2026-09-14 (A3 cluster — `cooking-class-ubud-price-2026-worth-it`)  
 **Owner:** Sekar Bali marketing / Cursor automation A2
 
 ## Inbox
@@ -16,7 +16,10 @@
 ## Next articles to write
 | Priority | Working title | Target money page | Status |
 |----------|---------------|-------------------|--------|
-| P0 | | /tours/… | todo |
+| P0 | Cooking Class Ubud Price 2026: Is It Worth It? | /tours/balinese-cooking-class | drafted 2026-09-14 |
+| P0 | Vegetarian / vegan Tumang menu | /tours/balinese-cooking-class | todo |
+| P0 | Morning market vs afternoon class | /tours/balinese-cooking-class | todo |
+| P0 | ATV Ubud unwritten spoke (price already live) | /tours/bali-atv-adventure | todo |
 
 ## Tour QA notes
 <!-- A6 appends here -->

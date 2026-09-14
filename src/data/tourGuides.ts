@@ -88,6 +88,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'balinese-cooking-class': [
     {
+      title: 'Cooking class Ubud price 2026 — worth it?',
+      href: '/blog/cooking-class-ubud-price-2026-worth-it',
+      blurb: 'IDR 450K promo, pickup, duration, and an honest verdict.',
+    },
+    {
       title: 'Cycling + Tumang cooking itinerary',
       href: '/blog/cycling-cooking-class-ubud-full-day-itinerary',
       blurb: 'Morning paddies, afternoon kitchen.',

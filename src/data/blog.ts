@@ -1288,7 +1288,7 @@ Book the [Luwak Coffee Plantation](/tours/luwak-coffee-plantation) tasting, or b
 **How much does the Ubud Ricefield Cycling Tour cost?** Sekar Bali Activity offers the 2-hour Ubud Ricefield Cycling Tour for **IDR 750,000 per person**, including **free hotel pickup within Ubud**, lunch, plus a guided ride through Pejeng rice terraces and village life.
 
 > **Key Takeaways**
-> - **IDR 750,000** per person — the only tour with free Ubud pickup
+> - **IDR 750,000** per person — free Ubud hotel pickup (Tumang cooking class also includes complimentary Ubud pickup)
 > - 8-step itinerary: ricefield cycling, harvesting, Balinese house visit, carving art, and local village life
 > - Lunch included at a local village restaurant
 > - Gentle village paths — suitable for families, couples, and first-time cyclists
@@ -1523,7 +1523,7 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
 > - **Operator:** Sekar Bali Activity (near Ubud)
 > - **Single ATV:** IDR 750,000 · **Tandem ATV:** IDR 1,100,000
 > - **Included:** lunch, boot shoes, helmet, insurance, safety briefing
-> - **Pickup:** IDR 400,000 hotel pickup charge (cycling tour has free Ubud pickup only)
+> - **Pickup:** IDR 400,000 hotel pickup or free self-meet (cycling and Tumang cooking include free Ubud pickup)
 
 ---
 
@@ -1641,7 +1641,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 | --- | --- | --- | --- | --- |
 | **Price** | IDR 750K+ | IDR 500K | IDR 359K | IDR 750K |
 | **Intensity** | High | Medium–High | Low–Medium | Low |
-| **Duration** | 2–4 hrs | Half day | 2–3 hrs | 2 hours |
+| **Duration** | 2–4 hrs | 3 hours | 2.5 hours | 2 hours |
 | **Environment** | Jungle mud track | River rapids | River float | Rice terraces |
 | **Free Ubud pickup** | No | No | No | Yes |
 | **Tour page** | [ATV](/tours/bali-atv-adventure) | [Rafting](/tours/whitewater-rafting) | [Tubing](/tours/canyon-tubing) | [Cycling](/tours/ubud-ricefield-cycling-tour) |

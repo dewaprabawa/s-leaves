@@ -49,6 +49,8 @@ export interface TourConfig {
   pickupIncluded?: boolean
   /** True only for activities that actually depart from the All New Bali Adventure arena (ATV, rafting, canyon tubing) */
   meetsAtArena?: boolean
+  /** Self-meet only — do not offer hotel pickup (Luwak coffee plantation) */
+  pickupNotOffered?: boolean
 }
 
 export function BookingPopup({
@@ -112,7 +114,10 @@ export function BookingPopup({
       setLocationDetails("");
       setNotes("");
       setShowDetails(false);
-      setWantsPickup(tour.pickupIncluded === true || tour.freeUbudPickup === true);
+      setWantsPickup(
+        tour.pickupNotOffered !== true &&
+          (tour.pickupIncluded === true || tour.freeUbudPickup === true),
+      );
       setSameDropOff(false);
       setStep('form');
       setInvoice(null);
@@ -130,7 +135,10 @@ export function BookingPopup({
     setAdults((prev) => Math.max(activeTour.minPax, prev || activeTour.minPax))
     setTime(activeTour.times[0] || "")
     setShowDetails(false)
-    setWantsPickup(activeTour.pickupIncluded === true || activeTour.freeUbudPickup === true)
+    setWantsPickup(
+      activeTour.pickupNotOffered !== true &&
+        (activeTour.pickupIncluded === true || activeTour.freeUbudPickup === true),
+    )
     const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
     setMixIds((prev) => prev.filter((id) => allowed.has(id as MixableActivityId) && id !== activeTour.id))
   }, [activeTour?.id])
@@ -202,6 +210,7 @@ export function BookingPopup({
   });
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupIncluded = activeTour.pickupIncluded === true;
+  const pickupNotOffered = activeTour.pickupNotOffered === true;
   const meetsAtArena = activeTour.meetsAtArena === true;
   const pickupQuote = quotePickup({
     wantsPickup,
@@ -504,7 +513,7 @@ export function BookingPopup({
                  isOutUbud ? (
                    <span className="text-red-600 font-bold block">Out of Ubud: hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
                  ) : (
-                   <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free Pickup (cycling)</span>
+                   <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free pickup</span>
                  )
                ) : (
                  <span className="text-red-600 font-bold block">Hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
@@ -679,6 +688,13 @@ export function BookingPopup({
                   Pickup &amp; drop-off is included in this tour&apos;s price — no arena self-meet and no extra fee. Add your hotel address below.
                 </span>
               </div>
+            ) : pickupNotOffered ? (
+              <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 text-sm">
+                <span className="font-bold text-brand-green block mb-0.5">Transport not included</span>
+                <span className="text-brand-green-light">
+                  Arrange your own transport to the venue. This experience does not include hotel pickup.
+                </span>
+              </div>
             ) : (
               <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 shadow-sm">
                 <input
@@ -732,7 +748,7 @@ export function BookingPopup({
               <p className="font-bold text-brand-green text-sm">Grab / GoCar vs our pickup</p>
               <p>Typical Grab or GoCar one-way Ubud ↔ arena: ~IDR {pickupQuote.grabOneWayTypical.toLocaleString('id-ID')} (est.)</p>
               <p>
-                Our pickup: <strong className="text-brand-green">{pickupQuote.total > 0 ? formatIdr(pickupQuote.total) : 'Free (cycling in Ubud)'}</strong>
+                Our pickup: <strong className="text-brand-green">{pickupQuote.total > 0 ? formatIdr(pickupQuote.total) : 'Free (Ubud area)'}</strong>
                 {pickupQuote.total > 0 && pickupQuote.savingsVsGrabRoundTrip > 0 && sameDropOff
                   ? ` · saves ~${formatIdr(pickupQuote.savingsVsGrabRoundTrip)} vs Grab round trip`
                   : pickupQuote.total > 0 && pickupQuote.savingsVsGrabOneWay > 0 && !sameDropOff
@@ -762,7 +778,10 @@ export function BookingPopup({
             </>
             ) : (
             <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
-              <span className="font-bold text-brand-green">Meeting:</span> Self-arranged — no fixed arena for this tour. Check &quot;I need hotel pickup&quot; above, or add details in Special Notes.
+              <span className="font-bold text-brand-green">Meeting:</span>{" "}
+              {pickupNotOffered
+                ? "Self-arranged — transport is not included. Add venue notes under Special Notes if needed."
+                : "Self-arranged — no fixed arena for this tour. Check \"I need hotel pickup\" above, or add details in Special Notes."}
             </div>
             )}
 

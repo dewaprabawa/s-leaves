@@ -50,6 +50,10 @@ function isLuwakTour(tour: Tour) {
   return tour.slug === "luwak-coffee-plantation"
 }
 
+function isAtvTour(tour: Tour) {
+  return tour.slug === "bali-atv-adventure"
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const tour = getTourBySlug(slug)
@@ -92,7 +96,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             "luwak coffee price Bali",
             "Sekar Bali Activity",
           ]
-        : undefined
+        : isAtvTour(tour)
+          ? [
+              "ATV ride Ubud",
+              "ATV Ubud price",
+              "quad bike Ubud",
+              "tandem ATV Ubud",
+              "All New Bali Adventure",
+              "ATV river tubing Ubud",
+              "Sekar Bali Activity",
+            ]
+          : undefined
 
   const ogImage = {
     url: tour.heroImage.url,
@@ -137,7 +151,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
               "geo.region": "ID-BA",
               "geo.placename": "Tampaksiring, Ubud, Bali",
             }
-          : undefined,
+          : isAtvTour(tour)
+            ? {
+                "geo.region": "ID-BA",
+                "geo.placename": "Sedang, Abiansemal, Ubud, Bali",
+              }
+            : undefined,
   }
 }
 
@@ -264,6 +283,45 @@ function buildTourSchema(tour: Tour) {
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/book?activity=balinese-cooking-class`,
+          },
+        ],
+      },
+    }
+  }
+
+  if (isAtvTour(tour)) {
+    return {
+      ...base,
+      location: {
+        "@type": "Place",
+        name: tour.venue ?? "All New Bali Adventure, Sedang",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(tour.basePrice),
+        highPrice: String(TIER_PRICES_IDR["tandem-atv"][0]),
+        priceCurrency: "IDR",
+        offerCount: 2,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Single ATV Ride",
+            price: String(tour.basePrice),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "Tandem ATV Ride",
+            price: String(TIER_PRICES_IDR["tandem-atv"][0]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
           },
         ],
       },
@@ -534,6 +592,11 @@ export default async function TourPage({ params }: Props) {
                     <span className="text-sm font-bold text-brand-green">
                       From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · solo{" "}
                       {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][0])}
+                    </span>
+                  ) : isAtvTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      From {formatIdr(tour.basePrice)} single · tandem{" "}
+                      {formatIdr(TIER_PRICES_IDR["tandem-atv"][0])}
                     </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">

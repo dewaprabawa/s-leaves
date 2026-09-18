@@ -97,18 +97,19 @@ export interface Tour {
 export const TOURS: Tour[] = [
   {
     id: "bali-atv-adventure",
-    title: "Bali ATV Quad Bike Adventure & River Tubing",
+    title: "Bali ATV Quad Bike Adventure near Ubud",
     slug: "bali-atv-adventure",
     category: "adventure",
     area: "Sedang / Ubud",
+    venue: "All New Bali Adventure, Sedang",
     pickup: "Hotel pickup IDR 400,000 — optional",
     isTopPick: true,
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "ATV Ride Ubud from IDR 750K",
+    seoTitle: "ATV Ride Ubud from IDR 750K | Tandem 1.1M",
     seoDescription:
-      "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Optional Wos tubing. WhatsApp booking.",
+      "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Hotel pickup IDR 400K or self-meet. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV jungle adventure ride through tropical rainforest trails",
@@ -137,6 +138,13 @@ Hop on a powerful ATV and race scenic off-road trails with expert guides. Packag
 
 ### Combine with River Tubing or Rafting
 Want even more adventure? Pair your ATV ride with river tubing on the Wos River, or ask about an ATV + rafting combo. After racing the ATV mud track, cool down as you float the river or paddle whitewater — favourite combos for guests who want a full day of thrills on land and water.
+
+### Plan your ATV day
+- [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) — single IDR 750K vs tandem IDR 1.1M
+- [All New Bali Adventure arena](/blog/bali-atv-all-new-bali-adventure-location-guide) — self-meet in Sedang vs hotel pickup IDR 400,000
+- [Jungle mud vs cave/tunnel tracks](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) — we are not Kuber or Dragon Cave
+- [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali) — land-then-water combo (ask WhatsApp for timing)
+- [Private vs mass-market ATV](/blog/private-atv-vs-mass-market-ubud)
 
 Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing combo for your preferred date.`,
     highlights: [
@@ -212,7 +220,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-1",
         question: "How much does an ATV ride near Ubud cost in 2026?",
         answer:
-          "Single ATV starts from IDR 750,000 per person and tandem from IDR 1,100,000 for two sharing one bike. Packages include lunch, helmet, boot shoes, insurance (ages 6–65), and a safety briefing at All New Bali Adventure. Hotel pickup is optional at IDR 400,000.",
+          "Single ATV starts from IDR 750,000 per person and tandem from IDR 1,100,000 for two sharing one bike. Packages include lunch, helmet, boot shoes, insurance (ages 6–65), and a safety briefing at All New Bali Adventure. Hotel pickup is optional at IDR 400,000; self-meet at the Sedang arena has no pickup fee.",
       },
       {
         id: "faq-atv-2",
@@ -255,6 +263,12 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         question: "Is this a muddy sport ATV / mud bike ride?",
         answer:
           "Yes — the All New Bali Adventure track includes jungle mud, soft soil, and river crossings on a 4-wheel sport ATV (quad). You stay on a stable four-wheel machine; no clutch or motocross bike balance required.",
+      },
+      {
+        id: "faq-atv-9",
+        question: "Should I book a single ATV or a tandem?",
+        answer:
+          "Book a single ATV (from IDR 750,000) if each guest wants their own bike. Book tandem (IDR 1,100,000 for two sharing one bike) if you are a couple or one rider prefers not to drive. Both include lunch, gear, and insurance — say 1 or 2 riders on WhatsApp and we will quote the right option.",
       },
     ],
     reviews: [],

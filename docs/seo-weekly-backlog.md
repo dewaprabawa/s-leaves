@@ -1,8 +1,8 @@
 # SEO weekly backlog
 
-**Last run:** 2026-09-15  
-**Owner:** Sekar Bali marketing / Cursor automation A2  
-**P0 rotation this week:** Batur jeep (primary) + ATV (secondary). Cooking money page shipped 2026-09-11. Cycling cluster is already dense — title + schedule friction only. P1 rafting / tubing included because both money pages still lack `seoTitle`.
+**Last run:** 2026-09-18  
+**Owner:** Sekar Bali marketing / Cursor automation A6  
+**P0 rotation this week:** ATV money page QA shipped 2026-09-18. Next A6 rotation: Batur jeep. Cooking shipped 2026-09-11. Cycling cluster is already dense — title + schedule friction only. P1 rafting / tubing still lack `seoTitle`.
 
 **Site:** https://www.sekarbaliactivity.com
 
@@ -19,9 +19,9 @@
 
 2. **Tandem ATV Ubud price / single vs tandem**  
    - Money page: `/tours/bali-atv-adventure`  
-   - Why it sells: Couples search “tandem ATV” before WhatsApp. Price 2026, arena, private-vs-mass, and tubing-combo posts exist; marketing plan still lists **ATV vs tandem** as an unwritten spoke. Title `ATV Ride Ubud from IDR 750K` (27 chars) has room for tandem / self-meet.  
+   - Why it sells: Couples search “tandem ATV” before WhatsApp. Price 2026, arena, private-vs-mass, and tubing-combo posts exist; marketing plan still lists **ATV vs tandem** as an unwritten spoke. Money-page title now includes tandem (`ATV Ride Ubud from IDR 750K | Tandem 1.1M`, 2026-09-18).  
    - Effort: **M**  
-   - Action: **new article** (single IDR 750K vs tandem IDR 1.1M, who shares) + optional **title tweak**.
+   - Action: **new article** (single IDR 750K vs tandem IDR 1.1M, who shares). Title tweak shipped.
 
 3. **Ricefield cycling Ubud — free pickup + IDR 750K in the title**  
    - Money page: `/tours/ubud-ricefield-cycling-tour`  
@@ -46,7 +46,7 @@
 | Tour | Slug | Cluster status | This week |
 |------|------|----------------|-----------|
 | Cooking | `/tours/balinese-cooking-class` | Money page QA’d 2026-09-11. Spokes: inside class, pickup, cycling+cooking, spices. **Missing:** worth it, vegetarian, market vs afternoon. | Hold money-page edits. Article later this month. |
-| ATV | `/tours/bali-atv-adventure` | Strong: price 2026, arena, private vs mass, tubing combo, track types. **Missing:** single vs tandem. Combo IDR not on tour card. | Secondary focus — tandem article. |
+| ATV | `/tours/bali-atv-adventure` | Money page QA’d 2026-09-18 (title/tandem/venue/schema/WA). Cluster still **missing** dedicated single-vs-tandem article. Combo IDR not on tour card. | Hold money-page edits. Tandem article still next. |
 | Batur jeep | `/tours/batur-sunrise-jeep-tour` | Guide 2026 + jeep vs trek. **Missing:** pickup times by area; title “from 750K” risk. | **Primary focus.** |
 | Cycling | `/tours/ubud-ricefield-cycling-tour` | Densest cluster (worth it, vs Tegallalang, combo, pickup, 2026 guide). Duration now 2 hours. | Title only + fix AM/PM friction (see sales notes). |
 
@@ -71,7 +71,7 @@ Do **not** write these in this run (A3 cluster writer). Next-up after those: `Is
 List only — no UI redesign in this run.
 
 - Rafting + canyon tubing FAQs still say free Ubud pickup applies to **cycling only**; cooking class also includes complimentary Ubud pickup (`src/data/tours.ts`).
-- Only cooking sets `venue` / `pickup` chips. ATV, jeep, cycling, luwak, rafting, tubing, and day tours omit ATF pickup/venue on `TourBookingCard`.
+- Cooking and ATV set `venue` / `pickup` chips. Jeep, cycling, luwak, rafting, tubing, and day tours still omit ATF venue (jeep/cycling already have pickup).
 - ATV option `ATV + River Tubing Combo` uses `priceDiff: 0` (“ask for combo pricing”). Book card maps ATV to single/tandem only — combo is not a priced bookable SKU. `/book` featured combos discount ATV+tubing, but the money page cannot quote it.
 - ATV combo blog (`/blog/atv-river-tubing-wos-river-bali`) says “Hotel pickup (Ubud area usually free)” — **false**. ATV pickup is IDR 400,000 (or self-meet).
 - Cycling money page + `BookNowButton` are **afternoon only** (`13:30`). Combo / worth-it blogs still frame cycling as a **morning** block before Tumang cooking.
@@ -92,6 +92,18 @@ List only — no UI redesign in this run.
 ## Tour QA notes
 <!-- A6 appends here -->
 
+### 2026-09-18 — `bali-atv-adventure` (implemented in PR)
+Scores (source): Title/meta/H1 64 · ATF facts 72 · Schema Offer+ISO 78 · Cluster links 76 · WhatsApp title 88 · FAQ IDR 90.
+
+Shipped:
+1. Absolute SERP title `ATV Ride Ubud from IDR 750K | Tandem 1.1M` (41 chars; was 27 and omitted tandem).
+2. H1/title now `Bali ATV Quad Bike Adventure near Ubud` (adds Ubud; tubing is optional, not in H1). Meta adds pickup IDR 400K vs self-meet (151 chars).
+3. ATF + booking card: venue chip `All New Bali Adventure, Sedang`; price shows single 750K · tandem 1.1M. Card no longer advertises 3+ IDR 700K as a fake “from” promo.
+4. Schema `AggregateOffer` (single 750K / tandem 1.1M) + `duration: PT4H` + `location` Place. WhatsApp Consultation prefills title + single from IDR 750,000.
+5. Cluster: in-body links to price / arena / track-types / tubing / private-vs-mass; track-types added to related guides. FAQ adds single vs tandem + self-meet vs IDR 400K pickup.
+
+Left for later (not this PR): tandem comparison article; combo `priceDiff: 0`; combo blog still says Ubud pickup is usually free.
+
 ### 2026-09-11 — `balinese-cooking-class` (implemented in PR)
 Scores (source + live HTML): Title/meta/H1 62 · ATF facts 70 · Schema Offer+ISO 92 · Cluster links 80 · WhatsApp title 90 · FAQ IDR 95.
 
@@ -110,6 +122,6 @@ WhatsApp Consultation already prefills tour title; now also includes promo IDR. 
 - `whitewater-rafting` and `canyon-tubing` have no `seoTitle` / `seoDescription`.
 - Cycling `seoTitle` missing price + free-pickup modifiers (meta already has them).
 - Jeep `seoTitle` leads with group-rate “From IDR 750K”.
-- ATV `seoTitle` has room for tandem / pickup / arena.
+- ATV `seoTitle` now includes tandem (`ATV Ride Ubud from IDR 750K | Tandem 1.1M`, 2026-09-18).
 - Pickup comment in `pricing.ts` out of date vs cooking free-Ubud rule.
 - Confirm any price/duration change still syncs `pricing.md` + `llms.txt` the same day (cycling duration → 2 hours already in tour data).

@@ -44,6 +44,15 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       tierLabel: "Shared class promo / person",
     }
   }
+  // ATV SERP / FAQ lead with the 1-rider rate. Do not show the 3+ 700K
+  // tier as a "from" promo — it reads as a discount vs IDR 750K.
+  if (tourSlug === "bali-atv-adventure") {
+    return {
+      promoPrice: fallbackBase,
+      standardPrice: fallbackBase,
+      tierLabel: undefined,
+    }
+  }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
   if (!activityId) {
     return { promoPrice: fallbackBase, standardPrice: fallbackBase, tierLabel: undefined }
@@ -123,7 +132,9 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const consultationActivity =
     props.tourSlug === "balinese-cooking-class"
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
-      : props.title
+      : props.tourSlug === "bali-atv-adventure"
+        ? `${props.title} — single from ${formatIdr(props.basePrice)}`
+        : props.title
   const consultationUrl = buildWhatsAppConsultationUrl(
     consultationActivity,
     `${SITE_URL}/tours/${props.tourSlug}`,
@@ -196,6 +207,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             from
             tierLabel={tierLabel}
           />
+          {props.tourSlug === "bali-atv-adventure" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
           {props.childPrice ? (
             <p className="text-sm text-brand-green-light mt-1">
               Child from {formatIdr(props.childPrice)}

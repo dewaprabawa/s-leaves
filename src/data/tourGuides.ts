@@ -142,6 +142,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Itinerary, IDR tiers, pickup times, and what’s included.',
     },
     {
+      title: 'Mount Batur jeep tour price guide (2026)',
+      href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026',
+      blurb: 'Solo, pair, and group IDR tiers plus what’s included.',
+    },
+    {
       title: 'Batur jeep vs sunrise trek',
       href: '/blog/mount-batur-jeep-vs-sunrise-trek',
       blurb: 'No-hike crater rim vs the classic 2-hour summit walk.',
@@ -167,23 +172,6 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Bali temple dress code',
       href: '/blog/bali-temple-dress-code',
       blurb: 'Sarong rules before temple stops.',
-    },
-  ],
-  'batur-sunrise-jeep-tour': [
-    {
-      title: 'Mount Batur jeep tour price guide (2026)',
-      href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026',
-      blurb: 'Solo, pair, and group IDR tiers plus what\u2019s included.',
-    },
-    {
-      title: 'Jeep vs trekking to Mount Batur',
-      href: '/blog/mount-batur-jeep-vs-trekking',
-      blurb: 'Why most travelers skip the 2am hike for a 4\u00d7 4.',
-    },
-    {
-      title: 'Ubud hotel pickup explained',
-      href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
-      blurb: 'How early-morning pickup timing works by area.',
     },
   ],
   'half-day-ubud-tanah-lot-tour': [

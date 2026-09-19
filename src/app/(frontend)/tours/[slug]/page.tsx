@@ -468,27 +468,6 @@ function buildTourWebPageSchema(tour: Tour) {
   }
 }
 
-function buildJeepWebPageSchema(tour: Tour) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
-    url: `${SITE_URL}/tours/${tour.slug}`,
-    name: tour.seoTitle ?? tour.title,
-    description: tour.seoDescription ?? tour.shortDescription,
-    dateModified: GEO_UPDATED,
-    inLanguage: "en-US",
-    isPartOf: { "@id": `${SITE_URL}/#website` },
-    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
-    significantLink: [
-      `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-guide-2026`,
-      `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`,
-      `${SITE_URL}/llms.txt`,
-      `${SITE_URL}/pricing.md`,
-    ],
-  }
-}
-
 function buildCookingWebPageSchema(tour: Tour) {
   return {
     "@context": "https://schema.org",
@@ -549,6 +528,8 @@ function buildJeepWebPageSchema(tour: Tour) {
       cssSelector: [".jeep-geo-tldr", ".jeep-geo-answer", ".geo-tldr"],
     },
     significantLink: [
+      `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-guide-2026`,
+      `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`,
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
       `${SITE_URL}/tours/balinese-cooking-class`,
@@ -631,7 +612,15 @@ export default async function TourPage({ params }: Props) {
               dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
             />
           ))
-        : null}
+        : jeep
+          ? buildJeepQaSchemas().map((qa) => (
+              <script
+                key={qa["@id"]}
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
+              />
+            ))
+          : null}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link

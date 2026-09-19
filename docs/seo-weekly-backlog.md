@@ -1,10 +1,7 @@
 # SEO weekly backlog
 
-**Last run:** 2026-09-18  
-**Owner:** Sekar Bali marketing / Cursor automation A6  
-**P0 rotation this week:** ATV money page QA shipped 2026-09-18. Next A6 rotation: Batur jeep. Cooking shipped 2026-09-11. Cycling cluster is already dense — title + schedule friction only. P1 rafting / tubing still lack `seoTitle`.
-
-**Site:** https://www.sekarbaliactivity.com
+**Last run:** 2026-09-14 (A3 cluster — `cooking-class-ubud-price-2026-worth-it`)  
+**Owner:** Sekar Bali marketing / Cursor automation A2
 
 ## Inbox
 <!-- Slack/manual ideas land here -->
@@ -64,6 +61,13 @@ Skip generic “best Bali” ideas. P2 day tours stay on hold.
    - Target: `/tours/bali-atv-adventure`  
    - WhatsApp CTA angle: Say **1 or 2 riders + hotel** — we quote single (from IDR 750K) vs tandem (IDR 1.1M for two), optional **IDR 400K pickup** vs self-meet at All New Bali Adventure, Sedang.
 
+## Next articles to write
+| Priority | Working title | Target money page | Status |
+|----------|---------------|-------------------|--------|
+| P0 | Cooking Class Ubud Price 2026: Is It Worth It? | /tours/balinese-cooking-class | drafted 2026-09-14 |
+| P0 | Vegetarian / vegan Tumang menu | /tours/balinese-cooking-class | todo |
+| P0 | Morning market vs afternoon class | /tours/balinese-cooking-class | todo |
+| P0 | ATV Ubud unwritten spoke (price already live) | /tours/bali-atv-adventure | todo |
 Do **not** write these in this run (A3 cluster writer). Next-up after those: `Is a Balinese Cooking Class in Ubud Worth It in 2026?` → `/tours/balinese-cooking-class` (promo 450K, max 8, free pickup, vegetarian on request).
 
 ## Sales friction notes

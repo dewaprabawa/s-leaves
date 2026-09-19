@@ -124,6 +124,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },
   { name: 'Mount Batur Sunrise Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour` },
   { name: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour` },
+  { name: 'Half Day Ubud & Tanah Lot', url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour` },
   { name: 'About Us', url: `${SITE_URL}/about` },
   { name: 'Contact', url: `${SITE_URL}/contact` },
   { name: 'Blog', url: `${SITE_URL}/blog` },

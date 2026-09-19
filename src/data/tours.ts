@@ -1,3 +1,13 @@
+import {
+  COOKING_CLASS_PRICE_IDR,
+  COOKING_CLASS_PRIVATE_COUPLE_IDR,
+  COOKING_CLASS_PRIVATE_SOLO_IDR,
+  COOKING_CLASS_STANDARD_PRICE_IDR,
+} from "@/data/cultureSales"
+
+const COOKING_PRIVATE_SOLO_DIFF =
+  COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
+
 export interface TourAddon {
   id: string
   name: string
@@ -50,6 +60,10 @@ export interface Tour {
   category: TourCategoryId
   /** Optional area label shown on discovery cards (e.g. Ubud / Pejeng). */
   area?: string
+  /** Above-the-fold venue chip (kitchen, arena, trailhead). */
+  venue?: string
+  /** Above-the-fold pickup chip (free Ubud, island-wide, surcharge). */
+  pickup?: string
   /** Featured on homepage top-picks rail when true. */
   isTopPick?: boolean
   duration: string
@@ -62,6 +76,8 @@ export interface Tour {
   heroImage: {
     url: string
     alt: string
+    width?: number
+    height?: number
   }
   gallery: { url: string; alt: string }[]
   shortDescription: string
@@ -81,17 +97,20 @@ export interface Tour {
 export const TOURS: Tour[] = [
   {
     id: "bali-atv-adventure",
-    title: "Bali ATV Quad Bike Adventure & River Tubing",
+    title: "Bali ATV Quad Bike Adventure near Ubud",
     slug: "bali-atv-adventure",
     category: "adventure",
     area: "Sedang / Ubud",
+    venue: "All New Bali Adventure, Sedang",
+    pickup: "Hotel pickup IDR 400,000 — optional",
     isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "ATV Ride Ubud from IDR 750K",
+    seoTitle: "ATV Ride Ubud from IDR 750K | Tandem 1.1M",
     seoDescription:
-      "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Optional Wos tubing. WhatsApp booking.",
+      "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Hotel pickup IDR 400K or self-meet. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV jungle adventure ride through tropical rainforest trails",
@@ -120,6 +139,13 @@ Hop on a powerful ATV and race scenic off-road trails with expert guides. Packag
 
 ### Combine with River Tubing or Rafting
 Want even more adventure? Pair your ATV ride with river tubing on the Wos River, or ask about an ATV + rafting combo. After racing the ATV mud track, cool down as you float the river or paddle whitewater — favourite combos for guests who want a full day of thrills on land and water.
+
+### Plan your ATV day
+- [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) — single IDR 750K vs tandem IDR 1.1M
+- [All New Bali Adventure arena](/blog/bali-atv-all-new-bali-adventure-location-guide) — self-meet in Sedang vs hotel pickup IDR 400,000
+- [Jungle mud vs cave/tunnel tracks](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) — we are not Kuber or Dragon Cave
+- [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali) — land-then-water combo (ask WhatsApp for timing)
+- [Private vs mass-market ATV](/blog/private-atv-vs-mass-market-ubud)
 
 Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing combo for your preferred date.`,
     highlights: [
@@ -195,7 +221,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-1",
         question: "How much does an ATV ride near Ubud cost in 2026?",
         answer:
-          "Single ATV starts from IDR 750,000 per person and tandem from IDR 1,100,000 for two sharing one bike. Packages include lunch, helmet, boot shoes, insurance (ages 6–65), and a safety briefing at All New Bali Adventure. Hotel pickup is optional at IDR 400,000.",
+          "Single ATV starts from IDR 750,000 per person and tandem from IDR 1,100,000 for two sharing one bike. Packages include lunch, helmet, boot shoes, insurance (ages 6–65), and a safety briefing at All New Bali Adventure. Hotel pickup is optional at IDR 400,000; self-meet at the Sedang arena has no pickup fee.",
       },
       {
         id: "faq-atv-2",
@@ -239,6 +265,12 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         answer:
           "Yes — the All New Bali Adventure track includes jungle mud, soft soil, and river crossings on a 4-wheel sport ATV (quad). You stay on a stable four-wheel machine; no clutch or motocross bike balance required.",
       },
+      {
+        id: "faq-atv-9",
+        question: "Should I book a single ATV or a tandem?",
+        answer:
+          "Book a single ATV (from IDR 750,000) if each guest wants their own bike. Book tandem (IDR 1,100,000 for two sharing one bike) if you are a couple or one rider prefers not to drive. Both include lunch, gear, and insurance — say 1 or 2 riders on WhatsApp and we will quote the right option.",
+      },
     ],
     reviews: [],
   },
@@ -248,12 +280,14 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     slug: "batur-sunrise-jeep-tour",
     category: "adventure",
     area: "Kintamani / Mount Batur",
+    pickup: "Island-wide hotel pickup included",
     isTopPick: true,
+    pickup: "Hotel pickup included island-wide",
     duration: "Approx. 6–7 Hours",
     basePrice: 1350000,
     seoTitle: "Mount Batur Sunrise Jeep | No Hike, From IDR 750K",
     seoDescription:
-      "Private 4×4 jeep to the Mount Batur crater rim near Kintamani. Hot drink, breakfast on top, hotel pickup included. Solo IDR 1.35M · 3+ from IDR 750K. No trekking.",
+      "Private 4×4 crater-rim jeep near Kintamani. Hot drink, breakfast, hotel pickup included. Solo IDR 1.35M · 2 pax 825K · 3+ from IDR 750K. No hike.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
@@ -277,8 +311,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       },
     ],
     shortDescription:
-      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, and breakfast served on top as the sun rises over Lake Batur and Mount Agung. Solo from IDR 1,350,000, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
-    fullDescription: `**What is the Mount Batur Sunrise Jeep Tour?** It is a private 4×4 jeep ride up Mount Batur’s volcanic tracks to a crater-rim viewpoint near Kintamani — about 1,350 metres above sea level — so you watch sunrise over **Lake Batur** and **Mount Agung** without the classic 2-hour summit trek. A local driver, hot drink en route, breakfast served on top of the jeep, and hotel pickup are included. Solo from **IDR 1,350,000**, or **IDR 750,000 per person** once 3+ guests share one jeep.
+      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, and breakfast served on top as the sun rises over Lake Batur and Mount Agung. Solo from IDR 1,350,000, IDR 825,000 per person for 2 guests, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
+    fullDescription: `**What is the Mount Batur Sunrise Jeep Tour?** It is a private 4×4 jeep ride up Mount Batur’s volcanic tracks to a crater-rim viewpoint near Kintamani — about 1,350 metres above sea level — so you watch sunrise over **Lake Batur** and **Mount Agung** without the classic 2-hour summit trek. A local driver, hot drink en route, breakfast served on top of the jeep, and hotel pickup are included. Solo from **IDR 1,350,000**, **IDR 825,000 per person** for 2 guests, or **IDR 750,000 per person** once 3+ guests share one jeep.
 
 Want the famous Mount Batur sunrise without lacing up hiking boots at 2 AM? You stay in the jeep. The viewpoint is on Mount Batur’s eastern flank — the same golden caldera light trekkers queue for, without scrambling lava rock in the dark.
 
@@ -462,7 +496,9 @@ Warm layer (it is cold on the rim before sunrise), closed shoes, phone/camera, a
     slug: "whitewater-rafting",
     category: "adventure",
     area: "Ayung River / Ubud",
+    pickup: "Hotel pickup IDR 400,000 — optional",
     isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
@@ -553,7 +589,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         id: "faq-raft-3",
         question: "Is hotel pickup included?",
         answer:
-          "Hotel pickup is available for an additional IDR 400,000. Free Ubud pickup applies to the cycling tour only.",
+          "Hotel pickup is available for an additional IDR 400,000, or meet on site with no transport fee. Free Ubud pickup is included on the cycling tour and Tumang cooking class — not on rafting.",
       },
       {
         id: "faq-raft-4",
@@ -575,6 +611,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
     slug: "canyon-tubing",
     category: "adventure",
     area: "Wos River / Pejeng",
+    pickup: "Hotel pickup IDR 400,000 — optional",
     duration: "2.5 Hours",
     basePrice: 359000,
     childPrice: 300000,
@@ -665,7 +702,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         id: "faq-tube-4",
         question: "Is hotel pickup included?",
         answer:
-          "Hotel pickup is available for an additional IDR 400,000. Free Ubud pickup applies to the cycling tour only.",
+          "Hotel pickup is available for an additional IDR 400,000, or meet on site with no transport fee. Free Ubud pickup is included on the cycling tour and Tumang cooking class — not on canyon tubing.",
       },
       {
         id: "faq-tube-5",
@@ -682,8 +719,10 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     slug: "ubud-ricefield-cycling-tour",
     category: "village",
     area: "Pejeng / Ubud",
+    pickup: "Free Ubud-area hotel pickup",
     isTopPick: true,
-    duration: "Full Day",
+    pickup: "Free Ubud-area hotel pickup",
+    duration: "2 Hours",
     basePrice: 750000,
     seoTitle: "Rice Paddy Cycling Ubud | Pejeng",
     seoDescription:
@@ -722,8 +761,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         alt: "Lunch included on the Ubud ricefield cycling tour",
       },
     ],
-    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
+    shortDescription: "Authentic 2-hour Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
@@ -742,7 +780,7 @@ Enjoy a free lunch at a chill local village restaurant serving authentic Balines
 After the tour we drop you back at your Ubud hotel.
 
 **Available Schedule:**
-- **Afternoon departure** — ideal for travelers who prefer a later start
+- **Afternoon departure** — 2-hour tour, ideal for travelers who prefer a later start
 
 **Important Note:**
 The itinerary may sometimes change due to field conditions, weather, or village activities. We will always adjust to make sure you still have the best and safest experience.`,
@@ -769,37 +807,37 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       },
       {
         id: "iti-ubud-cyc-2",
-        time: "Morning",
+        time: "~15 min",
         title: "Ricefield Cycling",
         description: "Relaxing bike ride through beautiful green ricefields and quiet village paths.",
       },
       {
         id: "iti-ubud-cyc-3",
-        time: "Midday",
+        time: "~15 min",
         title: "Sightseeing & Harvesting Activity",
         description: "See local farmers and try harvesting rice with them. Learn about traditional farming.",
       },
       {
         id: "iti-ubud-cyc-4",
-        time: "Afternoon",
+        time: "~15 min",
         title: "Visit Balinese House",
         description: "Enter a real Balinese family house and see daily local life.",
       },
       {
         id: "iti-ubud-cyc-5",
-        time: "Afternoon",
+        time: "~15 min",
         title: "Balinese Carving Art",
         description: "Visit a local wood carving studio and see artists at work.",
       },
       {
         id: "iti-ubud-cyc-6",
-        time: "Afternoon",
+        time: "~15 min",
         title: "See Local People Life",
         description: "Cycle through the village to see temples, schools, and local activities.",
       },
       {
         id: "iti-ubud-cyc-7",
-        time: "Midday",
+        time: "~20 min",
         title: "Lunch Stop",
         description: "Enjoy a free lunch at a chill local village restaurant with authentic Balinese food.",
       },
@@ -807,7 +845,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "iti-ubud-cyc-8",
         time: "Finish",
         title: "Drop Back to Hotel",
-        description: "After the tour we drop you back at your hotel in Ubud.",
+        description: "After the 2-hour tour we drop you back at your hotel in Ubud.",
       },
     ],
     addons: [],
@@ -816,7 +854,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-1",
         question: "How much is the Ubud rice paddy cycling tour?",
         answer:
-          "IDR 750,000 per person in 2026. That includes the guided Pejeng village / ricefield ride, bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
+          "IDR 750,000 per person in 2026 for a 2-hour guided Pejeng village / ricefield ride, including bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
       },
       {
         id: "faq-ubud-cyc-2",
@@ -846,7 +884,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-6",
         question: "Can I combine cycling with a cooking class?",
         answer:
-          "Yes. Many guests ride Pejeng ricefields by day and join an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
+          "Yes. The cycling tour is 2 hours, so many guests ride Pejeng ricefields first and join an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
       },
       {
         id: "faq-ubud-cyc-7",
@@ -866,6 +904,12 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         answer:
           "No — it's a standard pedal bicycle with helmet included. Because the Pejeng route is mostly flat with gentle village and ricefield paths, most guests don't need electric assist to enjoy the ride comfortably.",
       },
+      {
+        id: "faq-ubud-cyc-10",
+        question: "How long is the Ubud ricefield cycling tour?",
+        answer:
+          "About 2 hours, including the guided Pejeng village ride, cultural stops, and lunch. Hotel pickup and drop-off in the Ubud area are included.",
+      },
     ],
     reviews: [],
   },
@@ -875,7 +919,9 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     slug: "luwak-coffee-plantation",
     category: "food",
     area: "Tampaksiring / Ubud",
+    pickup: "Transport not included",
     isTopPick: true,
+    pickup: "Transport not included",
     duration: "1.5 Hours",
     basePrice: 800000,
     seoTitle: "Luwak Coffee Plantation Umah Kuno | IDR 800K",
@@ -884,6 +930,8 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     heroImage: {
       url: "/coffee.jpg",
       alt: "Luwak Coffee Plantation Umah Kuno",
+      width: 767,
+      height: 1024,
     },
     gallery: [
       {
@@ -891,7 +939,6 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         alt: "Traditional Umah Kuno Balinese Compound",
       },
     ],
-    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder
     shortDescription:
       "Ethical Luwak coffee tasting at Umah Kuno — jungle walk, traditional roasting, and a 10-drink tasting flight. IDR 800,000 per person (minimum 3 guests).",
     fullDescription: `**A Journey Into the Heart of Bali's Coffee Culture**
@@ -984,16 +1031,18 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
   },
   {
     id: "balinese-cooking-class",
-    title: "Tumang Bali Cooking Class",
+    title: "Tumang Bali Cooking Class near Ubud",
     slug: "balinese-cooking-class",
     category: "food",
     area: "Tumang village / Ubud",
+    venue: "Tumang village near Ubud",
+    pickup: "Free Ubud-area hotel pickup",
     isTopPick: true,
     duration: "3–4 Hours",
-    basePrice: 450000,
-    seoTitle: "Cooking Class Ubud | Tumang Promo IDR 450K",
+    basePrice: COOKING_CLASS_PRICE_IDR,
+    seoTitle: "Cooking Class Ubud | Tumang · Free Pickup 450K",
     seoDescription:
-      "Tumang Bali Cooking Class near Ubud — market tour, rice-field walk, 10+ dishes, max 8 guests. Promo IDR 450,000 / person (was 506,370). Free Ubud pickup. Book on WhatsApp.",
+      "Tumang Bali Cooking Class near Ubud — AM market tour, 10+ dishes, max 8 guests. Promo IDR 450,000 (was 506,370) + free Ubud pickup. WhatsApp booking.",
     heroImage: {
       url: "/images/cooking/satay-class.jpg",
       alt: "Guests preparing sate skewers during Tumang Bali Cooking Class near Ubud",
@@ -1125,17 +1174,22 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         name: "Shared morning class (market tour)",
         priceDiff: 0,
-        description: "08:30 start · pasar + rice-field walk · max 8 · promo IDR 450,000",
+        description: `08:30 start · pasar + rice-field walk · max 8 · promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}`,
       },
       {
         name: "Shared afternoon class",
         priceDiff: 0,
-        description: "Afternoon · rice-field walk + kitchen · max 8 · promo IDR 450,000",
+        description: `Afternoon · rice-field walk + kitchen · max 8 · promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}`,
       },
       {
         name: "Private class (1 guest)",
-        priceDiff: 126720,
-        description: "Exclusive kitchen · IDR 633,090",
+        priceDiff: COOKING_PRIVATE_SOLO_DIFF,
+        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")}`,
+      },
+      {
+        name: "Private class (2 guests)",
+        priceDiff: COOKING_PRIVATE_SOLO_DIFF,
+        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} total`,
       },
     ],
     addons: [],
@@ -1143,8 +1197,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         id: "faq-cook-1",
         question: "How much is Tumang Bali Cooking Class?",
-        answer:
-          "Shared small-group class is promo IDR 450,000 per person (was IDR 506,370). Private kitchen is IDR 633,090 for 1 guest, or IDR 1,266,180 for 2 guests. Complimentary Ubud-area hotel pickup is included.",
+        answer: `Shared small-group class is promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")} per person (was IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString("id-ID")}). Private kitchen is IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")} for 1 guest, or IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} for 2 guests. Complimentary Ubud-area hotel pickup is included.`,
       },
       {
         id: "faq-cook-2",
@@ -1185,7 +1238,9 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
     slug: "full-day-ubud-tour",
     category: "day-tour",
     area: "Ubud & surrounds",
+    pickup: "Private car pickup included",
     isTopPick: true,
+    pickup: "Private car hotel pickup",
     duration: "10 Hours",
     basePrice: 600000,
     seoTitle: "Full Day Ubud Tour | Palace, Market & Rice Terraces",
@@ -1279,6 +1334,7 @@ This is a private car and driver, not a shared minibus — so you can linger lon
     slug: "half-day-ubud-tanah-lot-tour",
     category: "day-tour",
     area: "Ubud → Tanah Lot",
+    pickup: "Private car hotel pickup",
     duration: "6 Hours",
     basePrice: 450000,
     seoTitle: "Half Day Ubud & Tanah Lot Sunset Tour | From IDR 450K",

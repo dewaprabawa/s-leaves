@@ -2,12 +2,13 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Camera, Check, Clock } from "lucide-react"
+import { ArrowLeft, Camera, Car, Check, Clock, MapPin } from "lucide-react"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import CookingGeoBlock from "@/components/CookingGeoBlock"
+import JeepGeoBlock from "@/components/JeepGeoBlock"
 import {
   getAllTourSlugs,
   getTourBySlug,
@@ -26,6 +27,12 @@ import {
   COOKING_GEO_TLDR,
   COOKING_GEO_UPDATED,
 } from "@/data/cookingGeo"
+import {
+  JEEP_GEO_ENTITY,
+  JEEP_GEO_FAQS,
+  JEEP_GEO_TLDR,
+  JEEP_GEO_UPDATED,
+} from "@/data/jeepGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
 import { TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
@@ -46,6 +53,14 @@ function isJeepTour(tour: Tour) {
   return tour.slug === "batur-sunrise-jeep-tour"
 }
 
+function isLuwakTour(tour: Tour) {
+  return tour.slug === "luwak-coffee-plantation"
+}
+
+function isAtvTour(tour: Tour) {
+  return tour.slug === "bali-atv-adventure"
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const tour = getTourBySlug(slug)
@@ -54,6 +69,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = tour.seoTitle ?? tour.title
   const description = tour.seoDescription ?? tour.shortDescription
+  // seoTitle is already a complete SERP string (≤60). Absolute avoids
+  // `| Sekar Bali Activity` from the root template truncating price/CTA.
   const keywords = isCookingTour(tour)
     ? [
         "cooking class Ubud",
@@ -76,10 +93,37 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           "private 4x4 Mount Batur",
           "Sekar Bali Activity",
         ]
-    : undefined
+      : isLuwakTour(tour)
+        ? [
+            "luwak coffee plantation Ubud",
+            "Umah Kuno luwak coffee",
+            "ethical Kopi Luwak Bali",
+            "cage-free luwak coffee tasting",
+            "coffee plantation Tampaksiring",
+            "luwak coffee price Bali",
+            "Sekar Bali Activity",
+          ]
+        : isAtvTour(tour)
+          ? [
+              "ATV ride Ubud",
+              "ATV Ubud price",
+              "quad bike Ubud",
+              "tandem ATV Ubud",
+              "All New Bali Adventure",
+              "ATV river tubing Ubud",
+              "Sekar Bali Activity",
+            ]
+          : undefined
+
+  const ogImage = {
+    url: tour.heroImage.url,
+    alt: tour.heroImage.alt,
+    ...(tour.heroImage.width ? { width: tour.heroImage.width } : {}),
+    ...(tour.heroImage.height ? { height: tour.heroImage.height } : {}),
+  }
 
   return {
-    title,
+    title: tour.seoTitle ? { absolute: tour.seoTitle } : title,
     description,
     keywords,
     alternates: {
@@ -89,12 +133,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: `${SITE_URL}/tours/${tour.slug}`,
-      images: [
-        {
-          url: tour.heroImage.url,
-          alt: tour.heroImage.alt,
-        },
-      ],
+      images: [ogImage],
       type: "website",
       siteName: SITE_NAME,
     },
@@ -114,15 +153,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             "geo.region": "ID-BA",
             "geo.placename": "Kintamani, Mount Batur, Bali",
           }
-      : undefined,
+        : isLuwakTour(tour)
+          ? {
+              "geo.region": "ID-BA",
+              "geo.placename": "Tampaksiring, Ubud, Bali",
+            }
+          : isAtvTour(tour)
+            ? {
+                "geo.region": "ID-BA",
+                "geo.placename": "Sedang, Abiansemal, Ubud, Bali",
+              }
+            : undefined,
   }
 }
 
+function hoursToIso(hours: number): string {
+  const wholeHours = Math.floor(hours)
+  const minutes = Math.round((hours - wholeHours) * 60)
+  if (minutes === 0) return `PT${wholeHours}H`
+  if (wholeHours === 0) return `PT${minutes}M`
+  return `PT${wholeHours}H${minutes}M`
+}
+
 function durationToIso(duration: string): string | undefined {
-  const range = duration.match(/(\d+)\s*[–-]\s*(\d+)\s*Hours?/i)
-  if (range) return `PT${range[2]}H`
-  const single = duration.match(/(\d+)\s*Hours?/i)
-  if (single) return `PT${single[1]}H`
+  const range = duration.match(/(\d+(?:\.\d+)?)\s*[–-]\s*(\d+(?:\.\d+)?)\s*Hours?/i)
+  if (range) return hoursToIso(parseFloat(range[2]))
+  const single = duration.match(/(\d+(?:\.\d+)?)\s*Hours?/i)
+  if (single) return hoursToIso(parseFloat(single[1]))
   const half = duration.match(/Half\s*Day/i)
   if (half) return "PT4H"
   const full = duration.match(/Full\s*Day/i)
@@ -132,13 +189,18 @@ function durationToIso(duration: string): string | undefined {
 
 function buildTourSchema(tour: Tour) {
   const cooking = isCookingTour(tour)
+  const jeep = isJeepTour(tour)
   const isoDuration = durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
     "@type": cooking ? (["TouristTrip", "Product"] as const) : "TouristTrip",
     "@id": `${SITE_URL}/tours/${tour.slug}#trip`,
     name: tour.title,
-    description: cooking ? COOKING_GEO_TLDR : (tour.seoDescription ?? tour.shortDescription),
+    description: cooking
+      ? COOKING_GEO_TLDR
+      : jeep
+        ? JEEP_GEO_TLDR
+        : (tour.seoDescription ?? tour.shortDescription),
     image: tour.heroImage.url.startsWith("http")
       ? tour.heroImage.url
       : `${SITE_URL}${tour.heroImage.url}`,
@@ -148,7 +210,9 @@ function buildTourSchema(tour: Tour) {
       ? ["Couples", "Families", "Food travelers", "Culture travelers"]
       : tour.slug === "batur-sunrise-jeep-tour"
         ? ["Couples", "Families", "Non-hikers", "Sunrise photographers"]
-      : ["Couples", "Families", "Adventure seekers"],
+        : tour.slug === "luwak-coffee-plantation"
+          ? ["Couples", "Families", "Food travelers", "Culture travelers"]
+          : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
       "@type": "Place",
@@ -160,12 +224,62 @@ function buildTourSchema(tour: Tour) {
             ? "Kintamani, Mount Batur, Bali"
           : tour.area ?? "Ubud, Bali",
     },
+    ...(tour.venue
+      ? {
+          location: {
+            "@type": "Place",
+            name: tour.venue,
+          },
+        }
+      : {}),
     itinerary: tour.itinerary.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
       name: item.title,
       description: item.description,
     })),
+  }
+
+  if (jeep) {
+    return {
+      ...base,
+      category: "Sightseeing Tours",
+      offers: {
+        "@type": "AggregateOffer",
+        lowPrice: JEEP_GEO_ENTITY.groupPerPersonIdr,
+        highPrice: JEEP_GEO_ENTITY.soloIdr,
+        priceCurrency: "IDR",
+        offerCount: 3,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Solo traveler (1 guest)",
+            price: JEEP_GEO_ENTITY.soloIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "2 guests sharing",
+            price: JEEP_GEO_ENTITY.pairPerPersonIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "3+ guests sharing",
+            price: JEEP_GEO_ENTITY.groupPerPersonIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+        ],
+      },
+    }
   }
 
   if (cooking) {
@@ -229,14 +343,54 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  if (isAtvTour(tour)) {
+    return {
+      ...base,
+      location: {
+        "@type": "Place",
+        name: tour.venue ?? "All New Bali Adventure, Sedang",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(tour.basePrice),
+        highPrice: String(TIER_PRICES_IDR["tandem-atv"][0]),
+        priceCurrency: "IDR",
+        offerCount: 2,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Single ATV Ride",
+            price: String(tour.basePrice),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "Tandem ATV Ride",
+            price: String(TIER_PRICES_IDR["tandem-atv"][0]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+        ],
+      },
+    }
+  }
+
   if (tour.slug === "batur-sunrise-jeep-tour") {
+    const [jeepSolo, jeepTwo, jeepGroup] = TIER_PRICES_IDR["jeep-sunrise"]
     return {
       ...base,
       offers: {
         "@type": "AggregateOffer",
         name: tour.title,
-        lowPrice: "750000",
-        highPrice: "1350000",
+        lowPrice: String(jeepGroup),
+        highPrice: String(jeepSolo),
         priceCurrency: "IDR",
         offerCount: 3,
         availability: "https://schema.org/InStock",
@@ -246,7 +400,7 @@ function buildTourSchema(tour: Tour) {
           {
             "@type": "Offer",
             name: "Solo private jeep",
-            price: "1350000",
+            price: String(jeepSolo),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -254,7 +408,7 @@ function buildTourSchema(tour: Tour) {
           {
             "@type": "Offer",
             name: "2 guests sharing a jeep",
-            price: "825000",
+            price: String(jeepTwo),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -262,7 +416,7 @@ function buildTourSchema(tour: Tour) {
           {
             "@type": "Offer",
             name: "3+ guests sharing a jeep",
-            price: "750000",
+            price: String(jeepGroup),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -283,6 +437,34 @@ function buildTourSchema(tour: Tour) {
       url: `${SITE_URL}/tours/${tour.slug}`,
       description: tour.included.join(", "),
     },
+  }
+}
+
+function buildTourWebPageSchema(tour: Tour) {
+  if (isCookingTour(tour)) return buildCookingWebPageSchema(tour)
+  if (isJeepTour(tour)) return buildJeepWebPageSchema(tour)
+
+  const significantLink = [
+    `${SITE_URL}/book?activity=${tour.slug}`,
+    `${SITE_URL}/llms.txt`,
+    `${SITE_URL}/pricing.md`,
+    ...getTourRelatedGuides(tour.slug).map((guide) =>
+      guide.href.startsWith("http") ? guide.href : `${SITE_URL}${guide.href}`,
+    ),
+  ]
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    dateModified: GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    significantLink,
   }
 }
 
@@ -326,6 +508,8 @@ function buildCookingWebPageSchema(tour: Tour) {
     significantLink: [
       `${SITE_URL}/book?activity=balinese-cooking-class`,
       `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,
+      `${SITE_URL}/blog/inside-balinese-cooking-class-pejeng`,
+      `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
       COOKING_GEO_ENTITY.moneyPage,
@@ -348,6 +532,45 @@ function buildCookingQaSchemas() {
   }))
 }
 
+function buildJeepWebPageSchema(tour: Tour) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    dateModified: JEEP_GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".jeep-geo-tldr", ".jeep-geo-answer", ".geo-tldr"],
+    },
+    significantLink: [
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/pricing.md`,
+      `${SITE_URL}/tours/balinese-cooking-class`,
+      `${SITE_URL}/tours/ubud-ricefield-cycling-tour`,
+    ],
+  }
+}
+
+function buildJeepQaSchemas() {
+  return JEEP_GEO_FAQS.map((item, index) => ({
+    "@context": "https://schema.org",
+    "@type": "Question",
+    "@id": `${SITE_URL}/tours/batur-sunrise-jeep-tour#qa-${index + 1}`,
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+      url: `${SITE_URL}/tours/batur-sunrise-jeep-tour#jeep-geo`,
+    },
+  }))
+}
+
 export default async function TourPage({ params }: Props) {
   const { slug } = await params
   const tour = getTourBySlug(slug)
@@ -357,7 +580,9 @@ export default async function TourPage({ params }: Props) {
   }
 
   const cooking = isCookingTour(tour)
+  const jeep = isJeepTour(tour)
   const tourSchema = buildTourSchema(tour)
+  const webPageSchema = buildTourWebPageSchema(tour)
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -394,31 +619,19 @@ export default async function TourPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      {cooking ? (
-        <>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(buildCookingWebPageSchema(tour)),
-            }}
-          />
-          {buildCookingQaSchemas().map((qa) => (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      {cooking
+        ? buildCookingQaSchemas().map((qa) => (
             <script
               key={qa["@id"]}
               type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
             />
-          ))}
-        </>
-      ) : null}
-      {isJeepTour(tour) ? (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(buildJeepWebPageSchema(tour)),
-          }}
-        />
-      ) : null}
+          ))
+        : null}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link
@@ -451,6 +664,18 @@ export default async function TourPage({ params }: Props) {
                     <Clock className="w-4 h-4 text-brand-green" />
                     {tour.duration}
                   </span>
+                  {tour.pickup ? (
+                    <span className="inline-flex items-center gap-1.5 text-sm text-brand-green-light">
+                      <Car className="w-4 h-4 text-brand-green" />
+                      {tour.pickup}
+                    </span>
+                  ) : null}
+                  {tour.venue ? (
+                    <span className="inline-flex items-center gap-1.5 text-sm text-brand-green-light">
+                      <MapPin className="w-4 h-4 text-brand-green" />
+                      {tour.venue}
+                    </span>
+                  ) : null}
                   {cooking ? (
                     <span className="text-sm font-bold text-brand-green">
                       <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
@@ -460,8 +685,14 @@ export default async function TourPage({ params }: Props) {
                     </span>
                   ) : isJeepTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">
-                      From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · solo{" "}
+                      From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · 2 pax{" "}
+                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1])} · solo{" "}
                       {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][0])}
+                    </span>
+                  ) : isAtvTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      From {formatIdr(tour.basePrice)} single · tandem{" "}
+                      {formatIdr(TIER_PRICES_IDR["tandem-atv"][0])}
                     </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">
@@ -471,6 +702,11 @@ export default async function TourPage({ params }: Props) {
                   {cooking ? (
                     <span className="text-xs text-brand-green-light">
                       Updated {COOKING_GEO_UPDATED || GEO_UPDATED}
+                    </span>
+                  ) : null}
+                  {jeep ? (
+                    <span className="text-xs text-brand-green-light">
+                      Updated {JEEP_GEO_UPDATED || GEO_UPDATED}
                     </span>
                   ) : null}
                 </div>
@@ -499,10 +735,15 @@ export default async function TourPage({ params }: Props) {
             )}
 
             {cooking ? <CookingGeoBlock /> : null}
+            {jeep ? <JeepGeoBlock /> : null}
 
             <section className="rounded-3xl border border-brand-green/10 bg-white p-6 md:p-8 shadow-sm">
               <h2 className="text-xl font-bold text-brand-green mb-4">
-                {cooking ? "About Tumang Bali Cooking Class" : "About This Experience"}
+                {cooking
+                  ? "About Tumang Bali Cooking Class"
+                  : jeep
+                    ? "About the Mount Batur Sunrise Jeep Tour"
+                    : "About This Experience"}
               </h2>
               <article className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>
@@ -618,6 +859,8 @@ export default async function TourPage({ params }: Props) {
               tourSlug={tour.slug}
               title={tour.title}
               duration={tour.duration}
+              pickup={tour.pickup}
+              venue={tour.venue}
               basePrice={tour.basePrice}
               childPrice={tour.childPrice}
               getYourGuideUrl={tour.getYourGuideUrl}

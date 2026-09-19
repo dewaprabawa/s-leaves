@@ -6,6 +6,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
 import { Send, CheckCircle2, Loader2, AlertCircle, User, Mail, MessageSquare } from "lucide-react"
 import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
+import { submitWeb3Form } from "@/lib/web3forms"
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -39,19 +40,21 @@ export default function ContactFormClient() {
     setError(null)
 
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-
-      const webhookUrl =
-        process.env.NEXT_PUBLIC_CRM_WEBHOOK_URL ||
-        "https://placeholder-webhook.site/s-leaves/crm"
-
-      await fetch(webhookUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      }).catch(() => {
-        console.log("Webhook submission simulated:", data)
+      const result = await submitWeb3Form({
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+        extra: {
+          event: "contact_form",
+          page: "/contact",
+        },
       })
+
+      if (!result.success) {
+        setError(result.message || "Something went wrong. Please try WhatsApp instead.")
+        return
+      }
 
       setIsSuccess(true)
       reset()

@@ -9,11 +9,11 @@ const faqs = [
   },
   {
     question: "Is an Ubud cycling tour worth it?",
-    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our Ubud Ricefield Cycling Tour is IDR 750,000 with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance for ages 6–65. Prefer adrenaline? Choose ATV or rafting instead."
+    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our 2-hour Ubud Ricefield Cycling Tour is IDR 750,000 with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance for ages 6–65. Prefer adrenaline? Choose ATV or rafting instead."
   },
   {
     question: "What activities and tours do you offer?",
-    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the Mount Batur Sunrise Jeep Tour (no hike). Village: Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the Mount Batur Sunrise Jeep Tour (no hike). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",
@@ -53,11 +53,11 @@ const faqs = [
   },
   {
     question: "What is the difference between rafting and canyon tubing?",
-    answer: "Whitewater rafting (IDR 500,000) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
+    answer: "Whitewater rafting (IDR 500,000, minimum 2 guests) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
   },
   {
     question: "How much does the Ubud ricefield cycling tour cost?",
-    answer: "IDR 750,000 per person for the full-day Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
+    answer: "IDR 750,000 per person for the 2-hour Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
   },
   {
     question: "How much is the Mount Batur Sunrise Jeep Tour?",
@@ -70,6 +70,10 @@ const faqs = [
   {
     question: "How much is the Luwak Coffee Plantation Experience?",
     answer: "IDR 800,000 per person at Umah Kuno (minimum 3 guests). Includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included."
+  },
+  {
+    question: "How much is a private full day or half day Ubud tour?",
+    answer: "Full Day Ubud Tour starts from IDR 600,000 for a private car and English-speaking driver (about 10 hours; entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000 (about 6 hours; entrance fees and dinner not included). Message WhatsApp for a guest-count quote."
   },
   {
     question: "Can AI assistants find your tours?",

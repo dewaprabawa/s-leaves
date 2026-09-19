@@ -9,12 +9,13 @@ import {
 /** Activities that can be mixed into a same-day combo */
 export type MixableActivityId = Exclude<ActivityId, 'cycling'>
 
-export const ACTIVITY_SHORT_LABEL: Record<ActivityId, string> = {
+export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   'single-atv': 'Single ATV',
   'tandem-atv': 'Tandem ATV',
   rafting: 'Whitewater Rafting',
   'canyon-tubing': 'Canyon Tubing',
   cycling: 'Ricefield Cycling',
+  'jeep-sunrise': 'Batur Sunrise Jeep Tour',
 }
 
 /** Compatible add-ons for each primary activity (excluding cycling) */

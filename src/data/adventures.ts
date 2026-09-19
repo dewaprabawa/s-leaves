@@ -19,12 +19,34 @@ export type AdventureCatalogItem = {
   times: string[]
   minPax: number
   freeUbudPickup?: boolean
+  pickupIncluded?: boolean
 }
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"] as const
 
 /** Shared catalog for sales/checkout (/book), SEO, and cross-page links */
 export const ADVENTURES: AdventureCatalogItem[] = [
+  {
+    id: "cycling",
+    name: "Ubud Ricefield & Village Cycling Tour",
+    tagline: "Rice paddies & village life",
+    paxLabel: "Per person",
+    description:
+      "Authentic Ubud countryside / rice paddy cycling through Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
+    highlights: [
+      "Rice paddy & countryside cycling in Pejeng",
+      "Lunch included",
+      "Balinese house & carving studio",
+      "Free Ubud hotel pickup & insurance (ages 6–65)",
+    ],
+    duration: "2 hours",
+    image: "/images/adventures/cycling.jpg",
+    imageAlt: "Rice paddy and village cycling tour through green Ubud countryside",
+    tourSlug: "ubud-ricefield-cycling-tour",
+    times: ["13:30"],
+    minPax: 1,
+    freeUbudPickup: true,
+  },
   {
     id: "single-atv",
     name: "Single ATV Ride",
@@ -86,25 +108,25 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     minPax: 1,
   },
   {
-    id: "cycling",
-    name: "Ubud Ricefield & Village Cycling Tour",
-    tagline: "Rice paddies & village life",
-    paxLabel: "Per person",
+    id: "jeep-sunrise",
+    name: "Mount Batur Sunrise Jeep Tour",
+    tagline: "Sunrise without the hike",
+    paxLabel: "Per person (private jeep)",
     description:
-      "Authentic Ubud countryside / rice paddy cycling through Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included.",
+      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, and breakfast served on top as the sun rises over Lake Batur and Mount Agung. Solo from IDR 1,350,000, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
     highlights: [
-      "Rice paddy & countryside cycling in Pejeng",
-      "Lunch included",
-      "Balinese house & carving studio",
-      "Free Ubud hotel pickup & insurance (ages 6–65)",
+      "4×4 jeep ride up Mount Batur's volcanic tracks",
+      "Sunrise over Lake Batur and Mount Agung",
+      "Hot drink en route + breakfast on top",
+      "Hotel pickup included · no trekking",
     ],
-    duration: "Full day",
-    image: "/images/adventures/cycling.jpg",
-    imageAlt: "Rice paddy and village cycling tour through green Ubud countryside",
-    tourSlug: "ubud-ricefield-cycling-tour",
-    times: ["13:30"],
+    duration: "6–7 hours",
+    image: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
+    imageAlt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
+    tourSlug: "batur-sunrise-jeep-tour",
+    times: ["02:30", "03:00"],
     minPax: 1,
-    freeUbudPickup: true,
+    pickupIncluded: true,
   },
 ]
 

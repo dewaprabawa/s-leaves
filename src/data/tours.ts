@@ -1,3 +1,13 @@
+import {
+  COOKING_CLASS_PRICE_IDR,
+  COOKING_CLASS_PRIVATE_COUPLE_IDR,
+  COOKING_CLASS_PRIVATE_SOLO_IDR,
+  COOKING_CLASS_STANDARD_PRICE_IDR,
+} from "@/data/cultureSales"
+
+const COOKING_PRIVATE_SOLO_DIFF =
+  COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
+
 export interface TourAddon {
   id: string
   name: string
@@ -50,6 +60,10 @@ export interface Tour {
   category: TourCategoryId
   /** Optional area label shown on discovery cards (e.g. Ubud / Pejeng). */
   area?: string
+  /** Above-the-fold venue chip (kitchen, arena, trailhead). */
+  venue?: string
+  /** Above-the-fold pickup chip (free Ubud, island-wide, surcharge). */
+  pickup?: string
   /** Featured on homepage top-picks rail when true. */
   isTopPick?: boolean
   duration: string
@@ -62,6 +76,8 @@ export interface Tour {
   heroImage: {
     url: string
     alt: string
+    width?: number
+    height?: number
   }
   gallery: { url: string; alt: string }[]
   shortDescription: string
@@ -81,17 +97,20 @@ export interface Tour {
 export const TOURS: Tour[] = [
   {
     id: "bali-atv-adventure",
-    title: "Bali ATV Quad Bike Adventure & River Tubing",
+    title: "Bali ATV Quad Bike Adventure near Ubud",
     slug: "bali-atv-adventure",
     category: "adventure",
-    area: "Pejeng / Ubud",
+    area: "Sedang / Ubud",
+    venue: "All New Bali Adventure, Sedang",
+    pickup: "Hotel pickup IDR 400,000 — optional",
     isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "ATV Ride Ubud from IDR 750K",
+    seoTitle: "ATV Ride Ubud from IDR 750K | Tandem 1.1M",
     seoDescription:
-      "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Optional Wos tubing. WhatsApp booking.",
+      "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Hotel pickup IDR 400K or self-meet. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV jungle adventure ride through tropical rainforest trails",
@@ -120,6 +139,13 @@ Hop on a powerful ATV and race scenic off-road trails with expert guides. Packag
 
 ### Combine with River Tubing or Rafting
 Want even more adventure? Pair your ATV ride with river tubing on the Wos River, or ask about an ATV + rafting combo. After racing the ATV mud track, cool down as you float the river or paddle whitewater — favourite combos for guests who want a full day of thrills on land and water.
+
+### Plan your ATV day
+- [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) — single IDR 750K vs tandem IDR 1.1M
+- [All New Bali Adventure arena](/blog/bali-atv-all-new-bali-adventure-location-guide) — self-meet in Sedang vs hotel pickup IDR 400,000
+- [Jungle mud vs cave/tunnel tracks](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) — we are not Kuber or Dragon Cave
+- [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali) — land-then-water combo (ask WhatsApp for timing)
+- [Private vs mass-market ATV](/blog/private-atv-vs-mass-market-ubud)
 
 Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing combo for your preferred date.`,
     highlights: [
@@ -195,7 +221,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-1",
         question: "How much does an ATV ride near Ubud cost in 2026?",
         answer:
-          "Single ATV starts from IDR 750,000 per person and tandem from IDR 1,100,000 for two sharing one bike. Packages include lunch, helmet, boot shoes, insurance (ages 6–65), and a safety briefing at All New Bali Adventure. Hotel pickup is optional at IDR 400,000.",
+          "Single ATV starts from IDR 750,000 per person and tandem from IDR 1,100,000 for two sharing one bike. Packages include lunch, helmet, boot shoes, insurance (ages 6–65), and a safety briefing at All New Bali Adventure. Hotel pickup is optional at IDR 400,000; self-meet at the Sedang arena has no pickup fee.",
       },
       {
         id: "faq-atv-2",
@@ -239,6 +265,228 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         answer:
           "Yes — the All New Bali Adventure track includes jungle mud, soft soil, and river crossings on a 4-wheel sport ATV (quad). You stay on a stable four-wheel machine; no clutch or motocross bike balance required.",
       },
+      {
+        id: "faq-atv-9",
+        question: "Should I book a single ATV or a tandem?",
+        answer:
+          "Book a single ATV (from IDR 750,000) if each guest wants their own bike. Book tandem (IDR 1,100,000 for two sharing one bike) if you are a couple or one rider prefers not to drive. Both include lunch, gear, and insurance — say 1 or 2 riders on WhatsApp and we will quote the right option.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: "batur-sunrise-jeep-tour",
+    title: "Mount Batur Sunrise Jeep Tour",
+    slug: "batur-sunrise-jeep-tour",
+    category: "adventure",
+    area: "Kintamani / Mount Batur",
+    pickup: "Island-wide hotel pickup included",
+    isTopPick: true,
+    pickup: "Hotel pickup included island-wide",
+    duration: "Approx. 6–7 Hours",
+    basePrice: 1350000,
+    seoTitle: "Mount Batur Sunrise Jeep | No Hike, From IDR 750K",
+    seoDescription:
+      "Private 4×4 crater-rim jeep near Kintamani. Hot drink, breakfast, hotel pickup included. Solo IDR 1.35M · 2 pax 825K · 3+ from IDR 750K. No hike.",
+    heroImage: {
+      url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
+      alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
+    },
+    gallery: [
+      {
+        url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
+        alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1693821876313-dc573a92028c?auto=format&fit=crop&w=1200&q=80",
+        alt: "Sunrise over Lake Batur seen from the Mount Batur crater rim",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1725946687006-e5cf87668fd9?auto=format&fit=crop&w=1200&q=80",
+        alt: "Off-road vehicle parked on the volcanic terrain near Kintamani",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1508591086314-d7deb00cede9?auto=format&fit=crop&w=1200&q=80",
+        alt: "Mount Batur summit rising above the morning clouds",
+      },
+    ],
+    shortDescription:
+      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, and breakfast served on top as the sun rises over Lake Batur and Mount Agung. Solo from IDR 1,350,000, IDR 825,000 per person for 2 guests, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
+    fullDescription: `**What is the Mount Batur Sunrise Jeep Tour?** It is a private 4×4 jeep ride up Mount Batur’s volcanic tracks to a crater-rim viewpoint near Kintamani — about 1,350 metres above sea level — so you watch sunrise over **Lake Batur** and **Mount Agung** without the classic 2-hour summit trek. A local driver, hot drink en route, breakfast served on top of the jeep, and hotel pickup are included. Solo from **IDR 1,350,000**, **IDR 825,000 per person** for 2 guests, or **IDR 750,000 per person** once 3+ guests share one jeep.
+
+Want the famous Mount Batur sunrise without lacing up hiking boots at 2 AM? You stay in the jeep. The viewpoint is on Mount Batur’s eastern flank — the same golden caldera light trekkers queue for, without scrambling lava rock in the dark.
+
+### How the Morning Works
+We collect you from your hotel in the very early hours — pickup time depends on your area, with south Bali areas (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leaving earliest and Ubud guests getting a slightly later start. At our Kintamani base camp you transfer into a rugged 4×4 jeep with an experienced local driver, who navigates the dirt and lava-rock tracks up toward the sunrise viewpoint while a hot drink is served along the way.
+
+### Sunrise & Breakfast on Top
+Settle in as the sky shifts from black to orange, with Lake Batur and Mount Agung spread out below the crater rim. Once the sun clears the horizon, your driver serves a simple breakfast right there on top of the jeep, so you can keep watching the light change over the caldera instead of rushing back down.
+
+### Jeep vs Mount Batur sunrise trek
+
+| | Sunrise jeep (this tour) | Classic Batur summit trek |
+| --- | --- | --- |
+| How you go up | Private 4×4 on volcanic tracks | ~2-hour hike in the dark |
+| Fitness needed | Sit in the jeep | Moderate–hard walking |
+| View | Crater-rim viewpoint ~1,350m | Summit trail (different route) |
+| Breakfast | Served on top of the jeep | Usually at a trek stop |
+| Hotel pickup | Included island-wide | Varies by operator |
+| Best for | Families, couples, anyone skipping the hike | Fit hikers who want the summit |
+
+Side-by-side detail: [Mount Batur jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek). Full itinerary: [Batur sunrise jeep guide 2026](/blog/mount-batur-sunrise-jeep-tour-guide-2026).
+
+### Optional Coffee Plantation Stop
+On the way back we can swing by a local Kintamani coffee plantation for a short, no-obligation stop — a relaxed way to try Balinese coffee before heading back to your hotel. For a dedicated ethical tasting near Ubud, see [Luwak Coffee Plantation (Umah Kuno)](/tours/luwak-coffee-plantation).
+
+### Group-Friendly Pricing
+A private jeep costs the same whether one or three people ride, so the per-person rate drops the more guests you bring — solo travellers pay the full jeep rate, while groups of two or three split it.
+
+| Guests in one jeep | Price per person (IDR) |
+| --- | --- |
+| 1 | 1,350,000 |
+| 2 | 825,000 |
+| 3+ | 750,000 |
+
+Hotel pickup and drop-off are built into those rates (not the IDR 400,000 ATV/rafting pickup add-on). Message WhatsApp with your guest count for an exact quote.
+
+### What to bring
+Warm layer (it is cold on the rim before sunrise), closed shoes, phone/camera, and a little cash if you want coffee-plantation souvenirs. We handle the jeep, driver, entrance fee, hot drink, breakfast, and insurance for ages 6–65.`,
+    highlights: [
+      "4×4 jeep ride up Mount Batur's volcanic tracks",
+      "Sunrise over Lake Batur and Mount Agung from ~1,350m",
+      "Hot drink en route + breakfast served on top",
+      "Per-person price drops the more guests share a jeep",
+      "Optional Kintamani coffee plantation stop on the way back",
+    ],
+    included: [
+      "Private 4×4 jeep + experienced local driver",
+      "Hotel pickup & drop-off",
+      "Hot drink on the way up",
+      "Breakfast served on top of the jeep",
+      "Kintamani / Mount Batur area entrance fee",
+      "Insurance for ages 6–65",
+    ],
+    notIncluded: [
+      "Coffee plantation purchases (the stop itself is free to visit)",
+      "Personal expenses",
+      "Gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-jeep-1",
+        time: "02:00–03:00 AM",
+        title: "Hotel Pickup",
+        description:
+          "We collect you from your hotel — exact pickup time depends on your area — and transfer you toward the Kintamani base camp.",
+      },
+      {
+        id: "iti-jeep-2",
+        time: "04:00 AM",
+        title: "Meet Your Jeep & Driver",
+        description:
+          "Transfer into a 4×4 jeep at base camp and set off toward the sunrise viewpoint, with a hot drink served on the way up.",
+      },
+      {
+        id: "iti-jeep-3",
+        time: "05:45 AM",
+        title: "Arrive at the Sunrise Viewpoint",
+        description:
+          "Reach the crater-rim viewpoint on Mount Batur's eastern flank (approx. 1,350m above sea level) and find your spot before the sky lightens.",
+      },
+      {
+        id: "iti-jeep-4",
+        time: "06:00 AM",
+        title: "Breakfast on Top",
+        description:
+          "Watch the sunrise over Lake Batur and Mount Agung while a simple breakfast is served on top of the jeep.",
+      },
+      {
+        id: "iti-jeep-5",
+        time: "06:45 AM",
+        title: "Return to Base Camp",
+        description: "Head back down the volcanic tracks to the jeep parking area at base camp.",
+      },
+      {
+        id: "iti-jeep-6",
+        time: "08:00 AM (Optional)",
+        title: "Coffee Plantation Stop",
+        description: "Optional stop at a local Kintamani coffee plantation on the way back — no obligation to buy.",
+      },
+      {
+        id: "iti-jeep-7",
+        time: "09:30 AM",
+        title: "Tour Ends",
+        description: "Drop-off back at your hotel — tour concludes.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-jeep-1",
+        question: "How much does the Mount Batur Sunrise Jeep Tour cost?",
+        answer:
+          "IDR 1,350,000 for a solo traveller, IDR 825,000 per person for 2 guests sharing a jeep, and IDR 750,000 per person for 3 or more guests. Private jeep, driver, hotel pickup, hot drink, and breakfast on top are all included — message WhatsApp with your guest count for an exact quote.",
+      },
+      {
+        id: "faq-jeep-2",
+        question: "What time is hotel pickup?",
+        answer:
+          "Typically between 02:00–03:00 AM depending on your hotel area — south Bali areas (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leave earliest, Ubud guests a little later. We confirm your exact pickup time on WhatsApp once your date is booked.",
+      },
+      {
+        id: "faq-jeep-3",
+        question: "Do we hike up Mount Batur, or stay in the jeep?",
+        answer:
+          "You stay in the jeep. This tour drives volcanic tracks to a crater-rim viewpoint on Mount Batur’s eastern flank (~1,350m) — sunrise over Lake Batur and Mount Agung without the roughly 2-hour summit trek. It is not the same pin as the summit trail.",
+      },
+      {
+        id: "faq-jeep-4",
+        question: "Is breakfast included?",
+        answer:
+          "Yes — a simple breakfast is served on top of the jeep right after sunrise, so you can keep enjoying the view over Lake Batur and Mount Agung.",
+      },
+      {
+        id: "faq-jeep-5",
+        question: "Can we stop at a coffee plantation?",
+        answer:
+          "Yes — we offer an optional, no-obligation stop at a local Kintamani coffee plantation on the way back to the meeting point.",
+      },
+      {
+        id: "faq-jeep-6",
+        question: "Why does the per-person price drop with more guests?",
+        answer:
+          "A private jeep and driver cost the same whether one or three people ride along, so we split that flat cost across your group — a solo traveller pays the full rate, while 2 or 3 guests sharing a jeep each pay less.",
+      },
+      {
+        id: "faq-jeep-7",
+        question: "Is hotel pickup included on the Mount Batur jeep tour?",
+        answer:
+          "Yes. Hotel pickup and drop-off are included in the jeep price island-wide — Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua, and nearby areas. Exact pickup time (usually 02:00–03:00 AM) is confirmed on WhatsApp.",
+      },
+      {
+        id: "faq-jeep-8",
+        question: "Is the Mount Batur sunrise jeep tour suitable for families and non-hikers?",
+        answer:
+          "Yes. You stay seated in the 4×4 — there is no summit hike. It suits couples, families, and guests who want the caldera sunrise without dark lava-rock walking. Insurance covers ages 6–65.",
+      },
+      {
+        id: "faq-jeep-9",
+        question: "How long is the Mount Batur Sunrise Jeep Tour?",
+        answer:
+          "About 6–7 hours door to door, including hotel pickup, the volcanic-track jeep ride, sunrise and breakfast on the rim, an optional coffee stop, and drop-off.",
+      },
+      {
+        id: "faq-jeep-10",
+        question: "What should I wear for a Batur sunrise jeep tour?",
+        answer:
+          "A warm layer (it is cold before sunrise at ~1,350m), closed shoes, and a jacket you can peel off after the sun is up. Bring a camera. Breakfast and a hot drink are included.",
+      },
+      {
+        id: "faq-jeep-11",
+        question: "Do we reach the Mount Batur summit in the jeep?",
+        answer:
+          "No. This tour drives volcanic tracks to a crater-rim viewpoint on Mount Batur’s eastern flank (~1,350m). It is not the classic summit trek. Choose the jeep if you want sunrise over Lake Batur without hiking; choose a trek operator if summit walking is the goal.",
+      },
     ],
     reviews: [],
   },
@@ -248,7 +496,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     slug: "whitewater-rafting",
     category: "adventure",
     area: "Ayung River / Ubud",
+    pickup: "Hotel pickup IDR 400,000 — optional",
     isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
@@ -339,7 +589,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         id: "faq-raft-3",
         question: "Is hotel pickup included?",
         answer:
-          "Hotel pickup is available for an additional IDR 400,000. Free Ubud pickup applies to the cycling tour only.",
+          "Hotel pickup is available for an additional IDR 400,000, or meet on site with no transport fee. Free Ubud pickup is included on the cycling tour and Tumang cooking class — not on rafting.",
       },
       {
         id: "faq-raft-4",
@@ -361,6 +611,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
     slug: "canyon-tubing",
     category: "adventure",
     area: "Wos River / Pejeng",
+    pickup: "Hotel pickup IDR 400,000 — optional",
     duration: "2.5 Hours",
     basePrice: 359000,
     childPrice: 300000,
@@ -451,7 +702,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         id: "faq-tube-4",
         question: "Is hotel pickup included?",
         answer:
-          "Hotel pickup is available for an additional IDR 400,000. Free Ubud pickup applies to the cycling tour only.",
+          "Hotel pickup is available for an additional IDR 400,000, or meet on site with no transport fee. Free Ubud pickup is included on the cycling tour and Tumang cooking class — not on canyon tubing.",
       },
       {
         id: "faq-tube-5",
@@ -468,8 +719,10 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     slug: "ubud-ricefield-cycling-tour",
     category: "village",
     area: "Pejeng / Ubud",
+    pickup: "Free Ubud-area hotel pickup",
     isTopPick: true,
-    duration: "Full Day",
+    pickup: "Free Ubud-area hotel pickup",
+    duration: "2 Hours",
     basePrice: 750000,
     seoTitle: "Rice Paddy Cycling Ubud | Pejeng",
     seoDescription:
@@ -508,8 +761,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         alt: "Lunch included on the Ubud ricefield cycling tour",
       },
     ],
-    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder, replace with actual ID
-    shortDescription: "Authentic Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
+    shortDescription: "Authentic 2-hour Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
@@ -528,7 +780,7 @@ Enjoy a free lunch at a chill local village restaurant serving authentic Balines
 After the tour we drop you back at your Ubud hotel.
 
 **Available Schedule:**
-- **Afternoon departure** — ideal for travelers who prefer a later start
+- **Afternoon departure** — 2-hour tour, ideal for travelers who prefer a later start
 
 **Important Note:**
 The itinerary may sometimes change due to field conditions, weather, or village activities. We will always adjust to make sure you still have the best and safest experience.`,
@@ -555,37 +807,37 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       },
       {
         id: "iti-ubud-cyc-2",
-        time: "Morning",
+        time: "~15 min",
         title: "Ricefield Cycling",
         description: "Relaxing bike ride through beautiful green ricefields and quiet village paths.",
       },
       {
         id: "iti-ubud-cyc-3",
-        time: "Midday",
+        time: "~15 min",
         title: "Sightseeing & Harvesting Activity",
         description: "See local farmers and try harvesting rice with them. Learn about traditional farming.",
       },
       {
         id: "iti-ubud-cyc-4",
-        time: "Afternoon",
+        time: "~15 min",
         title: "Visit Balinese House",
         description: "Enter a real Balinese family house and see daily local life.",
       },
       {
         id: "iti-ubud-cyc-5",
-        time: "Afternoon",
+        time: "~15 min",
         title: "Balinese Carving Art",
         description: "Visit a local wood carving studio and see artists at work.",
       },
       {
         id: "iti-ubud-cyc-6",
-        time: "Afternoon",
+        time: "~15 min",
         title: "See Local People Life",
         description: "Cycle through the village to see temples, schools, and local activities.",
       },
       {
         id: "iti-ubud-cyc-7",
-        time: "Midday",
+        time: "~20 min",
         title: "Lunch Stop",
         description: "Enjoy a free lunch at a chill local village restaurant with authentic Balinese food.",
       },
@@ -593,7 +845,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "iti-ubud-cyc-8",
         time: "Finish",
         title: "Drop Back to Hotel",
-        description: "After the tour we drop you back at your hotel in Ubud.",
+        description: "After the 2-hour tour we drop you back at your hotel in Ubud.",
       },
     ],
     addons: [],
@@ -602,7 +854,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-1",
         question: "How much is the Ubud rice paddy cycling tour?",
         answer:
-          "IDR 750,000 per person in 2026. That includes the guided Pejeng village / ricefield ride, bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
+          "IDR 750,000 per person in 2026 for a 2-hour guided Pejeng village / ricefield ride, including bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
       },
       {
         id: "faq-ubud-cyc-2",
@@ -632,7 +884,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-6",
         question: "Can I combine cycling with a cooking class?",
         answer:
-          "Yes. Many guests ride Pejeng ricefields by day and join an afternoon Tumang Bali Cooking Class (shared from IDR 506,370, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
+          "Yes. The cycling tour is 2 hours, so many guests ride Pejeng ricefields first and join an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
       },
       {
         id: "faq-ubud-cyc-7",
@@ -646,6 +898,18 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         answer:
           "Yes. We provide insurance for guests aged 6–65 on the Ubud Ricefield Cycling Tour.",
       },
+      {
+        id: "faq-ubud-cyc-9",
+        question: "Is this an e-bike (electric) tour?",
+        answer:
+          "No — it's a standard pedal bicycle with helmet included. Because the Pejeng route is mostly flat with gentle village and ricefield paths, most guests don't need electric assist to enjoy the ride comfortably.",
+      },
+      {
+        id: "faq-ubud-cyc-10",
+        question: "How long is the Ubud ricefield cycling tour?",
+        answer:
+          "About 2 hours, including the guided Pejeng village ride, cultural stops, and lunch. Hotel pickup and drop-off in the Ubud area are included.",
+      },
     ],
     reviews: [],
   },
@@ -655,12 +919,19 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     slug: "luwak-coffee-plantation",
     category: "food",
     area: "Tampaksiring / Ubud",
+    pickup: "Transport not included",
     isTopPick: true,
+    pickup: "Transport not included",
     duration: "1.5 Hours",
-    basePrice: 400000,
+    basePrice: 800000,
+    seoTitle: "Luwak Coffee Plantation Umah Kuno | IDR 800K",
+    seoDescription:
+      "Ethical Luwak coffee tasting at Umah Kuno near Ubud — jungle walk, wood-fire roasting, and a 10-drink tasting flight including Kopi Luwak. IDR 800,000 per person. Min 3 guests.",
     heroImage: {
       url: "/coffee.jpg",
       alt: "Luwak Coffee Plantation Umah Kuno",
+      width: 767,
+      height: 1024,
     },
     gallery: [
       {
@@ -668,13 +939,13 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         alt: "Traditional Umah Kuno Balinese Compound",
       },
     ],
-    youtubeVideoId: "dQw4w9WgXcQ", // Placeholder
-    shortDescription: "Discover the secrets behind Bali's world-famous coffee at Umah Kuno with a jungle walk, traditional roasting, and tasting flight.",
+    shortDescription:
+      "Ethical Luwak coffee tasting at Umah Kuno — jungle walk, traditional roasting, and a 10-drink tasting flight. IDR 800,000 per person (minimum 3 guests).",
     fullDescription: `**A Journey Into the Heart of Bali's Coffee Culture**
 
 Bali is world-renowned for its coffee, but the story behind the cup is often hidden from visitors. Our Luwak Coffee Plantation Experience at the beautiful **Umah Kuno** estate offers you a transparent, ethical, and deeply educational look into how Bali's most famous export is cultivated, processed, and enjoyed. 
 
-This standalone 1.5-hour experience is perfect for a relaxing morning or a slow afternoon in the jungle. It is designed for coffee lovers, culture enthusiasts, and families looking for a peaceful escape into nature.
+This standalone 1.5-hour experience is perfect for a relaxing morning or a slow afternoon in the jungle. It is designed for coffee lovers, culture enthusiasts, and families looking for a peaceful escape into nature. It is a dedicated tasting at Umah Kuno near Ubud — not the short optional Kintamani coffee stop on our [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour).
 
 ### The Umah Kuno Difference: Ethical and Authentic
 The highlight of this tour is learning about *Kopi Luwak*, the most expensive and exclusive coffee in the world, famous for its incredibly smooth, non-bitter taste. The coffee is made from beans that have been naturally fermented in the digestive tract of the Asian Palm Civet (the *Luwak*). 
@@ -700,7 +971,7 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
 - **Morning Session:** 10:00 AM – 11:30 AM
 - **Afternoon Session:** 2:00 PM – 3:30 PM
 
-*(Note: Minimum booking of 3 people required for this experience)*`,
+*(Note: **IDR 800,000 per person**. Minimum booking of 3 people required for this experience)*`,
     highlights: [
       "Stroll through a lush, shaded plantation",
       "Watch local farmers roast coffee beans over open wood fires",
@@ -735,6 +1006,12 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     addons: [],
     faqs: [
       {
+        id: "faq-cof-price",
+        question: "How much is the Luwak Coffee Plantation Experience?",
+        answer:
+          "IDR 800,000 per person. Minimum booking is 3 guests. The price includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included.",
+      },
+      {
         id: "faq-cof-1",
         question: "Is transportation included?",
         answer: "No, this is a standalone experience. You will need to arrange your own transport to the plantation in Tampaksiring, which is about 25 minutes from central Ubud.",
@@ -754,19 +1031,21 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
   },
   {
     id: "balinese-cooking-class",
-    title: "Tumang Bali Cooking Class",
+    title: "Tumang Bali Cooking Class near Ubud",
     slug: "balinese-cooking-class",
     category: "food",
     area: "Tumang village / Ubud",
+    venue: "Tumang village near Ubud",
+    pickup: "Free Ubud-area hotel pickup",
     isTopPick: true,
     duration: "3–4 Hours",
-    basePrice: 506370,
-    seoTitle: "Cooking Class Ubud | Tumang from IDR 506K",
+    basePrice: COOKING_CLASS_PRICE_IDR,
+    seoTitle: "Cooking Class Ubud | Tumang · Free Pickup 450K",
     seoDescription:
-      "Tumang Bali Cooking Class near Ubud — market tour, rice-field walk, 10+ dishes, max 8 guests. Shared IDR 506,370. Free Ubud pickup. Book on WhatsApp.",
+      "Tumang Bali Cooking Class near Ubud — AM market tour, 10+ dishes, max 8 guests. Promo IDR 450,000 (was 506,370) + free Ubud pickup. WhatsApp booking.",
     heroImage: {
-      url: "/images/cooking/pancake-toss.jpg",
-      alt: "Hands-on Tumang Bali Cooking Class near Ubud",
+      url: "/images/cooking/satay-class.jpg",
+      alt: "Guests preparing sate skewers during Tumang Bali Cooking Class near Ubud",
     },
     gallery: [
       {
@@ -799,7 +1078,7 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
       },
     ],
     shortDescription:
-      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Sudiana, max 8 guests, English instruction. Shared from IDR 506,370 with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
+      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Sudiana, max 8 guests, English instruction. Promo IDR 450,000 / person (was IDR 506,370) with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
     fullDescription: `**Tumang Bali Cooking Class — authentic village kitchen near Ubud**
 
 [Tumang Bali](https://tumangbaliclass.com/) is a family-run cooking school in Tumang village near Ubud for travellers who want hands-on Balinese cuisine — not a hotel demo. Head Chef **Wayan Sudiana** teaches Base Genep (bumbu), sate lilit, pepes ikan, sambal matah, lawar, and more. Classes are taught in English. Complimentary pickup in the Ubud area. Max **8 guests** per shared class.
@@ -824,15 +1103,15 @@ We list Tumang as our flagship food experience so you can book adventure, villag
 ### Pricing (2026)
 | Option | Price |
 |--------|-------|
-| Shared class | **IDR 506,370** per person |
+| Shared class (promo) | **IDR 450,000** per person (was IDR 506,370) |
 | Private (1 guest) | **IDR 633,090** |
 | Private (2 guests) | **IDR 1,266,180** total |
 
 ### Recognition
-TripAdvisor **Traveler’s Choice 2026** · **5.0** rating (1500+ reviews).
+TripAdvisor **[Traveler’s Choice 2026](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)** · **5.0** rating (1500+ reviews).
 
 ### Learn more
-Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes)`,
+Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes) · [TripAdvisor reviews](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)`,
     highlights: [
       "10+ dishes with Chef Wayan Sudiana",
       "Morning market tour (AM class) + rice-field walk",
@@ -895,17 +1174,22 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         name: "Shared morning class (market tour)",
         priceDiff: 0,
-        description: "08:30 start · pasar + rice-field walk · max 8 · IDR 506,370",
+        description: `08:30 start · pasar + rice-field walk · max 8 · promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}`,
       },
       {
         name: "Shared afternoon class",
         priceDiff: 0,
-        description: "Afternoon · rice-field walk + kitchen · max 8 · IDR 506,370",
+        description: `Afternoon · rice-field walk + kitchen · max 8 · promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}`,
       },
       {
         name: "Private class (1 guest)",
-        priceDiff: 126720,
-        description: "Exclusive kitchen · IDR 633,090",
+        priceDiff: COOKING_PRIVATE_SOLO_DIFF,
+        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")}`,
+      },
+      {
+        name: "Private class (2 guests)",
+        priceDiff: COOKING_PRIVATE_SOLO_DIFF,
+        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} total`,
       },
     ],
     addons: [],
@@ -913,8 +1197,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         id: "faq-cook-1",
         question: "How much is Tumang Bali Cooking Class?",
-        answer:
-          "Shared small-group class is IDR 506,370 per person. Private kitchen is IDR 633,090 for 1 guest, or IDR 1,266,180 for 2 guests. Complimentary Ubud-area hotel pickup is included.",
+        answer: `Shared small-group class is promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")} per person (was IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString("id-ID")}). Private kitchen is IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")} for 1 guest, or IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} for 2 guests. Complimentary Ubud-area hotel pickup is included.`,
       },
       {
         id: "faq-cook-2",
@@ -955,41 +1238,94 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
     slug: "full-day-ubud-tour",
     category: "day-tour",
     area: "Ubud & surrounds",
+    pickup: "Private car pickup included",
     isTopPick: true,
+    pickup: "Private car hotel pickup",
     duration: "10 Hours",
     basePrice: 600000,
+    seoTitle: "Full Day Ubud Tour | Palace, Market & Rice Terraces",
+    seoDescription:
+      "Private full-day Ubud tour: Royal Palace, Art Market & Tegalalang Rice Terraces from IDR 600K. English driver, custom pace. WhatsApp booking.",
     heroImage: {
-      url: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
-      alt: "Full Day Ubud Tour",
+      url: "/images/adventures/full-day-ubud-tour.jpg",
+      alt: "Tegalalang rice terraces framed by jungle palms on the Full Day Ubud Tour",
     },
-    gallery: [],
-    shortDescription: "Experience the ultimate Full Day Ubud Tour featuring the Ubud Royal Palace, vibrant Art Market, and breathtaking rice terraces.",
-    fullDescription: `**The Ultimate Full Day Ubud Tour**\n\nWhen searching for the perfect *full day ubud tour*, look no further. This comprehensive itinerary is designed to cover the very best cultural highlights in central Bali. \n\nWe begin our journey at the historic **Ubud Royal Palace**, where you can marvel at traditional Balinese architecture. Just across the street, we dive into the bustling **Ubud Art Market**, a perfect spot to find authentic handicrafts and souvenirs.\n\nAfter a morning of culture and shopping, we head to the lush jungles for an optional *atv ride bali swing tour* experience or a relaxing walk through the Tegalalang rice terraces. This is a private tour, meaning you can customize the pace to suit your needs.`,
-    highlights: ["Ubud Royal Palace", "Ubud Art Market", "Tegalalang Rice Terraces"],
-    included: ["Private transport", "English speaking driver", "Mineral water"],
-    notIncluded: ["Entrance fees", "Lunch"],
+    gallery: [
+      {
+        url: "/images/adventures/full-day-ubud-tour.jpg",
+        alt: "Tegalalang rice terraces framed by jungle palms on the Full Day Ubud Tour",
+      },
+    ],
+    shortDescription:
+      "Private full-day Ubud tour covering the Royal Palace, Art Market, and Tegalalang Rice Terraces — private car, English-speaking driver, and a pace you set yourself. From IDR 600,000.",
+    fullDescription: `**Full Day Ubud Tour: Royal Palace, Art Market & Rice Terraces**
+
+Looking for a private full day Ubud tour that covers the classic central-Bali stops without a fixed group schedule? This itinerary pairs Ubud's cultural core with the countryside north of town, with your own car and English-speaking driver setting the pace.
+
+### Morning: Ubud Royal Palace & Art Market
+Start at the historic **Ubud Royal Palace** (Puri Saren Agung) to see traditional Balinese architecture, then cross the street to the **Ubud Art Market** for handicrafts, textiles, and souvenirs while the morning trade is still quiet.
+
+### Afternoon: Tegalalang Rice Terraces
+After lunch (on your own — see inclusions below), continue north to the **Tegalalang Rice Terraces**. Walk the ridges for classic Bali photos, or add on the Bali Swing nearby at your own cost if you want the jungle-swing photo stop.
+
+### Private & Flexible
+This is a private car and driver, not a shared minibus — so you can linger longer at the palace, skip the market, or ask your driver to adjust timing around your flight or dinner plans.`,
+    highlights: [
+      "Ubud Royal Palace (Puri Saren Agung)",
+      "Ubud Art Market for handicrafts & textiles",
+      "Tegalalang Rice Terraces",
+      "Private car — pace set by you, not a group schedule",
+      "English-speaking driver for the full 10 hours",
+    ],
+    included: ["Private car & transport for 10 hours", "English-speaking driver", "Mineral water"],
+    notIncluded: ["Entrance fees (Palace, rice terraces, Bali Swing if added)", "Lunch", "Personal expenses", "Gratuities"],
     itinerary: [
       {
         id: "iti-fdu-1",
         time: "08:30 AM",
         title: "Hotel Pickup",
-        description: "Your private driver will pick you up from your hotel in Bali."
+        description: "Your private driver picks you up from your hotel in the Ubud area."
       },
       {
         id: "iti-fdu-2",
         time: "10:00 AM",
         title: "Ubud Royal Palace & Art Market",
-        description: "Explore the center of Ubud, taking in the historical palace and shopping at the traditional market."
+        description: "Explore the center of Ubud — the historic palace, then the traditional Art Market across the street."
       },
       {
         id: "iti-fdu-3",
         time: "02:00 PM",
         title: "Tegalalang Rice Terraces",
-        description: "Walk the stunning terraces and optionally experience the famous Bali Swing."
+        description: "Walk the terraces and optionally add the Bali Swing (own cost) before heading back to your hotel."
       }
     ],
     addons: [],
-    faqs: [],
+    faqs: [
+      {
+        id: "faq-fdu-1",
+        question: "How much does the Full Day Ubud Tour cost?",
+        answer:
+          "From IDR 600,000 for private car, transport, and an English-speaking driver for the full 10-hour day. Entrance fees and lunch are not included — message WhatsApp for a guest-count quote.",
+      },
+      {
+        id: "faq-fdu-2",
+        question: "Is this a private tour or a shared group tour?",
+        answer:
+          "Private. You get your own car and driver, so you can spend more time at the palace or market and less at the rice terraces (or the reverse) — the schedule above is a guide, not a fixed timetable.",
+      },
+      {
+        id: "faq-fdu-3",
+        question: "Is the Bali Swing included at Tegalalang?",
+        answer:
+          "No — the Bali Swing is a separate paid attraction near the rice terraces. Your driver can stop there if you want to add it at your own cost.",
+      },
+      {
+        id: "faq-fdu-4",
+        question: "Can I customize the stops or timing?",
+        answer:
+          "Yes. Since it's a private car and driver (not a shared minibus), tell us your priorities on WhatsApp and we'll adjust the order or timing around your flight or dinner plans.",
+      },
+    ],
     reviews: []
   },
   {
@@ -998,40 +1334,86 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
     slug: "half-day-ubud-tanah-lot-tour",
     category: "day-tour",
     area: "Ubud → Tanah Lot",
+    pickup: "Private car hotel pickup",
     duration: "6 Hours",
     basePrice: 450000,
+    seoTitle: "Half Day Ubud & Tanah Lot Sunset Tour | From IDR 450K",
+    seoDescription:
+      "Half day private tour: Ubud cultural stops then Tanah Lot sea-temple sunset. From IDR 450K, English driver. Ideal if you're short on time. WhatsApp booking.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
       alt: "Tanah Lot Sunset",
     },
     gallery: [],
-    shortDescription: "A perfect half day trip explore ubud culture amazing sunset tanah lot temple. Ideal for those short on time.",
-    fullDescription: `**Half Day Ubud & Tanah Lot Sunset Experience**\n\nIf you want to experience the magic of Bali but are short on time, this is the perfect *half day trip explore ubud culture amazing sunset tanah lot temple*.\n\nWe start in the afternoon, visiting key cultural sites around Ubud before making our way to the coast. As the afternoon cools, we arrive at the iconic sea temple of Tanah Lot. Watching the sun dip below the Indian Ocean with the temple silhouetted in the foreground is a breathtaking experience.\n\nThis *half day ubud tour* alternative ensures you get maximum value and unforgettable memories without committing to a full 10-hour day.`,
-    highlights: ["Ubud Cultural Stops", "Tanah Lot Temple", "Sunset views"],
-    included: ["Private transport", "English speaking driver", "Mineral water"],
-    notIncluded: ["Entrance fees", "Dinner"],
+    shortDescription:
+      "Half day private tour pairing Ubud cultural stops with a Tanah Lot sea-temple sunset — private car, English-speaking driver, from IDR 450,000. Ideal if you're short on time.",
+    fullDescription: `**Half Day Ubud & Tanah Lot Sunset Tour**
+
+Short on time but don't want to miss the coast? This half day trip pairs an afternoon around Ubud with the classic Tanah Lot sunset — without committing to a full 10-hour day.
+
+### Afternoon: Ubud Surrounds
+We start in the early afternoon with a private car and English-speaking driver, visiting cultural sites or temples around the Ubud area (tell us your interests on WhatsApp so your driver can prioritize accordingly).
+
+### Sunset: Tanah Lot Temple
+As the afternoon cools, we head to the coast and the iconic sea temple of **Tanah Lot**. Watching the sun dip below the Indian Ocean with the temple silhouetted in the foreground is one of Bali's most photographed sunsets.
+
+### Why Choose the Half Day Option
+If your schedule is tight — an early flight, a late arrival, or a full day already booked elsewhere — this half day version still delivers Ubud culture and the Tanah Lot sunset in about 6 hours.`,
+    highlights: [
+      "Ubud cultural stops in the early afternoon",
+      "Tanah Lot Temple sunset over the Indian Ocean",
+      "Private car — 6 hours total, ideal for tight schedules",
+      "English-speaking driver",
+    ],
+    included: ["Private car & transport for 6 hours", "English-speaking driver", "Mineral water"],
+    notIncluded: ["Entrance fees (temples, Tanah Lot)", "Dinner", "Personal expenses", "Gratuities"],
     itinerary: [
       {
         id: "iti-hdu-1",
         time: "01:00 PM",
         title: "Hotel Pickup",
-        description: "Start your half day adventure with a private pickup."
+        description: "Start your half day trip with a private car pickup from your hotel."
       },
       {
         id: "iti-hdu-2",
         time: "02:30 PM",
         title: "Ubud Surrounds",
-        description: "Visit key cultural sites or temples around the Ubud area."
+        description: "Visit key cultural sites or temples around the Ubud area based on your interests."
       },
       {
         id: "iti-hdu-3",
         time: "05:00 PM",
         title: "Tanah Lot Temple Sunset",
-        description: "Arrive at Tanah Lot to secure the perfect spot for the iconic sunset over the ocean."
+        description: "Arrive at Tanah Lot to secure a good spot before sunset over the ocean."
       }
     ],
     addons: [],
-    faqs: [],
+    faqs: [
+      {
+        id: "faq-hdu-1",
+        question: "How much does the half day Ubud & Tanah Lot tour cost?",
+        answer:
+          "From IDR 450,000 for a private car, transport, and an English-speaking driver for the 6-hour trip. Entrance fees are not included — message WhatsApp for a guest-count quote.",
+      },
+      {
+        id: "faq-hdu-2",
+        question: "What time does the tour start?",
+        answer:
+          "Typically an early-afternoon pickup (around 1:00 PM) so you reach Tanah Lot in time for sunset — exact start time can shift slightly by season since sunset time changes through the year. Confirm your date on WhatsApp for the recommended pickup time.",
+      },
+      {
+        id: "faq-hdu-3",
+        question: "Is this better than the full day Ubud tour?",
+        answer:
+          "It depends on your schedule. Choose this half day option if you have a flight, arrival, or another activity taking up the rest of your day — choose the full day tour if you want more time at the Royal Palace, Art Market, and Tegalalang Rice Terraces.",
+      },
+      {
+        id: "faq-hdu-4",
+        question: "Is the tour private or shared with other travelers?",
+        answer:
+          "Private — your own car and English-speaking driver, so timing can flex around sunset and your own pace.",
+      },
+    ],
     reviews: []
   }
 ]
@@ -1057,9 +1439,10 @@ export function getTopPickTours(): Tour[] {
 }
 
 export function searchTours(query: string, limit = 8): Tour[] {
-  const q = query.trim().toLowerCase()
-  if (!q) return []
-  return TOURS.filter((tour) => {
+  const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean)
+  if (terms.length === 0) return []
+
+  const matches = TOURS.map((tour) => {
     const haystack = [
       tour.title,
       tour.shortDescription,
@@ -1069,6 +1452,15 @@ export function searchTours(query: string, limit = 8): Tour[] {
     ]
       .join(" ")
       .toLowerCase()
-    return haystack.includes(q)
-  }).slice(0, limit)
+
+    const matchedTerms = terms.filter((term) => haystack.includes(term)).length
+    return { tour, matchedTerms }
+  }).filter((entry) => entry.matchedTerms > 0)
+
+  // Rank tours that match more of the typed words higher, so multi-word
+  // queries (e.g. "atv ubud tour") still surface the best match even when
+  // no single field contains that exact phrase verbatim.
+  matches.sort((a, b) => b.matchedTerms - a.matchedTerms)
+
+  return matches.slice(0, limit).map((entry) => entry.tour)
 }

@@ -32,6 +32,15 @@ Status key: ✅ done in codebase · 🔄 in progress · ☐ remaining (ops / off
 * [ ] Review-generation loop via WhatsApp after tours
 * [ ] Optional Markdown content negotiation on key URLs (Accept: text/markdown)
 
+## Phase 5 — Competitor Keyword Refresh (2026-09-09) ✅ / 🔄
+* [x] Re-ran competitor research against new ATV entrants (Kuber Bali Adventure, Bali ATV Ride) and deepened cooking/rafting benchmarks (Taman Dukuh, Traveling Spoon, Pertiwi Adventure) — see `COMPETITOR-KEYWORD-REPORT.md` Round 2
+* [x] Fixed thin, keyword-stuffed `day-tour` pages (`full-day-ubud-tour`, `half-day-ubud-tanah-lot-tour`) — added `seoTitle`/`seoDescription`, real FAQs, cleaner copy
+* [x] Added "e-bike or pedal bike?" FAQ to the cycling tour to own the differentiation vs. e-bike-tour competitors
+* [x] Published `/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel` — disambiguates our jungle mud/river-crossing track from cave/tunnel-style competitor tracks
+* [ ] Ops: confirm and publish an explicit minimum solo-ride ATV age (competitor gap — do not fabricate a number)
+* [ ] Ops: confirm exact Tumang Bali Cooking Class clock-time itinerary for parity with Taman Dukuh's benchmark page
+* [ ] Add cancellation-policy cross-link to the cooking tour FAQ
+
 ## GEO execution checklist (reuse each refresh)
 1. Update `GEO_UPDATED` + facts in `geoContent.ts` only (do not fork prices).
 2. Confirm `pricing.ts` tiers match GEO pricing + homepage + blog snippets.

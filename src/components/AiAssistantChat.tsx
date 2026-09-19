@@ -95,7 +95,7 @@ export default function AiAssistantChat() {
   }, [])
 
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-[90] flex justify-end p-4 md:p-6">
+    <div className="ai-assistant-fab pointer-events-none fixed inset-x-0 bottom-0 z-[90] flex justify-end p-4 md:p-6">
       <div className="pointer-events-auto flex w-full max-w-[400px] flex-col items-stretch gap-3">
         {open ? (
           <div

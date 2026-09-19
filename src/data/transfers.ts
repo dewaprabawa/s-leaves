@@ -22,6 +22,7 @@ export interface Transfer {
   metaDescription: string
 }
 
+/** All transfer prices are Indonesian Rupiah (IDR). */
 export const TRANSFERS: Transfer[] = [
   {
     id: 'tr-1',
@@ -36,36 +37,37 @@ export const TRANSFERS: Transfer[] = [
       {
         name: 'Standard MPV (Toyota Avanza)',
         capacity: 4,
-        basePrice: 35,
+        basePrice: 700_000,
         description: 'Best for small families or couples. Fits 4 passengers and 2 medium bags.',
       },
       {
         name: 'Executive SUV (Toyota Fortuner)',
         capacity: 5,
-        basePrice: 55,
+        basePrice: 700_000,
         description: 'Premium SUV class with extra road stability. Fits 5 passengers and 3 bags.',
       },
       {
         name: 'VIP Luxury Van (Toyota Alphard)',
         capacity: 6,
-        basePrice: 95,
+        basePrice: 700_000,
         description: 'Ultra-premium VIP class for maximum comfort and style. Fits 6 passengers and 4 bags.',
       },
     ],
     dropPoints: [
       {
         name: 'Ubud Outer Zone (Tegallalang / Payangan)',
-        additionalPrice: 10,
+        additionalPrice: 100_000,
         description: 'Drop-off surcharge for hotels in northern Ubud regions',
       },
       {
         name: 'Sightseeing Intermediate Stop (Tohpati Batik / Celuk Gold)',
-        additionalPrice: 15,
+        additionalPrice: 150_000,
         description: 'Up to 2 hours stops for cultural sightseeing on the way',
       },
     ],
-    metaTitle: 'Private Airport Transfer from DPS Airport to Ubud | S-Leaves',
-    metaDescription: 'Book a hassle-free private transfer from Ngurah Rai Bali Airport directly to Ubud.',
+    metaTitle: 'Private Airport Transfer from DPS Airport to Ubud | Sekar Bali Activity',
+    metaDescription:
+      'Book a private DPS Airport to Ubud transfer from IDR 700,000. Flat rate includes flight tracking, tolls, parking, and a professional driver.',
   },
   {
     id: 'tr-2',
@@ -80,35 +82,36 @@ export const TRANSFERS: Transfer[] = [
       {
         name: 'Standard MPV (Toyota Avanza)',
         capacity: 4,
-        basePrice: 25,
+        basePrice: 700_000,
         description: 'Economical and reliable MPV. Fits 4 passengers and 2 medium bags.',
       },
       {
         name: 'Executive SUV (Toyota Fortuner)',
         capacity: 5,
-        basePrice: 45,
+        basePrice: 700_000,
         description: 'Comfortable family SUV. Fits 5 passengers and 3 bags.',
       },
       {
         name: 'VIP Luxury Van (Toyota Alphard)',
         capacity: 6,
-        basePrice: 85,
+        basePrice: 700_000,
         description: 'Executive class minivan. VIP pickup with cold towels.',
       },
     ],
     dropPoints: [
       {
         name: 'Extra Stop in Canggu Zone',
-        additionalPrice: 10,
+        additionalPrice: 100_000,
         description: 'Secondary hotel stop in Canggu area',
       },
       {
         name: 'Intermediate stop at Uluwatu Temple',
-        additionalPrice: 20,
+        additionalPrice: 200_000,
         description: 'Sightseeing stop at Uluwatu cliff temple before drop-off',
       },
     ],
-    metaTitle: 'Private Transfer from Ubud to Seminyak & Canggu | S-Leaves',
-    metaDescription: 'Reliable private transfer between hotels in Ubud and Seminyak or Canggu.',
+    metaTitle: 'Private Transfer from Ubud to Seminyak & Canggu | Sekar Bali Activity',
+    metaDescription:
+      'Private Ubud to Seminyak or Canggu transfer from IDR 700,000. Flat-rate hotel pickup with a professional driver.',
   },
 ]

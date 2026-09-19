@@ -17,17 +17,11 @@ import {
   OG_TITLE,
   SITE_NAME,
   SITE_URL,
-  buildAdventureItemListSchema,
   buildOrganizationSchema,
   buildSiteNavigationSchema,
   buildWebsiteSchema,
-  type AdventureOffer,
 } from "@/lib/seo"
-import {
-  buildGeoQASchemas,
-  buildGeoWebPageSchema,
-  buildLlmsDiscoverySchema,
-} from "@/lib/geo"
+import { buildLlmsDiscoverySchema } from "@/lib/geo"
 import { SEO_FOOTER_HEADING, SEO_FOOTER_LINKS } from "@/data/seoFooterLinks"
 
 const dmSans = DM_Sans({
@@ -55,18 +49,22 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   category: 'travel',
   keywords: [
+    'Tumang Bali Cooking Class',
+    'Balinese cooking class Ubud',
+    'cooking class Ubud market tour',
+    'Ubud ricefield cycling tour',
+    'Pejeng ricefield cycling',
+    'cycling cooking class Ubud',
     'Bali travel activities Ubud',
     'Ubud day tours',
     'private ATV tour Bali',
     'ATV ride Ubud',
     'Bali quad bike tour',
-    'Ubud ricefield cycling tour',
-    'cycling cooking class Ubud',
-    'Tumang Bali Cooking Class',
-    'Balinese cooking class Ubud',
-    'cooking class Ubud market tour',
     'Bali whitewater rafting',
     'Bali canyon tubing',
+    'Mount Batur sunrise jeep tour',
+    'Mount Batur jeep vs trek',
+    'Kintamani sunrise jeep',
     'book Bali activity WhatsApp',
     'Sekar Bali Activity',
   ],
@@ -109,74 +107,32 @@ export const metadata: Metadata = {
   },
 }
 
-const adventureOffers: AdventureOffer[] = [
-  {
-    name: 'Single ATV Jungle Ride',
-    description:
-      'Private Bali quad bike adventure at All New Bali Adventure arena through jungle trails and muddy tracks. All-inclusive: lunch, boot shoes, helmet, insurance, and optional Wos River tubing combo.',
-    price: '750000',
-    image: '/images/adventures/atv-adventure.jpg',
-  },
-  {
-    name: 'Tandem ATV Ride',
-    description:
-      'Private tandem ATV tour at All New Bali Adventure for couples and friends. Share a complete quad bike experience with lunch, safety gear, insurance, and optional river tubing.',
-    price: '1100000',
-    image: '/images/adventures/atv-adventure.jpg',
-  },
-  {
-    name: 'Whitewater Rafting Adventure',
-    description: 'Class II-III whitewater rafting through a jungle river canyon. All-inclusive with professional crew and lunch.',
-    price: '500000',
-    image: '/images/adventures/rafting.jpg',
-  },
-  {
-    name: 'Canyon Tubing Experience',
-    description: 'Float through hidden Bali canyons on an inflatable tube. Pair with an ATV + river tubing combo for the ultimate adventure day.',
-    price: '359000',
-    image: '/images/adventures/canyon-tubing.jpg',
-  },
-  {
-    name: 'Ubud Ricefield & Village Cycling Tour',
-    description:
-      'Ubud rice paddy & countryside cycling through Pejeng — lunch included, free Ubud hotel pickup from IDR 750K.',
-    price: '750000',
-    image: '/images/adventures/cycling.jpg',
-  },
-  {
-    name: 'Tumang Bali Cooking Class',
-    description:
-      'Family-run Balinese cooking class near Ubud with Chef Wayan Sudiana — morning market tour, rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. TripAdvisor Traveler\u2019s Choice 2026.',
-    price: '506370',
-    image: '/images/cooking/pancake-toss.jpg',
-  },
-]
-
-// Keep homepage JSON-LD lean: ItemList already covers package offers.
-// Separate TouristTrip blocks live on /tours/[slug] detail pages.
+// Sitewide JSON-LD only. Homepage WebPage / GEO Q&A / ItemList live in HomepageJsonLd
+// so tour and blog URLs stay topically focused. TouristTrip blocks live on /tours/[slug].
 const schemaData = [
   buildOrganizationSchema(),
   buildWebsiteSchema(),
   buildSiteNavigationSchema(),
-  buildGeoWebPageSchema(),
   buildLlmsDiscoverySchema(),
-  ...buildGeoQASchemas(),
-  buildAdventureItemListSchema(adventureOffers),
 ]
 
 const SETTINGS = { siteName: SITE_NAME }
 
 const footerLinks = {
   adventures: [
+    { label: "Tumang Bali Cooking Class", href: "/tours/balinese-cooking-class" },
+    { label: "Ubud Ricefield Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
+    { label: "Cycling + Cooking Combo", href: "/book?activity=combo-cycling-cooking" },
     { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
     { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
     { label: "Canyon Tubing", href: "/tours/canyon-tubing" },
-    { label: "Ubud Ricefield Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
-    { label: "Tumang Bali Cooking Class", href: "/tours/balinese-cooking-class" },
+    { label: "Mount Batur Sunrise Jeep", href: "/tours/batur-sunrise-jeep-tour" },
+    { label: "Luwak Coffee Plantation", href: "/tours/luwak-coffee-plantation" },
     { label: "Book All Activities", href: "/book" },
     { label: "All Pricing", href: "/#pricing" },
   ],
   explore: [
+    { label: "All Experiences", href: "/experiences" },
     { label: "Book Adventures", href: "/book" },
     { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },
@@ -234,7 +190,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                   </span>
                 </Link>
                 <p className="text-sm opacity-70 leading-relaxed mb-6">
-                  Travel and activities near Ubud — adventure, village cycling, cooking class, coffee, and private day tours with local crews.
+                  Tumang cooking class and Pejeng ricefield cycling near Ubud — plus ATV, rafting, coffee, and private day tours with local crews.
                 </p>
                 <div className="flex items-center gap-3">
                   <a href="https://www.instagram.com/sekarbaliactivity" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-sand/10 flex items-center justify-center hover:bg-accent-gold/90 hover:text-white transition-colors">

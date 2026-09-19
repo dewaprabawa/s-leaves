@@ -41,4 +41,4 @@ Apply these on every content/SEO change:
 * AI crawlers allowed in `robots.txt`; machine-readable discovery stays aligned with Google-visible inclusions (cycling = **lunch only**).
 * Single source of truth: `src/data/tours.ts` + `src/lib/pricing.ts` + `src/data/geoContent.ts`.
 
-See **CYCLING-GOOGLE-SEO-2026.md** for the cycling Search execution plan. See **GEO-ANALYSIS.md** for AI-readiness scoring.
+See **CYCLING-GOOGLE-SEO-2026.md** for the cycling Search execution plan. See **GEO-ANALYSIS.md** for AI-readiness scoring. See **COMPETITOR-KEYWORD-REPORT.md** (Round 2, 2026-09-09) for the latest competitor keyword refresh — new ATV entrants (Kuber Bali Adventure, Bali ATV Ride) and cooking/rafting benchmarks (Taman Dukuh, Traveling Spoon, Pertiwi Adventure) with prioritized content actions.

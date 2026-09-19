@@ -74,7 +74,7 @@ export default function HomeActivitySearch({ className = "" }: Props) {
             onFocus={() => {
               if (query.trim().length >= 2 && results.length > 0) setOpen(true)
             }}
-            placeholder="Search ATV, cooking, cycling, Ubud day tours…"
+            placeholder="Search cooking class, cycling, ATV, Ubud day tours…"
             autoComplete="off"
             className="h-12 md:h-14 w-full bg-transparent pl-11 pr-3 text-sm md:text-base text-brand-green placeholder:text-brand-green-light/70 outline-none"
           />

@@ -31,6 +31,16 @@ To build topical authority around "Ubud Culture & Activities", we need to publis
 * **Is an Ubud Cycling Tour Worth It?** → `/blog/is-ubud-cycling-tour-worth-it`
 * **Private ATV vs Mass-Market Quad Tours** → `/blog/private-atv-vs-mass-market-ubud`
 
+## Month 5: Competitor-Gap Round 2 (2026-09-09)
+Sourced from a fresh competitor keyword refresh — see `COMPETITOR-KEYWORD-REPORT.md` → "Round 2 — 2026-09-09 Refresh" for full research.
+* **Ubud ATV Tracks Explained: Jungle Mud Trail vs Cave & Tunnel Routes** → `/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel`
+  * **Intent:** Brand-disambiguation / comparison (new competitor: Kuber Bali Adventure's cave/tunnel track)
+  * **CTA:** Book the jungle mud + river-crossing ATV track at All New Bali Adventure.
+* **Backlog — needs ops input before drafting:**
+  * *Minimum Age for ATV Riding Near Ubud* — blocked on All New Bali Adventure confirming an exact solo/tandem age policy (competitor Kuber publishes 13+ solo / 6-and-under tandem-only; do not invent our own number)
+  * *Tumang Bali Cooking Class: Full Minute-by-Minute Itinerary* — blocked on Tumang operator confirming exact AM/PM clock times to match the Taman Dukuh competitor benchmark
+  * *Is Sekar Bali's Cycling Tour an E-Bike Tour?* — quick FAQ already shipped on the tour page this round; consider a short blog spoke only if search demand justifies it later
+
 ## Content Guidelines
 * **Word Count:** 800 - 1,500 words per post.
 * **Media:** Must include original photos taken during actual tours (no stock photos).

@@ -95,6 +95,15 @@ export default function CookingGeoBlock() {
         >
           tumangbaliclass.com
         </a>
+        . Reviews:{' '}
+        <a
+          href="https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-brand-green underline underline-offset-2 hover:text-brand-green-light"
+        >
+          TripAdvisor Traveler’s Choice 2026
+        </a>
         .
       </p>
     </section>

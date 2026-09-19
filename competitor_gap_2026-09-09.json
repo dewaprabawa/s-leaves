@@ -1,0 +1,427 @@
+{
+  "your_site": "https://www.sekarbaliactivity.com",
+  "your_pages_crawled": 30,
+  "your_topics": 293,
+  "competitors": {
+    "https://kuberbaliadventure.com": {
+      "pages_crawled": 30,
+      "topics": 96
+    },
+    "https://atvridebali.id": {
+      "pages_crawled": 30,
+      "topics": 392
+    },
+    "https://tamandukuh.com": {
+      "pages_crawled": 30,
+      "topics": 364
+    }
+  },
+  "analysis": {
+    "gaps": [
+      {
+        "topic": "balinese turtle",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "island god white shirt",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "fly ride fly out",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "one track many natural experiences",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "complete island circuit",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "sun blash white pleasure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber bali atv premium packages kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "sky isour canvas",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "meiny natacia",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "trip schedule",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "arrive air",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber bali helitour option kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "garuda white kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "velira coffee",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber bali adventure ultimate real atv adventure experience bali",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber iconicnatureexperience begins",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber rafting experience category kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "wave ever sea fog",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "trippy barong kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "emerald highlands",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber bali adventure helicopter tours transfers",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "james torrice",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "island god white shirt kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "mystical muse matahari crop punch",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "crop wave pleasure rose",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "enjoy around kuber",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber bali helitour option",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "bali adventure rafting packages",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "safety notes",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "shaped nature made adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "balinese turtle kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "arrange flight",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber volcano helitour option kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "customers say",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "culture giving back",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "wave ever sea fog kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber bali atv premium packages",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "another side kuberworth staying",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber bali helitour",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "wild isles",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "transfer via airport",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber first impression",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "garuda white",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "ready next ride",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "mystical muse matahari shirt punch kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "chill skul cream brulee shirt tropical vibes",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "kuber bali atv regular packages kuber bali adventure",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "select kuber adventurethat fit journey",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "ready ride",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      },
+      {
+        "topic": "page found",
+        "covered_by_competitors": 1,
+        "competitors": [
+          "https://kuberbaliadventure.com"
+        ],
+        "priority": "Medium"
+      }
+    ],
+    "your_unique_topics": 293,
+    "competitor_unique_topics": 850,
+    "overlap_topics": 0,
+    "total_your_topics": 293
+  }
+}

@@ -20,6 +20,7 @@ import {
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
 import { formatTierPriceTable } from "@/lib/pricing"
 import { formatIdr } from "@/lib/whatsapp"
+import { notifyActivityClick } from "@/lib/web3forms"
 
 type Props = {
   /** Pre-select / highlight an activity from ?activity= */
@@ -157,6 +158,7 @@ export default function BookSalesCheckout({
               href={cultureWhatsApp}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => notifyActivityClick(cultureCombo.name, "book-page-whatsapp")}
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-green text-sand px-5 py-3 text-xs font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
@@ -188,6 +190,7 @@ export default function BookSalesCheckout({
           >
             <Link
               href={`/tours/${adv.tourSlug}`}
+              onClick={() => notifyActivityClick(adv.name, "book-page")}
               className="relative aspect-[4/3] md:aspect-auto md:min-h-[200px] overflow-hidden rounded-2xl lg:rounded-3xl bg-brand-green/5"
             >
               <Image
@@ -239,6 +242,7 @@ export default function BookSalesCheckout({
               </p>
               <Link
                 href={`/tours/${adv.tourSlug}`}
+                onClick={() => notifyActivityClick(adv.name, "book-page")}
                 className="inline-flex items-center gap-1 text-sm font-semibold text-brand-green hover:text-brand-green-light transition-colors w-fit"
               >
                 Full itinerary & details <ArrowRight className="w-3.5 h-3.5" />
@@ -285,6 +289,7 @@ export default function BookSalesCheckout({
       >
         <Link
           href={`/tours/${COOKING_CLASS_SALES.tourSlug}`}
+          onClick={() => notifyActivityClick(COOKING_CLASS_SALES.name, "book-page")}
           className="relative aspect-[4/3] md:aspect-auto md:min-h-[200px] overflow-hidden rounded-2xl lg:rounded-3xl bg-brand-green/5"
         >
           <Image
@@ -329,6 +334,7 @@ export default function BookSalesCheckout({
           <div className="flex flex-wrap gap-x-4 gap-y-2 pt-1">
             <Link
               href={`/tours/${COOKING_CLASS_SALES.tourSlug}`}
+              onClick={() => notifyActivityClick(COOKING_CLASS_SALES.name, "book-page")}
               className="inline-flex items-center gap-1 text-sm font-semibold text-brand-green hover:text-brand-green-light transition-colors w-fit"
             >
               Full class details <ArrowRight className="w-3.5 h-3.5" />
@@ -353,11 +359,14 @@ export default function BookSalesCheckout({
         <div className="flex flex-col justify-center gap-4 md:col-span-2 lg:col-span-1 bg-white rounded-2xl border border-brand-green/10 p-5 shadow-sm">
           <div>
             <p className="text-xs font-medium text-brand-green-light uppercase tracking-wider mb-1">
-              Shared from
+              Shared promo / person
             </p>
-            <p className="text-2xl font-bold text-brand-green">
-              {formatIdr(COOKING_CLASS_SALES.priceIdr)}
-            </p>
+            <PromoPrice
+              price={COOKING_CLASS_SALES.priceIdr}
+              originalPrice={COOKING_CLASS_SALES.standardPriceIdr}
+              variant="card"
+              from
+            />
             <p className="text-xs text-brand-green-light mt-1">
               Private 1 guest {formatIdr(COOKING_CLASS_SALES.privateSoloIdr)} · Ubud pickup included
             </p>
@@ -366,6 +375,7 @@ export default function BookSalesCheckout({
             href={cookingWhatsApp}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => notifyActivityClick(COOKING_CLASS_SALES.name, "book-page-whatsapp")}
             className="w-full flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
           >
             <MessageCircle className="w-4 h-4" />

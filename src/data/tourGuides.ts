@@ -29,6 +29,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/private-atv-vs-mass-market-ubud',
       blurb: 'What “private / small-group” actually means near Ubud.',
     },
+    {
+      title: 'Jungle mud vs cave/tunnel tracks',
+      href: '/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel',
+      blurb: 'Why we are not the Kuber tunnel or Dragon Cave routes.',
+    },
   ],
   'whitewater-rafting': [
     {

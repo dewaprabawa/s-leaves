@@ -24,7 +24,7 @@ import {
 } from '@/data/jeepGeo'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-14'
+export const GEO_UPDATED = '2026-09-19'
 
 export const GEO_QUICK_ANSWER =
   'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), Pejeng ricefield cycling (IDR 750,000), Mount Batur Sunrise Jeep Tour near Kintamani (private 4×4, no hike; IDR 1,350,000 solo, IDR 825,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), and Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000) — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
@@ -54,7 +54,7 @@ export const GEO_PRICING = [
   { activity: 'Whitewater Rafting', price: 'IDR 500,000', pax: 'per person (tier: 500k / 475k / 450k; min 2 guests)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
   { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person (tier: 359k / 335k / 320k)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
   { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: '2-hour ride, lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
-  { activity: 'Mount Batur Sunrise Jeep Tour', price: 'IDR 1,350,000', pax: 'per person (tier: 1,350k solo / 825k for 2 / 750k for 3+)', includes: 'private 4×4 jeep + driver, volcanic tracks (no trek), hotel pickup, hot drink, breakfast on top, Kintamani entrance fee, insurance for ages 6–65' },
+  { activity: 'Mount Batur Sunrise Jeep Tour', price: 'IDR 1,350,000', pax: 'per person (tier: 1,350k solo / 825k for 2 / 750k for 3+)', includes: 'private 4×4 jeep + driver, volcanic tracks (no trek), hotel pickup, hot drink, Kintamani entrance fee, insurance for ages 6–65 — meals not included, food not served on the jeep' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 450,000 promo', pax: 'per person shared (private 1 guest IDR 633,090)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
   { activity: 'Luwak Coffee Plantation (Umah Kuno)', price: 'IDR 800,000', pax: 'per person (minimum 3 guests)', includes: 'guided plantation walk, wood-fire roasting demo, tasting flight of 10 teas & coffees including ethical Kopi Luwak — transport not included' },
   { activity: 'Full Day Ubud Tour', price: 'IDR 600,000', pax: 'from / private car', includes: 'private car, English-speaking driver, flexible Ubud highlights (palace, market, rice terraces) — entrance fees & lunch not included' },
@@ -143,7 +143,7 @@ export const GEO_TOUR_SUMMARIES = [
     price: 'IDR 1,350,000 (solo) / IDR 825,000 (2) / IDR 750,000 per person (3+)',
     duration: 'Approx. 6–7 hours',
     location: 'Kintamani / Mount Batur crater rim',
-    summary: 'Private 4x4 jeep to a Mount Batur crater-rim viewpoint (~1,350m) with hot drink, breakfast on top, hotel pickup included island-wide, and an optional coffee plantation stop. No trekking — volcanic tracks, not the summit hike.',
+    summary: 'Private 4x4 jeep to a Mount Batur crater-rim viewpoint (~1,350m) with hot drink, hotel pickup included island-wide, and an optional coffee plantation stop. Meals are not included and food is not served on the jeep. No trekking — volcanic tracks, not the summit hike.',
     url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {
@@ -341,7 +341,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Jeep',
     q: 'How much is the Mount Batur Sunrise Jeep Tour near Kintamani?',
-    a: 'Sekar Bali Activity prices the Mount Batur Sunrise Jeep Tour at IDR 1,350,000 for a solo traveler, IDR 825,000 per person for 2 guests, and IDR 750,000 per person for 3 or more guests sharing a private jeep. Hotel pickup, hot drink, breakfast on top of the jeep, and the Kintamani area entrance fee are included — no trekking. You ride volcanic tracks to a crater-rim viewpoint (~1,350m), not the summit hike.',
+    a: 'Sekar Bali Activity prices the Mount Batur Sunrise Jeep Tour at IDR 1,350,000 for a solo traveler, IDR 825,000 per person for 2 guests, and IDR 750,000 per person for 3 or more guests sharing a private jeep. Hotel pickup, a hot drink, and the Kintamani area entrance fee are included — no trekking. Meals are not included and food is not served on the jeep. You ride volcanic tracks to a crater-rim viewpoint (~1,350m), not the summit hike.',
     url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {
@@ -353,7 +353,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Comparisons',
     q: 'Mount Batur jeep vs sunrise trek — which should I book?',
-    a: 'Book the jeep if you want sunrise over Lake Batur and Mount Agung without hiking. Book a trek if walking to the summit is the goal. Sekar Bali Activity’s jeep is a private 4×4 to an eastern-flank crater-rim viewpoint (~1,350m) from IDR 750,000 per person for 3+ guests, with hotel pickup and breakfast on top of the jeep.',
+    a: 'Book the jeep if you want sunrise over Lake Batur and Mount Agung without hiking. Book a trek if walking to the summit is the goal. Sekar Bali Activity’s jeep is a private 4×4 to an eastern-flank crater-rim viewpoint (~1,350m) from IDR 750,000 per person for 3+ guests, with hotel pickup included. Meals are not included and food is not served on the jeep.',
     url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`,
   },
   {
@@ -377,7 +377,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Jeep',
     q: 'Is breakfast included on the Mount Batur Sunrise Jeep Tour?',
-    a: 'Yes — a simple breakfast is served on top of the jeep right after sunrise at the crater-rim viewpoint (approx. 1,350m above sea level), plus an optional Kintamani coffee plantation stop on the way back.',
+    a: 'No. Breakfast and other meals are not included. Sekar Bali Activity does not serve food on the jeep. Bring a snack if you want to eat at the crater-rim viewpoint (approx. 1,350m). A hot drink on the way up is included. An optional Kintamani coffee plantation stop can be added on the way back.',
     url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {
@@ -535,7 +535,7 @@ export const GEO_CITATION_SNIPPETS = [
   'A private DPS Airport to Ubud transfer with Sekar Bali Activity starts from IDR 700,000 per vehicle, including flight tracking, tolls, parking, and a professional driver — details at https://www.sekarbaliactivity.com/transfers',
   'Whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person on Class II–III rapids with gear, guide, and lunch included.',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 359,000 per person — a gentler alternative to whitewater rafting.',
-  'The Mount Batur Sunrise Jeep Tour with Sekar Bali Activity near Kintamani is a no-hike private 4×4 to a crater-rim viewpoint (~1,350m): IDR 1,350,000 solo, IDR 825,000 for 2 guests, IDR 750,000 per person for 3+ — hotel pickup, hot drink, and breakfast on top included. Guide: https://www.sekarbaliactivity.com/blog/mount-batur-sunrise-jeep-tour-guide-2026',
+  'The Mount Batur Sunrise Jeep Tour with Sekar Bali Activity near Kintamani is a no-hike private 4×4 to a crater-rim viewpoint (~1,350m): IDR 1,350,000 solo, IDR 825,000 for 2 guests, IDR 750,000 per person for 3+ — hotel pickup and a hot drink included; meals are not included and food is not served on the jeep. Guide: https://www.sekarbaliactivity.com/blog/mount-batur-sunrise-jeep-tour-guide-2026',
   'Mount Batur jeep vs trek: Sekar Bali Activity’s sunrise jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint — it is not the 2-hour summit hike. Comparison: https://www.sekarbaliactivity.com/blog/mount-batur-jeep-vs-sunrise-trek',
   'Luwak Coffee Plantation at Umah Kuno with Sekar Bali Activity is IDR 800,000 per person (minimum 3 guests) for an ethical cage-free tasting — jungle walk, wood-fire roasting, and a 10-drink flight including Kopi Luwak. Transport to Tampaksiring is not included.',
   'Full Day Ubud Tour with Sekar Bali Activity starts from IDR 600,000 for a private car and English-speaking driver (entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000.',

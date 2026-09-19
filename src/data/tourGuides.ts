@@ -135,23 +135,6 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'What “ethical” should mean in practice.',
     },
   ],
-  'batur-sunrise-jeep-tour': [
-    {
-      title: 'Mount Batur sunrise jeep guide 2026',
-      href: '/blog/mount-batur-sunrise-jeep-tour-guide-2026',
-      blurb: 'Itinerary, IDR tiers, pickup times, and what’s included.',
-    },
-    {
-      title: 'Batur jeep vs sunrise trek',
-      href: '/blog/mount-batur-jeep-vs-sunrise-trek',
-      blurb: 'No-hike crater rim vs the classic 2-hour summit walk.',
-    },
-    {
-      title: 'Adventure package prices 2026',
-      href: '/blog/bali-adventure-packages-prices-2026',
-      blurb: 'Compare jeep, ATV, rafting, and cycling in one table.',
-    },
-  ],
   'full-day-ubud-tour': [
     {
       title: 'Perfect one-day Ubud itinerary',
@@ -173,7 +156,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Mount Batur jeep tour price guide (2026)',
       href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026',
-      blurb: 'Solo, pair, and group IDR tiers plus what\u2019s included.',
+      blurb: 'Solo, pair, and group IDR tiers plus pickup — meals not included.',
     },
     {
       title: 'Jeep vs trekking to Mount Batur',
@@ -228,7 +211,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'batur-sunrise-jeep-tour': {
     title: 'From our Kintamani jeep drivers',
-    body: 'We run the pre-dawn 4×4 tracks on Mount Batur’s eastern flank most mornings — hotel pickup, a hot drink on the way up, and breakfast served on top of the jeep at the crater-rim viewpoint (~1,350m). This is not the summit trek: you stay in the jeep and watch Lake Batur and Mount Agung light up without a 2-hour hike in the dark.',
+    body: 'We run the pre-dawn 4×4 tracks on Mount Batur’s eastern flank most mornings — hotel pickup and a hot drink on the way up to the crater-rim viewpoint (~1,350m). Meals are not included and we do not serve food on the jeep; bring a snack if you want to eat. This is not the summit trek: you stay in the jeep and watch Lake Batur and Mount Agung light up without a 2-hour hike in the dark.',
   },
 }
 

@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v2.2
-**Last updated:** 2026-09-09
+**Document version:** v2.3
+**Last updated:** 2026-09-19
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — adventure, village, food, and day tours with clear IDR pricing and WhatsApp booking.
@@ -33,7 +33,7 @@
 |---------|-------------|-----------|------------------|
 | Couple in Ubud | Private feel, photos, easy booking | Crowded mass tours, unclear pickup fees | Small-group / private ATV, WhatsApp confirm, transparent IDR |
 | Family with kids | Safety, inclusions, logistics | “Is it beginner-friendly? What’s included?” | Gear, lunch, insurance, English guide, clear child notes |
-| Non-hiker / jeep guest | Caldera sunrise without 2 AM lava walk | “Is the Batur jeep the summit hike?” | Honest crater-rim 4×4, breakfast on top, island-wide pickup |
+| Non-hiker / jeep guest | Caldera sunrise without 2 AM lava walk | “Is the Batur jeep the summit hike?” | Honest crater-rim 4×4, meals not included, island-wide pickup |
 | Culture traveler | Authentic village, not Tegallalang crowds | Touristy rice terraces | Pejeng cycling, home visit, lunch, free Ubud pickup |
 | Food traveler | Hands-on cooking / tasting | Hard to compare class quality & price | Tumang cooking class + coffee experience with clear IDR |
 
@@ -69,7 +69,7 @@
 | “Is WhatsApp booking legit?” | No upfront payment to inquire; confirm date/price first; corporate office matches Google Business Profile |
 | “Where do I meet for ATV?” | Activity base: All New Bali Adventure in Pejeng — or book hotel pickup |
 | “Is it beginner-friendly?” | Full safety briefing, gear, English-speaking guide; no experience required |
-| “What’s included vs extras?” | Lunch/gear/insurance on ATV; cycling includes lunch + free Ubud pickup; Tumang cooking includes Ubud pickup; Batur jeep includes island-wide pickup; ATV/rafting/tubing hotel pickup is IDR 400K |
+| “What’s included vs extras?” | Lunch/gear/insurance on ATV; cycling includes lunch + free Ubud pickup; Tumang cooking includes Ubud pickup; Batur jeep includes island-wide pickup (meals not included — no food on the jeep); ATV/rafting/tubing hotel pickup is IDR 400K |
 | “Do you only do sports?” | No — also cooking class, coffee, village cycling, private day tours, and a no-hike Mount Batur sunrise jeep |
 | “Is the Batur jeep a hike?” | No — private 4×4 to a crater-rim viewpoint (~1,350m), not the summit trek |
 
@@ -94,8 +94,8 @@
 - “Pejeng village cycling”
 - “All New Bali Adventure ATV”
 - “WhatsApp booking”
-**Words to use:** activities, experiences, day tours, private, all-inclusive, Pejeng, Ubud, Tumang Bali Cooking Class, All New Bali Adventure, WhatsApp, free Ubud pickup (cycling + Tumang cooking), island-wide pickup (Batur jeep), beginner-friendly, insurance, lunch included, Mount Batur sunrise jeep, Kintamani, no hike, crater rim
-**Words to avoid:** luxury spa fluff, vague “best in Bali,” unpaid “guaranteed,” claiming free pickup on ATV/rafting/tubing, claiming the jeep reaches the Mount Batur summit, sports-only framing as the whole brand
+**Words to use:** activities, experiences, day tours, private, all-inclusive, Pejeng, Ubud, Tumang Bali Cooking Class, All New Bali Adventure, WhatsApp, free Ubud pickup (cycling + Tumang cooking), island-wide pickup (Batur jeep), beginner-friendly, insurance, lunch included, Mount Batur sunrise jeep, Kintamani, no hike, crater rim, meals not included (jeep)
+**Words to avoid:** luxury spa fluff, vague “best in Bali,” unpaid “guaranteed,” claiming free pickup on ATV/rafting/tubing, claiming the jeep reaches the Mount Batur summit, claiming breakfast or food is served on the jeep, sports-only framing as the whole brand
 **Glossary:**
 | Term | Meaning |
 |------|---------|
@@ -129,6 +129,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.3 (2026-09-19) — Jeep meals are **not included**. Do not claim breakfast or other food is served on the Mount Batur sunrise jeep.
 - v2.2 (2026-09-09) — Added Mount Batur sunrise jeep (no-hike 4×4, island-wide pickup, IDR 1.35M solo / from 750K at 3+) as an adventure use case; do not claim the jeep is the summit trek.
 - v2.1 (2026-09-08) — Flagship food product is Tumang Bali Cooking Class (shared from IDR 506,370, free Ubud pickup); GEO/SEO answer surfaces updated for cooking-class queries.
 - v2 (2026-09-08) — Repositioned from sports-focused to travel & activities discovery (adventure, food, village, day tours); marketplace-inspired browse model without copying aggregator checkout.

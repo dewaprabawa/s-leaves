@@ -1,36 +1,38 @@
-# GEO Analysis — sekarbaliactivity.com
+# GEO Analysis — Cooking Class & Mount Batur Sunrise Jeep
 
-**Audit date:** 2026-09-04  
-**URL:** https://www.sekarbaliactivity.com  
-**Method:** `seo-geo` rubric + live fetch (`robots_checker`, `llms_txt_checker`, homepage HTML) + codebase review  
-**Product context:** `.agents/product-marketing.md` (Pejeng / Ubud adventure operator)
+**Audit date:** 2026-09-19  
+**URLs:**  
+- https://www.sekarbaliactivity.com/tours/balinese-cooking-class  
+- https://www.sekarbaliactivity.com/tours/batur-sunrise-jeep-tour  
+**Method:** `seo-geo` rubric + live fetch + repo (`cookingGeo.ts`, `jeepGeo.ts`, `geoContent.ts`, `llms.txt`)  
+**Operator fact:** Jeep meals are **not** included; food is **not** served on the jeep.
 
----
-
-## GEO Readiness Score: 78/100
-
-| Pillar | Weight | Score | Notes |
-|--------|-------:|------:|-------|
-| Citability | 25% | 21/25 | Strong answer blocks + citation snippets; TLDR ~61 words (OK). Missing cooking in machine tour/price tables. |
-| Structural readability | 20% | 17/20 | SSR FAQ + comparison tables on homepage; homepage HTML ~199KB still heavy. |
-| Multi-modal | 15% | 10/15 | Real tour imagery; no video/YouTube entity layer for AI text citation. |
-| Authority / brand | 20% | 12/20 | Instagram/Facebook `sameAs` only; no Wikipedia / review-site entity depth. |
-| Technical accessibility | 20% | 18/20 | SSR GEO block, `llms.txt` + `llms-full.txt`, AI bots allowed. Gaps: no `/pricing.md`, no agent `Link` discovery, `anthropic-ai` case alias. |
-
-**Prior claimed “AI/GEO 100/100” (FULL-AUDIT-REPORT) overstated agent-readiness.** Core citability is strong; discovery/parseability for buying agents and full offer coverage still had gaps (confirmed below).
+Live citation scrapes (ChatGPT / Perplexity / AI Overviews) were **not** run. Scores are readiness, not observed share of voice.
 
 ---
 
-## Platform breakdown (evidence-based, not live citation monitoring)
+## GEO Readiness Score: 71/100 (live) → 82/100 (this PR)
 
-| Platform | Score | Why |
-|----------|------:|-----|
-| Google AI Overviews | 72 | Relies on classic SEO + passages; speakable + FAQ structure help; brand third-party mentions weak. |
-| ChatGPT (search) | 80 | `llms.txt` / full corpus + allowed GPTBot/OAI-SearchBot; entity `sameAs` thin. |
-| Perplexity | 78 | Structured facts + comparisons; community/third-party presence not built. |
-| Gemini / Google-Extended | 76 | Allowed crawler + owned-site structure; cooking offer under-indexed in GEO tables. |
+| Pillar | Weight | Live | This PR | Notes |
+|--------|-------:|-----:|--------:|-------|
+| Citability | 25% | 14/25 | 22/25 | Cooking passages were already extractable. Jeep’s most-cited inclusion was **false**. |
+| Structural readability | 20% | 16/20 | 17/20 | Cooking has GEO H2 + table + Q&A. Jeep GEO block is in repo, missing on live. |
+| Multi-modal | 15% | 9/15 | 9/15 | Cooking: first-party photos. Jeep: Unsplash only. No YouTube text layer. |
+| Authority / brand | 20% | 12/20 | 12/20 | Cooking has TripAdvisor proof. Jeep/site `sameAs` still thin. |
+| Technical accessibility | 20% | 18/20 | 19/20 | AI bots allowed; `llms.txt` 200. Jeep QA JSON-LD now injected. |
 
-*Live “are we cited?” checks were not run against ChatGPT/Perplexity UIs in this environment — treat platform scores as readiness, not observed citation share.*
+**Prior 2026-09-04 “78/100” sitewide score** assumed cooking was the gap. Cooking is now the stronger GEO page. Jeep was the citation-risk page because agents would copy “breakfast on top.”
+
+---
+
+## Platform breakdown (readiness)
+
+| Platform | Cooking | Jeep (live) | Jeep (this PR) | Why |
+|----------|--------:|------------:|---------------:|-----|
+| Google AI Overviews | 80 | 52 | 76 | AIO follows ranking + passage truth. False breakfast is a quality hit. |
+| ChatGPT search | 84 | 58 | 80 | `llms.txt` + GPTBot allowed; jeep facts were wrong in that file. |
+| Perplexity | 82 | 56 | 78 | Will quote the FAQ “Yes, breakfast…” until deploy. |
+| Gemini / Google-Extended | 80 | 54 | 76 | Crawler allowed; still needs index refresh after deploy. |
 
 ---
 
@@ -39,10 +41,11 @@
 | Crawler | Status |
 |---------|--------|
 | GPTBot, ChatGPT-User, OAI-SearchBot | Explicitly allowed |
-| ClaudeBot, Anthropic-AI | Explicitly allowed |
+| ClaudeBot, Anthropic-AI, anthropic-ai | Explicitly allowed |
 | PerplexityBot, Google-Extended, GoogleOther | Explicitly allowed |
 | Applebot-Extended, Bytespider, FacebookBot, Amazonbot, cohere-ai, CCBot | Explicitly allowed |
-| `anthropic-ai` (lowercase) | Checker flagged as unmanaged — inherits `*`; fix: add lowercase rule |
+
+**Pass.** No need to block search-and-cite bots.
 
 ---
 
@@ -50,65 +53,96 @@
 
 | File | Live | Notes |
 |------|------|-------|
-| `/llms.txt` | 200 (~19.7KB) | Valid title, description, primary pages, FAQ corpus |
-| `/llms-full.txt` | 200 (~19.5KB) | Extended FAQ + booking flow |
-| `/.well-known/llms.txt` | Present in app | Mirrors short file |
-| `/pricing.md` | **404** | Agent-readiness gap (buying agents skip opaque pricing) |
+| `/llms.txt` | 200 | Lists both tours with IDR. Jeep summary still said “breakfast on top” on 2026-09-19. |
+| `/llms-full.txt` | 200 | Mirrors FAQ corpus including the false breakfast Q&A. |
+| `/.well-known/llms.txt` | Present in app | Mirror of short file |
+| `/pricing.md` | Generator in repo | Jeep includes line repeated the breakfast claim |
+
+This PR updates generators. Live files change on deploy (`GEO_UPDATED` / `JEEP_GEO_UPDATED` → 2026-09-19).
 
 ---
 
 ## Brand mention analysis
 
-| Surface | Status |
-|---------|--------|
-| Own site entity (NAP + arena roles) | Strong |
-| Instagram / Facebook | In Organization `sameAs` |
-| Wikipedia / Wikidata | Not present |
-| TripAdvisor / Google reviews surface in schema | Not in `sameAs` |
-| YouTube channel | Not linked for AI text-layer citations |
-| Reddit / niche forums | Not systematically present |
+| Surface | Cooking | Jeep |
+|---------|---------|------|
+| Own money page + GEO block | Strong (live) | Strong in repo; **GEO block not live** |
+| TripAdvisor | Tumang 5.0 / 1500+ linked | None first-party |
+| Wikipedia / Wikidata | No | No |
+| YouTube | No | No |
+| Reddit / forums | Not systematic | Not systematic |
+| Instagram / Facebook `sameAs` | Site-level only | Site-level only |
+
+Cooking can earn citations via the named kitchen + review count. Jeep must win on **unique operator facts**: no hike, crater rim ~1,350m, island-wide pickup, **meals not included**.
 
 ---
 
 ## Passage-level citability
 
-- Homepage `.geo-tldr` + `.geo-answer-block` are SSR and speakable-targeted — **Pass**.
-- Optimal block length: many FAQ answers are 40–70 words (good for extraction).
-- **Gap:** Cooking class exists as a tour + blog mentions but was missing from `GEO_TOUR_SUMMARIES` / `GEO_PRICING` / primary pages — agents comparing “what do you sell?” skipped it.
-- **Gap:** Blog package article still said Single ATV **IDR 650,000** while live tiers / GEO / homepage use **IDR 600,000** — citation conflict risk.
+### Cooking — Pass
+
+Live TLDR (self-contained, ~55 words): promo IDR 450,000, was 506,370, Chef Wayan Sudiana, max 8, AM market, rice-field walk, free Ubud pickup, TripAdvisor 2026.
+
+Query-shaped H3s match fan-out: price, market tour, vegetarian, couples, pickup, morning vs afternoon.
+
+### Jeep — Fail on live, Pass after this PR
+
+**Bad live passage (do not keep):**  
+“Yes — a simple breakfast is served on top of the jeep right after sunrise…”
+
+**Replacement passage (this PR, 40–60 words):**  
+Sekar Bali Activity’s Mount Batur Sunrise Jeep Tour is a private no-hike 4×4 to a crater-rim viewpoint (~1,350m) near Kintamani. Solo IDR 1,350,000 / 2 guests IDR 825,000 / 3+ IDR 750,000 per person. Hotel pickup and a hot drink are included. **Meals are not included and food is not served on the jeep.**
 
 ---
 
 ## Server-side rendering check
 
-- GEO FAQ section, tour quick-reference table, and TLDR appear in initial HTML (`geo-answer-block` count > 0) — **Pass**.
-- Booking popup remains client-side (expected); facts needed for citation are not gated behind it — **Pass**.
+- Cooking GEO FAQ, price table, and TLDR appear in initial HTML — **Pass**.
+- Jeep GEO block is SSR in repo (`JeepGeoBlock`) but **absent from live HTML** — **Fail live / Pass after deploy**.
+- Booking popup remains client-side; citation facts are not gated — **Pass**.
 
 ---
 
-## Top 5 highest-impact changes (execution order)
+## Top 5 highest-impact changes
 
-1. **Ship `/pricing.md`** (and sitemap + `llms.txt` link) so agents can parse IDR tiers without rendering the homepage.
-2. **Complete GEO offer coverage** — add Balinese cooking class to tour summaries, pricing table, primary pages, and a comparison row.
-3. **Fix IDR citation conflicts** — align blog “packages & prices” copy to 600K single-ATV tiers.
-4. **Agent discovery headers** — HTTP `Link` to `/llms.txt`, `/llms-full.txt`, `/pricing.md`; alternate `text/markdown` link for pricing.
-5. **Robots alias + strategy docs** — lowercase `anthropic-ai`; replace stale Phase-3 “future GEO” roadmap with an executable GEO plan.
+1. **Correct the jeep meal fact everywhere agents read** (money page, FAQ, `llms.txt`, `pricing.md`, blogs, homepage). **This PR.**
+2. **Deploy** so live HTML matches the repo (jeep GEO block + No-breakfast FAQ).
+3. **Keep cooking’s extractable table**; add worth-it / vegetarian spokes later.
+4. **First-party jeep images** so multi-modal selection is not Unsplash stock.
+5. **Canonicalize jeep-compare slugs** so internal links and `significantLink` do not split equity.
 
 ---
 
 ## Schema recommendations
 
-- Keep commercial-safe `Question`/`Answer` blocks (do **not** add FAQPage).
-- Keep `speakable` selectors on `.geo-tldr` / `.geo-answer-block`.
-- Add `pricing.md` to `significantLink` / DataCatalog datasets.
-- Optional later: TripAdvisor/Google Maps URLs in `sameAs` when verified.
+- Keep commercial-safe `Question`/`Answer` (this PR injects jeep QA). **Do not** add `FAQPage`.
+- Keep `speakable` on `.cooking-geo-tldr` / `.jeep-geo-tldr`.
+- `Offer.description` is built from `tour.included` — removing breakfast from `included` also fixes schema.
+- Optional later: TripAdvisor URL in cooking `sameAs` (already in `significantLink`).
 
 ---
 
-## Content reformatting suggestions
+## Content reformatting (jeep)
 
-- Homepage FAQ subset: diversify beyond first 8 ATV/combo questions so rafting, booking, and pickup answers stay visible.
-- Keep one 40–60 word definition lead; avoid expanding TLDR into a keyword cloud (prior density remediation).
+| Before (do not cite) | After |
+|----------------------|--------|
+| Breakfast served on top of the jeep | Meals not included; food not served on the jeep |
+| Included: breakfast | Not included: food / meals |
+| FAQ: Yes, breakfast is included | FAQ: No. Bring a snack if you want to eat. Hot drink included. |
+| Title: From IDR 750K | Title: No Hike, Island Pickup |
+
+Cooking copy does not need a meal-fact rewrite.
+
+---
+
+## Prompt tracking (monthly)
+
+| Prompt | Must-include facts | Ready after this PR? |
+|--------|--------------------|----------------------|
+| Best small-group cooking class Ubud price | Promo 450K, max 8, free Ubud pickup, Tumang / Chef Wayan | Yes |
+| Mount Batur sunrise without hiking | Private 4×4, crater rim not summit, island-wide pickup, IDR tiers | Yes |
+| Is breakfast included on the Batur jeep? | **No. Food is not served on the jeep.** | Yes (repo); live until deploy: **No** |
+| Jeep vs trek | Different products; jeep is not the summit | Yes — keep this, drop food-on-jeep |
 
 ---
 
@@ -116,10 +150,10 @@
 
 | Item | Status |
 |------|--------|
-| `/pricing.md` route + sitemap | Done |
-| Cooking class in GEO corpus | Done |
-| Blog ATV price alignment (650→600) | Done |
-| Link headers + layout alternates | Done |
-| robots `anthropic-ai` | Done |
-| Homepage FAQ category diversity | Done |
-| Strategy / action-plan GEO update | Done |
+| Jeep meals removed from includes / GEO / blogs / homepage | Done |
+| “Is breakfast included?” kept as a **No** | Done |
+| Jeep SERP title de-baited | Done |
+| Jeep QA JSON-LD injected | Done |
+| Duplicate jeep schema + pickup + guides key | Done |
+| `GEO_UPDATED` / `JEEP_GEO_UPDATED` → 2026-09-19 | Done |
+| Live citation scrape | Not run |

@@ -44,6 +44,15 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       tierLabel: "Shared class promo / person",
     }
   }
+  // ATV SERP / FAQ lead with the 1-rider rate. Do not show the 3+ 700K
+  // tier as a "from" promo — it reads as a discount vs IDR 750K.
+  if (tourSlug === "bali-atv-adventure") {
+    return {
+      promoPrice: fallbackBase,
+      standardPrice: fallbackBase,
+      tierLabel: undefined,
+    }
+  }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
   if (!activityId) {
     return { promoPrice: fallbackBase, standardPrice: fallbackBase, tierLabel: undefined }
@@ -73,6 +82,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   const isPrivateDayTour =
     props.tourSlug === "full-day-ubud-tour" ||
     props.tourSlug === "half-day-ubud-tanah-lot-tour"
+  const isLuwak = props.tourSlug === "luwak-coffee-plantation"
 
   if (props.activityOptions?.length) {
     return props.activityOptions.map((opt, index) => {
@@ -84,9 +94,10 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         times: isMorning ? ["08:30"] : isPrivate ? ["08:30", "13:30"] : ["13:30"],
         adultPrice: props.basePrice + opt.priceDiff,
         kidPrice: props.childPrice ?? null,
-        minPax: /tandem|2 guests/i.test(opt.name) ? 2 : 1,
+        minPax: /tandem|2 guests/i.test(opt.name) ? 2 : isLuwak ? 3 : 1,
         getYourGuideUrl: props.getYourGuideUrl,
         freeUbudPickup: props.tourSlug === "balinese-cooking-class",
+        pickupNotOffered: isLuwak,
       }
     })
   }
@@ -98,13 +109,16 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       times:
         props.tourSlug === "balinese-cooking-class"
           ? ["08:30", "13:30"]
-          : DEFAULT_TIMES,
+          : isLuwak
+            ? ["10:00", "14:00"]
+            : DEFAULT_TIMES,
       adultPrice: props.basePrice,
       kidPrice: props.childPrice ?? null,
-      minPax: 1,
+      minPax: isLuwak ? 3 : 1,
       getYourGuideUrl: props.getYourGuideUrl,
       freeUbudPickup: props.tourSlug === "balinese-cooking-class",
       pickupIncluded: isPrivateDayTour,
+      pickupNotOffered: isLuwak,
     },
   ]
 }
@@ -118,7 +132,9 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const consultationActivity =
     props.tourSlug === "balinese-cooking-class"
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
-      : props.title
+      : props.tourSlug === "bali-atv-adventure"
+        ? `${props.title} — single from ${formatIdr(props.basePrice)}`
+        : props.title
   const consultationUrl = buildWhatsAppConsultationUrl(
     consultationActivity,
     `${SITE_URL}/tours/${props.tourSlug}`,
@@ -191,6 +207,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             from
             tierLabel={tierLabel}
           />
+          {props.tourSlug === "bali-atv-adventure" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
           {props.childPrice ? (
             <p className="text-sm text-brand-green-light mt-1">
               Child from {formatIdr(props.childPrice)}

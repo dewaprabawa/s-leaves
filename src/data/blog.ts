@@ -1793,13 +1793,14 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
     content: `
-**How much does the Mount Batur Sunrise Jeep Tour cost in 2026?** With Sekar Bali Activity, a private 4×4 jeep to the Mount Batur sunrise viewpoint near Kintamani starts at **IDR 1,350,000** for a solo traveler, drops to **IDR 825,000 per person** for 2 guests sharing, and **IDR 750,000 per person** for 3 or more guests in one jeep. Hotel pickup, hot drink, breakfast on top, and the Kintamani entrance fee are included.
+**How much does the Mount Batur Sunrise Jeep Tour cost in 2026?** With Sekar Bali Activity, a private 4×4 jeep to the Mount Batur sunrise viewpoint near Kintamani starts at **IDR 1,350,000** for a solo traveler, drops to **IDR 825,000 per person** for 2 guests sharing, and **IDR 750,000 per person** for 3 or more guests in one jeep. Hotel pickup, a hot drink, and the Kintamani entrance fee are included. **Meals are not included** — food is not served on the jeep.
 
 > **Key Takeaways**
 > - Solo traveler: **IDR 1,350,000** — full private jeep rate
 > - 2 guests sharing: **IDR 825,000 per person**
 > - 3+ guests sharing: **IDR 750,000 per person** — best per-person rate
-> - Included: hotel pickup, driver, hot drink, breakfast on top, entrance fee
+> - Included: hotel pickup, driver, hot drink, entrance fee
+> - Not included: breakfast or other meals (no food on the jeep)
 > - Optional: Kintamani coffee plantation stop on the way back
 > - Book on WhatsApp — no upfront payment to inquire
 
@@ -1809,7 +1810,7 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
 
 | Guests | Price (IDR) | Per person | What's included |
 | --- | --- | --- | --- |
-| 1 (solo) | 1,350,000 | 1,350,000 | Pickup, driver, hot drink, breakfast, entrance fee |
+| 1 (solo) | 1,350,000 | 1,350,000 | Pickup, driver, hot drink, entrance fee — meals not included |
 | 2 sharing | 1,650,000 | 825,000 | Same inclusions · one jeep for two |
 | 3+ sharing | from 2,250,000 | 750,000 | Same inclusions · best per-person rate |
 
@@ -1819,8 +1820,8 @@ Why does the price drop per person as the group grows? A private jeep and driver
 
 1. Hotel pickup between roughly 02:00–03:00 AM (timing depends on your area)
 2. Private 4×4 jeep and English-speaking driver for the volcanic-track climb
-3. Hot drink on arrival at the crater-rim viewpoint
-4. Breakfast served on top, watching sunrise over Lake Batur and Mount Agung
+3. Hot drink on the way up to the crater-rim viewpoint
+4. Sunrise over Lake Batur and Mount Agung (meals not served on the jeep)
 5. Kintamani area entrance fee
 6. Drop-off back at your hotel by around 09:30 AM
 
@@ -1830,7 +1831,7 @@ An optional, no-obligation stop at a local Kintamani coffee plantation can be ad
 
 When comparing Mount Batur sunrise tour prices, ask:
 
-- Is **breakfast** served on top, or just a snack box?
+- Is **breakfast** included, or do you need to bring a snack? (On our jeep, meals are **not** included.)
 - Is the **entrance fee** included or an extra charge on arrival?
 - Is it a **private jeep** or a shared minibus to a trailhead?
 - Is **hotel pickup** included for your specific area, or an extra fee?
@@ -1859,11 +1860,11 @@ If you're deciding between the jeep and the traditional Mount Batur sunrise trek
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
     content: `
-**Should you jeep or trek up Mount Batur for sunrise?** Both routes end at a viewpoint overlooking Lake Batur and Mount Agung at sunrise, but they get you there very differently. The classic **trekking hike** is a roughly 2-hour uphill walk in the dark with a headlamp and hiking guide. The **Sunrise Jeep Tour** drives a private 4×4 up the volcanic tracks to a crater-rim viewpoint, so you stay seated the whole way and arrive with more energy (and cleaner shoes) for breakfast on top.
+**Should you jeep or trek up Mount Batur for sunrise?** Both routes end at a viewpoint overlooking Lake Batur and Mount Agung at sunrise, but they get you there very differently. The classic **trekking hike** is a roughly 2-hour uphill walk in the dark with a headlamp and hiking guide. The **Sunrise Jeep Tour** drives a private 4×4 up the volcanic tracks to a crater-rim viewpoint, so you stay seated the whole way and arrive with more energy (and cleaner shoes) for sunrise. Meals are not included on the jeep.
 
 > **Key Takeaways**
 > - Trekking: ~2-hour uphill hike, moderate fitness needed, headlamp + hiking guide
-> - Jeep tour: private 4×4 drive, no hiking, breakfast served on top
+> - Jeep tour: private 4×4 drive, no hiking, meals not included
 > - Both end near a crater-rim viewpoint with sunrise over Lake Batur and Mount Agung
 > - Jeep tour from **IDR 750,000 per person** (3+ sharing) up to **IDR 1,350,000** solo
 > - Jeep suits families, older travelers, or anyone short on time or fitness
@@ -1877,7 +1878,7 @@ The traditional Mount Batur sunrise trek starts around 2:00–3:00 AM with a hik
 
 ## The Jeep Tour Route
 
-Sekar Bali Activity's [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) uses a private 4×4 to drive the volcanic tracks on the mountain's eastern flank up to a crater-rim viewpoint at roughly 1,350 metres above sea level. There's no trekking involved — guests stay seated in the jeep for the climb and descent, with a hot drink on arrival and breakfast served on top while the sky changes color over Lake Batur and Mount Agung.
+Sekar Bali Activity's [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) uses a private 4×4 to drive the volcanic tracks on the mountain's eastern flank up to a crater-rim viewpoint at roughly 1,350 metres above sea level. There's no trekking involved — guests stay seated in the jeep for the climb and descent, with a hot drink on the way up while the sky changes color over Lake Batur and Mount Agung. Meals are not included and food is not served on the jeep.
 
 ## Side-by-Side Comparison
 
@@ -1886,13 +1887,13 @@ Sekar Bali Activity's [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-
 | Physical effort | Moderate–high (2-hour uphill hike) | None — seated in the jeep |
 | Footwear needed | Hiking shoes, headlamp | Regular shoes |
 | Good for | Fitness travelers wanting the hike itself | Families, older travelers, time-limited guests |
-| Breakfast | Usually a simple packed option | Served on top of the viewpoint |
+| Food | Usually a simple packed option | Not included — no meals on the jeep |
 | Typical duration | Similar overall (early pickup either way) | ~6–7 hours door-to-door |
 | Coffee plantation stop | Sometimes offered | Optional add-on on the way back |
 
 ## Price Comparison
 
-The [Mount Batur Sunrise Jeep Tour](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026) with Sekar Bali Activity runs **IDR 1,350,000** solo, **IDR 825,000 per person** for 2 guests, and **IDR 750,000 per person** for 3+ guests sharing a private jeep — all-inclusive of pickup, driver, hot drink, breakfast, and the entrance fee.
+The [Mount Batur Sunrise Jeep Tour](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026) with Sekar Bali Activity runs **IDR 1,350,000** solo, **IDR 825,000 per person** for 2 guests, and **IDR 750,000 per person** for 3+ guests sharing a private jeep — pickup, driver, hot drink, and the entrance fee included. Meals are not included.
 
 ## Who Should Choose Which
 

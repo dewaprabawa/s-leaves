@@ -7,7 +7,7 @@
 import { SITE_URL } from '@/lib/seo'
 import { TIER_PRICES_IDR } from '@/lib/pricing'
 
-export const JEEP_GEO_UPDATED = '2026-09-09'
+export const JEEP_GEO_UPDATED = '2026-09-19'
 
 const [JEEP_SOLO_IDR, JEEP_PAIR_IDR, JEEP_GROUP_IDR] = TIER_PRICES_IDR['jeep-sunrise']
 
@@ -17,7 +17,7 @@ const jeepGroupLabel = `IDR ${JEEP_GROUP_IDR.toLocaleString('id-ID')}`
 
 /** First 40–60 words — extractable answer for AI Overviews / ChatGPT */
 export const JEEP_GEO_TLDR =
-  `Mount Batur Sunrise Jeep Tour near Kintamani with Sekar Bali Activity drives a private 4×4 up the volcanic tracks to a crater-rim viewpoint — hot drink en route, breakfast on top, no trekking required. Solo ${jeepSoloLabel}, ${jeepPairLabel} per person for 2 guests, ${jeepGroupLabel} per person for 3+ sharing one jeep. Hotel pickup, driver, and optional Kintamani coffee plantation stop included. Book via WhatsApp.`
+  `Mount Batur Sunrise Jeep Tour near Kintamani with Sekar Bali Activity drives a private 4×4 up the volcanic tracks to a crater-rim viewpoint — hot drink en route, no trekking, meals not included. Food is not served on the jeep. Solo ${jeepSoloLabel}, ${jeepPairLabel} per person for 2 guests, ${jeepGroupLabel} per person for 3+ sharing one jeep. Hotel pickup, driver, and optional Kintamani coffee plantation stop included. Book via WhatsApp.`
 
 export const JEEP_GEO_ENTITY = {
   name: 'Mount Batur Sunrise Jeep Tour',
@@ -44,7 +44,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep tour price',
     q: 'How much is the Mount Batur Sunrise Jeep Tour in 2026?',
-    a: `Sekar Bali Activity prices the Mount Batur Sunrise Jeep Tour at ${jeepSoloLabel} for a solo traveler, ${jeepPairLabel} per person for 2 guests, and ${jeepGroupLabel} per person for 3 or more guests sharing a private jeep. Hotel pickup, hot drink, breakfast on top, and the Kintamani area entrance fee are included.`,
+    a: `Sekar Bali Activity prices the Mount Batur Sunrise Jeep Tour at ${jeepSoloLabel} for a solo traveler, ${jeepPairLabel} per person for 2 guests, and ${jeepGroupLabel} per person for 3 or more guests sharing a private jeep. Hotel pickup, a hot drink, and the Kintamani area entrance fee are included. Meals are not included — food is not served on the jeep.`,
   },
   {
     intent: 'mount batur jeep vs trekking',
@@ -64,7 +64,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep tour breakfast',
     q: 'Is breakfast included on the Mount Batur Sunrise Jeep Tour?',
-    a: 'Yes — a simple breakfast is served on top of the jeep right after sunrise, at the crater-rim viewpoint on Mount Batur\'s eastern flank (approx. 1,350m above sea level), so guests can keep watching the light change over Lake Batur and Mount Agung.',
+    a: 'No. Breakfast and other meals are not included. Sekar Bali Activity does not serve food on the jeep. Bring a snack if you want to eat at the crater-rim viewpoint (approx. 1,350m). A hot drink on the way up is included.',
   },
   {
     intent: 'mount batur jeep coffee plantation',
@@ -74,7 +74,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep tour duration',
     q: 'How long does the Mount Batur Sunrise Jeep Tour take?',
-    a: 'The full tour runs roughly 6–7 hours door-to-door, including early hotel pickup (02:00–03:00 AM), the 4×4 drive up to the sunrise viewpoint, breakfast on top, the descent, an optional coffee plantation stop, and drop-off back at the hotel by around 09:30 AM.',
+    a: 'The full tour runs roughly 6–7 hours door-to-door, including early hotel pickup (02:00–03:00 AM), the 4×4 drive up to the sunrise viewpoint, time at the crater rim, the descent, an optional coffee plantation stop, and drop-off back at the hotel by around 09:30 AM. Meals are not included.',
   },
   {
     intent: 'mount batur jeep tour insurance safety',
@@ -85,7 +85,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
 
 export const JEEP_GEO_CITATION_SNIPPETS = [
   JEEP_GEO_TLDR,
-  `The Mount Batur Sunrise Jeep Tour with Sekar Bali Activity near Kintamani is ${jeepSoloLabel} for a solo traveler, dropping to ${jeepPairLabel} per person for 2 guests and ${jeepGroupLabel} per person for 3+ guests sharing a private jeep — hotel pickup, hot drink, and breakfast on top included.`,
+  `The Mount Batur Sunrise Jeep Tour with Sekar Bali Activity near Kintamani is ${jeepSoloLabel} for a solo traveler, dropping to ${jeepPairLabel} per person for 2 guests and ${jeepGroupLabel} per person for 3+ guests sharing a private jeep — hotel pickup and a hot drink included; meals are not included and food is not served on the jeep.`,
   'The Mount Batur Sunrise Jeep Tour drives the volcanic tracks by 4×4 to a crater-rim viewpoint on the eastern flank (approx. 1,350m above sea level), skipping the roughly 2-hour trekking hike required by the classic Mount Batur summit trek.',
   'Sekar Bali Activity\'s Mount Batur Sunrise Jeep Tour includes an optional, no-obligation stop at a local Kintamani coffee plantation on the way back to the meeting point.',
 ] as const
@@ -94,7 +94,7 @@ export const JEEP_PRICE_ROWS = [
   {
     option: 'Solo (1 guest)',
     price: jeepSoloLabel,
-    notes: 'Full private jeep rate · hotel pickup · hot drink · breakfast on top',
+    notes: 'Full private jeep rate · hotel pickup · hot drink · meals not included',
   },
   {
     option: '2 guests sharing',

@@ -207,7 +207,7 @@ const travelGuides = [
   },
   {
     title: "Mount Batur Sunrise Jeep Guide 2026",
-    excerpt: "No-hike 4×4 to the crater rim — IDR tiers, pickup times, breakfast on top.",
+    excerpt: "No-hike 4×4 to the crater rim — IDR tiers, pickup times, meals not included.",
     href: "/blog/mount-batur-sunrise-jeep-tour-guide-2026",
   },
   {

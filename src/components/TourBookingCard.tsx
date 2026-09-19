@@ -1,12 +1,13 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ArrowRight, Clock, ExternalLink } from "lucide-react"
+import { ArrowRight, Car, Clock, ExternalLink, MapPin, MessageCircle } from "lucide-react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
 import { getListPrice, getPromoListPrice } from "@/lib/pricing"
-import { formatIdr } from "@/lib/whatsapp"
+import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
+import { SITE_URL } from "@/lib/seo"
 import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
@@ -19,6 +20,8 @@ export type TourBookingCardProps = {
   tourSlug: string
   title: string
   duration: string
+  pickup?: string
+  venue?: string
   basePrice: number
   childPrice?: number
   getYourGuideUrl?: string
@@ -39,6 +42,15 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       promoPrice: COOKING_CLASS_PRICE_IDR,
       standardPrice: COOKING_CLASS_STANDARD_PRICE_IDR,
       tierLabel: "Shared class promo / person",
+    }
+  }
+  // ATV SERP / FAQ lead with the 1-rider rate. Do not show the 3+ 700K
+  // tier as a "from" promo — it reads as a discount vs IDR 750K.
+  if (tourSlug === "bali-atv-adventure") {
+    return {
+      promoPrice: fallbackBase,
+      standardPrice: fallbackBase,
+      tierLabel: undefined,
     }
   }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
@@ -70,6 +82,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   const isPrivateDayTour =
     props.tourSlug === "full-day-ubud-tour" ||
     props.tourSlug === "half-day-ubud-tanah-lot-tour"
+  const isLuwak = props.tourSlug === "luwak-coffee-plantation"
 
   if (props.activityOptions?.length) {
     return props.activityOptions.map((opt, index) => {
@@ -81,9 +94,10 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         times: isMorning ? ["08:30"] : isPrivate ? ["08:30", "13:30"] : ["13:30"],
         adultPrice: props.basePrice + opt.priceDiff,
         kidPrice: props.childPrice ?? null,
-        minPax: /tandem/i.test(opt.name) ? 2 : 1,
+        minPax: /tandem|2 guests/i.test(opt.name) ? 2 : isLuwak ? 3 : 1,
         getYourGuideUrl: props.getYourGuideUrl,
         freeUbudPickup: props.tourSlug === "balinese-cooking-class",
+        pickupNotOffered: isLuwak,
       }
     })
   }
@@ -95,13 +109,16 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       times:
         props.tourSlug === "balinese-cooking-class"
           ? ["08:30", "13:30"]
-          : DEFAULT_TIMES,
+          : isLuwak
+            ? ["10:00", "14:00"]
+            : DEFAULT_TIMES,
       adultPrice: props.basePrice,
       kidPrice: props.childPrice ?? null,
-      minPax: 1,
+      minPax: isLuwak ? 3 : 1,
       getYourGuideUrl: props.getYourGuideUrl,
       freeUbudPickup: props.tourSlug === "balinese-cooking-class",
       pickupIncluded: isPrivateDayTour,
+      pickupNotOffered: isLuwak,
     },
   ]
 }
@@ -112,6 +129,16 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const primary = configs[0]
   const { promoPrice, standardPrice, tierLabel } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
   const hasPromo = standardPrice > promoPrice
+  const consultationActivity =
+    props.tourSlug === "balinese-cooking-class"
+      ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
+      : props.tourSlug === "bali-atv-adventure"
+        ? `${props.title} — single from ${formatIdr(props.basePrice)}`
+        : props.title
+  const consultationUrl = buildWhatsAppConsultationUrl(
+    consultationActivity,
+    `${SITE_URL}/tours/${props.tourSlug}`,
+  )
 
   // Nudge the floating AI Assistant button above our mobile sticky CTA so they don't overlap
   useEffect(() => {
@@ -123,28 +150,38 @@ export default function TourBookingCard(props: TourBookingCardProps) {
 
   return (
     <>
-      {/* Mobile-only sticky CTA so guests can book right away without scrolling to the bottom */}
+      {/* Mobile-only sticky CTA so guests can book or consult without scrolling */}
       <div className="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-brand-green/10 bg-white/95 backdrop-blur px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] [padding-bottom:max(0.75rem,env(safe-area-inset-bottom))]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
-          <div className="min-w-0">
+        <div className="mx-auto flex max-w-7xl items-center gap-2">
+          <div className="min-w-0 flex-1">
             <p className="text-[11px] font-medium text-brand-green-light leading-none">From</p>
             <div className="flex items-baseline gap-2">
-              <span className="font-display text-xl font-bold text-brand-green leading-tight">
+              <span className="font-display text-lg font-bold text-brand-green leading-tight truncate">
                 {formatIdr(promoPrice)}
               </span>
               {hasPromo ? (
-                <span className="text-xs text-brand-green-light line-through opacity-70">
+                <span className="text-xs text-brand-green-light line-through opacity-70 shrink-0">
                   {formatIdr(standardPrice)}
                 </span>
               ) : null}
             </div>
           </div>
+          <a
+            href={consultationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex shrink-0 items-center justify-center gap-1.5 h-11 rounded-full border-2 border-brand-green bg-white px-3 font-bold text-xs uppercase tracking-wider text-brand-green"
+            aria-label={`WhatsApp consultation about ${props.title}`}
+          >
+            <MessageCircle className="w-4 h-4" />
+            Consult
+          </a>
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="flex shrink-0 items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer px-6 font-bold text-sm uppercase tracking-wider"
+            className="flex shrink-0 items-center justify-center gap-1.5 h-11 rounded-full btn-gold-shimmer px-4 font-bold text-xs uppercase tracking-wider"
           >
-            Book Now <ArrowRight className="w-4 h-4" />
+            Book <ArrowRight className="w-3.5 h-3.5" />
           </button>
         </div>
       </div>
@@ -170,6 +207,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             from
             tierLabel={tierLabel}
           />
+          {props.tourSlug === "bali-atv-adventure" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
           {props.childPrice ? (
             <p className="text-sm text-brand-green-light mt-1">
               Child from {formatIdr(props.childPrice)}
@@ -177,22 +219,47 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           ) : null}
         </div>
 
-        <div className="flex items-center gap-2 text-sm text-brand-green-light">
-          <Clock className="w-4 h-4 text-brand-green shrink-0" />
-          <span>{props.duration}</span>
+        <div className="space-y-1.5 text-sm text-brand-green-light">
+          <div className="flex items-center gap-2">
+            <Clock className="w-4 h-4 text-brand-green shrink-0" />
+            <span>{props.duration}</span>
+          </div>
+          {props.pickup ? (
+            <div className="flex items-center gap-2">
+              <Car className="w-4 h-4 text-brand-green shrink-0" />
+              <span>{props.pickup}</span>
+            </div>
+          ) : null}
+          {props.venue ? (
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-brand-green shrink-0" />
+              <span>{props.venue}</span>
+            </div>
+          ) : null}
         </div>
 
         <p className="text-xs text-brand-green-light leading-relaxed">
-          Tap below to enter your name, age, adult/child, location, and activity — then send everything to WhatsApp with the price included.
+          Tap below to enter your name, age, adult/child, location, and activity — then send everything to WhatsApp with the price included. Or start a free WhatsApp consultation if you still have questions.
         </p>
 
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          className="w-full flex items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
-        >
-          Book This Experience <ArrowRight className="w-4 h-4" />
-        </button>
+        <div className="space-y-3">
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            className="w-full flex items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
+          >
+            Book This Experience <ArrowRight className="w-4 h-4" />
+          </button>
+          <a
+            href={consultationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full flex items-center justify-center gap-2 h-12 rounded-full border-2 border-brand-green bg-white font-bold text-sm uppercase tracking-wider text-brand-green hover:bg-brand-green/5 transition-colors"
+          >
+            <MessageCircle className="w-4 h-4" />
+            WhatsApp Consultation
+          </a>
+        </div>
       </div>
 
       <BookingPopup

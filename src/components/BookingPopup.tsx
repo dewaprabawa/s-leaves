@@ -29,6 +29,7 @@ import {
 } from '@/lib/combos';
 import BookingTourDetailPanel from '@/components/BookingTourDetailPanel';
 import PromoPrice from '@/components/PromoPrice';
+import { notifyActivityClick, notifyBookingSubmitted } from '@/lib/web3forms';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -48,6 +49,8 @@ export interface TourConfig {
   pickupIncluded?: boolean
   /** True only for activities that actually depart from the All New Bali Adventure arena (ATV, rafting, canyon tubing) */
   meetsAtArena?: boolean
+  /** Self-meet only — do not offer hotel pickup (Luwak coffee plantation) */
+  pickupNotOffered?: boolean
 }
 
 export function BookingPopup({
@@ -66,6 +69,7 @@ export function BookingPopup({
 }) {
   const [mounted, setMounted] = useState(false);
   const [guestName, setGuestName] = useState("");
+  const [guestEmail, setGuestEmail] = useState("");
   const [guestAge, setGuestAge] = useState("");
   const [guestType, setGuestType] = useState<"Adult" | "Child">("Adult");
   const [adults, setAdults] = useState(2);
@@ -97,6 +101,7 @@ export function BookingPopup({
     if (isOpen && tour) {
       setSelectedTourId(tour.id);
       setGuestName("");
+      setGuestEmail("");
       setGuestAge("");
       setGuestType("Adult");
       setAdults(Math.max(tour.minPax, 1));
@@ -109,7 +114,10 @@ export function BookingPopup({
       setLocationDetails("");
       setNotes("");
       setShowDetails(false);
-      setWantsPickup(tour.pickupIncluded === true || tour.freeUbudPickup === true);
+      setWantsPickup(
+        tour.pickupNotOffered !== true &&
+          (tour.pickupIncluded === true || tour.freeUbudPickup === true),
+      );
       setSameDropOff(false);
       setStep('form');
       setInvoice(null);
@@ -118,11 +126,19 @@ export function BookingPopup({
   }, [isOpen, tour, initialMixIds]);
 
   useEffect(() => {
+    if (!isOpen || !activeTour?.title) return
+    notifyActivityClick(activeTour.title, 'booking-popup')
+  }, [isOpen, activeTour?.id, activeTour?.title]);
+
+  useEffect(() => {
     if (!activeTour) return
     setAdults((prev) => Math.max(activeTour.minPax, prev || activeTour.minPax))
     setTime(activeTour.times[0] || "")
     setShowDetails(false)
-    setWantsPickup(activeTour.pickupIncluded === true || activeTour.freeUbudPickup === true)
+    setWantsPickup(
+      activeTour.pickupNotOffered !== true &&
+        (activeTour.pickupIncluded === true || activeTour.freeUbudPickup === true),
+    )
     const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
     setMixIds((prev) => prev.filter((id) => allowed.has(id as MixableActivityId) && id !== activeTour.id))
   }, [activeTour?.id])
@@ -194,6 +210,7 @@ export function BookingPopup({
   });
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupIncluded = activeTour.pickupIncluded === true;
+  const pickupNotOffered = activeTour.pickupNotOffered === true;
   const meetsAtArena = activeTour.meetsAtArena === true;
   const pickupQuote = quotePickup({
     wantsPickup,
@@ -379,6 +396,19 @@ export function BookingPopup({
       total: totalCost,
     };
 
+    void notifyBookingSubmitted({
+      guestName: draft.guestName,
+      email: guestEmail.trim() || undefined,
+      activity: draft.activity,
+      date: draft.date,
+      time: draft.time,
+      guests: `${adults} adult(s)${kids > 0 ? `, ${kids} child(ren)` : ''}`,
+      location: draft.location,
+      price: formatIdr(draft.total),
+      notes: draft.notes,
+      source: 'booking-popup',
+    })
+
     setInvoice(draft);
     setStep('invoice');
   };
@@ -483,7 +513,7 @@ export function BookingPopup({
                  isOutUbud ? (
                    <span className="text-red-600 font-bold block">Out of Ubud: hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
                  ) : (
-                   <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free Pickup (cycling)</span>
+                   <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free pickup</span>
                  )
                ) : (
                  <span className="text-red-600 font-bold block">Hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
@@ -608,6 +638,16 @@ export function BookingPopup({
                   className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
                 />
               </div>
+              <div className="sm:col-span-2">
+                <label className="block text-brand-green font-bold text-sm mb-2">Email</label>
+                <input
+                  type="email"
+                  value={guestEmail}
+                  onChange={(e) => setGuestEmail(e.target.value)}
+                  placeholder="you@email.com (optional — for booking copy)"
+                  className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
+                />
+              </div>
               <div>
                 <label className="block text-brand-green font-bold text-sm mb-2">Age *</label>
                 <input 
@@ -646,6 +686,13 @@ export function BookingPopup({
                 <span className="font-bold text-brand-green block mb-0.5">Hotel pickup included</span>
                 <span className="text-brand-green-light">
                   Pickup &amp; drop-off is included in this tour&apos;s price — no arena self-meet and no extra fee. Add your hotel address below.
+                </span>
+              </div>
+            ) : pickupNotOffered ? (
+              <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 text-sm">
+                <span className="font-bold text-brand-green block mb-0.5">Transport not included</span>
+                <span className="text-brand-green-light">
+                  Arrange your own transport to the venue. This experience does not include hotel pickup.
                 </span>
               </div>
             ) : (
@@ -701,7 +748,7 @@ export function BookingPopup({
               <p className="font-bold text-brand-green text-sm">Grab / GoCar vs our pickup</p>
               <p>Typical Grab or GoCar one-way Ubud ↔ arena: ~IDR {pickupQuote.grabOneWayTypical.toLocaleString('id-ID')} (est.)</p>
               <p>
-                Our pickup: <strong className="text-brand-green">{pickupQuote.total > 0 ? formatIdr(pickupQuote.total) : 'Free (cycling in Ubud)'}</strong>
+                Our pickup: <strong className="text-brand-green">{pickupQuote.total > 0 ? formatIdr(pickupQuote.total) : 'Free (Ubud area)'}</strong>
                 {pickupQuote.total > 0 && pickupQuote.savingsVsGrabRoundTrip > 0 && sameDropOff
                   ? ` · saves ~${formatIdr(pickupQuote.savingsVsGrabRoundTrip)} vs Grab round trip`
                   : pickupQuote.total > 0 && pickupQuote.savingsVsGrabOneWay > 0 && !sameDropOff
@@ -731,7 +778,10 @@ export function BookingPopup({
             </>
             ) : (
             <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
-              <span className="font-bold text-brand-green">Meeting:</span> Self-arranged — no fixed arena for this tour. Check &quot;I need hotel pickup&quot; above, or add details in Special Notes.
+              <span className="font-bold text-brand-green">Meeting:</span>{" "}
+              {pickupNotOffered
+                ? "Self-arranged — transport is not included. Add venue notes under Special Notes if needed."
+                : "Self-arranged — no fixed arena for this tour. Check \"I need hotel pickup\" above, or add details in Special Notes."}
             </div>
             )}
 

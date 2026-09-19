@@ -3,6 +3,7 @@ export const COOKING_JEEP_CLUSTER_POSTS = [
   {
     slug: 'cooking-class-ubud-price-2026-worth-it',
     title: 'Cooking Class Ubud Price 2026: Is Tumang Worth It?',
+    seoTitle: 'Cooking Class Ubud 2026 | Is Tumang Worth 450K?',
     excerpt:
       'Tumang Bali Cooking Class is promo IDR 450,000 (was 506,370) with free Ubud pickup, max 8 guests, and 10+ dishes — honest 2026 worth-it verdict.',
     publishedAt: '2026-09-19',
@@ -65,6 +66,7 @@ A full vegetarian or vegan menu is available — request it when you book, not a
   {
     slug: 'vegetarian-vegan-cooking-class-ubud',
     title: 'Vegetarian & Vegan Cooking Class in Ubud (Tumang)',
+    seoTitle: 'Vegetarian Cooking Class Ubud | Full Tumang Menu',
     excerpt:
       'Tumang Bali Cooking Class offers a full vegetarian or vegan menu on request — same promo IDR 450,000, max 8, free Ubud pickup. Tell WhatsApp before class.',
     publishedAt: '2026-09-19',
@@ -120,6 +122,7 @@ Couples and small groups who want Balinese technique (stone mortar, sambal, coco
   {
     slug: 'morning-vs-afternoon-ubud-cooking-class',
     title: 'Morning vs Afternoon Cooking Class in Ubud',
+    seoTitle: 'Morning vs Afternoon Cooking Class in Ubud',
     excerpt:
       'Tumang AM class includes the market tour; afternoon is rice-field walk + kitchen — same promo IDR 450,000 and free Ubud pickup. How to choose.',
     publishedAt: '2026-09-19',
@@ -164,6 +167,7 @@ Diet does not lock you to one session. Request veg / vegan on either clock — [
   {
     slug: 'mount-batur-sunrise-jeep-tour-guide-2026',
     title: 'Mount Batur Sunrise Jeep Tour Guide (2026)',
+    seoTitle: 'Mount Batur Sunrise Jeep Guide 2026',
     excerpt:
       'No-hike 4×4 to the Mount Batur crater rim — 6–7 hours, island-wide pickup, IDR tiers, meals not included. 2026 itinerary from Ubud and south Bali.',
     publishedAt: '2026-09-19',
@@ -217,6 +221,7 @@ Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **foo
   {
     slug: 'mount-batur-jeep-vs-sunrise-trek',
     title: 'Mount Batur Jeep vs Sunrise Trek',
+    seoTitle: 'Mount Batur Jeep vs Sunrise Trek',
     excerpt:
       'Private 4×4 crater-rim viewpoint vs the 2-hour summit hike — who should skip the trek. Jeep meals are not included.',
     publishedAt: '2026-09-19',
@@ -272,6 +277,7 @@ Itinerary: [2026 jeep guide](/blog/mount-batur-sunrise-jeep-tour-guide-2026). Pr
   {
     slug: 'mount-batur-jeep-pickup-times-canggu-ubud-2026',
     title: 'Mount Batur Jeep Pickup Times from Canggu, Seminyak & Ubud',
+    seoTitle: 'Batur Jeep Pickup Times | Canggu Seminyak Ubud',
     excerpt:
       'Island-wide hotel pickup is included on the Batur sunrise jeep — typical 02:00–03:00. South Bali leaves earliest; Ubud a little later. Meals not included.',
     publishedAt: '2026-09-19',

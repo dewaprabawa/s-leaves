@@ -92,7 +92,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           "sunrise jeep Lake Batur",
           "private 4x4 Mount Batur",
           "Mount Batur jeep pickup time",
-          "Batur jeep breakfast included",
+          "Batur jeep breakfast not included",
           "Sekar Bali Activity",
         ]
       : isLuwakTour(tour)
@@ -383,50 +383,6 @@ function buildTourSchema(tour: Tour) {
             "@type": "Offer",
             name: "Tandem ATV Ride",
             price: String(TIER_PRICES_IDR["tandem-atv"][0]),
-            priceCurrency: "IDR",
-            availability: "https://schema.org/InStock",
-            url: `${SITE_URL}/tours/${tour.slug}`,
-          },
-        ],
-      },
-    }
-  }
-
-  if (tour.slug === "batur-sunrise-jeep-tour") {
-    const [jeepSolo, jeepTwo, jeepGroup] = TIER_PRICES_IDR["jeep-sunrise"]
-    return {
-      ...base,
-      offers: {
-        "@type": "AggregateOffer",
-        name: tour.title,
-        lowPrice: String(jeepGroup),
-        highPrice: String(jeepSolo),
-        priceCurrency: "IDR",
-        offerCount: 3,
-        availability: "https://schema.org/InStock",
-        url: `${SITE_URL}/tours/${tour.slug}`,
-        description: tour.included.join(", "),
-        offers: [
-          {
-            "@type": "Offer",
-            name: "Solo private jeep",
-            price: String(jeepSolo),
-            priceCurrency: "IDR",
-            availability: "https://schema.org/InStock",
-            url: `${SITE_URL}/tours/${tour.slug}`,
-          },
-          {
-            "@type": "Offer",
-            name: "2 guests sharing a jeep",
-            price: String(jeepTwo),
-            priceCurrency: "IDR",
-            availability: "https://schema.org/InStock",
-            url: `${SITE_URL}/tours/${tour.slug}`,
-          },
-          {
-            "@type": "Offer",
-            name: "3+ guests sharing a jeep",
-            price: String(jeepGroup),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,

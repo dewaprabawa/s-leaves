@@ -14,7 +14,7 @@
 3. Split jeep-compare slugs — **canonical** `mount-batur-jeep-vs-sunrise-trek` + 301 from `vs-trekking`.
 
 ### Top 3 remaining (outside code score)
-1. Deploy so live `/llms.txt` matches repo.
+1. Deploy this follow-up so live `/llms.txt` and new cluster slugs match the repo (PR #109 merged the meal-fact commit; the homepage parse error blocked Vercel).
 2. Replace Unsplash jeep frames with operator photos when you have them (alt + dimensions already set).
 3. Re-run PSI after deploy.
 
@@ -38,7 +38,7 @@
 | Content | Pass | Confirmed | P0 spokes exist and link to money pages | 6 new slugs in `clusterPostsCookingJeep.ts` | Refresh quarterly |
 | Schema | Pass | Confirmed | TouristTrip + ImageObject + speakable + Question | `page.tsx` cooking + jeep QA | No FAQPage |
 | Images | Pass | Confirmed | Alts + OG 1200×630 | cooking first-party; jeep stock with dims | Optional operator photos |
-| Technical | Pass | Confirmed | 301 jeep compare alias; sitemap 0.95 on both P0 | `next.config.ts`, `sitemap.ts` | Deploy |
+| Technical | Pass | Confirmed | Homepage is a valid server `page.tsx`; 301 jeep compare alias; sitemap 0.95 on both P0 | `page.tsx` default export + `next.config.ts` | Deploy |
 | Performance | Info | Hypothesis | CWV not re-measured | PSI rate-limit | Run PSI post-deploy |
 
 ---

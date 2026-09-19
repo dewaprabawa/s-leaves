@@ -8,6 +8,8 @@ export type BlogPost = {
   publishedAt: string
   author: string
   image: string
+  /** Complete SERP title (≤60). When set, metadata uses absolute to skip the site-name template. */
+  seoTitle?: string
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -1789,6 +1791,7 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
   {
     slug: 'mount-batur-sunrise-jeep-tour-price-guide-2026',
     title: 'Mount Batur Sunrise Jeep Tour Price Guide (2026)',
+    seoTitle: 'Batur Sunrise Jeep Prices 2026 | IDR Tiers',
     excerpt:
       'Mount Batur sunrise jeep tour prices near Kintamani for 2026 — solo, pair, and group IDR tiers, what\u2019s included, and pickup timing.',
     publishedAt: '2026-09-09',

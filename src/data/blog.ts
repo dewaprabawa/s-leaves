@@ -1,3 +1,5 @@
+import { COOKING_JEEP_CLUSTER_POSTS } from './clusterPostsCookingJeep'
+
 export type BlogPost = {
   slug: string
   title: string
@@ -1825,7 +1827,7 @@ Why does the price drop per person as the group grows? A private jeep and driver
 5. Kintamani area entrance fee
 6. Drop-off back at your hotel by around 09:30 AM
 
-An optional, no-obligation stop at a local Kintamani coffee plantation can be added on the way back — see [jeep vs trekking](/blog/mount-batur-jeep-vs-trekking) for how this compares to the classic hiking route.
+An optional, no-obligation stop at a local Kintamani coffee plantation can be added on the way back — see [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek) for how this compares to the classic hiking route.
 
 ## Hidden Costs to Watch (Industry-Wide)
 
@@ -1840,7 +1842,7 @@ Sekar Bali Activity confirms the exact pickup time and total price on WhatsApp b
 
 ## Jeep Tour vs the Classic Trekking Hike
 
-If you're deciding between the jeep and the traditional Mount Batur sunrise trek, read the full comparison in [Jeep vs Trekking to Mount Batur](/blog/mount-batur-jeep-vs-trekking).
+If you're deciding between the jeep and the traditional Mount Batur sunrise trek, read the full comparison in [Jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
 ## How to Book the Exact Price on WhatsApp
 
@@ -1848,63 +1850,8 @@ If you're deciding between the jeep and the traditional Mount Batur sunrise trek
 2. Send your hotel/area, date, and guest count
 3. We confirm the tier rate and exact pickup time — no payment to inquire
 
-**Ready to lock a 2026 price?** Book the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) or compare it with our [cooking class](/tours/balinese-cooking-class) and [cycling tour](/tours/ubud-ricefield-cycling-tour) for a multi-day Bali itinerary.
+**Ready to lock a 2026 price?** Book the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) or compare it with our [cooking class](/tours/balinese-cooking-class) and [cycling tour](/tours/ubud-ricefield-cycling-tour) for a multi-day Bali itinerary. Compare routes: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 `
   },
-  {
-    slug: 'mount-batur-jeep-vs-trekking',
-    title: 'Mount Batur Jeep Tour vs Trekking: Which Sunrise Tour Should You Book?',
-    excerpt:
-      'Jeep or trek up Mount Batur for sunrise? Compare time, effort, price, and what you actually see on each route near Kintamani.',
-    publishedAt: '2026-09-09',
-    author: 'Sekar Bali Activity',
-    image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
-    content: `
-**Should you jeep or trek up Mount Batur for sunrise?** Both routes end at a viewpoint overlooking Lake Batur and Mount Agung at sunrise, but they get you there very differently. The classic **trekking hike** is a roughly 2-hour uphill walk in the dark with a headlamp and hiking guide. The **Sunrise Jeep Tour** drives a private 4×4 up the volcanic tracks to a crater-rim viewpoint, so you stay seated the whole way and arrive with more energy (and cleaner shoes) for sunrise. Meals are not included on the jeep.
-
-> **Key Takeaways**
-> - Trekking: ~2-hour uphill hike, moderate fitness needed, headlamp + hiking guide
-> - Jeep tour: private 4×4 drive, no hiking, meals not included
-> - Both end near a crater-rim viewpoint with sunrise over Lake Batur and Mount Agung
-> - Jeep tour from **IDR 750,000 per person** (3+ sharing) up to **IDR 1,350,000** solo
-> - Jeep suits families, older travelers, or anyone short on time or fitness
-> - Trekking suits travelers who want the summit-hike experience itself
-
----
-
-## The Trekking Route
-
-The traditional Mount Batur sunrise trek starts around 2:00–3:00 AM with a hiking guide, climbing volcanic scree and packed trail for roughly 2 hours to reach a viewpoint near the summit. It's a genuine hike — moderate fitness, sturdy shoes, and a headlamp are required, and the trail can be dusty and uneven in the dark.
-
-## The Jeep Tour Route
-
-Sekar Bali Activity's [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) uses a private 4×4 to drive the volcanic tracks on the mountain's eastern flank up to a crater-rim viewpoint at roughly 1,350 metres above sea level. There's no trekking involved — guests stay seated in the jeep for the climb and descent, with a hot drink on the way up while the sky changes color over Lake Batur and Mount Agung. Meals are not included and food is not served on the jeep.
-
-## Side-by-Side Comparison
-
-| Factor | Trekking hike | Jeep tour |
-| --- | --- | --- |
-| Physical effort | Moderate–high (2-hour uphill hike) | None — seated in the jeep |
-| Footwear needed | Hiking shoes, headlamp | Regular shoes |
-| Good for | Fitness travelers wanting the hike itself | Families, older travelers, time-limited guests |
-| Food | Usually a simple packed option | Not included — no meals on the jeep |
-| Typical duration | Similar overall (early pickup either way) | ~6–7 hours door-to-door |
-| Coffee plantation stop | Sometimes offered | Optional add-on on the way back |
-
-## Price Comparison
-
-The [Mount Batur Sunrise Jeep Tour](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026) with Sekar Bali Activity runs **IDR 1,350,000** solo, **IDR 825,000 per person** for 2 guests, and **IDR 750,000 per person** for 3+ guests sharing a private jeep — pickup, driver, hot drink, and the entrance fee included. Meals are not included.
-
-## Who Should Choose Which
-
-- **Choose the jeep tour** if you want the sunrise view without the hike, are traveling with children or older relatives, or are short on time before an onward flight.
-- **Choose trekking** if part of the appeal is the hike itself and you're comfortable with an early, moderately strenuous climb in the dark.
-
-## Book the Jeep Tour on WhatsApp
-
-Message us with your hotel or area, date, and guest count — we confirm the exact pickup time and per-person rate with no payment required to inquire.
-
-**Ready for sunrise without the hike?** Book the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour), or see the full [2026 price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026) for exact IDR tiers.
-`
-  },
+  ...COOKING_JEEP_CLUSTER_POSTS,
 ]

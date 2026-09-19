@@ -13,8 +13,9 @@
 6. og:locale, twitter:site, OG 1200×630, ImageObject, jeep QA JSON-LD.
 7. Jeep venue chip; sitemap 0.95 on both P0 money pages.
 8. **Vercel / homepage parse error:** `src/app/(frontend)/page.tsx` was a truncated client module with a second `export default` (unimported `HomepageJsonLd` / `HomePageClient`). Replaced with the server wrapper so preview deploys can succeed.
-9. Jeep meta keyword is **breakfast not included** (was “breakfast included”).
-10. Cooking / jeep cluster SERP titles are absolute and ≤60.
+9. **Typecheck:** removed duplicate `pickup` keys in `tours.ts` that failed `next build`.
+10. Jeep meta keyword is **breakfast not included** (was “breakfast included”).
+11. Cooking / jeep cluster SERP titles are absolute and ≤60.
 
 ## After deploy (ops, not code)
 

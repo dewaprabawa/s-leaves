@@ -104,6 +104,7 @@ export const TOURS: Tour[] = [
     venue: "All New Bali Adventure, Sedang",
     pickup: "Hotel pickup IDR 400,000 — optional",
     isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
@@ -281,11 +282,12 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     area: "Kintamani / Mount Batur",
     pickup: "Island-wide hotel pickup included",
     isTopPick: true,
+    pickup: "Hotel pickup included island-wide",
     duration: "Approx. 6–7 Hours",
     basePrice: 1350000,
     seoTitle: "Mount Batur Sunrise Jeep | No Hike, From IDR 750K",
     seoDescription:
-      "Private 4×4 jeep to the Mount Batur crater rim near Kintamani. Hot drink, breakfast on top, hotel pickup included. Solo IDR 1.35M · 3+ from IDR 750K. No trekking.",
+      "Private 4×4 crater-rim jeep near Kintamani. Hot drink, breakfast, hotel pickup included. Solo IDR 1.35M · 2 pax 825K · 3+ from IDR 750K. No hike.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
@@ -309,8 +311,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       },
     ],
     shortDescription:
-      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, and breakfast served on top as the sun rises over Lake Batur and Mount Agung. Solo from IDR 1,350,000, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
-    fullDescription: `**What is the Mount Batur Sunrise Jeep Tour?** It is a private 4×4 jeep ride up Mount Batur’s volcanic tracks to a crater-rim viewpoint near Kintamani — about 1,350 metres above sea level — so you watch sunrise over **Lake Batur** and **Mount Agung** without the classic 2-hour summit trek. A local driver, hot drink en route, breakfast served on top of the jeep, and hotel pickup are included. Solo from **IDR 1,350,000**, or **IDR 750,000 per person** once 3+ guests share one jeep.
+      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, and breakfast served on top as the sun rises over Lake Batur and Mount Agung. Solo from IDR 1,350,000, IDR 825,000 per person for 2 guests, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
+    fullDescription: `**What is the Mount Batur Sunrise Jeep Tour?** It is a private 4×4 jeep ride up Mount Batur’s volcanic tracks to a crater-rim viewpoint near Kintamani — about 1,350 metres above sea level — so you watch sunrise over **Lake Batur** and **Mount Agung** without the classic 2-hour summit trek. A local driver, hot drink en route, breakfast served on top of the jeep, and hotel pickup are included. Solo from **IDR 1,350,000**, **IDR 825,000 per person** for 2 guests, or **IDR 750,000 per person** once 3+ guests share one jeep.
 
 Want the famous Mount Batur sunrise without lacing up hiking boots at 2 AM? You stay in the jeep. The viewpoint is on Mount Batur’s eastern flank — the same golden caldera light trekkers queue for, without scrambling lava rock in the dark.
 
@@ -496,6 +498,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes, phone/camera, a
     area: "Ayung River / Ubud",
     pickup: "Hotel pickup IDR 400,000 — optional",
     isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
@@ -586,7 +589,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         id: "faq-raft-3",
         question: "Is hotel pickup included?",
         answer:
-          "Hotel pickup is available for an additional IDR 400,000. Free Ubud pickup applies to the cycling tour only.",
+          "Hotel pickup is available for an additional IDR 400,000, or meet on site with no transport fee. Free Ubud pickup is included on the cycling tour and Tumang cooking class — not on rafting.",
       },
       {
         id: "faq-raft-4",
@@ -699,7 +702,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         id: "faq-tube-4",
         question: "Is hotel pickup included?",
         answer:
-          "Hotel pickup is available for an additional IDR 400,000. Free Ubud pickup applies to the cycling tour only.",
+          "Hotel pickup is available for an additional IDR 400,000, or meet on site with no transport fee. Free Ubud pickup is included on the cycling tour and Tumang cooking class — not on canyon tubing.",
       },
       {
         id: "faq-tube-5",
@@ -718,6 +721,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     area: "Pejeng / Ubud",
     pickup: "Free Ubud-area hotel pickup",
     isTopPick: true,
+    pickup: "Free Ubud-area hotel pickup",
     duration: "2 Hours",
     basePrice: 750000,
     seoTitle: "Rice Paddy Cycling Ubud | Pejeng",
@@ -917,6 +921,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     area: "Tampaksiring / Ubud",
     pickup: "Transport not included",
     isTopPick: true,
+    pickup: "Transport not included",
     duration: "1.5 Hours",
     basePrice: 800000,
     seoTitle: "Luwak Coffee Plantation Umah Kuno | IDR 800K",
@@ -1235,6 +1240,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
     area: "Ubud & surrounds",
     pickup: "Private car pickup included",
     isTopPick: true,
+    pickup: "Private car hotel pickup",
     duration: "10 Hours",
     basePrice: 600000,
     seoTitle: "Full Day Ubud Tour | Palace, Market & Rice Terraces",
@@ -1328,7 +1334,7 @@ This is a private car and driver, not a shared minibus — so you can linger lon
     slug: "half-day-ubud-tanah-lot-tour",
     category: "day-tour",
     area: "Ubud → Tanah Lot",
-    pickup: "Private car pickup included",
+    pickup: "Private car hotel pickup",
     duration: "6 Hours",
     basePrice: 450000,
     seoTitle: "Half Day Ubud & Tanah Lot Sunset Tour | From IDR 450K",

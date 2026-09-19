@@ -329,13 +329,14 @@ function buildTourSchema(tour: Tour) {
   }
 
   if (tour.slug === "batur-sunrise-jeep-tour") {
+    const [jeepSolo, jeepTwo, jeepGroup] = TIER_PRICES_IDR["jeep-sunrise"]
     return {
       ...base,
       offers: {
         "@type": "AggregateOffer",
         name: tour.title,
-        lowPrice: "750000",
-        highPrice: "1350000",
+        lowPrice: String(jeepGroup),
+        highPrice: String(jeepSolo),
         priceCurrency: "IDR",
         offerCount: 3,
         availability: "https://schema.org/InStock",
@@ -345,7 +346,7 @@ function buildTourSchema(tour: Tour) {
           {
             "@type": "Offer",
             name: "Solo private jeep",
-            price: "1350000",
+            price: String(jeepSolo),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -353,7 +354,7 @@ function buildTourSchema(tour: Tour) {
           {
             "@type": "Offer",
             name: "2 guests sharing a jeep",
-            price: "825000",
+            price: String(jeepTwo),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -361,7 +362,7 @@ function buildTourSchema(tour: Tour) {
           {
             "@type": "Offer",
             name: "3+ guests sharing a jeep",
-            price: "750000",
+            price: String(jeepGroup),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -590,7 +591,8 @@ export default async function TourPage({ params }: Props) {
                     </span>
                   ) : isJeepTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">
-                      From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · solo{" "}
+                      From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · 2 pax{" "}
+                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1])} · solo{" "}
                       {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][0])}
                     </span>
                   ) : isAtvTour(tour) ? (

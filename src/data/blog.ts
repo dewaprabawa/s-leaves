@@ -10,6 +10,132 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'cooking-class-ubud-price-2026-worth-it',
+    title: 'Cooking Class Ubud Price 2026: Is It Worth It?',
+    excerpt:
+      'Tumang cooking class Ubud price 2026: promo IDR 450,000 (was 506,370), free Ubud pickup, 3–4 hours, max 8 guests. Honest worth-it verdict + WhatsApp booking.',
+    publishedAt: '2026-09-14',
+    author: 'Sekar Bali Activity',
+    image: '/images/cooking/satay-class.jpg',
+    content: `
+**Is a cooking class in Ubud worth it in 2026?** Yes — if you want a **hands-on village kitchen**, not a hotel demo. We book **[Tumang Bali Cooking Class](/tours/balinese-cooking-class)** in Tumang village near Ubud: shared promo **IDR 450,000** / person (was IDR 506,370), **3–4 hours**, **max 8 guests**, complimentary **Ubud-area hotel pickup**. Private kitchen is **IDR 633,090** (1 guest) or **IDR 1,266,180** (2 guests total). Ask questions on **WhatsApp Consultation** or tap **Book** — no payment to inquire.
+
+> **Key Takeaways**
+> - **How much:** shared promo **IDR 450,000** / person (was IDR 506,370)
+> - **Where:** Tumang village kitchen near Ubud with Chef Wayan Sudiana
+> - **Pickup:** free for Ubud-area hotels; outside Ubud — confirm on WhatsApp
+> - **Duration:** 3–4 hours · morning includes the pasar; afternoon is kitchen + rice-field walk
+> - **Who for:** couples, families, and food-curious guests who want to cook 10+ dishes
+> - **How to book:** [WhatsApp Consultation / Book](/tours/balinese-cooking-class) — no deposit to inquire
+
+---
+
+## Quick answer: price, place, pickup, time
+
+| Question | Our 2026 answer |
+| --- | --- |
+| How much? | Shared **IDR 450,000** promo / person (was **IDR 506,370**). Private **IDR 633,090** (1) or **IDR 1,266,180** (2 total). |
+| Where? | Family kitchen in **Tumang village**, a short drive from central Ubud. |
+| Pickup? | **Free Ubud-area hotel pickup** on shared and private sessions. |
+| How long? | **3–4 hours** including the meal you cook. |
+| Who is it for? | Guests who want to **cook**, not watch. Shared class capped at **8**. Vegetarian / vegan if you request it when you book. |
+| How to book? | Open the [cooking class page](/tours/balinese-cooking-class), tap **WhatsApp Consultation** or **Book**, send name, date, hotel, and guest count. |
+
+That first screen is what most travelers actually need. The rest of this page is the honest “worth it?” math we give guests on WhatsApp.
+
+## What you get for IDR 450,000
+
+The shared promo is **not** a lecture with a tasting plate. Each guest works a station. You pound **Base Genep** on a stone mortar, shape **sate lilit**, make **sambal matah**, cook **pepes** and **lawar**, and sit down to the meal you prepared.
+
+Included on the shared class we sell:
+
+- Hands-on cooking of **10+ Balinese dishes** with Chef **Wayan Sudiana** (English)
+- **Morning market tour** on the AM session only
+- Guided **rice-field walk**
+- All ingredients and equipment
+- The meal you cook
+- Complimentary **hotel pickup in the Ubud area**
+- Small group — **max 8** on shared classes
+
+Not included: pickup **outside** the Ubud area (ask WhatsApp for a transfer quote — we do not publish a flat out-of-Ubud cooking transfer here), personal extras, and the optional private-kitchen surcharge.
+
+A walkthrough of the stations: [Inside Tumang Bali Cooking Class](/blog/inside-balinese-cooking-class-pejeng).
+
+## Is IDR 450,000 worth it vs a cheaper class?
+
+**Yes, if the alternative is a 20-person hotel demo or a “watch the chef, then eat” lunch.** Those look cheaper on a booking site and feel expensive once you realize you never cooked.
+
+**Maybe not, if you only want to eat Balinese food.** A warung meal costs far less. Pay for class when you want the skill, the market smells, and a small group — not when you only want lunch.
+
+Here is the comparison we use with guests:
+
+| | **Tumang via Sekar Bali** | **Typical hotel / big-bus class** |
+| --- | --- | --- |
+| Price we publish | **IDR 450,000** promo / person (was 506,370) | Often listed in USD; extras appear later |
+| Group size | **Max 8** shared | Often 12–25 |
+| You cook | Your own station — 10+ dishes | Demo + limited hands-on |
+| Pickup | **Free in the Ubud area** | Sometimes extra or meeting-point only |
+| Market tour | **Morning shared class** | Rare, or a rushed photo stop |
+| Booking | WhatsApp **Consultation** or **Book** — no payment to inquire | Deposit / OTA checkout |
+
+We list Tumang because we already handle cycling, ATV, and jeep on the same WhatsApp thread. You get one operator, clear IDR, and a kitchen that TripAdvisor marked **Traveler’s Choice 2026** (5.0 from 1,500+ reviews on the Tumang listing). Full money page: [Tumang Bali Cooking Class near Ubud](/tours/balinese-cooking-class).
+
+## Shared vs private: when the extra IDR is worth it
+
+| Option | Price (verified) | Choose this when |
+| --- | --- | --- |
+| Shared morning (market) | **IDR 450,000** / person | You want the pasar + kitchen and are happy in a max-8 group |
+| Shared afternoon | **IDR 450,000** / person | You already rode [Pejeng ricefields](/tours/ubud-ricefield-cycling-tour) that morning |
+| Private (1 guest) | **IDR 633,090** | Solo traveler who wants the kitchen to themselves |
+| Private (2 guests) | **IDR 1,266,180** total | Couple who want a private class without a shared table |
+
+Private is worth it when the date is a birthday, proposal, or you simply do not want other guests at the stations. Shared is worth it when you like a small-group energy and want the promo rate.
+
+## Morning market vs afternoon kitchen
+
+**Morning is worth it if you have not been to a Balinese pasar.** You walk the market with the host, handle galangal, turmeric, lemongrass, and chilies, then cook what you shopped.
+
+**Afternoon is worth it if you want a culture combo day.** We drop you from [Ubud ricefield cycling](/tours/ubud-ricefield-cycling-tour) (from **IDR 750,000** / person — free Ubud pickup and lunch on that tour) back to the hotel, you freshen up, then we collect you for the Tumang kitchen. Same-day seats are **not** a published bundle discount — we confirm both products on WhatsApp. Timeline: [Cycling + Tumang cooking day](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+
+## Who this class is for (and who should skip it)
+
+**Worth it for**
+
+- Couples and families who want a **village morning or afternoon**, not another temple queue
+- Travelers searching **cooking class Ubud price** who want IDR, pickup, and group size in one place
+- Guests who eat vegetarian or vegan — request the full veg menu when you message us, not as a side plate at the table
+- Anyone who wants **free Ubud pickup** so they are not hunting a meeting point
+
+**Skip it if**
+
+- You only want a restaurant lunch
+- You refuse any spice (we can adjust heat; we cannot make Balinese food bland)
+- You need pickup from Canggu, Seminyak, or further south and have not asked us for a transfer quote yet
+- You want a hotel rooftop “class” with a cocktail — that is a different product
+
+## Honest cons (so the “yes” means something)
+
+- **Afternoon skips the market.** If the pasar is the reason you searched, book the morning session.
+- **It is a working village kitchen**, not a resort studio. You will stand, stir, and get turmeric on your hands.
+- **Out-of-Ubud pickup is not a published IDR.** Confirm on WhatsApp before you assume it is free.
+- **Private rates are higher** because you rent the kitchen, not because we hide a shared-class fee.
+
+If those tradeoffs are fine, the promo shared rate is one of the clearer cooking-class Ubud prices we can stand behind in 2026.
+
+## How to book on WhatsApp (Consultation or Book)
+
+1. Open [Tumang Bali Cooking Class](/tours/balinese-cooking-class)  
+2. Tap **WhatsApp Consultation** if you still have questions (date, kids, vegan, Canggu pickup)  
+3. Tap **Book** when you already know the date — or start from [/book](/book)  
+4. Send **name, guest count, hotel, date, morning or afternoon**  
+5. We confirm the IDR tier and pickup — **no payment to inquire**
+
+You can also message [+62 817 7572 3663](https://wa.me/6281775723663) directly.
+
+**Ready to cook?** [Book the Tumang cooking class](/tours/balinese-cooking-class), ask a **WhatsApp Consultation**, or send the date on [Book](/book).
+`
+  },
+  {
     slug: 'mount-batur-sunrise-jeep-tour-guide-2026',
     title: 'Mount Batur Sunrise Jeep Tour Guide 2026',
     excerpt:
@@ -263,7 +389,7 @@ Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsap
 **Is an Ubud cycling tour worth it?** Yes — if you want **quiet rice paddies, village culture, and lunch included**, not another crowded Tegallalang photo stop. Sekar Bali Activity’s **Ubud Ricefield Cycling Tour** is **IDR 750,000** per person with **free Ubud hotel pickup**, lunch, bike, helmet, guide, and insurance through **Pejeng** village paths.
 
 > **Key Takeaways**
-> - Worth it for culture travelers, couples, and families who want a gentle full day  
+> - Worth it for culture travelers, couples, and families who want a gentle 2-hour village ride  
 > - **IDR 750,000** · free Ubud pickup · **lunch included** · insurance  
 > - Route: **Pejeng** countryside / rice paddy paths — not mass Tegallalang traffic  
 > - Skip it if you only want motors/mud — book [ATV](/tours/bali-atv-adventure) instead  
@@ -299,16 +425,16 @@ Many “Ubud cycling” reviews complain about traffic and selfie crowds. Our ri
 ## Honest Cons
 
 - **Not a mountain-bike climb** — expect relaxed village paths  
-- **Full day** — plan sun protection and comfortable clothes  
+- **About 2 hours** — plan sun protection and comfortable clothes  
 - **Cooking class transfer** (if combo) is separate — cycling drop-off returns you to your hotel first  
 
 ## Make It a Culture Combo Day
 
-Morning/afternoon ricefield cycling + afternoon Tumang Bali Cooking Class is one of the highest-intent searches near Ubud. Full plan: [Cycling & cooking class itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+Morning 2-hour ricefield cycling + afternoon Tumang Bali Cooking Class is one of the highest-intent searches near Ubud. Full plan: [Cycling & cooking class itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
 
 ## Verdict
 
-If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 750,000 — especially with free pickup and lunch included. If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
+If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 750,000 — especially with free pickup and lunch included. Pair it with a village kitchen: [cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it). If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
 
 **Ready to decide?** Book [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) on WhatsApp, add [Tumang Bali Cooking Class](/tours/balinese-cooking-class), or open [Book](/book) with your hotel and date.
 `
@@ -1065,7 +1191,7 @@ After cooking, the group sits family-style and eats what everyone prepared — c
 | Private (1 guest) | **IDR 633,090** | Exclusive kitchen |
 | Private (2 guests) | **IDR 1,266,180** | Total for two |
 
-Pair with cycling the same day: [Cycling + Tumang cooking itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary). Operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud).
+Price verdict: [Is a cooking class in Ubud worth it?](/blog/cooking-class-ubud-price-2026-worth-it). Pair with cycling the same day: [Cycling + Tumang cooking itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary). Operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud).
 
 **Ready to cook?** [Book Tumang Bali Cooking Class](/tours/balinese-cooking-class) or message [WhatsApp](https://wa.me/6281775723663).
 `
@@ -1152,18 +1278,18 @@ Book your seat at [Tumang Bali Cooking Class](/tours/balinese-cooking-class) nea
   {
     slug: "bali-airport-transfer-guide-dps-to-ubud",
     title: "DPS to Ubud Transfer Guide",
-    excerpt: "Private DPS→Ubud transfer: flat rates, 60–90 min, avoid arrival-hall touts. Pre-book with flight tracking — no surge surprises.",
+    excerpt: "Private DPS→Ubud transfer from IDR 700,000: 60–90 min, avoid arrival-hall touts. Pre-book with flight tracking — no surge surprises.",
     publishedAt: "2026-08-21",
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
     content: `
-**What is the best way to travel from Bali Airport (DPS) to Ubud?** The safest, most stress-free option for arriving travelers is booking a pre-arranged **private airport transfer**. The drive from Ngurah Rai International Airport (DPS) to Ubud takes approximately **60 to 90 minutes** depending on traffic via the Sanur bypass route. Pre-booked private transfers cost a fixed flat rate (approx. 350,000 to 450,000 IDR / $22-$29 USD), including flight tracking, toll fees, luggage assistance, and a dedicated driver holding a name sign inside the arrival hall.
+**What is the best way to travel from Bali Airport (DPS) to Ubud?** The safest, most stress-free option for arriving travelers is booking a pre-arranged **private airport transfer**. The drive from Ngurah Rai International Airport (DPS) to Ubud takes approximately **60 to 90 minutes** depending on traffic via the Sanur bypass route. Pre-booked private transfers with Sekar Bali Activity are a fixed flat rate of **IDR 700,000**, including flight tracking, toll fees, luggage assistance, and a dedicated driver holding a name sign inside the arrival hall.
 
 > **Key Takeaways (TL;DR)**
 > - **Distance**: 37 km (23 miles) from DPS Airport to central Ubud / Pejeng.
 > - **Travel Time**: 60 min (early morning / late night) to 105 min (peak afternoon traffic 3 PM - 7 PM).
 > - **Avoid Airport Touts**: Unregulated airport hawkers inside the arrival hall often charge 600,000 - 800,000 IDR ($40-$55 USD).
-> - **Fixed Pre-Booking**: Secure flat-rate pricing with our [Private Airport Transfers](/transfers).
+> - **Fixed Pre-Booking**: Secure flat-rate pricing from **IDR 700,000** with our [Private Airport Transfers](/transfers).
 
 ---
 
@@ -1171,7 +1297,7 @@ Book your seat at [Tumang Bali Cooking Class](/tours/balinese-cooking-class) nea
 
 | Option | Fixed Price (IDR) | Pros | Cons |
 | --- | --- | --- | --- |
-| **Private Driver (Pre-booked)** | 350,000 - 450,000 | Name sign at arrivals, flight tracking, flat rate, AC vehicle | Requires booking 24h prior |
+| **Private Driver (Pre-booked)** | 700,000 | Name sign at arrivals, flight tracking, flat rate, AC vehicle | Requires booking 24h prior |
 | **Official Airport Taxi Desk** | 450,000 - 550,000 | Legitimate desk | Queue lines can exceed 45 minutes during peak flights |
 | **Arrival Hall Touts** | 600,000 - 800,000+ | Immediate departure | Unregulated, aggressive bargaining required |
 | **Ride-Share Apps (Grab/Gojek)** | 320,000 - 400,000 | App convenience | Must walk to distant pickup zone; surge pricing during rain |
@@ -1285,7 +1411,7 @@ Book the [Luwak Coffee Plantation](/tours/luwak-coffee-plantation) tasting, or b
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**How much does the Ubud Ricefield Cycling Tour cost?** Sekar Bali Activity offers the full-day Ubud Ricefield Cycling Tour for **IDR 750,000 per person**, including **free hotel pickup within Ubud**, lunch, plus a guided ride through Pejeng rice terraces and village life.
+**How much does the Ubud Ricefield Cycling Tour cost?** Sekar Bali Activity offers the 2-hour Ubud Ricefield Cycling Tour for **IDR 750,000 per person**, including **free hotel pickup within Ubud**, lunch, plus a guided ride through Pejeng rice terraces and village life.
 
 > **Key Takeaways**
 > - **IDR 750,000** per person — the only tour with free Ubud pickup
@@ -1300,7 +1426,7 @@ Book the [Luwak Coffee Plantation](/tours/luwak-coffee-plantation) tasting, or b
 
 Unlike crowded main-road bike rentals, this tour follows quiet village lanes east of central Ubud through **Pejeng** — one of Bali's oldest cultural areas. You cycle past Subak irrigation channels, meet local families, and see rice harvesting in season without rushing through tourist hotspots.
 
-## Full Day Itinerary (8 Steps)
+## 2-Hour Itinerary (8 Steps)
 
 1. **Hotel pickup** — free within Ubud (other areas may incur a surcharge)
 2. **Ricefield cycling** — gentle trails through green terraces
@@ -1309,7 +1435,7 @@ Unlike crowded main-road bike rentals, this tour follows quiet village lanes eas
 5. **Balinese carving art** — watch or try local craftsmanship
 6. **See local people life** — village pace, not tourist buses
 7. **Lunch stop** — village restaurant meal included
-8. **Drop back to hotel** — relaxed end to a full cultural day
+8. **Drop back to hotel** — relaxed end to a 2-hour cultural ride
 
 ## What Is Included
 
@@ -1592,7 +1718,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 
 ## Why Cycling Includes Free Pickup
 
-The cycling tour is a full-day village experience starting from Pejeng. Pickup within Ubud is built into the IDR 750,000 price along with lunch. See the [cycling tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026).
+The cycling tour is a 2-hour village experience starting from Pejeng. Pickup within Ubud is built into the IDR 750,000 price along with lunch. See the [cycling tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026).
 
 ## Tumang Cooking Class Pickup
 
@@ -1641,7 +1767,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 | --- | --- | --- | --- | --- |
 | **Price** | IDR 750K+ | IDR 500K | IDR 359K | IDR 750K |
 | **Intensity** | High | Medium–High | Low–Medium | Low |
-| **Duration** | 2–4 hrs | Half day | 2–3 hrs | Full day |
+| **Duration** | 2–4 hrs | Half day | 2–3 hrs | 2 hours |
 | **Environment** | Jungle mud track | River rapids | River float | Rice terraces |
 | **Free Ubud pickup** | No | No | No | Yes |
 | **Tour page** | [ATV](/tours/bali-atv-adventure) | [Rafting](/tours/whitewater-rafting) | [Tubing](/tours/canyon-tubing) | [Cycling](/tours/ubud-ricefield-cycling-tour) |
@@ -1701,17 +1827,15 @@ Operators like ubudcyclingtour.com and multi-day packages on ByFood and Bali Tra
 
 | Time | What you do | Product |
 | --- | --- | --- |
-| Morning | Free hotel pickup (Ubud), bike fitting, safety briefing | [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
-| Mid-morning | Rice paddy / countryside cycling through Pejeng village paths | Cycling |
-| Midday | Rice harvesting (seasonal), Balinese house visit, wood carving stop | Cycling |
-| Afternoon | Lunch included; return to hotel to freshen up | Cycling |
+| Morning (2 hours) | Free hotel pickup (Ubud), bike fitting, Pejeng ricefield ride, village stops, lunch | [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
+| Late morning | Drop back to hotel to freshen up | Cycling |
 | Afternoon class | Tumang kitchen: rice-field walk, Base Genep, 10+ dishes, feast | [Tumang Bali Cooking Class](/tours/balinese-cooking-class) |
 
 Prefer a morning Tumang class with market tour? Book cooking first, then a lighter afternoon ride — ask WhatsApp to flip the order.
 
 ## What’s Included (Each Part)
 
-### Ricefield / countryside cycling (day)
+### Ricefield / countryside cycling (2 hours)
 
 | Include | Details |
 | --- | --- |
@@ -1758,7 +1882,7 @@ Prefer mud and motors instead? Start with [Bali ATV for Ubud](/blog/bali-atv-tou
 3. We confirm timing for ricefield cycling pickup and your Tumang session  
 4. No upfront payment is required to inquire  
 
-Full cycling details: [Ubud Ricefield Cycling Tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026). Operator site: [tumangbaliclass.com](https://tumangbaliclass.com/).
+Cooking-only verdict: [Cooking class Ubud price 2026 — is it worth it?](/blog/cooking-class-ubud-price-2026-worth-it). Full cycling details: [Ubud Ricefield Cycling Tour guide](/blog/ubud-ricefield-cycling-tour-guide-2026). Operator site: [tumangbaliclass.com](https://tumangbaliclass.com/).
 
 **Ready for a full cultural day?** Book [ricefield cycling](/tours/ubud-ricefield-cycling-tour) and [Tumang Bali Cooking Class](/tours/balinese-cooking-class) together via WhatsApp.
 `

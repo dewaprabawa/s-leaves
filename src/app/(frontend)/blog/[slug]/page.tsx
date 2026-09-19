@@ -32,7 +32,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           'Kintamani sunrise jeep',
           'Batur sunrise without hiking',
         ]
-      : undefined
+      : post.slug === 'cooking-class-ubud-price-2026-worth-it'
+        ? [
+            'cooking class Ubud price',
+            'Tumang cooking class',
+            'cooking class Ubud worth it',
+            'Balinese cooking class Ubud',
+          ]
+        : undefined
 
   return {
     title: post.title,

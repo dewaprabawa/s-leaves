@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Camera, Check, Clock } from "lucide-react"
+import { ArrowLeft, Camera, Car, Check, Clock, MapPin } from "lucide-react"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
@@ -50,6 +50,10 @@ function isLuwakTour(tour: Tour) {
   return tour.slug === "luwak-coffee-plantation"
 }
 
+function isAtvTour(tour: Tour) {
+  return tour.slug === "bali-atv-adventure"
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const tour = getTourBySlug(slug)
@@ -58,6 +62,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = tour.seoTitle ?? tour.title
   const description = tour.seoDescription ?? tour.shortDescription
+  // seoTitle is already a complete SERP string (≤60). Absolute avoids
+  // `| Sekar Bali Activity` from the root template truncating price/CTA.
   const keywords = isCookingTour(tour)
     ? [
         "cooking class Ubud",
@@ -90,7 +96,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             "luwak coffee price Bali",
             "Sekar Bali Activity",
           ]
-        : undefined
+        : isAtvTour(tour)
+          ? [
+              "ATV ride Ubud",
+              "ATV Ubud price",
+              "quad bike Ubud",
+              "tandem ATV Ubud",
+              "All New Bali Adventure",
+              "ATV river tubing Ubud",
+              "Sekar Bali Activity",
+            ]
+          : undefined
 
   const ogImage = {
     url: tour.heroImage.url,
@@ -100,7 +116,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title,
+    title: tour.seoTitle ? { absolute: tour.seoTitle } : title,
     description,
     keywords,
     alternates: {
@@ -135,7 +151,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
               "geo.region": "ID-BA",
               "geo.placename": "Tampaksiring, Ubud, Bali",
             }
-          : undefined,
+          : isAtvTour(tour)
+            ? {
+                "geo.region": "ID-BA",
+                "geo.placename": "Sedang, Abiansemal, Ubud, Bali",
+              }
+            : undefined,
   }
 }
 
@@ -191,6 +212,14 @@ function buildTourSchema(tour: Tour) {
             ? "Kintamani, Mount Batur, Bali"
           : tour.area ?? "Ubud, Bali",
     },
+    ...(tour.venue
+      ? {
+          location: {
+            "@type": "Place",
+            name: tour.venue,
+          },
+        }
+      : {}),
     itinerary: tour.itinerary.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -254,6 +283,45 @@ function buildTourSchema(tour: Tour) {
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/book?activity=balinese-cooking-class`,
+          },
+        ],
+      },
+    }
+  }
+
+  if (isAtvTour(tour)) {
+    return {
+      ...base,
+      location: {
+        "@type": "Place",
+        name: tour.venue ?? "All New Bali Adventure, Sedang",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(tour.basePrice),
+        highPrice: String(TIER_PRICES_IDR["tandem-atv"][0]),
+        priceCurrency: "IDR",
+        offerCount: 2,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Single ATV Ride",
+            price: String(tour.basePrice),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "Tandem ATV Ride",
+            price: String(TIER_PRICES_IDR["tandem-atv"][0]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
           },
         ],
       },
@@ -385,6 +453,8 @@ function buildCookingWebPageSchema(tour: Tour) {
     significantLink: [
       `${SITE_URL}/book?activity=balinese-cooking-class`,
       `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,
+      `${SITE_URL}/blog/inside-balinese-cooking-class-pejeng`,
+      `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
       COOKING_GEO_ENTITY.moneyPage,
@@ -499,6 +569,18 @@ export default async function TourPage({ params }: Props) {
                     <Clock className="w-4 h-4 text-brand-green" />
                     {tour.duration}
                   </span>
+                  {tour.pickup ? (
+                    <span className="inline-flex items-center gap-1.5 text-sm text-brand-green-light">
+                      <Car className="w-4 h-4 text-brand-green" />
+                      {tour.pickup}
+                    </span>
+                  ) : null}
+                  {tour.venue ? (
+                    <span className="inline-flex items-center gap-1.5 text-sm text-brand-green-light">
+                      <MapPin className="w-4 h-4 text-brand-green" />
+                      {tour.venue}
+                    </span>
+                  ) : null}
                   {cooking ? (
                     <span className="text-sm font-bold text-brand-green">
                       <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
@@ -510,6 +592,11 @@ export default async function TourPage({ params }: Props) {
                     <span className="text-sm font-bold text-brand-green">
                       From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · solo{" "}
                       {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][0])}
+                    </span>
+                  ) : isAtvTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      From {formatIdr(tour.basePrice)} single · tandem{" "}
+                      {formatIdr(TIER_PRICES_IDR["tandem-atv"][0])}
                     </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">
@@ -666,6 +753,8 @@ export default async function TourPage({ params }: Props) {
               tourSlug={tour.slug}
               title={tour.title}
               duration={tour.duration}
+              pickup={tour.pickup}
+              venue={tour.venue}
               basePrice={tour.basePrice}
               childPrice={tour.childPrice}
               getYourGuideUrl={tour.getYourGuideUrl}

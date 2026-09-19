@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ArrowRight, Clock, ExternalLink, MessageCircle } from "lucide-react"
+import { ArrowRight, Car, Clock, ExternalLink, MapPin, MessageCircle } from "lucide-react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
@@ -20,6 +20,8 @@ export type TourBookingCardProps = {
   tourSlug: string
   title: string
   duration: string
+  pickup?: string
+  venue?: string
   basePrice: number
   childPrice?: number
   getYourGuideUrl?: string
@@ -40,6 +42,15 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       promoPrice: COOKING_CLASS_PRICE_IDR,
       standardPrice: COOKING_CLASS_STANDARD_PRICE_IDR,
       tierLabel: "Shared class promo / person",
+    }
+  }
+  // ATV SERP / FAQ lead with the 1-rider rate. Do not show the 3+ 700K
+  // tier as a "from" promo — it reads as a discount vs IDR 750K.
+  if (tourSlug === "bali-atv-adventure") {
+    return {
+      promoPrice: fallbackBase,
+      standardPrice: fallbackBase,
+      tierLabel: undefined,
     }
   }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
@@ -71,6 +82,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   const isPrivateDayTour =
     props.tourSlug === "full-day-ubud-tour" ||
     props.tourSlug === "half-day-ubud-tanah-lot-tour"
+  const isLuwak = props.tourSlug === "luwak-coffee-plantation"
 
   if (props.activityOptions?.length) {
     return props.activityOptions.map((opt, index) => {
@@ -82,9 +94,10 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         times: isMorning ? ["08:30"] : isPrivate ? ["08:30", "13:30"] : ["13:30"],
         adultPrice: props.basePrice + opt.priceDiff,
         kidPrice: props.childPrice ?? null,
-        minPax: /tandem/i.test(opt.name) ? 2 : 1,
+        minPax: /tandem|2 guests/i.test(opt.name) ? 2 : isLuwak ? 3 : 1,
         getYourGuideUrl: props.getYourGuideUrl,
         freeUbudPickup: props.tourSlug === "balinese-cooking-class",
+        pickupNotOffered: isLuwak,
       }
     })
   }
@@ -96,13 +109,16 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       times:
         props.tourSlug === "balinese-cooking-class"
           ? ["08:30", "13:30"]
-          : DEFAULT_TIMES,
+          : isLuwak
+            ? ["10:00", "14:00"]
+            : DEFAULT_TIMES,
       adultPrice: props.basePrice,
       kidPrice: props.childPrice ?? null,
-      minPax: 1,
+      minPax: isLuwak ? 3 : 1,
       getYourGuideUrl: props.getYourGuideUrl,
       freeUbudPickup: props.tourSlug === "balinese-cooking-class",
       pickupIncluded: isPrivateDayTour,
+      pickupNotOffered: isLuwak,
     },
   ]
 }
@@ -113,8 +129,14 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const primary = configs[0]
   const { promoPrice, standardPrice, tierLabel } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
   const hasPromo = standardPrice > promoPrice
+  const consultationActivity =
+    props.tourSlug === "balinese-cooking-class"
+      ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
+      : props.tourSlug === "bali-atv-adventure"
+        ? `${props.title} — single from ${formatIdr(props.basePrice)}`
+        : props.title
   const consultationUrl = buildWhatsAppConsultationUrl(
-    props.title,
+    consultationActivity,
     `${SITE_URL}/tours/${props.tourSlug}`,
   )
 
@@ -185,6 +207,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             from
             tierLabel={tierLabel}
           />
+          {props.tourSlug === "bali-atv-adventure" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
           {props.childPrice ? (
             <p className="text-sm text-brand-green-light mt-1">
               Child from {formatIdr(props.childPrice)}
@@ -192,9 +219,23 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           ) : null}
         </div>
 
-        <div className="flex items-center gap-2 text-sm text-brand-green-light">
-          <Clock className="w-4 h-4 text-brand-green shrink-0" />
-          <span>{props.duration}</span>
+        <div className="space-y-1.5 text-sm text-brand-green-light">
+          <div className="flex items-center gap-2">
+            <Clock className="w-4 h-4 text-brand-green shrink-0" />
+            <span>{props.duration}</span>
+          </div>
+          {props.pickup ? (
+            <div className="flex items-center gap-2">
+              <Car className="w-4 h-4 text-brand-green shrink-0" />
+              <span>{props.pickup}</span>
+            </div>
+          ) : null}
+          {props.venue ? (
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-brand-green shrink-0" />
+              <span>{props.venue}</span>
+            </div>
+          ) : null}
         </div>
 
         <p className="text-xs text-brand-green-light leading-relaxed">

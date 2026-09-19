@@ -29,6 +29,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/private-atv-vs-mass-market-ubud',
       blurb: 'What “private / small-group” actually means near Ubud.',
     },
+    {
+      title: 'Jungle mud vs cave/tunnel tracks',
+      href: '/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel',
+      blurb: 'Why we are not the Kuber tunnel or Dragon Cave routes.',
+    },
   ],
   'whitewater-rafting': [
     {
@@ -88,6 +93,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'balinese-cooking-class': [
     {
+      title: 'Cooking class Ubud price 2026 — worth it?',
+      href: '/blog/cooking-class-ubud-price-2026-worth-it',
+      blurb: 'IDR 450K promo, pickup, duration, and an honest verdict.',
+    },
+    {
       title: 'Cycling + Tumang cooking itinerary',
       href: '/blog/cycling-cooking-class-ubud-full-day-itinerary',
       blurb: 'Morning paddies, afternoon kitchen.',
@@ -96,6 +106,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Inside a Balinese cooking class',
       href: '/blog/inside-balinese-cooking-class-pejeng',
       blurb: 'What the day feels like with a village chef.',
+    },
+    {
+      title: 'Ubud hotel pickup explained',
+      href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
+      blurb: 'Free Ubud pickup on Tumang cooking — when a surcharge applies.',
     },
     {
       title: 'Base Genep spice paste guide',

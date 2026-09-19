@@ -91,6 +91,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           "Mount Batur jeep vs trek",
           "sunrise jeep Lake Batur",
           "private 4x4 Mount Batur",
+          "Mount Batur jeep pickup time",
+          "Batur jeep breakfast not included",
           "Sekar Bali Activity",
         ]
       : isLuwakTour(tour)
@@ -136,9 +138,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [ogImage],
       type: "website",
       siteName: SITE_NAME,
+      locale: "en_US",
     },
     twitter: {
       card: "summary_large_image",
+      site: "@sekarbaliactivity",
       title,
       description,
       images: [tour.heroImage.url],
@@ -201,9 +205,15 @@ function buildTourSchema(tour: Tour) {
       : jeep
         ? JEEP_GEO_TLDR
         : (tour.seoDescription ?? tour.shortDescription),
-    image: tour.heroImage.url.startsWith("http")
-      ? tour.heroImage.url
-      : `${SITE_URL}${tour.heroImage.url}`,
+    image: {
+      "@type": "ImageObject",
+      url: tour.heroImage.url.startsWith("http")
+        ? tour.heroImage.url
+        : `${SITE_URL}${tour.heroImage.url}`,
+      width: tour.heroImage.width ?? 1200,
+      height: tour.heroImage.height ?? 630,
+      caption: tour.heroImage.alt,
+    },
     url: `${SITE_URL}/tours/${tour.slug}`,
     ...(isoDuration ? { duration: isoDuration } : {}),
     touristType: cooking
@@ -382,50 +392,6 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
-  if (tour.slug === "batur-sunrise-jeep-tour") {
-    const [jeepSolo, jeepTwo, jeepGroup] = TIER_PRICES_IDR["jeep-sunrise"]
-    return {
-      ...base,
-      offers: {
-        "@type": "AggregateOffer",
-        name: tour.title,
-        lowPrice: String(jeepGroup),
-        highPrice: String(jeepSolo),
-        priceCurrency: "IDR",
-        offerCount: 3,
-        availability: "https://schema.org/InStock",
-        url: `${SITE_URL}/tours/${tour.slug}`,
-        description: tour.included.join(", "),
-        offers: [
-          {
-            "@type": "Offer",
-            name: "Solo private jeep",
-            price: String(jeepSolo),
-            priceCurrency: "IDR",
-            availability: "https://schema.org/InStock",
-            url: `${SITE_URL}/tours/${tour.slug}`,
-          },
-          {
-            "@type": "Offer",
-            name: "2 guests sharing a jeep",
-            price: String(jeepTwo),
-            priceCurrency: "IDR",
-            availability: "https://schema.org/InStock",
-            url: `${SITE_URL}/tours/${tour.slug}`,
-          },
-          {
-            "@type": "Offer",
-            name: "3+ guests sharing a jeep",
-            price: String(jeepGroup),
-            priceCurrency: "IDR",
-            availability: "https://schema.org/InStock",
-            url: `${SITE_URL}/tours/${tour.slug}`,
-          },
-        ],
-      },
-    }
-  }
-
   return {
     ...base,
     offers: {
@@ -486,6 +452,9 @@ function buildCookingWebPageSchema(tour: Tour) {
     },
     significantLink: [
       `${SITE_URL}/book?activity=balinese-cooking-class`,
+      `${SITE_URL}/blog/cooking-class-ubud-price-2026-worth-it`,
+      `${SITE_URL}/blog/vegetarian-vegan-cooking-class-ubud`,
+      `${SITE_URL}/blog/morning-vs-afternoon-ubud-cooking-class`,
       `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,
       `${SITE_URL}/blog/inside-balinese-cooking-class-pejeng`,
       `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
@@ -528,8 +497,10 @@ function buildJeepWebPageSchema(tour: Tour) {
       cssSelector: [".jeep-geo-tldr", ".jeep-geo-answer", ".geo-tldr"],
     },
     significantLink: [
+      `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-guide-2026`,
       `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026`,
-      `${SITE_URL}/blog/mount-batur-jeep-vs-trekking`,
+      `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`,
+      `${SITE_URL}/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026`,
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
       `${SITE_URL}/tours/balinese-cooking-class`,

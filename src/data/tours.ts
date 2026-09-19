@@ -102,7 +102,6 @@ export const TOURS: Tour[] = [
     category: "adventure",
     area: "Sedang / Ubud",
     venue: "All New Bali Adventure, Sedang",
-    pickup: "Hotel pickup IDR 400,000 — optional",
     isTopPick: true,
     pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "2–4 Hours",
@@ -280,6 +279,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     slug: "batur-sunrise-jeep-tour",
     category: "adventure",
     area: "Kintamani / Mount Batur",
+    venue: "Crater-rim viewpoint, Mount Batur (~1,350m)",
     pickup: "Island-wide hotel pickup included",
     isTopPick: true,
     duration: "Approx. 6–7 Hours",
@@ -290,6 +290,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
+      width: 1200,
+      height: 630,
     },
     gallery: [
       {
@@ -495,7 +497,6 @@ Warm layer (it is cold on the rim before sunrise), closed shoes, phone/camera, a
     slug: "whitewater-rafting",
     category: "adventure",
     area: "Ayung River / Ubud",
-    pickup: "Hotel pickup IDR 400,000 — optional",
     isTopPick: true,
     pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "3 Hours",
@@ -718,7 +719,6 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     slug: "ubud-ricefield-cycling-tour",
     category: "village",
     area: "Pejeng / Ubud",
-    pickup: "Free Ubud-area hotel pickup",
     isTopPick: true,
     pickup: "Free Ubud-area hotel pickup",
     duration: "2 Hours",
@@ -918,7 +918,6 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     slug: "luwak-coffee-plantation",
     category: "food",
     area: "Tampaksiring / Ubud",
-    pickup: "Transport not included",
     isTopPick: true,
     pickup: "Transport not included",
     duration: "1.5 Hours",
@@ -1045,6 +1044,8 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     heroImage: {
       url: "/images/cooking/satay-class.jpg",
       alt: "Guests preparing sate skewers during Tumang Bali Cooking Class near Ubud",
+      width: 1200,
+      height: 630,
     },
     gallery: [
       {
@@ -1237,7 +1238,6 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
     slug: "full-day-ubud-tour",
     category: "day-tour",
     area: "Ubud & surrounds",
-    pickup: "Private car pickup included",
     isTopPick: true,
     pickup: "Private car hotel pickup",
     duration: "10 Hours",

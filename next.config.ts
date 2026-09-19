@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         destination: '/tours/bali-atv-adventure',
         permanent: true,
       },
+      {
+        source: '/blog/mount-batur-jeep-vs-trekking',
+        destination: '/blog/mount-batur-jeep-vs-sunrise-trek',
+        permanent: true,
+      },
     ]
   },
   images: {

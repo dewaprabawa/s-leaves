@@ -25,18 +25,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const keywords =
     post.slug === 'mount-batur-sunrise-jeep-tour-guide-2026' ||
-    post.slug === 'mount-batur-jeep-vs-sunrise-trek'
+    post.slug === 'mount-batur-jeep-vs-sunrise-trek' ||
+    post.slug === 'mount-batur-jeep-pickup-times-canggu-ubud-2026' ||
+    post.slug === 'mount-batur-sunrise-jeep-tour-price-guide-2026'
       ? [
           'Mount Batur sunrise jeep tour',
           'Mount Batur jeep vs trek',
           'Kintamani sunrise jeep',
           'Batur sunrise without hiking',
+          'Mount Batur jeep pickup time',
         ]
-      : post.slug === 'cooking-class-ubud-price-2026-worth-it'
+      : post.slug === 'cooking-class-ubud-price-2026-worth-it' ||
+          post.slug === 'vegetarian-vegan-cooking-class-ubud' ||
+          post.slug === 'morning-vs-afternoon-ubud-cooking-class'
         ? [
             'cooking class Ubud price',
             'Tumang cooking class',
             'cooking class Ubud worth it',
+            'vegetarian cooking class Ubud',
             'Balinese cooking class Ubud',
           ]
         : undefined
@@ -52,13 +58,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: post.title,
       description: post.excerpt,
       url: `https://www.sekarbaliactivity.com/blog/${post.slug}`,
-      images: [post.image],
+      images: [{ url: post.image, width: 1200, height: 630 }],
       type: 'article',
       publishedTime: post.publishedAt,
       authors: [post.author],
+      locale: 'en_US',
     },
     twitter: {
       card: 'summary_large_image',
+      site: '@sekarbaliactivity',
       title: post.title,
       description: post.excerpt,
       images: [post.image],
@@ -76,7 +84,16 @@ export default async function BlogPostPage({ params }: Props) {
 
   const isBaturJeepPost =
     post.slug === 'mount-batur-sunrise-jeep-tour-guide-2026' ||
-    post.slug === 'mount-batur-jeep-vs-sunrise-trek'
+    post.slug === 'mount-batur-jeep-vs-sunrise-trek' ||
+    post.slug === 'mount-batur-jeep-pickup-times-canggu-ubud-2026' ||
+    post.slug === 'mount-batur-sunrise-jeep-tour-price-guide-2026'
+
+  const isCookingPost =
+    post.slug === 'cooking-class-ubud-price-2026-worth-it' ||
+    post.slug === 'vegetarian-vegan-cooking-class-ubud' ||
+    post.slug === 'morning-vs-afternoon-ubud-cooking-class' ||
+    post.slug === 'inside-balinese-cooking-class-pejeng' ||
+    post.slug === 'cycling-cooking-class-ubud-full-day-itinerary'
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -112,9 +129,19 @@ export default async function BlogPostPage({ params }: Props) {
             url: "https://www.sekarbaliactivity.com/tours/batur-sunrise-jeep-tour",
           },
           keywords:
-            "Mount Batur sunrise jeep, Kintamani, no hike, Lake Batur, Mount Agung, private 4x4",
+            "Mount Batur sunrise jeep, Kintamani, no hike, Lake Batur, Mount Agung, private 4x4, meals not included",
         }
-      : {}),
+      : isCookingPost
+        ? {
+            about: {
+              "@type": "TouristTrip",
+              name: "Tumang Bali Cooking Class near Ubud",
+              url: "https://www.sekarbaliactivity.com/tours/balinese-cooking-class",
+            },
+            keywords:
+              "cooking class Ubud, Tumang Bali Cooking Class, vegetarian cooking class, market tour, free Ubud pickup",
+          }
+        : {}),
   }
 
   const breadcrumbSchema = {

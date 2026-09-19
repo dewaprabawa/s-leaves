@@ -75,7 +75,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
     changeFrequency: 'monthly',
     // Flagship food money page gets the same priority tier as /book
-    priority: tour.slug === 'balinese-cooking-class' ? 0.95 : 0.85,
+    priority:
+      tour.slug === 'balinese-cooking-class' || tour.slug === 'batur-sunrise-jeep-tour'
+        ? 0.95
+        : 0.85,
   }))
 
   const geoPages: MetadataRoute.Sitemap = [

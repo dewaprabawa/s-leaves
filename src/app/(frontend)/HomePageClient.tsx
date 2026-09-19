@@ -215,6 +215,11 @@ const travelGuides = [
     excerpt: "Private 4×4 crater-rim viewpoint vs the 2-hour summit hike — who should skip the trek.",
     href: "/blog/mount-batur-jeep-vs-sunrise-trek",
   },
+  {
+    title: "Cooking Class Ubud Price 2026",
+    excerpt: "Is Tumang worth IDR 450K? Max 8, free Ubud pickup, vegetarian on request.",
+    href: "/blog/cooking-class-ubud-price-2026-worth-it",
+  },
 ] as const
 
 function toTourConfig(adv: AdventureCatalogItem): TourConfig {

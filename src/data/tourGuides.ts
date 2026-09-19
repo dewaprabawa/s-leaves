@@ -98,6 +98,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'IDR 450K promo, pickup, duration, and an honest verdict.',
     },
     {
+      title: 'Vegetarian / vegan Tumang menu',
+      href: '/blog/vegetarian-vegan-cooking-class-ubud',
+      blurb: 'Full plant-based menu if you request it at booking.',
+    },
+    {
+      title: 'Morning vs afternoon class',
+      href: '/blog/morning-vs-afternoon-ubud-cooking-class',
+      blurb: 'Market tour AM vs kitchen PM — same promo IDR.',
+    },
+    {
       title: 'Cycling + Tumang cooking itinerary',
       href: '/blog/cycling-cooking-class-ubud-full-day-itinerary',
       blurb: 'Morning paddies, afternoon kitchen.',
@@ -159,9 +169,19 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Solo, pair, and group IDR tiers plus pickup — meals not included.',
     },
     {
-      title: 'Jeep vs trekking to Mount Batur',
-      href: '/blog/mount-batur-jeep-vs-trekking',
-      blurb: 'Why most travelers skip the 2am hike for a 4\u00d7 4.',
+      title: 'Jeep vs sunrise trek',
+      href: '/blog/mount-batur-jeep-vs-sunrise-trek',
+      blurb: 'Crater-rim 4×4 vs the 2-hour summit walk — meals not included.',
+    },
+    {
+      title: 'Pickup times from Canggu, Seminyak & Ubud',
+      href: '/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026',
+      blurb: 'Island-wide 02:00–03:00 clock — south Bali earliest.',
+    },
+    {
+      title: 'Mount Batur sunrise jeep guide 2026',
+      href: '/blog/mount-batur-sunrise-jeep-tour-guide-2026',
+      blurb: 'Hour-by-hour itinerary and what to bring (no meals on the jeep).',
     },
     {
       title: 'Ubud hotel pickup explained',

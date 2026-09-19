@@ -280,6 +280,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     slug: "batur-sunrise-jeep-tour",
     category: "adventure",
     area: "Kintamani / Mount Batur",
+    venue: "Crater-rim viewpoint, Mount Batur (~1,350m)",
     pickup: "Island-wide hotel pickup included",
     isTopPick: true,
     duration: "Approx. 6–7 Hours",
@@ -290,6 +291,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
+      width: 1200,
+      height: 630,
     },
     gallery: [
       {
@@ -1045,6 +1048,8 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
     heroImage: {
       url: "/images/cooking/satay-class.jpg",
       alt: "Guests preparing sate skewers during Tumang Bali Cooking Class near Ubud",
+      width: 1200,
+      height: 630,
     },
     gallery: [
       {

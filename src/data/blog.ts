@@ -10,291 +10,105 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    slug: 'cooking-class-ubud-price-2026-worth-it',
-    title: 'Cooking Class Ubud Price 2026: Is It Worth It?',
+    slug: 'bali-atv-for-beginners-first-time-guide',
+    title: 'Bali ATV for Beginners (2026)',
     excerpt:
-      'Tumang cooking class Ubud price 2026: promo IDR 450,000 (was 506,370), free Ubud pickup, 3–4 hours, max 8 guests. Honest worth-it verdict + WhatsApp booking.',
-    publishedAt: '2026-09-14',
-    author: 'Sekar Bali Activity',
-    image: '/images/cooking/satay-class.jpg',
-    content: `
-**Is a cooking class in Ubud worth it in 2026?** Yes — if you want a **hands-on village kitchen**, not a hotel demo. We book **[Tumang Bali Cooking Class](/tours/balinese-cooking-class)** in Tumang village near Ubud: shared promo **IDR 450,000** / person (was IDR 506,370), **3–4 hours**, **max 8 guests**, complimentary **Ubud-area hotel pickup**. Private kitchen is **IDR 633,090** (1 guest) or **IDR 1,266,180** (2 guests total). Ask questions on **WhatsApp Consultation** or tap **Book** — no payment to inquire.
-
-> **Key Takeaways**
-> - **How much:** shared promo **IDR 450,000** / person (was IDR 506,370)
-> - **Where:** Tumang village kitchen near Ubud with Chef Wayan Sudiana
-> - **Pickup:** free for Ubud-area hotels; outside Ubud — confirm on WhatsApp
-> - **Duration:** 3–4 hours · morning includes the pasar; afternoon is kitchen + rice-field walk
-> - **Who for:** couples, families, and food-curious guests who want to cook 10+ dishes
-> - **How to book:** [WhatsApp Consultation / Book](/tours/balinese-cooking-class) — no deposit to inquire
-
----
-
-## Quick answer: price, place, pickup, time
-
-| Question | Our 2026 answer |
-| --- | --- |
-| How much? | Shared **IDR 450,000** promo / person (was **IDR 506,370**). Private **IDR 633,090** (1) or **IDR 1,266,180** (2 total). |
-| Where? | Family kitchen in **Tumang village**, a short drive from central Ubud. |
-| Pickup? | **Free Ubud-area hotel pickup** on shared and private sessions. |
-| How long? | **3–4 hours** including the meal you cook. |
-| Who is it for? | Guests who want to **cook**, not watch. Shared class capped at **8**. Vegetarian / vegan if you request it when you book. |
-| How to book? | Open the [cooking class page](/tours/balinese-cooking-class), tap **WhatsApp Consultation** or **Book**, send name, date, hotel, and guest count. |
-
-That first screen is what most travelers actually need. The rest of this page is the honest “worth it?” math we give guests on WhatsApp.
-
-## What you get for IDR 450,000
-
-The shared promo is **not** a lecture with a tasting plate. Each guest works a station. You pound **Base Genep** on a stone mortar, shape **sate lilit**, make **sambal matah**, cook **pepes** and **lawar**, and sit down to the meal you prepared.
-
-Included on the shared class we sell:
-
-- Hands-on cooking of **10+ Balinese dishes** with Chef **Wayan Sudiana** (English)
-- **Morning market tour** on the AM session only
-- Guided **rice-field walk**
-- All ingredients and equipment
-- The meal you cook
-- Complimentary **hotel pickup in the Ubud area**
-- Small group — **max 8** on shared classes
-
-Not included: pickup **outside** the Ubud area (ask WhatsApp for a transfer quote — we do not publish a flat out-of-Ubud cooking transfer here), personal extras, and the optional private-kitchen surcharge.
-
-A walkthrough of the stations: [Inside Tumang Bali Cooking Class](/blog/inside-balinese-cooking-class-pejeng).
-
-## Is IDR 450,000 worth it vs a cheaper class?
-
-**Yes, if the alternative is a 20-person hotel demo or a “watch the chef, then eat” lunch.** Those look cheaper on a booking site and feel expensive once you realize you never cooked.
-
-**Maybe not, if you only want to eat Balinese food.** A warung meal costs far less. Pay for class when you want the skill, the market smells, and a small group — not when you only want lunch.
-
-Here is the comparison we use with guests:
-
-| | **Tumang via Sekar Bali** | **Typical hotel / big-bus class** |
-| --- | --- | --- |
-| Price we publish | **IDR 450,000** promo / person (was 506,370) | Often listed in USD; extras appear later |
-| Group size | **Max 8** shared | Often 12–25 |
-| You cook | Your own station — 10+ dishes | Demo + limited hands-on |
-| Pickup | **Free in the Ubud area** | Sometimes extra or meeting-point only |
-| Market tour | **Morning shared class** | Rare, or a rushed photo stop |
-| Booking | WhatsApp **Consultation** or **Book** — no payment to inquire | Deposit / OTA checkout |
-
-We list Tumang because we already handle cycling, ATV, and jeep on the same WhatsApp thread. You get one operator, clear IDR, and a kitchen that TripAdvisor marked **Traveler’s Choice 2026** (5.0 from 1,500+ reviews on the Tumang listing). Full money page: [Tumang Bali Cooking Class near Ubud](/tours/balinese-cooking-class).
-
-## Shared vs private: when the extra IDR is worth it
-
-| Option | Price (verified) | Choose this when |
-| --- | --- | --- |
-| Shared morning (market) | **IDR 450,000** / person | You want the pasar + kitchen and are happy in a max-8 group |
-| Shared afternoon | **IDR 450,000** / person | You already rode [Pejeng ricefields](/tours/ubud-ricefield-cycling-tour) that morning |
-| Private (1 guest) | **IDR 633,090** | Solo traveler who wants the kitchen to themselves |
-| Private (2 guests) | **IDR 1,266,180** total | Couple who want a private class without a shared table |
-
-Private is worth it when the date is a birthday, proposal, or you simply do not want other guests at the stations. Shared is worth it when you like a small-group energy and want the promo rate.
-
-## Morning market vs afternoon kitchen
-
-**Morning is worth it if you have not been to a Balinese pasar.** You walk the market with the host, handle galangal, turmeric, lemongrass, and chilies, then cook what you shopped.
-
-**Afternoon is worth it if you want a culture combo day.** We drop you from [Ubud ricefield cycling](/tours/ubud-ricefield-cycling-tour) (from **IDR 750,000** / person — free Ubud pickup and lunch on that tour) back to the hotel, you freshen up, then we collect you for the Tumang kitchen. Same-day seats are **not** a published bundle discount — we confirm both products on WhatsApp. Timeline: [Cycling + Tumang cooking day](/blog/cycling-cooking-class-ubud-full-day-itinerary).
-
-## Who this class is for (and who should skip it)
-
-**Worth it for**
-
-- Couples and families who want a **village morning or afternoon**, not another temple queue
-- Travelers searching **cooking class Ubud price** who want IDR, pickup, and group size in one place
-- Guests who eat vegetarian or vegan — request the full veg menu when you message us, not as a side plate at the table
-- Anyone who wants **free Ubud pickup** so they are not hunting a meeting point
-
-**Skip it if**
-
-- You only want a restaurant lunch
-- You refuse any spice (we can adjust heat; we cannot make Balinese food bland)
-- You need pickup from Canggu, Seminyak, or further south and have not asked us for a transfer quote yet
-- You want a hotel rooftop “class” with a cocktail — that is a different product
-
-## Honest cons (so the “yes” means something)
-
-- **Afternoon skips the market.** If the pasar is the reason you searched, book the morning session.
-- **It is a working village kitchen**, not a resort studio. You will stand, stir, and get turmeric on your hands.
-- **Out-of-Ubud pickup is not a published IDR.** Confirm on WhatsApp before you assume it is free.
-- **Private rates are higher** because you rent the kitchen, not because we hide a shared-class fee.
-
-If those tradeoffs are fine, the promo shared rate is one of the clearer cooking-class Ubud prices we can stand behind in 2026.
-
-## How to book on WhatsApp (Consultation or Book)
-
-1. Open [Tumang Bali Cooking Class](/tours/balinese-cooking-class)  
-2. Tap **WhatsApp Consultation** if you still have questions (date, kids, vegan, Canggu pickup)  
-3. Tap **Book** when you already know the date — or start from [/book](/book)  
-4. Send **name, guest count, hotel, date, morning or afternoon**  
-5. We confirm the IDR tier and pickup — **no payment to inquire**
-
-You can also message [+62 817 7572 3663](https://wa.me/6281775723663) directly.
-
-**Ready to cook?** [Book the Tumang cooking class](/tours/balinese-cooking-class), ask a **WhatsApp Consultation**, or send the date on [Book](/book).
-`
-  },
-  {
-    slug: 'mount-batur-sunrise-jeep-tour-guide-2026',
-    title: 'Mount Batur Sunrise Jeep Tour Guide 2026',
-    excerpt:
-      'Private 4×4 to the Mount Batur crater rim near Kintamani — no hike. Solo IDR 1,350,000 · 3+ from IDR 750,000. Hotel pickup, hot drink, breakfast on top.',
+      'First-time Bali ATV at All New Bali Adventure near Ubud from IDR 750,000 — no experience needed, optional pickup or self-meet.',
     publishedAt: '2026-09-09',
     author: 'Sekar Bali Activity',
-    image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/adventures/atv-adventure.jpg',
     content: `
-**What is the Mount Batur Sunrise Jeep Tour?** Sekar Bali Activity’s **private 4×4 jeep** drives volcanic tracks to a **crater-rim viewpoint near Kintamani** (~1,350m) so you watch sunrise over **Lake Batur** and **Mount Agung** **without the 2-hour summit trek**. A local driver, hot drink en route, breakfast served on top of the jeep, and **hotel pickup** are included. **Solo IDR 1,350,000** · **2 guests IDR 825,000 each** · **3+ guests IDR 750,000 each**.
+**Can beginners ride a Bali ATV without experience?** Yes. Sekar Bali Activity runs beginner-friendly quad bike rides at **All New Bali Adventure** in Sedang, Abiansemal, near Ubud. A Single ATV starts at **IDR 750,000** (1 pax; lower tiers for 2+ and 3+) and a Tandem ATV starts at **IDR 1,100,000** (2 pax sharing one bike). Every ride includes an English-speaking safety briefing, boot shoes, helmet, a simple lunch, and insurance for ages 6–65. You do not need a riding licence or prior ATV experience.
 
 > **Key Takeaways**
-> - **No hiking** — you stay in the 4×4 on Mount Batur’s volcanic tracks
-> - Viewpoint is the **eastern-flank crater rim**, not the summit trail
-> - **Hotel pickup included** (Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua)
-> - Breakfast + hot drink served **on top of the jeep** after sunrise
-> - Optional **Kintamani coffee plantation** stop on the way back
-> - Book on WhatsApp — **no upfront payment** to inquire
+> - First-timers are the usual guest — the briefing covers throttle, brake, and trail etiquette before you start
+> - Single ATV from IDR 750,000 · Tandem ATV from IDR 1,100,000 at All New Bali Adventure near Ubud
+> - Included: boot shoes, helmet, lunch, insurance (ages 6–65), trail guide (2–4 hours)
+> - Pickup is an optional booking checkbox (IDR 400,000); unchecked means meet at the arena
 
 ---
 
-## 2026 Price Table (Private Jeep)
+## Do you need ATV experience for a first ride in Bali?
 
-| Guests sharing one jeep | Price per person (IDR) | What’s included |
-| --- | --- | --- |
-| 1 (solo) | 1,350,000 | Private 4×4, driver, hotel pickup, hot drink, breakfast, entrance fee, insurance (ages 6–65) |
-| 2 | 825,000 | Same inclusions — you split the jeep |
-| 3+ | 750,000 | Same inclusions — lowest per-person rate |
+No. Most guests on the [Bali ATV Adventure](/tours/bali-atv-adventure) have never sat on a quad bike. Guides start on flat ground at All New Bali Adventure, show you how the machine starts and stops, then lead the group onto jungle paths, muddy stretches, and shallow river crossings. The pace follows the least experienced rider, not the most confident one.
 
-A private jeep costs the same to run whether one or three people ride, so the per-person rate drops as you add guests. Pickup is **not** the IDR 400,000 ATV/rafting add-on — it is built into the jeep package. Full booking page: [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour).
+If you can sit upright and follow a guide, you can do this ride. The arena is a dedicated off-road track — not a public road — so you are not mixing with Bali scooter traffic. That is the main reason first-timers feel safer here than on a rented motorbike.
 
-## How the Morning Works (6–7 Hours)
+Worried about speed? You control the throttle after the briefing. Guides keep the group together and stop at photo spots and river crossings. If you want a passenger seat instead of the controls, book Tandem.
 
-| Time | What happens |
-| --- | --- |
-| 02:00–03:00 | Hotel pickup (south Bali earliest; Ubud a little later) |
-| ~04:00 | Transfer into the 4×4 at Kintamani base camp; hot drink on the way up |
-| ~05:45 | Arrive at the crater-rim viewpoint (~1,350m) |
-| ~06:00 | Sunrise over Lake Batur and Mount Agung; breakfast on top of the jeep |
-| ~06:45 | Drive back down the volcanic tracks |
-| ~08:00 | Optional coffee plantation stop (no obligation to buy) |
-| ~09:30 | Drop-off at your hotel |
+## Single ATV vs Tandem ATV for first-timers
 
-Exact pickup depends on traffic and your area — we confirm it on WhatsApp after you send the date and hotel.
+| Option | Price | Riders | Why beginners pick it |
+| --- | --- | --- | --- |
+| Single ATV | From IDR 750,000 | 1 pax | You steer after the briefing |
+| Single ATV (2 riders) | IDR 725,000 each | 2 singles | Same inclusions · group tier |
+| Single ATV (3+) | IDR 700,000 each | 3+ | Same inclusions · group tier |
+| Tandem ATV | From IDR 1,100,000 | 2 pax | One person drives; one rides as passenger |
 
-## Mount Batur Sunrise Jeep from Ubud (and South Bali)
+Choose **Single** if you want the full sensation of steering yourself through mud and jungle. Choose **Tandem** if you are a couple, or if one guest prefers not to drive. Child Single ATV is **IDR 700,000** where age-appropriate — send ages on WhatsApp so the team assigns Adult or Child correctly.
 
-**Can you do a Mount Batur sunrise jeep from Ubud?** Yes. Hotel pickup is **included** on this tour — not the IDR 400,000 ATV/rafting add-on. Ubud guests typically leave a little later than south Bali. From Canggu, Seminyak, Sanur, Kuta, or Nusa Dua we collect you earlier (often closer to 02:00 AM) so the 4×4 still reaches the crater-rim viewpoint before first light.
+Need the full 2026 price list? See [Bali adventure packages and prices](/blog/bali-adventure-packages-prices-2026). Still choosing between land and water? Read [rafting vs tubing vs ATV near Ubud](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-You do not drive your hotel car up the volcanic tracks. We transfer you to Kintamani base camp, then you switch into the private jeep with a local driver.
+## What happens at All New Bali Adventure
 
-## What Is Included (and What Is Not)
+All Sekar Bali Activity ATV rides start at **All New Bali Adventure** — the jungle ATV arena on **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**, near Ubud. This is where you meet your guide, get fitted with boot shoes and a helmet, and hear the safety briefing before the track. It is not a roadside rental stand, and it is not the corporate office pin in Banjar Kenderan.
 
-Included: private 4×4 + driver, hotel pickup and drop-off, hot drink on the way up, breakfast served on top of the jeep, Kintamani / Mount Batur area entrance fee, and insurance for ages 6–65. The optional coffee plantation stop is a short visit — purchases are extra.
+A typical first-timer sequence:
 
-Not included: summit hiking (this tour does not hike), coffee souvenirs, and gratuities.
+1. Arrive at All New Bali Adventure (hotel pickup or self-meet)
+2. Gear fitting — boot shoes and helmet sized to you
+3. Safety briefing — English-speaking guide, no experience assumed
+4. Guided trail — jungle paths, mud, and river crossings
+5. Optional [canyon tubing](/tours/canyon-tubing) on the Wos River after the ATV session
+6. Simple menu lunch and time to change into dry clothes
 
-## How Cold Is the Crater Rim?
+Package duration on the tour page is **2–4 hours**. Arrival details and what the base looks like: [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide).
 
-Before sunrise at ~1,350m it is **cold enough for a jacket** even in dry-season Bali. Bring a warm layer you can peel off after the sun is up, plus closed shoes. You stay seated in the jeep on the way up; once parked you can stand at the viewpoint for photos.
+## What is included in the beginner ATV price
 
-## Do You Hike Mount Batur?
+Your package price covers the guided ATV ride (single or tandem), boot shoes and helmet, a simple menu lunch, insurance for guests aged 6–65, and the safety briefing with a trail guide.
 
-**No.** This is a **jeep sunrise**, not the classic Batur **summit trek**. You sit in a 4×4 on dirt and lava-rock tracks to a rim viewpoint. If you want a 2-hour dark hike to the summit, book a trek operator instead. Honest comparison: [Mount Batur jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
+Not included:
 
-## Who This Tour Is For
+- Hotel pickup (optional add-on — see below)
+- River tubing combo (ask when you book; combo pricing is confirmed on WhatsApp)
+- Personal expenses and gratuities
 
-- Couples and families who want the caldera sunrise **without hiking**
-- Guests staying in **Ubud or south Bali** who need pickup handled
-- Anyone who prefers a **private jeep** over a packed shared minibus
-- Photographers who want time on the rim with breakfast, not a rushed descent
+You do **not** pay upfront to inquire. Open the booking form on [sekarbaliactivity.com](https://www.sekarbaliactivity.com) or message WhatsApp **+62 817 7572 3663** with your name, age, adult or child, date, and activity.
 
-Skip it if summit walking is the point of your morning.
+## Hotel pickup or meet at the arena?
 
-## What to Bring
+On the booking form, hotel pickup is an **optional checkbox** labelled “I need hotel pickup.”
 
-Warm layer (it is cold before sunrise), closed shoes, camera, and a little cash for optional coffee-plantation souvenirs. Breakfast and a hot drink are included.
+- **Leave it unchecked** if you will self-meet. Go to All New Bali Adventure on Jl. Raya Krasan, Sedang, Abiansemal. Open the [meeting point map](https://www.google.com/maps/search/?api=1&query=Jl.+Raya+Krasan+Sedang+Abiansemal+Badung+Bali+80352). There is no pickup surcharge when you meet at the arena.
+- **Check the box** to add hotel pickup for **IDR 400,000**.
+- **Free Ubud pickup** is only on the [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) (IDR 750,000 with lunch) and Tumang Bali Cooking Class — not on ATV, [whitewater rafting](/tours/whitewater-rafting), or tubing.
 
-## Optional Coffee Stop vs Ubud Tasting
+If you stay in central Ubud and have a driver or scooter, self-meet is often simpler. If you stay farther out or do not want to navigate Sedang lanes, tick the pickup box and the surcharge is added in the WhatsApp message. Full policy: [Ubud hotel pickup for Bali adventures](/blog/ubud-hotel-pickup-bali-adventures-explained).
 
-The Kintamani plantation stop is a **short add-on on the way back**. For a dedicated ethical tasting near Ubud, book [Luwak Coffee Plantation at Umah Kuno](/tours/luwak-coffee-plantation) on a different day.
+## What first-time riders should bring
 
-## How to Book on WhatsApp
+Trails get muddy. Pack changing clothes or a dry cloth, sunscreen, and some cash for extras. A waterproof phone case is optional but useful at river crossings. Towels and changing facilities are at the base — you do not need to bring your own towel.
 
-1. Open the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) page  
-2. Tap **Book**, send name, guest count, hotel, and date  
-3. We confirm the per-person tier and pickup time — **no payment to inquire**
+Closed-toe shoes are replaced by the boot shoes provided at the arena, so you can arrive in sandals if you prefer and change on site. Leave jewellery and loose bags in a dry bag or at the hotel.
 
-Compare other IDR packages: [Bali adventure prices 2026](/blog/bali-adventure-packages-prices-2026). After you are back from Kintamani, many guests book [ATV at All New Bali Adventure](/tours/bali-atv-adventure) or [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) later the same trip.
+Step-by-step message format: [How to book a Bali adventure on WhatsApp](/blog/how-to-book-bali-adventure-whatsapp).
 
-**Ready for a no-hike Batur sunrise?** [Book the Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour).
-`
-  },
-  {
-    slug: 'mount-batur-jeep-vs-sunrise-trek',
-    title: 'Mount Batur Jeep vs Sunrise Trek',
-    excerpt:
-      'Jeep 4×4 to a crater-rim viewpoint vs the 2-hour Batur summit hike. Prices, fitness, views, and who should skip the trek.',
-    publishedAt: '2026-09-09',
-    author: 'Sekar Bali Activity',
-    image: 'https://images.unsplash.com/photo-1693821876313-dc573a92028c?auto=format&fit=crop&w=1200&q=80',
-    content: `
-**Should you do a Mount Batur sunrise jeep or the summit trek?** Choose the **jeep** if you want sunrise over **Lake Batur** and **Mount Agung** **without hiking**. Sekar Bali Activity’s private 4×4 drives volcanic tracks to a **crater-rim viewpoint** (~1,350m) near Kintamani. Choose a **trek** if walking the dark lava trail to the **summit** is the goal. They are different products — the jeep is not a shortcut to the same summit pin.
+## After the track: tubing, rafting, or a slower day
 
-> **Key Takeaways**
-> - **Jeep:** sit in a private 4×4 · no 2-hour hike · breakfast on top of the jeep
-> - **Trek:** ~2 hours up in the dark · summit trail · higher fitness
-> - Jeep prices (2026): **IDR 1,350,000 solo** · **IDR 825,000** (2 pax) · **IDR 750,000** (3+)
-> - **Hotel pickup included** on our jeep tour
-> - Book the jeep: [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour)
+Many first-timers add [canyon tubing](/tours/canyon-tubing) on the Wos River after the ATV session — land then water. Ask WhatsApp for combo availability rather than guessing a bundled price. The combo flow is in [ATV + River Tubing](/blog/atv-river-tubing-wos-river-bali).
 
----
+Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) near Ubud is IDR 500,000 on Class II–III rapids with gear, guide, and lunch. Want culture instead of motors? The [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) is IDR 750,000 with lunch and free Ubud pickup.
 
-## Side-by-Side Comparison
+## How to book your first Bali ATV
 
-| | **Sunrise jeep (Sekar Bali)** | **Classic Batur sunrise trek** |
-| --- | --- | --- |
-| How you go up | Private 4×4 on volcanic tracks | Walk ~2 hours in the dark |
-| Where you watch sunrise | Eastern-flank crater-rim viewpoint (~1,350m) | Summit trail (different route) |
-| Fitness | None beyond sitting in a jeep | Moderate–hard hiking |
-| Start | Hotel pickup ~02:00–03:00 | Usually similar pre-dawn start |
-| Food | Hot drink + breakfast **on the jeep** | Often a simple trek breakfast |
-| Best for | Families, couples, non-hikers | Fit hikers who want the summit |
-| Honest limit | Not the summit | Steeper, darker, more effort |
+1. Open [Bali ATV Adventure](/tours/bali-atv-adventure)
+2. Choose Single or Tandem, then tap Book
+3. Leave “I need hotel pickup” unchecked to self-meet, or check it for IDR 400,000 pickup
+4. Send name, age, adult/child, date, and guest count on WhatsApp
+5. We confirm the tier rate — **no payment to inquire**
 
-## Why Travelers Search “Batur Jeep vs Trek”
-
-Most “Mount Batur sunrise” results push the **hike**. A large share of Ubud and south-Bali guests then ask: *can I see the caldera sunrise if I cannot (or will not) hike?* The truthful answer is **yes, by jeep** — if you accept a **rim viewpoint**, not the summit.
-
-## Price: What the Jeep Includes
-
-With Sekar Bali Activity the jeep is private:
-
-- 1 guest: **IDR 1,350,000**
-- 2 guests: **IDR 825,000** each
-- 3+ guests: **IDR 750,000** each
-
-Included: 4×4, local driver, hotel pickup & drop-off, hot drink, breakfast on top, Kintamani / Batur area entrance fee, insurance for ages 6–65. Optional coffee plantation stop on the way back (no purchase required).
-
-Trek prices vary widely by group size and whether a guide, headlamp, and pickup are extras. Compare inclusions before you assume “cheaper hike.”
-
-## Pickup From Ubud vs South Bali
-
-Our jeep **includes hotel pickup island-wide**. South Bali (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leaves earliest; Ubud is a little later. Confirm the exact time on WhatsApp. That is different from ATV/rafting, which add **IDR 400,000** for hotel pickup — see [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
-
-## Who Should Book the Jeep
-
-Book the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) if you want:
-
-- Sunrise photographs of the lake and Agung **without scrambling rock**
-- A **private** vehicle, not a packed shared van
-- Breakfast while you stay on the viewpoint
-
-Do **not** book the jeep if your checklist says “stand on the Mount Batur summit.” We will not pretend the 4×4 replaces that hike.
-
-## After Sunrise
-
-Many guests sleep, then book a quieter Ubud activity later: [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) or [Tumang Bali Cooking Class](/tours/balinese-cooking-class). Full jeep timing: [Batur sunrise jeep guide 2026](/blog/mount-batur-sunrise-jeep-tour-guide-2026).
-
-**Want the no-hike option?** [Book the Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) on WhatsApp.
+**Book now** — [Bali ATV Adventure at All New Bali Adventure](/tours/bali-atv-adventure).
 `
   },
   {
@@ -341,7 +155,7 @@ At **All New Bali Adventure** (our activity base on Jl. Raya Krasan, Sedang, Abi
 4. Simple menu lunch after the ride  
 5. Insurance on the included package  
 
-You do **not** need prior ATV experience. See the [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide) for directions and self-meet tips.
+You do **not** need prior ATV experience. First ride? Read the [Bali ATV for beginners guide](/blog/bali-atv-for-beginners-first-time-guide). See the [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide) for directions and self-meet tips.
 
 ## Hidden Costs to Watch (Industry-Wide)
 
@@ -479,7 +293,7 @@ Travelers typing **private ATV Ubud**, **beginner ATV Ubud**, or **Bali quad bik
 2. Proof lunch and gear are included  
 3. A human reply before paying  
 
-Our answers live on the [ATV Ubud guide](/blog/bali-atv-tour-ubud-guide), [price breakdown](/blog/how-much-does-atv-cost-bali-ubud-2026), and [arena directions](/blog/bali-atv-all-new-bali-adventure-location-guide).
+Our answers live on the [ATV Ubud guide](/blog/bali-atv-tour-ubud-guide), [beginner first-ride guide](/blog/bali-atv-for-beginners-first-time-guide), [price breakdown](/blog/how-much-does-atv-cost-bali-ubud-2026), and [arena directions](/blog/bali-atv-all-new-bali-adventure-location-guide).
 
 ## Don’t Confuse Corporate Pin With the Track
 
@@ -528,7 +342,7 @@ Prices match our live [Bali ATV Adventure](/tours/bali-atv-adventure) page. Conf
 
 ## Why Pejeng / Ubud for ATV?
 
-Sedang (Abiansemal, Badung) sits southwest of central Ubud, so transfer times stay practical and the trails reach jungle paths, muddy tracks, and river crossings without a long haul north. Riders get a full safety briefing — **no prior ATV experience is required**. Our Google Business / corporate pin is in Banjar Kenderan; the ATV meet point is the activity base at **Jl. Raya Krasan, Sedang** (All New Bali Adventure), not the office pin.
+Sedang (Abiansemal, Badung) sits southwest of central Ubud, so transfer times stay practical and the trails reach jungle paths, muddy tracks, and river crossings without a long haul north. Riders get a full safety briefing — **no prior ATV experience is required**. First ride? Read the [Bali ATV for beginners guide](/blog/bali-atv-for-beginners-first-time-guide). Our Google Business / corporate pin is in Banjar Kenderan; the ATV meet point is the activity base at **Jl. Raya Krasan, Sedang** (All New Bali Adventure), not the office pin.
 
 ## What Is Included
 
@@ -598,7 +412,7 @@ Solo ATV is pure off-road adrenaline. Adding river tubing cools you down and add
 
 ## Who It Is For
 
-Beginners, couples, and small groups. Children can join when age-appropriate — tell us ages when booking so we assign Adult or Child rates correctly.
+Beginners, couples, and small groups. Children can join when age-appropriate — tell us ages when booking so we assign Adult or Child rates correctly. Never ridden a quad? Start with the [Bali ATV for beginners guide](/blog/bali-atv-for-beginners-first-time-guide).
 
 ## Book the Combo
 
@@ -1658,6 +1472,8 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
 All New Bali Adventure is the jungle ATV arena where Sekar Bali Activity runs all quad bike tours. This is not a roadside rental — it is a purpose-built off-road track through jungle paths, muddy stretches, and river crossings with professional guides and on-site gear fitting.
 
 ## What Happens When You Arrive
+
+No riding experience is required — the first-timer flow is in the [Bali ATV for beginners guide](/blog/bali-atv-for-beginners-first-time-guide).
 
 1. **Meet your guide** at the All New Bali Adventure base
 2. **Gear fitting** — boot shoes and helmet sized for you

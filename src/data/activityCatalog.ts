@@ -50,7 +50,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "culture",
     label: TOUR_CATEGORY_LABELS.culture,
-    blurb: "Private Tirta Empu melukat from IDR 1.2M · shuttle + guide",
+    blurb: "Private Tirta Empul or Beji melukat from IDR 1.2M · shuttle + breakfast",
     href: "/#culture",
   },
 ]

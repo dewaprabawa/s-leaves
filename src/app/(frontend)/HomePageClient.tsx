@@ -111,7 +111,7 @@ const CATEGORY_SECTION_META: {
     eyebrow: "Holy water",
     title: "Culture & heritage",
     subtitle:
-      "Private Tirta Empu (Tirta Empul) melukat near Ubud — shuttle and guide included from IDR 1,200,000 per person.",
+      "Private Tirta Empul or Pura Beji melukat near Ubud — shuttle, guide, and breakfast included from IDR 1,200,000 per person.",
   },
 ]
 
@@ -137,7 +137,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Tirta Empu Purification (Melukat)",
     bookHref: "/book?activity=tirta-empu-purification",
-    pax: "Private · shuttle + guide included · Ubud-area pickup",
+    pax: "Private · Tirta Empul or Beji · shuttle + breakfast included",
     price: MELUKAT_PRICE_IDR,
     highlight: true,
   },
@@ -219,7 +219,7 @@ const travelGuides = [
   },
   {
     title: "Tirta Empu Melukat near Ubud",
-    excerpt: "Private holy-spring purification — IDR 1,200,000 / person with shuttle and guide.",
+    excerpt: "Private holy-spring purification — Tirta Empul or Beji, breakfast included, IDR 1,200,000 / person.",
     href: "/blog/tirta-empu-melukat-ubud-guide",
   },
   {

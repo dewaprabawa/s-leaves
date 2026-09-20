@@ -162,7 +162,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Tirta Empu melukat near Ubud',
       href: '/blog/tirta-empu-melukat-ubud-guide',
-      blurb: 'What the private ritual includes, dress code, and IDR 1.2M price.',
+      blurb: 'Tirta Empul or Pura Beji, breakfast included, and IDR 1.2M price.',
     },
     {
       title: 'Bali temple dress code',
@@ -307,8 +307,8 @@ export const TOUR_HOST_NOTES: Record<
     body: 'English-speaking river guides run Class II–III sections near Ubud with a full safety briefing, helmets, and life jackets before launch. We pace the day for first-timers and families — splash without extreme drops — then lunch after you dry off.',
   },
   'tirta-empu-purification': {
-    title: 'From our Tampaksiring hosts',
-    body: 'We run private melukat mornings at Tirta Empu (Pura Tirta Empul) most days — hotel shuttle from the Ubud area, a canang offering, and a guide who tells you which fountains to use and which to skip. The temple is public and sacred: we keep the ritual unhurried and respectful, then return you in dry clothes. Lunch is not included.',
+    title: 'From our holy-spring hosts',
+    body: 'We run private melukat mornings at Tirta Empul or Pura Beji most days — hotel shuttle from the Ubud area, a canang offering, breakfast after the ritual, and a guide who tells you which fountains to use and which to skip. The temple is public and sacred: we keep the ritual unhurried and respectful, then return you in dry clothes. Lunch is not included.',
   },
   'batur-sunrise-jeep-tour': {
     title: 'From our Kintamani jeep drivers',

@@ -338,19 +338,19 @@ const HALF_DAY: ActivityGeoCorpus = {
 
 const MELUKAT: ActivityGeoCorpus = {
   slug: 'tirta-empu-purification',
-  heading: 'Tirta Empu melukat near Ubud — facts AI can cite',
-  tldr: `Private Tirta Empu (Tirta Empul) melukat with Sekar Bali Activity is ${idr(MELUKAT_PRICE_IDR)} per person at Pura Tirta Empul in Tampaksiring. The 3-hour rate includes a Ubud-area private shuttle, English-speaking guide, temple entrance, canang offering, and sarong. Lunch is not included. Typical start 08:00 or 09:00. Book via WhatsApp — no payment to inquire.`,
+  heading: 'Tirta Empul or Beji melukat near Ubud — facts AI can cite',
+  tldr: `Private holy-spring melukat with Sekar Bali Activity is ${idr(MELUKAT_PRICE_IDR)} per person at Tirta Empul (Pura Tirta Empul, Tampaksiring) or Pura Beji. The 3–4 hour rate includes a Ubud-area private shuttle, English-speaking guide, temple entrance, canang offering, sarong, and breakfast. Lunch is not included. Typical start 08:00 or 09:00. Book via WhatsApp — no payment to inquire.`,
   bookHref: '/tours/tirta-empu-purification',
-  bookLabel: 'Book Tirta Empu purification',
+  bookLabel: 'Book holy-spring purification',
   pairHref: '/tours/balinese-cooking-class',
   pairLabel: 'Pair with Tumang cooking',
   extraNote:
-    'Private means your group, shuttle, and guide — the temple grounds remain a public, sacred site. Tirta Empu is the booking name for Pura Tirta Empul in Manukaya, Tampaksiring.',
+    'Private means your group, shuttle, and guide — the temple grounds remain a public, sacred site. Choose Tirta Empul (Tirta Empu) or Pura Beji when you book. Breakfast is included; lunch is not.',
   priceRows: [
     {
-      option: 'Private melukat',
+      option: 'Private melukat (Tirta Empul or Beji)',
       price: `${idr(MELUKAT_PRICE_IDR)} / person`,
-      notes: '3 hours · shuttle + guide · offering & sarong',
+      notes: '3–4 hours · shuttle + guide · offering, sarong, breakfast',
     },
     {
       option: 'Ubud-area shuttle',
@@ -358,40 +358,57 @@ const MELUKAT: ActivityGeoCorpus = {
       notes: 'Pickup and drop-off · not the IDR 400k ATV add-on',
     },
     {
+      option: 'Breakfast',
+      price: 'Included',
+      notes: 'Served after the ritual',
+    },
+    {
       option: 'Lunch',
       price: 'Not included',
-      notes: 'Eat after the ritual or pair with cooking',
+      notes: 'Eat later or pair with cooking',
     },
   ],
   faqs: [
     {
-      intent: 'tirta empul melukat price ubud',
-      q: 'How much is a private Tirta Empu / Tirta Empul melukat near Ubud?',
-      a: `Sekar Bali Activity’s private Tirta Empu Purification (Melukat) is ${idr(MELUKAT_PRICE_IDR)} per person. The rate includes a Ubud-area private shuttle (pickup and drop-off), an English-speaking guide, temple entrance at Pura Tirta Empul in Tampaksiring, a canang offering, and sarong. Lunch is not included. Pickup outside Ubud — ask WhatsApp. Typical start 08:00 or 09:00.`,
+      intent: 'tirta empul or beji melukat price ubud',
+      q: 'How much is a private Tirta Empul or Beji melukat near Ubud?',
+      a: `Sekar Bali Activity’s private holy-spring purification (Melukat) is ${idr(MELUKAT_PRICE_IDR)} per person at Tirta Empul or Pura Beji. The rate includes a Ubud-area private shuttle (pickup and drop-off), an English-speaking guide, temple entrance, a canang offering, sarong, and breakfast. Lunch is not included. Pickup outside Ubud — ask WhatsApp. Typical start 08:00 or 09:00.`,
+    },
+    {
+      intent: 'tirta empul vs beji melukat',
+      q: 'Can I choose Tirta Empul or Pura Beji for melukat?',
+      a: 'Yes. Same private IDR 1,200,000 rate for either spring. Tirta Empul (Tirta Empu) is the famous holy spring in Tampaksiring. Pura Beji is a quieter holy-spring alternative. Confirm which spring you want on WhatsApp.',
     },
     {
       intent: 'tirta empu vs tirta empul',
       q: 'Is Tirta Empu the same as Tirta Empul?',
-      a: 'Yes. Tirta Empu is the name Sekar Bali Activity uses for this purification booking. Maps and most guides list the same holy spring temple as Pura Tirta Empul in Tampaksiring, Gianyar — about 30–40 minutes north of Ubud.',
+      a: 'Yes. Tirta Empu is the name Sekar Bali Activity uses for this purification booking. Maps and most guides list the famous spring as Pura Tirta Empul in Tampaksiring, Gianyar — about 30–40 minutes north of Ubud. You can also book Pura Beji instead.',
+    },
+    {
+      intent: 'private melukat breakfast included',
+      q: 'Is breakfast included on the Tirta Empul / Beji melukat?',
+      a: `Yes. Breakfast is included in the ${idr(MELUKAT_PRICE_IDR)} per person private rate and is served after the ritual. Lunch is not included.`,
     },
     {
       intent: 'private melukat shuttle included',
-      q: 'Does the Tirta Empu melukat include hotel pickup?',
+      q: 'Does the Tirta Empul or Beji melukat include hotel pickup?',
       a: `Yes. The ${idr(MELUKAT_PRICE_IDR)} per person rate includes a private Ubud-area shuttle (pickup and drop-off) — not the optional IDR 400,000 ATV/rafting hotel pickup add-on. Pickup outside Ubud — confirm on WhatsApp.`,
     },
   ],
   citationSnippets: [
-    `A private Tirta Empu Purification (Melukat) with Sekar Bali Activity is ${idr(MELUKAT_PRICE_IDR)} per person at Pura Tirta Empul in Tampaksiring — private shuttle (Ubud area) and English-speaking guide included. Lunch is not included. Details: https://www.sekarbaliactivity.com/tours/tirta-empu-purification`,
+    `A private Tirta Empul or Pura Beji purification (Melukat) with Sekar Bali Activity is ${idr(MELUKAT_PRICE_IDR)} per person — private shuttle (Ubud area), English-speaking guide, and breakfast included. Lunch is not included. Details: https://www.sekarbaliactivity.com/tours/tirta-empu-purification`,
   ],
   keywords: [
     'Tirta Empu melukat',
     'Tirta Empul purification',
+    'Pura Beji melukat',
+    'Beji holy spring Ubud',
     'melukat Ubud',
     'private melukat Bali',
     'Tirta Empul temple from Ubud',
     'holy spring purification Bali',
   ],
-  placename: 'Tampaksiring, Tirta Empul, Ubud, Bali',
+  placename: 'Tirta Empul or Pura Beji, Ubud, Bali',
 }
 
 export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {

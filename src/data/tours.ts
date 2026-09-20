@@ -285,9 +285,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     isTopPick: true,
     duration: "Sunrise 6–7 Hours · Sunset 4–5 Hours",
     basePrice: 1350000,
-    seoTitle: "Mount Batur Jeep | Sunrise, Sunset, Tracking",
+    seoTitle: "Mount Batur Private Jeep | Sunrise or Sunset",
     seoDescription:
-      "Private or tracking jeep, sunrise or sunset — same private rates. Hot spring +IDR 150K with ticket. Pickup included. Solo 1.35M · 2 pax 950K · 3+ 750K.",
+      "Private jeep or tracking, sunrise or sunset — min 2 guests. Same private rates. Hot spring +IDR 150K with ticket. Pickup included. 2 pax 950K · 3+ 750K.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
@@ -313,17 +313,17 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       },
     ],
     shortDescription:
-      "Private or tracking 4×4 jeep to Mount Batur near Kintamani — sunrise or sunset at the same private rates. Sit-in private jeep (no hike) or tracking jeep (jeep + guided trek). Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. Meals are not served on the jeep. Solo IDR 1,350,000 · 2 guests IDR 950,000 · 3+ IDR 750,000 per person.",
-    fullDescription: `**What is the Mount Batur Jeep Tour?** It is a private 4×4 jeep on Mount Batur’s volcanic tracks near Kintamani — about 1,350 metres above sea level — for **sunrise or sunset** over **Lake Batur** and **Mount Agung**. Choose **private jeep** (stay seated, no hike) or **tracking jeep** (jeep plus a guided trek to the viewpoint). Both variants use the same private per-person rates. A local driver, hot drink, and hotel pickup are included. **Meals are not included** — we do not serve food on the jeep. Solo from **IDR 1,350,000**, **IDR 950,000 per person** for 2 guests, or **IDR 750,000 per person** once 3+ guests share one jeep.
+      "Private 4×4 jeep to Mount Batur near Kintamani — private sit-in or tracking (jeep + guided trek), sunrise or sunset, minimum 2 guests. Same private rates. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. Meals are not served on the jeep. 2 guests IDR 950,000 · 3+ IDR 750,000 per person.",
+    fullDescription: `**What is the Mount Batur Jeep Tour?** It is a **private** 4×4 jeep on Mount Batur’s volcanic tracks near Kintamani — about 1,350 metres above sea level — for **sunrise or sunset** over **Lake Batur** and **Mount Agung**. **Minimum 2 guests.** Choose **private jeep** (stay seated, no hike) or **private tracking jeep** (jeep plus a guided trek to the viewpoint). Both variants use the same private per-person rates. A local driver, hot drink, and hotel pickup are included. **Meals are not included** — we do not serve food on the jeep. **IDR 950,000 per person** for 2 guests, or **IDR 750,000 per person** once 3+ guests share one jeep.
 
 ### Private jeep or tracking jeep
-**Private jeep** is the no-hike option: you stay in the 4×4 to a crater-rim viewpoint on Mount Batur’s eastern flank. **Tracking jeep** is the trek variant: the same private jeep plus a guided walk to the viewpoint — same 1 / 2 / 3+ private prices, not a cheaper shared hike.
+**Private jeep** is the no-hike option: you stay in the 4×4 to a crater-rim viewpoint on Mount Batur’s eastern flank. **Private tracking jeep** is the trek variant: the same private jeep plus a guided walk to the viewpoint — same 2 / 3+ private prices, not a cheaper shared hike.
 
-| | Private jeep | Tracking jeep |
+| | Private jeep | Private tracking jeep |
 | --- | --- | --- |
 | How you go | Stay seated in the 4×4 | Jeep + guided trek |
 | Fitness | Sit in the jeep | Moderate walking |
-| Price | Same private tiers | Same private tiers |
+| Price | Same private tiers · min 2 guests | Same private tiers · min 2 guests |
 | Best for | Families, couples, skipping the hike | Guests who want a trek with jeep support |
 
 The tracking jeep is still **not** the classic 2-hour Mount Batur **summit** trek — that is a different route. Side-by-side: [Mount Batur jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
@@ -344,12 +344,11 @@ Add a soak at a Batur / Toya Devasya hot spring after sunrise or sunset for **ID
 On the way back we can swing by a local Kintamani coffee plantation for a short, no-obligation stop. For a dedicated ethical tasting near Ubud, see [Luwak Coffee Plantation (Umah Kuno)](/tours/luwak-coffee-plantation). Full sunrise itinerary: [Batur sunrise jeep guide 2026](/blog/mount-batur-sunrise-jeep-tour-guide-2026).
 
 ### Group-Friendly Pricing
-A private jeep costs the same whether one or three people ride, so the per-person rate drops the more guests you bring. Tracking jeep uses these same private tiers.
+A private jeep costs the same whether two or three people ride, so the per-person rate drops the more guests you bring. Tracking jeep uses these same private tiers. **Minimum 2 guests.**
 
 | Guests in one jeep | Price per person (IDR) |
 | --- | --- |
-| 1 | 1,350,000 |
-| 2 | 950,000 |
+| 2 (minimum) | 950,000 |
 | 3+ | 750,000 |
 | Hot spring add-on (any jeep) | +150,000 (ticket included) |
 
@@ -358,7 +357,7 @@ Hotel pickup and drop-off are built into those rates (not the IDR 400,000 ATV/ra
 ### What to bring
 Warm layer (it is cold on the rim before sunrise), closed shoes — especially on tracking jeep — phone/camera, a snack if you want to eat, swimwear and a towel if you add the hot spring, and a little cash if you want coffee-plantation souvenirs. We handle the jeep, driver, entrance fee, hot drink, and insurance for ages 6–65. Food is not included.`,
     highlights: [
-      "Private jeep or tracking jeep — same private rates",
+      "Private jeep or tracking jeep — same private rates, min 2 guests",
       "Sunrise or sunset over Lake Batur and Mount Agung",
       "Optional Batur hot spring +IDR 150,000 (ticket included)",
       "Hot drink en route · meals not included",
@@ -441,7 +440,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
         id: "faq-jeep-1",
         question: "How much does the Mount Batur Sunrise Jeep Tour cost?",
         answer:
-          "IDR 1,350,000 for a solo traveller, IDR 950,000 per person for 2 guests sharing a jeep, and IDR 750,000 per person for 3 or more guests. Private jeep and tracking jeep use these same private rates, for sunrise or sunset. Private jeep, driver, hotel pickup, and a hot drink are included. Meals are not included — we do not serve food on the jeep. Optional Batur hot spring is +IDR 150,000 per person with the entrance ticket included. Message WhatsApp with your guest count for an exact quote.",
+          "IDR 950,000 per person for 2 guests sharing a private jeep (minimum 2), and IDR 750,000 per person for 3 or more guests. Private jeep and tracking jeep use these same private rates, for sunrise or sunset. Private jeep, driver, hotel pickup, and a hot drink are included. Meals are not included — we do not serve food on the jeep. Optional Batur hot spring is +IDR 150,000 per person with the entrance ticket included. Message WhatsApp with your guest count for an exact quote.",
       },
       {
         id: "faq-jeep-2",
@@ -453,13 +452,13 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
         id: "faq-jeep-3",
         question: "Do we hike up Mount Batur, or stay in the jeep?",
         answer:
-          "Choose in the booking form. Private jeep: you stay in the 4×4 to a crater-rim viewpoint (~1,350m) — no hike. Tracking jeep: jeep plus a guided trek to the viewpoint, at the same private 1 / 2 / 3+ rates. Neither option is the classic 2-hour Mount Batur summit trek.",
+          "Choose in the booking form. Private jeep: you stay in the 4×4 to a crater-rim viewpoint (~1,350m) — no hike. Private tracking jeep: jeep plus a guided trek to the viewpoint, at the same private 2 / 3+ rates. Minimum 2 guests. Neither option is the classic 2-hour Mount Batur summit trek.",
       },
       {
         id: "faq-jeep-track",
         question: "What is the tracking jeep sunrise variant?",
         answer:
-          "Tracking jeep is the trek version of this private jeep: 4×4 plus a guided walk to the sunrise or sunset viewpoint. It costs the same as private jeep — IDR 1,350,000 solo, IDR 950,000 per person for 2 guests, IDR 750,000 per person for 3+.",
+          "Tracking jeep is the trek version of this private jeep: 4×4 plus a guided walk to the sunrise or sunset viewpoint. It is labelled private and costs the same as private jeep — IDR 950,000 per person for 2 guests (minimum 2), IDR 750,000 per person for 3+.",
       },
       {
         id: "faq-jeep-sun",
@@ -489,7 +488,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
         id: "faq-jeep-6",
         question: "Why does the per-person price drop with more guests?",
         answer:
-          "A private jeep and driver cost the same whether one or three people ride along, so we split that flat cost across your group — a solo traveller pays the full rate, while 2 or 3 guests sharing a jeep each pay less. Tracking jeep uses the same split.",
+          "A private jeep and driver cost the same whether two or three people ride along, so we split that flat cost across your group — 2 guests sharing a jeep each pay less than a larger split at 3+. Minimum 2 guests. Tracking jeep uses the same split.",
       },
       {
         id: "faq-jeep-7",

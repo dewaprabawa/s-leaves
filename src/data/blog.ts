@@ -1464,7 +1464,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000 (IDR 450,000 for 2+)**, **Canyon Tubing IDR 500,000 (IDR 450,000 for 2+)**, **Ubud Ricefield Cycling Tour IDR 750,000**, **Mount Batur Sunrise Jeep Tour IDR 1,350,000 solo / IDR 950,000 for 2 / from IDR 750,000 per person for 3+**, **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Luwak Coffee Plantation IDR 800,000** (min 3 guests; transport not included), **Full Day Ubud Tour from IDR 600,000**, and **Half Day Ubud & Tanah Lot from IDR 450,000**.
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000 (IDR 450,000 for 2+)**, **Canyon Tubing IDR 500,000 (IDR 450,000 for 2+)**, **Ubud Ricefield Cycling Tour IDR 750,000**, **Mount Batur private jeep IDR 950,000 for 2 (minimum) / from IDR 750,000 per person for 3+** (optional hot spring +IDR 150,000 with ticket), **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Luwak Coffee Plantation IDR 800,000** (min 3 guests; transport not included), **Full Day Ubud Tour from IDR 600,000**, and **Half Day Ubud & Tanah Lot from IDR 450,000**.
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
@@ -1484,7 +1484,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Whitewater Rafting | IDR 500,000 · 450,000 for 2+ | person | [Whitewater Rafting](/tours/whitewater-rafting) |
 | Canyon Tubing | IDR 500,000 · 450,000 for 2+ | person | [Canyon Tubing](/tours/canyon-tubing) |
 | Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
-| Mount Batur Sunrise Jeep | IDR 1,350,000 solo · 950,000 (2) · 750,000 (3+) | person, private 4×4 | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
+| Mount Batur private jeep | IDR 950,000 (2, min) · 750,000 (3+) | person, private 4×4 | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Tumang Bali Cooking Class | IDR 450,000 promo | person shared | [Cooking Class](/tours/balinese-cooking-class) |
 | Tirta Empu Purification (Melukat) | IDR 1,200,000 | person / private · Tirta Empul or Beji · breakfast included | [Tirta Empu Melukat](/tours/tirta-empu-purification) |
 | Luwak Coffee Plantation (Umah Kuno) | IDR 800,000 | person (min 3) | [Luwak Coffee](/tours/luwak-coffee-plantation) |
@@ -1870,20 +1870,20 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
     title: 'Mount Batur Sunrise Jeep Tour Price Guide (2026)',
     seoTitle: 'Batur Sunrise Jeep Prices 2026 | IDR Tiers',
     excerpt:
-      'Mount Batur sunrise jeep tour prices near Kintamani for 2026 — solo, pair, and group IDR tiers, what\u2019s included, and pickup timing.',
+      'Mount Batur private jeep prices near Kintamani for 2026 — 2-guest minimum, pair and group IDR tiers, hot spring add-on, and pickup timing.',
     publishedAt: '2026-09-09',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
     content: `
-**How much does the Mount Batur Sunrise Jeep Tour cost in 2026?** With Sekar Bali Activity, a private 4×4 jeep to the Mount Batur sunrise viewpoint near Kintamani starts at **IDR 1,350,000** for a solo traveler, drops to **IDR 950,000 per person** for 2 guests sharing, and **IDR 750,000 per person** for 3 or more guests in one jeep. Hotel pickup, a hot drink, and the Kintamani entrance fee are included. **Meals are not included** — food is not served on the jeep.
+**How much does the Mount Batur Jeep Tour cost in 2026?** With Sekar Bali Activity, a **private** 4×4 jeep to Mount Batur near Kintamani is **minimum 2 guests**: **IDR 950,000 per person** for 2 guests sharing, and **IDR 750,000 per person** for 3 or more guests in one jeep. Sit-in private jeep or tracking jeep, sunrise or sunset — same private rates. Hotel pickup, a hot drink, and the Kintamani entrance fee are included. **Meals are not included** — food is not served on the jeep. Optional Batur hot spring is **+IDR 150,000 per person** with the **entrance ticket included**.
 
 > **Key Takeaways**
-> - Solo traveler: **IDR 1,350,000** — full private jeep rate
+> - Private · **minimum 2 guests**
 > - 2 guests sharing: **IDR 950,000 per person**
 > - 3+ guests sharing: **IDR 750,000 per person** — best per-person rate
+> - Optional hot spring: **+IDR 150,000 per person** (ticket included)
 > - Included: hotel pickup, driver, hot drink, entrance fee
 > - Not included: breakfast or other meals (no food on the jeep)
-> - Optional: Kintamani coffee plantation stop on the way back
 > - Book on WhatsApp — no upfront payment to inquire
 
 ---
@@ -1892,11 +1892,11 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
 
 | Guests | Price (IDR) | Per person | What's included |
 | --- | --- | --- | --- |
-| 1 (solo) | 1,350,000 | 1,350,000 | Pickup, driver, hot drink, entrance fee — meals not included |
-| 2 sharing | 1,900,000 | 950,000 | Same inclusions · one jeep for two |
+| 2 sharing (minimum) | 1,900,000 | 950,000 | Pickup, driver, hot drink, entrance fee — meals not included |
 | 3+ sharing | from 2,250,000 | 750,000 | Same inclusions · best per-person rate |
+| Hot spring add-on | +150,000 pp | 150,000 | Any private jeep · entrance ticket included |
 
-Why does the price drop per person as the group grows? A private jeep and driver cost the same flat amount whether one or three people ride along, so Sekar Bali Activity splits that fixed cost across the group instead of charging a flat per-seat rate like a shared shuttle would.
+Why does the price drop per person as the group grows? A private jeep and driver cost the same flat amount whether two or three people ride along, so Sekar Bali Activity splits that fixed cost across the group instead of charging a flat per-seat rate like a shared shuttle would.
 
 ## What the Price Actually Includes
 

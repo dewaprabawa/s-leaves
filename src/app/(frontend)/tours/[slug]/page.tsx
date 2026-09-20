@@ -255,23 +255,15 @@ function buildTourSchema(tour: Tour) {
       offers: {
         "@type": "AggregateOffer",
         lowPrice: JEEP_GEO_ENTITY.groupPerPersonIdr,
-        highPrice: JEEP_GEO_ENTITY.soloIdr,
+        highPrice: JEEP_GEO_ENTITY.pairPerPersonIdr,
         priceCurrency: "IDR",
-        offerCount: 3,
+        offerCount: 2,
         availability: "https://schema.org/InStock",
         url: `${SITE_URL}/tours/${tour.slug}`,
         offers: [
           {
             "@type": "Offer",
-            name: "Solo traveler (1 guest)",
-            price: JEEP_GEO_ENTITY.soloIdr,
-            priceCurrency: "IDR",
-            availability: "https://schema.org/InStock",
-            url: `${SITE_URL}/tours/${tour.slug}`,
-          },
-          {
-            "@type": "Offer",
-            name: "2 guests sharing",
+            name: "Private jeep — 2 guests (minimum)",
             price: JEEP_GEO_ENTITY.pairPerPersonIdr,
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
@@ -279,7 +271,7 @@ function buildTourSchema(tour: Tour) {
           },
           {
             "@type": "Offer",
-            name: "3+ guests sharing",
+            name: "Private jeep — 3+ guests sharing",
             price: JEEP_GEO_ENTITY.groupPerPersonIdr,
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
@@ -645,8 +637,7 @@ export default async function TourPage({ params }: Props) {
                   ) : isJeepTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">
                       From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · 2 pax{" "}
-                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1])} · solo{" "}
-                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][0])}
+                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1])} · private · min 2 guests
                     </span>
                   ) : isAtvTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">

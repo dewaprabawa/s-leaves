@@ -14,7 +14,7 @@ const JEEP_HOT_SPRING_ADDON = {
 const JEEP_BOOKING_SHARED = {
   adultPrice: getListPrice("jeep-sunrise"),
   kidPrice: null as null,
-  minPax: 1,
+  minPax: 2,
   pickupIncluded: true as const,
   pricingActivityId: "jeep-sunrise",
   optionalAddons: [JEEP_HOT_SPRING_ADDON],
@@ -74,7 +74,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   },
   {
     id: "jeep-tracking-sunrise",
-    title: "Tracking Jeep Sunrise",
+    title: "Private Tracking Jeep Sunrise",
     times: ["02:30", "03:00"],
     ...JEEP_BOOKING_SHARED,
   },
@@ -86,7 +86,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   },
   {
     id: "jeep-tracking-sunset",
-    title: "Tracking Jeep Sunset",
+    title: "Private Tracking Jeep Sunset",
     times: ["14:30", "15:30"],
     ...JEEP_BOOKING_SHARED,
   },

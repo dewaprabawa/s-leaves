@@ -111,11 +111,11 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     id: "jeep-sunrise",
     name: "Mount Batur Sunrise Jeep Tour",
     tagline: "Private or tracking · sunrise or sunset",
-    paxLabel: "Per person (private jeep)",
+    paxLabel: "Per person (private · min 2)",
     description:
-      "Private or tracking 4×4 jeep to Mount Batur near Kintamani — sunrise or sunset at the same private rates. Sit-in private jeep or tracking jeep (jeep + guided trek). Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. Meals are not served on the jeep. Solo IDR 1,350,000 · 2 guests IDR 950,000 · 3+ IDR 750,000 per person.",
+      "Private or tracking 4×4 jeep to Mount Batur near Kintamani — sunrise or sunset at the same private rates, minimum 2 guests. Sit-in private jeep or tracking jeep (jeep + guided trek). Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. Meals are not served on the jeep. 2 guests IDR 950,000 · 3+ IDR 750,000 per person.",
     highlights: [
-      "Private jeep or tracking jeep — same private rates",
+      "Private jeep or tracking jeep — same private rates, min 2 guests",
       "Sunrise or sunset over Lake Batur and Mount Agung",
       "Optional hot spring +IDR 150,000 · ticket included",
       "Hotel pickup included",
@@ -125,7 +125,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     imageAlt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
     tourSlug: "batur-sunrise-jeep-tour",
     times: ["02:30", "03:00", "14:30", "15:30"],
-    minPax: 1,
+    minPax: 2,
     pickupIncluded: true,
   },
 ]

@@ -177,19 +177,19 @@ Diet does not lock you to one session. Request veg / vegan on either clock — [
 **What is the Mount Batur Sunrise Jeep Tour?** It is a **private 4×4** to a **crater-rim viewpoint (~1,350m)** on Mount Batur’s eastern flank near Kintamani — sunrise over **Lake Batur** and **Mount Agung** without the ~2-hour summit trek. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) includes the jeep, local driver, **island-wide hotel pickup**, a **hot drink**, Kintamani entrance fee, and insurance for ages 6–65. **Meals are not included. Food is not served on the jeep.**
 
 > **Key Takeaways**
-> - Door to door **about 6–7 hours** · pickup typically **02:00–03:00**
-> - **IDR 1,350,000** solo · **950,000** pp (2) · **750,000** pp (3+)
-> - You **stay in the jeep** — not the summit hike
+> - Door to door **about 6–7 hours** sunrise · sunset **~4–5 hours**
+> - **Private** · **minimum 2 guests** · **950,000** pp (2) · **750,000** pp (3+)
+> - Sit-in **private jeep** or **private tracking jeep** — not the summit hike
+> - Optional hot spring **+IDR 150,000** pp with **ticket included**
 > - Bring a **snack and a warm layer**; we do not serve breakfast on the vehicle
-> - Optional Kintamani coffee stop on the way back ≠ [Umah Kuno luwak](/tours/luwak-coffee-plantation)
 
 ## 2026 prices
 
 | Guests in one jeep | Price per person (IDR) |
 | --- | --- |
-| 1 | 1,350,000 |
-| 2 | 950,000 |
+| 2 (minimum) | 950,000 |
 | 3+ | 750,000 |
+| Hot spring add-on | +150,000 (ticket included) |
 
 Full table: [jeep price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026).
 
@@ -231,9 +231,10 @@ Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **foo
 **Should you do a Mount Batur sunrise jeep or the summit trek?** Choose the **jeep** if you want sunrise over Lake Batur and Mount Agung **without hiking**. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) drives a private 4×4 on volcanic tracks to an **eastern-flank crater-rim viewpoint (~1,350m)** near Kintamani. Choose a **trek** if walking the dark lava trail to the **summit** is the goal. They are different products — the jeep is not a shortcut to the same summit pin.
 
 > **Key Takeaways**
-> - Jeep: sit in a private 4×4 · no 2-hour hike · **meals not included**
+> - Private jeep: sit in a 4×4 · no 2-hour hike · **meals not included** · **min 2 guests**
+> - Private tracking jeep: same private rates · jeep + guided trek · not the summit
 > - Trek: ~2 hours up in the dark · summit trail · higher fitness
-> - Jeep prices (2026): IDR **1,350,000** solo · **950,000** (2 pax) · **750,000** (3+)
+> - Jeep prices (2026): **950,000** (2 pax) · **750,000** (3+) · hot spring **+150,000** with ticket
 > - Hotel pickup **included island-wide** on our jeep
 > - Do not book the jeep if your checklist says “stand on the summit”
 
@@ -251,9 +252,9 @@ Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **foo
 
 ## Price: what the jeep includes
 
-- 1 guest: **IDR 1,350,000**
-- 2 guests: **IDR 950,000** each
+- 2 guests (minimum): **IDR 950,000** each
 - 3+ guests: **IDR 750,000** each
+- Optional hot spring: **+IDR 150,000** each (entrance ticket included)
 
 Included: 4×4, local driver, hotel pickup & drop-off, hot drink, Kintamani / Batur area entrance fee, insurance for ages 6–65. **Not included: breakfast or other meals.** Optional coffee plantation stop on the way back (no purchase required) — not the [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation).
 
@@ -303,7 +304,7 @@ We do not publish a fake pinned minute for every villa. The honest rule: **south
 
 Private 4×4, driver, hotel pickup & drop-off, hot drink, entrance fee, insurance ages 6–65. **Food / breakfast is not included.**
 
-Tiers: solo **IDR 1,350,000** · 2 guests **IDR 950,000** · 3+ **IDR 750,000** per person.
+Tiers: private · min 2 guests · 2 guests **IDR 950,000** · 3+ **IDR 750,000** per person. Optional hot spring **+IDR 150,000** with ticket included.
 
 ## Jeep vs ATV pickup
 

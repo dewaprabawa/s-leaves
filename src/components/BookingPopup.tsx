@@ -60,7 +60,7 @@ export interface TourConfig {
   pickupNotOffered?: boolean
   /**
    * Quote against this catalog ActivityId when the dropdown id is a product
-   * variant (jeep tracking / sunset). Keeps private 1 / 2 / 3+ jeep tiers.
+   * variant (jeep tracking / sunset). Keeps private 2 / 3+ jeep tiers.
    */
   pricingActivityId?: string
   /** Optional per-person add-ons (jeep hot spring). Not mix-combo activities. */

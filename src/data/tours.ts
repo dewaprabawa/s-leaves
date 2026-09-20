@@ -1096,10 +1096,10 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
       },
     ],
     shortDescription:
-      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Sudiana, max 8 guests, English instruction. Promo IDR 450,000 / person (was IDR 506,370) with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
+      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Suryana, max 8 guests, English instruction. Promo IDR 450,000 / person (was IDR 506,370) with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
     fullDescription: `**Tumang Bali Cooking Class — authentic village kitchen near Ubud**
 
-[Tumang Bali](https://tumangbaliclass.com/) is a family-run cooking school in Tumang village near Ubud for travellers who want hands-on Balinese cuisine — not a hotel demo. Head Chef **Wayan Sudiana** teaches Base Genep (bumbu), sate lilit, pepes ikan, sambal matah, lawar, and more. Classes are taught in English. Complimentary pickup in the Ubud area. Max **8 guests** per shared class.
+[Tumang Bali](https://tumangbaliclass.com/) is a family-run cooking school in Tumang village near Ubud for travellers who want hands-on Balinese cuisine — not a hotel demo. Head Chef **Wayan Suryana** teaches Base Genep (bumbu), sate lilit, pepes ikan, sambal matah, lawar, and more. Classes are taught in English. Complimentary pickup in the Ubud area. Max **8 guests** per shared class.
 
 ### Why book Tumang through Sekar Bali Activity
 We list Tumang as our flagship food experience so you can book adventure, village cycling, and this cooking class on one WhatsApp thread — with clear IDR before you confirm.
@@ -1108,7 +1108,7 @@ We list Tumang as our flagship food experience so you can book adventure, villag
 - Hands-on cooking of **10+ Balinese dishes**
 - **Morning market tour** on the AM session only
 - Guided **rice-field walk**
-- English instruction with Chef Wayan Sudiana
+- English instruction with Chef Wayan Suryana
 - Vegetarian / vegan menus available
 - Complimentary **hotel pickup in the Ubud area**
 - Small group — max 8 guests (shared)
@@ -1131,7 +1131,7 @@ TripAdvisor **[Traveler’s Choice 2026](https://www.tripadvisor.com/Attraction_
 ### Learn more
 Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes) · [TripAdvisor reviews](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)`,
     highlights: [
-      "10+ dishes with Chef Wayan Sudiana",
+      "10+ dishes with Chef Wayan Suryana",
       "Morning market tour (AM class) + rice-field walk",
       "Max 8 guests · fully hands-on · English",
       "Complimentary Ubud-area hotel pickup",
@@ -1178,7 +1178,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
         time: "Cook",
         title: "Hands-on cooking (10+ dishes)",
         description:
-          "Pound Base Genep, shape sate lilit, prepare sambal matah, pepes, lawar, and more at your station under Chef Wayan Sudiana’s guidance.",
+          "Pound Base Genep, shape sate lilit, prepare sambal matah, pepes, lawar, and more at your station under Chef Wayan Suryana’s guidance.",
       },
       {
         id: "iti-cook-5",

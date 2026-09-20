@@ -121,7 +121,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'inside-balinese-cooking-class-pejeng': {
     headline: 'Book the village kitchen near Ubud',
-    body: 'Chef Wayan Sudiana · max 8 · free Ubud pickup.',
+    body: 'Chef Wayan Suryana · max 8 · free Ubud pickup.',
     primaryHref: '/tours/balinese-cooking-class',
     primaryLabel: 'Book Tumang',
   },

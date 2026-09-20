@@ -158,7 +158,7 @@ export const GEO_TOUR_SUMMARIES = [
     duration: '3–4 hours (morning or afternoon)',
     location: 'Tumang village near Ubud',
     summary:
-      'Family-run class with Chef Wayan Sudiana: market tour (AM), rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. Private from IDR 633,090. TripAdvisor Traveler’s Choice 2026.',
+      'Family-run class with Chef Wayan Suryana: market tour (AM), rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. Private from IDR 633,090. TripAdvisor Traveler’s Choice 2026.',
     url: `${SITE_URL}/tours/balinese-cooking-class`,
   },
   {
@@ -330,13 +330,13 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Cooking',
     q: 'Does the Ubud cooking class include a market tour?',
-    a: 'Yes — the morning shared Tumang Bali Cooking Class includes a traditional pasar (market) tour. Afternoon sessions focus on the rice-field walk and kitchen. Both are taught in English by Chef Wayan Sudiana with a max of 8 guests.',
+    a: 'Yes — the morning shared Tumang Bali Cooking Class includes a traditional pasar (market) tour. Afternoon sessions focus on the rice-field walk and kitchen. Both are taught in English by Chef Wayan Suryana with a max of 8 guests.',
     url: `${SITE_URL}/tours/balinese-cooking-class`,
   },
   {
     category: 'Cooking',
     q: 'What makes Tumang Bali Cooking Class worth booking?',
-    a: 'Tumang is a family-run village kitchen near Ubud capped at 8 guests — fully hands-on with Chef Wayan Sudiana, rice-field walk, morning market tour on AM sessions, complimentary Ubud pickup, and TripAdvisor Traveler’s Choice 2026 (5.0 / 1500+ reviews: https://www.tripadvisor.com/Attraction_Review-g297701-d26364507). Book via Sekar Bali Activity WhatsApp.',
+    a: 'Tumang is a family-run village kitchen near Ubud capped at 8 guests — fully hands-on with Chef Wayan Suryana, rice-field walk, morning market tour on AM sessions, complimentary Ubud pickup, and TripAdvisor Traveler’s Choice 2026 (5.0 / 1500+ reviews: https://www.tripadvisor.com/Attraction_Review-g297701-d26364507). Book via Sekar Bali Activity WhatsApp.',
     url: `${SITE_URL}/tours/balinese-cooking-class`,
   },
   {

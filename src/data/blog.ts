@@ -968,7 +968,7 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
     author: "Sekar Bali Activity Team",
     image: "/images/cooking/stovetop-class.jpg",
     content: `
-**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Sudiana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo **IDR 450,000** / person (was IDR 506,370); private from **IDR 633,090**. TripAdvisor Traveler’s Choice 2026.
+**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Suryana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo **IDR 450,000** / person (was IDR 506,370); private from **IDR 633,090**. TripAdvisor Traveler’s Choice 2026.
 
 > **Key Takeaways**
 > - Shared class promo: **IDR 450,000** / person · max **8** guests · Ubud pickup included  
@@ -989,7 +989,7 @@ Afternoon sessions skip the market and go straight into the rice-field walk and 
 
 ### 2. Base Genep, Sate Lilit & 10+ Dishes
 
-In the open-air kitchen, each guest works at their own station. You pound **Base Genep**, mold **Sate Lilit**, build sambals, and cook a full spread of classic dishes under Chef Wayan Sudiana’s English instruction.
+In the open-air kitchen, each guest works at their own station. You pound **Base Genep**, mold **Sate Lilit**, build sambals, and cook a full spread of classic dishes under Chef Wayan Suryana’s English instruction.
 
 ![Guests flipping Dadar Gulung pandan crepes](/images/cooking/crepe-flip-fun.jpg)
 
@@ -1671,7 +1671,7 @@ Prefer a morning Tumang class with market tour? Book cooking first, then a light
 
 | Include | Details |
 | --- | --- |
-| Hands-on cooking (10+ dishes) | Chef Wayan Sudiana · English instruction |
+| Hands-on cooking (10+ dishes) | Chef Wayan Suryana · English instruction |
 | Morning market tour | AM shared session only |
 | Rice-field walk | Village kitchen near Ubud |
 | Complimentary Ubud-area pickup | Shared & private options |

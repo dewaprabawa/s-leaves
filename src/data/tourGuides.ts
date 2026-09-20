@@ -277,8 +277,8 @@ export const TOUR_HOST_NOTES: Record<
     body: 'Born-and-raised Pejeng guides lead the ricefield routes we ride every week — Subak channels, village lanes, and lunch stops away from Tegallalang bus crowds. Free Ubud hotel pickup is built into the day so you start on the bike, not hunting for parking.',
   },
   'balinese-cooking-class': {
-    title: 'From Chef Wayan Sudiana’s kitchen',
-    body: 'Tumang Bali Cooking Class is taught hands-on by Chef Wayan Sudiana in Tumang village — Base Genep on the stone mortar, market tour on morning sessions, and a capped group of 8 so every guest cooks. Sekar Bali Activity handles WhatsApp booking and Ubud-area pickup coordination.',
+    title: 'From Chef Wayan Suryana’s kitchen',
+    body: 'Tumang Bali Cooking Class is taught hands-on by Chef Wayan Suryana in Tumang village — Base Genep on the stone mortar, market tour on morning sessions, and a capped group of 8 so every guest cooks. Sekar Bali Activity handles WhatsApp booking and Ubud-area pickup coordination.',
   },
   'whitewater-rafting': {
     title: 'From our rafting crew',

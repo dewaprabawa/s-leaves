@@ -130,6 +130,9 @@ export const SITE_NAV_LINKS = [
   { name: 'About Us', url: `${SITE_URL}/about` },
   { name: 'Contact', url: `${SITE_URL}/contact` },
   { name: 'Blog', url: `${SITE_URL}/blog` },
+  { name: 'Anti-Scam', url: `${SITE_URL}/anti-scam` },
+  { name: 'Payment Policy', url: `${SITE_URL}/payment-policy` },
+  { name: 'Refund Policy', url: `${SITE_URL}/refund-policy` },
   { name: 'Cancellation Policy', url: `${SITE_URL}/cancellation-policy` },
   { name: 'Privacy Policy', url: `${SITE_URL}/privacy-policy` },
 ] as const

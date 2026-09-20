@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { MessageCircle } from "lucide-react"
+import AntiScamSection from "@/components/AntiScamSection"
 import BookSalesCheckout from "@/components/BookSalesCheckout"
 import { ADVENTURES, getAdventureListPrice } from "@/data/adventures"
 import {
@@ -225,6 +226,8 @@ export default async function BookPage({ searchParams }: Props) {
           highlightCooking={highlightCooking}
           highlightCultureCombo={highlightCultureCombo}
         />
+
+        <AntiScamSection compact />
 
         <section className="mt-16 md:mt-20 rounded-3xl bg-brand-green text-sand p-8 md:p-12 text-center space-y-4">
           <h2 className="font-display text-2xl md:text-3xl font-bold">Not sure which activity?</h2>

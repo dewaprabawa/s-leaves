@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { FAQSection } from "@/components/FAQSection"
+import AntiScamSection from "@/components/AntiScamSection"
 import GeoAnswerBlock from "@/components/GeoAnswerBlock"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import HomeActivitySearch from "@/components/HomeActivitySearch"
@@ -955,6 +956,7 @@ export default function Home() {
 
       <GeoAnswerBlock />
       <FAQSection />
+      <AntiScamSection />
 
       {/* ═══ CONTACT CTA ═══ */}
       <section id="contact" data-animate className="relative py-24 md:py-32 px-6 lg:px-12 overflow-hidden">

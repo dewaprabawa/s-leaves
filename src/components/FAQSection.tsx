@@ -85,7 +85,11 @@ const faqs = [
   },
   {
     question: "What is your bank account for payment?",
-    answer: "Seabank account number 901823638817, account name I Dewa Gede Agus Prabawa. Always use the invoice number from your PDF when you confirm payment on WhatsApp."
+    answer: "Seabank account number 901823638817, account name I Dewa Gede Agus Prabawa. Always use the invoice number from your PDF when you confirm payment on WhatsApp. The Payment Policy page lists the same account."
+  },
+  {
+    question: "How do I know this booking is not a scam?",
+    answer: "Use only sekarbaliactivity.com and WhatsApp +62 817 7572 3663. We never take card numbers on the website. After you agree, transfer only to Seabank 901823638817 a/n I Dewa Gede Agus Prabawa and confirm on that same WhatsApp. Privacy, refund, and payment rules are on our Anti-scam page. If anyone asks for a different bank or e-wallet, stop and message us there first."
   },
   {
     question: "Can I mix activities like ATV + tubing or tubing + rafting?",

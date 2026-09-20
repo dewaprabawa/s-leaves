@@ -9,7 +9,7 @@ import { JEEP_HOT_SPRING_IDR, TIER_PRICES_IDR } from '@/lib/pricing'
 
 export const JEEP_GEO_UPDATED = '2026-09-20'
 
-const [JEEP_SOLO_IDR, JEEP_PAIR_IDR, JEEP_GROUP_IDR] = TIER_PRICES_IDR['jeep-sunrise']
+const [, JEEP_PAIR_IDR, JEEP_GROUP_IDR] = TIER_PRICES_IDR['jeep-sunrise']
 
 const jeepPairLabel = `IDR ${JEEP_PAIR_IDR.toLocaleString('id-ID')}`
 const jeepGroupLabel = `IDR ${JEEP_GROUP_IDR.toLocaleString('id-ID')}`
@@ -21,13 +21,12 @@ export const JEEP_GEO_TLDR =
   `Mount Batur private jeep near Kintamani with Sekar Bali Activity is a private 4×4 — sit-in (no hike) or tracking (jeep + guided trek), sunrise or sunset, same private rates, minimum 2 guests. ${jeepPairLabel} per person for 2 guests, ${jeepGroupLabel} per person for 3+. Optional Batur hot spring +${jeepHotSpringLabel} per person with the entrance ticket included. Hotel pickup included; meals not served on the jeep. Book via WhatsApp.`
 
 export const JEEP_GEO_ENTITY = {
-  name: 'Mount Batur Sunrise Jeep Tour',
+  name: 'Mount Batur Private Jeep Tour',
   sekarUrl: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   /** Booking happens on the tour page itself (WhatsApp popup) — no /book?activity= deep link exists */
   bookUrl: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   area: 'Kintamani / Mount Batur, Bali',
   viewpointElevation: 'approx. 1,350 metres above sea level',
-  soloIdr: JEEP_SOLO_IDR,
   pairPerPersonIdr: JEEP_PAIR_IDR,
   groupPerPersonIdr: JEEP_GROUP_IDR,
   minGroupForBestRate: 3,

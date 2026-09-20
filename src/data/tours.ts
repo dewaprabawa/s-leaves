@@ -276,7 +276,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
   },
   {
     id: "batur-sunrise-jeep-tour",
-    title: "Mount Batur Sunrise Jeep Tour",
+    title: "Mount Batur Private Jeep Tour",
     slug: "batur-sunrise-jeep-tour",
     category: "adventure",
     area: "Kintamani / Mount Batur",
@@ -284,7 +284,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     pickup: "Island-wide hotel pickup included",
     isTopPick: true,
     duration: "Sunrise 6–7 Hours · Sunset 4–5 Hours",
-    basePrice: 1350000,
+    basePrice: 950000,
     seoTitle: "Mount Batur Private Jeep | Sunrise or Sunset",
     seoDescription:
       "Private jeep or tracking, sunrise or sunset — min 2 guests. Same private rates. Hot spring +IDR 150K with ticket. Pickup included. 2 pax 950K · 3+ 750K.",

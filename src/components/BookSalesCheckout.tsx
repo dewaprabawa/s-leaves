@@ -267,7 +267,11 @@ export default function BookSalesCheckout({
                   tierLabel={
                     adv.id === "rafting" || adv.id === "canyon-tubing"
                       ? "2+ discount — IDR 450,000 per person"
-                      : "3+ group rate — book more, save more"
+                      : adv.id === "jeep-sunrise"
+                        ? "Private · min 2 guests · 3+ group rate"
+                        : adv.id === "kintamani-day"
+                          ? "Private · min 2 guests · promo"
+                          : "3+ group rate — book more, save more"
                   }
                 />
                 {childPrice ? (

@@ -233,7 +233,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Mount Batur jeep tour price guide (2026)',
       href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026',
-      blurb: 'Solo, pair, and group IDR tiers plus pickup — meals not included.',
+      blurb: 'Private · min 2 guests · pair and group IDR tiers plus pickup — meals not included.',
     },
     {
       title: 'Jeep vs sunrise trek',

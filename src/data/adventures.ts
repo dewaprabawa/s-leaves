@@ -109,8 +109,8 @@ export const ADVENTURES: AdventureCatalogItem[] = [
   },
   {
     id: "jeep-sunrise",
-    name: "Mount Batur Sunrise Jeep Tour",
-    tagline: "Private or tracking · sunrise or sunset",
+    name: "Mount Batur Private Jeep Tour",
+    tagline: "Private · tracking · sunrise or sunset",
     paxLabel: "Per person (private · min 2)",
     description:
       "Private or tracking 4×4 jeep to Mount Batur near Kintamani — sunrise or sunset at the same private rates, minimum 2 guests. Sit-in private jeep or tracking jeep (jeep + guided trek). Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. Meals are not served on the jeep. 2 guests IDR 950,000 · 3+ IDR 750,000 per person.",

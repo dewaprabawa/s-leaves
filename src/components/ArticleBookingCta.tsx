@@ -145,7 +145,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-sunrise-jeep-tour-price-guide-2026': {
     headline: 'Get the exact jeep tier on WhatsApp',
-    body: 'Solo, pair, or 3+ sharing one private 4×4. Meals not included.',
+    body: 'Private 4×4, min 2 guests. Pair or 3+ sharing. Meals not included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Batur jeep',
   },

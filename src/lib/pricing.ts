@@ -30,8 +30,9 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'rafting': [500_000, 450_000, 450_000],
   'canyon-tubing': [500_000, 450_000, 450_000],
   'cycling': [750_000, 725_000, 700_000],
-  'jeep-sunrise': [1_350_000, 950_000, 750_000], // per person — solo pays full jeep, 2 pax IDR 950K, 3+ share it
-  // Min 2 guests: bookable promo IDR 1.3M; IDR 1.45M is the compare-at / 1-pax list
+  // Internal 1-pax cell is unused on the site (min 2). Public rate is 2 pax.
+  'jeep-sunrise': [1_350_000, 950_000, 750_000], // per person — 2 pax IDR 950K private, 3+ IDR 750K
+  // Min 2 guests: bookable promo IDR 1.3M; IDR 1.45M is the compare-at list
   'kintamani-day': [1_450_000, 1_300_000, 1_300_000],
 }
 
@@ -62,7 +63,15 @@ export function getTierIndex(quantity: number): 0 | 1 | 2 {
   return 0
 }
 
-export function getTierLabel(quantity: number): string {
+export function getTierLabel(quantity: number, activityId?: string): string {
+  if (activityId === 'jeep-sunrise') {
+    if (quantity >= 3) return '3+ private group rate'
+    return 'Private rate'
+  }
+  if (activityId === 'kintamani-day') {
+    if (quantity >= 2) return 'Private promo'
+    return 'Standard rate'
+  }
   if (quantity >= 3) return '3+ group rate'
   if (quantity >= 2) return '2+ group rate'
   return 'Standard rate'
@@ -133,7 +142,7 @@ export function quoteActivity(input: ActivityQuoteInput): ActivityQuote | null {
       unitLabel: 'tandem bike',
       units,
       unitPrice,
-      tierLabel: getTierLabel(units),
+      tierLabel: getTierLabel(units, id),
       activitySubtotal: units * unitPrice,
       childCount: 0,
       childUnitPrice: 0,
@@ -151,7 +160,7 @@ export function quoteActivity(input: ActivityQuoteInput): ActivityQuote | null {
     unitLabel: id === 'single-atv' ? 'rider' : 'person',
     units: billableAdults,
     unitPrice,
-    tierLabel: getTierLabel(billableAdults),
+    tierLabel: getTierLabel(billableAdults, id),
     activitySubtotal: billableAdults * unitPrice,
     childCount: children,
     childUnitPrice: childPrice,
@@ -229,12 +238,19 @@ export function formatTierPriceTable(activityId: ActivityId): string {
   const [t1, t2, t3] = TIER_PRICES_IDR[activityId]
   const unit =
     activityId === 'tandem-atv' ? 'per tandem' : activityId === 'single-atv' ? 'per rider' : 'per person'
+  if (activityId === 'jeep-sunrise') {
+    return `Private · min 2 · 2 ${unit}: IDR ${(t2 / 1000).toFixed(0)}k · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`
+  }
+  if (activityId === 'kintamani-day') {
+    return `Private · min 2 · 2+ ${unit}: IDR ${(t2 / 1000).toFixed(0)}k promo (was IDR ${(t1 / 1000).toFixed(0)}k)`
+  }
   return `1 ${unit}: IDR ${(t1 / 1000).toFixed(0)}k · 2 ${unit}: IDR ${(t2 / 1000).toFixed(0)}k · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`
 }
 
-/** Starting (tier-1) price for homepage cards */
+/** Public starting unit price for cards. Jeep min is 2, so do not advertise the unused 1-pax cell. */
 export function getListPrice(activityId: string): number {
-  return getUnitPrice(activityId, 1)
+  const qty = activityId === 'jeep-sunrise' ? 2 : 1
+  return getUnitPrice(activityId, qty)
 }
 
 /** Best group tier unit price (3+) for promo listings */
@@ -242,15 +258,15 @@ export function getPromoListPrice(activityId: string): number {
   return getUnitPrice(activityId, 3)
 }
 
-/** Standard-rate subtotal at tier 0 for the same units as a quote */
+/** Public list-rate subtotal for the same units as a quote */
 export function getCompareAtSubtotal(quote: ActivityQuote): number {
-  const standardUnit = getUnitPrice(quote.activityId, 1)
+  const standardUnit = getListPrice(quote.activityId)
   return quote.units * standardUnit
 }
 
-/** Whether a quote qualifies for tier promo display */
+/** Whether a quote is cheaper than the public list rate */
 export function hasTierPromo(quote: ActivityQuote): boolean {
-  return quote.tierLabel !== 'Standard rate'
+  return getCompareAtSubtotal(quote) > quote.activitySubtotal
 }
 
 export interface PricingCalculationResult {

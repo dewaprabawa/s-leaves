@@ -59,7 +59,7 @@ export const GEO_PRICING = [
   { activity: 'Whitewater Rafting', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+; min 2 guests)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
   { activity: 'Canyon Tubing', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
   { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: '2-hour ride, lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
-  { activity: 'Mount Batur Sunrise Jeep Tour', price: 'IDR 950,000', pax: 'per person (private · min 2 · 950k for 2 / 750k for 3+)', includes: 'private sit-in or tracking jeep, sunrise or sunset, private 4×4 + driver, hotel pickup, hot drink, Kintamani entrance fee, insurance 6–65 — meals not included; optional hot spring +IDR 150,000/person with ticket included' },
+  { activity: 'Mount Batur Private Jeep Tour', price: 'IDR 950,000', pax: 'per person (private · min 2 · 950k for 2 / 750k for 3+)', includes: 'private sit-in or tracking jeep, sunrise or sunset, private 4×4 + driver, hotel pickup, hot drink, Kintamani entrance fee, insurance 6–65 — meals not included; optional hot spring +IDR 150,000/person with ticket included' },
   { activity: 'Private Kintamani Day', price: 'IDR 1,300,000 promo', pax: 'per person (private · min 2 · was IDR 1,450,000)', includes: 'jeep or tracking, natural hot spring with ticket included, Umah Kuno coffee tasting, rice-terrace stop, hotel pickup' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 450,000 promo', pax: 'per person shared (private 1 guest IDR 633,090)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
   { activity: 'Tirta Empu Purification (Melukat)', price: 'IDR 1,200,000', pax: 'per person / private · Tirta Empul or Beji', includes: 'private shuttle pickup & drop-off (Ubud area), English-speaking guide, temple entrance, canang offering, sarong & sash, breakfast — lunch not included' },
@@ -160,7 +160,7 @@ export const GEO_TOUR_SUMMARIES = [
     url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`,
   },
   {
-    name: 'Mount Batur Sunrise Jeep Tour',
+    name: 'Mount Batur Private Jeep Tour',
     slug: 'batur-sunrise-jeep-tour',
     price: 'IDR 950,000 (2, minimum) / IDR 750,000 per person (3+)',
     duration: 'Sunrise 6–7 hours · sunset 4–5 hours',

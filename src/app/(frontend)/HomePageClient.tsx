@@ -182,11 +182,19 @@ const pricingData: PricingRow[] = [
     highlight: false,
   },
   {
-    activity: "Mount Batur Sunrise Jeep Tour",
+    activity: "Mount Batur Private Jeep Tour",
     adventureId: "jeep-sunrise",
     pax: `${formatTierPriceTable("jeep-sunrise")} · Hotel pickup included · Private or tracking · Sunrise or sunset`,
     price: getPromoListPrice("jeep-sunrise"),
     originalPrice: getListPrice("jeep-sunrise"),
+    highlight: false,
+  },
+  {
+    activity: "Private Kintamani Day",
+    adventureId: "kintamani-day",
+    pax: `${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Hot spring ticket included · Umah Kuno · Rice terrace`,
+    price: getPromoListPrice("kintamani-day"),
+    originalPrice: getListPrice("kintamani-day"),
     highlight: false,
   },
 ]

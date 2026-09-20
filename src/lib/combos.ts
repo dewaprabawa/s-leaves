@@ -15,7 +15,7 @@ export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   rafting: 'Whitewater Rafting',
   'canyon-tubing': 'Canyon Tubing',
   cycling: 'Ricefield Cycling',
-  'jeep-sunrise': 'Batur Jeep Tour',
+  'jeep-sunrise': 'Private Batur Jeep',
   'kintamani-day': 'Private Kintamani Day',
 }
 

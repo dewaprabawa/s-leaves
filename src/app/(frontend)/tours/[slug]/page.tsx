@@ -87,14 +87,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ]
     : isJeepTour(tour)
       ? [
-          "Mount Batur sunrise jeep tour",
+          "Private Mount Batur jeep tour",
           "Mount Batur jeep tour Kintamani",
           "Batur sunrise without hiking",
           "Mount Batur jeep vs trek",
           "sunrise jeep Lake Batur",
           "private 4x4 Mount Batur",
           "Mount Batur jeep pickup time",
-          "Batur jeep breakfast not included",
+          "Batur jeep meal included",
           "Sekar Bali Activity",
         ]
       : isLuwakTour(tour)
@@ -608,6 +608,11 @@ export default async function TourPage({ params }: Props) {
 
               <div className="space-y-4">
                 <div className="flex flex-wrap items-center gap-3">
+                  {isJeepTour(tour) ? (
+                    <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                      Private
+                    </span>
+                  ) : null}
                   <span className="inline-flex rounded-full bg-brand-green/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-green">
                     {getTourCategoryLabel(tour.category)}
                   </span>
@@ -697,7 +702,7 @@ export default async function TourPage({ params }: Props) {
                 {cooking
                   ? "About Tumang Bali Cooking Class"
                   : jeep
-                    ? "About the Mount Batur Sunrise Jeep Tour"
+                    ? "About the Private Mount Batur Jeep Tour"
                     : "About This Experience"}
               </h2>
               <article className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">

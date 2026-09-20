@@ -353,6 +353,13 @@ export function BookingPopup({
     } else if (activityQuote) {
       appendQuoteNotes(activityQuote, activeTour.title)
     }
+    if (activeTour.pricingActivityId === 'kintamani-day') {
+      pickupNoteParts.push(
+        'Itinerary: jeep or tracking · natural hot spring (ticket included) · meal included · Umah Kuno coffee · rice terrace',
+      )
+    } else if (activeTour.pricingActivityId === 'jeep-sunrise') {
+      pickupNoteParts.push('Sit-down meal included after the viewpoint (jeep or tracking)')
+    }
     for (const addon of selectedAddons) {
       pickupNoteParts.push(
         `${addon.label} · ${formatIdr(addon.perPerson)} × ${addonPax} person(s) (ticket included)`,
@@ -603,6 +610,17 @@ export function BookingPopup({
                   <option key={t.id} value={t.id}>{t.title}</option>
                 ))}
               </select>
+              {activeTour.pricingActivityId === 'kintamani-day' ? (
+                <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
+                  Private full-day · min 2 · promo IDR 1,300,000 (was 1,450,000): jeep or tracking,
+                  natural hot spring (ticket included), meal included, Umah Kuno coffee, rice terrace.
+                </p>
+              ) : activeTour.pricingActivityId === 'jeep-sunrise' ? (
+                <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
+                  Your private jeep or tracking · min 2 · sunrise or sunset · sit-down meal included
+                  after the viewpoint. Optional hot spring +IDR 150,000 (ticket included).
+                </p>
+              ) : null}
             </div>
           ) : (
             <div className="mb-6 pb-4 border-b border-brand-green/10 flex items-start justify-between gap-3">

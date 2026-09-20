@@ -122,7 +122,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure` },
   { name: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting` },
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },
-  { name: 'Mount Batur Sunrise Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour` },
+  { name: 'Private Mount Batur Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour` },
   { name: 'Tirta Empu Purification (Melukat)', url: `${SITE_URL}/tours/tirta-empu-purification` },
   { name: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour` },
   { name: 'Half Day Ubud & Tanah Lot', url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour` },

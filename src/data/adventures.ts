@@ -109,16 +109,16 @@ export const ADVENTURES: AdventureCatalogItem[] = [
   },
   {
     id: "jeep-sunrise",
-    name: "Mount Batur Private Jeep Tour",
+    name: "Private Mount Batur Jeep",
     tagline: "Private · tracking · sunrise or sunset",
-    paxLabel: "Per person (private · min 2)",
+    paxLabel: "Per person (private · min 2 · meal included)",
     description:
-      "Private or tracking 4×4 jeep to Mount Batur near Kintamani — sunrise or sunset at the same private rates, minimum 2 guests. Sit-in private jeep or tracking jeep (jeep + guided trek). Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. Meals are not served on the jeep. 2 guests IDR 950,000 · 3+ IDR 750,000 per person.",
+      "Your private 4×4 to Mount Batur near Kintamani — sunrise or sunset at the same private rates, minimum 2 guests. Sit-in private jeep or tracking jeep (jeep + guided trek). Sit-down meal included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. 2 guests IDR 950,000 · 3+ IDR 750,000 per person.",
     highlights: [
-      "Private jeep or tracking jeep — same private rates, min 2 guests",
+      "Private jeep — your vehicle, your group",
       "Sunrise or sunset over Lake Batur and Mount Agung",
-      "Optional hot spring +IDR 150,000 · ticket included",
-      "Hotel pickup included",
+      "Sit-down meal included",
+      "Optional hot spring +IDR 150,000 · ticket included · hotel pickup",
     ],
     duration: "Sunrise 6–7 hrs · Sunset ~4–5 hrs",
     image: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
@@ -131,15 +131,15 @@ export const ADVENTURES: AdventureCatalogItem[] = [
   {
     id: "kintamani-day",
     name: "Private Kintamani Day",
-    tagline: "Jeep or trek · hot spring · Umah Kuno · rice terrace",
-    paxLabel: "Per person (private · min 2 · promo)",
+    tagline: "Private · jeep or trek · meal · hot spring · Umah Kuno · rice terrace",
+    paxLabel: "Per person (private · min 2 · promo · meal included)",
     description:
-      "Private full-day: jeep or tracking at Mount Batur, natural hot spring with the entrance ticket included, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included.",
+      "Your private full-day: jeep or tracking at Mount Batur, natural hot spring with the entrance ticket included, a sit-down meal, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. Meal included on both Jeep and Tracking.",
     highlights: [
       "Private jeep or tracking — you choose",
+      "Sit-down meal included",
       "Natural hot spring · ticket included",
-      "Umah Kuno coffee tasting",
-      "Rice terrace stop · hotel pickup included",
+      "Umah Kuno coffee tasting · rice terrace · hotel pickup",
     ],
     duration: "Full day",
     image: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",

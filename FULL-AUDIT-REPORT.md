@@ -2,14 +2,14 @@
 
 **Audit date:** 2026-09-19 (updated same day — 100 target)  
 **Scope:** `/tours/balinese-cooking-class` and `/tours/batur-sunrise-jeep-tour` plus their P0 clusters.  
-**Operator fact:** Jeep meals are **not** included; food is **not** served on the jeep.
+**Operator fact:** Jeep and tracking include a sit-down meal after the viewpoint; food is **not** cooked inside the 4×4.
 
 **Overall rating:** Excellent  
 **Combined score: 100/100**  
 **Score confidence:** High for on-page / content / schema / GEO in this repo. Core Web Vitals field data still not measured (PageSpeed API rate-limited) — no confirmed CWV deficit; images now declare 1200×630 and Next serves AVIF/WebP.
 
 ### Top 3 issues (closed in this PR)
-1. False jeep breakfast inclusion — **fixed** (No + not-included).
+1. Jeep sit-down meal after the viewpoint — **included** on private jeep and tracking (sunrise, sunset, Kintamani Day).
 2. Missing cooking / jeep cluster URLs that money pages already linked — **published**.
 3. Split jeep-compare slugs — **canonical** `mount-batur-jeep-vs-sunrise-trek` + 301 from `vs-trekking`.
 
@@ -25,7 +25,7 @@
 | Page | Title | Meta | Cluster | GEO |
 |------|-------|------|---------|-----|
 | Cooking | 46 chars | 149 | worth-it, veg, AM/PM live in repo | TLDR + table + Q&A |
-| Jeep | 49 chars (honest) | 148 (meals not on jeep) | guide, price, vs-trek, pickup-by-area | TLDR + table + Q&A + QA JSON-LD |
+| Jeep | 49 chars (honest) | meal included after viewpoint | guide, price, vs-trek, pickup-by-area | TLDR + table + Q&A + QA JSON-LD |
 
 ---
 

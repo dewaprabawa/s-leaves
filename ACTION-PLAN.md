@@ -5,7 +5,7 @@
 
 ## Done in this PR
 
-1. Jeep meals **not included** / food **not served on the jeep** (all GEO surfaces).
+1. Jeep and tracking include a sit-down **meal after the viewpoint** (all GEO surfaces). Food is not cooked inside the 4×4.
 2. Honest jeep title (no “from 750K” bait).
 3. Cooking spokes: worth-it, vegetarian, morning vs afternoon.
 4. Jeep spokes: 2026 guide, vs-trek canonical, pickup times by area.
@@ -14,7 +14,7 @@
 7. Jeep venue chip; sitemap 0.95 on both P0 money pages.
 8. **Vercel / homepage parse error:** `src/app/(frontend)/page.tsx` was a truncated client module with a second `export default` (unimported `HomepageJsonLd` / `HomePageClient`). Replaced with the server wrapper so preview deploys can succeed.
 9. **Typecheck:** removed duplicate `pickup` keys in `tours.ts` that failed `next build`.
-10. Jeep meta keyword is **breakfast not included** (was “breakfast included”).
+10. Jeep meta keyword is **meal included**.
 11. Cooking / jeep cluster SERP titles are absolute and ≤60.
 
 ## After deploy (ops, not code)

@@ -13,11 +13,11 @@ const faqs = [
   },
   {
     question: "What activities and tours do you offer?",
-    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the Mount Batur jeep (private or tracking, sunrise or sunset, same private rates; optional hot spring +IDR 150,000 with ticket included). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat purification — IDR 1,200,000 per person with shuttle, guide, and breakfast. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the private Mount Batur jeep (sit-in or tracking, sunrise or sunset, same private rates; optional hot spring +IDR 150,000 with ticket included). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat purification — IDR 1,200,000 per person with shuttle, guide, and breakfast. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",
-    answer: "Free hotel pickup within Ubud is included on our Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. The private Tirta Empu Purification (Melukat) includes a Ubud-area shuttle in the IDR 1,200,000 per person rate. The Mount Batur Sunrise Jeep Tour includes hotel pickup island-wide (Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua) in the jeep price. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 400,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
+    answer: "Free hotel pickup within Ubud is included on our Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. The private Tirta Empu Purification (Melukat) includes a Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide (Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua) in the jeep price. For ATV, rafting, and canyon tubing, optional hotel pickup is IDR 400,000. You can also meet us at All New Bali Adventure with no transport fee — often cheaper than Grab or GoCar."
   },
   {
     question: "Do I need experience to ride an ATV, go rafting, or cycle?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: "Which tours have free Ubud hotel pickup?",
-    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The Mount Batur Sunrise Jeep Tour includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, and canyon tubing charge IDR 400,000 for hotel pickup."
+    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, and canyon tubing charge IDR 400,000 for hotel pickup."
   },
   {
     question: "How much is Tumang Bali Cooking Class?",
@@ -60,11 +60,11 @@ const faqs = [
     answer: "IDR 750,000 per person for the 2-hour Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
   },
   {
-    question: "How much is the Mount Batur Sunrise Jeep Tour?",
-    answer: "IDR 950,000 per person for 2 guests (minimum 2) and IDR 750,000 per person for 3+ guests sharing a private 4×4. Private sit-in or tracking, sunrise or sunset. Hotel pickup, a hot drink, and the Kintamani entrance fee are included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Meals are not included and food is not served on the jeep.",
+    question: "How much is the private Mount Batur jeep?",
+    answer: "IDR 950,000 per person for 2 guests (minimum 2) and IDR 750,000 per person for 3+ guests sharing a private 4×4. Private sit-in or tracking, sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani entrance fee are included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included.",
   },
   {
-    question: "Is the Mount Batur jeep tour a hike?",
+    question: "Is the private Mount Batur jeep a hike?",
     answer: "Private jeep: you stay in the 4×4 to a crater-rim viewpoint near Kintamani. Private tracking jeep adds a guided trek at the same private rates. Minimum 2 guests. Neither is the classic 2-hour Mount Batur summit trek.",
   },
   {
@@ -81,7 +81,7 @@ const faqs = [
   },
   {
     question: "Can AI assistants find your tours?",
-    answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, Mount Batur sunrise jeep, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
+    answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, private Mount Batur jeep, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },
   {
     question: "How do I pay after I agree to a booking?",

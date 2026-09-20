@@ -7,6 +7,7 @@ import { FAQSection } from "@/components/FAQSection"
 import AntiScamSection from "@/components/AntiScamSection"
 import GeoAnswerBlock from "@/components/GeoAnswerBlock"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
+import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import HomeActivitySearch from "@/components/HomeActivitySearch"
 import PromoPrice from "@/components/PromoPrice"
 import { notifyActivityClick } from "@/lib/web3forms"
@@ -96,7 +97,7 @@ const CATEGORY_SECTION_META: {
     anchor: "adventure",
     eyebrow: "Thrill days",
     title: "Adventure",
-    subtitle: "Jungle ATV, river rafting, canyon tubing, and the Mount Batur sunrise jeep tour — clear gear and insurance notes before you book.",
+    subtitle: "Jungle ATV, river rafting, canyon tubing, and a private Mount Batur jeep — sit-in or tracking, sunrise or sunset.",
   },
   {
     id: "day-tour",
@@ -123,6 +124,7 @@ type PricingRow = {
   price: number
   originalPrice?: number
   highlight: boolean
+  badge?: string
 }
 
 const pricingData: PricingRow[] = [
@@ -148,6 +150,24 @@ const pricingData: PricingRow[] = [
     price: getPromoListPrice("cycling"),
     originalPrice: getListPrice("cycling"),
     highlight: true,
+  },
+  {
+    activity: "Private Mount Batur Jeep",
+    adventureId: "jeep-sunrise",
+    pax: `${formatTierPriceTable("jeep-sunrise")} · Meal included · Sit-in or tracking · Sunrise or sunset · Hotel pickup included`,
+    price: getPromoListPrice("jeep-sunrise"),
+    originalPrice: getListPrice("jeep-sunrise"),
+    highlight: true,
+    badge: "Private",
+  },
+  {
+    activity: "Private Kintamani Day",
+    adventureId: "kintamani-day",
+    pax: `${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Meal included · Hot spring ticket included · Umah Kuno · Rice terrace`,
+    price: getPromoListPrice("kintamani-day"),
+    originalPrice: getListPrice("kintamani-day"),
+    highlight: true,
+    badge: "Private",
   },
   {
     activity: "Single ATV",
@@ -179,22 +199,6 @@ const pricingData: PricingRow[] = [
     pax: formatTierPriceTable("canyon-tubing"),
     price: getPromoListPrice("canyon-tubing"),
     originalPrice: getListPrice("canyon-tubing"),
-    highlight: false,
-  },
-  {
-    activity: "Mount Batur Private Jeep Tour",
-    adventureId: "jeep-sunrise",
-    pax: `${formatTierPriceTable("jeep-sunrise")} · Hotel pickup included · Private or tracking · Sunrise or sunset`,
-    price: getPromoListPrice("jeep-sunrise"),
-    originalPrice: getListPrice("jeep-sunrise"),
-    highlight: false,
-  },
-  {
-    activity: "Private Kintamani Day",
-    adventureId: "kintamani-day",
-    pax: `${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Hot spring ticket included · Umah Kuno · Rice terrace`,
-    price: getPromoListPrice("kintamani-day"),
-    originalPrice: getListPrice("kintamani-day"),
     highlight: false,
   },
 ]
@@ -236,8 +240,8 @@ const travelGuides = [
     href: "/blog/bali-atv-tour-ubud-guide",
   },
   {
-    title: "Mount Batur Sunrise Jeep Guide 2026",
-    excerpt: "No-hike 4×4 to the crater rim — IDR tiers, pickup times, meals not included.",
+    title: "Private Mount Batur Jeep Guide 2026",
+    excerpt: "Private 4×4 to the crater rim — sit-in or tracking, meal included, IDR tiers.",
     href: "/blog/mount-batur-sunrise-jeep-tour-guide-2026",
   },
   {
@@ -252,6 +256,8 @@ const travelGuides = [
   },
 ] as const
 
+const JEEP_BOOKABLE_TOURS = BOOKABLE_TOURS.filter((t) => t.id.startsWith("jeep-"))
+
 function toTourConfig(adv: AdventureCatalogItem): TourConfig {
   return {
     id: adv.id,
@@ -263,6 +269,25 @@ function toTourConfig(adv: AdventureCatalogItem): TourConfig {
     freeUbudPickup: adv.freeUbudPickup ?? false,
     pickupIncluded: adv.pickupIncluded ?? false,
   }
+}
+
+function bookingSetupForAdventure(adventureId: string): {
+  tour: TourConfig
+  tourOptions?: TourConfig[]
+} | null {
+  if (adventureId === "kintamani-day") {
+    const tour = BOOKABLE_TOURS.find((t) => t.id === "jeep-kintamani-day")
+    if (!tour) return null
+    return { tour, tourOptions: JEEP_BOOKABLE_TOURS }
+  }
+  if (adventureId === "jeep-sunrise") {
+    const tour = BOOKABLE_TOURS.find((t) => t.id === "jeep-sunrise")
+    if (!tour) return null
+    return { tour, tourOptions: JEEP_BOOKABLE_TOURS }
+  }
+  const adv = ADVENTURES.find((a) => a.id === adventureId)
+  if (!adv) return null
+  return { tour: toTourConfig(adv) }
 }
 
 function ExperienceCard({ tour }: { tour: Tour }) {
@@ -280,6 +305,11 @@ function ExperienceCard({ tour }: { tour: Tour }) {
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
         />
+        {tour.slug === "batur-sunrise-jeep-tour" ? (
+          <span className="absolute top-3 left-3 bg-accent-gold text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">
+            Private
+          </span>
+        ) : null}
       </div>
       <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-accent-gold-dark mb-2">
         {getTourCategoryLabel(tour.category)}
@@ -307,6 +337,7 @@ function ExperienceCard({ tour }: { tour: Tour }) {
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set())
   const [bookingTour, setBookingTour] = useState<TourConfig | null>(null)
+  const [bookingTourOptions, setBookingTourOptions] = useState<TourConfig[] | undefined>()
   const [bookingOpen, setBookingOpen] = useState(false)
   const [bookingMixIds, setBookingMixIds] = useState<string[]>([])
   const [storyIndex, setStoryIndex] = useState(0)
@@ -316,9 +347,10 @@ export default function Home() {
   const cultureCombo = getCyclingCookingCombo()
 
   const openBooking = (adventureId: string, mixIds: string[] = []) => {
-    const adv = ADVENTURES.find((a) => a.id === adventureId)
-    if (!adv) return
-    setBookingTour(toTourConfig(adv))
+    const setup = bookingSetupForAdventure(adventureId)
+    if (!setup) return
+    setBookingTour(setup.tour)
+    setBookingTourOptions(setup.tourOptions)
     setBookingMixIds(mixIds)
     setBookingOpen(true)
   }
@@ -362,8 +394,10 @@ export default function Home() {
         onClose={() => {
           setBookingOpen(false)
           setBookingMixIds([])
+          setBookingTourOptions(undefined)
         }}
         tour={bookingTour}
+        tourOptions={bookingTourOptions}
         initialMixIds={bookingMixIds}
       />
 
@@ -394,22 +428,22 @@ export default function Home() {
               <span className="hero-headline-accent">booked clear</span>
             </h1>
             <p className="hero-subcopy text-base md:text-lg max-w-md mb-8 animate-fade-in-up-delay-2">
-              Tumang cooking class &amp; Pejeng ricefield cycling near Ubud — free hotel pickup, clear IDR, WhatsApp booking.
+              Private Mount Batur jeep, Tumang cooking class, and Pejeng cycling — your vehicle, clear IDR, WhatsApp booking.
             </p>
             <div className="w-full max-w-xl space-y-3 animate-fade-in-up-delay-3">
               <HomeActivitySearch />
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="#experiences"
+                  href="/tours/batur-sunrise-jeep-tour"
                   className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
                 >
-                  Browse experiences
+                  Book private jeep
                 </Link>
                 <Link
-                  href="/book"
+                  href="#experiences"
                   className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full bg-white/15 border-2 border-white/70 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/25 hover:border-white transition-colors backdrop-blur-sm"
                 >
-                  Open booking
+                  Browse experiences
                 </Link>
               </div>
             </div>
@@ -460,7 +494,7 @@ export default function Home() {
               Top picks near Ubud
             </h2>
             <p className="text-lg text-brand-green-light">
-              Start with Tumang cooking class and Pejeng ricefield cycling — then ATV, the Mount Batur sunrise jeep, rafting, and private day tours.
+              Start with a private Mount Batur jeep — then Tumang cooking class, Pejeng cycling, ATV, and private day tours.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
@@ -575,7 +609,7 @@ export default function Home() {
               Core activity packages
             </h2>
             <p className="text-lg text-brand-green-light max-w-2xl mx-auto">
-              Ricefield cycling with free Ubud pickup, plus ATV and river days — book in minutes on WhatsApp.
+              Ricefield cycling with free Ubud pickup, a private Mount Batur jeep, plus ATV and river days — book in minutes on WhatsApp.
             </p>
           </div>
 
@@ -604,6 +638,11 @@ export default function Home() {
                     <div className="absolute top-4 right-4">
                       <PromoPrice price={price} originalPrice={original} variant="badge" from />
                     </div>
+                    {(adv.id === "jeep-sunrise" || adv.id === "kintamani-day") ? (
+                      <div className="absolute top-4 left-4 bg-accent-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
+                        Private
+                      </div>
+                    ) : null}
                     <div className="absolute bottom-4 left-4 flex items-center gap-2 text-sand text-sm font-medium">
                       <Clock3 className="w-4 h-4" />
                       <span>{adv.duration}</span>
@@ -643,7 +682,10 @@ export default function Home() {
                         onClick={() => openBooking(adv.id)}
                         className="w-full flex items-center justify-center gap-2 h-12 bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-ink-soft transition-colors"
                       >
-                        Book now <ArrowRight className="w-4 h-4" />
+                        {(adv.id === "jeep-sunrise" || adv.id === "kintamani-day")
+                          ? "Book private"
+                          : "Book now"}{" "}
+                        <ArrowRight className="w-4 h-4" />
                       </button>
                     </div>
                   </div>
@@ -740,7 +782,7 @@ export default function Home() {
               >
                 {item.highlight && (
                   <span className="absolute -top-3 left-6 bg-accent-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
-                    Culture pick
+                    {item.badge ?? "Culture pick"}
                   </span>
                 )}
                 <div className="flex flex-col sm:flex-row items-center gap-4 flex-1">
@@ -766,7 +808,7 @@ export default function Home() {
                       href={item.bookHref}
                       className="hidden sm:inline-flex items-center h-10 px-6 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
                     >
-                      Book
+                      {item.badge === "Private" ? "Book private" : "Book"}
                     </Link>
                   ) : (
                     <button
@@ -774,7 +816,7 @@ export default function Home() {
                       onClick={() => item.adventureId && openBooking(item.adventureId)}
                       className="hidden sm:inline-flex items-center h-10 px-6 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
                     >
-                      Book
+                      {item.badge === "Private" ? "Book private" : "Book"}
                     </button>
                   )}
                 </div>
@@ -783,7 +825,7 @@ export default function Home() {
                     href={item.bookHref}
                     className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
                   >
-                    Book Now
+                    {item.badge === "Private" ? "Book private" : "Book Now"}
                   </Link>
                 ) : (
                   <button
@@ -791,7 +833,7 @@ export default function Home() {
                     onClick={() => item.adventureId && openBooking(item.adventureId)}
                     className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
                   >
-                    Book Now
+                    {item.badge === "Private" ? "Book private" : "Book Now"}
                   </button>
                 )}
               </div>

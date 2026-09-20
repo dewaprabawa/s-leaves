@@ -38,7 +38,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "adventure",
     label: TOUR_CATEGORY_LABELS.adventure,
-    blurb: "ATV, rafting, canyon tubing & Mount Batur sunrise jeep",
+    blurb: "Private Mount Batur jeep, ATV, rafting & canyon tubing",
     href: "/#adventure",
   },
   {
@@ -69,10 +69,10 @@ export type PackageCard = {
 export function getCatalogTopPicks(): Tour[] {
   const picks = getTopPickTours()
   const priority = [
+    'batur-sunrise-jeep-tour',
     'balinese-cooking-class',
     'tirta-empu-purification',
     'ubud-ricefield-cycling-tour',
-    'batur-sunrise-jeep-tour',
     'bali-atv-adventure',
   ]
   const ranked = [...picks].sort((a, b) => {

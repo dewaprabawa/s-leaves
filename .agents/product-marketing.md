@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.5
+**Document version:** v2.6
 **Last updated:** 2026-09-20
 
 ## Product Overview
@@ -18,7 +18,7 @@
 - Experience a thrilling ATV jungle ride safely as a beginner
 - Combine land + water (ATV + tubing) or culture (cycling + cooking) in one day
 - Do authentic Pejeng village cycling, cooking, or a private Ubud day tour with clear logistics
-- Watch Mount Batur sunrise over Lake Batur without the 2-hour summit hike
+- Watch Mount Batur sunrise over Lake Batur in a **private** 4×4 (no 2-hour summit hike)
 **Use cases:**
 - Honeymoon / couple tandem ATV
 - Family half-day rafting or tubing
@@ -26,14 +26,14 @@
 - Cycling + afternoon Tumang Bali Cooking Class combo
 - Private full-day Ubud or Tanah Lot sunset tour
 - Coffee plantation tasting as a calm morning stop
-- Pre-dawn Mount Batur sunrise 4×4 jeep from Ubud or south Bali (families / non-hikers)
+- Pre-dawn **private** Mount Batur jeep from Ubud or south Bali (families / non-hikers)
 
 ## Personas
 | Persona | Cares about | Challenge | Value we promise |
 |---------|-------------|-----------|------------------|
 | Couple in Ubud | Private feel, photos, easy booking | Crowded mass tours, unclear pickup fees | Small-group / private ATV, WhatsApp confirm, transparent IDR |
 | Family with kids | Safety, inclusions, logistics | “Is it beginner-friendly? What’s included?” | Gear, lunch, insurance, English guide, clear child notes |
-| Non-hiker / jeep guest | Caldera sunrise without 2 AM lava walk | “Is the Batur jeep the summit hike?” | Honest crater-rim 4×4, meals not included, island-wide pickup |
+| Non-hiker / jeep guest | Caldera sunrise without 2 AM lava walk | “Is the Batur jeep the summit hike?” | Honest crater-rim 4×4, sit-down meal after the viewpoint, island-wide pickup |
 | Culture traveler | Authentic village, not Tegallalang crowds | Touristy rice terraces | Pejeng cycling, home visit, lunch, free Ubud pickup |
 | Food traveler | Hands-on cooking / tasting | Hard to compare class quality & price | Tumang cooking class + coffee experience with clear IDR |
 
@@ -69,7 +69,7 @@
 | “Is WhatsApp booking legit?” | No upfront payment to inquire; confirm date/price first; corporate office matches Google Business Profile |
 | “Where do I meet for ATV?” | Activity base: All New Bali Adventure in Pejeng — or book hotel pickup |
 | “Is it beginner-friendly?” | Full safety briefing, gear, English-speaking guide; no experience required |
-| “What’s included vs extras?” | Lunch/gear/insurance on ATV; cycling includes lunch + free Ubud pickup; Tumang cooking includes Ubud pickup; Batur jeep includes island-wide pickup (meals not included — no food on the jeep); ATV/rafting/tubing hotel pickup is IDR 400K |
+| “What’s included vs extras?” | Lunch/gear/insurance on ATV; cycling includes lunch + free Ubud pickup; Tumang cooking includes Ubud pickup; Batur jeep includes island-wide pickup and a sit-down meal after the viewpoint (not cooked inside the 4×4); ATV/rafting/tubing hotel pickup is IDR 400K |
 | “Do you only do sports?” | No — also cooking class, coffee, village cycling, private day tours, and a no-hike Mount Batur sunrise jeep |
 | “Is the Batur jeep a hike?” | No — private 4×4 to a crater-rim viewpoint (~1,350m), not the summit trek |
 
@@ -94,8 +94,8 @@
 - “Pejeng village cycling”
 - “All New Bali Adventure ATV”
 - “WhatsApp booking”
-**Words to use:** activities, experiences, day tours, private, all-inclusive, Pejeng, Ubud, Tumang Bali Cooking Class, All New Bali Adventure, WhatsApp, free Ubud pickup (cycling + Tumang cooking), island-wide pickup (Batur jeep), beginner-friendly, insurance, lunch included, Mount Batur sunrise jeep, Kintamani, no hike, crater rim, meals not included (jeep)
-**Words to avoid:** luxury spa fluff, vague “best in Bali,” unpaid “guaranteed,” claiming free pickup on ATV/rafting/tubing, claiming the jeep reaches the Mount Batur summit, claiming breakfast or food is served on the jeep, sports-only framing as the whole brand
+**Words to use:** activities, experiences, day tours, private, all-inclusive, Pejeng, Ubud, Tumang Bali Cooking Class, All New Bali Adventure, WhatsApp, free Ubud pickup (cycling + Tumang cooking), island-wide pickup (Batur jeep), beginner-friendly, insurance, lunch included, Mount Batur sunrise jeep, Kintamani, no hike, crater rim, meal included after the viewpoint (jeep and tracking)
+**Words to avoid:** luxury spa fluff, vague “best in Bali,” unpaid “guaranteed,” claiming free pickup on ATV/rafting/tubing, claiming the jeep reaches the Mount Batur summit, claiming food is cooked or served inside the 4×4, sports-only framing as the whole brand
 **Glossary:**
 | Term | Meaning |
 |------|---------|
@@ -129,6 +129,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.6 (2026-09-20) — Promote Mount Batur jeep and Kintamani Day as **private** (lead with Private in names, CTAs, homepage). Sit-down meal included after the viewpoint on jeep and tracking.
 - v2.5 (2026-09-20) — Rafting and canyon tubing list at **IDR 500,000**, discount **IDR 450,000** for 2+ guests (rafting still min 2). Removed 359K tubing and 475K mid rafting tier.
 - v2.4 (2026-09-20) — GEO/SEO now covers **every** bookable activity (ATV, rafting, tubing, cycling, coffee, full-day Ubud, Tanah Lot half-day) plus a hub article for things to do near Ubud. Same pickup and jeep-meal rules as v2.3.
 - v2.3 (2026-09-19) — Jeep meals are **not included**. Do not claim breakfast or other food is served on the Mount Batur sunrise jeep.

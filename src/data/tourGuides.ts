@@ -231,14 +231,14 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Jeep next to cooking, cycling, and ATV in one table.',
     },
     {
-      title: 'Mount Batur jeep tour price guide (2026)',
+      title: 'Private Mount Batur jeep price guide (2026)',
       href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026',
-      blurb: 'Private · min 2 guests · pair and group IDR tiers plus pickup — meals not included.',
+      blurb: 'Private · min 2 guests · pair and group IDR tiers plus pickup — meal included.',
     },
     {
       title: 'Jeep vs sunrise trek',
       href: '/blog/mount-batur-jeep-vs-sunrise-trek',
-      blurb: 'Crater-rim 4×4 vs the 2-hour summit walk — meals not included.',
+      blurb: 'Crater-rim 4×4 vs the 2-hour summit walk — meal included on the jeep.',
     },
     {
       title: 'Pickup times from Canggu, Seminyak & Ubud',
@@ -246,9 +246,9 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Island-wide 02:00–03:00 clock — south Bali earliest.',
     },
     {
-      title: 'Mount Batur sunrise jeep guide 2026',
+      title: 'Private Mount Batur jeep guide 2026',
       href: '/blog/mount-batur-sunrise-jeep-tour-guide-2026',
-      blurb: 'Hour-by-hour itinerary and what to bring (no meals on the jeep).',
+      blurb: 'Hour-by-hour itinerary and what to bring — sit-down meal included.',
     },
     {
       title: 'Ubud hotel pickup explained',
@@ -312,7 +312,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'batur-sunrise-jeep-tour': {
     title: 'From our Kintamani jeep drivers',
-    body: 'We run the pre-dawn 4×4 tracks on Mount Batur’s eastern flank most mornings — hotel pickup and a hot drink on the way up to the crater-rim viewpoint (~1,350m). Meals are not included and we do not serve food on the jeep; bring a snack if you want to eat. This is not the summit trek: you stay in the jeep and watch Lake Batur and Mount Agung light up without a 2-hour hike in the dark.',
+    body: 'We run the pre-dawn 4×4 tracks on Mount Batur’s eastern flank most mornings — hotel pickup, a hot drink on the way up, and a sit-down meal after the crater-rim viewpoint (~1,350m). This is not the summit trek: you stay in the jeep (or walk with a tracking guide) and watch Lake Batur and Mount Agung light up without a 2-hour hike in the dark.',
   },
   'luwak-coffee-plantation': {
     title: 'From our Umah Kuno hosts',

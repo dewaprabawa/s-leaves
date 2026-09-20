@@ -17,7 +17,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Inside Tumang cooking class', href: '/blog/inside-balinese-cooking-class-pejeng' },
   { label: 'Cooking class Ubud price 2026', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
   { label: 'Vegetarian cooking class Ubud', href: '/blog/vegetarian-vegan-cooking-class-ubud' },
-  { label: 'Mount Batur sunrise jeep', href: '/tours/batur-sunrise-jeep-tour' },
+  { label: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
   { label: 'Batur jeep tour guide', href: '/blog/mount-batur-sunrise-jeep-tour-guide-2026' },
   { label: 'Batur jeep vs sunrise trek', href: '/blog/mount-batur-jeep-vs-sunrise-trek' },
   { label: 'Batur jeep pickup times', href: '/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026' },

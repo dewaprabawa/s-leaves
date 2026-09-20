@@ -276,7 +276,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
   },
   {
     id: "batur-sunrise-jeep-tour",
-    title: "Mount Batur Private Jeep Tour",
+    title: "Private Mount Batur Jeep Tour",
     slug: "batur-sunrise-jeep-tour",
     category: "adventure",
     area: "Kintamani / Mount Batur",
@@ -285,9 +285,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     isTopPick: true,
     duration: "Sunrise 6–7 Hours · Sunset 4–5 Hours",
     basePrice: 950000,
-    seoTitle: "Mount Batur Private Jeep | Sunrise or Sunset",
+    seoTitle: "Private Mount Batur Jeep | Sunrise or Sunset",
     seoDescription:
-      "Private jeep or tracking, sunrise or sunset — min 2 guests. Same private rates. Hot spring +IDR 150K with ticket. Pickup included. 2 pax 950K · 3+ 750K.",
+      "Private jeep or tracking, sunrise or sunset — min 2 guests. Meal included. Hot spring +IDR 150K with ticket. 2 pax 950K · 3+ 750K.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
@@ -313,8 +313,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       },
     ],
     shortDescription:
-      "Private 4×4 jeep to Mount Batur near Kintamani — private sit-in or tracking (jeep + guided trek), sunrise or sunset, minimum 2 guests. Same private rates. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. Meals are not served on the jeep. 2 guests IDR 950,000 · 3+ IDR 750,000 per person.",
-    fullDescription: `**What is the Mount Batur Jeep Tour?** It is a **private** 4×4 jeep on Mount Batur’s volcanic tracks near Kintamani — about 1,350 metres above sea level — for **sunrise or sunset** over **Lake Batur** and **Mount Agung**. **Minimum 2 guests.** Choose **private jeep** (stay seated, no hike) or **private tracking jeep** (jeep plus a guided trek to the viewpoint). Both variants use the same private per-person rates. A local driver, hot drink, and hotel pickup are included. **Meals are not included** — we do not serve food on the jeep. **IDR 950,000 per person** for 2 guests, or **IDR 750,000 per person** once 3+ guests share one jeep.
+      "Your private 4×4 to Mount Batur near Kintamani — sit-in or tracking (jeep + guided trek), sunrise or sunset, minimum 2 guests. Same private rates. Meal included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. 2 guests IDR 950,000 · 3+ IDR 750,000 per person.",
+    fullDescription: `**What is the Private Mount Batur Jeep Tour?** It is **your private** 4×4 jeep on Mount Batur’s volcanic tracks near Kintamani — about 1,350 metres above sea level — for **sunrise or sunset** over **Lake Batur** and **Mount Agung**. **Minimum 2 guests.** Choose **private jeep** (stay seated, no hike) or **private tracking jeep** (jeep plus a guided trek to the viewpoint). Both variants use the same private per-person rates. A local driver, hot drink, **sit-down meal**, and hotel pickup are included. Food is not cooked inside the 4×4 — the meal is after the viewpoint. **IDR 950,000 per person** for 2 guests, or **IDR 750,000 per person** once 3+ guests share one jeep.
 
 ### Private jeep or tracking jeep
 **Private jeep** is the no-hike option: you stay in the 4×4 to a crater-rim viewpoint on Mount Batur’s eastern flank. **Private tracking jeep** is the trek variant: the same private jeep plus a guided walk to the viewpoint — same 2 / 3+ private prices, not a cheaper shared hike.
@@ -339,7 +339,7 @@ Choose **sunrise** or **sunset** in the booking form — same private rates, min
 | --- | --- | --- |
 | Pickup | 02:00–03:00 AM | 14:30–15:30 |
 | Duration | ~6–7 hours | ~4–5 hours |
-| Price | Same private 2 / 3+ rates | Same private 2 / 3+ rates |
+| Price | Same private 2 / 3+ rates · meal included | Same private 2 / 3+ rates · meal included |
 | Hot spring add-on | Optional +IDR 150,000 (ticket included) | Optional +IDR 150,000 (ticket included) |
 
 Confirm the exact window on WhatsApp with your hotel area.
@@ -348,7 +348,7 @@ Confirm the exact window on WhatsApp with your hotel area.
 We collect you from your hotel. At the Kintamani base camp you transfer into a rugged 4×4 with an experienced local driver, who navigates the dirt and lava-rock tracks toward the viewpoint while a hot drink is served. Private-jeep guests stay with the vehicle; tracking-jeep guests continue on foot with a guide.
 
 ### Viewpoint
-Watch the light change over Lake Batur and Mount Agung from the crater-rim viewpoint. Bring a snack if you want to eat — we do not provide breakfast or other meals on the jeep.
+Watch the light change over Lake Batur and Mount Agung from the crater-rim viewpoint. A sit-down **meal is included** after you come down — on private jeep and tracking jeep, sunrise or sunset.
 
 ### Optional Batur hot spring
 Add a soak at a Batur / Toya Devasya hot spring after sunrise or sunset for **IDR 150,000 per person** on top of the jeep rate. **The hot-spring entrance ticket is included** in that add-on — you do not pay a second ticket at the gate. Choose it in the booking form on any jeep variant.
@@ -357,30 +357,38 @@ Add a soak at a Batur / Toya Devasya hot spring after sunrise or sunset for **ID
 On the way back we can swing by a local Kintamani coffee plantation for a short, no-obligation stop. For a dedicated ethical tasting near Ubud, see [Luwak Coffee Plantation (Umah Kuno)](/tours/luwak-coffee-plantation). Full sunrise itinerary: [Batur sunrise jeep guide 2026](/blog/mount-batur-sunrise-jeep-tour-guide-2026).
 
 ### Private Kintamani Day (promo)
-A private full-day add-on itinerary: **jeep or tracking**, **natural hot spring** (entrance ticket included), **Umah Kuno coffee**, and a **rice terrace** stop. Minimum 2 guests. **Promo IDR 1,300,000 per person** (was IDR 1,450,000). Hotel pickup included. Choose **Private Kintamani Day — Jeep** or **Private Kintamani Day — Tracking** in the booking form.
+A private full-day itinerary: **jeep or tracking**, **natural hot spring** (entrance ticket included), **meal included**, **Umah Kuno coffee**, and a **rice terrace** stop. Minimum 2 guests. **Promo IDR 1,300,000 per person** (was IDR 1,450,000). Hotel pickup included. Choose **Private Kintamani Day — Jeep** or **Private Kintamani Day — Tracking** in the booking form — **both include the meal**.
 
-Typical flow: pre-dawn jeep or trek at Batur → Toya Devasya / Batur hot spring → Umah Kuno tasting in Tampaksiring → rice terrace (Tegalalang) → hotel drop-off.
+| Stop | What you do |
+| --- | --- |
+| Jeep or tracking | Mount Batur crater-rim 4×4 — sit-in jeep or jeep + guided trek |
+| Natural hot spring | Toya Devasya / Batur soak — **entrance ticket included** |
+| Meal | Sit-down meal included after the jeep/trek and hot spring |
+| Umah Kuno | Coffee tasting at the Bali Umah Kuno coffee place (Tampaksiring) |
+| Rice terrace | Tegalalang (or nearby) rice-terrace stop, then hotel drop-off |
+
+Typical clock: pre-dawn Batur jeep or trek → hot spring → meal → Umah Kuno → rice terrace → hotel.
 
 ### Group-Friendly Pricing
 A private jeep costs the same whether two or three people ride, so the per-person rate drops the more guests you bring. Tracking jeep uses these same private tiers. **Minimum 2 guests.**
 
 | Guests in one jeep | Price per person (IDR) |
 | --- | --- |
-| 2 (minimum) | 950,000 |
-| 3+ | 750,000 |
+| 2 (minimum) | 950,000 · meal included |
+| 3+ | 750,000 · meal included |
 | Hot spring add-on (any jeep) | +150,000 (ticket included) |
-| Private Kintamani Day (jeep or tracking) | 1,300,000 promo (was 1,450,000) |
+| Private Kintamani Day (jeep or tracking) | 1,300,000 promo (was 1,450,000) · meal included |
 
 Hotel pickup and drop-off are built into those rates (not the IDR 400,000 ATV/rafting pickup add-on). Message WhatsApp with your guest count for an exact quote.
 
 ### What to bring
-Warm layer (it is cold on the rim before sunrise), closed shoes — especially on tracking jeep — phone/camera, a snack if you want to eat, swimwear and a towel if you add the hot spring, and a little cash if you want coffee-plantation souvenirs. We handle the jeep, driver, entrance fee, hot drink, and insurance for ages 6–65. Food is not included.`,
+Warm layer (it is cold on the rim before sunrise), closed shoes — especially on tracking jeep — phone/camera, swimwear and a towel if you add the hot spring or book Private Kintamani Day, and a little cash if you want coffee-plantation souvenirs. We handle the jeep, driver, entrance fee, hot drink, **sit-down meal**, and insurance for ages 6–65. Food is not cooked inside the 4×4 — the included meal is after the viewpoint (sunrise, sunset, tracking, and Private Kintamani Day).`,
     highlights: [
-      "Private jeep or tracking jeep — same private rates, min 2 guests",
+      "Private jeep — your vehicle, your group (sit-in or tracking)",
       "Sunrise or sunset over Lake Batur and Mount Agung",
       "Optional Batur hot spring +IDR 150,000 (ticket included)",
-      "Private Kintamani Day promo IDR 1,300,000 (hot spring + Umah Kuno + rice terrace)",
-      "Hot drink en route · meals not included",
+      "Private Kintamani Day promo IDR 1,300,000 (meal + hot spring + Umah Kuno + rice terrace)",
+      "Hot drink en route · sit-down meal included (jeep and tracking)",
       "Per-person price drops the more guests share a jeep",
     ],
     included: [
@@ -391,10 +399,11 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
       "Guided trek on the tracking jeep variant",
       "Hot-spring entrance ticket when you add the +IDR 150,000 option, or on Private Kintamani Day",
       "Umah Kuno coffee tasting and rice-terrace stop on Private Kintamani Day",
+      "Sit-down meal after the viewpoint (private jeep, tracking, sunrise, sunset, and Kintamani Day)",
       "Insurance for ages 6–65",
     ],
     notIncluded: [
-      "Food / meals — breakfast is not included and is not served on the jeep",
+      "Food cooked or served inside the 4×4 — the included meal is after the viewpoint",
       "Hot spring unless you add the +IDR 150,000 option (ticket is then included)",
       "Coffee plantation purchases (the stop itself is free to visit)",
       "Personal expenses",
@@ -427,13 +436,20 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
         time: "06:00 AM",
         title: "Sunrise at the crater rim",
         description:
-          "Watch the sunrise over Lake Batur and Mount Agung from the crater-rim viewpoint. Meals are not served on the jeep — bring a snack if you want to eat.",
+          "Watch the sunrise over Lake Batur and Mount Agung from the crater-rim viewpoint. A sit-down meal is included after you come down — private jeep and tracking jeep.",
       },
       {
         id: "iti-jeep-5",
         time: "06:45 AM",
         title: "Return to Base Camp",
         description: "Head back down the volcanic tracks to the jeep parking area at base camp.",
+      },
+      {
+        id: "iti-jeep-meal",
+        time: "After viewpoint",
+        title: "Meal included (jeep or tracking)",
+        description:
+          "Sit-down meal included on every private jeep and tracking option — sunrise, sunset, and Private Kintamani Day. Food is not cooked inside the 4×4.",
       },
       {
         id: "iti-jeep-6",
@@ -462,20 +478,55 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
           "Sunset jeep or tracking: afternoon pickup 14:30–15:30, then the same crater-rim viewpoint over Lake Batur and Mount Agung. Same private rates as sunrise. Optional hot spring after sunset.",
       },
       {
-        id: "iti-kintamani-day",
-        time: "Full day (Private Kintamani Day)",
-        title: "Jeep or trek · hot spring · Umah Kuno · rice terrace",
+        id: "iti-kintamani-day-1",
+        time: "02:30–03:00 (Private Kintamani Day)",
+        title: "Hotel pickup — full-day private",
         description:
-          "Promo itinerary (min 2 guests): private jeep or tracking at Batur, natural hot spring with entrance ticket included, Umah Kuno coffee tasting, then a rice-terrace stop. Promo IDR 1,300,000 per person (was IDR 1,450,000).",
+          "Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. Choose jeep (sit-in) or tracking (jeep + trek) in the booking form.",
+      },
+      {
+        id: "iti-kintamani-day-2",
+        time: "Sunrise",
+        title: "Jeep or tracking at Mount Batur",
+        description:
+          "Private 4×4 to the crater-rim viewpoint — stay in the jeep, or continue with a guided trek. Same private Kintamani Day promo rate either way.",
+      },
+      {
+        id: "iti-kintamani-day-3",
+        time: "Morning",
+        title: "Natural hot spring (ticket included)",
+        description:
+          "Soak at Toya Devasya / Batur. The hot-spring entrance ticket is included in this itinerary — no second ticket at the gate.",
+      },
+      {
+        id: "iti-kintamani-day-meal",
+        time: "Late morning",
+        title: "Meal included (jeep or tracking)",
+        description:
+          "Sit-down meal included on Private Kintamani Day — same on the jeep variant and the tracking variant, and the same meal inclusion as sunrise/sunset private jeep.",
+      },
+      {
+        id: "iti-kintamani-day-4",
+        time: "Late morning",
+        title: "Umah Kuno coffee tasting",
+        description:
+          "Stop at the Bali Umah Kuno coffee place in Tampaksiring for a tasting (not the optional Kintamani roadside plantation on the short jeep).",
+      },
+      {
+        id: "iti-kintamani-day-5",
+        time: "Afternoon",
+        title: "Rice terrace, then hotel drop-off",
+        description:
+          "Rice-terrace stop (typically Tegalalang), then private drop-off back at your hotel.",
       },
     ],
     addons: [],
     faqs: [
       {
         id: "faq-jeep-1",
-        question: "How much does the Mount Batur Sunrise Jeep Tour cost?",
+        question: "How much does the private Mount Batur jeep cost?",
         answer:
-          "IDR 950,000 per person for 2 guests sharing a private jeep (minimum 2), and IDR 750,000 per person for 3 or more guests. Private jeep and tracking jeep use these same private rates, for sunrise or sunset. Private jeep, driver, hotel pickup, and a hot drink are included. Meals are not included — we do not serve food on the jeep. Optional Batur hot spring is +IDR 150,000 per person with the entrance ticket included. Message WhatsApp with your guest count for an exact quote.",
+          "IDR 950,000 per person for 2 guests sharing a private jeep (minimum 2), and IDR 750,000 per person for 3 or more guests. Private jeep and tracking jeep use these same private rates, for sunrise or sunset. Private jeep, driver, hotel pickup, a hot drink, and a sit-down meal are included. Optional Batur hot spring is +IDR 150,000 per person with the entrance ticket included. Message WhatsApp with your guest count for an exact quote.",
       },
       {
         id: "faq-jeep-2",
@@ -505,7 +556,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
         id: "faq-kintamani-day",
         question: "What is Private Kintamani Day, and how much does it cost?",
         answer:
-          "Private Kintamani Day is a full-day private itinerary: jeep or tracking at Mount Batur, a natural hot spring (entrance ticket included), Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. Choose Jeep or Tracking in the booking form.",
+          "Private Kintamani Day is a full-day private itinerary: jeep or tracking at Mount Batur, a natural hot spring (entrance ticket included), a sit-down meal, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. The meal is included on both the Jeep and Tracking options. Choose Jeep or Tracking in the booking form.",
       },
       {
         id: "faq-jeep-hs",
@@ -517,7 +568,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
         id: "faq-jeep-4",
         question: "Is breakfast included?",
         answer:
-          "No. Breakfast and other meals are not included. We do not serve food on the jeep. Bring a snack if you want to eat at the crater-rim viewpoint. A hot drink on the way up is included.",
+          "Yes. A sit-down meal is included on every private jeep and tracking option — sunrise, sunset, and Private Kintamani Day. Food is not cooked inside the 4×4; you eat after the viewpoint. A hot drink on the way up is included.",
       },
       {
         id: "faq-jeep-5",
@@ -545,15 +596,15 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
       },
       {
         id: "faq-jeep-9",
-        question: "How long is the Mount Batur Sunrise Jeep Tour?",
+        question: "How long is the private Mount Batur jeep?",
         answer:
-          "Sunrise is about 6–7 hours door to door. Sunset is about 4–5 hours. Both include hotel pickup, the jeep ride, time at the viewpoint, optional coffee or hot spring, and drop-off. Meals are not included.",
+          "Sunrise is about 6–7 hours door to door. Sunset is about 4–5 hours. Both include hotel pickup, the jeep ride, time at the viewpoint, a sit-down meal, optional coffee or hot spring, and drop-off. Private Kintamani Day (jeep or tracking) is a full day and also includes a meal.",
       },
       {
         id: "faq-jeep-10",
         question: "What should I wear for a Batur jeep tour?",
         answer:
-          "A warm layer (it is cold before sunrise at ~1,350m), closed shoes — required on tracking jeep — and a jacket you can peel off after the sun is up. Bring a camera and a snack if you want to eat — meals are not included. A hot drink is included. Pack swimwear and a towel if you add the hot spring.",
+          "A warm layer (it is cold before sunrise at ~1,350m), closed shoes — required on tracking jeep — and a jacket you can peel off after the sun is up. Bring a camera. A sit-down meal is included after the viewpoint on jeep and tracking (sunrise, sunset, and Private Kintamani Day). A hot drink is included. Pack swimwear and a towel if you add the hot spring or book Kintamani Day.",
       },
       {
         id: "faq-jeep-11",
@@ -1034,7 +1085,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
 
 Bali is world-renowned for its coffee, but the story behind the cup is often hidden from visitors. Our Luwak Coffee Plantation Experience at the beautiful **Umah Kuno** estate offers you a transparent, ethical, and deeply educational look into how Bali's most famous export is cultivated, processed, and enjoyed. 
 
-This standalone 1.5-hour experience is perfect for a relaxing morning or a slow afternoon in the jungle. It is designed for coffee lovers, culture enthusiasts, and families looking for a peaceful escape into nature. It is a dedicated tasting at Umah Kuno near Ubud — not the short optional Kintamani coffee stop on our [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour).
+This standalone 1.5-hour experience is perfect for a relaxing morning or a slow afternoon in the jungle. It is designed for coffee lovers, culture enthusiasts, and families looking for a peaceful escape into nature. It is a dedicated tasting at Umah Kuno near Ubud — not the short optional Kintamani coffee stop on our [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour).
 
 ### The Umah Kuno Difference: Ethical and Authentic
 The highlight of this tour is learning about *Kopi Luwak*, the most expensive and exclusive coffee in the world, famous for its incredibly smooth, non-bitter taste. The coffee is made from beans that have been naturally fermented in the digestive tract of the Asian Palm Civet (the *Luwak*). 

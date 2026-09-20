@@ -577,7 +577,7 @@ export function BookingPopup({
             <div className="mb-6 pb-4 border-b border-brand-green/10">
               <p className="text-brand-green font-bold text-sm mb-1">Mix activities (combo)</p>
               <p className="text-brand-green-light text-xs mb-3 leading-relaxed">
-                Add tubing, rafting, or ATV for a same-day package. Combos save 10% (2 activities) or 12% (3+).
+                Add ATV, tubing, or rafting for a same-day package with ATV. Combos save 10% (2 activities) or 12% (3+).
               </p>
               <div className="space-y-2">
                 {mixOptions.map((opt) => {

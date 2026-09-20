@@ -64,7 +64,7 @@ export default function BookSalesCheckout({
             Popular activity combos
           </h2>
           <p className="text-sm text-brand-green-light mt-2 max-w-2xl">
-            Mix ATV, canyon tubing, and rafting in one day. Combos save 10% for two activities or
+            Mix ATV with canyon tubing and/or rafting in one day. Combos save 10% for two activities or
             12% for three+. Prefer culture? See cycling + cooking below.
           </p>
         </div>

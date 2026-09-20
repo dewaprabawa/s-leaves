@@ -96,8 +96,8 @@ const faqs = [
     answer: "Use only sekarbaliactivity.com and WhatsApp +62 817 7572 3663. We never take card numbers on the website. After you agree, transfer only to Seabank 901823638817 a/n I Dewa Gede Agus Prabawa and confirm on that same WhatsApp. Privacy, refund, and payment rules are on our Anti-scam page. If anyone asks for a different bank or e-wallet, stop and message us there first."
   },
   {
-    question: "Can I mix activities like ATV + tubing or tubing + rafting?",
-    answer: "Yes. In the booking form you can mix ATV, canyon tubing, and rafting into a same-day combo. Two activities save 10%; three or more save 12% versus booking separately. Popular mixes: ATV + tubing, tubing + rafting, and ATV + tubing + rafting."
+    question: "Can I mix activities like ATV + tubing or ATV + rafting?",
+    answer: "Yes. In the booking form you can mix ATV with canyon tubing or whitewater rafting into a same-day combo. Two activities save 10%; three or more save 12% versus booking separately. Popular mixes: ATV + tubing, ATV + rafting, and ATV + tubing + rafting. Tubing + rafting alone is not offered as a package.",
   },
   {
     question: "Are group discounts available?",

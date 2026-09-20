@@ -67,7 +67,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.publishedAt),
     changeFrequency: 'monthly',
-    priority: 0.7,
+    priority:
+      post.slug === 'things-to-do-near-ubud-2026'
+        ? 0.9
+        : post.slug === 'full-day-ubud-tour-guide-2026' ||
+            post.slug === 'half-day-ubud-tanah-lot-sunset-tour-2026' ||
+            post.slug === 'luwak-coffee-plantation-umah-kuno-price-2026'
+          ? 0.85
+          : 0.7,
   }))
 
   const tourPages: MetadataRoute.Sitemap = TOURS.map((tour) => ({

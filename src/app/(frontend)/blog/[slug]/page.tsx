@@ -6,6 +6,7 @@ import { ArrowLeft, Calendar, User } from 'lucide-react'
 import { BLOG_POSTS } from '@/data/blog'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
+import ArticleBookingCta from '@/components/ArticleBookingCta'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -45,7 +46,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             'vegetarian cooking class Ubud',
             'Balinese cooking class Ubud',
           ]
-        : undefined
+        : post.slug === 'things-to-do-near-ubud-2026'
+          ? [
+              'things to do near Ubud',
+              'Ubud activities 2026',
+              'Ubud tours prices',
+              'book Bali activity WhatsApp',
+            ]
+          : post.slug === 'full-day-ubud-tour-guide-2026'
+            ? ['full day Ubud tour', 'private Ubud tour price', 'Ubud palace market rice terraces']
+            : post.slug === 'half-day-ubud-tanah-lot-sunset-tour-2026'
+              ? ['Tanah Lot sunset tour from Ubud', 'half day Ubud tour', 'Ubud Tanah Lot private tour']
+              : post.slug === 'luwak-coffee-plantation-umah-kuno-price-2026'
+                ? ['luwak coffee plantation Ubud', 'Umah Kuno luwak coffee', 'luwak coffee price Bali']
+                : undefined
 
   return {
     title: post.seoTitle ? { absolute: post.seoTitle } : post.title,
@@ -95,6 +109,12 @@ export default async function BlogPostPage({ params }: Props) {
     post.slug === 'inside-balinese-cooking-class-pejeng' ||
     post.slug === 'cycling-cooking-class-ubud-full-day-itinerary'
 
+  const isActivityHubPost = post.slug === 'things-to-do-near-ubud-2026'
+  const isDayTourPost =
+    post.slug === 'full-day-ubud-tour-guide-2026' ||
+    post.slug === 'half-day-ubud-tanah-lot-sunset-tour-2026'
+  const isCoffeePost = post.slug === 'luwak-coffee-plantation-umah-kuno-price-2026'
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -141,7 +161,41 @@ export default async function BlogPostPage({ params }: Props) {
             keywords:
               "cooking class Ubud, Tumang Bali Cooking Class, vegetarian cooking class, market tour, free Ubud pickup",
           }
-        : {}),
+        : isActivityHubPost
+          ? {
+              about: {
+                "@type": "ItemList",
+                name: "Sekar Bali Activity tours near Ubud",
+                url: "https://www.sekarbaliactivity.com/experiences",
+              },
+              keywords:
+                "things to do near Ubud, Ubud activities, ATV, cooking class, cycling, rafting, Mount Batur jeep",
+            }
+          : isDayTourPost
+            ? {
+                about: {
+                  "@type": "TouristTrip",
+                  name:
+                    post.slug === "full-day-ubud-tour-guide-2026"
+                      ? "Full Day Ubud Tour"
+                      : "Half Day Ubud & Tanah Lot Sunset Tour",
+                  url:
+                    post.slug === "full-day-ubud-tour-guide-2026"
+                      ? "https://www.sekarbaliactivity.com/tours/full-day-ubud-tour"
+                      : "https://www.sekarbaliactivity.com/tours/half-day-ubud-tanah-lot-tour",
+                },
+                keywords: "Ubud day tour, Tanah Lot sunset, private car Ubud",
+              }
+            : isCoffeePost
+              ? {
+                  about: {
+                    "@type": "TouristTrip",
+                    name: "Luwak Coffee Plantation Experience (Umah Kuno)",
+                    url: "https://www.sekarbaliactivity.com/tours/luwak-coffee-plantation",
+                  },
+                  keywords: "ethical Luwak coffee, Umah Kuno, Tampaksiring, Kopi Luwak",
+                }
+              : {}),
   }
 
   const breadcrumbSchema = {
@@ -225,6 +279,8 @@ export default async function BlogPostPage({ params }: Props) {
             {post.content}
           </ReactMarkdown>
         </article>
+
+        <ArticleBookingCta slug={post.slug} />
 
       </div>
     </main>

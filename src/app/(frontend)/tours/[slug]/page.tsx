@@ -9,6 +9,7 @@ import TourBookingCard from "@/components/TourBookingCard"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import CookingGeoBlock from "@/components/CookingGeoBlock"
 import JeepGeoBlock from "@/components/JeepGeoBlock"
+import ActivityGeoBlock from "@/components/ActivityGeoBlock"
 import {
   getAllTourSlugs,
   getTourBySlug,
@@ -34,6 +35,7 @@ import {
   JEEP_GEO_UPDATED,
 } from "@/data/jeepGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
+import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
 
@@ -105,17 +107,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             "luwak coffee price Bali",
             "Sekar Bali Activity",
           ]
-        : isAtvTour(tour)
-          ? [
-              "ATV ride Ubud",
-              "ATV Ubud price",
-              "quad bike Ubud",
-              "tandem ATV Ubud",
-              "All New Bali Adventure",
-              "ATV river tubing Ubud",
-              "Sekar Bali Activity",
-            ]
-          : undefined
+          : getActivityGeo(tour.slug)?.keywords
+            ? [...getActivityGeo(tour.slug)!.keywords, "Sekar Bali Activity"]
+            : undefined
 
   const ogImage = {
     url: tour.heroImage.url,
@@ -162,10 +156,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
               "geo.region": "ID-BA",
               "geo.placename": "Tampaksiring, Ubud, Bali",
             }
-          : isAtvTour(tour)
+          : getActivityGeo(tour.slug)
             ? {
                 "geo.region": "ID-BA",
-                "geo.placename": "Sedang, Abiansemal, Ubud, Bali",
+                "geo.placename": getActivityGeo(tour.slug)!.placename,
               }
             : undefined,
   }
@@ -204,7 +198,7 @@ function buildTourSchema(tour: Tour) {
       ? COOKING_GEO_TLDR
       : jeep
         ? JEEP_GEO_TLDR
-        : (tour.seoDescription ?? tour.shortDescription),
+        : (getActivityGeo(tour.slug)?.tldr ?? tour.seoDescription ?? tour.shortDescription),
     image: {
       "@type": "ImageObject",
       url: tour.heroImage.url.startsWith("http")
@@ -669,6 +663,10 @@ export default async function TourPage({ params }: Props) {
                     <span className="text-xs text-brand-green-light">
                       Updated {JEEP_GEO_UPDATED || GEO_UPDATED}
                     </span>
+                  ) : getActivityGeo(tour.slug) ? (
+                    <span className="text-xs text-brand-green-light">
+                      Updated {ACTIVITY_GEO_UPDATED || GEO_UPDATED}
+                    </span>
                   ) : null}
                 </div>
 
@@ -697,6 +695,7 @@ export default async function TourPage({ params }: Props) {
 
             {cooking ? <CookingGeoBlock /> : null}
             {jeep ? <JeepGeoBlock /> : null}
+            {!cooking && !jeep ? <ActivityGeoBlock slug={tour.slug} /> : null}
 
             <section className="rounded-3xl border border-brand-green/10 bg-white p-6 md:p-8 shadow-sm">
               <h2 className="text-xl font-bold text-brand-green mb-4">

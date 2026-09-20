@@ -184,7 +184,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Mount Batur Sunrise Jeep Tour",
     adventureId: "jeep-sunrise",
-    pax: `${formatTierPriceTable("jeep-sunrise")} · Hotel pickup included · No hike`,
+    pax: `${formatTierPriceTable("jeep-sunrise")} · Hotel pickup included · Private or tracking · Sunrise or sunset`,
     price: getPromoListPrice("jeep-sunrise"),
     originalPrice: getListPrice("jeep-sunrise"),
     highlight: false,

@@ -47,7 +47,7 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: "Mount Batur Sunrise Jeep Tour",
     description:
-      "Private 4×4 jeep to the Mount Batur crater rim near Kintamani — no hike, hot drink, hotel pickup. Meals not included; food is not served on the jeep. Solo IDR 1.35M · 2 pax IDR 950K · 3+ from IDR 750K.",
+      "Private or tracking 4×4 jeep to Mount Batur near Kintamani — sunrise or sunset at the same private rates. Optional hot spring +IDR 150,000 per person with ticket included. Hotel pickup included. Meals not served on the jeep. Solo IDR 1.35M · 2 pax IDR 950K · 3+ from IDR 750K.",
     price: "750000",
     image:
       "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",

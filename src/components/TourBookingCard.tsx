@@ -72,7 +72,12 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
   "whitewater-rafting": ["rafting"],
   "canyon-tubing": ["canyon-tubing"],
   "ubud-ricefield-cycling-tour": ["cycling"],
-  "batur-sunrise-jeep-tour": ["jeep-sunrise"],
+  "batur-sunrise-jeep-tour": [
+    "jeep-sunrise",
+    "jeep-tracking-sunrise",
+    "jeep-sunset",
+    "jeep-tracking-sunset",
+  ],
 }
 
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {

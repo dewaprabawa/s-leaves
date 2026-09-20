@@ -2,7 +2,23 @@
 
 import { useState } from "react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
-import { getListPrice } from "@/lib/pricing"
+import { getListPrice, JEEP_HOT_SPRING_IDR } from "@/lib/pricing"
+
+const JEEP_HOT_SPRING_ADDON = {
+  id: "hotspring",
+  label: "Add Batur hot spring",
+  blurb: `Existing jeep price + IDR ${(JEEP_HOT_SPRING_IDR / 1000).toFixed(0)},000 per person. Entrance ticket included.`,
+  perPerson: JEEP_HOT_SPRING_IDR,
+}
+
+const JEEP_BOOKING_SHARED = {
+  adultPrice: getListPrice("jeep-sunrise"),
+  kidPrice: null as null,
+  minPax: 1,
+  pickupIncluded: true as const,
+  pricingActivityId: "jeep-sunrise",
+  optionalAddons: [JEEP_HOT_SPRING_ADDON],
+}
 
 export const BOOKABLE_TOURS: TourConfig[] = [
   {
@@ -52,12 +68,27 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   },
   {
     id: "jeep-sunrise",
-    title: "Mount Batur Sunrise Jeep Tour",
+    title: "Private Jeep Sunrise",
     times: ["02:30", "03:00"],
-    adultPrice: getListPrice("jeep-sunrise"),
-    kidPrice: null,
-    minPax: 1,
-    pickupIncluded: true,
+    ...JEEP_BOOKING_SHARED,
+  },
+  {
+    id: "jeep-tracking-sunrise",
+    title: "Tracking Jeep Sunrise",
+    times: ["02:30", "03:00"],
+    ...JEEP_BOOKING_SHARED,
+  },
+  {
+    id: "jeep-sunset",
+    title: "Private Jeep Sunset",
+    times: ["14:30", "15:30"],
+    ...JEEP_BOOKING_SHARED,
+  },
+  {
+    id: "jeep-tracking-sunset",
+    title: "Tracking Jeep Sunset",
+    times: ["14:30", "15:30"],
+    ...JEEP_BOOKING_SHARED,
   },
 ]
 

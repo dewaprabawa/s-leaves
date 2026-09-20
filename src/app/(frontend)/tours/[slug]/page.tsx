@@ -213,7 +213,7 @@ function buildTourSchema(tour: Tour) {
     touristType: cooking
       ? ["Couples", "Families", "Food travelers", "Culture travelers"]
       : tour.slug === "batur-sunrise-jeep-tour"
-        ? ["Couples", "Families", "Non-hikers", "Sunrise photographers"]
+        ? ["Couples", "Families", "Non-hikers", "Hikers", "Sunrise photographers"]
         : tour.slug === "luwak-coffee-plantation"
           ? ["Couples", "Families", "Food travelers", "Culture travelers"]
           : tour.slug === "tirta-empu-purification"

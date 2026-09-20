@@ -31,6 +31,9 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'jeep-sunrise': [1_350_000, 950_000, 750_000], // per person — solo pays full jeep, 2 pax IDR 950K, 3+ share it
 }
 
+/** Per-person add-on on any jeep variant (private or tracking, sunrise or sunset). Ticket included. */
+export const JEEP_HOT_SPRING_IDR = 150_000
+
 export const CHILD_PRICE_IDR: Partial<Record<ActivityId, number>> = {
   'single-atv': 700_000,
   'rafting': 450_000,

@@ -381,7 +381,8 @@ export default function BookSalesCheckout({
               from
             />
             <p className="text-xs text-brand-green-light mt-1">
-              Private 1 guest {formatIdr(COOKING_CLASS_SALES.privateSoloIdr)} · Ubud pickup included
+              Private {formatIdr(COOKING_CLASS_SALES.privateSoloIdr)} / person ·{" "}
+              {formatIdr(COOKING_CLASS_SALES.privateCoupleIdr)} for 2 · Ubud pickup included
             </p>
           </div>
           <a

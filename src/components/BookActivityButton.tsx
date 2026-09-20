@@ -22,7 +22,10 @@ export default function BookActivityButton({
   initialMixIds,
 }: Props) {
   const [open, setOpen] = useState(false)
-  const tour = BOOKABLE_TOURS.find((t) => t.id === activityId) ?? BOOKABLE_TOURS[0]
+  const tour =
+    BOOKABLE_TOURS.find((t) => t.id === activityId) ??
+    BOOKABLE_TOURS.find((t) => t.pricingActivityId === activityId) ??
+    BOOKABLE_TOURS[0]
 
   return (
     <>

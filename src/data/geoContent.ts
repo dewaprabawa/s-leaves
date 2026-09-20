@@ -169,6 +169,16 @@ export const GEO_TOUR_SUMMARIES = [
     url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {
+    name: 'Private Kintamani Day',
+    slug: 'batur-sunrise-jeep-tour',
+    price: 'promo IDR 1,300,000 per person (was IDR 1,450,000)',
+    duration: 'Full day',
+    location: 'Kintamani / Mount Batur, Tampaksiring, rice terrace',
+    summary:
+      'Private full-day, minimum 2 guests: jeep or tracking at Mount Batur, natural hot spring with the entrance ticket included, Umah Kuno coffee tasting, and a rice-terrace stop. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. Book Jeep or Tracking on the Mount Batur jeep page.',
+    url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
+  },
+  {
     name: 'Tumang Bali Cooking Class',
     slug: 'balinese-cooking-class',
     price: 'promo IDR 450,000 per person shared',

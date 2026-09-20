@@ -13,8 +13,10 @@ import {
 } from "@/data/adventures"
 import {
   COOKING_CLASS_SALES,
+  MELUKAT_SALES,
   buildCookingClassWhatsAppUrl,
   buildCyclingCookingComboWhatsAppUrl,
+  buildMelukatWhatsAppUrl,
   getCyclingCookingCombo,
 } from "@/data/cultureSales"
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
@@ -27,12 +29,14 @@ type Props = {
   initialActivityId?: string
   highlightCooking?: boolean
   highlightCultureCombo?: boolean
+  highlightMelukat?: boolean
 }
 
 export default function BookSalesCheckout({
   initialActivityId,
   highlightCooking = false,
   highlightCultureCombo = false,
+  highlightMelukat = false,
 }: Props) {
   const highlighted = initialActivityId
     ? ADVENTURES.find((a) => a.id === initialActivityId)?.id
@@ -47,6 +51,7 @@ export default function BookSalesCheckout({
   const cultureCombo = getCyclingCookingCombo()
   const cookingWhatsApp = buildCookingClassWhatsAppUrl()
   const cultureWhatsApp = buildCyclingCookingComboWhatsAppUrl()
+  const melukatWhatsApp = buildMelukatWhatsAppUrl()
 
   return (
     <div className="space-y-8 md:space-y-10">
@@ -383,6 +388,99 @@ export default function BookSalesCheckout({
           </a>
           <p className="text-[11px] text-center text-brand-green-light leading-relaxed">
             Morning (market tour) or afternoon — free to inquire. Ask to add ricefield cycling the same day.
+          </p>
+        </div>
+      </article>
+
+      <article
+        id={MELUKAT_SALES.id}
+        className={`scroll-mt-36 grid grid-cols-1 md:grid-cols-[240px_minmax(0,1fr)] lg:grid-cols-[280px_minmax(0,1fr)_220px] gap-6 lg:gap-8 items-stretch ${
+          highlightMelukat ? "ring-2 ring-accent-gold/60 rounded-3xl p-3 md:p-4 bg-white/60" : ""
+        }`}
+      >
+        <Link
+          href={`/tours/${MELUKAT_SALES.tourSlug}`}
+          onClick={() => notifyActivityClick(MELUKAT_SALES.name, "book-page")}
+          className="relative aspect-[4/3] md:aspect-auto md:min-h-[200px] overflow-hidden rounded-2xl lg:rounded-3xl bg-brand-green/5"
+        >
+          <Image
+            src={MELUKAT_SALES.image}
+            alt={MELUKAT_SALES.imageAlt}
+            fill
+            sizes="(max-width: 768px) 100vw, 280px"
+            className="object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </Link>
+
+        <div className="flex flex-col justify-center space-y-3 min-w-0">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-1">
+              {MELUKAT_SALES.tagline}
+            </p>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-brand-green">
+              {MELUKAT_SALES.name}
+            </h2>
+          </div>
+          <p className="text-sm md:text-base text-brand-green-light leading-relaxed">
+            {MELUKAT_SALES.description}
+          </p>
+          <div className="flex flex-wrap gap-x-4 gap-y-2 text-sm text-brand-green-light">
+            <span className="inline-flex items-center gap-1.5">
+              <Clock className="w-4 h-4 text-brand-green shrink-0" />
+              {MELUKAT_SALES.duration}
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <MapPin className="w-4 h-4 text-brand-green shrink-0" />
+              Private · Tampaksiring holy spring
+            </span>
+          </div>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
+            {MELUKAT_SALES.highlights.map((h) => (
+              <li key={h} className="flex items-start gap-2 text-sm text-brand-green">
+                <Check className="w-4 h-4 text-accent-gold-dark shrink-0 mt-0.5" />
+                <span>{h}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-xs font-semibold text-brand-green bg-brand-green/8 rounded-lg px-3 py-2 w-fit">
+            Private shuttle included (Ubud area)
+          </p>
+          <Link
+            href={`/tours/${MELUKAT_SALES.tourSlug}`}
+            onClick={() => notifyActivityClick(MELUKAT_SALES.name, "book-page")}
+            className="inline-flex items-center gap-1 text-sm font-semibold text-brand-green hover:text-brand-green-light transition-colors w-fit"
+          >
+            Full itinerary &amp; details <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        </div>
+
+        <div className="flex flex-col justify-center gap-4 md:col-span-2 lg:col-span-1 bg-white rounded-2xl border border-brand-green/10 p-5 shadow-sm">
+          <div>
+            <p className="text-xs font-medium text-brand-green-light uppercase tracking-wider mb-1">
+              Private / person
+            </p>
+            <PromoPrice
+              price={MELUKAT_SALES.priceIdr}
+              originalPrice={MELUKAT_SALES.priceIdr}
+              variant="card"
+              from
+            />
+            <p className="text-xs text-brand-green-light mt-1">
+              Shuttle + guide included · lunch not included
+            </p>
+          </div>
+          <a
+            href={melukatWhatsApp}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => notifyActivityClick(MELUKAT_SALES.name, "book-page-whatsapp")}
+            className="w-full flex items-center justify-center gap-2 h-12 rounded-xl bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+          >
+            <MessageCircle className="w-4 h-4" />
+            Book on WhatsApp
+          </a>
+          <p className="text-[11px] text-center text-brand-green-light leading-relaxed">
+            Typical 08:00 or 09:00 start. Share hotel name and guest count — free to inquire.
           </p>
         </div>
       </article>

@@ -61,6 +61,10 @@ function isAtvTour(tour: Tour) {
   return tour.slug === "bali-atv-adventure"
 }
 
+function isMelukatTour(tour: Tour) {
+  return tour.slug === "tirta-empu-purification"
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const tour = getTourBySlug(slug)
@@ -115,6 +119,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
               "ATV river tubing Ubud",
               "Sekar Bali Activity",
             ]
+        : isMelukatTour(tour)
+          ? [
+              "Tirta Empu melukat",
+              "Tirta Empul purification",
+              "melukat Ubud",
+              "private melukat Bali",
+              "Tirta Empul temple from Ubud",
+              "holy spring purification Bali",
+              "Sekar Bali Activity",
+            ]
           : undefined
 
   const ogImage = {
@@ -162,12 +176,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
               "geo.region": "ID-BA",
               "geo.placename": "Tampaksiring, Ubud, Bali",
             }
-          : isAtvTour(tour)
+            : isAtvTour(tour)
             ? {
                 "geo.region": "ID-BA",
                 "geo.placename": "Sedang, Abiansemal, Ubud, Bali",
               }
-            : undefined,
+            : isMelukatTour(tour)
+              ? {
+                  "geo.region": "ID-BA",
+                  "geo.placename": "Tampaksiring, Tirta Empul, Ubud, Bali",
+                }
+              : undefined,
   }
 }
 
@@ -222,6 +241,8 @@ function buildTourSchema(tour: Tour) {
         ? ["Couples", "Families", "Non-hikers", "Sunrise photographers"]
         : tour.slug === "luwak-coffee-plantation"
           ? ["Couples", "Families", "Food travelers", "Culture travelers"]
+          : tour.slug === "tirta-empu-purification"
+            ? ["Couples", "Families", "Culture travelers", "Spiritual travelers"]
           : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
@@ -232,6 +253,8 @@ function buildTourSchema(tour: Tour) {
           ? "Sedang, Abiansemal, Badung, Bali"
           : tour.slug === "batur-sunrise-jeep-tour"
             ? "Kintamani, Mount Batur, Bali"
+          : tour.slug === "tirta-empu-purification"
+            ? "Tampaksiring, Tirta Empul, Gianyar, Bali"
           : tour.area ?? "Ubud, Bali",
     },
     ...(tour.venue

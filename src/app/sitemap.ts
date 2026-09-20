@@ -76,7 +76,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly',
     // Flagship food money page gets the same priority tier as /book
     priority:
-      tour.slug === 'balinese-cooking-class' || tour.slug === 'batur-sunrise-jeep-tour'
+      tour.slug === 'balinese-cooking-class' ||
+      tour.slug === 'batur-sunrise-jeep-tour' ||
+      tour.slug === 'tirta-empu-purification'
         ? 0.95
         : 0.85,
   }))

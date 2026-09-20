@@ -47,6 +47,12 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
     blurb: "Private Ubud & temple days",
     href: "/#day-tours",
   },
+  {
+    id: "culture",
+    label: TOUR_CATEGORY_LABELS.culture,
+    blurb: "Private Tirta Empu melukat from IDR 1.2M · shuttle + guide",
+    href: "/#culture",
+  },
 ]
 
 export type PackageCard = {
@@ -64,6 +70,7 @@ export function getCatalogTopPicks(): Tour[] {
   const picks = getTopPickTours()
   const priority = [
     'balinese-cooking-class',
+    'tirta-empu-purification',
     'ubud-ricefield-cycling-tour',
     'batur-sunrise-jeep-tour',
     'bali-atv-adventure',
@@ -114,8 +121,19 @@ export function getFeaturedPackages(): PackageCard[] {
     kind: 'tour' as const,
   }))
 
+  const cultureTours = getToursByCategory('culture').map((tour) => ({
+    id: tour.id,
+    name: tour.title,
+    tagline: TOUR_CATEGORY_LABELS[tour.category],
+    description: tour.shortDescription,
+    duration: tour.duration,
+    priceFrom: tour.basePrice,
+    href: `/tours/${tour.slug}`,
+    kind: 'tour' as const,
+  }))
+
   // Lead with cycling + cooking culture day for SEO/commercial priority
-  return [cultureCard, ...comboCards, ...dayTours]
+  return [cultureCard, ...cultureTours, ...comboCards, ...dayTours]
 }
 
 export function getCatalogSection(category: TourCategoryId): Tour[] {

@@ -127,6 +127,7 @@ const footerLinks = {
     { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
     { label: "Canyon Tubing", href: "/tours/canyon-tubing" },
     { label: "Mount Batur Sunrise Jeep", href: "/tours/batur-sunrise-jeep-tour" },
+    { label: "Tirta Empu Purification", href: "/tours/tirta-empu-purification" },
     { label: "Luwak Coffee Plantation", href: "/tours/luwak-coffee-plantation" },
     { label: "Book All Activities", href: "/book" },
     { label: "All Pricing", href: "/#pricing" },

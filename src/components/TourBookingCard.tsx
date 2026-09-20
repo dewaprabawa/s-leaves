@@ -82,6 +82,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   const isPrivateDayTour =
     props.tourSlug === "full-day-ubud-tour" ||
     props.tourSlug === "half-day-ubud-tanah-lot-tour"
+  const isMelukat = props.tourSlug === "tirta-empu-purification"
   const isLuwak = props.tourSlug === "luwak-coffee-plantation"
 
   if (props.activityOptions?.length) {
@@ -111,13 +112,15 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
           ? ["08:30", "13:30"]
           : isLuwak
             ? ["10:00", "14:00"]
-            : DEFAULT_TIMES,
+            : isMelukat
+              ? ["08:00", "09:00"]
+              : DEFAULT_TIMES,
       adultPrice: props.basePrice,
       kidPrice: props.childPrice ?? null,
       minPax: isLuwak ? 3 : 1,
       getYourGuideUrl: props.getYourGuideUrl,
       freeUbudPickup: props.tourSlug === "balinese-cooking-class",
-      pickupIncluded: isPrivateDayTour,
+      pickupIncluded: isPrivateDayTour || isMelukat,
       pickupNotOffered: isLuwak,
     },
   ]

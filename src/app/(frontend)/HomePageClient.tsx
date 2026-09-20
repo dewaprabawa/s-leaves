@@ -154,7 +154,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Private Mount Batur Jeep",
     adventureId: "jeep-sunrise",
-    pax: `Private · ${formatTierPriceTable("jeep-sunrise")} · Meal included · Sit-in or tracking · Sunrise or sunset · Hotel pickup included`,
+    pax: `${formatTierPriceTable("jeep-sunrise")} · Meal included · Sit-in or tracking · Sunrise or sunset · Hotel pickup included`,
     price: getPromoListPrice("jeep-sunrise"),
     originalPrice: getListPrice("jeep-sunrise"),
     highlight: true,
@@ -163,7 +163,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Private Kintamani Day",
     adventureId: "kintamani-day",
-    pax: `Private · ${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Meal included · Hot spring ticket included · Umah Kuno · Rice terrace`,
+    pax: `${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Meal included · Hot spring ticket included · Umah Kuno · Rice terrace`,
     price: getPromoListPrice("kintamani-day"),
     originalPrice: getListPrice("kintamani-day"),
     highlight: true,

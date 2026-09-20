@@ -20,8 +20,7 @@ export const BLOG_POSTS: BlogPost[] = [
       'Private holy-spring purification at Tirta Empu (Tirta Empul) — IDR 1,200,000 per person with shuttle and guide. What to wear, what is included, and how to book.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
-    image:
-      'https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/melukat/tirta-empu-spout.jpg',
     seoTitle: 'Tirta Empu Melukat Ubud | Private 1.2M',
     content: `
 **How much is a private Tirta Empu / Tirta Empul melukat near Ubud?** **IDR 1,200,000 per person** with Sekar Bali Activity. The private rate includes a **Ubud-area shuttle** (pickup and drop-off), an **English-speaking guide**, temple entrance at **Pura Tirta Empul** in Tampaksiring, a canang offering, and sarong. Lunch is not included.

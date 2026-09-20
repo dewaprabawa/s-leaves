@@ -1431,17 +1431,23 @@ If your schedule is tight — an early flight, a late arrival, or a full day alr
     seoDescription:
       "Private Tirta Empu (Tirta Empul) melukat near Ubud with shuttle and guide. IDR 1,200,000 / person. WhatsApp booking.",
     heroImage: {
-      url: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80",
-      alt: "Holy spring water spouts at Tirta Empul temple used for Balinese melukat purification",
+      url: "/images/melukat/tirta-empu-spout.jpg",
+      alt: "Guest receiving holy spring water during a Tirta Empu melukat purification",
+      width: 1600,
+      height: 1346,
     },
     gallery: [
       {
-        url: "https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80",
-        alt: "Carved stone fountains at Tirta Empu / Tirta Empul holy spring temple",
+        url: "/images/melukat/tirta-empu-spout.jpg",
+        alt: "Guest receiving holy spring water during a Tirta Empu melukat purification",
       },
       {
-        url: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
-        alt: "Balinese temple courtyards near Ubud on the way to a melukat ceremony",
+        url: "/images/melukat/tirta-empu-pool.jpg",
+        alt: "Guests in the Tirta Empu holy spring pool for a guided melukat ritual",
+      },
+      {
+        url: "/images/melukat/tirta-empu-temple.jpg",
+        alt: "Temple courtyard near Tirta Empu on a private purification morning",
       },
     ],
     shortDescription:

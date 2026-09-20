@@ -30,10 +30,9 @@ export const MELUKAT_SALES = {
     'Offering, sarong & sash, temple entrance',
   ],
   duration: '3 hours',
-  image:
-    'https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=1200&q=80',
+  image: '/images/melukat/tirta-empu-spout.jpg',
   imageAlt:
-    'Holy spring water spouts at Tirta Empul temple used for Balinese melukat purification',
+    'Guest receiving holy spring water during a Tirta Empu melukat purification',
   tourSlug: 'tirta-empu-purification',
   itineraryHref: '/tours/tirta-empu-purification',
   priceIdr: MELUKAT_PRICE_IDR,

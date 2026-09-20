@@ -152,7 +152,7 @@ export default async function BookPage({ searchParams }: Props) {
           "@type": "TouristTrip",
           name: MELUKAT_SALES.name,
           description: MELUKAT_SALES.description,
-          image: MELUKAT_SALES.image,
+          image: `${SITE_URL}${MELUKAT_SALES.image}`,
           offers: {
             "@type": "Offer",
             price: MELUKAT_SALES.priceIdr,

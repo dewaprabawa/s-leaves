@@ -617,7 +617,7 @@ export function BookingPopup({
                 </p>
               ) : activeTour.pricingActivityId === 'jeep-sunrise' ? (
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
-                  Private jeep or tracking · min 2 · sunrise or sunset · sit-down meal included
+                  Your private jeep or tracking · min 2 · sunrise or sunset · sit-down meal included
                   after the viewpoint. Optional hot spring +IDR 150,000 (ticket included).
                 </p>
               ) : null}

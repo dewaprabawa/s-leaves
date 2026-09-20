@@ -97,7 +97,7 @@ const CATEGORY_SECTION_META: {
     anchor: "adventure",
     eyebrow: "Thrill days",
     title: "Adventure",
-    subtitle: "Jungle ATV, river rafting, canyon tubing, and the Mount Batur sunrise jeep tour — clear gear and insurance notes before you book.",
+    subtitle: "Jungle ATV, river rafting, canyon tubing, and a private Mount Batur jeep — sit-in or tracking, sunrise or sunset.",
   },
   {
     id: "day-tour",
@@ -124,6 +124,7 @@ type PricingRow = {
   price: number
   originalPrice?: number
   highlight: boolean
+  badge?: string
 }
 
 const pricingData: PricingRow[] = [
@@ -149,6 +150,24 @@ const pricingData: PricingRow[] = [
     price: getPromoListPrice("cycling"),
     originalPrice: getListPrice("cycling"),
     highlight: true,
+  },
+  {
+    activity: "Private Mount Batur Jeep",
+    adventureId: "jeep-sunrise",
+    pax: `Private · ${formatTierPriceTable("jeep-sunrise")} · Meal included · Sit-in or tracking · Sunrise or sunset · Hotel pickup included`,
+    price: getPromoListPrice("jeep-sunrise"),
+    originalPrice: getListPrice("jeep-sunrise"),
+    highlight: true,
+    badge: "Private",
+  },
+  {
+    activity: "Private Kintamani Day",
+    adventureId: "kintamani-day",
+    pax: `Private · ${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Meal included · Hot spring ticket included · Umah Kuno · Rice terrace`,
+    price: getPromoListPrice("kintamani-day"),
+    originalPrice: getListPrice("kintamani-day"),
+    highlight: true,
+    badge: "Private",
   },
   {
     activity: "Single ATV",
@@ -180,22 +199,6 @@ const pricingData: PricingRow[] = [
     pax: formatTierPriceTable("canyon-tubing"),
     price: getPromoListPrice("canyon-tubing"),
     originalPrice: getListPrice("canyon-tubing"),
-    highlight: false,
-  },
-  {
-    activity: "Mount Batur Private Jeep Tour",
-    adventureId: "jeep-sunrise",
-    pax: `${formatTierPriceTable("jeep-sunrise")} · Hotel pickup included · Meal included · Private or tracking · Sunrise or sunset`,
-    price: getPromoListPrice("jeep-sunrise"),
-    originalPrice: getListPrice("jeep-sunrise"),
-    highlight: false,
-  },
-  {
-    activity: "Private Kintamani Day",
-    adventureId: "kintamani-day",
-    pax: `${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Meal included · Hot spring ticket included · Umah Kuno · Rice terrace`,
-    price: getPromoListPrice("kintamani-day"),
-    originalPrice: getListPrice("kintamani-day"),
     highlight: false,
   },
 ]
@@ -237,8 +240,8 @@ const travelGuides = [
     href: "/blog/bali-atv-tour-ubud-guide",
   },
   {
-    title: "Mount Batur Sunrise Jeep Guide 2026",
-    excerpt: "No-hike 4×4 to the crater rim — IDR tiers, pickup times, meal included.",
+    title: "Private Mount Batur Jeep Guide 2026",
+    excerpt: "Private 4×4 to the crater rim — sit-in or tracking, meal included, IDR tiers.",
     href: "/blog/mount-batur-sunrise-jeep-tour-guide-2026",
   },
   {
@@ -486,7 +489,7 @@ export default function Home() {
               Top picks near Ubud
             </h2>
             <p className="text-lg text-brand-green-light">
-              Start with Tumang cooking class and Pejeng ricefield cycling — then ATV, the Mount Batur sunrise jeep, rafting, and private day tours.
+              Start with Tumang cooking class and Pejeng ricefield cycling — then a private Mount Batur jeep, ATV, rafting, and private day tours.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
@@ -601,7 +604,7 @@ export default function Home() {
               Core activity packages
             </h2>
             <p className="text-lg text-brand-green-light max-w-2xl mx-auto">
-              Ricefield cycling with free Ubud pickup, plus ATV and river days — book in minutes on WhatsApp.
+              Ricefield cycling with free Ubud pickup, a private Mount Batur jeep, plus ATV and river days — book in minutes on WhatsApp.
             </p>
           </div>
 
@@ -630,6 +633,11 @@ export default function Home() {
                     <div className="absolute top-4 right-4">
                       <PromoPrice price={price} originalPrice={original} variant="badge" from />
                     </div>
+                    {(adv.id === "jeep-sunrise" || adv.id === "kintamani-day") ? (
+                      <div className="absolute top-4 left-4 bg-accent-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
+                        Private
+                      </div>
+                    ) : null}
                     <div className="absolute bottom-4 left-4 flex items-center gap-2 text-sand text-sm font-medium">
                       <Clock3 className="w-4 h-4" />
                       <span>{adv.duration}</span>
@@ -669,7 +677,10 @@ export default function Home() {
                         onClick={() => openBooking(adv.id)}
                         className="w-full flex items-center justify-center gap-2 h-12 bg-brand-green text-sand font-bold text-sm uppercase tracking-wider hover:bg-ink-soft transition-colors"
                       >
-                        Book now <ArrowRight className="w-4 h-4" />
+                        {(adv.id === "jeep-sunrise" || adv.id === "kintamani-day")
+                          ? "Book private"
+                          : "Book now"}{" "}
+                        <ArrowRight className="w-4 h-4" />
                       </button>
                     </div>
                   </div>
@@ -766,7 +777,7 @@ export default function Home() {
               >
                 {item.highlight && (
                   <span className="absolute -top-3 left-6 bg-accent-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
-                    Culture pick
+                    {item.badge ?? "Culture pick"}
                   </span>
                 )}
                 <div className="flex flex-col sm:flex-row items-center gap-4 flex-1">

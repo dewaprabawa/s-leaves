@@ -1867,15 +1867,15 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
   },
   {
     slug: 'mount-batur-sunrise-jeep-tour-price-guide-2026',
-    title: 'Mount Batur Sunrise Jeep Tour Price Guide (2026)',
-    seoTitle: 'Batur Sunrise Jeep Prices 2026 | IDR Tiers',
+    title: 'Private Mount Batur Jeep Price Guide (2026)',
+    seoTitle: 'Private Batur Jeep Prices 2026 | IDR Tiers',
     excerpt:
       'Mount Batur private jeep prices near Kintamani for 2026 — 2-guest minimum, pair and group IDR tiers, hot spring add-on, and pickup timing.',
     publishedAt: '2026-09-09',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
     content: `
-**How much does the Mount Batur Jeep Tour cost in 2026?** With Sekar Bali Activity, a **private** 4×4 jeep to Mount Batur near Kintamani is **minimum 2 guests**: **IDR 950,000 per person** for 2 guests sharing, and **IDR 750,000 per person** for 3 or more guests in one jeep. Sit-in private jeep or tracking jeep, sunrise or sunset — same private rates. Hotel pickup, a hot drink, a sit-down **meal**, and the Kintamani entrance fee are included. Optional Batur hot spring is **+IDR 150,000 per person** with the **entrance ticket included**.
+**How much does the private Mount Batur jeep cost in 2026?** With Sekar Bali Activity, **your private** 4×4 jeep to Mount Batur near Kintamani is **minimum 2 guests**: **IDR 950,000 per person** for 2 guests sharing, and **IDR 750,000 per person** for 3 or more guests in one jeep. Sit-in private jeep or tracking jeep, sunrise or sunset — same private rates. Hotel pickup, a hot drink, a sit-down **meal**, and the Kintamani entrance fee are included. Optional Batur hot spring is **+IDR 150,000 per person** with the **entrance ticket included**.
 
 > **Key Takeaways**
 > - Private · **minimum 2 guests**
@@ -1927,11 +1927,11 @@ If you're deciding between the jeep and the traditional Mount Batur sunrise trek
 
 ## How to Book the Exact Price on WhatsApp
 
-1. Tap **Book on WhatsApp** on the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) page
+1. Tap **Book Private Jeep** on the [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) page
 2. Send your hotel/area, date, and guest count
 3. We confirm the tier rate and exact pickup time — no payment to inquire
 
-**Ready to lock a 2026 price?** Book the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) or compare it with our [cooking class](/tours/balinese-cooking-class) and [cycling tour](/tours/ubud-ricefield-cycling-tour) for a multi-day Bali itinerary. Compare routes: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
+**Ready to lock a 2026 price?** Book the [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) or compare it with our [cooking class](/tours/balinese-cooking-class) and [cycling tour](/tours/ubud-ricefield-cycling-tour) for a multi-day Bali itinerary. Compare routes: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 `
   },
   ...COOKING_JEEP_CLUSTER_POSTS,

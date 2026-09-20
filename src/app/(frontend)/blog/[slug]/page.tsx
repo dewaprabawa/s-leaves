@@ -145,11 +145,11 @@ export default async function BlogPostPage({ params }: Props) {
       ? {
           about: {
             "@type": "TouristTrip",
-            name: "Mount Batur Sunrise Jeep Tour",
+            name: "Private Mount Batur Jeep Tour",
             url: "https://www.sekarbaliactivity.com/tours/batur-sunrise-jeep-tour",
           },
           keywords:
-            "Mount Batur sunrise jeep, Kintamani, no hike, Lake Batur, Mount Agung, private 4x4, meal included",
+            "private Mount Batur jeep, Kintamani, no hike, Lake Batur, Mount Agung, private 4x4, meal included",
         }
       : isCookingPost
         ? {

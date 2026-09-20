@@ -231,7 +231,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Jeep next to cooking, cycling, and ATV in one table.',
     },
     {
-      title: 'Mount Batur jeep tour price guide (2026)',
+      title: 'Private Mount Batur jeep price guide (2026)',
       href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026',
       blurb: 'Private · min 2 guests · pair and group IDR tiers plus pickup — meal included.',
     },
@@ -246,7 +246,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Island-wide 02:00–03:00 clock — south Bali earliest.',
     },
     {
-      title: 'Mount Batur sunrise jeep guide 2026',
+      title: 'Private Mount Batur jeep guide 2026',
       href: '/blog/mount-batur-sunrise-jeep-tour-guide-2026',
       blurb: 'Hour-by-hour itinerary and what to bring — sit-down meal included.',
     },

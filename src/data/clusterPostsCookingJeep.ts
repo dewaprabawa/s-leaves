@@ -166,15 +166,15 @@ Diet does not lock you to one session. Request veg / vegan on either clock — [
   },
   {
     slug: 'mount-batur-sunrise-jeep-tour-guide-2026',
-    title: 'Mount Batur Sunrise Jeep Tour Guide (2026)',
-    seoTitle: 'Mount Batur Sunrise Jeep Guide 2026',
+    title: 'Private Mount Batur Jeep Guide (2026)',
+    seoTitle: 'Private Mount Batur Jeep Guide 2026',
     excerpt:
       'No-hike 4×4 to the Mount Batur crater rim — 6–7 hours, island-wide pickup, IDR tiers, meal included. 2026 itinerary from Ubud and south Bali.',
     publishedAt: '2026-09-19',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1693821876313-dc573a92028c?auto=format&fit=crop&w=1200&q=80',
     content: `
-**What is the Mount Batur Sunrise Jeep Tour?** It is a **private 4×4** to a **crater-rim viewpoint (~1,350m)** on Mount Batur’s eastern flank near Kintamani — sunrise over **Lake Batur** and **Mount Agung** without the ~2-hour summit trek. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) includes the jeep, local driver, **island-wide hotel pickup**, a **hot drink**, a sit-down **meal**, Kintamani entrance fee, and insurance for ages 6–65.
+**What is the private Mount Batur jeep?** It is **your private 4×4** to a **crater-rim viewpoint (~1,350m)** on Mount Batur’s eastern flank near Kintamani — sunrise over **Lake Batur** and **Mount Agung** without the ~2-hour summit trek. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) includes the jeep, local driver, **island-wide hotel pickup**, a **hot drink**, a sit-down **meal**, Kintamani entrance fee, and insurance for ages 6–65.
 
 > **Key Takeaways**
 > - Door to door **about 6–7 hours** sunrise · sunset **~4–5 hours**
@@ -215,7 +215,7 @@ Different products. The jeep is **not** a shortcut to the summit pin. Comparison
 
 Warm jacket, closed shoes, camera, and cash for optional coffee souvenirs. A hot drink is included. A sit-down **meal is included** after the viewpoint (jeep and tracking). Food is not cooked inside the 4×4.
 
-**Ready?** Book the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) with hotel area, date, and guest count — no payment to inquire.
+**Ready?** Book the [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) with hotel area, date, and guest count — no payment to inquire.
 `,
   },
   {
@@ -266,7 +266,7 @@ Our jeep includes hotel pickup island-wide. South Bali (Nusa Dua, Jimbaran, Kuta
 
 ## Who should book the jeep
 
-Book the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) if you want caldera sunrise photographs without scrambling rock, a private vehicle, and a seated climb.
+Book the [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) if you want caldera sunrise photographs without scrambling rock, a private vehicle, and a seated climb.
 
 Do not book the jeep if you need the summit stamp. We will not pretend the 4×4 replaces that hike.
 

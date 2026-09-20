@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.5
+**Document version:** v2.6
 **Last updated:** 2026-09-20
 
 ## Product Overview
@@ -18,7 +18,7 @@
 - Experience a thrilling ATV jungle ride safely as a beginner
 - Combine land + water (ATV + tubing) or culture (cycling + cooking) in one day
 - Do authentic Pejeng village cycling, cooking, or a private Ubud day tour with clear logistics
-- Watch Mount Batur sunrise over Lake Batur without the 2-hour summit hike
+- Watch Mount Batur sunrise over Lake Batur in a **private** 4×4 (no 2-hour summit hike)
 **Use cases:**
 - Honeymoon / couple tandem ATV
 - Family half-day rafting or tubing
@@ -26,7 +26,7 @@
 - Cycling + afternoon Tumang Bali Cooking Class combo
 - Private full-day Ubud or Tanah Lot sunset tour
 - Coffee plantation tasting as a calm morning stop
-- Pre-dawn Mount Batur sunrise 4×4 jeep from Ubud or south Bali (families / non-hikers)
+- Pre-dawn **private** Mount Batur jeep from Ubud or south Bali (families / non-hikers)
 
 ## Personas
 | Persona | Cares about | Challenge | Value we promise |
@@ -129,6 +129,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.6 (2026-09-20) — Promote Mount Batur jeep and Kintamani Day as **private** (lead with Private in names, CTAs, homepage). Sit-down meal included after the viewpoint on jeep and tracking.
 - v2.5 (2026-09-20) — Rafting and canyon tubing list at **IDR 500,000**, discount **IDR 450,000** for 2+ guests (rafting still min 2). Removed 359K tubing and 475K mid rafting tier.
 - v2.4 (2026-09-20) — GEO/SEO now covers **every** bookable activity (ATV, rafting, tubing, cycling, coffee, full-day Ubud, Tanah Lot half-day) plus a hub article for things to do near Ubud. Same pickup and jeep-meal rules as v2.3.
 - v2.3 (2026-09-19) — Jeep meals are **not included**. Do not claim breakfast or other food is served on the Mount Batur sunrise jeep.

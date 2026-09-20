@@ -18,10 +18,10 @@ const jeepHotSpringLabel = `IDR ${JEEP_HOT_SPRING_IDR.toLocaleString('id-ID')}`
 
 /** First 40–60 words — extractable answer for AI Overviews / ChatGPT */
 export const JEEP_GEO_TLDR =
-  `Mount Batur private jeep near Kintamani with Sekar Bali Activity is a private 4×4 — sit-in (no hike) or tracking (jeep + guided trek), sunrise or sunset, same private rates, minimum 2 guests. ${jeepPairLabel} per person for 2 guests, ${jeepGroupLabel} per person for 3+. Sit-down meal included. Optional Batur hot spring +${jeepHotSpringLabel} per person with the entrance ticket included. Hotel pickup included. Book via WhatsApp.`
+  `The private Mount Batur jeep near Kintamani with Sekar Bali Activity is your private 4×4 — sit-in (no hike) or tracking (jeep + guided trek), sunrise or sunset, same private rates, minimum 2 guests. ${jeepPairLabel} per person for 2 guests, ${jeepGroupLabel} per person for 3+. Sit-down meal included. Optional Batur hot spring +${jeepHotSpringLabel} per person with the entrance ticket included. Hotel pickup included. Book via WhatsApp.`
 
 export const JEEP_GEO_ENTITY = {
-  name: 'Mount Batur Private Jeep Tour',
+  name: 'Private Mount Batur Jeep Tour',
   sekarUrl: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   /** Booking happens on the tour page itself (WhatsApp popup) — no /book?activity= deep link exists */
   bookUrl: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
@@ -43,7 +43,7 @@ export type JeepGeoFaq = {
 export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep tour price',
-    q: 'How much is the Mount Batur Sunrise Jeep Tour in 2026?',
+    q: 'How much is the private Mount Batur jeep in 2026?',
     a: `Sekar Bali Activity prices the private Mount Batur jeep at ${jeepPairLabel} per person for 2 guests (minimum 2) and ${jeepGroupLabel} per person for 3 or more guests sharing one jeep. Private jeep and tracking jeep use these same rates for sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani area entrance fee are included. Optional Batur hot spring is +${jeepHotSpringLabel} per person with the entrance ticket included.`,
   },
   {

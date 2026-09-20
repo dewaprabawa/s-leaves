@@ -270,7 +270,10 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             onClick={() => setOpen(true)}
             className="w-full flex items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
           >
-            Book This Experience <ArrowRight className="w-4 h-4" />
+            {props.tourSlug === "batur-sunrise-jeep-tour"
+              ? "Book Private Jeep"
+              : "Book This Experience"}{" "}
+            <ArrowRight className="w-4 h-4" />
           </button>
           <a
             href={consultationUrl}

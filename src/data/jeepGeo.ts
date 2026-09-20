@@ -63,7 +63,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   },
   {
     intent: 'mount batur jeep tour breakfast',
-    q: 'Is breakfast included on the Mount Batur Sunrise Jeep Tour?',
+    q: 'Is breakfast included on the private Mount Batur jeep?',
     a: 'Yes. A sit-down meal is included on every private jeep and tracking option — sunrise, sunset, and Private Kintamani Day. Food is not cooked inside the 4×4; you eat after the viewpoint (approx. 1,350m). A hot drink on the way up is included.',
   },
   {
@@ -73,7 +73,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   },
   {
     intent: 'mount batur jeep tour duration',
-    q: 'How long does the Mount Batur Sunrise Jeep Tour take?',
+    q: 'How long does the private Mount Batur jeep take?',
     a: 'The sunrise tour runs roughly 6–7 hours door-to-door; sunset is about 4–5 hours. Both include hotel pickup, the 4×4 ride, time at the crater-rim viewpoint, a sit-down meal, optional coffee or hot spring, and drop-off. Private Kintamani Day (jeep or tracking) is a full day and also includes a meal.',
   },
   {

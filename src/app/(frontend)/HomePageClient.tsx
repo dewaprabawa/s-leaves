@@ -305,6 +305,11 @@ function ExperienceCard({ tour }: { tour: Tour }) {
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
         />
+        {tour.slug === "batur-sunrise-jeep-tour" ? (
+          <span className="absolute top-3 left-3 bg-accent-gold text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">
+            Private
+          </span>
+        ) : null}
       </div>
       <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-accent-gold-dark mb-2">
         {getTourCategoryLabel(tour.category)}
@@ -423,22 +428,22 @@ export default function Home() {
               <span className="hero-headline-accent">booked clear</span>
             </h1>
             <p className="hero-subcopy text-base md:text-lg max-w-md mb-8 animate-fade-in-up-delay-2">
-              Tumang cooking class &amp; Pejeng ricefield cycling near Ubud — free hotel pickup, clear IDR, WhatsApp booking.
+              Private Mount Batur jeep, Tumang cooking class, and Pejeng cycling — your vehicle, clear IDR, WhatsApp booking.
             </p>
             <div className="w-full max-w-xl space-y-3 animate-fade-in-up-delay-3">
               <HomeActivitySearch />
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="#experiences"
+                  href="/tours/batur-sunrise-jeep-tour"
                   className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
                 >
-                  Browse experiences
+                  Book private jeep
                 </Link>
                 <Link
-                  href="/book"
+                  href="#experiences"
                   className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full bg-white/15 border-2 border-white/70 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/25 hover:border-white transition-colors backdrop-blur-sm"
                 >
-                  Open booking
+                  Browse experiences
                 </Link>
               </div>
             </div>
@@ -489,7 +494,7 @@ export default function Home() {
               Top picks near Ubud
             </h2>
             <p className="text-lg text-brand-green-light">
-              Start with Tumang cooking class and Pejeng ricefield cycling — then a private Mount Batur jeep, ATV, rafting, and private day tours.
+              Start with a private Mount Batur jeep — then Tumang cooking class, Pejeng cycling, ATV, and private day tours.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
@@ -803,7 +808,7 @@ export default function Home() {
                       href={item.bookHref}
                       className="hidden sm:inline-flex items-center h-10 px-6 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
                     >
-                      Book
+                      {item.badge === "Private" ? "Book private" : "Book"}
                     </Link>
                   ) : (
                     <button
@@ -811,7 +816,7 @@ export default function Home() {
                       onClick={() => item.adventureId && openBooking(item.adventureId)}
                       className="hidden sm:inline-flex items-center h-10 px-6 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider hover:bg-ink-soft transition-colors"
                     >
-                      Book
+                      {item.badge === "Private" ? "Book private" : "Book"}
                     </button>
                   )}
                 </div>
@@ -820,7 +825,7 @@ export default function Home() {
                     href={item.bookHref}
                     className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
                   >
-                    Book Now
+                    {item.badge === "Private" ? "Book private" : "Book Now"}
                   </Link>
                 ) : (
                   <button
@@ -828,7 +833,7 @@ export default function Home() {
                     onClick={() => item.adventureId && openBooking(item.adventureId)}
                     className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
                   >
-                    Book Now
+                    {item.badge === "Private" ? "Book private" : "Book Now"}
                   </button>
                 )}
               </div>

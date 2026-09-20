@@ -29,8 +29,8 @@ Search / AI answer → tour money page → **WhatsApp Consultation** or **Book**
 |------|----------|------------|----------------------|--------|
 | ATV + optional tubing | `/tours/bali-atv-adventure` | IDR 750K | `ATV Ubud price` / `ATV ride Bali` | High commercial |
 | Mount Batur Sunrise Jeep | `/tours/batur-sunrise-jeep-tour` | IDR 1.35M (solo) / 750K (3+) | `Mount Batur jeep no hike` | High commercial + differentiator |
-| Whitewater rafting | `/tours/whitewater-rafting` | IDR 500K | `rafting Ubud price` | Mid commercial |
-| Canyon tubing | `/tours/canyon-tubing` | IDR 359K | `canyon tubing Bali` / `Wos River tubing` | Mid commercial |
+| Whitewater rafting | `/tours/whitewater-rafting` | IDR 500K (450K for 2+) | `rafting Ubud price` | Mid commercial |
+| Canyon tubing | `/tours/canyon-tubing` | IDR 500K (450K for 2+) | `canyon tubing Bali` / `Wos River tubing` | Mid commercial |
 | Ricefield cycling | `/tours/ubud-ricefield-cycling-tour` | IDR 750K | `Ubud ricefield cycling` | High commercial + culture |
 | Luwak coffee (Umah Kuno) | `/tours/luwak-coffee-plantation` | IDR 800K (min 3) | `ethical luwak coffee Ubud` | Trust / niche |
 | Tumang cooking class | `/tours/balinese-cooking-class` | IDR 450K promo | `cooking class Ubud price` | Highest culture priority |

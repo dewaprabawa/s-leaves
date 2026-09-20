@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     question: "What is the difference between rafting and canyon tubing?",
-    answer: "Whitewater rafting (IDR 500,000, minimum 2 guests) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
+    answer: "Whitewater rafting (IDR 500,000, or IDR 450,000 for 2+, minimum 2 guests) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 500,000, or IDR 450,000 for 2+) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
   },
   {
     question: "How much does the Ubud ricefield cycling tour cost?",

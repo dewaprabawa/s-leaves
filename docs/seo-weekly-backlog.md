@@ -34,9 +34,9 @@
 
 5. **Rafting Ubud price** (P1 clearly underserved)  
    - Money page: `/tours/whitewater-rafting`  
-   - Why it sells: IDR 500K Class II–III is a mid-ticket filler next to ATV. No `seoTitle` / `seoDescription` — SERP falls back to generic `Whitewater Rafting Adventure`. Canyon tubing (`/tours/canyon-tubing`, IDR 359K) has the same gap. Comparison blog exists (`/blog/rafting-vs-tubing-vs-atv-near-ubud`).  
+   - Why it sells: IDR 500K list / IDR 450K for 2+ on Class II–III is a mid-ticket filler next to ATV. Comparison blog exists (`/blog/rafting-vs-tubing-vs-atv-near-ubud`). Canyon tubing uses the same 500K / 450K for 2+ list.  
    - Effort: **S**  
-   - Action: **title tweak** on both P1 pages (`Rafting Ubud from IDR 500K`, `Canyon Tubing Bali | Wos River 359K`) + **internal links** from ATV money page.
+   - Action: **keep titles** on both P1 pages (`Rafting Ubud | 500K · 450K for 2+`, `Canyon Tubing Ubud | 500K · 450K for 2+`) + **internal links** from ATV money page.
 
 ## P0 rotation
 

@@ -502,6 +502,9 @@ Warm layer (it is cold on the rim before sunrise), closed shoes, phone/camera, a
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
+    seoTitle: "Rafting Ubud | 500K · 450K for 2+",
+    seoDescription:
+      "Class II–III whitewater rafting near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2). Lunch, gear, guide, insurance. Pickup IDR 400K. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/rafting.jpg",
       alt: "Whitewater rafting through a Bali jungle river canyon",
@@ -602,6 +605,12 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         answer:
           "Yes. We provide insurance for guests aged 6–65 years old on our rafting packages.",
       },
+      {
+        id: "faq-raft-6",
+        question: "How much does whitewater rafting near Ubud cost?",
+        answer:
+          "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is an optional IDR 400,000 add-on.",
+      },
     ],
     reviews: [],
   },
@@ -613,8 +622,11 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
     area: "Wos River / Pejeng",
     pickup: "Hotel pickup IDR 400,000 — optional",
     duration: "2.5 Hours",
-    basePrice: 359000,
-    childPrice: 300000,
+    basePrice: 500000,
+    childPrice: 450000,
+    seoTitle: "Canyon Tubing Ubud | 500K · 450K for 2+",
+    seoDescription:
+      "Wos River canyon tubing near Ubud — IDR 500,000, discount IDR 450,000 for 2+. Life jacket, guide, insurance. Hotel pickup IDR 400K. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/canyon-tubing.jpg",
       alt: "Canyon tubing through crystal-clear Bali waters",
@@ -709,6 +721,12 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         question: "Do you provide insurance?",
         answer:
           "Yes. We provide insurance for guests aged 6–65 years old on our canyon tubing packages.",
+      },
+      {
+        id: "faq-tube-6",
+        question: "How much is canyon tubing near Ubud?",
+        answer:
+          "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book. Life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is an optional IDR 400,000 add-on.",
       },
     ],
     reviews: [],

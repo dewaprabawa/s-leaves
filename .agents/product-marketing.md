@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v2.3
-**Last updated:** 2026-09-19
+**Document version:** v2.4
+**Last updated:** 2026-09-20
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — adventure, village, food, and day tours with clear IDR pricing and WhatsApp booking.
@@ -129,6 +129,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.4 (2026-09-20) — GEO/SEO now covers **every** bookable activity (ATV, rafting, tubing, cycling, coffee, full-day Ubud, Tanah Lot half-day) plus a hub article for things to do near Ubud. Same pickup and jeep-meal rules as v2.3.
 - v2.3 (2026-09-19) — Jeep meals are **not included**. Do not claim breakfast or other food is served on the Mount Batur sunrise jeep.
 - v2.2 (2026-09-09) — Added Mount Batur sunrise jeep (no-hike 4×4, island-wide pickup, IDR 1.35M solo / from 750K at 3+) as an adventure use case; do not claim the jeep is the summit trek.
 - v2.1 (2026-09-08) — Flagship food product is Tumang Bali Cooking Class (shared from IDR 506,370, free Ubud pickup); GEO/SEO answer surfaces updated for cooking-class queries.

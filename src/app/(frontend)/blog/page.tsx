@@ -4,6 +4,20 @@ import Image from 'next/image'
 import { BLOG_POSTS } from '@/data/blog'
 import { ArrowRight, Calendar } from 'lucide-react'
 
+const ACTIVITY_GUIDES = [
+  { label: 'All activities 2026', href: '/blog/things-to-do-near-ubud-2026' },
+  { label: 'Cooking class', href: '/tours/balinese-cooking-class' },
+  { label: 'Cycling', href: '/tours/ubud-ricefield-cycling-tour' },
+  { label: 'ATV', href: '/tours/bali-atv-adventure' },
+  { label: 'Rafting', href: '/tours/whitewater-rafting' },
+  { label: 'Tubing', href: '/tours/canyon-tubing' },
+  { label: 'Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
+  { label: 'Luwak coffee', href: '/tours/luwak-coffee-plantation' },
+  { label: 'Full-day Ubud', href: '/tours/full-day-ubud-tour' },
+  { label: 'Tanah Lot sunset', href: '/tours/half-day-ubud-tanah-lot-tour' },
+  { label: 'Book WhatsApp', href: '/book' },
+] as const
+
 export const metadata: Metadata = {
   title: 'Blog & Travel Guide',
   description: 'Bali travel tips, Pejeng culture, ATV prices near Ubud, cycling tour reviews, and adventure booking guides from Sekar Bali Activity — written to help you plan and book with confidence.',
@@ -21,6 +35,17 @@ export default function BlogIndexPage() {
           <p className="text-lg text-brand-green-light">
             Insights, stories, and guides for slow travel in Bali.
           </p>
+          <div className="flex flex-wrap gap-2 pt-2">
+            {ACTIVITY_GUIDES.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="inline-flex rounded-full border border-brand-green/15 bg-white px-3 py-1.5 text-xs font-semibold text-brand-green hover:border-accent-gold/40 hover:text-accent-gold-dark transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 gap-12">

@@ -1,4 +1,5 @@
 import { COOKING_JEEP_CLUSTER_POSTS } from './clusterPostsCookingJeep'
+import { ACTIVITY_CLUSTER_POSTS } from './clusterPostsActivities'
 
 export type BlogPost = {
   slug: string
@@ -13,6 +14,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...ACTIVITY_CLUSTER_POSTS,
   {
     slug: 'bali-atv-for-beginners-first-time-guide',
     title: 'Bali ATV for Beginners (2026)',

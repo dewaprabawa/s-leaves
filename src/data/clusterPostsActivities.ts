@@ -52,7 +52,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) at **IDR 500,000**, or **IDR 450,000** for 2+ (minimum 2), lunch included. **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float at the same **IDR 500,000 / 450,000 for 2+** — the usual ATV add-on. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-**[Mount Batur sunrise jeep](/tours/batur-sunrise-jeep-tour)** is a **private 4×4**, not the 2-hour summit hike. Crater-rim viewpoint ~1,350m. Solo **IDR 1,350,000** · 2 guests **IDR 825,000** · 3+ **IDR 750,000**. Hotel pickup included island-wide. **Meals are not included** — we do not serve food on the jeep. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
+**[Mount Batur sunrise jeep](/tours/batur-sunrise-jeep-tour)** is a **private 4×4**, not the 2-hour summit hike. Crater-rim viewpoint ~1,350m. Solo **IDR 1,350,000** · 2 guests **IDR 950,000** · 3+ **IDR 750,000**. Hotel pickup included island-wide. **Meals are not included** — we do not serve food on the jeep. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
 ## Coffee & private cars
 

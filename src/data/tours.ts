@@ -287,7 +287,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     basePrice: 1350000,
     seoTitle: "Mount Batur Sunrise Jeep | No Hike, Island Pickup",
     seoDescription:
-      "Private 4×4 crater-rim jeep near Kintamani. No hike, hotel pickup included. Meals not served on the jeep. Solo IDR 1.35M · 2 pax 825K · 3+ IDR 750K.",
+      "Private 4×4 crater-rim jeep near Kintamani. No hike, hotel pickup included. Meals not served on the jeep. Solo IDR 1.35M · 2 pax 950K · 3+ IDR 750K.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
@@ -313,8 +313,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       },
     ],
     shortDescription:
-      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, no hike. Meals are not included and food is not served on the jeep. Solo from IDR 1,350,000, IDR 825,000 per person for 2 guests, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
-    fullDescription: `**What is the Mount Batur Sunrise Jeep Tour?** It is a private 4×4 jeep ride up Mount Batur’s volcanic tracks to a crater-rim viewpoint near Kintamani — about 1,350 metres above sea level — so you watch sunrise over **Lake Batur** and **Mount Agung** without the classic 2-hour summit trek. A local driver, hot drink en route, and hotel pickup are included. **Meals are not included** — we do not serve breakfast or other food on the jeep. Solo from **IDR 1,350,000**, **IDR 825,000 per person** for 2 guests, or **IDR 750,000 per person** once 3+ guests share one jeep.
+      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, no hike. Meals are not included and food is not served on the jeep. Solo from IDR 1,350,000, IDR 950,000 per person for 2 guests, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
+    fullDescription: `**What is the Mount Batur Sunrise Jeep Tour?** It is a private 4×4 jeep ride up Mount Batur’s volcanic tracks to a crater-rim viewpoint near Kintamani — about 1,350 metres above sea level — so you watch sunrise over **Lake Batur** and **Mount Agung** without the classic 2-hour summit trek. A local driver, hot drink en route, and hotel pickup are included. **Meals are not included** — we do not serve breakfast or other food on the jeep. Solo from **IDR 1,350,000**, **IDR 950,000 per person** for 2 guests, or **IDR 750,000 per person** once 3+ guests share one jeep.
 
 Want the famous Mount Batur sunrise without lacing up hiking boots at 2 AM? You stay in the jeep. The viewpoint is on Mount Batur’s eastern flank — the same golden caldera light trekkers queue for, without scrambling lava rock in the dark.
 
@@ -346,7 +346,7 @@ A private jeep costs the same whether one or three people ride, so the per-perso
 | Guests in one jeep | Price per person (IDR) |
 | --- | --- |
 | 1 | 1,350,000 |
-| 2 | 825,000 |
+| 2 | 950,000 |
 | 3+ | 750,000 |
 
 Hotel pickup and drop-off are built into those rates (not the IDR 400,000 ATV/rafting pickup add-on). Message WhatsApp with your guest count for an exact quote.
@@ -427,7 +427,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes, phone/camera, a
         id: "faq-jeep-1",
         question: "How much does the Mount Batur Sunrise Jeep Tour cost?",
         answer:
-          "IDR 1,350,000 for a solo traveller, IDR 825,000 per person for 2 guests sharing a jeep, and IDR 750,000 per person for 3 or more guests. Private jeep, driver, hotel pickup, and a hot drink are included. Meals are not included — we do not serve food on the jeep. Message WhatsApp with your guest count for an exact quote.",
+          "IDR 1,350,000 for a solo traveller, IDR 950,000 per person for 2 guests sharing a jeep, and IDR 750,000 per person for 3 or more guests. Private jeep, driver, hotel pickup, and a hot drink are included. Meals are not included — we do not serve food on the jeep. Message WhatsApp with your guest count for an exact quote.",
       },
       {
         id: "faq-jeep-2",

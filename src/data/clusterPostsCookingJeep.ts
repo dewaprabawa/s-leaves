@@ -178,7 +178,7 @@ Diet does not lock you to one session. Request veg / vegan on either clock — [
 
 > **Key Takeaways**
 > - Door to door **about 6–7 hours** · pickup typically **02:00–03:00**
-> - **IDR 1,350,000** solo · **825,000** pp (2) · **750,000** pp (3+)
+> - **IDR 1,350,000** solo · **950,000** pp (2) · **750,000** pp (3+)
 > - You **stay in the jeep** — not the summit hike
 > - Bring a **snack and a warm layer**; we do not serve breakfast on the vehicle
 > - Optional Kintamani coffee stop on the way back ≠ [Umah Kuno luwak](/tours/luwak-coffee-plantation)
@@ -188,7 +188,7 @@ Diet does not lock you to one session. Request veg / vegan on either clock — [
 | Guests in one jeep | Price per person (IDR) |
 | --- | --- |
 | 1 | 1,350,000 |
-| 2 | 825,000 |
+| 2 | 950,000 |
 | 3+ | 750,000 |
 
 Full table: [jeep price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026).
@@ -233,7 +233,7 @@ Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **foo
 > **Key Takeaways**
 > - Jeep: sit in a private 4×4 · no 2-hour hike · **meals not included**
 > - Trek: ~2 hours up in the dark · summit trail · higher fitness
-> - Jeep prices (2026): IDR **1,350,000** solo · **825,000** (2 pax) · **750,000** (3+)
+> - Jeep prices (2026): IDR **1,350,000** solo · **950,000** (2 pax) · **750,000** (3+)
 > - Hotel pickup **included island-wide** on our jeep
 > - Do not book the jeep if your checklist says “stand on the summit”
 
@@ -252,7 +252,7 @@ Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **foo
 ## Price: what the jeep includes
 
 - 1 guest: **IDR 1,350,000**
-- 2 guests: **IDR 825,000** each
+- 2 guests: **IDR 950,000** each
 - 3+ guests: **IDR 750,000** each
 
 Included: 4×4, local driver, hotel pickup & drop-off, hot drink, Kintamani / Batur area entrance fee, insurance for ages 6–65. **Not included: breakfast or other meals.** Optional coffee plantation stop on the way back (no purchase required) — not the [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation).
@@ -303,7 +303,7 @@ We do not publish a fake pinned minute for every villa. The honest rule: **south
 
 Private 4×4, driver, hotel pickup & drop-off, hot drink, entrance fee, insurance ages 6–65. **Food / breakfast is not included.**
 
-Tiers: solo **IDR 1,350,000** · 2 guests **IDR 825,000** · 3+ **IDR 750,000** per person.
+Tiers: solo **IDR 1,350,000** · 2 guests **IDR 950,000** · 3+ **IDR 750,000** per person.
 
 ## Jeep vs ATV pickup
 

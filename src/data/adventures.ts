@@ -113,7 +113,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     tagline: "Sunrise without the hike",
     paxLabel: "Per person (private jeep)",
     description:
-      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, no hike. Meals are not included and food is not served on the jeep. Solo from IDR 1,350,000, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
+      "Sunrise 4×4 jeep tour to the Mount Batur crater rim near Kintamani — private jeep and local driver, hot drink en route, no hike. Meals are not included and food is not served on the jeep. Solo from IDR 1,350,000, IDR 950,000 per person for 2 guests, or IDR 750,000 per person once you have 3+ guests sharing a jeep. Optional coffee plantation stop on the way back.",
     highlights: [
       "4×4 jeep ride up Mount Batur's volcanic tracks",
       "Sunrise over Lake Batur and Mount Agung",

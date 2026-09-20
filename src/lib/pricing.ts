@@ -28,7 +28,7 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'rafting': [500_000, 450_000, 450_000],
   'canyon-tubing': [500_000, 450_000, 450_000],
   'cycling': [750_000, 725_000, 700_000],
-  'jeep-sunrise': [1_350_000, 825_000, 750_000], // per person — solo pays full jeep, 2-3 pax share it
+  'jeep-sunrise': [1_350_000, 950_000, 750_000], // per person — solo pays full jeep, 2 pax IDR 950K, 3+ share it
 }
 
 export const CHILD_PRICE_IDR: Partial<Record<ActivityId, number>> = {

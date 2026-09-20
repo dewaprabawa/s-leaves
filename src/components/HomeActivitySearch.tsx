@@ -74,14 +74,14 @@ export default function HomeActivitySearch({ className = "" }: Props) {
             onFocus={() => {
               if (query.trim().length >= 2 && results.length > 0) setOpen(true)
             }}
-            placeholder="Search private jeep, cooking class, cycling…"
+            placeholder="Search jeep, cooking, cycling…"
             autoComplete="off"
-            className="h-12 md:h-14 w-full bg-transparent pl-11 pr-3 text-sm md:text-base text-brand-green placeholder:text-brand-green-light/70 outline-none"
+            className="h-14 md:h-14 w-full bg-transparent pl-11 pr-3 text-sm md:text-base text-brand-green placeholder:text-brand-green-light/70 outline-none"
           />
         </div>
         <button
           type="submit"
-          className="shrink-0 m-1.5 px-5 md:px-7 rounded-full btn-gold-shimmer font-bold text-xs md:text-sm uppercase tracking-wider"
+          className="shrink-0 self-center m-1.5 h-11 min-w-[5.75rem] px-5 md:px-7 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
         >
           Search
         </button>

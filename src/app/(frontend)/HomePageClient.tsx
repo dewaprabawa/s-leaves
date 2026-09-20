@@ -418,7 +418,7 @@ export default function Home() {
           />
           <div className="hero-overlay absolute inset-0" />
         </div>
-        <div className="relative z-20 w-full px-6 md:px-12 lg:px-16 pt-32 pb-12 md:pb-16">
+        <div className="relative z-20 w-full px-6 md:px-12 lg:px-16 pt-32 pb-28 sm:pb-16">
           <div className="max-w-3xl flex flex-col items-start text-left">
             <p className="hero-brand text-4xl sm:text-5xl md:text-6xl font-bold uppercase mb-4 animate-fade-in-up">
               Sekar Bali
@@ -435,13 +435,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/tours/batur-sunrise-jeep-tour"
-                  className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
+                  className="inline-flex w-full sm:flex-1 items-center justify-center min-h-14 h-14 sm:h-12 px-6 rounded-full btn-gold-shimmer font-bold text-base sm:text-sm uppercase tracking-wider"
                 >
                   Book private jeep
                 </Link>
                 <Link
                   href="#experiences"
-                  className="inline-flex flex-1 items-center justify-center h-12 px-7 rounded-full bg-white/15 border-2 border-white/70 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/25 hover:border-white transition-colors backdrop-blur-sm"
+                  className="inline-flex w-full sm:flex-1 items-center justify-center min-h-14 h-14 sm:h-12 px-6 rounded-full bg-white/15 border-2 border-white/70 text-white font-bold text-base sm:text-sm uppercase tracking-wider hover:bg-white/25 hover:border-white transition-colors backdrop-blur-sm"
                 >
                   Browse experiences
                 </Link>

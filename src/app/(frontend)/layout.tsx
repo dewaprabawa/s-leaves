@@ -142,6 +142,9 @@ const footerLinks = {
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Transfers", href: "/transfers" },
+    { label: "Anti-Scam", href: "/anti-scam" },
+    { label: "Payment Policy", href: "/payment-policy" },
+    { label: "Refund Policy", href: "/refund-policy" },
     { label: "Cancellation Policy", href: "/cancellation-policy" },
     { label: "Privacy Policy", href: "/privacy-policy" },
   ],
@@ -273,7 +276,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <div className="border-t border-sand/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-xs opacity-50">© {new Date().getFullYear()} {siteName}. All rights reserved.</p>
               <nav aria-label="Legal" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs opacity-50">
+                <Link href="/anti-scam" className="hover:opacity-100 transition-opacity underline underline-offset-4">Anti-Scam</Link>
                 <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Privacy Policy</Link>
+                <Link href="/refund-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Refund Policy</Link>
+                <Link href="/payment-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Payment Policy</Link>
                 <Link href="/cancellation-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Booking Terms &amp; Cancellation</Link>
                 <Link href="/about" className="hover:opacity-100 transition-opacity underline underline-offset-4">Our Team</Link>
                 <span className="opacity-60">Partner: <a href="https://tumangbaliclass.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-100 transition-opacity underline underline-offset-4">Tumang Bali Class</a></span>

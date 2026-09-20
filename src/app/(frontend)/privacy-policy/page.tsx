@@ -208,7 +208,28 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <p className="pt-4 border-t border-brand-green/10">
-            See also our{' '}
+            See also{' '}
+            <Link
+              href="/anti-scam"
+              className="text-brand-green underline underline-offset-2 hover:opacity-80"
+            >
+              Anti-scam
+            </Link>
+            {' · '}
+            <Link
+              href="/payment-policy"
+              className="text-brand-green underline underline-offset-2 hover:opacity-80"
+            >
+              Payment Policy
+            </Link>
+            {' · '}
+            <Link
+              href="/refund-policy"
+              className="text-brand-green underline underline-offset-2 hover:opacity-80"
+            >
+              Refund Policy
+            </Link>
+            {' · '}
             <Link
               href="/cancellation-policy"
               className="text-brand-green underline underline-offset-2 hover:opacity-80"

@@ -19,7 +19,7 @@ Operator fact: **jeep meals are not included; food is not served on the jeep.**
 
 **Cooking:** promo IDR 450,000 (was 506,370) · max 8 · Chef Wayan Suryana · free Ubud pickup · veg/vegan on request · AM market / PM kitchen.
 
-**Jeep:** private 4×4 · crater rim ~1,350m · **not the summit** · island-wide pickup 02:00–03:00 · IDR 1.35M / 825K / 750K · **meals not included**.
+**Jeep:** private 4×4 · crater rim ~1,350m · **not the summit** · island-wide pickup 02:00–03:00 · IDR 1.35M / 950K / 750K · **meals not included**.
 
 ## Platform readiness
 
@@ -27,4 +27,4 @@ Google AIO / ChatGPT / Perplexity / Gemini: **100 readiness** after deploy. Live
 
 ## llms.txt
 
-Generators updated `GEO_UPDATED` / `JEEP_GEO_UPDATED` / `COOKING_GEO_UPDATED` = 2026-09-19. Live file changes when this branch ships.
+Generators updated `GEO_UPDATED` / `JEEP_GEO_UPDATED` = 2026-09-20 (`COOKING_GEO_UPDATED` = 2026-09-19). Live file changes when this branch ships.

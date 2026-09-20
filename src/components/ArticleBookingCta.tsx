@@ -127,7 +127,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-sunrise-jeep-tour-guide-2026': {
     headline: 'Book the no-hike Batur sunrise jeep',
-    body: 'Island-wide pickup included. Meals not served on the jeep. Solo IDR 1.35M · 3+ IDR 750K.',
+    body: 'Island-wide pickup included. Meals not served on the jeep. Solo IDR 1.35M · 2 pax IDR 950K · 3+ IDR 750K.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book the jeep',
   },

@@ -10,7 +10,7 @@
 
 1. **Mount Batur jeep pickup time from Canggu / Seminyak**  
    - Money page: `/tours/batur-sunrise-jeep-tour`  
-   - Why it sells: High-ticket sunrise product (solo IDR 1.35M · 2 pax 825K · 3+ 750K). Guests abandon if they do not know a 02:00–03:00 island-wide pickup is included (not the ATV IDR 400K add-on). Guide + vs-trek posts exist; no dedicated “pickup times by area” spoke.  
+   - Why it sells: High-ticket sunrise product (solo IDR 1.35M · 2 pax 950K · 3+ 750K). Guests abandon if they do not know a 02:00–03:00 island-wide pickup is included (not the ATV IDR 400K add-on). Guide + vs-trek posts exist; no dedicated “pickup times by area” spoke.  
    - Effort: **M**  
    - Action: **new article** (south Bali vs Ubud clock) + **title tweak** on money page — SERP title `Mount Batur Sunrise Jeep | No Hike, From IDR 750K` is the 3+ group rate; solo guests can read that as bait.
 

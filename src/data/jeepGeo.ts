@@ -7,7 +7,7 @@
 import { SITE_URL } from '@/lib/seo'
 import { TIER_PRICES_IDR } from '@/lib/pricing'
 
-export const JEEP_GEO_UPDATED = '2026-09-19'
+export const JEEP_GEO_UPDATED = '2026-09-20'
 
 const [JEEP_SOLO_IDR, JEEP_PAIR_IDR, JEEP_GROUP_IDR] = TIER_PRICES_IDR['jeep-sunrise']
 

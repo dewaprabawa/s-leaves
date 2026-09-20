@@ -35,6 +35,13 @@ const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: ()
 
 const UBUD_CENTER = { lat: -8.5069, lng: 115.2625 };
 
+export type TourOptionalAddon = {
+  id: string
+  label: string
+  blurb: string
+  perPerson: number
+}
+
 export interface TourConfig {
   id: string
   title: string
@@ -51,6 +58,13 @@ export interface TourConfig {
   meetsAtArena?: boolean
   /** Self-meet only — do not offer hotel pickup (Luwak coffee plantation) */
   pickupNotOffered?: boolean
+  /**
+   * Quote against this catalog ActivityId when the dropdown id is a product
+   * variant (jeep tracking / sunset). Keeps private 2 / 3+ jeep tiers.
+   */
+  pricingActivityId?: string
+  /** Optional per-person add-ons (jeep hot spring). Not mix-combo activities. */
+  optionalAddons?: TourOptionalAddon[]
 }
 
 export function BookingPopup({
@@ -88,6 +102,7 @@ export function BookingPopup({
   const [step, setStep] = useState<'form' | 'invoice'>('form');
   const [invoice, setInvoice] = useState<InvoiceDraft | null>(null);
   const [mixIds, setMixIds] = useState<string[]>([]);
+  const [addonIds, setAddonIds] = useState<string[]>([]);
 
   const activeTour =
     (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
@@ -122,6 +137,7 @@ export function BookingPopup({
       setStep('form');
       setInvoice(null);
       setMixIds(initialMixIds ?? []);
+      setAddonIds([]);
     }
   }, [isOpen, tour, initialMixIds]);
 
@@ -141,6 +157,8 @@ export function BookingPopup({
     )
     const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
     setMixIds((prev) => prev.filter((id) => allowed.has(id as MixableActivityId) && id !== activeTour.id))
+    const allowedAddons = new Set((activeTour.optionalAddons ?? []).map((a) => a.id))
+    setAddonIds((prev) => prev.filter((id) => allowedAddons.has(id)))
   }, [activeTour?.id])
 
   // Keep dialog above the fixed navbar and lock page scroll while open
@@ -193,14 +211,14 @@ export function BookingPopup({
 
   const mixedQuote = isCombo
     ? quoteMixedActivities({
-        primaryId: activeTour.id,
+        primaryId: activeTour.pricingActivityId ?? activeTour.id,
         mixIds,
         adults,
         children: kids,
       })
     : null;
   const activityQuote = quoteActivity({
-    activityId: activeTour.id,
+    activityId: activeTour.pricingActivityId ?? activeTour.id,
     adults,
     children: kids,
     // Keeps the price visible for tours without a tiered pricing table
@@ -208,6 +226,14 @@ export function BookingPopup({
     fallbackAdultPrice: activeTour.adultPrice,
     fallbackChildPrice: activeTour.kidPrice,
   });
+  const selectedAddons = (activeTour.optionalAddons ?? []).filter((addon) =>
+    addonIds.includes(addon.id),
+  )
+  const addonPax = Math.max(1, adults) + kids
+  const addonTotal = selectedAddons.reduce(
+    (sum, addon) => sum + addon.perPerson * addonPax,
+    0,
+  )
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupIncluded = activeTour.pickupIncluded === true;
   const pickupNotOffered = activeTour.pickupNotOffered === true;
@@ -223,7 +249,7 @@ export function BookingPopup({
     ? mixedQuote.discountedSubtotal
     : (activityQuote?.activitySubtotal ?? 0) + (activityQuote?.childSubtotal ?? 0);
   const pickupFee = pickupQuote.total;
-  const totalCost = activityTotal + pickupFee;
+  const totalCost = activityTotal + addonTotal + pickupFee;
   const compareAtActivityTotal = mixedQuote
     ? mixedQuote.compareAtSubtotal
     : activityQuote
@@ -232,6 +258,7 @@ export function BookingPopup({
   const compareAtTotal =
     compareAtActivityTotal +
     (mixedQuote ? 0 : activityQuote?.childSubtotal ?? 0) +
+    addonTotal +
     pickupFee;
   const tierPromoActive = mixedQuote
     ? mixedQuote.discountAmount > 0 || mixedQuote.discountedSubtotal < mixedQuote.compareAtSubtotal
@@ -244,13 +271,20 @@ export function BookingPopup({
       prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
     )
   };
+  const toggleAddonId = (id: string) => {
+    setAddonIds((prev) =>
+      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
+    )
+  };
   const nameOk = guestName.trim().length >= 2;
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
   const locationOk = wantsPickup
     ? Boolean(location) && locationDetails.trim().length >= 2
     : true;
   const canSubmit = nameOk && ageOk && locationOk && !isInvalidPax;
-  const detailTourSlug = getTourSlugForActivity(activeTour.id);
+  const detailTourSlug = getTourSlugForActivity(
+    activeTour.pricingActivityId ?? activeTour.id,
+  );
 
   const handleBook = () => {
     if (!nameOk) return alert("Please enter your name.");
@@ -319,6 +353,11 @@ export function BookingPopup({
     } else if (activityQuote) {
       appendQuoteNotes(activityQuote, activeTour.title)
     }
+    for (const addon of selectedAddons) {
+      pickupNoteParts.push(
+        `${addon.label} · ${formatIdr(addon.perPerson)} × ${addonPax} person(s) (ticket included)`,
+      )
+    }
 
     const lineItems: { label: string; amount: number }[] = []
     const pushQuoteLines = (
@@ -356,6 +395,12 @@ export function BookingPopup({
     } else if (activityQuote) {
       pushQuoteLines(activityQuote, activeTour.title)
     }
+    for (const addon of selectedAddons) {
+      lineItems.push({
+        label: `${addon.label} — ${addonPax} person(s) × ${formatIdr(addon.perPerson)} (ticket included)`,
+        amount: addon.perPerson * addonPax,
+      })
+    }
     if (pickupFee > 0) {
       lineItems.push({
         label: sameDropOff ? 'Hotel pickup & return transfer' : 'Hotel pickup transfer',
@@ -378,7 +423,9 @@ export function BookingPopup({
       childrenAges: kids > 0 ? childrenAges.trim() || undefined : undefined,
       activity: mixedQuote
         ? `${activeTour.title} + ${mixedQuote.labels.slice(1).join(' + ')}`
-        : activeTour.title,
+        : selectedAddons.length
+          ? `${activeTour.title} + ${selectedAddons.map((addon) => addon.label).join(' + ')}`
+          : activeTour.title,
       activityOption: mixedQuote
         ? `Combo (${mixedQuote.discountPercent}% mix discount)`
         : undefined,
@@ -596,6 +643,41 @@ export function BookingPopup({
                         className="mt-1 accent-brand-green"
                         checked={checked}
                         onChange={() => toggleMixId(opt.id)}
+                      />
+                      <span className="min-w-0">
+                        <span className="block text-sm font-bold text-brand-green">{opt.label}</span>
+                        <span className="block text-xs text-brand-green-light mt-0.5">{opt.blurb}</span>
+                      </span>
+                    </label>
+                  )
+                })}
+              </div>
+            </div>
+          ) : null}
+
+          {activeTour.optionalAddons && activeTour.optionalAddons.length > 0 ? (
+            <div className="mb-6 pb-4 border-b border-brand-green/10">
+              <p className="text-brand-green font-bold text-sm mb-1">Optional add-on</p>
+              <p className="text-brand-green-light text-xs mb-3 leading-relaxed">
+                Add a Batur / Toya Devasya hot spring soak after sunrise or sunset. The entrance ticket is included in the +IDR 150,000 — you do not pay a second ticket at the gate.
+              </p>
+              <div className="space-y-2">
+                {activeTour.optionalAddons.map((opt) => {
+                  const checked = addonIds.includes(opt.id)
+                  return (
+                    <label
+                      key={opt.id}
+                      className={`flex items-start gap-3 rounded-xl border px-3 py-3 cursor-pointer transition-colors ${
+                        checked
+                          ? 'border-brand-green bg-brand-green/5'
+                          : 'border-brand-green/15 bg-white hover:border-brand-green/30'
+                      }`}
+                    >
+                      <input
+                        type="checkbox"
+                        className="mt-1 accent-brand-green"
+                        checked={checked}
+                        onChange={() => toggleAddonId(opt.id)}
                       />
                       <span className="min-w-0">
                         <span className="block text-sm font-bold text-brand-green">{opt.label}</span>
@@ -913,6 +995,19 @@ export function BookingPopup({
                 ) : null}
               </>
             ) : null}
+            {selectedAddons.map((addon) => (
+              <div
+                key={addon.id}
+                className="flex justify-between items-center mb-2 text-sm text-brand-green-light"
+              >
+                <span>
+                  {addon.label} · {formatIdr(addon.perPerson)} × {addonPax} (ticket included)
+                </span>
+                <span className="font-semibold text-brand-green">
+                  {formatIdr(addon.perPerson * addonPax)}
+                </span>
+              </div>
+            ))}
             {pickupFee > 0 && (
               <div className="flex justify-between items-center mb-3 text-sm text-brand-green-light">
                 <span>Pickup &amp; transfer{sameDropOff ? ' (round trip)' : ''}</span>

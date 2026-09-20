@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "What activities and tours do you offer?",
-    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the Mount Batur Sunrise Jeep Tour (no hike). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat purification — IDR 1,200,000 per person with shuttle, guide, and breakfast. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the Mount Batur jeep (private or tracking, sunrise or sunset, same private rates; optional hot spring +IDR 150,000 with ticket included). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat purification — IDR 1,200,000 per person with shuttle, guide, and breakfast. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",
@@ -61,11 +61,11 @@ const faqs = [
   },
   {
     question: "How much is the Mount Batur Sunrise Jeep Tour?",
-    answer: "IDR 1,350,000 for a solo traveller, IDR 950,000 per person for 2 guests, and IDR 750,000 per person for 3+ guests sharing a private 4×4. Hotel pickup, a hot drink, and the Kintamani entrance fee are included — no summit hike. Meals are not included and food is not served on the jeep. You ride volcanic tracks to a crater-rim viewpoint (~1,350m)."
+    answer: "IDR 950,000 per person for 2 guests (minimum 2) and IDR 750,000 per person for 3+ guests sharing a private 4×4. Private sit-in or tracking, sunrise or sunset. Hotel pickup, a hot drink, and the Kintamani entrance fee are included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Meals are not included and food is not served on the jeep.",
   },
   {
     question: "Is the Mount Batur jeep tour a hike?",
-    answer: "No. You stay in the 4×4. It is a sunrise jeep to a crater-rim viewpoint near Kintamani, not the classic 2-hour Mount Batur summit trek."
+    answer: "Private jeep: you stay in the 4×4 to a crater-rim viewpoint near Kintamani. Private tracking jeep adds a guided trek at the same private rates. Minimum 2 guests. Neither is the classic 2-hour Mount Batur summit trek.",
   },
   {
     question: "How much is the Luwak Coffee Plantation Experience?",

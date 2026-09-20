@@ -63,7 +63,9 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
     standardPrice: getListPrice(activityId),
     tierLabel: twoPlusDiscount
       ? "2+ discount — IDR 450,000 per person"
-      : "3+ group rate — book more, save more",
+      : activityId === "jeep-sunrise"
+        ? "Private · min 2 guests · 3+ group rate"
+        : "3+ group rate — book more, save more",
   }
 }
 
@@ -72,7 +74,14 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
   "whitewater-rafting": ["rafting"],
   "canyon-tubing": ["canyon-tubing"],
   "ubud-ricefield-cycling-tour": ["cycling"],
-  "batur-sunrise-jeep-tour": ["jeep-sunrise"],
+  "batur-sunrise-jeep-tour": [
+    "jeep-sunrise",
+    "jeep-tracking-sunrise",
+    "jeep-sunset",
+    "jeep-tracking-sunset",
+    "jeep-kintamani-day",
+    "jeep-kintamani-day-tracking",
+  ],
 }
 
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {

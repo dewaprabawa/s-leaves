@@ -126,8 +126,8 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     primaryLabel: 'Book Tumang',
   },
   'mount-batur-sunrise-jeep-tour-guide-2026': {
-    headline: 'Book the no-hike Batur sunrise jeep',
-    body: 'Island-wide pickup included. Meals not served on the jeep. Solo IDR 1.35M · 2 pax IDR 950K · 3+ IDR 750K.',
+    headline: 'Book the private Batur jeep',
+    body: 'Private sit-in or tracking, sunrise or sunset. Min 2 guests. 2 pax IDR 950K · 3+ IDR 750K. Hot spring +IDR 150K with ticket included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book the jeep',
   },
@@ -145,7 +145,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-sunrise-jeep-tour-price-guide-2026': {
     headline: 'Get the exact jeep tier on WhatsApp',
-    body: 'Solo, pair, or 3+ sharing one private 4×4. Meals not included.',
+    body: 'Private 4×4, min 2 guests. Pair or 3+ sharing. Meals not included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Batur jeep',
   },

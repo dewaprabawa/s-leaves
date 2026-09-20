@@ -2,7 +2,23 @@
 
 import { useState } from "react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
-import { getListPrice } from "@/lib/pricing"
+import { getListPrice, JEEP_HOT_SPRING_IDR } from "@/lib/pricing"
+
+const JEEP_HOT_SPRING_ADDON = {
+  id: "hotspring",
+  label: "Add Batur hot spring (ticket included)",
+  blurb: `Existing jeep price + IDR ${(JEEP_HOT_SPRING_IDR / 1000).toFixed(0)},000 per person. Toya Devasya / Batur entrance ticket is included — no second ticket at the gate.`,
+  perPerson: JEEP_HOT_SPRING_IDR,
+}
+
+const JEEP_BOOKING_SHARED = {
+  adultPrice: getListPrice("jeep-sunrise"),
+  kidPrice: null as null,
+  minPax: 2,
+  pickupIncluded: true as const,
+  pricingActivityId: "jeep-sunrise",
+  optionalAddons: [JEEP_HOT_SPRING_ADDON],
+}
 
 export const BOOKABLE_TOURS: TourConfig[] = [
   {
@@ -52,12 +68,47 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   },
   {
     id: "jeep-sunrise",
-    title: "Mount Batur Sunrise Jeep Tour",
+    title: "Private Jeep Sunrise",
     times: ["02:30", "03:00"],
-    adultPrice: getListPrice("jeep-sunrise"),
+    ...JEEP_BOOKING_SHARED,
+  },
+  {
+    id: "jeep-tracking-sunrise",
+    title: "Private Tracking Jeep Sunrise",
+    times: ["02:30", "03:00"],
+    ...JEEP_BOOKING_SHARED,
+  },
+  {
+    id: "jeep-sunset",
+    title: "Private Jeep Sunset",
+    times: ["14:30", "15:30"],
+    ...JEEP_BOOKING_SHARED,
+  },
+  {
+    id: "jeep-tracking-sunset",
+    title: "Private Tracking Jeep Sunset",
+    times: ["14:30", "15:30"],
+    ...JEEP_BOOKING_SHARED,
+  },
+  {
+    id: "jeep-kintamani-day",
+    title: "Private Kintamani Day — Jeep",
+    times: ["02:30", "03:00"],
+    adultPrice: getListPrice("kintamani-day"),
     kidPrice: null,
-    minPax: 1,
+    minPax: 2,
     pickupIncluded: true,
+    pricingActivityId: "kintamani-day",
+  },
+  {
+    id: "jeep-kintamani-day-tracking",
+    title: "Private Kintamani Day — Tracking",
+    times: ["02:30", "03:00"],
+    adultPrice: getListPrice("kintamani-day"),
+    kidPrice: null,
+    minPax: 2,
+    pickupIncluded: true,
+    pricingActivityId: "kintamani-day",
   },
 ]
 

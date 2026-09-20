@@ -6,7 +6,7 @@
 import { ADVENTURES, type AdventureCatalogItem } from '@/data/adventures'
 import {
   CHILD_PRICE_IDR,
-  getUnitPrice,
+  getListPrice,
   type ActivityId,
 } from '@/lib/pricing'
 
@@ -43,7 +43,7 @@ function adventureToAdmin(adv: AdventureCatalogItem): AdminActivity {
     id: adv.id,
     name: adv.name,
     catalogId: adv.id,
-    adultPrice: getUnitPrice(adv.id, 1),
+    adultPrice: getListPrice(adv.id),
     childPrice: CHILD_PRICE_IDR[adv.id] ?? null,
     minPax: adv.minPax,
     times: [...adv.times],

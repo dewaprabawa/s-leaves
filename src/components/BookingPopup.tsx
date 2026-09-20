@@ -355,7 +355,7 @@ export function BookingPopup({
     }
     if (activeTour.pricingActivityId === 'kintamani-day') {
       pickupNoteParts.push(
-        'Itinerary: jeep or tracking · natural hot spring (ticket included) · Umah Kuno coffee · rice terrace',
+        'Itinerary: jeep or tracking · natural hot spring (ticket included) · meal included · Umah Kuno coffee · rice terrace',
       )
     }
     for (const addon of selectedAddons) {
@@ -611,7 +611,7 @@ export function BookingPopup({
               {activeTour.pricingActivityId === 'kintamani-day' ? (
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
                   Private full-day · min 2 · promo IDR 1,300,000 (was 1,450,000): jeep or tracking,
-                  natural hot spring (ticket included), Umah Kuno coffee, rice terrace.
+                  natural hot spring (ticket included), meal included, Umah Kuno coffee, rice terrace.
                 </p>
               ) : null}
             </div>

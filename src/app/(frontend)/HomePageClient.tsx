@@ -193,7 +193,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Private Kintamani Day",
     adventureId: "kintamani-day",
-    pax: `${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Hot spring ticket included · Umah Kuno · Rice terrace`,
+    pax: `${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Meal included · Hot spring ticket included · Umah Kuno · Rice terrace`,
     price: getPromoListPrice("kintamani-day"),
     originalPrice: getListPrice("kintamani-day"),
     highlight: false,

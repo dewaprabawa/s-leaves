@@ -74,7 +74,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep tour duration',
     q: 'How long does the Mount Batur Sunrise Jeep Tour take?',
-    a: 'The sunrise tour runs roughly 6–7 hours door-to-door; sunset is about 4–5 hours. Both include hotel pickup, the 4×4 ride, time at the crater-rim viewpoint, optional coffee or hot spring, and drop-off. Meals are not included.',
+    a: 'The sunrise tour runs roughly 6–7 hours door-to-door; sunset is about 4–5 hours. Both include hotel pickup, the 4×4 ride, time at the crater-rim viewpoint, optional coffee or hot spring, and drop-off. Meals are not included on sunrise or sunset jeep. Private Kintamani Day (jeep or tracking) includes a sit-down meal.',
   },
   {
     intent: 'mount batur jeep tour insurance safety',
@@ -99,7 +99,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'kintamani day jeep hot spring coffee rice terrace',
     q: 'What is the Private Kintamani Day itinerary?',
-    a: 'Private Kintamani Day with Sekar Bali Activity is a private full-day: jeep or tracking at Mount Batur, a natural hot spring with the entrance ticket included, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included.',
+    a: 'Private Kintamani Day with Sekar Bali Activity is a private full-day: jeep or tracking at Mount Batur, a natural hot spring with the entrance ticket included, a sit-down meal, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. The meal is included on both Jeep and Tracking.',
   },
 ]
 
@@ -135,6 +135,6 @@ export const JEEP_PRICE_ROWS = [
   {
     option: 'Private Kintamani Day',
     price: 'IDR 1.300.000 promo',
-    notes: 'Min 2 · jeep or tracking · hot spring ticket · Umah Kuno · rice terrace · was IDR 1.450.000',
+    notes: 'Min 2 · jeep or tracking · meal included · hot spring ticket · Umah Kuno · rice terrace · was IDR 1.450.000',
   },
 ] as const

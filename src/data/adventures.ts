@@ -131,15 +131,15 @@ export const ADVENTURES: AdventureCatalogItem[] = [
   {
     id: "kintamani-day",
     name: "Private Kintamani Day",
-    tagline: "Jeep or trek · hot spring · Umah Kuno · rice terrace",
-    paxLabel: "Per person (private · min 2 · promo)",
+    tagline: "Jeep or trek · meal · hot spring · Umah Kuno · rice terrace",
+    paxLabel: "Per person (private · min 2 · promo · meal included)",
     description:
-      "Private full-day: jeep or tracking at Mount Batur, natural hot spring with the entrance ticket included, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included.",
+      "Private full-day: jeep or tracking at Mount Batur, natural hot spring with the entrance ticket included, a sit-down meal, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. Meal included on both Jeep and Tracking.",
     highlights: [
       "Private jeep or tracking — you choose",
+      "Sit-down meal included",
       "Natural hot spring · ticket included",
-      "Umah Kuno coffee tasting",
-      "Rice terrace stop · hotel pickup included",
+      "Umah Kuno coffee tasting · rice terrace · hotel pickup",
     ],
     duration: "Full day",
     image: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",

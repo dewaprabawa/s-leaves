@@ -357,9 +357,16 @@ Add a soak at a Batur / Toya Devasya hot spring after sunrise or sunset for **ID
 On the way back we can swing by a local Kintamani coffee plantation for a short, no-obligation stop. For a dedicated ethical tasting near Ubud, see [Luwak Coffee Plantation (Umah Kuno)](/tours/luwak-coffee-plantation). Full sunrise itinerary: [Batur sunrise jeep guide 2026](/blog/mount-batur-sunrise-jeep-tour-guide-2026).
 
 ### Private Kintamani Day (promo)
-A private full-day add-on itinerary: **jeep or tracking**, **natural hot spring** (entrance ticket included), **Umah Kuno coffee**, and a **rice terrace** stop. Minimum 2 guests. **Promo IDR 1,300,000 per person** (was IDR 1,450,000). Hotel pickup included. Choose **Private Kintamani Day — Jeep** or **Private Kintamani Day — Tracking** in the booking form.
+A private full-day itinerary: **jeep or tracking**, **natural hot spring** (entrance ticket included), **Umah Kuno coffee**, and a **rice terrace** stop. Minimum 2 guests. **Promo IDR 1,300,000 per person** (was IDR 1,450,000). Hotel pickup included. Choose **Private Kintamani Day — Jeep** or **Private Kintamani Day — Tracking** in the booking form.
 
-Typical flow: pre-dawn jeep or trek at Batur → Toya Devasya / Batur hot spring → Umah Kuno tasting in Tampaksiring → rice terrace (Tegalalang) → hotel drop-off.
+| Stop | What you do |
+| --- | --- |
+| Jeep or tracking | Mount Batur crater-rim 4×4 — sit-in jeep or jeep + guided trek |
+| Natural hot spring | Toya Devasya / Batur soak — **entrance ticket included** |
+| Umah Kuno | Coffee tasting at the Bali Umah Kuno coffee place (Tampaksiring) |
+| Rice terrace | Tegalalang (or nearby) rice-terrace stop, then hotel drop-off |
+
+Typical clock: pre-dawn Batur jeep or trek → hot spring → Umah Kuno → rice terrace → hotel.
 
 ### Group-Friendly Pricing
 A private jeep costs the same whether two or three people ride, so the per-person rate drops the more guests you bring. Tracking jeep uses these same private tiers. **Minimum 2 guests.**
@@ -462,11 +469,39 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
           "Sunset jeep or tracking: afternoon pickup 14:30–15:30, then the same crater-rim viewpoint over Lake Batur and Mount Agung. Same private rates as sunrise. Optional hot spring after sunset.",
       },
       {
-        id: "iti-kintamani-day",
-        time: "Full day (Private Kintamani Day)",
-        title: "Jeep or trek · hot spring · Umah Kuno · rice terrace",
+        id: "iti-kintamani-day-1",
+        time: "02:30–03:00 (Private Kintamani Day)",
+        title: "Hotel pickup — full-day private",
         description:
-          "Promo itinerary (min 2 guests): private jeep or tracking at Batur, natural hot spring with entrance ticket included, Umah Kuno coffee tasting, then a rice-terrace stop. Promo IDR 1,300,000 per person (was IDR 1,450,000).",
+          "Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. Choose jeep (sit-in) or tracking (jeep + trek) in the booking form.",
+      },
+      {
+        id: "iti-kintamani-day-2",
+        time: "Sunrise",
+        title: "Jeep or tracking at Mount Batur",
+        description:
+          "Private 4×4 to the crater-rim viewpoint — stay in the jeep, or continue with a guided trek. Same private Kintamani Day promo rate either way.",
+      },
+      {
+        id: "iti-kintamani-day-3",
+        time: "Morning",
+        title: "Natural hot spring (ticket included)",
+        description:
+          "Soak at Toya Devasya / Batur. The hot-spring entrance ticket is included in this itinerary — no second ticket at the gate.",
+      },
+      {
+        id: "iti-kintamani-day-4",
+        time: "Late morning",
+        title: "Umah Kuno coffee tasting",
+        description:
+          "Stop at the Bali Umah Kuno coffee place in Tampaksiring for a tasting (not the optional Kintamani roadside plantation on the short jeep).",
+      },
+      {
+        id: "iti-kintamani-day-5",
+        time: "Afternoon",
+        title: "Rice terrace, then hotel drop-off",
+        description:
+          "Rice-terrace stop (typically Tegalalang), then private drop-off back at your hotel.",
       },
     ],
     addons: [],

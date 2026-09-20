@@ -7,6 +7,7 @@ import { FAQSection } from "@/components/FAQSection"
 import AntiScamSection from "@/components/AntiScamSection"
 import GeoAnswerBlock from "@/components/GeoAnswerBlock"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
+import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import HomeActivitySearch from "@/components/HomeActivitySearch"
 import PromoPrice from "@/components/PromoPrice"
 import { notifyActivityClick } from "@/lib/web3forms"
@@ -252,6 +253,8 @@ const travelGuides = [
   },
 ] as const
 
+const JEEP_BOOKABLE_TOURS = BOOKABLE_TOURS.filter((t) => t.id.startsWith("jeep-"))
+
 function toTourConfig(adv: AdventureCatalogItem): TourConfig {
   return {
     id: adv.id,
@@ -263,6 +266,25 @@ function toTourConfig(adv: AdventureCatalogItem): TourConfig {
     freeUbudPickup: adv.freeUbudPickup ?? false,
     pickupIncluded: adv.pickupIncluded ?? false,
   }
+}
+
+function bookingSetupForAdventure(adventureId: string): {
+  tour: TourConfig
+  tourOptions?: TourConfig[]
+} | null {
+  if (adventureId === "kintamani-day") {
+    const tour = BOOKABLE_TOURS.find((t) => t.id === "jeep-kintamani-day")
+    if (!tour) return null
+    return { tour, tourOptions: JEEP_BOOKABLE_TOURS }
+  }
+  if (adventureId === "jeep-sunrise") {
+    const tour = BOOKABLE_TOURS.find((t) => t.id === "jeep-sunrise")
+    if (!tour) return null
+    return { tour, tourOptions: JEEP_BOOKABLE_TOURS }
+  }
+  const adv = ADVENTURES.find((a) => a.id === adventureId)
+  if (!adv) return null
+  return { tour: toTourConfig(adv) }
 }
 
 function ExperienceCard({ tour }: { tour: Tour }) {
@@ -307,6 +329,7 @@ function ExperienceCard({ tour }: { tour: Tour }) {
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(new Set())
   const [bookingTour, setBookingTour] = useState<TourConfig | null>(null)
+  const [bookingTourOptions, setBookingTourOptions] = useState<TourConfig[] | undefined>()
   const [bookingOpen, setBookingOpen] = useState(false)
   const [bookingMixIds, setBookingMixIds] = useState<string[]>([])
   const [storyIndex, setStoryIndex] = useState(0)
@@ -316,9 +339,10 @@ export default function Home() {
   const cultureCombo = getCyclingCookingCombo()
 
   const openBooking = (adventureId: string, mixIds: string[] = []) => {
-    const adv = ADVENTURES.find((a) => a.id === adventureId)
-    if (!adv) return
-    setBookingTour(toTourConfig(adv))
+    const setup = bookingSetupForAdventure(adventureId)
+    if (!setup) return
+    setBookingTour(setup.tour)
+    setBookingTourOptions(setup.tourOptions)
     setBookingMixIds(mixIds)
     setBookingOpen(true)
   }
@@ -362,8 +386,10 @@ export default function Home() {
         onClose={() => {
           setBookingOpen(false)
           setBookingMixIds([])
+          setBookingTourOptions(undefined)
         }}
         tour={bookingTour}
+        tourOptions={bookingTourOptions}
         initialMixIds={bookingMixIds}
       />
 

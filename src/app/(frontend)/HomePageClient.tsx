@@ -811,7 +811,7 @@ export default function Home() {
               Combine land &amp; water
             </h2>
             <p className="mt-4 text-brand-green-light max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-              Same-day ATV + tubing or tubing + rafting saves 10–12% versus booking separately.
+              Same-day ATV + tubing or ATV + rafting saves 10–12% versus booking separately.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">

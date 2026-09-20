@@ -52,22 +52,12 @@ export const MIX_ADDON_OPTIONS: Partial<
       label: 'Single ATV',
       blurb: 'Jungle ATV before or after tubing',
     },
-    {
-      id: 'rafting',
-      label: 'Whitewater Rafting',
-      blurb: 'Tubing + rafting water day',
-    },
   ],
   rafting: [
     {
       id: 'single-atv',
       label: 'Single ATV',
       blurb: 'ATV trails paired with rafting',
-    },
-    {
-      id: 'canyon-tubing',
-      label: 'Canyon Tubing',
-      blurb: 'Gentler float plus rafting thrills',
     },
   ],
 }
@@ -94,17 +84,6 @@ export const FEATURED_COMBOS: FeaturedCombo[] = [
     primaryId: 'single-atv',
     mixIds: ['canyon-tubing'],
     image: '/images/adventures/atv-adventure.jpg',
-    duration: 'Half day',
-  },
-  {
-    id: 'combo-tubing-rafting',
-    name: 'Tubing + Rafting',
-    tagline: 'Double water day',
-    description:
-      'Drift canyon tubing, then paddle Class II–III whitewater. Ideal if you want a full water adventure without ATV mud.',
-    primaryId: 'canyon-tubing',
-    mixIds: ['rafting'],
-    image: '/images/adventures/canyon-tubing.jpg',
     duration: 'Half day',
   },
   {

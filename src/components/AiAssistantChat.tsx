@@ -138,12 +138,12 @@ export default function AiAssistantChat() {
         <button
           type="button"
           onClick={toggle}
-          className="ml-auto inline-flex items-center gap-2 rounded-full bg-brand-green px-4 py-3 text-sm font-bold uppercase tracking-wider text-sand shadow-lg transition-colors hover:bg-brand-green-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-gold"
+          className="ml-auto inline-flex items-center justify-center gap-2 rounded-full bg-brand-green h-12 w-12 sm:h-auto sm:w-auto sm:px-4 sm:py-3 text-sm font-bold uppercase tracking-wider text-sand shadow-lg transition-colors hover:bg-brand-green-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-gold"
           aria-expanded={open}
           aria-label={open ? "Close AI Assistant" : "Open AI Assistant"}
         >
           <Bot className="h-5 w-5 shrink-0" aria-hidden="true" />
-          <span>{open ? "Close" : "AI Assistant"}</span>
+          <span className="hidden sm:inline">{open ? "Close" : "AI Assistant"}</span>
         </button>
       </div>
     </div>

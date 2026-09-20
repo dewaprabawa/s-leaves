@@ -55,7 +55,7 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: "Tumang Bali Cooking Class",
     description:
-      "Family-run Balinese cooking class near Ubud with Chef Wayan Sudiana — morning market tour, rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. TripAdvisor Traveler\u2019s Choice 2026.",
+      "Family-run Balinese cooking class near Ubud with Chef Wayan Suryana — morning market tour, rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. TripAdvisor Traveler\u2019s Choice 2026.",
     price: "450000",
     image: "/images/cooking/satay-class.jpg",
   },

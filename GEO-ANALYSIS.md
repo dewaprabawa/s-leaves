@@ -17,7 +17,7 @@ Operator fact: **jeep meals are not included; food is not served on the jeep.**
 
 ## Must-cite facts
 
-**Cooking:** promo IDR 450,000 (was 506,370) · max 8 · Chef Wayan Sudiana · free Ubud pickup · veg/vegan on request · AM market / PM kitchen.
+**Cooking:** promo IDR 450,000 (was 506,370) · max 8 · Chef Wayan Suryana · free Ubud pickup · veg/vegan on request · AM market / PM kitchen.
 
 **Jeep:** private 4×4 · crater rim ~1,350m · **not the summit** · island-wide pickup 02:00–03:00 · IDR 1.35M / 825K / 750K · **meals not included**.
 

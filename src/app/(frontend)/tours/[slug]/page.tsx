@@ -229,7 +229,7 @@ function buildTourSchema(tour: Tour) {
           : tour.slug === "batur-sunrise-jeep-tour"
             ? "Kintamani, Mount Batur, Bali"
           : tour.slug === "tirta-empu-purification"
-            ? "Tampaksiring, Tirta Empul, Gianyar, Bali"
+            ? "Tampaksiring Tirta Empul or Pura Beji, Gianyar, Bali"
           : tour.area ?? "Ubud, Bali",
     },
     ...(tour.venue

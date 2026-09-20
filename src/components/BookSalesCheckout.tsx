@@ -435,7 +435,7 @@ export default function BookSalesCheckout({
             </span>
             <span className="inline-flex items-center gap-1.5">
               <MapPin className="w-4 h-4 text-brand-green shrink-0" />
-              Private · Tampaksiring holy spring
+              Tirta Empul or Pura Beji
             </span>
           </div>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 pt-1">
@@ -470,7 +470,7 @@ export default function BookSalesCheckout({
               from
             />
             <p className="text-xs text-brand-green-light mt-1">
-              Shuttle + guide included · lunch not included
+              Shuttle + guide + breakfast included
             </p>
           </div>
           <a

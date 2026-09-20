@@ -19,26 +19,28 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'tirta-empu-melukat-ubud-guide',
     title: 'Private Tirta Empu Melukat near Ubud (2026)',
     excerpt:
-      'Private holy-spring purification at Tirta Empu (Tirta Empul) — IDR 1,200,000 per person with shuttle and guide. What to wear, what is included, and how to book.',
+      'Private holy-spring purification at Tirta Empul or Pura Beji — IDR 1,200,000 per person with shuttle, guide, and breakfast. What to wear, what is included, and how to book.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: '/images/melukat/tirta-empu-spout.jpg',
-    seoTitle: 'Tirta Empu Melukat Ubud | Private 1.2M',
+    seoTitle: 'Tirta Empul or Beji Melukat | 1.2M',
     content: `
-**How much is a private Tirta Empu / Tirta Empul melukat near Ubud?** **IDR 1,200,000 per person** with Sekar Bali Activity. The private rate includes a **Ubud-area shuttle** (pickup and drop-off), an **English-speaking guide**, temple entrance at **Pura Tirta Empul** in Tampaksiring, a canang offering, and sarong. Lunch is not included.
+**How much is a private Tirta Empul or Beji melukat near Ubud?** **IDR 1,200,000 per person** with Sekar Bali Activity. The private rate includes a **Ubud-area shuttle** (pickup and drop-off), an **English-speaking guide**, temple entrance, a canang offering, sarong, and **breakfast**. Choose **Tirta Empul** (Tampaksiring) or **Pura Beji** (quieter holy spring) when you book. Lunch is not included.
 
 > **Key Takeaways**
+> - Choose **Tirta Empul** or **Pura Beji** — same private rate
 > - Private booking — your group, your shuttle, your guide (the temple itself is public)
-> - **IDR 1,200,000 / person** — shuttle + guide included
-> - Venue: Tirta Empu / Pura Tirta Empul, Tampaksiring (~30–40 minutes north of Ubud)
-> - Typical start 08:00 or 09:00 · about 3 hours hotel to hotel
+> - **IDR 1,200,000 / person** — shuttle + guide + **breakfast** included
+> - Typical start 08:00 or 09:00 · about 3–4 hours hotel to hotel
 > - Dress: covered shoulders + change of clothes — we supply sarong, sash, and bathing wrap
 
 ---
 
-## Is Tirta Empu the same as Tirta Empul?
+## Tirta Empul or Pura Beji?
 
-Yes. We list the activity as **Tirta Empu Purification (Melukat)**. Maps and most guides use **Pura Tirta Empul** — the holy spring temple in Manukaya, Tampaksiring, Gianyar. Same courtyards, same spring-fed pools.
+**Tirta Empul** (we also write Tirta Empu) is the famous holy spring temple in Manukaya, Tampaksiring, Gianyar — about 30–40 minutes north of Ubud. Maps list it as **Pura Tirta Empul**.
+
+**Pura Beji** is a quieter holy-spring alternative. Same private guide, shuttle, offering, and breakfast. Confirm which spring you want on WhatsApp.
 
 A walk-in ticket only covers the grounds. It does not include a guide who explains which fountains are for living guests and which are reserved for funeral rites. That is why we sell a **guided private** package, not a temple-ticket markup.
 
@@ -51,16 +53,17 @@ A walk-in ticket only covers the grounds. It does not include a guide who explai
 | Temple entrance | Personal expenses / tips |
 | Canang offering | Extra priest blessing (optional) |
 | Temple sarong, sash, bathing wrap | |
+| **Breakfast** after the ritual | |
 
 Book the money page: [Tirta Empu Purification (Melukat)](/tours/tirta-empu-purification).
 
 ## What the morning looks like
 
 1. **Pickup** from your Ubud hotel (08:00 or 09:00).
-2. **Drive** 30–40 minutes to Tampaksiring.
+2. **Drive** to Tirta Empul (Tampaksiring) or Pura Beji.
 3. **Briefing** — offering, sash, which spouts to use.
 4. **Melukat** in the holy spring pools (cold mountain water).
-5. **Change** into dry clothes, optional courtyard walk, shuttle back.
+5. **Breakfast** (included), then shuttle back.
 
 The pools are chest-deep for most adults. Tell us children’s ages on WhatsApp so we can judge comfort.
 
@@ -74,9 +77,9 @@ This is **not** the IDR 400,000 ATV/rafting pickup add-on. The Ubud-area shuttle
 
 ## Pairing the same day
 
-Tampaksiring sits next to [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation) (transport **not** included on that tasting — ask us to keep the shuttle). Afternoon [Tumang cooking class](/tours/balinese-cooking-class) also works after a morning ritual.
+A Tampaksiring Tirta Empul morning sits next to [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation) (transport **not** included on that tasting — ask us to keep the shuttle). Afternoon [Tumang cooking class](/tours/balinese-cooking-class) also works after a morning ritual.
 
-**Ready to book?** Open [Tirta Empu Purification](/tours/tirta-empu-purification) or [book on WhatsApp](/book?activity=tirta-empu-purification) with date, hotel, and guest count. No payment to inquire.
+**Ready to book?** Open [Tirta Empu Purification](/tours/tirta-empu-purification) or [book on WhatsApp](/book?activity=tirta-empu-purification) with date, hotel, guest count, and **Tirta Empul or Beji**. No payment to inquire.
 `,
   },
   {
@@ -1483,7 +1486,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
 | Mount Batur Sunrise Jeep | IDR 1,350,000 solo · 950,000 (2) · 750,000 (3+) | person, private 4×4 | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Tumang Bali Cooking Class | IDR 450,000 promo | person shared | [Cooking Class](/tours/balinese-cooking-class) |
-| Tirta Empu Purification (Melukat) | IDR 1,200,000 | person / private | [Tirta Empu Melukat](/tours/tirta-empu-purification) |
+| Tirta Empu Purification (Melukat) | IDR 1,200,000 | person / private · Tirta Empul or Beji · breakfast included | [Tirta Empu Melukat](/tours/tirta-empu-purification) |
 | Luwak Coffee Plantation (Umah Kuno) | IDR 800,000 | person (min 3) | [Luwak Coffee](/tours/luwak-coffee-plantation) |
 | Full Day Ubud Tour | from IDR 600,000 | private car | [Full Day Ubud](/tours/full-day-ubud-tour) |
 | Half Day Ubud & Tanah Lot | from IDR 450,000 | private car | [Half Day Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) |

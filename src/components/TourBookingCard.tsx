@@ -95,12 +95,19 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       return {
         id: `${props.tourId}-opt-${index}`,
         title: opt.name,
-        times: isMorning ? ["08:30"] : isPrivate ? ["08:30", "13:30"] : ["13:30"],
+        times: isMelukat
+          ? ["08:00", "09:00"]
+          : isMorning
+            ? ["08:30"]
+            : isPrivate
+              ? ["08:30", "13:30"]
+              : ["13:30"],
         adultPrice: props.basePrice + opt.priceDiff,
         kidPrice: props.childPrice ?? null,
         minPax: /tandem|2 guests/i.test(opt.name) ? 2 : isLuwak ? 3 : 1,
         getYourGuideUrl: props.getYourGuideUrl,
         freeUbudPickup: props.tourSlug === "balinese-cooking-class",
+        pickupIncluded: isMelukat,
         pickupNotOffered: isLuwak,
       }
     })

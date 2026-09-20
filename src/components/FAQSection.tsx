@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "What activities and tours do you offer?",
-    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the Mount Batur Sunrise Jeep Tour (no hike). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empu (Tirta Empul) melukat purification — IDR 1,200,000 per person with shuttle and guide. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the Mount Batur Sunrise Jeep Tour (no hike). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat purification — IDR 1,200,000 per person with shuttle, guide, and breakfast. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",
@@ -72,8 +72,8 @@ const faqs = [
     answer: "IDR 800,000 per person at Umah Kuno (minimum 3 guests). Includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included."
   },
   {
-    question: "How much is a private Tirta Empu / Tirta Empul melukat?",
-    answer: "IDR 1,200,000 per person for a private purification at Tirta Empu (Pura Tirta Empul, Tampaksiring). The price includes a Ubud-area shuttle, English-speaking guide, temple entrance, canang offering, and sarong. Lunch is not included. Typical start 08:00 or 09:00 — book on the Tirta Empu page via WhatsApp."
+    question: "How much is a private Tirta Empul or Beji melukat?",
+    answer: "IDR 1,200,000 per person for a private purification at Tirta Empul or Pura Beji. The price includes a Ubud-area shuttle, English-speaking guide, temple entrance, canang offering, sarong, and breakfast. Lunch is not included. Typical start 08:00 or 09:00 — book on the Tirta Empu page via WhatsApp and say which spring you want."
   },
   {
     question: "How much is a private full day or half day Ubud tour?",

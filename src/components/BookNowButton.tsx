@@ -90,6 +90,26 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     times: ["14:30", "15:30"],
     ...JEEP_BOOKING_SHARED,
   },
+  {
+    id: "jeep-kintamani-day",
+    title: "Private Kintamani Day — Jeep",
+    times: ["02:30", "03:00"],
+    adultPrice: getListPrice("kintamani-day"),
+    kidPrice: null,
+    minPax: 2,
+    pickupIncluded: true,
+    pricingActivityId: "kintamani-day",
+  },
+  {
+    id: "jeep-kintamani-day-tracking",
+    title: "Private Kintamani Day — Tracking",
+    times: ["02:30", "03:00"],
+    adultPrice: getListPrice("kintamani-day"),
+    kidPrice: null,
+    minPax: 2,
+    pickupIncluded: true,
+    pricingActivityId: "kintamani-day",
+  },
 ]
 
 type Props = {

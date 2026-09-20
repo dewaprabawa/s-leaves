@@ -10,6 +10,7 @@ export type ActivityId =
   | 'canyon-tubing'
   | 'cycling'
   | 'jeep-sunrise'
+  | 'kintamani-day'
 
 /** Operator base cost (IDR) — do not sell at or below these */
 export const BASE_COST_IDR: Record<ActivityId, number> = {
@@ -19,6 +20,7 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
   'canyon-tubing': 175_000, // per person
   'cycling': 300_000, // per person (internal floor)
   'jeep-sunrise': 600_000, // per person (internal floor — private 4x4 + driver)
+  'kintamani-day': 1_000_000, // private jeep/trek + hot spring + Umah Kuno + rice terrace
 }
 
 /** Tier 1 = 1 unit/pax, tier 2 = 2, tier 3 = 3+ */
@@ -29,6 +31,8 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'canyon-tubing': [500_000, 450_000, 450_000],
   'cycling': [750_000, 725_000, 700_000],
   'jeep-sunrise': [1_350_000, 950_000, 750_000], // per person — solo pays full jeep, 2 pax IDR 950K, 3+ share it
+  // Min 2 guests: bookable promo IDR 1.3M; IDR 1.45M is the compare-at / 1-pax list
+  'kintamani-day': [1_450_000, 1_300_000, 1_300_000],
 }
 
 /** Per-person add-on on any jeep variant (private or tracking, sunrise or sunset). Ticket included. */

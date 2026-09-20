@@ -7,7 +7,7 @@ import {
 } from '@/lib/pricing'
 
 /** Activities that can be mixed into a same-day combo */
-export type MixableActivityId = Exclude<ActivityId, 'cycling'>
+export type MixableActivityId = Exclude<ActivityId, 'cycling' | 'kintamani-day'>
 
 export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   'single-atv': 'Single ATV',
@@ -16,6 +16,7 @@ export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   'canyon-tubing': 'Canyon Tubing',
   cycling: 'Ricefield Cycling',
   'jeep-sunrise': 'Batur Jeep Tour',
+  'kintamani-day': 'Private Kintamani Day',
 }
 
 /** Compatible add-ons for each primary activity (excluding cycling) */

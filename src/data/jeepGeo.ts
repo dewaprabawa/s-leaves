@@ -90,12 +90,17 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep sunset',
     q: 'Can I book a Mount Batur jeep at sunset instead of sunrise?',
-    a: 'Yes. Private jeep and tracking jeep are both available at sunrise or sunset at the same private per-person rates. Sunset hotel pickup is typically 14:30–15:30. Confirm the exact window on WhatsApp with your hotel area.',
+    a: 'Yes. Private jeep and tracking jeep are both available at sunrise or sunset at the same private per-person rates. Choose the sunrise or sunset option in the booking form. Sunset hotel pickup is typically 14:30–15:30. Confirm the exact window on WhatsApp with your hotel area.',
   },
   {
     intent: 'mount batur jeep hot spring ticket',
     q: 'Does the Batur jeep tour include a hot spring, and is the ticket included?',
     a: `Any jeep variant can add a Batur / Toya Devasya hot spring soak for +${jeepHotSpringLabel} per person on top of the jeep rate. The hot-spring entrance ticket is included in that add-on — guests do not pay a second ticket at the gate.`,
+  },
+  {
+    intent: 'kintamani day jeep hot spring coffee rice terrace',
+    q: 'What is the Private Kintamani Day itinerary?',
+    a: 'Private Kintamani Day with Sekar Bali Activity is a private full-day: jeep or tracking at Mount Batur, a natural hot spring with the entrance ticket included, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included.',
   },
 ]
 
@@ -127,5 +132,10 @@ export const JEEP_PRICE_ROWS = [
     option: 'Hot spring add-on',
     price: `+${jeepHotSpringLabel} / person`,
     notes: 'Any private jeep variant · Toya Devasya / Batur · entrance ticket included',
+  },
+  {
+    option: 'Private Kintamani Day',
+    price: 'IDR 1.300.000 promo',
+    notes: 'Min 2 · jeep or tracking · hot spring ticket · Umah Kuno · rice terrace · was IDR 1.450.000',
   },
 ] as const

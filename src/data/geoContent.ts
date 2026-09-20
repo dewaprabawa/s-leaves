@@ -60,6 +60,7 @@ export const GEO_PRICING = [
   { activity: 'Canyon Tubing', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
   { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: '2-hour ride, lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
   { activity: 'Mount Batur Sunrise Jeep Tour', price: 'IDR 950,000', pax: 'per person (private · min 2 · 950k for 2 / 750k for 3+)', includes: 'private sit-in or tracking jeep, sunrise or sunset, private 4×4 + driver, hotel pickup, hot drink, Kintamani entrance fee, insurance 6–65 — meals not included; optional hot spring +IDR 150,000/person with ticket included' },
+  { activity: 'Private Kintamani Day', price: 'IDR 1,300,000 promo', pax: 'per person (private · min 2 · was IDR 1,450,000)', includes: 'jeep or tracking, natural hot spring with ticket included, Umah Kuno coffee tasting, rice-terrace stop, hotel pickup' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 450,000 promo', pax: 'per person shared (private 1 guest IDR 633,090)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
   { activity: 'Tirta Empu Purification (Melukat)', price: 'IDR 1,200,000', pax: 'per person / private · Tirta Empul or Beji', includes: 'private shuttle pickup & drop-off (Ubud area), English-speaking guide, temple entrance, canang offering, sarong & sash, breakfast — lunch not included' },
   { activity: 'Luwak Coffee Plantation (Umah Kuno)', price: 'IDR 800,000', pax: 'per person (minimum 3 guests)', includes: 'guided plantation walk, wood-fire roasting demo, tasting flight of 10 teas & coffees including ethical Kopi Luwak — transport not included' },
@@ -451,6 +452,12 @@ export const GEO_FAQ_FOR_LLM = [
     category: 'Jeep',
     q: 'Can I add a Batur hot spring to the jeep tour, and is the ticket included?',
     a: 'Yes. Any jeep (private or tracking, sunrise or sunset) can add a Batur / Toya Devasya hot spring soak for +IDR 150,000 per person on top of the jeep rate. The hot-spring entrance ticket is included in that add-on.',
+    url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
+  },
+  {
+    category: 'Jeep',
+    q: 'What is the Private Kintamani Day itinerary and price?',
+    a: 'Private Kintamani Day is a private full-day: jeep or tracking at Mount Batur, a natural hot spring with the entrance ticket included, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included.',
     url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {

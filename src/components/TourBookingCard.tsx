@@ -77,6 +77,8 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
     "jeep-tracking-sunrise",
     "jeep-sunset",
     "jeep-tracking-sunset",
+    "jeep-kintamani-day",
+    "jeep-kintamani-day-tracking",
   ],
 }
 

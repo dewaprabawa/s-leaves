@@ -52,7 +52,7 @@ export default function GeoAnswerBlock() {
             </thead>
             <tbody>
               {GEO_TOUR_SUMMARIES.map((tour) => (
-                <tr key={tour.slug} className="border-b border-brand-green/5 last:border-0">
+                <tr key={tour.name} className="border-b border-brand-green/5 last:border-0">
                   <td className="px-5 py-3">
                     <Link
                       href={`/tours/${tour.slug}`}

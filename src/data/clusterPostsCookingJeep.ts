@@ -169,19 +169,19 @@ Diet does not lock you to one session. Request veg / vegan on either clock — [
     title: 'Mount Batur Sunrise Jeep Tour Guide (2026)',
     seoTitle: 'Mount Batur Sunrise Jeep Guide 2026',
     excerpt:
-      'No-hike 4×4 to the Mount Batur crater rim — 6–7 hours, island-wide pickup, IDR tiers, meals not included. 2026 itinerary from Ubud and south Bali.',
+      'No-hike 4×4 to the Mount Batur crater rim — 6–7 hours, island-wide pickup, IDR tiers, meal included. 2026 itinerary from Ubud and south Bali.',
     publishedAt: '2026-09-19',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1693821876313-dc573a92028c?auto=format&fit=crop&w=1200&q=80',
     content: `
-**What is the Mount Batur Sunrise Jeep Tour?** It is a **private 4×4** to a **crater-rim viewpoint (~1,350m)** on Mount Batur’s eastern flank near Kintamani — sunrise over **Lake Batur** and **Mount Agung** without the ~2-hour summit trek. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) includes the jeep, local driver, **island-wide hotel pickup**, a **hot drink**, Kintamani entrance fee, and insurance for ages 6–65. **Meals are not included. Food is not served on the jeep.**
+**What is the Mount Batur Sunrise Jeep Tour?** It is a **private 4×4** to a **crater-rim viewpoint (~1,350m)** on Mount Batur’s eastern flank near Kintamani — sunrise over **Lake Batur** and **Mount Agung** without the ~2-hour summit trek. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) includes the jeep, local driver, **island-wide hotel pickup**, a **hot drink**, a sit-down **meal**, Kintamani entrance fee, and insurance for ages 6–65.
 
 > **Key Takeaways**
 > - Door to door **about 6–7 hours** sunrise · sunset **~4–5 hours**
 > - **Private** · **minimum 2 guests** · **950,000** pp (2) · **750,000** pp (3+)
 > - Sit-in **private jeep** or **private tracking jeep** — not the summit hike
+> - **Meal included** after the viewpoint (jeep and tracking)
 > - Optional hot spring **+IDR 150,000** pp with **ticket included**
-> - Bring a **snack and a warm layer**; we do not serve breakfast on the vehicle
 
 ## 2026 prices
 
@@ -200,8 +200,8 @@ Full table: [jeep price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2
 | 02:00–03:00 | Hotel pickup (south Bali earliest; Ubud later) |
 | ~04:00 | Transfer into the 4×4 at the Kintamani base |
 | ~05:45 | Arrive crater-rim viewpoint |
-| ~06:00 | Sunrise — stay with the view; eat only what you brought |
-| ~06:45 | Descend the volcanic tracks |
+| ~06:00 | Sunrise — stay with the view |
+| ~06:45 | Descend the volcanic tracks · sit-down meal included |
 | ~08:00 | Optional coffee plantation (no obligation to buy) |
 | ~09:30 | Hotel drop-off |
 
@@ -213,7 +213,7 @@ Different products. The jeep is **not** a shortcut to the summit pin. Comparison
 
 ## What to bring
 
-Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **food if you want to eat**. A hot drink is included. Meals are not.
+Warm jacket, closed shoes, camera, and cash for optional coffee souvenirs. A hot drink is included. A sit-down **meal is included** after the viewpoint (jeep and tracking). Food is not cooked inside the 4×4.
 
 **Ready?** Book the [Mount Batur Sunrise Jeep Tour](/tours/batur-sunrise-jeep-tour) with hotel area, date, and guest count — no payment to inquire.
 `,
@@ -223,7 +223,7 @@ Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **foo
     title: 'Mount Batur Jeep vs Sunrise Trek',
     seoTitle: 'Mount Batur Jeep vs Sunrise Trek',
     excerpt:
-      'Private 4×4 crater-rim viewpoint vs the 2-hour summit hike — who should skip the trek. Jeep meals are not included.',
+      'Private 4×4 crater-rim viewpoint vs the 2-hour summit hike — who should skip the trek. Sit-down meal included on jeep and tracking.',
     publishedAt: '2026-09-19',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
@@ -231,7 +231,7 @@ Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **foo
 **Should you do a Mount Batur sunrise jeep or the summit trek?** Choose the **jeep** if you want sunrise over Lake Batur and Mount Agung **without hiking**. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) drives a private 4×4 on volcanic tracks to an **eastern-flank crater-rim viewpoint (~1,350m)** near Kintamani. Choose a **trek** if walking the dark lava trail to the **summit** is the goal. They are different products — the jeep is not a shortcut to the same summit pin.
 
 > **Key Takeaways**
-> - Private jeep: sit in a 4×4 · no 2-hour hike · **meals not included** · **min 2 guests**
+> - Private jeep: sit in a 4×4 · no 2-hour hike · **meal included** · **min 2 guests**
 > - Private tracking jeep: same private rates · jeep + guided trek · not the summit
 > - Trek: ~2 hours up in the dark · summit trail · higher fitness
 > - Jeep prices (2026): **950,000** (2 pax) · **750,000** (3+) · hot spring **+150,000** with ticket
@@ -246,7 +246,7 @@ Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **foo
 | Where you watch sunrise | Eastern-flank crater-rim viewpoint (~1,350m) | Summit trail (different route) |
 | Fitness | Sit in the jeep | Moderate–hard hiking |
 | Start | Hotel pickup ~02:00–03:00 | Usually similar pre-dawn start |
-| Food | **Not included** — no meals on the jeep | Often a simple trek breakfast |
+| Food | Sit-down **meal included** after the viewpoint | Often a simple trek breakfast |
 | Best for | Families, couples, non-hikers | Fit hikers who want the summit |
 | Honest limit | Not the summit | Steeper, darker, more effort |
 
@@ -256,7 +256,7 @@ Warm jacket, closed shoes, camera, cash for optional coffee souvenirs, and **foo
 - 3+ guests: **IDR 750,000** each
 - Optional hot spring: **+IDR 150,000** each (entrance ticket included)
 
-Included: 4×4, local driver, hotel pickup & drop-off, hot drink, Kintamani / Batur area entrance fee, insurance for ages 6–65. **Not included: breakfast or other meals.** Optional coffee plantation stop on the way back (no purchase required) — not the [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation).
+Included: 4×4, local driver, hotel pickup & drop-off, hot drink, sit-down meal after the viewpoint, Kintamani / Batur area entrance fee, insurance for ages 6–65. Food is not cooked inside the 4×4. Optional coffee plantation stop on the way back (no purchase required) — not the [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation).
 
 Trek prices vary by group size and whether a guide, headlamp, and pickup are extras.
 
@@ -280,7 +280,7 @@ Itinerary: [2026 jeep guide](/blog/mount-batur-sunrise-jeep-tour-guide-2026). Pr
     title: 'Mount Batur Jeep Pickup Times from Canggu, Seminyak & Ubud',
     seoTitle: 'Batur Jeep Pickup Times | Canggu Seminyak Ubud',
     excerpt:
-      'Island-wide hotel pickup is included on the Batur sunrise jeep — typical 02:00–03:00. South Bali leaves earliest; Ubud a little later. Meals not included.',
+      'Island-wide hotel pickup is included on the Batur sunrise jeep — typical 02:00–03:00. South Bali leaves earliest; Ubud a little later. Sit-down meal included.',
     publishedAt: '2026-09-19',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1725946687006-e5cf87668fd9?auto=format&fit=crop&w=1200&q=80',
@@ -292,7 +292,7 @@ Itinerary: [2026 jeep guide](/blog/mount-batur-sunrise-jeep-tour-guide-2026). Pr
 > - South Bali: plan to be in the lobby closer to **02:00**
 > - Ubud: often closer to **02:30–03:00**
 > - Door-to-door **6–7 hours**, drop-off ~09:30
-> - **Meals not included** — no food served on the jeep; bring a snack
+> - **Meal included** after the viewpoint — jeep and tracking
 
 ## Why the clock moves
 
@@ -302,7 +302,7 @@ We do not publish a fake pinned minute for every villa. The honest rule: **south
 
 ## What the rate already includes
 
-Private 4×4, driver, hotel pickup & drop-off, hot drink, entrance fee, insurance ages 6–65. **Food / breakfast is not included.**
+Private 4×4, driver, hotel pickup & drop-off, hot drink, sit-down meal after the viewpoint, entrance fee, insurance ages 6–65. Food is not cooked inside the 4×4.
 
 Tiers: private · min 2 guests · 2 guests **IDR 950,000** · 3+ **IDR 750,000** per person. Optional hot spring **+IDR 150,000** with ticket included.
 

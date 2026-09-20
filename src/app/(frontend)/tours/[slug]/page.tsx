@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           "sunrise jeep Lake Batur",
           "private 4x4 Mount Batur",
           "Mount Batur jeep pickup time",
-          "Batur jeep breakfast not included",
+          "Batur jeep meal included",
           "Sekar Bali Activity",
         ]
       : isLuwakTour(tour)

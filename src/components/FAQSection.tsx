@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     question: "How much is the Mount Batur Sunrise Jeep Tour?",
-    answer: "IDR 950,000 per person for 2 guests (minimum 2) and IDR 750,000 per person for 3+ guests sharing a private 4×4. Private sit-in or tracking, sunrise or sunset. Hotel pickup, a hot drink, and the Kintamani entrance fee are included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Meals are not included and food is not served on the jeep.",
+    answer: "IDR 950,000 per person for 2 guests (minimum 2) and IDR 750,000 per person for 3+ guests sharing a private 4×4. Private sit-in or tracking, sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani entrance fee are included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included.",
   },
   {
     question: "Is the Mount Batur jeep tour a hike?",

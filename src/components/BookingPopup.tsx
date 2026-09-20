@@ -357,6 +357,8 @@ export function BookingPopup({
       pickupNoteParts.push(
         'Itinerary: jeep or tracking · natural hot spring (ticket included) · meal included · Umah Kuno coffee · rice terrace',
       )
+    } else if (activeTour.pricingActivityId === 'jeep-sunrise') {
+      pickupNoteParts.push('Sit-down meal included after the viewpoint (jeep or tracking)')
     }
     for (const addon of selectedAddons) {
       pickupNoteParts.push(
@@ -612,6 +614,11 @@ export function BookingPopup({
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
                   Private full-day · min 2 · promo IDR 1,300,000 (was 1,450,000): jeep or tracking,
                   natural hot spring (ticket included), meal included, Umah Kuno coffee, rice terrace.
+                </p>
+              ) : activeTour.pricingActivityId === 'jeep-sunrise' ? (
+                <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
+                  Private jeep or tracking · min 2 · sunrise or sunset · sit-down meal included
+                  after the viewpoint. Optional hot spring +IDR 150,000 (ticket included).
                 </p>
               ) : null}
             </div>

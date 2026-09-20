@@ -185,7 +185,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Mount Batur Private Jeep Tour",
     adventureId: "jeep-sunrise",
-    pax: `${formatTierPriceTable("jeep-sunrise")} · Hotel pickup included · Private or tracking · Sunrise or sunset`,
+    pax: `${formatTierPriceTable("jeep-sunrise")} · Hotel pickup included · Meal included · Private or tracking · Sunrise or sunset`,
     price: getPromoListPrice("jeep-sunrise"),
     originalPrice: getListPrice("jeep-sunrise"),
     highlight: false,
@@ -238,7 +238,7 @@ const travelGuides = [
   },
   {
     title: "Mount Batur Sunrise Jeep Guide 2026",
-    excerpt: "No-hike 4×4 to the crater rim — IDR tiers, pickup times, meals not included.",
+    excerpt: "No-hike 4×4 to the crater rim — IDR tiers, pickup times, meal included.",
     href: "/blog/mount-batur-sunrise-jeep-tour-guide-2026",
   },
   {

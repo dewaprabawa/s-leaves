@@ -16,7 +16,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
 > **Key Takeaways**
 > - Food + village days include **free Ubud pickup** (cooking + cycling)
 > - ATV / rafting / tubing: **IDR 400,000** hotel pickup or free self-meet in Sedang
-> - Batur jeep: **island-wide pickup included** — meals **not** served on the jeep
+> - Batur jeep: **island-wide pickup included** — sit-down **meal included** after the viewpoint (jeep and tracking)
 > - Coffee tasting: **min 3 guests**, transport **not** included
 > - No upfront payment to inquire — [Book on WhatsApp](/book)
 
@@ -52,7 +52,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) at **IDR 500,000**, or **IDR 450,000** for 2+ (minimum 2), lunch included. **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float at the same **IDR 500,000 / 450,000 for 2+** — the usual ATV add-on. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-**[Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is a **private 4×4** — sit-in (no hike) or **tracking jeep** (jeep + guided trek) at the **same private rates**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m. 2 guests **IDR 950,000** · 3+ **IDR 750,000**. Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. **Meals are not included**. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
+**[Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is a **private 4×4** — sit-in (no hike) or **tracking jeep** (jeep + guided trek) at the **same private rates**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m. 2 guests **IDR 950,000** · 3+ **IDR 750,000**. **Meal included.** Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
 ## Coffee & private cars
 

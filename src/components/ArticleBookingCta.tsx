@@ -133,7 +133,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-jeep-vs-sunrise-trek': {
     headline: 'Book the crater-rim jeep (not the summit hike)',
-    body: 'Private 4×4 to ~1,350m. Meals not included. Confirm guest count on WhatsApp.',
+    body: 'Private 4×4 to ~1,350m. Meal included. Confirm guest count on WhatsApp.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book sunrise jeep',
   },
@@ -145,7 +145,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-sunrise-jeep-tour-price-guide-2026': {
     headline: 'Get the exact jeep tier on WhatsApp',
-    body: 'Private 4×4, min 2 guests. Pair or 3+ sharing. Meals not included.',
+    body: 'Private 4×4, min 2 guests. Pair or 3+ sharing. Meal included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Batur jeep',
   },

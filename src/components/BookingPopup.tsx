@@ -659,7 +659,7 @@ export function BookingPopup({
             <div className="mb-6 pb-4 border-b border-brand-green/10">
               <p className="text-brand-green font-bold text-sm mb-1">Optional add-on</p>
               <p className="text-brand-green-light text-xs mb-3 leading-relaxed">
-                Add a Batur hot spring soak after sunrise or sunset. The entrance ticket is included in the add-on price.
+                Add a Batur / Toya Devasya hot spring soak after sunrise or sunset. The entrance ticket is included in the +IDR 150,000 — you do not pay a second ticket at the gate.
               </p>
               <div className="space-y-2">
                 {activeTour.optionalAddons.map((opt) => {

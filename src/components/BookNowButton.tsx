@@ -6,8 +6,8 @@ import { getListPrice, JEEP_HOT_SPRING_IDR } from "@/lib/pricing"
 
 const JEEP_HOT_SPRING_ADDON = {
   id: "hotspring",
-  label: "Add Batur hot spring",
-  blurb: `Existing jeep price + IDR ${(JEEP_HOT_SPRING_IDR / 1000).toFixed(0)},000 per person. Entrance ticket included.`,
+  label: "Add Batur hot spring (ticket included)",
+  blurb: `Existing jeep price + IDR ${(JEEP_HOT_SPRING_IDR / 1000).toFixed(0)},000 per person. Toya Devasya / Batur entrance ticket is included — no second ticket at the gate.`,
   perPerson: JEEP_HOT_SPRING_IDR,
 }
 

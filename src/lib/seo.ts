@@ -41,7 +41,7 @@ export function buildOrganizationSchema() {
     email: CONTACT_EMAIL,
     image: `${SITE_URL}/logo.png`,
     logo: `${SITE_URL}/logo.png`,
-    priceRange: 'IDR 359000 - IDR 1350000',
+    priceRange: 'IDR 450000 - IDR 1350000',
     // NAP must match Google Business Profile (corporate / registered office)
     address: postalAddressSchema(PRIMARY_NAP_ADDRESS),
     geo: {
@@ -126,9 +126,14 @@ export const SITE_NAV_LINKS = [
   { name: 'Tirta Empu Purification (Melukat)', url: `${SITE_URL}/tours/tirta-empu-purification` },
   { name: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour` },
   { name: 'Half Day Ubud & Tanah Lot', url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour` },
+  { name: 'Luwak Coffee Plantation', url: `${SITE_URL}/tours/luwak-coffee-plantation` },
+  { name: 'Things to Do Near Ubud 2026', url: `${SITE_URL}/blog/things-to-do-near-ubud-2026` },
   { name: 'About Us', url: `${SITE_URL}/about` },
   { name: 'Contact', url: `${SITE_URL}/contact` },
   { name: 'Blog', url: `${SITE_URL}/blog` },
+  { name: 'Anti-Scam', url: `${SITE_URL}/anti-scam` },
+  { name: 'Payment Policy', url: `${SITE_URL}/payment-policy` },
+  { name: 'Refund Policy', url: `${SITE_URL}/refund-policy` },
   { name: 'Cancellation Policy', url: `${SITE_URL}/cancellation-policy` },
   { name: 'Privacy Policy', url: `${SITE_URL}/privacy-policy` },
 ] as const

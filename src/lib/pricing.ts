@@ -25,8 +25,8 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
 export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'single-atv': [750_000, 725_000, 700_000],
   'tandem-atv': [1_100_000, 1_060_000, 1_030_000], // per tandem bike
-  'rafting': [500_000, 475_000, 450_000],
-  'canyon-tubing': [359_000, 335_000, 320_000],
+  'rafting': [500_000, 450_000, 450_000],
+  'canyon-tubing': [500_000, 450_000, 450_000],
   'cycling': [750_000, 725_000, 700_000],
   'jeep-sunrise': [1_350_000, 825_000, 750_000], // per person — solo pays full jeep, 2-3 pax share it
 }
@@ -34,7 +34,7 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
 export const CHILD_PRICE_IDR: Partial<Record<ActivityId, number>> = {
   'single-atv': 700_000,
   'rafting': 450_000,
-  'canyon-tubing': 300_000,
+  'canyon-tubing': 450_000,
 }
 
 /** Flat hotel pickup & drop-off surcharge (optional; free on Ubud cycling only) */

@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     question: "What is the difference between rafting and canyon tubing?",
-    answer: "Whitewater rafting (IDR 500,000, minimum 2 guests) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
+    answer: "Whitewater rafting (IDR 500,000, or IDR 450,000 for 2+, minimum 2 guests) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 500,000, or IDR 450,000 for 2+) is a gentler solo float on the Wos River — ideal for first-timers. Both include a guide and safety gear."
   },
   {
     question: "How much does the Ubud ricefield cycling tour cost?",
@@ -89,7 +89,11 @@ const faqs = [
   },
   {
     question: "What is your bank account for payment?",
-    answer: "Seabank account number 901823638817, account name I Dewa Gede Agus Prabawa. Always use the invoice number from your PDF when you confirm payment on WhatsApp."
+    answer: "Seabank account number 901823638817, account name I Dewa Gede Agus Prabawa. Always use the invoice number from your PDF when you confirm payment on WhatsApp. The Payment Policy page lists the same account."
+  },
+  {
+    question: "How do I know this booking is not a scam?",
+    answer: "Use only sekarbaliactivity.com and WhatsApp +62 817 7572 3663. We never take card numbers on the website. After you agree, transfer only to Seabank 901823638817 a/n I Dewa Gede Agus Prabawa and confirm on that same WhatsApp. Privacy, refund, and payment rules are on our Anti-scam page. If anyone asks for a different bank or e-wallet, stop and message us there first."
   },
   {
     question: "Can I mix activities like ATV + tubing or tubing + rafting?",

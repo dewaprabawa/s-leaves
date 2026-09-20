@@ -45,7 +45,7 @@ export const COOKING_CLASS_SALES = {
   shortName: 'Tumang Cooking Class',
   tagline: 'Market-to-table village kitchen',
   description:
-    'Family-run Tumang Bali cooking class near Ubud with Chef Wayan Sudiana — morning market tour (AM session), rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo IDR 450,000 / person (was IDR 506,370). TripAdvisor Traveler’s Choice 2026.',
+    'Family-run Tumang Bali cooking class near Ubud with Chef Wayan Suryana — morning market tour (AM session), rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo IDR 450,000 / person (was IDR 506,370). TripAdvisor Traveler’s Choice 2026.',
   highlights: [
     '10+ dishes · Base Genep, sate lilit, sambal matah & more',
     'Morning market tour (AM class) + rice-field walk',

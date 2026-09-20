@@ -195,6 +195,20 @@ export default function CancellationPolicyPage() {
           <p className="pt-4 border-t border-brand-green/10">
             Related:{' '}
             <Link
+              href="/refund-policy"
+              className="text-brand-green underline underline-offset-2 hover:opacity-80"
+            >
+              Refund Policy
+            </Link>
+            {' · '}
+            <Link
+              href="/payment-policy"
+              className="text-brand-green underline underline-offset-2 hover:opacity-80"
+            >
+              Payment Policy
+            </Link>
+            {' · '}
+            <Link
               href="/privacy-policy"
               className="text-brand-green underline underline-offset-2 hover:opacity-80"
             >

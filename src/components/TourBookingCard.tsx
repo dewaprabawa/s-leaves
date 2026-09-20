@@ -57,10 +57,13 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
   if (!activityId) {
     return { promoPrice: fallbackBase, standardPrice: fallbackBase, tierLabel: undefined }
   }
+  const twoPlusDiscount = activityId === "rafting" || activityId === "canyon-tubing"
   return {
     promoPrice: getPromoListPrice(activityId),
     standardPrice: getListPrice(activityId),
-    tierLabel: "3+ group rate — book more, save more",
+    tierLabel: twoPlusDiscount
+      ? "2+ discount — IDR 450,000 per person"
+      : "3+ group rate — book more, save more",
   }
 }
 

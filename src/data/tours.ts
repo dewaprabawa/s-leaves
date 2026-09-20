@@ -503,6 +503,9 @@ Warm layer (it is cold on the rim before sunrise), closed shoes, phone/camera, a
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
+    seoTitle: "Rafting Ubud | 500K · 450K for 2+",
+    seoDescription:
+      "Class II–III whitewater rafting near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2). Lunch, gear, guide, insurance. Pickup IDR 400K. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/rafting.jpg",
       alt: "Whitewater rafting through a Bali jungle river canyon",
@@ -603,6 +606,12 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         answer:
           "Yes. We provide insurance for guests aged 6–65 years old on our rafting packages.",
       },
+      {
+        id: "faq-raft-6",
+        question: "How much does whitewater rafting near Ubud cost?",
+        answer:
+          "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is an optional IDR 400,000 add-on.",
+      },
     ],
     reviews: [],
   },
@@ -614,8 +623,11 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
     area: "Wos River / Pejeng",
     pickup: "Hotel pickup IDR 400,000 — optional",
     duration: "2.5 Hours",
-    basePrice: 359000,
-    childPrice: 300000,
+    basePrice: 500000,
+    childPrice: 450000,
+    seoTitle: "Canyon Tubing Ubud | 500K · 450K for 2+",
+    seoDescription:
+      "Wos River canyon tubing near Ubud — IDR 500,000, discount IDR 450,000 for 2+. Life jacket, guide, insurance. Hotel pickup IDR 400K. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/canyon-tubing.jpg",
       alt: "Canyon tubing through crystal-clear Bali waters",
@@ -710,6 +722,12 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         question: "Do you provide insurance?",
         answer:
           "Yes. We provide insurance for guests aged 6–65 years old on our canyon tubing packages.",
+      },
+      {
+        id: "faq-tube-6",
+        question: "How much is canyon tubing near Ubud?",
+        answer:
+          "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book. Life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is an optional IDR 400,000 add-on.",
       },
     ],
     reviews: [],
@@ -1079,10 +1097,10 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
       },
     ],
     shortDescription:
-      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Sudiana, max 8 guests, English instruction. Promo IDR 450,000 / person (was IDR 506,370) with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
+      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Suryana, max 8 guests, English instruction. Promo IDR 450,000 / person (was IDR 506,370) with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
     fullDescription: `**Tumang Bali Cooking Class — authentic village kitchen near Ubud**
 
-[Tumang Bali](https://tumangbaliclass.com/) is a family-run cooking school in Tumang village near Ubud for travellers who want hands-on Balinese cuisine — not a hotel demo. Head Chef **Wayan Sudiana** teaches Base Genep (bumbu), sate lilit, pepes ikan, sambal matah, lawar, and more. Classes are taught in English. Complimentary pickup in the Ubud area. Max **8 guests** per shared class.
+[Tumang Bali](https://tumangbaliclass.com/) is a family-run cooking school in Tumang village near Ubud for travellers who want hands-on Balinese cuisine — not a hotel demo. Head Chef **Wayan Suryana** teaches Base Genep (bumbu), sate lilit, pepes ikan, sambal matah, lawar, and more. Classes are taught in English. Complimentary pickup in the Ubud area. Max **8 guests** per shared class.
 
 ### Why book Tumang through Sekar Bali Activity
 We list Tumang as our flagship food experience so you can book adventure, village cycling, and this cooking class on one WhatsApp thread — with clear IDR before you confirm.
@@ -1091,7 +1109,7 @@ We list Tumang as our flagship food experience so you can book adventure, villag
 - Hands-on cooking of **10+ Balinese dishes**
 - **Morning market tour** on the AM session only
 - Guided **rice-field walk**
-- English instruction with Chef Wayan Sudiana
+- English instruction with Chef Wayan Suryana
 - Vegetarian / vegan menus available
 - Complimentary **hotel pickup in the Ubud area**
 - Small group — max 8 guests (shared)
@@ -1114,7 +1132,7 @@ TripAdvisor **[Traveler’s Choice 2026](https://www.tripadvisor.com/Attraction_
 ### Learn more
 Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes) · [TripAdvisor reviews](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)`,
     highlights: [
-      "10+ dishes with Chef Wayan Sudiana",
+      "10+ dishes with Chef Wayan Suryana",
       "Morning market tour (AM class) + rice-field walk",
       "Max 8 guests · fully hands-on · English",
       "Complimentary Ubud-area hotel pickup",
@@ -1161,7 +1179,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
         time: "Cook",
         title: "Hands-on cooking (10+ dishes)",
         description:
-          "Pound Base Genep, shape sate lilit, prepare sambal matah, pepes, lawar, and more at your station under Chef Wayan Sudiana’s guidance.",
+          "Pound Base Genep, shape sate lilit, prepare sambal matah, pepes, lawar, and more at your station under Chef Wayan Suryana’s guidance.",
       },
       {
         id: "iti-cook-5",

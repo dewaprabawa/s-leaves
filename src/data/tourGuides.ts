@@ -10,6 +10,11 @@ export type TourRelatedGuide = {
 export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   'bali-atv-adventure': [
     {
+      title: 'Things to do near Ubud 2026',
+      href: '/blog/things-to-do-near-ubud-2026',
+      blurb: 'ATV next to rafting, cooking, and jeep prices.',
+    },
+    {
       title: 'ATV cost near Ubud (2026)',
       href: '/blog/how-much-does-atv-cost-bali-ubud-2026',
       blurb: 'Single & tandem IDR tiers, inclusions, and pickup fees.',
@@ -37,6 +42,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'whitewater-rafting': [
     {
+      title: 'Things to do near Ubud 2026',
+      href: '/blog/things-to-do-near-ubud-2026',
+      blurb: 'Compare rafting with tubing and ATV in one table.',
+    },
+    {
       title: 'Whitewater rafting near Ubud guide',
       href: '/blog/bali-whitewater-rafting-near-ubud-guide',
       blurb: 'Class II–III route, who it suits, and what’s included.',
@@ -54,6 +64,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'canyon-tubing': [
     {
+      title: 'Things to do near Ubud 2026',
+      href: '/blog/things-to-do-near-ubud-2026',
+      blurb: 'Tubing price next to ATV and rafting.',
+    },
+    {
       title: 'Canyon tubing near Ubud',
       href: '/blog/bali-canyon-tubing-guide-ubud',
       blurb: 'Wos River float — gentler than rafting.',
@@ -70,6 +85,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'ubud-ricefield-cycling-tour': [
+    {
+      title: 'Things to do near Ubud 2026',
+      href: '/blog/things-to-do-near-ubud-2026',
+      blurb: 'Cycling next to cooking, ATV, and day tours.',
+    },
     {
       title: 'Is an Ubud cycling tour worth it?',
       href: '/blog/is-ubud-cycling-tour-worth-it',
@@ -92,6 +112,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'balinese-cooking-class': [
+    {
+      title: 'Things to do near Ubud 2026',
+      href: '/blog/things-to-do-near-ubud-2026',
+      blurb: 'Cooking next to cycling, jeep, and day-tour prices.',
+    },
     {
       title: 'Cooking class Ubud price 2026 — worth it?',
       href: '/blog/cooking-class-ubud-price-2026-worth-it',
@@ -157,6 +182,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'luwak-coffee-plantation': [
     {
+      title: 'Umah Kuno Luwak price 2026',
+      href: '/blog/luwak-coffee-plantation-umah-kuno-price-2026',
+      blurb: 'IDR 800,000 · min 3 guests · transport not included.',
+    },
+    {
       title: 'How to spot ethical luwak coffee',
       href: '/blog/how-to-spot-ethical-luwak-coffee-in-bali',
       blurb: 'Questions to ask before tasting.',
@@ -166,8 +196,18 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/luwak-coffee-ethical-sourcing',
       blurb: 'What “ethical” should mean in practice.',
     },
+    {
+      title: 'Things to do near Ubud 2026',
+      href: '/blog/things-to-do-near-ubud-2026',
+      blurb: 'See coffee next to cooking, cycling, and day tours.',
+    },
   ],
   'full-day-ubud-tour': [
+    {
+      title: 'Full day Ubud tour guide 2026',
+      href: '/blog/full-day-ubud-tour-guide-2026',
+      blurb: 'From IDR 600K — what’s included vs paid on site.',
+    },
     {
       title: 'Perfect one-day Ubud itinerary',
       href: '/blog/perfect-one-day-ubud-itinerary',
@@ -185,6 +225,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'batur-sunrise-jeep-tour': [
+    {
+      title: 'Things to do near Ubud 2026',
+      href: '/blog/things-to-do-near-ubud-2026',
+      blurb: 'Jeep next to cooking, cycling, and ATV in one table.',
+    },
     {
       title: 'Mount Batur jeep tour price guide (2026)',
       href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026',
@@ -212,6 +257,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'half-day-ubud-tanah-lot-tour': [
+    {
+      title: 'Tanah Lot sunset half-day 2026',
+      href: '/blog/half-day-ubud-tanah-lot-sunset-tour-2026',
+      blurb: 'From IDR 450K · 6 hours · entrance fees not included.',
+    },
+    {
+      title: 'Full day vs half day',
+      href: '/blog/full-day-ubud-tour-guide-2026',
+      blurb: 'When the 10-hour Ubud car is the better fit.',
+    },
     {
       title: 'Morning vs afternoon tours',
       href: '/blog/morning-vs-afternoon-tours-bali',
@@ -244,8 +299,8 @@ export const TOUR_HOST_NOTES: Record<
     body: 'Born-and-raised Pejeng guides lead the ricefield routes we ride every week — Subak channels, village lanes, and lunch stops away from Tegallalang bus crowds. Free Ubud hotel pickup is built into the day so you start on the bike, not hunting for parking.',
   },
   'balinese-cooking-class': {
-    title: 'From Chef Wayan Sudiana’s kitchen',
-    body: 'Tumang Bali Cooking Class is taught hands-on by Chef Wayan Sudiana in Tumang village — Base Genep on the stone mortar, market tour on morning sessions, and a capped group of 8 so every guest cooks. Sekar Bali Activity handles WhatsApp booking and Ubud-area pickup coordination.',
+    title: 'From Chef Wayan Suryana’s kitchen',
+    body: 'Tumang Bali Cooking Class is taught hands-on by Chef Wayan Suryana in Tumang village — Base Genep on the stone mortar, market tour on morning sessions, and a capped group of 8 so every guest cooks. Sekar Bali Activity handles WhatsApp booking and Ubud-area pickup coordination.',
   },
   'whitewater-rafting': {
     title: 'From our rafting crew',
@@ -258,6 +313,22 @@ export const TOUR_HOST_NOTES: Record<
   'batur-sunrise-jeep-tour': {
     title: 'From our Kintamani jeep drivers',
     body: 'We run the pre-dawn 4×4 tracks on Mount Batur’s eastern flank most mornings — hotel pickup and a hot drink on the way up to the crater-rim viewpoint (~1,350m). Meals are not included and we do not serve food on the jeep; bring a snack if you want to eat. This is not the summit trek: you stay in the jeep and watch Lake Batur and Mount Agung light up without a 2-hour hike in the dark.',
+  },
+  'luwak-coffee-plantation': {
+    title: 'From our Umah Kuno hosts',
+    body: 'We only send guests to Umah Kuno because the civets stay free-roaming — you will not see a caged Luwak show. The 1.5-hour walk, wood-fire roast, and 10-drink flight are the product. Transport is not in the IDR 800,000 rate; say your hotel area on WhatsApp and we will tell you how to arrive.',
+  },
+  'full-day-ubud-tour': {
+    title: 'From our Ubud drivers',
+    body: 'The published palace–market–Tegalalang order is a starting map, not a locked timetable. We wait while you eat lunch and can skip a stop if the parking lot is a circus. Entrance fees stay separate so the car rate stays honest.',
+  },
+  'half-day-ubud-tanah-lot-tour': {
+    title: 'From our sunset-run drivers',
+    body: 'The non-negotiable is arriving at Tanah Lot before the light goes. We shift the 1:00 PM-ish pickup with the season and keep Ubud stops short on purpose. Bring a sarong; the temple ticket is paid at the gate.',
+  },
+  'canyon-tubing': {
+    title: 'From our Wos River crew',
+    body: 'Tubing is the easy water half-day — sit on the tube, follow the guide, no paddle team. We often run it after an ATV session when the river level allows. Say if you want both on one WhatsApp thread.',
   },
 }
 

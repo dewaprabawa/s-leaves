@@ -8,7 +8,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params
   
-  const reserved = ['about', 'contact', 'privacy-policy', 'cancellation-policy']
+  const reserved = ['about', 'contact', 'privacy-policy', 'cancellation-policy', 'payment-policy', 'refund-policy', 'anti-scam']
   if (reserved.includes(resolvedParams.slug)) {
     return { title: 'Page Not Found' }
   }
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function CustomPage({ params }: Props) {
   const resolvedParams = await params
 
-  const reserved = ['about', 'contact', 'privacy-policy', 'cancellation-policy']
+  const reserved = ['about', 'contact', 'privacy-policy', 'cancellation-policy', 'payment-policy', 'refund-policy', 'anti-scam']
   if (reserved.includes(resolvedParams.slug)) {
     notFound()
   }

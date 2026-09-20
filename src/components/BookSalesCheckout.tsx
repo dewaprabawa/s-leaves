@@ -264,7 +264,11 @@ export default function BookSalesCheckout({
                   originalPrice={originalPrice}
                   variant="card"
                   from
-                  tierLabel="3+ group rate — book more, save more"
+                  tierLabel={
+                    adv.id === "rafting" || adv.id === "canyon-tubing"
+                      ? "2+ discount — IDR 450,000 per person"
+                      : "3+ group rate — book more, save more"
+                  }
                 />
                 {childPrice ? (
                   <p className="text-xs text-brand-green-light mt-1">

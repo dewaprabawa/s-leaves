@@ -10,7 +10,7 @@ export const COOKING_JEEP_CLUSTER_POSTS = [
     author: 'Sekar Bali Activity',
     image: '/images/cooking/buffet-spread.jpg',
     content: `
-**Is a cooking class in Ubud worth it in 2026?** Yes — if you want a capped, hands-on village kitchen rather than a hotel demo. [Tumang Bali Cooking Class](/tours/balinese-cooking-class) listed by Sekar Bali Activity is promo **IDR 450,000 per person** (was IDR 506,370) for the shared class: **10+ dishes**, **max 8 guests**, Chef **Wayan Sudiana**, English instruction, and **complimentary Ubud-area hotel pickup**. Private kitchen is **IDR 633,090** (1 guest) or **IDR 1,266,180** (2 guests).
+**Is a cooking class in Ubud worth it in 2026?** Yes — if you want a capped, hands-on village kitchen rather than a hotel demo. [Tumang Bali Cooking Class](/tours/balinese-cooking-class) listed by Sekar Bali Activity is promo **IDR 450,000 per person** (was IDR 506,370) for the shared class: **10+ dishes**, **max 8 guests**, Chef **Wayan Suryana**, English instruction, and **complimentary Ubud-area hotel pickup**. Private kitchen is **IDR 633,090** (1 guest) or **IDR 1,266,180** (2 guests).
 
 > **Key Takeaways**
 > - Shared promo **IDR 450,000** / person · was **IDR 506,370** · max **8**
@@ -84,7 +84,7 @@ A full vegetarian or vegan menu is available — request it when you book, not a
 
 ## What “full menu” means
 
-Tumang is a family kitchen near Ubud taught by Chef **Wayan Sudiana** in English. On a standard day you may cook sate lilit, pepes, lawar, sambal matah, and more. On a vegetarian / vegan booking the kitchen **does not** leave you watching meat dishes. They plan plant-based versions before you pound spices.
+Tumang is a family kitchen near Ubud taught by Chef **Wayan Suryana** in English. On a standard day you may cook sate lilit, pepes, lawar, sambal matah, and more. On a vegetarian / vegan booking the kitchen **does not** leave you watching meat dishes. They plan plant-based versions before you pound spices.
 
 Tell WhatsApp:
 

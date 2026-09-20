@@ -26,15 +26,15 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: "Whitewater Rafting Adventure",
     description:
-      "Class II-III whitewater rafting through a jungle river canyon. All-inclusive with professional crew and lunch.",
-    price: "500000",
+      "Class II-III whitewater rafting through a jungle river canyon. IDR 500,000 list, or IDR 450,000 for 2+ guests. All-inclusive with professional crew and lunch.",
+    price: "450000",
     image: "/images/adventures/rafting.jpg",
   },
   {
     name: "Canyon Tubing Experience",
     description:
-      "Float through hidden Bali canyons on an inflatable tube. Pair with an ATV + river tubing combo for the ultimate adventure day.",
-    price: "359000",
+      "Float through hidden Bali canyons on an inflatable tube. IDR 500,000 list, or IDR 450,000 for 2+ guests. Pair with an ATV + river tubing combo for the ultimate adventure day.",
+    price: "450000",
     image: "/images/adventures/canyon-tubing.jpg",
   },
   {
@@ -55,7 +55,7 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: "Tumang Bali Cooking Class",
     description:
-      "Family-run Balinese cooking class near Ubud with Chef Wayan Sudiana — morning market tour, rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. TripAdvisor Traveler\u2019s Choice 2026.",
+      "Family-run Balinese cooking class near Ubud with Chef Wayan Suryana — morning market tour, rice-field walk, 10+ dishes, max 8 guests, complimentary Ubud pickup. TripAdvisor Traveler\u2019s Choice 2026.",
     price: "450000",
     image: "/images/cooking/satay-class.jpg",
   },

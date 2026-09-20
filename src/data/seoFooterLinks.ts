@@ -8,9 +8,10 @@ export type SeoFooterLink = {
   href: string
 }
 
-export const SEO_FOOTER_HEADING = 'Explore cooking, cycling, jeep & guides'
+export const SEO_FOOTER_HEADING = 'Explore every activity & guide'
 
 export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
+  { label: 'Things to do near Ubud 2026', href: '/blog/things-to-do-near-ubud-2026' },
   { label: 'Tumang Bali Cooking Class', href: '/tours/balinese-cooking-class' },
   { label: 'Book cooking class', href: '/book?activity=balinese-cooking-class' },
   { label: 'Inside Tumang cooking class', href: '/blog/inside-balinese-cooking-class-pejeng' },
@@ -32,6 +33,12 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'ATV prices near Ubud (2026)', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
   { label: 'Whitewater rafting', href: '/tours/whitewater-rafting' },
   { label: 'Canyon tubing', href: '/tours/canyon-tubing' },
+  { label: 'Umah Kuno Luwak tasting', href: '/tours/luwak-coffee-plantation' },
+  { label: 'Umah Kuno Luwak price 2026', href: '/blog/luwak-coffee-plantation-umah-kuno-price-2026' },
+  { label: 'Full day Ubud tour', href: '/tours/full-day-ubud-tour' },
+  { label: 'Full day Ubud tour guide', href: '/blog/full-day-ubud-tour-guide-2026' },
+  { label: 'Tanah Lot sunset half day', href: '/tours/half-day-ubud-tanah-lot-tour' },
+  { label: 'Tanah Lot sunset guide', href: '/blog/half-day-ubud-tanah-lot-sunset-tour-2026' },
   { label: 'Book on WhatsApp', href: '/book' },
   { label: 'Adventure package prices', href: '/blog/bali-adventure-packages-prices-2026' },
   { label: 'Airport transfer DPS → Ubud', href: '/transfers' },

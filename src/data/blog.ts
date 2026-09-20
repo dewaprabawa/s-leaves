@@ -1,4 +1,5 @@
 import { COOKING_JEEP_CLUSTER_POSTS } from './clusterPostsCookingJeep'
+import { ACTIVITY_CLUSTER_POSTS } from './clusterPostsActivities'
 
 export type BlogPost = {
   slug: string
@@ -13,6 +14,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...ACTIVITY_CLUSTER_POSTS,
   {
     slug: 'tirta-empu-melukat-ubud-guide',
     title: 'Private Tirta Empu Melukat near Ubud (2026)',
@@ -209,7 +211,7 @@ Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) nea
 | Single ATV | 3+ | 700,000 each | Same inclusions · group tier |
 | Tandem ATV | 2 sharing | 1,100,000 | Same inclusions · one bike for two |
 | Optional pickup | — | 400,000 | Hotel pickup charge |
-| Canyon tubing add-on | Ask | From 359,000 | Wos River float after ATV |
+| Canyon tubing add-on | Ask | 500,000 · 450,000 for 2+ | Wos River float after ATV |
 
 Aggregator listings often hide whether lunch, insurance, or pickup are extras. Our [adventure packages page](/blog/bali-adventure-packages-prices-2026) and [ATV tour guide](/blog/bali-atv-tour-ubud-guide) keep IDR totals transparent before you message WhatsApp.
 
@@ -1030,7 +1032,7 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
     author: "Sekar Bali Activity Team",
     image: "/images/cooking/stovetop-class.jpg",
     content: `
-**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Sudiana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo **IDR 450,000** / person (was IDR 506,370); private from **IDR 633,090**. TripAdvisor Traveler’s Choice 2026.
+**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Suryana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo **IDR 450,000** / person (was IDR 506,370); private from **IDR 633,090**. TripAdvisor Traveler’s Choice 2026.
 
 > **Key Takeaways**
 > - Shared class promo: **IDR 450,000** / person · max **8** guests · Ubud pickup included  
@@ -1051,7 +1053,7 @@ Afternoon sessions skip the market and go straight into the rice-field walk and 
 
 ### 2. Base Genep, Sate Lilit & 10+ Dishes
 
-In the open-air kitchen, each guest works at their own station. You pound **Base Genep**, mold **Sate Lilit**, build sambals, and cook a full spread of classic dishes under Chef Wayan Sudiana’s English instruction.
+In the open-air kitchen, each guest works at their own station. You pound **Base Genep**, mold **Sate Lilit**, build sambals, and cook a full spread of classic dishes under Chef Wayan Suryana’s English instruction.
 
 ![Guests flipping Dadar Gulung pandan crepes](/images/cooking/crepe-flip-fun.jpg)
 
@@ -1350,10 +1352,10 @@ Want a full cultural day? Pair this ride with an afternoon [Tumang Bali Cooking 
     author: 'Sekar Bali Activity',
     image: '/images/adventures/rafting.jpg',
     content: `
-**How much does whitewater rafting near Ubud cost?** Sekar Bali Activity offers whitewater rafting from **IDR 500,000 per person**, including safety equipment, professional guides, and a post-ride lunch. Pickup from Ubud and nearby areas is available (surcharge applies outside the free cycling pickup zone).
+**How much does whitewater rafting near Ubud cost?** Sekar Bali Activity offers whitewater rafting at **IDR 500,000 per person**, or **IDR 450,000** when 2 or more guests book (minimum 2), including safety equipment, professional guides, and a post-ride lunch. Pickup from Ubud and nearby areas is available (surcharge applies outside the free cycling pickup zone).
 
 > **Key Takeaways**
-> - **IDR 500,000** per person on Class II–III rapids
+> - **IDR 500,000** · **IDR 450,000** for 2+ (min 2) on Class II–III rapids
 > - Includes helmet, life jacket, safety briefing, guide, and lunch
 > - Best for ages 7+ with basic swimming confidence
 > - Pair with [ATV jungle trails](/tours/bali-atv-adventure) or [canyon tubing](/tours/canyon-tubing) for a multi-activity day
@@ -1395,21 +1397,21 @@ Compare all options in our [Bali adventure packages & prices guide](/blog/bali-a
 
 Open the [Whitewater Rafting tour page](/tours/whitewater-rafting), tap **Book Now**, and send your name, date, group size, and pickup hotel on WhatsApp. Need help choosing between rafting and tubing? Read [ATV + River Tubing on the Wos River](/blog/atv-river-tubing-wos-river-bali).
 
-**Book rafting near Ubud** — [Whitewater Rafting Adventure from IDR 500,000](/tours/whitewater-rafting).
+**Book rafting near Ubud** — [Whitewater Rafting — IDR 500,000, or 450,000 for 2+](/tours/whitewater-rafting).
 `
   },
   {
     slug: 'bali-canyon-tubing-guide-ubud',
     title: 'Bali Canyon Tubing Near Ubud: Wos River Float, Prices & Tips (2026)',
-    excerpt: 'Float the Wos River on a canyon tubing adventure near Ubud — IDR 359,000 per person, beginner-friendly, and easy to combine with ATV jungle trails.',
+    excerpt: 'Float the Wos River on a canyon tubing adventure near Ubud — IDR 500,000, or IDR 450,000 for 2+. Beginner-friendly and easy to combine with ATV.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/canyon-tubing.jpg',
     content: `
-**What is canyon tubing in Bali?** Canyon tubing is a guided float down the **Wos River** on an inflatable tube, passing jungle canyon walls and calm crystal water. Sekar Bali Activity offers canyon tubing from **IDR 359,000 per person** — a gentler water adventure than whitewater rafting, ideal for couples and families.
+**What is canyon tubing in Bali?** Canyon tubing is a guided float down the **Wos River** on an inflatable tube, passing jungle canyon walls and calm crystal water. Sekar Bali Activity offers canyon tubing at **IDR 500,000 per person**, or **IDR 450,000** when 2 or more guests book — a gentler water adventure than whitewater rafting, ideal for couples and families.
 
 > **Key Takeaways**
-> - **IDR 359,000** per person on the Wos River
+> - **IDR 500,000** · **IDR 450,000** for 2+ on the Wos River
 > - Beginner-friendly — no rafting paddle skills required
 > - Popular combo: [ATV jungle track](/tours/bali-atv-adventure) first, then tube the river
 > - Bring a change of clothes; towels available at base
@@ -1422,7 +1424,7 @@ Open the [Whitewater Rafting tour page](/tours/whitewater-rafting), tap **Book N
 | | Canyon Tubing | Whitewater Rafting |
 | --- | --- | --- |
 | **Intensity** | Gentle float, canyon scenery | Class II–III rapids, more splash |
-| **Price** | From IDR 359,000 | From IDR 500,000 |
+| **Price** | IDR 500,000 · 450,000 for 2+ | IDR 500,000 · 450,000 for 2+ (min 2) |
 | **Best for** | First-timers, couples | Thrill-seekers, ages 7+ |
 | **Tour page** | [Canyon Tubing](/tours/canyon-tubing) | [Whitewater Rafting](/tours/whitewater-rafting) |
 
@@ -1448,18 +1450,18 @@ The classic land-and-water day: race quad bikes through jungle mud at **All New 
 
 Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing in the homepage booking form. Tap **Details** in the popup to see the itinerary without navigating away.
 
-**Float the Wos River** — [Book Canyon Tubing from IDR 359,000](/tours/canyon-tubing).
+**Float the Wos River** — [Book Canyon Tubing — IDR 500,000, or 450,000 for 2+](/tours/canyon-tubing).
 `
   },
   {
     slug: 'bali-adventure-packages-prices-2026',
     title: 'Bali Adventure Prices 2026',
-    excerpt: 'ATV from IDR 750K, rafting 500K, tubing 359K, ricefield cycling 750K, Mount Batur sunrise jeep from 750K/person (3+), Luwak 800K, cooking 450K, full-day Ubud from 600K — 2026 package prices in one place.',
+    excerpt: 'ATV from IDR 750K, rafting and tubing 500K (450K for 2+), ricefield cycling 750K, Mount Batur sunrise jeep from 750K/person (3+), Luwak 800K, cooking 450K, full-day Ubud from 600K — 2026 package prices in one place.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000**, **Canyon Tubing IDR 359,000**, **Ubud Ricefield Cycling Tour IDR 750,000**, **Mount Batur Sunrise Jeep Tour IDR 1,350,000 solo / IDR 825,000 for 2 / from IDR 750,000 per person for 3+**, **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Luwak Coffee Plantation IDR 800,000** (min 3 guests; transport not included), **Full Day Ubud Tour from IDR 600,000**, and **Half Day Ubud & Tanah Lot from IDR 450,000**.
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000 (IDR 450,000 for 2+)**, **Canyon Tubing IDR 500,000 (IDR 450,000 for 2+)**, **Ubud Ricefield Cycling Tour IDR 750,000**, **Mount Batur Sunrise Jeep Tour IDR 1,350,000 solo / IDR 825,000 for 2 / from IDR 750,000 per person for 3+**, **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Luwak Coffee Plantation IDR 800,000** (min 3 guests; transport not included), **Full Day Ubud Tour from IDR 600,000**, and **Half Day Ubud & Tanah Lot from IDR 450,000**.
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
@@ -1476,8 +1478,8 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | --- | --- | --- | --- |
 | Single ATV | IDR 750,000 | 1 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
 | Tandem ATV | IDR 1,100,000 | 2 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
-| Whitewater Rafting | IDR 500,000 | person | [Whitewater Rafting](/tours/whitewater-rafting) |
-| Canyon Tubing | IDR 359,000 | person | [Canyon Tubing](/tours/canyon-tubing) |
+| Whitewater Rafting | IDR 500,000 · 450,000 for 2+ | person | [Whitewater Rafting](/tours/whitewater-rafting) |
+| Canyon Tubing | IDR 500,000 · 450,000 for 2+ | person | [Canyon Tubing](/tours/canyon-tubing) |
 | Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
 | Mount Batur Sunrise Jeep | IDR 1,350,000 solo · 825,000 (2) · 750,000 (3+) | person, private 4×4 | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Tumang Bali Cooking Class | IDR 450,000 promo | person shared | [Cooking Class](/tours/balinese-cooking-class) |
@@ -1642,7 +1644,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What is the best adventure near Ubud — ATV, rafting, or tubing?** It depends on your style: **ATV** (from IDR 750,000) for jungle mud and quad bikes at All New Bali Adventure; **rafting** (IDR 500,000) for Class II–III rapids; **canyon tubing** (IDR 359,000) for a gentle Wos River float. Sekar Bali Activity offers all three with WhatsApp booking.
+**What is the best adventure near Ubud — ATV, rafting, or tubing?** It depends on your style: **ATV** (from IDR 750,000) for jungle mud and quad bikes at All New Bali Adventure; **rafting** (IDR 500,000, or IDR 450,000 for 2+) for Class II–III rapids; **canyon tubing** (IDR 500,000, or IDR 450,000 for 2+) for a gentle Wos River float. Sekar Bali Activity offers all three with WhatsApp booking.
 
 > **Key Takeaways**
 > - **Most adrenaline:** Single ATV at All New Bali Adventure
@@ -1657,7 +1659,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 
 | | ATV | Rafting | Canyon Tubing | Cycling |
 | --- | --- | --- | --- | --- |
-| **Price** | IDR 750K+ | IDR 500K | IDR 359K | IDR 750K |
+| **Price** | IDR 750K+ | IDR 500K · 450K for 2+ | IDR 500K · 450K for 2+ | IDR 750K |
 | **Intensity** | High | Medium–High | Low–Medium | Low |
 | **Duration** | 2–4 hrs | 3 hours | 2.5 hours | 2 hours |
 | **Environment** | Jungle mud track | River rapids | River float | Rice terraces |
@@ -1741,7 +1743,7 @@ Prefer a morning Tumang class with market tour? Book cooking first, then a light
 
 | Include | Details |
 | --- | --- |
-| Hands-on cooking (10+ dishes) | Chef Wayan Sudiana · English instruction |
+| Hands-on cooking (10+ dishes) | Chef Wayan Suryana · English instruction |
 | Morning market tour | AM shared session only |
 | Rice-field walk | Village kitchen near Ubud |
 | Complimentary Ubud-area pickup | Shared & private options |

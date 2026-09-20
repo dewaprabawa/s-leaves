@@ -26,15 +26,15 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: "Whitewater Rafting Adventure",
     description:
-      "Class II-III whitewater rafting through a jungle river canyon. All-inclusive with professional crew and lunch.",
-    price: "500000",
+      "Class II-III whitewater rafting through a jungle river canyon. IDR 500,000 list, or IDR 450,000 for 2+ guests. All-inclusive with professional crew and lunch.",
+    price: "450000",
     image: "/images/adventures/rafting.jpg",
   },
   {
     name: "Canyon Tubing Experience",
     description:
-      "Float through hidden Bali canyons on an inflatable tube. Pair with an ATV + river tubing combo for the ultimate adventure day.",
-    price: "359000",
+      "Float through hidden Bali canyons on an inflatable tube. IDR 500,000 list, or IDR 450,000 for 2+ guests. Pair with an ATV + river tubing combo for the ultimate adventure day.",
+    price: "450000",
     image: "/images/adventures/canyon-tubing.jpg",
   },
   {

@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.4
+**Document version:** v2.5
 **Last updated:** 2026-09-20
 
 ## Product Overview
@@ -8,7 +8,7 @@
 **What it does:** Sekar Bali Activity sells curated Ubud-area experiences: ATV (All New Bali Adventure), river rafting/tubing, Pejeng ricefield cycling, a no-hike Mount Batur sunrise 4×4 jeep near Kintamani, Tumang Bali Cooking Class, coffee tasting, private day tours, and same-day combos — with transparent tier pricing and clear hotel-pickup rules.
 **Product category:** Bali travel activities / Ubud tours & experiences
 **Product type:** Local tour operator / service business
-**Business model:** Direct WhatsApp booking; pay on confirm/experience; packages from ~IDR 359K–1.35M; group tier discounts; pickup add-ons (jeep pickup included)
+**Business model:** Direct WhatsApp booking; pay on confirm/experience; packages from ~IDR 450K–1.35M; rafting and canyon tubing IDR 500K list / 450K for 2+; pickup add-ons (jeep pickup included)
 
 ## Target Audience
 **Target companies:** N/A (B2C travelers)
@@ -110,7 +110,7 @@
 **Personality:** Local host, trustworthy, practical, warm
 
 ## Proof Points
-**Metrics:** Packages from IDR 359K–1.35M; 100+ happy guests (site claim); free cancellation up to 24h
+**Metrics:** Packages from IDR 450K–1.35M; 100+ happy guests (site claim); free cancellation up to 24h
 **Customers:** Couples, families, Ubud hotel guests, culture & food travelers
 **Testimonials:** Site guest stories (ATV, cycling, cooking)
 **Value themes:**
@@ -129,6 +129,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.5 (2026-09-20) — Rafting and canyon tubing list at **IDR 500,000**, discount **IDR 450,000** for 2+ guests (rafting still min 2). Removed 359K tubing and 475K mid rafting tier.
 - v2.4 (2026-09-20) — GEO/SEO now covers **every** bookable activity (ATV, rafting, tubing, cycling, coffee, full-day Ubud, Tanah Lot half-day) plus a hub article for things to do near Ubud. Same pickup and jeep-meal rules as v2.3.
 - v2.3 (2026-09-19) — Jeep meals are **not included**. Do not claim breakfast or other food is served on the Mount Batur sunrise jeep.
 - v2.2 (2026-09-09) — Added Mount Batur sunrise jeep (no-hike 4×4, island-wide pickup, IDR 1.35M solo / from 750K at 3+) as an adventure use case; do not claim the jeep is the summit trek.

@@ -41,7 +41,7 @@ export function buildOrganizationSchema() {
     email: CONTACT_EMAIL,
     image: `${SITE_URL}/logo.png`,
     logo: `${SITE_URL}/logo.png`,
-    priceRange: 'IDR 359000 - IDR 1350000',
+    priceRange: 'IDR 450000 - IDR 1350000',
     // NAP must match Google Business Profile (corporate / registered office)
     address: postalAddressSchema(PRIMARY_NAP_ADDRESS),
     geo: {

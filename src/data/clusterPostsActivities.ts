@@ -11,7 +11,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
     author: 'Sekar Bali Activity',
     image: '/images/adventures/og-cover.jpg',
     content: `
-**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (**IDR 750,000**, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) from **IDR 500,000**, [canyon tubing](/tours/canyon-tubing) from **IDR 359,000**, [Mount Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+), [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 800,000**, min 3), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
+**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (**IDR 750,000**, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) **IDR 500,000** (**IDR 450,000** for 2+), [canyon tubing](/tours/canyon-tubing) **IDR 500,000** (**IDR 450,000** for 2+), [Mount Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+), [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 800,000**, min 3), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
 
 > **Key Takeaways**
 > - Food + village days include **free Ubud pickup** (cooking + cycling)
@@ -28,8 +28,8 @@ export const ACTIVITY_CLUSTER_POSTS = [
 | Pejeng ricefield cycling | **750,000** | 2 hrs | Free Ubud + lunch | [Cycling](/tours/ubud-ricefield-cycling-tour) |
 | Single ATV | **750,000** | 2–4 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
 | Tandem ATV | **1,100,000** / bike | 2–4 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
-| Whitewater rafting | **500,000** (min 2) | 3 hrs | IDR 400K or self-meet | [Rafting](/tours/whitewater-rafting) |
-| Canyon tubing | **359,000** | 2.5 hrs | IDR 400K or self-meet | [Tubing](/tours/canyon-tubing) |
+| Whitewater rafting | **500,000** · **450,000** for 2+ | 3 hrs | IDR 400K or self-meet | [Rafting](/tours/whitewater-rafting) |
+| Canyon tubing | **500,000** · **450,000** for 2+ | 2.5 hrs | IDR 400K or self-meet | [Tubing](/tours/canyon-tubing) |
 | Batur sunrise jeep | **750,000** (3+) | 6–7 hrs | Island-wide included | [Jeep](/tours/batur-sunrise-jeep-tour) |
 | Umah Kuno Luwak | **800,000** (min 3) | 1.5 hrs | Not included | [Coffee](/tours/luwak-coffee-plantation) |
 | Full day Ubud tour | **600,000** | 10 hrs | Private car | [Full day](/tours/full-day-ubud-tour) |
@@ -50,7 +50,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[ATV at All New Bali Adventure](/tours/bali-atv-adventure)** is the Sedang jungle mud track — beginner briefing, lunch, gear, insurance. Single from **IDR 750,000**, tandem **IDR 1,100,000**. We are not the Kuber tunnel or Dragon Cave routes. First-timer notes: [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide).
 
-**[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) from **IDR 500,000**, minimum 2 guests, lunch included. **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float from **IDR 359,000** — the usual ATV add-on. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+**[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) at **IDR 500,000**, or **IDR 450,000** for 2+ (minimum 2), lunch included. **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float at the same **IDR 500,000 / 450,000 for 2+** — the usual ATV add-on. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
 **[Mount Batur sunrise jeep](/tours/batur-sunrise-jeep-tour)** is a **private 4×4**, not the 2-hour summit hike. Crater-rim viewpoint ~1,350m. Solo **IDR 1,350,000** · 2 guests **IDR 825,000** · 3+ **IDR 750,000**. Hotel pickup included island-wide. **Meals are not included** — we do not serve food on the jeep. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 

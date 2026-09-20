@@ -67,13 +67,13 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-whitewater-rafting-near-ubud-guide': {
     headline: 'Book Class II–III rafting near Ubud',
-    body: 'From IDR 500,000 per person (min 2). Gear, guide, lunch, and insurance included.',
+    body: 'IDR 500,000, or IDR 450,000 for 2+ (min 2). Gear, guide, lunch, and insurance included.',
     primaryHref: '/tours/whitewater-rafting',
     primaryLabel: 'Book rafting',
   },
   'bali-canyon-tubing-guide-ubud': {
     headline: 'Book Wos River canyon tubing',
-    body: 'From IDR 359,000 — gentler than rafting. Popular after ATV.',
+    body: 'IDR 500,000, or IDR 450,000 for 2+. Gentler than rafting. Popular after ATV.',
     primaryHref: '/tours/canyon-tubing',
     primaryLabel: 'Book tubing',
     secondaryHref: '/tours/bali-atv-adventure',
@@ -173,7 +173,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'rafting-vs-tubing-vs-atv-near-ubud': {
     headline: 'Choose splash, float, or mud — then book',
-    body: 'Rafting from IDR 500K · tubing from 359K · ATV from 750K. Pickup IDR 400K if you want a hotel collect.',
+    body: 'Rafting and tubing IDR 500K · 450K for 2+. ATV from 750K. Pickup IDR 400K if you want a hotel collect.',
     primaryHref: '/book',
     primaryLabel: 'Book the winner',
   },

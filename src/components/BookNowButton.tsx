@@ -37,7 +37,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     title: "Canyon Tubing",
     times: ["08:00", "09:00", "10:00", "13:00", "14:00"],
     adultPrice: getListPrice("canyon-tubing"),
-    kidPrice: 300000,
+    kidPrice: 450000,
     minPax: 1,
     meetsAtArena: true,
   },

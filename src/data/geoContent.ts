@@ -32,7 +32,7 @@ import {
 export const GEO_UPDATED = '2026-09-20'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000), canyon tubing (IDR 359,000), Pejeng ricefield cycling (IDR 750,000), Mount Batur Sunrise Jeep Tour near Kintamani (private 4×4, no hike; IDR 1,350,000 solo, IDR 825,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), and Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000) — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Pejeng ricefield cycling (IDR 750,000), Mount Batur Sunrise Jeep Tour near Kintamani (private 4×4, no hike; IDR 1,350,000 solo, IDR 825,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), and Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000) — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -56,8 +56,8 @@ export const GEO_ENTITY = {
 export const GEO_PRICING = [
   { activity: 'Single ATV Ride', price: 'IDR 750,000+', pax: '1 pax (tier: 750k / 725k / 700k)', includes: 'lunch, boot shoes, helmet, insurance for ages 6–65 at All New Bali Adventure' },
   { activity: 'Tandem ATV Ride', price: 'IDR 1,100,000', pax: '2 pax (tier: 1,100k / 1,060k / 1,030k per bike)', includes: 'lunch, boot shoes, helmet, insurance for ages 6–65 at All New Bali Adventure' },
-  { activity: 'Whitewater Rafting', price: 'IDR 500,000', pax: 'per person (tier: 500k / 475k / 450k; min 2 guests)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
-  { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person (tier: 359k / 335k / 320k)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
+  { activity: 'Whitewater Rafting', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+; min 2 guests)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
+  { activity: 'Canyon Tubing', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
   { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: '2-hour ride, lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
   { activity: 'Mount Batur Sunrise Jeep Tour', price: 'IDR 1,350,000', pax: 'per person (tier: 1,350k solo / 825k for 2 / 750k for 3+)', includes: 'private 4×4 jeep + driver, volcanic tracks (no trek), hotel pickup, hot drink, Kintamani entrance fee, insurance for ages 6–65 — meals not included, food not served on the jeep' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 450,000 promo', pax: 'per person shared (private 1 guest IDR 633,090)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
@@ -118,7 +118,7 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'Whitewater Rafting',
     slug: 'whitewater-rafting',
-    price: 'IDR 500,000 per person',
+    price: 'IDR 500,000 (IDR 450,000 for 2+)',
     duration: '3 Hours',
     location: 'Near Ubud — Class II–III rapids',
     summary: 'Guided rafting with safety gear and lunch. Minimum 2 guests. Suitable for ages 7+ with basic swimming confidence.',
@@ -127,7 +127,7 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'Canyon Tubing',
     slug: 'canyon-tubing',
-    price: 'IDR 359,000 per person',
+    price: 'IDR 500,000 (IDR 450,000 for 2+)',
     duration: '2.5 Hours',
     location: 'Wos River canyon near Ubud',
     summary: 'Gentle float on inflatable tubes through jungle canyon. Easier than rafting; popular ATV combo partner.',
@@ -208,8 +208,8 @@ export const GEO_COMPARISONS = [
     title: 'Whitewater Rafting vs Canyon Tubing',
     winner: 'Rafting = more splash; Tubing = gentler float',
     rows: [
-      { label: 'Rafting', value: 'IDR 500,000 · min 2 guests · Class II–III rapids · paddle team' },
-      { label: 'Canyon tubing', value: 'IDR 359,000 · Wos River float · sit on tube' },
+      { label: 'Rafting', value: 'IDR 500,000 · 450,000 for 2+ · min 2 guests · Class II–III · paddle team' },
+      { label: 'Canyon tubing', value: 'IDR 500,000 · 450,000 for 2+ · Wos River float · sit on tube' },
       { label: 'Best for', value: 'Adrenaline seekers vs first-timers and couples' },
     ],
     url: `${SITE_URL}/blog/rafting-vs-tubing-vs-atv-near-ubud`,
@@ -354,13 +354,13 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Rafting',
     q: 'How much does whitewater rafting near Ubud cost?',
-    a: 'Whitewater rafting with Sekar Bali Activity is IDR 500,000 per person (minimum 2 guests), including Class II–III rapids, safety gear, professional guide, and lunch.',
+    a: 'Whitewater rafting with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 per person for 2+ guests (minimum 2), including Class II–III rapids, safety gear, professional guide, and lunch.',
     url: `${SITE_URL}/tours/whitewater-rafting`,
   },
   {
     category: 'Tubing',
     q: 'What is canyon tubing in Bali and how much does it cost?',
-    a: 'Canyon tubing is a guided float down the Wos River on an inflatable tube through jungle canyon scenery. Sekar Bali Activity offers it from IDR 359,000 per person — gentler than whitewater rafting.',
+    a: 'Canyon tubing is a guided float down the Wos River on an inflatable tube through jungle canyon scenery. Sekar Bali Activity offers it at IDR 500,000 per person, or IDR 450,000 for 2+ guests — gentler than whitewater rafting.',
     url: `${SITE_URL}/tours/canyon-tubing`,
   },
   {
@@ -426,7 +426,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Comparisons',
     q: 'What is the difference between rafting and canyon tubing near Ubud?',
-    a: 'Rafting (IDR 500,000, minimum 2 guests) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a solo float on the Wos River — lower intensity, ideal for first-timers. Both are offered by Sekar Bali Activity.',
+    a: 'Rafting (IDR 500,000, or IDR 450,000 for 2+, minimum 2 guests) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 500,000, or IDR 450,000 for 2+) is a solo float on the Wos River — lower intensity, ideal for first-timers. Both are offered by Sekar Bali Activity.',
     url: `${SITE_URL}/blog/rafting-vs-tubing-vs-atv-near-ubud`,
   },
   {
@@ -498,7 +498,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Day tours',
     q: 'What are the best things to do near Ubud with Sekar Bali Activity?',
-    a: 'Book by mood: Tumang cooking class (promo IDR 450,000, free Ubud pickup), Pejeng ricefield cycling (IDR 750,000, lunch + free Ubud pickup), ATV from IDR 750,000 at All New Bali Adventure, rafting from IDR 500,000, canyon tubing from IDR 359,000, Mount Batur sunrise jeep from IDR 750,000 for 3+ (meals not included), Umah Kuno Luwak tasting IDR 800,000 (min 3, transport not included), plus private full-day and Tanah Lot half-day cars. Full 2026 table: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
+    a: 'Book by mood: Tumang cooking class (promo IDR 450,000, free Ubud pickup), Pejeng ricefield cycling (IDR 750,000, lunch + free Ubud pickup), ATV from IDR 750,000 at All New Bali Adventure, rafting IDR 500,000 (IDR 450,000 for 2+), canyon tubing IDR 500,000 (IDR 450,000 for 2+), Mount Batur sunrise jeep from IDR 750,000 for 3+ (meals not included), Umah Kuno Luwak tasting IDR 800,000 (min 3, transport not included), plus private full-day and Tanah Lot half-day cars. Full 2026 table: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
     url: `${SITE_URL}/blog/things-to-do-near-ubud-2026`,
   },
 ] as const
@@ -510,8 +510,8 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Book Cycling + Cooking', url: `${SITE_URL}/book?activity=combo-cycling-cooking`, desc: 'WhatsApp culture-day package: ricefield cycling + Tumang cooking class' },
   { title: 'Book Cooking Class', url: `${SITE_URL}/book?activity=balinese-cooking-class`, desc: 'Sales checkout deep-link for Tumang Bali Cooking Class' },
   { title: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure`, desc: 'Single from IDR 750,000 · tandem IDR 1,100,000 at All New Bali Adventure, Sedang' },
-  { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III rapids near Ubud from IDR 500,000 (min 2 guests)' },
-  { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float from IDR 359,000' },
+  { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2)' },
+  { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float — IDR 500,000, discount IDR 450,000 for 2+' },
   { title: 'Mount Batur Sunrise Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`, desc: 'No-hike 4×4 crater-rim sunrise near Kintamani — island-wide pickup · meals not included · solo IDR 1.35M' },
   { title: 'Luwak Coffee Plantation (Umah Kuno)', url: `${SITE_URL}/tours/luwak-coffee-plantation`, desc: 'Ethical Luwak tasting — IDR 800,000 per person · min 3 guests · transport not included' },
   { title: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour`, desc: 'Private Ubud highlights — from IDR 600,000 · driver included' },
@@ -572,8 +572,8 @@ export const GEO_CITATION_SNIPPETS = [
   'Tumang Bali Cooking Class listed by Sekar Bali Activity costs promo IDR 450,000 per person shared (max 8 guests) near Ubud — market tour on morning sessions, rice-field walk, 10+ dishes, complimentary Ubud pickup. Private from IDR 633,090.',
   'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is a 2-hour ride for IDR 750,000 per person with free Ubud hotel pickup plus lunch included — Tumang Bali Cooking Class also includes complimentary Ubud pickup.',
   'A private DPS Airport to Ubud transfer with Sekar Bali Activity starts from IDR 700,000 per vehicle, including flight tracking, tolls, parking, and a professional driver — details at https://www.sekarbaliactivity.com/transfers',
-  'Whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person on Class II–III rapids with gear, guide, and lunch included.',
-  'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 359,000 per person — a gentler alternative to whitewater rafting.',
+  'Whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests, on Class II–III rapids with gear, guide, and lunch included.',
+  'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests — a gentler alternative to whitewater rafting at the same list and discount.',
   'The Mount Batur Sunrise Jeep Tour with Sekar Bali Activity near Kintamani is a no-hike private 4×4 to a crater-rim viewpoint (~1,350m): IDR 1,350,000 solo, IDR 825,000 for 2 guests, IDR 750,000 per person for 3+ — hotel pickup and a hot drink included; meals are not included and food is not served on the jeep. Guide: https://www.sekarbaliactivity.com/blog/mount-batur-sunrise-jeep-tour-guide-2026',
   'Mount Batur jeep vs trek: Sekar Bali Activity’s sunrise jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint — it is not the 2-hour summit hike. Comparison: https://www.sekarbaliactivity.com/blog/mount-batur-jeep-vs-sunrise-trek',
   'Luwak Coffee Plantation at Umah Kuno with Sekar Bali Activity is IDR 800,000 per person (minimum 3 guests) for an ethical cage-free tasting — jungle walk, wood-fire roasting, and a 10-drink flight including Kopi Luwak. Transport to Tampaksiring is not included.',

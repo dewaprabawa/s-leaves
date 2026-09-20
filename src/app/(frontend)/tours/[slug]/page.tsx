@@ -216,6 +216,8 @@ function buildTourSchema(tour: Tour) {
         ? ["Couples", "Families", "Non-hikers", "Sunrise photographers"]
         : tour.slug === "luwak-coffee-plantation"
           ? ["Couples", "Families", "Food travelers", "Culture travelers"]
+          : tour.slug === "tirta-empu-purification"
+            ? ["Couples", "Families", "Culture travelers", "Spiritual travelers"]
           : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
@@ -226,6 +228,8 @@ function buildTourSchema(tour: Tour) {
           ? "Sedang, Abiansemal, Badung, Bali"
           : tour.slug === "batur-sunrise-jeep-tour"
             ? "Kintamani, Mount Batur, Bali"
+          : tour.slug === "tirta-empu-purification"
+            ? "Tampaksiring, Tirta Empul, Gianyar, Bali"
           : tour.area ?? "Ubud, Bali",
     },
     ...(tour.venue

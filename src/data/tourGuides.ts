@@ -158,6 +158,28 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Flavor building blocks before you book.',
     },
   ],
+  'tirta-empu-purification': [
+    {
+      title: 'Tirta Empu melukat near Ubud',
+      href: '/blog/tirta-empu-melukat-ubud-guide',
+      blurb: 'What the private ritual includes, dress code, and IDR 1.2M price.',
+    },
+    {
+      title: 'Bali temple dress code',
+      href: '/blog/bali-temple-dress-code',
+      blurb: 'Sarong, sash, and pool etiquette before you enter.',
+    },
+    {
+      title: 'Ubud hotel pickup explained',
+      href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
+      blurb: 'How the included Ubud-area shuttle differs from the ATV add-on.',
+    },
+    {
+      title: 'Ethical luwak nearby',
+      href: '/blog/how-to-spot-ethical-luwak-coffee-in-bali',
+      blurb: 'Pair a Tampaksiring morning with Umah Kuno tasting.',
+    },
+  ],
   'luwak-coffee-plantation': [
     {
       title: 'Umah Kuno Luwak price 2026',
@@ -283,6 +305,10 @@ export const TOUR_HOST_NOTES: Record<
   'whitewater-rafting': {
     title: 'From our rafting crew',
     body: 'English-speaking river guides run Class II–III sections near Ubud with a full safety briefing, helmets, and life jackets before launch. We pace the day for first-timers and families — splash without extreme drops — then lunch after you dry off.',
+  },
+  'tirta-empu-purification': {
+    title: 'From our Tampaksiring hosts',
+    body: 'We run private melukat mornings at Tirta Empu (Pura Tirta Empul) most days — hotel shuttle from the Ubud area, a canang offering, and a guide who tells you which fountains to use and which to skip. The temple is public and sacred: we keep the ritual unhurried and respectful, then return you in dry clothes. Lunch is not included.',
   },
   'batur-sunrise-jeep-tour': {
     title: 'From our Kintamani jeep drivers',

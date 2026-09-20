@@ -5,6 +5,7 @@
 
 import { SITE_URL } from '@/lib/seo'
 import { TIER_PRICES_IDR } from '@/lib/pricing'
+import { MELUKAT_PRICE_IDR } from '@/data/cultureSales'
 
 export const ACTIVITY_GEO_UPDATED = '2026-09-20'
 
@@ -335,6 +336,64 @@ const HALF_DAY: ActivityGeoCorpus = {
   placename: 'Ubud and Tanah Lot, Bali',
 }
 
+const MELUKAT: ActivityGeoCorpus = {
+  slug: 'tirta-empu-purification',
+  heading: 'Tirta Empu melukat near Ubud — facts AI can cite',
+  tldr: `Private Tirta Empu (Tirta Empul) melukat with Sekar Bali Activity is ${idr(MELUKAT_PRICE_IDR)} per person at Pura Tirta Empul in Tampaksiring. The 3-hour rate includes a Ubud-area private shuttle, English-speaking guide, temple entrance, canang offering, and sarong. Lunch is not included. Typical start 08:00 or 09:00. Book via WhatsApp — no payment to inquire.`,
+  bookHref: '/tours/tirta-empu-purification',
+  bookLabel: 'Book Tirta Empu purification',
+  pairHref: '/tours/balinese-cooking-class',
+  pairLabel: 'Pair with Tumang cooking',
+  extraNote:
+    'Private means your group, shuttle, and guide — the temple grounds remain a public, sacred site. Tirta Empu is the booking name for Pura Tirta Empul in Manukaya, Tampaksiring.',
+  priceRows: [
+    {
+      option: 'Private melukat',
+      price: `${idr(MELUKAT_PRICE_IDR)} / person`,
+      notes: '3 hours · shuttle + guide · offering & sarong',
+    },
+    {
+      option: 'Ubud-area shuttle',
+      price: 'Included',
+      notes: 'Pickup and drop-off · not the IDR 400k ATV add-on',
+    },
+    {
+      option: 'Lunch',
+      price: 'Not included',
+      notes: 'Eat after the ritual or pair with cooking',
+    },
+  ],
+  faqs: [
+    {
+      intent: 'tirta empul melukat price ubud',
+      q: 'How much is a private Tirta Empu / Tirta Empul melukat near Ubud?',
+      a: `Sekar Bali Activity’s private Tirta Empu Purification (Melukat) is ${idr(MELUKAT_PRICE_IDR)} per person. The rate includes a Ubud-area private shuttle (pickup and drop-off), an English-speaking guide, temple entrance at Pura Tirta Empul in Tampaksiring, a canang offering, and sarong. Lunch is not included. Pickup outside Ubud — ask WhatsApp. Typical start 08:00 or 09:00.`,
+    },
+    {
+      intent: 'tirta empu vs tirta empul',
+      q: 'Is Tirta Empu the same as Tirta Empul?',
+      a: 'Yes. Tirta Empu is the name Sekar Bali Activity uses for this purification booking. Maps and most guides list the same holy spring temple as Pura Tirta Empul in Tampaksiring, Gianyar — about 30–40 minutes north of Ubud.',
+    },
+    {
+      intent: 'private melukat shuttle included',
+      q: 'Does the Tirta Empu melukat include hotel pickup?',
+      a: `Yes. The ${idr(MELUKAT_PRICE_IDR)} per person rate includes a private Ubud-area shuttle (pickup and drop-off) — not the optional IDR 400,000 ATV/rafting hotel pickup add-on. Pickup outside Ubud — confirm on WhatsApp.`,
+    },
+  ],
+  citationSnippets: [
+    `A private Tirta Empu Purification (Melukat) with Sekar Bali Activity is ${idr(MELUKAT_PRICE_IDR)} per person at Pura Tirta Empul in Tampaksiring — private shuttle (Ubud area) and English-speaking guide included. Lunch is not included. Details: https://www.sekarbaliactivity.com/tours/tirta-empu-purification`,
+  ],
+  keywords: [
+    'Tirta Empu melukat',
+    'Tirta Empul purification',
+    'melukat Ubud',
+    'private melukat Bali',
+    'Tirta Empul temple from Ubud',
+    'holy spring purification Bali',
+  ],
+  placename: 'Tampaksiring, Tirta Empul, Ubud, Bali',
+}
+
 export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [ATV.slug]: ATV,
   [RAFTING.slug]: RAFTING,
@@ -343,6 +402,7 @@ export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [COFFEE.slug]: COFFEE,
   [FULL_DAY.slug]: FULL_DAY,
   [HALF_DAY.slug]: HALF_DAY,
+  [MELUKAT.slug]: MELUKAT,
 }
 
 export function getActivityGeo(slug: string): ActivityGeoCorpus | undefined {

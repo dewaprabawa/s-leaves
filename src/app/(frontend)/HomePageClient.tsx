@@ -51,6 +51,7 @@ import {
 import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
+  MELUKAT_PRICE_IDR,
   buildCyclingCookingComboWhatsAppUrl,
   getCyclingCookingCombo,
 } from "@/data/cultureSales"
@@ -104,6 +105,14 @@ const CATEGORY_SECTION_META: {
     title: "Day tours",
     subtitle: "Private Ubud highlights and Tanah Lot sunset runs with driver included.",
   },
+  {
+    id: "culture",
+    anchor: "culture",
+    eyebrow: "Holy water",
+    title: "Culture & heritage",
+    subtitle:
+      "Private Tirta Empu (Tirta Empul) melukat near Ubud — shuttle and guide included from IDR 1,200,000 per person.",
+  },
 ]
 
 type PricingRow = {
@@ -123,6 +132,13 @@ const pricingData: PricingRow[] = [
     pax: "Shared class · Max 8 guests · Free Ubud pickup · Market tour · Promo",
     price: COOKING_CLASS_PRICE_IDR,
     originalPrice: COOKING_CLASS_STANDARD_PRICE_IDR,
+    highlight: true,
+  },
+  {
+    activity: "Tirta Empu Purification (Melukat)",
+    bookHref: "/book?activity=tirta-empu-purification",
+    pax: "Private · shuttle + guide included · Ubud-area pickup",
+    price: MELUKAT_PRICE_IDR,
     highlight: true,
   },
   {
@@ -200,6 +216,11 @@ const travelGuides = [
     title: "Ubud Hotel Pickup Explained",
     excerpt: "Which tours include free Ubud pickup and when the hotel pickup charge applies.",
     href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
+  },
+  {
+    title: "Tirta Empu Melukat near Ubud",
+    excerpt: "Private holy-spring purification — IDR 1,200,000 / person with shuttle and guide.",
+    href: "/blog/tirta-empu-melukat-ubud-guide",
   },
   {
     title: "Bali ATV Tour Near Ubud (2026)",

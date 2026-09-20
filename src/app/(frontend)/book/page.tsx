@@ -6,6 +6,7 @@ import BookSalesCheckout from "@/components/BookSalesCheckout"
 import { ADVENTURES, getAdventureListPrice } from "@/data/adventures"
 import {
   COOKING_CLASS_SALES,
+  MELUKAT_SALES,
   getCyclingCookingCombo,
 } from "@/data/cultureSales"
 import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
@@ -66,6 +67,7 @@ export default async function BookPage({ searchParams }: Props) {
     activity && ADVENTURES.some((a) => a.id === activity) ? activity : undefined
   const highlightCooking = activity === COOKING_CLASS_SALES.id
   const highlightCultureCombo = activity === cultureCombo.id
+  const highlightMelukat = activity === MELUKAT_SALES.id
 
   const jumpLinks = [
     { id: "combos", label: "Adventure combos" },
@@ -75,6 +77,7 @@ export default async function BookPage({ searchParams }: Props) {
       label: adv.name.replace(" Tour", ""),
     })),
     { id: COOKING_CLASS_SALES.id, label: COOKING_CLASS_SALES.shortName },
+    { id: MELUKAT_SALES.id, label: MELUKAT_SALES.shortName },
   ]
 
   const itemListSchema = {
@@ -82,8 +85,8 @@ export default async function BookPage({ searchParams }: Props) {
     "@type": "ItemList",
     name: "Book Bali Adventures — Sekar Bali Activity",
     description:
-      "Bookable adventure and culture activities near Ubud with WhatsApp checkout — ATV, rafting, tubing, ricefield cycling, Balinese cooking class, and combos.",
-    numberOfItems: ADVENTURES.length + 2,
+      "Bookable adventure and culture activities near Ubud with WhatsApp checkout — ATV, rafting, tubing, ricefield cycling, Balinese cooking class, Tirta Empu melukat, and combos.",
+    numberOfItems: ADVENTURES.length + 3,
     itemListElement: [
       {
         "@type": "ListItem",
@@ -138,6 +141,25 @@ export default async function BookPage({ searchParams }: Props) {
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/book?activity=${COOKING_CLASS_SALES.id}`,
+          },
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: ADVENTURES.length + 3,
+        name: MELUKAT_SALES.name,
+        url: `${SITE_URL}/book?activity=${MELUKAT_SALES.id}`,
+        item: {
+          "@type": "TouristTrip",
+          name: MELUKAT_SALES.name,
+          description: MELUKAT_SALES.description,
+          image: `${SITE_URL}${MELUKAT_SALES.image}`,
+          offers: {
+            "@type": "Offer",
+            price: MELUKAT_SALES.priceIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/book?activity=${MELUKAT_SALES.id}`,
           },
         },
       },
@@ -204,7 +226,8 @@ export default async function BookPage({ searchParams }: Props) {
             const isActive =
               link.id === initialActivityId ||
               (link.id === COOKING_CLASS_SALES.id && highlightCooking) ||
-              (link.id === cultureCombo.id && highlightCultureCombo)
+              (link.id === cultureCombo.id && highlightCultureCombo) ||
+              (link.id === MELUKAT_SALES.id && highlightMelukat)
             return (
               <a
                 key={link.id}
@@ -225,6 +248,7 @@ export default async function BookPage({ searchParams }: Props) {
           initialActivityId={initialActivityId}
           highlightCooking={highlightCooking}
           highlightCultureCombo={highlightCultureCombo}
+          highlightMelukat={highlightMelukat}
         />
 
         <AntiScamSection compact />
@@ -233,7 +257,7 @@ export default async function BookPage({ searchParams }: Props) {
           <h2 className="font-display text-2xl md:text-3xl font-bold">Not sure which activity?</h2>
           <p className="text-sand/80 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
             Message us with your dates, hotel, and group size — we&apos;ll recommend ATV, rafting,
-            tubing, cycling, cooking, or a combo that fits your day.
+            tubing, cycling, cooking, Tirta Empu melukat, or a combo that fits your day.
           </p>
           <a
             href={CONTACT_WHATSAPP_URL}

@@ -3,6 +3,7 @@ import {
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
   COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
+  MELUKAT_PRICE_IDR,
 } from "@/data/cultureSales"
 
 const COOKING_PRIVATE_SOLO_DIFF =
@@ -1432,7 +1433,162 @@ If your schedule is tight — an early flight, a late arrival, or a full day alr
       },
     ],
     reviews: []
-  }
+  },
+  {
+    id: "tirta-empu-purification",
+    title: "Tirta Empu Purification (Melukat)",
+    slug: "tirta-empu-purification",
+    category: "culture",
+    area: "Tampaksiring / Ubud",
+    venue: "Tirta Empul holy spring, Tampaksiring",
+    pickup: "Private shuttle included (Ubud area)",
+    isTopPick: true,
+    duration: "3 Hours",
+    basePrice: MELUKAT_PRICE_IDR,
+    seoTitle: "Tirta Empu Melukat | Private 1.2M + Shuttle",
+    seoDescription:
+      "Private Tirta Empu (Tirta Empul) melukat near Ubud with shuttle and guide. IDR 1,200,000 / person. WhatsApp booking.",
+    heroImage: {
+      url: "/images/melukat/tirta-empu-spout.jpg",
+      alt: "Guest receiving holy spring water during a Tirta Empu melukat purification",
+      width: 1600,
+      height: 1346,
+    },
+    gallery: [
+      {
+        url: "/images/melukat/tirta-empu-spout.jpg",
+        alt: "Guest receiving holy spring water during a Tirta Empu melukat purification",
+      },
+      {
+        url: "/images/melukat/tirta-empu-pool.jpg",
+        alt: "Guests in the Tirta Empu holy spring pool for a guided melukat ritual",
+      },
+      {
+        url: "/images/melukat/tirta-empu-temple.jpg",
+        alt: "Temple courtyard near Tirta Empu on a private purification morning",
+      },
+    ],
+    shortDescription:
+      "Private Balinese water purification (melukat) at Tirta Empu — the Tirta Empul holy spring in Tampaksiring. Dedicated guide, private shuttle, offering, and sarong. IDR 1,200,000 per person.",
+    fullDescription: `**Private Tirta Empu Purification (Melukat)**
+
+Melukat is a Balinese Hindu water-purification ritual. This is a **private** ceremony at **Tirta Empu** — the same holy spring temple most maps list as **Pura Tirta Empul** in Manukaya, Tampaksiring, about 30–40 minutes north of central Ubud. You go with your own group, a dedicated guide, and a private shuttle — not a mixed bus tour.
+
+### Why book a guided private ritual
+A general temple ticket lets you walk the courtyards. It does **not** explain which fountains are for living guests, which are reserved for funeral rites, or how to make the offering. Your guide walks you through prayer, the canang offering, and the sequence under the sacred spouts so the visit stays respectful.
+
+The **IDR 1,200,000 per person** private rate includes:
+
+- Private shuttle pickup and drop-off in the **Ubud area**
+- English-speaking local guide
+- Temple entrance
+- Canang offering
+- Temple sarong and sash (plus a separate bathing sarong for the pools)
+
+### What happens
+After hotel pickup you drive north to Tampaksiring. At the temple you change into a sarong and sash, present the offering, then enter the purification pools. You move spout to spout as your guide explains each step. Some fountains are skipped on purpose — follow the guide, not the photo queue.
+
+After the ritual there is time to change into dry clothes and walk the outer courtyards before the shuttle returns you to your hotel.
+
+### What to wear and bring
+Covered shoulders and a change of clothes. We supply the temple sarong, sash, and bathing wrap. See our [Bali temple dress code](/blog/bali-temple-dress-code) before you go. Women who are menstruating should not enter the inner courtyards or the pools — this is a living religious rule.
+
+### Pairing ideas
+Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation) (also Tampaksiring; transport not included on that tasting) or an afternoon [Tumang cooking class](/tours/balinese-cooking-class). Message WhatsApp to reserve both.
+
+**Typical start:** 08:00 or 09:00 so you reach the springs before the mid-morning crowds.`,
+    highlights: [
+      "Private melukat — your group only",
+      "Tirta Empu / Tirta Empul holy spring, Tampaksiring",
+      "Private shuttle included (Ubud-area hotels)",
+      "English-speaking guide through offering and pools",
+      "Sarong, sash, offering, and temple entrance included",
+    ],
+    included: [
+      "Private shuttle pickup & drop-off (Ubud area)",
+      "English-speaking local guide",
+      "Melukat ritual facilitation at Tirta Empu (Tirta Empul)",
+      "Temple entrance fee",
+      "Canang offering",
+      "Temple sarong, sash, and bathing wrap",
+    ],
+    notIncluded: [
+      "Hotel pickup outside the Ubud area (ask WhatsApp for a shuttle quote)",
+      "Lunch",
+      "Personal expenses and gratuities",
+      "Optional priest blessing beyond the standard guided ritual",
+    ],
+    itinerary: [
+      {
+        id: "iti-melukat-1",
+        time: "Pickup",
+        title: "Private shuttle from your Ubud hotel",
+        description:
+          "Your driver collects you in the Ubud area (typical 08:00 or 09:00 start). About 30–40 minutes north to Tampaksiring.",
+      },
+      {
+        id: "iti-melukat-2",
+        time: "Arrive",
+        title: "Sarong, offering, and temple briefing",
+        description:
+          "Meet your guide at Tirta Empu (Pura Tirta Empul). Change into a sarong and sash, prepare the canang offering, and hear which fountains to use — and which to skip.",
+      },
+      {
+        id: "iti-melukat-3",
+        time: "Ritual",
+        title: "Melukat in the holy spring pools",
+        description:
+          "Enter the purification pools and move under the sacred spouts in sequence. The water is cold mountain spring water. Your guide stays with you through each step.",
+      },
+      {
+        id: "iti-melukat-4",
+        time: "Finish",
+        title: "Change, courtyards, return shuttle",
+        description:
+          "Dry off, walk the outer courtyards if you wish, then the private shuttle returns you to your hotel.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-melukat-1",
+        question: "How much is a private Tirta Empu / Tirta Empul melukat?",
+        answer:
+          "IDR 1,200,000 per person for a private purification. The price includes a Ubud-area shuttle (pickup and drop-off), an English-speaking guide, temple entrance, canang offering, and sarong. Lunch is not included. Pickup outside Ubud — ask WhatsApp for a shuttle quote.",
+      },
+      {
+        id: "faq-melukat-2",
+        question: "Is this a private ceremony or a shared group?",
+        answer:
+          "Private. The shuttle and guide are for your booking only. The temple itself is a public holy site, so other worshippers and visitors will be in the courtyards and pools — you are not renting the entire temple.",
+      },
+      {
+        id: "faq-melukat-3",
+        question: "Is Tirta Empu the same as Tirta Empul?",
+        answer:
+          "Yes. Tirta Empu is the name we use for this purification booking. Maps and most guides list the same holy spring temple as Pura Tirta Empul in Tampaksiring, Gianyar — about 30–40 minutes north of Ubud.",
+      },
+      {
+        id: "faq-melukat-4",
+        question: "What should I wear for melukat?",
+        answer:
+          "A sleeved top that covers the shoulders, and a change of dry clothes. We provide the temple sarong, sash, and a bathing wrap for the pools. Do not wear the temple (dry) sarong into the water. Full rules: our Bali temple dress code guide.",
+      },
+      {
+        id: "faq-melukat-5",
+        question: "Is hotel shuttle included?",
+        answer:
+          "Yes — private shuttle pickup and drop-off are included for hotels in the Ubud area. That is part of the IDR 1,200,000 per person rate, not the IDR 400,000 ATV/rafting add-on. Stays in Canggu, Seminyak, or other areas — message WhatsApp for a transfer quote.",
+      },
+      {
+        id: "faq-melukat-6",
+        question: "Can anyone join the ritual?",
+        answer:
+          "Guests of any faith may take part if they follow temple etiquette. Women who are menstruating should not enter the inner courtyards or the purification pools. Children may join when they are comfortable in chest-deep water; tell us ages on WhatsApp.",
+      },
+    ],
+    reviews: [],
+  },
 ]
 
 export function getTourBySlug(slug: string): Tour | undefined {

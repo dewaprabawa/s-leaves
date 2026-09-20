@@ -27,6 +27,8 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Cycling & cooking class day', href: '/blog/cycling-cooking-class-ubud-full-day-itinerary' },
   { label: 'Book cycling + cooking', href: '/book?activity=combo-cycling-cooking' },
   { label: 'Hotel pickup explained', href: '/blog/ubud-hotel-pickup-bali-adventures-explained' },
+  { label: 'Tirta Empu Purification (Melukat)', href: '/tours/tirta-empu-purification' },
+  { label: 'Melukat at Tirta Empu guide', href: '/blog/tirta-empu-melukat-ubud-guide' },
   { label: 'Bali ATV Adventure', href: '/tours/bali-atv-adventure' },
   { label: 'ATV prices near Ubud (2026)', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
   { label: 'Whitewater rafting', href: '/tours/whitewater-rafting' },

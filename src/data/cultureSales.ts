@@ -13,6 +13,32 @@ export const COOKING_CLASS_PRIVATE_SOLO_IDR = 633_090
 /** Private kitchen — minimum 2 guests (total for two) */
 export const COOKING_CLASS_PRIVATE_COUPLE_IDR = 1_266_180
 
+/** Private Tirta Empu / Tirta Empul melukat — per person, shuttle + guide included. */
+export const MELUKAT_PRICE_IDR = 1_200_000
+
+export const MELUKAT_SALES = {
+  id: 'tirta-empu-purification',
+  name: 'Tirta Empu Purification (Melukat)',
+  shortName: 'Tirta Empu Melukat',
+  tagline: 'Private holy-spring purification',
+  description:
+    'Private melukat (water purification) at Tirta Empu — the Tirta Empul holy spring in Tampaksiring, about 30–40 minutes north of Ubud. Dedicated English-speaking guide, private shuttle pickup and drop-off, offering, and temple sarong. IDR 1,200,000 per person.',
+  highlights: [
+    'Private ceremony — your group only',
+    'Shuttle pickup & drop-off included (Ubud area)',
+    'English-speaking local guide',
+    'Offering, sarong & sash, temple entrance',
+  ],
+  duration: '3 hours',
+  image: '/images/melukat/tirta-empu-spout.jpg',
+  imageAlt:
+    'Guest receiving holy spring water during a Tirta Empu melukat purification',
+  tourSlug: 'tirta-empu-purification',
+  itineraryHref: '/tours/tirta-empu-purification',
+  priceIdr: MELUKAT_PRICE_IDR,
+  times: ['08:00', '09:00'] as const,
+} as const
+
 export const COOKING_CLASS_SALES = {
   id: 'balinese-cooking-class',
   name: 'Tumang Bali Cooking Class',
@@ -75,6 +101,19 @@ export function getCyclingCookingCombo(): CultureComboOffer {
     cyclingTourHref: '/tours/ubud-ricefield-cycling-tour',
     cookingTourHref: '/tours/balinese-cooking-class',
   }
+}
+
+export function buildMelukatWhatsAppUrl(guestName = 'Guest') {
+  return buildWhatsAppBookingUrl({
+    guestName,
+    activity: MELUKAT_SALES.name,
+    activityOption:
+      'Private melukat at Tirta Empu (Tirta Empul, Tampaksiring) · shuttle + guide included · IDR 1,200,000 / person',
+    time: '08:00',
+    price: MELUKAT_SALES.priceIdr,
+    notes:
+      'Please confirm a private Tirta Empu purification (melukat) on this date. Price is IDR 1,200,000 per person and includes private shuttle (Ubud area), English-speaking guide, offering, sarong, and temple entrance. Share hotel name and guest count.',
+  })
 }
 
 export function buildCookingClassWhatsAppUrl(guestName = 'Guest') {

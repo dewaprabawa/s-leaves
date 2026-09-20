@@ -142,6 +142,7 @@ const footerLinks = {
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
     { label: "Transfers", href: "/transfers" },
+    { label: "Safety & Trust", href: "/safety" },
     { label: "Anti-Scam", href: "/anti-scam" },
     { label: "Payment Policy", href: "/payment-policy" },
     { label: "Refund Policy", href: "/refund-policy" },
@@ -276,6 +277,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <div className="border-t border-sand/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-xs opacity-50">© {new Date().getFullYear()} {siteName}. All rights reserved.</p>
               <nav aria-label="Legal" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs opacity-50">
+                <Link href="/safety" className="hover:opacity-100 transition-opacity underline underline-offset-4">Safety &amp; Trust</Link>
                 <Link href="/anti-scam" className="hover:opacity-100 transition-opacity underline underline-offset-4">Anti-Scam</Link>
                 <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Privacy Policy</Link>
                 <Link href="/refund-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Refund Policy</Link>

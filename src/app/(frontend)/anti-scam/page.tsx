@@ -2,6 +2,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AntiScamSection from '@/components/AntiScamSection'
+import SafetyTrustSection from '@/components/SafetyTrustSection'
 import {
   ANTI_SCAM_RULES,
   OFFICIAL_PAYMENT,
@@ -104,6 +105,13 @@ export default function AntiScamPage() {
           <p className="pt-4 border-t border-brand-green/10">
             Also see{' '}
             <Link
+              href={TRUST_POLICY_LINKS.safety}
+              className="text-brand-green underline underline-offset-2 hover:opacity-80"
+            >
+              Safety &amp; trust
+            </Link>
+            {' · '}
+            <Link
               href={TRUST_POLICY_LINKS.cancellation}
               className="text-brand-green underline underline-offset-2 hover:opacity-80"
             >
@@ -127,7 +135,8 @@ export default function AntiScamPage() {
         </div>
       </article>
 
-      <div className="max-w-3xl mx-auto w-full mt-16">
+      <div className="max-w-3xl mx-auto w-full mt-16 space-y-4">
+        <SafetyTrustSection compact id="anti-scam-safety" />
         <AntiScamSection compact id="anti-scam-bank" />
       </div>
     </main>

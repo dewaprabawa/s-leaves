@@ -67,7 +67,7 @@ export const TRANSFERS: Transfer[] = [
     ],
     metaTitle: 'Private Airport Transfer from DPS Airport to Ubud | Sekar Bali Activity',
     metaDescription:
-      'Book a private DPS Airport to Ubud transfer from IDR 700,000. Flat rate includes flight tracking, tolls, parking, and a professional driver.',
+      'Book a private DPS Airport to Ubud transfer from IDR 700,000. Flat rate includes flight tracking, tolls, parking, and a licensed professional driver in an inspected car.',
   },
   {
     id: 'tr-2',

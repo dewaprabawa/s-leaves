@@ -11,6 +11,7 @@ export const TRUST_POLICIES_UPDATED = '20 September 2026'
 
 export const TRUST_POLICY_LINKS = {
   antiScam: '/anti-scam',
+  safety: '/safety',
   privacy: '/privacy-policy',
   refund: '/refund-policy',
   payment: '/payment-policy',
@@ -50,6 +51,32 @@ export const TRUST_POLICY_CARDS = [
     summary:
       'No payment to inquire. After you agree, transfer only to the Seabank account on your invoice and confirm on our official WhatsApp.',
   },
+] as const
+
+export const SAFETY_TRUST_CARDS = [
+  {
+    title: 'Inspected cars',
+    summary:
+      'Private cars used for day tours, hotel pickup, airport transfers, and the Batur jeep are checked for roadworthiness before guest trips — lights, brakes, tyres, and seatbelts.',
+  },
+  {
+    title: 'Licensed drivers',
+    summary:
+      'Drivers hold a valid Indonesian driving licence (SIM) for passenger cars. English-speaking professional drivers on day tours and transfers. Ask to see the licence at pickup.',
+  },
+  {
+    title: 'Gear and insurance',
+    summary:
+      'ATV, rafting, tubing, cycling, and the Batur jeep include a safety briefing, required gear, and insurance for guests aged 6–65.',
+  },
+] as const
+
+export const SAFETY_TRUST_POINTS = [
+  'Cars for private tours, pickup, and transfers are inspected before the trip.',
+  'Drivers carry a valid Indonesian driving licence (SIM) for the vehicle they drive.',
+  'Day-tour and transfer drivers speak English and stay with you for the booked hours.',
+  'You may ask the driver to show their licence at hotel pickup.',
+  'Adventure days still include helmets, briefing, and insurance for ages 6–65.',
 ] as const
 
 export const ANTI_SCAM_RULES = [

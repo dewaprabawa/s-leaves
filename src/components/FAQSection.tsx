@@ -88,6 +88,10 @@ const faqs = [
     answer: "Seabank account number 901823638817, account name I Dewa Gede Agus Prabawa. Always use the invoice number from your PDF when you confirm payment on WhatsApp. The Payment Policy page lists the same account."
   },
   {
+    question: "Are your drivers licensed and are the cars inspected?",
+    answer: "Yes. Drivers on private day tours, hotel pickup, airport transfers, and the Mount Batur jeep hold a valid Indonesian driving licence (SIM) for passenger cars. We inspect those cars for roadworthiness — lights, brakes, tyres, and seatbelts — before guest trips. You may ask the driver to show their licence at pickup. Details are on our Safety & trust page."
+  },
+  {
     question: "How do I know this booking is not a scam?",
     answer: "Use only sekarbaliactivity.com and WhatsApp +62 817 7572 3663. We never take card numbers on the website. After you agree, transfer only to Seabank 901823638817 a/n I Dewa Gede Agus Prabawa and confirm on that same WhatsApp. Privacy, refund, and payment rules are on our Anti-scam page. If anyone asks for a different bank or e-wallet, stop and message us there first."
   },

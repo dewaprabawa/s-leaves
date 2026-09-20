@@ -1,10 +1,11 @@
 import type { Metadata } from "next"
+import SafetyTrustSection from "@/components/SafetyTrustSection"
 import TransfersListClient from "@/components/TransfersListClient"
 import { TRANSFERS } from "@/data/transfers"
 
 export const metadata: Metadata = {
   title: "Private Airport Transfers",
-  description: "Private Bali airport transfers from IDR 700,000. English-speaking drivers, flat rates, and flight tracking. Pair with ATV, rafting, or cycling adventures in Ubud.",
+  description: "Private Bali airport transfers from IDR 700,000. Licensed English-speaking drivers, inspected cars, flat rates, and flight tracking. Pair with ATV, rafting, or cycling in Ubud.",
   alternates: {
     canonical: "/transfers",
   },
@@ -38,11 +39,14 @@ export default function TransfersPage() {
           </h1>
           <p className="text-base md:text-lg text-brand-green-light leading-relaxed max-w-2xl">
             Arrive in style and comfort. Enjoy a direct, private transfer from Ngurah Rai Bali Airport
-            (DPS) to your hotel from <strong>IDR 700,000</strong>. Includes toll fees, parking, and a professional driver.
+            (DPS) to your hotel from <strong>IDR 700,000</strong>. Includes toll fees, parking, and a
+            licensed professional driver in an inspected private car.
           </p>
         </header>
 
         <TransfersListClient initialTransfers={TRANSFERS as any} />
+
+        <SafetyTrustSection compact />
       </div>
     </main>
   )

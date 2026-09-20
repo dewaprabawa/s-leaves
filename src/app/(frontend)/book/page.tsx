@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { MessageCircle } from "lucide-react"
 import AntiScamSection from "@/components/AntiScamSection"
+import SafetyTrustSection from "@/components/SafetyTrustSection"
 import BookSalesCheckout from "@/components/BookSalesCheckout"
 import { ADVENTURES, getAdventureListPrice } from "@/data/adventures"
 import {
@@ -227,6 +228,7 @@ export default async function BookPage({ searchParams }: Props) {
           highlightCultureCombo={highlightCultureCombo}
         />
 
+        <SafetyTrustSection compact />
         <AntiScamSection compact />
 
         <section className="mt-16 md:mt-20 rounded-3xl bg-brand-green text-sand p-8 md:p-12 text-center space-y-4">

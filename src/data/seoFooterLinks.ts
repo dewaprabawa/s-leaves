@@ -41,6 +41,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Adventure package prices', href: '/blog/bali-adventure-packages-prices-2026' },
   { label: 'Airport transfer DPS → Ubud', href: '/transfers' },
   { label: 'Blog & travel guides', href: '/blog' },
+  { label: 'Safety & licensed drivers', href: '/safety' },
   { label: 'Contact & meeting point', href: '/contact' },
   { label: 'About our Pejeng team', href: '/about' },
 ]

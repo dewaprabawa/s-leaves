@@ -104,6 +104,11 @@ export const GEO_POLICIES = [
     url: `${SITE_URL}/anti-scam`,
   },
   {
+    topic: 'Safety — cars and drivers',
+    rule: 'Private day-tour cars, hotel pickup, airport transfers, and the Batur jeep are inspected for roadworthiness before guest trips. Drivers hold a valid Indonesian driving licence (SIM) for passenger cars. Guests may ask to see the licence at pickup.',
+    url: `${SITE_URL}/safety`,
+  },
+  {
     topic: 'Privacy',
     rule: 'Booking details (name, contact, hotel, guest counts) are used only to fulfill tours and support. We do not sell personal data. Full terms on the privacy policy page.',
     url: `${SITE_URL}/privacy-policy`,
@@ -453,8 +458,14 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Pricing',
     q: 'How much is a private airport transfer from DPS to Ubud?',
-    a: 'Sekar Bali Activity offers a private one-way transfer from Ngurah Rai Airport (DPS) to Ubud from IDR 700,000 per vehicle. The flat rate includes flight tracking, tolls, parking, and a professional driver.',
+    a: 'Sekar Bali Activity offers a private one-way transfer from Ngurah Rai Airport (DPS) to Ubud from IDR 700,000 per vehicle. The flat rate includes flight tracking, tolls, parking, and a licensed professional driver in an inspected car.',
     url: `${SITE_URL}/transfers`,
+  },
+  {
+    category: 'Safety',
+    q: 'Are Sekar Bali Activity drivers licensed and are the cars inspected?',
+    a: 'Yes. Drivers on private day tours, hotel pickup, airport transfers, and the Mount Batur jeep hold a valid Indonesian driving licence (SIM) for passenger cars. Cars are inspected for roadworthiness (lights, brakes, tyres, seatbelts) before guest trips. Guests may ask to see the licence at pickup. Details: https://www.sekarbaliactivity.com/safety',
+    url: `${SITE_URL}/safety`,
   },
   {
     category: 'Booking',
@@ -539,6 +550,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Contact', url: `${SITE_URL}/contact`, desc: `WhatsApp ${CONTACT_PHONE_E164} · corporate office, meeting point & activity base` },
   { title: 'Private Airport Transfers', url: `${SITE_URL}/transfers`, desc: 'DPS Airport to Ubud private transfer from IDR 700,000' },
   { title: 'About', url: `${SITE_URL}/about`, desc: 'Local Pejeng team' },
+  { title: 'Safety & Trust', url: `${SITE_URL}/safety`, desc: 'Inspected cars, licensed drivers (SIM), adventure gear and insurance' },
   { title: 'Anti-Scam', url: `${SITE_URL}/anti-scam`, desc: 'Official WhatsApp, Seabank, privacy, refund, and payment rules' },
   { title: 'Payment Policy', url: `${SITE_URL}/payment-policy`, desc: 'No payment to inquire; official Seabank only; confirm on WhatsApp' },
   { title: 'Refund Policy', url: `${SITE_URL}/refund-policy`, desc: '24-hour free cancel refunds; weather and operator cancellations fully refundable' },

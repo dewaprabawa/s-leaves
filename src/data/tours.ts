@@ -360,7 +360,8 @@ Warm layer (it is cold on the rim before sunrise), closed shoes, phone/camera, a
       "Optional Kintamani coffee plantation stop on the way back",
     ],
     included: [
-      "Private 4×4 jeep + experienced local driver",
+      "Private 4×4 jeep + licensed local driver (valid Indonesian SIM)",
+      "Inspected jeep (roadworthiness check before the trip)",
       "Hotel pickup & drop-off",
       "Hot drink on the way up",
       "Kintamani / Mount Batur area entrance fee",
@@ -1294,7 +1295,12 @@ This is a private car and driver, not a shared minibus — so you can linger lon
       "Private car — pace set by you, not a group schedule",
       "English-speaking driver for the full 10 hours",
     ],
-    included: ["Private car & transport for 10 hours", "English-speaking driver", "Mineral water"],
+    included: [
+      "Private car & transport for 10 hours",
+      "English-speaking driver with a valid Indonesian licence (SIM)",
+      "Inspected private car (roadworthiness check before the trip)",
+      "Mineral water",
+    ],
     notIncluded: ["Entrance fees (Palace, rice terraces, Bali Swing if added)", "Lunch", "Personal expenses", "Gratuities"],
     itinerary: [
       {
@@ -1382,7 +1388,12 @@ If your schedule is tight — an early flight, a late arrival, or a full day alr
       "Private car — 6 hours total, ideal for tight schedules",
       "English-speaking driver",
     ],
-    included: ["Private car & transport for 6 hours", "English-speaking driver", "Mineral water"],
+    included: [
+      "Private car & transport for 6 hours",
+      "English-speaking driver with a valid Indonesian licence (SIM)",
+      "Inspected private car (roadworthiness check before the trip)",
+      "Mineral water",
+    ],
     notIncluded: ["Entrance fees (temples, Tanah Lot)", "Dinner", "Personal expenses", "Gratuities"],
     itinerary: [
       {

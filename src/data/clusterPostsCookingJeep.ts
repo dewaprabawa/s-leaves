@@ -10,7 +10,7 @@ export const COOKING_JEEP_CLUSTER_POSTS = [
     author: 'Sekar Bali Activity',
     image: '/images/cooking/buffet-spread.jpg',
     content: `
-**Is a cooking class in Ubud worth it in 2026?** Yes — if you want a capped, hands-on village kitchen rather than a hotel demo. [Tumang Bali Cooking Class](/tours/balinese-cooking-class) listed by Sekar Bali Activity is promo **IDR 450,000 per person** (was IDR 506,370) for the shared class: **10+ dishes**, **max 8 guests**, Chef **Wayan Suryana**, English instruction, and **complimentary Ubud-area hotel pickup**. Private kitchen is **IDR 633,090** (1 guest) or **IDR 1,266,180** (2 guests).
+**Is a cooking class in Ubud worth it in 2026?** Yes — if you want a capped, hands-on village kitchen rather than a hotel demo. [Tumang Bali Cooking Class](/tours/balinese-cooking-class) listed by Sekar Bali Activity is promo **IDR 450,000 per person** (was IDR 506,370) for the shared class: **10+ dishes**, **max 8 guests**, Chef **Wayan Suryana**, English instruction, and **complimentary Ubud-area hotel pickup**. Private kitchen is **IDR 1,000,000 per person** (**IDR 1,000,000** for 1 guest or **IDR 2,000,000** for 2 guests).
 
 > **Key Takeaways**
 > - Shared promo **IDR 450,000** / person · was **IDR 506,370** · max **8**
@@ -24,8 +24,8 @@ export const COOKING_JEEP_CLUSTER_POSTS = [
 | Option | Price (IDR) | What’s in the rate |
 | --- | --- | --- |
 | Shared morning or afternoon | **450,000** promo | 10+ dishes, max 8, Ubud pickup, rice-field walk; market tour on AM only |
-| Private (1 guest) | **633,090** | Exclusive kitchen + same Ubud pickup rule |
-| Private (2 guests) | **1,266,180** total | Exclusive kitchen for the couple |
+| Private (1 guest) | **1,000,000** | Exclusive kitchen + same Ubud pickup rule |
+| Private (2 guests) | **2,000,000** total | Exclusive kitchen for the couple |
 
 Sekar Bali Activity books Tumang on one WhatsApp thread with cycling and other Ubud days. No deposit is required to inquire.
 
@@ -107,8 +107,8 @@ Pickup from Canggu, Seminyak, or south Bali is a transfer quote — same rule as
 | Option | IDR |
 | --- | --- |
 | Shared (veg or standard) | **450,000** promo / person |
-| Private 1 guest | **633,090** |
-| Private 2 guests | **1,266,180** total |
+| Private 1 guest | **1,000,000** |
+| Private 2 guests | **2,000,000** total |
 
 Worth-it context: [Cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it).
 

@@ -1035,11 +1035,11 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
     author: "Sekar Bali Activity Team",
     image: "/images/cooking/stovetop-class.jpg",
     content: `
-**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Suryana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo **IDR 450,000** / person (was IDR 506,370); private from **IDR 633,090**. TripAdvisor Traveler’s Choice 2026.
+**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Suryana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo **IDR 450,000** / person (was IDR 506,370); private **IDR 1,000,000** per person. TripAdvisor Traveler’s Choice 2026.
 
 > **Key Takeaways**
 > - Shared class promo: **IDR 450,000** / person · max **8** guests · Ubud pickup included  
-> - Private: **IDR 633,090** (1) · **IDR 1,266,180** (2)  
+> - Private: **IDR 1,000,000** / person · **IDR 2,000,000** for 2  
 > - Morning = market tour + kitchen; afternoon pairs well with Pejeng ricefield cycling  
 > - Fully hands-on stations — not a hotel demo  
 > - Book via Sekar Bali Activity WhatsApp — no upfront payment to inquire  
@@ -1075,8 +1075,8 @@ After cooking, the group sits family-style and eats what everyone prepared — c
 | Option | Price | Notes |
 | --- | --- | --- |
 | Shared morning / afternoon | **IDR 450,000** promo / person | Max 8 · Ubud pickup |
-| Private (1 guest) | **IDR 633,090** | Exclusive kitchen |
-| Private (2 guests) | **IDR 1,266,180** | Total for two |
+| Private (1 guest) | **IDR 1,000,000** | Exclusive kitchen |
+| Private (2 guests) | **IDR 2,000,000** | Total for two |
 
 Price verdict: [Is a cooking class in Ubud worth it?](/blog/cooking-class-ubud-price-2026-worth-it). Pair with cycling the same day: [Cycling + Tumang cooking itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary). Operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud).
 
@@ -1464,7 +1464,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000 (IDR 450,000 for 2+)**, **Canyon Tubing IDR 500,000 (IDR 450,000 for 2+)**, **Ubud Ricefield Cycling Tour IDR 750,000**, **Mount Batur private jeep IDR 950,000 for 2 (minimum) / from IDR 750,000 per person for 3+** (optional hot spring +IDR 150,000 with ticket), **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Luwak Coffee Plantation IDR 800,000** (min 3 guests; transport not included), **Full Day Ubud Tour from IDR 600,000**, and **Half Day Ubud & Tanah Lot from IDR 450,000**.
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000 (IDR 450,000 for 2+)**, **Canyon Tubing IDR 500,000 (IDR 450,000 for 2+)**, **Ubud Ricefield Cycling Tour IDR 750,000**, **Mount Batur private jeep IDR 950,000 for 2 (minimum) / from IDR 750,000 per person for 3+** (optional hot spring +IDR 150,000 with ticket), **Tumang Bali Cooking Class promo from IDR 450,000** (shared) or **private IDR 1,000,000 per person** (Ubud pickup included), **Luwak Coffee Plantation IDR 800,000** (min 3 guests; transport not included), **Full Day Ubud Tour from IDR 600,000**, and **Half Day Ubud & Tanah Lot from IDR 450,000**.
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
@@ -1485,7 +1485,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Canyon Tubing | IDR 500,000 · 450,000 for 2+ | person | [Canyon Tubing](/tours/canyon-tubing) |
 | Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
 | Mount Batur private jeep | IDR 950,000 (2, min) · 750,000 (3+) | person, private 4×4 | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
-| Tumang Bali Cooking Class | IDR 450,000 promo | person shared | [Cooking Class](/tours/balinese-cooking-class) |
+| Tumang Bali Cooking Class | IDR 450,000 promo · private 1,000,000 / person | person | [Cooking Class](/tours/balinese-cooking-class) |
 | Tirta Empu Purification (Melukat) | IDR 1,200,000 | person / private · Tirta Empul or Beji · breakfast included | [Tirta Empu Melukat](/tours/tirta-empu-purification) |
 | Luwak Coffee Plantation (Umah Kuno) | IDR 800,000 | person (min 3) | [Luwak Coffee](/tours/luwak-coffee-plantation) |
 | Full Day Ubud Tour | from IDR 600,000 | private car | [Full Day Ubud](/tours/full-day-ubud-tour) |
@@ -1710,7 +1710,7 @@ Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture 
 > - Competitor-style combo day: **rice paddy cycling** first, **Tumang cooking class** in the afternoon
 > - Cycling: **IDR 750,000** / person · free Ubud pickup · bike, helmet, guide, lunch, insurance
 > - Tumang cooking: **IDR 450,000** promo / person · Ubud pickup included · 10+ dishes · max 8 guests
-> - Private Tumang kitchen: **IDR 633,090** (1 guest) or **IDR 1,266,180** (2 guests)
+> - Private Tumang kitchen: **IDR 1,000,000** per person (**IDR 2,000,000** for 2 guests)
 > - Route is **gentle Pejeng village / countryside cycling** — not a crowded Tegallalang photo stop
 > - Book both on WhatsApp in one message for the same date — no upfront payment to inquire
 
@@ -1758,7 +1758,7 @@ Prefer a morning Tumang class with market tour? Book cooking first, then a light
 | --- | --- | --- |
 | Ubud Ricefield Cycling Tour | **IDR 750,000** / person | Tier rates for 2+ and 3+ groups |
 | Tumang Bali Cooking Class (shared) | **IDR 450,000** promo / person | Ubud pickup included |
-| Tumang private (1 guest) | **IDR 633,090** | Exclusive kitchen |
+| Tumang private (1 guest) | **IDR 1,000,000** | Exclusive kitchen · **IDR 2,000,000** for 2 |
 | Same-day combo (both) | Ask via WhatsApp | We confirm availability for one date |
 
 Competitor combo packages online often list ~USD 90–130. Our transparent IDR rates let you book **direct via WhatsApp** without aggregator markups.

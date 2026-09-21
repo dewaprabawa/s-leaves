@@ -20,6 +20,7 @@ import { SITE_NAME, SITE_URL } from "@/lib/seo"
 import { formatIdr } from "@/lib/whatsapp"
 import {
   COOKING_CLASS_PRICE_IDR,
+  COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
 } from "@/data/cultureSales"
 import {
@@ -637,7 +638,8 @@ export default async function TourPage({ params }: Props) {
                       <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
                         {formatIdr(COOKING_CLASS_STANDARD_PRICE_IDR)}
                       </span>
-                      Promo {formatIdr(COOKING_CLASS_PRICE_IDR)} / person
+                      Promo {formatIdr(COOKING_CLASS_PRICE_IDR)} / person · private{" "}
+                      {formatIdr(COOKING_CLASS_PRIVATE_SOLO_IDR)} / person
                     </span>
                   ) : isJeepTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">

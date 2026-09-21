@@ -65,6 +65,10 @@ function isAtvTour(tour: Tour) {
   return tour.slug === "bali-atv-adventure"
 }
 
+function isSwingTour(tour: Tour) {
+  return tour.slug === "swing-heaven-bali"
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const tour = getTourBySlug(slug)
@@ -340,6 +344,46 @@ function buildTourSchema(tour: Tour) {
             "@type": "Offer",
             name: "Tandem ATV Ride",
             price: String(TIER_PRICES_IDR["tandem-atv"][0]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+        ],
+      },
+    }
+  }
+
+  if (isSwingTour(tour)) {
+    return {
+      ...base,
+      touristType: ["Couples", "Families", "Photographers", "Adventure seekers"],
+      location: {
+        "@type": "Place",
+        name: tour.venue ?? "Swing Heaven Bali, Bongkasa",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(TIER_PRICES_IDR["swing-heaven"][0]),
+        highPrice: String(TIER_PRICES_IDR["swing-heaven-lunch"][0]),
+        priceCurrency: "IDR",
+        offerCount: 2,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Swing Heaven Package (no lunch)",
+            price: String(TIER_PRICES_IDR["swing-heaven"][0]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "Swing Heaven Package + lunch",
+            price: String(TIER_PRICES_IDR["swing-heaven-lunch"][0]),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,

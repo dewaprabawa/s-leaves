@@ -6,12 +6,12 @@ export const ACTIVITY_CLUSTER_POSTS = [
     title: 'Things to Do Near Ubud 2026: Prices, Pickup & What to Book',
     seoTitle: 'Things to Do Near Ubud 2026 | Prices & Booking',
     excerpt:
-      'Every Sekar Bali Activity near Ubud with 2026 IDR prices — cooking, cycling, ATV, rafting, tubing, Batur jeep, coffee, and private day tours. WhatsApp booking, no deposit.',
+      'Every Sekar Bali Activity near Ubud with 2026 IDR prices — cooking, cycling, ATV, rafting, tubing, Swing Heaven, Batur jeep, coffee, and private day tours. WhatsApp booking, no deposit.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/og-cover.jpg',
     content: `
-**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (**IDR 750,000**, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) **IDR 500,000** (**IDR 450,000** for 2+), [canyon tubing](/tours/canyon-tubing) **IDR 500,000** (**IDR 450,000** for 2+), [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+) — **private** sit-in or tracking, sunrise or sunset, optional hot spring **+IDR 150,000** with ticket included, [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 800,000**, min 3), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
+**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (**IDR 750,000**, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) **IDR 500,000** (**IDR 450,000** for 2+), [canyon tubing](/tours/canyon-tubing) **IDR 500,000** (**IDR 450,000** for 2+), [Swing Heaven Bali](/tours/swing-heaven-bali) from **IDR 530,000** (lunch package **IDR 630,000**) in Bongkasa, [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+) — **private** sit-in or tracking, sunrise or sunset, optional hot spring **+IDR 150,000** with ticket included, [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 800,000**, min 3), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
 
 > **Key Takeaways**
 > - Food + village days include **free Ubud pickup** (cooking + cycling)
@@ -30,6 +30,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
 | Tandem ATV | **1,100,000** / bike | 2–4 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
 | Whitewater rafting | **500,000** · **450,000** for 2+ | 3 hrs | IDR 400K or self-meet | [Rafting](/tours/whitewater-rafting) |
 | Canyon tubing | **500,000** · **450,000** for 2+ | 2.5 hrs | IDR 400K or self-meet | [Tubing](/tours/canyon-tubing) |
+| Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | IDR 400K or self-meet Bongkasa | [Swing Heaven](/tours/swing-heaven-bali) |
 | Private Batur jeep | **750,000** (3+) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
 | Umah Kuno Luwak | **800,000** (min 3) | 1.5 hrs | Not included | [Coffee](/tours/luwak-coffee-plantation) |
 | Full day Ubud tour | **600,000** | 10 hrs | Private car | [Full day](/tours/full-day-ubud-tour) |
@@ -52,6 +53,8 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) at **IDR 500,000**, or **IDR 450,000** for 2+ (minimum 2), lunch included. **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float at the same **IDR 500,000 / 450,000 for 2+** — the usual ATV add-on. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
+**[Swing Heaven Bali](/tours/swing-heaven-bali)** is the Bongkasa jungle park over the Ayung River — **IDR 530,000** (tea/coffee/water + insurance) or **IDR 630,000** with lunch, 14 photo spots, own-phone photos. Flying dress hire **IDR 300,000**. It is **not** the Tegallalang rice-terrace swing strip. Guide: [Swing Heaven Ubud](/blog/swing-heaven-bali-ubud-guide).
+
 **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is **your private 4×4** — sit-in (no hike) or **tracking jeep** (jeep + guided trek) at the **same private rates**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m. 2 guests **IDR 950,000** · 3+ **IDR 750,000**. **Meal included.** Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
 ## Coffee & private cars
@@ -71,6 +74,7 @@ Landing late? [DPS → Ubud private transfer](/transfers) from **IDR 700,000** p
 | Mud and photos | [ATV](/tours/bali-atv-adventure) |
 | Splash with a paddle team | [Rafting](/tours/whitewater-rafting) |
 | Easy river float | [Canyon tubing](/tours/canyon-tubing) |
+| Jungle swing photos (not Tegallalang) | [Swing Heaven](/tours/swing-heaven-bali) |
 | Sunrise or sunset without the summit hike | [Private Batur jeep](/tours/batur-sunrise-jeep-tour) |
 | Ethical coffee, 90 minutes | [Umah Kuno](/tours/luwak-coffee-plantation) |
 | Classic Ubud highlights | [Full-day car](/tours/full-day-ubud-tour) |
@@ -254,6 +258,64 @@ Pairing ideas:
 3. We confirm the **IDR 800,000 × guests** total — **no payment to inquire**
 
 **Ready?** [Book the coffee experience](/tours/luwak-coffee-plantation) or compare every 2026 price in [things to do near Ubud](/blog/things-to-do-near-ubud-2026).
+`,
+  },
+  {
+    slug: 'swing-heaven-bali-ubud-guide',
+    title: 'Swing Heaven Bali near Ubud: Prices, Spots & Pickup 2026',
+    seoTitle: 'Swing Heaven Bali Ubud | 530K Jungle Swing',
+    excerpt:
+      'Swing Heaven Bali in Bongkasa from IDR 530,000 — 14 jungle photo spots, lunch package 630K, dress hire 300K. Not Tegallalang. WhatsApp booking.',
+    publishedAt: '2026-09-21',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/swing-heaven.jpg',
+    content: `
+**How much is Swing Heaven Bali near Ubud?** Sekar Bali Activity books [Swing Heaven](/tours/swing-heaven-bali) at **IDR 530,000** per person for the jungle-swing package, or **IDR 630,000** with lunch. The park sits on **Jl. Tangga Yuda, Bongkasa** (Abiansemal) over the **Ayung River valley** — a short drive from Ubud. It is **not** the Tegallalang rice-terrace swing strip. **Hotel pickup is IDR 400,000** or self-meet at the park for free. Photos are on **your own phone**. Book on WhatsApp — **no payment to inquire**.
+
+> **Key Takeaways**
+> - **IDR 530,000** package · **IDR 630,000** with lunch
+> - 14 swings, nests, jungle beds, and Stairs 2 Heaven
+> - Insurance + tea/coffee/water included
+> - Flying dress hire **IDR 300,000** · koi pond boat **IDR 300,000** (lobby availability)
+> - Pickup **IDR 400,000** or free self-meet in Bongkasa
+> - Ticket **non-refundable** once issued · rain = **7-day voucher**
+
+## What you get in the 530K
+
+| Included | Not included |
+| --- | --- |
+| All listed jungle swings and photo spots | Hotel pickup (optional IDR 400,000) |
+| On-site insurance | Flying dress (IDR 300,000) |
+| Tea, coffee, or water | Professional photographer |
+| Lunch only on the **IDR 630,000** package | Koi pond boat (IDR 300,000, confirm lobby) |
+
+Spots on the 2026 board: Tandem Bench Swing, Single Swings, Egg Nest, Adrenaline Swing, Libra Swings, Jumping Swing, Romantic Bed Swing, Onion Nests, Jungle Bed, Titanic, Stone, Heart Nests, Bird Nests, Stairs 2 Heaven.
+
+Hours: **08:00–17:00 daily**.
+
+## Swing Heaven vs Tegallalang
+
+Tegallalang parks sit on the rice-terrace road north of Ubud — queues, extra photo packages, and bus-tour traffic. **Swing Heaven is a Bongkasa jungle park** over the Ayung River. If you want the rice-terrace Instagram stop on a private car day, that is still an optional extra on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) — not this ticket.
+
+Honest take: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it).
+
+## Pickup and pairing
+
+Self-meet at **Jl. Tangga Yuda, Bongkasa**. Grab from central Ubud is often cheaper than our **IDR 400,000** hotel collect if you only need a one-way drop. Same-day pairing with [ATV at All New Bali Adventure](/tours/bali-atv-adventure) (also Abiansemal) or [Ayung River rafting](/tours/whitewater-rafting) is common — ask WhatsApp for timing.
+
+## Weather and refunds
+
+Once the venue ticket is issued it is **non-refundable**. If rain closes the park, Swing Heaven issues a **voucher valid 7 days**. Cancel **24 hours before we issue the ticket** and our [cancellation policy](/cancellation-policy) still applies.
+
+Card payments **at the park** add **3%**. WhatsApp bookings with us use the published bank transfer on the invoice.
+
+## How to book
+
+1. Open [Swing Heaven Bali](/tours/swing-heaven-bali)
+2. WhatsApp **date, guest count, lunch or no lunch, hotel area, dress hire yes/no**
+3. We confirm the IDR total — **no deposit to ask**
+
+**Ready?** Book the [Swing Heaven money page](/tours/swing-heaven-bali) or scan every 2026 price in [things to do near Ubud](/blog/things-to-do-near-ubud-2026).
 `,
   },
 ]

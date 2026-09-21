@@ -11,7 +11,7 @@ export type ArticleCta = {
 
 const DEFAULT_CTA: ArticleCta = {
   headline: 'Ready to book a Ubud-area activity?',
-  body: 'Clear IDR, WhatsApp confirmation, no payment to inquire. Cooking, cycling, ATV, rafting, jeep, coffee, and private day tours.',
+    body: 'Clear IDR, WhatsApp confirmation, no payment to inquire. Cooking, cycling, ATV, rafting, Swing Heaven, jeep, coffee, and private day tours.',
   primaryHref: '/book',
   primaryLabel: 'Book on WhatsApp',
   secondaryHref: '/experiences',
@@ -241,11 +241,27 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-adventure-packages-prices-2026': {
     headline: 'Compare IDR and book the one you want',
-    body: 'ATV, rafting, tubing, cycling, jeep, cooking, coffee, and day tours — one WhatsApp inbox.',
+    body: 'ATV, rafting, tubing, Swing Heaven, cycling, jeep, cooking, coffee, and day tours — one WhatsApp inbox.',
     primaryHref: '/book',
     primaryLabel: 'Book with a price',
     secondaryHref: '/experiences',
     secondaryLabel: 'Open the catalog',
+  },
+  'swing-heaven-bali-ubud-guide': {
+    headline: 'Book Swing Heaven Bali from IDR 530K',
+    body: 'Bongkasa jungle swings — lunch package 630K, dress hire 300K. WhatsApp booking, no deposit to inquire.',
+    primaryHref: '/tours/swing-heaven-bali',
+    primaryLabel: 'View Swing Heaven',
+    secondaryHref: '/book?activity=swing-heaven',
+    secondaryLabel: 'WhatsApp checkout',
+  },
+  'is-bali-swing-worth-it': {
+    headline: 'Want the jungle-swing photo? Book Swing Heaven',
+    body: 'Bongkasa park from IDR 530,000 — not Tegallalang. Lunch package and flying dress optional.',
+    primaryHref: '/tours/swing-heaven-bali',
+    primaryLabel: 'Book Swing Heaven',
+    secondaryHref: '/blog/swing-heaven-bali-ubud-guide',
+    secondaryLabel: 'Read the 2026 guide',
   },
   'rafting-vs-tubing-vs-atv-near-ubud': {
     headline: 'Choose splash, float, or mud — then book',

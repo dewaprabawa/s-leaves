@@ -24,6 +24,7 @@ export type ActivityKeywordSlug =
   | 'tirta-empu-purification'
   | 'balinese-cooking-class'
   | 'batur-sunrise-jeep-tour'
+  | 'swing-heaven-bali'
 
 export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'bali-atv-adventure': [
@@ -135,6 +136,18 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
     'Private Kintamani Day',
     'Batur hot spring jeep tour',
   ],
+  'swing-heaven-bali': [
+    'Swing Heaven Bali',
+    'Swing Heaven Ubud',
+    'Bali jungle swing Bongkasa',
+    'Bali swing Ayung River',
+    'jungle swing near Ubud',
+    'Bali swing with lunch',
+    'flying dress Bali swing',
+    'Swing Heaven package price',
+    'Bali swing photo spots',
+    'Bongkasa swing park',
+  ],
 }
 
 export const COMBO_KEYWORDS = [
@@ -156,6 +169,7 @@ export const SITE_KEYWORDS: string[] = [
   ...ACTIVITY_KEYWORDS['luwak-coffee-plantation'].slice(0, 2),
   ...ACTIVITY_KEYWORDS['full-day-ubud-tour'].slice(0, 2),
   ...ACTIVITY_KEYWORDS['half-day-ubud-tanah-lot-tour'].slice(0, 2),
+  ...ACTIVITY_KEYWORDS['swing-heaven-bali'].slice(0, 3),
   'cycling cooking class Ubud',
   'things to do near Ubud',
   'Bali travel activities Ubud',
@@ -175,6 +189,7 @@ export const BOOK_PAGE_KEYWORDS: string[] = [
   'Balinese cooking class Ubud',
   'Ubud ricefield cycling tour',
   'Private Mount Batur jeep tour',
+  'Swing Heaven Bali',
   'private melukat Bali',
   'book Bali adventure WhatsApp',
   'all-inclusive ATV Bali',
@@ -251,6 +266,8 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'how-to-spot-ethical-luwak-coffee-in-bali': 'luwak-coffee-plantation',
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'half-day-ubud-tanah-lot-tour',
+  'swing-heaven-bali-ubud-guide': 'swing-heaven-bali',
+  'is-bali-swing-worth-it': 'swing-heaven-bali',
   'things-to-do-near-ubud-2026': 'site',
   'bali-adventure-packages-prices-2026': 'site',
   'ubud-hotel-pickup-bali-adventures-explained': 'site',

@@ -1075,26 +1075,40 @@ Message WhatsApp with your temple stop (if any), preferred adventure, and hotel 
   {
     slug: "is-bali-swing-worth-it",
     title: "Is the Bali Swing Worth It? An Honest Review",
-    excerpt: "You have seen the photos all over Instagram, but is the famous Bali Swing actually worth your time and money? Here is an honest local review.",
+    excerpt: "You have seen the photos all over Instagram, but is the famous Bali Swing actually worth your time and money? Here is an honest local review — including Swing Heaven in Bongkasa from IDR 530,000.",
     publishedAt: "2026-08-06",
     author: "Sekar Bali Activity Team",
     image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
     content: `
-**Is the Bali Swing worth the money?** Whether the Bali Swing is worth the cost depends entirely on your priority for social media photography. For travelers focused on capturing iconic, highly-curated Instagram content, the $30-$40 entry fee is justified by the sweeping jungle backdrops, professional photographers, and long-flowing dress rentals available on-site. However, for travelers seeking authentic cultural experiences, the long queues (often exceeding an hour) and highly commercialized atmosphere can be disappointing. If you choose to experience the swings overlooking the Tegalalang Rice Terraces, it is best combined with a broader cultural itinerary, such as our [Full Day Ubud Tour](/#adventures), which balances the modern swing photo-op with authentic visits to the Ubud Royal Palace and local art markets.
+**Is the Bali Swing worth the money?** It depends on whether you want curated jungle photos or a quiet cultural day. For Instagram-style shots, a dedicated swing park is the product: harnessed high swings, nest frames, and flowing dresses. Sekar Bali Activity books **[Swing Heaven Bali](/tours/swing-heaven-bali)** in **Bongkasa** (Ayung River valley) from **IDR 530,000** (lunch package **IDR 630,000**) — not the Tegallalang rice-terrace strip. If you want village paths and lunch without a photo queue, book [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) instead.
 
-### What to Expect at the Bali Swing
-The "Bali Swing" is not just one swing; it is an entire industry. There are dozens of swing parks clustered around the Tegalalang and Bongkawan areas. 
+> **Key Takeaways**
+> - Book Swing Heaven if photos are the goal — **IDR 530,000** / **IDR 630,000** with lunch
+> - It is in **Bongkasa**, not Tegallalang
+> - Dress hire **IDR 300,000** · photos on **your phone**
+> - Peak-season waits still happen; go early
+> - Skip it if you want culture over content — cycling + cooking is the better day
 
-**The Pros:**
-- **Incredible Photos:** The operators know exactly how to push the swings and angle the cameras for the perfect shot.
-- **Safety:** The major swing parks use professional climbing harnesses and rigorous safety standards.
+### Two different “Bali Swing” products
 
-**The Cons:**
-- **The Wait:** During peak season, you might wait over an hour just for 3 minutes on the main swing.
-- **The Cost:** It is one of the more expensive activities in Ubud when you factor in dress rentals and photo packages.
+The phrase “Bali Swing” is an industry, not one park. Dozens of venues sit around **Tegallalang**. **Swing Heaven** is a separate jungle park on **Jl. Tangga Yuda, Bongkasa**. We sell the Bongkasa park because the IDR is published, lunch is optional, and it pairs with ATV in the same Abiansemal district.
 
-### The Verdict
-If you are traveling with teenagers, on a honeymoon, or simply love photography, do it! It is a fun, thrilling experience. Just be sure to go early in the morning to beat the crowds and the heat.
+**The pros (Swing Heaven):**
+- Listed photo spots (swings, nests, jungle beds, Stairs 2 Heaven) in one ticket
+- Insurance and a drink included; lunch package on the board
+- Short drive from Ubud; optional IDR 400,000 hotel pickup
+
+**The cons:**
+- It is still a commercial photo park — not a temple or a village
+- Waits grow in peak hours
+- Ticket is non-refundable once issued; rain days get a 7-day voucher
+- No professional photographer in the rate
+
+### The verdict
+
+If you are travelling with teens, on a honeymoon, or you specifically want the jungle-swing photo, **do it at Swing Heaven** and go in the morning. Book the [Swing Heaven money page](/tours/swing-heaven-bali) or read the [2026 price and pickup guide](/blog/swing-heaven-bali-ubud-guide). If you only want rice terraces without a swing ticket, walk Tegalalang on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) and skip the extra.
+
+**Book Swing Heaven** — [from IDR 530,000](/tours/swing-heaven-bali).
 `
   },
   {
@@ -1606,6 +1620,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Tandem ATV | IDR 1,100,000 | 2 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
 | Whitewater Rafting | IDR 500,000 · 450,000 for 2+ | person | [Whitewater Rafting](/tours/whitewater-rafting) |
 | Canyon Tubing | IDR 500,000 · 450,000 for 2+ | person | [Canyon Tubing](/tours/canyon-tubing) |
+| Swing Heaven Bali | IDR 530,000 · 630,000 with lunch | person | [Swing Heaven](/tours/swing-heaven-bali) |
 | Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
 | Mount Batur private jeep | IDR 950,000 (2, min) · 750,000 (3+) | person, private 4×4 | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Tumang Bali Cooking Class | IDR 450,000 promo · private 1,000,000 / person | person | [Cooking Class](/tours/balinese-cooking-class) |
@@ -1620,7 +1635,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 - **Tumang Bali Cooking Class:** Complimentary Ubud-area pickup (shared & private)
 - **Tirta Empu Purification (Melukat):** Private Ubud-area shuttle included in IDR 1,200,000 / person
 - **Private Mount Batur jeep:** Hotel pickup included island-wide (not the IDR 400,000 add-on)
-- **ATV, rafting, tubing:** Pickup available; **IDR 400,000** hotel pickup charge applies
+- **ATV, rafting, tubing, Swing Heaven:** Pickup available; **IDR 400,000** hotel pickup charge applies (self-meet at All New Bali Adventure or Swing Heaven Bongkasa is free)
 - **Luwak Coffee Plantation:** Transport not included — arrange your own ride to Tampaksiring / Umah Kuno
 - **Full Day / Half Day private tours:** Private car & driver included in the from-price; entrance fees extra
 

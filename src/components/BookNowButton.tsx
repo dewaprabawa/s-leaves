@@ -3,6 +3,11 @@
 import { useState } from "react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { getListPrice, JEEP_HOT_SPRING_IDR } from "@/lib/pricing"
+import {
+  SWING_HEAVEN_ADDONS,
+  SWING_HEAVEN_LUNCH_PRICE_IDR,
+  SWING_HEAVEN_VENUE,
+} from "@/data/swingHeaven"
 
 const JEEP_HOT_SPRING_ADDON = {
   id: "hotspring",
@@ -56,6 +61,40 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     kidPrice: 450000,
     minPax: 1,
     meetsAtArena: true,
+  },
+  {
+    id: "swing-heaven",
+    title: "Swing Heaven Package",
+    times: ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00"],
+    adultPrice: getListPrice("swing-heaven"),
+    kidPrice: null,
+    minPax: 1,
+    pricingActivityId: "swing-heaven",
+    selfMeet: {
+      name: SWING_HEAVEN_VENUE.name,
+      address: SWING_HEAVEN_VENUE.address,
+      mapUrl: SWING_HEAVEN_VENUE.mapUrl,
+    },
+    optionalAddonsIntro:
+      "Optional extras at Swing Heaven — flying dress hire and the koi pond boat photo (confirm lobby availability). Neither includes a professional photographer.",
+    optionalAddons: [SWING_HEAVEN_ADDONS.dress, SWING_HEAVEN_ADDONS.koiPond],
+  },
+  {
+    id: "swing-heaven-lunch",
+    title: "Swing Heaven Package + Lunch",
+    times: ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00"],
+    adultPrice: SWING_HEAVEN_LUNCH_PRICE_IDR,
+    kidPrice: null,
+    minPax: 1,
+    pricingActivityId: "swing-heaven-lunch",
+    selfMeet: {
+      name: SWING_HEAVEN_VENUE.name,
+      address: SWING_HEAVEN_VENUE.address,
+      mapUrl: SWING_HEAVEN_VENUE.mapUrl,
+    },
+    optionalAddonsIntro:
+      "Optional extras at Swing Heaven — flying dress hire and the koi pond boat photo (confirm lobby availability). Lunch is already in this package.",
+    optionalAddons: [SWING_HEAVEN_ADDONS.dress, SWING_HEAVEN_ADDONS.koiPond],
   },
   {
     id: "cycling",

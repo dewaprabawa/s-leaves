@@ -6,6 +6,8 @@ export const ACTIVITY_TO_TOUR_SLUG: Record<string, string> = {
   cycling: "ubud-ricefield-cycling-tour",
   "jeep-sunrise": "batur-sunrise-jeep-tour",
   "kintamani-day": "batur-sunrise-jeep-tour",
+  "swing-heaven": "swing-heaven-bali",
+  "swing-heaven-lunch": "swing-heaven-bali",
 }
 
 export function getTourSlugForActivity(activityId: string): string | undefined {

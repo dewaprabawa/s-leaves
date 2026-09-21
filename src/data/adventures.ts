@@ -108,6 +108,26 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     minPax: 1,
   },
   {
+    id: "swing-heaven",
+    name: "Swing Heaven Bali",
+    tagline: "Jungle swings over the Ayung valley",
+    paxLabel: "Per person",
+    description:
+      "Swing Heaven in Bongkasa near Ubud — 14 jungle swings, nests, and photo spots overlooking the Ayung River. Package from IDR 530,000 (insurance + tea/coffee/water) or IDR 630,000 with lunch. Optional flying dress hire IDR 300,000. Not the Tegallalang swing strip.",
+    highlights: [
+      "14 swings, nests & jungle beds",
+      "Insurance + tea/coffee/water",
+      "Lunch package +IDR 100,000",
+      "Bongkasa near Ubud — own-phone photos",
+    ],
+    duration: "1.5–2.5 hours",
+    image: "/images/adventures/swing-heaven.jpg",
+    imageAlt: "Swing Heaven Bali jungle swing package near Ubud over the Ayung River valley",
+    tourSlug: "swing-heaven-bali",
+    times: ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00"],
+    minPax: 1,
+  },
+  {
     id: "jeep-sunrise",
     name: "Private Mount Batur Jeep",
     tagline: "Private · tracking · sunrise or sunset",

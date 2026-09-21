@@ -6,7 +6,7 @@ import { SITE_KEYWORDS } from "@/data/activityKeywords"
 
 const TITLE = "All Bali Tours & Activities Near Ubud"
 const DESCRIPTION =
-  "Browse every Sekar Bali Activity experience in one place — Tumang cooking class, Tirta Empu melukat, Pejeng ricefield cycling, ATV, rafting, canyon tubing, private Mount Batur jeep & day tours. Clear IDR pricing, WhatsApp booking, no upfront payment."
+  "Browse every Sekar Bali Activity experience in one place — Tumang cooking class, Tirta Empu melukat, Pejeng ricefield cycling, ATV, rafting, canyon tubing, Swing Heaven jungle swing, private Mount Batur jeep & day tours. Clear IDR pricing, WhatsApp booking, no upfront payment."
 
 export const metadata: Metadata = {
   title: TITLE,

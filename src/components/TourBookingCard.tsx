@@ -36,6 +36,7 @@ const SLUG_TO_ACTIVITY_ID: Record<string, string> = {
   "canyon-tubing": "canyon-tubing",
   "ubud-ricefield-cycling-tour": "cycling",
   "batur-sunrise-jeep-tour": "jeep-sunrise",
+  "swing-heaven-bali": "swing-heaven",
 }
 
 function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
@@ -84,6 +85,7 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
     "jeep-kintamani-day",
     "jeep-kintamani-day-tracking",
   ],
+  "swing-heaven-bali": ["swing-heaven", "swing-heaven-lunch"],
 }
 
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
@@ -234,6 +236,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {props.tourSlug === "bali-atv-adventure" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
+          {props.tourSlug === "swing-heaven-bali" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Lunch package {formatIdr(getListPrice("swing-heaven-lunch"))} · dress hire extra
             </p>
           ) : null}
           {props.tourSlug === "balinese-cooking-class" ? (

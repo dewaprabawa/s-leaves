@@ -20,6 +20,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Single & tandem IDR tiers, inclusions, and pickup fees.',
     },
     {
+      title: 'Single vs tandem ATV price',
+      href: '/blog/tandem-atv-ubud-price',
+      blurb: 'Who should share one bike — 750K single vs 1.1M tandem.',
+    },
+    {
       title: 'All New Bali Adventure arena guide',
       href: '/blog/bali-atv-all-new-bali-adventure-location-guide',
       blurb: 'Self-meet directions to the Sedang activity base.',

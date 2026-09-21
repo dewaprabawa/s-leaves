@@ -46,6 +46,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             'vegetarian cooking class Ubud',
             'Balinese cooking class Ubud',
           ]
+        : post.slug === 'tandem-atv-ubud-price'
+          ? [
+              'tandem ATV Ubud price',
+              'single vs tandem ATV Ubud',
+              'ATV Ubud price',
+              'tandem ATV Bali',
+              'All New Bali Adventure',
+            ]
         : post.slug === 'things-to-do-near-ubud-2026'
           ? [
               'things to do near Ubud',
@@ -109,6 +117,7 @@ export default async function BlogPostPage({ params }: Props) {
     post.slug === 'inside-balinese-cooking-class-pejeng' ||
     post.slug === 'cycling-cooking-class-ubud-full-day-itinerary'
 
+  const isAtvTandemPost = post.slug === 'tandem-atv-ubud-price'
   const isActivityHubPost = post.slug === 'things-to-do-near-ubud-2026'
   const isDayTourPost =
     post.slug === 'full-day-ubud-tour-guide-2026' ||
@@ -161,6 +170,16 @@ export default async function BlogPostPage({ params }: Props) {
             keywords:
               "cooking class Ubud, Tumang Bali Cooking Class, vegetarian cooking class, market tour, free Ubud pickup",
           }
+        : isAtvTandemPost
+          ? {
+              about: {
+                "@type": "TouristTrip",
+                name: "Bali ATV Quad Bike Adventure near Ubud",
+                url: "https://www.sekarbaliactivity.com/tours/bali-atv-adventure",
+              },
+              keywords:
+                "tandem ATV Ubud price, single vs tandem ATV, All New Bali Adventure, Sedang",
+            }
         : isActivityHubPost
           ? {
               about: {

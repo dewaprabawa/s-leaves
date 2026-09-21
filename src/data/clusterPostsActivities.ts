@@ -48,7 +48,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 ## Adventure (mud, river, sunrise)
 
-**[ATV at All New Bali Adventure](/tours/bali-atv-adventure)** is the Sedang jungle mud track — beginner briefing, lunch, gear, insurance. Single from **IDR 750,000**, tandem **IDR 1,100,000**. We are not the Kuber tunnel or Dragon Cave routes. First-timer notes: [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide).
+**[ATV at All New Bali Adventure](/tours/bali-atv-adventure)** is the Sedang jungle mud track — beginner briefing, lunch, gear, insurance. Single from **IDR 750,000**, tandem **IDR 1,100,000**. We are not the Kuber tunnel or Dragon Cave routes. First-timer notes: [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide). Who should share a bike: [single vs tandem ATV price](/blog/tandem-atv-ubud-price).
 
 **[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) at **IDR 500,000**, or **IDR 450,000** for 2+ (minimum 2), lunch included. **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float at the same **IDR 500,000 / 450,000 for 2+** — the usual ATV add-on. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 

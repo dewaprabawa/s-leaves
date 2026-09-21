@@ -65,6 +65,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     primaryHref: '/tours/bali-atv-adventure',
     primaryLabel: 'Book Bali ATV',
   },
+  'tandem-atv-ubud-price': {
+    headline: 'Book single or tandem ATV on WhatsApp',
+    body: 'Say 1 or 2 riders + hotel. Single from IDR 750,000 · tandem IDR 1,100,000 for two. Pickup IDR 400,000 or self-meet. No payment to inquire.',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'WhatsApp Consultation / Book',
+    secondaryHref: '/book?activity=tandem-atv',
+    secondaryLabel: 'Open tandem checkout',
+  },
   'bali-whitewater-rafting-near-ubud-guide': {
     headline: 'Book Class II–III rafting near Ubud',
     body: 'IDR 500,000, or IDR 450,000 for 2+ (min 2). Gear, guide, lunch, and insurance included.',

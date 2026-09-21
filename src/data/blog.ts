@@ -16,6 +16,128 @@ export type BlogPost = {
 export const BLOG_POSTS: BlogPost[] = [
   ...ACTIVITY_CLUSTER_POSTS,
   {
+    slug: 'tandem-atv-ubud-price',
+    title: 'Single vs Tandem ATV Near Ubud: 2026 Price and Who Should Share',
+    seoTitle: 'Tandem ATV Ubud Price | Single vs Share 1.1M',
+    excerpt:
+      'Tandem ATV Ubud is IDR 1,100,000 for two on one bike; single from IDR 750,000. Who should share, pickup IDR 400K vs self-meet, WhatsApp booking.',
+    publishedAt: '2026-09-21',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**How much is a tandem ATV near Ubud, and should you share?** At Sekar Bali Activity a **Tandem ATV is IDR 1,100,000 for two people on one bike**. A **Single ATV starts at IDR 750,000** per rider (IDR 725,000 each for two singles · IDR 700,000 each for 3+). We ride at **All New Bali Adventure** in Sedang, Abiansemal — not a roadside rental. **Hotel pickup is IDR 400,000** or you self-meet at the arena for free. The package is **2–4 hours** with lunch, helmet, boot shoes, and insurance for ages 6–65. Book on WhatsApp — **no payment to inquire**.
+
+> **Key Takeaways**
+> - **Tandem:** IDR **1,100,000** per bike (2 guests share) · more bikes: **1,060,000** / **1,030,000**
+> - **Single:** IDR **750,000** (1) · **725,000** (2) · **700,000** (3+) · child single **700,000**
+> - Two singles cost **IDR 1,450,000** — tandem is cheaper if one guest is happy not to drive
+> - Venue: **All New Bali Adventure**, Jl. Raya Krasan, Sedang — jungle mud + river crossings
+> - Pickup **IDR 400,000** or free self-meet · duration **2–4 hours**
+> - WhatsApp **1 or 2 riders + hotel** — we quote single vs tandem. No deposit to ask
+
+## Quick answer: single or tandem?
+
+| | Single ATV | Tandem ATV |
+| --- | --- | --- |
+| 2026 price | From **IDR 750,000** / rider | **IDR 1,100,000** / bike (2 guests) |
+| Who sits | You steer your own quad | One driver + one passenger |
+| Best for | Thrill, photos of *you* riding, solo guests | Couples, one nervous rider, cheaper pair total |
+| Two-guest total | **IDR 1,450,000** (2 × 725,000) | **IDR 1,100,000** |
+| Pickup | IDR 400,000 or self-meet | Same rule |
+| Duration | 2–4 hours | 2–4 hours |
+
+Book the money page: [Bali ATV Adventure near Ubud](/tours/bali-atv-adventure). Full IDR table: [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026).
+
+## What you actually pay (verified 2026 tiers)
+
+These numbers come from our published ATV list — not a “from” teaser.
+
+**Single ATV** (one rider per bike):
+
+| Riders | Price each (IDR) |
+| --- | --- |
+| 1 | **750,000** |
+| 2 | **725,000** |
+| 3+ | **700,000** |
+| Child single (age-appropriate) | **700,000** |
+
+**Tandem ATV** (price is **per bike**, two people on that bike):
+
+| Tandem bikes | Price per bike (IDR) |
+| --- | --- |
+| 1 bike (2 guests) | **1,100,000** |
+| 2 bikes | **1,060,000** |
+| 3+ bikes | **1,030,000** |
+
+Hotel pickup is **not** in those trail prices. Tick pickup for **IDR 400,000**, or meet us at the arena. Combo with [Wos River canyon tubing](/tours/canyon-tubing) is a same-day option — **confirm combo pricing on WhatsApp** (we do not publish a bundled ATV+tubing SKU on the tour card).
+
+## Is tandem worth it vs two singles?
+
+**Yes, if one of you does not want the throttle.** Tandem is **IDR 350,000 less** than two adult singles at the 2-rider tier (1,100,000 vs 1,450,000). You still get the same briefing, lunch, gear, and mud track.
+
+**No, if both of you want to drive.** Two singles are the honest buy. Sharing a seat looks cheaper until the passenger realises they wanted their own bike. Tell us that on WhatsApp and we book two singles.
+
+We do **not** pretend tandem is “romantic so it must be better.” It is a seating and price choice.
+
+## What both prices include
+
+Same inclusions on single and tandem — you are not paying extra on tandem for lunch or gear:
+
+| Included | Not included |
+| --- | --- |
+| Guided trail at All New Bali Adventure | Hotel pickup (optional **IDR 400,000**) |
+| Boot shoes + helmet | Wos River tubing combo (ask WhatsApp) |
+| Simple menu lunch | Personal expenses / tips |
+| English safety briefing | |
+| Insurance ages **6–65** | |
+
+If a listing quotes a lower ATV number, ask whether lunch, insurance, and the **Sedang arena** are in the rate. We publish the trail price and the pickup fee as two lines.
+
+## Who should share a tandem
+
+Book tandem when:
+
+- You are a **couple** and one person prefers the passenger seat
+- One guest has **never sat on a machine** and wants a first look before a later single ride
+- You want **one bill for two** at IDR 1,100,000
+
+Stay on a **single** when:
+
+- You came for the **mud-bike feel** — throttle, ruts, river crossings under your own hands
+- You are **solo** (tandem needs two)
+- Both guests are confident after the briefing
+
+Insurance covers ages **6–65**. Send **ages** on WhatsApp so we assign adult single, child single, or tandem — we will not invent a “kids must tandem” rule in this article. If a child is more comfortable as passenger, say so and we confirm on the chat.
+
+First ride? [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide). Arena pin: [All New Bali Adventure location](/blog/bali-atv-all-new-bali-adventure-location-guide).
+
+## Where you ride (and what tandem feels like)
+
+All of our ATVs start at **All New Bali Adventure**, **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**. Jungle paths, soft soil, river crossings on a **four-wheel sport ATV**. We are **not** the Kuber tunnel or Dragon Cave tracks.
+
+On tandem the **front rider** steers after the English briefing. The **rear rider** holds the passenger position. The pace follows the least experienced person on the bike — same rule as a group of singles. Track styles: [jungle mud vs cave/tunnel](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel).
+
+## Pickup, duration, who it is (not) for
+
+- **Where:** Sedang arena near Ubud (southwest of central Ubud)
+- **How long:** **2–4 hours** on the tour page (briefing, trail, lunch, optional tubing after)
+- **Pickup:** **IDR 400,000** hotel collect, or **free self-meet**. This is **not** the complimentary Ubud pickup on [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) or [Tumang cooking](/tours/balinese-cooking-class). Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained)
+- **For:** beginners, couples, families who want mud and photos
+- **Not for:** anyone who needs a cave/tunnel marketing photo, or who expected free Ubud transfer in the 750K / 1.1M rate
+
+Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali). Comparing intensity: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+
+## How to book on WhatsApp
+
+1. Open [Bali ATV Adventure](/tours/bali-atv-adventure) or [Book](/book?activity=tandem-atv)
+2. Send **1 or 2 riders**, **hotel or self-meet**, **date**, **ages**, **adult or child**
+3. We reply with **single (from IDR 750,000)** vs **tandem (IDR 1,100,000 for two)** and whether pickup is **IDR 400,000**
+4. **No payment to inquire** — WhatsApp Consultation first, then Book when you are ready
+
+**Ready?** Message us from the [ATV money page](/tours/bali-atv-adventure) or start [WhatsApp checkout](/book). Say **tandem** or **two singles** in the first line so we do not quote the wrong bike.
+`,
+  },
+  {
     slug: 'tirta-empu-melukat-ubud-guide',
     title: 'Private Tirta Empu Melukat near Ubud (2026)',
     excerpt:
@@ -120,7 +242,7 @@ Worried about speed? You control the throttle after the briefing. Guides keep th
 
 Choose **Single** if you want the full sensation of steering yourself through mud and jungle. Choose **Tandem** if you are a couple, or if one guest prefers not to drive. Child Single ATV is **IDR 700,000** where age-appropriate — send ages on WhatsApp so the team assigns Adult or Child correctly.
 
-Need the full 2026 price list? See [Bali adventure packages and prices](/blog/bali-adventure-packages-prices-2026). Still choosing between land and water? Read [rafting vs tubing vs ATV near Ubud](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+Side-by-side IDR and who should share: [single vs tandem ATV Ubud price](/blog/tandem-atv-ubud-price). Need the full 2026 price list? See [Bali adventure packages and prices](/blog/bali-adventure-packages-prices-2026). Still choosing between land and water? Read [rafting vs tubing vs ATV near Ubud](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
 ## What happens at All New Bali Adventure
 
@@ -247,7 +369,7 @@ Sekar Bali Activity lists pickup separately so the trail price stays honest — 
 - **Single** — one person controls the ATV; best for thrill-seekers and solo travelers  
 - **Tandem** — two share one bike; popular with couples and friends who want photos together  
 
-Compare intensity with rafting and tubing in [Rafting vs Tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+Who should share, and whether tandem beats two singles on IDR: [single vs tandem ATV Ubud price](/blog/tandem-atv-ubud-price). Compare intensity with rafting and tubing in [Rafting vs Tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
 ## Want a Full Day? Add Wos River Tubing
 

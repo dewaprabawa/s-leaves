@@ -31,6 +31,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Melukat at Tirta Empu guide', href: '/blog/tirta-empu-melukat-ubud-guide' },
   { label: 'Bali ATV Adventure', href: '/tours/bali-atv-adventure' },
   { label: 'ATV prices near Ubud (2026)', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
+  { label: 'Tandem ATV Ubud price', href: '/blog/tandem-atv-ubud-price' },
   { label: 'Whitewater rafting', href: '/tours/whitewater-rafting' },
   { label: 'Canyon tubing', href: '/tours/canyon-tubing' },
   { label: 'Umah Kuno Luwak tasting', href: '/tours/luwak-coffee-plantation' },

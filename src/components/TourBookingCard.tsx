@@ -10,6 +10,8 @@ import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
 import {
   COOKING_CLASS_PRICE_IDR,
+  COOKING_CLASS_PRIVATE_COUPLE_IDR,
+  COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
 } from "@/data/cultureSales"
 
@@ -232,6 +234,12 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {props.tourSlug === "bali-atv-adventure" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
+          {props.tourSlug === "balinese-cooking-class" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Private {formatIdr(COOKING_CLASS_PRIVATE_SOLO_IDR)} / person ·{" "}
+              {formatIdr(COOKING_CLASS_PRIVATE_COUPLE_IDR)} for 2
             </p>
           ) : null}
           {props.childPrice ? (

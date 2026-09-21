@@ -7,11 +7,11 @@ export const COOKING_CLASS_STANDARD_PRICE_IDR = 506_370
 /** Active shared-class promo rate — IDR 450k / person. */
 export const COOKING_CLASS_PRICE_IDR = 450_000
 
-/** Private kitchen — 1 guest */
-export const COOKING_CLASS_PRIVATE_SOLO_IDR = 633_090
+/** Private kitchen — 1 guest (IDR 1,000,000 per person) */
+export const COOKING_CLASS_PRIVATE_SOLO_IDR = 1_000_000
 
-/** Private kitchen — minimum 2 guests (total for two) */
-export const COOKING_CLASS_PRIVATE_COUPLE_IDR = 1_266_180
+/** Private kitchen — 2 guests (total = 2 × private per-person rate) */
+export const COOKING_CLASS_PRIVATE_COUPLE_IDR = 2_000_000
 
 /** Private Tirta Empul or Pura Beji melukat — per person, shuttle + guide + breakfast included. */
 export const MELUKAT_PRICE_IDR = 1_200_000
@@ -62,6 +62,7 @@ export const COOKING_CLASS_SALES = {
   priceIdr: COOKING_CLASS_PRICE_IDR,
   standardPriceIdr: COOKING_CLASS_STANDARD_PRICE_IDR,
   privateSoloIdr: COOKING_CLASS_PRIVATE_SOLO_IDR,
+  privateCoupleIdr: COOKING_CLASS_PRIVATE_COUPLE_IDR,
 } as const
 
 export type CultureComboOffer = {
@@ -125,7 +126,7 @@ export function buildCookingClassWhatsAppUrl(guestName = 'Guest') {
     time: '08:30',
     price: COOKING_CLASS_SALES.priceIdr,
     notes:
-      'Please confirm Tumang Bali Cooking Class seats (shared promo IDR 450,000 / person, was IDR 506,370; or private IDR 633,090 for 1 guest). Morning includes market tour. Happy to pair with ricefield cycling the same day.',
+      'Please confirm Tumang Bali Cooking Class seats (shared promo IDR 450,000 / person, was IDR 506,370; or private IDR 1,000,000 per person). Morning includes market tour. Happy to pair with ricefield cycling the same day.',
   })
 }
 

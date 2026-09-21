@@ -1241,14 +1241,14 @@ We list Tumang as our flagship food experience so you can book adventure, villag
 ### Sessions
 - **Morning shared class** — includes traditional pasar (market) tour
 - **Afternoon shared class** — rice-field walk + kitchen (ideal after ricefield cycling)
-- **Private class** — exclusive kitchen from IDR 633,090 (1 guest); private for 2 from IDR 1,266,180
+- **Private class** — exclusive kitchen **IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")} per person** (1 guest **IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")}**; 2 guests **IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")}** total)
 
 ### Pricing (2026)
 | Option | Price |
 |--------|-------|
-| Shared class (promo) | **IDR 450,000** per person (was IDR 506,370) |
-| Private (1 guest) | **IDR 633,090** |
-| Private (2 guests) | **IDR 1,266,180** total |
+| Shared class (promo) | **IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}** per person (was IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString("id-ID")}) |
+| Private (1 guest) | **IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")}** |
+| Private (2 guests) | **IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")}** total |
 
 ### Recognition
 TripAdvisor **[Traveler’s Choice 2026](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)** · **5.0** rating (1500+ reviews).
@@ -1332,7 +1332,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         name: "Private class (2 guests)",
         priceDiff: COOKING_PRIVATE_SOLO_DIFF,
-        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} total`,
+        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")} / person · IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} total`,
       },
     ],
     addons: [],

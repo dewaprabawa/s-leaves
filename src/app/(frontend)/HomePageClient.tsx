@@ -131,7 +131,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Tumang Bali Cooking Class",
     bookHref: "/book?activity=balinese-cooking-class",
-    pax: "Shared class · Max 8 guests · Free Ubud pickup · Market tour · Promo",
+    pax: "Shared promo · Private IDR 1,000,000 / person · Max 8 shared · Free Ubud pickup",
     price: COOKING_CLASS_PRICE_IDR,
     originalPrice: COOKING_CLASS_STANDARD_PRICE_IDR,
     highlight: true,

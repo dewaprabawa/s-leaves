@@ -76,7 +76,7 @@ export default async function BookPage({ searchParams }: Props) {
     "@type": "ItemList",
     name: "Book Bali Adventures — Sekar Bali Activity",
     description:
-      "Bookable adventure and culture activities near Ubud with WhatsApp checkout — ATV, rafting, tubing, ricefield cycling, Balinese cooking class, Tirta Empu melukat, and combos.",
+      "Bookable adventure and culture activities near Ubud with WhatsApp checkout — ATV, rafting, tubing, Swing Heaven, ricefield cycling, Balinese cooking class, Tirta Empu melukat, and combos.",
     numberOfItems: ADVENTURES.length + 3,
     itemListElement: [
       {

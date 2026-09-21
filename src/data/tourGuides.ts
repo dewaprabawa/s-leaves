@@ -89,6 +89,28 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Compare splash vs mud in one page.',
     },
   ],
+  'swing-heaven-bali': [
+    {
+      title: 'Swing Heaven Bali near Ubud',
+      href: '/blog/swing-heaven-bali-ubud-guide',
+      blurb: 'IDR 530K / 630K with lunch, spots, pickup, weather voucher.',
+    },
+    {
+      title: 'Is the Bali Swing worth it?',
+      href: '/blog/is-bali-swing-worth-it',
+      blurb: 'Swing Heaven in Bongkasa vs the Tegallalang strip.',
+    },
+    {
+      title: 'Things to do near Ubud 2026',
+      href: '/blog/things-to-do-near-ubud-2026',
+      blurb: 'Swing next to ATV, rafting, and cooking prices.',
+    },
+    {
+      title: 'Adventure package prices 2026',
+      href: '/blog/bali-adventure-packages-prices-2026',
+      blurb: 'IDR table for swings, ATV, and water days.',
+    },
+  ],
   'ubud-ricefield-cycling-tour': [
     {
       title: 'Things to do near Ubud 2026',
@@ -379,6 +401,10 @@ export const TOUR_HOST_NOTES: Record<
   'canyon-tubing': {
     title: 'From our Wos River crew',
     body: 'Tubing is the easy water half-day — sit on the tube, follow the guide, no paddle team. We often run it after an ATV session when the river level allows. Say if you want both on one WhatsApp thread.',
+  },
+  'swing-heaven-bali': {
+    title: 'From our Bongkasa swing hosts',
+    body: 'We book Swing Heaven on Jl. Tangga Yuda, Bongkasa — jungle swings and nests over the Ayung River, not the Tegallalang selfie strip. Tell us if you want the lunch package or a flying dress so the lobby has it ready. Photos are on your phone; rain days get a 7-day venue voucher, not a cash refund once the ticket is issued.',
   },
 }
 

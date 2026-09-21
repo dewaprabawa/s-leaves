@@ -11,6 +11,7 @@ const ACTIVITY_GUIDES = [
   { label: 'ATV', href: '/tours/bali-atv-adventure' },
   { label: 'Rafting', href: '/tours/whitewater-rafting' },
   { label: 'Tubing', href: '/tours/canyon-tubing' },
+  { label: 'Swing Heaven', href: '/tours/swing-heaven-bali' },
   { label: 'Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
   { label: 'Luwak coffee', href: '/tours/luwak-coffee-plantation' },
   { label: 'Full-day Ubud', href: '/tours/full-day-ubud-tour' },

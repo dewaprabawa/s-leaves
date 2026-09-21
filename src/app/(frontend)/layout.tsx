@@ -108,6 +108,7 @@ const footerLinks = {
     { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
     { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
     { label: "Canyon Tubing", href: "/tours/canyon-tubing" },
+    { label: "Swing Heaven Bali", href: "/tours/swing-heaven-bali" },
     { label: "Private Mount Batur Jeep", href: "/tours/batur-sunrise-jeep-tour" },
     { label: "Tirta Empu Purification", href: "/tours/tirta-empu-purification" },
     { label: "Luwak Coffee Plantation", href: "/tours/luwak-coffee-plantation" },

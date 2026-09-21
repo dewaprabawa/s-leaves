@@ -38,7 +38,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "adventure",
     label: TOUR_CATEGORY_LABELS.adventure,
-    blurb: "Private Mount Batur jeep, ATV, rafting & canyon tubing",
+    blurb: "Private muddy sport ATV, river rafting, canyon tubing, jungle swings & a private Mount Batur jeep",
     href: "/#adventure",
   },
   {

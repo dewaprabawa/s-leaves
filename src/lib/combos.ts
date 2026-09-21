@@ -7,7 +7,10 @@ import {
 } from '@/lib/pricing'
 
 /** Activities that can be mixed into a same-day combo */
-export type MixableActivityId = Exclude<ActivityId, 'cycling' | 'kintamani-day'>
+export type MixableActivityId = Exclude<
+  ActivityId,
+  'cycling' | 'kintamani-day' | 'swing-heaven' | 'swing-heaven-lunch'
+>
 
 export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   'single-atv': 'Single ATV',
@@ -17,6 +20,8 @@ export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   cycling: 'Ricefield Cycling',
   'jeep-sunrise': 'Private Batur Jeep',
   'kintamani-day': 'Private Kintamani Day',
+  'swing-heaven': 'Swing Heaven',
+  'swing-heaven-lunch': 'Swing Heaven + Lunch',
 }
 
 /** Compatible add-ons for each primary activity (excluding cycling) */

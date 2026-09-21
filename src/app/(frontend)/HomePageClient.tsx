@@ -97,7 +97,7 @@ const CATEGORY_SECTION_META: {
     anchor: "adventure",
     eyebrow: "Thrill days",
     title: "Adventure",
-    subtitle: "Jungle ATV, river rafting, canyon tubing, and a private Mount Batur jeep — sit-in or tracking, sunrise or sunset.",
+    subtitle: "Jungle ATV, river rafting, canyon tubing, Swing Heaven jungle swings, and a private Mount Batur jeep — sit-in or tracking, sunrise or sunset.",
   },
   {
     id: "day-tour",
@@ -199,6 +199,13 @@ const pricingData: PricingRow[] = [
     pax: formatTierPriceTable("canyon-tubing"),
     price: getPromoListPrice("canyon-tubing"),
     originalPrice: getListPrice("canyon-tubing"),
+    highlight: false,
+  },
+  {
+    activity: "Swing Heaven Bali",
+    adventureId: "swing-heaven",
+    pax: `${formatTierPriceTable("swing-heaven")} · Lunch package IDR 630,000 · Dress hire extra`,
+    price: getListPrice("swing-heaven"),
     highlight: false,
   },
 ]

@@ -744,7 +744,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
     slug: "canyon-tubing",
     category: "adventure",
     area: "Wos River / Pejeng",
-    pickup: "Hotel pickup IDR 400,000 — optional",
+    pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "2.5 Hours",
     basePrice: 500000,
     childPrice: 450000,
@@ -995,7 +995,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-1",
         question: "How much is the Ubud rice paddy cycling tour?",
         answer:
-          "IDR 750,000 per person in 2026 for a 2-hour guided Pejeng village / ricefield ride, including bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
+          "IDR 750,000 per person in 2026 (IDR 725,000 for 2 guests, IDR 700,000 for 3+) for a 2-hour guided Pejeng village / ricefield ride, including bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
       },
       {
         id: "faq-ubud-cyc-2",

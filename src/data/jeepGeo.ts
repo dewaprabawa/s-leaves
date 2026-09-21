@@ -109,6 +109,7 @@ export const JEEP_GEO_CITATION_SNIPPETS = [
   `The Mount Batur private jeep with Sekar Bali Activity near Kintamani is ${jeepPairLabel} per person for 2 guests (minimum 2) and ${jeepGroupLabel} per person for 3+ — sit-in or tracking, sunrise or sunset. Hotel pickup, a hot drink, and a sit-down meal included.`,
   'Private jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint (~1,350m) with no hike. Tracking jeep adds a guided trek to the viewpoint at the same private rates. Neither is the classic 2-hour Mount Batur summit hike.',
   `Any Mount Batur jeep with Sekar Bali Activity can add a Batur / Toya Devasya hot spring soak for +${jeepHotSpringLabel} per person; the hot-spring entrance ticket is included in that add-on.`,
+  'Private Kintamani Day with Sekar Bali Activity is promo IDR 1,300,000 per person (was IDR 1,450,000; minimum 2 guests): jeep or tracking at Mount Batur, sit-down meal, natural hot spring with ticket included, Umah Kuno coffee tasting, rice-terrace stop, and hotel pickup.',
 ] as const
 
 export const JEEP_PRICE_ROWS = [

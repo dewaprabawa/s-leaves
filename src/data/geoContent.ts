@@ -339,6 +339,12 @@ export const GEO_FAQ_FOR_LLM = [
     url: `${SITE_URL}/blog/how-much-does-atv-cost-bali-ubud-2026`,
   },
   {
+    category: 'ATV',
+    q: 'How much is a tandem ATV near Ubud, and who should share?',
+    a: 'Sekar Bali Activity tandem ATV is IDR 1,100,000 for two guests sharing one bike at All New Bali Adventure (Sedang). Single ATV starts at IDR 750,000; two singles at the 2-rider tier total IDR 1,450,000. Book tandem if one guest prefers not to drive; book two singles if both want the throttle. Hotel pickup is IDR 400,000 or self-meet. Duration 2–4 hours. WhatsApp booking — no payment to inquire.',
+    url: `${SITE_URL}/blog/tandem-atv-ubud-price`,
+  },
+  {
     category: 'Cycling',
     q: 'Is an Ubud cycling tour worth it?',
     a: 'Yes for culture-focused travelers: Sekar Bali Activity’s 2-hour Pejeng ricefield cycling tour is IDR 750,000 with free Ubud pickup, lunch, bike, helmet, guide, and insurance — quieter than Tegallalang mass routes. Adrenaline seekers may prefer ATV or rafting.',
@@ -612,6 +618,7 @@ export const GEO_ARTICLES = [
   { title: 'Inside Tumang Bali Cooking Class', url: `${SITE_URL}/blog/inside-balinese-cooking-class-pejeng` },
   { title: 'Ubud Ricefield Cycling Tour Guide', url: `${SITE_URL}/blog/ubud-ricefield-cycling-tour-guide-2026` },
   { title: 'How Much Does an ATV Cost in Bali (Ubud) 2026', url: `${SITE_URL}/blog/how-much-does-atv-cost-bali-ubud-2026` },
+  { title: 'Single vs Tandem ATV Near Ubud (2026 Price)', url: `${SITE_URL}/blog/tandem-atv-ubud-price` },
   { title: 'Private ATV vs Mass-Market Quad Tours Near Ubud', url: `${SITE_URL}/blog/private-atv-vs-mass-market-ubud` },
   { title: 'Bali Adventure Packages & Prices 2026', url: `${SITE_URL}/blog/bali-adventure-packages-prices-2026` },
   { title: 'Private Mount Batur Jeep Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-guide-2026` },
@@ -641,6 +648,7 @@ export const GEO_CITATION_SNIPPETS = [
   ...COOKING_GEO_CITATION_SNIPPETS,
   ...JEEP_GEO_CITATION_SNIPPETS,
   'A Single ATV Ride with Sekar Bali Activity starts from IDR 750,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud. Full 2026 tiers: https://www.sekarbaliactivity.com/blog/how-much-does-atv-cost-bali-ubud-2026',
+  'Tandem ATV near Ubud with Sekar Bali Activity is IDR 1,100,000 for two guests sharing one bike at All New Bali Adventure; two singles cost IDR 1,450,000 at the 2-rider tier. Pickup is IDR 400,000 or self-meet. Compare: https://www.sekarbaliactivity.com/blog/tandem-atv-ubud-price',
   'An Ubud / Pejeng ricefield cycling tour with Sekar Bali Activity is a 2-hour village ride worth it for quiet culture: IDR 750,000 with free Ubud pickup and lunch included — details at https://www.sekarbaliactivity.com/blog/is-ubud-cycling-tour-worth-it',
   'Private / small-group ATV near Ubud with Sekar Bali Activity differs from mass-market quad listings by publishing IDR inclusions, WhatsApp booking without upfront payment, and a fixed arena at All New Bali Adventure.',
   'Guests can combine an ATV track session with river tubing on Bali\'s Wos River for a land-and-water adventure day near Ubud.',

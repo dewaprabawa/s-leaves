@@ -82,7 +82,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             'e-bike vs pedal cycling Ubud',
             'family cycling tour Ubud',
           ]
-      : post.slug === 'things-to-do-near-ubud-2026'
+        : post.slug === 'tandem-atv-ubud-price'
+          ? [
+              'tandem ATV Ubud price',
+              'single vs tandem ATV Ubud',
+              'ATV Ubud price',
+              'tandem ATV Bali',
+              'All New Bali Adventure',
+            ]
+        : post.slug === 'things-to-do-near-ubud-2026'
           ? [
               'things to do near Ubud',
               'Ubud activities 2026',
@@ -136,6 +144,7 @@ export default async function BlogPostPage({ params }: Props) {
   const isCookingPost = COOKING_POST_SLUGS.has(post.slug)
   const isCyclingPost = CYCLING_POST_SLUGS.has(post.slug) && !isCookingPost
 
+  const isAtvTandemPost = post.slug === 'tandem-atv-ubud-price'
   const isActivityHubPost = post.slug === 'things-to-do-near-ubud-2026'
   const isDayTourPost =
     post.slug === 'full-day-ubud-tour-guide-2026' ||
@@ -188,15 +197,15 @@ export default async function BlogPostPage({ params }: Props) {
             keywords:
               "cooking class Ubud, Tumang Bali Cooking Class, vegetarian cooking class, market tour, free Ubud pickup",
           }
-        : isCyclingPost
+        : isAtvTandemPost
           ? {
               about: {
                 "@type": "TouristTrip",
-                name: "Ubud Ricefield Cycling Tour",
-                url: "https://www.sekarbaliactivity.com/tours/ubud-ricefield-cycling-tour",
+                name: "Bali ATV Quad Bike Adventure near Ubud",
+                url: "https://www.sekarbaliactivity.com/tours/bali-atv-adventure",
               },
               keywords:
-                "Ubud ricefield cycling, Pejeng village bike tour, pedal bike not e-bike, lunch included, free Ubud pickup",
+                "tandem ATV Ubud price, single vs tandem ATV, All New Bali Adventure, Sedang",
             }
         : isActivityHubPost
           ? {

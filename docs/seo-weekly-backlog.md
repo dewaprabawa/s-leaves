@@ -1,6 +1,6 @@
 # SEO weekly backlog
 
-**Last run:** 2026-09-14 (A3 cluster — `cooking-class-ubud-price-2026-worth-it`)  
+**Last run:** 2026-09-21 (A3 cluster — `tandem-atv-ubud-price`)  
 **Owner:** Sekar Bali marketing / Cursor automation A2
 
 ## Inbox
@@ -16,9 +16,9 @@
 
 2. **Tandem ATV Ubud price / single vs tandem**  
    - Money page: `/tours/bali-atv-adventure`  
-   - Why it sells: Couples search “tandem ATV” before WhatsApp. Price 2026, arena, private-vs-mass, and tubing-combo posts exist; marketing plan still lists **ATV vs tandem** as an unwritten spoke. Money-page title now includes tandem (`ATV Ride Ubud from IDR 750K | Tandem 1.1M`, 2026-09-18).  
+   - Why it sells: Couples search “tandem ATV” before WhatsApp.  
    - Effort: **M**  
-   - Action: **new article** (single IDR 750K vs tandem IDR 1.1M, who shares). Title tweak shipped.
+   - Action: **drafted 2026-09-21** — `/blog/tandem-atv-ubud-price` (single 750K vs tandem 1.1M, two-single math, WhatsApp CTA).
 
 3. **Ricefield cycling Ubud — free pickup + IDR 750K in the title**  
    - Money page: `/tours/ubud-ricefield-cycling-tour`  
@@ -43,7 +43,7 @@
 | Tour | Slug | Cluster status | This week |
 |------|------|----------------|-----------|
 | Cooking | `/tours/balinese-cooking-class` | Money page QA’d 2026-09-11. Spokes: inside class, pickup, cycling+cooking, spices. **Missing:** worth it, vegetarian, market vs afternoon. | Hold money-page edits. Article later this month. |
-| ATV | `/tours/bali-atv-adventure` | Money page QA’d 2026-09-18 (title/tandem/venue/schema/WA). Cluster still **missing** dedicated single-vs-tandem article. Combo IDR not on tour card. | Hold money-page edits. Tandem article still next. |
+| ATV | `/tours/bali-atv-adventure` | Money page QA’d 2026-09-18. Tandem spoke drafted 2026-09-21 (`/blog/tandem-atv-ubud-price`). Combo IDR not on tour card. | Hold money-page edits. |
 | Batur jeep | `/tours/batur-sunrise-jeep-tour` | Guide 2026 + jeep vs trek. **Missing:** pickup times by area; title “from 750K” risk. | **Primary focus.** |
 | Cycling | `/tours/ubud-ricefield-cycling-tour` | Densest cluster (worth it, vs Tegallalang, combo, pickup, 2026 guide). Duration now 2 hours. | Title only + fix AM/PM friction (see sales notes). |
 
@@ -54,12 +54,11 @@ Skip generic “best Bali” ideas. P2 day tours stay on hold.
 1. **Mount Batur Jeep Pickup Times from Canggu, Seminyak & Ubud (2026)**  
    - Primary keyword: `Mount Batur jeep pickup time from Canggu`  
    - Target: `/tours/batur-sunrise-jeep-tour`  
-   - WhatsApp CTA angle: Send **hotel area + date + guest count** — we confirm the exact 02:00–03:00 pickup (south Bali earliest, Ubud later), no hike, **no payment to inquire**.
+   - Status: already live as `/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026` — do not duplicate.
 
-2. **Single vs Tandem ATV Near Ubud: 2026 Price and Who Should Share**  
-   - Primary keyword: `tandem ATV Ubud price`  
-   - Target: `/tours/bali-atv-adventure`  
-   - WhatsApp CTA angle: Say **1 or 2 riders + hotel** — we quote single (from IDR 750K) vs tandem (IDR 1.1M for two), optional **IDR 400K pickup** vs self-meet at All New Bali Adventure, Sedang.
+2. **P1 rafting price / Class II–III vs tubing** (or cooking leftover if rotating back)  
+   - Money page: `/tours/whitewater-rafting`  
+   - Comparison already live: `/blog/rafting-vs-tubing-vs-atv-near-ubud`. Prefer a dedicated **rafting Ubud price 2026** spoke only if it is not just a retitle of the existing guide.
 
 ## Next articles to write
 | Priority | Working title | Target money page | Status |
@@ -94,7 +93,7 @@ List only — no UI redesign in this run.
 **Tours:** `bali-atv-adventure` · `batur-sunrise-jeep-tour` · `whitewater-rafting` · `canyon-tubing` · `ubud-ricefield-cycling-tour` · `luwak-coffee-plantation` · `balinese-cooking-class` · `full-day-ubud-tour` · `half-day-ubud-tanah-lot-tour`
 
 **Blogs already covering commercial intent:**  
-`how-much-does-atv-cost-bali-ubud-2026` · `bali-atv-all-new-bali-adventure-location-guide` · `private-atv-vs-mass-market-ubud` · `atv-river-tubing-wos-river-bali` · `ubud-atv-track-types-mud-jungle-vs-cave-tunnel` · `mount-batur-sunrise-jeep-tour-guide-2026` · `mount-batur-jeep-vs-sunrise-trek` · `is-ubud-cycling-tour-worth-it` · `ubud-ricefield-cycling-tour-guide-2026` · `pejeng-rice-terrace-cycling-vs-tegallalang` · `cycling-cooking-class-ubud-full-day-itinerary` · `ubud-hotel-pickup-bali-adventures-explained` · `rafting-vs-tubing-vs-atv-near-ubud` · `bali-whitewater-rafting-near-ubud-guide` · `bali-canyon-tubing-guide-ubud` · `bali-adventure-packages-prices-2026` · `inside-balinese-cooking-class-pejeng` · `luwak-coffee-ethical-sourcing` · `how-to-spot-ethical-luwak-coffee-in-bali`
+`how-much-does-atv-cost-bali-ubud-2026` · `tandem-atv-ubud-price` · `bali-atv-all-new-bali-adventure-location-guide` · `private-atv-vs-mass-market-ubud` · `atv-river-tubing-wos-river-bali` · `ubud-atv-track-types-mud-jungle-vs-cave-tunnel` · `mount-batur-sunrise-jeep-tour-guide-2026` · `mount-batur-jeep-vs-sunrise-trek` · `is-ubud-cycling-tour-worth-it` · `ubud-ricefield-cycling-tour-guide-2026` · `pejeng-rice-terrace-cycling-vs-tegallalang` · `cycling-cooking-class-ubud-full-day-itinerary` · `ubud-hotel-pickup-bali-adventures-explained` · `rafting-vs-tubing-vs-atv-near-ubud` · `bali-whitewater-rafting-near-ubud-guide` · `bali-canyon-tubing-guide-ubud` · `bali-adventure-packages-prices-2026` · `inside-balinese-cooking-class-pejeng` · `luwak-coffee-ethical-sourcing` · `how-to-spot-ethical-luwak-coffee-in-bali`
 
 ## Tour QA notes
 <!-- A6 appends here -->

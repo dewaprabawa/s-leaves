@@ -110,6 +110,21 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
       blurb: 'When free Ubud pickup applies.',
     },
+    {
+      title: 'E-bike vs pedal bike',
+      href: '/blog/ebike-vs-pedal-ubud-cycling-tour',
+      blurb: 'This ride is a standard pedal bike on flat Pejeng lanes.',
+    },
+    {
+      title: 'What to wear on the ride',
+      href: '/blog/what-to-wear-ubud-ricefield-cycling',
+      blurb: 'Closed shoes, sun kit, and the 2-hour afternoon clock.',
+    },
+    {
+      title: 'Family cycling in Pejeng',
+      href: '/blog/ubud-cycling-tour-for-families',
+      blurb: 'Kids who already ride, lunch included, insurance 6–65.',
+    },
   ],
   'balinese-cooking-class': [
     {
@@ -156,6 +171,21 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: '5 essential Balinese spices',
       href: '/blog/5-essential-balinese-spices',
       blurb: 'Flavor building blocks before you book.',
+    },
+    {
+      title: 'What is lawar?',
+      href: '/blog/what-is-lawar-balinese-dish',
+      blurb: 'Ceremonial salad vs the guest-friendly plate you cook.',
+    },
+    {
+      title: 'How a Balinese kitchen works',
+      href: '/blog/how-traditional-balinese-kitchens-work',
+      blurb: 'Paon layout, mortar, and why you get your own station.',
+    },
+    {
+      title: 'Why we pound spices by hand',
+      href: '/blog/pound-spices-by-hand-not-blender',
+      blurb: 'Mortar vs blender — when heat ruins Base Genep.',
     },
   ],
   'tirta-empu-purification': [
@@ -254,6 +284,21 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Ubud hotel pickup explained',
       href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
       blurb: 'How early-morning pickup timing works by area.',
+    },
+    {
+      title: 'Sunrise vs sunset jeep',
+      href: '/blog/mount-batur-jeep-sunrise-vs-sunset',
+      blurb: 'Same private IDR — 02:00 dawn or a 14:30–15:30 sunset.',
+    },
+    {
+      title: 'Sit-in jeep vs tracking jeep',
+      href: '/blog/mount-batur-sit-in-jeep-vs-tracking',
+      blurb: 'Stay seated or add a guided walk — still not the summit.',
+    },
+    {
+      title: 'Private Kintamani Day itinerary',
+      href: '/blog/private-kintamani-day-jeep-itinerary',
+      blurb: 'Promo 1.3M: jeep, hot spring ticket, meal, coffee, terrace.',
     },
   ],
   'half-day-ubud-tanah-lot-tour': [

@@ -12,6 +12,37 @@ type Props = {
   params: Promise<{ slug: string }>
 }
 
+const BATUR_JEEP_POST_SLUGS = new Set([
+  'mount-batur-sunrise-jeep-tour-guide-2026',
+  'mount-batur-jeep-vs-sunrise-trek',
+  'mount-batur-jeep-pickup-times-canggu-ubud-2026',
+  'mount-batur-sunrise-jeep-tour-price-guide-2026',
+  'mount-batur-jeep-sunrise-vs-sunset',
+  'mount-batur-sit-in-jeep-vs-tracking',
+  'private-kintamani-day-jeep-itinerary',
+])
+
+const COOKING_POST_SLUGS = new Set([
+  'cooking-class-ubud-price-2026-worth-it',
+  'vegetarian-vegan-cooking-class-ubud',
+  'morning-vs-afternoon-ubud-cooking-class',
+  'inside-balinese-cooking-class-pejeng',
+  'cycling-cooking-class-ubud-full-day-itinerary',
+  'what-is-lawar-balinese-dish',
+  'how-traditional-balinese-kitchens-work',
+  'pound-spices-by-hand-not-blender',
+])
+
+const CYCLING_POST_SLUGS = new Set([
+  'is-ubud-cycling-tour-worth-it',
+  'ubud-ricefield-cycling-tour-guide-2026',
+  'pejeng-rice-terrace-cycling-vs-tegallalang',
+  'cycling-cooking-class-ubud-full-day-itinerary',
+  'ebike-vs-pedal-ubud-cycling-tour',
+  'what-to-wear-ubud-ricefield-cycling',
+  'ubud-cycling-tour-for-families',
+])
+
 export async function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({
     slug: post.slug,
@@ -24,29 +55,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) return { title: 'Article Not Found' }
 
-  const keywords =
-    post.slug === 'mount-batur-sunrise-jeep-tour-guide-2026' ||
-    post.slug === 'mount-batur-jeep-vs-sunrise-trek' ||
-    post.slug === 'mount-batur-jeep-pickup-times-canggu-ubud-2026' ||
-    post.slug === 'mount-batur-sunrise-jeep-tour-price-guide-2026'
+  const keywords = BATUR_JEEP_POST_SLUGS.has(post.slug)
+    ? [
+        'Mount Batur sunrise jeep tour',
+        'Mount Batur jeep vs trek',
+        'Kintamani sunrise jeep',
+        'Batur sunrise without hiking',
+        'Mount Batur jeep pickup time',
+        'Batur jeep sunrise vs sunset',
+        'Private Kintamani Day',
+      ]
+    : COOKING_POST_SLUGS.has(post.slug)
       ? [
-          'Mount Batur sunrise jeep tour',
-          'Mount Batur jeep vs trek',
-          'Kintamani sunrise jeep',
-          'Batur sunrise without hiking',
-          'Mount Batur jeep pickup time',
+          'cooking class Ubud price',
+          'Tumang cooking class',
+          'cooking class Ubud worth it',
+          'vegetarian cooking class Ubud',
+          'Balinese cooking class Ubud',
+          'what is lawar',
         ]
-      : post.slug === 'cooking-class-ubud-price-2026-worth-it' ||
-          post.slug === 'vegetarian-vegan-cooking-class-ubud' ||
-          post.slug === 'morning-vs-afternoon-ubud-cooking-class'
+      : CYCLING_POST_SLUGS.has(post.slug)
         ? [
-            'cooking class Ubud price',
-            'Tumang cooking class',
-            'cooking class Ubud worth it',
-            'vegetarian cooking class Ubud',
-            'Balinese cooking class Ubud',
+            'Ubud ricefield cycling tour',
+            'rice paddy cycling Ubud',
+            'Pejeng village bike tour',
+            'e-bike vs pedal cycling Ubud',
+            'family cycling tour Ubud',
           ]
-        : post.slug === 'things-to-do-near-ubud-2026'
+      : post.slug === 'things-to-do-near-ubud-2026'
           ? [
               'things to do near Ubud',
               'Ubud activities 2026',
@@ -96,18 +132,9 @@ export default async function BlogPostPage({ params }: Props) {
     notFound()
   }
 
-  const isBaturJeepPost =
-    post.slug === 'mount-batur-sunrise-jeep-tour-guide-2026' ||
-    post.slug === 'mount-batur-jeep-vs-sunrise-trek' ||
-    post.slug === 'mount-batur-jeep-pickup-times-canggu-ubud-2026' ||
-    post.slug === 'mount-batur-sunrise-jeep-tour-price-guide-2026'
-
-  const isCookingPost =
-    post.slug === 'cooking-class-ubud-price-2026-worth-it' ||
-    post.slug === 'vegetarian-vegan-cooking-class-ubud' ||
-    post.slug === 'morning-vs-afternoon-ubud-cooking-class' ||
-    post.slug === 'inside-balinese-cooking-class-pejeng' ||
-    post.slug === 'cycling-cooking-class-ubud-full-day-itinerary'
+  const isBaturJeepPost = BATUR_JEEP_POST_SLUGS.has(post.slug)
+  const isCookingPost = COOKING_POST_SLUGS.has(post.slug)
+  const isCyclingPost = CYCLING_POST_SLUGS.has(post.slug) && !isCookingPost
 
   const isActivityHubPost = post.slug === 'things-to-do-near-ubud-2026'
   const isDayTourPost =
@@ -161,6 +188,16 @@ export default async function BlogPostPage({ params }: Props) {
             keywords:
               "cooking class Ubud, Tumang Bali Cooking Class, vegetarian cooking class, market tour, free Ubud pickup",
           }
+        : isCyclingPost
+          ? {
+              about: {
+                "@type": "TouristTrip",
+                name: "Ubud Ricefield Cycling Tour",
+                url: "https://www.sekarbaliactivity.com/tours/ubud-ricefield-cycling-tour",
+              },
+              keywords:
+                "Ubud ricefield cycling, Pejeng village bike tour, pedal bike not e-bike, lunch included, free Ubud pickup",
+            }
         : isActivityHubPost
           ? {
               about: {

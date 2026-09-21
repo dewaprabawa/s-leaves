@@ -1,5 +1,6 @@
 import { COOKING_JEEP_CLUSTER_POSTS } from './clusterPostsCookingJeep'
 import { ACTIVITY_CLUSTER_POSTS } from './clusterPostsActivities'
+import { JEEP_COOKING_CYCLING_CLUSTER_POSTS } from './clusterPostsJeepCookingCycling'
 
 export type BlogPost = {
   slug: string
@@ -321,7 +322,7 @@ Morning 2-hour ricefield cycling + afternoon Tumang Bali Cooking Class is one of
 
 ## Verdict
 
-If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 750,000 — especially with free pickup and lunch included. Pair it with a village kitchen: [cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it). If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
+If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 750,000 — especially with free pickup and lunch included. It is a **pedal bike**, not an e-bike — [e-bike vs pedal](/blog/ebike-vs-pedal-ubud-cycling-tour). Families: [Pejeng cycling with kids](/blog/ubud-cycling-tour-for-families). Pair it with a village kitchen: [cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it). If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
 
 **Ready to decide?** Book [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) on WhatsApp, add [Tumang Bali Cooking Class](/tours/balinese-cooking-class), or open [Book](/book) with your hotel and date.
 `
@@ -1935,4 +1936,5 @@ If you're deciding between the jeep and the traditional Mount Batur sunrise trek
 `
   },
   ...COOKING_JEEP_CLUSTER_POSTS,
+  ...JEEP_COOKING_CYCLING_CLUSTER_POSTS,
 ]

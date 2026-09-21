@@ -23,6 +23,7 @@ import {
 } from "@/lib/seo"
 import { buildLlmsDiscoverySchema } from "@/lib/geo"
 import { SEO_FOOTER_HEADING, SEO_FOOTER_LINKS } from "@/data/seoFooterLinks"
+import { SITE_KEYWORDS } from "@/data/activityKeywords"
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -48,30 +49,7 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   publisher: SITE_NAME,
   category: 'travel',
-  keywords: [
-    'Tumang Bali Cooking Class',
-    'Balinese cooking class Ubud',
-    'cooking class Ubud market tour',
-    'Ubud ricefield cycling tour',
-    'Pejeng ricefield cycling',
-    'cycling cooking class Ubud',
-    'Bali travel activities Ubud',
-    'Ubud day tours',
-    'private ATV tour Bali',
-    'ATV ride Ubud',
-    'Bali quad bike tour',
-    'Bali whitewater rafting',
-    'Bali canyon tubing',
-    'private Mount Batur jeep tour',
-    'Mount Batur jeep vs trek',
-    'Kintamani private jeep',
-    'things to do near Ubud',
-    'full day Ubud tour',
-    'Tanah Lot sunset tour from Ubud',
-    'ethical Luwak coffee Ubud',
-    'book Bali activity WhatsApp',
-    'Sekar Bali Activity',
-  ],
+  keywords: SITE_KEYWORDS,
   alternates: {
     canonical: '/',
   },

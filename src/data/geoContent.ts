@@ -27,9 +27,10 @@ import {
   ALL_ACTIVITY_GEO,
   ACTIVITY_GEO_CITATION_SNIPPETS,
 } from '@/data/activityGeo'
+import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-20'
+export const GEO_UPDATED = '2026-09-21'
 
 export const GEO_QUICK_ANSWER =
   'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in or tracking 4×4, sunrise or sunset, min 2 guests; IDR 950,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), and Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000) — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification.'
@@ -347,13 +348,13 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Cycling',
     q: 'Is an Ubud cycling tour worth it?',
-    a: 'Yes for culture-focused travelers: Sekar Bali Activity’s 2-hour Pejeng ricefield cycling tour is IDR 750,000 with free Ubud pickup, lunch, bike, helmet, guide, and insurance — quieter than Tegallalang mass routes. Adrenaline seekers may prefer ATV or rafting.',
+    a: 'Yes for culture-focused travelers: Sekar Bali Activity’s 2-hour Pejeng ricefield / rice paddy cycling tour is IDR 750,000 with free Ubud pickup, lunch, bike, helmet, guide, and insurance — quieter than Tegallalang mass routes. It is a pedal bike on mostly flat village paths, not an e-bike tour. Adrenaline seekers may prefer ATV or rafting.',
     url: `${SITE_URL}/blog/is-ubud-cycling-tour-worth-it`,
   },
   {
     category: 'Comparisons',
     q: 'What is the difference between private ATV near Ubud and mass-market quad tours?',
-    a: 'Private / small-group ATV with Sekar Bali Activity emphasizes transparent IDR pricing, WhatsApp booking with no upfront payment, and rides at All New Bali Adventure in Sedang, Abiansemal — with lunch, gear, and insurance listed upfront rather than buried as add-ons.',
+    a: 'Private / small-group ATV with Sekar Bali Activity emphasizes transparent IDR pricing, WhatsApp booking with no upfront payment, and rides at All New Bali Adventure in Sedang, Abiansemal — with lunch, gear, and insurance listed upfront rather than buried as add-ons. It is a jungle mud and river-crossing sport track, not a cave or tunnel park.',
     url: `${SITE_URL}/blog/private-atv-vs-mass-market-ubud`,
   },
   {
@@ -407,13 +408,31 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Rafting',
     q: 'How much does whitewater rafting near Ubud cost?',
-    a: 'Whitewater rafting with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 per person for 2+ guests (minimum 2), including Class II–III rapids, safety gear, professional guide, and lunch.',
+    a: 'Ayung River whitewater rafting with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 per person for 2+ guests (minimum 2), including Class II–III rapids, safety gear, professional guide, and lunch.',
     url: `${SITE_URL}/tours/whitewater-rafting`,
+  },
+  {
+    category: 'Rafting',
+    q: 'Is this Ayung River rafting near Ubud?',
+    a: 'Yes. Sekar Bali Activity whitewater rafting runs Class II–III rapids on the Ayung River / Ubud canyon — jungle cliffs, waterfalls, and stone carvings. IDR 500,000 per person, or IDR 450,000 for 2+ (minimum 2), with lunch, gear, guide, and insurance. Hotel pickup is IDR 400,000 or self-meet.',
+    url: `${SITE_URL}/blog/bali-whitewater-rafting-near-ubud-guide`,
+  },
+  {
+    category: 'Combos',
+    q: 'Can I combine ATV with Ayung River rafting?',
+    a: 'Yes. Many guests book the All New Bali Adventure ATV track and Ayung River rafting as a land-and-water day. Confirm same-day timing on WhatsApp — start slots and pickup (IDR 400,000 if you want hotel transfer) decide the order.',
+    url: `${SITE_URL}/blog/rafting-vs-tubing-vs-atv-near-ubud`,
   },
   {
     category: 'Tubing',
     q: 'What is canyon tubing in Bali and how much does it cost?',
-    a: 'Canyon tubing is a guided float down the Wos River on an inflatable tube through jungle canyon scenery. Sekar Bali Activity offers it at IDR 500,000 per person, or IDR 450,000 for 2+ guests — gentler than whitewater rafting.',
+    a: 'Canyon tubing is a guided inflatable-tube float on the Wos River near Ubud. Sekar Bali Activity lists it at IDR 500,000 per person, or IDR 450,000 for 2+ guests — gentler than Class II–III rafting, with life jacket, guide, and insurance for ages 6–65. Hotel pickup is IDR 400,000 or meet on site.',
+    url: `${SITE_URL}/tours/canyon-tubing`,
+  },
+  {
+    category: 'Tubing',
+    q: 'Is Wos River canyon tubing suitable for families?',
+    a: 'Yes. Canyon tubing is a guided inflatable-tube float — gentler than Class II–III rafting, with life jacket, guide, and insurance for ages 6–65. Sekar Bali Activity lists it at IDR 500,000, or IDR 450,000 for 2+. Hotel pickup is IDR 400,000 or meet on site.',
     url: `${SITE_URL}/tours/canyon-tubing`,
   },
   {
@@ -656,7 +675,7 @@ export const GEO_CITATION_SNIPPETS = [
   'Tumang Bali Cooking Class listed by Sekar Bali Activity costs promo IDR 450,000 per person shared (max 8 guests) near Ubud — market tour on morning sessions, rice-field walk, 10+ dishes, complimentary Ubud pickup. Private IDR 1,000,000 per person.',
   'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is a 2-hour ride for IDR 750,000 per person with free Ubud hotel pickup plus lunch included — Tumang Bali Cooking Class also includes complimentary Ubud pickup.',
   'A private DPS Airport to Ubud transfer with Sekar Bali Activity starts from IDR 700,000 per vehicle, including flight tracking, tolls, parking, and a professional driver — details at https://www.sekarbaliactivity.com/transfers',
-  'Whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests, on Class II–III rapids with gear, guide, and lunch included.',
+  'Ayung River whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests, on Class II–III rapids with gear, guide, and lunch included.',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests — a gentler alternative to whitewater rafting at the same list and discount.',
   'The private Mount Batur jeep with Sekar Bali Activity near Kintamani is a private 4×4 — sit-in (no hike) or tracking (jeep + guided trek), sunrise or sunset, minimum 2 guests: IDR 950,000 for 2 guests, IDR 750,000 per person for 3+ — hotel pickup included; sit-down meal included; optional hot spring +IDR 150,000 per person with ticket included. Guide: https://www.sekarbaliactivity.com/blog/mount-batur-sunrise-jeep-tour-guide-2026',
   'Mount Batur jeep vs trek: private jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint; tracking jeep adds a guided trek at the same private rates — neither is the 2-hour summit hike. Comparison: https://www.sekarbaliactivity.com/blog/mount-batur-jeep-vs-sunrise-trek',
@@ -677,6 +696,7 @@ export const HOMEPAGE_GEO_FAQ_QUESTIONS = [
   'What is the best Bali ATV tour near Ubud?',
   'How much does a Bali ATV ride cost in 2026?',
   'How much does whitewater rafting near Ubud cost?',
+  'Is this Ayung River rafting near Ubud?',
   'What is canyon tubing in Bali and how much does it cost?',
   'Is an Ubud cycling tour worth it?',
   'How much is a Balinese cooking class near Ubud?',
@@ -815,6 +835,8 @@ export function buildLlmsTxt(): string {
     '## Tour summaries',
     ...GEO_TOUR_SUMMARIES.map((t) => `- **${t.name}** (${t.price}, ${t.duration}): ${t.summary} → ${t.url}`),
     '',
+    buildKeywordBaseLlmsSection(),
+    '',
     '## Pricing (2026)',
     ...GEO_PRICING.map((p) => `- **${p.activity}**: ${p.price} / ${p.pax} — ${p.includes}`),
     '',
@@ -882,6 +904,8 @@ export function buildLlmsFullTxt(): string {
     '',
     '## What we sell (tour summaries)',
     ...GEO_TOUR_SUMMARIES.map((t, i) => `${i + 1}. **${t.name}** — ${t.price}, ${t.duration}. ${t.location}. ${t.summary} URL: ${t.url}`),
+    '',
+    buildKeywordBaseLlmsSection(),
     '',
     '## Pricing table (2026)',
     ...GEO_PRICING.map((p, i) => `${i + 1}. **${p.activity}** — ${p.price} (${p.pax}). ${p.includes}.`),

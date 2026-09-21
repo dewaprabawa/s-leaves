@@ -6,8 +6,10 @@
 
 import { SITE_URL } from '@/lib/seo'
 import { JEEP_HOT_SPRING_IDR, TIER_PRICES_IDR } from '@/lib/pricing'
+import { ACTIVITY_KEYWORDS } from '@/data/activityKeywords'
 
-export const JEEP_GEO_UPDATED = '2026-09-20'
+export const JEEP_GEO_UPDATED = '2026-09-21'
+export const JEEP_GEO_KEYWORDS = ACTIVITY_KEYWORDS['batur-sunrise-jeep-tour']
 
 const [, JEEP_PAIR_IDR, JEEP_GROUP_IDR] = TIER_PRICES_IDR['jeep-sunrise']
 

@@ -2,12 +2,13 @@
 
 **Goal:** Capture high-intent search traffic that competitors already rank for, and convert it into WhatsApp bookings.
 
-**Analysis date:** September 1, 2026 (Round 1) · **Refreshed September 9, 2026 (Round 2 — see bottom of file)**
+**Analysis date:** September 1, 2026 (Round 1) · **Refreshed September 9, 2026 (Round 2)** · **Refreshed September 21, 2026 (Round 3 — all activities)**
 **Your site:** https://www.sekarbaliactivity.com  
 **Competitors analyzed (Round 1):** ubudcyclingtour.com, cookingclassinubud.com, baliquadbiking.com, pertiwiadventure.com, atvrideubud.com, bali-dirtbike-adventures.com, tamandukuh.com, jambangan (Cookly)
 **Competitors analyzed (Round 2 — new):** kuberbaliadventure.com, atvridebali.id (Bali ATV Ride), tamandukuh.com (deep dive), pertiwiadventure.com (rafting combo), Bali Breeze Tours / Sobek / Wira Tour Bali cycling listings, Traveling Spoon "Putu" market-tour cooking class, GetYourGuide/Viator Ubud category listings (aggregator keyword patterns)
+**Competitors analyzed (Round 3 — catalog-wide):** ubudcenter.com, nagikubalitour.com, baturvolcano.com, telagawajaraftingbali.com, riverraftingbali.com / balivibesadventure.com / balitubingtour.com (Wos tubing), gorillaadventurebali.com (Ayung + Tirta Empul), Pure Kopi Luwak / Bali Pulina-style plantation SERPs, Edy Ubud Tour (Tanah Lot sunset)
 
-**➡️ Jump to [Round 2 — 2026-09-09 Refresh](#round-2--2026-09-09-refresh) for the newest findings and action items.**
+**➡️ Jump to [Round 3 — 2026-09-21 All-activity keyword base](#round-3--2026-09-21-all-activity-keyword-base) for the live keyword map wired into the site.**
 
 ---
 
@@ -261,3 +262,81 @@ The H-tag crawler mostly surfaced Kuber's fragmented marketing copy (their homep
 | Ayung River rafting stone carvings waterfall | Pertiwi, Viator | Commercial | Verify our rafting copy already covers these (it does — carvings + waterfall mentioned) |
 | ATV minimum age Bali / can kids ride ATV Bali | Kuber FAQ pattern | Informational (trust) | Do not publish a number until confirmed with ops |
 | helicopter tour Bali add-on | Kuber | Off-product | Not our product — explicitly out of scope, listed for awareness only |
+
+---
+
+## Round 3 — 2026-09-21 All-activity keyword base
+
+**Method:** Live competitor SERP / page research across every bookable Sekar Bali Activity product (not only ATV/cycling/cooking), then a single `ACTIVITY_KEYWORDS` map in `src/data/activityKeywords.ts` wired into tour meta, GEO corpora, homepage, `/book`, `/experiences`, blog Article schema, WebPage schema, and `llms.txt`.
+
+Round 1–2 keyword maps stopped at ATV, cycling, cooking, and dirt-bike/day-tour notes. Rafting, Wos tubing, Mount Batur jeep, melukat, Umah Kuno, Tanah Lot, and the experiences hub were using thin 3-term lists (or none on many blog posts). Competitors in those niches rank on **river name + lunch/pickup modifiers + combo titles** — the same pattern Round 2 documented for ATV.
+
+### Competitor patterns by activity (Round 3)
+
+| Activity | Competitor sources | Head terms they rank on | Our truthful match | Do not copy |
+|----------|--------------------|-------------------------|--------------------|-------------|
+| ATV | Kuber, atvridebali.id, ubudcenter.com, GetYourGuide combos | private ATV, jungle/mud, lunch included, ATV + rafting/tubing | All New Bali Adventure mud/river track, lunch, IDR pickup | Cave/tunnel, helicopter, Uluwatu track |
+| Rafting | Telaga Waja packages, Gorilla Adventure, Pertiwi, ubudcenter.com | **Ayung River rafting Ubud**, Class II–III, lunch, stone carvings, ATV + rafting combo | Tour `area` is Ayung River / Ubud; lunch + gear included | Class IV+, claiming locker/shower until ops confirm |
+| Tubing | riverraftingbali.com, balivibesadventure.com, balitubingtour.com | **Wos River tubing**, family float, ATV + tubing, pickup extra | Wos canyon tubing, gentler than rafting, ATV combo | Claiming lunch on tubing (not included); 10 km / waterfall-ticket bundles we don't sell |
+| Cycling | ubudcyclingtour.com, GYG e-bike listings | rice paddy, lunch included, e-bike, Kintamani downhill | Pejeng pedal bike, lunch, free Ubud pickup | Offering e-bike or downhill-from-Batur |
+| Cooking | Taman Dukuh, Traveling Spoon Putu, Cookly | market tour, small group, farm-to-table, vegetarian, private | Tumang market AM, max 8, veg menu, private kitchen | Inventing clock-times before Tumang confirms |
+| Jeep | baturvolcano.com, nagikubalitour.com | **sunrise jeep without hiking**, 4WD, Lake Batur, hot spring, coffee stop | Private sit-in or tracking 4×4, meal included, optional hot spring with ticket | Claiming the jeep is the 2-hour summit hike; food cooked in the 4×4 |
+| Melukat | Gorilla Adventure, Ubud temple-day packages | Tirta Empul purification, holy spring, melukat from Ubud | Private Tirta Empul **or** Beji, shuttle + breakfast | Walk-in ticket as if it were a guided package |
+| Coffee | Bali Pulina / Tegallalang plantation SERPs vs ethical guides | luwak plantation Ubud, tasting flight, ethical/cage-free | Umah Kuno cage-free, 10-drink flight, transport **not** included | Caged-civet tourist plantations |
+| Full day | Bali driver sites, GYG Ubud discovery packages | palace + market + Tegalalang, private car | Private 10-hour car; fees/lunch extra | “All-inclusive” day tour |
+| Tanah Lot | Edy Ubud Tour, half-day sunset listings | Tanah Lot sunset from Ubud, private half day | Private 6-hour car; fees/dinner extra | Bedugul + Jatiluwih add-ons we don't run |
+
+### Keyword base (implementation source of truth)
+
+Code: `src/data/activityKeywords.ts` → `ACTIVITY_KEYWORDS[slug]`.
+
+| Slug | P0 keywords now on meta + GEO + llms.txt |
+|------|------------------------------------------|
+| `bali-atv-adventure` | private ATV tour Bali, ATV ride Ubud, quad bike, lunch included, ATV hotel pickup, ATV + tubing / rafting combo |
+| `whitewater-rafting` | Ayung River rafting Ubud, Class II III, lunch, beginner rafting, ATV rafting combo |
+| `canyon-tubing` | Wos River tubing, canyon tubing Ubud, family river tubing, ATV tubing combo |
+| `ubud-ricefield-cycling-tour` | rice paddy cycling Ubud, Pejeng cycling, lunch included, cycling + cooking, pedal (not e-bike) |
+| `balinese-cooking-class` | cooking class Ubud, Tumang, market tour, vegetarian, private, farm to table |
+| `batur-sunrise-jeep-tour` | private Mount Batur jeep, no hike, jeep vs trek, pickup time, meal included, Kintamani Day, hot spring |
+| `tirta-empu-purification` | Tirta Empul / Tirta Empu / Beji melukat, private, holy spring |
+| `luwak-coffee-plantation` | Umah Kuno, ethical cage-free Kopi Luwak, Tampaksiring, price |
+| `full-day-ubud-tour` | full day Ubud tour, private driver, palace / market / Tegalalang |
+| `half-day-ubud-tanah-lot-tour` | Tanah Lot sunset from Ubud, half day, private |
+
+Sitewide (`SITE_KEYWORDS`) and `/book` (`BOOK_PAGE_KEYWORDS`) now include **every** activity, including melukat (was missing from homepage meta).
+
+### Action log (this round)
+
+| Action | Status |
+|--------|--------|
+| Centralize competitor keyword base for all 10 bookable tours | ✅ `src/data/activityKeywords.ts` |
+| Tour, homepage, book, experiences meta pull from that base | ✅ |
+| GEO corpora (`activityGeo`, cooking, jeep) use the same lists | ✅ |
+| Blog meta + Article `keywords` for rafting, tubing, ATV, melukat, coffee, hub posts (previously often `undefined`) | ✅ |
+| `llms.txt` / `llms-full.txt` keyword-base section for AI matching | ✅ |
+| Homepage WebPage schema `keywords` | ✅ |
+| Ayung River named in rafting GEO, FAQ, seoTitle, and body (matches tour `area`) | ✅ |
+| Wos family-tubing + private ATV + rice-paddy-vs-ebike GEO FAQs | ✅ |
+| Footer links to rafting / tubing / compare guides | ✅ |
+| Confirm rafting shower/locker copy | ☐ Still ops (Round 2) |
+| Publish ATV minimum-age number | ☐ Still ops (Round 2) |
+
+### Keywords to avoid (unchanged + Round 3)
+
+| Keyword | Why skip |
+|---------|----------|
+| Dragon Cave / Kuber tunnel ATV | Different product; disambiguate only |
+| e-bike tour Ubud as an offer | We run pedal bikes |
+| Jeep summit hike | We do crater-rim 4×4 / tracking jeep |
+| Caged luwak plantation | Opposite of Umah Kuno positioning |
+| Generic "Bali tours" | Aggregator head term |
+
+Re-run competitor gap after this ships:
+```bash
+python3 .cursor/skills/seo/scripts/competitor_gap.py https://www.sekarbaliactivity.com \
+  --competitor https://ubudcyclingtour.com \
+  --competitor https://www.baliquadbiking.com \
+  --competitor https://kuberbaliadventure.com \
+  --competitor https://baturvolcano.com --json
+```
+

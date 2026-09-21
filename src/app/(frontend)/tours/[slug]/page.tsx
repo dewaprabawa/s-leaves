@@ -37,6 +37,7 @@ import {
 } from "@/data/jeepGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
+import { getTourPageKeywords } from "@/data/activityKeywords"
 import { TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
 
@@ -74,43 +75,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = tour.seoDescription ?? tour.shortDescription
   // seoTitle is already a complete SERP string (≤60). Absolute avoids
   // `| Sekar Bali Activity` from the root template truncating price/CTA.
-  const keywords = isCookingTour(tour)
-    ? [
-        "cooking class Ubud",
-        "Tumang Bali Cooking Class",
-        "Balinese cooking class Ubud",
-        "cooking class Ubud market tour",
-        "cooking class Ubud price",
-        "small group cooking class Ubud",
-        "vegetarian cooking class Ubud",
-        "private cooking class Ubud",
-        "Sekar Bali Activity",
-      ]
-    : isJeepTour(tour)
-      ? [
-          "Private Mount Batur jeep tour",
-          "Mount Batur jeep tour Kintamani",
-          "Batur sunrise without hiking",
-          "Mount Batur jeep vs trek",
-          "sunrise jeep Lake Batur",
-          "private 4x4 Mount Batur",
-          "Mount Batur jeep pickup time",
-          "Batur jeep meal included",
-          "Sekar Bali Activity",
-        ]
-      : isLuwakTour(tour)
-        ? [
-            "luwak coffee plantation Ubud",
-            "Umah Kuno luwak coffee",
-            "ethical Kopi Luwak Bali",
-            "cage-free luwak coffee tasting",
-            "coffee plantation Tampaksiring",
-            "luwak coffee price Bali",
-            "Sekar Bali Activity",
-          ]
-          : getActivityGeo(tour.slug)?.keywords
-            ? [...getActivityGeo(tour.slug)!.keywords, "Sekar Bali Activity"]
-            : undefined
+  const keywords = getTourPageKeywords(tour.slug)
 
   const ogImage = {
     url: tour.heroImage.url,
@@ -200,6 +165,7 @@ function buildTourSchema(tour: Tour) {
       : jeep
         ? JEEP_GEO_TLDR
         : (getActivityGeo(tour.slug)?.tldr ?? tour.seoDescription ?? tour.shortDescription),
+    keywords: getTourPageKeywords(tour.slug)?.join(", "),
     image: {
       "@type": "ImageObject",
       url: tour.heroImage.url.startsWith("http")
@@ -417,6 +383,7 @@ function buildTourWebPageSchema(tour: Tour) {
     url: `${SITE_URL}/tours/${tour.slug}`,
     name: tour.seoTitle ?? tour.title,
     description: tour.seoDescription ?? tour.shortDescription,
+    keywords: getTourPageKeywords(tour.slug)?.join(", "),
     dateModified: GEO_UPDATED,
     inLanguage: "en-US",
     isPartOf: { "@id": `${SITE_URL}/#website` },
@@ -433,6 +400,7 @@ function buildCookingWebPageSchema(tour: Tour) {
     url: `${SITE_URL}/tours/${tour.slug}`,
     name: tour.seoTitle ?? tour.title,
     description: tour.seoDescription ?? tour.shortDescription,
+    keywords: getTourPageKeywords(tour.slug)?.join(", "),
     dateModified: COOKING_GEO_UPDATED,
     inLanguage: "en-US",
     isPartOf: { "@id": `${SITE_URL}/#website` },
@@ -479,6 +447,7 @@ function buildJeepWebPageSchema(tour: Tour) {
     url: `${SITE_URL}/tours/${tour.slug}`,
     name: tour.seoTitle ?? tour.title,
     description: tour.seoDescription ?? tour.shortDescription,
+    keywords: getTourPageKeywords(tour.slug)?.join(", "),
     dateModified: JEEP_GEO_UPDATED,
     inLanguage: "en-US",
     isPartOf: { "@id": `${SITE_URL}/#website` },

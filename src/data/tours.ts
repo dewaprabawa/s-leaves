@@ -627,9 +627,9 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
-    seoTitle: "Rafting Ubud | 500K · 450K for 2+",
+    seoTitle: "Ayung River Rafting Ubud | 500K · 450K for 2+",
     seoDescription:
-      "Class II–III whitewater rafting near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2). Lunch, gear, guide, insurance. Pickup IDR 400K. Book WhatsApp.",
+      "Ayung River Class II–III rafting near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2). Lunch, gear, guide, insurance. Pickup IDR 400K. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/rafting.jpg",
       alt: "Whitewater rafting through a Bali jungle river canyon",
@@ -644,7 +644,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
       "Navigate Class II-III rapids through a stunning river canyon surrounded by towering jungle cliffs, waterfalls, and ancient stone carvings.",
     fullDescription: `**Ride the Rapids Through Bali's Jungle Canyon**
 
-Our Whitewater Rafting Adventure takes you down a scenic river canyon near Ubud, where Class II-III rapids, jungle walls, and hidden waterfalls create one of the most exciting half-day experiences in central Bali.
+Our Whitewater Rafting Adventure takes you down the Ayung River canyon near Ubud, where Class II-III rapids, jungle walls, and hidden waterfalls create one of the most exciting half-day experiences in central Bali.
 
 This is a guided rafting trip suitable for beginners and families with older children. Professional river crew, safety equipment, and lunch are all included.
 
@@ -735,6 +735,12 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         question: "How much does whitewater rafting near Ubud cost?",
         answer:
           "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is an optional IDR 400,000 add-on.",
+      },
+      {
+        id: "faq-raft-7",
+        question: "Is this Ayung River rafting near Ubud?",
+        answer:
+          "Yes. This is Class II–III whitewater rafting on the Ayung River / Ubud canyon — jungle cliffs, waterfalls, and stone carvings. Beginner-friendly with a full safety briefing. Pair with ATV the same day if you want a land-and-water combo.",
       },
     ],
     reviews: [],

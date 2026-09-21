@@ -11,6 +11,7 @@ import {
 } from "@/data/cultureSales"
 import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
 import { SITE_NAME, SITE_URL } from "@/lib/seo"
+import { BOOK_PAGE_KEYWORDS } from "@/data/activityKeywords"
 import { formatIdr } from "@/lib/whatsapp"
 
 type Props = {
@@ -29,17 +30,7 @@ export const metadata: Metadata = {
     "Book private ATV, rafting, tubing, ricefield cycling & Tumang Bali Cooking Class near Ubud. Clear IDR prices from " +
     formatIdr(minAdventurePrice) +
     ". WhatsApp checkout — free to inquire.",
-  keywords: [
-    "book ATV Ubud",
-    "private ATV tour Bali",
-    "ATV river tubing combo",
-    "cycling cooking class Ubud",
-    "Tumang Bali Cooking Class",
-    "Balinese cooking class Ubud",
-    "Ubud ricefield cycling tour",
-    "book Bali adventure WhatsApp",
-    "all-inclusive ATV Bali",
-  ],
+  keywords: BOOK_PAGE_KEYWORDS,
   alternates: {
     canonical: "/book",
   },

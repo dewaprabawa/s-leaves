@@ -10,8 +10,10 @@ import {
   COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
 } from '@/data/cultureSales'
+import { ACTIVITY_KEYWORDS } from '@/data/activityKeywords'
 
-export const COOKING_GEO_UPDATED = '2026-09-20'
+export const COOKING_GEO_UPDATED = '2026-09-21'
+export const COOKING_GEO_KEYWORDS = ACTIVITY_KEYWORDS['balinese-cooking-class']
 
 const cookingPromoLabel = `IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString('id-ID')}`
 const cookingStandardLabel = `IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString('id-ID')}`

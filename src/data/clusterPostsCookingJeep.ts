@@ -60,6 +60,8 @@ A full vegetarian or vegan menu is available — request it when you book, not a
 2. WhatsApp **name, hotel area, date, guest count, AM or PM, diet**
 3. We confirm the promo or private rate — no payment to inquire
 
+Dish and kitchen: [what is lawar?](/blog/what-is-lawar-balinese-dish) · [traditional kitchens](/blog/how-traditional-balinese-kitchens-work) · [pound spices by hand](/blog/pound-spices-by-hand-not-blender).
+
 **Ready?** Book the [cooking class money page](/tours/balinese-cooking-class) or read [inside the class](/blog/inside-balinese-cooking-class-pejeng).
 `,
   },
@@ -316,7 +318,7 @@ ATV, rafting, and canyon tubing add **IDR 400,000** for hotel pickup or you self
 2. WhatsApp **hotel or area + date + guest count**
 3. We reply with the pickup window — no payment to inquire
 
-Guides: [2026 itinerary](/blog/mount-batur-sunrise-jeep-tour-guide-2026) · [jeep vs trek](/blog/mount-batur-jeep-vs-sunrise-trek) · [price table](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026).
+Guides: [2026 itinerary](/blog/mount-batur-sunrise-jeep-tour-guide-2026) · [jeep vs trek](/blog/mount-batur-jeep-vs-sunrise-trek) · [price table](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026) · [sunrise vs sunset](/blog/mount-batur-jeep-sunrise-vs-sunset) · [Private Kintamani Day](/blog/private-kintamani-day-jeep-itinerary).
 `,
   },
 ]

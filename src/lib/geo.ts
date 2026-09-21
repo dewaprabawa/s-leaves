@@ -5,6 +5,7 @@ import {
   GEO_UPDATED,
 } from '@/data/geoContent'
 import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, SITE_NAME, SITE_URL } from '@/lib/seo'
+import { SITE_KEYWORDS } from '@/data/activityKeywords'
 
 /** JSON-LD for GEO / AI discoverability on the homepage */
 export function buildGeoWebPageSchema() {
@@ -15,6 +16,7 @@ export function buildGeoWebPageSchema() {
     url: SITE_URL,
     name: DEFAULT_TITLE,
     description: DEFAULT_DESCRIPTION,
+    keywords: SITE_KEYWORDS.join(', '),
     dateModified: GEO_UPDATED,
     inLanguage: 'en-US',
     isPartOf: { '@id': `${SITE_URL}/#website` },

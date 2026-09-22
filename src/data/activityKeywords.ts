@@ -147,6 +147,10 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
     'Swing Heaven package price',
     'Bali swing photo spots',
     'Bongkasa swing park',
+    'Swing Heaven vs Tegallalang',
+    'Swing Heaven Bongkasa location',
+    'flying dress hire Bali',
+    'Bali swing lunch package',
   ],
 }
 
@@ -268,6 +272,10 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'half-day-ubud-tanah-lot-tour',
   'swing-heaven-bali-ubud-guide': 'swing-heaven-bali',
   'is-bali-swing-worth-it': 'swing-heaven-bali',
+  'swing-heaven-vs-tegallalang-bali-swing': 'swing-heaven-bali',
+  'swing-heaven-bongkasa-location': 'swing-heaven-bali',
+  'flying-dress-hire-bali-swing': 'swing-heaven-bali',
+  'bali-swing-with-lunch-ubud': 'swing-heaven-bali',
   'things-to-do-near-ubud-2026': 'site',
   'bali-adventure-packages-prices-2026': 'site',
   'ubud-hotel-pickup-bali-adventures-explained': 'site',
@@ -283,6 +291,22 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'things to do near Ubud',
     'Ubud activities 2026',
     'Ubud tours prices',
+  ],
+  'swing-heaven-vs-tegallalang-bali-swing': [
+    'Swing Heaven vs Tegallalang',
+    'Tegallalang Bali Swing vs Bongkasa',
+  ],
+  'swing-heaven-bongkasa-location': [
+    'Swing Heaven Bongkasa location',
+    'Jl. Tangga Yuda Bongkasa',
+  ],
+  'flying-dress-hire-bali-swing': [
+    'flying dress hire Bali',
+    'flying dress Swing Heaven',
+  ],
+  'bali-swing-with-lunch-ubud': [
+    'Bali swing with lunch',
+    'Swing Heaven lunch package',
   ],
 }
 

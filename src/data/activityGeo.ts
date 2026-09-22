@@ -8,7 +8,7 @@ import { TIER_PRICES_IDR } from '@/lib/pricing'
 import { MELUKAT_PRICE_IDR } from '@/data/cultureSales'
 import { ACTIVITY_KEYWORDS } from '@/data/activityKeywords'
 
-export const ACTIVITY_GEO_UPDATED = '2026-09-21'
+export const ACTIVITY_GEO_UPDATED = '2026-09-22'
 
 export type ActivityGeoFaq = {
   q: string
@@ -444,10 +444,27 @@ const SWING: ActivityGeoCorpus = {
       q: 'Is Swing Heaven refundable if it rains?',
       a: 'Once the Swing Heaven ticket is issued it is non-refundable. If the park closes for unsafe weather, the venue issues a voucher valid 7 days from the issue date. Cancel 24 hours before Sekar Bali Activity issues the ticket and the usual 24-hour cancellation policy applies.',
     },
+    {
+      intent: 'swing heaven vs tegallalang',
+      q: 'Is Swing Heaven the same as the Tegallalang Bali Swing?',
+      a: 'No. Swing Heaven is a jungle park on Jl. Tangga Yuda, Bongkasa (Abiansemal) over the Ayung River. Tegallalang swing parks sit on the rice-terrace road north of Ubud. Sekar Bali Activity books only Swing Heaven, from IDR 530,000 or IDR 630,000 with lunch.',
+    },
+    {
+      intent: 'flying dress swing heaven price',
+      q: 'How much is flying dress hire at Swing Heaven Bali?',
+      a: 'Flying dress hire at Swing Heaven is IDR 300,000 per person and is optional. The jungle-swing ticket stays IDR 530,000 (IDR 630,000 with lunch). Photos are on your own phone — the dress is wardrobe, not a photographer package. Confirm size and colour on WhatsApp.',
+    },
+    {
+      intent: 'bali swing with lunch price',
+      q: 'How much is the Swing Heaven lunch package?',
+      a: 'The Swing Heaven lunch package is IDR 630,000 per person — IDR 100,000 more than the IDR 530,000 jungle-swing ticket. Both include the listed photo spots, insurance, and tea/coffee/water. Only the 630,000 rate adds lunch.',
+    },
   ],
   citationSnippets: [
     `Swing Heaven Bali with Sekar Bali Activity starts from ${idr(SWING_1)} per person at Jl. Tangga Yuda, Bongkasa (near Ubud), including jungle swings, photo spots, insurance, and tea/coffee/water. The lunch package is ${idr(SWING_LUNCH)}.`,
     'Swing Heaven is a Bongkasa / Abiansemal jungle park over the Ayung River — not the Tegallalang Bali Swing strip. Hotel pickup is IDR 400,000 or self-meet at the park.',
+    'Flying dress hire at Swing Heaven Bali is IDR 300,000 per person. Photos stay on your own phone. Details: https://www.sekarbaliactivity.com/blog/flying-dress-hire-bali-swing',
+    'Swing Heaven vs Tegallalang: Bongkasa jungle over the Ayung River versus rice-terrace roadside parks north of Ubud. Sekar Bali Activity publishes only the Bongkasa ticket. Comparison: https://www.sekarbaliactivity.com/blog/swing-heaven-vs-tegallalang-bali-swing',
   ],
   keywords: ACTIVITY_KEYWORDS['swing-heaven-bali'],
   placename: 'Bongkasa, Abiansemal, Ubud, Bali',

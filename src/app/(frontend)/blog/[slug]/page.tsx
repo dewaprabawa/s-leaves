@@ -8,6 +8,7 @@ import { getBlogKeywords, keywordsToCsv } from '@/data/activityKeywords'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import ArticleBookingCta from '@/components/ArticleBookingCta'
+import ArticleGeoCta from '@/components/ArticleGeoCta'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -32,6 +33,9 @@ const COOKING_POST_SLUGS = new Set([
   'what-is-lawar-balinese-dish',
   'how-traditional-balinese-kitchens-work',
   'pound-spices-by-hand-not-blender',
+  '5-essential-balinese-spices',
+  'what-is-base-genep-balinese-spice-paste-guide',
+  'top-5-traditional-balinese-foods',
 ])
 
 const CYCLING_POST_SLUGS = new Set([
@@ -289,6 +293,8 @@ export default async function BlogPostPage({ params }: Props) {
             priority
           />
         </div>
+
+        <ArticleGeoCta slug={post.slug} />
 
         {/* Content */}
         <article className="blog-content prose prose-lg max-w-none prose-headings:font-display prose-headings:font-bold prose-headings:text-brand-green prose-p:text-brand-green-light prose-li:text-brand-green-light prose-strong:text-brand-green prose-a:text-brand-green hover:prose-a:text-brand-green-light">

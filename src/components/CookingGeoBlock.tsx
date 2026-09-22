@@ -71,22 +71,30 @@ export default function CookingGeoBlock() {
         ))}
       </div>
 
-      <p className="text-sm text-brand-green-light">
-        Pair with{' '}
-        <Link
-          href="/tours/ubud-ricefield-cycling-tour"
-          className="font-semibold text-brand-green underline underline-offset-2 hover:text-brand-green-light"
-        >
-          Pejeng ricefield cycling
-        </Link>{' '}
-        the same day, or open{' '}
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3">
         <Link
           href="/book?activity=balinese-cooking-class"
+          className="inline-flex items-center justify-center rounded-full bg-brand-green px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-green-light transition-colors"
+        >
+          Book Tumang cooking
+        </Link>
+        <Link
+          href="/tours/ubud-ricefield-cycling-tour"
+          className="inline-flex items-center justify-center rounded-full border border-brand-green/20 px-5 py-2.5 text-sm font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
+        >
+          Pair with Pejeng cycling
+        </Link>
+      </div>
+
+      <p className="text-sm text-brand-green-light">
+        Same-day culture combo:{' '}
+        <Link
+          href="/book?activity=combo-cycling-cooking"
           className="font-semibold text-brand-green underline underline-offset-2 hover:text-brand-green-light"
         >
-          Book → Tumang Cooking
-        </Link>{' '}
-        to WhatsApp with price included. Operator site:{' '}
+          cycling + cooking
+        </Link>
+        . Operator site:{' '}
         <a
           href="https://tumangbaliclass.com/balinese-cooking-class-ubud"
           target="_blank"

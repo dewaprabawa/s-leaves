@@ -886,14 +886,14 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     seoDescription:
       "Swing Heaven Bali in Bongkasa near Ubud — jungle swings, nests & photo spots from IDR 530K. Lunch package 630K. Dress hire 300K. WhatsApp booking.",
     heroImage: {
-      url: "/images/adventures/swing-heaven.jpg",
+      url: "/images/adventures/swing-heaven-ayung.jpg",
       alt: "Guest on a jungle swing over the Ayung River valley at Swing Heaven Bali in Bongkasa near Ubud",
       width: 1600,
       height: 1000,
     },
     gallery: [
       {
-        url: "/images/adventures/swing-heaven.jpg",
+        url: "/images/adventures/swing-heaven-ayung.jpg",
         alt: "Jungle swing over the Ayung canopy at Swing Heaven Bali in Bongkasa near Ubud",
       },
       {

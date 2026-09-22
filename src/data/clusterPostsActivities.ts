@@ -268,7 +268,7 @@ Pairing ideas:
       'Swing Heaven Bali in Bongkasa from IDR 530,000 — 14 jungle photo spots, lunch package 630K, dress hire 300K. Not Tegallalang. WhatsApp booking.',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/swing-heaven.jpg',
+    image: '/images/adventures/swing-heaven-ayung.jpg',
     content: `
 **How much is Swing Heaven Bali near Ubud?** Sekar Bali Activity books [Swing Heaven](/tours/swing-heaven-bali) at **IDR 530,000** per person for the jungle-swing package, or **IDR 630,000** with lunch. The park sits on **Jl. Tangga Yuda, Bongkasa** (Abiansemal) over the **Ayung River valley** — a short drive from Ubud. It is **not** the Tegallalang rice-terrace swing strip. **Hotel pickup is IDR 400,000** or self-meet at the park for free. Photos are on **your own phone**. Book on WhatsApp — **no payment to inquire**.
 

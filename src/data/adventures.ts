@@ -121,7 +121,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
       "Bongkasa near Ubud — own-phone photos",
     ],
     duration: "1.5–2.5 hours",
-    image: "/images/adventures/swing-heaven.jpg",
+    image: "/images/adventures/swing-heaven-ayung.jpg",
     imageAlt: "Guest on a jungle swing over the Ayung River valley at Swing Heaven Bali near Ubud",
     tourSlug: "swing-heaven-bali",
     times: ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00"],

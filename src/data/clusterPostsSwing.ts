@@ -65,7 +65,7 @@ Sekar Bali Activity does **not** mark up a mystery “Bali Swing” SKU. The Bon
       'Swing Heaven is on Jl. Tangga Yuda, Bongkasa (Abiansemal) over the Ayung River — a short drive from Ubud. Grab vs IDR 400,000 hotel pickup, map, hours.',
     publishedAt: '2026-09-22',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/swing-heaven.jpg',
+    image: '/images/adventures/swing-heaven-ayung.jpg',
     content: `
 **Where is Swing Heaven Bali?** The park is at **Jl. Tangga Yuda, Bongkasa, Kec. Abiansemal, Kabupaten Badung, Bali 80352** — a jungle hillside over the **Ayung River**, a short drive from central Ubud. It is **not** in Tegallalang. Hours **08:00–17:00 daily**. Sekar Bali Activity books the ticket from **IDR 530,000** (lunch **IDR 630,000**). **Hotel pickup is IDR 400,000** or self-meet at the lobby for free.
 

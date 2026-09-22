@@ -96,19 +96,29 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'IDR 530K / 630K with lunch, spots, pickup, weather voucher.',
     },
     {
+      title: 'Swing Heaven vs Tegallalang',
+      href: '/blog/swing-heaven-vs-tegallalang-bali-swing',
+      blurb: 'Jungle Ayung park vs the rice-terrace swing strip.',
+    },
+    {
+      title: 'Bongkasa location & pickup',
+      href: '/blog/swing-heaven-bongkasa-location',
+      blurb: 'Jl. Tangga Yuda pin, Grab vs IDR 400K hotel collect.',
+    },
+    {
       title: 'Is the Bali Swing worth it?',
       href: '/blog/is-bali-swing-worth-it',
-      blurb: 'Swing Heaven in Bongkasa vs the Tegallalang strip.',
+      blurb: 'When the jungle-swing photo is worth IDR 530K.',
     },
     {
-      title: 'Things to do near Ubud 2026',
-      href: '/blog/things-to-do-near-ubud-2026',
-      blurb: 'Swing next to ATV, rafting, and cooking prices.',
+      title: 'Flying dress hire',
+      href: '/blog/flying-dress-hire-bali-swing',
+      blurb: 'Optional IDR 300K wardrobe — photos on your phone.',
     },
     {
-      title: 'Adventure package prices 2026',
-      href: '/blog/bali-adventure-packages-prices-2026',
-      blurb: 'IDR table for swings, ATV, and water days.',
+      title: 'Swing with lunch',
+      href: '/blog/bali-swing-with-lunch-ubud',
+      blurb: 'IDR 630K package vs the 530K ticket.',
     },
   ],
   'ubud-ricefield-cycling-tour': [

@@ -84,6 +84,10 @@ const faqs = [
     answer: "The Swing Heaven Package is IDR 530,000 per person (jungle swings, photo spots, insurance, tea/coffee/water). The lunch package is IDR 630,000. Flying dress hire is IDR 300,000 extra. The park is in Bongkasa over the Ayung River — not the Tegallalang swing strip. Hotel pickup is IDR 400,000 or self-meet at Jl. Tangga Yuda. Photos on your own phone."
   },
   {
+    question: "Is Swing Heaven the same as the Tegallalang Bali Swing?",
+    answer: "No. Swing Heaven is a jungle park on Jl. Tangga Yuda, Bongkasa (Abiansemal) over the Ayung River. Tegallalang swing parks sit on the rice-terrace road north of Ubud. We book only Swing Heaven. If you want terraces without a swing ticket, walk Tegalalang on the Full Day Ubud Tour."
+  },
+  {
     question: "Can AI assistants find your tours?",
     answer: "Yes. We publish llms.txt, llms-full.txt, and pricing.md for ChatGPT, Gemini, Perplexity, and other AI crawlers, plus detailed blog guides on ATV, Wos River tubing, cooking class, private Mount Batur jeep, and WhatsApp booking. Search engines and AI bots are allowed in our robots.txt."
   },

@@ -887,13 +887,17 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
       "Swing Heaven Bali in Bongkasa near Ubud — jungle swings, nests & photo spots from IDR 530K. Lunch package 630K. Dress hire 300K. WhatsApp booking.",
     heroImage: {
       url: "/images/adventures/swing-heaven.jpg",
-      alt: "Swing Heaven Bali jungle swing package near Ubud — photo spots over the Ayung River valley",
-      width: 1200,
-      height: 630,
+      alt: "Guest on a jungle swing over the Ayung River valley at Swing Heaven Bali in Bongkasa near Ubud",
+      width: 1600,
+      height: 1000,
     },
     gallery: [
       {
         url: "/images/adventures/swing-heaven.jpg",
+        alt: "Jungle swing over the Ayung canopy at Swing Heaven Bali in Bongkasa near Ubud",
+      },
+      {
+        url: "/images/adventures/swing-heaven-package.jpg",
         alt: "Swing Heaven Bali package board — jungle swings and photo nests from IDR 530,000",
       },
       {
@@ -939,7 +943,7 @@ Card payments at the park (if you pay on site) add a **3% surcharge**. WhatsApp 
 ### Pair it with ATV or rafting
 Swing Heaven sits in Abiansemal, the same district as our [ATV arena](/tours/bali-atv-adventure). Ask WhatsApp to stack a morning swing with afternoon ATV or [Ayung River rafting](/tours/whitewater-rafting).
 
-Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it) · [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).`,
+Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it) · [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location) · [Lunch package](/blog/bali-swing-with-lunch-ubud) · [Flying dress hire](/blog/flying-dress-hire-bali-swing) · [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).`,
     highlights: [
       "14 jungle swings, nests, and photo spots over the Ayung valley",
       "From IDR 530,000 — insurance + tea/coffee/water included",

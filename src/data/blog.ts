@@ -1,6 +1,7 @@
 import { COOKING_JEEP_CLUSTER_POSTS } from './clusterPostsCookingJeep'
 import { ACTIVITY_CLUSTER_POSTS } from './clusterPostsActivities'
 import { JEEP_COOKING_CYCLING_CLUSTER_POSTS } from './clusterPostsJeepCookingCycling'
+import { SWING_CLUSTER_POSTS } from './clusterPostsSwing'
 
 export type BlogPost = {
   slug: string
@@ -15,6 +16,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...SWING_CLUSTER_POSTS,
   ...ACTIVITY_CLUSTER_POSTS,
   {
     slug: 'tandem-atv-ubud-price',
@@ -1078,7 +1080,7 @@ Message WhatsApp with your temple stop (if any), preferred adventure, and hotel 
     excerpt: "You have seen the photos all over Instagram, but is the famous Bali Swing actually worth your time and money? Here is an honest local review — including Swing Heaven in Bongkasa from IDR 530,000.",
     publishedAt: "2026-08-06",
     author: "Sekar Bali Activity Team",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+    image: '/images/adventures/bali-swing-rice-terrace.jpg',
     content: `
 **Is the Bali Swing worth the money?** It depends on whether you want curated jungle photos or a quiet cultural day. For Instagram-style shots, a dedicated swing park is the product: harnessed high swings, nest frames, and flowing dresses. Sekar Bali Activity books **[Swing Heaven Bali](/tours/swing-heaven-bali)** in **Bongkasa** (Ayung River valley) from **IDR 530,000** (lunch package **IDR 630,000**) — not the Tegallalang rice-terrace strip. If you want village paths and lunch without a photo queue, book [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) instead.
 
@@ -1106,7 +1108,7 @@ The phrase “Bali Swing” is an industry, not one park. Dozens of venues sit a
 
 ### The verdict
 
-If you are travelling with teens, on a honeymoon, or you specifically want the jungle-swing photo, **do it at Swing Heaven** and go in the morning. Book the [Swing Heaven money page](/tours/swing-heaven-bali) or read the [2026 price and pickup guide](/blog/swing-heaven-bali-ubud-guide). If you only want rice terraces without a swing ticket, walk Tegalalang on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) and skip the extra.
+If you are travelling with teens, on a honeymoon, or you specifically want the jungle-swing photo, **do it at Swing Heaven** and go in the morning. Book the [Swing Heaven money page](/tours/swing-heaven-bali) or read the [2026 price and pickup guide](/blog/swing-heaven-bali-ubud-guide). Side-by-side with the terrace parks: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing). If you only want rice terraces without a swing ticket, walk Tegalalang on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) and skip the extra.
 
 **Book Swing Heaven** — [from IDR 530,000](/tours/swing-heaven-bali).
 `
@@ -1718,18 +1720,18 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
   {
     slug: 'ubud-hotel-pickup-bali-adventures-explained',
     title: 'Ubud Hotel Pickup for Bali Adventures: Free vs Surcharge Explained (2026)',
-    excerpt: 'Which Sekar Bali Activity tours include pickup? Cycling and Tumang cooking (Ubud). Tirta Empu melukat (private shuttle). Private Mount Batur jeep (island-wide). ATV, rafting, and tubing add IDR 400,000.',
+    excerpt: 'Which Sekar Bali Activity tours include pickup? Cycling and Tumang cooking (Ubud). Tirta Empu melukat (private shuttle). Private Mount Batur jeep (island-wide). ATV, rafting, tubing, and Swing Heaven add IDR 400,000.',
     publishedAt: '2026-09-02',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (IDR 750,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. **Tirta Empu Purification (Melukat)** includes a **private Ubud-area shuttle** in the IDR 1,200,000 per person rate. The **private Mount Batur jeep** includes hotel pickup **island-wide** in the jeep price. ATV, whitewater rafting, and canyon tubing do not — IDR 400,000 hotel pickup charge applies.
+**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (IDR 750,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. **Tirta Empu Purification (Melukat)** includes a **private Ubud-area shuttle** in the IDR 1,200,000 per person rate. The **private Mount Batur jeep** includes hotel pickup **island-wide** in the jeep price. ATV, whitewater rafting, canyon tubing, and **Swing Heaven** do not — IDR 400,000 hotel pickup charge applies (or self-meet at the venue).
 
 > **Key Takeaways**
 > - **Free Ubud pickup:** Ricefield cycling + Tumang Bali Cooking Class
 > - **Private shuttle in the package price:** Tirta Empu / Tirta Empul melukat (IDR 1,200,000 / person)
 > - **Island-wide pickup included:** private Mount Batur jeep
-> - **Hotel pickup:** IDR 400,000 for ATV, rafting, tubing
+> - **Hotel pickup:** IDR 400,000 for ATV, rafting, tubing, Swing Heaven
 > - **Cycling outside Ubud:** IDR 400,000 surcharge (e.g. Seminyak, Canggu, Kuta)
 > - **Booking:** Set your hotel pin in the booking popup map
 
@@ -1746,6 +1748,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 | Single / Tandem ATV | ❌ No | +IDR 400,000 |
 | Whitewater Rafting | ❌ No | +IDR 400,000 |
 | Canyon Tubing | ❌ No | +IDR 400,000 |
+| Swing Heaven Bali (Bongkasa) | ❌ No — self-meet free | +IDR 400,000 |
 
 ## Why Cycling Includes Free Pickup
 
@@ -1774,7 +1777,11 @@ The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) includes hotel pi
 
 ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup for IDR 400,000 rather than self-driving. Details: [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide).
 
-**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empu melukat (shuttle included)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure).
+## Swing Heaven Pickup (Bongkasa)
+
+[Swing Heaven](/tours/swing-heaven-bali) is on **Jl. Tangga Yuda, Bongkasa** — not the Tegallalang strip. Hotel pickup is the same **IDR 400,000** adventure surcharge, or self-meet at the lobby. Grab from central Ubud is often cheaper for a one-way drop. Pin and timing: [Swing Heaven Bongkasa location](/blog/swing-heaven-bongkasa-location).
+
+**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empu melukat (shuttle included)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure) · [Swing Heaven (IDR 400K or self-meet)](/tours/swing-heaven-bali).
 `
   },
   {

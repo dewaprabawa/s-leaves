@@ -30,7 +30,7 @@ import {
 import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-21'
+export const GEO_UPDATED = '2026-09-22'
 
 export const GEO_QUICK_ANSWER =
   'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in or tracking 4×4, sunrise or sunset, min 2 guests; IDR 950,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), and Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000) — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification.'
@@ -456,7 +456,25 @@ export const GEO_FAQ_FOR_LLM = [
     category: 'Swing',
     q: 'Where is Swing Heaven Bali and is it the Tegallalang Bali Swing?',
     a: 'Swing Heaven is at Jl. Tangga Yuda, Bongkasa, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — a short drive from Ubud over the Ayung River. It is a different park from the Tegallalang rice-terrace swing cluster. Hours 08:00–17:00 daily.',
-    url: `${SITE_URL}/tours/swing-heaven-bali`,
+    url: `${SITE_URL}/blog/swing-heaven-bongkasa-location`,
+  },
+  {
+    category: 'Swing',
+    q: 'Is Swing Heaven the same as the Tegallalang Bali Swing?',
+    a: 'No. Swing Heaven is a jungle park in Bongkasa over the Ayung River. Tegallalang swing parks sit on the rice-terrace road north of Ubud. Sekar Bali Activity books only Swing Heaven from IDR 530,000, or IDR 630,000 with lunch.',
+    url: `${SITE_URL}/blog/swing-heaven-vs-tegallalang-bali-swing`,
+  },
+  {
+    category: 'Swing',
+    q: 'How much is flying dress hire at Swing Heaven Bali?',
+    a: 'Flying dress hire at Swing Heaven is IDR 300,000 per person and is optional. The jungle-swing ticket stays IDR 530,000 (IDR 630,000 with lunch). Photos are on your own phone. Confirm size and colour on WhatsApp.',
+    url: `${SITE_URL}/blog/flying-dress-hire-bali-swing`,
+  },
+  {
+    category: 'Swing',
+    q: 'How much is the Swing Heaven lunch package near Ubud?',
+    a: 'The Swing Heaven lunch package is IDR 630,000 per person — IDR 100,000 more than the IDR 530,000 jungle-swing ticket. Both include the listed photo spots, insurance, and tea/coffee/water. Only the 630,000 rate adds lunch.',
+    url: `${SITE_URL}/blog/bali-swing-with-lunch-ubud`,
   },
   {
     category: 'Jeep',
@@ -674,6 +692,10 @@ export const GEO_ARTICLES = [
   { title: 'Whitewater Rafting Near Ubud Guide', url: `${SITE_URL}/blog/bali-whitewater-rafting-near-ubud-guide` },
   { title: 'Swing Heaven Bali near Ubud Guide', url: `${SITE_URL}/blog/swing-heaven-bali-ubud-guide` },
   { title: 'Is the Bali Swing Worth It?', url: `${SITE_URL}/blog/is-bali-swing-worth-it` },
+  { title: 'Swing Heaven vs Tegallalang Bali Swing', url: `${SITE_URL}/blog/swing-heaven-vs-tegallalang-bali-swing` },
+  { title: 'Swing Heaven Bongkasa Location', url: `${SITE_URL}/blog/swing-heaven-bongkasa-location` },
+  { title: 'Flying Dress Hire at Swing Heaven', url: `${SITE_URL}/blog/flying-dress-hire-bali-swing` },
+  { title: 'Bali Swing with Lunch near Ubud', url: `${SITE_URL}/blog/bali-swing-with-lunch-ubud` },
   { title: 'Bali Canyon Tubing Guide', url: `${SITE_URL}/blog/bali-canyon-tubing-guide-ubud` },
   { title: 'ATV + River Tubing on the Wos River', url: `${SITE_URL}/blog/atv-river-tubing-wos-river-bali` },
   { title: 'How to Book a Bali Adventure on WhatsApp', url: `${SITE_URL}/blog/how-to-book-bali-adventure-whatsapp` },

@@ -53,7 +53,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) at **IDR 500,000**, or **IDR 450,000** for 2+ (minimum 2), lunch included. **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float at the same **IDR 500,000 / 450,000 for 2+** — the usual ATV add-on. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-**[Swing Heaven Bali](/tours/swing-heaven-bali)** is the Bongkasa jungle park over the Ayung River — **IDR 530,000** (tea/coffee/water + insurance) or **IDR 630,000** with lunch, 14 photo spots, own-phone photos. Flying dress hire **IDR 300,000**. It is **not** the Tegallalang rice-terrace swing strip. Guide: [Swing Heaven Ubud](/blog/swing-heaven-bali-ubud-guide).
+**[Swing Heaven Bali](/tours/swing-heaven-bali)** is the Bongkasa jungle park over the Ayung River — **IDR 530,000** (tea/coffee/water + insurance) or **IDR 630,000** with lunch, 14 photo spots, own-phone photos. Flying dress hire **IDR 300,000**. It is **not** the Tegallalang rice-terrace swing strip. Guides: [Swing Heaven Ubud](/blog/swing-heaven-bali-ubud-guide) · [vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location).
 
 **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is **your private 4×4** — sit-in (no hike) or **tracking jeep** (jeep + guided trek) at the **same private rates**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m. 2 guests **IDR 950,000** · 3+ **IDR 750,000**. **Meal included.** Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
@@ -297,7 +297,7 @@ Hours: **08:00–17:00 daily**.
 
 Tegallalang parks sit on the rice-terrace road north of Ubud — queues, extra photo packages, and bus-tour traffic. **Swing Heaven is a Bongkasa jungle park** over the Ayung River. If you want the rice-terrace Instagram stop on a private car day, that is still an optional extra on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) — not this ticket.
 
-Honest take: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it).
+Honest take: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it). Side-by-side: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing). Pin: [Bongkasa location](/blog/swing-heaven-bongkasa-location). Lunch SKU: [630K package](/blog/bali-swing-with-lunch-ubud). Dress: [flying dress hire](/blog/flying-dress-hire-bali-swing).
 
 ## Pickup and pairing
 

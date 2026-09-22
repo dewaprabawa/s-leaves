@@ -2,13 +2,13 @@
 
 **Goal:** Capture high-intent search traffic that competitors already rank for, and convert it into WhatsApp bookings.
 
-**Analysis date:** September 1, 2026 (Round 1) · **Refreshed September 9, 2026 (Round 2)** · **Refreshed September 21, 2026 (Round 3 — all activities)**
+**Analysis date:** September 1, 2026 (Round 1) · **Refreshed September 9, 2026 (Round 2)** · **Refreshed September 21, 2026 (Round 3 — all activities)** · **Reset September 22, 2026 (Round 4 — same niche, 12 activities)**
 **Your site:** https://www.sekarbaliactivity.com  
 **Competitors analyzed (Round 1):** ubudcyclingtour.com, cookingclassinubud.com, baliquadbiking.com, pertiwiadventure.com, atvrideubud.com, bali-dirtbike-adventures.com, tamandukuh.com, jambangan (Cookly)
 **Competitors analyzed (Round 2 — new):** kuberbaliadventure.com, atvridebali.id (Bali ATV Ride), tamandukuh.com (deep dive), pertiwiadventure.com (rafting combo), Bali Breeze Tours / Sobek / Wira Tour Bali cycling listings, Traveling Spoon "Putu" market-tour cooking class, GetYourGuide/Viator Ubud category listings (aggregator keyword patterns)
 **Competitors analyzed (Round 3 — catalog-wide):** ubudcenter.com, nagikubalitour.com, baturvolcano.com, telagawajaraftingbali.com, riverraftingbali.com / balivibesadventure.com / balitubingtour.com (Wos tubing), gorillaadventurebali.com (Ayung + Tirta Empul), Pure Kopi Luwak / Bali Pulina-style plantation SERPs, Edy Ubud Tour (Tanah Lot sunset)
 
-**➡️ Jump to [Round 3 — 2026-09-21 All-activity keyword base](#round-3--2026-09-21-all-activity-keyword-base) for the live keyword map wired into the site.**
+**➡️ Jump to [Round 4 — 2026-09-22 Keyword reset](#round-4--2026-09-22-keyword-reset) for the live keyword map wired into the site.**
 
 ---
 
@@ -339,4 +339,38 @@ python3 .cursor/skills/seo/scripts/competitor_gap.py https://www.sekarbaliactivi
   --competitor https://kuberbaliadventure.com \
   --competitor https://baturvolcano.com --json
 ```
+
+---
+
+## Round 4 — 2026-09-22 Keyword reset
+
+**Why reset:** Round 3 covered 10 tours. Swing Heaven and Griya Beji shipped after that with incremental lists. Same-niche competitor titles in late September 2026 still win on **private / price / lunch / pickup / river-or-venue name / combo / vs-pages**. The old flat arrays mixed head terms with extras and did not teach `llms.txt` which phrases are *head* vs *book* vs *compare*.
+
+**Method:** Live SERP / listing titles in the same Ubud activities niche (not a new category):
+
+| Activity | Competitor sources this reset | Head language they use now | Our truthful match |
+|----------|-------------------------------|----------------------------|--------------------|
+| ATV | atvridebali.id, ubudatvbali.com, Explore Ubud / Kuber listings | private ATV ride Ubud price, tandem, lunch, hotel transfer, ATV + Ayung rafting | All New Bali Adventure mud/river track, lunch included, pickup **IDR 400K** (not free transfer) |
+| Rafting | wanderfuntrip, pandubalitour, baliraftingadventure, Explore Ubud | Ayung River, Class II–III, with lunch / pickup, 2026 promo | Ayung Class II–III, lunch included, pickup extra |
+| Tubing | unchanged Wos operators | Wos River tubing, family, ATV combo | Wos canyon tubing — not Ayung |
+| Cycling + cooking | cilitravel.com, Cookly rice-paddy classes | cycling & cooking class, market tour, rice paddy, free pickup | Pejeng pedal + Tumang market AM, free Ubud pickup on both SKUs |
+| Swing | swingheavens.com, Fun Bali Tour, Bali Travel Life, Tegallalang parks | Swing Heaven Ubud all-inclusive, jungle / Ayung, lunch package, flying dress, vs Tegallalang | Bongkasa jungle ticket 530K / 630K lunch; pickup 400K or self-meet — **not** Tegallalang |
+| Melukat | GYG/Viator Tirta Empul + waterfall day tours, Headout | private Tirta Empul purification, spiritual cleansing, waterfall add-on | Private Tirta Empul **or** Pura Beji 1.2M + breakfast; Griya Beji waterfall park is a **different** SKU |
+| Jeep / coffee / day tours | same niche as Round 3 | no-hike jeep, ethical luwak, Tanah Lot sunset from Ubud | Unchanged honesty rules |
+
+### Implementation (source of truth)
+
+`src/data/activityKeywords.ts` now stores **clusters** (`head` / `book` / `compare`) and flattens them for meta + schema.
+
+- GEO blocks print **Travelers also search:** (first 6 aliases) so AI can cite query language next to the TLDR
+- `llms.txt` lists head vs book vs compare per slug, plus a do-not-invent line
+- Homepage / `/book` / `/experiences` rebuilt from head terms of all **12** tours
+- Blog keyword maps added for spices, Subak, temple dress code, Pejeng history, price/pickup hubs
+- SERP titles: ATV → `Private ATV Ride Ubud | From IDR 750K`; cycling → `Rice Paddy Cycling Ubud | Lunch + Pickup`
+
+### Still do not target as offers
+
+Cave/tunnel ATV, e-bike, Ayung-as-tubing, jeep summit hike, caged luwak, free pickup on ATV/rafting/tubing/swing/Griya, locker/shower, invented ATV ages.
+
+Ops still open from Round 2: ATV minimum-age number, Tumang clock times, rafting shower/locker confirmation.
 

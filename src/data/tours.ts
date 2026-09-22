@@ -125,7 +125,7 @@ export const TOURS: Tour[] = [
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "ATV Ride Ubud from IDR 750K | Tandem 1.1M",
+    seoTitle: "Private ATV Ride Ubud | From IDR 750K",
     seoDescription:
       "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Hotel pickup IDR 400K or self-meet. Book WhatsApp.",
     heroImage: {
@@ -1075,7 +1075,7 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
     pickup: "Free Ubud-area hotel pickup",
     duration: "2 Hours",
     basePrice: 750000,
-    seoTitle: "Rice Paddy Cycling Ubud | Pejeng",
+    seoTitle: "Rice Paddy Cycling Ubud | Lunch + Pickup",
     seoDescription:
       "Rice paddy cycling in Pejeng near Ubud — quiet Subak lanes, lunch included, free Ubud hotel pickup from IDR 750K. Book on WhatsApp.",
     heroImage: {

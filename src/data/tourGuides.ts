@@ -246,6 +246,38 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/how-to-spot-ethical-luwak-coffee-in-bali',
       blurb: 'Pair a Tampaksiring morning with Umah Kuno tasting.',
     },
+    {
+      title: 'Griya Beji vs Tirta Empul',
+      href: '/blog/griya-beji-vs-tirta-empul-melukat',
+      blurb: 'Waterfall park in Punggul vs the private 1.2M temple morning.',
+    },
+  ],
+  'griya-beji-waterfall': [
+    {
+      title: 'Griya Beji Waterfall near Ubud',
+      href: '/blog/griya-beji-waterfall-ubud-guide',
+      blurb: 'Melukat 300K, palm 1M, healing 1.5M — Punggul prices and pickup.',
+    },
+    {
+      title: 'Griya Beji vs Tirta Empul',
+      href: '/blog/griya-beji-vs-tirta-empul-melukat',
+      blurb: 'Different springs, different tickets — do not mix the names.',
+    },
+    {
+      title: 'Palm reading at Griya Beji',
+      href: '/blog/palm-reading-bali-griya-beji',
+      blurb: 'IDR 1,000,000 · hands + birth date · book ahead.',
+    },
+    {
+      title: 'Mental healing at Griya Beji',
+      href: '/blog/mental-healing-bali-griya-beji',
+      blurb: 'IDR 1,500,000 · guided relaxation, not a clinic.',
+    },
+    {
+      title: 'Ubud hotel pickup explained',
+      href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
+      blurb: 'IDR 400K hotel collect or self-meet in Punggul.',
+    },
   ],
   'luwak-coffee-plantation': [
     {
@@ -415,6 +447,10 @@ export const TOUR_HOST_NOTES: Record<
   'swing-heaven-bali': {
     title: 'From our Bongkasa swing hosts',
     body: 'We book Swing Heaven on Jl. Tangga Yuda, Bongkasa — jungle swings and nests over the Ayung River, not the Tegallalang selfie strip. Tell us if you want the lunch package or a flying dress so the lobby has it ready. Photos are on your phone; rain days get a 7-day venue voucher, not a cash refund once the ticket is issued.',
+  },
+  'griya-beji-waterfall': {
+    title: 'From our Punggul purification hosts',
+    body: 'Taman Beji Griya Waterfall is a living shrine on Jl. Mawar, Desa Punggul — waterfall melukat, palm reading, and mental healing. It is not Tirta Empul and not the Pura Beji spring on our 1.2M private ticket. We confirm the 2026 park board and practitioner availability on WhatsApp. Healing is guided relaxation, not a hospital clinic.',
   },
 }
 

@@ -8,6 +8,9 @@ export const ACTIVITY_TO_TOUR_SLUG: Record<string, string> = {
   "kintamani-day": "batur-sunrise-jeep-tour",
   "swing-heaven": "swing-heaven-bali",
   "swing-heaven-lunch": "swing-heaven-bali",
+  "griya-beji-purification": "griya-beji-waterfall",
+  "griya-beji-palm-reading": "griya-beji-waterfall",
+  "griya-beji-mental-healing": "griya-beji-waterfall",
 }
 
 export function getTourSlugForActivity(activityId: string): string | undefined {

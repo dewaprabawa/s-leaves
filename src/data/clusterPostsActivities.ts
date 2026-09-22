@@ -6,16 +6,16 @@ export const ACTIVITY_CLUSTER_POSTS = [
     title: 'Things to Do Near Ubud 2026: Prices, Pickup & What to Book',
     seoTitle: 'Things to Do Near Ubud 2026 | Prices & Booking',
     excerpt:
-      'Every Sekar Bali Activity near Ubud with 2026 IDR prices — cooking, cycling, ATV, rafting, tubing, Swing Heaven, Batur jeep, coffee, and private day tours. WhatsApp booking, no deposit.',
+      'Every Sekar Bali Activity near Ubud with 2026 IDR prices — cooking, cycling, ATV, rafting, tubing, Swing Heaven, Griya Beji purification, Batur jeep, coffee, and private day tours. WhatsApp booking, no deposit.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/og-cover.jpg',
     content: `
-**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (**IDR 750,000**, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) **IDR 500,000** (**IDR 450,000** for 2+), [canyon tubing](/tours/canyon-tubing) **IDR 500,000** (**IDR 450,000** for 2+), [Swing Heaven Bali](/tours/swing-heaven-bali) from **IDR 530,000** (lunch package **IDR 630,000**) in Bongkasa, [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+) — **private** sit-in or tracking, sunrise or sunset, optional hot spring **+IDR 150,000** with ticket included, [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 800,000**, min 3), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
+**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (**IDR 750,000**, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) **IDR 500,000** (**IDR 450,000** for 2+), [canyon tubing](/tours/canyon-tubing) **IDR 500,000** (**IDR 450,000** for 2+), [Swing Heaven Bali](/tours/swing-heaven-bali) from **IDR 530,000** (lunch package **IDR 630,000**) in Bongkasa, [Griya Beji Waterfall](/tours/griya-beji-waterfall) purification from **IDR 300,000** (palm reading **IDR 1,000,000**, mental healing **IDR 1,500,000**) in Punggul — **not** Tirta Empul, [Tirta Empu melukat](/tours/tirta-empu-purification) private **IDR 1,200,000** with shuttle and breakfast, [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+) — **private** sit-in or tracking, sunrise or sunset, optional hot spring **+IDR 150,000** with ticket included, [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 800,000**, min 3), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
 
 > **Key Takeaways**
 > - Food + village days include **free Ubud pickup** (cooking + cycling)
-> - ATV / rafting / tubing: **IDR 400,000** hotel pickup or free self-meet in Sedang
+> - ATV / rafting / tubing / Swing Heaven / Griya Beji: **IDR 400,000** hotel pickup or free self-meet
 > - Private Batur jeep: **island-wide pickup included** — sit-down **meal included** after the viewpoint (jeep and tracking)
 > - Coffee tasting: **min 3 guests**, transport **not** included
 > - No upfront payment to inquire — [Book on WhatsApp](/book)
@@ -31,6 +31,8 @@ export const ACTIVITY_CLUSTER_POSTS = [
 | Whitewater rafting | **500,000** · **450,000** for 2+ | 3 hrs | IDR 400K or self-meet | [Rafting](/tours/whitewater-rafting) |
 | Canyon tubing | **500,000** · **450,000** for 2+ | 2.5 hrs | IDR 400K or self-meet | [Tubing](/tours/canyon-tubing) |
 | Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | IDR 400K or self-meet Bongkasa | [Swing Heaven](/tours/swing-heaven-bali) |
+| Griya Beji Waterfall | **300,000** · palm **1,000,000** · healing **1,500,000** | 1–2.5 hrs | IDR 400K or self-meet Punggul | [Griya Beji](/tours/griya-beji-waterfall) |
+| Tirta Empu Purification | **1,200,000** private | 3–4 hrs | Shuttle included (Ubud) | [Tirta Empul / Beji](/tours/tirta-empu-purification) |
 | Private Batur jeep | **750,000** (3+) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
 | Umah Kuno Luwak | **800,000** (min 3) | 1.5 hrs | Not included | [Coffee](/tours/luwak-coffee-plantation) |
 | Full day Ubud tour | **600,000** | 10 hrs | Private car | [Full day](/tours/full-day-ubud-tour) |
@@ -55,6 +57,12 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Swing Heaven Bali](/tours/swing-heaven-bali)** is the Bongkasa jungle park over the Ayung River — **IDR 530,000** (tea/coffee/water + insurance) or **IDR 630,000** with lunch, 14 photo spots, own-phone photos. Flying dress hire **IDR 300,000**. It is **not** the Tegallalang rice-terrace swing strip. Guides: [Swing Heaven Ubud](/blog/swing-heaven-bali-ubud-guide) · [vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location).
 
+## Culture & healing
+
+**[Griya Beji Waterfall](/tours/griya-beji-waterfall)** is Taman Beji Griya in **Desa Punggul, Abiansemal** — waterfall **purification IDR 300,000**, **palm reading IDR 1,000,000**, **mental healing IDR 1,500,000**. International **admission IDR 50,000** is extra. This is **not** Tirta Empul or Pura Beji. Pickup **IDR 400,000** or self-meet. Guides: [Griya Beji Ubud](/blog/griya-beji-waterfall-ubud-guide) · [vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat) · [palm reading](/blog/palm-reading-bali-griya-beji) · [mental healing](/blog/mental-healing-bali-griya-beji).
+
+**[Tirta Empu Purification](/tours/tirta-empu-purification)** is the private **IDR 1,200,000** temple morning at **Tirta Empul or Pura Beji** — shuttle, guide, offering, sarong, and **breakfast included**. Guide: [Tirta Empu melukat](/blog/tirta-empu-melukat-ubud-guide).
+
 **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is **your private 4×4** — sit-in (no hike) or **tracking jeep** (jeep + guided trek) at the **same private rates**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m. 2 guests **IDR 950,000** · 3+ **IDR 750,000**. **Meal included.** Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
 ## Coffee & private cars
@@ -75,6 +83,8 @@ Landing late? [DPS → Ubud private transfer](/transfers) from **IDR 700,000** p
 | Splash with a paddle team | [Rafting](/tours/whitewater-rafting) |
 | Easy river float | [Canyon tubing](/tours/canyon-tubing) |
 | Jungle swing photos (not Tegallalang) | [Swing Heaven](/tours/swing-heaven-bali) |
+| Waterfall purification + palm / healing | [Griya Beji](/tours/griya-beji-waterfall) |
+| Private temple morning with breakfast | [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) |
 | Sunrise or sunset without the summit hike | [Private Batur jeep](/tours/batur-sunrise-jeep-tour) |
 | Ethical coffee, 90 minutes | [Umah Kuno](/tours/luwak-coffee-plantation) |
 | Classic Ubud highlights | [Full-day car](/tours/full-day-ubud-tour) |

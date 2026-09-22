@@ -125,6 +125,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Swing Heaven Bali', url: `${SITE_URL}/tours/swing-heaven-bali` },
   { name: 'Private Mount Batur Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour` },
   { name: 'Tirta Empu Purification (Melukat)', url: `${SITE_URL}/tours/tirta-empu-purification` },
+  { name: 'Griya Beji Waterfall Purification', url: `${SITE_URL}/tours/griya-beji-waterfall` },
   { name: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour` },
   { name: 'Half Day Ubud & Tanah Lot', url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour` },
   { name: 'Luwak Coffee Plantation', url: `${SITE_URL}/tours/luwak-coffee-plantation` },

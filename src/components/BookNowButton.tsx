@@ -8,6 +8,13 @@ import {
   SWING_HEAVEN_LUNCH_PRICE_IDR,
   SWING_HEAVEN_VENUE,
 } from "@/data/swingHeaven"
+import {
+  GRIYA_BEJI_HEALING_IDR,
+  GRIYA_BEJI_OFFERS,
+  GRIYA_BEJI_PALM_READING_IDR,
+  GRIYA_BEJI_PURIFICATION_IDR,
+  GRIYA_BEJI_VENUE,
+} from "@/data/griyaBeji"
 
 const JEEP_HOT_SPRING_ADDON = {
   id: "hotspring",
@@ -148,6 +155,45 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     minPax: 2,
     pickupIncluded: true,
     pricingActivityId: "kintamani-day",
+  },
+  {
+    id: GRIYA_BEJI_OFFERS.purification.id,
+    title: GRIYA_BEJI_OFFERS.purification.label,
+    times: ["09:00", "10:00", "11:00", "14:00", "15:00"],
+    adultPrice: GRIYA_BEJI_PURIFICATION_IDR,
+    kidPrice: null,
+    minPax: 1,
+    selfMeet: {
+      name: GRIYA_BEJI_VENUE.name,
+      address: GRIYA_BEJI_VENUE.address,
+      mapUrl: GRIYA_BEJI_VENUE.mapUrl,
+    },
+  },
+  {
+    id: GRIYA_BEJI_OFFERS.palmReading.id,
+    title: GRIYA_BEJI_OFFERS.palmReading.label,
+    times: ["09:00", "10:00", "11:00", "14:00", "15:00"],
+    adultPrice: GRIYA_BEJI_PALM_READING_IDR,
+    kidPrice: null,
+    minPax: 1,
+    selfMeet: {
+      name: GRIYA_BEJI_VENUE.name,
+      address: GRIYA_BEJI_VENUE.address,
+      mapUrl: GRIYA_BEJI_VENUE.mapUrl,
+    },
+  },
+  {
+    id: GRIYA_BEJI_OFFERS.healing.id,
+    title: GRIYA_BEJI_OFFERS.healing.label,
+    times: ["09:00", "10:00", "11:00", "14:00", "15:00"],
+    adultPrice: GRIYA_BEJI_HEALING_IDR,
+    kidPrice: null,
+    minPax: 1,
+    selfMeet: {
+      name: GRIYA_BEJI_VENUE.name,
+      address: GRIYA_BEJI_VENUE.address,
+      mapUrl: GRIYA_BEJI_VENUE.mapUrl,
+    },
   },
 ]
 

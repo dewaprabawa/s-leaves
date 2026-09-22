@@ -56,6 +56,7 @@ import {
   buildCyclingCookingComboWhatsAppUrl,
   getCyclingCookingCombo,
 } from "@/data/cultureSales"
+import { GRIYA_BEJI_PURIFICATION_IDR, GRIYA_BEJI_SALES } from "@/data/griyaBeji"
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
 
 const HERO_BLUR_DATA_URL =
@@ -112,7 +113,7 @@ const CATEGORY_SECTION_META: {
     eyebrow: "Holy water",
     title: "Culture & heritage",
     subtitle:
-      "Private Tirta Empul or Pura Beji melukat near Ubud — shuttle, guide, and breakfast included from IDR 1,200,000 per person.",
+      "Private Tirta Empul or Pura Beji melukat from IDR 1,200,000, plus Griya Beji Waterfall purification, palm reading, and mental healing in Punggul.",
   },
 ]
 
@@ -141,6 +142,13 @@ const pricingData: PricingRow[] = [
     bookHref: "/book?activity=tirta-empu-purification",
     pax: "Private · Tirta Empul or Beji · shuttle + breakfast included",
     price: MELUKAT_PRICE_IDR,
+    highlight: true,
+  },
+  {
+    activity: "Griya Beji Waterfall Purification",
+    bookHref: `/book?activity=${GRIYA_BEJI_SALES.id}`,
+    pax: "Punggul · 300K melukat · 1M palm · 1.5M healing · not Tirta Empul · admission extra",
+    price: GRIYA_BEJI_PURIFICATION_IDR,
     highlight: true,
   },
   {
@@ -240,6 +248,11 @@ const travelGuides = [
     title: "Tirta Empu Melukat near Ubud",
     excerpt: "Private holy-spring purification — Tirta Empul or Beji, breakfast included, IDR 1,200,000 / person.",
     href: "/blog/tirta-empu-melukat-ubud-guide",
+  },
+  {
+    title: "Griya Beji Waterfall near Ubud",
+    excerpt: "Punggul waterfall melukat from IDR 300,000 — palm reading 1M, mental healing 1.5M. Not Tirta Empul.",
+    href: "/blog/griya-beji-waterfall-ubud-guide",
   },
   {
     title: "Bali ATV Tour Near Ubud (2026)",

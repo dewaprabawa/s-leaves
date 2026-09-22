@@ -86,6 +86,11 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
     "jeep-kintamani-day-tracking",
   ],
   "swing-heaven-bali": ["swing-heaven", "swing-heaven-lunch"],
+  "griya-beji-waterfall": [
+    "griya-beji-purification",
+    "griya-beji-palm-reading",
+    "griya-beji-mental-healing",
+  ],
 }
 
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
@@ -241,6 +246,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {props.tourSlug === "swing-heaven-bali" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Lunch package {formatIdr(getListPrice("swing-heaven-lunch"))} · dress hire extra
+            </p>
+          ) : null}
+          {props.tourSlug === "griya-beji-waterfall" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Palm reading IDR 1,000,000 · mental healing IDR 1,500,000 · admission extra
             </p>
           ) : null}
           {props.tourSlug === "balinese-cooking-class" ? (

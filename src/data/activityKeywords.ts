@@ -25,6 +25,7 @@ export type ActivityKeywordSlug =
   | 'balinese-cooking-class'
   | 'batur-sunrise-jeep-tour'
   | 'swing-heaven-bali'
+  | 'griya-beji-waterfall'
 
 export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'bali-atv-adventure': [
@@ -152,6 +153,20 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
     'flying dress hire Bali',
     'Bali swing lunch package',
   ],
+  'griya-beji-waterfall': [
+    'Griya Beji Waterfall',
+    'Taman Beji Griya Waterfall',
+    'Griya Beji melukat',
+    'waterfall purification Ubud',
+    'purification Bali waterfall',
+    'palm reading Bali Ubud',
+    'mental healing Bali',
+    'Griya Beji Punggul',
+    'Beji Griya vs Tirta Empul',
+    'waterfall melukat Abiansemal',
+    'hypnotherapy Bali spiritual',
+    'healing therapy Ubud',
+  ],
 }
 
 export const COMBO_KEYWORDS = [
@@ -174,6 +189,7 @@ export const SITE_KEYWORDS: string[] = [
   ...ACTIVITY_KEYWORDS['full-day-ubud-tour'].slice(0, 2),
   ...ACTIVITY_KEYWORDS['half-day-ubud-tanah-lot-tour'].slice(0, 2),
   ...ACTIVITY_KEYWORDS['swing-heaven-bali'].slice(0, 3),
+  ...ACTIVITY_KEYWORDS['griya-beji-waterfall'].slice(0, 3),
   'cycling cooking class Ubud',
   'things to do near Ubud',
   'Bali travel activities Ubud',
@@ -194,6 +210,10 @@ export const BOOK_PAGE_KEYWORDS: string[] = [
   'Ubud ricefield cycling tour',
   'Private Mount Batur jeep tour',
   'Swing Heaven Bali',
+  'Griya Beji Waterfall',
+  'waterfall purification Ubud',
+  'palm reading Bali Ubud',
+  'mental healing Bali',
   'private melukat Bali',
   'book Bali adventure WhatsApp',
   'all-inclusive ATV Bali',
@@ -276,6 +296,10 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'swing-heaven-bongkasa-location': 'swing-heaven-bali',
   'flying-dress-hire-bali-swing': 'swing-heaven-bali',
   'bali-swing-with-lunch-ubud': 'swing-heaven-bali',
+  'griya-beji-waterfall-ubud-guide': 'griya-beji-waterfall',
+  'griya-beji-vs-tirta-empul-melukat': ['griya-beji-waterfall', 'tirta-empu-purification'],
+  'palm-reading-bali-griya-beji': 'griya-beji-waterfall',
+  'mental-healing-bali-griya-beji': 'griya-beji-waterfall',
   'things-to-do-near-ubud-2026': 'site',
   'bali-adventure-packages-prices-2026': 'site',
   'ubud-hotel-pickup-bali-adventures-explained': 'site',
@@ -307,6 +331,22 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'bali-swing-with-lunch-ubud': [
     'Bali swing with lunch',
     'Swing Heaven lunch package',
+  ],
+  'griya-beji-waterfall-ubud-guide': [
+    'Griya Beji Waterfall price',
+    'waterfall purification Ubud',
+  ],
+  'griya-beji-vs-tirta-empul-melukat': [
+    'Griya Beji vs Tirta Empul',
+    'Taman Beji Griya vs Pura Beji',
+  ],
+  'palm-reading-bali-griya-beji': [
+    'palm reading Bali price',
+    'palm reading Ubud',
+  ],
+  'mental-healing-bali-griya-beji': [
+    'mental healing Bali',
+    'healing therapy Ubud',
   ],
 }
 

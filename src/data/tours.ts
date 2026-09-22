@@ -14,6 +14,14 @@ import {
   SWING_HEAVEN_SPOTS,
   SWING_HEAVEN_VENUE,
 } from "@/data/swingHeaven"
+import {
+  GRIYA_BEJI_ADMISSION_DOMESTIC_IDR,
+  GRIYA_BEJI_ADMISSION_INTL_IDR,
+  GRIYA_BEJI_HEALING_IDR,
+  GRIYA_BEJI_PALM_READING_IDR,
+  GRIYA_BEJI_PURIFICATION_IDR,
+  GRIYA_BEJI_VENUE,
+} from "@/data/griyaBeji"
 
 const COOKING_PRIVATE_SOLO_DIFF =
   COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
@@ -1950,6 +1958,155 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
         question: "Can anyone join the ritual?",
         answer:
           "Guests of any faith may take part if they follow temple etiquette. Women who are menstruating should not enter the inner courtyards or the purification pools. Children may join when they are comfortable in chest-deep water; tell us ages on WhatsApp.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: "griya-beji-waterfall",
+    title: "Griya Beji Waterfall Purification near Ubud",
+    slug: "griya-beji-waterfall",
+    category: "culture",
+    area: GRIYA_BEJI_VENUE.area,
+    venue: `${GRIYA_BEJI_VENUE.name}, ${GRIYA_BEJI_VENUE.address}`,
+    isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet at Griya Beji",
+    duration: "1–2.5 Hours",
+    basePrice: GRIYA_BEJI_PURIFICATION_IDR,
+    seoTitle: "Griya Beji Waterfall Melukat | From 300K",
+    seoDescription:
+      "Griya Beji Waterfall in Punggul — purification IDR 300K, palm reading 1M, mental healing 1.5M. Not Tirta Empul. WhatsApp booking.",
+    heroImage: {
+      url: "/images/adventures/griya-beji-waterfall.jpg",
+      alt: "Guests at Taman Beji Griya Waterfall in Punggul, Abiansemal near Ubud",
+      width: 1600,
+      height: 1000,
+    },
+    gallery: [
+      {
+        url: "/images/adventures/griya-beji-waterfall.jpg",
+        alt: "Guests gathered by the spring at Taman Beji Griya Waterfall",
+      },
+      {
+        url: "/images/adventures/griya-beji-purification.jpg",
+        alt: "Water purification (melukat) at sacred spring spouts near Ubud",
+      },
+      {
+        url: "/images/adventures/griya-beji-ceremony.jpg",
+        alt: "Temple offerings before a Griya Beji purification ceremony",
+      },
+    ],
+    shortDescription:
+      "Waterfall purification (melukat) at Taman Beji Griya in Punggul from IDR 300,000. Palm reading IDR 1,000,000. Mental healing IDR 1,500,000. Not Tirta Empul or Pura Beji.",
+    fullDescription: `**Griya Beji Waterfall — purification, palm reading, mental healing (not Tirta Empul)**
+
+[Taman Beji Griya Waterfall](${GRIYA_BEJI_VENUE.siteUrl}) is a living shrine on **Jl. Mawar, Desa Punggul, Abiansemal** — a short drive from Ubud, in the same Badung district as our ATV arena. The park runs **waterfall melukat**, **palm reading**, and **mental healing**. This is **not** [Tirta Empul or Pura Beji](/tours/tirta-empu-purification) (our private **IDR 1,200,000** temple morning with shuttle and breakfast).
+
+### 2026 park menu (per person)
+| Offering | Price | Notes |
+|--------|-------|----------|
+| Waterfall purification (melukat) | **IDR ${GRIYA_BEJI_PURIFICATION_IDR.toLocaleString("id-ID")}** | Offerings, prayer, spring-fed pool |
+| Palm reading | **IDR ${GRIYA_BEJI_PALM_READING_IDR.toLocaleString("id-ID")}** | Hands + birth date · book ahead |
+| Mental healing therapy | **IDR ${GRIYA_BEJI_HEALING_IDR.toLocaleString("id-ID")}** | Guided relaxation · not a medical clinic |
+| International admission | **IDR ${GRIYA_BEJI_ADMISSION_INTL_IDR.toLocaleString("id-ID")}** | Domestic **IDR ${GRIYA_BEJI_ADMISSION_DOMESTIC_IDR.toLocaleString("id-ID")}** · extra at the gate |
+
+Hours **${GRIYA_BEJI_VENUE.hours}**. We confirm the live board on WhatsApp before you transfer.
+
+### Pickup
+Hotel pickup is **IDR 400,000** (same adventure surcharge as ATV / Swing Heaven), or **self-meet at Griya Beji** with no transport fee. Village lanes into Punggul are narrow — a driver who knows Abiansemal helps.
+
+### Etiquette
+Sarong and sash — swimwear is not ritual dress. Women who are menstruating should not enter the inner grounds or the purification pool. Keep voices low. Healing therapy is **not** a hospital clinic; the park asks guests with psychosis or dissociative disorders not to use hypnotherapy.
+
+Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat) · [2026 price guide](/blog/griya-beji-waterfall-ubud-guide) · [palm reading](/blog/palm-reading-bali-griya-beji) · [mental healing](/blog/mental-healing-bali-griya-beji).`,
+    highlights: [
+      "Waterfall purification (melukat) from IDR 300,000",
+      "Palm reading IDR 1,000,000 · mental healing IDR 1,500,000",
+      "Punggul, Abiansemal — not Tirta Empul or Pura Beji",
+      "Pickup IDR 400,000 or free self-meet",
+    ],
+    included: [
+      "Chosen ritual or therapy (purification, palm reading, or mental healing)",
+      "Park practitioner / pemangku for that offering",
+    ],
+    notIncluded: [
+      "Gate admission (IDR 50,000 international / IDR 20,000 domestic)",
+      "Hotel pickup (IDR 400,000 surcharge — optional)",
+      "Sarong rental if you do not bring your own (confirm on site)",
+      "Lunch and personal expenses",
+    ],
+    itinerary: [
+      {
+        id: "iti-griya-1",
+        time: "Arrive",
+        title: "Check-in at Griya Beji",
+        description:
+          "Self-meet at Jl. Mawar, Desa Punggul, or arrive with optional hotel pickup. Confirm purification, palm reading, and/or mental healing at the lobby.",
+      },
+      {
+        id: "iti-griya-2",
+        time: "Prepare",
+        title: "Sarong, offering, intention",
+        description:
+          "Change into a sarong and sash. The park is a living shrine — swimwear is not the ritual dress.",
+      },
+      {
+        id: "iti-griya-3",
+        time: "Ritual",
+        title: "Purification, reading, or healing",
+        description:
+          "Melukat in the spring-fed pool, sit for palm reading with your birth date, or join mental healing. Book the slots you want — they are separate prices.",
+      },
+      {
+        id: "iti-griya-4",
+        time: "Leave",
+        title: "Change and return",
+        description:
+          "Dry clothes, then self-depart or return with our pickup. Pair the same district with ATV or Swing Heaven on WhatsApp.",
+      },
+    ],
+    activityOptions: [
+      {
+        name: "Waterfall purification (melukat)",
+        priceDiff: 0,
+        description: "Ritual in the spring-fed pool — IDR 300,000. Gate admission extra.",
+      },
+      {
+        name: "Palm reading",
+        priceDiff: GRIYA_BEJI_PALM_READING_IDR - GRIYA_BEJI_PURIFICATION_IDR,
+        description: "Hands + birth date — IDR 1,000,000. Book ahead.",
+      },
+      {
+        name: "Mental healing therapy",
+        priceDiff: GRIYA_BEJI_HEALING_IDR - GRIYA_BEJI_PURIFICATION_IDR,
+        description: "Guided relaxation — IDR 1,500,000. Not a medical clinic.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-griya-1",
+        question: "How much is Griya Beji Waterfall purification near Ubud?",
+        answer:
+          "Waterfall purification (melukat) is IDR 300,000 per person on the 2026 park menu. International admission is IDR 50,000 (domestic IDR 20,000) extra at the gate. Hotel pickup is IDR 400,000 or self-meet in Punggul. Confirm the live board on WhatsApp.",
+      },
+      {
+        id: "faq-griya-2",
+        question: "Is Griya Beji the same as Pura Beji or Tirta Empul?",
+        answer:
+          "No. Taman Beji Griya Waterfall is in Desa Punggul, Abiansemal. Our private Tirta Empul or Pura Beji ticket is a different spring, IDR 1,200,000, with shuttle and breakfast. Do not treat the names as one park.",
+      },
+      {
+        id: "faq-griya-3",
+        question: "How much is palm reading at Griya Beji?",
+        answer:
+          "Palm reading is IDR 1,000,000 per person. Book ahead. Gate admission is extra. It is not medical or legal advice.",
+      },
+      {
+        id: "faq-griya-4",
+        question: "How much is mental healing at Griya Beji?",
+        answer:
+          "Mental healing / healing therapy is IDR 1,500,000 per person. It is guided relaxation, not a hospital clinic. The park asks guests with psychosis or dissociative disorders not to use hypnotherapy.",
       },
     ],
     reviews: [],

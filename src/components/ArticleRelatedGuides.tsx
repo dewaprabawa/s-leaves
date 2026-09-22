@@ -12,6 +12,7 @@ export default function ArticleRelatedGuides({ slug }: Props) {
 
   return (
     <nav
+      id="related-activity-guides"
       aria-label="Related activity guides"
       className="rounded-3xl border border-brand-green/10 bg-white p-6 md:p-8 space-y-6"
     >

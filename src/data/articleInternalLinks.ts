@@ -297,8 +297,10 @@ export function getArticleInternalLinks(slug: string): ArticleLinkGroups {
   }
 
   const selfHref = `/blog/${slug}`
+  const sameCluster = uniqueLinks([...ACTIVITY_ARTICLE_CLUSTERS[clusterId], HUB, PRICES], selfHref)
+  const sameHrefs = new Set(sameCluster.map((link) => link.href))
   return {
-    sameCluster: uniqueLinks([...ACTIVITY_ARTICLE_CLUSTERS[clusterId], HUB, PRICES], selfHref),
-    moreActivities: uniqueLinks(CROSS_CLUSTER[clusterId], selfHref),
+    sameCluster,
+    moreActivities: uniqueLinks(CROSS_CLUSTER[clusterId], selfHref).filter((link) => !sameHrefs.has(link.href)),
   }
 }

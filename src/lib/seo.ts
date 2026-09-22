@@ -124,6 +124,8 @@ export const SITE_NAV_LINKS = [
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },
   { name: 'Swing Heaven Bali', url: `${SITE_URL}/tours/swing-heaven-bali` },
   { name: 'Private Mount Batur Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour` },
+  { name: 'Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026` },
+  { name: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek` },
   { name: 'Tirta Empu Purification (Melukat)', url: `${SITE_URL}/tours/tirta-empu-purification` },
   { name: 'Griya Beji Waterfall Purification', url: `${SITE_URL}/tours/griya-beji-waterfall` },
   { name: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour` },

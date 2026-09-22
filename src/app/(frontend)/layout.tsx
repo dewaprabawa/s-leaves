@@ -137,6 +137,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM content summary" />
         <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full context" />
         <link rel="alternate" type="text/plain" href="/.well-known/llms.txt" title="LLM well-known summary" />

@@ -1,6 +1,8 @@
 import { BLOG_POSTS } from '@/data/blog'
 import { GEO_UPDATED } from '@/data/geoContent'
 import { ACTIVITY_GEO_UPDATED } from '@/data/activityGeo'
+import { COOKING_GEO_UPDATED } from '@/data/cookingGeo'
+import { JEEP_GEO_UPDATED } from '@/data/jeepGeo'
 import { TOURS } from '@/data/tours'
 import { SITE_URL } from '@/lib/seo'
 import type { MetadataRoute } from 'next'
@@ -37,7 +39,20 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'ubud-hotel-pickup-bali-adventures-explained': GEO_UPDATED,
   'bali-adventure-packages-prices-2026': GEO_UPDATED,
   'tirta-empu-melukat-ubud-guide': GEO_UPDATED,
+  'is-bali-swing-worth-it': GEO_UPDATED,
+  'swing-heaven-bali-ubud-guide': GEO_UPDATED,
 }
+
+/** Paths Google should not receive via sitemap (redirects, noindex, or non-HTML). */
+const BLOCKED_SITEMAP_MARKERS = [
+  '/admin',
+  '/api/',
+  '/tools/',
+  '/invoice',
+  '/tours/pejeng-cycling-tour',
+  '/tours/bali-dirt-bike-adventure',
+  '/blog/mount-batur-jeep-vs-trekking',
+]
 
 function toDate(isoDate: string): Date {
   const parsed = isoDate.includes('T') ? new Date(isoDate) : new Date(`${isoDate}T00:00:00.000Z`)
@@ -45,6 +60,12 @@ function toDate(isoDate: string): Date {
     return new Date(`${SITEMAP_UPDATED}T00:00:00.000Z`)
   }
   return parsed
+}
+
+function tourLastModified(slug: string): Date {
+  if (slug === 'balinese-cooking-class') return toDate(COOKING_GEO_UPDATED)
+  if (slug === 'batur-sunrise-jeep-tour') return toDate(JEEP_GEO_UPDATED)
+  return toDate(ACTIVITY_GEO_UPDATED)
 }
 
 function absoluteUrl(path: string): string {
@@ -84,10 +105,9 @@ export function buildCoreSitemapEntries(): MetadataRoute.Sitemap {
 }
 
 export function buildTourSitemapEntries(): MetadataRoute.Sitemap {
-  const lastModified = toDate(ACTIVITY_GEO_UPDATED)
   return TOURS.map((tour) => ({
     url: `${SITE_URL}/tours/${tour.slug}`,
-    lastModified,
+    lastModified: tourLastModified(tour.slug),
     changeFrequency: 'weekly' as const,
     priority: MONEY_TOUR_SLUGS.has(tour.slug) ? 0.95 : 0.85,
     images: uniqueAbsoluteImages([
@@ -110,41 +130,56 @@ export function buildBlogSitemapEntries(): MetadataRoute.Sitemap {
   })
 }
 
-export function buildGeoSitemapEntries(): MetadataRoute.Sitemap {
-  const lastModified = toDate(SITEMAP_UPDATED)
-  return [
-    {
-      url: `${SITE_URL}/llms.txt`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${SITE_URL}/llms-full.txt`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.8,
-    },
-    {
-      url: `${SITE_URL}/pricing.md`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
-      url: `${SITE_URL}/.well-known/llms.txt`,
-      lastModified,
-      changeFrequency: 'weekly',
-      priority: 0.75,
-    },
-  ]
+/**
+ * Assert Google sitemap quality gates at build time so a new tour/post cannot
+ * ship without a loc, and noindex/redirect/non-HTML URLs cannot sneak in.
+ */
+export function assertSitemapInventory(entries: MetadataRoute.Sitemap): void {
+  const urls = entries.map((entry) => entry.url)
+  const unique = new Set(urls)
+  if (unique.size !== urls.length) {
+    throw new Error('Sitemap contains duplicate URLs')
+  }
+
+  for (const tour of TOURS) {
+    const expected = `${SITE_URL}/tours/${tour.slug}`
+    if (!unique.has(expected)) {
+      throw new Error(`Sitemap missing tour ${tour.slug}`)
+    }
+  }
+
+  for (const post of BLOG_POSTS) {
+    const expected = `${SITE_URL}/blog/${post.slug}`
+    if (!unique.has(expected)) {
+      throw new Error(`Sitemap missing blog ${post.slug}`)
+    }
+  }
+
+  for (const url of urls) {
+    if (!url.startsWith(`${SITE_URL}`)) {
+      throw new Error(`Sitemap URL is not the HTTPS www host: ${url}`)
+    }
+    if (url.includes('?')) {
+      throw new Error(`Sitemap includes a query-string URL (use the canonical): ${url}`)
+    }
+    if (url === `${SITE_URL}/tours`) {
+      throw new Error('Sitemap includes /tours which 301s to /#experiences')
+    }
+    if (BLOCKED_SITEMAP_MARKERS.some((marker) => url.includes(marker))) {
+      throw new Error(`Sitemap includes a blocked/redirected path: ${url}`)
+    }
+    if (url.endsWith('.txt') || url.endsWith('.md')) {
+      throw new Error(`Sitemap includes a non-HTML file (keep llms/pricing off Google inventory): ${url}`)
+    }
+  }
 }
 
 export function buildSitemapEntries(): MetadataRoute.Sitemap {
-  return [
+  const entries = [
     ...buildCoreSitemapEntries(),
     ...buildTourSitemapEntries(),
     ...buildBlogSitemapEntries(),
-    ...buildGeoSitemapEntries(),
   ]
+  assertSitemapInventory(entries)
+  return entries
 }

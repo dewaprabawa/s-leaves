@@ -6,7 +6,9 @@ const DISALLOW_NOINDEX = ['/admin/', '/api/', '/tools/', '/invoice']
 
 /**
  * Google crawl + GEO: allow Search / Image / AI crawlers.
- * Sitemap is the only URL list we want Google to treat as canonical inventory.
+ * Sitemap (https://www.sekarbaliactivity.com/sitemap.xml) is the only URL list
+ * we want Google to treat as canonical HTML inventory. llms.txt / pricing.md
+ * stay off that file and are discovered via rel=alternate.
  */
 export default function robots(): MetadataRoute.Robots {
   return {

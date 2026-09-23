@@ -27,6 +27,7 @@ import {
   GIRLS_TRIP_DRIVER_DAY_FROM_IDR,
   GIRLS_TRIP_SLUG,
 } from "@/data/girlsTrip"
+import { PARK_WORKSHOP_TOURS } from "@/data/parkWorkshopTours"
 
 const COOKING_PRIVATE_SOLO_DIFF =
   COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
@@ -2131,12 +2132,16 @@ Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-m
     seoDescription:
       "Family, girls trip, or any private group. Consultation only on WhatsApp — no booking form. We quote the driver, Swing Heaven, jeep, cooking, cycling. Clubs and spa stay yours.",
     heroImage: {
-      url: "/images/adventures/swing-heaven-ayung.jpg",
-      alt: "Private group photo stop at Swing Heaven over the Ayung River on a custom Bali itinerary",
+      url: "/images/adventures/private-bali-itinerary.jpg",
+      alt: "Guest on a Bali clifftop looking over turquoise water on a private itinerary",
       width: 1600,
       height: 1000,
     },
     gallery: [
+      {
+        url: "/images/adventures/private-bali-itinerary.jpg",
+        alt: "Guest on a Bali clifftop looking over turquoise water on a private itinerary",
+      },
       {
         url: "/images/adventures/swing-heaven-ayung.jpg",
         alt: "Jungle swing photo stop on a private Bali itinerary at Swing Heaven Bongkasa",
@@ -2301,6 +2306,7 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
     ],
     reviews: [],
   },
+  ...PARK_WORKSHOP_TOURS,
 ]
 
 export function getTourBySlug(slug: string): Tour | undefined {

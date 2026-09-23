@@ -197,7 +197,7 @@ export function assertSitemapInventory(entries: MetadataRoute.Sitemap): void {
       throw new Error(`Sitemap includes a query-string URL (use the canonical): ${url}`)
     }
     if (url === `${SITE_URL}/tours`) {
-      throw new Error('Sitemap includes /tours which 301s to /#experiences')
+      throw new Error('Sitemap includes /tours which 301s to /experiences')
     }
     if (BLOCKED_SITEMAP_MARKERS.some((marker) => url.includes(marker))) {
       throw new Error(`Sitemap includes a blocked/redirected path: ${url}`)

@@ -1081,7 +1081,7 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
     pickup: "Free Ubud-area hotel pickup",
     duration: "2 Hours",
     basePrice: 750000,
-    seoTitle: "Rice Paddy Cycling Ubud | Lunch + Pickup",
+    seoTitle: "Rice Paddy Cycling Ubud | Free Pickup 750K",
     seoDescription:
       "Rice paddy cycling in Pejeng near Ubud — quiet Subak lanes, lunch included, free Ubud hotel pickup from IDR 750K. Book on WhatsApp.",
     heroImage: {

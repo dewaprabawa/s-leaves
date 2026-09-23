@@ -77,22 +77,30 @@ export default function JeepGeoBlock() {
         ))}
       </div>
 
-      <p className="text-sm text-brand-green-light">
-        Pair with a{' '}
+      <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+        <Link
+          href="/tours/batur-sunrise-jeep-tour"
+          className="inline-flex items-center justify-center rounded-full bg-brand-green px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-green-light transition-colors"
+        >
+          Book Private Jeep
+        </Link>
         <Link
           href="/tours/balinese-cooking-class"
-          className="font-semibold text-brand-green underline underline-offset-2 hover:text-brand-green-light"
+          className="inline-flex items-center justify-center rounded-full border border-brand-green/20 px-5 py-2.5 text-sm font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
         >
-          Tumang cooking class
-        </Link>{' '}
-        or{' '}
+          Pair with Tumang cooking
+        </Link>
+      </div>
+
+      <p className="text-sm text-brand-green-light">
+        Later the same trip:{' '}
         <Link
           href="/tours/ubud-ricefield-cycling-tour"
           className="font-semibold text-brand-green underline underline-offset-2 hover:text-brand-green-light"
         >
           Pejeng ricefield cycling
-        </Link>{' '}
-        later the same trip, or message{' '}
+        </Link>
+        . Message{' '}
         <a
           href={CONTACT_WHATSAPP_URL}
           target="_blank"

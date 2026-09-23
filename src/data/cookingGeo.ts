@@ -12,7 +12,7 @@ import {
 } from '@/data/cultureSales'
 import { ACTIVITY_KEYWORDS } from '@/data/activityKeywords'
 
-export const COOKING_GEO_UPDATED = '2026-09-21'
+export const COOKING_GEO_UPDATED = '2026-09-22'
 export const COOKING_GEO_KEYWORDS = ACTIVITY_KEYWORDS['balinese-cooking-class']
 
 const cookingPromoLabel = `IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString('id-ID')}`

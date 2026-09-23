@@ -547,6 +547,8 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'how-traditional-balinese-kitchens-work': 'balinese-cooking-class',
   'pound-spices-by-hand-not-blender': 'balinese-cooking-class',
   '5-essential-balinese-spices': 'balinese-cooking-class',
+  'what-is-base-genep-balinese-spice-paste-guide': 'balinese-cooking-class',
+  'top-5-traditional-balinese-foods': 'balinese-cooking-class',
   'is-ubud-cycling-tour-worth-it': 'ubud-ricefield-cycling-tour',
   'ubud-ricefield-cycling-tour-guide-2026': 'ubud-ricefield-cycling-tour',
   'pejeng-rice-terrace-cycling-vs-tegallalang': 'ubud-ricefield-cycling-tour',
@@ -607,6 +609,13 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'ebike-vs-pedal-ubud-cycling-tour': ['e-bike vs pedal cycling Ubud'],
   'ubud-cycling-tour-for-families': ['family cycling tour Ubud'],
   'what-is-lawar-balinese-dish': ['what is lawar'],
+  '5-essential-balinese-spices': ['Balinese spices cooking class', 'Base Genep spices'],
+  'what-is-base-genep-balinese-spice-paste-guide': [
+    'what is Base Genep',
+    'Balinese spice paste',
+  ],
+  'top-5-traditional-balinese-foods': ['traditional Balinese food', 'Ayam Betutu'],
+  'tirta-empu-melukat-ubud-guide': ['private melukat Ubud', 'Tirta Empul price'],
   'things-to-do-near-ubud-2026': [
     'things to do near Ubud',
     'Ubud activities 2026',

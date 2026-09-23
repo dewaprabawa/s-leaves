@@ -22,9 +22,9 @@
 
 3. **Ricefield cycling Ubud — free pickup + IDR 750K in the title**  
    - Money page: `/tours/ubud-ricefield-cycling-tour`  
-   - Why it sells: Booking reason is **free Ubud pickup + lunch** on a 2-hour Pejeng ride. Title `Rice Paddy Cycling Ubud | Pejeng` (32 chars) omits both money modifiers (they sit only in the meta). Cluster already has worth-it, vs Tegallalang, combo day, pickup explainer.  
+   - Why it sells: Booking reason is **free Ubud pickup + lunch** on a 2-hour Pejeng ride.  
    - Effort: **S**  
-   - Action: **title tweak** (e.g. `Ricefield Cycling Ubud | Free Pickup 750K`). Do not write another generic cycling guide.
+   - Action: **done 2026-09-22** — SERP title is now `Rice Paddy Cycling Ubud | Free Pickup 750K` (kept main’s “Rice Paddy” head term + this branch’s free-pickup 750K).
 
 4. **Cooking class Ubud worth it 2026 / vegetarian menu**  
    - Money page: `/tours/balinese-cooking-class`  

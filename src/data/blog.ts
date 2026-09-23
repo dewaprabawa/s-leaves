@@ -152,7 +152,7 @@ Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: '/images/melukat/tirta-empu-spout.jpg',
-    seoTitle: 'Tirta Empul or Beji Melukat | 1.2M',
+    seoTitle: 'Private Melukat Ubud | Tirta Empul 1.2M',
     content: `
 **How much is a private Tirta Empul or Beji melukat near Ubud?** **IDR 1,200,000 per person** with Sekar Bali Activity. The private rate includes a **Ubud-area shuttle** (pickup and drop-off), an **English-speaking guide**, temple entrance, a canang offering, sarong, and **breakfast**. Choose **Tirta Empul** (Tampaksiring) or **Pura Beji** (quieter holy spring) when you book. Lunch is not included.
 
@@ -318,6 +318,7 @@ Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) nea
   {
     slug: 'how-much-does-atv-cost-bali-ubud-2026',
     title: 'ATV Cost Near Ubud (2026 Prices)',
+    seoTitle: 'ATV Cost Ubud 2026 | From IDR 750K',
     excerpt:
       'ATV near Ubud from IDR 750K (single) / 1.1M (tandem). Lunch, gear, insurance included. Pickup fees and tubing combos explained.',
     publishedAt: '2026-09-03',
@@ -398,6 +399,7 @@ Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsap
   {
     slug: 'is-ubud-cycling-tour-worth-it',
     title: 'Is an Ubud Cycling Tour Worth It?',
+    seoTitle: 'Is Ubud Cycling Worth It? | Free Pickup 750K',
     excerpt:
       'Ricefield cycling in Pejeng vs Tegallalang crowds — IDR 750K with free Ubud pickup and lunch. Honest pros, cons, and who should skip it.',
     publishedAt: '2026-09-03',
@@ -708,6 +710,7 @@ Ready to explore the ancient kingdom? Book your [Ubud Ricefield Cycling Tour](/t
   {
     slug: 'what-is-the-subak-system-bali',
     title: "What is the Subak System? Understanding Bali's Ancient Irrigation",
+    seoTitle: 'What Is the Subak System? | Pejeng Cycling',
     excerpt: "The lush green rice terraces of Bali aren't just beautiful—they are a marvel of ancient engineering and community cooperation known as the Subak system.",
     publishedAt: "2026-08-11",
     author: "Sekar Bali Activity",
@@ -748,6 +751,7 @@ Ready to see this living heritage up close? Join us in Pejeng and cycle through 
   {
     slug: '5-essential-balinese-spices',
     title: "5 Balinese Spices for Cooking Class",
+    seoTitle: '5 Balinese Spices | Tumang Cooking Class',
     excerpt: "Turmeric, galangal, lemongrass, candlenut, kencur — the Base Genep spices you pound in Tumang Bali Cooking Class.",
     publishedAt: "2026-08-18",
     author: "Sekar Bali Activity",
@@ -999,6 +1003,7 @@ If your main goal is to experience Balinese culture, any time of year is excelle
   {
     slug: "bali-temple-dress-code",
     title: "Bali Temple Dress Code Guide",
+    seoTitle: 'Bali Temple Dress Code | Melukat Ready',
     excerpt: "Sarong, sash, covered shoulders — what temples require in Bali, plus what we provide on tours. Avoid gate turnaways.",
     publishedAt: "2026-08-05",
     author: "Sekar Bali Activity Team",
@@ -1122,6 +1127,7 @@ If you are travelling with teens, on a honeymoon, or you specifically want the j
   {
     slug: "top-5-traditional-balinese-foods",
     title: "Top 5 Traditional Balinese Foods You Must Try",
+    seoTitle: 'Top 5 Balinese Foods | Cook Them at Tumang',
     excerpt: "From slow-roasted chicken to spicy sambal, here are the top 5 authentic Balinese dishes you need to taste during your holiday.",
     publishedAt: "2026-08-07",
     author: "Sekar Bali Activity Team",
@@ -1174,6 +1180,7 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
   {
     slug: "inside-balinese-cooking-class-pejeng",
     title: "Inside Tumang Bali Cooking Class Near Ubud",
+    seoTitle: 'Inside Tumang Cooking Class | Promo 450K',
     excerpt:
       "Market tour, rice-field walk, Base Genep, and 10+ dishes — what happens in Tumang Bali Cooking Class (promo IDR 450,000 / person; was IDR 506,370).",
     publishedAt: "2026-09-08",
@@ -1268,6 +1275,7 @@ While both locations use the UNESCO-recognized **Subak** cooperative irrigation 
   {
     slug: "what-is-base-genep-balinese-spice-paste-guide",
     title: "What Is Base Genep Spice Paste?",
+    seoTitle: 'What Is Base Genep? | Cook It at Tumang',
     excerpt: "Base Genep explained — 15-spice Balinese paste, why hand-pounding matters, and where to cook it in Pejeng.",
     publishedAt: "2026-08-19",
     author: "Sekar Bali Activity Team",
@@ -1674,6 +1682,7 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
   {
     slug: 'bali-atv-all-new-bali-adventure-location-guide',
     title: 'All New Bali Adventure ATV Arena',
+    seoTitle: 'All New Bali Adventure | ATV Arena Ubud',
     excerpt: 'All New Bali Adventure ATV arena near Ubud — directions, pickup options, and what to expect on arrival.',
     publishedAt: '2026-09-02',
     author: 'Sekar Bali Activity',
@@ -1945,6 +1954,7 @@ Cooking-only verdict: [Cooking class Ubud price 2026 — is it worth it?](/blog/
   {
     slug: 'ubud-atv-track-types-mud-jungle-vs-cave-tunnel',
     title: 'Ubud ATV Tracks Explained: Jungle Mud Trail vs Cave & Tunnel Routes',
+    seoTitle: 'Ubud ATV Tracks | Jungle Mud vs Cave',
     excerpt:
       'Ubud ATV operators run different track styles — jungle mud + river crossings vs cave/tunnel routes. What each feels like, and how to pick the right one.',
     publishedAt: '2026-09-09',

@@ -99,9 +99,10 @@ function absoluteUrl(path: string): string {
 }
 
 /**
- * Next.js writes image:loc with no XML escaping. Unsplash query strings
- * (`?auto=format&fit=crop`) make /sitemap.xml not well-formed, so Google
- * (and every strict parser) can drop the file. Strip search/hash.
+ * Next.js interpolates image:loc with no XML escaping. Production GSC error
+ * "Parsing error / Line 90" is Unsplash `?auto=format&fit=crop` — the raw `&`
+ * makes the document not well-formed. Keep image sitemap first-party and
+ * query-free so Search Console can read every loc.
  */
 function sitemapSafeUrl(url: string): string {
   try {
@@ -120,6 +121,8 @@ function uniqueAbsoluteImages(paths: Array<string | undefined>): string[] {
   for (const path of paths) {
     if (!path) continue
     const url = sitemapSafeUrl(absoluteUrl(path))
+    if (!url.startsWith(`${SITE_URL}/`)) continue
+    if (url.includes('&') || url.includes('?') || url.includes('<')) continue
     if (seen.has(url)) continue
     seen.add(url)
     out.push(url)
@@ -241,7 +244,10 @@ export function assertSitemapInventory(entries: MetadataRoute.Sitemap): void {
 
   for (const entry of entries) {
     for (const image of entry.images ?? []) {
-      if (image.includes('&') || image.includes('?')) {
+      if (!image.startsWith(`${SITE_URL}/`)) {
+        throw new Error(`Sitemap image:loc must be first-party (GSC Line 90 was off-site Unsplash): ${image}`)
+      }
+      if (image.includes('&') || image.includes('?') || image.includes('<')) {
         throw new Error(`Sitemap image:loc must be query-free so Next XML stays well-formed: ${image}`)
       }
     }

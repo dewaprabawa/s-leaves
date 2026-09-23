@@ -87,6 +87,9 @@ export default function ActivityGeoBlock({ slug }: Props) {
       <div className="flex flex-col sm:flex-row sm:items-center gap-3">
         <Link
           href={geo.bookHref}
+          {...(/^https?:\/\//.test(geo.bookHref)
+            ? { target: '_blank', rel: 'noopener noreferrer' }
+            : {})}
           className="inline-flex items-center justify-center rounded-full bg-brand-green px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-green-light transition-colors"
         >
           {geo.bookLabel}

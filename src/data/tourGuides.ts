@@ -400,6 +400,43 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Promo 1.3M: jeep, hot spring ticket, meal, coffee, terrace.',
     },
   ],
+  'bali-private-itinerary': [
+    {
+      title: '6-day Bali girls trip itinerary',
+      href: '/blog/bali-6-day-girls-trip-itinerary-2026',
+      blurb: 'Seminyak + Swing Heaven + Uluwatu + Kintamani — consultation only on WhatsApp.',
+    },
+    {
+      title: 'Family private itinerary',
+      href: '/blog/bali-family-private-itinerary-2026',
+      blurb: 'Slow days, cooking, cycling, no-hike jeep — consult on WhatsApp.',
+    },
+    {
+      title: 'What we book vs you book',
+      href: '/blog/bali-private-itinerary-what-we-book-vs-you-book',
+      blurb: 'Driver, swing, jeep on our invoice. Clubs and spa on yours.',
+    },
+    {
+      title: 'What to skip on a 6-day trip',
+      href: '/blog/what-to-skip-on-a-6-day-bali-itinerary',
+      blurb: 'No Penida, no Lovina, no extra temples or mall days.',
+    },
+    {
+      title: 'Swing Heaven Ubud guide',
+      href: '/blog/swing-heaven-bali-ubud-guide',
+      blurb: 'Bongkasa photo day from IDR 530,000 — not Tegallalang.',
+    },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Crater-rim sunrise, meal included — not the summit hike.',
+    },
+    {
+      title: 'Airport transfer DPS → Ubud',
+      href: '/transfers',
+      blurb: 'From IDR 700,000 per MPV. HiAce airport run quoted.',
+    },
+  ],
   'half-day-ubud-tanah-lot-tour': [
     {
       title: 'Tanah Lot sunset half-day 2026',
@@ -465,6 +502,10 @@ export const TOUR_HOST_NOTES: Record<
   'full-day-ubud-tour': {
     title: 'From our Ubud drivers',
     body: 'The published palace–market–Tegalalang order is a starting map, not a locked timetable. We wait while you eat lunch and can skip a stop if the parking lot is a circus. Entrance fees stay separate so the car rate stays honest.',
+  },
+  'bali-private-itinerary': {
+    title: 'From our itinerary desk',
+    body: 'This product is consultation only — paste the plan on WhatsApp, do not use the booking form. Families and groups of 6 usually need a HiAce, not a 4-seat car — we quote that first. We lock Swing Heaven, cooking, cycling, or the Batur jeep on our invoice. Beach-club and spa reservations stay on your cards; the driver still hits those pins.',
   },
   'half-day-ubud-tanah-lot-tour': {
     title: 'From our sunset-run drivers',

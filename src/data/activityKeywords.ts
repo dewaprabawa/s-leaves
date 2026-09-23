@@ -29,6 +29,7 @@ export type ActivityKeywordSlug =
   | 'batur-sunrise-jeep-tour'
   | 'swing-heaven-bali'
   | 'griya-beji-waterfall'
+  | 'bali-private-itinerary'
 
 export type KeywordCluster = {
   /** What travelers type first (H1 / title language). */
@@ -261,6 +262,27 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Beji Griya vs Pura Beji',
     ],
   },
+  'bali-private-itinerary': {
+    head: [
+      'private Bali itinerary',
+      'Bali family trip',
+      'Bali girls trip',
+    ],
+    book: [
+      'custom Bali itinerary',
+      'private driver Bali multi day',
+      'Bali family private tour',
+      'long day Bali private driver',
+      '6 day Bali itinerary',
+      'HiAce private driver Bali',
+      'book private Bali itinerary WhatsApp',
+      'Bali girls trip 2026',
+    ],
+    compare: [
+      'what to skip on a 6 day Bali trip',
+      'Bali itinerary we book vs you book',
+    ],
+  },
 }
 
 export function uniqueKeywords(terms: string[]): string[] {
@@ -292,6 +314,7 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'batur-sunrise-jeep-tour': flattenCluster(KEYWORD_CLUSTERS['batur-sunrise-jeep-tour']),
   'swing-heaven-bali': flattenCluster(KEYWORD_CLUSTERS['swing-heaven-bali']),
   'griya-beji-waterfall': flattenCluster(KEYWORD_CLUSTERS['griya-beji-waterfall']),
+  'bali-private-itinerary': flattenCluster(KEYWORD_CLUSTERS['bali-private-itinerary']),
 }
 
 export const COMBO_KEYWORDS = [
@@ -300,6 +323,7 @@ export const COMBO_KEYWORDS = [
   'ATV + Ayung rafting combo',
   'cycling cooking class Ubud',
   'Ubud outdoor combo package',
+  'private Bali itinerary',
 ] as const
 
 /** Category queries aggregators own — we fight on long-tail + venue names. */
@@ -309,6 +333,10 @@ export const NICHE_KEYWORDS = [
   'Bali travel activities Ubud',
   'book Bali activity WhatsApp',
   'Ubud tours prices',
+  'Bali family trip',
+  'Bali girls trip',
+  'private Bali itinerary',
+  'custom Bali itinerary',
 ] as const
 
 const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
@@ -324,6 +352,7 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
   'luwak-coffee-plantation',
   'full-day-ubud-tour',
   'half-day-ubud-tanah-lot-tour',
+  'bali-private-itinerary',
 ]
 
 /** Homepage / sitewide meta — head term per activity + niche modifiers. */
@@ -353,6 +382,9 @@ export const BOOK_PAGE_KEYWORDS: string[] = uniqueKeywords([
   'palm reading Bali Ubud',
   'mental healing Bali',
   'private melukat Bali',
+  'private Bali itinerary',
+  'Bali family trip',
+  'custom Bali itinerary',
   'book Bali adventure WhatsApp',
   BRAND_KEYWORD,
 ])
@@ -435,6 +467,10 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'how-to-spot-ethical-luwak-coffee-in-bali': 'luwak-coffee-plantation',
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'half-day-ubud-tanah-lot-tour',
+  'bali-6-day-girls-trip-itinerary-2026': 'bali-private-itinerary',
+  'bali-family-private-itinerary-2026': 'bali-private-itinerary',
+  'bali-private-itinerary-what-we-book-vs-you-book': 'bali-private-itinerary',
+  'what-to-skip-on-a-6-day-bali-itinerary': 'bali-private-itinerary',
   'swing-heaven-bali-ubud-guide': 'swing-heaven-bali',
   'is-bali-swing-worth-it': 'swing-heaven-bali',
   'swing-heaven-vs-tegallalang-bali-swing': 'swing-heaven-bali',
@@ -502,6 +538,22 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'mental-healing-bali-griya-beji': [
     'mental healing Bali',
     'healing therapy Ubud',
+  ],
+  'bali-6-day-girls-trip-itinerary-2026': [
+    '6 day Bali girls trip itinerary',
+    'Bali ladies trip 2026',
+  ],
+  'bali-family-private-itinerary-2026': [
+    'Bali family private itinerary',
+    'Bali family trip with private driver',
+  ],
+  'bali-private-itinerary-what-we-book-vs-you-book': [
+    'private Bali itinerary driver',
+    'what we book vs you book Bali',
+  ],
+  'what-to-skip-on-a-6-day-bali-itinerary': [
+    'what to skip on a 6 day Bali trip',
+    'skip Nusa Penida 6 day itinerary',
   ],
 }
 

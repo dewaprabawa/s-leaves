@@ -21,7 +21,7 @@ const MONEY_TOUR_SLUGS = new Set([
   'bali-atv-adventure',
   'bali-private-itinerary',
   'bali-bird-park',
-  'jungle-hopper-bali-safari-and-marine-park',
+  'bali-safari-and-marine-park',
   'canyoning',
 ])
 
@@ -100,6 +100,12 @@ const BLOCKED_SITEMAP_MARKERS = [
   '/invoice',
   '/tours/pejeng-cycling-tour',
   '/tours/bali-dirt-bike-adventure',
+  '/tours/jungle-hopper-bali-safari-and-marine-park',
+  '/tours/dragon-package-bali-safari-and-marine-park',
+  '/tours/leopard-package-bali-safari-and-marine-park',
+  '/tours/rhino-package-bali-safari-and-marine-park',
+  '/tours/elephant-back-safari-package-bali-safari-and-marine-park',
+  '/tours/night-safari-package-bali-safari-and-marine-park',
   '/blog/mount-batur-jeep-vs-trekking',
 ]
 

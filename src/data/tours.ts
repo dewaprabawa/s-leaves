@@ -910,6 +910,26 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         url: "/images/adventures/swing-heaven-ayung.jpg",
         alt: "Jungle swing over the Ayung canopy at Swing Heaven Bali in Bongkasa near Ubud",
       },
+      {
+        url: "/images/adventures/swing-heaven-heart-nest.jpg",
+        alt: "Guest in a flying dress on the heart nest photo spot at Swing Heaven Bali",
+      },
+      {
+        url: "/images/adventures/swing-heaven-stairs.jpg",
+        alt: "Guest in a flying dress on Stairs 2 Heaven at Swing Heaven Bali in Bongkasa",
+      },
+      {
+        url: "/images/adventures/swing-heaven-hanging-sofa.jpg",
+        alt: "Three guests on the hanging sofa swing over the jungle at Swing Heaven Bali",
+      },
+      {
+        url: "/images/adventures/swing-heaven-nest-dress.jpg",
+        alt: "Guest in a long white flying dress beside a nest photo spot at Swing Heaven Bali",
+      },
+      {
+        url: "/images/adventures/swing-heaven-onion-nest.jpg",
+        alt: "Guest in a flying dress inside the onion nest at Swing Heaven Bali",
+      },
     ],
     shortDescription:
       "Jungle swing park in Bongkasa near Ubud — 14 photo spots over the Ayung River valley. Package from IDR 530,000 (tea/coffee/water + insurance) or IDR 630,000 with lunch. Flying dress hire IDR 300,000. Book via WhatsApp.",

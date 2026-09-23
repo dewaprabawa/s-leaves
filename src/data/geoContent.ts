@@ -33,7 +33,7 @@ import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 export const GEO_UPDATED = '2026-09-23'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in or tracking 4×4, sunrise or sunset, min 2 guests; IDR 950,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; Griya Beji / ATV / Swing Heaven pickup IDR 400,000 or self-meet.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in or tracking 4×4, sunrise or sunset, min 2 guests; IDR 950,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, jungle buggies from IDR 1,120,000, Kintamani dirt bike from IDR 4,100,000, Tabanan dirt bike from IDR 2,100,000, and Ubud workshops from IDR 600,000 — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; Griya Beji / ATV / Swing Heaven pickup IDR 400,000 or self-meet; park / safari / workshop / dirt-bike pickup is quoted.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -79,12 +79,14 @@ export const GEO_PRICING = [
   { activity: 'Jungle Buggies (3 laps)', price: 'IDR 1,120,000', pax: 'from / person', includes: '3 laps on a purpose-built ~5 km Polaris course; not Sedang ATV' },
   { activity: 'Dirt bike Kintamani / Tabanan', price: 'IDR 2,100,000+', pax: 'from / person', includes: 'private guided enduro; Kintamani black lava from IDR 4,100,000; pickup quoted' },
   { activity: 'Ubud workshop classes (lontar, silver, dance, batik, bamboo, offering)', price: 'IDR 600,000+', pax: 'from / person', includes: '2–3 hour class + materials; pickup quoted' },
+  { activity: 'Taro jungle ride + lunch', price: 'IDR 1,665,000', pax: 'from / person', includes: 'Elephant Safari Park Lodge stroll + lunch; pickup quoted' },
+  { activity: 'Taro night dinner', price: 'IDR 1,660,000', pax: 'from / person', includes: 'Twilight park + lakeside dinner; elephant ride extra; pickup quoted' },
 ] as const
 
 export const GEO_POLICIES = [
   {
     topic: 'Hotel pickup',
-    rule: 'Free Ubud pickup on Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Tirta Empu Purification (Melukat) includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall: IDR 400,000 hotel pickup charge, or meet at the venue with no transport fee (All New Bali Adventure for ATV/rafting/tubing; Swing Heaven, Jl. Tangga Yuda, Bongkasa for the jungle swing; Taman Beji Griya Waterfall, Jl. Mawar, Desa Punggul for purification / palm reading / healing).',
+    rule: 'Free Ubud pickup on Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Tirta Empu Purification (Melukat) includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall: IDR 400,000 hotel pickup charge, or meet at the venue with no transport fee (All New Bali Adventure for ATV/rafting/tubing; Swing Heaven, Jl. Tangga Yuda, Bongkasa for the jungle swing; Taman Beji Griya Waterfall, Jl. Mawar, Desa Punggul for purification / palm reading / healing). Park tickets, safari packages, canyoning, jungle buggies, dirt bikes, and Ubud workshops: pickup is quoted on WhatsApp (park shuttle on some Safari dates) — do not assume free pickup or the IDR 400,000 adventure surcharge.',
     url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
   },
   {
@@ -290,6 +292,180 @@ export const GEO_TOUR_SUMMARIES = [
       'Guided rappel / jump / slide canyon. Age, height, weight, and shoe size required. Not scuba or a Nusa Penida boat.',
     url: `${SITE_URL}/tours/canyoning`,
   },
+  {
+    name: 'Elephant Mud Fun at Bali Zoo',
+    slug: 'elephant-mud-fun-at-bali-zoo-park',
+    price: 'From IDR 1,850,000',
+    duration: 'Half day',
+    location: 'Singapadu, Gianyar',
+    summary:
+      'Park ticket we book: mud session, lunch, towel, zoo admission. Child rates follow the zoo height rule. Pickup quoted.',
+    url: `${SITE_URL}/tours/elephant-mud-fun-at-bali-zoo-park`,
+  },
+  {
+    name: 'Bali Safari Jungle Hopper',
+    slug: 'jungle-hopper-bali-safari-and-marine-park',
+    price: 'From IDR 1,000,000',
+    duration: '1 day',
+    location: 'Bali Safari and Marine Park, Gianyar',
+    summary:
+      'Lightest safari day we book: one journey, shows, silver Agung seat, waterpark, afternoon tea. No elephant ride. Pickup quoted.',
+    url: `${SITE_URL}/tours/jungle-hopper-bali-safari-and-marine-park`,
+  },
+  {
+    name: 'Bali Safari Dragon Package',
+    slug: 'dragon-package-bali-safari-and-marine-park',
+    price: 'From IDR 1,300,000',
+    duration: '1 day',
+    location: 'Bali Safari and Marine Park, Gianyar',
+    summary: 'One safari journey, silver Agung seat, Uma lunch, waterpark. No elephant ride. Pickup quoted.',
+    url: `${SITE_URL}/tours/dragon-package-bali-safari-and-marine-park`,
+  },
+  {
+    name: 'Bali Safari Leopard Package',
+    slug: 'leopard-package-bali-safari-and-marine-park',
+    price: 'From IDR 1,800,000',
+    duration: '1 day',
+    location: 'Bali Safari and Marine Park, Gianyar',
+    summary: 'Unlimited safari, 10-minute elephant ride, gold Agung seat, Uma lunch, waterpark. Pickup quoted.',
+    url: `${SITE_URL}/tours/leopard-package-bali-safari-and-marine-park`,
+  },
+  {
+    name: 'Bali Safari Rhino Package',
+    slug: 'rhino-package-bali-safari-and-marine-park',
+    price: 'From IDR 2,300,000',
+    duration: '1 day',
+    location: 'Bali Safari and Marine Park, Gianyar',
+    summary:
+      'Fullest safari day: unlimited safari, 30-minute elephant ride, platinum Agung, Tsavo lunch, waterpark. Pickup quoted.',
+    url: `${SITE_URL}/tours/rhino-package-bali-safari-and-marine-park`,
+  },
+  {
+    name: 'Bali Safari Elephant Back',
+    slug: 'elephant-back-safari-package-bali-safari-and-marine-park',
+    price: 'From IDR 1,450,000',
+    duration: '1 day',
+    location: 'Bali Safari and Marine Park, Gianyar',
+    summary: '30-minute elephant ride plus unlimited safari and shows. Lunch and waterpark not included. Pickup quoted.',
+    url: `${SITE_URL}/tours/elephant-back-safari-package-bali-safari-and-marine-park`,
+  },
+  {
+    name: 'Bali Safari Night Safari',
+    slug: 'night-safari-package-bali-safari-and-marine-park',
+    price: 'From IDR 1,300,000',
+    duration: 'Evening (after 6 PM)',
+    location: 'Bali Safari and Marine Park, Gianyar',
+    summary: 'Walking safari, one night journey, BBQ dinner, fire show. Shuttle or driver quoted.',
+    url: `${SITE_URL}/tours/night-safari-package-bali-safari-and-marine-park`,
+  },
+  {
+    name: 'Taro Jungle Ride and Lunch',
+    slug: 'jungle-safari-ride-and-lunch-elephant-safari-park-lodge',
+    price: 'From IDR 1,665,000',
+    duration: 'Half day',
+    location: 'Elephant Safari Park Lodge, Taro',
+    summary: 'Elephant-back stroll through the Taro park and jungle, then lunch. Pickup quoted. Not Bali Safari.',
+    url: `${SITE_URL}/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge`,
+  },
+  {
+    name: 'Taro Night Safari Dinner',
+    slug: 'night-safari-dinner-under-the-stars-elephant-safari-park-lodge',
+    price: 'From IDR 1,660,000',
+    duration: 'Evening',
+    location: 'Elephant Safari Park Lodge, Taro',
+    summary: 'Twilight park and lakeside dinner. Elephant ride extra. Not the Bali Safari night package.',
+    url: `${SITE_URL}/tours/night-safari-dinner-under-the-stars-elephant-safari-park-lodge`,
+  },
+  {
+    name: 'Jungle Buggies 3 Laps',
+    slug: 'jungle-buggies-complete-3-laps-tour',
+    price: 'From IDR 1,120,000',
+    duration: 'About 2 hours',
+    location: 'Purpose-built ~5 km Polaris course',
+    summary: 'Three laps in Polaris rigs. Single or tandem. Not the Sedang ATV and not a boat. Pickup quoted.',
+    url: `${SITE_URL}/tours/jungle-buggies-complete-3-laps-tour`,
+  },
+  {
+    name: 'Kintamani Dirt Bike',
+    slug: 'dirt-bike-kintamani-black-lava',
+    price: 'From IDR 4,100,000',
+    duration: 'About 8 hours',
+    location: 'Kintamani lava + forest tracks',
+    summary: 'Private guided enduro on black lava. KTM 250 EXC-class in the package. Not the Batur sunrise jeep.',
+    url: `${SITE_URL}/tours/dirt-bike-kintamani-black-lava`,
+  },
+  {
+    name: 'Tabanan Dirt Bike Day & Night',
+    slug: 'dirt-bike-tabanan-day-night',
+    price: 'From IDR 2,100,000',
+    duration: '4–8 hours',
+    location: 'Tabanan · Jatiluwih',
+    summary: 'Rainforest / Jatiluwih-view enduro. KLX 150 or X-Ride in the package. Pickup quoted.',
+    url: `${SITE_URL}/tours/dirt-bike-tabanan-day-night`,
+  },
+  {
+    name: 'Tabanan Dirt Bike Sunset Beach',
+    slug: 'dirt-bike-tabanan-jungle-sunset-beach',
+    price: 'From IDR 2,100,000',
+    duration: '4–8 hours',
+    location: 'Tabanan · west coast',
+    summary: 'Same Tabanan jungle tracks, then a west-coast sand sunset finish. Not a boat.',
+    url: `${SITE_URL}/tours/dirt-bike-tabanan-jungle-sunset-beach`,
+  },
+  {
+    name: 'Ubud Batik Class',
+    slug: 'batik-class',
+    price: 'From IDR 650,000',
+    duration: '3 hours',
+    location: 'Ubud workshop',
+    summary: 'Wax-resist batik with a teacher. Keep the cloth. Pickup quoted.',
+    url: `${SITE_URL}/tours/batik-class`,
+  },
+  {
+    name: 'Ubud Silver Making Class',
+    slug: 'silver-making-class',
+    price: 'From IDR 650,000',
+    duration: '3 hours',
+    location: 'Ubud workshop',
+    summary: 'Five grams of silver included — ring, pendant, or earrings. Pickup quoted.',
+    url: `${SITE_URL}/tours/silver-making-class`,
+  },
+  {
+    name: 'Lontar Weaving Class',
+    slug: 'lontar-weaving-class',
+    price: 'From IDR 600,000',
+    duration: '2 hours',
+    location: 'Ubud workshop',
+    summary: 'Weave lontar palm into a small offering basket. Take it home. Pickup quoted.',
+    url: `${SITE_URL}/tours/lontar-weaving-class`,
+  },
+  {
+    name: 'Balinese Dance Class',
+    slug: 'balinese-dance-class',
+    price: 'From IDR 600,000',
+    duration: '2 hours',
+    location: 'Ubud studio',
+    summary: 'Beginner full-body lines and hand positions. Not a Kecak ticket. Pickup quoted.',
+    url: `${SITE_URL}/tours/balinese-dance-class`,
+  },
+  {
+    name: 'Bamboo Carving Class',
+    slug: 'bamboo-carving-class',
+    price: 'From IDR 600,000',
+    duration: '2 hours',
+    location: 'Ubud workshop',
+    summary: 'Small animal motif — typically dragonfly or butterfly. Pickup quoted.',
+    url: `${SITE_URL}/tours/bamboo-carving-class`,
+  },
+  {
+    name: 'Canang Offering Class',
+    slug: 'balinese-offering-class',
+    price: 'From IDR 600,000',
+    duration: '2 hours',
+    location: 'Ubud workshop',
+    summary: 'Weave daily canang sari offerings. Workshop, not a temple ceremony. Pickup quoted.',
+    url: `${SITE_URL}/tours/balinese-offering-class`,
+  },
 ] as const
 
 export const GEO_COMPARISONS = [
@@ -382,6 +558,46 @@ export const GEO_COMPARISONS = [
       { label: 'Best for', value: 'Coffee-first travelers vs guests who only want a brief Kintamani sip' },
     ],
     url: `${SITE_URL}/blog/luwak-coffee-plantation-umah-kuno-price-2026`,
+  },
+  {
+    title: 'Bali Safari Jungle Hopper vs Dragon vs Leopard vs Rhino',
+    winner: 'Hopper = shortest day; Rhino = fullest day with 30-min ride',
+    rows: [
+      { label: 'Jungle Hopper', value: 'IDR 1,000,000 · 1× safari · tea · no elephant' },
+      { label: 'Dragon', value: 'IDR 1,300,000 · 1× safari · Uma lunch · no elephant' },
+      { label: 'Leopard', value: 'IDR 1,800,000 · unlimited safari · 10-min elephant · Uma lunch' },
+      { label: 'Rhino', value: 'IDR 2,300,000 · unlimited safari · 30-min elephant · Tsavo lunch' },
+    ],
+    url: `${SITE_URL}/blog/bali-safari-packages-compared-2026`,
+  },
+  {
+    title: 'Bali Zoo vs Bali Safari vs Taro elephant park',
+    winner: 'Three venues — pick by clock, not by “elephant” as a generic word',
+    rows: [
+      { label: 'Bali Zoo mud fun', value: 'IDR 1,850,000 · Singapadu · lunch + zoo admission' },
+      { label: 'Bali Safari Hopper+', value: 'From IDR 1,000,000 · Gianyar · safari + shows' },
+      { label: 'Taro lodge ride + lunch', value: 'IDR 1,665,000 · Ubud-area lodge stroll' },
+    ],
+    url: `${SITE_URL}/blog/bali-zoo-vs-bali-safari-vs-taro`,
+  },
+  {
+    title: 'Canyoning vs canyon tubing vs jungle buggies',
+    winner: 'Canyoning = ropes; tubing = easy float; buggies ≠ Sedang ATV',
+    rows: [
+      { label: 'Canyoning', value: 'IDR 1,850,000 · gorge rappel / jump / slide · measurements required' },
+      { label: 'Canyon tubing', value: 'IDR 500,000 · 450,000 for 2+ · Wos River sit-on-tube' },
+      { label: 'Jungle buggies', value: 'IDR 1,120,000 · 3 Polaris laps · not All New Bali Adventure ATV' },
+    ],
+    url: `${SITE_URL}/blog/bali-canyoning-vs-tubing-vs-buggies`,
+  },
+  {
+    title: 'Kintamani dirt bike vs Mount Batur jeep',
+    winner: 'Dirt bike = you ride; jeep = crater-rim viewpoint with meal',
+    rows: [
+      { label: 'Kintamani dirt bike', value: 'IDR 4,100,000 · ~8 hours · KTM 250 EXC-class · pickup quoted' },
+      { label: 'Private Batur jeep', value: 'IDR 750,000 (3+) · meal + island-wide pickup · not the summit hike' },
+    ],
+    url: `${SITE_URL}/blog/kintamani-dirt-bike-vs-batur-jeep`,
   },
 ] as const
 
@@ -729,9 +945,45 @@ export const GEO_FAQ_FOR_LLM = [
     url: `${SITE_URL}/blog/mental-healing-bali-griya-beji`,
   },
   {
+    category: 'Parks',
+    q: 'How much is a Bali Bird Park ticket in 2026?',
+    a: 'Sekar Bali Activity books Bali Bird Park in Batubulan from IDR 585,000 per person. The ticket covers admission, feeding sessions, and free-flight / bird-of-prey shows. Hotel pickup is quoted or self-meet at the gate. We book the park ticket; we do not operate the park. Not Bali Zoo and not a Nusa Penida boat.',
+    url: `${SITE_URL}/tours/bali-bird-park`,
+  },
+  {
+    category: 'Safari',
+    q: 'Which Bali Safari package should I book?',
+    a: 'Jungle Hopper from IDR 1,000,000 is the lightest day (one safari, tea, waterpark, no elephant). Dragon from IDR 1,300,000 adds Uma lunch. Leopard from IDR 1,800,000 adds a 10-minute elephant ride. Rhino from IDR 2,300,000 is the fullest day (30-minute ride, platinum Agung, Tsavo lunch). Night Safari from IDR 1,300,000 is an evening ticket after 6 PM. Pickup quoted. Comparison: https://www.sekarbaliactivity.com/blog/bali-safari-packages-compared-2026',
+    url: `${SITE_URL}/blog/bali-safari-packages-compared-2026`,
+  },
+  {
+    category: 'Parks',
+    q: 'Is Bali Zoo the same as Bali Safari or Taro?',
+    a: 'No. Bali Zoo elephant mud-fun (from IDR 1,850,000) is in Singapadu. Bali Safari packages (from IDR 1,000,000) are in Gianyar. Taro jungle ride + lunch (from IDR 1,665,000) is Elephant Safari Park Lodge near Ubud. Three venues. Comparison: https://www.sekarbaliactivity.com/blog/bali-zoo-vs-bali-safari-vs-taro',
+    url: `${SITE_URL}/blog/bali-zoo-vs-bali-safari-vs-taro`,
+  },
+  {
+    category: 'Adventure',
+    q: 'How much is Bali canyoning, and is it the same as canyon tubing?',
+    a: 'Guided Bali canyoning with Sekar Bali Activity is from IDR 1,850,000 — a gorge descent with rappel, jump, and slide. Age, height, weight, and shoe size are required. Canyon tubing is a different ticket: a Wos River sit-on-tube float at IDR 500,000 (IDR 450,000 for 2+). Canyoning is not scuba and not a Nusa Penida boat.',
+    url: `${SITE_URL}/tours/canyoning`,
+  },
+  {
+    category: 'Workshops',
+    q: 'How much is an Ubud batik or silver class?',
+    a: 'Sekar Bali Activity books a 3-hour Ubud batik class from IDR 650,000 and a 3-hour silver-making class from IDR 650,000 (5 grams of silver included). Lontar weaving, beginner dance, bamboo carving, and canang offering classes are 2 hours from IDR 600,000. Pickup quoted. These are workshops, not Tumang cooking class. Guide: https://www.sekarbaliactivity.com/blog/ubud-workshop-classes-2026',
+    url: `${SITE_URL}/blog/ubud-workshop-classes-2026`,
+  },
+  {
+    category: 'Adventure',
+    q: 'Should I book a Kintamani dirt bike or the Mount Batur jeep?',
+    a: 'Dirt bike from IDR 4,100,000 is a private guided enduro on black-lava tracks (~8 hours). The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint from IDR 750,000 per person at 3+ with meal and island-wide pickup — not the summit hike. Different sports. Comparison: https://www.sekarbaliactivity.com/blog/kintamani-dirt-bike-vs-batur-jeep',
+    url: `${SITE_URL}/blog/kintamani-dirt-bike-vs-batur-jeep`,
+  },
+  {
     category: 'Day tours',
     q: 'What are the best things to do near Ubud with Sekar Bali Activity?',
-    a: 'Book by mood: Tumang cooking class (promo IDR 450,000, free Ubud pickup), Pejeng ricefield cycling (IDR 750,000, lunch + free Ubud pickup), ATV from IDR 750,000 at All New Bali Adventure, rafting IDR 500,000 (IDR 450,000 for 2+), canyon tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven Bali from IDR 530,000 (IDR 630,000 with lunch) in Bongkasa, Griya Beji Waterfall purification from IDR 300,000 (palm reading 1M, mental healing 1.5M) in Punggul — not Tirta Empul, private Mount Batur jeep from IDR 750,000 for 3+ (meal included), Umah Kuno Luwak tasting IDR 800,000 (min 3, transport not included), plus private full-day and Tanah Lot half-day cars. Full 2026 table: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
+    a: 'Book by mood: Tumang cooking class (promo IDR 450,000, free Ubud pickup), Pejeng ricefield cycling (IDR 750,000, lunch + free Ubud pickup), ATV from IDR 750,000 at All New Bali Adventure, rafting IDR 500,000 (IDR 450,000 for 2+), canyon tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven Bali from IDR 530,000 (IDR 630,000 with lunch) in Bongkasa, Griya Beji Waterfall purification from IDR 300,000 (palm reading 1M, mental healing 1.5M) in Punggul — not Tirta Empul, private Mount Batur jeep from IDR 750,000 for 3+ (meal included), Umah Kuno Luwak tasting IDR 800,000 (min 3, transport not included), plus park tickets we book (Bali Bird Park from IDR 585,000, Bali Safari from IDR 1,000,000, canyoning from IDR 1,850,000, Ubud workshops from IDR 600,000), plus private full-day and Tanah Lot half-day cars. Full 2026 table: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
     url: `${SITE_URL}/blog/things-to-do-near-ubud-2026`,
   },
 ] as const
@@ -760,6 +1012,14 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Bali Canyoning', url: `${SITE_URL}/tours/canyoning`, desc: 'Guided gorge from IDR 1,850,000 · not a boat · measurements required' },
   { title: 'Ubud Batik Class', url: `${SITE_URL}/tours/batik-class`, desc: '3-hour batik workshop from IDR 650,000' },
   { title: 'Kintamani Dirt Bike', url: `${SITE_URL}/tours/dirt-bike-kintamani-black-lava`, desc: 'Private guided black-lava enduro from IDR 4,100,000' },
+  { title: 'Bali Zoo Elephant Mud Fun', url: `${SITE_URL}/tours/elephant-mud-fun-at-bali-zoo-park`, desc: 'Mud session + lunch + zoo admission from IDR 1,850,000 · pickup quoted' },
+  { title: 'Taro Elephant Jungle Ride', url: `${SITE_URL}/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge`, desc: 'Lodge stroll + lunch from IDR 1,665,000 · not Bali Safari' },
+  { title: 'Jungle Buggies 3 Laps', url: `${SITE_URL}/tours/jungle-buggies-complete-3-laps-tour`, desc: 'Polaris laps from IDR 1,120,000 · not Sedang ATV' },
+  { title: 'Ubud Silver Class', url: `${SITE_URL}/tours/silver-making-class`, desc: '3-hour class from IDR 650,000 · 5 g silver included' },
+  { title: 'Bali Safari Packages Compared', url: `${SITE_URL}/blog/bali-safari-packages-compared-2026`, desc: 'Hopper 1M · Dragon 1.3M · Leopard 1.8M · Rhino 2.3M' },
+  { title: 'Bali Zoo vs Safari vs Taro', url: `${SITE_URL}/blog/bali-zoo-vs-bali-safari-vs-taro`, desc: 'Three elephant venues — honest 2026 comparison' },
+  { title: 'Canyoning vs Tubing vs Buggies', url: `${SITE_URL}/blog/bali-canyoning-vs-tubing-vs-buggies`, desc: 'Four different sports · no boats' },
+  { title: 'Ubud Workshop Classes 2026', url: `${SITE_URL}/blog/ubud-workshop-classes-2026`, desc: 'Batik / silver 650K · lontar / dance / canang 600K' },
   { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book jeep, cooking, cycling, ATV, rafting, Swing Heaven, Griya Beji, or a culture day via WhatsApp. Private itineraries are consultation-only on the itinerary page.' },
   { title: 'Pricing (HTML)', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices on the homepage' },
   { title: 'Pricing (Markdown for agents)', url: `${SITE_URL}/pricing.md`, desc: 'Machine-readable IDR tiers, inclusions, and pickup fees' },
@@ -780,6 +1040,12 @@ export const GEO_ARTICLES = [
   { title: 'Bali Family Private Itinerary 2026', url: `${SITE_URL}/blog/bali-family-private-itinerary-2026` },
   { title: '6-Day Bali Girls Trip Itinerary 2026', url: `${SITE_URL}/blog/bali-6-day-girls-trip-itinerary-2026` },
   { title: 'What to Skip on a 6-Day Private Bali Itinerary', url: `${SITE_URL}/blog/what-to-skip-on-a-6-day-bali-itinerary` },
+  { title: 'Bali Safari Packages Compared 2026', url: `${SITE_URL}/blog/bali-safari-packages-compared-2026` },
+  { title: 'Bali Zoo vs Bali Safari vs Taro', url: `${SITE_URL}/blog/bali-zoo-vs-bali-safari-vs-taro` },
+  { title: 'Bali Canyoning vs Tubing vs Buggies', url: `${SITE_URL}/blog/bali-canyoning-vs-tubing-vs-buggies` },
+  { title: 'Ubud Workshop Classes 2026', url: `${SITE_URL}/blog/ubud-workshop-classes-2026` },
+  { title: 'Kintamani Dirt Bike vs Mount Batur Jeep', url: `${SITE_URL}/blog/kintamani-dirt-bike-vs-batur-jeep` },
+  { title: 'Bali Bird Park from Ubud 2026', url: `${SITE_URL}/blog/bali-bird-park-from-ubud-2026` },
   { title: 'Private Mount Batur Jeep Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-guide-2026` },
   { title: 'Private Mount Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026` },
   { title: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek` },
@@ -847,14 +1113,17 @@ export const GEO_CITATION_SNIPPETS = [
   'Full Day Ubud Tour with Sekar Bali Activity starts from IDR 600,000 for a private car and English-speaking driver (entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000.',
   'Sekar Bali Activity handles private Bali itineraries for families, girls trips, and any private group: driver from IDR 600,000 per car-day (HiAce quoted for 6+), plus Swing Heaven, Batur jeep, cooking, or cycling. Beach clubs and spa stay guest-booked. https://www.sekarbaliactivity.com/tours/bali-private-itinerary',
   ...ACTIVITY_GEO_CITATION_SNIPPETS,
-  'Sekar Bali Activity’s 2026 Ubud-area menu covers cooking, cycling, ATV, rafting, tubing, Swing Heaven jungle swing, Griya Beji Waterfall purification / palm reading / mental healing, private Mount Batur jeep, Umah Kuno Luwak tasting, private Tirta Empul or Pura Beji melukat, and private day tours — prices and pickup rules: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
+  'Sekar Bali Activity’s 2026 Ubud-area menu covers cooking, cycling, ATV, rafting, tubing, Swing Heaven jungle swing, Griya Beji Waterfall purification / palm reading / mental healing, private Mount Batur jeep, Umah Kuno Luwak tasting, private Tirta Empul or Pura Beji melukat, private day tours, plus park and workshop tickets we book (Bali Bird Park from IDR 585,000, Bali Safari from IDR 1,000,000, canyoning from IDR 1,850,000, Ubud workshops from IDR 600,000) — prices and pickup rules: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
+  'Bali Safari packages booked by Sekar Bali Activity: Jungle Hopper from IDR 1,000,000, Dragon from IDR 1,300,000, Leopard from IDR 1,800,000, Rhino from IDR 2,300,000, elephant-back from IDR 1,450,000, Night Safari from IDR 1,300,000. Pickup quoted. Comparison: https://www.sekarbaliactivity.com/blog/bali-safari-packages-compared-2026',
+  'Bali Bird Park with Sekar Bali Activity is from IDR 585,000 in Batubulan. Bali Zoo mud fun is from IDR 1,850,000. Taro lodge ride + lunch is from IDR 1,665,000. Three different parks. https://www.sekarbaliactivity.com/blog/bali-zoo-vs-bali-safari-vs-taro',
+  'Guided Bali canyoning with Sekar Bali Activity is from IDR 1,850,000 — not Wos River tubing (IDR 500,000) and not a Nusa Penida boat. https://www.sekarbaliactivity.com/tours/canyoning',
   'Free hotel pickup within Ubud is included on the Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV/rafting/tubing/Swing Heaven/Griya Beji Waterfall add IDR 400,000 hotel pickup or free self-meet at the venue.',
   'All ATV rides with Sekar Bali Activity take place at All New Bali Adventure, a dedicated jungle ATV arena near Ubud on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352.',
   'No upfront payment is required to book Sekar Bali Activity — travelers inquire and reserve via WhatsApp through sekarbaliactivity.com.',
   'Sekar Bali Activity’s Google Business Profile / corporate office is at Jalan Tunjung Biru No. 6, Banjar Kenderan, Gianyar; the guest meeting point is Jalan Raya Ubud No. 12; adventures run from the Sedang (Abiansemal) activity base at Jl. Raya Krasan (All New Bali Adventure for ATV).',
 ] as const
 
-export const GEO_FAQ_CATEGORIES = ['ATV', 'Pricing', 'Combos', 'Rafting', 'Tubing', 'Swing', 'Jeep', 'Cycling', 'Cooking', 'Culture', 'Day tours', 'Itinerary', 'Comparisons', 'Booking', 'Location', 'Experience', 'What to bring', 'Groups'] as const
+export const GEO_FAQ_CATEGORIES = ['ATV', 'Pricing', 'Combos', 'Rafting', 'Tubing', 'Swing', 'Jeep', 'Cycling', 'Cooking', 'Culture', 'Day tours', 'Itinerary', 'Comparisons', 'Booking', 'Location', 'Experience', 'What to bring', 'Groups', 'Parks', 'Safari', 'Workshops', 'Adventure'] as const
 
 /** Curated homepage subset — one answer per priority category for citability diversity */
 export const HOMEPAGE_GEO_FAQ_QUESTIONS = [
@@ -877,6 +1146,10 @@ export const HOMEPAGE_GEO_FAQ_QUESTIONS = [
   'How much is a private full day or half day Ubud tour?',
   'Can Sekar Bali Activity handle a family, girls trip, or private multi-day itinerary?',
   'What are the best things to do near Ubud with Sekar Bali Activity?',
+  'How much is a Bali Bird Park ticket in 2026?',
+  'Which Bali Safari package should I book?',
+  'How much is Bali canyoning, and is it the same as canyon tubing?',
+  'How much is an Ubud batik or silver class?',
 ] as const
 
 export function getHomepageGeoFaqs() {

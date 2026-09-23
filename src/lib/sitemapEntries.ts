@@ -20,6 +20,9 @@ const MONEY_TOUR_SLUGS = new Set([
   'ubud-ricefield-cycling-tour',
   'bali-atv-adventure',
   'bali-private-itinerary',
+  'bali-bird-park',
+  'jungle-hopper-bali-safari-and-marine-park',
+  'canyoning',
 ])
 
 const HIGH_BLOG_SLUGS = new Set([
@@ -49,6 +52,12 @@ const HIGH_BLOG_SLUGS = new Set([
   'bali-family-private-itinerary-2026',
   'bali-private-itinerary-what-we-book-vs-you-book',
   'what-to-skip-on-a-6-day-bali-itinerary',
+  'bali-safari-packages-compared-2026',
+  'bali-zoo-vs-bali-safari-vs-taro',
+  'bali-canyoning-vs-tubing-vs-buggies',
+  'ubud-workshop-classes-2026',
+  'kintamani-dirt-bike-vs-batur-jeep',
+  'bali-bird-park-from-ubud-2026',
 ])
 
 /** Posts rewritten in the latest GEO pass — recrawl these even if publishedAt is older. */
@@ -75,6 +84,12 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'bali-family-private-itinerary-2026': ACTIVITY_GEO_UPDATED,
   'bali-private-itinerary-what-we-book-vs-you-book': ACTIVITY_GEO_UPDATED,
   'what-to-skip-on-a-6-day-bali-itinerary': ACTIVITY_GEO_UPDATED,
+  'bali-safari-packages-compared-2026': ACTIVITY_GEO_UPDATED,
+  'bali-zoo-vs-bali-safari-vs-taro': ACTIVITY_GEO_UPDATED,
+  'bali-canyoning-vs-tubing-vs-buggies': ACTIVITY_GEO_UPDATED,
+  'ubud-workshop-classes-2026': ACTIVITY_GEO_UPDATED,
+  'kintamani-dirt-bike-vs-batur-jeep': ACTIVITY_GEO_UPDATED,
+  'bali-bird-park-from-ubud-2026': ACTIVITY_GEO_UPDATED,
 }
 
 /** Paths Google should not receive via sitemap (redirects, noindex, or non-HTML). */

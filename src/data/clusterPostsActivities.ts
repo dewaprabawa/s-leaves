@@ -6,7 +6,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
     title: 'Things to Do Near Ubud 2026: Prices, Pickup & What to Book',
     seoTitle: 'Things to Do Near Ubud 2026 | Prices & Booking',
     excerpt:
-      'Every Sekar Bali Activity near Ubud with 2026 IDR prices — cooking, cycling, ATV, rafting, tubing, Swing Heaven, Griya Beji purification, Batur jeep, coffee, and private day tours. WhatsApp booking, no deposit.',
+      'Every Sekar Bali Activity near Ubud with 2026 IDR prices — cooking, cycling, ATV, rafting, tubing, Swing Heaven, Griya Beji, Batur jeep, park tickets, workshops, and private day tours. WhatsApp booking, no deposit.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/og-cover.jpg',
@@ -38,6 +38,13 @@ export const ACTIVITY_CLUSTER_POSTS = [
 | Full day Ubud tour | **600,000** | 10 hrs | Private car | [Full day](/tours/full-day-ubud-tour) |
 | Half day + Tanah Lot | **450,000** | 6 hrs | Private car | [Sunset tour](/tours/half-day-ubud-tanah-lot-tour) |
 | DPS → Ubud transfer | **700,000** / car | One way | Flight tracking | [Transfers](/transfers) |
+| Bali Bird Park | **585,000** | 1 day | Quoted | [Bird Park](/tours/bali-bird-park) |
+| Bali Safari Jungle Hopper | **1,000,000** | 1 day | Quoted | [Jungle Hopper](/tours/jungle-hopper-bali-safari-and-marine-park) |
+| Bali Zoo mud fun | **1,850,000** | Half day | Quoted | [Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park) |
+| Bali canyoning | **1,850,000** | Half / full day | Quoted | [Canyoning](/tours/canyoning) |
+| Jungle buggies 3 laps | **1,120,000** | ~2 hrs | Quoted | [Buggies](/tours/jungle-buggies-complete-3-laps-tour) |
+| Ubud batik / silver class | **650,000** | 3 hrs | Quoted | [Workshops](/blog/ubud-workshop-classes-2026) |
+| Kintamani dirt bike | **4,100,000** | ~8 hrs | Quoted | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 
 Prices are 2026 published tiers. Groups of 2+ or 3+ often pay less per person on ATV, rafting, tubing, cycling, and the jeep.
 
@@ -75,6 +82,18 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 Landing late? [DPS → Ubud private transfer](/transfers) from **IDR 700,000** per vehicle.
 
+## Parks, workshops & dirt bikes (tickets we book)
+
+These are **park or workshop tickets we confirm on WhatsApp** — not our Sedang ATV arena. Pickup is **quoted** (Safari sometimes has a venue shuttle).
+
+**[Bali Bird Park](/tours/bali-bird-park)** in Batubulan from **IDR 585,000**. **[Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park)** from **IDR 1,850,000**. **[Bali Safari](/tours/jungle-hopper-bali-safari-and-marine-park)** from **IDR 1,000,000** (Jungle Hopper) to **IDR 2,300,000** (Rhino). **[Taro lodge](/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge)** ride + lunch from **IDR 1,665,000**. Comparisons: [Safari packages](/blog/bali-safari-packages-compared-2026) · [Zoo vs Safari vs Taro](/blog/bali-zoo-vs-bali-safari-vs-taro) · [Bird Park from Ubud](/blog/bali-bird-park-from-ubud-2026).
+
+**[Canyoning](/tours/canyoning)** from **IDR 1,850,000** is a gorge descent — not tubing, not a boat. **[Jungle buggies](/tours/jungle-buggies-complete-3-laps-tour)** from **IDR 1,120,000** are Polaris laps — not Sedang ATV. Guide: [canyoning vs tubing vs buggies](/blog/bali-canyoning-vs-tubing-vs-buggies).
+
+**[Ubud workshops](/blog/ubud-workshop-classes-2026)** from **IDR 600,000** (2-hour lontar / dance / bamboo / canang) or **IDR 650,000** (3-hour batik / silver).
+
+**[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** from **IDR 4,100,000** is not the [Batur jeep](/tours/batur-sunrise-jeep-tour). Compare: [dirt bike vs jeep](/blog/kintamani-dirt-bike-vs-batur-jeep).
+
 ## How to choose in 30 seconds
 
 | If you want… | Book |
@@ -93,6 +112,10 @@ Landing late? [DPS → Ubud private transfer](/transfers) from **IDR 700,000** p
 | Ethical coffee, 90 minutes | [Umah Kuno](/tours/luwak-coffee-plantation) |
 | Classic Ubud highlights | [Full-day car](/tours/full-day-ubud-tour) |
 | Sunset at the sea temple | [Tanah Lot half day](/tours/half-day-ubud-tanah-lot-tour) |
+| Family bird-park day | [Bali Bird Park](/tours/bali-bird-park) |
+| Safari without an elephant ride | [Jungle Hopper](/tours/jungle-hopper-bali-safari-and-marine-park) |
+| Gorge rappel / jump / slide | [Canyoning](/tours/canyoning) |
+| 3-hour batik or silver | [Ubud workshops](/blog/ubud-workshop-classes-2026) |
 
 ## How to book (no deposit to ask)
 

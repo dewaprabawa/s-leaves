@@ -21,6 +21,7 @@ import {
   GRIYA_BEJI_PURIFICATION_IDR,
   GRIYA_BEJI_VENUE,
 } from '@/data/griyaBeji'
+import { PARK_WORKSHOP_GEO_BY_SLUG } from '@/data/parkWorkshopGeo'
 
 export const ACTIVITY_GEO_UPDATED = '2026-09-23'
 
@@ -643,6 +644,7 @@ export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [SWING.slug]: SWING,
   [GRIYA.slug]: GRIYA,
   [GIRLS_TRIP.slug]: GIRLS_TRIP,
+  ...PARK_WORKSHOP_GEO_BY_SLUG,
 }
 
 export function getActivityGeo(slug: string): ActivityGeoCorpus | undefined {

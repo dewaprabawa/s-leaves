@@ -110,6 +110,34 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book Swing Heaven photo day', href: '/tours/swing-heaven-bali' },
     { title: 'Book the Batur sunrise jeep', href: '/tours/batur-sunrise-jeep-tour' },
   ],
+  parks: [
+    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026' },
+    { title: 'Bali Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro' },
+    { title: 'Bali Bird Park from Ubud', href: '/blog/bali-bird-park-from-ubud-2026' },
+    { title: 'Book Bali Bird Park', href: '/tours/bali-bird-park' },
+    { title: 'Book Jungle Hopper', href: '/tours/jungle-hopper-bali-safari-and-marine-park' },
+    { title: 'Book Bali Zoo mud fun', href: '/tours/elephant-mud-fun-at-bali-zoo-park' },
+  ],
+  canyonBuggy: [
+    { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies' },
+    { title: 'Book Bali canyoning', href: '/tours/canyoning' },
+    { title: 'Book jungle buggies', href: '/tours/jungle-buggies-complete-3-laps-tour' },
+    { title: 'Wos River canyon tubing', href: '/blog/bali-canyon-tubing-guide-ubud' },
+    { title: 'Book Sedang ATV', href: '/tours/bali-atv-adventure' },
+  ],
+  workshops: [
+    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026' },
+    { title: 'Book batik class', href: '/tours/batik-class' },
+    { title: 'Book silver class', href: '/tours/silver-making-class' },
+    { title: 'Book canang class', href: '/tours/balinese-offering-class' },
+    { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class' },
+  ],
+  dirtBike: [
+    { title: 'Kintamani dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep' },
+    { title: 'Book Kintamani dirt bike', href: '/tours/dirt-bike-kintamani-black-lava' },
+    { title: 'Book Tabanan dirt bike', href: '/tours/dirt-bike-tabanan-day-night' },
+    { title: 'Book the Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
+  ],
   site: [
     HUB,
     PRICES,
@@ -182,6 +210,12 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'bali-family-private-itinerary-2026': 'girlsTrip',
   'bali-private-itinerary-what-we-book-vs-you-book': 'girlsTrip',
   'what-to-skip-on-a-6-day-bali-itinerary': 'girlsTrip',
+  'bali-safari-packages-compared-2026': 'parks',
+  'bali-zoo-vs-bali-safari-vs-taro': 'parks',
+  'bali-bird-park-from-ubud-2026': 'parks',
+  'bali-canyoning-vs-tubing-vs-buggies': 'canyonBuggy',
+  'ubud-workshop-classes-2026': 'workshops',
+  'kintamani-dirt-bike-vs-batur-jeep': 'dirtBike',
   'perfect-one-day-ubud-itinerary': 'dayTour',
   'things-to-do-near-ubud-2026': 'site',
   'bali-adventure-packages-prices-2026': 'site',
@@ -258,6 +292,26 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class' },
     HUB,
   ],
+  parks: [
+    { title: 'Ubud workshop classes', href: '/blog/ubud-workshop-classes-2026' },
+    { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
+    HUB,
+  ],
+  canyonBuggy: [
+    { title: 'Ayung River rafting', href: '/tours/whitewater-rafting' },
+    { title: 'Kintamani dirt bike vs jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep' },
+    HUB,
+  ],
+  workshops: [
+    { title: 'Tumang cooking class (free Ubud pickup)', href: '/tours/balinese-cooking-class' },
+    { title: 'Griya Beji Waterfall', href: '/tours/griya-beji-waterfall' },
+    HUB,
+  ],
+  dirtBike: [
+    { title: 'Jeep vs sunrise trek', href: '/blog/mount-batur-jeep-vs-sunrise-trek' },
+    { title: 'Canyoning vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies' },
+    HUB,
+  ],
   site: [
     { title: 'Batur jeep price guide', href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026' },
     { title: 'Cooking class Ubud price', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
@@ -265,6 +319,8 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     { title: 'Swing Heaven vs Tegallalang', href: '/blog/swing-heaven-vs-tegallalang-bali-swing' },
     { title: 'Griya Beji vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
     { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
+    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026' },
+    { title: 'Ubud workshop classes', href: '/blog/ubud-workshop-classes-2026' },
   ],
 }
 

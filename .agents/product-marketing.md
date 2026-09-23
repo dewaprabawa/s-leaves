@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.10
+**Document version:** v2.11
 **Last updated:** 2026-09-23
 
 ## Product Overview
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.11 (2026-09-23) — GEO/SEO now covers the imported park / workshop tickets: tour-page answer blocks, llms.txt / pricing.md, and comparison articles (Safari packages, Zoo vs Safari vs Taro, canyoning vs tubing vs buggies, Ubud workshops, dirt bike vs Batur jeep, Bird Park from Ubud). Pickup on those tickets is **quoted** — do not invent free pickup or the IDR 400K adventure surcharge.
 - v2.10 (2026-09-23) — Imported park / workshop tickets we can book (Bird Park, Bali Zoo mud fun, Bali Safari packages, Taro lodge, canyoning, jungle buggies, dirt bike, Ubud craft classes). Source from-price **+ IDR 200,000**. Skipped visa, Nusa Penida / island fastboats, scuba/snorkel boats, and our existing ATV + rafting SKUs.
 - v2.9 (2026-09-23) — Private Bali itineraries (family / girls / any group) are **consultation only** on WhatsApp — no booking popup or `/book` checkout.
 - v2.8 (2026-09-23) — Added **Bali girls trip / custom 4–7 day itinerary** as a commercial use case: we book driver days (car from IDR 600K; HiAce quoted), Swing Heaven, and Batur jeep; we do not sell FINNS/clubs/spa/Kecak/watersports.

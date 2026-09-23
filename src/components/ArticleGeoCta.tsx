@@ -72,11 +72,17 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'swing-heaven-bongkasa-location': 'swing-heaven-bali',
   'flying-dress-hire-bali-swing': 'swing-heaven-bali',
   'bali-swing-with-lunch-ubud': 'swing-heaven-bali',
+  'bali-safari-packages-compared-2026': 'jungle-hopper-bali-safari-and-marine-park',
+  'bali-zoo-vs-bali-safari-vs-taro': 'elephant-mud-fun-at-bali-zoo-park',
+  'bali-bird-park-from-ubud-2026': 'bali-bird-park',
+  'bali-canyoning-vs-tubing-vs-buggies': 'canyoning',
+  'ubud-workshop-classes-2026': 'batik-class',
+  'kintamani-dirt-bike-vs-batur-jeep': 'dirt-bike-kintamani-black-lava',
 }
 
 const HUB_SNIPPET: ArticleGeoSnippet = {
   tldr:
-    'Sekar Bali Activity publishes 2026 Ubud-area IDR on every money page: Tumang cooking promo IDR 450,000 with free Ubud pickup, Pejeng cycling IDR 750,000, ATV from IDR 750,000, rafting and tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven from IDR 530,000, private Batur jeep from IDR 750,000 (3+). WhatsApp booking — no deposit to inquire.',
+    'Sekar Bali Activity publishes 2026 Ubud-area IDR on every money page: Tumang cooking promo IDR 450,000 with free Ubud pickup, Pejeng cycling IDR 750,000, ATV from IDR 750,000, rafting and tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven from IDR 530,000, private Batur jeep from IDR 750,000 (3+), plus park tickets we book (Bird Park from IDR 585,000, Safari from IDR 1,000,000, canyoning from IDR 1,850,000, workshops from IDR 600,000). WhatsApp booking — no deposit to inquire.',
   updated: ACTIVITY_GEO_UPDATED,
   bookHref: '/book',
   bookLabel: 'Book an activity',

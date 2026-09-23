@@ -338,8 +338,14 @@ export const NICHE_KEYWORDS = [
   'private Bali itinerary',
   'custom Bali itinerary',
   'Bali Safari ticket',
+  'Bali Safari package comparison',
   'Bali canyoning',
+  'Bali Bird Park',
+  'Bali Zoo elephant mud fun',
   'Ubud batik class',
+  'Ubud silver class',
+  'Kintamani dirt bike',
+  'jungle buggies Bali',
 ] as const
 
 const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
@@ -363,6 +369,10 @@ export const SITE_KEYWORDS: string[] = uniqueKeywords([
   ...KEYWORD_CLUSTERS['batur-sunrise-jeep-tour'].head.slice(0, 3),
   ...ACTIVITY_ORDER.flatMap((slug) => KEYWORD_CLUSTERS[slug].head.slice(0, 2)),
   'cycling cooking class Ubud',
+  'Bali Bird Park',
+  'Bali Safari ticket',
+  'Bali canyoning',
+  'Ubud batik class',
   ...NICHE_KEYWORDS,
   BRAND_KEYWORD,
 ])
@@ -388,6 +398,10 @@ export const BOOK_PAGE_KEYWORDS: string[] = uniqueKeywords([
   'private Bali itinerary',
   'Bali family trip',
   'custom Bali itinerary',
+  'Bali Bird Park',
+  'Bali Safari Jungle Hopper',
+  'Bali canyoning',
+  'Ubud batik class',
   'book Bali adventure WhatsApp',
   BRAND_KEYWORD,
 ])
@@ -395,108 +409,121 @@ export const BOOK_PAGE_KEYWORDS: string[] = uniqueKeywords([
 /** Park tickets and Ubud workshops we book (imported catalog — +IDR 200K vs source from-price). */
 export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
   'bali-bird-park': {
-    head: ['Bali Bird Park', 'Bali Bird Park ticket'],
-    book: ['Bali Bird Park price', 'Bali Bird Park from Ubud'],
+    head: ['Bali Bird Park', 'Bali Bird Park ticket', 'Bali Bird Park Batubulan'],
+    book: [
+      'Bali Bird Park price 2026',
+      'Bali Bird Park from Ubud',
+      'Bali Bird Park with pickup',
+      'family bird park Bali',
+    ],
     compare: ['Bali Bird Park vs Bali Zoo'],
   },
   'elephant-mud-fun-at-bali-zoo-park': {
-    head: ['Bali Zoo elephant mud fun', 'elephant mud fun Bali'],
-    book: ['Bali Zoo elephant price', 'Bali Zoo mud fun Ubud'],
-    compare: ['Bali Zoo vs Bali Safari'],
+    head: ['Bali Zoo elephant mud fun', 'elephant mud fun Bali', 'Bali Zoo ticket'],
+    book: [
+      'Bali Zoo elephant price 2026',
+      'Bali Zoo mud fun Ubud',
+      'Bali Zoo elephant mud fun with lunch',
+    ],
+    compare: ['Bali Zoo vs Bali Safari', 'Bali Zoo vs Taro elephant'],
   },
   'night-safari-package-bali-safari-and-marine-park': {
-    head: ['Bali Safari night safari', 'night safari Bali'],
-    book: ['Bali Safari night package price'],
-    compare: ['Bali Safari night vs day'],
+    head: ['Bali Safari night safari', 'night safari Bali', 'Bali Safari evening ticket'],
+    book: ['Bali Safari night package price', 'Bali Safari night safari from Ubud'],
+    compare: ['Bali Safari night vs day', 'Bali Safari night vs Taro dinner'],
   },
   'rhino-package-bali-safari-and-marine-park': {
     head: ['Bali Safari Rhino package', 'Bali Safari and Marine Park'],
-    book: ['Bali Safari Rhino package price'],
+    book: ['Bali Safari Rhino package price', 'Bali Safari unlimited safari'],
     compare: ['Rhino vs Leopard Bali Safari'],
   },
   'leopard-package-bali-safari-and-marine-park': {
     head: ['Bali Safari Leopard package'],
-    book: ['Bali Safari Leopard package price'],
+    book: ['Bali Safari Leopard package price', 'Bali Safari elephant ride 10 minutes'],
     compare: ['Leopard vs Dragon Bali Safari'],
   },
   'elephant-back-safari-package-bali-safari-and-marine-park': {
     head: ['Bali Safari elephant ride', 'elephant back safari Bali'],
-    book: ['Bali Safari elephant ride price'],
+    book: ['Bali Safari elephant ride price', '30 minute elephant ride Bali Safari'],
     compare: ['elephant ride Bali Safari vs Taro'],
   },
   'dragon-package-bali-safari-and-marine-park': {
     head: ['Bali Safari Dragon package'],
-    book: ['Bali Safari Dragon package price'],
+    book: ['Bali Safari Dragon package price', 'Bali Safari with lunch'],
     compare: ['Dragon vs Jungle Hopper Bali Safari'],
   },
   'jungle-hopper-bali-safari-and-marine-park': {
-    head: ['Bali Safari Jungle Hopper', 'Bali Safari ticket'],
-    book: ['Bali Safari Jungle Hopper price'],
+    head: ['Bali Safari Jungle Hopper', 'Bali Safari ticket', 'Bali Safari from Ubud'],
+    book: ['Bali Safari Jungle Hopper price', 'cheapest Bali Safari ticket'],
     compare: ['Jungle Hopper vs Dragon Bali Safari'],
   },
-  'canyoning': {
-    head: ['Bali canyoning', 'canyoning Ubud'],
-    book: ['Bali canyoning price', 'Kalimudah canyon Bali'],
-    compare: ['canyoning vs canyon tubing Bali'],
+  canyoning: {
+    head: ['Bali canyoning', 'canyoning Ubud', 'Kalimudah canyon Bali'],
+    book: [
+      'Bali canyoning price 2026',
+      'Bali canyoning from Ubud',
+      'family canyoning Bali',
+    ],
+    compare: ['canyoning vs canyon tubing Bali', 'canyoning vs jungle buggies'],
   },
   'night-safari-dinner-under-the-stars-elephant-safari-park-lodge': {
     head: ['Taro night safari dinner', 'Elephant Safari Park Lodge dinner'],
-    book: ['Taro elephant park dinner price'],
+    book: ['Taro elephant park dinner price', 'Taro night safari from Ubud'],
     compare: ['Taro night safari vs Bali Safari night'],
   },
   'jungle-safari-ride-and-lunch-elephant-safari-park-lodge': {
     head: ['Taro elephant jungle ride', 'Elephant Safari Park Lodge'],
-    book: ['Taro elephant ride lunch price'],
+    book: ['Taro elephant ride lunch price', 'Taro elephant safari from Ubud'],
     compare: ['Taro elephant ride vs Bali Safari'],
   },
   'jungle-buggies-complete-3-laps-tour': {
-    head: ['Bali jungle buggies', 'Polaris buggy Bali'],
-    book: ['jungle buggies 3 laps price'],
+    head: ['Bali jungle buggies', 'Polaris buggy Bali', 'jungle buggy 3 laps'],
+    book: ['jungle buggies 3 laps price', 'Polaris buggy Bali price'],
     compare: ['jungle buggies vs ATV Ubud'],
   },
   'dirt-bike-kintamani-black-lava': {
-    head: ['Kintamani dirt bike', 'Bali enduro Kintamani'],
-    book: ['Kintamani black lava dirt bike price'],
+    head: ['Kintamani dirt bike', 'Bali enduro Kintamani', 'black lava dirt bike Bali'],
+    book: ['Kintamani black lava dirt bike price', 'KTM 250 enduro Bali'],
     compare: ['dirt bike vs Mount Batur jeep'],
   },
   'dirt-bike-tabanan-day-night': {
     head: ['Tabanan dirt bike', 'Jatiluwih dirt bike'],
-    book: ['Tabanan dirt bike price'],
+    book: ['Tabanan dirt bike price', 'KLX 150 dirt bike Bali'],
     compare: ['Tabanan vs Kintamani dirt bike'],
   },
   'dirt-bike-tabanan-jungle-sunset-beach': {
-    head: ['Tabanan dirt bike sunset beach'],
+    head: ['Tabanan dirt bike sunset beach', 'Tabanan jungle sunset dirt bike'],
     book: ['Tabanan jungle sunset dirt bike price'],
     compare: ['Tabanan sunset dirt bike vs day ride'],
   },
   'lontar-weaving-class': {
     head: ['lontar weaving class Ubud', 'lontar class Bali'],
-    book: ['lontar weaving class price'],
+    book: ['lontar weaving class price', 'lontar weaving Ubud 2 hours'],
     compare: ['lontar vs batik class Ubud'],
   },
   'silver-making-class': {
     head: ['silver making class Ubud', 'Celuk silver class'],
-    book: ['Ubud silver class price'],
+    book: ['Ubud silver class price', 'silver class 5 grams Bali'],
     compare: ['silver class vs batik class Ubud'],
   },
   'balinese-dance-class': {
-    head: ['Balinese dance class Ubud'],
-    book: ['Balinese dance class price'],
+    head: ['Balinese dance class Ubud', 'beginner Balinese dance'],
+    book: ['Balinese dance class price', '2 hour dance class Ubud'],
     compare: ['dance class vs offering class Ubud'],
   },
   'batik-class': {
     head: ['batik class Ubud', 'batik workshop Bali'],
-    book: ['Ubud batik class price'],
+    book: ['Ubud batik class price', '3 hour batik class Ubud'],
     compare: ['batik vs silver class Ubud'],
   },
   'bamboo-carving-class': {
-    head: ['bamboo carving class Ubud'],
+    head: ['bamboo carving class Ubud', 'bamboo workshop Bali'],
     book: ['bamboo carving class price'],
     compare: ['bamboo carving vs lontar class'],
   },
   'balinese-offering-class': {
-    head: ['canang offering class Ubud', 'Balinese offering class'],
-    book: ['canang sari class price'],
+    head: ['canang offering class Ubud', 'Balinese offering class', 'canang sari class'],
+    book: ['canang sari class price', 'offering class Ubud 2 hours'],
     compare: ['offering class vs dance class Ubud'],
   },
 }
@@ -586,6 +613,12 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'bali-family-private-itinerary-2026': 'bali-private-itinerary',
   'bali-private-itinerary-what-we-book-vs-you-book': 'bali-private-itinerary',
   'what-to-skip-on-a-6-day-bali-itinerary': 'bali-private-itinerary',
+  'bali-safari-packages-compared-2026': 'site',
+  'bali-zoo-vs-bali-safari-vs-taro': 'site',
+  'bali-canyoning-vs-tubing-vs-buggies': ['canyon-tubing', 'bali-atv-adventure'],
+  'ubud-workshop-classes-2026': 'site',
+  'kintamani-dirt-bike-vs-batur-jeep': 'batur-sunrise-jeep-tour',
+  'bali-bird-park-from-ubud-2026': 'site',
   'swing-heaven-bali-ubud-guide': 'swing-heaven-bali',
   'is-bali-swing-worth-it': 'swing-heaven-bali',
   'swing-heaven-vs-tegallalang-bali-swing': 'swing-heaven-bali',
@@ -677,6 +710,31 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'what to skip on a 6 day Bali trip',
     'skip Nusa Penida 6 day itinerary',
   ],
+  'bali-safari-packages-compared-2026': [
+    'Bali Safari package comparison',
+    'Jungle Hopper vs Dragon vs Leopard vs Rhino',
+  ],
+  'bali-zoo-vs-bali-safari-vs-taro': [
+    'Bali Zoo vs Bali Safari',
+    'Taro elephant park vs Bali Safari',
+  ],
+  'bali-canyoning-vs-tubing-vs-buggies': [
+    'canyoning vs canyon tubing Bali',
+    'jungle buggies vs ATV Ubud',
+  ],
+  'ubud-workshop-classes-2026': [
+    'Ubud batik class price',
+    'Ubud silver class',
+    'canang offering class Ubud',
+  ],
+  'kintamani-dirt-bike-vs-batur-jeep': [
+    'dirt bike vs Mount Batur jeep',
+    'Kintamani dirt bike price',
+  ],
+  'bali-bird-park-from-ubud-2026': [
+    'Bali Bird Park price 2026',
+    'Bali Bird Park from Ubud',
+  ],
 }
 
 export function getBlogKeywords(slug: string): string[] | undefined {
@@ -695,7 +753,7 @@ export function getBlogKeywords(slug: string): string[] | undefined {
   const slugs = Array.isArray(mapped) ? mapped : [mapped]
   return uniqueKeywords([
     ...extras,
-    ...slugs.flatMap((s) => ACTIVITY_KEYWORDS[s]),
+    ...slugs.flatMap((s) => getActivityKeywords(s) ?? []),
     BRAND_KEYWORD,
   ])
 }
@@ -714,6 +772,12 @@ export function buildKeywordBaseLlmsSection(): string {
     '',
     ...ACTIVITY_ORDER.map((slug) => {
       const cluster = KEYWORD_CLUSTERS[slug]
+      const compare = cluster.compare.length ? ` | compare: ${cluster.compare.join(', ')}` : ''
+      return `- **${slug}** — head: ${cluster.head.join(', ')} | book: ${cluster.book.join(', ')}${compare}`
+    }),
+    '',
+    'Park tickets and Ubud workshops we book (source from-price + IDR 200,000). Pickup is quoted — do not invent free hotel pickup.',
+    ...Object.entries(PARK_WORKSHOP_KEYWORD_CLUSTERS).map(([slug, cluster]) => {
       const compare = cluster.compare.length ? ` | compare: ${cluster.compare.join(', ')}` : ''
       return `- **${slug}** — head: ${cluster.head.join(', ')} | book: ${cluster.book.join(', ')}${compare}`
     }),

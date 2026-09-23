@@ -437,6 +437,111 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'From IDR 700,000 per MPV. HiAce airport run quoted.',
     },
   ],
+  'bali-bird-park': [
+    { title: 'Bali Bird Park from Ubud 2026', href: '/blog/bali-bird-park-from-ubud-2026', blurb: 'IDR 585K · Batubulan shows · pickup quoted.' },
+    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Bird Park is a fourth venue — not an elephant park.' },
+    { title: 'Things to do near Ubud 2026', href: '/blog/things-to-do-near-ubud-2026', blurb: 'Family park tickets next to cooking and jeep prices.' },
+  ],
+  'elephant-mud-fun-at-bali-zoo-park': [
+    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Mud fun is Bali Zoo in Singapadu — not Safari.' },
+    { title: 'Bali Safari packages', href: '/blog/bali-safari-packages-compared-2026', blurb: 'If you wanted a safari journey instead.' },
+    { title: 'Taro jungle ride + lunch', href: '/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge', blurb: 'Quieter lodge stroll near Ubud.' },
+  ],
+  'jungle-hopper-bali-safari-and-marine-park': [
+    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Hopper 1M · Dragon 1.3M · Leopard 1.8M · Rhino 2.3M.' },
+    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Three elephant venues, three clocks.' },
+    { title: 'Upgrade to Dragon (lunch)', href: '/tours/dragon-package-bali-safari-and-marine-park', blurb: 'Same park, Uma lunch instead of tea.' },
+  ],
+  'dragon-package-bali-safari-and-marine-park': [
+    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Dragon sits between Hopper and Leopard.' },
+    { title: 'Jungle Hopper (cheaper, tea)', href: '/tours/jungle-hopper-bali-safari-and-marine-park', blurb: 'Skip lunch if you want the lightest day.' },
+    { title: 'Leopard (10-min ride)', href: '/tours/leopard-package-bali-safari-and-marine-park', blurb: 'Add a short elephant ride + gold Agung.' },
+  ],
+  'leopard-package-bali-safari-and-marine-park': [
+    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Leopard vs Rhino: 10 min vs 30 min ride.' },
+    { title: 'Rhino (30-min ride)', href: '/tours/rhino-package-bali-safari-and-marine-park', blurb: 'Platinum Agung + Tsavo lunch.' },
+    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Confirm you want Gianyar, not Taro.' },
+  ],
+  'rhino-package-bali-safari-and-marine-park': [
+    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Rhino is the fullest day ticket we book.' },
+    { title: 'Leopard (shorter ride)', href: '/tours/leopard-package-bali-safari-and-marine-park', blurb: '10-minute ride + Uma lunch if Rhino is too long.' },
+    { title: 'Elephant-back only', href: '/tours/elephant-back-safari-package-bali-safari-and-marine-park', blurb: '30-minute ride without lunch or waterpark.' },
+  ],
+  'elephant-back-safari-package-bali-safari-and-marine-park': [
+    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Ride-focused day — lunch not included.' },
+    { title: 'Taro jungle ride + lunch', href: '/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge', blurb: 'Different venue, lunch included.' },
+    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Three parks that all say “elephant”.' },
+  ],
+  'night-safari-package-bali-safari-and-marine-park': [
+    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Night is a different clock — not a day upgrade.' },
+    { title: 'Taro night dinner', href: '/tours/night-safari-dinner-under-the-stars-elephant-safari-park-lodge', blurb: 'Lakeside dinner at a different lodge.' },
+    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Pick the evening venue on purpose.' },
+  ],
+  'jungle-safari-ride-and-lunch-elephant-safari-park-lodge': [
+    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Taro is the Ubud-area lodge, not Gianyar Safari.' },
+    { title: 'Taro night dinner', href: '/tours/night-safari-dinner-under-the-stars-elephant-safari-park-lodge', blurb: 'Same lodge, evening ticket.' },
+    { title: 'Bali Safari elephant-back', href: '/tours/elephant-back-safari-package-bali-safari-and-marine-park', blurb: '30-minute ride at the big safari park.' },
+  ],
+  'night-safari-dinner-under-the-stars-elephant-safari-park-lodge': [
+    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Taro dinner ≠ Bali Safari Night Safari.' },
+    { title: 'Taro jungle ride + lunch', href: '/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge', blurb: 'Daytime ticket at the same lodge.' },
+    { title: 'Bali Safari Night Safari', href: '/tours/night-safari-package-bali-safari-and-marine-park', blurb: 'BBQ + night journey in Gianyar.' },
+  ],
+  canyoning: [
+    { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'Ropes vs sit-on-tube vs Polaris laps.' },
+    { title: 'Wos River canyon tubing', href: '/tours/canyon-tubing', blurb: 'Easy float at IDR 500K — not a gorge descent.' },
+    { title: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour', blurb: 'Land Polaris course if you want engines, not ropes.' },
+  ],
+  'jungle-buggies-complete-3-laps-tour': [
+    { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'Buggies are not the Sedang ATV.' },
+    { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle mud at All New Bali Adventure from IDR 750K.' },
+    { title: 'Bali canyoning', href: '/tours/canyoning', blurb: 'Gorge descent if you wanted water + ropes.' },
+  ],
+  'dirt-bike-kintamani-black-lava': [
+    { title: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep', blurb: 'You ride vs you sit at a crater-rim viewpoint.' },
+    { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour', blurb: 'Meal + island-wide pickup — not the summit hike.' },
+    { title: 'Tabanan dirt bike', href: '/tours/dirt-bike-tabanan-day-night', blurb: 'Rainforest / Jatiluwih line from IDR 2.1M.' },
+  ],
+  'dirt-bike-tabanan-day-night': [
+    { title: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep', blurb: 'Tabanan is rainforest; Kintamani is lava.' },
+    { title: 'Sunset-beach finish', href: '/tours/dirt-bike-tabanan-jungle-sunset-beach', blurb: 'Same from-price, west-coast sand ending.' },
+    { title: 'Kintamani black lava', href: '/tours/dirt-bike-kintamani-black-lava', blurb: 'Bigger enduro day from IDR 4.1M.' },
+  ],
+  'dirt-bike-tabanan-jungle-sunset-beach': [
+    { title: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep', blurb: 'Sunset beach is still a dirt bike, not a jeep.' },
+    { title: 'Tabanan day & night', href: '/tours/dirt-bike-tabanan-day-night', blurb: 'Same tracks without the beach finish.' },
+    { title: 'Kintamani black lava', href: '/tours/dirt-bike-kintamani-black-lava', blurb: 'Altitude lava dunes instead of Tabanan jungle.' },
+  ],
+  'batik-class': [
+    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Batik vs silver vs lontar vs canang.' },
+    { title: 'Silver making class', href: '/tours/silver-making-class', blurb: '3 hours · 5 g silver · same from-price band.' },
+    { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class', blurb: 'Kitchen instead of wax — free Ubud pickup.' },
+  ],
+  'silver-making-class': [
+    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: '5 g silver included; extra silver quoted.' },
+    { title: 'Batik class', href: '/tours/batik-class', blurb: '3-hour cloth workshop if you wanted wax, not metal.' },
+    { title: 'Lontar weaving', href: '/tours/lontar-weaving-class', blurb: '2-hour palm craft from IDR 600K.' },
+  ],
+  'lontar-weaving-class': [
+    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Lontar is the basket craft; canang is the daily offering.' },
+    { title: 'Canang offering class', href: '/tours/balinese-offering-class', blurb: 'Weave the offerings you see on every doorway.' },
+    { title: 'Bamboo carving', href: '/tours/bamboo-carving-class', blurb: '2-hour carved souvenir instead of palm.' },
+  ],
+  'balinese-dance-class': [
+    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Beginner studio class — not a Kecak ticket.' },
+    { title: 'Canang offering class', href: '/tours/balinese-offering-class', blurb: 'Pair movement with the daily offering craft.' },
+    { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class', blurb: 'Hands-on kitchen if you wanted food, not dance.' },
+  ],
+  'bamboo-carving-class': [
+    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Small animal motif — typically dragonfly or butterfly.' },
+    { title: 'Lontar weaving', href: '/tours/lontar-weaving-class', blurb: 'Palm basket instead of carved bamboo.' },
+    { title: 'Batik class', href: '/tours/batik-class', blurb: '3-hour cloth if you wanted wax-resist.' },
+  ],
+  'balinese-offering-class': [
+    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Workshop, not a temple ceremony.' },
+    { title: 'Griya Beji Waterfall', href: '/tours/griya-beji-waterfall', blurb: 'Actual waterfall melukat if you wanted ritual.' },
+    { title: 'Lontar weaving', href: '/tours/lontar-weaving-class', blurb: 'Same palm family — offering baskets.' },
+  ],
   'half-day-ubud-tanah-lot-tour': [
     {
       title: 'Tanah Lot sunset half-day 2026',
@@ -522,6 +627,18 @@ export const TOUR_HOST_NOTES: Record<
   'griya-beji-waterfall': {
     title: 'From our Punggul purification hosts',
     body: 'Taman Beji Griya Waterfall is a living shrine on Jl. Mawar, Desa Punggul — waterfall melukat, palm reading, and mental healing. It is not Tirta Empul and not the Pura Beji spring on our 1.2M private ticket. We confirm the 2026 park board and practitioner availability on WhatsApp. Healing is guided relaxation, not a hospital clinic.',
+  },
+  'bali-bird-park': {
+    title: 'From our booking desk',
+    body: 'We book Bali Bird Park in Batubulan the same way we book Swing Heaven — WhatsApp date and guest count, then we confirm the ticket. We do not run the park. Pickup is a quoted driver or self-meet at the gate, never assumed in the from-price.',
+  },
+  'jungle-hopper-bali-safari-and-marine-park': {
+    title: 'From our booking desk',
+    body: 'Safari package names are easy to mix up. Tell us Hopper, Dragon, Leopard, Rhino, elephant-back, or night and we will not upsell you a ride you did not ask for. We book the published park ticket; pickup is shuttle or a quoted car.',
+  },
+  canyoning: {
+    title: 'From our booking desk',
+    body: 'Canyoning only works if every guest sends age, height, weight, and shoe size. We will not confirm a line without those numbers. This is a gorge with ropes — not Wos River tubing and not a Penida boat.',
   },
 }
 

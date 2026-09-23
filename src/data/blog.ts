@@ -4,6 +4,7 @@ import { JEEP_COOKING_CYCLING_CLUSTER_POSTS } from './clusterPostsJeepCookingCyc
 import { SWING_CLUSTER_POSTS } from './clusterPostsSwing'
 import { GRIYA_BEJI_CLUSTER_POSTS } from './clusterPostsGriyaBeji'
 import { GIRLS_TRIP_CLUSTER_POSTS } from './clusterPostsGirlsTrip'
+import { PARK_WORKSHOP_CLUSTER_POSTS } from './clusterPostsParkWorkshop'
 
 export type BlogPost = {
   slug: string
@@ -18,6 +19,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...PARK_WORKSHOP_CLUSTER_POSTS,
   ...GIRLS_TRIP_CLUSTER_POSTS,
   ...GRIYA_BEJI_CLUSTER_POSTS,
   ...SWING_CLUSTER_POSTS,

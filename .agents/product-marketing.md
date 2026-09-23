@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.9
+**Document version:** v2.10
 **Last updated:** 2026-09-23
 
 ## Product Overview
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.10 (2026-09-23) — Imported park / workshop tickets we can book (Bird Park, Bali Zoo mud fun, Bali Safari packages, Taro lodge, canyoning, jungle buggies, dirt bike, Ubud craft classes). Source from-price **+ IDR 200,000**. Skipped visa, Nusa Penida / island fastboats, scuba/snorkel boats, and our existing ATV + rafting SKUs.
 - v2.9 (2026-09-23) — Private Bali itineraries (family / girls / any group) are **consultation only** on WhatsApp — no booking popup or `/book` checkout.
 - v2.8 (2026-09-23) — Added **Bali girls trip / custom 4–7 day itinerary** as a commercial use case: we book driver days (car from IDR 600K; HiAce quoted), Swing Heaven, and Batur jeep; we do not sell FINNS/clubs/spa/Kecak/watersports.
 - v2.7 (2026-09-20) — Private Tumang cooking class is **IDR 1,000,000 per person** (1 guest IDR 1,000,000 / 2 guests IDR 2,000,000). Shared promo stays IDR 450,000.

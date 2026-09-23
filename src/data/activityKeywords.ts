@@ -337,6 +337,9 @@ export const NICHE_KEYWORDS = [
   'Bali girls trip',
   'private Bali itinerary',
   'custom Bali itinerary',
+  'Bali Safari ticket',
+  'Bali canyoning',
+  'Ubud batik class',
 ] as const
 
 const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
@@ -389,18 +392,128 @@ export const BOOK_PAGE_KEYWORDS: string[] = uniqueKeywords([
   BRAND_KEYWORD,
 ])
 
+/** Park tickets and Ubud workshops we book (imported catalog — +IDR 200K vs source from-price). */
+export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
+  'bali-bird-park': {
+    head: ['Bali Bird Park', 'Bali Bird Park ticket'],
+    book: ['Bali Bird Park price', 'Bali Bird Park from Ubud'],
+    compare: ['Bali Bird Park vs Bali Zoo'],
+  },
+  'elephant-mud-fun-at-bali-zoo-park': {
+    head: ['Bali Zoo elephant mud fun', 'elephant mud fun Bali'],
+    book: ['Bali Zoo elephant price', 'Bali Zoo mud fun Ubud'],
+    compare: ['Bali Zoo vs Bali Safari'],
+  },
+  'night-safari-package-bali-safari-and-marine-park': {
+    head: ['Bali Safari night safari', 'night safari Bali'],
+    book: ['Bali Safari night package price'],
+    compare: ['Bali Safari night vs day'],
+  },
+  'rhino-package-bali-safari-and-marine-park': {
+    head: ['Bali Safari Rhino package', 'Bali Safari and Marine Park'],
+    book: ['Bali Safari Rhino package price'],
+    compare: ['Rhino vs Leopard Bali Safari'],
+  },
+  'leopard-package-bali-safari-and-marine-park': {
+    head: ['Bali Safari Leopard package'],
+    book: ['Bali Safari Leopard package price'],
+    compare: ['Leopard vs Dragon Bali Safari'],
+  },
+  'elephant-back-safari-package-bali-safari-and-marine-park': {
+    head: ['Bali Safari elephant ride', 'elephant back safari Bali'],
+    book: ['Bali Safari elephant ride price'],
+    compare: ['elephant ride Bali Safari vs Taro'],
+  },
+  'dragon-package-bali-safari-and-marine-park': {
+    head: ['Bali Safari Dragon package'],
+    book: ['Bali Safari Dragon package price'],
+    compare: ['Dragon vs Jungle Hopper Bali Safari'],
+  },
+  'jungle-hopper-bali-safari-and-marine-park': {
+    head: ['Bali Safari Jungle Hopper', 'Bali Safari ticket'],
+    book: ['Bali Safari Jungle Hopper price'],
+    compare: ['Jungle Hopper vs Dragon Bali Safari'],
+  },
+  'canyoning': {
+    head: ['Bali canyoning', 'canyoning Ubud'],
+    book: ['Bali canyoning price', 'Kalimudah canyon Bali'],
+    compare: ['canyoning vs canyon tubing Bali'],
+  },
+  'night-safari-dinner-under-the-stars-elephant-safari-park-lodge': {
+    head: ['Taro night safari dinner', 'Elephant Safari Park Lodge dinner'],
+    book: ['Taro elephant park dinner price'],
+    compare: ['Taro night safari vs Bali Safari night'],
+  },
+  'jungle-safari-ride-and-lunch-elephant-safari-park-lodge': {
+    head: ['Taro elephant jungle ride', 'Elephant Safari Park Lodge'],
+    book: ['Taro elephant ride lunch price'],
+    compare: ['Taro elephant ride vs Bali Safari'],
+  },
+  'jungle-buggies-complete-3-laps-tour': {
+    head: ['Bali jungle buggies', 'Polaris buggy Bali'],
+    book: ['jungle buggies 3 laps price'],
+    compare: ['jungle buggies vs ATV Ubud'],
+  },
+  'dirt-bike-kintamani-black-lava': {
+    head: ['Kintamani dirt bike', 'Bali enduro Kintamani'],
+    book: ['Kintamani black lava dirt bike price'],
+    compare: ['dirt bike vs Mount Batur jeep'],
+  },
+  'dirt-bike-tabanan-day-night': {
+    head: ['Tabanan dirt bike', 'Jatiluwih dirt bike'],
+    book: ['Tabanan dirt bike price'],
+    compare: ['Tabanan vs Kintamani dirt bike'],
+  },
+  'dirt-bike-tabanan-jungle-sunset-beach': {
+    head: ['Tabanan dirt bike sunset beach'],
+    book: ['Tabanan jungle sunset dirt bike price'],
+    compare: ['Tabanan sunset dirt bike vs day ride'],
+  },
+  'lontar-weaving-class': {
+    head: ['lontar weaving class Ubud', 'lontar class Bali'],
+    book: ['lontar weaving class price'],
+    compare: ['lontar vs batik class Ubud'],
+  },
+  'silver-making-class': {
+    head: ['silver making class Ubud', 'Celuk silver class'],
+    book: ['Ubud silver class price'],
+    compare: ['silver class vs batik class Ubud'],
+  },
+  'balinese-dance-class': {
+    head: ['Balinese dance class Ubud'],
+    book: ['Balinese dance class price'],
+    compare: ['dance class vs offering class Ubud'],
+  },
+  'batik-class': {
+    head: ['batik class Ubud', 'batik workshop Bali'],
+    book: ['Ubud batik class price'],
+    compare: ['batik vs silver class Ubud'],
+  },
+  'bamboo-carving-class': {
+    head: ['bamboo carving class Ubud'],
+    book: ['bamboo carving class price'],
+    compare: ['bamboo carving vs lontar class'],
+  },
+  'balinese-offering-class': {
+    head: ['canang offering class Ubud', 'Balinese offering class'],
+    book: ['canang sari class price'],
+    compare: ['offering class vs dance class Ubud'],
+  },
+}
+
 export function getKeywordCluster(slug: string): KeywordCluster | undefined {
   if (slug in KEYWORD_CLUSTERS) {
     return KEYWORD_CLUSTERS[slug as ActivityKeywordSlug]
   }
-  return undefined
+  return PARK_WORKSHOP_KEYWORD_CLUSTERS[slug]
 }
 
 export function getActivityKeywords(slug: string): string[] | undefined {
   if (slug in ACTIVITY_KEYWORDS) {
     return ACTIVITY_KEYWORDS[slug as ActivityKeywordSlug]
   }
-  return undefined
+  const extra = PARK_WORKSHOP_KEYWORD_CLUSTERS[slug]
+  return extra ? flattenCluster(extra) : undefined
 }
 
 export function getTourPageKeywords(slug: string): string[] | undefined {

@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import ExperiencesCatalogClient from "@/components/ExperiencesCatalogClient"
 import { TOURS } from "@/data/tours"
 import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo"
+import { getTourImageUrl } from "@/lib/tourImage"
 import { SITE_KEYWORDS } from "@/data/activityKeywords"
 
 const TITLE = "All Bali Tours & Activities Near Ubud"
@@ -48,9 +49,10 @@ export default function ExperiencesPage() {
         name: tour.title,
         description: tour.seoDescription ?? tour.shortDescription,
         url: `${SITE_URL}/tours/${tour.slug}`,
-        image: tour.heroImage.url.startsWith("http")
-          ? tour.heroImage.url
-          : `${SITE_URL}${tour.heroImage.url}`,
+        image: (() => {
+          const src = getTourImageUrl(tour)
+          return src.startsWith("http") ? src : `${SITE_URL}${src}`
+        })(),
         offers: {
           "@type": "Offer",
           price: tour.basePrice,

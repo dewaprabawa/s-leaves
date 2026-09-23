@@ -10,6 +10,7 @@ import remarkGfm from 'remark-gfm'
 import ArticleBookingCta from '@/components/ArticleBookingCta'
 import ArticleGeoCta from '@/components/ArticleGeoCta'
 import ArticleRelatedGuides from '@/components/ArticleRelatedGuides'
+import WorkshopClassCards from '@/components/WorkshopClassCards'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -296,6 +297,7 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
 
         <ArticleGeoCta slug={post.slug} />
+        {post.slug === 'ubud-workshop-classes-2026' ? <WorkshopClassCards /> : null}
 
         {/* Content */}
         <article className="blog-content prose prose-lg max-w-none prose-headings:font-display prose-headings:font-bold prose-headings:text-brand-green prose-p:text-brand-green-light prose-li:text-brand-green-light prose-strong:text-brand-green prose-a:text-brand-green hover:prose-a:text-brand-green-light">

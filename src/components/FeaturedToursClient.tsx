@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { MapPin, Clock, ArrowRight, Star, Award, ShieldCheck, Heart } from "lucide-react"
 import { useCurrency } from "@/context/CurrencyContext"
+import { getTourImageUrl } from "@/lib/tourImage"
 
 type Props = {
   tours: any[]
@@ -104,7 +105,7 @@ export default function FeaturedToursClient({ tours, title, subtitle }: Props) {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredTours.map((tour) => {
-            const heroUrl = tour.media?.heroImage?.url || ""
+            const heroUrl = getTourImageUrl(tour)
             const basePrice = tour.pricing?.basePrice || 0
             const rating = tour.rating || 5
             const reviewCount = tour.reviewCount || 85

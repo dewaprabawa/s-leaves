@@ -36,9 +36,20 @@ export function resolveBaliSafariSlug(slug: string): string {
   return isBaliSafariSlug(slug) ? BALI_SAFARI_SLUG : slug
 }
 
+/**
+ * Bump when a workshop JPEG is replaced in-place. List cards, tour heroes,
+ * and OG all read this URL — the query string skips the immutable 1-year
+ * `/images/*` cache so landing-page thumbs match the detail page.
+ */
+const HERO_CACHE_BUST: Record<string, string> = {
+  "balinese-dance-class": "2",
+  "silver-making-class": "2",
+}
+
 function hero(slug: string, alt: string) {
+  const bust = HERO_CACHE_BUST[slug]
   return {
-    url: `/images/adventures/${slug}.jpg`,
+    url: `/images/adventures/${slug}.jpg${bust ? `?v=${bust}` : ""}`,
     alt,
     width: 1600,
     height: 1000,

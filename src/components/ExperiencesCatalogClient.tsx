@@ -22,6 +22,7 @@ import { COOKING_GEO_ENTITY } from "@/data/cookingGeo"
 import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
 import { buildWhatsAppConsultationUrl, formatIdr } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
+import { getTourImageAlt, getTourImageUrl } from "@/lib/tourImage"
 
 /** Preferred display order — only categories with at least one tour are shown */
 const CATEGORY_ORDER: TourCategoryId[] = ["food", "village", "adventure", "day-tour", "culture"]
@@ -47,8 +48,8 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
     <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-brand-green/10 bg-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
       <Link href={`/tours/${tour.slug}`} className="relative block aspect-[4/3] w-full overflow-hidden bg-sand">
         <Image
-          src={tour.heroImage.url}
-          alt={tour.heroImage.alt}
+          src={getTourImageUrl(tour)}
+          alt={getTourImageAlt(tour)}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"

@@ -60,6 +60,7 @@ import {
 } from "@/data/cultureSales"
 import { GRIYA_BEJI_PURIFICATION_IDR, GRIYA_BEJI_SALES } from "@/data/griyaBeji"
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
+import { getTourImageAlt, getTourImageUrl } from "@/lib/tourImage"
 
 const HERO_BLUR_DATA_URL =
   "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAKABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EACAQAAIABQUBAAAAAAAAAAAAAAECAAMEESEFEhMxQYH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAAMBAAAAAAAAAAAAAAAAAAABIRH/2gAMAwEAAhEDEQA/AM7RUdmYJMEsFLMffgiCqmvUzGQHcexjJEP0djynJ6HsBWALVzdotZsWiETHkP/Z"
@@ -331,8 +332,8 @@ function ExperienceCard({ tour }: { tour: Tour }) {
     >
       <div className="relative mb-4 aspect-[16/10] overflow-hidden">
         <Image
-          src={tour.heroImage.url}
-          alt={tour.heroImage.alt}
+          src={getTourImageUrl(tour)}
+          alt={getTourImageAlt(tour)}
           fill
           sizes="(max-width: 768px) 100vw, 33vw"
           className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"

@@ -41,6 +41,7 @@ import { getTourPageKeywords } from "@/data/activityKeywords"
 import { TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
 import { GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
+import { getTourImageAlt, getTourImageUrl } from "@/lib/tourImage"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -83,8 +84,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const keywords = getTourPageKeywords(tour.slug)
 
   const ogImage = {
-    url: tour.heroImage.url,
-    alt: tour.heroImage.alt,
+    url: getTourImageUrl(tour),
+    alt: getTourImageAlt(tour),
     ...(tour.heroImage.width ? { width: tour.heroImage.width } : {}),
     ...(tour.heroImage.height ? { height: tour.heroImage.height } : {}),
   }
@@ -620,8 +621,8 @@ export default async function TourPage({ params }: Props) {
             <header className="space-y-6">
               <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-xl">
                 <Image
-                  src={tour.heroImage.url}
-                  alt={tour.heroImage.alt}
+                  src={getTourImageUrl(tour)}
+                  alt={getTourImageAlt(tour)}
                   fill
                   priority
                   sizes="(max-width: 1024px) 100vw, 66vw"

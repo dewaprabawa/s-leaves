@@ -6,6 +6,7 @@ import Image from "next/image"
 import { useRouter, useSearchParams } from "next/navigation"
 import { MapPin, Clock, ArrowRight, Star, Award, ShieldCheck, Heart, Filter, RotateCcw, Search } from "lucide-react"
 import { useCurrency } from "@/context/CurrencyContext"
+import { getTourImageUrl } from "@/lib/tourImage"
 
 type Props = {
   initialTours: any[]
@@ -211,7 +212,7 @@ export default function ToursListClient({ initialTours }: Props) {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTours.map((tour) => {
-              const heroUrl = tour.media?.heroImage?.url || (tour as any).heroImage?.url || ""
+              const heroUrl = getTourImageUrl(tour)
               const basePrice = tour.pricing?.basePrice || (tour as any).basePrice || 0
               const rating = tour.rating || 5
               const reviewCount = tour.reviewCount || 85

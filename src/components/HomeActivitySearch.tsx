@@ -2,8 +2,10 @@
 
 import React, { useState, useRef, useEffect } from "react"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 import { Search } from "lucide-react"
 import { searchTours, getTourCategoryLabel, type Tour } from "@/data/tours"
+import { getTourImageAlt, getTourImageUrl } from "@/lib/tourImage"
 
 type Props = {
   className?: string
@@ -100,8 +102,18 @@ export default function HomeActivitySearch({ className = "" }: Props) {
                   <button
                     type="button"
                     onClick={() => goTo(tour)}
-                    className="flex w-full flex-col items-start gap-0.5 px-4 py-3 text-left hover:bg-sand transition-colors"
+                    className="flex w-full items-center gap-3 px-4 py-3 text-left hover:bg-sand transition-colors"
                   >
+                    <span className="relative h-11 w-16 shrink-0 overflow-hidden rounded-lg bg-sand">
+                      <Image
+                        src={getTourImageUrl(tour)}
+                        alt={getTourImageAlt(tour)}
+                        fill
+                        sizes="64px"
+                        className="object-cover"
+                      />
+                    </span>
+                    <span className="flex min-w-0 flex-col items-start gap-0.5">
                     <span className="text-sm font-semibold text-brand-green">
                       {tour.title}
                     </span>
@@ -109,6 +121,7 @@ export default function HomeActivitySearch({ className = "" }: Props) {
                       {getTourCategoryLabel(tour.category)}
                       {tour.area ? ` · ${tour.area}` : ""} · from IDR{" "}
                       {tour.basePrice.toLocaleString("id-ID")}
+                    </span>
                     </span>
                   </button>
                 </li>

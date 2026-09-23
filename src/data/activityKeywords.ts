@@ -281,20 +281,24 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Griya Beji Waterfall',
       'Taman Beji Griya Waterfall',
       'waterfall purification Ubud',
+      'Griya Beji waterfall purification',
     ],
     book: [
       'Griya Beji melukat',
       'purification Bali waterfall',
+      'waterfall purification ceremony Ubud',
       'palm reading Bali Ubud',
       'mental healing Bali',
       'Griya Beji Punggul',
       'waterfall melukat Abiansemal',
       'palm reading Ubud price',
       'healing therapy Ubud',
+      'Griya Beji cooking class Ubud',
     ],
     compare: [
       'Griya Beji vs Tirta Empul',
       'Beji Griya vs Pura Beji',
+      'waterfall purification vs Tirta Empul ceremony',
     ],
   },
   'bali-private-itinerary': {
@@ -302,6 +306,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'private Bali itinerary',
       'Bali family trip',
       'Bali girls trip',
+      'long private driver day Ubud',
     ],
     book: [
       'custom Bali itinerary',
@@ -312,6 +317,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'HiAce private driver Bali',
       'book private Bali itinerary WhatsApp',
       'Bali girls trip 2026',
+      'private family Bali itinerary 2026',
     ],
     compare: [
       'what to skip on a 6 day Bali trip',
@@ -664,6 +670,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'bali-family-private-itinerary-2026': 'bali-private-itinerary',
   'bali-private-itinerary-what-we-book-vs-you-book': 'bali-private-itinerary',
   'what-to-skip-on-a-6-day-bali-itinerary': 'bali-private-itinerary',
+  'long-private-driver-day-ubud-2026': 'bali-private-itinerary',
   'bali-safari-packages-compared-2026': 'site',
   'bali-zoo-vs-bali-safari-vs-taro': 'site',
   'bali-canyoning-vs-tubing-vs-buggies': ['canyon-tubing', 'bali-atv-adventure'],
@@ -751,6 +758,8 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'griya-beji-waterfall-ubud-guide': [
     'Griya Beji Waterfall price',
     'waterfall purification Ubud',
+    'Griya Beji waterfall purification',
+    'waterfall purification ceremony Ubud',
   ],
   'griya-beji-vs-tirta-empul-melukat': [
     'Griya Beji vs Tirta Empul',
@@ -779,6 +788,10 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'what-to-skip-on-a-6-day-bali-itinerary': [
     'what to skip on a 6 day Bali trip',
     'skip Nusa Penida 6 day itinerary',
+  ],
+  'long-private-driver-day-ubud-2026': [
+    'long private driver day Ubud',
+    'long day Bali private driver',
   ],
   'bali-safari-packages-compared-2026': [
     'Bali Safari package comparison',

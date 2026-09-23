@@ -252,13 +252,18 @@ const travelGuides = [
     href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
   },
   {
+    title: "Long Private Driver Day near Ubud",
+    excerpt: "One 10–14 hour car from IDR 600K plus cycling + cooking, swing + cooking, or Griya Beji.",
+    href: "/blog/long-private-driver-day-ubud-2026",
+  },
+  {
     title: "Tirta Empu Melukat near Ubud",
     excerpt: "Private holy-spring purification — Tirta Empul or Beji, breakfast included, IDR 1,200,000 / person.",
     href: "/blog/tirta-empu-melukat-ubud-guide",
   },
   {
     title: "Griya Beji Waterfall near Ubud",
-    excerpt: "Punggul waterfall melukat from IDR 300,000 — palm reading 1M, mental healing 1.5M. Not Tirta Empul.",
+    excerpt: "Punggul waterfall purification IDR 300,000 — not Tirta Empul. Pair afternoon cooking on a long driver day.",
     href: "/blog/griya-beji-waterfall-ubud-guide",
   },
   {

@@ -348,6 +348,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
       blurb: 'IDR 400K hotel collect or self-meet in Punggul.',
     },
+    {
+      title: 'Long driver day + kitchen',
+      href: '/blog/long-private-driver-day-ubud-2026',
+      blurb: 'Morning waterfall, afternoon Tumang — pickup rules stay separate.',
+    },
+    {
+      title: 'Private Bali itinerary',
+      href: '/tours/bali-private-itinerary',
+      blurb: 'Family or girls week — consultation only on WhatsApp.',
+    },
   ],
   'luwak-coffee-plantation': [
     {
@@ -460,6 +470,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'What to skip on a 6-day trip',
       href: '/blog/what-to-skip-on-a-6-day-bali-itinerary',
       blurb: 'No Penida, no Lovina, no extra temples or mall days.',
+    },
+    {
+      title: 'Long private driver day',
+      href: '/blog/long-private-driver-day-ubud-2026',
+      blurb: 'One 10–14h car from IDR 600K plus cycling+cooking, swing+cooking, or Griya.',
     },
     {
       title: 'Swing Heaven Ubud guide',

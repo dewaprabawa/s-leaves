@@ -44,6 +44,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/batur-sunrise-jeep-tour',
     secondaryLabel: 'Book the sunrise jeep',
   },
+  'long-private-driver-day-ubud-2026': {
+    headline: 'WhatsApp a long-day consultation',
+    body: 'Consultation only. Send date, hotel, and the pair: cycling + cooking, swing + cooking, or Griya Beji. Driver from IDR 600,000 — no all-in luxury package.',
+    primaryHref: buildGirlsTripWhatsAppUrl({ groupType: 'long day' }),
+    primaryLabel: 'WhatsApp consultation',
+    secondaryHref: '/book?activity=combo-cycling-cooking',
+    secondaryLabel: 'Book cycling + cooking',
+  },
   'what-to-skip-on-a-6-day-bali-itinerary': {
     headline: 'Keep one highlight — cut the boat day',
     body: 'Skip Penida and Lovina. WhatsApp a consultation: we quote Swing Heaven or cooking plus the Batur jeep, then leave slack.',
@@ -338,11 +346,11 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'griya-beji-waterfall-ubud-guide': {
     headline: 'Book Griya Beji Waterfall from IDR 300K',
-    body: 'Punggul waterfall melukat, palm reading 1M, mental healing 1.5M. Not Tirta Empul. WhatsApp booking.',
+    body: 'Punggul waterfall melukat from IDR 300K — not Tirta Empul. Pair afternoon Tumang cooking if you want a kitchen. WhatsApp booking.',
     primaryHref: '/tours/griya-beji-waterfall',
     primaryLabel: 'View Griya Beji',
-    secondaryHref: '/book?activity=griya-beji-waterfall',
-    secondaryLabel: 'WhatsApp checkout',
+    secondaryHref: '/blog/long-private-driver-day-ubud-2026',
+    secondaryLabel: 'Add a long driver day',
   },
   'griya-beji-vs-tirta-empul-melukat': {
     headline: 'Pick the right Beji — then book',

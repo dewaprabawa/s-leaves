@@ -89,6 +89,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Palm reading at Griya Beji', href: '/blog/palm-reading-bali-griya-beji' },
     { title: 'Mental healing at Griya Beji', href: '/blog/mental-healing-bali-griya-beji' },
     { title: 'Book Griya Beji', href: '/tours/griya-beji-waterfall' },
+    { title: 'Long driver day + kitchen', href: '/blog/long-private-driver-day-ubud-2026' },
   ],
   melukat: [
     { title: 'Tirta Empu melukat guide', href: '/blog/tirta-empu-melukat-ubud-guide' },
@@ -114,6 +115,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Family private itinerary', href: '/blog/bali-family-private-itinerary-2026' },
     { title: 'What we book vs you book', href: '/blog/bali-private-itinerary-what-we-book-vs-you-book' },
     { title: 'What to skip on a 6-day trip', href: '/blog/what-to-skip-on-a-6-day-bali-itinerary' },
+    { title: 'Long private driver day', href: '/blog/long-private-driver-day-ubud-2026' },
     { title: 'Consult on a private Bali itinerary', href: '/tours/bali-private-itinerary' },
     { title: 'Book Swing Heaven photo day', href: '/tours/swing-heaven-bali' },
     { title: 'Book the Batur sunrise jeep', href: '/tours/batur-sunrise-jeep-tour' },
@@ -219,6 +221,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'bali-family-private-itinerary-2026': 'girlsTrip',
   'bali-private-itinerary-what-we-book-vs-you-book': 'girlsTrip',
   'what-to-skip-on-a-6-day-bali-itinerary': 'girlsTrip',
+  'long-private-driver-day-ubud-2026': 'girlsTrip',
   'bali-safari-packages-compared-2026': 'parks',
   'bali-zoo-vs-bali-safari-vs-taro': 'parks',
   'bali-bird-park-from-ubud-2026': 'parks',
@@ -283,6 +286,8 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
   ],
   griya: [
     { title: 'Private Tirta Empul / Pura Beji', href: '/tours/tirta-empu-purification' },
+    { title: 'Tumang cooking class (afternoon)', href: '/tours/balinese-cooking-class' },
+    { title: 'Long private driver day', href: '/blog/long-private-driver-day-ubud-2026' },
     { title: 'Swing Heaven Bongkasa', href: '/tours/swing-heaven-bali' },
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
   ],
@@ -306,6 +311,8 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
   ],
   girlsTrip: [
     { title: 'Swing Heaven vs Tegallalang', href: '/blog/swing-heaven-vs-tegallalang-bali-swing' },
+    { title: 'Swing Heaven + cooking day', href: '/blog/swing-heaven-cooking-class-ubud' },
+    { title: 'Griya Beji waterfall purification', href: '/tours/griya-beji-waterfall' },
     { title: 'Private Kintamani Day', href: '/blog/private-kintamani-day-jeep-itinerary' },
     { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class' },
     HUB,

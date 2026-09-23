@@ -2029,7 +2029,7 @@ Hotel pickup is **IDR 400,000** (same adventure surcharge as ATV / Swing Heaven)
 ### Etiquette
 Sarong and sash — swimwear is not ritual dress. Women who are menstruating should not enter the inner grounds or the purification pool. Keep voices low. Healing therapy is **not** a hospital clinic; the park asks guests with psychosis or dissociative disorders not to use hypnotherapy.
 
-Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat) · [2026 price guide](/blog/griya-beji-waterfall-ubud-guide) · [palm reading](/blog/palm-reading-bali-griya-beji) · [mental healing](/blog/mental-healing-bali-griya-beji).`,
+Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat) · [2026 price guide](/blog/griya-beji-waterfall-ubud-guide) · [palm reading](/blog/palm-reading-bali-griya-beji) · [mental healing](/blog/mental-healing-bali-griya-beji). Pair afternoon [Tumang cooking](/tours/balinese-cooking-class) on a [long driver day](/blog/long-private-driver-day-ubud-2026).`,
     highlights: [
       "Waterfall purification (melukat) from IDR 300,000",
       "Palm reading IDR 1,000,000 · mental healing IDR 1,500,000",
@@ -2190,13 +2190,13 @@ One thread. We return a **driver-day total + activity lines** with published IDR
 
 ### Sample shapes
 
-**One long private day:** hotel pickup → [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) or [Swing Heaven](/tours/swing-heaven-bali) → lunch → [Tumang cooking](/tours/balinese-cooking-class) or a guest restaurant → drop. Same car, published activity IDR.
+**One long private day:** hotel pickup → [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) or [Swing Heaven](/tours/swing-heaven-bali) → lunch → [Tumang cooking](/tours/balinese-cooking-class) or a guest restaurant → drop. Same car, published activity IDR. Clock: [long driver day](/blog/long-private-driver-day-ubud-2026) · [cycling + cooking](/book?activity=combo-cycling-cooking) · [swing + cooking](/book?activity=combo-swing-cooking).
 
 **Family 4-day:** arrival transfer → cooking + cycling → no-hike [Batur jeep](/tours/batur-sunrise-jeep-tour) → soft Ubud / [Griya Beji](/tours/griya-beji-waterfall) → airport. Guide: [family private itinerary](/blog/bali-family-private-itinerary-2026).
 
 **Girls 6-day:** Seminyak social → Swing Heaven photo day → Uluwatu + Kecak → soft Ubud → jeep sunrise → water morning + airport. Guide: [6-day girls trip](/blog/bali-6-day-girls-trip-itinerary-2026).
 
-More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book) · [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary)
+More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book) · [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary) · [long driver day](/blog/long-private-driver-day-ubud-2026)
 
 ### How to consult
 

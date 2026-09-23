@@ -36,7 +36,7 @@ This maps the common **2026 ladies plan**: south-Bali villa, two Ubud days, one 
 | 1 | Seminyak + beach club + nightclub | Private driver (optional) | FINNS, lunch, La Favela |
 | 2 | Ubud **photo day** | **[Swing Heaven](/tours/swing-heaven-bali)** + driver | Cretya / Alas Harum dinner |
 | 3 | Uluwatu cliffs + Kecak + late club | Private driver | Temple, Kecak seats, Savaya |
-| 4 | Waterfall + café + spa + statues | Driver; optional **[cooking class](/tours/balinese-cooking-class)** or **[Griya Beji](/tours/griya-beji-waterfall)** | Jewelry class, spa, Taman Dedari |
+| 4 | Waterfall + café + spa + statues | Driver; optional **[cooking class](/tours/balinese-cooking-class)**, **[Griya Beji waterfall purification](/tours/griya-beji-waterfall)**, or **[swing + cooking](/book?activity=combo-swing-cooking)** | Jewelry class, spa, Taman Dedari |
 | 5 | Volcano sunrise + temple + home party | **[Batur jeep](/tours/batur-sunrise-jeep-tour)** (pickup included) | Besakih ticket if you add it; villa party |
 | 6 | Watersports + small shopping + airport | Driver + **[DPS transfer](/transfers)** | Tanjung Benoa, massage, villa dinner |
 
@@ -84,7 +84,76 @@ Tanjung Benoa **flying fish / parasailing** is yours. If the group wants a sport
 4. We reply with **driver-day total + Swing Heaven + jeep** (and any extras)
 5. **No payment to inquire**
 
-**Ready?** WhatsApp a [consultation on the itinerary page](/tours/bali-private-itinerary) (no booking form) or read [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book).
+**Ready?** WhatsApp a [consultation on the itinerary page](/tours/bali-private-itinerary) (no booking form) or read [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book) · [one long driver day](/blog/long-private-driver-day-ubud-2026).
+`,
+  },
+  {
+    slug: 'long-private-driver-day-ubud-2026',
+    title: 'Long Private Driver Day near Ubud: One Car, Two Activities, Honest IDR',
+    seoTitle: 'Long Private Driver Day Ubud | From 600K',
+    excerpt:
+      'One 10–14 hour private car from IDR 600,000 plus the activities we actually sell: cycling + cooking, Swing Heaven + cooking, or Griya Beji. Consultation only. No all-in luxury package.',
+    publishedAt: '2026-09-23',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/full-day-ubud-tour.jpg',
+    content: `
+**What is a long private driver day near Ubud?** It is **one English-speaking car** for **10–14 hours**, not a 6-day week. **[Sekar Bali Activity](/tours/bali-private-itinerary)** quotes the **driver from IDR 600,000** (HiAce quoted for 6+) plus **published activity tickets**. Typical stacks: [cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary), [Swing Heaven + cooking](/blog/swing-heaven-cooking-class-ubud), or morning [Griya Beji](/tours/griya-beji-waterfall) then an afternoon kitchen. **Consultation only** — no booking form, no fake all-inclusive luxury price.
+
+> **Key Takeaways**
+> - Driver **from IDR 600,000** / car-day · **HiAce quoted** for 6+ or a family with bags
+> - You add **published SKUs** — we do not invent a mix discount
+> - Best long-day pairs we already sell: **cycling + cooking** (both free Ubud pickup) or **swing + cooking** (530K + 450K = **980K**, swing pickup separate)
+> - Waterfall ritual: **[Griya Beji](/tours/griya-beji-waterfall)** **IDR 300,000** in Punggul — **not** Tirta Empul
+> - Temple water purification: **[Tirta Empul / Pura Beji](/tours/tirta-empu-purification)** **IDR 1,200,000** with shuttle + breakfast
+> - WhatsApp **group type, date, hotel, guest count** — no payment to inquire
+
+## When one long day is enough
+
+A **family** often wants one culture day and an early villa return. A **couple** wants paddies or a jungle-swing photo, then a kitchen. A **girls trip** uses a long day only if the rest of the week is already social — otherwise book the [6-day sample](/blog/bali-6-day-girls-trip-itinerary-2026).
+
+Do **not** stack Penida, Lovina, three temples, and a mall. Skip list: [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary).
+
+## Three clocks we can actually run
+
+| Shape | Morning | Afternoon | From-price (activities only) | Pickup honesty |
+| --- | --- | --- | --- | --- |
+| Village + kitchen | [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) **750K** (lunch) | [Tumang cooking](/tours/balinese-cooking-class) **450K** | **1,200,000** | **Free Ubud** on both |
+| Jungle photo + kitchen | [Swing Heaven](/tours/swing-heaven-bali) **530K** (lunch **630K**) | Tumang cooking **450K** | **980,000** (530+450) | Swing **400K** or self-meet · cooking free Ubud |
+| Waterfall + kitchen | [Griya Beji](/tours/griya-beji-waterfall) **300K** (+ gate) | Tumang cooking **450K** | **750,000** + admission | Griya **400K** or self-meet · cooking free Ubud |
+| Temple ceremony + kitchen | [Tirta Empul / Beji](/tours/tirta-empu-purification) **1,200,000** | Tumang cooking **450K** | **1,650,000** | Temple **shuttle included** · cooking free Ubud |
+
+The **car-day** sits on top unless the SKU already includes Ubud pickup (cycling, cooking, Tirta Empul shuttle). We will not pretend Swing Heaven or Griya pickup is “free because cooking includes a transfer.”
+
+Book the culture SKUs on checkout when you already know the pair: [cycling + cooking](/book?activity=combo-cycling-cooking) · [swing + cooking](/book?activity=combo-swing-cooking). For a custom long day, stay on the [itinerary consultation](/tours/bali-private-itinerary).
+
+## Suggested 10-hour clock (village + kitchen)
+
+| Time | What happens |
+| --- | --- |
+| 08:00–08:30 | Hotel collect (included on cycling) |
+| 08:30–11:00 | Pejeng Subak ride + lunch |
+| 11:30–13:00 | Transfer / rest — afternoon Tumang starts later |
+| 13:30–17:00 | Hands-on class · eat what you cook |
+| 17:00–17:30 | Hotel drop |
+
+Swing morning starts closer to **08:30** in Bongkasa. Griya Beji opens **09:00**. Do not book morning Tumang (market tour) on the same clock as a 08:00 swing or temple start.
+
+## What the driver invoice is — and is not
+
+- **Is:** car + English-speaking driver + water, from **IDR 600,000**
+- **Is not:** temple tickets, lunch (unless the activity includes it), FINNS, spa, Kecak seats
+- **Full-day Ubud car** at the same from-price is the flexible palace / market / Tegalalang day: [full-day Ubud tour](/tours/full-day-ubud-tour) — different product if you do **not** want a booked activity
+
+Split of inventory: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book). Family week: [family private itinerary](/blog/bali-family-private-itinerary-2026).
+
+## How to send the long day
+
+1. Open **[private Bali itinerary](/tours/bali-private-itinerary)** — WhatsApp consultation, **no booking form**
+2. Write **group type = long day**, date, hotel, guest count (kids’ ages if family)
+3. Name the pair: cycling+cooking, swing+cooking, Griya, or Tirta Empul
+4. We reply with **driver line + published tickets** — **no payment to inquire**
+
+**Ready?** [Consult on WhatsApp](/tours/bali-private-itinerary) · or book [cycling + cooking](/book?activity=combo-cycling-cooking) / [swing + cooking](/book?activity=combo-swing-cooking) if that is already the day.
 `,
   },
   {
@@ -101,7 +170,8 @@ Tanjung Benoa **flying fish / parasailing** is yours. If the group wants a sport
 
 > **Key Takeaways**
 > - Family pace: **one paid activity per day**, early villa return
-> - Best family SKUs we sell: **jeep (no summit hike)**, **cooking**, **cycling**, optional **swing**
+> - Best family SKUs we sell: **jeep (no summit hike)**, **cooking**, **cycling**, optional **swing** or **Griya Beji**
+> - Same-day culture: [cycling + cooking](/book?activity=combo-cycling-cooking) or [long driver day](/blog/long-private-driver-day-ubud-2026)
 > - Driver from **IDR 600,000** / car-day · **HiAce quoted** if you are 5+ with bags
 > - Adventure insurance on ATV / rafting / cycling / jeep is **ages 6–65** — say kids’ ages on WhatsApp
 > - Skip Penida, Lovina, and three temples in one week
@@ -111,7 +181,7 @@ Tanjung Benoa **flying fish / parasailing** is yours. If the group wants a sport
 
 Families usually want **private transport**, **one highlight a day**, and **food they can time**. They do not want a 6-lady club circuit. We do not pretend otherwise.
 
-The jeep is the family sunrise product because it is a **4×4 to a crater-rim viewpoint (~1,350m)** with a sit-down meal — **not** a 2-hour lava hike in the dark. Cooking class caps at **8 guests** and includes **Ubud pickup**. Cycling is a **2-hour** village ride with lunch.
+The jeep is the family sunrise product because it is a **4×4 to a crater-rim viewpoint (~1,350m)** with a sit-down meal — **not** a 2-hour lava hike in the dark. Cooking class caps at **8 guests** and includes **Ubud pickup**. Cycling is a **2-hour** village ride with lunch. Same-day culture we already publish: [cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary) (both free Ubud pickup).
 
 ## Sample 4-day family stack
 
@@ -120,9 +190,9 @@ The jeep is the family sunrise product because it is a **4×4 to a crater-rim vi
 | Arrival | **[DPS → hotel transfer](/transfers)** from IDR 700,000 / MPV | Villa rest, guest dinner |
 | Culture | **[Tumang cooking](/tours/balinese-cooking-class)** (promo IDR 450,000) and/or **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)** | Afternoon nap |
 | Sunrise | **[Private Batur jeep](/tours/batur-sunrise-jeep-tour)** — 3+ rate IDR 750,000 / person, pickup included | Early night |
-| Soft / depart | Optional **[Swing Heaven](/tours/swing-heaven-bali)** or **[Griya Beji](/tours/griya-beji-waterfall)** + airport run | Kids’ pool, light lunch |
+| Soft / depart | Optional **[Swing Heaven](/tours/swing-heaven-bali)**, **[Griya Beji waterfall purification](/tours/griya-beji-waterfall)** (Punggul — **not** Tirta Empul), or **[Tirta Empul ceremony](/tours/tirta-empu-purification)** + airport run | Kids’ pool, light lunch |
 
-One **long private day** (no overnight stack): cycling or swing in the morning, cooking or a guest restaurant after, same driver. That is the “long day trip” version of this page.
+One **long private day** (no overnight stack): [cycling + cooking](/book?activity=combo-cycling-cooking), [swing + cooking](/book?activity=combo-swing-cooking), or morning [Griya Beji](/tours/griya-beji-waterfall) then the kitchen. Clock and pickup honesty: [long driver day](/blog/long-private-driver-day-ubud-2026).
 
 ## What we will not invent for families
 
@@ -135,7 +205,7 @@ One **long private day** (no overnight stack): cycling or swing in the morning, 
 
 WhatsApp a **consultation** — **group type = family**, **kids’ ages**, hotel area, dates, and whether you want a **car or HiAce**. There is no booking form. We quote driver days plus the SKUs above.
 
-**Next:** [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book) · [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary) · [WhatsApp consultation](/tours/bali-private-itinerary)
+**Next:** [long driver day](/blog/long-private-driver-day-ubud-2026) · [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book) · [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary) · [WhatsApp consultation](/tours/bali-private-itinerary)
 `,
   },
   {
@@ -151,11 +221,12 @@ WhatsApp a **consultation** — **group type = family**, **kids’ ages**, hotel
 **Who books what on a private Bali itinerary?** **[Sekar Bali Activity](/tours/bali-private-itinerary)** books the **private driver**, **[Swing Heaven](/tours/swing-heaven-bali)**, the **[Mount Batur jeep](/tours/batur-sunrise-jeep-tour)**, and optional cooking / cycling / ATV / Griya Beji / airport transfer. **You** book beach clubs, nightclubs, Cretya, Kecak seats, jewelry class, spa, Taman Dedari, and Tanjung Benoa boats. Same split for a **family**, a **girls trip**, friends, or a couple.
 
 > **Key Takeaways**
-> - **We:** driver (from **IDR 600,000** / car-day), HiAce quote, swing, jeep, cooking, cycling, ATV, Griya, DPS transfer
+> - **We:** driver (from **IDR 600,000** / car-day), HiAce quote, swing, jeep, cooking, cycling, ATV, Griya, Tirta Empul, DPS transfer
 > - **You:** FINNS, La Favela, Savaya, Cretya, Alas Harum, Kecak, spa, jewelry, watersports, villa restaurants
 > - **Nobody should invent** a bundled “all-in luxury week” price — days + tickets stack
+> - Published culture days: [cycling + cooking](/book?activity=combo-cycling-cooking) · [swing + cooking](/book?activity=combo-swing-cooking) (**980K** tickets, no mix discount)
 > - Swing photos are on **your phone**; park photographer is **not** in our ticket
-> - Samples: [family week](/blog/bali-family-private-itinerary-2026) · [6-day girls trip](/blog/bali-6-day-girls-trip-itinerary-2026)
+> - Samples: [family week](/blog/bali-family-private-itinerary-2026) · [6-day girls trip](/blog/bali-6-day-girls-trip-itinerary-2026) · [long driver day](/blog/long-private-driver-day-ubud-2026)
 
 ## Why the split is commercial, not lazy
 
@@ -173,8 +244,11 @@ What we **do** control is published on this domain: **IDR**, pickup rules, and W
 | [Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) | **IDR 750,000** / person at 3+ | Pickup **included**. Meal after viewpoint. Not the summit trek. |
 | [Tumang cooking](/tours/balinese-cooking-class) | **IDR 450,000** shared | Free Ubud pickup. Max 8. Strong family day. |
 | [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) | **IDR 750,000** | Lunch + free Ubud pickup. |
+| [Cycling + cooking combo](/book?activity=combo-cycling-cooking) | **IDR 1,200,000** | Sum of published tickets · both free Ubud pickup. |
+| [Swing Heaven + cooking](/book?activity=combo-swing-cooking) | **IDR 980,000** | 530K + 450K · **no mix discount** · swing pickup **400K** or self-meet. |
 | [ATV](/tours/bali-atv-adventure) | **IDR 750,000** single | All New Bali Adventure. Pickup **IDR 400,000** or self-meet. Insurance 6–65. |
-| [Griya Beji](/tours/griya-beji-waterfall) | **IDR 300,000** purification | Punggul — not Tirta Empul. Admission extra. |
+| [Griya Beji](/tours/griya-beji-waterfall) | **IDR 300,000** purification | Punggul waterfall melukat — **not** Tirta Empul. Admission extra. |
+| [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) | **IDR 1,200,000** | Private water purification ceremony · shuttle + breakfast. |
 | [DPS → Ubud transfer](/transfers) | **IDR 700,000** / MPV | HiAce airport run quoted. |
 
 ## You book (we still drive)
@@ -202,7 +276,7 @@ Send **group type, dates, villa area, headcount (kids’ ages if family), vehicl
 
 **No payment to inquire.** After you agree, you get the same invoice + Seabank flow as every other activity.
 
-**Next:** [family sample](/blog/bali-family-private-itinerary-2026) · [girls-trip sample](/blog/bali-6-day-girls-trip-itinerary-2026) · [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary) · [WhatsApp consultation](/tours/bali-private-itinerary)
+**Next:** [family sample](/blog/bali-family-private-itinerary-2026) · [girls-trip sample](/blog/bali-6-day-girls-trip-itinerary-2026) · [long driver day](/blog/long-private-driver-day-ubud-2026) · [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary) · [WhatsApp consultation](/tours/bali-private-itinerary)
 `,
   },
   {
@@ -215,14 +289,14 @@ Send **group type, dates, villa area, headcount (kids’ ages if family), vehicl
     author: 'Sekar Bali Activity',
     image: '/images/adventures/full-day-ubud-tour.jpg',
     content: `
-**What should a 6-day private Bali itinerary skip?** **Nusa Penida**, **Lovina dolphins**, a **second or third temple**, **all-day malls**, and **three Kintamani coffee shops in one morning**. Those add hours in a van whether you are a **family** or a **girls trip**. **[Sekar Bali Activity](/tours/bali-private-itinerary)** keeps **[Swing Heaven](/tours/swing-heaven-bali)** or **[Tumang cooking](/tours/balinese-cooking-class)** and the **[Batur jeep](/tours/batur-sunrise-jeep-tour)** as the paid pins — then leaves slack.
+**What should a 6-day private Bali itinerary skip?** **Nusa Penida**, **Lovina dolphins**, a **second or third temple**, **all-day malls**, and **three Kintamani coffee shops in one morning**. Those add hours in a van whether you are a **family** or a **girls trip**. **[Sekar Bali Activity](/tours/bali-private-itinerary)** keeps **[Swing Heaven](/tours/swing-heaven-bali)**, **[Tumang cooking](/tours/balinese-cooking-class)**, or a [long driver day](/blog/long-private-driver-day-ubud-2026), plus the **[Batur jeep](/tours/batur-sunrise-jeep-tour)** as the paid pins — then leaves slack.
 
 > **Key Takeaways**
 > - **Skip:** Penida boat day, Lovina 2 a.m. start, Tirta Empul *plus* Uluwatu *plus* Besakih, glass-bridge queues, mall crawls
 > - **Keep:** one highlight a day, one sunrise, rest time (families) or one photo block (friend groups)
 > - If Swing Heaven runs long, **cut the extra waterfall first**
 > - We do not sell Penida or Lovina — and we will not pretend a 6-day van can hide those hours
-> - Samples: [family week](/blog/bali-family-private-itinerary-2026) · [girls trip](/blog/bali-6-day-girls-trip-itinerary-2026)
+> - Samples: [family week](/blog/bali-family-private-itinerary-2026) · [girls trip](/blog/bali-6-day-girls-trip-itinerary-2026) · [long driver day](/blog/long-private-driver-day-ubud-2026)
 
 ## Why “more pins” fails
 

@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "What activities and tours do you offer?",
-    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, Swing Heaven jungle swing in Bongkasa, and the private Mount Batur jeep (sit-in or tracking, sunrise or sunset, same private rates; optional hot spring +IDR 150,000 with ticket included). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat — IDR 1,200,000 per person with shuttle, guide, and breakfast — plus Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000; not Tirta Empul). Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the private Mount Batur jeep (sit-in or tracking, sunrise or sunset, same private rates; optional hot spring +IDR 150,000 with ticket included). Private Kintamani Day is a full-day promo at IDR 1,300,000 per person (min 2; was IDR 1,450,000). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat purification — IDR 1,200,000 per person with shuttle, guide, and breakfast. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",
@@ -57,11 +57,11 @@ const faqs = [
   },
   {
     question: "How much does the Ubud ricefield cycling tour cost?",
-    answer: "IDR 750,000 per person for the 2-hour Ubud Ricefield Cycling Tour, including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
+    answer: "IDR 750,000 per person for the 2-hour Ubud Ricefield Cycling Tour (IDR 725,000 for 2 guests, IDR 700,000 for 3+), including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
   },
   {
     question: "How much is the private Mount Batur jeep?",
-    answer: "IDR 950,000 per person for 2 guests (minimum 2) and IDR 750,000 per person for 3+ guests sharing a private 4×4. Private sit-in or tracking, sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani entrance fee are included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included.",
+    answer: "IDR 950,000 per person for 2 guests (minimum 2) and IDR 750,000 per person for 3+ guests sharing a private 4×4. Private sit-in or tracking, sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani entrance fee are included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Private Kintamani Day is a separate full-day promo at IDR 1,300,000 per person (was IDR 1,450,000; min 2) with meal, hot-spring ticket, Umah Kuno, and a rice-terrace stop.",
   },
   {
     question: "Is the private Mount Batur jeep a hike?",

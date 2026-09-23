@@ -65,7 +65,9 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is **your private 4×4** — sit-in (no hike) or **tracking jeep** (jeep + guided trek) at the **same private rates**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m. 2 guests **IDR 950,000** · 3+ **IDR 750,000**. **Meal included.** Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
-## Coffee & private cars
+## Coffee, culture & private cars
+
+**[Tirta Empu Purification](/tours/tirta-empu-purification)** is **IDR 1,200,000** per person for a private melukat at Tirta Empul or Pura Beji — Ubud-area shuttle, guide, offering, sarong, and breakfast included. Lunch is not included.
 
 **[Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation)** is **IDR 800,000** per person, **minimum 3 guests**, 1.5 hours in Tampaksiring. Cage-free civets only. **Transport is not included** (~25 minutes from central Ubud). Price guide: [Umah Kuno Luwak price 2026](/blog/luwak-coffee-plantation-umah-kuno-price-2026).
 
@@ -86,6 +88,8 @@ Landing late? [DPS → Ubud private transfer](/transfers) from **IDR 700,000** p
 | Waterfall purification + palm / healing | [Griya Beji](/tours/griya-beji-waterfall) |
 | Private temple morning with breakfast | [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) |
 | Sunrise or sunset without the summit hike | [Private Batur jeep](/tours/batur-sunrise-jeep-tour) |
+| Full-day jeep + hot spring + Umah Kuno | [Private Kintamani Day](/tours/batur-sunrise-jeep-tour) |
+| Private holy-spring purification | [Tirta Empu / Beji melukat](/tours/tirta-empu-purification) |
 | Ethical coffee, 90 minutes | [Umah Kuno](/tours/luwak-coffee-plantation) |
 | Classic Ubud highlights | [Full-day car](/tours/full-day-ubud-tour) |
 | Sunset at the sea temple | [Tanah Lot half day](/tours/half-day-ubud-tanah-lot-tour) |

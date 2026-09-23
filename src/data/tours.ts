@@ -27,6 +27,7 @@ import {
   GIRLS_TRIP_DRIVER_DAY_FROM_IDR,
   GIRLS_TRIP_SLUG,
 } from "@/data/girlsTrip"
+import { PARK_WORKSHOP_TOURS } from "@/data/parkWorkshopTours"
 
 const COOKING_PRIVATE_SOLO_DIFF =
   COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
@@ -2305,6 +2306,7 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
     ],
     reviews: [],
   },
+  ...PARK_WORKSHOP_TOURS,
 ]
 
 export function getTourBySlug(slug: string): Tour | undefined {

@@ -71,6 +71,14 @@ export const GEO_PRICING = [
   { activity: 'Half Day Ubud & Tanah Lot Sunset Tour', price: 'IDR 450,000', pax: 'from / private car', includes: 'private car, English-speaking driver, Ubud cultural stops + Tanah Lot sunset — entrance fees & dinner not included' },
   { activity: 'DPS Airport to Ubud Private Transfer', price: 'IDR 700,000', pax: 'per vehicle (standard MPV)', includes: 'one-way flat rate, flight tracking, tolls, parking, professional driver' },
   { activity: 'Private Bali itinerary (family / girls / any group)', price: 'IDR 600,000+', pax: 'from / private car-day (HiAce quoted for 6+)', includes: 'consultation only on WhatsApp (no booking form); one long day or 2–7 driver days + Swing Heaven / jeep / cooking / cycling as line items; clubs, spa, Kecak, and watersports not included' },
+  { activity: 'Bali Bird Park', price: 'IDR 585,000', pax: 'from / person', includes: 'park admission; hotel pickup quoted; we book the ticket' },
+  { activity: 'Elephant Mud Fun (Bali Zoo)', price: 'IDR 1,850,000', pax: 'from / person', includes: 'mud session, lunch, towel, zoo admission; pickup quoted' },
+  { activity: 'Bali Safari Jungle Hopper', price: 'IDR 1,000,000', pax: 'from / person', includes: '1× safari, shows, Agung silver, waterpark, afternoon tea; pickup quoted' },
+  { activity: 'Bali Safari Dragon / Night / Leopard / Rhino', price: 'IDR 1,300,000+', pax: 'from / person', includes: 'published park package we book; elephant ride only on listed packages; pickup quoted' },
+  { activity: 'Bali Canyoning', price: 'IDR 1,850,000', pax: 'from / person', includes: 'guided gorge descent (not a boat); age/height/weight/shoe size required' },
+  { activity: 'Jungle Buggies (3 laps)', price: 'IDR 1,120,000', pax: 'from / person', includes: '3 laps on a purpose-built ~5 km Polaris course; not Sedang ATV' },
+  { activity: 'Dirt bike Kintamani / Tabanan', price: 'IDR 2,100,000+', pax: 'from / person', includes: 'private guided enduro; Kintamani black lava from IDR 4,100,000; pickup quoted' },
+  { activity: 'Ubud workshop classes (lontar, silver, dance, batik, bamboo, offering)', price: 'IDR 600,000+', pax: 'from / person', includes: '2–3 hour class + materials; pickup quoted' },
 ] as const
 
 export const GEO_POLICIES = [
@@ -261,6 +269,26 @@ export const GEO_TOUR_SUMMARIES = [
     summary:
       'Consultation only on WhatsApp — no booking form. Families, girls trips, friends, and couples. One long private driver day or stacked days. We quote the car, Swing Heaven, Batur jeep, cooking, or cycling. Beach clubs, spa, Kecak, and watersports stay guest-booked. Skip Nusa Penida and Lovina on a short clock.',
     url: `${SITE_URL}/tours/bali-private-itinerary`,
+  },
+  {
+    name: 'Bali Bird Park',
+    slug: 'bali-bird-park',
+    price: 'From IDR 585,000',
+    duration: '1 day',
+    location: 'Batubulan, Gianyar',
+    summary:
+      'Park ticket we book: feeding sessions and free-flight shows. Pickup quoted. Not a boat day.',
+    url: `${SITE_URL}/tours/bali-bird-park`,
+  },
+  {
+    name: 'Bali Canyoning',
+    slug: 'canyoning',
+    price: 'From IDR 1,850,000',
+    duration: 'Half day or 1 day',
+    location: 'North Bali gorges',
+    summary:
+      'Guided rappel / jump / slide canyon. Age, height, weight, and shoe size required. Not scuba or a Nusa Penida boat.',
+    url: `${SITE_URL}/tours/canyoning`,
   },
 ] as const
 
@@ -727,6 +755,11 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour`, desc: 'Private Ubud highlights — from IDR 600,000 · driver included' },
   { title: 'Half Day Ubud & Tanah Lot Sunset', url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour`, desc: 'Ubud culture + Tanah Lot sunset — from IDR 450,000 · driver included' },
   { title: 'Private Bali Itinerary', url: `${SITE_URL}/tours/bali-private-itinerary`, desc: 'Family, girls trip, or any private group — one long day or 2–7 days · driver from IDR 600K/day · clubs stay yours' },
+  { title: 'Bali Bird Park', url: `${SITE_URL}/tours/bali-bird-park`, desc: 'Batubulan bird-park day from IDR 585,000 · pickup quoted' },
+  { title: 'Bali Safari Jungle Hopper', url: `${SITE_URL}/tours/jungle-hopper-bali-safari-and-marine-park`, desc: 'Entry safari day from IDR 1,000,000 · shows + waterpark + tea' },
+  { title: 'Bali Canyoning', url: `${SITE_URL}/tours/canyoning`, desc: 'Guided gorge from IDR 1,850,000 · not a boat · measurements required' },
+  { title: 'Ubud Batik Class', url: `${SITE_URL}/tours/batik-class`, desc: '3-hour batik workshop from IDR 650,000' },
+  { title: 'Kintamani Dirt Bike', url: `${SITE_URL}/tours/dirt-bike-kintamani-black-lava`, desc: 'Private guided black-lava enduro from IDR 4,100,000' },
   { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book jeep, cooking, cycling, ATV, rafting, Swing Heaven, Griya Beji, or a culture day via WhatsApp. Private itineraries are consultation-only on the itinerary page.' },
   { title: 'Pricing (HTML)', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices on the homepage' },
   { title: 'Pricing (Markdown for agents)', url: `${SITE_URL}/pricing.md`, desc: 'Machine-readable IDR tiers, inclusions, and pickup fees' },

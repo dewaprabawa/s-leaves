@@ -44,6 +44,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel',
       blurb: 'Why we are not the Kuber tunnel or Dragon Cave routes.',
     },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Pre-dawn 4×4, meal included, island-wide pickup — not the summit hike.',
+    },
   ],
   'whitewater-rafting': [
     {
@@ -66,6 +71,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/bali-adventure-packages-prices-2026',
       blurb: 'IDR tables for rafting, ATV, and tubing.',
     },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Pre-dawn 4×4 with island-wide pickup — not the summit hike.',
+    },
   ],
   'canyon-tubing': [
     {
@@ -87,6 +97,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Rafting vs tubing vs ATV',
       href: '/blog/rafting-vs-tubing-vs-atv-near-ubud',
       blurb: 'Compare splash vs mud in one page.',
+    },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Land-day 4×4 if you want sunrise without the river.',
     },
   ],
   'swing-heaven-bali': [
@@ -119,6 +134,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Swing with lunch',
       href: '/blog/bali-swing-with-lunch-ubud',
       blurb: 'IDR 630K package vs the 530K ticket.',
+    },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Jungle-swing photos by day, private Batur sunrise the next morning.',
     },
   ],
   'ubud-ricefield-cycling-tour': [
@@ -162,6 +182,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/ubud-cycling-tour-for-families',
       blurb: 'Kids who already ride, lunch included, insurance 6–65.',
     },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Pair a village pedal morning with a private sunrise 4×4.',
+    },
   ],
   'balinese-cooking-class': [
     {
@@ -198,6 +223,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Ubud hotel pickup explained',
       href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
       blurb: 'Free Ubud pickup on Tumang cooking — when a surcharge applies.',
+    },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Pair a cooking afternoon with a private sunrise 4×4.',
     },
     {
       title: 'Base Genep spice paste guide',

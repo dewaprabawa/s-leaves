@@ -8,6 +8,7 @@ import { getBlogKeywords, keywordsToCsv } from '@/data/activityKeywords'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import ArticleBookingCta from '@/components/ArticleBookingCta'
+import ArticleRelatedGuides from '@/components/ArticleRelatedGuides'
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -297,6 +298,7 @@ export default async function BlogPostPage({ params }: Props) {
           </ReactMarkdown>
         </article>
 
+        <ArticleRelatedGuides slug={post.slug} />
         <ArticleBookingCta slug={post.slug} />
 
       </div>

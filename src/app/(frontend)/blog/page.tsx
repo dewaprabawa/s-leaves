@@ -6,15 +6,28 @@ import { ArrowRight, Calendar } from 'lucide-react'
 
 const ACTIVITY_GUIDES = [
   { label: 'All activities 2026', href: '/blog/things-to-do-near-ubud-2026' },
+  { label: 'Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
+  { label: 'Jeep prices', href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026' },
+  { label: 'Jeep vs trek', href: '/blog/mount-batur-jeep-vs-sunrise-trek' },
+  { label: 'Jeep pickup times', href: '/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026' },
   { label: 'Cooking class', href: '/tours/balinese-cooking-class' },
+  { label: 'Cooking price 2026', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
   { label: 'Cycling', href: '/tours/ubud-ricefield-cycling-tour' },
+  { label: 'Cycling guide', href: '/blog/ubud-ricefield-cycling-tour-guide-2026' },
   { label: 'ATV', href: '/tours/bali-atv-adventure' },
+  { label: 'ATV prices', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
   { label: 'Rafting', href: '/tours/whitewater-rafting' },
+  { label: 'Ayung rafting guide', href: '/blog/bali-whitewater-rafting-near-ubud-guide' },
   { label: 'Tubing', href: '/tours/canyon-tubing' },
   { label: 'Swing Heaven', href: '/tours/swing-heaven-bali' },
   { label: 'Swing vs Tegallalang', href: '/blog/swing-heaven-vs-tegallalang-bali-swing' },
-  { label: 'Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
+  { label: 'Griya Beji Waterfall', href: '/tours/griya-beji-waterfall' },
+  { label: 'Griya vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
+  { label: 'Tirta Empul melukat', href: '/blog/tirta-empu-melukat-ubud-guide' },
   { label: 'Luwak coffee', href: '/tours/luwak-coffee-plantation' },
+  { label: 'Private itinerary', href: '/tours/bali-private-itinerary' },
+  { label: 'Family itinerary', href: '/blog/bali-family-private-itinerary-2026' },
+  { label: '6-day girls trip', href: '/blog/bali-6-day-girls-trip-itinerary-2026' },
   { label: 'Full-day Ubud', href: '/tours/full-day-ubud-tour' },
   { label: 'Tanah Lot sunset', href: '/tours/half-day-ubud-tanah-lot-tour' },
   { label: 'Book WhatsApp', href: '/book' },
@@ -22,7 +35,7 @@ const ACTIVITY_GUIDES = [
 
 export const metadata: Metadata = {
   title: 'Blog & Travel Guide',
-  description: 'Bali travel tips, Pejeng culture, ATV prices near Ubud, cycling tour reviews, and adventure booking guides from Sekar Bali Activity — written to help you plan and book with confidence.',
+  description: 'Ubud activity guides with 2026 IDR: private Mount Batur jeep, Tumang cooking class, Pejeng cycling, ATV, Ayung rafting, Swing Heaven, Griya Beji, private family and girls-trip itineraries, and pickup rules — WhatsApp booking.',
   alternates: { canonical: '/blog' },
 }
 

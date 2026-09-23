@@ -3,6 +3,7 @@ import {
   ACTIVITY_GEO_UPDATED,
   getActivityGeo,
 } from '@/data/activityGeo'
+import { getQueryAliasLine } from '@/data/activityKeywords'
 
 type Props = {
   slug: string
@@ -12,6 +13,7 @@ type Props = {
 export default function ActivityGeoBlock({ slug }: Props) {
   const geo = getActivityGeo(slug)
   if (!geo) return null
+  const queryAliases = getQueryAliasLine(slug)
 
   return (
     <section
@@ -32,6 +34,12 @@ export default function ActivityGeoBlock({ slug }: Props) {
         <p className="geo-tldr activity-geo-tldr text-brand-green-light leading-relaxed">
           {geo.tldr}
         </p>
+        {queryAliases ? (
+          <p className="mt-3 text-xs text-brand-green-light/80 leading-relaxed">
+            <span className="font-semibold text-brand-green">Travelers also search: </span>
+            {queryAliases}
+          </p>
+        ) : null}
       </div>
 
       <div className="overflow-hidden rounded-2xl border border-brand-green/10">
@@ -79,6 +87,9 @@ export default function ActivityGeoBlock({ slug }: Props) {
       <div className="flex flex-col sm:flex-row sm:items-center gap-3">
         <Link
           href={geo.bookHref}
+          {...(/^https?:\/\//.test(geo.bookHref)
+            ? { target: '_blank', rel: 'noopener noreferrer' }
+            : {})}
           className="inline-flex items-center justify-center rounded-full bg-brand-green px-5 py-2.5 text-sm font-bold text-white hover:bg-brand-green-light transition-colors"
         >
           {geo.bookLabel}

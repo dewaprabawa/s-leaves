@@ -111,6 +111,7 @@ const footerLinks = {
     { label: "Swing Heaven Bali", href: "/tours/swing-heaven-bali" },
     { label: "Private Mount Batur Jeep", href: "/tours/batur-sunrise-jeep-tour" },
     { label: "Tirta Empu Purification", href: "/tours/tirta-empu-purification" },
+    { label: "Griya Beji Waterfall", href: "/tours/griya-beji-waterfall" },
     { label: "Luwak Coffee Plantation", href: "/tours/luwak-coffee-plantation" },
     { label: "Book All Activities", href: "/book" },
     { label: "All Pricing", href: "/#pricing" },
@@ -118,6 +119,8 @@ const footerLinks = {
   explore: [
     { label: "All Experiences", href: "/experiences" },
     { label: "Book Adventures", href: "/book" },
+    { label: "Batur jeep price guide", href: "/blog/mount-batur-sunrise-jeep-tour-price-guide-2026" },
+    { label: "Things to do near Ubud", href: "/blog/things-to-do-near-ubud-2026" },
     { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },
@@ -136,6 +139,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM content summary" />
         <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full context" />
         <link rel="alternate" type="text/plain" href="/.well-known/llms.txt" title="LLM well-known summary" />

@@ -8,6 +8,7 @@ import PromoPrice from "@/components/PromoPrice"
 import { getListPrice, getPromoListPrice } from "@/lib/pricing"
 import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
+import { buildGirlsTripWhatsAppUrl, GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
@@ -57,6 +58,13 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
     }
   }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
+  if (tourSlug === GIRLS_TRIP_SLUG) {
+    return {
+      promoPrice: fallbackBase,
+      standardPrice: fallbackBase,
+      tierLabel: "Per private car-day · HiAce quoted for 6",
+    }
+  }
   if (!activityId) {
     return { promoPrice: fallbackBase, standardPrice: fallbackBase, tierLabel: undefined }
   }
@@ -86,6 +94,11 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
     "jeep-kintamani-day-tracking",
   ],
   "swing-heaven-bali": ["swing-heaven", "swing-heaven-lunch"],
+  "griya-beji-waterfall": [
+    "griya-beji-purification",
+    "griya-beji-palm-reading",
+    "griya-beji-mental-healing",
+  ],
 }
 
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
@@ -97,7 +110,8 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
 
   const isPrivateDayTour =
     props.tourSlug === "full-day-ubud-tour" ||
-    props.tourSlug === "half-day-ubud-tanah-lot-tour"
+    props.tourSlug === "half-day-ubud-tanah-lot-tour" ||
+    props.tourSlug === GIRLS_TRIP_SLUG
   const isMelukat = props.tourSlug === "tirta-empu-purification"
   const isLuwak = props.tourSlug === "luwak-coffee-plantation"
 
@@ -161,10 +175,14 @@ export default function TourBookingCard(props: TourBookingCardProps) {
       : props.tourSlug === "bali-atv-adventure"
         ? `${props.title} — single from ${formatIdr(props.basePrice)}`
         : props.title
-  const consultationUrl = buildWhatsAppConsultationUrl(
-    consultationActivity,
-    `${SITE_URL}/tours/${props.tourSlug}`,
-  )
+  const consultationUrl =
+    props.tourSlug === GIRLS_TRIP_SLUG
+      ? buildGirlsTripWhatsAppUrl()
+      : buildWhatsAppConsultationUrl(
+          consultationActivity,
+          `${SITE_URL}/tours/${props.tourSlug}`,
+        )
+  const isPrivateItinerary = props.tourSlug === GIRLS_TRIP_SLUG
 
   // Nudge the floating AI Assistant button above our mobile sticky CTA so they don't overlap
   useEffect(() => {
@@ -180,7 +198,9 @@ export default function TourBookingCard(props: TourBookingCardProps) {
       <div className="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-brand-green/10 bg-white/95 backdrop-blur px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] [padding-bottom:max(0.75rem,env(safe-area-inset-bottom))]">
         <div className="mx-auto flex max-w-7xl items-center gap-2">
           <div className="min-w-0 flex-1">
-            <p className="text-[11px] font-medium text-brand-green-light leading-none">From</p>
+            <p className="text-[11px] font-medium text-brand-green-light leading-none">
+              {isPrivateItinerary ? "Consult from" : "From"}
+            </p>
             <div className="flex items-baseline gap-2">
               <span className="font-display text-lg font-bold text-brand-green leading-tight truncate">
                 {formatIdr(promoPrice)}
@@ -192,23 +212,38 @@ export default function TourBookingCard(props: TourBookingCardProps) {
               ) : null}
             </div>
           </div>
-          <a
-            href={consultationUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex shrink-0 items-center justify-center gap-1.5 h-11 rounded-full border-2 border-brand-green bg-white px-3 font-bold text-xs uppercase tracking-wider text-brand-green"
-            aria-label={`WhatsApp consultation about ${props.title}`}
-          >
-            <MessageCircle className="w-4 h-4" />
-            Consult
-          </a>
-          <button
-            type="button"
-            onClick={() => setOpen(true)}
-            className="flex shrink-0 items-center justify-center gap-1.5 h-11 rounded-full btn-gold-shimmer px-4 font-bold text-xs uppercase tracking-wider"
-          >
-            Book <ArrowRight className="w-3.5 h-3.5" />
-          </button>
+          {isPrivateItinerary ? (
+            <a
+              href={consultationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex shrink-0 items-center justify-center gap-1.5 h-11 rounded-full btn-gold-shimmer px-5 font-bold text-xs uppercase tracking-wider"
+              aria-label={`WhatsApp consultation about ${props.title}`}
+            >
+              <MessageCircle className="w-4 h-4" />
+              Consultation <ArrowRight className="w-3.5 h-3.5" />
+            </a>
+          ) : (
+            <>
+              <a
+                href={consultationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex shrink-0 items-center justify-center gap-1.5 h-11 rounded-full border-2 border-brand-green bg-white px-3 font-bold text-xs uppercase tracking-wider text-brand-green"
+                aria-label={`WhatsApp consultation about ${props.title}`}
+              >
+                <MessageCircle className="w-4 h-4" />
+                Consult
+              </a>
+              <button
+                type="button"
+                onClick={() => setOpen(true)}
+                className="flex shrink-0 items-center justify-center gap-1.5 h-11 rounded-full btn-gold-shimmer px-4 font-bold text-xs uppercase tracking-wider"
+              >
+                Book <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </>
+          )}
         </div>
       </div>
 
@@ -243,10 +278,20 @@ export default function TourBookingCard(props: TourBookingCardProps) {
               Lunch package {formatIdr(getListPrice("swing-heaven-lunch"))} · dress hire extra
             </p>
           ) : null}
+          {props.tourSlug === "griya-beji-waterfall" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Palm reading IDR 1,000,000 · mental healing IDR 1,500,000 · admission extra
+            </p>
+          ) : null}
           {props.tourSlug === "balinese-cooking-class" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Private {formatIdr(COOKING_CLASS_PRIVATE_SOLO_IDR)} / person ·{" "}
               {formatIdr(COOKING_CLASS_PRIVATE_COUPLE_IDR)} for 2
+            </p>
+          ) : null}
+          {isPrivateItinerary ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Consultation only · activities extra · clubs and spa stay yours
             </p>
           ) : null}
           {props.childPrice ? (
@@ -276,38 +321,56 @@ export default function TourBookingCard(props: TourBookingCardProps) {
         </div>
 
         <p className="text-xs text-brand-green-light leading-relaxed">
-          Tap below to enter your name, age, adult/child, location, and activity — then send everything to WhatsApp with the price included. Or start a free WhatsApp consultation if you still have questions.
+          {isPrivateItinerary
+            ? "Consultation only — there is no booking form or checkout for this itinerary. WhatsApp group type, dates, villa area, guest count, and your day list. We reply with a driver + activity quote. No payment to inquire."
+            : "Tap below to enter your name, age, adult/child, location, and activity — then send everything to WhatsApp with the price included. Or start a free WhatsApp consultation if you still have questions."}
         </p>
 
         <div className="space-y-3">
-          <button
-            type="button"
-            onClick={() => setOpen(true)}
-            className="w-full flex items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
-          >
-            {props.tourSlug === "batur-sunrise-jeep-tour"
-              ? "Book Private Jeep"
-              : "Book This Experience"}{" "}
-            <ArrowRight className="w-4 h-4" />
-          </button>
-          <a
-            href={consultationUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full flex items-center justify-center gap-2 h-12 rounded-full border-2 border-brand-green bg-white font-bold text-sm uppercase tracking-wider text-brand-green hover:bg-brand-green/5 transition-colors"
-          >
-            <MessageCircle className="w-4 h-4" />
-            WhatsApp Consultation
-          </a>
+          {isPrivateItinerary ? (
+            <a
+              href={consultationUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
+            >
+              <MessageCircle className="w-4 h-4" />
+              WhatsApp Consultation <ArrowRight className="w-4 h-4" />
+            </a>
+          ) : (
+            <>
+              <button
+                type="button"
+                onClick={() => setOpen(true)}
+                className="w-full flex items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
+              >
+                {props.tourSlug === "batur-sunrise-jeep-tour"
+                  ? "Book Private Jeep"
+                  : "Book This Experience"}{" "}
+                <ArrowRight className="w-4 h-4" />
+              </button>
+              <a
+                href={consultationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex items-center justify-center gap-2 h-12 rounded-full border-2 border-brand-green bg-white font-bold text-sm uppercase tracking-wider text-brand-green hover:bg-brand-green/5 transition-colors"
+              >
+                <MessageCircle className="w-4 h-4" />
+                WhatsApp Consultation
+              </a>
+            </>
+          )}
         </div>
       </div>
 
-      <BookingPopup
-        isOpen={open}
-        onClose={() => setOpen(false)}
-        tour={primary}
-        tourOptions={configs.length > 1 ? configs : undefined}
-      />
+      {isPrivateItinerary ? null : (
+        <BookingPopup
+          isOpen={open}
+          onClose={() => setOpen(false)}
+          tour={primary}
+          tourOptions={configs.length > 1 ? configs : undefined}
+        />
+      )}
     </>
   )
 }

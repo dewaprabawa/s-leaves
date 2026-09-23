@@ -5,6 +5,7 @@ import {
   COOKING_GEO_UPDATED,
   COOKING_PRICE_ROWS,
 } from '@/data/cookingGeo'
+import { getQueryAliasLine } from '@/data/activityKeywords'
 
 /** Answer-first SSR block for cooking-class GEO / AI citability */
 export default function CookingGeoBlock() {
@@ -26,6 +27,10 @@ export default function CookingGeoBlock() {
         </h2>
         <p className="geo-tldr cooking-geo-tldr text-brand-green-light leading-relaxed">
           {COOKING_GEO_TLDR}
+        </p>
+        <p className="mt-3 text-xs text-brand-green-light/80 leading-relaxed">
+          <span className="font-semibold text-brand-green">Travelers also search: </span>
+          {getQueryAliasLine('balinese-cooking-class')}
         </p>
       </div>
 

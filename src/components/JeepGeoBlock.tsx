@@ -5,6 +5,7 @@ import {
   JEEP_GEO_UPDATED,
   JEEP_PRICE_ROWS,
 } from '@/data/jeepGeo'
+import { getQueryAliasLine } from '@/data/activityKeywords'
 import { CONTACT_WHATSAPP_URL } from '@/lib/contact'
 
 /** Answer-first SSR block for Mount Batur jeep tour GEO / AI citability */
@@ -27,6 +28,10 @@ export default function JeepGeoBlock() {
         </h2>
         <p className="geo-tldr jeep-geo-tldr text-brand-green-light leading-relaxed">
           {JEEP_GEO_TLDR}
+        </p>
+        <p className="mt-3 text-xs text-brand-green-light/80 leading-relaxed">
+          <span className="font-semibold text-brand-green">Travelers also search: </span>
+          {getQueryAliasLine('batur-sunrise-jeep-tour')}
         </p>
       </div>
 

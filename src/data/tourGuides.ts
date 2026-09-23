@@ -44,6 +44,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel',
       blurb: 'Why we are not the Kuber tunnel or Dragon Cave routes.',
     },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Pre-dawn 4×4, meal included, island-wide pickup — not the summit hike.',
+    },
   ],
   'whitewater-rafting': [
     {
@@ -66,6 +71,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/bali-adventure-packages-prices-2026',
       blurb: 'IDR tables for rafting, ATV, and tubing.',
     },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Pre-dawn 4×4 with island-wide pickup — not the summit hike.',
+    },
   ],
   'canyon-tubing': [
     {
@@ -87,6 +97,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Rafting vs tubing vs ATV',
       href: '/blog/rafting-vs-tubing-vs-atv-near-ubud',
       blurb: 'Compare splash vs mud in one page.',
+    },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Land-day 4×4 if you want sunrise without the river.',
     },
   ],
   'swing-heaven-bali': [
@@ -119,6 +134,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Swing with lunch',
       href: '/blog/bali-swing-with-lunch-ubud',
       blurb: 'IDR 630K package vs the 530K ticket.',
+    },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Jungle-swing photos by day, private Batur sunrise the next morning.',
     },
   ],
   'ubud-ricefield-cycling-tour': [
@@ -162,6 +182,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/ubud-cycling-tour-for-families',
       blurb: 'Kids who already ride, lunch included, insurance 6–65.',
     },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Pair a village pedal morning with a private sunrise 4×4.',
+    },
   ],
   'balinese-cooking-class': [
     {
@@ -198,6 +223,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Ubud hotel pickup explained',
       href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
       blurb: 'Free Ubud pickup on Tumang cooking — when a surcharge applies.',
+    },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Pair a cooking afternoon with a private sunrise 4×4.',
     },
     {
       title: 'Base Genep spice paste guide',
@@ -245,6 +275,38 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Ethical luwak nearby',
       href: '/blog/how-to-spot-ethical-luwak-coffee-in-bali',
       blurb: 'Pair a Tampaksiring morning with Umah Kuno tasting.',
+    },
+    {
+      title: 'Griya Beji vs Tirta Empul',
+      href: '/blog/griya-beji-vs-tirta-empul-melukat',
+      blurb: 'Waterfall park in Punggul vs the private 1.2M temple morning.',
+    },
+  ],
+  'griya-beji-waterfall': [
+    {
+      title: 'Griya Beji Waterfall near Ubud',
+      href: '/blog/griya-beji-waterfall-ubud-guide',
+      blurb: 'Melukat 300K, palm 1M, healing 1.5M — Punggul prices and pickup.',
+    },
+    {
+      title: 'Griya Beji vs Tirta Empul',
+      href: '/blog/griya-beji-vs-tirta-empul-melukat',
+      blurb: 'Different springs, different tickets — do not mix the names.',
+    },
+    {
+      title: 'Palm reading at Griya Beji',
+      href: '/blog/palm-reading-bali-griya-beji',
+      blurb: 'IDR 1,000,000 · hands + birth date · book ahead.',
+    },
+    {
+      title: 'Mental healing at Griya Beji',
+      href: '/blog/mental-healing-bali-griya-beji',
+      blurb: 'IDR 1,500,000 · guided relaxation, not a clinic.',
+    },
+    {
+      title: 'Ubud hotel pickup explained',
+      href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
+      blurb: 'IDR 400K hotel collect or self-meet in Punggul.',
     },
   ],
   'luwak-coffee-plantation': [
@@ -338,6 +400,43 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Promo 1.3M: jeep, hot spring ticket, meal, coffee, terrace.',
     },
   ],
+  'bali-private-itinerary': [
+    {
+      title: '6-day Bali girls trip itinerary',
+      href: '/blog/bali-6-day-girls-trip-itinerary-2026',
+      blurb: 'Seminyak + Swing Heaven + Uluwatu + Kintamani — consultation only on WhatsApp.',
+    },
+    {
+      title: 'Family private itinerary',
+      href: '/blog/bali-family-private-itinerary-2026',
+      blurb: 'Slow days, cooking, cycling, no-hike jeep — consult on WhatsApp.',
+    },
+    {
+      title: 'What we book vs you book',
+      href: '/blog/bali-private-itinerary-what-we-book-vs-you-book',
+      blurb: 'Driver, swing, jeep on our invoice. Clubs and spa on yours.',
+    },
+    {
+      title: 'What to skip on a 6-day trip',
+      href: '/blog/what-to-skip-on-a-6-day-bali-itinerary',
+      blurb: 'No Penida, no Lovina, no extra temples or mall days.',
+    },
+    {
+      title: 'Swing Heaven Ubud guide',
+      href: '/blog/swing-heaven-bali-ubud-guide',
+      blurb: 'Bongkasa photo day from IDR 530,000 — not Tegallalang.',
+    },
+    {
+      title: 'Private Mount Batur jeep',
+      href: '/tours/batur-sunrise-jeep-tour',
+      blurb: 'Crater-rim sunrise, meal included — not the summit hike.',
+    },
+    {
+      title: 'Airport transfer DPS → Ubud',
+      href: '/transfers',
+      blurb: 'From IDR 700,000 per MPV. HiAce airport run quoted.',
+    },
+  ],
   'half-day-ubud-tanah-lot-tour': [
     {
       title: 'Tanah Lot sunset half-day 2026',
@@ -404,6 +503,10 @@ export const TOUR_HOST_NOTES: Record<
     title: 'From our Ubud drivers',
     body: 'The published palace–market–Tegalalang order is a starting map, not a locked timetable. We wait while you eat lunch and can skip a stop if the parking lot is a circus. Entrance fees stay separate so the car rate stays honest.',
   },
+  'bali-private-itinerary': {
+    title: 'From our itinerary desk',
+    body: 'This product is consultation only — paste the plan on WhatsApp, do not use the booking form. Families and groups of 6 usually need a HiAce, not a 4-seat car — we quote that first. We lock Swing Heaven, cooking, cycling, or the Batur jeep on our invoice. Beach-club and spa reservations stay on your cards; the driver still hits those pins.',
+  },
   'half-day-ubud-tanah-lot-tour': {
     title: 'From our sunset-run drivers',
     body: 'The non-negotiable is arriving at Tanah Lot before the light goes. We shift the 1:00 PM-ish pickup with the season and keep Ubud stops short on purpose. Bring a sarong; the temple ticket is paid at the gate.',
@@ -415,6 +518,10 @@ export const TOUR_HOST_NOTES: Record<
   'swing-heaven-bali': {
     title: 'From our Bongkasa swing hosts',
     body: 'We book Swing Heaven on Jl. Tangga Yuda, Bongkasa — jungle swings and nests over the Ayung River, not the Tegallalang selfie strip. Tell us if you want the lunch package or a flying dress so the lobby has it ready. Photos are on your phone; rain days get a 7-day venue voucher, not a cash refund once the ticket is issued.',
+  },
+  'griya-beji-waterfall': {
+    title: 'From our Punggul purification hosts',
+    body: 'Taman Beji Griya Waterfall is a living shrine on Jl. Mawar, Desa Punggul — waterfall melukat, palm reading, and mental healing. It is not Tirta Empul and not the Pura Beji spring on our 1.2M private ticket. We confirm the 2026 park board and practitioner availability on WhatsApp. Healing is guided relaxation, not a hospital clinic.',
   },
 }
 

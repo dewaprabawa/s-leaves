@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { buildGirlsTripWhatsAppUrl } from '@/data/girlsTrip'
 
 export type ArticleCta = {
   headline: string
@@ -19,6 +20,38 @@ const DEFAULT_CTA: ArticleCta = {
 }
 
 const CTA_BY_SLUG: Record<string, ArticleCta> = {
+  'bali-6-day-girls-trip-itinerary-2026': {
+    headline: 'WhatsApp a consultation for this 6-day plan',
+    body: 'Consultation only — no booking form. Send dates, villa area, and guest count. We quote the driver, Swing Heaven, and the Batur jeep. Clubs and spa stay on your bookings.',
+    primaryHref: buildGirlsTripWhatsAppUrl(),
+    primaryLabel: 'WhatsApp consultation',
+    secondaryHref: '/tours/swing-heaven-bali',
+    secondaryLabel: 'Book Swing Heaven only',
+  },
+  'bali-family-private-itinerary-2026': {
+    headline: 'WhatsApp a family itinerary consultation',
+    body: 'Consultation only. Send kids’ ages, villa area, and the slow days you want. We quote the driver, cooking, cycling, or the no-hike Batur jeep.',
+    primaryHref: buildGirlsTripWhatsAppUrl({ groupType: 'family' }),
+    primaryLabel: 'WhatsApp consultation',
+    secondaryHref: '/tours/batur-sunrise-jeep-tour',
+    secondaryLabel: 'Book the sunrise jeep',
+  },
+  'bali-private-itinerary-what-we-book-vs-you-book': {
+    headline: 'Send the split on WhatsApp',
+    body: 'Consultation only — we quote driver days plus the activities we operate. You keep FINNS, Cretya, Kecak, and spa reservations.',
+    primaryHref: buildGirlsTripWhatsAppUrl(),
+    primaryLabel: 'WhatsApp consultation',
+    secondaryHref: '/tours/batur-sunrise-jeep-tour',
+    secondaryLabel: 'Book the sunrise jeep',
+  },
+  'what-to-skip-on-a-6-day-bali-itinerary': {
+    headline: 'Keep one highlight — cut the boat day',
+    body: 'Skip Penida and Lovina. WhatsApp a consultation: we quote Swing Heaven or cooking plus the Batur jeep, then leave slack.',
+    primaryHref: buildGirlsTripWhatsAppUrl(),
+    primaryLabel: 'WhatsApp consultation',
+    secondaryHref: '/blog/bali-6-day-girls-trip-itinerary-2026',
+    secondaryLabel: 'Read the girls-trip sample',
+  },
   'things-to-do-near-ubud-2026': {
     headline: 'Pick your Ubud day and message WhatsApp',
     body: 'Send name, hotel area, date, and guest count. We reply with the exact IDR total — no deposit to inquire.',
@@ -233,7 +266,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'ubud-hotel-pickup-bali-adventures-explained': {
     headline: 'Check if your hotel pickup is free',
-    body: 'Free on cycling and Tumang cooking. Island-wide on the Batur jeep. IDR 400K on ATV / rafting / tubing.',
+    body: 'Free on cycling and Tumang cooking. Island-wide on the Batur jeep. IDR 400K on ATV / rafting / tubing / Swing Heaven / Griya Beji.',
     primaryHref: '/book',
     primaryLabel: 'Ask about pickup',
     secondaryHref: '/experiences',
@@ -241,7 +274,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-adventure-packages-prices-2026': {
     headline: 'Compare IDR and book the one you want',
-    body: 'ATV, rafting, tubing, Swing Heaven, cycling, jeep, cooking, coffee, and day tours — one WhatsApp inbox.',
+    body: 'ATV, rafting, tubing, Swing Heaven, Griya Beji, cycling, jeep, cooking, coffee, and day tours — one WhatsApp inbox.',
     primaryHref: '/book',
     primaryLabel: 'Book with a price',
     secondaryHref: '/experiences',
@@ -294,6 +327,38 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     primaryLabel: 'Choose the package',
     secondaryHref: '/book?activity=swing-heaven',
     secondaryLabel: 'WhatsApp lunch package',
+  },
+  'griya-beji-waterfall-ubud-guide': {
+    headline: 'Book Griya Beji Waterfall from IDR 300K',
+    body: 'Punggul waterfall melukat, palm reading 1M, mental healing 1.5M. Not Tirta Empul. WhatsApp booking.',
+    primaryHref: '/tours/griya-beji-waterfall',
+    primaryLabel: 'View Griya Beji',
+    secondaryHref: '/book?activity=griya-beji-waterfall',
+    secondaryLabel: 'WhatsApp checkout',
+  },
+  'griya-beji-vs-tirta-empul-melukat': {
+    headline: 'Pick the right Beji — then book',
+    body: 'Waterfall park from 300K in Punggul, or private Tirta Empul / Pura Beji at 1.2M with shuttle and breakfast.',
+    primaryHref: '/tours/griya-beji-waterfall',
+    primaryLabel: 'Book Griya Beji',
+    secondaryHref: '/tours/tirta-empu-purification',
+    secondaryLabel: 'Book Tirta Empul',
+  },
+  'palm-reading-bali-griya-beji': {
+    headline: 'Book palm reading at Griya Beji',
+    body: 'IDR 1,000,000 · hands + birth date · book ahead. Same park as waterfall purification.',
+    primaryHref: '/tours/griya-beji-waterfall',
+    primaryLabel: 'Book Griya Beji',
+    secondaryHref: '/book?activity=griya-beji-waterfall',
+    secondaryLabel: 'WhatsApp checkout',
+  },
+  'mental-healing-bali-griya-beji': {
+    headline: 'Book mental healing at Griya Beji',
+    body: 'IDR 1,500,000 · guided relaxation, not a clinic. Book ahead. Punggul, Abiansemal.',
+    primaryHref: '/tours/griya-beji-waterfall',
+    primaryLabel: 'Book Griya Beji',
+    secondaryHref: '/blog/palm-reading-bali-griya-beji',
+    secondaryLabel: 'Palm reading guide',
   },
   'rafting-vs-tubing-vs-atv-near-ubud': {
     headline: 'Choose splash, float, or mud — then book',
@@ -425,14 +490,16 @@ export function getArticleBookingCta(slug: string): ArticleCta {
 
 export default function ArticleBookingCta({ slug }: { slug: string }) {
   const cta = getArticleBookingCta(slug)
+  const isExternalPrimary = /^https?:\/\//.test(cta.primaryHref)
+  const isConsultCta = /wa\.me|whatsapp/i.test(cta.primaryHref)
 
   return (
     <aside
-      aria-label="Book this activity"
+      aria-label={isConsultCta ? 'Consult about this itinerary' : 'Book this activity'}
       className="rounded-3xl border border-brand-green/15 bg-brand-green text-white p-6 md:p-8 space-y-4 shadow-md"
     >
       <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-accent-gold">
-        Book with Sekar Bali Activity
+        {isConsultCta ? 'Consultation only' : 'Book with Sekar Bali Activity'}
       </p>
       <h2 className="font-display text-2xl md:text-3xl font-bold uppercase leading-tight">
         {cta.headline}
@@ -441,6 +508,9 @@ export default function ArticleBookingCta({ slug }: { slug: string }) {
       <div className="flex flex-col sm:flex-row gap-3 pt-1">
         <Link
           href={cta.primaryHref}
+          {...(isExternalPrimary
+            ? { target: '_blank', rel: 'noopener noreferrer' }
+            : {})}
           className="inline-flex items-center justify-center rounded-full bg-accent-gold px-5 py-2.5 text-sm font-bold text-brand-green hover:bg-accent-gold-dark transition-colors"
         >
           {cta.primaryLabel}

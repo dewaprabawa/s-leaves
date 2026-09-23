@@ -14,6 +14,20 @@ import {
   SWING_HEAVEN_SPOTS,
   SWING_HEAVEN_VENUE,
 } from "@/data/swingHeaven"
+import {
+  GRIYA_BEJI_ADMISSION_DOMESTIC_IDR,
+  GRIYA_BEJI_ADMISSION_INTL_IDR,
+  GRIYA_BEJI_HEALING_IDR,
+  GRIYA_BEJI_PALM_READING_IDR,
+  GRIYA_BEJI_PURIFICATION_IDR,
+  GRIYA_BEJI_VENUE,
+} from "@/data/griyaBeji"
+import {
+  GIRLS_TRIP_AIRPORT_TRANSFER_IDR,
+  GIRLS_TRIP_DRIVER_DAY_FROM_IDR,
+  GIRLS_TRIP_SLUG,
+} from "@/data/girlsTrip"
+import { PARK_WORKSHOP_TOURS } from "@/data/parkWorkshopTours"
 
 const COOKING_PRIVATE_SOLO_DIFF =
   COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
@@ -117,7 +131,7 @@ export const TOURS: Tour[] = [
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "ATV Ride Ubud from IDR 750K | Tandem 1.1M",
+    seoTitle: "Private ATV Ride Ubud | From IDR 750K",
     seoDescription:
       "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Hotel pickup IDR 400K or self-meet. Book WhatsApp.",
     heroImage: {
@@ -760,7 +774,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
     slug: "canyon-tubing",
     category: "adventure",
     area: "Wos River / Pejeng",
-    pickup: "Hotel pickup IDR 400,000 — optional",
+    pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "2.5 Hours",
     basePrice: 500000,
     childPrice: 450000,
@@ -1067,7 +1081,7 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
     pickup: "Free Ubud-area hotel pickup",
     duration: "2 Hours",
     basePrice: 750000,
-    seoTitle: "Ricefield Cycling Ubud | Free Pickup 750K",
+    seoTitle: "Rice Paddy Cycling Ubud | Free Pickup 750K",
     seoDescription:
       "Rice paddy cycling in Pejeng near Ubud — quiet Subak lanes, lunch included, free Ubud hotel pickup from IDR 750K. Book on WhatsApp.",
     heroImage: {
@@ -1197,7 +1211,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-1",
         question: "How much is the Ubud rice paddy cycling tour?",
         answer:
-          "IDR 750,000 per person in 2026 for a 2-hour guided Pejeng village / ricefield ride, including bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
+          "IDR 750,000 per person in 2026 (IDR 725,000 for 2 guests, IDR 700,000 for 3+) for a 2-hour guided Pejeng village / ricefield ride, including bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
       },
       {
         id: "faq-ubud-cyc-2",
@@ -1954,6 +1968,345 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
     ],
     reviews: [],
   },
+  {
+    id: "griya-beji-waterfall",
+    title: "Griya Beji Waterfall Purification near Ubud",
+    slug: "griya-beji-waterfall",
+    category: "culture",
+    area: GRIYA_BEJI_VENUE.area,
+    venue: `${GRIYA_BEJI_VENUE.name}, ${GRIYA_BEJI_VENUE.address}`,
+    isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet at Griya Beji",
+    duration: "1–2.5 Hours",
+    basePrice: GRIYA_BEJI_PURIFICATION_IDR,
+    seoTitle: "Griya Beji Waterfall Melukat | From 300K",
+    seoDescription:
+      "Griya Beji Waterfall in Punggul — purification IDR 300K, palm reading 1M, mental healing 1.5M. Not Tirta Empul. WhatsApp booking.",
+    heroImage: {
+      url: "/images/adventures/griya-beji-waterfall.jpg",
+      alt: "Guests at Taman Beji Griya Waterfall in Punggul, Abiansemal near Ubud",
+      width: 1600,
+      height: 1000,
+    },
+    gallery: [
+      {
+        url: "/images/adventures/griya-beji-waterfall.jpg",
+        alt: "Guests gathered by the spring at Taman Beji Griya Waterfall",
+      },
+      {
+        url: "/images/adventures/griya-beji-purification.jpg",
+        alt: "Water purification (melukat) at sacred spring spouts near Ubud",
+      },
+      {
+        url: "/images/adventures/griya-beji-ceremony.jpg",
+        alt: "Temple offerings before a Griya Beji purification ceremony",
+      },
+    ],
+    shortDescription:
+      "Waterfall purification (melukat) at Taman Beji Griya in Punggul from IDR 300,000. Palm reading IDR 1,000,000. Mental healing IDR 1,500,000. Not Tirta Empul or Pura Beji.",
+    fullDescription: `**Griya Beji Waterfall — purification, palm reading, mental healing (not Tirta Empul)**
+
+[Taman Beji Griya Waterfall](${GRIYA_BEJI_VENUE.siteUrl}) is a living shrine on **Jl. Mawar, Desa Punggul, Abiansemal** — a short drive from Ubud, in the same Badung district as our ATV arena. The park runs **waterfall melukat**, **palm reading**, and **mental healing**. This is **not** [Tirta Empul or Pura Beji](/tours/tirta-empu-purification) (our private **IDR 1,200,000** temple morning with shuttle and breakfast).
+
+### 2026 park menu (per person)
+| Offering | Price | Notes |
+|--------|-------|----------|
+| Waterfall purification (melukat) | **IDR ${GRIYA_BEJI_PURIFICATION_IDR.toLocaleString("id-ID")}** | Offerings, prayer, spring-fed pool |
+| Palm reading | **IDR ${GRIYA_BEJI_PALM_READING_IDR.toLocaleString("id-ID")}** | Hands + birth date · book ahead |
+| Mental healing therapy | **IDR ${GRIYA_BEJI_HEALING_IDR.toLocaleString("id-ID")}** | Guided relaxation · not a medical clinic |
+| International admission | **IDR ${GRIYA_BEJI_ADMISSION_INTL_IDR.toLocaleString("id-ID")}** | Domestic **IDR ${GRIYA_BEJI_ADMISSION_DOMESTIC_IDR.toLocaleString("id-ID")}** · extra at the gate |
+
+Hours **${GRIYA_BEJI_VENUE.hours}**. We confirm the live board on WhatsApp before you transfer.
+
+### Pickup
+Hotel pickup is **IDR 400,000** (same adventure surcharge as ATV / Swing Heaven), or **self-meet at Griya Beji** with no transport fee. Village lanes into Punggul are narrow — a driver who knows Abiansemal helps.
+
+### Etiquette
+Sarong and sash — swimwear is not ritual dress. Women who are menstruating should not enter the inner grounds or the purification pool. Keep voices low. Healing therapy is **not** a hospital clinic; the park asks guests with psychosis or dissociative disorders not to use hypnotherapy.
+
+Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat) · [2026 price guide](/blog/griya-beji-waterfall-ubud-guide) · [palm reading](/blog/palm-reading-bali-griya-beji) · [mental healing](/blog/mental-healing-bali-griya-beji).`,
+    highlights: [
+      "Waterfall purification (melukat) from IDR 300,000",
+      "Palm reading IDR 1,000,000 · mental healing IDR 1,500,000",
+      "Punggul, Abiansemal — not Tirta Empul or Pura Beji",
+      "Pickup IDR 400,000 or free self-meet",
+    ],
+    included: [
+      "Chosen ritual or therapy (purification, palm reading, or mental healing)",
+      "Park practitioner / pemangku for that offering",
+    ],
+    notIncluded: [
+      "Gate admission (IDR 50,000 international / IDR 20,000 domestic)",
+      "Hotel pickup (IDR 400,000 surcharge — optional)",
+      "Sarong rental if you do not bring your own (confirm on site)",
+      "Lunch and personal expenses",
+    ],
+    itinerary: [
+      {
+        id: "iti-griya-1",
+        time: "Arrive",
+        title: "Check-in at Griya Beji",
+        description:
+          "Self-meet at Jl. Mawar, Desa Punggul, or arrive with optional hotel pickup. Confirm purification, palm reading, and/or mental healing at the lobby.",
+      },
+      {
+        id: "iti-griya-2",
+        time: "Prepare",
+        title: "Sarong, offering, intention",
+        description:
+          "Change into a sarong and sash. The park is a living shrine — swimwear is not the ritual dress.",
+      },
+      {
+        id: "iti-griya-3",
+        time: "Ritual",
+        title: "Purification, reading, or healing",
+        description:
+          "Melukat in the spring-fed pool, sit for palm reading with your birth date, or join mental healing. Book the slots you want — they are separate prices.",
+      },
+      {
+        id: "iti-griya-4",
+        time: "Leave",
+        title: "Change and return",
+        description:
+          "Dry clothes, then self-depart or return with our pickup. Pair the same district with ATV or Swing Heaven on WhatsApp.",
+      },
+    ],
+    activityOptions: [
+      {
+        name: "Waterfall purification (melukat)",
+        priceDiff: 0,
+        description: "Ritual in the spring-fed pool — IDR 300,000. Gate admission extra.",
+      },
+      {
+        name: "Palm reading",
+        priceDiff: GRIYA_BEJI_PALM_READING_IDR - GRIYA_BEJI_PURIFICATION_IDR,
+        description: "Hands + birth date — IDR 1,000,000. Book ahead.",
+      },
+      {
+        name: "Mental healing therapy",
+        priceDiff: GRIYA_BEJI_HEALING_IDR - GRIYA_BEJI_PURIFICATION_IDR,
+        description: "Guided relaxation — IDR 1,500,000. Not a medical clinic.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-griya-1",
+        question: "How much is Griya Beji Waterfall purification near Ubud?",
+        answer:
+          "Waterfall purification (melukat) is IDR 300,000 per person on the 2026 park menu. International admission is IDR 50,000 (domestic IDR 20,000) extra at the gate. Hotel pickup is IDR 400,000 or self-meet in Punggul. Confirm the live board on WhatsApp.",
+      },
+      {
+        id: "faq-griya-2",
+        question: "Is Griya Beji the same as Pura Beji or Tirta Empul?",
+        answer:
+          "No. Taman Beji Griya Waterfall is in Desa Punggul, Abiansemal. Our private Tirta Empul or Pura Beji ticket is a different spring, IDR 1,200,000, with shuttle and breakfast. Do not treat the names as one park.",
+      },
+      {
+        id: "faq-griya-3",
+        question: "How much is palm reading at Griya Beji?",
+        answer:
+          "Palm reading is IDR 1,000,000 per person. Book ahead. Gate admission is extra. It is not medical or legal advice.",
+      },
+      {
+        id: "faq-griya-4",
+        question: "How much is mental healing at Griya Beji?",
+        answer:
+          "Mental healing / healing therapy is IDR 1,500,000 per person. It is guided relaxation, not a hospital clinic. The park asks guests with psychosis or dissociative disorders not to use hypnotherapy.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: GIRLS_TRIP_SLUG,
+    title: "Private Bali Itinerary: Family, Girls Trip & Long Driver Days",
+    slug: GIRLS_TRIP_SLUG,
+    category: "day-tour",
+    area: "Ubud · Seminyak · Uluwatu · Kintamani",
+    venue: "Your villa or hotel + the days we actually operate",
+    pickup: "Private driver (car from IDR 600K/day · HiAce quote for 6+)",
+    isTopPick: true,
+    duration: "1 long day or 2–7 days",
+    basePrice: GIRLS_TRIP_DRIVER_DAY_FROM_IDR,
+    seoTitle: "Private Bali Itinerary | Family & Groups",
+    seoDescription:
+      "Family, girls trip, or any private group. Consultation only on WhatsApp — no booking form. We quote the driver, Swing Heaven, jeep, cooking, cycling. Clubs and spa stay yours.",
+    heroImage: {
+      url: "/images/adventures/private-bali-itinerary.jpg",
+      alt: "Guest on a Bali clifftop looking over turquoise water on a private itinerary",
+      width: 1600,
+      height: 1000,
+    },
+    gallery: [
+      {
+        url: "/images/adventures/private-bali-itinerary.jpg",
+        alt: "Guest on a Bali clifftop looking over turquoise water on a private itinerary",
+      },
+      {
+        url: "/images/adventures/swing-heaven-ayung.jpg",
+        alt: "Jungle swing photo stop on a private Bali itinerary at Swing Heaven Bongkasa",
+      },
+      {
+        url: "/images/adventures/swing-heaven-koi-pond.jpg",
+        alt: "Koi boat photo at Swing Heaven — a booked photo day on a private Bali trip",
+      },
+      {
+        url: "/images/adventures/full-day-ubud-tour.jpg",
+        alt: "Private-driver countryside day for a family or friend-group Bali itinerary",
+      },
+      {
+        url: "/images/adventures/cycling.jpg",
+        alt: "Pejeng ricefield cycling — a calm family morning on a multi-day private trip",
+      },
+    ],
+    shortDescription:
+      "Paste a family week, a girls trip, or one long private day. We book the driver (car from IDR 600,000 / day; HiAce quoted for 6+), plus Swing Heaven, Batur jeep, cooking, or cycling. Beach clubs, spa, and Kecak stay on your cards.",
+    fullDescription: `**Can you handle a private Bali itinerary — family week, girls trip, or one long driver day?** Yes. Paste the plan on WhatsApp. **Sekar Bali Activity** books the **private driver** plus the days we actually sell: **[Swing Heaven](/tours/swing-heaven-bali)**, **[Mount Batur jeep](/tours/batur-sunrise-jeep-tour)**, **[Tumang cooking](/tours/balinese-cooking-class)**, **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)**, ATV, Griya Beji, airport transfer. You keep beach clubs, nightclubs, spa, Kecak seats, and restaurant tables.
+
+### Who this is for
+
+| Group | Typical booked days | Pace |
+| --- | --- | --- |
+| **Family** | Jeep sunrise (no hike), cooking class, cycling, one swing photo stop | Early nights, kid snacks, HiAce if 5+ |
+| **Girls / friends** | Swing + koi photo day, jeep or spa-adjacent driver day | Slack for outfits and group photos |
+| **Couple** | One long Ubud day + jeep or Tanah Lot sunset | Private car, not a 12-seater |
+| **Any private group** | 1 long day (10–14h) or 2–7 stacked driver days | You set the pins; we quote IDR |
+
+This is **not** girls-only. A 6-lady Seminyak week is one sample. A family of four in Ubud for three slow days is the same desk.
+
+### What “easy to handle” means
+
+One thread. We return a **driver-day total + activity lines** with published IDR. We do **not** invent a fake all-inclusive luxury package, and we do **not** sell beach-club tables. The car still drops you at those pins.
+
+| We book | You book | We skip |
+| --- | --- | --- |
+| Private car from **IDR ${GIRLS_TRIP_DRIVER_DAY_FROM_IDR.toLocaleString("id-ID")}** / day | FINNS, La Favela, Savaya | Nusa Penida on a short clock |
+| HiAce / 10–12 seater **quote** for 6+ | Cretya, Taman Dedari, spa | Lovina dolphins |
+| [Swing Heaven + koi](/tours/swing-heaven-bali) | Uluwatu + Kecak seats | Extra temples + mall days |
+| [Batur jeep](/tours/batur-sunrise-jeep-tour) (pickup included) | Jewelry class, watersports | Three Kintamani cafés |
+| Cooking / cycling / ATV / [Griya Beji](/tours/griya-beji-waterfall) | Villa dinners, kids’ rest time | Treating jeep as a summit hike |
+| [DPS transfer](/transfers) from **IDR ${GIRLS_TRIP_AIRPORT_TRANSFER_IDR.toLocaleString("id-ID")}** | Club guest lists | Free pickup on swing/ATV/Griya unless a driver day is booked |
+
+### Sample shapes
+
+**One long private day:** hotel pickup → [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) or [Swing Heaven](/tours/swing-heaven-bali) → lunch → [Tumang cooking](/tours/balinese-cooking-class) or a guest restaurant → drop. Same car, published activity IDR.
+
+**Family 4-day:** arrival transfer → cooking + cycling → no-hike [Batur jeep](/tours/batur-sunrise-jeep-tour) → soft Ubud / [Griya Beji](/tours/griya-beji-waterfall) → airport. Guide: [family private itinerary](/blog/bali-family-private-itinerary-2026).
+
+**Girls 6-day:** Seminyak social → Swing Heaven photo day → Uluwatu + Kecak → soft Ubud → jeep sunrise → water morning + airport. Guide: [6-day girls trip](/blog/bali-6-day-girls-trip-itinerary-2026).
+
+More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book) · [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary)
+
+### How to consult
+
+**Consultation only** — there is no booking form or checkout for this itinerary. WhatsApp **group type (family / girls / friends / couple), dates, villa area, guest count + kids’ ages, car vs HiAce, and the day list**. No payment to inquire. After you agree on the quote, same invoice + Seabank flow as every other activity.`,
+    highlights: [
+      "Family, girls trip, friends, or couple — one WhatsApp itinerary desk",
+      "One long private day or 2–7 stacked driver days",
+      "Private driver from IDR 600,000 / car-day · HiAce quoted for 6+",
+      "We book Swing Heaven, Batur jeep, cooking, cycling, ATV, Griya Beji, airport runs",
+      "You keep clubs, spa, Kecak, and restaurant tables — we still drive those pins",
+      "Honest skip list: Penida, Lovina, extra temples, mall days",
+    ],
+    included: [
+      "WhatsApp itinerary desk — driver days + the activities we actually sell",
+      "English-speaking private driver on the days you book",
+      "Mineral water in the car",
+      "Published IDR on Swing Heaven, Batur jeep, cooking, cycling, ATV, Griya Beji, airport transfer",
+    ],
+    notIncluded: [
+      "FINNS, La Favela, Savaya, Cretya, Taman Dedari, spa, jewelry class, Kecak, watersports tickets",
+      "HiAce / 10–12 seater rate (quoted — not the car-day from-price)",
+      "Swing Heaven photographer (own phone) and park extras (koi boat, flying dress)",
+      "Temple / beach-club / restaurant entrance and consumption",
+      "Villa, cake, outfits, and night-club guest lists",
+    ],
+    itinerary: [
+      {
+        id: "iti-gt-1",
+        time: "Long day A",
+        title: "Private driver + one booked activity",
+        description:
+          "Hotel pickup, then Swing Heaven, cooking, cycling, or a guest restaurant. Same car all day. Clubs and spa tables stay yours.",
+      },
+      {
+        id: "iti-gt-2",
+        time: "Family stack",
+        title: "Cooking + cycling or jeep sunrise",
+        description:
+          "Tumang cooking (free Ubud pickup) and Pejeng cycling, or a no-hike Batur jeep morning. Early villa return.",
+      },
+      {
+        id: "iti-gt-3",
+        time: "Girls-trip photo day",
+        title: "Swing Heaven + koi boat",
+        description:
+          "Bongkasa 09:00–12:30. Photographer not included. Cut extra waterfalls first if the swing runs long.",
+      },
+      {
+        id: "iti-gt-4",
+        time: "South-coast day",
+        title: "Uluwatu / Tanah Lot — driver only",
+        description:
+          "We drive. You buy temple and Kecak tickets, or book our half-day Tanah Lot car instead.",
+      },
+      {
+        id: "iti-gt-5",
+        time: "Sunrise day",
+        title: "Kintamani jeep",
+        description:
+          "04:30-style pickup. Private 4×4 to the crater-rim viewpoint. Meal included. Not the summit hike.",
+      },
+      {
+        id: "iti-gt-6",
+        time: "Departure",
+        title: "Airport or one short activity",
+        description:
+          "DPS transfer from IDR 700,000 / MPV, or a morning ATV/rafting if the flight is late.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-gt-1",
+        question: "Can you handle a family, girls trip, or any private multi-day itinerary?",
+        answer:
+          "Yes — consultation only. There is no booking form. Send group type, dates, villa area, guest count (and kids’ ages), and the day list on WhatsApp. We quote private driver days (car from IDR 600,000 / day; HiAce quoted for 6+) plus Swing Heaven, the Mount Batur jeep, cooking, cycling, or ATV. Beach clubs, spa, Kecak, and watersports stay on your bookings. No payment to inquire.",
+      },
+      {
+        id: "faq-gt-consult",
+        question: "Can I book this itinerary in the website form?",
+        answer:
+          "No. Family weeks, girls trips, and any private long-day or multi-day plan are WhatsApp consultation only. Use the Consultation button — we do not run this product through the booking popup or /book checkout.",
+      },
+      {
+        id: "faq-gt-2",
+        question: "Do you book FINNS, La Favela, Cretya, or Savaya?",
+        answer:
+          "No. Those are guest reservations. Our driver can drop and wait. We only invoice activities and cars we actually operate.",
+      },
+      {
+        id: "faq-gt-3",
+        question: "How much is a private driver for a family or a group of 6?",
+        answer:
+          "A standard private car starts from IDR 600,000 per day (same from-price as the Full Day Ubud Tour). Families or six guests plus bags usually need a HiAce / 10–12 seater — that rate is quoted on WhatsApp, not the car-day figure.",
+      },
+      {
+        id: "faq-gt-4",
+        question: "Is Swing Heaven the Tegallalang Bali Swing?",
+        answer:
+          "No. We book Swing Heaven on Jl. Tangga Yuda, Bongkasa, over the Ayung River. Tegallalang is a different roadside product. Photos are on your own phone.",
+      },
+      {
+        id: "faq-gt-5",
+        question: "Is the Kintamani sunrise a hike?",
+        answer:
+          "No. The private jeep goes to a crater-rim viewpoint at about 1,350m. Tracking adds a guided walk at the same private rates. Neither is the 2-hour summit trek. Pickup is included island-wide.",
+      },
+    ],
+    reviews: [],
+  },
+  ...PARK_WORKSHOP_TOURS,
 ]
 
 export function getTourBySlug(slug: string): Tour | undefined {

@@ -9,14 +9,14 @@ export const SITE_URL = 'https://www.sekarbaliactivity.com'
 export const SITE_NAME = 'Sekar Bali Activity'
 
 /** SERP title target: brand + offer, ≤60 characters */
-export const DEFAULT_TITLE = 'Sekar Bali Activity | Cooking Class & Cycling Ubud'
+export const DEFAULT_TITLE = 'Sekar Bali Activity | Jeep, Cooking & ATV Ubud'
 export const DEFAULT_DESCRIPTION =
-  'Book Tumang Bali Cooking Class promo from IDR 450K / person and Pejeng ricefield cycling from IDR 750K near Ubud — free hotel pickup on both. Also ATV, rafting & day tours. Clear IDR. WhatsApp booking.'
+  'Private Mount Batur jeep from IDR 750K, Tumang cooking from 450K, Pejeng cycling from 750K near Ubud — plus ATV, rafting, swing. WhatsApp booking.'
 
 /** Social previews (og:title ≤60, og:description ≤160) */
-export const OG_TITLE = 'Cooking Class & Cycling Ubud | Sekar Bali'
+export const OG_TITLE = 'Jeep, Cooking & ATV Ubud | Sekar Bali'
 export const OG_DESCRIPTION =
-  'Tumang cooking class + Pejeng ricefield cycling near Ubud with free pickup. Transparent IDR, TripAdvisor Traveler’s Choice kitchen, WhatsApp booking.'
+  'Private Batur jeep, Tumang cooking class, Pejeng cycling, ATV and rafting near Ubud. Transparent IDR, WhatsApp booking — no payment to inquire.'
 
 export const OG_IMAGE = {
   url: '/images/adventures/og-cover.jpg',
@@ -35,7 +35,7 @@ export function buildOrganizationSchema() {
     alternateName: ['Sekar Bali', 'Sekar Bali Activity Ubud', 'Sekar Bali Pejeng'],
     legalName: SITE_NAME,
     description:
-      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Swing Heaven jungle swing, ricefield cycling, Mount Batur sunrise jeep (Kintamani), Tumang Bali Cooking Class, Tirta Empul or Pura Beji private melukat, coffee tasting, and private day tours. Free Ubud hotel pickup on cycling and Tumang cooking class; private shuttle on Tirta Empul / Beji purification.',
+      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Swing Heaven jungle swing, ricefield cycling, Mount Batur sunrise jeep (Kintamani), Tumang Bali Cooking Class, Tirta Empul or Pura Beji private melukat, Griya Beji Waterfall purification / palm reading / mental healing, coffee tasting, and private day tours. Free Ubud hotel pickup on cycling and Tumang cooking class; private shuttle on Tirta Empul / Beji purification; Griya Beji pickup IDR 400,000 or self-meet.',
     url: SITE_URL,
     telephone: CONTACT_PHONE_E164,
     email: CONTACT_EMAIL,
@@ -124,9 +124,18 @@ export const SITE_NAV_LINKS = [
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },
   { name: 'Swing Heaven Bali', url: `${SITE_URL}/tours/swing-heaven-bali` },
   { name: 'Private Mount Batur Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour` },
+  { name: 'Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026` },
+  { name: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek` },
   { name: 'Tirta Empu Purification (Melukat)', url: `${SITE_URL}/tours/tirta-empu-purification` },
+  { name: 'Griya Beji Waterfall Purification', url: `${SITE_URL}/tours/griya-beji-waterfall` },
   { name: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour` },
   { name: 'Half Day Ubud & Tanah Lot', url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour` },
+  { name: 'Private Bali Itinerary', url: `${SITE_URL}/tours/bali-private-itinerary` },
+  { name: 'Bali Bird Park', url: `${SITE_URL}/tours/bali-bird-park` },
+  { name: 'Bali Canyoning', url: `${SITE_URL}/tours/canyoning` },
+  { name: 'Ubud Batik Class', url: `${SITE_URL}/tours/batik-class` },
+  { name: 'Bali Family Private Itinerary', url: `${SITE_URL}/blog/bali-family-private-itinerary-2026` },
+  { name: '6-Day Bali Girls Trip Guide', url: `${SITE_URL}/blog/bali-6-day-girls-trip-itinerary-2026` },
   { name: 'Luwak Coffee Plantation', url: `${SITE_URL}/tours/luwak-coffee-plantation` },
   { name: 'Things to Do Near Ubud 2026', url: `${SITE_URL}/blog/things-to-do-near-ubud-2026` },
   { name: 'About Us', url: `${SITE_URL}/about` },

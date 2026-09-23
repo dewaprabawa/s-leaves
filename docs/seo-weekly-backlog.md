@@ -24,7 +24,7 @@
    - Money page: `/tours/ubud-ricefield-cycling-tour`  
    - Why it sells: Booking reason is **free Ubud pickup + lunch** on a 2-hour Pejeng ride.  
    - Effort: **S**  
-   - Action: **done 2026-09-22** — SERP title is now `Ricefield Cycling Ubud | Free Pickup 750K`.
+   - Action: **done 2026-09-22** — SERP title is now `Rice Paddy Cycling Ubud | Free Pickup 750K` (kept main’s “Rice Paddy” head term + this branch’s free-pickup 750K).
 
 4. **Cooking class Ubud worth it 2026 / vegetarian menu**  
    - Money page: `/tours/balinese-cooking-class`  

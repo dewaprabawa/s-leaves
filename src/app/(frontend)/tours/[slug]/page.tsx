@@ -40,6 +40,7 @@ import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
 import { TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
+import { GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -161,7 +162,7 @@ function buildTourSchema(tour: Tour) {
   const isoDuration = durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
-    "@type": cooking ? (["TouristTrip", "Product"] as const) : "TouristTrip",
+    "@type": cooking || jeep ? (["TouristTrip", "Product"] as const) : "TouristTrip",
     "@id": `${SITE_URL}/tours/${tour.slug}#trip`,
     name: tour.title,
     description: cooking
@@ -226,9 +227,9 @@ function buildTourSchema(tour: Tour) {
       offers: {
         "@type": "AggregateOffer",
         lowPrice: JEEP_GEO_ENTITY.groupPerPersonIdr,
-        highPrice: JEEP_GEO_ENTITY.pairPerPersonIdr,
+        highPrice: TIER_PRICES_IDR["kintamani-day"][1],
         priceCurrency: "IDR",
-        offerCount: 2,
+        offerCount: 3,
         availability: "https://schema.org/InStock",
         url: `${SITE_URL}/tours/${tour.slug}`,
         offers: [
@@ -244,6 +245,14 @@ function buildTourSchema(tour: Tour) {
             "@type": "Offer",
             name: "Private jeep — 3+ guests sharing",
             price: JEEP_GEO_ENTITY.groupPerPersonIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "Private Kintamani Day (jeep or tracking)",
+            price: TIER_PRICES_IDR["kintamani-day"][1],
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -412,13 +421,13 @@ function buildTourWebPageSchema(tour: Tour) {
   if (isJeepTour(tour)) return buildJeepWebPageSchema(tour)
 
   const significantLink = [
-    `${SITE_URL}/book?activity=${tour.slug}`,
+    tour.slug === GIRLS_TRIP_SLUG ? undefined : `${SITE_URL}/book?activity=${tour.slug}`,
     `${SITE_URL}/llms.txt`,
     `${SITE_URL}/pricing.md`,
     ...getTourRelatedGuides(tour.slug).map((guide) =>
       guide.href.startsWith("http") ? guide.href : `${SITE_URL}${guide.href}`,
     ),
-  ]
+  ].filter((href): href is string => Boolean(href))
 
   return {
     "@context": "https://schema.org",
@@ -657,7 +666,8 @@ export default async function TourPage({ params }: Props) {
                   ) : isJeepTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">
                       From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · 2 pax{" "}
-                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1])} · private · min 2 guests
+                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1])} · Kintamani Day promo{" "}
+                      {formatIdr(TIER_PRICES_IDR["kintamani-day"][1])} · private · min 2 guests
                     </span>
                   ) : isAtvTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">

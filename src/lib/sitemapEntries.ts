@@ -19,6 +19,7 @@ const MONEY_TOUR_SLUGS = new Set([
   'swing-heaven-bali',
   'ubud-ricefield-cycling-tour',
   'bali-atv-adventure',
+  'bali-private-itinerary',
 ])
 
 const HIGH_BLOG_SLUGS = new Set([
@@ -44,6 +45,10 @@ const HIGH_BLOG_SLUGS = new Set([
   'half-day-ubud-tanah-lot-sunset-tour-2026',
   'luwak-coffee-plantation-umah-kuno-price-2026',
   'tirta-empu-melukat-ubud-guide',
+  'bali-6-day-girls-trip-itinerary-2026',
+  'bali-family-private-itinerary-2026',
+  'bali-private-itinerary-what-we-book-vs-you-book',
+  'what-to-skip-on-a-6-day-bali-itinerary',
 ])
 
 /** Posts rewritten in the latest GEO pass — recrawl these even if publishedAt is older. */
@@ -66,6 +71,10 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'ubud-ricefield-cycling-tour-guide-2026': ACTIVITY_GEO_UPDATED,
   'bali-whitewater-rafting-near-ubud-guide': ACTIVITY_GEO_UPDATED,
   'bali-canyon-tubing-guide-ubud': ACTIVITY_GEO_UPDATED,
+  'bali-6-day-girls-trip-itinerary-2026': ACTIVITY_GEO_UPDATED,
+  'bali-family-private-itinerary-2026': ACTIVITY_GEO_UPDATED,
+  'bali-private-itinerary-what-we-book-vs-you-book': ACTIVITY_GEO_UPDATED,
+  'what-to-skip-on-a-6-day-bali-itinerary': ACTIVITY_GEO_UPDATED,
 }
 
 /** Paths Google should not receive via sitemap (redirects, noindex, or non-HTML). */
@@ -90,6 +99,7 @@ function toDate(isoDate: string): Date {
 function tourLastModified(slug: string): Date {
   if (slug === 'balinese-cooking-class') return toDate(COOKING_GEO_UPDATED)
   if (slug === 'batur-sunrise-jeep-tour') return toDate(JEEP_GEO_UPDATED)
+  if (slug === 'bali-private-itinerary') return toDate(ACTIVITY_GEO_UPDATED)
   return toDate(ACTIVITY_GEO_UPDATED)
 }
 

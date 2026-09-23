@@ -25,6 +25,9 @@ const ACTIVITY_GUIDES = [
   { label: 'Griya vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
   { label: 'Tirta Empul melukat', href: '/blog/tirta-empu-melukat-ubud-guide' },
   { label: 'Luwak coffee', href: '/tours/luwak-coffee-plantation' },
+  { label: 'Private itinerary', href: '/tours/bali-private-itinerary' },
+  { label: 'Family itinerary', href: '/blog/bali-family-private-itinerary-2026' },
+  { label: '6-day girls trip', href: '/blog/bali-6-day-girls-trip-itinerary-2026' },
   { label: 'Full-day Ubud', href: '/tours/full-day-ubud-tour' },
   { label: 'Tanah Lot sunset', href: '/tours/half-day-ubud-tanah-lot-tour' },
   { label: 'Book WhatsApp', href: '/book' },
@@ -32,7 +35,7 @@ const ACTIVITY_GUIDES = [
 
 export const metadata: Metadata = {
   title: 'Blog & Travel Guide',
-  description: 'Ubud activity guides with 2026 IDR: private Mount Batur jeep, Tumang cooking class, Pejeng cycling, ATV, Ayung rafting, Swing Heaven, Griya Beji, and pickup rules — WhatsApp booking.',
+  description: 'Ubud activity guides with 2026 IDR: private Mount Batur jeep, Tumang cooking class, Pejeng cycling, ATV, Ayung rafting, Swing Heaven, Griya Beji, private family and girls-trip itineraries, and pickup rules — WhatsApp booking.',
   alternates: { canonical: '/blog' },
 }
 

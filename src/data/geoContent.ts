@@ -33,7 +33,7 @@ import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 export const GEO_UPDATED = '2026-09-23'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in or tracking 4×4, sunrise or sunset, min 2 guests; IDR 950,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), and Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000) — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; Griya Beji / ATV / Swing Heaven pickup IDR 400,000 or self-meet.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in or tracking 4×4, sunrise or sunset, min 2 guests; IDR 950,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; Griya Beji / ATV / Swing Heaven pickup IDR 400,000 or self-meet.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -70,6 +70,7 @@ export const GEO_PRICING = [
   { activity: 'Full Day Ubud Tour', price: 'IDR 600,000', pax: 'from / private car', includes: 'private car, English-speaking driver, flexible Ubud highlights (palace, market, rice terraces) — entrance fees & lunch not included' },
   { activity: 'Half Day Ubud & Tanah Lot Sunset Tour', price: 'IDR 450,000', pax: 'from / private car', includes: 'private car, English-speaking driver, Ubud cultural stops + Tanah Lot sunset — entrance fees & dinner not included' },
   { activity: 'DPS Airport to Ubud Private Transfer', price: 'IDR 700,000', pax: 'per vehicle (standard MPV)', includes: 'one-way flat rate, flight tracking, tolls, parking, professional driver' },
+  { activity: 'Private Bali itinerary (family / girls / any group)', price: 'IDR 600,000+', pax: 'from / private car-day (HiAce quoted for 6+)', includes: 'consultation only on WhatsApp (no booking form); one long day or 2–7 driver days + Swing Heaven / jeep / cooking / cycling as line items; clubs, spa, Kecak, and watersports not included' },
 ] as const
 
 export const GEO_POLICIES = [
@@ -120,8 +121,8 @@ export const GEO_POLICIES = [
   },
   {
     topic: 'Group bookings',
-    rule: 'Groups of 4+ may receive special rates. Message WhatsApp for private tours and custom quotes.',
-    url: `${SITE_URL}/contact`,
+    rule: 'Groups of 4+ may receive special rates. Message WhatsApp for private tours and custom quotes. Family weeks, girls trips, and any private long-day or multi-day itinerary use the private itinerary page: we quote driver days plus Swing Heaven, the Batur jeep, cooking, or cycling; beach clubs and spa stay guest-booked.',
+    url: `${SITE_URL}/tours/bali-private-itinerary`,
   },
 ] as const
 
@@ -250,6 +251,16 @@ export const GEO_TOUR_SUMMARIES = [
     summary:
       'Private half-day pairing Ubud cultural stops with Tanah Lot sea-temple sunset. English-speaking driver included; entrance fees and dinner not included.',
     url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour`,
+  },
+  {
+    name: 'Private Bali Itinerary',
+    slug: 'bali-private-itinerary',
+    price: 'From IDR 600,000 / private car-day · HiAce quoted',
+    duration: '1 long day or 2–7 days',
+    location: 'Ubud, Seminyak, Uluwatu, Kintamani',
+    summary:
+      'Consultation only on WhatsApp — no booking form. Families, girls trips, friends, and couples. One long private driver day or stacked days. We quote the car, Swing Heaven, Batur jeep, cooking, or cycling. Beach clubs, spa, Kecak, and watersports stay guest-booked. Skip Nusa Penida and Lovina on a short clock.',
+    url: `${SITE_URL}/tours/bali-private-itinerary`,
   },
 ] as const
 
@@ -632,8 +643,20 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Groups',
     q: 'Are group discounts available for Bali adventure tours?',
-    a: 'Yes. Groups of 4 or more may receive special rates with Sekar Bali Activity. Message WhatsApp for custom quotes and private tour arrangements.',
-    url: `${SITE_URL}/contact`,
+    a: 'Yes. Groups of 4 or more may receive special rates with Sekar Bali Activity. Message WhatsApp for custom quotes, private tours, and family / girls-trip / any private multi-day itinerary (driver + Swing Heaven, jeep, cooking, or cycling).',
+    url: `${SITE_URL}/tours/bali-private-itinerary`,
+  },
+  {
+    category: 'Itinerary',
+    q: 'Can Sekar Bali Activity handle a family, girls trip, or private multi-day itinerary?',
+    a: 'Yes — consultation only. There is no booking form for family weeks, girls trips, or any private long-day / multi-day plan. Paste group type, dates, villa area, guest count (and kids’ ages), and the day list on WhatsApp. Sekar Bali Activity quotes private driver days (car from IDR 600,000 / day; HiAce quoted for 6+), plus Swing Heaven, the Mount Batur jeep, cooking, or cycling. FINNS, La Favela, Cretya, Kecak, spa, jewelry class, and watersports stay guest-booked. No payment to inquire.',
+    url: `${SITE_URL}/tours/bali-private-itinerary`,
+  },
+  {
+    category: 'Itinerary',
+    q: 'Do you book FINNS, La Favela, Cretya, or Savaya on a private itinerary?',
+    a: 'No. Those venues take their own reservations. Our private driver can drop and wait. We only invoice cars and activities we operate — Swing Heaven, the Mount Batur jeep, cooking, cycling, ATV, Griya Beji, and airport transfers.',
+    url: `${SITE_URL}/blog/bali-private-itinerary-what-we-book-vs-you-book`,
   },
   {
     category: 'Cooking',
@@ -703,7 +726,8 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Luwak Coffee Plantation (Umah Kuno)', url: `${SITE_URL}/tours/luwak-coffee-plantation`, desc: 'Ethical Luwak tasting — IDR 800,000 per person · min 3 guests · transport not included' },
   { title: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour`, desc: 'Private Ubud highlights — from IDR 600,000 · driver included' },
   { title: 'Half Day Ubud & Tanah Lot Sunset', url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour`, desc: 'Ubud culture + Tanah Lot sunset — from IDR 450,000 · driver included' },
-  { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book jeep, cooking, cycling, ATV, rafting, Swing Heaven, Griya Beji, or culture day via WhatsApp' },
+  { title: 'Private Bali Itinerary', url: `${SITE_URL}/tours/bali-private-itinerary`, desc: 'Family, girls trip, or any private group — one long day or 2–7 days · driver from IDR 600K/day · clubs stay yours' },
+  { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book jeep, cooking, cycling, ATV, rafting, Swing Heaven, Griya Beji, or a culture day via WhatsApp. Private itineraries are consultation-only on the itinerary page.' },
   { title: 'Pricing (HTML)', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices on the homepage' },
   { title: 'Pricing (Markdown for agents)', url: `${SITE_URL}/pricing.md`, desc: 'Machine-readable IDR tiers, inclusions, and pickup fees' },
   { title: 'Things to Do Near Ubud 2026', url: `${SITE_URL}/blog/things-to-do-near-ubud-2026`, desc: 'All activities with 2026 IDR prices, pickup rules, and WhatsApp booking CTAs' },
@@ -719,6 +743,10 @@ export const GEO_PRIMARY_PAGES = [
 ] as const
 
 export const GEO_ARTICLES = [
+  { title: 'Private Bali Itinerary: What We Book vs You Book', url: `${SITE_URL}/blog/bali-private-itinerary-what-we-book-vs-you-book` },
+  { title: 'Bali Family Private Itinerary 2026', url: `${SITE_URL}/blog/bali-family-private-itinerary-2026` },
+  { title: '6-Day Bali Girls Trip Itinerary 2026', url: `${SITE_URL}/blog/bali-6-day-girls-trip-itinerary-2026` },
+  { title: 'What to Skip on a 6-Day Private Bali Itinerary', url: `${SITE_URL}/blog/what-to-skip-on-a-6-day-bali-itinerary` },
   { title: 'Private Mount Batur Jeep Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-guide-2026` },
   { title: 'Private Mount Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026` },
   { title: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek` },
@@ -784,6 +812,7 @@ export const GEO_CITATION_SNIPPETS = [
   'Mount Batur jeep vs trek: private jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint; tracking jeep adds a guided trek at the same private rates — neither is the 2-hour summit hike. Comparison: https://www.sekarbaliactivity.com/blog/mount-batur-jeep-vs-sunrise-trek',
   'Luwak Coffee Plantation at Umah Kuno with Sekar Bali Activity is IDR 800,000 per person (minimum 3 guests) for an ethical cage-free tasting — jungle walk, wood-fire roasting, and a 10-drink flight including Kopi Luwak. Transport to Tampaksiring is not included.',
   'Full Day Ubud Tour with Sekar Bali Activity starts from IDR 600,000 for a private car and English-speaking driver (entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000.',
+  'Sekar Bali Activity handles private Bali itineraries for families, girls trips, and any private group: driver from IDR 600,000 per car-day (HiAce quoted for 6+), plus Swing Heaven, Batur jeep, cooking, or cycling. Beach clubs and spa stay guest-booked. https://www.sekarbaliactivity.com/tours/bali-private-itinerary',
   ...ACTIVITY_GEO_CITATION_SNIPPETS,
   'Sekar Bali Activity’s 2026 Ubud-area menu covers cooking, cycling, ATV, rafting, tubing, Swing Heaven jungle swing, Griya Beji Waterfall purification / palm reading / mental healing, private Mount Batur jeep, Umah Kuno Luwak tasting, private Tirta Empul or Pura Beji melukat, and private day tours — prices and pickup rules: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
   'Free hotel pickup within Ubud is included on the Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV/rafting/tubing/Swing Heaven/Griya Beji Waterfall add IDR 400,000 hotel pickup or free self-meet at the venue.',
@@ -792,7 +821,7 @@ export const GEO_CITATION_SNIPPETS = [
   'Sekar Bali Activity’s Google Business Profile / corporate office is at Jalan Tunjung Biru No. 6, Banjar Kenderan, Gianyar; the guest meeting point is Jalan Raya Ubud No. 12; adventures run from the Sedang (Abiansemal) activity base at Jl. Raya Krasan (All New Bali Adventure for ATV).',
 ] as const
 
-export const GEO_FAQ_CATEGORIES = ['ATV', 'Pricing', 'Combos', 'Rafting', 'Tubing', 'Swing', 'Jeep', 'Cycling', 'Cooking', 'Culture', 'Day tours', 'Comparisons', 'Booking', 'Location', 'Experience', 'What to bring', 'Groups'] as const
+export const GEO_FAQ_CATEGORIES = ['ATV', 'Pricing', 'Combos', 'Rafting', 'Tubing', 'Swing', 'Jeep', 'Cycling', 'Cooking', 'Culture', 'Day tours', 'Itinerary', 'Comparisons', 'Booking', 'Location', 'Experience', 'What to bring', 'Groups'] as const
 
 /** Curated homepage subset — one answer per priority category for citability diversity */
 export const HOMEPAGE_GEO_FAQ_QUESTIONS = [
@@ -813,6 +842,7 @@ export const HOMEPAGE_GEO_FAQ_QUESTIONS = [
   'Is Griya Beji the same as Tirta Empul or Pura Beji?',
   'How much is the Luwak Coffee Plantation Experience at Umah Kuno?',
   'How much is a private full day or half day Ubud tour?',
+  'Can Sekar Bali Activity handle a family, girls trip, or private multi-day itinerary?',
   'What are the best things to do near Ubud with Sekar Bali Activity?',
 ] as const
 

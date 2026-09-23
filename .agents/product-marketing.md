@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v2.7
-**Last updated:** 2026-09-20
+**Document version:** v2.9
+**Last updated:** 2026-09-23
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — adventure, village, food, and day tours with clear IDR pricing and WhatsApp booking.
@@ -27,6 +27,7 @@
 - Private full-day Ubud or Tanah Lot sunset tour
 - Coffee plantation tasting as a calm morning stop
 - Pre-dawn **private** Mount Batur jeep from Ubud or south Bali (families / non-hikers)
+- Private **family / girls / any-group itinerary** (consultation only on WhatsApp — no booking form; driver + Swing Heaven / jeep / cooking / cycling; clubs/spa guest-booked)
 
 ## Personas
 | Persona | Cares about | Challenge | Value we promise |
@@ -129,6 +130,8 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.9 (2026-09-23) — Private Bali itineraries (family / girls / any group) are **consultation only** on WhatsApp — no booking popup or `/book` checkout.
+- v2.8 (2026-09-23) — Added **Bali girls trip / custom 4–7 day itinerary** as a commercial use case: we book driver days (car from IDR 600K; HiAce quoted), Swing Heaven, and Batur jeep; we do not sell FINNS/clubs/spa/Kecak/watersports.
 - v2.7 (2026-09-20) — Private Tumang cooking class is **IDR 1,000,000 per person** (1 guest IDR 1,000,000 / 2 guests IDR 2,000,000). Shared promo stays IDR 450,000.
 - v2.6 (2026-09-20) — Promote Mount Batur jeep and Kintamani Day as **private** (lead with Private in names, CTAs, homepage). Sit-down meal included after the viewpoint on jeep and tracking.
 - v2.5 (2026-09-20) — Rafting and canyon tubing list at **IDR 500,000**, discount **IDR 450,000** for 2+ guests (rafting still min 2). Removed 359K tubing and 475K mid rafting tier.

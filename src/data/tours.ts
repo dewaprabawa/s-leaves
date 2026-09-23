@@ -22,6 +22,11 @@ import {
   GRIYA_BEJI_PURIFICATION_IDR,
   GRIYA_BEJI_VENUE,
 } from "@/data/griyaBeji"
+import {
+  GIRLS_TRIP_AIRPORT_TRANSFER_IDR,
+  GIRLS_TRIP_DRIVER_DAY_FROM_IDR,
+  GIRLS_TRIP_SLUG,
+} from "@/data/girlsTrip"
 
 const COOKING_PRIVATE_SOLO_DIFF =
   COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
@@ -2107,6 +2112,191 @@ Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-m
         question: "How much is mental healing at Griya Beji?",
         answer:
           "Mental healing / healing therapy is IDR 1,500,000 per person. It is guided relaxation, not a hospital clinic. The park asks guests with psychosis or dissociative disorders not to use hypnotherapy.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: GIRLS_TRIP_SLUG,
+    title: "Private Bali Itinerary: Family, Girls Trip & Long Driver Days",
+    slug: GIRLS_TRIP_SLUG,
+    category: "day-tour",
+    area: "Ubud · Seminyak · Uluwatu · Kintamani",
+    venue: "Your villa or hotel + the days we actually operate",
+    pickup: "Private driver (car from IDR 600K/day · HiAce quote for 6+)",
+    isTopPick: true,
+    duration: "1 long day or 2–7 days",
+    basePrice: GIRLS_TRIP_DRIVER_DAY_FROM_IDR,
+    seoTitle: "Private Bali Itinerary | Family & Groups",
+    seoDescription:
+      "Family, girls trip, or any private group. Consultation only on WhatsApp — no booking form. We quote the driver, Swing Heaven, jeep, cooking, cycling. Clubs and spa stay yours.",
+    heroImage: {
+      url: "/images/adventures/swing-heaven-ayung.jpg",
+      alt: "Private group photo stop at Swing Heaven over the Ayung River on a custom Bali itinerary",
+      width: 1600,
+      height: 1000,
+    },
+    gallery: [
+      {
+        url: "/images/adventures/swing-heaven-ayung.jpg",
+        alt: "Jungle swing photo stop on a private Bali itinerary at Swing Heaven Bongkasa",
+      },
+      {
+        url: "/images/adventures/swing-heaven-koi-pond.jpg",
+        alt: "Koi boat photo at Swing Heaven — a booked photo day on a private Bali trip",
+      },
+      {
+        url: "/images/adventures/full-day-ubud-tour.jpg",
+        alt: "Private-driver countryside day for a family or friend-group Bali itinerary",
+      },
+      {
+        url: "/images/adventures/cycling.jpg",
+        alt: "Pejeng ricefield cycling — a calm family morning on a multi-day private trip",
+      },
+    ],
+    shortDescription:
+      "Paste a family week, a girls trip, or one long private day. We book the driver (car from IDR 600,000 / day; HiAce quoted for 6+), plus Swing Heaven, Batur jeep, cooking, or cycling. Beach clubs, spa, and Kecak stay on your cards.",
+    fullDescription: `**Can you handle a private Bali itinerary — family week, girls trip, or one long driver day?** Yes. Paste the plan on WhatsApp. **Sekar Bali Activity** books the **private driver** plus the days we actually sell: **[Swing Heaven](/tours/swing-heaven-bali)**, **[Mount Batur jeep](/tours/batur-sunrise-jeep-tour)**, **[Tumang cooking](/tours/balinese-cooking-class)**, **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)**, ATV, Griya Beji, airport transfer. You keep beach clubs, nightclubs, spa, Kecak seats, and restaurant tables.
+
+### Who this is for
+
+| Group | Typical booked days | Pace |
+| --- | --- | --- |
+| **Family** | Jeep sunrise (no hike), cooking class, cycling, one swing photo stop | Early nights, kid snacks, HiAce if 5+ |
+| **Girls / friends** | Swing + koi photo day, jeep or spa-adjacent driver day | Slack for outfits and group photos |
+| **Couple** | One long Ubud day + jeep or Tanah Lot sunset | Private car, not a 12-seater |
+| **Any private group** | 1 long day (10–14h) or 2–7 stacked driver days | You set the pins; we quote IDR |
+
+This is **not** girls-only. A 6-lady Seminyak week is one sample. A family of four in Ubud for three slow days is the same desk.
+
+### What “easy to handle” means
+
+One thread. We return a **driver-day total + activity lines** with published IDR. We do **not** invent a fake all-inclusive luxury package, and we do **not** sell beach-club tables. The car still drops you at those pins.
+
+| We book | You book | We skip |
+| --- | --- | --- |
+| Private car from **IDR ${GIRLS_TRIP_DRIVER_DAY_FROM_IDR.toLocaleString("id-ID")}** / day | FINNS, La Favela, Savaya | Nusa Penida on a short clock |
+| HiAce / 10–12 seater **quote** for 6+ | Cretya, Taman Dedari, spa | Lovina dolphins |
+| [Swing Heaven + koi](/tours/swing-heaven-bali) | Uluwatu + Kecak seats | Extra temples + mall days |
+| [Batur jeep](/tours/batur-sunrise-jeep-tour) (pickup included) | Jewelry class, watersports | Three Kintamani cafés |
+| Cooking / cycling / ATV / [Griya Beji](/tours/griya-beji-waterfall) | Villa dinners, kids’ rest time | Treating jeep as a summit hike |
+| [DPS transfer](/transfers) from **IDR ${GIRLS_TRIP_AIRPORT_TRANSFER_IDR.toLocaleString("id-ID")}** | Club guest lists | Free pickup on swing/ATV/Griya unless a driver day is booked |
+
+### Sample shapes
+
+**One long private day:** hotel pickup → [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) or [Swing Heaven](/tours/swing-heaven-bali) → lunch → [Tumang cooking](/tours/balinese-cooking-class) or a guest restaurant → drop. Same car, published activity IDR.
+
+**Family 4-day:** arrival transfer → cooking + cycling → no-hike [Batur jeep](/tours/batur-sunrise-jeep-tour) → soft Ubud / [Griya Beji](/tours/griya-beji-waterfall) → airport. Guide: [family private itinerary](/blog/bali-family-private-itinerary-2026).
+
+**Girls 6-day:** Seminyak social → Swing Heaven photo day → Uluwatu + Kecak → soft Ubud → jeep sunrise → water morning + airport. Guide: [6-day girls trip](/blog/bali-6-day-girls-trip-itinerary-2026).
+
+More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book) · [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary)
+
+### How to consult
+
+**Consultation only** — there is no booking form or checkout for this itinerary. WhatsApp **group type (family / girls / friends / couple), dates, villa area, guest count + kids’ ages, car vs HiAce, and the day list**. No payment to inquire. After you agree on the quote, same invoice + Seabank flow as every other activity.`,
+    highlights: [
+      "Family, girls trip, friends, or couple — one WhatsApp itinerary desk",
+      "One long private day or 2–7 stacked driver days",
+      "Private driver from IDR 600,000 / car-day · HiAce quoted for 6+",
+      "We book Swing Heaven, Batur jeep, cooking, cycling, ATV, Griya Beji, airport runs",
+      "You keep clubs, spa, Kecak, and restaurant tables — we still drive those pins",
+      "Honest skip list: Penida, Lovina, extra temples, mall days",
+    ],
+    included: [
+      "WhatsApp itinerary desk — driver days + the activities we actually sell",
+      "English-speaking private driver on the days you book",
+      "Mineral water in the car",
+      "Published IDR on Swing Heaven, Batur jeep, cooking, cycling, ATV, Griya Beji, airport transfer",
+    ],
+    notIncluded: [
+      "FINNS, La Favela, Savaya, Cretya, Taman Dedari, spa, jewelry class, Kecak, watersports tickets",
+      "HiAce / 10–12 seater rate (quoted — not the car-day from-price)",
+      "Swing Heaven photographer (own phone) and park extras (koi boat, flying dress)",
+      "Temple / beach-club / restaurant entrance and consumption",
+      "Villa, cake, outfits, and night-club guest lists",
+    ],
+    itinerary: [
+      {
+        id: "iti-gt-1",
+        time: "Long day A",
+        title: "Private driver + one booked activity",
+        description:
+          "Hotel pickup, then Swing Heaven, cooking, cycling, or a guest restaurant. Same car all day. Clubs and spa tables stay yours.",
+      },
+      {
+        id: "iti-gt-2",
+        time: "Family stack",
+        title: "Cooking + cycling or jeep sunrise",
+        description:
+          "Tumang cooking (free Ubud pickup) and Pejeng cycling, or a no-hike Batur jeep morning. Early villa return.",
+      },
+      {
+        id: "iti-gt-3",
+        time: "Girls-trip photo day",
+        title: "Swing Heaven + koi boat",
+        description:
+          "Bongkasa 09:00–12:30. Photographer not included. Cut extra waterfalls first if the swing runs long.",
+      },
+      {
+        id: "iti-gt-4",
+        time: "South-coast day",
+        title: "Uluwatu / Tanah Lot — driver only",
+        description:
+          "We drive. You buy temple and Kecak tickets, or book our half-day Tanah Lot car instead.",
+      },
+      {
+        id: "iti-gt-5",
+        time: "Sunrise day",
+        title: "Kintamani jeep",
+        description:
+          "04:30-style pickup. Private 4×4 to the crater-rim viewpoint. Meal included. Not the summit hike.",
+      },
+      {
+        id: "iti-gt-6",
+        time: "Departure",
+        title: "Airport or one short activity",
+        description:
+          "DPS transfer from IDR 700,000 / MPV, or a morning ATV/rafting if the flight is late.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-gt-1",
+        question: "Can you handle a family, girls trip, or any private multi-day itinerary?",
+        answer:
+          "Yes — consultation only. There is no booking form. Send group type, dates, villa area, guest count (and kids’ ages), and the day list on WhatsApp. We quote private driver days (car from IDR 600,000 / day; HiAce quoted for 6+) plus Swing Heaven, the Mount Batur jeep, cooking, cycling, or ATV. Beach clubs, spa, Kecak, and watersports stay on your bookings. No payment to inquire.",
+      },
+      {
+        id: "faq-gt-consult",
+        question: "Can I book this itinerary in the website form?",
+        answer:
+          "No. Family weeks, girls trips, and any private long-day or multi-day plan are WhatsApp consultation only. Use the Consultation button — we do not run this product through the booking popup or /book checkout.",
+      },
+      {
+        id: "faq-gt-2",
+        question: "Do you book FINNS, La Favela, Cretya, or Savaya?",
+        answer:
+          "No. Those are guest reservations. Our driver can drop and wait. We only invoice activities and cars we actually operate.",
+      },
+      {
+        id: "faq-gt-3",
+        question: "How much is a private driver for a family or a group of 6?",
+        answer:
+          "A standard private car starts from IDR 600,000 per day (same from-price as the Full Day Ubud Tour). Families or six guests plus bags usually need a HiAce / 10–12 seater — that rate is quoted on WhatsApp, not the car-day figure.",
+      },
+      {
+        id: "faq-gt-4",
+        question: "Is Swing Heaven the Tegallalang Bali Swing?",
+        answer:
+          "No. We book Swing Heaven on Jl. Tangga Yuda, Bongkasa, over the Ayung River. Tegallalang is a different roadside product. Photos are on your own phone.",
+      },
+      {
+        id: "faq-gt-5",
+        question: "Is the Kintamani sunrise a hike?",
+        answer:
+          "No. The private jeep goes to a crater-rim viewpoint at about 1,350m. Tracking adds a guided walk at the same private rates. Neither is the 2-hour summit trek. Pickup is included island-wide.",
       },
     ],
     reviews: [],

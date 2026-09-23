@@ -101,6 +101,15 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book full-day Ubud', href: '/tours/full-day-ubud-tour' },
     { title: 'Book Tanah Lot sunset', href: '/tours/half-day-ubud-tanah-lot-tour' },
   ],
+  girlsTrip: [
+    { title: '6-day Private Bali itinerary', href: '/blog/bali-6-day-girls-trip-itinerary-2026' },
+    { title: 'Family private itinerary', href: '/blog/bali-family-private-itinerary-2026' },
+    { title: 'What we book vs you book', href: '/blog/bali-private-itinerary-what-we-book-vs-you-book' },
+    { title: 'What to skip on a 6-day trip', href: '/blog/what-to-skip-on-a-6-day-bali-itinerary' },
+    { title: 'Consult on a private Bali itinerary', href: '/tours/bali-private-itinerary' },
+    { title: 'Book Swing Heaven photo day', href: '/tours/swing-heaven-bali' },
+    { title: 'Book the Batur sunrise jeep', href: '/tours/batur-sunrise-jeep-tour' },
+  ],
   site: [
     HUB,
     PRICES,
@@ -169,6 +178,10 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'how-to-spot-ethical-luwak-coffee-in-bali': 'coffee',
   'full-day-ubud-tour-guide-2026': 'dayTour',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'dayTour',
+  'bali-6-day-girls-trip-itinerary-2026': 'girlsTrip',
+  'bali-family-private-itinerary-2026': 'girlsTrip',
+  'bali-private-itinerary-what-we-book-vs-you-book': 'girlsTrip',
+  'what-to-skip-on-a-6-day-bali-itinerary': 'girlsTrip',
   'perfect-one-day-ubud-itinerary': 'dayTour',
   'things-to-do-near-ubud-2026': 'site',
   'bali-adventure-packages-prices-2026': 'site',
@@ -183,6 +196,7 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     { title: 'Tumang cooking class (free Ubud pickup)', href: '/tours/balinese-cooking-class' },
     { title: 'Pejeng ricefield cycling', href: '/tours/ubud-ricefield-cycling-tour' },
     { title: 'ATV at All New Bali Adventure', href: '/tours/bali-atv-adventure' },
+    { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
     HUB,
   ],
   cooking: [
@@ -215,6 +229,7 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     { title: 'ATV in the same Abiansemal district', href: '/tours/bali-atv-adventure' },
     { title: 'Griya Beji Waterfall (Punggul)', href: '/tours/griya-beji-waterfall' },
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
+    { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
   ],
   griya: [
     { title: 'Private Tirta Empul / Pura Beji', href: '/tours/tirta-empu-purification' },
@@ -234,6 +249,13 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
   dayTour: [
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
     { title: 'Pejeng cycling (village, not Tegalalang crowds)', href: '/tours/ubud-ricefield-cycling-tour' },
+    { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
+    HUB,
+  ],
+  girlsTrip: [
+    { title: 'Swing Heaven vs Tegallalang', href: '/blog/swing-heaven-vs-tegallalang-bali-swing' },
+    { title: 'Private Kintamani Day', href: '/blog/private-kintamani-day-jeep-itinerary' },
+    { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class' },
     HUB,
   ],
   site: [
@@ -242,6 +264,7 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     { title: 'ATV cost near Ubud', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
     { title: 'Swing Heaven vs Tegallalang', href: '/blog/swing-heaven-vs-tegallalang-bali-swing' },
     { title: 'Griya Beji vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
+    { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
   ],
 }
 

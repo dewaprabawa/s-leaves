@@ -40,6 +40,7 @@ import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
 import { TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
+import { GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -420,13 +421,13 @@ function buildTourWebPageSchema(tour: Tour) {
   if (isJeepTour(tour)) return buildJeepWebPageSchema(tour)
 
   const significantLink = [
-    `${SITE_URL}/book?activity=${tour.slug}`,
+    tour.slug === GIRLS_TRIP_SLUG ? undefined : `${SITE_URL}/book?activity=${tour.slug}`,
     `${SITE_URL}/llms.txt`,
     `${SITE_URL}/pricing.md`,
     ...getTourRelatedGuides(tour.slug).map((guide) =>
       guide.href.startsWith("http") ? guide.href : `${SITE_URL}${guide.href}`,
     ),
-  ]
+  ].filter((href): href is string => Boolean(href))
 
   return {
     "@context": "https://schema.org",

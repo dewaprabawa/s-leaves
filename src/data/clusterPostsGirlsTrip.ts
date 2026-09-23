@@ -9,7 +9,7 @@ export const GIRLS_TRIP_CLUSTER_POSTS = [
       'A 6-lady Bali plan: Seminyak + FINNS, Swing Heaven photo day, Uluwatu, Ubud spa night, Kintamani sunrise, watersports. We book the driver, swing, and jeep — you keep the clubs.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/swing-heaven-ayung.jpg',
+    image: '/images/adventures/private-bali-itinerary.jpg',
     content: `
 **Can a local operator handle a 6-day Bali girls trip without turning it into a checklist?** Yes — if you split the week. **[Sekar Bali Activity](/tours/bali-private-itinerary)** books the **private driver**, the **[Swing Heaven](/tours/swing-heaven-bali) photo day** in Bongkasa, and the **[Mount Batur sunrise jeep](/tours/batur-sunrise-jeep-tour)**. You keep FINNS, La Favela, Cretya, Kecak, spa, and watersports on your own cards. The same desk also quotes **[family weeks](/blog/bali-family-private-itinerary-2026)** and one long private day.
 

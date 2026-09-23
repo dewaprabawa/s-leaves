@@ -11,7 +11,7 @@ export const PARK_WORKSHOP_CLUSTER_POSTS = [
     author: 'Sekar Bali Activity',
     image: '/images/adventures/jungle-hopper-bali-safari-and-marine-park.jpg',
     content: `
-**Which Bali Safari package should you book in 2026?** Sekar Bali Activity books **Bali Safari and Marine Park** tickets — we do not operate the park. **[Jungle Hopper](/tours/jungle-hopper-bali-safari-and-marine-park)** from **IDR 1,000,000** is the lightest day (one safari, tea, waterpark). **[Dragon](/tours/dragon-package-bali-safari-and-marine-park)** from **IDR 1,300,000** adds Uma lunch. **[Leopard](/tours/leopard-package-bali-safari-and-marine-park)** from **IDR 1,800,000** adds a **10-minute elephant ride**. **[Rhino](/tours/rhino-package-bali-safari-and-marine-park)** from **IDR 2,300,000** is the fullest day (**30-minute ride**, platinum Agung, Tsavo lunch). Hotel pickup is **quoted**. WhatsApp — **no payment to inquire**.
+**Which Bali Safari package should you book in 2026?** Sekar Bali Activity books **Bali Safari and Marine Park** tickets — we do not operate the park. **[Jungle Hopper](/tours/bali-safari-and-marine-park)** from **IDR 1,000,000** is the lightest day (one safari, tea, waterpark). **[Dragon](/tours/bali-safari-and-marine-park)** from **IDR 1,300,000** adds Uma lunch. **[Leopard](/tours/bali-safari-and-marine-park)** from **IDR 1,800,000** adds a **10-minute elephant ride**. **[Rhino](/tours/bali-safari-and-marine-park)** from **IDR 2,300,000** is the fullest day (**30-minute ride**, platinum Agung, Tsavo lunch). Hotel pickup is **quoted**. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - Hopper **1,000,000** · Dragon **1,300,000** · Leopard **1,800,000** · Rhino **2,300,000**
@@ -24,12 +24,12 @@ export const PARK_WORKSHOP_CLUSTER_POSTS = [
 
 | Package | From (IDR) | Safari | Elephant | Lunch / tea | Agung seat |
 | --- | --- | --- | --- | --- | --- |
-| [Jungle Hopper](/tours/jungle-hopper-bali-safari-and-marine-park) | **1,000,000** | 1× | No | Afternoon tea | Silver |
-| [Dragon](/tours/dragon-package-bali-safari-and-marine-park) | **1,300,000** | 1× | No | Uma lunch | Silver |
-| [Elephant-back](/tours/elephant-back-safari-package-bali-safari-and-marine-park) | **1,450,000** | Unlimited | **30 min** | No | No |
-| [Leopard](/tours/leopard-package-bali-safari-and-marine-park) | **1,800,000** | Unlimited | **10 min** | Uma lunch | Gold |
-| [Rhino](/tours/rhino-package-bali-safari-and-marine-park) | **2,300,000** | Unlimited | **30 min** | Tsavo lunch | Platinum |
-| [Night Safari](/tours/night-safari-package-bali-safari-and-marine-park) | **1,300,000** | 1× night | No | BBQ dinner | — |
+| [Jungle Hopper](/tours/bali-safari-and-marine-park) | **1,000,000** | 1× | No | Afternoon tea | Silver |
+| [Dragon](/tours/bali-safari-and-marine-park) | **1,300,000** | 1× | No | Uma lunch | Silver |
+| [Elephant-back](/tours/bali-safari-and-marine-park) | **1,450,000** | Unlimited | **30 min** | No | No |
+| [Leopard](/tours/bali-safari-and-marine-park) | **1,800,000** | Unlimited | **10 min** | Uma lunch | Gold |
+| [Rhino](/tours/bali-safari-and-marine-park) | **2,300,000** | Unlimited | **30 min** | Tsavo lunch | Platinum |
+| [Night Safari](/tours/bali-safari-and-marine-park) | **1,300,000** | 1× night | No | BBQ dinner | — |
 
 Waterpark is on Hopper, Dragon, Leopard, and Rhino. The ride-only ticket skips lunch and waterpark on purpose.
 
@@ -37,22 +37,22 @@ Waterpark is on Hopper, Dragon, Leopard, and Rhino. The ride-only ticket skips l
 
 | If you want… | Book |
 | --- | --- |
-| Shortest / cheapest day | [Jungle Hopper](/tours/jungle-hopper-bali-safari-and-marine-park) |
-| Lunch without a ride | [Dragon](/tours/dragon-package-bali-safari-and-marine-park) |
-| The ride, skip lunch | [Elephant-back](/tours/elephant-back-safari-package-bali-safari-and-marine-park) |
-| Ride + lunch mid-tier | [Leopard](/tours/leopard-package-bali-safari-and-marine-park) |
-| Longest day, platinum seat | [Rhino](/tours/rhino-package-bali-safari-and-marine-park) |
-| After-dark BBQ | [Night Safari](/tours/night-safari-package-bali-safari-and-marine-park) |
+| Shortest / cheapest day | [Jungle Hopper](/tours/bali-safari-and-marine-park) |
+| Lunch without a ride | [Dragon](/tours/bali-safari-and-marine-park) |
+| The ride, skip lunch | [Elephant-back](/tours/bali-safari-and-marine-park) |
+| Ride + lunch mid-tier | [Leopard](/tours/bali-safari-and-marine-park) |
+| Longest day, platinum seat | [Rhino](/tours/bali-safari-and-marine-park) |
+| After-dark BBQ | [Night Safari](/tours/bali-safari-and-marine-park) |
 
 This park is **not** [Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park) and **not** [Taro lodge](/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge). Venue compare: [Bali Zoo vs Safari vs Taro](/blog/bali-zoo-vs-bali-safari-vs-taro).
 
 ## How to book
 
-1. Open the package page you want
+1. Open the [Bali Safari page](/tours/bali-safari-and-marine-park) and pick the price option
 2. WhatsApp **date, guest count, hotel area, Hopper / Dragon / Leopard / Rhino / ride / night**
 3. We confirm IDR + pickup — **no deposit to ask**
 
-**Ready?** Start at [Jungle Hopper](/tours/jungle-hopper-bali-safari-and-marine-park) or scan [things to do near Ubud](/blog/things-to-do-near-ubud-2026).
+**Ready?** Book on [Bali Safari tickets](/tours/bali-safari-and-marine-park) or scan [things to do near Ubud](/blog/things-to-do-near-ubud-2026).
 `,
   },
   {
@@ -65,7 +65,7 @@ This park is **not** [Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park
     author: 'Sekar Bali Activity',
     image: '/images/adventures/elephant-mud-fun-at-bali-zoo-park.jpg',
     content: `
-**Bali Zoo, Bali Safari, or Taro — which elephant day should you book?** They are **three venues**. Sekar Bali Activity books the tickets; we do not run the parks. **[Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park)** from **IDR 1,850,000** is a Singapadu session with **lunch**. **[Bali Safari](/tours/jungle-hopper-bali-safari-and-marine-park)** in Gianyar starts at **IDR 1,000,000** (Jungle Hopper) and runs up to **Rhino IDR 2,300,000**. **[Taro jungle ride + lunch](/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge)** at Elephant Safari Park Lodge is from **IDR 1,665,000**. Pickup is **quoted**. WhatsApp — **no payment to inquire**.
+**Bali Zoo, Bali Safari, or Taro — which elephant day should you book?** They are **three venues**. Sekar Bali Activity books the tickets; we do not run the parks. **[Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park)** from **IDR 1,850,000** is a Singapadu session with **lunch**. **[Bali Safari](/tours/bali-safari-and-marine-park)** in Gianyar starts at **IDR 1,000,000** (Jungle Hopper) and runs up to **Rhino IDR 2,300,000**. **[Taro jungle ride + lunch](/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge)** at Elephant Safari Park Lodge is from **IDR 1,665,000**. Pickup is **quoted**. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - **Bali Zoo** = mud session + zoo admission + lunch · Singapadu
@@ -82,7 +82,7 @@ This park is **not** [Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park
 | From (IDR) | **1,850,000** mud fun | **1,000,000** Hopper | **1,665,000** ride + lunch |
 | Elephant | Mud session | 10 or 30 min on listed packages | Jungle stroll |
 | Lunch | Yes | Dragon / Leopard / Rhino | Yes |
-| Night option | No | [Night Safari 1,300,000](/tours/night-safari-package-bali-safari-and-marine-park) | [Dinner 1,660,000](/tours/night-safari-dinner-under-the-stars-elephant-safari-park-lodge) |
+| Night option | No | [Night Safari 1,300,000](/tours/bali-safari-and-marine-park) | [Dinner 1,660,000](/tours/night-safari-dinner-under-the-stars-elephant-safari-park-lodge) |
 
 ## When to pick each
 

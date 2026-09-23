@@ -22,6 +22,7 @@ import {
   GRIYA_BEJI_VENUE,
 } from '@/data/griyaBeji'
 import { PARK_WORKSHOP_GEO_BY_SLUG } from '@/data/parkWorkshopGeo'
+import { resolveBaliSafariSlug } from '@/data/parkWorkshopTours'
 
 export const ACTIVITY_GEO_UPDATED = '2026-09-23'
 
@@ -701,7 +702,7 @@ export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
 }
 
 export function getActivityGeo(slug: string): ActivityGeoCorpus | undefined {
-  return ACTIVITY_GEO_BY_SLUG[slug]
+  return ACTIVITY_GEO_BY_SLUG[resolveBaliSafariSlug(slug)]
 }
 
 export const ALL_ACTIVITY_GEO = Object.values(ACTIVITY_GEO_BY_SLUG)

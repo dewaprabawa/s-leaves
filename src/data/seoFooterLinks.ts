@@ -70,7 +70,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
   { label: 'Long private driver day', href: '/blog/long-private-driver-day-ubud-2026' },
   { label: 'Bali Bird Park', href: '/tours/bali-bird-park' },
-  { label: 'Bali Safari Jungle Hopper', href: '/tours/jungle-hopper-bali-safari-and-marine-park' },
+  { label: 'Bali Safari tickets', href: '/tours/bali-safari-and-marine-park' },
   { label: 'Bali Canyoning', href: '/tours/canyoning' },
   { label: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour' },
   { label: 'Kintamani dirt bike', href: '/tours/dirt-bike-kintamani-black-lava' },

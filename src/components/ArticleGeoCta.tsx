@@ -82,7 +82,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'bali-private-itinerary-what-we-book-vs-you-book': 'bali-private-itinerary',
   'what-to-skip-on-a-6-day-bali-itinerary': 'bali-private-itinerary',
   'long-private-driver-day-ubud-2026': 'bali-private-itinerary',
-  'bali-safari-packages-compared-2026': 'jungle-hopper-bali-safari-and-marine-park',
+  'bali-safari-packages-compared-2026': 'bali-safari-and-marine-park',
   'bali-zoo-vs-bali-safari-vs-taro': 'elephant-mud-fun-at-bali-zoo-park',
   'bali-bird-park-from-ubud-2026': 'bali-bird-park',
   'bali-canyoning-vs-tubing-vs-buggies': 'canyoning',

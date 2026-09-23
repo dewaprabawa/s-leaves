@@ -15,6 +15,7 @@ import {
   COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
 } from "@/data/cultureSales"
+import { BALI_SAFARI_PRICES, BALI_SAFARI_SLUG } from "@/data/parkWorkshopTours"
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
@@ -119,16 +120,22 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
     return props.activityOptions.map((opt, index) => {
       const isMorning = /morning/i.test(opt.name)
       const isPrivate = /private/i.test(opt.name)
+      const isNight = /night/i.test(opt.name)
+      const isSafari = props.tourSlug === BALI_SAFARI_SLUG
       return {
         id: `${props.tourId}-opt-${index}`,
         title: opt.name,
         times: isMelukat
           ? ["08:00", "09:00"]
-          : isMorning
-            ? ["08:30"]
-            : isPrivate
-              ? ["08:30", "13:30"]
-              : ["13:30"],
+          : isNight
+            ? ["17:00", "18:00"]
+            : isSafari
+              ? ["08:00", "09:00"]
+            : isMorning
+              ? ["08:30"]
+              : isPrivate
+                ? ["08:30", "13:30"]
+                : ["13:30"],
         adultPrice: props.basePrice + opt.priceDiff,
         kidPrice: props.childPrice ?? null,
         minPax: /tandem|2 guests/i.test(opt.name) ? 2 : isLuwak ? 3 : 1,
@@ -281,6 +288,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {props.tourSlug === "griya-beji-waterfall" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Palm reading IDR 1,000,000 · mental healing IDR 1,500,000 · admission extra
+            </p>
+          ) : null}
+          {props.tourSlug === BALI_SAFARI_SLUG ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Hopper to Rhino · Night Safari {formatIdr(BALI_SAFARI_PRICES.night)} · pick a package
             </p>
           ) : null}
           {props.tourSlug === "balinese-cooking-class" ? (

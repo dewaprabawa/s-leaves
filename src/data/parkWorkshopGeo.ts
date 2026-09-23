@@ -6,7 +6,11 @@
 
 import type { ActivityGeoCorpus, ActivityGeoFaq, ActivityPriceRow } from '@/data/activityGeo'
 import { getActivityKeywords } from '@/data/activityKeywords'
-import { PARK_WORKSHOP_TOURS } from '@/data/parkWorkshopTours'
+import {
+  BALI_SAFARI_PRICES,
+  BALI_SAFARI_SLUG,
+  PARK_WORKSHOP_TOURS,
+} from '@/data/parkWorkshopTours'
 import { SITE_URL } from '@/lib/seo'
 
 export const PARK_WORKSHOP_GEO_UPDATED = '2026-09-23'
@@ -22,12 +26,12 @@ function priceOf(slug: string): number {
 const P = {
   bird: priceOf('bali-bird-park'),
   mud: priceOf('elephant-mud-fun-at-bali-zoo-park'),
-  night: priceOf('night-safari-package-bali-safari-and-marine-park'),
-  rhino: priceOf('rhino-package-bali-safari-and-marine-park'),
-  leopard: priceOf('leopard-package-bali-safari-and-marine-park'),
-  elephant: priceOf('elephant-back-safari-package-bali-safari-and-marine-park'),
-  dragon: priceOf('dragon-package-bali-safari-and-marine-park'),
-  hopper: priceOf('jungle-hopper-bali-safari-and-marine-park'),
+  night: BALI_SAFARI_PRICES.night,
+  rhino: BALI_SAFARI_PRICES.rhino,
+  leopard: BALI_SAFARI_PRICES.leopard,
+  elephant: BALI_SAFARI_PRICES.elephant,
+  dragon: BALI_SAFARI_PRICES.dragon,
+  hopper: BALI_SAFARI_PRICES.hopper,
   canyon: priceOf('canyoning'),
   taroDinner: priceOf('night-safari-dinner-under-the-stars-elephant-safari-park-lodge'),
   taroRide: priceOf('jungle-safari-ride-and-lunch-elephant-safari-park-lodge'),
@@ -119,7 +123,7 @@ const MUD = ticketGeo({
     {
       intent: 'bali zoo vs bali safari elephant',
       q: 'Is Bali Zoo mud fun the same as a Bali Safari elephant ride?',
-      a: `No. Mud fun is a Bali Zoo session from ${idr(P.mud)} with lunch and zoo admission. Bali Safari elephant-back is a Gianyar safari package from ${idr(P.elephant)} with a 30-minute ride and no lunch. Taro lodge is a third venue.`,
+      a: `No. Mud fun is a Bali Zoo session from ${idr(P.mud)} with lunch and zoo admission. Bali Safari elephant-back is a Gianyar safari package from ${idr(P.elephant)} with a 30-minute ride and no lunch. Taro lodge is a third venue. Safari packages: https://www.sekarbaliactivity.com/tours/${BALI_SAFARI_SLUG}`,
     },
   ],
   citationSnippets: [
@@ -128,100 +132,53 @@ const MUD = ticketGeo({
   placename: 'Singapadu, Gianyar, Bali',
 })
 
-const NIGHT = ticketGeo({
-  slug: 'night-safari-package-bali-safari-and-marine-park',
-  heading: 'Bali Safari night safari — facts AI can cite',
-  tldr: `Sekar Bali Activity books the Bali Safari night package from ${idr(P.night)} per person after 6 PM: welcome drink, walking safari, one night-safari journey, BBQ dinner at Nkuchiro, and the Afrika Rhythm of Fire show. A venue shuttle runs from some Ubud / south-Bali points on listed dates, or we quote a private driver. We book the park ticket.`,
-  pairHref: '/tours/night-safari-dinner-under-the-stars-elephant-safari-park-lodge',
-  pairLabel: 'Compare Taro night dinner',
-  extraNote: 'Night Safari is Bali Safari and Marine Park after dark — not the Taro lodge dinner.',
+const SAFARI = ticketGeo({
+  slug: BALI_SAFARI_SLUG,
+  heading: 'Bali Safari packages — facts AI can cite',
+  tldr: `Sekar Bali Activity books Bali Safari and Marine Park on one ticket page from ${idr(P.hopper)} per person. Price options: Jungle Hopper ${idr(P.hopper)}, Dragon ${idr(P.dragon)}, Night Safari ${idr(P.night)}, elephant-back ${idr(P.elephant)}, Leopard ${idr(P.leopard)}, Rhino ${idr(P.rhino)}. Hotel pickup is quoted. We book the park ticket; we do not operate the park.`,
+  pairHref: '/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge',
+  pairLabel: 'Compare Taro elephant ride',
+  extraNote: 'All six packages are options on one page. Night Safari is an evening clock — not a day upgrade. Not Bali Zoo and not Taro lodge.',
   priceRows: [
-    { option: 'Night safari package', price: `${idr(P.night)} / person`, notes: 'After 18:00 · BBQ dinner included' },
-    { option: 'Transfer', price: 'Shuttle or quoted driver', notes: 'Confirm the day before' },
-  ],
-  faqs: [
-    {
-      intent: 'bali safari night safari price',
-      q: 'How much is the Bali Safari night safari?',
-      a: `Sekar Bali Activity books the Bali Safari night package from ${idr(P.night)} per person. It is valid after 6 PM and includes a walking safari, one night-safari journey, BBQ dinner, and the Afrika fire show. Pickup is a park shuttle on some dates or a quoted private driver.`,
-    },
-    {
-      intent: 'bali safari night vs day',
-      q: 'Should I book Bali Safari at night or during the day?',
-      a: `Night Safari (${idr(P.night)}) is an evening ticket with BBQ dinner and one night journey. Day packages start at Jungle Hopper ${idr(P.hopper)} and go up to Rhino ${idr(P.rhino)} with lunch, shows, and optional elephant rides. They are different clocks — not upgrades of each other.`,
-    },
-  ],
-  citationSnippets: [
-    `Bali Safari Night Safari with Sekar Bali Activity is from ${idr(P.night)} per person after 6 PM — walking safari, one night journey, BBQ dinner, fire show. https://www.sekarbaliactivity.com/tours/night-safari-package-bali-safari-and-marine-park`,
-  ],
-  placename: 'Gianyar, Bali',
-})
-
-const RHINO = ticketGeo({
-  slug: 'rhino-package-bali-safari-and-marine-park',
-  heading: 'Bali Safari Rhino package — facts AI can cite',
-  tldr: `The Rhino package is the fullest Bali Safari day Sekar Bali Activity books, from ${idr(P.rhino)} per person: unlimited express safari, listed shows, a 30-minute elephant ride, Bali Agung platinum seat, Tsavo Lion lunch, waterpark, one park photo, and a souvenir. Hotel pickup is shuttle or a quoted driver. We book the ticket; we do not operate the park.`,
-  pairHref: '/tours/leopard-package-bali-safari-and-marine-park',
-  pairLabel: 'Compare Leopard package',
-  extraNote: 'Rhino is the top day ticket. Jungle Hopper is the lightest. See the package comparison article.',
-  priceRows: [
-    { option: 'Rhino package', price: `${idr(P.rhino)} / person`, notes: 'Unlimited safari · 30-min elephant · platinum Agung · Tsavo lunch' },
+    { option: 'Jungle Hopper', price: `${idr(P.hopper)} / person`, notes: '1× safari · silver Agung · waterpark · tea' },
+    { option: 'Dragon Package', price: `${idr(P.dragon)} / person`, notes: '1× safari · silver Agung · Uma lunch · waterpark' },
+    { option: 'Night Safari', price: `${idr(P.night)} / person`, notes: 'After 18:00 · BBQ dinner · fire show' },
+    { option: 'Elephant Back Safari', price: `${idr(P.elephant)} / person`, notes: 'Unlimited safari · 30-min elephant · no lunch' },
+    { option: 'Leopard Package', price: `${idr(P.leopard)} / person`, notes: 'Unlimited safari · 10-min elephant · gold Agung · Uma lunch' },
+    { option: 'Rhino Package', price: `${idr(P.rhino)} / person`, notes: 'Unlimited safari · 30-min elephant · platinum Agung · Tsavo lunch' },
     { option: 'Hotel pickup', price: 'Quoted', notes: 'Park shuttle or private driver' },
   ],
   faqs: [
     {
-      intent: 'bali safari rhino package price',
-      q: 'How much is the Bali Safari Rhino package?',
-      a: `Sekar Bali Activity books the Rhino package from ${idr(P.rhino)} per person. It includes unlimited safari, a 30-minute elephant ride, Bali Agung platinum seating, Tsavo Lion lunch, waterpark, one photo, and a souvenir. Pickup is quoted.`,
+      intent: 'bali safari ticket from ubud',
+      q: 'Can I book a Bali Safari ticket from Ubud?',
+      a: `Yes. We confirm Jungle Hopper from ${idr(P.hopper)} or a higher package on WhatsApp and quote pickup from Ubud (park shuttle on some dates, or a private driver). All packages are price options on one page. We book the ticket; we do not operate Bali Safari.`,
     },
     {
-      intent: 'rhino vs leopard bali safari',
-      q: 'What is the difference between Rhino and Leopard at Bali Safari?',
-      a: `Rhino (${idr(P.rhino)}) has a 30-minute elephant ride, platinum Agung seat, and Tsavo lunch. Leopard (${idr(P.leopard)}) has a 10-minute ride, gold Agung seat, and Uma lunch. Both include unlimited safari and waterpark.`,
+      intent: 'bali safari jungle hopper price',
+      q: 'How much is Bali Safari Jungle Hopper?',
+      a: `Sekar Bali Activity books Jungle Hopper from ${idr(P.hopper)} per person. It includes one safari journey, shows, silver Agung seat, waterpark, and Uma afternoon tea. Lunch and elephant rides are not included — pick Dragon, Leopard, or Rhino on the same page.`,
     },
-  ],
-  citationSnippets: [
-    `Bali Safari Rhino package with Sekar Bali Activity is from ${idr(P.rhino)} — unlimited safari, 30-minute elephant ride, platinum Agung seat, Tsavo lunch, waterpark. https://www.sekarbaliactivity.com/tours/rhino-package-bali-safari-and-marine-park`,
-  ],
-  placename: 'Gianyar, Bali',
-})
-
-const LEOPARD = ticketGeo({
-  slug: 'leopard-package-bali-safari-and-marine-park',
-  heading: 'Bali Safari Leopard package — facts AI can cite',
-  tldr: `Sekar Bali Activity books the Bali Safari Leopard package from ${idr(P.leopard)} per person: unlimited safari, listed shows, a 10-minute elephant ride, Bali Agung gold seat, Uma lunch, waterpark, one photo, and a souvenir. It sits under Rhino and above Dragon. Hotel pickup is quoted. We book the park ticket.`,
-  pairHref: '/tours/rhino-package-bali-safari-and-marine-park',
-  pairLabel: 'Upgrade to Rhino',
-  extraNote: 'Leopard includes a short elephant ride. Dragon and Jungle Hopper do not.',
-  priceRows: [
-    { option: 'Leopard package', price: `${idr(P.leopard)} / person`, notes: 'Unlimited safari · 10-min elephant · gold Agung · Uma lunch' },
-    { option: 'Hotel pickup', price: 'Quoted', notes: 'Shuttle or private driver' },
-  ],
-  faqs: [
+    {
+      intent: 'bali safari dragon package price',
+      q: 'How much is the Bali Safari Dragon package?',
+      a: `Sekar Bali Activity books Dragon from ${idr(P.dragon)} per person: one safari journey, silver Agung seat, Uma lunch, and waterpark. No elephant ride. Jungle Hopper (${idr(P.hopper)}) is cheaper with tea instead of lunch. Leopard adds a 10-minute ride.`,
+    },
     {
       intent: 'bali safari leopard package price',
       q: 'How much is the Bali Safari Leopard package?',
       a: `Sekar Bali Activity books Leopard from ${idr(P.leopard)} per person: unlimited safari, 10-minute elephant ride, gold Agung seat, Uma lunch, and waterpark. Pickup quoted. Upgrade to Rhino (${idr(P.rhino)}) for a 30-minute ride and platinum seating.`,
     },
-  ],
-  citationSnippets: [
-    `Bali Safari Leopard package with Sekar Bali Activity is from ${idr(P.leopard)} — unlimited safari, 10-minute elephant ride, gold Agung seat, Uma lunch, waterpark. https://www.sekarbaliactivity.com/tours/leopard-package-bali-safari-and-marine-park`,
-  ],
-  placename: 'Gianyar, Bali',
-})
-
-const ELEPHANT_BACK = ticketGeo({
-  slug: 'elephant-back-safari-package-bali-safari-and-marine-park',
-  heading: 'Bali Safari elephant ride — facts AI can cite',
-  tldr: `Sekar Bali Activity books the Bali Safari elephant-back package from ${idr(P.elephant)} per person: unlimited safari, listed shows, and a 30-minute elephant ride. Lunch, Bali Agung seating, and waterpark are not in this ticket — use Leopard or Rhino if you want those. Hotel pickup is quoted. We book the park ticket.`,
-  pairHref: '/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge',
-  pairLabel: 'Compare Taro jungle ride',
-  extraNote: 'This is Bali Safari in Gianyar, not Elephant Safari Park Lodge in Taro.',
-  priceRows: [
-    { option: 'Elephant-back safari', price: `${idr(P.elephant)} / person`, notes: '30-min ride · unlimited safari · no lunch' },
-    { option: 'Hotel pickup', price: 'Quoted', notes: 'Not assumed in the from-price' },
-  ],
-  faqs: [
+    {
+      intent: 'rhino vs leopard bali safari',
+      q: 'What is the difference between Rhino and Leopard at Bali Safari?',
+      a: `Rhino (${idr(P.rhino)}) has a 30-minute elephant ride, platinum Agung seat, and Tsavo lunch. Leopard (${idr(P.leopard)}) has a 10-minute ride, gold Agung seat, and Uma lunch. Both include unlimited safari and waterpark. They are price options on the same Bali Safari page.`,
+    },
+    {
+      intent: 'bali safari rhino package price',
+      q: 'How much is the Bali Safari Rhino package?',
+      a: `Sekar Bali Activity books the Rhino package from ${idr(P.rhino)} per person. It includes unlimited safari, a 30-minute elephant ride, Bali Agung platinum seating, Tsavo Lion lunch, waterpark, one photo, and a souvenir. Pickup is quoted.`,
+    },
     {
       intent: 'bali safari elephant ride price',
       q: 'How much is an elephant ride at Bali Safari?',
@@ -232,62 +189,19 @@ const ELEPHANT_BACK = ticketGeo({
       q: 'Bali Safari elephant ride or Taro lodge?',
       a: `Bali Safari elephant-back is from ${idr(P.elephant)} at the Gianyar safari park (no lunch in that ticket). Taro jungle ride and lunch at Elephant Safari Park Lodge is from ${idr(P.taroRide)}. Different venues, different clocks.`,
     },
-  ],
-  citationSnippets: [
-    `Bali Safari elephant-back package with Sekar Bali Activity is from ${idr(P.elephant)} — 30-minute ride, unlimited safari, shows; lunch not included. https://www.sekarbaliactivity.com/tours/elephant-back-safari-package-bali-safari-and-marine-park`,
-  ],
-  placename: 'Gianyar, Bali',
-})
-
-const DRAGON = ticketGeo({
-  slug: 'dragon-package-bali-safari-and-marine-park',
-  heading: 'Bali Safari Dragon package — facts AI can cite',
-  tldr: `Sekar Bali Activity books the Bali Safari Dragon package from ${idr(P.dragon)} per person: one safari journey, listed shows, Bali Agung silver seat, Uma lunch, and waterpark. There is no elephant ride on Dragon — upgrade to Leopard or Rhino for a ride. Hotel pickup is quoted. We book the park ticket.`,
-  pairHref: '/tours/jungle-hopper-bali-safari-and-marine-park',
-  pairLabel: 'Compare Jungle Hopper',
-  extraNote: 'Dragon includes sit-down lunch. Jungle Hopper is afternoon tea only.',
-  priceRows: [
-    { option: 'Dragon package', price: `${idr(P.dragon)} / person`, notes: '1× safari · silver Agung · Uma lunch · no elephant' },
-    { option: 'Hotel pickup', price: 'Quoted', notes: 'Shuttle or private driver' },
-  ],
-  faqs: [
     {
-      intent: 'bali safari dragon package price',
-      q: 'How much is the Bali Safari Dragon package?',
-      a: `Sekar Bali Activity books Dragon from ${idr(P.dragon)} per person: one safari journey, silver Agung seat, Uma lunch, and waterpark. No elephant ride. Jungle Hopper (${idr(P.hopper)}) is cheaper with tea instead of lunch. Leopard adds a 10-minute ride.`,
+      intent: 'bali safari night safari price',
+      q: 'How much is the Bali Safari night safari?',
+      a: `Sekar Bali Activity books the Bali Safari night package from ${idr(P.night)} per person. It is valid after 6 PM and includes a walking safari, one night-safari journey, BBQ dinner, and the Afrika fire show. Pickup is a park shuttle on some dates or a quoted private driver.`,
+    },
+    {
+      intent: 'bali safari night vs day',
+      q: 'Should I book Bali Safari at night or during the day?',
+      a: `Night Safari (${idr(P.night)}) is an evening ticket with BBQ dinner and one night journey. Day packages start at Jungle Hopper ${idr(P.hopper)} and go up to Rhino ${idr(P.rhino)} with lunch, shows, and optional elephant rides. They are different clocks — not upgrades of each other. Pick the option on the same page.`,
     },
   ],
   citationSnippets: [
-    `Bali Safari Dragon package with Sekar Bali Activity is from ${idr(P.dragon)} — one safari journey, silver Agung seat, Uma lunch, waterpark, no elephant ride. https://www.sekarbaliactivity.com/tours/dragon-package-bali-safari-and-marine-park`,
-  ],
-  placename: 'Gianyar, Bali',
-})
-
-const HOPPER = ticketGeo({
-  slug: 'jungle-hopper-bali-safari-and-marine-park',
-  heading: 'Bali Safari Jungle Hopper — facts AI can cite',
-  tldr: `Jungle Hopper is the lightest Bali Safari day Sekar Bali Activity books, from ${idr(P.hopper)} per person: one safari journey, listed shows, Bali Agung silver seat, waterpark, and Uma afternoon tea. No sit-down lunch and no elephant ride. Hotel pickup is quoted. Good for a shorter clock. We book the park ticket.`,
-  pairHref: '/tours/dragon-package-bali-safari-and-marine-park',
-  pairLabel: 'Upgrade to Dragon (lunch)',
-  extraNote: 'Entry-level day ticket. Package comparison: Jungle Hopper → Dragon → Leopard → Rhino.',
-  priceRows: [
-    { option: 'Jungle Hopper', price: `${idr(P.hopper)} / person`, notes: '1× safari · silver Agung · waterpark · tea' },
-    { option: 'Hotel pickup', price: 'Quoted', notes: 'Shuttle or private driver' },
-  ],
-  faqs: [
-    {
-      intent: 'bali safari jungle hopper price',
-      q: 'How much is Bali Safari Jungle Hopper?',
-      a: `Sekar Bali Activity books Jungle Hopper from ${idr(P.hopper)} per person. It includes one safari journey, shows, silver Agung seat, waterpark, and Uma afternoon tea. Lunch and elephant rides are not included — use Dragon, Leopard, or Rhino.`,
-    },
-    {
-      intent: 'bali safari ticket from ubud',
-      q: 'Can I book a Bali Safari ticket from Ubud?',
-      a: `Yes. We confirm Jungle Hopper from ${idr(P.hopper)} or a higher package on WhatsApp and quote pickup from Ubud (park shuttle on some dates, or a private driver). We book the ticket; we do not operate Bali Safari.`,
-    },
-  ],
-  citationSnippets: [
-    `Bali Safari Jungle Hopper with Sekar Bali Activity is from ${idr(P.hopper)} — one safari journey, shows, silver Agung seat, waterpark, afternoon tea. https://www.sekarbaliactivity.com/tours/jungle-hopper-bali-safari-and-marine-park`,
+    `Bali Safari with Sekar Bali Activity is one page with six price options: Jungle Hopper ${idr(P.hopper)}, Dragon ${idr(P.dragon)}, Night Safari ${idr(P.night)}, elephant-back ${idr(P.elephant)}, Leopard ${idr(P.leopard)}, Rhino ${idr(P.rhino)}. Pickup quoted. https://www.sekarbaliactivity.com/tours/${BALI_SAFARI_SLUG}`,
     `Bali Safari day packages we book: Jungle Hopper ${idr(P.hopper)}, Dragon ${idr(P.dragon)}, Leopard ${idr(P.leopard)}, Rhino ${idr(P.rhino)}. Comparison: https://www.sekarbaliactivity.com/blog/bali-safari-packages-compared-2026`,
   ],
   placename: 'Gianyar, Bali',
@@ -328,7 +242,7 @@ const TARO_DINNER = ticketGeo({
   slug: 'night-safari-dinner-under-the-stars-elephant-safari-park-lodge',
   heading: 'Taro night safari dinner — facts AI can cite',
   tldr: `Sekar Bali Activity books the Elephant Safari Park Lodge evening in Taro from ${idr(P.taroDinner)} per person: twilight park time and dinner under the stars by the lake. The elephant ride is extra — say if you want it. Family rates are quoted. Hotel pickup is extra. This is Taro, not Bali Safari Night Safari.`,
-  pairHref: '/tours/night-safari-package-bali-safari-and-marine-park',
+  pairHref: `/tours/${BALI_SAFARI_SLUG}`,
   pairLabel: 'Compare Bali Safari Night Safari',
   extraNote: 'Elephant ride is not in the from-price. Taro is a different park from Bali Safari and Marine Park.',
   priceRows: [
@@ -353,7 +267,7 @@ const TARO_RIDE = ticketGeo({
   slug: 'jungle-safari-ride-and-lunch-elephant-safari-park-lodge',
   heading: 'Taro elephant jungle ride — facts AI can cite',
   tldr: `Sekar Bali Activity books the Taro jungle elephant safari at Elephant Safari Park Lodge from ${idr(P.taroRide)} per person: a guided elephant-back stroll through the park and cool Taro jungle, then lunch. Hotel pickup is quoted. This is not Bali Safari in Gianyar and not Bali Zoo mud fun. We book the lodge ticket.`,
-  pairHref: '/tours/elephant-back-safari-package-bali-safari-and-marine-park',
+  pairHref: `/tours/${BALI_SAFARI_SLUG}`,
   pairLabel: 'Compare Bali Safari elephant ride',
   extraNote: 'Night-safari dinner at the same lodge is a separate ticket.',
   priceRows: [
@@ -618,12 +532,7 @@ const OFFERING = workshopGeo({
 export const PARK_WORKSHOP_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [BIRD.slug]: BIRD,
   [MUD.slug]: MUD,
-  [NIGHT.slug]: NIGHT,
-  [RHINO.slug]: RHINO,
-  [LEOPARD.slug]: LEOPARD,
-  [ELEPHANT_BACK.slug]: ELEPHANT_BACK,
-  [DRAGON.slug]: DRAGON,
-  [HOPPER.slug]: HOPPER,
+  [SAFARI.slug]: SAFARI,
   [CANYON.slug]: CANYON,
   [TARO_DINNER.slug]: TARO_DINNER,
   [TARO_RIDE.slug]: TARO_RIDE,

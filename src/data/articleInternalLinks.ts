@@ -125,7 +125,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Bali Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro' },
     { title: 'Bali Bird Park from Ubud', href: '/blog/bali-bird-park-from-ubud-2026' },
     { title: 'Book Bali Bird Park', href: '/tours/bali-bird-park' },
-    { title: 'Book Jungle Hopper', href: '/tours/jungle-hopper-bali-safari-and-marine-park' },
+    { title: 'Book Bali Safari', href: '/tours/bali-safari-and-marine-park' },
     { title: 'Book Bali Zoo mud fun', href: '/tours/elephant-mud-fun-at-bali-zoo-park' },
   ],
   canyonBuggy: [

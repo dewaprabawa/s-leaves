@@ -146,7 +146,7 @@ WhatsApp a **consultation** — **group type = family**, **kids’ ages**, hotel
       'For family, girls, or any private Bali plan we book the driver, Swing Heaven, jeep, cooking, cycling. You keep clubs, spa, Kecak, and restaurants. Honest 2026 split.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/swing-heaven-koi-pond.jpg',
+    image: '/images/adventures/private-bali-itinerary.jpg',
     content: `
 **Who books what on a private Bali itinerary?** **[Sekar Bali Activity](/tours/bali-private-itinerary)** books the **private driver**, **[Swing Heaven](/tours/swing-heaven-bali)**, the **[Mount Batur jeep](/tours/batur-sunrise-jeep-tour)**, and optional cooking / cycling / ATV / Griya Beji / airport transfer. **You** book beach clubs, nightclubs, Cretya, Kecak seats, jewelry class, spa, Taman Dedari, and Tanjung Benoa boats. Same split for a **family**, a **girls trip**, friends, or a couple.
 

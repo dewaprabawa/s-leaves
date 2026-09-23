@@ -117,7 +117,7 @@ Because Bongkasa and Sedang share the Abiansemal district, a common stack is **m
       'Flying dress hire at Swing Heaven is IDR 300,000. Optional flowing photo dress for nests and swings — your phone, not a photographer. WhatsApp size on booking.',
     publishedAt: '2026-09-22',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/swing-heaven-flying-dresses.jpg',
+    image: '/images/adventures/swing-heaven-ayung.jpg',
     content: `
 **How much is a flying dress at a Bali swing?** At **[Swing Heaven](/tours/swing-heaven-bali)** in Bongkasa, flying dress hire is **IDR 300,000** per person. It is **optional**. The jungle-swing ticket stays **IDR 530,000** (or **IDR 630,000** with lunch) whether you wear the dress or not. Photos stay on **your own phone** — the dress is wardrobe, not a photoshoot package.
 
@@ -167,7 +167,7 @@ The **koi pond boat** (ice tea + fruit platter, photos on your phone) is also **
       'Swing Heaven lunch package is IDR 630,000 — IDR 100,000 more than the 530,000 jungle-swing ticket. What lunch adds, duration, and when to skip it.',
     publishedAt: '2026-09-22',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/swing-heaven-lunch.jpg',
+    image: '/images/adventures/swing-heaven-ayung.jpg',
     content: `
 **How much is a Bali swing with lunch near Ubud?** Sekar Bali Activity books the **[Swing Heaven](/tours/swing-heaven-bali)** lunch package at **IDR 630,000** per person. That is **IDR 100,000** above the standard **IDR 530,000** ticket. Both include the 14 jungle photo spots, insurance, and tea/coffee/water. Only the 630K adds **lunch**. The park is in **Bongkasa**, not Tegallalang.
 

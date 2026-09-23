@@ -910,22 +910,6 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         url: "/images/adventures/swing-heaven-ayung.jpg",
         alt: "Jungle swing over the Ayung canopy at Swing Heaven Bali in Bongkasa near Ubud",
       },
-      {
-        url: "/images/adventures/swing-heaven-package.jpg",
-        alt: "Swing Heaven Bali package board — jungle swings and photo nests from IDR 530,000",
-      },
-      {
-        url: "/images/adventures/swing-heaven-lunch.jpg",
-        alt: "Swing Heaven Bali package with lunch — jungle swings, nests, and a la carte lunch",
-      },
-      {
-        url: "/images/adventures/swing-heaven-flying-dresses.jpg",
-        alt: "Flying dresses for hire at Swing Heaven Bali jungle photo spots",
-      },
-      {
-        url: "/images/adventures/swing-heaven-koi-pond.jpg",
-        alt: "Koi pond boat photo promo at Swing Heaven Bali with ice tea and fruit platter",
-      },
     ],
     shortDescription:
       "Jungle swing park in Bongkasa near Ubud — 14 photo spots over the Ayung River valley. Package from IDR 530,000 (tea/coffee/water + insurance) or IDR 630,000 with lunch. Flying dress hire IDR 300,000. Book via WhatsApp.",
@@ -2145,10 +2129,6 @@ Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-m
       {
         url: "/images/adventures/swing-heaven-ayung.jpg",
         alt: "Jungle swing photo stop on a private Bali itinerary at Swing Heaven Bongkasa",
-      },
-      {
-        url: "/images/adventures/swing-heaven-koi-pond.jpg",
-        alt: "Koi boat photo at Swing Heaven — a booked photo day on a private Bali trip",
       },
       {
         url: "/images/adventures/full-day-ubud-tour.jpg",

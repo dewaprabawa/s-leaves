@@ -119,6 +119,8 @@ const footerLinks = {
   explore: [
     { label: "All Experiences", href: "/experiences" },
     { label: "Book Adventures", href: "/book" },
+    { label: "Batur jeep price guide", href: "/blog/mount-batur-sunrise-jeep-tour-price-guide-2026" },
+    { label: "Things to do near Ubud", href: "/blog/things-to-do-near-ubud-2026" },
     { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },
     { label: "Contact", href: "/contact" },

@@ -1,3 +1,4 @@
+import { collectArticleLinkHrefs, mappedArticleSlugs } from '@/data/articleInternalLinks'
 import { BLOG_POSTS } from '@/data/blog'
 import { GEO_UPDATED } from '@/data/geoContent'
 import { ACTIVITY_GEO_UPDATED } from '@/data/activityGeo'
@@ -26,6 +27,9 @@ const HIGH_BLOG_SLUGS = new Set([
   'mount-batur-sunrise-jeep-tour-price-guide-2026',
   'mount-batur-jeep-vs-sunrise-trek',
   'mount-batur-jeep-pickup-times-canggu-ubud-2026',
+  'mount-batur-jeep-sunrise-vs-sunset',
+  'mount-batur-sit-in-jeep-vs-tracking',
+  'private-kintamani-day-jeep-itinerary',
   'cooking-class-ubud-price-2026-worth-it',
   'ubud-ricefield-cycling-tour-guide-2026',
   'how-much-does-atv-cost-bali-ubud-2026',
@@ -54,6 +58,9 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'mount-batur-sunrise-jeep-tour-price-guide-2026': JEEP_GEO_UPDATED,
   'mount-batur-jeep-vs-sunrise-trek': JEEP_GEO_UPDATED,
   'mount-batur-jeep-pickup-times-canggu-ubud-2026': JEEP_GEO_UPDATED,
+  'mount-batur-jeep-sunrise-vs-sunset': JEEP_GEO_UPDATED,
+  'mount-batur-sit-in-jeep-vs-tracking': JEEP_GEO_UPDATED,
+  'private-kintamani-day-jeep-itinerary': JEEP_GEO_UPDATED,
   'cooking-class-ubud-price-2026-worth-it': COOKING_GEO_UPDATED,
   'how-much-does-atv-cost-bali-ubud-2026': ACTIVITY_GEO_UPDATED,
   'ubud-ricefield-cycling-tour-guide-2026': ACTIVITY_GEO_UPDATED,
@@ -186,6 +193,28 @@ export function assertSitemapInventory(entries: MetadataRoute.Sitemap): void {
     const expected = `${SITE_URL}/blog/${post.slug}`
     if (!unique.has(expected)) {
       throw new Error(`Sitemap missing blog ${post.slug}`)
+    }
+  }
+
+  const blogSlugs = new Set(BLOG_POSTS.map((post) => post.slug))
+  const tourSlugs = new Set(TOURS.map((tour) => tour.slug))
+  for (const slug of mappedArticleSlugs()) {
+    if (!blogSlugs.has(slug)) {
+      throw new Error(`Article cluster maps unknown blog slug ${slug}`)
+    }
+  }
+  for (const href of collectArticleLinkHrefs()) {
+    if (href.startsWith('/blog/')) {
+      const slug = href.slice('/blog/'.length)
+      if (!blogSlugs.has(slug)) {
+        throw new Error(`Article internal link missing blog ${slug}`)
+      }
+    }
+    if (href.startsWith('/tours/')) {
+      const slug = href.slice('/tours/'.length)
+      if (!tourSlugs.has(slug)) {
+        throw new Error(`Article internal link missing tour ${slug}`)
+      }
     }
   }
 

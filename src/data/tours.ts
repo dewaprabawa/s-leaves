@@ -691,7 +691,7 @@ Whitewater rafting pairs with an [ATV ride](/tours/bali-atv-adventure) for a lan
 **Available Schedules:**
 - **Morning:** 08:30 AM
 - **Midday:** 11:00 AM
-- **Afternoon:** 02:00 PM`
+- **Afternoon:** 02:00 PM`,
     highlights: [
       "Class II-III rapids with professional crew",
       "Jungle canyon scenery and waterfalls",
@@ -825,7 +825,7 @@ A nature guide leads the way while you drift through calm pools and gentle curre
 Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) first, then cool off on the Wos. Combo timing is a WhatsApp quote — we do not publish a bundled ATV+tubing IDR. Same-day flow: [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali). Compare splash vs mud: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
 **Available Schedules:**
-- Morning and afternoon departures available — message us to confirm your preferred time slot.`
+- Morning and afternoon departures available — message us to confirm your preferred time slot.`,
     highlights: [
       "Hidden canyon scenery",
       "Crystal-clear river water",

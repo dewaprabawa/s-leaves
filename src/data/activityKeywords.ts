@@ -328,6 +328,7 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
 
 /** Homepage / sitewide meta — head term per activity + niche modifiers. */
 export const SITE_KEYWORDS: string[] = uniqueKeywords([
+  ...KEYWORD_CLUSTERS['batur-sunrise-jeep-tour'].head.slice(0, 3),
   ...ACTIVITY_ORDER.flatMap((slug) => KEYWORD_CLUSTERS[slug].head.slice(0, 2)),
   'cycling cooking class Ubud',
   ...NICHE_KEYWORDS,

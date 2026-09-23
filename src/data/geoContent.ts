@@ -30,7 +30,7 @@ import {
 import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-22'
+export const GEO_UPDATED = '2026-09-23'
 
 export const GEO_QUICK_ANSWER =
   'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in or tracking 4×4, sunrise or sunset, min 2 guests; IDR 950,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), and Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000) — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; Griya Beji / ATV / Swing Heaven pickup IDR 400,000 or self-meet.'
@@ -686,7 +686,7 @@ export const GEO_FAQ_FOR_LLM = [
 ] as const
 
 export const GEO_PRIMARY_PAGES = [
-  { title: 'Home — Travel & Activity Packages', url: `${SITE_URL}/`, desc: 'Cooking class, ricefield cycling, ATV, rafting & day tours with transparent pricing' },
+  { title: 'Home — Travel & Activity Packages', url: `${SITE_URL}/`, desc: 'Private Mount Batur jeep, Tumang cooking class, Pejeng cycling, ATV, rafting, swing, Griya Beji, and day tours with transparent IDR' },
   { title: 'Tumang Bali Cooking Class', url: `${SITE_URL}/tours/balinese-cooking-class`, desc: 'Market tour, 10+ dishes, max 8 guests — shared promo IDR 450,000 / person (was IDR 506,370) · free Ubud pickup' },
   { title: 'Ubud Ricefield Cycling Tour', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`, desc: '2-hour Pejeng cycling with lunch and free Ubud pickup from IDR 750K' },
   { title: 'Book Cycling + Cooking', url: `${SITE_URL}/book?activity=combo-cycling-cooking`, desc: 'WhatsApp culture-day package: ricefield cycling + Tumang cooking class' },

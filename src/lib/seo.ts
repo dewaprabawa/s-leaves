@@ -9,14 +9,14 @@ export const SITE_URL = 'https://www.sekarbaliactivity.com'
 export const SITE_NAME = 'Sekar Bali Activity'
 
 /** SERP title target: brand + offer, ≤60 characters */
-export const DEFAULT_TITLE = 'Sekar Bali Activity | Cooking Class & Cycling Ubud'
+export const DEFAULT_TITLE = 'Sekar Bali Activity | Jeep, Cooking & ATV Ubud'
 export const DEFAULT_DESCRIPTION =
-  'Book Tumang Bali Cooking Class promo from IDR 450K / person and Pejeng ricefield cycling from IDR 750K near Ubud — free hotel pickup on both. Also ATV, rafting & day tours. Clear IDR. WhatsApp booking.'
+  'Private Mount Batur jeep from IDR 750K, Tumang cooking from 450K, Pejeng cycling from 750K near Ubud — plus ATV, rafting, swing. WhatsApp booking.'
 
 /** Social previews (og:title ≤60, og:description ≤160) */
-export const OG_TITLE = 'Cooking Class & Cycling Ubud | Sekar Bali'
+export const OG_TITLE = 'Jeep, Cooking & ATV Ubud | Sekar Bali'
 export const OG_DESCRIPTION =
-  'Tumang cooking class + Pejeng ricefield cycling near Ubud with free pickup. Transparent IDR, TripAdvisor Traveler’s Choice kitchen, WhatsApp booking.'
+  'Private Batur jeep, Tumang cooking class, Pejeng cycling, ATV and rafting near Ubud. Transparent IDR, WhatsApp booking — no payment to inquire.'
 
 export const OG_IMAGE = {
   url: '/images/adventures/og-cover.jpg',

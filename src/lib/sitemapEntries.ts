@@ -98,12 +98,31 @@ function absoluteUrl(path: string): string {
   return `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`
 }
 
+/**
+ * Next.js interpolates image:loc with no XML escaping. Production GSC error
+ * "Parsing error / Line 90" is Unsplash `?auto=format&fit=crop` — the raw `&`
+ * makes the document not well-formed. Keep image sitemap first-party and
+ * query-free so Search Console can read every loc.
+ */
+function sitemapSafeUrl(url: string): string {
+  try {
+    const parsed = new URL(url)
+    parsed.search = ''
+    parsed.hash = ''
+    return parsed.toString()
+  } catch {
+    return url.split('#')[0].split('?')[0]
+  }
+}
+
 function uniqueAbsoluteImages(paths: Array<string | undefined>): string[] {
   const seen = new Set<string>()
   const out: string[] = []
   for (const path of paths) {
     if (!path) continue
-    const url = absoluteUrl(path)
+    const url = sitemapSafeUrl(absoluteUrl(path))
+    if (!url.startsWith(`${SITE_URL}/`)) continue
+    if (url.includes('&') || url.includes('?') || url.includes('<')) continue
     if (seen.has(url)) continue
     seen.add(url)
     out.push(url)
@@ -210,13 +229,27 @@ export function assertSitemapInventory(entries: MetadataRoute.Sitemap): void {
       throw new Error(`Sitemap includes a query-string URL (use the canonical): ${url}`)
     }
     if (url === `${SITE_URL}/tours`) {
-      throw new Error('Sitemap includes /tours which 301s to /#experiences')
+      throw new Error('Sitemap includes /tours which 301s to /experiences')
     }
     if (BLOCKED_SITEMAP_MARKERS.some((marker) => url.includes(marker))) {
       throw new Error(`Sitemap includes a blocked/redirected path: ${url}`)
     }
     if (url.endsWith('.txt') || url.endsWith('.md')) {
       throw new Error(`Sitemap includes a non-HTML file (keep llms/pricing off Google inventory): ${url}`)
+    }
+    if (url.includes('&')) {
+      throw new Error(`Sitemap loc has a raw & (XML-invalid): ${url}`)
+    }
+  }
+
+  for (const entry of entries) {
+    for (const image of entry.images ?? []) {
+      if (!image.startsWith(`${SITE_URL}/`)) {
+        throw new Error(`Sitemap image:loc must be first-party (GSC Line 90 was off-site Unsplash): ${image}`)
+      }
+      if (image.includes('&') || image.includes('?') || image.includes('<')) {
+        throw new Error(`Sitemap image:loc must be query-free so Next XML stays well-formed: ${image}`)
+      }
     }
   }
 }

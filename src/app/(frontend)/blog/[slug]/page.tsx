@@ -115,9 +115,11 @@ export default async function BlogPostPage({ params }: Props) {
     post.slug === 'how-to-spot-ethical-luwak-coffee-in-bali'
   const isRaftingPost =
     post.slug === 'bali-whitewater-rafting-near-ubud-guide' ||
+    post.slug === 'rafting-ubud-price-2026' ||
     post.slug === 'rafting-vs-tubing-vs-atv-near-ubud'
   const isTubingPost =
     post.slug === 'bali-canyon-tubing-guide-ubud' ||
+    post.slug === 'wos-river-tubing-price-2026' ||
     post.slug === 'atv-river-tubing-wos-river-bali'
   const isMelukatPost = post.slug === 'tirta-empu-melukat-ubud-guide'
   const articleKeywords = keywordsToCsv(getBlogKeywords(post.slug))
@@ -143,13 +145,13 @@ export default async function BlogPostPage({ params }: Props) {
         : isRaftingPost
           ? {
               '@type': 'TouristTrip',
-              name: 'Whitewater Rafting Adventure',
+              name: 'Ayung River Whitewater Rafting near Ubud',
               url: 'https://www.sekarbaliactivity.com/tours/whitewater-rafting',
             }
           : isTubingPost
             ? {
                 '@type': 'TouristTrip',
-                name: 'Canyon Tubing Adventure',
+                name: 'Wos River Canyon Tubing near Ubud',
                 url: 'https://www.sekarbaliactivity.com/tours/canyon-tubing',
               }
             : isAtvPost

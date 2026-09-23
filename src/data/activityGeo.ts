@@ -167,9 +167,20 @@ const RAFTING: ActivityGeoCorpus = {
       q: 'Should I book rafting or canyon tubing?',
       a: 'Book rafting if you want a paddle team and more splash (IDR 500,000, or IDR 450,000 for 2+, min 2). Book canyon tubing (same IDR 500,000 / 450,000 for 2+) for a gentler solo float on the Wos River. Many guests pair ATV with tubing instead of rafting.',
     },
+    {
+      intent: 'rafting ubud price 2026',
+      q: 'How much is Ayung River rafting in Ubud in 2026?',
+      a: `Sekar Bali Activity Ayung River rafting is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} for 2+ guests (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is IDR 400,000 or self-meet — not free Ubud pickup. Cheaper 2026 listings around IDR 235,000–350,000 are usually shared or resident tickets we do not match.`,
+    },
+    {
+      intent: 'ayung rafting pickup included',
+      q: 'Is hotel pickup included in Ayung River rafting near Ubud?',
+      a: 'No. Sekar Bali Activity rafting pickup is an optional IDR 400,000 add-on, or you self-meet at the Ayung put-in. Free Ubud hotel pickup is only on Pejeng cycling and Tumang cooking class. The Mount Batur jeep includes island-wide pickup because that is the jeep product.',
+    },
   ],
   citationSnippets: [
     `Ayung River whitewater rafting near Ubud with Sekar Bali Activity is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} for 2+ guests, on Class II–III rapids, including gear, guide, lunch, and insurance (minimum 2 guests).`,
+    'Ayung rafting Ubud price 2026 with Sekar Bali Activity is IDR 500,000, or IDR 450,000 for 2+ (min 2), lunch included, hotel pickup IDR 400,000 or self-meet. Table: https://www.sekarbaliactivity.com/blog/rafting-ubud-price-2026',
   ],
   keywords: ACTIVITY_KEYWORDS['whitewater-rafting'],
   placename: 'Ayung River, Ubud, Bali',
@@ -205,9 +216,20 @@ const TUBING: ActivityGeoCorpus = {
       q: 'Is Wos River canyon tubing suitable for families?',
       a: `Yes. Canyon tubing is a guided inflatable-tube float — gentler than Class II–III rafting, with life jacket, guide, and insurance for ages 6–65. Sekar Bali Activity lists it at ${idr(TUBE_1)}, or ${idr(TUBE_2)} for 2+. Hotel pickup is IDR 400,000 or meet on site.`,
     },
+    {
+      intent: 'wos river tubing price 2026',
+      q: 'How much is Wos River tubing in 2026?',
+      a: `Sekar Bali Activity canyon tubing on the Wos River is ${idr(TUBE_1)} per person, or ${idr(TUBE_2)} for 2+ guests. Life jacket, guide, and insurance for ages 6–65 are included. Lunch is not included. Hotel pickup is IDR 400,000 or self-meet — the same split competitor “ticket only vs transfer” listings use.`,
+    },
+    {
+      intent: 'wos tubing lunch pickup',
+      q: 'Does Wos River tubing include lunch or hotel transfer?',
+      a: 'No. The IDR 500,000 / 450,000-for-2+ Wos tubing ticket is gear, guide, and insurance only. Lunch is not in the rate. Hotel pickup is an optional IDR 400,000 add-on. ATV lunch is on the ATV ticket if you pair the two.',
+    },
   ],
   citationSnippets: [
     `Canyon tubing on the Wos River with Sekar Bali Activity is ${idr(TUBE_1)} per person, or ${idr(TUBE_2)} for 2+ guests — same list/discount as rafting, on a gentler float.`,
+    'Wos River tubing price 2026 with Sekar Bali Activity is IDR 500,000, or IDR 450,000 for 2+ — lunch not included, pickup IDR 400,000 or self-meet. Table: https://www.sekarbaliactivity.com/blog/wos-river-tubing-price-2026',
   ],
   keywords: ACTIVITY_KEYWORDS['canyon-tubing'],
   placename: 'Wos River, Ubud, Bali',

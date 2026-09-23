@@ -313,9 +313,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     isTopPick: true,
     duration: "Sunrise 6–7 Hours · Sunset 4–5 Hours",
     basePrice: 950000,
-    seoTitle: "Private Mount Batur Jeep | Sunrise or Sunset",
+    seoTitle: "Batur Jeep No Hike | Private 950K · 750K",
     seoDescription:
-      "Private jeep or tracking, sunrise or sunset — min 2 guests. Meal included. Hot spring +IDR 150K with ticket. 2 pax 950K · 3+ 750K.",
+      "Private Mount Batur jeep — sit-in no hike or tracking. Sunrise or sunset, min 2. Meal included. 2 pax 950K · 3+ 750K. Island-wide pickup. WhatsApp.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
@@ -645,18 +645,19 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
   },
   {
     id: "whitewater-rafting",
-    title: "Whitewater Rafting Adventure",
+    title: "Ayung River Whitewater Rafting near Ubud",
     slug: "whitewater-rafting",
     category: "adventure",
     area: "Ayung River / Ubud",
+    venue: "Ayung River canyon, Ubud",
     isTopPick: true,
     pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
-    seoTitle: "Ayung River Rafting Ubud | 500K · 450K for 2+",
+    seoTitle: "Ayung Rafting Ubud Price | 500K · 450K 2+",
     seoDescription:
-      "Ayung River Class II–III rafting near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2). Lunch, gear, guide, insurance. Pickup IDR 400K. Book WhatsApp.",
+      "Ayung River Class II–III rafting Ubud — IDR 500,000, or 450,000 for 2+ (min 2). Lunch, gear, insurance. Pickup IDR 400K, not free. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/rafting.jpg",
       alt: "Whitewater rafting through a Bali jungle river canyon",
@@ -669,22 +670,28 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
     ],
     shortDescription:
       "Navigate Class II-III rapids through a stunning river canyon surrounded by towering jungle cliffs, waterfalls, and ancient stone carvings.",
-    fullDescription: `**Ride the Rapids Through Bali's Jungle Canyon**
+    fullDescription: `**How much is Ayung River rafting near Ubud?** Sekar Bali Activity lists **IDR 500,000 per person**, or **IDR 450,000 per person for 2+ guests** (minimum 2) on **Class II–III** rapids. Helmet, life jacket, English-speaking crew, lunch, and insurance for ages 6–65 are included. **Hotel pickup is IDR 400,000** or self-meet — not the free Ubud rule on cycling and cooking.
 
-Our Whitewater Rafting Adventure takes you down the Ayung River canyon near Ubud, where Class II-III rapids, jungle walls, and hidden waterfalls create one of the most exciting half-day experiences in central Bali.
+### 2026 price (what Google should cite)
 
-This is a guided rafting trip suitable for beginners and families with older children. Professional river crew, safety equipment, and lunch are all included.
+| Guests | Price (IDR) | Included |
+| --- | --- | --- |
+| 2+ (discount) | **450,000** / person | Lunch, gear, guide, insurance |
+| List | **500,000** / person | Same Class II–III run |
+| Hotel pickup | **400,000** | Optional · or self-meet free |
+
+Full table and honest vs-cheap-listings notes: [Ayung rafting Ubud price 2026](/blog/rafting-ubud-price-2026). Route detail: [whitewater rafting near Ubud guide](/blog/bali-whitewater-rafting-near-ubud-guide).
 
 ### What to Expect on the River
-After a safety briefing and gear fitting, your crew paddles you through a mix of fun rapids and calm stretches. Along the way you will pass towering jungle cliffs, see waterfalls spilling into the river, and spot ancient stone carvings on the canyon walls.
+After a safety briefing and gear fitting, your crew paddles you through a mix of fun rapids and calm stretches. Along the way you will pass towering jungle cliffs, see waterfalls spilling into the river, and spot ancient stone carvings on the canyon walls. This is beginner-friendly Class II–III water — splash and teamwork, not extreme Class IV+.
 
 ### A Great Standalone Adventure or Combo Day
-Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for a full land-and-water adventure day. Message us on WhatsApp to check combo availability and departure times.
+Whitewater rafting pairs with an [ATV ride](/tours/bali-atv-adventure) for a land-and-water day, or compare a gentler [Wos River tube](/tours/canyon-tubing) at the same 500K / 450K-for-2+ list. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud). Message WhatsApp for same-day timing — we do not invent a bundled combo IDR.
 
 **Available Schedules:**
 - **Morning:** 08:30 AM
 - **Midday:** 11:00 AM
-- **Afternoon:** 02:00 PM`,
+- **Afternoon:** 02:00 PM`
     highlights: [
       "Class II-III rapids with professional crew",
       "Jungle canyon scenery and waterfalls",
@@ -761,7 +768,7 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         id: "faq-raft-6",
         question: "How much does whitewater rafting near Ubud cost?",
         answer:
-          "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is an optional IDR 400,000 add-on.",
+          "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is an optional IDR 400,000 add-on. The 2026 price table is on the Ayung rafting Ubud price article.",
       },
       {
         id: "faq-raft-7",
@@ -774,17 +781,18 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
   },
   {
     id: "canyon-tubing",
-    title: "Canyon Tubing Adventure",
+    title: "Wos River Canyon Tubing near Ubud",
     slug: "canyon-tubing",
     category: "adventure",
     area: "Wos River / Pejeng",
+    venue: "Wos River canyon, Pejeng / Ubud",
     pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "2.5 Hours",
     basePrice: 500000,
     childPrice: 450000,
-    seoTitle: "Canyon Tubing Ubud | 500K · 450K for 2+",
+    seoTitle: "Wos River Tubing Price | 500K · 450K 2+",
     seoDescription:
-      "Wos River canyon tubing near Ubud — IDR 500,000, discount IDR 450,000 for 2+. Life jacket, guide, insurance. Hotel pickup IDR 400K. Book WhatsApp.",
+      "Wos River canyon tubing Ubud — IDR 500,000, or 450,000 for 2+. Life jacket, guide, insurance. Lunch not included. Pickup IDR 400K. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/canyon-tubing.jpg",
       alt: "Canyon tubing through crystal-clear Bali waters",
@@ -797,17 +805,27 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
     ],
     shortDescription:
       "Drift through hidden canyons on an inflatable tube. Crystal-clear waters, moss-covered walls, and shafts of sunlight create a magical underground world.",
-    fullDescription: `**Float Through Hidden Bali Canyons**
+    fullDescription: `**How much is Wos River tubing near Ubud?** Sekar Bali Activity canyon tubing is **IDR 500,000 per person**, or **IDR 450,000 for 2+ guests**, on the **Wos River** — not the Ayung. Life jacket, English-speaking guide, and insurance for ages 6–65 are included. **Lunch is not included.** **Hotel pickup is IDR 400,000** or self-meet.
 
-Our Canyon Tubing Adventure is a relaxing but unforgettable float through narrow jungle canyons on an inflatable tube. Crystal-clear water, moss-covered rock walls, and shafts of sunlight make this one of the most photogenic adventures near Ubud.
+### 2026 price (what Google should cite)
 
-A nature guide leads the way while you drift through calm pools and gentle currents. Life jackets are provided, and no prior experience is needed.
+| Guests | Price (IDR) | Included |
+| --- | --- | --- |
+| 1 | **500,000** | Tube, life jacket, guide, insurance |
+| 2+ | **450,000** / person | Same Wos float |
+| Hotel pickup | **400,000** | Optional · or self-meet free |
+| Lunch | **Not included** | Eat before / after, or book ATV lunch |
 
-### Pair It with ATV for the Ultimate Combo
-Many guests combine canyon tubing with a morning ATV ride through the jungle — land thrills in the morning, cool water in the afternoon. Ask us on WhatsApp about ATV + tubing combo packages.
+Full table vs ticket-only listings: [Wos River tubing price 2026](/blog/wos-river-tubing-price-2026). Float detail: [canyon tubing near Ubud](/blog/bali-canyon-tubing-guide-ubud).
+
+### What the float is
+A nature guide leads the way while you drift through calm pools and gentle currents. Crystal-clear water, moss-covered rock walls, and shafts of sunlight make this one of the most photogenic adventures near Ubud. No paddle team and no Class II–III drops — that is [Ayung rafting](/tours/whitewater-rafting).
+
+### Pair It with ATV
+Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) first, then cool off on the Wos. Combo timing is a WhatsApp quote — we do not publish a bundled ATV+tubing IDR. Same-day flow: [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali). Compare splash vs mud: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
 **Available Schedules:**
-- Morning and afternoon departures available — message us to confirm your preferred time slot.`,
+- Morning and afternoon departures available — message us to confirm your preferred time slot.`
     highlights: [
       "Hidden canyon scenery",
       "Crystal-clear river water",
@@ -884,7 +902,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
         id: "faq-tube-6",
         question: "How much is canyon tubing near Ubud?",
         answer:
-          "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book. Life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is an optional IDR 400,000 add-on.",
+          "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book. Life jacket, guide, and insurance for ages 6–65 are included. Lunch is not included. Hotel pickup is an optional IDR 400,000 add-on. The 2026 price table is on the Wos River tubing price article.",
       },
     ],
     reviews: [],

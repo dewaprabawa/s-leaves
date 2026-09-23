@@ -30,7 +30,7 @@ import {
 import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-22'
+export const GEO_UPDATED = '2026-09-23'
 
 export const GEO_QUICK_ANSWER =
   'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in or tracking 4×4, sunrise or sunset, min 2 guests; IDR 950,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), and Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000) — with WhatsApp booking. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; Griya Beji / ATV / Swing Heaven pickup IDR 400,000 or self-meet.'
@@ -686,7 +686,7 @@ export const GEO_FAQ_FOR_LLM = [
 ] as const
 
 export const GEO_PRIMARY_PAGES = [
-  { title: 'Home — Travel & Activity Packages', url: `${SITE_URL}/`, desc: 'Cooking class, ricefield cycling, ATV, rafting & day tours with transparent pricing' },
+  { title: 'Home — Travel & Activity Packages', url: `${SITE_URL}/`, desc: 'Private Mount Batur jeep, Tumang cooking class, Pejeng cycling, ATV, rafting, swing, Griya Beji, and day tours with transparent IDR' },
   { title: 'Tumang Bali Cooking Class', url: `${SITE_URL}/tours/balinese-cooking-class`, desc: 'Market tour, 10+ dishes, max 8 guests — shared promo IDR 450,000 / person (was IDR 506,370) · free Ubud pickup' },
   { title: 'Ubud Ricefield Cycling Tour', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`, desc: '2-hour Pejeng cycling with lunch and free Ubud pickup from IDR 750K' },
   { title: 'Book Cycling + Cooking', url: `${SITE_URL}/book?activity=combo-cycling-cooking`, desc: 'WhatsApp culture-day package: ricefield cycling + Tumang cooking class' },
@@ -701,7 +701,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Luwak Coffee Plantation (Umah Kuno)', url: `${SITE_URL}/tours/luwak-coffee-plantation`, desc: 'Ethical Luwak tasting — IDR 800,000 per person · min 3 guests · transport not included' },
   { title: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour`, desc: 'Private Ubud highlights — from IDR 600,000 · driver included' },
   { title: 'Half Day Ubud & Tanah Lot Sunset', url: `${SITE_URL}/tours/half-day-ubud-tanah-lot-tour`, desc: 'Ubud culture + Tanah Lot sunset — from IDR 450,000 · driver included' },
-  { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book cooking, cycling, ATV, rafting, tubing, or culture day via WhatsApp' },
+  { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book jeep, cooking, cycling, ATV, rafting, Swing Heaven, Griya Beji, or culture day via WhatsApp' },
   { title: 'Pricing (HTML)', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices on the homepage' },
   { title: 'Pricing (Markdown for agents)', url: `${SITE_URL}/pricing.md`, desc: 'Machine-readable IDR tiers, inclusions, and pickup fees' },
   { title: 'Things to Do Near Ubud 2026', url: `${SITE_URL}/blog/things-to-do-near-ubud-2026`, desc: 'All activities with 2026 IDR prices, pickup rules, and WhatsApp booking CTAs' },
@@ -717,6 +717,10 @@ export const GEO_PRIMARY_PAGES = [
 ] as const
 
 export const GEO_ARTICLES = [
+  { title: 'Private Mount Batur Jeep Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-guide-2026` },
+  { title: 'Private Mount Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026` },
+  { title: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek` },
+  { title: 'Mount Batur Jeep Pickup Times Canggu / Ubud', url: `${SITE_URL}/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026` },
   { title: 'Cycling & Cooking Class in Ubud Full-Day Itinerary', url: `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary` },
   { title: 'Is an Ubud Cycling Tour Worth It?', url: `${SITE_URL}/blog/is-ubud-cycling-tour-worth-it` },
   { title: 'Cooking Class Ubud Price 2026 — Worth It?', url: `${SITE_URL}/blog/cooking-class-ubud-price-2026-worth-it` },
@@ -728,8 +732,6 @@ export const GEO_ARTICLES = [
   { title: 'Single vs Tandem ATV Near Ubud (2026 Price)', url: `${SITE_URL}/blog/tandem-atv-ubud-price` },
   { title: 'Private ATV vs Mass-Market Quad Tours Near Ubud', url: `${SITE_URL}/blog/private-atv-vs-mass-market-ubud` },
   { title: 'Bali Adventure Packages & Prices 2026', url: `${SITE_URL}/blog/bali-adventure-packages-prices-2026` },
-  { title: 'Private Mount Batur Jeep Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-guide-2026` },
-  { title: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek` },
   { title: 'Rafting vs Tubing vs ATV Near Ubud', url: `${SITE_URL}/blog/rafting-vs-tubing-vs-atv-near-ubud` },
   { title: 'Ubud Hotel Pickup Explained', url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained` },
   { title: 'Private Tirta Empu Melukat near Ubud', url: `${SITE_URL}/blog/tirta-empu-melukat-ubud-guide` },
@@ -749,8 +751,6 @@ export const GEO_ARTICLES = [
   { title: 'Bali Canyon Tubing Guide', url: `${SITE_URL}/blog/bali-canyon-tubing-guide-ubud` },
   { title: 'ATV + River Tubing on the Wos River', url: `${SITE_URL}/blog/atv-river-tubing-wos-river-bali` },
   { title: 'How to Book a Bali Adventure on WhatsApp', url: `${SITE_URL}/blog/how-to-book-bali-adventure-whatsapp` },
-  { title: 'Private Mount Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026` },
-  { title: 'Mount Batur Jeep Pickup Times (Canggu / Ubud)', url: `${SITE_URL}/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026` },
   { title: 'Things to Do Near Ubud 2026 (all activities)', url: `${SITE_URL}/blog/things-to-do-near-ubud-2026` },
   { title: 'Full Day Ubud Tour Guide 2026', url: `${SITE_URL}/blog/full-day-ubud-tour-guide-2026` },
   { title: 'Half Day Ubud & Tanah Lot Sunset Tour 2026', url: `${SITE_URL}/blog/half-day-ubud-tanah-lot-sunset-tour-2026` },

@@ -22,6 +22,15 @@ const MONEY_TOUR_SLUGS = new Set([
 
 const HIGH_BLOG_SLUGS = new Set([
   'things-to-do-near-ubud-2026',
+  'mount-batur-sunrise-jeep-tour-guide-2026',
+  'mount-batur-sunrise-jeep-tour-price-guide-2026',
+  'mount-batur-jeep-vs-sunrise-trek',
+  'mount-batur-jeep-pickup-times-canggu-ubud-2026',
+  'cooking-class-ubud-price-2026-worth-it',
+  'ubud-ricefield-cycling-tour-guide-2026',
+  'how-much-does-atv-cost-bali-ubud-2026',
+  'bali-whitewater-rafting-near-ubud-guide',
+  'bali-canyon-tubing-guide-ubud',
   'griya-beji-waterfall-ubud-guide',
   'griya-beji-vs-tirta-empul-melukat',
   'palm-reading-bali-griya-beji',
@@ -41,6 +50,15 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'tirta-empu-melukat-ubud-guide': GEO_UPDATED,
   'is-bali-swing-worth-it': GEO_UPDATED,
   'swing-heaven-bali-ubud-guide': GEO_UPDATED,
+  'mount-batur-sunrise-jeep-tour-guide-2026': JEEP_GEO_UPDATED,
+  'mount-batur-sunrise-jeep-tour-price-guide-2026': JEEP_GEO_UPDATED,
+  'mount-batur-jeep-vs-sunrise-trek': JEEP_GEO_UPDATED,
+  'mount-batur-jeep-pickup-times-canggu-ubud-2026': JEEP_GEO_UPDATED,
+  'cooking-class-ubud-price-2026-worth-it': COOKING_GEO_UPDATED,
+  'how-much-does-atv-cost-bali-ubud-2026': ACTIVITY_GEO_UPDATED,
+  'ubud-ricefield-cycling-tour-guide-2026': ACTIVITY_GEO_UPDATED,
+  'bali-whitewater-rafting-near-ubud-guide': ACTIVITY_GEO_UPDATED,
+  'bali-canyon-tubing-guide-ubud': ACTIVITY_GEO_UPDATED,
 }
 
 /** Paths Google should not receive via sitemap (redirects, noindex, or non-HTML). */
@@ -73,12 +91,28 @@ function absoluteUrl(path: string): string {
   return `${SITE_URL}${path.startsWith('/') ? path : `/${path}`}`
 }
 
+/**
+ * Next.js writes image:loc with no XML escaping. Unsplash query strings
+ * (`?auto=format&fit=crop`) make /sitemap.xml not well-formed, so Google
+ * (and every strict parser) can drop the file. Strip search/hash.
+ */
+function sitemapSafeUrl(url: string): string {
+  try {
+    const parsed = new URL(url)
+    parsed.search = ''
+    parsed.hash = ''
+    return parsed.toString()
+  } catch {
+    return url.split('#')[0].split('?')[0]
+  }
+}
+
 function uniqueAbsoluteImages(paths: Array<string | undefined>): string[] {
   const seen = new Set<string>()
   const out: string[] = []
   for (const path of paths) {
     if (!path) continue
-    const url = absoluteUrl(path)
+    const url = sitemapSafeUrl(absoluteUrl(path))
     if (seen.has(url)) continue
     seen.add(url)
     out.push(url)
@@ -170,6 +204,17 @@ export function assertSitemapInventory(entries: MetadataRoute.Sitemap): void {
     }
     if (url.endsWith('.txt') || url.endsWith('.md')) {
       throw new Error(`Sitemap includes a non-HTML file (keep llms/pricing off Google inventory): ${url}`)
+    }
+    if (url.includes('&')) {
+      throw new Error(`Sitemap loc has a raw & (XML-invalid): ${url}`)
+    }
+  }
+
+  for (const entry of entries) {
+    for (const image of entry.images ?? []) {
+      if (image.includes('&') || image.includes('?')) {
+        throw new Error(`Sitemap image:loc must be query-free so Next XML stays well-formed: ${image}`)
+      }
     }
   }
 }

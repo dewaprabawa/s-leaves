@@ -161,7 +161,7 @@ function buildTourSchema(tour: Tour) {
   const isoDuration = durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
-    "@type": cooking ? (["TouristTrip", "Product"] as const) : "TouristTrip",
+    "@type": cooking || jeep ? (["TouristTrip", "Product"] as const) : "TouristTrip",
     "@id": `${SITE_URL}/tours/${tour.slug}#trip`,
     name: tour.title,
     description: cooking

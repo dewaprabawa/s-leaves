@@ -54,7 +54,7 @@ Prices are 2026 published tiers. Groups of 2+ or 3+ often pay less per person on
 
 **[Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour)** is a 2-hour pedal on Subak paths — lunch, bike, helmet, and **free Ubud pickup**. It is not a Tegallalang selfie queue. Honest take: [is an Ubud cycling tour worth it?](/blog/is-ubud-cycling-tour-worth-it).
 
-Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary) · [Book the combo](/book?activity=combo-cycling-cooking).
+Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary) · [Book the combo](/book?activity=combo-cycling-cooking). Prefer jungle photos? [Swing Heaven + cooking](/blog/swing-heaven-cooking-class-ubud) · [Book swing + kitchen](/book?activity=combo-swing-cooking).
 
 ## Adventure (mud, river, sunrise)
 
@@ -177,6 +177,7 @@ Want quieter paddies instead of Tegalalang crowds? Swap the afternoon for [Pejen
 | [Full day Ubud tour](/tours/full-day-ubud-tour) | 600,000 | You want palace + market + terraces in one car |
 | [Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) | 450,000 | You need a 6-hour coastal sunset |
 | [Cycling + Tumang cooking](/book?activity=combo-cycling-cooking) | Cycling 750K + cooking 450K | You want village + kitchen, not temples |
+| [Swing Heaven + Tumang cooking](/book?activity=combo-swing-cooking) | Swing 530K + cooking 450K | You want Ayung jungle photos + kitchen |
 
 Temple dress: shoulders and knees covered. Short [sarong guide](/blog/bali-temple-dress-code).
 

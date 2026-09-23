@@ -41,6 +41,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Vegetarian cooking class', href: '/blog/vegetarian-vegan-cooking-class-ubud' },
     { title: 'Morning vs afternoon class', href: '/blog/morning-vs-afternoon-ubud-cooking-class' },
     { title: 'Cycling + cooking itinerary', href: '/blog/cycling-cooking-class-ubud-full-day-itinerary' },
+    { title: 'Swing Heaven + cooking itinerary', href: '/blog/swing-heaven-cooking-class-ubud' },
     { title: 'Book Tumang cooking class', href: '/tours/balinese-cooking-class' },
   ],
   cycling: [
@@ -49,6 +50,9 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Pejeng vs Tegallalang', href: '/blog/pejeng-rice-terrace-cycling-vs-tegallalang' },
     { title: 'E-bike vs pedal', href: '/blog/ebike-vs-pedal-ubud-cycling-tour' },
     { title: 'Family cycling Ubud', href: '/blog/ubud-cycling-tour-for-families' },
+    { title: 'What is the Subak system?', href: '/blog/what-is-the-subak-system-bali' },
+    { title: 'Cycling + cooking itinerary', href: '/blog/cycling-cooking-class-ubud-full-day-itinerary' },
+    { title: 'Swing Heaven + cooking itinerary', href: '/blog/swing-heaven-cooking-class-ubud' },
     { title: 'Book Pejeng cycling', href: '/tours/ubud-ricefield-cycling-tour' },
   ],
   atv: [
@@ -57,6 +61,8 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'ATV for beginners', href: '/blog/bali-atv-for-beginners-first-time-guide' },
     { title: 'All New Bali Adventure location', href: '/blog/bali-atv-all-new-bali-adventure-location-guide' },
     { title: 'Mud track vs cave/tunnel', href: '/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel' },
+    { title: 'ATV + tubing combo', href: '/blog/atv-river-tubing-wos-river-bali' },
+    { title: 'Swing Heaven (same district)', href: '/tours/swing-heaven-bali' },
     { title: 'Book ATV near Ubud', href: '/tours/bali-atv-adventure' },
   ],
   rafting: [
@@ -74,6 +80,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Swing Heaven vs Tegallalang', href: '/blog/swing-heaven-vs-tegallalang-bali-swing' },
     { title: 'Bongkasa location', href: '/blog/swing-heaven-bongkasa-location' },
     { title: 'Is the Bali Swing worth it?', href: '/blog/is-bali-swing-worth-it' },
+    { title: 'Swing Heaven + cooking class', href: '/blog/swing-heaven-cooking-class-ubud' },
     { title: 'Book Swing Heaven', href: '/tours/swing-heaven-bali' },
   ],
   griya: [
@@ -87,6 +94,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Tirta Empu melukat guide', href: '/blog/tirta-empu-melukat-ubud-guide' },
     { title: 'Griya Beji vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
     { title: 'Bali temple dress code', href: '/blog/bali-temple-dress-code' },
+    { title: 'Afternoon Tumang cooking class', href: '/tours/balinese-cooking-class' },
     { title: 'Book Tirta Empul / Beji', href: '/tours/tirta-empu-purification' },
   ],
   coffee: [
@@ -195,6 +203,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'swing-heaven-bongkasa-location': 'swing',
   'flying-dress-hire-bali-swing': 'swing',
   'bali-swing-with-lunch-ubud': 'swing',
+  'swing-heaven-cooking-class-ubud': 'swing',
   'griya-beji-waterfall-ubud-guide': 'griya',
   'griya-beji-vs-tirta-empul-melukat': 'griya',
   'palm-reading-bali-griya-beji': 'griya',
@@ -236,16 +245,21 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
   cooking: [
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
     { title: 'Pejeng ricefield cycling', href: '/tours/ubud-ricefield-cycling-tour' },
+    { title: 'Swing Heaven + cooking day', href: '/blog/swing-heaven-cooking-class-ubud' },
+    { title: 'Private Tirta Empul / Beji', href: '/tours/tirta-empu-purification' },
     HUB,
   ],
   cycling: [
     { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class' },
+    { title: 'Private Tirta Empul / Beji', href: '/tours/tirta-empu-purification' },
+    { title: 'Swing Heaven + cooking day', href: '/blog/swing-heaven-cooking-class-ubud' },
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
     HUB,
   ],
   atv: [
     { title: 'Ayung River rafting', href: '/tours/whitewater-rafting' },
     { title: 'Wos River tubing', href: '/tours/canyon-tubing' },
+    { title: 'Swing Heaven in the same district', href: '/tours/swing-heaven-bali' },
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
     HUB,
   ],
@@ -261,6 +275,8 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
   ],
   swing: [
     { title: 'ATV in the same Abiansemal district', href: '/tours/bali-atv-adventure' },
+    { title: 'Tumang cooking class (afternoon)', href: '/tours/balinese-cooking-class' },
+    { title: 'Swing Heaven + cooking itinerary', href: '/blog/swing-heaven-cooking-class-ubud' },
     { title: 'Griya Beji Waterfall (Punggul)', href: '/tours/griya-beji-waterfall' },
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
     { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
@@ -272,6 +288,8 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
   ],
   melukat: [
     { title: 'Griya Beji waterfall purification', href: '/tours/griya-beji-waterfall' },
+    { title: 'Tumang cooking class (afternoon)', href: '/tours/balinese-cooking-class' },
+    { title: 'Pejeng ricefield cycling', href: '/tours/ubud-ricefield-cycling-tour' },
     { title: 'Umah Kuno luwak tasting', href: '/tours/luwak-coffee-plantation' },
     HUB,
   ],
@@ -316,6 +334,8 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     { title: 'Batur jeep price guide', href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026' },
     { title: 'Cooking class Ubud price', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
     { title: 'ATV cost near Ubud', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
+    { title: 'Swing Heaven + cooking class', href: '/blog/swing-heaven-cooking-class-ubud' },
+    { title: 'Cycling + cooking itinerary', href: '/blog/cycling-cooking-class-ubud-full-day-itinerary' },
     { title: 'Swing Heaven vs Tegallalang', href: '/blog/swing-heaven-vs-tegallalang-bali-swing' },
     { title: 'Griya Beji vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
     { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },

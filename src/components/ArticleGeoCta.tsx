@@ -72,6 +72,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'swing-heaven-bongkasa-location': 'swing-heaven-bali',
   'flying-dress-hire-bali-swing': 'swing-heaven-bali',
   'bali-swing-with-lunch-ubud': 'swing-heaven-bali',
+  'swing-heaven-cooking-class-ubud': 'swing-heaven-bali',
   'bali-safari-packages-compared-2026': 'jungle-hopper-bali-safari-and-marine-park',
   'bali-zoo-vs-bali-safari-vs-taro': 'elephant-mud-fun-at-bali-zoo-park',
   'bali-bird-park-from-ubud-2026': 'bali-bird-park',
@@ -107,6 +108,18 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
       updated: COOKING_GEO_UPDATED,
       bookHref: '/book?activity=combo-cycling-cooking',
       bookLabel: 'Book the combo',
+      pairHref: '/tours/balinese-cooking-class',
+      pairLabel: 'Cooking class only',
+    }
+  }
+
+  if (slug === 'swing-heaven-cooking-class-ubud') {
+    return {
+      tldr:
+        'Sekar Bali Activity books a jungle-swing + kitchen day: morning Swing Heaven in Bongkasa (from IDR 530,000 — not Happy Swing or Tegallalang) then afternoon Tumang Bali Cooking Class (promo IDR 450,000, free Ubud pickup). From-price IDR 980,000 for the two published tickets. One WhatsApp thread — no payment to inquire.',
+      updated: COOKING_GEO_UPDATED,
+      bookHref: '/book?activity=combo-swing-cooking',
+      bookLabel: 'Book swing + cooking',
       pairHref: '/tours/balinese-cooking-class',
       pairLabel: 'Cooking class only',
     }

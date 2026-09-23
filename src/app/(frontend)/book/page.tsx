@@ -8,6 +8,7 @@ import {
   COOKING_CLASS_SALES,
   MELUKAT_SALES,
   getCyclingCookingCombo,
+  getSwingCookingCombo,
 } from "@/data/cultureSales"
 import { GRIYA_BEJI_SALES } from "@/data/griyaBeji"
 import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
@@ -20,15 +21,16 @@ type Props = {
 }
 
 const cultureCombo = getCyclingCookingCombo()
+const swingCookingCombo = getSwingCookingCombo()
 const minAdventurePrice = Math.min(
   ...ADVENTURES.map((a) => getAdventureListPrice(a.id)),
   COOKING_CLASS_SALES.priceIdr,
 )
 
 export const metadata: Metadata = {
-  title: "Book ATV, Cycling & Tumang Cooking",
+  title: "Book ATV, Cycling, Swing + Cooking",
   description:
-    "Book private ATV, rafting, tubing, ricefield cycling, Tumang cooking, Griya Beji purification & more near Ubud. Clear IDR prices from " +
+    "Book private ATV, rafting, tubing, ricefield cycling, Swing Heaven + cooking, Tumang kitchen, Griya Beji purification & more near Ubud. Clear IDR prices from " +
     formatIdr(minAdventurePrice) +
     ". WhatsApp checkout — free to inquire.",
   keywords: BOOK_PAGE_KEYWORDS,
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
     canonical: "/book",
   },
   openGraph: {
-    title: "Book ATV, Cycling & Tumang Cooking | Sekar Bali Activity",
+    title: "Book ATV, Cycling, Swing + Cooking | Sekar Bali Activity",
     description:
-      "Choose ATV, rafting, canyon tubing, ricefield cycling, Tumang cooking, Griya Beji waterfall purification, or a culture day. WhatsApp booking with price included.",
+      "Choose ATV, rafting, canyon tubing, ricefield cycling, Swing Heaven + cooking, Tumang kitchen, Griya Beji waterfall purification, or a culture day. WhatsApp booking with price included.",
     url: `${SITE_URL}/book`,
     siteName: SITE_NAME,
     type: "website",
@@ -46,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book ATV, Cycling & Tumang Cooking | Sekar Bali Activity",
+    title: "Book ATV, Cycling, Swing + Cooking | Sekar Bali Activity",
     description:
-      "Sales checkout for ATV, rafting, tubing, cycling & Tumang cooking near Ubud. Clear IDR · WhatsApp.",
+      "Sales checkout for ATV, rafting, tubing, cycling, Swing Heaven + cooking & Tumang kitchen near Ubud. Clear IDR · WhatsApp.",
     images: ["/images/adventures/og-cover.jpg"],
   },
 }
@@ -59,12 +61,14 @@ export default async function BookPage({ searchParams }: Props) {
     activity && ADVENTURES.some((a) => a.id === activity) ? activity : undefined
   const highlightCooking = activity === COOKING_CLASS_SALES.id
   const highlightCultureCombo = activity === cultureCombo.id
+  const highlightSwingCookingCombo = activity === swingCookingCombo.id
   const highlightMelukat = activity === MELUKAT_SALES.id
   const highlightGriya = activity === GRIYA_BEJI_SALES.id
 
   const jumpLinks = [
     { id: "combos", label: "Adventure combos" },
     { id: cultureCombo.id, label: "Cycling + cooking" },
+    { id: swingCookingCombo.id, label: "Swing + cooking" },
     ...ADVENTURES.map((adv) => ({
       id: adv.id,
       label: adv.name.replace(" Tour", ""),
@@ -80,7 +84,7 @@ export default async function BookPage({ searchParams }: Props) {
     name: "Book Bali Adventures — Sekar Bali Activity",
     description:
       "Bookable adventure and culture activities near Ubud with WhatsApp checkout — ATV, rafting, tubing, Swing Heaven, ricefield cycling, Balinese cooking class, Tirta Empu melukat, Griya Beji Waterfall, and combos.",
-    numberOfItems: ADVENTURES.length + 4,
+    numberOfItems: ADVENTURES.length + 5,
     itemListElement: [
       {
         "@type": "ListItem",
@@ -100,9 +104,27 @@ export default async function BookPage({ searchParams }: Props) {
           },
         },
       },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: swingCookingCombo.name,
+        url: `${SITE_URL}/book?activity=${swingCookingCombo.id}`,
+        item: {
+          "@type": "TouristTrip",
+          name: swingCookingCombo.name,
+          description: swingCookingCombo.description,
+          offers: {
+            "@type": "Offer",
+            price: swingCookingCombo.totalFromIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/book?activity=${swingCookingCombo.id}`,
+          },
+        },
+      },
       ...ADVENTURES.map((adv, index) => ({
         "@type": "ListItem",
-        position: index + 2,
+        position: index + 3,
         name: adv.name,
         url: `${SITE_URL}/book?activity=${adv.id}`,
         item: {
@@ -121,7 +143,7 @@ export default async function BookPage({ searchParams }: Props) {
       })),
       {
         "@type": "ListItem",
-        position: ADVENTURES.length + 2,
+        position: ADVENTURES.length + 3,
         name: COOKING_CLASS_SALES.name,
         url: `${SITE_URL}/book?activity=${COOKING_CLASS_SALES.id}`,
         item: {
@@ -140,7 +162,7 @@ export default async function BookPage({ searchParams }: Props) {
       },
       {
         "@type": "ListItem",
-        position: ADVENTURES.length + 3,
+        position: ADVENTURES.length + 4,
         name: MELUKAT_SALES.name,
         url: `${SITE_URL}/book?activity=${MELUKAT_SALES.id}`,
         item: {
@@ -159,7 +181,7 @@ export default async function BookPage({ searchParams }: Props) {
       },
       {
         "@type": "ListItem",
-        position: ADVENTURES.length + 4,
+        position: ADVENTURES.length + 5,
         name: GRIYA_BEJI_SALES.name,
         url: `${SITE_URL}/book?activity=${GRIYA_BEJI_SALES.id}`,
         item: {
@@ -205,13 +227,13 @@ export default async function BookPage({ searchParams }: Props) {
             Sales &amp; checkout
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-extrabold text-brand-green tracking-tight">
-            Book ATV, cycling &amp; cooking near Ubud
+            Book ATV, cycling, swing &amp; cooking near Ubud
           </h1>
           <p className="text-base md:text-lg text-brand-green-light leading-relaxed">
             Private / small-group ATV, rafting, canyon tubing, Pejeng ricefield cycling, or a
             Balinese cooking class, or Griya Beji waterfall purification — then send guests, date,
-            pickup, and price to WhatsApp. Combos include ATV + tubing and cycling + cooking.
-            Starting from {formatIdr(minAdventurePrice)}.
+            pickup, and price to WhatsApp. Combos include ATV + tubing, cycling + cooking, and
+            swing + cooking. Starting from {formatIdr(minAdventurePrice)}.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <a
@@ -241,6 +263,7 @@ export default async function BookPage({ searchParams }: Props) {
               link.id === initialActivityId ||
               (link.id === COOKING_CLASS_SALES.id && highlightCooking) ||
               (link.id === cultureCombo.id && highlightCultureCombo) ||
+              (link.id === swingCookingCombo.id && highlightSwingCookingCombo) ||
               (link.id === MELUKAT_SALES.id && highlightMelukat) ||
               (link.id === GRIYA_BEJI_SALES.id && highlightGriya)
             return (
@@ -263,6 +286,7 @@ export default async function BookPage({ searchParams }: Props) {
           initialActivityId={initialActivityId}
           highlightCooking={highlightCooking}
           highlightCultureCombo={highlightCultureCombo}
+          highlightSwingCookingCombo={highlightSwingCookingCombo}
           highlightMelukat={highlightMelukat}
           highlightGriya={highlightGriya}
         />

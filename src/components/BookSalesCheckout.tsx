@@ -18,6 +18,8 @@ import {
   buildCyclingCookingComboWhatsAppUrl,
   buildMelukatWhatsAppUrl,
   getCyclingCookingCombo,
+  getSwingCookingCombo,
+  buildSwingCookingComboWhatsAppUrl,
 } from "@/data/cultureSales"
 import { GRIYA_BEJI_SALES, GRIYA_BEJI_VENUE, buildGriyaBejiWhatsAppUrl } from "@/data/griyaBeji"
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
@@ -30,6 +32,7 @@ type Props = {
   initialActivityId?: string
   highlightCooking?: boolean
   highlightCultureCombo?: boolean
+  highlightSwingCookingCombo?: boolean
   highlightMelukat?: boolean
   highlightGriya?: boolean
 }
@@ -38,6 +41,7 @@ export default function BookSalesCheckout({
   initialActivityId,
   highlightCooking = false,
   highlightCultureCombo = false,
+  highlightSwingCookingCombo = false,
   highlightMelukat = false,
   highlightGriya = false,
 }: Props) {
@@ -52,8 +56,10 @@ export default function BookSalesCheckout({
   })
 
   const cultureCombo = getCyclingCookingCombo()
+  const swingCookingCombo = getSwingCookingCombo()
   const cookingWhatsApp = buildCookingClassWhatsAppUrl()
   const cultureWhatsApp = buildCyclingCookingComboWhatsAppUrl()
+  const swingCookingWhatsApp = buildSwingCookingComboWhatsAppUrl()
   const melukatWhatsApp = buildMelukatWhatsAppUrl()
   const griyaWhatsApp = buildGriyaBejiWhatsAppUrl()
 
@@ -69,7 +75,7 @@ export default function BookSalesCheckout({
           </h2>
           <p className="text-sm text-brand-green-light mt-2 max-w-2xl">
             Mix ATV with canyon tubing and/or rafting in one day. Combos save 10% for two activities or
-            12% for three+. Prefer culture? See cycling + cooking below.
+            12% for three+. Prefer culture? See cycling + cooking or swing + cooking below.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
@@ -175,6 +181,65 @@ export default function BookSalesCheckout({
             </a>
             <Link
               href={cultureCombo.itineraryHref}
+              className="inline-flex items-center gap-1 rounded-xl border border-brand-green/15 px-4 py-3 text-xs font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
+            >
+              Full-day itinerary <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id={swingCookingCombo.id}
+        className={`scroll-mt-36 space-y-4 rounded-3xl border border-brand-green/10 bg-white p-5 md:p-8 shadow-sm ${
+          highlightSwingCookingCombo ? "ring-2 ring-accent-gold/60" : ""
+        }`}
+      >
+        <div>
+          <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-1">
+            {swingCookingCombo.tagline}
+          </p>
+          <h2 className="font-display text-2xl md:text-3xl font-bold text-brand-green">
+            {swingCookingCombo.name}
+          </h2>
+          <p className="text-sm md:text-base text-brand-green-light mt-2 leading-relaxed max-w-3xl">
+            {swingCookingCombo.description}
+          </p>
+        </div>
+        <ul className="space-y-2">
+          {swingCookingCombo.timeline.map((line) => (
+            <li key={line} className="flex items-start gap-2 text-sm text-brand-green">
+              <Check className="w-4 h-4 text-accent-gold-dark shrink-0 mt-0.5" />
+              <span>{line}</span>
+            </li>
+          ))}
+        </ul>
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 pt-2">
+          <div>
+            <p className="text-[11px] uppercase tracking-wider text-brand-green-light mb-0.5">
+              From (both, per person)
+            </p>
+            <p className="text-2xl font-bold text-brand-green">
+              {formatIdr(swingCookingCombo.totalFromIdr)}
+            </p>
+            <p className="text-xs text-brand-green-light mt-1">
+              {formatIdr(swingCookingCombo.swingPriceIdr)} swing +{" "}
+              {formatIdr(swingCookingCombo.cookingPriceIdr)} cooking · {swingCookingCombo.duration}
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <a
+              href={swingCookingWhatsApp}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => notifyActivityClick(swingCookingCombo.name, "book-page-whatsapp")}
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-green text-sand px-5 py-3 text-xs font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+            >
+              <MessageCircle className="w-4 h-4" />
+              Book swing + kitchen
+            </a>
+            <Link
+              href={swingCookingCombo.itineraryHref}
               className="inline-flex items-center gap-1 rounded-xl border border-brand-green/15 px-4 py-3 text-xs font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
             >
               Full-day itinerary <ArrowRight className="w-3.5 h-3.5" />

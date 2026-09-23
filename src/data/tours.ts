@@ -170,6 +170,7 @@ Want even more adventure? Pair your ATV ride with river tubing on the Wos River,
 - [Jungle mud vs cave/tunnel tracks](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) — we are not Kuber or Dragon Cave
 - [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali) — land-then-water combo (ask WhatsApp for timing)
 - [Private vs mass-market ATV](/blog/private-atv-vs-mass-market-ubud)
+- [Swing Heaven Bongkasa](/tours/swing-heaven-bali) — same Abiansemal district, jungle-swing photos after the mud track
 
 Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing combo for your preferred date.`,
     highlights: [
@@ -958,8 +959,8 @@ The Swing Heaven ticket is **non-refundable** once issued. If rain or unsafe wea
 
 Card payments at the park (if you pay on site) add a **3% surcharge**. WhatsApp bookings with Sekar Bali Activity use the published bank transfer on the invoice — no card number on our website.
 
-### Pair it with ATV or rafting
-Swing Heaven sits in Abiansemal, the same district as our [ATV arena](/tours/bali-atv-adventure). Ask WhatsApp to stack a morning swing with afternoon ATV or [Ayung River rafting](/tours/whitewater-rafting).
+### Pair it with ATV, cooking, or rafting
+Swing Heaven sits in Abiansemal, the same district as our [ATV arena](/tours/bali-atv-adventure). Ask WhatsApp to stack a morning swing with afternoon ATV or [Ayung River rafting](/tours/whitewater-rafting). For a jungle-photo + kitchen day, book morning Swing Heaven then afternoon [Tumang cooking](/tours/balinese-cooking-class) — [swing + cooking itinerary](/blog/swing-heaven-cooking-class-ubud) · [book the combo](/book?activity=combo-swing-cooking). This is **not** Happy Swing.
 
 Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it) · [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location) · [Lunch package](/blog/bali-swing-with-lunch-ubud) · [Flying dress hire](/blog/flying-dress-hire-bali-swing) · [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).`,
     highlights: [
@@ -1589,7 +1590,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
         id: "faq-cook-6",
         question: "Can I combine this with ricefield cycling?",
         answer:
-          "Yes. A popular culture day is Pejeng ricefield cycling (free Ubud pickup + lunch) then an afternoon Tumang cooking class. Message WhatsApp to reserve both.",
+          "Yes. A popular culture day is Pejeng ricefield cycling (free Ubud pickup + lunch) then an afternoon Tumang cooking class. Prefer jungle-swing photos instead of paddies? Book morning Swing Heaven (Bongkasa — not Happy Swing) then this kitchen on the same WhatsApp thread. Message us to reserve both.",
       },
     ],
     reviews: [],
@@ -1843,7 +1844,7 @@ After the ritual there is time to change into dry clothes, then **breakfast is i
 Covered shoulders and a change of clothes. We supply the temple sarong, sash, and bathing wrap. See our [Bali temple dress code](/blog/bali-temple-dress-code) before you go. Women who are menstruating should not enter the inner courtyards or the pools — this is a living religious rule.
 
 ### Pairing ideas
-Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation) (Tampaksiring; transport not included on that tasting) or an afternoon [Tumang cooking class](/tours/balinese-cooking-class). Message WhatsApp to reserve both.
+Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation) (Tampaksiring; transport not included on that tasting) or an afternoon [Tumang cooking class](/tours/balinese-cooking-class). Quiet paddies instead of a second temple: [Pejeng cycling](/tours/ubud-ricefield-cycling-tour). Message WhatsApp to reserve both.
 
 **Typical start:** 08:00 or 09:00 so you reach the springs before the mid-morning crowds.`,
     highlights: [

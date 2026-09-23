@@ -2,13 +2,13 @@
 
 **Goal:** Capture high-intent search traffic that competitors already rank for, and convert it into WhatsApp bookings.
 
-**Analysis date:** September 1, 2026 (Round 1) · **Refreshed September 9, 2026 (Round 2)** · **Refreshed September 21, 2026 (Round 3 — all activities)** · **Reset September 22, 2026 (Round 4 — same niche, 12 activities)**
+**Analysis date:** September 1, 2026 (Round 1) · **Refreshed September 9, 2026 (Round 2)** · **Refreshed September 21, 2026 (Round 3 — all activities)** · **Reset September 22, 2026 (Round 4 — same niche, 12 activities)** · **Round 5 September 23, 2026 — ATV / cycling / purification / swing+cooking**
 **Your site:** https://www.sekarbaliactivity.com  
 **Competitors analyzed (Round 1):** ubudcyclingtour.com, cookingclassinubud.com, baliquadbiking.com, pertiwiadventure.com, atvrideubud.com, bali-dirtbike-adventures.com, tamandukuh.com, jambangan (Cookly)
 **Competitors analyzed (Round 2 — new):** kuberbaliadventure.com, atvridebali.id (Bali ATV Ride), tamandukuh.com (deep dive), pertiwiadventure.com (rafting combo), Bali Breeze Tours / Sobek / Wira Tour Bali cycling listings, Traveling Spoon "Putu" market-tour cooking class, GetYourGuide/Viator Ubud category listings (aggregator keyword patterns)
 **Competitors analyzed (Round 3 — catalog-wide):** ubudcenter.com, nagikubalitour.com, baturvolcano.com, telagawajaraftingbali.com, riverraftingbali.com / balivibesadventure.com / balitubingtour.com (Wos tubing), gorillaadventurebali.com (Ayung + Tirta Empul), Pure Kopi Luwak / Bali Pulina-style plantation SERPs, Edy Ubud Tour (Tanah Lot sunset)
 
-**➡️ Jump to [Round 4 — 2026-09-22 Keyword reset](#round-4--2026-09-22-keyword-reset) for the live keyword map wired into the site.**
+**➡️ Jump to [Round 5 — 2026-09-23 ATV / cycling / purification / swing+cooking](#round-5--2026-09-23-atv--cycling--purification--swingcooking) for the live keyword + link-build map.**
 
 ---
 
@@ -373,4 +373,62 @@ python3 .cursor/skills/seo/scripts/competitor_gap.py https://www.sekarbaliactivi
 Cave/tunnel ATV, e-bike, Ayung-as-tubing, jeep summit hike, caged luwak, free pickup on ATV/rafting/tubing/swing/Griya, locker/shower, invented ATV ages.
 
 Ops still open from Round 2: ATV minimum-age number, Tumang clock times, rafting shower/locker confirmation.
+
+---
+
+## Round 5 — 2026-09-23 ATV / cycling / purification / swing+cooking
+
+**Why this pass:** Competitors still win ATV, cycling, purification, and “swing + cooking class” queries with **private / price / lunch / pickup / venue name / combo / vs-page** titles. Round 4 had Swing Heaven vs Tegallalang and cycling+cooking. Round 5 fills the missing commercial day: **jungle swing + cooking class** (aggregator language is often Happy Swing + Tirta Empul + kitchen). We sell **Swing Heaven (Bongkasa) + Tumang**, not Happy Swing.
+
+**Method:** Same-niche 2026 listing titles (operators + aggregators), mapped to truthful SKUs.
+
+| Activity | Competitor title language (2026) | Our truthful match | Do not invent |
+|----------|----------------------------------|--------------------|---------------|
+| ATV | private ATV / quad bike tour Ubud, how much is ATV, lunch, pickup, river crossing, ATV + swing | All New Bali Adventure Sedang mud/river, lunch included, pickup **IDR 400K** or self-meet; ATV + Swing Heaven same district | Cave/tunnel ATV; free pickup; unpublished ATV ages |
+| Cycling | village bike, rice paddy / Subak, cycling and cooking class in Ubud, rice field bike tour | Pejeng pedal bike, lunch, **free Ubud pickup**; cycling + cooking already a bookable combo | e-bike; Kintamani downhill as this SKU |
+| Purification | Tirta Empul water purification ceremony, melukat ceremony Ubud, private tour with pickup + breakfast | Private Tirta Empul **or** Pura Beji **IDR 1,200,000** incl. shuttle + breakfast; Griya Beji is a **different** waterfall SKU | $29 meet-at-gate as if it were our package; temple privately closed |
+| Swing + cooking | jungle swing and cooking class, cooking class temple tour and jungle swing, Happy Swing bundles | Morning Swing Heaven **530K** (lunch **630K**) + afternoon Tumang **450K** = **980K** from-price; pickup rules stay **separate** | Happy Swing tickets; mix discount; free swing pickup |
+
+### Keyword source of truth (this round)
+
+`src/data/activityKeywords.ts` `KEYWORD_CLUSTERS` — new / deepened terms:
+
+| Slug | Added head / book / compare |
+|------|-----------------------------|
+| `bali-atv-adventure` | Bali quad bike tour Ubud; how much is ATV; ATV Ubud price 2026; river crossing; ATV Swing Heaven combo; single vs tandem |
+| `ubud-ricefield-cycling-tour` | village bike tour; Subak cycling; cycling and cooking class in Ubud; rice field bike tour; cycling vs cooking |
+| `tirta-empu-purification` | Tirta Empul water purification ceremony; melukat ceremony Ubud; private tour with pickup; spiritual cleansing; with breakfast; melukat cooking class; private vs walk-in |
+| `balinese-cooking-class` | hands-on; Swing Heaven / jungle-swing cooking; cycling vs cooking; swing vs cooking day |
+| `swing-heaven-bali` | Bali jungle swing Ubud; Swing Heaven cooking class; jungle swing and cooking class; ATV Swing Heaven combo; vs Happy Swing |
+
+`COMBO_KEYWORDS` / `SITE_KEYWORDS` / `BOOK_PAGE_KEYWORDS` now carry swing+cooking and Tirta Empul ceremony language.
+
+### Link-build (hub-and-spoke)
+
+| Surface | What changed |
+|---------|----------------|
+| New spoke | `/blog/swing-heaven-cooking-class-ubud` — answer-first GEO article, price table, clock, pickup honesty, vs Happy Swing / Tegallalang |
+| Bookable combo | `combo-swing-cooking` on `/book` (from-price **980K** = 530K + 450K, no mix discount) |
+| Money-page related guides | ATV → Swing Heaven; swing / cycling / cooking → swing+cooking itinerary; purification → cooking + cycling |
+| Cluster + cross-cluster | cooking ↔ swing ↔ purification; ATV → swing; cycling → Subak + swing+cooking + Tirta Empul |
+| Footer unique dests | Book swing + cooking · Jungle swing + cooking class · relabeled ATV quad bike / rice paddy cycling / Tirta Empul water purification |
+| Nav / catalog | “Swing Heaven + Cooking” in footer nav + featured packages |
+| Homepage | Culture-day card for swing+cooking; travel-guide tile; GEO FAQ subset includes swing+cooking, vs Happy Swing, Tirta Empul ceremony |
+
+### Action log (this round)
+
+| Action | Status |
+|--------|--------|
+| Deepen ATV / cycling / purification / swing+cooking keyword clusters | ✅ `activityKeywords.ts` Round 5 |
+| GEO FAQs + citation snippets (quad bike, Subak, water purification ceremony, swing+cooking, vs Happy Swing) | ✅ `activityGeo.ts` / `cookingGeo.ts` / `geoContent.ts` |
+| New swing+cooking itinerary + bookable combo | ✅ cluster post + `cultureSales.ts` |
+| Internal links: tour guides, article graph, footer, book, homepage | ✅ |
+| Homepage curated GEO FAQ questions match `GEO_FAQ_FOR_LLM` | ✅ |
+| Do not publish a mix discount or Happy Swing offer | ✅ honesty held |
+
+### Still do not target as offers
+
+Same as Round 4, plus: Happy Swing tickets, unpublished swing+cooking mix discount, free pickup merged across swing and cooking.
+
+Ops still open: ATV minimum-age number, Tumang clock times, rafting shower/locker confirmation.
 

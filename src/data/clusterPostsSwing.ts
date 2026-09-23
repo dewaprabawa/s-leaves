@@ -2,6 +2,96 @@
 
 export const SWING_CLUSTER_POSTS = [
   {
+    slug: 'swing-heaven-cooking-class-ubud',
+    title: 'Swing Heaven + Cooking Class in Ubud: Jungle Swing Then Tumang Kitchen',
+    seoTitle: 'Swing Heaven + Cooking Class Ubud | 530K + 450K',
+    excerpt:
+      'Morning Swing Heaven in Bongkasa from IDR 530,000, then afternoon Tumang cooking promo IDR 450,000. Not Happy Swing. One WhatsApp thread, honest pickup rules.',
+    publishedAt: '2026-09-23',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/swing-heaven-ayung.jpg',
+    content: `
+**What is the best jungle swing and cooking class combo in Ubud?** Book **[Swing Heaven](/tours/swing-heaven-bali)** in **Bongkasa** in the morning (from **IDR 530,000**, lunch package **IDR 630,000**) and **[Tumang Bali Cooking Class](/tours/balinese-cooking-class)** in the afternoon (promo **IDR 450,000**, free Ubud pickup). Sekar Bali Activity puts both on **one WhatsApp thread**. This is **not** Happy Swing and **not** the Tegallalang rice-terrace swing strip.
+
+> **Key Takeaways**
+> - Morning: [Swing Heaven](/tours/swing-heaven-bali) **IDR 530,000** · **IDR 630,000** with lunch · Bongkasa / Ayung
+> - Afternoon: [Tumang cooking](/tours/balinese-cooking-class) promo **IDR 450,000** · max 8 · free Ubud pickup
+> - From-price if you add both published tickets: **IDR 980,000** per person (530K + 450K)
+> - Pickup stays honest: swing **IDR 400,000** or self-meet · cooking **free Ubud**
+> - We do **not** sell Happy Swing or a temple + swing aggregator day
+> - Book: [Swing + cooking combo](/book?activity=combo-swing-cooking)
+
+## Why this day exists
+
+Aggregator listings rank for **“Ubud cooking class temple tour and jungle swing.”** Those days usually stack a market kitchen, **Tirta Empul**, and **Happy Swing** on one long clock. We sell the two products we actually operate and book:
+
+1. A **Bongkasa jungle-swing ticket** with a published IDR
+2. A **capped village kitchen** with Chef Wayan Suryana
+
+If you want the holy-spring morning instead of the swing, book [Tirta Empu Purification](/tours/tirta-empu-purification) (**IDR 1,200,000**, shuttle + breakfast) and keep the afternoon kitchen. If you want paddies instead of a swing, book [cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+
+## 2026 price table (published tickets)
+
+| Piece | From (IDR) | Pickup | What you get |
+| --- | --- | --- | --- |
+| Swing Heaven Package | **530,000** | IDR 400K or self-meet Bongkasa | 14 jungle spots, insurance, tea/coffee/water · own-phone photos |
+| Swing Heaven + lunch | **630,000** | Same | Same access + lunch at the park |
+| Flying dress hire | **300,000** | — | Optional wardrobe · not a photographer |
+| Tumang cooking (shared) | **450,000** promo | **Free Ubud** | 10+ dishes · max 8 · rice-field walk · AM market on morning sessions |
+| **Swing + cooking (no lunch SKU)** | **980,000** | Mixed rules | Morning park + afternoon kitchen |
+| **Swing lunch + cooking** | **1,080,000** | Mixed rules | Park lunch + kitchen meal |
+
+There is **no unpublished mix discount** on this pairing. The numbers above are the two published tickets added together. [Cycling + cooking](/book?activity=combo-cycling-cooking) is the other culture-day SKU we already list.
+
+## Suggested clock
+
+| Time | What happens |
+| --- | --- |
+| 08:00–08:30 | Hotel collect (**IDR 400,000**) or Grab / self-meet at **Jl. Tangga Yuda, Bongkasa** |
+| 08:30–11:00 | Swings, nests, Stairs 2 Heaven — photos on **your phone** |
+| 11:00–12:00 | Optional park lunch (only on the **630,000** SKU) or a light snack if you booked the 530K ticket |
+| 12:30–13:00 | Transfer toward Tumang (Ubud-area cooking pickup is **included** — tell WhatsApp your hotel *and* that you are coming from Bongkasa) |
+| 13:30–17:00 | Hands-on class · 10+ dishes · eat what you cook |
+
+Afternoon Tumang is the right kitchen slot after a swing morning. Morning cooking (market tour) fights the same 08:00 window as the park. Dress hire adds lobby time — say so when you book.
+
+## Pickup honesty (do not merge the rules)
+
+- **Swing Heaven:** optional hotel collect **IDR 400,000**, or free self-meet at the Bongkasa lobby. Same surcharge as [ATV](/tours/bali-atv-adventure) in Sedang.
+- **Tumang cooking:** complimentary **Ubud-area** hotel pickup on the kitchen ticket.
+- We will not pretend the 400K swing transfer is “free because cooking includes pickup.” Tell WhatsApp both venues so the driver plan is one thread.
+
+Pin and Grab notes: [Swing Heaven Bongkasa location](/blog/swing-heaven-bongkasa-location). Kitchen pickup: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
+
+## Swing Heaven vs Happy Swing vs Tegallalang
+
+| Park | What it is | Do we sell it? |
+| --- | --- | --- |
+| **Swing Heaven** | Jungle / Ayung park in **Bongkasa** | **Yes** — from IDR 530,000 |
+| **Happy Swing** | A different park name used on cooking + temple aggregator days | **No** |
+| **Tegallalang swing strip** | Rice-terrace roadside parks north of Ubud | **No** — walk Tegalalang on the [full-day Ubud tour](/tours/full-day-ubud-tour) if you only want terraces |
+
+Side-by-side: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing). Worth-it take: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it).
+
+## Other same-day pairings (same inbox)
+
+| If you want… | Book this instead |
+| --- | --- |
+| Village paddies + kitchen | [Cycling + Tumang](/blog/cycling-cooking-class-ubud-full-day-itinerary) — both include **free Ubud pickup** |
+| Holy spring + kitchen | Morning [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) (**IDR 1,200,000**, shuttle + breakfast) then afternoon cooking |
+| Mud then jungle photos | [ATV](/tours/bali-atv-adventure) + Swing Heaven — both Abiansemal, pickup **IDR 400,000** or self-meet |
+| Waterfall ritual, not a temple | [Griya Beji](/tours/griya-beji-waterfall) in Punggul — **not** Tirta Empul |
+
+## How to book
+
+1. Open [Swing Heaven + cooking](/book?activity=combo-swing-cooking) or message WhatsApp from either money page
+2. Send **date, guest count, hotel, lunch yes/no, dress hire yes/no**
+3. We confirm the **two published IDR lines** — **no payment to inquire**
+
+**Ready?** Book the [combo checkout](/book?activity=combo-swing-cooking), the [Swing Heaven page](/tours/swing-heaven-bali), or [Tumang cooking](/tours/balinese-cooking-class).
+`,
+  },
+  {
     slug: 'swing-heaven-vs-tegallalang-bali-swing',
     title: 'Swing Heaven vs Tegallalang Bali Swing: Which Park to Book',
     seoTitle: 'Swing Heaven vs Tegallalang | Bongkasa Jungle',

@@ -1,6 +1,25 @@
 # GEO / LLM citation readiness checklist
 
-**Last run:** 2026-09-11  
+**Last run:** 2026-09-23  
+**Brand:** Sekar Bali Activity · https://www.sekarbaliactivity.com  
+**Scope:** Repo readiness for extractable answers — **not** a live ChatGPT / Perplexity / AI Overview citation scrape. No citation claims without tool evidence.
+
+**Sources checked:** `src/data/tours.ts`, `src/lib/pricing.ts`, `src/data/cultureSales.ts` (cycling+cooking and **swing+cooking** from-prices), `src/data/geoContent.ts` (`GEO_UPDATED` **2026-09-23**), `src/data/activityGeo.ts`, `src/data/cookingGeo.ts`, `src/data/activityKeywords.ts` (Round 5), supporting slugs in `src/data/blog.ts` including `swing-heaven-cooking-class-ubud`.
+
+### Round 5 prompts (2026-09-23)
+
+| # | Prompt | Money / spoke URL | Must-include facts | Repo ready? | Gaps |
+|---|--------|-------------------|--------------------|-------------|------|
+| R5-1 | How much is ATV in Ubud 2026? Quad bike? | [/tours/bali-atv-adventure](https://www.sekarbaliactivity.com/tours/bali-atv-adventure) | Single from **IDR 750,000** / tandem **1,100,000**; lunch; hotel pickup **IDR 400,000** or self-meet; venue All New Bali Adventure, Sedang — **not** cave/tunnel | Yes | Do not publish ATV min age until ops confirms |
+| R5-2 | Rice paddy / Subak cycling + cooking class Ubud | [/tours/ubud-ricefield-cycling-tour](https://www.sekarbaliactivity.com/tours/ubud-ricefield-cycling-tour) · combo [/book?activity=combo-cycling-cooking](https://www.sekarbaliactivity.com/book?activity=combo-cycling-cooking) | Cycling **750k/725k/700k**, lunch, **free Ubud pickup**, Pejeng pedal (not e-bike); cooking promo **450k** free Ubud pickup | Yes | Afternoon cycling clock is the published schedule |
+| R5-3 | Tirta Empul water purification / melukat ceremony from Ubud | [/tours/tirta-empu-purification](https://www.sekarbaliactivity.com/tours/tirta-empu-purification) | Private **IDR 1,200,000**, shuttle + breakfast, guest chooses Tirta Empul **or** Pura Beji; lunch not included; not a $29 walk-in ticket | Yes | Do not claim the temple is privately closed |
+| R5-4 | Jungle swing and cooking class same day? Is Swing Heaven Happy Swing? | [/blog/swing-heaven-cooking-class-ubud](https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud) · [/book?activity=combo-swing-cooking](https://www.sekarbaliactivity.com/book?activity=combo-swing-cooking) | Swing Heaven **530k** / lunch **630k** Bongkasa; cooking **450k**; from-price **980k** (sum of published tickets); swing pickup **400k** or self-meet; cooking free Ubud; **not** Happy Swing / Tegallalang | Yes | No mix discount. Do not sell Happy Swing |
+
+Homepage curated FAQ now includes the three new questions (must match `GEO_FAQ_FOR_LLM` `q` strings). `llms.txt` keyword-base section stamped Round 5.
+
+---
+
+**Previous last run:** 2026-09-11  
 **Brand:** Sekar Bali Activity · https://www.sekarbaliactivity.com  
 **Scope:** Repo readiness for extractable answers — **not** a live ChatGPT / Perplexity / AI Overview citation scrape. No citation claims without tool evidence.
 

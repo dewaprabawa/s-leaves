@@ -10,15 +10,17 @@ import {
   COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
 } from '@/data/cultureSales'
+import { ACTIVITY_KEYWORDS } from '@/data/activityKeywords'
 
-export const COOKING_GEO_UPDATED = '2026-09-19'
+export const COOKING_GEO_UPDATED = '2026-09-21'
+export const COOKING_GEO_KEYWORDS = ACTIVITY_KEYWORDS['balinese-cooking-class']
 
 const cookingPromoLabel = `IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString('id-ID')}`
 const cookingStandardLabel = `IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString('id-ID')}`
 
 /** First 40–60 words — extractable answer for AI Overviews / ChatGPT */
 export const COOKING_GEO_TLDR =
-  `Tumang Bali Cooking Class near Ubud is a family-run hands-on class with Chef Wayan Suryana — morning market tour (AM session), rice-field walk, 10+ dishes, max 8 guests, English instruction. Promo ${cookingPromoLabel} / person (was ${cookingStandardLabel}) with complimentary Ubud-area pickup. Private from IDR 633,090. TripAdvisor Traveler’s Choice 2026 (5.0 / 1500+ reviews). Book via Sekar Bali Activity WhatsApp.`
+  `Tumang Bali Cooking Class near Ubud is a family-run hands-on class with Chef Wayan Suryana — morning market tour (AM session), rice-field walk, 10+ dishes, max 8 guests, English instruction. Promo ${cookingPromoLabel} / person (was ${cookingStandardLabel}) with complimentary Ubud-area pickup. Private IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString('id-ID')} per person. TripAdvisor Traveler’s Choice 2026 (5.0 / 1500+ reviews). Book via Sekar Bali Activity WhatsApp.`
 
 export const COOKING_GEO_ENTITY = {
   name: 'Tumang Bali Cooking Class',
@@ -78,7 +80,7 @@ export const COOKING_GEO_FAQS: CookingGeoFaq[] = [
   {
     intent: 'cooking class ubud for couples',
     q: 'Is Tumang good for couples?',
-    a: `Yes. Couples often book the shared class (promo ${cookingPromoLabel} each) or a private kitchen (IDR 1,266,180 for 2). Pair with Pejeng ricefield cycling earlier the same day for a full culture day — book both on one Sekar Bali Activity WhatsApp thread.`,
+    a: `Yes. Couples often book the shared class (promo ${cookingPromoLabel} each) or a private kitchen (IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString('id-ID')} for 2). Pair with Pejeng ricefield cycling earlier the same day for a full culture day — book both on one Sekar Bali Activity WhatsApp thread.`,
   },
   {
     intent: 'cooking class with hotel transfer',

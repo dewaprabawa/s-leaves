@@ -1,5 +1,8 @@
 import { COOKING_JEEP_CLUSTER_POSTS } from './clusterPostsCookingJeep'
 import { ACTIVITY_CLUSTER_POSTS } from './clusterPostsActivities'
+import { JEEP_COOKING_CYCLING_CLUSTER_POSTS } from './clusterPostsJeepCookingCycling'
+import { SWING_CLUSTER_POSTS } from './clusterPostsSwing'
+import { GRIYA_BEJI_CLUSTER_POSTS } from './clusterPostsGriyaBeji'
 
 export type BlogPost = {
   slug: string
@@ -14,7 +17,131 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...GRIYA_BEJI_CLUSTER_POSTS,
+  ...SWING_CLUSTER_POSTS,
   ...ACTIVITY_CLUSTER_POSTS,
+  {
+    slug: 'tandem-atv-ubud-price',
+    title: 'Single vs Tandem ATV Near Ubud: 2026 Price and Who Should Share',
+    seoTitle: 'Tandem ATV Ubud Price | Single vs Share 1.1M',
+    excerpt:
+      'Tandem ATV Ubud is IDR 1,100,000 for two on one bike; single from IDR 750,000. Who should share, pickup IDR 400K vs self-meet, WhatsApp booking.',
+    publishedAt: '2026-09-21',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**How much is a tandem ATV near Ubud, and should you share?** At Sekar Bali Activity a **Tandem ATV is IDR 1,100,000 for two people on one bike**. A **Single ATV starts at IDR 750,000** per rider (IDR 725,000 each for two singles · IDR 700,000 each for 3+). We ride at **All New Bali Adventure** in Sedang, Abiansemal — not a roadside rental. **Hotel pickup is IDR 400,000** or you self-meet at the arena for free. The package is **2–4 hours** with lunch, helmet, boot shoes, and insurance for ages 6–65. Book on WhatsApp — **no payment to inquire**.
+
+> **Key Takeaways**
+> - **Tandem:** IDR **1,100,000** per bike (2 guests share) · more bikes: **1,060,000** / **1,030,000**
+> - **Single:** IDR **750,000** (1) · **725,000** (2) · **700,000** (3+) · child single **700,000**
+> - Two singles cost **IDR 1,450,000** — tandem is cheaper if one guest is happy not to drive
+> - Venue: **All New Bali Adventure**, Jl. Raya Krasan, Sedang — jungle mud + river crossings
+> - Pickup **IDR 400,000** or free self-meet · duration **2–4 hours**
+> - WhatsApp **1 or 2 riders + hotel** — we quote single vs tandem. No deposit to ask
+
+## Quick answer: single or tandem?
+
+| | Single ATV | Tandem ATV |
+| --- | --- | --- |
+| 2026 price | From **IDR 750,000** / rider | **IDR 1,100,000** / bike (2 guests) |
+| Who sits | You steer your own quad | One driver + one passenger |
+| Best for | Thrill, photos of *you* riding, solo guests | Couples, one nervous rider, cheaper pair total |
+| Two-guest total | **IDR 1,450,000** (2 × 725,000) | **IDR 1,100,000** |
+| Pickup | IDR 400,000 or self-meet | Same rule |
+| Duration | 2–4 hours | 2–4 hours |
+
+Book the money page: [Bali ATV Adventure near Ubud](/tours/bali-atv-adventure). Full IDR table: [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026).
+
+## What you actually pay (verified 2026 tiers)
+
+These numbers come from our published ATV list — not a “from” teaser.
+
+**Single ATV** (one rider per bike):
+
+| Riders | Price each (IDR) |
+| --- | --- |
+| 1 | **750,000** |
+| 2 | **725,000** |
+| 3+ | **700,000** |
+| Child single (age-appropriate) | **700,000** |
+
+**Tandem ATV** (price is **per bike**, two people on that bike):
+
+| Tandem bikes | Price per bike (IDR) |
+| --- | --- |
+| 1 bike (2 guests) | **1,100,000** |
+| 2 bikes | **1,060,000** |
+| 3+ bikes | **1,030,000** |
+
+Hotel pickup is **not** in those trail prices. Tick pickup for **IDR 400,000**, or meet us at the arena. Combo with [Wos River canyon tubing](/tours/canyon-tubing) is a same-day option — **confirm combo pricing on WhatsApp** (we do not publish a bundled ATV+tubing SKU on the tour card).
+
+## Is tandem worth it vs two singles?
+
+**Yes, if one of you does not want the throttle.** Tandem is **IDR 350,000 less** than two adult singles at the 2-rider tier (1,100,000 vs 1,450,000). You still get the same briefing, lunch, gear, and mud track.
+
+**No, if both of you want to drive.** Two singles are the honest buy. Sharing a seat looks cheaper until the passenger realises they wanted their own bike. Tell us that on WhatsApp and we book two singles.
+
+We do **not** pretend tandem is “romantic so it must be better.” It is a seating and price choice.
+
+## What both prices include
+
+Same inclusions on single and tandem — you are not paying extra on tandem for lunch or gear:
+
+| Included | Not included |
+| --- | --- |
+| Guided trail at All New Bali Adventure | Hotel pickup (optional **IDR 400,000**) |
+| Boot shoes + helmet | Wos River tubing combo (ask WhatsApp) |
+| Simple menu lunch | Personal expenses / tips |
+| English safety briefing | |
+| Insurance ages **6–65** | |
+
+If a listing quotes a lower ATV number, ask whether lunch, insurance, and the **Sedang arena** are in the rate. We publish the trail price and the pickup fee as two lines.
+
+## Who should share a tandem
+
+Book tandem when:
+
+- You are a **couple** and one person prefers the passenger seat
+- One guest has **never sat on a machine** and wants a first look before a later single ride
+- You want **one bill for two** at IDR 1,100,000
+
+Stay on a **single** when:
+
+- You came for the **mud-bike feel** — throttle, ruts, river crossings under your own hands
+- You are **solo** (tandem needs two)
+- Both guests are confident after the briefing
+
+Insurance covers ages **6–65**. Send **ages** on WhatsApp so we assign adult single, child single, or tandem — we will not invent a “kids must tandem” rule in this article. If a child is more comfortable as passenger, say so and we confirm on the chat.
+
+First ride? [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide). Arena pin: [All New Bali Adventure location](/blog/bali-atv-all-new-bali-adventure-location-guide).
+
+## Where you ride (and what tandem feels like)
+
+All of our ATVs start at **All New Bali Adventure**, **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**. Jungle paths, soft soil, river crossings on a **four-wheel sport ATV**. We are **not** the Kuber tunnel or Dragon Cave tracks.
+
+On tandem the **front rider** steers after the English briefing. The **rear rider** holds the passenger position. The pace follows the least experienced person on the bike — same rule as a group of singles. Track styles: [jungle mud vs cave/tunnel](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel).
+
+## Pickup, duration, who it is (not) for
+
+- **Where:** Sedang arena near Ubud (southwest of central Ubud)
+- **How long:** **2–4 hours** on the tour page (briefing, trail, lunch, optional tubing after)
+- **Pickup:** **IDR 400,000** hotel collect, or **free self-meet**. This is **not** the complimentary Ubud pickup on [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) or [Tumang cooking](/tours/balinese-cooking-class). Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained)
+- **For:** beginners, couples, families who want mud and photos
+- **Not for:** anyone who needs a cave/tunnel marketing photo, or who expected free Ubud transfer in the 750K / 1.1M rate
+
+Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali). Comparing intensity: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+
+## How to book on WhatsApp
+
+1. Open [Bali ATV Adventure](/tours/bali-atv-adventure) or [Book](/book?activity=tandem-atv)
+2. Send **1 or 2 riders**, **hotel or self-meet**, **date**, **ages**, **adult or child**
+3. We reply with **single (from IDR 750,000)** vs **tandem (IDR 1,100,000 for two)** and whether pickup is **IDR 400,000**
+4. **No payment to inquire** — WhatsApp Consultation first, then Book when you are ready
+
+**Ready?** Message us from the [ATV money page](/tours/bali-atv-adventure) or start [WhatsApp checkout](/book). Say **tandem** or **two singles** in the first line so we do not quote the wrong bike.
+`,
+  },
   {
     slug: 'tirta-empu-melukat-ubud-guide',
     title: 'Private Tirta Empu Melukat near Ubud (2026)',
@@ -43,6 +170,8 @@ export const BLOG_POSTS: BlogPost[] = [
 **Pura Beji** is a quieter holy-spring alternative. Same private guide, shuttle, offering, and breakfast. Confirm which spring you want on WhatsApp.
 
 A walk-in ticket only covers the grounds. It does not include a guide who explains which fountains are for living guests and which are reserved for funeral rites. That is why we sell a **guided private** package, not a temple-ticket markup.
+
+**Not the same spring:** [Griya Beji Waterfall](/tours/griya-beji-waterfall) (Taman Beji Griya in **Punggul**) is a different park — waterfall purification from **IDR 300,000**, plus palm reading and mental healing. Side-by-side: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat).
 
 ## What is included in IDR 1,200,000
 
@@ -120,7 +249,7 @@ Worried about speed? You control the throttle after the briefing. Guides keep th
 
 Choose **Single** if you want the full sensation of steering yourself through mud and jungle. Choose **Tandem** if you are a couple, or if one guest prefers not to drive. Child Single ATV is **IDR 700,000** where age-appropriate — send ages on WhatsApp so the team assigns Adult or Child correctly.
 
-Need the full 2026 price list? See [Bali adventure packages and prices](/blog/bali-adventure-packages-prices-2026). Still choosing between land and water? Read [rafting vs tubing vs ATV near Ubud](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+Side-by-side IDR and who should share: [single vs tandem ATV Ubud price](/blog/tandem-atv-ubud-price). Need the full 2026 price list? See [Bali adventure packages and prices](/blog/bali-adventure-packages-prices-2026). Still choosing between land and water? Read [rafting vs tubing vs ATV near Ubud](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
 ## What happens at All New Bali Adventure
 
@@ -247,7 +376,7 @@ Sekar Bali Activity lists pickup separately so the trail price stays honest — 
 - **Single** — one person controls the ATV; best for thrill-seekers and solo travelers  
 - **Tandem** — two share one bike; popular with couples and friends who want photos together  
 
-Compare intensity with rafting and tubing in [Rafting vs Tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+Who should share, and whether tandem beats two singles on IDR: [single vs tandem ATV Ubud price](/blog/tandem-atv-ubud-price). Compare intensity with rafting and tubing in [Rafting vs Tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
 ## Want a Full Day? Add Wos River Tubing
 
@@ -321,7 +450,7 @@ Morning 2-hour ricefield cycling + afternoon Tumang Bali Cooking Class is one of
 
 ## Verdict
 
-If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 750,000 — especially with free pickup and lunch included. Pair it with a village kitchen: [cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it). If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
+If your Bali day goal is **authentic village time with logistics handled**, an Ubud / Pejeng cycling tour is worth the IDR 750,000 — especially with free pickup and lunch included. It is a **pedal bike**, not an e-bike — [e-bike vs pedal](/blog/ebike-vs-pedal-ubud-cycling-tour). Families: [Pejeng cycling with kids](/blog/ubud-cycling-tour-for-families). Pair it with a village kitchen: [cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it). If you want mud and motors, spend that day on [ATV at All New Bali Adventure](/blog/how-much-does-atv-cost-bali-ubud-2026) instead.
 
 **Ready to decide?** Book [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) on WhatsApp, add [Tumang Bali Cooking Class](/tours/balinese-cooking-class), or open [Book](/book) with your hotel and date.
 `
@@ -952,26 +1081,40 @@ Message WhatsApp with your temple stop (if any), preferred adventure, and hotel 
   {
     slug: "is-bali-swing-worth-it",
     title: "Is the Bali Swing Worth It? An Honest Review",
-    excerpt: "You have seen the photos all over Instagram, but is the famous Bali Swing actually worth your time and money? Here is an honest local review.",
+    excerpt: "You have seen the photos all over Instagram, but is the famous Bali Swing actually worth your time and money? Here is an honest local review — including Swing Heaven in Bongkasa from IDR 530,000.",
     publishedAt: "2026-08-06",
     author: "Sekar Bali Activity Team",
-    image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80",
+    image: '/images/adventures/bali-swing-rice-terrace.jpg',
     content: `
-**Is the Bali Swing worth the money?** Whether the Bali Swing is worth the cost depends entirely on your priority for social media photography. For travelers focused on capturing iconic, highly-curated Instagram content, the $30-$40 entry fee is justified by the sweeping jungle backdrops, professional photographers, and long-flowing dress rentals available on-site. However, for travelers seeking authentic cultural experiences, the long queues (often exceeding an hour) and highly commercialized atmosphere can be disappointing. If you choose to experience the swings overlooking the Tegalalang Rice Terraces, it is best combined with a broader cultural itinerary, such as our [Full Day Ubud Tour](/#adventures), which balances the modern swing photo-op with authentic visits to the Ubud Royal Palace and local art markets.
+**Is the Bali Swing worth the money?** It depends on whether you want curated jungle photos or a quiet cultural day. For Instagram-style shots, a dedicated swing park is the product: harnessed high swings, nest frames, and flowing dresses. Sekar Bali Activity books **[Swing Heaven Bali](/tours/swing-heaven-bali)** in **Bongkasa** (Ayung River valley) from **IDR 530,000** (lunch package **IDR 630,000**) — not the Tegallalang rice-terrace strip. If you want village paths and lunch without a photo queue, book [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) instead.
 
-### What to Expect at the Bali Swing
-The "Bali Swing" is not just one swing; it is an entire industry. There are dozens of swing parks clustered around the Tegalalang and Bongkawan areas. 
+> **Key Takeaways**
+> - Book Swing Heaven if photos are the goal — **IDR 530,000** / **IDR 630,000** with lunch
+> - It is in **Bongkasa**, not Tegallalang
+> - Dress hire **IDR 300,000** · photos on **your phone**
+> - Peak-season waits still happen; go early
+> - Skip it if you want culture over content — cycling + cooking is the better day
 
-**The Pros:**
-- **Incredible Photos:** The operators know exactly how to push the swings and angle the cameras for the perfect shot.
-- **Safety:** The major swing parks use professional climbing harnesses and rigorous safety standards.
+### Two different “Bali Swing” products
 
-**The Cons:**
-- **The Wait:** During peak season, you might wait over an hour just for 3 minutes on the main swing.
-- **The Cost:** It is one of the more expensive activities in Ubud when you factor in dress rentals and photo packages.
+The phrase “Bali Swing” is an industry, not one park. Dozens of venues sit around **Tegallalang**. **Swing Heaven** is a separate jungle park on **Jl. Tangga Yuda, Bongkasa**. We sell the Bongkasa park because the IDR is published, lunch is optional, and it pairs with ATV in the same Abiansemal district.
 
-### The Verdict
-If you are traveling with teenagers, on a honeymoon, or simply love photography, do it! It is a fun, thrilling experience. Just be sure to go early in the morning to beat the crowds and the heat.
+**The pros (Swing Heaven):**
+- Listed photo spots (swings, nests, jungle beds, Stairs 2 Heaven) in one ticket
+- Insurance and a drink included; lunch package on the board
+- Short drive from Ubud; optional IDR 400,000 hotel pickup
+
+**The cons:**
+- It is still a commercial photo park — not a temple or a village
+- Waits grow in peak hours
+- Ticket is non-refundable once issued; rain days get a 7-day voucher
+- No professional photographer in the rate
+
+### The verdict
+
+If you are travelling with teens, on a honeymoon, or you specifically want the jungle-swing photo, **do it at Swing Heaven** and go in the morning. Book the [Swing Heaven money page](/tours/swing-heaven-bali) or read the [2026 price and pickup guide](/blog/swing-heaven-bali-ubud-guide). Side-by-side with the terrace parks: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing). If you only want rice terraces without a swing ticket, walk Tegalalang on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) and skip the extra.
+
+**Book Swing Heaven** — [from IDR 530,000](/tours/swing-heaven-bali).
 `
   },
   {
@@ -1035,11 +1178,11 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
     author: "Sekar Bali Activity Team",
     image: "/images/cooking/stovetop-class.jpg",
     content: `
-**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Suryana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo **IDR 450,000** / person (was IDR 506,370); private from **IDR 633,090**. TripAdvisor Traveler’s Choice 2026.
+**What happens in Tumang Bali Cooking Class near Ubud?** [Tumang Bali Cooking Class](/tours/balinese-cooking-class) is a family-run, hands-on village kitchen with Chef Wayan Suryana — morning market tour on AM sessions, rice-field walk, 10+ dishes, max 8 guests, English instruction, and complimentary Ubud-area pickup. Promo **IDR 450,000** / person (was IDR 506,370); private **IDR 1,000,000** per person. TripAdvisor Traveler’s Choice 2026.
 
 > **Key Takeaways**
 > - Shared class promo: **IDR 450,000** / person · max **8** guests · Ubud pickup included  
-> - Private: **IDR 633,090** (1) · **IDR 1,266,180** (2)  
+> - Private: **IDR 1,000,000** / person · **IDR 2,000,000** for 2  
 > - Morning = market tour + kitchen; afternoon pairs well with Pejeng ricefield cycling  
 > - Fully hands-on stations — not a hotel demo  
 > - Book via Sekar Bali Activity WhatsApp — no upfront payment to inquire  
@@ -1075,8 +1218,8 @@ After cooking, the group sits family-style and eats what everyone prepared — c
 | Option | Price | Notes |
 | --- | --- | --- |
 | Shared morning / afternoon | **IDR 450,000** promo / person | Max 8 · Ubud pickup |
-| Private (1 guest) | **IDR 633,090** | Exclusive kitchen |
-| Private (2 guests) | **IDR 1,266,180** | Total for two |
+| Private (1 guest) | **IDR 1,000,000** | Exclusive kitchen |
+| Private (2 guests) | **IDR 2,000,000** | Total for two |
 
 Price verdict: [Is a cooking class in Ubud worth it?](/blog/cooking-class-ubud-price-2026-worth-it). Pair with cycling the same day: [Cycling + Tumang cooking itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary). Operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud).
 
@@ -1483,6 +1626,8 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Tandem ATV | IDR 1,100,000 | 2 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
 | Whitewater Rafting | IDR 500,000 · 450,000 for 2+ | person | [Whitewater Rafting](/tours/whitewater-rafting) |
 | Canyon Tubing | IDR 500,000 · 450,000 for 2+ | person | [Canyon Tubing](/tours/canyon-tubing) |
+| Swing Heaven Bali | IDR 530,000 · 630,000 with lunch | person | [Swing Heaven](/tours/swing-heaven-bali) |
+| Griya Beji Waterfall (melukat) | IDR 300,000 · palm 1,000,000 · healing 1,500,000 | person · Punggul · admission extra | [Griya Beji](/tours/griya-beji-waterfall) |
 | Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
 | Mount Batur private jeep | IDR 950,000 (2, min) · 750,000 (3+) | person, private 4×4 | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Private Kintamani Day | IDR 1,300,000 promo (was 1,450,000) | person (min 2) | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
@@ -1581,18 +1726,18 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
   {
     slug: 'ubud-hotel-pickup-bali-adventures-explained',
     title: 'Ubud Hotel Pickup for Bali Adventures: Free vs Surcharge Explained (2026)',
-    excerpt: 'Which Sekar Bali Activity tours include pickup? Cycling and Tumang cooking (Ubud). Tirta Empu melukat (private shuttle). Private Mount Batur jeep (island-wide). ATV, rafting, and tubing add IDR 400,000.',
+    excerpt: 'Which Sekar Bali Activity tours include pickup? Cycling and Tumang cooking (Ubud). Tirta Empu melukat (private shuttle). Private Mount Batur jeep (island-wide). ATV, rafting, tubing, Swing Heaven, and Griya Beji add IDR 400,000.',
     publishedAt: '2026-09-02',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (IDR 750,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. **Tirta Empu Purification (Melukat)** includes a **private Ubud-area shuttle** in the IDR 1,200,000 per person rate. The **private Mount Batur jeep** includes hotel pickup **island-wide** in the jeep price. ATV, whitewater rafting, and canyon tubing do not — IDR 400,000 hotel pickup charge applies.
+**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (IDR 750,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. **Tirta Empu Purification (Melukat)** includes a **private Ubud-area shuttle** in the IDR 1,200,000 per person rate. The **private Mount Batur jeep** includes hotel pickup **island-wide** in the jeep price. ATV, whitewater rafting, canyon tubing, **Swing Heaven**, and **Griya Beji Waterfall** do not — IDR 400,000 hotel pickup charge applies (or self-meet at the venue).
 
 > **Key Takeaways**
 > - **Free Ubud pickup:** Ricefield cycling + Tumang Bali Cooking Class
 > - **Private shuttle in the package price:** Tirta Empu / Tirta Empul melukat (IDR 1,200,000 / person)
 > - **Island-wide pickup included:** private Mount Batur jeep
-> - **Hotel pickup:** IDR 400,000 for ATV, rafting, tubing
+> - **Hotel pickup:** IDR 400,000 for ATV, rafting, tubing, Swing Heaven, Griya Beji Waterfall
 > - **Cycling outside Ubud:** IDR 400,000 surcharge (e.g. Seminyak, Canggu, Kuta)
 > - **Booking:** Set your hotel pin in the booking popup map
 
@@ -1609,6 +1754,8 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 | Single / Tandem ATV | ❌ No | +IDR 400,000 |
 | Whitewater Rafting | ❌ No | +IDR 400,000 |
 | Canyon Tubing | ❌ No | +IDR 400,000 |
+| Swing Heaven Bali (Bongkasa) | ❌ No — self-meet free | +IDR 400,000 |
+| Griya Beji Waterfall (Punggul) | ❌ No — self-meet free | +IDR 400,000 |
 
 ## Why Cycling Includes Free Pickup
 
@@ -1637,7 +1784,15 @@ The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) includes hotel pi
 
 ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup for IDR 400,000 rather than self-driving. Details: [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide).
 
-**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empu melukat (shuttle included)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure).
+## Swing Heaven Pickup (Bongkasa)
+
+[Swing Heaven](/tours/swing-heaven-bali) is on **Jl. Tangga Yuda, Bongkasa** — not the Tegallalang strip. Hotel pickup is the same **IDR 400,000** adventure surcharge, or self-meet at the lobby. Grab from central Ubud is often cheaper for a one-way drop. Pin and timing: [Swing Heaven Bongkasa location](/blog/swing-heaven-bongkasa-location).
+
+## Griya Beji Pickup (Punggul)
+
+[Griya Beji Waterfall](/tours/griya-beji-waterfall) is on **Jl. Mawar, Desa Punggul** — not Tirta Empul. Hotel pickup is the same **IDR 400,000** adventure surcharge, or self-meet at the park. Pin and prices: [Griya Beji Ubud guide](/blog/griya-beji-waterfall-ubud-guide).
+
+**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empu melukat (shuttle included)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure) · [Swing Heaven (IDR 400K or self-meet)](/tours/swing-heaven-bali) · [Griya Beji Waterfall (IDR 400K or self-meet)](/tours/griya-beji-waterfall).
 `
   },
   {
@@ -1711,7 +1866,7 @@ Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture 
 > - Competitor-style combo day: **rice paddy cycling** first, **Tumang cooking class** in the afternoon
 > - Cycling: **IDR 750,000** / person · free Ubud pickup · bike, helmet, guide, lunch, insurance
 > - Tumang cooking: **IDR 450,000** promo / person · Ubud pickup included · 10+ dishes · max 8 guests
-> - Private Tumang kitchen: **IDR 633,090** (1 guest) or **IDR 1,266,180** (2 guests)
+> - Private Tumang kitchen: **IDR 1,000,000** per person (**IDR 2,000,000** for 2 guests)
 > - Route is **gentle Pejeng village / countryside cycling** — not a crowded Tegallalang photo stop
 > - Book both on WhatsApp in one message for the same date — no upfront payment to inquire
 
@@ -1759,7 +1914,7 @@ Prefer a morning Tumang class with market tour? Book cooking first, then a light
 | --- | --- | --- |
 | Ubud Ricefield Cycling Tour | **IDR 750,000** / person | Tier rates for 2+ and 3+ groups |
 | Tumang Bali Cooking Class (shared) | **IDR 450,000** promo / person | Ubud pickup included |
-| Tumang private (1 guest) | **IDR 633,090** | Exclusive kitchen |
+| Tumang private (1 guest) | **IDR 1,000,000** | Exclusive kitchen · **IDR 2,000,000** for 2 |
 | Same-day combo (both) | Ask via WhatsApp | We confirm availability for one date |
 
 Competitor combo packages online often list ~USD 90–130. Our transparent IDR rates let you book **direct via WhatsApp** without aggregator markups.
@@ -1936,4 +2091,5 @@ If you're deciding between the jeep and the traditional Mount Batur sunrise trek
 `
   },
   ...COOKING_JEEP_CLUSTER_POSTS,
+  ...JEEP_COOKING_CYCLING_CLUSTER_POSTS,
 ]

@@ -23,6 +23,7 @@ import {
 } from "@/lib/seo"
 import { buildLlmsDiscoverySchema } from "@/lib/geo"
 import { SEO_FOOTER_HEADING, SEO_FOOTER_LINKS } from "@/data/seoFooterLinks"
+import { SITE_KEYWORDS } from "@/data/activityKeywords"
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -48,30 +49,7 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   publisher: SITE_NAME,
   category: 'travel',
-  keywords: [
-    'Tumang Bali Cooking Class',
-    'Balinese cooking class Ubud',
-    'cooking class Ubud market tour',
-    'Ubud ricefield cycling tour',
-    'Pejeng ricefield cycling',
-    'cycling cooking class Ubud',
-    'Bali travel activities Ubud',
-    'Ubud day tours',
-    'private ATV tour Bali',
-    'ATV ride Ubud',
-    'Bali quad bike tour',
-    'Bali whitewater rafting',
-    'Bali canyon tubing',
-    'private Mount Batur jeep tour',
-    'Mount Batur jeep vs trek',
-    'Kintamani private jeep',
-    'things to do near Ubud',
-    'full day Ubud tour',
-    'Tanah Lot sunset tour from Ubud',
-    'ethical Luwak coffee Ubud',
-    'book Bali activity WhatsApp',
-    'Sekar Bali Activity',
-  ],
+  keywords: SITE_KEYWORDS,
   alternates: {
     canonical: '/',
   },
@@ -130,8 +108,10 @@ const footerLinks = {
     { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
     { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
     { label: "Canyon Tubing", href: "/tours/canyon-tubing" },
+    { label: "Swing Heaven Bali", href: "/tours/swing-heaven-bali" },
     { label: "Private Mount Batur Jeep", href: "/tours/batur-sunrise-jeep-tour" },
     { label: "Tirta Empu Purification", href: "/tours/tirta-empu-purification" },
+    { label: "Griya Beji Waterfall", href: "/tours/griya-beji-waterfall" },
     { label: "Luwak Coffee Plantation", href: "/tours/luwak-coffee-plantation" },
     { label: "Book All Activities", href: "/book" },
     { label: "All Pricing", href: "/#pricing" },
@@ -157,6 +137,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
+        <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM content summary" />
         <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full context" />
         <link rel="alternate" type="text/plain" href="/.well-known/llms.txt" title="LLM well-known summary" />

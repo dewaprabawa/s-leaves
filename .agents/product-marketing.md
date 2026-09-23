@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.6
+**Document version:** v2.7
 **Last updated:** 2026-09-20
 
 ## Product Overview
@@ -129,6 +129,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.7 (2026-09-20) — Private Tumang cooking class is **IDR 1,000,000 per person** (1 guest IDR 1,000,000 / 2 guests IDR 2,000,000). Shared promo stays IDR 450,000.
 - v2.6 (2026-09-20) — Promote Mount Batur jeep and Kintamani Day as **private** (lead with Private in names, CTAs, homepage). Sit-down meal included after the viewpoint on jeep and tracking.
 - v2.5 (2026-09-20) — Rafting and canyon tubing list at **IDR 500,000**, discount **IDR 450,000** for 2+ guests (rafting still min 2). Removed 359K tubing and 475K mid rafting tier.
 - v2.4 (2026-09-20) — GEO/SEO now covers **every** bookable activity (ATV, rafting, tubing, cycling, coffee, full-day Ubud, Tanah Lot half-day) plus a hub article for things to do near Ubud. Same pickup and jeep-meal rules as v2.3.

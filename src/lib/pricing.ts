@@ -11,6 +11,8 @@ export type ActivityId =
   | 'cycling'
   | 'jeep-sunrise'
   | 'kintamani-day'
+  | 'swing-heaven'
+  | 'swing-heaven-lunch'
 
 /** Operator base cost (IDR) — do not sell at or below these */
 export const BASE_COST_IDR: Record<ActivityId, number> = {
@@ -21,6 +23,8 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
   'cycling': 300_000, // per person (internal floor)
   'jeep-sunrise': 600_000, // per person (internal floor — private 4x4 + driver)
   'kintamani-day': 1_000_000, // private jeep/trek + hot spring + Umah Kuno + rice terrace
+  'swing-heaven': 350_000, // per person (internal floor — Swing Heaven Bongkasa ticket)
+  'swing-heaven-lunch': 400_000, // per person (internal floor — package + lunch)
 }
 
 /** Tier 1 = 1 unit/pax, tier 2 = 2, tier 3 = 3+ */
@@ -34,6 +38,8 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'jeep-sunrise': [1_350_000, 950_000, 750_000], // per person — 2 pax IDR 950K private, 3+ IDR 750K
   // Min 2 guests: bookable promo IDR 1.3M; IDR 1.45M is the compare-at list
   'kintamani-day': [1_450_000, 1_300_000, 1_300_000],
+  'swing-heaven': [530_000, 530_000, 530_000],
+  'swing-heaven-lunch': [630_000, 630_000, 630_000],
 }
 
 /** Per-person add-on on any jeep variant (private or tracking, sunrise or sunset). Ticket included. */
@@ -243,6 +249,12 @@ export function formatTierPriceTable(activityId: ActivityId): string {
   }
   if (activityId === 'kintamani-day') {
     return `Private · min 2 · 2+ ${unit}: IDR ${(t2 / 1000).toFixed(0)}k promo (was IDR ${(t1 / 1000).toFixed(0)}k)`
+  }
+  if (activityId === 'swing-heaven') {
+    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · swings, photo spots, insurance, tea/coffee/water`
+  }
+  if (activityId === 'swing-heaven-lunch') {
+    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · same package + lunch`
   }
   return `1 ${unit}: IDR ${(t1 / 1000).toFixed(0)}k · 2 ${unit}: IDR ${(t2 / 1000).toFixed(0)}k · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`
 }

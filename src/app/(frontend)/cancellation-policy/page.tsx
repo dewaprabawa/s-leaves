@@ -125,6 +125,30 @@ export default function CancellationPolicyPage() {
 
           <section>
             <h2 className="text-2xl font-serif text-brand-green font-bold mb-3">
+              5a. Partner venue tickets (Swing Heaven)
+            </h2>
+            <p className="mb-3">
+              <Link href="/tours/swing-heaven-bali" className="text-brand-green font-semibold underline">
+                Swing Heaven Bali
+              </Link>{' '}
+              is a partner park. Until we have issued the venue ticket, the 24-hour free
+              cancellation rule above applies.
+            </p>
+            <ul className="list-disc pl-5 space-y-2">
+              <li>
+                Once the Swing Heaven ticket is issued, the park treats it as{' '}
+                <strong className="text-brand-green">non-refundable</strong>.
+              </li>
+              <li>
+                If the park closes for unsafe weather, Swing Heaven issues a voucher valid{' '}
+                <strong className="text-brand-green">7 days</strong> from the issue date — not a
+                cash refund.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-serif text-brand-green font-bold mb-3">
               6. Operator cancellations
             </h2>
             <p>

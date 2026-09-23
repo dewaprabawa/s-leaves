@@ -10,6 +10,8 @@ import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
 import {
   COOKING_CLASS_PRICE_IDR,
+  COOKING_CLASS_PRIVATE_COUPLE_IDR,
+  COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
 } from "@/data/cultureSales"
 
@@ -34,6 +36,7 @@ const SLUG_TO_ACTIVITY_ID: Record<string, string> = {
   "canyon-tubing": "canyon-tubing",
   "ubud-ricefield-cycling-tour": "cycling",
   "batur-sunrise-jeep-tour": "jeep-sunrise",
+  "swing-heaven-bali": "swing-heaven",
 }
 
 function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
@@ -81,6 +84,12 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
     "jeep-tracking-sunset",
     "jeep-kintamani-day",
     "jeep-kintamani-day-tracking",
+  ],
+  "swing-heaven-bali": ["swing-heaven", "swing-heaven-lunch"],
+  "griya-beji-waterfall": [
+    "griya-beji-purification",
+    "griya-beji-palm-reading",
+    "griya-beji-mental-healing",
   ],
 }
 
@@ -232,6 +241,22 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {props.tourSlug === "bali-atv-adventure" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
+          {props.tourSlug === "swing-heaven-bali" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Lunch package {formatIdr(getListPrice("swing-heaven-lunch"))} · dress hire extra
+            </p>
+          ) : null}
+          {props.tourSlug === "griya-beji-waterfall" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Palm reading IDR 1,000,000 · mental healing IDR 1,500,000 · admission extra
+            </p>
+          ) : null}
+          {props.tourSlug === "balinese-cooking-class" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Private {formatIdr(COOKING_CLASS_PRIVATE_SOLO_IDR)} / person ·{" "}
+              {formatIdr(COOKING_CLASS_PRIVATE_COUPLE_IDR)} for 2
             </p>
           ) : null}
           {props.childPrice ? (

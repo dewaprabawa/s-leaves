@@ -38,7 +38,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "adventure",
     label: TOUR_CATEGORY_LABELS.adventure,
-    blurb: "Private Mount Batur jeep, ATV, rafting & canyon tubing",
+    blurb: "Private muddy sport ATV, river rafting, canyon tubing, jungle swings & a private Mount Batur jeep",
     href: "/#adventure",
   },
   {
@@ -50,7 +50,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "culture",
     label: TOUR_CATEGORY_LABELS.culture,
-    blurb: "Private Tirta Empul or Beji melukat from IDR 1.2M · shuttle + breakfast",
+    blurb: "Tirta Empul 1.2M · Griya Beji waterfall melukat from 300K · palm & healing",
     href: "/#culture",
   },
 ]

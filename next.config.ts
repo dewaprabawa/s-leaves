@@ -49,6 +49,15 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        source: '/sitemap.xml',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600, s-maxage=3600',
+          },
+        ],
+      },
+      {
         source: '/llms.txt',
         headers: [
           {
@@ -106,7 +115,7 @@ const nextConfig: NextConfig = {
           {
             key: 'Link',
             value:
-              '</llms.txt>; rel="alternate"; type="text/plain"; title="LLM summary", </llms-full.txt>; rel="alternate"; type="text/plain"; title="LLM full context", </pricing.md>; rel="alternate"; type="text/markdown"; title="Agent pricing"',
+              '</sitemap.xml>; rel="sitemap"; type="application/xml", </llms.txt>; rel="alternate"; type="text/plain"; title="LLM summary", </llms-full.txt>; rel="alternate"; type="text/plain"; title="LLM full context", </pricing.md>; rel="alternate"; type="text/markdown"; title="Agent pricing"',
           },
           {
             key: 'Strict-Transport-Security',

@@ -20,6 +20,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Single & tandem IDR tiers, inclusions, and pickup fees.',
     },
     {
+      title: 'Single vs tandem ATV price',
+      href: '/blog/tandem-atv-ubud-price',
+      blurb: 'Who should share one bike — 750K single vs 1.1M tandem.',
+    },
+    {
       title: 'All New Bali Adventure arena guide',
       href: '/blog/bali-atv-all-new-bali-adventure-location-guide',
       blurb: 'Self-meet directions to the Sedang activity base.',
@@ -84,6 +89,38 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Compare splash vs mud in one page.',
     },
   ],
+  'swing-heaven-bali': [
+    {
+      title: 'Swing Heaven Bali near Ubud',
+      href: '/blog/swing-heaven-bali-ubud-guide',
+      blurb: 'IDR 530K / 630K with lunch, spots, pickup, weather voucher.',
+    },
+    {
+      title: 'Swing Heaven vs Tegallalang',
+      href: '/blog/swing-heaven-vs-tegallalang-bali-swing',
+      blurb: 'Jungle Ayung park vs the rice-terrace swing strip.',
+    },
+    {
+      title: 'Bongkasa location & pickup',
+      href: '/blog/swing-heaven-bongkasa-location',
+      blurb: 'Jl. Tangga Yuda pin, Grab vs IDR 400K hotel collect.',
+    },
+    {
+      title: 'Is the Bali Swing worth it?',
+      href: '/blog/is-bali-swing-worth-it',
+      blurb: 'When the jungle-swing photo is worth IDR 530K.',
+    },
+    {
+      title: 'Flying dress hire',
+      href: '/blog/flying-dress-hire-bali-swing',
+      blurb: 'Optional IDR 300K wardrobe — photos on your phone.',
+    },
+    {
+      title: 'Swing with lunch',
+      href: '/blog/bali-swing-with-lunch-ubud',
+      blurb: 'IDR 630K package vs the 530K ticket.',
+    },
+  ],
   'ubud-ricefield-cycling-tour': [
     {
       title: 'Things to do near Ubud 2026',
@@ -109,6 +146,21 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Ubud hotel pickup explained',
       href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
       blurb: 'When free Ubud pickup applies.',
+    },
+    {
+      title: 'E-bike vs pedal bike',
+      href: '/blog/ebike-vs-pedal-ubud-cycling-tour',
+      blurb: 'This ride is a standard pedal bike on flat Pejeng lanes.',
+    },
+    {
+      title: 'What to wear on the ride',
+      href: '/blog/what-to-wear-ubud-ricefield-cycling',
+      blurb: 'Closed shoes, sun kit, and the 2-hour afternoon clock.',
+    },
+    {
+      title: 'Family cycling in Pejeng',
+      href: '/blog/ubud-cycling-tour-for-families',
+      blurb: 'Kids who already ride, lunch included, insurance 6–65.',
     },
   ],
   'balinese-cooking-class': [
@@ -157,6 +209,21 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/5-essential-balinese-spices',
       blurb: 'Flavor building blocks before you book.',
     },
+    {
+      title: 'What is lawar?',
+      href: '/blog/what-is-lawar-balinese-dish',
+      blurb: 'Ceremonial salad vs the guest-friendly plate you cook.',
+    },
+    {
+      title: 'How a Balinese kitchen works',
+      href: '/blog/how-traditional-balinese-kitchens-work',
+      blurb: 'Paon layout, mortar, and why you get your own station.',
+    },
+    {
+      title: 'Why we pound spices by hand',
+      href: '/blog/pound-spices-by-hand-not-blender',
+      blurb: 'Mortar vs blender — when heat ruins Base Genep.',
+    },
   ],
   'tirta-empu-purification': [
     {
@@ -178,6 +245,38 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Ethical luwak nearby',
       href: '/blog/how-to-spot-ethical-luwak-coffee-in-bali',
       blurb: 'Pair a Tampaksiring morning with Umah Kuno tasting.',
+    },
+    {
+      title: 'Griya Beji vs Tirta Empul',
+      href: '/blog/griya-beji-vs-tirta-empul-melukat',
+      blurb: 'Waterfall park in Punggul vs the private 1.2M temple morning.',
+    },
+  ],
+  'griya-beji-waterfall': [
+    {
+      title: 'Griya Beji Waterfall near Ubud',
+      href: '/blog/griya-beji-waterfall-ubud-guide',
+      blurb: 'Melukat 300K, palm 1M, healing 1.5M — Punggul prices and pickup.',
+    },
+    {
+      title: 'Griya Beji vs Tirta Empul',
+      href: '/blog/griya-beji-vs-tirta-empul-melukat',
+      blurb: 'Different springs, different tickets — do not mix the names.',
+    },
+    {
+      title: 'Palm reading at Griya Beji',
+      href: '/blog/palm-reading-bali-griya-beji',
+      blurb: 'IDR 1,000,000 · hands + birth date · book ahead.',
+    },
+    {
+      title: 'Mental healing at Griya Beji',
+      href: '/blog/mental-healing-bali-griya-beji',
+      blurb: 'IDR 1,500,000 · guided relaxation, not a clinic.',
+    },
+    {
+      title: 'Ubud hotel pickup explained',
+      href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
+      blurb: 'IDR 400K hotel collect or self-meet in Punggul.',
     },
   ],
   'luwak-coffee-plantation': [
@@ -255,6 +354,21 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
       blurb: 'How early-morning pickup timing works by area.',
     },
+    {
+      title: 'Sunrise vs sunset jeep',
+      href: '/blog/mount-batur-jeep-sunrise-vs-sunset',
+      blurb: 'Same private IDR — 02:00 dawn or a 14:30–15:30 sunset.',
+    },
+    {
+      title: 'Sit-in jeep vs tracking jeep',
+      href: '/blog/mount-batur-sit-in-jeep-vs-tracking',
+      blurb: 'Stay seated or add a guided walk — still not the summit.',
+    },
+    {
+      title: 'Private Kintamani Day itinerary',
+      href: '/blog/private-kintamani-day-jeep-itinerary',
+      blurb: 'Promo 1.3M: jeep, hot spring ticket, meal, coffee, terrace.',
+    },
   ],
   'half-day-ubud-tanah-lot-tour': [
     {
@@ -329,6 +443,14 @@ export const TOUR_HOST_NOTES: Record<
   'canyon-tubing': {
     title: 'From our Wos River crew',
     body: 'Tubing is the easy water half-day — sit on the tube, follow the guide, no paddle team. We often run it after an ATV session when the river level allows. Say if you want both on one WhatsApp thread.',
+  },
+  'swing-heaven-bali': {
+    title: 'From our Bongkasa swing hosts',
+    body: 'We book Swing Heaven on Jl. Tangga Yuda, Bongkasa — jungle swings and nests over the Ayung River, not the Tegallalang selfie strip. Tell us if you want the lunch package or a flying dress so the lobby has it ready. Photos are on your phone; rain days get a 7-day venue voucher, not a cash refund once the ticket is issued.',
+  },
+  'griya-beji-waterfall': {
+    title: 'From our Punggul purification hosts',
+    body: 'Taman Beji Griya Waterfall is a living shrine on Jl. Mawar, Desa Punggul — waterfall melukat, palm reading, and mental healing. It is not Tirta Empul and not the Pura Beji spring on our 1.2M private ticket. We confirm the 2026 park board and practitioner availability on WhatsApp. Healing is guided relaxation, not a hospital clinic.',
   },
 }
 

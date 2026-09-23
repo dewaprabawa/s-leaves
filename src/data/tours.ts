@@ -5,6 +5,23 @@ import {
   COOKING_CLASS_STANDARD_PRICE_IDR,
   MELUKAT_PRICE_IDR,
 } from "@/data/cultureSales"
+import {
+  SWING_HEAVEN_DRESS_HIRE_IDR,
+  SWING_HEAVEN_KOI_POND_IDR,
+  SWING_HEAVEN_LUNCH_DIFF_IDR,
+  SWING_HEAVEN_LUNCH_PRICE_IDR,
+  SWING_HEAVEN_PRICE_IDR,
+  SWING_HEAVEN_SPOTS,
+  SWING_HEAVEN_VENUE,
+} from "@/data/swingHeaven"
+import {
+  GRIYA_BEJI_ADMISSION_DOMESTIC_IDR,
+  GRIYA_BEJI_ADMISSION_INTL_IDR,
+  GRIYA_BEJI_HEALING_IDR,
+  GRIYA_BEJI_PALM_READING_IDR,
+  GRIYA_BEJI_PURIFICATION_IDR,
+  GRIYA_BEJI_VENUE,
+} from "@/data/griyaBeji"
 
 const COOKING_PRIVATE_SOLO_DIFF =
   COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
@@ -108,7 +125,7 @@ export const TOURS: Tour[] = [
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "ATV Ride Ubud from IDR 750K | Tandem 1.1M",
+    seoTitle: "Private ATV Ride Ubud | From IDR 750K",
     seoDescription:
       "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Hotel pickup IDR 400K or self-meet. Book WhatsApp.",
     heroImage: {
@@ -142,6 +159,7 @@ Want even more adventure? Pair your ATV ride with river tubing on the Wos River,
 
 ### Plan your ATV day
 - [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) — single IDR 750K vs tandem IDR 1.1M
+- [Single vs tandem ATV](/blog/tandem-atv-ubud-price) — who should share, two-single vs one-bike math
 - [All New Bali Adventure arena](/blog/bali-atv-all-new-bali-adventure-location-guide) — self-meet in Sedang vs hotel pickup IDR 400,000
 - [Jungle mud vs cave/tunnel tracks](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) — we are not Kuber or Dragon Cave
 - [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali) — land-then-water combo (ask WhatsApp for timing)
@@ -626,9 +644,9 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
-    seoTitle: "Rafting Ubud | 500K · 450K for 2+",
+    seoTitle: "Ayung River Rafting Ubud | 500K · 450K for 2+",
     seoDescription:
-      "Class II–III whitewater rafting near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2). Lunch, gear, guide, insurance. Pickup IDR 400K. Book WhatsApp.",
+      "Ayung River Class II–III rafting near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2). Lunch, gear, guide, insurance. Pickup IDR 400K. Book WhatsApp.",
     heroImage: {
       url: "/images/adventures/rafting.jpg",
       alt: "Whitewater rafting through a Bali jungle river canyon",
@@ -643,7 +661,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
       "Navigate Class II-III rapids through a stunning river canyon surrounded by towering jungle cliffs, waterfalls, and ancient stone carvings.",
     fullDescription: `**Ride the Rapids Through Bali's Jungle Canyon**
 
-Our Whitewater Rafting Adventure takes you down a scenic river canyon near Ubud, where Class II-III rapids, jungle walls, and hidden waterfalls create one of the most exciting half-day experiences in central Bali.
+Our Whitewater Rafting Adventure takes you down the Ayung River canyon near Ubud, where Class II-III rapids, jungle walls, and hidden waterfalls create one of the most exciting half-day experiences in central Bali.
 
 This is a guided rafting trip suitable for beginners and families with older children. Professional river crew, safety equipment, and lunch are all included.
 
@@ -734,6 +752,12 @@ Whitewater rafting pairs perfectly with an ATV ride or canyon tubing session for
         question: "How much does whitewater rafting near Ubud cost?",
         answer:
           "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is an optional IDR 400,000 add-on.",
+      },
+      {
+        id: "faq-raft-7",
+        question: "Is this Ayung River rafting near Ubud?",
+        answer:
+          "Yes. This is Class II–III whitewater rafting on the Ayung River / Ubud canyon — jungle cliffs, waterfalls, and stone carvings. Beginner-friendly with a full safety briefing. Pair with ATV the same day if you want a land-and-water combo.",
       },
     ],
     reviews: [],
@@ -856,6 +880,192 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     reviews: [],
   },
   {
+    id: "swing-heaven-bali",
+    title: "Swing Heaven Bali Jungle Swing near Ubud",
+    slug: "swing-heaven-bali",
+    category: "adventure",
+    area: SWING_HEAVEN_VENUE.area,
+    venue: `${SWING_HEAVEN_VENUE.name}, ${SWING_HEAVEN_VENUE.address}`,
+    isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet at Swing Heaven",
+    duration: "1.5–2.5 Hours",
+    basePrice: SWING_HEAVEN_PRICE_IDR,
+    seoTitle: "Swing Heaven Bali Ubud | From IDR 530K",
+    seoDescription:
+      "Swing Heaven Bali in Bongkasa near Ubud — jungle swings, nests & photo spots from IDR 530K. Lunch package 630K. Dress hire 300K. WhatsApp booking.",
+    heroImage: {
+      url: "/images/adventures/swing-heaven-ayung.jpg",
+      alt: "Guest on a jungle swing over the Ayung River valley at Swing Heaven Bali in Bongkasa near Ubud",
+      width: 1600,
+      height: 1000,
+    },
+    gallery: [
+      {
+        url: "/images/adventures/swing-heaven-ayung.jpg",
+        alt: "Jungle swing over the Ayung canopy at Swing Heaven Bali in Bongkasa near Ubud",
+      },
+      {
+        url: "/images/adventures/swing-heaven-package.jpg",
+        alt: "Swing Heaven Bali package board — jungle swings and photo nests from IDR 530,000",
+      },
+      {
+        url: "/images/adventures/swing-heaven-lunch.jpg",
+        alt: "Swing Heaven Bali package with lunch — jungle swings, nests, and a la carte lunch",
+      },
+      {
+        url: "/images/adventures/swing-heaven-flying-dresses.jpg",
+        alt: "Flying dresses for hire at Swing Heaven Bali jungle photo spots",
+      },
+      {
+        url: "/images/adventures/swing-heaven-koi-pond.jpg",
+        alt: "Koi pond boat photo promo at Swing Heaven Bali with ice tea and fruit platter",
+      },
+    ],
+    shortDescription:
+      "Jungle swing park in Bongkasa near Ubud — 14 photo spots over the Ayung River valley. Package from IDR 530,000 (tea/coffee/water + insurance) or IDR 630,000 with lunch. Flying dress hire IDR 300,000. Book via WhatsApp.",
+    fullDescription: `**Swing Heaven Bali — jungle swings over the Ayung River (not Tegallalang)**
+
+[Swing Heaven](https://swingheavens.com/) is a locally run jungle swing park on **Jl. Tangga Yuda, Bongkasa** (Abiansemal, Badung) — a short drive from Ubud, overlooking the **Ayung River valley**. This is **not** the Tegallalang rice-terrace swing strip. We book the park for you on one WhatsApp thread with ATV, rafting, cooking, and cycling.
+
+### 2026 packages (per person)
+| Package | Price | Includes |
+|--------|-------|----------|
+| Swing Heaven Package | **IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")}** (~USD 38) | All swings & photo spots, insurance, tea / coffee / water |
+| Package + lunch | **IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")}** (~USD 45) | Same access + lunch |
+| Flying dress hire | **IDR ${SWING_HEAVEN_DRESS_HIRE_IDR.toLocaleString("id-ID")}** | Optional — flowing photo dress |
+| Koi pond boat photo | **IDR ${SWING_HEAVEN_KOI_POND_IDR.toLocaleString("id-ID")}** | Optional — ice tea, fruit platter, photos on **your phone**. Confirm lobby availability |
+
+### Photo spots included
+${SWING_HEAVEN_SPOTS.map((spot) => `- ${spot}`).join("\n")}
+
+Take photos on **your own phone**. A professional photographer is not included. Park hours **${SWING_HEAVEN_VENUE.hours}**.
+
+### Pickup
+Hotel pickup is **IDR 400,000** (same adventure surcharge as ATV / rafting / tubing), or **self-meet at Swing Heaven** with no transport fee. Grab from central Ubud is usually cheaper if you only need a one-way drop.
+
+### Weather & refunds
+The Swing Heaven ticket is **non-refundable** once issued. If rain or unsafe weather closes the park, the venue issues a **voucher valid 7 days** from the issue date — not a cash refund. Cancel **24 hours before** we have issued the ticket and our usual [cancellation policy](/cancellation-policy) still applies.
+
+Card payments at the park (if you pay on site) add a **3% surcharge**. WhatsApp bookings with Sekar Bali Activity use the published bank transfer on the invoice — no card number on our website.
+
+### Pair it with ATV or rafting
+Swing Heaven sits in Abiansemal, the same district as our [ATV arena](/tours/bali-atv-adventure). Ask WhatsApp to stack a morning swing with afternoon ATV or [Ayung River rafting](/tours/whitewater-rafting).
+
+Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it) · [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location) · [Lunch package](/blog/bali-swing-with-lunch-ubud) · [Flying dress hire](/blog/flying-dress-hire-bali-swing) · [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).`,
+    highlights: [
+      "14 jungle swings, nests, and photo spots over the Ayung valley",
+      "From IDR 530,000 — insurance + tea/coffee/water included",
+      "Lunch package IDR 630,000 · flying dress hire IDR 300,000",
+      "Bongkasa near Ubud — not the Tegallalang swing strip",
+    ],
+    included: [
+      "Access to jungle swings and photo spots (14 listed spots)",
+      "On-site insurance",
+      "Tea, coffee, or water",
+      "Lunch (lunch package only)",
+    ],
+    notIncluded: [
+      "Hotel pickup & drop-off (IDR 400,000 surcharge — optional)",
+      "Flying dress hire (IDR 300,000 — optional)",
+      "Koi pond boat photo with ice tea and fruit platter (IDR 300,000 — confirm availability)",
+      "Professional photographer (use your own phone)",
+      "Personal expenses and gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-swing-1",
+        time: "Arrive",
+        title: "Check-in at Swing Heaven",
+        description:
+          "Self-meet at Jl. Tangga Yuda, Bongkasa, or arrive with our optional hotel pickup. Confirm package (with or without lunch) and any dress / koi-pond add-ons at the lobby.",
+      },
+      {
+        id: "iti-swing-2",
+        time: "Safety",
+        title: "Briefing & harness",
+        description:
+          "Staff fit a harness for the high swings and explain how each nest, bed, and adrenaline swing works. No prior experience needed.",
+      },
+      {
+        id: "iti-swing-3",
+        time: "Photos",
+        title: "Swings, nests & jungle beds",
+        description:
+          "Rotate through the listed photo spots — single and tandem swings, egg / heart / bird / onion nests, jungle bed, Titanic, stone, and Stairs 2 Heaven. Shoot on your own phone.",
+      },
+      {
+        id: "iti-swing-4",
+        time: "Finish",
+        title: "Drink or lunch",
+        description:
+          "Tea, coffee, or water is included. Lunch-package guests sit down for the meal. Optional koi-pond boat photo is subject to lobby availability.",
+      },
+    ],
+    activityOptions: [
+      {
+        name: "Swing Heaven Package (no lunch)",
+        priceDiff: 0,
+        description: `IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")} · swings, photo spots, insurance, tea/coffee/water`,
+      },
+      {
+        name: "Swing Heaven Package + lunch",
+        priceDiff: SWING_HEAVEN_LUNCH_DIFF_IDR,
+        description: `IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")} · same access + lunch`,
+      },
+    ],
+    addons: [
+      {
+        id: "flying-dress",
+        name: "Flying dress hire",
+        price: SWING_HEAVEN_DRESS_HIRE_IDR,
+        description: "Optional flowing photo dress for nests and swings.",
+      },
+      {
+        id: "koi-pond-boat",
+        name: "Koi pond boat photo",
+        price: SWING_HEAVEN_KOI_POND_IDR,
+        description: "Ice tea and fruit platter. Photos on your phone. Confirm lobby availability.",
+      },
+    ],
+    faqs: [
+      {
+        id: "faq-swing-1",
+        question: "How much is Swing Heaven Bali near Ubud?",
+        answer: `The Swing Heaven Package is IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")} per person (swings, photo spots, insurance, tea/coffee/water). The lunch package is IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")}. Flying dress hire is IDR ${SWING_HEAVEN_DRESS_HIRE_IDR.toLocaleString("id-ID")}. Optional koi pond boat photo is IDR ${SWING_HEAVEN_KOI_POND_IDR.toLocaleString("id-ID")} when the lobby has availability. Hotel pickup is an optional IDR 400,000 add-on.`,
+      },
+      {
+        id: "faq-swing-2",
+        question: "Where is Swing Heaven Bali?",
+        answer: `${SWING_HEAVEN_VENUE.name} is at ${SWING_HEAVEN_VENUE.address} — Bongkasa, Abiansemal, a short drive from Ubud, overlooking the Ayung River valley. It is not the Tegallalang rice-terrace swing cluster.`,
+      },
+      {
+        id: "faq-swing-3",
+        question: "Is a photographer included?",
+        answer:
+          "No. Photos are on your own phone. Staff can help with angles on the swings. Flying dress hire is optional at IDR 300,000.",
+      },
+      {
+        id: "faq-swing-4",
+        question: "Is hotel pickup included?",
+        answer:
+          "No. Self-meet at Swing Heaven is free. Optional hotel pickup is IDR 400,000 — the same adventure surcharge as ATV, rafting, and canyon tubing. Free Ubud pickup is only on ricefield cycling and Tumang cooking class.",
+      },
+      {
+        id: "faq-swing-5",
+        question: "Can I get a refund if it rains?",
+        answer:
+          "Once the Swing Heaven ticket is issued it is non-refundable. If the park closes for unsafe weather, the venue issues a voucher valid 7 days from the issue date. Cancel 24 hours before we issue the ticket and our usual cancellation policy applies.",
+      },
+      {
+        id: "faq-swing-6",
+        question: "Is this the famous Tegallalang Bali Swing?",
+        answer:
+          "No. Swing Heaven is a separate jungle park in Bongkasa over the Ayung River. Tegallalang swing parks sit on the rice-terrace strip north of Ubud. If you want that stop on a private car day, it is still an optional extra on the Full Day Ubud Tour — not this package.",
+      },
+    ],
+    reviews: [],
+  },
+  {
     id: "ubud-ricefield-cycling-tour",
     title: "Ubud Ricefield & Village Cycling Tour",
     slug: "ubud-ricefield-cycling-tour",
@@ -865,7 +1075,7 @@ Many guests combine canyon tubing with a morning ATV ride through the jungle —
     pickup: "Free Ubud-area hotel pickup",
     duration: "2 Hours",
     basePrice: 750000,
-    seoTitle: "Rice Paddy Cycling Ubud | Pejeng",
+    seoTitle: "Rice Paddy Cycling Ubud | Lunch + Pickup",
     seoDescription:
       "Rice paddy cycling in Pejeng near Ubud — quiet Subak lanes, lunch included, free Ubud hotel pickup from IDR 750K. Book on WhatsApp.",
     heroImage: {
@@ -1240,14 +1450,14 @@ We list Tumang as our flagship food experience so you can book adventure, villag
 ### Sessions
 - **Morning shared class** — includes traditional pasar (market) tour
 - **Afternoon shared class** — rice-field walk + kitchen (ideal after ricefield cycling)
-- **Private class** — exclusive kitchen from IDR 633,090 (1 guest); private for 2 from IDR 1,266,180
+- **Private class** — exclusive kitchen **IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")} per person** (1 guest **IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")}**; 2 guests **IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")}** total)
 
 ### Pricing (2026)
 | Option | Price |
 |--------|-------|
-| Shared class (promo) | **IDR 450,000** per person (was IDR 506,370) |
-| Private (1 guest) | **IDR 633,090** |
-| Private (2 guests) | **IDR 1,266,180** total |
+| Shared class (promo) | **IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}** per person (was IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString("id-ID")}) |
+| Private (1 guest) | **IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")}** |
+| Private (2 guests) | **IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")}** total |
 
 ### Recognition
 TripAdvisor **[Traveler’s Choice 2026](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)** · **5.0** rating (1500+ reviews).
@@ -1331,7 +1541,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         name: "Private class (2 guests)",
         priceDiff: COOKING_PRIVATE_SOLO_DIFF,
-        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} total`,
+        description: `Exclusive kitchen · IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")} / person · IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} total`,
       },
     ],
     addons: [],
@@ -1748,6 +1958,155 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
         question: "Can anyone join the ritual?",
         answer:
           "Guests of any faith may take part if they follow temple etiquette. Women who are menstruating should not enter the inner courtyards or the purification pools. Children may join when they are comfortable in chest-deep water; tell us ages on WhatsApp.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: "griya-beji-waterfall",
+    title: "Griya Beji Waterfall Purification near Ubud",
+    slug: "griya-beji-waterfall",
+    category: "culture",
+    area: GRIYA_BEJI_VENUE.area,
+    venue: `${GRIYA_BEJI_VENUE.name}, ${GRIYA_BEJI_VENUE.address}`,
+    isTopPick: true,
+    pickup: "IDR 400,000 hotel pickup or free self-meet at Griya Beji",
+    duration: "1–2.5 Hours",
+    basePrice: GRIYA_BEJI_PURIFICATION_IDR,
+    seoTitle: "Griya Beji Waterfall Melukat | From 300K",
+    seoDescription:
+      "Griya Beji Waterfall in Punggul — purification IDR 300K, palm reading 1M, mental healing 1.5M. Not Tirta Empul. WhatsApp booking.",
+    heroImage: {
+      url: "/images/adventures/griya-beji-waterfall.jpg",
+      alt: "Guests at Taman Beji Griya Waterfall in Punggul, Abiansemal near Ubud",
+      width: 1600,
+      height: 1000,
+    },
+    gallery: [
+      {
+        url: "/images/adventures/griya-beji-waterfall.jpg",
+        alt: "Guests gathered by the spring at Taman Beji Griya Waterfall",
+      },
+      {
+        url: "/images/adventures/griya-beji-purification.jpg",
+        alt: "Water purification (melukat) at sacred spring spouts near Ubud",
+      },
+      {
+        url: "/images/adventures/griya-beji-ceremony.jpg",
+        alt: "Temple offerings before a Griya Beji purification ceremony",
+      },
+    ],
+    shortDescription:
+      "Waterfall purification (melukat) at Taman Beji Griya in Punggul from IDR 300,000. Palm reading IDR 1,000,000. Mental healing IDR 1,500,000. Not Tirta Empul or Pura Beji.",
+    fullDescription: `**Griya Beji Waterfall — purification, palm reading, mental healing (not Tirta Empul)**
+
+[Taman Beji Griya Waterfall](${GRIYA_BEJI_VENUE.siteUrl}) is a living shrine on **Jl. Mawar, Desa Punggul, Abiansemal** — a short drive from Ubud, in the same Badung district as our ATV arena. The park runs **waterfall melukat**, **palm reading**, and **mental healing**. This is **not** [Tirta Empul or Pura Beji](/tours/tirta-empu-purification) (our private **IDR 1,200,000** temple morning with shuttle and breakfast).
+
+### 2026 park menu (per person)
+| Offering | Price | Notes |
+|--------|-------|----------|
+| Waterfall purification (melukat) | **IDR ${GRIYA_BEJI_PURIFICATION_IDR.toLocaleString("id-ID")}** | Offerings, prayer, spring-fed pool |
+| Palm reading | **IDR ${GRIYA_BEJI_PALM_READING_IDR.toLocaleString("id-ID")}** | Hands + birth date · book ahead |
+| Mental healing therapy | **IDR ${GRIYA_BEJI_HEALING_IDR.toLocaleString("id-ID")}** | Guided relaxation · not a medical clinic |
+| International admission | **IDR ${GRIYA_BEJI_ADMISSION_INTL_IDR.toLocaleString("id-ID")}** | Domestic **IDR ${GRIYA_BEJI_ADMISSION_DOMESTIC_IDR.toLocaleString("id-ID")}** · extra at the gate |
+
+Hours **${GRIYA_BEJI_VENUE.hours}**. We confirm the live board on WhatsApp before you transfer.
+
+### Pickup
+Hotel pickup is **IDR 400,000** (same adventure surcharge as ATV / Swing Heaven), or **self-meet at Griya Beji** with no transport fee. Village lanes into Punggul are narrow — a driver who knows Abiansemal helps.
+
+### Etiquette
+Sarong and sash — swimwear is not ritual dress. Women who are menstruating should not enter the inner grounds or the purification pool. Keep voices low. Healing therapy is **not** a hospital clinic; the park asks guests with psychosis or dissociative disorders not to use hypnotherapy.
+
+Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat) · [2026 price guide](/blog/griya-beji-waterfall-ubud-guide) · [palm reading](/blog/palm-reading-bali-griya-beji) · [mental healing](/blog/mental-healing-bali-griya-beji).`,
+    highlights: [
+      "Waterfall purification (melukat) from IDR 300,000",
+      "Palm reading IDR 1,000,000 · mental healing IDR 1,500,000",
+      "Punggul, Abiansemal — not Tirta Empul or Pura Beji",
+      "Pickup IDR 400,000 or free self-meet",
+    ],
+    included: [
+      "Chosen ritual or therapy (purification, palm reading, or mental healing)",
+      "Park practitioner / pemangku for that offering",
+    ],
+    notIncluded: [
+      "Gate admission (IDR 50,000 international / IDR 20,000 domestic)",
+      "Hotel pickup (IDR 400,000 surcharge — optional)",
+      "Sarong rental if you do not bring your own (confirm on site)",
+      "Lunch and personal expenses",
+    ],
+    itinerary: [
+      {
+        id: "iti-griya-1",
+        time: "Arrive",
+        title: "Check-in at Griya Beji",
+        description:
+          "Self-meet at Jl. Mawar, Desa Punggul, or arrive with optional hotel pickup. Confirm purification, palm reading, and/or mental healing at the lobby.",
+      },
+      {
+        id: "iti-griya-2",
+        time: "Prepare",
+        title: "Sarong, offering, intention",
+        description:
+          "Change into a sarong and sash. The park is a living shrine — swimwear is not the ritual dress.",
+      },
+      {
+        id: "iti-griya-3",
+        time: "Ritual",
+        title: "Purification, reading, or healing",
+        description:
+          "Melukat in the spring-fed pool, sit for palm reading with your birth date, or join mental healing. Book the slots you want — they are separate prices.",
+      },
+      {
+        id: "iti-griya-4",
+        time: "Leave",
+        title: "Change and return",
+        description:
+          "Dry clothes, then self-depart or return with our pickup. Pair the same district with ATV or Swing Heaven on WhatsApp.",
+      },
+    ],
+    activityOptions: [
+      {
+        name: "Waterfall purification (melukat)",
+        priceDiff: 0,
+        description: "Ritual in the spring-fed pool — IDR 300,000. Gate admission extra.",
+      },
+      {
+        name: "Palm reading",
+        priceDiff: GRIYA_BEJI_PALM_READING_IDR - GRIYA_BEJI_PURIFICATION_IDR,
+        description: "Hands + birth date — IDR 1,000,000. Book ahead.",
+      },
+      {
+        name: "Mental healing therapy",
+        priceDiff: GRIYA_BEJI_HEALING_IDR - GRIYA_BEJI_PURIFICATION_IDR,
+        description: "Guided relaxation — IDR 1,500,000. Not a medical clinic.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-griya-1",
+        question: "How much is Griya Beji Waterfall purification near Ubud?",
+        answer:
+          "Waterfall purification (melukat) is IDR 300,000 per person on the 2026 park menu. International admission is IDR 50,000 (domestic IDR 20,000) extra at the gate. Hotel pickup is IDR 400,000 or self-meet in Punggul. Confirm the live board on WhatsApp.",
+      },
+      {
+        id: "faq-griya-2",
+        question: "Is Griya Beji the same as Pura Beji or Tirta Empul?",
+        answer:
+          "No. Taman Beji Griya Waterfall is in Desa Punggul, Abiansemal. Our private Tirta Empul or Pura Beji ticket is a different spring, IDR 1,200,000, with shuttle and breakfast. Do not treat the names as one park.",
+      },
+      {
+        id: "faq-griya-3",
+        question: "How much is palm reading at Griya Beji?",
+        answer:
+          "Palm reading is IDR 1,000,000 per person. Book ahead. Gate admission is extra. It is not medical or legal advice.",
+      },
+      {
+        id: "faq-griya-4",
+        question: "How much is mental healing at Griya Beji?",
+        answer:
+          "Mental healing / healing therapy is IDR 1,500,000 per person. It is guided relaxation, not a hospital clinic. The park asks guests with psychosis or dissociative disorders not to use hypnotherapy.",
       },
     ],
     reviews: [],

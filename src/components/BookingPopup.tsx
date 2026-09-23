@@ -63,8 +63,16 @@ export interface TourConfig {
    * variant (jeep tracking / sunset). Keeps private 2 / 3+ jeep tiers.
    */
   pricingActivityId?: string
-  /** Optional per-person add-ons (jeep hot spring). Not mix-combo activities. */
+  /** Optional per-person add-ons (jeep hot spring, swing dress hire). Not mix-combo activities. */
   optionalAddons?: TourOptionalAddon[]
+  /** Intro copy above optional add-ons. Defaults to jeep hot-spring text if omitted. */
+  optionalAddonsIntro?: string
+  /** Self-meet venue when hotel pickup is not selected (e.g. Swing Heaven Bongkasa). */
+  selfMeet?: {
+    name: string
+    address: string
+    mapUrl: string
+  }
 }
 
 export function BookingPopup({
@@ -238,6 +246,23 @@ export function BookingPopup({
   const pickupIncluded = activeTour.pickupIncluded === true;
   const pickupNotOffered = activeTour.pickupNotOffered === true;
   const meetsAtArena = activeTour.meetsAtArena === true;
+  const selfMeet = activeTour.selfMeet
+  const meetLabel = meetsAtArena
+    ? MEETING_POINT.label
+    : selfMeet
+      ? selfMeet.name
+      : null
+  const meetAddress = meetsAtArena
+    ? MEETING_POINT.address
+    : selfMeet
+      ? selfMeet.address
+      : null
+  const meetMapUrl = meetsAtArena
+    ? MEETING_POINT.mapUrl
+    : selfMeet
+      ? selfMeet.mapUrl
+      : undefined
+  const hasFixedMeet = Boolean(meetLabel)
   const pickupQuote = quotePickup({
     wantsPickup,
     freeUbudPickup: hasFreeUbudPickup || pickupIncluded,
@@ -302,24 +327,22 @@ export function BookingPopup({
 
     const bookingLocation = wantsPickup
       ? locationDetails.trim()
-      : meetsAtArena
-        ? `Meet at ${MEETING_POINT.label}`
+      : meetLabel
+        ? `Meet at ${meetLabel}${meetAddress ? ` — ${meetAddress}` : ""}`
         : "Self-arranged — no operator pickup";
     const bookingMapUrl = wantsPickup
       ? location
         ? `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}`
         : undefined
-      : meetsAtArena
-        ? MEETING_POINT.mapUrl
-        : undefined;
+      : meetMapUrl;
 
     if (isInvalidPax) return alert(`Minimum ${minAdults} adult(s) required${includesRafting ? ' when rafting is included' : ''}.`);
 
     const pickupNoteParts: string[] = [];
     if (!wantsPickup) {
       pickupNoteParts.push(
-        meetsAtArena
-          ? 'Self meet at All New Bali Adventure — no pickup fee'
+        meetLabel
+          ? `Self meet at ${meetLabel} — no pickup fee`
           : 'Self-arranged — no operator pickup',
       );
     } else if (pickupIncluded) {
@@ -509,26 +532,30 @@ export function BookingPopup({
 
         <div className="w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
           {!wantsPickup ? (
-            meetsAtArena ? (
+            hasFixedMeet && meetLabel ? (
               <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">
                 <p className="text-xs font-bold uppercase tracking-wider text-brand-green-light mb-2">
                   Meeting point
                 </p>
                 <h3 className="font-display text-2xl font-bold text-brand-green uppercase leading-tight mb-3">
-                  {MEETING_POINT.name}
+                  {meetLabel}
                 </h3>
                 <p className="text-sm text-brand-green-light leading-relaxed mb-4">
-                  No hotel pickup — meet us directly at the arena. Arrive at your selected time; no pickup surcharge applies.
+                  No hotel pickup — meet at the venue. Arrive at your selected time; no pickup surcharge applies.
                 </p>
-                <p className="text-sm text-brand-green-light mb-6">{MEETING_POINT.address}</p>
+                {meetAddress ? (
+                  <p className="text-sm text-brand-green-light mb-6">{meetAddress}</p>
+                ) : null}
+                {meetMapUrl ? (
                 <a
-                  href={MEETING_POINT.mapUrl}
+                  href={meetMapUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-xl bg-brand-green px-4 py-3 text-sm font-bold text-sand hover:bg-brand-green-light transition-colors"
                 >
                   Open in Google Maps <ExternalLink className="w-4 h-4" />
                 </a>
+                ) : null}
               </div>
             ) : (
               <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">
@@ -552,10 +579,10 @@ export function BookingPopup({
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
             <strong className="block mb-1">{wantsPickup ? "Pickup Location" : "Meeting Point"}</strong>
             {!wantsPickup ? (
-              meetsAtArena ? (
+              meetLabel ? (
                 <span className="text-brand-green font-bold flex items-center gap-1">
                   <span className="w-2 h-2 rounded-full bg-brand-green"></span>
-                  {MEETING_POINT.name} — no pickup fee
+                  {meetLabel} — no pickup fee
                 </span>
               ) : (
                 <span className="opacity-70">Self-arranged — no operator pickup</span>
@@ -677,7 +704,8 @@ export function BookingPopup({
             <div className="mb-6 pb-4 border-b border-brand-green/10">
               <p className="text-brand-green font-bold text-sm mb-1">Optional add-on</p>
               <p className="text-brand-green-light text-xs mb-3 leading-relaxed">
-                Add a Batur / Toya Devasya hot spring soak after sunrise or sunset. The entrance ticket is included in the +IDR 150,000 — you do not pay a second ticket at the gate.
+                {activeTour.optionalAddonsIntro ??
+                  "Add a Batur / Toya Devasya hot spring soak after sunrise or sunset. The entrance ticket is included in the +IDR 150,000 — you do not pay a second ticket at the gate."}
               </p>
               <div className="space-y-2">
                 {activeTour.optionalAddons.map((opt) => {
@@ -806,8 +834,8 @@ export function BookingPopup({
                 <span className="text-sm leading-relaxed">
                   <span className="font-bold text-brand-green block mb-0.5">I need hotel pickup</span>
                   <span className="text-brand-green-light">
-                    {meetsAtArena
-                      ? `Optional. If unchecked, meet us at ${MEETING_POINT.name}. Check this to add your hotel address on the map.`
+                    {meetLabel
+                      ? `Optional. If unchecked, meet at ${meetLabel}. Check this to add your hotel address on the map.`
                       : hasFreeUbudPickup
                         ? "Free within Ubud (surcharge applies outside Ubud). Check this to add your hotel address on the map."
                         : "Optional — a hotel pickup fee may apply. Check this to add your hotel address on the map."}
@@ -855,22 +883,22 @@ export function BookingPopup({
                     ? ` · saves ~${formatIdr(pickupQuote.savingsVsGrabOneWay)} vs Grab one-way`
                     : ''}
               </p>
-              {meetsAtArena ? (
-                <p className="opacity-80">Or meet at {MEETING_POINT.name} with no transport fee — <a href={MEETING_POINT.mapUrl} target="_blank" rel="noopener noreferrer" className="underline font-semibold text-brand-green">open map</a></p>
+              {meetLabel && meetMapUrl ? (
+                <p className="opacity-80">Or meet at {meetLabel} with no transport fee — <a href={meetMapUrl} target="_blank" rel="noopener noreferrer" className="underline font-semibold text-brand-green">open map</a></p>
               ) : null}
             </div>
             )}
             </>
-            ) : meetsAtArena ? (
+            ) : hasFixedMeet && meetLabel ? (
             <>
             <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
-              <span className="font-bold text-brand-green">Meeting at:</span> {MEETING_POINT.label}, {MEETING_POINT.address}
+              <span className="font-bold text-brand-green">Meeting at:</span> {meetLabel}{meetAddress ? `, ${meetAddress}` : ""}
             </div>
             <div className="rounded-xl border border-brand-green/10 bg-brand-green/5 px-4 py-3 text-xs text-brand-green-light space-y-1.5">
-              <p className="font-bold text-brand-green text-sm">Grab / GoCar vs meet at arena</p>
-              <p>Typical Grab or GoCar one-way Ubud ↔ arena: ~IDR {pickupQuote.grabOneWayTypical.toLocaleString('id-ID')} (est.)</p>
+              <p className="font-bold text-brand-green text-sm">Grab / GoCar vs self-meet</p>
+              <p>Typical Grab or GoCar one-way Ubud ↔ venue: ~IDR {pickupQuote.grabOneWayTypical.toLocaleString('id-ID')} (est.)</p>
               <p>
-                Meet at {MEETING_POINT.name}: <strong className="text-brand-green">IDR 0 transport fee</strong>
+                Meet at {meetLabel}: <strong className="text-brand-green">IDR 0 transport fee</strong>
                 {' '}· saves ~{formatIdr(pickupQuote.grabOneWayTypical)} vs Grab one-way
               </p>
               <p className="opacity-80">Need pickup? Check &quot;I need hotel pickup&quot; above — hotel pickup charge IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')}.</p>

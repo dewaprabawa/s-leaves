@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Calendar, User } from 'lucide-react'
 import { BLOG_POSTS } from '@/data/blog'
+import { getBlogKeywords, keywordsToCsv } from '@/data/activityKeywords'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import ArticleBookingCta from '@/components/ArticleBookingCta'
@@ -11,6 +12,37 @@ import ArticleBookingCta from '@/components/ArticleBookingCta'
 type Props = {
   params: Promise<{ slug: string }>
 }
+
+const BATUR_JEEP_POST_SLUGS = new Set([
+  'mount-batur-sunrise-jeep-tour-guide-2026',
+  'mount-batur-jeep-vs-sunrise-trek',
+  'mount-batur-jeep-pickup-times-canggu-ubud-2026',
+  'mount-batur-sunrise-jeep-tour-price-guide-2026',
+  'mount-batur-jeep-sunrise-vs-sunset',
+  'mount-batur-sit-in-jeep-vs-tracking',
+  'private-kintamani-day-jeep-itinerary',
+])
+
+const COOKING_POST_SLUGS = new Set([
+  'cooking-class-ubud-price-2026-worth-it',
+  'vegetarian-vegan-cooking-class-ubud',
+  'morning-vs-afternoon-ubud-cooking-class',
+  'inside-balinese-cooking-class-pejeng',
+  'cycling-cooking-class-ubud-full-day-itinerary',
+  'what-is-lawar-balinese-dish',
+  'how-traditional-balinese-kitchens-work',
+  'pound-spices-by-hand-not-blender',
+])
+
+const CYCLING_POST_SLUGS = new Set([
+  'is-ubud-cycling-tour-worth-it',
+  'ubud-ricefield-cycling-tour-guide-2026',
+  'pejeng-rice-terrace-cycling-vs-tegallalang',
+  'cycling-cooking-class-ubud-full-day-itinerary',
+  'ebike-vs-pedal-ubud-cycling-tour',
+  'what-to-wear-ubud-ricefield-cycling',
+  'ubud-cycling-tour-for-families',
+])
 
 export async function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({
@@ -24,42 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) return { title: 'Article Not Found' }
 
-  const keywords =
-    post.slug === 'mount-batur-sunrise-jeep-tour-guide-2026' ||
-    post.slug === 'mount-batur-jeep-vs-sunrise-trek' ||
-    post.slug === 'mount-batur-jeep-pickup-times-canggu-ubud-2026' ||
-    post.slug === 'mount-batur-sunrise-jeep-tour-price-guide-2026'
-      ? [
-          'Mount Batur sunrise jeep tour',
-          'Mount Batur jeep vs trek',
-          'Kintamani sunrise jeep',
-          'Batur sunrise without hiking',
-          'Mount Batur jeep pickup time',
-        ]
-      : post.slug === 'cooking-class-ubud-price-2026-worth-it' ||
-          post.slug === 'vegetarian-vegan-cooking-class-ubud' ||
-          post.slug === 'morning-vs-afternoon-ubud-cooking-class'
-        ? [
-            'cooking class Ubud price',
-            'Tumang cooking class',
-            'cooking class Ubud worth it',
-            'vegetarian cooking class Ubud',
-            'Balinese cooking class Ubud',
-          ]
-        : post.slug === 'things-to-do-near-ubud-2026'
-          ? [
-              'things to do near Ubud',
-              'Ubud activities 2026',
-              'Ubud tours prices',
-              'book Bali activity WhatsApp',
-            ]
-          : post.slug === 'full-day-ubud-tour-guide-2026'
-            ? ['full day Ubud tour', 'private Ubud tour price', 'Ubud palace market rice terraces']
-            : post.slug === 'half-day-ubud-tanah-lot-sunset-tour-2026'
-              ? ['Tanah Lot sunset tour from Ubud', 'half day Ubud tour', 'Ubud Tanah Lot private tour']
-              : post.slug === 'luwak-coffee-plantation-umah-kuno-price-2026'
-                ? ['luwak coffee plantation Ubud', 'Umah Kuno luwak coffee', 'luwak coffee price Bali']
-                : undefined
+  const keywords = getBlogKeywords(post.slug)
 
   return {
     title: post.seoTitle ? { absolute: post.seoTitle } : post.title,
@@ -96,24 +93,97 @@ export default async function BlogPostPage({ params }: Props) {
     notFound()
   }
 
-  const isBaturJeepPost =
-    post.slug === 'mount-batur-sunrise-jeep-tour-guide-2026' ||
-    post.slug === 'mount-batur-jeep-vs-sunrise-trek' ||
-    post.slug === 'mount-batur-jeep-pickup-times-canggu-ubud-2026' ||
-    post.slug === 'mount-batur-sunrise-jeep-tour-price-guide-2026'
-
-  const isCookingPost =
-    post.slug === 'cooking-class-ubud-price-2026-worth-it' ||
-    post.slug === 'vegetarian-vegan-cooking-class-ubud' ||
-    post.slug === 'morning-vs-afternoon-ubud-cooking-class' ||
-    post.slug === 'inside-balinese-cooking-class-pejeng' ||
-    post.slug === 'cycling-cooking-class-ubud-full-day-itinerary'
-
-  const isActivityHubPost = post.slug === 'things-to-do-near-ubud-2026'
+  const isBaturJeepPost = BATUR_JEEP_POST_SLUGS.has(post.slug)
+  const isCookingPost = COOKING_POST_SLUGS.has(post.slug)
+  const isCyclingPost = CYCLING_POST_SLUGS.has(post.slug) && !isCookingPost
+  const isAtvPost =
+    post.slug.includes('atv') || post.slug === 'atv-river-tubing-wos-river-bali'
+  const isActivityHubPost =
+    post.slug === 'things-to-do-near-ubud-2026' ||
+    post.slug === 'bali-adventure-packages-prices-2026'
   const isDayTourPost =
     post.slug === 'full-day-ubud-tour-guide-2026' ||
     post.slug === 'half-day-ubud-tanah-lot-sunset-tour-2026'
-  const isCoffeePost = post.slug === 'luwak-coffee-plantation-umah-kuno-price-2026'
+  const isCoffeePost =
+    post.slug === 'luwak-coffee-plantation-umah-kuno-price-2026' ||
+    post.slug === 'luwak-coffee-ethical-sourcing' ||
+    post.slug === 'how-to-spot-ethical-luwak-coffee-in-bali'
+  const isRaftingPost =
+    post.slug === 'bali-whitewater-rafting-near-ubud-guide' ||
+    post.slug === 'rafting-vs-tubing-vs-atv-near-ubud'
+  const isTubingPost =
+    post.slug === 'bali-canyon-tubing-guide-ubud' ||
+    post.slug === 'atv-river-tubing-wos-river-bali'
+  const isMelukatPost = post.slug === 'tirta-empu-melukat-ubud-guide'
+  const articleKeywords = keywordsToCsv(getBlogKeywords(post.slug))
+
+  const articleAbout = isBaturJeepPost
+    ? {
+        '@type': 'TouristTrip',
+        name: 'Private Mount Batur Jeep Tour',
+        url: 'https://www.sekarbaliactivity.com/tours/batur-sunrise-jeep-tour',
+      }
+    : isCookingPost
+      ? {
+          '@type': 'TouristTrip',
+          name: 'Tumang Bali Cooking Class near Ubud',
+          url: 'https://www.sekarbaliactivity.com/tours/balinese-cooking-class',
+        }
+      : isCyclingPost
+        ? {
+            '@type': 'TouristTrip',
+            name: 'Ubud Ricefield Cycling Tour',
+            url: 'https://www.sekarbaliactivity.com/tours/ubud-ricefield-cycling-tour',
+          }
+        : isRaftingPost
+          ? {
+              '@type': 'TouristTrip',
+              name: 'Whitewater Rafting Adventure',
+              url: 'https://www.sekarbaliactivity.com/tours/whitewater-rafting',
+            }
+          : isTubingPost
+            ? {
+                '@type': 'TouristTrip',
+                name: 'Canyon Tubing Adventure',
+                url: 'https://www.sekarbaliactivity.com/tours/canyon-tubing',
+              }
+            : isAtvPost
+              ? {
+                  '@type': 'TouristTrip',
+                  name: 'Bali ATV Quad Bike Adventure near Ubud',
+                  url: 'https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
+                }
+              : isMelukatPost
+                ? {
+                    '@type': 'TouristTrip',
+                    name: 'Tirta Empu Purification (Melukat)',
+                    url: 'https://www.sekarbaliactivity.com/tours/tirta-empu-purification',
+                  }
+                : isActivityHubPost
+                  ? {
+                      '@type': 'ItemList',
+                      name: 'Sekar Bali Activity tours near Ubud',
+                      url: 'https://www.sekarbaliactivity.com/experiences',
+                    }
+                  : isDayTourPost
+                    ? {
+                        '@type': 'TouristTrip',
+                        name:
+                          post.slug === 'full-day-ubud-tour-guide-2026'
+                            ? 'Full Day Ubud Tour'
+                            : 'Half Day Ubud & Tanah Lot Sunset Tour',
+                        url:
+                          post.slug === 'full-day-ubud-tour-guide-2026'
+                            ? 'https://www.sekarbaliactivity.com/tours/full-day-ubud-tour'
+                            : 'https://www.sekarbaliactivity.com/tours/half-day-ubud-tanah-lot-tour',
+                      }
+                    : isCoffeePost
+                      ? {
+                          '@type': 'TouristTrip',
+                          name: 'Luwak Coffee Plantation Experience (Umah Kuno)',
+                          url: 'https://www.sekarbaliactivity.com/tours/luwak-coffee-plantation',
+                        }
+                      : undefined
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -141,61 +211,8 @@ export default async function BlogPostPage({ params }: Props) {
         "url": "https://www.sekarbaliactivity.com/logo.png"
       }
     },
-    ...(isBaturJeepPost
-      ? {
-          about: {
-            "@type": "TouristTrip",
-            name: "Private Mount Batur Jeep Tour",
-            url: "https://www.sekarbaliactivity.com/tours/batur-sunrise-jeep-tour",
-          },
-          keywords:
-            "private Mount Batur jeep, Kintamani, no hike, Lake Batur, Mount Agung, private 4x4, meal included",
-        }
-      : isCookingPost
-        ? {
-            about: {
-              "@type": "TouristTrip",
-              name: "Tumang Bali Cooking Class near Ubud",
-              url: "https://www.sekarbaliactivity.com/tours/balinese-cooking-class",
-            },
-            keywords:
-              "cooking class Ubud, Tumang Bali Cooking Class, vegetarian cooking class, market tour, free Ubud pickup",
-          }
-        : isActivityHubPost
-          ? {
-              about: {
-                "@type": "ItemList",
-                name: "Sekar Bali Activity tours near Ubud",
-                url: "https://www.sekarbaliactivity.com/experiences",
-              },
-              keywords:
-                "things to do near Ubud, Ubud activities, ATV, cooking class, cycling, rafting, Mount Batur jeep",
-            }
-          : isDayTourPost
-            ? {
-                about: {
-                  "@type": "TouristTrip",
-                  name:
-                    post.slug === "full-day-ubud-tour-guide-2026"
-                      ? "Full Day Ubud Tour"
-                      : "Half Day Ubud & Tanah Lot Sunset Tour",
-                  url:
-                    post.slug === "full-day-ubud-tour-guide-2026"
-                      ? "https://www.sekarbaliactivity.com/tours/full-day-ubud-tour"
-                      : "https://www.sekarbaliactivity.com/tours/half-day-ubud-tanah-lot-tour",
-                },
-                keywords: "Ubud day tour, Tanah Lot sunset, private car Ubud",
-              }
-            : isCoffeePost
-              ? {
-                  about: {
-                    "@type": "TouristTrip",
-                    name: "Luwak Coffee Plantation Experience (Umah Kuno)",
-                    url: "https://www.sekarbaliactivity.com/tours/luwak-coffee-plantation",
-                  },
-                  keywords: "ethical Luwak coffee, Umah Kuno, Tampaksiring, Kopi Luwak",
-                }
-              : {}),
+    ...(articleAbout ? { about: articleAbout } : {}),
+    ...(articleKeywords ? { keywords: articleKeywords } : {}),
   }
 
   const breadcrumbSchema = {

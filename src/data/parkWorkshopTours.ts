@@ -7,6 +7,35 @@ function money(sourceFromIdr: number) {
   return sourceFromIdr + IMPORTED_TICKET_MARKUP_IDR
 }
 
+/** Canonical Bali Safari page — all park packages are price options on this slug. */
+export const BALI_SAFARI_SLUG = "bali-safari-and-marine-park"
+
+export const BALI_SAFARI_LEGACY_SLUGS = [
+  "jungle-hopper-bali-safari-and-marine-park",
+  "dragon-package-bali-safari-and-marine-park",
+  "leopard-package-bali-safari-and-marine-park",
+  "rhino-package-bali-safari-and-marine-park",
+  "elephant-back-safari-package-bali-safari-and-marine-park",
+  "night-safari-package-bali-safari-and-marine-park",
+] as const
+
+export const BALI_SAFARI_PRICES = {
+  hopper: money(800_000),
+  dragon: money(1_100_000),
+  night: money(1_100_000),
+  elephant: money(1_250_000),
+  leopard: money(1_600_000),
+  rhino: money(2_100_000),
+} as const
+
+export function isBaliSafariSlug(slug: string): boolean {
+  return slug === BALI_SAFARI_SLUG || (BALI_SAFARI_LEGACY_SLUGS as readonly string[]).includes(slug)
+}
+
+export function resolveBaliSafariSlug(slug: string): string {
+  return isBaliSafariSlug(slug) ? BALI_SAFARI_SLUG : slug
+}
+
 function hero(slug: string, alt: string) {
   return {
     url: `/images/adventures/${slug}.jpg`,
@@ -63,8 +92,12 @@ function ticketTour(opts: {
   notIncluded: string[]
   itinerary: { time: string; title: string; description: string }[]
   extraFaq?: { question: string; answer: string }
+  activityOptions?: Tour["activityOptions"]
+  /** Override the /images/adventures/{slug}.jpg filename when slugs were merged. */
+  imageSlug?: string
 }): Tour {
   const basePrice = money(opts.sourcePrice)
+  const image = hero(opts.imageSlug ?? opts.slug, opts.title)
   return {
     id: opts.slug,
     title: opts.title,
@@ -77,8 +110,8 @@ function ticketTour(opts: {
     basePrice,
     seoTitle: opts.seoTitle,
     seoDescription: opts.seoDescription,
-    heroImage: hero(opts.slug, opts.title),
-    gallery: [hero(opts.slug, opts.title)],
+    heroImage: image,
+    gallery: [image],
     shortDescription: opts.shortDescription,
     fullDescription: opts.fullDescription,
     highlights: opts.highlights,
@@ -91,6 +124,7 @@ function ticketTour(opts: {
     addons: [],
     faqs: ticketFaqs(opts.slug, opts.title, basePrice, opts.extraFaq),
     reviews: [],
+    activityOptions: opts.activityOptions,
   }
 }
 
@@ -172,220 +206,92 @@ WhatsApp date, session (AM/PM), and hotel area.`,
     },
   }),
   ticketTour({
-    slug: "night-safari-package-bali-safari-and-marine-park",
-    title: "Night Safari — Bali Safari and Marine Park",
-    seoTitle: "Bali Safari Night Safari | From IDR 1.3M",
+    slug: BALI_SAFARI_SLUG,
+    title: "Bali Safari and Marine Park",
+    seoTitle: "Bali Safari Tickets | From IDR 1M",
     seoDescription:
-      "Bali Safari night package from IDR 1,300,000: walking safari, night journey, BBQ dinner, Afrika show. After 6 PM. WhatsApp booking.",
+      "Bali Safari packages from IDR 1,000,000: Jungle Hopper, Dragon, Leopard, Rhino, elephant-back, Night Safari. Pick a price option. WhatsApp.",
     category: "village",
     area: "Gianyar",
     venue: "Bali Safari and Marine Park",
-    duration: "Evening (after 6 PM)",
-    sourcePrice: 1_100_000,
-    shortDescription:
-      "After-dark Bali Safari: walking safari, one night-safari journey, BBQ dinner, Afrika show. From IDR 1,300,000. Shuttle or driver quoted.",
-    fullDescription: `**Night Safari at Bali Safari and Marine Park** is an evening ticket: welcome drink, walking safari, one night-safari journey, BBQ dinner at Nkuchiro, the Afrika Rhythm of Fire show, and a wildlife encounter. Valid after 6 PM.
-
-We book the park package. A venue shuttle runs from published south-Bali / Ubud points on some dates — or we quote a private driver. Confirm pickup on WhatsApp.`,
-    highlights: [
-      "Night safari journey after 6 PM",
-      "BBQ dinner included",
-      "Walking safari + fire show",
-      "Shuttle or private driver quoted",
-    ],
-    included: [
-      "Welcome drink",
-      "Walking safari",
-      "Night safari journey (1×)",
-      "BBQ dinner",
-      "Afrika Rhythm of Fire show",
-      "Tax as charged by the park",
-    ],
-    notIncluded: ["Private hotel pickup unless quoted", "Drinks beyond the welcome drink"],
-    itinerary: [
-      { time: "Afternoon / dusk", title: "Transfer", description: "Park shuttle window or private driver — confirm the day before." },
-      { time: "After 18:00", title: "Night safari + dinner", description: "Walking trail, night journey, BBQ, show." },
-    ],
-  }),
-  ticketTour({
-    slug: "rhino-package-bali-safari-and-marine-park",
-    title: "Rhino Package — Bali Safari and Marine Park",
-    seoTitle: "Bali Safari Rhino Package | From IDR 2.3M",
-    seoDescription:
-      "Bali Safari Rhino package from IDR 2,300,000: unlimited safari, shows, 30-min elephant ride, Agung platinum seat, lunch, waterpark.",
-    category: "village",
-    area: "Gianyar",
-    venue: "Bali Safari and Marine Park",
-    duration: "1 day",
-    sourcePrice: 2_100_000,
-    shortDescription:
-      "Top-tier Bali Safari day: unlimited safari line, shows, 30-minute elephant ride, Agung platinum seat, Tsavo lunch, waterpark. From IDR 2,300,000.",
-    fullDescription: `The **Rhino package** is the fullest Bali Safari day we book: welcome drink, unlimited + express safari journey, aquarium, animal / harimau / elephant shows, a **30-minute elephant ride**, Bali Agung **platinum** seat, lunch at Tsavo Lion, waterpark, one park photo, souvenir.
-
-We book the ticket. Pickup is shuttle or a quoted driver — not assumed in the from-price.`,
-    highlights: [
-      "Unlimited safari journey",
-      "30-minute elephant ride",
-      "Agung show platinum seat",
-      "Lunch + waterpark",
-    ],
-    included: [
-      "Welcome drink",
-      "Unlimited safari journey (express line)",
-      "Aquarium and listed shows",
-      "Elephant ride 30 minutes",
-      "Bali Agung platinum seat",
-      "Lunch at Tsavo Lion",
-      "Waterpark, 1 park photo, souvenir",
-    ],
-    notIncluded: ["Private hotel pickup unless quoted"],
-    itinerary: [
-      { time: "Morning", title: "Enter the park", description: "Safari line first while it is cooler." },
-      { time: "Midday", title: "Shows + lunch", description: "Agung platinum seating and Tsavo lunch on the park clock." },
-      { time: "Afternoon", title: "Waterpark / ride", description: "30-minute elephant ride slot as assigned." },
-    ],
-  }),
-  ticketTour({
-    slug: "leopard-package-bali-safari-and-marine-park",
-    title: "Leopard Package — Bali Safari and Marine Park",
-    seoTitle: "Bali Safari Leopard Package | From IDR 1.8M",
-    seoDescription:
-      "Bali Safari Leopard package from IDR 1,800,000: unlimited safari, 10-min elephant ride, Agung gold seat, Uma lunch, waterpark.",
-    category: "village",
-    area: "Gianyar",
-    venue: "Bali Safari and Marine Park",
-    duration: "1 day",
-    sourcePrice: 1_600_000,
-    shortDescription:
-      "Bali Safari Leopard day: unlimited safari, 10-minute elephant ride, Agung gold seat, Uma lunch, waterpark. From IDR 1,800,000.",
-    fullDescription: `The **Leopard package** sits under Rhino: unlimited safari, aquarium, shows, a **10-minute elephant ride**, Bali Agung **gold** seat, lunch at Uma, waterpark, one photo, souvenir.
-
-WhatsApp date and guest count. Pickup quoted.`,
-    highlights: [
-      "Unlimited safari journey",
-      "10-minute elephant ride",
-      "Agung gold seat + Uma lunch",
-      "Waterpark included",
-    ],
-    included: [
-      "Welcome drink",
-      "Unlimited safari journey",
-      "Shows + aquarium",
-      "Elephant ride 10 minutes",
-      "Bali Agung gold seat",
-      "Lunch at Uma",
-      "Waterpark, 1 park photo, souvenir",
-    ],
-    notIncluded: ["Private hotel pickup unless quoted"],
-    itinerary: [
-      { time: "Morning", title: "Safari line", description: "Unlimited / express safari while it is cooler." },
-      { time: "Midday", title: "Shows + Uma lunch", description: "Gold seating at Bali Agung." },
-      { time: "Afternoon", title: "Waterpark", description: "10-minute elephant ride on the park slot." },
-    ],
-  }),
-  ticketTour({
-    slug: "elephant-back-safari-package-bali-safari-and-marine-park",
-    title: "Elephant Back Safari — Bali Safari and Marine Park",
-    seoTitle: "Bali Safari Elephant Ride | From IDR 1.45M",
-    seoDescription:
-      "Bali Safari elephant-back package from IDR 1,450,000: safari journey, shows, 30-minute elephant ride. Pickup quoted on WhatsApp.",
-    category: "village",
-    area: "Gianyar",
-    venue: "Bali Safari and Marine Park",
-    duration: "1 day",
-    sourcePrice: 1_250_000,
-    shortDescription:
-      "Safari journey plus a 30-minute elephant ride and the listed shows. From IDR 1,450,000. No Agung lunch in this ticket.",
-    fullDescription: `The **elephant-back safari** ticket is the ride-focused day: welcome drink, unlimited safari, aquarium, animal / harimau / elephant shows, **30-minute elephant ride**, souvenir.
-
-Lunch, Agung show seats, and waterpark are **not** in this package — use Leopard or Rhino if you want those. Pickup quoted.`,
-    highlights: [
-      "30-minute elephant ride",
-      "Unlimited safari journey",
-      "Listed animal shows",
-      "No lunch assumed",
-    ],
-    included: [
-      "Welcome drink",
-      "Unlimited safari journey",
-      "Aquarium and listed shows",
-      "Elephant ride 30 minutes",
-      "Souvenir",
-    ],
-    notIncluded: ["Lunch", "Bali Agung show seat", "Waterpark", "Private pickup unless quoted"],
-    itinerary: [
-      { time: "Morning", title: "Safari", description: "Journey first." },
-      { time: "Assigned slot", title: "Elephant ride", description: "30 minutes as the park schedules it." },
-    ],
-  }),
-  ticketTour({
-    slug: "dragon-package-bali-safari-and-marine-park",
-    title: "Dragon Package — Bali Safari and Marine Park",
-    seoTitle: "Bali Safari Dragon Package | From IDR 1.3M",
-    seoDescription:
-      "Bali Safari Dragon package from IDR 1,300,000: one safari journey, shows, Agung silver seat, Uma lunch, waterpark.",
-    category: "village",
-    area: "Gianyar",
-    venue: "Bali Safari and Marine Park",
-    duration: "1 day",
-    sourcePrice: 1_100_000,
-    shortDescription:
-      "Value Bali Safari day: one safari journey, shows, Agung silver seat, Uma lunch, waterpark. From IDR 1,300,000. No elephant ride.",
-    fullDescription: `The **Dragon package** is the lunch-and-show day **without** an elephant ride: one safari journey, aquarium, shows, Bali Agung **silver** seat, Uma lunch, waterpark.
-
-Upgrade to Leopard or Rhino if you want the ride. Pickup quoted.`,
-    highlights: [
-      "One safari journey",
-      "Agung silver seat",
-      "Uma lunch + waterpark",
-      "No elephant ride in this ticket",
-    ],
-    included: [
-      "Safari journey (1×)",
-      "Aquarium and listed shows",
-      "Bali Agung silver seat",
-      "Lunch at Uma",
-      "Waterpark",
-    ],
-    notIncluded: ["Elephant ride", "Private pickup unless quoted"],
-    itinerary: [
-      { time: "Morning", title: "Safari 1×", description: "Single journey — not the unlimited line." },
-      { time: "Midday", title: "Show + lunch", description: "Silver Agung seat and Uma." },
-    ],
-  }),
-  ticketTour({
-    slug: "jungle-hopper-bali-safari-and-marine-park",
-    title: "Jungle Hopper — Bali Safari and Marine Park",
-    seoTitle: "Bali Safari Jungle Hopper | From IDR 1M",
-    seoDescription:
-      "Bali Safari Jungle Hopper from IDR 1,000,000: one safari journey, shows, Agung silver seat, waterpark, afternoon tea. WhatsApp.",
-    category: "village",
-    area: "Gianyar",
-    venue: "Bali Safari and Marine Park",
-    duration: "1 day",
+    duration: "1 day or evening",
     sourcePrice: 800_000,
     shortDescription:
-      "Entry-level Bali Safari day: one safari journey, shows, Agung silver seat, waterpark, Uma afternoon tea. From IDR 1,000,000.",
-    fullDescription: `**Jungle Hopper** is the lightest full-park day we book: one safari journey, aquarium, shows, Bali Agung silver seat, waterpark, afternoon tea at Uma. No lunch platter and no elephant ride.
+      "One Bali Safari ticket with six price options: Jungle Hopper from IDR 1,000,000 up to Rhino IDR 2,300,000, plus Night Safari. Pickup quoted.",
+    fullDescription: `**Bali Safari and Marine Park** is one Gianyar park. We book the published ticket — pick the **price option** that matches the day you want. We do not operate the park.
 
-Good for a shorter clock. Pickup quoted.`,
+### 2026 packages (per person)
+| Package | Price | Safari | Elephant | Meal | Notes |
+|--------|-------|--------|----------|------|-------|
+| Jungle Hopper | **IDR ${BALI_SAFARI_PRICES.hopper.toLocaleString("id-ID")}** | 1× | No | Afternoon tea | Lightest day · waterpark · silver Agung |
+| Dragon | **IDR ${BALI_SAFARI_PRICES.dragon.toLocaleString("id-ID")}** | 1× | No | Uma lunch | Waterpark · silver Agung |
+| Night Safari | **IDR ${BALI_SAFARI_PRICES.night.toLocaleString("id-ID")}** | 1× night | No | BBQ dinner | After 6 PM · walking safari + fire show |
+| Elephant-back | **IDR ${BALI_SAFARI_PRICES.elephant.toLocaleString("id-ID")}** | Unlimited | **30 min** | No | Ride-focused · no lunch or waterpark |
+| Leopard | **IDR ${BALI_SAFARI_PRICES.leopard.toLocaleString("id-ID")}** | Unlimited | **10 min** | Uma lunch | Gold Agung · waterpark |
+| Rhino | **IDR ${BALI_SAFARI_PRICES.rhino.toLocaleString("id-ID")}** | Unlimited | **30 min** | Tsavo lunch | Platinum Agung · waterpark |
+
+Hotel pickup is **not** in the from-price — park shuttle on some dates, or a quoted private driver. This is **not** [Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park) and **not** [Taro lodge](/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge).
+
+WhatsApp **date, guest count, hotel area, and the package name**. No payment to inquire.`,
     highlights: [
-      "From IDR 1,000,000",
-      "One safari journey + shows",
-      "Waterpark + afternoon tea",
-      "No elephant ride",
+      "Six park tickets on one page — Jungle Hopper, Dragon, Leopard, Rhino, elephant-back, Night Safari",
+      "From IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino)",
+      "Day packages or Night Safari after 6 PM",
+      "Pickup quoted — shuttle or private driver",
     ],
     included: [
-      "Safari journey (1×)",
-      "Aquarium and listed shows",
-      "Bali Agung silver seat",
-      "Waterpark",
-      "Afternoon tea at Uma",
+      "The park package you select (Hopper / Dragon / Leopard / Rhino / elephant-back / Night)",
+      "Listed safari journey, shows, and meal for that option",
+      "Elephant ride only on Leopard, Rhino, or elephant-back",
+      "Waterpark on Hopper, Dragon, Leopard, and Rhino",
     ],
-    notIncluded: ["Sit-down lunch", "Elephant ride", "Private pickup unless quoted"],
+    notIncluded: [
+      "Hotel pickup unless quoted (park shuttle on some dates)",
+      "Items not listed on the package you choose",
+      "Bali Zoo or Taro lodge tickets (different venues)",
+    ],
     itinerary: [
-      { time: "Morning", title: "Safari 1×", description: "Single journey." },
-      { time: "Afternoon", title: "Shows + tea", description: "Waterpark and Uma tea." },
+      { time: "Morning or dusk", title: "Transfer", description: "Park shuttle window or private driver — confirm the day before. Night Safari guests leave later." },
+      { time: "Park day", title: "Safari + shows", description: "Hopper / Dragon: one safari journey. Leopard / Rhino / elephant-back: unlimited line first while it is cooler." },
+      { time: "Midday or evening", title: "Meal + extras", description: "Tea, Uma lunch, Tsavo lunch, or BBQ dinner depending on the option. Elephant ride and waterpark only on listed packages." },
+    ],
+    imageSlug: "jungle-hopper-bali-safari-and-marine-park",
+    extraFaq: {
+      question: "Which Bali Safari package should I book?",
+      answer:
+        "Jungle Hopper is the lightest day (tea, no elephant). Dragon adds Uma lunch. Elephant-back is the 30-minute ride without lunch. Leopard is a 10-minute ride plus lunch. Rhino is the fullest day (30-minute ride, platinum Agung, Tsavo lunch). Night Safari is an evening ticket after 6 PM — not a day upgrade. Pick the option on this page or say the name on WhatsApp.",
+    },
+    activityOptions: [
+      {
+        name: "Jungle Hopper",
+        priceDiff: 0,
+        description: `IDR ${BALI_SAFARI_PRICES.hopper.toLocaleString("id-ID")} · 1× safari · silver Agung · waterpark · afternoon tea`,
+      },
+      {
+        name: "Dragon Package",
+        priceDiff: BALI_SAFARI_PRICES.dragon - BALI_SAFARI_PRICES.hopper,
+        description: `IDR ${BALI_SAFARI_PRICES.dragon.toLocaleString("id-ID")} · 1× safari · silver Agung · Uma lunch · waterpark`,
+      },
+      {
+        name: "Night Safari",
+        priceDiff: BALI_SAFARI_PRICES.night - BALI_SAFARI_PRICES.hopper,
+        description: `IDR ${BALI_SAFARI_PRICES.night.toLocaleString("id-ID")} · after 6 PM · night journey · BBQ dinner · fire show`,
+      },
+      {
+        name: "Elephant Back Safari",
+        priceDiff: BALI_SAFARI_PRICES.elephant - BALI_SAFARI_PRICES.hopper,
+        description: `IDR ${BALI_SAFARI_PRICES.elephant.toLocaleString("id-ID")} · unlimited safari · 30-min elephant · no lunch`,
+      },
+      {
+        name: "Leopard Package",
+        priceDiff: BALI_SAFARI_PRICES.leopard - BALI_SAFARI_PRICES.hopper,
+        description: `IDR ${BALI_SAFARI_PRICES.leopard.toLocaleString("id-ID")} · unlimited safari · 10-min elephant · gold Agung · Uma lunch`,
+      },
+      {
+        name: "Rhino Package",
+        priceDiff: BALI_SAFARI_PRICES.rhino - BALI_SAFARI_PRICES.hopper,
+        description: `IDR ${BALI_SAFARI_PRICES.rhino.toLocaleString("id-ID")} · unlimited safari · 30-min elephant · platinum Agung · Tsavo lunch`,
+      },
     ],
   }),
   ticketTour({

@@ -67,7 +67,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Tanah Lot sunset guide', href: '/blog/half-day-ubud-tanah-lot-sunset-tour-2026' },
   { label: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
   { label: 'Bali Bird Park', href: '/tours/bali-bird-park' },
-  { label: 'Bali Safari Jungle Hopper', href: '/tours/jungle-hopper-bali-safari-and-marine-park' },
+  { label: 'Bali Safari tickets', href: '/tours/bali-safari-and-marine-park' },
   { label: 'Bali Canyoning', href: '/tours/canyoning' },
   { label: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour' },
   { label: 'Kintamani dirt bike', href: '/tours/dirt-bike-kintamani-black-lava' },

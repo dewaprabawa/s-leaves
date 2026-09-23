@@ -1,3 +1,5 @@
+import { resolveBaliSafariSlug } from "@/data/parkWorkshopTours"
+
 /**
  * Related blog guides per tour slug — strengthens internal linking / reduces orphans.
  */
@@ -447,45 +449,20 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Bali Safari packages', href: '/blog/bali-safari-packages-compared-2026', blurb: 'If you wanted a safari journey instead.' },
     { title: 'Taro jungle ride + lunch', href: '/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge', blurb: 'Quieter lodge stroll near Ubud.' },
   ],
-  'jungle-hopper-bali-safari-and-marine-park': [
-    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Hopper 1M · Dragon 1.3M · Leopard 1.8M · Rhino 2.3M.' },
+  'bali-safari-and-marine-park': [
+    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Hopper 1M · Dragon 1.3M · Leopard 1.8M · Rhino 2.3M — pick the option on this page.' },
     { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Three elephant venues, three clocks.' },
-    { title: 'Upgrade to Dragon (lunch)', href: '/tours/dragon-package-bali-safari-and-marine-park', blurb: 'Same park, Uma lunch instead of tea.' },
-  ],
-  'dragon-package-bali-safari-and-marine-park': [
-    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Dragon sits between Hopper and Leopard.' },
-    { title: 'Jungle Hopper (cheaper, tea)', href: '/tours/jungle-hopper-bali-safari-and-marine-park', blurb: 'Skip lunch if you want the lightest day.' },
-    { title: 'Leopard (10-min ride)', href: '/tours/leopard-package-bali-safari-and-marine-park', blurb: 'Add a short elephant ride + gold Agung.' },
-  ],
-  'leopard-package-bali-safari-and-marine-park': [
-    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Leopard vs Rhino: 10 min vs 30 min ride.' },
-    { title: 'Rhino (30-min ride)', href: '/tours/rhino-package-bali-safari-and-marine-park', blurb: 'Platinum Agung + Tsavo lunch.' },
-    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Confirm you want Gianyar, not Taro.' },
-  ],
-  'rhino-package-bali-safari-and-marine-park': [
-    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Rhino is the fullest day ticket we book.' },
-    { title: 'Leopard (shorter ride)', href: '/tours/leopard-package-bali-safari-and-marine-park', blurb: '10-minute ride + Uma lunch if Rhino is too long.' },
-    { title: 'Elephant-back only', href: '/tours/elephant-back-safari-package-bali-safari-and-marine-park', blurb: '30-minute ride without lunch or waterpark.' },
-  ],
-  'elephant-back-safari-package-bali-safari-and-marine-park': [
-    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Ride-focused day — lunch not included.' },
-    { title: 'Taro jungle ride + lunch', href: '/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge', blurb: 'Different venue, lunch included.' },
-    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Three parks that all say “elephant”.' },
-  ],
-  'night-safari-package-bali-safari-and-marine-park': [
-    { title: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026', blurb: 'Night is a different clock — not a day upgrade.' },
-    { title: 'Taro night dinner', href: '/tours/night-safari-dinner-under-the-stars-elephant-safari-park-lodge', blurb: 'Lakeside dinner at a different lodge.' },
-    { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Pick the evening venue on purpose.' },
+    { title: 'Taro jungle ride + lunch', href: '/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge', blurb: 'Quieter lodge stroll near Ubud — not this park.' },
   ],
   'jungle-safari-ride-and-lunch-elephant-safari-park-lodge': [
     { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Taro is the Ubud-area lodge, not Gianyar Safari.' },
     { title: 'Taro night dinner', href: '/tours/night-safari-dinner-under-the-stars-elephant-safari-park-lodge', blurb: 'Same lodge, evening ticket.' },
-    { title: 'Bali Safari elephant-back', href: '/tours/elephant-back-safari-package-bali-safari-and-marine-park', blurb: '30-minute ride at the big safari park.' },
+    { title: 'Bali Safari tickets', href: '/tours/bali-safari-and-marine-park', blurb: 'Hopper to Rhino plus Night Safari — pick a price option.' },
   ],
   'night-safari-dinner-under-the-stars-elephant-safari-park-lodge': [
     { title: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro', blurb: 'Taro dinner ≠ Bali Safari Night Safari.' },
     { title: 'Taro jungle ride + lunch', href: '/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge', blurb: 'Daytime ticket at the same lodge.' },
-    { title: 'Bali Safari Night Safari', href: '/tours/night-safari-package-bali-safari-and-marine-park', blurb: 'BBQ + night journey in Gianyar.' },
+    { title: 'Bali Safari Night Safari', href: '/tours/bali-safari-and-marine-park', blurb: 'BBQ + night journey — evening option on the Safari page.' },
   ],
   canyoning: [
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'Ropes vs sit-on-tube vs Polaris laps.' },
@@ -632,9 +609,9 @@ export const TOUR_HOST_NOTES: Record<
     title: 'From our booking desk',
     body: 'We book Bali Bird Park in Batubulan the same way we book Swing Heaven — WhatsApp date and guest count, then we confirm the ticket. We do not run the park. Pickup is a quoted driver or self-meet at the gate, never assumed in the from-price.',
   },
-  'jungle-hopper-bali-safari-and-marine-park': {
+  'bali-safari-and-marine-park': {
     title: 'From our booking desk',
-    body: 'Safari package names are easy to mix up. Tell us Hopper, Dragon, Leopard, Rhino, elephant-back, or night and we will not upsell you a ride you did not ask for. We book the published park ticket; pickup is shuttle or a quoted car.',
+    body: 'Safari package names are easy to mix up. Pick Hopper, Dragon, Leopard, Rhino, elephant-back, or Night on this page — or say the name on WhatsApp — and we will not upsell you a ride you did not ask for. We book the published park ticket; pickup is shuttle or a quoted car.',
   },
   canyoning: {
     title: 'From our booking desk',
@@ -643,9 +620,9 @@ export const TOUR_HOST_NOTES: Record<
 }
 
 export function getTourRelatedGuides(slug: string): TourRelatedGuide[] {
-  return TOUR_RELATED_GUIDES[slug] ?? []
+  return TOUR_RELATED_GUIDES[resolveBaliSafariSlug(slug)] ?? []
 }
 
 export function getTourHostNote(slug: string) {
-  return TOUR_HOST_NOTES[slug]
+  return TOUR_HOST_NOTES[resolveBaliSafariSlug(slug)]
 }

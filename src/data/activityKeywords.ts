@@ -14,6 +14,8 @@
  * locker/shower claims, ATV minimum-age numbers.
  */
 
+import { resolveBaliSafariSlug } from '@/data/parkWorkshopTours'
+
 export const BRAND_KEYWORD = 'Sekar Bali Activity'
 
 export type ActivityKeywordSlug =
@@ -427,35 +429,37 @@ export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
     ],
     compare: ['Bali Zoo vs Bali Safari', 'Bali Zoo vs Taro elephant'],
   },
-  'night-safari-package-bali-safari-and-marine-park': {
-    head: ['Bali Safari night safari', 'night safari Bali', 'Bali Safari evening ticket'],
-    book: ['Bali Safari night package price', 'Bali Safari night safari from Ubud'],
-    compare: ['Bali Safari night vs day', 'Bali Safari night vs Taro dinner'],
-  },
-  'rhino-package-bali-safari-and-marine-park': {
-    head: ['Bali Safari Rhino package', 'Bali Safari and Marine Park'],
-    book: ['Bali Safari Rhino package price', 'Bali Safari unlimited safari'],
-    compare: ['Rhino vs Leopard Bali Safari'],
-  },
-  'leopard-package-bali-safari-and-marine-park': {
-    head: ['Bali Safari Leopard package'],
-    book: ['Bali Safari Leopard package price', 'Bali Safari elephant ride 10 minutes'],
-    compare: ['Leopard vs Dragon Bali Safari'],
-  },
-  'elephant-back-safari-package-bali-safari-and-marine-park': {
-    head: ['Bali Safari elephant ride', 'elephant back safari Bali'],
-    book: ['Bali Safari elephant ride price', '30 minute elephant ride Bali Safari'],
-    compare: ['elephant ride Bali Safari vs Taro'],
-  },
-  'dragon-package-bali-safari-and-marine-park': {
-    head: ['Bali Safari Dragon package'],
-    book: ['Bali Safari Dragon package price', 'Bali Safari with lunch'],
-    compare: ['Dragon vs Jungle Hopper Bali Safari'],
-  },
-  'jungle-hopper-bali-safari-and-marine-park': {
-    head: ['Bali Safari Jungle Hopper', 'Bali Safari ticket', 'Bali Safari from Ubud'],
-    book: ['Bali Safari Jungle Hopper price', 'cheapest Bali Safari ticket'],
-    compare: ['Jungle Hopper vs Dragon Bali Safari'],
+  'bali-safari-and-marine-park': {
+    head: [
+      'Bali Safari ticket',
+      'Bali Safari and Marine Park',
+      'Bali Safari Jungle Hopper',
+      'Bali Safari from Ubud',
+      'Bali Safari night safari',
+      'Bali Safari elephant ride',
+    ],
+    book: [
+      'Bali Safari Jungle Hopper price',
+      'cheapest Bali Safari ticket',
+      'Bali Safari Dragon package price',
+      'Bali Safari with lunch',
+      'Bali Safari Leopard package price',
+      'Bali Safari elephant ride 10 minutes',
+      'Bali Safari Rhino package price',
+      'Bali Safari unlimited safari',
+      'Bali Safari elephant ride price',
+      '30 minute elephant ride Bali Safari',
+      'Bali Safari night package price',
+      'Bali Safari night safari from Ubud',
+    ],
+    compare: [
+      'Jungle Hopper vs Dragon Bali Safari',
+      'Leopard vs Dragon Bali Safari',
+      'Rhino vs Leopard Bali Safari',
+      'Bali Safari night vs day',
+      'Bali Safari night vs Taro dinner',
+      'elephant ride Bali Safari vs Taro',
+    ],
   },
   canyoning: {
     head: ['Bali canyoning', 'canyoning Ubud', 'Kalimudah canyon Bali'],
@@ -529,17 +533,19 @@ export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
 }
 
 export function getKeywordCluster(slug: string): KeywordCluster | undefined {
-  if (slug in KEYWORD_CLUSTERS) {
-    return KEYWORD_CLUSTERS[slug as ActivityKeywordSlug]
+  const resolved = resolveBaliSafariSlug(slug)
+  if (resolved in KEYWORD_CLUSTERS) {
+    return KEYWORD_CLUSTERS[resolved as ActivityKeywordSlug]
   }
-  return PARK_WORKSHOP_KEYWORD_CLUSTERS[slug]
+  return PARK_WORKSHOP_KEYWORD_CLUSTERS[resolved]
 }
 
 export function getActivityKeywords(slug: string): string[] | undefined {
-  if (slug in ACTIVITY_KEYWORDS) {
-    return ACTIVITY_KEYWORDS[slug as ActivityKeywordSlug]
+  const resolved = resolveBaliSafariSlug(slug)
+  if (resolved in ACTIVITY_KEYWORDS) {
+    return ACTIVITY_KEYWORDS[resolved as ActivityKeywordSlug]
   }
-  const extra = PARK_WORKSHOP_KEYWORD_CLUSTERS[slug]
+  const extra = PARK_WORKSHOP_KEYWORD_CLUSTERS[resolved]
   return extra ? flattenCluster(extra) : undefined
 }
 

@@ -19,6 +19,36 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tours/jungle-hopper-bali-safari-and-marine-park',
+        destination: '/tours/bali-safari-and-marine-park',
+        permanent: true,
+      },
+      {
+        source: '/tours/dragon-package-bali-safari-and-marine-park',
+        destination: '/tours/bali-safari-and-marine-park',
+        permanent: true,
+      },
+      {
+        source: '/tours/leopard-package-bali-safari-and-marine-park',
+        destination: '/tours/bali-safari-and-marine-park',
+        permanent: true,
+      },
+      {
+        source: '/tours/rhino-package-bali-safari-and-marine-park',
+        destination: '/tours/bali-safari-and-marine-park',
+        permanent: true,
+      },
+      {
+        source: '/tours/elephant-back-safari-package-bali-safari-and-marine-park',
+        destination: '/tours/bali-safari-and-marine-park',
+        permanent: true,
+      },
+      {
+        source: '/tours/night-safari-package-bali-safari-and-marine-park',
+        destination: '/tours/bali-safari-and-marine-park',
+        permanent: true,
+      },
+      {
         source: '/blog/mount-batur-jeep-vs-trekking',
         destination: '/blog/mount-batur-jeep-vs-sunrise-trek',
         permanent: true,

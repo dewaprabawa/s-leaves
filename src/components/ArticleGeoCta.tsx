@@ -72,7 +72,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'swing-heaven-bongkasa-location': 'swing-heaven-bali',
   'flying-dress-hire-bali-swing': 'swing-heaven-bali',
   'bali-swing-with-lunch-ubud': 'swing-heaven-bali',
-  'bali-safari-packages-compared-2026': 'jungle-hopper-bali-safari-and-marine-park',
+  'bali-safari-packages-compared-2026': 'bali-safari-and-marine-park',
   'bali-zoo-vs-bali-safari-vs-taro': 'elephant-mud-fun-at-bali-zoo-park',
   'bali-bird-park-from-ubud-2026': 'bali-bird-park',
   'bali-canyoning-vs-tubing-vs-buggies': 'canyoning',

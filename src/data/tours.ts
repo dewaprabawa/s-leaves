@@ -2131,12 +2131,16 @@ Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-m
     seoDescription:
       "Family, girls trip, or any private group. Consultation only on WhatsApp — no booking form. We quote the driver, Swing Heaven, jeep, cooking, cycling. Clubs and spa stay yours.",
     heroImage: {
-      url: "/images/adventures/swing-heaven-ayung.jpg",
-      alt: "Private group photo stop at Swing Heaven over the Ayung River on a custom Bali itinerary",
+      url: "/images/adventures/private-bali-itinerary.jpg",
+      alt: "Guest on a Bali clifftop looking over turquoise water on a private itinerary",
       width: 1600,
       height: 1000,
     },
     gallery: [
+      {
+        url: "/images/adventures/private-bali-itinerary.jpg",
+        alt: "Guest on a Bali clifftop looking over turquoise water on a private itinerary",
+      },
       {
         url: "/images/adventures/swing-heaven-ayung.jpg",
         alt: "Jungle swing photo stop on a private Bali itinerary at Swing Heaven Bongkasa",

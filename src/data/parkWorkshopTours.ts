@@ -605,6 +605,7 @@ Studio confirmed on WhatsApp. Pickup quoted.`,
   }),
   ticketTour({
     slug: "batik-class",
+    imageSlug: "batik-class-canting",
     title: "Batik Class",
     seoTitle: "Ubud Batik Class | From IDR 650K",
     seoDescription:

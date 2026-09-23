@@ -47,6 +47,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Why we are not the Kuber tunnel or Dragon Cave routes.',
     },
     {
+      title: 'Swing Heaven (same Abiansemal district)',
+      href: '/tours/swing-heaven-bali',
+      blurb: 'Bongkasa jungle swing after the Sedang mud track.',
+    },
+    {
       title: 'Private Mount Batur jeep',
       href: '/tours/batur-sunrise-jeep-tour',
       blurb: 'Pre-dawn 4×4, meal included, island-wide pickup — not the summit hike.',
@@ -138,6 +143,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'IDR 630K package vs the 530K ticket.',
     },
     {
+      title: 'Swing Heaven + Tumang cooking',
+      href: '/blog/swing-heaven-cooking-class-ubud',
+      blurb: 'Morning Bongkasa swing, afternoon village kitchen — 980K from-price.',
+    },
+    {
       title: 'Private Mount Batur jeep',
       href: '/tours/batur-sunrise-jeep-tour',
       blurb: 'Jungle-swing photos by day, private Batur sunrise the next morning.',
@@ -163,6 +173,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Cycling + cooking class itinerary',
       href: '/blog/cycling-cooking-class-ubud-full-day-itinerary',
       blurb: 'Full culture day with Tumang afternoon class.',
+    },
+    {
+      title: 'Swing Heaven + cooking (photo day)',
+      href: '/blog/swing-heaven-cooking-class-ubud',
+      blurb: 'If you want jungle-swing photos instead of paddies.',
+    },
+    {
+      title: 'Private Tirta Empul / Beji',
+      href: '/tours/tirta-empu-purification',
+      blurb: 'Holy-spring morning, then keep the afternoon kitchen.',
     },
     {
       title: 'Ubud hotel pickup explained',
@@ -215,6 +235,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Cycling + Tumang cooking itinerary',
       href: '/blog/cycling-cooking-class-ubud-full-day-itinerary',
       blurb: 'Morning paddies, afternoon kitchen.',
+    },
+    {
+      title: 'Swing Heaven + cooking itinerary',
+      href: '/blog/swing-heaven-cooking-class-ubud',
+      blurb: 'Morning Bongkasa jungle swing, afternoon Tumang kitchen.',
+    },
+    {
+      title: 'Private Tirta Empul / Beji',
+      href: '/tours/tirta-empu-purification',
+      blurb: 'Holy-spring morning with shuttle, then this kitchen.',
     },
     {
       title: 'Inside a Balinese cooking class',
@@ -283,6 +313,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/griya-beji-vs-tirta-empul-melukat',
       blurb: 'Waterfall park in Punggul vs the private 1.2M temple morning.',
     },
+    {
+      title: 'Tumang cooking class (afternoon)',
+      href: '/tours/balinese-cooking-class',
+      blurb: 'Kitchen meal after the temple breakfast — lunch is not on this ticket.',
+    },
+    {
+      title: 'Pejeng ricefield cycling',
+      href: '/tours/ubud-ricefield-cycling-tour',
+      blurb: 'Quiet Subak ride if you want paddies instead of a second temple.',
+    },
   ],
   'griya-beji-waterfall': [
     {
@@ -309,6 +349,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Ubud hotel pickup explained',
       href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
       blurb: 'IDR 400K hotel collect or self-meet in Punggul.',
+    },
+    {
+      title: 'Long driver day + kitchen',
+      href: '/blog/long-private-driver-day-ubud-2026',
+      blurb: 'Morning waterfall, afternoon Tumang — pickup rules stay separate.',
+    },
+    {
+      title: 'Private Bali itinerary',
+      href: '/tours/bali-private-itinerary',
+      blurb: 'Family or girls week — consultation only on WhatsApp.',
     },
   ],
   'luwak-coffee-plantation': [
@@ -422,6 +472,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'What to skip on a 6-day trip',
       href: '/blog/what-to-skip-on-a-6-day-bali-itinerary',
       blurb: 'No Penida, no Lovina, no extra temples or mall days.',
+    },
+    {
+      title: 'Long private driver day',
+      href: '/blog/long-private-driver-day-ubud-2026',
+      blurb: 'One 10–14h car from IDR 600K plus cycling+cooking, swing+cooking, or Griya.',
     },
     {
       title: 'Swing Heaven Ubud guide',

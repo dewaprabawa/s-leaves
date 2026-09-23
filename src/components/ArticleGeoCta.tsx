@@ -72,6 +72,16 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'swing-heaven-bongkasa-location': 'swing-heaven-bali',
   'flying-dress-hire-bali-swing': 'swing-heaven-bali',
   'bali-swing-with-lunch-ubud': 'swing-heaven-bali',
+  'swing-heaven-cooking-class-ubud': 'swing-heaven-bali',
+  'griya-beji-waterfall-ubud-guide': 'griya-beji-waterfall',
+  'griya-beji-vs-tirta-empul-melukat': 'griya-beji-waterfall',
+  'palm-reading-bali-griya-beji': 'griya-beji-waterfall',
+  'mental-healing-bali-griya-beji': 'griya-beji-waterfall',
+  'bali-6-day-girls-trip-itinerary-2026': 'bali-private-itinerary',
+  'bali-family-private-itinerary-2026': 'bali-private-itinerary',
+  'bali-private-itinerary-what-we-book-vs-you-book': 'bali-private-itinerary',
+  'what-to-skip-on-a-6-day-bali-itinerary': 'bali-private-itinerary',
+  'long-private-driver-day-ubud-2026': 'bali-private-itinerary',
   'bali-safari-packages-compared-2026': 'bali-safari-and-marine-park',
   'bali-zoo-vs-bali-safari-vs-taro': 'elephant-mud-fun-at-bali-zoo-park',
   'bali-bird-park-from-ubud-2026': 'bali-bird-park',
@@ -107,6 +117,30 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
       updated: COOKING_GEO_UPDATED,
       bookHref: '/book?activity=combo-cycling-cooking',
       bookLabel: 'Book the combo',
+      pairHref: '/tours/balinese-cooking-class',
+      pairLabel: 'Cooking class only',
+    }
+  }
+
+  if (slug === 'long-private-driver-day-ubud-2026') {
+    return {
+      tldr:
+        'A long private driver day with Sekar Bali Activity is one English-speaking car for 10–14 hours from IDR 600,000 (HiAce quoted for 6+), plus published tickets — cycling + cooking (IDR 1,200,000, both free Ubud pickup), Swing Heaven + cooking (IDR 980,000), or Griya Beji waterfall purification (IDR 300,000). Consultation only on WhatsApp — no all-in luxury package, no payment to inquire.',
+      updated: ACTIVITY_GEO_UPDATED,
+      bookHref: '/tours/bali-private-itinerary',
+      bookLabel: 'WhatsApp consultation',
+      pairHref: '/book?activity=combo-cycling-cooking',
+      pairLabel: 'Book cycling + cooking',
+    }
+  }
+
+  if (slug === 'swing-heaven-cooking-class-ubud') {
+    return {
+      tldr:
+        'Sekar Bali Activity books a jungle-swing + kitchen day: morning Swing Heaven in Bongkasa (from IDR 530,000 — not Happy Swing or Tegallalang) then afternoon Tumang Bali Cooking Class (promo IDR 450,000, free Ubud pickup). From-price IDR 980,000 for the two published tickets. One WhatsApp thread — no payment to inquire.',
+      updated: COOKING_GEO_UPDATED,
+      bookHref: '/book?activity=combo-swing-cooking',
+      bookLabel: 'Book swing + cooking',
       pairHref: '/tours/balinese-cooking-class',
       pairLabel: 'Cooking class only',
     }

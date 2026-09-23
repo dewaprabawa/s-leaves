@@ -119,6 +119,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Tumang Bali Cooking Class', url: `${SITE_URL}/tours/balinese-cooking-class` },
   { name: 'Ubud Ricefield Cycling', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour` },
   { name: 'Cycling + Cooking Combo', url: `${SITE_URL}/book?activity=combo-cycling-cooking` },
+  { name: 'Swing Heaven + Cooking Combo', url: `${SITE_URL}/book?activity=combo-swing-cooking` },
   { name: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure` },
   { name: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting` },
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },

@@ -54,7 +54,9 @@ import {
   COOKING_CLASS_STANDARD_PRICE_IDR,
   MELUKAT_PRICE_IDR,
   buildCyclingCookingComboWhatsAppUrl,
+  buildSwingCookingComboWhatsAppUrl,
   getCyclingCookingCombo,
+  getSwingCookingCombo,
 } from "@/data/cultureSales"
 import { GRIYA_BEJI_PURIFICATION_IDR, GRIYA_BEJI_SALES } from "@/data/griyaBeji"
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
@@ -225,6 +227,11 @@ const travelGuides = [
     href: "/blog/cycling-cooking-class-ubud-full-day-itinerary",
   },
   {
+    title: "Swing Heaven + Cooking Class in Ubud",
+    excerpt: "Morning Bongkasa jungle swing from IDR 530K, afternoon Tumang kitchen 450K. Not Happy Swing.",
+    href: "/blog/swing-heaven-cooking-class-ubud",
+  },
+  {
     title: "Inside Tumang Bali Cooking Class",
     excerpt: "Market shopping, 10+ dishes, free Ubud pickup, and what to expect in a hands-on class.",
     href: "/blog/inside-balinese-cooking-class-pejeng",
@@ -245,13 +252,18 @@ const travelGuides = [
     href: "/blog/ubud-hotel-pickup-bali-adventures-explained",
   },
   {
+    title: "Long Private Driver Day near Ubud",
+    excerpt: "One 10–14 hour car from IDR 600K plus cycling + cooking, swing + cooking, or Griya Beji.",
+    href: "/blog/long-private-driver-day-ubud-2026",
+  },
+  {
     title: "Tirta Empu Melukat near Ubud",
     excerpt: "Private holy-spring purification — Tirta Empul or Beji, breakfast included, IDR 1,200,000 / person.",
     href: "/blog/tirta-empu-melukat-ubud-guide",
   },
   {
     title: "Griya Beji Waterfall near Ubud",
-    excerpt: "Punggul waterfall melukat from IDR 300,000 — palm reading 1M, mental healing 1.5M. Not Tirta Empul.",
+    excerpt: "Punggul waterfall purification IDR 300,000 — not Tirta Empul. Pair afternoon cooking on a long driver day.",
     href: "/blog/griya-beji-waterfall-ubud-guide",
   },
   {
@@ -365,6 +377,7 @@ export default function Home() {
   const topPicks = getCatalogTopPicks()
   const packages = getFeaturedPackages()
   const cultureCombo = getCyclingCookingCombo()
+  const swingCookingCombo = getSwingCookingCombo()
 
   const openBooking = (adventureId: string, mixIds: string[] = []) => {
     const setup = bookingSetupForAdventure(adventureId)
@@ -746,6 +759,46 @@ export default function Home() {
                 </a>
                 <Link
                   href="/book?activity=combo-cycling-cooking"
+                  className="inline-flex items-center gap-1 border border-brand-green/20 px-5 py-3 text-sm font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
+                >
+                  Sales page <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </article>
+
+          <article className="mt-4 border border-accent-gold/30 bg-white p-6 md:p-8 flex flex-col md:flex-row md:items-end gap-6">
+            <div className="flex-1 space-y-3">
+              <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark inline-flex items-center gap-2">
+                <Utensils className="w-3.5 h-3.5" />
+                {swingCookingCombo.tagline}
+              </p>
+              <h3 className="font-display text-2xl md:text-3xl font-bold text-brand-green uppercase">
+                {swingCookingCombo.name}
+              </h3>
+              <p className="text-sm text-brand-green-light leading-relaxed max-w-2xl">
+                {swingCookingCombo.description}
+              </p>
+            </div>
+            <div className="shrink-0 space-y-3 md:text-right">
+              <div>
+                <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">From (both)</p>
+                <p className="text-2xl font-bold text-brand-green">
+                  IDR {swingCookingCombo.totalFromIdr.toLocaleString("id-ID")}
+                </p>
+              </div>
+              <div className="flex flex-wrap md:justify-end gap-2">
+                <a
+                  href={buildSwingCookingComboWhatsAppUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-brand-green text-sand px-5 py-3 text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Book swing + kitchen
+                </a>
+                <Link
+                  href="/book?activity=combo-swing-cooking"
                   className="inline-flex items-center gap-1 border border-brand-green/20 px-5 py-3 text-sm font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
                 >
                   Sales page <ArrowRight className="w-4 h-4" />

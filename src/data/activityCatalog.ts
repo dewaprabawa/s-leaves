@@ -5,7 +5,7 @@
  */
 
 import { FEATURED_COMBOS, getComboListPrice } from "@/lib/combos"
-import { getCyclingCookingCombo } from "@/data/cultureSales"
+import { getCyclingCookingCombo, getSwingCookingCombo } from "@/data/cultureSales"
 import {
   TOURS,
   TOUR_CATEGORY_LABELS,
@@ -88,6 +88,7 @@ export function getCatalogTopPicks(): Tour[] {
 
 export function getFeaturedPackages(): PackageCard[] {
   const culture = getCyclingCookingCombo()
+  const swingCooking = getSwingCookingCombo()
   const cultureCard: PackageCard = {
     id: culture.id,
     name: culture.name,
@@ -96,6 +97,16 @@ export function getFeaturedPackages(): PackageCard[] {
     duration: culture.duration,
     priceFrom: culture.totalFromIdr,
     href: '/book?activity=combo-cycling-cooking',
+    kind: 'culture',
+  }
+  const swingCookingCard: PackageCard = {
+    id: swingCooking.id,
+    name: swingCooking.name,
+    tagline: swingCooking.tagline,
+    description: swingCooking.description,
+    duration: swingCooking.duration,
+    priceFrom: swingCooking.totalFromIdr,
+    href: '/book?activity=combo-swing-cooking',
     kind: 'culture',
   }
 
@@ -132,8 +143,8 @@ export function getFeaturedPackages(): PackageCard[] {
     kind: 'tour' as const,
   }))
 
-  // Lead with cycling + cooking culture day for SEO/commercial priority
-  return [cultureCard, ...cultureTours, ...comboCards, ...dayTours]
+  // Lead with culture-day combos for SEO/commercial priority
+  return [cultureCard, swingCookingCard, ...cultureTours, ...comboCards, ...dayTours]
 }
 
 export function getCatalogSection(category: TourCategoryId): Tour[] {
@@ -143,7 +154,7 @@ export function getCatalogSection(category: TourCategoryId): Tour[] {
 export const WHY_SEKAR = [
   {
     title: "Culture days worth booking first",
-    desc: "Tumang cooking class and Pejeng ricefield cycling with free Ubud pickup — plus ATV, coffee, and private day tours when you want more.",
+    desc: "Tumang cooking class and Pejeng ricefield cycling with free Ubud pickup — or Swing Heaven + cooking — plus ATV, coffee, and private day tours when you want more.",
   },
   {
     title: "Clear IDR before you message",

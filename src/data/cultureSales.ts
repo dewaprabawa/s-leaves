@@ -1,4 +1,5 @@
 import { getListPrice } from '@/lib/pricing'
+import { SWING_HEAVEN_PRICE_IDR, SWING_HEAVEN_LUNCH_PRICE_IDR } from '@/data/swingHeaven'
 import { buildWhatsAppBookingUrl, formatIdr } from '@/lib/whatsapp'
 
 /** Shared small-group list / compare-at rate (matches tumangbaliclass.com). */
@@ -139,5 +140,56 @@ export function buildCyclingCookingComboWhatsAppUrl(guestName = 'Guest') {
     price: combo.totalFromIdr,
     notes:
       'Please confirm availability for Pejeng ricefield cycling (free Ubud pickup) and an afternoon Tumang Bali Cooking Class on the same date.',
+  })
+}
+
+export type SwingCookingComboOffer = {
+  id: string
+  name: string
+  tagline: string
+  description: string
+  duration: string
+  timeline: string[]
+  swingPriceIdr: number
+  cookingPriceIdr: number
+  totalFromIdr: number
+  itineraryHref: string
+  swingTourHref: string
+  cookingTourHref: string
+}
+
+/** Jungle-swing morning + afternoon Tumang kitchen — competitor “swing + cooking” day. */
+export function getSwingCookingCombo(): SwingCookingComboOffer {
+  const swingPriceIdr = SWING_HEAVEN_PRICE_IDR
+  const cookingPriceIdr = COOKING_CLASS_PRICE_IDR
+  return {
+    id: 'combo-swing-cooking',
+    name: 'Swing Heaven + Tumang Cooking Class',
+    tagline: 'Jungle swing then village kitchen',
+    description:
+      'Morning Swing Heaven in Bongkasa (jungle swings over the Ayung River — not Tegallalang, not Happy Swing), then afternoon Tumang Bali Cooking Class. Published ticket + promo kitchen rate on one WhatsApp thread. Pickup rules stay separate: swing IDR 400,000 or self-meet; cooking includes free Ubud pickup.',
+    duration: 'Full day',
+    timeline: [
+      `Morning: Swing Heaven Package — ${formatIdr(swingPriceIdr)} (lunch package ${formatIdr(SWING_HEAVEN_LUNCH_PRICE_IDR)} · pickup IDR 400,000 or self-meet Bongkasa)`,
+      `Afternoon: Tumang Bali Cooking Class — ${formatIdr(cookingPriceIdr)} promo / person (shared · Ubud pickup included)`,
+    ],
+    swingPriceIdr,
+    cookingPriceIdr,
+    totalFromIdr: swingPriceIdr + cookingPriceIdr,
+    itineraryHref: '/blog/swing-heaven-cooking-class-ubud',
+    swingTourHref: '/tours/swing-heaven-bali',
+    cookingTourHref: '/tours/balinese-cooking-class',
+  }
+}
+
+export function buildSwingCookingComboWhatsAppUrl(guestName = 'Guest') {
+  const combo = getSwingCookingCombo()
+  return buildWhatsAppBookingUrl({
+    guestName,
+    activity: combo.name,
+    activityOption: `${combo.timeline[0]} · ${combo.timeline[1]}`,
+    price: combo.totalFromIdr,
+    notes:
+      'Please confirm Swing Heaven in the morning (Bongkasa — not Tegallalang / Happy Swing) and an afternoon Tumang Bali Cooking Class on the same date. Swing pickup is IDR 400,000 or self-meet; cooking includes free Ubud pickup. Say lunch package or dress hire if you want them.',
   })
 }

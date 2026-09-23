@@ -105,6 +105,7 @@ const footerLinks = {
     { label: "Tumang Bali Cooking Class", href: "/tours/balinese-cooking-class" },
     { label: "Ubud Ricefield Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
     { label: "Cycling + Cooking Combo", href: "/book?activity=combo-cycling-cooking" },
+    { label: "Swing Heaven + Cooking", href: "/book?activity=combo-swing-cooking" },
     { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
     { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
     { label: "Canyon Tubing", href: "/tours/canyon-tubing" },

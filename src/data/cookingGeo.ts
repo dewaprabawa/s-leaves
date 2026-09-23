@@ -12,7 +12,7 @@ import {
 } from '@/data/cultureSales'
 import { ACTIVITY_KEYWORDS } from '@/data/activityKeywords'
 
-export const COOKING_GEO_UPDATED = '2026-09-22'
+export const COOKING_GEO_UPDATED = '2026-09-23'
 export const COOKING_GEO_KEYWORDS = ACTIVITY_KEYWORDS['balinese-cooking-class']
 
 const cookingPromoLabel = `IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString('id-ID')}`
@@ -90,14 +90,20 @@ export const COOKING_GEO_FAQS: CookingGeoFaq[] = [
   {
     intent: 'morning vs afternoon cooking class ubud',
     q: 'Should I book the morning or afternoon cooking class?',
-    a: 'Book morning if you want the traditional market tour plus kitchen. Book afternoon if you are pairing with Pejeng ricefield cycling earlier the same day. Both include the rice-field walk, 10+ dishes, English instruction, and Ubud-area pickup.',
+    a: 'Book morning if you want the traditional market tour plus kitchen. Book afternoon if you are pairing with Pejeng ricefield cycling or a morning Swing Heaven photo session. Both include the rice-field walk, 10+ dishes, English instruction, and Ubud-area pickup.',
+  },
+  {
+    intent: 'jungle swing and cooking class ubud',
+    q: 'Can I book a jungle swing and cooking class in Ubud the same day?',
+    a: `Yes. Book morning Swing Heaven in Bongkasa (from IDR 530,000, lunch package IDR 630,000 — not Tegallalang and not Happy Swing), then afternoon Tumang Bali Cooking Class (promo ${cookingPromoLabel}, free Ubud pickup). Pickup rules stay separate: swing is IDR 400,000 or self-meet; cooking includes complimentary Ubud transfer. One WhatsApp thread books both.`,
   },
 ]
 
 export const COOKING_GEO_CITATION_SNIPPETS = [
   COOKING_GEO_TLDR,
   `Shared Tumang Bali Cooking Class near Ubud costs promo ${cookingPromoLabel} per person (was ${cookingStandardLabel}; max 8 guests) with complimentary Ubud pickup; private starts at IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString('id-ID')}.`,
-  'Morning Tumang Bali Cooking Class sessions include a traditional Ubud-area market tour; afternoon sessions suit travelers combining Pejeng ricefield cycling with cooking the same day.',
+  'Morning Tumang Bali Cooking Class sessions include a traditional Ubud-area market tour; afternoon sessions suit travelers combining Pejeng ricefield cycling or a morning Swing Heaven photo session with cooking the same day.',
+  `A jungle-swing + cooking day with Sekar Bali Activity is morning Swing Heaven (from IDR 530,000 in Bongkasa) plus afternoon Tumang cooking (promo ${cookingPromoLabel}, free Ubud pickup). It is not the Happy Swing / temple-day aggregator package. Itinerary: https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud`,
   'Tumang Bali Cooking Class is taught in English by Chef Wayan Suryana in Tumang village near Ubud and is recognized with TripAdvisor Traveler’s Choice 2026 — reviews: https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html',
 ] as const
 

@@ -7,18 +7,19 @@ export const GRIYA_BEJI_CLUSTER_POSTS = [
     seoTitle: 'Griya Beji Waterfall Ubud | Melukat 300K',
     excerpt:
       'Taman Beji Griya Waterfall in Punggul: melukat IDR 300,000, palm reading 1M, mental healing 1.5M. Not Tirta Empul. WhatsApp booking.',
-    publishedAt: '2026-09-22',
+    publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/griya-beji-waterfall.jpg',
     content: `
-**How much is Griya Beji Waterfall near Ubud?** Sekar Bali Activity books **[Taman Beji Griya Waterfall](/tours/griya-beji-waterfall)** in **Desa Punggul, Abiansemal** — waterfall **purification (melukat) IDR 300,000**, **palm reading IDR 1,000,000**, **mental healing IDR 1,500,000**. International **admission is IDR 50,000** (domestic **IDR 20,000**) at the gate unless we confirm it is waived. Hours **09:00–18:00**. This is **not** [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) (private **IDR 1,200,000** with shuttle and breakfast). **Hotel pickup is IDR 400,000** or self-meet. Book on WhatsApp — **no payment to inquire**.
+**How much is Griya Beji Waterfall purification near Ubud?** Sekar Bali Activity books **[Taman Beji Griya Waterfall](/tours/griya-beji-waterfall)** in **Desa Punggul, Abiansemal** — a **waterfall purification (melukat)** at **IDR 300,000**, **palm reading IDR 1,000,000**, **mental healing IDR 1,500,000**. International **admission is IDR 50,000** (domestic **IDR 20,000**) at the gate unless we confirm it is waived. Hours **09:00–18:00**. This is **not** a [Tirta Empul water purification ceremony](/tours/tirta-empu-purification) (private **IDR 1,200,000** with shuttle and breakfast). **Hotel pickup is IDR 400,000** or self-meet. Book on WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
-> - Venue: **Jl. Mawar, Desa Punggul**, Abiansemal (Badung) — same district as ATV
-> - Purification **IDR 300,000** · palm reading **IDR 1,000,000** · mental healing **IDR 1,500,000**
+> - Venue: **Jl. Mawar, Desa Punggul**, Abiansemal (Badung) — same district as ATV and Swing Heaven
+> - Waterfall purification **IDR 300,000** · palm reading **IDR 1,000,000** · mental healing **IDR 1,500,000**
 > - Gate admission **IDR 50,000** intl / **IDR 20,000** domestic — extra
 > - Not Tirta Empul and **not** the Pura Beji spring on the 1.2M private ticket
 > - Pickup **IDR 400,000** or free self-meet · confirm the 2026 board on WhatsApp
+> - Pair afternoon **[Tumang cooking](/tours/balinese-cooking-class)** or a [long driver day](/blog/long-private-driver-day-ubud-2026)
 
 ## 2026 venue menu
 
@@ -42,7 +43,32 @@ These are the **2026 published park prices**. We confirm the live board on Whats
 | Includes | Ritual you book | Shuttle, guide, offering, sarong, **breakfast** |
 | Extra | Gate admission | Lunch not included |
 
-If you want a **private temple morning with breakfast**, book [Tirta Empu Purification](/tours/tirta-empu-purification). If you want a **waterfall melukat** plus optional palm reading or healing, book [Griya Beji](/tours/griya-beji-waterfall).
+If you want a **private temple water purification ceremony with breakfast**, book [Tirta Empu Purification](/tours/tirta-empu-purification). If you want a **waterfall melukat** plus optional palm reading or healing, book [Griya Beji](/tours/griya-beji-waterfall). Side-by-side: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat).
+
+## Suggested clock
+
+| Time | What happens |
+| --- | --- |
+| 09:00–09:30 | Hotel collect (**IDR 400,000**) or self-meet at **Jl. Mawar, Desa Punggul** |
+| 09:30–10:00 | Check-in, sarong, offering, intention |
+| 10:00–11:30 | Waterfall purification in the spring-fed pool |
+| 11:30–13:00 | Optional **palm reading** (book ahead) or change and leave |
+| Afternoon | [Tumang cooking](/tours/balinese-cooking-class) if you want a kitchen — tell WhatsApp you are coming from Punggul |
+
+Mental healing is typically **60–90 minutes** and should not share the same tight morning as a 10:00 pool slot unless WhatsApp confirms both practitioners.
+
+## Pair it the same day (honest pickup)
+
+| If you want… | Book this | Pickup |
+| --- | --- | --- |
+| Village paddies + kitchen | [Cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary) | **Free Ubud** on both |
+| Jungle photos + kitchen | [Swing Heaven + cooking](/blog/swing-heaven-cooking-class-ubud) | Swing **400K** · cooking free Ubud |
+| Waterfall + kitchen | This park, then afternoon Tumang | Griya **400K** or self-meet · cooking free Ubud |
+| Temple ceremony, not a waterfall | [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) **1.2M** | Shuttle **included** |
+| Mud then ritual | Morning [ATV](/tours/bali-atv-adventure) in Sedang, then Griya | Both **400K** or self-meet · same Abiansemal district |
+| Family or girls week | [Private itinerary](/tours/bali-private-itinerary) | Driver day replaces the 400K add-on |
+
+Do not merge pickup rules. Cooking’s complimentary Ubud transfer does **not** make the Griya collect free.
 
 ## Etiquette
 
@@ -54,7 +80,7 @@ Sarong and sash — swimwear is not the ritual dress. Women who are menstruating
 2. WhatsApp **date, purification / palm / healing, guest count, hotel**
 3. We confirm IDR (ritual + admission + pickup) — **no deposit to ask**
 
-**Ready?** Book the [Griya Beji money page](/tours/griya-beji-waterfall) or compare [Tirta Empul melukat](/blog/tirta-empu-melukat-ubud-guide).
+**Ready?** Book the [Griya Beji money page](/tours/griya-beji-waterfall), compare [Tirta Empul melukat](/blog/tirta-empu-melukat-ubud-guide), or fold it into a [long driver day](/blog/long-private-driver-day-ubud-2026).
 `,
   },
   {
@@ -63,17 +89,18 @@ Sarong and sash — swimwear is not the ritual dress. Women who are menstruating
     seoTitle: 'Griya Beji vs Tirta Empul | Which Melukat',
     excerpt:
       'Griya Beji waterfall melukat is IDR 300,000 in Punggul. Private Tirta Empul or Pura Beji is IDR 1,200,000 with shuttle and breakfast. Honest 2026 comparison.',
-    publishedAt: '2026-09-22',
+    publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/griya-beji-purification.jpg',
     content: `
-**Should you book Griya Beji or Tirta Empul for melukat?** Book **[Griya Beji Waterfall](/tours/griya-beji-waterfall)** if you want a **waterfall purification** in **Punggul, Abiansemal** at **IDR 300,000** (plus gate admission). Book **[Tirta Empu Purification](/tours/tirta-empu-purification)** if you want a **private temple morning** at **Tirta Empul or Pura Beji** for **IDR 1,200,000** with **shuttle, guide, offering, sarong, and breakfast**. They are different sites and different tickets.
+**Should you book Griya Beji or a Tirta Empul water purification ceremony?** Book **[Griya Beji Waterfall](/tours/griya-beji-waterfall)** if you want a **waterfall purification** in **Punggul, Abiansemal** at **IDR 300,000** (plus gate admission). Book **[Tirta Empu Purification](/tours/tirta-empu-purification)** if you want a **private temple water purification ceremony** at **Tirta Empul or Pura Beji** for **IDR 1,200,000** with **shuttle, guide, offering, sarong, and breakfast**. They are different sites and different tickets. Aggregator “melukat + cooking + jungle swing” days usually mean **Happy Swing + walk-in Empul** — we sell neither of those as a bundle.
 
 > **Key Takeaways**
 > - Griya Beji = waterfall park in **Punggul** · ritual **IDR 300,000**
 > - Tirta Empul / Pura Beji = **private 1.2M** temple morning with breakfast
 > - “Beji” in both names does **not** mean the same spring
 > - Palm reading and mental healing exist only on the Griya Beji menu
+> - Afternoon kitchen: [Tumang cooking](/tours/balinese-cooking-class) after either morning — pickup rules stay separate
 > - Confirm the live IDR on WhatsApp — **no payment to inquire**
 
 ## Side-by-side
@@ -104,7 +131,9 @@ Sarong and sash — swimwear is not the ritual dress. Women who are menstruating
 
 Message WhatsApp with **which site, date, guest count, hotel**. We will not put you on the wrong Beji.
 
-**Ready?** [Griya Beji Waterfall](/tours/griya-beji-waterfall) · [Tirta Empu Purification](/tours/tirta-empu-purification).
+After either morning, afternoon [Tumang cooking](/tours/balinese-cooking-class) is the kitchen we actually operate. Clock: [long driver day](/blog/long-private-driver-day-ubud-2026).
+
+**Ready?** [Griya Beji Waterfall](/tours/griya-beji-waterfall) · [Tirta Empu Purification](/tours/tirta-empu-purification) · [2026 Griya price guide](/blog/griya-beji-waterfall-ubud-guide).
 `,
   },
   {
@@ -113,7 +142,7 @@ Message WhatsApp with **which site, date, guest count, hotel**. We will not put 
     seoTitle: 'Palm Reading Bali | Griya Beji 1M',
     excerpt:
       'Palm reading at Griya Beji Waterfall is IDR 1,000,000. Birth date plus hand lines — book ahead. Punggul, Abiansemal. WhatsApp booking.',
-    publishedAt: '2026-09-22',
+    publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/griya-beji-ceremony.jpg',
     content: `
@@ -132,7 +161,7 @@ The park describes palm reading as a look at character, elements, auspicious day
 
 ## Pairing
 
-Same-day stack: morning **[waterfall purification](/blog/griya-beji-waterfall-ubud-guide)** then palm reading if the practitioner is free. Mental healing is a **separate IDR 1,500,000** therapy — ask WhatsApp whether one visitor can do both.
+Same-day stack: morning **[waterfall purification](/blog/griya-beji-waterfall-ubud-guide)** then palm reading if the practitioner is free. Mental healing is a **separate IDR 1,500,000** therapy — ask WhatsApp whether one visitor can do both. Families and girls-trip groups often put this on a [soft Ubud day](/blog/bali-family-private-itinerary-2026) instead of a third temple.
 
 ## How to book
 
@@ -149,7 +178,7 @@ Same-day stack: morning **[waterfall purification](/blog/griya-beji-waterfall-ub
     seoTitle: 'Mental Healing Bali | Griya Beji 1.5M',
     excerpt:
       'Mental healing / healing therapy at Griya Beji Waterfall is IDR 1,500,000. Guided relaxation, not a hospital clinic. Book ahead. WhatsApp.',
-    publishedAt: '2026-09-22',
+    publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/griya-beji-ceremony.jpg',
     content: `
@@ -176,7 +205,7 @@ This is **not** a substitute for emergency care, medication, or a clinical psych
 | Form | Melukat in the spring pool | Talk + guided relaxation |
 | Wet | Yes | No |
 
-You can book one or ask WhatsApp if both fit the same afternoon.
+You can book one or ask WhatsApp if both fit the same afternoon. Soft-week context: [family itinerary](/blog/bali-family-private-itinerary-2026) · [girls trip Day 4](/blog/bali-6-day-girls-trip-itinerary-2026).
 
 ## How to book
 

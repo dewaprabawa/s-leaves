@@ -29,7 +29,7 @@
 | Surface | Title (live) | Notes |
 |---------|--------------|--------|
 | `/` | Sekar Bali Activity \| Jeep, Cooking & ATV Ubud (46) | H1 “Your Bali day, booked clear” — brand-first, offer in subcopy |
-| `/book` | Book ATV, Cycling, Swing + Cooking *(live)* → **Book Jeep, Cooking & ATV** *(this PR)* | H1 now matches homepage SERP |
+| `/book` | Live ATV-coded title → **WhatsApp Checkout** *(this PR)* | Checkout intent only — does not reuse homepage jeep/cooking/ATV |
 | `/tours/bali-atv-adventure` | Private ATV Ride Ubud \| From IDR 750K | GEO table + Q&A present |
 | `/tours/balinese-cooking-class` | Cooking Class Ubud \| Tumang · Free Pickup 450K | Chef + pickup extractable |
 | `/tours/batur-sunrise-jeep-tour` | Private jeep, meal after viewpoint, no-hike | Strong cluster |
@@ -119,13 +119,31 @@ Primary business goal: **WhatsApp booking with prefilled details** (`.agents/pro
 | Tour card | Book This Experience (except jeep) | Activity-specific labels | Stronger intent match |
 | Tour mobile sticky | Book | Short activity label | Visible without scroll |
 | Article default | Book on WhatsApp → `/book` | Start WhatsApp booking → `/book` | Label matches hop |
-| `/book` H1 | ATV, cycling, swing & cooking | Jeep, cooking, ATV & cycling | SERP ↔ checkout match |
+| `/book` title/H1 | ATV-coded, then briefly jeep/cooking/ATV | WhatsApp Checkout / send date | Stops cannibalizing `/` and money pages |
 | GetYourGuide gold button | Rendered if URL set | No `getYourGuideUrl` assigned in `tours.ts` | Dead code, not live leak |
 
 **Remaining CTA debt**
 - Older blog posts still fall through to the default `/book` CTA instead of the matching tour.
 - Consultation-only itineraries correctly go to `wa.me` — keep that split (do not add a booking popup).
 - Park/workshop tickets must keep **quoted pickup** in any new CTA (do not invent free or IDR 400K).
+
+---
+
+## Keyword jobs (anti-cannibalization)
+
+One URL owns each head query. Spokes support the money page; they do not reuse its SERP title.
+
+| URL | Owns | Must not target |
+|-----|------|-----------------|
+| `/` | Brand + jeep / cooking / ATV discovery | “WhatsApp checkout”, “things to do near Ubud”, catalog browse |
+| `/experiences` | Browse the catalog | Money-page heads, homepage offer string |
+| `/book` | WhatsApp checkout + combo handoff | “Private ATV ride Ubud”, “Cooking class Ubud”, “Private Mount Batur jeep” |
+| `/tours/[slug]` | Commercial book + price | Guide / vs / worth-it titles |
+| `/blog/things-to-do-near-ubud-2026` | “Things to do near Ubud” list | Full SKU price-list title |
+| `/blog/bali-adventure-packages-prices-2026` | Sitewide IDR table | “Things to do” |
+| Other `/blog/*` | How / vs / worth / when / where | Exact tour `seoTitle` pattern (`X Ubud \| From IDR Y`) |
+
+This PR retitled overlapping spokes (Swing, cooking worth-it, jeep guide, Griya Beji, Bird Park, full-day, Tanah Lot, luwak, ATV guide, melukat, Tumang inside, jeep prices) and stopped `getBlogKeywords()` from copying tour **head** terms onto articles.
 
 ---
 

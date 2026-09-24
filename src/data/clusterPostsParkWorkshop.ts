@@ -241,7 +241,7 @@ WhatsApp **jeep or dirt bike, date, guest count, hotel, riding experience if bik
   {
     slug: 'bali-bird-park-from-ubud-2026',
     title: 'Bali Bird Park from Ubud 2026: Price, Shows & Pickup',
-    seoTitle: 'Bali Bird Park from Ubud | IDR 585K',
+    seoTitle: 'Bali Bird Park from Ubud | Shows & Pickup',
     excerpt:
       'Bali Bird Park in Batubulan from IDR 585,000. Feeding sessions and free-flight shows. Pickup quoted. WhatsApp booking.',
     publishedAt: '2026-09-23',

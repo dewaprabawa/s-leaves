@@ -4,7 +4,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
   {
     slug: 'things-to-do-near-ubud-2026',
     title: 'Things to Do Near Ubud 2026: Prices, Pickup & What to Book',
-    seoTitle: 'Things to Do Near Ubud 2026 | Prices & Booking',
+    seoTitle: 'Things to Do Near Ubud 2026 | Day Picks',
     excerpt:
       'Every Sekar Bali Activity near Ubud with 2026 IDR prices — cooking, cycling, ATV, rafting, tubing, Swing Heaven, Griya Beji, Batur jeep, park tickets, workshops, and private day tours. WhatsApp booking, no deposit.',
     publishedAt: '2026-09-20',
@@ -131,7 +131,7 @@ Free cancellation up to **24 hours** before start time. Full rules: [cancellatio
   {
     slug: 'full-day-ubud-tour-guide-2026',
     title: 'Full Day Ubud Tour 2026: Palace, Market & Rice Terraces',
-    seoTitle: 'Full Day Ubud Tour 2026 | From IDR 600K',
+    seoTitle: 'Full Day Ubud Clock | Palace to Tegalalang',
     excerpt:
       'Private full-day Ubud tour from IDR 600,000 — Royal Palace, Art Market, Tegalalang. Driver included; entrance fees and lunch not included. WhatsApp booking.',
     publishedAt: '2026-09-20',
@@ -193,7 +193,7 @@ Temple dress: shoulders and knees covered. Short [sarong guide](/blog/bali-templ
   {
     slug: 'half-day-ubud-tanah-lot-sunset-tour-2026',
     title: 'Half Day Ubud & Tanah Lot Sunset Tour 2026',
-    seoTitle: 'Tanah Lot Sunset Tour from Ubud | IDR 450K',
+    seoTitle: 'Tanah Lot Sunset Clock | Half Day from Ubud',
     excerpt:
       'Private half-day from Ubud to Tanah Lot sunset — from IDR 450,000, about 6 hours. Driver included; entrance fees and dinner not included. WhatsApp booking.',
     publishedAt: '2026-09-20',
@@ -249,7 +249,7 @@ Temple clothing: [Bali temple dress code](/blog/bali-temple-dress-code).
   {
     slug: 'luwak-coffee-plantation-umah-kuno-price-2026',
     title: 'Umah Kuno Luwak Coffee Price 2026 (Ethical Tasting)',
-    seoTitle: 'Umah Kuno Luwak Price 2026 | IDR 800K',
+    seoTitle: 'Is Umah Kuno Luwak Worth 800K?',
     excerpt:
       'Umah Kuno Luwak tasting is IDR 800,000 per person (min 3 guests) — jungle walk, wood-fire roast, 10-drink flight. Transport not included. Cage-free only.',
     publishedAt: '2026-09-20',
@@ -301,7 +301,7 @@ Pairing ideas:
   {
     slug: 'swing-heaven-bali-ubud-guide',
     title: 'Swing Heaven Bali near Ubud: Prices, Spots & Pickup 2026',
-    seoTitle: 'Swing Heaven Bali Ubud | 530K Jungle Swing',
+    seoTitle: 'Swing Heaven Guide 2026 | Spots & Pickup',
     excerpt:
       'Swing Heaven Bali in Bongkasa from IDR 530,000 — 14 jungle photo spots, lunch package 630K, dress hire 300K. Not Tegallalang. WhatsApp booking.',
     publishedAt: '2026-09-21',

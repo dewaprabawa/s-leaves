@@ -154,7 +154,7 @@ Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: '/images/melukat/tirta-empu-spout.jpg',
-    seoTitle: 'Private Melukat Ubud | Tirta Empul 1.2M',
+    seoTitle: 'Melukat Morning Guide | What to Wear',
     content: `
 **How much is a private Tirta Empul or Beji melukat near Ubud?** **IDR 1,200,000 per person** with Sekar Bali Activity. The private rate includes a **Ubud-area shuttle** (pickup and drop-off), an **English-speaking guide**, temple entrance, a canang offering, sarong, and **breakfast**. Choose **Tirta Empul** (Tampaksiring) or **Pura Beji** (quieter holy spring) when you book. Lunch is not included.
 
@@ -519,6 +519,7 @@ Compare packages on [prices 2026](/blog/bali-adventure-packages-prices-2026), th
   {
     slug: 'bali-atv-tour-ubud-guide',
     title: 'Bali ATV Tour Near Ubud (2026)',
+    seoTitle: 'ATV Ubud Guide | Arena, Trails & Combos',
     excerpt: 'ATV near Ubud from IDR 750K — trails, lunch, gear, insurance. Optional Wos tubing. WhatsApp booking, no upfront payment.',
     publishedAt: '2026-08-30',
     author: 'Sekar Bali Activity',
@@ -1182,7 +1183,7 @@ Central Ubud (Jalan Raya Ubud, Monkey Forest Road, Hanoman Street) is very walka
   {
     slug: "inside-balinese-cooking-class-pejeng",
     title: "Inside Tumang Bali Cooking Class Near Ubud",
-    seoTitle: 'Inside Tumang Cooking Class | Promo 450K',
+    seoTitle: 'Inside Tumang Kitchen | Market & 10 Dishes',
     excerpt:
       "Market tour, rice-field walk, Base Genep, and 10+ dishes — what happens in Tumang Bali Cooking Class (promo IDR 450,000 / person; was IDR 506,370).",
     publishedAt: "2026-09-08",
@@ -1614,6 +1615,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
   {
     slug: 'bali-adventure-packages-prices-2026',
     title: 'Bali Adventure Prices 2026',
+    seoTitle: 'Ubud Activity Price List 2026 | Every SKU',
     excerpt: 'ATV from IDR 750K, rafting and tubing 500K (450K for 2+), ricefield cycling 750K, private Mount Batur jeep 950K (2) / 750K (3+), Kintamani Day 1.3M promo, Tirta Empu 1.2M, Luwak 800K, cooking 450K, full-day Ubud from 600K — 2026 package prices in one place.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
@@ -2038,7 +2040,7 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
   {
     slug: 'mount-batur-sunrise-jeep-tour-price-guide-2026',
     title: 'Private Mount Batur Jeep Price Guide (2026)',
-    seoTitle: 'Private Batur Jeep Prices 2026 | IDR Tiers',
+    seoTitle: 'Batur Jeep Price Tiers 2026 | 2 vs 3+ Guests',
     excerpt:
       'Mount Batur private jeep prices near Kintamani for 2026 — 2-guest minimum, pair and group IDR tiers, hot spring add-on, and pickup timing.',
     publishedAt: '2026-09-09',

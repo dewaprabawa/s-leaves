@@ -4,7 +4,7 @@ export const GRIYA_BEJI_CLUSTER_POSTS = [
   {
     slug: 'griya-beji-waterfall-ubud-guide',
     title: 'Griya Beji Waterfall near Ubud: Purification, Prices & Pickup 2026',
-    seoTitle: 'Griya Beji Waterfall Ubud | Melukat 300K',
+    seoTitle: 'Griya Beji Guide 2026 | Hours & Pickup',
     excerpt:
       'Taman Beji Griya Waterfall in Punggul: melukat IDR 300,000, palm reading 1M, mental healing 1.5M. Not Tirta Empul. WhatsApp booking.',
     publishedAt: '2026-09-23',

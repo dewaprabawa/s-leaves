@@ -2,16 +2,16 @@ import type { Metadata } from "next"
 import ExperiencesCatalogClient from "@/components/ExperiencesCatalogClient"
 import { TOURS } from "@/data/tours"
 import { OG_IMAGE, SITE_NAME, SITE_URL } from "@/lib/seo"
-import { SITE_KEYWORDS } from "@/data/activityKeywords"
+import { EXPERIENCES_PAGE_KEYWORDS } from "@/data/activityKeywords"
 
-const TITLE = "All Bali Tours & Activities Near Ubud"
+const TITLE = "Browse Ubud Experiences"
 const DESCRIPTION =
-  "Browse every Sekar Bali Activity experience in one place — Tumang cooking class, Tirta Empu melukat, Pejeng ricefield cycling, ATV, rafting, canyon tubing, Swing Heaven jungle swing, private Mount Batur jeep & day tours. Clear IDR pricing, WhatsApp booking, no upfront payment."
+  "Catalog of every Sekar Bali Activity listing — open a tour page for prices and inclusions, then WhatsApp from there. Not a booking checkout."
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
-  keywords: SITE_KEYWORDS,
+  keywords: EXPERIENCES_PAGE_KEYWORDS,
   alternates: {
     canonical: "/experiences",
   },
@@ -35,7 +35,7 @@ export default function ExperiencesPage() {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "All Bali Tours & Activities — Sekar Bali Activity",
+    name: "Sekar Bali Activity experience catalog",
     description: DESCRIPTION,
     numberOfItems: TOURS.length,
     itemListElement: TOURS.map((tour, index) => ({
@@ -88,12 +88,11 @@ export default function ExperiencesPage() {
             Sekar Bali Activity
           </p>
           <h1 className="font-display text-3xl md:text-5xl font-bold text-brand-green uppercase leading-tight mb-3">
-            All Bali tours &amp; activities
+            Browse every experience
           </h1>
           <p className="text-sm md:text-base text-brand-green-light leading-relaxed">
-            Cooking class, ricefield cycling, ATV, rafting, canyon tubing, the Mount Batur sunrise
-            jeep tour, and private day tours — clear IDR pricing, free cancellation up to 24 hours,
-            and WhatsApp booking with no upfront payment.
+            Filter the catalog, then open the tour page for IDR, pickup rules, and WhatsApp.
+            The homepage is for picking a mood; this page is the full list.
           </p>
         </header>
 

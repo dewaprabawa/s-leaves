@@ -17,7 +17,7 @@ type Props = {
 export default function BookActivityButton({
   activityId,
   className,
-  label = "Book Now",
+  label = "Book this activity",
   allowSwitchAll = true,
   initialMixIds,
 }: Props) {

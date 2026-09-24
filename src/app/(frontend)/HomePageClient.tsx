@@ -898,7 +898,7 @@ export default function Home() {
                     href={item.bookHref}
                     className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
                   >
-                    {item.badge === "Private" ? "Book private" : "Book Now"}
+                    {item.badge === "Private" ? "Book private" : "Book"}
                   </Link>
                 ) : (
                   <button
@@ -906,7 +906,7 @@ export default function Home() {
                     onClick={() => item.adventureId && openBooking(item.adventureId)}
                     className="sm:hidden w-full flex items-center justify-center h-11 bg-brand-green text-sand text-sm font-bold uppercase tracking-wider"
                   >
-                    {item.badge === "Private" ? "Book private" : "Book Now"}
+                    {item.badge === "Private" ? "Book private" : "Book"}
                   </button>
                 )}
               </div>
@@ -1133,14 +1133,14 @@ export default function Home() {
               href="/book"
               className="inline-flex items-center justify-center gap-3 h-14 md:h-16 px-10 rounded-full btn-gold-shimmer font-bold text-lg uppercase tracking-wider w-full sm:w-auto"
             >
-              Start booking
+              Start WhatsApp booking
             </Link>
             <button
               type="button"
-              onClick={() => openBooking("single-atv")}
+              onClick={() => openBooking("jeep-sunrise")}
               className="inline-flex items-center justify-center gap-3 h-14 md:h-16 px-10 rounded-full border-2 border-sand/30 text-sand font-bold text-lg uppercase tracking-wider hover:bg-sand/10 transition-colors w-full sm:w-auto"
             >
-              WhatsApp ATV from IDR 750K
+              WhatsApp private jeep
             </button>
           </div>
           <div className="mt-8 flex items-center justify-center gap-2 text-sm text-sand/70 font-medium">

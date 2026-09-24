@@ -102,6 +102,43 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
   ],
 }
 
+function primaryBookLabel(tourSlug: string): string {
+  switch (tourSlug) {
+    case "batur-sunrise-jeep-tour":
+      return "Book Private Jeep"
+    case "balinese-cooking-class":
+      return "Book Cooking Class"
+    case "bali-atv-adventure":
+      return "Book ATV Ride"
+    case "ubud-ricefield-cycling-tour":
+      return "Book Cycling Tour"
+    case "whitewater-rafting":
+      return "Book Rafting"
+    case "canyon-tubing":
+      return "Book Canyon Tubing"
+    case "swing-heaven-bali":
+      return "Book Swing Heaven"
+    case "griya-beji-waterfall":
+      return "Book Waterfall"
+    case "tirta-empu-purification":
+      return "Book Melukat"
+    case "luwak-coffee-plantation":
+      return "Book Coffee Tasting"
+    case "full-day-ubud-tour":
+      return "Book Full-Day Tour"
+    case "half-day-ubud-tanah-lot-tour":
+      return "Book Tanah Lot Tour"
+    default:
+      return "Book This Experience"
+  }
+}
+
+function stickyBookLabel(tourSlug: string): string {
+  const full = primaryBookLabel(tourSlug)
+  if (full === "Book This Experience") return "Book"
+  return full.replace(/^Book /, "")
+}
+
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   const mapped = SLUG_TO_BOOKABLE_IDS[props.tourSlug]
   if (mapped) {
@@ -247,7 +284,8 @@ export default function TourBookingCard(props: TourBookingCardProps) {
                 onClick={() => setOpen(true)}
                 className="flex shrink-0 items-center justify-center gap-1.5 h-11 rounded-full btn-gold-shimmer px-4 font-bold text-xs uppercase tracking-wider"
               >
-                Book <ArrowRight className="w-3.5 h-3.5" />
+                {stickyBookLabel(props.tourSlug)}{" "}
+                <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </>
           )}
@@ -356,9 +394,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
                 onClick={() => setOpen(true)}
                 className="w-full flex items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
               >
-                {props.tourSlug === "batur-sunrise-jeep-tour"
-                  ? "Book Private Jeep"
-                  : "Book This Experience"}{" "}
+                {primaryBookLabel(props.tourSlug)}{" "}
                 <ArrowRight className="w-4 h-4" />
               </button>
               <a

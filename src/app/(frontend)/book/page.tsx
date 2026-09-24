@@ -28,19 +28,19 @@ const minAdventurePrice = Math.min(
 )
 
 export const metadata: Metadata = {
-  title: "Book ATV, Cycling, Swing + Cooking",
+  title: "Book Jeep, Cooking & ATV",
   description:
-    "Book private ATV, rafting, tubing, ricefield cycling, Swing Heaven + cooking, Tumang kitchen, Griya Beji purification & more near Ubud. Clear IDR prices from " +
+    "WhatsApp checkout for private Mount Batur jeep, Tumang cooking, Pejeng cycling, ATV, rafting, Swing Heaven + cooking, and Griya Beji near Ubud. Clear IDR from " +
     formatIdr(minAdventurePrice) +
-    ". WhatsApp checkout — free to inquire.",
+    " — no payment to inquire.",
   keywords: BOOK_PAGE_KEYWORDS,
   alternates: {
     canonical: "/book",
   },
   openGraph: {
-    title: "Book ATV, Cycling, Swing + Cooking | Sekar Bali Activity",
+    title: "Book Jeep, Cooking & ATV | Sekar Bali Activity",
     description:
-      "Choose ATV, rafting, canyon tubing, ricefield cycling, Swing Heaven + cooking, Tumang kitchen, Griya Beji waterfall purification, or a culture day. WhatsApp booking with price included.",
+      "Choose a private Batur jeep, Tumang cooking class, Pejeng cycling, ATV, rafting, Swing Heaven + cooking, or Griya Beji. WhatsApp booking with the IDR total included.",
     url: `${SITE_URL}/book`,
     siteName: SITE_NAME,
     type: "website",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Book ATV, Cycling, Swing + Cooking | Sekar Bali Activity",
+    title: "Book Jeep, Cooking & ATV | Sekar Bali Activity",
     description:
-      "Sales checkout for ATV, rafting, tubing, cycling, Swing Heaven + cooking & Tumang kitchen near Ubud. Clear IDR · WhatsApp.",
+      "WhatsApp checkout for jeep, cooking, cycling, ATV, rafting & Swing Heaven near Ubud. Clear IDR — no payment to inquire.",
     images: ["/images/adventures/og-cover.jpg"],
   },
 }
@@ -83,7 +83,7 @@ export default async function BookPage({ searchParams }: Props) {
     "@type": "ItemList",
     name: "Book Bali Adventures — Sekar Bali Activity",
     description:
-      "Bookable adventure and culture activities near Ubud with WhatsApp checkout — ATV, rafting, tubing, Swing Heaven, ricefield cycling, Balinese cooking class, Tirta Empu melukat, Griya Beji Waterfall, and combos.",
+      "Bookable adventure and culture activities near Ubud with WhatsApp checkout — private Mount Batur jeep, ATV, rafting, tubing, Swing Heaven, ricefield cycling, Tumang cooking class, Tirta Empu melukat, Griya Beji Waterfall, and combos.",
     numberOfItems: ADVENTURES.length + 5,
     itemListElement: [
       {
@@ -227,11 +227,11 @@ export default async function BookPage({ searchParams }: Props) {
             Sales &amp; checkout
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-extrabold text-brand-green tracking-tight">
-            Book ATV, cycling, swing &amp; cooking near Ubud
+            Book jeep, cooking, ATV &amp; cycling near Ubud
           </h1>
           <p className="text-base md:text-lg text-brand-green-light leading-relaxed">
-            Private / small-group ATV, rafting, canyon tubing, Pejeng ricefield cycling, or a
-            Balinese cooking class, or Griya Beji waterfall purification — then send guests, date,
+            Private Mount Batur jeep, Tumang cooking class, Pejeng cycling, ATV, rafting,
+            canyon tubing, Swing Heaven, or Griya Beji waterfall — then send guests, date,
             pickup, and price to WhatsApp. Combos include ATV + tubing, cycling + cooking, and
             swing + cooking. Starting from {formatIdr(minAdventurePrice)}.
           </p>

@@ -25,7 +25,7 @@ const faqs = [
   },
   {
     question: "How do I book, and do I need to pay upfront?",
-    answer: "Booking is simple — tap Book Now, enter your name, age, adult or child, pickup location, and guest counts. WhatsApp opens with your activity and price already filled. No upfront payment is required to reserve your spot, and we usually reply within minutes during operating hours (+62 817 7572 3663)."
+    answer: "Booking is simple — tap Book WhatsApp (or Book this experience on a tour page), enter your name, age, adult or child, pickup location, and guest counts. WhatsApp opens with your activity and price already filled. No upfront payment is required to reserve your spot, and we usually reply within minutes during operating hours (+62 817 7572 3663)."
   },
   {
     question: "What should I bring for the activities?",

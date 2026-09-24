@@ -14,7 +14,7 @@ const DEFAULT_CTA: ArticleCta = {
   headline: 'Ready to book a Ubud-area activity?',
     body: 'Clear IDR, WhatsApp confirmation, no payment to inquire. Cooking, cycling, ATV, rafting, Swing Heaven, jeep, coffee, and private day tours.',
   primaryHref: '/book',
-  primaryLabel: 'Book on WhatsApp',
+  primaryLabel: 'Start WhatsApp booking',
   secondaryHref: '/experiences',
   secondaryLabel: 'Browse all activities',
 }

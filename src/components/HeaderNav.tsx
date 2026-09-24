@@ -33,7 +33,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
     { href: "/book", label: "Book" },
     { href: "/blog", label: "Blog" },
     { href: "/about", label: "About" },
-    { href: "/#contact", label: "Contact" },
+    { href: "/contact", label: "Contact" },
   ]
 
   return (
@@ -45,7 +45,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
             <span className="font-semibold tracking-wide hidden md:inline">Bali Travel &amp; Activities</span>
             <div className="flex items-center gap-1.5 opacity-90">
               <Clock className="w-3.5 h-3.5 text-accent-amber" />
-              <span>Open Daily · Pickup from 7 AM</span>
+              <span>Open Daily · WhatsApp 08:00–20:00</span>
             </div>
           </div>
           <div className="hidden md:flex items-center gap-3 text-xs opacity-80">
@@ -76,9 +76,10 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
           <div className="flex items-center gap-3">
             <Link
               href="/book"
-              className="hidden sm:inline-flex items-center h-10 md:h-11 px-6 md:px-8 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
+              className="inline-flex items-center h-10 md:h-11 px-4 sm:px-6 md:px-8 rounded-full btn-gold-shimmer font-bold text-xs sm:text-sm uppercase tracking-wider"
             >
-              Book Now
+              <span className="sm:hidden">Book</span>
+              <span className="hidden sm:inline">Book WhatsApp</span>
             </Link>
             <button onClick={toggleMenu} className="lg:hidden flex items-center justify-center w-11 h-11 rounded-full bg-brand-green/8 text-brand-green transition-colors hover:bg-brand-green/15" aria-label="Toggle navigation menu" aria-expanded={isOpen}>
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -112,7 +113,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
               onClick={closeMenu}
               className="w-full flex items-center justify-center h-14 rounded-full btn-gold-shimmer font-bold text-lg uppercase tracking-wider"
             >
-              Book Now
+              Book on WhatsApp
             </Link>
             <p className="text-center text-xs text-brand-green-light opacity-60">Or call +62 817 7572 3663</p>
           </div>

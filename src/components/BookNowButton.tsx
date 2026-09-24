@@ -203,7 +203,7 @@ type Props = {
   onOpen?: () => void
 }
 
-export default function BookNowButton({ className, label = "Book Now", onOpen }: Props) {
+export default function BookNowButton({ className, label = "Book this activity", onOpen }: Props) {
   const [open, setOpen] = useState(false)
 
   return (

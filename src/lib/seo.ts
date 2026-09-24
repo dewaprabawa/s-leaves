@@ -107,7 +107,7 @@ export function buildOrganizationSchema() {
         'Saturday',
         'Sunday',
       ],
-      opens: '07:00',
+      opens: '08:00',
       closes: '20:00',
     },
   }
@@ -159,7 +159,7 @@ export function buildWebsiteSchema() {
     description: DEFAULT_DESCRIPTION,
     publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: 'en-US',
-    dateModified: '2026-09-04',
+    dateModified: '2026-09-23',
     hasPart: [
       {
         '@type': 'WebPage',

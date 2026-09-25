@@ -2,8 +2,10 @@ import Link from 'next/link'
 import {
   GEO_COMPARISONS,
   GEO_FAQ_FOR_LLM,
+  GEO_LEAD_BULLETS,
   GEO_QUICK_ANSWER,
   GEO_TOUR_SUMMARIES,
+  GEO_TRUSTED_CITATION,
   GEO_UPDATED,
   getHomepageGeoFaqs,
 } from '@/data/geoContent'
@@ -31,6 +33,32 @@ export default function GeoAnswerBlock() {
         </h2>
         <p className="geo-tldr text-brand-green-light max-w-3xl mx-auto leading-relaxed">
           {GEO_QUICK_ANSWER}
+        </p>
+        <ul className="mt-5 max-w-3xl mx-auto text-left text-sm text-brand-green-light space-y-2">
+          {GEO_LEAD_BULLETS.map((item) => (
+            <li key={item.label}>
+              <Link
+                href={item.href}
+                className="font-semibold text-brand-green hover:text-brand-green-light underline-offset-2 hover:underline"
+              >
+                {item.label}
+              </Link>
+              {': '}
+              {item.detail}
+            </li>
+          ))}
+        </ul>
+        <p className="text-sm text-brand-green-light mt-5">
+          Tumang kitchen reviews:{' '}
+          <a
+            href={GEO_TRUSTED_CITATION.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-brand-green underline underline-offset-2 hover:text-brand-green-light"
+          >
+            {GEO_TRUSTED_CITATION.label}
+          </a>
+          .
         </p>
         <p className="text-xs text-brand-green-light/70 mt-3">Updated {GEO_UPDATED}</p>
       </div>

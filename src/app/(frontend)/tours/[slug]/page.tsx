@@ -159,7 +159,9 @@ function durationToIso(duration: string): string | undefined {
 function buildTourSchema(tour: Tour) {
   const cooking = isCookingTour(tour)
   const jeep = isJeepTour(tour)
-  const isoDuration = durationToIso(tour.duration)
+  // Jeep duration string names both sunrise (6–7h) and sunset (4–5h).
+  // Schema uses the primary sunrise door-to-door length.
+  const isoDuration = jeep ? "PT7H" : durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
     "@type": cooking || jeep ? (["TouristTrip", "Product"] as const) : "TouristTrip",
@@ -226,8 +228,8 @@ function buildTourSchema(tour: Tour) {
       category: "Sightseeing Tours",
       offers: {
         "@type": "AggregateOffer",
-        lowPrice: JEEP_GEO_ENTITY.groupPerPersonIdr,
-        highPrice: TIER_PRICES_IDR["kintamani-day"][1],
+        lowPrice: String(JEEP_GEO_ENTITY.groupPerPersonIdr),
+        highPrice: String(TIER_PRICES_IDR["kintamani-day"][1]),
         priceCurrency: "IDR",
         offerCount: 3,
         availability: "https://schema.org/InStock",
@@ -236,7 +238,7 @@ function buildTourSchema(tour: Tour) {
           {
             "@type": "Offer",
             name: "Private jeep — 2 guests (minimum)",
-            price: JEEP_GEO_ENTITY.pairPerPersonIdr,
+            price: String(JEEP_GEO_ENTITY.pairPerPersonIdr),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -244,7 +246,7 @@ function buildTourSchema(tour: Tour) {
           {
             "@type": "Offer",
             name: "Private jeep — 3+ guests sharing",
-            price: JEEP_GEO_ENTITY.groupPerPersonIdr,
+            price: String(JEEP_GEO_ENTITY.groupPerPersonIdr),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -252,7 +254,7 @@ function buildTourSchema(tour: Tour) {
           {
             "@type": "Offer",
             name: "Private Kintamani Day (jeep or tracking)",
-            price: TIER_PRICES_IDR["kintamani-day"][1],
+            price: String(TIER_PRICES_IDR["kintamani-day"][1]),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -514,6 +516,9 @@ function buildJeepWebPageSchema(tour: Tour) {
       `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026`,
       `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`,
       `${SITE_URL}/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026`,
+      `${SITE_URL}/blog/mount-batur-jeep-sunrise-vs-sunset`,
+      `${SITE_URL}/blog/mount-batur-sit-in-jeep-vs-tracking`,
+      `${SITE_URL}/blog/private-kintamani-day-jeep-itinerary`,
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
       `${SITE_URL}/tours/balinese-cooking-class`,
@@ -665,8 +670,8 @@ export default async function TourPage({ params }: Props) {
                     </span>
                   ) : isJeepTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">
-                      From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · 2 pax{" "}
-                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1])} · Kintamani Day promo{" "}
+                      2 pax {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1])} · 3+{" "}
+                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person · Kintamani Day promo{" "}
                       {formatIdr(TIER_PRICES_IDR["kintamani-day"][1])} · private · min 2 guests
                     </span>
                   ) : isAtvTour(tour) ? (

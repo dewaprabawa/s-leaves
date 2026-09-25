@@ -451,6 +451,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       href: '/blog/private-kintamani-day-jeep-itinerary',
       blurb: 'Promo 1.3M: jeep, hot spring ticket, meal, coffee, terrace.',
     },
+    {
+      title: 'Dirt bike vs Batur jeep',
+      href: '/blog/kintamani-dirt-bike-vs-batur-jeep',
+      blurb: 'You ride lava dunes vs you sit at the crater-rim viewpoint.',
+    },
   ],
   'bali-private-itinerary': [
     {

@@ -304,7 +304,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
   },
   {
     id: "batur-sunrise-jeep-tour",
-    title: "Private Mount Batur Jeep Tour",
+    title: "Private Mount Batur Jeep near Kintamani",
     slug: "batur-sunrise-jeep-tour",
     category: "adventure",
     area: "Kintamani / Mount Batur",
@@ -313,9 +313,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     isTopPick: true,
     duration: "Sunrise 6–7 Hours · Sunset 4–5 Hours",
     basePrice: 950000,
-    seoTitle: "Private Mount Batur Jeep | Sunrise or Sunset",
+    seoTitle: "Mount Batur Jeep | No Hike · 2 from 950K",
     seoDescription:
-      "Private jeep or tracking, sunrise or sunset — min 2 guests. Meal included. Hot spring +IDR 150K with ticket. 2 pax 950K · 3+ 750K.",
+      "No-hike private 4×4 to Mount Batur crater rim — or tracking. Sunrise or sunset, min 2. Meal + island-wide pickup. 2 pax IDR 950K · 3+ 750K. WhatsApp booking.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
@@ -370,7 +370,7 @@ Choose **sunrise** or **sunset** in the booking form — same private rates, min
 | Price | Same private 2 / 3+ rates · meal included | Same private 2 / 3+ rates · meal included |
 | Hot spring add-on | Optional +IDR 150,000 (ticket included) | Optional +IDR 150,000 (ticket included) |
 
-Confirm the exact window on WhatsApp with your hotel area.
+Confirm the exact window on WhatsApp with your hotel area. Pickup-by-area clock: [jeep pickup times from Canggu, Seminyak & Ubud](/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026).
 
 ### How the Morning (or Afternoon) Works
 We collect you from your hotel. At the Kintamani base camp you transfer into a rugged 4×4 with an experienced local driver, who navigates the dirt and lava-rock tracks toward the viewpoint while a hot drink is served. Private-jeep guests stay with the vehicle; tracking-jeep guests continue on foot with a guide.
@@ -407,7 +407,7 @@ A private jeep costs the same whether two or three people ride, so the per-perso
 | Hot spring add-on (any jeep) | +150,000 (ticket included) |
 | Private Kintamani Day (jeep or tracking) | 1,300,000 promo (was 1,450,000) · meal included |
 
-Hotel pickup and drop-off are built into those rates (not the IDR 400,000 ATV/rafting pickup add-on). Message WhatsApp with your guest count for an exact quote.
+Hotel pickup and drop-off are built into those rates (not the IDR 400,000 ATV/rafting pickup add-on). Full IDR table: [2026 jeep price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026). Message WhatsApp with your guest count for an exact quote.
 
 ### What to bring
 Warm layer (it is cold on the rim before sunrise), closed shoes — especially on tracking jeep — phone/camera, swimwear and a towel if you add the hot spring or book Private Kintamani Day, and a little cash if you want coffee-plantation souvenirs. We handle the jeep, driver, entrance fee, hot drink, **sit-down meal**, and insurance for ages 6–65. Food is not cooked inside the 4×4 — the included meal is after the viewpoint (sunrise, sunset, tracking, and Private Kintamani Day).`,

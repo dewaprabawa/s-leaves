@@ -58,6 +58,15 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       tierLabel: undefined,
     }
   }
+  // Jeep min is 2. Do not show the 3+ 750K tier as a "from" promo —
+  // couples read that as bait vs the bookable 2-pax IDR 950K.
+  if (tourSlug === "batur-sunrise-jeep-tour") {
+    return {
+      promoPrice: fallbackBase,
+      standardPrice: fallbackBase,
+      tierLabel: "Private · min 2 guests · 2-pax rate",
+    }
+  }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
   if (tourSlug === GIRLS_TRIP_SLUG) {
     return {
@@ -218,7 +227,9 @@ export default function TourBookingCard(props: TourBookingCardProps) {
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
       : props.tourSlug === "bali-atv-adventure"
         ? `${props.title} — single from ${formatIdr(props.basePrice)}`
-        : props.title
+        : props.tourSlug === "batur-sunrise-jeep-tour"
+          ? `${props.title} — 2 guests from ${formatIdr(props.basePrice)} (min 2)`
+          : props.title
   const consultationUrl =
     props.tourSlug === GIRLS_TRIP_SLUG
       ? buildGirlsTripWhatsAppUrl()
@@ -316,6 +327,12 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {props.tourSlug === "bali-atv-adventure" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
+          {props.tourSlug === "batur-sunrise-jeep-tour" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              3+ {formatIdr(getPromoListPrice("jeep-sunrise"))} / person · Kintamani Day promo{" "}
+              {formatIdr(getPromoListPrice("kintamani-day"))}
             </p>
           ) : null}
           {props.tourSlug === "swing-heaven-bali" ? (

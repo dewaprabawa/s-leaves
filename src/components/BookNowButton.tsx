@@ -115,13 +115,13 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   {
     id: "jeep-sunrise",
     title: "Private Jeep Sunrise",
-    times: ["02:30", "03:00"],
+    times: ["02:00", "02:30", "03:00"],
     ...JEEP_BOOKING_SHARED,
   },
   {
     id: "jeep-tracking-sunrise",
     title: "Private Tracking Jeep Sunrise",
-    times: ["02:30", "03:00"],
+    times: ["02:00", "02:30", "03:00"],
     ...JEEP_BOOKING_SHARED,
   },
   {
@@ -139,7 +139,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   {
     id: "jeep-kintamani-day",
     title: "Private Kintamani Day — Jeep",
-    times: ["02:30", "03:00"],
+    times: ["02:00", "02:30", "03:00"],
     adultPrice: getListPrice("kintamani-day"),
     kidPrice: null,
     minPax: 2,
@@ -149,7 +149,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   {
     id: "jeep-kintamani-day-tracking",
     title: "Private Kintamani Day — Tracking",
-    times: ["02:30", "03:00"],
+    times: ["02:00", "02:30", "03:00"],
     adultPrice: getListPrice("kintamani-day"),
     kidPrice: null,
     minPax: 2,

@@ -131,6 +131,7 @@ function ticketTour(opts: {
 export const PARK_WORKSHOP_TOURS: Tour[] = [
   ticketTour({
     slug: "bali-bird-park",
+    imageSlug: "bali-bird-park-macaws",
     title: "Bali Bird Park",
     seoTitle: "Bali Bird Park Ticket | From IDR 585K",
     seoDescription:
@@ -164,6 +165,7 @@ WhatsApp the date and guest count. No payment to inquire.`,
   }),
   ticketTour({
     slug: "elephant-mud-fun-at-bali-zoo-park",
+    imageSlug: "elephant-mud-fun-pond",
     title: "Elephant Mud Fun at Bali Zoo Park",
     seoTitle: "Bali Zoo Elephant Mud Fun | From IDR 1.85M",
     seoDescription:
@@ -255,7 +257,7 @@ WhatsApp **date, guest count, hotel area, and the package name**. No payment to 
       { time: "Park day", title: "Safari + shows", description: "Hopper / Dragon: one safari journey. Leopard / Rhino / elephant-back: unlimited line first while it is cooler." },
       { time: "Midday or evening", title: "Meal + extras", description: "Tea, Uma lunch, Tsavo lunch, or BBQ dinner depending on the option. Elephant ride and waterpark only on listed packages." },
     ],
-    imageSlug: "jungle-hopper-bali-safari-and-marine-park",
+    imageSlug: "bali-safari-savannah-tram",
     extraFaq: {
       question: "Which Bali Safari package should I book?",
       answer:
@@ -296,6 +298,7 @@ WhatsApp **date, guest count, hotel area, and the package name**. No payment to 
   }),
   ticketTour({
     slug: "canyoning",
+    imageSlug: "canyoning-waterfall",
     title: "Bali Canyoning",
     seoTitle: "Bali Canyoning | From IDR 1.85M",
     seoDescription:
@@ -341,6 +344,7 @@ Bring a memory card or USB if the operator includes photos. We book the seat; En
   }),
   ticketTour({
     slug: "night-safari-dinner-under-the-stars-elephant-safari-park-lodge",
+    imageSlug: "night-safari-dinner-lanterns",
     title: "Night Safari & Dinner — Elephant Safari Park Lodge",
     seoTitle: "Taro Night Safari Dinner | From IDR 1.66M",
     seoDescription:
@@ -370,6 +374,7 @@ The **elephant ride is extra** — say if you want it. Family rates are quoted. 
   }),
   ticketTour({
     slug: "jungle-safari-ride-and-lunch-elephant-safari-park-lodge",
+    imageSlug: "jungle-safari-lodge-lawn",
     title: "Jungle Safari Ride and Lunch — Taro",
     seoTitle: "Taro Elephant Jungle Ride | From IDR 1.665M",
     seoDescription:
@@ -399,6 +404,7 @@ We book the lodge ticket. Pickup is not in the from-price unless you add a drive
   }),
   ticketTour({
     slug: "jungle-buggies-complete-3-laps-tour",
+    imageSlug: "jungle-buggies-trail",
     title: "Jungle Buggies — Complete 3 Laps",
     seoTitle: "Bali Jungle Buggies 3 Laps | From IDR 1.12M",
     seoDescription:
@@ -435,6 +441,7 @@ WhatsApp guest count and whether you want single or tandem.`,
   }),
   ticketTour({
     slug: "dirt-bike-kintamani-black-lava",
+    imageSlug: "dirt-bike-kintamani-ridge",
     title: "Dirt Bike — Kintamani Black Lava",
     seoTitle: "Kintamani Dirt Bike | From IDR 4.1M",
     seoDescription:
@@ -475,6 +482,7 @@ Wet season (December–May) is the usual Kintamani window (traction, less dust).
   }),
   ticketTour({
     slug: "dirt-bike-tabanan-day-night",
+    imageSlug: "dirt-bike-tabanan-jungle",
     title: "Dirt Bike — Tabanan Day & Night",
     seoTitle: "Tabanan Dirt Bike Day & Night | From IDR 2.1M",
     seoDescription:
@@ -506,6 +514,7 @@ This is not a beach-sunset package — see the jungle & sunset-beach ticket.`,
   }),
   ticketTour({
     slug: "dirt-bike-tabanan-jungle-sunset-beach",
+    imageSlug: "dirt-bike-tabanan-sunset",
     title: "Dirt Bike — Tabanan Jungle & Sunset Beach",
     seoTitle: "Tabanan Dirt Bike Sunset | From IDR 2.1M",
     seoDescription:
@@ -535,6 +544,7 @@ Package bikes: **KLX 150** or **Yamaha X-Ride**. Bigger enduro bikes quoted. 4�
   }),
   ticketTour({
     slug: "lontar-weaving-class",
+    imageSlug: "lontar-weaving-hands",
     title: "Lontar Weaving Class",
     seoTitle: "Lontar Weaving Class Ubud | From IDR 600K",
     seoDescription:
@@ -558,7 +568,7 @@ Pickup quoted. Not a jewelry class — see silver making for that.`,
   }),
   ticketTour({
     slug: "silver-making-class",
-    imageSlug: "silver-making-class-jewelry",
+    imageSlug: "silver-making-workshop",
     title: "Silver Making Class",
     seoTitle: "Ubud Silver Making Class | From IDR 650K",
     seoDescription:
@@ -583,7 +593,7 @@ Extra silver is quoted. Pickup extra.`,
   }),
   ticketTour({
     slug: "balinese-dance-class",
-    imageSlug: "balinese-dance-class-group",
+    imageSlug: "balinese-dance-lesson",
     title: "Balinese Dance Class",
     seoTitle: "Balinese Dance Class Ubud | From IDR 600K",
     seoDescription:
@@ -605,7 +615,7 @@ Studio confirmed on WhatsApp. Pickup quoted.`,
   }),
   ticketTour({
     slug: "batik-class",
-    imageSlug: "batik-class-canting",
+    imageSlug: "batik-class-workshop",
     title: "Batik Class",
     seoTitle: "Ubud Batik Class | From IDR 650K",
     seoDescription:
@@ -630,6 +640,7 @@ Pickup quoted.`,
   }),
   ticketTour({
     slug: "bamboo-carving-class",
+    imageSlug: "bamboo-carving-workshop",
     title: "Bamboo Carving Class",
     seoTitle: "Bamboo Carving Class Ubud | From IDR 600K",
     seoDescription:
@@ -651,6 +662,7 @@ Tools provided. Pickup quoted.`,
   }),
   ticketTour({
     slug: "balinese-offering-class",
+    imageSlug: "balinese-offering-canang",
     title: "Balinese Offering Class",
     seoTitle: "Canang Offering Class Ubud | From IDR 600K",
     seoDescription:

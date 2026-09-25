@@ -1692,11 +1692,12 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**Where is the Bali ATV arena near Ubud?** All ATV rides booked through Sekar Bali Activity take place at **All New Bali Adventure** — a dedicated jungle ATV arena on **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**, near Ubud.
+**Where is the Bali ATV arena near Ubud?** All ATV rides booked through Sekar Bali Activity take place at **All New Bali Adventure** — a dedicated jungle ATV arena on **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**, near Ubud. The arena’s own site is [allnewbaliadventure.com](https://allnewbaliadventure.com/). We book the ride (WhatsApp, published IDR) — we do not operate the park.
 
 > **Key Takeaways**
 > - **Arena name:** All New Bali Adventure
-> - **Operator:** Sekar Bali Activity (near Ubud)
+> - **Official arena site:** [allnewbaliadventure.com](https://allnewbaliadventure.com/)
+> - **Book through:** Sekar Bali Activity (near Ubud)
 > - **Single ATV:** IDR 750,000 · **Tandem ATV:** IDR 1,100,000
 > - **Included:** lunch, boot shoes, helmet, insurance, safety briefing
 > - **Pickup:** IDR 400,000 hotel pickup or free self-meet (cycling and Tumang cooking include free Ubud pickup)

@@ -58,7 +58,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Ubud ATV ride',
       'quad bike adventure Bali',
       'Bali quad bike tour Ubud',
-      'All New Bali Adventure',
+      'All New Bali Adventure', // money-page title must keep this phrase (venue #2 slot)
     ],
     book: [
       'private ATV ride Ubud price',
@@ -689,6 +689,11 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
 }
 
 const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
+  'bali-atv-all-new-bali-adventure-location-guide': [
+    'All New Bali Adventure',
+    'All New Bali Adventure location',
+    'All New Bali Adventure Sedang',
+  ],
   'tandem-atv-ubud-price': ['tandem ATV Ubud price', 'single vs tandem ATV Ubud'],
   'how-much-does-atv-cost-bali-ubud-2026': ['ATV Ubud price 2026', 'how much does ATV cost Bali'],
   'ebike-vs-pedal-ubud-cycling-tour': ['e-bike vs pedal cycling Ubud'],
@@ -828,7 +833,9 @@ export function getBlogKeywords(slug: string): string[] | undefined {
   }
 
   const slugs = Array.isArray(mapped) ? mapped : [mapped]
-  // Spokes get compare + extras only. Head terms stay on /tours/[slug].
+  // Spokes get compare + extras only. Head terms stay on /tours/[slug],
+  // except the All New Bali Adventure location guide, which owns the
+  // venue-name query via BLOG_EXTRA_KEYWORDS (tour title still names the arena).
   return uniqueKeywords([
     ...extras,
     ...slugs.flatMap((s) => {

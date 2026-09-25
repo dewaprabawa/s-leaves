@@ -8,6 +8,22 @@
 
 None. The site is indexable, HTTPS, self-canonical, and allows Google + AI crawlers.
 
+## 1b. Why “All New Bali Adventure” dropped from #2 (2026-09-25)
+
+**Finding (Confirmed):** For the venue query, Google still puts [allnewbaliadventure.com](https://allnewbaliadventure.com/) first. Sekar used to sit immediately under that result. Live titles after the cannibalization pass no longer name the arena on the **money page**:
+
+| URL | Live title | Match for “All New Bali Adventure”? |
+|-----|------------|-------------------------------------|
+| Official arena | All New Bali Adventure – Beat the land… | Yes — brand homepage |
+| `/tours/bali-atv-adventure` | Private ATV Ride Ubud \| From IDR 750K | **No** — title/H1 lost the venue |
+| `/` | Sekar Bali Activity \| Jeep, Cooking & ATV Ubud | No — jeep-led on purpose |
+| Location guide | All New Bali Adventure \| ATV Arena Ubud | Yes — but thinner, cannot inherit the tour’s #2 slot overnight |
+| Klook / xtra Trips / Gusti | “All New Bali Adventure ATV Ride…” | Exact-match titles filled the gap |
+
+`getBlogKeywords()` also stripped the head term `All New Bali Adventure` from the location guide. Aggregators with exact-match titles + KeepAll Bali Adventure (similar name) now occupy the slots under the official site.
+
+**Fix in this revision:** Tour SERP + H1 put the venue back (`ATV All New Bali Adventure | From IDR 750K` / `ATV at All New Bali Adventure near Ubud`). Location guide keeps the *where/pin* title and gets the venue keywords + official-site citation. Homepage title stays jeep-led so `/` does not recannibalize ATV.
+
 ## 2. Done in this revision (2026-09-25)
 
 1. **Split `GEO_QUICK_ANSWER`** — 53-word “X is…” definition (40–60 window). Full inventory lives in `GEO_INVENTORY` for `llms-full.txt` / `pricing.md` only.

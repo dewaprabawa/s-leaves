@@ -177,7 +177,7 @@ export const GEO_POLICIES = [
 
 export const GEO_TOUR_SUMMARIES = [
   {
-    name: 'Bali ATV Adventure',
+    name: 'ATV at All New Bali Adventure',
     slug: 'bali-atv-adventure',
     price: 'IDR 750,000+ (single) / IDR 1,100,000 (tandem)',
     duration: '2–4 hours',

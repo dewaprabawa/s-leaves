@@ -9,7 +9,7 @@ export const PARK_WORKSHOP_CLUSTER_POSTS = [
       'Jungle Hopper IDR 1M, Dragon 1.3M, Leopard 1.8M, Rhino 2.3M, elephant-back 1.45M, night 1.3M. Honest 2026 table. WhatsApp booking.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/jungle-hopper-bali-safari-and-marine-park.jpg',
+    image: '/images/adventures/bali-safari-savannah-tram.jpg',
     content: `
 **Which Bali Safari package should you book in 2026?** Sekar Bali Activity books **Bali Safari and Marine Park** tickets — we do not operate the park. **[Jungle Hopper](/tours/bali-safari-and-marine-park)** from **IDR 1,000,000** is the lightest day (one safari, tea, waterpark). **[Dragon](/tours/bali-safari-and-marine-park)** from **IDR 1,300,000** adds Uma lunch. **[Leopard](/tours/bali-safari-and-marine-park)** from **IDR 1,800,000** adds a **10-minute elephant ride**. **[Rhino](/tours/bali-safari-and-marine-park)** from **IDR 2,300,000** is the fullest day (**30-minute ride**, platinum Agung, Tsavo lunch). Hotel pickup is **quoted**. WhatsApp — **no payment to inquire**.
 
@@ -63,7 +63,7 @@ This park is **not** [Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park
       'Bali Zoo mud fun IDR 1.85M, Bali Safari packages from 1M, Taro ride+lunch 1.665M. Three venues. Honest 2026 comparison.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/elephant-mud-fun-at-bali-zoo-park.jpg',
+    image: '/images/adventures/elephant-mud-fun-pond.jpg',
     content: `
 **Bali Zoo, Bali Safari, or Taro — which elephant day should you book?** They are **three venues**. Sekar Bali Activity books the tickets; we do not run the parks. **[Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park)** from **IDR 1,850,000** is a Singapadu session with **lunch**. **[Bali Safari](/tours/bali-safari-and-marine-park)** in Gianyar starts at **IDR 1,000,000** (Jungle Hopper) and runs up to **Rhino IDR 2,300,000**. **[Taro jungle ride + lunch](/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge)** at Elephant Safari Park Lodge is from **IDR 1,665,000**. Pickup is **quoted**. WhatsApp — **no payment to inquire**.
 
@@ -108,7 +108,7 @@ Message WhatsApp with **Zoo / Safari package / Taro, date, guest count, kids’ 
       'Canyoning from IDR 1.85M, Wos tubing 500K, jungle buggies 1.12M, Sedang ATV from 750K. Four different sports. WhatsApp booking.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/canyoning.jpg',
+    image: '/images/adventures/canyoning-waterfall.jpg',
     content: `
 **Canyoning, tubing, buggies, or ATV — which water or land day?** They are **four tickets**. **[Bali canyoning](/tours/canyoning)** from **IDR 1,850,000** is a **gorge descent** (rappel, jump, slide). **[Canyon tubing](/tours/canyon-tubing)** is **IDR 500,000** (**IDR 450,000** for 2+) — a sit-on-tube float on the **Wos River**. **[Jungle buggies](/tours/jungle-buggies-complete-3-laps-tour)** from **IDR 1,120,000** are **3 Polaris laps** on a purpose-built ~5 km course. **[Sedang ATV](/tours/bali-atv-adventure)** starts at **IDR 750,000** at All New Bali Adventure. None of these is a Nusa Penida boat. WhatsApp — **no payment to inquire**.
 
@@ -153,7 +153,7 @@ First-timers and families who want water without ropes: [canyon tubing](/tours/c
       'Batik and silver from IDR 650K (3 hours). Lontar, dance, bamboo, canang from 600K (2 hours). Pickup quoted. WhatsApp booking.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/batik-class.jpg',
+    image: '/images/adventures/batik-class-workshop.jpg',
     content: `
 **Which Ubud workshop should you book in 2026?** Sekar Bali Activity books **2–3 hour classes** with local teachers — we confirm the studio on WhatsApp. **[Batik](/tours/batik-class)** and **[silver making](/tours/silver-making-class)** are **3 hours from IDR 650,000**. **[Lontar weaving](/tours/lontar-weaving-class)**, **[dance](/tours/balinese-dance-class)**, **[bamboo carving](/tours/bamboo-carving-class)**, and **[canang offering](/tours/balinese-offering-class)** are **2 hours from IDR 600,000**. Hotel pickup is **quoted**. These are workshops, not [Tumang cooking class](/tours/balinese-cooking-class). WhatsApp — **no payment to inquire**.
 
@@ -200,7 +200,7 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
       'Dirt bike from IDR 4.1M on black lava. Private Batur jeep from 750K at 3+ with meal and island-wide pickup. Different sports.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/dirt-bike-kintamani-black-lava.jpg',
+    image: '/images/adventures/dirt-bike-kintamani-ridge.jpg',
     content: `
 **Dirt bike or the Mount Batur jeep?** They share a volcano and nothing else. **[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** is a **private guided enduro** from **IDR 4,100,000** — black-lava dunes and forest tracks, about **8 hours**, KTM 250 EXC-class bike in the package. **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is a **4×4 to a crater-rim viewpoint (~1,350 m)** from **IDR 750,000** per person at 3+ (**IDR 950,000** for 2) with **island-wide pickup** and a **sit-down meal**. The jeep is **not** the 2-hour summit hike. WhatsApp — **no payment to inquire**.
 
@@ -246,7 +246,7 @@ WhatsApp **jeep or dirt bike, date, guest count, hotel, riding experience if bik
       'Bali Bird Park in Batubulan from IDR 585,000. Feeding sessions and free-flight shows. Pickup quoted. WhatsApp booking.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/bali-bird-park.jpg',
+    image: '/images/adventures/bali-bird-park-macaws.jpg',
     content: `
 **How much is Bali Bird Park from Ubud in 2026?** Sekar Bali Activity books **[Bali Bird Park](/tours/bali-bird-park)** in **Batubulan** from **IDR 585,000** per person. The ticket is park admission — macaw photos, lory / pelican feeding, free-flight and bird-of-prey shows on the park timetable, and a Komodo keeper talk on listed weekdays. **Hotel pickup is quoted** or self-meet at the gate. We book the ticket; we do not operate the park. WhatsApp — **no payment to inquire**.
 

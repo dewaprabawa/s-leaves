@@ -2,13 +2,13 @@
 
 **Goal:** Capture high-intent search traffic that competitors already rank for, and convert it into WhatsApp bookings.
 
-**Analysis date:** September 1, 2026 (Round 1) · **Refreshed September 9, 2026 (Round 2)** · **Refreshed September 21, 2026 (Round 3 — all activities)** · **Reset September 22, 2026 (Round 4 — same niche, 12 activities)** · **Round 5 September 23, 2026 — ATV / cycling / purification / swing+cooking**
+**Analysis date:** September 1, 2026 (Round 1) · **Refreshed September 9, 2026 (Round 2)** · **Refreshed September 21, 2026 (Round 3 — all activities)** · **Reset September 22, 2026 (Round 4 — same niche, 12 activities)** · **Round 5 September 23, 2026 — ATV / cycling / purification / swing+cooking** · **Round 6 September 23, 2026 — page-1 price SERPs (rafting / tubing / jeep no-hike)**
 **Your site:** https://www.sekarbaliactivity.com  
 **Competitors analyzed (Round 1):** ubudcyclingtour.com, cookingclassinubud.com, baliquadbiking.com, pertiwiadventure.com, atvrideubud.com, bali-dirtbike-adventures.com, tamandukuh.com, jambangan (Cookly)
 **Competitors analyzed (Round 2 — new):** kuberbaliadventure.com, atvridebali.id (Bali ATV Ride), tamandukuh.com (deep dive), pertiwiadventure.com (rafting combo), Bali Breeze Tours / Sobek / Wira Tour Bali cycling listings, Traveling Spoon "Putu" market-tour cooking class, GetYourGuide/Viator Ubud category listings (aggregator keyword patterns)
 **Competitors analyzed (Round 3 — catalog-wide):** ubudcenter.com, nagikubalitour.com, baturvolcano.com, telagawajaraftingbali.com, riverraftingbali.com / balivibesadventure.com / balitubingtour.com (Wos tubing), gorillaadventurebali.com (Ayung + Tirta Empul), Pure Kopi Luwak / Bali Pulina-style plantation SERPs, Edy Ubud Tour (Tanah Lot sunset)
 
-**➡️ Jump to [Round 5 — 2026-09-23 ATV / cycling / purification / swing+cooking](#round-5--2026-09-23-atv--cycling--purification--swingcooking) for the live keyword + link-build map.**
+**➡️ Jump to [Round 6 — 2026-09-23 page-1 price SERPs](#round-6--2026-09-23-page-1-price-serps-rafting--tubing--jeep-no-hike) for the live keyword + money-page map.**
 
 ---
 
@@ -431,4 +431,54 @@ Ops still open from Round 2: ATV minimum-age number, Tumang clock times, rafting
 Same as Round 4, plus: Happy Swing tickets, unpublished swing+cooking mix discount, free pickup merged across swing and cooking.
 
 Ops still open: ATV minimum-age number, Tumang clock times, rafting shower/locker confirmation.
+
+---
+
+## Round 6 — 2026-09-23 page-1 price SERPs (rafting / tubing / jeep no-hike)
+
+**Why this pass:** Live SERPs still send commercial “how much / price 2026 / with lunch / with pickup / no hike” clicks to **dedicated price pages**, not to generic activity guides. Round 5 filled ATV / cycling / swing+cooking language. Round 6 builds the missing **price spokes** and retitles money pages so Google can rank a URL for the query instead of a competitor’s IDR table.
+
+**Method:** September 2026 SERP titles and published IDR from operator + reseller pages (not invented). We do **not** undercut those stickers or claim their inclusions.
+
+| Query we want on page 1 | Who owns the SERP now | Their title / price pattern | Our truthful match | Do not invent |
+|-------------------------|-----------------------|-----------------------------|--------------------|---------------|
+| `Ayung River rafting Ubud price` / `rafting Ubud price 2026` | balitobali.com, balipon.co.id, water-sport-bali.com (Sobek WNI), ubudadventures.com, wayfar.co | “Harga Ayung Rafting” **IDR 235K–350K** group / self-drive; Sobek publish ~**IDR 600K**; mid operators **IDR 420K–650K**; titles lead with **lunch + pickup** | **IDR 500,000** · **IDR 450,000** for 2+ (min 2) · **lunch included** · pickup **IDR 400,000** or self-meet | Free Ubud pickup; matching 235K; shower/locker unless ops confirms |
+| `Wos River tubing price` / `canyon tubing Ubud price` | wostubingadventure.com, riverraftingbali.com, balitiket.com, balitubingtour.com | Ticket-only **IDR 350K–450K** or **USD 25**; with transfer **~IDR 550K / USD 35**; combo pages stack ATV / jeep / swing | **IDR 500,000** · **IDR 450,000** for 2+ · **Wos not Ayung** · lunch **not** included · pickup **IDR 400,000** | Ayung-as-tubing; free transfer; published ATV+tubing bundle IDR |
+| `Mount Batur jeep no hike` / `sunrise without hiking` | ubudcenter.com, ubudsunrisejeep.com, discoverbaturvolcano.com, Bali Travel Life / Viator | Titles lead with **No Hiking** + **from IDR 400K** (often min 3, Ubud-only pickup) | Private sit-in **no hike** or tracking · min **2** · **950K / 750K** · **meal included** · **island-wide pickup** | Summit jeep; solo 750K teaser; cheaper 400K shared jeep |
+| `private ATV Ubud` / `Kuber vs Ubud ATV` (hold, already clustered) | atvridebali.id, baliquadbiking.com, kuber / Dragon Cave guides | Private from **~IDR 600–630K**; Kuber Premium **750K** single / **1M** tandem + cave | All New Bali Adventure mud/river · single **from 750K** · tandem **1.1M** · lunch included · pickup **400K** | Cave/tunnel as our track; free pickup |
+
+### Keyword source of truth (this round)
+
+`src/data/activityKeywords.ts` `KEYWORD_CLUSTERS` — Round 6 additions:
+
+| Slug | Added head / book / compare |
+|------|-----------------------------|
+| `whitewater-rafting` | Ayung rafting Ubud price; rafting Ubud price 2026; how much is rafting in Ubud; Ayung rafting lunch included; vs cheap group ticket |
+| `canyon-tubing` | Wos River tubing price; canyon tubing Ubud price 2026; how much is river tubing Ubud; Wos tubing ticket only; Wos vs Ayung |
+| `batur-sunrise-jeep-tour` | Mount Batur sunrise no hiking required (book) |
+
+### Link-build (hub-and-spoke)
+
+| Surface | What changed |
+|---------|----------------|
+| New spokes | `/blog/rafting-ubud-price-2026` · `/blog/wos-river-tubing-price-2026` |
+| Money-page SERP titles | Rafting → `Ayung Rafting Ubud Price \| 500K · 450K 2+`; tubing → `Wos River Tubing Price \| 500K · 450K 2+`; jeep → `Batur Jeep No Hike \| Private 950K · 750K` |
+| Money-page ATF | Venue chips on rafting (Ayung canyon) and tubing (Wos / Pejeng); extractable price tables in `fullDescription` |
+| GEO | New price / pickup / lunch FAQs + citation snippets; `pricing.md` now names day-tour hotel start + Luwak no-transport |
+| Cluster + crawl | tourGuides, article graph, footer, blog chips, sitemap **0.95** on rafting/tubing money pages, homepage GEO FAQ for pickup + lunch honesty |
+
+### Action log (this round)
+
+| Action | Status |
+|--------|--------|
+| Live keyword + competitor price research (Ayung / Wos / jeep no-hike) | ✅ this file |
+| Dedicated rafting + tubing price spokes (not a retitle of the existing guides) | ✅ `clusterPostsRaftingTubing.ts` |
+| Money-page title / meta / venue / first-100-words | ✅ `tours.ts` |
+| Keyword clusters + GEO / llms / pricing.md | ✅ `activityKeywords.ts` · `activityGeo.ts` · `geoContent.ts` |
+| Internal links + sitemap priority | ✅ |
+| Do not publish a 235K rafting teaser or free adventure pickup | ✅ honesty held |
+
+### Still do not target as offers
+
+Same as Round 5, plus: Ayung-as-tubing, “rafting from IDR 235K”, free pickup on rafting/tubing, jeep-from-400K shared listings, jeep summit hike.
 

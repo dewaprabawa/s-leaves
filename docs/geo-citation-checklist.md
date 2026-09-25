@@ -1,10 +1,10 @@
 # GEO / LLM citation readiness checklist
 
-**Last run:** 2026-09-23  
+**Last run:** 2026-09-23 (Round 6 — rafting / tubing price + jeep no-hike)  
 **Brand:** Sekar Bali Activity · https://www.sekarbaliactivity.com  
 **Scope:** Repo readiness for extractable answers — **not** a live ChatGPT / Perplexity / AI Overview citation scrape. No citation claims without tool evidence.
 
-**Sources checked:** `src/data/tours.ts`, `src/lib/pricing.ts`, `src/data/cultureSales.ts` (cycling+cooking and **swing+cooking** from-prices), `src/data/geoContent.ts` (`GEO_UPDATED` **2026-09-23**), `src/data/activityGeo.ts`, `src/data/cookingGeo.ts`, `src/data/activityKeywords.ts` (Round 5), supporting slugs in `src/data/blog.ts` including `swing-heaven-cooking-class-ubud`.
+**Sources checked:** `src/data/tours.ts`, `src/lib/pricing.ts`, `src/data/cultureSales.ts`, `src/data/geoContent.ts` (`GEO_UPDATED` **2026-09-23**), `src/data/activityGeo.ts`, `src/data/activityKeywords.ts` (Round 6), `src/data/clusterPostsRaftingTubing.ts`.
 
 ### Round 5 prompts (2026-09-23)
 
@@ -15,7 +15,15 @@
 | R5-3 | Tirta Empul water purification / melukat ceremony from Ubud | [/tours/tirta-empu-purification](https://www.sekarbaliactivity.com/tours/tirta-empu-purification) | Private **IDR 1,200,000**, shuttle + breakfast, guest chooses Tirta Empul **or** Pura Beji; lunch not included; not a $29 walk-in ticket | Yes | Do not claim the temple is privately closed |
 | R5-4 | Jungle swing and cooking class same day? Is Swing Heaven Happy Swing? | [/blog/swing-heaven-cooking-class-ubud](https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud) · [/book?activity=combo-swing-cooking](https://www.sekarbaliactivity.com/book?activity=combo-swing-cooking) | Swing Heaven **530k** / lunch **630k** Bongkasa; cooking **450k**; from-price **980k** (sum of published tickets); swing pickup **400k** or self-meet; cooking free Ubud; **not** Happy Swing / Tegallalang | Yes | No mix discount. Do not sell Happy Swing |
 
-Homepage curated FAQ now includes the three new questions (must match `GEO_FAQ_FOR_LLM` `q` strings). `llms.txt` keyword-base section stamped Round 5.
+### Round 6 prompts (2026-09-23)
+
+| # | Prompt | Money / spoke URL | Must-include facts | Repo ready? | Gaps |
+|---|--------|-------------------|--------------------|-------------|------|
+| R6-1 | How much is Ayung River rafting in Ubud 2026? | [/blog/rafting-ubud-price-2026](https://www.sekarbaliactivity.com/blog/rafting-ubud-price-2026) · [/tours/whitewater-rafting](https://www.sekarbaliactivity.com/tours/whitewater-rafting) | **IDR 500,000** / **450,000** for 2+ (min 2); lunch + gear + insurance; pickup **IDR 400,000** or self-meet; Class II–III Ayung — not a 235K group ticket | Yes | Do not publish shower/locker until ops confirms |
+| R6-2 | How much is Wos River tubing 2026? Lunch? Pickup? | [/blog/wos-river-tubing-price-2026](https://www.sekarbaliactivity.com/blog/wos-river-tubing-price-2026) · [/tours/canyon-tubing](https://www.sekarbaliactivity.com/tours/canyon-tubing) | **IDR 500,000** / **450,000** for 2+; Wos not Ayung; lunch **not** included; pickup **IDR 400,000** or self-meet | Yes | No published ATV+tubing combo IDR |
+| R6-3 | Mount Batur sunrise without hiking | [/tours/batur-sunrise-jeep-tour](https://www.sekarbaliactivity.com/tours/batur-sunrise-jeep-tour) | Sit-in **no hike**; tracking is jeep + trek not summit; min 2; **950K / 750K**; meal included; island-wide pickup | Yes | Do not use a 400K shared-jeep “from” |
+
+Homepage curated FAQ now includes rafting pickup + Wos lunch/transfer questions (must match `GEO_FAQ_FOR_LLM` `q` strings). `llms.txt` keyword-base section stamped Round 6.
 
 ---
 

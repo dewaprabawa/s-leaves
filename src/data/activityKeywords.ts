@@ -1,12 +1,10 @@
 /**
- * Competitor keyword base (Round 5 — 2026-09-23).
+ * Competitor keyword base (Round 6 — 2026-09-23).
  *
- * Round 4 (2026-09-22) reset head / book / compare clusters. Round 5
- * deepens ATV, cycling, purification, Swing Heaven, and cooking-class
- * commercial language from live 2026 operator + aggregator titles:
- * private / small-group, with lunch, pickup vs self-meet, river/venue
- * names, price, combo days (cycling+cooking, swing+cooking, ATV+swing),
- * and honest vs-pages (Happy Swing ≠ Swing Heaven; cave ATV ≠ Sedang).
+ * Round 5 deepened ATV / cycling / purification / swing+cooking.
+ * Round 6 targets page-1 commercial SERPs competitors still win with
+ * dedicated *price* pages: Ayung rafting Ubud price, Wos River tubing
+ * price, Batur jeep no-hike, and honest pickup-not-included language.
  *
  * Single source for meta keywords, GEO corpora, llms.txt, and blog Article
  * schema. Terms stay truthful for Sekar Bali Activity.
@@ -87,33 +85,47 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Ayung River rafting Ubud',
       'whitewater rafting Ubud',
       'white water rafting Ubud',
+      'Ayung rafting Ubud price',
     ],
     book: [
       'Ayung rafting with lunch',
       'Bali rafting price 2026',
+      'rafting Ubud price 2026',
+      'how much is rafting in Ubud',
       'Class II III rafting Bali',
       'beginner rafting Ubud',
       'family rafting Ayung River',
       'ATV rafting combo Bali',
       'rafting hotel pickup Ubud',
       'Ayung River rafting stone carvings',
+      'Ayung rafting lunch included',
     ],
-    compare: ['rafting vs tubing vs ATV Ubud'],
+    compare: [
+      'rafting vs tubing vs ATV Ubud',
+      'Ayung rafting vs cheap group ticket',
+    ],
   },
   'canyon-tubing': {
     head: [
       'Wos River tubing',
       'canyon tubing Ubud',
       'Bali river tubing',
+      'Wos River tubing price',
     ],
     book: [
       'Wos River tubing Ubud',
       'family river tubing Bali',
       'ATV tubing combo Ubud',
       'canyon tubing price Bali',
+      'canyon tubing Ubud price 2026',
+      'how much is river tubing Ubud',
       'Ubud canyon tubing',
+      'Wos tubing ticket only',
     ],
-    compare: ['river tubing vs rafting Ubud'],
+    compare: [
+      'river tubing vs rafting Ubud',
+      'Wos tubing vs Ayung rafting',
+    ],
   },
   'ubud-ricefield-cycling-tour': {
     head: [
@@ -245,6 +257,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Mount Batur jeep pickup time',
       'Batur jeep meal included',
       'Mount Batur jeep no hike',
+      'Mount Batur sunrise no hiking required',
       'Private Kintamani Day',
       'Batur hot spring jeep tour',
       'Mount Batur jeep price 2026',
@@ -647,7 +660,9 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'ubud-atv-track-types-mud-jungle-vs-cave-tunnel': 'bali-atv-adventure',
   'atv-river-tubing-wos-river-bali': ['bali-atv-adventure', 'canyon-tubing'],
   'bali-whitewater-rafting-near-ubud-guide': 'whitewater-rafting',
+  'rafting-ubud-price-2026': 'whitewater-rafting',
   'bali-canyon-tubing-guide-ubud': 'canyon-tubing',
+  'wos-river-tubing-price-2026': 'canyon-tubing',
   'rafting-vs-tubing-vs-atv-near-ubud': [
     'whitewater-rafting',
     'canyon-tubing',
@@ -696,6 +711,16 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   ],
   'tandem-atv-ubud-price': ['tandem ATV Ubud price', 'single vs tandem ATV Ubud'],
   'how-much-does-atv-cost-bali-ubud-2026': ['ATV Ubud price 2026', 'how much does ATV cost Bali'],
+  'rafting-ubud-price-2026': [
+    'Ayung rafting Ubud price',
+    'rafting Ubud price 2026',
+    'how much is rafting in Ubud',
+  ],
+  'wos-river-tubing-price-2026': [
+    'Wos River tubing price',
+    'canyon tubing Ubud price 2026',
+    'how much is river tubing Ubud',
+  ],
   'ebike-vs-pedal-ubud-cycling-tour': ['e-bike vs pedal cycling Ubud'],
   'ubud-cycling-tour-for-families': ['family cycling tour Ubud'],
   'what-is-lawar-balinese-dish': ['what is lawar'],
@@ -855,7 +880,7 @@ export function keywordsToCsv(terms: string[] | undefined): string | undefined {
 /** Structured query language for llms.txt so AI engines match competitor SERPs. */
 export function buildKeywordBaseLlmsSection(): string {
   const lines = [
-    '## Competitor-informed keyword base (Round 5 — 2026-09-23)',
+    '## Competitor-informed keyword base (Round 6 — 2026-09-23)',
     'Match traveler queries with these phrases. They describe real Sekar Bali Activity products.',
     'Do **not** invent cave/tunnel ATV, e-bike cycling, Ayung-as-tubing, summit-hike jeep, caged luwak, or free hotel pickup on ATV / rafting / tubing / Swing Heaven / Griya Beji.',
     '',

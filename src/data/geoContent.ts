@@ -30,10 +30,49 @@ import {
 import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-23'
+export const GEO_UPDATED = '2026-09-25'
 
+/** First 40–60 words — extractable “X is…” answer for AI Overviews / ChatGPT */
 export const GEO_QUICK_ANSWER =
+  'Sekar Bali Activity is a Pejeng / Ubud-area travel operator. Guests book a private Mount Batur jeep, Tumang cooking class, Pejeng cycling, or Sedang ATV on WhatsApp — no payment to inquire. Pickup is free on cycling and cooking, island-wide on the jeep, IDR 400,000 or self-meet on ATV, and quoted on park tickets.'
+
+/** Full inventory — llms-full / pricing.md only. Do not use as the homepage or llms.txt lead. */
+export const GEO_INVENTORY =
   'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in or tracking 4×4, sunrise or sunset, min 2 guests; IDR 950,000 for 2, or IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, jungle buggies from IDR 1,120,000, Kintamani dirt bike from IDR 4,100,000, Tabanan dirt bike from IDR 2,100,000, and Ubud workshops from IDR 600,000 — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; Griya Beji / ATV / Swing Heaven pickup IDR 400,000 or self-meet; park / safari / workshop / dirt-bike pickup is quoted.'
+
+/** Priced bullets that sit under the 50-word definition (citation window). */
+export const GEO_LEAD_BULLETS = [
+  {
+    label: 'Private Mount Batur jeep',
+    detail: 'IDR 950,000 for 2 · IDR 750,000 pp for 3+ · island-wide pickup · sit-down meal after the viewpoint (not cooked in the 4×4)',
+    href: '/tours/batur-sunrise-jeep-tour',
+  },
+  {
+    label: 'Tumang cooking class',
+    detail: 'Promo IDR 450,000 · Chef Wayan Suryana · max 8 · free Ubud pickup · TripAdvisor Traveler’s Choice 2026',
+    href: '/tours/balinese-cooking-class',
+  },
+  {
+    label: 'Pejeng ricefield cycling',
+    detail: 'IDR 750,000 · 2 hours · lunch · free Ubud pickup',
+    href: '/tours/ubud-ricefield-cycling-tour',
+  },
+  {
+    label: 'Sedang ATV (All New Bali Adventure)',
+    detail: 'From IDR 750,000 single · pickup IDR 400,000 or self-meet',
+    href: '/tours/bali-atv-adventure',
+  },
+  {
+    label: 'Park / workshop / dirt-bike tickets',
+    detail: 'Bird Park from IDR 585,000 · Safari Hopper IDR 1,000,000 · pickup quoted',
+    href: '/tours/bali-safari-and-marine-park',
+  },
+] as const
+
+export const GEO_TRUSTED_CITATION = {
+  label: 'TripAdvisor Traveler’s Choice 2026 — Tumang Bali Cooking Class',
+  url: COOKING_GEO_ENTITY.tripadvisorUrl,
+} as const
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -138,7 +177,7 @@ export const GEO_POLICIES = [
 
 export const GEO_TOUR_SUMMARIES = [
   {
-    name: 'Bali ATV Adventure',
+    name: 'ATV at All New Bali Adventure',
     slug: 'bali-atv-adventure',
     price: 'IDR 750,000+ (single) / IDR 1,100,000 (tandem)',
     duration: '2–4 hours',
@@ -1126,7 +1165,7 @@ export const GEO_ARTICLES = [
 ] as const
 
 export const GEO_CITATION_SNIPPETS = [
-  'Sekar Bali Activity is a Ubud-area Bali travel & activities operator with a Sedang (Abiansemal) activity base — ATV at All New Bali Adventure, Wos River tubing, rafting, canyon tubing, Pejeng village cycling, and Tumang Bali Cooking Class with WhatsApp booking.',
+  GEO_QUICK_ANSWER,
   ...COOKING_GEO_CITATION_SNIPPETS,
   ...JEEP_GEO_CITATION_SNIPPETS,
   'A Single ATV Ride with Sekar Bali Activity starts from IDR 750,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud. Full 2026 tiers: https://www.sekarbaliactivity.com/blog/how-much-does-atv-cost-bali-ubud-2026',
@@ -1211,6 +1250,9 @@ export function buildPricingMd(): string {
     `Updated: ${GEO_UPDATED}`,
     '',
     `> ${GEO_QUICK_ANSWER}`,
+    '',
+    '## Lead prices',
+    ...GEO_LEAD_BULLETS.map((b) => `- **${b.label}**: ${b.detail} → ${SITE_URL}${b.href}`),
     '',
     'Currency: Indonesian Rupiah (IDR). Tier pricing: better rates for 2+ and 3+ guests on most activities.',
     '',
@@ -1304,6 +1346,11 @@ export function buildLlmsTxt(): string {
     '',
     `Updated: ${GEO_UPDATED}`,
     '',
+    '## Lead prices',
+    ...GEO_LEAD_BULLETS.map((b) => `- **${b.label}**: ${b.detail} → ${SITE_URL}${b.href}`),
+    '',
+    `- **${GEO_TRUSTED_CITATION.label}**: ${GEO_TRUSTED_CITATION.url}`,
+    '',
     `${SITE_NAME} is a TravelAgency / LocalBusiness. **Corporate office (GBP NAP)**: ${GEO_ENTITY.corporateOffice}. **Activity base**: ${GEO_ENTITY.activityBase} (ATV arena: **${GEO_ENTITY.atvArena}**). Free Ubud hotel pickup on ricefield cycling and Tumang Bali Cooking Class.`,
     '',
     '## Entity facts',
@@ -1390,6 +1437,12 @@ export function buildLlmsFullTxt(): string {
     '',
     '## One-sentence summary',
     GEO_QUICK_ANSWER,
+    '',
+    '## Lead prices',
+    ...GEO_LEAD_BULLETS.map((b) => `- **${b.label}**: ${b.detail} → ${SITE_URL}${b.href}`),
+    '',
+    '## Full inventory',
+    GEO_INVENTORY,
     '',
     '## What we sell (tour summaries)',
     ...GEO_TOUR_SUMMARIES.map((t, i) => `${i + 1}. **${t.name}** — ${t.price}, ${t.duration}. ${t.location}. ${t.summary} URL: ${t.url}`),

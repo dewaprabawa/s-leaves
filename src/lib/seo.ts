@@ -159,7 +159,7 @@ export function buildWebsiteSchema() {
     description: DEFAULT_DESCRIPTION,
     publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: 'en-US',
-    dateModified: '2026-09-23',
+    dateModified: '2026-09-25',
     hasPart: [
       {
         '@type': 'WebPage',

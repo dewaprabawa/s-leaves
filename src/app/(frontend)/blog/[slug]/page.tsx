@@ -157,7 +157,7 @@ export default async function BlogPostPage({ params }: Props) {
             : isAtvPost
               ? {
                   '@type': 'TouristTrip',
-                  name: 'Bali ATV Quad Bike Adventure near Ubud',
+                  name: 'ATV at All New Bali Adventure near Ubud',
                   url: 'https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
                 }
               : isMelukatPost

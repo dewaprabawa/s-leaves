@@ -124,7 +124,7 @@ export interface Tour {
 export const TOURS: Tour[] = [
   {
     id: "bali-atv-adventure",
-    title: "Bali ATV Quad Bike Adventure near Ubud",
+    title: "ATV at All New Bali Adventure near Ubud",
     slug: "bali-atv-adventure",
     category: "adventure",
     area: "Sedang / Ubud",
@@ -134,12 +134,12 @@ export const TOURS: Tour[] = [
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "Private ATV Ride Ubud | From IDR 750K",
+    seoTitle: "ATV All New Bali Adventure | From IDR 750K",
     seoDescription:
-      "ATV ride Ubud at All New Bali Adventure — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Hotel pickup IDR 400K or self-meet. Book WhatsApp.",
+      "Book ATV at All New Bali Adventure near Ubud — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Pickup IDR 400K or self-meet. WhatsApp.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
-      alt: "ATV jungle adventure ride through tropical rainforest trails",
+      alt: "ATV ride at All New Bali Adventure near Ubud through jungle trails",
     },
     gallery: [
       {

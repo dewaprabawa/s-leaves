@@ -265,6 +265,7 @@ function buildTourSchema(tour: Tour) {
   if (cooking) {
     return {
       ...base,
+      instructor: { "@id": `${SITE_URL}/tours/balinese-cooking-class#chef` },
       brand: {
         "@type": "Brand",
         name: "Tumang Bali",
@@ -457,7 +458,10 @@ function buildCookingWebPageSchema(tour: Tour) {
     dateModified: COOKING_GEO_UPDATED,
     inLanguage: "en-US",
     isPartOf: { "@id": `${SITE_URL}/#website` },
-    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    about: [
+      { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+      { "@id": `${SITE_URL}/tours/balinese-cooking-class#chef` },
+    ],
     speakable: {
       "@type": "SpeakableSpecification",
       cssSelector: [".cooking-geo-tldr", ".cooking-geo-answer", ".geo-tldr"],
@@ -475,6 +479,21 @@ function buildCookingWebPageSchema(tour: Tour) {
       COOKING_GEO_ENTITY.moneyPage,
       COOKING_GEO_ENTITY.tripadvisorUrl,
     ],
+  }
+}
+
+function buildCookingPersonSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": `${SITE_URL}/tours/balinese-cooking-class#chef`,
+    name: COOKING_GEO_ENTITY.chef,
+    jobTitle: "Head Chef",
+    description:
+      "Head chef at Tumang Bali Cooking Class near Ubud. Teaches Base Genep, sate lilit, and 10+ dishes in English to a max of 8 guests.",
+    url: COOKING_GEO_ENTITY.sekarUrl,
+    worksFor: { "@id": `${SITE_URL}/#organization` },
+    sameAs: [COOKING_GEO_ENTITY.tripadvisorUrl, COOKING_GEO_ENTITY.moneyPage],
   }
 }
 
@@ -588,6 +607,12 @@ export default async function TourPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
       />
+      {cooking ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildCookingPersonSchema()) }}
+        />
+      ) : null}
       {cooking
         ? buildCookingQaSchemas().map((qa) => (
             <script

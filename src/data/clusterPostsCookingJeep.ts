@@ -3,7 +3,7 @@ export const COOKING_JEEP_CLUSTER_POSTS = [
   {
     slug: 'cooking-class-ubud-price-2026-worth-it',
     title: 'Cooking Class Ubud Price 2026: Is Tumang Worth It?',
-    seoTitle: 'Cooking Class Ubud 2026 | Is Tumang Worth 450K?',
+    seoTitle: 'Is Tumang Cooking Class Worth 450K?',
     excerpt:
       'Tumang Bali Cooking Class is promo IDR 450,000 (was 506,370) with free Ubud pickup, max 8 guests, and 10+ dishes — honest 2026 worth-it verdict.',
     publishedAt: '2026-09-19',
@@ -169,7 +169,7 @@ Diet does not lock you to one session. Request veg / vegan on either clock — [
   {
     slug: 'mount-batur-sunrise-jeep-tour-guide-2026',
     title: 'Private Mount Batur Jeep Guide (2026)',
-    seoTitle: 'Private Mount Batur Jeep Guide 2026',
+    seoTitle: 'Batur Jeep Itinerary 2026 | No-Hike Clock',
     excerpt:
       'No-hike 4×4 to the Mount Batur crater rim — 6–7 hours, island-wide pickup, IDR tiers, meal included. 2026 itinerary from Ubud and south Bali.',
     publishedAt: '2026-09-19',

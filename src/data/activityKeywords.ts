@@ -56,7 +56,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Ubud ATV ride',
       'quad bike adventure Bali',
       'Bali quad bike tour Ubud',
-      'All New Bali Adventure',
+      'All New Bali Adventure', // money-page title must keep this phrase (venue #2 slot)
     ],
     book: [
       'private ATV ride Ubud price',
@@ -430,9 +430,6 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
 export const SITE_KEYWORDS: string[] = uniqueKeywords([
   ...KEYWORD_CLUSTERS['batur-sunrise-jeep-tour'].head.slice(0, 3),
   ...ACTIVITY_ORDER.flatMap((slug) => KEYWORD_CLUSTERS[slug].head.slice(0, 2)),
-  'cycling cooking class Ubud',
-  'jungle swing and cooking class Ubud',
-  'Swing Heaven cooking class Ubud',
   'Tirta Empul water purification ceremony',
   'Bali Bird Park',
   'Bali Safari ticket',
@@ -442,40 +439,29 @@ export const SITE_KEYWORDS: string[] = uniqueKeywords([
   BRAND_KEYWORD,
 ])
 
+/**
+ * Keyword jobs (avoid cannibalization):
+ * - `/` owns brand + jeep/cooking/ATV discovery (SITE_KEYWORDS)
+ * - `/experiences` owns catalog browse — not money-page heads
+ * - `/book` owns WhatsApp checkout + combo handoff — not "ATV ride Ubud"
+ * - `/tours/[slug]` owns commercial head terms
+ * - `/blog/*` owns how / vs / worth / when / where (compare + extras only)
+ */
+export const EXPERIENCES_PAGE_KEYWORDS: string[] = uniqueKeywords([
+  'browse Ubud experiences',
+  'Sekar Bali Activity catalog',
+  'Ubud activity list',
+  BRAND_KEYWORD,
+])
+
 /** /book checkout — transactional modifiers competitors put in CTAs. */
 export const BOOK_PAGE_KEYWORDS: string[] = uniqueKeywords([
-  'book ATV Ubud',
-  'private ATV ride Ubud price',
+  'book Bali adventure WhatsApp',
+  'WhatsApp checkout Ubud',
   'ATV river tubing combo',
-  'Ayung River rafting Ubud',
-  'rafting Ubud price 2026',
-  'canyon tubing Ubud',
-  'Wos River tubing price',
   'cycling cooking class Ubud',
   'jungle swing and cooking class Ubud',
   'Swing Heaven cooking class Ubud',
-  'Tumang Bali Cooking Class',
-  'cooking class Ubud free pickup',
-  'Ubud ricefield cycling',
-  'ATV ride Ubud',
-  'how much is ATV in Ubud',
-  'Tirta Empul water purification ceremony',
-  'melukat ceremony Ubud',
-  'Private Mount Batur jeep tour',
-  'Swing Heaven Ubud price',
-  'Griya Beji Waterfall',
-  'waterfall purification Ubud',
-  'palm reading Bali Ubud',
-  'mental healing Bali',
-  'private melukat Bali',
-  'private Bali itinerary',
-  'Bali family trip',
-  'custom Bali itinerary',
-  'Bali Bird Park',
-  'Bali Safari Jungle Hopper',
-  'Bali canyoning',
-  'Ubud batik class',
-  'book Bali adventure WhatsApp',
   BRAND_KEYWORD,
 ])
 
@@ -718,6 +704,11 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
 }
 
 const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
+  'bali-atv-all-new-bali-adventure-location-guide': [
+    'All New Bali Adventure',
+    'All New Bali Adventure location',
+    'All New Bali Adventure Sedang',
+  ],
   'tandem-atv-ubud-price': ['tandem ATV Ubud price', 'single vs tandem ATV Ubud'],
   'how-much-does-atv-cost-bali-ubud-2026': ['ATV Ubud price 2026', 'how much does ATV cost Bali'],
   'rafting-ubud-price-2026': [
@@ -742,7 +733,7 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'things-to-do-near-ubud-2026': [
     'things to do near Ubud',
     'Ubud activities 2026',
-    'Ubud tours prices',
+    'what to book first in Ubud',
   ],
   'bali-adventure-packages-prices-2026': [
     'Bali adventure packages prices 2026',
@@ -867,9 +858,16 @@ export function getBlogKeywords(slug: string): string[] | undefined {
   }
 
   const slugs = Array.isArray(mapped) ? mapped : [mapped]
+  // Spokes get compare + extras only. Head terms stay on /tours/[slug],
+  // except the All New Bali Adventure location guide, which owns the
+  // venue-name query via BLOG_EXTRA_KEYWORDS (tour title still names the arena).
   return uniqueKeywords([
     ...extras,
-    ...slugs.flatMap((s) => getActivityKeywords(s) ?? []),
+    ...slugs.flatMap((s) => {
+      const cluster = getKeywordCluster(s)
+      if (!cluster) return []
+      return [...cluster.compare, ...cluster.book.slice(0, 2)]
+    }),
     BRAND_KEYWORD,
   ])
 }

@@ -1,38 +1,50 @@
 # Action Plan — SEO / GEO / CTA (Sekar Bali Activity)
 
-**Date:** 2026-09-24  
-**Live score:** 78/100 · **After this PR:** 82/100 (in-repo CTA, hours, `/book` message-match)  
+**Date:** 2026-09-25  
+**Live score:** 78/100 · **After this PR:** 84/100  
 **Conversion goal:** WhatsApp booking with prefilled details
 
 ## 1. Immediate blockers
 
-None. The site is indexable, HTTPS, self-canonical, and allows Google + AI crawlers. 0 broken links on the homepage crawl.
+None. The site is indexable, HTTPS, self-canonical, and allows Google + AI crawlers.
 
-## 2. Done in this PR (quick wins)
+## 1b. Why “All New Bali Adventure” dropped from #2 (2026-09-25)
 
-1. **Header CTA** — always visible; `Book` (mobile) / `Book WhatsApp` (desktop); overlay `Book on WhatsApp`.
-2. **Contact nav** — `/contact` (NAP page) instead of `/#contact`.
-3. **Hours honesty** — schema `08:00–20:00` matches `/contact`; header no longer says “Pickup from 7 AM” (jeep collects 02:00–03:00).
-4. **Article default CTA** — “Start WhatsApp booking” for `/book` (label matches the hop).
-5. **Tour CTAs** — activity-specific primary + sticky labels (jeep, cooking, ATV, cycling, rafting, tubing, swing, waterfall, melukat, coffee, day tours).
-6. **`/book` SERP + H1** — jeep + cooking + ATV so checkout matches the homepage title.
-7. **Homepage closer** — “Start WhatsApp booking” + “WhatsApp private jeep” (was ATV).
-8. **Twitter** — `twitter:creator` = `@sekarbaliactivity`.
-9. **Website schema** `dateModified` refreshed to 2026-09-23.
-10. **FAQ booking copy** updated to the new button names.
+**Finding (Confirmed):** For the venue query, Google still puts [allnewbaliadventure.com](https://allnewbaliadventure.com/) first. Sekar used to sit immediately under that result. Live titles after the cannibalization pass no longer name the arena on the **money page**:
 
-## 3. Strategic (next)
+| URL | Live title | Match for “All New Bali Adventure”? |
+|-----|------------|-------------------------------------|
+| Official arena | All New Bali Adventure – Beat the land… | Yes — brand homepage |
+| `/tours/bali-atv-adventure` | Private ATV Ride Ubud \| From IDR 750K | **No** — title/H1 lost the venue |
+| `/` | Sekar Bali Activity \| Jeep, Cooking & ATV Ubud | No — jeep-led on purpose |
+| Location guide | All New Bali Adventure \| ATV Arena Ubud | Yes — but thinner, cannot inherit the tour’s #2 slot overnight |
+| Klook / xtra Trips / Gusti | “All New Bali Adventure ATV Ride…” | Exact-match titles filled the gap |
+
+`getBlogKeywords()` also stripped the head term `All New Bali Adventure` from the location guide. Aggregators with exact-match titles + KeepAll Bali Adventure (similar name) now occupy the slots under the official site.
+
+**Fix in this revision:** Tour SERP + H1 put the venue back (`ATV All New Bali Adventure | From IDR 750K` / `ATV at All New Bali Adventure near Ubud`). Location guide keeps the *where/pin* title and gets the venue keywords + official-site citation. Homepage title stays jeep-led so `/` does not recannibalize ATV.
+
+## 2. Done in this revision (2026-09-25)
+
+1. **Split `GEO_QUICK_ANSWER`** — 53-word “X is…” definition (40–60 window). Full inventory lives in `GEO_INVENTORY` for `llms-full.txt` / `pricing.md` only.
+2. **Lead prices** — `GEO_LEAD_BULLETS` on homepage GEO block, `/llms.txt`, `/llms-full.txt`, and `/pricing.md` (jeep / cooking / cycling / ATV / park tickets).
+3. **Visible TripAdvisor citation** — homepage GEO block + `llms.txt` link to Tumang Traveler’s Choice 2026. (`citation_readiness.py` still scores tripadvisor as non-trusted — gov/edu/wikipedia only.)
+4. **Article CTAs** — 77/77 blog slugs mapped to the matching tour. Park / workshop / dirt-bike copy keeps **quoted pickup**.
+5. **Person schema** — Chef Wayan Suryana JSON-LD + `instructor` on `/tours/balinese-cooking-class`.
+6. **`GEO_UPDATED` / Website `dateModified`** — 2026-09-25.
+
+Earlier in this PR (2026-09-24): header Book CTA, `/contact` nav, hours 08:00–20:00, WhatsApp label match, `/book` checkout-only titles, anti-cannibalization keyword jobs.
+
+## 3. Still open
 
 | Priority | Action | Why | Effort |
 |----------|--------|-----|--------|
-| High | Split `GEO_QUICK_ANSWER` / `llms.txt` lead into a ~50-word definition + priced bullets | 257-word run-on is outside citation windows | Medium |
-| High | Visible TripAdvisor link beside Traveler’s Choice 2026 | Citation script: 0 trusted outbound links | Low |
-| High | Map remaining blog slugs in `ArticleBookingCta` to the matching tour | Default `/book` CTA is weaker than a money-page hop | Medium |
+| High | Keep new title jobs when adding cluster posts | Prevents tour vs blog cannibalization | Ongoing |
 | Medium | Replace Unsplash jeep frames with operator photos | Flagship offer still stock | Low (needs files) |
-| Medium | Trim homepage above-fold catalog; keep GEO tables below | 52 images + 8,077 words | Medium |
+| Medium | Trim homepage above-fold catalog; keep GEO tables below | Heavy DOM / image count | Medium |
 | Medium | Re-run PageSpeed mobile on `/`, ATV, jeep after deploy | CWV unknown this run | Low |
 | Low | Remove unused GetYourGuide button branches | Dead aggregator CTA code | Low |
-| Low | Named host/chef bylines (Person schema) on cluster articles | EEAT 66 | Medium |
+| Low | Named host bylines on remaining cluster articles | EEAT 66 | Medium |
 
 ## 4. Do not do
 
@@ -42,10 +54,12 @@ None. The site is indexable, HTTPS, self-canonical, and allows Google + AI crawl
 - Do not add a booking popup on private itinerary pages (consultation only).
 - Do not buy or engineer AI citations.
 - Do not create `sitemap_index.xml` just to satisfy the checker — `/sitemap.xml` is the inventory.
+- Do not give `/book`, `/experiences`, or a blog the same title pattern as a `/tours/[slug]` money page.
+- Do not put the 257-word inventory back into `GEO_QUICK_ANSWER`.
 
 ## 5. After deploy (ops)
 
-1. Request indexing on `/`, `/book`, `/contact`, jeep / cooking / ATV money pages.
+1. Request indexing on `/`, `/llms.txt`, `/tours/balinese-cooking-class`, jeep / ATV money pages.
 2. Confirm GBP hours = 08:00–20:00.
-3. Manual GEO prompts: “Is breakfast cooked in the Batur jeep?” → **No, sit-down meal after the viewpoint**. “Is hotel pickup included on ATV?” → **IDR 400,000 or self-meet**.
-4. Click the new header Book control on a 390px viewport and complete a WhatsApp handoff.
+3. Manual GEO prompts: “Is breakfast cooked in the Batur jeep?” → **No, sit-down meal after the viewpoint**. “Is hotel pickup included on ATV?” → **IDR 400,000 or self-meet**. “What is Sekar Bali Activity?” → should now quote the 53-word definition, not the inventory dump.
+4. Click a park-cluster blog CTA and confirm pickup copy still says **quoted**.

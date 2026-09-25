@@ -44,7 +44,7 @@
 |------|------|----------------|-----------|
 | Cooking | `/tours/balinese-cooking-class` | Money page QA’d 2026-09-11. Spokes: inside class, pickup, cycling+cooking, spices. **Missing:** worth it, vegetarian, market vs afternoon. | Hold money-page edits. Article later this month. |
 | ATV | `/tours/bali-atv-adventure` | Money page QA’d 2026-09-18. Tandem spoke drafted 2026-09-21 (`/blog/tandem-atv-ubud-price`). Combo IDR not on tour card. | Hold money-page edits. |
-| Batur jeep | `/tours/batur-sunrise-jeep-tour` | Guide 2026 + jeep vs trek. **Missing:** pickup times by area; title “from 750K” risk. | **Primary focus.** |
+| Batur jeep | `/tours/batur-sunrise-jeep-tour` | Cluster live (guide, vs trek, pickup times, price, sunrise vs sunset, sit-in vs tracking, Kintamani Day). Money page QA’d 2026-09-25. | Hold money-page edits. |
 | Cycling | `/tours/ubud-ricefield-cycling-tour` | Densest cluster (worth it, vs Tegallalang, combo, pickup, 2026 guide). Duration now 2 hours. | Title only + fix AM/PM friction (see sales notes). |
 
 Skip generic “best Bali” ideas. P2 day tours stay on hold.
@@ -83,7 +83,7 @@ List only — no UI redesign in this run.
 - Cycling money page + `BookNowButton` are **afternoon only** (`13:30`). Combo / worth-it blogs still frame cycling as a **morning** block before Tumang cooking.
 - Cycling worth-it post still says cycling is the **only** tour with free Ubud pickup; cooking also includes it (pickup explainer is correct).
 - Luwak Book fallback is `minPax: 1` while copy requires **minimum 3**; transport to Tampaksiring is not included and is easy to miss in the form.
-- Jeep Book times are `02:30` / `03:00` only — south Bali often needs closer to 02:00; title “From IDR 750K” is 3+ not solo.
+- Jeep Book times now include `02:00` / `02:30` / `03:00` (2026-09-25). Homepage jeep card still uses `getPromoListPrice` 750K as “from”; site default meta still says jeep from 750K.
 - `src/lib/pricing.ts` comment still says pickup is “free on Ubud cycling only” (cooking is also free).
 - Full-day / half-day Ubud tours mark `pickupIncluded: true` while entrance fees and meals are excluded from the from-price.
 - Jeep heroes are Unsplash stock (weaker trust on a 1.35M sunrise product).
@@ -97,6 +97,18 @@ List only — no UI redesign in this run.
 
 ## Tour QA notes
 <!-- A6 appends here -->
+
+### 2026-09-25 — `batur-sunrise-jeep-tour` (implemented in PR)
+Scores (source + live HTML, before → after intent): Title/meta/H1 58 · ATF facts 78 · Schema Offer+ISO 88 · Cluster links 82 · WhatsApp title 70 · FAQ IDR 94.
+
+Shipped:
+1. Absolute SERP title `Mount Batur Jeep | No Hike · 2 from 950K` (40 chars). Was `Private Mount Batur Jeep | Sunrise or Sunset` — no price, no “no hike” head term. Honest 2-pax floor, not the 3+ 750K bait.
+2. H1/title now `Private Mount Batur Jeep near Kintamani`. Meta 157 chars: no-hike + tracking + island-wide pickup + 950K/750K + WhatsApp.
+3. ATF + booking card lead with 2-pax IDR 950K (min bookable). Card no longer advertises 3+ 750K as a “from” promo. 3+ and Kintamani Day promo sit on the next line.
+4. Schema `duration` locked to `PT7H` (sunrise door-to-door). Offer prices stringified. WebPage `significantLink` adds sunrise-vs-sunset, sit-in-vs-tracking, Kintamani Day. WhatsApp Consultation prefills title + 2 guests from IDR 950,000.
+5. In-body links to pickup-times and 2026 price guide. Related guides add dirt-bike vs jeep. Book form sunrise slots now include **02:00** (south Bali) plus 02:30 / 03:00.
+
+Left for later (not this PR): Unsplash hero stock; homepage still uses `getPromoListPrice("jeep-sunrise")` (750K) as a card “from”; site default meta still says jeep “from IDR 750K”.
 
 ### 2026-09-18 — `bali-atv-adventure` (implemented in PR)
 Scores (source): Title/meta/H1 64 · ATF facts 72 · Schema Offer+ISO 78 · Cluster links 76 · WhatsApp title 88 · FAQ IDR 90.
@@ -127,7 +139,7 @@ WhatsApp Consultation already prefills tour title; now also includes promo IDR. 
 
 - `whitewater-rafting` and `canyon-tubing` have no `seoTitle` / `seoDescription`.
 - Cycling `seoTitle` missing price + free-pickup modifiers (meta already has them).
-- Jeep `seoTitle` leads with group-rate “From IDR 750K”.
+- Jeep `seoTitle` now `Mount Batur Jeep | No Hike · 2 from 950K` (2026-09-25) — was the no-price `Sunrise or Sunset` string; do not revert to “from 750K”.
 - ATV `seoTitle` now includes tandem (`ATV Ride Ubud from IDR 750K | Tandem 1.1M`, 2026-09-18).
 - Pickup comment in `pricing.ts` out of date vs cooking free-Ubud rule.
 - Confirm any price/duration change still syncs `pricing.md` + `llms.txt` the same day (cycling duration → 2 hours already in tour data).

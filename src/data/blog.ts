@@ -5,6 +5,7 @@ import { SWING_CLUSTER_POSTS } from './clusterPostsSwing'
 import { GRIYA_BEJI_CLUSTER_POSTS } from './clusterPostsGriyaBeji'
 import { GIRLS_TRIP_CLUSTER_POSTS } from './clusterPostsGirlsTrip'
 import { PARK_WORKSHOP_CLUSTER_POSTS } from './clusterPostsParkWorkshop'
+import { RAFTING_TUBING_CLUSTER_POSTS } from './clusterPostsRaftingTubing'
 
 export type BlogPost = {
   slug: string
@@ -19,6 +20,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...RAFTING_TUBING_CLUSTER_POSTS,
   ...PARK_WORKSHOP_CLUSTER_POSTS,
   ...GIRLS_TRIP_CLUSTER_POSTS,
   ...GRIYA_BEJI_CLUSTER_POSTS,
@@ -1510,7 +1512,7 @@ Want a full cultural day? Pair this ride with an afternoon [Tumang Bali Cooking 
     author: 'Sekar Bali Activity',
     image: '/images/adventures/rafting.jpg',
     content: `
-**How much does whitewater rafting near Ubud cost?** Sekar Bali Activity offers whitewater rafting at **IDR 500,000 per person**, or **IDR 450,000** when 2 or more guests book (minimum 2), including safety equipment, professional guides, and a post-ride lunch. Pickup from Ubud and nearby areas is available (surcharge applies outside the free cycling pickup zone).
+**How much does whitewater rafting near Ubud cost?** Sekar Bali Activity offers whitewater rafting at **IDR 500,000 per person**, or **IDR 450,000** when 2 or more guests book (minimum 2), including safety equipment, professional guides, and a post-ride lunch. **Hotel pickup is IDR 400,000** or self-meet — it is not the free Ubud rule on cycling and cooking. Full 2026 IDR table: [Ayung rafting Ubud price](/blog/rafting-ubud-price-2026).
 
 > **Key Takeaways**
 > - **IDR 500,000** · **IDR 450,000** for 2+ (min 2) on Class II–III rapids
@@ -1527,7 +1529,7 @@ After hotel pickup and a safety briefing, you paddle through jungle-lined rapids
 
 ## Typical Rafting Day Flow
 
-1. Pickup from your hotel (Ubud area)
+1. Self-meet at the Ayung put-in, or hotel pickup (**IDR 400,000**)
 2. Arrival, gear fitting, and safety briefing
 3. Guided whitewater run on Class II–III rapids
 4. Lunch and return transfer
@@ -1566,7 +1568,7 @@ Open the [Whitewater Rafting tour page](/tours/whitewater-rafting), tap **Book N
     author: 'Sekar Bali Activity',
     image: '/images/adventures/canyon-tubing.jpg',
     content: `
-**What is canyon tubing in Bali?** Canyon tubing is a guided float down the **Wos River** on an inflatable tube, passing jungle canyon walls and calm crystal water. Sekar Bali Activity offers canyon tubing at **IDR 500,000 per person**, or **IDR 450,000** when 2 or more guests book — a gentler water adventure than whitewater rafting, ideal for couples and families.
+**What is canyon tubing in Bali?** Canyon tubing is a guided float down the **Wos River** on an inflatable tube, passing jungle canyon walls and calm crystal water. Sekar Bali Activity offers canyon tubing at **IDR 500,000 per person**, or **IDR 450,000** when 2 or more guests book — a gentler water adventure than whitewater rafting, ideal for couples and families. **Lunch is not included.** **Hotel pickup is IDR 400,000** or self-meet. Full 2026 table: [Wos River tubing price](/blog/wos-river-tubing-price-2026).
 
 > **Key Takeaways**
 > - **IDR 500,000** · **IDR 450,000** for 2+ on the Wos River
@@ -1588,10 +1590,10 @@ Open the [Whitewater Rafting tour page](/tours/whitewater-rafting), tap **Book N
 
 ## Typical Tubing Flow
 
-1. Hotel pickup (Ubud area — surcharge may apply outside free cycling pickup zone)
+1. Self-meet at the Wos canyon, or hotel pickup (**IDR 400,000**)
 2. Briefing and gear fitting
 3. Guided canyon tubing on the Wos River
-4. Change into dry clothes and return transfer
+4. Change into dry clothes — lunch is **not** in this ticket
 
 ## ATV + Tubing Combo (Most Popular)
 

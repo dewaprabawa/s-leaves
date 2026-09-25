@@ -24,16 +24,16 @@ const adventureOffers: AdventureOffer[] = [
     image: "/images/adventures/atv-adventure.jpg",
   },
   {
-    name: "Whitewater Rafting Adventure",
+    name: "Ayung River Whitewater Rafting near Ubud",
     description:
-      "Class II-III whitewater rafting through a jungle river canyon. IDR 500,000 list, or IDR 450,000 for 2+ guests. All-inclusive with professional crew and lunch.",
+      "Class II-III Ayung River rafting near Ubud. IDR 500,000 list, or IDR 450,000 for 2+ guests. Lunch included. Hotel pickup IDR 400,000 or self-meet.",
     price: "450000",
     image: "/images/adventures/rafting.jpg",
   },
   {
-    name: "Canyon Tubing Experience",
+    name: "Wos River Canyon Tubing near Ubud",
     description:
-      "Float through hidden Bali canyons on an inflatable tube. IDR 500,000 list, or IDR 450,000 for 2+ guests. Pair with an ATV + river tubing combo for the ultimate adventure day.",
+      "Wos River canyon tubing near Ubud. IDR 500,000 list, or IDR 450,000 for 2+ guests. Lunch not included. Hotel pickup IDR 400,000 or self-meet.",
     price: "450000",
     image: "/images/adventures/canyon-tubing.jpg",
   },

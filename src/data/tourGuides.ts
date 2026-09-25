@@ -59,6 +59,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'whitewater-rafting': [
     {
+      title: 'Ayung rafting Ubud price 2026',
+      href: '/blog/rafting-ubud-price-2026',
+      blurb: '500K · 450K for 2+ · lunch in · pickup extra.',
+    },
+    {
       title: 'Things to do near Ubud 2026',
       href: '/blog/things-to-do-near-ubud-2026',
       blurb: 'Compare rafting with tubing and ATV in one table.',
@@ -85,6 +90,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'canyon-tubing': [
+    {
+      title: 'Wos River tubing price 2026',
+      href: '/blog/wos-river-tubing-price-2026',
+      blurb: '500K · 450K for 2+ · lunch not included.',
+    },
     {
       title: 'Things to do near Ubud 2026',
       href: '/blog/things-to-do-near-ubud-2026',

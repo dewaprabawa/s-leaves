@@ -1,6 +1,6 @@
 # SEO weekly backlog
 
-**Last run:** 2026-09-21 (A3 cluster — `tandem-atv-ubud-price`)  
+**Last run:** 2026-09-23 (Round 6 SEO/GEO — rafting/tubing price spokes + jeep no-hike title)  
 **Owner:** Sekar Bali marketing / Cursor automation A2
 
 ## Inbox
@@ -32,11 +32,11 @@
    - Effort: **M**  
    - Action: **new article** (honest worth-it + dietary request + morning market vs afternoon). Not this week’s first write — rotate jeep/ATV first.
 
-5. **Rafting Ubud price** (P1 clearly underserved)  
+5. **Rafting Ubud price** (P1)  
    - Money page: `/tours/whitewater-rafting`  
-   - Why it sells: IDR 500K list / IDR 450K for 2+ on Class II–III is a mid-ticket filler next to ATV. Comparison blog exists (`/blog/rafting-vs-tubing-vs-atv-near-ubud`). Canyon tubing uses the same 500K / 450K for 2+ list.  
+   - Why it sells: IDR 500K list / IDR 450K for 2+ on Class II–III. Competitors own “harga / price 2026” with dedicated tables.  
    - Effort: **S**  
-   - Action: **keep titles** on both P1 pages (`Rafting Ubud | 500K · 450K for 2+`, `Canyon Tubing Ubud | 500K · 450K for 2+`) + **internal links** from ATV money page.
+   - Action: **done 2026-09-23** — `/blog/rafting-ubud-price-2026` + `/blog/wos-river-tubing-price-2026`; SERP titles now carry **Price** + IDR; jeep title now **No Hike · 950K / 750K**.
 
 ## P0 rotation
 
@@ -56,9 +56,8 @@ Skip generic “best Bali” ideas. P2 day tours stay on hold.
    - Target: `/tours/batur-sunrise-jeep-tour`  
    - Status: already live as `/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026` — do not duplicate.
 
-2. **P1 rafting price / Class II–III vs tubing** (or cooking leftover if rotating back)  
-   - Money page: `/tours/whitewater-rafting`  
-   - Comparison already live: `/blog/rafting-vs-tubing-vs-atv-near-ubud`. Prefer a dedicated **rafting Ubud price 2026** spoke only if it is not just a retitle of the existing guide.
+2. **P1 rafting / tubing price spokes**  
+   - Status: **live 2026-09-23** as `/blog/rafting-ubud-price-2026` and `/blog/wos-river-tubing-price-2026` (price + pickup honesty, not a retitle of the existing guides).
 
 ## Next articles to write
 | Priority | Working title | Target money page | Status |
@@ -93,7 +92,7 @@ List only — no UI redesign in this run.
 **Tours:** `bali-atv-adventure` · `batur-sunrise-jeep-tour` · `whitewater-rafting` · `canyon-tubing` · `ubud-ricefield-cycling-tour` · `luwak-coffee-plantation` · `balinese-cooking-class` · `full-day-ubud-tour` · `half-day-ubud-tanah-lot-tour`
 
 **Blogs already covering commercial intent:**  
-`how-much-does-atv-cost-bali-ubud-2026` · `tandem-atv-ubud-price` · `bali-atv-all-new-bali-adventure-location-guide` · `private-atv-vs-mass-market-ubud` · `atv-river-tubing-wos-river-bali` · `ubud-atv-track-types-mud-jungle-vs-cave-tunnel` · `mount-batur-sunrise-jeep-tour-guide-2026` · `mount-batur-jeep-vs-sunrise-trek` · `is-ubud-cycling-tour-worth-it` · `ubud-ricefield-cycling-tour-guide-2026` · `pejeng-rice-terrace-cycling-vs-tegallalang` · `cycling-cooking-class-ubud-full-day-itinerary` · `ubud-hotel-pickup-bali-adventures-explained` · `rafting-vs-tubing-vs-atv-near-ubud` · `bali-whitewater-rafting-near-ubud-guide` · `bali-canyon-tubing-guide-ubud` · `bali-adventure-packages-prices-2026` · `inside-balinese-cooking-class-pejeng` · `luwak-coffee-ethical-sourcing` · `how-to-spot-ethical-luwak-coffee-in-bali`
+`how-much-does-atv-cost-bali-ubud-2026` · `tandem-atv-ubud-price` · `bali-atv-all-new-bali-adventure-location-guide` · `private-atv-vs-mass-market-ubud` · `atv-river-tubing-wos-river-bali` · `ubud-atv-track-types-mud-jungle-vs-cave-tunnel` · `mount-batur-sunrise-jeep-tour-guide-2026` · `mount-batur-jeep-vs-sunrise-trek` · `is-ubud-cycling-tour-worth-it` · `ubud-ricefield-cycling-tour-guide-2026` · `pejeng-rice-terrace-cycling-vs-tegallalang` · `cycling-cooking-class-ubud-full-day-itinerary` · `ubud-hotel-pickup-bali-adventures-explained` · `rafting-vs-tubing-vs-atv-near-ubud` · `bali-whitewater-rafting-near-ubud-guide` · `rafting-ubud-price-2026` · `bali-canyon-tubing-guide-ubud` · `wos-river-tubing-price-2026` · `bali-adventure-packages-prices-2026` · `inside-balinese-cooking-class-pejeng` · `luwak-coffee-ethical-sourcing` · `how-to-spot-ethical-luwak-coffee-in-bali`
 
 ## Tour QA notes
 <!-- A6 appends here -->
@@ -125,9 +124,8 @@ WhatsApp Consultation already prefills tour title; now also includes promo IDR. 
 ## Technical / schema debt
 <!-- A2/A4 appends here -->
 
-- `whitewater-rafting` and `canyon-tubing` have no `seoTitle` / `seoDescription`.
-- Cycling `seoTitle` missing price + free-pickup modifiers (meta already has them).
-- Jeep `seoTitle` leads with group-rate “From IDR 750K”.
-- ATV `seoTitle` now includes tandem (`ATV Ride Ubud from IDR 750K | Tandem 1.1M`, 2026-09-18).
+- Rafting / tubing now have price SERP titles (2026-09-23).
+- Jeep `seoTitle` is now `Batur Jeep No Hike | Private 950K · 750K` (both published tiers; sit-in is the no-hike option).
+- ATV `seoTitle` is `Private ATV Ride Ubud | From IDR 750K`.
 - Pickup comment in `pricing.ts` out of date vs cooking free-Ubud rule.
 - Confirm any price/duration change still syncs `pricing.md` + `llms.txt` the same day (cycling duration → 2 hours already in tour data).

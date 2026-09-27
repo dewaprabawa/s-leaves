@@ -308,7 +308,7 @@ const BUGGIES = ticketGeo({
     {
       intent: 'jungle buggies vs atv ubud',
       q: 'Are jungle buggies the same as an Ubud ATV?',
-      a: `No. Jungle buggies (${idr(P.buggies)}) are Polaris rigs on a purpose-built lap course. Sekar Bali Activity ATV is a different ticket at All New Bali Adventure in Sedang from IDR 750,000 — jungle mud and river crossings.`,
+      a: `No. Jungle buggies (${idr(P.buggies)}) are Polaris rigs on a purpose-built lap course. Sekar Bali Activity ATV is a quad at All New Bali Adventure in Sedang from IDR 750,000. The 1-hour UTV at Buggy Bali Adventure (IDR 1,200,000 single / 1,500,000 tandem) is a third ticket.`,
     },
   ],
   citationSnippets: [

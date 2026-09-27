@@ -408,6 +408,7 @@ export const NICHE_KEYWORDS = [
   'Ubud silver class',
   'Kintamani dirt bike',
   'jungle buggies Bali',
+  'UTV buggy Bali',
 ] as const
 
 const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
@@ -540,7 +541,16 @@ export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
   'jungle-buggies-complete-3-laps-tour': {
     head: ['Bali jungle buggies', 'Polaris buggy Bali', 'jungle buggy 3 laps'],
     book: ['jungle buggies 3 laps price', 'Polaris buggy Bali price'],
-    compare: ['jungle buggies vs ATV Ubud'],
+    compare: ['jungle buggies vs ATV Ubud', 'jungle buggies vs UTV Bali'],
+  },
+  'utv-buggy-bali-adventure': {
+    head: ['UTV buggy Bali', 'Buggy Bali Adventure', 'UTV ride Bali'],
+    book: [
+      'UTV buggy Bali price',
+      'single UTV buggy Bali',
+      'tandem UTV buggy Bali',
+    ],
+    compare: ['UTV vs ATV Ubud', 'UTV vs jungle buggies Bali'],
   },
   'dirt-bike-kintamani-black-lava': {
     head: ['Kintamani dirt bike', 'Bali enduro Kintamani', 'black lava dirt bike Bali'],

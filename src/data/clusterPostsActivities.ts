@@ -43,6 +43,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
 | Bali Zoo mud fun | **1,850,000** | Half day | Quoted | [Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park) |
 | Bali canyoning | **1,850,000** | Half / full day | Quoted | [Canyoning](/tours/canyoning) |
 | Jungle buggies 3 laps | **1,120,000** | ~2 hrs | Quoted | [Buggies](/tours/jungle-buggies-complete-3-laps-tour) |
+| UTV Buggy Bali Adventure | **1,200,000** single · **1,500,000** tandem | 1 hr | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
 | Ubud batik / silver class | **650,000** | 3 hrs | Quoted | [Workshops](/blog/ubud-workshop-classes-2026) |
 | Kintamani dirt bike | **4,100,000** | ~8 hrs | Quoted | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 
@@ -88,7 +89,7 @@ These are **park or workshop tickets we confirm on WhatsApp** — not our Sedang
 
 **[Bali Bird Park](/tours/bali-bird-park)** in Batubulan from **IDR 585,000**. **[Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park)** from **IDR 1,850,000**. **[Bali Safari](/tours/bali-safari-and-marine-park)** from **IDR 1,000,000** (Jungle Hopper) to **IDR 2,300,000** (Rhino). **[Taro lodge](/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge)** ride + lunch from **IDR 1,665,000**. Comparisons: [Safari packages](/blog/bali-safari-packages-compared-2026) · [Zoo vs Safari vs Taro](/blog/bali-zoo-vs-bali-safari-vs-taro) · [Bird Park from Ubud](/blog/bali-bird-park-from-ubud-2026).
 
-**[Canyoning](/tours/canyoning)** from **IDR 1,850,000** is a gorge descent — not tubing, not a boat. **[Jungle buggies](/tours/jungle-buggies-complete-3-laps-tour)** from **IDR 1,120,000** are Polaris laps — not Sedang ATV. Guide: [canyoning vs tubing vs buggies](/blog/bali-canyoning-vs-tubing-vs-buggies).
+**[Canyoning](/tours/canyoning)** from **IDR 1,850,000** is a gorge descent — not tubing, not a boat. **[Jungle buggies](/tours/jungle-buggies-complete-3-laps-tour)** from **IDR 1,120,000** are Polaris laps — not Sedang ATV. **[UTV Buggy Bali Adventure](/tours/utv-buggy-bali-adventure)** is a 1-hour sit-in UTV — single **IDR 1,200,000**, tandem **IDR 1,500,000**. Guide: [canyoning vs tubing vs buggies](/blog/bali-canyoning-vs-tubing-vs-buggies).
 
 **[Ubud workshops](/blog/ubud-workshop-classes-2026)** from **IDR 600,000** (2-hour lontar / dance / bamboo / canang) or **IDR 650,000** (3-hour batik / silver).
 

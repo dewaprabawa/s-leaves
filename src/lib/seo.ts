@@ -134,6 +134,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Private Bali Itinerary', url: `${SITE_URL}/tours/bali-private-itinerary` },
   { name: 'Bali Bird Park', url: `${SITE_URL}/tours/bali-bird-park` },
   { name: 'Bali Canyoning', url: `${SITE_URL}/tours/canyoning` },
+  { name: 'UTV Buggy Bali Adventure', url: `${SITE_URL}/tours/utv-buggy-bali-adventure` },
   { name: 'Ubud Batik Class', url: `${SITE_URL}/tours/batik-class` },
   { name: 'Bali Family Private Itinerary', url: `${SITE_URL}/blog/bali-family-private-itinerary-2026` },
   { name: '6-Day Bali Girls Trip Guide', url: `${SITE_URL}/blog/bali-6-day-girls-trip-itinerary-2026` },

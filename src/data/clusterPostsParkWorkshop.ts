@@ -110,23 +110,24 @@ Message WhatsApp with **Zoo / Safari package / Taro, date, guest count, kids’ 
     author: 'Sekar Bali Activity',
     image: '/images/adventures/canyoning-waterfall.jpg',
     content: `
-**Canyoning, tubing, buggies, or ATV — which water or land day?** They are **four tickets**. **[Bali canyoning](/tours/canyoning)** from **IDR 1,850,000** is a **gorge descent** (rappel, jump, slide). **[Canyon tubing](/tours/canyon-tubing)** is **IDR 500,000** (**IDR 450,000** for 2+) — a sit-on-tube float on the **Wos River**. **[Jungle buggies](/tours/jungle-buggies-complete-3-laps-tour)** from **IDR 1,120,000** are **3 Polaris laps** on a purpose-built ~5 km course. **[Sedang ATV](/tours/bali-atv-adventure)** starts at **IDR 750,000** at All New Bali Adventure. None of these is a Nusa Penida boat. WhatsApp — **no payment to inquire**.
+**Canyoning, tubing, buggies, UTV, or ATV — which water or land day?** They are **five tickets**. **[Bali canyoning](/tours/canyoning)** from **IDR 1,850,000** is a **gorge descent** (rappel, jump, slide). **[Canyon tubing](/tours/canyon-tubing)** is **IDR 500,000** (**IDR 450,000** for 2+) — a sit-on-tube float on the **Wos River**. **[Jungle buggies](/tours/jungle-buggies-complete-3-laps-tour)** from **IDR 1,120,000** are **3 Polaris laps** on a purpose-built ~5 km course. **[UTV Buggy Bali Adventure](/tours/utv-buggy-bali-adventure)** is a **1-hour sit-in UTV** — single **IDR 1,200,000**, tandem **IDR 1,500,000**. **[Sedang ATV](/tours/bali-atv-adventure)** starts at **IDR 750,000** at All New Bali Adventure. None of these is a Nusa Penida boat. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - Canyoning = ropes + water in a gorge · measurements required · age 8+
 > - Tubing = easy Wos River float · same desk as ATV
-> - Buggies = Polaris laps · **not** the Sedang ATV
+> - Jungle buggies = Polaris laps · **not** the Sedang ATV
+> - UTV = 1-hour sit-in buggy at Buggy Bali Adventure · **not** the 3-lap Polaris ticket
 > - ATV = jungle mud / river crossings at All New Bali Adventure
 > - We do **not** sell scuba or island fastboats
 
 ## Side-by-side
 
-| | Canyoning | Canyon tubing | Jungle buggies | Sedang ATV |
-| --- | --- | --- | --- | --- |
-| From (IDR) | **1,850,000** | **500,000** · **450,000** for 2+ | **1,120,000** | **750,000** single |
-| What you do | Rappel / jump / slide | Sit on a tube | 3 Polaris laps | Quad mud track |
-| Pickup | Quoted | **IDR 400,000** or self-meet | Quoted | **IDR 400,000** or self-meet |
-| We operate? | We book the seat | Yes (Wos River) | We book the seat | Yes (Sedang arena) |
+| | Canyoning | Canyon tubing | Jungle buggies | UTV buggy | Sedang ATV |
+| --- | --- | --- | --- | --- | --- |
+| From (IDR) | **1,850,000** | **500,000** · **450,000** for 2+ | **1,120,000** | **1,200,000** single · **1,500,000** tandem | **750,000** single |
+| What you do | Rappel / jump / slide | Sit on a tube | 3 Polaris laps | 1-hour ricefield / mud / donut | Quad mud track |
+| Pickup | Quoted | **IDR 400,000** or self-meet | Quoted | Quoted | **IDR 400,000** or self-meet |
+| We operate? | We book the seat | Yes (Wos River) | We book the seat | We book the seat | Yes (Sedang arena) |
 
 ## When to pick canyoning
 
@@ -142,7 +143,7 @@ First-timers and families who want water without ropes: [canyon tubing](/tours/c
 2. WhatsApp **which sport, date, guest count, measurements if canyoning, hotel**
 3. We confirm IDR — **no deposit to ask**
 
-**Ready?** [Canyoning](/tours/canyoning) · [Tubing](/tours/canyon-tubing) · [Buggies](/tours/jungle-buggies-complete-3-laps-tour) · [ATV](/tours/bali-atv-adventure).
+**Ready?** [Canyoning](/tours/canyoning) · [Tubing](/tours/canyon-tubing) · [Buggies](/tours/jungle-buggies-complete-3-laps-tour) · [UTV](/tours/utv-buggy-bali-adventure) · [ATV](/tours/bali-atv-adventure).
 `,
   },
   {

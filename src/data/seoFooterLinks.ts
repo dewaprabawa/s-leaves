@@ -75,6 +75,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Bali Safari tickets', href: '/tours/bali-safari-and-marine-park' },
   { label: 'Bali Canyoning', href: '/tours/canyoning' },
   { label: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour' },
+  { label: 'UTV buggy Bali', href: '/tours/utv-buggy-bali-adventure' },
   { label: 'Kintamani dirt bike', href: '/tours/dirt-bike-kintamani-black-lava' },
   { label: 'Ubud batik class', href: '/tours/batik-class' },
   { label: 'Ubud silver class', href: '/tours/silver-making-class' },

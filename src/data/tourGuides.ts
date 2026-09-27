@@ -536,8 +536,13 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'jungle-buggies-complete-3-laps-tour': [
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'Buggies are not the Sedang ATV.' },
+    { title: 'UTV Buggy Bali Adventure', href: '/tours/utv-buggy-bali-adventure', blurb: '1-hour ricefield UTV — different venue from the 3-lap Polaris course.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle mud at All New Bali Adventure from IDR 750K.' },
-    { title: 'Bali canyoning', href: '/tours/canyoning', blurb: 'Gorge descent if you wanted water + ropes.' },
+  ],
+  'utv-buggy-bali-adventure': [
+    { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'UTV is a 1-hour sit-in buggy — not the 3-lap Polaris ticket.' },
+    { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Quad-bike jungle mud from IDR 750K — a different machine.' },
+    { title: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour', blurb: 'Purpose-built Polaris laps from IDR 1,120,000.' },
   ],
   'dirt-bike-kintamani-black-lava': [
     { title: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep', blurb: 'You ride vs you sit at a crater-rim viewpoint.' },
@@ -681,6 +686,10 @@ export const TOUR_HOST_NOTES: Record<
   canyoning: {
     title: 'From our booking desk',
     body: 'Canyoning only works if every guest sends age, height, weight, and shoe size. We will not confirm a line without those numbers. This is a gorge with ropes — not Wos River tubing and not a Penida boat.',
+  },
+  'utv-buggy-bali-adventure': {
+    title: 'From our booking desk',
+    body: 'Say single or tandem on WhatsApp — single is one rider at IDR 1,200,000, tandem is two on one buggy at IDR 1,500,000. This is a 1-hour sit-in UTV at Buggy Bali Adventure, not the Sedang ATV and not the 3-lap Polaris course. Pickup is quoted.',
   },
 }
 

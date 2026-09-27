@@ -31,6 +31,13 @@ import {
   PARK_WORKSHOP_TOURS,
   resolveBaliSafariSlug,
 } from "@/data/parkWorkshopTours"
+import {
+  UTV_BUGGY_DURATION,
+  UTV_BUGGY_SINGLE_IDR,
+  UTV_BUGGY_SLUG,
+  UTV_BUGGY_TANDEM_IDR,
+  UTV_BUGGY_VENUE,
+} from "@/data/utvBuggy"
 
 const COOKING_PRIVATE_SOLO_DIFF =
   COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
@@ -2488,6 +2495,134 @@ Message us on WhatsApp with your date, pickup point, and chosen destination to b
         id: "faq-moto-5",
         question: "Is pickup included and are tickets extra?",
         answer: "Pickup is arranged at your chosen destination/area — share your location when booking. Attraction entrance tickets are paid separately and are not included in the price.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: UTV_BUGGY_SLUG,
+    title: "UTV Buggy Bali Adventure",
+    slug: UTV_BUGGY_SLUG,
+    category: "adventure",
+    area: "Bali ricefield track",
+    venue: UTV_BUGGY_VENUE,
+    pickup: "Quoted on WhatsApp or self-meet",
+    duration: UTV_BUGGY_DURATION,
+    basePrice: UTV_BUGGY_SINGLE_IDR,
+    seoTitle: "UTV Buggy Bali | Single 1.2M · Tandem 1.5M",
+    seoDescription:
+      "1-hour UTV buggy: ricefield, mud, gravel, puddles, donut trek. Single IDR 1,200,000 · tandem 1,500,000. Not Sedang ATV. WhatsApp.",
+    heroImage: {
+      url: "/images/adventures/utv-buggy-ricefield.jpg",
+      alt: "Two UTV buggies splashing through a muddy ricefield track in Bali",
+      width: 1600,
+      height: 1000,
+    },
+    gallery: [
+      {
+        url: "/images/adventures/utv-buggy-ricefield.jpg",
+        alt: "UTV buggies on a muddy ricefield track",
+      },
+      {
+        url: "/images/adventures/utv-buggy-mud-splash.jpg",
+        alt: "UTV buggy driver giving a thumbs-up through mud spray",
+      },
+      {
+        url: "/images/adventures/utv-buggy-crocodile-gate.jpg",
+        alt: "UTV buggy driving through the crocodile water-gate on the track",
+      },
+    ],
+    shortDescription:
+      "1-hour UTV at Buggy Bali Adventure: ricefield, muddy trek, gravel, puddles, and a donut run. Single IDR 1,200,000 · tandem IDR 1,500,000. Pickup quoted.",
+    fullDescription: `**Want a 1-hour UTV, not a quad and not a 3-lap Polaris course?** We book **Buggy Bali Adventure** — a sit-in UTV on ricefield mud, gravel, puddles, and a donut trek. The crocodile water-gate is on the line.
+
+This is **not** [Sedang ATV](/tours/bali-atv-adventure) at All New Bali Adventure and **not** the imported [jungle buggies 3-lap](/tours/jungle-buggies-complete-3-laps-tour) Polaris ticket.
+
+### 2026 prices
+| Rig | Price | Who |
+|-----|-------|-----|
+| **Single UTV** | **IDR ${UTV_BUGGY_SINGLE_IDR.toLocaleString("id-ID")}** | One rider |
+| **Tandem UTV** | **IDR ${UTV_BUGGY_TANDEM_IDR.toLocaleString("id-ID")}** | Two guests sharing one buggy |
+
+The hour includes welcome drink, helmet / kit, instructor, towel, locker, shower, insurance, and tax/service. Hotel pickup is **quoted**. We book the seat; the track crew runs the briefing.
+
+WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
+    highlights: [
+      "1-hour UTV — ricefield, mud, gravel, puddles, donut trek",
+      "Single IDR 1,200,000 · tandem IDR 1,500,000",
+      "Welcome drink, kit, instructor, towel, locker, shower, insurance",
+      "Not Sedang ATV and not the 3-lap Polaris course",
+    ],
+    included: [
+      "1-hour UTV (single or tandem)",
+      "Welcome drink",
+      "Helmet and riding equipment",
+      "Professional instructor and safety briefing",
+      "Towel, locker, and shower",
+      "Insurance",
+      "Tax and service",
+    ],
+    notIncluded: [
+      "Hotel pickup unless quoted",
+      "Sedang ATV or jungle-buggies 3-lap tickets (different venues)",
+    ],
+    itinerary: [
+      {
+        id: "iti-utv-1",
+        time: "Arrive",
+        title: "Briefing + kit",
+        description: "Welcome drink, helmet fit, single or tandem assignment.",
+      },
+      {
+        id: "iti-utv-2",
+        time: "1 hour",
+        title: "Track",
+        description: "Ricefield, muddy trek, gravel, puddles, donut run, crocodile water-gate.",
+      },
+      {
+        id: "iti-utv-3",
+        time: "Finish",
+        title: "Shower",
+        description: "Towel, locker, rinse off the mud.",
+      },
+    ],
+    activityOptions: [
+      {
+        name: "Single UTV Buggy",
+        priceDiff: 0,
+        description: `IDR ${UTV_BUGGY_SINGLE_IDR.toLocaleString("id-ID")} · 1 rider · 1 hour`,
+      },
+      {
+        name: "Tandem UTV Buggy",
+        priceDiff: UTV_BUGGY_TANDEM_IDR - UTV_BUGGY_SINGLE_IDR,
+        description: `IDR ${UTV_BUGGY_TANDEM_IDR.toLocaleString("id-ID")} · 2 guests on one buggy · 1 hour`,
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-utv-1",
+        question: "How much is the UTV buggy?",
+        answer:
+          "Single UTV is IDR 1,200,000 (one rider). Tandem is IDR 1,500,000 for two guests sharing one buggy. About 1 hour. Pickup is quoted. WhatsApp — no payment to inquire.",
+      },
+      {
+        id: "faq-utv-2",
+        question: "Is this the same as your Ubud ATV?",
+        answer:
+          "No. ATV at All New Bali Adventure in Sedang is a quad-bike jungle-mud ticket from IDR 750,000. This is a sit-in UTV at Buggy Bali Adventure for 1 hour.",
+      },
+      {
+        id: "faq-utv-3",
+        question: "Is this the jungle buggies 3-lap ticket?",
+        answer:
+          "No. Jungle buggies 3 laps is a different Polaris course from IDR 1,120,000 (about two hours). This UTV is a 1-hour ricefield / mud / donut line at a different venue.",
+      },
+      {
+        id: "faq-utv-4",
+        question: "Is hotel pickup included?",
+        answer:
+          "Usually not in the from-price. We quote a private driver or you self-meet. Say your hotel area on WhatsApp.",
       },
     ],
     reviews: [],

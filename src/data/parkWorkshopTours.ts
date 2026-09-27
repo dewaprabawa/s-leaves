@@ -434,9 +434,9 @@ WhatsApp guest count and whether you want single or tandem.`,
       { time: "Laps", title: "3 laps", description: "Each lap about 5 km on the built track." },
     ],
     extraFaq: {
-      question: "Is this the same as your Ubud ATV?",
+      question: "Is this the same as your Ubud ATV or the 1-hour UTV?",
       answer:
-        "No. ATV at All New Bali Adventure in Sedang is a different ticket. Jungle buggies are Polaris rigs on a purpose-built lap course.",
+        "No. ATV at All New Bali Adventure in Sedang is a quad-bike ticket. The 1-hour UTV at Buggy Bali Adventure is a different sit-in buggy. Jungle buggies are Polaris rigs on a purpose-built 3-lap course.",
     },
   }),
   ticketTour({

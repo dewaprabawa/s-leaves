@@ -25,6 +25,7 @@ const MONEY_TOUR_SLUGS = new Set([
   'bali-bird-park',
   'bali-safari-and-marine-park',
   'canyoning',
+  'utv-buggy-bali-adventure',
 ])
 
 const HIGH_BLOG_SLUGS = new Set([

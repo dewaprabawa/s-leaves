@@ -30,7 +30,7 @@ import {
 import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-25'
+export const GEO_UPDATED = '2026-09-27'
 
 /** First 40–60 words — extractable “X is…” answer for AI Overviews / ChatGPT */
 export const GEO_QUICK_ANSWER =
@@ -116,6 +116,7 @@ export const GEO_PRICING = [
   { activity: 'Bali Safari Dragon / Night / Leopard / Rhino', price: 'IDR 1,300,000+', pax: 'from / person', includes: 'published park package we book; elephant ride only on listed packages; pickup quoted' },
   { activity: 'Bali Canyoning', price: 'IDR 1,850,000', pax: 'from / person', includes: 'guided gorge descent (not a boat); age/height/weight/shoe size required' },
   { activity: 'Jungle Buggies (3 laps)', price: 'IDR 1,120,000', pax: 'from / person', includes: '3 laps on a purpose-built ~5 km Polaris course; not Sedang ATV' },
+  { activity: 'UTV Buggy Bali Adventure', price: 'IDR 1,200,000', pax: 'single · tandem IDR 1,500,000', includes: '1-hour ricefield / mud / donut UTV; not Sedang ATV; not the 3-lap Polaris course; pickup quoted' },
   { activity: 'Dirt bike Kintamani / Tabanan', price: 'IDR 2,100,000+', pax: 'from / person', includes: 'private guided enduro; Kintamani black lava from IDR 4,100,000; pickup quoted' },
   { activity: 'Ubud workshop classes (lontar, silver, dance, batik, bamboo, offering)', price: 'IDR 600,000+', pax: 'from / person', includes: '2–3 hour class + materials; pickup quoted' },
   { activity: 'Taro jungle ride + lunch', price: 'IDR 1,665,000', pax: 'from / person', includes: 'Elephant Safari Park Lodge stroll + lunch; pickup quoted' },
@@ -125,7 +126,7 @@ export const GEO_PRICING = [
 export const GEO_POLICIES = [
   {
     topic: 'Hotel pickup',
-    rule: 'Free Ubud pickup on Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Tirta Empu Purification (Melukat) includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall: IDR 400,000 hotel pickup charge, or meet at the venue with no transport fee (All New Bali Adventure for ATV/rafting/tubing; Swing Heaven, Jl. Tangga Yuda, Bongkasa for the jungle swing; Taman Beji Griya Waterfall, Jl. Mawar, Desa Punggul for purification / palm reading / healing). Park tickets, safari packages, canyoning, jungle buggies, dirt bikes, and Ubud workshops: pickup is quoted on WhatsApp (park shuttle on some Safari dates) — do not assume free pickup or the IDR 400,000 adventure surcharge.',
+    rule: 'Free Ubud pickup on Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Tirta Empu Purification (Melukat) includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall: IDR 400,000 hotel pickup charge, or meet at the venue with no transport fee (All New Bali Adventure for ATV/rafting/tubing; Swing Heaven, Jl. Tangga Yuda, Bongkasa for the jungle swing; Taman Beji Griya Waterfall, Jl. Mawar, Desa Punggul for purification / palm reading / healing). Park tickets, safari packages, canyoning, jungle buggies, UTV buggy, dirt bikes, and Ubud workshops: pickup is quoted on WhatsApp (park shuttle on some Safari dates) — do not assume free pickup or the IDR 400,000 adventure surcharge.',
     url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
   },
   {
@@ -379,6 +380,15 @@ export const GEO_TOUR_SUMMARIES = [
     url: `${SITE_URL}/tours/jungle-buggies-complete-3-laps-tour`,
   },
   {
+    name: 'UTV Buggy Bali Adventure',
+    slug: 'utv-buggy-bali-adventure',
+    price: 'Single IDR 1,200,000 · tandem IDR 1,500,000',
+    duration: '1 hour',
+    location: 'Buggy Bali Adventure',
+    summary: 'Sit-in UTV on ricefield mud, gravel, puddles, and a donut trek. Not Sedang ATV and not the 3-lap Polaris course. Pickup quoted.',
+    url: `${SITE_URL}/tours/utv-buggy-bali-adventure`,
+  },
+  {
     name: 'Kintamani Dirt Bike',
     slug: 'dirt-bike-kintamani-black-lava',
     price: 'From IDR 4,100,000',
@@ -595,11 +605,12 @@ export const GEO_COMPARISONS = [
   },
   {
     title: 'Canyoning vs canyon tubing vs jungle buggies',
-    winner: 'Canyoning = ropes; tubing = easy float; buggies ≠ Sedang ATV',
+    winner: 'Canyoning = ropes; tubing = easy float; UTV ≠ 3-lap Polaris ≠ Sedang ATV',
     rows: [
       { label: 'Canyoning', value: 'IDR 1,850,000 · gorge rappel / jump / slide · measurements required' },
       { label: 'Canyon tubing', value: 'IDR 500,000 · 450,000 for 2+ · Wos River sit-on-tube' },
       { label: 'Jungle buggies', value: 'IDR 1,120,000 · 3 Polaris laps · not All New Bali Adventure ATV' },
+      { label: 'UTV buggy', value: 'IDR 1,200,000 single · 1,500,000 tandem · 1 hour · not the 3-lap course' },
     ],
     url: `${SITE_URL}/blog/bali-canyoning-vs-tubing-vs-buggies`,
   },
@@ -1083,6 +1094,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Bali Zoo Elephant Mud Fun', url: `${SITE_URL}/tours/elephant-mud-fun-at-bali-zoo-park`, desc: 'Mud session + lunch + zoo admission from IDR 1,850,000 · pickup quoted' },
   { title: 'Taro Elephant Jungle Ride', url: `${SITE_URL}/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge`, desc: 'Lodge stroll + lunch from IDR 1,665,000 · not Bali Safari' },
   { title: 'Jungle Buggies 3 Laps', url: `${SITE_URL}/tours/jungle-buggies-complete-3-laps-tour`, desc: 'Polaris laps from IDR 1,120,000 · not Sedang ATV' },
+  { title: 'UTV Buggy Bali Adventure', url: `${SITE_URL}/tours/utv-buggy-bali-adventure`, desc: '1-hour UTV · single IDR 1,200,000 · tandem 1,500,000 · not Sedang ATV' },
   { title: 'Ubud Silver Class', url: `${SITE_URL}/tours/silver-making-class`, desc: '3-hour class from IDR 650,000 · 5 g silver included' },
   { title: 'Bali Safari Packages Compared', url: `${SITE_URL}/blog/bali-safari-packages-compared-2026`, desc: 'Hopper 1M · Dragon 1.3M · Leopard 1.8M · Rhino 2.3M' },
   { title: 'Bali Zoo vs Safari vs Taro', url: `${SITE_URL}/blog/bali-zoo-vs-bali-safari-vs-taro`, desc: 'Three elephant venues — honest 2026 comparison' },

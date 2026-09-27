@@ -1038,8 +1038,8 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     seoDescription:
       "Private full-day Bali highlights motorbike tour with an English-speaking guide & driver — temples, rice terraces, waterfalls & scenic backroads. From IDR 650K.",
     heroImage: {
-      url: "https://images.unsplash.com/photo-1591768793355-74d04bb6608f?auto=format&fit=crop&w=1200&q=80",
-      alt: "Rider exploring scenic Bali roads on a guided motorbike highlights tour",
+      url: "/images/adventures/motorbike-tour.jpg",
+      alt: "Balinese guide driving a motorbike with a tourist riding pillion past rice terraces and a temple gate",
     },
     gallery: [],
     shortDescription:

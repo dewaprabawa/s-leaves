@@ -154,6 +154,34 @@ function toTourConfig(adv: Adventure): TourConfig {
   }
 }
 
+/* ─── Additional experiences (link to their own tour pages) ─── */
+const moreExperiences = [
+  {
+    slug: "bali-highlights-motorbike-tour",
+    title: "Bali Motorbike Traveling Trip",
+    blurb: "Choose your destination — Ubud, Kintamani, North, South or East Bali — on a 125–160cc scooter with a local guide.",
+    image: "/images/adventures/motorbike-tour-hero.jpg",
+    duration: "Full Day",
+    priceText: "IDR 450K / scooter",
+  },
+  {
+    slug: "bali-jungle-swing-tegallalang",
+    title: "Bali Jungle Swing",
+    blurb: "Soar over the Tegallalang jungle valley — single + tandem swing, 7 photo spots, private A/C transfers.",
+    image: "/images/adventures/bali-swing.jpg",
+    duration: "Half Day",
+    priceText: "IDR 550K",
+  },
+  {
+    slug: "silver-jewelry-making-class-celuk",
+    title: "Silver Jewelry Making Class",
+    blurb: "Make your own silver jewelry in Celuk — 1-hour to full-day classes with a certificate and gallery tour.",
+    image: "/images/adventures/silver-class.jpg",
+    duration: "1–6 Hours",
+    priceText: "IDR 580K",
+  },
+] as const
+
 const stats = [
   { value: "5", label: "Sport Activities" },
   { value: "100+", label: "Happy Travelers" },
@@ -381,6 +409,51 @@ export default function Home() {
             )
           })}
         </div>
+        </div>
+      </section>
+
+      {/* ═══ MORE BALI EXPERIENCES ═══ */}
+      <section id="more-experiences" className="py-20 md:py-28 px-6 lg:px-12 bg-white w-full">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <p className="text-accent-gold-dark font-semibold tracking-[0.15em] uppercase text-sm mb-4">More things to do</p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-green uppercase leading-tight mb-4">More Bali Experiences</h2>
+            <p className="text-lg text-brand-green-light max-w-2xl mx-auto">Motorbike traveling trips, the Tegallalang jungle swing, and a Celuk silver jewelry class — book any of these alongside your adventure.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+            {moreExperiences.map((exp) => (
+              <Link
+                key={exp.slug}
+                href={`/tours/${exp.slug}`}
+                className="group bg-white overflow-hidden border border-brand-green/10 hover:shadow-lg transition-shadow"
+              >
+                <div className="relative h-56 overflow-hidden">
+                  <Image
+                    src={exp.image}
+                    alt={exp.title}
+                    width={800}
+                    height={512}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    loading="lazy"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute bottom-3 left-3 flex items-center gap-1.5 text-sand text-sm font-medium bg-brand-green/70 px-2.5 py-1 rounded-full">
+                    <Clock3 className="w-4 h-4" /><span>{exp.duration}</span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-brand-green font-display uppercase mb-2">{exp.title}</h3>
+                  <p className="text-sm text-brand-green-light mb-4">{exp.blurb}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-brand-green font-bold">From {exp.priceText}</span>
+                    <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-sky uppercase tracking-wider">
+                      View details <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

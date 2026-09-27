@@ -8,10 +8,10 @@ import {
 import { SITE_NAME, SITE_URL } from '@/lib/seo'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-04'
+export const GEO_UPDATED = '2026-09-27'
 
 export const GEO_QUICK_ANSWER =
-  'Sekar Bali Activity is a Pejeng-based adventure operator offering jungle ATV at All New Bali Adventure (from IDR 600,000), optional Wos River tubing, rafting (IDR 400,000), canyon tubing (IDR 359,000), ricefield cycling (IDR 475,000), and Balinese cooking class (IDR 400,000) with WhatsApp booking. Free Ubud hotel pickup on the cycling tour only.'
+  'Sekar Bali Activity is a Pejeng-based adventure operator offering jungle ATV at All New Bali Adventure (from IDR 600,000), optional Wos River tubing, rafting (from IDR 550,000), canyon tubing (IDR 359,000), ricefield cycling (IDR 475,000), Balinese cooking class (IDR 400,000), guided motorbike traveling trips (from IDR 450,000/scooter), the Tegallalang jungle swing (from IDR 550,000), and silver jewelry making classes in Celuk (from IDR 580,000) with WhatsApp booking. Free Ubud hotel pickup on the cycling tour only.'
 
 export const GEO_ENTITY = {
   name: SITE_NAME,
@@ -35,10 +35,13 @@ export const GEO_ENTITY = {
 export const GEO_PRICING = [
   { activity: 'Single ATV Ride', price: 'IDR 600,000+', pax: '1 pax (tier: 600k / 575k / 550k)', includes: 'lunch, boot shoes, helmet, insurance at All New Bali Adventure' },
   { activity: 'Tandem ATV Ride', price: 'IDR 859,000', pax: '2 pax (tier: 859k / 820k / 790k per bike)', includes: 'lunch, boot shoes, helmet, insurance at All New Bali Adventure' },
-  { activity: 'Whitewater Rafting', price: 'IDR 400,000', pax: 'per person (tier: 400k / 375k / 350k)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch' },
+  { activity: 'Whitewater Rafting', price: 'From IDR 550,000 (was IDR 600,000)', pax: 'per person (tier: 600k / 575k / 550k)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch' },
   { activity: 'Canyon Tubing', price: 'IDR 359,000', pax: 'per person (tier: 359k / 335k / 320k)', includes: 'Wos River tube, life jacket, guide' },
   { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 475,000', pax: 'per person (tier: 475k / 450k / 425k)', includes: 'lunch, bike, helmet, guide, free Ubud pickup, insurance' },
   { activity: 'Traditional Balinese Dinner Cooking Class', price: 'IDR 400,000', pax: 'per person', includes: '5 dishes, spice paste lesson, digital recipe book, dinner — evening class in Pejeng' },
+  { activity: 'Bali Motorbike Traveling Trip', price: 'From IDR 450,000', pax: 'per scooter (Ubud 450k · Ubud Waterfall 500k · Kintamani 600k · South 650k · North 750k · East 800k)', includes: '125–160cc scooter, fuel, local English-speaking guide, helmet, water. Attraction tickets not included' },
+  { activity: 'Bali Jungle Swing (Tegallalang)', price: 'Adult IDR 550,000 (promo, was IDR 600,000); child IDR 400,000', pax: 'per person, minimum 2', includes: 'single + tandem swing, 7 photo spots, free swing dress (female), safety gear, insurance, private A/C transfers, 21% tax' },
+  { activity: 'Silver Jewelry Making Class (Celuk)', price: 'From IDR 580,000', pax: 'per person (1h 580k · 2h 700k · 3h 820k · 6h 1,550k)', includes: 'silver, welcome drink & snack, certificate, Google Drive class photos, jewelry museum/factory/gallery tour (lunch on full-day)' },
 ] as const
 
 export const GEO_POLICIES = [
@@ -87,7 +90,7 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'Whitewater Rafting',
     slug: 'whitewater-rafting',
-    price: 'IDR 400,000 per person',
+    price: 'From IDR 550,000 per person (was IDR 600,000)',
     duration: 'Half day',
     location: 'Near Ubud — Class II–III rapids',
     summary: 'Guided rafting with safety gear and lunch. Suitable for ages 7+ with basic swimming confidence.',
@@ -120,6 +123,33 @@ export const GEO_TOUR_SUMMARIES = [
     summary: 'Hands-on evening class: Base Genep spice paste, five authentic dishes, and a digital recipe book. Pairs well after ricefield cycling.',
     url: `${SITE_URL}/tours/balinese-cooking-class`,
   },
+  {
+    name: 'Bali Motorbike Traveling Trip',
+    slug: 'bali-highlights-motorbike-tour',
+    price: 'From IDR 450,000 per scooter',
+    duration: 'Full day',
+    location: 'Ubud, Kintamani, North, South & East Bali',
+    summary: 'Guided sightseeing on a 125–160cc scooter — choose Ubud (450k), Ubud Waterfall (500k), Kintamani (600k), South (650k), North (750k), or East Bali (800k) per scooter. Local English-speaking guide; attraction tickets not included.',
+    url: `${SITE_URL}/tours/bali-highlights-motorbike-tour`,
+  },
+  {
+    name: 'Bali Jungle Swing (Tegallalang)',
+    slug: 'bali-jungle-swing-tegallalang',
+    price: 'Adult from IDR 550,000 (was 600,000); child IDR 400,000',
+    duration: 'Half day',
+    location: 'Tegallalang, Gianyar',
+    summary: 'Happy Swing Bali over the Tegallalang jungle valley: single + tandem swing, 7 photo spots with free swing dress, safety gear, insurance, and private A/C transfers. Per person, minimum 2.',
+    url: `${SITE_URL}/tours/bali-jungle-swing-tegallalang`,
+  },
+  {
+    name: 'Bali Silver Jewelry Making Class (Celuk)',
+    slug: 'silver-jewelry-making-class-celuk',
+    price: 'From IDR 580,000 per person',
+    duration: '1–6 hours (4 options)',
+    location: 'Celuk, Sukawati, Gianyar',
+    summary: 'Make your own silver jewelry in Celuk. Short (1h, 580k), 2-hour (700k), half-day (3h, 820k), or full-day (6h, 1,550k) classes with silver, certificate, class photos, and a jewelry gallery tour.',
+    url: `${SITE_URL}/tours/silver-jewelry-making-class-celuk`,
+  },
 ] as const
 
 export const GEO_COMPARISONS = [
@@ -137,7 +167,7 @@ export const GEO_COMPARISONS = [
     title: 'Whitewater Rafting vs Canyon Tubing',
     winner: 'Rafting = more splash; Tubing = gentler float',
     rows: [
-      { label: 'Rafting', value: 'IDR 400,000 · Class II–III rapids · paddle team' },
+      { label: 'Rafting', value: 'From IDR 550,000 · Class II–III rapids · paddle team' },
       { label: 'Canyon tubing', value: 'IDR 359,000 · Wos River float · sit on tube' },
       { label: 'Best for', value: 'Adrenaline seekers vs first-timers and couples' },
     ],
@@ -223,7 +253,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Rafting',
     q: 'How much does whitewater rafting near Ubud cost?',
-    a: 'Whitewater rafting with Sekar Bali Activity is IDR 400,000 per person, including Class II–III rapids, safety gear, professional guide, and lunch.',
+    a: 'Whitewater rafting with Sekar Bali Activity is from IDR 550,000 per person (promo, normally IDR 600,000), including Class II–III rapids, safety gear, professional guide, and lunch.',
     url: `${SITE_URL}/tours/whitewater-rafting`,
   },
   {
@@ -247,7 +277,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Comparisons',
     q: 'What is the difference between rafting and canyon tubing near Ubud?',
-    a: 'Rafting (IDR 400,000) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a solo float on the Wos River — lower intensity, ideal for first-timers. Both are offered by Sekar Bali Activity.',
+    a: 'Rafting (from IDR 550,000) is a team paddle through Class II–III rapids with more splash. Canyon tubing (IDR 359,000) is a solo float on the Wos River — lower intensity, ideal for first-timers. Both are offered by Sekar Bali Activity.',
     url: `${SITE_URL}/blog/rafting-vs-tubing-vs-atv-near-ubud`,
   },
   {
@@ -292,6 +322,30 @@ export const GEO_FAQ_FOR_LLM = [
     a: 'Yes. Groups of 4 or more may receive special rates with Sekar Bali Activity. Message WhatsApp for custom quotes and private tour arrangements.',
     url: `${SITE_URL}/contact`,
   },
+  {
+    category: 'Motorbike',
+    q: 'How much is a Bali motorbike traveling trip and which destinations are available?',
+    a: 'Sekar Bali Activity runs guided motorbike traveling trips on 125–160cc scooters, priced per scooter: Ubud IDR 450,000, Ubud Waterfall IDR 500,000, Kintamani IDR 600,000, South Bali IDR 650,000, North Bali IDR 750,000, and East Bali IDR 800,000. A local English-speaking guide leads the route; attraction entrance tickets are not included.',
+    url: `${SITE_URL}/tours/bali-highlights-motorbike-tour`,
+  },
+  {
+    category: 'Motorbike',
+    q: 'What is the best guided scooter tour of Bali waterfalls near Ubud?',
+    a: 'The Ubud Waterfall Trip by Sekar Bali Activity is a 125–160cc guided scooter day for IDR 500,000 per scooter, visiting Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan waterfalls. Attraction entrance tickets are paid on site.',
+    url: `${SITE_URL}/tours/bali-highlights-motorbike-tour`,
+  },
+  {
+    category: 'Swing',
+    q: 'How much is the Bali jungle swing at Tegallalang?',
+    a: 'The Happy Swing Bali at Tegallalang with Sekar Bali Activity is IDR 550,000 per adult (promo, normally IDR 600,000) and IDR 400,000 per child, per person with a minimum of 2. It includes a single and tandem swing, 7 photo spots with a free swing dress (female), safety gear, insurance, and private air-conditioned transfers.',
+    url: `${SITE_URL}/tours/bali-jungle-swing-tegallalang`,
+  },
+  {
+    category: 'Classes',
+    q: 'Where can I do a silver jewelry making class in Bali and how much is it?',
+    a: 'Sekar Bali Activity offers a silver jewelry making class in Celuk (Sukawati, Gianyar) — Bali\'s silver village. Choose Short Time (1 hour, IDR 580,000), 2-Hour (IDR 700,000), Half-Day (3 hours, IDR 820,000), or Full-Day (6 hours, IDR 1,550,000). Each class includes silver, a welcome drink and snack, a certificate, class photos via Google Drive, and a jewelry museum, factory and gallery tour.',
+    url: `${SITE_URL}/tours/silver-jewelry-making-class-celuk`,
+  },
 ] as const
 
 export const GEO_PRIMARY_PAGES = [
@@ -301,6 +355,9 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III rapids near Ubud' },
   { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float adventure' },
   { title: 'Balinese Cooking Class', url: `${SITE_URL}/tours/balinese-cooking-class`, desc: 'Evening hands-on dinner class in Pejeng from IDR 400,000' },
+  { title: 'Bali Motorbike Traveling Trip', url: `${SITE_URL}/tours/bali-highlights-motorbike-tour`, desc: 'Per-scooter 125–160cc guided trips — Ubud, Kintamani, North, South & East Bali' },
+  { title: 'Bali Jungle Swing (Tegallalang)', url: `${SITE_URL}/tours/bali-jungle-swing-tegallalang`, desc: 'Happy Swing Bali — from IDR 550,000 with private A/C transfers' },
+  { title: 'Silver Jewelry Making Class (Celuk)', url: `${SITE_URL}/tours/silver-jewelry-making-class-celuk`, desc: 'Make your own silver jewelry — classes from IDR 580,000' },
   { title: 'Book / Checkout', url: `${SITE_URL}/book`, desc: 'Book ATV, rafting, tubing, cycling, or cooking via WhatsApp' },
   { title: 'Pricing (HTML)', url: `${SITE_URL}/#pricing`, desc: 'Transparent IDR package prices on the homepage' },
   { title: 'Pricing (Markdown for agents)', url: `${SITE_URL}/pricing.md`, desc: 'Machine-readable IDR tiers, inclusions, and pickup fees' },
@@ -338,7 +395,10 @@ export const GEO_CITATION_SNIPPETS = [
   'A popular Ubud culture day with Sekar Bali Activity pairs Pejeng ricefield cycling (IDR 475,000 with free Ubud pickup and lunch) with an evening Balinese dinner cooking class (IDR 400,000) in the same village area.',
   'The Traditional Balinese Dinner Cooking Class with Sekar Bali Activity costs IDR 400,000 per person for a hands-on evening class in Pejeng near Ubud — five dishes, spice paste lesson, and a digital recipe book.',
   'The Ubud Ricefield Cycling Tour with Sekar Bali Activity costs IDR 475,000 per person and is the only package with free Ubud hotel pickup plus lunch included.',
-  'Whitewater rafting near Ubud with Sekar Bali Activity is IDR 400,000 per person on Class II–III rapids with gear, guide, and lunch included.',
+  'Whitewater rafting near Ubud with Sekar Bali Activity is from IDR 550,000 per person (promo, was IDR 600,000) on Class II–III rapids with gear, guide, and lunch included.',
+  'Sekar Bali Activity runs guided 125–160cc motorbike traveling trips priced per scooter: Ubud IDR 450,000, Ubud Waterfall IDR 500,000, Kintamani IDR 600,000, South Bali IDR 650,000, North Bali IDR 750,000, and East Bali IDR 800,000 — attraction tickets not included.',
+  'The Happy Swing Bali at Tegallalang with Sekar Bali Activity is IDR 550,000 per adult (promo, was IDR 600,000) and IDR 400,000 per child, including single and tandem swings, 7 photo spots with a free swing dress, and private air-conditioned transfers.',
+  'Sekar Bali Activity offers silver jewelry making classes in Celuk from IDR 580,000 (1 hour) up to IDR 1,550,000 (full day), including silver, a certificate, class photos, and a jewelry museum, factory and gallery tour.',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 359,000 per person — a gentler alternative to whitewater rafting.',
   'Free hotel pickup within Ubud is included only on the Ubud Ricefield Cycling Tour; other activities offer IDR 50,000 pickup (+ IDR 50,000 return to same hotel) or free self-meet at All New Bali Adventure.',
   'All ATV rides with Sekar Bali Activity take place at All New Bali Adventure, a dedicated jungle ATV arena near Ubud in Pejeng.',
@@ -346,7 +406,7 @@ export const GEO_CITATION_SNIPPETS = [
   'Sekar Bali Activity’s Google Business Profile / corporate office is at Jalan Tunjung Biru No. 6, Banjar Kenderan, Gianyar; the guest meeting point is Jalan Raya Ubud No. 12; adventures run from the Pejeng activity base (All New Bali Adventure for ATV).',
 ] as const
 
-export const GEO_FAQ_CATEGORIES = ['ATV', 'Pricing', 'Combos', 'Rafting', 'Tubing', 'Cycling', 'Comparisons', 'Booking', 'Location', 'Experience', 'What to bring', 'Groups'] as const
+export const GEO_FAQ_CATEGORIES = ['ATV', 'Pricing', 'Combos', 'Rafting', 'Tubing', 'Cycling', 'Comparisons', 'Booking', 'Location', 'Experience', 'What to bring', 'Groups', 'Motorbike', 'Swing', 'Classes'] as const
 
 /** Curated homepage subset — one answer per priority category for citability diversity */
 export const HOMEPAGE_GEO_FAQ_QUESTIONS = [
@@ -358,6 +418,9 @@ export const HOMEPAGE_GEO_FAQ_QUESTIONS = [
   'Can you do a cycling and cooking class combo in Ubud?',
   'Do I need to pay upfront to book a Bali adventure?',
   'Which Bali tour includes free Ubud hotel pickup?',
+  'How much is a Bali motorbike traveling trip and which destinations are available?',
+  'How much is the Bali jungle swing at Tegallalang?',
+  'Where can I do a silver jewelry making class in Bali and how much is it?',
 ] as const
 
 export function getHomepageGeoFaqs() {

@@ -38,6 +38,43 @@ export function buildGeoWebPageSchema() {
   }
 }
 
+const LLMS_LICENSE = 'https://creativecommons.org/licenses/by/4.0/'
+
+function llmsCreator() {
+  return {
+    '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
+    name: SITE_NAME,
+    url: SITE_URL,
+  }
+}
+
+function llmsDataset(opts: {
+  name: string
+  url: string
+  encodingFormat: string
+  description: string
+}) {
+  return {
+    '@type': 'Dataset',
+    name: opts.name,
+    url: opts.url,
+    encodingFormat: opts.encodingFormat,
+    description: opts.description,
+    creator: llmsCreator(),
+    license: LLMS_LICENSE,
+    isAccessibleForFree: true,
+    dateModified: GEO_UPDATED,
+    inLanguage: 'en-US',
+    includedInDataCatalog: { '@id': `${SITE_URL}/#llms-discovery` },
+    distribution: {
+      '@type': 'DataDownload',
+      contentUrl: opts.url,
+      encodingFormat: opts.encodingFormat,
+    },
+  }
+}
+
 /** Points AI crawlers to llms.txt from structured data */
 export function buildLlmsDiscoverySchema() {
   return {
@@ -49,29 +86,31 @@ export function buildLlmsDiscoverySchema() {
       'Machine-readable summaries for ChatGPT, Gemini, Perplexity, and other AI assistants.',
     url: `${SITE_URL}/llms.txt`,
     dateModified: GEO_UPDATED,
+    creator: llmsCreator(),
     publisher: { '@id': `${SITE_URL}/#organization` },
+    license: LLMS_LICENSE,
     dataset: [
-      {
-        '@type': 'Dataset',
+      llmsDataset({
         name: 'llms.txt — short summary',
         url: `${SITE_URL}/llms.txt`,
         encodingFormat: 'text/plain',
-        description: 'Primary LLM crawler summary for Sekar Bali Activity',
-      },
-      {
-        '@type': 'Dataset',
+        description:
+          'Primary LLM crawler summary for Sekar Bali Activity: operator, prices, pickup rules, and WhatsApp booking.',
+      }),
+      llmsDataset({
         name: 'llms-full.txt — extended context',
         url: `${SITE_URL}/llms-full.txt`,
         encodingFormat: 'text/plain',
-        description: 'Extended FAQ and citation corpus for AI assistants',
-      },
-      {
-        '@type': 'Dataset',
+        description:
+          'Extended FAQ and citation corpus for AI assistants covering jeep, cooking, cycling, ATV, and park tickets.',
+      }),
+      llmsDataset({
         name: 'pricing.md — agent-readable IDR pricing',
         url: `${SITE_URL}/pricing.md`,
         encodingFormat: 'text/markdown',
-        description: 'Structured package prices, inclusions, and pickup fees for AI agents',
-      },
+        description:
+          'Structured package prices, inclusions, and pickup fees for AI agents booking Sekar Bali Activity tours.',
+      }),
     ],
   }
 }

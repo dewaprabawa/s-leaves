@@ -436,7 +436,7 @@ WhatsApp guest count and whether you want single or tandem.`,
     extraFaq: {
       question: "Is this the same as your Ubud ATV or the 1-hour UTV?",
       answer:
-        "No. ATV at All New Bali Adventure in Sedang is a quad-bike ticket. The 1-hour UTV at Buggy Bali Adventure is a different sit-in buggy. Jungle buggies are Polaris rigs on a purpose-built 3-lap course.",
+        "No. ATV at All New Bali Adventure in Sedang is a quad-bike ticket. The 1-hour UTV at Bali Buggy Adventures in Pemogan is a different sit-in buggy. Jungle buggies are Polaris rigs on a purpose-built 3-lap course.",
     },
   }),
   ticketTour({

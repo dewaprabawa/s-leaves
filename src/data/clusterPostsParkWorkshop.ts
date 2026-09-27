@@ -116,7 +116,7 @@ Message WhatsApp with **Zoo / Safari package / Taro, date, guest count, kids’ 
 > - Canyoning = ropes + water in a gorge · measurements required · age 8+
 > - Tubing = easy Wos River float · same desk as ATV
 > - Jungle buggies = Polaris laps · **not** the Sedang ATV
-> - UTV = 1-hour / 7 km automatic buggy at Buggy Bali Adventure · lunch included · **not** the 3-lap Polaris ticket
+> - UTV = 1-hour / 7 km automatic buggy at Bali Buggy Adventures (Pemogan) · lunch included · **not** the 3-lap Polaris ticket
 > - ATV = jungle mud / river crossings at All New Bali Adventure
 > - We do **not** sell scuba or island fastboats
 

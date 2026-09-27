@@ -32,8 +32,12 @@ import {
   resolveBaliSafariSlug,
 } from "@/data/parkWorkshopTours"
 import {
+  UTV_BUGGY_ADDRESS,
+  UTV_BUGGY_AREA,
   UTV_BUGGY_DURATION,
+  UTV_BUGGY_MAP_URL,
   UTV_BUGGY_SINGLE_IDR,
+  UTV_BUGGY_SITE,
   UTV_BUGGY_SLUG,
   UTV_BUGGY_TANDEM_IDR,
   UTV_BUGGY_VENUE,
@@ -2501,17 +2505,17 @@ Message us on WhatsApp with your date, pickup point, and chosen destination to b
   },
   {
     id: UTV_BUGGY_SLUG,
-    title: "UTV Buggy Bali Adventure",
+    title: "UTV at Bali Buggy Adventures",
     slug: UTV_BUGGY_SLUG,
     category: "adventure",
-    area: "Bali ricefield track",
+    area: UTV_BUGGY_AREA,
     venue: UTV_BUGGY_VENUE,
     pickup: "Quoted on WhatsApp or self-meet",
     duration: UTV_BUGGY_DURATION,
     basePrice: UTV_BUGGY_SINGLE_IDR,
     seoTitle: "UTV Buggy Bali | Single 1.2M · Tandem 1.5M",
     seoDescription:
-      "1-hour 7 km UTV: Crocodile Cave, rice fields, mud, circuit. Lunch included. Single IDR 1,200,000 · tandem 1,500,000. WhatsApp.",
+      "Bali Buggy Adventures in Pemogan: 1-hour 7 km UTV. Lunch included. Single IDR 1,200,000 · tandem 1,500,000. WhatsApp.",
     heroImage: {
       url: "/images/adventures/utv-buggy-ricefield.jpg",
       alt: "Two UTV buggies splashing through a muddy ricefield track in Bali",
@@ -2533,8 +2537,10 @@ Message us on WhatsApp with your date, pickup point, and chosen destination to b
       },
     ],
     shortDescription:
-      "About 1 hour / 7 km automatic UTV: Crocodile Cave, rice fields, mud, circuit, jungle. Lunch included. Single IDR 1,200,000 · tandem IDR 1,500,000.",
-    fullDescription: `**Want a 1-hour UTV, not a quad and not a 3-lap Polaris course?** We book **Buggy Bali Adventure** — an **automatic** sit-in UTV on a **7 km** line: Crocodile Cave (Goa Buaya), water pits, rice fields, mud, circuit, fun speed, and jungle.
+      "Bali Buggy Adventures in Pemogan, South Denpasar. About 1 hour / 7 km automatic UTV. Lunch included. Single IDR 1,200,000 · tandem IDR 1,500,000.",
+    fullDescription: `**Want a 1-hour UTV, not a quad and not a 3-lap Polaris course?** We book **[${UTV_BUGGY_VENUE}](${UTV_BUGGY_SITE})** in **Pemogan, South Denpasar** — an **automatic** sit-in UTV on a **7 km** line: Crocodile Cave (Goa Buaya), water pits, rice fields, mud, circuit, fun speed, and jungle.
+
+**Track / self-meet:** ${UTV_BUGGY_ADDRESS}. [Open in Maps](${UTV_BUGGY_MAP_URL}). Hotel pickup is **quoted** — do not assume it is in the from-price.
 
 This is **not** [Sedang ATV](/tours/bali-atv-adventure) at All New Bali Adventure and **not** the imported [jungle buggies 3-lap](/tours/jungle-buggies-complete-3-laps-tour) Polaris ticket.
 
@@ -2638,16 +2644,22 @@ WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
         id: "faq-utv-4",
         question: "Is this the same as your Ubud ATV?",
         answer:
-          "No. ATV at All New Bali Adventure in Sedang is a quad-bike jungle-mud ticket from IDR 750,000. This is a sit-in automatic UTV at Buggy Bali Adventure for about 1 hour / 7 km.",
+          "No. ATV at All New Bali Adventure in Sedang is a quad-bike jungle-mud ticket from IDR 750,000. This is a sit-in automatic UTV at Bali Buggy Adventures in Pemogan, South Denpasar, for about 1 hour / 7 km.",
       },
       {
         id: "faq-utv-5",
         question: "Is this the jungle buggies 3-lap ticket?",
         answer:
-          "No. Jungle buggies 3 laps is a different Polaris course from IDR 1,120,000 (about two hours). This UTV is a 7 km rice-field / mud / Crocodile Cave line at a different venue.",
+          "No. Jungle buggies 3 laps is a different Polaris course from IDR 1,120,000 (about two hours). This UTV is a 7 km rice-field / mud / Crocodile Cave line at Bali Buggy Adventures in Pemogan.",
       },
       {
         id: "faq-utv-6",
+        question: "Where is Bali Buggy Adventures?",
+        answer:
+          "Gg. Merta Shanti No.20 A, Pemogan, Denpasar Selatan, Kota Denpasar, Bali 80221. Venue site: https://balibuggyadventures.com. We book the ticket on WhatsApp; pickup is quoted or self-meet at that pin.",
+      },
+      {
+        id: "faq-utv-7",
         question: "Is hotel pickup included?",
         answer:
           "Usually not in the from-price. We quote a private driver or you self-meet. Say your hotel area on WhatsApp.",

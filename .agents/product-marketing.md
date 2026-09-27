@@ -130,7 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
-- v2.12 (2026-09-27) — Added **UTV Buggy Bali Adventure** (about 1 hour / 7 km automatic UTV): single **IDR 1,200,000**, tandem **IDR 1,500,000**. Lunch (fried rice / fried noodles), helmet, boots, locker, shower included. Driver 17+ / passenger 6+. Not Sedang ATV and not the imported jungle-buggies 3-lap Polaris ticket. Pickup quoted.
+- v2.12 (2026-09-27) — Added **UTV at Bali Buggy Adventures** (Pemogan, South Denpasar — https://balibuggyadventures.com). About 1 hour / 7 km automatic UTV: single **IDR 1,200,000**, tandem **IDR 1,500,000**. Lunch included. Driver 17+ / passenger 6+. Pickup quoted. Not Sedang ATV and not the imported jungle-buggies 3-lap ticket.
 - v2.11 (2026-09-23) — GEO/SEO now covers the imported park / workshop tickets: tour-page answer blocks, llms.txt / pricing.md, and comparison articles (Safari packages, Zoo vs Safari vs Taro, canyoning vs tubing vs buggies, Ubud workshops, dirt bike vs Batur jeep, Bird Park from Ubud). Pickup on those tickets is **quoted** — do not invent free pickup or the IDR 400K adventure surcharge.
 - v2.10 (2026-09-23) — Imported park / workshop tickets we can book (Bird Park, Bali Zoo mud fun, Bali Safari packages, Taro lodge, canyoning, jungle buggies, dirt bike, Ubud craft classes). Source from-price **+ IDR 200,000**. Skipped visa, Nusa Penida / island fastboats, scuba/snorkel boats, and our existing ATV + rafting SKUs.
 - v2.9 (2026-09-23) — Private Bali itineraries (family / girls / any group) are **consultation only** on WhatsApp — no booking popup or `/book` checkout.

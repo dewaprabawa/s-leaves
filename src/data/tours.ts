@@ -1038,10 +1038,19 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
     seoDescription:
       "Private full-day Bali highlights motorbike tour with an English-speaking guide & driver — temples, rice terraces, waterfalls & scenic backroads. From IDR 650K.",
     heroImage: {
-      url: "/images/adventures/motorbike-tour.jpg",
-      alt: "Balinese guide driving a motorbike with a tourist riding pillion past rice terraces and a temple gate",
+      url: "/images/adventures/motorbike-tour-hero.jpg",
+      alt: "Smiling guests wearing helmets on a guided Bali motorbike tour",
     },
-    gallery: [],
+    gallery: [
+      {
+        url: "/images/adventures/motorbike-tour-road.jpg",
+        alt: "Guests riding pillion with their guide through Bali streets on the motorbike tour",
+      },
+      {
+        url: "/images/adventures/motorbike-tour-group.jpg",
+        alt: "Guests with their Balinese guide after the motorbike highlights tour",
+      },
+    ],
     shortDescription:
       "A private full-day Bali highlights motorbike tour with your own English-speaking guide and driver. Ride pillion to iconic temples, emerald rice terraces, waterfalls, and quiet backroads — no license or riding experience needed. From IDR 650K.",
     fullDescription: `**See the Real Bali on a Guided Motorbike Highlights Tour**\n\nSkip the crowded tour buses and discover Bali the way locals do — from the back of a motorbike. On this private *Bali highlights motorbike tour*, your experienced English-speaking guide doubles as your driver, so you simply relax on the pillion seat and soak in the scenery. **No motorbike license or riding experience is required.**\n\n### A Full Day of Bali's Best\nWe weave through rice terraces, village backroads, and temple courtyards that larger vehicles can never reach. Stops are flexible and fully customizable — tell your guide what you love (culture, nature, photography, food) and we shape the day around you.\n\n### Comfortable, Safe, and Local\nEvery ride includes a quality helmet, bottled water, and a careful, safety-first driver who knows the roads intimately. This is the perfect way to cover a lot of ground while still stopping for the small moments — a hidden waterfall, a warung lunch, a rice-paddy viewpoint — that make Bali unforgettable.\n\nMessage us on WhatsApp with your date and hotel to lock in your private guide and driver.`,

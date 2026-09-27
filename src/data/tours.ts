@@ -1026,6 +1026,296 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
       }
     ],
     reviews: []
+  },
+  {
+    id: "bali-highlights-motorbike-tour",
+    title: "Bali Highlights Motorbike Tour — Private Guide & Driver",
+    slug: "bali-highlights-motorbike-tour",
+    category: "Adventure",
+    duration: "Full Day (8 Hours)",
+    basePrice: 650000,
+    seoTitle: "Bali Highlights Motorbike Tour — Guide & Driver",
+    seoDescription:
+      "Private full-day Bali highlights motorbike tour with an English-speaking guide & driver — temples, rice terraces, waterfalls & scenic backroads. From IDR 650K.",
+    heroImage: {
+      url: "/images/adventures/motorbike-tour-hero.jpg",
+      alt: "Smiling guests wearing helmets on a guided Bali motorbike tour",
+    },
+    gallery: [
+      {
+        url: "/images/adventures/motorbike-tour-road.jpg",
+        alt: "Guests riding pillion with their guide through Bali streets on the motorbike tour",
+      },
+      {
+        url: "/images/adventures/motorbike-tour-group.jpg",
+        alt: "Guests with their Balinese guide after the motorbike highlights tour",
+      },
+    ],
+    shortDescription:
+      "A private full-day Bali highlights motorbike tour with your own English-speaking guide and driver. Ride pillion to iconic temples, emerald rice terraces, waterfalls, and quiet backroads — no license or riding experience needed. From IDR 650K.",
+    fullDescription: `**See the Real Bali on a Guided Motorbike Highlights Tour**\n\nSkip the crowded tour buses and discover Bali the way locals do — from the back of a motorbike. On this private *Bali highlights motorbike tour*, your experienced English-speaking guide doubles as your driver, so you simply relax on the pillion seat and soak in the scenery. **No motorbike license or riding experience is required.**\n\n### A Full Day of Bali's Best\nWe weave through rice terraces, village backroads, and temple courtyards that larger vehicles can never reach. Stops are flexible and fully customizable — tell your guide what you love (culture, nature, photography, food) and we shape the day around you.\n\n### Comfortable, Safe, and Local\nEvery ride includes a quality helmet, bottled water, and a careful, safety-first driver who knows the roads intimately. This is the perfect way to cover a lot of ground while still stopping for the small moments — a hidden waterfall, a warung lunch, a rice-paddy viewpoint — that make Bali unforgettable.\n\nMessage us on WhatsApp with your date and hotel to lock in your private guide and driver.`,
+    highlights: [
+      "Private English-speaking guide who is also your driver",
+      "Ride pillion — no license or experience needed",
+      "Temples, rice terraces, waterfalls & scenic backroads",
+      "Fully customizable, flexible stops",
+      "Helmet, fuel & bottled water included",
+    ],
+    included: [
+      "Private motorbike with experienced guide & driver",
+      "Fuel for the full-day route",
+      "Quality helmet",
+      "Bottled water",
+      "Flexible, customizable itinerary",
+    ],
+    notIncluded: [
+      "Temple & attraction entrance fees",
+      "Lunch & personal expenses",
+      "Gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-moto-1",
+        time: "09:00 AM",
+        title: "Hotel Pickup & Safety Briefing",
+        description: "Your guide meets you at your hotel, fits your helmet, and outlines the day's flexible route.",
+      },
+      {
+        id: "iti-moto-2",
+        time: "10:00 AM",
+        title: "Temples & Rice Terraces",
+        description: "Ride quiet backroads to iconic temples and emerald rice-terrace viewpoints, stopping for photos along the way.",
+      },
+      {
+        id: "iti-moto-3",
+        time: "01:00 PM",
+        title: "Local Lunch Stop",
+        description: "Pause at a scenic local warung to refuel with authentic Balinese food (own expense).",
+      },
+      {
+        id: "iti-moto-4",
+        time: "02:30 PM",
+        title: "Waterfall & Village Backroads",
+        description: "Continue to a hidden waterfall and weave through village lanes that big tour buses can't reach.",
+      },
+      {
+        id: "iti-moto-5",
+        time: "05:00 PM",
+        title: "Return to Hotel",
+        description: "Wind back through the countryside and get dropped off at your hotel.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-moto-1",
+        question: "Do I need a motorbike license or riding experience?",
+        answer: "No. You ride as a passenger (pillion) behind your guide, who does all the driving. No license or experience is required.",
+      },
+      {
+        id: "faq-moto-2",
+        question: "Can I customize where we go?",
+        answer: "Yes. The itinerary is fully flexible — tell your guide whether you prefer temples, nature, waterfalls, photography, or food, and the day is shaped around your interests.",
+      },
+      {
+        id: "faq-moto-3",
+        question: "Is hotel pickup included?",
+        answer: "Pickup and drop-off are included for hotels in the Ubud and greater Ubud area. For locations further out, let us know and we'll confirm any small transfer surcharge on WhatsApp.",
+      },
+    ],
+    reviews: []
+  },
+  {
+    id: "bali-jungle-swing-tegallalang",
+    title: "Bali Jungle Swing — Happy Swing at Tegallalang",
+    slug: "bali-jungle-swing-tegallalang",
+    category: "Activity",
+    duration: "Half Day (incl. transfers)",
+    basePrice: 550000,
+    childPrice: 400000,
+    seoTitle: "Bali Jungle Swing at Tegallalang — Happy Swing",
+    seoDescription:
+      "Soar over Tegallalang's jungle valley on the Happy Swing Bali. Single + tandem swing, 7 photo spots, free swing dress, private A/C transfers. Promo from IDR 550K.",
+    heroImage: {
+      url: "/images/adventures/bali-swing.jpg",
+      alt: "Woman in a flowing red dress riding a jungle swing over Tegallalang rice terraces in Bali",
+    },
+    gallery: [],
+    shortDescription:
+      "Fly over the Tegallalang jungle valley on the Happy Swing Bali. Your package includes a single and tandem swing, 7 photo spots with a free swing dress, safety-approved gear, insurance, and private air-conditioned transfers with an English-speaking driver. Adult from IDR 550K (promo, was IDR 600K), children IDR 400K — per person, minimum 2 people.",
+    fullDescription: `**Happy Swing Bali at Tegallalang**\n\nSwing out over a breathtaking jungle valley on one of Bali's most iconic experiences. Located in the lush terraces of **Tegallalang, Gianyar**, the Happy Swing Bali lets you soar above palms and rice paddies while a photographer captures the moment.\n\n### Special Promo\nAdult price is now **IDR 550,000 (normally IDR 600,000)**, and children ride for **IDR 400,000**. Prices are per person, with a **minimum booking of 2 people**.\n\n### Your Happy Swing Package Includes\n- 1x Single Swing\n- 1x Tandem Swing\n- 7 photo spots with a free swing dress (female dress only)\n\n### What's Included\n- Private transport with a fully air-conditioned car\n- Professional English-speaking driver\n- Happy Swing Bali activity\n- Safety-standard approved equipment\n- Insurance coverage\n- 21% government tax and service charge\n\n### What to Bring\n- Comfortable shoes\n- Long pants or shorts\n- Camera\n- Sunscreen\n\n### Location\nHappy Swing Bali — Tegallalang, Gianyar Regency, Bali 80561.\n\nMessage us on WhatsApp with your date, hotel, and group size to lock in the promo.`,
+    highlights: [
+      "Soar over the Tegallalang jungle valley",
+      "Single swing + tandem swing included",
+      "7 photo spots with free swing dress (female)",
+      "Safety-approved equipment & insurance",
+      "Private A/C car with English-speaking driver",
+    ],
+    included: [
+      "Private transport with fully air-conditioned car",
+      "Professional English-speaking driver",
+      "Happy Swing Bali activity (single + tandem swing)",
+      "7 photo spots with free swing dress (female dress only)",
+      "Safety-standard approved equipment",
+      "Insurance coverage",
+      "21% government tax and service charge",
+    ],
+    notIncluded: [
+      "Lunch & personal expenses",
+      "Gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-swing-1",
+        time: "Morning",
+        title: "Hotel Pickup",
+        description: "Your English-speaking driver collects you from your hotel in a private air-conditioned car.",
+      },
+      {
+        id: "iti-swing-2",
+        time: "En route",
+        title: "Scenic Drive to Tegallalang",
+        description: "Travel to the Happy Swing Bali location in the lush terraces of Tegallalang, Gianyar.",
+      },
+      {
+        id: "iti-swing-3",
+        time: "On site",
+        title: "Swing & Photo Session",
+        description: "Enjoy your single and tandem swings and capture 7 photo spots, with a free swing dress available (female).",
+      },
+      {
+        id: "iti-swing-4",
+        time: "Afternoon",
+        title: "Return to Hotel",
+        description: "Relax on the private drive back to your hotel.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-swing-1",
+        question: "Is there a minimum number of people?",
+        answer: "Yes. Prices are per person and a minimum booking of 2 people is required. Adults are IDR 550,000 (promo, normally IDR 600,000) and children IDR 400,000.",
+      },
+      {
+        id: "faq-swing-2",
+        question: "What does the Happy Swing package include?",
+        answer: "Each guest gets 1x single swing and 1x tandem swing, plus 7 photo spots with a free swing dress (female dress only). Safety-approved equipment and insurance are included.",
+      },
+      {
+        id: "faq-swing-3",
+        question: "Where is the swing located and is transport included?",
+        answer: "The activity is at Tegallalang, Gianyar Regency, Bali 80561. Private transport in a fully air-conditioned car with a professional English-speaking driver is included.",
+      },
+      {
+        id: "faq-swing-4",
+        question: "What should I bring?",
+        answer: "Comfortable shoes, long pants or shorts, a camera, and sunscreen.",
+      },
+    ],
+    reviews: []
+  },
+  {
+    id: "silver-jewelry-making-class-celuk",
+    title: "Bali Silver Jewelry Making Class in Celuk",
+    slug: "silver-jewelry-making-class-celuk",
+    category: "Culture",
+    duration: "1–6 Hours (4 class options)",
+    basePrice: 580000,
+    seoTitle: "Bali Silver Jewelry Making Class — Celuk",
+    seoDescription:
+      "Make your own silver jewelry in Celuk, Bali. Short, 2-hour, half-day & full-day classes — saw, solder & polish. Includes silver, snacks, certificate & gallery tour.",
+    heroImage: {
+      url: "/images/adventures/silver-class.jpg",
+      alt: "Artisan crafting a silver ring at a jewelry workbench in Celuk, Bali",
+    },
+    gallery: [],
+    shortDescription:
+      "Create your own jewelry with experience in Celuk — Bali's famous silver village. Choose a 1-hour, 2-hour, half-day, or full-day silver class and learn to saw, solder, sand, and polish your own piece. Every class includes silver, welcome drink & snack, a certificate, class photos, and a jewelry museum, factory & gallery tour. From IDR 580K per person.",
+    fullDescription: `**Bali Silver Jewelry Making Class in Celuk**\n\nCreate your own jewelry with experience in **Celuk** — Bali's famous silver village. Pick the class length that suits you, from a quick 1-hour taster to a full-day masterclass. Every class finishes with a jewelry museum, factory & gallery tour.\n\n### Short Time Class — 1 Hour · IDR 580,000\nA quick introduction to silver jewelry making. Includes a maximum of 5 gr silver and 5 class photos.\n\n### 2-Hour Class — IDR 700,000\nMore time at the bench to craft your piece. Includes a maximum of 6 gr silver and 10 class photos.\n\n### Half-Day Class — 3 Hours · IDR 820,000\nThis half-day class introduces you to the basic silver jewelry making techniques. You will learn how to saw, hammer, solder, sand and polish your piece of jewelry. Includes a maximum of 7 gr silver and 15 class photos.\n\n### Full-Day Class — 6 Hours · IDR 1,550,000 (+1 hour lunch break)\nThe full-day course will include an introduction to the fundamental tools and methods for creating jewelry, including sawing, hammering, soldering, sanding, and polishing. Additionally, you'll learn filigree and granulation to make a piece of jewelry with a more complex design. Includes lunch (Indonesian food only), a maximum of 14 gr silver, and 25 class photos.\n\n### Every Class Includes\n- Welcome drink (Loloh, Balinese traditional healthy drink)\n- Welcome snack (Balinese traditional tidbits)\n- Mineral water\n- Certificate of participation\n- Class documentation via Google Drive — photos sent to your email or WhatsApp (link valid for one week)\n- Jewelry museum, factory & gallery tour after the class\n\n### Location\nCeluk, Sukawati, Gianyar — on Jl. Raya Celuk, near SPBU Celuk and the Barong statue landmark.\n\nMessage us on WhatsApp with your preferred date, class length, and group size to book.`,
+    highlights: [
+      "Make your own silver jewelry in Celuk village",
+      "Choose 1-hour, 2-hour, half-day or full-day class",
+      "Learn to saw, solder, sand & polish silver",
+      "Certificate + class photos via Google Drive",
+      "Jewelry museum, factory & gallery tour included",
+    ],
+    included: [
+      "Silver for your piece (5–14 gr depending on class)",
+      "Welcome drink (Loloh, Balinese traditional healthy drink)",
+      "Welcome snack (Balinese traditional tidbits)",
+      "Mineral water",
+      "Certificate of participation",
+      "Class photos via Google Drive (5–25 depending on class)",
+      "Jewelry museum, factory & gallery tour after the class",
+      "Lunch — Full-Day class only (Indonesian food)",
+    ],
+    notIncluded: [
+      "Hotel pickup & transport",
+      "Personal expenses",
+      "Gratuities",
+    ],
+    activityOptions: [
+      { name: "Short Time Class — 1 Hour", priceDiff: 0, description: "Max 5 gr silver · 5 class photos" },
+      { name: "2-Hour Class", priceDiff: 120000, description: "Max 6 gr silver · 10 class photos" },
+      { name: "Half-Day Class — 3 Hours", priceDiff: 240000, description: "Max 7 gr silver · 15 class photos" },
+      { name: "Full-Day Class — 6 Hours", priceDiff: 970000, description: "Max 14 gr silver · 25 class photos · lunch included" },
+    ],
+    itinerary: [
+      {
+        id: "iti-silver-1",
+        time: "Start",
+        title: "Welcome & Introduction",
+        description: "Arrive at the Celuk studio for a welcome drink and snack, then an introduction to the tools and silver techniques.",
+      },
+      {
+        id: "iti-silver-2",
+        time: "Craft",
+        title: "Shape Your Silver",
+        description: "Saw, hammer, and solder your design under the guidance of a Balinese silversmith.",
+      },
+      {
+        id: "iti-silver-3",
+        time: "Finish",
+        title: "Sand & Polish",
+        description: "Sand and polish your piece to a finished shine and receive your certificate of participation.",
+      },
+      {
+        id: "iti-silver-4",
+        time: "After class",
+        title: "Museum, Factory & Gallery Tour",
+        description: "Take a guided tour of the jewelry museum, factory, and gallery to see master silverwork.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-silver-1",
+        question: "What class lengths are available?",
+        answer: "Four options: Short Time (1 hour, IDR 580,000), 2-Hour (IDR 700,000), Half-Day (3 hours, IDR 820,000), and Full-Day (6 hours, IDR 1,550,000). Prices are per person.",
+      },
+      {
+        id: "faq-silver-2",
+        question: "Do I need any experience?",
+        answer: "No. All classes are beginner-friendly. You'll learn to saw, hammer, solder, sand, and polish; the full-day class also covers filigree and granulation for a more complex design.",
+      },
+      {
+        id: "faq-silver-3",
+        question: "How much silver do I get and can I keep my piece?",
+        answer: "Yes, you keep what you make. Silver allowance ranges from 5 gr (Short Time) up to 14 gr (Full-Day) depending on the class.",
+      },
+      {
+        id: "faq-silver-4",
+        question: "Will I get photos of my class?",
+        answer: "Yes. We send class photos via a Google Drive link to your email or WhatsApp (5 to 25 photos depending on the class). The link is valid for one week.",
+      },
+      {
+        id: "faq-silver-5",
+        question: "Where is the class located?",
+        answer: "In Celuk, Sukawati, Gianyar — on Jl. Raya Celuk, near SPBU Celuk and the Barong statue landmark.",
+      },
+    ],
+    reviews: []
   }
 ]
 

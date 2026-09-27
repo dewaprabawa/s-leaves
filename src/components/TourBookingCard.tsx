@@ -26,6 +26,7 @@ const SLUG_TO_ACTIVITY_ID: Record<string, string> = {
   "whitewater-rafting": "rafting",
   "canyon-tubing": "canyon-tubing",
   "ubud-ricefield-cycling-tour": "cycling",
+  "bali-jungle-swing-tegallalang": "swing",
 }
 
 function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {

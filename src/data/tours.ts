@@ -1026,6 +1026,95 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
       }
     ],
     reviews: []
+  },
+  {
+    id: "bali-highlights-motorbike-tour",
+    title: "Bali Highlights Motorbike Tour — Private Guide & Driver",
+    slug: "bali-highlights-motorbike-tour",
+    category: "Adventure",
+    duration: "Full Day (8 Hours)",
+    basePrice: 650000,
+    seoTitle: "Bali Highlights Motorbike Tour — Guide & Driver",
+    seoDescription:
+      "Private full-day Bali highlights motorbike tour with an English-speaking guide & driver — temples, rice terraces, waterfalls & scenic backroads. From IDR 650K.",
+    heroImage: {
+      url: "https://images.unsplash.com/photo-1591768793355-74d04bb6608f?auto=format&fit=crop&w=1200&q=80",
+      alt: "Rider exploring scenic Bali roads on a guided motorbike highlights tour",
+    },
+    gallery: [],
+    shortDescription:
+      "A private full-day Bali highlights motorbike tour with your own English-speaking guide and driver. Ride pillion to iconic temples, emerald rice terraces, waterfalls, and quiet backroads — no license or riding experience needed. From IDR 650K.",
+    fullDescription: `**See the Real Bali on a Guided Motorbike Highlights Tour**\n\nSkip the crowded tour buses and discover Bali the way locals do — from the back of a motorbike. On this private *Bali highlights motorbike tour*, your experienced English-speaking guide doubles as your driver, so you simply relax on the pillion seat and soak in the scenery. **No motorbike license or riding experience is required.**\n\n### A Full Day of Bali's Best\nWe weave through rice terraces, village backroads, and temple courtyards that larger vehicles can never reach. Stops are flexible and fully customizable — tell your guide what you love (culture, nature, photography, food) and we shape the day around you.\n\n### Comfortable, Safe, and Local\nEvery ride includes a quality helmet, bottled water, and a careful, safety-first driver who knows the roads intimately. This is the perfect way to cover a lot of ground while still stopping for the small moments — a hidden waterfall, a warung lunch, a rice-paddy viewpoint — that make Bali unforgettable.\n\nMessage us on WhatsApp with your date and hotel to lock in your private guide and driver.`,
+    highlights: [
+      "Private English-speaking guide who is also your driver",
+      "Ride pillion — no license or experience needed",
+      "Temples, rice terraces, waterfalls & scenic backroads",
+      "Fully customizable, flexible stops",
+      "Helmet, fuel & bottled water included",
+    ],
+    included: [
+      "Private motorbike with experienced guide & driver",
+      "Fuel for the full-day route",
+      "Quality helmet",
+      "Bottled water",
+      "Flexible, customizable itinerary",
+    ],
+    notIncluded: [
+      "Temple & attraction entrance fees",
+      "Lunch & personal expenses",
+      "Gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-moto-1",
+        time: "09:00 AM",
+        title: "Hotel Pickup & Safety Briefing",
+        description: "Your guide meets you at your hotel, fits your helmet, and outlines the day's flexible route.",
+      },
+      {
+        id: "iti-moto-2",
+        time: "10:00 AM",
+        title: "Temples & Rice Terraces",
+        description: "Ride quiet backroads to iconic temples and emerald rice-terrace viewpoints, stopping for photos along the way.",
+      },
+      {
+        id: "iti-moto-3",
+        time: "01:00 PM",
+        title: "Local Lunch Stop",
+        description: "Pause at a scenic local warung to refuel with authentic Balinese food (own expense).",
+      },
+      {
+        id: "iti-moto-4",
+        time: "02:30 PM",
+        title: "Waterfall & Village Backroads",
+        description: "Continue to a hidden waterfall and weave through village lanes that big tour buses can't reach.",
+      },
+      {
+        id: "iti-moto-5",
+        time: "05:00 PM",
+        title: "Return to Hotel",
+        description: "Wind back through the countryside and get dropped off at your hotel.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-moto-1",
+        question: "Do I need a motorbike license or riding experience?",
+        answer: "No. You ride as a passenger (pillion) behind your guide, who does all the driving. No license or experience is required.",
+      },
+      {
+        id: "faq-moto-2",
+        question: "Can I customize where we go?",
+        answer: "Yes. The itinerary is fully flexible — tell your guide whether you prefer temples, nature, waterfalls, photography, or food, and the day is shaped around your interests.",
+      },
+      {
+        id: "faq-moto-3",
+        question: "Is hotel pickup included?",
+        answer: "Pickup and drop-off are included for hotels in the Ubud and greater Ubud area. For locations further out, let us know and we'll confirm any small transfer surcharge on WhatsApp.",
+      },
+    ],
+    reviews: []
   }
 ]
 

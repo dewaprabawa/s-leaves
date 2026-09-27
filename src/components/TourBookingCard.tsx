@@ -210,8 +210,9 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
 
 export default function TourBookingCard(props: TourBookingCardProps) {
   const [open, setOpen] = useState(false)
+  const [primaryId, setPrimaryId] = useState<string | null>(null)
   const configs = buildTourConfigs(props)
-  const primary = configs[0]
+  const primary = configs.find((c) => c.id === primaryId) ?? configs[0]
   const { promoPrice, standardPrice, tierLabel } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
   const hasPromo = standardPrice > promoPrice
   const consultationActivity =
@@ -282,7 +283,10 @@ export default function TourBookingCard(props: TourBookingCardProps) {
               </a>
               <button
                 type="button"
-                onClick={() => setOpen(true)}
+                onClick={() => {
+                  setPrimaryId(null)
+                  setOpen(true)
+                }}
                 className="flex shrink-0 items-center justify-center gap-1.5 h-11 rounded-full btn-gold-shimmer px-4 font-bold text-xs uppercase tracking-wider"
               >
                 {stickyBookLabel(props.tourSlug)}{" "}
@@ -371,6 +375,32 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           ) : null}
         </div>
 
+        {!isPrivateItinerary && configs.length > 1 ? (
+          <div className="space-y-2 rounded-2xl border border-brand-green/10 bg-sand/40 p-3">
+            <p className="text-[11px] font-bold uppercase tracking-wider text-brand-green-light">
+              Tap to book your option
+            </p>
+            <div className="max-h-52 space-y-1.5 overflow-y-auto pr-0.5">
+              {configs.map((option) => (
+                <button
+                  key={option.id}
+                  type="button"
+                  onClick={() => {
+                    setPrimaryId(option.id)
+                    setOpen(true)
+                  }}
+                  className="flex w-full items-center justify-between gap-2 rounded-xl border border-brand-green/15 bg-white px-3 py-2.5 text-left transition-colors hover:border-brand-green/40 hover:bg-brand-green/5"
+                >
+                  <span className="text-sm font-semibold leading-snug text-brand-green">{option.title}</span>
+                  <span className="shrink-0 whitespace-nowrap text-xs font-bold text-brand-green-light">
+                    {formatIdr(option.adultPrice)}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
         <p className="text-xs text-brand-green-light leading-relaxed">
           {isPrivateItinerary
             ? "Consultation only — there is no booking form or checkout for this itinerary. WhatsApp group type, dates, villa area, guest count, and your day list. We reply with a driver + activity quote. No payment to inquire."
@@ -392,7 +422,10 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             <>
               <button
                 type="button"
-                onClick={() => setOpen(true)}
+                onClick={() => {
+                  setPrimaryId(null)
+                  setOpen(true)
+                }}
                 className="w-full flex items-center justify-center gap-2 h-12 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
               >
                 {primaryBookLabel(props.tourSlug)}{" "}

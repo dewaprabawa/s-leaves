@@ -120,7 +120,7 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: 'Whitewater Rafting Adventure',
     description: 'Class II-III whitewater rafting through a jungle river canyon. All-inclusive with professional crew and lunch.',
-    price: '400000',
+    price: '500000',
     image: '/images/adventures/rafting.jpg',
   },
   {

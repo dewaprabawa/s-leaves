@@ -568,7 +568,7 @@ Pickup quoted. Not a jewelry class — see silver making for that.`,
   }),
   ticketTour({
     slug: "silver-making-class",
-    imageSlug: "silver-making-workshop",
+    imageSlug: "silver-making-hands",
     title: "Silver Making Class",
     seoTitle: "Ubud Silver Making Class | From IDR 650K",
     seoDescription:
@@ -593,7 +593,7 @@ Extra silver is quoted. Pickup extra.`,
   }),
   ticketTour({
     slug: "balinese-dance-class",
-    imageSlug: "balinese-dance-lesson",
+    imageSlug: "balinese-dance-troupe",
     title: "Balinese Dance Class",
     seoTitle: "Balinese Dance Class Ubud | From IDR 600K",
     seoDescription:
@@ -615,7 +615,7 @@ Studio confirmed on WhatsApp. Pickup quoted.`,
   }),
   ticketTour({
     slug: "batik-class",
-    imageSlug: "batik-class-workshop",
+    imageSlug: "batik-canting-wax",
     title: "Batik Class",
     seoTitle: "Ubud Batik Class | From IDR 650K",
     seoDescription:

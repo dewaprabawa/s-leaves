@@ -2511,7 +2511,7 @@ Message us on WhatsApp with your date, pickup point, and chosen destination to b
     basePrice: UTV_BUGGY_SINGLE_IDR,
     seoTitle: "UTV Buggy Bali | Single 1.2M · Tandem 1.5M",
     seoDescription:
-      "1-hour UTV buggy: ricefield, mud, gravel, puddles, donut trek. Single IDR 1,200,000 · tandem 1,500,000. Not Sedang ATV. WhatsApp.",
+      "1-hour 7 km UTV: Crocodile Cave, rice fields, mud, circuit. Lunch included. Single IDR 1,200,000 · tandem 1,500,000. WhatsApp.",
     heroImage: {
       url: "/images/adventures/utv-buggy-ricefield.jpg",
       alt: "Two UTV buggies splashing through a muddy ricefield track in Bali",
@@ -2533,34 +2533,50 @@ Message us on WhatsApp with your date, pickup point, and chosen destination to b
       },
     ],
     shortDescription:
-      "1-hour UTV at Buggy Bali Adventure: ricefield, muddy trek, gravel, puddles, and a donut run. Single IDR 1,200,000 · tandem IDR 1,500,000. Pickup quoted.",
-    fullDescription: `**Want a 1-hour UTV, not a quad and not a 3-lap Polaris course?** We book **Buggy Bali Adventure** — a sit-in UTV on ricefield mud, gravel, puddles, and a donut trek. The crocodile water-gate is on the line.
+      "About 1 hour / 7 km automatic UTV: Crocodile Cave, rice fields, mud, circuit, jungle. Lunch included. Single IDR 1,200,000 · tandem IDR 1,500,000.",
+    fullDescription: `**Want a 1-hour UTV, not a quad and not a 3-lap Polaris course?** We book **Buggy Bali Adventure** — an **automatic** sit-in UTV on a **7 km** line: Crocodile Cave (Goa Buaya), water pits, rice fields, mud, circuit, fun speed, and jungle.
 
 This is **not** [Sedang ATV](/tours/bali-atv-adventure) at All New Bali Adventure and **not** the imported [jungle buggies 3-lap](/tours/jungle-buggies-complete-3-laps-tour) Polaris ticket.
 
 ### 2026 prices
 | Rig | Price | Who |
 |-----|-------|-----|
-| **Single UTV** | **IDR ${UTV_BUGGY_SINGLE_IDR.toLocaleString("id-ID")}** | One rider |
-| **Tandem UTV** | **IDR ${UTV_BUGGY_TANDEM_IDR.toLocaleString("id-ID")}** | Two guests sharing one buggy |
+| **Single UTV** | **IDR ${UTV_BUGGY_SINGLE_IDR.toLocaleString("id-ID")}** | One rider (driver, 17+) |
+| **Tandem UTV** | **IDR ${UTV_BUGGY_TANDEM_IDR.toLocaleString("id-ID")}** | Two guests on one buggy (passenger 6+) |
 
-The hour includes welcome drink, helmet / kit, instructor, towel, locker, shower, insurance, and tax/service. Hotel pickup is **quoted**. We book the seat; the track crew runs the briefing.
+### Already included
+- Welcome drink
+- Towel, soap, and shower
+- Locker
+- Insurance
+- Lunch (fried rice or fried noodles)
+- Safety gear (helmet and boots)
+- Professional instructor
+
+Hotel pickup is **quoted**. We book the seat; the track crew runs the briefing.
+
+### Terms
+1. The guest who **drives** must be able to drive.
+2. Minimum age: **17** (driver) · **6** (passenger).
+3. The buggy is **automatic** — easy to drive.
+4. Duration about **1 hour** on a **7 km** track.
+5. Track: Crocodile Cave, water pits, rice fields, mud, circuit, fun speed, jungle.
 
 WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
     highlights: [
-      "1-hour UTV — ricefield, mud, gravel, puddles, donut trek",
-      "Single IDR 1,200,000 · tandem IDR 1,500,000",
-      "Welcome drink, kit, instructor, towel, locker, shower, insurance",
-      "Not Sedang ATV and not the 3-lap Polaris course",
+      "About 1 hour · 7 km automatic UTV",
+      "Crocodile Cave, rice fields, mud, circuit, fun speed, jungle",
+      "Lunch (fried rice / fried noodles) plus welcome drink, locker, shower",
+      "Driver 17+ · passenger 6+ · not Sedang ATV",
     ],
     included: [
-      "1-hour UTV (single or tandem)",
       "Welcome drink",
-      "Helmet and riding equipment",
-      "Professional instructor and safety briefing",
-      "Towel, locker, and shower",
+      "Towel, soap, and shower",
+      "Locker",
       "Insurance",
-      "Tax and service",
+      "Lunch (fried rice or fried noodles)",
+      "Safety gear (helmet and boots)",
+      "Professional instructor",
     ],
     notIncluded: [
       "Hotel pickup unless quoted",
@@ -2571,31 +2587,31 @@ WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
         id: "iti-utv-1",
         time: "Arrive",
         title: "Briefing + kit",
-        description: "Welcome drink, helmet fit, single or tandem assignment.",
+        description: "Welcome drink, helmet and boots, single or tandem. Driver must be 17+ and able to drive.",
       },
       {
         id: "iti-utv-2",
-        time: "1 hour",
-        title: "Track",
-        description: "Ricefield, muddy trek, gravel, puddles, donut run, crocodile water-gate.",
+        time: "About 1 hour",
+        title: "7 km track",
+        description: "Crocodile Cave, water pits, rice fields, mud, circuit, fun speed, jungle.",
       },
       {
         id: "iti-utv-3",
         time: "Finish",
-        title: "Shower",
-        description: "Towel, locker, rinse off the mud.",
+        title: "Lunch + shower",
+        description: "Fried rice or fried noodles. Towel, soap, locker, rinse off the mud.",
       },
     ],
     activityOptions: [
       {
         name: "Single UTV Buggy",
         priceDiff: 0,
-        description: `IDR ${UTV_BUGGY_SINGLE_IDR.toLocaleString("id-ID")} · 1 rider · 1 hour`,
+        description: `IDR ${UTV_BUGGY_SINGLE_IDR.toLocaleString("id-ID")} · 1 rider · about 1 hour / 7 km`,
       },
       {
         name: "Tandem UTV Buggy",
         priceDiff: UTV_BUGGY_TANDEM_IDR - UTV_BUGGY_SINGLE_IDR,
-        description: `IDR ${UTV_BUGGY_TANDEM_IDR.toLocaleString("id-ID")} · 2 guests on one buggy · 1 hour`,
+        description: `IDR ${UTV_BUGGY_TANDEM_IDR.toLocaleString("id-ID")} · 2 guests on one buggy · about 1 hour / 7 km`,
       },
     ],
     addons: [],
@@ -2604,22 +2620,34 @@ WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
         id: "faq-utv-1",
         question: "How much is the UTV buggy?",
         answer:
-          "Single UTV is IDR 1,200,000 (one rider). Tandem is IDR 1,500,000 for two guests sharing one buggy. About 1 hour. Pickup is quoted. WhatsApp — no payment to inquire.",
+          "Single UTV is IDR 1,200,000 (one rider). Tandem is IDR 1,500,000 for two guests sharing one buggy. About 1 hour on a 7 km automatic track. Lunch (fried rice or fried noodles) is included. Pickup is quoted. WhatsApp — no payment to inquire.",
       },
       {
         id: "faq-utv-2",
-        question: "Is this the same as your Ubud ATV?",
+        question: "What is included?",
         answer:
-          "No. ATV at All New Bali Adventure in Sedang is a quad-bike jungle-mud ticket from IDR 750,000. This is a sit-in UTV at Buggy Bali Adventure for 1 hour.",
+          "Welcome drink; towel, soap, and shower; locker; insurance; lunch (fried rice or fried noodles); helmet and boots; and a professional instructor. Hotel pickup is not in the from-price unless we quote it.",
       },
       {
         id: "faq-utv-3",
-        question: "Is this the jungle buggies 3-lap ticket?",
+        question: "What is the minimum age?",
         answer:
-          "No. Jungle buggies 3 laps is a different Polaris course from IDR 1,120,000 (about two hours). This UTV is a 1-hour ricefield / mud / donut line at a different venue.",
+          "The driver must be 17 or older and able to drive. A passenger can be 6 or older on a tandem buggy. The buggy is automatic.",
       },
       {
         id: "faq-utv-4",
+        question: "Is this the same as your Ubud ATV?",
+        answer:
+          "No. ATV at All New Bali Adventure in Sedang is a quad-bike jungle-mud ticket from IDR 750,000. This is a sit-in automatic UTV at Buggy Bali Adventure for about 1 hour / 7 km.",
+      },
+      {
+        id: "faq-utv-5",
+        question: "Is this the jungle buggies 3-lap ticket?",
+        answer:
+          "No. Jungle buggies 3 laps is a different Polaris course from IDR 1,120,000 (about two hours). This UTV is a 7 km rice-field / mud / Crocodile Cave line at a different venue.",
+      },
+      {
+        id: "faq-utv-6",
         question: "Is hotel pickup included?",
         answer:
           "Usually not in the from-price. We quote a private driver or you self-meet. Say your hotel area on WhatsApp.",

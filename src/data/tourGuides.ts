@@ -689,7 +689,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'utv-buggy-bali-adventure': {
     title: 'From our booking desk',
-    body: 'Say single or tandem on WhatsApp — single is one rider at IDR 1,200,000, tandem is two on one buggy at IDR 1,500,000. This is a 1-hour sit-in UTV at Buggy Bali Adventure, not the Sedang ATV and not the 3-lap Polaris course. Pickup is quoted.',
+    body: 'Say single or tandem on WhatsApp — single is one rider at IDR 1,200,000, tandem is two on one buggy at IDR 1,500,000. The driver must be 17+ and able to drive; a passenger can be 6+. About 1 hour on a 7 km automatic track, lunch included. Not the Sedang ATV and not the 3-lap Polaris course. Pickup is quoted.',
   },
 }
 

@@ -9,6 +9,7 @@ export type ActivityId =
   | 'rafting'
   | 'canyon-tubing'
   | 'cycling'
+  | 'swing'
 
 /** Operator base cost (IDR) — do not sell at or below these */
 export const BASE_COST_IDR: Record<ActivityId, number> = {
@@ -17,6 +18,7 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
   'rafting': 200_000, // per person
   'canyon-tubing': 175_000, // per person
   'cycling': 300_000, // per person (internal floor)
+  'swing': 400_000, // per person floor
 }
 
 /** Tier 1 = 1 unit/pax, tier 2 = 2, tier 3 = 3+ */
@@ -26,12 +28,14 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'rafting': [600_000, 575_000, 550_000], // promo: from IDR 550k (was IDR 600k)
   'canyon-tubing': [359_000, 335_000, 320_000],
   'cycling': [475_000, 450_000, 425_000],
+  'swing': [600_000, 575_000, 550_000], // promo: from IDR 550k (was IDR 600k)
 }
 
 export const CHILD_PRICE_IDR: Partial<Record<ActivityId, number>> = {
   'single-atv': 550_000,
   'rafting': 350_000,
   'canyon-tubing': 300_000,
+  'swing': 400_000,
 }
 
 export const PICKUP_FEE_IDR = 50_000

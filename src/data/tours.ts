@@ -1115,6 +1115,96 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
       },
     ],
     reviews: []
+  },
+  {
+    id: "bali-jungle-swing-tegallalang",
+    title: "Bali Jungle Swing — Happy Swing at Tegallalang",
+    slug: "bali-jungle-swing-tegallalang",
+    category: "Activity",
+    duration: "Half Day (incl. transfers)",
+    basePrice: 550000,
+    childPrice: 400000,
+    seoTitle: "Bali Jungle Swing at Tegallalang — Happy Swing",
+    seoDescription:
+      "Soar over Tegallalang's jungle valley on the Happy Swing Bali. Single + tandem swing, 7 photo spots, free swing dress, private A/C transfers. Promo from IDR 550K.",
+    heroImage: {
+      url: "/images/adventures/bali-swing.jpg",
+      alt: "Woman in a flowing red dress riding a jungle swing over Tegallalang rice terraces in Bali",
+    },
+    gallery: [],
+    shortDescription:
+      "Fly over the Tegallalang jungle valley on the Happy Swing Bali. Your package includes a single and tandem swing, 7 photo spots with a free swing dress, safety-approved gear, insurance, and private air-conditioned transfers with an English-speaking driver. Adult from IDR 550K (promo, was IDR 600K), children IDR 400K — per person, minimum 2 people.",
+    fullDescription: `**Happy Swing Bali at Tegallalang**\n\nSwing out over a breathtaking jungle valley on one of Bali's most iconic experiences. Located in the lush terraces of **Tegallalang, Gianyar**, the Happy Swing Bali lets you soar above palms and rice paddies while a photographer captures the moment.\n\n### Special Promo\nAdult price is now **IDR 550,000 (normally IDR 600,000)**, and children ride for **IDR 400,000**. Prices are per person, with a **minimum booking of 2 people**.\n\n### Your Happy Swing Package Includes\n- 1x Single Swing\n- 1x Tandem Swing\n- 7 photo spots with a free swing dress (female dress only)\n\n### What's Included\n- Private transport with a fully air-conditioned car\n- Professional English-speaking driver\n- Happy Swing Bali activity\n- Safety-standard approved equipment\n- Insurance coverage\n- 21% government tax and service charge\n\n### What to Bring\n- Comfortable shoes\n- Long pants or shorts\n- Camera\n- Sunscreen\n\n### Location\nHappy Swing Bali — Tegallalang, Gianyar Regency, Bali 80561.\n\nMessage us on WhatsApp with your date, hotel, and group size to lock in the promo.`,
+    highlights: [
+      "Soar over the Tegallalang jungle valley",
+      "Single swing + tandem swing included",
+      "7 photo spots with free swing dress (female)",
+      "Safety-approved equipment & insurance",
+      "Private A/C car with English-speaking driver",
+    ],
+    included: [
+      "Private transport with fully air-conditioned car",
+      "Professional English-speaking driver",
+      "Happy Swing Bali activity (single + tandem swing)",
+      "7 photo spots with free swing dress (female dress only)",
+      "Safety-standard approved equipment",
+      "Insurance coverage",
+      "21% government tax and service charge",
+    ],
+    notIncluded: [
+      "Lunch & personal expenses",
+      "Gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-swing-1",
+        time: "Morning",
+        title: "Hotel Pickup",
+        description: "Your English-speaking driver collects you from your hotel in a private air-conditioned car.",
+      },
+      {
+        id: "iti-swing-2",
+        time: "En route",
+        title: "Scenic Drive to Tegallalang",
+        description: "Travel to the Happy Swing Bali location in the lush terraces of Tegallalang, Gianyar.",
+      },
+      {
+        id: "iti-swing-3",
+        time: "On site",
+        title: "Swing & Photo Session",
+        description: "Enjoy your single and tandem swings and capture 7 photo spots, with a free swing dress available (female).",
+      },
+      {
+        id: "iti-swing-4",
+        time: "Afternoon",
+        title: "Return to Hotel",
+        description: "Relax on the private drive back to your hotel.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-swing-1",
+        question: "Is there a minimum number of people?",
+        answer: "Yes. Prices are per person and a minimum booking of 2 people is required. Adults are IDR 550,000 (promo, normally IDR 600,000) and children IDR 400,000.",
+      },
+      {
+        id: "faq-swing-2",
+        question: "What does the Happy Swing package include?",
+        answer: "Each guest gets 1x single swing and 1x tandem swing, plus 7 photo spots with a free swing dress (female dress only). Safety-approved equipment and insurance are included.",
+      },
+      {
+        id: "faq-swing-3",
+        question: "Where is the swing located and is transport included?",
+        answer: "The activity is at Tegallalang, Gianyar Regency, Bali 80561. Private transport in a fully air-conditioned car with a professional English-speaking driver is included.",
+      },
+      {
+        id: "faq-swing-4",
+        question: "What should I bring?",
+        answer: "Comfortable shoes, long pants or shorts, a camera, and sunscreen.",
+      },
+    ],
+    reviews: []
   }
 ]
 

@@ -152,6 +152,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
     props.tourSlug === GIRLS_TRIP_SLUG
   const isMelukat = props.tourSlug === "tirta-empu-purification"
   const isLuwak = props.tourSlug === "luwak-coffee-plantation"
+  const isMotorbike = props.tourSlug === "bali-motorbike-traveling-trip"
 
   if (props.activityOptions?.length) {
     return props.activityOptions.map((opt, index) => {
@@ -178,7 +179,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         minPax: /tandem|2 guests/i.test(opt.name) ? 2 : isLuwak ? 3 : 1,
         getYourGuideUrl: props.getYourGuideUrl,
         freeUbudPickup: props.tourSlug === "balinese-cooking-class",
-        pickupIncluded: isMelukat,
+        pickupIncluded: isMelukat || isMotorbike,
         pickupNotOffered: isLuwak,
       }
     })

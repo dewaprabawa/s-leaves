@@ -2361,21 +2361,39 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
 Explore Bali on a comfortable **125–160cc automatic motorbike/scooter** with a local English-speaking guide leading the way. Pick the region you want to explore and we build the day around that area's very best spots. **Prices are per scooter and do not include attraction entrance tickets.** Tell us your pickup point and preferred destination when you book.
 
 ### Ubud Traveling Trip — IDR 450,000 / scooter
+
+![Emerald rice terraces near Ubud, Bali](/images/adventures/moto-ubud.jpg)
+
 Rice terrace, Ulun Petanu waterfall, Gunung Kawi Tampaksiring, Bali Umah Kuno (traditional old house), and Monkey Forest / Monkey River.
 
 ### Ubud Waterfall Trip — IDR 500,000 / scooter
+
+![Bali jungle waterfall into a turquoise pool](/images/adventures/moto-ubud-waterfall.jpg)
+
 Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan waterfalls.
 
 ### Kintamani Traveling Trip — IDR 600,000 / scooter
+
+![Sunrise over Mount Batur and Lake Batur in Kintamani](/images/adventures/moto-kintamani.jpg)
+
 Sunrise peak view, Pura Jati Segara, optional natural hot spring, Penglipuran Village, and Tukad Cepung Waterfall.
 
 ### South Bali Traveling Trip — IDR 650,000 / scooter
+
+![Uluwatu clifftop temple above the ocean in South Bali](/images/adventures/moto-south.jpg)
+
 Tanah Lot, Uluwatu, GWK, Melasti Beach, and an optional Kedonganan seafood dinner at sunset.
 
 ### North Bali Traveling Trip — IDR 750,000 / scooter
+
+![Ulun Danu Beratan lake temple in North Bali](/images/adventures/moto-north.jpg)
+
 Sangeh Monkey Sanctuary, Leke-Leke Waterfall, Beratan Lake & Temple, and Jatiluwih — Bali's biggest rice terrace.
 
 ### East Bali Traveling Trip — IDR 800,000 / scooter
+
+![Tirta Gangga water palace stepping stones in East Bali](/images/adventures/moto-east.jpg)
+
 Tukad Cepung Waterfall, Besakih Mother Temple, Tirta Gangga, Taman Ujung Water Palace, and Virgin Beach.
 
 ### Good to Know

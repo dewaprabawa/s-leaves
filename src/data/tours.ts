@@ -1205,6 +1205,108 @@ Before you leave, you will be provided with a comprehensive digital recipe book.
       },
     ],
     reviews: []
+  },
+  {
+    id: "silver-jewelry-making-class-celuk",
+    title: "Bali Silver Jewelry Making Class in Celuk",
+    slug: "silver-jewelry-making-class-celuk",
+    category: "Culture",
+    duration: "1–6 Hours (4 class options)",
+    basePrice: 580000,
+    seoTitle: "Bali Silver Jewelry Making Class — Celuk",
+    seoDescription:
+      "Make your own silver jewelry in Celuk, Bali. Short, 2-hour, half-day & full-day classes — saw, solder & polish. Includes silver, snacks, certificate & gallery tour.",
+    heroImage: {
+      url: "/images/adventures/silver-class.jpg",
+      alt: "Artisan crafting a silver ring at a jewelry workbench in Celuk, Bali",
+    },
+    gallery: [],
+    shortDescription:
+      "Create your own jewelry with experience in Celuk — Bali's famous silver village. Choose a 1-hour, 2-hour, half-day, or full-day silver class and learn to saw, solder, sand, and polish your own piece. Every class includes silver, welcome drink & snack, a certificate, class photos, and a jewelry museum, factory & gallery tour. From IDR 580K per person.",
+    fullDescription: `**Bali Silver Jewelry Making Class in Celuk**\n\nCreate your own jewelry with experience in **Celuk** — Bali's famous silver village. Pick the class length that suits you, from a quick 1-hour taster to a full-day masterclass. Every class finishes with a jewelry museum, factory & gallery tour.\n\n### Short Time Class — 1 Hour · IDR 580,000\nA quick introduction to silver jewelry making. Includes a maximum of 5 gr silver and 5 class photos.\n\n### 2-Hour Class — IDR 700,000\nMore time at the bench to craft your piece. Includes a maximum of 6 gr silver and 10 class photos.\n\n### Half-Day Class — 3 Hours · IDR 820,000\nThis half-day class introduces you to the basic silver jewelry making techniques. You will learn how to saw, hammer, solder, sand and polish your piece of jewelry. Includes a maximum of 7 gr silver and 15 class photos.\n\n### Full-Day Class — 6 Hours · IDR 1,550,000 (+1 hour lunch break)\nThe full-day course will include an introduction to the fundamental tools and methods for creating jewelry, including sawing, hammering, soldering, sanding, and polishing. Additionally, you'll learn filigree and granulation to make a piece of jewelry with a more complex design. Includes lunch (Indonesian food only), a maximum of 14 gr silver, and 25 class photos.\n\n### Every Class Includes\n- Welcome drink (Loloh, Balinese traditional healthy drink)\n- Welcome snack (Balinese traditional tidbits)\n- Mineral water\n- Certificate of participation\n- Class documentation via Google Drive — photos sent to your email or WhatsApp (link valid for one week)\n- Jewelry museum, factory & gallery tour after the class\n\n### Location\nCeluk, Sukawati, Gianyar — on Jl. Raya Celuk, near SPBU Celuk and the Barong statue landmark.\n\nMessage us on WhatsApp with your preferred date, class length, and group size to book.`,
+    highlights: [
+      "Make your own silver jewelry in Celuk village",
+      "Choose 1-hour, 2-hour, half-day or full-day class",
+      "Learn to saw, solder, sand & polish silver",
+      "Certificate + class photos via Google Drive",
+      "Jewelry museum, factory & gallery tour included",
+    ],
+    included: [
+      "Silver for your piece (5–14 gr depending on class)",
+      "Welcome drink (Loloh, Balinese traditional healthy drink)",
+      "Welcome snack (Balinese traditional tidbits)",
+      "Mineral water",
+      "Certificate of participation",
+      "Class photos via Google Drive (5–25 depending on class)",
+      "Jewelry museum, factory & gallery tour after the class",
+      "Lunch — Full-Day class only (Indonesian food)",
+    ],
+    notIncluded: [
+      "Hotel pickup & transport",
+      "Personal expenses",
+      "Gratuities",
+    ],
+    activityOptions: [
+      { name: "Short Time Class — 1 Hour", priceDiff: 0, description: "Max 5 gr silver · 5 class photos" },
+      { name: "2-Hour Class", priceDiff: 120000, description: "Max 6 gr silver · 10 class photos" },
+      { name: "Half-Day Class — 3 Hours", priceDiff: 240000, description: "Max 7 gr silver · 15 class photos" },
+      { name: "Full-Day Class — 6 Hours", priceDiff: 970000, description: "Max 14 gr silver · 25 class photos · lunch included" },
+    ],
+    itinerary: [
+      {
+        id: "iti-silver-1",
+        time: "Start",
+        title: "Welcome & Introduction",
+        description: "Arrive at the Celuk studio for a welcome drink and snack, then an introduction to the tools and silver techniques.",
+      },
+      {
+        id: "iti-silver-2",
+        time: "Craft",
+        title: "Shape Your Silver",
+        description: "Saw, hammer, and solder your design under the guidance of a Balinese silversmith.",
+      },
+      {
+        id: "iti-silver-3",
+        time: "Finish",
+        title: "Sand & Polish",
+        description: "Sand and polish your piece to a finished shine and receive your certificate of participation.",
+      },
+      {
+        id: "iti-silver-4",
+        time: "After class",
+        title: "Museum, Factory & Gallery Tour",
+        description: "Take a guided tour of the jewelry museum, factory, and gallery to see master silverwork.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-silver-1",
+        question: "What class lengths are available?",
+        answer: "Four options: Short Time (1 hour, IDR 580,000), 2-Hour (IDR 700,000), Half-Day (3 hours, IDR 820,000), and Full-Day (6 hours, IDR 1,550,000). Prices are per person.",
+      },
+      {
+        id: "faq-silver-2",
+        question: "Do I need any experience?",
+        answer: "No. All classes are beginner-friendly. You'll learn to saw, hammer, solder, sand, and polish; the full-day class also covers filigree and granulation for a more complex design.",
+      },
+      {
+        id: "faq-silver-3",
+        question: "How much silver do I get and can I keep my piece?",
+        answer: "Yes, you keep what you make. Silver allowance ranges from 5 gr (Short Time) up to 14 gr (Full-Day) depending on the class.",
+      },
+      {
+        id: "faq-silver-4",
+        question: "Will I get photos of my class?",
+        answer: "Yes. We send class photos via a Google Drive link to your email or WhatsApp (5 to 25 photos depending on the class). The link is valid for one week.",
+      },
+      {
+        id: "faq-silver-5",
+        question: "Where is the class located?",
+        answer: "In Celuk, Sukawati, Gianyar — on Jl. Raya Celuk, near SPBU Celuk and the Barong statue landmark.",
+      },
+    ],
+    reviews: []
   }
 ]
 

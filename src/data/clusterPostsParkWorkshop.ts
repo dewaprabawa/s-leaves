@@ -116,7 +116,7 @@ Message WhatsApp with **Zoo / Safari package / Taro, date, guest count, kids’ 
 > - Canyoning = ropes + water in a gorge · measurements required · age 8+
 > - Tubing = easy Wos River float · same desk as ATV
 > - Jungle buggies = Polaris laps · **not** the Sedang ATV
-> - UTV = 1-hour sit-in buggy at Buggy Bali Adventure · **not** the 3-lap Polaris ticket
+> - UTV = 1-hour / 7 km automatic buggy at Bali Buggy Adventures (Pemogan) · lunch included · **not** the 3-lap Polaris ticket
 > - ATV = jungle mud / river crossings at All New Bali Adventure
 > - We do **not** sell scuba or island fastboats
 
@@ -125,7 +125,7 @@ Message WhatsApp with **Zoo / Safari package / Taro, date, guest count, kids’ 
 | | Canyoning | Canyon tubing | Jungle buggies | UTV buggy | Sedang ATV |
 | --- | --- | --- | --- | --- | --- |
 | From (IDR) | **1,850,000** | **500,000** · **450,000** for 2+ | **1,120,000** | **1,200,000** single · **1,500,000** tandem | **750,000** single |
-| What you do | Rappel / jump / slide | Sit on a tube | 3 Polaris laps | 1-hour ricefield / mud / donut | Quad mud track |
+| What you do | Rappel / jump / slide | Sit on a tube | 3 Polaris laps | 7 km automatic UTV · lunch | Quad mud track |
 | Pickup | Quoted | **IDR 400,000** or self-meet | Quoted | Quoted | **IDR 400,000** or self-meet |
 | We operate? | We book the seat | Yes (Wos River) | We book the seat | We book the seat | Yes (Sedang arena) |
 

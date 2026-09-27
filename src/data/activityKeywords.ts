@@ -544,7 +544,7 @@ export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
     compare: ['jungle buggies vs ATV Ubud', 'jungle buggies vs UTV Bali'],
   },
   'utv-buggy-bali-adventure': {
-    head: ['UTV buggy Bali', 'Buggy Bali Adventure', 'UTV ride Bali'],
+    head: ['UTV buggy Bali', 'Bali Buggy Adventures', 'UTV ride Bali'],
     book: [
       'UTV buggy Bali price',
       'single UTV buggy Bali',

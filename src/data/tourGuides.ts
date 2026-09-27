@@ -536,7 +536,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'jungle-buggies-complete-3-laps-tour': [
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'Buggies are not the Sedang ATV.' },
-    { title: 'UTV Buggy Bali Adventure', href: '/tours/utv-buggy-bali-adventure', blurb: '1-hour ricefield UTV — different venue from the 3-lap Polaris course.' },
+    { title: 'UTV at Bali Buggy Adventures', href: '/tours/utv-buggy-bali-adventure', blurb: 'Pemogan 7 km UTV — different venue from the 3-lap Polaris course.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle mud at All New Bali Adventure from IDR 750K.' },
   ],
   'utv-buggy-bali-adventure': [
@@ -689,7 +689,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'utv-buggy-bali-adventure': {
     title: 'From our booking desk',
-    body: 'Say single or tandem on WhatsApp — single is one rider at IDR 1,200,000, tandem is two on one buggy at IDR 1,500,000. This is a 1-hour sit-in UTV at Buggy Bali Adventure, not the Sedang ATV and not the 3-lap Polaris course. Pickup is quoted.',
+    body: 'Say single or tandem on WhatsApp — single is one rider at IDR 1,200,000, tandem is two on one buggy at IDR 1,500,000. The track is Bali Buggy Adventures in Pemogan, South Denpasar (Gg. Merta Shanti No.20 A). The driver must be 17+ and able to drive; a passenger can be 6+. About 1 hour on a 7 km automatic track, lunch included. Pickup is quoted.',
   },
 }
 

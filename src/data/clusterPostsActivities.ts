@@ -43,7 +43,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
 | Bali Zoo mud fun | **1,850,000** | Half day | Quoted | [Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park) |
 | Bali canyoning | **1,850,000** | Half / full day | Quoted | [Canyoning](/tours/canyoning) |
 | Jungle buggies 3 laps | **1,120,000** | ~2 hrs | Quoted | [Buggies](/tours/jungle-buggies-complete-3-laps-tour) |
-| UTV Buggy Bali Adventure | **1,200,000** single · **1,500,000** tandem | 1 hr | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
+| UTV Buggy Bali Adventure | **1,200,000** single · **1,500,000** tandem | 1 hr / 7 km | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
 | Ubud batik / silver class | **650,000** | 3 hrs | Quoted | [Workshops](/blog/ubud-workshop-classes-2026) |
 | Kintamani dirt bike | **4,100,000** | ~8 hrs | Quoted | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 

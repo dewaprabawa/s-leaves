@@ -23,7 +23,7 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
 export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'single-atv': [600_000, 575_000, 550_000],
   'tandem-atv': [859_000, 820_000, 790_000], // per tandem bike
-  'rafting': [600_000, 550_000, 500_000], // promo: from IDR 500k (was IDR 600k)
+  'rafting': [600_000, 575_000, 550_000], // promo: from IDR 550k (was IDR 600k)
   'canyon-tubing': [359_000, 335_000, 320_000],
   'cycling': [475_000, 450_000, 425_000],
 }

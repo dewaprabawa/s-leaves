@@ -4,6 +4,7 @@ import {
   getActivityGeo,
 } from '@/data/activityGeo'
 import { getQueryAliasLine } from '@/data/activityKeywords'
+import { MOTORBIKE_TRIP_SLUG } from '@/data/motorbikeTrip'
 
 type Props = {
   slug: string
@@ -14,6 +15,7 @@ export default function ActivityGeoBlock({ slug }: Props) {
   const geo = getActivityGeo(slug)
   if (!geo) return null
   const queryAliases = getQueryAliasLine(slug)
+  const isMotorbike = slug === MOTORBIKE_TRIP_SLUG
 
   return (
     <section
@@ -31,7 +33,7 @@ export default function ActivityGeoBlock({ slug }: Props) {
         >
           {geo.heading}
         </h2>
-        <p className="geo-tldr activity-geo-tldr text-brand-green-light leading-relaxed">
+        <p className={`geo-tldr activity-geo-tldr text-brand-green-light leading-relaxed${isMotorbike ? ' motorbike-geo-tldr' : ''}`}>
           {geo.tldr}
         </p>
         {queryAliases ? (
@@ -76,7 +78,7 @@ export default function ActivityGeoBlock({ slug }: Props) {
         {geo.faqs.map((item) => (
           <article
             key={item.q}
-            className="geo-answer-block activity-geo-answer rounded-2xl border border-brand-green/10 bg-sand/40 p-5"
+            className={`geo-answer-block activity-geo-answer rounded-2xl border border-brand-green/10 bg-sand/40 p-5${isMotorbike ? ' motorbike-geo-answer' : ''}`}
           >
             <h3 className="font-bold text-brand-green mb-2 text-base leading-snug">{item.q}</h3>
             <p className="text-sm text-brand-green-light leading-relaxed">{item.a}</p>

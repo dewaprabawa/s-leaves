@@ -351,10 +351,13 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Bali scooter tour from Ubud',
       'Ubud motorbike traveling trip',
       'Bali scooter day trip price',
+      'Ubud waterfall scooter tour',
+      'Bali motorbike tour IDP',
     ],
     compare: [
       'Bali motorbike tour vs private driver',
       'Bali scooter tour vs ATV',
+      'Bali motorbike tour vs dirt bike',
     ],
   },
 }
@@ -877,8 +880,8 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   ],
   'bali-motorbike-tour-vs-private-driver-2026': [
     'Bali motorbike tour vs private driver',
-    'Bali scooter tour from Ubud',
-    'Bali motorbike tour price',
+    'Bali scooter tour vs ATV',
+    'Bali motorbike tour vs dirt bike',
   ],
 }
 

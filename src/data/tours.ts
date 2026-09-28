@@ -2354,16 +2354,16 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
   },
   {
     id: MOTORBIKE_TRIP_SLUG,
-    title: "Bali Motorbike Traveling Trip — Ubud, South, North & East Bali",
+    title: "Bali Motorbike Tour — Scooter Day from Ubud",
     slug: MOTORBIKE_TRIP_SLUG,
     category: "day-tour",
     area: MOTORBIKE_AREA,
     pickup: MOTORBIKE_PICKUP,
     duration: MOTORBIKE_DURATION,
     basePrice: MOTORBIKE_UBUD_IDR,
-    seoTitle: "Bali Motorbike Traveling Trip | From IDR 450K",
+    seoTitle: "Bali Motorbike Tour Ubud | From IDR 450K",
     seoDescription:
-      "Guided Bali motorbike traveling trips on a 125–160cc scooter — Ubud, Kintamani, North, South & East Bali. From IDR 450K per scooter. Tickets not included.",
+      "Guided Bali scooter tour from Ubud: 125–160cc automatic, ride (IDP) or pillion. From IDR 450K. Tickets extra. Pickup at your chosen area. WhatsApp.",
     heroImage: {
       url: "/images/adventures/motorbike-tour-hero.jpg",
       alt: "Smiling guests wearing helmets on a guided Bali motorbike traveling trip",
@@ -2381,59 +2381,83 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
       },
     ],
     shortDescription:
-      `Explore Bali on a ${MOTORBIKE_ENGINE} motorbike with a local English-speaking guide — choose your destination: Ubud (IDR ${(MOTORBIKE_UBUD_IDR / 1000).toFixed(0)}K), Ubud Waterfall (IDR ${(MOTORBIKE_WATERFALL_IDR / 1000).toFixed(0)}K), Kintamani (IDR ${(MOTORBIKE_KINTAMANI_IDR / 1000).toFixed(0)}K), South Bali (IDR ${(MOTORBIKE_SOUTH_IDR / 1000).toFixed(0)}K), North Bali (IDR ${(MOTORBIKE_NORTH_IDR / 1000).toFixed(0)}K), or East Bali (IDR ${(MOTORBIKE_EAST_IDR / 1000).toFixed(0)}K) per scooter. Attraction tickets not included.`,
-    fullDescription: `**Bali Motorbike Traveling Trip — You Choose the Destination**
+      `A Bali motorbike tour is a guided ${MOTORBIKE_ENGINE} scooter day from IDR ${(MOTORBIKE_UBUD_IDR / 1000).toFixed(0)}K per bike — Ubud, waterfalls, Kintamani, South, North, or East. Tickets not included. Ride yourself (IDP recommended) or pillion. Pickup at your chosen area.`,
+    fullDescription: `A **Bali motorbike tour** is a guided full-day ride on a **${MOTORBIKE_ENGINE} scooter**, not a jungle-mud ATV and not a private car with a driver. Sekar Bali Activity leads six public-road routes from the Ubud area. **Prices are per scooter.** Attraction entrance tickets and lunch stay on you. ${MOTORBIKE_PICKUP} — share the pin when you book. Ride your own bike (an International Driving Permit is recommended) or sit pillion.
 
-Explore Bali on a comfortable **${MOTORBIKE_ENGINE} motorbike/scooter** with a local English-speaking guide leading the way. Pick the region you want to explore and we build the day around that area's very best spots. **Prices are per scooter and do not include attraction entrance tickets.** Tell us your pickup point and preferred destination when you book.
+### 2026 scooter prices (per bike)
+
+| Destination | IDR / scooter | Typical stops |
+| --- | --- | --- |
+| Ubud | **${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}** | Rice terrace, Ulun Petanu, Gunung Kawi, Umah Kuno, Monkey Forest |
+| Ubud waterfalls | **${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")}** | Kanto Lampo, Tibumana, Suwat, Tukad Cepung, Tegenungan |
+| Kintamani | **${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")}** | Sunrise view, Pura Jati Segara, optional hot spring, Penglipuran |
+| South Bali | **${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")}** | Tanah Lot, Uluwatu, GWK, Melasti, optional Kedonganan dinner |
+| North Bali | **${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")}** | Sangeh, Leke-Leke, Beratan Lake, Jatiluwih |
+| East Bali | **${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")}** | Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach |
+
+Included: ${MOTORBIKE_ENGINE} scooter, fuel, helmet, bottled water, English-speaking guide, pickup at your chosen area. **Not included:** temple / waterfall tickets, lunch, gratuities.
+
+### Scooter vs private car vs ATV
+
+| | This motorbike tour | [Full-day Ubud car](/tours/full-day-ubud-tour) | [Sedang ATV](/tours/bali-atv-adventure) |
+| --- | --- | --- | --- |
+| From price | **${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}** / scooter | **600,000** / car | **750,000** / rider |
+| You ride? | Yes, or pillion | No — driver | Yes, on a jungle-mud quad |
+| Tickets | Extra | Extra | Arena day — lunch included |
+| Pickup | Chosen area | Hotel start | IDR 400,000 or self-meet |
+| Best when | You want the road and photos | Kids, heat, or no license | You want mud, not public roads |
+
+The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine. Full compare: [motorbike tour vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026).
 
 ### Ubud Traveling Trip — IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")} / scooter
 
 ![Emerald rice terraces near Ubud, Bali](/images/adventures/moto-ubud.jpg)
 
-Rice terrace, Ulun Petanu waterfall, Gunung Kawi Tampaksiring, Bali Umah Kuno (traditional old house), and Monkey Forest / Monkey River.
+The entry Bali scooter tour from Ubud. Stops: rice terrace, Ulun Petanu waterfall, Gunung Kawi Tampaksiring, Bali Umah Kuno (traditional old house), and Monkey Forest / Monkey River.
 
 ### Ubud Waterfall Trip — IDR ${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")} / scooter
 
 ![Bali jungle waterfall into a turquoise pool](/images/adventures/moto-ubud-waterfall.jpg)
 
-Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan waterfalls.
+A waterfall scooter day from Ubud — five falls, tickets paid on site. Stops: Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan. Not a private-car waterfall circuit.
 
 ### Kintamani Traveling Trip — IDR ${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")} / scooter
 
 ![Sunrise over Mount Batur and Lake Batur in Kintamani](/images/adventures/moto-kintamani.jpg)
 
-Sunrise peak view, Pura Jati Segara, optional natural hot spring, Penglipuran Village, and Tukad Cepung Waterfall.
+A public-road Kintamani scooter day — crater views, not the [private Batur jeep](/tours/batur-sunrise-jeep-tour) and not a dirt-bike enduro. Stops: sunrise peak view, Pura Jati Segara, optional natural hot spring, Penglipuran Village, and Tukad Cepung Waterfall.
 
 ### South Bali Traveling Trip — IDR ${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")} / scooter
 
 ![Uluwatu clifftop temple above the ocean in South Bali](/images/adventures/moto-south.jpg)
 
-Tanah Lot, Uluwatu, GWK, Melasti Beach, and an optional Kedonganan seafood dinner at sunset.
+A South Bali scooter day — cliff temples and Melasti. Dinner at Kedonganan is optional and paid separately. Stops: Tanah Lot, Uluwatu, GWK, Melasti Beach.
 
 ### North Bali Traveling Trip — IDR ${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")} / scooter
 
 ![Ulun Danu Beratan lake temple in North Bali](/images/adventures/moto-north.jpg)
 
-Sangeh Monkey Sanctuary, Leke-Leke Waterfall, Beratan Lake & Temple, and Jatiluwih — Bali's biggest rice terrace.
+A North Bali scooter day — Beratan lake temple and Jatiluwih, the longest western loop. Stops: Sangeh Monkey Sanctuary, Leke-Leke Waterfall, Beratan Lake & Temple, and Jatiluwih.
 
 ### East Bali Traveling Trip — IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")} / scooter
 
 ![Tirta Gangga water palace stepping stones in East Bali](/images/adventures/moto-east.jpg)
 
-Tukad Cepung Waterfall, Besakih Mother Temple, Tirta Gangga, Taman Ujung Water Palace, and Virgin Beach.
+The East Bali scooter day — Besakih, water palaces, and Virgin Beach. Highest published rate. Stops: Tukad Cepung Waterfall, Besakih Mother Temple, Tirta Gangga, Taman Ujung Water Palace, and Virgin Beach.
 
-### Good to Know
+### Good to know
 - Motorbikes are ${MOTORBIKE_ENGINE}s.
 - Price is per scooter and excludes attraction entrance tickets.
-- Pickup is arranged at your chosen destination/area — just share your location when booking.
+- Pickup is at your chosen area — not free Ubud cycling/cooking pickup, not island-wide jeep pickup, and not the IDR 400,000 adventure surcharge.
+- An International Driving Permit is recommended if you ride. Say pillion on WhatsApp if you do not want to drive.
 
-Message us on WhatsApp with your date, pickup point, and chosen destination to book.`,
+Message WhatsApp with your **date, pickup pin, destination, and ride or pillion**.`,
     highlights: [
       "125–160cc automatic motorbikes/scooters",
-      "Choose your destination: Ubud, Kintamani, North, South or East Bali",
-      "Local English-speaking guide leads the route",
-      "Best temples, waterfalls, beaches & rice terraces per region",
-      "Priced per scooter · helmet, fuel & guide included",
+      "Ubud from IDR 450K · East Bali IDR 800K per scooter",
+      "Ride yourself (IDP recommended) or pillion",
+      "Pickup at your chosen area · tickets not included",
+      "Not Sedang ATV and not a private car day",
     ],
     included: [
       "Motorbike/scooter rental (125–160cc)",
@@ -2493,12 +2517,12 @@ Message us on WhatsApp with your date, pickup point, and chosen destination to b
       {
         id: "faq-moto-1",
         question: "What kind of motorbike do you use?",
-        answer: "Comfortable 125–160cc automatic motorbikes/scooters — easy to ride and well suited to Bali's roads.",
+        answer: "Comfortable 125–160cc automatic motorbikes/scooters — easy to ride and well suited to Bali's roads. This is not a dirt-bike enduro and not the Sedang ATV.",
       },
       {
         id: "faq-moto-2",
         question: "How is the price calculated?",
-        answer: `Prices are per scooter by destination: Ubud IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}, Ubud Waterfall IDR ${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")}, Kintamani IDR ${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")}, South Bali IDR ${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")}, North Bali IDR ${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")}, and East Bali IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")}. Attraction entrance tickets are not included.`,
+        answer: `Prices are per scooter by destination: Ubud IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}, Ubud Waterfall IDR ${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")}, Kintamani IDR ${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")}, South Bali IDR ${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")}, North Bali IDR ${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")}, and East Bali IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")}. Attraction entrance tickets and lunch are not included.`,
       },
       {
         id: "faq-moto-3",
@@ -2507,13 +2531,18 @@ Message us on WhatsApp with your date, pickup point, and chosen destination to b
       },
       {
         id: "faq-moto-4",
-        question: "Do I ride myself or with a guide?",
-        answer: "A local English-speaking guide leads the way. You can ride your own scooter (a driving license/International Driving Permit is recommended) or ride pillion with a driver — just let us know when booking.",
+        question: "Do I ride myself, and do I need an IDP?",
+        answer: "A local English-speaking guide leads the way. You can ride your own scooter — an International Driving Permit is recommended — or ride pillion with a driver. Say which on WhatsApp.",
       },
       {
         id: "faq-moto-5",
         question: "Is pickup included and are tickets extra?",
-        answer: "Pickup is arranged at your chosen destination/area — share your location when booking. Attraction entrance tickets are paid separately and are not included in the price.",
+        answer: "Pickup is at your chosen area — share the pin when booking. That meet is in the scooter price. It is not free Ubud cycling/cooking pickup and not the IDR 400,000 adventure surcharge. Attraction entrance tickets are paid on site.",
+      },
+      {
+        id: "faq-moto-6",
+        question: "Is this the same as a private car day or the Ubud ATV?",
+        answer: "No. The Full Day Ubud Tour is a private car from IDR 600,000. ATV at All New Bali Adventure is a jungle-mud quad from IDR 750,000 with lunch included. This is a public-road scooter day. Tickets stay extra here and on the car.",
       },
     ],
     reviews: [],

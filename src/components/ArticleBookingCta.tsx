@@ -77,10 +77,10 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryLabel: 'WhatsApp the date',
   },
   'bali-motorbike-tour-vs-private-driver-2026': {
-    headline: 'Book the guided motorbike trip',
-    body: 'From IDR 450,000 per 125–160cc scooter. Tickets not included. Pickup at your chosen area — or keep the private car from IDR 600,000.',
+    headline: 'Book the Bali motorbike tour',
+    body: 'From IDR 450,000 per 125–160cc scooter. Tickets not included. Ride (IDP) or pillion. Pickup at your chosen area — or keep the private car from IDR 600,000.',
     primaryHref: '/tours/bali-motorbike-traveling-trip',
-    primaryLabel: 'View motorbike trip',
+    primaryLabel: 'View motorbike tour',
     secondaryHref: '/tours/full-day-ubud-tour',
     secondaryLabel: 'View private car day',
   },

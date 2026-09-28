@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     question: "What activities and tours do you offer?",
-    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the private Mount Batur jeep (sit-in or tracking, sunrise or sunset, same private rates; optional hot spring +IDR 150,000 with ticket included). Private Kintamani Day is a full-day promo at IDR 1,300,000 per person (min 2; was IDR 1,450,000). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat purification — IDR 1,200,000 per person with shuttle, guide, and breakfast. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, UTV at Bali Buggy Adventures (single IDR 1,200,000 / tandem IDR 1,500,000, lunch included), and the private Mount Batur jeep (sit-in or tracking, sunrise or sunset, same private rates; optional hot spring +IDR 150,000 with ticket included). Private Kintamani Day is a full-day promo at IDR 1,300,000 per person (min 2; was IDR 1,450,000). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat purification — IDR 1,200,000 per person with shuttle, guide, and breakfast. Day tours: full-day Ubud, half-day Tanah Lot sunset, and a guided motorbike traveling trip from IDR 450,000 per scooter (tickets not included). Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: "Which tours have free Ubud hotel pickup?",
-    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall charge IDR 400,000 for hotel pickup."
+    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall charge IDR 400,000 for hotel pickup, or you can self-meet at the venue with no transport fee. UTV / park / workshop pickup is quoted. The motorbike traveling trip includes pickup at your chosen area."
   },
   {
     question: "How much is Tumang Bali Cooking Class?",
@@ -122,6 +122,14 @@ const faqs = [
   {
     question: "Can you handle a family, girls trip, or any private multi-day itinerary?",
     answer: "Yes — consultation only. There is no booking form for this product. WhatsApp group type, dates, villa area, guest count, and the day list. We quote private driver days (car from IDR 600,000 / day; HiAce quoted for 6+), plus Swing Heaven, the Mount Batur jeep, cooking, or cycling. FINNS, La Favela, Cretya, Kecak, spa, and watersports stay on your bookings. No payment to inquire."
+  },
+  {
+    question: "How much is the UTV buggy vs the Ubud ATV?",
+    answer: "UTV at Bali Buggy Adventures in Pemogan is IDR 1,200,000 single (driver 17+) or IDR 1,500,000 tandem (passenger 6+), about 1 hour / 7 km, lunch included. Pickup is quoted. Sedang ATV at All New Bali Adventure is a different ticket — Single from IDR 750,000, tandem from IDR 1,100,000 — with optional IDR 400,000 hotel pickup or free self-meet."
+  },
+  {
+    question: "How much is a Bali motorbike traveling trip?",
+    answer: "From IDR 450,000 per scooter (Ubud) to IDR 800,000 (East Bali): waterfalls IDR 500,000, Kintamani IDR 600,000, South Bali IDR 650,000, North Bali IDR 750,000. Price is per 125–160cc automatic. Attraction tickets and lunch are not included. Pickup is at your chosen area — not the IDR 400,000 adventure surcharge."
   }
 ];
 

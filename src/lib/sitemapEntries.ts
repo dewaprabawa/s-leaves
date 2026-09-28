@@ -69,6 +69,14 @@ const HIGH_BLOG_SLUGS = new Set([
   'bali-motorbike-tour-price-2026',
   'bali-tours-for-japanese-chinese-travelers-2026',
   'bali-motorbike-tour-vs-private-driver-2026',
+  'bali-scooter-tour-vs-atv-2026',
+  'bali-motorbike-tour-vs-dirt-bike-2026',
+  'ubud-waterfall-scooter-tour-2026',
+  'bali-motorbike-tour-idp-license-2026',
+  'east-south-bali-motorbike-tour-2026',
+  'kintamani-scooter-vs-batur-jeep-2026',
+  'bali-atv-vs-kuber-cave-2026',
+  'which-bali-wheels-2026',
 ])
 
 /** Posts rewritten in the latest GEO pass — recrawl these even if publishedAt is older. */
@@ -113,6 +121,14 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'bali-motorbike-tour-price-2026': ACTIVITY_GEO_UPDATED,
   'bali-tours-for-japanese-chinese-travelers-2026': ACTIVITY_GEO_UPDATED,
   'bali-motorbike-tour-vs-private-driver-2026': ACTIVITY_GEO_UPDATED,
+  'bali-scooter-tour-vs-atv-2026': ACTIVITY_GEO_UPDATED,
+  'bali-motorbike-tour-vs-dirt-bike-2026': ACTIVITY_GEO_UPDATED,
+  'ubud-waterfall-scooter-tour-2026': ACTIVITY_GEO_UPDATED,
+  'bali-motorbike-tour-idp-license-2026': ACTIVITY_GEO_UPDATED,
+  'east-south-bali-motorbike-tour-2026': ACTIVITY_GEO_UPDATED,
+  'kintamani-scooter-vs-batur-jeep-2026': ACTIVITY_GEO_UPDATED,
+  'bali-atv-vs-kuber-cave-2026': ACTIVITY_GEO_UPDATED,
+  'which-bali-wheels-2026': ACTIVITY_GEO_UPDATED,
 }
 
 /** Paths Google should not receive via sitemap (redirects, noindex, or non-HTML). */

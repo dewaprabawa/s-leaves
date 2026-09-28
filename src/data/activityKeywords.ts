@@ -79,6 +79,8 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'private ATV vs mass market Ubud',
       'Ubud ATV mud track vs cave tunnel',
       'single vs tandem ATV Ubud',
+      'All New Bali Adventure vs Kuber',
+      'Kuber ATV vs Sedang ATV',
     ],
   },
   'whitewater-rafting': {
@@ -353,6 +355,9 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Bali scooter day trip price',
       'Ubud waterfall scooter tour',
       'Bali motorbike tour IDP',
+      'East Bali motorbike tour',
+      'South Bali scooter tour',
+      'Kintamani scooter tour',
       'Canggu motorbike tour pickup',
       'Nusa Dua scooter tour shuttle',
       'Bali tour for Japanese travelers',
@@ -365,6 +370,8 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Bali motorbike tour vs private driver',
       'Bali scooter tour vs ATV',
       'Bali motorbike tour vs dirt bike',
+      'Kintamani scooter vs Batur jeep',
+      'which Bali activity to book',
     ],
   },
 }
@@ -720,6 +727,14 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'bali-motorbike-tour-price-2026': 'bali-motorbike-traveling-trip',
   'bali-tours-for-japanese-chinese-travelers-2026': 'bali-motorbike-traveling-trip',
   'bali-motorbike-tour-vs-private-driver-2026': 'bali-motorbike-traveling-trip',
+  'bali-scooter-tour-vs-atv-2026': ['bali-motorbike-traveling-trip', 'bali-atv-adventure'],
+  'bali-motorbike-tour-vs-dirt-bike-2026': 'bali-motorbike-traveling-trip',
+  'ubud-waterfall-scooter-tour-2026': 'bali-motorbike-traveling-trip',
+  'bali-motorbike-tour-idp-license-2026': 'bali-motorbike-traveling-trip',
+  'east-south-bali-motorbike-tour-2026': 'bali-motorbike-traveling-trip',
+  'kintamani-scooter-vs-batur-jeep-2026': ['bali-motorbike-traveling-trip', 'batur-sunrise-jeep-tour'],
+  'bali-atv-vs-kuber-cave-2026': 'bali-atv-adventure',
+  'which-bali-wheels-2026': 'site',
   'bali-6-day-girls-trip-itinerary-2026': 'bali-private-itinerary',
   'bali-family-private-itinerary-2026': 'bali-private-itinerary',
   'bali-private-itinerary-what-we-book-vs-you-book': 'bali-private-itinerary',
@@ -905,8 +920,48 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   ],
   'bali-motorbike-tour-vs-private-driver-2026': [
     'Bali motorbike tour vs private driver',
+    'Bali scooter vs private car Ubud',
+  ],
+  'bali-scooter-tour-vs-atv-2026': [
     'Bali scooter tour vs ATV',
+    'motorbike tour vs ATV Ubud',
+    'scooter or ATV Bali',
+  ],
+  'bali-motorbike-tour-vs-dirt-bike-2026': [
     'Bali motorbike tour vs dirt bike',
+    'scooter vs enduro Bali',
+    'dirt bike vs scooter tour Bali',
+  ],
+  'ubud-waterfall-scooter-tour-2026': [
+    'Ubud waterfall scooter tour',
+    'Kanto Lampo scooter tour',
+    'Tukad Cepung scooter tour',
+  ],
+  'bali-motorbike-tour-idp-license-2026': [
+    'Bali motorbike tour IDP',
+    'International Driving Permit Bali scooter',
+    'pillion Bali motorbike tour',
+  ],
+  'east-south-bali-motorbike-tour-2026': [
+    'East Bali motorbike tour',
+    'South Bali scooter tour',
+    'Besakih scooter tour',
+    'Uluwatu motorbike tour',
+  ],
+  'kintamani-scooter-vs-batur-jeep-2026': [
+    'Kintamani scooter vs Batur jeep',
+    'Kintamani motorbike tour',
+    'scooter or jeep Mount Batur',
+  ],
+  'bali-atv-vs-kuber-cave-2026': [
+    'All New Bali Adventure vs Kuber',
+    'Kuber ATV vs Sedang ATV',
+    'Kuber cave ATV alternative',
+  ],
+  'which-bali-wheels-2026': [
+    'which Bali activity to book',
+    'ATV vs UTV vs dirt bike Bali',
+    'Bali scooter vs ATV vs jeep',
   ],
 }
 

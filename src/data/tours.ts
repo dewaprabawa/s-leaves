@@ -2418,7 +2418,7 @@ Included: ${MOTORBIKE_ENGINE} scooter, fuel, helmet, bottled water, English-spea
 | Pickup | Chosen area · Canggu / Jimbaran / Nusa Dua shuttle IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} | Hotel start | IDR 400,000 or self-meet |
 | Best when | You want the road and photos | Kids, heat, or no license | You want mud, not public roads |
 
-The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine. Full compare: [motorbike tour vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026). Promo + shuttle: [motorbike tour price 2026](/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}).
+The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine. Full compare: [motorbike tour vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026) · [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026) · [which Bali wheels](/blog/which-bali-wheels-2026). Promo + shuttle: [motorbike tour price 2026](/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}). IDP or pillion: [motorbike IDP](/blog/bali-motorbike-tour-idp-license-2026).
 
 ### Ubud Traveling Trip — IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")} / scooter
 

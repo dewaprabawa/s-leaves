@@ -47,6 +47,21 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Why we are not the Kuber tunnel or Dragon Cave routes.',
     },
     {
+      title: 'All New Bali Adventure vs Kuber',
+      href: '/blog/bali-atv-vs-kuber-cave-2026',
+      blurb: 'Sedang mud from 750K — we do not sell the Payangan cave.',
+    },
+    {
+      title: 'Scooter tour vs ATV',
+      href: '/blog/bali-scooter-tour-vs-atv-2026',
+      blurb: 'Public-road day from 450K versus this jungle-mud morning.',
+    },
+    {
+      title: 'Which Bali wheels',
+      href: '/blog/which-bali-wheels-2026',
+      blurb: 'ATV next to scooter, UTV, dirt bike, and jeep.',
+    },
+    {
       title: 'Swing Heaven (same Abiansemal district)',
       href: '/tours/swing-heaven-bali',
       blurb: 'Bongkasa jungle swing after the Sedang mud track.',
@@ -442,6 +457,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Crater-rim 4×4 vs the 2-hour summit walk — meal included on the jeep.',
     },
     {
+      title: 'Kintamani scooter vs jeep',
+      href: '/blog/kintamani-scooter-vs-batur-jeep-2026',
+      blurb: 'Public-road scooter 600K is not this private 4×4 sunrise.',
+    },
+    {
       title: 'Pickup times from Canggu, Seminyak & Ubud',
       href: '/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026',
       blurb: 'Island-wide 02:00–03:00 clock — south Bali earliest.',
@@ -550,16 +570,20 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle mud at All New Bali Adventure from IDR 750K.' },
   ],
   'utv-buggy-bali-adventure': [
+    { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026', blurb: 'UTV is the 1-hour Pemogan row — not Sedang ATV.' },
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'UTV is a 1-hour sit-in buggy — not the 3-lap Polaris ticket.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Quad-bike jungle mud from IDR 750K — a different machine.' },
     { title: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour', blurb: 'Purpose-built Polaris laps from IDR 1,120,000.' },
   ],
   'dirt-bike-kintamani-black-lava': [
     { title: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep', blurb: 'You ride vs you sit at a crater-rim viewpoint.' },
+    { title: 'Motorbike vs dirt bike', href: '/blog/bali-motorbike-tour-vs-dirt-bike-2026', blurb: 'Public-road scooter from 450K is not this lava enduro.' },
+    { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026', blurb: 'Dirt bike next to scooter, ATV, UTV, and jeep.' },
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour', blurb: 'Meal + island-wide pickup — not the summit hike.' },
     { title: 'Tabanan dirt bike', href: '/tours/dirt-bike-tabanan-day-night', blurb: 'Rainforest / Jatiluwih line from IDR 2.1M.' },
   ],
   'dirt-bike-tabanan-day-night': [
+    { title: 'Motorbike vs dirt bike', href: '/blog/bali-motorbike-tour-vs-dirt-bike-2026', blurb: 'The 450K scooter is not this rainforest enduro.' },
     { title: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep', blurb: 'Tabanan is rainforest; Kintamani is lava.' },
     { title: 'Sunset-beach finish', href: '/tours/dirt-bike-tabanan-jungle-sunset-beach', blurb: 'Same from-price, west-coast sand ending.' },
     { title: 'Kintamani black lava', href: '/tours/dirt-bike-kintamani-black-lava', blurb: 'Bigger enduro day from IDR 4.1M.' },
@@ -603,6 +627,13 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026', blurb: 'Promo from IDR 450K (was 550K). Canggu / Jimbaran / Nusa Dua shuttle IDR 550K once per booking.' },
     { title: 'Japan, Korea, China & Middle East (English)', href: '/blog/bali-tours-for-japanese-chinese-travelers-2026', blurb: 'Same English WhatsApp and IDR prices. Includes Korea and the Middle East (UAE, Saudi, Qatar).' },
     { title: 'Motorbike tour vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026', blurb: 'Scooter promo from IDR 450K vs private car from IDR 600K — tickets extra on both.' },
+    { title: 'Scooter tour vs ATV', href: '/blog/bali-scooter-tour-vs-atv-2026', blurb: 'Public-road day from 450K versus Sedang mud from 750K.' },
+    { title: 'Motorbike vs dirt bike', href: '/blog/bali-motorbike-tour-vs-dirt-bike-2026', blurb: 'Automatic scooter versus Tabanan 2.1M / Kintamani 4.1M enduro.' },
+    { title: 'Ubud waterfall scooter', href: '/blog/ubud-waterfall-scooter-tour-2026', blurb: 'Five falls from IDR 500K — tickets extra.' },
+    { title: 'IDP or pillion', href: '/blog/bali-motorbike-tour-idp-license-2026', blurb: 'Ride with an IDP or sit behind a driver.' },
+    { title: 'East & South scooter days', href: '/blog/east-south-bali-motorbike-tour-2026', blurb: 'Uluwatu 650K or Besakih 800K per scooter.' },
+    { title: 'Kintamani scooter vs jeep', href: '/blog/kintamani-scooter-vs-batur-jeep-2026', blurb: 'Public-road 600K versus private crater-rim 4×4.' },
+    { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026', blurb: 'Scooter, ATV, UTV, dirt bike, or jeep in one table.' },
     { title: 'Full day Ubud car', href: '/tours/full-day-ubud-tour', blurb: 'Air-con driver day if you do not want to ride.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle-mud quad — a different machine, lunch included.' },
     { title: 'Kintamani dirt bike', href: '/tours/dirt-bike-kintamani-black-lava', blurb: 'Enduro on lava from IDR 4.1M — not this scooter day.' },

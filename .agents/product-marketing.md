@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.14
+**Document version:** v2.15
 **Last updated:** 2026-09-28
 
 ## Product Overview
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.15 (2026-09-28) — Motorbike commercial cluster: scooter vs ATV, vs dirt bike, waterfall day, IDP/pillion, East/South routes, Kintamani scooter vs jeep, plus ATV-vs-Kuber and a wheels chooser. Competitor facts stay honest (we do not sell Kuber cave).
 - v2.14 (2026-09-28) — Motorbike money page now owns **Bali motorbike tour / scooter tour Ubud**: definition-first body, per-destination AggregateOffer, speakable Question/Answer (no FAQPage), IDP/pillion/waterfall facts. Pickup stays at the chosen area — not free Ubud pickup and not the IDR 400K surcharge.
 - v2.13 (2026-09-28) — SEO/GEO now covers the **Bali Motorbike Traveling Trip** (from IDR 450,000 / scooter; tickets not included; pickup at chosen area) plus UTV in `GEO_INVENTORY` / `llms.txt`. Motorbike is not ATV and not a private car day.
 - v2.12 (2026-09-27) — Added **UTV at Bali Buggy Adventures** (Pemogan, South Denpasar — https://balibuggyadventures.com). About 1 hour / 7 km automatic UTV: single **IDR 1,200,000**, tandem **IDR 1,500,000**. Lunch included. Driver 17+ / passenger 6+. Pickup quoted. Not Sedang ATV and not the imported jungle-buggies 3-lap ticket.

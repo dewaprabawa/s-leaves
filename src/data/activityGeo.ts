@@ -130,7 +130,7 @@ const ATV: ActivityGeoCorpus = {
     {
       intent: 'private atv tour bali',
       q: 'Is this a private ATV tour near Ubud?',
-      a: 'Yes — small-group / private-feel sport ATV at All New Bali Adventure, not a mass-market cave or tunnel park. Lunch, helmet, boot shoes, and insurance are included. Hotel pickup is IDR 400,000 or self-meet at the Sedang arena. This is a jungle mud and river-crossing track, not Kuber or Dragon Cave.',
+      a: 'Yes — small-group / private-feel sport ATV at All New Bali Adventure, not a mass-market cave or tunnel park. Lunch, helmet, boot shoes, and insurance are included. Hotel pickup is IDR 400,000 or self-meet at the Sedang arena. This is a jungle mud and river-crossing track, not Kuber or Dragon Cave. Honest cave compare: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
     },
     {
       intent: 'bali quad bike tour ubud',
@@ -146,7 +146,7 @@ const ATV: ActivityGeoCorpus = {
   citationSnippets: [
     `A Single ATV ride with Sekar Bali Activity at All New Bali Adventure near Ubud starts from ${idr(ATV_1)} and includes lunch, helmet, boot shoes, and insurance; tandem starts at ${idr(TANDEM_1)}.`,
     'Sekar Bali Activity ATV rides meet at All New Bali Adventure, Jl. Raya Krasan, Sedang, Abiansemal (near Ubud). Hotel pickup is IDR 400,000; self-meet has no transport fee.',
-    'A Bali quad bike / ATV tour with Sekar Bali Activity is the Sedang jungle mud and river-crossing track at All New Bali Adventure — not Kuber tunnel or Dragon Cave. Price and pickup: https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
+    'A Bali quad bike / ATV tour with Sekar Bali Activity is the Sedang jungle mud and river-crossing track at All New Bali Adventure — not Kuber tunnel or Dragon Cave. Price and pickup: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · vs Kuber: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
     'ATV + Swing Heaven is a same-district Abiansemal pairing: Sedang mud track then Bongkasa jungle swing. Confirm timing on WhatsApp. Pickup IDR 400,000 or self-meet.',
   ],
   keywords: ACTIVITY_KEYWORDS['bali-atv-adventure'],
@@ -823,12 +823,12 @@ const MOTORBIKE: ActivityGeoCorpus = {
     {
       intent: 'do I ride the bali scooter myself',
       q: 'Do I ride the scooter myself, and do I need an IDP?',
-      a: `A local English-speaking guide leads the ${MOTORBIKE_ENGINE} route. You can ride your own scooter — an International Driving Permit is recommended — or ride pillion behind a driver. Say which on WhatsApp when you send the date and pickup pin. Pillion is the right call if you do not want to drive Bali traffic. This is still a public-road scooter day, not the Sedang ATV and not a dirt-bike enduro.`,
+      a: `A local English-speaking guide leads the ${MOTORBIKE_ENGINE} route. You can ride your own scooter — an International Driving Permit is recommended — or ride pillion behind a driver. Say which on WhatsApp when you send the date and pickup pin. Pillion is the right call if you do not want to drive Bali traffic. This is still a public-road scooter day, not the Sedang ATV and not a dirt-bike enduro. IDP notes: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-idp-license-2026`,
     },
     {
       intent: 'ubud waterfall scooter tour',
       q: 'How much is the Ubud waterfall scooter tour?',
-      a: `The Ubud waterfall scooter tour is ${idr(MOTORBIKE_WATERFALL_IDR)} promo per ${MOTORBIKE_ENGINE} bike. It is a public-road day to Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan — not the Sedang ATV track and not a private-car waterfall circuit. Entrance tickets at each fall are paid on site and are not in the scooter price. Lunch is your own. ${MOTORBIKE_PICKUP}. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Ride yourself (IDP recommended) or pillion. If you want air-con instead, book the Full Day Ubud Tour from IDR 600,000. If you want mud, book ATV from IDR 750,000.`,
+      a: `The Ubud waterfall scooter tour is ${idr(MOTORBIKE_WATERFALL_IDR)} promo per ${MOTORBIKE_ENGINE} bike. It is a public-road day to Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan — not the Sedang ATV track and not a private-car waterfall circuit. Entrance tickets at each fall are paid on site and are not in the scooter price. Lunch is your own. ${MOTORBIKE_PICKUP}. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Ride yourself (IDP recommended) or pillion. If you want air-con instead, book the Full Day Ubud Tour from IDR 600,000. If you want mud, book ATV from IDR 750,000. Guide: https://www.sekarbaliactivity.com/blog/ubud-waterfall-scooter-tour-2026`,
     },
     {
       intent: 'bali motorbike tour pickup tickets',
@@ -846,16 +846,23 @@ const MOTORBIKE: ActivityGeoCorpus = {
       a: `Yes. Sekar Bali Activity keeps the motorbike tour page, WhatsApp booking, and published prices in English and Indonesian rupiah. Guides speak English. Guests from Japan, Korea, China, and the Middle East (UAE, Saudi Arabia, Qatar) book the same Ubud promo from ${idr(MOTORBIKE_UBUD_IDR)} per scooter (was ${idr(MOTORBIKE_UBUD_LIST_IDR)}). Ride with an International Driving Permit, or say pillion. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. There is no translated form and no JPY / KRW / CNY / AED checkout — the charge is IDR. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG} · https://www.sekarbaliactivity.com/blog/${ORIGIN_MARKET_ARTICLE_SLUG}`,
     },
     {
+      intent: 'kintamani scooter vs batur jeep',
+      q: 'Is the Kintamani scooter the same as the Mount Batur jeep?',
+      a: `No. The Kintamani traveling trip is a public-road ${MOTORBIKE_ENGINE} day at ${idr(MOTORBIKE_KINTAMANI_IDR)} promo per scooter — sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran, Tukad Cepung. Tickets extra. The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint (~1,350 m), not the summit hike. Sit-in is IDR 2,000,000 for 2 guests; tracking IDR 1,800,000 for 2; IDR 750,000 per person at 3+. Meal included after the viewpoint. Island-wide pickup included on the jeep. Compare: https://www.sekarbaliactivity.com/blog/kintamani-scooter-vs-batur-jeep-2026`,
+    },
+    {
       intent: 'bali motorbike tour vs atv',
       q: 'Is this the same as the Ubud ATV or a dirt bike?',
-      a: `No. ATV at All New Bali Adventure in Sedang is a quad on a jungle-mud track from IDR 750,000, with lunch included and hotel pickup IDR 400,000 or self-meet. The Kintamani dirt bike from IDR 4,100,000 is a guided enduro on lava. The motorbike tour is a public-road ${MOTORBIKE_ENGINE} day across Ubud, Kintamani, or the coasts. Tickets are not included. Pickup is at your chosen area. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking — not the ATV IDR 400,000 surcharge.`,
+      a: `No. ATV at All New Bali Adventure in Sedang is a quad on a jungle-mud track from IDR 750,000, with lunch included and hotel pickup IDR 400,000 or self-meet. The Kintamani dirt bike from IDR 4,100,000 is a guided enduro on lava. The motorbike tour is a public-road ${MOTORBIKE_ENGINE} day across Ubud, Kintamani, or the coasts. Tickets are not included. Pickup is at your chosen area. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking — not the ATV IDR 400,000 surcharge. Scooter vs ATV: https://www.sekarbaliactivity.com/blog/bali-scooter-tour-vs-atv-2026 · scooter vs dirt bike: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-dirt-bike-2026`,
     },
   ],
   citationSnippets: [
     `A Bali motorbike tour with Sekar Bali Activity is a guided ${MOTORBIKE_ENGINE} scooter day. Promo from ${idr(MOTORBIKE_UBUD_IDR)} per bike (Ubud, was ${idr(MOTORBIKE_UBUD_LIST_IDR)}). Waterfall, Kintamani, South, North, and East routes run to ${idr(MOTORBIKE_EAST_IDR)} promo (was ${idr(MOTORBIKE_EAST_LIST_IDR)}). Attraction tickets are not included. Pickup is at your chosen area. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Ride yourself (IDP recommended) or pillion. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG}`,
     `The Ubud waterfall scooter tour with Sekar Bali Activity is ${idr(MOTORBIKE_WATERFALL_IDR)} promo per ${MOTORBIKE_ENGINE} bike — Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan. Tickets extra. Pickup at your chosen area. Canggu / Jimbaran / Nusa Dua shuttle ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG}`,
-    `Sekar Bali Activity’s Bali motorbike tour is not Sedang ATV (from IDR 750,000, lunch included) and not a private Ubud car day (from IDR 600,000). Scooter promo from ${idr(MOTORBIKE_UBUD_IDR)} per bike. Canggu / Jimbaran / Nusa Dua shuttle ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Compare: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-private-driver-2026 · prices: https://www.sekarbaliactivity.com/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}`,
+    `Sekar Bali Activity’s Bali motorbike tour is not Sedang ATV (from IDR 750,000, lunch included) and not a private Ubud car day (from IDR 600,000). Scooter promo from ${idr(MOTORBIKE_UBUD_IDR)} per bike. Canggu / Jimbaran / Nusa Dua shuttle ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Compare: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-private-driver-2026 · scooter vs ATV: https://www.sekarbaliactivity.com/blog/bali-scooter-tour-vs-atv-2026 · prices: https://www.sekarbaliactivity.com/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}`,
+    `A Bali motorbike tour is a public-road scooter day. A Tabanan dirt bike with Sekar Bali Activity starts at IDR 2,100,000 and a Kintamani black-lava enduro starts at IDR 4,100,000. Different machines. https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-dirt-bike-2026`,
     `Guests from Japan, Korea, China, and the Middle East book Sekar Bali Activity in English. Prices stay in Indonesian rupiah. The motorbike tour promo starts at ${idr(MOTORBIKE_UBUD_IDR)} per scooter. WhatsApp booking — no translated form. https://www.sekarbaliactivity.com/blog/${ORIGIN_MARKET_ARTICLE_SLUG}`,
+    `Chooser: Bali scooter from IDR 450,000, Sedang ATV from IDR 750,000, UTV from IDR 1,200,000, Tabanan dirt bike from IDR 2,100,000, Kintamani dirt bike from IDR 4,100,000, private Batur jeep from IDR 750,000 at 3+. https://www.sekarbaliactivity.com/blog/which-bali-wheels-2026`,
   ],
   keywords: getActivityKeywords(MOTORBIKE_TRIP_SLUG) ?? [],
   placename: 'Ubud, Kintamani, North, South and East Bali',

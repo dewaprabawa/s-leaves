@@ -24,6 +24,14 @@ export const MOTORBIKE_DURATION = "Full Day (approx. 8–10 Hours)"
 export const MOTORBIKE_PICKUP = "Pickup at your chosen area"
 export const MOTORBIKE_AREA = "Ubud · Kintamani · North · South · East Bali"
 export const MOTORBIKE_PRICE_ARTICLE_SLUG = "bali-motorbike-tour-price-2026"
+export const MOTORBIKE_VS_ATV_ARTICLE_SLUG = "bali-scooter-tour-vs-atv-2026"
+export const MOTORBIKE_VS_DIRT_ARTICLE_SLUG = "bali-motorbike-tour-vs-dirt-bike-2026"
+export const MOTORBIKE_WATERFALL_ARTICLE_SLUG = "ubud-waterfall-scooter-tour-2026"
+export const MOTORBIKE_IDP_ARTICLE_SLUG = "bali-motorbike-tour-idp-license-2026"
+export const MOTORBIKE_COAST_ARTICLE_SLUG = "east-south-bali-motorbike-tour-2026"
+export const MOTORBIKE_VS_JEEP_ARTICLE_SLUG = "kintamani-scooter-vs-batur-jeep-2026"
+export const ATV_VS_KUBER_ARTICLE_SLUG = "bali-atv-vs-kuber-cave-2026"
+export const WHEELS_CHOOSER_ARTICLE_SLUG = "which-bali-wheels-2026"
 
 /** Flat shuttle upsell — Canggu, Jimbaran, or Nusa Dua only. Not the IDR 400K adventure surcharge. */
 export const MOTORBIKE_SOUTH_SHUTTLE_IDR = 550_000

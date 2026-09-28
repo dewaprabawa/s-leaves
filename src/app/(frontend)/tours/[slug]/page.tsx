@@ -41,6 +41,12 @@ import { getTourPageKeywords } from "@/data/activityKeywords"
 import { TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
 import { GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
+import {
+  MOTORBIKE_DESTINATIONS,
+  MOTORBIKE_EAST_IDR,
+  MOTORBIKE_TRIP_SLUG,
+  MOTORBIKE_UBUD_IDR,
+} from "@/data/motorbikeTrip"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -68,6 +74,10 @@ function isAtvTour(tour: Tour) {
 
 function isSwingTour(tour: Tour) {
   return tour.slug === "swing-heaven-bali"
+}
+
+function isMotorbikeTour(tour: Tour) {
+  return tour.slug === MOTORBIKE_TRIP_SLUG
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -162,7 +172,7 @@ function buildTourSchema(tour: Tour) {
   const isoDuration = durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
-    "@type": cooking || jeep ? (["TouristTrip", "Product"] as const) : "TouristTrip",
+    "@type": cooking || jeep || isMotorbikeTour(tour) ? (["TouristTrip", "Product"] as const) : "TouristTrip",
     "@id": `${SITE_URL}/tours/${tour.slug}#trip`,
     name: tour.title,
     description: cooking
@@ -190,6 +200,8 @@ function buildTourSchema(tour: Tour) {
           ? ["Couples", "Families", "Food travelers", "Culture travelers"]
           : tour.slug === "tirta-empu-purification"
             ? ["Couples", "Families", "Culture travelers", "Spiritual travelers"]
+          : isMotorbikeTour(tour)
+            ? ["Couples", "Friends", "Scooter riders", "Photographers"]
           : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
@@ -202,6 +214,8 @@ function buildTourSchema(tour: Tour) {
             ? "Kintamani, Mount Batur, Bali"
           : tour.slug === "tirta-empu-purification"
             ? "Tampaksiring Tirta Empul or Pura Beji, Gianyar, Bali"
+          : isMotorbikeTour(tour)
+            ? "Ubud, Kintamani, North, South and East Bali"
           : tour.area ?? "Ubud, Bali",
     },
     ...(tour.venue
@@ -363,6 +377,33 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  if (isMotorbikeTour(tour)) {
+    return {
+      ...base,
+      touristType: ["Couples", "Friends", "Scooter riders", "Photographers"],
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(MOTORBIKE_UBUD_IDR),
+        highPrice: String(MOTORBIKE_EAST_IDR),
+        priceCurrency: "IDR",
+        offerCount: MOTORBIKE_DESTINATIONS.length,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: MOTORBIKE_DESTINATIONS.map((dest) => ({
+          "@type": "Offer",
+          name: dest.name,
+          price: String(dest.priceIdr),
+          priceCurrency: "IDR",
+          availability: "https://schema.org/InStock",
+          url: `${SITE_URL}/tours/${tour.slug}`,
+          description: `Per scooter · tickets not included · ${dest.stops}`,
+        })),
+      },
+    }
+  }
+
   if (isSwingTour(tour)) {
     return {
       ...base,
@@ -420,6 +461,7 @@ function buildTourSchema(tour: Tour) {
 function buildTourWebPageSchema(tour: Tour) {
   if (isCookingTour(tour)) return buildCookingWebPageSchema(tour)
   if (isJeepTour(tour)) return buildJeepWebPageSchema(tour)
+  if (isMotorbikeTour(tour)) return buildMotorbikeWebPageSchema(tour)
 
   const significantLink = [
     tour.slug === GIRLS_TRIP_SLUG ? undefined : `${SITE_URL}/book?activity=${tour.slug}`,
@@ -541,6 +583,51 @@ function buildJeepWebPageSchema(tour: Tour) {
   }
 }
 
+function buildMotorbikeWebPageSchema(tour: Tour) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    keywords: getTourPageKeywords(tour.slug)?.join(", "),
+    dateModified: ACTIVITY_GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".motorbike-geo-tldr", ".motorbike-geo-answer", ".activity-geo-tldr", ".geo-tldr"],
+    },
+    significantLink: [
+      `${SITE_URL}/book?activity=${tour.slug}`,
+      `${SITE_URL}/blog/bali-motorbike-tour-vs-private-driver-2026`,
+      `${SITE_URL}/tours/full-day-ubud-tour`,
+      `${SITE_URL}/tours/bali-atv-adventure`,
+      `${SITE_URL}/blog/things-to-do-near-ubud-2026`,
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/pricing.md`,
+    ],
+  }
+}
+
+function buildMotorbikeQaSchemas(tour: Tour) {
+  const geo = getActivityGeo(tour.slug)
+  if (!geo) return []
+  return geo.faqs.map((item, index) => ({
+    "@context": "https://schema.org",
+    "@type": "Question",
+    "@id": `${SITE_URL}/tours/${tour.slug}#qa-${index + 1}`,
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+      url: `${SITE_URL}/tours/${tour.slug}#${tour.slug}-geo`,
+    },
+  }))
+}
+
 function buildJeepQaSchemas() {
   return JEEP_GEO_FAQS.map((item, index) => ({
     "@context": "https://schema.org",
@@ -631,6 +718,15 @@ export default async function TourPage({ params }: Props) {
             />
           ))
         : null}
+      {isMotorbikeTour(tour)
+        ? buildMotorbikeQaSchemas(tour).map((qa) => (
+            <script
+              key={qa["@id"]}
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
+            />
+          ))
+        : null}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link
@@ -699,6 +795,11 @@ export default async function TourPage({ params }: Props) {
                       From {formatIdr(tour.basePrice)} single · tandem{" "}
                       {formatIdr(TIER_PRICES_IDR["tandem-atv"][0])}
                     </span>
+                  ) : isMotorbikeTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      From {formatIdr(MOTORBIKE_UBUD_IDR)} / scooter · East{" "}
+                      {formatIdr(MOTORBIKE_EAST_IDR)}
+                    </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">
                       From {formatIdr(tour.basePrice)}
@@ -753,7 +854,9 @@ export default async function TourPage({ params }: Props) {
                   ? "About Tumang Bali Cooking Class"
                   : jeep
                     ? "About the Private Mount Batur Jeep Tour"
-                    : "About This Experience"}
+                    : isMotorbikeTour(tour)
+                      ? "About the Bali motorbike / scooter tour"
+                      : "About This Experience"}
               </h2>
               <article className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>

@@ -1,12 +1,12 @@
 # GEO Analysis — New Activities (Sekar Bali Activity)
 
 **Audit date:** 2026-09-28  
-**GEO Readiness Score: 58/100** (live motorbike hole) · **86/100** (this PR, after deploy)  
+**GEO Readiness Score: 58/100** (live motorbike hole) · **86/100** (coverage PR) · **90/100** (motorbike money-page upgrade)  
 **Platform scrape:** not run — readiness is structural, not citation-share.
 
 Operator facts that must stay extractable on the new SKUs:
 
-- **Motorbike traveling trip:** from **IDR 450,000** per 125–160cc automatic scooter (Ubud) to **IDR 800,000** (East). Tickets and lunch **not** included. Pickup at the **chosen area**. Ride or pillion. Not Sedang ATV, not a dirt bike, not a private car.
+- **Bali motorbike tour:** from **IDR 450,000** per 125–160cc automatic scooter (Ubud) to **IDR 800,000** (East). Tickets and lunch **not** included. Pickup at the **chosen area**. Ride (IDP recommended) or pillion. Not Sedang ATV, not a dirt bike, not a private car. Money page now has a definition-first TLDR, 134–167 word answer blocks, and per-destination AggregateOffer.
 - **UTV at Bali Buggy Adventures (Pemogan):** single **IDR 1,200,000** · tandem **IDR 1,500,000**. About 1 hour / 7 km. Lunch included. Driver 17+ / passenger 6+. Pickup **quoted**. Not Sedang ATV and not the 3-lap Polaris ticket.
 - **Park / workshop / dirt-bike tickets:** we book the published ticket (source from-price + IDR 200,000). Pickup **quoted**. Do not invent free or 400K.
 
@@ -14,13 +14,13 @@ Operator facts that must stay extractable on the new SKUs:
 
 | Pillar | Weight | Live | After PR | Notes |
 |--------|-------:|-----:|---------:|-------|
-| Citability | 25% | 12 | 22 | Motorbike had no 40–60 word definition or priced table. Repo TLDR is **54 words** with destination IDR. |
-| Structural readability | 20% | 12 | 18 | Park/UTV already have H2 Q&A + tables. Motorbike body had destination H3s but no GEO block. Spoke adds a comparison table. |
+| Citability | 25% | 12 | 23 | Motorbike now has an “X is…” TLDR (~54 words) plus 134–167 word price / definition / vs-car answers. |
+| Structural readability | 20% | 12 | 19 | Motorbike money page now has definition, priced table, vs-car/ATV table, destination H3s, and GEO Q&A. |
 | Multi-modal | 15% | 11 | 12 | First-party motorbike/UTV photos; no video. |
 | Authority / brand | 20% | 12 | 16 | Host note + desk notes; no Wikipedia. TripAdvisor remains cooking-class sameAs. |
 | Technical accessibility | 20% | 11 | 18 | AI bots allowed; llms 100. Live agent files omitted motorbike; UTV missing from inventory sentence. |
 
-Live pillar total 58. After-PR pillar total **86**.
+Live pillar total 58. Coverage-PR pillar total 86. After money-page upgrade **88**.
 
 ## Platform breakdown (readiness, not live share)
 

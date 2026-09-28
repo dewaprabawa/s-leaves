@@ -44,7 +44,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
 | Bali canyoning | **1,850,000** | Half / full day | Quoted | [Canyoning](/tours/canyoning) |
 | Jungle buggies 3 laps | **1,120,000** | ~2 hrs | Quoted | [Buggies](/tours/jungle-buggies-complete-3-laps-tour) |
 | UTV Buggy Bali Adventure | **1,200,000** single · **1,500,000** tandem | 1 hr / 7 km | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
-| Bali motorbike traveling trip | **450,000–800,000** / scooter | 8–10 hrs | Chosen area | [Motorbike trip](/tours/bali-motorbike-traveling-trip) |
+| Bali motorbike tour | **450,000–800,000** / scooter | 8–10 hrs | Chosen area | [Motorbike tour](/tours/bali-motorbike-traveling-trip) |
 | Ubud batik / silver class | **650,000** | 3 hrs | Quoted | [Workshops](/blog/ubud-workshop-classes-2026) |
 | Kintamani dirt bike | **4,100,000** | ~8 hrs | Quoted | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 
@@ -82,7 +82,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Full day Ubud tour](/tours/full-day-ubud-tour)** from **IDR 600,000** — private car, English-speaking driver, typically palace, market, Tegalalang. Entrance fees and lunch not included. **[Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour)** from **IDR 450,000** for the coastal sunset. Guides: [full-day Ubud tour](/blog/full-day-ubud-tour-guide-2026) · [Tanah Lot half day](/blog/half-day-ubud-tanah-lot-sunset-tour-2026).
 
-**[Bali Motorbike Traveling Trip](/tours/bali-motorbike-traveling-trip)** is a guided **125–160cc automatic** scooter day from **IDR 450,000** per bike (Ubud) to **IDR 800,000** (East Bali). Attraction tickets are **not** included. Pickup is at the area you choose. Compare: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026).
+**[Bali Motorbike Tour](/tours/bali-motorbike-traveling-trip)** is a guided **125–160cc automatic** scooter day from **IDR 450,000** per bike (Ubud) to **IDR 800,000** (East Bali). Attraction tickets are **not** included. Pickup is at the area you choose. Ride yourself (IDP recommended) or pillion. Compare: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026).
 
 Landing late? [DPS → Ubud private transfer](/transfers) from **IDR 700,000** per vehicle.
 
@@ -144,7 +144,7 @@ Free cancellation up to **24 hours** before start time. Full rules: [cancellatio
     author: 'Sekar Bali Activity',
     image: '/images/adventures/motorbike-tour-hero.jpg',
     content: `
-**Should you book a Bali motorbike traveling trip or a private driver?** Sekar Bali Activity sells both. The [motorbike trip](/tours/bali-motorbike-traveling-trip) is a guided **125–160cc automatic** scooter day from **IDR 450,000** per bike. The [Full Day Ubud Tour](/tours/full-day-ubud-tour) is a private car from **IDR 600,000**. Attraction tickets are **not** included on either.
+**Should you book a Bali motorbike tour or a private driver?** Sekar Bali Activity sells both. A [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) is a guided **125–160cc automatic** scooter day from **IDR 450,000** per bike — not Sedang ATV and not a dirt-bike enduro. The [Full Day Ubud Tour](/tours/full-day-ubud-tour) is a private car from **IDR 600,000**. Attraction tickets are **not** included on either. An International Driving Permit is recommended if you ride; say pillion if you do not want to drive.
 
 > **Key Takeaways**
 > - Motorbike: **IDR 450,000–800,000 per scooter** · 8–10 hours · ride or pillion
@@ -176,7 +176,7 @@ Included: automatic scooter, fuel, helmet, bottled water, English-speaking guide
 | Pickup | Chosen area | Hotel start | IDR 400,000 or self-meet |
 | Best when | You want the road and photos | Kids, heat, or no license | You want mud, not public roads |
 
-An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive.
+An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive. The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine from this scooter day.
 
 ## How to book
 

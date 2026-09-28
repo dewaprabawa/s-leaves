@@ -601,6 +601,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'bali-motorbike-traveling-trip': [
     { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026', blurb: 'Promo from IDR 450K (was 550K). Canggu / Jimbaran / Nusa Dua shuttle IDR 550K once per booking.' },
+    { title: 'Japan, Korea, China & Middle East (English)', href: '/blog/bali-tours-for-japanese-chinese-travelers-2026', blurb: 'Same English WhatsApp and IDR prices. Includes Korea and the Middle East (UAE, Saudi, Qatar).' },
     { title: 'Motorbike tour vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026', blurb: 'Scooter promo from IDR 450K vs private car from IDR 600K — tickets extra on both.' },
     { title: 'Full day Ubud car', href: '/tours/full-day-ubud-tour', blurb: 'Air-con driver day if you do not want to ride.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle-mud quad — a different machine, lunch included.' },

@@ -355,6 +355,11 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Bali motorbike tour IDP',
       'Canggu motorbike tour pickup',
       'Nusa Dua scooter tour shuttle',
+      'Bali tour for Japanese travelers',
+      'Bali tour for Korean travelers',
+      'Bali tour for Chinese travelers',
+      'Bali tour for Middle East travelers',
+      'UAE Bali tour English booking',
     ],
     compare: [
       'Bali motorbike tour vs private driver',
@@ -713,6 +718,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'half-day-ubud-tanah-lot-tour',
   'bali-motorbike-tour-price-2026': 'bali-motorbike-traveling-trip',
+  'bali-tours-for-japanese-chinese-travelers-2026': 'bali-motorbike-traveling-trip',
   'bali-motorbike-tour-vs-private-driver-2026': 'bali-motorbike-traveling-trip',
   'bali-6-day-girls-trip-itinerary-2026': 'bali-private-itinerary',
   'bali-family-private-itinerary-2026': 'bali-private-itinerary',
@@ -880,6 +886,15 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'bali-bird-park-from-ubud-2026': [
     'Bali Bird Park price 2026',
     'Bali Bird Park from Ubud',
+  ],
+  'bali-tours-for-japanese-chinese-travelers-2026': [
+    'Bali tour for Japanese travelers',
+    'Bali tour for Korean travelers',
+    'Bali tour for Chinese travelers',
+    'Bali tour for Middle East travelers',
+    'book Bali tour in English from Japan',
+    'UAE Bali tour English booking',
+    'Nusa Dua Bali tour pickup Middle East',
   ],
   'bali-motorbike-tour-price-2026': [
     'Bali motorbike tour price 2026',

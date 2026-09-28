@@ -66,6 +66,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'half-day-ubud-tanah-lot-tour',
   'bali-motorbike-tour-price-2026': 'bali-motorbike-traveling-trip',
+  'bali-tours-for-japanese-chinese-travelers-2026': 'bali-motorbike-traveling-trip',
   'bali-motorbike-tour-vs-private-driver-2026': 'bali-motorbike-traveling-trip',
   'perfect-one-day-ubud-itinerary': 'full-day-ubud-tour',
   'tirta-empu-melukat-ubud-guide': 'tirta-empu-purification',

@@ -48,6 +48,7 @@ import {
   MOTORBIKE_UBUD_LIST_IDR,
   MOTORBIKE_WATERFALL_IDR,
 } from '@/data/motorbikeTrip'
+import { ORIGIN_MARKET_ARTICLE_SLUG } from '@/data/originMarkets'
 
 export const ACTIVITY_GEO_UPDATED = '2026-09-28'
 
@@ -840,6 +841,11 @@ const MOTORBIKE: ActivityGeoCorpus = {
       a: `Sekar Bali Activity charges ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking when the motorbike tour collects you from Canggu, Jimbaran, or Nusa Dua. That is a flat shuttle upsell, not the IDR 400,000 ATV/rafting/tubing/Swing Heaven/Griya Beji hotel-pickup surcharge, and not island-wide jeep pickup. Chosen-area pickup for Ubud and other ride-area pins stays in the scooter promo. Tick the Canggu / Jimbaran / Nusa Dua shuttle in the booking form, or skip it if you already meet in the ride area. Temple tickets and lunch stay extra. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG}`,
     },
     {
+      intent: 'japan korea china middle east bali motorbike tour english',
+      q: 'Can Japanese, Korean, Chinese, or Middle East visitors book the Bali motorbike tour in English?',
+      a: `Yes. Sekar Bali Activity keeps the motorbike tour page, WhatsApp booking, and published prices in English and Indonesian rupiah. Guides speak English. Guests from Japan, Korea, China, and the Middle East (UAE, Saudi Arabia, Qatar) book the same Ubud promo from ${idr(MOTORBIKE_UBUD_IDR)} per scooter (was ${idr(MOTORBIKE_UBUD_LIST_IDR)}). Ride with an International Driving Permit, or say pillion. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. There is no translated form and no JPY / KRW / CNY / AED checkout — the charge is IDR. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG} · https://www.sekarbaliactivity.com/blog/${ORIGIN_MARKET_ARTICLE_SLUG}`,
+    },
+    {
       intent: 'bali motorbike tour vs atv',
       q: 'Is this the same as the Ubud ATV or a dirt bike?',
       a: `No. ATV at All New Bali Adventure in Sedang is a quad on a jungle-mud track from IDR 750,000, with lunch included and hotel pickup IDR 400,000 or self-meet. The Kintamani dirt bike from IDR 4,100,000 is a guided enduro on lava. The motorbike tour is a public-road ${MOTORBIKE_ENGINE} day across Ubud, Kintamani, or the coasts. Tickets are not included. Pickup is at your chosen area. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking — not the ATV IDR 400,000 surcharge.`,
@@ -849,6 +855,7 @@ const MOTORBIKE: ActivityGeoCorpus = {
     `A Bali motorbike tour with Sekar Bali Activity is a guided ${MOTORBIKE_ENGINE} scooter day. Promo from ${idr(MOTORBIKE_UBUD_IDR)} per bike (Ubud, was ${idr(MOTORBIKE_UBUD_LIST_IDR)}). Waterfall, Kintamani, South, North, and East routes run to ${idr(MOTORBIKE_EAST_IDR)} promo (was ${idr(MOTORBIKE_EAST_LIST_IDR)}). Attraction tickets are not included. Pickup is at your chosen area. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Ride yourself (IDP recommended) or pillion. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG}`,
     `The Ubud waterfall scooter tour with Sekar Bali Activity is ${idr(MOTORBIKE_WATERFALL_IDR)} promo per ${MOTORBIKE_ENGINE} bike — Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan. Tickets extra. Pickup at your chosen area. Canggu / Jimbaran / Nusa Dua shuttle ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG}`,
     `Sekar Bali Activity’s Bali motorbike tour is not Sedang ATV (from IDR 750,000, lunch included) and not a private Ubud car day (from IDR 600,000). Scooter promo from ${idr(MOTORBIKE_UBUD_IDR)} per bike. Canggu / Jimbaran / Nusa Dua shuttle ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Compare: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-private-driver-2026 · prices: https://www.sekarbaliactivity.com/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}`,
+    `Guests from Japan, Korea, China, and the Middle East book Sekar Bali Activity in English. Prices stay in Indonesian rupiah. The motorbike tour promo starts at ${idr(MOTORBIKE_UBUD_IDR)} per scooter. WhatsApp booking — no translated form. https://www.sekarbaliactivity.com/blog/${ORIGIN_MARKET_ARTICLE_SLUG}`,
   ],
   keywords: getActivityKeywords(MOTORBIKE_TRIP_SLUG) ?? [],
   placename: 'Ubud, Kintamani, North, South and East Bali',

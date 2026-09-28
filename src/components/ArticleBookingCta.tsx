@@ -76,6 +76,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/book',
     secondaryLabel: 'WhatsApp the date',
   },
+  'bali-tours-for-japanese-chinese-travelers-2026': {
+    headline: 'Book in English — prices stay IDR',
+    body: 'Guests from Japan, Korea, China, and the Middle East (UAE, Saudi, Qatar) use the same English WhatsApp thread. Motorbike promo from IDR 450,000. Canggu / Jimbaran / Nusa Dua shuttle IDR 550,000 once per booking.',
+    primaryHref: '/tours/bali-motorbike-traveling-trip',
+    primaryLabel: 'View motorbike tour',
+    secondaryHref: '/blog/bali-motorbike-tour-price-2026',
+    secondaryLabel: 'See 2026 promo prices',
+  },
   'bali-motorbike-tour-price-2026': {
     headline: 'Book the Bali motorbike tour promo',
     body: 'Ubud promo IDR 450,000 per scooter (was 550,000). East Bali 800,000 (was 900,000). Canggu / Jimbaran / Nusa Dua shuttle IDR 550,000 once per booking.',

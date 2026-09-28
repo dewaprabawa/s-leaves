@@ -50,6 +50,7 @@ import {
   MOTORBIKE_UBUD_IDR,
   MOTORBIKE_UBUD_LIST_IDR,
 } from "@/data/motorbikeTrip"
+import { ORIGIN_MARKET_ARTICLE_SLUG, ORIGIN_TOURIST_TYPES } from "@/data/originMarkets"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -204,7 +205,7 @@ function buildTourSchema(tour: Tour) {
           : tour.slug === "tirta-empu-purification"
             ? ["Couples", "Families", "Culture travelers", "Spiritual travelers"]
           : isMotorbikeTour(tour)
-            ? ["Couples", "Friends", "Scooter riders", "Photographers"]
+            ? ["Couples", "Friends", "Scooter riders", "Photographers", ...ORIGIN_TOURIST_TYPES]
           : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
@@ -383,7 +384,7 @@ function buildTourSchema(tour: Tour) {
   if (isMotorbikeTour(tour)) {
     return {
       ...base,
-      touristType: ["Couples", "Friends", "Scooter riders", "Photographers"],
+      touristType: ["Couples", "Friends", "Scooter riders", "Photographers", ...ORIGIN_TOURIST_TYPES],
       offers: {
         "@type": "AggregateOffer",
         name: tour.title,
@@ -606,6 +607,7 @@ function buildMotorbikeWebPageSchema(tour: Tour) {
     significantLink: [
       `${SITE_URL}/book?activity=${tour.slug}`,
       `${SITE_URL}/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}`,
+      `${SITE_URL}/blog/${ORIGIN_MARKET_ARTICLE_SLUG}`,
       `${SITE_URL}/blog/bali-motorbike-tour-vs-private-driver-2026`,
       `${SITE_URL}/tours/full-day-ubud-tour`,
       `${SITE_URL}/tours/bali-atv-adventure`,

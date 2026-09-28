@@ -202,6 +202,57 @@ An International Driving Permit is **recommended** if you ride. Say pillion on W
 `,
   },
   {
+    slug: 'bali-tours-for-japanese-chinese-travelers-2026',
+    title: 'Bali Tours for Japan, Korea, China & Middle East 2026 (English)',
+    seoTitle: 'Bali Tours in English | Japan to Middle East',
+    excerpt:
+      'Guests from Japan, Korea, China, and the Middle East book Sekar Bali Activity in English. Prices stay in IDR. WhatsApp — no translated form. Motorbike promo from 450K.',
+    publishedAt: '2026-09-28',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/motorbike-tour-hero.jpg',
+    content: `
+**Can travelers from Japan, Korea, China, or the Middle East book Sekar Bali Activity without switching language?** Yes. The site, WhatsApp thread, and published prices stay **English** and **Indonesian rupiah**. Guides speak English. There is no Japanese, Korean, Chinese, or Arabic checkout and no JPY / KRW / CNY / AED rate card. You send **date, hotel pin, guest count, and the activity** the same way every other guest does.
+
+> **Key Takeaways**
+> - Language stays **English** · prices stay **IDR**
+> - WhatsApp booking — **no payment to inquire**
+> - Japan and Korea: Google English queries + English ads geo-targeted to those countries
+> - China: English pages help HK / Taiwan / Singapore and guests who already book in English; mainland Baidu needs Chinese later
+> - Middle East (UAE, Saudi Arabia, Qatar): English ads + this English site — Nusa Dua / Jimbaran stays use the motorbike shuttle
+> - Motorbike promo from **IDR 450,000** · Canggu / Jimbaran / Nusa Dua shuttle **IDR 550,000** once per booking
+
+## What stays the same
+
+| For you | What that means |
+| --- | --- |
+| English pages | The URL you open is the same English tour page |
+| IDR prices | Ubud scooter promo **IDR 450,000** (was 550,000) — not a yen, won, yuan, or dirham checkout |
+| English WhatsApp | Write in English; guides reply in English |
+| Same pickup rules | Chosen-area pickup in the promo · Canggu / Jimbaran / Nusa Dua shuttle **IDR 550,000** |
+
+We do **not** publish Japanese, Korean, Chinese, or Arabic copies of this site. If you need a translated page later, that is a separate project — not a language tag on the English HTML.
+
+## How Japan, Korea, China, and Middle East guests actually book
+
+1. Open the English money page — start with [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) or [things to do near Ubud](/blog/things-to-do-near-ubud-2026)
+2. WhatsApp **name, date, hotel pin, guest count, ride or pillion** (for the scooter)
+3. We confirm the **IDR** total in English
+4. Pay when we confirm — **no deposit to ask**
+
+If you stay in **Canggu, Jimbaran, or Nusa Dua**, the motorbike shuttle is **IDR 550,000 once per booking**. Price table: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026).
+
+An International Driving Permit is recommended if you ride. Say **pillion** if you do not want to drive Bali traffic. Prefer air-con? The [Full Day Ubud Tour](/tours/full-day-ubud-tour) is a private car from **IDR 600,000**.
+
+## Paid targeting (fastest for these origin countries)
+
+Keep the landing page in English. In Google Ads or Meta, set **location = Japan, South Korea, China, United Arab Emirates, Saudi Arabia, and Qatar** (add Hong Kong and Taiwan if you want Chinese-speaking guests who already use Google). Set **ad language = English**. Send traffic to the existing tour URLs — not a translated clone.
+
+Mainland China search is mostly **Baidu**, which wants Chinese pages. That is a later translation project, not a tag on this English site.
+
+**Ready?** Book in English: [motorbike tour](/tours/bali-motorbike-traveling-trip) · [WhatsApp](/book).
+`,
+  },
+  {
     slug: 'bali-motorbike-tour-vs-private-driver-2026',
     title: 'Bali Motorbike Tour vs Private Driver 2026: Scooter or Car?',
     seoTitle: 'Bali Motorbike vs Driver | From 450K',

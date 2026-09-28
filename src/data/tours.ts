@@ -2557,6 +2557,11 @@ Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, a
         answer: `IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} once per booking when we collect you from Canggu, Jimbaran, or Nusa Dua. It is not the IDR 400,000 ATV/rafting surcharge and not island-wide jeep pickup. Skip it if your pin is already in the ride area. Tickets and lunch stay extra.`,
       },
       {
+        id: "faq-moto-jp-cn",
+        question: "Can Japanese, Korean, Chinese, or Middle East visitors book this in English?",
+        answer: "Yes. The website, WhatsApp booking, and published prices stay in English and Indonesian rupiah. Guides speak English. You do not need Japanese, Korean, Chinese, or Arabic on the form. Ride yourself with an International Driving Permit, or say pillion. If you stay in Canggu, Jimbaran, or Nusa Dua, the shuttle is IDR 550,000 once per booking. https://www.sekarbaliactivity.com/blog/bali-tours-for-japanese-chinese-travelers-2026",
+      },
+      {
         id: "faq-moto-6",
         question: "Is this the same as a private car day or the Ubud ATV?",
         answer: "No. The Full Day Ubud Tour is a private car from IDR 600,000. ATV at All New Bali Adventure is a jungle-mud quad from IDR 750,000 with lunch included. This is a public-road scooter day. Tickets stay extra here and on the car.",

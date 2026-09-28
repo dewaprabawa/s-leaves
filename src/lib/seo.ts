@@ -4,6 +4,7 @@ import {
   PRIMARY_NAP_ADDRESS,
   postalAddressSchema,
 } from '@/lib/locations'
+import { BOOKING_LANGUAGES, ORIGIN_AUDIENCE_SCHEMA } from '@/data/originMarkets'
 
 export const SITE_URL = 'https://www.sekarbaliactivity.com'
 export const SITE_NAME = 'Sekar Bali Activity'
@@ -74,6 +75,7 @@ export function buildOrganizationSchema() {
       { '@type': 'Place', name: 'Mount Batur' },
       { '@type': 'Place', name: 'Bali' },
     ],
+    audience: [...ORIGIN_AUDIENCE_SCHEMA],
     sameAs: [
       'https://www.instagram.com/sekarbaliactivity',
       'https://www.facebook.com/sekarbaliactivity',
@@ -86,14 +88,14 @@ export function buildOrganizationSchema() {
         telephone: CONTACT_PHONE_E164,
         email: CONTACT_EMAIL,
         contactType: 'customer service',
-        availableLanguage: ['English', 'Indonesian'],
+        availableLanguage: [...BOOKING_LANGUAGES],
         areaServed: 'ID',
       },
       {
         '@type': 'ContactPoint',
         contactType: 'reservations',
         url: CONTACT_WHATSAPP_URL,
-        availableLanguage: ['English', 'Indonesian'],
+        availableLanguage: [...BOOKING_LANGUAGES],
       },
     ],
     openingHoursSpecification: {

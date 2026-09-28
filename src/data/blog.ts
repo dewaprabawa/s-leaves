@@ -1618,16 +1618,16 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
     slug: 'bali-adventure-packages-prices-2026',
     title: 'Bali Adventure Prices 2026',
     seoTitle: 'Ubud Activity Price List 2026 | Every SKU',
-    excerpt: 'ATV from IDR 750K, rafting and tubing 500K (450K for 2+), ricefield cycling 750K, private Mount Batur jeep 950K (2) / 750K (3+), Kintamani Day 1.3M promo, Tirta Empu 1.2M, Luwak 800K, cooking 450K, full-day Ubud from 600K — 2026 package prices in one place.',
+    excerpt: 'ATV from IDR 750K, rafting and tubing 500K (450K for 2+), ricefield cycling 750K / 725K / 700K, private Mount Batur jeep 950K (2) / 750K (3+), Kintamani Day 1.3M promo, Tirta Empu 1.2M, Luwak 800K, cooking 450K, UTV 1.2M / 1.5M, motorbike from 450K, full-day Ubud from 600K — 2026 package prices in one place.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000 (IDR 450,000 for 2+)**, **Canyon Tubing IDR 500,000 (IDR 450,000 for 2+)**, **Ubud Ricefield Cycling Tour IDR 750,000**, **Mount Batur private jeep IDR 950,000 for 2 (minimum) / from IDR 750,000 per person for 3+** (optional hot spring +IDR 150,000 with ticket), **Private Kintamani Day promo IDR 1,300,000** (was IDR 1,450,000; min 2), **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Tirta Empu Purification IDR 1,200,000**, **Luwak Coffee Plantation IDR 800,000** (min 3 guests; transport not included), **Full Day Ubud Tour from IDR 600,000**, and **Half Day Ubud & Tanah Lot from IDR 450,000**.
+**What do Bali adventure tours cost near Ubud in 2026?** Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000** (725,000 for 2 · 700,000 for 3+), **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000 (IDR 450,000 for 2+)**, **Canyon Tubing IDR 500,000 (IDR 450,000 for 2+)**, **Ubud Ricefield Cycling Tour IDR 750,000** (725,000 for 2 · 700,000 for 3+), **Mount Batur private jeep IDR 950,000 for 2 (minimum) / from IDR 750,000 per person for 3+** (optional hot spring +IDR 150,000 with ticket), **Private Kintamani Day promo IDR 1,300,000** (was IDR 1,450,000; min 2), **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Tirta Empu Purification IDR 1,200,000**, **Luwak Coffee Plantation IDR 800,000** (min 3 guests; transport not included), **UTV at Bali Buggy Adventures IDR 1,200,000 single / IDR 1,500,000 tandem**, **Bali Motorbike Traveling Trip from IDR 450,000 per scooter** (to IDR 800,000 East Bali), **private itinerary driver from IDR 600,000 / car-day**, **Full Day Ubud Tour from IDR 600,000**, and **Half Day Ubud & Tanah Lot from IDR 450,000**.
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
-> - **Free Ubud pickup** on ricefield cycling and Tumang cooking; **private shuttle included** on Tirta Empu melukat; **island-wide pickup included** on the private Mount Batur jeep and Private Kintamani Day; ATV/rafting/tubing add IDR 400,000 hotel pickup
+> - **Free Ubud pickup** on ricefield cycling and Tumang cooking; **private shuttle included** on Tirta Empu melukat; **island-wide pickup included** on the private Mount Batur jeep and Private Kintamani Day; ATV/rafting/tubing/Swing Heaven/Griya Beji add IDR 400,000 hotel pickup **or free self-meet**
 > - Every tour includes gear, guide, and insurance where listed on the tour page
 > - Book on WhatsApp — send name, age, hotel, activity, and price
 > - Tap **Details** in the booking popup to preview any tour itinerary instantly
@@ -1638,20 +1638,25 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 
 | Adventure | Price | Per | Tour Page |
 | --- | --- | --- | --- |
-| Single ATV | IDR 750,000 | 1 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
+| Single ATV | IDR 750,000 · 725,000 (2) · 700,000 (3+) | 1 pax / group tier | [Bali ATV Adventure](/tours/bali-atv-adventure) |
 | Tandem ATV | IDR 1,100,000 | 2 pax | [Bali ATV Adventure](/tours/bali-atv-adventure) |
 | Whitewater Rafting | IDR 500,000 · 450,000 for 2+ | person | [Whitewater Rafting](/tours/whitewater-rafting) |
 | Canyon Tubing | IDR 500,000 · 450,000 for 2+ | person | [Canyon Tubing](/tours/canyon-tubing) |
 | Swing Heaven Bali | IDR 530,000 · 630,000 with lunch | person | [Swing Heaven](/tours/swing-heaven-bali) |
 | Griya Beji Waterfall (melukat) | IDR 300,000 · palm 1,000,000 · healing 1,500,000 | person · Punggul · admission extra | [Griya Beji](/tours/griya-beji-waterfall) |
-| Ubud Ricefield Cycling | IDR 750,000 | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
+| Ubud Ricefield Cycling | IDR 750,000 · 725,000 (2) · 700,000 (3+) | person | [Cycling Tour](/tours/ubud-ricefield-cycling-tour) |
 | Mount Batur private jeep | IDR 950,000 (2, min) · 750,000 (3+) | person, private 4×4 | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Private Kintamani Day | IDR 1,300,000 promo (was 1,450,000) | person (min 2) | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Tumang Bali Cooking Class | IDR 450,000 promo | person shared | [Cooking Class](/tours/balinese-cooking-class) |
 | Tirta Empu Purification (Melukat) | IDR 1,200,000 | person / private · Tirta Empul or Beji · breakfast included | [Tirta Empu Melukat](/tours/tirta-empu-purification) |
 | Luwak Coffee Plantation (Umah Kuno) | IDR 800,000 | person (min 3) | [Luwak Coffee](/tours/luwak-coffee-plantation) |
+| UTV at Bali Buggy Adventures | IDR 1,200,000 single · 1,500,000 tandem | 1 hour / 7 km · lunch included | [UTV](/tours/utv-buggy-bali-adventure) |
+| Bali Motorbike Traveling Trip | IDR 450,000–800,000 | per scooter (tickets not included) | [Motorbike trip](/tours/bali-motorbike-traveling-trip) |
+| Private Bali itinerary | from IDR 600,000 | private car-day (HiAce quoted for 6+) | [Private itinerary](/tours/bali-private-itinerary) |
 | Full Day Ubud Tour | from IDR 600,000 | private car | [Full Day Ubud](/tours/full-day-ubud-tour) |
 | Half Day Ubud & Tanah Lot | from IDR 450,000 | private car | [Half Day Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) |
+
+Park and workshop tickets we book (Bali Bird Park from IDR 585,000, Bali Safari IDR 1,000,000–2,300,000, Zoo mud fun IDR 1,850,000, canyoning IDR 1,850,000, jungle buggies IDR 1,120,000, Kintamani dirt bike IDR 4,100,000, Tabanan dirt bike from IDR 2,100,000, Taro ride + lunch IDR 1,665,000, Ubud workshops from IDR 600,000) stay on the [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026) table.
 
 ## Pickup Policy
 
@@ -1659,9 +1664,11 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 - **Tumang Bali Cooking Class:** Complimentary Ubud-area pickup (shared & private)
 - **Tirta Empu Purification (Melukat):** Private Ubud-area shuttle included in IDR 1,200,000 / person
 - **Private Mount Batur jeep / Private Kintamani Day:** Hotel pickup included island-wide (not the IDR 400,000 add-on)
-- **ATV, rafting, tubing:** Pickup available; **IDR 400,000** hotel pickup charge applies
+- **ATV, rafting, tubing, Swing Heaven, Griya Beji:** **IDR 400,000** hotel pickup **or free self-meet** at the venue
+- **UTV / park / workshop / dirt-bike tickets:** Pickup quoted on WhatsApp
+- **Bali Motorbike Traveling Trip:** Pickup at your chosen area (in the scooter price)
 - **Luwak Coffee Plantation:** Transport not included — arrange your own ride to Tampaksiring / Umah Kuno
-- **Full Day / Half Day private tours:** Private car & driver included in the from-price; entrance fees extra
+- **Full Day / Half Day private tours / private itinerary:** Private car & driver included in the from-price; entrance fees extra
 
 ## Popular Combos & Pairings
 

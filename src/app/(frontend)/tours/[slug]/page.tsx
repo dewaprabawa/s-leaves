@@ -44,8 +44,11 @@ import { GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import {
   MOTORBIKE_DESTINATIONS,
   MOTORBIKE_EAST_IDR,
+  MOTORBIKE_EAST_LIST_IDR,
+  MOTORBIKE_PRICE_ARTICLE_SLUG,
   MOTORBIKE_TRIP_SLUG,
   MOTORBIKE_UBUD_IDR,
+  MOTORBIKE_UBUD_LIST_IDR,
 } from "@/data/motorbikeTrip"
 
 type Props = {
@@ -602,6 +605,7 @@ function buildMotorbikeWebPageSchema(tour: Tour) {
     },
     significantLink: [
       `${SITE_URL}/book?activity=${tour.slug}`,
+      `${SITE_URL}/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}`,
       `${SITE_URL}/blog/bali-motorbike-tour-vs-private-driver-2026`,
       `${SITE_URL}/tours/full-day-ubud-tour`,
       `${SITE_URL}/tours/bali-atv-adventure`,
@@ -797,8 +801,14 @@ export default async function TourPage({ params }: Props) {
                     </span>
                   ) : isMotorbikeTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">
-                      From {formatIdr(MOTORBIKE_UBUD_IDR)} / scooter · East{" "}
-                      {formatIdr(MOTORBIKE_EAST_IDR)}
+                      <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
+                        {formatIdr(MOTORBIKE_UBUD_LIST_IDR)}
+                      </span>
+                      Promo from {formatIdr(MOTORBIKE_UBUD_IDR)} / scooter · East{" "}
+                      {formatIdr(MOTORBIKE_EAST_IDR)}{" "}
+                      <span className="text-brand-green-light line-through opacity-70 font-semibold">
+                        (was {formatIdr(MOTORBIKE_EAST_LIST_IDR)})
+                      </span>
                     </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">

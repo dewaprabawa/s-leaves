@@ -111,12 +111,14 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   dayTour: [
     { title: 'Full day Ubud tour guide', href: '/blog/full-day-ubud-tour-guide-2026' },
     { title: 'Tanah Lot sunset half day', href: '/blog/half-day-ubud-tanah-lot-sunset-tour-2026' },
+    { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026' },
     { title: 'Motorbike vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026' },
     { title: 'Book full-day Ubud', href: '/tours/full-day-ubud-tour' },
     { title: 'Book Tanah Lot sunset', href: '/tours/half-day-ubud-tanah-lot-tour' },
     { title: 'Book motorbike trip', href: '/tours/bali-motorbike-traveling-trip' },
   ],
   motorbike: [
+    { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026' },
     { title: 'Motorbike vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026' },
     { title: 'Book the motorbike trip', href: '/tours/bali-motorbike-traveling-trip' },
     { title: 'Book the private car day', href: '/tours/full-day-ubud-tour' },
@@ -233,6 +235,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'how-to-spot-ethical-luwak-coffee-in-bali': 'coffee',
   'full-day-ubud-tour-guide-2026': 'dayTour',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'dayTour',
+  'bali-motorbike-tour-price-2026': 'motorbike',
   'bali-motorbike-tour-vs-private-driver-2026': 'motorbike',
   'bali-6-day-girls-trip-itinerary-2026': 'girlsTrip',
   'bali-family-private-itinerary-2026': 'girlsTrip',
@@ -328,6 +331,7 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     HUB,
   ],
   motorbike: [
+    { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026' },
     { title: 'Full-day Ubud car', href: '/tours/full-day-ubud-tour' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure' },
     HUB,

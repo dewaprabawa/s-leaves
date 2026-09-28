@@ -353,6 +353,8 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Bali scooter day trip price',
       'Ubud waterfall scooter tour',
       'Bali motorbike tour IDP',
+      'Canggu motorbike tour pickup',
+      'Nusa Dua scooter tour shuttle',
     ],
     compare: [
       'Bali motorbike tour vs private driver',
@@ -710,6 +712,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'how-to-spot-ethical-luwak-coffee-in-bali': 'luwak-coffee-plantation',
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'half-day-ubud-tanah-lot-tour',
+  'bali-motorbike-tour-price-2026': 'bali-motorbike-traveling-trip',
   'bali-motorbike-tour-vs-private-driver-2026': 'bali-motorbike-traveling-trip',
   'bali-6-day-girls-trip-itinerary-2026': 'bali-private-itinerary',
   'bali-family-private-itinerary-2026': 'bali-private-itinerary',
@@ -877,6 +880,13 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'bali-bird-park-from-ubud-2026': [
     'Bali Bird Park price 2026',
     'Bali Bird Park from Ubud',
+  ],
+  'bali-motorbike-tour-price-2026': [
+    'Bali motorbike tour price 2026',
+    'Bali scooter tour promo',
+    'Canggu motorbike tour pickup',
+    'Jimbaran scooter shuttle',
+    'Nusa Dua motorbike tour shuttle',
   ],
   'bali-motorbike-tour-vs-private-driver-2026': [
     'Bali motorbike tour vs private driver',

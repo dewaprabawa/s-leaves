@@ -1757,6 +1757,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 > - **Island-wide pickup included:** private Mount Batur jeep
 > - **Hotel pickup:** IDR 400,000 for ATV, rafting, tubing, Swing Heaven, Griya Beji Waterfall
 > - **Cycling outside Ubud:** IDR 400,000 surcharge (e.g. Seminyak, Canggu, Kuta)
+> - **Motorbike Canggu / Jimbaran / Nusa Dua shuttle:** IDR 550,000 once per booking
 > - **Booking:** Set your hotel pin in the booking popup map
 
 ---
@@ -1774,6 +1775,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 | Canyon Tubing | ❌ No | +IDR 400,000 |
 | Swing Heaven Bali (Bongkasa) | ❌ No — self-meet free | +IDR 400,000 |
 | Griya Beji Waterfall (Punggul) | ❌ No — self-meet free | +IDR 400,000 |
+| Bali Motorbike Tour | ✅ Chosen-area pickup in the scooter promo | Canggu / Jimbaran / Nusa Dua shuttle **IDR 550,000** once per booking |
 
 ## Why Cycling Includes Free Pickup
 
@@ -1810,7 +1812,11 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 
 [Griya Beji Waterfall](/tours/griya-beji-waterfall) is on **Jl. Mawar, Desa Punggul** — not Tirta Empul. Hotel pickup is the same **IDR 400,000** adventure surcharge, or self-meet at the park. Pin and prices: [Griya Beji Ubud guide](/blog/griya-beji-waterfall-ubud-guide).
 
-**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empu melukat (shuttle included)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure) · [Swing Heaven (IDR 400K or self-meet)](/tours/swing-heaven-bali) · [Griya Beji Waterfall (IDR 400K or self-meet)](/tours/griya-beji-waterfall).
+## Motorbike shuttle from Canggu, Jimbaran, or Nusa Dua
+
+The [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) includes pickup at your chosen area in the scooter promo. If we collect you from **Canggu, Jimbaran, or Nusa Dua**, add **IDR 550,000 once per booking**. That is not the IDR 400,000 ATV/rafting surcharge. Skip it if your pin is already in the ride area. Table: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026).
+
+**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empu melukat (shuttle included)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure) · [Swing Heaven (IDR 400K or self-meet)](/tours/swing-heaven-bali) · [Griya Beji Waterfall (IDR 400K or self-meet)](/tours/griya-beji-waterfall) · [Bali motorbike tour (Canggu / Jimbaran / Nusa Dua shuttle IDR 550K)](/tours/bali-motorbike-traveling-trip).
 `
   },
   {

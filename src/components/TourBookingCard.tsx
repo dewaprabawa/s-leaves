@@ -16,6 +16,15 @@ import {
   COOKING_CLASS_STANDARD_PRICE_IDR,
 } from "@/data/cultureSales"
 import { BALI_SAFARI_PRICES, BALI_SAFARI_SLUG } from "@/data/parkWorkshopTours"
+import {
+  MOTORBIKE_EAST_IDR,
+  MOTORBIKE_EAST_LIST_IDR,
+  MOTORBIKE_SOUTH_SHUTTLE_ADDON,
+  MOTORBIKE_SOUTH_SHUTTLE_IDR,
+  MOTORBIKE_TRIP_SLUG,
+  MOTORBIKE_UBUD_IDR,
+  MOTORBIKE_UBUD_LIST_IDR,
+} from "@/data/motorbikeTrip"
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
@@ -47,6 +56,13 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       promoPrice: COOKING_CLASS_PRICE_IDR,
       standardPrice: COOKING_CLASS_STANDARD_PRICE_IDR,
       tierLabel: "Shared class promo / person",
+    }
+  }
+  if (tourSlug === MOTORBIKE_TRIP_SLUG) {
+    return {
+      promoPrice: MOTORBIKE_UBUD_IDR,
+      standardPrice: MOTORBIKE_UBUD_LIST_IDR,
+      tierLabel: `Promo / scooter · East ${formatIdr(MOTORBIKE_EAST_IDR)} (was ${formatIdr(MOTORBIKE_EAST_LIST_IDR)})`,
     }
   }
   // ATV SERP / FAQ lead with the 1-rider rate. Do not show the 3+ 700K
@@ -152,7 +168,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
     props.tourSlug === GIRLS_TRIP_SLUG
   const isMelukat = props.tourSlug === "tirta-empu-purification"
   const isLuwak = props.tourSlug === "luwak-coffee-plantation"
-  const isMotorbike = props.tourSlug === "bali-motorbike-traveling-trip"
+  const isMotorbike = props.tourSlug === MOTORBIKE_TRIP_SLUG
 
   if (props.activityOptions?.length) {
     return props.activityOptions.map((opt, index) => {
@@ -181,6 +197,13 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         freeUbudPickup: props.tourSlug === "balinese-cooking-class",
         pickupIncluded: isMelukat || isMotorbike,
         pickupNotOffered: isLuwak,
+        ...(isMotorbike
+          ? {
+              optionalAddons: [MOTORBIKE_SOUTH_SHUTTLE_ADDON],
+              optionalAddonsIntro:
+                "Tick this if we collect you from Canggu, Jimbaran, or Nusa Dua. IDR 550,000 once per booking — not the IDR 400,000 ATV/rafting surcharge. Skip it when your pin is already in the ride area.",
+            }
+          : {}),
       }
     })
   }
@@ -342,6 +365,12 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             <p className="text-sm text-brand-green-light mt-1">
               Private {formatIdr(COOKING_CLASS_PRIVATE_SOLO_IDR)} / person ·{" "}
               {formatIdr(COOKING_CLASS_PRIVATE_COUPLE_IDR)} for 2
+            </p>
+          ) : null}
+          {props.tourSlug === MOTORBIKE_TRIP_SLUG ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Canggu / Jimbaran / Nusa Dua shuttle {formatIdr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once
+              per booking
             </p>
           ) : null}
           {isPrivateItinerary ? (

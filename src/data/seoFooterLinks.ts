@@ -77,6 +77,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour' },
   { label: 'UTV buggy Bali', href: '/tours/utv-buggy-bali-adventure' },
   { label: 'Bali motorbike tour', href: '/tours/bali-motorbike-traveling-trip' },
+  { label: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026' },
   { label: 'Motorbike vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026' },
   { label: 'Kintamani dirt bike', href: '/tours/dirt-bike-kintamani-black-lava' },
   { label: 'Ubud batik class', href: '/tours/batik-class' },

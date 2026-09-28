@@ -44,7 +44,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
 | Bali canyoning | **1,850,000** | Half / full day | Quoted | [Canyoning](/tours/canyoning) |
 | Jungle buggies 3 laps | **1,120,000** | ~2 hrs | Quoted | [Buggies](/tours/jungle-buggies-complete-3-laps-tour) |
 | UTV Buggy Bali Adventure | **1,200,000** single · **1,500,000** tandem | 1 hr / 7 km | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
-| Bali motorbike tour | **450,000–800,000** / scooter | 8–10 hrs | Chosen area | [Motorbike tour](/tours/bali-motorbike-traveling-trip) |
+| Bali motorbike tour | **450,000–800,000** promo / scooter | 8–10 hrs | Chosen area · Canggu/Jimbaran/Nusa Dua 550K | [Motorbike tour](/tours/bali-motorbike-traveling-trip) |
 | Ubud batik / silver class | **650,000** | 3 hrs | Quoted | [Workshops](/blog/ubud-workshop-classes-2026) |
 | Kintamani dirt bike | **4,100,000** | ~8 hrs | Quoted | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 
@@ -82,7 +82,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Full day Ubud tour](/tours/full-day-ubud-tour)** from **IDR 600,000** — private car, English-speaking driver, typically palace, market, Tegalalang. Entrance fees and lunch not included. **[Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour)** from **IDR 450,000** for the coastal sunset. Guides: [full-day Ubud tour](/blog/full-day-ubud-tour-guide-2026) · [Tanah Lot half day](/blog/half-day-ubud-tanah-lot-sunset-tour-2026).
 
-**[Bali Motorbike Tour](/tours/bali-motorbike-traveling-trip)** is a guided **125–160cc automatic** scooter day from **IDR 450,000** per bike (Ubud) to **IDR 800,000** (East Bali). Attraction tickets are **not** included. Pickup is at the area you choose. Ride yourself (IDP recommended) or pillion. Compare: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026).
+**[Bali Motorbike Tour](/tours/bali-motorbike-traveling-trip)** is a guided **125–160cc automatic** scooter day. Promo from **IDR 450,000** per bike (Ubud, was 550,000) to **IDR 800,000** (East Bali, was 900,000). Attraction tickets are **not** included. Pickup is at the area you choose. Shuttle from **Canggu, Jimbaran, or Nusa Dua is IDR 550,000 once per booking**. Ride yourself (IDP recommended) or pillion. Prices: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026) · compare: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026).
 
 Landing late? [DPS → Ubud private transfer](/transfers) from **IDR 700,000** per vehicle.
 
@@ -135,6 +135,73 @@ Free cancellation up to **24 hours** before start time. Full rules: [cancellatio
 `,
   },
   {
+    slug: 'bali-motorbike-tour-price-2026',
+    title: 'Bali Motorbike Tour Price 2026: Promo Rates & Canggu Shuttle',
+    seoTitle: 'Bali Motorbike Tour Price 2026 | Promo 450K',
+    excerpt:
+      '2026 Bali scooter promo from IDR 450,000 (was 550,000) per bike. East Bali 800,000 (was 900,000). Canggu, Jimbaran, Nusa Dua shuttle IDR 550,000 once per booking. WhatsApp.',
+    publishedAt: '2026-09-28',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/motorbike-tour-hero.jpg',
+    content: `
+**How much is a Bali motorbike tour in 2026?** Sekar Bali Activity’s [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) is a guided **125–160cc automatic** scooter day. **Promo from IDR 450,000** per bike for Ubud (was **IDR 550,000**). East Bali is **IDR 800,000** promo (was **IDR 900,000**). The promo is the bookable charge — we did not cut the old rates. Attraction tickets and lunch stay on you. Pickup at your chosen area sits in that promo. **Shuttle from Canggu, Jimbaran, or Nusa Dua is IDR 550,000 once per booking** — not the IDR 400,000 ATV/rafting surcharge.
+
+> **Key Takeaways**
+> - Promo **IDR 450,000–800,000 per scooter** · list is IDR 100,000 higher on every destination
+> - Bookable charge did **not** drop — Ubud still 450K, East still 800K
+> - Chosen-area pickup is in the promo · **not** free Ubud cycling pickup · **not** the IDR 400,000 adventure fee
+> - **Canggu / Jimbaran / Nusa Dua shuttle: IDR 550,000 once per booking**
+> - Ride yourself (IDP recommended) or pillion · tickets extra
+
+## 2026 promo vs list (per scooter)
+
+| Destination | Promo (you pay) | Was (list) | Typical stops |
+| --- | --- | --- | --- |
+| Ubud | **450,000** | 550,000 | Rice terrace, Ulun Petanu, Gunung Kawi, Umah Kuno, Monkey Forest |
+| Ubud waterfalls | **500,000** | 600,000 | Kanto Lampo, Tibumana, Suwat, Tukad Cepung, Tegenungan |
+| Kintamani | **600,000** | 700,000 | Sunrise view, Pura Jati Segara, optional hot spring, Penglipuran |
+| South Bali | **650,000** | 750,000 | Tanah Lot, Uluwatu, GWK, Melasti, optional Kedonganan dinner |
+| North Bali | **750,000** | 850,000 | Sangeh, Leke-Leke, Beratan Lake, Jatiluwih |
+| East Bali | **800,000** | 900,000 | Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach |
+
+Included: automatic scooter, fuel, helmet, bottled water, English-speaking guide, pickup at your chosen area. **Not included:** temple / waterfall tickets, lunch, gratuities, the Canggu / Jimbaran / Nusa Dua shuttle.
+
+## Canggu, Jimbaran & Nusa Dua shuttle — IDR 550,000
+
+If we collect you from **Canggu, Jimbaran, or Nusa Dua**, add **IDR 550,000 once per booking**. That is a flat shuttle upsell for those three areas only.
+
+| Pickup | Charge |
+| --- | --- |
+| Chosen area already on the ride (Ubud and other ride-area pins) | In the scooter promo |
+| **Canggu, Jimbaran, or Nusa Dua shuttle** | **IDR 550,000** once per booking |
+| ATV / rafting / tubing / Swing Heaven / Griya Beji hotel pickup | Different product — IDR 400,000 or self-meet |
+| Private Mount Batur jeep | Island-wide pickup already in the jeep price |
+
+Tick **Canggu / Jimbaran / Nusa Dua shuttle** in the booking form, or skip it if your pin is already in the ride area. Policy context: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
+
+## Scooter vs private car vs ATV
+
+| | [Motorbike trip](/tours/bali-motorbike-traveling-trip) | [Full-day car](/tours/full-day-ubud-tour) | [Sedang ATV](/tours/bali-atv-adventure) |
+| --- | --- | --- | --- |
+| From price | **450,000 promo** / scooter (was 550,000) | **600,000** / car | **750,000** / rider |
+| You ride? | Yes, or pillion | No — driver | Yes, on a jungle-mud quad |
+| Tickets | Extra | Extra | Arena day — lunch included |
+| Pickup | Chosen area · Canggu / Jimbaran / Nusa Dua **550,000** | Hotel start | IDR 400,000 or self-meet |
+| Best when | You want the road and photos | Kids, heat, or no license | You want mud, not public roads |
+
+An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive. Side-by-side: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026). The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine.
+
+## How to book
+
+1. Open [Bali Motorbike Traveling Trip](/tours/bali-motorbike-traveling-trip)
+2. Pick the destination · tick the Canggu / Jimbaran / Nusa Dua shuttle only if you need it
+3. WhatsApp **date, pickup pin, destination, ride or pillion, guest count**
+4. We confirm the scooter promo plus any 550K shuttle — **no payment to inquire**
+
+**Ready?** Book the [motorbike money page](/tours/bali-motorbike-traveling-trip) or keep the [private car](/tours/full-day-ubud-tour) if you want air-con.
+`,
+  },
+  {
     slug: 'bali-motorbike-tour-vs-private-driver-2026',
     title: 'Bali Motorbike Tour vs Private Driver 2026: Scooter or Car?',
     seoTitle: 'Bali Motorbike vs Driver | From 450K',
@@ -151,6 +218,7 @@ Free cancellation up to **24 hours** before start time. Full rules: [cancellatio
 > - Private car: **from IDR 600,000** · ~10 hours · English-speaking driver
 > - Tickets and lunch stay on you for both
 > - Motorbike pickup is at the **area you choose** — not the IDR 400,000 ATV surcharge
+> - **Canggu / Jimbaran / Nusa Dua shuttle: IDR 550,000 once per booking**
 > - Not Sedang ATV and not a dirt-bike enduro
 
 ## 2026 scooter prices (per bike)
@@ -164,7 +232,7 @@ Free cancellation up to **24 hours** before start time. Full rules: [cancellatio
 | North Bali | **750,000** | Sangeh, Leke-Leke, Beratan Lake, Jatiluwih |
 | East Bali | **800,000** | Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach |
 
-Included: automatic scooter, fuel, helmet, bottled water, English-speaking guide, pickup at your chosen area. **Not included:** temple / waterfall tickets, lunch, gratuities.
+Included: automatic scooter, fuel, helmet, bottled water, English-speaking guide, pickup at your chosen area. **Not included:** temple / waterfall tickets, lunch, gratuities, Canggu / Jimbaran / Nusa Dua shuttle (IDR 550,000 once per booking).
 
 ## Scooter vs private car vs ATV
 
@@ -173,10 +241,10 @@ Included: automatic scooter, fuel, helmet, bottled water, English-speaking guide
 | From price | **450,000** / scooter | **600,000** / car | **750,000** / rider |
 | You ride? | Yes, or pillion | No — driver | Yes, on a jungle-mud quad |
 | Tickets | Extra | Extra | Arena day — lunch included |
-| Pickup | Chosen area | Hotel start | IDR 400,000 or self-meet |
+| Pickup | Chosen area · Canggu / Jimbaran / Nusa Dua **550,000** | Hotel start | IDR 400,000 or self-meet |
 | Best when | You want the road and photos | Kids, heat, or no license | You want mud, not public roads |
 
-An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive. The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine from this scooter day.
+An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive. The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine from this scooter day. Promo table + Canggu shuttle: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026).
 
 ## How to book
 

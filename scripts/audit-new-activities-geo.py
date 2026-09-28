@@ -39,9 +39,10 @@ print(f"TOURS found: {len(uniq)}")
 print("slug | geo keywords llms summary footer guides hub")
 gaps = []
 for slug in uniq:
+    const_names = [name for name, value in const_map.items() if value == slug]
     row = {
         "slug": slug,
-        "geo": slug in geo_src or slug in park_geo,
+        "geo": slug in geo_src or slug in park_geo or any(name in geo_src for name in const_names),
         "keywords": slug in kw_src,
         "llms": slug in llms_src,
         "summary": f"slug: '{slug}'" in llms_src or f'slug: "{slug}"' in llms_src,

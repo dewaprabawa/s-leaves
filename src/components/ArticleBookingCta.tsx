@@ -76,6 +76,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/book',
     secondaryLabel: 'WhatsApp the date',
   },
+  'bali-motorbike-tour-vs-private-driver-2026': {
+    headline: 'Book the guided motorbike trip',
+    body: 'From IDR 450,000 per 125–160cc scooter. Tickets not included. Pickup at your chosen area — or keep the private car from IDR 600,000.',
+    primaryHref: '/tours/bali-motorbike-traveling-trip',
+    primaryLabel: 'View motorbike trip',
+    secondaryHref: '/tours/full-day-ubud-tour',
+    secondaryLabel: 'View private car day',
+  },
   'half-day-ubud-tanah-lot-sunset-tour-2026': {
     headline: 'Book the Tanah Lot sunset half day',
     body: 'From IDR 450,000 · private car · about 6 hours. Entrance fees and dinner not included.',

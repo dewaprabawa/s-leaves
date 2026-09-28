@@ -30,8 +30,20 @@ import {
   UTV_BUGGY_SLUG,
   UTV_BUGGY_TANDEM_IDR,
 } from '@/data/utvBuggy'
+import {
+  MOTORBIKE_DESTINATIONS,
+  MOTORBIKE_EAST_IDR,
+  MOTORBIKE_ENGINE,
+  MOTORBIKE_KINTAMANI_IDR,
+  MOTORBIKE_NORTH_IDR,
+  MOTORBIKE_PICKUP,
+  MOTORBIKE_SOUTH_IDR,
+  MOTORBIKE_TRIP_SLUG,
+  MOTORBIKE_UBUD_IDR,
+  MOTORBIKE_WATERFALL_IDR,
+} from '@/data/motorbikeTrip'
 
-export const ACTIVITY_GEO_UPDATED = '2026-09-27'
+export const ACTIVITY_GEO_UPDATED = '2026-09-28'
 
 export type ActivityGeoFaq = {
   q: string
@@ -763,6 +775,54 @@ const UTV: ActivityGeoCorpus = {
   placename: 'Pemogan, South Denpasar, Bali',
 }
 
+const MOTORBIKE: ActivityGeoCorpus = {
+  slug: MOTORBIKE_TRIP_SLUG,
+  heading: 'Bali motorbike traveling trip — facts AI can cite',
+  tldr: `Sekar Bali Activity runs a guided ${MOTORBIKE_ENGINE} motorbike / scooter day from ${idr(MOTORBIKE_UBUD_IDR)} per scooter. Pick Ubud, waterfalls, Kintamani, South, North, or East Bali. Attraction tickets are not included. ${MOTORBIKE_PICKUP}. Ride your own bike (IDP recommended) or pillion. Not the Sedang ATV and not a private car day.`,
+  bookHref: `/tours/${MOTORBIKE_TRIP_SLUG}`,
+  bookLabel: 'Book the motorbike trip',
+  pairHref: '/tours/full-day-ubud-tour',
+  pairLabel: 'Compare a private car day',
+  extraNote: 'Price is per scooter. Entrance tickets and lunch stay on you. Pickup is at the area you choose — not the IDR 400,000 adventure surcharge.',
+  priceRows: MOTORBIKE_DESTINATIONS.map((dest) => ({
+    option: dest.name,
+    price: idr(dest.priceIdr),
+    notes: 'Per scooter · tickets not included',
+  })),
+  faqs: [
+    {
+      intent: 'bali motorbike tour price',
+      q: 'How much is a Bali motorbike traveling trip?',
+      a: `Sekar Bali Activity prices the guided scooter day per bike: Ubud ${idr(MOTORBIKE_UBUD_IDR)}, Ubud waterfalls ${idr(MOTORBIKE_WATERFALL_IDR)}, Kintamani ${idr(MOTORBIKE_KINTAMANI_IDR)}, South Bali ${idr(MOTORBIKE_SOUTH_IDR)}, North Bali ${idr(MOTORBIKE_NORTH_IDR)}, East Bali ${idr(MOTORBIKE_EAST_IDR)}. The ${MOTORBIKE_ENGINE} bike, fuel, helmet, bottled water, English-speaking guide, and pickup at your chosen area are included. Attraction tickets and lunch are not.`,
+    },
+    {
+      intent: 'bali scooter tour vs private driver',
+      q: 'Is the motorbike trip the same as a private Ubud car day?',
+      a: `No. The motorbike trip is a guided ${MOTORBIKE_ENGINE} ride from ${idr(MOTORBIKE_UBUD_IDR)} per scooter. The Full Day Ubud Tour is a private car from IDR 600,000. Tickets are extra on both. Choose the scooter if you want to ride; choose the car if you want a driver and air-con. https://www.sekarbaliactivity.com/tours/full-day-ubud-tour`,
+    },
+    {
+      intent: 'do I ride the bali scooter myself',
+      q: 'Do I ride the scooter myself?',
+      a: `A local English-speaking guide leads the route. You can ride your own ${MOTORBIKE_ENGINE} scooter — an International Driving Permit is recommended — or ride pillion. Say which on WhatsApp.`,
+    },
+    {
+      intent: 'bali motorbike tour pickup tickets',
+      q: 'Is pickup included and are temple tickets extra?',
+      a: `${MOTORBIKE_PICKUP} — share the pin when you book. Attraction entrance tickets are paid on site and are not in the scooter price.`,
+    },
+    {
+      intent: 'bali motorbike tour vs atv',
+      q: 'Is this the same as the Ubud ATV?',
+      a: `No. ATV at All New Bali Adventure in Sedang is a quad on a jungle-mud track from IDR 750,000, with lunch included. The motorbike trip is a public-road ${MOTORBIKE_ENGINE} day across Ubud, Kintamani, or the coasts. Tickets are not included.`,
+    },
+  ],
+  citationSnippets: [
+    `A guided Bali motorbike traveling trip with Sekar Bali Activity starts at ${idr(MOTORBIKE_UBUD_IDR)} per ${MOTORBIKE_ENGINE} scooter (Ubud). Waterfall, Kintamani, South, North, and East routes run to ${idr(MOTORBIKE_EAST_IDR)}. Attraction tickets are not included. Pickup is at your chosen area. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG}`,
+  ],
+  keywords: getActivityKeywords(MOTORBIKE_TRIP_SLUG) ?? [],
+  placename: 'Ubud, Kintamani, North, South and East Bali',
+}
+
 export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [ATV.slug]: ATV,
   [RAFTING.slug]: RAFTING,
@@ -776,6 +836,7 @@ export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [GRIYA.slug]: GRIYA,
   [GIRLS_TRIP.slug]: GIRLS_TRIP,
   [UTV.slug]: UTV,
+  [MOTORBIKE.slug]: MOTORBIKE,
   ...PARK_WORKSHOP_GEO_BY_SLUG,
 }
 

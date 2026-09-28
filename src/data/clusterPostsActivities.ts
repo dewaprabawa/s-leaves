@@ -6,7 +6,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
     title: 'Things to Do Near Ubud 2026: Prices, Pickup & What to Book',
     seoTitle: 'Things to Do Near Ubud 2026 | Day Picks',
     excerpt:
-      'Every Sekar Bali Activity near Ubud with 2026 IDR prices — cooking, cycling, ATV, rafting, tubing, Swing Heaven, Griya Beji, Batur jeep, park tickets, workshops, and private day tours. WhatsApp booking, no deposit.',
+      'Every Sekar Bali Activity near Ubud with 2026 IDR prices — cooking, cycling, ATV, rafting, tubing, Swing Heaven, Griya Beji, Batur jeep, UTV, motorbike trip, park tickets, workshops, and private day tours. WhatsApp booking, no deposit.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/og-cover.jpg',
@@ -44,6 +44,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
 | Bali canyoning | **1,850,000** | Half / full day | Quoted | [Canyoning](/tours/canyoning) |
 | Jungle buggies 3 laps | **1,120,000** | ~2 hrs | Quoted | [Buggies](/tours/jungle-buggies-complete-3-laps-tour) |
 | UTV Buggy Bali Adventure | **1,200,000** single · **1,500,000** tandem | 1 hr / 7 km | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
+| Bali motorbike traveling trip | **450,000–800,000** / scooter | 8–10 hrs | Chosen area | [Motorbike trip](/tours/bali-motorbike-traveling-trip) |
 | Ubud batik / silver class | **650,000** | 3 hrs | Quoted | [Workshops](/blog/ubud-workshop-classes-2026) |
 | Kintamani dirt bike | **4,100,000** | ~8 hrs | Quoted | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 
@@ -81,6 +82,8 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Full day Ubud tour](/tours/full-day-ubud-tour)** from **IDR 600,000** — private car, English-speaking driver, typically palace, market, Tegalalang. Entrance fees and lunch not included. **[Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour)** from **IDR 450,000** for the coastal sunset. Guides: [full-day Ubud tour](/blog/full-day-ubud-tour-guide-2026) · [Tanah Lot half day](/blog/half-day-ubud-tanah-lot-sunset-tour-2026).
 
+**[Bali Motorbike Traveling Trip](/tours/bali-motorbike-traveling-trip)** is a guided **125–160cc automatic** scooter day from **IDR 450,000** per bike (Ubud) to **IDR 800,000** (East Bali). Attraction tickets are **not** included. Pickup is at the area you choose. Compare: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026).
+
 Landing late? [DPS → Ubud private transfer](/transfers) from **IDR 700,000** per vehicle.
 
 ## Parks, workshops & dirt bikes (tickets we book)
@@ -112,6 +115,8 @@ These are **park or workshop tickets we confirm on WhatsApp** — not our Sedang
 | Private holy-spring purification | [Tirta Empu / Beji melukat](/tours/tirta-empu-purification) |
 | Ethical coffee, 90 minutes | [Umah Kuno](/tours/luwak-coffee-plantation) |
 | Classic Ubud highlights | [Full-day car](/tours/full-day-ubud-tour) |
+| Ride a scooter with a guide | [Motorbike trip](/tours/bali-motorbike-traveling-trip) |
+| 1-hour sit-in UTV (not ATV) | [UTV buggy](/tours/utv-buggy-bali-adventure) |
 | Sunset at the sea temple | [Tanah Lot half day](/tours/half-day-ubud-tanah-lot-tour) |
 | Family bird-park day | [Bali Bird Park](/tours/bali-bird-park) |
 | Safari without an elephant ride | [Jungle Hopper](/tours/bali-safari-and-marine-park) |
@@ -127,6 +132,59 @@ These are **park or workshop tickets we confirm on WhatsApp** — not our Sedang
 Free cancellation up to **24 hours** before start time. Full rules: [cancellation policy](/cancellation-policy). Pickup rules: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
 
 **Ready?** [Browse experiences](/experiences) or [message WhatsApp](/book) with the row you want from the table above.
+`,
+  },
+  {
+    slug: 'bali-motorbike-tour-vs-private-driver-2026',
+    title: 'Bali Motorbike Tour vs Private Driver 2026: Scooter or Car?',
+    seoTitle: 'Bali Motorbike vs Driver | From 450K',
+    excerpt:
+      'Guided Bali scooter day from IDR 450,000 per bike versus a private Ubud car from IDR 600,000. Tickets extra on both. WhatsApp booking.',
+    publishedAt: '2026-09-28',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/motorbike-tour-hero.jpg',
+    content: `
+**Should you book a Bali motorbike traveling trip or a private driver?** Sekar Bali Activity sells both. The [motorbike trip](/tours/bali-motorbike-traveling-trip) is a guided **125–160cc automatic** scooter day from **IDR 450,000** per bike. The [Full Day Ubud Tour](/tours/full-day-ubud-tour) is a private car from **IDR 600,000**. Attraction tickets are **not** included on either.
+
+> **Key Takeaways**
+> - Motorbike: **IDR 450,000–800,000 per scooter** · 8–10 hours · ride or pillion
+> - Private car: **from IDR 600,000** · ~10 hours · English-speaking driver
+> - Tickets and lunch stay on you for both
+> - Motorbike pickup is at the **area you choose** — not the IDR 400,000 ATV surcharge
+> - Not Sedang ATV and not a dirt-bike enduro
+
+## 2026 scooter prices (per bike)
+
+| Destination | IDR / scooter | Typical stops |
+| --- | --- | --- |
+| Ubud | **450,000** | Rice terrace, Ulun Petanu, Gunung Kawi, Umah Kuno, Monkey Forest |
+| Ubud waterfalls | **500,000** | Kanto Lampo, Tibumana, Suwat, Tukad Cepung, Tegenungan |
+| Kintamani | **600,000** | Sunrise view, Pura Jati Segara, optional hot spring, Penglipuran |
+| South Bali | **650,000** | Tanah Lot, Uluwatu, GWK, Melasti, optional Kedonganan dinner |
+| North Bali | **750,000** | Sangeh, Leke-Leke, Beratan Lake, Jatiluwih |
+| East Bali | **800,000** | Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach |
+
+Included: automatic scooter, fuel, helmet, bottled water, English-speaking guide, pickup at your chosen area. **Not included:** temple / waterfall tickets, lunch, gratuities.
+
+## Scooter vs private car vs ATV
+
+| | [Motorbike trip](/tours/bali-motorbike-traveling-trip) | [Full-day car](/tours/full-day-ubud-tour) | [Sedang ATV](/tours/bali-atv-adventure) |
+| --- | --- | --- | --- |
+| From price | **450,000** / scooter | **600,000** / car | **750,000** / rider |
+| You ride? | Yes, or pillion | No — driver | Yes, on a jungle-mud quad |
+| Tickets | Extra | Extra | Arena day — lunch included |
+| Pickup | Chosen area | Hotel start | IDR 400,000 or self-meet |
+| Best when | You want the road and photos | Kids, heat, or no license | You want mud, not public roads |
+
+An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive.
+
+## How to book
+
+1. Open [Bali Motorbike Traveling Trip](/tours/bali-motorbike-traveling-trip)
+2. WhatsApp **date, pickup pin, destination, ride or pillion, guest count**
+3. We confirm the scooter total — **no payment to inquire**
+
+**Ready?** Book the [motorbike money page](/tours/bali-motorbike-traveling-trip) or keep the [private car](/tours/full-day-ubud-tour) if you want air-con.
 `,
   },
   {
@@ -179,6 +237,7 @@ Want quieter paddies instead of Tegalalang crowds? Swap the afternoon for [Pejen
 | [Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) | 450,000 | You need a 6-hour coastal sunset |
 | [Cycling + Tumang cooking](/book?activity=combo-cycling-cooking) | Cycling 750K + cooking 450K | You want village + kitchen, not temples |
 | [Swing Heaven + Tumang cooking](/book?activity=combo-swing-cooking) | Swing 530K + cooking 450K | You want Ayung jungle photos + kitchen |
+| [Motorbike traveling trip](/tours/bali-motorbike-traveling-trip) | 450,000 / scooter | You want to ride, not sit in the car |
 
 Temple dress: shoulders and knees covered. Short [sarong guide](/blog/bali-temple-dress-code).
 

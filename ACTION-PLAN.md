@@ -1,65 +1,53 @@
-# Action Plan — SEO / GEO / CTA (Sekar Bali Activity)
+# Action Plan — New Activities SEO / GEO
 
-**Date:** 2026-09-25  
-**Live score:** 78/100 · **After this PR:** 84/100  
-**Conversion goal:** WhatsApp booking with prefilled details
+**Date:** 2026-09-28  
+**Live score (new-activity surfaces):** 62/100 · **After this PR:** 84/100  
+**Conversion goal:** WhatsApp booking with prefilled details (itinerary stays consultation-only)
 
 ## 1. Immediate blockers
 
-None. The site is indexable, HTTPS, self-canonical, and allows Google + AI crawlers.
+None for indexing. HTTPS, self-canonical, sitemap, and AI crawlers are healthy.
 
-## 1b. Why “All New Bali Adventure” dropped from #2 (2026-09-25)
+The **commercial GEO blocker** was the motorbike money page shipping without agent-readable facts. That is fixed in this PR — it is not live until deploy.
 
-**Finding (Confirmed):** For the venue query, Google still puts [allnewbaliadventure.com](https://allnewbaliadventure.com/) first. Sekar used to sit immediately under that result. Live titles after the cannibalization pass no longer name the arena on the **money page**:
+## 2. Done in this revision (2026-09-28)
 
-| URL | Live title | Match for “All New Bali Adventure”? |
-|-----|------------|-------------------------------------|
-| Official arena | All New Bali Adventure – Beat the land… | Yes — brand homepage |
-| `/tours/bali-atv-adventure` | Private ATV Ride Ubud \| From IDR 750K | **No** — title/H1 lost the venue |
-| `/` | Sekar Bali Activity \| Jeep, Cooking & ATV Ubud | No — jeep-led on purpose |
-| Location guide | All New Bali Adventure \| ATV Arena Ubud | Yes — but thinner, cannot inherit the tour’s #2 slot overnight |
-| Klook / xtra Trips / Gusti | “All New Bali Adventure ATV Ride…” | Exact-match titles filled the gap |
-
-`getBlogKeywords()` also stripped the head term `All New Bali Adventure` from the location guide. Aggregators with exact-match titles + KeepAll Bali Adventure (similar name) now occupy the slots under the official site.
-
-**Fix in this revision:** Tour SERP + H1 put the venue back (`ATV All New Bali Adventure | From IDR 750K` / `ATV at All New Bali Adventure near Ubud`). Location guide keeps the *where/pin* title and gets the venue keywords + official-site citation. Homepage title stays jeep-led so `/` does not recannibalize ATV.
-
-## 2. Done in this revision (2026-09-25)
-
-1. **Split `GEO_QUICK_ANSWER`** — 53-word “X is…” definition (40–60 window). Full inventory lives in `GEO_INVENTORY` for `llms-full.txt` / `pricing.md` only.
-2. **Lead prices** — `GEO_LEAD_BULLETS` on homepage GEO block, `/llms.txt`, `/llms-full.txt`, and `/pricing.md` (jeep / cooking / cycling / ATV / park tickets).
-3. **Visible TripAdvisor citation** — homepage GEO block + `llms.txt` link to Tumang Traveler’s Choice 2026. (`citation_readiness.py` still scores tripadvisor as non-trusted — gov/edu/wikipedia only.)
-4. **Article CTAs** — 77/77 blog slugs mapped to the matching tour. Park / workshop / dirt-bike copy keeps **quoted pickup**.
-5. **Person schema** — Chef Wayan Suryana JSON-LD + `instructor` on `/tours/balinese-cooking-class`.
-6. **`GEO_UPDATED` / Website `dateModified`** — 2026-09-25.
-
-Earlier in this PR (2026-09-24): header Book CTA, `/contact` nav, hours 08:00–20:00, WhatsApp label match, `/book` checkout-only titles, anti-cannibalization keyword jobs.
+1. **Motorbike GEO stack** — `motorbikeTrip.ts` constants; 54-word TLDR; priced destination table; five self-contained Q&As; citation snippet.
+2. **Keywords** — first-class `KEYWORD_CLUSTERS['bali-motorbike-traveling-trip']` (head / book / compare). Not park-workshop.
+3. **Agent files** — `GEO_PRICING`, `GEO_TOUR_SUMMARIES`, `GEO_INVENTORY`, pickup policy, things-to-do FAQ, comparison table in `GEO_COMPARISONS`.
+4. **UTV inventory** — Bali Buggy Adventures + 1.2M / 1.5M added to `GEO_INVENTORY` (was summaries-only).
+5. **Internal links** — footer, layout, `SITE_NAV_LINKS`, host note, related guides, hub table + choose row.
+6. **Comparison spoke** — `/blog/bali-motorbike-tour-vs-private-driver-2026` with mapped CTA (motorbike vs full-day car vs ATV). Head terms stay on the money page.
+7. **Schema** — Organization `priceRange` `IDR 300000 - IDR 4100000`; Website `dateModified` 2026-09-28.
+8. **Sitemap** — motorbike is a money-page priority; spoke lastmod override 2026-09-28. `assertSitemapInventory` passes (123 locs).
 
 ## 3. Still open
 
 | Priority | Action | Why | Effort |
 |----------|--------|-----|--------|
 | High | Keep new title jobs when adding cluster posts | Prevents tour vs blog cannibalization | Ongoing |
-| Medium | Replace Unsplash jeep frames with operator photos | Flagship offer still stock | Low (needs files) |
-| Medium | Trim homepage above-fold catalog; keep GEO tables below | Heavy DOM / image count | Medium |
-| Medium | Re-run PageSpeed mobile on `/`, ATV, jeep after deploy | CWV unknown this run | Low |
-| Low | Remove unused GetYourGuide button branches | Dead aggregator CTA code | Low |
-| Low | Named host bylines on remaining cluster articles | EEAT 66 | Medium |
+| Medium | Re-run PageSpeed mobile on motorbike, UTV, Safari after deploy | CWV unknown this run | Low |
+| Medium | Optional footer links for Taro dinner / Tabanan dirt bike | Discoverability only — GEO already exists | Low |
+| Low | Named practitioner bylines on workshop pages | EEAT | Medium |
+| Low | First-party video / YouTube mentions | GEO multi-modal | High |
 
 ## 4. Do not do
 
 - Do not add FAQPage schema (commercial restriction; FAQ rich results gone May 2026).
 - Do not add HowTo schema (deprecated).
-- Do not invent free pickup or the IDR 400K surcharge on park / workshop / dirt-bike tickets — pickup is **quoted**.
+- Do not invent free Ubud pickup or the IDR 400K surcharge on park / workshop / dirt-bike / UTV tickets — pickup is **quoted**.
+- Do not invent free-Ubud cycling pickup on the motorbike trip — pickup is **at the chosen area**.
+- Do not claim the motorbike trip is Sedang ATV, a dirt-bike enduro, or a private car day.
 - Do not add a booking popup on private itinerary pages (consultation only).
 - Do not buy or engineer AI citations.
-- Do not create `sitemap_index.xml` just to satisfy the checker — `/sitemap.xml` is the inventory.
 - Do not give `/book`, `/experiences`, or a blog the same title pattern as a `/tours/[slug]` money page.
-- Do not put the 257-word inventory back into `GEO_QUICK_ANSWER`.
+- Do not put the full inventory sentence back into `GEO_QUICK_ANSWER`.
 
 ## 5. After deploy (ops)
 
-1. Request indexing on `/`, `/llms.txt`, `/tours/balinese-cooking-class`, jeep / ATV money pages.
-2. Confirm GBP hours = 08:00–20:00.
-3. Manual GEO prompts: “Is breakfast cooked in the Batur jeep?” → **No, sit-down meal after the viewpoint**. “Is hotel pickup included on ATV?” → **IDR 400,000 or self-meet**. “What is Sekar Bali Activity?” → should now quote the 53-word definition, not the inventory dump.
-4. Click a park-cluster blog CTA and confirm pickup copy still says **quoted**.
+1. Request indexing on `/tours/bali-motorbike-traveling-trip`, `/blog/bali-motorbike-tour-vs-private-driver-2026`, `/llms.txt`, `/pricing.md`, `/tours/utv-buggy-bali-adventure`.
+2. Manual GEO prompts:
+   - “How much is a Bali motorbike tour from Ubud?” → **IDR 450,000 per scooter; tickets not included; pickup at chosen area**.
+   - “Is the motorbike trip the same as a private driver?” → **No. Car from IDR 600,000.**
+   - “Is UTV the Ubud ATV?” → **No. Pemogan 7 km UTV, lunch included, 1.2M / 1.5M.**
+3. Click the new blog CTA and confirm it lands on the motorbike money page, not generic `/book`.

@@ -1,11 +1,11 @@
 # Product Marketing Context
 
-**Document version:** v2.12
-**Last updated:** 2026-09-27
+**Document version:** v2.13
+**Last updated:** 2026-09-28
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — adventure, village, food, and day tours with clear IDR pricing and WhatsApp booking.
-**What it does:** Sekar Bali Activity sells curated Ubud-area experiences: ATV (All New Bali Adventure), river rafting/tubing, Pejeng ricefield cycling, a no-hike Mount Batur sunrise 4×4 jeep near Kintamani, Tumang Bali Cooking Class, coffee tasting, private day tours, and same-day combos — with transparent tier pricing and clear hotel-pickup rules.
+**What it does:** Sekar Bali Activity sells curated Ubud-area experiences: ATV (All New Bali Adventure), river rafting/tubing, Pejeng ricefield cycling, a no-hike Mount Batur sunrise 4×4 jeep near Kintamani, Tumang Bali Cooking Class, coffee tasting, private day tours, a guided motorbike traveling trip, UTV at Bali Buggy Adventures, and same-day combos — with transparent tier pricing and clear hotel-pickup rules.
 **Product category:** Bali travel activities / Ubud tours & experiences
 **Product type:** Local tour operator / service business
 **Business model:** Direct WhatsApp booking; pay on confirm/experience; packages from ~IDR 450K–1.35M; rafting and canyon tubing IDR 500K list / 450K for 2+; pickup add-ons (jeep pickup included)
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.13 (2026-09-28) — SEO/GEO now covers the **Bali Motorbike Traveling Trip** (from IDR 450,000 / scooter; tickets not included; pickup at chosen area) plus UTV in `GEO_INVENTORY` / `llms.txt`. Motorbike is not ATV and not a private car day.
 - v2.12 (2026-09-27) — Added **UTV at Bali Buggy Adventures** (Pemogan, South Denpasar — https://balibuggyadventures.com). About 1 hour / 7 km automatic UTV: single **IDR 1,200,000**, tandem **IDR 1,500,000**. Lunch included. Driver 17+ / passenger 6+. Pickup quoted. Not Sedang ATV and not the imported jungle-buggies 3-lap ticket.
 - v2.11 (2026-09-23) — GEO/SEO now covers the imported park / workshop tickets: tour-page answer blocks, llms.txt / pricing.md, and comparison articles (Safari packages, Zoo vs Safari vs Taro, canyoning vs tubing vs buggies, Ubud workshops, dirt bike vs Batur jeep, Bird Park from Ubud). Pickup on those tickets is **quoted** — do not invent free pickup or the IDR 400K adventure surcharge.
 - v2.10 (2026-09-23) — Imported park / workshop tickets we can book (Bird Park, Bali Zoo mud fun, Bali Safari packages, Taro lodge, canyoning, jungle buggies, dirt bike, Ubud craft classes). Source from-price **+ IDR 200,000**. Skipped visa, Nusa Penida / island fastboats, scuba/snorkel boats, and our existing ATV + rafting SKUs.

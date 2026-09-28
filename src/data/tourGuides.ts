@@ -395,6 +395,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'full-day-ubud-tour': [
     {
+      title: 'Motorbike trip vs private driver',
+      href: '/blog/bali-motorbike-tour-vs-private-driver-2026',
+      blurb: 'Scooter from IDR 450K vs this car from IDR 600K.',
+    },
+    {
       title: 'Full day Ubud tour guide 2026',
       href: '/blog/full-day-ubud-tour-guide-2026',
       blurb: 'From IDR 600K — what’s included vs paid on site.',
@@ -589,6 +594,12 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Griya Beji Waterfall', href: '/tours/griya-beji-waterfall', blurb: 'Actual waterfall melukat if you wanted ritual.' },
     { title: 'Lontar weaving', href: '/tours/lontar-weaving-class', blurb: 'Same palm family — offering baskets.' },
   ],
+  'bali-motorbike-traveling-trip': [
+    { title: 'Motorbike trip vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026', blurb: 'Scooter from IDR 450K vs private car from IDR 600K — tickets extra on both.' },
+    { title: 'Full day Ubud car', href: '/tours/full-day-ubud-tour', blurb: 'Air-con driver day if you do not want to ride.' },
+    { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle-mud quad — a different machine, lunch included.' },
+    { title: 'Things to do near Ubud 2026', href: '/blog/things-to-do-near-ubud-2026', blurb: 'See the scooter next to cooking, jeep, and park tickets.' },
+  ],
   'half-day-ubud-tanah-lot-tour': [
     {
       title: 'Tanah Lot sunset half-day 2026',
@@ -690,6 +701,10 @@ export const TOUR_HOST_NOTES: Record<
   'utv-buggy-bali-adventure': {
     title: 'From our booking desk',
     body: 'Say single or tandem on WhatsApp — single is one rider at IDR 1,200,000, tandem is two on one buggy at IDR 1,500,000. The track is Bali Buggy Adventures in Pemogan, South Denpasar (Gg. Merta Shanti No.20 A). The driver must be 17+ and able to drive; a passenger can be 6+. About 1 hour on a 7 km automatic track, lunch included. Pickup is quoted.',
+  },
+  'bali-motorbike-traveling-trip': {
+    title: 'From our scooter guides',
+    body: 'Say the destination and whether you ride or go pillion. The published price is per 125–160cc automatic scooter — Ubud from IDR 450,000, East Bali IDR 800,000. Temple and waterfall tickets stay on you. We meet at the area you choose, not with the IDR 400,000 ATV pickup surcharge.',
   },
 }
 

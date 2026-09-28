@@ -111,8 +111,17 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   dayTour: [
     { title: 'Full day Ubud tour guide', href: '/blog/full-day-ubud-tour-guide-2026' },
     { title: 'Tanah Lot sunset half day', href: '/blog/half-day-ubud-tanah-lot-sunset-tour-2026' },
+    { title: 'Motorbike vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026' },
     { title: 'Book full-day Ubud', href: '/tours/full-day-ubud-tour' },
     { title: 'Book Tanah Lot sunset', href: '/tours/half-day-ubud-tanah-lot-tour' },
+    { title: 'Book motorbike trip', href: '/tours/bali-motorbike-traveling-trip' },
+  ],
+  motorbike: [
+    { title: 'Motorbike vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026' },
+    { title: 'Book the motorbike trip', href: '/tours/bali-motorbike-traveling-trip' },
+    { title: 'Book the private car day', href: '/tours/full-day-ubud-tour' },
+    { title: 'Sedang ATV (different machine)', href: '/tours/bali-atv-adventure' },
+    HUB,
   ],
   girlsTrip: [
     { title: '6-day Private Bali itinerary', href: '/blog/bali-6-day-girls-trip-itinerary-2026' },
@@ -224,6 +233,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'how-to-spot-ethical-luwak-coffee-in-bali': 'coffee',
   'full-day-ubud-tour-guide-2026': 'dayTour',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'dayTour',
+  'bali-motorbike-tour-vs-private-driver-2026': 'motorbike',
   'bali-6-day-girls-trip-itinerary-2026': 'girlsTrip',
   'bali-family-private-itinerary-2026': 'girlsTrip',
   'bali-private-itinerary-what-we-book-vs-you-book': 'girlsTrip',
@@ -313,7 +323,13 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
   dayTour: [
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
     { title: 'Pejeng cycling (village, not Tegalalang crowds)', href: '/tours/ubud-ricefield-cycling-tour' },
+    { title: 'Motorbike traveling trip', href: '/tours/bali-motorbike-traveling-trip' },
     { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
+    HUB,
+  ],
+  motorbike: [
+    { title: 'Full-day Ubud car', href: '/tours/full-day-ubud-tour' },
+    { title: 'Sedang ATV', href: '/tours/bali-atv-adventure' },
     HUB,
   ],
   girlsTrip: [

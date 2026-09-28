@@ -33,6 +33,7 @@ export type ActivityKeywordSlug =
   | 'swing-heaven-bali'
   | 'griya-beji-waterfall'
   | 'bali-private-itinerary'
+  | 'bali-motorbike-traveling-trip'
 
 export type KeywordCluster = {
   /** What travelers type first (H1 / title language). */
@@ -339,6 +340,23 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Bali itinerary we book vs you book',
     ],
   },
+  'bali-motorbike-traveling-trip': {
+    head: [
+      'Bali motorbike tour',
+      'Bali scooter tour Ubud',
+      'guided motorbike trip Bali',
+    ],
+    book: [
+      'Bali motorbike tour price',
+      'Bali scooter tour from Ubud',
+      'Ubud motorbike traveling trip',
+      'Bali scooter day trip price',
+    ],
+    compare: [
+      'Bali motorbike tour vs private driver',
+      'Bali scooter tour vs ATV',
+    ],
+  },
 }
 
 export function uniqueKeywords(terms: string[]): string[] {
@@ -371,6 +389,7 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'swing-heaven-bali': flattenCluster(KEYWORD_CLUSTERS['swing-heaven-bali']),
   'griya-beji-waterfall': flattenCluster(KEYWORD_CLUSTERS['griya-beji-waterfall']),
   'bali-private-itinerary': flattenCluster(KEYWORD_CLUSTERS['bali-private-itinerary']),
+  'bali-motorbike-traveling-trip': flattenCluster(KEYWORD_CLUSTERS['bali-motorbike-traveling-trip']),
 }
 
 export const COMBO_KEYWORDS = [
@@ -409,6 +428,8 @@ export const NICHE_KEYWORDS = [
   'Kintamani dirt bike',
   'jungle buggies Bali',
   'UTV buggy Bali',
+  'Bali motorbike tour',
+  'Bali scooter tour Ubud',
 ] as const
 
 const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
@@ -425,6 +446,7 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
   'full-day-ubud-tour',
   'half-day-ubud-tanah-lot-tour',
   'bali-private-itinerary',
+  'bali-motorbike-traveling-trip',
 ]
 
 /** Homepage / sitewide meta — head term per activity + niche modifiers. */
@@ -685,6 +707,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'how-to-spot-ethical-luwak-coffee-in-bali': 'luwak-coffee-plantation',
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'half-day-ubud-tanah-lot-tour',
+  'bali-motorbike-tour-vs-private-driver-2026': 'bali-motorbike-traveling-trip',
   'bali-6-day-girls-trip-itinerary-2026': 'bali-private-itinerary',
   'bali-family-private-itinerary-2026': 'bali-private-itinerary',
   'bali-private-itinerary-what-we-book-vs-you-book': 'bali-private-itinerary',
@@ -851,6 +874,11 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'bali-bird-park-from-ubud-2026': [
     'Bali Bird Park price 2026',
     'Bali Bird Park from Ubud',
+  ],
+  'bali-motorbike-tour-vs-private-driver-2026': [
+    'Bali motorbike tour vs private driver',
+    'Bali scooter tour from Ubud',
+    'Bali motorbike tour price',
   ],
 }
 

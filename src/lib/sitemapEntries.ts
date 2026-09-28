@@ -26,6 +26,7 @@ const MONEY_TOUR_SLUGS = new Set([
   'bali-safari-and-marine-park',
   'canyoning',
   'utv-buggy-bali-adventure',
+  'bali-motorbike-traveling-trip',
 ])
 
 const HIGH_BLOG_SLUGS = new Set([
@@ -65,6 +66,7 @@ const HIGH_BLOG_SLUGS = new Set([
   'ubud-workshop-classes-2026',
   'kintamani-dirt-bike-vs-batur-jeep',
   'bali-bird-park-from-ubud-2026',
+  'bali-motorbike-tour-vs-private-driver-2026',
 ])
 
 /** Posts rewritten in the latest GEO pass — recrawl these even if publishedAt is older. */
@@ -106,6 +108,7 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'ubud-workshop-classes-2026': ACTIVITY_GEO_UPDATED,
   'kintamani-dirt-bike-vs-batur-jeep': ACTIVITY_GEO_UPDATED,
   'bali-bird-park-from-ubud-2026': ACTIVITY_GEO_UPDATED,
+  'bali-motorbike-tour-vs-private-driver-2026': ACTIVITY_GEO_UPDATED,
 }
 
 /** Paths Google should not receive via sitemap (redirects, noindex, or non-HTML). */

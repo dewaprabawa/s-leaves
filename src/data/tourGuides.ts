@@ -232,6 +232,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'IDR 450K promo, pickup, duration, and an honest verdict.',
     },
     {
+      title: 'Private vs shared Tumang kitchen',
+      href: '/blog/private-vs-shared-cooking-class-ubud',
+      blurb: 'Shared 450K (max 8) vs private 1M / 2M for two.',
+    },
+    {
       title: 'Vegetarian / vegan Tumang menu',
       href: '/blog/vegetarian-vegan-cooking-class-ubud',
       blurb: 'Full plant-based menu if you request it at booking.',

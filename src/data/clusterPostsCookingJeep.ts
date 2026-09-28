@@ -1,6 +1,90 @@
 /** P0 cooking + jeep cluster spokes that money pages already link to. */
 export const COOKING_JEEP_CLUSTER_POSTS = [
   {
+    slug: 'private-vs-shared-cooking-class-ubud',
+    title: 'Private vs Shared Cooking Class Ubud: 450K Promo or 1M Kitchen',
+    seoTitle: 'Private Cooking Class Ubud | 1M vs Shared 450K',
+    excerpt:
+      'Tumang shared cooking class is promo IDR 450,000 (max 8). Private is IDR 1,000,000 solo or 2,000,000 for two. Free Ubud pickup. WhatsApp booking.',
+    publishedAt: '2026-09-28',
+    author: 'Sekar Bali Activity',
+    image: '/images/cooking/stovetop-class.jpg',
+    content: `
+**Should you book a private or shared cooking class in Ubud?** We list [Tumang Bali Cooking Class](/tours/balinese-cooking-class) two ways. **Shared is promo IDR 450,000 per person** (was IDR 506,370) — **max 8 guests**, your own station, **3–4 hours** in Tumang village near Ubud. **Private is IDR 1,000,000 for one guest**, or **IDR 2,000,000 total for two**. Complimentary **Ubud-area hotel pickup** sits on both. Canggu / Seminyak transfer is a WhatsApp quote, not free. Book on WhatsApp — **no payment to inquire**.
+
+> **Key Takeaways**
+> - Shared promo **IDR 450,000** / person · was **IDR 506,370** · max **8**
+> - Private **IDR 1,000,000** (1 guest) · **IDR 2,000,000** total (2 guests)
+> - Same kitchen, Chef **Wayan Suryana**, **10+ dishes**, English, the meal you cook
+> - Free Ubud pickup on shared **and** private — outside Ubud, confirm on WhatsApp
+> - Pay private when you want the room alone; stay shared if a capped group is fine
+
+## Quick answer: what you pay
+
+| Option | Price (IDR) | What’s in the rate |
+| --- | --- | --- |
+| Shared morning (pasar tour) | **450,000** promo | 10+ dishes, max 8, Ubud pickup, rice-field walk, market |
+| Shared afternoon | **450,000** promo | Same kitchen · no pasar · rice-field walk |
+| Private (1 guest) | **1,000,000** | Exclusive kitchen · same Ubud pickup rule |
+| Private (2 guests) | **2,000,000** total | Exclusive kitchen for the couple |
+| Private (3+) | Confirm on WhatsApp | We do not publish a 3+ private sticker |
+
+Sekar Bali Activity books Tumang on one WhatsApp thread with cycling and other Ubud days. No deposit is required to inquire.
+
+## Shared 450K vs private 1M — who should pay which
+
+**Book shared** if you want the published promo and you are fine cooking next to other travelers. The cap is **8**, not a hotel demo of 20. Everyone still works at a station. Couples who are happy to share the room save **IDR 1,100,000** versus private (**2 × 450,000 = 900,000** vs **2,000,000**).
+
+**Book private** if any of these are true:
+
+- You are a **solo traveler** who wants the chef’s attention without a group
+- You are a **couple** who wants the kitchen closed to other bookings
+- You need a **quiet room** for a proposal, anniversary, or a shy first-time cook
+- You want to ask more questions at the mortar without waiting your turn
+
+Private is **not** a different menu. You still pound Base Genep, shape sate lilit, and eat what you cooked. You are paying for the **exclusive kitchen**, not a secret recipe list.
+
+Worth-it context for the shared promo: [Cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it).
+
+## When private is worth it — and when it is not
+
+Private is worth **IDR 1,000,000** when the room itself is the product. One guest gets the same 10+ dishes and Ubud pickup without sharing the stove line. Two guests pay **IDR 2,000,000** total — that is **IDR 1,000,000 each**, more than double the shared promo.
+
+Skip private if you only want a cheaper sticker. Shared at **450K** is the commercial rate we want most guests on. Skip both if you need **Canggu or Seminyak pickup inside the 450K / 1M number** — that transfer is extra; confirm the quote on WhatsApp.
+
+A “cheap Ubud class” that undercuts 450K usually drops the group cap, the named chef, or the pickup rule. We will not invent a third private tier to win that click.
+
+## What does not change when you go private
+
+We still send you to **Tumang village near Ubud**, not a hotel banquet kitchen. Chef **Wayan Suryana** still teaches in **English**. You still cook **10+ dishes** at a station — Base Genep, sate lilit, sambal matah, pepes, lawar — then sit down to that meal. TripAdvisor **Traveler’s Choice 2026** (5.0, 1500+ reviews) is the same kitchen either way.
+
+Private means the **booking is exclusive**. Shared means you may have neighbors, never more than **eight**. That is the product difference. Kitchen layout: [how a Balinese kitchen works](/blog/how-traditional-balinese-kitchens-work).
+
+## Same clock, same dishes
+
+Price does **not** change between morning and afternoon on shared. Morning (about **08:30**) adds the traditional **pasar** tour. Afternoon skips the market and keeps the rice-field walk + kitchen. Private can sit on either clock — say AM or PM on WhatsApp.
+
+Detail: [morning vs afternoon cooking class](/blog/morning-vs-afternoon-ubud-cooking-class).
+
+Vegetarian / vegan is a **full menu swap** on shared or private if you request it when you book, not at the mortar. Detail: [vegetarian Tumang menu](/blog/vegetarian-vegan-cooking-class-ubud).
+
+## Pair with a village ride — confirm the clock
+
+[Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) is **IDR 750,000** with lunch and **free Ubud pickup**. Guests often want both on one culture day. Tell WhatsApp the hotel and date so the ride and the kitchen do not overlap — we confirm the published cycling slot rather than invent a morning block. Combo checkout: [Book cycling + cooking](/book?activity=combo-cycling-cooking). Itinerary notes: [cycling + cooking day](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+
+Prefer jungle photos first? Morning [Swing Heaven](/tours/swing-heaven-bali) then this kitchen — [swing + cooking](/blog/swing-heaven-cooking-class-ubud).
+
+## How to book (WhatsApp Consultation / Book)
+
+1. Open [Tumang Bali Cooking Class](/tours/balinese-cooking-class)
+2. WhatsApp **name, hotel area, date, guest count, shared or private, AM or PM, diet**
+3. We confirm **450K promo vs 1M / 2M private** and the Ubud pickup (or an outside-Ubud quote)
+4. No payment to inquire
+
+**Ready?** WhatsApp Consultation / Book from the [cooking class money page](/tours/balinese-cooking-class) or start at [/book](/book?activity=balinese-cooking-class). Kitchen detail: [inside the class](/blog/inside-balinese-cooking-class-pejeng).
+`,
+  },
+  {
     slug: 'cooking-class-ubud-price-2026-worth-it',
     title: 'Cooking Class Ubud Price 2026: Is Tumang Worth It?',
     seoTitle: 'Is Tumang Cooking Class Worth 450K?',
@@ -26,6 +110,8 @@ export const COOKING_JEEP_CLUSTER_POSTS = [
 | Shared morning or afternoon | **450,000** promo | 10+ dishes, max 8, Ubud pickup, rice-field walk; market tour on AM only |
 | Private (1 guest) | **1,000,000** | Exclusive kitchen + same Ubud pickup rule |
 | Private (2 guests) | **2,000,000** total | Exclusive kitchen for the couple |
+
+Who should pay the private sticker: [private vs shared cooking class](/blog/private-vs-shared-cooking-class-ubud).
 
 Sekar Bali Activity books Tumang on one WhatsApp thread with cycling and other Ubud days. No deposit is required to inquire.
 

@@ -27,6 +27,7 @@ const BATUR_JEEP_POST_SLUGS = new Set([
 
 const COOKING_POST_SLUGS = new Set([
   'cooking-class-ubud-price-2026-worth-it',
+  'private-vs-shared-cooking-class-ubud',
   'vegetarian-vegan-cooking-class-ubud',
   'morning-vs-afternoon-ubud-cooking-class',
   'inside-balinese-cooking-class-pejeng',

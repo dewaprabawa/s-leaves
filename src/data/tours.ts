@@ -1506,7 +1506,9 @@ We list Tumang as our flagship food experience so you can book adventure, villag
 TripAdvisor **[Traveler’s Choice 2026](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)** · **5.0** rating (1500+ reviews).
 
 ### Learn more
-Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes) · [TripAdvisor reviews](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)`,
+- [Private vs shared cooking class](/blog/private-vs-shared-cooking-class-ubud) — 450K promo vs 1M / 2M private
+- [Cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it)
+- Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes) · [TripAdvisor reviews](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)`
     highlights: [
       "10+ dishes with Chef Wayan Suryana",
       "Morning market tour (AM class) + rice-field walk",

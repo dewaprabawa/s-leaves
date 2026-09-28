@@ -10,9 +10,21 @@ export type ActivityId =
   | 'canyon-tubing'
   | 'cycling'
   | 'jeep-sunrise'
+  | 'jeep-tracking'
   | 'kintamani-day'
   | 'swing-heaven'
   | 'swing-heaven-lunch'
+
+/** Sit-in private jeep — published 2-guest package total (min 2). */
+export const JEEP_SITIN_PAIR_TOTAL_IDR = 2_000_000
+/** Tracking jeep — published 2-guest package total (min 2). */
+export const JEEP_TRACKING_PAIR_TOTAL_IDR = 1_800_000
+/** 3+ guests sharing one private jeep or tracking jeep, per person. */
+export const JEEP_GROUP_IDR = 750_000
+
+export function isJeepPrivateActivity(activityId: string): boolean {
+  return activityId === 'jeep-sunrise' || activityId === 'jeep-tracking'
+}
 
 /** Operator base cost (IDR) — do not sell at or below these */
 export const BASE_COST_IDR: Record<ActivityId, number> = {
@@ -22,6 +34,7 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
   'canyon-tubing': 175_000, // per person
   'cycling': 300_000, // per person (internal floor)
   'jeep-sunrise': 600_000, // per person (internal floor — private 4x4 + driver)
+  'jeep-tracking': 600_000, // per person (internal floor — private 4x4 + trek guide)
   'kintamani-day': 1_000_000, // private jeep/trek + hot spring + Umah Kuno + rice terrace
   'swing-heaven': 350_000, // per person (internal floor — Swing Heaven Bongkasa ticket)
   'swing-heaven-lunch': 400_000, // per person (internal floor — package + lunch)
@@ -34,8 +47,9 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'rafting': [500_000, 450_000, 450_000],
   'canyon-tubing': [500_000, 450_000, 450_000],
   'cycling': [750_000, 725_000, 700_000],
-  // Internal 1-pax cell is unused on the site (min 2). Public rate is 2 pax.
-  'jeep-sunrise': [1_350_000, 950_000, 750_000], // per person — 2 pax IDR 950K private, 3+ IDR 750K
+  // Internal 1-pax cell is unused on the site (min 2). Public rate is the 2-pax package.
+  'jeep-sunrise': [1_350_000, JEEP_SITIN_PAIR_TOTAL_IDR / 2, JEEP_GROUP_IDR], // sit-in: IDR 2,000,000 for 2
+  'jeep-tracking': [1_350_000, JEEP_TRACKING_PAIR_TOTAL_IDR / 2, JEEP_GROUP_IDR], // tracking: IDR 1,800,000 for 2
   // Min 2 guests: bookable promo IDR 1.3M; IDR 1.45M is the compare-at list
   'kintamani-day': [1_450_000, 1_300_000, 1_300_000],
   'swing-heaven': [530_000, 530_000, 530_000],
@@ -70,9 +84,9 @@ export function getTierIndex(quantity: number): 0 | 1 | 2 {
 }
 
 export function getTierLabel(quantity: number, activityId?: string): string {
-  if (activityId === 'jeep-sunrise') {
+  if (activityId && isJeepPrivateActivity(activityId)) {
     if (quantity >= 3) return '3+ private group rate'
-    return 'Private rate'
+    return activityId === 'jeep-tracking' ? 'Private tracking rate' : 'Private sit-in rate'
   }
   if (activityId === 'kintamani-day') {
     if (quantity >= 2) return 'Private promo'
@@ -245,7 +259,10 @@ export function formatTierPriceTable(activityId: ActivityId): string {
   const unit =
     activityId === 'tandem-atv' ? 'per tandem' : activityId === 'single-atv' ? 'per rider' : 'per person'
   if (activityId === 'jeep-sunrise') {
-    return `Private · min 2 · 2 ${unit}: IDR ${(t2 / 1000).toFixed(0)}k · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`
+    return `Sit-in · min 2 · IDR ${(JEEP_SITIN_PAIR_TOTAL_IDR / 1_000_000).toFixed(0)}M for 2 (${(t2 / 1000).toFixed(0)}k ${unit}) · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`
+  }
+  if (activityId === 'jeep-tracking') {
+    return `Tracking · min 2 · IDR ${(JEEP_TRACKING_PAIR_TOTAL_IDR / 1_000_000).toFixed(1)}M for 2 (${(t2 / 1000).toFixed(0)}k ${unit}) · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`
   }
   if (activityId === 'kintamani-day') {
     return `Private · min 2 · 2+ ${unit}: IDR ${(t2 / 1000).toFixed(0)}k promo (was IDR ${(t1 / 1000).toFixed(0)}k)`
@@ -261,7 +278,7 @@ export function formatTierPriceTable(activityId: ActivityId): string {
 
 /** Public starting unit price for cards. Jeep min is 2, so do not advertise the unused 1-pax cell. */
 export function getListPrice(activityId: string): number {
-  const qty = activityId === 'jeep-sunrise' ? 2 : 1
+  const qty = isJeepPrivateActivity(activityId) ? 2 : 1
   return getUnitPrice(activityId, qty)
 }
 

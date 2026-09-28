@@ -9,7 +9,11 @@ import {
 /** Activities that can be mixed into a same-day combo */
 export type MixableActivityId = Exclude<
   ActivityId,
-  'cycling' | 'kintamani-day' | 'swing-heaven' | 'swing-heaven-lunch'
+  | 'cycling'
+  | 'kintamani-day'
+  | 'swing-heaven'
+  | 'swing-heaven-lunch'
+  | 'jeep-tracking'
 >
 
 export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
@@ -19,6 +23,7 @@ export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   'canyon-tubing': 'Canyon Tubing',
   cycling: 'Ricefield Cycling',
   'jeep-sunrise': 'Private Batur Jeep',
+  'jeep-tracking': 'Private Tracking Jeep',
   'kintamani-day': 'Private Kintamani Day',
   'swing-heaven': 'Swing Heaven',
   'swing-heaven-lunch': 'Swing Heaven + Lunch',

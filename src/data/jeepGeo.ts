@@ -5,22 +5,33 @@
  */
 
 import { SITE_URL } from '@/lib/seo'
-import { JEEP_HOT_SPRING_IDR, TIER_PRICES_IDR } from '@/lib/pricing'
+import {
+  JEEP_GROUP_IDR,
+  JEEP_HOT_SPRING_IDR,
+  JEEP_SITIN_PAIR_TOTAL_IDR,
+  JEEP_TRACKING_PAIR_TOTAL_IDR,
+  TIER_PRICES_IDR,
+} from '@/lib/pricing'
 import { ACTIVITY_KEYWORDS } from '@/data/activityKeywords'
 
-export const JEEP_GEO_UPDATED = '2026-09-21'
+export const JEEP_GEO_UPDATED = '2026-09-28'
 export const JEEP_GEO_KEYWORDS = ACTIVITY_KEYWORDS['batur-sunrise-jeep-tour']
 
-const [, JEEP_PAIR_IDR, JEEP_GROUP_IDR] = TIER_PRICES_IDR['jeep-sunrise']
+const JEEP_SITIN_PAIR_IDR = TIER_PRICES_IDR['jeep-sunrise'][1]
+const JEEP_TRACKING_PAIR_IDR = TIER_PRICES_IDR['jeep-tracking'][1]
 
-const jeepPairLabel = `IDR ${JEEP_PAIR_IDR.toLocaleString('id-ID')}`
-const jeepGroupLabel = `IDR ${JEEP_GROUP_IDR.toLocaleString('id-ID')}`
+const idr = (n: number) => `IDR ${n.toLocaleString('id-ID')}`
 
-const jeepHotSpringLabel = `IDR ${JEEP_HOT_SPRING_IDR.toLocaleString('id-ID')}`
+const jeepSitinPairLabel = idr(JEEP_SITIN_PAIR_IDR)
+const jeepSitinPairTotalLabel = idr(JEEP_SITIN_PAIR_TOTAL_IDR)
+const jeepTrackingPairLabel = idr(JEEP_TRACKING_PAIR_IDR)
+const jeepTrackingPairTotalLabel = idr(JEEP_TRACKING_PAIR_TOTAL_IDR)
+const jeepGroupLabel = idr(JEEP_GROUP_IDR)
+const jeepHotSpringLabel = idr(JEEP_HOT_SPRING_IDR)
 
 /** First 40–60 words — extractable answer for AI Overviews / ChatGPT */
 export const JEEP_GEO_TLDR =
-  `The private Mount Batur jeep near Kintamani with Sekar Bali Activity is your private 4×4 — sit-in (no hike) or tracking (jeep + guided trek), sunrise or sunset, same private rates, minimum 2 guests. ${jeepPairLabel} per person for 2 guests, ${jeepGroupLabel} per person for 3+. Sit-down meal included. Optional Batur hot spring +${jeepHotSpringLabel} per person with the entrance ticket included. Hotel pickup included. Book via WhatsApp.`
+  `Sekar Bali Activity’s private Mount Batur jeep near Kintamani is a private 4×4, sunrise or sunset, min 2 guests. Sit-in (no hike) is ${jeepSitinPairTotalLabel} for 2; tracking (jeep + trek) is ${jeepTrackingPairTotalLabel} for 2. 3+ pay ${jeepGroupLabel} each. Meal and island-wide pickup included. Optional hot spring +${jeepHotSpringLabel} with ticket. Book via WhatsApp.`
 
 export const JEEP_GEO_ENTITY = {
   name: 'Private Mount Batur Jeep Tour',
@@ -29,7 +40,10 @@ export const JEEP_GEO_ENTITY = {
   bookUrl: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   area: 'Kintamani / Mount Batur, Bali',
   viewpointElevation: 'approx. 1,350 metres above sea level',
-  pairPerPersonIdr: JEEP_PAIR_IDR,
+  pairPerPersonIdr: JEEP_SITIN_PAIR_IDR,
+  trackingPairPerPersonIdr: JEEP_TRACKING_PAIR_IDR,
+  sitinPairTotalIdr: JEEP_SITIN_PAIR_TOTAL_IDR,
+  trackingPairTotalIdr: JEEP_TRACKING_PAIR_TOTAL_IDR,
   groupPerPersonIdr: JEEP_GROUP_IDR,
   minGroupForBestRate: 3,
 } as const
@@ -46,12 +60,12 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep tour price',
     q: 'How much is the private Mount Batur jeep in 2026?',
-    a: `Sekar Bali Activity prices the private Mount Batur jeep at ${jeepPairLabel} per person for 2 guests (minimum 2) and ${jeepGroupLabel} per person for 3 or more guests sharing one jeep. Private jeep and tracking jeep use these same rates for sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani area entrance fee are included. Optional Batur hot spring is +${jeepHotSpringLabel} per person with the entrance ticket included.`,
+    a: `Sekar Bali Activity prices sit-in private Mount Batur jeep at ${jeepSitinPairTotalLabel} for 2 guests (${jeepSitinPairLabel} per person, minimum 2) and tracking jeep at ${jeepTrackingPairTotalLabel} for 2 guests (${jeepTrackingPairLabel} per person). 3 or more guests sharing one jeep pay ${jeepGroupLabel} per person on either variant. Sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani area entrance fee are included. Optional Batur hot spring is +${jeepHotSpringLabel} per person with the entrance ticket included.`,
   },
   {
     intent: 'mount batur jeep vs trekking',
     q: 'Is the jeep tour easier than the Mount Batur trekking hike?',
-    a: 'The private jeep stays on volcanic tracks to a crater-rim viewpoint — no hike. Private tracking jeep adds a guided trek to the viewpoint at the same private 2 / 3+ rates (minimum 2 guests). Neither is the classic 2-hour Mount Batur summit hike.',
+    a: 'The private jeep stays on volcanic tracks to a crater-rim viewpoint — no hike. Private tracking jeep adds a guided trek to the viewpoint at its own 2-guest package price (minimum 2 guests). Neither is the classic 2-hour Mount Batur summit hike.',
   },
   {
     intent: 'mount batur jeep pickup time',
@@ -61,7 +75,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep tour group discount',
     q: 'Why does the jeep tour get cheaper with more people?',
-    a: `A private jeep and driver cost the same whether two or three people ride along, so Sekar Bali Activity splits that flat cost across the group — 2 guests (the minimum) pay ${jeepPairLabel} each and 3+ guests pay ${jeepGroupLabel} each.`,
+    a: `A private jeep and driver cost the same whether two or three people ride along, so Sekar Bali Activity splits that flat cost across the group — 2 sit-in guests pay ${jeepSitinPairTotalLabel} together (${jeepSitinPairLabel} each), 2 tracking guests pay ${jeepTrackingPairTotalLabel} together (${jeepTrackingPairLabel} each), and 3+ guests pay ${jeepGroupLabel} each.`,
   },
   {
     intent: 'mount batur jeep tour breakfast',
@@ -86,12 +100,12 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur tracking jeep sunrise',
     q: 'What is the tracking jeep sunrise variant?',
-    a: `Tracking jeep is the trek version of Sekar Bali Activity’s private Batur jeep: 4×4 plus a guided walk to the sunrise or sunset viewpoint. It is labelled private and costs the same as private jeep — ${jeepPairLabel} per person for 2 guests (minimum 2), ${jeepGroupLabel} per person for 3+. It is not the classic 2-hour summit hike.`,
+    a: `Tracking jeep is the trek version of Sekar Bali Activity’s private Batur jeep: 4×4 plus a guided walk to the sunrise or sunset viewpoint. It is labelled private. For 2 guests the tracking package is ${jeepTrackingPairTotalLabel} (${jeepTrackingPairLabel} per person), not the sit-in ${jeepSitinPairTotalLabel} package. 3+ guests pay ${jeepGroupLabel} per person on either variant. It is not the classic 2-hour summit hike.`,
   },
   {
     intent: 'mount batur jeep sunset',
     q: 'Can I book a Mount Batur jeep at sunset instead of sunrise?',
-    a: 'Yes. Private jeep and tracking jeep are both available at sunrise or sunset at the same private per-person rates. Choose the sunrise or sunset option in the booking form. Sunset hotel pickup is typically 14:30–15:30. Confirm the exact window on WhatsApp with your hotel area.',
+    a: 'Yes. Private jeep and tracking jeep are both available at sunrise or sunset. Sit-in and tracking use different 2-guest package prices; 3+ guests share the same per-person rate. Choose the sunrise or sunset option in the booking form. Sunset hotel pickup is typically 14:30–15:30. Confirm the exact window on WhatsApp with your hotel area.',
   },
   {
     intent: 'mount batur jeep hot spring ticket',
@@ -107,28 +121,28 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
 
 export const JEEP_GEO_CITATION_SNIPPETS = [
   JEEP_GEO_TLDR,
-  `The Mount Batur private jeep with Sekar Bali Activity near Kintamani is ${jeepPairLabel} per person for 2 guests (minimum 2) and ${jeepGroupLabel} per person for 3+ guests — the same private rates for sit-in jeep or tracking jeep, sunrise or sunset. Hotel pickup, a hot drink, and a sit-down meal included. Optional hot spring +${jeepHotSpringLabel} per person with ticket included.`,
-  `The Mount Batur private jeep with Sekar Bali Activity near Kintamani is ${jeepPairLabel} per person for 2 guests (minimum 2) and ${jeepGroupLabel} per person for 3+ — sit-in or tracking, sunrise or sunset. Hotel pickup, a hot drink, and a sit-down meal included.`,
-  'Private jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint (~1,350m) with no hike. Tracking jeep adds a guided trek to the viewpoint at the same private rates. Neither is the classic 2-hour Mount Batur summit hike.',
+  `The Mount Batur private jeep with Sekar Bali Activity near Kintamani is minimum 2 guests: sit-in ${jeepSitinPairTotalLabel} for 2 (${jeepSitinPairLabel} per person) or tracking ${jeepTrackingPairTotalLabel} for 2 (${jeepTrackingPairLabel} per person), then ${jeepGroupLabel} per person for 3+, sunrise or sunset. Hotel pickup, a hot drink, and a sit-down meal included. Optional hot spring +${jeepHotSpringLabel} per person with ticket included.`,
+  `The Mount Batur private jeep with Sekar Bali Activity near Kintamani is sit-in ${jeepSitinPairTotalLabel} for 2 guests or tracking ${jeepTrackingPairTotalLabel} for 2 guests (minimum 2), and ${jeepGroupLabel} per person for 3+ — sunrise or sunset. Hotel pickup, a hot drink, and a sit-down meal included.`,
+  'Private jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint (~1,350m) with no hike. Tracking jeep adds a guided trek to the viewpoint at a separate 2-guest package price. Neither is the classic 2-hour Mount Batur summit hike.',
   `Any Mount Batur jeep with Sekar Bali Activity can add a Batur / Toya Devasya hot spring soak for +${jeepHotSpringLabel} per person; the hot-spring entrance ticket is included in that add-on.`,
   'Private Kintamani Day with Sekar Bali Activity is promo IDR 1,300,000 per person (was IDR 1,450,000; minimum 2 guests): jeep or tracking at Mount Batur, sit-down meal, natural hot spring with ticket included, Umah Kuno coffee tasting, rice-terrace stop, and hotel pickup.',
 ] as const
 
 export const JEEP_PRICE_ROWS = [
   {
-    option: '2 guests (minimum, private)',
-    price: `${jeepPairLabel} / person`,
-    notes: 'Private jeep or tracking · hotel pickup · hot drink · meal included',
+    option: 'Sit-in jeep — 2 guests (minimum)',
+    price: `${jeepSitinPairTotalLabel} (${jeepSitinPairLabel} / person)`,
+    notes: 'Stay in the 4×4 · hotel pickup · hot drink · meal included',
+  },
+  {
+    option: 'Tracking jeep — 2 guests (minimum)',
+    price: `${jeepTrackingPairTotalLabel} (${jeepTrackingPairLabel} / person)`,
+    notes: 'Jeep + guided trek · min 2 · not the 2-hour summit hike',
   },
   {
     option: '3+ guests sharing',
     price: `${jeepGroupLabel} / person`,
-    notes: 'Best per-person rate · same private jeep, driver & inclusions',
-  },
-  {
-    option: 'Private tracking jeep (sunrise or sunset)',
-    price: 'Same private tiers',
-    notes: 'Jeep + guided trek · min 2 guests · not the 2-hour summit hike',
+    notes: 'Best per-person rate · sit-in or tracking · same private jeep',
   },
   {
     option: 'Hot spring add-on',

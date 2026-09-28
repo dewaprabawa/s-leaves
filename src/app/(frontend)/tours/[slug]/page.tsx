@@ -247,14 +247,22 @@ function buildTourSchema(tour: Tour) {
         lowPrice: JEEP_GEO_ENTITY.groupPerPersonIdr,
         highPrice: TIER_PRICES_IDR["kintamani-day"][1],
         priceCurrency: "IDR",
-        offerCount: 3,
+        offerCount: 4,
         availability: "https://schema.org/InStock",
         url: `${SITE_URL}/tours/${tour.slug}`,
         offers: [
           {
             "@type": "Offer",
-            name: "Private jeep — 2 guests (minimum)",
+            name: "Sit-in private jeep — 2 guests (minimum)",
             price: JEEP_GEO_ENTITY.pairPerPersonIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "Tracking jeep — 2 guests (minimum)",
+            price: JEEP_GEO_ENTITY.trackingPairPerPersonIdr,
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -792,8 +800,9 @@ export default async function TourPage({ params }: Props) {
                     </span>
                   ) : isJeepTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">
-                      From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · 2 pax{" "}
-                      {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1])} · Kintamani Day promo{" "}
+                      From {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][2])} / person (3+) · sit-in 2
+                      pax {formatIdr(TIER_PRICES_IDR["jeep-sunrise"][1] * 2)} · tracking 2 pax{" "}
+                      {formatIdr(TIER_PRICES_IDR["jeep-tracking"][1] * 2)} · Kintamani Day promo{" "}
                       {formatIdr(TIER_PRICES_IDR["kintamani-day"][1])} · private · min 2 guests
                     </span>
                   ) : isAtvTour(tour) ? (

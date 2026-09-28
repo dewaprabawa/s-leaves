@@ -23,12 +23,21 @@ const JEEP_HOT_SPRING_ADDON = {
   perPerson: JEEP_HOT_SPRING_IDR,
 }
 
-const JEEP_BOOKING_SHARED = {
+const JEEP_SITIN_BOOKING = {
   adultPrice: getListPrice("jeep-sunrise"),
   kidPrice: null as null,
   minPax: 2,
   pickupIncluded: true as const,
   pricingActivityId: "jeep-sunrise",
+  optionalAddons: [JEEP_HOT_SPRING_ADDON],
+}
+
+const JEEP_TRACKING_BOOKING = {
+  adultPrice: getListPrice("jeep-tracking"),
+  kidPrice: null as null,
+  minPax: 2,
+  pickupIncluded: true as const,
+  pricingActivityId: "jeep-tracking",
   optionalAddons: [JEEP_HOT_SPRING_ADDON],
 }
 
@@ -116,25 +125,25 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     id: "jeep-sunrise",
     title: "Private Jeep Sunrise",
     times: ["02:30", "03:00"],
-    ...JEEP_BOOKING_SHARED,
+    ...JEEP_SITIN_BOOKING,
   },
   {
     id: "jeep-tracking-sunrise",
     title: "Private Tracking Jeep Sunrise",
     times: ["02:30", "03:00"],
-    ...JEEP_BOOKING_SHARED,
+    ...JEEP_TRACKING_BOOKING,
   },
   {
     id: "jeep-sunset",
     title: "Private Jeep Sunset",
     times: ["14:30", "15:30"],
-    ...JEEP_BOOKING_SHARED,
+    ...JEEP_SITIN_BOOKING,
   },
   {
     id: "jeep-tracking-sunset",
     title: "Private Tracking Jeep Sunset",
     times: ["14:30", "15:30"],
-    ...JEEP_BOOKING_SHARED,
+    ...JEEP_TRACKING_BOOKING,
   },
   {
     id: "jeep-kintamani-day",

@@ -18,6 +18,8 @@ import {
   PICKUP_FEE_IDR,
   getCompareAtSubtotal,
   hasTierPromo,
+  JEEP_SITIN_PAIR_TOTAL_IDR,
+  JEEP_TRACKING_PAIR_TOTAL_IDR,
   quoteActivity,
   quotePickup,
 } from '@/lib/pricing';
@@ -393,8 +395,15 @@ export function BookingPopup({
       pickupNoteParts.push(
         'Itinerary: jeep or tracking · natural hot spring (ticket included) · meal included · Umah Kuno coffee · rice terrace',
       )
-    } else if (activeTour.pricingActivityId === 'jeep-sunrise') {
-      pickupNoteParts.push('Sit-down meal included after the viewpoint (jeep or tracking)')
+    } else if (
+      activeTour.pricingActivityId === 'jeep-sunrise' ||
+      activeTour.pricingActivityId === 'jeep-tracking'
+    ) {
+      pickupNoteParts.push(
+        activeTour.pricingActivityId === 'jeep-tracking'
+          ? `Tracking jeep · sit-down meal included after the viewpoint · ${formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR)} for 2 guests`
+          : `Sit-in jeep · sit-down meal included after the viewpoint · ${formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR)} for 2 guests`,
+      )
     }
     for (const addon of selectedAddons) {
       pickupNoteParts.push(addonSummary(addon, addonPax))
@@ -657,8 +666,15 @@ export function BookingPopup({
                 </p>
               ) : activeTour.pricingActivityId === 'jeep-sunrise' ? (
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
-                  Your private jeep or tracking · min 2 · sunrise or sunset · sit-down meal included
-                  after the viewpoint. Optional hot spring +IDR 150,000 (ticket included).
+                  Sit-in private jeep · min 2 · {formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR)} for 2 guests
+                  ({formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR / 2)} each) · 3+ IDR 750,000 each · sit-down
+                  meal included. Optional hot spring +IDR 150,000 (ticket included).
+                </p>
+              ) : activeTour.pricingActivityId === 'jeep-tracking' ? (
+                <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
+                  Tracking jeep (4×4 + guided trek) · min 2 · {formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR)}{' '}
+                  for 2 guests ({formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR / 2)} each) · 3+ IDR 750,000
+                  each · sit-down meal included. Optional hot spring +IDR 150,000 (ticket included).
                 </p>
               ) : null}
             </div>

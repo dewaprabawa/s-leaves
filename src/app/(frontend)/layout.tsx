@@ -109,6 +109,7 @@ const footerLinks = {
     { label: "Swing Heaven + Cooking", href: "/book?activity=combo-swing-cooking" },
     { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
     { label: "UTV at Bali Buggy Adventures", href: "/tours/utv-buggy-bali-adventure" },
+    { label: "Bali Motorbike Traveling Trip", href: "/tours/bali-motorbike-traveling-trip" },
     { label: "Whitewater Rafting", href: "/tours/whitewater-rafting" },
     { label: "Canyon Tubing", href: "/tours/canyon-tubing" },
     { label: "Swing Heaven Bali", href: "/tours/swing-heaven-bali" },

@@ -35,13 +35,13 @@ export function buildOrganizationSchema() {
     alternateName: ['Sekar Bali', 'Sekar Bali Activity Ubud', 'Sekar Bali Pejeng'],
     legalName: SITE_NAME,
     description:
-      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Swing Heaven jungle swing, ricefield cycling, Mount Batur sunrise jeep (Kintamani), Tumang Bali Cooking Class, Tirta Empul or Pura Beji private melukat, Griya Beji Waterfall purification / palm reading / mental healing, coffee tasting, and private day tours. Free Ubud hotel pickup on cycling and Tumang cooking class; private shuttle on Tirta Empul / Beji purification; Griya Beji pickup IDR 400,000 or self-meet.',
+      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Swing Heaven jungle swing, ricefield cycling, Mount Batur sunrise jeep (Kintamani), Tumang Bali Cooking Class, Tirta Empul or Pura Beji private melukat, Griya Beji Waterfall purification / palm reading / mental healing, coffee tasting, private day tours, a guided motorbike traveling trip, and UTV at Bali Buggy Adventures. Free Ubud hotel pickup on cycling and Tumang cooking class; private shuttle on Tirta Empul / Beji purification; Griya Beji pickup IDR 400,000 or self-meet; park / UTV / workshop pickup quoted.',
     url: SITE_URL,
     telephone: CONTACT_PHONE_E164,
     email: CONTACT_EMAIL,
     image: `${SITE_URL}/logo.png`,
     logo: `${SITE_URL}/logo.png`,
-    priceRange: 'IDR 450000 - IDR 1450000',
+    priceRange: 'IDR 300000 - IDR 4100000',
     // NAP must match Google Business Profile (corporate / registered office)
     address: postalAddressSchema(PRIMARY_NAP_ADDRESS),
     geo: {
@@ -135,6 +135,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Bali Bird Park', url: `${SITE_URL}/tours/bali-bird-park` },
   { name: 'Bali Canyoning', url: `${SITE_URL}/tours/canyoning` },
   { name: 'UTV at Bali Buggy Adventures', url: `${SITE_URL}/tours/utv-buggy-bali-adventure` },
+  { name: 'Bali Motorbike Traveling Trip', url: `${SITE_URL}/tours/bali-motorbike-traveling-trip` },
   { name: 'Ubud Batik Class', url: `${SITE_URL}/tours/batik-class` },
   { name: 'Bali Family Private Itinerary', url: `${SITE_URL}/blog/bali-family-private-itinerary-2026` },
   { name: '6-Day Bali Girls Trip Guide', url: `${SITE_URL}/blog/bali-6-day-girls-trip-itinerary-2026` },
@@ -160,7 +161,7 @@ export function buildWebsiteSchema() {
     description: DEFAULT_DESCRIPTION,
     publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: 'en-US',
-    dateModified: '2026-09-25',
+    dateModified: '2026-09-28',
     hasPart: [
       {
         '@type': 'WebPage',

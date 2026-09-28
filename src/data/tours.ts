@@ -42,6 +42,19 @@ import {
   UTV_BUGGY_TANDEM_IDR,
   UTV_BUGGY_VENUE,
 } from "@/data/utvBuggy"
+import {
+  MOTORBIKE_AREA,
+  MOTORBIKE_DURATION,
+  MOTORBIKE_EAST_IDR,
+  MOTORBIKE_ENGINE,
+  MOTORBIKE_KINTAMANI_IDR,
+  MOTORBIKE_NORTH_IDR,
+  MOTORBIKE_PICKUP,
+  MOTORBIKE_SOUTH_IDR,
+  MOTORBIKE_TRIP_SLUG,
+  MOTORBIKE_UBUD_IDR,
+  MOTORBIKE_WATERFALL_IDR,
+} from "@/data/motorbikeTrip"
 
 const COOKING_PRIVATE_SOLO_DIFF =
   COOKING_CLASS_PRIVATE_SOLO_IDR - COOKING_CLASS_PRICE_IDR
@@ -2340,20 +2353,22 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
     reviews: [],
   },
   {
-    id: "bali-motorbike-traveling-trip",
+    id: MOTORBIKE_TRIP_SLUG,
     title: "Bali Motorbike Traveling Trip — Ubud, South, North & East Bali",
-    slug: "bali-motorbike-traveling-trip",
+    slug: MOTORBIKE_TRIP_SLUG,
     category: "day-tour",
-    area: "Ubud · Kintamani · North · South · East Bali",
-    pickup: "Pickup at your chosen area",
-    duration: "Full Day (approx. 8–10 Hours)",
-    basePrice: 450000,
+    area: MOTORBIKE_AREA,
+    pickup: MOTORBIKE_PICKUP,
+    duration: MOTORBIKE_DURATION,
+    basePrice: MOTORBIKE_UBUD_IDR,
     seoTitle: "Bali Motorbike Traveling Trip | From IDR 450K",
     seoDescription:
       "Guided Bali motorbike traveling trips on a 125–160cc scooter — Ubud, Kintamani, North, South & East Bali. From IDR 450K per scooter. Tickets not included.",
     heroImage: {
       url: "/images/adventures/motorbike-tour-hero.jpg",
       alt: "Smiling guests wearing helmets on a guided Bali motorbike traveling trip",
+      width: 1600,
+      height: 1000,
     },
     gallery: [
       {
@@ -2366,49 +2381,49 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
       },
     ],
     shortDescription:
-      "Explore Bali on a 125–160cc motorbike with a local English-speaking guide — choose your destination: Ubud (IDR 450K), Ubud Waterfall (IDR 500K), Kintamani (IDR 600K), South Bali (IDR 650K), North Bali (IDR 750K), or East Bali (IDR 800K) per scooter. Attraction tickets not included.",
+      `Explore Bali on a ${MOTORBIKE_ENGINE} motorbike with a local English-speaking guide — choose your destination: Ubud (IDR ${(MOTORBIKE_UBUD_IDR / 1000).toFixed(0)}K), Ubud Waterfall (IDR ${(MOTORBIKE_WATERFALL_IDR / 1000).toFixed(0)}K), Kintamani (IDR ${(MOTORBIKE_KINTAMANI_IDR / 1000).toFixed(0)}K), South Bali (IDR ${(MOTORBIKE_SOUTH_IDR / 1000).toFixed(0)}K), North Bali (IDR ${(MOTORBIKE_NORTH_IDR / 1000).toFixed(0)}K), or East Bali (IDR ${(MOTORBIKE_EAST_IDR / 1000).toFixed(0)}K) per scooter. Attraction tickets not included.`,
     fullDescription: `**Bali Motorbike Traveling Trip — You Choose the Destination**
 
-Explore Bali on a comfortable **125–160cc automatic motorbike/scooter** with a local English-speaking guide leading the way. Pick the region you want to explore and we build the day around that area's very best spots. **Prices are per scooter and do not include attraction entrance tickets.** Tell us your pickup point and preferred destination when you book.
+Explore Bali on a comfortable **${MOTORBIKE_ENGINE} motorbike/scooter** with a local English-speaking guide leading the way. Pick the region you want to explore and we build the day around that area's very best spots. **Prices are per scooter and do not include attraction entrance tickets.** Tell us your pickup point and preferred destination when you book.
 
-### Ubud Traveling Trip — IDR 450,000 / scooter
+### Ubud Traveling Trip — IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")} / scooter
 
 ![Emerald rice terraces near Ubud, Bali](/images/adventures/moto-ubud.jpg)
 
 Rice terrace, Ulun Petanu waterfall, Gunung Kawi Tampaksiring, Bali Umah Kuno (traditional old house), and Monkey Forest / Monkey River.
 
-### Ubud Waterfall Trip — IDR 500,000 / scooter
+### Ubud Waterfall Trip — IDR ${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")} / scooter
 
 ![Bali jungle waterfall into a turquoise pool](/images/adventures/moto-ubud-waterfall.jpg)
 
 Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan waterfalls.
 
-### Kintamani Traveling Trip — IDR 600,000 / scooter
+### Kintamani Traveling Trip — IDR ${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")} / scooter
 
 ![Sunrise over Mount Batur and Lake Batur in Kintamani](/images/adventures/moto-kintamani.jpg)
 
 Sunrise peak view, Pura Jati Segara, optional natural hot spring, Penglipuran Village, and Tukad Cepung Waterfall.
 
-### South Bali Traveling Trip — IDR 650,000 / scooter
+### South Bali Traveling Trip — IDR ${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")} / scooter
 
 ![Uluwatu clifftop temple above the ocean in South Bali](/images/adventures/moto-south.jpg)
 
 Tanah Lot, Uluwatu, GWK, Melasti Beach, and an optional Kedonganan seafood dinner at sunset.
 
-### North Bali Traveling Trip — IDR 750,000 / scooter
+### North Bali Traveling Trip — IDR ${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")} / scooter
 
 ![Ulun Danu Beratan lake temple in North Bali](/images/adventures/moto-north.jpg)
 
 Sangeh Monkey Sanctuary, Leke-Leke Waterfall, Beratan Lake & Temple, and Jatiluwih — Bali's biggest rice terrace.
 
-### East Bali Traveling Trip — IDR 800,000 / scooter
+### East Bali Traveling Trip — IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")} / scooter
 
 ![Tirta Gangga water palace stepping stones in East Bali](/images/adventures/moto-east.jpg)
 
 Tukad Cepung Waterfall, Besakih Mother Temple, Tirta Gangga, Taman Ujung Water Palace, and Virgin Beach.
 
 ### Good to Know
-- Motorbikes are 125–160cc automatics.
+- Motorbikes are ${MOTORBIKE_ENGINE}s.
 - Price is per scooter and excludes attraction entrance tickets.
 - Pickup is arranged at your chosen destination/area — just share your location when booking.
 
@@ -2434,12 +2449,12 @@ Message us on WhatsApp with your date, pickup point, and chosen destination to b
       "Gratuities",
     ],
     activityOptions: [
-      { name: "Ubud Traveling Trip", priceDiff: 0, description: "Per scooter (125–160cc) · Rice terrace, Ulun Petanu waterfall, Gunung Kawi Tampaksiring, Bali Umah Kuno & Monkey Forest" },
-      { name: "Ubud Waterfall Trip", priceDiff: 50000, description: "Per scooter (125–160cc) · Kanto Lampo, Tibumana, Suwat, Tukad Cepung & Tegenungan waterfalls" },
-      { name: "Kintamani Traveling Trip", priceDiff: 150000, description: "Per scooter (125–160cc) · Sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran Village & Tukad Cepung Waterfall" },
-      { name: "South Bali Traveling Trip", priceDiff: 200000, description: "Per scooter (125–160cc) · Tanah Lot, Uluwatu, GWK, Melasti Beach & optional Kedonganan seafood sunset dinner" },
-      { name: "North Bali Traveling Trip", priceDiff: 300000, description: "Per scooter (125–160cc) · Sangeh Monkey Sanctuary, Leke-Leke Waterfall, Beratan Lake & Temple, Jatiluwih rice terrace" },
-      { name: "East Bali Traveling Trip", priceDiff: 350000, description: "Per scooter (125–160cc) · Tukad Cepung Waterfall, Besakih, Tirta Gangga, Taman Ujung Water Palace & Virgin Beach" },
+      { name: "Ubud Traveling Trip", priceDiff: 0, description: `Per scooter (${MOTORBIKE_ENGINE}) · Rice terrace, Ulun Petanu waterfall, Gunung Kawi Tampaksiring, Bali Umah Kuno & Monkey Forest` },
+      { name: "Ubud Waterfall Trip", priceDiff: MOTORBIKE_WATERFALL_IDR - MOTORBIKE_UBUD_IDR, description: `Per scooter (${MOTORBIKE_ENGINE}) · Kanto Lampo, Tibumana, Suwat, Tukad Cepung & Tegenungan waterfalls` },
+      { name: "Kintamani Traveling Trip", priceDiff: MOTORBIKE_KINTAMANI_IDR - MOTORBIKE_UBUD_IDR, description: `Per scooter (${MOTORBIKE_ENGINE}) · Sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran Village & Tukad Cepung Waterfall` },
+      { name: "South Bali Traveling Trip", priceDiff: MOTORBIKE_SOUTH_IDR - MOTORBIKE_UBUD_IDR, description: `Per scooter (${MOTORBIKE_ENGINE}) · Tanah Lot, Uluwatu, GWK, Melasti Beach & optional Kedonganan seafood sunset dinner` },
+      { name: "North Bali Traveling Trip", priceDiff: MOTORBIKE_NORTH_IDR - MOTORBIKE_UBUD_IDR, description: `Per scooter (${MOTORBIKE_ENGINE}) · Sangeh Monkey Sanctuary, Leke-Leke Waterfall, Beratan Lake & Temple, Jatiluwih rice terrace` },
+      { name: "East Bali Traveling Trip", priceDiff: MOTORBIKE_EAST_IDR - MOTORBIKE_UBUD_IDR, description: `Per scooter (${MOTORBIKE_ENGINE}) · Tukad Cepung Waterfall, Besakih, Tirta Gangga, Taman Ujung Water Palace & Virgin Beach` },
     ],
     itinerary: [
       {
@@ -2483,7 +2498,7 @@ Message us on WhatsApp with your date, pickup point, and chosen destination to b
       {
         id: "faq-moto-2",
         question: "How is the price calculated?",
-        answer: "Prices are per scooter by destination: Ubud IDR 450,000, Ubud Waterfall IDR 500,000, Kintamani IDR 600,000, South Bali IDR 650,000, North Bali IDR 750,000, and East Bali IDR 800,000. Attraction entrance tickets are not included.",
+        answer: `Prices are per scooter by destination: Ubud IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}, Ubud Waterfall IDR ${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")}, Kintamani IDR ${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")}, South Bali IDR ${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")}, North Bali IDR ${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")}, and East Bali IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")}. Attraction entrance tickets are not included.`,
       },
       {
         id: "faq-moto-3",

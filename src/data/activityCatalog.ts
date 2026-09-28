@@ -38,13 +38,13 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "adventure",
     label: TOUR_CATEGORY_LABELS.adventure,
-    blurb: "Private muddy sport ATV, river rafting, canyon tubing, jungle swings, canyoning, buggies, dirt bike & a private Mount Batur jeep",
+    blurb: "Private muddy sport ATV, UTV buggy, river rafting, canyon tubing, jungle swings, canyoning, dirt bike & a private Mount Batur jeep",
     href: "/#adventure",
   },
   {
     id: "day-tour",
     label: TOUR_CATEGORY_LABELS["day-tour"],
-    blurb: "Private Ubud & temple days",
+    blurb: "Private Ubud & temple days · guided motorbike trip from IDR 450K per scooter",
     href: "/#day-tours",
   },
   {

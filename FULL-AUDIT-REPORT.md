@@ -7,8 +7,8 @@
 **Score confidence:** Medium for on-page/GEO (live fetch + repo). Low for Performance (PageSpeed not re-run).
 
 **Overall rating (new-activity surfaces):** Needs Improvement live · **Good** after this PR  
-**SEO Health Score: 62/100** (live motorbike + inventory holes) · **84/100** after this PR  
-**GEO Readiness: 58/100** live for motorbike · **86/100** catalog-wide after this PR (see `GEO-ANALYSIS.md`)
+**SEO Health Score: 62/100** (live motorbike + inventory holes) · **84/100** after coverage · **88/100** after motorbike money-page upgrade  
+**GEO Readiness: 58/100** live for motorbike · **86/100** after coverage · **88/100** after motorbike money-page upgrade (see `GEO-ANALYSIS.md`)
 
 Verifier: `finding_verifier.py` — raw 8, verified 8, dropped 0.
 
@@ -28,7 +28,7 @@ Verifier: `finding_verifier.py` — raw 8, verified 8, dropped 0.
 
 | Surface | Live title | Notes |
 |---------|------------|--------|
-| `/tours/bali-motorbike-traveling-trip` | Bali Motorbike Traveling Trip \| From IDR 450K (45) | 200, 1 H1, self-canonical, FAQ, 14 JSON-LD. **No** “facts AI can cite” on live HTML. |
+| `/tours/bali-motorbike-traveling-trip` | Bali Motorbike Tour Ubud \| From IDR 450K (40) | Coverage + money-page upgrade: GEO block, AggregateOffer (6 destinations), speakable Q&A. Live HTML still the pre-PR title until deploy. |
 | `/tours/utv-buggy-bali-adventure` | UTV Buggy Bali \| Single 1.2M · Tandem 1.5M (42) | GEO block live; in `pricing.md` / tour summaries; **missing from `GEO_INVENTORY`** until this PR. |
 | `/tours/bali-safari-and-marine-park` | Bali Safari Tickets \| From IDR 1M (33) | GEO block live; six price options; pickup quoted. |
 | `/tours/canyoning` | Bali Canyoning \| From IDR 1.85M (31) | GEO block live; not a boat. |

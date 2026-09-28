@@ -42,7 +42,7 @@ Generators: `src/data/geoContent.ts` → `buildLlmsTxt()` (`/llms.txt`, `/.well-
 | Half Day Tanah Lot | `half-day-ubud-tanah-lot-tour` | 450,000 | Yes | Yes | Private car (same) |
 | Private Bali itinerary | `bali-private-itinerary` | 600,000+ / car-day · HiAce quoted | Yes | Yes | Driver-day product; consultation only — no booking form |
 | UTV at Bali Buggy Adventures | `utv-buggy-bali-adventure` | 1,200,000 single · 1,500,000 tandem | Yes | Yes | Quoted · Pemogan · lunch included · not Sedang ATV |
-| Bali Motorbike Traveling Trip | `bali-motorbike-traveling-trip` | 450,000–800,000 / scooter | Yes | Yes | Pickup at chosen area · tickets not included |
+| Bali Motorbike Tour | `bali-motorbike-traveling-trip` | 450,000–800,000 / scooter | Yes | Yes | Pickup at chosen area · tickets not included · IDP or pillion |
 | Bali Bird Park | `bali-bird-park` | 585,000 | Yes | Yes | Quoted |
 | Elephant mud fun (Bali Zoo) | `elephant-mud-fun-at-bali-zoo-park` | 1,850,000 | Yes | Yes | Quoted |
 | Bali Safari packages | `bali-safari-and-marine-park` | 1,000,000–2,300,000 (Hopper→Rhino) | Yes | Yes | Quoted |

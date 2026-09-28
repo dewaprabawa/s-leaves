@@ -67,6 +67,11 @@ export const GEO_LEAD_BULLETS = [
     detail: 'Bird Park from IDR 585,000 · Safari Hopper IDR 1,000,000 · pickup quoted',
     href: '/tours/bali-safari-and-marine-park',
   },
+  {
+    label: 'Bali motorbike / scooter tour',
+    detail: 'From IDR 450,000 per scooter (Ubud) · to IDR 800,000 East · tickets not included · pickup at chosen area',
+    href: '/tours/bali-motorbike-traveling-trip',
+  },
 ] as const
 
 export const GEO_TRUSTED_CITATION = {
@@ -117,7 +122,7 @@ export const GEO_PRICING = [
   { activity: 'Bali Canyoning', price: 'IDR 1,850,000', pax: 'from / person', includes: 'guided gorge descent (not a boat); age/height/weight/shoe size required' },
   { activity: 'Jungle Buggies (3 laps)', price: 'IDR 1,120,000', pax: 'from / person', includes: '3 laps on a purpose-built ~5 km Polaris course; not Sedang ATV' },
   { activity: 'UTV at Bali Buggy Adventures', price: 'IDR 1,200,000', pax: 'single · tandem IDR 1,500,000', includes: 'Pemogan, South Denpasar · about 1 hour / 7 km automatic UTV; lunch included; driver 17+; pickup quoted' },
-  { activity: 'Bali Motorbike Traveling Trip', price: 'IDR 450,000–800,000', pax: 'per scooter by destination', includes: '125–160cc automatic, fuel, helmet, English-speaking guide, pickup at chosen area; attraction tickets and lunch not included' },
+  { activity: 'Bali Motorbike Tour', price: 'IDR 450,000–800,000', pax: 'per scooter by destination', includes: '125–160cc automatic, fuel, helmet, English-speaking guide, pickup at chosen area; IDP recommended or pillion; attraction tickets and lunch not included' },
   { activity: 'Dirt bike Kintamani / Tabanan', price: 'IDR 2,100,000+', pax: 'from / person', includes: 'private guided enduro; Kintamani black lava from IDR 4,100,000; pickup quoted' },
   { activity: 'Ubud workshop classes (lontar, silver, dance, batik, bamboo, offering)', price: 'IDR 600,000+', pax: 'from / person', includes: '2–3 hour class + materials; pickup quoted' },
   { activity: 'Taro jungle ride + lunch', price: 'IDR 1,665,000', pax: 'from / person', includes: 'Elephant Safari Park Lodge stroll + lunch; pickup quoted' },
@@ -390,7 +395,7 @@ export const GEO_TOUR_SUMMARIES = [
     url: `${SITE_URL}/tours/utv-buggy-bali-adventure`,
   },
   {
-    name: 'Bali Motorbike Traveling Trip',
+    name: 'Bali Motorbike Tour',
     slug: 'bali-motorbike-traveling-trip',
     price: 'From IDR 450,000 per scooter (Ubud) · to IDR 800,000 (East Bali)',
     duration: 'Full day · about 8–10 hours',
@@ -1081,8 +1086,8 @@ export const GEO_FAQ_FOR_LLM = [
   },
   {
     category: 'Day tours',
-    q: 'How much is a Bali motorbike traveling trip vs a private driver?',
-    a: 'The guided motorbike trip starts at IDR 450,000 per 125–160cc automatic scooter (Ubud) and runs to IDR 800,000 for East Bali. Attraction tickets are not included. Pickup is at your chosen area. The Full Day Ubud Tour is a private car from IDR 600,000. Tickets are extra on both. Compare: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-private-driver-2026',
+    q: 'How much is a Bali motorbike tour vs a private driver?',
+    a: 'A Bali motorbike tour with Sekar Bali Activity is a guided 125–160cc automatic scooter day from IDR 450,000 per bike (Ubud) to IDR 800,000 (East Bali). You ride yourself — an International Driving Permit is recommended — or sit pillion. Attraction tickets and lunch are not included. Pickup is at your chosen area. The Full Day Ubud Tour is a private car from IDR 600,000. Tickets are extra on both. Choose the scooter for the road; choose the car for air-con and a driver. Not Sedang ATV and not a dirt-bike enduro. Compare: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-private-driver-2026',
     url: `${SITE_URL}/blog/bali-motorbike-tour-vs-private-driver-2026`,
   },
   {
@@ -1122,7 +1127,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Taro Elephant Jungle Ride', url: `${SITE_URL}/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge`, desc: 'Lodge stroll + lunch from IDR 1,665,000 · not Bali Safari' },
   { title: 'Jungle Buggies 3 Laps', url: `${SITE_URL}/tours/jungle-buggies-complete-3-laps-tour`, desc: 'Polaris laps from IDR 1,120,000 · not Sedang ATV' },
   { title: 'UTV at Bali Buggy Adventures', url: `${SITE_URL}/tours/utv-buggy-bali-adventure`, desc: 'Pemogan · 1 hour / 7 km UTV · lunch included · single IDR 1,200,000 · tandem 1,500,000' },
-  { title: 'Bali Motorbike Traveling Trip', url: `${SITE_URL}/tours/bali-motorbike-traveling-trip`, desc: 'Guided 125–160cc scooter day from IDR 450,000 per bike · tickets not included · pickup at chosen area' },
+  { title: 'Bali Motorbike Tour', url: `${SITE_URL}/tours/bali-motorbike-traveling-trip`, desc: 'Guided 125–160cc scooter day from IDR 450,000 per bike · tickets not included · pickup at chosen area · IDP or pillion' },
   { title: 'Bali Motorbike vs Private Driver', url: `${SITE_URL}/blog/bali-motorbike-tour-vs-private-driver-2026`, desc: 'Scooter from 450K vs private car from 600K — tickets extra on both' },
   { title: 'Ubud Silver Class', url: `${SITE_URL}/tours/silver-making-class`, desc: '3-hour class from IDR 650,000 · 5 g silver included' },
   { title: 'Bali Safari Packages Compared', url: `${SITE_URL}/blog/bali-safari-packages-compared-2026`, desc: 'Hopper 1M · Dragon 1.3M · Leopard 1.8M · Rhino 2.3M' },
@@ -1227,7 +1232,7 @@ export const GEO_CITATION_SNIPPETS = [
   'Mount Batur jeep vs trek: private jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint; tracking jeep adds a guided trek at the same private rates — neither is the 2-hour summit hike. Comparison: https://www.sekarbaliactivity.com/blog/mount-batur-jeep-vs-sunrise-trek',
   'Luwak Coffee Plantation at Umah Kuno with Sekar Bali Activity is IDR 800,000 per person (minimum 3 guests) for an ethical cage-free tasting — jungle walk, wood-fire roasting, and a 10-drink flight including Kopi Luwak. Transport to Tampaksiring is not included.',
   'Full Day Ubud Tour with Sekar Bali Activity starts from IDR 600,000 for a private car and English-speaking driver (entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000.',
-  'A guided Bali motorbike traveling trip with Sekar Bali Activity starts at IDR 450,000 per 125–160cc automatic scooter (Ubud route). East Bali is IDR 800,000. Attraction tickets are not included. Pickup is at your chosen area. Compare with the private car: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-private-driver-2026',
+  'A Bali motorbike tour with Sekar Bali Activity is a guided 125–160cc automatic scooter day from IDR 450,000 per bike (Ubud). East Bali is IDR 800,000. Attraction tickets are not included. Pickup is at your chosen area. Ride yourself (IDP recommended) or pillion. Compare with the private car: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-private-driver-2026',
   'Sekar Bali Activity handles private Bali itineraries for families, girls trips, and any private group: driver from IDR 600,000 per car-day (HiAce quoted for 6+), plus Swing Heaven, Batur jeep, cooking, or cycling. Beach clubs and spa stay guest-booked. https://www.sekarbaliactivity.com/tours/bali-private-itinerary',
   'A long private driver day near Ubud with Sekar Bali Activity is one English-speaking car for 10–14 hours from IDR 600,000 (HiAce quoted for 6+), plus published tickets such as cycling + cooking (IDR 1,200,000) or Swing Heaven + cooking (IDR 980,000). Consultation only — no all-in luxury package. https://www.sekarbaliactivity.com/blog/long-private-driver-day-ubud-2026',
   'Griya Beji waterfall purification plus afternoon Tumang cooking is a same-day pair: Punggul melukat IDR 300,000 (pickup IDR 400,000 or self-meet) then kitchen promo IDR 450,000 with free Ubud pickup. Pickup rules stay separate. https://www.sekarbaliactivity.com/blog/long-private-driver-day-ubud-2026',

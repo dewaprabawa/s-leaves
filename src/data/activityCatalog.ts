@@ -44,7 +44,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "day-tour",
     label: TOUR_CATEGORY_LABELS["day-tour"],
-    blurb: "Private Ubud & temple days · guided motorbike trip from IDR 450K per scooter",
+    blurb: "Private Ubud & temple days · Bali motorbike tour from IDR 450K per scooter",
     href: "/#day-tours",
   },
   {

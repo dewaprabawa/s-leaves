@@ -1,7 +1,7 @@
 # Action Plan — New Activities SEO / GEO
 
 **Date:** 2026-09-28  
-**Live score (new-activity surfaces):** 62/100 · **After this PR:** 84/100  
+**Live score (new-activity surfaces):** 62/100 · **After coverage PR:** 84/100 · **After motorbike money-page upgrade:** 88/100  
 **Conversion goal:** WhatsApp booking with prefilled details (itinerary stays consultation-only)
 
 ## 1. Immediate blockers
@@ -12,7 +12,7 @@ The **commercial GEO blocker** was the motorbike money page shipping without age
 
 ## 2. Done in this revision (2026-09-28)
 
-1. **Motorbike GEO stack** — `motorbikeTrip.ts` constants; 54-word TLDR; priced destination table; five self-contained Q&As; citation snippet.
+1. **Motorbike GEO stack** — `motorbikeTrip.ts` constants; 54-word TLDR; priced destination table; extractable Q&As; citation snippets.
 2. **Keywords** — first-class `KEYWORD_CLUSTERS['bali-motorbike-traveling-trip']` (head / book / compare). Not park-workshop.
 3. **Agent files** — `GEO_PRICING`, `GEO_TOUR_SUMMARIES`, `GEO_INVENTORY`, pickup policy, things-to-do FAQ, comparison table in `GEO_COMPARISONS`.
 4. **UTV inventory** — Bali Buggy Adventures + 1.2M / 1.5M added to `GEO_INVENTORY` (was summaries-only).
@@ -20,6 +20,7 @@ The **commercial GEO blocker** was the motorbike money page shipping without age
 6. **Comparison spoke** — `/blog/bali-motorbike-tour-vs-private-driver-2026` with mapped CTA (motorbike vs full-day car vs ATV). Head terms stay on the money page.
 7. **Schema** — Organization `priceRange` `IDR 300000 - IDR 4100000`; Website `dateModified` 2026-09-28.
 8. **Sitemap** — motorbike is a money-page priority; spoke lastmod override 2026-09-28. `assertSitemapInventory` passes (123 locs).
+9. **Motorbike money-page upgrade** — title job `Bali Motorbike Tour Ubud | From IDR 450K`; definition-first body + price/compare tables; `TouristTrip`+`Product` `AggregateOffer` (6 destinations); speakable WebPage + standalone `Question`/`Answer` (no FAQPage); IDP / pillion / waterfall / vs-dirt-bike facts; `GEO_LEAD_BULLETS` row. `GEO_QUICK_ANSWER` unchanged.
 
 ## 3. Still open
 

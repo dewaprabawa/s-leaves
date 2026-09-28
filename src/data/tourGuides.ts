@@ -595,9 +595,10 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Lontar weaving', href: '/tours/lontar-weaving-class', blurb: 'Same palm family — offering baskets.' },
   ],
   'bali-motorbike-traveling-trip': [
-    { title: 'Motorbike trip vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026', blurb: 'Scooter from IDR 450K vs private car from IDR 600K — tickets extra on both.' },
+    { title: 'Motorbike tour vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026', blurb: 'Scooter from IDR 450K vs private car from IDR 600K — tickets extra on both.' },
     { title: 'Full day Ubud car', href: '/tours/full-day-ubud-tour', blurb: 'Air-con driver day if you do not want to ride.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle-mud quad — a different machine, lunch included.' },
+    { title: 'Kintamani dirt bike', href: '/tours/dirt-bike-kintamani-black-lava', blurb: 'Enduro on lava from IDR 4.1M — not this scooter day.' },
     { title: 'Things to do near Ubud 2026', href: '/blog/things-to-do-near-ubud-2026', blurb: 'See the scooter next to cooking, jeep, and park tickets.' },
   ],
   'half-day-ubud-tanah-lot-tour': [
@@ -704,7 +705,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'bali-motorbike-traveling-trip': {
     title: 'From our scooter guides',
-    body: 'Say the destination and whether you ride or go pillion. The published price is per 125–160cc automatic scooter — Ubud from IDR 450,000, East Bali IDR 800,000. Temple and waterfall tickets stay on you. We meet at the area you choose, not with the IDR 400,000 ATV pickup surcharge.',
+    body: 'Say the destination and whether you ride or go pillion. An International Driving Permit is recommended if you drive. The published price is per 125–160cc automatic scooter — Ubud from IDR 450,000, the waterfall day IDR 500,000, East Bali IDR 800,000. Temple and waterfall tickets stay on you. We meet at the area you choose, not with the IDR 400,000 ATV pickup surcharge. This is not Sedang ATV and not a dirt-bike enduro.',
   },
 }
 

@@ -329,7 +329,7 @@ Tumang cooking is a strong same-day partner (promo **IDR 450,000**, max 8, free 
 > - **Same price** · sunrise or sunset · sit-in or tracking
 > - Sunrise: pickup **02:00–03:00** · **6–7 hours** door to door
 > - Sunset: pickup **14:30–15:30** · **4–5 hours**
-> - 2 guests **IDR 950,000** · 3+ **IDR 750,000** · hot spring **+IDR 150,000** (ticket included)
+> - Sit-in 2 guests **IDR 2,000,000** · tracking 2 guests **IDR 1,800,000** · 3+ **IDR 750,000** · hot spring **+IDR 150,000** (ticket included)
 > - Island-wide hotel pickup is **in the rate**
 
 ## Side-by-side
@@ -369,19 +369,19 @@ Families with young kids, guests landing the night before, and anyone who alread
   {
     slug: 'mount-batur-sit-in-jeep-vs-tracking',
     title: 'Sit-In Jeep vs Tracking Jeep on Mount Batur',
-    seoTitle: 'Sit-In vs Tracking Jeep Batur | Same Rate',
+    seoTitle: 'Sit-In vs Tracking Jeep Batur | 2M vs 1.8M',
     excerpt:
-      'Private sit-in 4×4 stays seated to the crater rim. Tracking jeep adds a guided walk — same private IDR, still not the 2-hour summit trek. Meal included.',
+      'Private sit-in 4×4 stays seated to the crater rim (IDR 2,000,000 for 2). Tracking jeep adds a guided walk (IDR 1,800,000 for 2) — still not the 2-hour summit trek. Meal included.',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
     content: `
-**What is the difference between a sit-in Mount Batur jeep and a tracking jeep?** **Sit-in** means you stay in the **private 4×4** to the eastern-flank crater-rim viewpoint (~1,350m). **Tracking** means the **same private jeep plus a guided walk** to that viewpoint. [Both use the same private rates](/tours/batur-sunrise-jeep-tour): **minimum 2 guests**, **IDR 950,000** (2) or **IDR 750,000** (3+). Neither is the classic **2-hour summit trek**.
+**What is the difference between a sit-in Mount Batur jeep and a tracking jeep?** **Sit-in** means you stay in the **private 4×4** to the eastern-flank crater-rim viewpoint (~1,350m) — **IDR 2,000,000 for 2 guests**. **Tracking** means the **same private jeep plus a guided walk** to that viewpoint — **IDR 1,800,000 for 2 guests**. [Book either on the jeep page](/tours/batur-sunrise-jeep-tour): **minimum 2 guests**, **IDR 750,000** for 3+. Neither is the classic **2-hour summit trek**.
 
 > **Key Takeaways**
-> - Same jeep · same viewpoint · same IDR · different legs
-> - Sit-in: no hike — families, knees, “I just want the sunrise”
-> - Tracking: moderate walking — closed shoes required
+> - Same jeep · same viewpoint · different 2-guest package · different legs
+> - Sit-in: no hike — families, knees, “I just want the sunrise” · **2,000,000 for 2**
+> - Tracking: moderate walking — closed shoes required · **1,800,000 for 2**
 > - **Meal included** after the viewpoint on both
 > - Summit stamp? Book a trek operator, not this page
 
@@ -391,7 +391,7 @@ Families with young kids, guests landing the night before, and anyone who alread
 | --- | --- | --- | --- |
 | How you go | Stay seated in the 4×4 | Jeep + guided walk | ~2 hours up in the dark |
 | Fitness | Sit | Moderate walking | Moderate–hard hiking |
-| Price (us) | 950K / 750K | **Same** | Different product |
+| Price (us) | 2,000,000 for 2 / 750,000 3+ | 1,800,000 for 2 / 750,000 3+ | Different product |
 | Meal | Included | Included | Often a trek breakfast |
 | Honest limit | Not the summit | Still not the summit | Steeper, darker |
 
@@ -444,7 +444,7 @@ The full-day promo (**IDR 1,300,000** / person, was 1,450,000) is labelled **Jee
 | Hotel pickup | Yes |
 | Summit trek | **No** |
 
-Short jeep-only days are cheaper: **950,000** (2) or **750,000** (3+) plus optional hot spring **+150,000**. Price table: [2026 jeep price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026). Sit-in vs walk: [tracking vs sit-in](/blog/mount-batur-sit-in-jeep-vs-tracking).
+Short jeep-only days are cheaper: sit-in **2,000,000** for 2 or tracking **1,800,000** for 2, then **750,000** (3+) plus optional hot spring **+150,000**. Price table: [2026 jeep price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026). Sit-in vs walk: [tracking vs sit-in](/blog/mount-batur-sit-in-jeep-vs-tracking).
 
 ## Typical clock
 

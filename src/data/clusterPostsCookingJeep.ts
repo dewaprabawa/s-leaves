@@ -180,18 +180,18 @@ Diet does not lock you to one session. Request veg / vegan on either clock — [
 
 > **Key Takeaways**
 > - Door to door **about 6–7 hours** sunrise · sunset **~4–5 hours**
-> - **Private** · **minimum 2 guests** · **950,000** pp (2) · **750,000** pp (3+)
+> - **Private** · **minimum 2 guests** · sit-in **2,000,000** for 2 · tracking **1,800,000** for 2 · **750,000** pp (3+)
 > - Sit-in **private jeep** or **private tracking jeep** — not the summit hike
 > - **Meal included** after the viewpoint (jeep and tracking)
 > - Optional hot spring **+IDR 150,000** pp with **ticket included**
 
 ## 2026 prices
 
-| Guests in one jeep | Price per person (IDR) |
-| --- | --- |
-| 2 (minimum) | 950,000 |
-| 3+ | 750,000 |
-| Hot spring add-on | +150,000 (ticket included) |
+| Guests in one jeep | Sit-in (IDR) | Tracking (IDR) |
+| --- | --- | --- |
+| 2 (minimum) | 2,000,000 total · 1,000,000 pp | 1,800,000 total · 900,000 pp |
+| 3+ | 750,000 | 750,000 |
+| Hot spring add-on | +150,000 (ticket included) | +150,000 (ticket included) |
 
 Full table: [jeep price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026).
 
@@ -234,9 +234,9 @@ Warm jacket, closed shoes, camera, and cash for optional coffee souvenirs. A hot
 
 > **Key Takeaways**
 > - Private jeep: sit in a 4×4 · no 2-hour hike · **meal included** · **min 2 guests**
-> - Private tracking jeep: same private rates · jeep + guided trek · not the summit
+> - Private tracking jeep: IDR 1,800,000 for 2 · jeep + guided trek · not the summit
 > - Trek: ~2 hours up in the dark · summit trail · higher fitness
-> - Jeep prices (2026): **950,000** (2 pax) · **750,000** (3+) · hot spring **+150,000** with ticket
+> - Jeep prices (2026): sit-in **2,000,000** for 2 · tracking **1,800,000** for 2 · **750,000** (3+) · hot spring **+150,000** with ticket
 > - Hotel pickup **included island-wide** on our jeep
 > - Do not book the jeep if your checklist says “stand on the summit”
 
@@ -254,7 +254,8 @@ Warm jacket, closed shoes, camera, and cash for optional coffee souvenirs. A hot
 
 ## Price: what the jeep includes
 
-- 2 guests (minimum): **IDR 950,000** each
+- Sit-in 2 guests (minimum): **IDR 2,000,000** total (**IDR 1,000,000** each)
+- Tracking 2 guests (minimum): **IDR 1,800,000** total (**IDR 900,000** each)
 - 3+ guests: **IDR 750,000** each
 - Optional hot spring: **+IDR 150,000** each (entrance ticket included)
 
@@ -306,7 +307,7 @@ We do not publish a fake pinned minute for every villa. The honest rule: **south
 
 Private 4×4, driver, hotel pickup & drop-off, hot drink, sit-down meal after the viewpoint, entrance fee, insurance ages 6–65. Food is not cooked inside the 4×4.
 
-Tiers: private · min 2 guests · 2 guests **IDR 950,000** · 3+ **IDR 750,000** per person. Optional hot spring **+IDR 150,000** with ticket included.
+Tiers: private · min 2 guests · sit-in **IDR 2,000,000** for 2 · tracking **IDR 1,800,000** for 2 · 3+ **IDR 750,000** per person. Optional hot spring **+IDR 150,000** with ticket included.
 
 ## Jeep vs ATV pickup
 

@@ -92,7 +92,7 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
     tierLabel: twoPlusDiscount
       ? "2+ discount — IDR 450,000 per person"
       : activityId === "jeep-sunrise"
-        ? "Private · min 2 guests · 3+ group rate"
+        ? "Sit-in 2M for 2 · tracking 1.8M for 2 · 3+ 750K"
         : "3+ group rate — book more, save more",
   }
 }

@@ -5,6 +5,7 @@ export const ACTIVITY_TO_TOUR_SLUG: Record<string, string> = {
   "canyon-tubing": "canyon-tubing",
   cycling: "ubud-ricefield-cycling-tour",
   "jeep-sunrise": "batur-sunrise-jeep-tour",
+  "jeep-tracking": "batur-sunrise-jeep-tour",
   "kintamani-day": "batur-sunrise-jeep-tour",
   "swing-heaven": "swing-heaven-bali",
   "swing-heaven-lunch": "swing-heaven-bali",

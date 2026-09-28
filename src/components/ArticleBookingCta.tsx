@@ -216,7 +216,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-sunrise-jeep-tour-guide-2026': {
     headline: 'Book a private Mount Batur jeep',
-    body: 'Your private sit-in or tracking jeep, sunrise or sunset. Min 2 guests. 2 pax IDR 950K · 3+ IDR 750K. Meal included. Hot spring +IDR 150K with ticket included.',
+    body: 'Sit-in IDR 2,000,000 for 2. Tracking IDR 1,800,000 for 2. 3+ IDR 750,000. Meal included. Hot spring +IDR 150K with ticket included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
   },
@@ -239,7 +239,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     primaryLabel: 'Book Private Jeep',
   },
   'mount-batur-jeep-sunrise-vs-sunset': {
-    headline: 'Choose sunrise or sunset — same private IDR',
+    headline: 'Choose sunrise or sunset — same viewpoint',
     body: '02:00 dawn or 14:30–15:30 sunset. Min 2 guests. Meal included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
@@ -248,7 +248,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-sit-in-jeep-vs-tracking': {
     headline: 'Stay seated or add the guided walk',
-    body: 'Same private rates. Still not the summit trek. Meal included.',
+    body: 'Stay seated (2M for 2) or add the guided walk (1.8M for 2). Still not the summit trek. Meal included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
     secondaryHref: '/blog/mount-batur-jeep-vs-sunrise-trek',
@@ -620,7 +620,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'kintamani-dirt-bike-vs-batur-jeep': {
     headline: 'Viewpoint jeep or lava enduro — pick one',
-    body: 'Private jeep IDR 950,000 for 2 / 750,000 at 3+ with meal and island-wide pickup. Kintamani dirt bike from IDR 4,100,000 — pickup quoted.',
+    body: 'Private sit-in jeep IDR 2,000,000 for 2 / tracking 1,800,000 for 2 / 750,000 at 3+ with meal and island-wide pickup. Kintamani dirt bike from IDR 4,100,000 — pickup quoted.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
     secondaryHref: '/tours/dirt-bike-kintamani-black-lava',

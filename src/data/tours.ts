@@ -46,14 +46,23 @@ import {
   MOTORBIKE_AREA,
   MOTORBIKE_DURATION,
   MOTORBIKE_EAST_IDR,
+  MOTORBIKE_EAST_LIST_IDR,
   MOTORBIKE_ENGINE,
   MOTORBIKE_KINTAMANI_IDR,
+  MOTORBIKE_KINTAMANI_LIST_IDR,
   MOTORBIKE_NORTH_IDR,
+  MOTORBIKE_NORTH_LIST_IDR,
   MOTORBIKE_PICKUP,
+  MOTORBIKE_PRICE_ARTICLE_SLUG,
   MOTORBIKE_SOUTH_IDR,
+  MOTORBIKE_SOUTH_LIST_IDR,
+  MOTORBIKE_SOUTH_SHUTTLE_AREAS,
+  MOTORBIKE_SOUTH_SHUTTLE_IDR,
   MOTORBIKE_TRIP_SLUG,
   MOTORBIKE_UBUD_IDR,
+  MOTORBIKE_UBUD_LIST_IDR,
   MOTORBIKE_WATERFALL_IDR,
+  MOTORBIKE_WATERFALL_LIST_IDR,
 } from "@/data/motorbikeTrip"
 
 const COOKING_PRIVATE_SOLO_DIFF =
@@ -2361,9 +2370,9 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
     pickup: MOTORBIKE_PICKUP,
     duration: MOTORBIKE_DURATION,
     basePrice: MOTORBIKE_UBUD_IDR,
-    seoTitle: "Bali Motorbike Tour Ubud | From IDR 450K",
+    seoTitle: "Bali Motorbike Tour Ubud | Promo from 450K",
     seoDescription:
-      "Guided Bali scooter tour from Ubud: 125–160cc automatic, ride (IDP) or pillion. From IDR 450K. Tickets extra. Pickup at your chosen area. WhatsApp.",
+      "Guided Bali scooter promo from IDR 450K (was 550K). Canggu, Jimbaran, Nusa Dua shuttle IDR 550K. Tickets extra. Ride or pillion. WhatsApp.",
     heroImage: {
       url: "/images/adventures/motorbike-tour-hero.jpg",
       alt: "Smiling guests wearing helmets on a guided Bali motorbike traveling trip",
@@ -2381,21 +2390,22 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
       },
     ],
     shortDescription:
-      `A Bali motorbike tour is a guided ${MOTORBIKE_ENGINE} scooter day from IDR ${(MOTORBIKE_UBUD_IDR / 1000).toFixed(0)}K per bike — Ubud, waterfalls, Kintamani, South, North, or East. Tickets not included. Ride yourself (IDP recommended) or pillion. Pickup at your chosen area.`,
-    fullDescription: `A **Bali motorbike tour** is a guided full-day ride on a **${MOTORBIKE_ENGINE} scooter**, not a jungle-mud ATV and not a private car with a driver. Sekar Bali Activity leads six public-road routes from the Ubud area. **Prices are per scooter.** Attraction entrance tickets and lunch stay on you. ${MOTORBIKE_PICKUP} — share the pin when you book. Ride your own bike (an International Driving Permit is recommended) or sit pillion.
+      `A Bali motorbike tour is a guided ${MOTORBIKE_ENGINE} scooter day. Promo from IDR ${(MOTORBIKE_UBUD_IDR / 1000).toFixed(0)}K per bike (was IDR ${(MOTORBIKE_UBUD_LIST_IDR / 1000).toFixed(0)}K) — Ubud, waterfalls, Kintamani, South, North, or East. Tickets not included. Ride yourself (IDP recommended) or pillion. Pickup at your chosen area. Canggu / Jimbaran / Nusa Dua shuttle IDR ${(MOTORBIKE_SOUTH_SHUTTLE_IDR / 1000).toFixed(0)}K once per booking.`,
+    fullDescription: `A **Bali motorbike tour** is a guided full-day ride on a **${MOTORBIKE_ENGINE} scooter**, not a jungle-mud ATV and not a private car with a driver. Sekar Bali Activity leads six public-road routes from the Ubud area. **Prices are per scooter.** The figures below are **2026 promo rates** — the bookable charge is unchanged; the “was” column is the compare-at list. Attraction entrance tickets and lunch stay on you. ${MOTORBIKE_PICKUP} — share the pin when you book. Shuttle from **${MOTORBIKE_SOUTH_SHUTTLE_AREAS}** is **IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} once per booking**, not the IDR 400,000 adventure surcharge. Ride your own bike (an International Driving Permit is recommended) or sit pillion.
 
-### 2026 scooter prices (per bike)
+### 2026 scooter promo (per bike)
 
-| Destination | IDR / scooter | Typical stops |
-| --- | --- | --- |
-| Ubud | **${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}** | Rice terrace, Ulun Petanu, Gunung Kawi, Umah Kuno, Monkey Forest |
-| Ubud waterfalls | **${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")}** | Kanto Lampo, Tibumana, Suwat, Tukad Cepung, Tegenungan |
-| Kintamani | **${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")}** | Sunrise view, Pura Jati Segara, optional hot spring, Penglipuran |
-| South Bali | **${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")}** | Tanah Lot, Uluwatu, GWK, Melasti, optional Kedonganan dinner |
-| North Bali | **${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")}** | Sangeh, Leke-Leke, Beratan Lake, Jatiluwih |
-| East Bali | **${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")}** | Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach |
+| Destination | Promo / scooter | Was | Typical stops |
+| --- | --- | --- | --- |
+| Ubud | **${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}** | ${MOTORBIKE_UBUD_LIST_IDR.toLocaleString("id-ID")} | Rice terrace, Ulun Petanu, Gunung Kawi, Umah Kuno, Monkey Forest |
+| Ubud waterfalls | **${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")}** | ${MOTORBIKE_WATERFALL_LIST_IDR.toLocaleString("id-ID")} | Kanto Lampo, Tibumana, Suwat, Tukad Cepung, Tegenungan |
+| Kintamani | **${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")}** | ${MOTORBIKE_KINTAMANI_LIST_IDR.toLocaleString("id-ID")} | Sunrise view, Pura Jati Segara, optional hot spring, Penglipuran |
+| South Bali | **${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")}** | ${MOTORBIKE_SOUTH_LIST_IDR.toLocaleString("id-ID")} | Tanah Lot, Uluwatu, GWK, Melasti, optional Kedonganan dinner |
+| North Bali | **${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")}** | ${MOTORBIKE_NORTH_LIST_IDR.toLocaleString("id-ID")} | Sangeh, Leke-Leke, Beratan Lake, Jatiluwih |
+| East Bali | **${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")}** | ${MOTORBIKE_EAST_LIST_IDR.toLocaleString("id-ID")} | Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach |
+| Canggu / Jimbaran / Nusa Dua shuttle | **${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")}** | — | Once per booking · optional · not the IDR 400,000 ATV surcharge |
 
-Included: ${MOTORBIKE_ENGINE} scooter, fuel, helmet, bottled water, English-speaking guide, pickup at your chosen area. **Not included:** temple / waterfall tickets, lunch, gratuities.
+Included: ${MOTORBIKE_ENGINE} scooter, fuel, helmet, bottled water, English-speaking guide, pickup at your chosen area. **Not included:** temple / waterfall tickets, lunch, gratuities, Canggu / Jimbaran / Nusa Dua shuttle. Price breakdown: [Bali motorbike tour price 2026](/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}).
 
 ### Scooter vs private car vs ATV
 
@@ -2404,10 +2414,10 @@ Included: ${MOTORBIKE_ENGINE} scooter, fuel, helmet, bottled water, English-spea
 | From price | **${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}** / scooter | **600,000** / car | **750,000** / rider |
 | You ride? | Yes, or pillion | No — driver | Yes, on a jungle-mud quad |
 | Tickets | Extra | Extra | Arena day — lunch included |
-| Pickup | Chosen area | Hotel start | IDR 400,000 or self-meet |
+| Pickup | Chosen area · Canggu / Jimbaran / Nusa Dua shuttle IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} | Hotel start | IDR 400,000 or self-meet |
 | Best when | You want the road and photos | Kids, heat, or no license | You want mud, not public roads |
 
-The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine. Full compare: [motorbike tour vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026).
+The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine. Full compare: [motorbike tour vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026). Promo + shuttle: [motorbike tour price 2026](/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}).
 
 ### Ubud Traveling Trip — IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")} / scooter
 
@@ -2447,16 +2457,17 @@ The East Bali scooter day — Besakih, water palaces, and Virgin Beach. Highest 
 
 ### Good to know
 - Motorbikes are ${MOTORBIKE_ENGINE}s.
-- Price is per scooter and excludes attraction entrance tickets.
+- Promo is per scooter and excludes attraction entrance tickets. Ubud promo **IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}** (was ${MOTORBIKE_UBUD_LIST_IDR.toLocaleString("id-ID")}); East promo **IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")}** (was ${MOTORBIKE_EAST_LIST_IDR.toLocaleString("id-ID")}).
 - Pickup is at your chosen area — not free Ubud cycling/cooking pickup, not island-wide jeep pickup, and not the IDR 400,000 adventure surcharge.
+- Shuttle from **${MOTORBIKE_SOUTH_SHUTTLE_AREAS}** is **IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} once per booking**. Skip it if your pin is already in the ride area.
 - An International Driving Permit is recommended if you ride. Say pillion on WhatsApp if you do not want to drive.
 
-Message WhatsApp with your **date, pickup pin, destination, and ride or pillion**.`,
+Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, and whether you need the Canggu / Jimbaran / Nusa Dua shuttle.`,
     highlights: [
       "125–160cc automatic motorbikes/scooters",
-      "Ubud from IDR 450K · East Bali IDR 800K per scooter",
+      "Ubud promo IDR 450K (was 550K) · East promo IDR 800K (was 900K)",
       "Ride yourself (IDP recommended) or pillion",
-      "Pickup at your chosen area · tickets not included",
+      "Pickup at your chosen area · Canggu / Jimbaran / Nusa Dua shuttle IDR 550K",
       "Not Sedang ATV and not a private car day",
     ],
     included: [
@@ -2471,6 +2482,7 @@ Message WhatsApp with your **date, pickup pin, destination, and ride or pillion*
       "Attraction entrance tickets (not included)",
       "Lunch & personal expenses",
       "Gratuities",
+      `Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} (IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} once per booking)`,
     ],
     activityOptions: [
       { name: "Ubud Traveling Trip", priceDiff: 0, description: `Per scooter (${MOTORBIKE_ENGINE}) · Rice terrace, Ulun Petanu waterfall, Gunung Kawi Tampaksiring, Bali Umah Kuno & Monkey Forest` },
@@ -2485,7 +2497,7 @@ Message WhatsApp with your **date, pickup pin, destination, and ride or pillion*
         id: "iti-moto-1",
         time: "Morning",
         title: "Pickup & Safety Briefing",
-        description: "Your guide meets you at your chosen pickup point, fits your helmet, and outlines the route for your selected destination.",
+        description: "Your guide meets you at your chosen pickup point, fits your helmet, and outlines the route for your selected destination. If you booked the Canggu / Jimbaran / Nusa Dua shuttle, the car collects you first.",
       },
       {
         id: "iti-moto-2",
@@ -2522,7 +2534,7 @@ Message WhatsApp with your **date, pickup pin, destination, and ride or pillion*
       {
         id: "faq-moto-2",
         question: "How is the price calculated?",
-        answer: `Prices are per scooter by destination: Ubud IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}, Ubud Waterfall IDR ${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")}, Kintamani IDR ${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")}, South Bali IDR ${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")}, North Bali IDR ${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")}, and East Bali IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")}. Attraction entrance tickets and lunch are not included.`,
+        answer: `Promo rates are per scooter by destination: Ubud IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")} (was ${MOTORBIKE_UBUD_LIST_IDR.toLocaleString("id-ID")}), Ubud Waterfall IDR ${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")} (was ${MOTORBIKE_WATERFALL_LIST_IDR.toLocaleString("id-ID")}), Kintamani IDR ${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")} (was ${MOTORBIKE_KINTAMANI_LIST_IDR.toLocaleString("id-ID")}), South Bali IDR ${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")} (was ${MOTORBIKE_SOUTH_LIST_IDR.toLocaleString("id-ID")}), North Bali IDR ${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")} (was ${MOTORBIKE_NORTH_LIST_IDR.toLocaleString("id-ID")}), and East Bali IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")} (was ${MOTORBIKE_EAST_LIST_IDR.toLocaleString("id-ID")}). The promo is the bookable charge — we did not lower it. Attraction entrance tickets and lunch are not included. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} once per booking.`,
       },
       {
         id: "faq-moto-3",
@@ -2537,7 +2549,17 @@ Message WhatsApp with your **date, pickup pin, destination, and ride or pillion*
       {
         id: "faq-moto-5",
         question: "Is pickup included and are tickets extra?",
-        answer: "Pickup is at your chosen area — share the pin when booking. That meet is in the scooter price. It is not free Ubud cycling/cooking pickup and not the IDR 400,000 adventure surcharge. Attraction entrance tickets are paid on site.",
+        answer: `Pickup is at your chosen area — share the pin when booking. That meet is in the scooter promo. It is not free Ubud cycling/cooking pickup and not the IDR 400,000 adventure surcharge. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} once per booking. Attraction entrance tickets are paid on site.`,
+      },
+      {
+        id: "faq-moto-shuttle",
+        question: "How much is the shuttle from Canggu, Jimbaran, or Nusa Dua?",
+        answer: `IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} once per booking when we collect you from Canggu, Jimbaran, or Nusa Dua. It is not the IDR 400,000 ATV/rafting surcharge and not island-wide jeep pickup. Skip it if your pin is already in the ride area. Tickets and lunch stay extra.`,
+      },
+      {
+        id: "faq-moto-jp-cn",
+        question: "Can Japanese, Korean, Chinese, or Middle East visitors book this in English?",
+        answer: "Yes. The website, WhatsApp booking, and published prices stay in English and Indonesian rupiah. Guides speak English. You do not need Japanese, Korean, Chinese, or Arabic on the form. Ride yourself with an International Driving Permit, or say pillion. If you stay in Canggu, Jimbaran, or Nusa Dua, the shuttle is IDR 550,000 once per booking. https://www.sekarbaliactivity.com/blog/bali-tours-for-japanese-chinese-travelers-2026",
       },
       {
         id: "faq-moto-6",

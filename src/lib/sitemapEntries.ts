@@ -66,6 +66,8 @@ const HIGH_BLOG_SLUGS = new Set([
   'ubud-workshop-classes-2026',
   'kintamani-dirt-bike-vs-batur-jeep',
   'bali-bird-park-from-ubud-2026',
+  'bali-motorbike-tour-price-2026',
+  'bali-tours-for-japanese-chinese-travelers-2026',
   'bali-motorbike-tour-vs-private-driver-2026',
 ])
 
@@ -108,6 +110,8 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'ubud-workshop-classes-2026': ACTIVITY_GEO_UPDATED,
   'kintamani-dirt-bike-vs-batur-jeep': ACTIVITY_GEO_UPDATED,
   'bali-bird-park-from-ubud-2026': ACTIVITY_GEO_UPDATED,
+  'bali-motorbike-tour-price-2026': ACTIVITY_GEO_UPDATED,
+  'bali-tours-for-japanese-chinese-travelers-2026': ACTIVITY_GEO_UPDATED,
   'bali-motorbike-tour-vs-private-driver-2026': ACTIVITY_GEO_UPDATED,
 }
 

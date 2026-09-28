@@ -40,6 +40,19 @@ export type TourOptionalAddon = {
   label: string
   blurb: string
   perPerson: number
+  /** Charge once per booking instead of × guest count (e.g. a south-area shuttle). */
+  flat?: boolean
+}
+
+function addonAmount(addon: TourOptionalAddon, pax: number) {
+  return addon.flat ? addon.perPerson : addon.perPerson * pax
+}
+
+function addonSummary(addon: TourOptionalAddon, pax: number) {
+  if (addon.flat) {
+    return `${addon.label} · ${formatIdr(addon.perPerson)} (once per booking)`
+  }
+  return `${addon.label} · ${formatIdr(addon.perPerson)} × ${pax} person(s) (ticket included)`
 }
 
 export interface TourConfig {
@@ -239,7 +252,7 @@ export function BookingPopup({
   )
   const addonPax = Math.max(1, adults) + kids
   const addonTotal = selectedAddons.reduce(
-    (sum, addon) => sum + addon.perPerson * addonPax,
+    (sum, addon) => sum + addonAmount(addon, addonPax),
     0,
   )
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
@@ -384,9 +397,7 @@ export function BookingPopup({
       pickupNoteParts.push('Sit-down meal included after the viewpoint (jeep or tracking)')
     }
     for (const addon of selectedAddons) {
-      pickupNoteParts.push(
-        `${addon.label} · ${formatIdr(addon.perPerson)} × ${addonPax} person(s) (ticket included)`,
-      )
+      pickupNoteParts.push(addonSummary(addon, addonPax))
     }
 
     const lineItems: { label: string; amount: number }[] = []
@@ -427,8 +438,10 @@ export function BookingPopup({
     }
     for (const addon of selectedAddons) {
       lineItems.push({
-        label: `${addon.label} — ${addonPax} person(s) × ${formatIdr(addon.perPerson)} (ticket included)`,
-        amount: addon.perPerson * addonPax,
+        label: addon.flat
+          ? `${addon.label} — ${formatIdr(addon.perPerson)} (once per booking)`
+          : `${addon.label} — ${addonPax} person(s) × ${formatIdr(addon.perPerson)} (ticket included)`,
+        amount: addonAmount(addon, addonPax),
       })
     }
     if (pickupFee > 0) {
@@ -1046,11 +1059,9 @@ export function BookingPopup({
                 key={addon.id}
                 className="flex justify-between items-center mb-2 text-sm text-brand-green-light"
               >
-                <span>
-                  {addon.label} · {formatIdr(addon.perPerson)} × {addonPax} (ticket included)
-                </span>
+                <span>{addonSummary(addon, addonPax)}</span>
                 <span className="font-semibold text-brand-green">
-                  {formatIdr(addon.perPerson * addonPax)}
+                  {formatIdr(addonAmount(addon, addonPax))}
                 </span>
               </div>
             ))}

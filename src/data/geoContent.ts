@@ -30,7 +30,7 @@ import {
 import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-09-28'
+export const GEO_UPDATED = '2026-09-29'
 
 /** First 40–60 words — extractable “X is…” answer for AI Overviews / ChatGPT */
 export const GEO_QUICK_ANSWER =
@@ -622,7 +622,7 @@ export const GEO_COMPARISONS = [
     title: 'Kintamani scooter vs Mount Batur jeep',
     winner: 'Scooter = public-road day; jeep = private crater-rim 4×4 — not the summit hike',
     rows: [
-      { label: 'Kintamani scooter', value: 'IDR 600,000 / bike · tickets extra · ride or pillion' },
+      { label: 'Kintamani scooter', value: 'IDR 650,000 / bike · tickets extra · ride or pillion' },
       { label: 'Private Batur jeep', value: 'From IDR 750,000 at 3+ · meal included · island-wide pickup' },
       { label: 'Best for', value: 'Penglipuran + waterfall loop vs pre-dawn no-hike sunrise' },
     ],
@@ -1222,8 +1222,8 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Bali Motorbike vs Dirt Bike', url: `${SITE_URL}/blog/bali-motorbike-tour-vs-dirt-bike-2026`, desc: 'Scooter 450K vs Tabanan 2.1M / Kintamani 4.1M' },
   { title: 'Ubud Waterfall Scooter Tour', url: `${SITE_URL}/blog/ubud-waterfall-scooter-tour-2026`, desc: 'Five falls from IDR 500,000 per scooter — tickets extra' },
   { title: 'Bali Motorbike Tour IDP', url: `${SITE_URL}/blog/bali-motorbike-tour-idp-license-2026`, desc: 'Ride with an IDP or sit pillion' },
-  { title: 'East & South Bali Motorbike Tour', url: `${SITE_URL}/blog/east-south-bali-motorbike-tour-2026`, desc: 'South 650K · East 800K · tickets extra' },
-  { title: 'Kintamani Scooter vs Batur Jeep', url: `${SITE_URL}/blog/kintamani-scooter-vs-batur-jeep-2026`, desc: 'Public-road 600K vs private crater-rim 4×4' },
+  { title: 'East & South Bali Motorbike Tour', url: `${SITE_URL}/blog/east-south-bali-motorbike-tour-2026`, desc: 'South 750K · East 800K · tickets extra' },
+  { title: 'Kintamani Scooter vs Batur Jeep', url: `${SITE_URL}/blog/kintamani-scooter-vs-batur-jeep-2026`, desc: 'Public-road 650K vs private crater-rim 4×4' },
   { title: 'ATV vs Kuber Cave', url: `${SITE_URL}/blog/bali-atv-vs-kuber-cave-2026`, desc: 'Sedang mud — we do not sell the Payangan cave' },
   { title: 'Which Bali Wheels 2026', url: `${SITE_URL}/blog/which-bali-wheels-2026`, desc: 'Scooter, ATV, UTV, dirt bike, jeep in one table' },
   { title: 'Free Bali activity planners', url: `${SITE_URL}/planners`, desc: 'Working IDR calculators for ATV, scooter, jeep, cooking, and hotel pickup — not a cloned AI-tool directory' },

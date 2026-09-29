@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.16
+**Document version:** v2.17
 **Last updated:** 2026-09-29
 
 ## Product Overview
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.17 (2026-09-29) — Motorbike promo: Kintamani **IDR 650,000** (was 750,000 list) and South Bali **IDR 750,000** (was 850,000 list). Ubud 450K / waterfall 500K / North 750K / East 800K unchanged.
 - v2.16 (2026-09-29) — Public `/planners` hub (not blocked `/tools/`) adapts Letaido’s free-tool directory: unique URLs for ATV / jeep / scooter / cooking calculators, a pickup checker, and a mood chooser. Do not clone AI SEO tools onto the tour site.
 - v2.15 (2026-09-28) — Motorbike commercial cluster: scooter vs ATV, vs dirt bike, waterfall day, IDP/pillion, East/South routes, Kintamani scooter vs jeep, plus ATV-vs-Kuber and a wheels chooser. Competitor facts stay honest (we do not sell Kuber cave).
 - v2.14 (2026-09-28) — Motorbike money page now owns **Bali motorbike tour / scooter tour Ubud**: definition-first body, per-destination AggregateOffer, speakable Question/Answer (no FAQPage), IDP/pillion/waterfall facts. Pickup stays at the chosen area — not free Ubud pickup and not the IDR 400K surcharge.

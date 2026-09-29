@@ -27,6 +27,9 @@ export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   'kintamani-day': 'Private Kintamani Day',
   'swing-heaven': 'Swing Heaven',
   'swing-heaven-lunch': 'Swing Heaven + Lunch',
+  'utv-single': 'Single UTV',
+  'utv-tandem': 'Tandem UTV',
+  'jungle-buggies-3-laps': 'Jungle Buggies 3 Laps',
 }
 
 /** Compatible add-ons for each primary activity (excluding cycling) */

@@ -65,6 +65,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'All New Bali Adventure location', href: '/blog/bali-atv-all-new-bali-adventure-location-guide' },
     { title: 'Mud track vs cave/tunnel', href: '/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel' },
     { title: 'ATV vs Kuber cave', href: '/blog/bali-atv-vs-kuber-cave-2026' },
+    { title: 'UTV vs ATV vs jungle buggies', href: '/blog/bali-utv-buggy-vs-atv-2026' },
     { title: 'Scooter tour vs ATV', href: '/blog/bali-scooter-tour-vs-atv-2026' },
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026' },
     { title: 'ATV + tubing combo', href: '/blog/atv-river-tubing-wos-river-bali' },
@@ -161,6 +162,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book Bali Zoo mud fun', href: '/tours/elephant-mud-fun-at-bali-zoo-park' },
   ],
   canyonBuggy: [
+    { title: 'UTV vs ATV vs jungle buggies', href: '/blog/bali-utv-buggy-vs-atv-2026' },
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies' },
     { title: 'Book Bali canyoning', href: '/tours/canyoning' },
     { title: 'Book jungle buggies', href: '/tours/jungle-buggies-complete-3-laps-tour' },
@@ -275,6 +277,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'bali-zoo-vs-bali-safari-vs-taro': 'parks',
   'bali-bird-park-from-ubud-2026': 'parks',
   'bali-canyoning-vs-tubing-vs-buggies': 'canyonBuggy',
+  'bali-utv-buggy-vs-atv-2026': 'canyonBuggy',
   'ubud-workshop-classes-2026': 'workshops',
   'kintamani-dirt-bike-vs-batur-jeep': 'dirtBike',
   'perfect-one-day-ubud-itinerary': 'dayTour',
@@ -382,6 +385,7 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     HUB,
   ],
   canyonBuggy: [
+    { title: 'UTV vs ATV vs jungle buggies', href: '/blog/bali-utv-buggy-vs-atv-2026' },
     { title: 'Ayung River rafting', href: '/tours/whitewater-rafting' },
     { title: 'Kintamani dirt bike vs jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep' },
     HUB,

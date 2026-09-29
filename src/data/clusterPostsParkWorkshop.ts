@@ -2,6 +2,57 @@
 
 export const PARK_WORKSHOP_CLUSTER_POSTS = [
   {
+    slug: 'bali-utv-buggy-vs-atv-2026',
+    title: 'UTV vs ATV vs Jungle Buggies Bali 2026: Which Buggy?',
+    seoTitle: 'UTV vs ATV Bali 2026 | 1.2M or 750K',
+    excerpt:
+      'Pemogan UTV from IDR 1.2M, Sedang ATV from 750K, jungle buggies 3 laps from 1.12M. Three machines. Pickup quoted vs 400K. WhatsApp.',
+    publishedAt: '2026-09-29',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/utv-buggy-ricefield.jpg',
+    content: `
+**Should you book a UTV, an ATV, or jungle buggies in Bali?** They are **three tickets**. A [UTV at Bali Buggy Adventures](/tours/utv-buggy-bali-adventure) in **Pemogan, South Denpasar** is a **1-hour / 7 km automatic sit-in** ride — single **IDR 1,200,000**, tandem **IDR 1,500,000** for two on one buggy, lunch included. [Sedang ATV](/tours/bali-atv-adventure) at All New Bali Adventure is a **quad** on jungle mud from **IDR 750,000**, lunch included, pickup **IDR 400,000** or self-meet. [Jungle buggies 3 laps](/tours/jungle-buggies-complete-3-laps-tour) are **Polaris laps** on a purpose-built ~5 km course from **IDR 1,120,000**. UTV and jungle-buggy pickup is **quoted** — not the ATV surcharge. WhatsApp — **no payment to inquire**.
+
+> **Key Takeaways**
+> - **UTV:** sit-in automatic · **1 hour / 7 km** · Pemogan · lunch · **1.2M / 1.5M**
+> - **ATV:** quad on Sedang mud · 2–4 hours · lunch · **from 750K** · pickup **400K** or self-meet
+> - **Jungle buggies:** Polaris 3 laps · ~2 hours · **1.12M** / person · pickup quoted
+> - Driver **17+** on the UTV · tandem passenger **6+**
+> - We book the UTV and Polaris seats; we operate the Sedang ATV arena
+
+## Side-by-side (2026)
+
+| | [Pemogan UTV](/tours/utv-buggy-bali-adventure) | [Sedang ATV](/tours/bali-atv-adventure) | [Jungle buggies](/tours/jungle-buggies-complete-3-laps-tour) |
+| --- | --- | --- | --- |
+| From (IDR) | **1,200,000** single · **1,500,000** tandem | **750,000** single · tandem **1,100,000** / bike | **1,120,000** / person |
+| Machine | Sit-in automatic UTV | Four-wheel quad | Polaris lap rig |
+| Time / line | **1 hour / 7 km** | 2–4 hours jungle mud | ~2 hours · 3 × ~5 km |
+| Lunch | Included | Included | Not this ticket |
+| Pickup | **Quoted** or self-meet | **IDR 400,000** or self-meet | **Quoted** or self-meet |
+| We operate? | We book the seat | Yes (Sedang arena) | We book the seat |
+
+The UTV track is Crocodile Cave, water pits, rice fields, mud, circuit, fun speed, and jungle. Address: Gg. Merta Shanti No.20 A, Pemogan. [Open the money page](/tours/utv-buggy-bali-adventure) or [WhatsApp checkout](/book?activity=utv-single).
+
+## Who should book which
+
+Book the **UTV** when you want a **short south-Denpasar hour**, a steering wheel, and lunch on the card. Two guests sharing one buggy pay the tandem rate — cheaper than two singles.
+
+Book the **ATV** when the point is **jungle mud and river crossings** near Ubud, not a Pemogan pin. Pickup is the published **IDR 400,000** surcharge or free self-meet at All New Bali Adventure.
+
+Book **jungle buggies** when you want **Polaris laps** on a purpose-built course, not Sedang mud and not the 7 km UTV line.
+
+Chooser for every machine we sell: [which Bali wheels 2026](/blog/which-bali-wheels-2026). Water vs land: [canyoning vs tubing vs buggies](/blog/bali-canyoning-vs-tubing-vs-buggies).
+
+## How to book
+
+1. Open the [UTV page](/tours/utv-buggy-bali-adventure), the [ATV page](/tours/bali-atv-adventure), or [jungle buggies](/tours/jungle-buggies-complete-3-laps-tour)
+2. WhatsApp **which machine, date, guest count, single or tandem, hotel pin**
+3. We confirm IDR + pickup — **no deposit to ask**
+
+**Ready?** Book the [Pemogan UTV](/book?activity=utv-single), [Sedang ATV](/tours/bali-atv-adventure), or [jungle buggies 3 laps](/tours/jungle-buggies-complete-3-laps-tour).
+`,
+  },
+  {
     slug: 'bali-safari-packages-compared-2026',
     title: 'Bali Safari Packages Compared 2026: Hopper, Dragon, Leopard, Rhino',
     seoTitle: 'Bali Safari Packages 2026 | Hopper to Rhino',
@@ -143,7 +194,7 @@ First-timers and families who want water without ropes: [canyon tubing](/tours/c
 2. WhatsApp **which sport, date, guest count, measurements if canyoning, hotel**
 3. We confirm IDR — **no deposit to ask**
 
-**Ready?** [Canyoning](/tours/canyoning) · [Tubing](/tours/canyon-tubing) · [Buggies](/tours/jungle-buggies-complete-3-laps-tour) · [UTV](/tours/utv-buggy-bali-adventure) · [ATV](/tours/bali-atv-adventure).
+**Ready?** [Canyoning](/tours/canyoning) · [Tubing](/tours/canyon-tubing) · [Buggies](/tours/jungle-buggies-complete-3-laps-tour) · [UTV](/tours/utv-buggy-bali-adventure) · [ATV](/tours/bali-atv-adventure) · [UTV vs ATV vs buggies](/blog/bali-utv-buggy-vs-atv-2026).
 `,
   },
   {

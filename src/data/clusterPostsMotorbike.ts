@@ -405,7 +405,7 @@ Culture days without engines: [Tumang cooking](/tours/balinese-cooking-class) pr
 | “Clutch and lava” | [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 | “One hour near the airport” | [UTV](/tours/utv-buggy-bali-adventure) |
 
-Spoke compares: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026) · [scooter vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026) · [Kintamani scooter vs jeep](/blog/kintamani-scooter-vs-batur-jeep-2026).
+Spoke compares: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [UTV vs ATV vs jungle buggies](/blog/bali-utv-buggy-vs-atv-2026) · [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026) · [scooter vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026) · [Kintamani scooter vs jeep](/blog/kintamani-scooter-vs-batur-jeep-2026).
 
 ## How to book
 

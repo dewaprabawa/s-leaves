@@ -513,6 +513,8 @@ export const BOOK_PAGE_KEYWORDS: string[] = uniqueKeywords([
   'cycling cooking class Ubud',
   'jungle swing and cooking class Ubud',
   'Swing Heaven cooking class Ubud',
+  'UTV buggy Bali',
+  'book UTV buggy WhatsApp',
   BRAND_KEYWORD,
 ])
 
@@ -754,6 +756,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'bali-safari-packages-compared-2026': 'site',
   'bali-zoo-vs-bali-safari-vs-taro': 'site',
   'bali-canyoning-vs-tubing-vs-buggies': ['canyon-tubing', 'bali-atv-adventure'],
+  'bali-utv-buggy-vs-atv-2026': 'site',
   'ubud-workshop-classes-2026': 'site',
   'kintamani-dirt-bike-vs-batur-jeep': 'batur-sunrise-jeep-tour',
   'bali-bird-park-from-ubud-2026': 'site',
@@ -899,6 +902,12 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'bali-canyoning-vs-tubing-vs-buggies': [
     'canyoning vs canyon tubing Bali',
     'jungle buggies vs ATV Ubud',
+  ],
+  'bali-utv-buggy-vs-atv-2026': [
+    'UTV vs ATV Ubud',
+    'UTV vs jungle buggies Bali',
+    'UTV buggy Bali price',
+    'Bali Buggy Adventures Pemogan',
   ],
   'ubud-workshop-classes-2026': [
     'Ubud batik class price',

@@ -99,6 +99,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'bali-zoo-vs-bali-safari-vs-taro': 'elephant-mud-fun-at-bali-zoo-park',
   'bali-bird-park-from-ubud-2026': 'bali-bird-park',
   'bali-canyoning-vs-tubing-vs-buggies': 'canyoning',
+  'bali-utv-buggy-vs-atv-2026': 'utv-buggy-bali-adventure',
   'ubud-workshop-classes-2026': 'batik-class',
   'kintamani-dirt-bike-vs-batur-jeep': 'dirt-bike-kintamani-black-lava',
 }

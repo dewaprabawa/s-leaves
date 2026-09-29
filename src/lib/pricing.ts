@@ -133,17 +133,34 @@ export type ActivityQuote = {
   childSubtotal: number
 }
 
+import { isUtvTandemId } from '@/data/utvBuggy'
+
 export function quoteActivity(input: ActivityQuoteInput): ActivityQuote | null {
   const id = input.activityId as ActivityId
   const children = input.children ?? 0
 
   if (!TIER_PRICES_IDR[id]) {
     if (!input.fallbackAdultPrice) return null
+    // Tandem UTV is priced per buggy (two guests share), not per person.
+    if (isUtvTandemId(input.activityId)) {
+      const units = Math.max(1, Math.floor(input.adults / 2))
+      return {
+        activityId: input.activityId,
+        unitLabel: 'tandem buggy',
+        units,
+        unitPrice: input.fallbackAdultPrice,
+        tierLabel: 'Tandem UTV',
+        activitySubtotal: units * input.fallbackAdultPrice,
+        childCount: 0,
+        childUnitPrice: 0,
+        childSubtotal: 0,
+      }
+    }
     const billableAdults = Math.max(1, input.adults)
     const childPrice = input.fallbackChildPrice ?? 0
     return {
       activityId: input.activityId,
-      unitLabel: 'person',
+      unitLabel: input.activityId === 'utv-single' ? 'buggy' : 'person',
       units: billableAdults,
       unitPrice: input.fallbackAdultPrice,
       tierLabel: 'Standard rate',

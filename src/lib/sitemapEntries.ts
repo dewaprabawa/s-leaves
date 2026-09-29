@@ -26,6 +26,7 @@ const MONEY_TOUR_SLUGS = new Set([
   'bali-bird-park',
   'bali-safari-and-marine-park',
   'canyoning',
+  'jungle-buggies-complete-3-laps-tour',
   'utv-buggy-bali-adventure',
   'bali-motorbike-traveling-trip',
 ])
@@ -64,6 +65,7 @@ const HIGH_BLOG_SLUGS = new Set([
   'bali-safari-packages-compared-2026',
   'bali-zoo-vs-bali-safari-vs-taro',
   'bali-canyoning-vs-tubing-vs-buggies',
+  'bali-utv-buggy-vs-atv-2026',
   'ubud-workshop-classes-2026',
   'kintamani-dirt-bike-vs-batur-jeep',
   'bali-bird-park-from-ubud-2026',
@@ -116,6 +118,7 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'bali-safari-packages-compared-2026': ACTIVITY_GEO_UPDATED,
   'bali-zoo-vs-bali-safari-vs-taro': ACTIVITY_GEO_UPDATED,
   'bali-canyoning-vs-tubing-vs-buggies': ACTIVITY_GEO_UPDATED,
+  'bali-utv-buggy-vs-atv-2026': ACTIVITY_GEO_UPDATED,
   'ubud-workshop-classes-2026': ACTIVITY_GEO_UPDATED,
   'kintamani-dirt-bike-vs-batur-jeep': ACTIVITY_GEO_UPDATED,
   'bali-bird-park-from-ubud-2026': ACTIVITY_GEO_UPDATED,

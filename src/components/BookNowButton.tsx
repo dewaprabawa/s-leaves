@@ -15,6 +15,15 @@ import {
   GRIYA_BEJI_PURIFICATION_IDR,
   GRIYA_BEJI_VENUE,
 } from "@/data/griyaBeji"
+import {
+  UTV_BUGGY_SELF_MEET,
+  UTV_BUGGY_SINGLE_ID,
+  UTV_BUGGY_SINGLE_IDR,
+  UTV_BUGGY_TANDEM_ID,
+  UTV_BUGGY_TANDEM_IDR,
+  UTV_BUGGY_TIMES,
+} from "@/data/utvBuggy"
+import { JUNGLE_BUGGIES_ID, JUNGLE_BUGGIES_IDR } from "@/data/parkWorkshopTours"
 
 const JEEP_HOT_SPRING_ADDON = {
   id: "hotspring",
@@ -203,6 +212,35 @@ export const BOOKABLE_TOURS: TourConfig[] = [
       address: GRIYA_BEJI_VENUE.address,
       mapUrl: GRIYA_BEJI_VENUE.mapUrl,
     },
+  },
+  {
+    id: UTV_BUGGY_SINGLE_ID,
+    title: "Single UTV Buggy",
+    times: [...UTV_BUGGY_TIMES],
+    adultPrice: UTV_BUGGY_SINGLE_IDR,
+    kidPrice: null,
+    minPax: 1,
+    pickupQuoted: true,
+    selfMeet: UTV_BUGGY_SELF_MEET,
+  },
+  {
+    id: UTV_BUGGY_TANDEM_ID,
+    title: "Tandem UTV Buggy",
+    times: [...UTV_BUGGY_TIMES],
+    adultPrice: UTV_BUGGY_TANDEM_IDR,
+    kidPrice: null,
+    minPax: 2,
+    pickupQuoted: true,
+    selfMeet: UTV_BUGGY_SELF_MEET,
+  },
+  {
+    id: JUNGLE_BUGGIES_ID,
+    title: "Jungle Buggies — Complete 3 Laps",
+    times: ["09:00", "10:00", "11:00", "13:00", "14:00"],
+    adultPrice: JUNGLE_BUGGIES_IDR,
+    kidPrice: null,
+    minPax: 1,
+    pickupQuoted: true,
   },
 ]
 

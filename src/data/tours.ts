@@ -35,12 +35,17 @@ import {
   UTV_BUGGY_ADDRESS,
   UTV_BUGGY_AREA,
   UTV_BUGGY_DURATION,
+  UTV_BUGGY_INCLUDED,
   UTV_BUGGY_MAP_URL,
+  UTV_BUGGY_SEO_DESCRIPTION,
+  UTV_BUGGY_SEO_TITLE,
   UTV_BUGGY_SINGLE_IDR,
   UTV_BUGGY_SITE,
   UTV_BUGGY_SLUG,
   UTV_BUGGY_TANDEM_IDR,
+  UTV_BUGGY_TRACK,
   UTV_BUGGY_VENUE,
+  UTV_BUGGY_VS_ATV_ARTICLE_SLUG,
 } from "@/data/utvBuggy"
 import {
   MOTORBIKE_AREA,
@@ -2580,9 +2585,8 @@ Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, a
     pickup: "Quoted on WhatsApp or self-meet",
     duration: UTV_BUGGY_DURATION,
     basePrice: UTV_BUGGY_SINGLE_IDR,
-    seoTitle: "UTV Buggy Bali | Single 1.2M · Tandem 1.5M",
-    seoDescription:
-      "Bali Buggy Adventures in Pemogan: 1-hour 7 km UTV. Lunch included. Single IDR 1,200,000 · tandem 1,500,000. WhatsApp.",
+    seoTitle: UTV_BUGGY_SEO_TITLE,
+    seoDescription: UTV_BUGGY_SEO_DESCRIPTION,
     heroImage: {
       url: "/images/adventures/utv-buggy-ricefield.jpg",
       alt: "Two UTV buggies splashing through a muddy ricefield track in Bali",
@@ -2605,52 +2609,48 @@ Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, a
     ],
     shortDescription:
       "Bali Buggy Adventures in Pemogan, South Denpasar. About 1 hour / 7 km automatic UTV. Lunch included. Single IDR 1,200,000 · tandem IDR 1,500,000.",
-    fullDescription: `**Want a 1-hour UTV, not a quad and not a 3-lap Polaris course?** We book **[${UTV_BUGGY_VENUE}](${UTV_BUGGY_SITE})** in **Pemogan, South Denpasar** — an **automatic** sit-in UTV on a **7 km** line: Crocodile Cave (Goa Buaya), water pits, rice fields, mud, circuit, fun speed, and jungle.
+    fullDescription: `**A UTV buggy in Bali with Sekar Bali Activity is a 1-hour automatic sit-in ride at [${UTV_BUGGY_VENUE}](${UTV_BUGGY_SITE}) in Pemogan, South Denpasar.** Single is **IDR ${UTV_BUGGY_SINGLE_IDR.toLocaleString("id-ID")}**. Tandem is **IDR ${UTV_BUGGY_TANDEM_IDR.toLocaleString("id-ID")}** for two on one buggy. The line is **7 km**: ${UTV_BUGGY_TRACK}. Lunch (fried rice or fried noodles) is included. Hotel pickup is **quoted** — not free Ubud cycling pickup and not the IDR 400,000 Sedang ATV surcharge.
 
-**Track / self-meet:** ${UTV_BUGGY_ADDRESS}. [Open in Maps](${UTV_BUGGY_MAP_URL}). Hotel pickup is **quoted** — do not assume it is in the from-price.
+**Track / self-meet:** ${UTV_BUGGY_ADDRESS}. [Open in Maps](${UTV_BUGGY_MAP_URL}).
 
-This is **not** [Sedang ATV](/tours/bali-atv-adventure) at All New Bali Adventure and **not** the imported [jungle buggies 3-lap](/tours/jungle-buggies-complete-3-laps-tour) Polaris ticket.
+This is **not** [Sedang ATV](/tours/bali-atv-adventure) (a quad at All New Bali Adventure from IDR 750,000) and **not** the imported [jungle buggies 3-lap](/tours/jungle-buggies-complete-3-laps-tour) Polaris ticket from IDR 1,120,000. Compare: [UTV vs ATV vs jungle buggies](/blog/${UTV_BUGGY_VS_ATV_ARTICLE_SLUG}).
 
 ### 2026 prices
 | Rig | Price | Who |
 |-----|-------|-----|
 | **Single UTV** | **IDR ${UTV_BUGGY_SINGLE_IDR.toLocaleString("id-ID")}** | One rider (driver, 17+) |
 | **Tandem UTV** | **IDR ${UTV_BUGGY_TANDEM_IDR.toLocaleString("id-ID")}** | Two guests on one buggy (passenger 6+) |
+| **Hotel pickup** | **Quoted** | Or self-meet at the Pemogan pin |
+
+### UTV vs ATV vs jungle buggies
+| | UTV (this page) | Sedang ATV | Jungle buggies 3 laps |
+|-----|-------|-----|-----|
+| From (IDR) | **1,200,000** single · **1,500,000** tandem | **750,000** single | **1,120,000** / person |
+| Machine | Sit-in automatic UTV | Quad | Polaris lap rig |
+| Time / distance | **1 hour / 7 km** | 2–4 hours jungle mud | ~2 hours · 3 × ~5 km laps |
+| Lunch | Included | Included | Not this ticket |
+| Pickup | Quoted | IDR 400,000 or self-meet | Quoted |
 
 ### Already included
-- Welcome drink
-- Towel, soap, and shower
-- Locker
-- Insurance
-- Lunch (fried rice or fried noodles)
-- Safety gear (helmet and boots)
-- Professional instructor
+${UTV_BUGGY_INCLUDED.map((item) => `- ${item}`).join("\n")}
 
-Hotel pickup is **quoted**. We book the seat; the track crew runs the briefing.
+We book the seat; the track crew runs the briefing.
 
 ### Terms
 1. The guest who **drives** must be able to drive.
 2. Minimum age: **17** (driver) · **6** (passenger).
 3. The buggy is **automatic** — easy to drive.
 4. Duration about **1 hour** on a **7 km** track.
-5. Track: Crocodile Cave, water pits, rice fields, mud, circuit, fun speed, jungle.
+5. Track: ${UTV_BUGGY_TRACK}.
 
-WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
+WhatsApp **date, guest count, and single or tandem** — or use the Book button. No payment to inquire.`,
     highlights: [
       "About 1 hour · 7 km automatic UTV",
       "Crocodile Cave, rice fields, mud, circuit, fun speed, jungle",
       "Lunch (fried rice / fried noodles) plus welcome drink, locker, shower",
       "Driver 17+ · passenger 6+ · not Sedang ATV",
     ],
-    included: [
-      "Welcome drink",
-      "Towel, soap, and shower",
-      "Locker",
-      "Insurance",
-      "Lunch (fried rice or fried noodles)",
-      "Safety gear (helmet and boots)",
-      "Professional instructor",
-    ],
+    included: [...UTV_BUGGY_INCLUDED],
     notIncluded: [
       "Hotel pickup unless quoted",
       "Sedang ATV or jungle-buggies 3-lap tickets (different venues)",
@@ -2711,7 +2711,7 @@ WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
         id: "faq-utv-4",
         question: "Is this the same as your Ubud ATV?",
         answer:
-          "No. ATV at All New Bali Adventure in Sedang is a quad-bike jungle-mud ticket from IDR 750,000. This is a sit-in automatic UTV at Bali Buggy Adventures in Pemogan, South Denpasar, for about 1 hour / 7 km.",
+          "No. ATV at All New Bali Adventure in Sedang is a quad-bike jungle-mud ticket from IDR 750,000. This is a sit-in automatic UTV at Bali Buggy Adventures in Pemogan, South Denpasar, for about 1 hour / 7 km. Guide: https://www.sekarbaliactivity.com/blog/bali-utv-buggy-vs-atv-2026",
       },
       {
         id: "faq-utv-5",
@@ -2729,7 +2729,13 @@ WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
         id: "faq-utv-7",
         question: "Is hotel pickup included?",
         answer:
-          "Usually not in the from-price. We quote a private driver or you self-meet. Say your hotel area on WhatsApp.",
+          "Usually not in the from-price. We quote a private driver or you self-meet at Gg. Merta Shanti No.20 A, Pemogan. Do not assume the IDR 400,000 Sedang ATV surcharge.",
+      },
+      {
+        id: "faq-utv-8",
+        question: "Can I book the UTV on the WhatsApp checkout page?",
+        answer:
+          "Yes. Open the UTV page or /book?activity=utv-single, pick single (IDR 1,200,000) or tandem (IDR 1,500,000), send date and guest count. Pickup is quoted separately — do not assume the IDR 400,000 Sedang ATV surcharge. No payment to inquire.",
       },
     ],
     reviews: [],

@@ -356,9 +356,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ─── Keep the floating AI Assistant button clear of the mobile sticky booking bar ─── */
+.consultation-interest-tray {
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+}
+
+html.has-consultation-tray body {
+  padding-bottom: 12rem;
+}
+
 @media (max-width: 1023px) {
   html.has-mobile-book-bar .ai-assistant-fab {
     bottom: calc(5.5rem + env(safe-area-inset-bottom));
+  }
+
+  html.has-consultation-tray .ai-assistant-fab {
+    bottom: calc(11.5rem + env(safe-area-inset-bottom));
+  }
+
+  html.has-mobile-book-bar.has-consultation-tray .consultation-interest-tray {
+    bottom: calc(4.75rem + env(safe-area-inset-bottom));
+  }
+
+  html.has-mobile-book-bar.has-consultation-tray .ai-assistant-fab {
+    bottom: calc(16.5rem + env(safe-area-inset-bottom));
+  }
+}
+
+@media (min-width: 1024px) {
+  html.has-consultation-tray .ai-assistant-fab {
+    bottom: calc(10.5rem + env(safe-area-inset-bottom));
   }
 }
 

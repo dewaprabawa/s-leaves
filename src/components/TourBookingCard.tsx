@@ -8,6 +8,7 @@ import PromoPrice from "@/components/PromoPrice"
 import { getListPrice, getPromoListPrice } from "@/lib/pricing"
 import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
+import AskAboutActivityButton from "@/components/AskAboutActivityButton"
 import { buildGirlsTripWhatsAppUrl, GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import {
   COOKING_CLASS_PRICE_IDR,
@@ -433,11 +434,12 @@ export default function TourBookingCard(props: TourBookingCardProps) {
         <p className="text-xs text-brand-green-light leading-relaxed">
           {isPrivateItinerary
             ? "Consultation only — there is no booking form or checkout for this itinerary. WhatsApp group type, dates, villa area, guest count, and your day list. We reply with a driver + activity quote. No payment to inquire."
-            : "Tap below to enter your name, age, adult/child, location, and activity — then send everything to WhatsApp with the price included. Or start a free WhatsApp consultation if you still have questions."}
+            : "Tap below to enter your name, age, adult/child, location, and activity — then send everything to WhatsApp with the price included. Or start a free WhatsApp consultation. Use Ask about this to collect several activities into one chat."}
         </p>
 
         <div className="space-y-3">
           {isPrivateItinerary ? (
+            <>
             <a
               href={consultationUrl}
               target="_blank"
@@ -447,6 +449,12 @@ export default function TourBookingCard(props: TourBookingCardProps) {
               <MessageCircle className="w-4 h-4" />
               WhatsApp Consultation <ArrowRight className="w-4 h-4" />
             </a>
+            <AskAboutActivityButton
+              slug={props.tourSlug}
+              title={props.title}
+              variant="row"
+            />
+            </>
           ) : (
             <>
               <button
@@ -469,6 +477,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
                 <MessageCircle className="w-4 h-4" />
                 WhatsApp Consultation
               </a>
+              <AskAboutActivityButton
+                slug={props.tourSlug}
+                title={props.title}
+                variant="row"
+              />
             </>
           )}
         </div>

@@ -82,16 +82,50 @@ export function openWhatsAppBooking(payload: WhatsAppBookingPayload) {
   window.open(buildWhatsAppBookingUrl(payload), '_blank', 'noopener,noreferrer')
 }
 
-/** Pre-filled WhatsApp consult for an activity detail page (no booking form required). */
-export function buildWhatsAppConsultationMessage(activity: string, pageUrl?: string) {
+export type ConsultationActivityRef = {
+  title: string
+  pageUrl?: string
+}
+
+function normalizeConsultationActivities(
+  activity: string | ConsultationActivityRef[],
+  pageUrl?: string,
+): ConsultationActivityRef[] {
+  if (Array.isArray(activity)) {
+    return activity.filter((item) => item.title.trim().length > 0)
+  }
+  const title = activity.trim()
+  return title ? [{ title, pageUrl }] : []
+}
+
+/** Pre-filled WhatsApp consult for one or more activities the guest wants to discuss. */
+export function buildWhatsAppConsultationMessage(
+  activity: string | ConsultationActivityRef[],
+  pageUrl?: string,
+) {
+  const items = normalizeConsultationActivities(activity, pageUrl)
   const lines = [
     'Hello Sekar Bali Activity! I would like a WhatsApp consultation.',
     '',
-    `*Activity:* ${activity}`,
   ]
-  if (pageUrl) {
-    lines.push(`*Page:* ${pageUrl}`)
+
+  if (items.length === 0) {
+    lines.push('I would like help choosing activities.')
+  } else if (items.length === 1) {
+    lines.push(`*Activity:* ${items[0].title}`)
+    if (items[0].pageUrl) {
+      lines.push(`*Page:* ${items[0].pageUrl}`)
+    }
+  } else {
+    lines.push(`I am interested in these ${items.length} activities:`)
+    items.forEach((item, index) => {
+      lines.push(`${index + 1}. *${item.title}*`)
+      if (item.pageUrl) {
+        lines.push(`   ${item.pageUrl}`)
+      }
+    })
   }
+
   lines.push(
     '',
     'Please help with availability, group pricing, and pickup options. Thank you!',
@@ -99,7 +133,10 @@ export function buildWhatsAppConsultationMessage(activity: string, pageUrl?: str
   return lines.join('\n')
 }
 
-export function buildWhatsAppConsultationUrl(activity: string, pageUrl?: string) {
+export function buildWhatsAppConsultationUrl(
+  activity: string | ConsultationActivityRef[],
+  pageUrl?: string,
+) {
   const text = buildWhatsAppConsultationMessage(activity, pageUrl)
   return `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(text)}`
 }

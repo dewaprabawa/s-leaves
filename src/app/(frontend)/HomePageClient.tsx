@@ -60,6 +60,7 @@ import {
 } from "@/data/cultureSales"
 import { GRIYA_BEJI_PURIFICATION_IDR, GRIYA_BEJI_SALES } from "@/data/griyaBeji"
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
+import AskAboutActivityButton from "@/components/AskAboutActivityButton"
 
 const HERO_BLUR_DATA_URL =
   "data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAKABADASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAgMEBf/EACAQAAIABQUBAAAAAAAAAAAAAAECAAMEESEFEhMxQYH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABcRAAMBAAAAAAAAAAAAAAAAAAABIRH/2gAMAwEAAhEDEQA/AM7RUdmYJMEsFLMffgiCqmvUzGQHcexjJEP0djynJ6HsBWALVzdotZsWiETHkP/Z"
@@ -324,45 +325,50 @@ function bookingSetupForAdventure(adventureId: string): {
 
 function ExperienceCard({ tour }: { tour: Tour }) {
   return (
-    <Link
-      href={`/tours/${tour.slug}`}
-      onClick={() => notifyActivityClick(tour.title, "experience-card")}
-      className="group block border-b border-brand-green/12 pb-6 hover:border-accent-gold transition-colors"
-    >
-      <div className="relative mb-4 aspect-[16/10] overflow-hidden">
-        <Image
-          src={tour.heroImage.url}
-          alt={tour.heroImage.alt}
-          fill
-          sizes="(max-width: 768px) 100vw, 33vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-        />
-        {tour.slug === "batur-sunrise-jeep-tour" ? (
-          <span className="absolute top-3 left-3 bg-accent-gold text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">
-            Private
+    <article className="group border-b border-brand-green/12 pb-6 hover:border-accent-gold transition-colors">
+      <Link
+        href={`/tours/${tour.slug}`}
+        onClick={() => notifyActivityClick(tour.title, "experience-card")}
+        className="block"
+      >
+        <div className="relative mb-4 aspect-[16/10] overflow-hidden">
+          <Image
+            src={tour.heroImage.url}
+            alt={tour.heroImage.alt}
+            fill
+            sizes="(max-width: 768px) 100vw, 33vw"
+            className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+          />
+          {tour.slug === "batur-sunrise-jeep-tour" ? (
+            <span className="absolute top-3 left-3 bg-accent-gold text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">
+              Private
+            </span>
+          ) : null}
+        </div>
+        <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-accent-gold-dark mb-2">
+          {getTourCategoryLabel(tour.category)}
+          {tour.area ? ` · ${tour.area}` : ""}
+        </p>
+        <h3 className="font-display text-xl md:text-2xl font-bold uppercase text-brand-green leading-tight mb-2 group-hover:text-accent-gold-dark transition-colors">
+          {tour.title}
+        </h3>
+        <p className="text-sm text-brand-green-light leading-relaxed mb-3 line-clamp-2">
+          {tour.shortDescription}
+        </p>
+        <div className="flex items-center justify-between gap-3 text-sm">
+          <span className="inline-flex items-center gap-1.5 text-brand-green-light">
+            <Clock3 className="w-3.5 h-3.5" />
+            {tour.duration}
           </span>
-        ) : null}
+          <span className="font-bold text-brand-green">
+            from IDR {tour.basePrice.toLocaleString("id-ID")}
+          </span>
+        </div>
+      </Link>
+      <div className="mt-3">
+        <AskAboutActivityButton slug={tour.slug} title={tour.title} variant="chip" />
       </div>
-      <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-accent-gold-dark mb-2">
-        {getTourCategoryLabel(tour.category)}
-        {tour.area ? ` · ${tour.area}` : ""}
-      </p>
-      <h3 className="font-display text-xl md:text-2xl font-bold uppercase text-brand-green leading-tight mb-2 group-hover:text-accent-gold-dark transition-colors">
-        {tour.title}
-      </h3>
-      <p className="text-sm text-brand-green-light leading-relaxed mb-3 line-clamp-2">
-        {tour.shortDescription}
-      </p>
-      <div className="flex items-center justify-between gap-3 text-sm">
-        <span className="inline-flex items-center gap-1.5 text-brand-green-light">
-          <Clock3 className="w-3.5 h-3.5" />
-          {tour.duration}
-        </span>
-        <span className="font-bold text-brand-green">
-          from IDR {tour.basePrice.toLocaleString("id-ID")}
-        </span>
-      </div>
-    </Link>
+    </article>
   )
 }
 

@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from "react"
 import Link from "next/link"
-import { Menu, X, Clock, MapPin } from "lucide-react"
+import { Menu, X, Clock, MapPin, ListPlus } from "lucide-react"
+import { useConsultationInterests } from "@/hooks/useConsultationInterests"
 
 type HeaderNavProps = {
   siteName: string
@@ -11,6 +12,7 @@ type HeaderNavProps = {
 export default function HeaderNav({ siteName }: HeaderNavProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const { items: consultationItems } = useConsultationInterests()
 
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)
@@ -75,6 +77,18 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
           </nav>
 
           <div className="flex items-center gap-3">
+            {consultationItems.length > 0 ? (
+              <Link
+                href="/experiences"
+                className="relative inline-flex items-center justify-center h-10 w-10 rounded-full bg-brand-green/8 text-brand-green hover:bg-brand-green/15"
+                aria-label={`Consultation list, ${consultationItems.length} ${consultationItems.length === 1 ? "activity" : "activities"}`}
+              >
+                <ListPlus className="w-5 h-5" />
+                <span className="absolute -top-0.5 -right-0.5 min-w-4 h-4 px-1 rounded-full bg-accent-gold text-white text-[10px] font-bold flex items-center justify-center">
+                  {consultationItems.length}
+                </span>
+              </Link>
+            ) : null}
             <Link
               href="/book"
               className="inline-flex items-center h-10 md:h-11 px-4 sm:px-6 md:px-8 rounded-full btn-gold-shimmer font-bold text-xs sm:text-sm uppercase tracking-wider"
@@ -107,6 +121,15 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
                 {link.label}
               </Link>
             ))}
+            {consultationItems.length > 0 ? (
+              <Link
+                href="/experiences"
+                onClick={closeMenu}
+                className="font-display text-4xl font-bold uppercase tracking-wide text-brand-green py-3 border-b border-brand-green/10 hover:text-accent-gold-dark transition-colors"
+              >
+                My list ({consultationItems.length})
+              </Link>
+            ) : null}
           </div>
           <div className="px-8 pb-10 flex flex-col gap-3">
             <Link

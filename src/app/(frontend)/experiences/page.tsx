@@ -91,9 +91,9 @@ export default function ExperiencesPage() {
             Browse every experience
           </h1>
           <p className="text-sm md:text-base text-brand-green-light leading-relaxed">
-            Filter the catalog, then open the tour page for IDR, pickup rules, and WhatsApp.
-            The homepage is for picking a mood; this page is the full list. Need a number
-            first? Use the{" "}
+            Filter the catalog, tap <strong>Ask about this</strong> on each activity you want
+            to discuss, then send one WhatsApp with every title and page link. Or open a tour
+            page for IDR, pickup rules, and a single-activity consult. Need a number first? Use the{" "}
             <a href="/planners" className="font-semibold text-brand-green underline underline-offset-2">
               free IDR planners
             </a>

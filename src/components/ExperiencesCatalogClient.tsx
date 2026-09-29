@@ -22,6 +22,8 @@ import { COOKING_GEO_ENTITY } from "@/data/cookingGeo"
 import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
 import { buildWhatsAppConsultationUrl, formatIdr } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
+import AskAboutActivityButton from "@/components/AskAboutActivityButton"
+import { useConsultationInterests } from "@/hooks/useConsultationInterests"
 
 /** Preferred display order — only categories with at least one tour are shown */
 const CATEGORY_ORDER: TourCategoryId[] = ["food", "village", "adventure", "day-tour", "culture"]
@@ -64,7 +66,7 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
         href={buildWhatsAppConsultationUrl(tour.title, `${SITE_URL}/tours/${tour.slug}`)}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`Ask about ${tour.title} on WhatsApp`}
+        aria-label={`WhatsApp consultation about ${tour.title}`}
         className="absolute right-2.5 top-2.5 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#25D366] shadow-md transition-transform hover:scale-110"
       >
         <MessageCircle className="h-4.5 w-4.5" fill="currentColor" strokeWidth={0} />
@@ -109,6 +111,9 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
           </span>
         </div>
       </Link>
+      <div className="px-3.5 pb-3.5">
+        <AskAboutActivityButton slug={tour.slug} title={tour.title} variant="chip" className="w-full justify-center" />
+      </div>
     </div>
   )
 }
@@ -116,14 +121,20 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
 export default function ExperiencesCatalogClient() {
   const [query, setQuery] = useState("")
   const [category, setCategory] = useState<TourCategoryId | "all">("all")
+  const { items } = useConsultationInterests()
 
-  // Nudge the floating AI Assistant button above our mobile sticky CTA so they don't overlap
+  // Nudge the floating AI Assistant above the generic mobile WhatsApp bar.
+  // When a consultation list exists, the shared tray replaces that bar.
   useEffect(() => {
+    if (items.length > 0) {
+      document.documentElement.classList.remove("has-mobile-book-bar")
+      return
+    }
     document.documentElement.classList.add("has-mobile-book-bar")
     return () => {
       document.documentElement.classList.remove("has-mobile-book-bar")
     }
-  }, [])
+  }, [items.length])
 
   const categories = useMemo(
     () => CATEGORY_ORDER.filter((id) => TOURS.some((tour) => tour.category === id)),
@@ -141,7 +152,8 @@ export default function ExperiencesCatalogClient() {
 
   return (
     <div className="space-y-6 pb-20 lg:pb-0">
-      {/* Mobile-only sticky CTA so ad traffic can chat instantly without scrolling */}
+      {/* Mobile-only sticky CTA when the guest has not built a consultation list yet */}
+      {items.length === 0 ? (
       <div className="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-brand-green/10 bg-white/95 backdrop-blur px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] [padding-bottom:max(0.75rem,env(safe-area-inset-bottom))]">
         <a
           href={CONTACT_WHATSAPP_URL}
@@ -149,9 +161,11 @@ export default function ExperiencesCatalogClient() {
           rel="noopener noreferrer"
           className="mx-auto flex h-12 w-full max-w-7xl items-center justify-center gap-2 rounded-full btn-gold-shimmer px-6 font-bold text-sm uppercase tracking-wider"
         >
-          <MessageCircle className="h-4 w-4" /> Chat on WhatsApp — no payment to inquire
+          <MessageCircle className="h-4 w-4" />
+          Chat on WhatsApp — no payment to inquire
         </a>
       </div>
+      ) : null}
 
       {/* Search */}
       <div className="relative">
@@ -200,6 +214,11 @@ export default function ExperiencesCatalogClient() {
         <p className="text-sm font-semibold text-brand-green-light">
           <span className="text-brand-green">{filteredTours.length}</span>{" "}
           {filteredTours.length === 1 ? "experience" : "experiences"}
+          {items.length > 0 ? (
+            <span className="ml-2 text-brand-green">
+              · {items.length} on your consultation list
+            </span>
+          ) : null}
         </p>
         {hasFilters ? (
           <button

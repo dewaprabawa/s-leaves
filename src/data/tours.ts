@@ -2605,11 +2605,11 @@ Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, a
     ],
     shortDescription:
       "Bali Buggy Adventures in Pemogan, South Denpasar. About 1 hour / 7 km automatic UTV. Lunch included. Single IDR 1,200,000 · tandem IDR 1,500,000.",
-    fullDescription: `**Want a 1-hour UTV, not a quad and not a 3-lap Polaris course?** We book **[${UTV_BUGGY_VENUE}](${UTV_BUGGY_SITE})** in **Pemogan, South Denpasar** — an **automatic** sit-in UTV on a **7 km** line: Crocodile Cave (Goa Buaya), water pits, rice fields, mud, circuit, fun speed, and jungle.
+    fullDescription: `**Want a 1-hour UTV, not a quad?** We book **[${UTV_BUGGY_VENUE}](${UTV_BUGGY_SITE})** in **Pemogan, South Denpasar** — an **automatic** sit-in UTV on a **7 km** line: Crocodile Cave (Goa Buaya), water pits, rice fields, mud, circuit, fun speed, and jungle.
 
 **Track / self-meet:** ${UTV_BUGGY_ADDRESS}. [Open in Maps](${UTV_BUGGY_MAP_URL}). Hotel pickup is **quoted** — do not assume it is in the from-price.
 
-This is **not** [Sedang ATV](/tours/bali-atv-adventure) at All New Bali Adventure and **not** the imported [jungle buggies 3-lap](/tours/jungle-buggies-complete-3-laps-tour) Polaris ticket.
+This is **not** [Sedang ATV](/tours/bali-atv-adventure) at All New Bali Adventure.
 
 ### 2026 prices
 | Rig | Price | Who |
@@ -2653,7 +2653,7 @@ WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
     ],
     notIncluded: [
       "Hotel pickup unless quoted",
-      "Sedang ATV or jungle-buggies 3-lap tickets (different venues)",
+      "Sedang ATV tickets (different venue)",
     ],
     itinerary: [
       {
@@ -2715,18 +2715,12 @@ WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
       },
       {
         id: "faq-utv-5",
-        question: "Is this the jungle buggies 3-lap ticket?",
-        answer:
-          "No. Jungle buggies 3 laps is a different Polaris course from IDR 1,120,000 (about two hours). This UTV is a 7 km rice-field / mud / Crocodile Cave line at Bali Buggy Adventures in Pemogan.",
-      },
-      {
-        id: "faq-utv-6",
         question: "Where is Bali Buggy Adventures?",
         answer:
           "Gg. Merta Shanti No.20 A, Pemogan, Denpasar Selatan, Kota Denpasar, Bali 80221. Venue site: https://balibuggyadventures.com. We book the ticket on WhatsApp; pickup is quoted or self-meet at that pin.",
       },
       {
-        id: "faq-utv-7",
+        id: "faq-utv-6",
         question: "Is hotel pickup included?",
         answer:
           "Usually not in the from-price. We quote a private driver or you self-meet. Say your hotel area on WhatsApp.",

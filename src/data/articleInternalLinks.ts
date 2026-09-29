@@ -163,7 +163,6 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   canyonBuggy: [
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies' },
     { title: 'Book Bali canyoning', href: '/tours/canyoning' },
-    { title: 'Book jungle buggies', href: '/tours/jungle-buggies-complete-3-laps-tour' },
     { title: 'Book UTV buggy', href: '/tours/utv-buggy-bali-adventure' },
     { title: 'Wos River canyon tubing', href: '/blog/bali-canyon-tubing-guide-ubud' },
     { title: 'Book Sedang ATV', href: '/tours/bali-atv-adventure' },

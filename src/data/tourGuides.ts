@@ -560,20 +560,14 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Bali Safari Night Safari', href: '/tours/bali-safari-and-marine-park', blurb: 'BBQ + night journey — evening option on the Safari page.' },
   ],
   canyoning: [
-    { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'Ropes vs sit-on-tube vs Polaris laps.' },
+    { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'Ropes vs sit-on-tube vs sit-in UTV.' },
     { title: 'Wos River canyon tubing', href: '/tours/canyon-tubing', blurb: 'Easy float at IDR 500K — not a gorge descent.' },
-    { title: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour', blurb: 'Land Polaris course if you want engines, not ropes.' },
-  ],
-  'jungle-buggies-complete-3-laps-tour': [
-    { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'Buggies are not the Sedang ATV.' },
-    { title: 'UTV at Bali Buggy Adventures', href: '/tours/utv-buggy-bali-adventure', blurb: 'Pemogan 7 km UTV — different venue from the 3-lap Polaris course.' },
-    { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle mud at All New Bali Adventure from IDR 750K.' },
+    { title: 'UTV at Bali Buggy Adventures', href: '/tours/utv-buggy-bali-adventure', blurb: 'Land sit-in UTV if you want engines, not ropes.' },
   ],
   'utv-buggy-bali-adventure': [
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026', blurb: 'UTV is the 1-hour Pemogan row — not Sedang ATV.' },
-    { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'UTV is a 1-hour sit-in buggy — not the 3-lap Polaris ticket.' },
+    { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'UTV is a 1-hour sit-in buggy — not Sedang ATV.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Quad-bike jungle mud from IDR 750K — a different machine.' },
-    { title: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour', blurb: 'Purpose-built Polaris laps from IDR 1,120,000.' },
   ],
   'dirt-bike-kintamani-black-lava': [
     { title: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep', blurb: 'You ride vs you sit at a crater-rim viewpoint.' },

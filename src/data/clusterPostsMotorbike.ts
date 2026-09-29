@@ -380,7 +380,6 @@ Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-moto
 | Sedang ATV | **750,000** / rider | Quad on jungle mud | **400,000** or self-meet | [ATV](/tours/bali-atv-adventure) |
 | Batur jeep | **750,000** (3+) | Sit in a private 4×4 | Island-wide included | [Jeep](/tours/batur-sunrise-jeep-tour) |
 | UTV buggy | **1,200,000** single | 1 hr / 7 km automatic | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
-| Jungle buggies 3 laps | **1,120,000** | Park laps — not Sedang | Quoted | [Buggies](/tours/jungle-buggies-complete-3-laps-tour) |
 | Tabanan dirt bike | **2,100,000** | KLX / X-Ride in rainforest | Quoted | [Tabanan](/tours/dirt-bike-tabanan-day-night) |
 | Kintamani dirt bike | **4,100,000** | KTM on lava | Quoted | [Kintamani](/tours/dirt-bike-kintamani-black-lava) |
 

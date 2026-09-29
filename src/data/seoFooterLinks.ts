@@ -74,7 +74,6 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Bali Bird Park', href: '/tours/bali-bird-park' },
   { label: 'Bali Safari tickets', href: '/tours/bali-safari-and-marine-park' },
   { label: 'Bali Canyoning', href: '/tours/canyoning' },
-  { label: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour' },
   { label: 'UTV buggy Bali', href: '/tours/utv-buggy-bali-adventure' },
   { label: 'Bali motorbike tour', href: '/tours/bali-motorbike-traveling-trip' },
   { label: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026' },

@@ -206,17 +206,17 @@ Compare machines: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [moto
   {
     slug: 'east-south-bali-motorbike-tour-2026',
     title: 'East & South Bali Motorbike Tour 2026: Besakih or Uluwatu',
-    seoTitle: 'East & South Bali Scooter | 650K–800K',
+    seoTitle: 'East & South Bali Scooter | 750K–800K',
     excerpt:
-      'South Bali scooter IDR 650,000 (Tanah Lot, Uluwatu, GWK, Melasti). East Bali IDR 800,000 (Besakih, Tirta Gangga, Virgin Beach). WhatsApp.',
+      'South Bali scooter IDR 750,000 (Tanah Lot, Uluwatu, GWK, Melasti). East Bali IDR 800,000 (Besakih, Tirta Gangga, Virgin Beach). WhatsApp.',
     publishedAt: '2026-09-28',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/motorbike-tour-road.jpg',
     content: `
-**East Bali or South Bali on a scooter — which day should you book?** Sekar Bali Activity prices both **per 125–160cc automatic**. The [South Bali traveling trip](/tours/bali-motorbike-traveling-trip) is **IDR 650,000** promo (was 750,000): **Tanah Lot, Uluwatu, GWK, Melasti**, optional Kedonganan dinner paid separately. The **East Bali** day is **IDR 800,000** promo (was 900,000): **Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach**. Tickets extra. Pickup at your chosen area. Canggu / Jimbaran / Nusa Dua shuttle **IDR 550,000** once per booking. WhatsApp — **no payment to inquire**.
+**East Bali or South Bali on a scooter — which day should you book?** Sekar Bali Activity prices both **per 125–160cc automatic**. The [South Bali traveling trip](/tours/bali-motorbike-traveling-trip) is **IDR 750,000** promo (was 850,000): **Tanah Lot, Uluwatu, GWK, Melasti**, optional Kedonganan dinner paid separately. The **East Bali** day is **IDR 800,000** promo (was 900,000): **Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach**. Tickets extra. Pickup at your chosen area. Canggu / Jimbaran / Nusa Dua shuttle **IDR 550,000** once per booking. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
-> - South: **650,000** / scooter · cliff temples + Melasti
+> - South: **750,000** / scooter · cliff temples + Melasti
 > - East: **800,000** / scooter · mother temple + water palaces
 > - North Bali is a third loop: **750,000** · Beratan + Jatiluwih
 > - Kuta “from USD 32” beach hops are not this IDR table
@@ -226,7 +226,7 @@ Compare machines: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [moto
 
 | Destination | Promo (IDR) | Stops | Book when |
 | --- | --- | --- | --- |
-| South Bali | **650,000** | Tanah Lot, Uluwatu, GWK, Melasti | You want cliffs and sunset rock |
+| South Bali | **750,000** | Tanah Lot, Uluwatu, GWK, Melasti | You want cliffs and sunset rock |
 | North Bali | **750,000** | Sangeh, Leke-Leke, Beratan, Jatiluwih | You want the lake temple and terraces |
 | East Bali | **800,000** | Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach | You want the longest culture + beach loop |
 
@@ -236,7 +236,7 @@ Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half
 
 ## South vs East in one screen
 
-**South** is shorter on temple stairs, heavier on traffic around Uluwatu. Dinner at Kedonganan is **optional** and **not** in the 650,000.
+**South** is shorter on temple stairs, heavier on traffic around Uluwatu. Dinner at Kedonganan is **optional** and **not** in the 750,000.
 
 **East** is the highest published scooter rate. Besakih has a dress code and a ticket. Virgin Beach is the swim stop. Do not expect to linger at every palace if you also want Tukad Cepung.
 
@@ -255,17 +255,17 @@ Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half
   {
     slug: 'kintamani-scooter-vs-batur-jeep-2026',
     title: 'Kintamani Scooter vs Batur Jeep 2026: Ride or Sit for Sunrise',
-    seoTitle: 'Kintamani Scooter vs Jeep | 600K or 750K',
+    seoTitle: 'Kintamani Scooter vs Jeep | 650K or 750K',
     excerpt:
-      'Kintamani scooter day IDR 600,000 vs private Mount Batur jeep from IDR 750,000 (3+). Public road vs 4×4 crater rim. WhatsApp.',
+      'Kintamani scooter day IDR 650,000 vs private Mount Batur jeep from IDR 750,000 (3+). Public road vs 4×4 crater rim. WhatsApp.',
     publishedAt: '2026-09-28',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/motorbike-tour-hero.jpg',
     content: `
-**Kintamani by scooter or the Mount Batur jeep — which one is the sunrise?** The [Kintamani traveling trip](/tours/bali-motorbike-traveling-trip) is a **public-road scooter** day at **IDR 600,000** promo per bike (was 700,000): sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran, Tukad Cepung. The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) is a **4×4 to a crater-rim viewpoint** (~1,350 m) — **not** the summit hike. Sit-in is **IDR 2,000,000 for 2 guests**; tracking jeep **IDR 1,800,000 for 2**; **IDR 750,000** per person at 3+. Meal included after the viewpoint. Island-wide pickup included on the jeep. Scooter tickets stay extra. WhatsApp — **no payment to inquire**.
+**Kintamani by scooter or the Mount Batur jeep — which one is the sunrise?** The [Kintamani traveling trip](/tours/bali-motorbike-traveling-trip) is a **public-road scooter** day at **IDR 650,000** promo per bike (was 750,000): sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran, Tukad Cepung. The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) is a **4×4 to a crater-rim viewpoint** (~1,350 m) — **not** the summit hike. Sit-in is **IDR 2,000,000 for 2 guests**; tracking jeep **IDR 1,800,000 for 2**; **IDR 750,000** per person at 3+. Meal included after the viewpoint. Island-wide pickup included on the jeep. Scooter tickets stay extra. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
-> - Scooter: **600,000** / bike · you ride or go pillion · tickets extra
+> - Scooter: **650,000** / bike · you ride or go pillion · tickets extra
 > - Jeep: **private 4×4** · meal included · island-wide pickup
 > - Jeep is **not** the 2-hour summit trek
 > - Dirt bike on lava is a **third** product from **4,100,000**
@@ -275,7 +275,7 @@ Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half
 
 | | [Kintamani scooter](/tours/bali-motorbike-traveling-trip) | [Private Batur jeep](/tours/batur-sunrise-jeep-tour) | [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 | --- | --- | --- | --- |
-| From (IDR) | **600,000** / scooter | **750,000** (3+) · 2 guests 1.8–2.0M | **4,100,000** |
+| From (IDR) | **650,000** / scooter | **750,000** (3+) · 2 guests 1.8–2.0M | **4,100,000** |
 | You sit or ride? | Ride or pillion | Sit in a 4×4 | Ride a KTM enduro |
 | Clock | Full day, public roads | Pre-dawn start, 4–7 hours | ~8 hours on lava |
 | Meal | Your own | Included after the viewpoint | Operator day |

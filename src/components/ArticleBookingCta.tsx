@@ -134,7 +134,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'east-south-bali-motorbike-tour-2026': {
     headline: 'Book South or East Bali on a scooter',
-    body: 'South IDR 650,000 (Tanah Lot, Uluwatu, Melasti). East IDR 800,000 (Besakih, Tirta Gangga, Virgin Beach). Tickets extra.',
+    body: 'South IDR 750,000 (Tanah Lot, Uluwatu, Melasti). East IDR 800,000 (Besakih, Tirta Gangga, Virgin Beach). Tickets extra.',
     primaryHref: '/tours/bali-motorbike-traveling-trip',
     primaryLabel: 'View motorbike tour',
     secondaryHref: '/tours/half-day-ubud-tanah-lot-tour',
@@ -142,7 +142,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'kintamani-scooter-vs-batur-jeep-2026': {
     headline: 'Book Kintamani scooter or the jeep',
-    body: 'Scooter day IDR 600,000. Private Batur jeep from IDR 750,000 at 3+ with meal and island-wide pickup. Not the summit hike.',
+    body: 'Scooter day IDR 650,000. Private Batur jeep from IDR 750,000 at 3+ with meal and island-wide pickup. Not the summit hike.',
     primaryHref: '/tours/bali-motorbike-traveling-trip',
     primaryLabel: 'View motorbike tour',
     secondaryHref: '/tours/batur-sunrise-jeep-tour',

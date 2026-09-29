@@ -159,8 +159,8 @@ Free cancellation up to **24 hours** before start time. Full rules: [cancellatio
 | --- | --- | --- | --- |
 | Ubud | **450,000** | 550,000 | Rice terrace, Ulun Petanu, Gunung Kawi, Umah Kuno, Monkey Forest |
 | Ubud waterfalls | **500,000** | 600,000 | Kanto Lampo, Tibumana, Suwat, Tukad Cepung, Tegenungan |
-| Kintamani | **600,000** | 700,000 | Sunrise view, Pura Jati Segara, optional hot spring, Penglipuran |
-| South Bali | **650,000** | 750,000 | Tanah Lot, Uluwatu, GWK, Melasti, optional Kedonganan dinner |
+| Kintamani | **650,000** | 750,000 | Sunrise view, Pura Jati Segara, optional hot spring, Penglipuran |
+| South Bali | **750,000** | 850,000 | Tanah Lot, Uluwatu, GWK, Melasti, optional Kedonganan dinner |
 | North Bali | **750,000** | 850,000 | Sangeh, Leke-Leke, Beratan Lake, Jatiluwih |
 | East Bali | **800,000** | 900,000 | Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach |
 
@@ -278,8 +278,8 @@ Mainland China search is mostly **Baidu**, which wants Chinese pages. That is a 
 | --- | --- | --- |
 | Ubud | **450,000** | Rice terrace, Ulun Petanu, Gunung Kawi, Umah Kuno, Monkey Forest |
 | Ubud waterfalls | **500,000** | Kanto Lampo, Tibumana, Suwat, Tukad Cepung, Tegenungan |
-| Kintamani | **600,000** | Sunrise view, Pura Jati Segara, optional hot spring, Penglipuran |
-| South Bali | **650,000** | Tanah Lot, Uluwatu, GWK, Melasti, optional Kedonganan dinner |
+| Kintamani | **650,000** | Sunrise view, Pura Jati Segara, optional hot spring, Penglipuran |
+| South Bali | **750,000** | Tanah Lot, Uluwatu, GWK, Melasti, optional Kedonganan dinner |
 | North Bali | **750,000** | Sangeh, Leke-Leke, Beratan Lake, Jatiluwih |
 | East Bali | **800,000** | Tukad Cepung, Besakih, Tirta Gangga, Taman Ujung, Virgin Beach |
 

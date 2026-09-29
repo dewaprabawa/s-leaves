@@ -50,7 +50,7 @@ import {
 } from '@/data/motorbikeTrip'
 import { ORIGIN_MARKET_ARTICLE_SLUG } from '@/data/originMarkets'
 
-export const ACTIVITY_GEO_UPDATED = '2026-09-28'
+export const ACTIVITY_GEO_UPDATED = '2026-09-29'
 
 export type ActivityGeoFaq = {
   q: string

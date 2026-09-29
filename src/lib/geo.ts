@@ -31,6 +31,7 @@ export function buildGeoWebPageSchema() {
       `${SITE_URL}/pricing.md`,
       `${SITE_URL}/.well-known/llms.txt`,
       `${SITE_URL}/#experiences`,
+      `${SITE_URL}/planners`,
       `${SITE_URL}/tours/balinese-cooking-class`,
       `${SITE_URL}/tours/tirta-empu-purification`,
       `${SITE_URL}/blog`,

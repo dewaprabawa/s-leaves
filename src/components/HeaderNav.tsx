@@ -30,6 +30,7 @@ export default function HeaderNav({ siteName }: HeaderNavProps) {
     { href: "/#experiences", label: "Experiences" },
     { href: "/#packages", label: "Packages" },
     { href: "/#pricing", label: "Pricing" },
+    { href: "/planners", label: "Planners" },
     { href: "/book", label: "Book" },
     { href: "/blog", label: "Blog" },
     { href: "/about", label: "About" },

@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v2.15
-**Last updated:** 2026-09-28
+**Document version:** v2.16
+**Last updated:** 2026-09-29
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — adventure, village, food, and day tours with clear IDR pricing and WhatsApp booking.
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.16 (2026-09-29) — Public `/planners` hub (not blocked `/tools/`) adapts Letaido’s free-tool directory: unique URLs for ATV / jeep / scooter / cooking calculators, a pickup checker, and a mood chooser. Do not clone AI SEO tools onto the tour site.
 - v2.15 (2026-09-28) — Motorbike commercial cluster: scooter vs ATV, vs dirt bike, waterfall day, IDP/pillion, East/South routes, Kintamani scooter vs jeep, plus ATV-vs-Kuber and a wheels chooser. Competitor facts stay honest (we do not sell Kuber cave).
 - v2.14 (2026-09-28) — Motorbike money page now owns **Bali motorbike tour / scooter tour Ubud**: definition-first body, per-destination AggregateOffer, speakable Question/Answer (no FAQPage), IDP/pillion/waterfall facts. Pickup stays at the chosen area — not free Ubud pickup and not the IDR 400K surcharge.
 - v2.13 (2026-09-28) — SEO/GEO now covers the **Bali Motorbike Traveling Trip** (from IDR 450,000 / scooter; tickets not included; pickup at chosen area) plus UTV in `GEO_INVENTORY` / `llms.txt`. Motorbike is not ATV and not a private car day.

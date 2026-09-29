@@ -27,6 +27,7 @@ const PICKUP: ArticleLink = {
 export const ACTIVITY_ARTICLE_CLUSTERS = {
   jeep: [
     { title: 'Private Mount Batur jeep guide', href: '/blog/mount-batur-sunrise-jeep-tour-guide-2026' },
+    { title: 'Batur jeep price calculator', href: '/planners/batur-jeep-price' },
     { title: 'Batur jeep price guide 2026', href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026' },
     { title: 'Jeep vs sunrise trek', href: '/blog/mount-batur-jeep-vs-sunrise-trek' },
     { title: 'Jeep pickup times (Canggu / Ubud)', href: '/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026' },
@@ -36,6 +37,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book the Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
   ],
   cooking: [
+    { title: 'Cooking class price calculator', href: '/planners/cooking-class-price' },
     { title: 'Cooking class Ubud price 2026', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
     { title: 'Inside Tumang cooking class', href: '/blog/inside-balinese-cooking-class-pejeng' },
     { title: 'Vegetarian cooking class', href: '/blog/vegetarian-vegan-cooking-class-ubud' },
@@ -56,6 +58,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book Pejeng cycling', href: '/tours/ubud-ricefield-cycling-tour' },
   ],
   atv: [
+    { title: 'ATV Ubud price calculator', href: '/planners/atv-price-calculator' },
     { title: 'ATV cost near Ubud 2026', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
     { title: 'Tandem ATV price', href: '/blog/tandem-atv-ubud-price' },
     { title: 'ATV for beginners', href: '/blog/bali-atv-for-beginners-first-time-guide' },
@@ -123,6 +126,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book motorbike trip', href: '/tours/bali-motorbike-traveling-trip' },
   ],
   motorbike: [
+    { title: 'Motorbike tour calculator', href: '/planners/motorbike-tour-price' },
     { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026' },
     { title: 'Japan, Korea, China & Middle East (English)', href: '/blog/bali-tours-for-japanese-chinese-travelers-2026' },
     { title: 'Motorbike vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026' },
@@ -393,6 +397,8 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     HUB,
   ],
   site: [
+    { title: 'Free Bali planners', href: '/planners' },
+    { title: 'Hotel pickup checker', href: '/planners/hotel-pickup-checker' },
     { title: 'Batur jeep price guide', href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026' },
     { title: 'Cooking class Ubud price', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
     { title: 'ATV cost near Ubud', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },

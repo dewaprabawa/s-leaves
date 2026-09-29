@@ -92,7 +92,12 @@ export default function ExperiencesPage() {
           </h1>
           <p className="text-sm md:text-base text-brand-green-light leading-relaxed">
             Filter the catalog, then open the tour page for IDR, pickup rules, and WhatsApp.
-            The homepage is for picking a mood; this page is the full list.
+            The homepage is for picking a mood; this page is the full list. Need a number
+            first? Use the{" "}
+            <a href="/planners" className="font-semibold text-brand-green underline underline-offset-2">
+              free IDR planners
+            </a>
+            .
           </p>
         </header>
 

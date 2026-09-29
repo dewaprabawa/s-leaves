@@ -5,6 +5,7 @@ import { ACTIVITY_GEO_UPDATED } from '@/data/activityGeo'
 import { COOKING_GEO_UPDATED } from '@/data/cookingGeo'
 import { JEEP_GEO_UPDATED } from '@/data/jeepGeo'
 import { TOURS } from '@/data/tours'
+import { PLANNERS, PLANNER_UPDATED } from '@/data/planners'
 import { SITE_URL } from '@/lib/seo'
 import type { MetadataRoute } from 'next'
 
@@ -206,6 +207,7 @@ export function buildCoreSitemapEntries(): MetadataRoute.Sitemap {
     { url: SITE_URL, lastModified, changeFrequency: 'weekly', priority: 1 },
     { url: `${SITE_URL}/book`, lastModified, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${SITE_URL}/experiences`, lastModified, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE_URL}/planners`, lastModified: toDate(PLANNER_UPDATED), changeFrequency: 'weekly', priority: 0.85 },
     { url: `${SITE_URL}/blog`, lastModified, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE_URL}/transfers`, lastModified, changeFrequency: 'weekly', priority: 0.85 },
     { url: `${SITE_URL}/contact`, lastModified, changeFrequency: 'monthly', priority: 0.85 },
@@ -228,6 +230,15 @@ export function buildTourSitemapEntries(): MetadataRoute.Sitemap {
       tour.heroImage.url,
       ...tour.gallery.map((image) => image.url),
     ]),
+  }))
+}
+
+export function buildPlannerSitemapEntries(): MetadataRoute.Sitemap {
+  return PLANNERS.map((planner) => ({
+    url: `${SITE_URL}/planners/${planner.slug}`,
+    lastModified: toDate(PLANNER_UPDATED),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
   }))
 }
 
@@ -269,6 +280,16 @@ export function assertSitemapInventory(entries: MetadataRoute.Sitemap): void {
     }
   }
 
+  if (!unique.has(`${SITE_URL}/planners`)) {
+    throw new Error('Sitemap missing /planners hub')
+  }
+  for (const planner of PLANNERS) {
+    const expected = `${SITE_URL}/planners/${planner.slug}`
+    if (!unique.has(expected)) {
+      throw new Error(`Sitemap missing planner ${planner.slug}`)
+    }
+  }
+
   const blogSlugs = new Set(BLOG_POSTS.map((post) => post.slug))
   const tourSlugs = new Set(TOURS.map((tour) => tour.slug))
   for (const slug of mappedArticleSlugs()) {
@@ -287,6 +308,12 @@ export function assertSitemapInventory(entries: MetadataRoute.Sitemap): void {
       const slug = href.slice('/tours/'.length)
       if (!tourSlugs.has(slug)) {
         throw new Error(`Article internal link missing tour ${slug}`)
+      }
+    }
+    if (href.startsWith('/planners/')) {
+      const slug = href.slice('/planners/'.length)
+      if (!PLANNERS.some((planner) => planner.slug === slug)) {
+        throw new Error(`Article internal link missing planner ${slug}`)
       }
     }
   }
@@ -328,6 +355,7 @@ export function buildSitemapEntries(): MetadataRoute.Sitemap {
   const entries = [
     ...buildCoreSitemapEntries(),
     ...buildTourSitemapEntries(),
+    ...buildPlannerSitemapEntries(),
     ...buildBlogSitemapEntries(),
   ]
   assertSitemapInventory(entries)

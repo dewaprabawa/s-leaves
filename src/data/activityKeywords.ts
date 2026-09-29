@@ -486,11 +486,22 @@ export const SITE_KEYWORDS: string[] = uniqueKeywords([
  * - `/book` owns WhatsApp checkout + combo handoff — not "ATV ride Ubud"
  * - `/tours/[slug]` owns commercial head terms
  * - `/blog/*` owns how / vs / worth / when / where (compare + extras only)
+ * - `/planners` owns calculator / checker tool intent — not money-page heads
  */
 export const EXPERIENCES_PAGE_KEYWORDS: string[] = uniqueKeywords([
   'browse Ubud experiences',
   'Sekar Bali Activity catalog',
   'Ubud activity list',
+  BRAND_KEYWORD,
+])
+
+export const PLANNERS_PAGE_KEYWORDS: string[] = uniqueKeywords([
+  'Bali activity calculator',
+  'ATV Ubud price calculator',
+  'hotel pickup checker Ubud',
+  'Mount Batur jeep calculator',
+  'Bali motorbike tour calculator',
+  'cooking class Ubud calculator',
   BRAND_KEYWORD,
 ])
 

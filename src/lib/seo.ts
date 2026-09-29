@@ -138,6 +138,10 @@ export const SITE_NAV_LINKS = [
   { name: 'Bali Canyoning', url: `${SITE_URL}/tours/canyoning` },
   { name: 'UTV at Bali Buggy Adventures', url: `${SITE_URL}/tours/utv-buggy-bali-adventure` },
   { name: 'Bali Motorbike Traveling Trip', url: `${SITE_URL}/tours/bali-motorbike-traveling-trip` },
+  { name: 'Free Bali activity planners', url: `${SITE_URL}/planners` },
+  { name: 'ATV Ubud price calculator', url: `${SITE_URL}/planners/atv-price-calculator` },
+  { name: 'Hotel pickup checker', url: `${SITE_URL}/planners/hotel-pickup-checker` },
+  { name: 'Mount Batur jeep calculator', url: `${SITE_URL}/planners/batur-jeep-price` },
   { name: 'Ubud Batik Class', url: `${SITE_URL}/tours/batik-class` },
   { name: 'Bali Family Private Itinerary', url: `${SITE_URL}/blog/bali-family-private-itinerary-2026` },
   { name: '6-Day Bali Girls Trip Guide', url: `${SITE_URL}/blog/bali-6-day-girls-trip-itinerary-2026` },
@@ -163,7 +167,7 @@ export function buildWebsiteSchema() {
     description: DEFAULT_DESCRIPTION,
     publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: 'en-US',
-    dateModified: '2026-09-28',
+    dateModified: '2026-09-29',
     hasPart: [
       {
         '@type': 'WebPage',

@@ -12,6 +12,9 @@ export const ACTIVITY_TO_TOUR_SLUG: Record<string, string> = {
   "griya-beji-purification": "griya-beji-waterfall",
   "griya-beji-palm-reading": "griya-beji-waterfall",
   "griya-beji-mental-healing": "griya-beji-waterfall",
+  "utv-single": "utv-buggy-bali-adventure",
+  "utv-tandem": "utv-buggy-bali-adventure",
+  "jungle-buggies-3-laps": "jungle-buggies-complete-3-laps-tour",
 }
 
 export function getTourSlugForActivity(activityId: string): string | undefined {

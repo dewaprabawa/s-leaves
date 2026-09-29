@@ -11,6 +11,12 @@ import {
   getSwingCookingCombo,
 } from "@/data/cultureSales"
 import { GRIYA_BEJI_SALES } from "@/data/griyaBeji"
+import {
+  UTV_BUGGY_SALES,
+  UTV_BUGGY_SINGLE_ID,
+  UTV_BUGGY_SLUG,
+  UTV_BUGGY_TANDEM_ID,
+} from "@/data/utvBuggy"
 import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
 import { SITE_NAME, SITE_URL } from "@/lib/seo"
 import { BOOK_PAGE_KEYWORDS } from "@/data/activityKeywords"
@@ -64,6 +70,12 @@ export default async function BookPage({ searchParams }: Props) {
   const highlightSwingCookingCombo = activity === swingCookingCombo.id
   const highlightMelukat = activity === MELUKAT_SALES.id
   const highlightGriya = activity === GRIYA_BEJI_SALES.id
+  const highlightUtv =
+    activity === UTV_BUGGY_SINGLE_ID ||
+    activity === UTV_BUGGY_TANDEM_ID ||
+    activity === UTV_BUGGY_SLUG ||
+    activity === UTV_BUGGY_SALES.id
+  const initialUtvId = activity === UTV_BUGGY_TANDEM_ID ? UTV_BUGGY_TANDEM_ID : UTV_BUGGY_SINGLE_ID
 
   const jumpLinks = [
     { id: "combos", label: "Adventure combos" },
@@ -76,6 +88,7 @@ export default async function BookPage({ searchParams }: Props) {
     { id: COOKING_CLASS_SALES.id, label: COOKING_CLASS_SALES.shortName },
     { id: MELUKAT_SALES.id, label: MELUKAT_SALES.shortName },
     { id: GRIYA_BEJI_SALES.id, label: GRIYA_BEJI_SALES.shortName },
+    { id: UTV_BUGGY_SALES.id, label: UTV_BUGGY_SALES.shortName },
   ]
 
   const itemListSchema = {
@@ -84,7 +97,7 @@ export default async function BookPage({ searchParams }: Props) {
     name: "WhatsApp checkout — Sekar Bali Activity",
     description:
       "WhatsApp checkout for the activity already chosen on a tour page — guests, date, pickup, IDR total, and same-day combos.",
-    numberOfItems: ADVENTURES.length + 5,
+    numberOfItems: ADVENTURES.length + 6,
     itemListElement: [
       {
         "@type": "ListItem",
@@ -198,6 +211,25 @@ export default async function BookPage({ searchParams }: Props) {
           },
         },
       },
+      {
+        "@type": "ListItem",
+        position: ADVENTURES.length + 6,
+        name: UTV_BUGGY_SALES.name,
+        url: `${SITE_URL}/book?activity=${UTV_BUGGY_SINGLE_ID}`,
+        item: {
+          "@type": "TouristTrip",
+          name: UTV_BUGGY_SALES.name,
+          description: UTV_BUGGY_SALES.description,
+          image: `${SITE_URL}${UTV_BUGGY_SALES.image}`,
+          offers: {
+            "@type": "Offer",
+            price: UTV_BUGGY_SALES.priceIdr,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/book?activity=${UTV_BUGGY_SINGLE_ID}`,
+          },
+        },
+      },
     ],
   }
 
@@ -264,7 +296,8 @@ export default async function BookPage({ searchParams }: Props) {
               (link.id === cultureCombo.id && highlightCultureCombo) ||
               (link.id === swingCookingCombo.id && highlightSwingCookingCombo) ||
               (link.id === MELUKAT_SALES.id && highlightMelukat) ||
-              (link.id === GRIYA_BEJI_SALES.id && highlightGriya)
+              (link.id === GRIYA_BEJI_SALES.id && highlightGriya) ||
+              (link.id === UTV_BUGGY_SALES.id && highlightUtv)
             return (
               <a
                 key={link.id}
@@ -288,6 +321,8 @@ export default async function BookPage({ searchParams }: Props) {
           highlightSwingCookingCombo={highlightSwingCookingCombo}
           highlightMelukat={highlightMelukat}
           highlightGriya={highlightGriya}
+          highlightUtv={highlightUtv}
+          initialUtvId={initialUtvId}
         />
 
         <AntiScamSection compact />
@@ -296,8 +331,8 @@ export default async function BookPage({ searchParams }: Props) {
           <h2 className="font-display text-2xl md:text-3xl font-bold">Not sure which activity?</h2>
           <p className="text-sand/80 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
             Message us with your dates, hotel, and group size — we&apos;ll recommend ATV, rafting,
-            tubing, cycling, cooking, Tirta Empu melukat, Griya Beji waterfall, or a combo that fits
-            your day.
+            tubing, cycling, cooking, Tirta Empu melukat, Griya Beji waterfall, a Pemogan UTV,
+            or a combo that fits your day.
           </p>
           <a
             href={CONTACT_WHATSAPP_URL}

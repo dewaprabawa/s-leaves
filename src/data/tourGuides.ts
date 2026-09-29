@@ -565,11 +565,13 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Jungle buggies 3 laps', href: '/tours/jungle-buggies-complete-3-laps-tour', blurb: 'Land Polaris course if you want engines, not ropes.' },
   ],
   'jungle-buggies-complete-3-laps-tour': [
+    { title: 'UTV vs ATV vs jungle buggies', href: '/blog/bali-utv-buggy-vs-atv-2026', blurb: 'Polaris 3 laps are not the Pemogan UTV and not Sedang ATV.' },
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'Buggies are not the Sedang ATV.' },
     { title: 'UTV at Bali Buggy Adventures', href: '/tours/utv-buggy-bali-adventure', blurb: 'Pemogan 7 km UTV — different venue from the 3-lap Polaris course.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Jungle mud at All New Bali Adventure from IDR 750K.' },
   ],
   'utv-buggy-bali-adventure': [
+    { title: 'UTV vs ATV vs jungle buggies', href: '/blog/bali-utv-buggy-vs-atv-2026', blurb: 'Pemogan UTV 1.2M vs Sedang ATV 750K vs Polaris 3 laps 1.12M.' },
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026', blurb: 'UTV is the 1-hour Pemogan row — not Sedang ATV.' },
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'UTV is a 1-hour sit-in buggy — not the 3-lap Polaris ticket.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Quad-bike jungle mud from IDR 750K — a different machine.' },
@@ -739,7 +741,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'utv-buggy-bali-adventure': {
     title: 'From our booking desk',
-    body: 'Say single or tandem on WhatsApp — single is one rider at IDR 1,200,000, tandem is two on one buggy at IDR 1,500,000. The track is Bali Buggy Adventures in Pemogan, South Denpasar (Gg. Merta Shanti No.20 A). The driver must be 17+ and able to drive; a passenger can be 6+. About 1 hour on a 7 km automatic track, lunch included. Pickup is quoted.',
+    body: 'Say single or tandem on WhatsApp — single is one rider at IDR 1,200,000, tandem is two on one buggy at IDR 1,500,000. The track is Bali Buggy Adventures in Pemogan, South Denpasar (Gg. Merta Shanti No.20 A). The driver must be 17+ and able to drive; a passenger can be 6+. About 1 hour on a 7 km automatic track, lunch included. Pickup is quoted — not the IDR 400,000 Sedang ATV surcharge. Checkout: /book?activity=utv-single.',
   },
   'bali-motorbike-traveling-trip': {
     title: 'From our scooter guides',

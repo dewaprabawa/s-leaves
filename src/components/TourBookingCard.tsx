@@ -26,6 +26,12 @@ import {
   MOTORBIKE_UBUD_IDR,
   MOTORBIKE_UBUD_LIST_IDR,
 } from "@/data/motorbikeTrip"
+import {
+  UTV_BUGGY_SINGLE_IDR,
+  UTV_BUGGY_SLUG,
+  UTV_BUGGY_TANDEM_IDR,
+} from "@/data/utvBuggy"
+import { JUNGLE_BUGGIES_IDR, JUNGLE_BUGGIES_SLUG } from "@/data/parkWorkshopTours"
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
@@ -75,6 +81,20 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       tierLabel: undefined,
     }
   }
+  if (tourSlug === UTV_BUGGY_SLUG) {
+    return {
+      promoPrice: UTV_BUGGY_SINGLE_IDR,
+      standardPrice: UTV_BUGGY_SINGLE_IDR,
+      tierLabel: `Single / buggy · tandem ${formatIdr(UTV_BUGGY_TANDEM_IDR)} for two`,
+    }
+  }
+  if (tourSlug === JUNGLE_BUGGIES_SLUG) {
+    return {
+      promoPrice: JUNGLE_BUGGIES_IDR,
+      standardPrice: JUNGLE_BUGGIES_IDR,
+      tierLabel: "Per person · 3 Polaris laps",
+    }
+  }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
   if (tourSlug === GIRLS_TRIP_SLUG) {
     return {
@@ -117,6 +137,8 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
     "griya-beji-palm-reading",
     "griya-beji-mental-healing",
   ],
+  [UTV_BUGGY_SLUG]: ["utv-single", "utv-tandem"],
+  [JUNGLE_BUGGIES_SLUG]: ["jungle-buggies-3-laps"],
 }
 
 function primaryBookLabel(tourSlug: string): string {
@@ -137,6 +159,10 @@ function primaryBookLabel(tourSlug: string): string {
       return "Book Swing Heaven"
     case "griya-beji-waterfall":
       return "Book Waterfall"
+    case UTV_BUGGY_SLUG:
+      return "Book UTV Buggy"
+    case JUNGLE_BUGGIES_SLUG:
+      return "Book Jungle Buggies"
     case "tirta-empu-purification":
       return "Book Melukat"
     case "luwak-coffee-plantation":
@@ -244,7 +270,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
       : props.tourSlug === "bali-atv-adventure"
         ? `${props.title} — single from ${formatIdr(props.basePrice)}`
-        : props.title
+        : props.tourSlug === UTV_BUGGY_SLUG
+          ? `${props.title} — single ${formatIdr(UTV_BUGGY_SINGLE_IDR)} · tandem ${formatIdr(UTV_BUGGY_TANDEM_IDR)}`
+          : props.tourSlug === JUNGLE_BUGGIES_SLUG
+            ? `${props.title} — from ${formatIdr(JUNGLE_BUGGIES_IDR)} / person`
+            : props.title
   const consultationUrl =
     props.tourSlug === GIRLS_TRIP_SLUG
       ? buildGirlsTripWhatsAppUrl()
@@ -345,6 +375,16 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {props.tourSlug === "bali-atv-adventure" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
+          {props.tourSlug === UTV_BUGGY_SLUG ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Tandem {formatIdr(UTV_BUGGY_TANDEM_IDR)} for two on one buggy · pickup quoted
+            </p>
+          ) : null}
+          {props.tourSlug === JUNGLE_BUGGIES_SLUG ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              3 Polaris laps · pickup quoted · not Sedang ATV or Pemogan UTV
             </p>
           ) : null}
           {props.tourSlug === "swing-heaven-bali" ? (

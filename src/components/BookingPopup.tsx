@@ -11,6 +11,7 @@ import {
 } from '@/lib/invoice';
 import InvoicePaymentPanel from '@/components/InvoicePaymentPanel';
 import { getTourSlugForActivity } from '@/lib/bookingTourDetails';
+import { isUtvTandemId } from '@/data/utvBuggy';
 import { MEETING_POINT } from '@/lib/meetingPoint';
 import {
   DROP_SAME_HOTEL_FEE_IDR,
@@ -73,6 +74,11 @@ export interface TourConfig {
   meetsAtArena?: boolean
   /** Self-meet only — do not offer hotel pickup (Luwak coffee plantation) */
   pickupNotOffered?: boolean
+  /**
+   * Hotel pickup is quoted on WhatsApp — never the IDR 400,000 ATV surcharge.
+   * Hides the pickup-fee checkbox. Use with selfMeet when a pin is published.
+   */
+  pickupQuoted?: boolean
   /**
    * Quote against this catalog ActivityId when the dropdown id is a product
    * variant (jeep tracking / sunset). Keeps private 2 / 3+ jeep tiers.
@@ -154,6 +160,7 @@ export function BookingPopup({
       setShowDetails(false);
       setWantsPickup(
         tour.pickupNotOffered !== true &&
+          tour.pickupQuoted !== true &&
           (tour.pickupIncluded === true || tour.freeUbudPickup === true),
       );
       setSameDropOff(false);
@@ -176,6 +183,7 @@ export function BookingPopup({
     setShowDetails(false)
     setWantsPickup(
       activeTour.pickupNotOffered !== true &&
+        activeTour.pickupQuoted !== true &&
         (activeTour.pickupIncluded === true || activeTour.freeUbudPickup === true),
     )
     const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
@@ -207,7 +215,7 @@ export function BookingPopup({
   useEffect(() => {
     if (!isOpen || !activeTour) return
     const rafting = activeTour.id === 'rafting' || mixIds.includes('rafting')
-    const tandem = activeTour.id === 'tandem-atv'
+    const tandem = activeTour.id === 'tandem-atv' || isUtvTandemId(activeTour.id)
     const min = tandem || rafting ? 2 : Math.max(activeTour.minPax, 1)
     setAdults((prev) => {
       const next = Math.max(min, prev || min)
@@ -220,7 +228,7 @@ export function BookingPopup({
 
   const hasKidPricing = activeTour.kidPrice !== null && activeTour.kidPrice !== undefined;
   const totalPax = adults + kids;
-  const isTandem = activeTour.id === 'tandem-atv';
+  const isTandem = activeTour.id === 'tandem-atv' || isUtvTandemId(activeTour.id);
   const mixOptions = MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? [];
   const isCombo = mixIds.length > 0;
   const includesRafting =
@@ -260,6 +268,8 @@ export function BookingPopup({
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupIncluded = activeTour.pickupIncluded === true;
   const pickupNotOffered = activeTour.pickupNotOffered === true;
+  const pickupQuoted = activeTour.pickupQuoted === true;
+  const hidePickupFee = pickupNotOffered || pickupQuoted;
   const meetsAtArena = activeTour.meetsAtArena === true;
   const selfMeet = activeTour.selfMeet
   const meetLabel = meetsAtArena
@@ -330,7 +340,7 @@ export function BookingPopup({
     if (!nameOk) return alert("Please enter your name.");
     if (!ageOk) return alert("Please enter your age.");
     if (isTandem && (adults < 2 || adults % 2 !== 0)) {
-      return alert('Tandem ATV requires an even number of riders (2, 4, 6…).');
+      return alert('Tandem requires an even number of riders (2, 4, 6…).');
     }
     if (!wantsPickup) {
       // meet at arena / self-arranged — no address needed
@@ -355,11 +365,19 @@ export function BookingPopup({
 
     const pickupNoteParts: string[] = [];
     if (!wantsPickup) {
-      pickupNoteParts.push(
-        meetLabel
-          ? `Self meet at ${meetLabel} — no pickup fee`
-          : 'Self-arranged — no operator pickup',
-      );
+      if (pickupQuoted) {
+        pickupNoteParts.push(
+          meetLabel
+            ? `Self-meet at ${meetLabel} — pickup quoted on WhatsApp, not the IDR 400,000 ATV surcharge`
+            : 'Pickup quoted on WhatsApp — not the IDR 400,000 ATV surcharge',
+        )
+      } else {
+        pickupNoteParts.push(
+          meetLabel
+            ? `Self meet at ${meetLabel} — no pickup fee`
+            : 'Self-arranged — no operator pickup',
+        );
+      }
     } else if (pickupIncluded) {
       pickupNoteParts.push('Hotel pickup & drop-off included in tour price');
     } else if (hasFreeUbudPickup && !isOutUbud) {
@@ -371,7 +389,7 @@ export function BookingPopup({
     }
     const appendQuoteNotes = (q: NonNullable<typeof activityQuote>, labelOverride?: string) => {
       const label = labelOverride ?? ACTIVITY_SHORT_LABEL[q.activityId] ?? q.activityId
-      if (q.activityId === 'tandem-atv') {
+      if (q.activityId === 'tandem-atv' || isUtvTandemId(q.activityId)) {
         pickupNoteParts.unshift(
           `${label} · ${adults} riders (${q.tierLabel}): ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`,
         )
@@ -414,7 +432,7 @@ export function BookingPopup({
       q: NonNullable<typeof activityQuote>,
       title: string,
     ) => {
-      if (q.activityId === 'tandem-atv') {
+      if (q.activityId === 'tandem-atv' || isUtvTandemId(q.activityId)) {
         lineItems.push({
           label: `${title} — ${adults} riders · ${q.units} ${q.unitLabel} × ${formatIdr(q.unitPrice)} (${q.tierLabel})`,
           amount: q.activitySubtotal,
@@ -845,11 +863,17 @@ export function BookingPopup({
                   Pickup &amp; drop-off is included in this tour&apos;s price — no arena self-meet and no extra fee. Add your hotel address below.
                 </span>
               </div>
-            ) : pickupNotOffered ? (
+            ) : hidePickupFee ? (
               <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 text-sm">
-                <span className="font-bold text-brand-green block mb-0.5">Transport not included</span>
+                <span className="font-bold text-brand-green block mb-0.5">
+                  {pickupQuoted ? "Pickup quoted or self-meet" : "Transport not included"}
+                </span>
                 <span className="text-brand-green-light">
-                  Arrange your own transport to the venue. This experience does not include hotel pickup.
+                  {pickupQuoted
+                    ? selfMeet
+                      ? `Self-meet at ${selfMeet.name}. Hotel pickup is quoted on WhatsApp — not the IDR 400,000 Sedang ATV surcharge.`
+                      : "Hotel pickup is quoted on WhatsApp — not the IDR 400,000 ATV/rafting surcharge. Self-meet if you prefer."
+                    : "Arrange your own transport to the venue. This experience does not include hotel pickup."}
                 </span>
               </div>
             ) : (
@@ -930,13 +954,21 @@ export function BookingPopup({
                 Meet at {meetLabel}: <strong className="text-brand-green">IDR 0 transport fee</strong>
                 {' '}· saves ~{formatIdr(pickupQuote.grabOneWayTypical)} vs Grab one-way
               </p>
-              <p className="opacity-80">Need pickup? Check &quot;I need hotel pickup&quot; above — hotel pickup charge IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')}.</p>
+              <p className="opacity-80">
+                {pickupQuoted
+                  ? "Hotel pickup is quoted on WhatsApp — not the IDR 400,000 Sedang ATV surcharge."
+                  : pickupNotOffered
+                    ? "This experience does not include hotel pickup."
+                    : `Need pickup? Check "I need hotel pickup" above — hotel pickup charge IDR ${PICKUP_FEE_IDR.toLocaleString("id-ID")}.`}
+              </p>
             </div>
             </>
             ) : (
             <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
               <span className="font-bold text-brand-green">Meeting:</span>{" "}
-              {pickupNotOffered
+              {pickupQuoted
+                ? "Self-meet or ask WhatsApp to quote pickup — not the IDR 400,000 ATV surcharge. Add the pin under Special Notes if needed."
+                : pickupNotOffered
                 ? "Self-arranged — transport is not included. Add venue notes under Special Notes if needed."
                 : "Self-arranged — no fixed arena for this tour. Check \"I need hotel pickup\" above, or add details in Special Notes."}
             </div>
@@ -1001,7 +1033,7 @@ export function BookingPopup({
             )}
 
             {isTandem && adults % 2 !== 0 && adults >= 2 && (
-              <p className="text-amber-700 text-sm font-bold bg-amber-50 p-2 rounded-lg border border-amber-100">Tandem ATV needs an even number of riders (2, 4, 6…).</p>
+              <p className="text-amber-700 text-sm font-bold bg-amber-50 p-2 rounded-lg border border-amber-100">Tandem needs an even number of riders (2, 4, 6…).</p>
             )}
             {isInvalidPax && <p className="text-red-500 text-sm font-bold bg-red-50 p-2 rounded-lg border border-red-100">Minimum {minAdults} adult{minAdults > 1 ? 's' : ''} required{includesRafting ? ' for rafting' : ''}{isTandem ? ' (even count for tandem)' : ''}{totalPax < activeTour.minPax ? ` · ${activeTour.minPax} persons total` : ''}.</p>}
 
@@ -1024,7 +1056,7 @@ export function BookingPopup({
                   <div key={q.activityId} className="mb-2 space-y-1">
                     <div className="flex justify-between items-center text-sm text-brand-green-light">
                       <span>
-                        {ACTIVITY_SHORT_LABEL[q.activityId]} · {q.activityId === 'tandem-atv'
+                        {ACTIVITY_SHORT_LABEL[q.activityId]} · {q.activityId === 'tandem-atv' || isUtvTandemId(q.activityId)
                           ? `${adults} riders · ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`
                           : `${formatIdr(q.unitPrice)} × ${q.units} adult(s)`}
                       </span>
@@ -1049,7 +1081,7 @@ export function BookingPopup({
               <>
                 <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
                   <span>
-                    {activityQuote.activityId === 'tandem-atv'
+                    {activityQuote.activityId === 'tandem-atv' || isUtvTandemId(activityQuote.activityId)
                       ? `${adults} riders · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`
                       : `${activityQuote.tierLabel} · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} adult(s)`}
                   </span>

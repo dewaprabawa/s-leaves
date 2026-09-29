@@ -19,6 +19,11 @@ export const BALI_SAFARI_LEGACY_SLUGS = [
   "night-safari-package-bali-safari-and-marine-park",
 ] as const
 
+export const JUNGLE_BUGGIES_SLUG = "jungle-buggies-complete-3-laps-tour"
+export const JUNGLE_BUGGIES_ID = "jungle-buggies-3-laps"
+export const JUNGLE_BUGGIES_IDR = money(920_000)
+export const JUNGLE_BUGGIES_DURATION_ISO = "PT2H"
+
 export const BALI_SAFARI_PRICES = {
   hopper: money(800_000),
   dragon: money(1_100_000),
@@ -403,32 +408,52 @@ We book the lodge ticket. Pickup is not in the from-price unless you add a drive
     ],
   }),
   ticketTour({
-    slug: "jungle-buggies-complete-3-laps-tour",
+    slug: JUNGLE_BUGGIES_SLUG,
     imageSlug: "jungle-buggies-trail",
     title: "Jungle Buggies — Complete 3 Laps",
     seoTitle: "Bali Jungle Buggies 3 Laps | From IDR 1.12M",
     seoDescription:
-      "Purpose-built 5 km buggy laps in Polaris rigs from IDR 1,120,000 for 3 laps. Single or tandem. Not a boat. WhatsApp booking.",
+      "Purpose-built 5 km buggy laps in Polaris rigs from IDR 1,120,000 for 3 laps. Single or tandem. Not Sedang ATV or Pemogan UTV. WhatsApp.",
     category: "adventure",
     area: "Bali jungle track",
     venue: "Purpose-built buggy course (~5 km / lap)",
     duration: "About 2 hours",
     sourcePrice: 920_000,
     shortDescription:
-      "Three laps on a purpose-built ~5 km buggy course in protected Polaris rigs. Single or tandem. From IDR 1,120,000.",
-    fullDescription: `**Jungle buggies** are land Polaris rigs on a purpose-built ~5 km lap — **not** our Sedang ATV and **not** a boat.
+      "Three laps on a purpose-built ~5 km buggy course in protected Polaris rigs. Single or tandem. From IDR 1,120,000. Not Sedang ATV and not the Pemogan UTV.",
+    fullDescription: `**Jungle buggies with Sekar Bali Activity are a 3-lap Polaris ticket from IDR ${JUNGLE_BUGGIES_IDR.toLocaleString("id-ID")} per person** on a purpose-built ~5 km course. About two hours. Single-seat or tandem (friend or guide). Helmet and park briefing come from the operator. Extra laps are quoted. Hotel pickup is **quoted** — not free Ubud cycling pickup and not the IDR 400,000 Sedang ATV surcharge.
 
-The ticket we list is the **complete 3-lap** run. Single-seat or tandem (friend or guide). Extra laps quoted. Helmet and park briefing included by the operator.
+This is **not** [Sedang ATV](/tours/bali-atv-adventure) (a quad at All New Bali Adventure from IDR 750,000) and **not** the 1-hour [UTV at Bali Buggy Adventures](/tours/utv-buggy-bali-adventure) in Pemogan (single IDR 1,200,000 · tandem 1,500,000). Compare: [UTV vs ATV vs jungle buggies](/blog/bali-utv-buggy-vs-atv-2026).
 
-WhatsApp guest count and whether you want single or tandem.`,
+### 2026 prices
+| Option | Price | Who |
+|-----|-------|-----|
+| **Complete 3 laps** | **IDR ${JUNGLE_BUGGIES_IDR.toLocaleString("id-ID")}** / person | Single or tandem · ~2 hours |
+| **Extra laps** | **Quoted** | Ask on WhatsApp |
+| **Hotel pickup** | **Quoted** | Or self-meet at the course |
+
+### Jungle buggies vs UTV vs ATV
+| | Jungle buggies (this page) | Pemogan UTV | Sedang ATV |
+|-----|-------|-----|-----|
+| From (IDR) | **1,120,000** / person | **1,200,000** single · **1,500,000** tandem | **750,000** single |
+| Machine | Polaris lap rig | Sit-in automatic UTV | Quad |
+| Time | ~2 hours · 3 × ~5 km laps | **1 hour / 7 km** | 2–4 hours jungle mud |
+| Lunch | Not this ticket | Included | Included |
+| Pickup | Quoted | Quoted | IDR 400,000 or self-meet |
+
+WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
     highlights: [
       "3 laps on a ~5 km purpose-built track",
       "Polaris buggy — single or tandem",
-      "About 2 hours",
-      "Separate from our Sedang ATV",
+      "About 2 hours · from IDR 1,120,000",
+      "Not Sedang ATV and not the Pemogan UTV",
     ],
     included: ["3 buggy laps", "Polaris rig + helmet / briefing from the operator"],
-    notIncluded: ["Hotel pickup unless quoted", "Extra laps"],
+    notIncluded: [
+      "Hotel pickup unless quoted",
+      "Extra laps",
+      "Sedang ATV or Pemogan UTV (different venues)",
+    ],
     itinerary: [
       { time: "Start", title: "Briefing + kit", description: "Fit helmets, choose single or tandem." },
       { time: "Laps", title: "3 laps", description: "Each lap about 5 km on the built track." },
@@ -436,7 +461,7 @@ WhatsApp guest count and whether you want single or tandem.`,
     extraFaq: {
       question: "Is this the same as your Ubud ATV or the 1-hour UTV?",
       answer:
-        "No. ATV at All New Bali Adventure in Sedang is a quad-bike ticket. The 1-hour UTV at Bali Buggy Adventures in Pemogan is a different sit-in buggy. Jungle buggies are Polaris rigs on a purpose-built 3-lap course.",
+        "No. ATV at All New Bali Adventure in Sedang is a quad-bike ticket from IDR 750,000. The 1-hour UTV at Bali Buggy Adventures in Pemogan is a different sit-in buggy (single IDR 1,200,000 / tandem 1,500,000). Jungle buggies are Polaris rigs on a purpose-built 3-lap course from IDR 1,120,000. Guide: https://www.sekarbaliactivity.com/blog/bali-utv-buggy-vs-atv-2026",
     },
   }),
   ticketTour({

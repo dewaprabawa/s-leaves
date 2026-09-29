@@ -101,6 +101,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Bali Safari packages compared', href: '/blog/bali-safari-packages-compared-2026' },
   { label: 'Zoo vs Safari vs Taro', href: '/blog/bali-zoo-vs-bali-safari-vs-taro' },
   { label: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies' },
+  { label: 'UTV vs ATV vs jungle buggies', href: '/blog/bali-utv-buggy-vs-atv-2026' },
   { label: 'Ubud workshop classes', href: '/blog/ubud-workshop-classes-2026' },
   { label: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep' },
   { label: 'Bali Bird Park from Ubud', href: '/blog/bali-bird-park-from-ubud-2026' },

@@ -674,6 +674,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/canyon-tubing',
     secondaryLabel: 'Book Wos tubing',
   },
+  'bali-utv-buggy-vs-atv-2026': {
+    headline: 'Book the UTV, ATV, or Polaris laps',
+    body: 'Pemogan UTV from IDR 1,200,000 (tandem 1,500,000, lunch included, pickup quoted). Sedang ATV from IDR 750,000 with IDR 400,000 pickup or self-meet. Jungle buggies 3 laps from IDR 1,120,000.',
+    primaryHref: '/book?activity=utv-single',
+    primaryLabel: 'Book UTV checkout',
+    secondaryHref: '/tours/bali-atv-adventure',
+    secondaryLabel: 'Book Sedang ATV',
+  },
   'ubud-workshop-classes-2026': {
     headline: 'Book batik, silver, or a 2-hour craft class',
     body: 'Batik and silver from IDR 650,000 (3 hours). Lontar, dance, bamboo, canang from IDR 600,000. Pickup quoted. Not Tumang cooking.',

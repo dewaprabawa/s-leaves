@@ -50,6 +50,20 @@ import {
   MOTORBIKE_UBUD_IDR,
   MOTORBIKE_UBUD_LIST_IDR,
 } from "@/data/motorbikeTrip"
+import {
+  UTV_BUGGY_DURATION_ISO,
+  UTV_BUGGY_INCLUDED,
+  UTV_BUGGY_SINGLE_IDR,
+  UTV_BUGGY_SLUG,
+  UTV_BUGGY_TANDEM_IDR,
+  UTV_BUGGY_VENUE,
+  UTV_BUGGY_VS_ATV_ARTICLE_SLUG,
+} from "@/data/utvBuggy"
+import {
+  JUNGLE_BUGGIES_DURATION_ISO,
+  JUNGLE_BUGGIES_IDR,
+  JUNGLE_BUGGIES_SLUG,
+} from "@/data/parkWorkshopTours"
 import { ORIGIN_MARKET_ARTICLE_SLUG, ORIGIN_TOURIST_TYPES } from "@/data/originMarkets"
 
 type Props = {
@@ -82,6 +96,14 @@ function isSwingTour(tour: Tour) {
 
 function isMotorbikeTour(tour: Tour) {
   return tour.slug === MOTORBIKE_TRIP_SLUG
+}
+
+function isUtvTour(tour: Tour) {
+  return tour.slug === UTV_BUGGY_SLUG
+}
+
+function isJungleBuggiesTour(tour: Tour) {
+  return tour.slug === JUNGLE_BUGGIES_SLUG
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -176,7 +198,9 @@ function buildTourSchema(tour: Tour) {
   const isoDuration = durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
-    "@type": cooking || jeep || isMotorbikeTour(tour) ? (["TouristTrip", "Product"] as const) : "TouristTrip",
+    "@type": cooking || jeep || isMotorbikeTour(tour) || isUtvTour(tour) || isJungleBuggiesTour(tour)
+      ? (["TouristTrip", "Product"] as const)
+      : "TouristTrip",
     "@id": `${SITE_URL}/tours/${tour.slug}#trip`,
     name: tour.title,
     description: cooking
@@ -195,7 +219,15 @@ function buildTourSchema(tour: Tour) {
       caption: tour.heroImage.alt,
     },
     url: `${SITE_URL}/tours/${tour.slug}`,
-    ...(isoDuration ? { duration: isoDuration } : {}),
+    ...(isoDuration || isUtvTour(tour) || isJungleBuggiesTour(tour)
+      ? {
+          duration: isUtvTour(tour)
+            ? UTV_BUGGY_DURATION_ISO
+            : isJungleBuggiesTour(tour)
+              ? JUNGLE_BUGGIES_DURATION_ISO
+              : isoDuration,
+        }
+      : {}),
     touristType: cooking
       ? ["Couples", "Families", "Food travelers", "Culture travelers"]
       : tour.slug === "batur-sunrise-jeep-tour"
@@ -220,6 +252,10 @@ function buildTourSchema(tour: Tour) {
             ? "Tampaksiring Tirta Empul or Pura Beji, Gianyar, Bali"
           : isMotorbikeTour(tour)
             ? "Ubud, Kintamani, North, South and East Bali"
+          : isUtvTour(tour)
+            ? "Pemogan, South Denpasar, Bali"
+          : isJungleBuggiesTour(tour)
+            ? "Bali jungle track"
           : tour.area ?? "Ubud, Bali",
     },
     ...(tour.venue
@@ -416,6 +452,81 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  if (isUtvTour(tour)) {
+    return {
+      ...base,
+      category: "Adventure",
+      location: {
+        "@type": "Place",
+        name: tour.venue ?? UTV_BUGGY_VENUE,
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(UTV_BUGGY_SINGLE_IDR),
+        highPrice: String(UTV_BUGGY_TANDEM_IDR),
+        priceCurrency: "IDR",
+        offerCount: 2,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: UTV_BUGGY_INCLUDED.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Single UTV Buggy",
+            price: String(UTV_BUGGY_SINGLE_IDR),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/book?activity=utv-single`,
+            description: "One rider · about 1 hour / 7 km · lunch included",
+          },
+          {
+            "@type": "Offer",
+            name: "Tandem UTV Buggy",
+            price: String(UTV_BUGGY_TANDEM_IDR),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/book?activity=utv-tandem`,
+            description: "Two guests on one buggy · about 1 hour / 7 km · lunch included",
+          },
+        ],
+      },
+    }
+  }
+
+  if (isJungleBuggiesTour(tour)) {
+    return {
+      ...base,
+      category: "Adventure",
+      location: {
+        "@type": "Place",
+        name: tour.venue ?? "Purpose-built buggy course",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(JUNGLE_BUGGIES_IDR),
+        highPrice: String(JUNGLE_BUGGIES_IDR),
+        priceCurrency: "IDR",
+        offerCount: 1,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Jungle Buggies — Complete 3 Laps",
+            price: String(JUNGLE_BUGGIES_IDR),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+            description: "Polaris 3-lap course · ~2 hours · pickup quoted",
+          },
+        ],
+      },
+    }
+  }
+
   if (isSwingTour(tour)) {
     return {
       ...base,
@@ -474,6 +585,8 @@ function buildTourWebPageSchema(tour: Tour) {
   if (isCookingTour(tour)) return buildCookingWebPageSchema(tour)
   if (isJeepTour(tour)) return buildJeepWebPageSchema(tour)
   if (isMotorbikeTour(tour)) return buildMotorbikeWebPageSchema(tour)
+  if (isUtvTour(tour)) return buildUtvWebPageSchema(tour)
+  if (isJungleBuggiesTour(tour)) return buildJungleBuggiesWebPageSchema(tour)
 
   const significantLink = [
     tour.slug === GIRLS_TRIP_SLUG ? undefined : `${SITE_URL}/book?activity=${tour.slug}`,
@@ -646,6 +759,81 @@ function buildMotorbikeQaSchemas(tour: Tour) {
   }))
 }
 
+function buildUtvWebPageSchema(tour: Tour) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    keywords: getTourPageKeywords(tour.slug)?.join(", "),
+    dateModified: ACTIVITY_GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".utv-geo-tldr", ".utv-geo-answer", ".activity-geo-tldr", ".activity-geo-answer", ".geo-tldr"],
+    },
+    significantLink: [
+      `${SITE_URL}/book?activity=utv-single`,
+      `${SITE_URL}/book?activity=utv-tandem`,
+      `${SITE_URL}/blog/${UTV_BUGGY_VS_ATV_ARTICLE_SLUG}`,
+      `${SITE_URL}/blog/which-bali-wheels-2026`,
+      `${SITE_URL}/blog/bali-canyoning-vs-tubing-vs-buggies`,
+      `${SITE_URL}/tours/bali-atv-adventure`,
+      `${SITE_URL}/tours/${JUNGLE_BUGGIES_SLUG}`,
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/pricing.md`,
+    ],
+  }
+}
+
+function buildJungleBuggiesWebPageSchema(tour: Tour) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    keywords: getTourPageKeywords(tour.slug)?.join(", "),
+    dateModified: ACTIVITY_GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".activity-geo-tldr", ".activity-geo-answer", ".geo-tldr"],
+    },
+    significantLink: [
+      `${SITE_URL}/tours/${UTV_BUGGY_SLUG}`,
+      `${SITE_URL}/tours/bali-atv-adventure`,
+      `${SITE_URL}/blog/${UTV_BUGGY_VS_ATV_ARTICLE_SLUG}`,
+      `${SITE_URL}/blog/bali-canyoning-vs-tubing-vs-buggies`,
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/pricing.md`,
+    ],
+  }
+}
+
+function buildActivityQaSchemas(tour: Tour) {
+  const geo = getActivityGeo(tour.slug)
+  if (!geo) return []
+  return geo.faqs.map((item, index) => ({
+    "@context": "https://schema.org",
+    "@type": "Question",
+    "@id": `${SITE_URL}/tours/${tour.slug}#qa-${index + 1}`,
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+      url: `${SITE_URL}/tours/${tour.slug}#${tour.slug}-geo`,
+    },
+  }))
+}
+
 function buildJeepQaSchemas() {
   return JEEP_GEO_FAQS.map((item, index) => ({
     "@context": "https://schema.org",
@@ -745,6 +933,15 @@ export default async function TourPage({ params }: Props) {
             />
           ))
         : null}
+      {isUtvTour(tour) || isJungleBuggiesTour(tour)
+        ? buildActivityQaSchemas(tour).map((qa) => (
+            <script
+              key={qa["@id"]}
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
+            />
+          ))
+        : null}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link
@@ -825,6 +1022,15 @@ export default async function TourPage({ params }: Props) {
                         (was {formatIdr(MOTORBIKE_EAST_LIST_IDR)})
                       </span>
                     </span>
+                  ) : isUtvTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      From {formatIdr(UTV_BUGGY_SINGLE_IDR)} single · tandem{" "}
+                      {formatIdr(UTV_BUGGY_TANDEM_IDR)}
+                    </span>
+                  ) : isJungleBuggiesTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      From {formatIdr(JUNGLE_BUGGIES_IDR)} / person · 3 laps
+                    </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">
                       From {formatIdr(tour.basePrice)}
@@ -881,6 +1087,10 @@ export default async function TourPage({ params }: Props) {
                     ? "About the Private Mount Batur Jeep Tour"
                     : isMotorbikeTour(tour)
                       ? "About the Bali motorbike / scooter tour"
+                      : isUtvTour(tour)
+                        ? "About the Pemogan UTV buggy"
+                      : isJungleBuggiesTour(tour)
+                        ? "About jungle buggies 3 laps"
                       : "About This Experience"}
               </h2>
               <article className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">

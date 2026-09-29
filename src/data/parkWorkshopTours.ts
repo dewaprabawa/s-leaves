@@ -403,43 +403,6 @@ We book the lodge ticket. Pickup is not in the from-price unless you add a drive
     ],
   }),
   ticketTour({
-    slug: "jungle-buggies-complete-3-laps-tour",
-    imageSlug: "jungle-buggies-trail",
-    title: "Jungle Buggies — Complete 3 Laps",
-    seoTitle: "Bali Jungle Buggies 3 Laps | From IDR 1.12M",
-    seoDescription:
-      "Purpose-built 5 km buggy laps in Polaris rigs from IDR 1,120,000 for 3 laps. Single or tandem. Not a boat. WhatsApp booking.",
-    category: "adventure",
-    area: "Bali jungle track",
-    venue: "Purpose-built buggy course (~5 km / lap)",
-    duration: "About 2 hours",
-    sourcePrice: 920_000,
-    shortDescription:
-      "Three laps on a purpose-built ~5 km buggy course in protected Polaris rigs. Single or tandem. From IDR 1,120,000.",
-    fullDescription: `**Jungle buggies** are land Polaris rigs on a purpose-built ~5 km lap — **not** our Sedang ATV and **not** a boat.
-
-The ticket we list is the **complete 3-lap** run. Single-seat or tandem (friend or guide). Extra laps quoted. Helmet and park briefing included by the operator.
-
-WhatsApp guest count and whether you want single or tandem.`,
-    highlights: [
-      "3 laps on a ~5 km purpose-built track",
-      "Polaris buggy — single or tandem",
-      "About 2 hours",
-      "Separate from our Sedang ATV",
-    ],
-    included: ["3 buggy laps", "Polaris rig + helmet / briefing from the operator"],
-    notIncluded: ["Hotel pickup unless quoted", "Extra laps"],
-    itinerary: [
-      { time: "Start", title: "Briefing + kit", description: "Fit helmets, choose single or tandem." },
-      { time: "Laps", title: "3 laps", description: "Each lap about 5 km on the built track." },
-    ],
-    extraFaq: {
-      question: "Is this the same as your Ubud ATV or the 1-hour UTV?",
-      answer:
-        "No. ATV at All New Bali Adventure in Sedang is a quad-bike ticket. The 1-hour UTV at Bali Buggy Adventures in Pemogan is a different sit-in buggy. Jungle buggies are Polaris rigs on a purpose-built 3-lap course.",
-    },
-  }),
-  ticketTour({
     slug: "dirt-bike-kintamani-black-lava",
     imageSlug: "dirt-bike-kintamani-ridge",
     title: "Dirt Bike — Kintamani Black Lava",

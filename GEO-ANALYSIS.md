@@ -7,7 +7,7 @@
 Operator facts that must stay extractable on the new SKUs:
 
 - **Bali motorbike tour:** from **IDR 450,000** per 125–160cc automatic scooter (Ubud) to **IDR 800,000** (East). Tickets and lunch **not** included. Pickup at the **chosen area**. Ride (IDP recommended) or pillion. Not Sedang ATV, not a dirt bike, not a private car. Money page now has a definition-first TLDR, 134–167 word answer blocks, and per-destination AggregateOffer.
-- **UTV at Bali Buggy Adventures (Pemogan):** single **IDR 1,200,000** · tandem **IDR 1,500,000**. About 1 hour / 7 km. Lunch included. Driver 17+ / passenger 6+. Pickup **quoted**. Not Sedang ATV and not the 3-lap Polaris ticket.
+- **UTV at Bali Buggy Adventures (Pemogan):** single **IDR 1,200,000** · tandem **IDR 1,500,000**. About 1 hour / 7 km. Lunch included. Driver 17+ / passenger 6+. Pickup **quoted**. Not Sedang ATV.
 - **Park / workshop / dirt-bike tickets:** we book the published ticket (source from-price + IDR 200,000). Pickup **quoted**. Do not invent free or 400K.
 
 ## Pillars
@@ -68,7 +68,7 @@ Do not manufacture a Wikipedia page. Do not buy citations.
 ## Passage-level citability
 
 **Strong (keep):**
-- UTV “facts AI can cite” — first-sentence answer + single/tandem table + “not ATV / not 3-lap”.
+- UTV “facts AI can cite” — first-sentence answer + single/tandem table + “not ATV”.
 - Safari package table (Hopper → Rhino).
 - Canyoning vs tubing vs buggies spoke.
 - Motorbike TLDR (54 words) + destination price table + vs-driver spoke (this PR).

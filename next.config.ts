@@ -49,6 +49,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tours/jungle-buggies-complete-3-laps-tour',
+        destination: '/tours/utv-buggy-bali-adventure',
+        permanent: true,
+      },
+      {
         source: '/blog/mount-batur-jeep-vs-trekking',
         destination: '/blog/mount-batur-jeep-vs-sunrise-trek',
         permanent: true,

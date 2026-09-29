@@ -1,4 +1,4 @@
-/** Bali Buggy Adventures — 1-hour UTV, not the imported Polaris 3-lap ticket. */
+/** Bali Buggy Adventures — 1-hour UTV, not Sedang ATV. */
 export const UTV_BUGGY_SLUG = "utv-buggy-bali-adventure"
 
 export const UTV_BUGGY_SINGLE_IDR = 1_200_000

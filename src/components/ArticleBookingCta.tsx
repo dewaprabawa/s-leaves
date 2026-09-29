@@ -667,7 +667,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryLabel: 'Zoo mud fun',
   },
   'bali-canyoning-vs-tubing-vs-buggies': {
-    headline: 'Ropes, tube, Polaris, or ATV — then book',
+    headline: 'Ropes, tube, UTV, or ATV — then book',
     body: 'Canyoning from IDR 1,850,000 (quoted pickup). Wos tubing IDR 500,000 with IDR 400,000 pickup or self-meet. Not the same sport.',
     primaryHref: '/tours/canyoning',
     primaryLabel: 'View canyoning',

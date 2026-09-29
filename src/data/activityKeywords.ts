@@ -443,7 +443,6 @@ export const NICHE_KEYWORDS = [
   'Ubud batik class',
   'Ubud silver class',
   'Kintamani dirt bike',
-  'jungle buggies Bali',
   'UTV buggy Bali',
   'Bali motorbike tour',
   'Bali scooter tour Ubud',
@@ -576,7 +575,7 @@ export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
       'Bali canyoning from Ubud',
       'family canyoning Bali',
     ],
-    compare: ['canyoning vs canyon tubing Bali', 'canyoning vs jungle buggies'],
+    compare: ['canyoning vs canyon tubing Bali', 'canyoning vs UTV buggy'],
   },
   'night-safari-dinner-under-the-stars-elephant-safari-park-lodge': {
     head: ['Taro night safari dinner', 'Elephant Safari Park Lodge dinner'],
@@ -588,11 +587,6 @@ export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
     book: ['Taro elephant ride lunch price', 'Taro elephant safari from Ubud'],
     compare: ['Taro elephant ride vs Bali Safari'],
   },
-  'jungle-buggies-complete-3-laps-tour': {
-    head: ['Bali jungle buggies', 'Polaris buggy Bali', 'jungle buggy 3 laps'],
-    book: ['jungle buggies 3 laps price', 'Polaris buggy Bali price'],
-    compare: ['jungle buggies vs ATV Ubud', 'jungle buggies vs UTV Bali'],
-  },
   'utv-buggy-bali-adventure': {
     head: ['UTV buggy Bali', 'Bali Buggy Adventures', 'UTV ride Bali'],
     book: [
@@ -600,7 +594,7 @@ export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
       'single UTV buggy Bali',
       'tandem UTV buggy Bali',
     ],
-    compare: ['UTV vs ATV Ubud', 'UTV vs jungle buggies Bali'],
+    compare: ['UTV vs ATV Ubud'],
   },
   'dirt-bike-kintamani-black-lava': {
     head: ['Kintamani dirt bike', 'Bali enduro Kintamani', 'black lava dirt bike Bali'],
@@ -898,7 +892,7 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   ],
   'bali-canyoning-vs-tubing-vs-buggies': [
     'canyoning vs canyon tubing Bali',
-    'jungle buggies vs ATV Ubud',
+    'UTV vs ATV Ubud',
   ],
   'ubud-workshop-classes-2026': [
     'Ubud batik class price',

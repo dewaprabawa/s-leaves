@@ -4,7 +4,7 @@
 **Brand:** Sekar Bali Activity · https://www.sekarbaliactivity.com  
 **Scope:** Repo readiness for extractable answers — **not** a live ChatGPT / Perplexity / AI Overview citation scrape. No citation claims without tool evidence.
 
-**Sources checked:** `src/data/tours.ts` + `src/data/parkWorkshopTours.ts` (**31** unique bookable slugs: prior catalog + UTV + motorbike), `src/lib/pricing.ts` (tiers + IDR 400,000 pickup fee), `src/data/cultureSales.ts`, `src/data/swingHeaven.ts`, `src/data/griyaBeji.ts`, `src/data/girlsTrip.ts`, `src/data/utvBuggy.ts`, `src/data/motorbikeTrip.ts`, `src/data/geoContent.ts` (`GEO_UPDATED` **2026-09-28**), `src/data/activityGeo.ts`, `src/data/cookingGeo.ts`, `src/data/jeepGeo.ts`, `src/data/parkWorkshopGeo.ts`, `src/lib/combos.ts` (unpublished mix discount), supporting slugs in `src/data/blog.ts`.
+**Sources checked:** `src/data/tours.ts` + `src/data/parkWorkshopTours.ts` (**30** unique bookable slugs after removing jungle buggies 3-laps), `src/lib/pricing.ts` (tiers + IDR 400,000 pickup fee), `src/data/cultureSales.ts`, `src/data/swingHeaven.ts`, `src/data/griyaBeji.ts`, `src/data/girlsTrip.ts`, `src/data/utvBuggy.ts`, `src/data/motorbikeTrip.ts`, `src/data/geoContent.ts` (`GEO_UPDATED` **2026-09-28**), `src/data/activityGeo.ts`, `src/data/cookingGeo.ts`, `src/data/jeepGeo.ts`, `src/data/parkWorkshopGeo.ts`, `src/lib/combos.ts` (unpublished mix discount), supporting slugs in `src/data/blog.ts`.
 
 This run did **not** query ChatGPT, Perplexity, Gemini, or Google AI Overviews. Readiness only.
 
@@ -49,7 +49,6 @@ Generators: `src/data/geoContent.ts` → `buildLlmsTxt()` (`/llms.txt`, `/.well-
 | Taro jungle ride + lunch | `jungle-safari-ride-and-lunch-elephant-safari-park-lodge` | 1,665,000 | Yes | Yes | Quoted |
 | Taro night dinner | `night-safari-dinner-under-the-stars-elephant-safari-park-lodge` | 1,660,000 | Yes | Yes | Quoted |
 | Canyoning | `canyoning` | 1,850,000 | Yes | Yes | Quoted |
-| Jungle buggies (3 laps) | `jungle-buggies-complete-3-laps-tour` | 1,120,000 | Yes | Yes | Quoted |
 | Dirt bike Kintamani | `dirt-bike-kintamani-black-lava` | 4,100,000 | Yes (shared dirt-bike row from 2,100,000+) | Yes | Quoted |
 | Dirt bike Tabanan day/night | `dirt-bike-tabanan-day-night` | 2,100,000 | Yes | Yes | Quoted |
 | Dirt bike Tabanan sunset beach | `dirt-bike-tabanan-jungle-sunset-beach` | 2,100,000 | Yes | Yes | Quoted |
@@ -62,8 +61,8 @@ Generators: `src/data/geoContent.ts` → `buildLlmsTxt()` (`/llms.txt`, `/.well-
 
 Also listed in `GEO_PRICING` (not a `TOURS` slug): DPS Airport to Ubud private transfer — IDR 700,000 / vehicle.
 
-- [x] All 31 unique `TOURS` slugs listed with IDR in `/llms.txt` (`GEO_TOUR_SUMMARIES`) and `/pricing.md` (`GEO_PRICING`; workshops + dirt-bike SKUs share a from-price row, each slug still has its own tour summary)
-- [x] Pickup rules accurate for ATV / rafting / tubing / Swing Heaven / Griya (400k or self-meet), cycling + cooking (free Ubud), Tirta (Ubud shuttle in ticket), jeep / Kintamani Day (island-wide), Luwak (no transport in package includes), parks / workshops / dirt bikes / canyoning / buggies (quoted)
+- [x] All unique `TOURS` slugs listed with IDR in `/llms.txt` (`GEO_TOUR_SUMMARIES`) and `/pricing.md` (`GEO_PRICING`; workshops + dirt-bike SKUs share a from-price row, each slug still has its own tour summary)
+- [x] Pickup rules accurate for ATV / rafting / tubing / Swing Heaven / Griya (400k or self-meet), cycling + cooking (free Ubud), Tirta (Ubud shuttle in ticket), jeep / Kintamani Day (island-wide), Luwak (no transport in package includes), parks / workshops / dirt bikes / canyoning / UTV (quoted)
 - [ ] Pickup bullet list does not yet name day-tour hotel start, Luwak self-arrange, or park/workshop quoted pickup (not wrong — incomplete; `GEO_POLICIES` already states the park “quoted” rule)
 - [ ] ATV + tubing combo IDR not published on agent files (intentional WhatsApp quote)
 - [ ] Cycling “worth it” article still says free Ubud pickup is cycling-only

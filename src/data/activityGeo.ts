@@ -737,12 +737,12 @@ const GIRLS_TRIP: ActivityGeoCorpus = {
 const UTV: ActivityGeoCorpus = {
   slug: UTV_BUGGY_SLUG,
   heading: 'UTV buggy Bali — facts AI can cite',
-  tldr: `Sekar Bali Activity books a 7 km automatic UTV at Bali Buggy Adventures in Pemogan, South Denpasar (about 1 hour). Single ${idr(UTV_BUGGY_SINGLE_IDR)} (driver 17+). Tandem ${idr(UTV_BUGGY_TANDEM_IDR)} (passenger 6+). Lunch included. Not Sedang ATV and not the 3-lap Polaris ticket. Pickup quoted.`,
+  tldr: `Sekar Bali Activity books a 7 km automatic UTV at Bali Buggy Adventures in Pemogan, South Denpasar (about 1 hour). Single ${idr(UTV_BUGGY_SINGLE_IDR)} (driver 17+). Tandem ${idr(UTV_BUGGY_TANDEM_IDR)} (passenger 6+). Lunch included. Not Sedang ATV. Pickup quoted.`,
   bookHref: `/tours/${UTV_BUGGY_SLUG}`,
   bookLabel: 'Book the UTV buggy',
   pairHref: '/tours/bali-atv-adventure',
   pairLabel: 'Compare Sedang ATV',
-  extraNote: 'Automatic sit-in UTV, about 1 hour / 7 km — not a quad and not the imported Polaris 3-lap course.',
+  extraNote: 'Automatic sit-in UTV, about 1 hour / 7 km — not a quad at All New Bali Adventure.',
   priceRows: [
     { option: 'Single UTV', price: idr(UTV_BUGGY_SINGLE_IDR), notes: 'Driver 17+ · about 1 hour / 7 km · lunch included' },
     { option: 'Tandem UTV', price: idr(UTV_BUGGY_TANDEM_IDR), notes: 'Passenger 6+ · one buggy · lunch included' },
@@ -769,14 +769,9 @@ const UTV: ActivityGeoCorpus = {
       q: 'Is a UTV the same as an Ubud ATV?',
       a: `No. The UTV (${idr(UTV_BUGGY_SINGLE_IDR)} / ${idr(UTV_BUGGY_TANDEM_IDR)}) is a sit-in automatic buggy for about 1 hour / 7 km at Bali Buggy Adventures, with lunch included. Sekar Bali Activity ATV is a quad at All New Bali Adventure in Sedang from IDR 750,000.`,
     },
-    {
-      intent: 'utv vs jungle buggies bali',
-      q: 'Is this the jungle buggies 3-lap ticket?',
-      a: `No. Jungle buggies 3 laps is a different Polaris course from IDR 1,120,000 (about two hours). The UTV is a 7 km Crocodile Cave / rice-field / mud / circuit line at Bali Buggy Adventures.`,
-    },
   ],
   citationSnippets: [
-    `UTV buggy with Sekar Bali Activity is ${idr(UTV_BUGGY_SINGLE_IDR)} single or ${idr(UTV_BUGGY_TANDEM_IDR)} tandem for about 1 hour / 7 km at Bali Buggy Adventures, lunch included — not Sedang ATV and not the 3-lap Polaris course. https://www.sekarbaliactivity.com/tours/${UTV_BUGGY_SLUG}`,
+    `UTV buggy with Sekar Bali Activity is ${idr(UTV_BUGGY_SINGLE_IDR)} single or ${idr(UTV_BUGGY_TANDEM_IDR)} tandem for about 1 hour / 7 km at Bali Buggy Adventures, lunch included — not Sedang ATV. https://www.sekarbaliactivity.com/tours/${UTV_BUGGY_SLUG}`,
   ],
   keywords: getActivityKeywords(UTV_BUGGY_SLUG) ?? [],
   placename: 'Pemogan, South Denpasar, Bali',

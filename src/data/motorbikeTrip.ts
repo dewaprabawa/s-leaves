@@ -4,8 +4,8 @@ export const MOTORBIKE_TRIP_SLUG = "bali-motorbike-traveling-trip"
 /** Bookable promo rates — do not raise these when showing a compare-at list. */
 export const MOTORBIKE_UBUD_IDR = 450_000
 export const MOTORBIKE_WATERFALL_IDR = 500_000
-export const MOTORBIKE_KINTAMANI_IDR = 600_000
-export const MOTORBIKE_SOUTH_IDR = 650_000
+export const MOTORBIKE_KINTAMANI_IDR = 650_000
+export const MOTORBIKE_SOUTH_IDR = 750_000
 export const MOTORBIKE_NORTH_IDR = 750_000
 export const MOTORBIKE_EAST_IDR = 800_000
 

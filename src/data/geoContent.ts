@@ -737,8 +737,8 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Combos',
     q: 'Can you combine ATV and river tubing in Bali?',
-    a: 'Yes. Sekar Bali Activity offers ATV + river tubing on the Wos River — race the quad bike track at All New Bali Adventure, then float the river on a tube. Ask via WhatsApp for combo availability and pricing.',
-    url: `${SITE_URL}/blog/atv-river-tubing-wos-river-bali`,
+    a: 'Yes. ATV + Wos River tubing is the gentler land-then-water add-on. The flagship same-day is ATV + Ayung rafting from IDR 1,250,000 (10% mix at checkout): https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
+    url: `${SITE_URL}/tours/atv-rafting-combo`,
   },
   {
     category: 'Combos',

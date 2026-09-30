@@ -105,7 +105,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
 
 const HUB_SNIPPET: ArticleGeoSnippet = {
   tldr:
-    'Sekar Bali Activity publishes 2026 Ubud-area IDR on every money page: Tumang cooking promo IDR 450,000 with free Ubud pickup, Pejeng cycling IDR 750,000, ATV from IDR 750,000, rafting and tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven from IDR 530,000, private Batur jeep from IDR 750,000 (3+), plus park tickets we book (Bird Park from IDR 585,000, Safari from IDR 1,000,000, canyoning from IDR 1,850,000, workshops from IDR 600,000). WhatsApp booking — no deposit to inquire.',
+    'Sekar Bali Activity publishes 2026 Ubud-area IDR on every money page: Tumang cooking promo IDR 450,000 with free Ubud pickup, Pejeng cycling IDR 750,000, ATV from IDR 750,000, rafting and tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven from IDR 530,000, private Batur jeep from IDR 750,000 (3+), plus park tickets we book (Bird Park from IDR 585,000, Safari from IDR 1,000,000, canyoning from IDR 1,850,000, batik and silver classes from IDR 650,000). WhatsApp booking — no deposit to inquire.',
   updated: ACTIVITY_GEO_UPDATED,
   bookHref: '/book',
   bookLabel: 'Book an activity',

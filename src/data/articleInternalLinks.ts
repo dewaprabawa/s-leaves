@@ -171,7 +171,6 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026' },
     { title: 'Book batik class', href: '/tours/batik-class' },
     { title: 'Book silver class', href: '/tours/silver-making-class' },
-    { title: 'Book canang class', href: '/tours/balinese-offering-class' },
     { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class' },
   ],
   dirtBike: [

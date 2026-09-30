@@ -147,22 +147,21 @@ First-timers and families who want water without ropes: [canyon tubing](/tours/c
   },
   {
     slug: 'ubud-workshop-classes-2026',
-    title: 'Ubud Workshop Classes 2026: Batik, Silver, Dance, Lontar, Canang',
-    seoTitle: 'Ubud Workshop Classes 2026 | From 600K',
+    title: 'Ubud Workshop Classes 2026: Batik & Silver',
+    seoTitle: 'Ubud Batik & Silver Classes 2026 | From 650K',
     excerpt:
-      'Batik and silver from IDR 650K (3 hours). Lontar, dance, bamboo, canang from 600K (2 hours). Pickup quoted. WhatsApp booking.',
+      'Batik and silver from IDR 650K (3 hours). Pickup quoted. WhatsApp booking.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/batik-class-workshop.jpg',
     content: `
-**Which Ubud workshop should you book in 2026?** Sekar Bali Activity books **2–3 hour classes** with local teachers — we confirm the studio on WhatsApp. **[Batik](/tours/batik-class)** and **[silver making](/tours/silver-making-class)** are **3 hours from IDR 650,000**. **[Lontar weaving](/tours/lontar-weaving-class)**, **[dance](/tours/balinese-dance-class)**, **[bamboo carving](/tours/bamboo-carving-class)**, and **[canang offering](/tours/balinese-offering-class)** are **2 hours from IDR 600,000**. Hotel pickup is **quoted**. These are workshops, not [Tumang cooking class](/tours/balinese-cooking-class). WhatsApp — **no payment to inquire**.
+**Which Ubud workshop should you book in 2026?** Sekar Bali Activity books **3-hour batik and silver classes** with local teachers — we confirm the studio on WhatsApp. **[Batik](/tours/batik-class)** and **[silver making](/tours/silver-making-class)** are **3 hours from IDR 650,000**. Hotel pickup is **quoted**. These are workshops, not [Tumang cooking class](/tours/balinese-cooking-class). WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - Batik / silver **IDR 650,000** · 3 hours
-> - Lontar / dance / bamboo / canang **IDR 600,000** · 2 hours
 > - Silver includes **5 grams** — extra silver quoted
-> - Canang class is **not** a temple ceremony
 > - Pickup quoted · studio confirmed on WhatsApp
+> - We do not book dance, lontar, bamboo, or offering classes
 
 ## 2026 class table
 
@@ -170,26 +169,19 @@ First-timers and families who want water without ropes: [canyon tubing](/tours/c
 | --- | --- | --- | --- |
 | [Batik](/tours/batik-class) | **650,000** | 3 hrs | The cloth |
 | [Silver](/tours/silver-making-class) | **650,000** | 3 hrs | Ring / pendant / earrings (5 g) |
-| [Lontar weaving](/tours/lontar-weaving-class) | **600,000** | 2 hrs | Palm basket |
-| [Bamboo carving](/tours/bamboo-carving-class) | **600,000** | 2 hrs | Small animal motif |
-| [Dance](/tours/balinese-dance-class) | **600,000** | 2 hrs | The phrase you learn |
-| [Canang offering](/tours/balinese-offering-class) | **600,000** | 2 hrs | The offering you weave |
 
 ## How to choose
 
 - **Cloth + wax** → batik
 - **Jewelry** → silver
-- **Palm craft** → lontar or canang (canang is the daily offering; lontar is the basket craft)
-- **Movement** → beginner dance
-- **Small carved souvenir** → bamboo
 
-Want a kitchen instead? [Tumang Bali Cooking Class](/tours/balinese-cooking-class) promo **IDR 450,000** with **free Ubud pickup**. Temple ritual: [Griya Beji](/tours/griya-beji-waterfall) or [Tirta Empu](/tours/tirta-empu-purification) — not the canang workshop.
+Want a kitchen instead? [Tumang Bali Cooking Class](/tours/balinese-cooking-class) promo **IDR 450,000** with **free Ubud pickup**. Temple ritual: [Griya Beji](/tours/griya-beji-waterfall) or [Tirta Empu](/tours/tirta-empu-purification).
 
 ## How to book
 
 WhatsApp **which class, date, guest count, hotel**. We confirm the studio and IDR.
 
-**Ready?** [Batik](/tours/batik-class) · [Silver](/tours/silver-making-class) · [Canang](/tours/balinese-offering-class).
+**Ready?** [Batik](/tours/batik-class) · [Silver](/tours/silver-making-class).
 `,
   },
   {

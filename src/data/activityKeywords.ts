@@ -611,35 +611,15 @@ export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
     book: ['Tabanan jungle sunset dirt bike price'],
     compare: ['Tabanan sunset dirt bike vs day ride'],
   },
-  'lontar-weaving-class': {
-    head: ['lontar weaving class Ubud', 'lontar class Bali'],
-    book: ['lontar weaving class price', 'lontar weaving Ubud 2 hours'],
-    compare: ['lontar vs batik class Ubud'],
-  },
   'silver-making-class': {
     head: ['silver making class Ubud', 'Celuk silver class'],
     book: ['Ubud silver class price', 'silver class 5 grams Bali'],
     compare: ['silver class vs batik class Ubud'],
   },
-  'balinese-dance-class': {
-    head: ['Balinese dance class Ubud', 'beginner Balinese dance'],
-    book: ['Balinese dance class price', '2 hour dance class Ubud'],
-    compare: ['dance class vs offering class Ubud'],
-  },
   'batik-class': {
     head: ['batik class Ubud', 'batik workshop Bali'],
     book: ['Ubud batik class price', '3 hour batik class Ubud'],
     compare: ['batik vs silver class Ubud'],
-  },
-  'bamboo-carving-class': {
-    head: ['bamboo carving class Ubud', 'bamboo workshop Bali'],
-    book: ['bamboo carving class price'],
-    compare: ['bamboo carving vs lontar class'],
-  },
-  'balinese-offering-class': {
-    head: ['canang offering class Ubud', 'Balinese offering class', 'canang sari class'],
-    book: ['canang sari class price', 'offering class Ubud 2 hours'],
-    compare: ['offering class vs dance class Ubud'],
   },
 }
 
@@ -897,7 +877,6 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'ubud-workshop-classes-2026': [
     'Ubud batik class price',
     'Ubud silver class',
-    'canang offering class Ubud',
   ],
   'kintamani-dirt-bike-vs-batur-jeep': [
     'dirt bike vs Mount Batur jeep',

@@ -13,7 +13,7 @@ import {
 } from '@/data/parkWorkshopTours'
 import { SITE_URL } from '@/lib/seo'
 
-export const PARK_WORKSHOP_GEO_UPDATED = '2026-09-23'
+export const PARK_WORKSHOP_GEO_UPDATED = '2026-09-30'
 
 const idr = (n: number) => `IDR ${n.toLocaleString('id-ID')}`
 
@@ -38,12 +38,8 @@ const P = {
   dirtKintamani: priceOf('dirt-bike-kintamani-black-lava'),
   dirtTabanan: priceOf('dirt-bike-tabanan-day-night'),
   dirtSunset: priceOf('dirt-bike-tabanan-jungle-sunset-beach'),
-  lontar: priceOf('lontar-weaving-class'),
   silver: priceOf('silver-making-class'),
-  dance: priceOf('balinese-dance-class'),
   batik: priceOf('batik-class'),
-  bamboo: priceOf('bamboo-carving-class'),
-  offering: priceOf('balinese-offering-class'),
 } as const
 
 function ticketGeo(opts: {
@@ -410,19 +406,6 @@ function workshopGeo(opts: {
   })
 }
 
-const LONTAR = workshopGeo({
-  slug: 'lontar-weaving-class',
-  name: 'Lontar weaving class',
-  hours: '2-hour',
-  price: P.lontar,
-  placename: 'Ubud, Bali',
-  tldrExtra: 'You weave lontar palm into a small offering basket — the same craft used for canang — and take the piece home.',
-  pairHref: '/tours/balinese-offering-class',
-  pairLabel: 'Pair with a canang class',
-  extraNote: 'Not a jewelry class — see silver making for that.',
-  includeNotes: 'Materials + teacher · take your piece home',
-})
-
 const SILVER = workshopGeo({
   slug: 'silver-making-class',
   name: 'Silver making class',
@@ -441,19 +424,6 @@ const SILVER = workshopGeo({
   },
 })
 
-const DANCE = workshopGeo({
-  slug: 'balinese-dance-class',
-  name: 'Balinese dance class',
-  hours: '2-hour',
-  price: P.dance,
-  placename: 'Ubud, Bali',
-  tldrExtra: 'Beginner full-body lines, eyes, and hand positions with a local teacher. No experience needed. Costume photos are extra if the studio offers them.',
-  pairHref: '/tours/balinese-offering-class',
-  pairLabel: 'Pair with an offering class',
-  extraNote: 'This is a studio class, not a Kecak ticket.',
-  includeNotes: 'Teacher · beginner-friendly',
-})
-
 const BATIK = workshopGeo({
   slug: 'batik-class',
   name: 'Ubud batik class',
@@ -467,37 +437,6 @@ const BATIK = workshopGeo({
   includeNotes: 'Cloth, wax, dyes + teacher · keep the cloth',
 })
 
-const BAMBOO = workshopGeo({
-  slug: 'bamboo-carving-class',
-  name: 'Bamboo carving class',
-  hours: '2-hour',
-  price: P.bamboo,
-  placename: 'Ubud, Bali',
-  tldrExtra: 'The usual project is a small animal motif — dragonfly or butterfly — cut and detailed with a teacher. You keep it.',
-  pairHref: '/tours/lontar-weaving-class',
-  pairLabel: 'Compare lontar weaving',
-  extraNote: 'Tools provided. Beginner-friendly.',
-  includeNotes: 'Bamboo blank + tools + teacher',
-})
-
-const OFFERING = workshopGeo({
-  slug: 'balinese-offering-class',
-  name: 'Canang offering class',
-  hours: '2-hour',
-  price: P.offering,
-  placename: 'Ubud, Bali',
-  tldrExtra: 'You weave palm trays and place flowers the way Balinese households do each morning. This is a workshop, not a temple ceremony ticket.',
-  pairHref: '/tours/lontar-weaving-class',
-  pairLabel: 'Pair with lontar weaving',
-  extraNote: 'Not a Tirta Empul or Griya Beji ritual ticket.',
-  includeNotes: 'Palm, flowers, tray materials + teacher',
-  extraFaq: {
-    intent: 'canang class vs temple ceremony',
-    q: 'Is the offering class a temple ceremony?',
-    a: `No. The canang class from ${idr(P.offering)} is a ~2-hour workshop. Temple purification is a different ticket — Griya Beji waterfall melukat from IDR 300,000 or private Tirta Empul / Pura Beji at IDR 1,200,000.`,
-  },
-})
-
 export const PARK_WORKSHOP_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [BIRD.slug]: BIRD,
   [MUD.slug]: MUD,
@@ -508,12 +447,8 @@ export const PARK_WORKSHOP_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [DIRT_KINTAMANI.slug]: DIRT_KINTAMANI,
   [DIRT_TABANAN.slug]: DIRT_TABANAN,
   [DIRT_SUNSET.slug]: DIRT_SUNSET,
-  [LONTAR.slug]: LONTAR,
   [SILVER.slug]: SILVER,
-  [DANCE.slug]: DANCE,
   [BATIK.slug]: BATIK,
-  [BAMBOO.slug]: BAMBOO,
-  [OFFERING.slug]: OFFERING,
 }
 
 export const PARK_WORKSHOP_GEO_LIST = Object.values(PARK_WORKSHOP_GEO_BY_SLUG)

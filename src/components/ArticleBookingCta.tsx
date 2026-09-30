@@ -675,8 +675,8 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryLabel: 'Book Wos tubing',
   },
   'ubud-workshop-classes-2026': {
-    headline: 'Book batik, silver, or a 2-hour craft class',
-    body: 'Batik and silver from IDR 650,000 (3 hours). Lontar, dance, bamboo, canang from IDR 600,000. Pickup quoted. Not Tumang cooking.',
+    headline: 'Book batik or silver — the two Ubud workshops we book',
+    body: 'Batik and silver from IDR 650,000 (3 hours). Pickup quoted. Not Tumang cooking.',
     primaryHref: '/tours/batik-class',
     primaryLabel: 'View batik class',
     secondaryHref: '/tours/silver-making-class',

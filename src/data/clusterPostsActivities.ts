@@ -93,7 +93,7 @@ These are **park or workshop tickets we confirm on WhatsApp** — not our Sedang
 
 **[Canyoning](/tours/canyoning)** from **IDR 1,850,000** is a gorge descent — not tubing, not a boat. **[UTV Buggy Bali Adventure](/tours/utv-buggy-bali-adventure)** is a 1-hour sit-in UTV — single **IDR 1,200,000**, tandem **IDR 1,500,000**. Guide: [canyoning vs tubing vs buggies](/blog/bali-canyoning-vs-tubing-vs-buggies).
 
-**[Ubud workshops](/blog/ubud-workshop-classes-2026)** from **IDR 600,000** (2-hour lontar / dance / bamboo / canang) or **IDR 650,000** (3-hour batik / silver).
+**[Ubud workshops](/blog/ubud-workshop-classes-2026)** — **[batik](/tours/batik-class)** and **[silver making](/tours/silver-making-class)** from **IDR 650,000** (3 hours).
 
 **[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** from **IDR 4,100,000** is not the [Batur jeep](/tours/batur-sunrise-jeep-tour). Compare: [dirt bike vs jeep](/blog/kintamani-dirt-bike-vs-batur-jeep).
 

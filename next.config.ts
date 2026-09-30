@@ -54,6 +54,26 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tours/lontar-weaving-class',
+        destination: '/blog/ubud-workshop-classes-2026',
+        permanent: true,
+      },
+      {
+        source: '/tours/balinese-dance-class',
+        destination: '/blog/ubud-workshop-classes-2026',
+        permanent: true,
+      },
+      {
+        source: '/tours/bamboo-carving-class',
+        destination: '/blog/ubud-workshop-classes-2026',
+        permanent: true,
+      },
+      {
+        source: '/tours/balinese-offering-class',
+        destination: '/blog/ubud-workshop-classes-2026',
+        permanent: true,
+      },
+      {
         source: '/blog/mount-batur-jeep-vs-trekking',
         destination: '/blog/mount-batur-jeep-vs-sunrise-trek',
         permanent: true,

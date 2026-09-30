@@ -232,6 +232,11 @@ const pricingData: PricingRow[] = [
 
 const travelGuides = [
   {
+    title: "Best Price ATV, Rafting, Cycling & Scooter 2026",
+    excerpt: "Published rates: ATV from 750K, rafting 500K / 450K for 2+, cycling 750K with free pickup, scooter promo 450K.",
+    href: "/blog/best-price-atv-rafting-cycling-scooter-ubud-2026",
+  },
+  {
     title: "ATV + Rafting Combo Ubud 2026",
     excerpt: "Flagship mud-then-rapids day from IDR 1.25M. 10% mix at checkout. WhatsApp booking.",
     href: "/blog/atv-rafting-combo-ubud-2026",

@@ -12,6 +12,11 @@ export type TourRelatedGuide = {
 export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   'atv-rafting-combo': [
     {
+      title: 'Best price ATV, rafting, cycling & scooter',
+      href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
+      blurb: 'Published 2026 rates for all four — then stack this flagship mix.',
+    },
+    {
       title: 'ATV + rafting Ubud 2026',
       href: '/blog/atv-rafting-combo-ubud-2026',
       blurb: 'From 1.25M · 10% mix · couple math · WhatsApp.',
@@ -53,6 +58,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'bali-atv-adventure': [
+    {
+      title: 'Best price ATV, rafting, cycling & scooter',
+      href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
+      blurb: 'Published ATV 750/725/700K next to rafting, cycling, and scooter promo.',
+    },
     {
       title: 'ATV + rafting combo (flagship)',
       href: '/blog/atv-rafting-combo-ubud-2026',
@@ -125,6 +135,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'whitewater-rafting': [
+    {
+      title: 'Best price ATV, rafting, cycling & scooter',
+      href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
+      blurb: 'Published rafting 500K / 450K for 2+ next to ATV, cycling, and scooter.',
+    },
     {
       title: 'ATV + rafting combo (flagship)',
       href: '/blog/atv-rafting-combo-ubud-2026',
@@ -236,6 +251,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'ubud-ricefield-cycling-tour': [
+    {
+      title: 'Best price ATV, rafting, cycling & scooter',
+      href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
+      blurb: 'Published cycling 750K with free Ubud pickup next to ATV, rafting, and scooter.',
+    },
     {
       title: 'Things to do near Ubud 2026',
       href: '/blog/things-to-do-near-ubud-2026',
@@ -656,6 +676,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class', blurb: 'Kitchen instead of jewelry — free Ubud pickup.' },
   ],
   'bali-motorbike-traveling-trip': [
+    { title: 'Best price ATV, rafting, cycling & scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026', blurb: 'Published scooter promo 450K next to ATV, rafting, and cycling.' },
     { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026', blurb: 'Promo from IDR 450K (was 550K). Canggu / Jimbaran / Nusa Dua shuttle IDR 550K once per booking.' },
     { title: 'Japan, Korea, China & Middle East (English)', href: '/blog/bali-tours-for-japanese-chinese-travelers-2026', blurb: 'Same English WhatsApp and IDR prices. Includes Korea and the Middle East (UAE, Saudi, Qatar).' },
     { title: 'Motorbike tour vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026', blurb: 'Scooter promo from IDR 450K vs private car from IDR 600K — tickets extra on both.' },

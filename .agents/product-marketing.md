@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.20
+**Document version:** v2.21
 **Last updated:** 2026-09-30
 
 ## Product Overview
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.21 (2026-09-30) — Commercial **best price** hub `/blog/best-price-atv-rafting-cycling-scooter-ubud-2026` plus money-page titles: ATV from 750K, rafting 500K/450K, cycling 750K free pickup, scooter promo 450K. Honest vs 235K–350K shared SERP (we do not claim cheapest). Flagship mix ATV+rafting from 1.25M still applies. No fake 999K. No SeaBank. No Jungle Buggies 3-lap.
 - v2.20 (2026-09-30) — **ATV + Ayung rafting is the flagship featured activity.** Dedicated money page `/tours/atv-rafting-combo` from **IDR 1,250,000** (ATV 750K + rafting 500K list floors). 10% mix at checkout. Homepage hero, top-picks, pricing, and GEO lead with the combo. Commercial article `/blog/atv-rafting-combo-ubud-2026`. Do not invent a 999K package sticker. ATV + Wos tubing stays the gentler add-on. Pickup IDR 400,000 once or self-meet. Rafting min 2. Also ships the ATV vs UTV compare (Sedang sit-on from 750K versus Pemogan sit-in hour 1.2M / 1.5M).
 - v2.19 (2026-09-30) — GA4 fires `generate_lead` on WhatsApp clicks and invoice WhatsApp sends. Mark that event as a key event in Admin so the empty Key events / session key event rate columns fill in.
 - v2.18 (2026-09-29) — Removed **Jungle Buggies — Complete 3 Laps** (old `/tours/jungle-buggies-complete-3-laps-tour` redirects to the Pemogan UTV). Sit-in buggy demand stays on **UTV at Bali Buggy Adventures**.

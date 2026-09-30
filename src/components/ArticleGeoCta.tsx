@@ -116,6 +116,7 @@ const HUB_SNIPPET: ArticleGeoSnippet = {
 
 const HUB_ARTICLE_SLUGS = new Set([
   'things-to-do-near-ubud-2026',
+  'best-price-atv-rafting-cycling-scooter-ubud-2026',
   'bali-adventure-packages-prices-2026',
   'ubud-hotel-pickup-bali-adventures-explained',
   'how-to-book-bali-adventure-whatsapp',
@@ -157,6 +158,18 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
       bookLabel: 'Book ATV + rafting',
       pairHref: '/book?combo=combo-atv-rafting',
       pairLabel: 'Open mix checkout',
+    }
+  }
+
+  if (slug === 'best-price-atv-rafting-cycling-scooter-ubud-2026') {
+    return {
+      tldr:
+        'Sekar Bali Activity published 2026 best rates near Ubud: ATV from IDR 750,000 (700,000 at 3+), Ayung rafting IDR 500,000 (450,000 for 2+, min 2), Pejeng cycling IDR 750,000 with free Ubud pickup, scooter tour promo from IDR 450,000 per bike (tickets extra). ATV/rafting pickup IDR 400,000 or self-meet. WhatsApp — no payment to inquire.',
+      updated: ACTIVITY_GEO_UPDATED,
+      bookHref: '/tours/bali-atv-adventure',
+      bookLabel: 'Book ATV',
+      pairHref: '/tours/whitewater-rafting',
+      pairLabel: 'Book rafting',
     }
   }
 

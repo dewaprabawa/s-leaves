@@ -123,6 +123,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Cycling + Cooking Combo', url: `${SITE_URL}/book?activity=combo-cycling-cooking` },
   { name: 'Swing Heaven + Cooking Combo', url: `${SITE_URL}/book?activity=combo-swing-cooking` },
   { name: 'ATV + Ayung Rafting Combo', url: `${SITE_URL}/tours/atv-rafting-combo` },
+  { name: 'Best Price ATV Rafting Cycling Scooter', url: `${SITE_URL}/blog/best-price-atv-rafting-cycling-scooter-ubud-2026` },
   { name: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure` },
   { name: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting` },
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },

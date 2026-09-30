@@ -45,6 +45,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Griya Beji vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
   { label: 'Palm reading Bali', href: '/blog/palm-reading-bali-griya-beji' },
   { label: 'Mental healing Bali', href: '/blog/mental-healing-bali-griya-beji' },
+  { label: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
   { label: 'ATV + Ayung rafting combo', href: '/tours/atv-rafting-combo' },
   { label: 'ATV + rafting Ubud 2026', href: '/blog/atv-rafting-combo-ubud-2026' },
   { label: 'Book ATV + rafting', href: '/book?combo=combo-atv-rafting' },

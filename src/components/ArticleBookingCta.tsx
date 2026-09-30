@@ -172,6 +172,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/book?combo=combo-atv-rafting',
     secondaryLabel: 'Open mix checkout',
   },
+  'best-price-atv-rafting-cycling-scooter-ubud-2026': {
+    headline: 'Lock the published best rate on WhatsApp',
+    body: 'ATV from 750K · rafting 500K (450K for 2+) · cycling 750K with free Ubud pickup · scooter promo 450K. No deposit to inquire.',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'Book ATV',
+    secondaryHref: '/tours/bali-motorbike-traveling-trip',
+    secondaryLabel: 'Book scooter tour',
+  },
   'which-bali-wheels-2026': {
     headline: 'Book the machine you actually want',
     body: 'Scooter from IDR 450,000. ATV from 750,000. UTV 1.2M. Dirt bike 2.1–4.1M. Jeep from 750,000 at 3+. One WhatsApp inbox.',

@@ -52,7 +52,7 @@ Want a cave Instagram tunnel? That is **Kuber in Payangan**, which we do **not**
 
 ## Who should book which
 
-Book **Sedang ATV** when you are staying near Ubud, you want a **2–4 hour mud morning**, and lunch is on the card. Pair with [Wos River tubing](/blog/atv-river-tubing-wos-river-bali) the same day — combo IDR is a WhatsApp quote.
+Book **Sedang ATV** when you are staying near Ubud, you want a **2–4 hour mud morning**, and lunch is on the card. The flagship same-day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000**. Gentler water: [Wos River tubing](/blog/atv-river-tubing-wos-river-bali).
 
 Book **Pemogan UTV** when you want a **sit-in hour** near the south, a cabin instead of a saddle, or a driver-plus-passenger pair after a flight day.
 

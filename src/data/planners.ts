@@ -90,6 +90,11 @@ export const PLANNERS: Planner[] = [
         answer:
           'No. Sedang ATV is a sit-on quad from IDR 750,000. Pemogan UTV is a sit-in hour from IDR 1,200,000. Full table: ATV vs UTV 2026.',
       },
+      {
+        question: 'What is the flagship adventure combo?',
+        answer:
+          'ATV + Ayung rafting. From-price IDR 1,250,000 at ticket floors (ATV 750,000 + rafting 500,000). Same-day mix is 10% off at checkout. Pickup IDR 400,000 once or self-meet. Rafting needs two guests.',
+      },
     ],
   },
   {
@@ -122,7 +127,7 @@ export const PLANNERS: Planner[] = [
       {
         question: 'How much is a Bali ATV near Ubud in 2026?',
         answer:
-          'Single ATV is IDR 750,000 for 1 rider, IDR 725,000 each for 2, and IDR 700,000 each for 3+. Tandem is IDR 1,100,000 for two sharing one bike. Lunch, helmet, boot shoes, and insurance are included at All New Bali Adventure in Sedang.',
+          'Single ATV is IDR 750,000 for 1 rider, IDR 725,000 each for 2, and IDR 700,000 each for 3+. Tandem is IDR 1,100,000 for two sharing one bike. Lunch, helmet, boot shoes, and insurance are included at All New Bali Adventure in Sedang. Stack Ayung rafting the same day from IDR 1,250,000 at ticket floors.',
       },
       {
         question: 'Is hotel pickup included on ATV?',

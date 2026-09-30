@@ -50,7 +50,7 @@ import {
 } from '@/data/motorbikeTrip'
 import { ORIGIN_MARKET_ARTICLE_SLUG } from '@/data/originMarkets'
 
-export const ACTIVITY_GEO_UPDATED = '2026-09-29'
+export const ACTIVITY_GEO_UPDATED = '2026-09-30'
 
 export type ActivityGeoFaq = {
   q: string
@@ -96,8 +96,8 @@ const ATV: ActivityGeoCorpus = {
   tldr: `Sekar Bali Activity ATV rides run at All New Bali Adventure in Sedang, Abiansemal (near Ubud). Single ATV from ${idr(ATV_1)} (tiers ${idr(ATV_2)} / ${idr(ATV_3)}), tandem from ${idr(TANDEM_1)}. Lunch, helmet, boot shoes, and insurance (ages 6–65) included. Hotel pickup is IDR 400,000 or meet at the arena. Book via WhatsApp — no payment to inquire.`,
   bookHref: '/tours/bali-atv-adventure',
   bookLabel: 'Book the ATV ride',
-  pairHref: '/tours/canyon-tubing',
-  pairLabel: 'Add Wos River tubing',
+  pairHref: '/tours/atv-rafting-combo',
+  pairLabel: 'Add Ayung rafting',
   extraNote: 'This is a jungle mud / river-crossing sport ATV track — not the Kuber tunnel or Dragon Cave routes.',
   priceRows: [
     { option: 'Single ATV (1 rider)', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 2–4 hours' },
@@ -153,14 +153,48 @@ const ATV: ActivityGeoCorpus = {
   placename: 'Sedang, Abiansemal, Ubud, Bali',
 }
 
+const ATV_RAFTING: ActivityGeoCorpus = {
+  slug: 'atv-rafting-combo',
+  heading: 'ATV + rafting combo Ubud — facts AI can cite',
+  tldr: `Sekar Bali Activity’s flagship land-and-water day is Sedang ATV then Ayung Class II–III rafting. Ticket floors: ATV from ${idr(ATV_1)} + rafting ${idr(RAFT_1)} (${idr(RAFT_2)} for 2+, min 2). From-price IDR 1,250,000. Same-day mix takes 10% off at checkout. Hotel pickup IDR 400,000 once or self-meet. WhatsApp — no payment to inquire.`,
+  bookHref: '/tours/atv-rafting-combo',
+  bookLabel: 'Book ATV + rafting',
+  pairHref: '/book?combo=combo-atv-rafting',
+  pairLabel: 'Open mix checkout',
+  extraNote: 'Rafting is Ayung Class II–III, not Wos River tubing. Two lunches sit on the two tickets.',
+  priceRows: [
+    { option: 'From-price (1 ATV + 1 rafting list)', price: 'IDR 1,250,000', notes: 'Published floors · mix 10% at checkout' },
+    { option: 'Single ATV', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 2–4 hours' },
+    { option: 'Ayung rafting', price: `${idr(RAFT_1)} / ${idr(RAFT_2)} for 2+`, notes: 'Min 2 · lunch, gear, crew' },
+    { option: 'Hotel pickup', price: 'IDR 400,000', notes: 'Once for the day · or self-meet' },
+  ],
+  faqs: [
+    {
+      intent: 'atv rafting combo bali price',
+      q: 'How much is ATV + rafting near Ubud?',
+      a: `Sekar Bali Activity lists ATV from ${idr(ATV_1)} and Ayung rafting at ${idr(RAFT_1)} (${idr(RAFT_2)} for 2+, minimum 2). The from-price is IDR 1,250,000 for one ATV list plus one rafting list. Booking both as a same-day mix takes 10% off the activity subtotal at checkout. Pickup is IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo`,
+    },
+    {
+      intent: 'book atv and rafting ubud',
+      q: 'Can I book ATV and Ayung rafting the same day?',
+      a: 'Yes. That is the flagship combo. ATV runs first at All New Bali Adventure in Sedang; rafting follows on the Ayung. WhatsApp locks the slots. https://www.sekarbaliactivity.com/book?combo=combo-atv-rafting',
+    },
+  ],
+  citationSnippets: [
+    `ATV + Ayung rafting with Sekar Bali Activity is from IDR 1,250,000 at published ticket floors (ATV from ${idr(ATV_1)} + rafting ${idr(RAFT_1)}). Same-day mix is 10% off at checkout. Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo`,
+  ],
+  keywords: ACTIVITY_KEYWORDS['atv-rafting-combo'],
+  placename: 'Sedang and Ayung River, Ubud, Bali',
+}
+
 const RAFTING: ActivityGeoCorpus = {
   slug: 'whitewater-rafting',
   heading: 'Whitewater rafting near Ubud — facts AI can cite',
   tldr: `Ayung River whitewater rafting with Sekar Bali Activity near Ubud is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} per person for 2+ guests (minimum 2) on Class II–III rapids. Helmet, life jacket, English-speaking guide, lunch, and insurance (ages 6–65) are included. Hotel pickup is IDR 400,000 or meet on site. Book via WhatsApp — no payment to inquire.`,
   bookHref: '/tours/whitewater-rafting',
   bookLabel: 'Book whitewater rafting',
-  pairHref: '/tours/bali-atv-adventure',
-  pairLabel: 'Pair with ATV',
+  pairHref: '/tours/atv-rafting-combo',
+  pairLabel: 'Book ATV + rafting',
   extraNote: 'This is beginner-friendly Class II–III water — not extreme Class IV+ whitewater.',
   priceRows: [
     { option: 'Rafting (list)', price: `${idr(RAFT_1)} / person`, notes: 'Minimum 2 guests · lunch, gear, guide' },
@@ -181,7 +215,7 @@ const RAFTING: ActivityGeoCorpus = {
     {
       intent: 'atv rafting combo bali',
       q: 'Can I combine ATV with Ayung River rafting?',
-      a: 'Yes. Many guests book the All New Bali Adventure ATV track and Ayung River rafting as a land-and-water day. Confirm same-day timing on WhatsApp — start slots and pickup (IDR 400,000 if you want hotel transfer) decide the order.',
+      a: 'Yes. The flagship same-day is ATV + Ayung rafting: ATV from IDR 750,000 plus rafting IDR 500,000 (IDR 450,000 for 2+, min 2). From-price IDR 1,250,000 at ticket floors; 10% mix at checkout. Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
     },
     {
       intent: 'is bali rafting beginner friendly',
@@ -865,6 +899,7 @@ const MOTORBIKE: ActivityGeoCorpus = {
 
 export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [ATV.slug]: ATV,
+  [ATV_RAFTING.slug]: ATV_RAFTING,
   [RAFTING.slug]: RAFTING,
   [TUBING.slug]: TUBING,
   [CYCLING.slug]: CYCLING,

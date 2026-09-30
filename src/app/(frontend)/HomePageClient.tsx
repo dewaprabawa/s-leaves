@@ -58,6 +58,7 @@ import {
   getCyclingCookingCombo,
   getSwingCookingCombo,
 } from "@/data/cultureSales"
+import { getAtvRaftingComboOffer } from "@/data/atvRaftingCombo"
 import { GRIYA_BEJI_PURIFICATION_IDR, GRIYA_BEJI_SALES } from "@/data/griyaBeji"
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
@@ -101,7 +102,7 @@ const CATEGORY_SECTION_META: {
     anchor: "adventure",
     eyebrow: "Thrill days",
     title: "Adventure",
-    subtitle: "Jungle ATV, river rafting, canyon tubing, Swing Heaven jungle swings, and a private Mount Batur jeep — sit-in or tracking, sunrise or sunset.",
+    subtitle: "Flagship ATV + Ayung rafting from IDR 1.25M, Sedang ATV, canyon tubing, Swing Heaven, and a private Mount Batur jeep.",
   },
   {
     id: "day-tour",
@@ -132,6 +133,14 @@ type PricingRow = {
 }
 
 const pricingData: PricingRow[] = [
+  {
+    activity: "ATV + Ayung Rafting",
+    bookHref: "/tours/atv-rafting-combo",
+    pax: "Flagship land + water · ATV 750K + rafting 500K (450K for 2+) · 10% mix at checkout · pickup 400K or self-meet",
+    price: 1_250_000,
+    highlight: true,
+    badge: "Featured",
+  },
   {
     activity: "Tumang Bali Cooking Class",
     bookHref: "/book?activity=balinese-cooking-class",
@@ -222,6 +231,11 @@ const pricingData: PricingRow[] = [
 ]
 
 const travelGuides = [
+  {
+    title: "ATV + Rafting Combo Ubud 2026",
+    excerpt: "Flagship mud-then-rapids day from IDR 1.25M. 10% mix at checkout. WhatsApp booking.",
+    href: "/blog/atv-rafting-combo-ubud-2026",
+  },
   {
     title: "Cycling & Cooking Class in Ubud",
     excerpt: "Pejeng ricefield cycling plus afternoon Tumang cooking class — prices and itinerary.",
@@ -384,6 +398,7 @@ export default function Home() {
   const packages = getFeaturedPackages()
   const cultureCombo = getCyclingCookingCombo()
   const swingCookingCombo = getSwingCookingCombo()
+  const atvRaftingCombo = getAtvRaftingComboOffer()
 
   const openBooking = (adventureId: string, mixIds: string[] = []) => {
     const setup = bookingSetupForAdventure(adventureId)
@@ -467,16 +482,16 @@ export default function Home() {
               <span className="hero-headline-accent">booked clear</span>
             </h1>
             <p className="hero-subcopy text-base md:text-lg max-w-md mb-8 animate-fade-in-up-delay-2">
-              Private Mount Batur jeep, Tumang cooking class, and Pejeng cycling — your vehicle, clear IDR, WhatsApp booking.
+              Flagship ATV + Ayung rafting from IDR 1.25M. Also private Batur jeep, Tumang cooking, Pejeng cycling — clear IDR, WhatsApp.
             </p>
             <div className="w-full max-w-xl space-y-3 animate-fade-in-up-delay-3">
               <HomeActivitySearch />
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/tours/batur-sunrise-jeep-tour"
+                  href="/tours/atv-rafting-combo"
                   className="inline-flex w-full sm:flex-1 items-center justify-center min-h-14 h-14 sm:h-12 px-6 rounded-full btn-gold-shimmer font-bold text-base sm:text-sm uppercase tracking-wider"
                 >
-                  Book private jeep
+                  Book ATV + rafting
                 </Link>
                 <Link
                   href="#experiences"
@@ -533,7 +548,7 @@ export default function Home() {
               Top picks near Ubud
             </h2>
             <p className="text-lg text-brand-green-light">
-              Start with a private Mount Batur jeep — then Tumang cooking class, Pejeng cycling, ATV, and private day tours.
+              Start with ATV + Ayung rafting — then Sedang ATV solo, private Batur jeep, Tumang cooking, and Pejeng cycling.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-10">
@@ -733,7 +748,45 @@ export default function Home() {
             })}
           </div>
 
-          <article className="mt-8 border border-accent-gold/30 bg-white p-6 md:p-8 flex flex-col md:flex-row md:items-end gap-6">
+          <article className="mt-8 border-2 border-accent-gold/50 bg-white p-6 md:p-8 flex flex-col md:flex-row md:items-end gap-6">
+            <div className="flex-1 space-y-3">
+              <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark inline-flex items-center gap-2">
+                <Zap className="w-3.5 h-3.5" />
+                {atvRaftingCombo.tagline}
+              </p>
+              <h3 className="font-display text-2xl md:text-3xl font-bold text-brand-green uppercase">
+                {atvRaftingCombo.name}
+              </h3>
+              <p className="text-sm text-brand-green-light leading-relaxed max-w-2xl">
+                {atvRaftingCombo.description}
+              </p>
+            </div>
+            <div className="shrink-0 space-y-3 md:text-right">
+              <div>
+                <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">From (ticket floors)</p>
+                <p className="text-2xl font-bold text-brand-green">
+                  IDR {atvRaftingCombo.listFromIdr.toLocaleString("id-ID")}
+                </p>
+              </div>
+              <div className="flex flex-wrap md:justify-end gap-2">
+                <Link
+                  href={atvRaftingCombo.bookHref}
+                  className="inline-flex items-center gap-2 bg-brand-green text-sand px-5 py-3 text-sm font-bold uppercase tracking-wider hover:bg-brand-green-light transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4" />
+                  Book ATV + rafting
+                </Link>
+                <Link
+                  href={atvRaftingCombo.tourHref}
+                  className="inline-flex items-center gap-1 border border-brand-green/20 px-5 py-3 text-sm font-semibold text-brand-green hover:bg-brand-green/5 transition-colors"
+                >
+                  Sales page <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </article>
+
+          <article className="mt-4 border border-accent-gold/30 bg-white p-6 md:p-8 flex flex-col md:flex-row md:items-end gap-6">
             <div className="flex-1 space-y-3">
               <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark inline-flex items-center gap-2">
                 <Utensils className="w-3.5 h-3.5" />
@@ -826,7 +879,7 @@ export default function Home() {
               Know Before You Go
             </h2>
             <p className="text-lg text-sand/90 max-w-2xl mx-auto">
-              Complete quad bike trips at All New Bali Adventure — with optional tubing on the Wos River after the track.
+              Complete quad bike trips at All New Bali Adventure — flagship same-day is ATV + Ayung rafting; tubing is the gentler add-on.
             </p>
           </div>
           <KnowBeforeCards
@@ -940,7 +993,7 @@ export default function Home() {
               Combine land &amp; water
             </h2>
             <p className="mt-4 text-brand-green-light max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
-              Same-day ATV + tubing or ATV + rafting saves 10–12% versus booking separately.
+              ATV + rafting is the flagship mix. Same-day land + water saves 10–12% versus booking separately.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">

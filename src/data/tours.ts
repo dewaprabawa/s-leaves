@@ -197,15 +197,16 @@ All ATV rides take place at **All New Bali Adventure** — our dedicated jungle 
 Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing at All New Bali Adventure, you hit the track for an unforgettable ride through Bali's green countryside — lunch, helmet, boot shoes, and insurance included.
 
 ### Combine with River Tubing or Rafting
-Want even more adventure? Pair your ATV ride with river tubing on the Wos River, or ask about an ATV + rafting combo. After racing the ATV mud track, cool down as you float the river or paddle whitewater — favourite combos for guests who want a full day of thrills on land and water.
+Want even more adventure? The flagship same-day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — mud then Class II–III. From **IDR 1,250,000** at ticket floors; **10% mix** at checkout. Gentler water: [Wos River tubing](/tours/canyon-tubing). After the mud track, cool off on the river.
 
 ### Plan your ATV day
 - [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) — single IDR 750K vs tandem IDR 1.1M
 - [Single vs tandem ATV](/blog/tandem-atv-ubud-price) — who should share, two-single vs one-bike math
 - [All New Bali Adventure arena](/blog/bali-atv-all-new-bali-adventure-location-guide) — self-meet in Sedang vs hotel pickup IDR 400,000
 - [Jungle mud vs cave/tunnel tracks](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) — we are not Kuber or Dragon Cave
+- [ATV + Ayung rafting](/tours/atv-rafting-combo) — flagship land + water day from 1.25M
 - [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026) — Sedang sit-on quad vs Pemogan sit-in hour
-- [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali) — land-then-water combo (ask WhatsApp for timing)
+- [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali) — gentler river add-on
 - [Private vs mass-market ATV](/blog/private-atv-vs-mass-market-ubud)
 - [Swing Heaven Bongkasa](/tours/swing-heaven-bali) — same Abiansemal district, jungle-swing photos after the mud track
 
@@ -272,9 +273,14 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         description: "2 pax · share the adventure",
       },
       {
+        name: "ATV + Ayung Rafting Combo",
+        priceDiff: 0,
+        description: "Flagship land + water · open /tours/atv-rafting-combo · 10% mix at checkout",
+      },
+      {
         name: "ATV + River Tubing Combo",
         priceDiff: 0,
-        description: "Ask us for combo pricing · Wos River tubing after the ATV track",
+        description: "Gentler Wos River tube after the ATV track · quote on WhatsApp",
       },
     ],
     addons: [],
@@ -307,7 +313,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-5",
         question: "Can I combine ATV with river tubing or rafting?",
         answer:
-          "Yes. Many guests add Wos River tubing after the ATV track for a land-and-water day. Rafting combos are also available on request — message WhatsApp with your date and guest count.",
+          "Yes. The flagship same-day is ATV + Ayung rafting — from IDR 1,250,000 at published floors, 10% mix at checkout. Book: https://www.sekarbaliactivity.com/tours/atv-rafting-combo. Wos River tubing is the gentler add-on. WhatsApp date and guest count.",
       },
       {
         id: "faq-atv-6",
@@ -332,6 +338,139 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         question: "Should I book a single ATV or a tandem?",
         answer:
           "Book a single ATV (from IDR 750,000) if each guest wants their own bike. Book tandem (IDR 1,100,000 for two sharing one bike) if you are a couple or one rider prefers not to drive. Both include lunch, gear, and insurance — say 1 or 2 riders on WhatsApp and we will quote the right option.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: "atv-rafting-combo",
+    title: "ATV + Ayung Rafting Combo near Ubud",
+    slug: "atv-rafting-combo",
+    category: "adventure",
+    area: "Sedang + Ayung / Ubud",
+    venue: "All New Bali Adventure, then Ayung River",
+    isTopPick: true,
+    pickup: "IDR 400,000 once for the day or free self-meet",
+    duration: "5–7 Hours",
+    basePrice: 1250000,
+    seoTitle: "ATV + Rafting Ubud | From 1.25M",
+    seoDescription:
+      "Book ATV + Ayung rafting near Ubud. ATV from 750K + rafting 500K (450K for 2+). 10% mix at checkout. Pickup 400K or self-meet. WhatsApp.",
+    heroImage: {
+      url: "/images/adventures/atv-adventure.jpg",
+      alt: "ATV jungle ride near Ubud paired with Ayung River whitewater rafting",
+    },
+    gallery: [
+      {
+        url: "/images/adventures/atv-adventure.jpg",
+        alt: "Quad bike ATV ride through Bali jungle trails",
+      },
+      {
+        url: "/images/adventures/rafting.jpg",
+        alt: "Whitewater rafting through a Bali jungle river canyon",
+      },
+    ],
+    shortDescription:
+      "Flagship land + water day: Sedang ATV at All New Bali Adventure, then Class II–III Ayung rafting. From IDR 1,250,000 at published ticket floors (ATV 750K + rafting 500K). 10% mix at checkout. Pickup IDR 400,000 once or self-meet.",
+    fullDescription: `**Want mud and rapids in one WhatsApp thread?** This is our **flagship adventure day**. Morning [ATV at All New Bali Adventure](/tours/bali-atv-adventure) in Sedang — sit-on quad, jungle mud, river crossings, lunch. Afternoon [Ayung River rafting](/tours/whitewater-rafting) — Class II–III, helmet, life jacket, lunch, insurance. **Hotel pickup is IDR 400,000 once** for the adventure day, or free self-meet at each pin.
+
+### 2026 from-price (what you can cite)
+
+| Line | Published IDR |
+| --- | --- |
+| Single ATV (1 rider) | **750,000** (725,000 each for 2 · 700,000 for 3+) |
+| Tandem ATV (2 on one bike) | **1,100,000** / bike |
+| Ayung rafting | **500,000** list · **450,000** for 2+ (**min 2**) |
+| Same-day mix (2 activities) | **10% off** the activity subtotal at checkout |
+| Hotel pickup | **400,000** once · or self-meet |
+
+**From-price on this page is IDR 1,250,000** — one ATV list + one rafting list. Rafting needs **two guests**. A typical couple day is two ATV singles (**IDR 1,450,000**) or one tandem (**IDR 1,100,000**) plus two rafting seats (**IDR 900,000**). WhatsApp confirms the mix total. We do not invent a third “secret” bundle sticker.
+
+Book the checkout mix: [ATV + rafting](/book?combo=combo-atv-rafting). Price story: [ATV + rafting Ubud 2026](/blog/atv-rafting-combo-ubud-2026). Gentler water: [ATV + Wos tubing](/blog/atv-river-tubing-wos-river-bali). Sit-in hour instead of the quad: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026).
+
+### How the day runs
+1. **ATV first** — briefing, mud track, lunch at Sedang (2–4 hours including kit).
+2. **Transfer** — we time the Ayung slot on WhatsApp. Same 400,000 pickup can cover both pins when you book the hotel collect.
+3. **Rafting** — Class II–III splash, lunch on the river ticket, dry clothes after.
+
+Beginner briefing on both tickets. No ATV licence. Rafting wants basic swimming confidence; ages typically **7+** on the river and insurance **6–65** on ATV.
+
+**Ready?** Open [book ATV + rafting](/book?combo=combo-atv-rafting) or WhatsApp **date, guest count, single or tandem, hotel pin**. No payment to inquire.`,
+    highlights: [
+      "Flagship land + water day — one WhatsApp inbox",
+      "Sedang ATV lunch + Ayung rafting lunch both on the tickets",
+      "10% mix at checkout when you book both",
+      "Pickup IDR 400,000 once or free self-meet",
+    ],
+    included: [
+      "Sedang ATV (single or tandem) with lunch, helmet, boot shoes, insurance 6–65",
+      "Ayung Class II–III rafting with lunch, helmet, life jacket, crew, insurance 6–65",
+      "English safety briefing on both tickets",
+    ],
+    notIncluded: [
+      "Hotel pickup & drop-off (IDR 400,000 once — optional)",
+      "Personal expenses and gratuities",
+    ],
+    itinerary: [
+      {
+        id: "iti-combo-1",
+        time: "Morning",
+        title: "Sedang ATV",
+        description:
+          "Meet at All New Bali Adventure or hotel collect. Briefing, jungle mud, river crossings, lunch.",
+      },
+      {
+        id: "iti-combo-2",
+        time: "Midday",
+        title: "Transfer to Ayung",
+        description:
+          "We lock the rafting slot on WhatsApp. Same-day order can flip if the river clock is tighter.",
+      },
+      {
+        id: "iti-combo-3",
+        time: "Afternoon",
+        title: "Ayung rafting",
+        description:
+          "Class II–III canyon, lunch on the rafting ticket, change, drop or self-depart.",
+      },
+    ],
+    activityOptions: [
+      {
+        name: "ATV + Rafting (single ATV)",
+        priceDiff: 0,
+        description: "From IDR 1,250,000 list · 10% mix at checkout · rafting min 2",
+      },
+      {
+        name: "ATV + Rafting (tandem ATV)",
+        priceDiff: 350000,
+        description: "Tandem bike 1,100,000 + rafting seats · quote on WhatsApp",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-atv-raft-1",
+        question: "How much is ATV + rafting near Ubud?",
+        answer:
+          "Published floors are ATV from IDR 750,000 and Ayung rafting IDR 500,000 (IDR 450,000 for 2+, minimum 2). The from-price on this page is IDR 1,250,000 for one ATV list plus one rafting list. Booking both as a same-day mix takes 10% off the activity subtotal at checkout. Hotel pickup is IDR 400,000 once or self-meet. WhatsApp — no payment to inquire.",
+      },
+      {
+        id: "faq-atv-raft-2",
+        question: "Is ATV + rafting the same as ATV + tubing?",
+        answer:
+          "No. Rafting is a paddle team on Class II–III Ayung water. Tubing is a sit-on-tube float on the Wos River at the same 500,000 / 450,000-for-2+ list. Pick rafting for splash. Pick tubing if you want a gentler add-on.",
+      },
+      {
+        id: "faq-atv-raft-3",
+        question: "Can beginners book this combo?",
+        answer:
+          "Yes. ATV includes a flat-ground briefing; no licence. Rafting is beginner Class II–III with a crew. Basic swimming confidence is required on the river. Ages typically 7+ for rafting; ATV insurance covers 6–65.",
+      },
+      {
+        id: "faq-atv-raft-4",
+        question: "Is hotel pickup included?",
+        answer:
+          "No. Pickup is IDR 400,000 once for the adventure day, or you self-meet at Sedang and at the Ayung put-in. Free Ubud pickup is only on cycling and Tumang cooking class.",
       },
     ],
     reviews: [],
@@ -721,7 +860,7 @@ Full table and honest vs-cheap-listings notes: [Ayung rafting Ubud price 2026](/
 After a safety briefing and gear fitting, your crew paddles you through a mix of fun rapids and calm stretches. Along the way you will pass towering jungle cliffs, see waterfalls spilling into the river, and spot ancient stone carvings on the canyon walls. This is beginner-friendly Class II–III water — splash and teamwork, not extreme Class IV+.
 
 ### A Great Standalone Adventure or Combo Day
-Whitewater rafting pairs with an [ATV ride](/tours/bali-atv-adventure) for a land-and-water day, or compare a gentler [Wos River tube](/tours/canyon-tubing) at the same 500K / 450K-for-2+ list. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud). Message WhatsApp for same-day timing — we do not invent a bundled combo IDR.
+The flagship land-and-water day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — from **IDR 1,250,000** at ticket floors, **10% mix** at checkout. Gentler water: [Wos River tube](/tours/canyon-tubing) at the same 500K / 450K-for-2+ list. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud). WhatsApp locks the same-day slots.
 
 **Available Schedules:**
 - **Morning:** 08:30 AM

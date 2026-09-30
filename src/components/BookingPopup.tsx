@@ -74,6 +74,11 @@ export interface TourConfig {
   /** Self-meet only — do not offer hotel pickup (Luwak coffee plantation) */
   pickupNotOffered?: boolean
   /**
+   * Parks, workshops, UTV, dirt bike, canyoning — pickup is quoted on
+   * WhatsApp. Never apply the IDR 400,000 ATV / rafting surcharge.
+   */
+  pickupQuoted?: boolean
+  /**
    * Quote against this catalog ActivityId when the dropdown id is a product
    * variant (jeep tracking / sunset). Keeps private 2 / 3+ jeep tiers.
    */
@@ -154,6 +159,7 @@ export function BookingPopup({
       setShowDetails(false);
       setWantsPickup(
         tour.pickupNotOffered !== true &&
+          tour.pickupQuoted !== true &&
           (tour.pickupIncluded === true || tour.freeUbudPickup === true),
       );
       setSameDropOff(false);
@@ -176,6 +182,7 @@ export function BookingPopup({
     setShowDetails(false)
     setWantsPickup(
       activeTour.pickupNotOffered !== true &&
+        activeTour.pickupQuoted !== true &&
         (activeTour.pickupIncluded === true || activeTour.freeUbudPickup === true),
     )
     const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
@@ -260,6 +267,7 @@ export function BookingPopup({
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupIncluded = activeTour.pickupIncluded === true;
   const pickupNotOffered = activeTour.pickupNotOffered === true;
+  const pickupQuoted = activeTour.pickupQuoted === true;
   const meetsAtArena = activeTour.meetsAtArena === true;
   const selfMeet = activeTour.selfMeet
   const meetLabel = meetsAtArena
@@ -279,7 +287,7 @@ export function BookingPopup({
       : undefined
   const hasFixedMeet = Boolean(meetLabel)
   const pickupQuote = quotePickup({
-    wantsPickup,
+    wantsPickup: wantsPickup && !pickupQuoted && !pickupNotOffered,
     freeUbudPickup: hasFreeUbudPickup || pickupIncluded,
     isOutUbud: pickupIncluded ? false : isOutUbud,
     sameDropOff,
@@ -363,7 +371,7 @@ export function BookingPopup({
     } else if (pickupIncluded) {
       pickupNoteParts.push('Hotel pickup & drop-off included in tour price');
     } else if (hasFreeUbudPickup && !isOutUbud) {
-      pickupNoteParts.push('Free Ubud pickup (cycling tour)');
+      pickupNoteParts.push('Free Ubud-area hotel pickup');
     } else {
       if (pickupQuote.pickupFee) pickupNoteParts.push(`Pickup +IDR ${pickupQuote.pickupFee.toLocaleString('id-ID')}`);
       if (pickupQuote.dropFee) pickupNoteParts.push(`Return drop same hotel +IDR ${pickupQuote.dropFee.toLocaleString('id-ID')}`);
@@ -852,6 +860,13 @@ export function BookingPopup({
                   Arrange your own transport to the venue. This experience does not include hotel pickup.
                 </span>
               </div>
+            ) : pickupQuoted ? (
+              <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 text-sm">
+                <span className="font-bold text-brand-green block mb-0.5">Pickup quoted on WhatsApp</span>
+                <span className="text-brand-green-light">
+                  Self-meet at the venue, or ask us to price a private driver. This is not the IDR {PICKUP_FEE_IDR.toLocaleString("id-ID")} ATV / rafting surcharge and not free Ubud cycling pickup.
+                </span>
+              </div>
             ) : (
               <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 shadow-sm">
                 <input
@@ -938,7 +953,9 @@ export function BookingPopup({
               <span className="font-bold text-brand-green">Meeting:</span>{" "}
               {pickupNotOffered
                 ? "Self-arranged — transport is not included. Add venue notes under Special Notes if needed."
-                : "Self-arranged — no fixed arena for this tour. Check \"I need hotel pickup\" above, or add details in Special Notes."}
+                : pickupQuoted
+                  ? "Self-meet or ask WhatsApp to quote a driver. Do not add the IDR 400,000 adventure surcharge."
+                  : "Self-arranged — no fixed arena for this tour. Check \"I need hotel pickup\" above, or add details in Special Notes."}
             </div>
             )}
 

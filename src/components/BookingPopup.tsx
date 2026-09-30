@@ -1110,7 +1110,7 @@ export function BookingPopup({
               Agree &amp; get invoice
             </button>
             <p className="text-xs text-brand-green-light text-center mt-3">
-              Next: download PDF invoice with our logo, send it on WhatsApp, then pay via Seabank and confirm.
+              Next: download PDF invoice with our logo, send it on WhatsApp, then pay using the instructions we send on that thread.
             </p>
           </div>
           </div>

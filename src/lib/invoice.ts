@@ -1,7 +1,7 @@
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from '@/lib/contact'
 import { trackGenerateLead } from '@/lib/ga'
 import { formatIdr } from '@/lib/whatsapp'
-import { formatBankTransferBlock, PAYMENT_BANK } from '@/lib/payment'
+import { formatPaymentWhatsAppNote } from '@/lib/payment'
 import type { TransferOption } from '@/lib/adminInvoiceCatalog'
 
 export type InvoiceLineItem = {
@@ -210,20 +210,17 @@ export async function downloadInvoicePdf(invoice: InvoiceDraft): Promise<void> {
   y += 14
   doc.setFontSize(11)
   doc.setFont('helvetica', 'bold')
-  doc.text('Payment details (Seabank transfer)', margin, y)
+  doc.text('Payment', margin, y)
   y += 7
   doc.setFont('helvetica', 'normal')
   doc.setFontSize(10)
-  doc.text(`Bank: ${PAYMENT_BANK.bankName}`, margin, y)
-  y += 5
-  doc.text(`Account number: ${PAYMENT_BANK.accountNumber}`, margin, y)
-  y += 5
-  doc.text(`Account name: ${PAYMENT_BANK.accountName}`, margin, y)
-  y += 8
+  const paymentNote = doc.splitTextToSize(formatPaymentWhatsAppNote(), 174)
+  doc.text(paymentNote, margin, y)
+  y += paymentNote.length * 5 + 4
   doc.setFontSize(9)
   doc.setTextColor(90, 90, 90)
   const footer = doc.splitTextToSize(
-    'After you transfer, please confirm payment on WhatsApp with your invoice number and transfer receipt. We will verify and confirm your booking.',
+    'After you pay using the instructions we send on official WhatsApp, confirm on that same thread with your invoice number and receipt. We will verify and confirm your booking.',
     174,
   )
   doc.text(footer, margin, y)
@@ -268,11 +265,10 @@ export function buildInvoiceWhatsAppMessage(invoice: InvoiceDraft): string {
   )
   if (invoice.createdBy) lines.push(`*Prepared by:* ${invoice.createdBy}`)
   lines.push('')
-  lines.push('*Transfer to:*')
-  lines.push(formatBankTransferBlock())
+  lines.push(formatPaymentWhatsAppNote())
   lines.push('')
   lines.push(
-    'I downloaded the PDF invoice with your logo and will attach it here if needed. I will transfer and then confirm payment.',
+    'I downloaded the PDF invoice with your logo and will attach it here if needed. Please send payment instructions on this WhatsApp thread.',
   )
   if (invoice.notes) {
     lines.push('')
@@ -300,10 +296,9 @@ export function buildStaffToGuestInvoiceMessage(
       ? `*Deposit due now:* ${formatIdr(due)}`
       : `*Amount due:* ${formatIdr(due)}`,
     '',
-    `View / pay invoice: ${shareUrl}`,
+    `View invoice: ${shareUrl}`,
     '',
-    '*Transfer to Seabank:*',
-    formatBankTransferBlock(),
+    formatPaymentWhatsAppNote(),
   ]
   if (invoice.createdBy) {
     lines.push('', `Prepared by ${invoice.createdBy} — reply here if you have questions.`)
@@ -324,7 +319,7 @@ export function buildStaffToGuestWhatsAppUrl(
   return `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(text)}`
 }
 
-/** WhatsApp message after guest finishes Seabank transfer */
+/** WhatsApp message after guest finishes payment */
 export function buildPaymentConfirmationWhatsAppMessage(invoice: InvoiceDraft): string {
   const paid = amountDueNow(invoice)
   return [
@@ -336,10 +331,9 @@ export function buildPaymentConfirmationWhatsAppMessage(invoice: InvoiceDraft): 
     `*Date:* ${invoice.date}`,
     `*Amount paid:* ${formatIdr(paid)}`,
     '',
-    '*Paid to:*',
-    formatBankTransferBlock(),
+    formatPaymentWhatsAppNote(),
     '',
-    'Please confirm you received the transfer. I can send the receipt screenshot next.',
+    'Please confirm you received the payment. I can send the receipt screenshot next.',
     'Thank you!',
   ].join('\n')
 }

@@ -3,11 +3,10 @@ import {
   CONTACT_PHONE_DISPLAY,
   CONTACT_WHATSAPP_URL,
 } from '@/lib/contact'
-import { PAYMENT_BANK } from '@/lib/payment'
 import { PRIMARY_NAP_ADDRESS } from '@/lib/locations'
 import { SITE_URL } from '@/lib/seo'
 
-export const TRUST_POLICIES_UPDATED = '20 September 2026'
+export const TRUST_POLICIES_UPDATED = '30 September 2026'
 
 export const TRUST_POLICY_LINKS = {
   antiScam: '/anti-scam',
@@ -18,9 +17,6 @@ export const TRUST_POLICY_LINKS = {
 } as const
 
 export const OFFICIAL_PAYMENT = {
-  bankName: PAYMENT_BANK.bankName,
-  accountNumber: PAYMENT_BANK.accountNumber,
-  accountName: PAYMENT_BANK.accountName,
   whatsappDisplay: CONTACT_PHONE_DISPLAY,
   whatsappUrl: CONTACT_WHATSAPP_URL,
   email: CONTACT_EMAIL,
@@ -46,15 +42,15 @@ export const TRUST_POLICY_CARDS = [
   {
     href: TRUST_POLICY_LINKS.payment,
     label: 'Payment policy',
-    title: 'Pay only our published Seabank',
+    title: 'Pay only via official WhatsApp',
     summary:
-      'No payment to inquire. After you agree, transfer only to the Seabank account on your invoice and confirm on our official WhatsApp.',
+      'No payment to inquire. After you agree, we send payment instructions on official WhatsApp only. We do not publish a bank account.',
   },
 ] as const
 
 export const ANTI_SCAM_RULES = [
   'Message only the WhatsApp number published on this website.',
-  `Transfer only to ${PAYMENT_BANK.bankName} ${PAYMENT_BANK.accountNumber} a/n ${PAYMENT_BANK.accountName}.`,
+  'Pay only using the instructions we send on official WhatsApp. We do not publish a bank account.',
   'Use the PDF invoice with our logo. Match the invoice number when you confirm payment.',
   'Never send card numbers, OTPs, or remote-access apps in chat.',
   'If someone asks you to pay a different bank, e-wallet, or “agent account,” stop and message us here first.',

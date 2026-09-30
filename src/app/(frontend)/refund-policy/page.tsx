@@ -90,9 +90,8 @@ export default function RefundPolicyPage() {
               3. How the money comes back
             </h2>
             <p>
-              Refunds go through the same channel you used (typically the Seabank transfer on your
-              invoice). Bank processing time is outside our control. We confirm the refund in the
-              same WhatsApp or email thread.
+              Refunds go through the same channel you used. Processing time is outside our control.
+              We confirm the refund in the same WhatsApp or email thread.
             </p>
           </section>
 

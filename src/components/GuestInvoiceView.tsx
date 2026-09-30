@@ -8,7 +8,7 @@ import {
   openInvoiceWhatsApp,
   openPaymentConfirmationWhatsApp,
 } from '@/lib/invoice'
-import { PAYMENT_BANK, PAYMENT_INSTRUCTIONS } from '@/lib/payment'
+import { PAYMENT_INSTRUCTIONS } from '@/lib/payment'
 import { formatIdr } from '@/lib/whatsapp'
 
 type Props = {
@@ -133,23 +133,9 @@ export default function GuestInvoiceView({ payload }: Props) {
 
       <div className="rounded-xl border border-accent-gold/30 bg-accent-gold/5 p-4">
         <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-2">
-          Transfer to Seabank
+          How to pay
         </p>
-        <dl className="space-y-1.5 text-sm text-brand-green">
-          <div className="flex justify-between gap-3">
-            <dt className="text-brand-green-light">Bank</dt>
-            <dd className="font-bold">{PAYMENT_BANK.bankName}</dd>
-          </div>
-          <div className="flex justify-between gap-3">
-            <dt className="text-brand-green-light">Account number</dt>
-            <dd className="font-bold tracking-wide">{PAYMENT_BANK.accountNumber}</dd>
-          </div>
-          <div className="flex justify-between gap-3">
-            <dt className="text-brand-green-light">Account name</dt>
-            <dd className="font-bold text-right">{PAYMENT_BANK.accountName}</dd>
-          </div>
-        </dl>
-        <ul className="mt-3 space-y-1">
+        <ul className="space-y-1">
           {PAYMENT_INSTRUCTIONS.map((line) => (
             <li key={line} className="text-xs text-brand-green-light leading-relaxed">
               · {line}

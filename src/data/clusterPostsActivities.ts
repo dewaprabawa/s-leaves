@@ -629,7 +629,7 @@ Self-meet at **Jl. Tangga Yuda, Bongkasa**. Grab from central Ubud is often chea
 
 Once the venue ticket is issued it is **non-refundable**. If rain closes the park, Swing Heaven issues a **voucher valid 7 days**. Cancel **24 hours before we issue the ticket** and our [cancellation policy](/cancellation-policy) still applies.
 
-Card payments **at the park** add **3%**. WhatsApp bookings with us use the published bank transfer on the invoice.
+Card payments **at the park** add **3%**. WhatsApp bookings with us send payment instructions on official WhatsApp only.
 
 ## How to book
 

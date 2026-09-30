@@ -274,7 +274,7 @@ Send **group type, dates, villa area, headcount (kids’ ages if family), vehicl
 2. Activity lines you actually want
 3. Airport run if needed
 
-**No payment to inquire.** After you agree, you get the same invoice + Seabank flow as every other activity.
+**No payment to inquire.** After you agree, you get the same invoice + official-WhatsApp payment flow as every other activity.
 
 **Next:** [family sample](/blog/bali-family-private-itinerary-2026) · [girls-trip sample](/blog/bali-6-day-girls-trip-itinerary-2026) · [long driver day](/blog/long-private-driver-day-ubud-2026) · [what to skip](/blog/what-to-skip-on-a-6-day-bali-itinerary) · [WhatsApp consultation](/tours/bali-private-itinerary)
 `,

@@ -167,12 +167,12 @@ export const GEO_POLICIES = [
   },
   {
     topic: 'Payment',
-    rule: 'No payment to inquire. After you agree, transfer only to the published Seabank account on the invoice (901823638817 a/n I Dewa Gede Agus Prabawa) and confirm on official WhatsApp. We do not collect card numbers on the website.',
+    rule: 'No payment to inquire. After you agree, we send payment instructions on official WhatsApp only. We do not publish a bank account on the website or invoice. We do not collect card numbers on the website.',
     url: `${SITE_URL}/payment-policy`,
   },
   {
     topic: 'Anti-scam',
-    rule: 'Use only sekarbaliactivity.com, WhatsApp +6281775723663, and the Seabank account printed on our invoice. If anyone asks for a different bank or e-wallet, stop and verify on the anti-scam page.',
+    rule: 'Use only sekarbaliactivity.com and WhatsApp +6281775723663. Payment instructions come on that official WhatsApp only. If anyone asks you to pay a different bank or e-wallet, stop and verify on the anti-scam page.',
     url: `${SITE_URL}/anti-scam`,
   },
   {
@@ -1260,8 +1260,8 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Contact', url: `${SITE_URL}/contact`, desc: `WhatsApp ${CONTACT_PHONE_E164} · corporate office, meeting point & activity base` },
   { title: 'Private Airport Transfers', url: `${SITE_URL}/transfers`, desc: 'DPS Airport to Ubud private transfer from IDR 700,000' },
   { title: 'About', url: `${SITE_URL}/about`, desc: 'Local Pejeng team' },
-  { title: 'Anti-Scam', url: `${SITE_URL}/anti-scam`, desc: 'Official WhatsApp, Seabank, privacy, refund, and payment rules' },
-  { title: 'Payment Policy', url: `${SITE_URL}/payment-policy`, desc: 'No payment to inquire; official Seabank only; confirm on WhatsApp' },
+  { title: 'Anti-Scam', url: `${SITE_URL}/anti-scam`, desc: 'Official WhatsApp, privacy, refund, and payment rules' },
+  { title: 'Payment Policy', url: `${SITE_URL}/payment-policy`, desc: 'No payment to inquire; payment instructions on official WhatsApp only' },
   { title: 'Refund Policy', url: `${SITE_URL}/refund-policy`, desc: '24-hour free cancel refunds; weather and operator cancellations fully refundable' },
   { title: 'Cancellation Policy', url: `${SITE_URL}/cancellation-policy`, desc: 'Free cancellation up to 24 hours before start time' },
   { title: 'Privacy Policy', url: `${SITE_URL}/privacy-policy`, desc: 'How we handle booking and contact data' },

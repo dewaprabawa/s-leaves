@@ -41,7 +41,6 @@ import {
   type InvoicePaymentMode,
 } from '@/lib/invoice'
 import { MEETING_POINT } from '@/lib/meetingPoint'
-import { PAYMENT_BANK } from '@/lib/payment'
 import { formatIdr } from '@/lib/whatsapp'
 
 type LocationMode = 'popular' | 'custom' | 'self-meet'
@@ -929,7 +928,7 @@ export default function AdminInvoiceBuilder() {
               </a>
             </div>
             <p className="text-[11px] text-brand-green-light">
-              Seabank {PAYMENT_BANK.accountNumber} · {PAYMENT_BANK.accountName}
+              Payment instructions go on official WhatsApp only — no bank account on this invoice.
             </p>
           </div>
         ) : (

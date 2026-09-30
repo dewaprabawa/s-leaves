@@ -8,12 +8,12 @@ import { SITE_NAME, SITE_URL } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'Payment Policy',
   description:
-    'How to pay Sekar Bali Activity safely: no payment to inquire, official Seabank account only, PDF invoice, and WhatsApp confirmation. Never pay a different bank or agent.',
+    'How to pay Sekar Bali Activity safely: no payment to inquire, payment instructions on official WhatsApp only, PDF invoice, and WhatsApp confirmation. We do not publish a bank account.',
   alternates: { canonical: '/payment-policy' },
   openGraph: {
     title: `Payment Policy | ${SITE_NAME}`,
     description:
-      'Official Seabank account, no cards on the website, and how to spot a fake payment request.',
+      'No published bank account, no cards on the website, and how to spot a fake payment request.',
     url: `${SITE_URL}/payment-policy`,
     siteName: SITE_NAME,
     type: 'website',
@@ -36,8 +36,8 @@ export default function PaymentPolicyPage() {
           <section className="bg-white/70 rounded-2xl p-6 lg:p-8 border border-brand-green/10">
             <h2 className="text-xl font-serif text-brand-green font-bold mb-2">Quick summary</h2>
             <p>
-              Asking about a date is free. After you agree, pay only the Seabank account on your
-              invoice, then confirm on our official WhatsApp. We never ask for card numbers on this
+              Asking about a date is free. After you agree, we send payment instructions on official
+              WhatsApp only. Confirm on that same thread. We never ask for card numbers on this
               website.
             </p>
           </section>
@@ -54,20 +54,16 @@ export default function PaymentPolicyPage() {
 
           <section>
             <h2 className="text-2xl font-serif text-brand-green font-bold mb-3">
-              2. Official bank account
+              2. How you pay
             </h2>
             <p className="mb-3">
-              The only bank we publish for guest transfers is:
+              We do not publish a bank account on this website or on the invoice PDF. After you
+              agree, payment instructions come on official WhatsApp only.
             </p>
-            <ul className="list-none space-y-1 text-brand-green font-semibold bg-white/70 border border-brand-green/10 rounded-xl p-5">
-              <li>Bank: {OFFICIAL_PAYMENT.bankName}</li>
-              <li>Account number: {OFFICIAL_PAYMENT.accountNumber}</li>
-              <li>Account name: {OFFICIAL_PAYMENT.accountName}</li>
-            </ul>
             <p className="mt-3">
-              If a message, QR code, or “helper” asks you to pay a different account, e-wallet, or
-              cash-to-a-driver arrangement that is not on your invoice, stop and write us on the
-              WhatsApp number published on this site.
+              If a message, QR code, or “helper” asks you to pay a bank, e-wallet, or
+              cash-to-a-driver arrangement that we did not send on that official WhatsApp thread,
+              stop and write us on the WhatsApp number published on this site.
             </p>
           </section>
 

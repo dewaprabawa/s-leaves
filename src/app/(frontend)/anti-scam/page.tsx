@@ -14,12 +14,12 @@ import { SITE_NAME, SITE_URL } from '@/lib/seo'
 export const metadata: Metadata = {
   title: 'Anti-Scam | Privacy, Refund & Payment',
   description:
-    'How to book Sekar Bali Activity without getting scammed: official WhatsApp, published Seabank only, privacy, refund, and payment policies.',
+    'How to book Sekar Bali Activity without getting scammed: official WhatsApp only for payment instructions, privacy, refund, and payment policies.',
   alternates: { canonical: '/anti-scam' },
   openGraph: {
     title: `Anti-Scam | ${SITE_NAME}`,
     description:
-      'Official contacts, bank account, privacy, refund, and payment rules for Ubud activity bookings.',
+      'Official contacts, privacy, refund, and payment rules for Ubud activity bookings.',
     url: `${SITE_URL}/anti-scam`,
     siteName: SITE_NAME,
     type: 'website',
@@ -39,7 +39,7 @@ export default function AntiScamPage() {
         <p className="text-brand-green-light mb-8">Last updated: {TRUST_POLICIES_UPDATED}</p>
         <p className="text-brand-green-light leading-relaxed mb-10">
           Fake tour chats are common in Bali. Use this page to check you are talking to Sekar Bali
-          Activity — not someone copying our photos or asking for a different bank.
+          Activity — not someone copying our photos or asking you to pay an unpublished account.
         </p>
 
         <div className="space-y-10 text-brand-green-light leading-relaxed">
@@ -58,7 +58,7 @@ export default function AntiScamPage() {
                 </a>
               </li>
               <li>WhatsApp number matches {OFFICIAL_PAYMENT.whatsappDisplay}</li>
-              <li>Invoice PDF shows our logo and the Seabank details on this site</li>
+              <li>Invoice PDF shows our logo. Payment instructions come on official WhatsApp only — not a published bank account</li>
               <li>
                 Registered office on Google Business Profile: {OFFICIAL_PAYMENT.office}
               </li>

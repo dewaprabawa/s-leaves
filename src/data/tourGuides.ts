@@ -588,34 +588,14 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Kintamani black lava', href: '/tours/dirt-bike-kintamani-black-lava', blurb: 'Altitude lava dunes instead of Tabanan jungle.' },
   ],
   'batik-class': [
-    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Batik vs silver vs lontar vs canang.' },
+    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Batik vs silver — the two Ubud workshops we book.' },
     { title: 'Silver making class', href: '/tours/silver-making-class', blurb: '3 hours · 5 g silver · same from-price band.' },
     { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class', blurb: 'Kitchen instead of wax — free Ubud pickup.' },
   ],
   'silver-making-class': [
     { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: '5 g silver included; extra silver quoted.' },
     { title: 'Batik class', href: '/tours/batik-class', blurb: '3-hour cloth workshop if you wanted wax, not metal.' },
-    { title: 'Lontar weaving', href: '/tours/lontar-weaving-class', blurb: '2-hour palm craft from IDR 600K.' },
-  ],
-  'lontar-weaving-class': [
-    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Lontar is the basket craft; canang is the daily offering.' },
-    { title: 'Canang offering class', href: '/tours/balinese-offering-class', blurb: 'Weave the offerings you see on every doorway.' },
-    { title: 'Bamboo carving', href: '/tours/bamboo-carving-class', blurb: '2-hour carved souvenir instead of palm.' },
-  ],
-  'balinese-dance-class': [
-    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Beginner studio class — not a Kecak ticket.' },
-    { title: 'Canang offering class', href: '/tours/balinese-offering-class', blurb: 'Pair movement with the daily offering craft.' },
-    { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class', blurb: 'Hands-on kitchen if you wanted food, not dance.' },
-  ],
-  'bamboo-carving-class': [
-    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Small animal motif — typically dragonfly or butterfly.' },
-    { title: 'Lontar weaving', href: '/tours/lontar-weaving-class', blurb: 'Palm basket instead of carved bamboo.' },
-    { title: 'Batik class', href: '/tours/batik-class', blurb: '3-hour cloth if you wanted wax-resist.' },
-  ],
-  'balinese-offering-class': [
-    { title: 'Ubud workshop classes 2026', href: '/blog/ubud-workshop-classes-2026', blurb: 'Workshop, not a temple ceremony.' },
-    { title: 'Griya Beji Waterfall', href: '/tours/griya-beji-waterfall', blurb: 'Actual waterfall melukat if you wanted ritual.' },
-    { title: 'Lontar weaving', href: '/tours/lontar-weaving-class', blurb: 'Same palm family — offering baskets.' },
+    { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class', blurb: 'Kitchen instead of jewelry — free Ubud pickup.' },
   ],
   'bali-motorbike-traveling-trip': [
     { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026', blurb: 'Promo from IDR 450K (was 550K). Canggu / Jimbaran / Nusa Dua shuttle IDR 550K once per booking.' },

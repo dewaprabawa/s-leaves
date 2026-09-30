@@ -50,7 +50,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "culture",
     label: TOUR_CATEGORY_LABELS.culture,
-    blurb: "Tirta Empul 1.2M · Griya Beji waterfall melukat from 300K · palm & healing · batik, silver, dance, offering classes",
+    blurb: "Tirta Empul 1.2M · Griya Beji waterfall melukat from 300K · palm & healing · batik and silver classes",
     href: "/#culture",
   },
 ]

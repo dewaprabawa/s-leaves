@@ -52,12 +52,8 @@ Generators: `src/data/geoContent.ts` → `buildLlmsTxt()` (`/llms.txt`, `/.well-
 | Dirt bike Kintamani | `dirt-bike-kintamani-black-lava` | 4,100,000 | Yes (shared dirt-bike row from 2,100,000+) | Yes | Quoted |
 | Dirt bike Tabanan day/night | `dirt-bike-tabanan-day-night` | 2,100,000 | Yes | Yes | Quoted |
 | Dirt bike Tabanan sunset beach | `dirt-bike-tabanan-jungle-sunset-beach` | 2,100,000 | Yes | Yes | Quoted |
-| Lontar weaving | `lontar-weaving-class` | 600,000 | Yes (workshops from 600,000+) | Yes | Quoted |
-| Silver making | `silver-making-class` | 650,000 | Yes | Yes | Quoted |
-| Balinese dance | `balinese-dance-class` | 600,000 | Yes | Yes | Quoted |
+| Silver making | `silver-making-class` | 650,000 | Yes (workshops from 650,000) | Yes | Quoted |
 | Batik class | `batik-class` | 650,000 | Yes | Yes | Quoted |
-| Bamboo carving | `bamboo-carving-class` | 600,000 | Yes | Yes | Quoted |
-| Canang offering | `balinese-offering-class` | 600,000 | Yes | Yes | Quoted |
 
 Also listed in `GEO_PRICING` (not a `TOURS` slug): DPS Airport to Ubud private transfer — IDR 700,000 / vehicle.
 

@@ -506,30 +506,6 @@ Package bikes: **KLX 150** or **Yamaha X-Ride**. Bigger enduro bikes quoted. 4�
     ],
   }),
   ticketTour({
-    slug: "lontar-weaving-class",
-    imageSlug: "lontar-weaving-hands",
-    title: "Lontar Weaving Class",
-    seoTitle: "Lontar Weaving Class Ubud | From IDR 600K",
-    seoDescription:
-      "2-hour lontar-palm weaving class from IDR 600,000. Learn canang-style baskets with a local teacher. WhatsApp booking.",
-    category: "culture",
-    area: "Ubud",
-    venue: "Ubud workshop (confirmed on WhatsApp)",
-    duration: "2 hours",
-    sourcePrice: 400_000,
-    shortDescription:
-      "Two hours weaving lontar palm into offering baskets — the same craft used for canang. From IDR 600,000. You keep what you make.",
-    fullDescription: `A **2-hour lontar weaving class** near Ubud. Lontar palm is what Balinese families weave into offering baskets. You work a small piece with a teacher and take it home.
-
-Pickup quoted. Not a jewelry class — see silver making for that.`,
-    highlights: ["2 hours", "Lontar offering-basket craft", "Take your piece home", "Ubud workshop"],
-    included: ["2-hour class", "Lontar materials", "Teacher"],
-    notIncluded: ["Hotel pickup unless quoted"],
-    itinerary: [
-      { time: "Class", title: "Weave", description: "Intro to lontar, then a small basket or tray." },
-    ],
-  }),
-  ticketTour({
     slug: "silver-making-class",
     imageSlug: "silver-making-workshop",
     title: "Silver Making Class",
@@ -555,28 +531,6 @@ Extra silver is quoted. Pickup extra.`,
     ],
   }),
   ticketTour({
-    slug: "balinese-dance-class",
-    imageSlug: "balinese-dance-lesson",
-    title: "Balinese Dance Class",
-    seoTitle: "Balinese Dance Class Ubud | From IDR 600K",
-    seoDescription:
-      "2-hour beginner Balinese dance class from IDR 600,000. Stylized full-body basics with a local teacher. WhatsApp booking.",
-    category: "culture",
-    area: "Ubud",
-    venue: "Ubud studio (confirmed on WhatsApp)",
-    duration: "2 hours",
-    sourcePrice: 400_000,
-    shortDescription:
-      "Two-hour beginner Balinese dance — basic full-body lines and hand positions. From IDR 600,000. Costume photo extra if offered.",
-    fullDescription: `A **2-hour beginner dance class** covering the stylized eyes, hands, and stance that make Balinese dance readable. No experience needed.
-
-Studio confirmed on WhatsApp. Pickup quoted.`,
-    highlights: ["2 hours", "Beginner-friendly", "Local teacher", "Ubud studio"],
-    included: ["2-hour class", "Teacher"],
-    notIncluded: ["Performance costume hire unless quoted", "Hotel pickup unless quoted"],
-    itinerary: [{ time: "Class", title: "Basic positions", description: "Warm-up, hand/eye drills, a short phrase." }],
-  }),
-  ticketTour({
     slug: "batik-class",
     imageSlug: "batik-class-workshop",
     title: "Batik Class",
@@ -600,49 +554,5 @@ Pickup quoted.`,
       { time: "Hour 1", title: "Motif", description: "Draw or trace." },
       { time: "Hours 2–3", title: "Wax + dye", description: "Canting wax, dye, and dry." },
     ],
-  }),
-  ticketTour({
-    slug: "bamboo-carving-class",
-    imageSlug: "bamboo-carving-workshop",
-    title: "Bamboo Carving Class",
-    seoTitle: "Bamboo Carving Class Ubud | From IDR 600K",
-    seoDescription:
-      "2-hour bamboo carving class from IDR 600,000. Simple animal motifs — dragonfly or butterfly. WhatsApp booking.",
-    category: "culture",
-    area: "Ubud",
-    venue: "Ubud workshop (confirmed on WhatsApp)",
-    duration: "2 hours",
-    sourcePrice: 400_000,
-    shortDescription:
-      "Two hours carving a small bamboo piece — typically a dragonfly or butterfly. From IDR 600,000. You keep it.",
-    fullDescription: `A **2-hour bamboo carving class**. The usual project is a simple animal — dragonfly or butterfly — cut and detailed with a teacher.
-
-Tools provided. Pickup quoted.`,
-    highlights: ["2 hours", "Small animal motif", "Take it home", "Beginner tools provided"],
-    included: ["2-hour class", "Bamboo blank + tools", "Teacher"],
-    notIncluded: ["Hotel pickup unless quoted"],
-    itinerary: [{ time: "Class", title: "Carve", description: "Trace, cut, and finish a small piece." }],
-  }),
-  ticketTour({
-    slug: "balinese-offering-class",
-    imageSlug: "balinese-offering-canang",
-    title: "Balinese Offering Class",
-    seoTitle: "Canang Offering Class Ubud | From IDR 600K",
-    seoDescription:
-      "Canang sari offering class from IDR 600,000. About 2 hours weaving palm and flowers the way homes and temples do. WhatsApp.",
-    category: "culture",
-    area: "Ubud",
-    venue: "Ubud workshop (confirmed on WhatsApp)",
-    duration: "2 hours",
-    sourcePrice: 400_000,
-    shortDescription:
-      "Learn canang sari — the small daily offerings you see on homes, temples, and scooters. About 2 hours. From IDR 600,000.",
-    fullDescription: `A **canang / offering class** (~1.5–2 hours). You weave palm trays and place flowers the way Balinese households do each morning.
-
-This is a workshop, not a temple ceremony ticket. Pickup quoted.`,
-    highlights: ["~2 hours", "Canang sari weaving", "Palm + flowers", "Cultural, not a show"],
-    included: ["Class", "Palm, flowers, and tray materials", "Teacher"],
-    notIncluded: ["Hotel pickup unless quoted", "Temple ceremony seating"],
-    itinerary: [{ time: "Class", title: "Weave canang", description: "Palm tray, flowers, and the meaning of the pieces." }],
   }),
 ]

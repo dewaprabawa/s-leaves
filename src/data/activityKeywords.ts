@@ -744,7 +744,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'east-south-bali-motorbike-tour-2026': 'bali-motorbike-traveling-trip',
   'kintamani-scooter-vs-batur-jeep-2026': ['bali-motorbike-traveling-trip', 'batur-sunrise-jeep-tour'],
   'bali-atv-vs-kuber-cave-2026': 'bali-atv-adventure',
-  'bali-atv-vs-utv-buggy-2026': ['bali-atv-adventure', 'utv-buggy-bali-adventure'],
+  'bali-atv-vs-utv-buggy-2026': 'bali-atv-adventure',
   'which-bali-wheels-2026': 'site',
   'bali-6-day-girls-trip-itinerary-2026': 'bali-private-itinerary',
   'bali-family-private-itinerary-2026': 'bali-private-itinerary',

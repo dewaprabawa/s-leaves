@@ -1,4 +1,5 @@
 import { CONTACT_WHATSAPP_URL } from '@/lib/contact'
+import { trackGenerateLead } from '@/lib/ga'
 
 export type WhatsAppBookingPayload = {
   guestName: string
@@ -79,6 +80,7 @@ export function buildWhatsAppBookingUrl(payload: WhatsAppBookingPayload) {
 }
 
 export function openWhatsAppBooking(payload: WhatsAppBookingPayload) {
+  trackGenerateLead('whatsapp_booking', { activity: payload.activity })
   window.open(buildWhatsAppBookingUrl(payload), '_blank', 'noopener,noreferrer')
 }
 

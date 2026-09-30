@@ -1,4 +1,5 @@
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from '@/lib/contact'
+import { trackGenerateLead } from '@/lib/ga'
 import { formatIdr } from '@/lib/whatsapp'
 import { formatBankTransferBlock, PAYMENT_BANK } from '@/lib/payment'
 import type { TransferOption } from '@/lib/adminInvoiceCatalog'
@@ -396,9 +397,11 @@ export function buildPaymentConfirmationWhatsAppUrl(invoice: InvoiceDraft): stri
 }
 
 export function openInvoiceWhatsApp(invoice: InvoiceDraft): void {
+  trackGenerateLead('invoice_whatsapp', { invoice_number: invoice.invoiceNumber })
   window.open(buildInvoiceWhatsAppUrl(invoice), '_blank', 'noopener,noreferrer')
 }
 
 export function openPaymentConfirmationWhatsApp(invoice: InvoiceDraft): void {
+  trackGenerateLead('payment_confirm', { invoice_number: invoice.invoiceNumber })
   window.open(buildPaymentConfirmationWhatsAppUrl(invoice), '_blank', 'noopener,noreferrer')
 }

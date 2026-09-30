@@ -47,6 +47,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book Tumang cooking class', href: '/tours/balinese-cooking-class' },
   ],
   cycling: [
+    { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'Ubud ricefield cycling guide', href: '/blog/ubud-ricefield-cycling-tour-guide-2026' },
     { title: 'Is an Ubud cycling tour worth it?', href: '/blog/is-ubud-cycling-tour-worth-it' },
     { title: 'Pejeng vs Tegallalang', href: '/blog/pejeng-rice-terrace-cycling-vs-tegallalang' },
@@ -58,6 +59,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book Pejeng cycling', href: '/tours/ubud-ricefield-cycling-tour' },
   ],
   atv: [
+    { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV Ubud price calculator', href: '/planners/atv-price-calculator' },
     { title: 'ATV cost near Ubud 2026', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
     { title: 'Tandem ATV price', href: '/blog/tandem-atv-ubud-price' },
@@ -75,6 +77,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book ATV + rafting', href: '/tours/atv-rafting-combo' },
   ],
   rafting: [
+    { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV + rafting combo (flagship)', href: '/blog/atv-rafting-combo-ubud-2026' },
     { title: 'Ayung rafting Ubud price 2026', href: '/blog/rafting-ubud-price-2026' },
     { title: 'Ayung River rafting guide', href: '/blog/bali-whitewater-rafting-near-ubud-guide' },
@@ -131,6 +134,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book motorbike trip', href: '/tours/bali-motorbike-traveling-trip' },
   ],
   motorbike: [
+    { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'Motorbike tour calculator', href: '/planners/motorbike-tour-price' },
     { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026' },
     { title: 'Japan, Korea, China & Middle East (English)', href: '/blog/bali-tours-for-japanese-chinese-travelers-2026' },
@@ -189,6 +193,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   ],
   site: [
     HUB,
+    { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     PRICES,
     PICKUP,
     { title: 'How to book on WhatsApp', href: '/blog/how-to-book-bali-adventure-whatsapp' },
@@ -237,6 +242,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'ubud-atv-track-types-mud-jungle-vs-cave-tunnel': 'atv',
   'atv-river-tubing-wos-river-bali': 'tubing',
   'atv-rafting-combo-ubud-2026': 'rafting',
+  'best-price-atv-rafting-cycling-scooter-ubud-2026': 'site',
   'bali-whitewater-rafting-near-ubud-guide': 'rafting',
   'rafting-ubud-price-2026': 'rafting',
   'rafting-vs-tubing-vs-atv-near-ubud': 'rafting',
@@ -410,6 +416,7 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     { title: 'Hotel pickup checker', href: '/planners/hotel-pickup-checker' },
     { title: 'Batur jeep price guide', href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026' },
     { title: 'Cooking class Ubud price', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
+    { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV cost near Ubud', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
     { title: 'Ayung rafting Ubud price', href: '/blog/rafting-ubud-price-2026' },
     { title: 'Wos River tubing price', href: '/blog/wos-river-tubing-price-2026' },

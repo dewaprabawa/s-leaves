@@ -167,9 +167,9 @@ export const TOURS: Tour[] = [
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "ATV All New Bali Adventure | From IDR 750K",
+    seoTitle: "Best Price ATV Ubud | From 750K",
     seoDescription:
-      "Book ATV at All New Bali Adventure near Ubud — single from IDR 750K, tandem 1.1M. Lunch, gear, insurance. Pickup IDR 400K or self-meet. WhatsApp.",
+      "Best published ATV rate near Ubud: 750K · 725K for 2 · 700K for 3+. Lunch in. Pickup 400K or self-meet. WhatsApp — no deposit.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV ride at All New Bali Adventure near Ubud through jungle trails",
@@ -829,9 +829,9 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
-    seoTitle: "Ayung Rafting Ubud Price | 500K · 450K 2+",
+    seoTitle: "Best Price Rafting Ubud | 500K · 450K",
     seoDescription:
-      "Ayung River Class II–III rafting Ubud — IDR 500,000, or 450,000 for 2+ (min 2). Lunch, gear, insurance. Pickup IDR 400K, not free. Book WhatsApp.",
+      "Best published Ayung rafting rate: IDR 500,000, or 450,000 for 2+ (min 2). Lunch and gear in. Pickup 400K, not free. WhatsApp.",
     heroImage: {
       url: "/images/adventures/rafting.jpg",
       alt: "Whitewater rafting through a Bali jungle river canyon",
@@ -1281,9 +1281,9 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
     pickup: "Free Ubud-area hotel pickup",
     duration: "2 Hours",
     basePrice: 750000,
-    seoTitle: "Rice Paddy Cycling Ubud | Free Pickup 750K",
+    seoTitle: "Best Price Cycling Ubud | 750K Free Pickup",
     seoDescription:
-      "Rice paddy cycling in Pejeng near Ubud — quiet Subak lanes, lunch included, free Ubud hotel pickup from IDR 750K. Book on WhatsApp.",
+      "Best published Pejeng cycling rate: IDR 750K with lunch and free Ubud pickup. Quiet Subak lanes, not Tegallalang. WhatsApp.",
     heroImage: {
       url: "/images/cycling/rice-field-bikes.jpg",
       alt: "Rice paddy cycling tour through Pejeng village terraces near Ubud",
@@ -2511,9 +2511,9 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
     pickup: MOTORBIKE_PICKUP,
     duration: MOTORBIKE_DURATION,
     basePrice: MOTORBIKE_UBUD_IDR,
-    seoTitle: "Bali Motorbike Tour Ubud | Promo from 450K",
+    seoTitle: "Best Price Scooter Tour Bali | Promo 450K",
     seoDescription:
-      "Guided Bali scooter promo from IDR 450K (was 550K). Canggu, Jimbaran, Nusa Dua shuttle IDR 550K. Tickets extra. Ride or pillion. WhatsApp.",
+      "Best published scooter promo from IDR 450K (was 550K). Tickets extra. Canggu/Jimbaran/Nusa Dua shuttle 550K. Ride or pillion. WhatsApp.",
     heroImage: {
       url: "/images/adventures/motorbike-tour-hero.jpg",
       alt: "Smiling guests wearing helmets on a guided Bali motorbike traveling trip",

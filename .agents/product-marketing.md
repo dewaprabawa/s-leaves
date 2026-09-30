@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v2.18
-**Last updated:** 2026-09-29
+**Document version:** v2.19
+**Last updated:** 2026-09-30
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — adventure, village, food, and day tours with clear IDR pricing and WhatsApp booking.
@@ -126,10 +126,11 @@
 ## Goals
 **Business goal:** Increase direct WhatsApp bookings across travel & activity categories
 **Conversion action:** Open booking → WhatsApp with prefilled details (primary); secondary explore experiences / packages
-**Current metrics:** Not instrumented in this context doc yet
+**Current metrics:** GA4 `G-TJW418QSF8` pageviews are live. Mark `generate_lead` as a key event (Admin → Events) so WhatsApp bookings show in Key events / session key event rate. Revenue stays Rp0 until a paid `purchase` event exists.
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.19 (2026-09-30) — GA4 fires `generate_lead` on WhatsApp clicks and invoice WhatsApp sends. Mark that event as a key event in Admin so the empty Key events / session key event rate columns fill in.
 - v2.18 (2026-09-29) — Removed **Jungle Buggies — Complete 3 Laps** (old `/tours/jungle-buggies-complete-3-laps-tour` redirects to the Pemogan UTV). Sit-in buggy demand stays on **UTV at Bali Buggy Adventures**.
 - v2.17 (2026-09-29) — Motorbike promo: Kintamani **IDR 650,000** (was 750,000 list) and South Bali **IDR 750,000** (was 850,000 list). Ubud 450K / waterfall 500K / North 750K / East 800K unchanged.
 - v2.16 (2026-09-29) — Public `/planners` hub (not blocked `/tools/`) adapts Letaido’s free-tool directory: unique URLs for ATV / jeep / scooter / cooking calculators, a pickup checker, and a mood chooser. Do not clone AI SEO tools onto the tour site.

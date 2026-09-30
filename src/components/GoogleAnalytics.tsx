@@ -1,6 +1,6 @@
 import Script from "next/script"
-
-const GA_MEASUREMENT_ID = "G-TJW418QSF8"
+import { GA_MEASUREMENT_ID } from "@/lib/ga"
+import GaLeadTracker from "@/components/GaLeadTracker"
 
 export default function GoogleAnalytics() {
   return (
@@ -17,6 +17,7 @@ export default function GoogleAnalytics() {
           gtag('config', '${GA_MEASUREMENT_ID}');
         `}
       </Script>
+      <GaLeadTracker />
     </>
   )
 }

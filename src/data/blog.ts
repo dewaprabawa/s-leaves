@@ -1837,7 +1837,7 @@ The [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) includes pickup 
 > - **Most splash:** Whitewater rafting (Class II–III)
 > - **Most relaxed water:** Canyon tubing on the Wos River
 > - **Best value + free pickup:** Ubud Ricefield Cycling (IDR 750,000, lunch included, free Ubud pickup)
-> - **Best combos:** ATV + Wos River tubing · [Cycling + cooking class Ubud](/blog/cycling-cooking-class-ubud-full-day-itinerary)
+> - **Best combos:** **[ATV + Ayung rafting](/tours/atv-rafting-combo)** (flagship, from 1.25M) · ATV + Wos tubing (gentler) · [Cycling + cooking class Ubud](/blog/cycling-cooking-class-ubud-full-day-itinerary)
 
 ---
 
@@ -1870,12 +1870,12 @@ Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture 
 
 ## Best Combo Days
 
-1. **ATV + tubing** — morning quad bikes, afternoon river float
-2. **Cycling + Tumang cooking** — rice paddies by day, village kitchen in the afternoon ([full itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary))
-3. **Rafting + cycling** — adrenaline AM, cultural PM (2-day or long day)
+1. **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — flagship mud-then-Class-II–III day from **IDR 1,250,000**, **10% mix** at checkout ([price story](/blog/atv-rafting-combo-ubud-2026))
+2. **ATV + tubing** — morning quad bikes, afternoon Wos River float ([gentler add-on](/blog/atv-river-tubing-wos-river-bali))
+3. **Cycling + Tumang cooking** — rice paddies by day, village kitchen in the afternoon ([full itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary))
 4. **Full price comparison** — [Bali adventure packages 2026](/blog/bali-adventure-packages-prices-2026)
 
-**Ready to book?** Compare all tours on the [homepage](/#experiences) or tap **Details** in the booking popup to preview any itinerary.
+**Ready to book?** Open the [ATV + rafting money page](/tours/atv-rafting-combo) or compare all tours on the [homepage](/#experiences).
 `
   },
   {

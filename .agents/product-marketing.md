@@ -1,11 +1,11 @@
 # Product Marketing Context
 
-**Document version:** v2.19
+**Document version:** v2.20
 **Last updated:** 2026-09-30
 
 ## Product Overview
-**One-liner:** Pejeng-based Bali travel & activities near Ubud — adventure, village, food, and day tours with clear IDR pricing and WhatsApp booking.
-**What it does:** Sekar Bali Activity sells curated Ubud-area experiences: ATV (All New Bali Adventure), river rafting/tubing, Pejeng ricefield cycling, a no-hike Mount Batur sunrise 4×4 jeep near Kintamani, Tumang Bali Cooking Class, coffee tasting, private day tours, a guided motorbike traveling trip, UTV at Bali Buggy Adventures, and same-day combos — with transparent tier pricing and clear hotel-pickup rules.
+**One-liner:** Pejeng-based Bali travel & activities near Ubud — flagship ATV + Ayung rafting, village, food, and day tours with clear IDR pricing and WhatsApp booking.
+**What it does:** Sekar Bali Activity sells curated Ubud-area experiences. The **flagship featured activity** is **ATV + Ayung rafting** (from IDR 1,250,000 at ticket floors; 10% mix at checkout). Also: ATV (All New Bali Adventure), river rafting/tubing, Pejeng ricefield cycling, a no-hike Mount Batur sunrise 4×4 jeep near Kintamani, Tumang Bali Cooking Class, coffee tasting, private day tours, a guided motorbike traveling trip, UTV at Bali Buggy Adventures, and same-day combos — with transparent tier pricing and clear hotel-pickup rules.
 **Product category:** Bali travel activities / Ubud tours & experiences
 **Product type:** Local tour operator / service business
 **Business model:** Direct WhatsApp booking; pay on confirm/experience; packages from ~IDR 450K–1.35M; rafting and canyon tubing IDR 500K list / 450K for 2+; pickup add-ons (jeep pickup included)
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.20 (2026-09-30) — **ATV + Ayung rafting is the flagship featured activity.** Dedicated money page `/tours/atv-rafting-combo` from **IDR 1,250,000** (ATV 750K + rafting 500K list floors). 10% mix at checkout. Homepage hero, top-picks, pricing, and GEO lead with the combo. Commercial article `/blog/atv-rafting-combo-ubud-2026`. Do not invent a 999K package sticker. ATV + Wos tubing stays the gentler add-on. Pickup IDR 400,000 once or self-meet. Rafting min 2. Also ships the ATV vs UTV compare (Sedang sit-on from 750K versus Pemogan sit-in hour 1.2M / 1.5M).
 - v2.19 (2026-09-30) — GA4 fires `generate_lead` on WhatsApp clicks and invoice WhatsApp sends. Mark that event as a key event in Admin so the empty Key events / session key event rate columns fill in.
 - v2.18 (2026-09-29) — Removed **Jungle Buggies — Complete 3 Laps** (old `/tours/jungle-buggies-complete-3-laps-tour` redirects to the Pemogan UTV). Sit-in buggy demand stays on **UTV at Bali Buggy Adventures**.
 - v2.17 (2026-09-29) — Motorbike promo: Kintamani **IDR 650,000** (was 750,000 list) and South Bali **IDR 750,000** (was 850,000 list). Ubud 450K / waterfall 500K / North 750K / East 800K unchanged.

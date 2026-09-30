@@ -55,6 +55,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'bali-atv-all-new-bali-adventure-location-guide': 'bali-atv-adventure',
   'ubud-atv-track-types-mud-jungle-vs-cave-tunnel': 'bali-atv-adventure',
   'atv-river-tubing-wos-river-bali': 'bali-atv-adventure',
+  'atv-rafting-combo-ubud-2026': 'atv-rafting-combo',
   'bali-whitewater-rafting-near-ubud-guide': 'whitewater-rafting',
   'rafting-ubud-price-2026': 'whitewater-rafting',
   'rafting-vs-tubing-vs-atv-near-ubud': 'whitewater-rafting',
@@ -144,6 +145,30 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
       bookLabel: 'WhatsApp consultation',
       pairHref: '/book?activity=combo-cycling-cooking',
       pairLabel: 'Book cycling + cooking',
+    }
+  }
+
+  if (slug === 'atv-rafting-combo-ubud-2026') {
+    return {
+      tldr:
+        'Sekar Bali Activity’s flagship land-and-water day is Sedang ATV then Ayung Class II–III rafting. From-price IDR 1,250,000 (ATV 750,000 + rafting 500,000). Same-day mix takes 10% off at checkout. Rafting min 2. Pickup IDR 400,000 once or self-meet. WhatsApp — no payment to inquire.',
+      updated: ACTIVITY_GEO_UPDATED,
+      bookHref: '/tours/atv-rafting-combo',
+      bookLabel: 'Book ATV + rafting',
+      pairHref: '/book?combo=combo-atv-rafting',
+      pairLabel: 'Open mix checkout',
+    }
+  }
+
+  if (slug === 'bali-atv-vs-utv-buggy-2026') {
+    return {
+      tldr:
+        'Sedang ATV from IDR 750,000 is a sit-on quad at All New Bali Adventure (2–4 hours, pickup IDR 400,000 or self-meet). Pemogan UTV is a sit-in automatic at Bali Buggy Adventures: single IDR 1,200,000 / tandem 1,500,000, about 1 hour / 7 km, pickup quoted. WhatsApp — no payment to inquire.',
+      updated: ACTIVITY_GEO_UPDATED,
+      bookHref: '/tours/bali-atv-adventure',
+      bookLabel: 'Book Sedang ATV',
+      pairHref: '/tours/utv-buggy-bali-adventure',
+      pairLabel: 'Book Pemogan UTV',
     }
   }
 

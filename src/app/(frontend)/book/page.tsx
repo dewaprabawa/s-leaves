@@ -14,10 +14,12 @@ import { GRIYA_BEJI_SALES } from "@/data/griyaBeji"
 import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
 import { SITE_NAME, SITE_URL } from "@/lib/seo"
 import { BOOK_PAGE_KEYWORDS } from "@/data/activityKeywords"
+import { ATV_RAFTING_COMBO_ID } from "@/data/atvRaftingCombo"
 import { formatIdr } from "@/lib/whatsapp"
+import { FEATURED_COMBOS } from "@/lib/combos"
 
 type Props = {
-  searchParams: Promise<{ activity?: string }>
+  searchParams: Promise<{ activity?: string; combo?: string }>
 }
 
 const cultureCombo = getCyclingCookingCombo()
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
 }
 
 export default async function BookPage({ searchParams }: Props) {
-  const { activity } = await searchParams
+  const { activity, combo } = await searchParams
   const initialActivityId =
     activity && ADVENTURES.some((a) => a.id === activity) ? activity : undefined
   const highlightCooking = activity === COOKING_CLASS_SALES.id
@@ -64,8 +66,14 @@ export default async function BookPage({ searchParams }: Props) {
   const highlightSwingCookingCombo = activity === swingCookingCombo.id
   const highlightMelukat = activity === MELUKAT_SALES.id
   const highlightGriya = activity === GRIYA_BEJI_SALES.id
+  const highlightComboId =
+    (combo && FEATURED_COMBOS.some((c) => c.id === combo) && combo) ||
+    (activity && FEATURED_COMBOS.some((c) => c.id === activity) && activity) ||
+    undefined
+  const highlightAtvRafting = highlightComboId === ATV_RAFTING_COMBO_ID
 
   const jumpLinks = [
+    { id: ATV_RAFTING_COMBO_ID, label: "ATV + rafting" },
     { id: "combos", label: "Adventure combos" },
     { id: cultureCombo.id, label: "Cycling + cooking" },
     { id: swingCookingCombo.id, label: "Swing + cooking" },
@@ -84,11 +92,30 @@ export default async function BookPage({ searchParams }: Props) {
     name: "WhatsApp checkout — Sekar Bali Activity",
     description:
       "WhatsApp checkout for the activity already chosen on a tour page — guests, date, pickup, IDR total, and same-day combos.",
-    numberOfItems: ADVENTURES.length + 5,
+    numberOfItems: ADVENTURES.length + 6,
     itemListElement: [
       {
         "@type": "ListItem",
         position: 1,
+        name: "ATV + Ayung Rafting",
+        url: `${SITE_URL}/book?combo=${ATV_RAFTING_COMBO_ID}`,
+        item: {
+          "@type": "TouristTrip",
+          name: "ATV + Ayung Rafting",
+          description:
+            "Flagship land + water day: Sedang ATV then Ayung Class II–III. From IDR 1,250,000 at ticket floors. 10% mix at checkout.",
+          offers: {
+            "@type": "Offer",
+            price: 1250000,
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/atv-rafting-combo`,
+          },
+        },
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
         name: cultureCombo.name,
         url: `${SITE_URL}/book?activity=${cultureCombo.id}`,
         item: {
@@ -106,7 +133,7 @@ export default async function BookPage({ searchParams }: Props) {
       },
       {
         "@type": "ListItem",
-        position: 2,
+        position: 3,
         name: swingCookingCombo.name,
         url: `${SITE_URL}/book?activity=${swingCookingCombo.id}`,
         item: {
@@ -124,7 +151,7 @@ export default async function BookPage({ searchParams }: Props) {
       },
       ...ADVENTURES.map((adv, index) => ({
         "@type": "ListItem",
-        position: index + 3,
+        position: index + 4,
         name: adv.name,
         url: `${SITE_URL}/book?activity=${adv.id}`,
         item: {
@@ -143,7 +170,7 @@ export default async function BookPage({ searchParams }: Props) {
       })),
       {
         "@type": "ListItem",
-        position: ADVENTURES.length + 3,
+        position: ADVENTURES.length + 4,
         name: COOKING_CLASS_SALES.name,
         url: `${SITE_URL}/book?activity=${COOKING_CLASS_SALES.id}`,
         item: {
@@ -162,7 +189,7 @@ export default async function BookPage({ searchParams }: Props) {
       },
       {
         "@type": "ListItem",
-        position: ADVENTURES.length + 4,
+        position: ADVENTURES.length + 5,
         name: MELUKAT_SALES.name,
         url: `${SITE_URL}/book?activity=${MELUKAT_SALES.id}`,
         item: {
@@ -181,7 +208,7 @@ export default async function BookPage({ searchParams }: Props) {
       },
       {
         "@type": "ListItem",
-        position: ADVENTURES.length + 5,
+        position: ADVENTURES.length + 6,
         name: GRIYA_BEJI_SALES.name,
         url: `${SITE_URL}/book?activity=${GRIYA_BEJI_SALES.id}`,
         item: {
@@ -231,8 +258,9 @@ export default async function BookPage({ searchParams }: Props) {
           </h1>
           <p className="text-base md:text-lg text-brand-green-light leading-relaxed">
             Pick the activity you already chose on a tour page, then send guest count, date,
-            pickup, and the IDR total in one WhatsApp thread. Combos sit here so you do not
-            open two chats. Starting from {formatIdr(minAdventurePrice)}.
+            pickup, and the IDR total in one WhatsApp thread. Flagship mix: ATV + Ayung
+            rafting from IDR 1,250,000. Combos sit here so you do not open two chats.
+            Starting from {formatIdr(minAdventurePrice)}.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <a
@@ -264,7 +292,9 @@ export default async function BookPage({ searchParams }: Props) {
               (link.id === cultureCombo.id && highlightCultureCombo) ||
               (link.id === swingCookingCombo.id && highlightSwingCookingCombo) ||
               (link.id === MELUKAT_SALES.id && highlightMelukat) ||
-              (link.id === GRIYA_BEJI_SALES.id && highlightGriya)
+              (link.id === GRIYA_BEJI_SALES.id && highlightGriya) ||
+              (link.id === ATV_RAFTING_COMBO_ID && highlightAtvRafting) ||
+              (highlightComboId != null && link.id === highlightComboId)
             return (
               <a
                 key={link.id}
@@ -288,6 +318,7 @@ export default async function BookPage({ searchParams }: Props) {
           highlightSwingCookingCombo={highlightSwingCookingCombo}
           highlightMelukat={highlightMelukat}
           highlightGriya={highlightGriya}
+          highlightComboId={highlightComboId}
         />
 
         <AntiScamSection compact />
@@ -295,9 +326,9 @@ export default async function BookPage({ searchParams }: Props) {
         <section className="mt-16 md:mt-20 rounded-3xl bg-brand-green text-sand p-8 md:p-12 text-center space-y-4">
           <h2 className="font-display text-2xl md:text-3xl font-bold">Not sure which activity?</h2>
           <p className="text-sand/80 max-w-xl mx-auto text-sm md:text-base leading-relaxed">
-            Message us with your dates, hotel, and group size — we&apos;ll recommend ATV, rafting,
-            tubing, cycling, cooking, Tirta Empu melukat, Griya Beji waterfall, or a combo that fits
-            your day.
+            Message us with your dates, hotel, and group size — we&apos;ll recommend the flagship
+            ATV + rafting day, tubing, cycling, cooking, Tirta Empu melukat, Griya Beji waterfall,
+            or a combo that fits your day.
           </p>
           <a
             href={CONTACT_WHATSAPP_URL}

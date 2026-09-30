@@ -31,6 +31,7 @@ export const MOTORBIKE_IDP_ARTICLE_SLUG = "bali-motorbike-tour-idp-license-2026"
 export const MOTORBIKE_COAST_ARTICLE_SLUG = "east-south-bali-motorbike-tour-2026"
 export const MOTORBIKE_VS_JEEP_ARTICLE_SLUG = "kintamani-scooter-vs-batur-jeep-2026"
 export const ATV_VS_KUBER_ARTICLE_SLUG = "bali-atv-vs-kuber-cave-2026"
+export const ATV_VS_UTV_ARTICLE_SLUG = "bali-atv-vs-utv-buggy-2026"
 export const WHEELS_CHOOSER_ARTICLE_SLUG = "which-bali-wheels-2026"
 
 /** Flat shuttle upsell — Canggu, Jimbaran, or Nusa Dua only. Not the IDR 400K adventure surcharge. */

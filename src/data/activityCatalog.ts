@@ -5,6 +5,7 @@
  */
 
 import { FEATURED_COMBOS, getComboListPrice } from "@/lib/combos"
+import { ATV_RAFTING_COMBO_ID, getAtvRaftingComboOffer } from "@/data/atvRaftingCombo"
 import { getCyclingCookingCombo, getSwingCookingCombo } from "@/data/cultureSales"
 import {
   TOURS,
@@ -38,7 +39,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "adventure",
     label: TOUR_CATEGORY_LABELS.adventure,
-    blurb: "Private muddy sport ATV, UTV buggy, river rafting, canyon tubing, jungle swings, canyoning, dirt bike & a private Mount Batur jeep",
+    blurb: "Flagship ATV + Ayung rafting from 1.25M · Sedang ATV · UTV · tubing · swings · canyoning · dirt bike · private Batur jeep",
     href: "/#adventure",
   },
   {
@@ -69,11 +70,13 @@ export type PackageCard = {
 export function getCatalogTopPicks(): Tour[] {
   const picks = getTopPickTours()
   const priority = [
+    'atv-rafting-combo',
+    'bali-atv-adventure',
+    'whitewater-rafting',
     'batur-sunrise-jeep-tour',
     'balinese-cooking-class',
     'tirta-empu-purification',
     'ubud-ricefield-cycling-tour',
-    'bali-atv-adventure',
   ]
   const ranked = [...picks].sort((a, b) => {
     const ai = priority.indexOf(a.slug)
@@ -110,16 +113,20 @@ export function getFeaturedPackages(): PackageCard[] {
     kind: 'culture',
   }
 
-  const comboCards: PackageCard[] = FEATURED_COMBOS.slice(0, 3).map((combo) => ({
-    id: combo.id,
-    name: combo.name,
-    tagline: combo.tagline,
-    description: combo.description,
-    duration: combo.duration,
-    priceFrom: getComboListPrice(combo),
-    href: `/book?combo=${combo.id}`,
-    kind: 'combo' as const,
-  }))
+  const comboCards: PackageCard[] = FEATURED_COMBOS.filter(
+    (combo) => combo.id !== ATV_RAFTING_COMBO_ID,
+  )
+    .slice(0, 2)
+    .map((combo) => ({
+      id: combo.id,
+      name: combo.name,
+      tagline: combo.tagline,
+      description: combo.description,
+      duration: combo.duration,
+      priceFrom: getComboListPrice(combo),
+      href: `/book?combo=${combo.id}`,
+      kind: 'combo' as const,
+    }))
 
   const dayTours = getToursByCategory('day-tour').map((tour) => ({
     id: tour.id,
@@ -143,8 +150,20 @@ export function getFeaturedPackages(): PackageCard[] {
     kind: 'tour' as const,
   }))
 
-  // Lead with culture-day combos for SEO/commercial priority
-  return [cultureCard, swingCookingCard, ...cultureTours, ...comboCards, ...dayTours]
+  const atvRafting = getAtvRaftingComboOffer()
+  const atvRaftingCard: PackageCard = {
+    id: atvRafting.id,
+    name: atvRafting.name,
+    tagline: atvRafting.tagline,
+    description: atvRafting.description,
+    duration: atvRafting.duration,
+    priceFrom: atvRafting.listFromIdr,
+    href: atvRafting.tourHref,
+    kind: 'combo',
+  }
+
+  // Lead with ATV + rafting, then culture-day combos
+  return [atvRaftingCard, cultureCard, swingCookingCard, ...cultureTours, ...comboCards, ...dayTours]
 }
 
 export function getCatalogSection(category: TourCategoryId): Tour[] {
@@ -153,8 +172,8 @@ export function getCatalogSection(category: TourCategoryId): Tour[] {
 
 export const WHY_SEKAR = [
   {
-    title: "Culture days worth booking first",
-    desc: "Tumang cooking class and Pejeng ricefield cycling with free Ubud pickup — or Swing Heaven + cooking — plus ATV, coffee, and private day tours when you want more.",
+    title: "ATV + rafting is the adventure day to book first",
+    desc: "Sedang mud then Ayung Class II–III from IDR 1,250,000 at ticket floors, 10% mix at checkout. Culture days (cooking + cycling) stay next to it — one WhatsApp inbox.",
   },
   {
     title: "Clear IDR before you message",

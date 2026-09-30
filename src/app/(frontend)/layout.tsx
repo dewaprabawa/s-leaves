@@ -108,6 +108,7 @@ const footerLinks = {
     { label: "Ubud Ricefield Cycling", href: "/tours/ubud-ricefield-cycling-tour" },
     { label: "Cycling + Cooking Combo", href: "/book?activity=combo-cycling-cooking" },
     { label: "Swing Heaven + Cooking", href: "/book?activity=combo-swing-cooking" },
+    { label: "ATV + Ayung Rafting", href: "/tours/atv-rafting-combo" },
     { label: "ATV Rides", href: "/tours/bali-atv-adventure" },
     { label: "UTV at Bali Buggy Adventures", href: "/tours/utv-buggy-bali-adventure" },
     { label: "Bali Motorbike Tour", href: "/tours/bali-motorbike-traveling-trip" },

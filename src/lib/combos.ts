@@ -87,26 +87,26 @@ export type FeaturedCombo = {
 
 export const FEATURED_COMBOS: FeaturedCombo[] = [
   {
-    id: 'combo-atv-tubing',
-    name: 'ATV + Canyon Tubing',
-    tagline: 'Land & river classic',
-    description:
-      'Race jungle ATV trails at All New Bali Adventure, then float the Wos River on a tube. Our most popular same-day mix.',
-    primaryId: 'single-atv',
-    mixIds: ['canyon-tubing'],
-    image: '/images/adventures/atv-adventure.jpg',
-    duration: 'Half day',
-  },
-  {
     id: 'combo-atv-rafting',
     name: 'ATV + Rafting',
-    tagline: 'Mud then rapids',
+    tagline: 'Flagship land + water day',
     description:
-      'ATV jungle ride plus whitewater rafting — maximum thrills on land and river in one booking.',
+      'Sedang ATV then Ayung Class II–III rafting. From IDR 1,250,000 at list (750K + 500K). 10% mix at checkout. Pickup IDR 400,000 once or self-meet.',
     primaryId: 'single-atv',
     mixIds: ['rafting'],
     image: '/images/adventures/rafting.jpg',
     duration: 'Full day feel',
+  },
+  {
+    id: 'combo-atv-tubing',
+    name: 'ATV + Canyon Tubing',
+    tagline: 'Gentler river add-on',
+    description:
+      'Race jungle ATV trails at All New Bali Adventure, then float the Wos River on a tube. Softer water than rafting.',
+    primaryId: 'single-atv',
+    mixIds: ['canyon-tubing'],
+    image: '/images/adventures/atv-adventure.jpg',
+    duration: 'Half day',
   },
   {
     id: 'combo-atv-tubing-rafting',

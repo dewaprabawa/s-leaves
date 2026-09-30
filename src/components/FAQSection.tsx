@@ -113,7 +113,7 @@ const faqs = [
   },
   {
     question: "Can I mix activities like ATV + tubing or ATV + rafting?",
-    answer: "Yes. In the booking form you can mix ATV with canyon tubing or whitewater rafting into a same-day combo. Two activities save 10%; three or more save 12% versus booking separately. Popular mixes: ATV + tubing, ATV + rafting, and ATV + tubing + rafting. Tubing + rafting alone is not offered as a package.",
+    answer: "Yes. The flagship same-day is ATV + Ayung rafting from IDR 1,250,000 at ticket floors, with 10% mix at checkout — book /tours/atv-rafting-combo. ATV + Wos tubing is the gentler add-on. Two activities save 10%; three or more save 12%. Tubing + rafting alone is not offered as a package.",
   },
   {
     question: "Are group discounts available?",

@@ -20,6 +20,7 @@ const MONEY_TOUR_SLUGS = new Set([
   'swing-heaven-bali',
   'ubud-ricefield-cycling-tour',
   'bali-atv-adventure',
+  'atv-rafting-combo',
   'whitewater-rafting',
   'canyon-tubing',
   'bali-private-itinerary',
@@ -42,6 +43,7 @@ const HIGH_BLOG_SLUGS = new Set([
   'cooking-class-ubud-price-2026-worth-it',
   'ubud-ricefield-cycling-tour-guide-2026',
   'how-much-does-atv-cost-bali-ubud-2026',
+  'atv-rafting-combo-ubud-2026',
   'bali-whitewater-rafting-near-ubud-guide',
   'rafting-ubud-price-2026',
   'bali-canyon-tubing-guide-ubud',
@@ -77,6 +79,7 @@ const HIGH_BLOG_SLUGS = new Set([
   'east-south-bali-motorbike-tour-2026',
   'kintamani-scooter-vs-batur-jeep-2026',
   'bali-atv-vs-kuber-cave-2026',
+  'bali-atv-vs-utv-buggy-2026',
   'which-bali-wheels-2026',
 ])
 
@@ -99,6 +102,7 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'private-kintamani-day-jeep-itinerary': JEEP_GEO_UPDATED,
   'cooking-class-ubud-price-2026-worth-it': COOKING_GEO_UPDATED,
   'how-much-does-atv-cost-bali-ubud-2026': ACTIVITY_GEO_UPDATED,
+  'atv-rafting-combo-ubud-2026': ACTIVITY_GEO_UPDATED,
   'ubud-ricefield-cycling-tour-guide-2026': ACTIVITY_GEO_UPDATED,
   'bali-whitewater-rafting-near-ubud-guide': ACTIVITY_GEO_UPDATED,
   'rafting-ubud-price-2026': ACTIVITY_GEO_UPDATED,
@@ -129,6 +133,7 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'east-south-bali-motorbike-tour-2026': ACTIVITY_GEO_UPDATED,
   'kintamani-scooter-vs-batur-jeep-2026': ACTIVITY_GEO_UPDATED,
   'bali-atv-vs-kuber-cave-2026': ACTIVITY_GEO_UPDATED,
+  'bali-atv-vs-utv-buggy-2026': ACTIVITY_GEO_UPDATED,
   'which-bali-wheels-2026': ACTIVITY_GEO_UPDATED,
 }
 

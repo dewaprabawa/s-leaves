@@ -10,7 +10,54 @@ export type TourRelatedGuide = {
 }
 
 export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
+  'atv-rafting-combo': [
+    {
+      title: 'ATV + rafting Ubud 2026',
+      href: '/blog/atv-rafting-combo-ubud-2026',
+      blurb: 'From 1.25M · 10% mix · couple math · WhatsApp.',
+    },
+    {
+      title: 'ATV cost near Ubud (2026)',
+      href: '/blog/how-much-does-atv-cost-bali-ubud-2026',
+      blurb: 'Single & tandem IDR tiers before you add the river.',
+    },
+    {
+      title: 'Ayung rafting Ubud price 2026',
+      href: '/blog/rafting-ubud-price-2026',
+      blurb: '500K · 450K for 2+ · lunch in · pickup extra.',
+    },
+    {
+      title: 'Rafting vs tubing vs ATV',
+      href: '/blog/rafting-vs-tubing-vs-atv-near-ubud',
+      blurb: 'Pick splash, float, or mud — then stack the day.',
+    },
+    {
+      title: 'ATV + Wos tubing (gentler)',
+      href: '/blog/atv-river-tubing-wos-river-bali',
+      blurb: 'Same land start, sit-on-tube instead of a paddle team.',
+    },
+    {
+      title: 'ATV vs UTV buggy',
+      href: '/blog/bali-atv-vs-utv-buggy-2026',
+      blurb: 'Sedang sit-on vs Pemogan sit-in — not this combo.',
+    },
+    {
+      title: 'Sedang ATV only',
+      href: '/tours/bali-atv-adventure',
+      blurb: 'Book the quad without the river.',
+    },
+    {
+      title: 'Ayung rafting only',
+      href: '/tours/whitewater-rafting',
+      blurb: 'Class II–III without the morning mud.',
+    },
+  ],
   'bali-atv-adventure': [
+    {
+      title: 'ATV + rafting combo (flagship)',
+      href: '/blog/atv-rafting-combo-ubud-2026',
+      blurb: 'Mud then Ayung Class II–III from 1.25M · 10% mix.',
+    },
     {
       title: 'Things to do near Ubud 2026',
       href: '/blog/things-to-do-near-ubud-2026',
@@ -57,6 +104,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Public-road day from 450K versus this jungle-mud morning.',
     },
     {
+      title: 'ATV vs UTV buggy',
+      href: '/blog/bali-atv-vs-utv-buggy-2026',
+      blurb: 'Sedang sit-on quad from 750K versus Pemogan sit-in hour from 1.2M.',
+    },
+    {
       title: 'Which Bali wheels',
       href: '/blog/which-bali-wheels-2026',
       blurb: 'ATV next to scooter, UTV, dirt bike, and jeep.',
@@ -73,6 +125,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'whitewater-rafting': [
+    {
+      title: 'ATV + rafting combo (flagship)',
+      href: '/blog/atv-rafting-combo-ubud-2026',
+      blurb: 'Sedang mud then this river from 1.25M · 10% mix.',
+    },
     {
       title: 'Ayung rafting Ubud price 2026',
       href: '/blog/rafting-ubud-price-2026',
@@ -565,6 +622,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'UTV at Bali Buggy Adventures', href: '/tours/utv-buggy-bali-adventure', blurb: 'Land sit-in UTV if you want engines, not ropes.' },
   ],
   'utv-buggy-bali-adventure': [
+    { title: 'ATV vs UTV buggy', href: '/blog/bali-atv-vs-utv-buggy-2026', blurb: 'Sit-on Sedang quad vs this sit-in Pemogan hour.' },
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026', blurb: 'UTV is the 1-hour Pemogan row — not Sedang ATV.' },
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'UTV is a 1-hour sit-in buggy — not Sedang ATV.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Quad-bike jungle mud from IDR 750K — a different machine.' },
@@ -647,9 +705,13 @@ export const TOUR_HOST_NOTES: Record<
   string,
   { title: string; body: string }
 > = {
+  'atv-rafting-combo': {
+    title: 'From our Sedang + Ayung hosts',
+    body: 'This is the day we sell first when guests want dirt photos and a paddle team. ATV briefing is at All New Bali Adventure in Sedang; the raft is Class II–III on the Ayung with English crew, lunch on both tickets, and one IDR 400,000 pickup if you want a hotel collect. We will not invent a 999K bundle sticker — WhatsApp confirms the two lines plus the 10% mix.',
+  },
   'bali-atv-adventure': {
     title: 'From our Sedang arena hosts',
-    body: 'Our crew briefs every rider at All New Bali Adventure on Jl. Raya Krasan, Sedang (Abiansemal) — gear fit, trail rules, and English safety instructions before you hit the mud. We run beginner-friendly single and tandem sessions daily and can add Wos River tubing the same afternoon when water levels allow.',
+    body: 'Our crew briefs every rider at All New Bali Adventure on Jl. Raya Krasan, Sedang (Abiansemal) — gear fit, trail rules, and English safety instructions before you hit the mud. We run beginner-friendly single and tandem sessions daily. The flagship same-day add-on is Ayung rafting; Wos River tubing is the gentler afternoon when water levels allow.',
   },
   'ubud-ricefield-cycling-tour': {
     title: 'From our Pejeng cycling hosts',

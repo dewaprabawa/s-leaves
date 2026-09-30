@@ -21,6 +21,7 @@ export const BRAND_KEYWORD = 'Sekar Bali Activity'
 
 export type ActivityKeywordSlug =
   | 'bali-atv-adventure'
+  | 'atv-rafting-combo'
   | 'whitewater-rafting'
   | 'canyon-tubing'
   | 'ubud-ricefield-cycling-tour'
@@ -81,6 +82,25 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'single vs tandem ATV Ubud',
       'All New Bali Adventure vs Kuber',
       'Kuber ATV vs Sedang ATV',
+      'ATV vs UTV Bali',
+    ],
+  },
+  'atv-rafting-combo': {
+    head: [
+      'ATV rafting combo Bali',
+      'ATV + rafting Ubud',
+      'ATV and rafting package Bali',
+    ],
+    book: [
+      'ATV rafting combo Ubud price',
+      'book ATV and rafting Ubud',
+      'ATV Ayung rafting combo 2026',
+      'land and water Bali adventure',
+      'ATV rafting with lunch Ubud',
+    ],
+    compare: [
+      'ATV rafting vs ATV tubing',
+      'ATV + rafting vs booking separate',
     ],
   },
   'whitewater-rafting': {
@@ -394,6 +414,7 @@ function flattenCluster(cluster: KeywordCluster): string[] {
 
 export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'bali-atv-adventure': flattenCluster(KEYWORD_CLUSTERS['bali-atv-adventure']),
+  'atv-rafting-combo': flattenCluster(KEYWORD_CLUSTERS['atv-rafting-combo']),
   'whitewater-rafting': flattenCluster(KEYWORD_CLUSTERS['whitewater-rafting']),
   'canyon-tubing': flattenCluster(KEYWORD_CLUSTERS['canyon-tubing']),
   'ubud-ricefield-cycling-tour': flattenCluster(KEYWORD_CLUSTERS['ubud-ricefield-cycling-tour']),
@@ -452,6 +473,7 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
   'balinese-cooking-class',
   'ubud-ricefield-cycling-tour',
   'bali-atv-adventure',
+  'atv-rafting-combo',
   'whitewater-rafting',
   'canyon-tubing',
   'batur-sunrise-jeep-tour',
@@ -509,6 +531,8 @@ export const BOOK_PAGE_KEYWORDS: string[] = uniqueKeywords([
   'book Bali adventure WhatsApp',
   'WhatsApp checkout Ubud',
   'ATV river tubing combo',
+  'ATV rafting combo Bali',
+  'book ATV and rafting Ubud',
   'cycling cooking class Ubud',
   'jungle swing and cooking class Ubud',
   'Swing Heaven cooking class Ubud',
@@ -693,6 +717,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'bali-atv-all-new-bali-adventure-location-guide': 'bali-atv-adventure',
   'ubud-atv-track-types-mud-jungle-vs-cave-tunnel': 'bali-atv-adventure',
   'atv-river-tubing-wos-river-bali': ['bali-atv-adventure', 'canyon-tubing'],
+  'atv-rafting-combo-ubud-2026': ['atv-rafting-combo', 'bali-atv-adventure', 'whitewater-rafting'],
   'bali-whitewater-rafting-near-ubud-guide': 'whitewater-rafting',
   'rafting-ubud-price-2026': 'whitewater-rafting',
   'bali-canyon-tubing-guide-ubud': 'canyon-tubing',
@@ -719,6 +744,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'east-south-bali-motorbike-tour-2026': 'bali-motorbike-traveling-trip',
   'kintamani-scooter-vs-batur-jeep-2026': ['bali-motorbike-traveling-trip', 'batur-sunrise-jeep-tour'],
   'bali-atv-vs-kuber-cave-2026': 'bali-atv-adventure',
+  'bali-atv-vs-utv-buggy-2026': 'bali-atv-adventure',
   'which-bali-wheels-2026': 'site',
   'bali-6-day-girls-trip-itinerary-2026': 'bali-private-itinerary',
   'bali-family-private-itinerary-2026': 'bali-private-itinerary',
@@ -941,6 +967,17 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'All New Bali Adventure vs Kuber',
     'Kuber ATV vs Sedang ATV',
     'Kuber cave ATV alternative',
+  ],
+  'bali-atv-vs-utv-buggy-2026': [
+    'ATV vs UTV Bali',
+    'ATV vs UTV Ubud',
+    'quad bike vs UTV buggy Bali',
+    'Sedang ATV vs Pemogan UTV',
+  ],
+  'atv-rafting-combo-ubud-2026': [
+    'ATV rafting combo Ubud price',
+    'ATV + rafting package Bali',
+    'book ATV and rafting same day',
   ],
   'which-bali-wheels-2026': [
     'which Bali activity to book',

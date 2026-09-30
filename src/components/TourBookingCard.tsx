@@ -75,6 +75,13 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       tierLabel: undefined,
     }
   }
+  if (tourSlug === "atv-rafting-combo") {
+    return {
+      promoPrice: fallbackBase,
+      standardPrice: fallbackBase,
+      tierLabel: "Ticket floors · 10% mix at checkout",
+    }
+  }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
   if (tourSlug === GIRLS_TRIP_SLUG) {
     return {
@@ -127,6 +134,8 @@ function primaryBookLabel(tourSlug: string): string {
       return "Book Cooking Class"
     case "bali-atv-adventure":
       return "Book ATV Ride"
+    case "atv-rafting-combo":
+      return "Book ATV + Rafting"
     case "ubud-ricefield-cycling-tour":
       return "Book Cycling Tour"
     case "whitewater-rafting":
@@ -244,7 +253,9 @@ export default function TourBookingCard(props: TourBookingCardProps) {
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
       : props.tourSlug === "bali-atv-adventure"
         ? `${props.title} — single from ${formatIdr(props.basePrice)}`
-        : props.title
+        : props.tourSlug === "atv-rafting-combo"
+          ? `${props.title} — from ${formatIdr(props.basePrice)} (ATV 750K + rafting 500K · 10% mix)`
+          : props.title
   const consultationUrl =
     props.tourSlug === GIRLS_TRIP_SLUG
       ? buildGirlsTripWhatsAppUrl()

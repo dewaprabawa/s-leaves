@@ -35,6 +35,7 @@ type Props = {
   highlightSwingCookingCombo?: boolean
   highlightMelukat?: boolean
   highlightGriya?: boolean
+  highlightComboId?: string
 }
 
 export default function BookSalesCheckout({
@@ -44,6 +45,7 @@ export default function BookSalesCheckout({
   highlightSwingCookingCombo = false,
   highlightMelukat = false,
   highlightGriya = false,
+  highlightComboId,
 }: Props) {
   const highlighted = initialActivityId
     ? ADVENTURES.find((a) => a.id === initialActivityId)?.id
@@ -74,18 +76,23 @@ export default function BookSalesCheckout({
             Popular activity combos
           </h2>
           <p className="text-sm text-brand-green-light mt-2 max-w-2xl">
-            Mix ATV with canyon tubing and/or rafting in one day. Combos save 10% for two activities or
-            12% for three+. Prefer culture? See cycling + cooking or swing + cooking below.
+            Flagship mix: ATV + Ayung rafting. Combos save 10% for two activities or 12% for three+.
+            Gentler water is ATV + Wos tubing. Prefer culture? See cycling + cooking or swing + cooking
+            below.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {FEATURED_COMBOS.map((combo) => {
             const price = getComboListPrice(combo)
             const compareAt = getComboCompareAtPrice(combo)
+            const isHighlighted = highlightComboId === combo.id
             return (
               <article
+                id={combo.id}
                 key={combo.id}
-                className="rounded-2xl border border-brand-green/10 bg-white p-5 md:p-6 flex flex-col gap-4 shadow-sm"
+                className={`scroll-mt-36 rounded-2xl border border-brand-green/10 bg-white p-5 md:p-6 flex flex-col gap-4 shadow-sm ${
+                  isHighlighted ? "ring-2 ring-accent-gold/60" : ""
+                }`}
               >
                 <div>
                   <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-1">
@@ -96,6 +103,14 @@ export default function BookSalesCheckout({
                     {combo.description}
                   </p>
                   <p className="text-xs text-brand-green-light mt-2">{combo.duration}</p>
+                  {combo.id === "combo-atv-rafting" ? (
+                    <Link
+                      href="/tours/atv-rafting-combo"
+                      className="inline-flex items-center gap-1 text-sm font-semibold text-brand-green hover:text-brand-green-light transition-colors mt-3"
+                    >
+                      Flagship sales page <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  ) : null}
                 </div>
                 <div className="mt-auto flex items-end justify-between gap-3">
                   <div>

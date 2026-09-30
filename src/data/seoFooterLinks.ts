@@ -86,6 +86,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'East & South scooter days', href: '/blog/east-south-bali-motorbike-tour-2026' },
   { label: 'Kintamani scooter vs jeep', href: '/blog/kintamani-scooter-vs-batur-jeep-2026' },
   { label: 'ATV vs Kuber cave', href: '/blog/bali-atv-vs-kuber-cave-2026' },
+  { label: 'ATV vs UTV buggy', href: '/blog/bali-atv-vs-utv-buggy-2026' },
   { label: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026' },
   { label: 'Free Bali planners', href: '/planners' },
   { label: 'ATV price calculator', href: '/planners/atv-price-calculator' },

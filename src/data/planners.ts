@@ -85,6 +85,11 @@ export const PLANNERS: Planner[] = [
         answer:
           'No. We sell Sedang mud ATV at All New Bali Adventure. We do not sell Kuber’s Payangan cave track.',
       },
+      {
+        question: 'Is a UTV the same as the Ubud ATV?',
+        answer:
+          'No. Sedang ATV is a sit-on quad from IDR 750,000. Pemogan UTV is a sit-in hour from IDR 1,200,000. Full table: ATV vs UTV 2026.',
+      },
     ],
   },
   {

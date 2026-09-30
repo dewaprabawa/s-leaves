@@ -81,6 +81,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'single vs tandem ATV Ubud',
       'All New Bali Adventure vs Kuber',
       'Kuber ATV vs Sedang ATV',
+      'ATV vs UTV Bali',
     ],
   },
   'whitewater-rafting': {
@@ -719,6 +720,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'east-south-bali-motorbike-tour-2026': 'bali-motorbike-traveling-trip',
   'kintamani-scooter-vs-batur-jeep-2026': ['bali-motorbike-traveling-trip', 'batur-sunrise-jeep-tour'],
   'bali-atv-vs-kuber-cave-2026': 'bali-atv-adventure',
+  'bali-atv-vs-utv-buggy-2026': ['bali-atv-adventure', 'utv-buggy-bali-adventure'],
   'which-bali-wheels-2026': 'site',
   'bali-6-day-girls-trip-itinerary-2026': 'bali-private-itinerary',
   'bali-family-private-itinerary-2026': 'bali-private-itinerary',
@@ -941,6 +943,12 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'All New Bali Adventure vs Kuber',
     'Kuber ATV vs Sedang ATV',
     'Kuber cave ATV alternative',
+  ],
+  'bali-atv-vs-utv-buggy-2026': [
+    'ATV vs UTV Bali',
+    'ATV vs UTV Ubud',
+    'quad bike vs UTV buggy Bali',
+    'Sedang ATV vs Pemogan UTV',
   ],
   'which-bali-wheels-2026': [
     'which Bali activity to book',

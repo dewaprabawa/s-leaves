@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v2.18
-**Last updated:** 2026-09-29
+**Document version:** v2.19
+**Last updated:** 2026-09-30
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — adventure, village, food, and day tours with clear IDR pricing and WhatsApp booking.
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.19 (2026-09-30) — Dedicated ATV vs UTV compare: Sedang sit-on quad from IDR 750,000 (2–4 hours) versus Pemogan sit-in hour at Bali Buggy Adventures (1.2M / 1.5M). UTV Crocodile Cave is a water-gate, not Kuber’s 400 m cave.
 - v2.18 (2026-09-29) — Removed **Jungle Buggies — Complete 3 Laps** (old `/tours/jungle-buggies-complete-3-laps-tour` redirects to the Pemogan UTV). Sit-in buggy demand stays on **UTV at Bali Buggy Adventures**.
 - v2.17 (2026-09-29) — Motorbike promo: Kintamani **IDR 650,000** (was 750,000 list) and South Bali **IDR 750,000** (was 850,000 list). Ubud 450K / waterfall 500K / North 750K / East 800K unchanged.
 - v2.16 (2026-09-29) — Public `/planners` hub (not blocked `/tools/`) adapts Letaido’s free-tool directory: unique URLs for ATV / jeep / scooter / cooking calculators, a pickup checker, and a mood chooser. Do not clone AI SEO tools onto the tour site.

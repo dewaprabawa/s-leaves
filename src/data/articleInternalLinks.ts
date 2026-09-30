@@ -65,6 +65,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'All New Bali Adventure location', href: '/blog/bali-atv-all-new-bali-adventure-location-guide' },
     { title: 'Mud track vs cave/tunnel', href: '/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel' },
     { title: 'ATV vs Kuber cave', href: '/blog/bali-atv-vs-kuber-cave-2026' },
+    { title: 'ATV vs UTV buggy', href: '/blog/bali-atv-vs-utv-buggy-2026' },
     { title: 'Scooter tour vs ATV', href: '/blog/bali-scooter-tour-vs-atv-2026' },
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026' },
     { title: 'ATV + tubing combo', href: '/blog/atv-river-tubing-wos-river-bali' },
@@ -162,6 +163,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   ],
   canyonBuggy: [
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies' },
+    { title: 'ATV vs UTV buggy', href: '/blog/bali-atv-vs-utv-buggy-2026' },
     { title: 'Book Bali canyoning', href: '/tours/canyoning' },
     { title: 'Book UTV buggy', href: '/tours/utv-buggy-bali-adventure' },
     { title: 'Wos River canyon tubing', href: '/blog/bali-canyon-tubing-guide-ubud' },
@@ -263,6 +265,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'east-south-bali-motorbike-tour-2026': 'motorbike',
   'kintamani-scooter-vs-batur-jeep-2026': 'motorbike',
   'bali-atv-vs-kuber-cave-2026': 'atv',
+  'bali-atv-vs-utv-buggy-2026': 'atv',
   'which-bali-wheels-2026': 'site',
   'bali-6-day-girls-trip-itinerary-2026': 'girlsTrip',
   'bali-family-private-itinerary-2026': 'girlsTrip',
@@ -309,6 +312,7 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
   atv: [
     { title: 'Ayung River rafting', href: '/tours/whitewater-rafting' },
     { title: 'Wos River tubing', href: '/tours/canyon-tubing' },
+    { title: 'Pemogan UTV (sit-in hour)', href: '/tours/utv-buggy-bali-adventure' },
     { title: 'Swing Heaven in the same district', href: '/tours/swing-heaven-bali' },
     { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
     HUB,

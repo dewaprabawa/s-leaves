@@ -204,6 +204,7 @@ Want even more adventure? Pair your ATV ride with river tubing on the Wos River,
 - [Single vs tandem ATV](/blog/tandem-atv-ubud-price) — who should share, two-single vs one-bike math
 - [All New Bali Adventure arena](/blog/bali-atv-all-new-bali-adventure-location-guide) — self-meet in Sedang vs hotel pickup IDR 400,000
 - [Jungle mud vs cave/tunnel tracks](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) — we are not Kuber or Dragon Cave
+- [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026) — Sedang sit-on quad vs Pemogan sit-in hour
 - [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali) — land-then-water combo (ask WhatsApp for timing)
 - [Private vs mass-market ATV](/blog/private-atv-vs-mass-market-ubud)
 - [Swing Heaven Bongkasa](/tours/swing-heaven-bali) — same Abiansemal district, jungle-swing photos after the mud track
@@ -2609,7 +2610,7 @@ Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, a
 
 **Track / self-meet:** ${UTV_BUGGY_ADDRESS}. [Open in Maps](${UTV_BUGGY_MAP_URL}). Hotel pickup is **quoted** — do not assume it is in the from-price.
 
-This is **not** [Sedang ATV](/tours/bali-atv-adventure) at All New Bali Adventure.
+This is **not** [Sedang ATV](/tours/bali-atv-adventure) at All New Bali Adventure. Side-by-side: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026).
 
 ### 2026 prices
 | Rig | Price | Who |
@@ -2711,7 +2712,7 @@ WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
         id: "faq-utv-4",
         question: "Is this the same as your Ubud ATV?",
         answer:
-          "No. ATV at All New Bali Adventure in Sedang is a quad-bike jungle-mud ticket from IDR 750,000. This is a sit-in automatic UTV at Bali Buggy Adventures in Pemogan, South Denpasar, for about 1 hour / 7 km.",
+          "No. ATV at All New Bali Adventure in Sedang is a quad-bike jungle-mud ticket from IDR 750,000. This is a sit-in automatic UTV at Bali Buggy Adventures in Pemogan, South Denpasar, for about 1 hour / 7 km. Compare: https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026",
       },
       {
         id: "faq-utv-5",

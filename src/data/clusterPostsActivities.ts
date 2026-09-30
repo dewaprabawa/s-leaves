@@ -59,7 +59,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 ## Adventure (mud, river, sunrise)
 
-**[ATV at All New Bali Adventure](/tours/bali-atv-adventure)** is the Sedang jungle mud track — beginner briefing, lunch, gear, insurance. Single from **IDR 750,000**, tandem **IDR 1,100,000**. We are not the Kuber tunnel or Dragon Cave routes. Honest compare: [ATV vs Kuber](/blog/bali-atv-vs-kuber-cave-2026). First-timer notes: [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide). Who should share a bike: [single vs tandem ATV price](/blog/tandem-atv-ubud-price). Scooter instead: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026).
+**[ATV at All New Bali Adventure](/tours/bali-atv-adventure)** is the Sedang jungle mud track — beginner briefing, lunch, gear, insurance. Single from **IDR 750,000**, tandem **IDR 1,100,000**. We are not the Kuber tunnel or Dragon Cave routes. Honest compare: [ATV vs Kuber](/blog/bali-atv-vs-kuber-cave-2026). Sit-in south hour: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026). First-timer notes: [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide). Who should share a bike: [single vs tandem ATV price](/blog/tandem-atv-ubud-price). Scooter instead: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026).
 
 **[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) at **IDR 500,000**, or **IDR 450,000** for 2+ (minimum 2), lunch included. Pickup is **IDR 400,000** or self-meet. Price table: [Ayung rafting Ubud price 2026](/blog/rafting-ubud-price-2026). **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float at the same **IDR 500,000 / 450,000 for 2+** — lunch not included; the usual ATV add-on. Price table: [Wos River tubing price 2026](/blog/wos-river-tubing-price-2026). Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
@@ -91,7 +91,7 @@ These are **park or workshop tickets we confirm on WhatsApp** — not our Sedang
 
 **[Bali Bird Park](/tours/bali-bird-park)** in Batubulan from **IDR 585,000**. **[Bali Zoo mud fun](/tours/elephant-mud-fun-at-bali-zoo-park)** from **IDR 1,850,000**. **[Bali Safari](/tours/bali-safari-and-marine-park)** from **IDR 1,000,000** (Jungle Hopper) to **IDR 2,300,000** (Rhino). **[Taro lodge](/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge)** ride + lunch from **IDR 1,665,000**. Comparisons: [Safari packages](/blog/bali-safari-packages-compared-2026) · [Zoo vs Safari vs Taro](/blog/bali-zoo-vs-bali-safari-vs-taro) · [Bird Park from Ubud](/blog/bali-bird-park-from-ubud-2026).
 
-**[Canyoning](/tours/canyoning)** from **IDR 1,850,000** is a gorge descent — not tubing, not a boat. **[UTV Buggy Bali Adventure](/tours/utv-buggy-bali-adventure)** is a 1-hour sit-in UTV — single **IDR 1,200,000**, tandem **IDR 1,500,000**. Guide: [canyoning vs tubing vs buggies](/blog/bali-canyoning-vs-tubing-vs-buggies).
+**[Canyoning](/tours/canyoning)** from **IDR 1,850,000** is a gorge descent — not tubing, not a boat. **[UTV Buggy Bali Adventure](/tours/utv-buggy-bali-adventure)** is a 1-hour sit-in UTV — single **IDR 1,200,000**, tandem **IDR 1,500,000**. Guides: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026) · [canyoning vs tubing vs buggies](/blog/bali-canyoning-vs-tubing-vs-buggies).
 
 **[Ubud workshops](/blog/ubud-workshop-classes-2026)** — **[batik](/tours/batik-class)** and **[silver making](/tours/silver-making-class)** from **IDR 650,000** (3 hours).
 

@@ -57,6 +57,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Public-road day from 450K versus this jungle-mud morning.',
     },
     {
+      title: 'ATV vs UTV buggy',
+      href: '/blog/bali-atv-vs-utv-buggy-2026',
+      blurb: 'Sedang sit-on quad from 750K versus Pemogan sit-in hour from 1.2M.',
+    },
+    {
       title: 'Which Bali wheels',
       href: '/blog/which-bali-wheels-2026',
       blurb: 'ATV next to scooter, UTV, dirt bike, and jeep.',
@@ -565,6 +570,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'UTV at Bali Buggy Adventures', href: '/tours/utv-buggy-bali-adventure', blurb: 'Land sit-in UTV if you want engines, not ropes.' },
   ],
   'utv-buggy-bali-adventure': [
+    { title: 'ATV vs UTV buggy', href: '/blog/bali-atv-vs-utv-buggy-2026', blurb: 'Sit-on Sedang quad vs this sit-in Pemogan hour.' },
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026', blurb: 'UTV is the 1-hour Pemogan row — not Sedang ATV.' },
     { title: 'Canyoning vs tubing vs buggies', href: '/blog/bali-canyoning-vs-tubing-vs-buggies', blurb: 'UTV is a 1-hour sit-in buggy — not Sedang ATV.' },
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Quad-bike jungle mud from IDR 750K — a different machine.' },

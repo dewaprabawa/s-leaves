@@ -77,6 +77,7 @@ const HIGH_BLOG_SLUGS = new Set([
   'east-south-bali-motorbike-tour-2026',
   'kintamani-scooter-vs-batur-jeep-2026',
   'bali-atv-vs-kuber-cave-2026',
+  'bali-atv-vs-utv-buggy-2026',
   'which-bali-wheels-2026',
 ])
 
@@ -129,6 +130,7 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'east-south-bali-motorbike-tour-2026': ACTIVITY_GEO_UPDATED,
   'kintamani-scooter-vs-batur-jeep-2026': ACTIVITY_GEO_UPDATED,
   'bali-atv-vs-kuber-cave-2026': ACTIVITY_GEO_UPDATED,
+  'bali-atv-vs-utv-buggy-2026': ACTIVITY_GEO_UPDATED,
   'which-bali-wheels-2026': ACTIVITY_GEO_UPDATED,
 }
 

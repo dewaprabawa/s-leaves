@@ -147,6 +147,18 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
     }
   }
 
+  if (slug === 'bali-atv-vs-utv-buggy-2026') {
+    return {
+      tldr:
+        'Sedang ATV from IDR 750,000 is a sit-on quad at All New Bali Adventure (2–4 hours, pickup IDR 400,000 or self-meet). Pemogan UTV is a sit-in automatic at Bali Buggy Adventures: single IDR 1,200,000 / tandem 1,500,000, about 1 hour / 7 km, pickup quoted. WhatsApp — no payment to inquire.',
+      updated: ACTIVITY_GEO_UPDATED,
+      bookHref: '/tours/bali-atv-adventure',
+      bookLabel: 'Book Sedang ATV',
+      pairHref: '/tours/utv-buggy-bali-adventure',
+      pairLabel: 'Book Pemogan UTV',
+    }
+  }
+
   if (slug === 'swing-heaven-cooking-class-ubud') {
     return {
       tldr:

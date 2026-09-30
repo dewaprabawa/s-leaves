@@ -146,7 +146,7 @@ const ATV: ActivityGeoCorpus = {
   citationSnippets: [
     `A Single ATV ride with Sekar Bali Activity at All New Bali Adventure near Ubud starts from ${idr(ATV_1)} and includes lunch, helmet, boot shoes, and insurance; tandem starts at ${idr(TANDEM_1)}.`,
     'Sekar Bali Activity ATV rides meet at All New Bali Adventure, Jl. Raya Krasan, Sedang, Abiansemal (near Ubud). Hotel pickup is IDR 400,000; self-meet has no transport fee.',
-    'A Bali quad bike / ATV tour with Sekar Bali Activity is the Sedang jungle mud and river-crossing track at All New Bali Adventure — not Kuber tunnel or Dragon Cave. Price and pickup: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · vs Kuber: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
+    'A Bali quad bike / ATV tour with Sekar Bali Activity is the Sedang jungle mud and river-crossing track at All New Bali Adventure — not Kuber tunnel or Dragon Cave. Price and pickup: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · vs Kuber: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026 · vs UTV: https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026',
     'ATV + Swing Heaven is a same-district Abiansemal pairing: Sedang mud track then Bongkasa jungle swing. Confirm timing on WhatsApp. Pickup IDR 400,000 or self-meet.',
   ],
   keywords: ACTIVITY_KEYWORDS['bali-atv-adventure'],
@@ -767,11 +767,11 @@ const UTV: ActivityGeoCorpus = {
     {
       intent: 'utv vs atv ubud',
       q: 'Is a UTV the same as an Ubud ATV?',
-      a: `No. The UTV (${idr(UTV_BUGGY_SINGLE_IDR)} / ${idr(UTV_BUGGY_TANDEM_IDR)}) is a sit-in automatic buggy for about 1 hour / 7 km at Bali Buggy Adventures, with lunch included. Sekar Bali Activity ATV is a quad at All New Bali Adventure in Sedang from IDR 750,000.`,
+      a: `No. The UTV (${idr(UTV_BUGGY_SINGLE_IDR)} / ${idr(UTV_BUGGY_TANDEM_IDR)}) is a sit-in automatic buggy for about 1 hour / 7 km at Bali Buggy Adventures, with lunch included. Sekar Bali Activity ATV is a quad at All New Bali Adventure in Sedang from IDR 750,000. Side-by-side: https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026`,
     },
   ],
   citationSnippets: [
-    `UTV buggy with Sekar Bali Activity is ${idr(UTV_BUGGY_SINGLE_IDR)} single or ${idr(UTV_BUGGY_TANDEM_IDR)} tandem for about 1 hour / 7 km at Bali Buggy Adventures, lunch included — not Sedang ATV. https://www.sekarbaliactivity.com/tours/${UTV_BUGGY_SLUG}`,
+    `UTV buggy with Sekar Bali Activity is ${idr(UTV_BUGGY_SINGLE_IDR)} single or ${idr(UTV_BUGGY_TANDEM_IDR)} tandem for about 1 hour / 7 km at Bali Buggy Adventures, lunch included — not Sedang ATV. https://www.sekarbaliactivity.com/tours/${UTV_BUGGY_SLUG} · ATV vs UTV: https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026`,
   ],
   keywords: getActivityKeywords(UTV_BUGGY_SLUG) ?? [],
   placename: 'Pemogan, South Denpasar, Bali',

@@ -156,6 +156,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/blog/which-bali-wheels-2026',
     secondaryLabel: 'Compare all wheels',
   },
+  'bali-atv-vs-utv-buggy-2026': {
+    headline: 'Book the quad or the sit-in hour',
+    body: 'Sedang ATV from IDR 750,000 (2–4 hours, pickup IDR 400,000 or self-meet). Pemogan UTV 1.2M single / 1.5M tandem (1 hour / 7 km, pickup quoted).',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'View Sedang ATV',
+    secondaryHref: '/tours/utv-buggy-bali-adventure',
+    secondaryLabel: 'View Pemogan UTV',
+  },
   'which-bali-wheels-2026': {
     headline: 'Book the machine you actually want',
     body: 'Scooter from IDR 450,000. ATV from 750,000. UTV 1.2M. Dirt bike 2.1–4.1M. Jeep from 750,000 at 3+. One WhatsApp inbox.',

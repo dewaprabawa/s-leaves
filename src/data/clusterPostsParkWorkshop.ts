@@ -2,6 +2,72 @@
 
 export const PARK_WORKSHOP_CLUSTER_POSTS = [
   {
+    slug: 'bali-atv-vs-utv-buggy-2026',
+    title: 'Bali ATV vs UTV 2026: Sedang Quad or Pemogan Buggy?',
+    seoTitle: 'ATV vs UTV Bali 2026 | 750K or 1.2M',
+    excerpt:
+      'Sedang ATV from IDR 750,000 (sit-on quad, 2–4 hrs) vs Pemogan UTV 1.2M single / 1.5M tandem (sit-in, 1 hr / 7 km). Honest 2026 compare.',
+    publishedAt: '2026-09-30',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-adventure.jpg',
+    content: `
+**Should you book a Bali ATV or a UTV buggy?** They are different machines at different pins. [ATV at All New Bali Adventure](/tours/bali-atv-adventure) is a **sit-on quad** on **jungle mud and river crossings** in **Sedang, Abiansemal** — single from **IDR 750,000**, tandem **IDR 1,100,000**, **2–4 hours**, lunch included. Hotel pickup is **IDR 400,000** or free self-meet. [UTV at Bali Buggy Adventures](/tours/utv-buggy-bali-adventure) is a **sit-in automatic buggy** in **Pemogan, South Denpasar** — about **1 hour / 7 km**, single **IDR 1,200,000** (driver 17+), tandem **IDR 1,500,000** (passenger 6+), lunch included. Pickup is **quoted**. WhatsApp — **no payment to inquire**.
+
+> **Key Takeaways**
+> - **ATV:** sit-on quad · Sedang (near Ubud) · **2–4 hours** · from **750,000** · pickup **400,000** or self-meet
+> - **UTV:** sit-in automatic · Pemogan (south Denpasar) · **1 hour / 7 km** · **1,200,000** / **1,500,000** · pickup quoted
+> - Two ATV singles at the 2-rider tier: **1,450,000**. ATV tandem: **1,100,000**. Two UTV singles: **2,400,000**. UTV tandem: **1,500,000**
+> - UTV **Crocodile Cave (Goa Buaya)** is a water-gate on the 7 km line — **not** Kuber’s 400 m Payangan cave
+> - Stay in Ubud → ATV. Stay south / near DPS → UTV
+
+## Side-by-side (2026)
+
+| | [Sedang ATV](/tours/bali-atv-adventure) | [Pemogan UTV](/tours/utv-buggy-bali-adventure) |
+| --- | --- | --- |
+| From price | **750,000** / rider · tandem **1,100,000** / bike | **1,200,000** single · **1,500,000** tandem |
+| What you ride | Sit-on four-wheel **quad** | Sit-in **automatic UTV** |
+| Where | All New Bali Adventure, Sedang | Bali Buggy Adventures, Pemogan |
+| Clock | **2–4 hours** (briefing, trail, lunch) | About **1 hour** on **7 km** |
+| Lunch | Included | Fried rice or fried noodles included |
+| Pickup | **IDR 400,000** or self-meet | **Quoted** |
+| Driver age | Briefing; insurance **6–65** | Driver **17+** · passenger **6+** |
+| We operate? | Yes — Sedang arena | We book the seat |
+| Best when | Ubud stay · mud morning · river photos | South stay · one hour · sit-in cabin |
+
+Two guests who each want a throttle: two ATV singles are **IDR 1,450,000** at the 2-rider tier. Two UTV singles are **IDR 2,400,000**. Share one bike: ATV tandem **IDR 1,100,000** vs UTV tandem **IDR 1,500,000**. The ATV is the cheaper Ubud mud morning. The UTV is the shorter south-Denpasar hour.
+
+## Sit-on quad vs sit-in buggy
+
+An **ATV** is a quad you straddle. You feel every rut. Guides brief on flat ground, then you hit jungle mud and river crossings. No bike licence. First-timer notes: [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide). Single vs share: [tandem ATV price](/blog/tandem-atv-ubud-price).
+
+A **UTV** is a sit-in automatic with a steering wheel and a cabin. You drive (17+) or ride as passenger (6+). The published 7 km line is Crocodile Cave (Goa Buaya), water pits, rice fields, mud, circuit, fun speed, and jungle. That cave is a **water-gate on the track**, not a 400 m tunnel in Payangan.
+
+## Sedang vs Pemogan
+
+**Sedang** is Abiansemal — the Ubud-side arena at All New Bali Adventure. Grab from central Ubud is often cheaper than our **IDR 400,000** hotel collect if you only need a one-way drop. Pin: [All New Bali Adventure location](/blog/bali-atv-all-new-bali-adventure-location-guide).
+
+**Pemogan** is South Denpasar — closer to the airport, Sanur, and many south hotels. Pickup is **quoted**; do not assume the ATV 400,000 surcharge.
+
+Want a cave Instagram tunnel? That is **Kuber in Payangan**, which we do **not** sell. [ATV vs Kuber](/blog/bali-atv-vs-kuber-cave-2026). Want public roads? [Scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026). Full wheel table: [which Bali wheels](/blog/which-bali-wheels-2026).
+
+## Who should book which
+
+Book **Sedang ATV** when you are staying near Ubud, you want a **2–4 hour mud morning**, and lunch is on the card. Pair with [Wos River tubing](/blog/atv-river-tubing-wos-river-bali) the same day — combo IDR is a WhatsApp quote.
+
+Book **Pemogan UTV** when you want a **sit-in hour** near the south, a cabin instead of a saddle, or a driver-plus-passenger pair after a flight day.
+
+Do not book the UTV if you wanted a long jungle-quad morning near Ubud. Do not book the ATV if you wanted a 1-hour sit-in buggy by Denpasar.
+
+## How to book
+
+1. Open [Bali ATV Adventure](/tours/bali-atv-adventure) or [UTV Buggy](/tours/utv-buggy-bali-adventure)
+2. WhatsApp **ATV or UTV, date, hotel pin, guest count, ages, single or tandem**
+3. We confirm the **one** IDR line — **no deposit to ask**
+
+**Ready?** Book [Sedang ATV](/tours/bali-atv-adventure) for the quad, or [Pemogan UTV](/tours/utv-buggy-bali-adventure) for the sit-in hour.
+`,
+  },
+  {
     slug: 'bali-safari-packages-compared-2026',
     title: 'Bali Safari Packages Compared 2026: Hopper, Dragon, Leopard, Rhino',
     seoTitle: 'Bali Safari Packages 2026 | Hopper to Rhino',
@@ -134,7 +200,7 @@ You want a guided sport day and can send **age, height, weight, and shoe size**.
 
 ## When to pick tubing or ATV
 
-First-timers and families who want water without ropes: [canyon tubing](/tours/canyon-tubing). Mud photos: [ATV](/tours/bali-atv-adventure). Same-day land + water is a common WhatsApp combo.
+First-timers and families who want water without ropes: [canyon tubing](/tours/canyon-tubing). Mud photos: [ATV](/tours/bali-atv-adventure). Sit-in hour in Pemogan: [UTV](/tours/utv-buggy-bali-adventure). Dedicated machine compare: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026). Same-day land + water is a common WhatsApp combo.
 
 ## How to book
 

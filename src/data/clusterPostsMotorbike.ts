@@ -341,7 +341,7 @@ Book **Sedang ATV** when you want a **beginner mud morning**, lunch on the card,
 
 Book **Kuber directly** if the cave is the only reason you searched. We will not invent a tunnel on our tour page.
 
-Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) from **IDR 450,000**. [Scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026). Want a **south Denpasar UTV**? [Bali Buggy Adventures](/tours/utv-buggy-bali-adventure) — 1 hour / 7 km, single **IDR 1,200,000**.
+Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) from **IDR 450,000**. [Scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026). Want a **south Denpasar UTV**? [Bali Buggy Adventures](/tours/utv-buggy-bali-adventure) — 1 hour / 7 km, single **IDR 1,200,000**. Machine compare: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026).
 
 ## How to book
 
@@ -403,8 +403,9 @@ Culture days without engines: [Tumang cooking](/tours/balinese-cooking-class) pr
 | “Sunrise, no hike” | [Batur jeep](/tours/batur-sunrise-jeep-tour) |
 | “Clutch and lava” | [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 | “One hour near the airport” | [UTV](/tours/utv-buggy-bali-adventure) |
+| “ATV or UTV — which machine?” | [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026) |
 
-Spoke compares: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026) · [scooter vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026) · [Kintamani scooter vs jeep](/blog/kintamani-scooter-vs-batur-jeep-2026).
+Spoke compares: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026) · [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026) · [scooter vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026) · [Kintamani scooter vs jeep](/blog/kintamani-scooter-vs-batur-jeep-2026).
 
 ## How to book
 

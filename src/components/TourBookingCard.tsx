@@ -159,6 +159,10 @@ function primaryBookLabel(tourSlug: string): string {
   }
 }
 
+function isQuotedPickup(pickup?: string): boolean {
+  return /quoted/i.test(pickup ?? "")
+}
+
 function stickyBookLabel(tourSlug: string): string {
   const full = primaryBookLabel(tourSlug)
   if (full === "Book This Experience") return "Book"
@@ -207,6 +211,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         freeUbudPickup: props.tourSlug === "balinese-cooking-class",
         pickupIncluded: isMelukat || isMotorbike,
         pickupNotOffered: isLuwak,
+        pickupQuoted: isQuotedPickup(props.pickup),
         ...(isMotorbike
           ? {
               optionalAddons: [MOTORBIKE_SOUTH_SHUTTLE_ADDON],
@@ -237,6 +242,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       freeUbudPickup: props.tourSlug === "balinese-cooking-class",
       pickupIncluded: isPrivateDayTour || isMelukat,
       pickupNotOffered: isLuwak,
+      pickupQuoted: isQuotedPickup(props.pickup),
     },
   ]
 }

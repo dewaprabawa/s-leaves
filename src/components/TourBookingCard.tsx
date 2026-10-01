@@ -9,6 +9,7 @@ import { getListPrice, getPromoListPrice } from "@/lib/pricing"
 import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
+import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
 import { buildGirlsTripWhatsAppUrl, GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import {
   COOKING_CLASS_PRICE_IDR,
@@ -414,6 +415,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
               <span>{props.venue}</span>
             </div>
           ) : null}
+          {isAtvArenaTour(props.tourSlug) ? <AtvArenaMeetNote compact className="mt-2" /> : null}
         </div>
 
         {!isPrivateItinerary && configs.length > 1 ? (

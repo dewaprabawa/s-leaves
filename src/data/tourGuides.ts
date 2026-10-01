@@ -728,11 +728,11 @@ export const TOUR_HOST_NOTES: Record<
 > = {
   'atv-rafting-combo': {
     title: 'From our Sedang + Ayung hosts',
-    body: 'This is the day we sell first when guests want dirt photos and a paddle team. ATV briefing is at All New Bali Adventure in Sedang; the raft is Class II–III on the Ayung with English crew, lunch on both tickets, and one IDR 400,000 pickup if you want a hotel collect. We will not invent a 999K bundle sticker — WhatsApp confirms the two lines plus the 10% mix.',
+    body: 'This is the day we sell first when guests want dirt photos and a paddle team. ATV briefing is at All New Bali Adventure in Sedang — not the office in Banjar Kenderan. The raft is Class II–III on the Ayung with English crew, lunch on both tickets, and one IDR 400,000 pickup if you want a hotel collect. We will not invent a 999K bundle sticker — WhatsApp confirms the two lines plus the 10% mix.',
   },
   'bali-atv-adventure': {
     title: 'From our Sedang arena hosts',
-    body: 'Our crew briefs every rider at All New Bali Adventure on Jl. Raya Krasan, Sedang (Abiansemal) — gear fit, trail rules, and English safety instructions before you hit the mud. We run beginner-friendly single and tandem sessions daily. The flagship same-day add-on is Ayung rafting; Wos River tubing is the gentler afternoon when water levels allow.',
+    body: 'Our crew briefs every rider at All New Bali Adventure on Jl. Raya Krasan, Sedang (Abiansemal) — not the office pin on Jalan Tunjung Biru, Banjar Kenderan. Gear fit, trail rules, and English safety instructions before you hit the mud. We run beginner-friendly single and tandem sessions daily. The flagship same-day add-on is Ayung rafting; Wos River tubing is the gentler afternoon when water levels allow.',
   },
   'ubud-ricefield-cycling-tour': {
     title: 'From our Pejeng cycling hosts',

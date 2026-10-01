@@ -21,8 +21,8 @@ export type KnowBeforeItem = {
 export const atvWhatYouGetItems: KnowBeforeItem[] = [
   {
     icon: MapPin,
-    title: "ATV arena location",
-    desc: "All rides take place at All New Bali Adventure — our dedicated jungle ATV arena near Ubud.",
+    title: "ATV arena — not the office",
+    desc: "Meet at All New Bali Adventure, Jl. Raya Krasan, Sedang. Do not go to the office on Jalan Tunjung Biru, Banjar Kenderan — no ATV track there.",
   },
   {
     icon: Car,

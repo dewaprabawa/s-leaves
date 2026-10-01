@@ -11,6 +11,7 @@ import {
 } from "@/lib/locations"
 import { MEETING_POINT } from "@/lib/meetingPoint"
 import { SITE_NAME, SITE_URL } from "@/lib/seo"
+import AtvArenaMeetNote from "@/components/AtvArenaMeetNote"
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -69,7 +70,10 @@ export default function ContactPage() {
           <p className="text-base md:text-lg text-brand-green-light leading-relaxed max-w-2xl">
             Tell us your date, guest count, and activity — we confirm availability and the IDR
             total with no payment to inquire. Addresses below separate corporate office, central
-            Ubud meeting point, and the Sedang (Abiansemal) activity base.
+            Ubud meeting point, and the Sedang (Abiansemal) activity base.{" "}
+            <strong className="text-brand-green">
+              ATV starts at All New Bali Adventure, not at the office.
+            </strong>
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <a
@@ -178,6 +182,7 @@ export default function ContactPage() {
               office protects local search authority; use the meeting point or activity base when you
               self-drive or arrange a handoff.
             </p>
+            <AtvArenaMeetNote className="mt-5" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">

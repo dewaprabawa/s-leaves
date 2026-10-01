@@ -288,6 +288,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     primaryHref: '/tours/balinese-cooking-class',
     primaryLabel: 'Book Tumang cooking',
   },
+  'private-vs-shared-cooking-class-ubud': {
+    headline: 'WhatsApp Consultation / Book Tumang',
+    body: 'Say shared or private + hotel + date. Promo IDR 450,000 (max 8) or private IDR 1,000,000 / 2,000,000 for two. Free Ubud pickup. No payment to inquire.',
+    primaryHref: '/tours/balinese-cooking-class',
+    primaryLabel: 'WhatsApp Consultation / Book',
+    secondaryHref: '/book?activity=balinese-cooking-class',
+    secondaryLabel: 'Open cooking checkout',
+  },
   'vegetarian-vegan-cooking-class-ubud': {
     headline: 'Request the vegetarian Tumang menu',
     body: 'Same promo IDR 450,000. Tell WhatsApp your diet when you book.',

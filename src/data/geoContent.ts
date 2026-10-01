@@ -1291,6 +1291,7 @@ export const GEO_ARTICLES = [
   { title: 'Swing Heaven + Cooking Class in Ubud', url: `${SITE_URL}/blog/swing-heaven-cooking-class-ubud` },
   { title: 'Is an Ubud Cycling Tour Worth It?', url: `${SITE_URL}/blog/is-ubud-cycling-tour-worth-it` },
   { title: 'Cooking Class Ubud Price 2026 — Worth It?', url: `${SITE_URL}/blog/cooking-class-ubud-price-2026-worth-it` },
+  { title: 'Private vs Shared Cooking Class Ubud', url: `${SITE_URL}/blog/private-vs-shared-cooking-class-ubud` },
   { title: 'Vegetarian & Vegan Cooking Class Ubud', url: `${SITE_URL}/blog/vegetarian-vegan-cooking-class-ubud` },
   { title: 'Morning vs Afternoon Cooking Class Ubud', url: `${SITE_URL}/blog/morning-vs-afternoon-ubud-cooking-class` },
   { title: 'Inside Tumang Bali Cooking Class', url: `${SITE_URL}/blog/inside-balinese-cooking-class-pejeng` },

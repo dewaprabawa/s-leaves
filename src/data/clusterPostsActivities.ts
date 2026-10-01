@@ -155,7 +155,7 @@ Prices are 2026 published tiers. Groups of 2+ or 3+ often pay less per person on
 
 ## Food & village (book these first if you want culture)
 
-**[Tumang Bali Cooking Class](/tours/balinese-cooking-class)** is the flagship kitchen: Chef Wayan Suryana, max **8** guests, **10+ dishes**, morning market tour on AM sessions, complimentary Ubud pickup. Promo **IDR 450,000** (was 506,370). Vegetarian / vegan is a full menu swap if you say so on WhatsApp. Worth-it detail: [cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it).
+**[Tumang Bali Cooking Class](/tours/balinese-cooking-class)** is the flagship kitchen: Chef Wayan Suryana, max **8** guests, **10+ dishes**, morning market tour on AM sessions, complimentary Ubud pickup. Promo **IDR 450,000** (was 506,370). Private kitchen is **IDR 1,000,000** (1) or **IDR 2,000,000** for two. Vegetarian / vegan is a full menu swap if you say so on WhatsApp. Worth-it detail: [cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it). Who pays private: [private vs shared](/blog/private-vs-shared-cooking-class-ubud).
 
 **[Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour)** is a 2-hour pedal on Subak paths — lunch, bike, helmet, and **free Ubud pickup**. It is not a Tegallalang selfie queue. Honest take: [is an Ubud cycling tour worth it?](/blog/is-ubud-cycling-tour-worth-it).
 

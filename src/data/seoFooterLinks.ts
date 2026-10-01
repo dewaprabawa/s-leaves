@@ -16,6 +16,7 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Book cooking class', href: '/book?activity=balinese-cooking-class' },
   { label: 'Inside Tumang cooking class', href: '/blog/inside-balinese-cooking-class-pejeng' },
   { label: 'Cooking class Ubud price 2026', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
+  { label: 'Private vs shared cooking class', href: '/blog/private-vs-shared-cooking-class-ubud' },
   { label: 'Vegetarian cooking class Ubud', href: '/blog/vegetarian-vegan-cooking-class-ubud' },
   { label: 'What is Base Genep?', href: '/blog/what-is-base-genep-balinese-spice-paste-guide' },
   { label: '5 Balinese spices', href: '/blog/5-essential-balinese-spices' },

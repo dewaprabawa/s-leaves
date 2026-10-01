@@ -161,7 +161,7 @@ export const TOURS: Tour[] = [
     slug: "bali-atv-adventure",
     category: "adventure",
     area: "Sedang / Ubud",
-    venue: "All New Bali Adventure, Sedang",
+    venue: "All New Bali Adventure, Sedang — not the office",
     isTopPick: true,
     pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "2–4 Hours",
@@ -190,8 +190,10 @@ export const TOURS: Tour[] = [
 
 If you want an adrenaline-packed day beyond the usual tourist trail, our Bali ATV Quad Bike Adventure delivers a complete private ATV ride through jungle mud tracks, muddy trails, and river crossings. Every ride is designed for sensation, excitement, and joy — whether you go solo (single ATV) or share a tandem ATV with a partner. Beginner-friendly with a full safety briefing.
 
-### ATV Arena Location: All New Bali Adventure
-All ATV rides take place at **All New Bali Adventure** — our dedicated jungle ATV arena near Ubud. This is where you will meet your guide, get fitted with boot shoes and a helmet, and start your safety briefing before hitting the track.
+### ATV Arena Location: All New Bali Adventure — not the office
+All ATV rides take place at **All New Bali Adventure** on **Jl. Raya Krasan, Sedang, Kec. Abiansemal** — the jungle arena near Ubud. This is where you meet your guide, get fitted with boot shoes and a helmet, and start the safety briefing.
+
+**Do not go to the Sekar Bali office.** The office on Jalan Tunjung Biru, Banjar Kenderan is Google Business / admin only. There is no ATV track there. Self-meet at the Sedang arena, or book hotel pickup for IDR 400,000.
 
 ### Complete Bali Quad Bike (ATV) Trips
 Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing at All New Bali Adventure, you hit the track for an unforgettable ride through Bali's green countryside — lunch, helmet, boot shoes, and insurance included.
@@ -237,7 +239,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         time: "Start",
         title: "Arrive at All New Bali Adventure",
         description:
-          "Meet your guide at the All New Bali Adventure ATV arena, get fitted with boot shoes and helmet, and receive a clear safety briefing before the ride.",
+          "Meet your guide at the All New Bali Adventure ATV arena in Sedang (Jl. Raya Krasan) — not the office in Banjar Kenderan. Get fitted with boot shoes and helmet, then the safety briefing.",
       },
       {
         id: "iti-atv-2",
@@ -301,7 +303,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-3",
         question: "Where is the ATV arena near Ubud?",
         answer:
-          "All of our ATV rides run at All New Bali Adventure — a dedicated jungle arena on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 (near Ubud). We are not the Kuber tunnel or Dragon Cave tracks; ask WhatsApp if you need pin directions or hotel pickup.",
+          "All of our ATV rides run at All New Bali Adventure — a dedicated jungle arena on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 (near Ubud). This is not the Sekar Bali office on Jalan Tunjung Biru, Banjar Kenderan — that pin is admin / Google Business only and has no ATV track. We are also not the Kuber tunnel or Dragon Cave tracks. Ask WhatsApp for the arena pin or hotel pickup (IDR 400,000).",
       },
       {
         id: "faq-atv-4",
@@ -348,7 +350,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     slug: "atv-rafting-combo",
     category: "adventure",
     area: "Sedang + Ayung / Ubud",
-    venue: "All New Bali Adventure, then Ayung River",
+    venue: "All New Bali Adventure, Sedang — not the office · then Ayung River",
     isTopPick: true,
     pickup: "IDR 400,000 once for the day or free self-meet",
     duration: "5–7 Hours",
@@ -373,6 +375,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     shortDescription:
       "Flagship land + water day: Sedang ATV at All New Bali Adventure, then Class II–III Ayung rafting. From IDR 1,250,000 at published ticket floors (ATV 750K + rafting 500K). 10% mix at checkout. Pickup IDR 400,000 once or self-meet.",
     fullDescription: `**Want mud and rapids in one WhatsApp thread?** This is our **flagship adventure day**. Morning [ATV at All New Bali Adventure](/tours/bali-atv-adventure) in Sedang — sit-on quad, jungle mud, river crossings, lunch. Afternoon [Ayung River rafting](/tours/whitewater-rafting) — Class II–III, helmet, life jacket, lunch, insurance. **Hotel pickup is IDR 400,000 once** for the adventure day, or free self-meet at each pin.
+
+**ATV meet is the arena, not the office.** Self-meet at All New Bali Adventure, Jl. Raya Krasan, Sedang. Do not go to Jalan Tunjung Biru, Banjar Kenderan — that is the office pin only.
 
 ### 2026 from-price (what you can cite)
 
@@ -417,7 +421,7 @@ Beginner briefing on both tickets. No ATV licence. Rafting wants basic swimming 
         time: "Morning",
         title: "Sedang ATV",
         description:
-          "Meet at All New Bali Adventure or hotel collect. Briefing, jungle mud, river crossings, lunch.",
+          "Meet at All New Bali Adventure in Sedang (Jl. Raya Krasan) or hotel collect — not the office in Banjar Kenderan. Briefing, jungle mud, river crossings, lunch.",
       },
       {
         id: "iti-combo-2",

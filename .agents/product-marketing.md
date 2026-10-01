@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v2.21
-**Last updated:** 2026-09-30
+**Document version:** v2.22
+**Last updated:** 2026-10-01
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — flagship ATV + Ayung rafting, village, food, and day tours with clear IDR pricing and WhatsApp booking.
@@ -68,7 +68,7 @@
 | Objection | Response |
 |-----------|----------|
 | “Is WhatsApp booking legit?” | No upfront payment to inquire; confirm date/price first; corporate office matches Google Business Profile |
-| “Where do I meet for ATV?” | Activity base: All New Bali Adventure in Pejeng — or book hotel pickup |
+| “Where do I meet for ATV?” | All New Bali Adventure, Jl. Raya Krasan, Sedang — **not** the Banjar Kenderan office pin. Hotel pickup IDR 400K or self-meet at the arena. |
 | “Is it beginner-friendly?” | Full safety briefing, gear, English-speaking guide; no experience required |
 | “What’s included vs extras?” | Lunch/gear/insurance on ATV; cycling includes lunch + free Ubud pickup; Tumang cooking includes Ubud pickup; Batur jeep includes island-wide pickup and a sit-down meal after the viewpoint (not cooked inside the 4×4); ATV/rafting/tubing hotel pickup is IDR 400K |
 | “Do you only do sports?” | No — also cooking class, coffee, village cycling, private day tours, and a no-hike Mount Batur sunrise jeep |
@@ -130,6 +130,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.22 (2026-10-01) — ATV meet is **All New Bali Adventure** in Sedang (Jl. Raya Krasan), **not** the Banjar Kenderan office (Jalan Tunjung Biru / GBP). Gold “Meet here — not the office” note on ATV + ATV+rafting tour pages and booking cards, plus contact, know-before, location guide, and venue chips. Hotel pickup remains IDR 400K. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.21 (2026-09-30) — Commercial **best price** hub `/blog/best-price-atv-rafting-cycling-scooter-ubud-2026` plus money-page titles: ATV from 750K, rafting 500K/450K, cycling 750K free pickup, scooter promo 450K. Honest vs 235K–350K shared SERP (we do not claim cheapest). Flagship mix ATV+rafting from 1.25M still applies. No fake 999K. No SeaBank. No Jungle Buggies 3-lap.
 - v2.20 (2026-09-30) — **ATV + Ayung rafting is the flagship featured activity.** Dedicated money page `/tours/atv-rafting-combo` from **IDR 1,250,000** (ATV 750K + rafting 500K list floors). 10% mix at checkout. Homepage hero, top-picks, pricing, and GEO lead with the combo. Commercial article `/blog/atv-rafting-combo-ubud-2026`. Do not invent a 999K package sticker. ATV + Wos tubing stays the gentler add-on. Pickup IDR 400,000 once or self-meet. Rafting min 2. Also ships the ATV vs UTV compare (Sedang sit-on from 750K versus Pemogan sit-in hour 1.2M / 1.5M).
 - v2.19 (2026-09-30) — GA4 fires `generate_lead` on WhatsApp clicks and invoice WhatsApp sends. Mark that event as a key event in Admin so the empty Key events / session key event rate columns fill in.

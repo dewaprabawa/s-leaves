@@ -6,6 +6,7 @@ import { ArrowLeft, Camera, Car, Check, Clock, MapPin } from "lucide-react"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
+import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import CookingGeoBlock from "@/components/CookingGeoBlock"
 import JeepGeoBlock from "@/components/JeepGeoBlock"
@@ -852,6 +853,7 @@ export default async function TourPage({ params }: Props) {
                 <p className="text-lg text-brand-green-light leading-relaxed max-w-3xl">
                   {tour.shortDescription}
                 </p>
+                {isAtvArenaTour(tour.slug) ? <AtvArenaMeetNote /> : null}
               </div>
             </header>
 

@@ -38,8 +38,8 @@ export default function AntiScamSection({
           </h2>
           <p className="text-brand-green-light leading-relaxed">
             We are a Pejeng / Ubud operator with a Google Business Profile that matches our
-            registered office. Inquire on WhatsApp for free. Pay only the bank printed on our
-            invoice.
+            registered office. Inquire on WhatsApp for free. Payment instructions are sent on
+            official WhatsApp only — we do not publish a bank account.
           </p>
         </div>
 
@@ -71,16 +71,8 @@ export default function AntiScamSection({
             </div>
             <dl className="space-y-2 text-sm text-brand-green">
               <div className="flex flex-wrap gap-x-2">
-                <dt className="text-brand-green-light">Bank</dt>
-                <dd className="font-semibold">{OFFICIAL_PAYMENT.bankName}</dd>
-              </div>
-              <div className="flex flex-wrap gap-x-2">
-                <dt className="text-brand-green-light">Account</dt>
-                <dd className="font-semibold tabular-nums">{OFFICIAL_PAYMENT.accountNumber}</dd>
-              </div>
-              <div className="flex flex-wrap gap-x-2">
-                <dt className="text-brand-green-light">Name</dt>
-                <dd className="font-semibold">{OFFICIAL_PAYMENT.accountName}</dd>
+                <dt className="text-brand-green-light">Payment</dt>
+                <dd className="font-semibold">Official WhatsApp only — no published bank account</dd>
               </div>
               <div className="flex flex-wrap gap-x-2">
                 <dt className="text-brand-green-light">WhatsApp</dt>

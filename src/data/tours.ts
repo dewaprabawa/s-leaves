@@ -1159,7 +1159,7 @@ Hotel pickup is **IDR 400,000** (same adventure surcharge as ATV / rafting / tub
 ### Weather & refunds
 The Swing Heaven ticket is **non-refundable** once issued. If rain or unsafe weather closes the park, the venue issues a **voucher valid 7 days** from the issue date — not a cash refund. Cancel **24 hours before** we have issued the ticket and our usual [cancellation policy](/cancellation-policy) still applies.
 
-Card payments at the park (if you pay on site) add a **3% surcharge**. WhatsApp bookings with Sekar Bali Activity use the published bank transfer on the invoice — no card number on our website.
+Card payments at the park (if you pay on site) add a **3% surcharge**. WhatsApp bookings with Sekar Bali Activity send payment instructions on official WhatsApp only — no card number and no published bank account on our website.
 
 ### Pair it with ATV, cooking, or rafting
 Swing Heaven sits in Abiansemal, the same district as our [ATV arena](/tours/bali-atv-adventure). Ask WhatsApp to stack a morning swing with afternoon ATV or [Ayung River rafting](/tours/whitewater-rafting). For a jungle-photo + kitchen day, book morning Swing Heaven then afternoon [Tumang cooking](/tours/balinese-cooking-class) — [swing + cooking itinerary](/blog/swing-heaven-cooking-class-ubud) · [book the combo](/book?activity=combo-swing-cooking). This is **not** Happy Swing.
@@ -2402,7 +2402,7 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
 
 ### How to consult
 
-**Consultation only** — there is no booking form or checkout for this itinerary. WhatsApp **group type (family / girls / friends / couple), dates, villa area, guest count + kids’ ages, car vs HiAce, and the day list**. No payment to inquire. After you agree on the quote, same invoice + Seabank flow as every other activity.`,
+**Consultation only** — there is no booking form or checkout for this itinerary. WhatsApp **group type (family / girls / friends / couple), dates, villa area, guest count + kids’ ages, car vs HiAce, and the day list**. No payment to inquire. After you agree on the quote, same invoice + official-WhatsApp payment flow as every other activity.`,
     highlights: [
       "Family, girls trip, friends, or couple — one WhatsApp itinerary desk",
       "One long private day or 2–7 stacked driver days",

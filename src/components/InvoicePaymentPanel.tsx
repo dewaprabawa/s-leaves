@@ -8,7 +8,7 @@ import {
   openPaymentConfirmationWhatsApp,
   type InvoiceDraft,
 } from '@/lib/invoice'
-import { PAYMENT_BANK, PAYMENT_INSTRUCTIONS } from '@/lib/payment'
+import { PAYMENT_INSTRUCTIONS } from '@/lib/payment'
 import { formatIdr } from '@/lib/whatsapp'
 
 type Props = {
@@ -65,8 +65,8 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
             Agree &amp; pay by invoice
           </h2>
           <p className="text-sm text-brand-green-light mt-1 leading-relaxed">
-            Download the PDF invoice (with our logo), send it to our WhatsApp, transfer to Seabank,
-            then confirm payment.
+            Download the PDF invoice (with our logo), send it to our WhatsApp, then pay using the
+            instructions we send on that thread.
           </p>
         </div>
       </div>
@@ -141,23 +141,9 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
 
       <div className="rounded-2xl border border-accent-gold/30 bg-accent-gold/5 p-4 md:p-5 mb-5">
         <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-2">
-          Transfer to Seabank
+          How to pay
         </p>
-        <dl className="space-y-1.5 text-sm text-brand-green">
-          <div className="flex justify-between gap-3">
-            <dt className="text-brand-green-light">Bank</dt>
-            <dd className="font-bold">{PAYMENT_BANK.bankName}</dd>
-          </div>
-          <div className="flex justify-between gap-3">
-            <dt className="text-brand-green-light">Account number</dt>
-            <dd className="font-bold tracking-wide">{PAYMENT_BANK.accountNumber}</dd>
-          </div>
-          <div className="flex justify-between gap-3">
-            <dt className="text-brand-green-light">Account name</dt>
-            <dd className="font-bold text-right">{PAYMENT_BANK.accountName}</dd>
-          </div>
-        </dl>
-        <ul className="mt-3 space-y-1">
+        <ul className="space-y-1">
           {PAYMENT_INSTRUCTIONS.map((line) => (
             <li key={line} className="text-xs text-brand-green-light leading-relaxed">
               · {line}

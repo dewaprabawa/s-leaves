@@ -1,20 +1,10 @@
-/** Bank transfer details for booking invoices / payment confirmation */
-export const PAYMENT_BANK = {
-  bankName: 'Seabank',
-  accountNumber: '901823638817',
-  accountName: 'I Dewa Gede Agus Prabawa',
-} as const
-
+/** Payment is arranged on official WhatsApp only — no bank account is published. */
 export const PAYMENT_INSTRUCTIONS = [
-  'Transfer the invoice total to the Seabank account below.',
-  'Keep your transfer receipt / screenshot.',
-  'Tap “Confirm payment” and send it on WhatsApp so we can verify and lock your slot.',
+  'No payment to inquire.',
+  'After you agree, we send payment instructions on official WhatsApp only.',
+  'Keep your receipt and confirm on that same WhatsApp thread with your invoice number.',
 ] as const
 
-export function formatBankTransferBlock(): string {
-  return [
-    `*Bank:* ${PAYMENT_BANK.bankName}`,
-    `*Account number:* ${PAYMENT_BANK.accountNumber}`,
-    `*Account name:* ${PAYMENT_BANK.accountName}`,
-  ].join('\n')
+export function formatPaymentWhatsAppNote(): string {
+  return 'Payment instructions are sent on official WhatsApp after you agree. We do not publish a bank account on the website or invoice.'
 }

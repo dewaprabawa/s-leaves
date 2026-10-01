@@ -101,15 +101,15 @@ const faqs = [
   },
   {
     question: "How do I pay after I agree to a booking?",
-    answer: "After you agree in the booking form, download the PDF invoice (with our logo) and send it to our WhatsApp. Transfer the total to Seabank account 901823638817 a/n I Dewa Gede Agus Prabawa, then tap Confirm payment on WhatsApp so we can verify your transfer."
+    answer: "After you agree in the booking form, download the PDF invoice (with our logo) and send it to our official WhatsApp. We send payment instructions on that thread only. Confirm payment there with your invoice number and receipt so we can verify."
   },
   {
-    question: "What is your bank account for payment?",
-    answer: "Seabank account number 901823638817, account name I Dewa Gede Agus Prabawa. Always use the invoice number from your PDF when you confirm payment on WhatsApp. The Payment Policy page lists the same account."
+    question: "How do I get payment details?",
+    answer: "We do not publish a bank account on the website or invoice. After you agree, payment instructions come on official WhatsApp only. Use the invoice number from your PDF when you confirm payment on that same thread."
   },
   {
     question: "How do I know this booking is not a scam?",
-    answer: "Use only sekarbaliactivity.com and WhatsApp +62 817 7572 3663. We never take card numbers on the website. After you agree, transfer only to Seabank 901823638817 a/n I Dewa Gede Agus Prabawa and confirm on that same WhatsApp. Privacy, refund, and payment rules are on our Anti-scam page. If anyone asks for a different bank or e-wallet, stop and message us there first."
+    answer: "Use only sekarbaliactivity.com and WhatsApp +62 817 7572 3663. We never take card numbers on the website. After you agree, pay only using the instructions we send on that same WhatsApp. Privacy, refund, and payment rules are on our Anti-scam page. If anyone asks you to pay a different bank, e-wallet, or account they send first, stop and message us there first."
   },
   {
     question: "Can I mix activities like ATV + tubing or ATV + rafting?",

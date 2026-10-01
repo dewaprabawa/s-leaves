@@ -23,6 +23,7 @@ import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
 import { buildWhatsAppConsultationUrl, formatIdr } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
+import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
 import { useConsultationInterests } from "@/hooks/useConsultationInterests"
 
 /** Preferred display order — only categories with at least one tour are shown */
@@ -55,7 +56,12 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        {tour.slug === "batur-sunrise-jeep-tour" ? (
+        {tour.recommendedByTravelersPercent ? (
+          <TravelerRecommendBadge
+            percent={tour.recommendedByTravelersPercent}
+            variant="card"
+          />
+        ) : tour.slug === "batur-sunrise-jeep-tour" ? (
           <span className="absolute left-2.5 top-2.5 z-10 bg-accent-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
             Private
           </span>

@@ -126,6 +126,8 @@ export interface Tour {
   pickup?: string
   /** Featured on homepage top-picks rail when true. */
   isTopPick?: boolean
+  /** Star badge: “Recommended by N% of travelers” (ATV + UTV). */
+  recommendedByTravelersPercent?: number
   duration: string
   basePrice: number
   childPrice?: number
@@ -163,6 +165,7 @@ export const TOURS: Tour[] = [
     area: "Sedang / Ubud",
     venue: "All New Bali Adventure, Sedang — not the office",
     isTopPick: true,
+    recommendedByTravelersPercent: 96,
     pickup: "IDR 400,000 hotel pickup or free self-meet",
     duration: "2–4 Hours",
     basePrice: 750000,
@@ -2724,6 +2727,7 @@ Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, a
     pickup: "Quoted on WhatsApp or self-meet",
     duration: UTV_BUGGY_DURATION,
     basePrice: UTV_BUGGY_SINGLE_IDR,
+    recommendedByTravelersPercent: 96,
     seoTitle: "UTV Buggy Bali | Single 1.2M · Tandem 1.5M",
     seoDescription:
       "Bali Buggy Adventures in Pemogan: 1-hour 7 km UTV. Lunch included. Single IDR 1,200,000 · tandem 1,500,000. WhatsApp.",
@@ -2894,6 +2898,10 @@ export function getToursByCategory(category: TourCategoryId): Tour[] {
 
 export function getTopPickTours(): Tour[] {
   return TOURS.filter((tour) => tour.isTopPick)
+}
+
+export function getTravelerRecommendPercent(slug: string): number | undefined {
+  return getTourBySlug(slug)?.recommendedByTravelersPercent
 }
 
 export function searchTours(query: string, limit = 8): Tour[] {

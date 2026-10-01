@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react"
 import { ArrowRight, Car, Clock, ExternalLink, MapPin, MessageCircle } from "lucide-react"
+import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
+import { getTravelerRecommendPercent } from "@/data/tours"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
@@ -265,6 +267,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           `${SITE_URL}/tours/${props.tourSlug}`,
         )
   const isPrivateItinerary = props.tourSlug === GIRLS_TRIP_SLUG
+  const recommendPercent = getTravelerRecommendPercent(props.tourSlug)
 
   // Nudge the floating AI Assistant button above our mobile sticky CTA so they don't overlap
   useEffect(() => {
@@ -334,6 +337,13 @@ export default function TourBookingCard(props: TourBookingCardProps) {
       </div>
 
       <div className="bg-white rounded-3xl shadow-xl border border-brand-green/10 p-6 md:p-8 space-y-6">
+        {recommendPercent ? (
+          <TravelerRecommendBadge
+            percent={recommendPercent}
+            variant="inline"
+            className="w-full justify-center"
+          />
+        ) : null}
         {props.getYourGuideUrl && (
           <a
             href={props.getYourGuideUrl}

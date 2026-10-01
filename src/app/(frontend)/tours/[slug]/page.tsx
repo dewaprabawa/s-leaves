@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Camera, Car, Check, Clock, MapPin } from "lucide-react"
+import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
@@ -767,10 +768,22 @@ export default async function TourPage({ params }: Props) {
                   sizes="(max-width: 1024px) 100vw, 66vw"
                   className="object-cover"
                 />
+                {tour.recommendedByTravelersPercent ? (
+                  <TravelerRecommendBadge
+                    percent={tour.recommendedByTravelersPercent}
+                    variant="hero"
+                  />
+                ) : null}
               </div>
 
               <div className="space-y-4">
                 <div className="flex flex-wrap items-center gap-3">
+                  {tour.recommendedByTravelersPercent ? (
+                    <TravelerRecommendBadge
+                      percent={tour.recommendedByTravelersPercent}
+                      variant="inline"
+                    />
+                  ) : null}
                   {isJeepTour(tour) ? (
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
                       Private

@@ -28,6 +28,7 @@ import {
   type LucideIcon,
 } from "lucide-react"
 import { KnowBeforeCards } from "@/components/KnowBeforeCards"
+import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
 import {
   atvWhatYouGetItems,
   atvWhatToBringItems,
@@ -358,7 +359,13 @@ function ExperienceCard({ tour }: { tour: Tour }) {
             sizes="(max-width: 768px) 100vw, 33vw"
             className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
           />
-          {tour.slug === "batur-sunrise-jeep-tour" ? (
+          {tour.recommendedByTravelersPercent ? (
+            <TravelerRecommendBadge
+              percent={tour.recommendedByTravelersPercent}
+              variant="card"
+              className="left-3 top-3 max-w-[13rem]"
+            />
+          ) : tour.slug === "batur-sunrise-jeep-tour" ? (
             <span className="absolute top-3 left-3 bg-accent-gold text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">
               Private
             </span>

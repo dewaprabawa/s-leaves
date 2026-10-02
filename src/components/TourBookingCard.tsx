@@ -7,7 +7,7 @@ import { getTravelerRecommendPercent } from "@/data/tours"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
-import { getListPrice, getPromoListPrice } from "@/lib/pricing"
+import { getListPrice, getPromoListPrice, TIER_PRICES_IDR } from "@/lib/pricing"
 import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
@@ -69,9 +69,9 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       tierLabel: `Promo / scooter · East ${formatIdr(MOTORBIKE_EAST_IDR)} (was ${formatIdr(MOTORBIKE_EAST_LIST_IDR)})`,
     }
   }
-  // ATV SERP / FAQ lead with the 1-rider rate. Do not show the 3+ 700K
-  // tier as a "from" promo — it reads as a discount vs IDR 750K.
-  if (tourSlug === "bali-atv-adventure") {
+  // ATV / cycling SERP and FAQ lead with the 1-guest rate. Do not show
+  // the 3+ 700K tier as a "from" promo — it reads as a discount vs 750K.
+  if (tourSlug === "bali-atv-adventure" || tourSlug === "ubud-ricefield-cycling-tour") {
     return {
       promoPrice: fallbackBase,
       standardPrice: fallbackBase,
@@ -256,9 +256,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
       : props.tourSlug === "bali-atv-adventure"
         ? `${props.title} — single from ${formatIdr(props.basePrice)}`
-        : props.tourSlug === "atv-rafting-combo"
-          ? `${props.title} — from ${formatIdr(props.basePrice)} (ATV 750K + rafting 500K · 10% mix)`
-          : props.title
+        : props.tourSlug === "ubud-ricefield-cycling-tour"
+          ? `${props.title} — from ${formatIdr(props.basePrice)} (lunch + free Ubud pickup)`
+          : props.tourSlug === "atv-rafting-combo"
+            ? `${props.title} — from ${formatIdr(props.basePrice)} (ATV 750K + rafting 500K · 10% mix)`
+            : props.title
   const consultationUrl =
     props.tourSlug === GIRLS_TRIP_SLUG
       ? buildGirlsTripWhatsAppUrl()
@@ -367,6 +369,12 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {props.tourSlug === "bali-atv-adventure" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+            </p>
+          ) : null}
+          {props.tourSlug === "ubud-ricefield-cycling-tour" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              2 guests {formatIdr(TIER_PRICES_IDR.cycling[1])} · 3+{" "}
+              {formatIdr(TIER_PRICES_IDR.cycling[2])} / person · lunch + free Ubud pickup
             </p>
           ) : null}
           {props.tourSlug === "swing-heaven-bali" ? (

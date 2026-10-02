@@ -38,9 +38,9 @@ const adventureOffers: AdventureOffer[] = [
     image: "/images/adventures/canyon-tubing.jpg",
   },
   {
-    name: "Ubud Ricefield & Village Cycling Tour",
+    name: "Ubud Rice Paddy Cycling Tour in Pejeng",
     description:
-      "Ubud rice paddy & countryside cycling through Pejeng — 2 hours, lunch included, free Ubud hotel pickup from IDR 750K.",
+      "Ubud rice paddy cycling through Pejeng — 2 hours from 13:30, lunch included, free Ubud hotel pickup from IDR 750K.",
     price: "750000",
     image: "/images/adventures/cycling.jpg",
   },

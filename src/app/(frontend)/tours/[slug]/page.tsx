@@ -78,6 +78,10 @@ function isAtvTour(tour: Tour) {
   return tour.slug === "bali-atv-adventure"
 }
 
+function isCyclingTour(tour: Tour) {
+  return tour.slug === "ubud-ricefield-cycling-tour"
+}
+
 function isSwingTour(tour: Tour) {
   return tour.slug === "swing-heaven-bali"
 }
@@ -206,6 +210,8 @@ function buildTourSchema(tour: Tour) {
           ? ["Couples", "Families", "Food travelers", "Culture travelers"]
           : tour.slug === "tirta-empu-purification"
             ? ["Couples", "Families", "Culture travelers", "Spiritual travelers"]
+          : isCyclingTour(tour)
+            ? ["Couples", "Families", "Culture travelers"]
           : isMotorbikeTour(tour)
             ? ["Couples", "Friends", "Scooter riders", "Photographers", ...ORIGIN_TOURIST_TYPES]
           : ["Couples", "Families", "Adventure seekers"],
@@ -346,6 +352,53 @@ function buildTourSchema(tour: Tour) {
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/book?activity=balinese-cooking-class`,
+          },
+        ],
+      },
+    }
+  }
+
+  if (isCyclingTour(tour)) {
+    return {
+      ...base,
+      location: {
+        "@type": "Place",
+        name: tour.venue ?? "Pejeng village ricefields, east of Ubud",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(TIER_PRICES_IDR.cycling[2]),
+        highPrice: String(TIER_PRICES_IDR.cycling[0]),
+        priceCurrency: "IDR",
+        offerCount: 3,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Pejeng ricefield cycling — 1 guest",
+            price: String(TIER_PRICES_IDR.cycling[0]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "Pejeng ricefield cycling — 2 guests",
+            price: String(TIER_PRICES_IDR.cycling[1]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "Pejeng ricefield cycling — 3+ guests",
+            price: String(TIER_PRICES_IDR.cycling[2]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
           },
         ],
       },
@@ -827,6 +880,12 @@ export default async function TourPage({ params }: Props) {
                     <span className="text-sm font-bold text-brand-green">
                       From {formatIdr(tour.basePrice)} single · tandem{" "}
                       {formatIdr(TIER_PRICES_IDR["tandem-atv"][0])}
+                    </span>
+                  ) : isCyclingTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      From {formatIdr(tour.basePrice)} · lunch + free Ubud pickup · 2 guests{" "}
+                      {formatIdr(TIER_PRICES_IDR.cycling[1])} · 3+{" "}
+                      {formatIdr(TIER_PRICES_IDR.cycling[2])}
                     </span>
                   ) : isMotorbikeTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">

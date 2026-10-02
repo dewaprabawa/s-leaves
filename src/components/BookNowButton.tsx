@@ -114,7 +114,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   },
   {
     id: "cycling",
-    title: "Ubud Ricefield Cycling Tour",
+    title: "Ubud Rice Paddy Cycling Tour in Pejeng",
     times: ["13:30"],
     adultPrice: getListPrice("cycling"),
     kidPrice: null,

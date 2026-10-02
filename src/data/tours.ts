@@ -1280,17 +1280,18 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
   },
   {
     id: "ubud-ricefield-cycling-tour",
-    title: "Ubud Ricefield & Village Cycling Tour",
+    title: "Ubud Rice Paddy Cycling Tour in Pejeng",
     slug: "ubud-ricefield-cycling-tour",
     category: "village",
     area: "Pejeng / Ubud",
     isTopPick: true,
-    pickup: "Free Ubud-area hotel pickup",
+    venue: "Pejeng village ricefields, east of Ubud",
+    pickup: "Free Ubud-area hotel pickup · 13:30",
     duration: "2 Hours",
     basePrice: 750000,
-    seoTitle: "Best Price Cycling Ubud | 750K Free Pickup",
+    seoTitle: "Rice Paddy Cycling Ubud | Free Pickup 750K",
     seoDescription:
-      "Best published Pejeng cycling rate: IDR 750K with lunch and free Ubud pickup. Quiet Subak lanes, not Tegallalang. WhatsApp.",
+      "2-hour Pejeng rice paddy ride from IDR 750K. Lunch, pedal bike, free Ubud pickup. Afternoon 13:30. Quiet Subak lanes — not Tegallalang. WhatsApp.",
     heroImage: {
       url: "/images/cycling/rice-field-bikes.jpg",
       alt: "Rice paddy cycling tour through Pejeng village terraces near Ubud",
@@ -1325,15 +1326,15 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
         alt: "Lunch included on the Ubud ricefield cycling tour",
       },
     ],
-    shortDescription: "Authentic 2-hour Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
-    fullDescription: `**Ubud Ricefield & Village Cycling Tour**
+    shortDescription: "2-hour Pejeng rice paddy cycling from IDR 750K — lunch, pedal bike, and free Ubud hotel pickup. Afternoon 13:30 start on quiet Subak lanes, not Tegallalang. Pair with a morning Tumang cooking class, or WhatsApp if you want a morning ride.",
+    fullDescription: `**Ubud Rice Paddy Cycling Tour in Pejeng**
 
-Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
+Discover the real Bali on two wheels with our [Ubud rice paddy cycling tour](/blog/ubud-ricefield-cycling-tour-guide-2026) through Pejeng. This is a relaxing 2-hour countryside bike ride through green ricefields and quiet village paths — a cultural immersion designed for all fitness levels. [Is it worth it?](/blog/is-ubud-cycling-tour-worth-it) If you want village pace instead of a photo queue, yes.
 
-We pick you up from your hotel in the Ubud area and transport you to the starting point, where you are fitted with a bicycle, helmet, and briefed by your English-speaking guide before setting off into the countryside.
+We pick you up from your hotel in the Ubud area at the published **13:30** departure and transport you to the starting point, where you are fitted with a bicycle, helmet, and briefed by your English-speaking guide before setting off into the countryside. Pickup policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
 
 ### Rice Paddy & Countryside Cycling
-Cycle through stunning green rice paddies and village trails east of central Ubud. Stop to see local farmers at work and try harvesting rice with them. Your Pejeng guide explains traditional Balinese farming methods and the Subak irrigation rhythm of rural life — quieter than crowded Tegallalang photo stops.
+Cycle through stunning green rice paddies and village trails east of central Ubud. Stop to see local farmers at work and try harvesting rice with them. Your Pejeng guide explains traditional Balinese farming methods and the Subak irrigation rhythm of rural life — quieter than crowded [Tegallalang photo stops](/blog/pejeng-rice-terrace-cycling-vs-tegallalang).
 
 ### Village Culture & Local Life
 Enter a real Balinese family house and see daily local life up close. Visit a local wood carving studio and watch artists at work. Continue cycling through the village past temples, schools, and everyday community activities.
@@ -1344,7 +1345,8 @@ Enjoy a free lunch at a chill local village restaurant serving authentic Balines
 After the tour we drop you back at your Ubud hotel.
 
 **Available Schedule:**
-- **Afternoon departure** — 2-hour tour, ideal for travelers who prefer a later start
+- **Published departure 13:30** — 2-hour afternoon ride (lunch + free Ubud pickup)
+- **Same-day kitchen:** book a [morning Tumang cooking class](/tours/balinese-cooking-class), then this 13:30 ride. Want cycling first? [WhatsApp the combo clock](/blog/cycling-cooking-class-ubud-full-day-itinerary) — we confirm a morning ride when the village route is free.
 
 **Important Note:**
 The itinerary may sometimes change due to field conditions, weather, or village activities. We will always adjust to make sure you still have the best and safest experience.`,
@@ -1448,7 +1450,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-6",
         question: "Can I combine cycling with a cooking class?",
         answer:
-          "Yes. The cycling tour is 2 hours, so many guests ride Pejeng ricefields first and join an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person, Ubud pickup included). Ask WhatsApp for a same-day timeline.",
+          "Yes. Published cycling is 13:30 (2 hours, lunch included). Pair it with a morning Tumang Bali Cooking Class (shared promo IDR 450,000 / person, Ubud pickup included). Want cycling first and kitchen after? WhatsApp — we confirm a morning ride when the village route is free.",
       },
       {
         id: "faq-ubud-cyc-7",
@@ -1472,7 +1474,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-10",
         question: "How long is the Ubud ricefield cycling tour?",
         answer:
-          "About 2 hours, including the guided Pejeng village ride, cultural stops, and lunch. Hotel pickup and drop-off in the Ubud area are included.",
+          "About 2 hours from the published 13:30 departure, including the guided Pejeng village ride, cultural stops, and lunch. Hotel pickup and drop-off in the Ubud area are included.",
       },
     ],
     reviews: [],

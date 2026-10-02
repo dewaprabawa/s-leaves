@@ -45,7 +45,7 @@
 | Cooking | `/tours/balinese-cooking-class` | Money page QA’d 2026-09-11. Spokes: inside class, pickup, cycling+cooking, spices. **Missing:** worth it, vegetarian, market vs afternoon. | Hold money-page edits. Article later this month. |
 | ATV | `/tours/bali-atv-adventure` | Money page QA’d 2026-09-18. Tandem spoke drafted 2026-09-21 (`/blog/tandem-atv-ubud-price`). Combo IDR not on tour card. | Hold money-page edits. |
 | Batur jeep | `/tours/batur-sunrise-jeep-tour` | Guide 2026 + jeep vs trek. **Missing:** pickup times by area; title “from 750K” risk. | **Primary focus.** |
-| Cycling | `/tours/ubud-ricefield-cycling-tour` | Densest cluster (worth it, vs Tegallalang, combo, pickup, 2026 guide). Duration now 2 hours. | Title only + fix AM/PM friction (see sales notes). |
+| Cycling | `/tours/ubud-ricefield-cycling-tour` | Densest cluster (worth it, vs Tegallalang, combo, pickup, 2026 guide). Money page QA’d 2026-10-02. | Hold money-page edits. Cluster blogs still say morning cycling. |
 
 Skip generic “best Bali” ideas. P2 day tours stay on hold.
 
@@ -79,7 +79,7 @@ List only — no UI redesign in this run.
 - Cooking and ATV set `venue` / `pickup` chips. Jeep, cycling, luwak, rafting, tubing, and day tours still omit ATF venue (jeep/cycling already have pickup).
 - ATV option `ATV + River Tubing Combo` uses `priceDiff: 0` (“ask for combo pricing”). Book card maps ATV to single/tandem only — combo is not a priced bookable SKU. `/book` featured combos discount ATV+tubing, but the money page cannot quote it.
 - ATV combo blog (`/blog/atv-river-tubing-wos-river-bali`) says “Hotel pickup (Ubud area usually free)” — **false**. ATV pickup is IDR 400,000 (or self-meet).
-- Cycling money page + `BookNowButton` are **afternoon only** (`13:30`). Combo / worth-it blogs still frame cycling as a **morning** block before Tumang cooking.
+- Cycling money page + `BookNowButton` are **afternoon only** (`13:30`) — money page / GEO / combo offer now say so (2026-10-02). Combo / worth-it / 2026 guide blogs still frame cycling as a **morning** block before Tumang cooking.
 - Cycling worth-it post still says cycling is the **only** tour with free Ubud pickup; cooking also includes it (pickup explainer is correct).
 - Luwak Book fallback is `minPax: 1` while copy requires **minimum 3**; transport to Tampaksiring is not included and is easy to miss in the form.
 - Jeep Book times are `02:30` / `03:00` only — south Bali often needs closer to 02:00; title “From IDR 750K” is 3+ not solo.
@@ -96,6 +96,18 @@ List only — no UI redesign in this run.
 
 ## Tour QA notes
 <!-- A6 appends here -->
+
+### 2026-10-02 — `ubud-ricefield-cycling-tour` (implemented in PR)
+Scores (source): Title/meta/H1 64 · ATF facts 70 · Schema Offer+ISO 76 · Cluster links 78 · WhatsApp title 82 · FAQ IDR 88.
+
+Shipped:
+1. SERP title restored to `Rice Paddy Cycling Ubud | Free Pickup 750K` (42 chars; was “Best Price Cycling Ubud”). H1 is now `Ubud Rice Paddy Cycling Tour in Pejeng`. Meta adds 2-hour + afternoon 13:30 (144 chars).
+2. ATF chips: venue `Pejeng village ricefields, east of Ubud`; pickup `Free Ubud-area hotel pickup · 13:30`; price shows 750K lead (not the 3+ 700K “from”).
+3. Schema `AggregateOffer` (750K / 725K / 700K) + `duration: PT2H` + `location` Place. WhatsApp Consultation prefills title + from IDR 750,000 (lunch + free Ubud pickup).
+4. Cluster: 2026 guide added to related guides; in-body links to guide / worth-it / vs Tegallalang / pickup / combo. Combo FAQ + GEO now match the published 13:30 book slot.
+5. Booking card no longer advertises 3+ IDR 700K as a fake “from” promo.
+
+Left for later (not this PR): combo / worth-it / guide blogs still frame cycling as a **morning** block before Tumang; cooking-page FAQ still says “afternoon kitchen after earlier cycling.” Do not add an 08:30 book slot without ops confirmation.
 
 ### 2026-09-18 — `bali-atv-adventure` (implemented in PR)
 Scores (source): Title/meta/H1 64 · ATF facts 72 · Schema Offer+ISO 78 · Cluster links 76 · WhatsApp title 88 · FAQ IDR 90.

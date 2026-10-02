@@ -28,11 +28,11 @@ const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"] as const
 export const ADVENTURES: AdventureCatalogItem[] = [
   {
     id: "cycling",
-    name: "Ubud Ricefield & Village Cycling Tour",
+    name: "Ubud Rice Paddy Cycling Tour in Pejeng",
     tagline: "Rice paddies & village life",
     paxLabel: "Per person",
     description:
-      "Authentic Ubud countryside / rice paddy cycling through Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
+      "Authentic Ubud countryside / rice paddy cycling through Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Published departure 13:30. Pair with a morning Tumang Bali Cooking Class, or WhatsApp for a morning ride.",
     highlights: [
       "Rice paddy & countryside cycling in Pejeng",
       "Lunch included",

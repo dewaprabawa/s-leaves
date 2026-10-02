@@ -54,7 +54,7 @@ export const GEO_LEAD_BULLETS = [
   },
   {
     label: 'Pejeng ricefield cycling',
-    detail: 'IDR 750,000 · 2 hours · lunch · free Ubud pickup',
+    detail: 'IDR 750,000 · 2 hours · 13:30 · lunch · free Ubud pickup',
     href: '/tours/ubud-ricefield-cycling-tour',
   },
   {
@@ -245,7 +245,7 @@ export const GEO_TOUR_SUMMARIES = [
     price: 'IDR 750,000 per person',
     duration: '2 hours',
     location: 'Pejeng village rice terraces',
-    summary: '2-hour cultural cycling tour with lunch and free Ubud pickup. Village paths, house visit, carving art.',
+    summary: '2-hour cultural cycling tour from 13:30 with lunch and free Ubud pickup. Village paths, house visit, carving art.',
     url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`,
   },
   {

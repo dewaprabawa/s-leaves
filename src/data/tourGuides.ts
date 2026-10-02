@@ -252,6 +252,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'ubud-ricefield-cycling-tour': [
     {
+      title: 'Ubud ricefield cycling guide 2026',
+      href: '/blog/ubud-ricefield-cycling-tour-guide-2026',
+      blurb: '2-hour Pejeng itinerary, IDR 750K, lunch, and free Ubud pickup.',
+    },
+    {
       title: 'Best price ATV, rafting, cycling & scooter',
       href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
       blurb: 'Published cycling 750K with free Ubud pickup next to ATV, rafting, and scooter.',
@@ -736,7 +741,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'ubud-ricefield-cycling-tour': {
     title: 'From our Pejeng cycling hosts',
-    body: 'Born-and-raised Pejeng guides lead the ricefield routes we ride every week — Subak channels, village lanes, and lunch stops away from Tegallalang bus crowds. Free Ubud hotel pickup is built into the day so you start on the bike, not hunting for parking.',
+    body: 'Born-and-raised Pejeng guides lead the ricefield routes we ride every week — Subak channels, village lanes, and lunch stops away from Tegallalang bus crowds. The published departure is 13:30. Free Ubud hotel pickup is built into the afternoon so you start on the bike, not hunting for parking. Want a morning ride before Tumang cooking? WhatsApp and we will confirm if the village route is free.',
   },
   'balinese-cooking-class': {
     title: 'From Chef Wayan Suryana’s kitchen',

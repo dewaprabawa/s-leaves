@@ -436,7 +436,7 @@ Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsap
 
 ## What You Actually Get for IDR 750,000
 
-- Free hotel pickup & drop-off in the **Ubud area** (only this tour includes free pickup)  
+- Free hotel pickup & drop-off in the **Ubud area** (Tumang cooking class also includes free Ubud pickup)  
 - Bicycle, helmet, English-speaking guide  
 - Lunch at a local village restaurant  
 - Seasonal rice harvesting, Balinese home visit, wood carving stop  
@@ -617,7 +617,7 @@ Solo ATV is pure off-road adrenaline. Adding river tubing cools you down and add
 
 ## Typical Flow
 
-1. Hotel pickup (Ubud area usually free)  
+1. Hotel pickup IDR 400,000 once for the day, or free self-meet at All New Bali Adventure  
 2. Gear fitting: boot shoes & helmet  
 3. Safety briefing and ATV trail ride  
 4. Optional Wos River tubing session  

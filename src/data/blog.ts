@@ -1703,7 +1703,7 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
 > - **Arena name:** All New Bali Adventure — **not the Sekar Bali office**
 > - **Do not go to** Jalan Tunjung Biru, Banjar Kenderan (office / Google Business only)
 > - **Official arena site:** [allnewbaliadventure.com](https://allnewbaliadventure.com/)
-> - **Book through:** Sekar Bali Activity (near Ubud)
+> - **Book here:** [Bali ATV Adventure](/tours/bali-atv-adventure) — WhatsApp from IDR 750,000 (this page is directions only)
 > - **Single ATV:** IDR 750,000 · **Tandem ATV:** IDR 1,100,000
 > - **Included:** lunch, boot shoes, helmet, insurance, safety briefing
 > - **Pickup:** IDR 400,000 hotel pickup or free self-meet (cycling and Tumang cooking include free Ubud pickup)

@@ -170,9 +170,9 @@ export const TOURS: Tour[] = [
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "Best Price ATV Ubud | From 750K",
+    seoTitle: "ATV All New Bali Adventure | From 750K",
     seoDescription:
-      "Best published ATV rate near Ubud: 750K · 725K for 2 · 700K for 3+. Lunch in. Pickup 400K or self-meet. WhatsApp — no deposit.",
+      "Book All New Bali Adventure ATV in Sedang — from 750K. Lunch in. Pickup 400K or self-meet. Not the office pin. WhatsApp — no deposit.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV ride at All New Bali Adventure near Ubud through jungle trails",

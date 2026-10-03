@@ -21,6 +21,124 @@
 **Conversion path we optimize for:**  
 Search / AI answer → tour money page → **WhatsApp Consultation** or **Book** → paid guest.
 
+---
+
+## 0) Oct 2026 improvement plan — booking first, then SEO/GEO
+
+This is the working plan after the 4 Sept–1 Oct 2026 GA4 report (695 sessions, **0 key events**).  
+GEO titles and `llms.txt` book URLs already shipped in #185. The next bottleneck is **WhatsApp**, not more blog volume.
+
+### One sentence
+
+Measure WhatsApp, convert the traffic we already get (Google jeep / combo / cooking / cycling + ChatGPT `/book`), then pull ATV Google from the location blog onto `/tours/bali-atv-adventure`. Do not write a pile of new posts until `generate_lead` shows which pages book.
+
+### What the report already proved
+
+| Fact | What it means for the plan |
+|------|----------------------------|
+| Google 262 sessions (38%), 66% engaged | Protect jeep, combo, cooking, cycling, motorbike. They already rank. |
+| ChatGPT 153 sessions (22%), 60% engaged, `/book` 19 | GEO is working. `/book` must convert, not dump a long catalog. |
+| Direct `/book` 14 at 93% / 2m 53s; direct ATV 17 at 82% / 4m 33s | These people want to send WhatsApp. Do not bury the send button. |
+| ATV Google → location blog ~26 vs money page ~2 | Cannibalization. Blog must hand off to the tour URL. |
+| `what-to-skip-on-a-6-day-bali-itinerary` 43 Google | Keep money CTAs (jeep / combo / ATV / cooking / cycling). |
+| Instagram 28 sessions, 11s, `/experiences` 25 | Bio link is wrong. Point it at ATV or ATV+rafting. |
+| 0 key events / Rp0 | Measurement gap. `generate_lead` marked 3 Oct. Revenue stays Rp0 until a `purchase` event exists. Do not read Rp0 as no sales. |
+
+### Booking plan (activation)
+
+**Goal:** more WhatsApp threads with activity + date + guests + IDR already filled.
+
+**Current friction on the site**
+
+- Tour cards offer three actions: **Book** (popup), **WhatsApp Consultation**, **Ask about this**. Book is a multi-field form; Consultation is one tap. Undecided guests skip the priced message.
+- The older `/tours` booking form is **3 steps** and asks email, phone, and age before WhatsApp opens. Tourists drop there.
+- `/book` is a long catalog. ChatGPT and Direct often land **without** `?activity=` / `?combo=`, so they must hunt for the SKU they already chose.
+- Instagram bio sends people to `/experiences` (4-second bounce). That is not a booking page.
+
+**Do this week (ops — no code)**
+
+1. Tap one WhatsApp button on the live site and confirm `generate_lead` in GA4 **Realtime**.
+2. Tag every new WA chat: Google / ChatGPT / Instagram / Direct / Repeat.
+3. Reply in under **15 minutes** from 08:00–20:00 WITA. Rankings do not book if the chat sits.
+4. First ATV reply always names **All New Bali Adventure, Sedang — not the Banjar Kenderan office**.
+5. Change the Instagram bio / link-in-bio to `/tours/atv-rafting-combo` or `/tours/bali-atv-adventure` — not `/experiences`.
+6. Keep two ready WA scripts: **ATV + Ayung rafting** (from 1.25M, 10% mix, pickup 400K once, rafting min 2) and **cycling + cooking** (free Ubud pickup).
+7. Payment stays WhatsApp-only after the guest agrees. **No SeaBank / bank numbers on the site or in the first message.**
+
+**Ship next on the site (say “implement booking” to start)**
+
+1. If `/book?activity=` or `/book?combo=` is present, **collapse the catalog** and show only that SKU + a sticky **Send this on WhatsApp**.
+2. Sticky one-tap WhatsApp on jeep, combo, cooking, cycling, and ATV money pages: *WhatsApp this price — no payment to inquire*.
+3. Cut required Book-popup fields to **name, date, guests, hotel**. Email / phone / age become optional.
+4. Prefill every WA message with activity, URL, published IDR, pickup rule.
+5. Keep Consultation as the **secondary** button (undecided). Book / Send is primary (ready).
+
+**Honest booking facts — never invent**
+
+| Rule | Published 2026 |
+|------|----------------|
+| Single ATV | 750K / 725K / 700K (1 / 2 / 3+) |
+| Tandem ATV | 1.1M |
+| ATV + rafting flagship | from 1.25M · 10% mix |
+| Rafting | 500K list / 450K for 2+ · **min 2** |
+| Cycling | 750K / 725K / 700K · free Ubud pickup |
+| Scooter promo | 450K |
+| ATV / rafting pickup | **400K once** or self-meet at the arena |
+| Cooking promo | 450K · free Ubud pickup |
+| Jeep | 1.35M solo / 750K for 3+ · pickup included |
+| Do not claim | cheapest vs 235K–350K SERP · fake 999K · Jungle Buggies 3-lap |
+
+### SEO plan (Google)
+
+**Protect what already ranks** — jeep, ATV+rafting combo, cooking, cycling, motorbike. Refresh facts; do not rebuild those pages.
+
+**Fix the ATV leak**
+
+- Money page title already owns *ATV All New Bali Adventure \| From 750K* (#185).
+- Location blog must stay a **spoke**: first screen + last paragraph = **Book here → `/tours/bali-atv-adventure`**.
+- Do not 301 the location blog while it still wins Google. Convert it; then re-check GSC in 30 days.
+- First 100 words on the tour page: venue Sedang, from 750K, pickup 400K or self-meet, WhatsApp, not the office.
+
+**Other Google work**
+
+- Keep IDR + differentiator in titles (no hike / free Ubud pickup / All New Bali Adventure / max 8 guests).
+- `what-to-skip` stays; it already earns 43 Google sessions — keep the money CTAs.
+- Retired URLs (dance, offering, jungle-buggies 3-laps, Tegallalang swing): confirm 301 / do-not-cite. Do not revive copy.
+- Export GSC last 28 days for `/tours/*`. Next spoke articles only for queries with **impressions and no ranking money page**.
+- Cadence: **refresh 4 existing P0 pages / spokes** before writing new posts. Two new spokes a week only after `generate_lead` has a week of data.
+
+### GEO plan (ChatGPT / Perplexity / AI Overviews)
+
+ChatGPT is already 22% of sessions. The job is **citation → `/book` or money page → WhatsApp**, not more `llms.txt` prose.
+
+1. Keep `/llms.txt`, `/llms-full.txt`, `/pricing.md` in sync **the same day** any IDR or pickup rule changes.
+2. Lead answers with a book URL (already in GEO_QUICK_ANSWER / “Book these URLs”).
+3. Monthly prompt check: ATV Ubud price, Batur no hike, cooking class Ubud, ricefield cycling pickup, ATV+rafting, rafting vs tubing.
+4. Perplexity is 6 sessions — ignore until Google + ChatGPT convert.
+5. Do not cite retired tickets. Do not invent cave ATV, e-bike cycling, or a summit-hike jeep.
+
+### 30-day sequence
+
+| Days | Focus | Done when |
+|------|--------|-----------|
+| 1–3 | Measure + Instagram bio + WA tags + reply SLA | `generate_lead` visible in Realtime; bio is a money page |
+| 4–14 | Booking conversion on `/book` deep links + 5 money pages | ChatGPT / Direct `/book` sessions produce WhatsApp events |
+| 15–30 | ATV blog → tour handoff, GSC query pass, 4 refreshes, LLM spot-check | First Events report: `generate_lead` by source/medium + page |
+
+### What we will not do this month
+
+- Paid ads before `generate_lead` exists
+- New blog volume for its own sake
+- Facebook / Bing / `dubgtcg.dbz` cleanup as a priority
+- Publishing bank / SeaBank details
+- Reviving Jungle Buggies 3-lap
+- Claiming cheapest vs 235K–350K listings
+- Inventing a 999K package
+
+### How we know it worked
+
+After 7+ days of real WhatsApp taps, send **GA4 Events** (`generate_lead`) + **Traffic source/medium** (no page-path dimension). We will rank channels by WhatsApp, not sessions. Booked guests still get a manual WA tag (Google / ChatGPT / IG / Direct) until a `purchase` event exists.
+
 ### GA4 baseline (4 Sept–1 Oct 2026)
 
 | Channel | Sessions | Share | Quality |
@@ -220,10 +338,11 @@ SEO without conversion wastes rankings.
 ## 8) 90-day roadmap
 
 ### Weeks 1–2 — Unblock & align facts
+- [ ] **Booking (P0):** Confirm `generate_lead` in Realtime; tag WA by source; Instagram bio → money page  
+- [ ] **Booking (code when asked):** `/book` deep-link focus + fewer form fields + sticky WhatsApp on 5 money pages  
 - [ ] Audit all 9 tours: title, meta, H1, visible price, schema price, duration ISO  
 - [ ] Sync `pricing.md` + `llms.txt` + `llms-full.txt` to live IDR  
 - [ ] GSC property verified; sitemap submitted  
-- [ ] GA4: events for WhatsApp CTA clicks per tour slug  
 - [ ] Compress remaining heavy tour heroes  
 
 ### Weeks 3–4 — Foundation
@@ -284,11 +403,13 @@ SEO without conversion wastes rankings.
 
 ## 12) Immediate next actions (this week)
 
-1. **Baseline:** Export GSC last 28 days for all `/tours/*`  
-2. **Fact sync:** Confirm cooking 450K, ATV tiers, jeep tiers, luwak 800K, cycling 750K in page + schema + `pricing.md` + `llms.txt`  
-3. **Ship content:** One article each for cooking, ATV, jeep, cycling (or refresh existing) with hard CTA to WhatsApp  
-4. **Conversion:** Confirm Consultation + Book on all 9 detail pages in production  
-5. **Assign owner:** Who updates prices; who writes spokes; who answers WA  
+Follow **§0** — booking first. Do not start a new article sprint until WhatsApp is measured.
+
+1. **Realtime:** One live WhatsApp tap → confirm `generate_lead` in GA4 Realtime  
+2. **Ops:** Tag WA chats by source; Instagram bio → ATV or ATV+rafting (not `/experiences`); reply &lt; 15 min  
+3. **GSC:** Export last 28 days for `/tours/*` (impressions vs clicks) — use it after booking conversion, not instead of it  
+4. **Fact lock:** Cooking 450K, ATV tiers, jeep tiers, combo from 1.25M, rafting min 2, pickup 400K once — page + schema + `pricing.md` + `llms.txt`  
+5. **Next code slice (when asked):** `/book` deep-link focus + fewer Book-popup fields + sticky WhatsApp on the 5 money pages  
 
 ---
 

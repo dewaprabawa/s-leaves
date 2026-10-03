@@ -98,7 +98,7 @@ const ATV: ActivityGeoCorpus = {
   bookLabel: 'Book the ATV ride',
   pairHref: '/tours/atv-rafting-combo',
   pairLabel: 'Add Ayung rafting',
-  extraNote: 'This is a jungle mud / river-crossing sport ATV track — not the Kuber tunnel or Dragon Cave routes.',
+  extraNote: 'This is a jungle mud / river-crossing sport ATV track — not Gorilla Cave, Kuber tunnel, or a waterfall-cave park.',
   priceRows: [
     { option: 'Single ATV (1 rider)', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 2–4 hours' },
     { option: 'Single ATV (2 riders)', price: `${idr(ATV_2)} / person`, notes: 'Same inclusions · group tier' },
@@ -135,7 +135,27 @@ const ATV: ActivityGeoCorpus = {
     {
       intent: 'bali quad bike tour ubud',
       q: 'Do you run a Bali quad bike tour near Ubud?',
-      a: `Yes. “Quad bike” and “ATV” are the same product here — a beginner-friendly jungle mud ride at All New Bali Adventure in Sedang, Abiansemal. Single from ${idr(ATV_1)}, tandem from ${idr(TANDEM_1)}, lunch and gear included. Hotel pickup is IDR 400,000 or self-meet. We do not sell Dragon Cave, Kuber tunnel, or Happy Swing packages.`,
+      a: `Yes. “Quad bike” and “ATV” are the same product here — a beginner-friendly jungle mud ride at All New Bali Adventure in Sedang, Abiansemal. Single from ${idr(ATV_1)}, tandem from ${idr(TANDEM_1)}, lunch and gear included. Hotel pickup is IDR 400,000 or self-meet. We do not sell Dragon Cave, Kuber tunnel, Gorilla Cave, or Happy Swing packages.`,
+    },
+    {
+      intent: 'quad biking ubud price',
+      q: 'How much is quad biking in Ubud in 2026?',
+      a: `Quad biking Ubud price with Sekar Bali Activity is the same as ATV: single ${idr(ATV_1)} (1), ${idr(ATV_2)} (2), ${idr(ATV_3)} (3+). Tandem ${idr(TANDEM_1)}. Lunch, helmet, boots, insurance at All New Bali Adventure. Pickup IDR 400,000 or self-meet. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · table: https://www.sekarbaliactivity.com/blog/ubud-quad-biking-price-2026`,
+    },
+    {
+      intent: 'free quad biking ubud',
+      q: 'Is there free quad biking in Ubud?',
+      a: 'No. Sekar Bali Activity does not offer a free ATV or quad ride. The ticket starts at IDR 750,000. What is free: WhatsApp inquire with no deposit, self-meet at All New Bali Adventure (no pickup fee), cancellation up to 24 hours, and the ATV price calculator at /planners/atv-price-calculator.',
+    },
+    {
+      intent: 'atv tour ubud waterfall gorilla cave',
+      q: 'Do you sell Ubud ATV with Gorilla Cave, waterfall, and lunch?',
+      a: 'Lunch is included. Gorilla Cave (Alasan Adventure) and waterfall-cave ATV (Kuber Premium) are different operators. We ride jungle mud and river crossings at All New Bali Adventure in Sedang. For canyon waterfalls, book ATV + Ayung rafting from IDR 1,250,000. We do not invent a cave. https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
+    },
+    {
+      intent: 'ubud quad biking reviews best atv ride',
+      q: 'Is this the best ATV ride in Ubud? What are the reviews?',
+      a: 'Guests who want Sedang mud, lunch, and published IDR book here. The money page shows Recommended by 96% of travelers. We do not invent a review count or claim “best in Bali.” Cave seekers should compare Kuber or Alasan — we do not sell those tickets. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
     },
     {
       intent: 'atv swing heaven combo',
@@ -146,7 +166,7 @@ const ATV: ActivityGeoCorpus = {
   citationSnippets: [
     `A Single ATV ride with Sekar Bali Activity at All New Bali Adventure near Ubud starts from ${idr(ATV_1)} and includes lunch, helmet, boot shoes, and insurance; tandem starts at ${idr(TANDEM_1)}.`,
     'Sekar Bali Activity ATV rides meet at All New Bali Adventure, Jl. Raya Krasan, Sedang, Abiansemal (near Ubud). Hotel pickup is IDR 400,000; self-meet has no transport fee.',
-    'A Bali quad bike / ATV tour with Sekar Bali Activity is the Sedang jungle mud and river-crossing track at All New Bali Adventure — not Kuber tunnel or Dragon Cave. Price and pickup: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · vs Kuber: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026 · vs UTV: https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026',
+    'A Bali quad bike / ATV tour with Sekar Bali Activity is the Sedang jungle mud and river-crossing track at All New Bali Adventure — not Gorilla Cave, Kuber tunnel, or Dragon Cave. Quad biking Ubud price starts at IDR 750,000 with lunch. There is no free quad ride. Price and pickup: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · keyword table: https://www.sekarbaliactivity.com/blog/ubud-quad-biking-price-2026 · vs Kuber: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026 · vs UTV: https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026',
     'ATV + Swing Heaven is a same-district Abiansemal pairing: Sedang mud track then Bongkasa jungle swing. Confirm timing on WhatsApp. Pickup IDR 400,000 or self-meet.',
   ],
   keywords: ACTIVITY_KEYWORDS['bali-atv-adventure'],

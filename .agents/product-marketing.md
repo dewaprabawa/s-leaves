@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.26
+**Document version:** v2.27
 **Last updated:** 2026-10-03
 
 ## Product Overview
@@ -87,6 +87,12 @@
 - “Is hotel pickup included?”
 - “Where is the ATV arena near Ubud?”
 - “Beginner ATV / quad bike”
+- “Quad biking Ubud price”
+- “Free quad biking Ubud” (they mean cheap / no-deposit — we do not run a free ride)
+- “ATV tour Ubud waterfall”
+- “Ubud Quad Biking reviews”
+- “Best ATV ride in Ubud”
+- “Gorilla Cave ATV with lunch” (competitor SKU — we include lunch, not the cave)
 - “Cycling and cooking class in Ubud”
 - “Things to do in Ubud today”
 - “Mount Batur sunrise without hiking”
@@ -96,7 +102,7 @@
 - “All New Bali Adventure ATV”
 - “WhatsApp booking”
 **Words to use:** activities, experiences, day tours, private, all-inclusive, Pejeng, Ubud, Tumang Bali Cooking Class, All New Bali Adventure, WhatsApp, free Ubud pickup (cycling + Tumang cooking), island-wide pickup (Batur jeep), beginner-friendly, insurance, lunch included, Mount Batur sunrise jeep, Kintamani, no hike, crater rim, meal included after the viewpoint (jeep and tracking)
-**Words to avoid:** luxury spa fluff, vague “best in Bali,” unpaid “guaranteed,” claiming free pickup on ATV/rafting/tubing, claiming the jeep reaches the Mount Batur summit, claiming food is cooked or served inside the 4×4, sports-only framing as the whole brand
+**Words to avoid:** luxury spa fluff, vague “best in Bali,” unpaid “guaranteed,” claiming free pickup on ATV/rafting/tubing, claiming **free quad biking**, claiming Gorilla Cave / Kuber cave / waterfall-cave ATV, claiming the jeep reaches the Mount Batur summit, claiming food is cooked or served inside the 4×4, sports-only framing as the whole brand
 **Glossary:**
 | Term | Meaning |
 |------|---------|
@@ -130,6 +136,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.27 (2026-10-03) — ATV cluster now answers the guest keyword list: quad biking Ubud price, Bali Quad biking, Ubud quad bike adventure, reviews, “best ATV ride.” Honest no: free quad ride, Gorilla Cave, waterfall-cave ATV. Spoke `/blog/ubud-quad-biking-price-2026` routes to `/tours/bali-atv-adventure`. Title still owns All New Bali Adventure. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.26 (2026-10-03) — Booking + SEO/GEO plan: measure WhatsApp first (`generate_lead`), convert ChatGPT/Direct `/book` and Google jeep/combo/cooking/cycling, then pull ATV Google from the location blog to the money page. Instagram bio must not use `/experiences`. No SeaBank. No Jungle Buggies 3-lap. No fake 999K. Detail: `docs/SEO-GEO-MARKETING-PLAN.md` §0.
 - v2.25 (2026-10-03) — GEO/SEO follows the GA4 traffic report (695 sessions, 4 Sept–1 Oct). ChatGPT is 22% of sessions — llms.txt now lists book URLs. ATV money-page title owns **All New Bali Adventure** so Google stops dumping ATV demand on the location blog only. Jeep / combo / cooking / cycling stay lead bullets. Retired dance / offering / 3-lap buggy URLs told not to cite. `generate_lead` key event is live in GA4; do not read Rp0 as no sales.
 - v2.24 (2026-10-01) — Stopped publishing any bank / Seabank account. Payment instructions go on official WhatsApp only after the guest agrees.

@@ -220,6 +220,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/atv-rafting-combo',
     secondaryLabel: 'Add Ayung rafting',
   },
+  'ubud-quad-biking-price-2026': {
+    headline: 'Book Ubud quad biking on WhatsApp',
+    body: 'From IDR 750,000 with lunch at All New Bali Adventure. Not Gorilla Cave. Pickup 400K or self-meet. No deposit to inquire.',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'Book the quad / ATV',
+    secondaryHref: '/tours/atv-rafting-combo',
+    secondaryLabel: 'Add Ayung rafting',
+  },
   'tandem-atv-ubud-price': {
     headline: 'Book single or tandem ATV on WhatsApp',
     body: 'Say 1 or 2 riders + hotel. Single from IDR 750,000 · tandem IDR 1,100,000 for two. Pickup IDR 400,000 or self-meet. No payment to inquire.',

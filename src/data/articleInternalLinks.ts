@@ -61,6 +61,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   atv: [
     { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV Ubud price calculator', href: '/planners/atv-price-calculator' },
+    { title: 'Ubud quad biking price 2026', href: '/blog/ubud-quad-biking-price-2026' },
     { title: 'ATV cost near Ubud 2026', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
     { title: 'Tandem ATV price', href: '/blog/tandem-atv-ubud-price' },
     { title: 'ATV for beginners', href: '/blog/bali-atv-for-beginners-first-time-guide' },
@@ -236,6 +237,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'tandem-atv-ubud-price': 'atv',
   'bali-atv-for-beginners-first-time-guide': 'atv',
   'how-much-does-atv-cost-bali-ubud-2026': 'atv',
+  'ubud-quad-biking-price-2026': 'atv',
   'private-atv-vs-mass-market-ubud': 'atv',
   'bali-atv-tour-ubud-guide': 'atv',
   'bali-atv-all-new-bali-adventure-location-guide': 'atv',

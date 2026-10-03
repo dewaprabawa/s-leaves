@@ -169,7 +169,7 @@ Diet does not lock you to one session. Request veg / vegan on either clock — [
   {
     slug: 'mount-batur-sunrise-jeep-tour-guide-2026',
     title: 'Private Mount Batur Jeep Guide (2026)',
-    seoTitle: 'Batur Jeep Itinerary 2026 | No-Hike Clock',
+    seoTitle: 'Batur Jeep No Hike | From 750K',
     excerpt:
       'No-hike 4×4 to the Mount Batur crater rim — 6–7 hours, island-wide pickup, IDR tiers, meal included. 2026 itinerary from Ubud and south Bali.',
     publishedAt: '2026-09-19',

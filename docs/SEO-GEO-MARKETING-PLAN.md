@@ -44,6 +44,29 @@ Measure WhatsApp, convert the traffic we already get (Google jeep / combo / cook
 | Instagram 28 sessions, 11s, `/experiences` 25 | Bio link is wrong. Point it at ATV or ATV+rafting. |
 | 0 key events / Rp0 | Measurement gap. `generate_lead` marked 3 Oct. Revenue stays Rp0 until a `purchase` event exists. Do not read Rp0 as no sales. |
 
+### GSC baseline (2 Aug–29 Sep 2026, Web)
+
+Export: `sekarbaliactivity.com-Performance-on-Search-2026-10-03.xlsx` · **129 clicks · 3,458 impressions · ~3.7% CTR**. Indonesia 110 of 129 clicks. Mobile and desktop split ~even.
+
+| Page / query | Imp | Clicks | CTR | Pos | Fix |
+|---|-----|--------|-----|-----|-----|
+| `/blog/how-much-does-atv-cost-bali-ubud-2026` | 786 | 4 | 0.5% | 8.3 | Title now **ATV Price Bali Ubud \| From 750K** (people search *price*, not *cost*) |
+| `/blog/bali-atv-all-new-bali-adventure-location-guide` | 416 | 28 | 6.7% | 6.4 | Keep brand clicks; title is **Location \| Sedang** so it stops looking like the product |
+| `/tours/bali-atv-adventure` | 48 | 1 | 2.1% | 9.3 | Own **All New ATV** + price in the description |
+| `all new bali adventure` | 163 | 22 | 13.5% | 6.8 | Location blog wins — OK if it hands off to the tour URL |
+| `all new atv` | 82 | 1 | 1.2% | 5.3 | Money-page snippet now says **All New ATV Bali from 750K** |
+| `atv price` / `how much is atv in bali` / `atv price in bali` | 16+ | 0 | 0% | 4–6 | Same cost article — *price* in title + first sentence |
+| `/blog/what-is-lawar-balinese-dish` | 160 | 1 | 0.6% | 8.1 | Title **Tumang Class 450K** so lawar traffic can book cooking |
+| `/blog/bali-atv-for-beginners-first-time-guide` | 157 | 2 | 1.3% | 6.5 | **First-Time ATV Ubud \| From 750K** |
+| `/blog/tandem-atv-ubud-price` | 119 | 1 | 0.8% | 7.5 | **1.1M · 750K** in the title |
+| Jeep guide / canyon tubing guide | 64 / 64 | 0 | 0% | ~8 | IDR in titles (750K / 500K) |
+| `umah bali kuno coffee` | 19 | 0 | 0% | 4.0 | Luwak title **Umah Kuno Luwak Coffee \| Ethical 800K** |
+| Retired `/tours/balinese-dance-class` | 44 | 2 | 4.5% | 9.6 | Already 301 → workshops. Do not revive. |
+| Product snippets | 136 | 1 | 0.7% | 7.7 | Snippet CTR follows the new money-page / price titles |
+| `bali` (homepage) | 126 | 0 | 0% | 1.2 | Ignore — too generic |
+
+Do **not** write new posts for temple-dress (76 imp, pos 26) or airport transfer (83 imp, pos 52). Refresh titles on pages that already rank.
+
 ### Booking plan (activation)
 
 **Goal:** more WhatsApp threads with activity + date + guests + IDR already filled.

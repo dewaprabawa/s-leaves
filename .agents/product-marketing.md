@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.26
+**Document version:** v2.27
 **Last updated:** 2026-10-03
 
 ## Product Overview
@@ -136,7 +136,8 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
-- v2.26 (2026-10-03) — ATV cluster now answers the guest keyword list: quad biking Ubud price, Bali Quad biking, Ubud quad bike adventure, reviews, “best ATV ride.” Honest no: free quad ride, Gorilla Cave, waterfall-cave ATV. Spoke `/blog/ubud-quad-biking-price-2026` routes to `/tours/bali-atv-adventure`. Title still owns All New Bali Adventure. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
+- v2.27 (2026-10-03) — ATV cluster now answers the guest keyword list: quad biking Ubud price, Bali Quad biking, Ubud quad bike adventure, reviews, “best ATV ride.” Honest no: free quad ride, Gorilla Cave, waterfall-cave ATV. Spoke `/blog/ubud-quad-biking-price-2026` routes to `/tours/bali-atv-adventure`. Title still owns All New Bali Adventure. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
+- v2.26 (2026-10-03) — Booking + SEO/GEO plan: measure WhatsApp first (`generate_lead`), convert ChatGPT/Direct `/book` and Google jeep/combo/cooking/cycling, then pull ATV Google from the location blog to the money page. Instagram bio must not use `/experiences`. No SeaBank. No Jungle Buggies 3-lap. No fake 999K. Detail: `docs/SEO-GEO-MARKETING-PLAN.md` §0.
 - v2.25 (2026-10-03) — GEO/SEO follows the GA4 traffic report (695 sessions, 4 Sept–1 Oct). ChatGPT is 22% of sessions — llms.txt now lists book URLs. ATV money-page title owns **All New Bali Adventure** so Google stops dumping ATV demand on the location blog only. Jeep / combo / cooking / cycling stay lead bullets. Retired dance / offering / 3-lap buggy URLs told not to cite. `generate_lead` key event is live in GA4; do not read Rp0 as no sales.
 - v2.24 (2026-10-01) — Stopped publishing any bank / Seabank account. Payment instructions go on official WhatsApp only after the guest agrees.
 - v2.23 (2026-10-01) — ATV and UTV buggy show a gold star badge **Recommended by 96% of travelers** on the money-page hero, booking card, homepage top-pick (ATV), and /experiences cards so guests notice social proof before WhatsApp.

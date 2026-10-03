@@ -324,6 +324,15 @@ Six people — kids or adults — already need meals, toilets, and photos. A boa
 
 If a planner sends FINNS, La Favela, Cretya, Savaya, jewelry class, spa, or watersports, we say **yes to the driver** and **no to faking those tickets**. Details: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-you-book).
 
+## What to book instead of a packed van day
+
+Google already sends guests here looking for a shorter week. Keep one paid pin a day:
+
+- **[Private Batur jeep](/tours/batur-sunrise-jeep-tour)** — no-hike sunrise, meal included
+- **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — flagship land + water from IDR 1,250,000
+- **[ATV at All New Bali Adventure](/tours/bali-atv-adventure)** — book the tour page, not only the arena guide
+- **[Tumang cooking](/tours/balinese-cooking-class)** or **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)** — free Ubud pickup
+
 ## Send the cut-down plan
 
 WhatsApp a **consultation** from **[the private itinerary page](/tours/bali-private-itinerary)** with group type, dates, and the skip list you already agree on. No booking form. We quote **driver + the SKUs we operate** — no payment to inquire.

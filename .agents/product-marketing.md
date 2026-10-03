@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v2.24
-**Last updated:** 2026-10-01
+**Document version:** v2.25
+**Last updated:** 2026-10-03
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — flagship ATV + Ayung rafting, village, food, and day tours with clear IDR pricing and WhatsApp booking.
@@ -126,10 +126,11 @@
 ## Goals
 **Business goal:** Increase direct WhatsApp bookings across travel & activity categories
 **Conversion action:** Open booking → WhatsApp with prefilled details (primary); secondary explore experiences / packages
-**Current metrics:** GA4 `G-TJW418QSF8` pageviews are live. Mark `generate_lead` as a key event (Admin → Events) so WhatsApp bookings show in Key events / session key event rate. Revenue stays Rp0 until a paid `purchase` event exists.
+**Current metrics:** GA4 `G-TJW418QSF8`, last 28 days (4 Sept–1 Oct 2026): **695 sessions**, 52.5% engaged. Channels: **Google organic 38%** (best quality), **direct 32%**, **ChatGPT 22%**, Instagram 4% (11s). `generate_lead` is now a key event (created 3 Oct 2026) — Traffic reports will stay 0 key events until WhatsApp taps after that date land. Revenue stays Rp0 until a paid `purchase` event exists. Google ranks the ATV location blog more than `/tours/bali-atv-adventure`; jeep, combo, cooking, cycling, and motorbike money pages already get organic.
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.25 (2026-10-03) — GEO/SEO follows the GA4 traffic report (695 sessions, 4 Sept–1 Oct). ChatGPT is 22% of sessions — llms.txt now lists book URLs. ATV money-page title owns **All New Bali Adventure** so Google stops dumping ATV demand on the location blog only. Jeep / combo / cooking / cycling stay lead bullets. Retired dance / offering / 3-lap buggy URLs told not to cite. `generate_lead` key event is live in GA4; do not read Rp0 as no sales.
 - v2.24 (2026-10-01) — Stopped publishing any bank / Seabank account. Payment instructions go on official WhatsApp only after the guest agrees.
 - v2.23 (2026-10-01) — ATV and UTV buggy show a gold star badge **Recommended by 96% of travelers** on the money-page hero, booking card, homepage top-pick (ATV), and /experiences cards so guests notice social proof before WhatsApp.
 - v2.22 (2026-10-01) — ATV meet is **All New Bali Adventure** in Sedang (Jl. Raya Krasan), **not** the Banjar Kenderan office (Jalan Tunjung Biru / GBP). Gold “Meet here — not the office” note on ATV + ATV+rafting tour pages and booking cards, plus contact, know-before, location guide, and venue chips. Hotel pickup remains IDR 400K. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.

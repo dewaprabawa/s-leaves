@@ -21,6 +21,18 @@
 **Conversion path we optimize for:**  
 Search / AI answer → tour money page → **WhatsApp Consultation** or **Book** → paid guest.
 
+### GA4 baseline (4 Sept–1 Oct 2026)
+
+| Channel | Sessions | Share | Quality |
+|---------|----------|-------|---------|
+| Google organic | 262 | 37.7% | Best — 66% engaged, 1m 10s |
+| Direct | 222 | 31.9% | Mixed — 32% engaged |
+| ChatGPT (`chatgpt.com / ai-assistant`) | 153 | 22.0% | Real AI demand — 60% engaged |
+| Instagram | 28 | 4.0% | Weak — 11 seconds |
+| Other (Bing, FB, Perplexity, spam) | 30 | 4.3% | Ignore Bing/FB/`dubgtcg.dbz` |
+
+**695 sessions · 0 key events in that window** (`generate_lead` marked as a key event 3 Oct 2026). Google already ranks jeep, ATV+rafting combo, cooking, cycling, motorbike. ATV Google demand lands on the **location blog**, not `/tours/bali-atv-adventure` — GEO now cites the tour URL first. ChatGPT already opens `/book` and money pages; llms.txt lists those URLs. Instagram should not use `/experiences` as the bio link.
+
 ---
 
 ## 2) Tour portfolio (money pages)

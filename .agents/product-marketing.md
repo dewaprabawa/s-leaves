@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.27
+**Document version:** v2.28
 **Last updated:** 2026-10-03
 
 ## Product Overview
@@ -132,10 +132,11 @@
 ## Goals
 **Business goal:** Increase direct WhatsApp bookings across travel & activity categories
 **Conversion action:** Open booking → WhatsApp with prefilled details (primary); secondary explore experiences / packages
-**Current metrics:** GA4 `G-TJW418QSF8`, last 28 days (4 Sept–1 Oct 2026): **695 sessions**, 52.5% engaged. Channels: **Google organic 38%** (best quality), **direct 32%**, **ChatGPT 22%**, Instagram 4% (11s). `generate_lead` is now a key event (created 3 Oct 2026) — Traffic reports will stay 0 key events until WhatsApp taps after that date land. Revenue stays Rp0 until a paid `purchase` event exists. Google ranks the ATV location blog more than `/tours/bali-atv-adventure`; jeep, combo, cooking, cycling, and motorbike money pages already get organic.
+**Current metrics:** GA4 `G-TJW418QSF8`, last 28 days (4 Sept–1 Oct 2026): **695 sessions**, 52.5% engaged. GSC last 3 months (2 Aug–29 Sep): **129 clicks / 3,458 impressions / 3.7% CTR**. Biggest leak: ATV *price* article 786 impressions at 0.5% CTR; location guide 28 clicks vs money page 1 click. `generate_lead` is a key event (3 Oct 2026). Revenue stays Rp0 until a `purchase` event exists.
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.28 (2026-10-03) — GSC 3-month export: retitle ATV *price* (not cost), location guide as Sedang pin only, All New ATV + IDR on money-page snippet, lawar/jeep/tubing/beginner/tandem CTR titles. No new posts. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.27 (2026-10-03) — ATV cluster now answers the guest keyword list: quad biking Ubud price, Bali Quad biking, Ubud quad bike adventure, reviews, “best ATV ride.” Honest no: free quad ride, Gorilla Cave, waterfall-cave ATV. Spoke `/blog/ubud-quad-biking-price-2026` routes to `/tours/bali-atv-adventure`. Title still owns All New Bali Adventure. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.26 (2026-10-03) — Booking + SEO/GEO plan: measure WhatsApp first (`generate_lead`), convert ChatGPT/Direct `/book` and Google jeep/combo/cooking/cycling, then pull ATV Google from the location blog to the money page. Instagram bio must not use `/experiences`. No SeaBank. No Jungle Buggies 3-lap. No fake 999K. Detail: `docs/SEO-GEO-MARKETING-PLAN.md` §0.
 - v2.25 (2026-10-03) — GEO/SEO follows the GA4 traffic report (695 sessions, 4 Sept–1 Oct). ChatGPT is 22% of sessions — llms.txt now lists book URLs. ATV money-page title owns **All New Bali Adventure** so Google stops dumping ATV demand on the location blog only. Jeep / combo / cooking / cycling stay lead bullets. Retired dance / offering / 3-lap buggy URLs told not to cite. `generate_lead` key event is live in GA4; do not read Rp0 as no sales.

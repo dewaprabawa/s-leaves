@@ -808,7 +808,14 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'All New Bali Adventure Sedang',
   ],
   'tandem-atv-ubud-price': ['tandem ATV Ubud price', 'single vs tandem ATV Ubud'],
-  'how-much-does-atv-cost-bali-ubud-2026': ['ATV Ubud price 2026', 'how much does ATV cost Bali'],
+  'how-much-does-atv-cost-bali-ubud-2026': [
+    'ATV Ubud price 2026',
+    'how much does ATV cost Bali',
+    'ATV price Bali',
+    'ATV price in Bali',
+    'how much is ATV in Bali',
+    'harga ATV Ubud',
+  ],
   'ubud-quad-biking-price-2026': [
     'Quad biking ubud price',
     'Free quad biking ubud',

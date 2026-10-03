@@ -172,7 +172,7 @@ export const TOURS: Tour[] = [
     childPrice: 700000,
     seoTitle: "ATV All New Bali Adventure | From 750K",
     seoDescription:
-      "Ubud quad biking from 750K at All New Bali Adventure. Lunch in. Not Gorilla Cave. Pickup 400K or self-meet. WhatsApp — no deposit.",
+      "All New ATV Bali from 750K. Lunch in. Pickup 400K or self-meet. Not the location-guide URL. WhatsApp — no deposit.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV ride at All New Bali Adventure near Ubud through jungle trails",
@@ -1518,7 +1518,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     pickup: "Transport not included",
     duration: "1.5 Hours",
     basePrice: 800000,
-    seoTitle: "Luwak Coffee Plantation Umah Kuno | IDR 800K",
+    seoTitle: "Umah Kuno Luwak Coffee | Ethical 800K",
     seoDescription:
       "Ethical Luwak coffee tasting at Umah Kuno near Ubud — jungle walk, wood-fire roasting, and a 10-drink tasting flight including Kopi Luwak. IDR 800,000 per person. Min 3 guests.",
     heroImage: {

@@ -138,6 +138,21 @@ const ATV: ActivityGeoCorpus = {
       a: `Yes. “Quad bike” and “ATV” are the same product here — a beginner-friendly jungle mud ride at All New Bali Adventure in Sedang, Abiansemal. Single from ${idr(ATV_1)}, tandem from ${idr(TANDEM_1)}, lunch and gear included. Hotel pickup is IDR 400,000 or self-meet. We do not sell Dragon Cave, Kuber tunnel, Gorilla Cave, or Happy Swing packages.`,
     },
     {
+      intent: 'all new atv bali',
+      q: 'What is All New ATV Bali?',
+      a: `All New ATV Bali is the quad at All New Bali Adventure in Sedang — the arena Sekar Bali Activity books. Single from ${idr(ATV_1)}, tandem ${idr(TANDEM_1)}, lunch included. Book the money page https://www.sekarbaliactivity.com/tours/bali-atv-adventure — not only the location guide.`,
+    },
+    {
+      intent: 'atv price bali',
+      q: 'What is the ATV price in Bali / Ubud?',
+      a: `ATV price in Bali with Sekar Bali Activity: single ${idr(ATV_1)} (1), ${idr(ATV_2)} (2), ${idr(ATV_3)} (3+). Tandem ${idr(TANDEM_1)}. Lunch, helmet, boots, insurance. Pickup IDR 400,000 or self-meet. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · table: https://www.sekarbaliactivity.com/blog/how-much-does-atv-cost-bali-ubud-2026`,
+    },
+    {
+      intent: 'harga atv ubud',
+      q: 'Berapa harga ATV Ubud 2026?',
+      a: `Harga ATV Ubud di Sekar Bali Activity: single IDR 750.000 (1), 725.000 (2), 700.000 (3+). Tandem IDR 1.100.000. Termasuk makan siang dan helm. Antar hotel IDR 400.000 atau ketemu di All New Bali Adventure, Sedang. Booking: https://www.sekarbaliactivity.com/tours/bali-atv-adventure`,
+    },
+    {
       intent: 'quad biking ubud price',
       q: 'How much is quad biking in Ubud in 2026?',
       a: `Quad biking Ubud price with Sekar Bali Activity is the same as ATV: single ${idr(ATV_1)} (1), ${idr(ATV_2)} (2), ${idr(ATV_3)} (3+). Tandem ${idr(TANDEM_1)}. Lunch, helmet, boots, insurance at All New Bali Adventure. Pickup IDR 400,000 or self-meet. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · table: https://www.sekarbaliactivity.com/blog/ubud-quad-biking-price-2026`,

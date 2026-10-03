@@ -31,7 +31,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'tandem-atv-ubud-price',
     title: 'Single vs Tandem ATV Near Ubud: 2026 Price and Who Should Share',
-    seoTitle: 'Tandem ATV Ubud Price | Single vs Share 1.1M',
+    seoTitle: 'Tandem ATV Price Ubud | 1.1M · 750K',
     excerpt:
       'Tandem ATV Ubud is IDR 1,100,000 for two on one bike; single from IDR 750,000. Who should share, pickup IDR 400K vs self-meet, WhatsApp booking.',
     publishedAt: '2026-09-21',
@@ -222,8 +222,9 @@ A Tampaksiring Tirta Empul morning sits next to [Umah Kuno luwak tasting](/tours
   {
     slug: 'bali-atv-for-beginners-first-time-guide',
     title: 'Bali ATV for Beginners (2026)',
+    seoTitle: 'First-Time ATV Ubud | From 750K',
     excerpt:
-      'First-time Bali ATV at All New Bali Adventure near Ubud from IDR 750,000 — no experience needed, optional pickup or self-meet.',
+      'First-time All New ATV Bali from IDR 750,000 — no experience needed. Lunch in. Pickup 400K or self-meet. WhatsApp — no deposit.',
     publishedAt: '2026-09-09',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
@@ -323,15 +324,15 @@ Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) nea
   },
   {
     slug: 'how-much-does-atv-cost-bali-ubud-2026',
-    title: 'ATV Cost Near Ubud (2026 Prices)',
-    seoTitle: 'ATV Cost Ubud 2026 | From IDR 750K',
+    title: 'ATV Price in Bali / Ubud (2026)',
+    seoTitle: 'ATV Price Bali Ubud | From 750K',
     excerpt:
-      'ATV near Ubud from IDR 750K (single) / 1.1M (tandem). Lunch, gear, insurance included. Pickup fees and tubing combos explained.',
+      'ATV price in Bali / Ubud from IDR 750,000 (single) / 1.1M (tandem). Lunch and gear in. Pickup 400K or self-meet. Book WhatsApp.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**How much does an ATV cost in Bali near Ubud?** With Sekar Bali Activity in 2026, a **Single ATV** starts at **IDR 750,000** (lower tier rates for 2+ and 3+ riders) and a **Tandem ATV** starts at **IDR 1,100,000** for two people. Packages at **All New Bali Adventure** include lunch, boot shoes, helmet, insurance, and a full safety briefing. Hotel pickup is optional.
+**What is the ATV price in Bali / Ubud?** With Sekar Bali Activity in 2026, a **Single ATV** starts at **IDR 750,000** (lower tier rates for 2+ and 3+ riders) and a **Tandem ATV** starts at **IDR 1,100,000** for two people. Packages at **All New Bali Adventure** include lunch, boot shoes, helmet, insurance, and a full safety briefing. Hotel pickup is optional.
 
 > **Key Takeaways**
 > - Single ATV: **IDR 750,000** (1 pax) · **IDR 725,000** (2) · **IDR 700,000** (3+)
@@ -1566,7 +1567,8 @@ Open the [Whitewater Rafting tour page](/tours/whitewater-rafting), tap **Book N
   {
     slug: 'bali-canyon-tubing-guide-ubud',
     title: 'Bali Canyon Tubing Near Ubud: Wos River Float, Prices & Tips (2026)',
-    excerpt: 'Float the Wos River on a canyon tubing adventure near Ubud — IDR 500,000, or IDR 450,000 for 2+. Beginner-friendly and easy to combine with ATV.',
+    seoTitle: 'Canyon Tubing Ubud | 500K · 450K 2+',
+    excerpt: 'Canyon tubing Bali on the Wos River — IDR 500,000, or IDR 450,000 for 2+. Beginner-friendly. Pickup 400K or self-meet. Book WhatsApp.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/canyon-tubing.jpg',
@@ -1619,7 +1621,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
   {
     slug: 'bali-adventure-packages-prices-2026',
     title: 'Bali Adventure Prices 2026',
-    seoTitle: 'Ubud Activity Price List 2026 | Every SKU',
+    seoTitle: 'Bali Activity Prices 2026 | From 450K',
     excerpt: 'ATV from IDR 750K, rafting and tubing 500K (450K for 2+), ricefield cycling 750K, private Mount Batur jeep sit-in 2M for 2 / tracking 1.8M for 2 / 750K (3+), Kintamani Day 1.3M promo, Tirta Empu 1.2M, Luwak 800K, cooking 450K, full-day Ubud from 600K — 2026 package prices in one place.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
@@ -1690,14 +1692,15 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
   },
   {
     slug: 'bali-atv-all-new-bali-adventure-location-guide',
-    title: 'All New Bali Adventure ATV Arena',
-    seoTitle: 'All New Bali Adventure | ATV Arena Ubud',
-    excerpt: 'All New Bali Adventure ATV arena near Ubud — directions, pickup options, and what to expect on arrival.',
+    title: 'All New Bali Adventure Location (Sedang Pin)',
+    seoTitle: 'All New Bali Adventure Location | Sedang',
+    excerpt:
+      'Directions to All New Bali Adventure in Sedang. Book the ATV from 750K on the tour page — this URL is the pin only.',
     publishedAt: '2026-09-02',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**Where is the Bali ATV arena near Ubud?** All ATV rides booked through Sekar Bali Activity take place at **All New Bali Adventure** — a dedicated jungle ATV arena on **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**, near Ubud. The arena’s own site is [allnewbaliadventure.com](https://allnewbaliadventure.com/). We book the ride (WhatsApp, published IDR) — we do not operate the park.
+**Where is All New Bali Adventure?** This page is **directions only**. Book the ride on [Bali ATV Adventure](/tours/bali-atv-adventure) — **All New ATV Bali from IDR 750,000**, lunch in. All ATV rides booked through Sekar Bali Activity meet at **All New Bali Adventure** on **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**, near Ubud. The arena’s own site is [allnewbaliadventure.com](https://allnewbaliadventure.com/). We book the ride (WhatsApp, published IDR) — we do not operate the park.
 
 > **Key Takeaways**
 > - **Arena name:** All New Bali Adventure — **not the Sekar Bali office**
@@ -1884,8 +1887,9 @@ Choose [Ubud Ricefield Cycling](/tours/ubud-ricefield-cycling-tour) for culture 
   {
     slug: 'cycling-cooking-class-ubud-full-day-itinerary',
     title: 'Cycling + Tumang Cooking Class Day in Ubud',
+    seoTitle: 'Cycling + Cooking Ubud | 750K + 450K',
     excerpt:
-      'Pejeng ricefield cycling (IDR 750K) plus Tumang Bali Cooking Class (promo from IDR 450,000) — full-day timeline, inclusions, and WhatsApp booking.',
+      'Pejeng ricefield cycling (IDR 750K, free Ubud pickup) plus Tumang cooking (promo 450K) — one WhatsApp day. No deposit to inquire.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/cycling/rice-field-bikes.jpg',

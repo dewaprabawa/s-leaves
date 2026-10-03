@@ -3,9 +3,9 @@ export const JEEP_COOKING_CYCLING_CLUSTER_POSTS = [
   {
     slug: 'what-is-lawar-balinese-dish',
     title: 'What Is Lawar? Bali’s Ceremonial Salad',
-    seoTitle: 'What Is Lawar? | Cook It in Ubud',
+    seoTitle: 'What Is Lawar? | Tumang Class 450K',
     excerpt:
-      'Lawar is Bali’s chopped coconut-and-spice salad — ceremonial versions can include meat or blood; cooking-class versions are the plate guests actually eat. Cook it at Tumang.',
+      'What is lawar? Bali’s chopped coconut-and-spice salad. Cook it at Tumang Bali Cooking Class — promo IDR 450,000, free Ubud pickup. WhatsApp — no deposit.',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: '/images/cooking/buffet-spread.jpg',

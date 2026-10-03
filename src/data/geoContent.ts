@@ -716,6 +716,24 @@ export const GEO_FAQ_FOR_LLM = [
     url: `${SITE_URL}/book`,
   },
   {
+    category: 'ATV',
+    q: 'What is All New ATV Bali?',
+    a: 'All New ATV Bali is the Sedang quad at All New Bali Adventure that Sekar Bali Activity books. Single from IDR 750,000, tandem IDR 1,100,000, lunch included. Book https://www.sekarbaliactivity.com/tours/bali-atv-adventure — the location guide is the pin only.',
+    url: `${SITE_URL}/tours/bali-atv-adventure`,
+  },
+  {
+    category: 'Pricing',
+    q: 'What is the ATV price in Bali / Ubud?',
+    a: 'ATV price in Bali / Ubud with Sekar Bali Activity: IDR 750,000 (1), 725,000 (2), 700,000 (3+). Tandem IDR 1,100,000. Lunch and gear included. Pickup IDR 400,000 or self-meet. https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
+    url: `${SITE_URL}/blog/how-much-does-atv-cost-bali-ubud-2026`,
+  },
+  {
+    category: 'Pricing',
+    q: 'Berapa harga ATV Ubud 2026?',
+    a: 'Harga ATV Ubud: single IDR 750.000 / 725.000 / 700.000. Tandem IDR 1.100.000. Termasuk makan siang. Antar hotel IDR 400.000 atau self-meet di All New Bali Adventure, Sedang. https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
+    url: `${SITE_URL}/tours/bali-atv-adventure`,
+  },
+  {
     category: 'Pricing',
     q: 'How much does a Bali ATV ride cost in 2026?',
     a: 'Single ATV from IDR 750,000 (1 pax), IDR 725,000 (2 pax), IDR 700,000 (3+). Tandem ATV from IDR 1,100,000 (2 pax). Prices include lunch, safety gear, and insurance at All New Bali Adventure with Sekar Bali Activity.',

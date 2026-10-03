@@ -172,7 +172,7 @@ export const TOURS: Tour[] = [
     childPrice: 700000,
     seoTitle: "ATV All New Bali Adventure | From 750K",
     seoDescription:
-      "Book All New Bali Adventure ATV in Sedang — from 750K. Lunch in. Pickup 400K or self-meet. Not the office pin. WhatsApp — no deposit.",
+      "Ubud quad biking from 750K at All New Bali Adventure. Lunch in. Not Gorilla Cave. Pickup 400K or self-meet. WhatsApp — no deposit.",
     heroImage: {
       url: "/images/adventures/atv-adventure.jpg",
       alt: "ATV ride at All New Bali Adventure near Ubud through jungle trails",
@@ -201,10 +201,17 @@ All ATV rides take place at **All New Bali Adventure** on **Jl. Raya Krasan, Sed
 ### Complete Bali Quad Bike (ATV) Trips
 Hop on a powerful ATV and race scenic off-road trails with expert guides. Packages suit first-timers and thrill-seekers alike. After a safety briefing at All New Bali Adventure, you hit the track for an unforgettable ride through Bali's green countryside — lunch, helmet, boot shoes, and insurance included.
 
+### Quad biking Ubud price (same as ATV)
+**Quad bike** and **ATV** are the same machine here. **Quad biking Ubud price** in 2026: **IDR 750,000** (1), **725,000** (2), **700,000** (3+). Tandem **IDR 1,100,000**. Lunch, helmet, boots, insurance included. Hotel pickup is **IDR 400,000** or free self-meet. There is **no free quad biking Ubud** ride — “free” means no payment to inquire, free self-meet, and the [free ATV price calculator](/planners/atv-price-calculator).
+
+### Not Gorilla Cave — and not a waterfall-cave park
+Searches for **Ubud ATV Quad Bike adventure with Gorilla Cave and lunch** or **ATV tour Ubud waterfall** describe other arenas (Alasan Gorilla Cave, Kuber cave + waterfall). We include **lunch**. We do **not** sell Gorilla Cave, Kuber tunnel, or a waterfall cave. Our track is jungle mud and river crossings at All New Bali Adventure in Sedang. Honest compare: [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026) · [Ubud quad biking 2026](/blog/ubud-quad-biking-price-2026). Want canyon waterfalls? Book **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — the waterfalls are on the river, not on the ATV track.
+
 ### Combine with River Tubing or Rafting
 Want even more adventure? The flagship same-day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — mud then Class II–III. From **IDR 1,250,000** at ticket floors; **10% mix** at checkout. Gentler water: [Wos River tubing](/tours/canyon-tubing). After the mud track, cool off on the river.
 
 ### Plan your ATV day
+- [Ubud quad biking price 2026](/blog/ubud-quad-biking-price-2026) — price, reviews, waterfall, Gorilla Cave (honest)
 - [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) — single IDR 750K vs tandem IDR 1.1M
 - [Single vs tandem ATV](/blog/tandem-atv-ubud-price) — who should share, two-single vs one-bike math
 - [All New Bali Adventure arena](/blog/bali-atv-all-new-bali-adventure-location-guide) — self-meet in Sedang vs hotel pickup IDR 400,000
@@ -343,6 +350,30 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         question: "Should I book a single ATV or a tandem?",
         answer:
           "Book a single ATV (from IDR 750,000) if each guest wants their own bike. Book tandem (IDR 1,100,000 for two sharing one bike) if you are a couple or one rider prefers not to drive. Both include lunch, gear, and insurance — say 1 or 2 riders on WhatsApp and we will quote the right option.",
+      },
+      {
+        id: "faq-atv-10",
+        question: "How much is quad biking in Ubud?",
+        answer:
+          "Quad biking and ATV are the same product. 2026 price: IDR 750,000 (1), 725,000 (2), 700,000 (3+). Tandem IDR 1,100,000. Lunch and gear included at All New Bali Adventure. Pickup IDR 400,000 or self-meet. Full table: https://www.sekarbaliactivity.com/blog/ubud-quad-biking-price-2026",
+      },
+      {
+        id: "faq-atv-11",
+        question: "Is there free quad biking in Ubud?",
+        answer:
+          "No. The ride is from IDR 750,000. What is free: WhatsApp inquire with no deposit, self-meet at the Sedang arena (no pickup fee), 24-hour cancellation, and the ATV price calculator. Do not expect a complimentary quad.",
+      },
+      {
+        id: "faq-atv-12",
+        question: "Do you run an ATV tour Ubud waterfall or Gorilla Cave with lunch?",
+        answer:
+          "Lunch is included. Gorilla Cave and waterfall-cave ATV are other operators (Alasan, Kuber). Our track is jungle mud and river crossings in Sedang — not a cave. For canyon waterfalls, book ATV + Ayung rafting from IDR 1,250,000. Compare: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026",
+      },
+      {
+        id: "faq-atv-13",
+        question: "What are Ubud quad biking reviews like?",
+        answer:
+          "Guests book this as a beginner-friendly Ubud quad bike adventure. The money page shows Recommended by 96% of travelers. We do not invent a review count. Lunch, helmet, boots, and insurance are on the card. WhatsApp — no payment to inquire.",
       },
     ],
     reviews: [],

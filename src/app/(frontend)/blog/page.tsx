@@ -16,6 +16,7 @@ const ACTIVITY_GUIDES = [
   { label: 'Cycling guide', href: '/blog/ubud-ricefield-cycling-tour-guide-2026' },
   { label: 'ATV', href: '/tours/bali-atv-adventure' },
   { label: 'ATV prices', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
+  { label: 'Quad biking Ubud', href: '/blog/ubud-quad-biking-price-2026' },
   { label: 'Rafting', href: '/tours/whitewater-rafting' },
   { label: 'Ayung rafting guide', href: '/blog/bali-whitewater-rafting-near-ubud-guide' },
   { label: 'Rafting price 2026', href: '/blog/rafting-ubud-price-2026' },

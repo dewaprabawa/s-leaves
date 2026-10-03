@@ -74,6 +74,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'ATV next to rafting, cooking, and jeep prices.',
     },
     {
+      title: 'Ubud quad biking price 2026',
+      href: '/blog/ubud-quad-biking-price-2026',
+      blurb: 'Price, reviews, waterfall, and Gorilla Cave — honest answers.',
+    },
+    {
       title: 'ATV cost near Ubud (2026)',
       href: '/blog/how-much-does-atv-cost-bali-ubud-2026',
       blurb: 'Single & tandem IDR tiers, inclusions, and pickup fees.',

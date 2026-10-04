@@ -40,7 +40,7 @@ import {
 import { GEO_UPDATED } from "@/data/geoContent"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
-import { TIER_PRICES_IDR } from "@/lib/pricing"
+import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
 import { GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import {
@@ -84,6 +84,10 @@ function isSwingTour(tour: Tour) {
 
 function isMotorbikeTour(tour: Tour) {
   return tour.slug === MOTORBIKE_TRIP_SLUG
+}
+
+function isCyclingTour(tour: Tour) {
+  return tour.slug === "ubud-ricefield-cycling-tour"
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -788,6 +792,10 @@ export default async function TourPage({ params }: Props) {
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
                       Private
                     </span>
+                  ) : isCyclingTour(tour) ? (
+                    <span className="inline-flex rounded-full bg-brand-green px-3 py-1 text-xs font-bold uppercase tracking-wider text-sand">
+                      Promo
+                    </span>
                   ) : null}
                   <span className="inline-flex rounded-full bg-brand-green/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-brand-green">
                     {getTourCategoryLabel(tour.category)}
@@ -838,6 +846,13 @@ export default async function TourPage({ params }: Props) {
                       <span className="text-brand-green-light line-through opacity-70 font-semibold">
                         (was {formatIdr(MOTORBIKE_EAST_LIST_IDR)})
                       </span>
+                    </span>
+                  ) : isCyclingTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
+                        {formatIdr(CYCLING_LIST_IDR)}
+                      </span>
+                      Promo {formatIdr(CYCLING_PROMO_IDR)} / person · 625K (2) · 600K (3+)
                     </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">

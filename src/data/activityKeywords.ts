@@ -100,6 +100,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'ATV rafting combo Bali',
       'ATV + rafting Ubud',
       'ATV and rafting package Bali',
+      'ATV single + rafting Ubud',
     ],
     book: [
       'ATV rafting combo Ubud price',
@@ -107,10 +108,14 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'ATV Ayung rafting combo 2026',
       'land and water Bali adventure',
       'ATV rafting with lunch Ubud',
+      'tandem ATV rafting Ubud',
+      'ATV tandem + rafting combo',
+      'couple ATV rafting Ubud',
     ],
     compare: [
       'ATV rafting vs ATV tubing',
       'ATV + rafting vs booking separate',
+      'single vs tandem ATV rafting',
     ],
   },
   'whitewater-rafting': {
@@ -450,6 +455,9 @@ export const COMBO_KEYWORDS = [
   'ATV river tubing combo',
   'ATV rafting combo Bali',
   'ATV + Ayung rafting combo',
+  'ATV single + rafting Ubud',
+  'tandem ATV rafting Ubud',
+  'ATV tubing combo Ubud',
   'ATV Swing Heaven combo',
   'cycling cooking class Ubud',
   'cycling and cooking class in Ubud',
@@ -739,6 +747,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'ubud-atv-track-types-mud-jungle-vs-cave-tunnel': 'bali-atv-adventure',
   'atv-river-tubing-wos-river-bali': ['bali-atv-adventure', 'canyon-tubing'],
   'atv-rafting-combo-ubud-2026': ['atv-rafting-combo', 'bali-atv-adventure', 'whitewater-rafting'],
+  'atv-tandem-rafting-ubud-2026': ['atv-rafting-combo', 'bali-atv-adventure', 'whitewater-rafting'],
   'best-price-atv-rafting-cycling-scooter-ubud-2026': [
     'bali-atv-adventure',
     'whitewater-rafting',
@@ -1022,6 +1031,19 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'ATV rafting combo Ubud price',
     'ATV + rafting package Bali',
     'book ATV and rafting same day',
+    'ATV single + rafting Ubud',
+  ],
+  'atv-tandem-rafting-ubud-2026': [
+    'tandem ATV rafting Ubud',
+    'ATV tandem + rafting combo',
+    'couple ATV rafting Ubud',
+    'tandem ATV + Ayung rafting price',
+  ],
+  'atv-river-tubing-wos-river-bali': [
+    'ATV tubing combo Ubud',
+    'ATV + canyon tubing price',
+    'ATV river tubing Wos',
+    'book ATV and tubing same day',
   ],
   'best-price-atv-rafting-cycling-scooter-ubud-2026': [
     'best price ATV Ubud',

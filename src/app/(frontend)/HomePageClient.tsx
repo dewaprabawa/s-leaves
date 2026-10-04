@@ -239,8 +239,18 @@ const travelGuides = [
   },
   {
     title: "ATV + Rafting Combo Ubud 2026",
-    excerpt: "Flagship mud-then-rapids day from IDR 1.25M. 10% mix at checkout. WhatsApp booking.",
+    excerpt: "Flagship mud-then-rapids day from IDR 1.25M. Couple two singles 2.35M before 10%. WhatsApp.",
     href: "/blog/atv-rafting-combo-ubud-2026",
+  },
+  {
+    title: "ATV Tandem + Rafting Ubud 2026",
+    excerpt: "Couple share one bike then paddle. 2.0M before 10% mix, 1.8M after. Pickup 400K.",
+    href: "/blog/atv-tandem-rafting-ubud-2026",
+  },
+  {
+    title: "ATV + Wos Tubing Ubud 2026",
+    excerpt: "Gentler land + water from 1.25M. 10% mix. Pickup 400K — not free. No tubing lunch.",
+    href: "/blog/atv-river-tubing-wos-river-bali",
   },
   {
     title: "Cycling & Cooking Class in Ubud",

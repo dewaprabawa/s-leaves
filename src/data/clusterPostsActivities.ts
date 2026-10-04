@@ -242,6 +242,8 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | Single ATV | **750,000** | 2–4 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
 | Tandem ATV | **1,100,000** / bike | 2–4 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
 | ATV + Ayung rafting | **1,250,000** floors · **10% mix** | 5–7 hrs | IDR 400K once or self-meet | [ATV + rafting](/tours/atv-rafting-combo) |
+| Tandem ATV + rafting (couple) | **2,000,000** before mix · **1,800,000** after 10% | 5–7 hrs | IDR 400K once or self-meet | [Tandem + rafting](/blog/atv-tandem-rafting-ubud-2026) |
+| ATV + Wos tubing | **1,250,000** floors · **10% mix** | Half / full day | IDR 400K once or self-meet | [ATV + tubing](/blog/atv-river-tubing-wos-river-bali) |
 | Whitewater rafting | **500,000** · **450,000** for 2+ | 3 hrs | IDR 400K or self-meet | [Rafting](/tours/whitewater-rafting) |
 | Canyon tubing | **500,000** · **450,000** for 2+ | 2.5 hrs | IDR 400K or self-meet | [Tubing](/tours/canyon-tubing) |
 | Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | IDR 400K or self-meet Bongkasa | [Swing Heaven](/tours/swing-heaven-bali) |
@@ -273,7 +275,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 ## Adventure (mud, river, sunrise)
 
-**[ATV + Ayung rafting](/tours/atv-rafting-combo)** is the **flagship adventure day** — Sedang mud then Class II–III. From-price **IDR 1,250,000** (ATV 750K + rafting 500K). Same-day mix takes **10% off** at checkout. Pickup **IDR 400,000 once** or self-meet. Price story: [ATV + rafting Ubud 2026](/blog/atv-rafting-combo-ubud-2026).
+**[ATV + Ayung rafting](/tours/atv-rafting-combo)** is the **flagship adventure day** — Sedang mud then Class II–III. From-price **IDR 1,250,000** (ATV 750K + rafting 500K). Same-day mix takes **10% off** at checkout. Couple two singles **2.35M** before mix; [tandem + rafting](/blog/atv-tandem-rafting-ubud-2026) **2.0M** before mix. Pickup **IDR 400,000 once** or self-meet. Price story: [ATV + rafting Ubud 2026](/blog/atv-rafting-combo-ubud-2026). Gentler water: [ATV + Wos tubing](/blog/atv-river-tubing-wos-river-bali).
 
 **[ATV at All New Bali Adventure](/tours/bali-atv-adventure)** is the Sedang jungle mud track — beginner briefing, lunch, gear, insurance. Single from **IDR 750,000**, tandem **IDR 1,100,000**. We are not the Kuber tunnel or Dragon Cave routes. Honest compare: [ATV vs Kuber](/blog/bali-atv-vs-kuber-cave-2026). Sit-in south hour: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026). First-timer notes: [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide). Who should share a bike: [single vs tandem ATV price](/blog/tandem-atv-ubud-price). Scooter instead: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026).
 

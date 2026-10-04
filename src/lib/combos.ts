@@ -102,7 +102,7 @@ export const FEATURED_COMBOS: FeaturedCombo[] = [
     name: 'ATV + Canyon Tubing',
     tagline: 'Gentler river add-on',
     description:
-      'Race jungle ATV trails at All New Bali Adventure, then float the Wos River on a tube. Softer water than rafting.',
+      'Sedang ATV then Wos sit-on-tube. From IDR 1,250,000 at list (750K + 500K). 10% mix at checkout. Pickup IDR 400,000 once or self-meet. Tubing lunch not included.',
     primaryId: 'single-atv',
     mixIds: ['canyon-tubing'],
     image: '/images/adventures/atv-adventure.jpg',

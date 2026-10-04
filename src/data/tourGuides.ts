@@ -19,7 +19,12 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'ATV + rafting Ubud 2026',
       href: '/blog/atv-rafting-combo-ubud-2026',
-      blurb: 'From 1.25M · 10% mix · couple math · WhatsApp.',
+      blurb: 'Single ATV + rafting · from 1.25M · couple two singles 2.35M before mix.',
+    },
+    {
+      title: 'ATV tandem + rafting (couple)',
+      href: '/blog/atv-tandem-rafting-ubud-2026',
+      blurb: '1.1M bike + two rafts 900K = 2.0M before 10% · 1.8M after.',
     },
     {
       title: 'ATV cost near Ubud (2026)',
@@ -39,7 +44,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'ATV + Wos tubing (gentler)',
       href: '/blog/atv-river-tubing-wos-river-bali',
-      blurb: 'Same land start, sit-on-tube instead of a paddle team.',
+      blurb: 'From 1.25M · 10% mix · pickup 400K · no tubing lunch.',
     },
     {
       title: 'ATV vs UTV buggy',
@@ -67,6 +72,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'ATV + rafting combo (flagship)',
       href: '/blog/atv-rafting-combo-ubud-2026',
       blurb: 'Mud then Ayung Class II–III from 1.25M · 10% mix.',
+    },
+    {
+      title: 'ATV tandem + rafting (couple)',
+      href: '/blog/atv-tandem-rafting-ubud-2026',
+      blurb: 'Share one bike then paddle · 2.0M before mix.',
     },
     {
       title: 'Things to do near Ubud 2026',
@@ -151,6 +161,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Sedang mud then this river from 1.25M · 10% mix.',
     },
     {
+      title: 'ATV tandem + rafting (couple)',
+      href: '/blog/atv-tandem-rafting-ubud-2026',
+      blurb: '1.1M bike + two rafts · 2.0M before 10%.',
+    },
+    {
       title: 'Ayung rafting Ubud price 2026',
       href: '/blog/rafting-ubud-price-2026',
       blurb: '500K · 450K for 2+ · lunch in · pickup extra.',
@@ -200,7 +215,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'ATV + tubing combo',
       href: '/blog/atv-river-tubing-wos-river-bali',
-      blurb: 'Race the track, then float the river.',
+      blurb: 'From 1.25M · 10% mix · pickup 400K · no tubing lunch.',
     },
     {
       title: 'Rafting vs tubing vs ATV',
@@ -733,7 +748,7 @@ export const TOUR_HOST_NOTES: Record<
 > = {
   'atv-rafting-combo': {
     title: 'From our Sedang + Ayung hosts',
-    body: 'This is the day we sell first when guests want dirt photos and a paddle team. ATV briefing is at All New Bali Adventure in Sedang — not the office in Banjar Kenderan. The raft is Class II–III on the Ayung with English crew, lunch on both tickets, and one IDR 400,000 pickup if you want a hotel collect. We will not invent a 999K bundle sticker — WhatsApp confirms the two lines plus the 10% mix.',
+    body: 'This is the day we sell first when guests want dirt photos and a paddle team. ATV briefing is at All New Bali Adventure in Sedang — not the office in Banjar Kenderan. The raft is Class II–III on the Ayung with English crew, lunch on both tickets, and one IDR 400,000 pickup if you want a hotel collect. Two singles plus two rafts is 2.35M before the 10% mix; tandem plus two rafts is 2.0M before mix. We will not invent a 999K bundle sticker — WhatsApp confirms single or tandem plus the 10% mix.',
   },
   'bali-atv-adventure': {
     title: 'From our Sedang arena hosts',

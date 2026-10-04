@@ -82,7 +82,7 @@ These numbers come from our published ATV list — not a “from” teaser.
 | 2 bikes | **1,060,000** |
 | 3+ bikes | **1,030,000** |
 
-Hotel pickup is **not** in those trail prices. Tick pickup for **IDR 400,000**, or meet us at the arena. Combo with [Wos River canyon tubing](/tours/canyon-tubing) is a same-day option — **confirm combo pricing on WhatsApp** (we do not publish a bundled ATV+tubing SKU on the tour card).
+Hotel pickup is **not** in those trail prices. Tick pickup for **IDR 400,000**, or meet us at the arena. Combo with [Wos River canyon tubing](/tours/canyon-tubing) is a same-day mix from **IDR 1,250,000** at floors, **10% off** at checkout: [ATV + tubing](/blog/atv-river-tubing-wos-river-bali).
 
 ## Is tandem worth it vs two singles?
 
@@ -138,7 +138,7 @@ On tandem the **front rider** steers after the English briefing. The **rear ride
 - **For:** beginners, couples, families who want mud and photos
 - **Not for:** anyone who needs a cave/tunnel marketing photo, or who expected free Ubud transfer in the 750K / 1.1M rate
 
-Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali). Comparing intensity: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-bali). Couple paddle day: [tandem ATV + rafting](/blog/atv-tandem-rafting-ubud-2026). Comparing intensity: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
 ## How to book on WhatsApp
 
@@ -307,7 +307,7 @@ Step-by-step message format: [How to book a Bali adventure on WhatsApp](/blog/ho
 
 ## After the track: tubing, rafting, or a slower day
 
-Many first-timers add [canyon tubing](/tours/canyon-tubing) on the Wos River after the ATV session — land then water. Ask WhatsApp for combo availability rather than guessing a bundled price. The combo flow is in [ATV + River Tubing](/blog/atv-river-tubing-wos-river-bali).
+Many first-timers add [canyon tubing](/tours/canyon-tubing) on the Wos River after the ATV session — land then water from **IDR 1,250,000** at floors, **10% mix**. The combo flow is in [ATV + River Tubing](/blog/atv-river-tubing-wos-river-bali).
 
 Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) near Ubud is IDR 500,000 on Class II–III rapids with gear, guide, and lunch. Want culture instead of motors? The [Ubud Ricefield Cycling Tour](/tours/ubud-ricefield-cycling-tour) is IDR 750,000 with lunch and free Ubud pickup.
 
@@ -581,7 +581,7 @@ Towels and changing facilities are available at the base.
 
 ## ATV + Wos River Tubing Combo
 
-Want a fuller day? After the ATV track, add **river tubing on the Wos River** — land then water in one booking. Ask WhatsApp for current combo timing and price. Details: [ATV + River Tubing guide](/blog/atv-river-tubing-wos-river-bali).
+Want a fuller day? After the ATV track, add **river tubing on the Wos River** — land then water from **IDR 1,250,000** at floors, **10% mix**. Details: [ATV + River Tubing guide](/blog/atv-river-tubing-wos-river-bali).
 
 ## Who It Is For
 
@@ -596,41 +596,65 @@ Message us with **name, age, adult/child, hotel or meet preference, activity (Si
   },
   {
     slug: 'atv-river-tubing-wos-river-bali',
-    title: 'ATV + Wos River Tubing Combo',
-    excerpt: 'ATV then Wos River tubing near Ubud — how the land-and-water combo works for couples and first-timers.',
+    title: 'ATV + Tubing Ubud 2026: Gentler Land Then Wos River',
+    seoTitle: 'ATV + Tubing Ubud | From 1.25M',
+    excerpt:
+      'Book ATV + Wos River tubing near Ubud. From 1.25M at floors. 10% mix at checkout. Pickup 400K or self-meet — not free. WhatsApp.',
     publishedAt: '2026-08-30',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/canyon-tubing.jpg',
     content: `
-**What is ATV + river tubing on the Wos River?** It is a combined Bali adventure: you ride a quad bike (ATV) on jungle trails, then float the **Wos River** on a tube. Sekar Bali Activity packages the combo for guests who want sensation, excitement, and joy in one day near Ubud.
+**How much is ATV + river tubing near Ubud in 2026?** Sekar Bali Activity sequences **[Sedang ATV](/tours/bali-atv-adventure)** then **[Wos River canyon tubing](/tours/canyon-tubing)**. Single ATV starts at **IDR 750,000**. Tubing is **IDR 500,000**, or **IDR 450,000 for 2+**. The **from-price is IDR 1,250,000** — one ATV list plus one tubing list. Book both as a same-day mix and checkout takes **10% off** the two activity lines. Hotel pickup is **IDR 400,000 once** or free self-meet — **not** complimentary Ubud pickup. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
-> - Sequence: ATV track first → Wos River tubing after
-> - Great for first-timers with a guided safety briefing
-> - ATV packages already include lunch, boots, helmet, and insurance
-> - Ask WhatsApp for current combo pricing and pickup times
+> - Gentler land + water: **mud, then a sit-on-tube** · no paddle crew
+> - ATV from **750,000** · tubing **500,000** / **450,000** for 2+
+> - From-price **1,250,000** · **10% mix** at checkout
+> - Couple two singles: **2,350,000** before mix · **2,115,000** after 10%
+> - Couple tandem + two tubes: **2,000,000** before mix · **1,800,000** after 10%
+> - Pickup **400,000** once · **not** free Ubud pickup
+> - ATV lunch is on the ATV ticket · **tubing lunch is not included**
+> - Want Class II–III instead? [ATV + Ayung rafting](/blog/atv-rafting-combo-ubud-2026)
 
----
+## What you pay (ATV + tubing)
 
-## Why Combine ATV and Tubing?
+| Line | IDR |
+| --- | --- |
+| Single ATV | **750,000** (1) · **725,000** (2) · **700,000** (3+) |
+| Tandem ATV | **1,100,000** / bike |
+| Wos tubing | **500,000** list · **450,000** for 2+ |
+| Same-day mix | **10%** off the two activity lines |
+| Pickup | **400,000** once · or self-meet |
 
-Solo ATV is pure off-road adrenaline. Adding river tubing cools you down and adds a second environment — crystal water, canyon walls, and a float after muddy trails. Couples often choose **Tandem ATV** then tubing together.
+Same ticket math as the rafting mix. The difference is the **river**: tubing is a guided inflatable-tube float on the **Wos**, not Ayung Class II–III. Lunch sits on the **ATV** ticket only.
 
-## Typical Flow
+Book: [ATV money page](/tours/bali-atv-adventure) · [tubing money page](/tours/canyon-tubing) · [checkout mix](/book?combo=combo-atv-tubing).
 
-1. Hotel pickup (Ubud area usually free)  
-2. Gear fitting: boot shoes & helmet  
-3. Safety briefing and ATV trail ride  
-4. Optional Wos River tubing session  
-5. Simple menu lunch and change into dry clothes  
+## Why book tubing instead of rafting
 
-## Who It Is For
+Book **ATV + tubing** when someone wants water after the mud **without** a paddle team. Kids and first-timers who are nervous about rapids usually prefer the tube. Book **[ATV + rafting](/tours/atv-rafting-combo)** when the group wants splash and a crew. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-Beginners, couples, and small groups. Children can join when age-appropriate — tell us ages when booking so we assign Adult or Child rates correctly. Never ridden a quad? Start with the [Bali ATV for beginners guide](/blog/bali-atv-for-beginners-first-time-guide).
+We do **not** sell cave ATV, Gorilla Cave, or a waterfall tunnel. The waterfalls people search for sit on the **Ayung raft**, not the Sedang track.
 
-## Book the Combo
+## How the day runs
 
-Open [Bali ATV Adventure & River Tubing](/tours/bali-atv-adventure), choose **ATV + River Tubing Combo**, and send your booking details on WhatsApp. For tubing-only, see [Canyon Tubing on the Wos River](/tours/canyon-tubing).
+1. **ATV first** at All New Bali Adventure, Jl. Raya Krasan, Sedang — not the Banjar Kenderan office. Briefing, mud, river crossings, lunch on the ATV ticket.
+2. **Transfer** — WhatsApp locks the Wos slot. Same **400,000** hotel collect can cover both pins.
+3. **Tubing** — life jacket, guide, sit-on-tube, insurance 6–65. Change into dry clothes. Eat before you float if you want a second meal — it is **not** on the tubing ticket.
+
+Water levels can flip the order. We confirm on the chat.
+
+## Who it is for
+
+Beginners, couples, and families who want a cooler second half. Send **ages** so we assign single, tandem, or child ATV. Never ridden? [Bali ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide). Sharing a bike? [Tandem ATV price](/blog/tandem-atv-ubud-price) · couples who also want rapids: [tandem + rafting](/blog/atv-tandem-rafting-ubud-2026).
+
+## How to book
+
+1. Open [ATV + tubing checkout](/book?combo=combo-atv-tubing)
+2. WhatsApp **date, guest count, single or tandem, hotel or self-meet**
+3. We confirm the two IDR lines + any **400,000** pickup — **no deposit to ask**
+
+**Ready?** Start the [mix checkout](/book?combo=combo-atv-tubing) or add tubing on the [ATV](/tours/bali-atv-adventure) and [canyon tubing](/tours/canyon-tubing) threads. Want the flagship paddle day instead? [ATV + rafting](/tours/atv-rafting-combo).
 `
   },
   {

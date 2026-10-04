@@ -32,6 +32,7 @@ const MONEY_TOUR_SLUGS = new Set([
 ])
 
 const HIGH_BLOG_SLUGS = new Set([
+  'whats-new-in-bali-ubud-2026',
   'things-to-do-near-ubud-2026',
   'mount-batur-sunrise-jeep-tour-guide-2026',
   'mount-batur-sunrise-jeep-tour-price-guide-2026',
@@ -89,6 +90,7 @@ const HIGH_BLOG_SLUGS = new Set([
 
 /** Posts rewritten in the latest GEO pass — recrawl these even if publishedAt is older. */
 const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
+  'whats-new-in-bali-ubud-2026': GEO_UPDATED,
   'things-to-do-near-ubud-2026': GEO_UPDATED,
   'ubud-hotel-pickup-bali-adventures-explained': GEO_UPDATED,
   'bali-adventure-packages-prices-2026': GEO_UPDATED,

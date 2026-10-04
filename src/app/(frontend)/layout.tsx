@@ -127,6 +127,7 @@ const footerLinks = {
     { label: "Free planners", href: "/planners" },
     { label: "Book Adventures", href: "/book" },
     { label: "Batur jeep price guide", href: "/blog/mount-batur-sunrise-jeep-tour-price-guide-2026" },
+    { label: "What's new in Bali 2026", href: "/blog/whats-new-in-bali-ubud-2026" },
     { label: "Things to do near Ubud", href: "/blog/things-to-do-near-ubud-2026" },
     { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },

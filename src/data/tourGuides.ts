@@ -69,6 +69,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Published ATV 750/725/700K next to rafting, cycling, and scooter promo.',
     },
     {
+      title: "What's new in Bali 2026",
+      href: '/blog/whats-new-in-bali-ubud-2026',
+      blurb: 'Bookable Ubud changes — ATV + rafting, ATV from 750K, unique days.',
+    },
+    {
       title: 'ATV + rafting combo (flagship)',
       href: '/blog/atv-rafting-combo-ubud-2026',
       blurb: 'Mud then Ayung Class II–III from 1.25M · 10% mix.',

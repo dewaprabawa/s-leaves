@@ -11,6 +11,7 @@ export type SeoFooterLink = {
 export const SEO_FOOTER_HEADING = 'Explore every activity & guide'
 
 export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
+  { label: "What's new in Bali 2026", href: '/blog/whats-new-in-bali-ubud-2026' },
   { label: 'Things to do near Ubud 2026', href: '/blog/things-to-do-near-ubud-2026' },
   { label: 'Tumang Bali Cooking Class', href: '/tours/balinese-cooking-class' },
   { label: 'Book cooking class', href: '/book?activity=balinese-cooking-class' },

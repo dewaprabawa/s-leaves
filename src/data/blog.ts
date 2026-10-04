@@ -332,7 +332,7 @@ Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) nea
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**What is the ATV price in Bali / Ubud?** With Sekar Bali Activity in 2026, a **Single ATV** starts at **IDR 750,000** (lower tier rates for 2+ and 3+ riders) and a **Tandem ATV** starts at **IDR 1,100,000** for two people. Packages at **All New Bali Adventure** include lunch, boot shoes, helmet, insurance, and a full safety briefing. Hotel pickup is optional.
+**How much does it cost to ride an ATV in Ubud, Bali?** With Sekar Bali Activity in 2026, a **Single ATV** starts at **IDR 750,000** (IDR 725,000 each for 2 · IDR 700,000 for 3+) and a **Tandem ATV** is **IDR 1,100,000** for two on one bike. Packages at **All New Bali Adventure** include lunch, boot shoes, helmet, insurance, and a full safety briefing. Hotel pickup is **IDR 400,000** or free self-meet.
 
 > **Key Takeaways**
 > - Single ATV: **IDR 750,000** (1 pax) · **IDR 725,000** (2) · **IDR 700,000** (3+)

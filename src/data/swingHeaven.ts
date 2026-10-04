@@ -5,6 +5,8 @@
 
 export const SWING_HEAVEN_PRICE_IDR = 530_000
 export const SWING_HEAVEN_LUNCH_PRICE_IDR = 630_000
+/** Hotel driver is included in the ticket and required — no self-meet, no IDR 400K add-on. */
+export const SWING_HEAVEN_DRIVER_INCLUDED = true
 export const SWING_HEAVEN_LUNCH_DIFF_IDR =
   SWING_HEAVEN_LUNCH_PRICE_IDR - SWING_HEAVEN_PRICE_IDR
 export const SWING_HEAVEN_DRESS_HIRE_IDR = 300_000

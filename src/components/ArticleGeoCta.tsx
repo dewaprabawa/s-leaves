@@ -215,7 +215,7 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
   if (slug === 'swing-heaven-cooking-class-ubud') {
     return {
       tldr:
-        'Sekar Bali Activity books a jungle-swing + kitchen day: morning Swing Heaven in Bongkasa (from IDR 530,000 — not Happy Swing or Tegallalang) then afternoon Tumang Bali Cooking Class (promo IDR 450,000, free Ubud pickup). From-price IDR 980,000 for the two published tickets. One WhatsApp thread — no payment to inquire.',
+        'Sekar Bali Activity books a jungle-swing + kitchen day: morning Swing Heaven in Bongkasa (from IDR 530,000 — hotel driver included and required, not Happy Swing or Tegallalang) then afternoon Tumang Bali Cooking Class (promo IDR 450,000, free Ubud pickup). From-price IDR 980,000 for the two published tickets. One WhatsApp thread — no payment to inquire.',
       updated: COOKING_GEO_UPDATED,
       bookHref: '/book?activity=combo-swing-cooking',
       bookLabel: 'Book swing + cooking',

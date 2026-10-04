@@ -310,7 +310,8 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 > **Key Takeaways**
 > - **Best published ATV / rafting / cycling / scooter rates:** [best price hub](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026)
 > - Food + village days include **free Ubud pickup** (cooking + cycling)
-> - ATV / rafting / tubing / Swing Heaven / Griya Beji: **IDR 400,000** hotel pickup or free self-meet
+> - ATV / rafting / tubing / Griya Beji: **IDR 400,000** hotel pickup or free self-meet
+> - Swing Heaven: **hotel driver included** (required, no self-meet)
 > - Private Batur jeep: **island-wide pickup included** — sit-down **meal included** after the viewpoint (jeep and tracking)
 > - Coffee tasting: **min 3 guests**, transport **not** included
 > - No upfront payment to inquire — [Book on WhatsApp](/book)
@@ -328,7 +329,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | ATV + Wos tubing | **1,250,000** floors · **10% mix** | Half / full day | IDR 400K once or self-meet | [ATV + tubing](/blog/atv-river-tubing-wos-river-bali) |
 | Whitewater rafting | **500,000** · **450,000** for 2+ | 3 hrs | IDR 400K or self-meet | [Rafting](/tours/whitewater-rafting) |
 | Canyon tubing | **500,000** · **450,000** for 2+ | 2.5 hrs | IDR 400K or self-meet | [Tubing](/tours/canyon-tubing) |
-| Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | IDR 400K or self-meet Bongkasa | [Swing Heaven](/tours/swing-heaven-bali) |
+| Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | Hotel driver included (required) | [Swing Heaven](/tours/swing-heaven-bali) |
 | Griya Beji Waterfall | **300,000** · palm **1,000,000** · healing **1,500,000** | 1–2.5 hrs | IDR 400K or self-meet Punggul | [Griya Beji](/tours/griya-beji-waterfall) |
 | Tirta Empu Purification | **1,200,000** private | 3–4 hrs | Shuttle included (Ubud) | [Tirta Empul / Beji](/tours/tirta-empu-purification) |
 | Private Batur jeep | **750,000** (3+) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
@@ -363,7 +364,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) at **IDR 500,000**, or **IDR 450,000** for 2+ (minimum 2), lunch included. Pickup is **IDR 400,000** or self-meet. Price table: [Ayung rafting Ubud price 2026](/blog/rafting-ubud-price-2026). **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float at the same **IDR 500,000 / 450,000 for 2+** — lunch not included; the usual ATV add-on. Price table: [Wos River tubing price 2026](/blog/wos-river-tubing-price-2026). Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-**[Swing Heaven Bali](/tours/swing-heaven-bali)** is the Bongkasa jungle park over the Ayung River — **IDR 530,000** (tea/coffee/water + insurance) or **IDR 630,000** with lunch, 14 photo spots, own-phone photos. Flying dress hire **IDR 300,000**. It is **not** the Tegallalang rice-terrace swing strip. Guides: [Swing Heaven Ubud](/blog/swing-heaven-bali-ubud-guide) · [vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location).
+**[Swing Heaven Bali](/tours/swing-heaven-bali)** is the Bongkasa jungle park over the Ayung River — **IDR 530,000** (tea/coffee/water + insurance + hotel driver) or **IDR 630,000** with lunch, 14 photo spots, own-phone photos. Flying dress hire **IDR 300,000**. The hotel driver is **included and required** — no self-meet. It is **not** the Tegallalang rice-terrace swing strip. Guides: [Swing Heaven Ubud](/blog/swing-heaven-bali-ubud-guide) · [vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location).
 
 ## Culture & healing
 
@@ -473,7 +474,8 @@ If we collect you from **Canggu, Jimbaran, or Nusa Dua**, add **IDR 550,000 once
 | --- | --- |
 | Chosen area already on the ride (Ubud and other ride-area pins) | In the scooter promo |
 | **Canggu, Jimbaran, or Nusa Dua shuttle** | **IDR 550,000** once per booking |
-| ATV / rafting / tubing / Swing Heaven / Griya Beji hotel pickup | Different product — IDR 400,000 or self-meet |
+| ATV / rafting / tubing / Griya Beji hotel pickup | Different product — IDR 400,000 or self-meet |
+| Swing Heaven hotel driver | Included in the ticket — required, no self-meet |
 | Private Mount Batur jeep | Island-wide pickup already in the jeep price |
 
 Tick **Canggu / Jimbaran / Nusa Dua shuttle** in the booking form, or skip it if your pin is already in the ride area. Policy context: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
@@ -781,29 +783,30 @@ Pairing ideas:
     title: 'Swing Heaven Bali near Ubud: Prices, Spots & Pickup 2026',
     seoTitle: 'Swing Heaven Guide 2026 | Spots & Pickup',
     excerpt:
-      'Swing Heaven Bali in Bongkasa from IDR 530,000 — 14 jungle photo spots, lunch package 630K, dress hire 300K. Not Tegallalang. WhatsApp booking.',
+      'Swing Heaven Bali in Bongkasa from IDR 530,000 — 14 jungle photo spots, lunch package 630K, dress hire 300K. Hotel driver included and required. Not Tegallalang. WhatsApp booking.',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/swing-heaven-ayung.jpg',
     content: `
-**How much is Swing Heaven Bali near Ubud?** Sekar Bali Activity books [Swing Heaven](/tours/swing-heaven-bali) at **IDR 530,000** per person for the jungle-swing package, or **IDR 630,000** with lunch. The park sits on **Jl. Tangga Yuda, Bongkasa** (Abiansemal) over the **Ayung River valley** — a short drive from Ubud. It is **not** the Tegallalang rice-terrace swing strip. **Hotel pickup is IDR 400,000** or self-meet at the park for free. Photos are on **your own phone**. Book on WhatsApp — **no payment to inquire**.
+**How much is Swing Heaven Bali near Ubud?** Sekar Bali Activity books [Swing Heaven](/tours/swing-heaven-bali) at **IDR 530,000** per person for the jungle-swing package, or **IDR 630,000** with lunch. The park sits on **Jl. Tangga Yuda, Bongkasa** (Abiansemal) over the **Ayung River valley** — a short drive from Ubud. It is **not** the Tegallalang rice-terrace swing strip. **Hotel driver is included and required** — no self-meet. Photos are on **your own phone**. Book on WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - **IDR 530,000** package · **IDR 630,000** with lunch
 > - 14 swings, nests, jungle beds, and Stairs 2 Heaven
 > - Insurance + tea/coffee/water included
 > - Flying dress hire **IDR 300,000** · koi pond boat **IDR 300,000** (lobby availability)
-> - Pickup **IDR 400,000** or free self-meet in Bongkasa
+> - Hotel driver **included and required** — no self-meet
 > - Ticket **non-refundable** once issued · rain = **7-day voucher**
 
 ## What you get in the 530K
 
 | Included | Not included |
 | --- | --- |
-| All listed jungle swings and photo spots | Hotel pickup (optional IDR 400,000) |
-| On-site insurance | Flying dress (IDR 300,000) |
-| Tea, coffee, or water | Professional photographer |
-| Lunch only on the **IDR 630,000** package | Koi pond boat (IDR 300,000, confirm lobby) |
+| All listed jungle swings and photo spots | Flying dress (IDR 300,000) |
+| On-site insurance | Professional photographer |
+| Tea, coffee, or water | Koi pond boat (IDR 300,000, confirm lobby) |
+| Hotel driver — pickup and drop-off (required) | Self-meet at Bongkasa |
+| Lunch only on the **IDR 630,000** package | |
 
 Spots on the 2026 board: Tandem Bench Swing, Single Swings, Egg Nest, Adrenaline Swing, Libra Swings, Jumping Swing, Romantic Bed Swing, Onion Nests, Jungle Bed, Titanic, Stone, Heart Nests, Bird Nests, Stairs 2 Heaven.
 
@@ -817,7 +820,7 @@ Honest take: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it). Side-b
 
 ## Pickup and pairing
 
-Self-meet at **Jl. Tangga Yuda, Bongkasa**. Grab from central Ubud is often cheaper than our **IDR 400,000** hotel collect if you only need a one-way drop. Same-day pairing with [ATV at All New Bali Adventure](/tours/bali-atv-adventure) (also Abiansemal) or [Ayung River rafting](/tours/whitewater-rafting) is common — ask WhatsApp for timing.
+**Hotel driver is included and required.** We collect you and drop you at **Jl. Tangga Yuda, Bongkasa** — self-meet is not offered. Same-day pairing with [ATV at All New Bali Adventure](/tours/bali-atv-adventure) (also Abiansemal) or [Ayung River rafting](/tours/whitewater-rafting) is common — ATV / rafting still use their own IDR 400,000 pickup or self-meet rule. Ask WhatsApp for timing.
 
 ## Weather and refunds
 

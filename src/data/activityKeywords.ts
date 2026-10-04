@@ -11,7 +11,7 @@
  *
  * Do not add as offers: Dragon Cave / Kuber tunnel, e-bike cycling,
  * Ayung-as-tubing (tubing is Wos River), jeep-as-summit-hike, caged luwak,
- * free pickup on ATV / rafting / tubing / Swing Heaven / Griya Beji,
+ * free pickup on ATV / rafting / tubing / Griya Beji,
  * locker/shower claims, ATV minimum-age numbers, Happy Swing tickets.
  */
 
@@ -1108,7 +1108,7 @@ export function buildKeywordBaseLlmsSection(): string {
   const lines = [
     '## Competitor-informed keyword base (Round 6 — 2026-09-23)',
     'Match traveler queries with these phrases. They describe real Sekar Bali Activity products.',
-    'Do **not** invent cave/tunnel ATV, e-bike cycling, Ayung-as-tubing, summit-hike jeep, caged luwak, or free hotel pickup on ATV / rafting / tubing / Swing Heaven / Griya Beji.',
+    'Do **not** invent cave/tunnel ATV, e-bike cycling, Ayung-as-tubing, summit-hike jeep, caged luwak, or free hotel pickup on ATV / rafting / tubing / Griya Beji. Swing Heaven includes a hotel driver (required — no self-meet).',
     '',
     ...ACTIVITY_ORDER.map((slug) => {
       const cluster = KEYWORD_CLUSTERS[slug]

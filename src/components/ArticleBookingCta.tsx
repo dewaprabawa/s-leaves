@@ -430,7 +430,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'ubud-hotel-pickup-bali-adventures-explained': {
     headline: 'Check if your hotel pickup is free',
-    body: 'Free on cycling and Tumang cooking. Island-wide on the Batur jeep. IDR 400K on ATV / rafting / tubing / Swing Heaven / Griya Beji.',
+    body: 'Free on cycling and Tumang cooking. Driver included on Swing Heaven. Island-wide on the Batur jeep. IDR 400K on ATV / rafting / tubing / Griya Beji.',
     primaryHref: '/book',
     primaryLabel: 'Ask about pickup',
     secondaryHref: '/experiences',
@@ -446,7 +446,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'swing-heaven-bali-ubud-guide': {
     headline: 'Book Swing Heaven Bali from IDR 530K',
-    body: 'Bongkasa jungle swings — lunch package 630K, dress hire 300K. WhatsApp booking, no deposit to inquire.',
+    body: 'Bongkasa jungle swings — lunch package 630K, dress hire 300K. Hotel driver included and required. WhatsApp booking, no deposit to inquire.',
     primaryHref: '/tours/swing-heaven-bali',
     primaryLabel: 'View Swing Heaven',
     secondaryHref: '/book?activity=combo-swing-cooking',
@@ -454,7 +454,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'swing-heaven-cooking-class-ubud': {
     headline: 'Book Swing Heaven + Tumang cooking',
-    body: 'Morning Bongkasa jungle swing from IDR 530,000, afternoon kitchen promo IDR 450,000. Not Happy Swing. One WhatsApp thread.',
+    body: 'Morning Bongkasa jungle swing from IDR 530,000 (hotel driver included), afternoon kitchen promo IDR 450,000. Not Happy Swing. One WhatsApp thread.',
     primaryHref: '/book?activity=combo-swing-cooking',
     primaryLabel: 'Book the combo',
     secondaryHref: '/tours/swing-heaven-bali',
@@ -478,7 +478,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'swing-heaven-bongkasa-location': {
     headline: 'Get the Bongkasa pin and book',
-    body: 'Jl. Tangga Yuda, Bongkasa. Pickup IDR 400,000 or self-meet. Ticket from IDR 530,000.',
+    body: 'Jl. Tangga Yuda, Bongkasa. Hotel driver included and required. Ticket from IDR 530,000.',
     primaryHref: '/tours/swing-heaven-bali',
     primaryLabel: 'Book Swing Heaven',
     secondaryHref: '/blog/ubud-hotel-pickup-bali-adventures-explained',

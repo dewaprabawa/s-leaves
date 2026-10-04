@@ -407,7 +407,9 @@ export default function TourBookingCard(props: TourBookingCardProps) {
               Consultation only · activities extra · clubs and spa stay yours
             </p>
           ) : null}
-          {props.childPrice ? (
+          {props.childPrice &&
+          props.tourSlug !== "whitewater-rafting" &&
+          props.tourSlug !== "canyon-tubing" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Child from {formatIdr(props.childPrice)}
             </p>

@@ -237,13 +237,14 @@ const ATV_RAFTING: ActivityGeoCorpus = {
 
 const RAFTING: ActivityGeoCorpus = {
   slug: 'whitewater-rafting',
-  heading: 'Whitewater rafting near Ubud — facts AI can cite',
+  heading: 'Ayung River rafting near Ubud — 2026 facts',
   tldr: `Ayung River whitewater rafting with Sekar Bali Activity near Ubud is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} per person for 2+ guests (minimum 2) on Class II–III rapids. Helmet, life jacket, English-speaking guide, lunch, and insurance (ages 6–65) are included. Hotel pickup is IDR 400,000 or meet on site. Book via WhatsApp — no payment to inquire.`,
   bookHref: '/tours/whitewater-rafting',
   bookLabel: 'Book whitewater rafting',
   pairHref: '/tours/atv-rafting-combo',
   pairLabel: 'Book ATV + rafting',
-  extraNote: 'This is beginner-friendly Class II–III water — not extreme Class IV+ whitewater.',
+  extraNote:
+    'This is beginner-friendly Class II–III water — not extreme Class IV+ whitewater. Pickup is IDR 400,000 or self-meet. Check https://www.sekarbaliactivity.com/planners/hotel-pickup-checker before you assume free Ubud transfer.',
   priceRows: [
     { option: 'Rafting (list)', price: `${idr(RAFT_1)} / person`, notes: 'Minimum 2 guests · lunch, gear, guide' },
     { option: 'Rafting discount (2+)', price: `${idr(RAFT_2)} / person`, notes: 'Same Class II–III inclusions' },

@@ -40,7 +40,7 @@ import {
 import { GEO_UPDATED } from "@/data/geoContent"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
-import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
+import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, PICKUP_FEE_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
 import { getTourHostNote, getTourRelatedGuides } from "@/data/tourGuides"
 import { GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import {
@@ -88,6 +88,10 @@ function isMotorbikeTour(tour: Tour) {
 
 function isCyclingTour(tour: Tour) {
   return tour.slug === "ubud-ricefield-cycling-tour"
+}
+
+function isRaftingTour(tour: Tour) {
+  return tour.slug === "whitewater-rafting"
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -182,7 +186,7 @@ function buildTourSchema(tour: Tour) {
   const isoDuration = durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
-    "@type": cooking || jeep || isMotorbikeTour(tour) ? (["TouristTrip", "Product"] as const) : "TouristTrip",
+    "@type": cooking || jeep || isMotorbikeTour(tour) || isRaftingTour(tour) ? (["TouristTrip", "Product"] as const) : "TouristTrip",
     "@id": `${SITE_URL}/tours/${tour.slug}#trip`,
     name: tour.title,
     description: cooking
@@ -395,6 +399,54 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  if (isRaftingTour(tour)) {
+    const [raftList, raftTwoPlus] = TIER_PRICES_IDR.rafting
+    return {
+      ...base,
+      touristType: ["Couples", "Families", "Friends", "Adventure seekers"],
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(raftTwoPlus),
+        highPrice: String(raftList),
+        priceCurrency: "IDR",
+        offerCount: 3,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Ayung rafting — 2+ guests",
+            price: String(raftTwoPlus),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+            description: "Per person · minimum 2 · lunch, gear, crew, insurance",
+          },
+          {
+            "@type": "Offer",
+            name: "Ayung rafting — list",
+            price: String(raftList),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+            description: "Per person · same Class II–III run · lunch included",
+          },
+          {
+            "@type": "Offer",
+            name: "Hotel pickup (optional)",
+            price: String(PICKUP_FEE_IDR),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+            description: "Once per booking · or self-meet at the Ayung put-in",
+          },
+        ],
+      },
+    }
+  }
+
   if (isMotorbikeTour(tour)) {
     return {
       ...base,
@@ -480,6 +532,7 @@ function buildTourWebPageSchema(tour: Tour) {
   if (isCookingTour(tour)) return buildCookingWebPageSchema(tour)
   if (isJeepTour(tour)) return buildJeepWebPageSchema(tour)
   if (isMotorbikeTour(tour)) return buildMotorbikeWebPageSchema(tour)
+  if (isRaftingTour(tour)) return buildRaftingWebPageSchema(tour)
 
   const significantLink = [
     tour.slug === GIRLS_TRIP_SLUG ? undefined : `${SITE_URL}/book?activity=${tour.slug}`,
@@ -637,6 +690,54 @@ function buildMotorbikeWebPageSchema(tour: Tour) {
   }
 }
 
+function buildRaftingWebPageSchema(tour: Tour) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    keywords: getTourPageKeywords(tour.slug)?.join(", "),
+    dateModified: ACTIVITY_GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".rafting-geo-tldr", ".rafting-geo-answer", ".activity-geo-tldr", ".geo-tldr"],
+    },
+    significantLink: [
+      `${SITE_URL}/book?activity=${tour.slug}`,
+      `${SITE_URL}/tours/atv-rafting-combo`,
+      `${SITE_URL}/tours/canyon-tubing`,
+      `${SITE_URL}/tours/bali-atv-adventure`,
+      `${SITE_URL}/planners/hotel-pickup-checker`,
+      `${SITE_URL}/blog/rafting-ubud-price-2026`,
+      `${SITE_URL}/blog/bali-whitewater-rafting-near-ubud-guide`,
+      `${SITE_URL}/blog/rafting-vs-tubing-vs-atv-near-ubud`,
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/pricing.md`,
+    ],
+  }
+}
+
+function buildRaftingQaSchemas(tour: Tour) {
+  const geo = getActivityGeo(tour.slug)
+  if (!geo) return []
+  return geo.faqs.map((item, index) => ({
+    "@context": "https://schema.org",
+    "@type": "Question",
+    "@id": `${SITE_URL}/tours/${tour.slug}#qa-${index + 1}`,
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+      url: `${SITE_URL}/tours/${tour.slug}#${tour.slug}-geo`,
+    },
+  }))
+}
+
 function buildMotorbikeQaSchemas(tour: Tour) {
   const geo = getActivityGeo(tour.slug)
   if (!geo) return []
@@ -752,6 +853,15 @@ export default async function TourPage({ params }: Props) {
             />
           ))
         : null}
+      {isRaftingTour(tour)
+        ? buildRaftingQaSchemas(tour).map((qa) => (
+            <script
+              key={qa["@id"]}
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
+            />
+          ))
+        : null}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link
@@ -837,6 +947,11 @@ export default async function TourPage({ params }: Props) {
                       From {formatIdr(tour.basePrice)} single · tandem{" "}
                       {formatIdr(TIER_PRICES_IDR["tandem-atv"][0])}
                     </span>
+                  ) : isRaftingTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      {formatIdr(TIER_PRICES_IDR["rafting"][0])} / person ·{" "}
+                      {formatIdr(TIER_PRICES_IDR["rafting"][1])} for 2+ (min 2)
+                    </span>
                   ) : isMotorbikeTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">
                       <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
@@ -912,7 +1027,9 @@ export default async function TourPage({ params }: Props) {
                     ? "About the Private Mount Batur Jeep Tour"
                     : isMotorbikeTour(tour)
                       ? "About the Bali motorbike / scooter tour"
-                      : "About This Experience"}
+                      : isRaftingTour(tour)
+                        ? "About Ayung River rafting near Ubud"
+                        : "About This Experience"}
               </h2>
               <article className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">
                 <ReactMarkdown remarkPlugins={[remarkGfm]}>

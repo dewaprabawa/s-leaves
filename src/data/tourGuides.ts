@@ -156,6 +156,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'whitewater-rafting': [
     {
+      title: 'Hotel pickup checker',
+      href: '/planners/hotel-pickup-checker',
+      blurb: 'Rafting pickup is IDR 400K or self-meet — not free Ubud cycling pickup.',
+    },
+    {
       title: 'Best price ATV, rafting, cycling & scooter',
       href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
       blurb: 'Published rafting 500K / 450K for 2+ next to ATV, cycling, and scooter.',

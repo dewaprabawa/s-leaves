@@ -1,5 +1,7 @@
 # GEO Analysis — New Activities (Sekar Bali Activity)
 
+**2026-10-04 money-page audit:** https://www.sekarbaliactivity.com/tours/whitewater-rafting — GEO readiness **84/100** live, higher after this PR. SSR TL;DR + price table + 7 GEO FAQs already existed. Gaps vs motorbike: title led with “Best Price”, Offer was 500,000 only, no `Question` nodes, no speakable, GEO H2 said “facts AI can cite”, llms lead featured the ATV combo not standalone Ayung. This PR adds keyword-first title, Product/AggregateOffer 450,000–500,000, standalone Question/Answer, speakable CSS, Ayung llms bullet, pickup-checker link. Do **not** claim cheapest vs 235K–350K shared tickets. Full write-up: `FULL-AUDIT-REPORT.md`.
+
 **2026-10-04 money-page audit:** https://www.sekarbaliactivity.com/tours/bali-motorbike-traveling-trip — GEO readiness **90/100**. SSR TL;DR, price table, 10 Question/Answer nodes (not FAQPage), speakable selectors, llms.txt 100/100. Remaining GEO gaps: title led with “Best Price Scooter…” (fixed in the audit PR), destination H3s were thin (expanded), H2 said “facts AI can cite” (now “Bali motorbike tour from Ubud — 2026 facts”), planner calculator was not linked. Do not buy citations. Full write-up: `FULL-AUDIT-REPORT.md`.
 
 **Audit date:** 2026-09-28  

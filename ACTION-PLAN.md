@@ -29,6 +29,7 @@ None. The URL returns HTTP 200, is `index,follow`, self-canonical, listed in `si
 | 9 | Related guides: hotel pickup checker first | Medium — pickup honesty + internal link | Low | `src/data/tourGuides.ts` |
 | 10 | llms lead bullet: standalone Ayung 500K / 450K for 2+ · lunch · pickup 400K · not 235K–350K | Medium — agent citability | Low | `src/data/geoContent.ts` `GEO_LEAD_BULLETS` |
 | 11 | GEO extraNote: pickup 400K + `/planners/hotel-pickup-checker` | Medium — prevent free-pickup hallucination | Low | `src/data/activityGeo.ts` `RAFTING.extraNote` |
+| 12 | Hide booking-card “Child from 450K” on rafting/tubing — that field is the 2+ adult rate, not a child ticket | Medium — stop a false child price | Low | `src/components/TourBookingCard.tsx` |
 
 ---
 
@@ -36,11 +37,11 @@ None. The URL returns HTTP 200, is `index,follow`, self-canonical, listed in `si
 
 | # | Action | Impact | Effort | Notes |
 | --- | --- | --- | --- | --- |
-| 12 | Compress `public/images/adventures/rafting.jpg` (1,202,566 B, 1376×768) under 200–300 KB; prefer AVIF/WebP source | High for LCP if this JPEG wins LCP | Medium | Binary; verify quality. Next already serves `_next/image` for the hero. Do not block copy/schema on a binary pass. |
-| 13 | Collect real guest reviews; then Review / AggregateRating | Medium — E-E-A-T | High | `reviews: []` today. Do not invent quotes. |
-| 14 | PageSpeed with an API key (mobile + desktop) | Medium — CWV truth | Low | Environment was rate-limited. Measure INP, not FID. |
-| 15 | YouTube / short-form of a real Ayung run (brand mention) | Medium — GEO brand | High | Earn, do not buy citations. |
-| 16 | Fresh GSC query report after title change | High — CTR test | Low | Aug–Sep 2026 export: 12 impressions, 0 clicks, pos 13. |
+| 13 | Compress `public/images/adventures/rafting.jpg` (1,202,566 B, 1376×768) under 200–300 KB; prefer AVIF/WebP source | High for LCP if this JPEG wins LCP | Medium | Binary; verify quality. Next already serves `_next/image` for the hero. Do not block copy/schema on a binary pass. |
+| 14 | Collect real guest reviews; then Review / AggregateRating | Medium — E-E-A-T | High | `reviews: []` today. Do not invent quotes. |
+| 15 | PageSpeed with an API key (mobile + desktop) | Medium — CWV truth | Low | Environment was rate-limited. Measure INP, not FID. |
+| 16 | YouTube / short-form of a real Ayung run (brand mention) | Medium — GEO brand | High | Earn, do not buy citations. |
+| 17 | Fresh GSC query report after title change | High — CTR test | Low | Aug–Sep 2026 export: 12 impressions, 0 clicks, pos 13. |
 
 ---
 

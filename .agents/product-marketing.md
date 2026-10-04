@@ -1,7 +1,7 @@
 # Product Marketing Context
 
-**Document version:** v2.28
-**Last updated:** 2026-10-03
+**Document version:** v2.29
+**Last updated:** 2026-10-04
 
 ## Product Overview
 **One-liner:** Pejeng-based Bali travel & activities near Ubud — flagship ATV + Ayung rafting, village, food, and day tours with clear IDR pricing and WhatsApp booking.
@@ -136,6 +136,7 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.29 (2026-10-04) — Combo SEO/GEO: single ATV + rafting article owns the 1.25M from-price; new tandem + rafting spoke (couple 2.0M / 1.8M after 10%); ATV + tubing article now publishes 1.25M floors + 10% mix and kills the false “free Ubud pickup” line. No new tour slug. No SeaBank. No Jungle Buggies 3-lap. No fake 999K. Audit: `docs/COMBO-SEO-GEO-AUDIT.md`.
 - v2.28 (2026-10-03) — GSC 3-month export: retitle ATV *price* (not cost), location guide as Sedang pin only, All New ATV + IDR on money-page snippet, lawar/jeep/tubing/beginner/tandem CTR titles. No new posts. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.27 (2026-10-03) — ATV cluster now answers the guest keyword list: quad biking Ubud price, Bali Quad biking, Ubud quad bike adventure, reviews, “best ATV ride.” Honest no: free quad ride, Gorilla Cave, waterfall-cave ATV. Spoke `/blog/ubud-quad-biking-price-2026` routes to `/tours/bali-atv-adventure`. Title still owns All New Bali Adventure. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.26 (2026-10-03) — Booking + SEO/GEO plan: measure WhatsApp first (`generate_lead`), convert ChatGPT/Direct `/book` and Google jeep/combo/cooking/cycling, then pull ATV Google from the location blog to the money page. Instagram bio must not use `/experiences`. No SeaBank. No Jungle Buggies 3-lap. No fake 999K. Detail: `docs/SEO-GEO-MARKETING-PLAN.md` §0.

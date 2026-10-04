@@ -72,6 +72,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Scooter tour vs ATV', href: '/blog/bali-scooter-tour-vs-atv-2026' },
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026' },
     { title: 'ATV + rafting combo (flagship)', href: '/blog/atv-rafting-combo-ubud-2026' },
+    { title: 'ATV tandem + rafting (couple)', href: '/blog/atv-tandem-rafting-ubud-2026' },
     { title: 'ATV + tubing combo', href: '/blog/atv-river-tubing-wos-river-bali' },
     { title: 'Swing Heaven (same district)', href: '/tours/swing-heaven-bali' },
     { title: 'Book ATV near Ubud', href: '/tours/bali-atv-adventure' },
@@ -80,6 +81,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   rafting: [
     { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV + rafting combo (flagship)', href: '/blog/atv-rafting-combo-ubud-2026' },
+    { title: 'ATV tandem + rafting (couple)', href: '/blog/atv-tandem-rafting-ubud-2026' },
     { title: 'Ayung rafting Ubud price 2026', href: '/blog/rafting-ubud-price-2026' },
     { title: 'Ayung River rafting guide', href: '/blog/bali-whitewater-rafting-near-ubud-guide' },
     { title: 'Rafting vs tubing vs ATV', href: '/blog/rafting-vs-tubing-vs-atv-near-ubud' },
@@ -92,7 +94,9 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Wos River canyon tubing', href: '/blog/bali-canyon-tubing-guide-ubud' },
     { title: 'Ayung rafting Ubud price', href: '/blog/rafting-ubud-price-2026' },
     { title: 'ATV + tubing combo', href: '/blog/atv-river-tubing-wos-river-bali' },
+    { title: 'ATV + rafting combo (flagship)', href: '/blog/atv-rafting-combo-ubud-2026' },
     { title: 'Book canyon tubing', href: '/tours/canyon-tubing' },
+    { title: 'Book ATV + tubing', href: '/book?combo=combo-atv-tubing' },
   ],
   swing: [
     { title: 'Swing Heaven Ubud guide', href: '/blog/swing-heaven-bali-ubud-guide' },
@@ -244,6 +248,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'ubud-atv-track-types-mud-jungle-vs-cave-tunnel': 'atv',
   'atv-river-tubing-wos-river-bali': 'tubing',
   'atv-rafting-combo-ubud-2026': 'rafting',
+  'atv-tandem-rafting-ubud-2026': 'rafting',
   'best-price-atv-rafting-cycling-scooter-ubud-2026': 'site',
   'bali-whitewater-rafting-near-ubud-guide': 'rafting',
   'rafting-ubud-price-2026': 'rafting',

@@ -78,7 +78,7 @@ List only — no UI redesign in this run.
 - Rafting + canyon tubing FAQs still say free Ubud pickup applies to **cycling only**; cooking class also includes complimentary Ubud pickup (`src/data/tours.ts`).
 - Cooking and ATV set `venue` / `pickup` chips. Jeep, cycling, luwak, rafting, tubing, and day tours still omit ATF venue (jeep/cycling already have pickup).
 - ATV option `ATV + River Tubing Combo` uses `priceDiff: 0` (“ask for combo pricing”). Book card maps ATV to single/tandem only — combo is not a priced bookable SKU. `/book` featured combos discount ATV+tubing, but the money page cannot quote it.
-- ATV combo blog (`/blog/atv-river-tubing-wos-river-bali`) says “Hotel pickup (Ubud area usually free)” — **false**. ATV pickup is IDR 400,000 (or self-meet).
+- ATV combo blog (`/blog/atv-river-tubing-wos-river-bali`) false “free Ubud pickup” — **fixed 2026-10-04** (published 1.25M floors + 10% mix).
 - Cycling money page + `BookNowButton` are **afternoon only** (`13:30`). Combo / worth-it blogs still frame cycling as a **morning** block before Tumang cooking.
 - Cycling worth-it post still says cycling is the **only** tour with free Ubud pickup; cooking also includes it (pickup explainer is correct).
 - Luwak Book fallback is `minPax: 1` while copy requires **minimum 3**; transport to Tampaksiring is not included and is easy to miss in the form.

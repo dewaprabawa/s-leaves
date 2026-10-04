@@ -113,7 +113,7 @@ const faqs = [
   },
   {
     question: "Can I mix activities like ATV + tubing or ATV + rafting?",
-    answer: "Yes. The flagship same-day is ATV + Ayung rafting from IDR 1,250,000 at ticket floors, with 10% mix at checkout — book /tours/atv-rafting-combo. ATV + Wos tubing is the gentler add-on. Two activities save 10%; three or more save 12%. Tubing + rafting alone is not offered as a package.",
+    answer: "Yes. The flagship same-day is ATV + Ayung rafting from IDR 1,250,000 at ticket floors, with 10% mix at checkout — book /tours/atv-rafting-combo. A couple on two singles is IDR 2,350,000 before mix; tandem + two rafts is IDR 2,000,000 before mix. ATV + Wos tubing is the gentler add-on at the same 1.25M floors — book /book?combo=combo-atv-tubing. Two activities save 10%; three or more save 12%. Tubing + rafting alone is not offered as a package.",
   },
   {
     question: "Are group discounts available?",

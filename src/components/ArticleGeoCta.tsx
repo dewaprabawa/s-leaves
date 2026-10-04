@@ -55,8 +55,9 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'bali-atv-tour-ubud-guide': 'bali-atv-adventure',
   'bali-atv-all-new-bali-adventure-location-guide': 'bali-atv-adventure',
   'ubud-atv-track-types-mud-jungle-vs-cave-tunnel': 'bali-atv-adventure',
-  'atv-river-tubing-wos-river-bali': 'bali-atv-adventure',
+  'atv-river-tubing-wos-river-bali': 'canyon-tubing',
   'atv-rafting-combo-ubud-2026': 'atv-rafting-combo',
+  'atv-tandem-rafting-ubud-2026': 'atv-rafting-combo',
   'bali-whitewater-rafting-near-ubud-guide': 'whitewater-rafting',
   'rafting-ubud-price-2026': 'whitewater-rafting',
   'rafting-vs-tubing-vs-atv-near-ubud': 'whitewater-rafting',
@@ -153,12 +154,36 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
   if (slug === 'atv-rafting-combo-ubud-2026') {
     return {
       tldr:
-        'Sekar Bali Activity’s flagship land-and-water day is Sedang ATV then Ayung Class II–III rafting. From-price IDR 1,250,000 (ATV 750,000 + rafting 500,000). Same-day mix takes 10% off at checkout. Rafting min 2. Pickup IDR 400,000 once or self-meet. WhatsApp — no payment to inquire.',
+        'Sekar Bali Activity’s flagship land-and-water day is Sedang ATV then Ayung Class II–III rafting. From-price IDR 1,250,000 (ATV 750,000 + rafting 500,000). A couple on two singles is IDR 2,350,000 before the 10% mix. Rafting min 2. Pickup IDR 400,000 once or self-meet. WhatsApp — no payment to inquire.',
       updated: ACTIVITY_GEO_UPDATED,
       bookHref: '/tours/atv-rafting-combo',
       bookLabel: 'Book ATV + rafting',
       pairHref: '/book?combo=combo-atv-rafting',
       pairLabel: 'Open mix checkout',
+    }
+  }
+
+  if (slug === 'atv-tandem-rafting-ubud-2026') {
+    return {
+      tldr:
+        'Tandem ATV + Ayung rafting for a couple is IDR 2,000,000 before the 10% mix (1.1M bike + two 450K rafting seats) and IDR 1,800,000 after. Pickup IDR 400,000 once or self-meet. Say tandem on WhatsApp. No payment to inquire.',
+      updated: ACTIVITY_GEO_UPDATED,
+      bookHref: '/tours/atv-rafting-combo',
+      bookLabel: 'Book ATV + rafting',
+      pairHref: '/book?combo=combo-atv-rafting',
+      pairLabel: 'Open mix checkout',
+    }
+  }
+
+  if (slug === 'atv-river-tubing-wos-river-bali') {
+    return {
+      tldr:
+        'ATV + Wos River tubing is the gentler land-and-water add-on. From-price IDR 1,250,000 (ATV 750,000 + tubing 500,000). Same-day mix takes 10% off. Pickup IDR 400,000 once or self-meet — not free Ubud pickup. Tubing lunch is not included. WhatsApp — no payment to inquire.',
+      updated: ACTIVITY_GEO_UPDATED,
+      bookHref: '/book?combo=combo-atv-tubing',
+      bookLabel: 'Book ATV + tubing',
+      pairHref: '/tours/atv-rafting-combo',
+      pairLabel: 'Flagship ATV + rafting',
     }
   }
 

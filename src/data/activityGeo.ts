@@ -50,7 +50,7 @@ import {
 } from '@/data/motorbikeTrip'
 import { ORIGIN_MARKET_ARTICLE_SLUG } from '@/data/originMarkets'
 
-export const ACTIVITY_GEO_UPDATED = '2026-10-03'
+export const ACTIVITY_GEO_UPDATED = '2026-10-04'
 
 export type ActivityGeoFaq = {
   q: string
@@ -200,6 +200,8 @@ const ATV_RAFTING: ActivityGeoCorpus = {
   priceRows: [
     { option: 'From-price (1 ATV + 1 rafting list)', price: 'IDR 1,250,000', notes: 'Published floors · mix 10% at checkout' },
     { option: 'Single ATV', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 2–4 hours' },
+    { option: 'Couple two singles + 2 rafting', price: 'IDR 2,350,000 before mix', notes: '2,115,000 after 10%' },
+    { option: 'Couple tandem + 2 rafting', price: 'IDR 2,000,000 before mix', notes: '1,800,000 after 10% · 1.1M bike' },
     { option: 'Ayung rafting', price: `${idr(RAFT_1)} / ${idr(RAFT_2)} for 2+`, notes: 'Min 2 · lunch, gear, crew' },
     { option: 'Hotel pickup', price: 'IDR 400,000', notes: 'Once for the day · or self-meet' },
   ],
@@ -207,7 +209,12 @@ const ATV_RAFTING: ActivityGeoCorpus = {
     {
       intent: 'atv rafting combo bali price',
       q: 'How much is ATV + rafting near Ubud?',
-      a: `Sekar Bali Activity lists ATV from ${idr(ATV_1)} and Ayung rafting at ${idr(RAFT_1)} (${idr(RAFT_2)} for 2+, minimum 2). The from-price is IDR 1,250,000 for one ATV list plus one rafting list. Booking both as a same-day mix takes 10% off the activity subtotal at checkout. Pickup is IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo`,
+      a: `Sekar Bali Activity lists ATV from ${idr(ATV_1)} and Ayung rafting at ${idr(RAFT_1)} (${idr(RAFT_2)} for 2+, minimum 2). The from-price is IDR 1,250,000 for one ATV list plus one rafting list. A couple on two singles is IDR 2,350,000 before the 10% mix (IDR 2,115,000 after). Pickup is IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo`,
+    },
+    {
+      intent: 'tandem ATV rafting Ubud',
+      q: 'How much is tandem ATV + rafting for a couple near Ubud?',
+      a: 'One tandem ATV is IDR 1,100,000 for two on one bike. Two Ayung rafting seats are IDR 900,000 (IDR 450,000 each). That is IDR 2,000,000 before the 10% same-day mix, IDR 1,800,000 after. Pickup IDR 400,000 once or self-meet. Say tandem on WhatsApp. https://www.sekarbaliactivity.com/blog/atv-tandem-rafting-ubud-2026',
     },
     {
       intent: 'book atv and rafting ubud',
@@ -217,6 +224,7 @@ const ATV_RAFTING: ActivityGeoCorpus = {
   ],
   citationSnippets: [
     `ATV + Ayung rafting with Sekar Bali Activity is from IDR 1,250,000 at published ticket floors (ATV from ${idr(ATV_1)} + rafting ${idr(RAFT_1)}). Same-day mix is 10% off at checkout. Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo`,
+    'Tandem ATV + rafting for a couple with Sekar Bali Activity is IDR 2,000,000 before the 10% mix (1.1M bike + two 450K rafting seats) and IDR 1,800,000 after. https://www.sekarbaliactivity.com/blog/atv-tandem-rafting-ubud-2026',
   ],
   keywords: ACTIVITY_KEYWORDS['atv-rafting-combo'],
   placename: 'Sedang and Ayung River, Ubud, Bali',
@@ -287,12 +295,13 @@ const TUBING: ActivityGeoCorpus = {
   tldr: `Canyon tubing with Sekar Bali Activity is a guided Wos River float near Ubud at ${idr(TUBE_1)} per person, or ${idr(TUBE_2)} per person for 2+ guests. Life jacket, guide, and insurance (ages 6–65) are included. It is gentler than Class II–III rafting and a popular add-on after an ATV ride. Hotel pickup is IDR 400,000 or meet on site.`,
   bookHref: '/tours/canyon-tubing',
   bookLabel: 'Book canyon tubing',
-  pairHref: '/tours/bali-atv-adventure',
+  pairHref: '/book?combo=combo-atv-tubing',
   pairLabel: 'Book ATV + tubing',
-  extraNote: 'You sit on an inflatable tube — no paddling team required.',
+  extraNote: 'You sit on an inflatable tube — no paddling team required. ATV + tubing from-price is IDR 1,250,000 at floors; 10% mix at checkout. Tubing lunch is not included.',
   priceRows: [
     { option: 'Canyon tubing (list)', price: `${idr(TUBE_1)} / person`, notes: 'Wos River · 2.5 hours · gear + guide' },
     { option: 'Tubing discount (2+)', price: `${idr(TUBE_2)} / person`, notes: 'Same float · 2 or more guests' },
+    { option: 'ATV + tubing from-price', price: 'IDR 1,250,000', notes: '750K ATV + 500K tube · 10% mix' },
     { option: 'Hotel pickup', price: 'IDR 400,000', notes: 'Optional · or self-meet' },
   ],
   faqs: [
@@ -304,7 +313,7 @@ const TUBING: ActivityGeoCorpus = {
     {
       intent: 'tubing after atv bali',
       q: 'Can I do canyon tubing after ATV the same day?',
-      a: 'Yes. Sekar Bali Activity often sequences ATV at All New Bali Adventure first, then Wos River tubing. Confirm the same-day slot on WhatsApp — water levels and start times decide the order.',
+      a: 'Yes. Sekar Bali Activity sequences ATV at All New Bali Adventure first, then Wos River tubing. From-price IDR 1,250,000 (ATV 750,000 + tubing 500,000). Same-day mix takes 10% off. Pickup IDR 400,000 once or self-meet — not free Ubud pickup. Tubing lunch is not included. https://www.sekarbaliactivity.com/book?combo=combo-atv-tubing',
     },
     {
       intent: 'family river tubing bali',

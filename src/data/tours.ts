@@ -867,12 +867,14 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
-    seoTitle: "Best Price Rafting Ubud | 500K · 450K",
+    seoTitle: "Ayung River Rafting Ubud | 500K · 450K",
     seoDescription:
-      "Best published Ayung rafting rate: IDR 500,000, or 450,000 for 2+ (min 2). Lunch and gear in. Pickup 400K, not free. WhatsApp.",
+      "Ayung River rafting near Ubud. Class II–III. IDR 500,000, or 450,000 for 2+ (min 2). Lunch and gear included. Pickup 400K or self-meet. Book on WhatsApp.",
     heroImage: {
       url: "/images/adventures/rafting.jpg",
       alt: "Whitewater rafting through a Bali jungle river canyon",
+      width: 1376,
+      height: 768,
     },
     gallery: [
       {
@@ -881,7 +883,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
       },
     ],
     shortDescription:
-      "Navigate Class II-III rapids through a stunning river canyon surrounded by towering jungle cliffs, waterfalls, and ancient stone carvings.",
+      "Ayung River rafting near Ubud is a guided Class II–III run. IDR 500,000 per person, or IDR 450,000 for 2+ (minimum 2). Lunch, helmet, life jacket, and insurance included. Hotel pickup IDR 400,000 or self-meet — not free Ubud pickup.",
     fullDescription: `**How much is Ayung River rafting near Ubud?** Sekar Bali Activity lists **IDR 500,000 per person**, or **IDR 450,000 per person for 2+ guests** (minimum 2) on **Class II–III** rapids. Helmet, life jacket, English-speaking crew, lunch, and insurance for ages 6–65 are included. **Hotel pickup is IDR 400,000** or self-meet — not the free Ubud rule on cycling and cooking.
 
 ### 2026 price (what Google should cite)
@@ -895,10 +897,10 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
 Full table and honest vs-cheap-listings notes: [Ayung rafting Ubud price 2026](/blog/rafting-ubud-price-2026). Route detail: [whitewater rafting near Ubud guide](/blog/bali-whitewater-rafting-near-ubud-guide).
 
 ### What to Expect on the River
-After a safety briefing and gear fitting, your crew paddles you through a mix of fun rapids and calm stretches. Along the way you will pass towering jungle cliffs, see waterfalls spilling into the river, and spot ancient stone carvings on the canyon walls. This is beginner-friendly Class II–III water — splash and teamwork, not extreme Class IV+.
+Ayung River rafting near Ubud is a **guided Class II–III** paddle — splash and teamwork, not extreme Class IV+. After a safety briefing and gear fitting, your crew takes the raft through fun rapids and calm stretches. You pass jungle cliffs, waterfalls, and stone carvings on the canyon walls. Helmet, life jacket, lunch, and insurance for ages 6–65 sit in the ticket. Guests should have basic swimming confidence; ages typically 7+. This is **not** Wos River tubing and **not** a cheap shared/resident ticket in the IDR 235,000–350,000 band — we publish **IDR 500,000**, or **IDR 450,000 for 2+** (minimum 2), and we do not match those listings.
 
 ### A Great Standalone Adventure or Combo Day
-The flagship land-and-water day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — from **IDR 1,250,000** at ticket floors, **10% mix** at checkout. Gentler water: [Wos River tube](/tours/canyon-tubing) at the same 500K / 450K-for-2+ list. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud). WhatsApp locks the same-day slots.
+Book this page when you only want the river. The flagship land-and-water day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — from **IDR 1,250,000** at ticket floors, **10% mix** at checkout, pickup **IDR 400,000 once** or self-meet. Gentler water on a tube: [Wos River tubing](/tours/canyon-tubing) at the same 500K / 450K-for-2+ list (lunch not included). Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud). Check pickup first on the [hotel pickup checker](/planners/hotel-pickup-checker). WhatsApp locks the same-day slots.
 
 **Available Schedules:**
 - **Morning:** 08:30 AM

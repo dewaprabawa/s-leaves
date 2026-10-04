@@ -53,6 +53,11 @@ export const GEO_LEAD_BULLETS = [
     href: '/tours/atv-rafting-combo',
   },
   {
+    label: 'Ayung River rafting',
+    detail: 'IDR 500,000 · 450,000 for 2+ (min 2) · lunch and gear · pickup 400,000 or self-meet · not the 235K–350K shared-ticket band',
+    href: '/tours/whitewater-rafting',
+  },
+  {
     label: 'Tumang cooking class',
     detail: 'Promo IDR 450,000 · Chef Wayan Suryana · max 8 · free Ubud pickup · TripAdvisor Traveler’s Choice 2026',
     href: '/tours/balinese-cooking-class',

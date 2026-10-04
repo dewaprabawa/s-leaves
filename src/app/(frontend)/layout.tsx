@@ -6,7 +6,6 @@ import { Compass, Mail, Phone } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
 import HeaderNav from "@/components/HeaderNav"
-import AiAssistantChat from "@/components/AiAssistantChat"
 import ConsultationInterestTray from "@/components/ConsultationInterestTray"
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from "@/lib/contact"
 import { ACTIVITY_BASE } from "@/lib/locations"
@@ -158,7 +157,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body className={`${dmSans.variable} ${barlow.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground`}>
         <GoogleAnalytics />
-        <AiAssistantChat />
         <ConsultationInterestTray />
         <a
           href="#main-content"

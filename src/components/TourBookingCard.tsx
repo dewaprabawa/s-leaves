@@ -274,7 +274,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const isPrivateItinerary = props.tourSlug === GIRLS_TRIP_SLUG
   const recommendPercent = getTravelerRecommendPercent(props.tourSlug)
 
-  // Nudge the floating AI Assistant button above our mobile sticky CTA so they don't overlap
+  // Lift the consultation tray above this mobile sticky CTA so they don't overlap
   useEffect(() => {
     document.documentElement.classList.add("has-mobile-book-bar")
     return () => {

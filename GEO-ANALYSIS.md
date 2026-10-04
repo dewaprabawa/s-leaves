@@ -1,5 +1,7 @@
 # GEO Analysis — New Activities (Sekar Bali Activity)
 
+**2026-10-04 money-page audit:** https://www.sekarbaliactivity.com/tours/bali-motorbike-traveling-trip — GEO readiness **90/100**. SSR TL;DR, price table, 10 Question/Answer nodes (not FAQPage), speakable selectors, llms.txt 100/100. Remaining GEO gaps: title led with “Best Price Scooter…” (fixed in the audit PR), destination H3s were thin (expanded), H2 said “facts AI can cite” (now “Bali motorbike tour from Ubud — 2026 facts”), planner calculator was not linked. Do not buy citations. Full write-up: `FULL-AUDIT-REPORT.md`.
+
 **Audit date:** 2026-09-28  
 **GEO Readiness Score: 58/100** (live motorbike hole) · **86/100** (coverage PR) · **90/100** (motorbike money-page upgrade)  
 **Platform scrape:** not run — readiness is structural, not citation-share.

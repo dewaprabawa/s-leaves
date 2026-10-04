@@ -2551,9 +2551,9 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
     pickup: MOTORBIKE_PICKUP,
     duration: MOTORBIKE_DURATION,
     basePrice: MOTORBIKE_UBUD_IDR,
-    seoTitle: "Best Price Scooter Tour Bali | Promo 450K",
+    seoTitle: "Bali Motorbike Tour Ubud | Promo 450K",
     seoDescription:
-      "Best published scooter promo from IDR 450K (was 550K). Tickets extra. Canggu/Jimbaran/Nusa Dua shuttle 550K. Ride or pillion. WhatsApp.",
+      "Bali motorbike tour from Ubud. Guided 125–160cc scooter. Promo IDR 450K (was 550K). Tickets extra. Ride or pillion. Canggu shuttle 550K. Book on WhatsApp.",
     heroImage: {
       url: "/images/adventures/motorbike-tour-hero.jpg",
       alt: "Smiling guests wearing helmets on a guided Bali motorbike traveling trip",
@@ -2604,37 +2604,37 @@ The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,
 
 ![Emerald rice terraces near Ubud, Bali](/images/adventures/moto-ubud.jpg)
 
-The entry Bali scooter tour from Ubud. Stops: rice terrace, Ulun Petanu waterfall, Gunung Kawi Tampaksiring, Bali Umah Kuno (traditional old house), and Monkey Forest / Monkey River.
+The Ubud Traveling Trip is Sekar Bali Activity’s entry **Bali motorbike tour from Ubud** — a guided public-road day on a ${MOTORBIKE_ENGINE} scooter, not a jungle-mud ATV and not a private-car circuit. Promo is **IDR ${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")} per scooter** (was ${MOTORBIKE_UBUD_LIST_IDR.toLocaleString("id-ID")}). Typical stops: a rice terrace, Ulun Petanu waterfall, Gunung Kawi Tampaksiring, Bali Umah Kuno (traditional old house), and Monkey Forest / Monkey River. Attraction tickets and lunch stay on you. Ride yourself (IDP recommended) or sit pillion. Pickup at your chosen area sits in this promo.
 
 ### Ubud Waterfall Trip — IDR ${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")} / scooter
 
 ![Bali jungle waterfall into a turquoise pool](/images/adventures/moto-ubud-waterfall.jpg)
 
-A waterfall scooter day from Ubud — five falls, tickets paid on site. Stops: Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan. Not a private-car waterfall circuit.
+The Ubud waterfall scooter tour is a public-road day to **five falls**, priced at **IDR ${MOTORBIKE_WATERFALL_IDR.toLocaleString("id-ID")} promo per scooter** (was ${MOTORBIKE_WATERFALL_LIST_IDR.toLocaleString("id-ID")}). Stops: Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan. Entrance tickets at each fall are paid on site and are not in the scooter price. Lunch is a warung stop you pay yourself. This is not the Sedang ATV track and not a private-car waterfall circuit. Ride (IDP recommended) or pillion. Pickup at your chosen area.
 
 ### Kintamani Traveling Trip — IDR ${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")} / scooter
 
 ![Sunrise over Mount Batur and Lake Batur in Kintamani](/images/adventures/moto-kintamani.jpg)
 
-A public-road Kintamani scooter day — crater views, not the [private Batur jeep](/tours/batur-sunrise-jeep-tour) and not a dirt-bike enduro. Stops: sunrise peak view, Pura Jati Segara, optional natural hot spring, Penglipuran Village, and Tukad Cepung Waterfall.
+The Kintamani traveling trip is a **public-road ${MOTORBIKE_ENGINE} day** at **IDR ${MOTORBIKE_KINTAMANI_IDR.toLocaleString("id-ID")} promo per scooter** (was ${MOTORBIKE_KINTAMANI_LIST_IDR.toLocaleString("id-ID")}). Stops: sunrise peak view, Pura Jati Segara, optional natural hot spring, Penglipuran Village, and Tukad Cepung Waterfall. Tickets extra. It is not the [private Batur jeep](/tours/batur-sunrise-jeep-tour) (crater-rim 4×4, meal included) and not a [Kintamani dirt-bike enduro](/tours/dirt-bike-kintamani-black-lava). Ride or pillion. Pickup at your chosen area.
 
 ### South Bali Traveling Trip — IDR ${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")} / scooter
 
 ![Uluwatu clifftop temple above the ocean in South Bali](/images/adventures/moto-south.jpg)
 
-A South Bali scooter day — cliff temples and Melasti. Dinner at Kedonganan is optional and paid separately. Stops: Tanah Lot, Uluwatu, GWK, Melasti Beach.
+The South Bali traveling trip is a guided scooter day to **cliff temples and Melasti**, priced at **IDR ${MOTORBIKE_SOUTH_IDR.toLocaleString("id-ID")} promo per scooter** (was ${MOTORBIKE_SOUTH_LIST_IDR.toLocaleString("id-ID")}). Stops: Tanah Lot, Uluwatu, GWK, and Melasti Beach. Kedonganan seafood dinner is optional and paid separately. Temple tickets stay extra. This is still a public-road ${MOTORBIKE_ENGINE} day — not a private driver circuit and not Sedang ATV. If we collect you from Canggu, Jimbaran, or Nusa Dua, add the **IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} shuttle once per booking**.
 
 ### North Bali Traveling Trip — IDR ${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")} / scooter
 
 ![Ulun Danu Beratan lake temple in North Bali](/images/adventures/moto-north.jpg)
 
-A North Bali scooter day — Beratan lake temple and Jatiluwih, the longest western loop. Stops: Sangeh Monkey Sanctuary, Leke-Leke Waterfall, Beratan Lake & Temple, and Jatiluwih.
+The North Bali traveling trip is the **longest western scooter loop**, priced at **IDR ${MOTORBIKE_NORTH_IDR.toLocaleString("id-ID")} promo per scooter** (was ${MOTORBIKE_NORTH_LIST_IDR.toLocaleString("id-ID")}). Stops: Sangeh Monkey Sanctuary, Leke-Leke Waterfall, Beratan Lake & Temple, and Jatiluwih. Tickets and lunch stay on you. Expect more saddle time than the Ubud day. Ride yourself (IDP recommended) or pillion. Pickup at your chosen area — not island-wide jeep pickup and not the IDR 400,000 ATV surcharge.
 
 ### East Bali Traveling Trip — IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")} / scooter
 
 ![Tirta Gangga water palace stepping stones in East Bali](/images/adventures/moto-east.jpg)
 
-The East Bali scooter day — Besakih, water palaces, and Virgin Beach. Highest published rate. Stops: Tukad Cepung Waterfall, Besakih Mother Temple, Tirta Gangga, Taman Ujung Water Palace, and Virgin Beach.
+The East Bali traveling trip is Sekar Bali Activity’s **highest published scooter promo** — **IDR ${MOTORBIKE_EAST_IDR.toLocaleString("id-ID")} per bike** (was ${MOTORBIKE_EAST_LIST_IDR.toLocaleString("id-ID")}). Stops: Tukad Cepung Waterfall, Besakih Mother Temple, Tirta Gangga, Taman Ujung Water Palace, and Virgin Beach. Attraction tickets are paid on site. This is a long public-road day on a ${MOTORBIKE_ENGINE}, not a dirt-bike enduro and not a private car. Ride or pillion. Pickup at your chosen area.
 
 ### Good to know
 - Motorbikes are ${MOTORBIKE_ENGINE}s.
@@ -2643,7 +2643,7 @@ The East Bali scooter day — Besakih, water palaces, and Virgin Beach. Highest 
 - Shuttle from **${MOTORBIKE_SOUTH_SHUTTLE_AREAS}** is **IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} once per booking**. Skip it if your pin is already in the ride area.
 - An International Driving Permit is recommended if you ride. Say pillion on WhatsApp if you do not want to drive.
 
-Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, and whether you need the Canggu / Jimbaran / Nusa Dua shuttle.`,
+Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, and whether you need the Canggu / Jimbaran / Nusa Dua shuttle. Add scooters first on the [motorbike tour calculator](/planners/motorbike-tour-price).`,
     highlights: [
       "125–160cc automatic motorbikes/scooters",
       "Ubud promo IDR 450K (was 550K) · East promo IDR 800K (was 900K)",
@@ -2683,8 +2683,8 @@ Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, a
       {
         id: "iti-moto-2",
         time: "Late Morning",
-        title: "First Best Spots",
-        description: "Ride out on your 125–160cc scooter to the first highlights of your chosen region — temples, viewpoints, or beaches (entrance tickets paid on site).",
+        title: "First temples, waterfalls, or viewpoints",
+        description: "Ride the 125–160cc scooter to the first stops on your chosen route — rice terrace, waterfall, temple, or coast. Entrance tickets are paid on site and are not in the scooter promo.",
       },
       {
         id: "iti-moto-3",
@@ -2695,8 +2695,8 @@ Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, a
       {
         id: "iti-moto-4",
         time: "Afternoon",
-        title: "Remaining Highlights",
-        description: "Continue to the rest of your destination's best spots — waterfalls, temples, or coastline — at your own pace.",
+        title: "Afternoon stops on your chosen route",
+        description: "Continue the rest of that destination’s list — remaining waterfalls, temples, villages, or beach — at a pace the group can hold. Tickets stay extra.",
       },
       {
         id: "iti-moto-5",

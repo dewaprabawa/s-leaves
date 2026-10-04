@@ -1,54 +1,58 @@
-# Action Plan — New Activities SEO / GEO
+# ACTION PLAN
 
-**Date:** 2026-09-28  
-**Live score (new-activity surfaces):** 62/100 · **After coverage PR:** 84/100 · **After motorbike money-page upgrade:** 88/100  
-**Conversion goal:** WhatsApp booking with prefilled details (itinerary stays consultation-only)
+**URL:** https://www.sekarbaliactivity.com/tours/bali-motorbike-traveling-trip  
+**Date:** 2026-10-04  
+**Source:** `FULL-AUDIT-REPORT.md` (single-page SEO + GEO)
+
+Order: blockers → quick wins → strategic. No FAQPage. No cheapest claim. No slug rename. No price changes.
+
+---
 
 ## 1. Immediate blockers
 
-None for indexing. HTTPS, self-canonical, sitemap, and AI crawlers are healthy.
+None. The URL returns 200, is `index,follow`, self-canonical, in `sitemap.xml`, and is not `noindex`.
 
-The **commercial GEO blocker** was the motorbike money page shipping without agent-readable facts. That is fixed in this PR — it is not live until deploy.
+---
 
-## 2. Done in this revision (2026-09-28)
+## 2. Quick wins (this PR — implemented on `cursor/motorbike-seo-geo-audit-c8fa`)
 
-1. **Motorbike GEO stack** — `motorbikeTrip.ts` constants; 54-word TLDR; priced destination table; extractable Q&As; citation snippets.
-2. **Keywords** — first-class `KEYWORD_CLUSTERS['bali-motorbike-traveling-trip']` (head / book / compare). Not park-workshop.
-3. **Agent files** — `GEO_PRICING`, `GEO_TOUR_SUMMARIES`, `GEO_INVENTORY`, pickup policy, things-to-do FAQ, comparison table in `GEO_COMPARISONS`.
-4. **UTV inventory** — Bali Buggy Adventures + 1.2M / 1.5M added to `GEO_INVENTORY` (was summaries-only).
-5. **Internal links** — footer, layout, `SITE_NAV_LINKS`, host note, related guides, hub table + choose row.
-6. **Comparison spoke** — `/blog/bali-motorbike-tour-vs-private-driver-2026` with mapped CTA (motorbike vs full-day car vs ATV). Head terms stay on the money page.
-7. **Schema** — Organization `priceRange` `IDR 300000 - IDR 4100000`; Website `dateModified` 2026-09-28.
-8. **Sitemap** — motorbike is a money-page priority; spoke lastmod override 2026-09-28. `assertSitemapInventory` passes (123 locs).
-9. **Motorbike money-page upgrade** — title job `Bali Motorbike Tour Ubud | From IDR 450K`; definition-first body + price/compare tables; `TouristTrip`+`Product` `AggregateOffer` (6 destinations); speakable WebPage + standalone `Question`/`Answer` (no FAQPage); IDP / pillion / waterfall / vs-dirt-bike facts; `GEO_LEAD_BULLETS` row. `GEO_QUICK_ANSWER` unchanged.
+| # | Action | Impact | Effort | Owner file |
+| --- | --- | --- | --- | --- |
+| 1 | Title → `Bali Motorbike Tour Ubud \| Promo 450K` (37). Keyword first. Promo 450K stays. Not “best/cheapest in Bali”. | High — query–title match + CTR | Low | `src/data/tours.ts` `seoTitle` (OG/Twitter/WebPage.name follow) |
+| 2 | Meta 150–160 chars starting with “Bali motorbike tour from Ubud”, tickets extra, ride or pillion, Canggu shuttle 550K, WhatsApp. | High — snippet relevance | Low | `src/data/tours.ts` `seoDescription` |
+| 3 | GEO H2 → `Bali motorbike tour from Ubud — 2026 facts` | High — first extractable heading | Low | `src/data/activityGeo.ts` `MOTORBIKE.heading` |
+| 4 | Promo badge on the tour header (same pattern as cycling) | Medium — on-page promo notice | Low | `src/app/(frontend)/tours/[slug]/page.tsx` |
+| 5 | Link `/planners/motorbike-tour-price` from the money page + WebPage.significantLink | Medium — internal link + conversion | Low | `tourGuides.ts`, `page.tsx` schema, `activityGeo.ts` extraNote |
+| 6 | Expand six destination H3s to 80–120 word citable passages (honest stops only) | High — passage / GEO | Medium | `src/data/tours.ts` `fullDescription` |
+| 7 | llms lead bullet: tickets extra + IDP or pillion | Medium — agent citability | Low | `src/data/geoContent.ts` `GEO_LEAD_BULLETS` |
 
-## 3. Still open
+---
 
-| Priority | Action | Why | Effort |
-|----------|--------|-----|--------|
-| High | Keep new title jobs when adding cluster posts | Prevents tour vs blog cannibalization | Ongoing |
-| Medium | Re-run PageSpeed mobile on motorbike, UTV, Safari after deploy | CWV unknown this run | Low |
-| Medium | Optional footer links for Taro dinner / Tabanan dirt bike | Discoverability only — GEO already exists | Low |
-| Low | Named practitioner bylines on workshop pages | EEAT | Medium |
-| Low | First-party video / YouTube mentions | GEO multi-modal | High |
+## 3. Strategic (not this PR unless cheap)
 
-## 4. Do not do
+| # | Action | Impact | Effort | Notes |
+| --- | --- | --- | --- | --- |
+| 8 | Compress `moto-ubud.jpg` / `moto-east.jpg` / `moto-ubud-waterfall.jpg` under 200–300 KB; prefer AVIF/WebP source | High for LCP if those images win LCP | Medium | Binary; verify quality. Next already serves `_next/image` for hero/gallery |
+| 9 | Render destination photos with `next/image` + width/height instead of markdown `<img>` | Medium — CLS | Medium | New small component |
+| 10 | Collect real guest reviews; then Review / AggregateRating | Medium — E-E-A-T | High | Do not invent |
+| 11 | YouTube / short-form of a real scooter day (brand mention signal) | Medium — GEO brand | High | Earn, do not buy citations |
+| 12 | Slug → `/tours/bali-motorbike-tour` only with 301 + sitemap + internal rewrite | Low–medium long term | High | Not this pass |
 
-- Do not add FAQPage schema (commercial restriction; FAQ rich results gone May 2026).
-- Do not add HowTo schema (deprecated).
-- Do not invent free Ubud pickup or the IDR 400K surcharge on park / workshop / dirt-bike / UTV tickets — pickup is **quoted**.
-- Do not invent free-Ubud cycling pickup on the motorbike trip — pickup is **at the chosen area**.
-- Do not claim the motorbike trip is Sedang ATV, a dirt-bike enduro, or a private car day.
-- Do not add a booking popup on private itinerary pages (consultation only).
-- Do not buy or engineer AI citations.
-- Do not give `/book`, `/experiences`, or a blog the same title pattern as a `/tours/[slug]` money page.
-- Do not put the full inventory sentence back into `GEO_QUICK_ANSWER`.
+---
 
-## 5. After deploy (ops)
+## 4. Maintenance
 
-1. Request indexing on `/tours/bali-motorbike-traveling-trip`, `/blog/bali-motorbike-tour-vs-private-driver-2026`, `/llms.txt`, `/pricing.md`, `/tours/utv-buggy-bali-adventure`.
-2. Manual GEO prompts:
-   - “How much is a Bali motorbike tour from Ubud?” → **IDR 450,000 per scooter; tickets not included; pickup at chosen area**.
-   - “Is the motorbike trip the same as a private driver?” → **No. Car from IDR 600,000.**
-   - “Is UTV the Ubud ATV?” → **No. Pemogan 7 km UTV, lunch included, 1.2M / 1.5M.**
-3. Click the new blog CTA and confirm it lands on the motorbike money page, not generic `/book`.
+- Request indexing in GSC after deploy.
+- Re-run PageSpeed with an API key (environment was rate-limited).
+- Pull a page-filtered GSC query report (on-disk Aug–Sep export had no motorbike rows).
+- Keep published promo: Ubud 450K, waterfall 500K, Kintamani 650K, South 750K, North 750K, East 800K, south shuttle 550K once. Tickets + lunch extra.
+
+---
+
+## 5. Explicitly out of scope
+
+- FAQPage or HowTo JSON-LD
+- “Cheapest scooter tour in Bali”
+- Fake 999K / Gorilla Cave / free quad / SeaBank
+- Changing ATV 750/725/700, jeep 750K-at-3+, cycling 650-vs-750, Swing 530/630
+- Merging leftover draft PRs

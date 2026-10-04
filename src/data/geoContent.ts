@@ -69,7 +69,7 @@ export const GEO_LEAD_BULLETS = [
   },
   {
     label: 'Bali motorbike / scooter tour',
-    detail: 'Promo from IDR 450,000 per scooter (Ubud, was 550,000) · East 800,000 · Canggu/Jimbaran/Nusa Dua shuttle 550,000',
+    detail: 'Promo from IDR 450,000 per scooter (Ubud, was 550,000) · East 800,000 · tickets extra · IDP or pillion · Canggu/Jimbaran/Nusa Dua shuttle 550,000',
     href: '/tours/bali-motorbike-traveling-trip',
   },
   {

@@ -12,7 +12,7 @@ export const SITE_NAME = 'Sekar Bali Activity'
 /** SERP title target: brand + offer, ≤60 characters */
 export const DEFAULT_TITLE = 'Sekar Bali Activity | Jeep, Cooking & ATV Ubud'
 export const DEFAULT_DESCRIPTION =
-  'Private Mount Batur jeep from IDR 750K, Tumang cooking from 450K, Pejeng cycling from 750K near Ubud — plus ATV, rafting, swing. WhatsApp booking.'
+  'Private Mount Batur jeep from IDR 750K, Tumang cooking from 450K, Pejeng cycling promo 650K (was 750K) near Ubud — plus ATV, rafting, swing. WhatsApp booking.'
 
 /** Social previews (og:title ≤60, og:description ≤160) */
 export const OG_TITLE = 'Jeep, Cooking & ATV Ubud | Sekar Bali'

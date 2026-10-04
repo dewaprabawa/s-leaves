@@ -36,7 +36,7 @@ import {
   atvWhatToBringFooter,
 } from "@/data/atvKnowBefore"
 import { ADVENTURES, getAdventureChildPrice, type AdventureCatalogItem } from "@/data/adventures"
-import { getListPrice, getPromoListPrice, formatTierPriceTable } from "@/lib/pricing"
+import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, getListPrice, getPromoListPrice, formatTierPriceTable } from "@/lib/pricing"
 import {
   DISCOVERY_CATEGORIES,
   getCatalogSection,
@@ -96,7 +96,7 @@ const CATEGORY_SECTION_META: {
     eyebrow: "Slow travel",
     title: "Village & nature",
     subtitle:
-      "Quiet Pejeng ricefield cycling with lunch and free Ubud hotel pickup from IDR 750K — not the Tegallalang swing strip.",
+      "Quiet Pejeng ricefield cycling with lunch and free Ubud hotel pickup — promo IDR 650K (was 750K). Not the Tegallalang swing strip.",
   },
   {
     id: "adventure",
@@ -167,10 +167,12 @@ const pricingData: PricingRow[] = [
   {
     activity: "Ubud Ricefield Cycling Tour",
     adventureId: "cycling",
-    pax: `${formatTierPriceTable("cycling")} · Free Ubud pickup · Lunch included`,
-    price: getPromoListPrice("cycling"),
-    originalPrice: getListPrice("cycling"),
+    bookHref: "/tours/ubud-ricefield-cycling-tour",
+    pax: "Promo 650K (was 750K) · 625K (2) · 600K (3+) · lunch · free Ubud pickup",
+    price: CYCLING_PROMO_IDR,
+    originalPrice: CYCLING_LIST_IDR,
     highlight: true,
+    badge: "Promo",
   },
   {
     activity: "Private Mount Batur Jeep",
@@ -239,7 +241,7 @@ const travelGuides = [
   },
   {
     title: "Best Price ATV, Rafting, Cycling & Scooter 2026",
-    excerpt: "Published rates: ATV from 750K, rafting 500K / 450K for 2+, cycling 750K with free pickup, scooter promo 450K.",
+    excerpt: "Published rates: ATV from 750K, rafting 500K / 450K for 2+, cycling promo 650K (was 750K) with free pickup, scooter promo 450K.",
     href: "/blog/best-price-atv-rafting-cycling-scooter-ubud-2026",
   },
   {

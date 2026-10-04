@@ -117,7 +117,7 @@ Do **not** stack Penida, Lovina, three temples, and a mall. Skip list: [what to 
 
 | Shape | Morning | Afternoon | From-price (activities only) | Pickup honesty |
 | --- | --- | --- | --- | --- |
-| Village + kitchen | [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) **750K** (lunch) | [Tumang cooking](/tours/balinese-cooking-class) **450K** | **1,200,000** | **Free Ubud** on both |
+| Village + kitchen | [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) **promo 650K** (was 750K, lunch) | [Tumang cooking](/tours/balinese-cooking-class) **450K** | **1,100,000** | **Free Ubud** on both |
 | Jungle photo + kitchen | [Swing Heaven](/tours/swing-heaven-bali) **530K** (lunch **630K**) | Tumang cooking **450K** | **980,000** (530+450) | Swing **400K** or self-meet · cooking free Ubud |
 | Waterfall + kitchen | [Griya Beji](/tours/griya-beji-waterfall) **300K** (+ gate) | Tumang cooking **450K** | **750,000** + admission | Griya **400K** or self-meet · cooking free Ubud |
 | Temple ceremony + kitchen | [Tirta Empul / Beji](/tours/tirta-empu-purification) **1,200,000** | Tumang cooking **450K** | **1,650,000** | Temple **shuttle included** · cooking free Ubud |
@@ -243,8 +243,8 @@ What we **do** control is published on this domain: **IDR**, pickup rules, and W
 | [Swing Heaven](/tours/swing-heaven-bali) | **IDR 530,000** / **630,000** lunch | Bongkasa / Ayung. Koi boat + dress extra. Pickup **IDR 400,000** or driver day. |
 | [Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) | **IDR 750,000** / person at 3+ | Pickup **included**. Meal after viewpoint. Not the summit trek. |
 | [Tumang cooking](/tours/balinese-cooking-class) | **IDR 450,000** shared | Free Ubud pickup. Max 8. Strong family day. |
-| [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) | **IDR 750,000** | Lunch + free Ubud pickup. |
-| [Cycling + cooking combo](/book?activity=combo-cycling-cooking) | **IDR 1,200,000** | Sum of published tickets · both free Ubud pickup. |
+| [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) | **Promo IDR 650,000** (was 750,000) | Lunch + free Ubud pickup. |
+| [Cycling + cooking combo](/book?activity=combo-cycling-cooking) | **IDR 1,100,000** | Sum of published tickets (650K promo + 450K) · both free Ubud pickup. |
 | [Swing Heaven + cooking](/book?activity=combo-swing-cooking) | **IDR 980,000** | 530K + 450K · **no mix discount** · swing pickup **400K** or self-meet. |
 | [ATV](/tours/bali-atv-adventure) | **IDR 750,000** single | All New Bali Adventure. Pickup **IDR 400,000** or self-meet. Insurance 6–65. |
 | [Griya Beji](/tours/griya-beji-waterfall) | **IDR 300,000** purification | Punggul waterfall melukat — **not** Tirta Empul. Admission extra. |

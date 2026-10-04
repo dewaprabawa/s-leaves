@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     question: "Is an Ubud cycling tour worth it?",
-    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our 2-hour Ubud Ricefield Cycling Tour is IDR 750,000 with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance for ages 6–65. Prefer adrenaline? Choose ATV or rafting instead."
+    answer: "Yes if you want quiet Pejeng rice paddies, village culture, and lunch included rather than crowded Tegallalang stops. Our 2-hour Ubud Ricefield Cycling Tour is promo IDR 650,000 (was 750,000) with free Ubud hotel pickup, lunch, bike, helmet, guide, and insurance for ages 6–65. Prefer adrenaline? Choose ATV or rafting instead."
   },
   {
     question: "What activities and tours do you offer?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: "Which tours have free Ubud hotel pickup?",
-    answer: "Ubud Ricefield Cycling Tour (IDR 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall charge IDR 400,000 for hotel pickup."
+    answer: "Ubud Ricefield Cycling Tour (promo IDR 650,000, was 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall charge IDR 400,000 for hotel pickup."
   },
   {
     question: "How much is Tumang Bali Cooking Class?",
@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     question: "How much does the Ubud ricefield cycling tour cost?",
-    answer: "IDR 750,000 per person for the 2-hour Ubud Ricefield Cycling Tour (IDR 725,000 for 2 guests, IDR 700,000 for 3+), including lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
+    answer: "Promo IDR 650,000 per person for the 2-hour Ubud Ricefield Cycling Tour (was IDR 750,000). Two guests IDR 625,000, three+ IDR 600,000. Lunch, bike, helmet, guide, insurance for ages 6–65, and free Ubud pickup. The tour covers 8 village stops through Pejeng rice terraces."
   },
   {
     question: "How much is the private Mount Batur jeep?",

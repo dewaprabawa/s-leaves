@@ -7,7 +7,7 @@ import { getTravelerRecommendPercent } from "@/data/tours"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
-import { getListPrice, getPromoListPrice } from "@/lib/pricing"
+import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, getListPrice, getPromoListPrice } from "@/lib/pricing"
 import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
@@ -67,6 +67,13 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       promoPrice: MOTORBIKE_UBUD_IDR,
       standardPrice: MOTORBIKE_UBUD_LIST_IDR,
       tierLabel: `Promo / scooter · East ${formatIdr(MOTORBIKE_EAST_IDR)} (was ${formatIdr(MOTORBIKE_EAST_LIST_IDR)})`,
+    }
+  }
+  if (tourSlug === "ubud-ricefield-cycling-tour") {
+    return {
+      promoPrice: CYCLING_PROMO_IDR,
+      standardPrice: CYCLING_LIST_IDR,
+      tierLabel: "Promo / person · 625K (2) · 600K (3+) · lunch + free Ubud pickup",
     }
   }
   // ATV SERP / FAQ lead with the 1-rider rate. Do not show the 3+ 700K
@@ -254,6 +261,8 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const consultationActivity =
     props.tourSlug === "balinese-cooking-class"
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
+      : props.tourSlug === "ubud-ricefield-cycling-tour"
+        ? `${props.title} — promo ${formatIdr(CYCLING_PROMO_IDR)} / person (was ${formatIdr(CYCLING_LIST_IDR)})`
       : props.tourSlug === "bali-atv-adventure"
         ? `${props.title} — single from ${formatIdr(props.basePrice)}`
         : props.tourSlug === "atv-rafting-combo"

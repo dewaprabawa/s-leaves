@@ -46,7 +46,7 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'tandem-atv': [1_100_000, 1_060_000, 1_030_000], // per tandem bike
   'rafting': [500_000, 450_000, 450_000],
   'canyon-tubing': [500_000, 450_000, 450_000],
-  'cycling': [750_000, 725_000, 700_000],
+  'cycling': [650_000, 625_000, 600_000],
   // Internal 1-pax cell is unused on the site (min 2). Public rate is the 2-pax package.
   'jeep-sunrise': [1_350_000, JEEP_SITIN_PAIR_TOTAL_IDR / 2, JEEP_GROUP_IDR], // sit-in: IDR 2,000,000 for 2
   'jeep-tracking': [1_350_000, JEEP_TRACKING_PAIR_TOTAL_IDR / 2, JEEP_GROUP_IDR], // tracking: IDR 1,800,000 for 2
@@ -55,6 +55,10 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'swing-heaven': [530_000, 530_000, 530_000],
   'swing-heaven-lunch': [630_000, 630_000, 630_000],
 }
+
+/** Published compare-at list for Pejeng cycling (was / strikethrough). Bookable promo is TIER_PRICES_IDR.cycling. */
+export const CYCLING_LIST_IDR = 750_000
+export const CYCLING_PROMO_IDR = 650_000
 
 /** Per-person add-on on any jeep variant (private or tracking, sunrise or sunset). Ticket included. */
 export const JEEP_HOT_SPRING_IDR = 150_000

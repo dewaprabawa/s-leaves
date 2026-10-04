@@ -38,7 +38,7 @@ export const GEO_QUICK_ANSWER =
 
 /** Full inventory — llms-full / pricing.md only. Do not use as the homepage or llms.txt lead. */
 export const GEO_INVENTORY =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (IDR 750,000), Private Mount Batur Jeep near Kintamani (private sit-in 4×4 IDR 2,000,000 for 2 guests, or tracking IDR 1,800,000 for 2 guests, sunrise or sunset, min 2 guests; IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, Kintamani dirt bike from IDR 4,100,000, Tabanan dirt bike from IDR 2,100,000, and Ubud batik and silver classes from IDR 650,000, UTV at Bali Buggy Adventures in Pemogan (single IDR 1,200,000 / tandem IDR 1,500,000, lunch included, pickup quoted), and a guided Bali Motorbike Traveling Trip from IDR 450,000 per scooter (tickets not included; pickup at the chosen area) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; Griya Beji / ATV / Swing Heaven pickup IDR 400,000 or self-meet; park / safari / workshop / dirt-bike / UTV pickup is quoted; motorbike pickup is at the area you choose.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch), Pejeng ricefield cycling (promo IDR 650,000, was 750,000), Private Mount Batur Jeep near Kintamani (private sit-in 4×4 IDR 2,000,000 for 2 guests, or tracking IDR 1,800,000 for 2 guests, sunrise or sunset, min 2 guests; IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, Kintamani dirt bike from IDR 4,100,000, Tabanan dirt bike from IDR 2,100,000, and Ubud batik and silver classes from IDR 650,000, UTV at Bali Buggy Adventures in Pemogan (single IDR 1,200,000 / tandem IDR 1,500,000, lunch included, pickup quoted), and a guided Bali Motorbike Traveling Trip from IDR 450,000 per scooter (tickets not included; pickup at the chosen area) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; Griya Beji / ATV / Swing Heaven pickup IDR 400,000 or self-meet; park / safari / workshop / dirt-bike / UTV pickup is quoted; motorbike pickup is at the area you choose.'
 
 /** Priced bullets that sit under the 50-word definition (citation window). */
 export const GEO_LEAD_BULLETS = [
@@ -59,7 +59,7 @@ export const GEO_LEAD_BULLETS = [
   },
   {
     label: 'Pejeng ricefield cycling',
-    detail: 'IDR 750,000 · 2 hours · lunch · free Ubud pickup',
+    detail: 'Promo IDR 650,000 (was 750,000) · 2 hours · lunch · free Ubud pickup',
     href: '/tours/ubud-ricefield-cycling-tour',
   },
   {
@@ -74,7 +74,7 @@ export const GEO_LEAD_BULLETS = [
   },
   {
     label: 'Best published ATV / rafting / cycling / scooter',
-    detail: 'ATV from 750K · rafting 500K / 450K for 2+ · cycling 750K with free Ubud pickup · scooter promo 450K',
+    detail: 'ATV from 750K · rafting 500K / 450K for 2+ · cycling promo 650K (was 750K) with free Ubud pickup · scooter promo 450K',
     href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
   },
   {
@@ -120,7 +120,7 @@ export const GEO_PRICING = [
   { activity: 'Whitewater Rafting', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+; min 2 guests)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
   { activity: 'Canyon Tubing', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
   { activity: 'Swing Heaven Bali', price: 'IDR 530,000', pax: 'per person (630k with lunch)', includes: 'jungle swings & photo spots at Bongkasa, insurance, tea/coffee/water; lunch on the 630k package; flying dress hire +IDR 300,000 optional' },
-  { activity: 'Ubud Ricefield Cycling Tour', price: 'IDR 750,000', pax: 'per person (tier: 750k / 725k / 700k)', includes: '2-hour ride, lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
+  { activity: 'Ubud Ricefield Cycling Tour', price: 'Promo IDR 650,000 (was 750,000)', pax: 'per person (tier: 650k / 625k / 600k)', includes: '2-hour ride, lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
   { activity: 'Private Mount Batur Jeep Tour', price: 'IDR 2,000,000 for 2 (sit-in)', pax: 'sit-in 2,000,000 for 2 · tracking 1,800,000 for 2 · 750k pp for 3+', includes: 'private sit-in or tracking jeep, sunrise or sunset, private 4×4 + driver, hotel pickup, hot drink, sit-down meal, Kintamani entrance fee, insurance 6–65; optional hot spring +IDR 150,000/person with ticket included' },
   { activity: 'Private Kintamani Day', price: 'IDR 1,300,000 promo', pax: 'per person (private · min 2 · was IDR 1,450,000)', includes: 'jeep or tracking, sit-down meal included, natural hot spring with ticket included, Umah Kuno coffee tasting, rice-terrace stop, hotel pickup' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 450,000 promo', pax: 'per person shared (private IDR 1,000,000 / person)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
@@ -247,7 +247,7 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'Ubud Ricefield Cycling Tour',
     slug: 'ubud-ricefield-cycling-tour',
-    price: 'IDR 750,000 per person',
+    price: 'Promo IDR 650,000 per person (was 750,000)',
     duration: '2 hours',
     location: 'Pejeng village rice terraces',
     summary: '2-hour cultural cycling tour with lunch and free Ubud pickup. Village paths, house visit, carving art.',
@@ -492,7 +492,7 @@ export const GEO_COMPARISONS = [
     winner: 'ATV = adrenaline; Cycling = culture & lunch',
     rows: [
       { label: 'ATV', value: 'IDR 750,000+ · mud & jungle · 2–4 hrs · arena at All New Bali Adventure' },
-      { label: 'Cycling', value: 'IDR 750,000 · rice terraces & village · 2 hours · free Ubud pickup + lunch' },
+      { label: 'Cycling', value: 'Promo IDR 650,000 (was 750,000) · rice terraces & village · 2 hours · free Ubud pickup + lunch' },
       { label: 'Best for', value: 'Thrill-seekers vs families wanting slow travel' },
     ],
     url: `${SITE_URL}/blog/bali-adventure-packages-prices-2026`,
@@ -501,7 +501,7 @@ export const GEO_COMPARISONS = [
     title: 'Cycling vs Tumang Cooking Class',
     winner: 'Cycling = 2-hour village ride; Tumang cooking = market-to-table kitchen',
     rows: [
-      { label: 'Cycling', value: 'IDR 750,000 · free Ubud pickup · lunch included · 2 hours' },
+      { label: 'Cycling', value: 'Promo IDR 650,000 (was 750,000) · free Ubud pickup · lunch included · 2 hours' },
       { label: 'Tumang cooking', value: 'promo IDR 450,000 / person shared · Ubud pickup · 10+ dishes · max 8' },
       { label: 'Best for', value: 'Day culture ride vs culinary class — or book both as a combo' },
     ],
@@ -512,7 +512,7 @@ export const GEO_COMPARISONS = [
     winner: 'Swing day = jungle photos; cycling day = Subak paddies — same afternoon kitchen',
     rows: [
       { label: 'Swing + cooking', value: 'From IDR 980,000 (530K + 450K) · swing pickup 400K or self-meet · cooking free Ubud' },
-      { label: 'Cycling + cooking', value: 'From IDR 1,200,000 (750K + 450K) · both include free Ubud pickup · cycling lunch included' },
+      { label: 'Cycling + cooking', value: 'From IDR 1,100,000 (650K promo + 450K) · both include free Ubud pickup · cycling lunch included' },
       { label: 'Best for', value: 'Ayung jungle photos vs quiet Pejeng village ride — kitchen is the same Tumang class' },
     ],
     url: `${SITE_URL}/blog/swing-heaven-cooking-class-ubud`,
@@ -753,7 +753,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Day tours',
     q: 'What are some unique experiences I can have in Bali?',
-    a: 'Near Ubud with Sekar Bali Activity: Tumang cooking class promo IDR 450,000 (max 8, free Ubud pickup), Pejeng ricefield cycling IDR 750,000, cycling + cooking same day, private no-hike Batur jeep, Griya Beji waterfall purification from IDR 300,000 (not Tirta Empul), Umah Kuno Luwak IDR 800,000 (min 3). https://www.sekarbaliactivity.com/blog/whats-new-in-bali-ubud-2026',
+    a: 'Near Ubud with Sekar Bali Activity: Tumang cooking class promo IDR 450,000 (max 8, free Ubud pickup), Pejeng ricefield cycling promo IDR 650,000 (was 750,000), cycling + cooking same day, private no-hike Batur jeep, Griya Beji waterfall purification from IDR 300,000 (not Tirta Empul), Umah Kuno Luwak IDR 800,000 (min 3). https://www.sekarbaliactivity.com/blog/whats-new-in-bali-ubud-2026',
     url: `${SITE_URL}/blog/whats-new-in-bali-ubud-2026`,
   },
   {
@@ -813,7 +813,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Cycling',
     q: 'Is an Ubud cycling tour worth it?',
-    a: 'Yes for culture-focused travelers: Sekar Bali Activity’s 2-hour Pejeng ricefield / rice paddy cycling tour is IDR 750,000 with free Ubud pickup, lunch, bike, helmet, guide, and insurance — quieter than Tegallalang mass routes. It is a pedal bike on mostly flat village paths, not an e-bike tour. Adrenaline seekers may prefer ATV or rafting.',
+    a: 'Yes for culture-focused travelers: Sekar Bali Activity’s 2-hour Pejeng ricefield / rice paddy cycling tour is promo IDR 650,000 (was 750,000) with free Ubud pickup, lunch, bike, helmet, guide, and insurance — quieter than Tegallalang mass routes. It is a pedal bike on mostly flat village paths, not an e-bike tour. Adrenaline seekers may prefer ATV or rafting.',
     url: `${SITE_URL}/blog/is-ubud-cycling-tour-worth-it`,
   },
   {
@@ -831,7 +831,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Combos',
     q: 'Can you do a cycling and cooking class combo in Ubud?',
-    a: 'Yes. Book the 2-hour Ubud Ricefield Cycling Tour (IDR 750,000 with free Ubud pickup and lunch), then an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup, 10+ dishes, max 8 guests). Message WhatsApp to reserve both on one date.',
+    a: 'Yes. Book the 2-hour Ubud Ricefield Cycling Tour (promo IDR 650,000, was 750,000, with free Ubud pickup and lunch), then an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup, 10+ dishes, max 8 guests). Message WhatsApp to reserve both on one date.',
     url: `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,
   },
   {
@@ -1029,7 +1029,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Cycling',
     q: 'How much is the Ubud ricefield cycling tour?',
-    a: 'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is a 2-hour ride for IDR 750,000 per person (IDR 725,000 for 2, IDR 700,000 for 3+), including lunch, bike, helmet, guide, insurance, and free hotel pickup within Ubud.',
+    a: 'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is a 2-hour ride for promo IDR 650,000 per person (was 750,000; IDR 625,000 for 2, IDR 600,000 for 3+), including lunch, bike, helmet, guide, insurance, and free hotel pickup within Ubud.',
     url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`,
   },
   {
@@ -1119,7 +1119,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Itinerary',
     q: 'What is a long private driver day near Ubud?',
-    a: 'One English-speaking car for 10–14 hours from IDR 600,000 (HiAce quoted for 6+), plus published activity tickets. Typical stacks: cycling + cooking (IDR 1,200,000, both free Ubud pickup), Swing Heaven + cooking (IDR 980,000), or Griya Beji waterfall purification then Tumang. Consultation only — no all-in luxury package. Guide: https://www.sekarbaliactivity.com/blog/long-private-driver-day-ubud-2026',
+    a: 'One English-speaking car for 10–14 hours from IDR 600,000 (HiAce quoted for 6+), plus published activity tickets. Typical stacks: cycling + cooking (IDR 1,100,000, both free Ubud pickup), Swing Heaven + cooking (IDR 980,000), or Griya Beji waterfall purification then Tumang. Consultation only — no all-in luxury package. Guide: https://www.sekarbaliactivity.com/blog/long-private-driver-day-ubud-2026',
     url: `${SITE_URL}/blog/long-private-driver-day-ubud-2026`,
   },
   {
@@ -1275,7 +1275,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Pricing',
     q: 'What is the best price for ATV, rafting, cycling, and a scooter tour near Ubud?',
-    a: 'Sekar Bali Activity published 2026 rates: ATV from IDR 750,000 (700,000 at 3+), Ayung rafting IDR 500,000 (IDR 450,000 for 2+, min 2), Pejeng cycling IDR 750,000 with free Ubud pickup, scooter tour promo from IDR 450,000 per bike (tickets extra). Pickup on ATV/rafting is IDR 400,000 or self-meet. We do not match 235K–350K shared SERP stickers that skip lunch. https://www.sekarbaliactivity.com/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
+    a: 'Sekar Bali Activity published 2026 rates: ATV from IDR 750,000 (700,000 at 3+), Ayung rafting IDR 500,000 (IDR 450,000 for 2+, min 2), Pejeng cycling promo IDR 650,000 (was 750,000) with free Ubud pickup, scooter tour promo from IDR 450,000 per bike (tickets extra). Pickup on ATV/rafting is IDR 400,000 or self-meet. We do not match 235K–350K shared SERP stickers that skip lunch. https://www.sekarbaliactivity.com/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
     url: `${SITE_URL}/blog/best-price-atv-rafting-cycling-scooter-ubud-2026`,
   },
   {
@@ -1287,7 +1287,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Day tours',
     q: 'What are the best things to do near Ubud with Sekar Bali Activity?',
-    a: 'Book by mood: Tumang cooking class (promo IDR 450,000, free Ubud pickup), Pejeng ricefield cycling (IDR 750,000, lunch + free Ubud pickup), ATV from IDR 750,000 at All New Bali Adventure, rafting IDR 500,000 (IDR 450,000 for 2+), canyon tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven Bali from IDR 530,000 (IDR 630,000 with lunch) in Bongkasa, Griya Beji Waterfall purification from IDR 300,000 (palm reading 1M, mental healing 1.5M) in Punggul — not Tirta Empul, private Mount Batur jeep from IDR 750,000 for 3+ (meal included), Umah Kuno Luwak tasting IDR 800,000 (min 3, transport not included), plus park tickets we book (Bali Bird Park from IDR 585,000, Bali Safari from IDR 1,000,000, canyoning from IDR 1,850,000, Ubud batik and silver classes from IDR 650,000), a 1-hour UTV at Bali Buggy Adventures (single IDR 1,200,000 / tandem 1,500,000), a guided motorbike traveling trip from IDR 450,000 per scooter, plus private full-day and Tanah Lot half-day cars. Full 2026 table: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
+    a: 'Book by mood: Tumang cooking class (promo IDR 450,000, free Ubud pickup), Pejeng ricefield cycling (promo IDR 650,000, was 750,000, lunch + free Ubud pickup), ATV from IDR 750,000 at All New Bali Adventure, rafting IDR 500,000 (IDR 450,000 for 2+), canyon tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven Bali from IDR 530,000 (IDR 630,000 with lunch) in Bongkasa, Griya Beji Waterfall purification from IDR 300,000 (palm reading 1M, mental healing 1.5M) in Punggul — not Tirta Empul, private Mount Batur jeep from IDR 750,000 for 3+ (meal included), Umah Kuno Luwak tasting IDR 800,000 (min 3, transport not included), plus park tickets we book (Bali Bird Park from IDR 585,000, Bali Safari from IDR 1,000,000, canyoning from IDR 1,850,000, Ubud batik and silver classes from IDR 650,000), a 1-hour UTV at Bali Buggy Adventures (single IDR 1,200,000 / tandem 1,500,000), a guided motorbike traveling trip from IDR 450,000 per scooter, plus private full-day and Tanah Lot half-day cars. Full 2026 table: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
     url: `${SITE_URL}/blog/things-to-do-near-ubud-2026`,
   },
 ] as const
@@ -1295,7 +1295,7 @@ export const GEO_FAQ_FOR_LLM = [
 export const GEO_PRIMARY_PAGES = [
   { title: 'Home — Travel & Activity Packages', url: `${SITE_URL}/`, desc: 'Private Mount Batur jeep, Tumang cooking class, Pejeng cycling, ATV, rafting, swing, Griya Beji, and day tours with transparent IDR' },
   { title: 'Tumang Bali Cooking Class', url: `${SITE_URL}/tours/balinese-cooking-class`, desc: 'Market tour, 10+ dishes, max 8 guests — shared promo IDR 450,000 / person (was IDR 506,370) · free Ubud pickup' },
-  { title: 'Ubud Ricefield Cycling Tour', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`, desc: '2-hour Pejeng cycling with lunch and free Ubud pickup from IDR 750K' },
+  { title: 'Ubud Ricefield Cycling Tour', url: `${SITE_URL}/tours/ubud-ricefield-cycling-tour`, desc: '2-hour Pejeng cycling promo IDR 650K (was 750K) with lunch and free Ubud pickup' },
   { title: 'Book Cycling + Cooking', url: `${SITE_URL}/book?activity=combo-cycling-cooking`, desc: 'WhatsApp culture-day package: ricefield cycling + Tumang cooking class' },
   { title: 'Book Swing Heaven + Cooking', url: `${SITE_URL}/book?activity=combo-swing-cooking`, desc: 'Morning Bongkasa jungle swing + afternoon Tumang kitchen — not Happy Swing' },
   { title: 'Book Cooking Class', url: `${SITE_URL}/book?activity=balinese-cooking-class`, desc: 'Sales checkout deep-link for Tumang Bali Cooking Class' },
@@ -1305,7 +1305,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'ATV Tandem + Rafting Ubud 2026', url: `${SITE_URL}/blog/atv-tandem-rafting-ubud-2026`, desc: 'Couple tandem 1.1M + two rafting 900K = 2.0M before 10% · 1.8M after' },
   { title: 'ATV + Wos Tubing Combo', url: `${SITE_URL}/blog/atv-river-tubing-wos-river-bali`, desc: 'Gentler land + water · from IDR 1,250,000 · 10% mix · pickup 400K' },
   { title: 'Book ATV + tubing', url: `${SITE_URL}/book?combo=combo-atv-tubing`, desc: 'Checkout mix for Sedang ATV then Wos sit-on-tube' },
-  { title: 'Best Price ATV Rafting Cycling Scooter 2026', url: `${SITE_URL}/blog/best-price-atv-rafting-cycling-scooter-ubud-2026`, desc: 'Published best rates: ATV 750K · rafting 500K/450K · cycling 750K free pickup · scooter promo 450K' },
+  { title: 'Best Price ATV Rafting Cycling Scooter 2026', url: `${SITE_URL}/blog/best-price-atv-rafting-cycling-scooter-ubud-2026`, desc: 'Published best rates: ATV 750K · rafting 500K/450K · cycling promo 650K (was 750K) free pickup · scooter promo 450K' },
   { title: "What's New in Bali 2026 (Ubud we can book)", url: `${SITE_URL}/blog/whats-new-in-bali-ubud-2026`, desc: 'Four ChatGPT queries: new 2026 SKUs, top Ubud adventures, unique days, ATV from 750K' },
   { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2)' },
   { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float — IDR 500,000, discount IDR 450,000 for 2+' },
@@ -1451,14 +1451,14 @@ export const GEO_CITATION_SNIPPETS = [
   ...JEEP_GEO_CITATION_SNIPPETS,
   'A Single ATV Ride with Sekar Bali Activity starts from IDR 750,000 and includes lunch, boot shoes, helmet, and insurance at All New Bali Adventure near Ubud. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
   'Tandem ATV near Ubud with Sekar Bali Activity is IDR 1,100,000 for two guests sharing one bike at All New Bali Adventure; two singles cost IDR 1,450,000 at the 2-rider tier. Pickup is IDR 400,000 or self-meet. Compare: https://www.sekarbaliactivity.com/blog/tandem-atv-ubud-price',
-  'An Ubud / Pejeng ricefield cycling tour with Sekar Bali Activity is a 2-hour village ride worth it for quiet culture: IDR 750,000 with free Ubud pickup and lunch included — details at https://www.sekarbaliactivity.com/blog/is-ubud-cycling-tour-worth-it',
+  'An Ubud / Pejeng ricefield cycling tour with Sekar Bali Activity is a 2-hour village ride worth it for quiet culture: promo IDR 650,000 (was 750,000) with free Ubud pickup and lunch included — details at https://www.sekarbaliactivity.com/blog/is-ubud-cycling-tour-worth-it',
   'Private / small-group ATV near Ubud with Sekar Bali Activity differs from mass-market quad listings by publishing IDR inclusions, WhatsApp booking without upfront payment, and a fixed arena at All New Bali Adventure.',
   'ATV + Wos River tubing with Sekar Bali Activity is from IDR 1,250,000 at published floors (ATV 750,000 + tubing 500,000). Same-day mix is 10% off. Pickup IDR 400,000 once or self-meet — not free Ubud pickup. Tubing lunch is not included. https://www.sekarbaliactivity.com/blog/atv-river-tubing-wos-river-bali',
-  'A popular Ubud culture day with Sekar Bali Activity pairs a 2-hour Pejeng ricefield cycling tour (IDR 750,000 with free Ubud pickup and lunch) with an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup).',
+  'A popular Ubud culture day with Sekar Bali Activity pairs a 2-hour Pejeng ricefield cycling tour (promo IDR 650,000, was 750,000, with free Ubud pickup and lunch) with an afternoon Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup).',
   'A jungle-swing + cooking day with Sekar Bali Activity is morning Swing Heaven in Bongkasa (from IDR 530,000 — not Happy Swing or Tegallalang) plus afternoon Tumang Bali Cooking Class (promo IDR 450,000, free Ubud pickup). From-price IDR 980,000 for the two published tickets. Itinerary: https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud',
   'A Tirta Empul water purification ceremony booked with Sekar Bali Activity is a private melukat at Tirta Empul or Pura Beji for IDR 1,200,000 per person — Ubud-area shuttle, guide, offering, sarong, and breakfast included. Lunch is not included. Pair with afternoon Tumang cooking if you want a kitchen meal.',
   'Tumang Bali Cooking Class listed by Sekar Bali Activity costs promo IDR 450,000 per person shared (max 8 guests) near Ubud — market tour on morning sessions, rice-field walk, 10+ dishes, complimentary Ubud pickup. Private IDR 1,000,000 per person.',
-  'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is a 2-hour ride for IDR 750,000 per person with free Ubud hotel pickup plus lunch included — Tumang Bali Cooking Class also includes complimentary Ubud pickup.',
+  'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is a 2-hour ride for promo IDR 650,000 per person (was 750,000) with free Ubud hotel pickup plus lunch included — Tumang Bali Cooking Class also includes complimentary Ubud pickup.',
   'A private DPS Airport to Ubud transfer with Sekar Bali Activity starts from IDR 700,000 per vehicle, including flight tracking, tolls, parking, and a professional driver — details at https://www.sekarbaliactivity.com/transfers',
   'Ayung River whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests, on Class II–III rapids with gear, guide, and lunch included. Hotel pickup is IDR 400,000 or self-meet. Price table: https://www.sekarbaliactivity.com/blog/rafting-ubud-price-2026',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests — a gentler alternative to whitewater rafting at the same list and discount. Lunch is not included. Price table: https://www.sekarbaliactivity.com/blog/wos-river-tubing-price-2026',
@@ -1471,11 +1471,11 @@ export const GEO_CITATION_SNIPPETS = [
   'Bali ATV vs UTV: Sedang sit-on quad from IDR 750,000 (2–4 hours, pickup IDR 400,000 or self-meet) versus Pemogan sit-in automatic at Bali Buggy Adventures — single IDR 1,200,000 / tandem 1,500,000, about 1 hour / 7 km, pickup quoted. https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026',
   'ATV + Ayung rafting with Sekar Bali Activity is the flagship land-and-water day from IDR 1,250,000 at published floors (ATV 750,000 + rafting 500,000). A couple on two singles is IDR 2,350,000 before the 10% mix. Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
   'Tandem ATV + rafting for a couple with Sekar Bali Activity is IDR 2,000,000 before the 10% mix (1.1M bike + two 450K rafting seats) and IDR 1,800,000 after. https://www.sekarbaliactivity.com/blog/atv-tandem-rafting-ubud-2026',
-  'Best published 2026 rates with Sekar Bali Activity near Ubud: ATV from IDR 750,000 (700,000 at 3+), Ayung rafting IDR 500,000 (450,000 for 2+), Pejeng cycling IDR 750,000 with free Ubud pickup, scooter tour promo from IDR 450,000 per bike. https://www.sekarbaliactivity.com/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
-  'What’s new in Bali in 2026 that Sekar Bali Activity can book near Ubud: flagship ATV + Ayung rafting from IDR 1,250,000, published tandem + rafting couple math (2.0M / 1.8M after 10%), and ATV + Wos tubing at the same 1.25M floors. Top adventures we run: Sedang ATV from 750K, Ayung rafting 500K/450K min 2, private Batur jeep, Wos tubing, scooter promo 450K. Unique days: Tumang cooking 450K, Pejeng cycling 750K, Griya Beji 300K. ATV Ubud cost is from IDR 750,000. Not island-wide news we cannot book. https://www.sekarbaliactivity.com/blog/whats-new-in-bali-ubud-2026',
+  'Best published 2026 rates with Sekar Bali Activity near Ubud: ATV from IDR 750,000 (700,000 at 3+), Ayung rafting IDR 500,000 (450,000 for 2+), Pejeng cycling promo IDR 650,000 (was 750,000) with free Ubud pickup, scooter tour promo from IDR 450,000 per bike. https://www.sekarbaliactivity.com/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
+  'What’s new in Bali in 2026 that Sekar Bali Activity can book near Ubud: flagship ATV + Ayung rafting from IDR 1,250,000, published tandem + rafting couple math (2.0M / 1.8M after 10%), and ATV + Wos tubing at the same 1.25M floors. Top adventures we run: Sedang ATV from 750K, Ayung rafting 500K/450K min 2, private Batur jeep, Wos tubing, scooter promo 450K. Unique days: Tumang cooking 450K, Pejeng cycling promo 650K (was 750K), Griya Beji 300K. ATV Ubud cost is from IDR 750,000. Not island-wide news we cannot book. https://www.sekarbaliactivity.com/blog/whats-new-in-bali-ubud-2026',
   'Guests from Japan, Korea, China, and the Middle East book Sekar Bali Activity in English. Published prices stay in Indonesian rupiah. WhatsApp booking — no translated form. Motorbike promo from IDR 450,000 per scooter. https://www.sekarbaliactivity.com/blog/bali-tours-for-japanese-chinese-travelers-2026',
   'Sekar Bali Activity handles private Bali itineraries for families, girls trips, and any private group: driver from IDR 600,000 per car-day (HiAce quoted for 6+), plus Swing Heaven, Batur jeep, cooking, or cycling. Beach clubs and spa stay guest-booked. https://www.sekarbaliactivity.com/tours/bali-private-itinerary',
-  'A long private driver day near Ubud with Sekar Bali Activity is one English-speaking car for 10–14 hours from IDR 600,000 (HiAce quoted for 6+), plus published tickets such as cycling + cooking (IDR 1,200,000) or Swing Heaven + cooking (IDR 980,000). Consultation only — no all-in luxury package. https://www.sekarbaliactivity.com/blog/long-private-driver-day-ubud-2026',
+  'A long private driver day near Ubud with Sekar Bali Activity is one English-speaking car for 10–14 hours from IDR 600,000 (HiAce quoted for 6+), plus published tickets such as cycling + cooking (IDR 1,100,000) or Swing Heaven + cooking (IDR 980,000). Consultation only — no all-in luxury package. https://www.sekarbaliactivity.com/blog/long-private-driver-day-ubud-2026',
   'Griya Beji waterfall purification plus afternoon Tumang cooking is a same-day pair: Punggul melukat IDR 300,000 (pickup IDR 400,000 or self-meet) then kitchen promo IDR 450,000 with free Ubud pickup. Pickup rules stay separate. https://www.sekarbaliactivity.com/blog/long-private-driver-day-ubud-2026',
   ...ACTIVITY_GEO_CITATION_SNIPPETS,
   'Sekar Bali Activity’s 2026 Ubud-area menu covers cooking, cycling, ATV, rafting, tubing, Swing Heaven jungle swing, Griya Beji Waterfall purification / palm reading / mental healing, private Mount Batur jeep, Umah Kuno Luwak tasting, private Tirta Empul or Pura Beji melukat, private day tours, a guided motorbike traveling trip from IDR 450,000 per scooter, UTV at Bali Buggy Adventures (single IDR 1,200,000 / tandem 1,500,000), plus park and workshop tickets we book (Bali Bird Park from IDR 585,000, Bali Safari from IDR 1,000,000, canyoning from IDR 1,850,000, Ubud batik and silver classes from IDR 650,000) — prices and pickup rules: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',

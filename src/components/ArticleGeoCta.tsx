@@ -108,7 +108,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
 
 const HUB_SNIPPET: ArticleGeoSnippet = {
   tldr:
-    'Sekar Bali Activity publishes 2026 Ubud-area IDR on every money page: Tumang cooking promo IDR 450,000 with free Ubud pickup, Pejeng cycling IDR 750,000, ATV from IDR 750,000, rafting and tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven from IDR 530,000, private Batur jeep from IDR 750,000 (3+), plus park tickets we book (Bird Park from IDR 585,000, Safari from IDR 1,000,000, canyoning from IDR 1,850,000, batik and silver classes from IDR 650,000). WhatsApp booking — no deposit to inquire.',
+    'Sekar Bali Activity publishes 2026 Ubud-area IDR on every money page: Tumang cooking promo IDR 450,000 with free Ubud pickup, Pejeng cycling promo IDR 650,000 (was 750,000), ATV from IDR 750,000, rafting and tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven from IDR 530,000, private Batur jeep from IDR 750,000 (3+), plus park tickets we book (Bird Park from IDR 585,000, Safari from IDR 1,000,000, canyoning from IDR 1,850,000, batik and silver classes from IDR 650,000). WhatsApp booking — no deposit to inquire.',
   updated: ACTIVITY_GEO_UPDATED,
   bookHref: '/book',
   bookLabel: 'Book an activity',
@@ -131,7 +131,7 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
   if (slug === 'cycling-cooking-class-ubud-full-day-itinerary') {
     return {
       tldr:
-        'Sekar Bali Activity books a same-day Ubud culture combo: Pejeng ricefield cycling (IDR 750,000, lunch, free Ubud pickup) then afternoon Tumang Bali Cooking Class (promo IDR 450,000, max 8, free Ubud pickup). One WhatsApp thread — no payment to inquire.',
+        'Sekar Bali Activity books a same-day Ubud culture combo: Pejeng ricefield cycling (promo IDR 650,000, was 750,000, lunch, free Ubud pickup) then afternoon Tumang Bali Cooking Class (promo IDR 450,000, max 8, free Ubud pickup). Combo from IDR 1,100,000. One WhatsApp thread — no payment to inquire.',
       updated: COOKING_GEO_UPDATED,
       bookHref: '/book?activity=combo-cycling-cooking',
       bookLabel: 'Book the combo',
@@ -143,7 +143,7 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
   if (slug === 'long-private-driver-day-ubud-2026') {
     return {
       tldr:
-        'A long private driver day with Sekar Bali Activity is one English-speaking car for 10–14 hours from IDR 600,000 (HiAce quoted for 6+), plus published tickets — cycling + cooking (IDR 1,200,000, both free Ubud pickup), Swing Heaven + cooking (IDR 980,000), or Griya Beji waterfall purification (IDR 300,000). Consultation only on WhatsApp — no all-in luxury package, no payment to inquire.',
+        'A long private driver day with Sekar Bali Activity is one English-speaking car for 10–14 hours from IDR 600,000 (HiAce quoted for 6+), plus published tickets — cycling + cooking (IDR 1,100,000 — cycling promo 650K + cooking 450K, both free Ubud pickup), Swing Heaven + cooking (IDR 980,000), or Griya Beji waterfall purification (IDR 300,000). Consultation only on WhatsApp — no all-in luxury package, no payment to inquire.',
       updated: ACTIVITY_GEO_UPDATED,
       bookHref: '/tours/bali-private-itinerary',
       bookLabel: 'WhatsApp consultation',
@@ -191,7 +191,7 @@ export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {
   if (slug === 'best-price-atv-rafting-cycling-scooter-ubud-2026') {
     return {
       tldr:
-        'Sekar Bali Activity published 2026 best rates near Ubud: ATV from IDR 750,000 (700,000 at 3+), Ayung rafting IDR 500,000 (450,000 for 2+, min 2), Pejeng cycling IDR 750,000 with free Ubud pickup, scooter tour promo from IDR 450,000 per bike (tickets extra). ATV/rafting pickup IDR 400,000 or self-meet. WhatsApp — no payment to inquire.',
+        'Sekar Bali Activity published 2026 best rates near Ubud: ATV from IDR 750,000 (700,000 at 3+), Ayung rafting IDR 500,000 (450,000 for 2+, min 2), Pejeng cycling promo IDR 650,000 (was 750,000) with free Ubud pickup, scooter tour promo from IDR 450,000 per bike (tickets extra). ATV/rafting pickup IDR 400,000 or self-meet. WhatsApp — no payment to inquire.',
       updated: ACTIVITY_GEO_UPDATED,
       bookHref: '/tours/bali-atv-adventure',
       bookLabel: 'Book ATV',

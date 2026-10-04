@@ -21,6 +21,8 @@ import {
 import { COOKING_GEO_ENTITY } from "@/data/cookingGeo"
 import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
 import { buildWhatsAppConsultationUrl, formatIdr } from "@/lib/whatsapp"
+import PromoPrice from "@/components/PromoPrice"
+import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR } from "@/lib/pricing"
 import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
 import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
@@ -61,6 +63,10 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
             percent={tour.recommendedByTravelersPercent}
             variant="card"
           />
+        ) : tour.slug === "ubud-ricefield-cycling-tour" ? (
+          <span className="absolute left-2.5 top-2.5 z-10 bg-brand-green px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-sand">
+            Promo
+          </span>
         ) : tour.slug === "batur-sunrise-jeep-tour" ? (
           <span className="absolute left-2.5 top-2.5 z-10 bg-accent-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
             Private
@@ -112,9 +118,18 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
           <span className="block text-[10px] font-bold uppercase tracking-wider text-brand-green-light">
             From
           </span>
-          <span className="font-display text-lg font-bold text-brand-green">
-            {formatIdr(tour.basePrice)}
-          </span>
+          {tour.slug === "ubud-ricefield-cycling-tour" ? (
+            <PromoPrice
+              price={CYCLING_PROMO_IDR}
+              originalPrice={CYCLING_LIST_IDR}
+              variant="card"
+              from
+            />
+          ) : (
+            <span className="font-display text-lg font-bold text-brand-green">
+              {formatIdr(tour.basePrice)}
+            </span>
+          )}
         </div>
       </Link>
       <div className="px-3.5 pb-3.5">

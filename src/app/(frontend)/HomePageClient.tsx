@@ -227,7 +227,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Swing Heaven Bali",
     adventureId: "swing-heaven",
-    pax: `${formatTierPriceTable("swing-heaven")} · Lunch package IDR 630,000 · Dress hire extra`,
+    pax: `${formatTierPriceTable("swing-heaven")} · Lunch package IDR 630,000 · Dress hire extra · driver included`,
     price: getListPrice("swing-heaven"),
     highlight: false,
   },

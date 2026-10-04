@@ -283,7 +283,7 @@ export function formatTierPriceTable(activityId: ActivityId): string {
     return `Private · min 2 · 2+ ${unit}: IDR ${(t2 / 1000).toFixed(0)}k promo (was IDR ${(t1 / 1000).toFixed(0)}k)`
   }
   if (activityId === 'swing-heaven') {
-    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · swings, photo spots, insurance, tea/coffee/water`
+    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · swings, photo spots, insurance, tea/coffee/water · driver included`
   }
   if (activityId === 'swing-heaven-lunch') {
     return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · same package + lunch`

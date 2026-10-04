@@ -1777,18 +1777,19 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
   {
     slug: 'ubud-hotel-pickup-bali-adventures-explained',
     title: 'Ubud Hotel Pickup for Bali Adventures: Free vs Surcharge Explained (2026)',
-    excerpt: 'Which Sekar Bali Activity tours include pickup? Cycling and Tumang cooking (Ubud). Tirta Empu melukat (private shuttle). Private Mount Batur jeep (island-wide). ATV, rafting, tubing, Swing Heaven, and Griya Beji add IDR 400,000.',
+    excerpt: 'Which Sekar Bali Activity tours include pickup? Cycling and Tumang cooking (Ubud). Swing Heaven (driver included). Tirta Empu melukat (private shuttle). Private Mount Batur jeep (island-wide). ATV, rafting, tubing, and Griya Beji add IDR 400,000.',
     publishedAt: '2026-09-02',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (promo IDR 650,000, was 750,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. **Tirta Empu Purification (Melukat)** includes a **private Ubud-area shuttle** in the IDR 1,200,000 per person rate. The **private Mount Batur jeep** includes hotel pickup **island-wide** in the jeep price. ATV, whitewater rafting, canyon tubing, **Swing Heaven**, and **Griya Beji Waterfall** do not — IDR 400,000 hotel pickup charge applies (or self-meet at the venue).
+**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (promo IDR 650,000, was 750,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. **Swing Heaven** includes a **hotel driver in the ticket** (required — no self-meet). **Tirta Empu Purification (Melukat)** includes a **private Ubud-area shuttle** in the IDR 1,200,000 per person rate. The **private Mount Batur jeep** includes hotel pickup **island-wide** in the jeep price. ATV, whitewater rafting, canyon tubing, and **Griya Beji Waterfall** do not — IDR 400,000 hotel pickup charge applies (or self-meet at the venue).
 
 > **Key Takeaways**
 > - **Free Ubud pickup:** Ricefield cycling + Tumang Bali Cooking Class
 > - **Private shuttle in the package price:** Tirta Empu / Tirta Empul melukat (IDR 1,200,000 / person)
 > - **Island-wide pickup included:** private Mount Batur jeep
-> - **Hotel pickup:** IDR 400,000 for ATV, rafting, tubing, Swing Heaven, Griya Beji Waterfall
+> - **Hotel pickup:** IDR 400,000 for ATV, rafting, tubing, Griya Beji Waterfall
+> - **Swing Heaven:** hotel driver included and required (no self-meet)
 > - **Cycling outside Ubud:** IDR 400,000 surcharge (e.g. Seminyak, Canggu, Kuta)
 > - **Motorbike Canggu / Jimbaran / Nusa Dua shuttle:** IDR 550,000 once per booking
 > - **Booking:** Set your hotel pin in the booking popup map
@@ -1806,7 +1807,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 | Single / Tandem ATV | ❌ No | +IDR 400,000 |
 | Whitewater Rafting | ❌ No | +IDR 400,000 |
 | Canyon Tubing | ❌ No | +IDR 400,000 |
-| Swing Heaven Bali (Bongkasa) | ❌ No — self-meet free | +IDR 400,000 |
+| Swing Heaven Bali (Bongkasa) | ✅ Yes — driver included (required) | Included in the ticket |
 | Griya Beji Waterfall (Punggul) | ❌ No — self-meet free | +IDR 400,000 |
 | Bali Motorbike Tour | ✅ Chosen-area pickup in the scooter promo | Canggu / Jimbaran / Nusa Dua shuttle **IDR 550,000** once per booking |
 
@@ -1839,7 +1840,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 
 ## Swing Heaven Pickup (Bongkasa)
 
-[Swing Heaven](/tours/swing-heaven-bali) is on **Jl. Tangga Yuda, Bongkasa** — not the Tegallalang strip. Hotel pickup is the same **IDR 400,000** adventure surcharge, or self-meet at the lobby. Grab from central Ubud is often cheaper for a one-way drop. Pin and timing: [Swing Heaven Bongkasa location](/blog/swing-heaven-bongkasa-location).
+[Swing Heaven](/tours/swing-heaven-bali) is on **Jl. Tangga Yuda, Bongkasa** — not the Tegallalang strip. **Hotel driver is included in the ticket and required** — no self-meet and no IDR 400,000 add-on. Share the hotel pin on WhatsApp. Pin and timing: [Swing Heaven Bongkasa location](/blog/swing-heaven-bongkasa-location).
 
 ## Griya Beji Pickup (Punggul)
 
@@ -1849,7 +1850,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 
 The [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) includes pickup at your chosen area in the scooter promo. If we collect you from **Canggu, Jimbaran, or Nusa Dua**, add **IDR 550,000 once per booking**. That is not the IDR 400,000 ATV/rafting surcharge. Skip it if your pin is already in the ride area. Table: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026).
 
-**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empu melukat (shuttle included)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure) · [Swing Heaven (IDR 400K or self-meet)](/tours/swing-heaven-bali) · [Griya Beji Waterfall (IDR 400K or self-meet)](/tours/griya-beji-waterfall) · [Bali motorbike tour (Canggu / Jimbaran / Nusa Dua shuttle IDR 550K)](/tours/bali-motorbike-traveling-trip).
+**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empu melukat (shuttle included)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure) · [Swing Heaven (driver included)](/tours/swing-heaven-bali) · [Griya Beji Waterfall (IDR 400K or self-meet)](/tours/griya-beji-waterfall) · [Bali motorbike tour (Canggu / Jimbaran / Nusa Dua shuttle IDR 550K)](/tours/bali-motorbike-traveling-trip).
 `
   },
   {

@@ -62,7 +62,7 @@ Mental healing is typically **60–90 minutes** and should not share the same ti
 | If you want… | Book this | Pickup |
 | --- | --- | --- |
 | Village paddies + kitchen | [Cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary) | **Free Ubud** on both |
-| Jungle photos + kitchen | [Swing Heaven + cooking](/blog/swing-heaven-cooking-class-ubud) | Swing **400K** · cooking free Ubud |
+| Jungle photos + kitchen | [Swing Heaven + cooking](/blog/swing-heaven-cooking-class-ubud) | Swing driver included · cooking free Ubud |
 | Waterfall + kitchen | This park, then afternoon Tumang | Griya **400K** or self-meet · cooking free Ubud |
 | Temple ceremony, not a waterfall | [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) **1.2M** | Shuttle **included** |
 | Mud then ritual | Morning [ATV](/tours/bali-atv-adventure) in Sedang, then Griya | Both **400K** or self-meet · same Abiansemal district |

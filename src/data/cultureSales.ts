@@ -171,10 +171,10 @@ export function getSwingCookingCombo(): SwingCookingComboOffer {
     name: 'Swing Heaven + Tumang Cooking Class',
     tagline: 'Jungle swing then village kitchen',
     description:
-      'Morning Swing Heaven in Bongkasa (jungle swings over the Ayung River — not Tegallalang, not Happy Swing), then afternoon Tumang Bali Cooking Class. Published ticket + promo kitchen rate on one WhatsApp thread. Pickup rules stay separate: swing IDR 400,000 or self-meet; cooking includes free Ubud pickup.',
+      'Morning Swing Heaven in Bongkasa (jungle swings over the Ayung River — not Tegallalang, not Happy Swing), then afternoon Tumang Bali Cooking Class. Published ticket + promo kitchen rate on one WhatsApp thread. Swing Heaven includes the hotel driver (required, no self-meet). Cooking includes free Ubud pickup.',
     duration: 'Full day',
     timeline: [
-      `Morning: Swing Heaven Package — ${formatIdr(swingPriceIdr)} (lunch package ${formatIdr(SWING_HEAVEN_LUNCH_PRICE_IDR)} · pickup IDR 400,000 or self-meet Bongkasa)`,
+      `Morning: Swing Heaven Package — ${formatIdr(swingPriceIdr)} (lunch package ${formatIdr(SWING_HEAVEN_LUNCH_PRICE_IDR)} · hotel driver included, required)`,
       `Afternoon: Tumang Bali Cooking Class — ${formatIdr(cookingPriceIdr)} promo / person (shared · Ubud pickup included)`,
     ],
     swingPriceIdr,
@@ -194,6 +194,6 @@ export function buildSwingCookingComboWhatsAppUrl(guestName = 'Guest') {
     activityOption: `${combo.timeline[0]} · ${combo.timeline[1]}`,
     price: combo.totalFromIdr,
     notes:
-      'Please confirm Swing Heaven in the morning (Bongkasa — not Tegallalang / Happy Swing) and an afternoon Tumang Bali Cooking Class on the same date. Swing pickup is IDR 400,000 or self-meet; cooking includes free Ubud pickup. Say lunch package or dress hire if you want them.',
+      'Please confirm Swing Heaven in the morning (Bongkasa — not Tegallalang / Happy Swing) and an afternoon Tumang Bali Cooking Class on the same date. Swing Heaven includes the hotel driver (required, no self-meet). Cooking includes free Ubud pickup. Say lunch package or dress hire if you want them.',
   })
 }

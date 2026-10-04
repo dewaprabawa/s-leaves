@@ -52,7 +52,7 @@ Do not stay out so late that Day 2’s **07:00 Ubud departure** collapses. Swing
 
 If the swing runs long, **cut the extra waterfall**, not Cretya. The park is **not** the Tegallalang rice-terrace swing strip — comparison: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing).
 
-Hotel pickup for the swing alone is **IDR 400,000** or free self-meet. If we already have your **private driver** that day, you do not pay the swing pickup surcharge.
+Hotel driver for Swing Heaven is **included in the ticket and required** — no self-meet. If we already have your **private driver** that day, the same car can run the photo block.
 
 ### Day 3 — Uluwatu, Kecak, Savaya
 
@@ -102,7 +102,7 @@ Tanjung Benoa **flying fish / parasailing** is yours. If the group wants a sport
 > **Key Takeaways**
 > - Driver **from IDR 600,000** / car-day · **HiAce quoted** for 6+ or a family with bags
 > - You add **published SKUs** — we do not invent a mix discount
-> - Best long-day pairs we already sell: **cycling + cooking** (both free Ubud pickup) or **swing + cooking** (530K + 450K = **980K**, swing pickup separate)
+> - Best long-day pairs we already sell: **cycling + cooking** (both free Ubud pickup) or **swing + cooking** (530K + 450K = **980K**, swing driver included)
 > - Waterfall ritual: **[Griya Beji](/tours/griya-beji-waterfall)** **IDR 300,000** in Punggul — **not** Tirta Empul
 > - Temple water purification: **[Tirta Empul / Pura Beji](/tours/tirta-empu-purification)** **IDR 1,200,000** with shuttle + breakfast
 > - WhatsApp **group type, date, hotel, guest count** — no payment to inquire
@@ -118,11 +118,11 @@ Do **not** stack Penida, Lovina, three temples, and a mall. Skip list: [what to 
 | Shape | Morning | Afternoon | From-price (activities only) | Pickup honesty |
 | --- | --- | --- | --- | --- |
 | Village + kitchen | [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) **promo 650K** (was 750K, lunch) | [Tumang cooking](/tours/balinese-cooking-class) **450K** | **1,100,000** | **Free Ubud** on both |
-| Jungle photo + kitchen | [Swing Heaven](/tours/swing-heaven-bali) **530K** (lunch **630K**) | Tumang cooking **450K** | **980,000** (530+450) | Swing **400K** or self-meet · cooking free Ubud |
+| Jungle photo + kitchen | [Swing Heaven](/tours/swing-heaven-bali) **530K** (lunch **630K**) | Tumang cooking **450K** | **980,000** (530+450) | Swing driver included (required) · cooking free Ubud |
 | Waterfall + kitchen | [Griya Beji](/tours/griya-beji-waterfall) **300K** (+ gate) | Tumang cooking **450K** | **750,000** + admission | Griya **400K** or self-meet · cooking free Ubud |
 | Temple ceremony + kitchen | [Tirta Empul / Beji](/tours/tirta-empu-purification) **1,200,000** | Tumang cooking **450K** | **1,650,000** | Temple **shuttle included** · cooking free Ubud |
 
-The **car-day** sits on top unless the SKU already includes Ubud pickup (cycling, cooking, Tirta Empul shuttle). We will not pretend Swing Heaven or Griya pickup is “free because cooking includes a transfer.”
+The **car-day** sits on top unless the SKU already includes pickup (cycling, cooking, Tirta Empul shuttle, **Swing Heaven driver**). We will not pretend Griya pickup is “free because cooking includes a transfer.”
 
 Book the culture SKUs on checkout when you already know the pair: [cycling + cooking](/book?activity=combo-cycling-cooking) · [swing + cooking](/book?activity=combo-swing-cooking). For a custom long day, stay on the [itinerary consultation](/tours/bali-private-itinerary).
 
@@ -196,7 +196,7 @@ One **long private day** (no overnight stack): [cycling + cooking](/book?activit
 
 ## What we will not invent for families
 
-- Free hotel pickup on Swing Heaven / ATV / Griya Beji unless a **driver day** is already booked (otherwise **IDR 400,000** or self-meet)
+- Free hotel pickup on ATV / Griya Beji unless a **driver day** is already booked (otherwise **IDR 400,000** or self-meet). Swing Heaven already includes the hotel driver.
 - A Batur **summit hike** sold as a jeep
 - ATV **minimum-age numbers** we have not published — we only state insurance **6–65**
 - Beach-club or spa packages
@@ -240,12 +240,12 @@ What we **do** control is published on this domain: **IDR**, pickup rules, and W
 | --- | --- | --- |
 | Private driver day (car) | **IDR 600,000** | Same “from” as the [full-day Ubud car](/tours/full-day-ubud-tour). One long day or several. Entrance fees extra. |
 | HiAce / 10–12 seater | **Quote** | Families or **6+ with bags**. Not the car-day rate. |
-| [Swing Heaven](/tours/swing-heaven-bali) | **IDR 530,000** / **630,000** lunch | Bongkasa / Ayung. Koi boat + dress extra. Pickup **IDR 400,000** or driver day. |
+| [Swing Heaven](/tours/swing-heaven-bali) | **IDR 530,000** / **630,000** lunch | Bongkasa / Ayung. Koi boat + dress extra. Hotel driver **included** (required). |
 | [Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) | **IDR 750,000** / person at 3+ | Pickup **included**. Meal after viewpoint. Not the summit trek. |
 | [Tumang cooking](/tours/balinese-cooking-class) | **IDR 450,000** shared | Free Ubud pickup. Max 8. Strong family day. |
 | [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) | **Promo IDR 650,000** (was 750,000) | Lunch + free Ubud pickup. |
 | [Cycling + cooking combo](/book?activity=combo-cycling-cooking) | **IDR 1,100,000** | Sum of published tickets (650K promo + 450K) · both free Ubud pickup. |
-| [Swing Heaven + cooking](/book?activity=combo-swing-cooking) | **IDR 980,000** | 530K + 450K · **no mix discount** · swing pickup **400K** or self-meet. |
+| [Swing Heaven + cooking](/book?activity=combo-swing-cooking) | **IDR 980,000** | 530K + 450K · **no mix discount** · swing driver included · cooking free Ubud. |
 | [ATV](/tours/bali-atv-adventure) | **IDR 750,000** single | All New Bali Adventure. Pickup **IDR 400,000** or self-meet. Insurance 6–65. |
 | [Griya Beji](/tours/griya-beji-waterfall) | **IDR 300,000** purification | Punggul waterfall melukat — **not** Tirta Empul. Admission extra. |
 | [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) | **IDR 1,200,000** | Private water purification ceremony · shuttle + breakfast. |
@@ -264,7 +264,7 @@ Tell the driver the **pin and the wait / come-back time**. We do not need those 
 
 ## What we will not add to the invoice
 
-Do not ask us to mark up a mystery “Bali swing” at Tegallalang, a **Tirta Empul** ticket when you meant **[Griya Beji](/blog/griya-beji-vs-tirta-empul-melukat)**, **free pickup** on Swing Heaven / ATV / Griya (those are **IDR 400,000** or self-meet unless a **driver day** is already booked), or a **Batur summit hike** sold as a jeep.
+Do not ask us to mark up a mystery “Bali swing” at Tegallalang, a **Tirta Empul** ticket when you meant **[Griya Beji](/blog/griya-beji-vs-tirta-empul-melukat)**, **free pickup** on ATV / Griya (those are **IDR 400,000** or self-meet unless a **driver day** is already booked), or a **Batur summit hike** sold as a jeep. Swing Heaven already includes the hotel driver.
 
 ## How the WhatsApp quote works
 

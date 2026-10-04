@@ -251,7 +251,7 @@ export function checkPickupRule(input: {
     feeIdr: PICKUP_FEE_IDR,
     headline: `Hotel pickup is ${formatPlannerIdr(PICKUP_FEE_IDR)} or free self-meet`,
     detail:
-      'This is the optional adventure surcharge for ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji. It is not free Ubud cycling/cooking pickup and not island-wide jeep pickup.',
+      'This is the optional adventure surcharge for ATV, rafting, canyon tubing, and Griya Beji. It is not free Ubud cycling/cooking pickup, not the included Swing Heaven driver, and not island-wide jeep pickup.',
   }
 
   switch (input.activity) {
@@ -278,10 +278,14 @@ export function checkPickupRule(input: {
       }
     case 'swing':
       return {
-        ...surcharge,
+        included: true,
+        feeIdr: 0,
+        headline: 'Hotel driver is included and required',
+        detail:
+          'Swing Heaven tickets include hotel pickup and drop-off. Self-meet at Bongkasa is not offered. Share the hotel pin on WhatsApp. This is not the IDR 400,000 ATV/rafting surcharge.',
         tourHref: '/tours/swing-heaven-bali',
         tourLabel: 'Swing Heaven money page',
-        whatsappActivity: 'Swing Heaven — confirm pickup or self-meet',
+        whatsappActivity: 'Swing Heaven — hotel driver included, send hotel pin',
       }
     case 'griya-beji':
       return {
@@ -523,8 +527,8 @@ export function chooseActivity(mood: ActivityMoodId): ActivityChoice {
         moodLabel,
         title: 'Swing Heaven Bali',
         fromPrice: TIER_PRICES_IDR['swing-heaven'][0],
-        pickup: `Hotel pickup ${formatPlannerIdr(PICKUP_FEE_IDR)} or self-meet`,
-        why: 'Jungle swings in Bongkasa from IDR 530,000, or IDR 630,000 with lunch. Not Tegallalang / Happy Swing.',
+        pickup: 'Hotel driver included — required, no self-meet',
+        why: 'Jungle swings in Bongkasa from IDR 530,000, or IDR 630,000 with lunch. Driver included. Not Tegallalang / Happy Swing.',
         tourHref: '/tours/swing-heaven-bali',
         blogHref: '/blog/swing-heaven-bali-ubud-guide',
         blogLabel: 'Swing Heaven guide',

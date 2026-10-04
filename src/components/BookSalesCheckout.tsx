@@ -326,6 +326,10 @@ export default function BookSalesCheckout({
                 <p className="text-xs font-semibold text-brand-green bg-brand-green/8 rounded-lg px-3 py-2 w-fit">
                   Free Ubud hotel pickup included
                 </p>
+              ) : adv.pickupIncluded ? (
+                <p className="text-xs font-semibold text-brand-green bg-brand-green/8 rounded-lg px-3 py-2 w-fit">
+                  Hotel driver included — required, no self-meet
+                </p>
               ) : null}
               <p className="text-xs text-brand-green-light opacity-80">
                 {formatTierPriceTable(adv.id)}

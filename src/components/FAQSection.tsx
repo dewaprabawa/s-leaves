@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "Is hotel pickup included in the price?",
-    answer: "Free hotel pickup within Ubud is included on our Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. The private Tirta Empu Purification (Melukat) includes a Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide (Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua) in the jeep price. For ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall, optional hotel pickup is IDR 400,000. You can also self-meet at All New Bali Adventure (ATV/rafting/tubing), Swing Heaven in Bongkasa, or Taman Beji Griya Waterfall in Punggul with no transport fee — often cheaper than Grab or GoCar."
+    answer: "Free hotel pickup within Ubud is included on our Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Swing Heaven includes a hotel driver in the ticket (required — no self-meet at Bongkasa). The private Tirta Empu Purification (Melukat) includes a Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide (Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua) in the jeep price. For ATV, rafting, canyon tubing, and Griya Beji Waterfall, optional hotel pickup is IDR 400,000. You can also self-meet at All New Bali Adventure (ATV/rafting/tubing) or Taman Beji Griya Waterfall in Punggul with no transport fee — often cheaper than Grab or GoCar."
   },
   {
     question: "Do I need experience to ride an ATV, go rafting, or cycle?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: "Which tours have free Ubud hotel pickup?",
-    answer: "Ubud Ricefield Cycling Tour (promo IDR 650,000, was 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji Waterfall charge IDR 400,000 for hotel pickup."
+    answer: "Ubud Ricefield Cycling Tour (promo IDR 650,000, was 750,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, canyon tubing, and Griya Beji Waterfall charge IDR 400,000 for hotel pickup."
   },
   {
     question: "How much is Tumang Bali Cooking Class?",
@@ -89,7 +89,7 @@ const faqs = [
   },
   {
     question: "How much is Swing Heaven Bali near Ubud?",
-    answer: "The Swing Heaven Package is IDR 530,000 per person (jungle swings, photo spots, insurance, tea/coffee/water). The lunch package is IDR 630,000. Flying dress hire is IDR 300,000 extra. The park is in Bongkasa over the Ayung River — not the Tegallalang swing strip. Hotel pickup is IDR 400,000 or self-meet at Jl. Tangga Yuda. Photos on your own phone."
+    answer: "The Swing Heaven Package is IDR 530,000 per person (jungle swings, photo spots, insurance, tea/coffee/water, hotel driver). The lunch package is IDR 630,000. Flying dress hire is IDR 300,000 extra. The park is in Bongkasa over the Ayung River — not the Tegallalang swing strip. Hotel driver is included and required — no self-meet. Photos on your own phone."
   },
   {
     question: "Is Swing Heaven the same as the Tegallalang Bali Swing?",

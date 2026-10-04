@@ -6,7 +6,6 @@ import { getListPrice, JEEP_HOT_SPRING_IDR } from "@/lib/pricing"
 import {
   SWING_HEAVEN_ADDONS,
   SWING_HEAVEN_LUNCH_PRICE_IDR,
-  SWING_HEAVEN_VENUE,
 } from "@/data/swingHeaven"
 import {
   GRIYA_BEJI_HEALING_IDR,
@@ -86,11 +85,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     kidPrice: null,
     minPax: 1,
     pricingActivityId: "swing-heaven",
-    selfMeet: {
-      name: SWING_HEAVEN_VENUE.name,
-      address: SWING_HEAVEN_VENUE.address,
-      mapUrl: SWING_HEAVEN_VENUE.mapUrl,
-    },
+    pickupIncluded: true,
     optionalAddonsIntro:
       "Optional extras at Swing Heaven — flying dress hire and the koi pond boat photo (confirm lobby availability). Neither includes a professional photographer.",
     optionalAddons: [SWING_HEAVEN_ADDONS.dress, SWING_HEAVEN_ADDONS.koiPond],
@@ -103,11 +98,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     kidPrice: null,
     minPax: 1,
     pricingActivityId: "swing-heaven-lunch",
-    selfMeet: {
-      name: SWING_HEAVEN_VENUE.name,
-      address: SWING_HEAVEN_VENUE.address,
-      mapUrl: SWING_HEAVEN_VENUE.mapUrl,
-    },
+    pickupIncluded: true,
     optionalAddonsIntro:
       "Optional extras at Swing Heaven — flying dress hire and the koi pond boat photo (confirm lobby availability). Lunch is already in this package.",
     optionalAddons: [SWING_HEAVEN_ADDONS.dress, SWING_HEAVEN_ADDONS.koiPond],

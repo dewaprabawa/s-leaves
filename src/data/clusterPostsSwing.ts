@@ -6,7 +6,7 @@ export const SWING_CLUSTER_POSTS = [
     title: 'Swing Heaven + Cooking Class in Ubud: Jungle Swing Then Tumang Kitchen',
     seoTitle: 'Swing Heaven + Cooking Class Ubud | 530K + 450K',
     excerpt:
-      'Morning Swing Heaven in Bongkasa from IDR 530,000, then afternoon Tumang cooking promo IDR 450,000. Not Happy Swing. One WhatsApp thread, honest pickup rules.',
+      'Morning Swing Heaven in Bongkasa from IDR 530,000 (hotel driver included), then afternoon Tumang cooking promo IDR 450,000. Not Happy Swing. One WhatsApp thread.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/swing-heaven-ayung.jpg',
@@ -17,7 +17,7 @@ export const SWING_CLUSTER_POSTS = [
 > - Morning: [Swing Heaven](/tours/swing-heaven-bali) **IDR 530,000** · **IDR 630,000** with lunch · Bongkasa / Ayung
 > - Afternoon: [Tumang cooking](/tours/balinese-cooking-class) promo **IDR 450,000** · max 8 · free Ubud pickup
 > - From-price if you add both published tickets: **IDR 980,000** per person (530K + 450K)
-> - Pickup stays honest: swing **IDR 400,000** or self-meet · cooking **free Ubud**
+> - Pickup stays honest: swing **hotel driver included** (required) · cooking **free Ubud**
 > - We do **not** sell Happy Swing or a temple + swing aggregator day
 > - Book: [Swing + cooking combo](/book?activity=combo-swing-cooking)
 
@@ -34,12 +34,12 @@ If you want the holy-spring morning instead of the swing, book [Tirta Empu Purif
 
 | Piece | From (IDR) | Pickup | What you get |
 | --- | --- | --- | --- |
-| Swing Heaven Package | **530,000** | IDR 400K or self-meet Bongkasa | 14 jungle spots, insurance, tea/coffee/water · own-phone photos |
+| Swing Heaven Package | **530,000** | Hotel driver included (required) | 14 jungle spots, insurance, tea/coffee/water · own-phone photos |
 | Swing Heaven + lunch | **630,000** | Same | Same access + lunch at the park |
 | Flying dress hire | **300,000** | — | Optional wardrobe · not a photographer |
 | Tumang cooking (shared) | **450,000** promo | **Free Ubud** | 10+ dishes · max 8 · rice-field walk · AM market on morning sessions |
-| **Swing + cooking (no lunch SKU)** | **980,000** | Mixed rules | Morning park + afternoon kitchen |
-| **Swing lunch + cooking** | **1,080,000** | Mixed rules | Park lunch + kitchen meal |
+| **Swing + cooking (no lunch SKU)** | **980,000** | Swing driver included · cooking free Ubud | Morning park + afternoon kitchen |
+| **Swing lunch + cooking** | **1,080,000** | Swing driver included · cooking free Ubud | Park lunch + kitchen meal |
 
 There is **no unpublished mix discount** on this pairing. The numbers above are the two published tickets added together. [Cycling + cooking](/book?activity=combo-cycling-cooking) is the other culture-day SKU we already list.
 
@@ -47,7 +47,7 @@ There is **no unpublished mix discount** on this pairing. The numbers above are 
 
 | Time | What happens |
 | --- | --- |
-| 08:00–08:30 | Hotel collect (**IDR 400,000**) or Grab / self-meet at **Jl. Tangga Yuda, Bongkasa** |
+| 08:00–08:30 | Hotel collect (driver included) to **Jl. Tangga Yuda, Bongkasa** |
 | 08:30–11:00 | Swings, nests, Stairs 2 Heaven — photos on **your phone** |
 | 11:00–12:00 | Optional park lunch (only on the **630,000** SKU) or a light snack if you booked the 530K ticket |
 | 12:30–13:00 | Transfer toward Tumang (Ubud-area cooking pickup is **included** — tell WhatsApp your hotel *and* that you are coming from Bongkasa) |
@@ -57,9 +57,9 @@ Afternoon Tumang is the right kitchen slot after a swing morning. Morning cookin
 
 ## Pickup honesty (do not merge the rules)
 
-- **Swing Heaven:** optional hotel collect **IDR 400,000**, or free self-meet at the Bongkasa lobby. Same surcharge as [ATV](/tours/bali-atv-adventure) in Sedang.
+- **Swing Heaven:** hotel driver **included and required** — no self-meet at Bongkasa and no IDR 400,000 add-on. Share the hotel pin on WhatsApp.
 - **Tumang cooking:** complimentary **Ubud-area** hotel pickup on the kitchen ticket.
-- We will not pretend the 400K swing transfer is “free because cooking includes pickup.” Tell WhatsApp both venues so the driver plan is one thread.
+- We will not pretend the cooking transfer is the swing driver — Swing Heaven already includes its own hotel collect. Tell WhatsApp both venues so the driver plan is one thread.
 
 Pin and Grab notes: [Swing Heaven Bongkasa location](/blog/swing-heaven-bongkasa-location). Kitchen pickup: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
 
@@ -79,7 +79,7 @@ Side-by-side: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-ba
 | --- | --- |
 | Village paddies + kitchen | [Cycling + Tumang](/blog/cycling-cooking-class-ubud-full-day-itinerary) — both include **free Ubud pickup** |
 | Holy spring + kitchen | Morning [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) (**IDR 1,200,000**, shuttle + breakfast) then afternoon cooking |
-| Mud then jungle photos | [ATV](/tours/bali-atv-adventure) + Swing Heaven — both Abiansemal, pickup **IDR 400,000** or self-meet |
+| Mud then jungle photos | [ATV](/tours/bali-atv-adventure) + Swing Heaven — both Abiansemal. Swing driver included; ATV pickup **IDR 400,000** or self-meet |
 | Waterfall ritual, not a temple | [Griya Beji](/tours/griya-beji-waterfall) in Punggul — **not** Tirta Empul |
 
 ## How to book
@@ -106,7 +106,7 @@ Side-by-side: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-ba
 > **Key Takeaways**
 > - Swing Heaven = **Bongkasa jungle / Ayung River** · Tegallalang = **rice-terrace roadside parks**
 > - We sell Swing Heaven at **IDR 530,000** / **IDR 630,000** with lunch
-> - Flying dress hire **IDR 300,000** · hotel pickup **IDR 400,000** or free self-meet
+> - Flying dress hire **IDR 300,000** · hotel driver **included and required**
 > - Want terraces without a swing ticket? Walk Tegalalang on the [Full Day Ubud Tour](/tours/full-day-ubud-tour)
 > - Honest worth-it take: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it)
 
@@ -136,7 +136,7 @@ Skip the swing ticket if you only want to **see** rice terraces. Tegalalang is a
 
 ## Price honesty
 
-Sekar Bali Activity does **not** mark up a mystery “Bali Swing” SKU. The Bongkasa board is **IDR 530,000** (insurance + tea/coffee/water) or **IDR 630,000** with lunch. Dress hire and the koi-pond boat are **IDR 300,000** each. Pickup is the same **IDR 400,000** adventure surcharge as ATV — or self-meet for free. Full table: [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).
+Sekar Bali Activity does **not** mark up a mystery “Bali Swing” SKU. The Bongkasa board is **IDR 530,000** (insurance + tea/coffee/water + hotel driver) or **IDR 630,000** with lunch. Dress hire and the koi-pond boat are **IDR 300,000** each. The driver is **included and required** — no self-meet. Full table: [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).
 
 ## How to book the jungle park
 
@@ -152,18 +152,18 @@ Sekar Bali Activity does **not** mark up a mystery “Bali Swing” SKU. The Bon
     title: 'Where Is Swing Heaven Bali? Bongkasa Address & How to Get There',
     seoTitle: 'Swing Heaven Location | Bongkasa near Ubud',
     excerpt:
-      'Swing Heaven is on Jl. Tangga Yuda, Bongkasa (Abiansemal) over the Ayung River — a short drive from Ubud. Grab vs IDR 400,000 hotel pickup, map, hours.',
+      'Swing Heaven is on Jl. Tangga Yuda, Bongkasa (Abiansemal) over the Ayung River — a short drive from Ubud. Hotel driver included and required. Map, hours.',
     publishedAt: '2026-09-22',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/swing-heaven-ayung.jpg',
     content: `
-**Where is Swing Heaven Bali?** The park is at **Jl. Tangga Yuda, Bongkasa, Kec. Abiansemal, Kabupaten Badung, Bali 80352** — a jungle hillside over the **Ayung River**, a short drive from central Ubud. It is **not** in Tegallalang. Hours **08:00–17:00 daily**. Sekar Bali Activity books the ticket from **IDR 530,000** (lunch **IDR 630,000**). **Hotel pickup is IDR 400,000** or self-meet at the lobby for free.
+**Where is Swing Heaven Bali?** The park is at **Jl. Tangga Yuda, Bongkasa, Kec. Abiansemal, Kabupaten Badung, Bali 80352** — a jungle hillside over the **Ayung River**, a short drive from central Ubud. It is **not** in Tegallalang. Hours **08:00–17:00 daily**. Sekar Bali Activity books the ticket from **IDR 530,000** (lunch **IDR 630,000**). **Hotel driver is included and required** — no self-meet at the lobby.
 
 > **Key Takeaways**
 > - Address: **Jl. Tangga Yuda, Bongkasa** · Badung 80352
 > - District: **Abiansemal** (same area as our ATV arena in Sedang)
 > - Hours: **08:00–17:00**
-> - Pickup **IDR 400,000** · Grab from Ubud is often cheaper one-way
+> - Hotel driver **included and required** — no self-meet
 > - Map search: [Swing Heaven Bongkasa](https://www.google.com/maps/search/?api=1&query=Jl.+Tangga+Yuda+Bongkasa+Abiansemal+Badung+Bali+80352)
 
 ## How far from Ubud?
@@ -172,15 +172,11 @@ From central Ubud (Monkey Forest / Jalan Raya Ubud) the drive is typically **20�
 
 Pin the lobby as **Jl. Tangga Yuda, Bongkasa** — not “Bali Swing Ubud.” Comparison of the two products: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing).
 
-## Pickup vs Grab vs scooter
+## Pickup — driver included
 
-| Option | Cost | When it makes sense |
-| --- | --- | --- |
-| Self-meet (Grab / driver / scooter) | Your ride only | Central Ubud, one-way drop, you already have a car |
-| Our hotel pickup | **IDR 400,000** | You want collect + return on one WhatsApp invoice |
-| Stack with ATV / rafting | Same **IDR 400,000** if you tick pickup | Morning swing + afternoon [ATV](/tours/bali-atv-adventure) in Abiansemal |
+Our **hotel driver is included in the ticket and required**. We collect you, drop you at **Jl. Tangga Yuda, Bongkasa**, and return you. Self-meet, Grab-only, or scooter-to-the-park is **not** how this booking works. Share the hotel pin on WhatsApp.
 
-The **IDR 400,000** is the same adventure surcharge as ATV, rafting, and tubing — not a hidden swing-only transfer. Free Ubud pickup applies to [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) and [Tumang cooking](/tours/balinese-cooking-class), not this park. Full rules: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
+If you stack morning Swing Heaven with afternoon [ATV](/tours/bali-atv-adventure) or [Ayung rafting](/tours/whitewater-rafting), say so on the same thread — ATV / rafting still use their own **IDR 400,000** pickup or self-meet rule. Full pickup map: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
 
 ## What the grounds look like
 
@@ -193,7 +189,7 @@ Because Bongkasa and Sedang share the Abiansemal district, a common stack is **m
 ## How to book with the pin
 
 1. Open [Swing Heaven Bali](/tours/swing-heaven-bali)
-2. WhatsApp **date, guest count, hotel name, self-meet or pickup**
+2. WhatsApp **date, guest count, hotel name** (driver included)
 3. We send the lobby pin and the IDR total — **no deposit to ask**
 
 **Ready?** Book the [Swing Heaven money page](/tours/swing-heaven-bali) or scan [2026 prices and spots](/blog/swing-heaven-bali-ubud-guide).
@@ -226,7 +222,7 @@ Because Bongkasa and Sedang share the Abiansemal district, a common stack is **m
 | Swing Heaven park ticket | No — book the package separately |
 | Photographer / edited album | No |
 | Makeup or hair | No |
-| Hotel pickup | No — **IDR 400,000** or self-meet |
+| Hotel pickup | Yes — **included and required** (no self-meet) |
 
 Tell us **size and colour preference** when you book. The lobby stocks a set of flying dresses; we cannot promise a specific shade on a sold-out morning. If you already packed a long dress, save the 300K.
 
@@ -278,7 +274,7 @@ The **koi pond boat** (ice tea + fruit platter, photos on your phone) is also **
 | Tea / coffee / water | Yes | Yes |
 | Lunch | No | Yes |
 | Flying dress | Extra 300K | Extra 300K |
-| Hotel pickup | Extra 400K or self-meet | Same |
+| Hotel pickup | Included (required) | Included (required) |
 
 If you already have a restaurant plan in Ubud, or you are stacking [ATV](/tours/bali-atv-adventure) (lunch included on that ticket), the **530K** is the honest buy. If Swing Heaven is the only activity before a late dinner, the **630K** keeps you on site.
 

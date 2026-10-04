@@ -182,9 +182,9 @@ export const PLANNERS: Planner[] = [
     h1: 'Is hotel pickup included in Ubud?',
     job: 'Check free Ubud, island-wide jeep, IDR 400,000, or quoted pickup in one pass.',
     description:
-      'Free hotel pickup checker for Sekar Bali Activity. Cycling and cooking include free Ubud pickup. The Batur jeep includes island-wide pickup. ATV, rafting, tubing, and swing are IDR 400,000 or self-meet.',
+      'Free hotel pickup checker for Sekar Bali Activity. Cycling and cooking include free Ubud pickup. Swing Heaven includes the hotel driver. The Batur jeep includes island-wide pickup. ATV, rafting, tubing, and Griya Beji are IDR 400,000 or self-meet.',
     definition:
-      'The hotel pickup checker answers whether hotel pickup is included on a Sekar Bali Activity booking. Pejeng cycling and Tumang cooking include free Ubud-area pickup. The private Mount Batur jeep includes island-wide pickup. ATV, rafting, tubing, Swing Heaven, and Griya Beji are IDR 400,000 or self-meet. Motorbike pickup is at the area you choose. Park and UTV pickup is quoted.',
+      'The hotel pickup checker answers whether hotel pickup is included on a Sekar Bali Activity booking. Pejeng cycling and Tumang cooking include free Ubud-area pickup. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). The private Mount Batur jeep includes island-wide pickup. ATV, rafting, tubing, and Griya Beji are IDR 400,000 or self-meet. Motorbike pickup is at the area you choose. Park and UTV pickup is quoted.',
     keywords: [
       'hotel pickup checker Ubud',
       'is hotel pickup included Bali',
@@ -205,12 +205,12 @@ export const PLANNERS: Planner[] = [
       {
         question: 'Which tours include free Ubud hotel pickup?',
         answer:
-          'Pejeng ricefield cycling and Tumang Bali Cooking Class include complimentary Ubud-area hotel pickup. The private Mount Batur jeep includes island-wide pickup in the published rate. ATV, rafting, tubing, Swing Heaven, and Griya Beji do not.',
+          'Pejeng ricefield cycling and Tumang Bali Cooking Class include complimentary Ubud-area hotel pickup. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). The private Mount Batur jeep includes island-wide pickup in the published rate. ATV, rafting, tubing, and Griya Beji do not.',
       },
       {
         question: 'What is the IDR 400,000 pickup fee?',
         answer:
-          'It is the optional hotel pickup and drop-off surcharge on ATV, rafting, canyon tubing, Swing Heaven, and Griya Beji. Self-meet has no pickup fee. It is not the motorbike south shuttle and not jeep pickup.',
+          'It is the optional hotel pickup and drop-off surcharge on ATV, rafting, canyon tubing, and Griya Beji. Self-meet has no pickup fee. It is not Swing Heaven (driver included), not the motorbike south shuttle, and not jeep pickup.',
       },
     ],
   },

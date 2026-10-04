@@ -279,7 +279,7 @@ export function checkPickupRule(input: {
     case 'swing':
       return {
         included: true,
-        feeIdr: 0,
+        feeIdr: null,
         headline: 'Hotel driver is included and required',
         detail:
           'Swing Heaven tickets include hotel pickup and drop-off. Self-meet at Bongkasa is not offered. Share the hotel pin on WhatsApp. This is not the IDR 400,000 ATV/rafting surcharge.',

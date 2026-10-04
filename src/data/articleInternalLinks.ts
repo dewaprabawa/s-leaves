@@ -59,6 +59,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book Pejeng cycling', href: '/tours/ubud-ricefield-cycling-tour' },
   ],
   atv: [
+    { title: "What's new in Bali 2026", href: '/blog/whats-new-in-bali-ubud-2026' },
     { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV Ubud price calculator', href: '/planners/atv-price-calculator' },
     { title: 'Ubud quad biking price 2026', href: '/blog/ubud-quad-biking-price-2026' },
@@ -197,6 +198,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book the Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
   ],
   site: [
+    { title: "What's new in Bali 2026", href: '/blog/whats-new-in-bali-ubud-2026' },
     HUB,
     { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     PRICES,
@@ -249,6 +251,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'atv-river-tubing-wos-river-bali': 'tubing',
   'atv-rafting-combo-ubud-2026': 'rafting',
   'atv-tandem-rafting-ubud-2026': 'rafting',
+  'whats-new-in-bali-ubud-2026': 'site',
   'best-price-atv-rafting-cycling-scooter-ubud-2026': 'site',
   'bali-whitewater-rafting-near-ubud-guide': 'rafting',
   'rafting-ubud-price-2026': 'rafting',
@@ -423,6 +426,7 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     { title: 'Hotel pickup checker', href: '/planners/hotel-pickup-checker' },
     { title: 'Batur jeep price guide', href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026' },
     { title: 'Cooking class Ubud price', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
+    { title: "What's new in Bali 2026", href: '/blog/whats-new-in-bali-ubud-2026' },
     { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV cost near Ubud', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
     { title: 'Ayung rafting Ubud price', href: '/blog/rafting-ubud-price-2026' },

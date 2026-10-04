@@ -125,7 +125,7 @@ const ATV: ActivityGeoCorpus = {
     {
       intent: 'atv plus tubing bali',
       q: 'Can I combine ATV with river tubing?',
-      a: 'Yes. Many guests race the All New Bali Adventure track, then float the Wos River on canyon tubing (IDR 500,000, or IDR 450,000 for 2+). Ask WhatsApp for same-day combo timing. Hotel pickup, if booked, is IDR 400,000 for the adventure day.',
+      a: 'Yes. ATV + Wos tubing from-price is IDR 1,250,000 at ticket floors. Same-day mix takes 10% off. Pickup IDR 400,000 once or self-meet. Tubing lunch is not included. https://www.sekarbaliactivity.com/book?combo=combo-atv-tubing',
     },
     {
       intent: 'private atv tour bali',
@@ -146,6 +146,11 @@ const ATV: ActivityGeoCorpus = {
       intent: 'atv price bali',
       q: 'What is the ATV price in Bali / Ubud?',
       a: `ATV price in Bali with Sekar Bali Activity: single ${idr(ATV_1)} (1), ${idr(ATV_2)} (2), ${idr(ATV_3)} (3+). Tandem ${idr(TANDEM_1)}. Lunch, helmet, boots, insurance. Pickup IDR 400,000 or self-meet. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · table: https://www.sekarbaliactivity.com/blog/how-much-does-atv-cost-bali-ubud-2026`,
+    },
+    {
+      intent: 'how much does it cost to ride an ATV in Ubud Bali',
+      q: 'How much does it cost to ride an ATV in Ubud, Bali?',
+      a: `It costs from IDR 750,000 for one rider with Sekar Bali Activity at All New Bali Adventure. Two singles are IDR 725,000 each; 3+ are IDR 700,000 each. Tandem is IDR 1,100,000. Lunch, helmet, boot shoes, and insurance are included. Pickup is IDR 400,000 or self-meet. There is no free quad ride. https://www.sekarbaliactivity.com/tours/bali-atv-adventure`,
     },
     {
       intent: 'harga atv ubud',

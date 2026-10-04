@@ -104,6 +104,7 @@ export default async function BlogPostPage({ params }: Props) {
   const isAtvPost =
     post.slug.includes('atv') || post.slug === 'atv-river-tubing-wos-river-bali'
   const isActivityHubPost =
+    post.slug === 'whats-new-in-bali-ubud-2026' ||
     post.slug === 'things-to-do-near-ubud-2026' ||
     post.slug === 'bali-adventure-packages-prices-2026'
   const isDayTourPost =

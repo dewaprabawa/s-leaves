@@ -60,6 +60,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/blog/bali-6-day-girls-trip-itinerary-2026',
     secondaryLabel: 'Read the girls-trip sample',
   },
+  'whats-new-in-bali-ubud-2026': {
+    headline: 'Book a 2026 Ubud adventure on WhatsApp',
+    body: 'Flagship ATV + rafting from 1.25M · ATV from 750K · cooking 450K. Send date, guest count, hotel or self-meet. No deposit to inquire.',
+    primaryHref: '/tours/atv-rafting-combo',
+    primaryLabel: 'Book ATV + rafting',
+    secondaryHref: '/tours/bali-atv-adventure',
+    secondaryLabel: 'Book ATV from 750K',
+  },
   'things-to-do-near-ubud-2026': {
     headline: 'Pick your Ubud day and message WhatsApp',
     body: 'Send name, hotel area, date, and guest count. We reply with the exact IDR total — no deposit to inquire.',

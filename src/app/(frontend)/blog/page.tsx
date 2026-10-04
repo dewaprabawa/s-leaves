@@ -5,6 +5,7 @@ import { BLOG_POSTS } from '@/data/blog'
 import { ArrowRight, Calendar } from 'lucide-react'
 
 const ACTIVITY_GUIDES = [
+  { label: "What's new 2026", href: '/blog/whats-new-in-bali-ubud-2026' },
   { label: 'All activities 2026', href: '/blog/things-to-do-near-ubud-2026' },
   { label: 'Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
   { label: 'Jeep prices', href: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026' },

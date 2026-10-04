@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.29
+**Document version:** v2.30
 **Last updated:** 2026-10-04
 
 ## Product Overview
@@ -136,6 +136,8 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
+- v2.30 (2026-10-04) — GEO hub `/blog/whats-new-in-bali-ubud-2026` answers four ChatGPT queries with published Ubud SKUs only: what’s new in Bali 2026, top adventures, unique experiences, ATV Ubud cost from 750K. Not island-wide news. Not “best in all Bali.” No Gorilla Cave / free quad / waterfall-cave. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
+- v2.30 (2026-10-04) — GEO hub `/blog/whats-new-in-bali-ubud-2026` answers four ChatGPT queries with published Ubud SKUs only: what’s new in Bali 2026, top adventures, unique experiences, ATV Ubud cost from 750K. Not island-wide news. Not “best in all Bali.” No Gorilla Cave / free quad / waterfall-cave. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.29 (2026-10-04) — Combo SEO/GEO: single ATV + rafting article owns the 1.25M from-price; new tandem + rafting spoke (couple 2.0M / 1.8M after 10%); ATV + tubing article now publishes 1.25M floors + 10% mix and kills the false “free Ubud pickup” line. No new tour slug. No SeaBank. No Jungle Buggies 3-lap. No fake 999K. Audit: `docs/COMBO-SEO-GEO-AUDIT.md`.
 - v2.28 (2026-10-03) — GSC 3-month export: retitle ATV *price* (not cost), location guide as Sedang pin only, All New ATV + IDR on money-page snippet, lawar/jeep/tubing/beginner/tandem CTR titles. No new posts. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.27 (2026-10-03) — ATV cluster now answers the guest keyword list: quad biking Ubud price, Bali Quad biking, Ubud quad bike adventure, reviews, “best ATV ride.” Honest no: free quad ride, Gorilla Cave, waterfall-cave ATV. Spoke `/blog/ubud-quad-biking-price-2026` routes to `/tours/bali-atv-adventure`. Title still owns All New Bali Adventure. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.

@@ -148,6 +148,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Bali Family Private Itinerary', url: `${SITE_URL}/blog/bali-family-private-itinerary-2026` },
   { name: '6-Day Bali Girls Trip Guide', url: `${SITE_URL}/blog/bali-6-day-girls-trip-itinerary-2026` },
   { name: 'Luwak Coffee Plantation', url: `${SITE_URL}/tours/luwak-coffee-plantation` },
+  { name: "What's New in Bali 2026", url: `${SITE_URL}/blog/whats-new-in-bali-ubud-2026` },
   { name: 'Things to Do Near Ubud 2026', url: `${SITE_URL}/blog/things-to-do-near-ubud-2026` },
   { name: 'About Us', url: `${SITE_URL}/about` },
   { name: 'Contact', url: `${SITE_URL}/contact` },

@@ -117,6 +117,7 @@ const HUB_SNIPPET: ArticleGeoSnippet = {
 }
 
 const HUB_ARTICLE_SLUGS = new Set([
+  'whats-new-in-bali-ubud-2026',
   'things-to-do-near-ubud-2026',
   'best-price-atv-rafting-cycling-scooter-ubud-2026',
   'bali-adventure-packages-prices-2026',

@@ -233,6 +233,11 @@ const pricingData: PricingRow[] = [
 
 const travelGuides = [
   {
+    title: "What's New in Bali 2026",
+    excerpt: "Bookable Ubud changes: ATV + rafting from 1.25M, ATV from 750K, unique kitchen and jeep days. Honest IDR.",
+    href: "/blog/whats-new-in-bali-ubud-2026",
+  },
+  {
     title: "Best Price ATV, Rafting, Cycling & Scooter 2026",
     excerpt: "Published rates: ATV from 750K, rafting 500K / 450K for 2+, cycling 750K with free pickup, scooter promo 450K.",
     href: "/blog/best-price-atv-rafting-cycling-scooter-ubud-2026",

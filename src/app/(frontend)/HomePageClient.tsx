@@ -386,6 +386,10 @@ function ExperienceCard({ tour }: { tour: Tour }) {
             <span className="absolute top-3 left-3 bg-accent-gold text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">
               Private
             </span>
+          ) : tour.slug === "ubud-ricefield-cycling-tour" ? (
+            <span className="absolute top-3 left-3 bg-brand-green text-sand text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">
+              Promo
+            </span>
           ) : null}
         </div>
         <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-accent-gold-dark mb-2">
@@ -403,9 +407,20 @@ function ExperienceCard({ tour }: { tour: Tour }) {
             <Clock3 className="w-3.5 h-3.5" />
             {tour.duration}
           </span>
-          <span className="font-bold text-brand-green">
-            from IDR {tour.basePrice.toLocaleString("id-ID")}
-          </span>
+          {tour.slug === "ubud-ricefield-cycling-tour" ? (
+            <span className="text-right">
+              <span className="block text-[11px] text-brand-green-light line-through">
+                IDR {CYCLING_LIST_IDR.toLocaleString("id-ID")}
+              </span>
+              <span className="font-bold text-brand-green">
+                from IDR {CYCLING_PROMO_IDR.toLocaleString("id-ID")}
+              </span>
+            </span>
+          ) : (
+            <span className="font-bold text-brand-green">
+              from IDR {tour.basePrice.toLocaleString("id-ID")}
+            </span>
+          )}
         </div>
       </Link>
       <div className="mt-3">
@@ -623,9 +638,18 @@ export default function Home() {
                     <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">
                       {pkg.duration} · from
                     </p>
-                    <p className="text-2xl font-bold text-brand-green">
-                      IDR {pkg.priceFrom.toLocaleString("id-ID")}
-                    </p>
+                    {pkg.priceWas && pkg.priceWas > pkg.priceFrom ? (
+                      <PromoPrice
+                        price={pkg.priceFrom}
+                        originalPrice={pkg.priceWas}
+                        variant="inline"
+                        from
+                      />
+                    ) : (
+                      <p className="text-2xl font-bold text-brand-green">
+                        IDR {pkg.priceFrom.toLocaleString("id-ID")}
+                      </p>
+                    )}
                   </div>
                   {pkg.kind === "combo" ? (
                     <button
@@ -699,8 +723,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {ADVENTURES.map((adv, i) => {
               const IconComponent = ADVENTURE_ICONS[adv.id] ?? Compass
-              const price = getPromoListPrice(adv.id)
-              const original = getListPrice(adv.id)
+              const isCycling = adv.id === "cycling"
+              const price = isCycling ? CYCLING_PROMO_IDR : getPromoListPrice(adv.id)
+              const original = isCycling ? CYCLING_LIST_IDR : getListPrice(adv.id)
               return (
                 <article
                   key={adv.id}
@@ -724,6 +749,10 @@ export default function Home() {
                     {(adv.id === "jeep-sunrise" || adv.id === "kintamani-day") ? (
                       <div className="absolute top-4 left-4 bg-accent-gold text-white text-xs font-bold px-3 py-1 uppercase tracking-wider">
                         Private
+                      </div>
+                    ) : isCycling ? (
+                      <div className="absolute top-4 left-4 bg-brand-green text-sand text-xs font-bold px-3 py-1 uppercase tracking-wider">
+                        Promo
                       </div>
                     ) : null}
                     <div className="absolute bottom-4 left-4 flex items-center gap-2 text-sand text-sm font-medium">
@@ -831,9 +860,12 @@ export default function Home() {
             <div className="shrink-0 space-y-3 md:text-right">
               <div>
                 <p className="text-xs uppercase tracking-wider text-brand-green-light mb-1">From (both)</p>
-                <p className="text-2xl font-bold text-brand-green">
-                  IDR {cultureCombo.totalFromIdr.toLocaleString("id-ID")}
-                </p>
+                <PromoPrice
+                  price={cultureCombo.totalFromIdr}
+                  originalPrice={cultureCombo.totalCompareAtIdr}
+                  variant="inline"
+                  from
+                />
               </div>
               <div className="flex flex-wrap md:justify-end gap-2">
                 <a

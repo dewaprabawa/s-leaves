@@ -7,7 +7,7 @@ import { getTravelerRecommendPercent } from "@/data/tours"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
-import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, getListPrice, getPromoListPrice } from "@/lib/pricing"
+import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, getCyclingPromoDisplay, getListPrice, getPromoListPrice } from "@/lib/pricing"
 import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
@@ -70,11 +70,7 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
     }
   }
   if (tourSlug === "ubud-ricefield-cycling-tour") {
-    return {
-      promoPrice: CYCLING_PROMO_IDR,
-      standardPrice: CYCLING_LIST_IDR,
-      tierLabel: "Promo / person · 625K (2) · 600K (3+) · lunch + free Ubud pickup",
-    }
+    return getCyclingPromoDisplay()
   }
   // ATV SERP / FAQ lead with the 1-rider rate. Do not show the 3+ 700K
   // tier as a "from" promo — it reads as a discount vs IDR 750K.

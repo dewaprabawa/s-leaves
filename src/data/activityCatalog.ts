@@ -27,7 +27,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "village",
     label: TOUR_CATEGORY_LABELS.village,
-    blurb: "Pejeng ricefield cycling · bird park, safari & Taro tickets · free Ubud pickup on cycling from IDR 750K",
+    blurb: "Pejeng ricefield cycling promo 650K (was 750K) · bird park, safari & Taro tickets · free Ubud pickup + lunch",
     href: "/#village",
   },
   {
@@ -63,6 +63,7 @@ export type PackageCard = {
   description: string
   duration: string
   priceFrom: number
+  priceWas?: number
   href: string
   kind: "combo" | "culture" | "tour"
 }
@@ -99,6 +100,7 @@ export function getFeaturedPackages(): PackageCard[] {
     description: culture.description,
     duration: culture.duration,
     priceFrom: culture.totalFromIdr,
+    priceWas: culture.totalCompareAtIdr,
     href: '/book?activity=combo-cycling-cooking',
     kind: 'culture',
   }

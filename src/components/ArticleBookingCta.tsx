@@ -300,7 +300,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'cycling-cooking-class-ubud-full-day-itinerary': {
     headline: 'Book the cycling + cooking culture day',
-    body: 'Pejeng ride with lunch, then afternoon Tumang class. One WhatsApp thread.',
+    body: 'Promo 650K cycling (was 750K) + cooking 450K = IDR 1,100,000 (was 1,200,000). One WhatsApp thread.',
     primaryHref: '/book?activity=combo-cycling-cooking',
     primaryLabel: 'Book the combo',
     secondaryHref: '/tours/balinese-cooking-class',

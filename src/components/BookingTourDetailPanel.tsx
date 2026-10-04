@@ -2,7 +2,9 @@
 
 import Link from "next/link"
 import { ArrowLeft, Check, Clock, ExternalLink, X } from "lucide-react"
+import PromoPrice from "@/components/PromoPrice"
 import { getTourBySlug, getTourCategoryLabel } from "@/data/tours"
+import { getCyclingPromoDisplay } from "@/lib/pricing"
 import { formatIdr } from "@/lib/whatsapp"
 
 type Props = {
@@ -14,6 +16,8 @@ export default function BookingTourDetailPanel({ tourSlug, onClose }: Props) {
   const tour = getTourBySlug(tourSlug)
 
   if (!tour) return null
+
+  const cyclingPromo = tour.slug === "ubud-ricefield-cycling-tour" ? getCyclingPromoDisplay() : null
 
   return (
     <div className="absolute inset-0 z-[260] flex flex-col bg-sand rounded-3xl overflow-hidden">
@@ -46,7 +50,16 @@ export default function BookingTourDetailPanel({ tourSlug, onClose }: Props) {
               <Clock className="w-4 h-4 text-brand-green" />
               {tour.duration}
             </span>
-            <span className="font-bold text-brand-green">From {formatIdr(tour.basePrice)}</span>
+            {cyclingPromo ? (
+              <PromoPrice
+                price={cyclingPromo.promoPrice}
+                originalPrice={cyclingPromo.standardPrice}
+                variant="inline"
+                from
+              />
+            ) : (
+              <span className="font-bold text-brand-green">From {formatIdr(tour.basePrice)}</span>
+            )}
           </div>
           <h3 className="font-display text-2xl md:text-3xl font-bold text-brand-green uppercase leading-tight">
             {tour.title}

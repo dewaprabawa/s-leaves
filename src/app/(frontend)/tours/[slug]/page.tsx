@@ -620,6 +620,7 @@ function buildMotorbikeWebPageSchema(tour: Tour) {
     },
     significantLink: [
       `${SITE_URL}/book?activity=${tour.slug}`,
+      `${SITE_URL}/planners/motorbike-tour-price`,
       `${SITE_URL}/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}`,
       `${SITE_URL}/blog/${ORIGIN_MARKET_ARTICLE_SLUG}`,
       `${SITE_URL}/blog/bali-motorbike-tour-vs-private-driver-2026`,
@@ -792,7 +793,7 @@ export default async function TourPage({ params }: Props) {
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
                       Private
                     </span>
-                  ) : isCyclingTour(tour) ? (
+                  ) : isCyclingTour(tour) || isMotorbikeTour(tour) ? (
                     <span className="inline-flex rounded-full bg-brand-green px-3 py-1 text-xs font-bold uppercase tracking-wider text-sand">
                       Promo
                     </span>

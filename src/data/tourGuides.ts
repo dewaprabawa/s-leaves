@@ -701,6 +701,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class', blurb: 'Kitchen instead of jewelry — free Ubud pickup.' },
   ],
   'bali-motorbike-traveling-trip': [
+    { title: 'Motorbike tour calculator', href: '/planners/motorbike-tour-price', blurb: 'Add scooters and the Canggu / Jimbaran / Nusa Dua shuttle in IDR.' },
     { title: 'Best price ATV, rafting, cycling & scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026', blurb: 'Published scooter promo 450K next to ATV, rafting, and cycling.' },
     { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026', blurb: 'Promo from IDR 450K (was 550K). Canggu / Jimbaran / Nusa Dua shuttle IDR 550K once per booking.' },
     { title: 'Japan, Korea, China & Middle East (English)', href: '/blog/bali-tours-for-japanese-chinese-travelers-2026', blurb: 'Same English WhatsApp and IDR prices. Includes Korea and the Middle East (UAE, Saudi, Qatar).' },

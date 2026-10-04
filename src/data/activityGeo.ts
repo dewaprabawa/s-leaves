@@ -867,14 +867,14 @@ const UTV: ActivityGeoCorpus = {
 
 const MOTORBIKE: ActivityGeoCorpus = {
   slug: MOTORBIKE_TRIP_SLUG,
-  heading: 'Bali scooter tour Ubud — facts AI can cite',
+  heading: 'Bali motorbike tour from Ubud — 2026 facts',
   tldr: `A Bali motorbike tour with Sekar Bali Activity is a guided ${MOTORBIKE_ENGINE} scooter day. Promo from ${idr(MOTORBIKE_UBUD_IDR)} per bike (was ${idr(MOTORBIKE_UBUD_LIST_IDR)}). Choose Ubud, waterfalls, Kintamani, South, North, or East Bali. Attraction tickets are not included. ${MOTORBIKE_PICKUP}. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Ride your own bike (IDP recommended) or pillion. Not Sedang ATV and not a private car day.`,
   bookHref: `/tours/${MOTORBIKE_TRIP_SLUG}`,
   bookLabel: 'Book the motorbike tour',
   pairHref: `/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}`,
   pairLabel: 'See 2026 promo prices',
   extraNote:
-    `Price is per scooter. Entrance tickets and lunch stay on you. Pickup at the area you choose sits in the promo — not the IDR 400,000 adventure surcharge, not island-wide jeep pickup, and not free Ubud cycling/cooking pickup. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking.`,
+    `Price is per scooter. Entrance tickets and lunch stay on you. Pickup at the area you choose sits in the promo — not the IDR 400,000 adventure surcharge, not island-wide jeep pickup, and not free Ubud cycling/cooking pickup. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Add scooters and the south shuttle on the free calculator at https://www.sekarbaliactivity.com/planners/motorbike-tour-price before you WhatsApp.`,
   priceRows: [
     ...MOTORBIKE_DESTINATIONS.map((dest) => ({
       option: dest.name,

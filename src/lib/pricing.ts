@@ -46,7 +46,7 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'tandem-atv': [1_100_000, 1_060_000, 1_030_000], // per tandem bike
   'rafting': [500_000, 450_000, 450_000],
   'canyon-tubing': [500_000, 450_000, 450_000],
-  'cycling': [750_000, 725_000, 700_000],
+  'cycling': [650_000, 625_000, 600_000],
   // Internal 1-pax cell is unused on the site (min 2). Public rate is the 2-pax package.
   'jeep-sunrise': [1_350_000, JEEP_SITIN_PAIR_TOTAL_IDR / 2, JEEP_GROUP_IDR], // sit-in: IDR 2,000,000 for 2
   'jeep-tracking': [1_350_000, JEEP_TRACKING_PAIR_TOTAL_IDR / 2, JEEP_GROUP_IDR], // tracking: IDR 1,800,000 for 2
@@ -54,6 +54,21 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'kintamani-day': [1_450_000, 1_300_000, 1_300_000],
   'swing-heaven': [530_000, 530_000, 530_000],
   'swing-heaven-lunch': [630_000, 630_000, 630_000],
+}
+
+/** Published compare-at list for Pejeng cycling (was / strikethrough). Bookable promo is TIER_PRICES_IDR.cycling. */
+export const CYCLING_LIST_IDR = 750_000
+export const CYCLING_PROMO_IDR = 650_000
+export const CYCLING_PROMO_TIER_LABEL =
+  'Promo / person · 625K (2) · 600K (3+) · lunch + free Ubud pickup'
+
+/** Guest-facing cycling promo vs 750K list. Do not use getPromoListPrice vs getListPrice (that is 600 vs 650). */
+export function getCyclingPromoDisplay() {
+  return {
+    promoPrice: CYCLING_PROMO_IDR,
+    standardPrice: CYCLING_LIST_IDR,
+    tierLabel: CYCLING_PROMO_TIER_LABEL,
+  }
 }
 
 /** Per-person add-on on any jeep variant (private or tracking, sunrise or sunset). Ticket included. */
@@ -273,6 +288,9 @@ export function formatTierPriceTable(activityId: ActivityId): string {
   if (activityId === 'swing-heaven-lunch') {
     return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · same package + lunch`
   }
+  if (activityId === 'cycling') {
+    return `Promo IDR ${(CYCLING_PROMO_IDR / 1000).toFixed(0)}k (was ${(CYCLING_LIST_IDR / 1000).toFixed(0)}k) · 2 ${unit}: IDR ${(t2 / 1000).toFixed(0)}k · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k · lunch + free Ubud pickup`
+  }
   return `1 ${unit}: IDR ${(t1 / 1000).toFixed(0)}k · 2 ${unit}: IDR ${(t2 / 1000).toFixed(0)}k · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`
 }
 
@@ -289,7 +307,8 @@ export function getPromoListPrice(activityId: string): number {
 
 /** Public list-rate subtotal for the same units as a quote */
 export function getCompareAtSubtotal(quote: ActivityQuote): number {
-  const standardUnit = getListPrice(quote.activityId)
+  const standardUnit =
+    quote.activityId === 'cycling' ? CYCLING_LIST_IDR : getListPrice(quote.activityId)
   return quote.units * standardUnit
 }
 

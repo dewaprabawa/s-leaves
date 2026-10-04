@@ -170,7 +170,7 @@ Kitchen map: [how traditional Balinese kitchens work](/blog/how-traditional-bali
     title: 'E-Bike vs Pedal Bike: Ubud Cycling Tour',
     seoTitle: 'E-Bike vs Pedal Cycling Ubud | Pejeng',
     excerpt:
-      'Most Ubud listings are fat-tire e-bikes or Kintamani downhill shuttles. Sekar Bali’s Pejeng ride is a standard pedal bike on mostly flat Subak lanes — lunch + free Ubud pickup, IDR 750,000.',
+      'Most Ubud listings are fat-tire e-bikes or Kintamani downhill shuttles. Sekar Bali’s Pejeng ride is a standard pedal bike on mostly flat Subak lanes — lunch + free Ubud pickup, promo IDR 650,000 (was 750,000).',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: '/images/cycling/rider.jpg',
@@ -178,7 +178,7 @@ Kitchen map: [how traditional Balinese kitchens work](/blog/how-traditional-bali
 **Is the Ubud ricefield cycling tour an e-bike ride?** **No.** [Sekar Bali Activity](/tours/ubud-ricefield-cycling-tour) uses a **standard pedal bicycle** and helmet on **mostly flat Pejeng village and Subak paths**. You do not need electric assist for this 2-hour countryside ride. Aggregators that rank for “Ubud cycling” are often **fat-tire e-bike** loops or **Kintamani downhill** shuttle days — different products.
 
 > **Key Takeaways**
-> - Our tour: **pedal bike** · **~2 hours** · **IDR 750,000** · **lunch included**
+> - Our tour: **pedal bike** · **~2 hours** · **promo IDR 650,000** (was 750,000) · **lunch included**
 > - **Free Ubud hotel pickup** (outside Ubud + IDR 400,000)
 > - Not an e-bike, not Tegallalang swing traffic, not a volcano downhill
 > - Published start: **afternoon** — confirm the clock on WhatsApp
@@ -207,7 +207,7 @@ If you are comfortable on a city bike, Pejeng is the easier Ubud cycling day. We
 
 ## Price (2026)
 
-**IDR 750,000** per person: bike, helmet, English-speaking guide, lunch, insurance (6–65), free Ubud pickup and drop-off. Worth-it verdict: [is an Ubud cycling tour worth it?](/blog/is-ubud-cycling-tour-worth-it).
+**Promo IDR 650,000** per person (was **750,000**): bike, helmet, English-speaking guide, lunch, insurance (6–65), free Ubud pickup and drop-off. Two guests **625,000**. Three+ **600,000**. Worth-it verdict: [is an Ubud cycling tour worth it?](/blog/is-ubud-cycling-tour-worth-it).
 
 Pair with [Tumang cooking](/tours/balinese-cooking-class) (promo IDR 450,000, free Ubud pickup) on a timeline we confirm — published cycling is **afternoon**, so a **morning kitchen + afternoon ride** is the honest same-day order unless WhatsApp flips it.
 
@@ -219,7 +219,7 @@ Pair with [Tumang cooking](/tours/balinese-cooking-class) (promo IDR 450,000, fr
     title: 'What to Wear on an Ubud Ricefield Cycling Tour',
     seoTitle: 'What to Wear Ubud Cycling | Pejeng Ride',
     excerpt:
-      'Closed shoes, breathable clothes, sun protection — Pejeng ricefield cycling is a 2-hour pedal (not e-bike) with lunch and free Ubud pickup from IDR 750,000.',
+      'Closed shoes, breathable clothes, sun protection — Pejeng ricefield cycling is a 2-hour pedal (not e-bike) with lunch and free Ubud pickup, promo IDR 650,000 (was 750,000).',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: '/images/cycling/trail-group.jpg',
@@ -231,7 +231,7 @@ Pair with [Tumang cooking](/tours/balinese-cooking-class) (promo IDR 450,000, fr
 > - Light long sleeves beat a midday burn better than a tank top
 > - Bring a dry shirt if you want photos after lunch
 > - Temple stops: shoulders can be covered with a light scarf — [village etiquette](/blog/authentic-balinese-village-etiquette-for-travelers)
-> - **IDR 750,000** · afternoon departure · insurance 6–65
+> - **Promo IDR 650,000** (was 750,000) · afternoon departure · insurance 6–65
 
 ## Pack list (short)
 
@@ -269,12 +269,12 @@ Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-ex
     title: 'Ubud Cycling Tour for Families (Pejeng)',
     seoTitle: 'Family Cycling Tour Ubud | Lunch Included',
     excerpt:
-      'Pejeng ricefield cycling suits families comfortable on bikes — 2 hours, pedal bikes, lunch included, free Ubud pickup, insurance ages 6–65. IDR 750,000.',
+      'Pejeng ricefield cycling suits families comfortable on bikes — 2 hours, pedal bikes, lunch included, free Ubud pickup, insurance ages 6–65. Promo IDR 650,000 (was 750,000).',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: '/images/cycling/lunch-stop.jpg',
     content: `
-**Is there a family-friendly cycling tour near Ubud?** Yes — if the kids (or grandparents) are **already comfortable on a bicycle**. [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) is a **2-hour pedal** on mostly flat Subak and village lanes, with a house visit, carving studio, seasonal harvest try, and **lunch included**. **IDR 750,000** per person. **Free Ubud pickup.** Insurance covers ages **6–65**. It is not an e-bike and not a Kintamani downhill van.
+**Is there a family-friendly cycling tour near Ubud?** Yes — if the kids (or grandparents) are **already comfortable on a bicycle**. [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) is a **2-hour pedal** on mostly flat Subak and village lanes, with a house visit, carving studio, seasonal harvest try, and **lunch included**. **Promo IDR 650,000** per person (was **750,000**). **Free Ubud pickup.** Insurance covers ages **6–65**. It is not an e-bike and not a Kintamani downhill van.
 
 > **Key Takeaways**
 > - Best for families who can ride a normal bike without training wheels
@@ -302,7 +302,7 @@ They ride, stop, watch a farmer, walk into a family courtyard, see wood carving,
 
 | Include | Detail |
 | --- | --- |
-| Rate | **IDR 750,000** / person |
+| Rate | **Promo IDR 650,000** / person (was 750,000) · 625,000 (2) · 600,000 (3+) |
 | Pickup | Free in the **Ubud area** |
 | Outside Ubud | + **IDR 400,000** |
 | Lunch | Village restaurant — included |

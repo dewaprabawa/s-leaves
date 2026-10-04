@@ -1,4 +1,4 @@
-import { getListPrice } from '@/lib/pricing'
+import { CYCLING_LIST_IDR, getListPrice } from '@/lib/pricing'
 import { SWING_HEAVEN_PRICE_IDR, SWING_HEAVEN_LUNCH_PRICE_IDR } from '@/data/swingHeaven'
 import { buildWhatsAppBookingUrl, formatIdr } from '@/lib/whatsapp'
 
@@ -74,8 +74,10 @@ export type CultureComboOffer = {
   duration: string
   timeline: string[]
   cyclingPriceIdr: number
+  cyclingListPriceIdr: number
   cookingPriceIdr: number
   totalFromIdr: number
+  totalCompareAtIdr: number
   itineraryHref: string
   cyclingTourHref: string
   cookingTourHref: string
@@ -90,15 +92,17 @@ export function getCyclingCookingCombo(): CultureComboOffer {
     name: 'Cycling + Tumang Cooking Class',
     tagline: 'Culture day classic',
     description:
-      '2-hour Pejeng ricefield cycling (free Ubud hotel pickup + lunch), then an afternoon Tumang Bali Cooking Class — 10+ dishes, rice-field walk, max 8 guests. Book both on one WhatsApp thread.',
+      '2-hour Pejeng ricefield cycling promo IDR 650,000 (was IDR 750,000) with free Ubud hotel pickup + lunch, then an afternoon Tumang Bali Cooking Class — 10+ dishes, rice-field walk, max 8 guests. Book both on one WhatsApp thread.',
     duration: 'Full day',
     timeline: [
-      `2 hours: Ubud Ricefield Cycling Tour — ${formatIdr(cyclingPriceIdr)} (free Ubud pickup + lunch)`,
+      `2 hours: Ubud Ricefield Cycling Tour — promo ${formatIdr(cyclingPriceIdr)} (was ${formatIdr(CYCLING_LIST_IDR)}; free Ubud pickup + lunch)`,
       `Afternoon: Tumang Bali Cooking Class — ${formatIdr(cookingPriceIdr)} promo / person (shared · Ubud pickup included)`,
     ],
     cyclingPriceIdr,
+    cyclingListPriceIdr: CYCLING_LIST_IDR,
     cookingPriceIdr,
     totalFromIdr: cyclingPriceIdr + cookingPriceIdr,
+    totalCompareAtIdr: CYCLING_LIST_IDR + cookingPriceIdr,
     itineraryHref: '/blog/cycling-cooking-class-ubud-full-day-itinerary',
     cyclingTourHref: '/tours/ubud-ricefield-cycling-tour',
     cookingTourHref: '/tours/balinese-cooking-class',
@@ -139,7 +143,7 @@ export function buildCyclingCookingComboWhatsAppUrl(guestName = 'Guest') {
     activityOption: `${combo.timeline[0]} · ${combo.timeline[1]}`,
     price: combo.totalFromIdr,
     notes:
-      'Please confirm availability for Pejeng ricefield cycling (free Ubud pickup) and an afternoon Tumang Bali Cooking Class on the same date.',
+      'Please confirm availability for Pejeng ricefield cycling promo 650K (was 750K, free Ubud pickup + lunch) and an afternoon Tumang Bali Cooking Class on the same date.',
   })
 }
 

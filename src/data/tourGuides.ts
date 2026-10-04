@@ -279,7 +279,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Best price ATV, rafting, cycling & scooter',
       href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
-      blurb: 'Published cycling 750K with free Ubud pickup next to ATV, rafting, and scooter.',
+      blurb: 'Published cycling promo 650K (was 750K) with free Ubud pickup next to ATV, rafting, and scooter.',
     },
     {
       title: 'Things to do near Ubud 2026',

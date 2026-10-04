@@ -23,7 +23,7 @@ import {
 } from "@/data/cultureSales"
 import { GRIYA_BEJI_SALES, GRIYA_BEJI_VENUE, buildGriyaBejiWhatsAppUrl } from "@/data/griyaBeji"
 import { FEATURED_COMBOS, getComboListPrice, getComboCompareAtPrice } from "@/lib/combos"
-import { formatTierPriceTable } from "@/lib/pricing"
+import { getCyclingPromoDisplay, formatTierPriceTable } from "@/lib/pricing"
 import { formatIdr } from "@/lib/whatsapp"
 import { notifyActivityClick } from "@/lib/web3forms"
 
@@ -175,13 +175,13 @@ export default function BookSalesCheckout({
             <p className="text-[11px] uppercase tracking-wider text-brand-green-light mb-0.5">
               From (both, per person)
             </p>
-            <p className="text-2xl font-bold text-brand-green">
-              {formatIdr(cultureCombo.totalFromIdr)}
-            </p>
-            <p className="text-xs text-brand-green-light mt-1">
-              {formatIdr(cultureCombo.cyclingPriceIdr)} cycling +{" "}
-              {formatIdr(cultureCombo.cookingPriceIdr)} cooking · {cultureCombo.duration}
-            </p>
+            <PromoPrice
+              price={cultureCombo.totalFromIdr}
+              originalPrice={cultureCombo.totalCompareAtIdr}
+              variant="card"
+              from
+              tierLabel={`${formatIdr(cultureCombo.cyclingPriceIdr)} cycling promo (was ${formatIdr(cultureCombo.cyclingListPriceIdr)}) + ${formatIdr(cultureCombo.cookingPriceIdr)} cooking`}
+            />
           </div>
           <div className="flex flex-wrap gap-2">
             <a
@@ -264,8 +264,9 @@ export default function BookSalesCheckout({
       </section>
 
       {sorted.map((adv) => {
-        const price = getAdventurePromoPrice(adv.id)
-        const originalPrice = getAdventureListPrice(adv.id)
+        const cyclingPromo = adv.id === "cycling" ? getCyclingPromoDisplay() : null
+        const price = cyclingPromo ? cyclingPromo.promoPrice : getAdventurePromoPrice(adv.id)
+        const originalPrice = cyclingPromo ? cyclingPromo.standardPrice : getAdventureListPrice(adv.id)
         const childPrice = getAdventureChildPrice(adv.id)
         const isHighlight = adv.id === highlighted
 
@@ -349,7 +350,9 @@ export default function BookSalesCheckout({
                   variant="card"
                   from
                   tierLabel={
-                    adv.id === "rafting" || adv.id === "canyon-tubing"
+                    cyclingPromo
+                      ? cyclingPromo.tierLabel
+                      : adv.id === "rafting" || adv.id === "canyon-tubing"
                       ? "2+ discount — IDR 450,000 per person"
                       : adv.id === "jeep-sunrise"
                         ? "Sit-in 2M for 2 · tracking 1.8M for 2 · 3+ 750K"

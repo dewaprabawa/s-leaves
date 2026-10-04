@@ -288,7 +288,7 @@ Park hours are **08:00–17:00**. Morning slots are quieter for photos. Eat afte
 
 ## What lunch is not
 
-Lunch is **not** a tasting menu and **not** a cooking class. For a village kitchen day, book [Tumang Bali Cooking Class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup). For a sit-down after ricefield lanes, [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) already includes lunch at **IDR 750,000**.
+Lunch is **not** a tasting menu and **not** a cooking class. For a village kitchen day, book [Tumang Bali Cooking Class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup). For a sit-down after ricefield lanes, [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) already includes lunch at promo **IDR 650,000** (was 750,000).
 
 ## How to pick the SKU
 

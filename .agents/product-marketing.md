@@ -1,6 +1,6 @@
 # Product Marketing Context
 
-**Document version:** v2.30
+**Document version:** v2.32
 **Last updated:** 2026-10-04
 
 ## Product Overview
@@ -136,7 +136,8 @@
 
 ## Changelog
 *Newest first. One line per revision: what changed and why.*
-- v2.30 (2026-10-04) — GEO hub `/blog/whats-new-in-bali-ubud-2026` answers four ChatGPT queries with published Ubud SKUs only: what’s new in Bali 2026, top adventures, unique experiences, ATV Ubud cost from 750K. Not island-wide news. Not “best in all Bali.” No Gorilla Cave / free quad / waterfall-cave. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
+- v2.32 (2026-10-04) — Checkout `/book`, homepage adventure cards, village cards, booking-detail panel, and the cycling + cooking combo now show **650K vs strikethrough 750K** (or **1.10M vs 1.20M** on the combo). Do not use the 3+ 600K group tier as the advertised promo. Booking-form compare-at uses the 750K list. ATV/jeep 750K unchanged. No cheapest claim. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
+- v2.31 (2026-10-04) — Pejeng ricefield cycling is a **promo**: bookable **IDR 650,000** (was **750,000** strikethrough), group **625K / 600K**. UI matches cooking/scooter (Promo badge + compare-at). Combo cycling + cooking **1.10M**. SEO/GEO titles say promo 650K · was 750K. Do not treat 600K as the advertised from-price. ATV/jeep 750K unchanged. No cheapest claim. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.30 (2026-10-04) — GEO hub `/blog/whats-new-in-bali-ubud-2026` answers four ChatGPT queries with published Ubud SKUs only: what’s new in Bali 2026, top adventures, unique experiences, ATV Ubud cost from 750K. Not island-wide news. Not “best in all Bali.” No Gorilla Cave / free quad / waterfall-cave. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.
 - v2.29 (2026-10-04) — Combo SEO/GEO: single ATV + rafting article owns the 1.25M from-price; new tandem + rafting spoke (couple 2.0M / 1.8M after 10%); ATV + tubing article now publishes 1.25M floors + 10% mix and kills the false “free Ubud pickup” line. No new tour slug. No SeaBank. No Jungle Buggies 3-lap. No fake 999K. Audit: `docs/COMBO-SEO-GEO-AUDIT.md`.
 - v2.28 (2026-10-03) — GSC 3-month export: retitle ATV *price* (not cost), location guide as Sedang pin only, All New ATV + IDR on money-page snippet, lawar/jeep/tubing/beginner/tandem CTR titles. No new posts. No SeaBank. No Jungle Buggies 3-lap. No fake 999K.

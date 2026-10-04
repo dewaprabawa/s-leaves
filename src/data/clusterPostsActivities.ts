@@ -31,7 +31,7 @@ What we added or made bookable with a public IDR this year:
 | Flagship **ATV + Ayung rafting** | Mud then Class II–III · from **1.25M** · **10% mix** | [/tours/atv-rafting-combo](/tours/atv-rafting-combo) |
 | **Tandem ATV + rafting** (couple) | **2.0M** before mix · **1.8M** after 10% | [/blog/atv-tandem-rafting-ubud-2026](/blog/atv-tandem-rafting-ubud-2026) |
 | **ATV + Wos tubing** | Same 1.25M floors · gentler water · tubing lunch **not** in | [/book?combo=combo-atv-tubing](/book?combo=combo-atv-tubing) |
-| Published **best-price hub** | ATV 750K · rafting 500K/450K · cycling 750K free pickup · scooter promo 450K | [/blog/best-price-atv-rafting-cycling-scooter-ubud-2026](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026) |
+| Published **best-price hub** | ATV 750K · rafting 500K/450K · cycling promo 650K (was 750K) free pickup · scooter promo 450K | [/blog/best-price-atv-rafting-cycling-scooter-ubud-2026](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026) |
 
 What did **not** change: ATV still meets at **All New Bali Adventure, Sedang** — not the Banjar Kenderan office. Pickup on ATV / rafting / tubing is still **IDR 400,000** or self-meet. We still do **not** sell Jungle Buggies 3-lap, Gorilla Cave, or a free quad.
 
@@ -58,7 +58,7 @@ This is **not** a “best adventures in all of Bali” list. We do not run Nusa 
 | Unique (for us) | Why it is not a mass ATV listing | From IDR | Book |
 | --- | --- | --- | --- |
 | [Tumang cooking class](/tours/balinese-cooking-class) | Max 8 · Chef Wayan · 10+ dishes · free Ubud pickup | **450,000** promo | [Cooking](/tours/balinese-cooking-class) |
-| [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) | Subak paths · lunch · free Ubud pickup | **750,000** | [Cycling](/tours/ubud-ricefield-cycling-tour) |
+| [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) | Subak paths · lunch · free Ubud pickup | **650,000** promo (was 750,000) | [Cycling](/tours/ubud-ricefield-cycling-tour) |
 | [Cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary) | Village morning + kitchen afternoon | Two published tickets | [Book combo](/book?activity=combo-cycling-cooking) |
 | [Batur jeep](/tours/batur-sunrise-jeep-tour) | Private 4×4 to ~1,350m rim · **not** the summit trek | **2M for 2** / **750K** at 3+ | [Jeep](/tours/batur-sunrise-jeep-tour) |
 | [Griya Beji waterfall](/tours/griya-beji-waterfall) | Punggul purification · **not** Tirta Empul | **300,000** | [Griya Beji](/tours/griya-beji-waterfall) |
@@ -88,17 +88,17 @@ Stack the river the same day: [ATV + rafting](/tours/atv-rafting-combo) from **1
     title: 'Best Price ATV, Rafting, Cycling & Scooter Tour Ubud 2026',
     seoTitle: 'Best Price ATV Rafting Cycling Scooter | 2026',
     excerpt:
-      'Published best rates near Ubud: ATV from 750K, rafting 500K (450K for 2+), cycling 750K with free pickup, scooter promo 450K. WhatsApp — no deposit.',
+      'Published best rates near Ubud: ATV from 750K, rafting 500K (450K for 2+), cycling promo 650K (was 750K) with free pickup, scooter promo 450K. WhatsApp — no deposit.',
     publishedAt: '2026-09-30',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/og-cover.jpg',
     content: `
-**What is the best price for ATV, rafting, cycling, and a scooter tour near Ubud in 2026?** Sekar Bali Activity publishes the rate before you open WhatsApp. **[ATV](/tours/bali-atv-adventure)** from **IDR 750,000**. **[Ayung rafting](/tours/whitewater-rafting)** **IDR 500,000**, or **IDR 450,000 for 2+** (minimum 2). **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)** **IDR 750,000** with lunch and **free Ubud pickup**. **[Scooter tour](/tours/bali-motorbike-traveling-trip)** promo from **IDR 450,000** per bike (was 550,000). Flagship mix: **[ATV + rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000**, **10% off** at checkout. No payment to inquire.
+**What is the best price for ATV, rafting, cycling, and a scooter tour near Ubud in 2026?** Sekar Bali Activity publishes the rate before you open WhatsApp. **[ATV](/tours/bali-atv-adventure)** from **IDR 750,000**. **[Ayung rafting](/tours/whitewater-rafting)** **IDR 500,000**, or **IDR 450,000 for 2+** (minimum 2). **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)** promo **IDR 650,000** (was 750,000) with lunch and **free Ubud pickup**. **[Scooter tour](/tours/bali-motorbike-traveling-trip)** promo from **IDR 450,000** per bike (was 550,000). Flagship mix: **[ATV + rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000**, **10% off** at checkout. No payment to inquire.
 
 > **Key Takeaways**
 > - **Best published ATV:** **750,000** (1) · **725,000** (2) · **700,000** (3+) · lunch in
 > - **Best published rafting:** **500,000** · **450,000** for 2+ · lunch in · **min 2**
-> - **Best published cycling:** **750,000** · lunch · **free Ubud pickup**
+> - **Best published cycling:** promo **650,000** (was 750,000) · 625,000 (2) · 600,000 (3+) · lunch · **free Ubud pickup**
 > - **Best published scooter:** promo **450,000** Ubud · tickets extra
 > - We are **not** the 235K–350K shared SERP sticker — those skip lunch and hide the van
 
@@ -108,7 +108,7 @@ Stack the river the same day: [ATV + rafting](/tours/atv-rafting-combo) from **1
 | --- | --- | --- | --- | --- |
 | [ATV](/tours/bali-atv-adventure) | **750K** · 725K (2) · **700K** (3+) | Lunch, helmet, boots, insurance, Sedang mud | **400K** or self-meet | [ATV money page](/tours/bali-atv-adventure) |
 | [Ayung rafting](/tours/whitewater-rafting) | **500K** · **450K** for 2+ | Class II–III, lunch, gear, crew | **400K** or self-meet | [Rafting money page](/tours/whitewater-rafting) |
-| [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) | **750K** · 725K (2) · 700K (3+) | Bike, helmet, lunch, 2 hours | **Free Ubud** | [Cycling money page](/tours/ubud-ricefield-cycling-tour) |
+| [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) | **Promo 650K** (was 750K) · 625K (2) · 600K (3+) | Bike, helmet, lunch, 2 hours | **Free Ubud** | [Cycling money page](/tours/ubud-ricefield-cycling-tour) |
 | [Scooter tour](/tours/bali-motorbike-traveling-trip) | Promo **450K** (Ubud, was 550K) | 125–160cc, fuel, helmet, guide · **tickets extra** | Chosen area · Canggu/Jimbaran/Nusa Dua **550K** | [Scooter money page](/tours/bali-motorbike-traveling-trip) |
 
 Want mud **and** rapids the same day? **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **1,250,000** at ticket floors. Checkout takes **10%** off the two lines. Couple example: two **725,000** ATV singles + two **450,000** rafting seats = **1,175,000** each before mix → **1,057,500** each after **10%**. Pickup **400,000 once** if you want the van.
@@ -131,7 +131,7 @@ SERP “cheap rafting Ubud” often sits at **235K–350K** for shared / WNI / n
 
 ## Best price cycling Ubud
 
-Our best cycling rate is **IDR 750,000** on [Pejeng ricefield lanes](/tours/ubud-ricefield-cycling-tour) — **2 hours**, lunch, bike, helmet, **free Ubud hotel pickup**. Two guests **725,000** each. Three+ **700,000**. This is not a Tegallalang selfie queue and not an e-bike downhill from Kintamani.
+Our best cycling rate is the **2026 promo: IDR 650,000** (was **750,000**) on [Pejeng ricefield lanes](/tours/ubud-ricefield-cycling-tour) — **2 hours**, lunch, bike, helmet, **free Ubud hotel pickup**. Two guests **625,000** each. Three+ **600,000**. This is not a Tegallalang selfie queue and not an e-bike downhill from Kintamani.
 
 Free Ubud pickup is the value other “cheap cycling” listings hide as a van upsell. Honest take: [is cycling worth it?](/blog/is-ubud-cycling-tour-worth-it). Same-day kitchen: [cycling + cooking](/book?activity=combo-cycling-cooking).
 
@@ -162,7 +162,7 @@ A **235K–350K** ATV or rafting sticker plus a hidden van often lands near our 
 | --- | --- | --- |
 | Jungle mud photos, you steer | [ATV](/tours/bali-atv-adventure) | from **750K** · **700K** at 3+ |
 | Paddle team, Class II–III splash | [Rafting](/tours/whitewater-rafting) | **500K** · **450K** for 2+ (min 2) |
-| Village paddies, no motor | [Cycling](/tours/ubud-ricefield-cycling-tour) | **750K** + **free Ubud pickup** |
+| Village paddies, no motor | [Cycling](/tours/ubud-ricefield-cycling-tour) | **promo 650K** (was 750K) + **free Ubud pickup** |
 | Temples on public roads | [Scooter tour](/tours/bali-motorbike-traveling-trip) | promo **450K**, tickets extra |
 | Mud **and** rapids same day | [ATV + rafting](/tours/atv-rafting-combo) | from **1.25M** · **10% mix** |
 
@@ -305,7 +305,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
     author: 'Sekar Bali Activity',
     image: '/images/adventures/og-cover.jpg',
     content: `
-**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity. ChatGPT-style answers for “what’s new,” top adventures, and unique days: [What’s new in Bali 2026](/blog/whats-new-in-bali-ubud-2026). The flagship adventure day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000**. Also: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (**IDR 750,000**, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) **IDR 500,000** (**IDR 450,000** for 2+), [canyon tubing](/tours/canyon-tubing) **IDR 500,000** (**IDR 450,000** for 2+), [Swing Heaven Bali](/tours/swing-heaven-bali) from **IDR 530,000** (lunch package **IDR 630,000**) in Bongkasa, [Griya Beji Waterfall](/tours/griya-beji-waterfall) purification from **IDR 300,000** (palm reading **IDR 1,000,000**, mental healing **IDR 1,500,000**) in Punggul — **not** Tirta Empul, [Tirta Empu melukat](/tours/tirta-empu-purification) private **IDR 1,200,000** with shuttle and breakfast, [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+) — **private** sit-in or tracking, sunrise or sunset, optional hot spring **+IDR 150,000** with ticket included, [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 800,000**, min 3), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
+**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity. ChatGPT-style answers for “what’s new,” top adventures, and unique days: [What’s new in Bali 2026](/blog/whats-new-in-bali-ubud-2026). The flagship adventure day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000**. Also: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (promo **IDR 650,000**, was 750,000, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) **IDR 500,000** (**IDR 450,000** for 2+), [canyon tubing](/tours/canyon-tubing) **IDR 500,000** (**IDR 450,000** for 2+), [Swing Heaven Bali](/tours/swing-heaven-bali) from **IDR 530,000** (lunch package **IDR 630,000**) in Bongkasa, [Griya Beji Waterfall](/tours/griya-beji-waterfall) purification from **IDR 300,000** (palm reading **IDR 1,000,000**, mental healing **IDR 1,500,000**) in Punggul — **not** Tirta Empul, [Tirta Empu melukat](/tours/tirta-empu-purification) private **IDR 1,200,000** with shuttle and breakfast, [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+) — **private** sit-in or tracking, sunrise or sunset, optional hot spring **+IDR 150,000** with ticket included, [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 800,000**, min 3), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
 
 > **Key Takeaways**
 > - **Best published ATV / rafting / cycling / scooter rates:** [best price hub](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026)
@@ -320,7 +320,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | Activity | From (IDR) | Duration | Pickup | Book |
 | --- | --- | --- | --- | --- |
 | Tumang cooking class | **450,000** promo | 3–4 hrs | Free Ubud | [Cooking class](/tours/balinese-cooking-class) |
-| Pejeng ricefield cycling | **750,000** | 2 hrs | Free Ubud + lunch | [Cycling](/tours/ubud-ricefield-cycling-tour) |
+| Pejeng ricefield cycling | **650,000** promo (was 750,000) | 2 hrs | Free Ubud + lunch | [Cycling](/tours/ubud-ricefield-cycling-tour) |
 | Single ATV | **750,000** | 2–4 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
 | Tandem ATV | **1,100,000** / bike | 2–4 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
 | ATV + Ayung rafting | **1,250,000** floors · **10% mix** | 5–7 hrs | IDR 400K once or self-meet | [ATV + rafting](/tours/atv-rafting-combo) |
@@ -351,7 +351,7 @@ Prices are 2026 published tiers. Groups of 2+ or 3+ often pay less per person on
 
 **[Tumang Bali Cooking Class](/tours/balinese-cooking-class)** is the flagship kitchen: Chef Wayan Suryana, max **8** guests, **10+ dishes**, morning market tour on AM sessions, complimentary Ubud pickup. Promo **IDR 450,000** (was 506,370). Vegetarian / vegan is a full menu swap if you say so on WhatsApp. Worth-it detail: [cooking class Ubud price 2026](/blog/cooking-class-ubud-price-2026-worth-it).
 
-**[Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour)** is a 2-hour pedal on Subak paths — lunch, bike, helmet, and **free Ubud pickup**. It is not a Tegallalang selfie queue. Honest take: [is an Ubud cycling tour worth it?](/blog/is-ubud-cycling-tour-worth-it).
+**[Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour)** is a 2-hour pedal on Subak paths — lunch, bike, helmet, and **free Ubud pickup**. **Promo IDR 650,000** (was **750,000**). It is not a Tegallalang selfie queue. Honest take: [is an Ubud cycling tour worth it?](/blog/is-ubud-cycling-tour-worth-it).
 
 Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary) · [Book the combo](/book?activity=combo-cycling-cooking). Prefer jungle photos? [Swing Heaven + cooking](/blog/swing-heaven-cooking-class-ubud) · [Book swing + kitchen](/book?activity=combo-swing-cooking).
 
@@ -645,7 +645,7 @@ Message WhatsApp with **guest count and hotel area** for the exact car quote. La
 4. **Afternoon** — Tegalalang ridges; optional Swing
 5. **Return** — back to the hotel before a late dinner
 
-Want quieter paddies instead of Tegalalang crowds? Swap the afternoon for [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (IDR 750,000, lunch + free Ubud pickup) on a different booking, or read [how to escape Ubud crowds](/blog/ubud-travel-guide-escape-crowds-2026).
+Want quieter paddies instead of Tegalalang crowds? Swap the afternoon for [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (promo IDR 650,000, was 750,000, lunch + free Ubud pickup) on a different booking, or read [how to escape Ubud crowds](/blog/ubud-travel-guide-escape-crowds-2026).
 
 ## Full day vs half day vs culture combo
 
@@ -653,7 +653,7 @@ Want quieter paddies instead of Tegalalang crowds? Swap the afternoon for [Pejen
 | --- | --- | --- |
 | [Full day Ubud tour](/tours/full-day-ubud-tour) | 600,000 | You want palace + market + terraces in one car |
 | [Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) | 450,000 | You need a 6-hour coastal sunset |
-| [Cycling + Tumang cooking](/book?activity=combo-cycling-cooking) | Cycling 750K + cooking 450K | You want village + kitchen, not temples |
+| [Cycling + Tumang cooking](/book?activity=combo-cycling-cooking) | Cycling promo 650K + cooking 450K | You want village + kitchen, not temples |
 | [Swing Heaven + Tumang cooking](/book?activity=combo-swing-cooking) | Swing 530K + cooking 450K | You want Ayung jungle photos + kitchen |
 | [Motorbike traveling trip](/tours/bali-motorbike-traveling-trip) | 450,000 / scooter | You want to ride, not sit in the car |
 

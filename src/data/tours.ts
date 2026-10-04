@@ -1318,10 +1318,10 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
     isTopPick: true,
     pickup: "Free Ubud-area hotel pickup",
     duration: "2 Hours",
-    basePrice: 750000,
-    seoTitle: "Best Price Cycling Ubud | 750K Free Pickup",
+    basePrice: 650000,
+    seoTitle: "Promo Cycling Ubud | 650K · Was 750K",
     seoDescription:
-      "Best published Pejeng cycling rate: IDR 750K with lunch and free Ubud pickup. Quiet Subak lanes, not Tegallalang. WhatsApp.",
+      "Pejeng cycling promo IDR 650K (was 750K) with lunch and free Ubud pickup. Quiet Subak lanes, not Tegallalang. WhatsApp.",
     heroImage: {
       url: "/images/cycling/rice-field-bikes.jpg",
       alt: "Rice paddy cycling tour through Pejeng village terraces near Ubud",
@@ -1356,7 +1356,7 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
         alt: "Lunch included on the Ubud ricefield cycling tour",
       },
     ],
-    shortDescription: "Authentic 2-hour Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Small-group village bike tour from IDR 750K with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
+    shortDescription: "Authentic 2-hour Ubud countryside cycling tour through rice paddies and Pejeng village paths — rice harvesting, Balinese home visit, wood carving studio, and lunch included. Promo IDR 650K (was 750K) with free Ubud hotel pickup. Pair with an afternoon Tumang Bali Cooking Class for a full culture day.",
     fullDescription: `**Ubud Ricefield & Village Cycling Tour**
 
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
@@ -1371,6 +1371,8 @@ Enter a real Balinese family house and see daily local life up close. Visit a lo
 
 ### Lunch Included
 Enjoy a free lunch at a chill local village restaurant serving authentic Balinese food — included in your package.
+
+**2026 cycling promo:** **IDR 650,000** per person (was **IDR 750,000**). Two guests **IDR 625,000** each. Three or more **IDR 600,000**. Lunch, bike, helmet, and **free Ubud pickup** stay in the promo.
 
 After the tour we drop you back at your Ubud hotel.
 
@@ -1449,7 +1451,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
         id: "faq-ubud-cyc-1",
         question: "How much is the Ubud rice paddy cycling tour?",
         answer:
-          "IDR 750,000 per person in 2026 (IDR 725,000 for 2 guests, IDR 700,000 for 3+) for a 2-hour guided Pejeng village / ricefield ride, including bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
+          "Promo IDR 650,000 per person in 2026 (was IDR 750,000). Two guests IDR 625,000 each, three+ IDR 600,000. 2-hour guided Pejeng village / ricefield ride including bike and helmet, lunch, insurance (ages 6–65), and free hotel pickup and drop-off in the Ubud area.",
       },
       {
         id: "faq-ubud-cyc-2",

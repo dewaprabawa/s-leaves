@@ -44,7 +44,7 @@ Skip it if you only want a cheap tasting plate with no cooking, or you need hote
 
 Large hotel or restaurant classes often advertise a lower sticker and then add pickup, or they put 16–30 guests around one stove. Tumang’s promo is not the cheapest number in Ubud. It is the clearer number: **group cap, pickup rule, and dish count** are published before you WhatsApp.
 
-Pair the afternoon class with [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (IDR 750,000, lunch + free Ubud pickup) for a culture day — [full itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+Pair the afternoon class with [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (promo IDR 650,000, was 750,000, lunch + free Ubud pickup) for a culture day — [full itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary).
 
 ## Morning vs afternoon (price is the same)
 

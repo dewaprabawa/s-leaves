@@ -383,7 +383,7 @@ Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-moto
 | Tabanan dirt bike | **2,100,000** | KLX / X-Ride in rainforest | Quoted | [Tabanan](/tours/dirt-bike-tabanan-day-night) |
 | Kintamani dirt bike | **4,100,000** | KTM on lava | Quoted | [Kintamani](/tours/dirt-bike-kintamani-black-lava) |
 
-Culture days without engines: [Tumang cooking](/tours/balinese-cooking-class) promo **IDR 450,000** (free Ubud pickup), [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) **IDR 750,000**. Water: [rafting](/tours/whitewater-rafting) and [tubing](/tours/canyon-tubing) **IDR 500,000** (**450,000** for 2+). Full menu: [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026).
+Culture days without engines: [Tumang cooking](/tours/balinese-cooking-class) promo **IDR 450,000** (free Ubud pickup), [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) promo **IDR 650,000** (was 750,000). Water: [rafting](/tours/whitewater-rafting) and [tubing](/tours/canyon-tubing) **IDR 500,000** (**450,000** for 2+). Full menu: [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026).
 
 ## Competitor noise (what guests mix up)
 

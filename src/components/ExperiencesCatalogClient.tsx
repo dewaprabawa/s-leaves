@@ -144,8 +144,7 @@ export default function ExperiencesCatalogClient() {
   const [category, setCategory] = useState<TourCategoryId | "all">("all")
   const { items } = useConsultationInterests()
 
-  // Nudge the floating AI Assistant above the generic mobile WhatsApp bar.
-  // When a consultation list exists, the shared tray replaces that bar.
+  // Mark the generic mobile WhatsApp bar so the consultation tray can sit above it.
   useEffect(() => {
     if (items.length > 0) {
       document.documentElement.classList.remove("has-mobile-book-bar")

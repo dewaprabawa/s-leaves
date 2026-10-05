@@ -458,6 +458,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'griya-beji-waterfall': [
     {
+      title: 'Hotel pickup checker',
+      href: '/planners/hotel-pickup-checker',
+      blurb: 'Griya Beji pickup is IDR 400K or self-meet — not free Ubud cycling pickup.',
+    },
+    {
       title: 'Griya Beji Waterfall near Ubud',
       href: '/blog/griya-beji-waterfall-ubud-guide',
       blurb: 'Melukat 300K, palm 1M, healing 1.5M — Punggul prices and pickup.',

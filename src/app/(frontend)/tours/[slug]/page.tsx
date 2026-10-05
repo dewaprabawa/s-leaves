@@ -53,6 +53,12 @@ import {
   MOTORBIKE_UBUD_LIST_IDR,
 } from "@/data/motorbikeTrip"
 import { ORIGIN_MARKET_ARTICLE_SLUG, ORIGIN_TOURIST_TYPES } from "@/data/originMarkets"
+import {
+  GRIYA_BEJI_ADMISSION_INTL_IDR,
+  GRIYA_BEJI_HEALING_IDR,
+  GRIYA_BEJI_PALM_READING_IDR,
+  GRIYA_BEJI_PURIFICATION_IDR,
+} from "@/data/griyaBeji"
 
 type Props = {
   params: Promise<{ slug: string }>
@@ -92,6 +98,10 @@ function isCyclingTour(tour: Tour) {
 
 function isRaftingTour(tour: Tour) {
   return tour.slug === "whitewater-rafting"
+}
+
+function isGriyaTour(tour: Tour) {
+  return tour.slug === "griya-beji-waterfall"
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -186,7 +196,7 @@ function buildTourSchema(tour: Tour) {
   const isoDuration = durationToIso(tour.duration)
   const base = {
     "@context": "https://schema.org",
-    "@type": cooking || jeep || isMotorbikeTour(tour) || isRaftingTour(tour) ? (["TouristTrip", "Product"] as const) : "TouristTrip",
+    "@type": cooking || jeep || isMotorbikeTour(tour) || isRaftingTour(tour) || isGriyaTour(tour) ? (["TouristTrip", "Product"] as const) : "TouristTrip",
     "@id": `${SITE_URL}/tours/${tour.slug}#trip`,
     name: tour.title,
     description: cooking
@@ -216,6 +226,8 @@ function buildTourSchema(tour: Tour) {
             ? ["Couples", "Families", "Culture travelers", "Spiritual travelers"]
           : isMotorbikeTour(tour)
             ? ["Couples", "Friends", "Scooter riders", "Photographers", ...ORIGIN_TOURIST_TYPES]
+          : isGriyaTour(tour)
+            ? ["Couples", "Families", "Culture travelers", "Spiritual travelers"]
           : ["Couples", "Families", "Adventure seekers"],
     provider: { "@id": `${SITE_URL}/#organization` },
     areaServed: {
@@ -230,6 +242,8 @@ function buildTourSchema(tour: Tour) {
             ? "Tampaksiring Tirta Empul or Pura Beji, Gianyar, Bali"
           : isMotorbikeTour(tour)
             ? "Ubud, Kintamani, North, South and East Bali"
+          : isGriyaTour(tour)
+            ? "Punggul, Abiansemal, Ubud, Bali"
           : tour.area ?? "Ubud, Bali",
     },
     ...(tour.venue
@@ -399,6 +413,71 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  if (isGriyaTour(tour)) {
+    return {
+      ...base,
+      touristType: ["Couples", "Families", "Culture travelers", "Spiritual travelers"],
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(GRIYA_BEJI_PURIFICATION_IDR),
+        highPrice: String(GRIYA_BEJI_HEALING_IDR),
+        priceCurrency: "IDR",
+        offerCount: 5,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Waterfall purification (melukat)",
+            price: String(GRIYA_BEJI_PURIFICATION_IDR),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+            description: "Per person · offerings, prayer, spring-fed pool · gate admission extra",
+          },
+          {
+            "@type": "Offer",
+            name: "Palm reading",
+            price: String(GRIYA_BEJI_PALM_READING_IDR),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+            description: "Per person · hands + birth date · book ahead",
+          },
+          {
+            "@type": "Offer",
+            name: "Mental healing therapy",
+            price: String(GRIYA_BEJI_HEALING_IDR),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+            description: "Per person · guided relaxation · not a medical clinic",
+          },
+          {
+            "@type": "Offer",
+            name: "International admission",
+            price: String(GRIYA_BEJI_ADMISSION_INTL_IDR),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+            description: "Extra at the gate · domestic IDR 20,000",
+          },
+          {
+            "@type": "Offer",
+            name: "Hotel pickup (optional)",
+            price: String(PICKUP_FEE_IDR),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+            description: "Once per booking · or self-meet at Jl. Mawar, Desa Punggul",
+          },
+        ],
+      },
+    }
+  }
+
   if (isRaftingTour(tour)) {
     const [raftList, raftTwoPlus] = TIER_PRICES_IDR.rafting
     return {
@@ -533,6 +612,7 @@ function buildTourWebPageSchema(tour: Tour) {
   if (isJeepTour(tour)) return buildJeepWebPageSchema(tour)
   if (isMotorbikeTour(tour)) return buildMotorbikeWebPageSchema(tour)
   if (isRaftingTour(tour)) return buildRaftingWebPageSchema(tour)
+  if (isGriyaTour(tour)) return buildGriyaWebPageSchema(tour)
 
   const significantLink = [
     tour.slug === GIRLS_TRIP_SLUG ? undefined : `${SITE_URL}/book?activity=${tour.slug}`,
@@ -722,6 +802,54 @@ function buildRaftingWebPageSchema(tour: Tour) {
   }
 }
 
+function buildGriyaWebPageSchema(tour: Tour) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}/tours/${tour.slug}#webpage`,
+    url: `${SITE_URL}/tours/${tour.slug}`,
+    name: tour.seoTitle ?? tour.title,
+    description: tour.seoDescription ?? tour.shortDescription,
+    keywords: getTourPageKeywords(tour.slug)?.join(", "),
+    dateModified: ACTIVITY_GEO_UPDATED,
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/tours/${tour.slug}#trip` },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: [".griya-geo-tldr", ".griya-geo-answer", ".activity-geo-tldr", ".geo-tldr"],
+    },
+    significantLink: [
+      `${SITE_URL}/book?activity=${tour.slug}`,
+      `${SITE_URL}/tours/tirta-empu-purification`,
+      `${SITE_URL}/tours/balinese-cooking-class`,
+      `${SITE_URL}/planners/hotel-pickup-checker`,
+      `${SITE_URL}/blog/griya-beji-waterfall-ubud-guide`,
+      `${SITE_URL}/blog/griya-beji-vs-tirta-empul-melukat`,
+      `${SITE_URL}/blog/palm-reading-bali-griya-beji`,
+      `${SITE_URL}/blog/mental-healing-bali-griya-beji`,
+      `${SITE_URL}/llms.txt`,
+      `${SITE_URL}/pricing.md`,
+    ],
+  }
+}
+
+function buildGriyaQaSchemas(tour: Tour) {
+  const geo = getActivityGeo(tour.slug)
+  if (!geo) return []
+  return geo.faqs.map((item, index) => ({
+    "@context": "https://schema.org",
+    "@type": "Question",
+    "@id": `${SITE_URL}/tours/${tour.slug}#qa-${index + 1}`,
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+      url: `${SITE_URL}/tours/${tour.slug}#${tour.slug}-geo`,
+    },
+  }))
+}
+
 function buildRaftingQaSchemas(tour: Tour) {
   const geo = getActivityGeo(tour.slug)
   if (!geo) return []
@@ -862,6 +990,15 @@ export default async function TourPage({ params }: Props) {
             />
           ))
         : null}
+      {isGriyaTour(tour)
+        ? buildGriyaQaSchemas(tour).map((qa) => (
+            <script
+              key={qa["@id"]}
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
+            />
+          ))
+        : null}
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <Link
@@ -952,6 +1089,12 @@ export default async function TourPage({ params }: Props) {
                       {formatIdr(TIER_PRICES_IDR["rafting"][0])} / person ·{" "}
                       {formatIdr(TIER_PRICES_IDR["rafting"][1])} for 2+ (min 2)
                     </span>
+                  ) : isGriyaTour(tour) ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      {formatIdr(GRIYA_BEJI_PURIFICATION_IDR)} melukat ·{" "}
+                      {formatIdr(GRIYA_BEJI_PALM_READING_IDR)} palm ·{" "}
+                      {formatIdr(GRIYA_BEJI_HEALING_IDR)} healing
+                    </span>
                   ) : isMotorbikeTour(tour) ? (
                     <span className="text-sm font-bold text-brand-green">
                       <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
@@ -1029,6 +1172,8 @@ export default async function TourPage({ params }: Props) {
                       ? "About the Bali motorbike / scooter tour"
                       : isRaftingTour(tour)
                         ? "About Ayung River rafting near Ubud"
+                        : isGriyaTour(tour)
+                          ? "About Griya Beji Waterfall near Ubud"
                         : "About This Experience"}
               </h2>
               <article className="prose prose-lg prose-slate max-w-none prose-headings:font-display prose-headings:text-brand-green prose-headings:uppercase prose-a:text-brand-green">

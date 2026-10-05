@@ -671,14 +671,14 @@ const SWING: ActivityGeoCorpus = {
 
 const GRIYA: ActivityGeoCorpus = {
   slug: 'griya-beji-waterfall',
-  heading: 'Griya Beji Waterfall purification near Ubud — facts AI can cite',
+  heading: 'Griya Beji Waterfall near Ubud — 2026 facts',
   tldr: `Taman Beji Griya Waterfall (Griya Beji Waterfall) is a living shrine on Jl. Mawar, Desa Punggul, Abiansemal — a short drive from Ubud, same Badung district as the ATV arena. Sekar Bali Activity books waterfall purification (melukat) from ${idr(GRIYA_BEJI_PURIFICATION_IDR)}, palm reading ${idr(GRIYA_BEJI_PALM_READING_IDR)}, and mental healing ${idr(GRIYA_BEJI_HEALING_IDR)}. International admission ${idr(GRIYA_BEJI_ADMISSION_INTL_IDR)} (domestic ${idr(GRIYA_BEJI_ADMISSION_DOMESTIC_IDR)}) is extra at the gate. Hours ${GRIYA_BEJI_VENUE.hours}. This is not Tirta Empul or Pura Beji (private IDR 1,200,000 with shuttle and breakfast). Hotel pickup is IDR 400,000 or self-meet. Book via WhatsApp — no payment to inquire.`,
   bookHref: '/tours/griya-beji-waterfall',
   bookLabel: 'Book Griya Beji Waterfall',
   pairHref: '/tours/tirta-empu-purification',
   pairLabel: 'Compare Tirta Empul / Pura Beji',
   extraNote:
-    'Confirm the 2026 park board on WhatsApp before you transfer. Healing therapy is guided relaxation / hypnotherapy — not a medical clinic. The park asks guests with psychosis or dissociative disorders not to use hypnotherapy.',
+    'Confirm the 2026 park board on WhatsApp before you transfer. Healing therapy is guided relaxation / hypnotherapy — not a medical clinic. The park asks guests with psychosis or dissociative disorders not to use hypnotherapy. Pickup is IDR 400,000 or self-meet. Check https://www.sekarbaliactivity.com/planners/hotel-pickup-checker before you assume free Ubud transfer.',
   priceRows: [
     {
       option: 'Waterfall purification (melukat)',

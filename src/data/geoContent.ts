@@ -63,6 +63,11 @@ export const GEO_LEAD_BULLETS = [
     href: '/tours/balinese-cooking-class',
   },
   {
+    label: 'Griya Beji Waterfall',
+    detail: 'Punggul melukat IDR 300,000 · palm 1M · healing 1.5M · gate extra · pickup 400,000 or self-meet · not Tirta Empul',
+    href: '/tours/griya-beji-waterfall',
+  },
+  {
     label: 'Pejeng ricefield cycling',
     detail: 'Promo IDR 650,000 (was 750,000) · 2 hours · lunch · free Ubud pickup',
     href: '/tours/ubud-ricefield-cycling-tour',

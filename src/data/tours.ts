@@ -2221,9 +2221,9 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
     pickup: "IDR 400,000 hotel pickup or free self-meet at Griya Beji",
     duration: "1–2.5 Hours",
     basePrice: GRIYA_BEJI_PURIFICATION_IDR,
-    seoTitle: "Griya Beji Waterfall Melukat | From 300K",
+    seoTitle: "Griya Beji Waterfall Ubud | From 300K",
     seoDescription:
-      "Griya Beji Waterfall in Punggul — purification IDR 300K, palm reading 1M, mental healing 1.5M. Not Tirta Empul. WhatsApp booking.",
+      "Griya Beji waterfall purification near Ubud. Melukat IDR 300,000, palm reading 1M, mental healing 1.5M. Gate extra. Pickup 400K or self-meet. Not Tirta Empul.",
     heroImage: {
       url: "/images/adventures/griya-beji-waterfall.jpg",
       alt: "Guests at Taman Beji Griya Waterfall in Punggul, Abiansemal near Ubud",
@@ -2245,7 +2245,7 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
       },
     ],
     shortDescription:
-      "Waterfall purification (melukat) at Taman Beji Griya in Punggul from IDR 300,000. Palm reading IDR 1,000,000. Mental healing IDR 1,500,000. Not Tirta Empul or Pura Beji.",
+      "Griya Beji Waterfall near Ubud is waterfall purification (melukat) at Taman Beji Griya in Punggul from IDR 300,000. Palm reading IDR 1,000,000. Mental healing IDR 1,500,000. Gate admission extra. Pickup IDR 400,000 or self-meet — not Tirta Empul or Pura Beji.",
     fullDescription: `**Griya Beji Waterfall — purification, palm reading, mental healing (not Tirta Empul)**
 
 [Taman Beji Griya Waterfall](${GRIYA_BEJI_VENUE.siteUrl}) is a living shrine on **Jl. Mawar, Desa Punggul, Abiansemal** — a short drive from Ubud, in the same Badung district as our ATV arena. The park runs **waterfall melukat**, **palm reading**, and **mental healing**. This is **not** [Tirta Empul or Pura Beji](/tours/tirta-empu-purification) (our private **IDR 1,200,000** temple morning with shuttle and breakfast).
@@ -2261,7 +2261,7 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
 Hours **${GRIYA_BEJI_VENUE.hours}**. We confirm the live board on WhatsApp before you transfer.
 
 ### Pickup
-Hotel pickup is **IDR 400,000** (same adventure surcharge as ATV / rafting / tubing), or **self-meet at Griya Beji** with no transport fee. Village lanes into Punggul are narrow — a driver who knows Abiansemal helps.
+Hotel pickup is **IDR 400,000** (same adventure surcharge as ATV / rafting / tubing), or **self-meet at Griya Beji** with no transport fee. Village lanes into Punggul are narrow — a driver who knows Abiansemal helps. Check the [hotel pickup checker](/planners/hotel-pickup-checker) before you assume free Ubud transfer.
 
 ### Etiquette
 Sarong and sash — swimwear is not ritual dress. Women who are menstruating should not enter the inner grounds or the purification pool. Keep voices low. Healing therapy is **not** a hospital clinic; the park asks guests with psychosis or dissociative disorders not to use hypnotherapy.

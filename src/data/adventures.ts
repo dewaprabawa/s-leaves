@@ -41,7 +41,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     ],
     duration: "2 hours",
     image: "/images/adventures/cycling.jpg",
-    imageAlt: "Rice paddy and village cycling tour through green Ubud countryside",
+    imageAlt: "Group cycling through Pejeng rice terraces on the Ubud ricefield village tour",
     tourSlug: "ubud-ricefield-cycling-tour",
     times: ["13:30"],
     minPax: 1,

@@ -1350,12 +1350,12 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
       "Pejeng cycling promo IDR 650K (was 750K) with lunch and free Ubud pickup. Quiet Subak lanes, not Tegallalang. WhatsApp.",
     heroImage: {
       url: "/images/cycling/rice-field-bikes.jpg",
-      alt: "Rice paddy cycling tour through Pejeng village terraces near Ubud",
+      alt: "Group cycling through Pejeng rice terraces on the Ubud ricefield village tour",
     },
     gallery: [
       {
         url: "/images/cycling/rice-field-bikes.jpg",
-        alt: "Rice paddy cycling tour through Pejeng village terraces near Ubud",
+        alt: "Group cycling through Pejeng rice terraces on the Ubud ricefield village tour",
       },
       {
         url: "/images/cycling/rider.jpg",

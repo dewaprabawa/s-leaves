@@ -14,14 +14,14 @@ const adventureOffers: AdventureOffer[] = [
     description:
       "Private Bali quad bike adventure at All New Bali Adventure arena through jungle trails and muddy tracks. All-inclusive: lunch, boot shoes, helmet, insurance, and optional Wos River tubing combo.",
     price: "750000",
-    image: "/images/adventures/atv-adventure.jpg",
+    image: "/images/adventures/atv-mud-river-splash.jpg",
   },
   {
     name: "Tandem ATV Ride",
     description:
       "Private tandem ATV tour at All New Bali Adventure for couples and friends. Share a complete quad bike experience with lunch, safety gear, insurance, and optional river tubing.",
     price: "1100000",
-    image: "/images/adventures/atv-adventure.jpg",
+    image: "/images/adventures/atv-arena-quad-fleet.jpg",
   },
   {
     name: "Ayung River Whitewater Rafting near Ubud",

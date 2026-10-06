@@ -64,6 +64,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'bali-atv-adventure': [
     {
+      title: 'Muddy quad bike Ubud',
+      href: '/blog/ubud-muddy-quad-bike-atv-2026',
+      blurb: 'Jungle puddles, river crossings, arena boots — photos from the Sedang track.',
+    },
+    {
+      title: 'Good price ATV / quad bike',
+      href: '/blog/good-price-atv-quad-bike-ubud-2026',
+      blurb: 'Published 750K / 725K / 700K with lunch — not a 235K sticker.',
+    },
+    {
       title: 'Best price ATV, rafting, cycling & scooter',
       href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
       blurb: 'Published ATV 750/725/700K next to rafting, cycling, and scooter promo.',

@@ -2,6 +2,213 @@
 
 export const ACTIVITY_CLUSTER_POSTS = [
   {
+    slug: 'ubud-muddy-quad-bike-atv-2026',
+    title: 'Muddy Quad Bike Ubud 2026: Jungle Mud & River Crossings',
+    seoTitle: 'Muddy Quad Bike Ubud | From 750K',
+    excerpt:
+      'Muddy quad bike near Ubud at All New Bali Adventure — jungle puddles, river crossings, arena boots. From IDR 750K. Not a cave park. WhatsApp — no deposit.',
+    publishedAt: '2026-10-06',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-mud-river-splash.jpg',
+    content: `
+**Is the Ubud ATV a muddy quad bike ride?** Yes. At **All New Bali Adventure** in Sedang, the quad is a **muddy sport ATV**: jungle puddles, soft red-brown soil, and **river crossings on the bike**. Arena **boot shoes** and a helmet are included. **[Quad bike](/tours/bali-atv-adventure)** and **ATV** are the same machine. **From IDR 750,000** (1) · **725,000** (2) · **700,000** (3+). Tandem **IDR 1,100,000**. Lunch and insurance (ages 6–65) sit on the ticket. Pickup is **IDR 400,000** or free self-meet. This is **not** Gorilla Cave, Kuber tunnel, or a waterfall-cave park.
+
+> **Key Takeaways**
+> - **Muddy quad bike Ubud** = Sedang jungle mud + river crossings — you will get dirty
+> - Arena **rubber boots** and helmet are fitted at the gazebo before the briefing
+> - Photos: splash river crossing, rider POV on a puddled track, black sport-quad fleet
+> - **From 750K** · lunch in · pickup **400K** or self-meet
+> - We are **not** a cave/tunnel park — honest compare: [mud vs cave](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel)
+> - Book: [ATV money page](/tours/bali-atv-adventure) · good published rate: [good price ATV](/blog/good-price-atv-quad-bike-ubud-2026)
+
+## What is a muddy quad bike ride near Ubud?
+
+**Answer:** A **muddy quad bike** here is a sit-on **four-wheel sport ATV** on a jungle track with standing water, soft soil, and shallow river crossings. You steer after an English briefing. The pace follows the least experienced rider.
+
+You do **not** need a motocross clutch or dirt-bike balance. Tandem is available if one guest prefers not to drive. The ride is **2–4 hours** including briefing, track time, and lunch.
+
+This is the product guests mean when they type **muddy ATV Ubud**, **mud bike Bali**, or **jungle mud quad**. It is **not** a paved scooter day and **not** a sit-in [UTV hour](/blog/bali-atv-vs-utv-buggy-2026) in Pemogan.
+
+## What does the Sedang mud track actually look like?
+
+**Answer:** Expect a canopy lane with **puddles you ride through**, not around — then a **splash crossing** where the bike throws brown water.
+
+![Rider on a green ATV splashing through muddy water near Ubud](/images/adventures/atv-mud-river-splash.jpg)
+
+The crossing in that photo is the signature muddy-quad moment: yellow helmet, green sport ATV, brown splash. Wear clothes you can get wet. A waterproof phone case helps.
+
+![Rider POV of a muddy jungle ATV track near Ubud](/images/adventures/atv-mud-jungle-pov.jpg)
+
+From the handlebars you follow the bike ahead through a wet cut in the trees. Guides pick the line. First-timers stay on four wheels the whole time — [beginner notes](/blog/bali-atv-for-beginners-first-time-guide).
+
+Rain makes the puddles deeper. Dry days still leave muddy ruts. We do **not** sell a “clean clothes ATV.” If you want temples on public roads, book the [scooter tour](/tours/bali-motorbike-traveling-trip) instead.
+
+## Where do you start? Arena, boots, briefing
+
+**Answer:** Self-meet at **All New Bali Adventure, Jl. Raya Krasan, Sedang** — **not** the Banjar Kenderan office pin. Hotel pickup is **IDR 400,000 once**.
+
+![Sport ATV quad bikes lined up at All New Bali Adventure in Sedang](/images/adventures/atv-arena-quad-fleet.jpg)
+
+The fleet is sit-on sport quads (black and marked bikes), not a sit-in buggy. Single or tandem is a booking choice, not a different park.
+
+![ATV arena briefing base with rubber boots at All New Bali Adventure](/images/adventures/atv-arena-briefing-base.jpg)
+
+The gazebo, scooters, and **rubber boots on the bench** are the start of the day: change into arena boots, helmet fit, English safety briefing, then the track. Bring a dry set of clothes. Towels and changing space are at the arena.
+
+Pin and “do not go to the office” notes: [All New Bali Adventure location](/blog/bali-atv-all-new-bali-adventure-location-guide).
+
+## Muddy ATV vs cave and waterfall parks
+
+**Answer:** Our muddy quad is **jungle mud and river crossings**. **Gorilla Cave**, **Kuber tunnel**, and **waterfall-cave ATV** are other operators. We include **lunch**. We do **not** sell those cave tickets.
+
+| You typed | What we run | What we do not sell |
+| --- | --- | --- |
+| Muddy quad bike / muddy ATV | Sedang jungle puddles + river crossings | — |
+| Cave / tunnel ATV | — | Kuber Premium, Dragon Cave |
+| Gorilla Cave + lunch | Lunch **yes** · cave **no** | Alasan Gorilla Cave |
+| ATV waterfall | Water is river crossings; canyon falls sit on **rafting** | Waterfall-cave ATV parks |
+
+Cave taxonomy: [jungle mud vs cave/tunnel](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) · [ATV vs Kuber](/blog/bali-atv-vs-kuber-cave-2026). Want canyon waterfalls the same day? **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000** (rafting **min 2**, pickup **400K once**). Gentler water: [Wos tubing](/tours/canyon-tubing).
+
+## What to wear on a muddy quad bike
+
+**Answer:** Clothes that can get muddy and wet, closed shoes you can swap for arena boots, and a dry change for lunch.
+
+Bring:
+
+1. Quick-dry shirt / shorts you do not mind staining
+2. Spare dry clothes and flip-flops for after the track
+3. Sunscreen and a strap or case for your phone
+4. Cash only for extras — the ticket already includes lunch, helmet, boots, insurance
+
+Do **not** wear white linen you care about. Do **not** expect a cave-and-falls photo set.
+
+## How much is a muddy quad bike in Ubud in 2026?
+
+**Answer:** The muddy ride is the same published ATV ladder: **IDR 750,000** (1), **725,000** (2), **700,000** (3+). Tandem **IDR 1,100,000**. Lunch, helmet, boots, insurance included. Pickup **IDR 400,000** or self-meet. No free muddy quad.
+
+Full table: [quad biking price](/blog/ubud-quad-biking-price-2026) · published “good price” (not cheapest): [good price ATV Ubud](/blog/good-price-atv-quad-bike-ubud-2026) · calculator: [ATV price calculator](/planners/atv-price-calculator).
+
+We do not match **235K–450K** shared SERP stickers that skip lunch. Recommended by **96%** of travelers on the money page — we do not invent a review count or “best muddy ATV in Bali.”
+
+## How to book the muddy quad
+
+1. Open [Bali ATV Adventure](/tours/bali-atv-adventure)
+2. WhatsApp **date, guest count, single or tandem, hotel pin or self-meet**
+3. We confirm the published IDR — **no payment to inquire**
+4. Meet at All New Bali Adventure or add **400K** pickup
+
+Want mud then rapids? [ATV + rafting](/tours/atv-rafting-combo) from **1.25M**.
+
+**Ready?** Book the [muddy quad bike near Ubud](/tours/bali-atv-adventure) on WhatsApp.
+`,
+  },
+  {
+    slug: 'good-price-atv-quad-bike-ubud-2026',
+    title: 'Good Price ATV Quad Bike Ubud 2026: Published 750K–700K',
+    seoTitle: 'Good Price ATV Ubud | 750K · 700K',
+    excerpt:
+      'Good published ATV price near Ubud: 750K (1), 725K (2), 700K (3+). Lunch, boots, insurance. Not a 235K sticker. WhatsApp — no deposit.',
+    publishedAt: '2026-10-06',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-arena-briefing-base.jpg',
+    content: `
+**What is a good price for an ATV or quad bike near Ubud in 2026?** With Sekar Bali Activity the **good published rate** is **IDR 750,000** for one rider, **IDR 725,000** each for two singles, and **IDR 700,000** each for three or more at **All New Bali Adventure** in Sedang. Tandem is **IDR 1,100,000** for two on one bike. **Lunch, helmet, boot shoes, and insurance** are on the card. Hotel pickup is **IDR 400,000 once** or free self-meet. This is **not** the island-cheapest sticker and **not** a 235K–450K shared listing that skips lunch. Book: [ATV money page](/tours/bali-atv-adventure).
+
+> **Key Takeaways**
+> - **Good price ATV Ubud 2026:** **750K** (1) · **725K** (2) · **700K** (3+) · tandem **1.1M**
+> - **What’s in:** lunch, helmet, arena boots, insurance 6–65, English briefing, jungle mud track
+> - **Pickup is extra:** **400K** or free self-meet — printed as a separate line
+> - **Good ≠ cheapest.** We will not match a 235K SERP teaser
+> - Four-activity hub (ATV + rafting + cycling + scooter): [best published rates](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026)
+> - WhatsApp — **no payment to inquire**
+
+## What is a good price for ATV / quad bike near Ubud?
+
+**Answer:** A **good price** here means the **rate printed on the money page**, with lunch and gear, before you open WhatsApp — not the lowest number Google still indexes.
+
+**Quad bike** and **ATV** are the same product. If a listing is **235K–450K**, ask what was cut: lunch, boots, insurance, a packed van, or a different track. Our number sits in the mid band **on purpose**.
+
+“Best price” across four activities lives on the [ATV / rafting / cycling / scooter hub](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026). This page is **ATV-only**.
+
+## 2026 published ATV table (the good rate)
+
+| Package | Guests | Published IDR | In the ticket |
+| --- | --- | --- | --- |
+| Single ATV / quad | 1 | **750,000** | Lunch, helmet, boots, insurance, briefing |
+| Single ATV / quad | 2 | **725,000** each | Same |
+| Single ATV / quad | 3+ | **700,000** each | Best published single-bike tier |
+| Tandem ATV / quad | 2 on one bike | **1,100,000** | Same inclusions, one bike |
+| Hotel pickup | Optional | **400,000** once | Or free self-meet at Sedang |
+| Flagship ATV + rafting | Same day | from **1,250,000** | **10% mix** · rafting **min 2** |
+
+Two singles at the 2-guest tier are **IDR 1,450,000**. Tandem is cheaper **if** one guest is happy not to drive: [single vs tandem](/blog/tandem-atv-ubud-price). Run the math: [ATV price calculator](/planners/atv-price-calculator). Full ladder copy: [how much does ATV cost](/blog/how-much-does-atv-cost-bali-ubud-2026).
+
+**Book** when the group wants **published IDR + muddy photos**. We do not invent a 999K bundle or a free quad.
+
+## Why 235K–450K listings look cheaper
+
+**Answer:** Those stickers usually **skip lunch**, hide the van, or sit on a **different arena**. Add the missing lines and the gap shrinks.
+
+| Line | Our good published ATV | Typical cheap SERP sticker |
+| --- | --- | --- |
+| Ticket | **750K / 725K / 700K** | **~235K–450K** |
+| Lunch | **Included** | Often extra or skipped |
+| Boots + helmet | **Included** | Sometimes hire extra |
+| Pickup | **400K once** or self-meet | Often “free” then a van upsell |
+| Track | Sedang jungle mud + river crossings | Mixed / unnamed / cave parks |
+
+We will **not** match a 235K teaser. If you specifically need Gorilla Cave or a waterfall cave, that is another operator — [honest cave compare](/blog/bali-atv-vs-kuber-cave-2026). There is **no free quad biking Ubud** ride: [quad price page](/blog/ubud-quad-biking-price-2026).
+
+## When 700K is the good price
+
+**Answer:** Three or more **single** riders pay **IDR 700,000 each**. That is our best **published ATV** tier in 2026 — still lunch-in, still Sedang mud.
+
+Examples:
+
+- **Solo:** 750,000 + optional 400,000 pickup
+- **Couple, two singles:** 1,450,000 + optional 400,000 pickup
+- **Couple, tandem:** 1,100,000 + optional 400,000 pickup
+- **Four singles:** 2,800,000 + optional 400,000 pickup **once**
+
+Same-day river: **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **1.25M** at ticket floors, **10%** at checkout. Pickup stays **400K once**.
+
+## Good ATV price vs the four-activity hub
+
+**Answer:** Use **this page** to lock the **ATV / quad** number. Use the **hub** when you are choosing between mud, paddle, paddies, or a scooter.
+
+| If you want… | Good published IDR | Page |
+| --- | --- | --- |
+| Muddy quad, you steer | **750K** · **700K** at 3+ | [ATV](/tours/bali-atv-adventure) · this article |
+| Paddle team, Class II–III | **500K** · **450K** for 2+ (min 2) | [Rafting](/tours/whitewater-rafting) |
+| Village paddies, no motor | **Promo 650K** (was 750K) + **free Ubud pickup** | [Cycling](/tours/ubud-ricefield-cycling-tour) |
+| Temples on public roads | Promo **450K** / bike, tickets extra | [Scooter](/tours/bali-motorbike-traveling-trip) |
+
+Hub: [best price ATV, rafting, cycling, scooter](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026).
+
+## What the good price actually buys at the arena
+
+**Answer:** You are paying for a **named Sedang arena**, **boot shoes**, **lunch**, and a **WhatsApp total that matches the page** — not a mystery van.
+
+![ATV arena briefing base with rubber boots at All New Bali Adventure](/images/adventures/atv-arena-briefing-base.jpg)
+
+The gazebo, parked scooters, and rubber boots are the start of the paid morning. Track photos: [muddy quad bike Ubud](/blog/ubud-muddy-quad-bike-atv-2026).
+
+![Rider on a green ATV splashing through muddy water near Ubud](/images/adventures/atv-mud-river-splash.jpg)
+
+That splash is the product the 750K ticket is for. Recommended by **96%** of travelers on the money page. We do not claim “cheapest ATV in Bali.”
+
+## How to book the good published ATV rate
+
+1. Open [Bali ATV Adventure](/tours/bali-atv-adventure)
+2. WhatsApp **date, guest count, single or tandem, hotel pin**
+3. We reply with **750 / 725 / 700** plus pickup — **no deposit to ask**
+4. Optional: run [the calculator](/planners/atv-price-calculator) first
+
+**Ready?** Lock the [good price ATV / quad bike](/tours/bali-atv-adventure) on WhatsApp. Flagship mix: [ATV + rafting from 1.25M](/tours/atv-rafting-combo).
+`,
+  },
+  {
     slug: 'whats-new-in-bali-ubud-2026',
     title: "What's New in Bali 2026: Ubud Adventures We Can Book",
     seoTitle: "What's New in Bali 2026 | Ubud Adventures",
@@ -32,6 +239,8 @@ What we added or made bookable with a public IDR this year:
 | **Tandem ATV + rafting** (couple) | **2.0M** before mix · **1.8M** after 10% | [/blog/atv-tandem-rafting-ubud-2026](/blog/atv-tandem-rafting-ubud-2026) |
 | **ATV + Wos tubing** | Same 1.25M floors · gentler water · tubing lunch **not** in | [/book?combo=combo-atv-tubing](/book?combo=combo-atv-tubing) |
 | Published **best-price hub** | ATV 750K · rafting 500K/450K · cycling promo 650K (was 750K) free pickup · scooter promo 450K | [/blog/best-price-atv-rafting-cycling-scooter-ubud-2026](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026) |
+| **Muddy quad bike** photos | Jungle puddles + river crossings · arena boots | [/blog/ubud-muddy-quad-bike-atv-2026](/blog/ubud-muddy-quad-bike-atv-2026) |
+| **Good published ATV** (ATV-only) | 750K / 725K / 700K · lunch in · not a 235K sticker | [/blog/good-price-atv-quad-bike-ubud-2026](/blog/good-price-atv-quad-bike-ubud-2026) |
 
 What did **not** change: ATV still meets at **All New Bali Adventure, Sedang** — not the Banjar Kenderan office. Pickup on ATV / rafting / tubing is still **IDR 400,000** or self-meet. We still do **not** sell Jungle Buggies 3-lap, Gorilla Cave, or a free quad.
 
@@ -117,7 +326,7 @@ Want mud **and** rapids the same day? **[ATV + Ayung rafting](/tours/atv-rafting
 
 Our best ATV rate is the **published 3+ tier: IDR 700,000** per rider at [All New Bali Adventure](/tours/bali-atv-adventure) in Sedang — not a cave ticket. One rider pays **750,000**. Two singles pay **725,000** each. Tandem is **1,100,000** for two on one bike. Lunch is on the card. Pickup is **IDR 400,000 once** or free self-meet.
 
-Google “cheap ATV Ubud” still shows **~235K–450K** group quads. Those listings usually skip lunch, share a packed van, or sit on a different track. We will not match a 235K sticker. Full tiers: [ATV cost 2026](/blog/how-much-does-atv-cost-bali-ubud-2026). Sit-in hour instead: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026).
+Google “cheap ATV Ubud” still shows **~235K–450K** group quads. Those listings usually skip lunch, share a packed van, or sit on a different track. We will not match a 235K sticker. ATV-only good rate: [good price ATV Ubud](/blog/good-price-atv-quad-bike-ubud-2026). Full tiers: [ATV cost 2026](/blog/how-much-does-atv-cost-bali-ubud-2026). Sit-in hour instead: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026).
 
 **Book ATV** when you want jungle mud photos and a beginner briefing. WhatsApp **date, guest count, single or tandem, hotel pin**.
 
@@ -216,7 +425,7 @@ Full catalog: [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026). 
 | Hotel pickup | Optional | **400,000** once | Or free self-meet at Sedang |
 | Flagship ATV + rafting | Same day | from **1,250,000** | **10% mix** at checkout · rafting **min 2** |
 
-This is the published **Ubud quad bike adventure** rate — not a 235K–350K shared SERP sticker. Those listings usually skip lunch or hide the van. We do not claim cheapest. Full ATV ladder: [ATV cost 2026](/blog/how-much-does-atv-cost-bali-ubud-2026). Best-price hub: [ATV / rafting / cycling / scooter](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026).
+This is the published **Ubud quad bike adventure** rate — not a 235K–350K shared SERP sticker. Those listings usually skip lunch or hide the van. We do not claim cheapest. Full ATV ladder: [ATV cost 2026](/blog/how-much-does-atv-cost-bali-ubud-2026). ATV-only good rate: [good price ATV Ubud](/blog/good-price-atv-quad-bike-ubud-2026). Best-price hub: [ATV / rafting / cycling / scooter](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026). Track photos: [muddy quad bike Ubud](/blog/ubud-muddy-quad-bike-atv-2026).
 
 **Book:** open [ATV at All New Bali Adventure](/tours/bali-atv-adventure) and send **date, guest count, single or tandem, hotel pin**. No payment to inquire.
 

@@ -174,17 +174,29 @@ export const TOURS: Tour[] = [
     seoDescription:
       "All New ATV Bali from 750K. Lunch in. Pickup 400K or self-meet. Not the location-guide URL. WhatsApp — no deposit.",
     heroImage: {
-      url: "/images/adventures/atv-adventure.jpg",
-      alt: "ATV ride at All New Bali Adventure near Ubud through jungle trails",
+      url: "/images/adventures/atv-mud-river-splash.jpg",
+      alt: "Muddy quad bike river crossing at All New Bali Adventure near Ubud",
     },
     gallery: [
       {
-        url: "/images/adventures/atv-adventure.jpg",
-        alt: "Quad bike ATV ride through Bali jungle trails",
+        url: "/images/adventures/atv-mud-river-splash.jpg",
+        alt: "Rider on a green ATV splashing through muddy water near Ubud",
       },
       {
-        url: "/images/adventures/canyon-tubing.jpg",
-        alt: "River tubing through crystal-clear Bali waters",
+        url: "/images/adventures/atv-mud-jungle-pov.jpg",
+        alt: "Rider POV of a muddy jungle ATV track near Ubud",
+      },
+      {
+        url: "/images/adventures/atv-arena-quad-fleet.jpg",
+        alt: "Sport ATV quad bikes lined up at All New Bali Adventure in Sedang",
+      },
+      {
+        url: "/images/adventures/atv-arena-briefing-base.jpg",
+        alt: "ATV arena briefing base with rubber boots at All New Bali Adventure",
+      },
+      {
+        url: "/images/adventures/atv-adventure.jpg",
+        alt: "Quad bike ATV ride through Bali jungle trails",
       },
     ],
     shortDescription:
@@ -211,6 +223,8 @@ Searches for **Ubud ATV Quad Bike adventure with Gorilla Cave and lunch** or **A
 Want even more adventure? The flagship same-day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — mud then Class II–III. From **IDR 1,250,000** at ticket floors; **10% mix** at checkout. Gentler water: [Wos River tubing](/tours/canyon-tubing). After the mud track, cool off on the river.
 
 ### Plan your ATV day
+- [Muddy quad bike Ubud](/blog/ubud-muddy-quad-bike-atv-2026) — jungle puddles, river crossings, boots, photos
+- [Good price ATV Ubud](/blog/good-price-atv-quad-bike-ubud-2026) — published 750K / 725K / 700K, not a 235K sticker
 - [Ubud quad biking price 2026](/blog/ubud-quad-biking-price-2026) — price, reviews, waterfall, Gorilla Cave (honest)
 - [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) — single IDR 750K vs tandem IDR 1.1M
 - [Single vs tandem ATV](/blog/tandem-atv-ubud-price) — who should share, two-single vs one-bike math
@@ -343,7 +357,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-8",
         question: "Is this a muddy sport ATV / mud bike ride?",
         answer:
-          "Yes — the All New Bali Adventure track includes jungle mud, soft soil, and river crossings on a 4-wheel sport ATV (quad). You stay on a stable four-wheel machine; no clutch or motocross bike balance required.",
+          "Yes — the All New Bali Adventure track includes jungle mud, soft soil, and river crossings on a 4-wheel sport ATV (quad). You stay on a stable four-wheel machine; no clutch or motocross bike balance required. Arena boots are included. Full muddy-ride notes: https://www.sekarbaliactivity.com/blog/ubud-muddy-quad-bike-atv-2026",
       },
       {
         id: "faq-atv-9",
@@ -375,6 +389,12 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         answer:
           "Guests book this as a beginner-friendly Ubud quad bike adventure. The money page shows Recommended by 96% of travelers. We do not invent a review count. Lunch, helmet, boots, and insurance are on the card. WhatsApp — no payment to inquire.",
       },
+      {
+        id: "faq-atv-14",
+        question: "What is a good price for ATV or quad bike near Ubud in 2026?",
+        answer:
+          "Our published good ATV price is IDR 750,000 for one rider, 725,000 each for two singles, and 700,000 each for three+. Lunch, helmet, boots, and insurance are included at All New Bali Adventure. Pickup is IDR 400,000 or self-meet. We do not match 235K–450K shared stickers that skip lunch. Full note: https://www.sekarbaliactivity.com/blog/good-price-atv-quad-bike-ubud-2026",
+      },
     ],
     reviews: [],
   },
@@ -393,13 +413,17 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     seoDescription:
       "Book ATV + Ayung rafting near Ubud. ATV from 750K + rafting 500K (450K for 2+). 10% mix at checkout. Pickup 400K or self-meet. WhatsApp.",
     heroImage: {
-      url: "/images/adventures/atv-adventure.jpg",
-      alt: "ATV jungle ride near Ubud paired with Ayung River whitewater rafting",
+      url: "/images/adventures/atv-mud-river-splash.jpg",
+      alt: "Muddy ATV near Ubud paired with Ayung River whitewater rafting",
     },
     gallery: [
       {
-        url: "/images/adventures/atv-adventure.jpg",
-        alt: "Quad bike ATV ride through Bali jungle trails",
+        url: "/images/adventures/atv-mud-river-splash.jpg",
+        alt: "Muddy quad bike river crossing before Ayung rafting near Ubud",
+      },
+      {
+        url: "/images/adventures/atv-mud-jungle-pov.jpg",
+        alt: "Rider POV of the Sedang jungle mud ATV track",
       },
       {
         url: "/images/adventures/rafting.jpg",

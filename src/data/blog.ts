@@ -2034,7 +2034,7 @@ At **All New Bali Adventure** — our activity base on Jl. Raya Krasan, Sedang, 
 - A stable 4-wheel sport ATV (no clutch or motocross balance needed)
 - Optional **Wos River tubing** immediately after the track for a land-and-water day
 
-This style suits riders who want mud, splash, and a "got dirty and loved it" photo at the end, plus the option to keep the adventure going in the water. See the full [ATV Ubud guide](/blog/bali-atv-tour-ubud-guide) and [ATV + Wos River tubing combo](/blog/atv-river-tubing-wos-river-bali).
+This style suits riders who want mud, splash, and a "got dirty and loved it" photo at the end, plus the option to keep the adventure going in the water. See the full [ATV Ubud guide](/blog/bali-atv-tour-ubud-guide), the [muddy quad bike photos](/blog/ubud-muddy-quad-bike-atv-2026), and [ATV + Wos River tubing combo](/blog/atv-river-tubing-wos-river-bali).
 
 ## Track Style 2: Cave & Tunnel Routes (Other Ubud Operators)
 

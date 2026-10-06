@@ -105,7 +105,7 @@ export const FEATURED_COMBOS: FeaturedCombo[] = [
       'Sedang ATV then Wos sit-on-tube. From IDR 1,250,000 at list (750K + 500K). 10% mix at checkout. Pickup IDR 400,000 once or self-meet. Tubing lunch not included.',
     primaryId: 'single-atv',
     mixIds: ['canyon-tubing'],
-    image: '/images/adventures/atv-adventure.jpg',
+    image: '/images/adventures/atv-mud-river-splash.jpg',
     duration: 'Half day',
   },
   {
@@ -116,7 +116,7 @@ export const FEATURED_COMBOS: FeaturedCombo[] = [
       'All three: ATV trails, canyon tubing, and whitewater rafting. Best for guests who want everything in one day.',
     primaryId: 'single-atv',
     mixIds: ['canyon-tubing', 'rafting'],
-    image: '/images/adventures/atv-adventure.jpg',
+    image: '/images/adventures/atv-arena-quad-fleet.jpg',
     duration: 'Full day',
   },
 ]

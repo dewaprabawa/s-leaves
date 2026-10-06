@@ -56,6 +56,8 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'ATV ride / quad bike Ubud', href: '/tours/bali-atv-adventure' },
   { label: 'ATV prices near Ubud (2026)', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
   { label: 'Ubud quad biking price 2026', href: '/blog/ubud-quad-biking-price-2026' },
+  { label: 'Muddy quad bike Ubud', href: '/blog/ubud-muddy-quad-bike-atv-2026' },
+  { label: 'Good price ATV Ubud', href: '/blog/good-price-atv-quad-bike-ubud-2026' },
   { label: 'Tandem ATV Ubud price', href: '/blog/tandem-atv-ubud-price' },
   { label: 'All New Bali Adventure arena', href: '/blog/bali-atv-all-new-bali-adventure-location-guide' },
   { label: 'Whitewater rafting', href: '/tours/whitewater-rafting' },

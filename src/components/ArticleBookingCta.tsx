@@ -244,6 +244,22 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/atv-rafting-combo',
     secondaryLabel: 'Add Ayung rafting',
   },
+  'ubud-muddy-quad-bike-atv-2026': {
+    headline: 'Book the muddy quad bike near Ubud',
+    body: 'Jungle puddles and river crossings at All New Bali Adventure from IDR 750,000. Arena boots, lunch, helmet. Pickup 400K or self-meet. No deposit.',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'Book muddy ATV',
+    secondaryHref: '/tours/atv-rafting-combo',
+    secondaryLabel: 'Add Ayung rafting',
+  },
+  'good-price-atv-quad-bike-ubud-2026': {
+    headline: 'Lock the published ATV rate on WhatsApp',
+    body: 'Good published ATV: 750K (1) · 725K (2) · 700K (3+). Lunch and boots in. Not a 235K sticker. Pickup 400K or self-meet.',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'Book ATV at 750K',
+    secondaryHref: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
+    secondaryLabel: 'See all four best rates',
+  },
   'tandem-atv-ubud-price': {
     headline: 'Book single or tandem ATV on WhatsApp',
     body: 'Say 1 or 2 riders + hotel. Single from IDR 750,000 · tandem IDR 1,100,000 for two. Pickup IDR 400,000 or self-meet. No payment to inquire.',

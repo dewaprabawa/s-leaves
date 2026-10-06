@@ -45,6 +45,8 @@ const HIGH_BLOG_SLUGS = new Set([
   'ubud-ricefield-cycling-tour-guide-2026',
   'how-much-does-atv-cost-bali-ubud-2026',
   'ubud-quad-biking-price-2026',
+  'ubud-muddy-quad-bike-atv-2026',
+  'good-price-atv-quad-bike-ubud-2026',
   'atv-rafting-combo-ubud-2026',
   'atv-tandem-rafting-ubud-2026',
   'atv-river-tubing-wos-river-bali',

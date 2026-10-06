@@ -40,7 +40,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
       "Free Ubud hotel pickup & insurance (ages 6–65)",
     ],
     duration: "2 hours",
-    image: "/images/adventures/cycling.jpg",
+    image: "/images/adventures/cycling-pejeng-group.jpg",
     imageAlt: "Group cycling through Pejeng rice terraces on the Ubud ricefield village tour",
     tourSlug: "ubud-ricefield-cycling-tour",
     times: ["13:30"],

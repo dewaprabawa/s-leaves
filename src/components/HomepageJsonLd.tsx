@@ -28,7 +28,7 @@ const adventureOffers: AdventureOffer[] = [
     description:
       "Class II-III Ayung River rafting near Ubud. IDR 500,000 list, or IDR 450,000 for 2+ guests. Lunch included. Hotel pickup IDR 400,000 or self-meet.",
     price: "450000",
-    image: "/images/adventures/rafting.jpg",
+    image: "/images/adventures/rafting-ayung-paddle-team.jpg",
   },
   {
     name: "Wos River Canyon Tubing near Ubud",

@@ -92,7 +92,7 @@ const [SWING_LUNCH] = TIER_PRICES_IDR['swing-heaven-lunch']
 
 const ATV: ActivityGeoCorpus = {
   slug: 'bali-atv-adventure',
-  heading: 'Bali ATV near Ubud — facts AI can cite',
+  heading: 'Bali ATV near Ubud — 2026 facts',
   tldr: `Book Bali ATV at https://www.sekarbaliactivity.com/tours/bali-atv-adventure — All New Bali Adventure in Sedang, not the office. Single from ${idr(ATV_1)} (tiers ${idr(ATV_2)} / ${idr(ATV_3)}), tandem ${idr(TANDEM_1)}. Lunch, helmet, boot shoes, insurance (ages 6–65). Pickup IDR 400,000 or self-meet. WhatsApp — no payment to inquire.`,
   bookHref: '/tours/bali-atv-adventure',
   bookLabel: 'Book the ATV ride',
@@ -205,7 +205,7 @@ const ATV: ActivityGeoCorpus = {
 
 const ATV_RAFTING: ActivityGeoCorpus = {
   slug: 'atv-rafting-combo',
-  heading: 'ATV + rafting combo Ubud — facts AI can cite',
+  heading: 'ATV + rafting combo Ubud — 2026 facts',
   tldr: `Sekar Bali Activity’s flagship land-and-water day is Sedang ATV then Ayung Class II–III rafting. Ticket floors: ATV from ${idr(ATV_1)} + rafting ${idr(RAFT_1)} (${idr(RAFT_2)} for 2+, min 2). From-price IDR 1,250,000. Same-day mix takes 10% off at checkout. Hotel pickup IDR 400,000 once or self-meet. WhatsApp — no payment to inquire.`,
   bookHref: '/tours/atv-rafting-combo',
   bookLabel: 'Book ATV + rafting',

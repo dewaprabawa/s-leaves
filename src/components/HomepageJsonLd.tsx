@@ -35,7 +35,7 @@ const adventureOffers: AdventureOffer[] = [
     description:
       "Wos River canyon tubing near Ubud. IDR 500,000 list, or IDR 450,000 for 2+ guests. Lunch not included. Hotel pickup IDR 400,000 or self-meet.",
     price: "450000",
-    image: "/images/adventures/canyon-tubing.jpg",
+    image: "/images/adventures/canyon-tubing-waterfall-drop.jpg",
   },
   {
     name: "Ubud Ricefield & Village Cycling Tour",

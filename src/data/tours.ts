@@ -426,8 +426,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         alt: "Rider POV of the Sedang jungle mud ATV track",
       },
       {
-        url: "/images/adventures/rafting.jpg",
-        alt: "Whitewater rafting through a Bali jungle river canyon",
+        url: "/images/adventures/rafting-ayung-paddle-team.jpg",
+        alt: "Ayung River rafting paddle team hitting Class II–III rapids near Ubud",
       },
     ],
     shortDescription:
@@ -895,14 +895,18 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
     seoDescription:
       "Ayung River rafting near Ubud. Class II–III. IDR 500,000, or 450,000 for 2+ (min 2). Lunch and gear included. Pickup 400K or self-meet. Book on WhatsApp.",
     heroImage: {
-      url: "/images/adventures/rafting.jpg",
-      alt: "Whitewater rafting through a Bali jungle river canyon",
-      width: 1376,
-      height: 768,
+      url: "/images/adventures/rafting-ayung-paddle-team.jpg",
+      alt: "Ayung River rafting paddle team hitting Class II–III rapids near Ubud",
+      width: 1600,
+      height: 1063,
     },
     gallery: [
       {
-        url: "/images/adventures/rafting.jpg",
+        url: "/images/adventures/rafting-ayung-paddle-team.jpg",
+        alt: "Ayung River rafting paddle team hitting Class II–III rapids near Ubud",
+      },
+      {
+        url: "/images/adventures/rafting-ayung-previous.jpg",
         alt: "Rafting crew navigating Bali river rapids",
       },
     ],

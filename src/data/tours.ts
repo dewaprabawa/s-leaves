@@ -1032,12 +1032,16 @@ Book this page when you only want the river. The flagship land-and-water day is 
     seoDescription:
       "Wos River canyon tubing Ubud — IDR 500,000, or 450,000 for 2+. Life jacket, guide, insurance. Lunch not included. Pickup IDR 400K. Book WhatsApp.",
     heroImage: {
-      url: "/images/adventures/canyon-tubing.jpg",
-      alt: "Canyon tubing through crystal-clear Bali waters",
+      url: "/images/adventures/canyon-tubing-waterfall-drop.jpg",
+      alt: "Wos River canyon tubing group dropping a small waterfall near Ubud",
     },
     gallery: [
       {
-        url: "/images/adventures/canyon-tubing.jpg",
+        url: "/images/adventures/canyon-tubing-waterfall-drop.jpg",
+        alt: "Wos River canyon tubing group dropping a small waterfall near Ubud",
+      },
+      {
+        url: "/images/adventures/canyon-tubing-canyon-walls.jpg",
         alt: "Floating through a hidden Bali canyon on an inflatable tube",
       },
     ],

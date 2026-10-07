@@ -576,7 +576,7 @@ Beginner briefing on both tickets. No ATV licence. Rafting wants basic swimming 
       },
     ],
     shortDescription:
-      "Your private 4×4 to Mount Batur near Kintamani — sit-in or tracking (jeep + guided trek), sunrise or sunset, minimum 2 guests. Sit-in IDR 2,000,000 for 2 guests. Tracking IDR 1,800,000 for 2 guests. 3+ IDR 750,000 per person. Meal included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included.",
+      "Your private 4×4 to Mount Batur near Kintamani — sit-in or tracking (jeep + guided trek), sunrise or sunset, minimum 2 guests. Sit-in IDR 2,000,000 for 2 guests. Tracking IDR 1,800,000 for 2 guests. 3+ IDR 750,000 per person. Meal included. Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000 (ticket included). Hotel pickup included.",
     fullDescription: `**What is the Private Mount Batur Jeep Tour?** It is **your private** 4×4 jeep on Mount Batur’s volcanic tracks near Kintamani — about 1,350 metres above sea level — for **sunrise or sunset** over **Lake Batur** and **Mount Agung**. **Minimum 2 guests.** Choose **private jeep** (stay seated, no hike) or **private tracking jeep** (jeep plus a guided trek to the viewpoint). Sit-in is **IDR 2,000,000 for 2 guests** (IDR 1,000,000 per person). Tracking is **IDR 1,800,000 for 2 guests** (IDR 900,000 per person). **IDR 750,000 per person** once 3+ guests share one jeep, sit-in or tracking. A local driver, hot drink, **sit-down meal**, and hotel pickup are included. Food is not cooked inside the 4×4 — the meal is after the viewpoint.
 
 ### Private jeep or tracking jeep
@@ -604,7 +604,8 @@ Choose **sunrise** or **sunset** in the booking form — sit-in or tracking, min
 | Pickup | 02:00–03:00 AM | 14:30–15:30 |
 | Duration | ~6–7 hours | ~4–5 hours |
 | Price | Sit-in or tracking 2-guest package · meal included | Sit-in or tracking 2-guest package · meal included |
-| Hot spring add-on | Optional +IDR 150,000 (ticket included) | Optional +IDR 150,000 (ticket included) |
+| Batur hot spring | Optional +IDR 150,000 (ticket included) | Optional +IDR 150,000 (ticket included) |
+| Toya Devasya | Optional +IDR 300,000 (ticket included) | Optional +IDR 300,000 (ticket included) |
 
 Confirm the exact window on WhatsApp with your hotel area.
 
@@ -614,8 +615,15 @@ We collect you from your hotel. At the Kintamani base camp you transfer into a r
 ### Viewpoint
 Watch the light change over Lake Batur and Mount Agung from the crater-rim viewpoint. A sit-down **meal is included** after you come down — on private jeep and tracking jeep, sunrise or sunset.
 
-### Optional Batur hot spring
-Add a soak at a Batur / Toya Devasya hot spring after sunrise or sunset for **IDR 150,000 per person** on top of the jeep rate. **The hot-spring entrance ticket is included** in that add-on — you do not pay a second ticket at the gate. Choose it in the booking form on any jeep variant.
+### Optional hot spring
+After sunrise or sunset you can add either:
+
+| Option | Price | Ticket |
+| --- | --- | --- |
+| Batur natural hot spring | **+IDR 150,000** per person | Included |
+| **Toya Devasya** | **+IDR 300,000** per person | Included |
+
+Choose one in the booking form on any jeep variant — you do not pay a second ticket at the gate.
 
 ### Optional Coffee Plantation Stop
 On the way back we can swing by a local Kintamani coffee plantation for a short, no-obligation stop. For a dedicated ethical tasting near Ubud, see [Luwak Coffee Plantation (Umah Kuno)](/tours/luwak-coffee-plantation). Full sunrise itinerary: [Batur sunrise jeep guide 2026](/blog/mount-batur-sunrise-jeep-tour-guide-2026).
@@ -640,7 +648,8 @@ A private jeep costs the same whether two or three people ride, so the per-perso
 | --- | --- | --- |
 | 2 (minimum) | 2,000,000 total · 1,000,000 pp · meal included | 1,800,000 total · 900,000 pp · meal included |
 | 3+ | 750,000 pp · meal included | 750,000 pp · meal included |
-| Hot spring add-on (any jeep) | +150,000 (ticket included) | +150,000 (ticket included) |
+| Batur hot spring (any jeep) | +150,000 (ticket included) | +150,000 (ticket included) |
+| Toya Devasya (any jeep) | +300,000 (ticket included) | +300,000 (ticket included) |
 | Private Kintamani Day (jeep or tracking) | 1,300,000 promo (was 1,450,000) · meal included | 1,300,000 promo (was 1,450,000) · meal included |
 
 Hotel pickup and drop-off are built into those rates (not the IDR 400,000 ATV/rafting pickup add-on). Message WhatsApp with your guest count for an exact quote.
@@ -650,7 +659,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
     highlights: [
       "Private jeep — your vehicle, your group (sit-in or tracking)",
       "Sunrise or sunset over Lake Batur and Mount Agung",
-      "Optional Batur hot spring +IDR 150,000 (ticket included)",
+      "Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000 (ticket included)",
       "Private Kintamani Day promo IDR 1,300,000 (meal + hot spring + Umah Kuno + rice terrace)",
       "Hot drink en route · sit-down meal included (jeep and tracking)",
       "Per-person price drops the more guests share a jeep",
@@ -661,14 +670,14 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
       "Hot drink on the way",
       "Kintamani / Mount Batur area entrance fee",
       "Guided trek on the tracking jeep variant",
-      "Hot-spring entrance ticket when you add the +IDR 150,000 option, or on Private Kintamani Day",
+      "Hot-spring entrance ticket when you add Batur (+IDR 150,000) or Toya Devasya (+IDR 300,000), or on Private Kintamani Day",
       "Umah Kuno coffee tasting and rice-terrace stop on Private Kintamani Day",
       "Sit-down meal after the viewpoint (private jeep, tracking, sunrise, sunset, and Kintamani Day)",
       "Insurance for ages 6–65",
     ],
     notIncluded: [
       "Food cooked or served inside the 4×4 — the included meal is after the viewpoint",
-      "Hot spring unless you add the +IDR 150,000 option (ticket is then included)",
+      "Hot spring unless you add Batur (+IDR 150,000) or Toya Devasya (+IDR 300,000) — ticket is then included",
       "Coffee plantation purchases (the stop itself is free to visit)",
       "Personal expenses",
       "Gratuities",
@@ -726,7 +735,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
         time: "After viewpoint (Optional)",
         title: "Batur Hot Spring",
         description:
-          "Add Toya Devasya / Batur natural hot spring after sunrise or sunset. Entrance ticket is included when you take the +IDR 150,000 per person option.",
+          "Add Batur natural hot spring (+IDR 150,000) or Toya Devasya (+IDR 300,000) after sunrise or sunset. Entrance ticket is included in either option.",
       },
       {
         id: "iti-jeep-7",
@@ -790,7 +799,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
         id: "faq-jeep-1",
         question: "How much does the private Mount Batur jeep cost?",
         answer:
-          "IDR 2,000,000 for 2 guests on sit-in private jeep (IDR 1,000,000 per person, minimum 2), or IDR 1,800,000 for 2 guests on tracking jeep (IDR 900,000 per person). IDR 750,000 per person for 3 or more guests on either variant, sunrise or sunset. Private jeep, driver, hotel pickup, a hot drink, and a sit-down meal are included. Optional Batur hot spring is +IDR 150,000 per person with the entrance ticket included. Message WhatsApp with your guest count for an exact quote.",
+          "IDR 2,000,000 for 2 guests on sit-in private jeep (IDR 1,000,000 per person, minimum 2), or IDR 1,800,000 for 2 guests on tracking jeep (IDR 900,000 per person). IDR 750,000 per person for 3 or more guests on either variant, sunrise or sunset. Private jeep, driver, hotel pickup, a hot drink, and a sit-down meal are included. Optional hot spring: Batur +IDR 150,000 or Toya Devasya +IDR 300,000 per person (ticket included). Message WhatsApp with your guest count for an exact quote.",
       },
       {
         id: "faq-jeep-2",
@@ -826,7 +835,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
         id: "faq-jeep-hs",
         question: "Can we add a Batur hot spring, and is the ticket included?",
         answer:
-          "Yes. Any jeep variant (private or tracking, sunrise or sunset) can add a Batur / Toya Devasya hot spring soak for IDR 150,000 per person on top of the jeep rate. The hot-spring entrance ticket is included in that add-on — you do not pay a second ticket at the gate.",
+          "Yes. Any jeep variant (private or tracking, sunrise or sunset) can add a Batur natural hot spring for IDR 150,000 per person, or Toya Devasya for IDR 300,000 per person, on top of the jeep rate. The entrance ticket is included in either add-on — you do not pay a second ticket at the gate.",
       },
       {
         id: "faq-jeep-4",

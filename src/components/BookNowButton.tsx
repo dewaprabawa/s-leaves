@@ -2,7 +2,11 @@
 
 import { useState } from "react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
-import { getListPrice, JEEP_HOT_SPRING_IDR } from "@/lib/pricing"
+import {
+  getListPrice,
+  JEEP_HOT_SPRING_IDR,
+  JEEP_TOYA_DEVASYA_IDR,
+} from "@/lib/pricing"
 import {
   SWING_HEAVEN_ADDONS,
   SWING_HEAVEN_LUNCH_PRICE_IDR,
@@ -18,9 +22,21 @@ import {
 const JEEP_HOT_SPRING_ADDON = {
   id: "hotspring",
   label: "Add Batur hot spring (ticket included)",
-  blurb: `Existing jeep price + IDR ${(JEEP_HOT_SPRING_IDR / 1000).toFixed(0)},000 per person. Toya Devasya / Batur entrance ticket is included — no second ticket at the gate.`,
+  blurb: `Existing jeep price + IDR ${(JEEP_HOT_SPRING_IDR / 1000).toFixed(0)},000 per person. Natural Batur hot-spring entrance ticket is included — no second ticket at the gate.`,
   perPerson: JEEP_HOT_SPRING_IDR,
 }
+
+const JEEP_TOYA_DEVASYA_ADDON = {
+  id: "toya-devasya",
+  label: "Add Toya Devasya hot spring (ticket included)",
+  blurb: `Existing jeep price + IDR ${(JEEP_TOYA_DEVASYA_IDR / 1000).toFixed(0)},000 per person. Toya Devasya entrance ticket is included — no second ticket at the gate.`,
+  perPerson: JEEP_TOYA_DEVASYA_IDR,
+}
+
+const JEEP_HOT_SPRING_OPTIONS = [JEEP_HOT_SPRING_ADDON, JEEP_TOYA_DEVASYA_ADDON]
+
+const JEEP_HOT_SPRING_ADDONS_INTRO =
+  "Optional soak after sunrise or sunset: Batur natural hot spring +IDR 150,000, or Toya Devasya +IDR 300,000. Entrance ticket is included in each option — pick a count per guest."
 
 const JEEP_SITIN_BOOKING = {
   adultPrice: getListPrice("jeep-sunrise"),
@@ -28,7 +44,8 @@ const JEEP_SITIN_BOOKING = {
   minPax: 2,
   pickupIncluded: true as const,
   pricingActivityId: "jeep-sunrise",
-  optionalAddons: [JEEP_HOT_SPRING_ADDON],
+  optionalAddons: JEEP_HOT_SPRING_OPTIONS,
+  optionalAddonsIntro: JEEP_HOT_SPRING_ADDONS_INTRO,
 }
 
 const JEEP_TRACKING_BOOKING = {
@@ -37,7 +54,8 @@ const JEEP_TRACKING_BOOKING = {
   minPax: 2,
   pickupIncluded: true as const,
   pricingActivityId: "jeep-tracking",
-  optionalAddons: [JEEP_HOT_SPRING_ADDON],
+  optionalAddons: JEEP_HOT_SPRING_OPTIONS,
+  optionalAddonsIntro: JEEP_HOT_SPRING_ADDONS_INTRO,
 }
 
 export const BOOKABLE_TOURS: TourConfig[] = [

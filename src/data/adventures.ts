@@ -136,12 +136,12 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     tagline: "Private · tracking · sunrise or sunset",
     paxLabel: "Per person (private · min 2 · meal included)",
     description:
-      "Your private 4×4 to Mount Batur near Kintamani — sunrise or sunset, minimum 2 guests. Sit-in private jeep IDR 2,000,000 for 2 guests, or tracking jeep (jeep + guided trek) IDR 1,800,000 for 2 guests. Sit-down meal included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Hotel pickup included. 3+ IDR 750,000 per person.",
+      "Your private 4×4 to Mount Batur near Kintamani — sunrise or sunset, minimum 2 guests. Sit-in private jeep IDR 2,000,000 for 2 guests, or tracking jeep (jeep + guided trek) IDR 1,800,000 for 2 guests. Sit-down meal included. Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000 (ticket included). Hotel pickup included. 3+ IDR 750,000 per person.",
     highlights: [
       "Private jeep — your vehicle, your group",
       "Sunrise or sunset over Lake Batur and Mount Agung",
       "Sit-down meal included",
-      "Optional hot spring +IDR 150,000 · ticket included · hotel pickup",
+      "Optional Batur +IDR 150K or Toya Devasya +IDR 300K · ticket included",
     ],
     duration: "Sunrise 6–7 hrs · Sunset ~4–5 hrs",
     image: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",

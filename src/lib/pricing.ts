@@ -71,8 +71,10 @@ export function getCyclingPromoDisplay() {
   }
 }
 
-/** Per-person add-on on any jeep variant (private or tracking, sunrise or sunset). Ticket included. */
+/** Per-person Batur natural hot spring add-on on any jeep variant. Ticket included. */
 export const JEEP_HOT_SPRING_IDR = 150_000
+/** Per-person Toya Devasya hot spring add-on on any jeep variant. Ticket included. */
+export const JEEP_TOYA_DEVASYA_IDR = 300_000
 
 export const CHILD_PRICE_IDR: Partial<Record<ActivityId, number>> = {
   'single-atv': 700_000,

@@ -778,13 +778,15 @@ export function BookingPopup({
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
                   Sit-in private jeep · min 2 · {formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR)} for 2 guests
                   ({formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR / 2)} each) · 3+ IDR 750,000 each · sit-down
-                  meal included. Optional hot spring +IDR 150,000 (ticket included).
+                  meal included. Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000
+                  (ticket included).
                 </p>
               ) : activeTour.pricingActivityId === 'jeep-tracking' ? (
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
                   Tracking jeep (4×4 + guided trek) · min 2 · {formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR)}{' '}
                   for 2 guests ({formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR / 2)} each) · 3+ IDR 750,000
-                  each · sit-down meal included. Optional hot spring +IDR 150,000 (ticket included).
+                  each · sit-down meal included. Optional Batur hot spring +IDR 150,000 or Toya
+                  Devasya +IDR 300,000 (ticket included).
                 </p>
               ) : null}
             </div>
@@ -844,7 +846,7 @@ export function BookingPopup({
               <p className="text-brand-green font-bold text-sm mb-1">Optional add-on</p>
               <p className="text-brand-green-light text-xs mb-3 leading-relaxed">
                 {activeTour.optionalAddonsIntro ??
-                  "Add a Batur / Toya Devasya hot spring soak after sunrise or sunset. The entrance ticket is included in the +IDR 150,000 — you do not pay a second ticket at the gate."}
+                  "Optional soak after sunrise or sunset: Batur natural hot spring +IDR 150,000, or Toya Devasya +IDR 300,000. Entrance ticket is included in each option — pick a count per guest."}
               </p>
               <div className="space-y-2">
                 {activeTour.optionalAddons.map((opt) => {

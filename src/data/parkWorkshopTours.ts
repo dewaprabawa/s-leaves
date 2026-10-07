@@ -95,9 +95,11 @@ function ticketTour(opts: {
   activityOptions?: Tour["activityOptions"]
   /** Override the /images/adventures/{slug}.jpg filename when slugs were merged. */
   imageSlug?: string
+  /** Hero / gallery alt text when the title alone is too thin. */
+  imageAlt?: string
 }): Tour {
   const basePrice = money(opts.sourcePrice)
-  const image = hero(opts.imageSlug ?? opts.slug, opts.title)
+  const image = hero(opts.imageSlug ?? opts.slug, opts.imageAlt ?? opts.title)
   return {
     id: opts.slug,
     title: opts.title,
@@ -507,7 +509,9 @@ Package bikes: **KLX 150** or **Yamaha X-Ride**. Bigger enduro bikes quoted. 4â€
   }),
   ticketTour({
     slug: "silver-making-class",
-    imageSlug: "silver-making-workshop",
+    imageSlug: "silver-making-torch-tweezers",
+    imageAlt:
+      "Torch flame and tweezers soldering silver beads and a ring at an Ubud silver-making class",
     title: "Silver Making Class",
     seoTitle: "Ubud Silver Making Class | From IDR 650K",
     seoDescription:

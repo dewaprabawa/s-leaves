@@ -22,6 +22,7 @@ function StarRow({ size }: { size: string }) {
 
 /**
  * Star social-proof badge for ATV and UTV buggy money pages / cards.
+ * Hero/card overlays stay compact so they do not block the photo.
  */
 export default function TravelerRecommendBadge({
   percent = TRAVELER_RECOMMEND_PERCENT,
@@ -33,11 +34,11 @@ export default function TravelerRecommendBadge({
   if (variant === "hero") {
     return (
       <div
-        className={`absolute left-3 top-3 z-10 max-w-[min(100%,18rem)] rounded-2xl bg-accent-gold px-3 py-2 text-white shadow-lg ring-2 ring-white/80 ${className}`}
+        className={`absolute left-2 top-2 z-10 max-w-[9.5rem] rounded-md bg-accent-gold/95 px-1.5 py-1 text-white shadow-md ring-1 ring-white/70 ${className}`}
         role="status"
       >
-        <StarRow size="h-3.5 w-3.5" />
-        <p className="mt-1 text-[11px] font-black uppercase leading-tight tracking-wide">
+        <StarRow size="h-2.5 w-2.5" />
+        <p className="mt-0.5 text-[8px] font-black uppercase leading-snug tracking-wide">
           {label}
         </p>
       </div>
@@ -47,11 +48,11 @@ export default function TravelerRecommendBadge({
   if (variant === "card") {
     return (
       <div
-        className={`absolute left-2.5 top-2.5 z-10 max-w-[11.5rem] rounded-xl bg-accent-gold px-2 py-1.5 text-white shadow-md ${className}`}
+        className={`absolute left-2 top-2 z-10 max-w-[8rem] rounded-md bg-accent-gold/95 px-1.5 py-1 text-white shadow-sm ${className}`}
         role="status"
       >
-        <StarRow size="h-3 w-3" />
-        <p className="mt-0.5 text-[9px] font-black uppercase leading-tight tracking-wide">
+        <StarRow size="h-2 w-2" />
+        <p className="mt-0.5 text-[7px] font-black uppercase leading-snug tracking-wide">
           {label}
         </p>
       </div>
@@ -60,10 +61,10 @@ export default function TravelerRecommendBadge({
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full bg-accent-gold px-3 py-1 text-[11px] font-black uppercase tracking-wide text-white shadow-sm ${className}`}
+      className={`inline-flex items-center gap-1 rounded-full bg-accent-gold px-2 py-0.5 text-[10px] font-black uppercase tracking-wide text-white shadow-sm ${className}`}
       role="status"
     >
-      <StarRow size="h-3 w-3" />
+      <StarRow size="h-2.5 w-2.5" />
       {label}
     </span>
   )

@@ -87,7 +87,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     pricingActivityId: "swing-heaven",
     pickupIncluded: true,
     optionalAddonsIntro:
-      "Optional extras at Swing Heaven — flying dress hire and the koi pond boat photo (confirm lobby availability). Neither includes a professional photographer.",
+      "Hotel shuttle is included and required (no self-meet). Optional extras: flying dress hire and the koi pond boat photo (confirm lobby availability). Neither includes a professional photographer.",
     optionalAddons: [SWING_HEAVEN_ADDONS.dress, SWING_HEAVEN_ADDONS.koiPond],
   },
   {
@@ -100,7 +100,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     pricingActivityId: "swing-heaven-lunch",
     pickupIncluded: true,
     optionalAddonsIntro:
-      "Optional extras at Swing Heaven — flying dress hire and the koi pond boat photo (confirm lobby availability). Lunch is already in this package.",
+      "Hotel shuttle is included and required (no self-meet). Optional extras: flying dress hire and the koi pond boat photo (confirm lobby availability). Lunch is already in this package.",
     optionalAddons: [SWING_HEAVEN_ADDONS.dress, SWING_HEAVEN_ADDONS.koiPond],
   },
   {

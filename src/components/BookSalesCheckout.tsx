@@ -327,8 +327,16 @@ export default function BookSalesCheckout({
                   Free Ubud hotel pickup included
                 </p>
               ) : adv.pickupIncluded ? (
-                <p className="text-xs font-semibold text-brand-green bg-brand-green/8 rounded-lg px-3 py-2 w-fit">
-                  Hotel driver included — required, no self-meet
+                <p
+                  className={`text-xs font-semibold text-brand-green rounded-lg px-3 py-2 w-fit ${
+                    adv.id === "swing-heaven"
+                      ? "bg-accent-gold/15 border border-accent-gold/35"
+                      : "bg-brand-green/8"
+                  }`}
+                >
+                  {adv.id === "swing-heaven"
+                    ? "Hotel shuttle included & required — no self-meet at Bongkasa"
+                    : "Hotel driver included — required, no self-meet"}
                 </p>
               ) : null}
               <p className="text-xs text-brand-green-light opacity-80">

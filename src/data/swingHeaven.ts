@@ -5,13 +5,18 @@
 
 export const SWING_HEAVEN_PRICE_IDR = 530_000
 export const SWING_HEAVEN_LUNCH_PRICE_IDR = 630_000
-/** Hotel driver is included in the ticket and required — no self-meet, no IDR 400K add-on. */
+/**
+ * Hotel shuttle is required (no self-meet). Fee follows the map pin:
+ * free within Ubud (5 km) · IDR 400,000 outside Ubud (same flat as ATV/rafting pickup).
+ */
+export const SWING_HEAVEN_SHUTTLE_REQUIRED = true
+export const SWING_HEAVEN_SHUTTLE_FREE_IN_UBUD = true
+/** @deprecated Use SWING_HEAVEN_SHUTTLE_REQUIRED — kept for older imports. */
 export const SWING_HEAVEN_DRIVER_INCLUDED = true
-/** Short notice for booking dialogs / WhatsApp — shuttle is mandatory, not optional. */
+/** Short notice for booking dialogs / WhatsApp — shuttle is mandatory. */
 export const SWING_HEAVEN_SHUTTLE_NOTICE =
-  'Hotel shuttle is included and required. Share your hotel pin — self-meet at Bongkasa is not offered.'
-export const SWING_HEAVEN_SHUTTLE_NOTICE_SHORT =
-  'Shuttle included & required — no self-meet'
+  'Required shuttle — free within Ubud · IDR 400,000 outside Ubud. Self-meet at Bongkasa is not offered.'
+export const SWING_HEAVEN_SHUTTLE_NOTICE_SHORT = 'Required shuttle'
 export const SWING_HEAVEN_LUNCH_DIFF_IDR =
   SWING_HEAVEN_LUNCH_PRICE_IDR - SWING_HEAVEN_PRICE_IDR
 export const SWING_HEAVEN_DRESS_HIRE_IDR = 300_000
@@ -21,6 +26,12 @@ export const SWING_HEAVEN_CARD_SURCHARGE_PCT = 3
 export function isSwingHeavenBookingId(id: string | undefined | null): boolean {
   if (!id) return false
   return id === 'swing-heaven' || id === 'swing-heaven-lunch' || id === 'swing-heaven-bali'
+}
+
+export function swingHeavenShuttleLabel(isOutUbud: boolean, feeIdr: number): string {
+  if (feeIdr <= 0) return 'Required shuttle · free within Ubud'
+  if (isOutUbud) return 'Required shuttle · outside Ubud'
+  return 'Required shuttle'
 }
 
 export const SWING_HEAVEN_VENUE = {

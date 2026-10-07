@@ -283,10 +283,10 @@ export function formatTierPriceTable(activityId: ActivityId): string {
     return `Private · min 2 · 2+ ${unit}: IDR ${(t2 / 1000).toFixed(0)}k promo (was IDR ${(t1 / 1000).toFixed(0)}k)`
   }
   if (activityId === 'swing-heaven') {
-    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · swings, photo spots, insurance, tea/coffee/water · driver included`
+    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · swings, photo spots, insurance, tea/coffee/water · required shuttle (free Ubud / 400K outside)`
   }
   if (activityId === 'swing-heaven-lunch') {
-    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · same package + lunch`
+    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · same package + lunch · required shuttle`
   }
   if (activityId === 'cycling') {
     return `Promo IDR ${(CYCLING_PROMO_IDR / 1000).toFixed(0)}k (was ${(CYCLING_LIST_IDR / 1000).toFixed(0)}k) · 2 ${unit}: IDR ${(t2 / 1000).toFixed(0)}k · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k · lunch + free Ubud pickup`

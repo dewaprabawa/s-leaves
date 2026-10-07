@@ -97,9 +97,15 @@ function ticketTour(opts: {
   imageSlug?: string
   /** Hero / gallery alt text when the title alone is too thin. */
   imageAlt?: string
+  /** Extra gallery shots after the hero (slug without .jpg under /images/adventures/). */
+  galleryExtras?: { slug: string; alt: string }[]
 }): Tour {
   const basePrice = money(opts.sourcePrice)
   const image = hero(opts.imageSlug ?? opts.slug, opts.imageAlt ?? opts.title)
+  const gallery = [
+    image,
+    ...(opts.galleryExtras ?? []).map((extra) => hero(extra.slug, extra.alt)),
+  ]
   return {
     id: opts.slug,
     title: opts.title,
@@ -113,7 +119,7 @@ function ticketTour(opts: {
     seoTitle: opts.seoTitle,
     seoDescription: opts.seoDescription,
     heroImage: image,
-    gallery: [image],
+    gallery,
     shortDescription: opts.shortDescription,
     fullDescription: opts.fullDescription,
     highlights: opts.highlights,
@@ -512,6 +518,12 @@ Package bikes: **KLX 150** or **Yamaha X-Ride**. Bigger enduro bikes quoted. 4â€
     imageSlug: "silver-making-torch-tweezers",
     imageAlt:
       "Torch flame and tweezers soldering silver beads and a ring at an Ubud silver-making class",
+    galleryExtras: [
+      {
+        slug: "silver-making-ring-sanding",
+        alt: "Hands sanding a silver ring with a polishing block at an Ubud silver-making class",
+      },
+    ],
     title: "Silver Making Class",
     seoTitle: "Ubud Silver Making Class | From IDR 650K",
     seoDescription:

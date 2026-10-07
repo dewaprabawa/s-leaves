@@ -29,6 +29,10 @@ import {
   MOTORBIKE_UBUD_IDR,
   MOTORBIKE_UBUD_LIST_IDR,
 } from "@/data/motorbikeTrip"
+import {
+  SWING_HEAVEN_SHUTTLE_NOTICE,
+  SWING_HEAVEN_SHUTTLE_NOTICE_SHORT,
+} from "@/data/swingHeaven"
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
@@ -376,9 +380,14 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             </p>
           ) : null}
           {props.tourSlug === "swing-heaven-bali" ? (
-            <p className="text-sm text-brand-green-light mt-1">
-              Lunch package {formatIdr(getListPrice("swing-heaven-lunch"))} · dress hire extra
-            </p>
+            <>
+              <p className="text-sm text-brand-green-light mt-1">
+                Lunch package {formatIdr(getListPrice("swing-heaven-lunch"))} · dress hire extra
+              </p>
+              <p className="mt-2 rounded-lg border border-accent-gold/40 bg-accent-gold/10 px-3 py-2 text-xs font-semibold text-brand-green leading-relaxed">
+                {SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}. {SWING_HEAVEN_SHUTTLE_NOTICE}
+              </p>
+            </>
           ) : null}
           {props.tourSlug === "griya-beji-waterfall" ? (
             <p className="text-sm text-brand-green-light mt-1">

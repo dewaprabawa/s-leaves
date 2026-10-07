@@ -32,6 +32,11 @@ import {
 import BookingTourDetailPanel from '@/components/BookingTourDetailPanel';
 import PromoPrice from '@/components/PromoPrice';
 import { notifyActivityClick, notifyBookingSubmitted } from '@/lib/web3forms';
+import {
+  isSwingHeavenBookingId,
+  SWING_HEAVEN_SHUTTLE_NOTICE,
+  SWING_HEAVEN_SHUTTLE_NOTICE_SHORT,
+} from '@/data/swingHeaven';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -259,6 +264,9 @@ export function BookingPopup({
   )
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupIncluded = activeTour.pickupIncluded === true;
+  const isSwingHeaven =
+    isSwingHeavenBookingId(activeTour.id) ||
+    isSwingHeavenBookingId(activeTour.pricingActivityId);
   const pickupNotOffered = activeTour.pickupNotOffered === true;
   const meetsAtArena = activeTour.meetsAtArena === true;
   const selfMeet = activeTour.selfMeet
@@ -361,7 +369,11 @@ export function BookingPopup({
           : 'Self-arranged — no operator pickup',
       );
     } else if (pickupIncluded) {
-      pickupNoteParts.push('Hotel pickup & drop-off included in tour price');
+      pickupNoteParts.push(
+        isSwingHeaven
+          ? SWING_HEAVEN_SHUTTLE_NOTICE
+          : 'Hotel pickup & drop-off included in tour price',
+      );
     } else if (hasFreeUbudPickup && !isOutUbud) {
       pickupNoteParts.push('Free Ubud pickup (cycling tour)');
     } else {
@@ -611,7 +623,12 @@ export function BookingPopup({
               )
             ) : location ? (
                pickupIncluded ? (
-                 <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Pickup included in tour price</span>
+                 <span className="text-brand-green font-bold flex items-center gap-1">
+                   <span className="w-2 h-2 rounded-full bg-brand-green"></span>
+                   {isSwingHeaven
+                     ? SWING_HEAVEN_SHUTTLE_NOTICE_SHORT
+                     : 'Pickup included in tour price'}
+                 </span>
                ) : hasFreeUbudPickup ? (
                  isOutUbud ? (
                    <span className="text-red-600 font-bold block">Out of Ubud: hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
@@ -839,10 +856,22 @@ export function BookingPopup({
             </div>
 
             {pickupIncluded ? (
-              <div className="rounded-xl border border-brand-green/15 bg-brand-green/5 px-4 py-3.5 text-sm">
-                <span className="font-bold text-brand-green block mb-0.5">Hotel pickup included</span>
+              <div
+                className={`rounded-xl border px-4 py-3.5 text-sm ${
+                  isSwingHeaven
+                    ? 'border-accent-gold/40 bg-accent-gold/10'
+                    : 'border-brand-green/15 bg-brand-green/5'
+                }`}
+              >
+                <span className="font-bold text-brand-green block mb-0.5">
+                  {isSwingHeaven
+                    ? 'Hotel shuttle required (included)'
+                    : 'Hotel pickup included'}
+                </span>
                 <span className="text-brand-green-light">
-                  Pickup &amp; drop-off is included in this tour&apos;s price — no arena self-meet and no extra fee. Add your hotel address below.
+                  {isSwingHeaven
+                    ? `${SWING_HEAVEN_SHUTTLE_NOTICE} Add your hotel address below before you send WhatsApp.`
+                    : "Pickup & drop-off is included in this tour's price — no arena self-meet and no extra fee. Add your hotel address below."}
                 </span>
               </div>
             ) : pickupNotOffered ? (

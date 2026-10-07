@@ -507,7 +507,7 @@ Package bikes: **KLX 150** or **Yamaha X-Ride**. Bigger enduro bikes quoted. 4â€
   }),
   ticketTour({
     slug: "silver-making-class",
-    imageSlug: "silver-making-workshop",
+    imageSlug: "silver-making-torch-tweezers",
     title: "Silver Making Class",
     seoTitle: "Ubud Silver Making Class | From IDR 650K",
     seoDescription:

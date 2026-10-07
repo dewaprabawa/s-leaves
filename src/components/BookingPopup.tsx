@@ -54,15 +54,21 @@ export type TourOptionalAddon = {
   flat?: boolean
 }
 
-function addonAmount(addon: TourOptionalAddon, pax: number) {
-  return addon.flat ? addon.perPerson : addon.perPerson * pax
+function addonMaxQty(addon: TourOptionalAddon, guestCount: number) {
+  if (addon.flat) return 1
+  return Math.max(1, guestCount)
 }
 
-function addonSummary(addon: TourOptionalAddon, pax: number) {
+function addonAmount(addon: TourOptionalAddon, qty: number) {
+  if (qty <= 0) return 0
+  return addon.flat ? addon.perPerson : addon.perPerson * qty
+}
+
+function addonSummary(addon: TourOptionalAddon, qty: number) {
   if (addon.flat) {
     return `${addon.label} · ${formatIdr(addon.perPerson)} (once per booking)`
   }
-  return `${addon.label} · ${formatIdr(addon.perPerson)} × ${pax} person(s) (ticket included)`
+  return `${addon.label} · ${formatIdr(addon.perPerson)} × ${qty}`
 }
 
 export interface TourConfig {
@@ -138,7 +144,8 @@ export function BookingPopup({
   const [step, setStep] = useState<'form' | 'invoice'>('form');
   const [invoice, setInvoice] = useState<InvoiceDraft | null>(null);
   const [mixIds, setMixIds] = useState<string[]>([]);
-  const [addonIds, setAddonIds] = useState<string[]>([]);
+  /** Optional add-on quantities by id (0 = not selected). */
+  const [addonQty, setAddonQty] = useState<Record<string, number>>({});
 
   const activeTour =
     (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
@@ -175,7 +182,7 @@ export function BookingPopup({
       setStep('form');
       setInvoice(null);
       setMixIds(initialMixIds ?? []);
-      setAddonIds([]);
+      setAddonQty({});
     }
   }, [isOpen, tour, initialMixIds]);
 
@@ -198,7 +205,13 @@ export function BookingPopup({
     const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
     setMixIds((prev) => prev.filter((id) => allowed.has(id as MixableActivityId) && id !== activeTour.id))
     const allowedAddons = new Set((activeTour.optionalAddons ?? []).map((a) => a.id))
-    setAddonIds((prev) => prev.filter((id) => allowedAddons.has(id)))
+    setAddonQty((prev) => {
+      const next: Record<string, number> = {}
+      for (const [id, qty] of Object.entries(prev)) {
+        if (allowedAddons.has(id) && qty > 0) next[id] = qty
+      }
+      return next
+    })
   }, [activeTour?.id])
 
   // Keep dialog above the fixed navbar and lock page scroll while open
@@ -233,6 +246,26 @@ export function BookingPopup({
     })
   }, [isOpen, activeTour?.id, mixIds])
 
+  // Cap add-on qty when guest count drops (hooks must run before any early return).
+  useEffect(() => {
+    if (!isOpen || !activeTour?.optionalAddons?.length) return
+    const guestCount = Math.max(1, adults) + kids
+    setAddonQty((prev) => {
+      let changed = false
+      const next = { ...prev }
+      for (const addon of activeTour.optionalAddons ?? []) {
+        const current = next[addon.id] ?? 0
+        if (current <= 0) continue
+        const max = addonMaxQty(addon, guestCount)
+        if (current > max) {
+          next[addon.id] = max
+          changed = true
+        }
+      }
+      return changed ? next : prev
+    })
+  }, [isOpen, adults, kids, activeTour?.id, activeTour?.optionalAddons])
+
   if (!mounted || !isOpen || !activeTour) return null;
 
   const hasKidPricing = activeTour.kidPrice !== null && activeTour.kidPrice !== undefined;
@@ -266,12 +299,18 @@ export function BookingPopup({
     fallbackAdultPrice: activeTour.adultPrice,
     fallbackChildPrice: activeTour.kidPrice,
   });
-  const selectedAddons = (activeTour.optionalAddons ?? []).filter((addon) =>
-    addonIds.includes(addon.id),
-  )
-  const addonPax = Math.max(1, adults) + kids
+  const addonGuestCount = Math.max(1, adults) + kids
+  const selectedAddons = (activeTour.optionalAddons ?? [])
+    .map((addon) => ({
+      addon,
+      qty: Math.min(
+        addonQty[addon.id] ?? 0,
+        addonMaxQty(addon, addonGuestCount),
+      ),
+    }))
+    .filter((row) => row.qty > 0)
   const addonTotal = selectedAddons.reduce(
-    (sum, addon) => sum + addonAmount(addon, addonPax),
+    (sum, { addon, qty }) => sum + addonAmount(addon, qty),
     0,
   )
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
@@ -343,11 +382,21 @@ export function BookingPopup({
       prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
     )
   };
-  const toggleAddonId = (id: string) => {
-    setAddonIds((prev) =>
-      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id],
-    )
-  };
+  const setAddonCount = (id: string, nextQty: number) => {
+    const addon = (activeTour?.optionalAddons ?? []).find((a) => a.id === id)
+    if (!addon) return
+    const max = addonMaxQty(addon, addonGuestCount)
+    const qty = Math.max(0, Math.min(max, nextQty))
+    setAddonQty((prev) => {
+      if (qty <= 0) {
+        if (!(id in prev)) return prev
+        const { [id]: _, ...rest } = prev
+        return rest
+      }
+      if (prev[id] === qty) return prev
+      return { ...prev, [id]: qty }
+    })
+  }
   const nameOk = guestName.trim().length >= 2;
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
   const needsHotelAddress = effectiveWantsPickup
@@ -453,8 +502,8 @@ export function BookingPopup({
           : `Sit-in jeep · sit-down meal included after the viewpoint · ${formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR)} for 2 guests`,
       )
     }
-    for (const addon of selectedAddons) {
-      pickupNoteParts.push(addonSummary(addon, addonPax))
+    for (const { addon, qty } of selectedAddons) {
+      pickupNoteParts.push(addonSummary(addon, qty))
     }
 
     const lineItems: { label: string; amount: number }[] = []
@@ -493,12 +542,12 @@ export function BookingPopup({
     } else if (activityQuote) {
       pushQuoteLines(activityQuote, activeTour.title)
     }
-    for (const addon of selectedAddons) {
+    for (const { addon, qty } of selectedAddons) {
       lineItems.push({
         label: addon.flat
           ? `${addon.label} — ${formatIdr(addon.perPerson)} (once per booking)`
-          : `${addon.label} — ${addonPax} person(s) × ${formatIdr(addon.perPerson)} (ticket included)`,
-        amount: addonAmount(addon, addonPax),
+          : `${addon.label} — ${qty} × ${formatIdr(addon.perPerson)}`,
+        amount: addonAmount(addon, qty),
       })
     }
     if (requiredShuttle || pickupFee > 0) {
@@ -528,7 +577,9 @@ export function BookingPopup({
       activity: mixedQuote
         ? `${activeTour.title} + ${mixedQuote.labels.slice(1).join(' + ')}`
         : selectedAddons.length
-          ? `${activeTour.title} + ${selectedAddons.map((addon) => addon.label).join(' + ')}`
+          ? `${activeTour.title} + ${selectedAddons.map(({ addon, qty }) =>
+              addon.flat ? addon.label : `${addon.label} ×${qty}`,
+            ).join(' + ')}`
           : activeTour.title,
       activityOption: mixedQuote
         ? `Combo (${mixedQuote.discountPercent}% mix discount)`
@@ -797,27 +848,64 @@ export function BookingPopup({
               </p>
               <div className="space-y-2">
                 {activeTour.optionalAddons.map((opt) => {
-                  const checked = addonIds.includes(opt.id)
+                  const qty = Math.min(
+                    addonQty[opt.id] ?? 0,
+                    addonMaxQty(opt, addonGuestCount),
+                  )
+                  const max = addonMaxQty(opt, addonGuestCount)
+                  const active = qty > 0
+                  const lineTotal = addonAmount(opt, qty)
                   return (
-                    <label
+                    <div
                       key={opt.id}
-                      className={`flex items-start gap-3 rounded-xl border px-3 py-3 cursor-pointer transition-colors ${
-                        checked
+                      className={`rounded-xl border px-3 py-3 transition-colors ${
+                        active
                           ? 'border-brand-green bg-brand-green/5'
-                          : 'border-brand-green/15 bg-white hover:border-brand-green/30'
+                          : 'border-brand-green/15 bg-white'
                       }`}
                     >
-                      <input
-                        type="checkbox"
-                        className="mt-1 accent-brand-green"
-                        checked={checked}
-                        onChange={() => toggleAddonId(opt.id)}
-                      />
-                      <span className="min-w-0">
-                        <span className="block text-sm font-bold text-brand-green">{opt.label}</span>
-                        <span className="block text-xs text-brand-green-light mt-0.5">{opt.blurb}</span>
-                      </span>
-                    </label>
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="min-w-0">
+                          <span className="block text-sm font-bold text-brand-green">{opt.label}</span>
+                          <span className="block text-xs text-brand-green-light mt-0.5">{opt.blurb}</span>
+                          {active ? (
+                            <span className="block text-xs font-semibold text-brand-green mt-1.5">
+                              {opt.flat
+                                ? formatIdr(opt.perPerson)
+                                : `${formatIdr(opt.perPerson)} × ${qty} = ${formatIdr(lineTotal)}`}
+                            </span>
+                          ) : null}
+                        </div>
+                        <div className="flex items-center rounded-xl border border-brand-green/20 overflow-hidden bg-white shrink-0">
+                          <button
+                            type="button"
+                            aria-label={`Decrease ${opt.label}`}
+                            disabled={qty <= 0}
+                            onClick={() => setAddonCount(opt.id, qty - 1)}
+                            className="px-3.5 py-2.5 hover:bg-sand text-brand-green font-bold text-lg leading-none disabled:opacity-40 disabled:hover:bg-white active:bg-sand-dark transition-colors"
+                          >
+                            −
+                          </button>
+                          <span className="min-w-[2rem] text-center font-bold text-brand-green text-base tabular-nums">
+                            {qty}
+                          </span>
+                          <button
+                            type="button"
+                            aria-label={`Increase ${opt.label}`}
+                            disabled={qty >= max}
+                            onClick={() => setAddonCount(opt.id, qty + 1)}
+                            className="px-3.5 py-2.5 hover:bg-sand text-brand-green font-bold text-lg leading-none disabled:opacity-40 disabled:hover:bg-white active:bg-sand-dark transition-colors"
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+                      {!opt.flat ? (
+                        <p className="mt-2 text-[11px] text-brand-green-light">
+                          Count up to {max} guest{max === 1 ? '' : 's'} on this booking
+                        </p>
+                      ) : null}
+                    </div>
                   )
                 })}
               </div>
@@ -1155,14 +1243,14 @@ export function BookingPopup({
                 ) : null}
               </>
             ) : null}
-            {selectedAddons.map((addon) => (
+            {selectedAddons.map(({ addon, qty }) => (
               <div
                 key={addon.id}
                 className="flex justify-between items-center mb-2 text-sm text-brand-green-light"
               >
-                <span>{addonSummary(addon, addonPax)}</span>
+                <span>{addonSummary(addon, qty)}</span>
                 <span className="font-semibold text-brand-green">
-                  {formatIdr(addonAmount(addon, addonPax))}
+                  {formatIdr(addonAmount(addon, qty))}
                 </span>
               </div>
             ))}

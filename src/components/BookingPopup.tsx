@@ -34,6 +34,8 @@ import PromoPrice from '@/components/PromoPrice';
 import { notifyActivityClick, notifyBookingSubmitted } from '@/lib/web3forms';
 import {
   isSwingHeavenBookingId,
+  SWING_HEAVEN_SHUTTLE_MUST_LABEL,
+  SWING_HEAVEN_SHUTTLE_MUST_SUBLINE,
   SWING_HEAVEN_SHUTTLE_NOTICE,
   SWING_HEAVEN_SHUTTLE_NOTICE_SHORT,
   swingHeavenShuttleLabel,
@@ -76,8 +78,8 @@ export interface TourConfig {
   /** Pickup is bundled into the tour price island-wide, no arena self-meet — jeep tour, private day tours */
   pickupIncluded?: boolean
   /**
-   * Shuttle is mandatory (no self-meet). Fee comes from quotePickup + map pin
-   * (use with freeUbudPickup for free-within-Ubud / surcharge outside).
+   * Shuttle is mandatory (no self-meet). Fee comes from quotePickup
+   * (Swing Heaven: flat IDR 400,000 — not free within Ubud).
    */
   requiredShuttle?: boolean
   /** True only for activities that actually depart from the All New Bali Adventure arena (ATV, rafting, canyon tubing) */
@@ -297,11 +299,13 @@ export function BookingPopup({
       ? selfMeet.mapUrl
       : undefined
   const hasFixedMeet = Boolean(meetLabel)
-  // Required shuttle always quotes as wantsPickup; location (isOutUbud) drives the fee.
+  // Required shuttle always quotes as wantsPickup. Swing Heaven is never free-Ubud.
   const effectiveWantsPickup = requiredShuttle || wantsPickup
   const pickupQuote = quotePickup({
     wantsPickup: effectiveWantsPickup,
-    freeUbudPickup: hasFreeUbudPickup || pickupIncluded,
+    freeUbudPickup: isSwingHeaven
+      ? false
+      : hasFreeUbudPickup || pickupIncluded,
     isOutUbud: pickupIncluded ? false : isOutUbud,
     sameDropOff,
   });
@@ -894,11 +898,19 @@ export function BookingPopup({
             </div>
 
             {requiredShuttle ? (
-              <div className="rounded-xl border border-accent-gold/40 bg-accent-gold/10 px-4 py-3.5 text-sm">
-                <span className="font-bold text-brand-green block mb-0.5">
-                  {SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}
+              <div className="rounded-xl border-2 border-accent-gold bg-accent-gold/15 px-4 py-4 text-sm">
+                <span className="text-[10px] font-black uppercase tracking-[0.16em] text-accent-gold-dark block">
+                  Must include
                 </span>
-                <span className="text-brand-green-light block mb-2">
+                <span className="font-black uppercase tracking-wide text-brand-green text-xl block mt-1">
+                  {isSwingHeaven ? SWING_HEAVEN_SHUTTLE_MUST_LABEL : SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}
+                </span>
+                <span className="text-brand-green font-semibold block mt-1">
+                  {isSwingHeaven
+                    ? SWING_HEAVEN_SHUTTLE_MUST_SUBLINE
+                    : SWING_HEAVEN_SHUTTLE_NOTICE}
+                </span>
+                <span className="text-brand-green-light block mt-1 mb-2">
                   {SWING_HEAVEN_SHUTTLE_NOTICE} Move the map pin — the shuttle line updates automatically.
                 </span>
                 <span className={`font-bold block ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>

@@ -85,7 +85,7 @@ const faqs = [
   },
   {
     question: "How much is a private full day or half day Ubud tour?",
-    answer: "Full Day Ubud Tour starts from IDR 600,000 for a private car and English-speaking driver (about 10 hours; entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour starts from IDR 450,000 (about 6 hours; entrance fees and dinner not included). Message WhatsApp for a guest-count quote."
+    answer: "Full Day Ubud Tour starts from IDR 600,000 for a private car and English-speaking driver (about 10 hours; entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour is IDR 850,000 for a private shuttle (about 6 hours; temple tickets and dinner not included). Message WhatsApp for a guest-count quote."
   },
   {
     question: "How much is Swing Heaven Bali near Ubud?",

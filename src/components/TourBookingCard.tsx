@@ -29,7 +29,7 @@ import {
   MOTORBIKE_UBUD_IDR,
   MOTORBIKE_UBUD_LIST_IDR,
 } from "@/data/motorbikeTrip"
-import { SWING_HEAVEN_SHUTTLE_NOTICE_SHORT } from "@/data/swingHeaven"
+import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
@@ -212,8 +212,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         kidPrice: props.childPrice ?? null,
         minPax: /tandem|2 guests/i.test(opt.name) ? 2 : isLuwak ? 3 : 1,
         getYourGuideUrl: props.getYourGuideUrl,
-        freeUbudPickup:
-          props.tourSlug === "balinese-cooking-class" || isSwingHeaven,
+        freeUbudPickup: props.tourSlug === "balinese-cooking-class",
         pickupIncluded: isMelukat || isMotorbike,
         requiredShuttle: isSwingHeaven,
         pickupNotOffered: isLuwak,
@@ -244,8 +243,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       kidPrice: props.childPrice ?? null,
       minPax: isLuwak ? 3 : 1,
       getYourGuideUrl: props.getYourGuideUrl,
-      freeUbudPickup:
-        props.tourSlug === "balinese-cooking-class" || isSwingHeaven,
+      freeUbudPickup: props.tourSlug === "balinese-cooking-class",
       pickupIncluded: isPrivateDayTour || isMelukat,
       requiredShuttle: isSwingHeaven,
       pickupNotOffered: isLuwak,
@@ -385,10 +383,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
               <p className="text-sm text-brand-green-light mt-1">
                 Lunch package {formatIdr(getListPrice("swing-heaven-lunch"))} · dress hire extra
               </p>
-              <p className="mt-2 rounded-lg border border-accent-gold/40 bg-accent-gold/10 px-3 py-2 text-xs font-semibold text-brand-green leading-relaxed">
-                {SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}: auto-priced from your hotel pin
-                (free within Ubud · IDR 400,000 outside). No self-meet.
-              </p>
+              <SwingHeavenShuttleMustLabel compact className="mt-3" />
             </>
           ) : null}
           {props.tourSlug === "griya-beji-waterfall" ? (

@@ -326,9 +326,9 @@ export default function BookSalesCheckout({
                 <p className="text-xs font-semibold text-brand-green bg-brand-green/8 rounded-lg px-3 py-2 w-fit">
                   Free Ubud hotel pickup included
                 </p>
-              ) : adv.id === "swing-heaven" ? (
-                <p className="text-xs font-semibold text-brand-green rounded-lg px-3 py-2 w-fit bg-accent-gold/15 border border-accent-gold/35">
-                  Required shuttle — free within Ubud · IDR 400,000 outside (auto from map pin)
+              ) : adv.id === "swing-heaven" || adv.requiredShuttle ? (
+                <p className="text-sm font-black uppercase tracking-wide text-brand-green rounded-xl px-3 py-2.5 w-fit bg-accent-gold/20 border-2 border-accent-gold">
+                  Include shuttle — must · IDR 400,000
                 </p>
               ) : adv.pickupIncluded ? (
                 <p className="text-xs font-semibold text-brand-green bg-brand-green/8 rounded-lg px-3 py-2 w-fit">

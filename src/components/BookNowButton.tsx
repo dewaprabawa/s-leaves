@@ -86,9 +86,9 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     minPax: 1,
     pricingActivityId: "swing-heaven",
     requiredShuttle: true,
-    freeUbudPickup: true,
+    freeUbudPickup: false,
     optionalAddonsIntro:
-      "Required shuttle auto-prices from your hotel pin (free within Ubud · IDR 400,000 outside). No self-meet. Optional extras: flying dress hire and the koi pond boat photo (confirm lobby availability).",
+      "Required shuttle IDR 400,000 (Ubud and outside). No self-meet. Optional extras: flying dress hire and the koi pond boat photo (confirm lobby availability).",
     optionalAddons: [SWING_HEAVEN_ADDONS.dress, SWING_HEAVEN_ADDONS.koiPond],
   },
   {
@@ -100,9 +100,9 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     minPax: 1,
     pricingActivityId: "swing-heaven-lunch",
     requiredShuttle: true,
-    freeUbudPickup: true,
+    freeUbudPickup: false,
     optionalAddonsIntro:
-      "Required shuttle auto-prices from your hotel pin (free within Ubud · IDR 400,000 outside). No self-meet. Lunch is already in this package. Optional extras: flying dress hire and the koi pond boat photo.",
+      "Required shuttle IDR 400,000 (Ubud and outside). No self-meet. Lunch is already in this package. Optional extras: flying dress hire and the koi pond boat photo.",
     optionalAddons: [SWING_HEAVEN_ADDONS.dress, SWING_HEAVEN_ADDONS.koiPond],
   },
   {

@@ -1161,12 +1161,12 @@ Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) fir
     area: SWING_HEAVEN_VENUE.area,
     venue: `${SWING_HEAVEN_VENUE.name}, ${SWING_HEAVEN_VENUE.address}`,
     isTopPick: true,
-    pickup: "Required shuttle — free within Ubud · IDR 400,000 outside",
+    pickup: "Required shuttle — IDR 400,000 (Ubud and outside)",
     duration: "1.5–2.5 Hours",
     basePrice: SWING_HEAVEN_PRICE_IDR,
     seoTitle: "Swing Heaven Bali Ubud | From IDR 530K",
     seoDescription:
-      "Swing Heaven Bali in Bongkasa from IDR 530K. Required shuttle: free within Ubud, IDR 400K outside. Lunch 630K. Dress hire 300K. WhatsApp.",
+      "Swing Heaven Bali in Bongkasa from IDR 530K. Required shuttle IDR 400K (Ubud and outside). Lunch 630K. Dress hire 300K. WhatsApp.",
     heroImage: {
       url: "/images/adventures/swing-heaven-ayung.jpg",
       alt: "Guest on a jungle swing over the Ayung River valley at Swing Heaven Bali in Bongkasa near Ubud",
@@ -1200,7 +1200,7 @@ Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) fir
       },
     ],
     shortDescription:
-      "Jungle swing park in Bongkasa near Ubud — 14 photo spots over the Ayung River valley. Package from IDR 530,000 (tea/coffee/water, insurance) or IDR 630,000 with lunch. Required shuttle auto-prices from your hotel pin: free within Ubud · IDR 400,000 outside. No self-meet. Flying dress hire IDR 300,000. Book via WhatsApp.",
+      "Jungle swing park in Bongkasa near Ubud — 14 photo spots over the Ayung River valley. Package from IDR 530,000 (tea/coffee/water, insurance) or IDR 630,000 with lunch. Required shuttle IDR 400,000 (Ubud and outside). No self-meet. Flying dress hire IDR 300,000. Book via WhatsApp.",
     fullDescription: `**Swing Heaven Bali — jungle swings over the Ayung River (not Tegallalang)**
 
 [Swing Heaven](https://swingheavens.com/) is a locally run jungle swing park on **Jl. Tangga Yuda, Bongkasa** (Abiansemal, Badung) — a short drive from Ubud, overlooking the **Ayung River valley**. This is **not** the Tegallalang rice-terrace swing strip. We book the park for you on one WhatsApp thread with ATV, rafting, cooking, and cycling.
@@ -1210,7 +1210,7 @@ Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) fir
 |--------|-------|----------|
 | Swing Heaven Package | **IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")}** (~USD 38) | All swings & photo spots, insurance, tea / coffee / water |
 | Package + lunch | **IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")}** (~USD 45) | Same access + lunch |
-| Required shuttle | **Free within Ubud · IDR 400,000 outside** | Auto from hotel pin · no self-meet |
+| Required shuttle | **IDR 400,000** | Flat once per booking · Ubud and outside · no self-meet |
 | Flying dress hire | **IDR ${SWING_HEAVEN_DRESS_HIRE_IDR.toLocaleString("id-ID")}** | Optional — flowing photo dress |
 | Koi pond boat photo | **IDR ${SWING_HEAVEN_KOI_POND_IDR.toLocaleString("id-ID")}** | Optional — ice tea, fruit platter, photos on **your phone**. Confirm lobby availability |
 
@@ -1220,7 +1220,7 @@ ${SWING_HEAVEN_SPOTS.map((spot) => `- ${spot}`).join("\n")}
 Take photos on **your own phone**. A professional photographer is not included. Park hours **${SWING_HEAVEN_VENUE.hours}**.
 
 ### Required shuttle
-**Shuttle is required — no self-meet at Bongkasa.** The booking form auto-prices it from your hotel pin: **free within Ubud** (5 km) · **IDR 400,000 outside Ubud**. Share your hotel address when you book.
+**Shuttle is required — no self-meet at Bongkasa.** Flat **IDR 400,000** once per booking from any hotel pin (Ubud and outside). Share your hotel address when you book.
 
 ### Weather & refunds
 The Swing Heaven ticket is **non-refundable** once issued. If rain or unsafe weather closes the park, the venue issues a **voucher valid 7 days** from the issue date — not a cash refund. Cancel **24 hours before** we have issued the ticket and our usual [cancellation policy](/cancellation-policy) still applies.
@@ -1235,13 +1235,13 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
       "14 jungle swings, nests, and photo spots over the Ayung valley",
       "From IDR 530,000 — insurance, tea/coffee/water",
       "Lunch package IDR 630,000 · flying dress hire IDR 300,000",
-      "Required shuttle — free within Ubud · IDR 400,000 outside",
+      "Required shuttle — IDR 400,000 (Ubud and outside)",
     ],
     included: [
       "Access to jungle swings and photo spots (14 listed spots)",
       "On-site insurance",
       "Tea, coffee, or water",
-      "Required hotel shuttle (free within Ubud · IDR 400,000 outside)",
+      "Required hotel shuttle (IDR 400,000 — Ubud and outside)",
       "Lunch (lunch package only)",
     ],
     notIncluded: [
@@ -1310,7 +1310,7 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
       {
         id: "faq-swing-1",
         question: "How much is Swing Heaven Bali near Ubud?",
-        answer: `The Swing Heaven Package is IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")} per person (swings, photo spots, insurance, tea/coffee/water). The lunch package is IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")}. Flying dress hire is IDR ${SWING_HEAVEN_DRESS_HIRE_IDR.toLocaleString("id-ID")}. Optional koi pond boat photo is IDR ${SWING_HEAVEN_KOI_POND_IDR.toLocaleString("id-ID")} when the lobby has availability. Required shuttle is free within Ubud and IDR 400,000 outside — auto-priced from your hotel pin. No self-meet at Bongkasa.`,
+        answer: `The Swing Heaven Package is IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")} per person (swings, photo spots, insurance, tea/coffee/water). The lunch package is IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")}. Flying dress hire is IDR ${SWING_HEAVEN_DRESS_HIRE_IDR.toLocaleString("id-ID")}. Optional koi pond boat photo is IDR ${SWING_HEAVEN_KOI_POND_IDR.toLocaleString("id-ID")} when the lobby has availability. Required shuttle is IDR 400,000 once per booking (Ubud and outside). No self-meet at Bongkasa.`,
       },
       {
         id: "faq-swing-2",
@@ -1327,7 +1327,7 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
         id: "faq-swing-4",
         question: "Is hotel pickup included?",
         answer:
-          "Shuttle is required — no self-meet at Bongkasa. The booking form auto-prices it from your hotel pin: free within Ubud, or IDR 400,000 outside Ubud. Share your hotel address when you book.",
+          "Shuttle is required — no self-meet at Bongkasa. Flat IDR 400,000 once per booking from any hotel pin (Ubud and outside). Share your hotel address when you book.",
       },
       {
         id: "faq-swing-5",
@@ -1970,22 +1970,24 @@ This is a private car and driver, not a shared minibus — so you can linger lon
     slug: "half-day-ubud-tanah-lot-tour",
     category: "day-tour",
     area: "Ubud → Tanah Lot",
-    pickup: "Private car hotel pickup",
+    pickup: "Private shuttle hotel collect (tickets not included)",
     duration: "6 Hours",
-    basePrice: 450000,
-    seoTitle: "Half Day Ubud & Tanah Lot Sunset Tour | From IDR 450K",
+    basePrice: 850000,
+    seoTitle: "Half Day Ubud & Tanah Lot Sunset | Shuttle IDR 850K",
     seoDescription:
-      "Half day private tour: Ubud cultural stops then Tanah Lot sea-temple sunset. From IDR 450K, English driver. Ideal if you're short on time. WhatsApp booking.",
+      "Half day private shuttle: Ubud cultural stops then Tanah Lot sunset. IDR 850K driver only — temple tickets not included. WhatsApp booking.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
       alt: "Tanah Lot Sunset",
     },
     gallery: [],
     shortDescription:
-      "Half day private tour pairing Ubud cultural stops with a Tanah Lot sea-temple sunset — private car, English-speaking driver, from IDR 450,000. Ideal if you're short on time.",
-    fullDescription: `**Half Day Ubud & Tanah Lot Sunset Tour**
+      "Half day private shuttle pairing Ubud cultural stops with a Tanah Lot sea-temple sunset — private car and English-speaking driver for IDR 850,000. Temple tickets not included. Ideal if you're short on time.",
+    fullDescription: `**Half Day Ubud & Tanah Lot Sunset — private shuttle only**
 
 Short on time but don't want to miss the coast? This half day trip pairs an afternoon around Ubud with the classic Tanah Lot sunset — without committing to a full 10-hour day.
+
+**IDR 850,000 is the private shuttle (car + English-speaking driver) for about 6 hours.** Temple entrance tickets at Ubud stops and **Tanah Lot are not included** — you pay those at the gate.
 
 ### Afternoon: Ubud Surrounds
 We start in the early afternoon with a private car and English-speaking driver, visiting cultural sites or temples around the Ubud area (tell us your interests on WhatsApp so your driver can prioritize accordingly).
@@ -1996,31 +1998,41 @@ As the afternoon cools, we head to the coast and the iconic sea temple of **Tana
 ### Why Choose the Half Day Option
 If your schedule is tight — an early flight, a late arrival, or a full day already booked elsewhere — this half day version still delivers Ubud culture and the Tanah Lot sunset in about 6 hours.`,
     highlights: [
-      "Ubud cultural stops in the early afternoon",
-      "Tanah Lot Temple sunset over the Indian Ocean",
-      "Private car — 6 hours total, ideal for tight schedules",
-      "English-speaking driver",
+      "Private shuttle only — IDR 850,000 for ~6 hours",
+      "Ubud cultural stops then Tanah Lot sunset",
+      "Temple tickets not included (pay at the gate)",
+      "English-speaking driver · hotel collect",
     ],
-    included: ["Private car & transport for 6 hours", "English-speaking driver", "Mineral water"],
-    notIncluded: ["Entrance fees (temples, Tanah Lot)", "Dinner", "Personal expenses", "Gratuities"],
+    included: [
+      "Private shuttle (car & English-speaking driver) for 6 hours",
+      "Hotel pickup and drop-off",
+      "Mineral water",
+    ],
+    notIncluded: [
+      "Entrance tickets (Ubud temples, Tanah Lot)",
+      "Dinner",
+      "Sarong rental if needed",
+      "Personal expenses",
+      "Gratuities",
+    ],
     itinerary: [
       {
         id: "iti-hdu-1",
         time: "01:00 PM",
         title: "Hotel Pickup",
-        description: "Start your half day trip with a private car pickup from your hotel."
+        description: "Start your half day trip with a private shuttle pickup from your hotel."
       },
       {
         id: "iti-hdu-2",
         time: "02:30 PM",
         title: "Ubud Surrounds",
-        description: "Visit key cultural sites or temples around the Ubud area based on your interests."
+        description: "Visit key cultural sites or temples around the Ubud area based on your interests. Entrance tickets paid on site."
       },
       {
         id: "iti-hdu-3",
         time: "05:00 PM",
         title: "Tanah Lot Temple Sunset",
-        description: "Arrive at Tanah Lot to secure a good spot before sunset over the ocean."
+        description: "Arrive at Tanah Lot to secure a good spot before sunset over the ocean. Tanah Lot ticket is paid at the gate."
       }
     ],
     addons: [],
@@ -2029,7 +2041,7 @@ If your schedule is tight — an early flight, a late arrival, or a full day alr
         id: "faq-hdu-1",
         question: "How much does the half day Ubud & Tanah Lot tour cost?",
         answer:
-          "From IDR 450,000 for a private car, transport, and an English-speaking driver for the 6-hour trip. Entrance fees are not included — message WhatsApp for a guest-count quote.",
+          "IDR 850,000 for the private shuttle — car, transport, and an English-speaking driver for about 6 hours. Entrance tickets (temples and Tanah Lot) are not included; you pay them at the gate. Message WhatsApp for a guest-count quote.",
       },
       {
         id: "faq-hdu-2",
@@ -2047,7 +2059,13 @@ If your schedule is tight — an early flight, a late arrival, or a full day alr
         id: "faq-hdu-4",
         question: "Is the tour private or shared with other travelers?",
         answer:
-          "Private — your own car and English-speaking driver, so timing can flex around sunset and your own pace.",
+          "Private — your own car and English-speaking driver, so timing can flex around sunset and your own pace. This rate is shuttle only; tickets stay separate.",
+      },
+      {
+        id: "faq-hdu-5",
+        question: "Are Tanah Lot tickets included?",
+        answer:
+          "No. The IDR 850,000 rate is private shuttle only. Tanah Lot and any Ubud temple entrance fees are paid on site.",
       },
     ],
     reviews: []

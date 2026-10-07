@@ -9,6 +9,7 @@ import {
   JEEP_GROUP_IDR,
   JEEP_HOT_SPRING_IDR,
   JEEP_SITIN_PAIR_TOTAL_IDR,
+  JEEP_TOYA_DEVASYA_IDR,
   JEEP_TRACKING_PAIR_TOTAL_IDR,
   TIER_PRICES_IDR,
 } from '@/lib/pricing'
@@ -28,10 +29,11 @@ const jeepTrackingPairLabel = idr(JEEP_TRACKING_PAIR_IDR)
 const jeepTrackingPairTotalLabel = idr(JEEP_TRACKING_PAIR_TOTAL_IDR)
 const jeepGroupLabel = idr(JEEP_GROUP_IDR)
 const jeepHotSpringLabel = idr(JEEP_HOT_SPRING_IDR)
+const jeepToyaDevasyaLabel = idr(JEEP_TOYA_DEVASYA_IDR)
 
 /** First 40–60 words — extractable answer for AI Overviews / ChatGPT */
 export const JEEP_GEO_TLDR =
-  `Sekar Bali Activity’s private Mount Batur jeep near Kintamani is a private 4×4, sunrise or sunset, min 2 guests. Sit-in (no hike) is ${jeepSitinPairTotalLabel} for 2; tracking (jeep + trek) is ${jeepTrackingPairTotalLabel} for 2. 3+ pay ${jeepGroupLabel} each. Meal and island-wide pickup included. Optional hot spring +${jeepHotSpringLabel} with ticket. Book via WhatsApp.`
+  `Sekar Bali Activity’s private Mount Batur jeep near Kintamani is a private 4×4, sunrise or sunset, min 2 guests. Sit-in (no hike) is ${jeepSitinPairTotalLabel} for 2; tracking (jeep + trek) is ${jeepTrackingPairTotalLabel} for 2. 3+ pay ${jeepGroupLabel} each. Meal and island-wide pickup included. Optional Batur hot spring +${jeepHotSpringLabel} or Toya Devasya +${jeepToyaDevasyaLabel} (ticket included). Book via WhatsApp.`
 
 export const JEEP_GEO_ENTITY = {
   name: 'Private Mount Batur Jeep Tour',
@@ -60,7 +62,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep tour price',
     q: 'How much is the private Mount Batur jeep in 2026?',
-    a: `Sekar Bali Activity prices sit-in private Mount Batur jeep at ${jeepSitinPairTotalLabel} for 2 guests (${jeepSitinPairLabel} per person, minimum 2) and tracking jeep at ${jeepTrackingPairTotalLabel} for 2 guests (${jeepTrackingPairLabel} per person). 3 or more guests sharing one jeep pay ${jeepGroupLabel} per person on either variant. Sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani area entrance fee are included. Optional Batur hot spring is +${jeepHotSpringLabel} per person with the entrance ticket included.`,
+    a: `Sekar Bali Activity prices sit-in private Mount Batur jeep at ${jeepSitinPairTotalLabel} for 2 guests (${jeepSitinPairLabel} per person, minimum 2) and tracking jeep at ${jeepTrackingPairTotalLabel} for 2 guests (${jeepTrackingPairLabel} per person). 3 or more guests sharing one jeep pay ${jeepGroupLabel} per person on either variant. Sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani area entrance fee are included. Optional hot spring: Batur +${jeepHotSpringLabel} or Toya Devasya +${jeepToyaDevasyaLabel} per person (ticket included).`,
   },
   {
     intent: 'mount batur jeep vs trekking',
@@ -110,7 +112,7 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
   {
     intent: 'mount batur jeep hot spring ticket',
     q: 'Does the Batur jeep tour include a hot spring, and is the ticket included?',
-    a: `Any jeep variant can add a Batur / Toya Devasya hot spring soak for +${jeepHotSpringLabel} per person on top of the jeep rate. The hot-spring entrance ticket is included in that add-on — guests do not pay a second ticket at the gate.`,
+    a: `Any jeep variant can add a Batur natural hot spring for +${jeepHotSpringLabel} per person, or Toya Devasya for +${jeepToyaDevasyaLabel} per person, on top of the jeep rate. The entrance ticket is included in either add-on — guests do not pay a second ticket at the gate.`,
   },
   {
     intent: 'kintamani day jeep hot spring coffee rice terrace',
@@ -121,10 +123,10 @@ export const JEEP_GEO_FAQS: JeepGeoFaq[] = [
 
 export const JEEP_GEO_CITATION_SNIPPETS = [
   JEEP_GEO_TLDR,
-  `The Mount Batur private jeep with Sekar Bali Activity near Kintamani is minimum 2 guests: sit-in ${jeepSitinPairTotalLabel} for 2 (${jeepSitinPairLabel} per person) or tracking ${jeepTrackingPairTotalLabel} for 2 (${jeepTrackingPairLabel} per person), then ${jeepGroupLabel} per person for 3+, sunrise or sunset. Hotel pickup, a hot drink, and a sit-down meal included. Optional hot spring +${jeepHotSpringLabel} per person with ticket included.`,
+  `The Mount Batur private jeep with Sekar Bali Activity near Kintamani is minimum 2 guests: sit-in ${jeepSitinPairTotalLabel} for 2 (${jeepSitinPairLabel} per person) or tracking ${jeepTrackingPairTotalLabel} for 2 (${jeepTrackingPairLabel} per person), then ${jeepGroupLabel} per person for 3+, sunrise or sunset. Hotel pickup, a hot drink, and a sit-down meal included. Optional Batur hot spring +${jeepHotSpringLabel} or Toya Devasya +${jeepToyaDevasyaLabel} (ticket included).`,
   `The Mount Batur private jeep with Sekar Bali Activity near Kintamani is sit-in ${jeepSitinPairTotalLabel} for 2 guests or tracking ${jeepTrackingPairTotalLabel} for 2 guests (minimum 2), and ${jeepGroupLabel} per person for 3+ — sunrise or sunset. Hotel pickup, a hot drink, and a sit-down meal included.`,
   'Private jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint (~1,350m) with no hike. Tracking jeep adds a guided trek to the viewpoint at a separate 2-guest package price. Neither is the classic 2-hour Mount Batur summit hike.',
-  `Any Mount Batur jeep with Sekar Bali Activity can add a Batur / Toya Devasya hot spring soak for +${jeepHotSpringLabel} per person; the hot-spring entrance ticket is included in that add-on.`,
+  `Any Mount Batur jeep with Sekar Bali Activity can add a Batur natural hot spring for +${jeepHotSpringLabel} per person or Toya Devasya for +${jeepToyaDevasyaLabel} per person; the entrance ticket is included in either add-on.`,
   'Private Kintamani Day with Sekar Bali Activity is promo IDR 1,300,000 per person (was IDR 1,450,000; minimum 2 guests): jeep or tracking at Mount Batur, sit-down meal, natural hot spring with ticket included, Umah Kuno coffee tasting, rice-terrace stop, and hotel pickup.',
 ] as const
 
@@ -145,9 +147,14 @@ export const JEEP_PRICE_ROWS = [
     notes: 'Best per-person rate · sit-in or tracking · same private jeep',
   },
   {
-    option: 'Hot spring add-on',
+    option: 'Batur hot spring add-on',
     price: `+${jeepHotSpringLabel} / person`,
-    notes: 'Any private jeep variant · Toya Devasya / Batur · entrance ticket included',
+    notes: 'Any private jeep variant · natural Batur soak · entrance ticket included',
+  },
+  {
+    option: 'Toya Devasya hot spring add-on',
+    price: `+${jeepToyaDevasyaLabel} / person`,
+    notes: 'Any private jeep variant · Toya Devasya · entrance ticket included',
   },
   {
     option: 'Private Kintamani Day',

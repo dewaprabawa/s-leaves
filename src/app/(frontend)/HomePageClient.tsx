@@ -381,7 +381,6 @@ function ExperienceCard({ tour }: { tour: Tour }) {
             <TravelerRecommendBadge
               percent={tour.recommendedByTravelersPercent}
               variant="card"
-              className="left-3 top-3 max-w-[13rem]"
             />
           ) : tour.slug === "batur-sunrise-jeep-tour" ? (
             <span className="absolute top-3 left-3 bg-accent-gold text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">

@@ -338,6 +338,7 @@ function toTourConfig(adv: AdventureCatalogItem): TourConfig {
     minPax: adv.minPax,
     freeUbudPickup: adv.freeUbudPickup ?? false,
     pickupIncluded: adv.pickupIncluded ?? false,
+    requiredShuttle: adv.requiredShuttle ?? false,
   }
 }
 

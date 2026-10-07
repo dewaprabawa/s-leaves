@@ -8,6 +8,7 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
+import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import CookingGeoBlock from "@/components/CookingGeoBlock"
 import JeepGeoBlock from "@/components/JeepGeoBlock"
@@ -1029,12 +1030,18 @@ export default async function TourPage({ params }: Props) {
               </div>
 
               <div className="space-y-4">
+                {isSwingTour(tour) ? <SwingHeavenShuttleMustLabel /> : null}
                 <div className="flex flex-wrap items-center gap-3">
                   {tour.recommendedByTravelersPercent ? (
                     <TravelerRecommendBadge
                       percent={tour.recommendedByTravelersPercent}
                       variant="inline"
                     />
+                  ) : null}
+                  {isSwingTour(tour) ? (
+                    <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                      Include shuttle — must
+                    </span>
                   ) : null}
                   {isJeepTour(tour) ? (
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">

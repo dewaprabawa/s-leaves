@@ -462,7 +462,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'swing-heaven-bali-ubud-guide': {
     headline: 'Book Swing Heaven Bali from IDR 530K',
-    body: 'Bongkasa jungle swings — lunch package 630K, dress hire 300K. Hotel driver included and required. WhatsApp booking, no deposit to inquire.',
+    body: 'Bongkasa jungle swings — lunch package 630K, dress hire 300K. Required shuttle IDR 400K. WhatsApp booking, no deposit to inquire.',
     primaryHref: '/tours/swing-heaven-bali',
     primaryLabel: 'View Swing Heaven',
     secondaryHref: '/book?activity=combo-swing-cooking',
@@ -494,7 +494,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'swing-heaven-bongkasa-location': {
     headline: 'Get the Bongkasa pin and book',
-    body: 'Jl. Tangga Yuda, Bongkasa. Hotel driver included and required. Ticket from IDR 530,000.',
+    body: 'Jl. Tangga Yuda, Bongkasa. Required shuttle IDR 400K. Ticket from IDR 530,000.',
     primaryHref: '/tours/swing-heaven-bali',
     primaryLabel: 'Book Swing Heaven',
     secondaryHref: '/blog/ubud-hotel-pickup-bali-adventures-explained',

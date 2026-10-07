@@ -232,7 +232,7 @@ Compare machines: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [moto
 
 Bali Bike Driver (Kuta, 2026 site) lists South from **USD 32** and Ubud from **USD 37** with no IDR destination ladder. Pelago-style “Wonders of Bali by motorbike” listings sit near **USD 124** for a shorter clock. We publish **six IDR routes** and say tickets are extra.
 
-Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) is **IDR 450,000** for the vehicle, not the scooter. Want waterfalls only? [Ubud waterfall scooter](/blog/ubud-waterfall-scooter-tour-2026) is **IDR 500,000**.
+Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) is **IDR 850,000** private shuttle (tickets not included), not the scooter. Want waterfalls only? [Ubud waterfall scooter](/blog/ubud-waterfall-scooter-tour-2026) is **IDR 500,000**.
 
 ## South vs East in one screen
 

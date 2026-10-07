@@ -20,6 +20,8 @@ export type AdventureCatalogItem = {
   minPax: number
   freeUbudPickup?: boolean
   pickupIncluded?: boolean
+  /** Mandatory hotel shuttle (no self-meet); fee from booking quote. */
+  requiredShuttle?: boolean
 }
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"] as const
@@ -113,11 +115,11 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     tagline: "Jungle swings over the Ayung valley",
     paxLabel: "Per person",
     description:
-      "Swing Heaven in Bongkasa near Ubud — 14 jungle swings, nests, and photo spots overlooking the Ayung River. Package from IDR 530,000 (insurance + tea/coffee/water) or IDR 630,000 with lunch. Required shuttle auto-prices from your hotel pin: free within Ubud · IDR 400,000 outside. No self-meet. Optional flying dress hire IDR 300,000. Not the Tegallalang swing strip.",
+      "Swing Heaven in Bongkasa near Ubud — 14 jungle swings, nests, and photo spots overlooking the Ayung River. Package from IDR 530,000 (insurance + tea/coffee/water) or IDR 630,000 with lunch. Required shuttle IDR 400,000 (Ubud and outside). No self-meet. Optional flying dress hire IDR 300,000. Not the Tegallalang swing strip.",
     highlights: [
       "14 swings, nests & jungle beds",
       "Insurance + tea/coffee/water",
-      "Required shuttle — free Ubud · IDR 400K outside",
+      "Required shuttle — IDR 400,000 (Ubud and outside)",
       "Lunch package +IDR 100,000 · Bongkasa · own-phone photos",
     ],
     duration: "1.5–2.5 hours",
@@ -126,7 +128,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     tourSlug: "swing-heaven-bali",
     times: ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00"],
     minPax: 1,
-    pickupIncluded: true,
+    requiredShuttle: true,
   },
   {
     id: "jeep-sunrise",

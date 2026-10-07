@@ -6,17 +6,22 @@
 export const SWING_HEAVEN_PRICE_IDR = 530_000
 export const SWING_HEAVEN_LUNCH_PRICE_IDR = 630_000
 /**
- * Hotel shuttle is required (no self-meet). Fee follows the map pin:
- * free within Ubud (5 km) · IDR 400,000 outside Ubud (same flat as ATV/rafting pickup).
+ * Hotel shuttle is required (no self-meet). Flat IDR 400,000 once per booking
+ * — same rate inside and outside Ubud (not free within Ubud).
  */
 export const SWING_HEAVEN_SHUTTLE_REQUIRED = true
-export const SWING_HEAVEN_SHUTTLE_FREE_IN_UBUD = true
+export const SWING_HEAVEN_SHUTTLE_FREE_IN_UBUD = false
+export const SWING_HEAVEN_SHUTTLE_FEE_IDR = 400_000
 /** @deprecated Use SWING_HEAVEN_SHUTTLE_REQUIRED — kept for older imports. */
 export const SWING_HEAVEN_DRIVER_INCLUDED = true
 /** Short notice for booking dialogs / WhatsApp — shuttle is mandatory. */
 export const SWING_HEAVEN_SHUTTLE_NOTICE =
-  'Required shuttle — free within Ubud · IDR 400,000 outside Ubud. Self-meet at Bongkasa is not offered.'
+  'Required shuttle — IDR 400,000 (Ubud and outside). Self-meet at Bongkasa is not offered.'
 export const SWING_HEAVEN_SHUTTLE_NOTICE_SHORT = 'Required shuttle'
+/** Big UI label — shuttle must be included on every Swing Heaven booking. */
+export const SWING_HEAVEN_SHUTTLE_MUST_LABEL = 'Include shuttle — must'
+export const SWING_HEAVEN_SHUTTLE_MUST_SUBLINE =
+  'Hotel shuttle is required. Every Swing Heaven booking includes the shuttle.'
 export const SWING_HEAVEN_LUNCH_DIFF_IDR =
   SWING_HEAVEN_LUNCH_PRICE_IDR - SWING_HEAVEN_PRICE_IDR
 export const SWING_HEAVEN_DRESS_HIRE_IDR = 300_000
@@ -28,9 +33,8 @@ export function isSwingHeavenBookingId(id: string | undefined | null): boolean {
   return id === 'swing-heaven' || id === 'swing-heaven-lunch' || id === 'swing-heaven-bali'
 }
 
-export function swingHeavenShuttleLabel(isOutUbud: boolean, feeIdr: number): string {
-  if (feeIdr <= 0) return 'Required shuttle · free within Ubud'
-  if (isOutUbud) return 'Required shuttle · outside Ubud'
+export function swingHeavenShuttleLabel(_isOutUbud: boolean, feeIdr: number): string {
+  if (feeIdr > 0) return 'Required shuttle · IDR 400,000'
   return 'Required shuttle'
 }
 

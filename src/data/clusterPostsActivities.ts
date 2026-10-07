@@ -538,13 +538,13 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | ATV + Wos tubing | **1,250,000** floors · **10% mix** | Half / full day | IDR 400K once or self-meet | [ATV + tubing](/blog/atv-river-tubing-wos-river-bali) |
 | Whitewater rafting | **500,000** · **450,000** for 2+ | 3 hrs | IDR 400K or self-meet | [Rafting](/tours/whitewater-rafting) |
 | Canyon tubing | **500,000** · **450,000** for 2+ | 2.5 hrs | IDR 400K or self-meet | [Tubing](/tours/canyon-tubing) |
-| Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | Hotel driver included (required) | [Swing Heaven](/tours/swing-heaven-bali) |
+| Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | Required shuttle IDR 400,000 | [Swing Heaven](/tours/swing-heaven-bali) |
 | Griya Beji Waterfall | **300,000** · palm **1,000,000** · healing **1,500,000** | 1–2.5 hrs | IDR 400K or self-meet Punggul | [Griya Beji](/tours/griya-beji-waterfall) |
 | Tirta Empu Purification | **1,200,000** private | 3–4 hrs | Shuttle included (Ubud) | [Tirta Empul / Beji](/tours/tirta-empu-purification) |
 | Private Batur jeep | **750,000** (3+) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
 | Umah Kuno Luwak | **800,000** (min 3) | 1.5 hrs | Not included | [Coffee](/tours/luwak-coffee-plantation) |
 | Full day Ubud tour | **600,000** | 10 hrs | Private car | [Full day](/tours/full-day-ubud-tour) |
-| Half day + Tanah Lot | **450,000** | 6 hrs | Private car | [Sunset tour](/tours/half-day-ubud-tanah-lot-tour) |
+| Half day + Tanah Lot | **850,000** | 6 hrs | Private shuttle · tickets not included | [Sunset tour](/tours/half-day-ubud-tanah-lot-tour) |
 | DPS → Ubud transfer | **700,000** / car | One way | Flight tracking | [Transfers](/transfers) |
 | Bali Bird Park | **585,000** | 1 day | Quoted | [Bird Park](/tours/bali-bird-park) |
 | Bali Safari packages | **1,000,000–2,300,000** | 1 day / evening | Quoted | [Bali Safari](/tours/bali-safari-and-marine-park) |
@@ -573,7 +573,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Whitewater rafting](/tours/whitewater-rafting)** is Class II–III (splash, not extreme) at **IDR 500,000**, or **IDR 450,000** for 2+ (minimum 2), lunch included. Pickup is **IDR 400,000** or self-meet. Price table: [Ayung rafting Ubud price 2026](/blog/rafting-ubud-price-2026). **[Canyon tubing](/tours/canyon-tubing)** is the gentler Wos River float at the same **IDR 500,000 / 450,000 for 2+** — lunch not included; the usual ATV add-on. Price table: [Wos River tubing price 2026](/blog/wos-river-tubing-price-2026). Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-**[Swing Heaven Bali](/tours/swing-heaven-bali)** is the Bongkasa jungle park over the Ayung River — **IDR 530,000** (tea/coffee/water + insurance + hotel driver) or **IDR 630,000** with lunch, 14 photo spots, own-phone photos. Flying dress hire **IDR 300,000**. The hotel driver is **included and required** — no self-meet. It is **not** the Tegallalang rice-terrace swing strip. Guides: [Swing Heaven Ubud](/blog/swing-heaven-bali-ubud-guide) · [vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location).
+**[Swing Heaven Bali](/tours/swing-heaven-bali)** is the Bongkasa jungle park over the Ayung River — **IDR 530,000** (tea/coffee/water + insurance) or **IDR 630,000** with lunch, 14 photo spots, own-phone photos. Flying dress hire **IDR 300,000**. **Required shuttle IDR 400,000** (Ubud and outside) — no self-meet. It is **not** the Tegallalang rice-terrace swing strip. Guides: [Swing Heaven Ubud](/blog/swing-heaven-bali-ubud-guide) · [vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location).
 
 ## Culture & healing
 
@@ -589,7 +589,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation)** is **IDR 800,000** per person, **minimum 3 guests**, 1.5 hours in Tampaksiring. Cage-free civets only. **Transport is not included** (~25 minutes from central Ubud). Price guide: [Umah Kuno Luwak price 2026](/blog/luwak-coffee-plantation-umah-kuno-price-2026).
 
-**[Full day Ubud tour](/tours/full-day-ubud-tour)** from **IDR 600,000** — private car, English-speaking driver, typically palace, market, Tegalalang. Entrance fees and lunch not included. **[Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour)** from **IDR 450,000** for the coastal sunset. Guides: [full-day Ubud tour](/blog/full-day-ubud-tour-guide-2026) · [Tanah Lot half day](/blog/half-day-ubud-tanah-lot-sunset-tour-2026).
+**[Full day Ubud tour](/tours/full-day-ubud-tour)** from **IDR 600,000** — private car, English-speaking driver, typically palace, market, Tegalalang. Entrance fees and lunch not included. **[Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour)** **IDR 850,000** private shuttle for the coastal sunset — temple tickets not included. Guides: [full-day Ubud tour](/blog/full-day-ubud-tour-guide-2026) · [Tanah Lot half day](/blog/half-day-ubud-tanah-lot-sunset-tour-2026).
 
 **[Bali Motorbike Tour](/tours/bali-motorbike-traveling-trip)** is a guided **125–160cc automatic** scooter day. Promo from **IDR 450,000** per bike (Ubud, was 550,000) to **IDR 800,000** (East Bali, was 900,000). Attraction tickets are **not** included. Pickup is at the area you choose. Shuttle from **Canggu, Jimbaran, or Nusa Dua is IDR 550,000 once per booking**. Ride yourself (IDP recommended) or pillion. Prices: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026) · compare: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026) · [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026) · [waterfall scooter](/blog/ubud-waterfall-scooter-tour-2026) · [which wheels](/blog/which-bali-wheels-2026).
 
@@ -833,7 +833,7 @@ An International Driving Permit is **recommended** if you ride. Say pillion on W
 > - You set the pace; the published order is a guide
 > - Palace, market, and Tegalalang tickets are paid on site
 > - Bali Swing near Tegalalang is optional and extra
-> - Tight schedule? See the [Tanah Lot half day](/tours/half-day-ubud-tanah-lot-tour) from IDR 450,000
+> - Tight schedule? See the [Tanah Lot half day](/tours/half-day-ubud-tanah-lot-tour) shuttle IDR 850,000 (tickets not included)
 
 ## What you pay vs what you spend on site
 
@@ -863,7 +863,7 @@ Want quieter paddies instead of Tegalalang crowds? Swap the afternoon for [Pejen
 | Option | From (IDR) | Best when |
 | --- | --- | --- |
 | [Full day Ubud tour](/tours/full-day-ubud-tour) | 600,000 | You want palace + market + terraces in one car |
-| [Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) | 450,000 | You need a 6-hour coastal sunset |
+| [Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) | 850,000 shuttle | You need a 6-hour coastal sunset (tickets extra) |
 | [Cycling + Tumang cooking](/book?activity=combo-cycling-cooking) | Cycling promo 650K + cooking 450K | You want village + kitchen, not temples |
 | [Swing Heaven + Tumang cooking](/book?activity=combo-swing-cooking) | Swing 530K + cooking 450K | You want Ayung jungle photos + kitchen |
 | [Motorbike traveling trip](/tours/bali-motorbike-traveling-trip) | 450,000 / scooter | You want to ride, not sit in the car |
@@ -882,19 +882,19 @@ Temple dress: shoulders and knees covered. Short [sarong guide](/blog/bali-templ
   {
     slug: 'half-day-ubud-tanah-lot-sunset-tour-2026',
     title: 'Half Day Ubud & Tanah Lot Sunset Tour 2026',
-    seoTitle: 'Tanah Lot Sunset Clock | Half Day from Ubud',
+    seoTitle: 'Tanah Lot Sunset Clock | Shuttle IDR 850K',
     excerpt:
-      'Private half-day from Ubud to Tanah Lot sunset — from IDR 450,000, about 6 hours. Driver included; entrance fees and dinner not included. WhatsApp booking.',
+      'Private half-day shuttle from Ubud to Tanah Lot sunset — IDR 850,000, about 6 hours. Driver only; temple tickets and dinner not included. WhatsApp booking.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80',
     content: `
-**How much is a Tanah Lot sunset tour from Ubud?** Sekar Bali Activity’s [Half Day Ubud & Tanah Lot Sunset Tour](/tours/half-day-ubud-tanah-lot-tour) starts from **IDR 450,000** for a **private car** and **English-speaking driver** for about **6 hours**. Afternoon cultural stops around Ubud, then the **Tanah Lot** sea-temple sunset. **Entrance fees and dinner are not included.**
+**How much is a Tanah Lot sunset tour from Ubud?** Sekar Bali Activity’s [Half Day Ubud & Tanah Lot Sunset Tour](/tours/half-day-ubud-tanah-lot-tour) is **IDR 850,000** for a **private shuttle** (car + **English-speaking driver**) for about **6 hours**. Afternoon cultural stops around Ubud, then the **Tanah Lot** sea-temple sunset. **Temple tickets and dinner are not included** — pay entrance fees at the gate.
 
 > **Key Takeaways**
-> - From **IDR 450,000** · private car · ~6 hours
+> - **IDR 850,000** · private shuttle only · ~6 hours
+> - Temple tickets **not included** (Ubud stops + Tanah Lot)
 > - Typical pickup **around 1:00 PM** — we shift it with sunset season
-> - Tanah Lot ticket is paid at the gate
 > - Bring a sarong or rent one on site
 > - Need a full cultural day instead? [Full-day Ubud tour](/tours/full-day-ubud-tour) from IDR 600,000
 
@@ -905,15 +905,15 @@ This is **not** a shared sunset bus. You have your own driver, so Ubud stops can
 | Clock (typical) | What happens |
 | --- | --- |
 | 13:00 | Hotel pickup |
-| 14:30 | Ubud-area cultural stop(s) |
-| 17:00 | Tanah Lot — find a viewing spot |
+| 14:30 | Ubud-area cultural stop(s) — tickets on site |
+| 17:00 | Tanah Lot — find a viewing spot · ticket at the gate |
 | ~18:30+ | Sunset, then return |
 
 Exact times move with the season. We confirm the recommended pickup when you send the **date**.
 
-## What is not in the 450K
+## What is not in the 850K
 
-- Tanah Lot (and other temple) **entrance fees**
+- Tanah Lot (and other temple) **entrance tickets**
 - **Dinner**
 - Sarong rental if you did not bring one
 - Personal shopping
@@ -922,7 +922,7 @@ Driver, car, and mineral water **are** included. See [morning vs afternoon tours
 
 ## Half day vs full day
 
-Book **this** tour if you have a flight, a morning activity (ATV, cycling, cooking), or you specifically want the sea-temple silhouette. Book the [10-hour Ubud day](/blog/full-day-ubud-tour-guide-2026) if palace + market + Tegalalang need unhurried time.
+Book **this** shuttle if you have a flight, a morning activity (ATV, cycling, cooking), or you specifically want the sea-temple silhouette. Book the [10-hour Ubud day](/blog/full-day-ubud-tour-guide-2026) if palace + market + Tegalalang need unhurried time.
 
 Temple clothing: [Bali temple dress code](/blog/bali-temple-dress-code).
 
@@ -930,9 +930,9 @@ Temple clothing: [Bali temple dress code](/blog/bali-temple-dress-code).
 
 1. Open [Half Day Ubud & Tanah Lot](/tours/half-day-ubud-tanah-lot-tour)
 2. WhatsApp **date, hotel, guest count**
-3. We reply with pickup time and the car rate — **no deposit to ask**
+3. We reply with pickup time and the shuttle rate — **no deposit to ask**
 
-**Ready?** [Book the sunset tour](/tours/half-day-ubud-tanah-lot-tour) or scan every activity in [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026).
+**Ready?** [Book the sunset shuttle](/tours/half-day-ubud-tanah-lot-tour) or scan every activity in [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026).
 `,
   },
   {
@@ -992,12 +992,12 @@ Pairing ideas:
     title: 'Swing Heaven Bali near Ubud: Prices, Spots & Pickup 2026',
     seoTitle: 'Swing Heaven Guide 2026 | Spots & Pickup',
     excerpt:
-      'Swing Heaven Bali in Bongkasa from IDR 530,000 — 14 jungle photo spots, lunch package 630K, dress hire 300K. Hotel driver included and required. Not Tegallalang. WhatsApp booking.',
+      'Swing Heaven Bali in Bongkasa from IDR 530,000 — 14 jungle photo spots, lunch package 630K, dress hire 300K. Required shuttle IDR 400K. Not Tegallalang. WhatsApp booking.',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/swing-heaven-ayung.jpg',
     content: `
-**How much is Swing Heaven Bali near Ubud?** Sekar Bali Activity books [Swing Heaven](/tours/swing-heaven-bali) at **IDR 530,000** per person for the jungle-swing package, or **IDR 630,000** with lunch. The park sits on **Jl. Tangga Yuda, Bongkasa** (Abiansemal) over the **Ayung River valley** — a short drive from Ubud. It is **not** the Tegallalang rice-terrace swing strip. **Hotel driver is included and required** — no self-meet. Photos are on **your own phone**. Book on WhatsApp — **no payment to inquire**.
+**How much is Swing Heaven Bali near Ubud?** Sekar Bali Activity books [Swing Heaven](/tours/swing-heaven-bali) at **IDR 530,000** per person for the jungle-swing package, or **IDR 630,000** with lunch. The park sits on **Jl. Tangga Yuda, Bongkasa** (Abiansemal) over the **Ayung River valley** — a short drive from Ubud. It is **not** the Tegallalang rice-terrace swing strip. **Required shuttle is IDR 400,000** once per booking (Ubud and outside) — no self-meet. Photos are on **your own phone**. Book on WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - **IDR 530,000** package · **IDR 630,000** with lunch

@@ -1161,12 +1161,12 @@ Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) fir
     area: SWING_HEAVEN_VENUE.area,
     venue: `${SWING_HEAVEN_VENUE.name}, ${SWING_HEAVEN_VENUE.address}`,
     isTopPick: true,
-    pickup: "Hotel driver included — required, no self-meet",
+    pickup: "Required shuttle — free within Ubud · IDR 400,000 outside",
     duration: "1.5–2.5 Hours",
     basePrice: SWING_HEAVEN_PRICE_IDR,
     seoTitle: "Swing Heaven Bali Ubud | From IDR 530K",
     seoDescription:
-      "Swing Heaven Bali in Bongkasa from IDR 530K — driver included, required. Lunch 630K. Dress hire 300K. WhatsApp booking.",
+      "Swing Heaven Bali in Bongkasa from IDR 530K. Required shuttle: free within Ubud, IDR 400K outside. Lunch 630K. Dress hire 300K. WhatsApp.",
     heroImage: {
       url: "/images/adventures/swing-heaven-ayung.jpg",
       alt: "Guest on a jungle swing over the Ayung River valley at Swing Heaven Bali in Bongkasa near Ubud",
@@ -1200,7 +1200,7 @@ Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) fir
       },
     ],
     shortDescription:
-      "Jungle swing park in Bongkasa near Ubud — 14 photo spots over the Ayung River valley. Package from IDR 530,000 (tea/coffee/water, insurance, hotel driver) or IDR 630,000 with lunch. Driver included — required, no self-meet. Flying dress hire IDR 300,000. Book via WhatsApp.",
+      "Jungle swing park in Bongkasa near Ubud — 14 photo spots over the Ayung River valley. Package from IDR 530,000 (tea/coffee/water, insurance) or IDR 630,000 with lunch. Required shuttle auto-prices from your hotel pin: free within Ubud · IDR 400,000 outside. No self-meet. Flying dress hire IDR 300,000. Book via WhatsApp.",
     fullDescription: `**Swing Heaven Bali — jungle swings over the Ayung River (not Tegallalang)**
 
 [Swing Heaven](https://swingheavens.com/) is a locally run jungle swing park on **Jl. Tangga Yuda, Bongkasa** (Abiansemal, Badung) — a short drive from Ubud, overlooking the **Ayung River valley**. This is **not** the Tegallalang rice-terrace swing strip. We book the park for you on one WhatsApp thread with ATV, rafting, cooking, and cycling.
@@ -1208,8 +1208,9 @@ Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) fir
 ### 2026 packages (per person)
 | Package | Price | Includes |
 |--------|-------|----------|
-| Swing Heaven Package | **IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")}** (~USD 38) | All swings & photo spots, insurance, tea / coffee / water, hotel driver |
-| Package + lunch | **IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")}** (~USD 45) | Same access + lunch + hotel driver |
+| Swing Heaven Package | **IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")}** (~USD 38) | All swings & photo spots, insurance, tea / coffee / water |
+| Package + lunch | **IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")}** (~USD 45) | Same access + lunch |
+| Required shuttle | **Free within Ubud · IDR 400,000 outside** | Auto from hotel pin · no self-meet |
 | Flying dress hire | **IDR ${SWING_HEAVEN_DRESS_HIRE_IDR.toLocaleString("id-ID")}** | Optional — flowing photo dress |
 | Koi pond boat photo | **IDR ${SWING_HEAVEN_KOI_POND_IDR.toLocaleString("id-ID")}** | Optional — ice tea, fruit platter, photos on **your phone**. Confirm lobby availability |
 
@@ -1218,8 +1219,8 @@ ${SWING_HEAVEN_SPOTS.map((spot) => `- ${spot}`).join("\n")}
 
 Take photos on **your own phone**. A professional photographer is not included. Park hours **${SWING_HEAVEN_VENUE.hours}**.
 
-### Pickup
-**Hotel driver is included and required.** Pickup and drop-off sit in the ticket — no self-meet at Bongkasa and no IDR 400,000 add-on. Share your hotel pin on WhatsApp. This is not the optional ATV / rafting / tubing surcharge.
+### Required shuttle
+**Shuttle is required — no self-meet at Bongkasa.** The booking form auto-prices it from your hotel pin: **free within Ubud** (5 km) · **IDR 400,000 outside Ubud**. Share your hotel address when you book.
 
 ### Weather & refunds
 The Swing Heaven ticket is **non-refundable** once issued. If rain or unsafe weather closes the park, the venue issues a **voucher valid 7 days** from the issue date — not a cash refund. Cancel **24 hours before** we have issued the ticket and our usual [cancellation policy](/cancellation-policy) still applies.
@@ -1232,15 +1233,15 @@ Swing Heaven sits in Abiansemal, the same district as our [ATV arena](/tours/bal
 Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it) · [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location) · [Lunch package](/blog/bali-swing-with-lunch-ubud) · [Flying dress hire](/blog/flying-dress-hire-bali-swing) · [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).`,
     highlights: [
       "14 jungle swings, nests, and photo spots over the Ayung valley",
-      "From IDR 530,000 — insurance, tea/coffee/water, and hotel driver",
+      "From IDR 530,000 — insurance, tea/coffee/water",
       "Lunch package IDR 630,000 · flying dress hire IDR 300,000",
-      "Driver included — required, no self-meet at Bongkasa",
+      "Required shuttle — free within Ubud · IDR 400,000 outside",
     ],
     included: [
       "Access to jungle swings and photo spots (14 listed spots)",
       "On-site insurance",
       "Tea, coffee, or water",
-      "Hotel driver — pickup and drop-off (required, no self-meet)",
+      "Required hotel shuttle (free within Ubud · IDR 400,000 outside)",
       "Lunch (lunch package only)",
     ],
     notIncluded: [
@@ -1309,7 +1310,7 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
       {
         id: "faq-swing-1",
         question: "How much is Swing Heaven Bali near Ubud?",
-        answer: `The Swing Heaven Package is IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")} per person (swings, photo spots, insurance, tea/coffee/water, hotel driver). The lunch package is IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")}. Flying dress hire is IDR ${SWING_HEAVEN_DRESS_HIRE_IDR.toLocaleString("id-ID")}. Optional koi pond boat photo is IDR ${SWING_HEAVEN_KOI_POND_IDR.toLocaleString("id-ID")} when the lobby has availability. The driver is included and required — no self-meet and no IDR 400,000 add-on.`,
+        answer: `The Swing Heaven Package is IDR ${SWING_HEAVEN_PRICE_IDR.toLocaleString("id-ID")} per person (swings, photo spots, insurance, tea/coffee/water). The lunch package is IDR ${SWING_HEAVEN_LUNCH_PRICE_IDR.toLocaleString("id-ID")}. Flying dress hire is IDR ${SWING_HEAVEN_DRESS_HIRE_IDR.toLocaleString("id-ID")}. Optional koi pond boat photo is IDR ${SWING_HEAVEN_KOI_POND_IDR.toLocaleString("id-ID")} when the lobby has availability. Required shuttle is free within Ubud and IDR 400,000 outside — auto-priced from your hotel pin. No self-meet at Bongkasa.`,
       },
       {
         id: "faq-swing-2",
@@ -1326,7 +1327,7 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
         id: "faq-swing-4",
         question: "Is hotel pickup included?",
         answer:
-          "Yes. A hotel driver is included in the Swing Heaven ticket and is required — we do not offer self-meet at Bongkasa and we do not add the IDR 400,000 ATV/rafting surcharge. Share your hotel pin on WhatsApp.",
+          "Shuttle is required — no self-meet at Bongkasa. The booking form auto-prices it from your hotel pin: free within Ubud, or IDR 400,000 outside Ubud. Share your hotel address when you book.",
       },
       {
         id: "faq-swing-5",

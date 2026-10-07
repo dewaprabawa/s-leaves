@@ -113,11 +113,11 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     tagline: "Jungle swings over the Ayung valley",
     paxLabel: "Per person",
     description:
-      "Swing Heaven in Bongkasa near Ubud — 14 jungle swings, nests, and photo spots overlooking the Ayung River. Package from IDR 530,000 (insurance + tea/coffee/water + hotel driver) or IDR 630,000 with lunch. Driver included — required, no self-meet. Optional flying dress hire IDR 300,000. Not the Tegallalang swing strip.",
+      "Swing Heaven in Bongkasa near Ubud — 14 jungle swings, nests, and photo spots overlooking the Ayung River. Package from IDR 530,000 (insurance + tea/coffee/water) or IDR 630,000 with lunch. Required shuttle auto-prices from your hotel pin: free within Ubud · IDR 400,000 outside. No self-meet. Optional flying dress hire IDR 300,000. Not the Tegallalang swing strip.",
     highlights: [
       "14 swings, nests & jungle beds",
       "Insurance + tea/coffee/water",
-      "Hotel driver included — required, no self-meet",
+      "Required shuttle — free Ubud · IDR 400K outside",
       "Lunch package +IDR 100,000 · Bongkasa · own-phone photos",
     ],
     duration: "1.5–2.5 hours",

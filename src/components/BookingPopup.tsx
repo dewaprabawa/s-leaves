@@ -36,6 +36,7 @@ import {
   isSwingHeavenBookingId,
   SWING_HEAVEN_SHUTTLE_NOTICE,
   SWING_HEAVEN_SHUTTLE_NOTICE_SHORT,
+  swingHeavenShuttleLabel,
 } from '@/data/swingHeaven';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
@@ -74,6 +75,11 @@ export interface TourConfig {
   freeUbudPickup?: boolean
   /** Pickup is bundled into the tour price island-wide, no arena self-meet — jeep tour, private day tours */
   pickupIncluded?: boolean
+  /**
+   * Shuttle is mandatory (no self-meet). Fee comes from quotePickup + map pin
+   * (use with freeUbudPickup for free-within-Ubud / surcharge outside).
+   */
+  requiredShuttle?: boolean
   /** True only for activities that actually depart from the All New Bali Adventure arena (ATV, rafting, canyon tubing) */
   meetsAtArena?: boolean
   /** Self-meet only — do not offer hotel pickup (Luwak coffee plantation) */
@@ -159,7 +165,9 @@ export function BookingPopup({
       setShowDetails(false);
       setWantsPickup(
         tour.pickupNotOffered !== true &&
-          (tour.pickupIncluded === true || tour.freeUbudPickup === true),
+          (tour.requiredShuttle === true ||
+            tour.pickupIncluded === true ||
+            tour.freeUbudPickup === true),
       );
       setSameDropOff(false);
       setStep('form');
@@ -181,7 +189,9 @@ export function BookingPopup({
     setShowDetails(false)
     setWantsPickup(
       activeTour.pickupNotOffered !== true &&
-        (activeTour.pickupIncluded === true || activeTour.freeUbudPickup === true),
+        (activeTour.requiredShuttle === true ||
+          activeTour.pickupIncluded === true ||
+          activeTour.freeUbudPickup === true),
     )
     const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
     setMixIds((prev) => prev.filter((id) => allowed.has(id as MixableActivityId) && id !== activeTour.id))
@@ -264,6 +274,7 @@ export function BookingPopup({
   )
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupIncluded = activeTour.pickupIncluded === true;
+  const requiredShuttle = activeTour.requiredShuttle === true;
   const isSwingHeaven =
     isSwingHeavenBookingId(activeTour.id) ||
     isSwingHeavenBookingId(activeTour.pricingActivityId);
@@ -286,12 +297,21 @@ export function BookingPopup({
       ? selfMeet.mapUrl
       : undefined
   const hasFixedMeet = Boolean(meetLabel)
+  // Required shuttle always quotes as wantsPickup; location (isOutUbud) drives the fee.
+  const effectiveWantsPickup = requiredShuttle || wantsPickup
   const pickupQuote = quotePickup({
-    wantsPickup,
+    wantsPickup: effectiveWantsPickup,
     freeUbudPickup: hasFreeUbudPickup || pickupIncluded,
     isOutUbud: pickupIncluded ? false : isOutUbud,
     sameDropOff,
   });
+  const requiredShuttleLabel = isSwingHeaven
+    ? swingHeavenShuttleLabel(isOutUbud, pickupQuote.total)
+    : requiredShuttle
+      ? pickupQuote.total > 0
+        ? 'Required shuttle'
+        : 'Required shuttle · free within Ubud'
+      : null
 
   const activityTotal = mixedQuote
     ? mixedQuote.discountedSubtotal
@@ -326,7 +346,8 @@ export function BookingPopup({
   };
   const nameOk = guestName.trim().length >= 2;
   const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
-  const locationOk = wantsPickup
+  const needsHotelAddress = effectiveWantsPickup
+  const locationOk = needsHotelAddress
     ? Boolean(location) && locationDetails.trim().length >= 2
     : true;
   const canSubmit = nameOk && ageOk && locationOk && !isInvalidPax;
@@ -340,20 +361,28 @@ export function BookingPopup({
     if (isTandem && (adults < 2 || adults % 2 !== 0)) {
       return alert('Tandem ATV requires an even number of riders (2, 4, 6…).');
     }
-    if (!wantsPickup) {
+    if (!effectiveWantsPickup) {
       // meet at arena / self-arranged — no address needed
     } else if (!location) {
-      return alert("Please select a pickup location on the map.");
+      return alert(
+        requiredShuttle
+          ? "Required shuttle: please select your hotel pin on the map."
+          : "Please select a pickup location on the map.",
+      );
     } else if (!locationOk) {
-      return alert("Please enter your hotel / pickup address.");
+      return alert(
+        requiredShuttle
+          ? "Required shuttle: please enter your hotel / pickup address."
+          : "Please enter your hotel / pickup address.",
+      );
     }
 
-    const bookingLocation = wantsPickup
+    const bookingLocation = effectiveWantsPickup
       ? locationDetails.trim()
       : meetLabel
         ? `Meet at ${meetLabel}${meetAddress ? ` — ${meetAddress}` : ""}`
         : "Self-arranged — no operator pickup";
-    const bookingMapUrl = wantsPickup
+    const bookingMapUrl = effectiveWantsPickup
       ? location
         ? `https://www.google.com/maps/search/?api=1&query=${location.lat},${location.lng}`
         : undefined
@@ -362,18 +391,21 @@ export function BookingPopup({
     if (isInvalidPax) return alert(`Minimum ${minAdults} adult(s) required${includesRafting ? ' when rafting is included' : ''}.`);
 
     const pickupNoteParts: string[] = [];
-    if (!wantsPickup) {
+    if (requiredShuttle) {
+      pickupNoteParts.push(
+        `${requiredShuttleLabel ?? SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}: ${
+          pickupFee > 0 ? formatIdr(pickupFee) : 'IDR 0'
+        }`,
+      );
+      if (isSwingHeaven) pickupNoteParts.push(SWING_HEAVEN_SHUTTLE_NOTICE);
+    } else if (!effectiveWantsPickup) {
       pickupNoteParts.push(
         meetLabel
           ? `Self meet at ${meetLabel} — no pickup fee`
           : 'Self-arranged — no operator pickup',
       );
     } else if (pickupIncluded) {
-      pickupNoteParts.push(
-        isSwingHeaven
-          ? SWING_HEAVEN_SHUTTLE_NOTICE
-          : 'Hotel pickup & drop-off included in tour price',
-      );
+      pickupNoteParts.push('Hotel pickup & drop-off included in tour price');
     } else if (hasFreeUbudPickup && !isOutUbud) {
       pickupNoteParts.push('Free Ubud pickup (cycling tour)');
     } else {
@@ -465,9 +497,13 @@ export function BookingPopup({
         amount: addonAmount(addon, addonPax),
       })
     }
-    if (pickupFee > 0) {
+    if (requiredShuttle || pickupFee > 0) {
       lineItems.push({
-        label: sameDropOff ? 'Hotel pickup & return transfer' : 'Hotel pickup transfer',
+        label: requiredShuttle
+          ? requiredShuttleLabel ?? 'Required shuttle'
+          : sameDropOff
+            ? 'Hotel pickup & return transfer'
+            : 'Hotel pickup transfer',
         amount: pickupFee,
       });
     }
@@ -565,7 +601,7 @@ export function BookingPopup({
         </div>
 
         <div className="w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
-          {!wantsPickup ? (
+          {!effectiveWantsPickup ? (
             hasFixedMeet && meetLabel ? (
               <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">
                 <p className="text-xs font-bold uppercase tracking-wider text-brand-green-light mb-2">
@@ -611,8 +647,8 @@ export function BookingPopup({
             }} />
           )}
           <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
-            <strong className="block mb-1">{wantsPickup ? "Pickup Location" : "Meeting Point"}</strong>
-            {!wantsPickup ? (
+            <strong className="block mb-1">{effectiveWantsPickup ? "Pickup Location" : "Meeting Point"}</strong>
+            {!effectiveWantsPickup ? (
               meetLabel ? (
                 <span className="text-brand-green font-bold flex items-center gap-1">
                   <span className="w-2 h-2 rounded-full bg-brand-green"></span>
@@ -622,12 +658,14 @@ export function BookingPopup({
                 <span className="opacity-70">Self-arranged — no operator pickup</span>
               )
             ) : location ? (
-               pickupIncluded ? (
+               requiredShuttle ? (
+                 <span className={`font-bold block ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>
+                   {requiredShuttleLabel}: {pickupFee > 0 ? formatIdr(pickupFee) : 'IDR 0'}
+                 </span>
+               ) : pickupIncluded ? (
                  <span className="text-brand-green font-bold flex items-center gap-1">
                    <span className="w-2 h-2 rounded-full bg-brand-green"></span>
-                   {isSwingHeaven
-                     ? SWING_HEAVEN_SHUTTLE_NOTICE_SHORT
-                     : 'Pickup included in tour price'}
+                   Pickup included in tour price
                  </span>
                ) : hasFreeUbudPickup ? (
                  isOutUbud ? (
@@ -855,23 +893,23 @@ export function BookingPopup({
               </div>
             </div>
 
-            {pickupIncluded ? (
-              <div
-                className={`rounded-xl border px-4 py-3.5 text-sm ${
-                  isSwingHeaven
-                    ? 'border-accent-gold/40 bg-accent-gold/10'
-                    : 'border-brand-green/15 bg-brand-green/5'
-                }`}
-              >
+            {requiredShuttle ? (
+              <div className="rounded-xl border border-accent-gold/40 bg-accent-gold/10 px-4 py-3.5 text-sm">
                 <span className="font-bold text-brand-green block mb-0.5">
-                  {isSwingHeaven
-                    ? 'Hotel shuttle required (included)'
-                    : 'Hotel pickup included'}
+                  {SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}
                 </span>
+                <span className="text-brand-green-light block mb-2">
+                  {SWING_HEAVEN_SHUTTLE_NOTICE} Move the map pin — the shuttle line updates automatically.
+                </span>
+                <span className={`font-bold block ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>
+                  {requiredShuttleLabel}: {pickupFee > 0 ? formatIdr(pickupFee) : 'IDR 0'}
+                </span>
+              </div>
+            ) : pickupIncluded ? (
+              <div className="rounded-xl border border-brand-green/15 bg-brand-green/5 px-4 py-3.5 text-sm">
+                <span className="font-bold text-brand-green block mb-0.5">Hotel pickup included</span>
                 <span className="text-brand-green-light">
-                  {isSwingHeaven
-                    ? `${SWING_HEAVEN_SHUTTLE_NOTICE} Add your hotel address below before you send WhatsApp.`
-                    : "Pickup & drop-off is included in this tour's price — no arena self-meet and no extra fee. Add your hotel address below."}
+                  Pickup &amp; drop-off is included in this tour&apos;s price — no arena self-meet and no extra fee. Add your hotel address below.
                 </span>
               </div>
             ) : pickupNotOffered ? (
@@ -902,7 +940,7 @@ export function BookingPopup({
               </label>
             )}
 
-            {wantsPickup ? (
+            {effectiveWantsPickup ? (
             <>
             <div>
               <label className="block text-brand-green font-bold text-sm mb-2">Hotel / Pickup Address *</label>
@@ -914,7 +952,7 @@ export function BookingPopup({
                 className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
               />
             </div>
-            {(!hasFreeUbudPickup && !pickupIncluded) || (isOutUbud && !pickupIncluded) ? (
+            {(!hasFreeUbudPickup && !pickupIncluded && !requiredShuttle) || (isOutUbud && !pickupIncluded && !requiredShuttle) ? (
               <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3 shadow-sm">
                 <input
                   type="checkbox"
@@ -929,38 +967,44 @@ export function BookingPopup({
                 </span>
               </label>
             ) : null}
-            {pickupIncluded ? null : (
-            <div className="rounded-xl border border-brand-green/10 bg-brand-green/5 px-4 py-3 text-xs text-brand-green-light space-y-1.5">
-              <p className="font-bold text-brand-green text-sm">Grab / GoCar vs our pickup</p>
-              <p>Typical Grab or GoCar one-way Ubud ↔ arena: ~IDR {pickupQuote.grabOneWayTypical.toLocaleString('id-ID')} (est.)</p>
-              <p>
-                Our pickup: <strong className="text-brand-green">{pickupQuote.total > 0 ? formatIdr(pickupQuote.total) : 'Free (Ubud area)'}</strong>
-                {pickupQuote.total > 0 && pickupQuote.savingsVsGrabRoundTrip > 0 && sameDropOff
-                  ? ` · saves ~${formatIdr(pickupQuote.savingsVsGrabRoundTrip)} vs Grab round trip`
-                  : pickupQuote.total > 0 && pickupQuote.savingsVsGrabOneWay > 0 && !sameDropOff
-                    ? ` · saves ~${formatIdr(pickupQuote.savingsVsGrabOneWay)} vs Grab one-way`
-                    : ''}
+            {pickupIncluded || requiredShuttle || !meetLabel ? null : meetMapUrl ? (
+              <p className="text-xs text-brand-green-light opacity-80">
+                Prefer to self-meet? Uncheck hotel pickup —{' '}
+                <a
+                  href={meetMapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline font-semibold text-brand-green"
+                >
+                  open {meetLabel} map
+                </a>
+                .
               </p>
-              {meetLabel && meetMapUrl ? (
-                <p className="opacity-80">Or meet at {meetLabel} with no transport fee — <a href={meetMapUrl} target="_blank" rel="noopener noreferrer" className="underline font-semibold text-brand-green">open map</a></p>
-              ) : null}
-            </div>
-            )}
+            ) : null}
             </>
             ) : hasFixedMeet && meetLabel ? (
             <>
             <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
-              <span className="font-bold text-brand-green">Meeting at:</span> {meetLabel}{meetAddress ? `, ${meetAddress}` : ""}
+              <span className="font-bold text-brand-green">Meeting at:</span> {meetLabel}
+              {meetAddress ? `, ${meetAddress}` : ''}
+              {meetMapUrl ? (
+                <>
+                  {' · '}
+                  <a
+                    href={meetMapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline font-semibold text-brand-green"
+                  >
+                    open map
+                  </a>
+                </>
+              ) : null}
             </div>
-            <div className="rounded-xl border border-brand-green/10 bg-brand-green/5 px-4 py-3 text-xs text-brand-green-light space-y-1.5">
-              <p className="font-bold text-brand-green text-sm">Grab / GoCar vs self-meet</p>
-              <p>Typical Grab or GoCar one-way Ubud ↔ venue: ~IDR {pickupQuote.grabOneWayTypical.toLocaleString('id-ID')} (est.)</p>
-              <p>
-                Meet at {meetLabel}: <strong className="text-brand-green">IDR 0 transport fee</strong>
-                {' '}· saves ~{formatIdr(pickupQuote.grabOneWayTypical)} vs Grab one-way
-              </p>
-              <p className="opacity-80">Need pickup? Check &quot;I need hotel pickup&quot; above — hotel pickup charge IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')}.</p>
-            </div>
+            <p className="text-xs text-brand-green-light opacity-80 px-1">
+              No pickup surcharge when you self-meet. Need hotel pickup? Check &quot;I need hotel pickup&quot; above — IDR{' '}
+              {PICKUP_FEE_IDR.toLocaleString('id-ID')}.
+            </p>
             </>
             ) : (
             <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
@@ -983,7 +1027,7 @@ export function BookingPopup({
                 />
               </div>
               <div className="flex-1">
-                <label className="block text-brand-green font-bold text-sm mb-2">{wantsPickup ? "Pickup Time" : "Meeting Time"}</label>
+                <label className="block text-brand-green font-bold text-sm mb-2">{effectiveWantsPickup ? "Pickup Time" : "Meeting Time"}</label>
                 <select value={time} onChange={e => setTime(e.target.value)} className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm appearance-none cursor-pointer">
                   {activeTour.times.map((t, idx) => (
                     <option key={idx} value={t}>{t}</option>
@@ -1110,10 +1154,16 @@ export function BookingPopup({
                 </span>
               </div>
             ))}
-            {pickupFee > 0 && (
+            {(requiredShuttle || pickupFee > 0) && (
               <div className="flex justify-between items-center mb-3 text-sm text-brand-green-light">
-                <span>Pickup &amp; transfer{sameDropOff ? ' (round trip)' : ''}</span>
-                <span className="font-semibold text-brand-green">{formatIdr(pickupFee)}</span>
+                <span>
+                  {requiredShuttle
+                    ? requiredShuttleLabel
+                    : `Pickup & transfer${sameDropOff ? ' (round trip)' : ''}`}
+                </span>
+                <span className={`font-semibold ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>
+                  {formatIdr(pickupFee)}
+                </span>
               </div>
             )}
             <div className="flex justify-between items-end mb-5">

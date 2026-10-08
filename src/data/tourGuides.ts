@@ -161,7 +161,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Private Mount Batur jeep',
       href: '/tours/batur-sunrise-jeep-tour',
-      blurb: 'Pre-dawn 4×4, meal included, island-wide pickup — not the summit hike.',
+      blurb: 'Pre-dawn 4×4, breakfast included, island-wide pickup — not the summit hike.',
     },
   ],
   'whitewater-rafting': [
@@ -576,7 +576,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Jeep vs sunrise trek',
       href: '/blog/mount-batur-jeep-vs-sunrise-trek',
-      blurb: 'Crater-rim 4×4 vs the 2-hour summit walk — meal included on the jeep.',
+      blurb: 'Crater-rim 4×4 vs the 2-hour summit walk — breakfast included on the jeep.',
     },
     {
       title: 'Kintamani scooter vs jeep',
@@ -611,7 +611,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Private Kintamani Day itinerary',
       href: '/blog/private-kintamani-day-jeep-itinerary',
-      blurb: 'Promo 1.3M: jeep, hot spring ticket, meal, coffee, terrace.',
+      blurb: 'Promo 1.3M: jeep, hot spring ticket, breakfast, coffee, terrace.',
     },
   ],
   'bali-private-itinerary': [
@@ -648,7 +648,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Private Mount Batur jeep',
       href: '/tours/batur-sunrise-jeep-tour',
-      blurb: 'Crater-rim sunrise, meal included — not the summit hike.',
+      blurb: 'Crater-rim sunrise, breakfast included — not the summit hike.',
     },
     {
       title: 'Airport transfer DPS → Ubud',
@@ -696,7 +696,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep', blurb: 'You ride vs you sit at a crater-rim viewpoint.' },
     { title: 'Motorbike vs dirt bike', href: '/blog/bali-motorbike-tour-vs-dirt-bike-2026', blurb: 'Public-road scooter from 450K is not this lava enduro.' },
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026', blurb: 'Dirt bike next to scooter, ATV, UTV, and jeep.' },
-    { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour', blurb: 'Meal + island-wide pickup — not the summit hike.' },
+    { title: 'Private Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour', blurb: 'Breakfast + island-wide pickup — not the summit hike.' },
     { title: 'Tabanan dirt bike', href: '/tours/dirt-bike-tabanan-day-night', blurb: 'Rainforest / Jatiluwih line from IDR 2.1M.' },
   ],
   'dirt-bike-tabanan-day-night': [
@@ -798,7 +798,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'batur-sunrise-jeep-tour': {
     title: 'From our Kintamani jeep drivers',
-    body: 'We run the pre-dawn 4×4 tracks on Mount Batur’s eastern flank most mornings — hotel pickup, a hot drink on the way up, and a sit-down meal after the crater-rim viewpoint (~1,350m). This is not the summit trek: you stay in the jeep (or walk with a tracking guide) and watch Lake Batur and Mount Agung light up without a 2-hour hike in the dark.',
+    body: 'We run the pre-dawn 4×4 tracks on Mount Batur’s eastern flank most mornings — hotel pickup, a hot drink on the way up, and breakfast after the crater-rim viewpoint (~1,350m). This is not the summit trek: you stay in the jeep (or walk with a tracking guide) and watch Lake Batur and Mount Agung light up without a 2-hour hike in the dark.',
   },
   'luwak-coffee-plantation': {
     title: 'From our Umah Kuno hosts',

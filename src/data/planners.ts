@@ -221,9 +221,9 @@ export const PLANNERS: Planner[] = [
     h1: 'Free Mount Batur jeep price calculator',
     job: 'Sit-in or tracking, guest count, optional hot spring — island-wide pickup included.',
     description:
-      'Free Mount Batur jeep price calculator. Sit-in IDR 2,000,000 for 2 guests, tracking IDR 1,800,000 for 2, IDR 750,000 per person for 3+. Meal included. Optional hot spring +IDR 150,000.',
+      'Free Mount Batur jeep price calculator. Sit-in IDR 2,300,000 for 2 or IDR 2,850,000 for 3, tracking IDR 1,800,000 for 2 or IDR 750,000 per person for 3+. Breakfast included. Optional hot spring +IDR 150,000.',
     definition:
-      'The Mount Batur jeep price calculator is a free IDR estimator for the private Kintamani 4×4. Minimum 2 guests. Sit-in is IDR 2,000,000 for 2 guests. Tracking (jeep plus a guided walk) is IDR 1,800,000 for 2 guests. Three or more guests pay IDR 750,000 per person. Island-wide hotel pickup and a sit-down meal after the viewpoint are included. Food is not cooked inside the 4×4. Not the summit trek.',
+      'The Mount Batur jeep price calculator is a free IDR estimator for the private Kintamani 4×4. Minimum 2 guests. Sit-in is IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3 (IDR 950,000 per person for 3+). Tracking (jeep plus a guided walk) is IDR 1,800,000 for 2 guests or IDR 750,000 per person for 3+. Island-wide hotel pickup and breakfast after the viewpoint are included. Food is not cooked inside the 4×4. Not the summit trek.',
     keywords: [
       'Mount Batur jeep price calculator',
       'Batur jeep cost calculator',

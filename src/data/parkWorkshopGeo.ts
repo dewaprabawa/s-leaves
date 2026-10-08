@@ -303,7 +303,7 @@ const DIRT_KINTAMANI = ticketGeo({
     {
       intent: 'dirt bike vs mount batur jeep',
       q: 'Should I book a dirt bike or the Mount Batur jeep?',
-      a: `Dirt bike (${idr(P.dirtKintamani)}) is a guided enduro on lava and forest tracks for riders. The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint (~1,350 m) from IDR 750,000 per person at 3+ — no hike, meal included, island-wide pickup. Different sports.`,
+      a: `Dirt bike (${idr(P.dirtKintamani)}) is a guided enduro on lava and forest tracks for riders. The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint (~1,350 m) from IDR 750,000 per person at 3+ — no hike, breakfast included, island-wide pickup. Different sports.`,
     },
   ],
   citationSnippets: [

@@ -253,7 +253,7 @@ Full menu: [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026).
 1. **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — flagship mud then paddle · from **1.25M**
 2. **[Sedang ATV](/tours/bali-atv-adventure)** — jungle mud · from **750K** · lunch in
 3. **[Ayung rafting](/tours/whitewater-rafting)** — Class II–III · **500K** / **450K** for 2+ · **min 2**
-4. **[Private Batur jeep](/tours/batur-sunrise-jeep-tour)** — sunrise without the 2-hour summit hike · **2M for 2** sit-in · **750K** at 3+
+4. **[Private Batur jeep](/tours/batur-sunrise-jeep-tour)** — sunrise without the 2-hour summit hike · **2.3M for 2** sit-in · **2.85M for 3**
 5. **[Wos tubing](/tours/canyon-tubing)** — sit-on-tube · **500K** / **450K** for 2+
 6. **[Scooter tour](/tours/bali-motorbike-traveling-trip)** — promo from **450K** / bike · tickets extra
 7. **[UTV](/tours/utv-buggy-bali-adventure)** — Pemogan sit-in hour · **1.2M** / **1.5M** tandem
@@ -269,7 +269,7 @@ This is **not** a “best adventures in all of Bali” list. We do not run Nusa 
 | [Tumang cooking class](/tours/balinese-cooking-class) | Max 8 · Chef Wayan · 10+ dishes · free Ubud pickup | **450,000** promo | [Cooking](/tours/balinese-cooking-class) |
 | [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) | Subak paths · lunch · free Ubud pickup | **650,000** promo (was 750,000) | [Cycling](/tours/ubud-ricefield-cycling-tour) |
 | [Cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary) | Village morning + kitchen afternoon | Two published tickets | [Book combo](/book?activity=combo-cycling-cooking) |
-| [Batur jeep](/tours/batur-sunrise-jeep-tour) | Private 4×4 to ~1,350m rim · **not** the summit trek | **2M for 2** / **750K** at 3+ | [Jeep](/tours/batur-sunrise-jeep-tour) |
+| [Batur jeep](/tours/batur-sunrise-jeep-tour) | Private 4×4 to ~1,350m rim · **not** the summit trek | **2.3M for 2** / **2.85M for 3** sit-in | [Jeep](/tours/batur-sunrise-jeep-tour) |
 | [Griya Beji waterfall](/tours/griya-beji-waterfall) | Punggul purification · **not** Tirta Empul | **300,000** | [Griya Beji](/tours/griya-beji-waterfall) |
 | [Umah Kuno Luwak](/tours/luwak-coffee-plantation) | Cage-free tasting · min 3 · transport not in | **800,000** | [Coffee](/tours/luwak-coffee-plantation) |
 
@@ -521,7 +521,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 > - Food + village days include **free Ubud pickup** (cooking + cycling)
 > - ATV / rafting / tubing / Griya Beji: **IDR 400,000** hotel pickup or free self-meet
 > - Swing Heaven: **hotel driver included** (required, no self-meet)
-> - Private Batur jeep: **island-wide pickup included** — sit-down **meal included** after the viewpoint (jeep and tracking)
+> - Private Batur jeep: **island-wide pickup included** — sit-down **breakfast included** after the viewpoint (jeep and tracking)
 > - Coffee tasting: **min 3 guests**, transport **not** included
 > - No upfront payment to inquire — [Book on WhatsApp](/book)
 
@@ -541,7 +541,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | Required shuttle IDR 400,000 | [Swing Heaven](/tours/swing-heaven-bali) |
 | Griya Beji Waterfall | **300,000** · palm **1,000,000** · healing **1,500,000** | 1–2.5 hrs | IDR 400K or self-meet Punggul | [Griya Beji](/tours/griya-beji-waterfall) |
 | Tirta Empu Purification | **1,200,000** private | 3–4 hrs | Shuttle included (Ubud) | [Tirta Empul / Beji](/tours/tirta-empu-purification) |
-| Private Batur jeep | **750,000** (3+) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
+| Private Batur jeep | from **750,000** (3+ tracking) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
 | Umah Kuno Luwak | **800,000** (min 3) | 1.5 hrs | Not included | [Coffee](/tours/luwak-coffee-plantation) |
 | Full day Ubud tour | **600,000** | 10 hrs | Private car | [Full day](/tours/full-day-ubud-tour) |
 | Half day + Tanah Lot | **850,000** | 6 hrs | Private shuttle · tickets not included | [Sunset tour](/tours/half-day-ubud-tanah-lot-tour) |
@@ -581,7 +581,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Tirta Empu Purification](/tours/tirta-empu-purification)** is the private **IDR 1,200,000** temple morning at **Tirta Empul or Pura Beji** — shuttle, guide, offering, sarong, and **breakfast included**. Guide: [Tirta Empu melukat](/blog/tirta-empu-melukat-ubud-guide).
 
-**[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is **your private 4×4** — sit-in (no hike) **IDR 2,000,000 for 2 guests** or **tracking jeep** (jeep + guided trek) **IDR 1,800,000 for 2 guests**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m. 3+ **IDR 750,000**. **Meal included.** Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
+**[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is **your private 4×4** — sit-in (no hike) **IDR 2,300,000 for 2 guests** (**IDR 2,850,000 for 3**) or **tracking jeep** (jeep + guided trek) **IDR 1,800,000 for 2 guests**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m, then the black lava field. Tracking 3+ **IDR 750,000**. **Breakfast included.** Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
 ## Coffee, culture & private cars
 

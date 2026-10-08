@@ -20,9 +20,10 @@ import {
 } from '@/data/planners'
 import { UTV_BUGGY_SINGLE_IDR, UTV_BUGGY_TANDEM_IDR } from '@/data/utvBuggy'
 import {
-  JEEP_GROUP_IDR,
   JEEP_HOT_SPRING_IDR,
+  JEEP_SITIN_GROUP_IDR,
   JEEP_SITIN_PAIR_TOTAL_IDR,
+  JEEP_TRACKING_GROUP_IDR,
   JEEP_TRACKING_PAIR_TOTAL_IDR,
   PICKUP_FEE_IDR,
   TIER_PRICES_IDR,
@@ -148,9 +149,10 @@ export function quoteJeepPlanner(input: {
     return { ok: false, error: 'Private jeep is minimum 2 guests.' }
   }
 
-  const pairTotal =
-    input.variant === 'tracking' ? JEEP_TRACKING_PAIR_TOTAL_IDR : JEEP_SITIN_PAIR_TOTAL_IDR
-  const activityTotal = guests === 2 ? pairTotal : JEEP_GROUP_IDR * guests
+  const tracking = input.variant === 'tracking'
+  const pairTotal = tracking ? JEEP_TRACKING_PAIR_TOTAL_IDR : JEEP_SITIN_PAIR_TOTAL_IDR
+  const groupRate = tracking ? JEEP_TRACKING_GROUP_IDR : JEEP_SITIN_GROUP_IDR
+  const activityTotal = guests === 2 ? pairTotal : groupRate * guests
   const perPerson = activityTotal / guests
   const hotSpringTotal = input.hotSpring ? JEEP_HOT_SPRING_IDR * guests : 0
   const variantLabel = input.variant === 'tracking' ? 'Private tracking jeep' : 'Private sit-in jeep'
@@ -163,7 +165,7 @@ export function quoteJeepPlanner(input: {
         label:
           guests === 2
             ? `${variantLabel} 2-guest package (${formatPlannerIdr(perPerson)} pp)`
-            : `${guests} × 3+ group rate (${formatPlannerIdr(JEEP_GROUP_IDR)} pp)`,
+            : `${guests} × 3+ group rate (${formatPlannerIdr(groupRate)} pp)`,
         amount: activityTotal,
       },
       {
@@ -176,7 +178,7 @@ export function quoteJeepPlanner(input: {
     ],
     total: activityTotal + hotSpringTotal,
     notes: [
-      'Sit-down meal after the viewpoint is included. Food is not cooked inside the 4×4.',
+      'Breakfast after the viewpoint is always included; lunch is optional. Food is not cooked inside the 4×4.',
       'Not the 2-hour Mount Batur summit trek. Sit-in stays in the 4×4; tracking adds a guided walk to the crater-rim viewpoint (~1,350 m).',
       'Hotel pickup is included island-wide — not the IDR 400,000 ATV / rafting surcharge.',
     ],
@@ -456,7 +458,7 @@ export function chooseActivity(mood: ActivityMoodId): ActivityChoice {
         title: 'Private sit-in Mount Batur jeep',
         fromPrice: JEEP_SITIN_PAIR_TOTAL_IDR / 2,
         pickup: 'Island-wide hotel pickup included',
-        why: 'Stay in the 4×4 to a crater-rim viewpoint. Minimum 2 guests. Meal after the viewpoint. Not the summit trek.',
+        why: 'Stay in the 4×4 to a crater-rim viewpoint. Minimum 2 guests. Breakfast after the viewpoint. Not the summit trek.',
         tourHref: '/tours/batur-sunrise-jeep-tour',
         blogHref: '/blog/mount-batur-jeep-vs-sunrise-trek',
         blogLabel: 'Jeep vs trek',

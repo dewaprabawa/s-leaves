@@ -427,12 +427,12 @@ We book the lodge ticket. Pickup is not in the from-price unless you add a drive
   }),
   ticketTour({
     slug: "dirt-bike-kintamani-black-lava",
-    imageSlug: "dirt-bike-kintamani-lake-batur-riders",
-    imageAlt: "Bali Mountain Dirt Bike Adventure riders above Lake Batur with Mount Batur behind, Kintamani",
+    imageSlug: "dirt-bike-black-lava-drift-wide",
+    imageAlt: "Dirt bike rider kicking up black lava sand on the Kintamani track",
     galleryExtras: [
       {
-        slug: "dirt-bike-kintamani-black-lava-drift",
-        alt: "Dirt bike rider kicking up black lava sand on the Kintamani track",
+        slug: "dirt-bike-kintamani-lake-batur-riders",
+        alt: "Bali Mountain Dirt Bike Adventure riders above Lake Batur with Mount Batur behind, Kintamani",
       },
       {
         slug: "dirt-bike-kintamani-forest-riders",
@@ -528,7 +528,8 @@ Wet season (December–May) is the usual Kintamani window (traction, less dust).
   }),
   ticketTour({
     slug: "dirt-bike-tabanan-day-night",
-    imageSlug: "dirt-bike-tabanan-jungle",
+    imageSlug: "dirt-bike-kintamani-forest-riders",
+    imageAlt: "Group of dirt bike riders with their bikes on a forest trail in Bali",
     title: "Dirt Bike — Tabanan Day & Night",
     seoTitle: "Tabanan Dirt Bike Day & Night | From IDR 2.1M",
     seoDescription:
@@ -560,7 +561,8 @@ This is not a beach-sunset package — see the jungle & sunset-beach ticket.`,
   }),
   ticketTour({
     slug: "dirt-bike-tabanan-jungle-sunset-beach",
-    imageSlug: "dirt-bike-tabanan-sunset",
+    imageSlug: "dirt-bike-black-lava-drift-wide",
+    imageAlt: "Dirt bike rider kicking up dust on an off-road track in Bali",
     title: "Dirt Bike — Tabanan Jungle & Sunset Beach",
     seoTitle: "Tabanan Dirt Bike Sunset | From IDR 2.1M",
     seoDescription:

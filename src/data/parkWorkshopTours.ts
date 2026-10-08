@@ -427,12 +427,12 @@ We book the lodge ticket. Pickup is not in the from-price unless you add a drive
   }),
   ticketTour({
     slug: "dirt-bike-kintamani-black-lava",
-    imageSlug: "dirt-bike-kintamani-lake-batur-riders",
-    imageAlt: "Bali Mountain Dirt Bike Adventure riders above Lake Batur with Mount Batur behind, Kintamani",
+    imageSlug: "dirt-bike-black-lava-drift-wide",
+    imageAlt: "Dirt bike rider kicking up black lava sand on the Kintamani track",
     galleryExtras: [
       {
-        slug: "dirt-bike-kintamani-black-lava-drift",
-        alt: "Dirt bike rider kicking up black lava sand on the Kintamani track",
+        slug: "dirt-bike-kintamani-lake-batur-riders",
+        alt: "Bali Mountain Dirt Bike Adventure riders above Lake Batur with Mount Batur behind, Kintamani",
       },
       {
         slug: "dirt-bike-kintamani-forest-riders",

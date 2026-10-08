@@ -10,6 +10,7 @@ import TourBookingCard from "@/components/TourBookingCard"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
 import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
+import TourPhotoGrid from "@/components/TourPhotoGrid"
 import CookingGeoBlock from "@/components/CookingGeoBlock"
 import JeepGeoBlock from "@/components/JeepGeoBlock"
 import ActivityGeoBlock from "@/components/ActivityGeoBlock"
@@ -1012,21 +1013,25 @@ export default async function TourPage({ params }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_360px] gap-10 lg:gap-12 items-start">
           <div className="space-y-10 md:space-y-12">
             <header className="space-y-6">
-              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-xl">
-                <Image
-                  src={tour.heroImage.url}
-                  alt={tour.heroImage.alt}
-                  fill
-                  priority
-                  sizes="(max-width: 1024px) 100vw, 66vw"
-                  className="object-cover"
-                />
-                {tour.recommendedByTravelersPercent ? (
-                  <TravelerRecommendBadge
-                    percent={tour.recommendedByTravelersPercent}
-                    variant="hero"
+              <div className="space-y-2 sm:space-y-3">
+                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-xl">
+                  <Image
+                    src={tour.heroImage.url}
+                    alt={tour.heroImage.alt}
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 100vw, 66vw"
+                    className="object-cover"
                   />
-                ) : null}
+                  {tour.recommendedByTravelersPercent ? (
+                    <TravelerRecommendBadge
+                      percent={tour.recommendedByTravelersPercent}
+                      variant="hero"
+                    />
+                  ) : null}
+                </div>
+
+                {tour.heroThumbnails?.length ? <TourPhotoGrid photos={tour.heroThumbnails} /> : null}
               </div>
 
               <div className="space-y-4">

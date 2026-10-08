@@ -142,6 +142,8 @@ export interface Tour {
     height?: number
   }
   gallery: { url: string; alt: string }[]
+  /** Small tap-to-enlarge photo grid rendered directly under the hero image. */
+  heroThumbnails?: { url: string; alt: string }[]
   shortDescription: string
   fullDescription: string
   highlights: string[]
@@ -573,6 +575,24 @@ Beginner briefing on both tickets. No ATV licence. Rafting wants basic swimming 
       {
         url: "https://images.unsplash.com/photo-1508591086314-d7deb00cede9?auto=format&fit=crop&w=1200&q=80",
         alt: "Mount Batur summit rising above the morning clouds",
+      },
+    ],
+    heroThumbnails: [
+      {
+        url: "/images/adventures/batur-jeep-black-lava-guests.jpg",
+        alt: "Jeep tour guests standing on the black lava field below Mount Batur",
+      },
+      {
+        url: "/images/adventures/batur-jeep-sunrise-roof-silhouette.jpg",
+        alt: "Guest silhouetted on a jeep roof framing the sunrise over Lake Batur",
+      },
+      {
+        url: "/images/adventures/batur-jeep-sunrise-lake-batur-guests.jpg",
+        alt: "Driver and guests sitting on a 4x4 jeep at sunrise above Lake Batur",
+      },
+      {
+        url: "/images/adventures/batur-jeep-yellow-jeep-lava-field.jpg",
+        alt: "Guests sitting on a yellow 4x4 jeep in the Mount Batur lava field",
       },
     ],
     shortDescription:

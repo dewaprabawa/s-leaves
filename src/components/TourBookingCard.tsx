@@ -471,7 +471,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
         <p className="text-xs text-brand-green-light leading-relaxed">
           {isPrivateItinerary
             ? "Consultation only — there is no booking form or checkout for this itinerary. WhatsApp group type, dates, villa area, guest count, and your day list. We reply with a driver + activity quote. No payment to inquire."
-            : "Tap below to enter your name, age, adult/child, location, and activity — then send everything to WhatsApp with the price included. Or start a free WhatsApp consultation. Use Ask about this to collect several activities into one chat."}
+            : "Tap below to enter your name, adult/child, location, and activity — then send everything to WhatsApp with the price included. Or start a free WhatsApp consultation. Use Ask about this to collect several activities into one chat."}
         </p>
 
         <div className="space-y-3">

@@ -635,7 +635,7 @@ These are **park or workshop tickets we confirm on WhatsApp** — not our Sedang
 ## How to book (no deposit to ask)
 
 1. Open [Book](/book) or the tour page
-2. Send **name, ages, hotel area, activity, date, guest count**
+2. Send **name, hotel area, activity, date, guest count**
 3. We confirm the IDR total and pickup rule on WhatsApp
 
 Free cancellation up to **24 hours** before start time. Full rules: [cancellation policy](/cancellation-policy). Pickup rules: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).

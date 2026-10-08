@@ -285,7 +285,7 @@ Not included:
 - River tubing combo (ask when you book; combo pricing is confirmed on WhatsApp)
 - Personal expenses and gratuities
 
-You do **not** pay upfront to inquire. Open the booking form on [sekarbaliactivity.com](https://www.sekarbaliactivity.com) or message WhatsApp **+62 817 7572 3663** with your name, age, adult or child, date, and activity.
+You do **not** pay upfront to inquire. Open the booking form on [sekarbaliactivity.com](https://www.sekarbaliactivity.com) or message WhatsApp **+62 817 7572 3663** with your name, adult or child, date, and activity.
 
 ## Hotel pickup or meet at the arena?
 
@@ -316,7 +316,7 @@ Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) nea
 1. Open [Bali ATV Adventure](/tours/bali-atv-adventure)
 2. Choose Single or Tandem, then tap Book
 3. Leave “I need hotel pickup” unchecked to self-meet, or check it for IDR 400,000 pickup
-4. Send name, age, adult/child, date, and guest count on WhatsApp
+4. Send name, adult/child, date, and guest count on WhatsApp
 5. We confirm the tier rate — **no payment to inquire**
 
 **Book now** — [Bali ATV Adventure at All New Bali Adventure](/tours/bali-atv-adventure).
@@ -395,7 +395,7 @@ After the track, many guests add **river tubing on the Wos River** for a land-an
 ## How to Book the Exact Price on WhatsApp
 
 1. Tap **Book ATV on WhatsApp** on [sekarbaliactivity.com](/)  
-2. Send name, age, adult/child, hotel, date, guest count  
+2. Send name, adult/child, hotel, date, guest count  
 3. We confirm the tier rate and pickup total — **no payment to inquire**  
 
 Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsapp).
@@ -589,7 +589,7 @@ Couples, friends, and first-timers staying in/near Ubud. Children can join when 
 
 ## How to Book on WhatsApp
 
-Message us with **name, age, adult/child, hotel or meet preference, activity (Single / Tandem / combo), and date**. No deposit is required to inquire.
+Message us with **name, adult/child, hotel or meet preference, activity (Single / Tandem / combo), and date**. No deposit is required to inquire.
 
 **CTA:** Open the [Bali ATV Adventure tour page](/tours/bali-atv-adventure) and tap WhatsApp, or see [how WhatsApp booking works](/blog/how-to-book-bali-adventure-whatsapp). Full 2026 rate notes: [How much does an ATV cost in Bali](/blog/how-much-does-atv-cost-bali-ubud-2026).
 `
@@ -660,12 +660,12 @@ Beginners, couples, and families who want a cooler second half. Send **ages** so
   {
     slug: 'how-to-book-bali-adventure-whatsapp',
     title: 'Book a Bali Adventure on WhatsApp',
-    excerpt: 'What to send on WhatsApp — name, age, adult/child, hotel, activity, and price — so Sekar Bali Activity can confirm fast.',
+    excerpt: 'What to send on WhatsApp — name, adult/child, hotel, activity, and price — so Sekar Bali Activity can confirm fast.',
     publishedAt: '2026-08-30',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**How do you book Sekar Bali Activity on WhatsApp?** Tap Book on the website, fill the short form, and WhatsApp opens with a ready message including your **name, age, adult/child type, location, activity, and price**. Or message +62 817 7572 3663 directly with the same details.
+**How do you book Sekar Bali Activity on WhatsApp?** Tap Book on the website, fill the short form, and WhatsApp opens with a ready message including your **name, adult/child type, location, activity, and price**. Or message +62 817 7572 3663 directly with the same details.
 
 > **Key Takeaways**
 > - No upfront payment is required to inquire
@@ -694,7 +694,7 @@ Accurate **age** and **Adult/Child** selection sets the right rate. **Location**
 
 ## Website Booking Form
 
-On [sekarbaliactivity.com](/) tap **Book Now** or **Book This Experience**. The popup asks for name, age, adult/child, map pin + hotel name, date, and guest counts — then sends everything to WhatsApp in one tap.
+On [sekarbaliactivity.com](/) tap **Book Now** or **Book This Experience**. The popup asks for name, adult/child, map pin + hotel name, date, and guest counts — then sends everything to WhatsApp in one tap.
 
 ## Contact
 
@@ -1657,7 +1657,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
 > - **Free Ubud pickup** on ricefield cycling and Tumang cooking; **private shuttle included** on Tirta Empu melukat; **island-wide pickup included** on the private Mount Batur jeep and Private Kintamani Day; ATV/rafting/tubing add IDR 400,000 hotel pickup
 > - Every tour includes gear, guide, and insurance where listed on the tour page
-> - Book on WhatsApp — send name, age, hotel, activity, and price
+> - Book on WhatsApp — send name, hotel, activity, and price
 > - Tap **Details** in the booking popup to preview any tour itinerary instantly
 
 ---
@@ -1990,7 +1990,7 @@ Prefer mud and motors instead? Start with [Bali ATV for Ubud](/blog/bali-atv-tou
 ## How to Book the Combo on WhatsApp
 
 1. Tap **Book** on [sekarbaliactivity.com](/) or message +62 817 7572 3663  
-2. Send: **name, ages, adult/child counts, hotel, date, “cycling + Tumang cooking”**  
+2. Send: **name, adult/child counts, hotel, date, “cycling + Tumang cooking”**  
 3. We confirm timing for ricefield cycling pickup and your Tumang session  
 4. No upfront payment is required to inquire  
 
@@ -2076,7 +2076,7 @@ Full breakdown: [How much does an ATV cost near Ubud](/blog/how-much-does-atv-co
 
 ## Book Our Track on WhatsApp
 
-Message us with **name, age, adult/child, hotel or self-meet preference, Single or Tandem, and date**. No deposit is required to inquire — see [how WhatsApp booking works](/blog/how-to-book-bali-adventure-whatsapp).
+Message us with **name, adult/child, hotel or self-meet preference, Single or Tandem, and date**. No deposit is required to inquire — see [how WhatsApp booking works](/blog/how-to-book-bali-adventure-whatsapp).
 
 **Ready to ride the mud and river-crossing track?** Book the [Bali ATV Adventure](/tours/bali-atv-adventure) at All New Bali Adventure, or compare it with mass-market operators in [Private vs Mass-Market ATV](/blog/private-atv-vs-mass-market-ubud).
 `

@@ -20,9 +20,10 @@ import {
 } from '@/data/planners'
 import { UTV_BUGGY_SINGLE_IDR, UTV_BUGGY_TANDEM_IDR } from '@/data/utvBuggy'
 import {
-  JEEP_GROUP_IDR,
   JEEP_HOT_SPRING_IDR,
+  JEEP_SITIN_GROUP_IDR,
   JEEP_SITIN_PAIR_TOTAL_IDR,
+  JEEP_TRACKING_GROUP_IDR,
   JEEP_TRACKING_PAIR_TOTAL_IDR,
   PICKUP_FEE_IDR,
   TIER_PRICES_IDR,
@@ -148,9 +149,10 @@ export function quoteJeepPlanner(input: {
     return { ok: false, error: 'Private jeep is minimum 2 guests.' }
   }
 
-  const pairTotal =
-    input.variant === 'tracking' ? JEEP_TRACKING_PAIR_TOTAL_IDR : JEEP_SITIN_PAIR_TOTAL_IDR
-  const activityTotal = guests === 2 ? pairTotal : JEEP_GROUP_IDR * guests
+  const tracking = input.variant === 'tracking'
+  const pairTotal = tracking ? JEEP_TRACKING_PAIR_TOTAL_IDR : JEEP_SITIN_PAIR_TOTAL_IDR
+  const groupRate = tracking ? JEEP_TRACKING_GROUP_IDR : JEEP_SITIN_GROUP_IDR
+  const activityTotal = guests === 2 ? pairTotal : groupRate * guests
   const perPerson = activityTotal / guests
   const hotSpringTotal = input.hotSpring ? JEEP_HOT_SPRING_IDR * guests : 0
   const variantLabel = input.variant === 'tracking' ? 'Private tracking jeep' : 'Private sit-in jeep'
@@ -163,7 +165,7 @@ export function quoteJeepPlanner(input: {
         label:
           guests === 2
             ? `${variantLabel} 2-guest package (${formatPlannerIdr(perPerson)} pp)`
-            : `${guests} × 3+ group rate (${formatPlannerIdr(JEEP_GROUP_IDR)} pp)`,
+            : `${guests} × 3+ group rate (${formatPlannerIdr(groupRate)} pp)`,
         amount: activityTotal,
       },
       {

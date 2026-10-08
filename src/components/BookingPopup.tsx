@@ -18,7 +18,9 @@ import {
   PICKUP_FEE_IDR,
   getCompareAtSubtotal,
   hasTierPromo,
+  JEEP_SITIN_GROUP_IDR,
   JEEP_SITIN_PAIR_TOTAL_IDR,
+  JEEP_TRACKING_GROUP_IDR,
   JEEP_TRACKING_PAIR_TOTAL_IDR,
   quoteActivity,
   quotePickup,
@@ -777,15 +779,16 @@ export function BookingPopup({
               ) : activeTour.pricingActivityId === 'jeep-sunrise' ? (
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
                   Sit-in private jeep · min 2 · {formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR)} for 2 guests
-                  ({formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR / 2)} each) · 3+ IDR 750,000 each · sit-down
-                  meal included. Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000
+                  ({formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR / 2)} each) · 3 guests{' '}
+                  {formatIdr(JEEP_SITIN_GROUP_IDR * 3)} · 3+ {formatIdr(JEEP_SITIN_GROUP_IDR)} each ·
+                  sit-down meal included. Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000
                   (ticket included).
                 </p>
               ) : activeTour.pricingActivityId === 'jeep-tracking' ? (
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
                   Tracking jeep (4×4 + guided trek) · min 2 · {formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR)}{' '}
-                  for 2 guests ({formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR / 2)} each) · 3+ IDR 750,000
-                  each · sit-down meal included. Optional Batur hot spring +IDR 150,000 or Toya
+                  for 2 guests ({formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR / 2)} each) · 3+{' '}
+                  {formatIdr(JEEP_TRACKING_GROUP_IDR)} each · sit-down meal included. Optional Batur hot spring +IDR 150,000 or Toya
                   Devasya +IDR 300,000 (ticket included).
                 </p>
               ) : null}

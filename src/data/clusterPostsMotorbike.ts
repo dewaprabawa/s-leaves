@@ -262,7 +262,7 @@ Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half
     author: 'Sekar Bali Activity',
     image: '/images/adventures/motorbike-tour-hero.jpg',
     content: `
-**Kintamani by scooter or the Mount Batur jeep — which one is the sunrise?** The [Kintamani traveling trip](/tours/bali-motorbike-traveling-trip) is a **public-road scooter** day at **IDR 650,000** promo per bike (was 750,000): sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran, Tukad Cepung. The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) is a **4×4 to a crater-rim viewpoint** (~1,350 m) — **not** the summit hike. Sit-in is **IDR 2,000,000 for 2 guests**; tracking jeep **IDR 1,800,000 for 2**; **IDR 750,000** per person at 3+. Meal included after the viewpoint. Island-wide pickup included on the jeep. Scooter tickets stay extra. WhatsApp — **no payment to inquire**.
+**Kintamani by scooter or the Mount Batur jeep — which one is the sunrise?** The [Kintamani traveling trip](/tours/bali-motorbike-traveling-trip) is a **public-road scooter** day at **IDR 650,000** promo per bike (was 750,000): sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran, Tukad Cepung. The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) is a **4×4 to a crater-rim viewpoint** (~1,350 m) — **not** the summit hike. Sit-in is **IDR 2,300,000 for 2 guests** or **IDR 2,850,000 for 3**; tracking jeep **IDR 1,800,000 for 2** or **IDR 750,000** per person at 3+. Meal included after the viewpoint. Island-wide pickup included on the jeep. Scooter tickets stay extra. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - Scooter: **650,000** / bike · you ride or go pillion · tickets extra
@@ -378,7 +378,7 @@ Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-moto
 | Scooter tour | **450,000** / bike | Ride or pillion on public roads | Chosen area · south **550,000** | [Motorbike](/tours/bali-motorbike-traveling-trip) |
 | Private Ubud car | **600,000** / car | Sit; English driver | Hotel start | [Full-day car](/tours/full-day-ubud-tour) |
 | Sedang ATV | **750,000** / rider | Quad on jungle mud | **400,000** or self-meet | [ATV](/tours/bali-atv-adventure) |
-| Batur jeep | **750,000** (3+) | Sit in a private 4×4 | Island-wide included | [Jeep](/tours/batur-sunrise-jeep-tour) |
+| Batur jeep | **950,000** (3+ sit-in) | Sit in a private 4×4 | Island-wide included | [Jeep](/tours/batur-sunrise-jeep-tour) |
 | UTV buggy | **1,200,000** single | 1 hr / 7 km automatic | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
 | Tabanan dirt bike | **2,100,000** | KLX / X-Ride in rainforest | Quoted | [Tabanan](/tours/dirt-bike-tabanan-day-night) |
 | Kintamani dirt bike | **4,100,000** | KTM on lava | Quoted | [Kintamani](/tours/dirt-bike-kintamani-black-lava) |

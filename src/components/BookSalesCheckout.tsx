@@ -363,7 +363,7 @@ export default function BookSalesCheckout({
                       : adv.id === "rafting" || adv.id === "canyon-tubing"
                       ? "2+ discount — IDR 450,000 per person"
                       : adv.id === "jeep-sunrise"
-                        ? "Sit-in 2M for 2 · tracking 1.8M for 2 · 3+ 750K"
+                        ? "Sit-in 2.3M for 2 · 2.85M for 3 · tracking 1.8M for 2"
                         : adv.id === "kintamani-day"
                           ? "Private · min 2 guests · promo"
                           : "3+ group rate — book more, save more"

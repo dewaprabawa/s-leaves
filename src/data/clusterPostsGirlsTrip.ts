@@ -66,7 +66,7 @@ Spa and **Taman Dedari** dinner stay yours. Outfit: floral / long dress for stat
 
 ### Day 5 — Kintamani sunrise, one temple, home party
 
-Leave the villa about **04:30**. We run a **[private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** to the **crater-rim viewpoint (~1,350m)** with a sit-down meal after. Pickup is **included island-wide**. This is **not** a 2-hour summit hike. For **6 guests** the published **3+ rate is IDR 750,000 per person**.
+Leave the villa about **04:30**. We run a **[private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** to the **crater-rim viewpoint (~1,350m)** with a sit-down meal after. Pickup is **included island-wide**. This is **not** a 2-hour summit hike. For **6 guests** the published **3+ rate is IDR 950,000 per person** sit-in (**IDR 750,000** on the tracking jeep).
 
 If the viewpoint café you named (Akasa and similar) is your photo pin, say so — we still sell the **jeep**, not a coffee-shop reservation. Do **not** stack three Kintamani cafés. Optional **hot spring +IDR 150,000** / person with ticket; drop it first if traffic slips.
 
@@ -189,7 +189,7 @@ The jeep is the family sunrise product because it is a **4×4 to a crater-rim vi
 | --- | --- | --- |
 | Arrival | **[DPS → hotel transfer](/transfers)** from IDR 700,000 / MPV | Villa rest, guest dinner |
 | Culture | **[Tumang cooking](/tours/balinese-cooking-class)** (promo IDR 450,000) and/or **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)** | Afternoon nap |
-| Sunrise | **[Private Batur jeep](/tours/batur-sunrise-jeep-tour)** — 3+ rate IDR 750,000 / person, pickup included | Early night |
+| Sunrise | **[Private Batur jeep](/tours/batur-sunrise-jeep-tour)** — 3+ rate IDR 950,000 / person sit-in, pickup included | Early night |
 | Soft / depart | Optional **[Swing Heaven](/tours/swing-heaven-bali)**, **[Griya Beji waterfall purification](/tours/griya-beji-waterfall)** (Punggul — **not** Tirta Empul), or **[Tirta Empul ceremony](/tours/tirta-empu-purification)** + airport run | Kids’ pool, light lunch |
 
 One **long private day** (no overnight stack): [cycling + cooking](/book?activity=combo-cycling-cooking), [swing + cooking](/book?activity=combo-swing-cooking), or morning [Griya Beji](/tours/griya-beji-waterfall) then the kitchen. Clock and pickup honesty: [long driver day](/blog/long-private-driver-day-ubud-2026).
@@ -241,7 +241,7 @@ What we **do** control is published on this domain: **IDR**, pickup rules, and W
 | Private driver day (car) | **IDR 600,000** | Same “from” as the [full-day Ubud car](/tours/full-day-ubud-tour). One long day or several. Entrance fees extra. |
 | HiAce / 10–12 seater | **Quote** | Families or **6+ with bags**. Not the car-day rate. |
 | [Swing Heaven](/tours/swing-heaven-bali) | **IDR 530,000** / **630,000** lunch | Bongkasa / Ayung. Koi boat + dress extra. Hotel driver **included** (required). |
-| [Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) | **IDR 750,000** / person at 3+ | Pickup **included**. Meal after viewpoint. Not the summit trek. |
+| [Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) | **IDR 950,000** / person at 3+ (sit-in) | Pickup **included**. Meal after viewpoint. Not the summit trek. |
 | [Tumang cooking](/tours/balinese-cooking-class) | **IDR 450,000** shared | Free Ubud pickup. Max 8. Strong family day. |
 | [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) | **Promo IDR 650,000** (was 750,000) | Lunch + free Ubud pickup. |
 | [Cycling + cooking combo](/book?activity=combo-cycling-cooking) | **IDR 1,100,000** | Sum of published tickets (650K promo + 450K) · both free Ubud pickup. |

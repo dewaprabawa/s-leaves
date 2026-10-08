@@ -260,7 +260,7 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
     author: 'Sekar Bali Activity',
     image: '/images/adventures/dirt-bike-kintamani-ridge.jpg',
     content: `
-**Dirt bike or the Mount Batur jeep?** They share a volcano and nothing else. **[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** is a **private guided enduro** from **IDR 4,100,000** — black-lava dunes and forest tracks, about **8 hours**, KTM 250 EXC-class bike in the package. **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is a **4×4 to a crater-rim viewpoint (~1,350 m)** from **IDR 750,000** per person at 3+ (**IDR 2,000,000** sit-in for 2 · **IDR 1,800,000** tracking for 2) with **island-wide pickup** and a **sit-down meal**. The jeep is **not** the 2-hour summit hike. WhatsApp — **no payment to inquire**.
+**Dirt bike or the Mount Batur jeep?** They share a volcano and nothing else. **[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** is a **private guided enduro** from **IDR 4,100,000** — black-lava dunes and forest tracks, about **8 hours**, KTM 250 EXC-class bike in the package. **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is a **4×4 to a crater-rim viewpoint (~1,350 m)** from **IDR 750,000** per person at 3+ on tracking (**IDR 2,300,000** sit-in for 2 · **IDR 2,850,000** sit-in for 3 · **IDR 1,800,000** tracking for 2) with **island-wide pickup** and a **sit-down meal**. The jeep is **not** the 2-hour summit hike. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - Dirt bike **IDR 4,100,000** · you ride · wet-season traction is better
@@ -272,7 +272,7 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
 
 | | Kintamani dirt bike | Private Batur jeep |
 | --- | --- | --- |
-| From (IDR) | **4,100,000** | sit-in **2,000,000** for 2 · tracking **1,800,000** for 2 · **750,000** (3+) |
+| From (IDR) | **4,100,000** | sit-in **2,300,000** for 2 · **2,850,000** for 3 · tracking **1,800,000** for 2 · **750,000** (3+ tracking) |
 | You do | Ride an enduro | Sit in a 4×4 (or tracking walk) |
 | Clock | ~8 hours | 4–7 hours |
 | Pickup | Quoted | **Island-wide included** |

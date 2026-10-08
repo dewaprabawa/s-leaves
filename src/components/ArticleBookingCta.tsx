@@ -348,7 +348,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-sunrise-jeep-tour-guide-2026': {
     headline: 'Book a private Mount Batur jeep',
-    body: 'Sit-in IDR 2,000,000 for 2. Tracking IDR 1,800,000 for 2. 3+ IDR 750,000. Meal included. Hot spring +IDR 150K with ticket included.',
+    body: 'Sit-in IDR 2,300,000 for 2 · IDR 2,850,000 for 3. Tracking IDR 1,800,000 for 2 · 3+ IDR 750,000. Meal included. Hot spring +IDR 150K with ticket included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
   },
@@ -754,7 +754,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'kintamani-dirt-bike-vs-batur-jeep': {
     headline: 'Viewpoint jeep or lava enduro — pick one',
-    body: 'Private sit-in jeep IDR 2,000,000 for 2 / tracking 1,800,000 for 2 / 750,000 at 3+ with meal and island-wide pickup. Kintamani dirt bike from IDR 4,100,000 — pickup quoted.',
+    body: 'Private sit-in jeep IDR 2,300,000 for 2 / 2,850,000 for 3 / tracking 1,800,000 for 2 / tracking 750,000 at 3+ with meal and island-wide pickup. Kintamani dirt bike from IDR 4,100,000 — pickup quoted.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
     secondaryHref: '/tours/dirt-bike-kintamani-black-lava',

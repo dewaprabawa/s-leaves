@@ -16,11 +16,13 @@ export type ActivityId =
   | 'swing-heaven-lunch'
 
 /** Sit-in private jeep — published 2-guest package total (min 2). */
-export const JEEP_SITIN_PAIR_TOTAL_IDR = 2_000_000
+export const JEEP_SITIN_PAIR_TOTAL_IDR = 2_300_000
+/** Sit-in private jeep — 3+ guests sharing one jeep, per person (3 guests = IDR 2,850,000). */
+export const JEEP_SITIN_GROUP_IDR = 950_000
 /** Tracking jeep — published 2-guest package total (min 2). */
 export const JEEP_TRACKING_PAIR_TOTAL_IDR = 1_800_000
-/** 3+ guests sharing one private jeep or tracking jeep, per person. */
-export const JEEP_GROUP_IDR = 750_000
+/** Tracking jeep — 3+ guests sharing one jeep, per person. */
+export const JEEP_TRACKING_GROUP_IDR = 750_000
 
 export function isJeepPrivateActivity(activityId: string): boolean {
   return activityId === 'jeep-sunrise' || activityId === 'jeep-tracking'
@@ -48,8 +50,8 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'canyon-tubing': [500_000, 450_000, 450_000],
   'cycling': [650_000, 625_000, 600_000],
   // Internal 1-pax cell is unused on the site (min 2). Public rate is the 2-pax package.
-  'jeep-sunrise': [1_350_000, JEEP_SITIN_PAIR_TOTAL_IDR / 2, JEEP_GROUP_IDR], // sit-in: IDR 2,000,000 for 2
-  'jeep-tracking': [1_350_000, JEEP_TRACKING_PAIR_TOTAL_IDR / 2, JEEP_GROUP_IDR], // tracking: IDR 1,800,000 for 2
+  'jeep-sunrise': [1_350_000, JEEP_SITIN_PAIR_TOTAL_IDR / 2, JEEP_SITIN_GROUP_IDR], // sit-in: IDR 2,300,000 for 2 · 2,850,000 for 3
+  'jeep-tracking': [1_350_000, JEEP_TRACKING_PAIR_TOTAL_IDR / 2, JEEP_TRACKING_GROUP_IDR], // tracking: IDR 1,800,000 for 2
   // Min 2 guests: bookable promo IDR 1.3M; IDR 1.45M is the compare-at list
   'kintamani-day': [1_450_000, 1_300_000, 1_300_000],
   'swing-heaven': [530_000, 530_000, 530_000],
@@ -276,7 +278,7 @@ export function formatTierPriceTable(activityId: ActivityId): string {
   const unit =
     activityId === 'tandem-atv' ? 'per tandem' : activityId === 'single-atv' ? 'per rider' : 'per person'
   if (activityId === 'jeep-sunrise') {
-    return `Sit-in · min 2 · IDR ${(JEEP_SITIN_PAIR_TOTAL_IDR / 1_000_000).toFixed(0)}M for 2 (${(t2 / 1000).toFixed(0)}k ${unit}) · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`
+    return `Sit-in · min 2 · IDR ${(JEEP_SITIN_PAIR_TOTAL_IDR / 1_000_000).toFixed(1)}M for 2 (${(t2 / 1000).toFixed(0)}k ${unit}) · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`
   }
   if (activityId === 'jeep-tracking') {
     return `Tracking · min 2 · IDR ${(JEEP_TRACKING_PAIR_TOTAL_IDR / 1_000_000).toFixed(1)}M for 2 (${(t2 / 1000).toFixed(0)}k ${unit}) · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k`

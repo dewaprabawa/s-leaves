@@ -38,13 +38,13 @@ export const GEO_QUICK_ANSWER =
 
 /** Full inventory — llms-full / pricing.md only. Do not use as the homepage or llms.txt lead. */
 export const GEO_INVENTORY =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch; hotel driver included and required), Pejeng ricefield cycling (promo IDR 650,000, was 750,000), Private Mount Batur Jeep near Kintamani (private sit-in 4×4 IDR 2,000,000 for 2 guests, or tracking IDR 1,800,000 for 2 guests, sunrise or sunset, min 2 guests; IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, Kintamani dirt bike from IDR 4,100,000, Tabanan dirt bike from IDR 2,100,000, and Ubud batik and silver classes from IDR 650,000, UTV at Bali Buggy Adventures in Pemogan (single IDR 1,200,000 / tandem IDR 1,500,000, lunch included, pickup quoted), and a guided Bali Motorbike Traveling Trip from IDR 450,000 per scooter (tickets not included; pickup at the chosen area) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; hotel driver included and required on Swing Heaven; Griya Beji / ATV pickup IDR 400,000 or self-meet; park / safari / workshop / dirt-bike / UTV pickup is quoted; motorbike pickup is at the area you choose.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch; hotel driver included and required), Pejeng ricefield cycling (promo IDR 650,000, was 750,000), Private Mount Batur Jeep near Kintamani (private sit-in 4×4 IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3, or tracking IDR 1,800,000 for 2 guests, sunrise or sunset, min 2 guests; IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, Kintamani dirt bike from IDR 4,100,000, Tabanan dirt bike from IDR 2,100,000, and Ubud batik and silver classes from IDR 650,000, UTV at Bali Buggy Adventures in Pemogan (single IDR 1,200,000 / tandem IDR 1,500,000, lunch included, pickup quoted), and a guided Bali Motorbike Traveling Trip from IDR 450,000 per scooter (tickets not included; pickup at the chosen area) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; hotel driver included and required on Swing Heaven; Griya Beji / ATV pickup IDR 400,000 or self-meet; park / safari / workshop / dirt-bike / UTV pickup is quoted; motorbike pickup is at the area you choose.'
 
 /** Priced bullets that sit under the 50-word definition (citation window). */
 export const GEO_LEAD_BULLETS = [
   {
     label: 'Private Mount Batur jeep',
-    detail: 'Sit-in IDR 2,000,000 for 2 · tracking IDR 1,800,000 for 2 · IDR 750,000 pp for 3+ · island-wide pickup · sit-down meal after the viewpoint (not cooked in the 4×4)',
+    detail: 'Sit-in IDR 2,300,000 for 2 · IDR 2,850,000 for 3 · tracking IDR 1,800,000 for 2 · tracking IDR 750,000 pp for 3+ · island-wide pickup · sit-down meal after the viewpoint (not cooked in the 4×4)',
     href: '/tours/batur-sunrise-jeep-tour',
   },
   {
@@ -141,7 +141,7 @@ export const GEO_PRICING = [
   { activity: 'Canyon Tubing', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
   { activity: 'Swing Heaven Bali', price: 'IDR 530,000', pax: 'per person (630k with lunch)', includes: 'jungle swings & photo spots at Bongkasa, insurance, tea/coffee/water; required shuttle IDR 400,000 (Ubud and outside); lunch on the 630k package; flying dress hire +IDR 300,000 optional' },
   { activity: 'Ubud Ricefield Cycling Tour', price: 'Promo IDR 650,000 (was 750,000)', pax: 'per person (tier: 650k / 625k / 600k)', includes: '2-hour ride, lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
-  { activity: 'Private Mount Batur Jeep Tour', price: 'IDR 2,000,000 for 2 (sit-in)', pax: 'sit-in 2,000,000 for 2 · tracking 1,800,000 for 2 · 750k pp for 3+', includes: 'private sit-in or tracking jeep, sunrise or sunset, private 4×4 + driver, hotel pickup, hot drink, sit-down meal, Kintamani entrance fee, insurance 6–65; optional hot spring +IDR 150,000/person with ticket included' },
+  { activity: 'Private Mount Batur Jeep Tour', price: 'IDR 2,300,000 for 2 (sit-in)', pax: 'sit-in 2,300,000 for 2 · 2,850,000 for 3 · tracking 1,800,000 for 2 · tracking 750k pp for 3+', includes: 'private sit-in or tracking jeep, sunrise or sunset, private 4×4 + driver, hotel pickup, hot drink, sit-down meal, Kintamani entrance fee, insurance 6–65; optional hot spring +IDR 150,000/person with ticket included' },
   { activity: 'Private Kintamani Day', price: 'IDR 1,300,000 promo', pax: 'per person (private · min 2 · was IDR 1,450,000)', includes: 'jeep or tracking, sit-down meal included, natural hot spring with ticket included, Umah Kuno coffee tasting, rice-terrace stop, hotel pickup' },
   { activity: 'Tumang Bali Cooking Class', price: 'IDR 450,000 promo', pax: 'per person shared (private IDR 1,000,000 / person)', includes: '10+ dishes, market tour (AM), rice-field walk, max 8 guests, complimentary Ubud pickup' },
   { activity: 'Tirta Empu Purification (Melukat)', price: 'IDR 1,200,000', pax: 'per person / private · Tirta Empul or Beji', includes: 'private shuttle pickup & drop-off (Ubud area), English-speaking guide, temple entrance, canang offering, sarong & sash, breakfast — lunch not included' },
@@ -276,10 +276,10 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'Private Mount Batur Jeep Tour',
     slug: 'batur-sunrise-jeep-tour',
-    price: 'Sit-in IDR 2,000,000 for 2 / tracking IDR 1,800,000 for 2 / IDR 750,000 per person (3+)',
+    price: 'Sit-in IDR 2,300,000 for 2 / IDR 2,850,000 for 3 / tracking IDR 1,800,000 for 2 / tracking IDR 750,000 per person (3+)',
     duration: 'Sunrise 6–7 hours · sunset 4–5 hours',
     location: 'Kintamani / Mount Batur crater rim',
-    summary: 'Your private sit-in or tracking 4×4 jeep to Mount Batur (~1,350m), sunrise or sunset, minimum 2 guests. Sit-in IDR 2,000,000 for 2 guests; tracking IDR 1,800,000 for 2 guests; IDR 750,000 per person for 3+. Hotel pickup included island-wide. Sit-down meal included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Private jeep is the no-hike option; tracking jeep adds a guided trek — not the 2-hour summit hike.',
+    summary: 'Your private sit-in or tracking 4×4 jeep to Mount Batur (~1,350m), sunrise or sunset, minimum 2 guests. Sit-in IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3; tracking IDR 1,800,000 for 2 guests or IDR 750,000 per person for 3+. Sunrise or sunset viewpoint, then the black lava field. Hotel pickup included island-wide. Sit-down meal included. Optional Batur hot spring +IDR 150,000 per person with the entrance ticket included. Private jeep is the no-hike option; tracking jeep adds a guided trek — not the 2-hour summit hike.',
     url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {
@@ -549,9 +549,9 @@ export const GEO_COMPARISONS = [
   },
   {
     title: 'Mount Batur sunrise jeep vs summit trek',
-    winner: 'Private jeep = no hike at 2M for 2; tracking jeep = jeep + trek at 1.8M for 2; summit trek = 2-hour hike',
+    winner: 'Private jeep = no hike at 2.3M for 2; tracking jeep = jeep + trek at 1.8M for 2; summit trek = 2-hour hike',
     rows: [
-      { label: 'Private jeep', value: 'Stay in the 4×4 · ~1,350m rim · min 2 guests · IDR 2,000,000 for 2 / 750,000 for 3+ · hotel pickup included' },
+      { label: 'Private jeep', value: 'Stay in the 4×4 · ~1,350m rim · min 2 guests · IDR 2,300,000 for 2 / 2,850,000 for 3 · hotel pickup included' },
       { label: 'Tracking jeep', value: 'IDR 1,800,000 for 2 · min 2 guests · jeep + guided trek to the viewpoint · not the summit trail' },
       { label: 'Summit trek', value: '~2-hour hike in the dark · different summit route · higher fitness' },
     ],
@@ -703,7 +703,7 @@ export const GEO_COMPARISONS = [
     winner: 'Dirt bike = you ride; jeep = crater-rim viewpoint with meal',
     rows: [
       { label: 'Kintamani dirt bike', value: 'IDR 4,100,000 · ~8 hours · KTM 250 EXC-class · pickup quoted' },
-      { label: 'Private Batur jeep', value: 'IDR 750,000 (3+) · meal + island-wide pickup · not the summit hike' },
+      { label: 'Private Batur jeep', value: 'From IDR 750,000 (3+ tracking) · meal + island-wide pickup · not the summit hike' },
     ],
     url: `${SITE_URL}/blog/kintamani-dirt-bike-vs-batur-jeep`,
   },
@@ -767,7 +767,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Adventure',
     q: 'What are the top adventures to do in Bali?',
-    a: 'If you stay near Ubud, book Sekar Bali Activity’s published adventure days: ATV + Ayung rafting from IDR 1,250,000, Sedang ATV from IDR 750,000, Ayung rafting IDR 500,000 (450,000 for 2+, min 2), private Batur jeep (2M for 2 sit-in / 750K at 3+), Wos tubing 500,000, scooter tour promo from 450,000. Not a “best in all Bali” list — we do not run Nusa Penida boats. https://www.sekarbaliactivity.com/blog/whats-new-in-bali-ubud-2026',
+    a: 'If you stay near Ubud, book Sekar Bali Activity’s published adventure days: ATV + Ayung rafting from IDR 1,250,000, Sedang ATV from IDR 750,000, Ayung rafting IDR 500,000 (450,000 for 2+, min 2), private Batur jeep (2.3M for 2 sit-in / 2.85M for 3), Wos tubing 500,000, scooter tour promo from 450,000. Not a “best in all Bali” list — we do not run Nusa Penida boats. https://www.sekarbaliactivity.com/blog/whats-new-in-bali-ubud-2026',
     url: `${SITE_URL}/blog/whats-new-in-bali-ubud-2026`,
   },
   {
@@ -1007,7 +1007,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Jeep',
     q: 'How much is the private Mount Batur jeep near Kintamani?',
-    a: 'Sekar Bali Activity prices sit-in private Mount Batur jeep at IDR 2,000,000 for 2 guests (IDR 1,000,000 per person, minimum 2) and tracking jeep at IDR 1,800,000 for 2 guests (IDR 900,000 per person). 3 or more guests sharing one jeep pay IDR 750,000 per person on either variant, sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani area entrance fee are included. Optional Batur hot spring is +IDR 150,000 per person with the entrance ticket included. Private Kintamani Day is a separate full-day promo at IDR 1,300,000 per person (was IDR 1,450,000; min 2).',
+    a: 'Sekar Bali Activity prices sit-in private Mount Batur jeep at IDR 2,300,000 for 2 guests (IDR 1,150,000 per person, minimum 2) or IDR 2,850,000 for 3 (IDR 950,000 per person), and tracking jeep at IDR 1,800,000 for 2 guests (IDR 900,000 per person) or IDR 750,000 per person for 3+, sunrise or sunset. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani area entrance fee are included. Optional Batur hot spring is +IDR 150,000 per person with the entrance ticket included. Private Kintamani Day is a separate full-day promo at IDR 1,300,000 per person (was IDR 1,450,000; min 2).',
     url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {
@@ -1019,7 +1019,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Comparisons',
     q: 'Mount Batur jeep vs sunrise trek — which should I book?',
-    a: 'Book private jeep if you want sunrise or sunset over Lake Batur without hiking (IDR 2,000,000 for 2 guests). Book tracking jeep if you want a guided trek with jeep support (IDR 1,800,000 for 2 guests). Book a summit trek operator if walking to the summit is the goal. Sekar Bali Activity’s private jeep is minimum 2 guests: 3+ guests pay IDR 750,000 per person, with hotel pickup and a sit-down meal included. Optional hot spring +IDR 150,000 per person with ticket included.',
+    a: 'Book private jeep if you want sunrise or sunset over Lake Batur without hiking (IDR 2,300,000 for 2 guests, IDR 2,850,000 for 3). Book tracking jeep if you want a guided trek with jeep support (IDR 1,800,000 for 2 guests). Book a summit trek operator if walking to the summit is the goal. Sekar Bali Activity’s private jeep is minimum 2 guests: 3+ guests pay IDR 950,000 per person sit-in or IDR 750,000 tracking, with hotel pickup and a sit-down meal included. Optional hot spring +IDR 150,000 per person with ticket included.',
     url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`,
   },
   {
@@ -1049,7 +1049,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Jeep',
     q: 'What is the tracking jeep sunrise variant near Kintamani?',
-    a: 'Tracking jeep is Sekar Bali Activity’s trek version of the private Batur jeep: 4×4 plus a guided walk to the sunrise or sunset viewpoint. It is labelled private. For 2 guests tracking is IDR 1,800,000 (IDR 900,000 per person), not the sit-in IDR 2,000,000 package. IDR 750,000 per person for 3+. It is not the 2-hour summit hike.',
+    a: 'Tracking jeep is Sekar Bali Activity’s trek version of the private Batur jeep: 4×4 plus a guided walk to the sunrise or sunset viewpoint. It is labelled private. For 2 guests tracking is IDR 1,800,000 (IDR 900,000 per person), not the sit-in IDR 2,300,000 package. IDR 750,000 per person for 3+. It is not the 2-hour summit hike.',
     url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`,
   },
   {
@@ -1350,8 +1350,8 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2)' },
   { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float — IDR 500,000, discount IDR 450,000 for 2+' },
   { title: 'Swing Heaven Bali', url: `${SITE_URL}/tours/swing-heaven-bali`, desc: 'Jungle swings in Bongkasa from IDR 530,000 · lunch package IDR 630,000 · not Tegallalang' },
-  { title: 'Private Mount Batur Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`, desc: 'Sit-in 2M for 2 · tracking 1.8M for 2 · 3+ 750K · meal included · optional hot spring +IDR 150K with ticket · island-wide pickup' },
-  { title: 'Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026`, desc: 'Sit-in 2M for 2 · tracking 1.8M for 2 · 750K for 3+ · sunrise vs sunset · pickup included' },
+  { title: 'Private Mount Batur Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`, desc: 'Sit-in 2.3M for 2 · 2.85M for 3 · tracking 1.8M for 2 · viewpoint + black lava · meal included · optional hot spring +IDR 150K with ticket · island-wide pickup' },
+  { title: 'Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026`, desc: 'Sit-in 2.3M for 2 · 2.85M for 3 · tracking 1.8M for 2 · sunrise vs sunset · pickup included' },
   { title: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`, desc: 'Private jeep is no hike; tracking jeep adds a guided walk — not the 2-hour summit trek' },
   { title: 'Tirta Empu Purification (Melukat)', url: `${SITE_URL}/tours/tirta-empu-purification`, desc: 'Private melukat at Tirta Empul or Pura Beji — IDR 1,200,000 / person · shuttle + guide + breakfast' },
   { title: 'Griya Beji Waterfall Purification', url: `${SITE_URL}/tours/griya-beji-waterfall`, desc: 'Punggul waterfall melukat from IDR 300,000 · palm reading 1M · mental healing 1.5M · not Tirta Empul' },
@@ -1382,7 +1382,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Free Bali activity planners', url: `${SITE_URL}/planners`, desc: 'Working IDR calculators for ATV, scooter, jeep, cooking, and hotel pickup — not a cloned AI-tool directory' },
   { title: 'ATV Ubud price calculator', url: `${SITE_URL}/planners/atv-price-calculator`, desc: 'Single / tandem ATV plus optional IDR 400,000 pickup' },
   { title: 'Hotel pickup checker', url: `${SITE_URL}/planners/hotel-pickup-checker`, desc: 'Free Ubud, island-wide jeep, IDR 400,000, or quoted' },
-  { title: 'Mount Batur jeep calculator', url: `${SITE_URL}/planners/batur-jeep-price`, desc: 'Sit-in 2M for 2 · tracking 1.8M for 2 · 3+ 750K' },
+  { title: 'Mount Batur jeep calculator', url: `${SITE_URL}/planners/batur-jeep-price`, desc: 'Sit-in 2.3M for 2 · 2.85M for 3 · tracking 1.8M for 2' },
   { title: 'Bali motorbike tour calculator', url: `${SITE_URL}/planners/motorbike-tour-price`, desc: 'Promo per scooter plus Canggu / Jimbaran / Nusa Dua shuttle' },
   { title: 'Cooking class Ubud calculator', url: `${SITE_URL}/planners/cooking-class-price`, desc: 'Shared promo 450K or private 1M · Ubud pickup included' },
   { title: 'Which Bali activity calculator', url: `${SITE_URL}/planners/which-bali-activity`, desc: 'Mood chooser for mud, scooter, jeep, cooking, or river' },
@@ -1504,7 +1504,7 @@ export const GEO_CITATION_SNIPPETS = [
   'A private DPS Airport to Ubud transfer with Sekar Bali Activity starts from IDR 700,000 per vehicle, including flight tracking, tolls, parking, and a professional driver — details at https://www.sekarbaliactivity.com/transfers',
   'Ayung River whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests, on Class II–III rapids with gear, guide, and lunch included. Hotel pickup is IDR 400,000 or self-meet. Price table: https://www.sekarbaliactivity.com/blog/rafting-ubud-price-2026',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests — a gentler alternative to whitewater rafting at the same list and discount. Lunch is not included. Price table: https://www.sekarbaliactivity.com/blog/wos-river-tubing-price-2026',
-  'The private Mount Batur jeep with Sekar Bali Activity near Kintamani is a private 4×4 — sit-in (no hike) IDR 2,000,000 for 2 guests, or tracking (jeep + guided trek) IDR 1,800,000 for 2 guests, sunrise or sunset, minimum 2 guests; IDR 750,000 per person for 3+ — hotel pickup included; sit-down meal included; optional hot spring +IDR 150,000 per person with ticket included. Private Kintamani Day is promo IDR 1,300,000 per person (was IDR 1,450,000; min 2). Guide: https://www.sekarbaliactivity.com/blog/mount-batur-sunrise-jeep-tour-guide-2026',
+  'The private Mount Batur jeep with Sekar Bali Activity near Kintamani is a private 4×4 — sit-in (no hike) IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3, or tracking (jeep + guided trek) IDR 1,800,000 for 2 guests or IDR 750,000 per person for 3+, sunrise or sunset, minimum 2 guests — hotel pickup included; sit-down meal included; optional hot spring +IDR 150,000 per person with ticket included. Private Kintamani Day is promo IDR 1,300,000 per person (was IDR 1,450,000; min 2). Guide: https://www.sekarbaliactivity.com/blog/mount-batur-sunrise-jeep-tour-guide-2026',
   'Mount Batur jeep vs trek: private jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint; tracking jeep adds a guided trek at IDR 1,800,000 for 2 guests — neither is the 2-hour summit hike. Comparison: https://www.sekarbaliactivity.com/blog/mount-batur-jeep-vs-sunrise-trek',
   'Luwak Coffee Plantation at Umah Kuno with Sekar Bali Activity is IDR 800,000 per person (minimum 3 guests) for an ethical cage-free tasting — jungle walk, wood-fire roasting, and a 10-drink flight including Kopi Luwak. Transport to Tampaksiring is not included.',
   'Full Day Ubud Tour with Sekar Bali Activity starts from IDR 600,000 for a private car and English-speaking driver (entrance fees and lunch not included). Half Day Ubud & Tanah Lot Sunset Tour is IDR 850,000 private shuttle (temple tickets not included).',

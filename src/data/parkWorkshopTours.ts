@@ -98,6 +98,7 @@ function ticketTour(opts: {
   sourcePrice: number
   /** Partner's published sell price — used as-is, without the import markup. */
   publishedPrice?: number
+  recommendedByTravelersPercent?: number
   shortDescription: string
   fullDescription: string
   highlights: string[]
@@ -127,6 +128,7 @@ function ticketTour(opts: {
     area: opts.area,
     venue: opts.venue,
     pickup: opts.pickup ?? "Quoted on WhatsApp or self-meet",
+    recommendedByTravelersPercent: opts.recommendedByTravelersPercent,
     duration: opts.duration,
     basePrice,
     seoTitle: opts.seoTitle,
@@ -447,6 +449,7 @@ We book the lodge ticket. Pickup is not in the from-price unless you add a drive
     duration: "About 8 hours",
     sourcePrice: KINTAMANI_DIRT_BIKE_PRICES.klx150,
     publishedPrice: KINTAMANI_DIRT_BIKE_PRICES.klx150,
+    recommendedByTravelersPercent: 96,
     shortDescription:
       "Guided dirt bike day on Kintamani black lava and forest tracks, hosted by Bali Mountain Dirt Bike Adventure in Suter. From IDR 1,850,000 (KLX/CRF 150) — KLX 230, YZ 250, and KTM 250–350 options; kids bike 75cc IDR 1,500,000. Lunch, fuel, gear, and track tickets included.",
     fullDescription: `A **guided dirt-bike day** on Kintamani forest and black-lava tracks — lake views, altitude changes, sand-dune lava fields. This is **not** the Mount Batur sunrise jeep.

@@ -126,7 +126,7 @@ export interface Tour {
   pickup?: string
   /** Featured on homepage top-picks rail when true. */
   isTopPick?: boolean
-  /** Star badge: “Recommended by N% of travelers” (ATV + UTV). */
+  /** Star badge: “Recommended by N% of travelers” (ATV, UTV, Kintamani dirt bike). */
   recommendedByTravelersPercent?: number
   duration: string
   basePrice: number

@@ -554,7 +554,7 @@ export function chooseActivity(mood: ActivityMoodId): ActivityChoice {
         title: 'Kintamani or Tabanan dirt bike',
         fromPrice: 2_100_000,
         pickup: 'Pickup quoted',
-        why: 'Geared enduro, not the 125–160cc scooter day. Tabanan from IDR 2,100,000. Kintamani black lava from IDR 4,100,000.',
+        why: 'Geared enduro, not the 125–160cc scooter day. Tabanan from IDR 2,100,000. Kintamani black lava from IDR 1,850,000.',
         tourHref: '/tours/dirt-bike-kintamani-black-lava',
         blogHref: '/blog/kintamani-dirt-bike-vs-batur-jeep',
         blogLabel: 'Dirt bike vs jeep',

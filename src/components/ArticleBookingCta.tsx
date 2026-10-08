@@ -118,7 +118,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-motorbike-tour-vs-dirt-bike-2026': {
     headline: 'Book the scooter — or the enduro',
-    body: 'Public-road scooter from IDR 450,000. Tabanan dirt bike from 2.1M. Kintamani lava from 4.1M. Say which machine on WhatsApp.',
+    body: 'Public-road scooter from IDR 450,000. Tabanan dirt bike from 2.1M. Kintamani lava from 1.85M. Say which machine on WhatsApp.',
     primaryHref: '/tours/bali-motorbike-traveling-trip',
     primaryLabel: 'View motorbike tour',
     secondaryHref: '/tours/dirt-bike-kintamani-black-lava',
@@ -198,7 +198,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'which-bali-wheels-2026': {
     headline: 'Book the machine you actually want',
-    body: 'Scooter from IDR 450,000. ATV from 750,000. UTV 1.2M. Dirt bike 2.1–4.1M. Jeep from 750,000 at 3+. One WhatsApp inbox.',
+    body: 'Scooter from IDR 450,000. ATV from 750,000. UTV 1.2M. Dirt bike from 1.85M. Jeep from 750,000 at 3+. One WhatsApp inbox.',
     primaryHref: '/tours/bali-motorbike-traveling-trip',
     primaryLabel: 'View motorbike tour',
     secondaryHref: '/tours/bali-atv-adventure',
@@ -754,7 +754,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'kintamani-dirt-bike-vs-batur-jeep': {
     headline: 'Viewpoint jeep or lava enduro — pick one',
-    body: 'Private sit-in jeep IDR 2,300,000 for 2 / 2,850,000 for 3 / tracking 1,800,000 for 2 / tracking 750,000 at 3+ with breakfast and island-wide pickup. Kintamani dirt bike from IDR 4,100,000 — pickup quoted.',
+    body: 'Private sit-in jeep IDR 2,300,000 for 2 / 2,850,000 for 3 / tracking 1,800,000 for 2 / tracking 750,000 at 3+ with breakfast and island-wide pickup. Kintamani dirt bike from IDR 1,850,000 — pickup quoted.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
     secondaryHref: '/tours/dirt-bike-kintamani-black-lava',

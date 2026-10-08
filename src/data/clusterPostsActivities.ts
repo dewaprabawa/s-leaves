@@ -553,7 +553,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | UTV Buggy Bali Adventure | **1,200,000** single · **1,500,000** tandem | 1 hr / 7 km | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
 | Bali motorbike tour | **450,000–800,000** promo / scooter | 8–10 hrs | Chosen area · Canggu/Jimbaran/Nusa Dua 550K | [Motorbike tour](/tours/bali-motorbike-traveling-trip) |
 | Ubud batik / silver class | **650,000** | 3 hrs | Quoted | [Workshops](/blog/ubud-workshop-classes-2026) |
-| Kintamani dirt bike | **4,100,000** | ~8 hrs | Quoted | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
+| Kintamani dirt bike | **1,850,000** | ~8 hrs | Quoted | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 
 Prices are 2026 published tiers. Groups of 2+ or 3+ often pay less per person on ATV, rafting, tubing, cycling, and the jeep.
 
@@ -605,7 +605,7 @@ These are **park or workshop tickets we confirm on WhatsApp** — not our Sedang
 
 **[Ubud workshops](/blog/ubud-workshop-classes-2026)** — **[batik](/tours/batik-class)** and **[silver making](/tours/silver-making-class)** from **IDR 650,000** (3 hours).
 
-**[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** from **IDR 4,100,000** is not the [Batur jeep](/tours/batur-sunrise-jeep-tour). Compare: [dirt bike vs jeep](/blog/kintamani-dirt-bike-vs-batur-jeep).
+**[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** from **IDR 1,850,000** is not the [Batur jeep](/tours/batur-sunrise-jeep-tour). Compare: [dirt bike vs jeep](/blog/kintamani-dirt-bike-vs-batur-jeep).
 
 ## How to choose in 30 seconds
 
@@ -699,7 +699,7 @@ Tick **Canggu / Jimbaran / Nusa Dua shuttle** in the booking form, or skip it if
 | Pickup | Chosen area · Canggu / Jimbaran / Nusa Dua **550,000** | Hotel start | IDR 400,000 or self-meet |
 | Best when | You want the road and photos | Kids, heat, or no license | You want mud, not public roads |
 
-An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive. Side-by-side: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026). The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine.
+An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive. Side-by-side: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026). The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 1,850,000 is a guided enduro on lava — a different machine.
 
 ## How to book
 
@@ -805,7 +805,7 @@ Included: automatic scooter, fuel, helmet, bottled water, English-speaking guide
 | Pickup | Chosen area · Canggu / Jimbaran / Nusa Dua **550,000** | Hotel start | IDR 400,000 or self-meet |
 | Best when | You want the road and photos | Kids, heat, or no license | You want mud, not public roads |
 
-An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive. The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 4,100,000 is a guided enduro on lava — a different machine from this scooter day. Promo table + Canggu shuttle: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026).
+An International Driving Permit is **recommended** if you ride. Say pillion on WhatsApp if you do not want to drive. The [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from IDR 1,850,000 is a guided enduro on lava — a different machine from this scooter day. Promo table + Canggu shuttle: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026).
 
 ## How to book
 

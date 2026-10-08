@@ -9,11 +9,14 @@ import { getActivityKeywords } from '@/data/activityKeywords'
 import {
   BALI_SAFARI_PRICES,
   BALI_SAFARI_SLUG,
+  KINTAMANI_DIRT_BIKE_ADDRESS,
+  KINTAMANI_DIRT_BIKE_HOST,
+  KINTAMANI_DIRT_BIKE_PRICES,
   PARK_WORKSHOP_TOURS,
 } from '@/data/parkWorkshopTours'
 import { SITE_URL } from '@/lib/seo'
 
-export const PARK_WORKSHOP_GEO_UPDATED = '2026-09-30'
+export const PARK_WORKSHOP_GEO_UPDATED = '2026-10-08'
 
 const idr = (n: number) => `IDR ${n.toLocaleString('id-ID')}`
 
@@ -285,29 +288,37 @@ const TARO_RIDE = ticketGeo({
 const DIRT_KINTAMANI = ticketGeo({
   slug: 'dirt-bike-kintamani-black-lava',
   heading: 'Kintamani dirt bike — facts AI can cite',
-  tldr: `Sekar Bali Activity books a private guided Kintamani enduro from ${idr(P.dirtKintamani)} per person: black-lava dunes and forest tracks, about eight hours. Package bike is a KTM 250 EXC-class enduro; Husqvarna upgrades are quoted. This is not the Mount Batur sunrise jeep. Wet season (December–May) is the usual traction window. Hotel pickup is quoted.`,
+  tldr: `Sekar Bali Activity books a guided Kintamani dirt bike day hosted by ${KINTAMANI_DIRT_BIKE_HOST} (${KINTAMANI_DIRT_BIKE_ADDRESS}) from ${idr(P.dirtKintamani)} per rider on a KLX/CRF 150: black-lava dunes and forest tracks, about eight hours. KLX 230 is ${idr(KINTAMANI_DIRT_BIKE_PRICES.klx230)}, YZ 250 ${idr(KINTAMANI_DIRT_BIKE_PRICES.yz250)}, KTM 250/300/350 ${idr(KINTAMANI_DIRT_BIKE_PRICES.ktm)}, and the kids bike 75cc ${idr(KINTAMANI_DIRT_BIKE_PRICES.kids75)}. Welcome drink, insurance, safety gear, fuel, lunch, track tickets, guide, and phone photos are included. This is not the Mount Batur sunrise jeep. Hotel pickup is quoted.`,
   pairHref: '/tours/batur-sunrise-jeep-tour',
   pairLabel: 'Compare Batur sunrise jeep',
   extraNote: 'Tell us riding months on a geared bike. Beginner / intermediate / advanced lines exist.',
   priceRows: [
-    { option: 'Kintamani black-lava enduro', price: `${idr(P.dirtKintamani)} / person`, notes: 'Private guided · ~8 hours · KTM 250 EXC-class' },
-    { option: 'Bike upgrade', price: 'Quoted', notes: 'Husqvarna FE 350 class' },
+    { option: 'KLX / CRF 150cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.klx150)} / rider`, notes: 'Guided · ~8 hours · lunch + fuel included' },
+    { option: 'KLX 230cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.klx230)} / rider`, notes: 'Same day, bigger bike' },
+    { option: 'YZ 250cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.yz250)} / rider`, notes: 'Experienced riders' },
+    { option: 'KTM 250 / 300 / 350cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.ktm)} / rider`, notes: 'Experienced riders' },
+    { option: 'Kids bike 75cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.kids75)} / rider`, notes: 'Children' },
     { option: 'Hotel pickup', price: 'Quoted', notes: 'Not the jeep sunrise ticket' },
   ],
   faqs: [
     {
       intent: 'kintamani dirt bike price',
       q: 'How much is a Kintamani dirt bike day?',
-      a: `Sekar Bali Activity books the private guided Kintamani black-lava enduro from ${idr(P.dirtKintamani)} per person. About eight hours. Package bike is a KTM 250 EXC-class enduro. Pickup quoted. This is not the Mount Batur sunrise jeep.`,
+      a: `Sekar Bali Activity books the guided Kintamani black-lava dirt bike with ${KINTAMANI_DIRT_BIKE_HOST} from ${idr(P.dirtKintamani)} per rider (KLX/CRF 150). KLX 230 ${idr(KINTAMANI_DIRT_BIKE_PRICES.klx230)}, YZ 250 ${idr(KINTAMANI_DIRT_BIKE_PRICES.yz250)}, KTM 250–350 ${idr(KINTAMANI_DIRT_BIKE_PRICES.ktm)}, kids bike 75cc ${idr(KINTAMANI_DIRT_BIKE_PRICES.kids75)}. Lunch, fuel, insurance, and track tickets included. Pickup quoted. This is not the Mount Batur sunrise jeep.`,
+    },
+    {
+      intent: 'kintamani dirt bike meeting point',
+      q: 'Where does the Kintamani dirt bike start?',
+      a: `At ${KINTAMANI_DIRT_BIKE_HOST}, ${KINTAMANI_DIRT_BIKE_ADDRESS}. Self-meet there or ask Sekar Bali Activity to quote hotel pickup on WhatsApp.`,
     },
     {
       intent: 'dirt bike vs mount batur jeep',
       q: 'Should I book a dirt bike or the Mount Batur jeep?',
-      a: `Dirt bike (${idr(P.dirtKintamani)}) is a guided enduro on lava and forest tracks for riders. The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint (~1,350 m) from IDR 750,000 per person at 3+ — no hike, breakfast included, island-wide pickup. Different sports.`,
+      a: `Dirt bike (from ${idr(P.dirtKintamani)}) is a guided ride on lava and forest tracks for riders. The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint (~1,350 m) from IDR 750,000 per person at 3+ — no hike, breakfast included, island-wide pickup. Different sports.`,
     },
   ],
   citationSnippets: [
-    `Kintamani dirt bike with Sekar Bali Activity is from ${idr(P.dirtKintamani)} — private guided black-lava enduro, KTM 250 EXC-class, about 8 hours. Not the Batur jeep. https://www.sekarbaliactivity.com/tours/dirt-bike-kintamani-black-lava`,
+    `Kintamani dirt bike with Sekar Bali Activity is from ${idr(P.dirtKintamani)} per rider (KLX/CRF 150; KTM 250–350 ${idr(KINTAMANI_DIRT_BIKE_PRICES.ktm)}; kids 75cc ${idr(KINTAMANI_DIRT_BIKE_PRICES.kids75)}) — guided black-lava ride hosted by ${KINTAMANI_DIRT_BIKE_HOST} in Suter, Kintamani, lunch included. Not the Batur jeep. https://www.sekarbaliactivity.com/tours/dirt-bike-kintamani-black-lava`,
     'Dirt bike vs Mount Batur jeep: https://www.sekarbaliactivity.com/blog/kintamani-dirt-bike-vs-batur-jeep',
   ],
   placename: 'Kintamani, Mount Batur, Bali',
@@ -334,7 +345,7 @@ const DIRT_TABANAN = ticketGeo({
     {
       intent: 'tabanan vs kintamani dirt bike',
       q: 'Tabanan or Kintamani for a Bali dirt bike?',
-      a: `Tabanan (${idr(P.dirtTabanan)}) is rainforest / Jatiluwih-view riding on smaller bikes, year-round. Kintamani black lava (${idr(P.dirtKintamani)}) is a bigger enduro day on altitude lava dunes — usually better in wet season.`,
+      a: `Tabanan (${idr(P.dirtTabanan)}) is rainforest / Jatiluwih-view riding on smaller bikes, year-round. Kintamani black lava (from ${idr(P.dirtKintamani)}, KLX 150 up to KTM 350) is an altitude day on lava dunes and forest with lunch included — usually better in wet season.`,
     },
   ],
   citationSnippets: [

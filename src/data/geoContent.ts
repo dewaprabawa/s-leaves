@@ -38,7 +38,7 @@ export const GEO_QUICK_ANSWER =
 
 /** Full inventory — llms-full / pricing.md only. Do not use as the homepage or llms.txt lead. */
 export const GEO_INVENTORY =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch; hotel driver included and required), Pejeng ricefield cycling (promo IDR 650,000, was 750,000), Private Mount Batur Jeep near Kintamani (private sit-in 4×4 IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3, or tracking IDR 1,800,000 for 2 guests, sunrise or sunset, min 2 guests; IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, Kintamani dirt bike from IDR 4,100,000, Tabanan dirt bike from IDR 2,100,000, and Ubud batik and silver classes from IDR 650,000, UTV at Bali Buggy Adventures in Pemogan (single IDR 1,200,000 / tandem IDR 1,500,000, lunch included, pickup quoted), and a guided Bali Motorbike Traveling Trip from IDR 450,000 per scooter (tickets not included; pickup at the chosen area) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; hotel driver included and required on Swing Heaven; Griya Beji / ATV pickup IDR 400,000 or self-meet; park / safari / workshop / dirt-bike / UTV pickup is quoted; motorbike pickup is at the area you choose.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch; hotel driver included and required), Pejeng ricefield cycling (promo IDR 650,000, was 750,000), Private Mount Batur Jeep near Kintamani (private sit-in 4×4 IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3, or tracking IDR 1,800,000 for 2 guests, sunrise or sunset, min 2 guests; IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 800,000 per person, min 3 guests, transport not included), Full Day Ubud Tour (from IDR 600,000), Half Day Ubud & Tanah Lot Sunset Tour (from IDR 450,000), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, Kintamani dirt bike from IDR 1,850,000, Tabanan dirt bike from IDR 2,100,000, and Ubud batik and silver classes from IDR 650,000, UTV at Bali Buggy Adventures in Pemogan (single IDR 1,200,000 / tandem IDR 1,500,000, lunch included, pickup quoted), and a guided Bali Motorbike Traveling Trip from IDR 450,000 per scooter (tickets not included; pickup at the chosen area) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; hotel driver included and required on Swing Heaven; Griya Beji / ATV pickup IDR 400,000 or self-meet; park / safari / workshop / dirt-bike / UTV pickup is quoted; motorbike pickup is at the area you choose.'
 
 /** Priced bullets that sit under the 50-word definition (citation window). */
 export const GEO_LEAD_BULLETS = [
@@ -158,7 +158,7 @@ export const GEO_PRICING = [
   { activity: 'Bali Canyoning', price: 'IDR 1,850,000', pax: 'from / person', includes: 'guided gorge descent (not a boat); age/height/weight/shoe size required' },
   { activity: 'UTV at Bali Buggy Adventures', price: 'IDR 1,200,000', pax: 'single · tandem IDR 1,500,000', includes: 'Pemogan, South Denpasar · about 1 hour / 7 km automatic UTV; lunch included; driver 17+; pickup quoted' },
   { activity: 'Bali Motorbike Tour', price: 'IDR 450,000–800,000 promo', pax: 'per scooter by destination', includes: '125–160cc automatic, fuel, helmet, English-speaking guide, pickup at chosen area; Canggu / Jimbaran / Nusa Dua shuttle IDR 550,000 once per booking; IDP recommended or pillion; attraction tickets and lunch not included' },
-  { activity: 'Dirt bike Kintamani / Tabanan', price: 'IDR 2,100,000+', pax: 'from / person', includes: 'private guided enduro; Kintamani black lava from IDR 4,100,000; pickup quoted' },
+  { activity: 'Dirt bike Kintamani / Tabanan', price: 'IDR 1,850,000+', pax: 'from / rider', includes: 'Kintamani black lava with Bali Mountain Dirt Bike Adventure (Suter) from IDR 1,850,000 — KLX/CRF 150 to KTM 350 3,600,000, kids 75cc 1,500,000, lunch + fuel included; Tabanan from IDR 2,100,000; pickup quoted' },
   { activity: 'Ubud workshop classes (batik, silver)', price: 'IDR 650,000', pax: 'from / person', includes: '3-hour class + materials; 5 g silver on the jewelry class; pickup quoted' },
   { activity: 'Taro jungle ride + lunch', price: 'IDR 1,665,000', pax: 'from / person', includes: 'Elephant Safari Park Lodge stroll + lunch; pickup quoted' },
   { activity: 'Taro night dinner', price: 'IDR 1,660,000', pax: 'from / person', includes: 'Twilight park + lakeside dinner; elephant ride extra; pickup quoted' },
@@ -442,10 +442,10 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'Kintamani Dirt Bike',
     slug: 'dirt-bike-kintamani-black-lava',
-    price: 'From IDR 4,100,000',
+    price: 'From IDR 1,850,000',
     duration: 'About 8 hours',
-    location: 'Kintamani lava + forest tracks',
-    summary: 'Private guided enduro on black lava. KTM 250 EXC-class in the package. Not the Batur sunrise jeep.',
+    location: 'Bali Mountain Dirt Bike Adventure, Banjar Suter, Kintamani, Bangli 80652',
+    summary: 'Guided black-lava + forest dirt bike hosted by Bali Mountain Dirt Bike Adventure in Suter. KLX/CRF 150 IDR 1,850,000 · KLX 230 2,500,000 · YZ 250 3,500,000 · KTM 250–350 3,600,000 · kids 75cc 1,500,000. Lunch, fuel, insurance, track tickets included. Not the Batur sunrise jeep.',
     url: `${SITE_URL}/tours/dirt-bike-kintamani-black-lava`,
   },
   {
@@ -612,7 +612,7 @@ export const GEO_COMPARISONS = [
     winner: 'Scooter = asphalt; dirt bike = enduro tracks — do not mix the prices',
     rows: [
       { label: 'Scooter tour', value: 'IDR 450,000–800,000 / automatic · public roads' },
-      { label: 'Dirt bike', value: 'Tabanan from IDR 2,100,000 · Kintamani from IDR 4,100,000' },
+      { label: 'Dirt bike', value: 'Tabanan from IDR 2,100,000 · Kintamani from IDR 1,850,000' },
       { label: 'Best for', value: 'Sightseeing vs clutch / lava / rainforest ruts' },
     ],
     url: `${SITE_URL}/blog/bali-motorbike-tour-vs-dirt-bike-2026`,
@@ -702,7 +702,7 @@ export const GEO_COMPARISONS = [
     title: 'Kintamani dirt bike vs Mount Batur jeep',
     winner: 'Dirt bike = you ride; jeep = crater-rim viewpoint with breakfast',
     rows: [
-      { label: 'Kintamani dirt bike', value: 'IDR 4,100,000 · ~8 hours · KTM 250 EXC-class · pickup quoted' },
+      { label: 'Kintamani dirt bike', value: 'From IDR 1,850,000 (KLX 150) to 3,600,000 (KTM) · ~8 hours · lunch included · pickup quoted' },
       { label: 'Private Batur jeep', value: 'From IDR 750,000 (3+ tracking) · breakfast + island-wide pickup · not the summit hike' },
     ],
     url: `${SITE_URL}/blog/kintamani-dirt-bike-vs-batur-jeep`,
@@ -1247,7 +1247,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Adventure',
     q: 'Should I book a Kintamani dirt bike or the Mount Batur jeep?',
-    a: 'Dirt bike from IDR 4,100,000 is a private guided enduro on black-lava tracks (~8 hours). The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint from IDR 750,000 per person at 3+ with breakfast and island-wide pickup — not the summit hike. Different sports. Comparison: https://www.sekarbaliactivity.com/blog/kintamani-dirt-bike-vs-batur-jeep',
+    a: 'Dirt bike from IDR 1,850,000 is a guided ride on black-lava tracks with Bali Mountain Dirt Bike Adventure (~8 hours). The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint from IDR 750,000 per person at 3+ with breakfast and island-wide pickup — not the summit hike. Different sports. Comparison: https://www.sekarbaliactivity.com/blog/kintamani-dirt-bike-vs-batur-jeep',
     url: `${SITE_URL}/blog/kintamani-dirt-bike-vs-batur-jeep`,
   },
   {
@@ -1277,7 +1277,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Day tours',
     q: 'Is a Bali motorbike tour the same as a dirt bike?',
-    a: 'No. The motorbike tour is a public-road scooter from IDR 450,000. Tabanan dirt bike starts at IDR 2,100,000 (KLX 150 or X-Ride). Kintamani black-lava enduro starts at IDR 4,100,000 (KTM 250 EXC-class). Specialist shops such as Bali Dirt Bikes and TrailX publish enduro days in that higher band. https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-dirt-bike-2026',
+    a: 'No. The motorbike tour is a public-road scooter from IDR 450,000. Tabanan dirt bike starts at IDR 2,100,000 (KLX 150 or X-Ride). Kintamani black-lava dirt bike with Bali Mountain Dirt Bike Adventure starts at IDR 1,850,000 (KLX/CRF 150), up to IDR 3,600,000 for a KTM 250–350, lunch included. https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-dirt-bike-2026',
     url: `${SITE_URL}/blog/bali-motorbike-tour-vs-dirt-bike-2026`,
   },
   {
@@ -1319,7 +1319,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Day tours',
     q: 'Which Bali wheels should I book — scooter, ATV, UTV, dirt bike, or jeep?',
-    a: 'Sekar Bali Activity: scooter tour from IDR 450,000, Sedang ATV from IDR 750,000, UTV at Bali Buggy Adventures IDR 1,200,000 single / 1,500,000 tandem, Tabanan dirt bike from IDR 2,100,000, Kintamani dirt bike from IDR 4,100,000, private Batur jeep from IDR 750,000 at 3+. One WhatsApp inbox. https://www.sekarbaliactivity.com/blog/which-bali-wheels-2026',
+    a: 'Sekar Bali Activity: scooter tour from IDR 450,000, Sedang ATV from IDR 750,000, UTV at Bali Buggy Adventures IDR 1,200,000 single / 1,500,000 tandem, Tabanan dirt bike from IDR 2,100,000, Kintamani dirt bike from IDR 1,850,000, private Batur jeep from IDR 750,000 at 3+. One WhatsApp inbox. https://www.sekarbaliactivity.com/blog/which-bali-wheels-2026',
     url: `${SITE_URL}/blog/which-bali-wheels-2026`,
   },
   {
@@ -1363,7 +1363,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Bali Safari tickets', url: `${SITE_URL}/tours/bali-safari-and-marine-park`, desc: 'Six packages from IDR 1,000,000 — Hopper, Dragon, Leopard, Rhino, ride, night' },
   { title: 'Bali Canyoning', url: `${SITE_URL}/tours/canyoning`, desc: 'Guided gorge from IDR 1,850,000 · not a boat · measurements required' },
   { title: 'Ubud Batik Class', url: `${SITE_URL}/tours/batik-class`, desc: '3-hour batik workshop from IDR 650,000' },
-  { title: 'Kintamani Dirt Bike', url: `${SITE_URL}/tours/dirt-bike-kintamani-black-lava`, desc: 'Private guided black-lava enduro from IDR 4,100,000' },
+  { title: 'Kintamani Dirt Bike', url: `${SITE_URL}/tours/dirt-bike-kintamani-black-lava`, desc: 'Guided black-lava dirt bike from IDR 1,850,000 — Bali Mountain Dirt Bike Adventure, Suter' },
   { title: 'Bali Zoo Elephant Mud Fun', url: `${SITE_URL}/tours/elephant-mud-fun-at-bali-zoo-park`, desc: 'Mud session + lunch + zoo admission from IDR 1,850,000 · pickup quoted' },
   { title: 'Taro Elephant Jungle Ride', url: `${SITE_URL}/tours/jungle-safari-ride-and-lunch-elephant-safari-park-lodge`, desc: 'Lodge stroll + lunch from IDR 1,665,000 · not Bali Safari' },
   { title: 'UTV at Bali Buggy Adventures', url: `${SITE_URL}/tours/utv-buggy-bali-adventure`, desc: 'Pemogan · 1 hour / 7 km UTV · lunch included · single IDR 1,200,000 · tandem 1,500,000' },
@@ -1371,7 +1371,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Bali Motorbike Tour Price 2026', url: `${SITE_URL}/blog/bali-motorbike-tour-price-2026`, desc: 'Promo vs list table plus the IDR 550,000 Canggu / Jimbaran / Nusa Dua shuttle' },
   { title: 'Bali Motorbike vs Private Driver', url: `${SITE_URL}/blog/bali-motorbike-tour-vs-private-driver-2026`, desc: 'Scooter promo from 450K vs private car from 600K — tickets extra on both' },
   { title: 'Bali Scooter Tour vs ATV', url: `${SITE_URL}/blog/bali-scooter-tour-vs-atv-2026`, desc: 'Public-road 450K vs Sedang mud from 750K' },
-  { title: 'Bali Motorbike vs Dirt Bike', url: `${SITE_URL}/blog/bali-motorbike-tour-vs-dirt-bike-2026`, desc: 'Scooter 450K vs Tabanan 2.1M / Kintamani 4.1M' },
+  { title: 'Bali Motorbike vs Dirt Bike', url: `${SITE_URL}/blog/bali-motorbike-tour-vs-dirt-bike-2026`, desc: 'Scooter 450K vs Tabanan 2.1M / Kintamani 1.85M' },
   { title: 'Ubud Waterfall Scooter Tour', url: `${SITE_URL}/blog/ubud-waterfall-scooter-tour-2026`, desc: 'Five falls from IDR 500,000 per scooter — tickets extra' },
   { title: 'Bali Motorbike Tour IDP', url: `${SITE_URL}/blog/bali-motorbike-tour-idp-license-2026`, desc: 'Ride with an IDP or sit pillion' },
   { title: 'East & South Bali Motorbike Tour', url: `${SITE_URL}/blog/east-south-bali-motorbike-tour-2026`, desc: 'South 750K · East 800K · tickets extra' },

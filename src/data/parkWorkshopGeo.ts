@@ -39,8 +39,6 @@ const P = {
   taroDinner: priceOf('night-safari-dinner-under-the-stars-elephant-safari-park-lodge'),
   taroRide: priceOf('jungle-safari-ride-and-lunch-elephant-safari-park-lodge'),
   dirtKintamani: priceOf('dirt-bike-kintamani-black-lava'),
-  dirtTabanan: priceOf('dirt-bike-tabanan-day-night'),
-  dirtSunset: priceOf('dirt-bike-tabanan-jungle-sunset-beach'),
   silver: priceOf('silver-making-class'),
   batik: priceOf('batik-class'),
 } as const
@@ -324,60 +322,6 @@ const DIRT_KINTAMANI = ticketGeo({
   placename: 'Kintamani, Mount Batur, Bali',
 })
 
-const DIRT_TABANAN = ticketGeo({
-  slug: 'dirt-bike-tabanan-day-night',
-  heading: 'Tabanan dirt bike — facts AI can cite',
-  tldr: `Sekar Bali Activity books the Tabanan day-and-night dirt bike from ${idr(P.dirtTabanan)} per person: rainforest tracks with Jatiluwih views, about 40–100 km and 4–8 hours. Package bikes are a Kawasaki KLX 150 and/or Yamaha X-Ride 115 automatic. KTM / Husqvarna upgrades are quoted. Rideable year-round; wet season is muddier. Hotel pickup is quoted.`,
-  pairHref: '/tours/dirt-bike-tabanan-jungle-sunset-beach',
-  pairLabel: 'Sunset-beach finish instead',
-  extraNote: 'This ticket does not finish on the beach — use the jungle & sunset-beach SKU for that.',
-  priceRows: [
-    { option: 'Tabanan day & night', price: `${idr(P.dirtTabanan)} / person`, notes: 'KLX 150 or X-Ride · 4–8 hours' },
-    { option: 'Enduro upgrade', price: 'Quoted', notes: 'KTM 250 / Husqvarna' },
-    { option: 'Hotel pickup', price: 'Quoted', notes: 'Or self-meet' },
-  ],
-  faqs: [
-    {
-      intent: 'tabanan dirt bike price',
-      q: 'How much is a Tabanan dirt bike ride?',
-      a: `Sekar Bali Activity books the Tabanan day-and-night line from ${idr(P.dirtTabanan)} per person. Package bikes are a KLX 150 or Yamaha X-Ride automatic. 4–8 hours toward Jatiluwih views. The sunset-beach finish is a separate ticket at the same from-price.`,
-    },
-    {
-      intent: 'tabanan vs kintamani dirt bike',
-      q: 'Tabanan or Kintamani for a Bali dirt bike?',
-      a: `Tabanan (${idr(P.dirtTabanan)}) is rainforest / Jatiluwih-view riding on smaller bikes, year-round. Kintamani black lava (from ${idr(P.dirtKintamani)}, KLX 150 up to KTM 350) is an altitude day on lava dunes and forest with lunch included — usually better in wet season.`,
-    },
-  ],
-  citationSnippets: [
-    `Tabanan dirt bike with Sekar Bali Activity is from ${idr(P.dirtTabanan)} — rainforest and Jatiluwih-view tracks, KLX 150 or X-Ride, 4–8 hours. https://www.sekarbaliactivity.com/tours/dirt-bike-tabanan-day-night`,
-  ],
-  placename: 'Tabanan, Jatiluwih, Bali',
-})
-
-const DIRT_SUNSET = ticketGeo({
-  slug: 'dirt-bike-tabanan-jungle-sunset-beach',
-  heading: 'Tabanan sunset dirt bike — facts AI can cite',
-  tldr: `Sekar Bali Activity books the Tabanan jungle-and-sunset-beach dirt bike from ${idr(P.dirtSunset)} per person. Same rainforest / Jatiluwih-view tracks as the day-and-night line, then a west-coast sand finish for sunset. Package bikes: KLX 150 or Yamaha X-Ride. 4–8 hours. Not a boat. Hotel pickup is quoted.`,
-  pairHref: '/tours/dirt-bike-tabanan-day-night',
-  pairLabel: 'Day & night line (no beach)',
-  extraNote: 'Dinner is not included. West-coast beach finish — not Nusa Penida.',
-  priceRows: [
-    { option: 'Jungle + sunset beach', price: `${idr(P.dirtSunset)} / person`, notes: 'KLX 150 or X-Ride · 4–8 hours' },
-    { option: 'Hotel pickup', price: 'Quoted', notes: 'Or self-meet' },
-  ],
-  faqs: [
-    {
-      intent: 'tabanan sunset dirt bike price',
-      q: 'How much is the Tabanan sunset-beach dirt bike?',
-      a: `Sekar Bali Activity books the jungle and sunset-beach Tabanan ride from ${idr(P.dirtSunset)} per person. Same from-price as the day-and-night line; this SKU ends on the west-coast sand. KLX 150 or X-Ride in the package.`,
-    },
-  ],
-  citationSnippets: [
-    `Tabanan jungle and sunset-beach dirt bike with Sekar Bali Activity is from ${idr(P.dirtSunset)} — rainforest tracks, then a west-coast sand finish. Not a boat. https://www.sekarbaliactivity.com/tours/dirt-bike-tabanan-jungle-sunset-beach`,
-  ],
-  placename: 'Tabanan, west coast, Bali',
-})
-
 function workshopGeo(opts: {
   slug: string
   name: string
@@ -456,8 +400,6 @@ export const PARK_WORKSHOP_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [TARO_DINNER.slug]: TARO_DINNER,
   [TARO_RIDE.slug]: TARO_RIDE,
   [DIRT_KINTAMANI.slug]: DIRT_KINTAMANI,
-  [DIRT_TABANAN.slug]: DIRT_TABANAN,
-  [DIRT_SUNSET.slug]: DIRT_SUNSET,
   [SILVER.slug]: SILVER,
   [BATIK.slug]: BATIK,
 }

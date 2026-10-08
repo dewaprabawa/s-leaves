@@ -19,6 +19,16 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/tours/dirt-bike-tabanan-day-night',
+        destination: '/tours/dirt-bike-kintamani-black-lava',
+        permanent: true,
+      },
+      {
+        source: '/tours/dirt-bike-tabanan-jungle-sunset-beach',
+        destination: '/tours/dirt-bike-kintamani-black-lava',
+        permanent: true,
+      },
+      {
         source: '/tours/jungle-hopper-bali-safari-and-marine-park',
         destination: '/tours/bali-safari-and-marine-park',
         permanent: true,

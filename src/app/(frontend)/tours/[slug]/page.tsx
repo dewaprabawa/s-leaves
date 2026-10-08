@@ -671,6 +671,7 @@ function buildCookingWebPageSchema(tour: Tour) {
     significantLink: [
       `${SITE_URL}/book?activity=balinese-cooking-class`,
       `${SITE_URL}/blog/cooking-class-ubud-price-2026-worth-it`,
+      `${SITE_URL}/blog/private-vs-shared-cooking-class-ubud`,
       `${SITE_URL}/blog/vegetarian-vegan-cooking-class-ubud`,
       `${SITE_URL}/blog/morning-vs-afternoon-ubud-cooking-class`,
       `${SITE_URL}/blog/cycling-cooking-class-ubud-full-day-itinerary`,

@@ -13,6 +13,7 @@ const ACTIVITY_GUIDES = [
   { label: 'Jeep pickup times', href: '/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026' },
   { label: 'Cooking class', href: '/tours/balinese-cooking-class' },
   { label: 'Cooking price 2026', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
+  { label: 'Private vs shared class', href: '/blog/private-vs-shared-cooking-class-ubud' },
   { label: 'Cycling', href: '/tours/ubud-ricefield-cycling-tour' },
   { label: 'Cycling guide', href: '/blog/ubud-ricefield-cycling-tour-guide-2026' },
   { label: 'ATV', href: '/tours/bali-atv-adventure' },

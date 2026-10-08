@@ -39,6 +39,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   cooking: [
     { title: 'Cooking class price calculator', href: '/planners/cooking-class-price' },
     { title: 'Cooking class Ubud price 2026', href: '/blog/cooking-class-ubud-price-2026-worth-it' },
+    { title: 'Private vs shared cooking class', href: '/blog/private-vs-shared-cooking-class-ubud' },
     { title: 'Inside Tumang cooking class', href: '/blog/inside-balinese-cooking-class-pejeng' },
     { title: 'Vegetarian cooking class', href: '/blog/vegetarian-vegan-cooking-class-ubud' },
     { title: 'Morning vs afternoon class', href: '/blog/morning-vs-afternoon-ubud-cooking-class' },
@@ -226,6 +227,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'mount-batur-sit-in-jeep-vs-tracking': 'jeep',
   'private-kintamani-day-jeep-itinerary': 'jeep',
   'cooking-class-ubud-price-2026-worth-it': 'cooking',
+  'private-vs-shared-cooking-class-ubud': 'cooking',
   'inside-balinese-cooking-class-pejeng': 'cooking',
   'vegetarian-vegan-cooking-class-ubud': 'cooking',
   'morning-vs-afternoon-ubud-cooking-class': 'cooking',

@@ -942,7 +942,7 @@ const MOTORBIKE: ActivityGeoCorpus = {
     {
       intent: 'kintamani scooter vs batur jeep',
       q: 'Is the Kintamani scooter the same as the Mount Batur jeep?',
-      a: `No. The Kintamani traveling trip is a public-road ${MOTORBIKE_ENGINE} day at ${idr(MOTORBIKE_KINTAMANI_IDR)} promo per scooter — sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran, Tukad Cepung. Tickets extra. The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint (~1,350 m), not the summit hike. Sit-in is IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3; tracking IDR 1,800,000 for 2 or IDR 750,000 per person at 3+. Meal included after the viewpoint. Island-wide pickup included on the jeep. Compare: https://www.sekarbaliactivity.com/blog/kintamani-scooter-vs-batur-jeep-2026`,
+      a: `No. The Kintamani traveling trip is a public-road ${MOTORBIKE_ENGINE} day at ${idr(MOTORBIKE_KINTAMANI_IDR)} promo per scooter — sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran, Tukad Cepung. Tickets extra. The private Mount Batur jeep is a 4×4 to a crater-rim viewpoint (~1,350 m), not the summit hike. Sit-in is IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3; tracking IDR 1,800,000 for 2 or IDR 750,000 per person at 3+. Breakfast included after the viewpoint; lunch optional. Island-wide pickup included on the jeep. Compare: https://www.sekarbaliactivity.com/blog/kintamani-scooter-vs-batur-jeep-2026`,
     },
     {
       intent: 'bali motorbike tour vs atv',

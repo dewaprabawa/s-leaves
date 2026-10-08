@@ -302,7 +302,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'private 4x4 Mount Batur',
       'sunrise jeep Lake Batur',
       'Mount Batur jeep pickup time',
-      'Batur jeep meal included',
+      'Batur jeep breakfast included',
       'Mount Batur jeep no hike',
       'Mount Batur sunrise no hiking required',
       'Private Kintamani Day',

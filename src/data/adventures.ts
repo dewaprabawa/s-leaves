@@ -136,7 +136,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     tagline: "Private · tracking · sunrise or sunset",
     paxLabel: "Per person (private · min 2 · meal included)",
     description:
-      "Your private 4×4 to Mount Batur near Kintamani — sunrise or sunset, minimum 2 guests. Sit-in private jeep IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3, or tracking jeep (jeep + guided trek) IDR 1,800,000 for 2 guests. Sunrise or sunset viewpoint, then the black lava field. Sit-down meal included. Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000 (ticket included). Hotel pickup included. Tracking 3+ IDR 750,000 per person.",
+      "Your private 4×4 to Mount Batur near Kintamani — sunrise or sunset, minimum 2 guests. Sit-in private jeep IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3, or tracking jeep (jeep + guided trek) IDR 1,800,000 for 2 guests. Sunrise or sunset viewpoint, then the black lava field. Breakfast included. Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000 (ticket included). Hotel pickup included. Tracking 3+ IDR 750,000 per person.",
     highlights: [
       "Private jeep — your vehicle, your group",
       "Sunrise or sunset over Lake Batur and Mount Agung",
@@ -154,10 +154,10 @@ export const ADVENTURES: AdventureCatalogItem[] = [
   {
     id: "kintamani-day",
     name: "Private Kintamani Day",
-    tagline: "Private · jeep or trek · meal · hot spring · Umah Kuno · rice terrace",
+    tagline: "Private · jeep or trek · breakfast · hot spring · Umah Kuno · rice terrace",
     paxLabel: "Per person (private · min 2 · promo · meal included)",
     description:
-      "Your private full-day: jeep or tracking at Mount Batur, natural hot spring with the entrance ticket included, a sit-down meal, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. Meal included on both Jeep and Tracking.",
+      "Your private full-day: jeep or tracking at Mount Batur, natural hot spring with the entrance ticket included, breakfast, Umah Kuno coffee tasting, and a rice-terrace stop. Minimum 2 guests. Promo IDR 1,300,000 per person (was IDR 1,450,000). Hotel pickup included. Breakfast included on both Jeep and Tracking.",
     highlights: [
       "Private jeep or tracking — you choose",
       "Sit-down meal included",

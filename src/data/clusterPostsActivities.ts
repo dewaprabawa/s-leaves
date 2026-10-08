@@ -521,7 +521,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 > - Food + village days include **free Ubud pickup** (cooking + cycling)
 > - ATV / rafting / tubing / Griya Beji: **IDR 400,000** hotel pickup or free self-meet
 > - Swing Heaven: **hotel driver included** (required, no self-meet)
-> - Private Batur jeep: **island-wide pickup included** — sit-down **meal included** after the viewpoint (jeep and tracking)
+> - Private Batur jeep: **island-wide pickup included** — sit-down **breakfast included** after the viewpoint (jeep and tracking)
 > - Coffee tasting: **min 3 guests**, transport **not** included
 > - No upfront payment to inquire — [Book on WhatsApp](/book)
 
@@ -581,7 +581,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Tirta Empu Purification](/tours/tirta-empu-purification)** is the private **IDR 1,200,000** temple morning at **Tirta Empul or Pura Beji** — shuttle, guide, offering, sarong, and **breakfast included**. Guide: [Tirta Empu melukat](/blog/tirta-empu-melukat-ubud-guide).
 
-**[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is **your private 4×4** — sit-in (no hike) **IDR 2,300,000 for 2 guests** (**IDR 2,850,000 for 3**) or **tracking jeep** (jeep + guided trek) **IDR 1,800,000 for 2 guests**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m, then the black lava field. Tracking 3+ **IDR 750,000**. **Meal included.** Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
+**[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is **your private 4×4** — sit-in (no hike) **IDR 2,300,000 for 2 guests** (**IDR 2,850,000 for 3**) or **tracking jeep** (jeep + guided trek) **IDR 1,800,000 for 2 guests**, sunrise or sunset, **minimum 2 guests**. Crater-rim viewpoint ~1,350m, then the black lava field. Tracking 3+ **IDR 750,000**. **Breakfast included.** Optional Batur hot spring **+IDR 150,000** per person with the **entrance ticket included**. Hotel pickup included island-wide. Comparison: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
 ## Coffee, culture & private cars
 

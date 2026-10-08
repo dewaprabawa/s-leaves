@@ -66,7 +66,7 @@ Spa and **Taman Dedari** dinner stay yours. Outfit: floral / long dress for stat
 
 ### Day 5 — Kintamani sunrise, one temple, home party
 
-Leave the villa about **04:30**. We run a **[private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** to the **crater-rim viewpoint (~1,350m)** with a sit-down meal after. Pickup is **included island-wide**. This is **not** a 2-hour summit hike. For **6 guests** the published **3+ rate is IDR 950,000 per person** sit-in (**IDR 750,000** on the tracking jeep).
+Leave the villa about **04:30**. We run a **[private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** to the **crater-rim viewpoint (~1,350m)** with breakfast after. Pickup is **included island-wide**. This is **not** a 2-hour summit hike. For **6 guests** the published **3+ rate is IDR 950,000 per person** sit-in (**IDR 750,000** on the tracking jeep).
 
 If the viewpoint café you named (Akasa and similar) is your photo pin, say so — we still sell the **jeep**, not a coffee-shop reservation. Do **not** stack three Kintamani cafés. Optional **hot spring +IDR 150,000** / person with ticket; drop it first if traffic slips.
 
@@ -181,7 +181,7 @@ Split of inventory: [what we book vs you book](/blog/bali-private-itinerary-what
 
 Families usually want **private transport**, **one highlight a day**, and **food they can time**. They do not want a 6-lady club circuit. We do not pretend otherwise.
 
-The jeep is the family sunrise product because it is a **4×4 to a crater-rim viewpoint (~1,350m)** with a sit-down meal — **not** a 2-hour lava hike in the dark. Cooking class caps at **8 guests** and includes **Ubud pickup**. Cycling is a **2-hour** village ride with lunch. Same-day culture we already publish: [cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary) (both free Ubud pickup).
+The jeep is the family sunrise product because it is a **4×4 to a crater-rim viewpoint (~1,350m)** with breakfast included — **not** a 2-hour lava hike in the dark. Cooking class caps at **8 guests** and includes **Ubud pickup**. Cycling is a **2-hour** village ride with lunch. Same-day culture we already publish: [cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary) (both free Ubud pickup).
 
 ## Sample 4-day family stack
 
@@ -241,7 +241,7 @@ What we **do** control is published on this domain: **IDR**, pickup rules, and W
 | Private driver day (car) | **IDR 600,000** | Same “from” as the [full-day Ubud car](/tours/full-day-ubud-tour). One long day or several. Entrance fees extra. |
 | HiAce / 10–12 seater | **Quote** | Families or **6+ with bags**. Not the car-day rate. |
 | [Swing Heaven](/tours/swing-heaven-bali) | **IDR 530,000** / **630,000** lunch | Bongkasa / Ayung. Koi boat + dress extra. Hotel driver **included** (required). |
-| [Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) | **IDR 950,000** / person at 3+ (sit-in) | Pickup **included**. Meal after viewpoint. Not the summit trek. |
+| [Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) | **IDR 950,000** / person at 3+ (sit-in) | Pickup **included**. Breakfast after viewpoint. Not the summit trek. |
 | [Tumang cooking](/tours/balinese-cooking-class) | **IDR 450,000** shared | Free Ubud pickup. Max 8. Strong family day. |
 | [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) | **Promo IDR 650,000** (was 750,000) | Lunch + free Ubud pickup. |
 | [Cycling + cooking combo](/book?activity=combo-cycling-cooking) | **IDR 1,100,000** | Sum of published tickets (650K promo + 450K) · both free Ubud pickup. |
@@ -307,7 +307,7 @@ Six people — kids or adults — already need meals, toilets, and photos. A boa
 | Skip | Why it breaks a 6-day clock | Do this instead |
 | --- | --- | --- |
 | **Nusa Penida** | Full day on boats + cliffs; wrecks the next morning | Stay south or Ubud; save Penida for a longer trip |
-| **Lovina dolphins** | Pre-dawn + long north-coast drive | **[Batur jeep sunrise](/tours/batur-sunrise-jeep-tour)** — closer, meal included, no summit hike |
+| **Lovina dolphins** | Pre-dawn + long north-coast drive | **[Batur jeep sunrise](/tours/batur-sunrise-jeep-tour)** — closer, breakfast included, no summit hike |
 | **Tirta Empul + Uluwatu + Besakih** | Temple fatigue | One cliff temple **or** one spring. Waterfall ritual we sell: **[Griya Beji](/tours/griya-beji-waterfall)** |
 | **Ubud Palace as a must** | Easy to walk if you are already in town | Optional 20 minutes — not a booked SKU |
 | **Glass bridge / extra ticket rides** | Time vs memory is poor | Stay at **[Swing Heaven](/tours/swing-heaven-bali)** until everyone has photos |
@@ -328,7 +328,7 @@ If a planner sends FINNS, La Favela, Cretya, Savaya, jewelry class, spa, or wate
 
 Google already sends guests here looking for a shorter week. Keep one paid pin a day:
 
-- **[Private Batur jeep](/tours/batur-sunrise-jeep-tour)** — no-hike sunrise, meal included
+- **[Private Batur jeep](/tours/batur-sunrise-jeep-tour)** — no-hike sunrise, breakfast included
 - **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — flagship land + water from IDR 1,250,000
 - **[ATV at All New Bali Adventure](/tours/bali-atv-adventure)** — book the tour page, not only the arena guide
 - **[Tumang cooking](/tours/balinese-cooking-class)** or **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)** — free Ubud pickup

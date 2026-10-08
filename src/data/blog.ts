@@ -2091,7 +2091,7 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
     content: `
-**How much does the private Mount Batur jeep cost in 2026?** With Sekar Bali Activity, **your private** 4×4 jeep to Mount Batur near Kintamani is **minimum 2 guests**. **Sit-in** is **IDR 2,300,000 for 2 guests** (**IDR 1,150,000 per person**) or **IDR 2,850,000 for 3** (**IDR 950,000 per person**). **Tracking** (jeep + guided trek) is **IDR 1,800,000 for 2 guests** (**IDR 900,000 per person**). Tracking is **IDR 750,000 per person** for 3 or more guests in one jeep. Sunrise or sunset. Hotel pickup, a hot drink, a sit-down **meal**, and the Kintamani entrance fee are included. Optional Batur hot spring is **+IDR 150,000 per person** with the **entrance ticket included**.
+**How much does the private Mount Batur jeep cost in 2026?** With Sekar Bali Activity, **your private** 4×4 jeep to Mount Batur near Kintamani is **minimum 2 guests**. **Sit-in** is **IDR 2,300,000 for 2 guests** (**IDR 1,150,000 per person**) or **IDR 2,850,000 for 3** (**IDR 950,000 per person**). **Tracking** (jeep + guided trek) is **IDR 1,800,000 for 2 guests** (**IDR 900,000 per person**). Tracking is **IDR 750,000 per person** for 3 or more guests in one jeep. Sunrise or sunset. Hotel pickup, a hot drink, a sit-down **breakfast**, and the Kintamani entrance fee are included. Optional Batur hot spring is **+IDR 150,000 per person** with the **entrance ticket included**.
 
 > **Key Takeaways**
 > - Private · **minimum 2 guests**
@@ -2101,7 +2101,7 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
 > - 3+ guests sharing: **IDR 750,000 per person** — best per-person rate
 > - Optional hot spring: **+IDR 150,000 per person** (ticket included)
 > - Included: hotel pickup, driver, hot drink, sit-down meal, entrance fee
-> - Meal is after the viewpoint — not cooked inside the 4×4
+> - Breakfast is after the viewpoint — not cooked inside the 4×4
 > - Book on WhatsApp — no upfront payment to inquire
 
 ---
@@ -2110,7 +2110,7 @@ Message us with **name, age, adult/child, hotel or self-meet preference, Single 
 
 | Option | Guests | Package (IDR) | Per person | What's included |
 | --- | --- | --- | --- | --- |
-| Sit-in jeep | 2 sharing (minimum) | 2,300,000 | 1,150,000 | Pickup, driver, hot drink, meal, entrance fee |
+| Sit-in jeep | 2 sharing (minimum) | 2,300,000 | 1,150,000 | Pickup, driver, hot drink, breakfast, entrance fee |
 | Tracking jeep | 2 sharing (minimum) | 1,800,000 | 900,000 | Same inclusions · jeep + guided trek |
 | Sit-in or tracking | 3+ sharing | from 2,250,000 | 750,000 | Same inclusions · best per-person rate |
 | Hot spring add-on | any jeep | +150,000 pp | 150,000 | Any private jeep · entrance ticket included |
@@ -2123,7 +2123,7 @@ Why does the price drop per person as the group grows? A private jeep and driver
 2. Private 4×4 jeep and English-speaking driver for the volcanic-track climb
 3. Hot drink on the way up to the crater-rim viewpoint
 4. Sunrise over Lake Batur and Mount Agung
-5. Sit-down meal after the viewpoint (included)
+5. Breakfast after the viewpoint (included)
 6. Kintamani area entrance fee
 7. Drop-off back at your hotel by around 09:30 AM
 
@@ -2133,7 +2133,7 @@ An optional, no-obligation stop at a local Kintamani coffee plantation can be ad
 
 When comparing Mount Batur sunrise tour prices, ask:
 
-- Is **breakfast** included, or do you need to bring a snack? (On our jeep, a sit-down **meal is included** after the viewpoint.)
+- Is **breakfast** included, or do you need to bring a snack? (On our jeep, a sit-down **breakfast is included** after the viewpoint.)
 - Is the **entrance fee** included or an extra charge on arrival?
 - Is it a **private jeep** or a shared minibus to a trailhead?
 - Is **hotel pickup** included for your specific area, or an extra fee?

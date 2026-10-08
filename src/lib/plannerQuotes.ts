@@ -178,7 +178,7 @@ export function quoteJeepPlanner(input: {
     ],
     total: activityTotal + hotSpringTotal,
     notes: [
-      'Sit-down meal after the viewpoint is included. Food is not cooked inside the 4×4.',
+      'Breakfast after the viewpoint is always included; lunch is optional. Food is not cooked inside the 4×4.',
       'Not the 2-hour Mount Batur summit trek. Sit-in stays in the 4×4; tracking adds a guided walk to the crater-rim viewpoint (~1,350 m).',
       'Hotel pickup is included island-wide — not the IDR 400,000 ATV / rafting surcharge.',
     ],
@@ -458,7 +458,7 @@ export function chooseActivity(mood: ActivityMoodId): ActivityChoice {
         title: 'Private sit-in Mount Batur jeep',
         fromPrice: JEEP_SITIN_PAIR_TOTAL_IDR / 2,
         pickup: 'Island-wide hotel pickup included',
-        why: 'Stay in the 4×4 to a crater-rim viewpoint. Minimum 2 guests. Meal after the viewpoint. Not the summit trek.',
+        why: 'Stay in the 4×4 to a crater-rim viewpoint. Minimum 2 guests. Breakfast after the viewpoint. Not the summit trek.',
         tourHref: '/tours/batur-sunrise-jeep-tour',
         blogHref: '/blog/mount-batur-jeep-vs-sunrise-trek',
         blogLabel: 'Jeep vs trek',

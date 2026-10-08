@@ -492,7 +492,7 @@ export function BookingPopup({
     }
     if (activeTour.pricingActivityId === 'kintamani-day') {
       pickupNoteParts.push(
-        'Itinerary: jeep or tracking · natural hot spring (ticket included) · meal included · Umah Kuno coffee · rice terrace',
+        'Itinerary: jeep or tracking · natural hot spring (ticket included) · breakfast included · Umah Kuno coffee · rice terrace',
       )
     } else if (
       activeTour.pricingActivityId === 'jeep-sunrise' ||
@@ -500,8 +500,8 @@ export function BookingPopup({
     ) {
       pickupNoteParts.push(
         activeTour.pricingActivityId === 'jeep-tracking'
-          ? `Tracking jeep · sit-down meal included after the viewpoint · ${formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR)} for 2 guests`
-          : `Sit-in jeep · sit-down meal included after the viewpoint · ${formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR)} for 2 guests`,
+          ? `Tracking jeep · breakfast included after the viewpoint · lunch optional · ${formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR)} for 2 guests`
+          : `Sit-in jeep · breakfast included after the viewpoint · lunch optional · ${formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR)} for 2 guests`,
       )
     }
     for (const { addon, qty } of selectedAddons) {
@@ -774,22 +774,22 @@ export function BookingPopup({
               {activeTour.pricingActivityId === 'kintamani-day' ? (
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
                   Private full-day · min 2 · promo IDR 1,300,000 (was 1,450,000): jeep or tracking,
-                  natural hot spring (ticket included), meal included, Umah Kuno coffee, rice terrace.
+                  natural hot spring (ticket included), breakfast included, Umah Kuno coffee, rice terrace.
                 </p>
               ) : activeTour.pricingActivityId === 'jeep-sunrise' ? (
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
                   Sit-in private jeep · min 2 · {formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR)} for 2 guests
                   ({formatIdr(JEEP_SITIN_PAIR_TOTAL_IDR / 2)} each) · 3 guests{' '}
                   {formatIdr(JEEP_SITIN_GROUP_IDR * 3)} · 3+ {formatIdr(JEEP_SITIN_GROUP_IDR)} each ·
-                  sit-down meal included. Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000
-                  (ticket included).
+                  breakfast included · lunch optional. Optional Batur hot spring +IDR 150,000 or Toya
+                  Devasya +IDR 300,000 (ticket included).
                 </p>
               ) : activeTour.pricingActivityId === 'jeep-tracking' ? (
                 <p className="mt-2 text-xs text-brand-green-light leading-relaxed">
                   Tracking jeep (4×4 + guided trek) · min 2 · {formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR)}{' '}
                   for 2 guests ({formatIdr(JEEP_TRACKING_PAIR_TOTAL_IDR / 2)} each) · 3+{' '}
-                  {formatIdr(JEEP_TRACKING_GROUP_IDR)} each · sit-down meal included. Optional Batur hot spring +IDR 150,000 or Toya
-                  Devasya +IDR 300,000 (ticket included).
+                  {formatIdr(JEEP_TRACKING_GROUP_IDR)} each · breakfast included · lunch optional. Optional
+                  Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000 (ticket included).
                 </p>
               ) : null}
             </div>

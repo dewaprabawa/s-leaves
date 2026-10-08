@@ -255,16 +255,16 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
     title: 'Kintamani Dirt Bike vs Mount Batur Jeep: Which Sunrise Sport?',
     seoTitle: 'Kintamani Dirt Bike vs Batur Jeep | 2026',
     excerpt:
-      'Dirt bike from IDR 4.1M on black lava. Private Batur jeep from 750K at 3+ with meal and island-wide pickup. Different sports.',
+      'Dirt bike from IDR 4.1M on black lava. Private Batur jeep from 750K at 3+ with breakfast and island-wide pickup. Different sports.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/dirt-bike-kintamani-ridge.jpg',
     content: `
-**Dirt bike or the Mount Batur jeep?** They share a volcano and nothing else. **[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** is a **private guided enduro** from **IDR 4,100,000** — black-lava dunes and forest tracks, about **8 hours**, KTM 250 EXC-class bike in the package. **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is a **4×4 to a crater-rim viewpoint (~1,350 m)** from **IDR 750,000** per person at 3+ on tracking (**IDR 2,300,000** sit-in for 2 · **IDR 2,850,000** sit-in for 3 · **IDR 1,800,000** tracking for 2) with **island-wide pickup** and a **sit-down meal**. The jeep is **not** the 2-hour summit hike. WhatsApp — **no payment to inquire**.
+**Dirt bike or the Mount Batur jeep?** They share a volcano and nothing else. **[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** is a **private guided enduro** from **IDR 4,100,000** — black-lava dunes and forest tracks, about **8 hours**, KTM 250 EXC-class bike in the package. **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is a **4×4 to a crater-rim viewpoint (~1,350 m)** from **IDR 750,000** per person at 3+ on tracking (**IDR 2,300,000** sit-in for 2 · **IDR 2,850,000** sit-in for 3 · **IDR 1,800,000** tracking for 2) with **island-wide pickup** and a **breakfast**. The jeep is **not** the 2-hour summit hike. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - Dirt bike **IDR 4,100,000** · you ride · wet-season traction is better
-> - Jeep **IDR 750,000** (3+) · you sit (or walk with a tracking guide) · meal + pickup included
+> - Jeep **IDR 750,000** (3+) · you sit (or walk with a tracking guide) · breakfast + pickup included
 > - Tabanan dirt bike is a **different** rainforest line from **IDR 2,100,000**
 > - Do not book the dirt bike if you wanted a sunrise viewpoint breakfast
 
@@ -276,7 +276,7 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
 | You do | Ride an enduro | Sit in a 4×4 (or tracking walk) |
 | Clock | ~8 hours | 4–7 hours |
 | Pickup | Quoted | **Island-wide included** |
-| Meal | Not assumed | **Included** after the viewpoint |
+| Breakfast | Not assumed | **Included** after the viewpoint |
 | Best season | Dec–May (wet, less dust) | Year-round |
 
 Tabanan options at **IDR 2,100,000**: [day & night](/tours/dirt-bike-tabanan-day-night) or [jungle + sunset beach](/tours/dirt-bike-tabanan-jungle-sunset-beach) on KLX 150 / X-Ride bikes.

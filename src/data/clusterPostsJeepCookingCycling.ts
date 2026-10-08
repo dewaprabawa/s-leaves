@@ -318,12 +318,12 @@ Tumang cooking is a strong same-day partner (promo **IDR 450,000**, max 8, free 
     title: 'Mount Batur Jeep: Sunrise vs Sunset',
     seoTitle: 'Batur Jeep Sunrise vs Sunset | Same Price',
     excerpt:
-      'Same private 4×4 and crater-rim viewpoint — sunrise is 6–7 hours from a 02:00–03:00 pickup; sunset is 4–5 hours from 14:30–15:30. Same IDR. Meal included.',
+      'Same private 4×4 and crater-rim viewpoint — sunrise is 6–7 hours from a 02:00–03:00 pickup; sunset is 4–5 hours from 14:30–15:30. Same IDR. Breakfast included.',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1693821876313-dc573a92028c?auto=format&fit=crop&w=1200&q=80',
     content: `
-**Should you book a Mount Batur jeep at sunrise or sunset?** Book **sunrise** if the caldera light over **Lake Batur** and **Mount Agung** is the photo you came for. Book **sunset** if you refuse a 02:00 lobby call. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) uses the **same private 4×4**, the **same crater-rim viewpoint (~1,350m)**, and the **same IDR** for both. Sit-in or tracking. **Minimum 2 guests.** Sit-down **meal included.**
+**Should you book a Mount Batur jeep at sunrise or sunset?** Book **sunrise** if the caldera light over **Lake Batur** and **Mount Agung** is the photo you came for. Book **sunset** if you refuse a 02:00 lobby call. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) uses the **same private 4×4**, the **same crater-rim viewpoint (~1,350m)**, and the **same IDR** for both. Sit-in or tracking. **Minimum 2 guests.** Sit-down **breakfast included.**
 
 > **Key Takeaways**
 > - **Same price** · sunrise or sunset · sit-in or tracking
@@ -339,7 +339,7 @@ Tumang cooking is a strong same-day partner (promo **IDR 450,000**, max 8, free 
 | Pickup | 02:00–03:00 (south Bali earliest) | 14:30–15:30 |
 | Duration | ~6–7 hours | ~4–5 hours |
 | Viewpoint | Eastern-flank crater rim ~1,350m | Same rim |
-| Meal | Included after the viewpoint | Included after the viewpoint |
+| Breakfast | Included after the viewpoint | Included after the viewpoint |
 | Coffee stop | Optional Kintamani stop on the way back | Usually skipped (evening return) |
 | Hot spring add-on | +150,000 · ticket included | +150,000 · ticket included |
 | Best if | You want the classic dawn photo | You want sleep, then a shorter afternoon |
@@ -353,7 +353,7 @@ Families with young kids, guests landing the night before, and anyone who alread
 ## What does not change with the clock
 
 - Private vehicle — your group only
-- Driver, entrance fee, hot drink, **meal**, insurance ages 6–65
+- Driver, entrance fee, hot drink, **breakfast**, insurance ages 6–65 (lunch optional)
 - Food is **not** cooked inside the 4×4
 - Optional **Private Kintamani Day** (promo **IDR 1,300,000**) if you want jeep + hot spring + Umah Kuno + rice terrace in one booking — [full-day itinerary](/blog/private-kintamani-day-jeep-itinerary)
 
@@ -371,7 +371,7 @@ Families with young kids, guests landing the night before, and anyone who alread
     title: 'Sit-In Jeep vs Tracking Jeep on Mount Batur',
     seoTitle: 'Sit-In vs Tracking Jeep Batur | 2.3M vs 1.8M',
     excerpt:
-      'Private sit-in 4×4 stays seated to the crater rim (IDR 2,300,000 for 2). Tracking jeep adds a guided walk (IDR 1,800,000 for 2) — still not the 2-hour summit trek. Meal included.',
+      'Private sit-in 4×4 stays seated to the crater rim (IDR 2,300,000 for 2). Tracking jeep adds a guided walk (IDR 1,800,000 for 2) — still not the 2-hour summit trek. Breakfast included.',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
@@ -382,7 +382,7 @@ Families with young kids, guests landing the night before, and anyone who alread
 > - Same jeep · same viewpoint · different 2-guest package · different legs
 > - Sit-in: no hike — families, knees, “I just want the sunrise” · **2,300,000 for 2** · **2,850,000 for 3**
 > - Tracking: moderate walking — closed shoes required · **1,800,000 for 2**
-> - **Meal included** after the viewpoint on both
+> - **Breakfast included** after the viewpoint on both
 > - Summit stamp? Book a trek operator, not this page
 
 ## Side-by-side
@@ -392,7 +392,7 @@ Families with young kids, guests landing the night before, and anyone who alread
 | How you go | Stay seated in the 4×4 | Jeep + guided walk | ~2 hours up in the dark |
 | Fitness | Sit | Moderate walking | Moderate–hard hiking |
 | Price (us) | 2,300,000 for 2 / 2,850,000 for 3 | 1,800,000 for 2 / 750,000 3+ | Different product |
-| Meal | Included | Included | Often a trek breakfast |
+| Breakfast | Included | Included | Often a trek breakfast |
 | Honest limit | Not the summit | Still not the summit | Steeper, darker |
 
 Full trek comparison: [Mount Batur jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek). Clock: [sunrise vs sunset](/blog/mount-batur-jeep-sunrise-vs-sunset).
@@ -407,7 +407,7 @@ Couples who want photographs without scrambling, multi-generation jeeps, and any
 
 ## Private Kintamani Day uses the same fork
 
-The full-day promo (**IDR 1,300,000** / person, was 1,450,000) is labelled **Jeep** or **Tracking** in the booking form — meal, hot spring ticket, Umah Kuno, and a rice-terrace stop on both. Guide: [Private Kintamani Day](/blog/private-kintamani-day-jeep-itinerary).
+The full-day promo (**IDR 1,300,000** / person, was 1,450,000) is labelled **Jeep** or **Tracking** in the booking form — breakfast, hot spring ticket, Umah Kuno, and a rice-terrace stop on both. Guide: [Private Kintamani Day](/blog/private-kintamani-day-jeep-itinerary).
 
 **Ready?** WhatsApp **sit-in or tracking + guest count + hotel** from the [jeep money page](/tours/batur-sunrise-jeep-tour).
 `,
@@ -417,19 +417,19 @@ The full-day promo (**IDR 1,300,000** / person, was 1,450,000) is labelled **Jee
     title: 'Private Kintamani Day: Jeep, Hot Spring & Coffee',
     seoTitle: 'Private Kintamani Day | Promo 1.3M',
     excerpt:
-      'Private Kintamani Day is promo IDR 1,300,000 (was 1,450,000) — jeep or tracking, hot spring ticket, meal, Umah Kuno coffee, rice terrace. Min 2 guests.',
+      'Private Kintamani Day is promo IDR 1,300,000 (was 1,450,000) — jeep or tracking, hot spring ticket, breakfast, Umah Kuno coffee, rice terrace. Min 2 guests.',
     publishedAt: '2026-09-21',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1725946687006-e5cf87668fd9?auto=format&fit=crop&w=1200&q=80',
     content: `
-**What is Private Kintamani Day?** It is Sekar Bali Activity’s **private full-day** around Mount Batur: **jeep or tracking**, a **Toya Devasya / Batur hot spring** (entrance ticket included), a sit-down **meal**, **Umah Kuno** coffee tasting, and a **rice-terrace** stop. **Minimum 2 guests.** Promo **IDR 1,300,000 per person** (was IDR 1,450,000). Hotel pickup included. Book it on the [Mount Batur jeep page](/tours/batur-sunrise-jeep-tour) — not as four separate tickets.
+**What is Private Kintamani Day?** It is Sekar Bali Activity’s **private full-day** around Mount Batur: **jeep or tracking**, a **Toya Devasya / Batur hot spring** (entrance ticket included), a sit-down **breakfast**, **Umah Kuno** coffee tasting, and a **rice-terrace** stop. **Minimum 2 guests.** Promo **IDR 1,300,000 per person** (was IDR 1,450,000). Hotel pickup included. Book it on the [Mount Batur jeep page](/tours/batur-sunrise-jeep-tour) — not as four separate tickets.
 
 > **Key Takeaways**
 > - Promo **1,300,000** / person · was **1,450,000** · **min 2**
-> - Choose **Jeep** or **Tracking** — meal on both
+> - Choose **Jeep** or **Tracking** — breakfast on both
 > - Hot spring **ticket is included** (not the +150K add-on on a short jeep)
 > - Umah Kuno is the **cage-free** tasting we list near Tampaksiring
-> - Typical flow: pre-dawn rim → soak → meal → coffee → terrace → hotel
+> - Typical flow: pre-dawn rim → soak → breakfast → coffee → terrace → hotel
 
 ## What the promo actually bundles
 
@@ -438,7 +438,8 @@ The full-day promo (**IDR 1,300,000** / person, was 1,450,000) is labelled **Jee
 | Private 4×4 (sit-in) or tracking jeep | Yes |
 | Kintamani / Batur entrance | Yes |
 | Natural hot spring ticket | **Yes** |
-| Sit-down meal | **Yes** |
+| Breakfast | **Yes** |
+| Lunch | Optional |
 | Umah Kuno tasting | Yes |
 | Rice terrace stop | Yes |
 | Hotel pickup | Yes |
@@ -451,7 +452,7 @@ Short jeep-only days are cheaper: sit-in **2,300,000** for 2 (**2,850,000** for 
 1. **02:30–03:00** — hotel pickup (south Bali earlier)
 2. Crater-rim viewpoint — stay in the jeep or continue on foot
 3. **Hot spring** — bring swimwear and a towel
-4. **Meal** (not cooked in the 4×4)
+4. **Breakfast** (not cooked in the 4×4)
 5. **Umah Kuno** — this is the dedicated tasting, not a roadside luwak cage
 6. **Rice terrace**, then drop-off
 

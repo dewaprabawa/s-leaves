@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     question: "How much is the private Mount Batur jeep?",
-    answer: "Sit-in private jeep is IDR 2,300,000 for 2 guests (IDR 1,150,000 per person, minimum 2) or IDR 2,850,000 for 3 guests (IDR 950,000 per person). Tracking jeep is IDR 1,800,000 for 2 guests (IDR 900,000 per person) or IDR 750,000 per person for 3+. Same prices at sunrise or sunset. The jeep goes to the sunrise or sunset viewpoint, then the black lava field. Hotel pickup, a hot drink, a sit-down meal, and the Kintamani entrance fee are included. Optional hot spring: Batur +IDR 150,000 or Toya Devasya +IDR 300,000 per person (ticket included). Private Kintamani Day is a separate full-day promo at IDR 1,300,000 per person (was IDR 1,450,000; min 2) with meal, hot-spring ticket, Umah Kuno, and a rice-terrace stop.",
+    answer: "Sit-in private jeep is IDR 2,300,000 for 2 guests (IDR 1,150,000 per person, minimum 2) or IDR 2,850,000 for 3 guests (IDR 950,000 per person). Tracking jeep is IDR 1,800,000 for 2 guests (IDR 900,000 per person) or IDR 750,000 per person for 3+. Same prices at sunrise or sunset. The jeep goes to the sunrise or sunset viewpoint, then the black lava field. Hotel pickup, a hot drink, breakfast, and the Kintamani entrance fee are included. Optional hot spring: Batur +IDR 150,000 or Toya Devasya +IDR 300,000 per person (ticket included). Private Kintamani Day is a separate full-day promo at IDR 1,300,000 per person (was IDR 1,450,000; min 2) with breakfast, hot-spring ticket, Umah Kuno, and a rice-terrace stop.",
   },
   {
     question: "Is the private Mount Batur jeep a hike?",

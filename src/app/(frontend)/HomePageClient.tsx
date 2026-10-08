@@ -177,7 +177,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Private Mount Batur Jeep",
     adventureId: "jeep-sunrise",
-    pax: `${formatTierPriceTable("jeep-sunrise")} · ${formatTierPriceTable("jeep-tracking")} · Meal included · Sunrise or sunset · Hotel pickup included`,
+    pax: `${formatTierPriceTable("jeep-sunrise")} · ${formatTierPriceTable("jeep-tracking")} · Breakfast included · Sunrise or sunset · Hotel pickup included`,
     price: getPromoListPrice("jeep-sunrise"),
     originalPrice: getListPrice("jeep-sunrise"),
     highlight: true,
@@ -186,7 +186,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Private Kintamani Day",
     adventureId: "kintamani-day",
-    pax: `${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Meal included · Hot spring ticket included · Umah Kuno · Rice terrace`,
+    pax: `${formatTierPriceTable("kintamani-day")} · Jeep or tracking · Breakfast included · Hot spring ticket included · Umah Kuno · Rice terrace`,
     price: getPromoListPrice("kintamani-day"),
     originalPrice: getListPrice("kintamani-day"),
     highlight: true,
@@ -311,7 +311,7 @@ const travelGuides = [
   },
   {
     title: "Private Mount Batur Jeep Guide 2026",
-    excerpt: "Private 4×4 to the crater rim — sit-in or tracking, meal included, IDR tiers.",
+    excerpt: "Private 4×4 to the crater rim — sit-in or tracking, breakfast included, IDR tiers.",
     href: "/blog/mount-batur-sunrise-jeep-tour-guide-2026",
   },
   {

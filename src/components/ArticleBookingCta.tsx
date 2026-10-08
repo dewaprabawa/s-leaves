@@ -150,7 +150,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'kintamani-scooter-vs-batur-jeep-2026': {
     headline: 'Book Kintamani scooter or the jeep',
-    body: 'Scooter day IDR 650,000. Private Batur jeep from IDR 750,000 at 3+ with meal and island-wide pickup. Not the summit hike.',
+    body: 'Scooter day IDR 650,000. Private Batur jeep from IDR 750,000 at 3+ with breakfast and island-wide pickup. Not the summit hike.',
     primaryHref: '/tours/bali-motorbike-traveling-trip',
     primaryLabel: 'View motorbike tour',
     secondaryHref: '/tours/batur-sunrise-jeep-tour',
@@ -348,13 +348,13 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-sunrise-jeep-tour-guide-2026': {
     headline: 'Book a private Mount Batur jeep',
-    body: 'Sit-in IDR 2,300,000 for 2 · IDR 2,850,000 for 3. Tracking IDR 1,800,000 for 2 · 3+ IDR 750,000. Meal included. Hot spring +IDR 150K with ticket included.',
+    body: 'Sit-in IDR 2,300,000 for 2 · IDR 2,850,000 for 3. Tracking IDR 1,800,000 for 2 · 3+ IDR 750,000. Breakfast included. Hot spring +IDR 150K with ticket included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
   },
   'mount-batur-jeep-vs-sunrise-trek': {
     headline: 'Book a private crater-rim jeep (not the summit hike)',
-    body: 'Your private 4×4 to ~1,350m. Meal included. Confirm guest count on WhatsApp.',
+    body: 'Your private 4×4 to ~1,350m. Breakfast included. Confirm guest count on WhatsApp.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
   },
@@ -366,7 +366,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'mount-batur-sunrise-jeep-tour-price-guide-2026': {
     headline: 'Get the private jeep tier on WhatsApp',
-    body: 'Your private 4×4, min 2 guests. Pair or 3+ sharing. Meal included.',
+    body: 'Your private 4×4, min 2 guests. Pair or 3+ sharing. Breakfast included.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
   },
@@ -388,7 +388,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'private-kintamani-day-jeep-itinerary': {
     headline: 'Book Private Kintamani Day (promo 1.3M)',
-    body: 'Jeep or tracking, hot spring ticket, meal, Umah Kuno, rice terrace. Min 2 guests.',
+    body: 'Jeep or tracking, hot spring ticket, breakfast, Umah Kuno, rice terrace. Min 2 guests.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Kintamani Day',
     secondaryHref: '/blog/mount-batur-sunrise-jeep-tour-price-guide-2026',
@@ -754,7 +754,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'kintamani-dirt-bike-vs-batur-jeep': {
     headline: 'Viewpoint jeep or lava enduro — pick one',
-    body: 'Private sit-in jeep IDR 2,300,000 for 2 / 2,850,000 for 3 / tracking 1,800,000 for 2 / tracking 750,000 at 3+ with meal and island-wide pickup. Kintamani dirt bike from IDR 4,100,000 — pickup quoted.',
+    body: 'Private sit-in jeep IDR 2,300,000 for 2 / 2,850,000 for 3 / tracking 1,800,000 for 2 / tracking 750,000 at 3+ with breakfast and island-wide pickup. Kintamani dirt bike from IDR 4,100,000 — pickup quoted.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
     secondaryHref: '/tours/dirt-bike-kintamani-black-lava',

@@ -262,11 +262,11 @@ Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half
     author: 'Sekar Bali Activity',
     image: '/images/adventures/motorbike-tour-hero.jpg',
     content: `
-**Kintamani by scooter or the Mount Batur jeep — which one is the sunrise?** The [Kintamani traveling trip](/tours/bali-motorbike-traveling-trip) is a **public-road scooter** day at **IDR 650,000** promo per bike (was 750,000): sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran, Tukad Cepung. The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) is a **4×4 to a crater-rim viewpoint** (~1,350 m) — **not** the summit hike. Sit-in is **IDR 2,300,000 for 2 guests** or **IDR 2,850,000 for 3**; tracking jeep **IDR 1,800,000 for 2** or **IDR 750,000** per person at 3+. Meal included after the viewpoint. Island-wide pickup included on the jeep. Scooter tickets stay extra. WhatsApp — **no payment to inquire**.
+**Kintamani by scooter or the Mount Batur jeep — which one is the sunrise?** The [Kintamani traveling trip](/tours/bali-motorbike-traveling-trip) is a **public-road scooter** day at **IDR 650,000** promo per bike (was 750,000): sunrise peak view, Pura Jati Segara, optional hot spring, Penglipuran, Tukad Cepung. The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) is a **4×4 to a crater-rim viewpoint** (~1,350 m) — **not** the summit hike. Sit-in is **IDR 2,300,000 for 2 guests** or **IDR 2,850,000 for 3**; tracking jeep **IDR 1,800,000 for 2** or **IDR 750,000** per person at 3+. Breakfast included after the viewpoint; lunch optional. Island-wide pickup included on the jeep. Scooter tickets stay extra. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - Scooter: **650,000** / bike · you ride or go pillion · tickets extra
-> - Jeep: **private 4×4** · meal included · island-wide pickup
+> - Jeep: **private 4×4** · breakfast included · island-wide pickup
 > - Jeep is **not** the 2-hour summit trek
 > - Dirt bike on lava is a **third** product from **4,100,000**
 > - Do not book the scooter if you wanted a pre-dawn 4×4
@@ -278,7 +278,7 @@ Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half
 | From (IDR) | **650,000** / scooter | **750,000** (3+) · 2 guests 1.8–2.0M | **4,100,000** |
 | You sit or ride? | Ride or pillion | Sit in a 4×4 | Ride a KTM enduro |
 | Clock | Full day, public roads | Pre-dawn start, 4–7 hours | ~8 hours on lava |
-| Meal | Your own | Included after the viewpoint | Operator day |
+| Breakfast | Your own | Included after the viewpoint | Operator day |
 | Pickup | Chosen area · south **550,000** | Island-wide included | Quoted |
 
 The scooter **sunrise peak view** is a roadside / terrace viewpoint on the way, not the jeep’s crater-rim pin. If the photo you saved is a 4×4 on a ridge at 1,350 m, book the jeep. Full jeep rules: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
@@ -369,7 +369,7 @@ Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-moto
 > - **Mud morning:** Sedang ATV from 750K · lunch included
 > - **South Denpasar hour:** UTV 1.2–1.5M · not Sedang
 > - **Enduro:** Tabanan 2.1M · Kintamani 4.1M
-> - **Sunrise, no hike:** private jeep · meal included
+> - **Sunrise, no hike:** private jeep · breakfast included
 
 ## One table for every wheel we sell
 

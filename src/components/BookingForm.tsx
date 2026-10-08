@@ -105,7 +105,7 @@ export default function BookingForm({ tour }: Props) {
   const handleNextStep = async () => {
     let fieldsToValidate: (keyof BookingFormData)[] = []
     if (step === 1) fieldsToValidate = ["date", "adults", "children", "infants"]
-    if (step === 2) fieldsToValidate = ["guestName", "guestAge", "guestType", "pickupLocation", "email", "phone"]
+    if (step === 2) fieldsToValidate = ["guestName", "guestType", "pickupLocation", "email", "phone"]
 
     const isStepValid = await trigger(fieldsToValidate)
     if (!isStepValid) return
@@ -147,7 +147,6 @@ export default function BookingForm({ tour }: Props) {
 
       openWhatsAppBooking({
         guestName: data.guestName,
-        guestAge: data.guestAge,
         guestType: data.guestType,
         adults: data.adults,
         children: data.children,
@@ -454,34 +453,18 @@ export default function BookingForm({ tour }: Props) {
               {errors.guestName && <p className="text-red-500 text-xs mt-1">{errors.guestName.message}</p>}
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
-              <div>
-                <label className="flex items-center gap-2 text-sm font-medium text-brand-green mb-1.5">
-                  Age
-                </label>
-                <input 
-                  type="number"
-                  min={1}
-                  max={120}
-                  placeholder="28"
-                  {...register("guestAge", { valueAsNumber: true })}
-                  className="w-full px-4 py-3 rounded-xl border border-brand-green/15 bg-sand focus:ring-2 focus:ring-accent-gold/40 outline-none transition-all dark:text-white"
-                />
-                {errors.guestAge && <p className="text-red-500 text-xs mt-1">{errors.guestAge.message}</p>}
-              </div>
-              <div>
-                <label className="flex items-center gap-2 text-sm font-medium text-brand-green mb-1.5">
-                  Adult or Child
-                </label>
-                <select
-                  {...register("guestType")}
-                  className="w-full px-4 py-3 rounded-xl border border-brand-green/15 bg-sand focus:ring-2 focus:ring-accent-gold/40 outline-none transition-all dark:text-white"
-                >
-                  <option value="Adult">Adult</option>
-                  <option value="Child">Child</option>
-                </select>
-                {errors.guestType && <p className="text-red-500 text-xs mt-1">{errors.guestType.message}</p>}
-              </div>
+            <div>
+              <label className="flex items-center gap-2 text-sm font-medium text-brand-green mb-1.5">
+                Adult or Child
+              </label>
+              <select
+                {...register("guestType")}
+                className="w-full px-4 py-3 rounded-xl border border-brand-green/15 bg-sand focus:ring-2 focus:ring-accent-gold/40 outline-none transition-all dark:text-white"
+              >
+                <option value="Adult">Adult</option>
+                <option value="Child">Child</option>
+              </select>
+              {errors.guestType && <p className="text-red-500 text-xs mt-1">{errors.guestType.message}</p>}
             </div>
 
             {children > 0 && (
@@ -629,7 +612,7 @@ export default function BookingForm({ tour }: Props) {
             <div className="flex justify-between border-b border-brand-green/15 pb-3 text-xs">
               <span className="text-brand-green-light">Lead Guest</span>
               <span className="font-semibold text-brand-green text-right">
-                {watch("guestName")} · {watch("guestType")} · Age {watch("guestAge")}
+                {watch("guestName")} · {watch("guestType")}
               </span>
             </div>
             <div className="flex justify-between border-b border-brand-green/15 pb-3 text-xs">

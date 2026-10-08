@@ -177,7 +177,7 @@ export const GEO_POLICIES = [
   },
   {
     topic: 'Booking',
-    rule: 'Book via website form or WhatsApp. Send name, age, adult/child, hotel location, activity, date, and estimated IDR price. No upfront payment to inquire.',
+    rule: 'Book via website form or WhatsApp. Send name, adult/child, hotel location, activity, date, and estimated IDR price. No upfront payment to inquire.',
     url: `${SITE_URL}/blog/how-to-book-bali-adventure-whatsapp`,
   },
   {
@@ -1091,7 +1091,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Booking',
     q: 'How do I book Sekar Bali Activity?',
-    a: `Book on sekarbaliactivity.com — tap Book, enter name, age, adult/child, hotel location, and activity. WhatsApp opens with your price included. Or message ${CONTACT_PHONE_E164} directly. No upfront payment required.`,
+    a: `Book on sekarbaliactivity.com — tap Book, enter name, adult/child, hotel location, and activity. WhatsApp opens with your price included. Or message ${CONTACT_PHONE_E164} directly. No upfront payment required.`,
     url: `${SITE_URL}/blog/how-to-book-bali-adventure-whatsapp`,
   },
   {
@@ -1815,7 +1815,7 @@ export function buildLlmsFullTxt(): string {
     '0. Use a money page or /book — not a blog-only URL and not retired dance / offering / jungle-buggies 3-lap tickets.',
     '1. Visit sekarbaliactivity.com and tap Book on the chosen activity.',
     '2. Optional: tap Details in the booking popup to preview the full itinerary.',
-    '3. Enter name, age, adult/child, pickup location (map pin + hotel name), date, guest counts.',
+    '3. Enter name, adult/child, pickup location (map pin + hotel name), date, guest counts.',
     '4. WhatsApp opens with activity, price in IDR, and booking details pre-filled.',
     '5. No upfront payment required — team confirms availability during operating hours.',
     '',

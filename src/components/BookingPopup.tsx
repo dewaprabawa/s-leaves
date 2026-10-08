@@ -128,7 +128,6 @@ export function BookingPopup({
   const [mounted, setMounted] = useState(false);
   const [guestName, setGuestName] = useState("");
   const [guestEmail, setGuestEmail] = useState("");
-  const [guestAge, setGuestAge] = useState("");
   const [guestType, setGuestType] = useState<"Adult" | "Child">("Adult");
   const [adults, setAdults] = useState(2);
   const [kids, setKids] = useState(0);
@@ -162,7 +161,6 @@ export function BookingPopup({
       setSelectedTourId(tour.id);
       setGuestName("");
       setGuestEmail("");
-      setGuestAge("");
       setGuestType("Adult");
       setAdults(Math.max(tour.minPax, 1));
       setKids(0);
@@ -400,19 +398,17 @@ export function BookingPopup({
     })
   }
   const nameOk = guestName.trim().length >= 2;
-  const ageOk = guestAge.trim().length > 0 && Number(guestAge) > 0;
   const needsHotelAddress = effectiveWantsPickup
   const locationOk = needsHotelAddress
     ? Boolean(location) && locationDetails.trim().length >= 2
     : true;
-  const canSubmit = nameOk && ageOk && locationOk && !isInvalidPax;
+  const canSubmit = nameOk && locationOk && !isInvalidPax;
   const detailTourSlug = getTourSlugForActivity(
     activeTour.pricingActivityId ?? activeTour.id,
   );
 
   const handleBook = () => {
     if (!nameOk) return alert("Please enter your name.");
-    if (!ageOk) return alert("Please enter your age.");
     if (isTandem && (adults < 2 || adults % 2 !== 0)) {
       return alert('Tandem ATV requires an even number of riders (2, 4, 6…).');
     }
@@ -571,7 +567,6 @@ export function BookingPopup({
         year: 'numeric',
       }),
       guestName: guestName.trim(),
-      guestAge: guestAge.trim() || undefined,
       guestType,
       adults,
       children: kids,
@@ -957,19 +952,7 @@ export function BookingPopup({
                   className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
                 />
               </div>
-              <div>
-                <label className="block text-brand-green font-bold text-sm mb-2">Age *</label>
-                <input 
-                  type="number" 
-                  min={1}
-                  max={120}
-                  value={guestAge} 
-                  onChange={e => setGuestAge(e.target.value)} 
-                  placeholder="e.g. 28"
-                  className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
-                />
-              </div>
-              <div>
+              <div className="sm:col-span-2">
                 <label className="block text-brand-green font-bold text-sm mb-2">You are *</label>
                 <div className="flex gap-2">
                   {(["Adult", "Child"] as const).map((type) => (

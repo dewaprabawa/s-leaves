@@ -440,7 +440,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'how-to-book-bali-adventure-whatsapp': {
     headline: 'Open WhatsApp with your activity pre-filled',
-    body: 'Name, ages, hotel, date, guest count. No upfront payment to inquire.',
+    body: 'Name, hotel, date, guest count. No upfront payment to inquire.',
     primaryHref: '/book',
     primaryLabel: 'Start a booking',
   },

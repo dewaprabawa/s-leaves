@@ -41,7 +41,7 @@ Book the **scooter** when you want Gunung Kawi, a waterfall, or Tanah Lot on two
 
 Book the **ATV** when the point is mud and river crossings, not a temple circuit. Arena pin: [All New Bali Adventure location](/blog/bali-atv-all-new-bali-adventure-location-guide). We do **not** sell Kuber’s 400 m cave. Track types: [mud vs cave/tunnel](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel). Honest cave compare: [ATV vs Kuber](/blog/bali-atv-vs-kuber-cave-2026).
 
-Want clutch and lava instead? That is the [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from **IDR 4,100,000**. Compare: [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026).
+Want clutch and lava instead? That is the [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from **IDR 1,850,000**. Compare: [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026).
 
 ## How to book
 
@@ -55,19 +55,19 @@ Want clutch and lava instead? That is the [Kintamani dirt bike](/tours/dirt-bike
   {
     slug: 'bali-motorbike-tour-vs-dirt-bike-2026',
     title: 'Bali Motorbike Tour vs Dirt Bike 2026: Scooter or Enduro?',
-    seoTitle: 'Motorbike vs Dirt Bike Bali | 450K–4.1M',
+    seoTitle: 'Motorbike vs Dirt Bike Bali | 450K vs 1.85M+',
     excerpt:
-      'Public-road scooter from IDR 450,000 vs Tabanan dirt bike from 2.1M and Kintamani enduro from 4.1M. Different machines. WhatsApp.',
+      'Public-road scooter from IDR 450,000 vs Tabanan dirt bike from 2.1M and Kintamani dirt bike from 1.85M. Different machines. WhatsApp.',
     publishedAt: '2026-09-28',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/motorbike-tour-hero.jpg',
     content: `
-**Is a Bali motorbike tour the same as a dirt bike?** No. The [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) is a guided **125–160cc automatic** on **asphalt and village lanes** from **IDR 450,000** per scooter. A dirt bike is a **geared enduro** on **off-road tracks**. We book [Tabanan](/tours/dirt-bike-tabanan-day-night) from **IDR 2,100,000** (KLX 150 or X-Ride) and [Kintamani black lava](/tours/dirt-bike-kintamani-black-lava) from **IDR 4,100,000** (KTM 250 EXC-class). Specialist shops such as Bali Dirt Bikes and TrailX publish half-day Tabanan from about **IDR 1.3M–1.8M** and Kintamani days much higher — our tickets sit in that specialist band, not the scooter band. WhatsApp — **no payment to inquire**.
+**Is a Bali motorbike tour the same as a dirt bike?** No. The [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) is a guided **125–160cc automatic** on **asphalt and village lanes** from **IDR 450,000** per scooter. A dirt bike is a **geared enduro** on **off-road tracks**. We book [Tabanan](/tours/dirt-bike-tabanan-day-night) from **IDR 2,100,000** (KLX 150 or X-Ride) and [Kintamani black lava](/tours/dirt-bike-kintamani-black-lava) from **IDR 1,850,000** (KLX/CRF 150, up to **IDR 3,600,000** on a KTM 250–350, hosted by Bali Mountain Dirt Bike Adventure in Suter). Specialist shops such as Bali Dirt Bikes and TrailX publish half-day Tabanan from about **IDR 1.3M–1.8M** — our tickets sit in that specialist band, not the scooter band. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - Scooter: **public roads** · promo **450,000–800,000** · IDP or pillion
 > - Tabanan dirt bike: **rainforest / Jatiluwih** · from **2,100,000** · 4–8 hours
-> - Kintamani dirt bike: **lava + forest** · from **4,100,000** · ~8 hours
+> - Kintamani dirt bike: **lava + forest** · from **1,850,000** · ~8 hours
 > - Dirt-bike pickup is **quoted** · scooter pickup is at the **chosen area**
 > - Do not book the scooter if you wanted clutch, ruts, and lava
 
@@ -75,9 +75,9 @@ Want clutch and lava instead? That is the [Kintamani dirt bike](/tours/dirt-bike
 
 | | [Scooter tour](/tours/bali-motorbike-traveling-trip) | [Tabanan dirt bike](/tours/dirt-bike-tabanan-day-night) | [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 | --- | --- | --- | --- |
-| From (IDR) | **450,000** / scooter | **2,100,000** / person | **4,100,000** / person |
+| From (IDR) | **450,000** / scooter | **2,100,000** / person | **1,850,000** / person |
 | Surface | Public roads | Rainforest, rivers, terrace views | Black lava, forest, altitude |
-| Bike | 125–160cc automatic | KLX 150 or X-Ride 115 | KTM 250 EXC-class |
+| Bike | 125–160cc automatic | KLX 150 or X-Ride 115 | KLX/CRF 150 to KTM 350 · kids 75cc |
 | Skill | Street comfort, or pillion | Clutch or beginner automatic line | Geared enduro months |
 | Tickets | Extra | Track day | Track day |
 | Pickup | Chosen area · south **550,000** | Quoted | Quoted |
@@ -188,7 +188,7 @@ Kuta scooter shops that advertise **from USD 32** often skip this paragraph. We 
 
 ## What this tour is not
 
-- **Not** a [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) — that needs clutch time, from **IDR 4,100,000**
+- **Not** a [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) — that needs clutch time, from **IDR 1,850,000**
 - **Not** [Sedang ATV](/tours/bali-atv-adventure) — four wheels, briefing, no street IDP
 - **Not** the [private Ubud car](/tours/full-day-ubud-tour) from **IDR 600,000** if you want a driver and air-con
 
@@ -268,14 +268,14 @@ Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half
 > - Scooter: **650,000** / bike · you ride or go pillion · tickets extra
 > - Jeep: **private 4×4** · breakfast included · island-wide pickup
 > - Jeep is **not** the 2-hour summit trek
-> - Dirt bike on lava is a **third** product from **4,100,000**
+> - Dirt bike on lava is a **third** product from **1,850,000**
 > - Do not book the scooter if you wanted a pre-dawn 4×4
 
 ## Side-by-side
 
 | | [Kintamani scooter](/tours/bali-motorbike-traveling-trip) | [Private Batur jeep](/tours/batur-sunrise-jeep-tour) | [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 | --- | --- | --- | --- |
-| From (IDR) | **650,000** / scooter | **750,000** (3+) · 2 guests 1.8–2.0M | **4,100,000** |
+| From (IDR) | **650,000** / scooter | **750,000** (3+) · 2 guests 1.8–2.0M | **1,850,000** |
 | You sit or ride? | Ride or pillion | Sit in a 4×4 | Ride a KTM enduro |
 | Clock | Full day, public roads | Pre-dawn start, 4–7 hours | ~8 hours on lava |
 | Breakfast | Your own | Included after the viewpoint | Operator day |
@@ -357,18 +357,18 @@ Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-moto
     title: 'Which Bali Wheels to Book 2026: Scooter, ATV, UTV, Dirt Bike, Jeep',
     seoTitle: 'Which Bali Wheels 2026 | Scooter to Jeep',
     excerpt:
-      'Chooser for Bali scooter (from 450K), Sedang ATV (750K), UTV (1.2M), Tabanan dirt bike (2.1M), Kintamani enduro (4.1M), Batur jeep (from 750K). WhatsApp.',
+      'Chooser for Bali scooter (from 450K), Sedang ATV (750K), UTV (1.2M), Tabanan dirt bike (2.1M), Kintamani dirt bike (1.85M), Batur jeep (from 750K). WhatsApp.',
     publishedAt: '2026-09-28',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/og-cover.jpg',
     content: `
-**Which Bali wheels should you book in 2026?** Sekar Bali Activity sells **six different machines**. A [motorbike tour](/tours/bali-motorbike-traveling-trip) is a **125–160cc scooter** on public roads from **IDR 450,000**. [ATV](/tours/bali-atv-adventure) is a **quad** on Sedang mud from **IDR 750,000**. [UTV](/tours/utv-buggy-bali-adventure) is a **1-hour / 7 km** automatic buggy in Pemogan — single **IDR 1,200,000**, tandem **IDR 1,500,000**. [Tabanan dirt bike](/tours/dirt-bike-tabanan-day-night) from **IDR 2,100,000**. [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from **IDR 4,100,000**. The [Batur jeep](/tours/batur-sunrise-jeep-tour) is a **private 4×4** you sit in — from **IDR 750,000** at 3+. WhatsApp — **no payment to inquire**.
+**Which Bali wheels should you book in 2026?** Sekar Bali Activity sells **six different machines**. A [motorbike tour](/tours/bali-motorbike-traveling-trip) is a **125–160cc scooter** on public roads from **IDR 450,000**. [ATV](/tours/bali-atv-adventure) is a **quad** on Sedang mud from **IDR 750,000**. [UTV](/tours/utv-buggy-bali-adventure) is a **1-hour / 7 km** automatic buggy in Pemogan — single **IDR 1,200,000**, tandem **IDR 1,500,000**. [Tabanan dirt bike](/tours/dirt-bike-tabanan-day-night) from **IDR 2,100,000**. [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from **IDR 1,850,000**. The [Batur jeep](/tours/batur-sunrise-jeep-tour) is a **private 4×4** you sit in — from **IDR 750,000** at 3+. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - **Sightseeing:** scooter 450–800K or private car from 600K
 > - **Mud morning:** Sedang ATV from 750K · lunch included
 > - **South Denpasar hour:** UTV 1.2–1.5M · not Sedang
-> - **Enduro:** Tabanan 2.1M · Kintamani 4.1M
+> - **Enduro:** Tabanan 2.1M · Kintamani 1.85M
 > - **Sunrise, no hike:** private jeep · breakfast included
 
 ## One table for every wheel we sell
@@ -381,7 +381,7 @@ Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-moto
 | Batur jeep | **950,000** (3+ sit-in) | Sit in a private 4×4 | Island-wide included | [Jeep](/tours/batur-sunrise-jeep-tour) |
 | UTV buggy | **1,200,000** single | 1 hr / 7 km automatic | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
 | Tabanan dirt bike | **2,100,000** | KLX / X-Ride in rainforest | Quoted | [Tabanan](/tours/dirt-bike-tabanan-day-night) |
-| Kintamani dirt bike | **4,100,000** | KTM on lava | Quoted | [Kintamani](/tours/dirt-bike-kintamani-black-lava) |
+| Kintamani dirt bike | **1,850,000** | KLX 150–KTM 350 on lava | Quoted | [Kintamani](/tours/dirt-bike-kintamani-black-lava) |
 
 Culture days without engines: [Tumang cooking](/tours/balinese-cooking-class) promo **IDR 450,000** (free Ubud pickup), [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) promo **IDR 650,000** (was 750,000). Water: [rafting](/tours/whitewater-rafting) and [tubing](/tours/canyon-tubing) **IDR 500,000** (**450,000** for 2+). Full menu: [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026).
 

@@ -255,15 +255,15 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
     title: 'Kintamani Dirt Bike vs Mount Batur Jeep: Which Sunrise Sport?',
     seoTitle: 'Kintamani Dirt Bike vs Batur Jeep | 2026',
     excerpt:
-      'Dirt bike from IDR 4.1M on black lava. Private Batur jeep from 750K at 3+ with breakfast and island-wide pickup. Different sports.',
+      'Dirt bike from IDR 1.85M on black lava. Private Batur jeep from 750K at 3+ with breakfast and island-wide pickup. Different sports.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/dirt-bike-kintamani-ridge.jpg',
+    image: '/images/adventures/dirt-bike-kintamani-lake-batur-riders.jpg',
     content: `
-**Dirt bike or the Mount Batur jeep?** They share a volcano and nothing else. **[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** is a **private guided enduro** from **IDR 4,100,000** — black-lava dunes and forest tracks, about **8 hours**, KTM 250 EXC-class bike in the package. **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is a **4×4 to a crater-rim viewpoint (~1,350 m)** from **IDR 750,000** per person at 3+ on tracking (**IDR 2,300,000** sit-in for 2 · **IDR 2,850,000** sit-in for 3 · **IDR 1,800,000** tracking for 2) with **island-wide pickup** and a **breakfast**. The jeep is **not** the 2-hour summit hike. WhatsApp — **no payment to inquire**.
+**Dirt bike or the Mount Batur jeep?** They share a volcano and nothing else. **[Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)** is a **guided dirt bike day** with **Bali Mountain Dirt Bike Adventure** in Suter from **IDR 1,850,000** (KLX/CRF 150; KTM 250–350 **IDR 3,600,000**; kids 75cc **IDR 1,500,000**) — black-lava dunes and forest tracks, about **8 hours**, lunch and fuel included. **[Private Mount Batur jeep](/tours/batur-sunrise-jeep-tour)** is a **4×4 to a crater-rim viewpoint (~1,350 m)** from **IDR 750,000** per person at 3+ on tracking (**IDR 2,300,000** sit-in for 2 · **IDR 2,850,000** sit-in for 3 · **IDR 1,800,000** tracking for 2) with **island-wide pickup** and a **breakfast**. The jeep is **not** the 2-hour summit hike. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
-> - Dirt bike **IDR 4,100,000** · you ride · wet-season traction is better
+> - Dirt bike **IDR 1,850,000** · you ride · wet-season traction is better
 > - Jeep **IDR 750,000** (3+) · you sit (or walk with a tracking guide) · breakfast + pickup included
 > - Tabanan dirt bike is a **different** rainforest line from **IDR 2,100,000**
 > - Do not book the dirt bike if you wanted a sunrise viewpoint breakfast
@@ -272,7 +272,7 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
 
 | | Kintamani dirt bike | Private Batur jeep |
 | --- | --- | --- |
-| From (IDR) | **4,100,000** | sit-in **2,300,000** for 2 · **2,850,000** for 3 · tracking **1,800,000** for 2 · **750,000** (3+ tracking) |
+| From (IDR) | **1,850,000** | sit-in **2,300,000** for 2 · **2,850,000** for 3 · tracking **1,800,000** for 2 · **750,000** (3+ tracking) |
 | You do | Ride an enduro | Sit in a 4×4 (or tracking walk) |
 | Clock | ~8 hours | 4–7 hours |
 | Pickup | Quoted | **Island-wide included** |

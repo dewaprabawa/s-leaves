@@ -28,6 +28,17 @@ export const BALI_SAFARI_PRICES = {
   rhino: money(2_100_000),
 } as const
 
+/** Bali Mountain Dirt Bike Adventure published rates (Suter, Kintamani), per rider. */
+export const KINTAMANI_DIRT_BIKE_HOST = "Bali Mountain Dirt Bike Adventure"
+export const KINTAMANI_DIRT_BIKE_ADDRESS = "Banjar Suter, Kintamani, Bangli Regency, Bali 80652"
+export const KINTAMANI_DIRT_BIKE_PRICES = {
+  klx150: 1_850_000,
+  klx230: 2_500_000,
+  yz250: 3_500_000,
+  ktm: 3_600_000,
+  kids75: 1_500_000,
+} as const
+
 export function isBaliSafariSlug(slug: string): boolean {
   return slug === BALI_SAFARI_SLUG || (BALI_SAFARI_LEGACY_SLUGS as readonly string[]).includes(slug)
 }
@@ -85,6 +96,8 @@ function ticketTour(opts: {
   pickup?: string
   duration: string
   sourcePrice: number
+  /** Partner's published sell price — used as-is, without the import markup. */
+  publishedPrice?: number
   shortDescription: string
   fullDescription: string
   highlights: string[]
@@ -100,7 +113,7 @@ function ticketTour(opts: {
   /** Extra gallery shots after the hero (slug without .jpg under /images/adventures/). */
   galleryExtras?: { slug: string; alt: string }[]
 }): Tour {
-  const basePrice = money(opts.sourcePrice)
+  const basePrice = opts.publishedPrice ?? money(opts.sourcePrice)
   const image = hero(opts.imageSlug ?? opts.slug, opts.imageAlt ?? opts.title)
   const gallery = [
     image,
@@ -412,38 +425,97 @@ We book the lodge ticket. Pickup is not in the from-price unless you add a drive
   }),
   ticketTour({
     slug: "dirt-bike-kintamani-black-lava",
-    imageSlug: "dirt-bike-kintamani-ridge",
+    imageSlug: "dirt-bike-kintamani-lake-batur-riders",
+    imageAlt: "Bali Mountain Dirt Bike Adventure riders above Lake Batur with Mount Batur behind, Kintamani",
+    galleryExtras: [
+      {
+        slug: "dirt-bike-kintamani-black-lava-drift",
+        alt: "Dirt bike rider kicking up black lava sand on the Kintamani track",
+      },
+      {
+        slug: "dirt-bike-kintamani-forest-riders",
+        alt: "Group of dirt bike riders on a Kintamani forest trail",
+      },
+    ],
     title: "Dirt Bike — Kintamani Black Lava",
-    seoTitle: "Kintamani Dirt Bike | From IDR 4.1M",
+    seoTitle: "Kintamani Dirt Bike | From IDR 1.85M · Lunch Incl.",
     seoDescription:
-      "Private guided Kintamani enduro on black-lava and forest tracks from IDR 4,100,000. KTM 250 EXC class. About 8 hours. WhatsApp.",
+      "Guided Kintamani dirt bike on black lava + forest tracks with Bali Mountain Dirt Bike Adventure. KLX 150 1.85M to KTM 3.6M, kids 75cc 1.5M. Lunch + fuel incl.",
     category: "adventure",
-    area: "Kintamani · Mount Batur",
-    venue: "Kintamani lava + forest tracks",
+    area: "Suter · Kintamani",
+    venue: `${KINTAMANI_DIRT_BIKE_HOST} · Suter, Kintamani`,
     duration: "About 8 hours",
-    sourcePrice: 3_900_000,
+    sourcePrice: KINTAMANI_DIRT_BIKE_PRICES.klx150,
+    publishedPrice: KINTAMANI_DIRT_BIKE_PRICES.klx150,
     shortDescription:
-      "Private guided enduro around Kintamani and the black-lava dunes. From IDR 4,100,000. Package bike is a KTM 250 EXC-class enduro. Best in wet season.",
-    fullDescription: `A **private guided dirt-bike day** on Kintamani forest and black-lava tracks — lake views, altitude changes, sand-dune lava fields. This is **not** the Mount Batur sunrise jeep.
+      "Guided dirt bike day on Kintamani black lava and forest tracks, hosted by Bali Mountain Dirt Bike Adventure in Suter. From IDR 1,850,000 (KLX/CRF 150) — KLX 230, YZ 250, and KTM 250–350 options; kids bike 75cc IDR 1,500,000. Lunch, fuel, gear, and track tickets included.",
+    fullDescription: `A **guided dirt-bike day** on Kintamani forest and black-lava tracks — lake views, altitude changes, sand-dune lava fields. This is **not** the Mount Batur sunrise jeep.
 
-The included bike class is a **KTM 250 EXC Sixdays**-type enduro. Husqvarna FE 350 options are quoted. Beginner / intermediate / advanced lines exist; tell us your riding months on a geared bike.
+### Hosted by ${KINTAMANI_DIRT_BIKE_HOST}
+The ride starts at **${KINTAMANI_DIRT_BIKE_HOST}**, ${KINTAMANI_DIRT_BIKE_ADDRESS}. Their guide leads the track; Sekar Bali Activity books it and confirms on WhatsApp.
 
-Wet season (December–May) is the usual Kintamani window (traction, less dust). About 8 hours. Gear from the operator. Pickup quoted.`,
+### Bike prices (IDR per rider)
+| Bike | Price |
+|---|---|
+| KLX / CRF 150cc | ${KINTAMANI_DIRT_BIKE_PRICES.klx150.toLocaleString("id-ID")} |
+| KLX 230cc | ${KINTAMANI_DIRT_BIKE_PRICES.klx230.toLocaleString("id-ID")} |
+| YZ 250cc | ${KINTAMANI_DIRT_BIKE_PRICES.yz250.toLocaleString("id-ID")} |
+| KTM 250 / 300 / 350cc | ${KINTAMANI_DIRT_BIKE_PRICES.ktm.toLocaleString("id-ID")} |
+| Kids bike 75cc | ${KINTAMANI_DIRT_BIKE_PRICES.kids75.toLocaleString("id-ID")} |
+
+Pick the bike on this page. Tell us your riding months on a geared bike so the guide matches the line to your level.
+
+Wet season (December–May) is the usual Kintamani window (traction, less dust). About 8 hours. Pickup quoted.`,
     highlights: [
-      "Private guided Kintamani enduro",
+      `Hosted by ${KINTAMANI_DIRT_BIKE_HOST} in Suter, Kintamani`,
       "Black-lava + forest tracks",
-      "KTM 250 EXC-class bike in the package",
-      "About 8 hours",
+      "KLX/CRF 150 from IDR 1,850,000 · KTM 250–350 IDR 3,600,000",
+      "Kids bike 75cc IDR 1,500,000",
+      "Lunch, fuel, and track tickets included",
     ],
     included: [
-      "Guided enduro day",
-      "KTM 250 EXC-class bike (package)",
-      "Riding gear from the operator",
+      "Welcome drink",
+      "Motorbike insurance",
+      "Safety box",
+      "Safety-approved riding equipment",
+      "Fuel",
+      "Lunch at a good restaurant",
+      "All track entry tickets",
+      "Guide / leader",
+      "Documentation by phone",
     ],
-    notIncluded: ["Hotel pickup unless quoted", "Husqvarna / other bike upgrades", "Jeep sunrise ticket"],
+    notIncluded: ["Hotel pickup unless quoted", "Jeep sunrise ticket"],
     itinerary: [
-      { time: "Morning", title: "Kit + brief", description: "Bike fit and level check." },
+      { time: "Morning", title: "Welcome + kit", description: `Welcome drink at ${KINTAMANI_DIRT_BIKE_HOST} in Suter. Bike fit, safety gear, and level check.` },
       { time: "Day", title: "Kintamani tracks", description: "Forest, open trail, lava dunes — line matches your level." },
+      { time: "Midday", title: "Lunch", description: "Lunch at a restaurant on the route." },
+    ],
+    activityOptions: [
+      {
+        name: "KLX / CRF 150cc",
+        priceDiff: 0,
+        description: `IDR ${KINTAMANI_DIRT_BIKE_PRICES.klx150.toLocaleString("id-ID")} per rider`,
+      },
+      {
+        name: "KLX 230cc",
+        priceDiff: KINTAMANI_DIRT_BIKE_PRICES.klx230 - KINTAMANI_DIRT_BIKE_PRICES.klx150,
+        description: `IDR ${KINTAMANI_DIRT_BIKE_PRICES.klx230.toLocaleString("id-ID")} per rider`,
+      },
+      {
+        name: "YZ 250cc",
+        priceDiff: KINTAMANI_DIRT_BIKE_PRICES.yz250 - KINTAMANI_DIRT_BIKE_PRICES.klx150,
+        description: `IDR ${KINTAMANI_DIRT_BIKE_PRICES.yz250.toLocaleString("id-ID")} per rider`,
+      },
+      {
+        name: "KTM 250 / 300 / 350cc",
+        priceDiff: KINTAMANI_DIRT_BIKE_PRICES.ktm - KINTAMANI_DIRT_BIKE_PRICES.klx150,
+        description: `IDR ${KINTAMANI_DIRT_BIKE_PRICES.ktm.toLocaleString("id-ID")} per rider`,
+      },
+      {
+        name: "Kids bike 75cc",
+        priceDiff: KINTAMANI_DIRT_BIKE_PRICES.kids75 - KINTAMANI_DIRT_BIKE_PRICES.klx150,
+        description: `IDR ${KINTAMANI_DIRT_BIKE_PRICES.kids75.toLocaleString("id-ID")} per rider`,
+      },
     ],
     extraFaq: {
       question: "Is this the Batur sunrise jeep?",

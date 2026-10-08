@@ -4,6 +4,7 @@ import { useState } from "react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import {
   getListPrice,
+  getUnitPrice,
   JEEP_HOT_SPRING_IDR,
   JEEP_TOYA_DEVASYA_IDR,
 } from "@/lib/pricing"
@@ -160,7 +161,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     id: "jeep-kintamani-day",
     title: "Private Kintamani Day — Jeep",
     times: ["02:30", "03:00"],
-    adultPrice: getListPrice("kintamani-day"),
+    adultPrice: getUnitPrice("kintamani-day", 2),
     kidPrice: null,
     minPax: 2,
     pickupIncluded: true,
@@ -170,7 +171,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     id: "jeep-kintamani-day-tracking",
     title: "Private Kintamani Day — Tracking",
     times: ["02:30", "03:00"],
-    adultPrice: getListPrice("kintamani-day"),
+    adultPrice: getUnitPrice("kintamani-day", 2),
     kidPrice: null,
     minPax: 2,
     pickupIncluded: true,

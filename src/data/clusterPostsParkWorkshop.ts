@@ -265,7 +265,6 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
 > **Key Takeaways**
 > - Dirt bike **IDR 1,850,000** · you ride · wet-season traction is better
 > - Jeep **IDR 750,000** (3+) · you sit (or walk with a tracking guide) · breakfast + pickup included
-> - Tabanan dirt bike is a **different** rainforest line from **IDR 2,100,000**
 > - Do not book the dirt bike if you wanted a sunrise viewpoint breakfast
 
 ## Side-by-side
@@ -278,8 +277,6 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
 | Pickup | Quoted | **Island-wide included** |
 | Breakfast | Not assumed | **Included** after the viewpoint |
 | Best season | Dec–May (wet, less dust) | Year-round |
-
-Tabanan options at **IDR 2,100,000**: [day & night](/tours/dirt-bike-tabanan-day-night) or [jungle + sunset beach](/tours/dirt-bike-tabanan-jungle-sunset-beach) on KLX 150 / X-Ride bikes.
 
 ## When to pick the jeep
 

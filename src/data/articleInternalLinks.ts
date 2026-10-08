@@ -196,7 +196,6 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Motorbike vs dirt bike', href: '/blog/bali-motorbike-tour-vs-dirt-bike-2026' },
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026' },
     { title: 'Book Kintamani dirt bike', href: '/tours/dirt-bike-kintamani-black-lava' },
-    { title: 'Book Tabanan dirt bike', href: '/tours/dirt-bike-tabanan-day-night' },
     { title: 'Book the Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
   ],
   site: [

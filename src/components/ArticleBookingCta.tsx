@@ -118,7 +118,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-motorbike-tour-vs-dirt-bike-2026': {
     headline: 'Book the scooter — or the enduro',
-    body: 'Public-road scooter from IDR 450,000. Tabanan dirt bike from 2.1M. Kintamani lava from 1.85M. Say which machine on WhatsApp.',
+    body: 'Public-road scooter from IDR 450,000. Kintamani lava dirt bike from 1.85M. Say which machine on WhatsApp.',
     primaryHref: '/tours/bali-motorbike-traveling-trip',
     primaryLabel: 'View motorbike tour',
     secondaryHref: '/tours/dirt-bike-kintamani-black-lava',

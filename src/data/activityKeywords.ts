@@ -658,16 +658,6 @@ export const PARK_WORKSHOP_KEYWORD_CLUSTERS: Record<string, KeywordCluster> = {
     book: ['Kintamani black lava dirt bike price', 'KTM 250 enduro Bali'],
     compare: ['dirt bike vs Mount Batur jeep'],
   },
-  'dirt-bike-tabanan-day-night': {
-    head: ['Tabanan dirt bike', 'Jatiluwih dirt bike'],
-    book: ['Tabanan dirt bike price', 'KLX 150 dirt bike Bali'],
-    compare: ['Tabanan vs Kintamani dirt bike'],
-  },
-  'dirt-bike-tabanan-jungle-sunset-beach': {
-    head: ['Tabanan dirt bike sunset beach', 'Tabanan jungle sunset dirt bike'],
-    book: ['Tabanan jungle sunset dirt bike price'],
-    compare: ['Tabanan sunset dirt bike vs day ride'],
-  },
   'silver-making-class': {
     head: ['silver making class Ubud', 'Celuk silver class'],
     book: ['Ubud silver class price', 'silver class 5 grams Bali'],

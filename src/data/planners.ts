@@ -376,5 +376,5 @@ export const ACTIVITY_MOODS: Array<{
   { id: 'tubing', label: 'Gentle river float', hint: 'Wos River canyon tubing' },
   { id: 'swing', label: 'Jungle swing photos', hint: 'Swing Heaven in Bongkasa' },
   { id: 'utv', label: 'Automatic UTV (not ATV)', hint: 'Pemogan, 1 hour / 7 km' },
-  { id: 'dirt-bike', label: 'Dirt bike / enduro', hint: 'Tabanan or Kintamani lava' },
+  { id: 'dirt-bike', label: 'Dirt bike / enduro', hint: 'Kintamani black lava' },
 ]

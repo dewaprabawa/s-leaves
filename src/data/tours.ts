@@ -550,7 +550,7 @@ Beginner briefing on both tickets. No ATV licence. Rafting wants basic swimming 
     isTopPick: true,
     duration: "Sunrise 6–7 Hours · Sunset 4–5 Hours",
     basePrice: 1150000,
-    seoTitle: "Batur Jeep No Hike | 2.3M for 2 · 2.85M for 3",
+    seoTitle: "Mount Batur Sunrise Jeep Tour, No Hike | 2.3M for 2",
     seoDescription:
       "Sit-in Mount Batur jeep 2.3M for 2, 2.85M for 3. Tracking 1.8M for 2, 3+ 750K pp. Sunrise/sunset viewpoint + black lava. Breakfast + pickup. WhatsApp.",
     heroImage: {

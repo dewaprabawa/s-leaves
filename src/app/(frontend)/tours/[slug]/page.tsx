@@ -933,7 +933,7 @@ export default async function TourPage({ params }: Props) {
         "@type": "ListItem",
         position: 2,
         name: "Experiences",
-        item: `${SITE_URL}/#experiences`,
+        item: `${SITE_URL}/experiences`,
       },
       {
         "@type": "ListItem",
@@ -1027,7 +1027,7 @@ export default async function TourPage({ params }: Props) {
                     src={tour.heroImage.url}
                     alt={tour.heroImage.alt}
                     fill
-                    priority
+                    preload
                     sizes="(max-width: 1024px) 100vw, 66vw"
                     className="object-cover"
                   />

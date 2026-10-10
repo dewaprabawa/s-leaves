@@ -2608,6 +2608,10 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
         url: "/images/adventures/motorbike-tour-group.jpg",
         alt: "Guests with their Balinese guide after the Bali motorbike traveling trip",
       },
+      {
+        url: "/images/adventures/motorbike-tour-ubud-street-selfie.jpg",
+        alt: "Guest riding pillion with a helmeted Balinese guide past Ubud shops on the motorbike trip",
+      },
     ],
     shortDescription:
       `A Bali motorbike tour is a guided ${MOTORBIKE_ENGINE} scooter day. Promo from IDR ${(MOTORBIKE_UBUD_IDR / 1000).toFixed(0)}K per bike (was IDR ${(MOTORBIKE_UBUD_LIST_IDR / 1000).toFixed(0)}K) — Ubud, waterfalls, Kintamani, South, North, or East. Tickets not included. Ride yourself (IDP recommended) or pillion. Pickup at your chosen area. Canggu / Jimbaran / Nusa Dua shuttle IDR ${(MOTORBIKE_SOUTH_SHUTTLE_IDR / 1000).toFixed(0)}K once per booking.`,

@@ -36,6 +36,7 @@ const JEEP_ARTICLE_SLUGS = new Set([
   'mount-batur-jeep-sunrise-vs-sunset',
   'mount-batur-sit-in-jeep-vs-tracking',
   'private-kintamani-day-jeep-itinerary',
+  'mount-batur-jeep-new-year-sunrise-2026',
 ])
 
 /** Blog slug → activity GEO corpus (non-cooking / non-jeep money pages). */
@@ -106,6 +107,8 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'bali-canyoning-vs-tubing-vs-buggies': 'canyoning',
   'ubud-workshop-classes-2026': 'batik-class',
   'kintamani-dirt-bike-vs-batur-jeep': 'dirt-bike-kintamani-black-lava',
+  'kintamani-dirt-bike-rainy-season-2026': 'dirt-bike-kintamani-black-lava',
+  'bali-rafting-rainy-season-oct-dec-2026': 'whitewater-rafting',
 }
 
 const HUB_SNIPPET: ArticleGeoSnippet = {
@@ -127,6 +130,7 @@ const HUB_ARTICLE_SLUGS = new Set([
   'how-to-book-bali-adventure-whatsapp',
   'ubud-travel-guide-escape-crowds-2026',
   'morning-vs-afternoon-tours-bali',
+  'bali-october-november-december-2026-deals',
 ])
 
 export function getArticleGeoSnippet(slug: string): ArticleGeoSnippet | null {

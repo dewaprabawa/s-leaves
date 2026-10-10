@@ -776,6 +776,10 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'bali-motorbike-tour-idp-license-2026': 'bali-motorbike-traveling-trip',
   'east-south-bali-motorbike-tour-2026': 'bali-motorbike-traveling-trip',
   'kintamani-scooter-vs-batur-jeep-2026': ['bali-motorbike-traveling-trip', 'batur-sunrise-jeep-tour'],
+  'bali-october-november-december-2026-deals': ['whitewater-rafting', 'batur-sunrise-jeep-tour'],
+  'bali-rafting-rainy-season-oct-dec-2026': 'whitewater-rafting',
+  'mount-batur-jeep-new-year-sunrise-2026': 'batur-sunrise-jeep-tour',
+  'kintamani-dirt-bike-rainy-season-2026': 'site',
   'bali-atv-vs-kuber-cave-2026': 'bali-atv-adventure',
   'bali-atv-vs-utv-buggy-2026': 'bali-atv-adventure',
   'which-bali-wheels-2026': 'site',
@@ -983,6 +987,32 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   'kintamani-dirt-bike-vs-batur-jeep': [
     'dirt bike vs Mount Batur jeep',
     'Kintamani dirt bike price',
+  ],
+  'bali-october-november-december-2026-deals': [
+    'Bali in October',
+    'Bali in November',
+    'Bali in December',
+    'Bali New Year 2027 activities',
+    'Bali year end promo',
+    'Bali rainy season activities',
+  ],
+  'bali-rafting-rainy-season-oct-dec-2026': [
+    'Bali rafting rainy season',
+    'Ayung rafting December',
+    'Bali rafting November',
+    'rafting Ubud wet season',
+  ],
+  'mount-batur-jeep-new-year-sunrise-2026': [
+    'Mount Batur jeep New Year',
+    'Batur sunrise Christmas',
+    'Mount Batur sunrise December',
+    'Batur jeep 1 January sunrise',
+  ],
+  'kintamani-dirt-bike-rainy-season-2026': [
+    'Kintamani dirt bike rainy season',
+    'Bali dirt bike December',
+    'Kintamani dirt bike price',
+    'Bali Mountain Dirt Bike Adventure',
   ],
   'bali-bird-park-from-ubud-2026': [
     'Bali Bird Park price 2026',

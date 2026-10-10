@@ -103,6 +103,8 @@ export interface TourConfig {
   optionalAddons?: TourOptionalAddon[]
   /** Intro copy above optional add-ons. Defaults to jeep hot-spring text if omitted. */
   optionalAddonsIntro?: string
+  /** Optional hotel shuttle at one flat price per booking, island-wide (Kintamani dirt bike). Replaces the per-area pickup fee. */
+  pickupFlatFeeIdr?: number
   /** Self-meet venue when hotel pickup is not selected (e.g. Swing Heaven Bongkasa). */
   selfMeet?: {
     name: string
@@ -359,7 +361,11 @@ export function BookingPopup({
   const activityTotal = mixedQuote
     ? mixedQuote.discountedSubtotal
     : (activityQuote?.activitySubtotal ?? 0) + (activityQuote?.childSubtotal ?? 0);
-  const pickupFee = pickupQuote.total;
+  const pickupFlatFee = activeTour.pickupFlatFeeIdr ?? null
+  const hotelPickupFeeIdr = pickupFlatFee ?? PICKUP_FEE_IDR
+  const pickupFee = pickupFlatFee !== null
+    ? (effectiveWantsPickup ? pickupFlatFee : 0)
+    : pickupQuote.total;
   const totalCost = activityTotal + addonTotal + pickupFee;
   const compareAtActivityTotal = mixedQuote
     ? mixedQuote.compareAtSubtotal
@@ -457,6 +463,8 @@ export function BookingPopup({
       );
     } else if (pickupIncluded) {
       pickupNoteParts.push('Hotel pickup & drop-off included in tour price');
+    } else if (pickupFlatFee !== null) {
+      pickupNoteParts.push(`Hotel shuttle +${formatIdr(pickupFlatFee)} (once per booking)`);
     } else if (hasFreeUbudPickup && !isOutUbud) {
       pickupNoteParts.push('Free Ubud pickup (cycling tour)');
     } else {
@@ -552,6 +560,8 @@ export function BookingPopup({
       lineItems.push({
         label: requiredShuttle
           ? requiredShuttleLabel ?? 'Required shuttle'
+          : pickupFlatFee !== null
+            ? 'Hotel shuttle (once per booking)'
           : sameDropOff
             ? 'Hotel pickup & return transfer'
             : 'Hotel pickup transfer',
@@ -719,6 +729,8 @@ export function BookingPopup({
                    <span className="w-2 h-2 rounded-full bg-brand-green"></span>
                    Pickup included in tour price
                  </span>
+               ) : pickupFlatFee !== null ? (
+                 <span className="text-red-600 font-bold block">Hotel shuttle {formatIdr(pickupFlatFee)} per booking</span>
                ) : hasFreeUbudPickup ? (
                  isOutUbud ? (
                    <span className="text-red-600 font-bold block">Out of Ubud: hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
@@ -1018,7 +1030,9 @@ export function BookingPopup({
                 <span className="text-sm leading-relaxed">
                   <span className="font-bold text-brand-green block mb-0.5">I need hotel pickup</span>
                   <span className="text-brand-green-light">
-                    {meetLabel
+                    {pickupFlatFee !== null && meetLabel
+                      ? `Optional hotel shuttle, ${formatIdr(pickupFlatFee)} once per booking. If unchecked, meet at ${meetLabel}.`
+                      : meetLabel
                       ? `Optional. If unchecked, meet at ${meetLabel}. Check this to add your hotel address on the map.`
                       : hasFreeUbudPickup
                         ? "Free within Ubud (surcharge applies outside Ubud). Check this to add your hotel address on the map."
@@ -1040,7 +1054,8 @@ export function BookingPopup({
                 className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
               />
             </div>
-            {(!hasFreeUbudPickup && !pickupIncluded && !requiredShuttle) || (isOutUbud && !pickupIncluded && !requiredShuttle) ? (
+            {pickupFlatFee === null &&
+            ((!hasFreeUbudPickup && !pickupIncluded && !requiredShuttle) || (isOutUbud && !pickupIncluded && !requiredShuttle)) ? (
               <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3 shadow-sm">
                 <input
                   type="checkbox"
@@ -1091,7 +1106,7 @@ export function BookingPopup({
             </div>
             <p className="text-xs text-brand-green-light opacity-80 px-1">
               No pickup surcharge when you self-meet. Need hotel pickup? Check &quot;I need hotel pickup&quot; above — IDR{' '}
-              {PICKUP_FEE_IDR.toLocaleString('id-ID')}.
+              {hotelPickupFeeIdr.toLocaleString('id-ID')}{pickupFlatFee !== null ? ' once per booking' : ''}.
             </p>
             </>
             ) : (
@@ -1247,7 +1262,9 @@ export function BookingPopup({
                 <span>
                   {requiredShuttle
                     ? requiredShuttleLabel
-                    : `Pickup & transfer${sameDropOff ? ' (round trip)' : ''}`}
+                    : pickupFlatFee !== null
+                      ? 'Hotel shuttle (once per booking)'
+                      : `Pickup & transfer${sameDropOff ? ' (round trip)' : ''}`}
                 </span>
                 <span className={`font-semibold ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>
                   {formatIdr(pickupFee)}

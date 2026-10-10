@@ -88,6 +88,10 @@ const HIGH_BLOG_SLUGS = new Set([
   'bali-atv-vs-kuber-cave-2026',
   'bali-atv-vs-utv-buggy-2026',
   'which-bali-wheels-2026',
+  'bali-october-november-december-2026-deals',
+  'bali-rafting-rainy-season-oct-dec-2026',
+  'mount-batur-jeep-new-year-sunrise-2026',
+  'kintamani-dirt-bike-rainy-season-2026',
 ])
 
 /** Posts rewritten in the latest GEO pass — recrawl these even if publishedAt is older. */

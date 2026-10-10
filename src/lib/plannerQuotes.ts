@@ -391,7 +391,7 @@ export function checkPickupRule(input: {
         feeIdr: null,
         headline: 'Pickup is quoted on WhatsApp',
         detail:
-          'Park, workshop, dirt-bike, and UTV tickets do not use free Ubud pickup or the IDR 400,000 adventure surcharge. We quote the transfer when you share the hotel pin.',
+          'Park, workshop, and UTV tickets do not use free Ubud pickup or the IDR 400,000 adventure surcharge. We quote the transfer when you share the hotel pin. Kintamani dirt bike shuttle is IDR 650,000 once per booking.',
         tourHref: input.activity === 'utv' ? '/tours/utv-buggy-bali-adventure' : '/tours/bali-bird-park',
         tourLabel: input.activity === 'utv' ? 'UTV money page' : 'Bird Park money page',
         whatsappActivity:
@@ -553,7 +553,7 @@ export function chooseActivity(mood: ActivityMoodId): ActivityChoice {
         moodLabel,
         title: 'Kintamani dirt bike',
         fromPrice: 1_850_000,
-        pickup: 'Pickup quoted',
+        pickup: 'Hotel shuttle IDR 650,000 per booking · or self-meet',
         why: 'Geared enduro, not the 125–160cc scooter day. Kintamani black lava from IDR 1,850,000, lunch included.',
         tourHref: '/tours/dirt-bike-kintamani-black-lava',
         blogHref: '/blog/kintamani-dirt-bike-vs-batur-jeep',

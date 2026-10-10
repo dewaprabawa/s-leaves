@@ -67,7 +67,7 @@ Want clutch and lava instead? That is the [Kintamani dirt bike](/tours/dirt-bike
 > **Key Takeaways**
 > - Scooter: **public roads** · promo **450,000–800,000** · IDP or pillion
 > - Kintamani dirt bike: **lava + forest** · from **1,850,000** · ~8 hours
-> - Dirt-bike pickup is **quoted** · scooter pickup is at the **chosen area**
+> - Dirt-bike hotel shuttle **650,000** once per booking · scooter pickup is at the **chosen area**
 > - Do not book the scooter if you wanted clutch, ruts, and lava
 
 ## Two machines, two prices
@@ -79,7 +79,7 @@ Want clutch and lava instead? That is the [Kintamani dirt bike](/tours/dirt-bike
 | Bike | 125–160cc automatic | KLX/CRF 150 to KTM 350 · kids 75cc |
 | Skill | Street comfort, or pillion | Geared enduro months |
 | Tickets | Extra | Track day · lunch + fuel included |
-| Pickup | Chosen area · south **550,000** | Quoted |
+| Pickup | Chosen area · south **550,000** | Shuttle **650,000** / booking or self-meet |
 
 Bali Dirt Bikes (2026 price page) lists Kintamani full days from **IDR 1,800,000–5,400,000** by bike class. TrailX lists Kintamani from **IDR 1,800,000**. Those are **enduro** quotes. A **USD 32–37** motorbike listing from a Kuta scooter shop is a sightseeing day, not a KLX.
 
@@ -276,7 +276,7 @@ Want a **car** to Tanah Lot instead? The [half-day Ubud + Tanah Lot](/tours/half
 | You sit or ride? | Ride or pillion | Sit in a 4×4 | Ride a KTM enduro |
 | Clock | Full day, public roads | Pre-dawn start, 4–7 hours | ~8 hours on lava |
 | Breakfast | Your own | Included after the viewpoint | Operator day |
-| Pickup | Chosen area · south **550,000** | Island-wide included | Quoted |
+| Pickup | Chosen area · south **550,000** | Island-wide included | Shuttle **650,000** / booking |
 
 The scooter **sunrise peak view** is a roadside / terrace viewpoint on the way, not the jeep’s crater-rim pin. If the photo you saved is a 4×4 on a ridge at 1,350 m, book the jeep. Full jeep rules: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
@@ -377,7 +377,7 @@ Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-moto
 | Sedang ATV | **750,000** / rider | Quad on jungle mud | **400,000** or self-meet | [ATV](/tours/bali-atv-adventure) |
 | Batur jeep | **950,000** (3+ sit-in) | Sit in a private 4×4 | Island-wide included | [Jeep](/tours/batur-sunrise-jeep-tour) |
 | UTV buggy | **1,200,000** single | 1 hr / 7 km automatic | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
-| Kintamani dirt bike | **1,850,000** | KLX 150–KTM 350 on lava | Quoted | [Kintamani](/tours/dirt-bike-kintamani-black-lava) |
+| Kintamani dirt bike | **1,850,000** | KLX 150–KTM 350 on lava | Shuttle **650,000** / booking | [Kintamani](/tours/dirt-bike-kintamani-black-lava) |
 
 Culture days without engines: [Tumang cooking](/tours/balinese-cooking-class) promo **IDR 450,000** (free Ubud pickup), [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) promo **IDR 650,000** (was 750,000). Water: [rafting](/tours/whitewater-rafting) and [tubing](/tours/canyon-tubing) **IDR 500,000** (**450,000** for 2+). Full menu: [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026).
 

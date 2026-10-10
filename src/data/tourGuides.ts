@@ -166,6 +166,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'whitewater-rafting': [
     {
+      title: 'Rafting in rainy season (Oct–Dec)',
+      href: '/blog/bali-rafting-rainy-season-oct-dec-2026',
+      blurb: 'Fuller Ayung water, morning slots, 450K each for 2+.',
+    },
+    {
       title: 'Hotel pickup checker',
       href: '/planners/hotel-pickup-checker',
       blurb: 'Rafting pickup is IDR 400K or self-meet — not free Ubud cycling pickup.',
@@ -564,6 +569,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'batur-sunrise-jeep-tour': [
     {
+      title: 'Christmas & New Year jeep',
+      href: '/blog/mount-batur-jeep-new-year-sunrise-2026',
+      blurb: 'Sunset on 31 Dec, sunrise on 2 Jan — holiday dates fill first.',
+    },
+    {
       title: 'Things to do near Ubud 2026',
       href: '/blog/things-to-do-near-ubud-2026',
       blurb: 'Jeep next to cooking, cycling, and ATV in one table.',
@@ -693,6 +703,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Sedang ATV', href: '/tours/bali-atv-adventure', blurb: 'Quad-bike jungle mud from IDR 750K — a different machine.' },
   ],
   'dirt-bike-kintamani-black-lava': [
+    { title: 'Riding in rainy season', href: '/blog/kintamani-dirt-bike-rainy-season-2026', blurb: 'Wet lava grips better — Oct–Dec tips and prices.' },
     { title: 'Dirt bike vs Batur jeep', href: '/blog/kintamani-dirt-bike-vs-batur-jeep', blurb: 'You ride vs you sit at a crater-rim viewpoint.' },
     { title: 'Motorbike vs dirt bike', href: '/blog/bali-motorbike-tour-vs-dirt-bike-2026', blurb: 'Public-road scooter from 450K is not this lava enduro.' },
     { title: 'Which Bali wheels', href: '/blog/which-bali-wheels-2026', blurb: 'Dirt bike next to scooter, ATV, UTV, and jeep.' },

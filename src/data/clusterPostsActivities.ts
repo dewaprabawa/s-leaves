@@ -553,7 +553,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | UTV Buggy Bali Adventure | **1,200,000** single · **1,500,000** tandem | 1 hr / 7 km | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |
 | Bali motorbike tour | **450,000–800,000** promo / scooter | 8–10 hrs | Chosen area · Canggu/Jimbaran/Nusa Dua 550K | [Motorbike tour](/tours/bali-motorbike-traveling-trip) |
 | Ubud batik / silver class | **650,000** | 3 hrs | Quoted | [Workshops](/blog/ubud-workshop-classes-2026) |
-| Kintamani dirt bike | **1,850,000** | ~8 hrs | Quoted | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
+| Kintamani dirt bike | **1,850,000** | ~8 hrs | Shuttle 650K / booking | [Dirt bike](/tours/dirt-bike-kintamani-black-lava) |
 
 Prices are 2026 published tiers. Groups of 2+ or 3+ often pay less per person on ATV, rafting, tubing, cycling, and the jeep.
 

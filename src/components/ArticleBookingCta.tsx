@@ -754,7 +754,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'kintamani-dirt-bike-vs-batur-jeep': {
     headline: 'Viewpoint jeep or lava enduro — pick one',
-    body: 'Private sit-in jeep IDR 2,300,000 for 2 / 2,850,000 for 3 / tracking 1,800,000 for 2 / tracking 750,000 at 3+ with breakfast and island-wide pickup. Kintamani dirt bike from IDR 1,850,000 — pickup quoted.',
+    body: 'Private sit-in jeep IDR 2,300,000 for 2 / 2,850,000 for 3 / tracking 1,800,000 for 2 / tracking 750,000 at 3+ with breakfast and island-wide pickup. Kintamani dirt bike from IDR 1,850,000 — hotel shuttle IDR 650,000 per booking.',
     primaryHref: '/tours/batur-sunrise-jeep-tour',
     primaryLabel: 'Book Private Jeep',
     secondaryHref: '/tours/dirt-bike-kintamani-black-lava',

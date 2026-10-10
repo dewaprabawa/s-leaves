@@ -19,7 +19,14 @@ import {
   COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
 } from "@/data/cultureSales"
-import { BALI_SAFARI_PRICES, BALI_SAFARI_SLUG } from "@/data/parkWorkshopTours"
+import {
+  BALI_SAFARI_PRICES,
+  BALI_SAFARI_SLUG,
+  KINTAMANI_DIRT_BIKE_ADDRESS,
+  KINTAMANI_DIRT_BIKE_HOST,
+  KINTAMANI_DIRT_BIKE_MAP_URL,
+  KINTAMANI_DIRT_BIKE_SHUTTLE_IDR,
+} from "@/data/parkWorkshopTours"
 import {
   MOTORBIKE_EAST_IDR,
   MOTORBIKE_EAST_LIST_IDR,
@@ -32,6 +39,7 @@ import {
 import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
+const KINTAMANI_DIRT_BIKE_SLUG = "dirt-bike-kintamani-black-lava"
 
 export type TourBookingCardProps = {
   tourId: string
@@ -187,6 +195,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   const isLuwak = props.tourSlug === "luwak-coffee-plantation"
   const isMotorbike = props.tourSlug === MOTORBIKE_TRIP_SLUG
   const isSwingHeaven = props.tourSlug === "swing-heaven-bali"
+  const isKintamaniDirtBike = props.tourSlug === KINTAMANI_DIRT_BIKE_SLUG
 
   if (props.activityOptions?.length) {
     return props.activityOptions.map((opt, index) => {
@@ -216,6 +225,16 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         pickupIncluded: isMelukat || isMotorbike,
         requiredShuttle: isSwingHeaven,
         pickupNotOffered: isLuwak,
+        ...(isKintamaniDirtBike
+          ? {
+              pickupFlatFeeIdr: KINTAMANI_DIRT_BIKE_SHUTTLE_IDR,
+              selfMeet: {
+                name: KINTAMANI_DIRT_BIKE_HOST,
+                address: KINTAMANI_DIRT_BIKE_ADDRESS,
+                mapUrl: KINTAMANI_DIRT_BIKE_MAP_URL,
+              },
+            }
+          : {}),
         ...(isMotorbike
           ? {
               optionalAddons: [MOTORBIKE_SOUTH_SHUTTLE_ADDON],
@@ -400,6 +419,11 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             <p className="text-sm text-brand-green-light mt-1">
               Private {formatIdr(COOKING_CLASS_PRIVATE_SOLO_IDR)} / person ·{" "}
               {formatIdr(COOKING_CLASS_PRIVATE_COUPLE_IDR)} for 2
+            </p>
+          ) : null}
+          {props.tourSlug === KINTAMANI_DIRT_BIKE_SLUG ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              Hotel shuttle {formatIdr(KINTAMANI_DIRT_BIKE_SHUTTLE_IDR)} once per booking · or self-meet in Suter
             </p>
           ) : null}
           {props.tourSlug === MOTORBIKE_TRIP_SLUG ? (

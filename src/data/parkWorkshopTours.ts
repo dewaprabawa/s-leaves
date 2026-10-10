@@ -31,6 +31,10 @@ export const BALI_SAFARI_PRICES = {
 /** Bali Mountain Dirt Bike Adventure published rates (Suter, Kintamani), per rider. */
 export const KINTAMANI_DIRT_BIKE_HOST = "Bali Mountain Dirt Bike Adventure"
 export const KINTAMANI_DIRT_BIKE_ADDRESS = "Banjar Suter, Kintamani, Bangli Regency, Bali 80652"
+export const KINTAMANI_DIRT_BIKE_MAP_URL =
+  "https://www.google.com/maps/search/?api=1&query=Bali+Mountain+Dirt+Bike+Adventure+Suter+Kintamani"
+/** Optional hotel shuttle, one price per booking. */
+export const KINTAMANI_DIRT_BIKE_SHUTTLE_IDR = 650_000
 export const KINTAMANI_DIRT_BIKE_PRICES = {
   klx150: 1_850_000,
   klx230: 2_500_000,
@@ -61,6 +65,7 @@ function ticketFaqs(
   questionName: string,
   priceIdr: number,
   extra?: { question: string; answer: string },
+  pickupAnswer?: string,
 ) {
   const faqs = [
     {
@@ -72,6 +77,7 @@ function ticketFaqs(
       id: `faq-${id}-2`,
       question: "Is hotel pickup included?",
       answer:
+        pickupAnswer ??
         "Usually not in the ticket from-price. We can add a private driver or use a park shuttle where the venue runs one. Say your hotel area on WhatsApp.",
     },
     {
@@ -106,6 +112,7 @@ function ticketTour(opts: {
   notIncluded: string[]
   itinerary: { time: string; title: string; description: string }[]
   extraFaq?: { question: string; answer: string }
+  pickupFaqAnswer?: string
   activityOptions?: Tour["activityOptions"]
   /** Override the /images/adventures/{slug}.jpg filename when slugs were merged. */
   imageSlug?: string
@@ -145,7 +152,7 @@ function ticketTour(opts: {
       ...item,
     })),
     addons: [],
-    faqs: ticketFaqs(opts.slug, opts.title, basePrice, opts.extraFaq),
+    faqs: ticketFaqs(opts.slug, opts.title, basePrice, opts.extraFaq, opts.pickupFaqAnswer),
     reviews: [],
     activityOptions: opts.activityOptions,
   }
@@ -446,6 +453,7 @@ We book the lodge ticket. Pickup is not in the from-price unless you add a drive
     category: "adventure",
     area: "Suter · Kintamani",
     venue: `${KINTAMANI_DIRT_BIKE_HOST} · Suter, Kintamani`,
+    pickup: `Hotel shuttle IDR ${KINTAMANI_DIRT_BIKE_SHUTTLE_IDR.toLocaleString("id-ID")} per booking, or self-meet in Suter`,
     duration: "About 8 hours",
     sourcePrice: KINTAMANI_DIRT_BIKE_PRICES.klx150,
     publishedPrice: KINTAMANI_DIRT_BIKE_PRICES.klx150,
@@ -468,7 +476,7 @@ The ride starts at **${KINTAMANI_DIRT_BIKE_HOST}**, ${KINTAMANI_DIRT_BIKE_ADDRES
 
 Pick the bike on this page. Tell us your riding months on a geared bike so the guide matches the line to your level.
 
-Wet season (December–May) is the usual Kintamani window (traction, less dust). About 8 hours. Pickup quoted.`,
+Wet season (December–May) is the usual Kintamani window (traction, less dust). About 8 hours. Hotel shuttle IDR ${KINTAMANI_DIRT_BIKE_SHUTTLE_IDR.toLocaleString("id-ID")} per booking, or self-meet in Suter.`,
     highlights: [
       `Hosted by ${KINTAMANI_DIRT_BIKE_HOST} in Suter, Kintamani`,
       "Black-lava + forest tracks",
@@ -487,7 +495,7 @@ Wet season (December–May) is the usual Kintamani window (traction, less dust).
       "Guide / leader",
       "Documentation by phone",
     ],
-    notIncluded: ["Hotel pickup unless quoted", "Jeep sunrise ticket"],
+    notIncluded: [`Hotel shuttle (IDR ${KINTAMANI_DIRT_BIKE_SHUTTLE_IDR.toLocaleString("id-ID")} per booking)`, "Jeep sunrise ticket"],
     itinerary: [
       { time: "Morning", title: "Welcome + kit", description: `Welcome drink at ${KINTAMANI_DIRT_BIKE_HOST} in Suter. Bike fit, safety gear, and level check.` },
       { time: "Day", title: "Kintamani tracks", description: "Forest, open trail, lava dunes — line matches your level." },
@@ -525,6 +533,7 @@ Wet season (December–May) is the usual Kintamani window (traction, less dust).
       answer:
         "No. The jeep is a private 4×4 to a crater-rim viewpoint. This is a guided dirt bike on lava and forest tracks.",
     },
+    pickupFaqAnswer: `Not in the bike price. The hotel shuttle is IDR ${KINTAMANI_DIRT_BIKE_SHUTTLE_IDR.toLocaleString("id-ID")} once per booking, or meet at ${KINTAMANI_DIRT_BIKE_HOST} in Suter, Kintamani. Tick the shuttle when you book and drop your hotel pin.`,
   }),
   ticketTour({
     slug: "silver-making-class",

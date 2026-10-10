@@ -274,7 +274,7 @@ WhatsApp **which class, date, guest count, hotel**. We confirm the studio and ID
 | From (IDR) | **1,850,000** | sit-in **2,300,000** for 2 · **2,850,000** for 3 · tracking **1,800,000** for 2 · **750,000** (3+ tracking) |
 | You do | Ride an enduro | Sit in a 4×4 (or tracking walk) |
 | Clock | ~8 hours | 4–7 hours |
-| Pickup | Quoted | **Island-wide included** |
+| Pickup | Shuttle **650,000** / booking or self-meet | **Island-wide included** |
 | Breakfast | Not assumed | **Included** after the viewpoint |
 | Best season | Dec–May (wet, less dust) | Year-round |
 

@@ -106,6 +106,10 @@ function isGriyaTour(tour: Tour) {
   return tour.slug === "griya-beji-waterfall"
 }
 
+function isAtvQaTour(tour: Tour) {
+  return isAtvTour(tour) || tour.slug === "atv-rafting-combo"
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const tour = getTourBySlug(slug)
@@ -265,6 +269,19 @@ function buildTourSchema(tour: Tour) {
   }
 
   if (jeep) {
+    const perPerson = (price: number, minGuests: number) => ({
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price,
+        priceCurrency: "IDR",
+        unitText: "per person",
+      },
+      eligibleQuantity: {
+        "@type": "QuantitativeValue",
+        minValue: minGuests,
+        unitText: "guests",
+      },
+    })
     return {
       ...base,
       category: "Sightseeing Tours",
@@ -282,6 +299,7 @@ function buildTourSchema(tour: Tour) {
             name: "Sit-in private jeep — 2 guests (minimum)",
             price: JEEP_GEO_ENTITY.pairPerPersonIdr,
             priceCurrency: "IDR",
+            ...perPerson(JEEP_GEO_ENTITY.pairPerPersonIdr, 2),
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
           },
@@ -290,6 +308,7 @@ function buildTourSchema(tour: Tour) {
             name: "Tracking jeep — 2 guests (minimum)",
             price: JEEP_GEO_ENTITY.trackingPairPerPersonIdr,
             priceCurrency: "IDR",
+            ...perPerson(JEEP_GEO_ENTITY.trackingPairPerPersonIdr, 2),
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
           },
@@ -298,6 +317,7 @@ function buildTourSchema(tour: Tour) {
             name: "Sit-in private jeep — 3+ guests sharing",
             price: JEEP_GEO_ENTITY.sitinGroupPerPersonIdr,
             priceCurrency: "IDR",
+            ...perPerson(JEEP_GEO_ENTITY.sitinGroupPerPersonIdr, 3),
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
           },
@@ -306,6 +326,7 @@ function buildTourSchema(tour: Tour) {
             name: "Tracking jeep — 3+ guests sharing",
             price: JEEP_GEO_ENTITY.trackingGroupPerPersonIdr,
             priceCurrency: "IDR",
+            ...perPerson(JEEP_GEO_ENTITY.trackingGroupPerPersonIdr, 3),
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
           },
@@ -314,6 +335,7 @@ function buildTourSchema(tour: Tour) {
             name: "Private Kintamani Day (jeep or tracking)",
             price: TIER_PRICES_IDR["kintamani-day"][1],
             priceCurrency: "IDR",
+            ...perPerson(TIER_PRICES_IDR["kintamani-day"][1], 2),
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
           },
@@ -736,6 +758,8 @@ function buildJeepWebPageSchema(tour: Tour) {
       `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026`,
       `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`,
       `${SITE_URL}/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026`,
+      `${SITE_URL}/blog/mount-batur-jeep-tour-whats-included-2026`,
+      `${SITE_URL}/blog/ubud-2-day-adventure-plan-jeep-atv-rafting-2026`,
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
       `${SITE_URL}/tours/balinese-cooking-class`,
@@ -806,6 +830,8 @@ function buildRaftingWebPageSchema(tour: Tour) {
       `${SITE_URL}/blog/rafting-ubud-price-2026`,
       `${SITE_URL}/blog/bali-whitewater-rafting-near-ubud-guide`,
       `${SITE_URL}/blog/rafting-vs-tubing-vs-atv-near-ubud`,
+      `${SITE_URL}/blog/atv-rafting-from-seminyak-canggu-kuta-2026`,
+      `${SITE_URL}/blog/bali-atv-rafting-jeep-with-kids-2026`,
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
     ],
@@ -861,6 +887,22 @@ function buildGriyaQaSchemas(tour: Tour) {
 }
 
 function buildRaftingQaSchemas(tour: Tour) {
+  const geo = getActivityGeo(tour.slug)
+  if (!geo) return []
+  return geo.faqs.map((item, index) => ({
+    "@context": "https://schema.org",
+    "@type": "Question",
+    "@id": `${SITE_URL}/tours/${tour.slug}#qa-${index + 1}`,
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+      url: `${SITE_URL}/tours/${tour.slug}#${tour.slug}-geo`,
+    },
+  }))
+}
+
+function buildAtvQaSchemas(tour: Tour) {
   const geo = getActivityGeo(tour.slug)
   if (!geo) return []
   return geo.faqs.map((item, index) => ({
@@ -993,6 +1035,15 @@ export default async function TourPage({ params }: Props) {
         : null}
       {isRaftingTour(tour)
         ? buildRaftingQaSchemas(tour).map((qa) => (
+            <script
+              key={qa["@id"]}
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(qa) }}
+            />
+          ))
+        : null}
+      {isAtvQaTour(tour)
+        ? buildAtvQaSchemas(tour).map((qa) => (
             <script
               key={qa["@id"]}
               type="application/ld+json"

@@ -12,6 +12,11 @@ export type TourRelatedGuide = {
 export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   'atv-rafting-combo': [
     {
+      title: '2-day plan: jeep + ATV + rafting',
+      href: '/blog/ubud-2-day-adventure-plan-jeep-atv-rafting-2026',
+      blurb: 'Batur sunrise on day 1, this combo on day 2 — from 4M for 2.',
+    },
+    {
       title: 'Best price ATV, rafting, cycling & scooter',
       href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',
       blurb: 'Published 2026 rates for all four — then stack this flagship mix.',
@@ -63,6 +68,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'bali-atv-adventure': [
+    {
+      title: 'ATV from Seminyak, Canggu & Kuta',
+      href: '/blog/atv-rafting-from-seminyak-canggu-kuta-2026',
+      blurb: 'Flat 400K pickup per booking — no area surcharge.',
+    },
+    {
+      title: 'Bali ATV with kids (ages 6+)',
+      href: '/blog/bali-atv-rafting-jeep-with-kids-2026',
+      blurb: 'Child single 700K or tandem with a parent.',
+    },
     {
       title: 'Muddy quad bike Ubud',
       href: '/blog/ubud-muddy-quad-bike-atv-2026',
@@ -169,6 +184,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Rafting in rainy season (Oct–Dec)',
       href: '/blog/bali-rafting-rainy-season-oct-dec-2026',
       blurb: 'Fuller Ayung water, morning slots, 450K each for 2+.',
+    },
+    {
+      title: 'Rafting from Seminyak, Canggu & Kuta',
+      href: '/blog/atv-rafting-from-seminyak-canggu-kuta-2026',
+      blurb: 'Flat 400K pickup per booking — drive times and real totals.',
+    },
+    {
+      title: 'Rafting with kids (ages 6+)',
+      href: '/blog/bali-atv-rafting-jeep-with-kids-2026',
+      blurb: 'Child price 450K, Class II–III, helmet and life jacket.',
     },
     {
       title: 'Hotel pickup checker',
@@ -572,6 +597,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Christmas & New Year jeep',
       href: '/blog/mount-batur-jeep-new-year-sunrise-2026',
       blurb: 'Sunset on 31 Dec, sunrise on 2 Jan — holiday dates fill first.',
+    },
+    {
+      title: "What's included (vs cheap listings)",
+      href: '/blog/mount-batur-jeep-tour-whats-included-2026',
+      blurb: 'Pickup, breakfast, entrance — the all-in checklist.',
+    },
+    {
+      title: '2-day plan: jeep + ATV + rafting',
+      href: '/blog/ubud-2-day-adventure-plan-jeep-atv-rafting-2026',
+      blurb: 'Jeep sunrise on day 1, ATV and rafting on day 2.',
     },
     {
       title: 'Things to do near Ubud 2026',

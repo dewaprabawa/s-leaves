@@ -172,9 +172,9 @@ export const TOURS: Tour[] = [
     duration: "2–4 Hours",
     basePrice: 750000,
     childPrice: 700000,
-    seoTitle: "ATV All New Bali Adventure | From 750K",
+    seoTitle: "Bali ATV Ubud | All New Bali Adventure · From 750K",
     seoDescription:
-      "All New ATV Bali from 750K. Lunch in. Pickup 400K or self-meet. Not the location-guide URL. WhatsApp — no deposit.",
+      "Bali ATV quad bike near Ubud at All New Bali Adventure from 750K: jungle mud, river crossings, lunch and insurance. Pickup 400K any hotel area. WhatsApp — no deposit.",
     heroImage: {
       url: "/images/adventures/atv-mud-river-splash.jpg",
       alt: "Muddy quad bike river crossing at All New Bali Adventure near Ubud",
@@ -873,9 +873,9 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
     duration: "3 Hours",
     basePrice: 500000,
     childPrice: 450000,
-    seoTitle: "Ayung River Rafting Ubud | 500K · 450K",
+    seoTitle: "Ayung River Rafting Ubud | 450K for 2+ · Lunch",
     seoDescription:
-      "Ayung River rafting near Ubud. Class II–III. IDR 500,000, or 450,000 for 2+ (min 2). Lunch and gear included. Pickup 400K or self-meet. Book on WhatsApp.",
+      "Ayung River white water rafting near Ubud, Class II–III. IDR 500,000, or 450,000 each for 2+. Lunch, gear and insurance included. Pickup 400K any hotel area. WhatsApp.",
     heroImage: {
       url: "/images/adventures/rafting-ayung-paddle-team.jpg",
       alt: "Ayung River rafting paddle team hitting Class II–III rapids near Ubud",

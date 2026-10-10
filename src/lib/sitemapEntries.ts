@@ -92,6 +92,10 @@ const HIGH_BLOG_SLUGS = new Set([
   'bali-rafting-rainy-season-oct-dec-2026',
   'mount-batur-jeep-new-year-sunrise-2026',
   'kintamani-dirt-bike-rainy-season-2026',
+  'atv-rafting-from-seminyak-canggu-kuta-2026',
+  'bali-atv-rafting-jeep-with-kids-2026',
+  'mount-batur-jeep-tour-whats-included-2026',
+  'ubud-2-day-adventure-plan-jeep-atv-rafting-2026',
 ])
 
 /** Posts rewritten in the latest GEO pass — recrawl these even if publishedAt is older. */

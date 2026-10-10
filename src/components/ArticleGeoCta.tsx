@@ -37,6 +37,8 @@ const JEEP_ARTICLE_SLUGS = new Set([
   'mount-batur-sit-in-jeep-vs-tracking',
   'private-kintamani-day-jeep-itinerary',
   'mount-batur-jeep-new-year-sunrise-2026',
+  'mount-batur-jeep-tour-whats-included-2026',
+  'ubud-2-day-adventure-plan-jeep-atv-rafting-2026',
 ])
 
 /** Blog slug → activity GEO corpus (non-cooking / non-jeep money pages). */
@@ -109,6 +111,8 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'kintamani-dirt-bike-vs-batur-jeep': 'dirt-bike-kintamani-black-lava',
   'kintamani-dirt-bike-rainy-season-2026': 'dirt-bike-kintamani-black-lava',
   'bali-rafting-rainy-season-oct-dec-2026': 'whitewater-rafting',
+  'atv-rafting-from-seminyak-canggu-kuta-2026': 'atv-rafting-combo',
+  'bali-atv-rafting-jeep-with-kids-2026': 'whitewater-rafting',
 }
 
 const HUB_SNIPPET: ArticleGeoSnippet = {

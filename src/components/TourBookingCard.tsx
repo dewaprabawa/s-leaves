@@ -374,7 +374,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           />
         ) : null}
         {isInsuredTour(props.tourSlug) ? (
-          <InsuranceBadge variant="inline" className="w-full justify-center" />
+          <InsuranceBadge slug={props.tourSlug} variant="inline" className="w-full justify-center" />
         ) : null}
         {props.getYourGuideUrl && (
           <a

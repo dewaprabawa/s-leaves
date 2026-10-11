@@ -39,6 +39,8 @@ const JEEP_ARTICLE_SLUGS = new Set([
   'mount-batur-jeep-new-year-sunrise-2026',
   'mount-batur-jeep-tour-whats-included-2026',
   'ubud-2-day-adventure-plan-jeep-atv-rafting-2026',
+  'mount-batur-sunrise-jeep-hot-spring-2026',
+  'mount-batur-jeep-tour-reviews-2026',
 ])
 
 /** Blog slug → activity GEO corpus (non-cooking / non-jeep money pages). */
@@ -113,6 +115,8 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'bali-rafting-rainy-season-oct-dec-2026': 'whitewater-rafting',
   'atv-rafting-from-seminyak-canggu-kuta-2026': 'atv-rafting-combo',
   'bali-atv-rafting-jeep-with-kids-2026': 'whitewater-rafting',
+  'best-atv-bali-ubud-2026': 'bali-atv-adventure',
+  'bali-atv-ride-locations-2026': 'bali-atv-adventure',
 }
 
 const HUB_SNIPPET: ArticleGeoSnippet = {

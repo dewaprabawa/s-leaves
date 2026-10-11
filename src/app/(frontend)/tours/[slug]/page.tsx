@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft, Camera, Car, Check, Clock, MapPin } from "lucide-react"
 import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
+import InsuranceBadge, { isInsuredTour } from "@/components/InsuranceBadge"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
@@ -760,6 +761,8 @@ function buildJeepWebPageSchema(tour: Tour) {
       `${SITE_URL}/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026`,
       `${SITE_URL}/blog/mount-batur-jeep-tour-whats-included-2026`,
       `${SITE_URL}/blog/ubud-2-day-adventure-plan-jeep-atv-rafting-2026`,
+      `${SITE_URL}/blog/mount-batur-sunrise-jeep-hot-spring-2026`,
+      `${SITE_URL}/blog/mount-batur-jeep-tour-reviews-2026`,
       `${SITE_URL}/llms.txt`,
       `${SITE_URL}/pricing.md`,
       `${SITE_URL}/tours/balinese-cooking-class`,
@@ -1088,6 +1091,7 @@ export default async function TourPage({ params }: Props) {
                       variant="hero"
                     />
                   ) : null}
+                  {isInsuredTour(tour.slug) ? <InsuranceBadge variant="hero" /> : null}
                 </div>
 
                 {tour.heroThumbnails?.length ? <TourPhotoGrid photos={tour.heroThumbnails} /> : null}
@@ -1102,6 +1106,7 @@ export default async function TourPage({ params }: Props) {
                       variant="inline"
                     />
                   ) : null}
+                  {isInsuredTour(tour.slug) ? <InsuranceBadge variant="inline" /> : null}
                   {isSwingTour(tour) ? (
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
                       Include shuttle — must

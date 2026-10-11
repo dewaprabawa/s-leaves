@@ -26,6 +26,7 @@ import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR } from "@/lib/pricing"
 import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
 import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
+import InsuranceBadge, { isInsuredTour } from "@/components/InsuranceBadge"
 import { useConsultationInterests } from "@/hooks/useConsultationInterests"
 
 /** Preferred display order — only categories with at least one tour are shown */
@@ -72,6 +73,7 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
             Private
           </span>
         ) : null}
+        {isInsuredTour(tour.slug) ? <InsuranceBadge variant="card" /> : null}
       </Link>
 
       <a

@@ -9,6 +9,7 @@ import { RAFTING_TUBING_CLUSTER_POSTS } from './clusterPostsRaftingTubing'
 import { MOTORBIKE_CLUSTER_POSTS } from './clusterPostsMotorbike'
 import { YEAR_END_CLUSTER_POSTS } from './clusterPostsYearEnd'
 import { ADVENTURE_GAP_CLUSTER_POSTS } from './clusterPostsAdventureGaps'
+import { ATV_JEEP_KEYWORD_CLUSTER_POSTS } from './clusterPostsAtvJeepKeywords'
 
 export type BlogPost = {
   slug: string
@@ -23,6 +24,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...ATV_JEEP_KEYWORD_CLUSTER_POSTS,
   ...ADVENTURE_GAP_CLUSTER_POSTS,
   ...YEAR_END_CLUSTER_POSTS,
   ...MOTORBIKE_CLUSTER_POSTS,

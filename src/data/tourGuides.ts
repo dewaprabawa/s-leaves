@@ -69,6 +69,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'bali-atv-adventure': [
     {
+      title: 'Best ATV in Bali: how to choose',
+      href: '/blog/best-atv-bali-ubud-2026',
+      blurb: 'Tunnel vs mud, 6-point checklist travelers repeat.',
+    },
+    {
+      title: 'Bali ATV ride locations',
+      href: '/blog/bali-atv-ride-locations-2026',
+      blurb: 'Payangan, Sedang, Tabanan — which is closest to your hotel.',
+    },
+    {
       title: 'ATV from Seminyak, Canggu & Kuta',
       href: '/blog/atv-rafting-from-seminyak-canggu-kuta-2026',
       blurb: 'Flat 400K pickup per booking — no area surcharge.',
@@ -191,7 +201,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Flat 400K pickup per booking — drive times and real totals.',
     },
     {
-      title: 'Rafting with kids (ages 6+)',
+      title: 'Rafting with kids (typically 7+)',
       href: '/blog/bali-atv-rafting-jeep-with-kids-2026',
       blurb: 'Child price 450K, Class II–III, helmet and life jacket.',
     },
@@ -597,6 +607,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Christmas & New Year jeep',
       href: '/blog/mount-batur-jeep-new-year-sunrise-2026',
       blurb: 'Sunset on 31 Dec, sunrise on 2 Jan — holiday dates fill first.',
+    },
+    {
+      title: 'Jeep + natural hot spring',
+      href: '/blog/mount-batur-sunrise-jeep-hot-spring-2026',
+      blurb: 'Batur +150K or Toya Devasya +300K pp, ticket included.',
+    },
+    {
+      title: 'Batur jeep reviews: what to check',
+      href: '/blog/mount-batur-jeep-tour-reviews-2026',
+      blurb: 'What travelers praise and what goes wrong.',
     },
     {
       title: "What's included (vs cheap listings)",

@@ -73,7 +73,7 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
             Private
           </span>
         ) : null}
-        {isInsuredTour(tour.slug) ? <InsuranceBadge variant="card" /> : null}
+        {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="card" /> : null}
       </Link>
 
       <a

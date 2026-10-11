@@ -392,7 +392,7 @@ function ExperienceCard({ tour }: { tour: Tour }) {
               Promo
             </span>
           ) : null}
-          {isInsuredTour(tour.slug) ? <InsuranceBadge variant="card" /> : null}
+          {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="card" /> : null}
         </div>
         <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-accent-gold-dark mb-2">
           {getTourCategoryLabel(tour.category)}

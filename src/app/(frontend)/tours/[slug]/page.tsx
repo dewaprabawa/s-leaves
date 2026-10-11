@@ -1091,7 +1091,7 @@ export default async function TourPage({ params }: Props) {
                       variant="hero"
                     />
                   ) : null}
-                  {isInsuredTour(tour.slug) ? <InsuranceBadge variant="hero" /> : null}
+                  {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="hero" /> : null}
                 </div>
 
                 {tour.heroThumbnails?.length ? <TourPhotoGrid photos={tour.heroThumbnails} /> : null}
@@ -1106,7 +1106,7 @@ export default async function TourPage({ params }: Props) {
                       variant="inline"
                     />
                   ) : null}
-                  {isInsuredTour(tour.slug) ? <InsuranceBadge variant="inline" /> : null}
+                  {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="inline" /> : null}
                   {isSwingTour(tour) ? (
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
                       Include shuttle — must

@@ -29,6 +29,7 @@ import {
 } from "lucide-react"
 import { KnowBeforeCards } from "@/components/KnowBeforeCards"
 import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
+import InsuranceBadge, { isInsuredTour } from "@/components/InsuranceBadge"
 import {
   atvWhatYouGetItems,
   atvWhatToBringItems,
@@ -391,6 +392,7 @@ function ExperienceCard({ tour }: { tour: Tour }) {
               Promo
             </span>
           ) : null}
+          {isInsuredTour(tour.slug) ? <InsuranceBadge variant="card" /> : null}
         </div>
         <p className="text-[11px] font-bold uppercase tracking-[0.14em] text-accent-gold-dark mb-2">
           {getTourCategoryLabel(tour.category)}

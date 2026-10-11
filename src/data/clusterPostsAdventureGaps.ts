@@ -74,17 +74,17 @@ Lunch, helmet, gear, guide, and insurance are inside every activity price. One p
   {
     slug: 'bali-atv-rafting-jeep-with-kids-2026',
     title: 'Bali ATV, Rafting & Batur Jeep with Kids (2026): Ages, Tandem, Child Prices',
-    seoTitle: 'Bali ATV & Rafting with Kids | Ages 6+ · Prices',
+    seoTitle: 'Bali ATV & Rafting with Kids | Ages, Child Prices',
     excerpt:
-      'Can kids do ATV, rafting, or the Mount Batur jeep in Bali? Insurance covers ages 6–65. Child ATV 700K, child rafting 450K, tandem quads for younger riders, and a no-hike sit-in jeep for families.',
+      'Can kids do ATV, rafting, or the Mount Batur jeep in Bali? ATV and jeep from 6, rafting typically 7+; insurance covers ages 6–65. Child ATV 700K, child rafting 450K, tandem quads, and a no-hike sit-in jeep.',
     publishedAt: '2026-10-08',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/rafting-ayung-paddle-team.jpg',
     content: `
-**Can children do ATV and rafting in Bali?** Yes — from **age 6**. Sekar Bali Activity's [ATV](/tours/bali-atv-adventure), [Ayung River rafting](/tours/whitewater-rafting), and [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) all include **insurance for ages 6–65**. Children pay **IDR 700,000** for a child single ATV and **IDR 450,000** for rafting. Younger or smaller kids usually ride **tandem** — a parent drives, the child sits behind. Under 6? Message us first; those three activities are not the right fit. WhatsApp — **no payment to inquire**.
+**Can children do ATV and rafting in Bali?** Yes. ATV and the Mount Batur jeep start at **age 6**; Ayung rafting is typically **age 7+** with basic swimming confidence. Sekar Bali Activity's [ATV](/tours/bali-atv-adventure), [Ayung River rafting](/tours/whitewater-rafting), and [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) all include **insurance for ages 6–65**. Children pay **IDR 700,000** for a child single ATV and **IDR 450,000** for rafting. Younger or smaller kids usually ride **tandem** — a parent drives, the child sits behind. Under 6? Message us first; those three activities are not the right fit. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
-> - **Minimum age:** **6** for ATV, rafting, and the jeep (insurance covers ages 6–65)
+> - **Minimum age:** **6** for ATV and the jeep · rafting typically **7+** with basic swimming confidence (insurance covers ages 6–65)
 > - **Child prices:** ATV child single **700,000** · rafting child **450,000** · tandem quad **1,100,000** per bike
 > - **Young kids on ATV:** usually **tandem** with a parent — the arena team confirms at the briefing
 > - **Rafting:** Class II–III Ayung — beginner water, with guide, helmet, and life jacket
@@ -96,7 +96,7 @@ Lunch, helmet, gear, guide, and insurance are inside every activity price. One p
 | --- | --- | --- | --- | --- |
 | [Bali ATV](/tours/bali-atv-adventure) — single | 6, if the arena clears them to drive | **700,000** | from 750,000 | Confident older kids |
 | [Bali ATV](/tours/bali-atv-adventure) — tandem | 6 (as passenger) | **1,100,000** per bike | 1,100,000 per bike | Parent + younger child |
-| [Ayung rafting](/tours/whitewater-rafting) | 6 | **450,000** | 450,000 each for 2+ | Families who can swim or float calmly |
+| [Ayung rafting](/tours/whitewater-rafting) | Typically 7, basic swimming confidence | **450,000** | 450,000 each for 2+ | Families who can swim or float calmly |
 | [Batur jeep — sit-in](/tours/batur-sunrise-jeep-tour) | 6 | Shared jeep price | 2,300,000 for 2 · 2,850,000 for 3 | Every age 6+ — no hike |
 | [Batur jeep — tracking](/tours/batur-sunrise-jeep-tour) | 6, with fitness | Shared jeep price | 1,800,000 for 2 · 750,000 each at 3+ | Active teens |
 
@@ -110,7 +110,7 @@ The track is **jungle mud and river crossings** — not caves or tunnels. Pack a
 
 ## Rafting with kids: is the Ayung River safe?
 
-**The Ayung is a beginner river.** It is **Class II–III** — splashy rapids, calm pools, and a guide steering every boat. Every rafter wears a **helmet and life jacket**, and insurance covers ages 6–65. Expect a walk down steps into the valley and a climb back up after the run; tell us if anyone in your group has mobility limits. In the wet season (November–March), the river runs higher — take the **08:30** or **11:00** slot ([rainy season rafting guide](/blog/bali-rafting-rainy-season-oct-dec-2026)).
+**The Ayung is a beginner river.** It is **Class II–III** — splashy rapids, calm pools, and a guide steering every boat. Every rafter wears a **helmet and life jacket**, and insurance covers ages 6–65. Children are typically **7+** on the river and should have basic swimming confidence — send ages and we confirm before you pay. Expect a walk down steps into the valley and a climb back up after the run; tell us if anyone in your group has mobility limits. In the wet season (November–March), the river runs higher — take the **08:30** or **11:00** slot ([rainy season rafting guide](/blog/bali-rafting-rainy-season-oct-dec-2026)).
 
 A family of 4 rafting with pickup: **4 × 450,000 + 400,000 = 2,200,000** IDR, lunch included.
 
@@ -120,7 +120,7 @@ A family of 4 rafting with pickup: **4 × 450,000 + 400,000 = 2,200,000** IDR, l
 
 ## A gentle family plan (3 days)
 
-1. **Day 1 — Rafting** in the morning (age 6+), afternoon pool at the hotel
+1. **Day 1 — Rafting** in the morning (typically age 7+), afternoon pool at the hotel
 2. **Day 2 — Rest day**
 3. **Day 3 — Sunset Batur jeep** (sit-in), back for dinner
 
@@ -243,7 +243,7 @@ The jeep price already includes island-wide pickup and breakfast. The ATV and ra
 
 ## Variations
 
-- **Families with children 6+:** sit-in jeep at **sunset**, rafting only on day 2 — [Bali adventures with kids](/blog/bali-atv-rafting-jeep-with-kids-2026)
+- **Families with children:** sit-in jeep at **sunset** (age 6+), rafting only on day 2 (typically 7+) — [Bali adventures with kids](/blog/bali-atv-rafting-jeep-with-kids-2026)
 - **Staying in Seminyak or Canggu:** same plan, same flat pickup — [ATV and rafting from south Bali](/blog/atv-rafting-from-seminyak-canggu-kuta-2026)
 - **Hikers:** take the tracking jeep — or compare the summit trek in [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek)
 - **Riders:** swap day 2 for the [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)

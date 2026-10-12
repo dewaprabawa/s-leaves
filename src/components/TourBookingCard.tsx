@@ -29,8 +29,10 @@ import {
 } from "@/data/licensedGuide"
 import {
   ATV_PREMIUM_DISCOUNT_PERCENT,
+  ALL_ATV_PREMIUM_PACKAGES,
   ATV_PREMIUM_PACKAGES,
   ATV_PREMIUM_SHUTTLE_COPY,
+  ATV_RAFTING_PREMIUM_PACKAGES,
   ATV_PREMIUM_SLUG,
 } from "@/data/atvPremium"
 import {
@@ -220,9 +222,9 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   }
 
   if (props.tourSlug === ATV_PREMIUM_SLUG) {
-    return ATV_PREMIUM_PACKAGES.map((pkg) => ({
+    return ALL_ATV_PREMIUM_PACKAGES.map((pkg) => ({
       id: `${props.tourId}-${pkg.key}`,
-      title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"} + 1 tandem + private shuttle · ${pkg.guests} guests`,
+      title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"}${pkg.tandems ? " + 1 tandem" : ""}${pkg.rafters ? " + rafting" : ""} + private shuttle · ${pkg.guests} guests`,
       times: DEFAULT_TIMES,
       adultPrice: pkg.priceIdr,
       kidPrice: null,
@@ -360,7 +362,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
       : props.tourSlug === "bali-atv-adventure"
         ? `${props.title} — single from ${formatIdr(props.basePrice)}`
         : props.tourSlug === ATV_PREMIUM_SLUG
-          ? `${props.title} — ${ATV_PREMIUM_PACKAGES.map((pkg) => `${pkg.name} ${formatIdr(pkg.priceIdr)}`).join(" · ")}`
+          ? `${props.title} — ${ALL_ATV_PREMIUM_PACKAGES.map((pkg) => `${pkg.name} ${formatIdr(pkg.priceIdr)}`).join(" · ")}`
         : props.tourSlug === "atv-rafting-combo"
           ? `${props.title} — from ${formatIdr(props.basePrice)} (ATV 750K + rafting 500K · 10% mix)`
           : props.title
@@ -515,16 +517,34 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             </p>
           ) : null}
           {isAtvPremium ? (
-            <ul className="mt-2 space-y-1 text-sm text-brand-green-light">
-              {ATV_PREMIUM_PACKAGES.map((pkg) => (
-                <li key={pkg.key}>
-                  <span className="font-semibold text-brand-green">{pkg.name}</span> · {pkg.guests} guests ·{" "}
-                  <span className="font-semibold text-brand-green">{formatIdr(pkg.priceIdr)}</span>{" "}
-                  <span className="line-through opacity-70">{formatIdr(pkg.partsIdr)}</span>
-                </li>
+            <div className="mt-2 space-y-2 text-sm text-brand-green-light">
+              {[
+                { label: "ATV · singles + 1 tandem", packages: ATV_PREMIUM_PACKAGES },
+                { label: "Land & River · single ATV + rafting", packages: ATV_RAFTING_PREMIUM_PACKAGES },
+              ].map((set) => (
+                <div key={set.label}>
+                  <p className="text-[11px] font-bold uppercase tracking-wider text-brand-green">{set.label}</p>
+                  <ul className="space-y-0.5">
+                    {set.packages.map((pkg) => (
+                      <li key={pkg.key}>
+                        {pkg.guests} guests ·{" "}
+                        <span className="font-semibold text-brand-green">{formatIdr(pkg.priceIdr)}</span>{" "}
+                        <span className="line-through opacity-70">{formatIdr(pkg.partsIdr)}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-              <li className="pt-1">Per package, not per person · private shuttle for your group only.</li>
-            </ul>
+              <p>Per package, not per person · private shuttle for your group only.</p>
+            </div>
+          ) : null}
+          {props.tourSlug === "atv-rafting-combo" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              <Link href={`/tours/${ATV_PREMIUM_SLUG}`} className="font-semibold text-brand-green underline-offset-2 hover:underline">
+                Want a private shuttle? Land & River premium from {formatIdr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)} for{" "}
+                {ATV_RAFTING_PREMIUM_PACKAGES[0].guests}
+              </Link>
+            </p>
           ) : null}
           {props.tourSlug === "swing-heaven-bali" ? (
             <>

@@ -138,6 +138,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'private ATV package Bali',
       'group ATV package Ubud',
       'ATV package with private transfer Bali',
+      'ATV rafting premium package Bali',
     ],
     book: [
       'ATV package Bali price 2026',
@@ -146,6 +147,8 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'ATV Bali with hotel pickup',
       'ATV for 3 4 5 people Bali',
       'private shuttle ATV Ubud',
+      'ATV and rafting package with private transfer',
+      'ATV rafting package for 2 Bali',
     ],
     compare: [
       'ATV package vs booking separately',
@@ -831,6 +834,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'atv-premium-package-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'group-atv-package-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'atv-package-private-transfer-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'atv-rafting-premium-package-2026': ['atv-premium-package-bali', 'atv-rafting-combo'],
   'licensed-tour-guide-bali-2026': 'licensed-tour-guide-bali',
   'japanese-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
   'french-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
@@ -902,6 +906,12 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'ATV for 4 people Ubud',
     'ATV for 5 people Bali',
     'family ATV Ubud tandem',
+  ],
+  'atv-rafting-premium-package-2026': [
+    'ATV rafting package Bali 2026',
+    'ATV and rafting with private driver',
+    'Land and River package Ubud',
+    'ATV rafting no tubing',
   ],
   'atv-package-private-transfer-bali-2026': [
     'ATV Bali from Seminyak private transfer',

@@ -1,6 +1,86 @@
-/** Commercial spokes for the ATV premium package: package prices, group set-ups, and the private transfer. */
+/** Commercial spokes for the ATV premium packages: ATV-only and Land & River prices, group set-ups, and the private transfer. */
 
 export const ATV_PREMIUM_CLUSTER_POSTS = [
+  {
+    slug: 'atv-rafting-premium-package-2026',
+    title: 'ATV + Rafting Premium Package (2026): Land & River With a Private Shuttle, 10% Off',
+    seoTitle: 'ATV + Rafting Premium Package Bali 2026 | Private Car',
+    excerpt:
+      'Land & River: a single ATV and Ayung River rafting for every guest, with a private shuttle just for your group all day. 2 guests IDR 2,475,000, 3 guests IDR 3,465,000, 4 guests IDR 4,500,000 — 10% off booking separately. No tubing.',
+    publishedAt: '2026-10-12',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/rafting-ayung-paddle-team.jpg',
+    content: `
+**What is the Land & River premium package?** It is our ATV + rafting day with your own car: every guest rides a **single ATV** at All New Bali Adventure, then rafts the **Ayung River** (Class II–III) after lunch, with a **private shuttle just for your group** from hotel pickup to drop-off. **2 guests IDR 2,475,000 · 3 guests IDR 3,465,000 · 4 guests IDR 4,500,000** — 10% off booking the same parts separately. No tubing. [Choose Land & River](/tours/atv-premium-package-bali) — WhatsApp, **no payment to inquire**.
+
+> **Key Takeaways**
+> - **Land & River Duo** — 2 guests: **IDR 2,475,000**
+> - **Land & River Trio** — 3 guests: **IDR 3,465,000**
+> - **Land & River Squad** — 4 guests: **IDR 4,500,000**
+> - Every guest gets a **single ATV + Ayung rafting**; the **private shuttle** is yours alone all day
+> - Lunch, gear, guides, and insurance (ages 6–65) included · plan **5–7 hours** door to door
+
+## The three packages (2026 IDR)
+
+Prices are **per package**, not per person.
+
+| Package | Guests | Includes | Premium price | About per guest |
+| --- | --- | --- | --- | --- |
+| **Land & River Duo** | 2 | 2 single ATVs + rafting for 2 | **2,475,000** | 1,237,500 |
+| **Land & River Trio** | 3 | 3 single ATVs + rafting for 3 | **3,465,000** | 1,155,000 |
+| **Land & River Squad** | 4 | 4 single ATVs + rafting for 4 | **4,500,000** | 1,125,000 |
+
+## The 10% math
+
+Each package is priced from our published 2026 rates, then **10% off the total — shuttle included**:
+
+| Package | Single ATVs | Rafting | Hotel pickup | Separately | Premium | You save |
+| --- | --- | --- | --- | --- | --- | --- |
+| Duo | 2 × 725,000 | 2 × 450,000 | 400,000 | 2,750,000 | **2,475,000** | 275,000 |
+| Trio | 3 × 700,000 | 3 × 450,000 | 400,000 | 3,850,000 | **3,465,000** | 385,000 |
+| Squad | 4 × 700,000 | 4 × 450,000 | 400,000 | 5,000,000 | **4,500,000** | 500,000 |
+
+## Land & River vs our standard ATV + rafting combo
+
+We also sell a [standard ATV + rafting combo](/tours/atv-rafting-combo): **10% off the activities**, with the IDR 400,000 hotel pickup added on top or a free self-meet. Here is the honest comparison:
+
+| Guests | Standard combo + pickup | Standard combo, self-meet | Land & River (private shuttle) |
+| --- | --- | --- | --- |
+| 2 | 2,515,000 | 2,115,000 | **2,475,000** |
+| 3 | 3,505,000 | 3,105,000 | **3,465,000** |
+| 4 | 4,540,000 | 4,140,000 | **4,500,000** |
+
+**Pick Land & River** if you want hotel pickup: it is a little cheaper than the combo plus pickup, the car is yours alone for the day, and the price is fixed before you go.
+
+**Pick the standard combo** if you already have a driver (self-meet is the cheapest way to do both), or if a couple would rather share a [tandem ATV](/blog/atv-tandem-rafting-ubud-2026) — tandem plus two rafting seats is IDR 1,800,000 after the 10% mix.
+
+## How the day runs
+
+1. **Pickup** — your private shuttle collects the group at your hotel.
+2. **ATV** — boot shoes, helmets, and the safety briefing at All New Bali Adventure in Sedang, then a **1.5-hour** ride through jungle mud and river crossings.
+3. **Lunch** — change into dry clothes and eat.
+4. **Rafting** — the same shuttle drives you to the **Ayung River** for Class II–III rafting with a river guide, helmet, and life jacket.
+5. **Home** — dry off, and the shuttle takes you back to your hotel.
+
+Plan **5–7 hours** door to door, longer from south Bali. Take a morning start — from Seminyak, Canggu, or Kuta the drive is about 1–1.5 hours each way ([drive times](/blog/atv-package-private-transfer-bali-2026)).
+
+## Ages and who it suits
+
+ATV starts at **age 6**; Ayung rafting is typically **age 7+** with basic swimming confidence. Insurance covers **ages 6–65**. Send every guest's age on WhatsApp before you book. Families with younger kids: [ATV, rafting and jeep with kids](/blog/bali-atv-rafting-jeep-with-kids-2026).
+
+Land & River suits friends, couples travelling together, and families with older kids who all want to drive their own quad. If one guest would rather ride behind someone, see the ATV-only [premium packages with a tandem](/blog/atv-premium-package-bali-2026).
+
+## Questions
+
+**Is tubing included?** No. Land & River is ATV and Ayung **rafting** only. Wos River tubing is a different, gentler river — [compare rafting and tubing](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+
+**Can we book Land & River for 5 or more?** The packages are set at 2, 3 and 4 guests. Larger groups book the [standard combo](/tours/atv-rafting-combo) and we confirm transport on WhatsApp.
+
+**Can one guest skip rafting?** Then it is a different mix — book on the standard combo page and tell us who rafts.
+
+**Ready?** [Book Land & River](/tours/atv-premium-package-bali) — pick Duo, Trio or Squad, drop your hotel pin, and we confirm the pickup time on WhatsApp.
+`,
+  },
   {
     slug: 'atv-premium-package-bali-2026',
     title: 'ATV Premium Package Bali (2026): Singles + Tandem + Private Shuttle, 10% Off',
@@ -67,7 +147,7 @@ The premium package rides the same track as our [standard ATV ride](/tours/bali-
 
 **We are 2, or 6 and more. Is there a package?** The packages are for 3, 4 and 5 guests. Other group sizes book singles and tandems on the standard page.
 
-**Can we add rafting?** The premium package is ATV only. For a land-and-water day, see the [ATV + Ayung rafting combo](/tours/atv-rafting-combo).
+**Can we add rafting?** Yes — pick a **Land & River** package instead: a single ATV and Ayung rafting for every guest, with the same private shuttle. 2 guests IDR 2,475,000, 3 guests IDR 3,465,000, 4 guests IDR 4,500,000. No tubing. [Land & River explained](/blog/atv-rafting-premium-package-2026).
 
 More planning: [group ATV package for 3, 4 or 5](/blog/group-atv-package-ubud-2026) · [ATV with a private transfer](/blog/atv-package-private-transfer-bali-2026).
 

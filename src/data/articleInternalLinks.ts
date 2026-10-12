@@ -75,6 +75,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'ATV premium package 2026', href: '/blog/atv-premium-package-bali-2026' },
     { title: 'Group ATV package for 3–5', href: '/blog/group-atv-package-ubud-2026' },
     { title: 'ATV with a private transfer', href: '/blog/atv-package-private-transfer-bali-2026' },
+    { title: 'ATV + rafting premium (Land & River)', href: '/blog/atv-rafting-premium-package-2026' },
     { title: 'ATV for beginners', href: '/blog/bali-atv-for-beginners-first-time-guide' },
     { title: 'All New Bali Adventure location', href: '/blog/bali-atv-all-new-bali-adventure-location-guide' },
     { title: 'Mud track vs cave/tunnel', href: '/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel' },
@@ -98,6 +99,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   rafting: [
     { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV + rafting combo (flagship)', href: '/blog/atv-rafting-combo-ubud-2026' },
+    { title: 'ATV + rafting premium (private shuttle)', href: '/blog/atv-rafting-premium-package-2026' },
     { title: 'ATV tandem + rafting (couple)', href: '/blog/atv-tandem-rafting-ubud-2026' },
     { title: 'Ayung rafting Ubud price 2026', href: '/blog/rafting-ubud-price-2026' },
     { title: 'Ayung River rafting guide', href: '/blog/bali-whitewater-rafting-near-ubud-guide' },
@@ -271,6 +273,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'atv-premium-package-bali-2026': 'atv',
   'group-atv-package-ubud-2026': 'atv',
   'atv-package-private-transfer-bali-2026': 'atv',
+  'atv-rafting-premium-package-2026': 'rafting',
   'bali-atv-for-beginners-first-time-guide': 'atv',
   'how-much-does-atv-cost-bali-ubud-2026': 'atv',
   'ubud-quad-biking-price-2026': 'atv',

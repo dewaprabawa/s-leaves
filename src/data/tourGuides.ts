@@ -27,6 +27,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'From Seminyak, Canggu, Kuta or Ubud — drive times and what the private car means.',
     },
     {
+      title: 'ATV + rafting premium (Land & River)',
+      href: '/blog/atv-rafting-premium-package-2026',
+      blurb: 'Single ATV + Ayung rafting for 2, 3 or 4, with your own car all day.',
+    },
+    {
       title: 'Single vs tandem ATV',
       href: '/blog/tandem-atv-ubud-price',
       blurb: 'How tandem riding works and who should share a bike.',
@@ -65,6 +70,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'atv-rafting-combo': [
+    {
+      title: 'Premium Land & River package',
+      href: '/blog/atv-rafting-premium-package-2026',
+      blurb: 'Single ATV + rafting for 2, 3 or 4 with a private shuttle — 10% off all in.',
+    },
     {
       title: '2-day plan: jeep + ATV + rafting',
       href: '/blog/ubud-2-day-adventure-plan-jeep-atv-rafting-2026',

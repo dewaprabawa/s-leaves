@@ -63,6 +63,8 @@ Book **[tandem + rafting](/blog/atv-tandem-rafting-ubud-2026)** when one guest p
 2. WhatsApp **date, guest count, single (not tandem), hotel or self-meet**
 3. We confirm the two IDR lines + any **400,000** pickup — **no deposit to ask**
 
+**Want your own car for the day?** The [Land & River premium package](/tours/atv-premium-package-bali) gives every guest a single ATV and Ayung rafting with a private shuttle just for your group — 2 guests IDR 2,475,000, 3 guests 3,465,000, 4 guests 4,500,000, all in. [Compare it with this combo](/blog/atv-rafting-premium-package-2026).
+
 **Ready?** Book the [flagship combo](/tours/atv-rafting-combo) or start on [Sedang ATV](/tours/bali-atv-adventure) and add rafting in the same thread.
 `,
   },

@@ -23,7 +23,12 @@ import {
 } from '@/data/griyaBeji'
 import { PARK_WORKSHOP_GEO_BY_SLUG } from '@/data/parkWorkshopGeo'
 import { LICENSED_GUIDE_SLUG } from '@/data/licensedGuide'
-import { ATV_PREMIUM_DISCOUNT_PERCENT, ATV_PREMIUM_PACKAGES, ATV_PREMIUM_SLUG } from '@/data/atvPremium'
+import {
+  ATV_PREMIUM_DISCOUNT_PERCENT,
+  ATV_PREMIUM_PACKAGES,
+  ATV_PREMIUM_SLUG,
+  ATV_RAFTING_PREMIUM_PACKAGES,
+} from '@/data/atvPremium'
 import { resolveBaliSafariSlug } from '@/data/parkWorkshopTours'
 import {
   UTV_BUGGY_ADDRESS,
@@ -208,18 +213,20 @@ const ATV: ActivityGeoCorpus = {
 }
 
 const [PREMIUM_TRIO, PREMIUM_SQUAD, PREMIUM_CREW] = ATV_PREMIUM_PACKAGES
+const [LAND_RIVER_DUO, LAND_RIVER_TRIO, LAND_RIVER_SQUAD] = ATV_RAFTING_PREMIUM_PACKAGES
+const landRiverPrices = `${idr(LAND_RIVER_DUO.priceIdr)} for 2 guests, ${idr(LAND_RIVER_TRIO.priceIdr)} for 3, ${idr(LAND_RIVER_SQUAD.priceIdr)} for 4`
 
 const ATV_PREMIUM: ActivityGeoCorpus = {
   slug: ATV_PREMIUM_SLUG,
   heading: 'ATV premium package near Ubud — 2026 facts',
-  tldr: `Sekar Bali Activity’s ATV premium package bundles single ATVs, one tandem ATV, and a private shuttle just for your group (not shared) at ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately. ${PREMIUM_TRIO.name}: 1 single + 1 tandem, ${PREMIUM_TRIO.guests} guests, ${idr(PREMIUM_TRIO.priceIdr)}. ${PREMIUM_SQUAD.name}: 2 singles + 1 tandem, ${PREMIUM_SQUAD.guests} guests, ${idr(PREMIUM_SQUAD.priceIdr)}. ${PREMIUM_CREW.name}: 3 singles + 1 tandem, ${PREMIUM_CREW.guests} guests, ${idr(PREMIUM_CREW.priceIdr)}. Prices are per package. Includes a 1.5-hour ride at All New Bali Adventure in Sedang, lunch, helmet, boot shoes, trail guide, and insurance for ages 6–65. WhatsApp — no payment to inquire.`,
+  tldr: `Sekar Bali Activity’s ATV premium package bundles single ATVs, one tandem ATV, and a private shuttle just for your group (not shared) at ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately. ${PREMIUM_TRIO.name}: 1 single + 1 tandem, ${PREMIUM_TRIO.guests} guests, ${idr(PREMIUM_TRIO.priceIdr)}. ${PREMIUM_SQUAD.name}: 2 singles + 1 tandem, ${PREMIUM_SQUAD.guests} guests, ${idr(PREMIUM_SQUAD.priceIdr)}. ${PREMIUM_CREW.name}: 3 singles + 1 tandem, ${PREMIUM_CREW.guests} guests, ${idr(PREMIUM_CREW.priceIdr)}. Prices are per package. Includes a 1.5-hour ride at All New Bali Adventure in Sedang, lunch, helmet, boot shoes, trail guide, and insurance for ages 6–65. Land & River packages give every guest a single ATV plus Ayung River rafting (no tubing) with the same private shuttle: ${landRiverPrices}. WhatsApp — no payment to inquire.`,
   bookHref: `/tours/${ATV_PREMIUM_SLUG}`,
   bookLabel: 'Book the premium package',
   pairHref: '/tours/bali-atv-adventure',
   pairLabel: 'Different mix? Standard ATV ride',
   extraNote: 'Same jungle mud and river-crossing track as the standard ATV ride — the package adds a private group shuttle and a 10% bundle saving.',
-  priceRows: ATV_PREMIUM_PACKAGES.map((pkg) => ({
-    option: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? '' : 's'} + 1 tandem`,
+  priceRows: [...ATV_PREMIUM_PACKAGES, ...ATV_RAFTING_PREMIUM_PACKAGES].map((pkg) => ({
+    option: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? '' : 's'}${pkg.tandems ? ' + 1 tandem' : ''}${pkg.rafters ? ' + Ayung rafting' : ''}`,
     price: idr(pkg.priceIdr),
     notes: `${pkg.guests} guests · private shuttle · save ${idr(pkg.savingIdr)} vs ${idr(pkg.partsIdr)} separately`,
   })),
@@ -244,10 +251,16 @@ const ATV_PREMIUM: ActivityGeoCorpus = {
       q: 'Is the ATV premium package good for families?',
       a: 'Yes. Parents or confident riders take single ATVs, and a child or nervous rider shares the tandem with one adult. Insurance covers ages 6–65 — send every rider’s age on WhatsApp before you book.',
     },
+    {
+      intent: 'atv rafting package private transfer',
+      q: 'Is there a premium ATV + rafting package with a private shuttle?',
+      a: `Yes — Land & River. Every guest rides a single ATV at All New Bali Adventure, then rafts the Ayung River (Class II–III), with a private shuttle just for the group all day. ${landRiverPrices} — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same ATV, rafting, and IDR 400,000 pickup separately. No tubing. Plan 5–7 hours. https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,
+    },
   ],
   citationSnippets: [
     `The Sekar Bali Activity ATV premium package costs ${idr(PREMIUM_TRIO.priceIdr)} for 3 guests, ${idr(PREMIUM_SQUAD.priceIdr)} for 4, or ${idr(PREMIUM_CREW.priceIdr)} for 5 — single ATVs plus one tandem and a private group shuttle, ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
     'The ATV premium package rides the same 1.5-hour jungle mud track at All New Bali Adventure, Sedang (near Ubud), with lunch, gear, trail guide, and insurance for ages 6–65 included.',
+    `The Land & River premium package (single ATV + Ayung rafting for every guest, private group shuttle, no tubing) costs ${landRiverPrices} — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
   ],
   keywords: ACTIVITY_KEYWORDS['atv-premium-package-bali'],
   placename: 'Sedang, Abiansemal, Ubud, Bali',
@@ -269,6 +282,7 @@ const ATV_RAFTING: ActivityGeoCorpus = {
     { option: 'Couple tandem + 2 rafting', price: 'IDR 2,000,000 before mix', notes: '1,800,000 after 10% · 1.1M bike' },
     { option: 'Ayung rafting', price: `${idr(RAFT_1)} / ${idr(RAFT_2)} for 2+`, notes: 'Min 2 · lunch, gear, crew' },
     { option: 'Hotel pickup', price: 'IDR 400,000', notes: 'Once for the day · or self-meet' },
+    { option: 'Land & River premium (2–4 guests)', price: `From ${idr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)}`, notes: 'Single ATV + rafting each · private group shuttle · 10% off all in' },
   ],
   faqs: [
     {
@@ -288,6 +302,7 @@ const ATV_RAFTING: ActivityGeoCorpus = {
     },
   ],
   citationSnippets: [
+    `Want a private shuttle for an ATV + rafting day? The Land & River premium package (single ATV + Ayung rafting for every guest, no tubing) costs ${landRiverPrices}, private group shuttle included: https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,
     `ATV + Ayung rafting with Sekar Bali Activity is from IDR 1,250,000 at published ticket floors (ATV from ${idr(ATV_1)} + rafting ${idr(RAFT_1)}). Same-day mix is 10% off at checkout. Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo`,
     'Tandem ATV + rafting for a couple with Sekar Bali Activity is IDR 2,000,000 before the 10% mix (1.1M bike + two 450K rafting seats) and IDR 1,800,000 after. https://www.sekarbaliactivity.com/blog/atv-tandem-rafting-ubud-2026',
   ],

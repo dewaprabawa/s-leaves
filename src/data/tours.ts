@@ -402,17 +402,17 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
   },
   {
     id: "atv-premium-package-bali",
-    title: "ATV Premium Package near Ubud — Singles + Tandem + Private Shuttle",
+    title: "ATV Premium Packages near Ubud — ATV or ATV + Rafting, Private Shuttle",
     slug: "atv-premium-package-bali",
     category: "adventure",
     area: "Sedang / Ubud",
     venue: "All New Bali Adventure, Sedang",
     pickup: "Private group shuttle included — hotel pickup + return",
-    duration: "1.5 Hours (ride) + shuttle",
+    duration: "1.5 Hours (ride) + shuttle · 5–7 hrs with rafting",
     basePrice: 2025000,
-    seoTitle: "ATV Premium Package Bali | Private Shuttle · 10% Off",
+    seoTitle: "ATV Premium Package Bali | + Rafting · Private Shuttle",
     seoDescription:
-      "Bali ATV premium package for 3–5 guests: singles + 1 tandem + a private shuttle just for your group. From IDR 2,025,000 — 10% off booking separately.",
+      "Bali ATV premium packages with a private shuttle for your group: singles + tandem from IDR 2,025,000, or ATV + Ayung rafting from 2,475,000. 10% off.",
     heroImage: {
       url: "/images/adventures/atv-arena-quad-fleet.jpg",
       alt: "Sport ATV quad bikes lined up for a private group at All New Bali Adventure in Sedang",
@@ -436,7 +436,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
       },
     ],
     shortDescription:
-      "The ATV day, done properly for a group of 3, 4 or 5: single ATVs for the riders who want their own bike, one tandem for two who share, and a private shuttle just for your group. Lunch, gear, guide and insurance included. From IDR 2,025,000 per package — 10% off booking the same parts separately.",
+      "The ATV day, done properly for your group, with a private shuttle just for you. ATV packages for 3, 4 or 5 (singles + one tandem) from IDR 2,025,000, or Land & River packages for 2, 3 or 4 (a single ATV and Ayung rafting for everyone) from IDR 2,475,000. Lunch, gear, guides and insurance included — 10% off booking the same parts separately.",
     fullDescription: `**The Premium ATV Package — your group, your car, your ride**
 
 Riding with friends or family where one person would rather sit behind than drive? The premium package puts everyone on the right bike — **single ATVs** for the confident riders and **one tandem** for two who share — and adds a **private shuttle for your group only**. One price, one booking, **10% off** what the same parts cost separately.
@@ -451,6 +451,17 @@ Price is per package, not per person.
 | **Premium Crew** | 5 | 3 singles + 1 tandem | IDR 3,600,000 | **IDR 3,240,000** | IDR 360,000 |
 
 "Booked separately" uses our published 2026 rates: single ATV IDR 750,000 (1 rider), 725,000 each (2), 700,000 each (3+), tandem IDR 1,100,000, and hotel pickup IDR 400,000 per booking.
+
+### Land & River: single ATV + Ayung rafting
+Every guest rides a single ATV in the morning, then rafts the Ayung River after lunch — one private shuttle for the whole day. No tubing.
+
+| Package | Guests | Includes | Booked separately | Premium price | You save |
+|---|---|---|---|---|---|
+| **Land & River Duo** | 2 | 2 single ATVs + rafting for 2 | IDR 2,750,000 | **IDR 2,475,000** | IDR 275,000 |
+| **Land & River Trio** | 3 | 3 single ATVs + rafting for 3 | IDR 3,850,000 | **IDR 3,465,000** | IDR 385,000 |
+| **Land & River Squad** | 4 | 4 single ATVs + rafting for 4 | IDR 5,000,000 | **IDR 4,500,000** | IDR 500,000 |
+
+"Booked separately" adds single ATVs at our tier rate, Ayung rafting at IDR 450,000 per person (2+), and the IDR 400,000 hotel pickup. Plan 5–7 hours door to door. More on the river: [Ayung River rafting](/tours/whitewater-rafting).
 
 ### What makes it premium
 - **A private shuttle that is yours alone.** Your own car and driver, not shared with other guests — hotel pickup, the drive to the arena, and the drive back after lunch.
@@ -469,25 +480,28 @@ The same jungle ATV track as our [standard ATV ride](/tours/bali-atv-adventure):
 - [ATV premium package Bali 2026](/blog/atv-premium-package-bali-2026) — the three packages and the math
 - [Group ATV package for 3, 4 or 5](/blog/group-atv-package-ubud-2026) — who rides single, who rides tandem
 - [ATV with a private transfer](/blog/atv-package-private-transfer-bali-2026) — from Seminyak, Canggu, Kuta or Ubud
+- [ATV + rafting premium package](/blog/atv-rafting-premium-package-2026) — Land & River for 2, 3 or 4
 - [Single vs tandem ATV](/blog/tandem-atv-ubud-price) — how tandem riding works
 
 Different mix of bikes? Book singles and tandems separately on the [ATV ride page](/tours/bali-atv-adventure).`,
     highlights: [
       "Private shuttle for your group only",
       "Singles + 1 tandem for 3, 4 or 5 guests",
+      "Land & River: single ATV + Ayung rafting for 2, 3 or 4",
       "10% off booking separately",
       "Lunch, helmet, boots & insurance for ages 6–65",
       "1.5-hour jungle mud ride at All New Bali Adventure",
     ],
     included: [
       "Private shuttle for your group only — hotel pickup and return",
-      "1.5-hour ATV ride (singles + 1 tandem)",
+      "1.5-hour ATV ride (singles + 1 tandem, or a single for every guest on Land & River)",
+      "Ayung River rafting, Class II–III (Land & River packages)",
       "Boot shoes & helmet",
       "Simple menu lunch",
       "Insurance for ages 6–65",
       "Safety briefing and trail guide",
     ],
-    notIncluded: ["River tubing or rafting (book the combo instead)", "Personal expenses", "Gratuities"],
+    notIncluded: ["River tubing", "Rafting on the ATV-only packages", "Personal expenses", "Gratuities"],
     itinerary: [
       {
         id: "iti-atv-premium-1",
@@ -514,6 +528,13 @@ Different mix of bikes? Book singles and tandems separately on the [ATV ride pag
         time: "Finish",
         title: "Lunch, then your shuttle home",
         description: "Change into dry clothes, simple menu lunch, then the same private shuttle takes you back to your hotel.",
+      },
+      {
+        id: "iti-atv-premium-5",
+        time: "Land & River",
+        title: "Ayung rafting after lunch",
+        description:
+          "On Land & River packages, the private shuttle takes you from the ATV arena to the Ayung River for Class II–III rafting with a river guide, then home.",
       },
     ],
     addons: [],
@@ -546,7 +567,13 @@ Different mix of bikes? Book singles and tandems separately on the [ATV ride pag
         id: "faq-atv-premium-5",
         question: "We have 2 guests, or 6 and more. Can we book a package?",
         answer:
-          "The packages are set at 3, 4 and 5 guests. For other group sizes or a different mix of bikes, book singles and tandems on the ATV ride page — single from IDR 750,000, tandem IDR 1,100,000, hotel pickup IDR 400,000 per booking.",
+          "Two guests can book Land & River Duo (single ATV + rafting, IDR 2,475,000). The ATV-only packages are set at 3, 4 and 5 guests. For other group sizes or a different mix of bikes, book singles and tandems on the ATV ride page — single from IDR 750,000, tandem IDR 1,100,000, hotel pickup IDR 400,000 per booking.",
+      },
+      {
+        id: "faq-atv-premium-7",
+        question: "Is there a premium ATV + rafting package?",
+        answer:
+          "Yes — Land & River. Every guest rides a single ATV, then rafts the Ayung River, with a private shuttle for the whole day. Duo (2 guests) IDR 2,475,000, Trio (3) IDR 3,465,000, Squad (4) IDR 4,500,000 — 10% off booking separately. Tubing is not included. Rafting is typically for ages 7+; insurance covers ages 6–65.",
       },
       {
         id: "faq-atv-premium-6",
@@ -615,6 +642,9 @@ Book the checkout mix: [ATV + rafting](/book?combo=combo-atv-rafting). Single-AT
 3. **Rafting** — Class II–III splash, lunch on the river ticket, dry clothes after.
 
 Beginner briefing on both tickets. No ATV licence. Rafting wants basic swimming confidence; ages typically **7+** on the river and insurance **6–65** on ATV.
+
+### Want your own car for the day?
+The [Land & River premium package](/tours/atv-premium-package-bali) bundles a single ATV and Ayung rafting for every guest with a **private shuttle just for your group** — 2 guests IDR 2,475,000, 3 guests IDR 3,465,000, 4 guests IDR 4,500,000, all in. That is 10% off the same ATV, rafting and pickup booked separately. No tubing.
 
 **Ready?** Open [book ATV + rafting](/book?combo=combo-atv-rafting) or WhatsApp **date, guest count, single or tandem, hotel pin**. No payment to inquire.`,
     highlights: [

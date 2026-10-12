@@ -52,8 +52,10 @@ import {
 } from "@/data/licensedGuide"
 import {
   ATV_PREMIUM_DISCOUNT_PERCENT,
+  ALL_ATV_PREMIUM_PACKAGES,
   ATV_PREMIUM_PACKAGES,
   ATV_PREMIUM_SLUG,
+  ATV_RAFTING_PREMIUM_PACKAGES,
 } from "@/data/atvPremium"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
@@ -689,7 +691,7 @@ function buildTourSchema(tour: Tour) {
   }
 
   if (tour.slug === ATV_PREMIUM_SLUG) {
-    const prices = ATV_PREMIUM_PACKAGES.map((pkg) => pkg.priceIdr)
+    const prices = ALL_ATV_PREMIUM_PACKAGES.map((pkg) => pkg.priceIdr)
     return {
       ...base,
       offers: {
@@ -698,11 +700,11 @@ function buildTourSchema(tour: Tour) {
         lowPrice: String(Math.min(...prices)),
         highPrice: String(Math.max(...prices)),
         priceCurrency: "IDR",
-        offerCount: ATV_PREMIUM_PACKAGES.length,
+        offerCount: ALL_ATV_PREMIUM_PACKAGES.length,
         availability: "https://schema.org/InStock",
         url: `${SITE_URL}/tours/${tour.slug}`,
         description: tour.included.join(", "),
-        offers: ATV_PREMIUM_PACKAGES.map((pkg) => ({
+        offers: ALL_ATV_PREMIUM_PACKAGES.map((pkg) => ({
           "@type": "Offer",
           name: `${pkg.name} — ${pkg.lineup}`,
           description: `${pkg.guests} guests · ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately`,
@@ -1335,8 +1337,9 @@ export default async function TourPage({ params }: Props) {
                     </span>
                   ) : tour.slug === ATV_PREMIUM_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">
-                      {ATV_PREMIUM_PACKAGES.map((pkg) => `${pkg.guests} guests ${formatIdr(pkg.priceIdr)}`).join(" · ")}{" "}
-                      per package
+                      ATV {ATV_PREMIUM_PACKAGES.map((pkg) => `${pkg.guests} guests ${formatIdr(pkg.priceIdr)}`).join(" · ")} ·
+                      ATV + rafting from {formatIdr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)} for{" "}
+                      {ATV_RAFTING_PREMIUM_PACKAGES[0].guests} · per package
                     </span>
                   ) : tour.slug === LICENSED_GUIDE_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">

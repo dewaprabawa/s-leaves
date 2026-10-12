@@ -92,6 +92,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/blog/tandem-atv-ubud-price',
     secondaryLabel: 'How tandem works',
   },
+  'atv-rafting-premium-package-2026': {
+    headline: 'Book Land & River with a private shuttle',
+    body: 'Single ATV + Ayung rafting for every guest, your own car all day. 2 guests IDR 2,475,000 · 3 guests 3,465,000 · 4 guests 4,500,000 — 10% off booking separately.',
+    primaryHref: '/tours/atv-premium-package-bali',
+    primaryLabel: 'Choose Land & River',
+    secondaryHref: '/tours/atv-rafting-combo',
+    secondaryLabel: 'Standard ATV + rafting',
+  },
   'atv-package-private-transfer-bali-2026': {
     headline: 'ATV with your own car and driver',
     body: 'Private shuttle from your hotel to All New Bali Adventure and back, not shared — included in every premium package from IDR 2,025,000.',

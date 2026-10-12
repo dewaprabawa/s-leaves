@@ -6,15 +6,15 @@ export const PARK_WORKSHOP_CLUSTER_POSTS = [
     title: 'Bali ATV vs UTV 2026: Sedang Quad or Pemogan Buggy?',
     seoTitle: 'ATV vs UTV Bali 2026 | 750K or 1.2M',
     excerpt:
-      'Sedang ATV from IDR 750,000 (sit-on quad, 2–4 hrs) vs Pemogan UTV 1.2M single / 1.5M tandem (sit-in, 1 hr / 7 km). Honest 2026 compare.',
+      'Sedang ATV from IDR 750,000 (sit-on quad, 1.5-hr ride) vs Pemogan UTV 1.2M single / 1.5M tandem (sit-in, 1 hr / 7 km). Honest 2026 compare.',
     publishedAt: '2026-09-30',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**Should you book a Bali ATV or a UTV buggy?** They are different machines at different pins. [ATV at All New Bali Adventure](/tours/bali-atv-adventure) is a **sit-on quad** on **jungle mud and river crossings** in **Sedang, Abiansemal** — single from **IDR 750,000**, tandem **IDR 1,100,000**, **2–4 hours**, lunch included. Hotel pickup is **IDR 400,000** or free self-meet. [UTV at Bali Buggy Adventures](/tours/utv-buggy-bali-adventure) is a **sit-in automatic buggy** in **Pemogan, South Denpasar** — about **1 hour / 7 km**, single **IDR 1,200,000** (driver 17+), tandem **IDR 1,500,000** (passenger 6+), lunch included. Pickup is **quoted**. WhatsApp — **no payment to inquire**.
+**Should you book a Bali ATV or a UTV buggy?** They are different machines at different pins. [ATV at All New Bali Adventure](/tours/bali-atv-adventure) is a **sit-on quad** on **jungle mud and river crossings** in **Sedang, Abiansemal** — single from **IDR 750,000**, tandem **IDR 1,100,000**, **1.5-hour ride**, lunch included. Hotel pickup is **IDR 400,000** or free self-meet. [UTV at Bali Buggy Adventures](/tours/utv-buggy-bali-adventure) is a **sit-in automatic buggy** in **Pemogan, South Denpasar** — about **1 hour / 7 km**, single **IDR 1,200,000** (driver 17+), tandem **IDR 1,500,000** (passenger 6+), lunch included. Pickup is **quoted**. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
-> - **ATV:** sit-on quad · Sedang (near Ubud) · **2–4 hours** · from **750,000** · pickup **400,000** or self-meet
+> - **ATV:** sit-on quad · Sedang (near Ubud) · **1.5-hour ride** · from **750,000** · pickup **400,000** or self-meet
 > - **UTV:** sit-in automatic · Pemogan (south Denpasar) · **1 hour / 7 km** · **1,200,000** / **1,500,000** · pickup quoted
 > - Two ATV singles at the 2-rider tier: **1,450,000**. ATV tandem: **1,100,000**. Two UTV singles: **2,400,000**. UTV tandem: **1,500,000**
 > - UTV **Crocodile Cave (Goa Buaya)** is a water-gate on the 7 km line — **not** Kuber’s 400 m Payangan cave
@@ -27,7 +27,7 @@ export const PARK_WORKSHOP_CLUSTER_POSTS = [
 | From price | **750,000** / rider · tandem **1,100,000** / bike | **1,200,000** single · **1,500,000** tandem |
 | What you ride | Sit-on four-wheel **quad** | Sit-in **automatic UTV** |
 | Where | All New Bali Adventure, Sedang | Bali Buggy Adventures, Pemogan |
-| Clock | **2–4 hours** (briefing, trail, lunch) | About **1 hour** on **7 km** |
+| Clock | **1.5-hour ride** (plus briefing and lunch) | About **1 hour** on **7 km** |
 | Lunch | Included | Fried rice or fried noodles included |
 | Pickup | **IDR 400,000** or self-meet | **Quoted** |
 | Driver age | Briefing; insurance **6–65** | Driver **17+** · passenger **6+** |
@@ -52,7 +52,7 @@ Want a cave Instagram tunnel? That is **Kuber in Payangan**, which we do **not**
 
 ## Who should book which
 
-Book **Sedang ATV** when you are staying near Ubud, you want a **2–4 hour mud morning**, and lunch is on the card. The flagship same-day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000**. Gentler water: [Wos River tubing](/blog/atv-river-tubing-wos-river-bali).
+Book **Sedang ATV** when you are staying near Ubud, you want a **1.5-hour mud ride**, and lunch is on the card. The flagship same-day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000**. Gentler water: [Wos River tubing](/blog/atv-river-tubing-wos-river-bali).
 
 Book **Pemogan UTV** when you want a **sit-in hour** near the south, a cabin instead of a saddle, or a driver-plus-passenger pair after a flight day.
 

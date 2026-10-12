@@ -15,7 +15,7 @@ export const MOTORBIKE_CLUSTER_POSTS = [
 
 > **Key Takeaways**
 > - Scooter: **IDR 450,000–800,000** / bike · 8–10 hours · temples, waterfalls, coasts
-> - ATV: **from IDR 750,000** / rider · 2–4 hours · mud, river crossings, lunch
+> - ATV: **from IDR 750,000** / rider · 1.5-hour ride · mud, river crossings, lunch
 > - Scooter pickup is at the **area you choose** · Canggu / Jimbaran / Nusa Dua shuttle **IDR 550,000**
 > - ATV pickup is **IDR 400,000** or self-meet at Sedang
 > - Not a dirt-bike enduro and not Kuber’s cave track
@@ -26,7 +26,7 @@ export const MOTORBIKE_CLUSTER_POSTS = [
 | --- | --- | --- |
 | From price | **450,000** promo / scooter (was 550,000) | **750,000** / rider · tandem **1,100,000** / bike |
 | What you ride | 125–160cc automatic on public roads | Four-wheel sport ATV on jungle mud |
-| How long | 8–10 hours | 2–4 hours |
+| How long | 8–10 hours | 1.5-hour ride (plus briefing and lunch) |
 | Lunch | Your own warung | Included |
 | Tickets | Extra at temples / falls | Arena day — no temple tickets |
 | Pickup | Chosen area · south shuttle **550,000** | **400,000** or self-meet |
@@ -322,7 +322,7 @@ Book the **dirt bike** when the point is lava dunes, not a viewpoint. Compare: [
 | --- | --- | --- |
 | Area | Sedang, Abiansemal | Br Bayad, Melinggih Kelod, Payangan |
 | Signature | Jungle mud + river crossings | 400 m natural cave (Premium) + waterfall |
-| Ride clock | **2–4 hours** package (briefing, trail, lunch) | About **60–90 minutes** on the track |
+| Ride clock | **1.5 hours** on the trail (plus briefing and lunch) | About **60–90 minutes** on the track |
 | Our published single | **750,000** (1) · **725,000** (2) · **700,000** (3+) | We do not sell it |
 | Market list (2026 guides) | — | Regular ~**650,000** · Premium ~**750,000** per ATV |
 | Lunch | Included | Listed as included on their site |

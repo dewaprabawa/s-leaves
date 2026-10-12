@@ -169,7 +169,7 @@ export const TOURS: Tour[] = [
     isTopPick: true,
     recommendedByTravelersPercent: 96,
     pickup: "IDR 400,000 hotel pickup or free self-meet",
-    duration: "2–4 Hours",
+    duration: "1.5 Hours (ride)",
     basePrice: 750000,
     childPrice: 700000,
     seoTitle: "Bali ATV Ubud | All New Bali Adventure · From 750K",
@@ -453,7 +453,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
 Book the checkout mix: [ATV + rafting](/book?combo=combo-atv-rafting). Single-ATV price story: [ATV + rafting Ubud 2026](/blog/atv-rafting-combo-ubud-2026). Couple share: [tandem ATV + rafting](/blog/atv-tandem-rafting-ubud-2026). Gentler water: [ATV + Wos tubing](/blog/atv-river-tubing-wos-river-bali). Sit-in hour instead of the quad: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026).
 
 ### How the day runs
-1. **ATV first** — briefing, mud track, lunch at Sedang (2–4 hours including kit).
+1. **ATV first** — briefing, 1.5-hour mud ride, lunch at Sedang.
 2. **Transfer** — we time the Ayung slot on WhatsApp. Same 400,000 pickup can cover both pins when you book the hotel collect.
 3. **Rafting** — Class II–III splash, lunch on the river ticket, dry clothes after.
 

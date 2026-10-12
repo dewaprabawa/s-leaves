@@ -101,7 +101,7 @@ const ATV: ActivityGeoCorpus = {
   pairLabel: 'Add Ayung rafting',
   extraNote: 'This is a jungle mud / river-crossing sport ATV track — not Gorilla Cave, Kuber tunnel, or a waterfall-cave park.',
   priceRows: [
-    { option: 'Single ATV (1 rider)', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 2–4 hours' },
+    { option: 'Single ATV (1 rider)', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 1.5-hour ride' },
     { option: 'Single ATV (2 riders)', price: `${idr(ATV_2)} / person`, notes: 'Same inclusions · group tier' },
     { option: 'Single ATV (3+)', price: `${idr(ATV_3)} / person`, notes: 'Best single-bike group rate' },
     { option: 'Tandem ATV (2 on one bike)', price: idr(TANDEM_1), notes: 'One driver + one passenger' },
@@ -215,7 +215,7 @@ const ATV_RAFTING: ActivityGeoCorpus = {
   extraNote: 'Rafting is Ayung Class II–III, not Wos River tubing. Two lunches sit on the two tickets.',
   priceRows: [
     { option: 'From-price (1 ATV + 1 rafting list)', price: 'IDR 1,250,000', notes: 'Published floors · mix 10% at checkout' },
-    { option: 'Single ATV', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 2–4 hours' },
+    { option: 'Single ATV', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 1.5-hour ride' },
     { option: 'Couple two singles + 2 rafting', price: 'IDR 2,350,000 before mix', notes: '2,115,000 after 10%' },
     { option: 'Couple tandem + 2 rafting', price: 'IDR 2,000,000 before mix', notes: '1,800,000 after 10% · 1.1M bike' },
     { option: 'Ayung rafting', price: `${idr(RAFT_1)} / ${idr(RAFT_2)} for 2+`, notes: 'Min 2 · lunch, gear, crew' },

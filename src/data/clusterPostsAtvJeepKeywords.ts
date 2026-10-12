@@ -56,7 +56,7 @@ Two more tips that show up in nearly every review: **wear clothes you can bin** 
 | Hotel pickup + drop-off | **400,000** per booking | Any hotel area · or self-meet |
 | [ATV + Ayung rafting combo](/tours/atv-rafting-combo) | from **1,250,000** | 10% off the two activities · one pickup |
 
-The ride runs **2–4 hours** including briefing, the track, and lunch. No licence needed — the English safety briefing covers throttle and brakes, and the ride is guided. Price detail: [how much an ATV costs in Bali](/blog/how-much-does-atv-cost-bali-ubud-2026).
+The ride is **1.5 hours** (single or tandem), plus briefing and lunch. No licence needed — the English safety briefing covers throttle and brakes, and the ride is guided. Price detail: [how much an ATV costs in Bali](/blog/how-much-does-atv-cost-bali-ubud-2026).
 
 ## Who should not book an ATV
 

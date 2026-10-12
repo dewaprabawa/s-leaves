@@ -10,6 +10,28 @@ export type TourRelatedGuide = {
 }
 
 export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
+  'licensed-tour-guide-bali': [
+    {
+      title: 'Licensed tour guide in Bali 2026',
+      href: '/blog/licensed-tour-guide-bali-2026',
+      blurb: 'Prices per booking, what the KTPP licence means, and guide-only vs driver-guide.',
+    },
+    {
+      title: 'Japanese-speaking guide',
+      href: '/blog/japanese-speaking-guide-bali-2026',
+      blurb: 'IDR 700,000 for 4 hours — with a short Japanese summary.',
+    },
+    {
+      title: 'French-speaking guide',
+      href: '/blog/french-speaking-guide-bali-2026',
+      blurb: 'IDR 750,000 for 4 hours — with a short French summary.',
+    },
+    {
+      title: 'Full day Ubud tour guide',
+      href: '/blog/full-day-ubud-tour-guide-2026',
+      blurb: 'Need a car too? Private car and driver, add this guide for the whole day.',
+    },
+  ],
   'atv-rafting-combo': [
     {
       title: '2-day plan: jeep + ATV + rafting',
@@ -550,6 +572,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'luwak-coffee-plantation': [
     {
+      title: 'Licensed guide only (no car)',
+      href: '/blog/licensed-tour-guide-bali-2026',
+      blurb: 'Same English / Japanese / French guide on its own — from 600K for 4 hours, +150K per extra hour.',
+    },
+    {
       title: 'Umah Kuno Luwak price 2026',
       href: '/blog/luwak-coffee-plantation-umah-kuno-price-2026',
       blurb: '850K solo, 550K each for 4+ · transport not included.',
@@ -571,6 +598,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'full-day-ubud-tour': [
+    {
+      title: 'Licensed guide only (no car)',
+      href: '/blog/licensed-tour-guide-bali-2026',
+      blurb: 'Same English / Japanese / French guide on its own — from 600K for 4 hours, +150K per extra hour.',
+    },
     {
       title: 'Motorbike trip vs private driver',
       href: '/blog/bali-motorbike-tour-vs-private-driver-2026',
@@ -793,6 +825,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Things to do near Ubud 2026', href: '/blog/things-to-do-near-ubud-2026', blurb: 'See the scooter next to cooking, jeep, and park tickets.' },
   ],
   'half-day-ubud-tanah-lot-tour': [
+    {
+      title: 'Licensed guide only (no car)',
+      href: '/blog/licensed-tour-guide-bali-2026',
+      blurb: 'Same English / Japanese / French guide on its own — from 600K for 4 hours, +150K per extra hour.',
+    },
     {
       title: 'Tanah Lot sunset half-day 2026',
       href: '/blog/half-day-ubud-tanah-lot-sunset-tour-2026',

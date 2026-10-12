@@ -56,10 +56,15 @@ export type TourOptionalAddon = {
   flat?: boolean
   /** Add-ons sharing a group are mutually exclusive (e.g. one licensed-guide language). */
   group?: string
+  /** Quantity cap independent of guest count (e.g. extra guide hours). */
+  maxQty?: number
+  /** Price suffix before selection; defaults to "per booking" / "per guest". */
+  unitLabel?: string
 }
 
 function addonMaxQty(addon: TourOptionalAddon, guestCount: number) {
   if (addon.flat) return 1
+  if (addon.maxQty) return addon.maxQty
   return Math.max(1, guestCount)
 }
 
@@ -103,6 +108,10 @@ export interface TourConfig {
   pricingActivityId?: string
   /** Per-person price by adult count for tours without a catalog tier table (index 0 = 1 guest; last applies to larger groups). */
   groupTierPricesIdr?: readonly number[]
+  /** adultPrice is charged once per booking, not per guest (licensed guide only). */
+  perBooking?: boolean
+  /** Replaces the "Hotel pickup included" copy when pickupIncluded is set (e.g. a guide who meets you). */
+  includedMeetCopy?: { title: string; body: string; short: string }
   /** Optional per-person add-ons (jeep hot spring, swing dress hire). Not mix-combo activities. */
   optionalAddons?: TourOptionalAddon[]
   /** Intro copy above optional add-ons. Defaults to jeep hot-spring text if omitted. */
@@ -305,6 +314,7 @@ export function BookingPopup({
     fallbackAdultPrice: activeTour.adultPrice,
     fallbackChildPrice: activeTour.kidPrice,
     fallbackTierPrices: activeTour.groupTierPricesIdr,
+    fallbackPerBooking: activeTour.perBooking,
   });
   const addonGuestCount = Math.max(1, adults) + kids
   const selectedAddons = (activeTour.optionalAddons ?? [])
@@ -473,7 +483,7 @@ export function BookingPopup({
           : 'Self-arranged — no operator pickup',
       );
     } else if (pickupIncluded) {
-      pickupNoteParts.push('Hotel pickup & drop-off included in tour price');
+      pickupNoteParts.push(activeTour.includedMeetCopy?.short ?? 'Hotel pickup & drop-off included in tour price');
     } else if (pickupFlatFee !== null) {
       pickupNoteParts.push(`Hotel shuttle +${formatIdr(pickupFlatFee)} (once per booking)`);
     } else if (hasFreeUbudPickup && !isOutUbud) {
@@ -489,6 +499,8 @@ export function BookingPopup({
         pickupNoteParts.unshift(
           `${label} · ${adults} riders (${q.tierLabel}): ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`,
         )
+      } else if (q.unitLabel === 'booking') {
+        pickupNoteParts.unshift(`${label} · ${formatIdr(q.unitPrice)} per booking · ${adults} guest(s)`)
       } else {
         pickupNoteParts.unshift(
           `${label} · ${q.tierLabel}: ${formatIdr(q.unitPrice)} × ${q.units} adult(s)`,
@@ -531,6 +543,11 @@ export function BookingPopup({
       if (q.activityId === 'tandem-atv') {
         lineItems.push({
           label: `${title} — ${adults} riders · ${q.units} ${q.unitLabel} × ${formatIdr(q.unitPrice)} (${q.tierLabel})`,
+          amount: q.activitySubtotal,
+        })
+      } else if (q.unitLabel === 'booking') {
+        lineItems.push({
+          label: `${title} — once per booking (${adults} guest${adults === 1 ? '' : 's'})`,
           amount: q.activitySubtotal,
         })
       } else {
@@ -738,7 +755,7 @@ export function BookingPopup({
                ) : pickupIncluded ? (
                  <span className="text-brand-green font-bold flex items-center gap-1">
                    <span className="w-2 h-2 rounded-full bg-brand-green"></span>
-                   Pickup included in tour price
+                   {activeTour.includedMeetCopy?.short ?? 'Pickup included in tour price'}
                  </span>
                ) : pickupFlatFee !== null ? (
                  <span className="text-red-600 font-bold block">Hotel shuttle {formatIdr(pickupFlatFee)} per booking</span>
@@ -899,7 +916,7 @@ export function BookingPopup({
                             </span>
                           ) : (
                             <span className="block text-xs font-semibold text-brand-green-light mt-1.5">
-                              {formatIdr(opt.perPerson)} {opt.flat ? "per booking" : "per guest"}
+                              {formatIdr(opt.perPerson)} {opt.unitLabel ?? (opt.flat ? "per booking" : "per guest")}
                             </span>
                           )}
                         </div>
@@ -927,7 +944,11 @@ export function BookingPopup({
                           </button>
                         </div>
                       </div>
-                      {!opt.flat ? (
+                      {opt.maxQty ? (
+                        <p className="mt-2 text-[11px] text-brand-green-light">
+                          Up to {max} online — longer days on WhatsApp
+                        </p>
+                      ) : !opt.flat ? (
                         <p className="mt-2 text-[11px] text-brand-green-light">
                           Count up to {max} guest{max === 1 ? '' : 's'} on this booking
                         </p>
@@ -1022,9 +1043,12 @@ export function BookingPopup({
               </div>
             ) : pickupIncluded ? (
               <div className="rounded-xl border border-brand-green/15 bg-brand-green/5 px-4 py-3.5 text-sm">
-                <span className="font-bold text-brand-green block mb-0.5">Hotel pickup included</span>
+                <span className="font-bold text-brand-green block mb-0.5">
+                  {activeTour.includedMeetCopy?.title ?? 'Hotel pickup included'}
+                </span>
                 <span className="text-brand-green-light">
-                  Pickup &amp; drop-off is included in this tour&apos;s price — no arena self-meet and no extra fee. Add your hotel address below.
+                  {activeTour.includedMeetCopy?.body ??
+                    "Pickup & drop-off is included in this tour's price — no arena self-meet and no extra fee. Add your hotel address below."}
                 </span>
               </div>
             ) : pickupNotOffered ? (
@@ -1158,7 +1182,11 @@ export function BookingPopup({
               <div className="flex-1">
                 <label className="block text-brand-green font-bold text-sm mb-2">
                   {hasKidPricing ? 'Adults' : isTandem ? 'Riders' : 'People'}
-                  {activityQuote ? ` (${activityQuote.unitPrice / 1000}k · ${activityQuote.tierLabel})` : ''}
+                  {activityQuote
+                    ? activityQuote.unitLabel === 'booking'
+                      ? ' (price is per booking)'
+                      : ` (${activityQuote.unitPrice / 1000}k · ${activityQuote.tierLabel})`
+                    : ''}
                 </label>
                 <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
                   <button type="button" onClick={() => setAdults(Math.max(minAdults, adults - 1))} className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors">-</button>
@@ -1242,7 +1270,9 @@ export function BookingPopup({
                   <span>
                     {activityQuote.activityId === 'tandem-atv'
                       ? `${adults} riders · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`
-                      : `${activityQuote.tierLabel} · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} adult(s)`}
+                      : activityQuote.unitLabel === 'booking'
+                        ? `Once per booking · ${adults} guest${adults === 1 ? '' : 's'}`
+                        : `${activityQuote.tierLabel} · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} adult(s)`}
                   </span>
                   {tierPromoActive ? (
                     <div className="text-right">

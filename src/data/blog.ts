@@ -10,6 +10,7 @@ import { MOTORBIKE_CLUSTER_POSTS } from './clusterPostsMotorbike'
 import { YEAR_END_CLUSTER_POSTS } from './clusterPostsYearEnd'
 import { ADVENTURE_GAP_CLUSTER_POSTS } from './clusterPostsAdventureGaps'
 import { ATV_JEEP_KEYWORD_CLUSTER_POSTS } from './clusterPostsAtvJeepKeywords'
+import { LICENSED_GUIDE_CLUSTER_POSTS } from './clusterPostsLicensedGuide'
 
 export type BlogPost = {
   slug: string
@@ -24,6 +25,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...LICENSED_GUIDE_CLUSTER_POSTS,
   ...ATV_JEEP_KEYWORD_CLUSTER_POSTS,
   ...ADVENTURE_GAP_CLUSTER_POSTS,
   ...YEAR_END_CLUSTER_POSTS,

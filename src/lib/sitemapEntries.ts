@@ -32,6 +32,9 @@ const MONEY_TOUR_SLUGS = new Set([
 ])
 
 const HIGH_BLOG_SLUGS = new Set([
+  'licensed-tour-guide-bali-2026',
+  'japanese-speaking-guide-bali-2026',
+  'french-speaking-guide-bali-2026',
   'whats-new-in-bali-ubud-2026',
   'things-to-do-near-ubud-2026',
   'mount-batur-sunrise-jeep-tour-guide-2026',

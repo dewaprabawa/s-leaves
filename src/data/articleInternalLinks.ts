@@ -153,6 +153,13 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book Tanah Lot sunset', href: '/tours/half-day-ubud-tanah-lot-tour' },
     { title: 'Book motorbike trip', href: '/tours/bali-motorbike-traveling-trip' },
   ],
+  guide: [
+    { title: 'Licensed tour guide in Bali 2026', href: '/blog/licensed-tour-guide-bali-2026' },
+    { title: 'Japanese-speaking guide', href: '/blog/japanese-speaking-guide-bali-2026' },
+    { title: 'French-speaking guide', href: '/blog/french-speaking-guide-bali-2026' },
+    { title: 'Book a licensed guide', href: '/tours/licensed-tour-guide-bali' },
+    { title: 'Full day Ubud tour + guide', href: '/tours/full-day-ubud-tour' },
+  ],
   motorbike: [
     { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'Motorbike tour calculator', href: '/planners/motorbike-tour-price' },
@@ -290,6 +297,9 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'luwak-coffee-ethical-sourcing': 'coffee',
   'how-to-spot-ethical-luwak-coffee-in-bali': 'coffee',
   'full-day-ubud-tour-guide-2026': 'dayTour',
+  'licensed-tour-guide-bali-2026': 'guide',
+  'japanese-speaking-guide-bali-2026': 'guide',
+  'french-speaking-guide-bali-2026': 'guide',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'dayTour',
   'bali-motorbike-tour-price-2026': 'motorbike',
   'bali-tours-for-japanese-chinese-travelers-2026': 'motorbike',
@@ -409,6 +419,13 @@ const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
     { title: 'Pejeng cycling (village, not Tegalalang crowds)', href: '/tours/ubud-ricefield-cycling-tour' },
     { title: 'Motorbike traveling trip', href: '/tours/bali-motorbike-traveling-trip' },
     { title: 'Private Bali itinerary', href: '/tours/bali-private-itinerary' },
+    HUB,
+  ],
+  guide: [
+    { title: 'Tirta Empul purification', href: '/tours/tirta-empu-purification' },
+    { title: 'Tanah Lot sunset half day', href: '/tours/half-day-ubud-tanah-lot-tour' },
+    { title: 'Umah Kuno luwak tasting', href: '/tours/luwak-coffee-plantation' },
+    { title: 'Bali temple dress code', href: '/blog/bali-temple-dress-code' },
     HUB,
   ],
   motorbike: [

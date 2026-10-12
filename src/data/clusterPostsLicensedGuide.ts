@@ -12,7 +12,7 @@ export const LICENSED_GUIDE_CLUSTER_POSTS = [
       'Book a government-licensed Bali tour guide without a car: English IDR 600,000, Japanese IDR 700,000, French IDR 750,000 per booking for 4 hours, plus IDR 150,000 per extra hour. What "licensed" means, and guide-only vs driver-guide.',
     publishedAt: '2026-10-12',
     author: 'Sekar Bali Activity',
-    image: '/images/guide/licensed-guide-bali.jpg',
+    image: '/images/guide/bali-guide-thumbs-up.jpg',
     content: `
 **How much is a licensed tour guide in Bali?** With Sekar Bali Activity, a government-licensed guide costs **IDR 600,000 in English, IDR 700,000 in Japanese, or IDR 750,000 in French** — per booking, for **4 hours**, not per person. Each extra hour is **IDR 150,000** in any language. This is **guide only**: you bring your own car and driver, and the guide meets you at your hotel or first stop (the guide's own transport is included). [Book a licensed guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
 

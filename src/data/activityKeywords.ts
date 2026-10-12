@@ -36,6 +36,7 @@ export type ActivityKeywordSlug =
   | 'bali-private-itinerary'
   | 'bali-motorbike-traveling-trip'
   | 'licensed-tour-guide-bali'
+  | 'atv-premium-package-bali'
 
 export type KeywordCluster = {
   /** What travelers type first (H1 / title language). */
@@ -129,6 +130,26 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'ATV rafting vs ATV tubing',
       'ATV + rafting vs booking separate',
       'single vs tandem ATV rafting',
+    ],
+  },
+  'atv-premium-package-bali': {
+    head: [
+      'ATV premium package Bali',
+      'private ATV package Bali',
+      'group ATV package Ubud',
+      'ATV package with private transfer Bali',
+    ],
+    book: [
+      'ATV package Bali price 2026',
+      'single and tandem ATV package',
+      'family ATV package Bali',
+      'ATV Bali with hotel pickup',
+      'ATV for 3 4 5 people Bali',
+      'private shuttle ATV Ubud',
+    ],
+    compare: [
+      'ATV package vs booking separately',
+      'single vs tandem ATV for groups',
     ],
   },
   'whitewater-rafting': {
@@ -492,6 +513,7 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'bali-private-itinerary': flattenCluster(KEYWORD_CLUSTERS['bali-private-itinerary']),
   'bali-motorbike-traveling-trip': flattenCluster(KEYWORD_CLUSTERS['bali-motorbike-traveling-trip']),
   'licensed-tour-guide-bali': flattenCluster(KEYWORD_CLUSTERS['licensed-tour-guide-bali']),
+  'atv-premium-package-bali': flattenCluster(KEYWORD_CLUSTERS['atv-premium-package-bali']),
 }
 
 export const COMBO_KEYWORDS = [
@@ -541,6 +563,7 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
   'ubud-ricefield-cycling-tour',
   'bali-atv-adventure',
   'atv-rafting-combo',
+  'atv-premium-package-bali',
   'whitewater-rafting',
   'canyon-tubing',
   'batur-sunrise-jeep-tour',
@@ -805,6 +828,9 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'luwak-coffee-ethical-sourcing': 'luwak-coffee-plantation',
   'how-to-spot-ethical-luwak-coffee-in-bali': 'luwak-coffee-plantation',
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
+  'atv-premium-package-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'group-atv-package-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'atv-package-private-transfer-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'licensed-tour-guide-bali-2026': 'licensed-tour-guide-bali',
   'japanese-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
   'french-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
@@ -866,6 +892,22 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
 }
 
 const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
+  'atv-premium-package-bali-2026': [
+    'ATV premium package Bali 2026',
+    'ATV package with private shuttle',
+    'Bali ATV group discount',
+  ],
+  'group-atv-package-ubud-2026': [
+    'ATV for a group of 3 Bali',
+    'ATV for 4 people Ubud',
+    'ATV for 5 people Bali',
+    'family ATV Ubud tandem',
+  ],
+  'atv-package-private-transfer-bali-2026': [
+    'ATV Bali from Seminyak private transfer',
+    'ATV Bali from Canggu with pickup',
+    'ATV Ubud private car',
+  ],
   'is-a-tour-guide-worth-it-bali-2026': [
     'is a tour guide worth it in Bali',
     'do I need a tour guide in Bali',

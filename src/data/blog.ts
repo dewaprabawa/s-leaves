@@ -11,6 +11,7 @@ import { YEAR_END_CLUSTER_POSTS } from './clusterPostsYearEnd'
 import { ADVENTURE_GAP_CLUSTER_POSTS } from './clusterPostsAdventureGaps'
 import { ATV_JEEP_KEYWORD_CLUSTER_POSTS } from './clusterPostsAtvJeepKeywords'
 import { LICENSED_GUIDE_CLUSTER_POSTS } from './clusterPostsLicensedGuide'
+import { ATV_PREMIUM_CLUSTER_POSTS } from './clusterPostsAtvPremium'
 
 export type BlogPost = {
   slug: string
@@ -25,6 +26,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...ATV_PREMIUM_CLUSTER_POSTS,
   ...LICENSED_GUIDE_CLUSTER_POSTS,
   ...ATV_JEEP_KEYWORD_CLUSTER_POSTS,
   ...ADVENTURE_GAP_CLUSTER_POSTS,
@@ -154,6 +156,8 @@ Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-
 2. Send **1 or 2 riders**, **hotel or self-meet**, **date**, **ages**, **adult or child**
 3. We reply with **single (from IDR 750,000)** vs **tandem (IDR 1,100,000 for two)** and whether pickup is **IDR 400,000**
 4. **No payment to inquire** — WhatsApp Consultation first, then Book when you are ready
+
+**Group of 3, 4 or 5 with one pair sharing?** The [ATV premium package](/tours/atv-premium-package-bali) bundles singles + 1 tandem + a private shuttle for your group only, 10% off booking separately — from IDR 2,025,000 for 3 guests. [How to split the group](/blog/group-atv-package-ubud-2026).
 
 **Ready?** Message us from the [ATV money page](/tours/bali-atv-adventure) or start [WhatsApp checkout](/book). Say **tandem** or **two singles** in the first line so we do not quote the wrong bike.
 `,
@@ -407,6 +411,8 @@ After the track, many guests add **river tubing on the Wos River** for a land-an
 3. We confirm the tier rate and pickup total — **no payment to inquire**  
 
 Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsapp).
+
+**Booking for 3–5 with one tandem?** The [ATV premium package](/tours/atv-premium-package-bali) is IDR 2,025,000 (3 guests), 2,655,000 (4) or 3,240,000 (5) with a private group shuttle — 10% off the same parts booked separately. [Package math](/blog/atv-premium-package-bali-2026).
 
 **Ready to lock a 2026 ATV price?** Book the [Bali ATV Adventure](/tours/bali-atv-adventure) or compare all [packages & prices](/#pricing).
 `

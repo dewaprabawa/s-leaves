@@ -10,6 +10,28 @@ export type TourRelatedGuide = {
 }
 
 export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
+  'atv-premium-package-bali': [
+    {
+      title: 'ATV premium package Bali 2026',
+      href: '/blog/atv-premium-package-bali-2026',
+      blurb: 'The three packages, the 10% math, and what the private shuttle covers.',
+    },
+    {
+      title: 'Group ATV package for 3, 4 or 5',
+      href: '/blog/group-atv-package-ubud-2026',
+      blurb: 'Who rides single, who rides tandem — families, couples with a friend, birthday groups.',
+    },
+    {
+      title: 'ATV with a private transfer',
+      href: '/blog/atv-package-private-transfer-bali-2026',
+      blurb: 'From Seminyak, Canggu, Kuta or Ubud — drive times and what the private car means.',
+    },
+    {
+      title: 'Single vs tandem ATV',
+      href: '/blog/tandem-atv-ubud-price',
+      blurb: 'How tandem riding works and who should share a bike.',
+    },
+  ],
   'licensed-tour-guide-bali': [
     {
       title: 'Licensed tour guide in Bali 2026',
@@ -100,6 +122,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'bali-atv-adventure': [
+    {
+      title: 'ATV premium package for 3–5 guests',
+      href: '/blog/atv-premium-package-bali-2026',
+      blurb: 'Singles + 1 tandem + a private shuttle for your group — 10% off booking separately.',
+    },
     {
       title: 'Best ATV in Bali: how to choose',
       href: '/blog/best-atv-bali-ubud-2026',
@@ -881,6 +908,10 @@ export const TOUR_HOST_NOTES: Record<
   'atv-rafting-combo': {
     title: 'From our Sedang + Ayung hosts',
     body: 'This is the day we sell first when guests want dirt photos and a paddle team. ATV briefing is at All New Bali Adventure in Sedang — not the office in Banjar Kenderan. The raft is Class II–III on the Ayung with English crew, lunch on both tickets, and one IDR 400,000 pickup if you want a hotel collect. Two singles plus two rafts is 2.35M before the 10% mix; tandem plus two rafts is 2.0M before mix. We will not invent a 999K bundle sticker — WhatsApp confirms single or tandem plus the 10% mix.',
+  },
+  'atv-premium-package-bali': {
+    title: 'From our Sedang arena hosts',
+    body: 'The premium package is for groups where a few riders want their own quad and one guest would rather sit behind. Your car and driver are yours alone for the day — no waiting for other hotels on the way. Same All New Bali Adventure track, same English briefing and lunch. Send every rider’s age on WhatsApp so we can confirm who rides the tandem.',
   },
   'bali-atv-adventure': {
     title: 'From our Sedang arena hosts',

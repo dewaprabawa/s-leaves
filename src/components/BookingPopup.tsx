@@ -113,6 +113,10 @@ export interface TourConfig {
   groupTierPricesIdr?: readonly number[]
   /** adultPrice is charged once per booking, not per guest (licensed guide only). */
   perBooking?: boolean
+  /** Package seats exactly this many guests — the people counter is locked (ATV premium packages). */
+  fixedPax?: number
+  /** Same parts booked separately; shows the package saving as a strike-through. */
+  compareAtPrice?: number
   /** Replaces the "Hotel pickup included" copy when pickupIncluded is set (e.g. a guide who meets you). */
   includedMeetCopy?: { title: string; body: string; short: string }
   /** Optional per-person add-ons (jeep hot spring, swing dress hire). Not mix-combo activities. */
@@ -257,12 +261,16 @@ export function BookingPopup({
     const rafting = activeTour.id === 'rafting' || mixIds.includes('rafting')
     const tandem = activeTour.id === 'tandem-atv'
     const min = tandem || rafting ? 2 : Math.max(activeTour.minPax, 1)
+    if (activeTour.fixedPax) {
+      setAdults(activeTour.fixedPax)
+      return
+    }
     setAdults((prev) => {
       const next = Math.max(min, prev || min)
       if (tandem && next % 2 !== 0) return next + 1
       return next
     })
-  }, [isOpen, activeTour?.id, mixIds])
+  }, [isOpen, activeTour?.id, activeTour?.fixedPax, mixIds])
 
   // Cap add-on qty when guest count drops (hooks must run before any early return).
   useEffect(() => {
@@ -385,8 +393,14 @@ export function BookingPopup({
     ? (effectiveWantsPickup ? pickupFlatFee : 0)
     : pickupQuote.total;
   const totalCost = activityTotal + addonTotal + pickupFee;
+  const packageCompareAt =
+    !mixedQuote && activityQuote && activeTour.compareAtPrice && activeTour.compareAtPrice > activityQuote.activitySubtotal
+      ? activeTour.compareAtPrice
+      : null;
   const compareAtActivityTotal = mixedQuote
     ? mixedQuote.compareAtSubtotal
+    : packageCompareAt
+      ? packageCompareAt
     : activityQuote
       ? getCompareAtSubtotal(activityQuote)
       : 0;
@@ -397,6 +411,8 @@ export function BookingPopup({
     pickupFee;
   const tierPromoActive = mixedQuote
     ? mixedQuote.discountAmount > 0 || mixedQuote.discountedSubtotal < mixedQuote.compareAtSubtotal
+    : packageCompareAt
+      ? true
     : activityQuote
       ? hasTierPromo(activityQuote)
       : false;
@@ -1191,16 +1207,25 @@ export function BookingPopup({
                 <label className="block text-brand-green font-bold text-sm mb-2">
                   {hasKidPricing ? 'Adults' : isTandem ? 'Riders' : 'People'}
                   {activityQuote
-                    ? activityQuote.unitLabel === 'booking'
+                    ? activeTour.fixedPax
+                      ? ' (price is per package)'
+                    : activityQuote.unitLabel === 'booking'
                       ? ' (price is per booking)'
                       : ` (${activityQuote.unitPrice / 1000}k · ${activityQuote.tierLabel})`
                     : ''}
                 </label>
+                {activeTour.fixedPax ? (
+                  <div className="flex items-center justify-between bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 shadow-sm">
+                    <span className="font-bold text-brand-green text-lg">{activeTour.fixedPax} guests</span>
+                    <span className="text-xs font-semibold text-brand-green-light">Set by the package</span>
+                  </div>
+                ) : (
                 <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
                   <button type="button" onClick={() => setAdults(Math.max(minAdults, adults - 1))} className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors">-</button>
                   <span className="flex-1 text-center font-bold text-brand-green text-lg">{adults}</span>
                   <button type="button" onClick={() => setAdults(adults + 1)} className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors">+</button>
                 </div>
+                )}
               </div>
               {hasKidPricing && (
                 <div className="flex-1">
@@ -1278,6 +1303,8 @@ export function BookingPopup({
                   <span>
                     {activityQuote.activityId === 'tandem-atv'
                       ? `${adults} riders · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`
+                      : activeTour.fixedPax
+                        ? `Package for ${adults} guests`
                       : activityQuote.unitLabel === 'booking'
                         ? `Once per booking · ${adults} guest${adults === 1 ? '' : 's'}`
                         : `${activityQuote.tierLabel} · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} adult(s)`}
@@ -1331,7 +1358,13 @@ export function BookingPopup({
                   price={totalCost}
                   originalPrice={compareAtTotal}
                   variant="total"
-                  tierLabel={mixedQuote ? `Combo · ${mixedQuote.discountPercent}% off` : activityQuote?.tierLabel}
+                  tierLabel={
+                    mixedQuote
+                      ? `Combo · ${mixedQuote.discountPercent}% off`
+                      : packageCompareAt
+                        ? `Package · save ${formatIdr(packageCompareAt - activityTotal)}`
+                        : activityQuote?.tierLabel
+                  }
                 />
               ) : (
                 <span className="text-3xl font-bold text-brand-green">{formatIdr(totalCost)}</span>

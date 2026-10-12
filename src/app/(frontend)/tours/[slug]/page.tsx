@@ -9,6 +9,7 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
+import AtvPremiumShowcase from "@/components/AtvPremiumShowcase"
 import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import TourPhotoGrid from "@/components/TourPhotoGrid"
@@ -49,6 +50,11 @@ import {
   LICENSED_GUIDE_PRICES_IDR,
   LICENSED_GUIDE_SLUG,
 } from "@/data/licensedGuide"
+import {
+  ATV_PREMIUM_DISCOUNT_PERCENT,
+  ATV_PREMIUM_PACKAGES,
+  ATV_PREMIUM_SLUG,
+} from "@/data/atvPremium"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, PICKUP_FEE_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
@@ -682,6 +688,42 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  if (tour.slug === ATV_PREMIUM_SLUG) {
+    const prices = ATV_PREMIUM_PACKAGES.map((pkg) => pkg.priceIdr)
+    return {
+      ...base,
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(Math.min(...prices)),
+        highPrice: String(Math.max(...prices)),
+        priceCurrency: "IDR",
+        offerCount: ATV_PREMIUM_PACKAGES.length,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: ATV_PREMIUM_PACKAGES.map((pkg) => ({
+          "@type": "Offer",
+          name: `${pkg.name} — ${pkg.lineup}`,
+          description: `${pkg.guests} guests · ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately`,
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: pkg.priceIdr,
+            priceCurrency: "IDR",
+            unitText: `per package, ${pkg.guests} guests`,
+          },
+          eligibleQuantity: {
+            "@type": "QuantitativeValue",
+            value: pkg.guests,
+            unitText: "guests",
+          },
+          availability: "https://schema.org/InStock",
+          url: `${SITE_URL}/tours/${tour.slug}`,
+        })),
+      },
+    }
+  }
+
   if (tour.slug === LICENSED_GUIDE_SLUG) {
     const prices = GUIDE_LANGUAGES.map((lang) => LICENSED_GUIDE_PRICES_IDR[lang.key])
     return {
@@ -1213,6 +1255,10 @@ export default async function TourPage({ params }: Props) {
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
                       Private
                     </span>
+                  ) : tour.slug === ATV_PREMIUM_SLUG ? (
+                    <span className="inline-flex rounded-full bg-brand-green px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-gold">
+                      Premium · {ATV_PREMIUM_DISCOUNT_PERCENT}% off
+                    </span>
                   ) : isCyclingTour(tour) || isMotorbikeTour(tour) ? (
                     <span className="inline-flex rounded-full bg-brand-green px-3 py-1 text-xs font-bold uppercase tracking-wider text-sand">
                       Promo
@@ -1287,6 +1333,11 @@ export default async function TourPage({ params }: Props) {
                       </span>
                       Promo {formatIdr(CYCLING_PROMO_IDR)} / person · 625K (2) · 600K (3+)
                     </span>
+                  ) : tour.slug === ATV_PREMIUM_SLUG ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      {ATV_PREMIUM_PACKAGES.map((pkg) => `${pkg.guests} guests ${formatIdr(pkg.priceIdr)}`).join(" · ")}{" "}
+                      per package
+                    </span>
                   ) : tour.slug === LICENSED_GUIDE_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">
                       {GUIDE_LANGUAGES.map(
@@ -1348,6 +1399,8 @@ export default async function TourPage({ params }: Props) {
                 ))}
               </section>
             )}
+
+            {tour.slug === ATV_PREMIUM_SLUG ? <AtvPremiumShowcase /> : null}
 
             {cooking ? <CookingGeoBlock /> : null}
             {jeep ? <JeepGeoBlock /> : null}

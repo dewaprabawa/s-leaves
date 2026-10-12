@@ -4,6 +4,7 @@ import { ShieldCheck } from "lucide-react"
 const INSURED_TOURS: Record<string, string | null> = {
   "bali-atv-adventure": "6–65",
   "atv-rafting-combo": "6–65",
+  "atv-premium-package-bali": "6–65",
   "whitewater-rafting": "6–65",
   "batur-sunrise-jeep-tour": "6–65",
   "canyon-tubing": "6–65",

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Link from "next/link"
 import { ArrowRight, Car, Clock, ExternalLink, MapPin, MessageCircle } from "lucide-react"
 import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
 import InsuranceBadge, { isInsuredTour } from "@/components/InsuranceBadge"
@@ -26,6 +27,12 @@ import {
   LICENSED_GUIDE_PRICES_IDR,
   LICENSED_GUIDE_SLUG,
 } from "@/data/licensedGuide"
+import {
+  ATV_PREMIUM_DISCOUNT_PERCENT,
+  ATV_PREMIUM_PACKAGES,
+  ATV_PREMIUM_SHUTTLE_COPY,
+  ATV_PREMIUM_SLUG,
+} from "@/data/atvPremium"
 import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
@@ -103,6 +110,14 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       tierLabel: undefined,
     }
   }
+  if (tourSlug === ATV_PREMIUM_SLUG) {
+    const first = ATV_PREMIUM_PACKAGES[0]
+    return {
+      promoPrice: first.priceIdr,
+      standardPrice: first.partsIdr,
+      tierLabel: `${first.name} · ${first.guests} guests · ${ATV_PREMIUM_DISCOUNT_PERCENT}% off`,
+    }
+  }
   if (tourSlug === "atv-rafting-combo") {
     return {
       promoPrice: fallbackBase,
@@ -164,6 +179,8 @@ function primaryBookLabel(tourSlug: string): string {
       return "Book ATV Ride"
     case "atv-rafting-combo":
       return "Book ATV + Rafting"
+    case ATV_PREMIUM_SLUG:
+      return "Book Premium ATV"
     case "ubud-ricefield-cycling-tour":
       return "Book Cycling Tour"
     case "whitewater-rafting":
@@ -200,6 +217,22 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   if (mapped) {
     const configs = BOOKABLE_TOURS.filter((t) => mapped.includes(t.id))
     if (configs.length) return configs
+  }
+
+  if (props.tourSlug === ATV_PREMIUM_SLUG) {
+    return ATV_PREMIUM_PACKAGES.map((pkg) => ({
+      id: `${props.tourId}-${pkg.key}`,
+      title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"} + 1 tandem + private shuttle · ${pkg.guests} guests`,
+      times: DEFAULT_TIMES,
+      adultPrice: pkg.priceIdr,
+      kidPrice: null,
+      minPax: pkg.guests,
+      fixedPax: pkg.guests,
+      compareAtPrice: pkg.partsIdr,
+      perBooking: true,
+      pickupIncluded: true,
+      includedMeetCopy: ATV_PREMIUM_SHUTTLE_COPY,
+    }))
   }
 
   if (props.tourSlug === LICENSED_GUIDE_SLUG) {
@@ -318,6 +351,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const hasPromo = standardPrice > promoPrice
   const groupPricing = getGroupPricedTour(props.tourSlug)
   const isGuideOnly = props.tourSlug === LICENSED_GUIDE_SLUG
+  const isAtvPremium = props.tourSlug === ATV_PREMIUM_SLUG
   const consultationActivity =
     props.tourSlug === "balinese-cooking-class"
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
@@ -325,6 +359,8 @@ export default function TourBookingCard(props: TourBookingCardProps) {
         ? `${props.title} — promo ${formatIdr(CYCLING_PROMO_IDR)} / person (was ${formatIdr(CYCLING_LIST_IDR)})`
       : props.tourSlug === "bali-atv-adventure"
         ? `${props.title} — single from ${formatIdr(props.basePrice)}`
+        : props.tourSlug === ATV_PREMIUM_SLUG
+          ? `${props.title} — ${ATV_PREMIUM_PACKAGES.map((pkg) => `${pkg.name} ${formatIdr(pkg.priceIdr)}`).join(" · ")}`
         : props.tourSlug === "atv-rafting-combo"
           ? `${props.title} — from ${formatIdr(props.basePrice)} (ATV 750K + rafting 500K · 10% mix)`
           : props.title
@@ -359,7 +395,9 @@ export default function TourBookingCard(props: TourBookingCardProps) {
                   ? "From · 4+ guests"
                   : isGuideOnly
                     ? "From · per booking"
-                    : "From"}
+                    : isAtvPremium
+                      ? `From · ${ATV_PREMIUM_PACKAGES[0].guests} guests`
+                      : "From"}
             </p>
             <div className="flex items-baseline gap-2">
               <span className="font-display text-lg font-bold text-brand-green leading-tight truncate">
@@ -470,8 +508,23 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           ) : null}
           {props.tourSlug === "bali-atv-adventure" ? (
             <p className="text-sm text-brand-green-light mt-1">
-              Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing
+              Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing ·{" "}
+              <Link href={`/tours/${ATV_PREMIUM_SLUG}`} className="font-semibold text-brand-green underline-offset-2 hover:underline">
+                Group of 3–5? Premium package {ATV_PREMIUM_DISCOUNT_PERCENT}% off
+              </Link>
             </p>
+          ) : null}
+          {isAtvPremium ? (
+            <ul className="mt-2 space-y-1 text-sm text-brand-green-light">
+              {ATV_PREMIUM_PACKAGES.map((pkg) => (
+                <li key={pkg.key}>
+                  <span className="font-semibold text-brand-green">{pkg.name}</span> · {pkg.guests} guests ·{" "}
+                  <span className="font-semibold text-brand-green">{formatIdr(pkg.priceIdr)}</span>{" "}
+                  <span className="line-through opacity-70">{formatIdr(pkg.partsIdr)}</span>
+                </li>
+              ))}
+              <li className="pt-1">Per package, not per person · private shuttle for your group only.</li>
+            </ul>
           ) : null}
           {props.tourSlug === "swing-heaven-bali" ? (
             <>

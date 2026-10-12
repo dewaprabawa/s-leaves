@@ -456,7 +456,7 @@ Short jeep-only days are cheaper: sit-in **2,300,000** for 2 (**2,850,000** for 
 5. **Umah Kuno** — this is the dedicated tasting, not a roadside luwak cage
 6. **Rice terrace**, then drop-off
 
-Sunrise vs a short sunset jeep: [sunrise vs sunset](/blog/mount-batur-jeep-sunrise-vs-sunset). Ethical coffee rules: [spot ethical Luwak](/blog/how-to-spot-ethical-luwak-coffee-in-bali). Standalone Umah Kuno (if you only want coffee) is **IDR 800,000**, min 3, **transport not included** — [price guide](/blog/luwak-coffee-plantation-umah-kuno-price-2026).
+Sunrise vs a short sunset jeep: [sunrise vs sunset](/blog/mount-batur-jeep-sunrise-vs-sunset). Ethical coffee rules: [spot ethical Luwak](/blog/how-to-spot-ethical-luwak-coffee-in-bali). Standalone Umah Kuno (if you only want coffee) is **IDR 850,000** for one guest, **550,000** each for 4+, **transport not included** — [price guide](/blog/luwak-coffee-plantation-umah-kuno-price-2026).
 
 ## Who should book the day vs the short jeep
 

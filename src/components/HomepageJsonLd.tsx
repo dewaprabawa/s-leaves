@@ -63,8 +63,8 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: "Luwak Coffee Plantation Experience (Umah Kuno)",
     description:
-      "Ethical cage-free Luwak tasting at Umah Kuno — jungle walk, wood-fire roasting, and a tasting flight of 10 teas and coffees. IDR 800,000 per person (minimum 3 guests).",
-    price: "800000",
+      "Ethical cage-free Luwak tasting at Umah Kuno — jungle walk, wood-fire roasting, and a tasting flight of 10 teas and coffees. IDR 850,000 for one guest, down to 550,000 each for 4+.",
+    price: "850000",
     image: "/coffee.jpg",
   },
 ]

@@ -14,7 +14,7 @@ import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
 import { buildGirlsTripWhatsAppUrl, GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
-import { getPrivateDayTourPricing } from "@/data/privateDayTours"
+import { getGroupPricedTour } from "@/data/groupPricedTours"
 import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
@@ -194,7 +194,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
     props.tourSlug === "half-day-ubud-tanah-lot-tour" ||
     props.tourSlug === GIRLS_TRIP_SLUG
   const isMelukat = props.tourSlug === "tirta-empu-purification"
-  const privateDayPricing = getPrivateDayTourPricing(props.tourSlug)
+  const groupPricing = getGroupPricedTour(props.tourSlug)
   const isLuwak = props.tourSlug === "luwak-coffee-plantation"
   const isMotorbike = props.tourSlug === MOTORBIKE_TRIP_SLUG
   const isSwingHeaven = props.tourSlug === "swing-heaven-bali"
@@ -222,7 +222,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
                 : ["13:30"],
         adultPrice: props.basePrice + opt.priceDiff,
         kidPrice: props.childPrice ?? null,
-        minPax: /tandem|2 guests/i.test(opt.name) ? 2 : isLuwak ? 3 : 1,
+        minPax: /tandem|2 guests/i.test(opt.name) ? 2 : 1,
         getYourGuideUrl: props.getYourGuideUrl,
         freeUbudPickup: props.tourSlug === "balinese-cooking-class",
         pickupIncluded: isMelukat || isMotorbike,
@@ -263,17 +263,17 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
               : DEFAULT_TIMES,
       adultPrice: props.basePrice,
       kidPrice: props.childPrice ?? null,
-      minPax: isLuwak ? 3 : 1,
+      minPax: 1,
       getYourGuideUrl: props.getYourGuideUrl,
       freeUbudPickup: props.tourSlug === "balinese-cooking-class",
       pickupIncluded: isPrivateDayTour || isMelukat,
       requiredShuttle: isSwingHeaven,
       pickupNotOffered: isLuwak,
-      ...(privateDayPricing
+      ...(groupPricing
         ? {
-            groupTierPricesIdr: privateDayPricing.tiersIdr,
-            optionalAddons: privateDayPricing.guideAddons,
-            optionalAddonsIntro: privateDayPricing.guideIntro,
+            groupTierPricesIdr: groupPricing.tiersIdr,
+            optionalAddons: groupPricing.guideAddons,
+            optionalAddonsIntro: groupPricing.guideIntro,
           }
         : {}),
     },
@@ -287,7 +287,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const primary = configs.find((c) => c.id === primaryId) ?? configs[0]
   const { promoPrice, standardPrice, tierLabel } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
   const hasPromo = standardPrice > promoPrice
-  const privateDayPricing = getPrivateDayTourPricing(props.tourSlug)
+  const groupPricing = getGroupPricedTour(props.tourSlug)
   const consultationActivity =
     props.tourSlug === "balinese-cooking-class"
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
@@ -323,13 +323,13 @@ export default function TourBookingCard(props: TourBookingCardProps) {
         <div className="mx-auto flex max-w-7xl items-center gap-2">
           <div className="min-w-0 flex-1">
             <p className="text-[11px] font-medium text-brand-green-light leading-none">
-              {isPrivateItinerary ? "Consult from" : privateDayPricing ? "From · 4+ guests" : "From"}
+              {isPrivateItinerary ? "Consult from" : groupPricing ? "From · 4+ guests" : "From"}
             </p>
             <div className="flex items-baseline gap-2">
               <span className="font-display text-lg font-bold text-brand-green leading-tight truncate">
                 {formatIdr(
-                  privateDayPricing
-                    ? privateDayPricing.tiersIdr[privateDayPricing.tiersIdr.length - 1]
+                  groupPricing
+                    ? groupPricing.tiersIdr[groupPricing.tiersIdr.length - 1]
                     : promoPrice,
                 )}
               </span>
@@ -403,18 +403,18 @@ export default function TourBookingCard(props: TourBookingCardProps) {
 
         <div>
           <p className="text-sm text-brand-green-light font-medium mb-1">
-            {privateDayPricing ? "1 guest" : "From"}
+            {groupPricing ? "1 guest" : "From"}
           </p>
           <PromoPrice
             price={promoPrice}
             originalPrice={standardPrice}
             variant="card"
-            from={!privateDayPricing}
+            from={!groupPricing}
             tierLabel={tierLabel}
           />
-          {privateDayPricing ? (
+          {groupPricing ? (
             <p className="text-sm text-brand-green-light mt-1">
-              {privateDayPricing.tiersIdr
+              {groupPricing.tiersIdr
                 .slice(1)
                 .map((price, i, rest) => {
                   const guests = i + 2

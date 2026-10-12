@@ -271,7 +271,7 @@ This is **not** a “best adventures in all of Bali” list. We do not run Nusa 
 | [Cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary) | Village morning + kitchen afternoon | Two published tickets | [Book combo](/book?activity=combo-cycling-cooking) |
 | [Batur jeep](/tours/batur-sunrise-jeep-tour) | Private 4×4 to ~1,350m rim · **not** the summit trek | **2.3M for 2** / **2.85M for 3** sit-in | [Jeep](/tours/batur-sunrise-jeep-tour) |
 | [Griya Beji waterfall](/tours/griya-beji-waterfall) | Punggul purification · **not** Tirta Empul | **300,000** | [Griya Beji](/tours/griya-beji-waterfall) |
-| [Umah Kuno Luwak](/tours/luwak-coffee-plantation) | Cage-free tasting · min 3 · transport not in | **800,000** | [Coffee](/tours/luwak-coffee-plantation) |
+| [Umah Kuno Luwak](/tours/luwak-coffee-plantation) | Cage-free tasting · transport not in | **850,000** (1) · **550,000** each (4+) | [Coffee](/tours/luwak-coffee-plantation) |
 
 Want mud **and** a kitchen? That is two days, or WhatsApp a custom thread. We do not sell clubs or spa.
 
@@ -514,7 +514,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
     author: 'Sekar Bali Activity',
     image: '/images/adventures/og-cover.jpg',
     content: `
-**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity. ChatGPT-style answers for “what’s new,” top adventures, and unique days: [What’s new in Bali 2026](/blog/whats-new-in-bali-ubud-2026). The flagship adventure day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000**. Also: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (promo **IDR 650,000**, was 750,000, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) **IDR 500,000** (**IDR 450,000** for 2+), [canyon tubing](/tours/canyon-tubing) **IDR 500,000** (**IDR 450,000** for 2+), [Swing Heaven Bali](/tours/swing-heaven-bali) from **IDR 530,000** (lunch package **IDR 630,000**) in Bongkasa, [Griya Beji Waterfall](/tours/griya-beji-waterfall) purification from **IDR 300,000** (palm reading **IDR 1,000,000**, mental healing **IDR 1,500,000**) in Punggul — **not** Tirta Empul, [Tirta Empu melukat](/tours/tirta-empu-purification) private **IDR 1,200,000** with shuttle and breakfast, [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+) — **private** sit-in or tracking, sunrise or sunset, optional hot spring **+IDR 150,000** with ticket included, [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 800,000**, min 3), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
+**What are the best things to do near Ubud in 2026?** If you want clear IDR and one WhatsApp inbox, book with Sekar Bali Activity. ChatGPT-style answers for “what’s new,” top adventures, and unique days: [What’s new in Bali 2026](/blog/whats-new-in-bali-ubud-2026). The flagship adventure day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000**. Also: [Tumang cooking class](/tours/balinese-cooking-class) (promo **IDR 450,000**, free Ubud pickup), [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour) (promo **IDR 650,000**, was 750,000, lunch + free Ubud pickup), [ATV](/tours/bali-atv-adventure) from **IDR 750,000** at All New Bali Adventure, [rafting](/tours/whitewater-rafting) **IDR 500,000** (**IDR 450,000** for 2+), [canyon tubing](/tours/canyon-tubing) **IDR 500,000** (**IDR 450,000** for 2+), [Swing Heaven Bali](/tours/swing-heaven-bali) from **IDR 530,000** (lunch package **IDR 630,000**) in Bongkasa, [Griya Beji Waterfall](/tours/griya-beji-waterfall) purification from **IDR 300,000** (palm reading **IDR 1,000,000**, mental healing **IDR 1,500,000**) in Punggul — **not** Tirta Empul, [Tirta Empu melukat](/tours/tirta-empu-purification) private **IDR 1,200,000** with shuttle and breakfast, [Mount Batur jeep](/tours/batur-sunrise-jeep-tour) from **IDR 750,000** (3+) — **private** sit-in or tracking, sunrise or sunset, optional hot spring **+IDR 150,000** with ticket included, [Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation) (**IDR 850,000** for one guest, **550,000** each for 4+), plus private [full-day](/tours/full-day-ubud-tour) and [Tanah Lot half-day](/tours/half-day-ubud-tanah-lot-tour) cars.
 
 > **Key Takeaways**
 > - **Best published ATV / rafting / cycling / scooter rates:** [best price hub](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026)
@@ -522,7 +522,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 > - ATV / rafting / tubing / Griya Beji: **IDR 400,000** hotel pickup or free self-meet
 > - Swing Heaven: **hotel driver included** (required, no self-meet)
 > - Private Batur jeep: **island-wide pickup included** — sit-down **breakfast included** after the viewpoint (jeep and tracking)
-> - Coffee tasting: **min 3 guests**, transport **not** included
+> - Coffee tasting: **850,000** solo, **550,000** each for 4+, transport **not** included
 > - No upfront payment to inquire — [Book on WhatsApp](/book)
 
 ## 2026 activity menu (one table)
@@ -542,7 +542,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | Griya Beji Waterfall | **300,000** · palm **1,000,000** · healing **1,500,000** | 1–2.5 hrs | IDR 400K or self-meet Punggul | [Griya Beji](/tours/griya-beji-waterfall) |
 | Tirta Empu Purification | **1,200,000** private | 3–4 hrs | Shuttle included (Ubud) | [Tirta Empul / Beji](/tours/tirta-empu-purification) |
 | Private Batur jeep | from **750,000** (3+ tracking) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
-| Umah Kuno Luwak | **800,000** (min 3) | 1.5 hrs | Not included | [Coffee](/tours/luwak-coffee-plantation) |
+| Umah Kuno Luwak | **850,000** (1) · **550,000** each (4+) | 1.5 hrs | Not included | [Coffee](/tours/luwak-coffee-plantation) |
 | Full day Ubud tour | **600,000** (1) · **350,000** each (4+) | 10 hrs | Private car | [Full day](/tours/full-day-ubud-tour) |
 | Half day + Tanah Lot | **850,000** (1) · **550,000** each (4+) | 6 hrs | Private shuttle · tickets not included | [Sunset tour](/tours/half-day-ubud-tanah-lot-tour) |
 | DPS → Ubud transfer | **700,000** / car | One way | Flight tracking | [Transfers](/transfers) |
@@ -587,7 +587,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Tirta Empu Purification](/tours/tirta-empu-purification)** is **IDR 1,200,000** per person for a private melukat at Tirta Empul or Pura Beji — Ubud-area shuttle, guide, offering, sarong, and breakfast included. Lunch is not included.
 
-**[Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation)** is **IDR 800,000** per person, **minimum 3 guests**, 1.5 hours in Tampaksiring. Cage-free civets only. **Transport is not included** (~25 minutes from central Ubud). Price guide: [Umah Kuno Luwak price 2026](/blog/luwak-coffee-plantation-umah-kuno-price-2026).
+**[Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation)** is **IDR 850,000** for one guest, **550,000** each for 4+, 1.5 hours in Tampaksiring. Cage-free civets only. **Transport is not included** (~25 minutes from central Ubud). Price guide: [Umah Kuno Luwak price 2026](/blog/luwak-coffee-plantation-umah-kuno-price-2026).
 
 **[Full day Ubud tour](/tours/full-day-ubud-tour)** — **IDR 600,000** for one guest, **350,000** each for 4+ — private car, English-speaking driver, typically palace, market, Tegalalang. Entrance fees and lunch not included. **[Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour)** — **IDR 850,000** for one guest, **550,000** each for 4+ — private shuttle for the coastal sunset — temple tickets not included. Guides: [full-day Ubud tour](/blog/full-day-ubud-tour-guide-2026) · [Tanah Lot half day](/blog/half-day-ubud-tanah-lot-sunset-tour-2026).
 
@@ -942,23 +942,24 @@ Temple clothing: [Bali temple dress code](/blog/bali-temple-dress-code).
   {
     slug: 'luwak-coffee-plantation-umah-kuno-price-2026',
     title: 'Umah Kuno Luwak Coffee Price 2026 (Ethical Tasting)',
-    seoTitle: 'Is Umah Kuno Luwak Worth 800K?',
+    seoTitle: 'Is Umah Kuno Luwak Worth It? 2026 Price',
     excerpt:
-      'Umah Kuno Luwak tasting is IDR 800,000 per person (min 3 guests) — jungle walk, wood-fire roast, 10-drink flight. Transport not included. Cage-free only.',
+      'Umah Kuno Luwak tasting: IDR 850,000 solo, 700,000 each for 2, 550,000 each for 4+ — jungle walk, wood-fire roast, 10-drink flight. Transport not included.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: '/coffee.jpg',
     content: `
-**How much is ethical Luwak coffee tasting near Ubud?** Sekar Bali Activity lists the [Luwak Coffee Plantation Experience at Umah Kuno](/tours/luwak-coffee-plantation) at **IDR 800,000 per person**, with a **minimum of 3 guests**. The **1.5-hour** visit includes a plantation walk, wood-fire roasting demo, and a tasting flight of **10 teas and coffees** including cage-free **Kopi Luwak**. **Transport is not included.**
+**How much is ethical Luwak coffee tasting near Ubud?** Sekar Bali Activity lists the [Luwak Coffee Plantation Experience at Umah Kuno](/tours/luwak-coffee-plantation) priced per person by group size — **IDR 850,000** for one guest, **700,000** each for two, **650,000** each for three, and **550,000** each for four or more. The **1.5-hour** visit includes a plantation walk, wood-fire roasting demo, and a tasting flight of **10 teas and coffees** including cage-free **Kopi Luwak**. **Transport is not included.**
 
 > **Key Takeaways**
-> - **IDR 800,000** / person · **min 3 guests** · ~1.5 hours
+> - **IDR 850,000** (1 guest) · **1,400,000** (2) · **1,950,000** (3) · **2,200,000** (4) · ~1.5 hours
+> - Optional licensed guide for the whole visit: English **600,000**, Japanese **700,000**, French **750,000** per booking
 > - Sessions: **10:00–11:30** or **14:00–15:30**
 > - Umah Kuno is in **Tampaksiring**, about **25 minutes** from central Ubud
 > - Civets are **not caged** — beans are collected from the forest floor
 > - This is **not** the short optional Kintamani coffee stop on the [Batur sunrise jeep](/tours/batur-sunrise-jeep-tour)
 
-## What the 800K pays for
+## What the per-person rate pays for
 
 | Included | Not included |
 | --- | --- |
@@ -966,6 +967,7 @@ Temple clothing: [Bali temple dress code](/blog/bali-temple-dress-code).
 | Wood-fire roasting demonstration | Extra food or bottled souvenirs |
 | Hands-on grinding at the mortar | Extra cups beyond the flight |
 | 10-drink tasting board + ethical Luwak | Parking or Grab fares |
+| Plantation host | Licensed guide — optional, English 600,000 · Japanese 700,000 · French 750,000 per booking |
 
 Kids can join the walk and grinding. Non-caffeinated chocolate and teas are available for them — say ages on WhatsApp.
 
@@ -975,7 +977,7 @@ Most tourist-road Luwak stops keep civets in cages so every van can watch an ani
 
 ## How to get there (pickup is extra)
 
-Budget a **Grab / private car** from Ubud, or add the tasting after a [full-day Ubud tour](/tours/full-day-ubud-tour) if the driver has time (ask when you book the car). Do not assume the 800K includes a hotel collect — it does not.
+Budget a **Grab / private car** from Ubud, or add the tasting after a [full-day Ubud tour](/tours/full-day-ubud-tour) if the driver has time (ask when you book the car). Do not assume the per-person rate includes a hotel collect — it does not.
 
 Pairing ideas:
 
@@ -985,8 +987,8 @@ Pairing ideas:
 ## How to book
 
 1. Open [Umah Kuno experience](/tours/luwak-coffee-plantation)
-2. WhatsApp **date, AM or PM, guest count (3+), hotel area**
-3. We confirm the **IDR 800,000 × guests** total — **no payment to inquire**
+2. WhatsApp **date, AM or PM, guest count, hotel area**
+3. We confirm the group-size total — **no payment to inquire**
 
 **Ready?** [Book the coffee experience](/tours/luwak-coffee-plantation) or compare every 2026 price in [things to do near Ubud](/blog/things-to-do-near-ubud-2026).
 `,

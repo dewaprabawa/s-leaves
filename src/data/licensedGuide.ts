@@ -15,10 +15,10 @@ export const GUIDE_LANGUAGES: readonly { key: GuideLanguageKey; name: string }[]
   { key: "french", name: "French" },
 ]
 
-export const GUIDE_ONLY_HOURS = 4
+export const GUIDE_ONLY_HOURS = 8
 export const GUIDE_EXTRA_HOUR_IDR = 150_000
 /** Extra hours bookable online; longer days go to WhatsApp. */
-export const GUIDE_MAX_EXTRA_HOURS = 8
+export const GUIDE_MAX_EXTRA_HOURS = 4
 
 export const GUIDE_EXTRA_HOUR_ADDON = {
   id: "guide-extra-hour",

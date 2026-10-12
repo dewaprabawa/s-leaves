@@ -2004,11 +2004,11 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
     category: "culture",
     area: "Ubud & across Bali",
     pickup: "Guide meets you at your hotel or first stop",
-    duration: "4 Hours (extendable)",
+    duration: "8 Hours (extendable)",
     basePrice: 600000,
     seoTitle: "Licensed Tour Guide Bali | English, Japanese, French",
     seoDescription:
-      "Book a licensed guide in Bali: English IDR 600K, Japanese 700K, French 750K per booking for 4 hours. Extra hour 150K. Guide only or add a private shuttle.",
+      "Book a licensed guide in Bali: English IDR 600K, Japanese 700K, French 750K per booking for 8 hours. Extra hour 150K. Guide only or add a private shuttle.",
     heroImage: {
       url: "/images/guide/bali-guide-thumbs-up.jpg",
       alt: "Smiling Balinese guide in a white udeng headcloth giving a thumbs-up, ready to meet guests",
@@ -2034,21 +2034,21 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
       },
     ],
     shortDescription:
-      "Book a government-licensed Bali tour guide on their own — no fixed tour. English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 4 hours, not per person. Extra hours IDR 150,000 each. The guide meets you at your hotel or first stop. Need transport? Add a separate private shuttle, quoted on WhatsApp.",
+      "Book a government-licensed Bali tour guide on their own — no fixed tour. English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 8 hours, not per person. Extra hours IDR 150,000 each. The guide meets you at your hotel or first stop. Need transport? Add a separate private shuttle, quoted on WhatsApp.",
     fullDescription: `**Licensed Tour Guide in Bali — Guide Only**
 
-Already have a car and driver, or a rental with your own driver? Book just the guide. A government-licensed guide joins you for 4 hours and explains the temples, palaces, villages, and rice terraces on your route — in English, Japanese, or French.
+Already have a car and driver, or a rental with your own driver? Book just the guide. A government-licensed guide joins you for 8 hours and explains the temples, palaces, villages, and rice terraces on your route — in English, Japanese, or French.
 
 ### Price per Booking
 One guide for your whole group. The price does not change with the number of guests.
 
-| Language | 4 hours (per booking) | Extra hour |
+| Language | 8 hours (per booking) | Extra hour |
 |---|---|---|
 | English | IDR 600,000 | IDR 150,000 |
 | Japanese | IDR 700,000 | IDR 150,000 |
 | French | IDR 750,000 | IDR 150,000 |
 
-Example: a French-speaking guide for a 6-hour day is IDR 750,000 + 2 × IDR 150,000 = IDR 1,050,000 for the whole group.
+Example: a French-speaking guide for a 10-hour day is IDR 750,000 + 2 × IDR 150,000 = IDR 1,050,000 for the whole group.
 
 ### Guide Only — Not a Driver-Guide
 Most "Bali guide" listings are really a car charter with a driver who speaks some English. This is the other way round: you book the licensed guide first, and transport is your choice. The guide meets you at your hotel or your first stop, and the guide's own transport is included.
@@ -2068,13 +2068,13 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
     highlights: [
       "Government-licensed guide (KTPP card holder)",
       "English, Japanese, or French — one language per booking",
-      "Priced per booking for 4 hours, not per person",
+      "Priced per booking for 8 hours, not per person",
       "Extra hours IDR 150,000 each",
       "Guide meets you at your hotel or first stop",
       "Guide only — or add a separate private shuttle",
     ],
     included: [
-      "Government-licensed guide for 4 hours",
+      "Government-licensed guide for 8 hours",
       "Guide's own transport to your hotel or first stop",
       "Commentary in English, Japanese, or French",
     ],
@@ -2082,7 +2082,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
       "Car and driver (optional private shuttle, quoted on WhatsApp)",
       "Entrance tickets",
       "Meals and drinks",
-      "Extra hours beyond 4 (IDR 150,000 per hour)",
+      "Extra hours beyond 8 (IDR 150,000 per hour)",
       "Gratuities",
     ],
     itinerary: [
@@ -2094,7 +2094,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
       },
       {
         id: "iti-guide-2",
-        time: "4 hours",
+        time: "8 hours",
         title: "Your route, explained",
         description: "Temples, the Ubud palace and market, villages, or rice terraces — the guide explains history, offerings, and temple etiquette in your language.",
       },
@@ -2111,7 +2111,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         id: "faq-guide-1",
         question: "How much does a licensed tour guide cost in Bali?",
         answer:
-          "English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 4 hours. Each extra hour is IDR 150,000. Entrance tickets, meals, and transport for your group are not included.",
+          "English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 8 hours. Each extra hour is IDR 150,000. Entrance tickets, meals, and transport for your group are not included.",
       },
       {
         id: "faq-guide-2",
@@ -2135,7 +2135,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         id: "faq-guide-5",
         question: "How do extra hours work?",
         answer:
-          "The booking covers 4 hours. Each extra hour is IDR 150,000, the same for English, Japanese, and French. Add hours when booking, or tell the guide on the day and settle with us.",
+          "The booking covers 8 hours. Each extra hour is IDR 150,000, the same for English, Japanese, and French. Add hours when booking, or tell the guide on the day and settle with us.",
       },
       {
         id: "faq-guide-6",

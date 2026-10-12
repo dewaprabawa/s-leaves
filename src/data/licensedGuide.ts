@@ -1,0 +1,41 @@
+export const LICENSED_GUIDE_SLUG = "licensed-tour-guide-bali"
+
+/** Licensed guide price per booking — covers a guide-only booking of GUIDE_ONLY_HOURS, or the whole scheduled tour as an add-on. */
+export const LICENSED_GUIDE_PRICES_IDR = {
+  english: 600_000,
+  japanese: 700_000,
+  french: 750_000,
+} as const
+
+export type GuideLanguageKey = keyof typeof LICENSED_GUIDE_PRICES_IDR
+
+export const GUIDE_LANGUAGES: readonly { key: GuideLanguageKey; name: string }[] = [
+  { key: "english", name: "English" },
+  { key: "japanese", name: "Japanese" },
+  { key: "french", name: "French" },
+]
+
+export const GUIDE_ONLY_HOURS = 4
+export const GUIDE_EXTRA_HOUR_IDR = 150_000
+/** Extra hours bookable online; longer days go to WhatsApp. */
+export const GUIDE_MAX_EXTRA_HOURS = 8
+
+export const GUIDE_EXTRA_HOUR_ADDON = {
+  id: "guide-extra-hour",
+  label: "Extra guide hour",
+  blurb: `Your booking includes ${GUIDE_ONLY_HOURS} hours. Add hours here if your day runs longer.`,
+  perPerson: GUIDE_EXTRA_HOUR_IDR,
+  maxQty: GUIDE_MAX_EXTRA_HOURS,
+  unitLabel: "per hour",
+}
+
+export const GUIDE_MEET_COPY = {
+  title: "Guide meets you at your hotel or first stop",
+  body: "The guide's own transport is included. Your car and driver are not — use your own driver, or book one of our private day tours instead. Drop your hotel or first-stop pin below.",
+  short: "Guide meets you here (guide transport included)",
+}
+
+export const GUIDE_EXTRA_HOURS_INTRO = `The price covers ${GUIDE_ONLY_HOURS} hours with your guide, once per booking — not per person. If you need more time, add extra hours at IDR 150,000 each.`
+
+export const GUIDE_OVERRUN_NOTE =
+  "If the day runs past the tour's normal length, extra guide time is IDR 150,000 per hour."

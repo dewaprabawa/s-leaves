@@ -16,6 +16,16 @@ import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
 import { buildGirlsTripWhatsAppUrl, GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import { getGroupPricedTour } from "@/data/groupPricedTours"
 import {
+  GUIDE_EXTRA_HOUR_ADDON,
+  GUIDE_EXTRA_HOUR_IDR,
+  GUIDE_EXTRA_HOURS_INTRO,
+  GUIDE_LANGUAGES,
+  GUIDE_MEET_COPY,
+  GUIDE_ONLY_HOURS,
+  LICENSED_GUIDE_PRICES_IDR,
+  LICENSED_GUIDE_SLUG,
+} from "@/data/licensedGuide"
+import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
   COOKING_CLASS_PRIVATE_SOLO_IDR,
@@ -171,6 +181,8 @@ function primaryBookLabel(tourSlug: string): string {
       return "Book Full-Day Tour"
     case "half-day-ubud-tanah-lot-tour":
       return "Book Tanah Lot Tour"
+    case LICENSED_GUIDE_SLUG:
+      return "Book a Guide"
     default:
       return "Book This Experience"
   }
@@ -187,6 +199,22 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   if (mapped) {
     const configs = BOOKABLE_TOURS.filter((t) => mapped.includes(t.id))
     if (configs.length) return configs
+  }
+
+  if (props.tourSlug === LICENSED_GUIDE_SLUG) {
+    return GUIDE_LANGUAGES.map((lang) => ({
+      id: `${props.tourId}-${lang.key}`,
+      title: `Licensed guide — ${lang.name} (${GUIDE_ONLY_HOURS} hours)`,
+      times: DEFAULT_TIMES,
+      adultPrice: LICENSED_GUIDE_PRICES_IDR[lang.key],
+      kidPrice: null,
+      minPax: 1,
+      perBooking: true,
+      pickupIncluded: true,
+      includedMeetCopy: GUIDE_MEET_COPY,
+      optionalAddons: [GUIDE_EXTRA_HOUR_ADDON],
+      optionalAddonsIntro: GUIDE_EXTRA_HOURS_INTRO,
+    }))
   }
 
   const isPrivateDayTour =
@@ -288,6 +316,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const { promoPrice, standardPrice, tierLabel } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
   const hasPromo = standardPrice > promoPrice
   const groupPricing = getGroupPricedTour(props.tourSlug)
+  const isGuideOnly = props.tourSlug === LICENSED_GUIDE_SLUG
   const consultationActivity =
     props.tourSlug === "balinese-cooking-class"
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
@@ -323,7 +352,13 @@ export default function TourBookingCard(props: TourBookingCardProps) {
         <div className="mx-auto flex max-w-7xl items-center gap-2">
           <div className="min-w-0 flex-1">
             <p className="text-[11px] font-medium text-brand-green-light leading-none">
-              {isPrivateItinerary ? "Consult from" : groupPricing ? "From · 4+ guests" : "From"}
+              {isPrivateItinerary
+                ? "Consult from"
+                : groupPricing
+                  ? "From · 4+ guests"
+                  : isGuideOnly
+                    ? "From · per booking"
+                    : "From"}
             </p>
             <div className="flex items-baseline gap-2">
               <span className="font-display text-lg font-bold text-brand-green leading-tight truncate">
@@ -423,6 +458,12 @@ export default function TourBookingCard(props: TourBookingCardProps) {
                 })
                 .join(" · ")}
               . Licensed guide optional.
+            </p>
+          ) : null}
+          {isGuideOnly ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              {GUIDE_LANGUAGES.map((lang) => `${lang.name} ${formatIdr(LICENSED_GUIDE_PRICES_IDR[lang.key])}`).join(" · ")}{" "}
+              per booking for {GUIDE_ONLY_HOURS} hours — not per person. Extra hour {formatIdr(GUIDE_EXTRA_HOUR_IDR)}.
             </p>
           ) : null}
           {props.tourSlug === "bali-atv-adventure" ? (

@@ -35,6 +35,7 @@ export type ActivityKeywordSlug =
   | 'griya-beji-waterfall'
   | 'bali-private-itinerary'
   | 'bali-motorbike-traveling-trip'
+  | 'licensed-tour-guide-bali'
 
 export type KeywordCluster = {
   /** What travelers type first (H1 / title language). */
@@ -234,6 +235,28 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'private Ubud tour price',
     ],
     compare: [],
+  },
+  'licensed-tour-guide-bali': {
+    head: [
+      'licensed tour guide Bali',
+      'Bali tour guide',
+      'private tour guide Bali',
+      'Japanese speaking guide Bali',
+      'French speaking guide Bali',
+      'English speaking guide Bali',
+    ],
+    book: [
+      'hire a tour guide in Bali',
+      'Bali tour guide price',
+      'Bali guide per hour',
+      'licensed guide Ubud',
+      'guide only no driver Bali',
+    ],
+    compare: [
+      'licensed guide vs driver guide Bali',
+      'do I need a licensed guide in Bali',
+      'Bali tour guide license KTPP',
+    ],
   },
   'half-day-ubud-tanah-lot-tour': {
     head: [
@@ -468,6 +491,7 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'griya-beji-waterfall': flattenCluster(KEYWORD_CLUSTERS['griya-beji-waterfall']),
   'bali-private-itinerary': flattenCluster(KEYWORD_CLUSTERS['bali-private-itinerary']),
   'bali-motorbike-traveling-trip': flattenCluster(KEYWORD_CLUSTERS['bali-motorbike-traveling-trip']),
+  'licensed-tour-guide-bali': flattenCluster(KEYWORD_CLUSTERS['licensed-tour-guide-bali']),
 }
 
 export const COMBO_KEYWORDS = [
@@ -528,6 +552,7 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
   'half-day-ubud-tanah-lot-tour',
   'bali-private-itinerary',
   'bali-motorbike-traveling-trip',
+  'licensed-tour-guide-bali',
 ]
 
 /** Homepage / sitewide meta — head term per activity + niche modifiers. */
@@ -780,6 +805,9 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'luwak-coffee-ethical-sourcing': 'luwak-coffee-plantation',
   'how-to-spot-ethical-luwak-coffee-in-bali': 'luwak-coffee-plantation',
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
+  'licensed-tour-guide-bali-2026': 'licensed-tour-guide-bali',
+  'japanese-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
+  'french-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'half-day-ubud-tanah-lot-tour',
   'bali-motorbike-tour-price-2026': 'bali-motorbike-traveling-trip',
   'bali-tours-for-japanese-chinese-travelers-2026': 'bali-motorbike-traveling-trip',
@@ -835,6 +863,24 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
 }
 
 const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
+  'licensed-tour-guide-bali-2026': [
+    'licensed tour guide Bali price 2026',
+    'how much is a tour guide in Bali',
+    'Bali guide without driver',
+    'SE 7 2025 Bali licensed guide',
+  ],
+  'japanese-speaking-guide-bali-2026': [
+    'Japanese guide Bali',
+    'Japanese speaking tour guide Ubud',
+    'バリ島 日本語ガイド',
+    'バリ島 ガイド 料金',
+  ],
+  'french-speaking-guide-bali-2026': [
+    'French guide Bali',
+    'French speaking tour guide Ubud',
+    'guide francophone Bali',
+    'guide francophone Ubud prix',
+  ],
   'bali-atv-all-new-bali-adventure-location-guide': [
     'All New Bali Adventure',
     'All New Bali Adventure location',

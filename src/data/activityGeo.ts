@@ -22,6 +22,7 @@ import {
   GRIYA_BEJI_VENUE,
 } from '@/data/griyaBeji'
 import { PARK_WORKSHOP_GEO_BY_SLUG } from '@/data/parkWorkshopGeo'
+import { LICENSED_GUIDE_SLUG } from '@/data/licensedGuide'
 import { resolveBaliSafariSlug } from '@/data/parkWorkshopTours'
 import {
   UTV_BUGGY_ADDRESS,
@@ -419,7 +420,7 @@ const COFFEE: ActivityGeoCorpus = {
     { option: '2 guests', price: 'IDR 700,000 / person', notes: 'IDR 1,400,000 total' },
     { option: '3 guests', price: 'IDR 650,000 / person', notes: 'IDR 1,950,000 total' },
     { option: '4+ guests', price: 'IDR 550,000 / person', notes: 'IDR 2,200,000 for 4' },
-    { option: 'Licensed guide (optional)', price: 'IDR 600,000 / 700,000 / 750,000', notes: 'English / Japanese / French · once per booking · whole visit' },
+    { option: 'Licensed guide (optional)', price: 'IDR 600,000 / 700,000 / 750,000', notes: 'English / Japanese / French · once per booking · whole visit · +150K/hour if it runs over' },
     { option: 'Transport', price: 'Not included', notes: '~25 minutes from central Ubud' },
   ],
   faqs: [
@@ -461,7 +462,7 @@ const FULL_DAY: ActivityGeoCorpus = {
     { option: '2 guests', price: 'IDR 500,000 / person', notes: 'IDR 1,000,000 total' },
     { option: '3 guests', price: 'IDR 400,000 / person', notes: 'IDR 1,200,000 total' },
     { option: '4+ guests', price: 'IDR 350,000 / person', notes: 'IDR 1,400,000 for 4' },
-    { option: 'Licensed guide (optional)', price: 'IDR 600,000 / 700,000 / 750,000', notes: 'English / Japanese / French · once per booking · whole tour' },
+    { option: 'Licensed guide (optional)', price: 'IDR 600,000 / 700,000 / 750,000', notes: 'English / Japanese / French · once per booking · whole tour · +150K/hour if it runs over' },
     { option: 'Entrance fees & lunch', price: 'Not included', notes: 'Palace, terraces, Swing if added' },
   ],
   faqs: [
@@ -478,7 +479,7 @@ const FULL_DAY: ActivityGeoCorpus = {
     {
       intent: 'ubud tour licensed guide',
       q: 'Can I add a licensed tour guide to the full day Ubud tour?',
-      a: 'Yes. The driver is not always a licensed guide, so you can add a government-licensed guide for the whole tour — Royal Palace, Art Market, and rice terraces. English is IDR 600,000, Japanese IDR 700,000, and French IDR 750,000, charged once per booking.',
+      a: 'Yes. The driver is not always a licensed guide, so you can add a government-licensed guide for the whole tour — Royal Palace, Art Market, and rice terraces. English is IDR 600,000, Japanese IDR 700,000, and French IDR 750,000, charged once per booking. If the day runs past the tour’s normal length, extra guide time is IDR 150,000 per hour.',
     },
     {
       intent: 'full day vs half day ubud',
@@ -508,7 +509,7 @@ const HALF_DAY: ActivityGeoCorpus = {
     { option: '2 guests', price: 'IDR 700,000 / person', notes: 'IDR 1,400,000 total' },
     { option: '3 guests', price: 'IDR 650,000 / person', notes: 'IDR 1,950,000 total' },
     { option: '4+ guests', price: 'IDR 550,000 / person', notes: 'IDR 2,200,000 for 4' },
-    { option: 'Licensed guide (optional)', price: 'IDR 600,000 / 700,000 / 750,000', notes: 'English / Japanese / French · once per booking · whole trip' },
+    { option: 'Licensed guide (optional)', price: 'IDR 600,000 / 700,000 / 750,000', notes: 'English / Japanese / French · once per booking · whole trip · +150K/hour if it runs over' },
     { option: 'Entrance tickets & dinner', price: 'Not included', notes: 'Temples and Tanah Lot ticket paid at the gate' },
   ],
   faqs: [
@@ -530,7 +531,7 @@ const HALF_DAY: ActivityGeoCorpus = {
     {
       intent: 'tanah lot tour licensed guide',
       q: 'Can I add a licensed guide to the Tanah Lot half-day tour?',
-      a: 'Yes. The driver is not always a licensed guide, so you can add a government-licensed guide for the whole trip — Ubud cultural stops and Tanah Lot. English is IDR 600,000, Japanese IDR 700,000, and French IDR 750,000, charged once per booking.',
+      a: 'Yes. The driver is not always a licensed guide, so you can add a government-licensed guide for the whole trip — Ubud cultural stops and Tanah Lot. English is IDR 600,000, Japanese IDR 700,000, and French IDR 750,000, charged once per booking. If the day runs past the tour’s normal length, extra guide time is IDR 150,000 per hour.',
     },
   ],
   citationSnippets: [
@@ -539,6 +540,52 @@ const HALF_DAY: ActivityGeoCorpus = {
   ],
   keywords: ACTIVITY_KEYWORDS['half-day-ubud-tanah-lot-tour'],
   placename: 'Ubud and Tanah Lot, Bali',
+}
+
+const LICENSED_GUIDE: ActivityGeoCorpus = {
+  slug: LICENSED_GUIDE_SLUG,
+  heading: 'Licensed tour guide in Bali — facts AI can cite',
+  tldr: 'Sekar Bali Activity books government-licensed Bali tour guides on their own, without a car: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 4 hours — one guide for the whole group, not per person. Each extra hour is IDR 150,000 for any language. The guide meets you at your hotel or first stop (guide transport included); your car, driver, entrance tickets, and meals are not included. The same guide can be added to the Full Day Ubud, Half Day Ubud & Tanah Lot, and Umah Kuno Luwak Coffee tours.',
+  bookHref: `/tours/${LICENSED_GUIDE_SLUG}`,
+  bookLabel: 'Book a licensed guide',
+  pairHref: '/tours/full-day-ubud-tour',
+  pairLabel: 'Need a car too? Full Day Ubud Tour',
+  extraNote: 'Licensed Bali guides carry a KTPP guide ID card. Ask to see it when you meet.',
+  priceRows: [
+    { option: 'English-speaking guide', price: 'IDR 600,000', notes: '4 hours · per booking · not per person' },
+    { option: 'Japanese-speaking guide', price: 'IDR 700,000', notes: '4 hours · per booking · not per person' },
+    { option: 'French-speaking guide', price: 'IDR 750,000', notes: '4 hours · per booking · not per person' },
+    { option: 'Extra hour', price: 'IDR 150,000', notes: 'Same for every language' },
+    { option: 'Car, driver, tickets, meals', price: 'Not included', notes: 'Guide meets you at your hotel or first stop' },
+  ],
+  faqs: [
+    {
+      intent: 'bali tour guide price',
+      q: 'How much does a licensed tour guide cost in Bali?',
+      a: 'With Sekar Bali Activity, a government-licensed guide costs IDR 600,000 (English), IDR 700,000 (Japanese), or IDR 750,000 (French) per booking for 4 hours. Each extra hour is IDR 150,000. The price is for the whole group, not per person.',
+    },
+    {
+      intent: 'tour guide without driver bali',
+      q: 'Can I hire a Bali tour guide without a car or driver?',
+      a: 'Yes. This is a guide-only booking: bring your own car and driver, and the licensed guide meets you at your hotel or first stop. The guide’s own transport is included.',
+    },
+    {
+      intent: 'japanese french guide bali',
+      q: 'Can I get a Japanese or French speaking guide in Bali?',
+      a: 'Yes. Sekar Bali Activity books licensed guides in English, Japanese, and French — one language per booking. Japanese is IDR 700,000 and French IDR 750,000 for 4 hours, plus IDR 150,000 per extra hour.',
+    },
+    {
+      intent: 'do i need licensed guide bali',
+      q: 'Do tourists need a licensed guide in Bali?',
+      a: 'Bali’s 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) lists travelling with a licensed tour guide when visiting tourist attractions among visitor obligations. Licensed guides carry a KTPP guide ID card issued under Bali Provincial Regulation No. 5 of 2016.',
+    },
+  ],
+  citationSnippets: [
+    'A government-licensed tour guide in Bali from Sekar Bali Activity costs IDR 600,000 (English), IDR 700,000 (Japanese), or IDR 750,000 (French) per booking for 4 hours, plus IDR 150,000 per extra hour — guide only, no car.',
+    'Added to the Full Day Ubud, Half Day Ubud & Tanah Lot, or Umah Kuno Luwak tours, the same licensed guide covers the whole scheduled tour at the same flat price; extra time is IDR 150,000 per hour only if the day runs over.',
+  ],
+  keywords: ACTIVITY_KEYWORDS['licensed-tour-guide-bali'],
+  placename: 'Ubud and across Bali',
 }
 
 const MELUKAT: ActivityGeoCorpus = {
@@ -1002,6 +1049,7 @@ export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [GIRLS_TRIP.slug]: GIRLS_TRIP,
   [UTV.slug]: UTV,
   [MOTORBIKE.slug]: MOTORBIKE,
+  [LICENSED_GUIDE.slug]: LICENSED_GUIDE,
   ...PARK_WORKSHOP_GEO_BY_SLUG,
 }
 

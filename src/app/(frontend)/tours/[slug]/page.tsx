@@ -42,6 +42,13 @@ import {
 } from "@/data/jeepGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
 import { getGroupPricedTour } from "@/data/groupPricedTours"
+import {
+  GUIDE_EXTRA_HOUR_IDR,
+  GUIDE_LANGUAGES,
+  GUIDE_ONLY_HOURS,
+  LICENSED_GUIDE_PRICES_IDR,
+  LICENSED_GUIDE_SLUG,
+} from "@/data/licensedGuide"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, PICKUP_FEE_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
@@ -675,6 +682,46 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  if (tour.slug === LICENSED_GUIDE_SLUG) {
+    const prices = GUIDE_LANGUAGES.map((lang) => LICENSED_GUIDE_PRICES_IDR[lang.key])
+    return {
+      ...base,
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(Math.min(...prices)),
+        highPrice: String(Math.max(...prices)),
+        priceCurrency: "IDR",
+        offerCount: GUIDE_LANGUAGES.length,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: GUIDE_LANGUAGES.map((lang) => ({
+          "@type": "Offer",
+          name: `${lang.name}-speaking licensed guide — ${GUIDE_ONLY_HOURS} hours`,
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: LICENSED_GUIDE_PRICES_IDR[lang.key],
+            priceCurrency: "IDR",
+            unitText: `per booking, ${GUIDE_ONLY_HOURS} hours`,
+          },
+          availability: "https://schema.org/InStock",
+          url: `${SITE_URL}/tours/${tour.slug}`,
+        })),
+        addOn: {
+          "@type": "Offer",
+          name: "Extra guide hour",
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: GUIDE_EXTRA_HOUR_IDR,
+            priceCurrency: "IDR",
+            unitText: "per hour",
+          },
+        },
+      },
+    }
+  }
+
   return {
     ...base,
     offers: {
@@ -1239,6 +1286,13 @@ export default async function TourPage({ params }: Props) {
                         {formatIdr(CYCLING_LIST_IDR)}
                       </span>
                       Promo {formatIdr(CYCLING_PROMO_IDR)} / person · 625K (2) · 600K (3+)
+                    </span>
+                  ) : tour.slug === LICENSED_GUIDE_SLUG ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      {GUIDE_LANGUAGES.map(
+                        (lang) => `${lang.name} ${formatIdr(LICENSED_GUIDE_PRICES_IDR[lang.key])}`,
+                      ).join(" · ")}{" "}
+                      / {GUIDE_ONLY_HOURS} hrs per booking · +{formatIdr(GUIDE_EXTRA_HOUR_IDR)} / extra hour
                     </span>
                   ) : groupTiers ? (
                     <span className="text-sm font-bold text-brand-green">

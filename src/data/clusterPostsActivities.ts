@@ -753,6 +753,8 @@ If you stay in **Canggu, Jimbaran, or Nusa Dua**, the motorbike shuttle is **IDR
 
 An International Driving Permit is recommended if you ride. Say **pillion** if you do not want to drive Bali traffic. Prefer air-con? The [Full Day Ubud Tour](/tours/full-day-ubud-tour) is a private car priced per person: **IDR 600,000** for one guest, **350,000** each for 4+.
 
+Want the day explained in Japanese? Book a [licensed Japanese-speaking guide](/blog/japanese-speaking-guide-bali-2026) — **IDR 700,000** per booking for 4 hours, or added to the Full Day Ubud Tour for the whole day.
+
 ## Paid targeting (fastest for these origin countries)
 
 Keep the landing page in English. In Google Ads or Meta, set **location = Japan, South Korea, China, United Arab Emirates, Saudi Arabia, and Qatar** (add Hong Kong and Taiwan if you want Chinese-speaking guests who already use Google). Set **ad language = English**. Send traffic to the existing tour URLs — not a translated clone.

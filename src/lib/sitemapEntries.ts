@@ -21,6 +21,7 @@ const MONEY_TOUR_SLUGS = new Set([
   'ubud-ricefield-cycling-tour',
   'bali-atv-adventure',
   'atv-rafting-combo',
+  'atv-premium-package-bali',
   'whitewater-rafting',
   'canyon-tubing',
   'bali-private-itinerary',
@@ -32,6 +33,10 @@ const MONEY_TOUR_SLUGS = new Set([
 ])
 
 const HIGH_BLOG_SLUGS = new Set([
+  'atv-premium-package-bali-2026',
+  'group-atv-package-ubud-2026',
+  'atv-package-private-transfer-bali-2026',
+  'atv-rafting-premium-package-2026',
   'licensed-tour-guide-bali-2026',
   'japanese-speaking-guide-bali-2026',
   'french-speaking-guide-bali-2026',

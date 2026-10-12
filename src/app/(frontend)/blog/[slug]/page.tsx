@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Calendar, User } from 'lucide-react'
 import { BLOG_POSTS } from '@/data/blog'
+import { ATV_PREMIUM_POST_SLUGS } from '@/data/atvPremium'
 import { getBlogKeywords, keywordsToCsv } from '@/data/activityKeywords'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -101,6 +102,7 @@ export default async function BlogPostPage({ params }: Props) {
   const isBaturJeepPost = BATUR_JEEP_POST_SLUGS.has(post.slug)
   const isCookingPost = COOKING_POST_SLUGS.has(post.slug)
   const isCyclingPost = CYCLING_POST_SLUGS.has(post.slug) && !isCookingPost
+  const isAtvPremiumPost = ATV_PREMIUM_POST_SLUGS.has(post.slug)
   const isAtvPost =
     post.slug.includes('atv') || post.slug === 'atv-river-tubing-wos-river-bali'
   const isActivityHubPost =
@@ -155,6 +157,12 @@ export default async function BlogPostPage({ params }: Props) {
                 name: 'Wos River Canyon Tubing near Ubud',
                 url: 'https://www.sekarbaliactivity.com/tours/canyon-tubing',
               }
+            : isAtvPremiumPost
+              ? {
+                  '@type': 'TouristTrip',
+                  name: 'ATV Premium Package near Ubud',
+                  url: 'https://www.sekarbaliactivity.com/tours/atv-premium-package-bali',
+                }
             : isAtvPost
               ? {
                   '@type': 'TouristTrip',

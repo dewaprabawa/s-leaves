@@ -796,7 +796,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Tanah Lot sunset half-day 2026',
       href: '/blog/half-day-ubud-tanah-lot-sunset-tour-2026',
-      blurb: 'From IDR 450K · 6 hours · entrance fees not included.',
+      blurb: '850K solo, 550K each for 4+ · 6 hours · entrance fees not included.',
     },
     {
       title: 'Full day vs half day',

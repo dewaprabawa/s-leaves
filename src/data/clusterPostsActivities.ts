@@ -544,7 +544,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | Private Batur jeep | from **750,000** (3+ tracking) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
 | Umah Kuno Luwak | **800,000** (min 3) | 1.5 hrs | Not included | [Coffee](/tours/luwak-coffee-plantation) |
 | Full day Ubud tour | **600,000** (1) · **350,000** each (4+) | 10 hrs | Private car | [Full day](/tours/full-day-ubud-tour) |
-| Half day + Tanah Lot | **850,000** | 6 hrs | Private shuttle · tickets not included | [Sunset tour](/tours/half-day-ubud-tanah-lot-tour) |
+| Half day + Tanah Lot | **850,000** (1) · **550,000** each (4+) | 6 hrs | Private shuttle · tickets not included | [Sunset tour](/tours/half-day-ubud-tanah-lot-tour) |
 | DPS → Ubud transfer | **700,000** / car | One way | Flight tracking | [Transfers](/transfers) |
 | Bali Bird Park | **585,000** | 1 day | Quoted | [Bird Park](/tours/bali-bird-park) |
 | Bali Safari packages | **1,000,000–2,300,000** | 1 day / evening | Quoted | [Bali Safari](/tours/bali-safari-and-marine-park) |
@@ -589,7 +589,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Umah Kuno Luwak tasting](/tours/luwak-coffee-plantation)** is **IDR 800,000** per person, **minimum 3 guests**, 1.5 hours in Tampaksiring. Cage-free civets only. **Transport is not included** (~25 minutes from central Ubud). Price guide: [Umah Kuno Luwak price 2026](/blog/luwak-coffee-plantation-umah-kuno-price-2026).
 
-**[Full day Ubud tour](/tours/full-day-ubud-tour)** — **IDR 600,000** for one guest, **350,000** each for 4+ — private car, English-speaking driver, typically palace, market, Tegalalang. Entrance fees and lunch not included. **[Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour)** **IDR 850,000** private shuttle for the coastal sunset — temple tickets not included. Guides: [full-day Ubud tour](/blog/full-day-ubud-tour-guide-2026) · [Tanah Lot half day](/blog/half-day-ubud-tanah-lot-sunset-tour-2026).
+**[Full day Ubud tour](/tours/full-day-ubud-tour)** — **IDR 600,000** for one guest, **350,000** each for 4+ — private car, English-speaking driver, typically palace, market, Tegalalang. Entrance fees and lunch not included. **[Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour)** — **IDR 850,000** for one guest, **550,000** each for 4+ — private shuttle for the coastal sunset — temple tickets not included. Guides: [full-day Ubud tour](/blog/full-day-ubud-tour-guide-2026) · [Tanah Lot half day](/blog/half-day-ubud-tanah-lot-sunset-tour-2026).
 
 **[Bali Motorbike Tour](/tours/bali-motorbike-traveling-trip)** is a guided **125–160cc automatic** scooter day. Promo from **IDR 450,000** per bike (Ubud, was 550,000) to **IDR 800,000** (East Bali, was 900,000). Attraction tickets are **not** included. Pickup is at the area you choose. Shuttle from **Canggu, Jimbaran, or Nusa Dua is IDR 550,000 once per booking**. Ride yourself (IDP recommended) or pillion. Prices: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026) · compare: [motorbike vs private driver](/blog/bali-motorbike-tour-vs-private-driver-2026) · [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026) · [waterfall scooter](/blog/ubud-waterfall-scooter-tour-2026) · [which wheels](/blog/which-bali-wheels-2026).
 
@@ -834,7 +834,7 @@ An International Driving Permit is **recommended** if you ride. Say pillion on W
 > - You set the pace; the published order is a guide
 > - Palace, market, and Tegalalang tickets are paid on site
 > - Bali Swing near Tegalalang is optional and extra
-> - Tight schedule? See the [Tanah Lot half day](/tours/half-day-ubud-tanah-lot-tour) shuttle IDR 850,000 (tickets not included)
+> - Tight schedule? See the [Tanah Lot half day](/tours/half-day-ubud-tanah-lot-tour) shuttle — IDR 850,000 for one guest, 550,000 each for 4+ (tickets not included)
 
 ## What you pay vs what you spend on site
 
@@ -865,7 +865,7 @@ Want quieter paddies instead of Tegalalang crowds? Swap the afternoon for [Pejen
 | Option | From (IDR) | Best when |
 | --- | --- | --- |
 | [Full day Ubud tour](/tours/full-day-ubud-tour) | 600,000 (1) · 350,000 each (4+) | You want palace + market + terraces in one car |
-| [Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) | 850,000 shuttle | You need a 6-hour coastal sunset (tickets extra) |
+| [Half day + Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) | 850,000 (1) · 550,000 each (4+) | You need a 6-hour coastal sunset (tickets extra) |
 | [Cycling + Tumang cooking](/book?activity=combo-cycling-cooking) | Cycling promo 650K + cooking 450K | You want village + kitchen, not temples |
 | [Swing Heaven + Tumang cooking](/book?activity=combo-swing-cooking) | Swing 530K + cooking 450K | You want Ayung jungle photos + kitchen |
 | [Motorbike traveling trip](/tours/bali-motorbike-traveling-trip) | 450,000 / scooter | You want to ride, not sit in the car |
@@ -884,17 +884,18 @@ Temple dress: shoulders and knees covered. Short [sarong guide](/blog/bali-templ
   {
     slug: 'half-day-ubud-tanah-lot-sunset-tour-2026',
     title: 'Half Day Ubud & Tanah Lot Sunset Tour 2026',
-    seoTitle: 'Tanah Lot Sunset Clock | Shuttle IDR 850K',
+    seoTitle: 'Tanah Lot Sunset Clock | From IDR 550K pp',
     excerpt:
-      'Private half-day shuttle from Ubud to Tanah Lot sunset — IDR 850,000, about 6 hours. Driver only; temple tickets and dinner not included. WhatsApp booking.',
+      'Private half-day shuttle from Ubud to Tanah Lot sunset: IDR 850,000 solo, 700,000 each for 2, 550,000 each for 4+. Licensed guide optional. Tickets extra.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80',
     content: `
-**How much is a Tanah Lot sunset tour from Ubud?** Sekar Bali Activity’s [Half Day Ubud & Tanah Lot Sunset Tour](/tours/half-day-ubud-tanah-lot-tour) is **IDR 850,000** for a **private shuttle** (car + **English-speaking driver**) for about **6 hours**. Afternoon cultural stops around Ubud, then the **Tanah Lot** sea-temple sunset. **Temple tickets and dinner are not included** — pay entrance fees at the gate.
+**How much is a Tanah Lot sunset tour from Ubud?** Sekar Bali Activity’s [Half Day Ubud & Tanah Lot Sunset Tour](/tours/half-day-ubud-tanah-lot-tour) is priced per person by group size — **IDR 850,000** for one guest, **700,000** each for two, **650,000** each for three, and **550,000** each for four or more — for a **private shuttle** (car + **English-speaking driver**) for about **6 hours**. Afternoon cultural stops around Ubud, then the **Tanah Lot** sea-temple sunset. **Temple tickets and dinner are not included** — pay entrance fees at the gate.
 
 > **Key Takeaways**
-> - **IDR 850,000** · private shuttle only · ~6 hours
+> - **IDR 850,000** (1 guest) · **1,400,000** (2) · **1,950,000** (3) · **2,200,000** (4) · private shuttle · ~6 hours
+> - Optional licensed guide for the whole trip: English **600,000**, Japanese **700,000**, French **750,000** per booking
 > - Temple tickets **not included** (Ubud stops + Tanah Lot)
 > - Typical pickup **around 1:00 PM** — we shift it with sunset season
 > - Bring a sarong or rent one on site
@@ -913,14 +914,15 @@ This is **not** a shared sunset bus. You have your own driver, so Ubud stops can
 
 Exact times move with the season. We confirm the recommended pickup when you send the **date**.
 
-## What is not in the 850K
+## What is not in the per-person rate
 
 - Tanah Lot (and other temple) **entrance tickets**
 - **Dinner**
 - Sarong rental if you did not bring one
 - Personal shopping
+- A licensed guide — optional: English 600,000 · Japanese 700,000 · French 750,000 per booking
 
-Driver, car, and mineral water **are** included. See [morning vs afternoon tours](/blog/morning-vs-afternoon-tours-bali) if you are choosing between a dawn jeep and a sunset coast.
+Driver, car, and mineral water **are** included. The driver is not always a licensed guide; add one if you want the temples explained in English, Japanese, or French. See [morning vs afternoon tours](/blog/morning-vs-afternoon-tours-bali) if you are choosing between a dawn jeep and a sunset coast.
 
 ## Half day vs full day
 

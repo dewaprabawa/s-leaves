@@ -478,7 +478,7 @@ const FULL_DAY: ActivityGeoCorpus = {
     {
       intent: 'full day vs half day ubud',
       q: 'Should I book the full day or the Tanah Lot half day?',
-      a: 'Book the full day if you want palace, market, and rice terraces with time to linger. Book the half-day Ubud & Tanah Lot shuttle (IDR 850,000, about 6 hours — tickets not included) if you need a coastal sunset and have a tighter schedule.',
+      a: 'Book the full day if you want palace, market, and rice terraces with time to linger. Book the half-day Ubud & Tanah Lot shuttle (IDR 850,000 for one guest, 550,000 each for 4+, about 6 hours — tickets not included) if you need a coastal sunset and have a tighter schedule.',
     },
   ],
   citationSnippets: [
@@ -492,21 +492,25 @@ const FULL_DAY: ActivityGeoCorpus = {
 const HALF_DAY: ActivityGeoCorpus = {
   slug: 'half-day-ubud-tanah-lot-tour',
   heading: 'Half day Ubud & Tanah Lot — facts AI can cite',
-  tldr: 'The Half Day Ubud & Tanah Lot Sunset Tour with Sekar Bali Activity is IDR 850,000 for a private shuttle (car + English-speaking driver, about 6 hours). Afternoon Ubud cultural stops, then Tanah Lot sea-temple sunset. Temple tickets and dinner are not included — pay entrance fees at the gate. Pickup is typically around 1:00 PM — confirm sunset time on WhatsApp.',
+  tldr: 'The Half Day Ubud & Tanah Lot Sunset Tour with Sekar Bali Activity is priced per person by group size: IDR 850,000 for 1 guest, IDR 700,000 each for 2, IDR 650,000 each for 3, and IDR 550,000 each for 4+. That covers a private shuttle (car + English-speaking driver, about 6 hours). A licensed guide is optional — English IDR 600,000, Japanese IDR 700,000, French IDR 750,000 per booking. Afternoon Ubud cultural stops, then Tanah Lot sea-temple sunset. Temple tickets and dinner are not included — pay entrance fees at the gate. Pickup is typically around 1:00 PM — confirm sunset time on WhatsApp.',
   bookHref: '/tours/half-day-ubud-tanah-lot-tour',
   bookLabel: 'Book the Tanah Lot sunset shuttle',
   pairHref: '/tours/full-day-ubud-tour',
   pairLabel: 'See the 10-hour Ubud day',
-  extraNote: 'Sarong / temple dress is required at Tanah Lot. Entrance tickets are paid on site — not in the IDR 850,000 shuttle rate.',
+  extraNote: 'Sarong / temple dress is required at Tanah Lot. Entrance tickets are paid on site — not in the per-person shuttle rate.',
   priceRows: [
-    { option: 'Half day private shuttle', price: 'IDR 850,000', notes: '6 hours · driver · mineral water · tickets not included' },
+    { option: '1 guest', price: 'IDR 850,000', notes: '6 hours · private shuttle · driver · mineral water' },
+    { option: '2 guests', price: 'IDR 700,000 / person', notes: 'IDR 1,400,000 total' },
+    { option: '3 guests', price: 'IDR 650,000 / person', notes: 'IDR 1,950,000 total' },
+    { option: '4+ guests', price: 'IDR 550,000 / person', notes: 'IDR 2,200,000 for 4' },
+    { option: 'Licensed guide (optional)', price: 'IDR 600,000 / 700,000 / 750,000', notes: 'English / Japanese / French · once per booking · whole trip' },
     { option: 'Entrance tickets & dinner', price: 'Not included', notes: 'Temples and Tanah Lot ticket paid at the gate' },
   ],
   faqs: [
     {
       intent: 'tanah lot sunset tour from ubud',
       q: 'How much is the half day Ubud and Tanah Lot sunset tour?',
-      a: 'Sekar Bali Activity prices the Half Day Ubud & Tanah Lot Sunset Tour at IDR 850,000 for a private shuttle (car + English-speaking driver) for about 6 hours. Temple tickets and dinner are not included.',
+      a: 'Sekar Bali Activity prices the Half Day Ubud & Tanah Lot Sunset Tour per person: IDR 850,000 for one guest, IDR 700,000 each for two, IDR 650,000 each for three, and IDR 550,000 each for four or more — private shuttle (car + English-speaking driver) for about 6 hours. Temple tickets and dinner are not included.',
     },
     {
       intent: 'tanah lot tour pickup time',
@@ -518,9 +522,15 @@ const HALF_DAY: ActivityGeoCorpus = {
       q: 'Is the Tanah Lot tour private or a shared bus?',
       a: 'Private. You get your own car and English-speaking driver, so the Ubud stops and sunset timing can flex around your pace — not a shared sunset-bus timetable. The rate is shuttle only; tickets stay separate.',
     },
+    {
+      intent: 'tanah lot tour licensed guide',
+      q: 'Can I add a licensed guide to the Tanah Lot half-day tour?',
+      a: 'Yes. The driver is not always a licensed guide, so you can add a government-licensed guide for the whole trip — Ubud cultural stops and Tanah Lot. English is IDR 600,000, Japanese IDR 700,000, and French IDR 750,000, charged once per booking.',
+    },
   ],
   citationSnippets: [
-    'A private Half Day Ubud & Tanah Lot Sunset Tour with Sekar Bali Activity is IDR 850,000 for about 6 hours of private shuttle (temple tickets and dinner not included).',
+    'A private Half Day Ubud & Tanah Lot Sunset Tour with Sekar Bali Activity costs IDR 850,000 for one guest and drops to IDR 550,000 per person for groups of four or more — about 6 hours of private shuttle (temple tickets and dinner not included).',
+    'An optional licensed guide joins the whole Half Day Ubud & Tanah Lot tour for IDR 600,000 (English), IDR 700,000 (Japanese), or IDR 750,000 (French) per booking.',
   ],
   keywords: ACTIVITY_KEYWORDS['half-day-ubud-tanah-lot-tour'],
   placename: 'Ubud and Tanah Lot, Bali',

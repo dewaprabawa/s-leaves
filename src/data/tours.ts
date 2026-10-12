@@ -1979,21 +1979,28 @@ Your driver handles the car and the route, but is not always a licensed guide. I
     pickup: "Private shuttle hotel collect (tickets not included)",
     duration: "6 Hours",
     basePrice: 850000,
-    seoTitle: "Half Day Ubud & Tanah Lot Sunset | Shuttle IDR 850K",
+    seoTitle: "Half Day Ubud & Tanah Lot Sunset | From IDR 550K pp",
     seoDescription:
-      "Half day private shuttle: Ubud cultural stops then Tanah Lot sunset. IDR 850K driver only — temple tickets not included. WhatsApp booking.",
+      "Private half day: Ubud cultural stops then Tanah Lot sunset. IDR 850K solo, 700K each for 2, 550K each for 4+. Licensed guide add-on. Tickets extra.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
       alt: "Tanah Lot Sunset",
     },
     gallery: [],
     shortDescription:
-      "Half day private shuttle pairing Ubud cultural stops with a Tanah Lot sea-temple sunset — private car and English-speaking driver for IDR 850,000. Temple tickets not included. Ideal if you're short on time.",
+      "Half day private shuttle pairing Ubud cultural stops with a Tanah Lot sea-temple sunset — private car and English-speaking driver, IDR 850,000 for one guest down to IDR 550,000 each for groups of 4+. Add a licensed English, Japanese, or French guide. Temple tickets not included. Ideal if you're short on time.",
     fullDescription: `**Half Day Ubud & Tanah Lot Sunset — private shuttle only**
 
 Short on time but don't want to miss the coast? This half day trip pairs an afternoon around Ubud with the classic Tanah Lot sunset — without committing to a full 10-hour day.
 
-**IDR 850,000 is the private shuttle (car + English-speaking driver) for about 6 hours.** Temple entrance tickets at Ubud stops and **Tanah Lot are not included** — you pay those at the gate.
+**The price covers the private shuttle (car + English-speaking driver) for about 6 hours and is charged per person by group size.** Temple entrance tickets at Ubud stops and **Tanah Lot are not included** — you pay those at the gate.
+
+| Guests | Price per person | Total |
+|---|---|---|
+| 1 | IDR 850,000 | IDR 850,000 |
+| 2 | IDR 700,000 | IDR 1,400,000 |
+| 3 | IDR 650,000 | IDR 1,950,000 |
+| 4+ | IDR 550,000 | IDR 2,200,000 for 4 |
 
 ### Afternoon: Ubud Surrounds
 We start in the early afternoon with a private car and English-speaking driver, visiting cultural sites or temples around the Ubud area (tell us your interests on WhatsApp so your driver can prioritize accordingly).
@@ -2002,12 +2009,22 @@ We start in the early afternoon with a private car and English-speaking driver, 
 As the afternoon cools, we head to the coast and the iconic sea temple of **Tanah Lot**. Watching the sun dip below the Indian Ocean with the temple silhouetted in the foreground is one of Bali's most photographed sunsets.
 
 ### Why Choose the Half Day Option
-If your schedule is tight — an early flight, a late arrival, or a full day already booked elsewhere — this half day version still delivers Ubud culture and the Tanah Lot sunset in about 6 hours.`,
+If your schedule is tight — an early flight, a late arrival, or a full day already booked elsewhere — this half day version still delivers Ubud culture and the Tanah Lot sunset in about 6 hours.
+
+### Optional Licensed Guide
+Your driver handles the car and the route, but is not always a licensed guide. If you want a government-licensed guide to explain the Ubud temples and Tanah Lot, add one for the whole trip — charged once per booking, not per person:
+
+| Language | Price per booking |
+|---|---|
+| English | IDR 600,000 |
+| Japanese | IDR 700,000 |
+| French | IDR 750,000 |`,
     highlights: [
-      "Private shuttle only — IDR 850,000 for ~6 hours",
+      "Private shuttle ~6 hours — IDR 850,000 solo, IDR 550,000 each for 4+",
       "Ubud cultural stops then Tanah Lot sunset",
       "Temple tickets not included (pay at the gate)",
       "English-speaking driver · hotel collect",
+      "Optional licensed guide in English, Japanese, or French",
     ],
     included: [
       "Private shuttle (car & English-speaking driver) for 6 hours",
@@ -2047,7 +2064,7 @@ If your schedule is tight — an early flight, a late arrival, or a full day alr
         id: "faq-hdu-1",
         question: "How much does the half day Ubud & Tanah Lot tour cost?",
         answer:
-          "IDR 850,000 for the private shuttle — car, transport, and an English-speaking driver for about 6 hours. Entrance tickets (temples and Tanah Lot) are not included; you pay them at the gate. Message WhatsApp for a guest-count quote.",
+          "Priced per person by group size: IDR 850,000 for 1 guest, IDR 700,000 each for 2 (IDR 1,400,000), IDR 650,000 each for 3 (IDR 1,950,000), and IDR 550,000 each for 4 or more (IDR 2,200,000 for 4). That covers the private car, transport, and an English-speaking driver for about 6 hours. Entrance tickets (temples and Tanah Lot) are not included; you pay them at the gate.",
       },
       {
         id: "faq-hdu-2",
@@ -2071,7 +2088,13 @@ If your schedule is tight — an early flight, a late arrival, or a full day alr
         id: "faq-hdu-5",
         question: "Are Tanah Lot tickets included?",
         answer:
-          "No. The IDR 850,000 rate is private shuttle only. Tanah Lot and any Ubud temple entrance fees are paid on site.",
+          "No. The per-person rate covers the private shuttle only. Tanah Lot and any Ubud temple entrance fees are paid on site.",
+      },
+      {
+        id: "faq-hdu-6",
+        question: "Is the driver a licensed tour guide?",
+        answer:
+          "Not always. The driver speaks English and handles the car and route, but if you want a government-licensed guide for the whole trip — Ubud cultural stops and Tanah Lot — add one when booking: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000. The guide price is once per booking, not per person.",
       },
     ],
     reviews: []

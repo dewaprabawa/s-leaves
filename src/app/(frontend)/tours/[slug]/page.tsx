@@ -41,11 +41,7 @@ import {
   JEEP_GEO_UPDATED,
 } from "@/data/jeepGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
-import {
-  FULL_DAY_UBUD_GUIDE_ADDONS,
-  FULL_DAY_UBUD_SLUG,
-  FULL_DAY_UBUD_TIER_PRICES_IDR,
-} from "@/data/fullDayUbudTour"
+import { getPrivateDayTourPricing } from "@/data/privateDayTours"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, PICKUP_FEE_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
@@ -631,8 +627,9 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
-  if (tour.slug === FULL_DAY_UBUD_SLUG) {
-    const tiers = FULL_DAY_UBUD_TIER_PRICES_IDR
+  const privateDayPricing = getPrivateDayTourPricing(tour.slug)
+  if (privateDayPricing) {
+    const tiers = privateDayPricing.tiersIdr
     return {
       ...base,
       offers: {
@@ -667,7 +664,7 @@ function buildTourSchema(tour: Tour) {
             url: `${SITE_URL}/tours/${tour.slug}`,
           }
         }),
-        addOn: FULL_DAY_UBUD_GUIDE_ADDONS.map((guide) => ({
+        addOn: privateDayPricing.guideAddons.map((guide) => ({
           "@type": "Offer",
           name: guide.label,
           description: "Once per booking — joins the whole tour",
@@ -1012,6 +1009,7 @@ export default async function TourPage({ params }: Props) {
   }
 
   const cooking = isCookingTour(tour)
+  const privateDayTiers = getPrivateDayTourPricing(tour.slug)?.tiersIdr
   const jeep = isJeepTour(tour)
   const tourSchema = buildTourSchema(tour)
   const webPageSchema = buildTourWebPageSchema(tour)
@@ -1241,6 +1239,16 @@ export default async function TourPage({ params }: Props) {
                         {formatIdr(CYCLING_LIST_IDR)}
                       </span>
                       Promo {formatIdr(CYCLING_PROMO_IDR)} / person · 625K (2) · 600K (3+)
+                    </span>
+                  ) : privateDayTiers ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      {privateDayTiers
+                        .map((price, i, all) =>
+                          i === 0
+                            ? `${formatIdr(price)} solo`
+                            : `${formatIdr(price)} each (${i === all.length - 1 ? `${i + 1}+` : i + 1})`,
+                        )
+                        .join(" · ")}
                     </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">

@@ -302,7 +302,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'half-day-ubud-tanah-lot-sunset-tour-2026': {
     headline: 'Book the Tanah Lot sunset half day',
-    body: 'From IDR 450,000 · private car · about 6 hours. Entrance fees and dinner not included.',
+    body: 'IDR 850,000 for one guest, down to 550,000 each for 4+ · private car · about 6 hours. Licensed guide optional. Entrance fees and dinner not included.',
     primaryHref: '/tours/half-day-ubud-tanah-lot-tour',
     primaryLabel: 'View sunset tour',
     secondaryHref: '/book',

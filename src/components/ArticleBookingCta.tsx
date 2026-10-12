@@ -78,7 +78,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'licensed-tour-guide-bali-2026': {
     headline: 'Book a licensed guide in Bali',
-    body: 'English IDR 600,000 · Japanese 700,000 · French 750,000 per booking for 4 hours — not per person. Extra hour IDR 150,000. Guide meets you at your hotel or first stop.',
+    body: 'English IDR 600,000 · Japanese 700,000 · French 750,000 per booking for 4 hours — not per person. Extra hour IDR 150,000. Guide only, or add a separate private shuttle.',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a guide',
     secondaryHref: '/tours/full-day-ubud-tour',
@@ -86,7 +86,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'japanese-speaking-guide-bali-2026': {
     headline: 'Book a Japanese-speaking licensed guide',
-    body: 'IDR 700,000 per booking for 4 hours, IDR 150,000 per extra hour. Guide only — bring your own car, or add the guide to the Full Day Ubud Tour.',
+    body: 'IDR 700,000 per booking for 4 hours, IDR 150,000 per extra hour. Book the guide only, or add a separate private shuttle (quoted on WhatsApp).',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a Japanese guide',
     secondaryHref: '/tours/full-day-ubud-tour',
@@ -94,7 +94,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'french-speaking-guide-bali-2026': {
     headline: 'Book a French-speaking licensed guide',
-    body: 'IDR 750,000 per booking for 4 hours, IDR 150,000 per extra hour. Guide only — bring your own car, or add the guide to the Full Day Ubud Tour.',
+    body: 'IDR 750,000 per booking for 4 hours, IDR 150,000 per extra hour. Book the guide only, or add a separate private shuttle (quoted on WhatsApp).',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a French guide',
     secondaryHref: '/tours/full-day-ubud-tour',

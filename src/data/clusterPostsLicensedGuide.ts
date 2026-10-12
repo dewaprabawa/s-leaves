@@ -9,17 +9,17 @@ export const LICENSED_GUIDE_CLUSTER_POSTS = [
     title: 'Licensed Tour Guide in Bali (2026): Price, Languages & How to Book a Guide Only',
     seoTitle: 'Licensed Tour Guide Bali 2026 | Price per Booking',
     excerpt:
-      'Book a government-licensed Bali tour guide without a car: English IDR 600,000, Japanese IDR 700,000, French IDR 750,000 per booking for 4 hours, plus IDR 150,000 per extra hour. What "licensed" means, and guide-only vs driver-guide.',
+      'Book a government-licensed Bali tour guide on their own, with an optional separate shuttle: English IDR 600,000, Japanese IDR 700,000, French IDR 750,000 per booking for 4 hours, plus IDR 150,000 per extra hour. What "licensed" means, and guide-only vs driver-guide.',
     publishedAt: '2026-10-12',
     author: 'Sekar Bali Activity',
     image: '/images/guide/bali-guide-thumbs-up.jpg',
     content: `
-**How much is a licensed tour guide in Bali?** With Sekar Bali Activity, a government-licensed guide costs **IDR 600,000 in English, IDR 700,000 in Japanese, or IDR 750,000 in French** — per booking, for **4 hours**, not per person. Each extra hour is **IDR 150,000** in any language. This is **guide only**: you bring your own car and driver, and the guide meets you at your hotel or first stop (the guide's own transport is included). [Book a licensed guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+**How much is a licensed tour guide in Bali?** With Sekar Bali Activity, a government-licensed guide costs **IDR 600,000 in English, IDR 700,000 in Japanese, or IDR 750,000 in French** — per booking, for **4 hours**, not per person. Each extra hour is **IDR 150,000** in any language. You can book **only the guide** — they meet you at your hotel or first stop, guide transport included — or add a **separate private shuttle** (car and driver, quoted on WhatsApp). [Book a licensed guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
 
 > **Key Takeaways**
 > - **Price per booking, not per person:** English 600K · Japanese 700K · French 750K for 4 hours
 > - **Extra hour:** IDR 150,000, the same for every language
-> - **Guide only:** no car. The guide meets you at your hotel or first stop
+> - **Guide only, or add a shuttle:** the guide meets you at your hotel or first stop; a separate car + driver is optional
 > - **Licensed** means the guide holds a Bali **KTPP** guide ID card. Ask to see it
 > - **Need a car too?** Add the same guide to our [Full Day Ubud Tour](/tours/full-day-ubud-tour) at the same flat price
 
@@ -38,7 +38,7 @@ The price is for **one guide and your whole group**. Two guests or a family of f
 - Japanese guide, 6-hour day: 700,000 + 2 × 150,000 = **IDR 1,000,000**
 - French guide, 8-hour day: 750,000 + 4 × 150,000 = **IDR 1,350,000**
 
-Not included: your car and driver, entrance tickets, meals, and tips.
+Not included: entrance tickets, meals, and tips. Transport is up to you — see the shuttle option below.
 
 ## Guide only vs driver-guide vs tour + guide
 
@@ -47,6 +47,7 @@ Most listings for a "Bali guide" are really a car charter: a driver who speaks s
 | Option | What you get | Best if |
 | --- | --- | --- |
 | **Licensed guide only** — [book here](/tours/licensed-tour-guide-bali) | Licensed guide, 4 hours, from IDR 600,000 per booking | You already have a car, a rented driver, or a villa driver |
+| **Licensed guide + our separate shuttle** | Licensed guide, plus a private car and driver for the whole guided day (up to 6 guests), shuttle quoted on WhatsApp | You want your own route and need transport |
 | **Driver-guide charter** (elsewhere) | Car + driver who speaks English | You want transport and light commentary only |
 | **Our tour + licensed guide add-on** | Private car and driver, plus a licensed guide for the **whole tour** at the same flat price | You need a car and a proper guide in one booking |
 
@@ -93,15 +94,16 @@ Not sure you need one? Read [is a tour guide worth it in Bali?](/blog/is-a-tour-
     author: 'Sekar Bali Activity',
     image: '/images/guide/licensed-guide-bali.jpg',
     content: `
-**How much is a Japanese-speaking guide in Bali?** A government-licensed Japanese-speaking guide from Sekar Bali Activity is **IDR 700,000 per booking for 4 hours** — not per person. Each extra hour is **IDR 150,000**. It is **guide only**: bring your own car and driver, and the guide meets you at your hotel or first stop. [Book a Japanese-speaking guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+**How much is a Japanese-speaking guide in Bali?** A government-licensed Japanese-speaking guide from Sekar Bali Activity is **IDR 700,000 per booking for 4 hours** — not per person. Each extra hour is **IDR 150,000**. Book **only the guide** — they meet you at your hotel or first stop — or add a **separate private shuttle** (car and driver, quoted on WhatsApp). [Book a Japanese-speaking guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
 
 > **日本語の要約**
 > - バリ島の**政府公認ガイド（日本語）**を手配できます
 > - 料金：**4時間 IDR 700,000**（1予約あたり。人数による追加料金なし）
 > - 延長：**1時間 IDR 150,000**
 > - ガイドはホテルまたは最初の訪問地でお迎え（ガイドの交通費込み）
-> - 車・ドライバー、入場料、食事は含まれません
-> - 車も必要な場合は [ウブド1日ツアー](/tours/full-day-ubud-tour) に日本語ガイドを追加できます（同じ料金でツアー全体）
+> - ガイドのみの予約も、別途プライベート送迎（車＋ドライバー、最大6名、料金はWhatsAppでお見積もり）の追加も可能です
+> - 入場料、食事は含まれません
+> - 決まったコースがよければ [ウブド1日ツアー](/tours/full-day-ubud-tour) に日本語ガイドを追加できます（同じ料金でツアー全体）
 > - お問い合わせはWhatsApp（英語）で受け付けています
 
 ## Japanese-speaking guide price (2026 IDR)
@@ -122,6 +124,7 @@ Many Bali offers for Japanese travelers are a **car charter with a Japanese-spea
 | Option | Best if |
 | --- | --- |
 | **Licensed Japanese guide only** — IDR 700,000 / 4 hrs | You already have a car or hotel driver |
+| **Japanese guide + our separate shuttle** — shuttle quoted on WhatsApp | You want your own route and need a car (up to 6 guests) |
 | **[Full Day Ubud Tour](/tours/full-day-ubud-tour) + Japanese guide** | You need car, driver, and guide in one booking — guide IDR 700,000 for the whole 10-hour tour |
 | **[Half Day Ubud & Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) + Japanese guide** | Afternoon culture and Tanah Lot sunset, guide IDR 700,000 for the whole trip |
 
@@ -156,15 +159,16 @@ Fewer licensed guides work in Japanese than in English, so send your date early.
     author: 'Sekar Bali Activity',
     image: '/images/guide/licensed-guide-bali.jpg',
     content: `
-**How much is a French-speaking guide in Bali?** A government-licensed French-speaking guide from Sekar Bali Activity is **IDR 750,000 per booking for 4 hours** — not per person. Each extra hour is **IDR 150,000**. It is **guide only**: bring your own car and driver, and the guide meets you at your hotel or first stop. [Book a French-speaking guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+**How much is a French-speaking guide in Bali?** A government-licensed French-speaking guide from Sekar Bali Activity is **IDR 750,000 per booking for 4 hours** — not per person. Each extra hour is **IDR 150,000**. Book **only the guide** — they meet you at your hotel or first stop — or add a **separate private shuttle** (car and driver, quoted on WhatsApp). [Book a French-speaking guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
 
 > **Résumé en français**
 > - Guide **officiel francophone** à Bali (carte de guide KTPP)
 > - Tarif : **IDR 750 000 pour 4 heures**, par réservation — pas par personne
 > - Heure supplémentaire : **IDR 150 000**
 > - Le guide vous retrouve à votre hôtel ou au premier site (son transport est inclus)
-> - Voiture et chauffeur, entrées et repas non inclus
-> - Besoin d'une voiture ? Ajoutez le guide à notre [journée complète à Ubud](/tours/full-day-ubud-tour) — même prix pour toute la journée
+> - Guide seul, ou ajoutez une navette privée séparée (voiture + chauffeur, jusqu'à 6 personnes, prix sur devis par WhatsApp)
+> - Entrées et repas non inclus
+> - Vous préférez un circuit fixe ? Ajoutez le guide à notre [journée complète à Ubud](/tours/full-day-ubud-tour) — même prix pour toute la journée
 > - Demandes par WhatsApp (en anglais)
 
 ## French-speaking guide price (2026 IDR)
@@ -185,6 +189,7 @@ Many French travelers book a **driver** for the day and expect commentary on the
 | Option | Best if |
 | --- | --- |
 | **Licensed French guide only** — IDR 750,000 / 4 hrs | You already have a car, a scooter driver, or a villa driver |
+| **French guide + our separate shuttle** — shuttle quoted on WhatsApp | You want your own route and need a car (up to 6 guests) |
 | **[Full Day Ubud Tour](/tours/full-day-ubud-tour) + French guide** | You want car, driver, and guide together — guide IDR 750,000 for the whole 10-hour tour |
 | **[Umah Kuno Luwak Coffee](/tours/luwak-coffee-plantation) + French guide** | You want the plantation and roasting story in French — guide IDR 750,000 for the whole visit |
 
@@ -240,7 +245,7 @@ Bali travel forums agree that a good private driver is great value — and many 
 
 | | Private driver | Licensed guide |
 | --- | --- | --- |
-| Gets you between places | Yes | No (guide only) — or add a guide to a [tour with a car](/tours/full-day-ubud-tour) |
+| Gets you between places | Yes | Add our separate shuttle, or add a guide to a [tour with a car](/tours/full-day-ubud-tour) |
 | Comes inside temples with you | Usually not | Yes |
 | Explains rituals, offerings, history | Some, informally | Trained and licensed to |
 | Carries a Bali guide licence (KTPP) | Not always | Yes |
@@ -369,7 +374,7 @@ Full checklist: [Bali temple dress code](/blog/bali-temple-dress-code).
 | Hour 3 | Ubud palace | Royal history and the town around it |
 | Hour 4 | Rice terraces | The *subak* irrigation system — UNESCO World Heritage since 2012 |
 
-Entrance tickets and transport are not included in the guide price. Have a car already? Book the [guide only](/tours/licensed-tour-guide-bali). Need a car too? Add the guide to the [Full Day Ubud Tour](/tours/full-day-ubud-tour) for the whole day at the same flat price.
+Entrance tickets and transport are not included in the guide price. Have a car already? Book the [guide only](/tours/licensed-tour-guide-bali). Need a car? Add our separate private shuttle in the same booking (quoted on WhatsApp), or add the guide to the [Full Day Ubud Tour](/tours/full-day-ubud-tour) for the whole day at the same flat price.
 
 More on why a guide is worth it: [8 ways a licensed guide makes your holiday better](/blog/is-a-tour-guide-worth-it-bali-2026).
 
@@ -392,7 +397,7 @@ More on why a guide is worth it: [8 ways a licensed guide makes your holiday bet
 > - **Use a guide for 1–2 culture days**, not the whole trip
 > - **Biggest wins:** temple etiquette, ritual order, timing, and meaning
 > - **Best for:** first-timers, families with older parents, and Japanese or French speakers
-> - **Guide only** if you have a car; **tour + guide** if you need transport too
+> - **Guide only** if you have a car; **guide + separate shuttle** or **tour + guide** if you need transport
 > - **Price is per booking** — a family of four pays 150K each for an English guide
 
 ## What first-timers struggle with (and how a guide helps)
@@ -444,7 +449,7 @@ One or two guided days give you the context that makes the rest of the trip make
 | Extra hour | 150,000 |
 | Full Day Ubud Tour (car + driver) | 600,000 solo → 350,000 each for 4+, guide add-on extra |
 
-Not included: car and driver (guide-only booking), entrance tickets, meals. More detail: [licensed tour guide in Bali](/blog/licensed-tour-guide-bali-2026) · [is a tour guide worth it?](/blog/is-a-tour-guide-worth-it-bali-2026) · [temples with a guide vs without](/blog/bali-temples-with-a-guide-2026).
+Not included: entrance tickets and meals. Transport is optional — add our separate private shuttle (quoted on WhatsApp). More detail: [licensed tour guide in Bali](/blog/licensed-tour-guide-bali-2026) · [is a tour guide worth it?](/blog/is-a-tour-guide-worth-it-bali-2026) · [temples with a guide vs without](/blog/bali-temples-with-a-guide-2026).
 
 **Ready?** [Book a local licensed guide](/tours/licensed-tour-guide-bali) for your culture day — WhatsApp, **no payment to inquire**.
 `,

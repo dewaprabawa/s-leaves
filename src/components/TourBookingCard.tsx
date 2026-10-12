@@ -22,6 +22,7 @@ import {
   GUIDE_LANGUAGES,
   GUIDE_MEET_COPY,
   GUIDE_ONLY_HOURS,
+  GUIDE_SHUTTLE_ADDON,
   LICENSED_GUIDE_PRICES_IDR,
   LICENSED_GUIDE_SLUG,
 } from "@/data/licensedGuide"
@@ -212,7 +213,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       perBooking: true,
       pickupIncluded: true,
       includedMeetCopy: GUIDE_MEET_COPY,
-      optionalAddons: [GUIDE_EXTRA_HOUR_ADDON],
+      optionalAddons: [GUIDE_SHUTTLE_ADDON, GUIDE_EXTRA_HOUR_ADDON],
       optionalAddonsIntro: GUIDE_EXTRA_HOURS_INTRO,
     }))
   }
@@ -464,6 +465,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             <p className="text-sm text-brand-green-light mt-1">
               {GUIDE_LANGUAGES.map((lang) => `${lang.name} ${formatIdr(LICENSED_GUIDE_PRICES_IDR[lang.key])}`).join(" · ")}{" "}
               per booking for {GUIDE_ONLY_HOURS} hours — not per person. Extra hour {formatIdr(GUIDE_EXTRA_HOUR_IDR)}.
+              Guide only, or add a separate private shuttle (quoted on WhatsApp).
             </p>
           ) : null}
           {props.tourSlug === "bali-atv-adventure" ? (

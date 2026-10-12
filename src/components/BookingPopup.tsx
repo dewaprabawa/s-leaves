@@ -60,6 +60,8 @@ export type TourOptionalAddon = {
   maxQty?: number
   /** Price suffix before selection; defaults to "per booking" / "per guest". */
   unitLabel?: string
+  /** Requested on the booking but priced on WhatsApp — adds nothing to the estimate. Use with flat. */
+  quoteOnly?: boolean
 }
 
 function addonMaxQty(addon: TourOptionalAddon, guestCount: number) {
@@ -69,11 +71,12 @@ function addonMaxQty(addon: TourOptionalAddon, guestCount: number) {
 }
 
 function addonAmount(addon: TourOptionalAddon, qty: number) {
-  if (qty <= 0) return 0
+  if (qty <= 0 || addon.quoteOnly) return 0
   return addon.flat ? addon.perPerson : addon.perPerson * qty
 }
 
 function addonSummary(addon: TourOptionalAddon, qty: number) {
+  if (addon.quoteOnly) return `${addon.label} · price quoted on WhatsApp`
   if (addon.flat) {
     return `${addon.label} · ${formatIdr(addon.perPerson)} (once per booking)`
   }
@@ -577,6 +580,7 @@ export function BookingPopup({
       pushQuoteLines(activityQuote, activeTour.title)
     }
     for (const { addon, qty } of selectedAddons) {
+      if (addon.quoteOnly) continue
       lineItems.push({
         label: addon.flat
           ? `${addon.label} — ${formatIdr(addon.perPerson)} (once per booking)`
@@ -910,13 +914,17 @@ export function BookingPopup({
                           <span className="block text-xs text-brand-green-light mt-0.5">{opt.blurb}</span>
                           {active ? (
                             <span className="block text-xs font-semibold text-brand-green mt-1.5">
-                              {opt.flat
+                              {opt.quoteOnly
+                                ? 'Requested — price quoted on WhatsApp'
+                                : opt.flat
                                 ? formatIdr(opt.perPerson)
                                 : `${formatIdr(opt.perPerson)} × ${qty} = ${formatIdr(lineTotal)}`}
                             </span>
                           ) : (
                             <span className="block text-xs font-semibold text-brand-green-light mt-1.5">
-                              {formatIdr(opt.perPerson)} {opt.unitLabel ?? (opt.flat ? "per booking" : "per guest")}
+                              {opt.quoteOnly
+                                ? 'Price quoted on WhatsApp'
+                                : `${formatIdr(opt.perPerson)} ${opt.unitLabel ?? (opt.flat ? "per booking" : "per guest")}`}
                             </span>
                           )}
                         </div>
@@ -1298,7 +1306,7 @@ export function BookingPopup({
               >
                 <span>{addonSummary(addon, qty)}</span>
                 <span className="font-semibold text-brand-green">
-                  {formatIdr(addonAmount(addon, qty))}
+                  {addon.quoteOnly ? 'Quoted' : formatIdr(addonAmount(addon, qty))}
                 </span>
               </div>
             ))}

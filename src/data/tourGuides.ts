@@ -587,7 +587,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'luwak-coffee-plantation': [
     {
-      title: 'Licensed guide only (no car)',
+      title: 'Licensed guide only (shuttle optional)',
       href: '/blog/licensed-tour-guide-bali-2026',
       blurb: 'Same English / Japanese / French guide on its own — from 600K for 4 hours, +150K per extra hour.',
     },
@@ -614,7 +614,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'full-day-ubud-tour': [
     {
-      title: 'Licensed guide only (no car)',
+      title: 'Licensed guide only (shuttle optional)',
       href: '/blog/licensed-tour-guide-bali-2026',
       blurb: 'Same English / Japanese / French guide on its own — from 600K for 4 hours, +150K per extra hour.',
     },
@@ -841,7 +841,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'half-day-ubud-tanah-lot-tour': [
     {
-      title: 'Licensed guide only (no car)',
+      title: 'Licensed guide only (shuttle optional)',
       href: '/blog/licensed-tour-guide-bali-2026',
       blurb: 'Same English / Japanese / French guide on its own — from 600K for 4 hours, +150K per extra hour.',
     },

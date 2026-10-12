@@ -2010,10 +2010,16 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
     seoDescription:
       "Book a government-licensed guide in Bali: English IDR 600K, Japanese 700K, French 750K per booking for 4 hours. Extra hour 150K. Use your own car.",
     heroImage: {
-      url: "/images/melukat/tirta-empu-temple.jpg",
-      alt: "Balinese temple gate and courtyard — the kind of stop a licensed guide explains in your language",
+      url: "/images/guide/licensed-guide-bali.jpg",
+      alt: "Balinese elder in an udeng headcloth arranging temple offerings — the customs a licensed guide explains in your language",
+      width: 682,
+      height: 1024,
     },
     gallery: [
+      {
+        url: "/images/guide/licensed-guide-bali.jpg",
+        alt: "Balinese elder in an udeng headcloth arranging temple offerings — the customs a licensed guide explains in your language",
+      },
       {
         url: "/images/melukat/tirta-empu-temple.jpg",
         alt: "Balinese temple gate and courtyard — the kind of stop a licensed guide explains in your language",

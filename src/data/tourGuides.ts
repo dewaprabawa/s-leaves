@@ -574,7 +574,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Motorbike trip vs private driver',
       href: '/blog/bali-motorbike-tour-vs-private-driver-2026',
-      blurb: 'Scooter promo from IDR 450K vs this car from IDR 600K.',
+      blurb: 'Scooter promo from IDR 450K vs this car at 350–600K per person.',
     },
     {
       title: 'Motorbike tour price 2026',
@@ -584,7 +584,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Full day Ubud tour guide 2026',
       href: '/blog/full-day-ubud-tour-guide-2026',
-      blurb: 'From IDR 600K — what’s included vs paid on site.',
+      blurb: '600K solo, 350K each for 4+ — what’s included vs paid on site.',
     },
     {
       title: 'Perfect one-day Ubud itinerary',
@@ -779,7 +779,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     { title: 'Best price ATV, rafting, cycling & scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026', blurb: 'Published scooter promo 450K next to ATV, rafting, and cycling.' },
     { title: 'Motorbike tour price 2026', href: '/blog/bali-motorbike-tour-price-2026', blurb: 'Promo from IDR 450K (was 550K). Canggu / Jimbaran / Nusa Dua shuttle IDR 550K once per booking.' },
     { title: 'Japan, Korea, China & Middle East (English)', href: '/blog/bali-tours-for-japanese-chinese-travelers-2026', blurb: 'Same English WhatsApp and IDR prices. Includes Korea and the Middle East (UAE, Saudi, Qatar).' },
-    { title: 'Motorbike tour vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026', blurb: 'Scooter promo from IDR 450K vs private car from IDR 600K — tickets extra on both.' },
+    { title: 'Motorbike tour vs private driver', href: '/blog/bali-motorbike-tour-vs-private-driver-2026', blurb: 'Scooter promo from IDR 450K vs private car at 350–600K per person — tickets extra on both.' },
     { title: 'Scooter tour vs ATV', href: '/blog/bali-scooter-tour-vs-atv-2026', blurb: 'Public-road day from 450K versus Sedang mud from 750K.' },
     { title: 'Motorbike vs dirt bike', href: '/blog/bali-motorbike-tour-vs-dirt-bike-2026', blurb: 'Automatic scooter versus the Kintamani enduro from 1.85M.' },
     { title: 'Ubud waterfall scooter', href: '/blog/ubud-waterfall-scooter-tour-2026', blurb: 'Five falls from IDR 500K — tickets extra.' },
@@ -796,7 +796,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Tanah Lot sunset half-day 2026',
       href: '/blog/half-day-ubud-tanah-lot-sunset-tour-2026',
-      blurb: 'From IDR 450K · 6 hours · entrance fees not included.',
+      blurb: '850K solo, 550K each for 4+ · 6 hours · entrance fees not included.',
     },
     {
       title: 'Full day vs half day',

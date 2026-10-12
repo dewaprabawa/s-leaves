@@ -138,6 +138,8 @@ export type ActivityQuoteInput = {
    */
   fallbackAdultPrice?: number
   fallbackChildPrice?: number | null
+  /** Per-person price by adult count for fallback tours (index 0 = 1 guest; last entry applies to larger groups). */
+  fallbackTierPrices?: readonly number[]
 }
 
 export type ActivityQuote = {
@@ -160,13 +162,19 @@ export function quoteActivity(input: ActivityQuoteInput): ActivityQuote | null {
     if (!input.fallbackAdultPrice) return null
     const billableAdults = Math.max(1, input.adults)
     const childPrice = input.fallbackChildPrice ?? 0
+    const tiers = input.fallbackTierPrices
+    const unitPrice = tiers?.length
+      ? tiers[Math.min(billableAdults, tiers.length) - 1]
+      : input.fallbackAdultPrice
     return {
       activityId: input.activityId,
       unitLabel: 'person',
       units: billableAdults,
-      unitPrice: input.fallbackAdultPrice,
-      tierLabel: 'Standard rate',
-      activitySubtotal: billableAdults * input.fallbackAdultPrice,
+      unitPrice,
+      tierLabel: tiers?.length
+        ? `${billableAdults >= tiers.length ? `${tiers.length}+` : billableAdults} guest${billableAdults === 1 ? '' : 's'} rate`
+        : 'Standard rate',
+      activitySubtotal: billableAdults * unitPrice,
       childCount: children,
       childUnitPrice: childPrice,
       childSubtotal: children * childPrice,

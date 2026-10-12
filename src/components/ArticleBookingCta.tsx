@@ -102,7 +102,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-motorbike-tour-vs-private-driver-2026': {
     headline: 'Book the Bali motorbike tour',
-    body: 'Promo from IDR 450,000 per 125–160cc scooter (was 550,000). Tickets not included. Ride (IDP) or pillion. Canggu / Jimbaran / Nusa Dua shuttle IDR 550,000 — or keep the private car from IDR 600,000.',
+    body: 'Promo from IDR 450,000 per 125–160cc scooter (was 550,000). Tickets not included. Ride (IDP) or pillion. Canggu / Jimbaran / Nusa Dua shuttle IDR 550,000 — or take the private Ubud car (IDR 600,000 for one guest, 350,000 each for 4+).',
     primaryHref: '/tours/bali-motorbike-traveling-trip',
     primaryLabel: 'View motorbike tour',
     secondaryHref: '/tours/full-day-ubud-tour',
@@ -302,7 +302,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'half-day-ubud-tanah-lot-sunset-tour-2026': {
     headline: 'Book the Tanah Lot sunset half day',
-    body: 'From IDR 450,000 · private car · about 6 hours. Entrance fees and dinner not included.',
+    body: 'IDR 850,000 for one guest, down to 550,000 each for 4+ · private car · about 6 hours. Licensed guide optional. Entrance fees and dinner not included.',
     primaryHref: '/tours/half-day-ubud-tanah-lot-tour',
     primaryLabel: 'View sunset tour',
     secondaryHref: '/book',
@@ -698,7 +698,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'perfect-one-day-ubud-itinerary': {
     headline: 'Turn this itinerary into a private car day',
-    body: 'Full-day Ubud tour from IDR 600,000. Or split cycling + cooking on two bookings.',
+    body: 'Full-day Ubud tour: IDR 600,000 for one guest, 350,000 each for 4+. Or split cycling + cooking on two bookings.',
     primaryHref: '/tours/full-day-ubud-tour',
     primaryLabel: 'Book the full-day tour',
     secondaryHref: '/book?activity=combo-cycling-cooking',
@@ -794,7 +794,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'best-time-to-visit-bali': {
     headline: 'Lock a dry-season Ubud day',
-    body: 'Private full-day car from IDR 600,000. Entrance fees and lunch not included. WhatsApp the date — no payment to inquire.',
+    body: 'Private full-day car: IDR 600,000 for one guest, down to 350,000 each for 4+. Licensed guide optional. Entrance fees and lunch not included. WhatsApp the date — no payment to inquire.',
     primaryHref: '/tours/full-day-ubud-tour',
     primaryLabel: 'View full-day tour',
     secondaryHref: '/experiences',
@@ -802,7 +802,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'how-to-get-around-ubud': {
     headline: 'Skip the scooter — book a private car day',
-    body: 'Full-day Ubud tour from IDR 600,000, or a DPS → Ubud transfer from IDR 700,000. We handle traffic and parking.',
+    body: 'Full-day Ubud tour (IDR 600,000 solo, 350,000 each for 4+), or a DPS → Ubud transfer from IDR 700,000. We handle traffic and parking.',
     primaryHref: '/tours/full-day-ubud-tour',
     primaryLabel: 'View full-day tour',
     secondaryHref: '/transfers',

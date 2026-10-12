@@ -1863,7 +1863,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
     basePrice: 600000,
     seoTitle: "Full Day Ubud Tour | Palace, Market & Rice Terraces",
     seoDescription:
-      "Private full-day Ubud tour: Royal Palace, Art Market & Tegalalang Rice Terraces from IDR 600K. English driver, custom pace. WhatsApp booking.",
+      "Private full-day Ubud tour: Royal Palace, Art Market & Tegalalang Rice Terraces. IDR 600K solo, 500K each for 2, 350K each for 4+. Licensed guide add-on.",
     heroImage: {
       url: "/images/adventures/full-day-ubud-tour.jpg",
       alt: "Tegalalang rice terraces framed by jungle palms on the Full Day Ubud Tour",
@@ -1875,7 +1875,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       },
     ],
     shortDescription:
-      "Private full-day Ubud tour covering the Royal Palace, Art Market, and Tegalalang Rice Terraces — private car, English-speaking driver, and a pace you set yourself. From IDR 600,000.",
+      "Private full-day Ubud tour covering the Royal Palace, Art Market, and Tegalalang Rice Terraces — private car, English-speaking driver, and a pace you set yourself. IDR 600,000 for one guest, down to IDR 350,000 each for groups of 4+. Add a licensed English, Japanese, or French guide.",
     fullDescription: `**Full Day Ubud Tour: Royal Palace, Art Market & Rice Terraces**
 
 Looking for a private full day Ubud tour that covers the classic central-Bali stops without a fixed group schedule? This itinerary pairs Ubud's cultural core with the countryside north of town, with your own car and English-speaking driver setting the pace.
@@ -1887,13 +1887,31 @@ Start at the historic **Ubud Royal Palace** (Puri Saren Agung) to see traditiona
 After lunch (on your own — see inclusions below), continue north to the **Tegalalang Rice Terraces**. Walk the ridges for classic Bali photos, or add on the Bali Swing nearby at your own cost if you want the jungle-swing photo stop.
 
 ### Private & Flexible
-This is a private car and driver, not a shared minibus — so you can linger longer at the palace, skip the market, or ask your driver to adjust timing around your flight or dinner plans.`,
+This is a private car and driver, not a shared minibus — so you can linger longer at the palace, skip the market, or ask your driver to adjust timing around your flight or dinner plans.
+
+### Price per Person
+| Guests | Price per person | Total |
+|---|---|---|
+| 1 | IDR 600,000 | IDR 600,000 |
+| 2 | IDR 500,000 | IDR 1,000,000 |
+| 3 | IDR 400,000 | IDR 1,200,000 |
+| 4+ | IDR 350,000 | IDR 1,400,000 for 4 |
+
+### Optional Licensed Guide
+Your driver handles the car and the route, but is not always a licensed guide. If you want a government-licensed guide to explain the palace, market, and rice terraces, add one for the whole day — charged once per booking, not per person:
+
+| Language | Price per booking |
+|---|---|
+| English | IDR 600,000 |
+| Japanese | IDR 700,000 |
+| French | IDR 750,000 |`,
     highlights: [
       "Ubud Royal Palace (Puri Saren Agung)",
       "Ubud Art Market for handicrafts & textiles",
       "Tegalalang Rice Terraces",
       "Private car — pace set by you, not a group schedule",
       "English-speaking driver for the full 10 hours",
+      "Optional licensed guide in English, Japanese, or French",
     ],
     included: ["Private car & transport for 10 hours", "English-speaking driver", "Mineral water"],
     notIncluded: ["Entrance fees (Palace, rice terraces, Bali Swing if added)", "Lunch", "Personal expenses", "Gratuities"],
@@ -1923,7 +1941,7 @@ This is a private car and driver, not a shared minibus — so you can linger lon
         id: "faq-fdu-1",
         question: "How much does the Full Day Ubud Tour cost?",
         answer:
-          "From IDR 600,000 for private car, transport, and an English-speaking driver for the full 10-hour day. Entrance fees and lunch are not included — message WhatsApp for a guest-count quote.",
+          "Priced per person by group size: IDR 600,000 for 1 guest, IDR 500,000 each for 2 (IDR 1,000,000), IDR 400,000 each for 3 (IDR 1,200,000), and IDR 350,000 each for 4 or more (IDR 1,400,000 for 4). That covers the private car, transport, and an English-speaking driver for the full 10-hour day. Entrance fees and lunch are not included.",
       },
       {
         id: "faq-fdu-2",
@@ -1943,6 +1961,12 @@ This is a private car and driver, not a shared minibus — so you can linger lon
         answer:
           "Yes. Since it's a private car and driver (not a shared minibus), tell us your priorities on WhatsApp and we'll adjust the order or timing around your flight or dinner plans.",
       },
+      {
+        id: "faq-fdu-5",
+        question: "Is the driver a licensed tour guide?",
+        answer:
+          "Not always. The driver speaks English and handles the car and route, but if you want a government-licensed guide for the whole tour — Royal Palace, Art Market, and rice terraces — add one when booking: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000. The guide price is once per booking, not per person.",
+      },
     ],
     reviews: []
   },
@@ -1955,21 +1979,28 @@ This is a private car and driver, not a shared minibus — so you can linger lon
     pickup: "Private shuttle hotel collect (tickets not included)",
     duration: "6 Hours",
     basePrice: 850000,
-    seoTitle: "Half Day Ubud & Tanah Lot Sunset | Shuttle IDR 850K",
+    seoTitle: "Half Day Ubud & Tanah Lot Sunset | From IDR 550K pp",
     seoDescription:
-      "Half day private shuttle: Ubud cultural stops then Tanah Lot sunset. IDR 850K driver only — temple tickets not included. WhatsApp booking.",
+      "Private half day: Ubud cultural stops then Tanah Lot sunset. IDR 850K solo, 700K each for 2, 550K each for 4+. Licensed guide add-on. Tickets extra.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=1200&q=80",
       alt: "Tanah Lot Sunset",
     },
     gallery: [],
     shortDescription:
-      "Half day private shuttle pairing Ubud cultural stops with a Tanah Lot sea-temple sunset — private car and English-speaking driver for IDR 850,000. Temple tickets not included. Ideal if you're short on time.",
+      "Half day private shuttle pairing Ubud cultural stops with a Tanah Lot sea-temple sunset — private car and English-speaking driver, IDR 850,000 for one guest down to IDR 550,000 each for groups of 4+. Add a licensed English, Japanese, or French guide. Temple tickets not included. Ideal if you're short on time.",
     fullDescription: `**Half Day Ubud & Tanah Lot Sunset — private shuttle only**
 
 Short on time but don't want to miss the coast? This half day trip pairs an afternoon around Ubud with the classic Tanah Lot sunset — without committing to a full 10-hour day.
 
-**IDR 850,000 is the private shuttle (car + English-speaking driver) for about 6 hours.** Temple entrance tickets at Ubud stops and **Tanah Lot are not included** — you pay those at the gate.
+**The price covers the private shuttle (car + English-speaking driver) for about 6 hours and is charged per person by group size.** Temple entrance tickets at Ubud stops and **Tanah Lot are not included** — you pay those at the gate.
+
+| Guests | Price per person | Total |
+|---|---|---|
+| 1 | IDR 850,000 | IDR 850,000 |
+| 2 | IDR 700,000 | IDR 1,400,000 |
+| 3 | IDR 650,000 | IDR 1,950,000 |
+| 4+ | IDR 550,000 | IDR 2,200,000 for 4 |
 
 ### Afternoon: Ubud Surrounds
 We start in the early afternoon with a private car and English-speaking driver, visiting cultural sites or temples around the Ubud area (tell us your interests on WhatsApp so your driver can prioritize accordingly).
@@ -1978,12 +2009,22 @@ We start in the early afternoon with a private car and English-speaking driver, 
 As the afternoon cools, we head to the coast and the iconic sea temple of **Tanah Lot**. Watching the sun dip below the Indian Ocean with the temple silhouetted in the foreground is one of Bali's most photographed sunsets.
 
 ### Why Choose the Half Day Option
-If your schedule is tight — an early flight, a late arrival, or a full day already booked elsewhere — this half day version still delivers Ubud culture and the Tanah Lot sunset in about 6 hours.`,
+If your schedule is tight — an early flight, a late arrival, or a full day already booked elsewhere — this half day version still delivers Ubud culture and the Tanah Lot sunset in about 6 hours.
+
+### Optional Licensed Guide
+Your driver handles the car and the route, but is not always a licensed guide. If you want a government-licensed guide to explain the Ubud temples and Tanah Lot, add one for the whole trip — charged once per booking, not per person:
+
+| Language | Price per booking |
+|---|---|
+| English | IDR 600,000 |
+| Japanese | IDR 700,000 |
+| French | IDR 750,000 |`,
     highlights: [
-      "Private shuttle only — IDR 850,000 for ~6 hours",
+      "Private shuttle ~6 hours — IDR 850,000 solo, IDR 550,000 each for 4+",
       "Ubud cultural stops then Tanah Lot sunset",
       "Temple tickets not included (pay at the gate)",
       "English-speaking driver · hotel collect",
+      "Optional licensed guide in English, Japanese, or French",
     ],
     included: [
       "Private shuttle (car & English-speaking driver) for 6 hours",
@@ -2023,7 +2064,7 @@ If your schedule is tight — an early flight, a late arrival, or a full day alr
         id: "faq-hdu-1",
         question: "How much does the half day Ubud & Tanah Lot tour cost?",
         answer:
-          "IDR 850,000 for the private shuttle — car, transport, and an English-speaking driver for about 6 hours. Entrance tickets (temples and Tanah Lot) are not included; you pay them at the gate. Message WhatsApp for a guest-count quote.",
+          "Priced per person by group size: IDR 850,000 for 1 guest, IDR 700,000 each for 2 (IDR 1,400,000), IDR 650,000 each for 3 (IDR 1,950,000), and IDR 550,000 each for 4 or more (IDR 2,200,000 for 4). That covers the private car, transport, and an English-speaking driver for about 6 hours. Entrance tickets (temples and Tanah Lot) are not included; you pay them at the gate.",
       },
       {
         id: "faq-hdu-2",
@@ -2047,7 +2088,13 @@ If your schedule is tight — an early flight, a late arrival, or a full day alr
         id: "faq-hdu-5",
         question: "Are Tanah Lot tickets included?",
         answer:
-          "No. The IDR 850,000 rate is private shuttle only. Tanah Lot and any Ubud temple entrance fees are paid on site.",
+          "No. The per-person rate covers the private shuttle only. Tanah Lot and any Ubud temple entrance fees are paid on site.",
+      },
+      {
+        id: "faq-hdu-6",
+        question: "Is the driver a licensed tour guide?",
+        answer:
+          "Not always. The driver speaks English and handles the car and route, but if you want a government-licensed guide for the whole trip — Ubud cultural stops and Tanah Lot — add one when booking: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000. The guide price is once per booking, not per person.",
       },
     ],
     reviews: []
@@ -2564,7 +2611,7 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
         id: "faq-gt-3",
         question: "How much is a private driver for a family or a group of 6?",
         answer:
-          "A standard private car starts from IDR 600,000 per day (same from-price as the Full Day Ubud Tour). Families or six guests plus bags usually need a HiAce / 10–12 seater — that rate is quoted on WhatsApp, not the car-day figure.",
+          "A standard private car starts from IDR 600,000 per day. Families or six guests plus bags usually need a HiAce / 10–12 seater — that rate is quoted on WhatsApp, not the car-day figure.",
       },
       {
         id: "faq-gt-4",
@@ -2635,7 +2682,7 @@ Included: ${MOTORBIKE_ENGINE} scooter, fuel, helmet, bottled water, English-spea
 
 | | This motorbike tour | [Full-day Ubud car](/tours/full-day-ubud-tour) | [Sedang ATV](/tours/bali-atv-adventure) |
 | --- | --- | --- | --- |
-| From price | **${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}** / scooter | **600,000** / car | **750,000** / rider |
+| From price | **${MOTORBIKE_UBUD_IDR.toLocaleString("id-ID")}** / scooter | **600,000** (1 guest) · **350,000** each for 4+ | **750,000** / rider |
 | You ride? | Yes, or pillion | No — driver | Yes, on a jungle-mud quad |
 | Tickets | Extra | Extra | Arena day — lunch included |
 | Pickup | Chosen area · Canggu / Jimbaran / Nusa Dua shuttle IDR ${MOTORBIKE_SOUTH_SHUTTLE_IDR.toLocaleString("id-ID")} | Hotel start | IDR 400,000 or self-meet |
@@ -2788,7 +2835,7 @@ Message WhatsApp with your **date, pickup pin, destination, ride or pillion**, a
       {
         id: "faq-moto-6",
         question: "Is this the same as a private car day or the Ubud ATV?",
-        answer: "No. The Full Day Ubud Tour is a private car from IDR 600,000. ATV at All New Bali Adventure is a jungle-mud quad from IDR 750,000 with lunch included. This is a public-road scooter day. Tickets stay extra here and on the car.",
+        answer: "No. The Full Day Ubud Tour is a private car tour priced per person — IDR 600,000 for one guest, IDR 350,000 each for 4+. ATV at All New Bali Adventure is a jungle-mud quad from IDR 750,000 with lunch included. This is a public-road scooter day. Tickets stay extra here and on the car.",
       },
     ],
     reviews: [],

@@ -14,6 +14,7 @@ import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
 import { buildGirlsTripWhatsAppUrl, GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
+import { getPrivateDayTourPricing } from "@/data/privateDayTours"
 import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
@@ -193,6 +194,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
     props.tourSlug === "half-day-ubud-tanah-lot-tour" ||
     props.tourSlug === GIRLS_TRIP_SLUG
   const isMelukat = props.tourSlug === "tirta-empu-purification"
+  const privateDayPricing = getPrivateDayTourPricing(props.tourSlug)
   const isLuwak = props.tourSlug === "luwak-coffee-plantation"
   const isMotorbike = props.tourSlug === MOTORBIKE_TRIP_SLUG
   const isSwingHeaven = props.tourSlug === "swing-heaven-bali"
@@ -267,6 +269,13 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       pickupIncluded: isPrivateDayTour || isMelukat,
       requiredShuttle: isSwingHeaven,
       pickupNotOffered: isLuwak,
+      ...(privateDayPricing
+        ? {
+            groupTierPricesIdr: privateDayPricing.tiersIdr,
+            optionalAddons: privateDayPricing.guideAddons,
+            optionalAddonsIntro: privateDayPricing.guideIntro,
+          }
+        : {}),
     },
   ]
 }
@@ -278,6 +287,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const primary = configs.find((c) => c.id === primaryId) ?? configs[0]
   const { promoPrice, standardPrice, tierLabel } = getPromoPricesForSlug(props.tourSlug, props.basePrice)
   const hasPromo = standardPrice > promoPrice
+  const privateDayPricing = getPrivateDayTourPricing(props.tourSlug)
   const consultationActivity =
     props.tourSlug === "balinese-cooking-class"
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
@@ -313,11 +323,15 @@ export default function TourBookingCard(props: TourBookingCardProps) {
         <div className="mx-auto flex max-w-7xl items-center gap-2">
           <div className="min-w-0 flex-1">
             <p className="text-[11px] font-medium text-brand-green-light leading-none">
-              {isPrivateItinerary ? "Consult from" : "From"}
+              {isPrivateItinerary ? "Consult from" : privateDayPricing ? "From · 4+ guests" : "From"}
             </p>
             <div className="flex items-baseline gap-2">
               <span className="font-display text-lg font-bold text-brand-green leading-tight truncate">
-                {formatIdr(promoPrice)}
+                {formatIdr(
+                  privateDayPricing
+                    ? privateDayPricing.tiersIdr[privateDayPricing.tiersIdr.length - 1]
+                    : promoPrice,
+                )}
               </span>
               {hasPromo ? (
                 <span className="text-xs text-brand-green-light line-through opacity-70 shrink-0">
@@ -388,14 +402,29 @@ export default function TourBookingCard(props: TourBookingCardProps) {
         )}
 
         <div>
-          <p className="text-sm text-brand-green-light font-medium mb-1">From</p>
+          <p className="text-sm text-brand-green-light font-medium mb-1">
+            {privateDayPricing ? "1 guest" : "From"}
+          </p>
           <PromoPrice
             price={promoPrice}
             originalPrice={standardPrice}
             variant="card"
-            from
+            from={!privateDayPricing}
             tierLabel={tierLabel}
           />
+          {privateDayPricing ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              {privateDayPricing.tiersIdr
+                .slice(1)
+                .map((price, i, rest) => {
+                  const guests = i + 2
+                  const label = i === rest.length - 1 ? `${guests}+ guests` : `${guests} guests`
+                  return `${label} ${formatIdr(price)} each`
+                })
+                .join(" · ")}
+              . Licensed guide optional.
+            </p>
+          ) : null}
           {props.tourSlug === "bali-atv-adventure" ? (
             <p className="text-sm text-brand-green-light mt-1">
               Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing

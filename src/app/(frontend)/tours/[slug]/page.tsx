@@ -41,6 +41,7 @@ import {
   JEEP_GEO_UPDATED,
 } from "@/data/jeepGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
+import { getPrivateDayTourPricing } from "@/data/privateDayTours"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, PICKUP_FEE_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
@@ -626,6 +627,54 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  const privateDayPricing = getPrivateDayTourPricing(tour.slug)
+  if (privateDayPricing) {
+    const tiers = privateDayPricing.tiersIdr
+    return {
+      ...base,
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(tiers[tiers.length - 1]),
+        highPrice: String(tiers[0]),
+        priceCurrency: "IDR",
+        offerCount: tiers.length,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: tiers.map((price, i) => {
+          const guests = i + 1
+          const isLast = i === tiers.length - 1
+          return {
+            "@type": "Offer",
+            name: `${isLast ? `${guests}+ guests` : `${guests} guest${guests === 1 ? "" : "s"}`} — per person`,
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price,
+              priceCurrency: "IDR",
+              unitText: "per person",
+            },
+            eligibleQuantity: {
+              "@type": "QuantitativeValue",
+              minValue: guests,
+              ...(isLast ? {} : { maxValue: guests }),
+              unitText: "guests",
+            },
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          }
+        }),
+        addOn: privateDayPricing.guideAddons.map((guide) => ({
+          "@type": "Offer",
+          name: guide.label,
+          description: "Once per booking — joins the whole tour",
+          price: guide.perPerson,
+          priceCurrency: "IDR",
+        })),
+      },
+    }
+  }
+
   return {
     ...base,
     offers: {
@@ -960,6 +1009,7 @@ export default async function TourPage({ params }: Props) {
   }
 
   const cooking = isCookingTour(tour)
+  const privateDayTiers = getPrivateDayTourPricing(tour.slug)?.tiersIdr
   const jeep = isJeepTour(tour)
   const tourSchema = buildTourSchema(tour)
   const webPageSchema = buildTourWebPageSchema(tour)
@@ -1189,6 +1239,16 @@ export default async function TourPage({ params }: Props) {
                         {formatIdr(CYCLING_LIST_IDR)}
                       </span>
                       Promo {formatIdr(CYCLING_PROMO_IDR)} / person · 625K (2) · 600K (3+)
+                    </span>
+                  ) : privateDayTiers ? (
+                    <span className="text-sm font-bold text-brand-green">
+                      {privateDayTiers
+                        .map((price, i, all) =>
+                          i === 0
+                            ? `${formatIdr(price)} solo`
+                            : `${formatIdr(price)} each (${i === all.length - 1 ? `${i + 1}+` : i + 1})`,
+                        )
+                        .join(" · ")}
                     </span>
                   ) : (
                     <span className="text-sm font-bold text-brand-green">

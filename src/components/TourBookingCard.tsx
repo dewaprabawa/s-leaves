@@ -15,6 +15,12 @@ import AskAboutActivityButton from "@/components/AskAboutActivityButton"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
 import { buildGirlsTripWhatsAppUrl, GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import {
+  FULL_DAY_UBUD_GUIDE_ADDONS,
+  FULL_DAY_UBUD_GUIDE_INTRO,
+  FULL_DAY_UBUD_SLUG,
+  FULL_DAY_UBUD_TIER_PRICES_IDR,
+} from "@/data/fullDayUbudTour"
+import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
   COOKING_CLASS_PRIVATE_SOLO_IDR,
@@ -96,6 +102,14 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       promoPrice: fallbackBase,
       standardPrice: fallbackBase,
       tierLabel: "Ticket floors · 10% mix at checkout",
+    }
+  }
+  if (tourSlug === FULL_DAY_UBUD_SLUG) {
+    const [, two, three, four] = FULL_DAY_UBUD_TIER_PRICES_IDR
+    return {
+      promoPrice: fallbackBase,
+      standardPrice: fallbackBase,
+      tierLabel: `1 guest / person · 2 guests ${formatIdr(two)} each · 3 guests ${formatIdr(three)} each · 4+ ${formatIdr(four)} each`,
     }
   }
   const activityId = SLUG_TO_ACTIVITY_ID[tourSlug]
@@ -267,6 +281,13 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       pickupIncluded: isPrivateDayTour || isMelukat,
       requiredShuttle: isSwingHeaven,
       pickupNotOffered: isLuwak,
+      ...(props.tourSlug === FULL_DAY_UBUD_SLUG
+        ? {
+            groupTierPricesIdr: FULL_DAY_UBUD_TIER_PRICES_IDR,
+            optionalAddons: FULL_DAY_UBUD_GUIDE_ADDONS,
+            optionalAddonsIntro: FULL_DAY_UBUD_GUIDE_INTRO,
+          }
+        : {}),
     },
   ]
 }

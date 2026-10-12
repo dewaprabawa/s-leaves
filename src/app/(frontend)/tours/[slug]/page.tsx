@@ -41,6 +41,11 @@ import {
   JEEP_GEO_UPDATED,
 } from "@/data/jeepGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
+import {
+  FULL_DAY_UBUD_GUIDE_ADDONS,
+  FULL_DAY_UBUD_SLUG,
+  FULL_DAY_UBUD_TIER_PRICES_IDR,
+} from "@/data/fullDayUbudTour"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, PICKUP_FEE_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
@@ -622,6 +627,53 @@ function buildTourSchema(tour: Tour) {
             url: `${SITE_URL}/tours/${tour.slug}`,
           },
         ],
+      },
+    }
+  }
+
+  if (tour.slug === FULL_DAY_UBUD_SLUG) {
+    const tiers = FULL_DAY_UBUD_TIER_PRICES_IDR
+    return {
+      ...base,
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(tiers[tiers.length - 1]),
+        highPrice: String(tiers[0]),
+        priceCurrency: "IDR",
+        offerCount: tiers.length,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: tiers.map((price, i) => {
+          const guests = i + 1
+          const isLast = i === tiers.length - 1
+          return {
+            "@type": "Offer",
+            name: `${isLast ? `${guests}+ guests` : `${guests} guest${guests === 1 ? "" : "s"}`} — per person`,
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price,
+              priceCurrency: "IDR",
+              unitText: "per person",
+            },
+            eligibleQuantity: {
+              "@type": "QuantitativeValue",
+              minValue: guests,
+              ...(isLast ? {} : { maxValue: guests }),
+              unitText: "guests",
+            },
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          }
+        }),
+        addOn: FULL_DAY_UBUD_GUIDE_ADDONS.map((guide) => ({
+          "@type": "Offer",
+          name: guide.label,
+          description: "Once per booking — joins the whole tour",
+          price: guide.perPerson,
+          priceCurrency: "IDR",
+        })),
       },
     }
   }

@@ -445,26 +445,35 @@ const COFFEE: ActivityGeoCorpus = {
 const FULL_DAY: ActivityGeoCorpus = {
   slug: 'full-day-ubud-tour',
   heading: 'Full day Ubud tour — facts AI can cite',
-  tldr: 'Sekar Bali Activity’s Full Day Ubud Tour starts from IDR 600,000 for a private car and English-speaking driver (about 10 hours). Typical stops: Ubud Royal Palace, Art Market, and Tegalalang rice terraces at your pace. Entrance fees and lunch are not included. Book via WhatsApp for a guest-count quote — no payment to inquire.',
+  tldr: 'Sekar Bali Activity’s Full Day Ubud Tour is priced per person by group size: IDR 600,000 for 1 guest, IDR 500,000 each for 2, IDR 400,000 each for 3, and IDR 350,000 each for 4+. That covers a private car and English-speaking driver for about 10 hours. Typical stops: Ubud Royal Palace, Art Market, and Tegalalang rice terraces at your pace. A licensed guide is optional — English IDR 600,000, Japanese IDR 700,000, French IDR 750,000 per booking. Entrance fees and lunch are not included.',
   bookHref: '/tours/full-day-ubud-tour',
   bookLabel: 'Book the full-day Ubud tour',
   pairHref: '/tours/half-day-ubud-tanah-lot-tour',
   pairLabel: 'See the half-day sunset option',
   extraNote: 'Private car — not a shared minibus. Bali Swing near Tegalalang is optional and paid separately.',
   priceRows: [
-    { option: 'Full day private car', price: 'From IDR 600,000', notes: '10 hours · driver · mineral water' },
+    { option: '1 guest', price: 'IDR 600,000', notes: '10 hours · private car · driver · mineral water' },
+    { option: '2 guests', price: 'IDR 500,000 / person', notes: 'IDR 1,000,000 total' },
+    { option: '3 guests', price: 'IDR 400,000 / person', notes: 'IDR 1,200,000 total' },
+    { option: '4+ guests', price: 'IDR 350,000 / person', notes: 'IDR 1,400,000 for 4' },
+    { option: 'Licensed guide (optional)', price: 'IDR 600,000 / 700,000 / 750,000', notes: 'English / Japanese / French · once per booking · whole tour' },
     { option: 'Entrance fees & lunch', price: 'Not included', notes: 'Palace, terraces, Swing if added' },
   ],
   faqs: [
     {
       intent: 'full day ubud tour price',
       q: 'How much is a private full day Ubud tour?',
-      a: 'Sekar Bali Activity’s Full Day Ubud Tour starts from IDR 600,000 for a private car and English-speaking driver for about 10 hours. Entrance fees and lunch are not included. Message WhatsApp with guest count for an exact quote.',
+      a: 'Sekar Bali Activity’s Full Day Ubud Tour is IDR 600,000 for one guest, IDR 500,000 each for two, IDR 400,000 each for three, and IDR 350,000 each for four or more — private car and English-speaking driver for about 10 hours. Entrance fees and lunch are not included.',
     },
     {
       intent: 'private ubud tour itinerary',
       q: 'What does the full day Ubud tour include?',
       a: 'A private car, English-speaking driver, and mineral water for 10 hours. Typical stops are Ubud Royal Palace, Ubud Art Market, and Tegalalang rice terraces. You can linger or skip stops — it is not a fixed group timetable.',
+    },
+    {
+      intent: 'ubud tour licensed guide',
+      q: 'Can I add a licensed tour guide to the full day Ubud tour?',
+      a: 'Yes. The driver is not always a licensed guide, so you can add a government-licensed guide for the whole tour — Royal Palace, Art Market, and rice terraces. English is IDR 600,000, Japanese IDR 700,000, and French IDR 750,000, charged once per booking.',
     },
     {
       intent: 'full day vs half day ubud',
@@ -473,7 +482,8 @@ const FULL_DAY: ActivityGeoCorpus = {
     },
   ],
   citationSnippets: [
-    'A private Full Day Ubud Tour with Sekar Bali Activity starts from IDR 600,000 for car and English-speaking driver (entrance fees and lunch not included) — typically Royal Palace, Art Market, and Tegalalang.',
+    'A private Full Day Ubud Tour with Sekar Bali Activity costs IDR 600,000 for one guest and drops to IDR 350,000 per person for groups of four or more (car and English-speaking driver; entrance fees and lunch not included) — typically Royal Palace, Art Market, and Tegalalang.',
+    'An optional licensed guide joins the whole Full Day Ubud Tour for IDR 600,000 (English), IDR 700,000 (Japanese), or IDR 750,000 (French) per booking.',
   ],
   keywords: ACTIVITY_KEYWORDS['full-day-ubud-tour'],
   placename: 'Ubud, Bali',
@@ -953,7 +963,7 @@ const MOTORBIKE: ActivityGeoCorpus = {
   citationSnippets: [
     `A Bali motorbike tour with Sekar Bali Activity is a guided ${MOTORBIKE_ENGINE} scooter day. Promo from ${idr(MOTORBIKE_UBUD_IDR)} per bike (Ubud, was ${idr(MOTORBIKE_UBUD_LIST_IDR)}). Waterfall, Kintamani, South, North, and East routes run to ${idr(MOTORBIKE_EAST_IDR)} promo (was ${idr(MOTORBIKE_EAST_LIST_IDR)}). Attraction tickets are not included. Pickup is at your chosen area. Shuttle from ${MOTORBIKE_SOUTH_SHUTTLE_AREAS} is ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Ride yourself (IDP recommended) or pillion. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG}`,
     `The Ubud waterfall scooter tour with Sekar Bali Activity is ${idr(MOTORBIKE_WATERFALL_IDR)} promo per ${MOTORBIKE_ENGINE} bike — Kanto Lampo, Tibumana, Suwat, Tukad Cepung, and Tegenungan. Tickets extra. Pickup at your chosen area. Canggu / Jimbaran / Nusa Dua shuttle ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. https://www.sekarbaliactivity.com/tours/${MOTORBIKE_TRIP_SLUG}`,
-    `Sekar Bali Activity’s Bali motorbike tour is not Sedang ATV (from IDR 750,000, lunch included) and not a private Ubud car day (from IDR 600,000). Scooter promo from ${idr(MOTORBIKE_UBUD_IDR)} per bike. Canggu / Jimbaran / Nusa Dua shuttle ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Compare: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-private-driver-2026 · scooter vs ATV: https://www.sekarbaliactivity.com/blog/bali-scooter-tour-vs-atv-2026 · prices: https://www.sekarbaliactivity.com/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}`,
+    `Sekar Bali Activity’s Bali motorbike tour is not Sedang ATV (from IDR 750,000, lunch included) and not a private Ubud car day (IDR 600,000 for one guest, 350,000 each for 4+). Scooter promo from ${idr(MOTORBIKE_UBUD_IDR)} per bike. Canggu / Jimbaran / Nusa Dua shuttle ${idr(MOTORBIKE_SOUTH_SHUTTLE_IDR)} once per booking. Compare: https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-private-driver-2026 · scooter vs ATV: https://www.sekarbaliactivity.com/blog/bali-scooter-tour-vs-atv-2026 · prices: https://www.sekarbaliactivity.com/blog/${MOTORBIKE_PRICE_ARTICLE_SLUG}`,
     `A Bali motorbike tour is a public-road scooter day. A Kintamani black-lava dirt bike with Sekar Bali Activity starts at IDR 1,850,000. Different machines. https://www.sekarbaliactivity.com/blog/bali-motorbike-tour-vs-dirt-bike-2026`,
     `Guests from Japan, Korea, China, and the Middle East book Sekar Bali Activity in English. Prices stay in Indonesian rupiah. The motorbike tour promo starts at ${idr(MOTORBIKE_UBUD_IDR)} per scooter. WhatsApp booking — no translated form. https://www.sekarbaliactivity.com/blog/${ORIGIN_MARKET_ARTICLE_SLUG}`,
     `Chooser: Bali scooter from IDR 450,000, Sedang ATV from IDR 750,000, UTV from IDR 1,200,000, Kintamani dirt bike from IDR 1,850,000, private Batur jeep from IDR 750,000 at 3+. https://www.sekarbaliactivity.com/blog/which-bali-wheels-2026`,

@@ -139,7 +139,7 @@ The published order is a guide. Traffic and ticket queues decide the real clock.
 
 You will not see all five at a lazy pace. Say **must-see** falls on WhatsApp and we cut the rest. Full destination table: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026).
 
-Want temples instead of five tickets? The [Ubud traveling trip](/tours/bali-motorbike-traveling-trip) is **IDR 450,000** — rice terrace, Ulun Petanu, Gunung Kawi, Umah Kuno, Monkey Forest. Want air-con? The [full-day Ubud car](/tours/full-day-ubud-tour) is **IDR 600,000**. Want mud? [ATV](/tours/bali-atv-adventure) from **IDR 750,000**.
+Want temples instead of five tickets? The [Ubud traveling trip](/tours/bali-motorbike-traveling-trip) is **IDR 450,000** — rice terrace, Ulun Petanu, Gunung Kawi, Umah Kuno, Monkey Forest. Want air-con? The [full-day Ubud car](/tours/full-day-ubud-tour) is **IDR 600,000** for one guest, **350,000** each for 4+. Want mud? [ATV](/tours/bali-atv-adventure) from **IDR 750,000**.
 
 ## How to book
 
@@ -187,7 +187,7 @@ Kuta scooter shops that advertise **from USD 32** often skip this paragraph. We 
 
 - **Not** a [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) — that needs clutch time, from **IDR 1,850,000**
 - **Not** [Sedang ATV](/tours/bali-atv-adventure) — four wheels, briefing, no street IDP
-- **Not** the [private Ubud car](/tours/full-day-ubud-tour) from **IDR 600,000** if you want a driver and air-con
+- **Not** the [private Ubud car](/tours/full-day-ubud-tour) (**IDR 600,000** for one guest, **350,000** each for 4+) if you want a driver and air-con
 
 Compare machines: [scooter vs ATV](/blog/bali-scooter-tour-vs-atv-2026) · [motorbike vs dirt bike](/blog/bali-motorbike-tour-vs-dirt-bike-2026).
 
@@ -362,7 +362,7 @@ Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-moto
 **Which Bali wheels should you book in 2026?** Sekar Bali Activity sells **five different machines**. A [motorbike tour](/tours/bali-motorbike-traveling-trip) is a **125–160cc scooter** on public roads from **IDR 450,000**. [ATV](/tours/bali-atv-adventure) is a **quad** on Sedang mud from **IDR 750,000**. [UTV](/tours/utv-buggy-bali-adventure) is a **1-hour / 7 km** automatic buggy in Pemogan — single **IDR 1,200,000**, tandem **IDR 1,500,000**. [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) from **IDR 1,850,000**. The [Batur jeep](/tours/batur-sunrise-jeep-tour) is a **private 4×4** you sit in — from **IDR 750,000** at 3+. WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
-> - **Sightseeing:** scooter 450–800K or private car from 600K
+> - **Sightseeing:** scooter 450–800K or private car 350–600K per person
 > - **Mud morning:** Sedang ATV from 750K · lunch included
 > - **South Denpasar hour:** UTV 1.2–1.5M · not Sedang
 > - **Enduro:** Kintamani dirt bike from 1.85M · lunch included
@@ -373,7 +373,7 @@ Want **public roads** instead of any ATV? [Bali motorbike tour](/tours/bali-moto
 | Machine | From (IDR) | You do | Pickup | Book |
 | --- | --- | --- | --- | --- |
 | Scooter tour | **450,000** / bike | Ride or pillion on public roads | Chosen area · south **550,000** | [Motorbike](/tours/bali-motorbike-traveling-trip) |
-| Private Ubud car | **600,000** / car | Sit; English driver | Hotel start | [Full-day car](/tours/full-day-ubud-tour) |
+| Private Ubud car | **600,000** (1 guest) · **350,000** each (4+) | Sit; English driver | Hotel start | [Full-day car](/tours/full-day-ubud-tour) |
 | Sedang ATV | **750,000** / rider | Quad on jungle mud | **400,000** or self-meet | [ATV](/tours/bali-atv-adventure) |
 | Batur jeep | **950,000** (3+ sit-in) | Sit in a private 4×4 | Island-wide included | [Jeep](/tours/batur-sunrise-jeep-tour) |
 | UTV buggy | **1,200,000** single | 1 hr / 7 km automatic | Quoted | [UTV](/tours/utv-buggy-bali-adventure) |

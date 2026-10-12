@@ -238,7 +238,7 @@ What we **do** control is published on this domain: **IDR**, pickup rules, and W
 
 | Item | 2026 from-price | Notes |
 | --- | --- | --- |
-| Private driver day (car) | **IDR 600,000** | Same “from” as the [full-day Ubud car](/tours/full-day-ubud-tour). One long day or several. Entrance fees extra. |
+| Private driver day (car) | **IDR 600,000** | Per car-day — not the per-person [Full Day Ubud Tour](/tours/full-day-ubud-tour). One long day or several. Entrance fees extra. |
 | HiAce / 10–12 seater | **Quote** | Families or **6+ with bags**. Not the car-day rate. |
 | [Swing Heaven](/tours/swing-heaven-bali) | **IDR 530,000** / **630,000** lunch | Bongkasa / Ayung. Koi boat + dress extra. Hotel driver **included** (required). |
 | [Batur sunrise jeep](/tours/batur-sunrise-jeep-tour) | **IDR 950,000** / person at 3+ (sit-in) | Pickup **included**. Breakfast after viewpoint. Not the summit trek. |

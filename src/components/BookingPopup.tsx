@@ -54,6 +54,8 @@ export type TourOptionalAddon = {
   perPerson: number
   /** Charge once per booking instead of × guest count (e.g. a south-area shuttle). */
   flat?: boolean
+  /** Add-ons sharing a group are mutually exclusive (e.g. one licensed-guide language). */
+  group?: string
 }
 
 function addonMaxQty(addon: TourOptionalAddon, guestCount: number) {
@@ -99,6 +101,8 @@ export interface TourConfig {
    * variant (jeep tracking / sunset). Keeps private 2 / 3+ jeep tiers.
    */
   pricingActivityId?: string
+  /** Per-person price by adult count for tours without a catalog tier table (index 0 = 1 guest; last applies to larger groups). */
+  groupTierPricesIdr?: readonly number[]
   /** Optional per-person add-ons (jeep hot spring, swing dress hire). Not mix-combo activities. */
   optionalAddons?: TourOptionalAddon[]
   /** Intro copy above optional add-ons. Defaults to jeep hot-spring text if omitted. */
@@ -300,6 +304,7 @@ export function BookingPopup({
     // (cooking class, coffee plantation, private day tours, etc.)
     fallbackAdultPrice: activeTour.adultPrice,
     fallbackChildPrice: activeTour.kidPrice,
+    fallbackTierPrices: activeTour.groupTierPricesIdr,
   });
   const addonGuestCount = Math.max(1, adults) + kids
   const selectedAddons = (activeTour.optionalAddons ?? [])
@@ -399,8 +404,14 @@ export function BookingPopup({
         const { [id]: _, ...rest } = prev
         return rest
       }
-      if (prev[id] === qty) return prev
-      return { ...prev, [id]: qty }
+      if (prev[id] === qty && !addon.group) return prev
+      const next = { ...prev, [id]: qty }
+      if (addon.group) {
+        for (const other of activeTour?.optionalAddons ?? []) {
+          if (other.id !== id && other.group === addon.group) delete next[other.id]
+        }
+      }
+      return next
     })
   }
   const nameOk = guestName.trim().length >= 2;
@@ -886,7 +897,11 @@ export function BookingPopup({
                                 ? formatIdr(opt.perPerson)
                                 : `${formatIdr(opt.perPerson)} × ${qty} = ${formatIdr(lineTotal)}`}
                             </span>
-                          ) : null}
+                          ) : (
+                            <span className="block text-xs font-semibold text-brand-green-light mt-1.5">
+                              {formatIdr(opt.perPerson)} {opt.flat ? "per booking" : "per guest"}
+                            </span>
+                          )}
                         </div>
                         <div className="flex items-center rounded-xl border border-brand-green/20 overflow-hidden bg-white shrink-0">
                           <button

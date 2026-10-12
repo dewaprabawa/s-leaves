@@ -132,7 +132,7 @@ Book [Swing Heaven](/tours/swing-heaven-bali) if you want:
 - Optional **lunch** and **flying dress** on the same invoice
 - A short hop from Ubud that pairs with **Abiansemal** adventures
 
-Skip the swing ticket if you only want to **see** rice terraces. Tegalalang is a walk-up stop on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) (car from **IDR 600,000**; terrace ticket paid on site). For quiet paddies without a swing, book [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour).
+Skip the swing ticket if you only want to **see** rice terraces. Tegalalang is a walk-up stop on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) (**IDR 600,000** for one guest, **350,000** each for 4+; terrace ticket paid on site). For quiet paddies without a swing, book [Pejeng ricefield cycling](/tours/ubud-ricefield-cycling-tour).
 
 ## Price honesty
 

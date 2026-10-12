@@ -53,7 +53,7 @@ Lunch, helmet, gear, guide, and insurance are inside every activity price. One p
 **Book the morning.** South Bali traffic builds after 15:00, and wet-season rain (November–March) tends to fall in the afternoon.
 
 1. **Rafting only:** take the **08:30** or **11:00** slot — back at your hotel by late afternoon
-2. **ATV only:** ask for a morning start — the ride runs **2–4 hours** including briefing and lunch
+2. **ATV only:** ask for a morning start — the ride is **1.5 hours**, plus briefing and lunch
 3. **ATV + rafting:** a full day — ATV in the morning, rafting after lunch, one pickup and one drop-off ([combo guide](/blog/atv-rafting-combo-ubud-2026))
 
 ## Should I self-meet instead?

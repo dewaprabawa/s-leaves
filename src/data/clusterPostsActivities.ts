@@ -25,7 +25,7 @@ export const ACTIVITY_CLUSTER_POSTS = [
 
 **Answer:** A **muddy quad bike** here is a sit-on **four-wheel sport ATV** on a jungle track with standing water, soft soil, and shallow river crossings. You steer after an English briefing. The pace follows the least experienced rider.
 
-You do **not** need a motocross clutch or dirt-bike balance. Tandem is available if one guest prefers not to drive. The ride is **2–4 hours** including briefing, track time, and lunch.
+You do **not** need a motocross clutch or dirt-bike balance. Tandem is available if one guest prefers not to drive. The ride is **1.5 hours** for single or tandem, plus briefing and lunch.
 
 This is the product guests mean when they type **muddy ATV Ubud**, **mud bike Bali**, or **jungle mud quad**. It is **not** a paved scooter day and **not** a sit-in [UTV hour](/blog/bali-atv-vs-utv-buggy-2026) in Pemogan.
 
@@ -531,8 +531,8 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | --- | --- | --- | --- | --- |
 | Tumang cooking class | **450,000** promo | 3–4 hrs | Free Ubud | [Cooking class](/tours/balinese-cooking-class) |
 | Pejeng ricefield cycling | **650,000** promo (was 750,000) | 2 hrs | Free Ubud + lunch | [Cycling](/tours/ubud-ricefield-cycling-tour) |
-| Single ATV | **750,000** | 2–4 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
-| Tandem ATV | **1,100,000** / bike | 2–4 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
+| Single ATV | **750,000** | 1.5 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
+| Tandem ATV | **1,100,000** / bike | 1.5 hrs | IDR 400K or self-meet | [ATV](/tours/bali-atv-adventure) |
 | ATV + Ayung rafting | **1,250,000** floors · **10% mix** | 5–7 hrs | IDR 400K once or self-meet | [ATV + rafting](/tours/atv-rafting-combo) |
 | Tandem ATV + rafting (couple) | **2,000,000** before mix · **1,800,000** after 10% | 5–7 hrs | IDR 400K once or self-meet | [Tandem + rafting](/blog/atv-tandem-rafting-ubud-2026) |
 | ATV + Wos tubing | **1,250,000** floors · **10% mix** | Half / full day | IDR 400K once or self-meet | [ATV + tubing](/blog/atv-river-tubing-wos-river-bali) |

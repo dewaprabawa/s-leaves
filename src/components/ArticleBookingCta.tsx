@@ -286,7 +286,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-atv-vs-utv-buggy-2026': {
     headline: 'Book the quad or the sit-in hour',
-    body: 'Sedang ATV from IDR 750,000 (2–4 hours, pickup IDR 400,000 or self-meet). Pemogan UTV 1.2M single / 1.5M tandem (1 hour / 7 km, pickup quoted).',
+    body: 'Sedang ATV from IDR 750,000 (1.5-hour ride, pickup IDR 400,000 or self-meet). Pemogan UTV 1.2M single / 1.5M tandem (1 hour / 7 km, pickup quoted).',
     primaryHref: '/tours/bali-atv-adventure',
     primaryLabel: 'View Sedang ATV',
     secondaryHref: '/tours/utv-buggy-bali-adventure',

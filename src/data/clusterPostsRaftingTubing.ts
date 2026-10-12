@@ -45,7 +45,7 @@ Want a sit-in hour instead of the quad? [ATV vs UTV](/blog/bali-atv-vs-utv-buggy
 
 ## How the day runs
 
-1. **Morning — single ATV** at All New Bali Adventure, Jl. Raya Krasan, Sedang. Briefing, your own quad, jungle mud, river crossings, lunch on the ATV ticket (2–4 hours including kit).
+1. **Morning — single ATV** at All New Bali Adventure, Jl. Raya Krasan, Sedang. Briefing, your own quad, jungle mud, river crossings, lunch on the ATV ticket (1.5-hour ride, single or tandem).
 2. **Transfer** — we lock the Ayung slot on WhatsApp. The same **400,000** hotel collect can cover both pins.
 3. **Afternoon — rafting** — Class II–III paddle crew, lunch on the rafting ticket, dry clothes after.
 

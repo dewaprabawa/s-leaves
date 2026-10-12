@@ -46,14 +46,14 @@ export const BLOG_POSTS: BlogPost[] = [
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**How much is a tandem ATV near Ubud, and should you share?** At Sekar Bali Activity a **Tandem ATV is IDR 1,100,000 for two people on one bike**. A **Single ATV starts at IDR 750,000** per rider (IDR 725,000 each for two singles · IDR 700,000 each for 3+). We ride at **All New Bali Adventure** in Sedang, Abiansemal — not a roadside rental. **Hotel pickup is IDR 400,000** or you self-meet at the arena for free. The package is **2–4 hours** with lunch, helmet, boot shoes, and insurance for ages 6–65. Book on WhatsApp — **no payment to inquire**.
+**How much is a tandem ATV near Ubud, and should you share?** At Sekar Bali Activity a **Tandem ATV is IDR 1,100,000 for two people on one bike**. A **Single ATV starts at IDR 750,000** per rider (IDR 725,000 each for two singles · IDR 700,000 each for 3+). We ride at **All New Bali Adventure** in Sedang, Abiansemal — not a roadside rental. **Hotel pickup is IDR 400,000** or you self-meet at the arena for free. The ride is **1.5 hours** (single or tandem), with lunch, helmet, boot shoes, and insurance for ages 6–65. Book on WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - **Tandem:** IDR **1,100,000** per bike (2 guests share) · more bikes: **1,060,000** / **1,030,000**
 > - **Single:** IDR **750,000** (1) · **725,000** (2) · **700,000** (3+) · child single **700,000**
 > - Two singles cost **IDR 1,450,000** — tandem is cheaper if one guest is happy not to drive
 > - Venue: **All New Bali Adventure**, Jl. Raya Krasan, Sedang — jungle mud + river crossings
-> - Pickup **IDR 400,000** or free self-meet · duration **2–4 hours**
+> - Pickup **IDR 400,000** or free self-meet · ride **1.5 hours**
 > - WhatsApp **1 or 2 riders + hotel** — we quote single vs tandem. No deposit to ask
 
 ## Quick answer: single or tandem?
@@ -65,7 +65,7 @@ export const BLOG_POSTS: BlogPost[] = [
 | Best for | Thrill, photos of *you* riding, solo guests | Couples, one nervous rider, cheaper pair total |
 | Two-guest total | **IDR 1,450,000** (2 × 725,000) | **IDR 1,100,000** |
 | Pickup | IDR 400,000 or self-meet | Same rule |
-| Duration | 2–4 hours | 2–4 hours |
+| Ride time | 1.5 hours | 1.5 hours |
 
 Book the money page: [Bali ATV Adventure near Ubud](/tours/bali-atv-adventure). Full IDR table: [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026).
 
@@ -141,7 +141,7 @@ On tandem the **front rider** steers after the English briefing. The **rear ride
 ## Pickup, duration, who it is (not) for
 
 - **Where:** Sedang arena near Ubud (southwest of central Ubud)
-- **How long:** **2–4 hours** on the tour page (briefing, trail, lunch, optional tubing after)
+- **How long:** **1.5 hours** on the trail, plus briefing and lunch (optional tubing after)
 - **Pickup:** **IDR 400,000** hotel collect, or **free self-meet**. This is **not** the complimentary Ubud pickup on [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) or [Tumang cooking](/tours/balinese-cooking-class). Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained)
 - **For:** beginners, couples, families who want mud and photos
 - **Not for:** anyone who needs a cave/tunnel marketing photo, or who expected free Ubud transfer in the 750K / 1.1M rate
@@ -242,7 +242,7 @@ A Tampaksiring Tirta Empul morning sits next to [Umah Kuno luwak tasting](/tours
 > **Key Takeaways**
 > - First-timers are the usual guest — the briefing covers throttle, brake, and trail etiquette before you start
 > - Single ATV from IDR 750,000 · Tandem ATV from IDR 1,100,000 at All New Bali Adventure near Ubud
-> - Included: boot shoes, helmet, lunch, insurance (ages 6–65), trail guide (2–4 hours)
+> - Included: boot shoes, helmet, lunch, insurance (ages 6–65), trail guide (1.5-hour ride)
 > - Pickup is an optional booking checkbox (IDR 400,000); unchecked means meet at the arena
 
 ---
@@ -281,7 +281,7 @@ A typical first-timer sequence:
 5. Optional [canyon tubing](/tours/canyon-tubing) on the Wos River after the ATV session
 6. Simple menu lunch and time to change into dry clothes
 
-Package duration on the tour page is **2–4 hours**. Arrival details and what the base looks like: [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide).
+Ride time is **1.5 hours** for single or tandem, plus briefing and lunch. Arrival details and what the base looks like: [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide).
 
 ## What is included in the beginner ATV price
 
@@ -1886,7 +1886,7 @@ The [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) includes pickup 
 | --- | --- | --- | --- | --- |
 | **Price** | IDR 750K+ | IDR 500K · 450K for 2+ | IDR 500K · 450K for 2+ | Promo 650K (was 750K) |
 | **Intensity** | High | Medium–High | Low–Medium | Low |
-| **Duration** | 2–4 hrs | 3 hours | 2.5 hours | 2 hours |
+| **Duration** | 1.5 hrs | 3 hours | 2.5 hours | 2 hours |
 | **Environment** | Jungle mud track | River rapids | River float | Rice terraces |
 | **Free Ubud pickup** | No | No | No | Yes |
 | **Tour page** | [ATV](/tours/bali-atv-adventure) | [Rafting](/tours/whitewater-rafting) | [Tubing](/tours/canyon-tubing) | [Cycling](/tours/ubud-ricefield-cycling-tour) |

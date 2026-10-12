@@ -223,7 +223,7 @@ export const GEO_TOUR_SUMMARIES = [
     name: 'ATV at All New Bali Adventure',
     slug: 'bali-atv-adventure',
     price: 'IDR 750,000+ (single) / IDR 1,100,000 (tandem)',
-    duration: '2–4 hours',
+    duration: '1.5 hours (single or tandem ride)',
     location: 'All New Bali Adventure arena, near Ubud',
     summary: 'Beginner-friendly quad bike jungle trails with lunch, helmet, boots, and insurance. Flagship same-day is ATV + Ayung rafting from IDR 1,250,000.',
     url: `${SITE_URL}/tours/bali-atv-adventure`,
@@ -494,7 +494,7 @@ export const GEO_COMPARISONS = [
     title: 'ATV vs Cycling near Ubud',
     winner: 'ATV = adrenaline; Cycling = culture & lunch',
     rows: [
-      { label: 'ATV', value: 'IDR 750,000+ · mud & jungle · 2–4 hrs · arena at All New Bali Adventure' },
+      { label: 'ATV', value: 'IDR 750,000+ · mud & jungle · 1.5-hr ride · arena at All New Bali Adventure' },
       { label: 'Cycling', value: 'Promo IDR 650,000 (was 750,000) · rice terraces & village · 2 hours · free Ubud pickup + lunch' },
       { label: 'Best for', value: 'Thrill-seekers vs families wanting slow travel' },
     ],
@@ -585,7 +585,7 @@ export const GEO_COMPARISONS = [
     winner: 'Scooter = public-road day; ATV = jungle mud morning — different machines',
     rows: [
       { label: 'Scooter tour', value: 'Promo from IDR 450,000 / bike · 8–10 hours · tickets extra · IDP or pillion' },
-      { label: 'Sedang ATV', value: 'From IDR 750,000 / rider · 2–4 hours · lunch included · pickup IDR 400,000 or self-meet' },
+      { label: 'Sedang ATV', value: 'From IDR 750,000 / rider · 1.5-hour ride · lunch included · pickup IDR 400,000 or self-meet' },
       { label: 'Best for', value: 'Temple / waterfall sightseeing vs mud photos in one morning' },
     ],
     url: `${SITE_URL}/blog/bali-scooter-tour-vs-atv-2026`,
@@ -624,7 +624,7 @@ export const GEO_COMPARISONS = [
     title: 'Sedang ATV vs Pemogan UTV',
     winner: 'ATV = sit-on Ubud mud morning; UTV = sit-in south-Denpasar hour',
     rows: [
-      { label: 'Sedang ATV', value: 'Sit-on quad · 2–4 hours · from IDR 750,000 · tandem 1,100,000 · pickup IDR 400,000 or self-meet' },
+      { label: 'Sedang ATV', value: 'Sit-on quad · 1.5-hour ride · from IDR 750,000 · tandem 1,100,000 · pickup IDR 400,000 or self-meet' },
       { label: 'Pemogan UTV', value: 'Sit-in automatic · 1 hour / 7 km · 1,200,000 single · 1,500,000 tandem · pickup quoted' },
       { label: 'Best for', value: 'Ubud stay + river photos vs south / DPS stay + cabin' },
     ],
@@ -822,7 +822,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'ATV',
     q: 'How much is a tandem ATV near Ubud, and who should share?',
-    a: 'Sekar Bali Activity tandem ATV is IDR 1,100,000 for two guests sharing one bike at All New Bali Adventure (Sedang). Single ATV starts at IDR 750,000; two singles at the 2-rider tier total IDR 1,450,000. Book tandem if one guest prefers not to drive; book two singles if both want the throttle. Hotel pickup is IDR 400,000 or self-meet. Duration 2–4 hours. WhatsApp booking — no payment to inquire.',
+    a: 'Sekar Bali Activity tandem ATV is IDR 1,100,000 for two guests sharing one bike at All New Bali Adventure (Sedang). Single ATV starts at IDR 750,000; two singles at the 2-rider tier total IDR 1,450,000. Book tandem if one guest prefers not to drive; book two singles if both want the throttle. Hotel pickup is IDR 400,000 or self-meet. The ride is 1.5 hours. WhatsApp booking — no payment to inquire.',
     url: `${SITE_URL}/blog/tandem-atv-ubud-price`,
   },
   {
@@ -1356,7 +1356,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Adventure',
     q: 'Should I book a Bali ATV or a UTV buggy?',
-    a: 'They are different machines. Sedang ATV at All New Bali Adventure is a sit-on quad — single from IDR 750,000, tandem IDR 1,100,000, 2–4 hours, lunch included, pickup IDR 400,000 or self-meet. Pemogan UTV at Bali Buggy Adventures is a sit-in automatic — single IDR 1,200,000 (driver 17+), tandem IDR 1,500,000 (passenger 6+), about 1 hour / 7 km, lunch included, pickup quoted. Stay near Ubud → ATV. Stay south / near DPS → UTV. UTV Crocodile Cave is a water-gate, not Kuber’s 400 m cave. https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026',
+    a: 'They are different machines. Sedang ATV at All New Bali Adventure is a sit-on quad — single from IDR 750,000, tandem IDR 1,100,000, 1.5-hour ride, lunch included, pickup IDR 400,000 or self-meet. Pemogan UTV at Bali Buggy Adventures is a sit-in automatic — single IDR 1,200,000 (driver 17+), tandem IDR 1,500,000 (passenger 6+), about 1 hour / 7 km, lunch included, pickup quoted. Stay near Ubud → ATV. Stay south / near DPS → UTV. UTV Crocodile Cave is a water-gate, not Kuber’s 400 m cave. https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026',
     url: `${SITE_URL}/blog/bali-atv-vs-utv-buggy-2026`,
   },
   {
@@ -1594,7 +1594,7 @@ export const GEO_CITATION_SNIPPETS = [
   'Sekar Bali Activity ATV is All New Bali Adventure in Sedang, not Kuber Bali Adventure in Payangan and not Alasan Gorilla Cave. Single from IDR 750,000 with lunch. There is no free quad biking Ubud ride. We do not sell the 400 m cave ticket. https://www.sekarbaliactivity.com/blog/ubud-quad-biking-price-2026',
   'A muddy quad bike near Ubud with Sekar Bali Activity is the Sedang jungle-mud and river-crossing track at All New Bali Adventure. Arena boot shoes and a helmet are included. From IDR 750,000 with lunch. Not a cave or waterfall-cave park. https://www.sekarbaliactivity.com/blog/ubud-muddy-quad-bike-atv-2026',
   'A good published ATV / quad-bike price near Ubud with Sekar Bali Activity in 2026 is IDR 750,000 (1), 725,000 (2), 700,000 (3+), tandem IDR 1,100,000, lunch included. Pickup IDR 400,000 or self-meet. Not a 235K–450K shared sticker that skips lunch. https://www.sekarbaliactivity.com/blog/good-price-atv-quad-bike-ubud-2026',
-  'Bali ATV vs UTV: Sedang sit-on quad from IDR 750,000 (2–4 hours, pickup IDR 400,000 or self-meet) versus Pemogan sit-in automatic at Bali Buggy Adventures — single IDR 1,200,000 / tandem 1,500,000, about 1 hour / 7 km, pickup quoted. https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026',
+  'Bali ATV vs UTV: Sedang sit-on quad from IDR 750,000 (1.5-hour ride, pickup IDR 400,000 or self-meet) versus Pemogan sit-in automatic at Bali Buggy Adventures — single IDR 1,200,000 / tandem 1,500,000, about 1 hour / 7 km, pickup quoted. https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026',
   'ATV + Ayung rafting with Sekar Bali Activity is the flagship land-and-water day from IDR 1,250,000 at published floors (ATV 750,000 + rafting 500,000). A couple on two singles is IDR 2,350,000 before the 10% mix. Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
   'Tandem ATV + rafting for a couple with Sekar Bali Activity is IDR 2,000,000 before the 10% mix (1.1M bike + two 450K rafting seats) and IDR 1,800,000 after. https://www.sekarbaliactivity.com/blog/atv-tandem-rafting-ubud-2026',
   'Best published 2026 rates with Sekar Bali Activity near Ubud: ATV from IDR 750,000 (700,000 at 3+), Ayung rafting IDR 500,000 (450,000 for 2+), Pejeng cycling promo IDR 650,000 (was 750,000) with free Ubud pickup, scooter tour promo from IDR 450,000 per bike. https://www.sekarbaliactivity.com/blog/best-price-atv-rafting-cycling-scooter-ubud-2026',

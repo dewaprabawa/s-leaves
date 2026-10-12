@@ -41,7 +41,7 @@ import {
   JEEP_GEO_UPDATED,
 } from "@/data/jeepGeo"
 import { GEO_UPDATED } from "@/data/geoContent"
-import { getPrivateDayTourPricing } from "@/data/privateDayTours"
+import { getGroupPricedTour } from "@/data/groupPricedTours"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, PICKUP_FEE_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
@@ -627,9 +627,9 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
-  const privateDayPricing = getPrivateDayTourPricing(tour.slug)
-  if (privateDayPricing) {
-    const tiers = privateDayPricing.tiersIdr
+  const groupPricing = getGroupPricedTour(tour.slug)
+  if (groupPricing) {
+    const tiers = groupPricing.tiersIdr
     return {
       ...base,
       offers: {
@@ -664,7 +664,7 @@ function buildTourSchema(tour: Tour) {
             url: `${SITE_URL}/tours/${tour.slug}`,
           }
         }),
-        addOn: privateDayPricing.guideAddons.map((guide) => ({
+        addOn: groupPricing.guideAddons.map((guide) => ({
           "@type": "Offer",
           name: guide.label,
           description: "Once per booking — joins the whole tour",
@@ -1009,7 +1009,7 @@ export default async function TourPage({ params }: Props) {
   }
 
   const cooking = isCookingTour(tour)
-  const privateDayTiers = getPrivateDayTourPricing(tour.slug)?.tiersIdr
+  const groupTiers = getGroupPricedTour(tour.slug)?.tiersIdr
   const jeep = isJeepTour(tour)
   const tourSchema = buildTourSchema(tour)
   const webPageSchema = buildTourWebPageSchema(tour)
@@ -1240,9 +1240,9 @@ export default async function TourPage({ params }: Props) {
                       </span>
                       Promo {formatIdr(CYCLING_PROMO_IDR)} / person · 625K (2) · 600K (3+)
                     </span>
-                  ) : privateDayTiers ? (
+                  ) : groupTiers ? (
                     <span className="text-sm font-bold text-brand-green">
-                      {privateDayTiers
+                      {groupTiers
                         .map((price, i, all) =>
                           i === 0
                             ? `${formatIdr(price)} solo`

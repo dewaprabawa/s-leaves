@@ -1540,10 +1540,10 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     isTopPick: true,
     pickup: "Transport not included",
     duration: "1.5 Hours",
-    basePrice: 800000,
-    seoTitle: "Umah Kuno Luwak Coffee | Ethical 800K",
+    basePrice: 850000,
+    seoTitle: "Umah Kuno Luwak Coffee | Ethical, From 550K pp",
     seoDescription:
-      "Ethical Luwak coffee tasting at Umah Kuno near Ubud — jungle walk, wood-fire roasting, and a 10-drink tasting flight including Kopi Luwak. IDR 800,000 per person. Min 3 guests.",
+      "Ethical Luwak coffee tasting at Umah Kuno near Ubud — jungle walk, wood-fire roasting, and a 10-drink tasting flight including Kopi Luwak. IDR 850K solo, 700K each for 2, 550K each for 4+.",
     heroImage: {
       url: "/coffee.jpg",
       alt: "Luwak Coffee Plantation Umah Kuno",
@@ -1557,7 +1557,7 @@ The itinerary may sometimes change due to field conditions, weather, or village 
       },
     ],
     shortDescription:
-      "Ethical Luwak coffee tasting at Umah Kuno — jungle walk, traditional roasting, and a 10-drink tasting flight. IDR 800,000 per person (minimum 3 guests).",
+      "Ethical Luwak coffee tasting at Umah Kuno — jungle walk, traditional roasting, and a 10-drink tasting flight. IDR 850,000 for one guest, down to IDR 550,000 each for groups of 4+. Licensed guide optional.",
     fullDescription: `**A Journey Into the Heart of Bali's Coffee Culture**
 
 Bali is world-renowned for its coffee, but the story behind the cup is often hidden from visitors. Our Luwak Coffee Plantation Experience at the beautiful **Umah Kuno** estate offers you a transparent, ethical, and deeply educational look into how Bali's most famous export is cultivated, processed, and enjoyed. 
@@ -1588,11 +1588,29 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
 - **Morning Session:** 10:00 AM – 11:30 AM
 - **Afternoon Session:** 2:00 PM – 3:30 PM
 
-*(Note: **IDR 800,000 per person**. Minimum booking of 3 people required for this experience)*`,
+### Price per Person
+| Guests | Price per person | Total |
+|---|---|---|
+| 1 | IDR 850,000 | IDR 850,000 |
+| 2 | IDR 700,000 | IDR 1,400,000 |
+| 3 | IDR 650,000 | IDR 1,950,000 |
+| 4+ | IDR 550,000 | IDR 2,200,000 for 4 |
+
+Transport to Tampaksiring is not included.
+
+### Optional Licensed Guide
+Want the plantation, roasting, and Kopi Luwak story explained in your own language? Add a government-licensed guide for the whole visit — charged once per booking, not per person:
+
+| Language | Price per booking |
+|---|---|
+| English | IDR 600,000 |
+| Japanese | IDR 700,000 |
+| French | IDR 750,000 |`,
     highlights: [
       "Stroll through a lush, shaded plantation",
       "Watch local farmers roast coffee beans over open wood fires",
       "Enjoy a tasting board of 10 different local teas and coffees",
+      "Optional licensed guide in English, Japanese, or French",
     ],
     included: [
       "Guided plantation tour",
@@ -1626,7 +1644,7 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
         id: "faq-cof-price",
         question: "How much is the Luwak Coffee Plantation Experience?",
         answer:
-          "IDR 800,000 per person. Minimum booking is 3 guests. The price includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included.",
+          "Priced per person by group size: IDR 850,000 for 1 guest, IDR 700,000 each for 2 (IDR 1,400,000), IDR 650,000 each for 3 (IDR 1,950,000), and IDR 550,000 each for 4 or more (IDR 2,200,000 for 4). The price includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included.",
       },
       {
         id: "faq-cof-1",
@@ -1642,7 +1660,12 @@ Finally, the crown jewel is served: a freshly brewed cup of the ethical Kopi Luw
         id: "faq-cof-3",
         question: "Can kids join?",
         answer: "Absolutely! Kids love the jungle walk and participating in grinding the beans. We have non-caffeinated chocolate and teas for them to taste.",
-      }
+      },
+      {
+        id: "faq-cof-guide",
+        question: "Can I add a licensed guide?",
+        answer: "Yes. Add a government-licensed guide for the whole visit — jungle walk, roasting, and tasting — when booking: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000. The guide price is once per booking, not per person.",
+      },
     ],
     reviews: [],
   },

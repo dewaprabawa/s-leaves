@@ -310,7 +310,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'luwak-coffee-plantation-umah-kuno-price-2026': {
     headline: 'Book ethical Luwak tasting at Umah Kuno',
-    body: 'IDR 800,000 per person · minimum 3 guests. Transport not included. Cage-free civets only.',
+    body: 'IDR 850,000 for one guest, down to 550,000 each for 4+. Licensed guide optional. Transport not included. Cage-free civets only.',
     primaryHref: '/tours/luwak-coffee-plantation',
     primaryLabel: 'View coffee experience',
     secondaryHref: '/book',
@@ -668,7 +668,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'how-to-spot-ethical-luwak-coffee-in-bali': {
     headline: 'Book cage-free Luwak at Umah Kuno',
-    body: 'IDR 800,000 per person · minimum 3 guests. Transport not included.',
+    body: 'IDR 850,000 for one guest, down to 550,000 each for 4+. Transport not included.',
     primaryHref: '/tours/luwak-coffee-plantation',
     primaryLabel: 'Book the tasting',
   },

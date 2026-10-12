@@ -552,7 +552,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Umah Kuno Luwak price 2026',
       href: '/blog/luwak-coffee-plantation-umah-kuno-price-2026',
-      blurb: 'IDR 800,000 · min 3 guests · transport not included.',
+      blurb: '850K solo, 550K each for 4+ · transport not included.',
     },
     {
       title: 'How to spot ethical luwak coffee',
@@ -856,7 +856,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'luwak-coffee-plantation': {
     title: 'From our Umah Kuno hosts',
-    body: 'We only send guests to Umah Kuno because the civets stay free-roaming — you will not see a caged Luwak show. The 1.5-hour walk, wood-fire roast, and 10-drink flight are the product. Transport is not in the IDR 800,000 rate; say your hotel area on WhatsApp and we will tell you how to arrive.',
+    body: 'We only send guests to Umah Kuno because the civets stay free-roaming — you will not see a caged Luwak show. The 1.5-hour walk, wood-fire roast, and 10-drink flight are the product. Transport is not in the per-person rate; say your hotel area on WhatsApp and we will tell you how to arrive.',
   },
   'full-day-ubud-tour': {
     title: 'From our Ubud drivers',

@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     question: "How much is the Luwak Coffee Plantation Experience?",
-    answer: "IDR 800,000 per person at Umah Kuno (minimum 3 guests). Includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included."
+    answer: "IDR 850,000 for one guest, 700,000 each for two, 650,000 each for three, and 550,000 each for four or more at Umah Kuno. A licensed guide is optional: English 600,000, Japanese 700,000, French 750,000 per booking. Includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included."
   },
   {
     question: "How much is a private Tirta Empul or Beji melukat?",

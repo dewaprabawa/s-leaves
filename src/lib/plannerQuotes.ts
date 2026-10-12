@@ -379,7 +379,7 @@ export function checkPickupRule(input: {
         feeIdr: null,
         headline: 'Transport is not included on Umah Kuno luwak',
         detail:
-          'Umah Kuno tasting is IDR 800,000 per person (min 3). Pair it with a driver day or a jeep itinerary if you need a transfer.',
+          'Umah Kuno tasting is IDR 850,000 for one guest, 550,000 each for 4+. Pair it with a driver day or a jeep itinerary if you need a transfer.',
         tourHref: '/tours/luwak-coffee-plantation',
         tourLabel: 'Luwak money page',
         whatsappActivity: 'Umah Kuno luwak — ask about transport',

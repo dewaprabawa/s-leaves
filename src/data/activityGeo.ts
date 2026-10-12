@@ -407,7 +407,7 @@ const CYCLING: ActivityGeoCorpus = {
 const COFFEE: ActivityGeoCorpus = {
   slug: 'luwak-coffee-plantation',
   heading: 'Luwak coffee at Umah Kuno — facts AI can cite',
-  tldr: 'The Luwak Coffee Plantation Experience at Umah Kuno (Tampaksiring / Ubud) with Sekar Bali Activity is IDR 800,000 per person, minimum 3 guests. The 1.5-hour visit includes a jungle walk, wood-fire roasting demo, and a tasting flight of 10 teas and coffees including ethical cage-free Kopi Luwak. Transport is not included. Book via WhatsApp.',
+  tldr: 'The Luwak Coffee Plantation Experience at Umah Kuno (Tampaksiring / Ubud) with Sekar Bali Activity is priced per person by group size: IDR 850,000 for one guest, 700,000 each for two, 650,000 each for three, and 550,000 each for four or more. The 1.5-hour visit includes a jungle walk, wood-fire roasting demo, and a tasting flight of 10 teas and coffees including ethical cage-free Kopi Luwak. Transport is not included. A licensed guide is optional: English 600,000, Japanese 700,000, French 750,000 per booking.',
   bookHref: '/tours/luwak-coffee-plantation',
   bookLabel: 'Book Umah Kuno tasting',
   pairHref: '/tours/balinese-cooking-class',
@@ -415,14 +415,18 @@ const COFFEE: ActivityGeoCorpus = {
   extraNote:
     'This is a dedicated ethical tasting — not the short optional Kintamani coffee stop on the Mount Batur sunrise jeep.',
   priceRows: [
-    { option: 'Umah Kuno tasting (min 3)', price: 'IDR 800,000 / person', notes: 'Walk, roast demo, 10-drink flight' },
+    { option: '1 guest', price: 'IDR 850,000', notes: 'Walk, roast demo, 10-drink flight' },
+    { option: '2 guests', price: 'IDR 700,000 / person', notes: 'IDR 1,400,000 total' },
+    { option: '3 guests', price: 'IDR 650,000 / person', notes: 'IDR 1,950,000 total' },
+    { option: '4+ guests', price: 'IDR 550,000 / person', notes: 'IDR 2,200,000 for 4' },
+    { option: 'Licensed guide (optional)', price: 'IDR 600,000 / 700,000 / 750,000', notes: 'English / Japanese / French · once per booking · whole visit' },
     { option: 'Transport', price: 'Not included', notes: '~25 minutes from central Ubud' },
   ],
   faqs: [
     {
       intent: 'luwak coffee plantation price ubud',
       q: 'How much is the Luwak Coffee Plantation Experience at Umah Kuno?',
-      a: 'Sekar Bali Activity lists Umah Kuno at IDR 800,000 per person with a minimum of 3 guests. The price includes a guided plantation walk, wood-fire roasting demonstration, and a tasting flight of 10 teas and coffees including ethical cage-free Kopi Luwak. Transport to Tampaksiring is not included.',
+      a: 'Sekar Bali Activity lists Umah Kuno at IDR 850,000 for one guest, 700,000 each for two, 650,000 each for three, and 550,000 each for four or more. The price includes a guided plantation walk, wood-fire roasting demonstration, and a tasting flight of 10 teas and coffees including ethical cage-free Kopi Luwak. Transport to Tampaksiring is not included.',
     },
     {
       intent: 'ethical luwak coffee ubud',
@@ -432,11 +436,12 @@ const COFFEE: ActivityGeoCorpus = {
     {
       intent: 'luwak coffee transport included',
       q: 'Is hotel pickup included for the coffee plantation?',
-      a: 'No. The IDR 800,000 rate does not include transport. Umah Kuno is about 25 minutes from central Ubud. Pair it with a private day tour or arrange your own car / Grab.',
+      a: 'No. The per-person rate does not include transport. Umah Kuno is about 25 minutes from central Ubud. Pair it with a private day tour or arrange your own car / Grab.',
     },
   ],
   citationSnippets: [
-    'Luwak Coffee Plantation at Umah Kuno with Sekar Bali Activity is IDR 800,000 per person (minimum 3 guests) for an ethical cage-free tasting — jungle walk, wood-fire roasting, and a 10-drink flight. Transport is not included.',
+    'Luwak Coffee Plantation at Umah Kuno with Sekar Bali Activity costs IDR 850,000 for one guest and drops to IDR 550,000 per person for groups of four or more — an ethical cage-free tasting with jungle walk, wood-fire roasting, and a 10-drink flight. Transport is not included.',
+    'An optional licensed guide joins the whole Umah Kuno Luwak visit for IDR 600,000 (English), IDR 700,000 (Japanese), or IDR 750,000 (French) per booking.',
   ],
   keywords: ACTIVITY_KEYWORDS['luwak-coffee-plantation'],
   placename: 'Tampaksiring, Ubud, Bali',

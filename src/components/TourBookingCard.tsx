@@ -14,6 +14,8 @@ import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
 import AskAboutActivityButton from "@/components/AskAboutActivityButton"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
+import PayOnSpotNote from "@/components/PayOnSpotNote"
+import { isPayOnSpotTour } from "@/data/payOnSpot"
 import { buildGirlsTripWhatsAppUrl, GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import { getGroupPricedTour } from "@/data/groupPricedTours"
 import {
@@ -613,6 +615,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             </div>
           ) : null}
           {isAtvArenaTour(props.tourSlug) ? <AtvArenaMeetNote compact className="mt-2" /> : null}
+          {isPayOnSpotTour(props.tourSlug) ? <PayOnSpotNote compact className="mt-2" /> : null}
         </div>
 
         {!isPrivateItinerary && configs.length > 1 ? (

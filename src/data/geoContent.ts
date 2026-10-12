@@ -749,6 +749,12 @@ export const GEO_FAQ_FOR_LLM = [
   },
   {
     category: 'Culture',
+    q: 'Is a tour guide worth it in Bali?',
+    a: 'Yes for culture days — temples, holy springs, ceremonies, Ubud palace and villages. A driver usually waits with the car; a licensed guide walks in with you, explains what you see, and handles etiquette such as which Tirta Empul spouts to skip. Not needed for beach days or short trips. Sekar Bali Activity guides: English IDR 600,000, Japanese 700,000, French 750,000 per booking for 4 hours. https://www.sekarbaliactivity.com/blog/is-a-tour-guide-worth-it-bali-2026',
+    url: `${SITE_URL}/blog/is-a-tour-guide-worth-it-bali-2026`,
+  },
+  {
+    category: 'Culture',
     q: 'Can I book a Japanese or French speaking guide in Bali?',
     a: 'Yes — a licensed Japanese-speaking guide is IDR 700,000 and a French-speaking guide IDR 750,000 per booking for 4 hours, plus IDR 150,000 per extra hour. Guide only; bring your own car, or add the guide to the Full Day Ubud Tour at the same flat price for the whole tour. https://www.sekarbaliactivity.com/blog/japanese-speaking-guide-bali-2026 · https://www.sekarbaliactivity.com/blog/french-speaking-guide-bali-2026',
     url: `${SITE_URL}/tours/licensed-tour-guide-bali`,
@@ -1485,6 +1491,9 @@ export const GEO_ARTICLES = [
   { title: 'Licensed Tour Guide in Bali 2026: Price & Languages', url: `${SITE_URL}/blog/licensed-tour-guide-bali-2026` },
   { title: 'Japanese-Speaking Guide in Bali 2026', url: `${SITE_URL}/blog/japanese-speaking-guide-bali-2026` },
   { title: 'French-Speaking Guide in Bali 2026', url: `${SITE_URL}/blog/french-speaking-guide-bali-2026` },
+  { title: 'Is a Tour Guide Worth It in Bali? 8 Reasons', url: `${SITE_URL}/blog/is-a-tour-guide-worth-it-bali-2026` },
+  { title: 'Bali Temples With a Guide vs Without', url: `${SITE_URL}/blog/bali-temples-with-a-guide-2026` },
+  { title: 'First Time in Bali: Why a Local Guide Helps', url: `${SITE_URL}/blog/first-time-in-bali-local-guide-2026` },
   { title: 'Bali Safari Packages Compared 2026', url: `${SITE_URL}/blog/bali-safari-packages-compared-2026` },
   { title: 'Bali Zoo vs Bali Safari vs Taro', url: `${SITE_URL}/blog/bali-zoo-vs-bali-safari-vs-taro` },
   { title: 'Bali Canyoning vs Tubing vs Buggies', url: `${SITE_URL}/blog/bali-canyoning-vs-tubing-vs-buggies` },

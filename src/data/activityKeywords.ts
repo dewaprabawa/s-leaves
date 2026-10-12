@@ -808,6 +808,9 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'licensed-tour-guide-bali-2026': 'licensed-tour-guide-bali',
   'japanese-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
   'french-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
+  'is-a-tour-guide-worth-it-bali-2026': 'licensed-tour-guide-bali',
+  'bali-temples-with-a-guide-2026': ['licensed-tour-guide-bali', 'tirta-empu-purification'],
+  'first-time-in-bali-local-guide-2026': ['licensed-tour-guide-bali', 'full-day-ubud-tour'],
   'half-day-ubud-tanah-lot-sunset-tour-2026': 'half-day-ubud-tanah-lot-tour',
   'bali-motorbike-tour-price-2026': 'bali-motorbike-traveling-trip',
   'bali-tours-for-japanese-chinese-travelers-2026': 'bali-motorbike-traveling-trip',
@@ -863,6 +866,24 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
 }
 
 const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
+  'is-a-tour-guide-worth-it-bali-2026': [
+    'is a tour guide worth it in Bali',
+    'do I need a tour guide in Bali',
+    'benefits of a tour guide Bali',
+    'Bali driver vs tour guide',
+  ],
+  'bali-temples-with-a-guide-2026': [
+    'Bali temple tour with guide',
+    'Tirta Empul with a guide',
+    'Bali temple etiquette',
+    'odalan ceremony Bali visitors',
+  ],
+  'first-time-in-bali-local-guide-2026': [
+    'first time in Bali tips',
+    'first time in Bali guide',
+    'local guide Bali first trip',
+    'Bali itinerary 5 days with guide',
+  ],
   'licensed-tour-guide-bali-2026': [
     'licensed tour guide Bali price 2026',
     'how much is a tour guide in Bali',

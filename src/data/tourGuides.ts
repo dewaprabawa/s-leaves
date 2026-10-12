@@ -27,6 +27,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'IDR 750,000 for 4 hours — with a short French summary.',
     },
     {
+      title: 'Is a tour guide worth it in Bali?',
+      href: '/blog/is-a-tour-guide-worth-it-bali-2026',
+      blurb: '8 ways a guide makes the holiday better — and when you do not need one.',
+    },
+    {
+      title: 'Temples with a guide vs without',
+      href: '/blog/bali-temples-with-a-guide-2026',
+      blurb: 'Tirta Empul fountain order, temple courtyards, odalan ceremonies, etiquette.',
+    },
+    {
       title: 'Full day Ubud tour guide',
       href: '/blog/full-day-ubud-tour-guide-2026',
       blurb: 'Need a car too? Private car and driver, add this guide for the whole day.',
@@ -492,6 +502,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     },
   ],
   'tirta-empu-purification': [
+    {
+      title: 'Temples with a guide vs without',
+      href: '/blog/bali-temples-with-a-guide-2026',
+      blurb: 'Which Tirta Empul spouts to skip, temple courtyards, and etiquette — what a guide explains.',
+    },
     {
       title: 'Tirta Empu melukat near Ubud',
       href: '/blog/tirta-empu-melukat-ubud-guide',

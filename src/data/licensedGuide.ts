@@ -15,10 +15,10 @@ export const GUIDE_LANGUAGES: readonly { key: GuideLanguageKey; name: string }[]
   { key: "french", name: "French" },
 ]
 
-export const GUIDE_ONLY_HOURS = 4
+export const GUIDE_ONLY_HOURS = 8
 export const GUIDE_EXTRA_HOUR_IDR = 150_000
 /** Extra hours bookable online; longer days go to WhatsApp. */
-export const GUIDE_MAX_EXTRA_HOURS = 8
+export const GUIDE_MAX_EXTRA_HOURS = 4
 
 export const GUIDE_EXTRA_HOUR_ADDON = {
   id: "guide-extra-hour",
@@ -29,13 +29,24 @@ export const GUIDE_EXTRA_HOUR_ADDON = {
   unitLabel: "per hour",
 }
 
+export const GUIDE_SHUTTLE_MAX_GUESTS = 6
+
+export const GUIDE_SHUTTLE_ADDON = {
+  id: "guide-private-shuttle",
+  label: "Private shuttle (car + driver)",
+  blurb: `Need transport too? Add a private car and driver for the whole guided day, extra hours included — up to ${GUIDE_SHUTTLE_MAX_GUESTS} guests per car. Bigger groups get a van quote.`,
+  perPerson: 0,
+  flat: true as const,
+  quoteOnly: true,
+}
+
 export const GUIDE_MEET_COPY = {
   title: "Guide meets you at your hotel or first stop",
-  body: "The guide's own transport is included. Your car and driver are not — use your own driver, or book one of our private day tours instead. Drop your hotel or first-stop pin below.",
+  body: "The guide's own transport is included. Need a car too? Tick the private shuttle option — price quoted on WhatsApp. Drop your hotel or first-stop pin below.",
   short: "Guide meets you here (guide transport included)",
 }
 
-export const GUIDE_EXTRA_HOURS_INTRO = `The price covers ${GUIDE_ONLY_HOURS} hours with your guide, once per booking — not per person. If you need more time, add extra hours at IDR 150,000 each.`
+export const GUIDE_EXTRA_HOURS_INTRO = `The price covers ${GUIDE_ONLY_HOURS} hours with your guide, once per booking — not per person. Book the guide only, or add a separate private shuttle (quoted on WhatsApp). Need more time? Extra hours are IDR 150,000 each.`
 
 export const GUIDE_OVERRUN_NOTE =
   "If the day runs past the tour's normal length, extra guide time is IDR 150,000 per hour."

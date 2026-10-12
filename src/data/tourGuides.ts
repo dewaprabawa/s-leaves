@@ -19,12 +19,22 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Japanese-speaking guide',
       href: '/blog/japanese-speaking-guide-bali-2026',
-      blurb: 'IDR 700,000 for 4 hours — with a short Japanese summary.',
+      blurb: 'IDR 700,000 for 8 hours — with a short Japanese summary.',
     },
     {
       title: 'French-speaking guide',
       href: '/blog/french-speaking-guide-bali-2026',
-      blurb: 'IDR 750,000 for 4 hours — with a short French summary.',
+      blurb: 'IDR 750,000 for 8 hours — with a short French summary.',
+    },
+    {
+      title: 'Is a tour guide worth it in Bali?',
+      href: '/blog/is-a-tour-guide-worth-it-bali-2026',
+      blurb: '8 ways a guide makes the holiday better — and when you do not need one.',
+    },
+    {
+      title: 'Temples with a guide vs without',
+      href: '/blog/bali-temples-with-a-guide-2026',
+      blurb: 'Tirta Empul fountain order, temple courtyards, odalan ceremonies, etiquette.',
     },
     {
       title: 'Full day Ubud tour guide',
@@ -493,6 +503,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'tirta-empu-purification': [
     {
+      title: 'Temples with a guide vs without',
+      href: '/blog/bali-temples-with-a-guide-2026',
+      blurb: 'Which Tirta Empul spouts to skip, temple courtyards, and etiquette — what a guide explains.',
+    },
+    {
       title: 'Tirta Empu melukat near Ubud',
       href: '/blog/tirta-empu-melukat-ubud-guide',
       blurb: 'Tirta Empul or Pura Beji, breakfast included, and IDR 1.2M price.',
@@ -572,9 +587,9 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'luwak-coffee-plantation': [
     {
-      title: 'Licensed guide only (no car)',
+      title: 'Licensed guide only (shuttle optional)',
       href: '/blog/licensed-tour-guide-bali-2026',
-      blurb: 'Same English / Japanese / French guide on its own — from 600K for 4 hours, +150K per extra hour.',
+      blurb: 'Same English / Japanese / French guide on its own — from 600K for 8 hours, +150K per extra hour.',
     },
     {
       title: 'Umah Kuno Luwak price 2026',
@@ -599,9 +614,9 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'full-day-ubud-tour': [
     {
-      title: 'Licensed guide only (no car)',
+      title: 'Licensed guide only (shuttle optional)',
       href: '/blog/licensed-tour-guide-bali-2026',
-      blurb: 'Same English / Japanese / French guide on its own — from 600K for 4 hours, +150K per extra hour.',
+      blurb: 'Same English / Japanese / French guide on its own — from 600K for 8 hours, +150K per extra hour.',
     },
     {
       title: 'Motorbike trip vs private driver',
@@ -826,9 +841,9 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'half-day-ubud-tanah-lot-tour': [
     {
-      title: 'Licensed guide only (no car)',
+      title: 'Licensed guide only (shuttle optional)',
       href: '/blog/licensed-tour-guide-bali-2026',
-      blurb: 'Same English / Japanese / French guide on its own — from 600K for 4 hours, +150K per extra hour.',
+      blurb: 'Same English / Japanese / French guide on its own — from 600K for 8 hours, +150K per extra hour.',
     },
     {
       title: 'Tanah Lot sunset half-day 2026',

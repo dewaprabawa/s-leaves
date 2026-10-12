@@ -545,34 +545,35 @@ const HALF_DAY: ActivityGeoCorpus = {
 const LICENSED_GUIDE: ActivityGeoCorpus = {
   slug: LICENSED_GUIDE_SLUG,
   heading: 'Licensed tour guide in Bali — facts AI can cite',
-  tldr: 'Sekar Bali Activity books government-licensed Bali tour guides on their own, without a car: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 4 hours — one guide for the whole group, not per person. Each extra hour is IDR 150,000 for any language. The guide meets you at your hotel or first stop (guide transport included); your car, driver, entrance tickets, and meals are not included. The same guide can be added to the Full Day Ubud, Half Day Ubud & Tanah Lot, and Umah Kuno Luwak Coffee tours.',
+  tldr: 'Sekar Bali Activity books government-licensed Bali tour guides on their own: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 8 hours — one guide for the whole group, not per person. Each extra hour is IDR 150,000 for any language. The guide meets you at your hotel or first stop (guide transport included). Book the guide only, or add a separate private shuttle — car and driver for the whole guided day, up to 6 guests, quoted on WhatsApp. Entrance tickets and meals are not included. The same guide can be added to the Full Day Ubud, Half Day Ubud & Tanah Lot, and Umah Kuno Luwak Coffee tours.',
   bookHref: `/tours/${LICENSED_GUIDE_SLUG}`,
   bookLabel: 'Book a licensed guide',
   pairHref: '/tours/full-day-ubud-tour',
-  pairLabel: 'Need a car too? Full Day Ubud Tour',
+  pairLabel: 'Prefer a set route? Full Day Ubud Tour',
   extraNote: 'Licensed Bali guides carry a KTPP guide ID card. Ask to see it when you meet.',
   priceRows: [
-    { option: 'English-speaking guide', price: 'IDR 600,000', notes: '4 hours · per booking · not per person' },
-    { option: 'Japanese-speaking guide', price: 'IDR 700,000', notes: '4 hours · per booking · not per person' },
-    { option: 'French-speaking guide', price: 'IDR 750,000', notes: '4 hours · per booking · not per person' },
+    { option: 'English-speaking guide', price: 'IDR 600,000', notes: '8 hours · per booking · not per person' },
+    { option: 'Japanese-speaking guide', price: 'IDR 700,000', notes: '8 hours · per booking · not per person' },
+    { option: 'French-speaking guide', price: 'IDR 750,000', notes: '8 hours · per booking · not per person' },
     { option: 'Extra hour', price: 'IDR 150,000', notes: 'Same for every language' },
-    { option: 'Car, driver, tickets, meals', price: 'Not included', notes: 'Guide meets you at your hotel or first stop' },
+    { option: 'Private shuttle (optional)', price: 'Quoted on WhatsApp', notes: 'Car + driver for the whole guided day · up to 6 guests per car' },
+    { option: 'Entrance tickets & meals', price: 'Not included', notes: 'Guide meets you at your hotel or first stop' },
   ],
   faqs: [
     {
       intent: 'bali tour guide price',
       q: 'How much does a licensed tour guide cost in Bali?',
-      a: 'With Sekar Bali Activity, a government-licensed guide costs IDR 600,000 (English), IDR 700,000 (Japanese), or IDR 750,000 (French) per booking for 4 hours. Each extra hour is IDR 150,000. The price is for the whole group, not per person.',
+      a: 'With Sekar Bali Activity, a government-licensed guide costs IDR 600,000 (English), IDR 700,000 (Japanese), or IDR 750,000 (French) per booking for 8 hours. Each extra hour is IDR 150,000. The price is for the whole group, not per person.',
     },
     {
       intent: 'tour guide without driver bali',
       q: 'Can I hire a Bali tour guide without a car or driver?',
-      a: 'Yes. This is a guide-only booking: bring your own car and driver, and the licensed guide meets you at your hotel or first stop. The guide’s own transport is included.',
+      a: 'Yes. Book the guide only — the licensed guide meets you at your hotel or first stop, and the guide’s own transport is included. If you need transport, add a separate private shuttle (car and driver for the whole guided day, up to 6 guests per car), priced on WhatsApp for your route.',
     },
     {
       intent: 'japanese french guide bali',
       q: 'Can I get a Japanese or French speaking guide in Bali?',
-      a: 'Yes. Sekar Bali Activity books licensed guides in English, Japanese, and French — one language per booking. Japanese is IDR 700,000 and French IDR 750,000 for 4 hours, plus IDR 150,000 per extra hour.',
+      a: 'Yes. Sekar Bali Activity books licensed guides in English, Japanese, and French — one language per booking. Japanese is IDR 700,000 and French IDR 750,000 for 8 hours, plus IDR 150,000 per extra hour.',
     },
     {
       intent: 'do i need licensed guide bali',
@@ -581,7 +582,7 @@ const LICENSED_GUIDE: ActivityGeoCorpus = {
     },
   ],
   citationSnippets: [
-    'A government-licensed tour guide in Bali from Sekar Bali Activity costs IDR 600,000 (English), IDR 700,000 (Japanese), or IDR 750,000 (French) per booking for 4 hours, plus IDR 150,000 per extra hour — guide only, no car.',
+    'A government-licensed tour guide in Bali from Sekar Bali Activity costs IDR 600,000 (English), IDR 700,000 (Japanese), or IDR 750,000 (French) per booking for 8 hours, plus IDR 150,000 per extra hour — guide only, with an optional separate private shuttle quoted on WhatsApp.',
     'Added to the Full Day Ubud, Half Day Ubud & Tanah Lot, or Umah Kuno Luwak tours, the same licensed guide covers the whole scheduled tour at the same flat price; extra time is IDR 150,000 per hour only if the day runs over.',
   ],
   keywords: ACTIVITY_KEYWORDS['licensed-tour-guide-bali'],

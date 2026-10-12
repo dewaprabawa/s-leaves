@@ -1,3 +1,4 @@
+import { PAY_ON_SPOT_FAQ_ANSWER, PAY_ON_SPOT_FAQ_QUESTION } from "@/data/payOnSpot"
 import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
@@ -417,6 +418,11 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         answer:
           "Our published good ATV price is IDR 750,000 for one rider, 725,000 each for two singles, and 700,000 each for three+. Lunch, helmet, boots, and insurance are included at All New Bali Adventure. Pickup is IDR 400,000 or self-meet. We do not match 235K–450K shared stickers that skip lunch. Full note: https://www.sekarbaliactivity.com/blog/good-price-atv-quad-bike-ubud-2026",
       },
+      {
+        id: "faq-atv-pay",
+        question: PAY_ON_SPOT_FAQ_QUESTION,
+        answer: PAY_ON_SPOT_FAQ_ANSWER,
+      },
     ],
     reviews: [],
   },
@@ -602,6 +608,11 @@ Different mix of bikes? Book singles and tandems separately on the [ATV ride pag
         answer:
           "Yes. Same jungle mud and river-crossing track at All New Bali Adventure, same 1.5-hour ride, same lunch and gear. The package adds the private shuttle and a 10% saving on the bundle.",
       },
+      {
+        id: "faq-atv-premium-pay",
+        question: PAY_ON_SPOT_FAQ_QUESTION,
+        answer: PAY_ON_SPOT_FAQ_ANSWER,
+      },
     ],
     reviews: [],
   },
@@ -743,6 +754,11 @@ The [Land & River premium package](/tours/atv-premium-package-bali) bundles a si
         question: "Is hotel pickup included?",
         answer:
           "No. Pickup is IDR 400,000 once for the adventure day, or you self-meet at Sedang and at the Ayung put-in. Free Ubud pickup is only on cycling and Tumang cooking class.",
+      },
+      {
+        id: "faq-atv-raft-pay",
+        question: PAY_ON_SPOT_FAQ_QUESTION,
+        answer: PAY_ON_SPOT_FAQ_ANSWER,
       },
     ],
     reviews: [],
@@ -1208,6 +1224,11 @@ Book this page when you only want the river. The flagship land-and-water day is 
         answer:
           "Yes. This is Class II–III whitewater rafting on the Ayung River / Ubud canyon — jungle cliffs, waterfalls, and stone carvings. Beginner-friendly with a full safety briefing. Pair with ATV the same day if you want a land-and-water combo.",
       },
+      {
+        id: "faq-raft-pay",
+        question: PAY_ON_SPOT_FAQ_QUESTION,
+        answer: PAY_ON_SPOT_FAQ_ANSWER,
+      },
     ],
     reviews: [],
   },
@@ -1339,6 +1360,11 @@ Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) fir
         question: "How much is canyon tubing near Ubud?",
         answer:
           "IDR 500,000 per person, or IDR 450,000 per person when 2 or more guests book. Life jacket, guide, and insurance for ages 6–65 are included. Lunch is not included. Hotel pickup is an optional IDR 400,000 add-on. The 2026 price table is on the Wos River tubing price article.",
+      },
+      {
+        id: "faq-tube-pay",
+        question: PAY_ON_SPOT_FAQ_QUESTION,
+        answer: PAY_ON_SPOT_FAQ_ANSWER,
       },
     ],
     reviews: [],

@@ -9,6 +9,8 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import TourBookingCard from "@/components/TourBookingCard"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
+import PayOnSpotNote from "@/components/PayOnSpotNote"
+import { isPayOnSpotTour } from "@/data/payOnSpot"
 import AtvPremiumShowcase from "@/components/AtvPremiumShowcase"
 import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
@@ -1248,6 +1250,7 @@ export default async function TourPage({ params }: Props) {
                     />
                   ) : null}
                   {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="inline" /> : null}
+                  {isPayOnSpotTour(tour.slug) ? <PayOnSpotNote variant="inline" /> : null}
                   {isSwingTour(tour) ? (
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
                       Include shuttle — must
@@ -1386,6 +1389,7 @@ export default async function TourPage({ params }: Props) {
                   {tour.shortDescription}
                 </p>
                 {isAtvArenaTour(tour.slug) ? <AtvArenaMeetNote /> : null}
+                {isPayOnSpotTour(tour.slug) ? <PayOnSpotNote /> : null}
               </div>
             </header>
 

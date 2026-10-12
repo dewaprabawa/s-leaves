@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import AntiScamSection from '@/components/AntiScamSection'
 import { OFFICIAL_PAYMENT, TRUST_POLICIES_UPDATED, TRUST_POLICY_LINKS } from '@/data/trustPolicies'
+import { PAY_ON_SPOT_CARD_SURCHARGE_PERCENT } from '@/data/payOnSpot'
 import { SITE_NAME, SITE_URL } from '@/lib/seo'
 
 export const metadata: Metadata = {
@@ -38,7 +39,8 @@ export default function PaymentPolicyPage() {
             <p>
               Asking about a date is free. After you agree, we send payment instructions on official
               WhatsApp only. Confirm on that same thread. We never ask for card numbers on this
-              website.
+              website. For ATV, rafting, and tubing you can also pay on the spot at the venue — cash,
+              QRIS, or card.
             </p>
           </section>
 
@@ -59,6 +61,23 @@ export default function PaymentPolicyPage() {
             <p className="mb-3">
               We do not publish a bank account on this website or on the invoice PDF. After you
               agree, payment instructions come on official WhatsApp only.
+            </p>
+            <p className="mt-3">
+              <strong className="text-brand-green">Pay on the spot.</strong> For{' '}
+              <Link href="/tours/bali-atv-adventure" className="text-brand-green underline underline-offset-2 hover:opacity-80">
+                ATV
+              </Link>
+              , ATV + rafting, the ATV premium packages,{' '}
+              <Link href="/tours/whitewater-rafting" className="text-brand-green underline underline-offset-2 hover:opacity-80">
+                Ayung rafting
+              </Link>
+              , and{' '}
+              <Link href="/tours/canyon-tubing" className="text-brand-green underline underline-offset-2 hover:opacity-80">
+                Wos River tubing
+              </Link>
+              , you can pay at the venue when you arrive — cash (IDR), QRIS, Visa, Mastercard, or
+              debit card. Card payments add a {PAY_ON_SPOT_CARD_SURCHARGE_PERCENT}% surcharge. Pay
+              only the total we confirmed on official WhatsApp.
             </p>
             <p className="mt-3">
               If a message, QR code, or “helper” asks you to pay a bank, e-wallet, or

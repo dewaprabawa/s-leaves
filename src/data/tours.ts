@@ -158,6 +158,25 @@ export interface Tour {
   youtubeVideoId?: string
 }
 
+const ATV_TRACK_PHOTOS = [
+  {
+    url: "/images/adventures/atv-canyon-wall-mud.jpg",
+    alt: "Rider grinning on a muddy ATV track below a rock canyon wall near Ubud",
+  },
+  {
+    url: "/images/adventures/atv-mud-splash-solo.jpg",
+    alt: "Solo rider on a single ATV splashing through a mud pool",
+  },
+  {
+    url: "/images/adventures/atv-tandem-parent-child.jpg",
+    alt: "Parent driving a tandem ATV with a child behind through jungle mud",
+  },
+  {
+    url: "/images/adventures/atv-bridge-convoy-pov.jpg",
+    alt: "Rider POV following another ATV across a wooden jungle bridge",
+  },
+]
+
 export const TOURS: Tour[] = [
   {
     id: "bali-atv-adventure",
@@ -201,6 +220,7 @@ export const TOURS: Tour[] = [
         alt: "Quad bike ATV ride through Bali jungle trails",
       },
     ],
+    heroThumbnails: ATV_TRACK_PHOTOS,
     shortDescription:
       "Private muddy sport ATV ride near Ubud at All New Bali Adventure — beginner-friendly Bali quad bike through jungle mud tracks, river crossings, and scenic trails. All-inclusive: lunch, helmet, boot shoes & insurance. Add Wos River tubing or rafting. From IDR 750K.",
     fullDescription: `**Looking for a Bali Quad Bike / ATV Ride Near Ubud?**
@@ -435,6 +455,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         alt: "ATV arena briefing base with rubber boots at All New Bali Adventure",
       },
     ],
+    heroThumbnails: ATV_TRACK_PHOTOS,
     shortDescription:
       "The ATV day, done properly for your group, with a private shuttle just for you. ATV packages for 3, 4 or 5 (singles + one tandem) from IDR 2,025,000, or Land & River packages for 2, 3 or 4 (a single ATV and Ayung rafting for everyone) from IDR 2,475,000. Lunch, gear, guides and insurance included — 10% off booking the same parts separately.",
     fullDescription: `**The Premium ATV Package — your group, your car, your ride**

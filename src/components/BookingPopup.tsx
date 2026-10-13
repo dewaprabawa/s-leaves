@@ -102,6 +102,8 @@ export interface TourConfig {
   requiredShuttle?: boolean
   /** True only for activities that actually depart from the All New Bali Adventure arena (ATV, rafting, canyon tubing) */
   meetsAtArena?: boolean
+  /** Optional pickup is our private shuttle: the driver waits during the activity, no Grab needed. */
+  privateShuttle?: boolean
   /** Self-meet only — do not offer hotel pickup (Luwak coffee plantation) */
   pickupNotOffered?: boolean
   /**
@@ -1101,6 +1103,12 @@ export function BookingPopup({
                         ? "Free within Ubud (surcharge applies outside Ubud). Check this to add your hotel address on the map."
                         : "Optional — a hotel pickup fee may apply. Check this to add your hotel address on the map."}
                   </span>
+                  {activeTour.privateShuttle ? (
+                    <span className="mt-1 block text-xs font-semibold text-brand-green">
+                      Private car for your group — your driver waits during the activity and drives you
+                      back. No Grab needed.
+                    </span>
+                  ) : null}
                 </span>
               </label>
             )}

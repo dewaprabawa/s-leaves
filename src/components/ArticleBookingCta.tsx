@@ -100,6 +100,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/atv-rafting-combo',
     secondaryLabel: 'Standard ATV + rafting',
   },
+  'private-shuttle-vs-grab-bali-activities-2026': {
+    headline: 'Book with a private shuttle — no Grab needed',
+    body: 'Your driver collects you, waits during the activity, and drives you back. IDR 400,000 once per booking for ATV, rafting, or tubing — or self-meet with your own driver.',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'Book ATV with pickup',
+    secondaryHref: '/tours/whitewater-rafting',
+    secondaryLabel: 'Book Ayung rafting',
+  },
   'atv-package-private-transfer-bali-2026': {
     headline: 'ATV with your own car and driver',
     body: 'Private shuttle from your hotel to All New Bali Adventure and back, not shared — included in every premium package from IDR 2,025,000.',

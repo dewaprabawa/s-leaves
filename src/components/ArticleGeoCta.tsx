@@ -78,6 +78,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'atv-premium-package-bali-2026': 'atv-premium-package-bali',
   'group-atv-package-ubud-2026': 'atv-premium-package-bali',
   'atv-package-private-transfer-bali-2026': 'atv-premium-package-bali',
+  'private-shuttle-vs-grab-bali-activities-2026': 'bali-atv-adventure',
   'atv-rafting-premium-package-2026': 'atv-premium-package-bali',
   'japanese-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
   'french-speaking-guide-bali-2026': 'licensed-tour-guide-bali',

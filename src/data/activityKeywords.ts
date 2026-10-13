@@ -834,6 +834,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'atv-premium-package-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'group-atv-package-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'atv-package-private-transfer-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'private-shuttle-vs-grab-bali-activities-2026': ['bali-atv-adventure', 'whitewater-rafting', 'canyon-tubing'],
   'atv-rafting-premium-package-2026': ['atv-premium-package-bali', 'atv-rafting-combo'],
   'licensed-tour-guide-bali-2026': 'licensed-tour-guide-bali',
   'japanese-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
@@ -912,6 +913,12 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'ATV and rafting with private driver',
     'Land and River package Ubud',
     'ATV rafting no tubing',
+  ],
+  'private-shuttle-vs-grab-bali-activities-2026': [
+    'Grab to ATV Ubud',
+    'private shuttle ATV rafting Ubud',
+    'driver waits during rafting Bali',
+    'Ubud activity transport Grab or private driver',
   ],
   'atv-package-private-transfer-bali-2026': [
     'ATV Bali from Seminyak private transfer',

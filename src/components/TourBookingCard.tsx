@@ -16,6 +16,7 @@ import AskAboutActivityButton from "@/components/AskAboutActivityButton"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
 import PayOnSpotNote from "@/components/PayOnSpotNote"
 import { isPayOnSpotTour } from "@/data/payOnSpot"
+import { getPrivateShuttleMode } from "@/data/privateShuttle"
 import { buildGirlsTripWhatsAppUrl, GIRLS_TRIP_SLUG } from "@/data/girlsTrip"
 import { getGroupPricedTour } from "@/data/groupPricedTours"
 import {
@@ -294,6 +295,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         pickupIncluded: isMelukat || isMotorbike,
         requiredShuttle: isSwingHeaven,
         pickupNotOffered: isLuwak,
+        privateShuttle: getPrivateShuttleMode(props.tourSlug) === "optional",
         ...(isKintamaniDirtBike
           ? {
               pickupFlatFeeIdr: KINTAMANI_DIRT_BIKE_SHUTTLE_IDR,
@@ -335,6 +337,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       pickupIncluded: isPrivateDayTour || isMelukat,
       requiredShuttle: isSwingHeaven,
       pickupNotOffered: isLuwak,
+      privateShuttle: getPrivateShuttleMode(props.tourSlug) === "optional",
       ...(groupPricing
         ? {
             groupTierPricesIdr: groupPricing.tiersIdr,

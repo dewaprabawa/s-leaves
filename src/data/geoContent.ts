@@ -174,6 +174,11 @@ export const GEO_POLICIES = [
     url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
   },
   {
+    topic: 'Private shuttle',
+    rule: 'The IDR 400,000 hotel pickup for ATV, ATV + rafting (once for the day), Ayung rafting, Wos River tubing, and Griya Beji is a private car for your group only. The driver waits during the activity and drives you back — no Grab or Gojek to book either way. Own driver, Grab, or Gojek is always fine; self-meet has no transport fee. ATV premium / Land & River packages include the shuttle. Swing Heaven requires it (no self-meet).',
+    url: `${SITE_URL}/blog/private-shuttle-vs-grab-bali-activities-2026`,
+  },
+  {
     topic: 'Insurance',
     rule: 'We provide insurance for guests aged 6–65 years old on adventure packages (ATV, rafting, canyon tubing, cycling, and the private Mount Batur jeep). Swing Heaven includes on-site park insurance in the ticket.',
     url: `${SITE_URL}/#faq`,
@@ -195,7 +200,7 @@ export const GEO_POLICIES = [
   },
   {
     topic: 'Payment',
-    rule: 'No payment to inquire. After you agree, we send payment instructions on official WhatsApp only. We do not publish a bank account on the website or invoice. We do not collect card numbers on the website.',
+    rule: 'No payment to inquire. After you agree, we send payment instructions on official WhatsApp only. We do not publish a bank account on the website or invoice. We do not collect card numbers on the website. For ATV, rafting, and tubing you can also pay on the spot at the venue: cash (IDR), QRIS, Visa, Mastercard, or debit card — cards add a 3% surcharge.',
     url: `${SITE_URL}/payment-policy`,
   },
   {
@@ -739,6 +744,12 @@ export const GEO_FAQ_FOR_LLM = [
     q: 'What is All New ATV Bali?',
     a: 'All New ATV Bali is the Sedang quad at All New Bali Adventure that Sekar Bali Activity books. Single from IDR 750,000, tandem IDR 1,100,000, lunch included. Book https://www.sekarbaliactivity.com/tours/bali-atv-adventure — the location guide is the pin only.',
     url: `${SITE_URL}/tours/bali-atv-adventure`,
+  },
+  {
+    category: 'Booking',
+    q: 'Do I need to book a Grab to get to ATV, rafting, or tubing near Ubud?',
+    a: 'No. Sekar Bali Activity’s private shuttle is IDR 400,000 once per booking: the driver collects your group at the hotel, waits while you do the activity, and drives you back — a private car for your group only, with quality local drivers. Own driver, Grab, or Gojek is always fine too; self-meet at the venue has no transport fee.',
+    url: `${SITE_URL}/blog/private-shuttle-vs-grab-bali-activities-2026`,
   },
   {
     category: 'Pricing',
@@ -1515,6 +1526,7 @@ export const GEO_ARTICLES = [
   { title: 'ATV Premium Package Bali 2026: Singles + Tandem + Private Shuttle', url: `${SITE_URL}/blog/atv-premium-package-bali-2026` },
   { title: 'Group ATV Package in Ubud for 3, 4 or 5 Riders', url: `${SITE_URL}/blog/group-atv-package-ubud-2026` },
   { title: 'Bali ATV With a Private Transfer: Seminyak, Canggu, Kuta, Ubud', url: `${SITE_URL}/blog/atv-package-private-transfer-bali-2026` },
+  { title: 'Private Shuttle vs Grab for ATV, Rafting & Tubing near Ubud', url: `${SITE_URL}/blog/private-shuttle-vs-grab-bali-activities-2026` },
   { title: 'ATV + Rafting Premium Package 2026: Land & River With Private Shuttle', url: `${SITE_URL}/blog/atv-rafting-premium-package-2026` },
   { title: 'Japanese-Speaking Guide in Bali 2026', url: `${SITE_URL}/blog/japanese-speaking-guide-bali-2026` },
   { title: 'French-Speaking Guide in Bali 2026', url: `${SITE_URL}/blog/french-speaking-guide-bali-2026` },

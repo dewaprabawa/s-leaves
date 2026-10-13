@@ -33,6 +33,7 @@ const MONEY_TOUR_SLUGS = new Set([
 ])
 
 const HIGH_BLOG_SLUGS = new Set([
+  'private-shuttle-vs-grab-bali-activities-2026',
   'atv-premium-package-bali-2026',
   'group-atv-package-ubud-2026',
   'atv-package-private-transfer-bali-2026',

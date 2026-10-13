@@ -12,6 +12,7 @@ import { ADVENTURE_GAP_CLUSTER_POSTS } from './clusterPostsAdventureGaps'
 import { ATV_JEEP_KEYWORD_CLUSTER_POSTS } from './clusterPostsAtvJeepKeywords'
 import { LICENSED_GUIDE_CLUSTER_POSTS } from './clusterPostsLicensedGuide'
 import { ATV_PREMIUM_CLUSTER_POSTS } from './clusterPostsAtvPremium'
+import { PRIVATE_SHUTTLE_CLUSTER_POSTS } from './clusterPostsPrivateShuttle'
 
 export type BlogPost = {
   slug: string
@@ -26,6 +27,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...PRIVATE_SHUTTLE_CLUSTER_POSTS,
   ...ATV_PREMIUM_CLUSTER_POSTS,
   ...LICENSED_GUIDE_CLUSTER_POSTS,
   ...ATV_JEEP_KEYWORD_CLUSTER_POSTS,
@@ -1806,6 +1808,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 > - **Swing Heaven:** required shuttle IDR 400,000 (Ubud and outside · no self-meet)
 > - **Cycling outside Ubud:** IDR 400,000 surcharge (e.g. Seminyak, Canggu, Kuta)
 > - **Motorbike Canggu / Jimbaran / Nusa Dua shuttle:** IDR 550,000 once per booking
+> - **Private shuttle:** your driver waits during the activity and drives you back — no Grab needed. Own driver or Grab is always fine (self-meet free)
 > - **Booking:** Set your hotel pin in the booking popup map
 
 ---
@@ -1840,6 +1843,12 @@ The [Tirta Empu Purification (Melukat)](/tours/tirta-empu-purification) private 
 ## Mount Batur Jeep Pickup (Island-Wide)
 
 The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) includes hotel pickup and drop-off from Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua, and nearby areas — typically 02:00–03:00 AM. You do **not** pay the IDR 400,000 ATV/rafting pickup add-on. South Bali leaves earliest; Ubud is a little later. Confirm the exact time on WhatsApp.
+
+## Private Shuttle: Your Driver Waits for You
+
+The IDR 400,000 hotel pickup is a **private car for your group only** — not a shared bus. Your driver collects you at your hotel, **waits while you do the activity**, and drives you back. There is no Grab or Gojek to order there and back, and no waiting for an app ride at a rural venue after rafting. We work with quality local drivers we trust, so you can focus on the activity.
+
+Prefer your own driver, a Grab, or a Gojek? That is always fine — self-meet at the venue has no transport fee (Swing Heaven is the exception: its shuttle is required). Side-by-side costs: [private shuttle vs Grab](/blog/private-shuttle-vs-grab-bali-activities-2026).
 
 ## How Pickup Works When You Book
 

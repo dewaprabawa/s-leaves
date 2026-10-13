@@ -1,4 +1,5 @@
 import { PAY_ON_SPOT_FAQ_ANSWER, PAY_ON_SPOT_FAQ_QUESTION } from "@/data/payOnSpot"
+import { PRIVATE_SHUTTLE_FAQ_QUESTION, privateShuttleFaqAnswer } from "@/data/privateShuttle"
 import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
@@ -423,6 +424,11 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         question: PAY_ON_SPOT_FAQ_QUESTION,
         answer: PAY_ON_SPOT_FAQ_ANSWER,
       },
+      {
+        id: "faq-atv-shuttle",
+        question: PRIVATE_SHUTTLE_FAQ_QUESTION,
+        answer: privateShuttleFaqAnswer("optional"),
+      },
     ],
     reviews: [],
   },
@@ -613,6 +619,11 @@ Different mix of bikes? Book singles and tandems separately on the [ATV ride pag
         question: PAY_ON_SPOT_FAQ_QUESTION,
         answer: PAY_ON_SPOT_FAQ_ANSWER,
       },
+      {
+        id: "faq-atv-premium-shuttle",
+        question: PRIVATE_SHUTTLE_FAQ_QUESTION,
+        answer: privateShuttleFaqAnswer("included"),
+      },
     ],
     reviews: [],
   },
@@ -759,6 +770,11 @@ The [Land & River premium package](/tours/atv-premium-package-bali) bundles a si
         id: "faq-atv-raft-pay",
         question: PAY_ON_SPOT_FAQ_QUESTION,
         answer: PAY_ON_SPOT_FAQ_ANSWER,
+      },
+      {
+        id: "faq-atv-raft-shuttle",
+        question: PRIVATE_SHUTTLE_FAQ_QUESTION,
+        answer: privateShuttleFaqAnswer("optional"),
       },
     ],
     reviews: [],
@@ -1229,6 +1245,11 @@ Book this page when you only want the river. The flagship land-and-water day is 
         question: PAY_ON_SPOT_FAQ_QUESTION,
         answer: PAY_ON_SPOT_FAQ_ANSWER,
       },
+      {
+        id: "faq-raft-shuttle",
+        question: PRIVATE_SHUTTLE_FAQ_QUESTION,
+        answer: privateShuttleFaqAnswer("optional"),
+      },
     ],
     reviews: [],
   },
@@ -1365,6 +1386,11 @@ Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) fir
         id: "faq-tube-pay",
         question: PAY_ON_SPOT_FAQ_QUESTION,
         answer: PAY_ON_SPOT_FAQ_ANSWER,
+      },
+      {
+        id: "faq-tube-shuttle",
+        question: PRIVATE_SHUTTLE_FAQ_QUESTION,
+        answer: privateShuttleFaqAnswer("optional"),
       },
     ],
     reviews: [],
@@ -1556,6 +1582,11 @@ Honest context if you are still deciding: [Is the Bali Swing worth it?](/blog/is
         question: "Is this the famous Tegallalang Bali Swing?",
         answer:
           "No. Swing Heaven is a separate jungle park in Bongkasa over the Ayung River. Tegallalang swing parks sit on the rice-terrace strip north of Ubud. If you want that stop on a private car day, it is still an optional extra on the Full Day Ubud Tour — not this package.",
+      },
+      {
+        id: "faq-swing-shuttle",
+        question: PRIVATE_SHUTTLE_FAQ_QUESTION,
+        answer: privateShuttleFaqAnswer("required"),
       },
     ],
     reviews: [],
@@ -2851,6 +2882,11 @@ Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-m
         question: "How much is mental healing at Griya Beji?",
         answer:
           "Mental healing / healing therapy is IDR 1,500,000 per person. It is guided relaxation, not a hospital clinic. The park asks guests with psychosis or dissociative disorders not to use hypnotherapy.",
+      },
+      {
+        id: "faq-griya-shuttle",
+        question: PRIVATE_SHUTTLE_FAQ_QUESTION,
+        answer: privateShuttleFaqAnswer("optional"),
       },
     ],
     reviews: [],

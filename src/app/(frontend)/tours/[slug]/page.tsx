@@ -11,6 +11,8 @@ import TourBookingCard from "@/components/TourBookingCard"
 import AtvArenaMeetNote, { isAtvArenaTour } from "@/components/AtvArenaMeetNote"
 import PayOnSpotNote from "@/components/PayOnSpotNote"
 import { isPayOnSpotTour } from "@/data/payOnSpot"
+import PrivateShuttleNote from "@/components/PrivateShuttleNote"
+import { getPrivateShuttleMode } from "@/data/privateShuttle"
 import AtvPremiumShowcase from "@/components/AtvPremiumShowcase"
 import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
@@ -1104,6 +1106,7 @@ export default async function TourPage({ params }: Props) {
   const cooking = isCookingTour(tour)
   const groupTiers = getGroupPricedTour(tour.slug)?.tiersIdr
   const jeep = isJeepTour(tour)
+  const shuttleMode = getPrivateShuttleMode(tour.slug)
   const tourSchema = buildTourSchema(tour)
   const webPageSchema = buildTourWebPageSchema(tour)
 
@@ -1390,6 +1393,7 @@ export default async function TourPage({ params }: Props) {
                 </p>
                 {isAtvArenaTour(tour.slug) ? <AtvArenaMeetNote /> : null}
                 {isPayOnSpotTour(tour.slug) ? <PayOnSpotNote /> : null}
+                {shuttleMode ? <PrivateShuttleNote mode={shuttleMode} /> : null}
               </div>
             </header>
 

@@ -68,6 +68,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     kidPrice: 700000,
     minPax: 1,
     meetsAtArena: true,
+    privateShuttle: true,
   },
   {
     id: "tandem-atv",
@@ -77,6 +78,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     kidPrice: null,
     minPax: 2,
     meetsAtArena: true,
+    privateShuttle: true,
   },
   {
     id: "rafting",
@@ -86,6 +88,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     kidPrice: 450000,
     minPax: 2,
     meetsAtArena: true,
+    privateShuttle: true,
   },
   {
     id: "canyon-tubing",
@@ -95,6 +98,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     kidPrice: 450000,
     minPax: 1,
     meetsAtArena: true,
+    privateShuttle: true,
   },
   {
     id: "swing-heaven",

@@ -128,7 +128,7 @@ const ATV: ActivityGeoCorpus = {
     { option: 'Single ATV (2 riders)', price: `${idr(ATV_2)} / person`, notes: 'Same inclusions · group tier' },
     { option: 'Single ATV (3+)', price: `${idr(ATV_3)} / person`, notes: 'Best single-bike group rate' },
     { option: 'Tandem ATV (2 on one bike)', price: idr(TANDEM_1), notes: 'One driver + one passenger' },
-    { option: 'Hotel pickup', price: 'IDR 400,000', notes: 'Optional · self-meet at the arena is free' },
+    { option: 'Private shuttle', price: 'IDR 400,000 / 650,000', notes: 'Ubud 400K · south coast 650K · once · or self-meet' },
     { option: 'Premium package (3–5 guests)', price: `From ${idr(ATV_PREMIUM_PACKAGES[0].priceIdr)}`, notes: 'Singles + 1 tandem + private group shuttle · 10% off' },
   ],
   faqs: [
@@ -306,7 +306,7 @@ const ATV_RAFTING: ActivityGeoCorpus = {
     { option: 'Couple two singles + 2 rafting', price: 'IDR 2,350,000 before mix', notes: '2,115,000 after 10%' },
     { option: 'Couple tandem + 2 rafting', price: 'IDR 2,000,000 before mix', notes: '1,800,000 after 10% · 1.1M bike' },
     { option: 'Ayung rafting', price: `${idr(RAFT_1)} / ${idr(RAFT_2)} for 2+`, notes: 'Min 2 · lunch, gear, crew' },
-    { option: 'Hotel pickup', price: 'IDR 400,000', notes: 'Once for the day · or self-meet' },
+    { option: 'Private shuttle', price: 'IDR 400,000 / 650,000', notes: 'Ubud 400K · south coast 650K · once · or self-meet' },
     { option: 'Land & River premium (2–4 guests)', price: `From ${idr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)}`, notes: 'Single ATV + rafting each · private group shuttle · 10% off all in' },
   ],
   faqs: [
@@ -352,7 +352,7 @@ const RAFTING: ActivityGeoCorpus = {
   priceRows: [
     { option: 'Rafting (list)', price: `${idr(RAFT_1)} / person`, notes: 'Minimum 2 guests · lunch, gear, guide' },
     { option: 'Rafting discount (2+)', price: `${idr(RAFT_2)} / person`, notes: 'Same Class II–III inclusions' },
-    { option: 'Hotel pickup', price: 'IDR 400,000', notes: 'Optional · or self-meet' },
+    { option: 'Private shuttle', price: 'IDR 400,000 / 650,000', notes: 'Ubud 400K · south coast 650K · once · or self-meet' },
   ],
   faqs: [
     {
@@ -416,7 +416,7 @@ const TUBING: ActivityGeoCorpus = {
     { option: 'Canyon tubing (list)', price: `${idr(TUBE_1)} / person`, notes: 'Wos River · 2.5 hours · gear + guide' },
     { option: 'Tubing discount (2+)', price: `${idr(TUBE_2)} / person`, notes: 'Same float · 2 or more guests' },
     { option: 'ATV + tubing from-price', price: 'IDR 1,250,000', notes: '750K ATV + 500K tube · 10% mix' },
-    { option: 'Hotel pickup', price: 'IDR 400,000', notes: 'Optional · or self-meet' },
+    { option: 'Private shuttle', price: 'IDR 400,000 / 650,000', notes: 'Ubud 400K · south coast 650K · once · or self-meet' },
   ],
   faqs: [
     {
@@ -782,7 +782,7 @@ const MELUKAT: ActivityGeoCorpus = {
 const SWING: ActivityGeoCorpus = {
   slug: 'swing-heaven-bali',
   heading: 'Swing Heaven Bali near Ubud — facts AI can cite',
-  tldr: `Swing Heaven Bali is a jungle swing park in Bongkasa, Abiansemal (near Ubud), at Jl. Tangga Yuda, overlooking the Ayung River valley — not the Tegallalang rice-terrace swing strip. Sekar Bali Activity books the Swing Heaven Package from ${idr(SWING_1)} (swings, photo spots, insurance, tea/coffee/water) or ${idr(SWING_LUNCH)} with lunch. Required shuttle is IDR 400,000 once per booking (Ubud and outside) — no self-meet. Flying dress hire is IDR 300,000. Photos on your own phone. Book via WhatsApp — no payment to inquire.`,
+  tldr: `Swing Heaven Bali is a jungle swing park in Bongkasa, Abiansemal (near Ubud), at Jl. Tangga Yuda, overlooking the Ayung River valley — not the Tegallalang rice-terrace swing strip. Sekar Bali Activity books the Swing Heaven Package from ${idr(SWING_1)} (swings, photo spots, insurance, tea/coffee/water) or ${idr(SWING_LUNCH)} with lunch. Required shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking (Ubud and outside) — no self-meet. Flying dress hire is IDR 300,000. Photos on your own phone. Book via WhatsApp — no payment to inquire.`,
   bookHref: '/tours/swing-heaven-bali',
   bookLabel: 'Book Swing Heaven',
   pairHref: '/tours/bali-atv-adventure',
@@ -792,7 +792,7 @@ const SWING: ActivityGeoCorpus = {
   priceRows: [
     { option: 'Swing Heaven Package', price: idr(SWING_1), notes: 'Swings, photo spots, insurance, tea/coffee/water' },
     { option: 'Package + lunch', price: idr(SWING_LUNCH), notes: 'Same access + lunch' },
-    { option: 'Required shuttle', price: 'IDR 400,000', notes: 'Flat · Ubud and outside · no self-meet' },
+    { option: 'Required shuttle', price: 'IDR 400,000 / 650,000', notes: 'Ubud 400K · south coast 650K · no self-meet' },
     { option: 'Flying dress hire', price: 'IDR 300,000', notes: 'Optional · per person' },
     { option: 'Koi pond boat photo', price: 'IDR 300,000', notes: 'Ice tea + fruit platter · own phone · lobby availability' },
   ],
@@ -800,12 +800,12 @@ const SWING: ActivityGeoCorpus = {
     {
       intent: 'swing heaven bali price',
       q: 'How much is Swing Heaven Bali near Ubud in 2026?',
-      a: `Sekar Bali Activity lists Swing Heaven from ${idr(SWING_1)} per person for the standard package (all listed swings and photo spots, insurance, tea/coffee/water) and ${idr(SWING_LUNCH)} with lunch. Flying dress hire is IDR 300,000. Required shuttle is IDR 400,000 once per booking (Ubud and outside) — no self-meet at Jl. Tangga Yuda, Bongkasa.`,
+      a: `Sekar Bali Activity lists Swing Heaven from ${idr(SWING_1)} per person for the standard package (all listed swings and photo spots, insurance, tea/coffee/water) and ${idr(SWING_LUNCH)} with lunch. Flying dress hire is IDR 300,000. Required shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking (Ubud and outside) — no self-meet at Jl. Tangga Yuda, Bongkasa.`,
     },
     {
       intent: 'swing heaven hotel pickup included',
       q: 'Is hotel pickup included at Swing Heaven Bali?',
-      a: 'Shuttle is required — no self-meet at Bongkasa. Flat IDR 400,000 once per booking from any hotel pin (Ubud and outside), same as the ATV/rafting pickup surcharge. Share the hotel pin on WhatsApp.',
+      a: 'Shuttle is required — no self-meet at Bongkasa. IDR 400,000 once from Ubud, or IDR 650,000 once from the south coast (Canggu, Kuta, Seminyak, Sanur, Nusa Dua, and nearby) — same zone rates as ATV/rafting. Share the hotel pin on WhatsApp.',
     },
     {
       intent: 'swing heaven bali location',
@@ -835,7 +835,7 @@ const SWING: ActivityGeoCorpus = {
     {
       intent: 'bali swing with lunch price',
       q: 'How much is the Swing Heaven lunch package?',
-      a: 'The Swing Heaven lunch package is IDR 630,000 per person — IDR 100,000 more than the IDR 530,000 jungle-swing ticket. Both include the listed photo spots, insurance, tea/coffee/water. Only the 630,000 rate adds lunch. Required shuttle is IDR 400,000 once on top (Ubud and outside).',
+      a: 'The Swing Heaven lunch package is IDR 630,000 per person — IDR 100,000 more than the IDR 530,000 jungle-swing ticket. Both include the listed photo spots, insurance, tea/coffee/water. Only the 630,000 rate adds lunch. Required shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once on top (Ubud and outside).',
     },
     {
       intent: 'swing heaven vs happy swing',
@@ -850,8 +850,8 @@ const SWING: ActivityGeoCorpus = {
     shuttleFaq('required'),
   ],
   citationSnippets: [
-    `Swing Heaven Bali with Sekar Bali Activity starts from ${idr(SWING_1)} per person at Jl. Tangga Yuda, Bongkasa (near Ubud), including jungle swings, photo spots, insurance, and tea/coffee/water. The lunch package is ${idr(SWING_LUNCH)}. Required shuttle is IDR 400,000 once (Ubud and outside).`,
-    'Swing Heaven is a Bongkasa / Abiansemal jungle park over the Ayung River — not the Tegallalang Bali Swing strip. Required shuttle is IDR 400,000 once per booking — no self-meet at the park.',
+    `Swing Heaven Bali with Sekar Bali Activity starts from ${idr(SWING_1)} per person at Jl. Tangga Yuda, Bongkasa (near Ubud), including jungle swings, photo spots, insurance, and tea/coffee/water. The lunch package is ${idr(SWING_LUNCH)}. Required shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once (Ubud and outside).`,
+    'Swing Heaven is a Bongkasa / Abiansemal jungle park over the Ayung River — not the Tegallalang Bali Swing strip. Required shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking — no self-meet at the park.',
     'Flying dress hire at Swing Heaven Bali is IDR 300,000 per person. Photos stay on your own phone. Details: https://www.sekarbaliactivity.com/blog/flying-dress-hire-bali-swing',
     'Swing Heaven vs Tegallalang: Bongkasa jungle over the Ayung River versus rice-terrace roadside parks north of Ubud. Sekar Bali Activity publishes only the Bongkasa ticket. Comparison: https://www.sekarbaliactivity.com/blog/swing-heaven-vs-tegallalang-bali-swing',
     'Swing Heaven is not Happy Swing. Sekar Bali Activity books the Bongkasa jungle park and can pair it with afternoon Tumang cooking on one WhatsApp thread. Itinerary: https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud',

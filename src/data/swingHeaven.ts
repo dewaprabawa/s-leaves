@@ -6,17 +6,18 @@
 export const SWING_HEAVEN_PRICE_IDR = 530_000
 export const SWING_HEAVEN_LUNCH_PRICE_IDR = 630_000
 /**
- * Hotel shuttle is required (no self-meet). Flat IDR 400,000 once per booking
- * — same rate inside and outside Ubud (not free within Ubud).
+ * Hotel shuttle is required (no self-meet). Zone rates: Ubud IDR 400,000 /
+ * south coast IDR 650,000 once per booking (not free within Ubud).
  */
 export const SWING_HEAVEN_SHUTTLE_REQUIRED = true
 export const SWING_HEAVEN_SHUTTLE_FREE_IN_UBUD = false
 export const SWING_HEAVEN_SHUTTLE_FEE_IDR = 400_000
+export const SWING_HEAVEN_SHUTTLE_SOUTH_FEE_IDR = 650_000
 /** @deprecated Use SWING_HEAVEN_SHUTTLE_REQUIRED — kept for older imports. */
 export const SWING_HEAVEN_DRIVER_INCLUDED = true
 /** Short notice for booking dialogs / WhatsApp — shuttle is mandatory. */
 export const SWING_HEAVEN_SHUTTLE_NOTICE =
-  'Required shuttle — IDR 400,000 (Ubud and outside). Self-meet at Bongkasa is not offered.'
+  'Required shuttle — IDR 400,000 from Ubud, or IDR 650,000 from the south coast. Self-meet at Bongkasa is not offered.'
 export const SWING_HEAVEN_SHUTTLE_NOTICE_SHORT = 'Required shuttle'
 /** Big UI label — shuttle must be included on every Swing Heaven booking. */
 export const SWING_HEAVEN_SHUTTLE_MUST_LABEL = 'Include shuttle — must'
@@ -33,9 +34,11 @@ export function isSwingHeavenBookingId(id: string | undefined | null): boolean {
   return id === 'swing-heaven' || id === 'swing-heaven-lunch' || id === 'swing-heaven-bali'
 }
 
-export function swingHeavenShuttleLabel(_isOutUbud: boolean, feeIdr: number): string {
-  if (feeIdr > 0) return 'Required shuttle · IDR 400,000'
-  return 'Required shuttle'
+export function swingHeavenShuttleLabel(isOutUbud: boolean, feeIdr: number): string {
+  if (feeIdr <= 0) return 'Required shuttle'
+  return isOutUbud
+    ? 'Required shuttle · south coast IDR 650,000'
+    : 'Required shuttle · Ubud IDR 400,000'
 }
 
 export const SWING_HEAVEN_VENUE = {

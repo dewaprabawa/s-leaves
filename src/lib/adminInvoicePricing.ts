@@ -1,8 +1,7 @@
 import type { AdminActivity, TransferOption } from '@/lib/adminInvoiceCatalog'
 import {
   DROP_SAME_HOTEL_FEE_IDR,
-  OUT_OF_UBUD_EXTRA_IDR,
-  PICKUP_FEE_IDR,
+  getHotelPickupFeeIdr,
   quoteActivity,
 } from '@/lib/pricing'
 import { formatIdr } from '@/lib/whatsapp'
@@ -124,8 +123,14 @@ export function calculateAdminInvoicePricing(
 
     if (!freeUbud) {
       if (wantsPickup) {
-        transferTotal += PICKUP_FEE_IDR
-        lineItems.push({ label: 'Hotel pickup', amount: PICKUP_FEE_IDR })
+        const fee = getHotelPickupFeeIdr(isOutUbud)
+        transferTotal += fee
+        lineItems.push({
+          label: isOutUbud
+            ? 'Private shuttle from the south coast'
+            : 'Private shuttle from Ubud',
+          amount: fee,
+        })
       }
       if (wantsDrop) {
         transferTotal += DROP_SAME_HOTEL_FEE_IDR
@@ -135,13 +140,6 @@ export function calculateAdminInvoicePricing(
               ? 'Drop-off transfer'
               : 'Return drop (same hotel)',
           amount: DROP_SAME_HOTEL_FEE_IDR,
-        })
-      }
-      if (isOutUbud && (wantsPickup || wantsDrop)) {
-        transferTotal += OUT_OF_UBUD_EXTRA_IDR
-        lineItems.push({
-          label: 'Out of Ubud surcharge',
-          amount: OUT_OF_UBUD_EXTRA_IDR,
         })
       }
     }

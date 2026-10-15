@@ -6,18 +6,19 @@ export const PRIVATE_SHUTTLE_CLUSTER_POSTS = [
     title: 'Private Shuttle vs Grab for ATV, Rafting & Tubing near Ubud (2026)',
     seoTitle: 'Private Shuttle vs Grab Ubud | ATV, Rafting 2026',
     excerpt:
-      'Do you need a Grab to get to ATV, rafting, or tubing near Ubud? No — our private shuttle is IDR 400,000 once per booking, and the driver waits while you do the activity, then drives you back. Your own driver or Grab is always fine too.',
+      'Do you need a Grab to get to ATV, rafting, or tubing near Ubud? No — private shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking. The driver waits during the activity, then drives you back. Own driver or Grab is always fine too.',
     publishedAt: '2026-10-13',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**Do I need to book a Grab to get to ATV, rafting, or tubing near Ubud?** No. Add our **private shuttle** for **IDR 400,000 once per booking**: your driver collects you at your hotel, **waits while you do the activity**, and drives you back. It is a private car for your group only — not shared with other guests. No ordering a Grab or Gojek there and back, so you can focus on the activity. Prefer your own driver, a Grab, or a Gojek? That is always fine — self-meet at the venue has no transport fee.
+**Do I need to book a Grab to get to ATV, rafting, or tubing near Ubud?** No. Add our **private shuttle**: **IDR 400,000 once from Ubud**, or **IDR 650,000 once from the south coast** (Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, or Uluwatu). Your driver collects you at your hotel, **waits while you do the activity**, and drives you back. Private car for your group only — not shared. Prefer your own driver, a Grab, or a Gojek? That is always fine — self-meet at the venue has no transport fee.
 
 > **Key Takeaways**
 > - **Private car for your group only** — not a shared bus
 > - **Your driver waits** during the activity, then drives you back to your hotel
-> - **IDR 400,000 once per booking** for ATV, rafting, tubing, and Griya Beji — pickup and return
-> - **ATV + rafting the same day:** one shuttle for the whole day, still IDR 400,000 once
+> - **From Ubud · IDR 400,000 once** — hotel pickup and drop-off in Ubud
+> - **From the south coast · IDR 650,000 once** — Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, or Uluwatu
+> - **ATV + rafting the same day:** one shuttle for the whole day (same zone rate)
 > - **ATV premium / Land & River packages:** private shuttle included in the package price
 > - **Own driver, Grab, or Gojek?** Always fine — self-meet is free (except Swing Heaven, where the shuttle is required)
 
@@ -33,30 +34,39 @@ export const PRIVATE_SHUTTLE_CLUSTER_POSTS = [
 
 Nothing to book on your phone, no waiting for a ride to accept at a rural venue, and no second fare for the trip home. We work with quality local drivers we trust, so the only thing you need to think about is the activity.
 
+## The two shuttle add-ons
+
+| Add-on | Price | Covers |
+| --- | --- | --- |
+| **Private shuttle from Ubud** | **IDR 400,000 once** | Hotel pickup and drop-off in Ubud. A car and driver for your group only: the driver waits during the activity, then drives you back, so there is no Grab to book. |
+| **Private shuttle from the south coast** | **IDR 650,000 once** | Hotel pickup and drop-off in Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, or Uluwatu. A car and driver for your group only: the driver waits during the activity, then drives you back. |
+
+Your hotel pin in the booking popup sets which rate applies.
+
 ## Private shuttle vs Grab vs your own driver
 
 | | Our private shuttle | Grab / Gojek | Your own hired driver |
 | --- | --- | --- | --- |
-| **Cost** | IDR 400,000 once per booking (pickup + return) | App fare each way | Your driver's day rate |
+| **Cost** | IDR 400,000 from Ubud · IDR 650,000 from the south coast (once, pickup + return) | App fare each way | Your driver's day rate |
 | **Waits during the activity** | Yes | No — you book again to go home | Yes, if you arrange it |
 | **Ride home** | Same driver, already there | Book a new ride from the venue | Yes |
 | **Shared with other guests** | No — your group only | No | No |
 | **Who arranges it** | We do, on WhatsApp | You, twice | You |
 | **Self-meet fee** | — | Free | Free |
 
-**Honest note:** from central Ubud, a one-way Grab can cost less than IDR 400,000. The shuttle is for guests who want the return ride sorted and a driver waiting — especially after rafting or tubing, when you are wet and tired and do not want to stand at the venue waiting for an app ride to accept.
+**Honest note:** from central Ubud, a one-way Grab can cost less than IDR 400,000. From the south coast, two Grab rides can still undercut IDR 650,000 on a quiet day — but the shuttle is for guests who want the return ride sorted and a driver waiting, especially after rafting or tubing.
 
 ## Which activities use the shuttle
 
 | Activity | Shuttle | Own driver / Grab? |
 | --- | --- | --- |
-| [Bali ATV ride](/tours/bali-atv-adventure) | IDR 400,000 once per booking | Yes — self-meet at All New Bali Adventure, Sedang |
-| [ATV + Ayung rafting](/tours/atv-rafting-combo) | IDR 400,000 once for the whole day | Yes — self-meet free |
-| [Ayung River rafting](/tours/whitewater-rafting) | IDR 400,000 once per booking | Yes — self-meet free |
-| [Wos River canyon tubing](/tours/canyon-tubing) | IDR 400,000 once per booking | Yes — self-meet free |
-| [Griya Beji Waterfall](/tours/griya-beji-waterfall) | IDR 400,000 once per booking | Yes — self-meet free |
+| [Bali ATV ride](/tours/bali-atv-adventure) | IDR 400,000 Ubud / 650,000 south once | Yes — self-meet at All New Bali Adventure, Sedang |
+| [ATV + Ayung rafting](/tours/atv-rafting-combo) | IDR 400,000 Ubud / 650,000 south once for the day | Yes — self-meet free |
+| [Ayung River rafting](/tours/whitewater-rafting) | IDR 400,000 Ubud / 650,000 south once | Yes — self-meet free |
+| [Wos River canyon tubing](/tours/canyon-tubing) | IDR 400,000 Ubud / 650,000 south once | Yes — self-meet free |
+| [Griya Beji Waterfall](/tours/griya-beji-waterfall) | IDR 400,000 Ubud / 650,000 south once | Yes — self-meet free |
 | [ATV premium / Land & River](/tours/atv-premium-package-bali) | **Included** in the package price | Shuttle is part of the package |
-| [Swing Heaven Bali](/tours/swing-heaven-bali) | **Required** — IDR 400,000 once per booking | No — no self-meet at Swing Heaven |
+| [Swing Heaven Bali](/tours/swing-heaven-bali) | **Required** — IDR 400,000 Ubud / 650,000 south | No — no self-meet at Swing Heaven |
 
 Cycling and the Tumang cooking class include free Ubud-area pickup, and the private Mount Batur jeep includes island-wide pickup. Full table: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
 
@@ -70,7 +80,7 @@ That is always fine. Book the activity without the pickup box and self-meet at t
 
 **Is the shuttle shared with other guests?** No. It is a private car for your group only.
 
-**Is the IDR 400,000 per person?** No — once per booking, pickup and return included. ATV + rafting on the same day still pays it once.
+**Is the shuttle fee per person?** No — once per booking, pickup and return included. **IDR 400,000 from Ubud** or **IDR 650,000 from the south coast**. ATV + rafting on the same day still pays it once.
 
 **Can I use my own driver or Grab instead?** Yes, for ATV, rafting, tubing, and Griya Beji. Self-meet at the venue has no transport fee. Swing Heaven is the exception — its shuttle is required.
 

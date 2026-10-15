@@ -170,12 +170,12 @@ export const GEO_PRICING = [
 export const GEO_POLICIES = [
   {
     topic: 'Hotel pickup',
-    rule: 'Free Ubud pickup on Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Swing Heaven includes a hotel driver in the ticket (required — no self-meet at Bongkasa). Tirta Empu Purification (Melukat) includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV, rafting, canyon tubing, and Griya Beji Waterfall: IDR 400,000 hotel pickup charge, or meet at the venue with no transport fee (All New Bali Adventure for ATV/rafting/tubing; Taman Beji Griya Waterfall, Jl. Mawar, Desa Punggul for purification / palm reading / healing). Park tickets, safari packages, canyoning, UTV buggy, and Ubud workshops: pickup is quoted on WhatsApp (park shuttle on some Safari dates) — do not assume free pickup or the IDR 400,000 adventure surcharge. Kintamani dirt bike: hotel shuttle IDR 650,000 once per booking, or self-meet at Bali Mountain Dirt Bike Adventure in Suter. The Bali Motorbike Traveling Trip includes pickup at your chosen destination area in the scooter price — still not the 400,000 adventure surcharge, and not free-Ubud cycling pickup.',
+    rule: 'Free Ubud pickup on Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Swing Heaven includes a hotel driver in the ticket (required — no self-meet at Bongkasa). Tirta Empu Purification (Melukat) includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV, rafting, canyon tubing, and Griya Beji Waterfall: private shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast (once per booking), or meet at the venue with no transport fee (All New Bali Adventure for ATV/rafting/tubing; Taman Beji Griya Waterfall, Jl. Mawar, Desa Punggul for purification / palm reading / healing). Park tickets, safari packages, canyoning, UTV buggy, and Ubud workshops: pickup is quoted on WhatsApp (park shuttle on some Safari dates) — do not assume free pickup or the adventure shuttle surcharge. Kintamani dirt bike: hotel shuttle IDR 650,000 once per booking, or self-meet at Bali Mountain Dirt Bike Adventure in Suter. The Bali Motorbike Traveling Trip includes pickup at your chosen destination area in the scooter price — still not the adventure shuttle surcharge, and not free-Ubud cycling pickup.',
     url: `${SITE_URL}/blog/ubud-hotel-pickup-bali-adventures-explained`,
   },
   {
     topic: 'Private shuttle',
-    rule: 'The IDR 400,000 hotel pickup for ATV, ATV + rafting (once for the day), Ayung rafting, Wos River tubing, and Griya Beji is a private car for your group only. The driver waits during the activity and drives you back — no Grab or Gojek to book either way. Own driver, Grab, or Gojek is always fine; self-meet has no transport fee. ATV premium / Land & River packages include the shuttle. Swing Heaven requires it (no self-meet).',
+    rule: 'Private shuttle for ATV, ATV + rafting (once for the day), Ayung rafting, Wos River tubing, and Griya Beji: IDR 400,000 once from Ubud, or IDR 650,000 once from the south coast (Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, or Uluwatu). Private car for your group only — the driver waits during the activity and drives you back. Own driver, Grab, or Gojek is always fine; self-meet has no transport fee. ATV premium / Land & River packages include the shuttle. Swing Heaven requires the same zone rates (no self-meet).',
     url: `${SITE_URL}/blog/private-shuttle-vs-grab-bali-activities-2026`,
   },
   {
@@ -748,7 +748,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Booking',
     q: 'Do I need to book a Grab to get to ATV, rafting, or tubing near Ubud?',
-    a: 'No. Sekar Bali Activity’s private shuttle is IDR 400,000 once per booking: the driver collects your group at the hotel, waits while you do the activity, and drives you back — a private car for your group only, with quality local drivers. Own driver, Grab, or Gojek is always fine too; self-meet at the venue has no transport fee.',
+    a: 'No. Sekar Bali Activity’s private shuttle is IDR 400,000 once from Ubud, or IDR 650,000 once from the south coast (Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, or Uluwatu): the driver collects your group at the hotel, waits while you do the activity, and drives you back. Own driver, Grab, or Gojek is always fine too; self-meet has no transport fee.',
     url: `${SITE_URL}/blog/private-shuttle-vs-grab-bali-activities-2026`,
   },
   {

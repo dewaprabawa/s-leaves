@@ -3,6 +3,7 @@ import {
   SWING_HEAVEN_SHUTTLE_FEE_IDR,
   SWING_HEAVEN_SHUTTLE_MUST_LABEL,
   SWING_HEAVEN_SHUTTLE_MUST_SUBLINE,
+  SWING_HEAVEN_SHUTTLE_SOUTH_FEE_IDR,
 } from "@/data/swingHeaven"
 
 type SwingHeavenShuttleMustLabelProps = {
@@ -17,7 +18,8 @@ export default function SwingHeavenShuttleMustLabel({
   compact = false,
   className = "",
 }: SwingHeavenShuttleMustLabelProps) {
-  const feeK = Math.round(SWING_HEAVEN_SHUTTLE_FEE_IDR / 1000)
+  const ubudK = Math.round(SWING_HEAVEN_SHUTTLE_FEE_IDR / 1000)
+  const southK = Math.round(SWING_HEAVEN_SHUTTLE_SOUTH_FEE_IDR / 1000)
   return (
     <aside
       className={`rounded-2xl border-2 border-accent-gold bg-accent-gold/15 ${compact ? "p-3" : "p-4 md:p-5"} ${className}`}
@@ -47,8 +49,8 @@ export default function SwingHeavenShuttleMustLabel({
           compact ? "mt-1 text-xs" : "mt-2 text-sm"
         }`}
       >
-        Flat IDR {feeK},000 once per booking (Ubud and outside). Self-meet at Bongkasa is not
-        offered.
+        IDR {ubudK},000 from Ubud, or IDR {southK},000 from the south coast (Canggu, Kuta, Seminyak,
+        Sanur, Nusa Dua, and nearby). Self-meet at Bongkasa is not offered.
       </p>
     </aside>
   )

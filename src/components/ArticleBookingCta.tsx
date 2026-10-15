@@ -116,6 +116,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/bali-atv-adventure',
     secondaryLabel: 'Self-meet instead',
   },
+  'withlocals-bali-guide-alternative-2026': {
+    headline: 'Book a licensed guide — not a marketplace host',
+    body: 'Government-licensed KTPP guide at published IDR prices: English 600,000 · Japanese 700,000 · French 750,000 per booking for 8 hours. Guide only, or add a private shuttle on WhatsApp.',
+    primaryHref: '/tours/licensed-tour-guide-bali',
+    primaryLabel: 'Book a licensed guide',
+    secondaryHref: '/blog/licensed-tour-guide-bali-2026',
+    secondaryLabel: 'Full price & licensing guide',
+  },
   'licensed-tour-guide-bali-2026': {
     headline: 'Book a licensed guide in Bali',
     body: 'English IDR 600,000 · Japanese 700,000 · French 750,000 per booking for 8 hours — not per person. Extra hour IDR 150,000. Guide only, or add a separate private shuttle.',

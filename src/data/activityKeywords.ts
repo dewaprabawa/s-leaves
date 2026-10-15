@@ -268,6 +268,8 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Japanese speaking guide Bali',
       'French speaking guide Bali',
       'English speaking guide Bali',
+      'Withlocals Bali alternative',
+      'Bali private guide marketplace alternative',
     ],
     book: [
       'hire a tour guide in Bali',
@@ -275,11 +277,15 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Bali guide per hour',
       'licensed guide Ubud',
       'guide only no driver Bali',
+      'book licensed guide Bali WhatsApp',
     ],
     compare: [
       'licensed guide vs driver guide Bali',
       'do I need a licensed guide in Bali',
       'Bali tour guide license KTPP',
+      'Withlocals vs licensed guide Bali',
+      'Withlocals Bali guide alternative',
+      'marketplace local guide vs KTPP Bali',
     ],
   },
   'half-day-ubud-tanah-lot-tour': {
@@ -837,6 +843,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'private-shuttle-vs-grab-bali-activities-2026': ['bali-atv-adventure', 'whitewater-rafting', 'canyon-tubing'],
   'atv-rafting-premium-package-2026': ['atv-premium-package-bali', 'atv-rafting-combo'],
   'licensed-tour-guide-bali-2026': 'licensed-tour-guide-bali',
+  'withlocals-bali-guide-alternative-2026': 'licensed-tour-guide-bali',
   'japanese-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
   'french-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
   'is-a-tour-guide-worth-it-bali-2026': 'licensed-tour-guide-bali',
@@ -942,6 +949,13 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'first time in Bali guide',
     'local guide Bali first trip',
     'Bali itinerary 5 days with guide',
+  ],
+  'withlocals-bali-guide-alternative-2026': [
+    'Withlocals Bali alternative',
+    'Withlocals Bali guide alternative',
+    'alternative to Withlocals Bali',
+    'licensed guide vs Withlocals Bali',
+    'Bali private guide without marketplace',
   ],
   'licensed-tour-guide-bali-2026': [
     'licensed tour guide Bali price 2026',

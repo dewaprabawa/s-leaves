@@ -75,6 +75,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'how-to-spot-ethical-luwak-coffee-in-bali': 'luwak-coffee-plantation',
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
   'licensed-tour-guide-bali-2026': 'licensed-tour-guide-bali',
+  'withlocals-bali-guide-alternative-2026': 'licensed-tour-guide-bali',
   'atv-premium-package-bali-2026': 'atv-premium-package-bali',
   'group-atv-package-ubud-2026': 'atv-premium-package-bali',
   'atv-package-private-transfer-bali-2026': 'atv-premium-package-bali',

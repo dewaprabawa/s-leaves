@@ -22,6 +22,7 @@ export const LICENSED_GUIDE_CLUSTER_POSTS = [
 > - **Guide only, or add a shuttle:** the guide meets you at your hotel or first stop; a separate car + driver is optional
 > - **Licensed** means the guide holds a Bali **KTPP** guide ID card. Ask to see it
 > - **Need a car too?** Add the same guide to our [Full Day Ubud Tour](/tours/full-day-ubud-tour) at the same flat price
+> - **Withlocals alternative?** Marketplace hosts vs our licensed guide: [compare here](/blog/withlocals-bali-guide-alternative-2026)
 
 ## Price: licensed guide only (2026 IDR)
 
@@ -39,6 +40,10 @@ The price is for **one guide and your whole group**. Two guests or a family of f
 - French guide, 10-hour day: 750,000 + 2 × 150,000 = **IDR 1,050,000**
 
 Not included: entrance tickets, meals, and tips. Transport is up to you — see the shuttle option below.
+
+## Marketplace guides (e.g. Withlocals) vs our licensed guide
+
+Platforms such as [Withlocals](https://www.withlocals.com/locals/indonesia/bali/guides/) sell private hosts and packaged Bali experiences with reviews and multi-currency checkout. We sell a **government-licensed KTPP guide** at a **published IDR per-booking rate**, with a **guide-only** option. Full commercial comparison: [Withlocals Bali guide alternative](/blog/withlocals-bali-guide-alternative-2026).
 
 ## Guide only vs driver-guide vs tour + guide
 
@@ -456,4 +461,98 @@ Not included: entrance tickets and meals. Transport is optional — add our sepa
 **Ready?** [Book a local licensed guide](/tours/licensed-tour-guide-bali) for your culture day — WhatsApp, **no payment to inquire**.
 `,
   },
+  {
+    slug: 'withlocals-bali-guide-alternative-2026',
+    title: 'Withlocals Bali Guide Alternative (2026): Licensed Guide Only vs Marketplace Locals',
+    seoTitle: 'Withlocals Bali Alternative | Licensed Guide 2026',
+    excerpt:
+      'Looking for a Withlocals Bali guide alternative? Sekar Bali Activity books government-licensed guides (KTPP) at published IDR prices: English 600,000, Japanese 700,000, French 750,000 per booking for 8 hours. Guide only, or add a private shuttle. Honest comparison of marketplace locals vs a licensed guide.',
+    publishedAt: '2026-10-16',
+    author: 'Sekar Bali Activity',
+    image: '/images/guide/bali-guide-thumbs-up.jpg',
+    content: `
+**Looking for a Withlocals Bali guide alternative?** Withlocals is a global marketplace of local hosts in Bali — about 15 private guides on their Bali guides page, plus packaged experiences like street food walks, island day trips by car, and Ubud day trips, with first-party reviews and multi-currency checkout. Sekar Bali Activity is a **Bali operator** that books **government-licensed tour guides** (*pramuwisata*) at **published IDR prices**: English **IDR 600,000**, Japanese **IDR 700,000**, or French **IDR 750,000** per booking for **8 hours**, not per person. Extra hour **IDR 150,000**. Book **guide only**, or add a **separate private shuttle** on WhatsApp. [Book a licensed guide](/tours/licensed-tour-guide-bali) — **no payment to inquire**.
+
+> **Key Takeaways**
+> - **Withlocals:** marketplace hosts + ready-made experiences, reviews, app checkout in your currency
+> - **Sekar Bali Activity:** government-licensed **KTPP** guides, clear **IDR per booking**, WhatsApp confirmation
+> - **Guide only from IDR 600,000** for 8 hours — keep your villa driver, or add our shuttle
+> - **Japanese IDR 700,000 · French IDR 750,000** for the same 8-hour booking
+> - Best for temples, ceremonies, Ubud palace and villages — not for browsing dozens of host profiles
+
+---
+
+## Withlocals vs Sekar Bali Activity at a glance
+
+| | **Withlocals Bali guides** | **Sekar Bali Activity licensed guide** |
+| --- | --- | --- |
+| **What it is** | Global marketplace of local hosts and packaged experiences | Direct booking of a government-licensed Bali guide |
+| **Licensing** | Marketed as private / local guides — check each host’s credentials | **KTPP** guide ID under Bali Provincial Regulation No. 5 of 2016 |
+| **How you book** | Platform / app, multi-currency checkout | WhatsApp via [our guide page](/tours/licensed-tour-guide-bali) — no payment to inquire |
+| **Price model** | Set per experience or host (often EUR / USD on the platform) | **Published IDR per booking**, not per person |
+| **English guide, 8 hours** | Varies by host and product | **IDR 600,000** |
+| **Japanese / French** | Japanese listed among guide languages; French less visible on the Bali guides filters | Japanese **700,000** · French **750,000** for 8 hours |
+| **Guide without a car** | Many Bali products are day trips **by car** with a local | Yes — **guide only**; transport optional |
+| **Private shuttle** | Usually bundled inside a car day-trip product | Optional separate shuttle (car + driver), quoted on WhatsApp |
+| **Reviews** | Strong first-party review counts on experience cards | We do not invent review counts on this site |
+| **Cancellation** | Withlocals lists refund up to **7 days** before (their guest policy) | Our [cancellation policy](/cancellation-policy) — free cancel 24 hours before start |
+
+We do **not** invent Withlocals rates here — their prices change by host, date, and currency. Compare the **product**: marketplace experience vs a **licensed guide at a fixed IDR booking rate**.
+
+## What Withlocals does well
+
+Withlocals is a strong fit if you want to:
+
+- **Browse many named hosts** and packaged Bali experiences (street food, Denpasar gems, waterfalls, island coverage) in one marketplace
+- **Read platform reviews** before you pick a person
+- **Pay in your home currency** through their checkout / app
+- Book a **ready-made itinerary** rather than assembling temples yourself
+
+Their Bali guides hub ([withlocals.com/locals/indonesia/bali/guides](https://www.withlocals.com/locals/indonesia/bali/guides/)) markets private, personalized tours with local tips — that model works well for travelers who like marketplace choice.
+
+## Where a licensed guide-only booking is clearer
+
+Choose Sekar Bali Activity when you care about:
+
+1. **A government-licensed guide** — ask to see the **KTPP** card when you meet. Bali’s 2025 visitor code of conduct ([Governor Circular No. 7 of 2025](https://disparda.baliprov.go.id/wp-content/uploads/2025/04/SE-NO-7-TAHUN-2025-TENTANG-TATA-TERTIB-WISATAWAN-ASING.pdf)) lists travelling with a licensed guide at tourist attractions among visitor obligations.
+2. **A published IDR price** you can quote to the whole family before WhatsApp — not a surprise FX conversion.
+3. **Guide only** — you already have a villa driver, Grab for short hops, or a rental car, and you only need the person who walks into the temple with you.
+4. **Japanese or French commentary** at a known rate for the whole group.
+5. **Adding the same guide** to our [Full Day Ubud Tour](/tours/full-day-ubud-tour), [Half Day Ubud & Tanah Lot](/tours/half-day-ubud-tanah-lot-tour), or [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation) at the same flat guide price.
+
+Full price table and licensing notes: [licensed tour guide in Bali 2026](/blog/licensed-tour-guide-bali-2026).
+
+## Guide only vs marketplace day trip by car
+
+Many Bali listings — on Withlocals and elsewhere — are **car day trips with a local**. That is transport + company. Our product is the other way round:
+
+| Need | Book |
+| --- | --- |
+| Licensed explanation at temples, you already have a driver | [Licensed guide only](/tours/licensed-tour-guide-bali) from IDR 600,000 |
+| Licensed guide + private car for your group | Guide + optional shuttle (quoted on WhatsApp) |
+| Set Ubud route + car, optional guide | [Full Day Ubud Tour](/tours/full-day-ubud-tour) |
+| Still deciding if a guide is worth it | [Is a tour guide worth it in Bali?](/blog/is-a-tour-guide-worth-it-bali-2026) · [temples with a guide vs without](/blog/bali-temples-with-a-guide-2026) |
+
+## Who should pick which
+
+**Pick Withlocals if** you want marketplace browsing, packaged “things to do” experiences, and multi-currency checkout with host reviews.
+
+**Pick Sekar Bali Activity if** you want a **licensed** Bali guide at a **clear IDR per-booking rate**, especially for temple and culture days — with the option to stay **guide only** or add transport later.
+
+**Either can work** for a first trip. The decision is mostly **marketplace experience** vs **licensed guide as a service**.
+
+## FAQ
+
+**Is Sekar Bali Activity a Withlocals alternative for Bali guides?** Yes for travelers who want a government-licensed guide at published IDR prices, booked on WhatsApp. It is not a clone of Withlocals’ host marketplace.
+
+**Does Withlocals use licensed Bali guides?** Some hosts may be licensed; the marketplace markets “private” / “local” guides. With us, licensing is the product: every guide we book for this service is a **KTPP** holder — ask to see the card.
+
+**How much is a licensed guide vs a Withlocals day trip?** Our English licensed guide is **IDR 600,000 per booking for 8 hours**. Withlocals rates vary by experience and currency — compare the live product page for the date you want.
+
+**Can I book Japanese or French?** Yes with us: Japanese **IDR 700,000**, French **IDR 750,000** for 8 hours. Language guides: [Japanese](/blog/japanese-speaking-guide-bali-2026) · [French](/blog/french-speaking-guide-bali-2026).
+
+**Ready?** [Book a licensed Bali guide](/tours/licensed-tour-guide-bali) — English, Japanese, or French, from IDR 600,000 per booking. Prefer a set route first? Start with the [Full Day Ubud Tour](/tours/full-day-ubud-tour) and add the guide.
+`,
+  },
+
 ]

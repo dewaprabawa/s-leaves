@@ -2273,7 +2273,7 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
     basePrice: 600000,
     seoTitle: "Licensed Tour Guide Bali | English, Japanese, French",
     seoDescription:
-      "Book a licensed guide in Bali: English IDR 600K, Japanese 700K, French 750K per booking for 8 hours. Extra hour 150K. Guide only or add a private shuttle.",
+      "Licensed Bali guide (KTPP): English 600K, Japanese 700K, French 750K per booking for 8 hours. Guide only or shuttle. Withlocals alternative — WhatsApp.",
     heroImage: {
       url: "/images/guide/bali-guide-thumbs-up.jpg",
       alt: "Smiling Balinese guide in a white udeng headcloth giving a thumbs-up, ready to meet guests",
@@ -2317,6 +2317,9 @@ Example: a French-speaking guide for a 10-hour day is IDR 750,000 + 2 × IDR 150
 
 ### Guide Only — Not a Driver-Guide
 Most "Bali guide" listings are really a car charter with a driver who speaks some English. This is the other way round: you book the licensed guide first, and transport is your choice. The guide meets you at your hotel or your first stop, and the guide's own transport is included.
+
+### Marketplace locals vs our licensed guide
+Platforms such as [Withlocals](https://www.withlocals.com/locals/indonesia/bali/guides/) list many private hosts and packaged Bali experiences with reviews and multi-currency checkout. We sell a different product: a **government-licensed KTPP guide** at a **published IDR per-booking rate**, WhatsApp confirmation, and the option to stay **guide only**. Side-by-side: [Withlocals Bali guide alternative](/blog/withlocals-bali-guide-alternative-2026).
 
 ### Need Transport? Add a Separate Shuttle
 You can book **only the guide**, or add a **separate private shuttle** — a car and driver for the whole guided day, extra hours included, for up to 6 guests per car. The shuttle is priced on WhatsApp for your route; bigger groups get a van quote. Tick "Private shuttle" in the booking form.
@@ -2407,6 +2410,12 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         question: "Can I add a licensed guide to one of your tours instead?",
         answer:
           "Yes. On the Full Day Ubud Tour, Half Day Ubud & Tanah Lot, and Umah Kuno Luwak Coffee, the same guide is an add-on: English IDR 600,000, Japanese IDR 700,000, French IDR 750,000, once per booking for the whole scheduled tour. Extra guide time at IDR 150,000 per hour only applies if the day runs past the tour's normal length.",
+      },
+      {
+        id: "faq-guide-7",
+        question: "Is this a Withlocals Bali alternative?",
+        answer:
+          "For travelers who want a government-licensed KTPP guide at a published IDR rate, yes. Withlocals is a marketplace of local hosts and packaged experiences with platform reviews and multi-currency checkout. We book licensed guides directly — English IDR 600,000, Japanese 700,000, French 750,000 per booking for 8 hours — guide only or with an optional private shuttle. Full comparison: https://www.sekarbaliactivity.com/blog/withlocals-bali-guide-alternative-2026",
       },
     ],
     reviews: [],

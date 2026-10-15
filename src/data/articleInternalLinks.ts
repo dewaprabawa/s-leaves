@@ -164,6 +164,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   ],
   guide: [
     { title: 'Licensed tour guide in Bali 2026', href: '/blog/licensed-tour-guide-bali-2026' },
+    { title: 'Withlocals Bali guide alternative', href: '/blog/withlocals-bali-guide-alternative-2026' },
     { title: 'Japanese-speaking guide', href: '/blog/japanese-speaking-guide-bali-2026' },
     { title: 'French-speaking guide', href: '/blog/french-speaking-guide-bali-2026' },
     { title: 'Is a tour guide worth it?', href: '/blog/is-a-tour-guide-worth-it-bali-2026' },
@@ -315,6 +316,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'how-to-spot-ethical-luwak-coffee-in-bali': 'coffee',
   'full-day-ubud-tour-guide-2026': 'dayTour',
   'licensed-tour-guide-bali-2026': 'guide',
+  'withlocals-bali-guide-alternative-2026': 'guide',
   'japanese-speaking-guide-bali-2026': 'guide',
   'french-speaking-guide-bali-2026': 'guide',
   'is-a-tour-guide-worth-it-bali-2026': 'guide',

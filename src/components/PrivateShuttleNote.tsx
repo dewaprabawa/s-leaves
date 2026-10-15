@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Car, Check } from "lucide-react"
 import {
+  PRIVATE_SHUTTLE_ADDONS,
   PRIVATE_SHUTTLE_ARTICLE_SLUG,
   PRIVATE_SHUTTLE_OWN_DRIVER,
   PRIVATE_SHUTTLE_POINTS,
@@ -16,6 +17,8 @@ type PrivateShuttleNoteProps = {
 
 /** Explains the private shuttle: driver waits during the activity, so guests skip Grab / Gojek both ways. */
 export default function PrivateShuttleNote({ mode, compact = false, className = "" }: PrivateShuttleNoteProps) {
+  const showAddons = mode !== "included"
+
   return (
     <aside
       className={`rounded-2xl border border-brand-green/15 bg-white ${compact ? "p-3" : "p-4 md:p-5"} ${className}`}
@@ -37,11 +40,37 @@ export default function PrivateShuttleNote({ mode, compact = false, className = 
           </li>
         ))}
       </ul>
-      <p className={`font-semibold text-brand-green ${compact ? "mt-2 text-xs" : "mt-3 text-sm"}`}>
-        {privateShuttlePriceLine(mode)}
-      </p>
+
+      {showAddons ? (
+        <ul className={`space-y-2 ${compact ? "mt-2" : "mt-3"}`} aria-label="Private shuttle options">
+          {PRIVATE_SHUTTLE_ADDONS.map((addon) => (
+            <li
+              key={addon.key}
+              className="rounded-xl border border-brand-green/10 bg-sand/50 px-3 py-2.5"
+            >
+              <p className={`font-bold text-brand-green leading-snug ${compact ? "text-xs" : "text-sm"}`}>
+                {addon.title} · {addon.priceLabel}
+              </p>
+              <p className={`mt-0.5 text-brand-green-light leading-relaxed ${compact ? "text-[11px]" : "text-xs"}`}>
+                {addon.body}
+              </p>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className={`font-semibold text-brand-green ${compact ? "mt-2 text-xs" : "mt-3 text-sm"}`}>
+          {privateShuttlePriceLine(mode)}
+        </p>
+      )}
+
+      {mode === "required" ? (
+        <p className={`font-semibold text-brand-green ${compact ? "mt-2 text-xs" : "mt-2 text-sm"}`}>
+          Required for this activity — no self-meet.
+        </p>
+      ) : null}
+
       {mode === "optional" ? (
-        <p className={`text-brand-green-light ${compact ? "mt-1 text-xs" : "mt-1 text-sm"}`}>
+        <p className={`text-brand-green-light ${compact ? "mt-2 text-xs" : "mt-2 text-sm"}`}>
           {PRIVATE_SHUTTLE_OWN_DRIVER}
         </p>
       ) : null}

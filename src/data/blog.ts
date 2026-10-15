@@ -1804,8 +1804,8 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 > - **Free Ubud pickup:** Ricefield cycling + Tumang Bali Cooking Class
 > - **Private shuttle in the package price:** Tirta Empu / Tirta Empul melukat (IDR 1,200,000 / person)
 > - **Island-wide pickup included:** private Mount Batur jeep
-> - **Hotel pickup:** IDR 400,000 for ATV, rafting, tubing, Griya Beji Waterfall
-> - **Swing Heaven:** required shuttle IDR 400,000 (Ubud and outside · no self-meet)
+> - **Private shuttle:** IDR 400,000 from Ubud · IDR 650,000 from the south coast (ATV, rafting, tubing, Griya Beji)
+> - **Swing Heaven:** required shuttle — same zone rates (no self-meet)
 > - **Cycling outside Ubud:** IDR 400,000 surcharge (e.g. Seminyak, Canggu, Kuta)
 > - **Motorbike Canggu / Jimbaran / Nusa Dua shuttle:** IDR 550,000 once per booking
 > - **Private shuttle:** your driver waits during the activity and drives you back — no Grab needed. Own driver or Grab is always fine (self-meet free)
@@ -1846,7 +1846,7 @@ The [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) includes hotel pi
 
 ## Private Shuttle: Your Driver Waits for You
 
-The IDR 400,000 hotel pickup is a **private car for your group only** — not a shared bus. Your driver collects you at your hotel, **waits while you do the activity**, and drives you back. There is no Grab or Gojek to order there and back, and no waiting for an app ride at a rural venue after rafting. We work with quality local drivers we trust, so you can focus on the activity.
+The private shuttle (**IDR 400,000 from Ubud**, or **IDR 650,000 from the south coast**) is a **private car for your group only** — not a shared bus. Your driver collects you at your hotel, **waits while you do the activity**, and drives you back. There is no Grab or Gojek to order there and back, and no waiting for an app ride at a rural venue after rafting. We work with quality local drivers we trust, so you can focus on the activity.
 
 Prefer your own driver, a Grab, or a Gojek? That is always fine — self-meet at the venue has no transport fee (Swing Heaven is the exception: its shuttle is required). Side-by-side costs: [private shuttle vs Grab](/blog/private-shuttle-vs-grab-bali-activities-2026).
 

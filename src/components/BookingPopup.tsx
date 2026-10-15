@@ -12,10 +12,12 @@ import {
 import InvoicePaymentPanel from '@/components/InvoicePaymentPanel';
 import { getTourSlugForActivity } from '@/lib/bookingTourDetails';
 import { MEETING_POINT } from '@/lib/meetingPoint';
+import { privateShuttleBookingLabel } from '@/data/privateShuttle';
 import {
   DROP_SAME_HOTEL_FEE_IDR,
-  OUT_OF_UBUD_EXTRA_IDR,
   PICKUP_FEE_IDR,
+  PICKUP_FEE_SOUTH_IDR,
+  getHotelPickupFeeIdr,
   getCompareAtSubtotal,
   hasTierPromo,
   JEEP_SITIN_GROUP_IDR,
@@ -390,7 +392,7 @@ export function BookingPopup({
     ? mixedQuote.discountedSubtotal
     : (activityQuote?.activitySubtotal ?? 0) + (activityQuote?.childSubtotal ?? 0);
   const pickupFlatFee = activeTour.pickupFlatFeeIdr ?? null
-  const hotelPickupFeeIdr = pickupFlatFee ?? PICKUP_FEE_IDR
+  const hotelPickupFeeIdr = pickupFlatFee ?? getHotelPickupFeeIdr(isOutUbud)
   const pickupFee = pickupFlatFee !== null
     ? (effectiveWantsPickup ? pickupFlatFee : 0)
     : pickupQuote.total;
@@ -783,12 +785,17 @@ export function BookingPopup({
                  <span className="text-red-600 font-bold block">Hotel shuttle {formatIdr(pickupFlatFee)} per booking</span>
                ) : hasFreeUbudPickup ? (
                  isOutUbud ? (
-                   <span className="text-red-600 font-bold block">Out of Ubud: hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
+                   <span className="text-red-600 font-bold block">Out of Ubud: hotel pickup IDR {(PICKUP_FEE_SOUTH_IDR / 1000)}k</span>
                  ) : (
                    <span className="text-brand-green font-bold flex items-center gap-1"><span className="w-2 h-2 rounded-full bg-brand-green"></span> Within Ubud: Free pickup</span>
                  )
+               ) : activeTour.privateShuttle ? (
+                 <span className="text-red-600 font-bold block">{privateShuttleBookingLabel(isOutUbud)}</span>
                ) : (
-                 <span className="text-red-600 font-bold block">Hotel pickup IDR {PICKUP_FEE_IDR / 1000}k</span>
+                 <span className="text-red-600 font-bold block">
+                   Hotel pickup IDR {(getHotelPickupFeeIdr(isOutUbud) / 1000)}k
+                   {isOutUbud ? ' (south coast)' : ' (Ubud)'}
+                 </span>
                )
             ) : <span className="opacity-70">Tap on the map to set your pickup pin.</span>}
           </div>
@@ -1104,9 +1111,22 @@ export function BookingPopup({
                         : "Optional — a hotel pickup fee may apply. Check this to add your hotel address on the map."}
                   </span>
                   {activeTour.privateShuttle ? (
-                    <span className="mt-1 block text-xs font-semibold text-brand-green">
-                      Private car for your group — your driver waits during the activity and drives you
-                      back. No Grab needed.
+                    <span className="mt-1.5 block space-y-1.5 text-xs text-brand-green-light">
+                      <span className="block font-semibold text-brand-green">
+                        Private car for your group — your driver waits during the activity and drives
+                        you back. No Grab needed.
+                      </span>
+                      <span className="block">
+                        <span className="font-bold text-brand-green">From Ubud · IDR {(PICKUP_FEE_IDR).toLocaleString('id-ID')} once</span>
+                        {' — '}hotel pickup and drop-off in Ubud.
+                      </span>
+                      <span className="block">
+                        <span className="font-bold text-brand-green">From the south coast · IDR {(PICKUP_FEE_SOUTH_IDR).toLocaleString('id-ID')} once</span>
+                        {' — '}Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, or Uluwatu.
+                      </span>
+                      <span className="block font-semibold text-brand-green">
+                        Your pin sets the rate: {privateShuttleBookingLabel(isOutUbud)}.
+                      </span>
                     </span>
                   ) : null}
                 </span>
@@ -1136,7 +1156,8 @@ export function BookingPopup({
                 />
                 <span className="text-sm leading-relaxed text-brand-green-light">
                   <span className="font-bold text-brand-green block mb-0.5">Return drop-off to same hotel (included)</span>
-                  Hotel pickup charge IDR {PICKUP_FEE_IDR.toLocaleString('id-ID')}
+                  Hotel pickup charge IDR {hotelPickupFeeIdr.toLocaleString('id-ID')}
+                  {isOutUbud ? ' (south coast)' : ' (Ubud)'}
                   {sameDropOff ? ' · includes return to same hotel' : ' · pickup only'}
                 </span>
               </label>

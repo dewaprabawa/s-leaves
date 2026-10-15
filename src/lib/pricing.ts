@@ -84,10 +84,17 @@ export const CHILD_PRICE_IDR: Partial<Record<ActivityId, number>> = {
   'canyon-tubing': 450_000,
 }
 
-/** Flat hotel pickup & drop-off surcharge (optional; free on Ubud cycling only) */
+/** Hotel pickup & drop-off — Ubud area (once per booking) */
 export const PICKUP_FEE_IDR = 400_000
+/** Hotel pickup & drop-off — south coast (Canggu, Kuta, Seminyak, Sanur, Nusa Dua, …) */
+export const PICKUP_FEE_SOUTH_IDR = 650_000
 export const DROP_SAME_HOTEL_FEE_IDR = 0
-export const OUT_OF_UBUD_EXTRA_IDR = 0 // included in flat pickup charge
+/** Extra charged on top of PICKUP_FEE_IDR when the pin is outside Ubud (admin invoice lines). */
+export const OUT_OF_UBUD_EXTRA_IDR = PICKUP_FEE_SOUTH_IDR - PICKUP_FEE_IDR
+
+export function getHotelPickupFeeIdr(isOutUbud: boolean): number {
+  return isOutUbud ? PICKUP_FEE_SOUTH_IDR : PICKUP_FEE_IDR
+}
 
 /** Typical Grab / GoCar one-way Ubud ↔ arena (for comparison UI) */
 export const GRAB_GOCAR_ESTIMATE = {
@@ -278,11 +285,11 @@ export function quotePickup(input: PickupQuoteInput): PickupQuote {
     }
   }
 
-  const pickupFee = PICKUP_FEE_IDR
+  const pickupFee = getHotelPickupFeeIdr(input.isOutUbud)
   const dropFee = input.sameDropOff ? DROP_SAME_HOTEL_FEE_IDR : 0
-  const outOfUbudFee = input.isOutUbud ? OUT_OF_UBUD_EXTRA_IDR : 0
-  const total = pickupFee + dropFee + outOfUbudFee
-  const ourRound = pickupFee + dropFee + outOfUbudFee
+  const outOfUbudFee = 0
+  const total = pickupFee + dropFee
+  const ourRound = total
 
   return {
     pickupFee,
@@ -291,7 +298,7 @@ export function quotePickup(input: PickupQuoteInput): PickupQuote {
     total,
     grabOneWayTypical: grabOne,
     grabRoundTripTypical: grabRound,
-    savingsVsGrabOneWay: Math.max(0, grabOne - (pickupFee + outOfUbudFee)),
+    savingsVsGrabOneWay: Math.max(0, grabOne - pickupFee),
     savingsVsGrabRoundTrip: Math.max(0, grabRound - ourRound),
   }
 }

@@ -2463,12 +2463,12 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
     slug: "licensed-tour-guide-bali",
     category: "culture",
     area: "Ubud & across Bali",
-    pickup: "English: guide meets you · Japanese/French: private driver included",
+    pickup: "Guide meets you · optional Japanese/French + private driver tour",
     duration: "8 Hours (extendable)",
     basePrice: 600000,
     seoTitle: "Licensed Tour Guide Bali | English, Japanese, French",
     seoDescription:
-      "Licensed Bali guide (KTPP): English 600K guide only. Japanese/French IDR 850K with private driver in Ubud; outside guide + 550K driver. WhatsApp.",
+      "Licensed Bali guide (KTPP): English 600K, Japanese 700K, French 750K guide only. Optional JP/FR + driver: 850K Ubud / guide + 550K outside. WhatsApp.",
     heroImage: {
       url: "/images/guide/bali-guide-thumbs-up.jpg",
       alt: "Smiling Balinese guide in a white udeng headcloth giving a thumbs-up, ready to meet guests",
@@ -2494,34 +2494,36 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
       },
     ],
     shortDescription:
-      "Book a government-licensed Bali tour guide — no fixed tour. English IDR 600,000 guide only. Japanese and French include a private driver: IDR 850,000 total in the Ubud area; outside Ubud Japanese 700,000 + driver 550,000 or French 750,000 + driver 550,000. Extra hours IDR 150,000 each. Per booking, not per person.",
+      "Book a government-licensed Bali tour guide — guide only in English, Japanese, or French. English IDR 600,000, Japanese IDR 700,000, French IDR 750,000 per booking for 8 hours. Optional Japanese/French + private driver tour: IDR 850,000 in Ubud; outside Ubud guide + IDR 550,000 driver. Extra hours IDR 150,000 each.",
     fullDescription: `**Licensed Tour Guide in Bali**
 
-A government-licensed guide joins you for 8 hours and explains the temples, palaces, villages, and rice terraces on your route — in English, Japanese, or French.
+A government-licensed guide joins you for 8 hours and explains the temples, palaces, villages, and rice terraces on your route — in English, Japanese, or French. **Every language can book guide only.** Japanese and French also offer a **with private driver** tour option at published IDR.
 
-### Price per Booking
+### Guide only (all languages)
 One guide for your whole group. The price does not change with the number of guests.
 
-| Language | Ubud area (8 hours) | Outside Ubud | Extra hour |
-|---|---|---|---|
-| English | **IDR 600,000** guide only | Same guide fee · optional shuttle quoted on WhatsApp | IDR 150,000 |
-| Japanese | **IDR 850,000** (guide + private driver) | **IDR 700,000** guide + **IDR 550,000** driver | IDR 150,000 |
-| French | **IDR 850,000** (guide + private driver) | **IDR 750,000** guide + **IDR 550,000** driver | IDR 150,000 |
+| Language | 8 hours (per booking) | Extra hour |
+|---|---|---|
+| English | **IDR 600,000** | IDR 150,000 |
+| Japanese | **IDR 700,000** | IDR 150,000 |
+| French | **IDR 750,000** | IDR 150,000 |
 
-**Japanese and French must include a private driver** (up to 6 guests per car). English can stay guide only if you already have a car.
+Already have a car? Book guide only — the guide meets you at your hotel or first stop; the guide's own transport is included. Need a car on a guide-only booking? Add a separate private shuttle, quoted on WhatsApp.
 
-Example: Japanese guide outside Ubud for 8 hours is IDR 700,000 + IDR 550,000 = **IDR 1,250,000**. French outside Ubud is IDR 750,000 + IDR 550,000 = **IDR 1,300,000**.
+### Optional tour: Japanese / French + private driver
+Pick this option in the booking menu when you want the licensed guide **and** a private car in one published total (up to 6 guests per car).
 
-### English — Guide Only (Optional Shuttle)
-Already have a car and driver? Book the English guide only. The guide meets you at your hotel or first stop; the guide's own transport is included. Need a car? Add a separate private shuttle, quoted on WhatsApp.
+| Language | Ubud area (8 hours) | Outside Ubud |
+|---|---|---|
+| Japanese + driver | **IDR 850,000** | **IDR 700,000** guide + **IDR 550,000** driver |
+| French + driver | **IDR 850,000** | **IDR 750,000** guide + **IDR 550,000** driver |
 
-### Japanese & French — Private Driver Included
-Japanese and French licensed guides are booked **with a private car and driver**. In the Ubud area the total is **IDR 850,000**. Outside Ubud you pay the published guide fee plus **IDR 550,000** for the driver. Pin your hotel when booking so we set the correct total.
+Example: Japanese + driver outside Ubud = IDR 700,000 + IDR 550,000 = **IDR 1,250,000**. French + driver outside Ubud = **IDR 1,300,000**.
 
 ### Marketplace locals vs our licensed guide
 Platforms such as [Withlocals](https://www.withlocals.com/locals/indonesia/bali/guides/) list many private hosts and packaged Bali experiences with reviews and multi-currency checkout. We sell a different product: a **government-licensed KTPP guide** at a **published IDR per-booking rate**. Side-by-side: [Withlocals Bali guide alternative](/blog/withlocals-bali-guide-alternative-2026).
 
-Prefer a set route? Book the [Full Day Ubud Tour](/tours/full-day-ubud-tour) or the [Half Day Ubud & Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) and add the same licensed guide on top (those tours already include a car — the Japanese/French add-on is the guide fee only: 700,000 / 750,000).
+Prefer a set route? Book the [Full Day Ubud Tour](/tours/full-day-ubud-tour) or the [Half Day Ubud & Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) and add the same licensed guide on top (those tours already include a car — guide add-on is English 600,000 / Japanese 700,000 / French 750,000).
 
 ### What "Licensed" Means in Bali
 Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Provincial Regulation No. 5 of 2016 on tour guides. Bali's 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) also lists travelling with a licensed guide when visiting tourist attractions among visitor obligations. Ask your guide to show the card when you meet.
@@ -2532,20 +2534,20 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
 - Tell us your route on WhatsApp — temples, Ubud palace and market, rice terraces, or a full custom day.`,
     highlights: [
       "Government-licensed guide (KTPP card holder)",
-      "English, Japanese, or French — one language per booking",
-      "English IDR 600,000 guide only · Japanese/French IDR 850,000 with driver in Ubud",
-      "Outside Ubud: Japanese/French guide + IDR 550,000 driver",
+      "English, Japanese, or French — guide only available for every language",
+      "Optional Japanese/French + private driver tour: IDR 850,000 in Ubud",
+      "Outside Ubud with-driver option: guide + IDR 550,000",
       "Extra hours IDR 150,000 each",
       "Priced per booking for 8 hours, not per person",
     ],
     included: [
       "Government-licensed guide for 8 hours",
-      "English: guide's own transport to your hotel or first stop",
-      "Japanese & French: private car and driver (Ubud 850K total; outside guide + 550K)",
+      "Guide's own transport to your hotel or first stop (guide-only option)",
+      "Optional Japanese/French tour: private car and driver (Ubud 850K total; outside guide + 550K)",
       "Commentary in English, Japanese, or French",
     ],
     notIncluded: [
-      "English: car and driver (optional private shuttle, quoted on WhatsApp)",
+      "Car and driver on guide-only bookings (optional shuttle on WhatsApp, or pick the JP/FR with-driver tour)",
       "Entrance tickets",
       "Meals and drinks",
       "Extra hours beyond 8 (IDR 150,000 per hour)",
@@ -2577,7 +2579,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         id: "faq-guide-1",
         question: "How much does a licensed tour guide cost in Bali?",
         answer:
-          "English is IDR 600,000 guide only for 8 hours. Japanese and French include a private driver: IDR 850,000 total in the Ubud area. Outside Ubud, Japanese is IDR 700,000 + IDR 550,000 driver, and French is IDR 750,000 + IDR 550,000 driver. Each extra hour is IDR 150,000. Entrance tickets and meals are not included.",
+          "Guide only: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 8 hours. Optional Japanese/French + private driver tour: IDR 850,000 total in the Ubud area; outside Ubud Japanese IDR 700,000 + IDR 550,000 driver, or French IDR 750,000 + IDR 550,000 driver. Each extra hour is IDR 150,000. Entrance tickets and meals are not included.",
       },
       {
         id: "faq-guide-2",
@@ -2589,7 +2591,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         id: "faq-guide-3",
         question: "Does the guide come with a car or driver?",
         answer:
-          "English: guide only by default — the guide's own transport to your hotel or first stop is included; add an optional private shuttle on WhatsApp if you need a car. Japanese and French: a private driver is required and included — IDR 850,000 total in Ubud, or guide fee + IDR 550,000 outside Ubud. Or book the Full Day Ubud Tour / Half Day Ubud & Tanah Lot (car already included) and add the guide fee only.",
+          "Not by default — every language can book guide only, and the guide's own transport to your hotel or first stop is included. Need a car? Add our separate private shuttle on WhatsApp, or choose the Japanese/French + private driver tour option (IDR 850,000 in Ubud; outside guide + IDR 550,000). Or book the Full Day Ubud Tour / Half Day Ubud & Tanah Lot (car already included) and add the guide fee only.",
       },
       {
         id: "faq-guide-4",
@@ -2613,7 +2615,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         id: "faq-guide-7",
         question: "Is this a Withlocals Bali alternative?",
         answer:
-          "For travelers who want a government-licensed KTPP guide at a published IDR rate, yes. Withlocals is a marketplace of local hosts and packaged experiences with platform reviews and multi-currency checkout. We book licensed guides directly — English IDR 600,000 guide only; Japanese/French IDR 850,000 with private driver in Ubud (outside: guide + IDR 550,000 driver). Full comparison: https://www.sekarbaliactivity.com/blog/withlocals-bali-guide-alternative-2026",
+          "For travelers who want a government-licensed KTPP guide at a published IDR rate, yes. Withlocals is a marketplace of local hosts and packaged experiences with platform reviews and multi-currency checkout. We book licensed guides directly — guide only from IDR 600,000, plus an optional Japanese/French with-driver tour at IDR 850,000 in Ubud. Full comparison: https://www.sekarbaliactivity.com/blog/withlocals-bali-guide-alternative-2026",
       },
     ],
     reviews: [],

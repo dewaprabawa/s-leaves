@@ -46,12 +46,12 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Japanese-speaking guide',
       href: '/blog/japanese-speaking-guide-bali-2026',
-      blurb: 'IDR 850,000 with private driver in Ubud (outside: 700K + 550K) — Japanese summary.',
+      blurb: 'Guide only 700K · optional + driver 850K in Ubud — Japanese summary.',
     },
     {
       title: 'French-speaking guide',
       href: '/blog/french-speaking-guide-bali-2026',
-      blurb: 'IDR 850,000 with private driver in Ubud (outside: 750K + 550K) — French summary.',
+      blurb: 'Guide only 750K · optional + driver 850K in Ubud — French summary.',
     },
     {
       title: 'Is a tour guide worth it in Bali?',
@@ -653,7 +653,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Licensed guide only (shuttle optional)',
       href: '/blog/licensed-tour-guide-bali-2026',
-      blurb: 'English 600K guide only · Japanese/French 850K with driver in Ubud · +150K per extra hour.',
+      blurb: 'Guide only from 600K · optional JP/FR + driver 850K in Ubud · +150K/hour.',
     },
     {
       title: 'Umah Kuno Luwak price 2026',
@@ -680,7 +680,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Licensed guide only (shuttle optional)',
       href: '/blog/licensed-tour-guide-bali-2026',
-      blurb: 'English 600K guide only · Japanese/French 850K with driver in Ubud · +150K per extra hour.',
+      blurb: 'Guide only from 600K · optional JP/FR + driver 850K in Ubud · +150K/hour.',
     },
     {
       title: 'Motorbike trip vs private driver',
@@ -907,7 +907,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Licensed guide only (shuttle optional)',
       href: '/blog/licensed-tour-guide-bali-2026',
-      blurb: 'English 600K guide only · Japanese/French 850K with driver in Ubud · +150K per extra hour.',
+      blurb: 'Guide only from 600K · optional JP/FR + driver 850K in Ubud · +150K/hour.',
     },
     {
       title: 'Tanah Lot sunset half-day 2026',

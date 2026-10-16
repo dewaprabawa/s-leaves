@@ -9,17 +9,17 @@ export const LICENSED_GUIDE_CLUSTER_POSTS = [
     title: 'Licensed Tour Guide in Bali (2026): Price, Languages & How to Book a Guide Only',
     seoTitle: 'Licensed Tour Guide Bali 2026 | Price per Booking',
     excerpt:
-      'Book a government-licensed Bali tour guide: English IDR 600,000 guide only; Japanese/French IDR 850,000 with private driver in Ubud (outside: Japanese 700K + 550K driver, French 750K + 550K). Extra hour IDR 150,000.',
+      'Book a government-licensed Bali tour guide: guide only English 600K / Japanese 700K / French 750K. Optional JP/FR + driver: 850K in Ubud (outside guide + 550K). Extra hour IDR 150,000.',
     publishedAt: '2026-10-12',
     author: 'Sekar Bali Activity',
     image: '/images/guide/bali-guide-thumbs-up.jpg',
     content: `
-**How much is a licensed tour guide in Bali?** With Sekar Bali Activity, **English is IDR 600,000 guide only** for **8 hours**. **Japanese and French include a private driver:** **IDR 850,000** total in the **Ubud area**; outside Ubud **Japanese IDR 700,000 + driver IDR 550,000**, or **French IDR 750,000 + driver IDR 550,000**. Per booking, not per person. Each extra hour is **IDR 150,000**. [Book a licensed guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+**How much is a licensed tour guide in Bali?** With Sekar Bali Activity, **guide only** is **IDR 600,000 in English, IDR 700,000 in Japanese, or IDR 750,000 in French** — per booking, for **8 hours**, not per person. Each extra hour is **IDR 150,000**. **Optional Japanese/French + private driver tour:** **IDR 850,000** in the **Ubud area**; outside Ubud **Japanese 700,000 + 550,000 driver**, or **French 750,000 + 550,000 driver**. [Book a licensed guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
 
 > **Key Takeaways**
-> - **English:** IDR 600,000 guide only for 8 hours (optional shuttle on WhatsApp)
-> - **Japanese / French in Ubud:** **IDR 850,000** total — guide + private driver required
-> - **Outside Ubud:** Japanese 700K + 550K driver · French 750K + 550K driver
+> - **Guide only (every language):** English 600K · Japanese 700K · French 750K for 8 hours
+> - **Optional JP/FR + driver (Ubud):** **IDR 850,000** total
+> - **Outside Ubud with-driver option:** Japanese 700K + 550K · French 750K + 550K
 > - **Extra hour:** IDR 150,000, the same for every language
 > - **Licensed** means the guide holds a Bali **KTPP** guide ID card. Ask to see it
 > - **Prefer a set route?** Add the guide fee to our [Full Day Ubud Tour](/tours/full-day-ubud-tour) (car already included)
@@ -27,19 +27,26 @@ export const LICENSED_GUIDE_CLUSTER_POSTS = [
 
 ## Price: licensed guide (2026 IDR)
 
-| Language | Ubud area (8 hours) | Outside Ubud | Extra hour |
-| --- | --- | --- | --- |
-| English | **600,000** guide only | Same · optional shuttle quoted | 150,000 |
-| Japanese | **850,000** (guide + driver) | **700,000** + **550,000** driver | 150,000 |
-| French | **850,000** (guide + driver) | **750,000** + **550,000** driver | 150,000 |
+### Guide only
+| Language | 8 hours (per booking) | Extra hour |
+| --- | --- | --- |
+| English | **600,000** | 150,000 |
+| Japanese | **700,000** | 150,000 |
+| French | **750,000** | 150,000 |
+
+### Optional tour: Japanese / French + private driver
+| Language | Ubud area | Outside Ubud |
+| --- | --- | --- |
+| Japanese + driver | **850,000** | **700,000** + **550,000** driver |
+| French + driver | **850,000** | **750,000** + **550,000** driver |
 
 The price is for **one guide and your whole group**. Two guests or a family of five pay the same.
 
 **Worked examples:**
-- English guide, full 8-hour day around Ubud: **IDR 600,000**
-- Japanese guide + driver in Ubud: **IDR 850,000**
-- Japanese guide outside Ubud: 700,000 + 550,000 = **IDR 1,250,000**
-- French guide outside Ubud: 750,000 + 550,000 = **IDR 1,300,000**
+- English guide only, 8 hours: **IDR 600,000**
+- Japanese guide only: **IDR 700,000**
+- Japanese + driver in Ubud: **IDR 850,000**
+- Japanese + driver outside Ubud: 700,000 + 550,000 = **IDR 1,250,000**
 
 Not included: entrance tickets, meals, and tips.
 
@@ -94,45 +101,45 @@ Not sure you need one? Read [is a tour guide worth it in Bali?](/blog/is-a-tour-
   {
     slug: 'japanese-speaking-guide-bali-2026',
     title: 'Japanese-Speaking Guide in Bali (2026): Licensed Guide Price & How to Book',
-    seoTitle: 'Japanese Speaking Guide Bali 2026 | IDR 850K with Driver',
+    seoTitle: 'Japanese Speaking Guide Bali 2026 | From IDR 700K',
     excerpt:
-      'Book a government-licensed Japanese-speaking guide with private driver: IDR 850,000 in Ubud for 8 hours; outside Ubud IDR 700,000 + driver IDR 550,000. 日本語の要約あり。',
+      'Book a government-licensed Japanese-speaking guide: guide only IDR 700,000 for 8 hours, or optional + private driver IDR 850,000 in Ubud (outside 700K + 550K). 日本語の要約あり。',
     publishedAt: '2026-10-12',
     author: 'Sekar Bali Activity',
     image: '/images/guide/licensed-guide-bali.jpg',
     content: `
-**How much is a Japanese-speaking guide in Bali?** A government-licensed Japanese-speaking guide from Sekar Bali Activity **includes a private driver**. In the **Ubud area** the total is **IDR 850,000 per booking for 8 hours**. Outside Ubud it is **IDR 700,000** (guide) + **IDR 550,000** (driver). Not per person. Each extra hour is **IDR 150,000**. [Book a Japanese-speaking guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+**How much is a Japanese-speaking guide in Bali?** A government-licensed Japanese-speaking guide from Sekar Bali Activity is **IDR 700,000 per booking for 8 hours** — guide only, not per person. Each extra hour is **IDR 150,000**. **Optional + private driver tour:** **IDR 850,000** in Ubud; outside Ubud **IDR 700,000 + IDR 550,000** driver. [Book a Japanese-speaking guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
 
 > **日本語の要約**
-> - バリ島の**政府公認ガイド（日本語）＋専用ドライバー**を手配できます
-> - **ウブドエリア合計：8時間 IDR 850,000**（1予約あたり）
-> - **ウブド以外：ガイド IDR 700,000 + ドライバー IDR 550,000**
+> - バリ島の**政府公認ガイド（日本語）**を手配できます（**ガイドのみ**も可）
+> - **ガイドのみ：8時間 IDR 700,000**（1予約あたり）
+> - **オプション：ガイド＋ドライバー** — ウブド **IDR 850,000** / ウブド以外 **700,000 + 550,000**
 > - 延長：**1時間 IDR 150,000**
-> - 日本語ガイドはドライバー込みが必須です（最大6名／車）
 > - 入場料、食事は含まれません
 > - 決まったコースがよければ [ウブド1日ツアー](/tours/full-day-ubud-tour) に日本語ガイドを追加（ツアーに車込み・ガイド料金 IDR 700,000）
 > - お問い合わせはWhatsApp（英語）で受け付けています
 
 ## Japanese-speaking guide price (2026 IDR)
 
-| Area | 8 hours (per booking) |
+| Option | 8 hours (per booking) |
 | --- | --- |
-| Ubud (guide + private driver) | **850,000** |
-| Outside Ubud (guide + driver) | **700,000 + 550,000 = 1,250,000** |
+| Guide only | **700,000** |
+| Guide + private driver (Ubud) | **850,000** |
+| Guide + driver (outside Ubud) | **700,000 + 550,000 = 1,250,000** |
 | Extra hour | **150,000** |
 
 One guide for your whole group. A couple and a family of four pay the same price.
 
 ## Japanese guide vs Japanese-speaking driver
 
-Many Bali offers for Japanese travelers are a **car charter with a Japanese-speaking driver**. That is useful for getting around, but the driver is not always a licensed guide. Our product is a **licensed KTPP guide plus a private driver** on the same booking.
+Many Bali offers for Japanese travelers are a **car charter with a Japanese-speaking driver**. That is useful for getting around, but the driver is not always a licensed guide. A licensed guide holds a Bali **KTPP** guide card. Book **guide only**, or pick the **with private driver** tour option.
 
 | Option | Best if |
 | --- | --- |
-| **Japanese guide + private driver (Ubud)** — IDR 850,000 / 8 hrs | You want licensed commentary and a car from an Ubud hotel |
-| **Japanese guide + driver (outside Ubud)** — 700K + 550K | Same product from Canggu, Seminyak, Sanur, and nearby |
+| **Licensed Japanese guide only** — IDR 700,000 / 8 hrs | You already have a car or hotel driver |
+| **Japanese guide + private driver (Ubud)** — IDR 850,000 | You want licensed commentary and a car from an Ubud hotel |
+| **Japanese guide + driver (outside Ubud)** — 700K + 550K | Same with-driver option from Canggu, Seminyak, Sanur, and nearby |
 | **[Full Day Ubud Tour](/tours/full-day-ubud-tour) + Japanese guide** | Set Ubud route — car already included; guide add-on IDR 700,000 |
-| **[Half Day Ubud & Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) + Japanese guide** | Afternoon culture and Tanah Lot sunset; guide add-on IDR 700,000 |
 
 On our tours, the guide price covers the full scheduled tour. The IDR 150,000 hourly rate only applies if the day runs past the tour's normal length.
 
@@ -152,25 +159,25 @@ On our tours, the guide price covers the full scheduled tour. The IDR 150,000 ho
 
 Fewer licensed guides work in Japanese than in English, so send your date early. More for Japanese, Korean, and Chinese visitors: [Bali tours booked in English](/blog/bali-tours-for-japanese-chinese-travelers-2026). Price and licence details for all languages: [licensed tour guide in Bali](/blog/licensed-tour-guide-bali-2026).
 
-**Ready?** [Book a Japanese-speaking licensed guide](/tours/licensed-tour-guide-bali) — IDR 850,000 with private driver in Ubud (outside: 700K + 550K).
+**Ready?** [Book a Japanese-speaking licensed guide](/tours/licensed-tour-guide-bali) — guide only IDR 700,000, or + driver IDR 850,000 in Ubud.
 `,
   },
   {
     slug: 'french-speaking-guide-bali-2026',
     title: 'French-Speaking Guide in Bali (2026): Licensed Guide Price & How to Book',
-    seoTitle: 'French Speaking Guide Bali 2026 | IDR 850K with Driver',
+    seoTitle: 'French Speaking Guide Bali 2026 | From IDR 750K',
     excerpt:
-      'Book a government-licensed French-speaking guide with private driver: IDR 850,000 in Ubud for 8 hours; outside Ubud IDR 750,000 + driver IDR 550,000. Résumé en français.',
+      'Book a government-licensed French-speaking guide: guide only IDR 750,000 for 8 hours, or optional + private driver IDR 850,000 in Ubud (outside 750K + 550K). Résumé en français.',
     publishedAt: '2026-10-12',
     author: 'Sekar Bali Activity',
     image: '/images/guide/licensed-guide-bali.jpg',
     content: `
-**How much is a French-speaking guide in Bali?** A government-licensed French-speaking guide from Sekar Bali Activity **includes a private driver**. In the **Ubud area** the total is **IDR 850,000 per booking for 8 hours**. Outside Ubud it is **IDR 750,000** (guide) + **IDR 550,000** (driver). Not per person. Each extra hour is **IDR 150,000**. [Book a French-speaking guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+**How much is a French-speaking guide in Bali?** A government-licensed French-speaking guide from Sekar Bali Activity is **IDR 750,000 per booking for 8 hours** — guide only, not per person. Each extra hour is **IDR 150,000**. **Optional + private driver tour:** **IDR 850,000** in Ubud; outside Ubud **IDR 750,000 + IDR 550,000** driver. [Book a French-speaking guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
 
 > **Résumé en français**
-> - Guide **officiel francophone** à Bali (carte KTPP) **avec chauffeur privé inclus**
-> - **Zone Ubud : IDR 850 000 pour 8 heures** (guide + chauffeur), par réservation
-> - **Hors Ubud : guide IDR 750 000 + chauffeur IDR 550 000**
+> - Guide **officiel francophone** à Bali (carte KTPP) — **guide seul** possible
+> - **Guide seul : IDR 750 000 pour 8 heures**, par réservation
+> - **Option guide + chauffeur :** Ubud **IDR 850 000** / hors Ubud **750 000 + 550 000**
 > - Heure supplémentaire : **IDR 150 000**
 > - Entrées et repas non inclus
 > - Circuit fixe ? Ajoutez le guide à notre [journée complète à Ubud](/tours/full-day-ubud-tour) — voiture déjà incluse, supplément guide IDR 750 000
@@ -178,24 +185,25 @@ Fewer licensed guides work in Japanese than in English, so send your date early.
 
 ## French-speaking guide price (2026 IDR)
 
-| Area | 8 hours (per booking) |
+| Option | 8 hours (per booking) |
 | --- | --- |
-| Ubud (guide + private driver) | **850,000** |
-| Outside Ubud (guide + driver) | **750,000 + 550,000 = 1,300,000** |
+| Guide only | **750,000** |
+| Guide + private driver (Ubud) | **850,000** |
+| Guide + driver (outside Ubud) | **750,000 + 550,000 = 1,300,000** |
 | Extra hour | **150,000** |
 
 One guide for your whole group — the price does not change with group size.
 
 ## French guide vs driver-guide
 
-Many French travelers book a **driver** for the day and expect commentary on the way. The driver is not always a licensed guide, and few drivers speak French. Our product is a **licensed KTPP guide plus a private driver** on the same booking.
+Many French travelers book a **driver** for the day and expect commentary on the way. The driver is not always a licensed guide, and few drivers speak French. Book **guide only**, or pick the **with private driver** tour option.
 
 | Option | Best if |
 | --- | --- |
-| **French guide + private driver (Ubud)** — IDR 850,000 / 8 hrs | You want licensed French commentary and a car from an Ubud hotel |
-| **French guide + driver (outside Ubud)** — 750K + 550K | Same product from Canggu, Seminyak, Sanur, and nearby |
+| **Licensed French guide only** — IDR 750,000 / 8 hrs | You already have a car or villa driver |
+| **French guide + private driver (Ubud)** — IDR 850,000 | You want licensed French commentary and a car from an Ubud hotel |
+| **French guide + driver (outside Ubud)** — 750K + 550K | Same with-driver option from Canggu, Seminyak, Sanur, and nearby |
 | **[Full Day Ubud Tour](/tours/full-day-ubud-tour) + French guide** | Set Ubud route — car already included; guide add-on IDR 750,000 |
-| **[Umah Kuno Luwak Coffee](/tours/luwak-coffee-plantation) + French guide** | Plantation and roasting story in French — guide add-on IDR 750,000 |
 
 On our tours, the guide price covers the full scheduled tour. The IDR 150,000 hourly rate only applies if the day runs past the tour's normal length.
 
@@ -220,7 +228,7 @@ Bali's 2025 code of conduct for foreign visitors, [Governor Circular No. 7 of 20
 
 Fewer licensed guides work in French than in English, so send your date early.
 
-**Ready?** [Book a French-speaking licensed guide](/tours/licensed-tour-guide-bali) — IDR 850,000 with private driver in Ubud (outside: 750K + 550K).
+**Ready?** [Book a French-speaking licensed guide](/tours/licensed-tour-guide-bali) — guide only IDR 750,000, or + driver IDR 850,000 in Ubud.
 `,
   },
   {

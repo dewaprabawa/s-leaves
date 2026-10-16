@@ -1394,7 +1394,7 @@ export default async function TourPage({ params }: Props) {
                       <span className="mr-2 text-brand-green-light line-through opacity-70 font-semibold">
                         {formatIdr(CYCLING_LIST_IDR)}
                       </span>
-                      Promo {formatIdr(CYCLING_PROMO_IDR)} / person · 625K (2) · 600K (3+)
+                      Promo {formatIdr(CYCLING_PROMO_IDR)} / person · 525K (2) · 500K (3+)
                     </span>
                   ) : tour.slug === ATV_PREMIUM_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">

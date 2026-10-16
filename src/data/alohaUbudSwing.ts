@@ -81,10 +81,6 @@ export const ALOHA_UBUD_SWING_PHOTOS = [
     url: '/images/adventures/aloha-ubud-swing/park-view.jpg',
     alt: 'Park view at Aloha Ubud Swing Tegallalang',
   },
-  {
-    url: '/images/adventures/aloha-ubud-swing/package-board.jpg',
-    alt: 'Aloha Ubud Swing Active Package 1 price board — IDR 400,000 with eight activities',
-  },
 ] as const
 
 export const ALOHA_ADDONS = {

@@ -27,7 +27,7 @@ export const DISCOVERY_CATEGORIES: DiscoveryCategory[] = [
   {
     id: "village",
     label: TOUR_CATEGORY_LABELS.village,
-    blurb: "Pejeng ricefield cycling promo 650K (was 750K) · bird park, safari & Taro tickets · free Ubud pickup + lunch",
+    blurb: "Pejeng ricefield cycling promo 550K (was 650K) · bird park, safari & Taro tickets · free Ubud pickup + lunch",
     href: "/#village",
   },
   {

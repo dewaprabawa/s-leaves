@@ -92,7 +92,7 @@ export function getCyclingCookingCombo(): CultureComboOffer {
     name: 'Cycling + Tumang Cooking Class',
     tagline: 'Culture day classic',
     description:
-      '2-hour Pejeng ricefield cycling promo IDR 650,000 (was IDR 750,000) with free Ubud hotel pickup + lunch, then an afternoon Tumang Bali Cooking Class — 10+ dishes, rice-field walk, max 8 guests. Book both on one WhatsApp thread.',
+      '2-hour Pejeng ricefield cycling promo IDR 550,000 (was IDR 650,000) with free Ubud hotel pickup + lunch, then an afternoon Tumang Bali Cooking Class — 10+ dishes, rice-field walk, max 8 guests. Book both on one WhatsApp thread.',
     duration: 'Full day',
     timeline: [
       `2 hours: Ubud Ricefield Cycling Tour — promo ${formatIdr(cyclingPriceIdr)} (was ${formatIdr(CYCLING_LIST_IDR)}; free Ubud pickup + lunch)`,
@@ -143,7 +143,7 @@ export function buildCyclingCookingComboWhatsAppUrl(guestName = 'Guest') {
     activityOption: `${combo.timeline[0]} · ${combo.timeline[1]}`,
     price: combo.totalFromIdr,
     notes:
-      'Please confirm availability for Pejeng ricefield cycling promo 650K (was 750K, free Ubud pickup + lunch) and an afternoon Tumang Bali Cooking Class on the same date.',
+      'Please confirm availability for Pejeng ricefield cycling promo 550K (was 650K, free Ubud pickup + lunch) and an afternoon Tumang Bali Cooking Class on the same date.',
   })
 }
 

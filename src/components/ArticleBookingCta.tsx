@@ -118,7 +118,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'withlocals-bali-guide-alternative-2026': {
     headline: 'Book a licensed guide — not a marketplace host',
-    body: 'English 600,000 guide only. Japanese/French 850,000 with private driver in Ubud (outside: guide + 550,000 driver). Per booking for 8 hours.',
+    body: 'Guide only from IDR 600,000 (English / Japanese / French). Optional Japanese/French + driver tour: 850,000 in Ubud. Per booking for 8 hours.',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a licensed guide',
     secondaryHref: '/blog/licensed-tour-guide-bali-2026',
@@ -126,7 +126,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'licensed-tour-guide-bali-2026': {
     headline: 'Book a licensed guide in Bali',
-    body: 'English IDR 600,000 guide only. Japanese/French IDR 850,000 with private driver in Ubud; outside guide + IDR 550,000. Extra hour IDR 150,000.',
+    body: 'Guide only: English 600K · Japanese 700K · French 750K. Optional JP/FR + driver: 850K in Ubud. Extra hour IDR 150,000.',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a guide',
     secondaryHref: '/tours/full-day-ubud-tour',
@@ -134,7 +134,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'japanese-speaking-guide-bali-2026': {
     headline: 'Book a Japanese-speaking licensed guide',
-    body: 'Private driver included: IDR 850,000 in Ubud for 8 hours. Outside Ubud: IDR 700,000 guide + IDR 550,000 driver. Extra hour IDR 150,000.',
+    body: 'Guide only IDR 700,000 for 8 hours — or optional + private driver: IDR 850,000 in Ubud (outside: 700K + 550K). Extra hour IDR 150,000.',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a Japanese guide',
     secondaryHref: '/tours/full-day-ubud-tour',
@@ -142,7 +142,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'french-speaking-guide-bali-2026': {
     headline: 'Book a French-speaking licensed guide',
-    body: 'Private driver included: IDR 850,000 in Ubud for 8 hours. Outside Ubud: IDR 750,000 guide + IDR 550,000 driver. Extra hour IDR 150,000.',
+    body: 'Guide only IDR 750,000 for 8 hours — or optional + private driver: IDR 850,000 in Ubud (outside: 750K + 550K). Extra hour IDR 150,000.',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a French guide',
     secondaryHref: '/tours/full-day-ubud-tour',
@@ -150,7 +150,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'is-a-tour-guide-worth-it-bali-2026': {
     headline: 'Make your culture day count',
-    body: 'English 600,000 guide only · Japanese/French 850,000 with driver in Ubud (outside: guide + 550,000). Per booking for 8 hours.',
+    body: 'Guide only from IDR 600,000. Optional Japanese/French + driver tour IDR 850,000 in Ubud. Per booking for 8 hours.',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a guide',
     secondaryHref: '/tours/full-day-ubud-tour',
@@ -158,7 +158,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-temples-with-a-guide-2026': {
     headline: 'Visit temples with a licensed guide',
-    body: 'Fountain order at Tirta Empul, courtyards, offerings, etiquette — English, Japanese, or French. From IDR 600,000 (English) or IDR 850,000 Japanese/French with driver in Ubud.',
+    body: 'Fountain order at Tirta Empul, courtyards, offerings, etiquette — English, Japanese, or French. Guide only from IDR 600,000; optional JP/FR + driver 850K in Ubud.',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a temple guide',
     secondaryHref: '/tours/tirta-empu-purification',
@@ -166,7 +166,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'first-time-in-bali-local-guide-2026': {
     headline: 'Book a guide for your culture day',
-    body: 'One licensed guide for the whole group — English from IDR 600,000, or Japanese/French IDR 850,000 with private driver in Ubud.',
+    body: 'One licensed guide for the whole group — guide only from IDR 600,000. Optional Japanese/French + private driver tour in Ubud.',
     primaryHref: '/tours/licensed-tour-guide-bali',
     primaryLabel: 'Book a guide',
     secondaryHref: '/tours/full-day-ubud-tour',

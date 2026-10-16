@@ -53,8 +53,8 @@ import {
   GUIDE_ONLY_HOURS,
   GUIDE_OUTSIDE_DRIVER_IDR,
   GUIDE_UBUD_WITH_DRIVER_IDR,
-  guideRequiresDriver,
-  guideStandaloneTotalIdr,
+  GUIDE_WITH_DRIVER_LANGUAGES,
+  guideWithDriverTotalIdr,
   LICENSED_GUIDE_PRICES_IDR,
   LICENSED_GUIDE_SLUG,
 } from "@/data/licensedGuide"
@@ -783,9 +783,35 @@ function buildTourSchema(tour: Tour) {
   }
 
   if (tour.slug === LICENSED_GUIDE_SLUG) {
-    const prices = GUIDE_LANGUAGES.map((lang) =>
-      guideStandaloneTotalIdr(lang.key, false),
-    )
+    const guideOnlyOffers = GUIDE_LANGUAGES.map((lang) => ({
+      "@type": "Offer" as const,
+      name: `${lang.name}-speaking licensed guide — ${GUIDE_ONLY_HOURS} hours (guide only)`,
+      priceSpecification: {
+        "@type": "UnitPriceSpecification" as const,
+        price: LICENSED_GUIDE_PRICES_IDR[lang.key],
+        priceCurrency: "IDR",
+        unitText: `per booking, ${GUIDE_ONLY_HOURS} hours, guide only`,
+      },
+      availability: "https://schema.org/InStock",
+      url: `${SITE_URL}/tours/${tour.slug}`,
+    }))
+    const withDriverOffers = GUIDE_WITH_DRIVER_LANGUAGES.map((key) => {
+      const lang = GUIDE_LANGUAGES.find((l) => l.key === key)!
+      return {
+        "@type": "Offer" as const,
+        name: `${lang.name}-speaking licensed guide + private driver — ${GUIDE_ONLY_HOURS} hours (Ubud area)`,
+        priceSpecification: {
+          "@type": "UnitPriceSpecification" as const,
+          price: guideWithDriverTotalIdr(key, false),
+          priceCurrency: "IDR",
+          unitText: `per booking, ${GUIDE_ONLY_HOURS} hours, Ubud area with private driver`,
+        },
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+      }
+    })
+    const allOffers = [...guideOnlyOffers, ...withDriverOffers]
+    const prices = allOffers.map((o) => o.priceSpecification.price)
     return {
       ...base,
       offers: {
@@ -794,26 +820,11 @@ function buildTourSchema(tour: Tour) {
         lowPrice: String(Math.min(...prices)),
         highPrice: String(Math.max(...prices)),
         priceCurrency: "IDR",
-        offerCount: GUIDE_LANGUAGES.length,
+        offerCount: allOffers.length,
         availability: "https://schema.org/InStock",
         url: `${SITE_URL}/tours/${tour.slug}`,
         description: tour.included.join(", "),
-        offers: GUIDE_LANGUAGES.map((lang) => ({
-          "@type": "Offer",
-          name: guideRequiresDriver(lang.key)
-            ? `${lang.name}-speaking licensed guide + private driver — ${GUIDE_ONLY_HOURS} hours (Ubud area)`
-            : `${lang.name}-speaking licensed guide — ${GUIDE_ONLY_HOURS} hours`,
-          priceSpecification: {
-            "@type": "UnitPriceSpecification",
-            price: guideStandaloneTotalIdr(lang.key, false),
-            priceCurrency: "IDR",
-            unitText: guideRequiresDriver(lang.key)
-              ? `per booking, ${GUIDE_ONLY_HOURS} hours, Ubud area with private driver`
-              : `per booking, ${GUIDE_ONLY_HOURS} hours`,
-          },
-          availability: "https://schema.org/InStock",
-          url: `${SITE_URL}/tours/${tour.slug}`,
-        })),
+        offers: allOffers,
         addOn: {
           "@type": "Offer",
           name: "Extra guide hour",
@@ -1414,9 +1425,9 @@ export default async function TourPage({ params }: Props) {
                     </span>
                   ) : tour.slug === LICENSED_GUIDE_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">
-                      English {formatIdr(LICENSED_GUIDE_PRICES_IDR.english)} guide only · Japanese /
-                      French {formatIdr(GUIDE_UBUD_WITH_DRIVER_IDR)} with driver (Ubud) · outside
-                      guide + {formatIdr(GUIDE_OUTSIDE_DRIVER_IDR)} · {GUIDE_ONLY_HOURS} hrs · +
+                      Guide only from {formatIdr(LICENSED_GUIDE_PRICES_IDR.english)} · Japanese/French
+                      + driver {formatIdr(GUIDE_UBUD_WITH_DRIVER_IDR)} (Ubud) · outside guide +{" "}
+                      {formatIdr(GUIDE_OUTSIDE_DRIVER_IDR)} · {GUIDE_ONLY_HOURS} hrs · +
                       {formatIdr(GUIDE_EXTRA_HOUR_IDR)} / extra hour
                     </span>
                   ) : groupTiers ? (

@@ -136,6 +136,11 @@ export interface TourConfig {
   optionalAddonsIntro?: string
   /** Optional hotel shuttle at one flat price per booking, island-wide (Kintamani dirt bike). Replaces the per-area pickup fee. */
   pickupFlatFeeIdr?: number
+  /**
+   * Required private driver with published Ubud / outside fees
+   * (Japanese & French licensed guide standalone). Overrides quotePickup when set.
+   */
+  requiredDriverFeesIdr?: { ubud: number; outside: number }
   /** Self-meet venue when hotel pickup is not selected (e.g. Swing Heaven Bongkasa). */
   selfMeet?: {
     name: string
@@ -355,6 +360,8 @@ export function BookingPopup({
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
   const pickupIncluded = activeTour.pickupIncluded === true;
   const requiredShuttle = activeTour.requiredShuttle === true;
+  const requiredDriverFees = activeTour.requiredDriverFeesIdr
+  const isRequiredGuideDriver = Boolean(requiredDriverFees)
   const isSwingHeaven =
     isSwingHeavenBookingId(activeTour.id) ||
     isSwingHeavenBookingId(activeTour.pricingActivityId);
@@ -384,14 +391,23 @@ export function BookingPopup({
   // Required shuttle always quotes as wantsPickup. Zoned parks (Swing Heaven / Aloha) are never free-Ubud.
   const effectiveWantsPickup = requiredShuttle || wantsPickup
   const pickupQuote = quotePickup({
-    wantsPickup: effectiveWantsPickup,
+    wantsPickup: effectiveWantsPickup && !isRequiredGuideDriver,
     freeUbudPickup: isZonedRequiredShuttle
       ? false
       : hasFreeUbudPickup || pickupIncluded,
     isOutUbud: pickupIncluded ? false : isOutUbud,
     sameDropOff,
   });
-  const requiredShuttleLabel = isSwingHeaven
+  const guideDriverFee = requiredDriverFees
+    ? isOutUbud
+      ? requiredDriverFees.outside
+      : requiredDriverFees.ubud
+    : 0
+  const requiredShuttleLabel = isRequiredGuideDriver
+    ? isOutUbud
+      ? 'Required private driver (outside Ubud)'
+      : 'Required private driver (Ubud area)'
+    : isSwingHeaven
     ? swingHeavenShuttleLabel(isOutUbud, pickupQuote.total)
     : isAlohaSwing
       ? alohaShuttleLabel(isOutUbud, pickupQuote.total)
@@ -406,7 +422,9 @@ export function BookingPopup({
     : (activityQuote?.activitySubtotal ?? 0) + (activityQuote?.childSubtotal ?? 0);
   const pickupFlatFee = activeTour.pickupFlatFeeIdr ?? null
   const hotelPickupFeeIdr = pickupFlatFee ?? getHotelPickupFeeIdr(isOutUbud)
-  const pickupFee = pickupFlatFee !== null
+  const pickupFee = isRequiredGuideDriver
+    ? guideDriverFee
+    : pickupFlatFee !== null
     ? (effectiveWantsPickup ? pickupFlatFee : 0)
     : pickupQuote.total;
   const totalCost = activityTotal + addonTotal + pickupFee;

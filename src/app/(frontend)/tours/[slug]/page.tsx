@@ -51,6 +51,10 @@ import {
   GUIDE_EXTRA_HOUR_IDR,
   GUIDE_LANGUAGES,
   GUIDE_ONLY_HOURS,
+  GUIDE_OUTSIDE_DRIVER_IDR,
+  GUIDE_UBUD_WITH_DRIVER_IDR,
+  guideRequiresDriver,
+  guideStandaloneTotalIdr,
   LICENSED_GUIDE_PRICES_IDR,
   LICENSED_GUIDE_SLUG,
 } from "@/data/licensedGuide"
@@ -779,7 +783,9 @@ function buildTourSchema(tour: Tour) {
   }
 
   if (tour.slug === LICENSED_GUIDE_SLUG) {
-    const prices = GUIDE_LANGUAGES.map((lang) => LICENSED_GUIDE_PRICES_IDR[lang.key])
+    const prices = GUIDE_LANGUAGES.map((lang) =>
+      guideStandaloneTotalIdr(lang.key, false),
+    )
     return {
       ...base,
       offers: {
@@ -794,12 +800,16 @@ function buildTourSchema(tour: Tour) {
         description: tour.included.join(", "),
         offers: GUIDE_LANGUAGES.map((lang) => ({
           "@type": "Offer",
-          name: `${lang.name}-speaking licensed guide — ${GUIDE_ONLY_HOURS} hours`,
+          name: guideRequiresDriver(lang.key)
+            ? `${lang.name}-speaking licensed guide + private driver — ${GUIDE_ONLY_HOURS} hours (Ubud area)`
+            : `${lang.name}-speaking licensed guide — ${GUIDE_ONLY_HOURS} hours`,
           priceSpecification: {
             "@type": "UnitPriceSpecification",
-            price: LICENSED_GUIDE_PRICES_IDR[lang.key],
+            price: guideStandaloneTotalIdr(lang.key, false),
             priceCurrency: "IDR",
-            unitText: `per booking, ${GUIDE_ONLY_HOURS} hours`,
+            unitText: guideRequiresDriver(lang.key)
+              ? `per booking, ${GUIDE_ONLY_HOURS} hours, Ubud area with private driver`
+              : `per booking, ${GUIDE_ONLY_HOURS} hours`,
           },
           availability: "https://schema.org/InStock",
           url: `${SITE_URL}/tours/${tour.slug}`,
@@ -1404,10 +1414,10 @@ export default async function TourPage({ params }: Props) {
                     </span>
                   ) : tour.slug === LICENSED_GUIDE_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">
-                      {GUIDE_LANGUAGES.map(
-                        (lang) => `${lang.name} ${formatIdr(LICENSED_GUIDE_PRICES_IDR[lang.key])}`,
-                      ).join(" · ")}{" "}
-                      / {GUIDE_ONLY_HOURS} hrs per booking · +{formatIdr(GUIDE_EXTRA_HOUR_IDR)} / extra hour
+                      English {formatIdr(LICENSED_GUIDE_PRICES_IDR.english)} guide only · Japanese /
+                      French {formatIdr(GUIDE_UBUD_WITH_DRIVER_IDR)} with driver (Ubud) · outside
+                      guide + {formatIdr(GUIDE_OUTSIDE_DRIVER_IDR)} · {GUIDE_ONLY_HOURS} hrs · +
+                      {formatIdr(GUIDE_EXTRA_HOUR_IDR)} / extra hour
                     </span>
                   ) : groupTiers ? (
                     <span className="text-sm font-bold text-brand-green">

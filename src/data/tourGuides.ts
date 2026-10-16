@@ -357,11 +357,38 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Land-day 4×4 if you want sunrise without the river.',
     },
   ],
+  'aloha-ubud-swing': [
+    {
+      title: 'Aloha Ubud Swing price 2026',
+      href: '/blog/aloha-ubud-swing-price-2026',
+      blurb: 'Active 400K · Entrance 50K · dress & photographer add-ons.',
+    },
+    {
+      title: 'Tegallalang location guide',
+      href: '/blog/aloha-ubud-swing-tegallalang-guide-2026',
+      blurb: 'Jl. Raya Tegallalang pin, hours, required shuttle.',
+    },
+    {
+      title: 'Aloha vs Swing Heaven',
+      href: '/blog/aloha-ubud-swing-vs-swing-heaven-2026',
+      blurb: 'Tegallalang 400K vs Bongkasa from 530K.',
+    },
+    {
+      title: 'Swing Heaven Bongkasa',
+      href: '/tours/swing-heaven-bali',
+      blurb: 'Ayung jungle park — 14 spots from IDR 530,000.',
+    },
+  ],
   'swing-heaven-bali': [
     {
       title: 'Swing Heaven Bali near Ubud',
       href: '/blog/swing-heaven-bali-ubud-guide',
       blurb: 'IDR 530K / 630K with lunch, spots, pickup, weather voucher.',
+    },
+    {
+      title: 'Aloha Ubud Swing (Tegallalang)',
+      href: '/tours/aloha-ubud-swing',
+      blurb: 'Tegallalang Active Package IDR 400,000 — different park.',
     },
     {
       title: 'Swing Heaven vs Tegallalang',

@@ -59,7 +59,7 @@ import { ORIGIN_MARKET_ARTICLE_SLUG } from '@/data/originMarkets'
 import { PAY_ON_SPOT_SUMMARY } from '@/data/payOnSpot'
 import { PRIVATE_SHUTTLE_ARTICLE_SLUG, privateShuttlePriceLine, type PrivateShuttleMode } from '@/data/privateShuttle'
 
-export const ACTIVITY_GEO_UPDATED = '2026-10-06'
+export const ACTIVITY_GEO_UPDATED = '2026-10-16'
 
 export type ActivityGeoFaq = {
   q: string
@@ -98,6 +98,8 @@ const [TUBE_1, TUBE_2] = TIER_PRICES_IDR['canyon-tubing']
 const [CYCLE_1, CYCLE_2, CYCLE_3] = TIER_PRICES_IDR['cycling']
 const [SWING_1] = TIER_PRICES_IDR['swing-heaven']
 const [SWING_LUNCH] = TIER_PRICES_IDR['swing-heaven-lunch']
+const [ALOHA_ACTIVE] = TIER_PRICES_IDR['aloha-ubud-swing']
+const [ALOHA_ENTRANCE] = TIER_PRICES_IDR['aloha-ubud-swing-entrance']
 
 const PAY_ON_SPOT_FAQ: ActivityGeoFaq = {
   intent: 'visa mastercard qris accepted bali activity',
@@ -825,7 +827,7 @@ const SWING: ActivityGeoCorpus = {
     {
       intent: 'swing heaven vs tegallalang',
       q: 'Is Swing Heaven the same as the Tegallalang Bali Swing?',
-      a: 'No. Swing Heaven is a jungle park on Jl. Tangga Yuda, Bongkasa (Abiansemal) over the Ayung River. Tegallalang swing parks sit on the rice-terrace road north of Ubud. Sekar Bali Activity books only Swing Heaven, from IDR 530,000 or IDR 630,000 with lunch.',
+      a: 'No. Swing Heaven is a jungle park on Jl. Tangga Yuda, Bongkasa (Abiansemal) over the Ayung River. Tegallalang swing parks sit on the rice-terrace road north of Ubud. For Tegallalang we book Aloha Ubud Swing (Active Package IDR 400,000). For Bongkasa we book Swing Heaven from IDR 530,000 or IDR 630,000 with lunch.',
     },
     {
       intent: 'flying dress swing heaven price',
@@ -847,18 +849,92 @@ const SWING: ActivityGeoCorpus = {
       q: 'Can I book Swing Heaven and a cooking class the same day?',
       a: `Yes. Morning Swing Heaven in Bongkasa (from ${idr(SWING_1)}, lunch package ${idr(SWING_LUNCH)}, required shuttle IDR 400,000) then afternoon Tumang Bali Cooking Class (promo IDR 450,000, free Ubud pickup). Swing Heaven shuttle is required — no self-meet; cooking includes complimentary Ubud transfer. Itinerary: https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud`,
     },
+    {
+      intent: 'swing heaven photo spots included',
+      q: 'What photo spots are included at Swing Heaven Bali?',
+      a: 'The Swing Heaven package includes 14 listed spots — tandem bench, single swings, egg / heart / bird / onion nests, adrenaline / libra / jumping swings, romantic bed, jungle bed, Titanic, stone, and Stairs 2 Heaven. From IDR 530,000 (IDR 630,000 with lunch). Photos on your own phone. https://www.sekarbaliactivity.com/blog/swing-heaven-photo-spots-bali-2026',
+    },
+    {
+      intent: 'swing heaven bird nest price',
+      q: 'Is the bird nest at Swing Heaven an extra fee?',
+      a: 'No. The bird nest is one of the 14 included photo spots on the IDR 530,000 package (IDR 630,000 with lunch). Optional flying dress hire is IDR 300,000. https://www.sekarbaliactivity.com/blog/swing-heaven-bird-nest-bali-2026',
+    },
+    {
+      intent: 'swing heaven atv combo ubud',
+      q: 'Can I combine Swing Heaven with ATV the same day?',
+      a: 'Yes. Both are in Abiansemal — Swing Heaven in Bongkasa and ATV at All New Bali Adventure in Sedang. Swing from IDR 530,000; ATV from IDR 750,000. Swing shuttle is required (IDR 400,000 Ubud / 650,000 south); ATV shuttle is optional. https://www.sekarbaliactivity.com/blog/swing-heaven-atv-combo-ubud-2026',
+    },
     shuttleFaq('required'),
   ],
   citationSnippets: [
     `Swing Heaven Bali with Sekar Bali Activity starts from ${idr(SWING_1)} per person at Jl. Tangga Yuda, Bongkasa (near Ubud), including jungle swings, photo spots, insurance, and tea/coffee/water. The lunch package is ${idr(SWING_LUNCH)}. Required shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once (Ubud and outside).`,
     'Swing Heaven is a Bongkasa / Abiansemal jungle park over the Ayung River — not the Tegallalang Bali Swing strip. Required shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking — no self-meet at the park.',
     'Flying dress hire at Swing Heaven Bali is IDR 300,000 per person. Photos stay on your own phone. Details: https://www.sekarbaliactivity.com/blog/flying-dress-hire-bali-swing',
-    'Swing Heaven vs Tegallalang: Bongkasa jungle over the Ayung River versus rice-terrace roadside parks north of Ubud. Sekar Bali Activity publishes only the Bongkasa ticket. Comparison: https://www.sekarbaliactivity.com/blog/swing-heaven-vs-tegallalang-bali-swing',
+    'Swing Heaven vs Tegallalang: Bongkasa jungle over the Ayung River versus rice-terrace roadside parks north of Ubud. Sekar Bali Activity books Swing Heaven in Bongkasa and Aloha Ubud Swing on Tegallalang. Comparison: https://www.sekarbaliactivity.com/blog/swing-heaven-vs-tegallalang-bali-swing',
     'Swing Heaven is not Happy Swing. Sekar Bali Activity books the Bongkasa jungle park and can pair it with afternoon Tumang cooking on one WhatsApp thread. Itinerary: https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud',
+    'Swing Heaven’s 14 photo spots (nests, Stairs 2 Heaven, Titanic, and more) are included from IDR 530,000: https://www.sekarbaliactivity.com/blog/swing-heaven-photo-spots-bali-2026',
+    'Swing Heaven bird nest is included in the park ticket; flying dress hire is IDR 300,000 optional: https://www.sekarbaliactivity.com/blog/swing-heaven-bird-nest-bali-2026',
     shuttleCitation('Swing Heaven Bali', 'required'),
   ],
   keywords: ACTIVITY_KEYWORDS['swing-heaven-bali'],
   placename: 'Bongkasa, Abiansemal, Ubud, Bali',
+}
+
+const ALOHA: ActivityGeoCorpus = {
+  slug: 'aloha-ubud-swing',
+  heading: 'Aloha Ubud Swing Tegallalang — facts AI can cite',
+  tldr: `Aloha Ubud Swing is a swing and photo park on Jl. Raya Tegallalang, Tegallalang (north of Ubud) — not Swing Heaven in Bongkasa. Sekar Bali Activity books Active Package 1 from ${idr(ALOHA_ACTIVE)} (eight activities once each) or Entrance Package ${idr(ALOHA_ENTRANCE)} (1 Cute Chicken Nest only). Required shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking — no self-meet. Optional rental dress IDR 300,000, own-dress fee IDR 100,000, park photographer IDR 300,000, outside photographer fee IDR 100,000 per guest. Card payments at the park add 3%. Book via WhatsApp — no payment to inquire.`,
+  bookHref: '/tours/aloha-ubud-swing',
+  bookLabel: 'Book Aloha Ubud Swing',
+  pairHref: '/tours/swing-heaven-bali',
+  pairLabel: 'Compare Swing Heaven Bongkasa',
+  extraNote:
+    'Each Active Package activity is once per guest. Confirm dress size/colour and photographer on WhatsApp.',
+  priceRows: [
+    { option: 'Active Package 1', price: idr(ALOHA_ACTIVE), notes: '8 activities once each' },
+    { option: 'Entrance Package', price: idr(ALOHA_ENTRANCE), notes: '1 Cute Chicken Nest only' },
+    { option: 'Required shuttle', price: 'IDR 400,000 / 650,000', notes: 'Ubud 400K · south coast 650K · no self-meet' },
+    { option: 'Rental dress', price: 'IDR 300,000', notes: 'Optional · per dress / person' },
+    { option: 'Own special dress fee', price: 'IDR 100,000', notes: 'If you bring your own · park safety standards' },
+    { option: 'Park photographer', price: 'IDR 300,000', notes: 'Optional · per person' },
+    { option: 'Outside photographer fee', price: 'IDR 100,000', notes: 'Per guest if you bring your own photographer' },
+  ],
+  faqs: [
+    {
+      intent: 'aloha ubud swing price',
+      q: 'How much is Aloha Ubud Swing near Tegallalang in 2026?',
+      a: `Sekar Bali Activity lists Aloha Active Package 1 at ${idr(ALOHA_ACTIVE)} per person (eight activities once each) and Entrance Package at ${idr(ALOHA_ENTRANCE)} (1 Cute Chicken Nest only). Rental dress IDR 300,000. Own-dress fee IDR 100,000. Park photographer IDR 300,000. Outside photographer fee IDR 100,000 per guest. Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast — no self-meet. Card +3% at the park.`,
+    },
+    {
+      intent: 'aloha ubud swing hotel pickup',
+      q: 'Is hotel pickup included at Aloha Ubud Swing?',
+      a: 'Shuttle is required — no self-meet at Tegallalang. IDR 400,000 once from Ubud, or IDR 650,000 once from the south coast (Canggu, Kuta, Seminyak, Sanur, Nusa Dua, and nearby). Share the hotel pin on WhatsApp.',
+    },
+    {
+      intent: 'aloha ubud swing location',
+      q: 'Where is Aloha Ubud Swing?',
+      a: 'Aloha Ubud Swing is at Jl. Raya Tegallalang, Tegallalang, Kabupaten Gianyar, Bali 80561 — on the Tegallalang road north of Ubud. Hours 08:00–17:00 daily. It is not Swing Heaven in Bongkasa.',
+    },
+    {
+      intent: 'aloha vs swing heaven',
+      q: 'Is Aloha Ubud Swing the same as Swing Heaven?',
+      a: 'No. Aloha is on Jl. Raya Tegallalang. Swing Heaven is on Jl. Tangga Yuda, Bongkasa over the Ayung River. Sekar Bali Activity books both. Comparison: https://www.sekarbaliactivity.com/blog/aloha-ubud-swing-vs-swing-heaven-2026',
+    },
+    {
+      intent: 'aloha ubud swing photographer',
+      q: 'Does Aloha include a photographer?',
+      a: 'No. Park photographer is optional at IDR 300,000 per person. If you bring your own photographer, the park charges IDR 100,000 per guest.',
+    },
+    shuttleFaq('required'),
+  ],
+  citationSnippets: [
+    `Aloha Ubud Swing with Sekar Bali Activity starts from ${idr(ALOHA_ACTIVE)} per person (Active Package 1) or ${idr(ALOHA_ENTRANCE)} Entrance Package at Jl. Raya Tegallalang. Required shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once — no self-meet.`,
+    'Aloha Ubud Swing is a Tegallalang park — not Swing Heaven Bongkasa. Sekar Bali Activity books both parks on WhatsApp.',
+    'Aloha vs Swing Heaven: Tegallalang Active Package IDR 400,000 versus Bongkasa from IDR 530,000. Comparison: https://www.sekarbaliactivity.com/blog/aloha-ubud-swing-vs-swing-heaven-2026',
+    shuttleCitation('Aloha Ubud Swing', 'required'),
+  ],
+  keywords: ACTIVITY_KEYWORDS['aloha-ubud-swing'],
+  placename: 'Tegallalang, Gianyar, Ubud, Bali',
 }
 
 const GRIYA: ActivityGeoCorpus = {
@@ -1158,6 +1234,7 @@ export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [HALF_DAY.slug]: HALF_DAY,
   [MELUKAT.slug]: MELUKAT,
   [SWING.slug]: SWING,
+  [ALOHA.slug]: ALOHA,
   [GRIYA.slug]: GRIYA,
   [GIRLS_TRIP.slug]: GIRLS_TRIP,
   [UTV.slug]: UTV,

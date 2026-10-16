@@ -18,6 +18,7 @@ const MONEY_TOUR_SLUGS = new Set([
   'tirta-empu-purification',
   'griya-beji-waterfall',
   'swing-heaven-bali',
+  'aloha-ubud-swing',
   'ubud-ricefield-cycling-tour',
   'bali-atv-adventure',
   'atv-rafting-combo',
@@ -33,6 +34,13 @@ const MONEY_TOUR_SLUGS = new Set([
 ])
 
 const HIGH_BLOG_SLUGS = new Set([
+  'swing-heaven-package-price-2026',
+  'swing-heaven-photo-spots-bali-2026',
+  'swing-heaven-bird-nest-bali-2026',
+  'swing-heaven-atv-combo-ubud-2026',
+  'aloha-ubud-swing-price-2026',
+  'aloha-ubud-swing-tegallalang-guide-2026',
+  'aloha-ubud-swing-vs-swing-heaven-2026',
   'private-shuttle-vs-grab-bali-activities-2026',
   'atv-premium-package-bali-2026',
   'group-atv-package-ubud-2026',
@@ -125,6 +133,9 @@ const BLOG_LASTMOD_OVERRIDE: Record<string, string> = {
   'is-bali-swing-worth-it': GEO_UPDATED,
   'swing-heaven-bali-ubud-guide': GEO_UPDATED,
   'swing-heaven-cooking-class-ubud': GEO_UPDATED,
+  'aloha-ubud-swing-price-2026': ACTIVITY_GEO_UPDATED,
+  'aloha-ubud-swing-tegallalang-guide-2026': ACTIVITY_GEO_UPDATED,
+  'aloha-ubud-swing-vs-swing-heaven-2026': ACTIVITY_GEO_UPDATED,
   'cycling-cooking-class-ubud-full-day-itinerary': COOKING_GEO_UPDATED,
   'mount-batur-sunrise-jeep-tour-guide-2026': JEEP_GEO_UPDATED,
   'mount-batur-sunrise-jeep-tour-price-guide-2026': JEEP_GEO_UPDATED,

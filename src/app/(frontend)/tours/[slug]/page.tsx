@@ -111,6 +111,14 @@ function isSwingTour(tour: Tour) {
   return tour.slug === "swing-heaven-bali"
 }
 
+function isAlohaSwingTour(tour: Tour) {
+  return tour.slug === "aloha-ubud-swing"
+}
+
+function isRequiredShuttleTour(tour: Tour) {
+  return isSwingTour(tour) || isAlohaSwingTour(tour)
+}
+
 function isMotorbikeTour(tour: Tour) {
   return tour.slug === MOTORBIKE_TRIP_SLUG
 }
@@ -637,6 +645,46 @@ function buildTourSchema(tour: Tour) {
             "@type": "Offer",
             name: "Swing Heaven Package + lunch",
             price: String(TIER_PRICES_IDR["swing-heaven-lunch"][0]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+        ],
+      },
+    }
+  }
+
+  if (isAlohaSwingTour(tour)) {
+    return {
+      ...base,
+      touristType: ["Couples", "Families", "Photographers", "Adventure seekers"],
+      location: {
+        "@type": "Place",
+        name: tour.venue ?? "Aloha Ubud Swing, Tegallalang",
+      },
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(TIER_PRICES_IDR["aloha-ubud-swing-entrance"][0]),
+        highPrice: String(TIER_PRICES_IDR["aloha-ubud-swing"][0]),
+        priceCurrency: "IDR",
+        offerCount: 2,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: [
+          {
+            "@type": "Offer",
+            name: "Aloha Active Package 1 (8 activities)",
+            price: String(TIER_PRICES_IDR["aloha-ubud-swing"][0]),
+            priceCurrency: "IDR",
+            availability: "https://schema.org/InStock",
+            url: `${SITE_URL}/tours/${tour.slug}`,
+          },
+          {
+            "@type": "Offer",
+            name: "Aloha Entrance Package (chicken nest only)",
+            price: String(TIER_PRICES_IDR["aloha-ubud-swing-entrance"][0]),
             priceCurrency: "IDR",
             availability: "https://schema.org/InStock",
             url: `${SITE_URL}/tours/${tour.slug}`,
@@ -1222,7 +1270,11 @@ export default async function TourPage({ params }: Props) {
           <div className="space-y-10 md:space-y-12">
             <header className="space-y-6">
               <div className="space-y-2 sm:space-y-3">
-                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-xl">
+                <div
+                  className={`relative w-full overflow-hidden rounded-3xl shadow-xl ${
+                    tour.heroThumbnails?.length ? "aspect-[16/10] sm:aspect-[16/9]" : "aspect-[16/9]"
+                  }`}
+                >
                   <Image
                     src={tour.heroImage.url}
                     alt={tour.heroImage.alt}
@@ -1245,6 +1297,9 @@ export default async function TourPage({ params }: Props) {
 
               <div className="space-y-4">
                 {isSwingTour(tour) ? <SwingHeavenShuttleMustLabel /> : null}
+                {isAlohaSwingTour(tour) ? (
+                  <SwingHeavenShuttleMustLabel variant="aloha-ubud-swing" />
+                ) : null}
                 <div className="flex flex-wrap items-center gap-3">
                   {tour.recommendedByTravelersPercent ? (
                     <TravelerRecommendBadge
@@ -1254,7 +1309,7 @@ export default async function TourPage({ params }: Props) {
                   ) : null}
                   {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="inline" /> : null}
                   {isPayOnSpotTour(tour.slug) ? <PayOnSpotNote variant="inline" /> : null}
-                  {isSwingTour(tour) ? (
+                  {isRequiredShuttleTour(tour) ? (
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">
                       Include shuttle — must
                     </span>

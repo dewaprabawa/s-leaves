@@ -36,7 +36,7 @@ export function buildOrganizationSchema() {
     alternateName: ['Sekar Bali', 'Sekar Bali Activity Ubud', 'Sekar Bali Pejeng'],
     legalName: SITE_NAME,
     description:
-      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Swing Heaven jungle swing, ricefield cycling, Mount Batur sunrise jeep (Kintamani), Tumang Bali Cooking Class, Tirta Empul or Pura Beji private melukat, Griya Beji Waterfall purification / palm reading / mental healing, coffee tasting, private day tours, a guided motorbike traveling trip, and UTV at Bali Buggy Adventures. Free Ubud hotel pickup on cycling and Tumang cooking class; hotel driver included on Swing Heaven; private shuttle on Tirta Empul / Beji purification; Griya Beji pickup IDR 400,000 or self-meet; park / UTV / workshop pickup quoted.',
+      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Swing Heaven jungle swing (Bongkasa), Aloha Ubud Swing (Tegallalang), ricefield cycling, Mount Batur sunrise jeep (Kintamani), Tumang Bali Cooking Class, Tirta Empul or Pura Beji private melukat, Griya Beji Waterfall purification / palm reading / mental healing, coffee tasting, private day tours, a guided motorbike traveling trip, and UTV at Bali Buggy Adventures. Free Ubud hotel pickup on cycling and Tumang cooking class; required shuttle IDR 400,000 Ubud / 650,000 south on Swing Heaven and Aloha; private shuttle on Tirta Empul / Beji purification; Griya Beji pickup IDR 400,000 or self-meet; park / UTV / workshop pickup quoted.',
     url: SITE_URL,
     telephone: CONTACT_PHONE_E164,
     email: CONTACT_EMAIL,
@@ -128,6 +128,7 @@ export const SITE_NAV_LINKS = [
   { name: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting` },
   { name: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing` },
   { name: 'Swing Heaven Bali', url: `${SITE_URL}/tours/swing-heaven-bali` },
+  { name: 'Aloha Ubud Swing', url: `${SITE_URL}/tours/aloha-ubud-swing` },
   { name: 'Private Mount Batur Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour` },
   { name: 'Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026` },
   { name: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek` },

@@ -13,6 +13,12 @@ import {
   SWING_HEAVEN_LUNCH_PRICE_IDR,
 } from "@/data/swingHeaven"
 import {
+  ALOHA_ADDONS,
+  ALOHA_ADDONS_INTRO,
+  ALOHA_ENTRANCE_ADDONS_INTRO,
+  ALOHA_ENTRANCE_PACKAGE_IDR,
+} from "@/data/alohaUbudSwing"
+import {
   GRIYA_BEJI_HEALING_IDR,
   GRIYA_BEJI_OFFERS,
   GRIYA_BEJI_PALM_READING_IDR,
@@ -127,6 +133,42 @@ export const BOOKABLE_TOURS: TourConfig[] = [
     optionalAddonsIntro:
       "Required shuttle IDR 400,000 (Ubud and outside). No self-meet. Lunch is already in this package. Optional extras: set a count for flying dress hire and the koi pond boat photo.",
     optionalAddons: [SWING_HEAVEN_ADDONS.dress, SWING_HEAVEN_ADDONS.koiPond],
+  },
+  {
+    id: "aloha-ubud-swing",
+    title: "Aloha Ubud Swing Active Package",
+    times: ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00", "15:00"],
+    adultPrice: getListPrice("aloha-ubud-swing"),
+    kidPrice: null,
+    minPax: 1,
+    pricingActivityId: "aloha-ubud-swing",
+    requiredShuttle: true,
+    freeUbudPickup: false,
+    optionalAddonsIntro: ALOHA_ADDONS_INTRO,
+    optionalAddons: [
+      ALOHA_ADDONS.dress,
+      ALOHA_ADDONS.ownDress,
+      ALOHA_ADDONS.photographer,
+      ALOHA_ADDONS.outsidePhotographer,
+    ],
+  },
+  {
+    id: "aloha-ubud-swing-entrance",
+    title: "Aloha Ubud Swing Entrance Package",
+    times: ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00", "15:00"],
+    adultPrice: ALOHA_ENTRANCE_PACKAGE_IDR,
+    kidPrice: null,
+    minPax: 1,
+    pricingActivityId: "aloha-ubud-swing-entrance",
+    requiredShuttle: true,
+    freeUbudPickup: false,
+    optionalAddonsIntro: ALOHA_ENTRANCE_ADDONS_INTRO,
+    optionalAddons: [
+      ALOHA_ADDONS.dress,
+      ALOHA_ADDONS.ownDress,
+      ALOHA_ADDONS.photographer,
+      ALOHA_ADDONS.outsidePhotographer,
+    ],
   },
   {
     id: "cycling",

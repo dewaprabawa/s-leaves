@@ -51,20 +51,30 @@ export default function TourPhotoGrid({ photos }: TourPhotoGridProps) {
 
   return (
     <>
-      <div className="grid grid-cols-4 gap-2 sm:gap-3">
+      <div
+        className={
+          count > 4
+            ? "flex gap-2 overflow-x-auto pb-1 sm:grid sm:grid-cols-4 sm:overflow-visible lg:grid-cols-7 sm:gap-2.5"
+            : "grid grid-cols-4 gap-2 sm:gap-3"
+        }
+      >
         {photos.map((photo, idx) => (
           <button
             key={photo.url}
             type="button"
             onClick={() => setOpenIndex(idx)}
-            className="group relative aspect-square w-full overflow-hidden rounded-xl border border-brand-green/10 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold"
+            className={
+              count > 4
+                ? "group relative aspect-square w-[4.5rem] shrink-0 overflow-hidden rounded-xl border border-brand-green/10 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold sm:w-full"
+                : "group relative aspect-square w-full overflow-hidden rounded-xl border border-brand-green/10 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold"
+            }
             aria-label={`View larger photo: ${photo.alt}`}
           >
             <Image
               src={photo.url}
               alt={photo.alt}
               fill
-              sizes="(max-width: 1024px) 25vw, 200px"
+              sizes={count > 4 ? "(max-width: 640px) 72px, (max-width: 1024px) 25vw, 120px" : "(max-width: 1024px) 25vw, 200px"}
               className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
           </button>

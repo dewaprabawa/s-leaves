@@ -27,6 +27,8 @@ const ACTIVITY_GUIDES = [
   { label: 'Tubing', href: '/tours/canyon-tubing' },
   { label: 'Tubing price 2026', href: '/blog/wos-river-tubing-price-2026' },
   { label: 'Swing Heaven', href: '/tours/swing-heaven-bali' },
+  { label: 'Aloha Ubud Swing', href: '/tours/aloha-ubud-swing' },
+  { label: 'Aloha vs Swing Heaven', href: '/blog/aloha-ubud-swing-vs-swing-heaven-2026' },
   { label: 'Swing vs Tegallalang', href: '/blog/swing-heaven-vs-tegallalang-bali-swing' },
   { label: 'Griya Beji Waterfall', href: '/tours/griya-beji-waterfall' },
   { label: 'Griya vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
@@ -42,7 +44,7 @@ const ACTIVITY_GUIDES = [
 
 export const metadata: Metadata = {
   title: 'Blog & Travel Guide',
-  description: 'Ubud activity guides with 2026 IDR: private Mount Batur jeep, Tumang cooking class, Pejeng cycling, ATV, Ayung rafting, Swing Heaven, Griya Beji, private family and girls-trip itineraries, and pickup rules — WhatsApp booking.',
+  description: 'Ubud activity guides with 2026 IDR: private Mount Batur jeep, Tumang cooking class, Pejeng cycling, ATV, Ayung rafting, Swing Heaven, Aloha Ubud Swing, Griya Beji, private family and girls-trip itineraries, and pickup rules — WhatsApp booking.',
   alternates: { canonical: '/blog' },
 }
 

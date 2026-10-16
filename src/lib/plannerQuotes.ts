@@ -26,6 +26,7 @@ import {
   JEEP_TRACKING_GROUP_IDR,
   JEEP_TRACKING_PAIR_TOTAL_IDR,
   PICKUP_FEE_IDR,
+  PICKUP_FEE_SOUTH_IDR,
   TIER_PRICES_IDR,
   getUnitPrice,
 } from '@/lib/pricing'
@@ -253,7 +254,7 @@ export function checkPickupRule(input: {
     feeIdr: PICKUP_FEE_IDR,
     headline: `Hotel pickup is ${formatPlannerIdr(PICKUP_FEE_IDR)} or free self-meet`,
     detail:
-      'This is the optional adventure surcharge for ATV, rafting, canyon tubing, and Griya Beji. It is not free Ubud cycling/cooking pickup, not the included Swing Heaven driver, and not island-wide jeep pickup.',
+      'This is the optional adventure surcharge for ATV, rafting, canyon tubing, and Griya Beji. It is not free Ubud cycling/cooking pickup, not the required Swing Heaven / Aloha shuttle, and not island-wide jeep pickup.',
   }
 
   switch (input.activity) {
@@ -278,17 +279,38 @@ export function checkPickupRule(input: {
         tourLabel: 'Tubing money page',
         whatsappActivity: 'Canyon tubing — confirm pickup or self-meet',
       }
-    case 'swing':
+    case 'swing': {
+      const swingFee =
+        input.area === 'ubud' ? PICKUP_FEE_IDR : PICKUP_FEE_SOUTH_IDR
       return {
-        included: true,
-        feeIdr: null,
-        headline: 'Hotel driver is included and required',
+        included: false,
+        feeIdr: swingFee,
+        headline: `Required shuttle ${formatPlannerIdr(swingFee)} — no self-meet`,
         detail:
-          'Swing Heaven tickets include hotel pickup and drop-off. Self-meet at Bongkasa is not offered. Share the hotel pin on WhatsApp. This is not the IDR 400,000 ATV/rafting surcharge.',
+          input.area === 'ubud'
+            ? 'Swing Heaven requires private shuttle from Ubud at IDR 400,000 once. Self-meet at Bongkasa is not offered.'
+            : 'Swing Heaven requires private shuttle from the south coast at IDR 650,000 once. Self-meet at Bongkasa is not offered.',
         tourHref: '/tours/swing-heaven-bali',
         tourLabel: 'Swing Heaven money page',
-        whatsappActivity: 'Swing Heaven — hotel driver included, send hotel pin',
+        whatsappActivity: 'Swing Heaven — required shuttle, send hotel pin',
       }
+    }
+    case 'aloha-swing': {
+      const alohaFee =
+        input.area === 'ubud' ? PICKUP_FEE_IDR : PICKUP_FEE_SOUTH_IDR
+      return {
+        included: false,
+        feeIdr: alohaFee,
+        headline: `Required shuttle ${formatPlannerIdr(alohaFee)} — no self-meet`,
+        detail:
+          input.area === 'ubud'
+            ? 'Aloha Ubud Swing requires private shuttle from Ubud at IDR 400,000 once. Self-meet at Tegallalang is not offered.'
+            : 'Aloha Ubud Swing requires private shuttle from the south coast at IDR 650,000 once. Self-meet at Tegallalang is not offered.',
+        tourHref: '/tours/aloha-ubud-swing',
+        tourLabel: 'Aloha Ubud Swing money page',
+        whatsappActivity: 'Aloha Ubud Swing — required shuttle, send hotel pin',
+      }
+    }
     case 'griya-beji':
       return {
         ...surcharge,
@@ -529,8 +551,8 @@ export function chooseActivity(mood: ActivityMoodId): ActivityChoice {
         moodLabel,
         title: 'Swing Heaven Bali',
         fromPrice: TIER_PRICES_IDR['swing-heaven'][0],
-        pickup: 'Hotel driver included — required, no self-meet',
-        why: 'Jungle swings in Bongkasa from IDR 530,000, or IDR 630,000 with lunch. Driver included. Not Tegallalang / Happy Swing.',
+        pickup: 'Required shuttle IDR 400,000 Ubud / 650,000 south — no self-meet',
+        why: 'Jungle swings in Bongkasa from IDR 530,000, or IDR 630,000 with lunch. Required shuttle. Not Aloha Tegallalang / Happy Swing.',
         tourHref: '/tours/swing-heaven-bali',
         blogHref: '/blog/swing-heaven-bali-ubud-guide',
         blogLabel: 'Swing Heaven guide',

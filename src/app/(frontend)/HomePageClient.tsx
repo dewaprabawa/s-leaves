@@ -228,8 +228,15 @@ const pricingData: PricingRow[] = [
   {
     activity: "Swing Heaven Bali",
     adventureId: "swing-heaven",
-    pax: `${formatTierPriceTable("swing-heaven")} · Lunch package IDR 630,000 · Dress hire extra · driver included`,
+    pax: `${formatTierPriceTable("swing-heaven")} · Lunch package IDR 630,000 · Dress hire extra · required shuttle 400K/650K`,
     price: getListPrice("swing-heaven"),
+    highlight: false,
+  },
+  {
+    activity: "Aloha Ubud Swing",
+    adventureId: "aloha-ubud-swing",
+    pax: `${formatTierPriceTable("aloha-ubud-swing")} · Entrance IDR 50,000 · Dress & photographer extra · required shuttle 400K/650K`,
+    price: getListPrice("aloha-ubud-swing"),
     highlight: false,
   },
 ]
@@ -269,6 +276,16 @@ const travelGuides = [
     title: "Swing Heaven + Cooking Class in Ubud",
     excerpt: "Morning Bongkasa jungle swing from IDR 530K, afternoon Tumang kitchen 450K. Not Happy Swing.",
     href: "/blog/swing-heaven-cooking-class-ubud",
+  },
+  {
+    title: "Aloha Ubud Swing Price 2026",
+    excerpt: "Tegallalang Active Package IDR 400K, Entrance 50K, required shuttle 400K/650K. Not Swing Heaven.",
+    href: "/blog/aloha-ubud-swing-price-2026",
+  },
+  {
+    title: "Aloha vs Swing Heaven 2026",
+    excerpt: "Tegallalang 400K vs Bongkasa from 530K — which park to book.",
+    href: "/blog/aloha-ubud-swing-vs-swing-heaven-2026",
   },
   {
     title: "Inside Tumang Bali Cooking Class",

@@ -13,6 +13,8 @@ export type MixableActivityId = Exclude<
   | 'kintamani-day'
   | 'swing-heaven'
   | 'swing-heaven-lunch'
+  | 'aloha-ubud-swing'
+  | 'aloha-ubud-swing-entrance'
   | 'jeep-tracking'
 >
 
@@ -27,6 +29,8 @@ export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   'kintamani-day': 'Private Kintamani Day',
   'swing-heaven': 'Swing Heaven',
   'swing-heaven-lunch': 'Swing Heaven + Lunch',
+  'aloha-ubud-swing': 'Aloha Ubud Swing Active Package',
+  'aloha-ubud-swing-entrance': 'Aloha Ubud Swing Entrance',
 }
 
 /** Compatible add-ons for each primary activity (excluding cycling) */

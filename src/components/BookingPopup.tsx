@@ -44,6 +44,13 @@ import {
   SWING_HEAVEN_SHUTTLE_NOTICE_SHORT,
   swingHeavenShuttleLabel,
 } from '@/data/swingHeaven';
+import {
+  alohaShuttleLabel,
+  ALOHA_SHUTTLE_MUST_LABEL,
+  ALOHA_SHUTTLE_MUST_SUBLINE,
+  ALOHA_SHUTTLE_NOTICE,
+  isAlohaUbudSwingBookingId,
+} from '@/data/alohaUbudSwing';
 
 const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: () => <div className="w-full h-full bg-sand-dark animate-pulse flex items-center justify-center text-brand-green">Loading map...</div> });
 
@@ -351,6 +358,10 @@ export function BookingPopup({
   const isSwingHeaven =
     isSwingHeavenBookingId(activeTour.id) ||
     isSwingHeavenBookingId(activeTour.pricingActivityId);
+  const isAlohaSwing =
+    isAlohaUbudSwingBookingId(activeTour.id) ||
+    isAlohaUbudSwingBookingId(activeTour.pricingActivityId);
+  const isZonedRequiredShuttle = isSwingHeaven || isAlohaSwing;
   const pickupNotOffered = activeTour.pickupNotOffered === true;
   const meetsAtArena = activeTour.meetsAtArena === true;
   const selfMeet = activeTour.selfMeet
@@ -370,11 +381,11 @@ export function BookingPopup({
       ? selfMeet.mapUrl
       : undefined
   const hasFixedMeet = Boolean(meetLabel)
-  // Required shuttle always quotes as wantsPickup. Swing Heaven is never free-Ubud.
+  // Required shuttle always quotes as wantsPickup. Zoned parks (Swing Heaven / Aloha) are never free-Ubud.
   const effectiveWantsPickup = requiredShuttle || wantsPickup
   const pickupQuote = quotePickup({
     wantsPickup: effectiveWantsPickup,
-    freeUbudPickup: isSwingHeaven
+    freeUbudPickup: isZonedRequiredShuttle
       ? false
       : hasFreeUbudPickup || pickupIncluded,
     isOutUbud: pickupIncluded ? false : isOutUbud,
@@ -382,6 +393,8 @@ export function BookingPopup({
   });
   const requiredShuttleLabel = isSwingHeaven
     ? swingHeavenShuttleLabel(isOutUbud, pickupQuote.total)
+    : isAlohaSwing
+      ? alohaShuttleLabel(isOutUbud, pickupQuote.total)
     : requiredShuttle
       ? pickupQuote.total > 0
         ? 'Required shuttle'
@@ -499,6 +512,7 @@ export function BookingPopup({
         }`,
       );
       if (isSwingHeaven) pickupNoteParts.push(SWING_HEAVEN_SHUTTLE_NOTICE);
+      if (isAlohaSwing) pickupNoteParts.push(ALOHA_SHUTTLE_NOTICE);
     } else if (!effectiveWantsPickup) {
       pickupNoteParts.push(
         meetLabel
@@ -1060,15 +1074,22 @@ export function BookingPopup({
                   Must include
                 </span>
                 <span className="font-black uppercase tracking-wide text-brand-green text-xl block mt-1">
-                  {isSwingHeaven ? SWING_HEAVEN_SHUTTLE_MUST_LABEL : SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}
+                  {isSwingHeaven
+                    ? SWING_HEAVEN_SHUTTLE_MUST_LABEL
+                    : isAlohaSwing
+                      ? ALOHA_SHUTTLE_MUST_LABEL
+                      : SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}
                 </span>
                 <span className="text-brand-green font-semibold block mt-1">
                   {isSwingHeaven
                     ? SWING_HEAVEN_SHUTTLE_MUST_SUBLINE
-                    : SWING_HEAVEN_SHUTTLE_NOTICE}
+                    : isAlohaSwing
+                      ? ALOHA_SHUTTLE_MUST_SUBLINE
+                      : SWING_HEAVEN_SHUTTLE_NOTICE}
                 </span>
                 <span className="text-brand-green-light block mt-1 mb-2">
-                  {SWING_HEAVEN_SHUTTLE_NOTICE} Move the map pin — the shuttle line updates automatically.
+                  {isAlohaSwing ? ALOHA_SHUTTLE_NOTICE : SWING_HEAVEN_SHUTTLE_NOTICE} Move the map
+                  pin — the shuttle line updates automatically.
                 </span>
                 <span className={`font-bold block ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>
                   {requiredShuttleLabel}: {pickupFee > 0 ? formatIdr(pickupFee) : 'IDR 0'}

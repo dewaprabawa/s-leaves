@@ -14,6 +14,8 @@ export type ActivityId =
   | 'kintamani-day'
   | 'swing-heaven'
   | 'swing-heaven-lunch'
+  | 'aloha-ubud-swing'
+  | 'aloha-ubud-swing-entrance'
 
 /** Sit-in private jeep — published 2-guest package total (min 2). */
 export const JEEP_SITIN_PAIR_TOTAL_IDR = 2_300_000
@@ -40,6 +42,8 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
   'kintamani-day': 1_000_000, // private jeep/trek + hot spring + Umah Kuno + rice terrace
   'swing-heaven': 350_000, // per person (internal floor — Swing Heaven Bongkasa ticket)
   'swing-heaven-lunch': 400_000, // per person (internal floor — package + lunch)
+  'aloha-ubud-swing': 250_000, // per person (internal floor — Aloha Active Package 1)
+  'aloha-ubud-swing-entrance': 30_000, // per person (internal floor — entrance / chicken nest only)
 }
 
 /** Tier 1 = 1 unit/pax, tier 2 = 2, tier 3 = 3+ */
@@ -56,6 +60,8 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'kintamani-day': [1_450_000, 1_300_000, 1_300_000],
   'swing-heaven': [530_000, 530_000, 530_000],
   'swing-heaven-lunch': [630_000, 630_000, 630_000],
+  'aloha-ubud-swing': [400_000, 400_000, 400_000],
+  'aloha-ubud-swing-entrance': [50_000, 50_000, 50_000],
 }
 
 /** Published compare-at list for Pejeng cycling (was / strikethrough). Bookable promo is TIER_PRICES_IDR.cycling. */
@@ -317,10 +323,16 @@ export function formatTierPriceTable(activityId: ActivityId): string {
     return `Private · min 2 · 2+ ${unit}: IDR ${(t2 / 1000).toFixed(0)}k promo (was IDR ${(t1 / 1000).toFixed(0)}k)`
   }
   if (activityId === 'swing-heaven') {
-    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · swings, photo spots, insurance, tea/coffee/water · required shuttle (free Ubud / 400K outside)`
+    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · swings, photo spots, insurance, tea/coffee/water · required shuttle 400K Ubud / 650K south`
   }
   if (activityId === 'swing-heaven-lunch') {
     return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · same package + lunch · required shuttle`
+  }
+  if (activityId === 'aloha-ubud-swing') {
+    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · Active Package 1 (8 activities once each) · required shuttle 400K Ubud / 650K south`
+  }
+  if (activityId === 'aloha-ubud-swing-entrance') {
+    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · Entrance Package (1 Cute Chicken Nest) · required shuttle`
   }
   if (activityId === 'cycling') {
     return `Promo IDR ${(CYCLING_PROMO_IDR / 1000).toFixed(0)}k (was ${(CYCLING_LIST_IDR / 1000).toFixed(0)}k) · 2 ${unit}: IDR ${(t2 / 1000).toFixed(0)}k · 3+ ${unit}: IDR ${(t3 / 1000).toFixed(0)}k · lunch + free Ubud pickup`

@@ -32,6 +32,7 @@ export type ActivityKeywordSlug =
   | 'balinese-cooking-class'
   | 'batur-sunrise-jeep-tour'
   | 'swing-heaven-bali'
+  | 'aloha-ubud-swing'
   | 'griya-beji-waterfall'
   | 'bali-private-itinerary'
   | 'bali-motorbike-traveling-trip'
@@ -410,6 +411,31 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'Swing Heaven vs Tegallalang',
       'Swing Heaven Bongkasa location',
       'Swing Heaven vs Happy Swing',
+      'Swing Heaven vs Aloha Ubud Swing',
+    ],
+  },
+  'aloha-ubud-swing': {
+    head: [
+      'Aloha Ubud Swing',
+      'Aloha Swing Tegallalang',
+      'Bali swing Tegallalang',
+      'Ubud swing Tegallalang',
+      'Aloha Ubud Swing price',
+    ],
+    book: [
+      'Aloha Ubud Swing Active Package',
+      'Aloha Swing price 2026',
+      'Tegallalang swing package',
+      'Aloha Ubud Swing dress hire',
+      'Aloha Ubud Swing photographer',
+      'Bali swing with shuttle Ubud',
+      'Aloha chicken nest Tegallalang',
+      'Aloha bird nest Ubud',
+    ],
+    compare: [
+      'Aloha Ubud Swing vs Swing Heaven',
+      'Aloha Swing Tegallalang location',
+      'Tegallalang swing vs Bongkasa',
     ],
   },
   'griya-beji-waterfall': {
@@ -525,6 +551,7 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'balinese-cooking-class': flattenCluster(KEYWORD_CLUSTERS['balinese-cooking-class']),
   'batur-sunrise-jeep-tour': flattenCluster(KEYWORD_CLUSTERS['batur-sunrise-jeep-tour']),
   'swing-heaven-bali': flattenCluster(KEYWORD_CLUSTERS['swing-heaven-bali']),
+  'aloha-ubud-swing': flattenCluster(KEYWORD_CLUSTERS['aloha-ubud-swing']),
   'griya-beji-waterfall': flattenCluster(KEYWORD_CLUSTERS['griya-beji-waterfall']),
   'bali-private-itinerary': flattenCluster(KEYWORD_CLUSTERS['bali-private-itinerary']),
   'bali-motorbike-traveling-trip': flattenCluster(KEYWORD_CLUSTERS['bali-motorbike-traveling-trip']),
@@ -586,6 +613,7 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
   'tirta-empu-purification',
   'griya-beji-waterfall',
   'swing-heaven-bali',
+  'aloha-ubud-swing',
   'luwak-coffee-plantation',
   'full-day-ubud-tour',
   'half-day-ubud-tanah-lot-tour',
@@ -898,10 +926,13 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'swing-heaven-bird-nest-bali-2026': 'swing-heaven-bali',
   'swing-heaven-atv-combo-ubud-2026': ['swing-heaven-bali', 'bali-atv-adventure'],
   'is-bali-swing-worth-it': 'swing-heaven-bali',
-  'swing-heaven-vs-tegallalang-bali-swing': 'swing-heaven-bali',
+  'swing-heaven-vs-tegallalang-bali-swing': ['swing-heaven-bali', 'aloha-ubud-swing'],
   'swing-heaven-bongkasa-location': 'swing-heaven-bali',
   'flying-dress-hire-bali-swing': 'swing-heaven-bali',
   'bali-swing-with-lunch-ubud': 'swing-heaven-bali',
+  'aloha-ubud-swing-price-2026': 'aloha-ubud-swing',
+  'aloha-ubud-swing-tegallalang-guide-2026': 'aloha-ubud-swing',
+  'aloha-ubud-swing-vs-swing-heaven-2026': ['aloha-ubud-swing', 'swing-heaven-bali'],
   'griya-beji-waterfall-ubud-guide': 'griya-beji-waterfall',
   'griya-beji-vs-tirta-empul-melukat': ['griya-beji-waterfall', 'tirta-empu-purification'],
   'palm-reading-bali-griya-beji': 'griya-beji-waterfall',
@@ -937,6 +968,22 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'private shuttle ATV rafting Ubud',
     'driver waits during rafting Bali',
     'Ubud activity transport Grab or private driver',
+  ],
+  'aloha-ubud-swing-price-2026': [
+    'Aloha Ubud Swing price 2026',
+    'Aloha Active Package 400000',
+    'Aloha Entrance Package 50000',
+    'Tegallalang swing price Ubud',
+  ],
+  'aloha-ubud-swing-tegallalang-guide-2026': [
+    'Aloha Ubud Swing location',
+    'Jl Raya Tegallalang swing',
+    'Aloha Swing hours',
+  ],
+  'aloha-ubud-swing-vs-swing-heaven-2026': [
+    'Aloha vs Swing Heaven',
+    'Tegallalang swing vs Bongkasa',
+    'which Bali swing park',
   ],
   'atv-package-private-transfer-bali-2026': [
     'ATV Bali from Seminyak private transfer',

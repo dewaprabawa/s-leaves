@@ -167,6 +167,7 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
     "jeep-kintamani-day-tracking",
   ],
   "swing-heaven-bali": ["swing-heaven", "swing-heaven-lunch"],
+  "aloha-ubud-swing": ["aloha-ubud-swing", "aloha-ubud-swing-entrance"],
   "griya-beji-waterfall": [
     "griya-beji-purification",
     "griya-beji-palm-reading",
@@ -180,6 +181,8 @@ function primaryBookLabel(tourSlug: string): string {
       return "Book Private Jeep"
     case "balinese-cooking-class":
       return "Book Cooking Class"
+    case "aloha-ubud-swing":
+      return "Book Aloha Swing"
     case "bali-atv-adventure":
       return "Book ATV Ride"
     case "atv-rafting-combo":
@@ -557,6 +560,19 @@ export default function TourBookingCard(props: TourBookingCardProps) {
                 Lunch package {formatIdr(getListPrice("swing-heaven-lunch"))} · dress hire extra
               </p>
               <SwingHeavenShuttleMustLabel compact className="mt-3" />
+            </>
+          ) : null}
+          {props.tourSlug === "aloha-ubud-swing" ? (
+            <>
+              <p className="text-sm text-brand-green-light mt-1">
+                Entrance package {formatIdr(getListPrice("aloha-ubud-swing-entrance"))} · dress &
+                photographer extra
+              </p>
+              <SwingHeavenShuttleMustLabel
+                compact
+                className="mt-3"
+                variant="aloha-ubud-swing"
+              />
             </>
           ) : null}
           {props.tourSlug === "griya-beji-waterfall" ? (

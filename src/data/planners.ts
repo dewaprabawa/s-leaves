@@ -307,6 +307,7 @@ export type PickupActivityId =
   | 'rafting'
   | 'tubing'
   | 'swing'
+  | 'aloha-swing'
   | 'griya-beji'
   | 'cycling'
   | 'cooking'
@@ -329,6 +330,7 @@ export const PICKUP_ACTIVITIES: Array<{
   { id: 'rafting', label: 'Ayung rafting', href: '/tours/whitewater-rafting' },
   { id: 'tubing', label: 'Canyon tubing', href: '/tours/canyon-tubing' },
   { id: 'swing', label: 'Swing Heaven', href: '/tours/swing-heaven-bali' },
+  { id: 'aloha-swing', label: 'Aloha Ubud Swing', href: '/tours/aloha-ubud-swing' },
   { id: 'griya-beji', label: 'Griya Beji Waterfall', href: '/tours/griya-beji-waterfall' },
   { id: 'cycling', label: 'Pejeng cycling', href: '/tours/ubud-ricefield-cycling-tour' },
   { id: 'cooking', label: 'Tumang cooking class', href: '/tours/balinese-cooking-class' },

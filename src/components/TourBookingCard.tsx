@@ -26,7 +26,12 @@ import {
   GUIDE_LANGUAGES,
   GUIDE_MEET_COPY,
   GUIDE_ONLY_HOURS,
+  GUIDE_OUTSIDE_DRIVER_IDR,
   GUIDE_SHUTTLE_ADDON,
+  GUIDE_UBUD_WITH_DRIVER_IDR,
+  GUIDE_WITH_DRIVER_MEET_COPY,
+  guideRequiredDriverFees,
+  guideRequiresDriver,
   LICENSED_GUIDE_PRICES_IDR,
   LICENSED_GUIDE_SLUG,
 } from "@/data/licensedGuide"
@@ -244,19 +249,29 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   }
 
   if (props.tourSlug === LICENSED_GUIDE_SLUG) {
-    return GUIDE_LANGUAGES.map((lang) => ({
-      id: `${props.tourId}-${lang.key}`,
-      title: `Licensed guide — ${lang.name} (${GUIDE_ONLY_HOURS} hours)`,
-      times: DEFAULT_TIMES,
-      adultPrice: LICENSED_GUIDE_PRICES_IDR[lang.key],
-      kidPrice: null,
-      minPax: 1,
-      perBooking: true,
-      pickupIncluded: true,
-      includedMeetCopy: GUIDE_MEET_COPY,
-      optionalAddons: [GUIDE_SHUTTLE_ADDON, GUIDE_EXTRA_HOUR_ADDON],
-      optionalAddonsIntro: GUIDE_EXTRA_HOURS_INTRO,
-    }))
+    return GUIDE_LANGUAGES.map((lang) => {
+      const driverFees = guideRequiredDriverFees(lang.key)
+      const withDriver = guideRequiresDriver(lang.key)
+      return {
+        id: `${props.tourId}-${lang.key}`,
+        title: withDriver
+          ? `Licensed guide — ${lang.name} + private driver (${GUIDE_ONLY_HOURS} hours)`
+          : `Licensed guide — ${lang.name} (${GUIDE_ONLY_HOURS} hours)`,
+        times: DEFAULT_TIMES,
+        adultPrice: LICENSED_GUIDE_PRICES_IDR[lang.key],
+        kidPrice: null,
+        minPax: 1,
+        perBooking: true,
+        pickupIncluded: !withDriver,
+        requiredShuttle: withDriver,
+        requiredDriverFeesIdr: driverFees ?? undefined,
+        includedMeetCopy: withDriver ? GUIDE_WITH_DRIVER_MEET_COPY : GUIDE_MEET_COPY,
+        optionalAddons: withDriver
+          ? [GUIDE_EXTRA_HOUR_ADDON]
+          : [GUIDE_SHUTTLE_ADDON, GUIDE_EXTRA_HOUR_ADDON],
+        optionalAddonsIntro: GUIDE_EXTRA_HOURS_INTRO,
+      }
+    })
   }
 
   const isPrivateDayTour =
@@ -511,9 +526,10 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           ) : null}
           {isGuideOnly ? (
             <p className="text-sm text-brand-green-light mt-1">
-              {GUIDE_LANGUAGES.map((lang) => `${lang.name} ${formatIdr(LICENSED_GUIDE_PRICES_IDR[lang.key])}`).join(" · ")}{" "}
-              per booking for {GUIDE_ONLY_HOURS} hours — not per person. Extra hour {formatIdr(GUIDE_EXTRA_HOUR_IDR)}.
-              Guide only, or add a separate private shuttle (quoted on WhatsApp).
+              English {formatIdr(LICENSED_GUIDE_PRICES_IDR.english)} guide only · Japanese / French{" "}
+              {formatIdr(GUIDE_UBUD_WITH_DRIVER_IDR)} with private driver in Ubud (outside: guide +{" "}
+              {formatIdr(GUIDE_OUTSIDE_DRIVER_IDR)}). Per booking for {GUIDE_ONLY_HOURS} hours — not per
+              person. Extra hour {formatIdr(GUIDE_EXTRA_HOUR_IDR)}.
             </p>
           ) : null}
           {props.tourSlug === "bali-atv-adventure" ? (

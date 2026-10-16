@@ -1222,7 +1222,11 @@ export default async function TourPage({ params }: Props) {
           <div className="space-y-10 md:space-y-12">
             <header className="space-y-6">
               <div className="space-y-2 sm:space-y-3">
-                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-3xl shadow-xl">
+                <div
+                  className={`relative w-full overflow-hidden rounded-3xl shadow-xl ${
+                    tour.heroThumbnails?.length ? "aspect-[16/10] sm:aspect-[16/9]" : "aspect-[16/9]"
+                  }`}
+                >
                   <Image
                     src={tour.heroImage.url}
                     alt={tour.heroImage.alt}

@@ -1,6 +1,236 @@
 /** Swing Heaven cluster spokes — location, vs Tegallalang, lunch, flying dress. */
 
 export const SWING_CLUSTER_POSTS = [
+
+  {
+    slug: 'swing-heaven-package-price-2026',
+    title: 'Swing Heaven Bali Price 2026: Package, Lunch, Dress, Koi Pond & Shuttle',
+    seoTitle: 'Swing Heaven Price 2026 | 530K · Lunch 630K',
+    excerpt:
+      'Swing Heaven Bali 2026 prices: package IDR 530,000, lunch 630,000, flying dress 300,000, koi pond boat 300,000, required shuttle 400,000 from Ubud or 650,000 from the south coast. All options on one page.',
+    publishedAt: '2026-10-16',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/swing-heaven-bird-nest-reflection.jpg',
+    content: `
+**How much is Swing Heaven Bali in 2026?** Sekar Bali Activity books the Bongkasa jungle swing park from **IDR 530,000** per person (swings, 14 photo spots, insurance, tea/coffee/water) or **IDR 630,000** with lunch. Optional **flying dress hire IDR 300,000** and **koi pond boat photo IDR 300,000**. Required private shuttle **IDR 400,000 from Ubud** or **IDR 650,000 from the south coast** — once per booking, no self-meet. [Book Swing Heaven](/tours/swing-heaven-bali) — WhatsApp, **no payment to inquire**.
+
+> **Key Takeaways**
+> - **Package IDR 530,000** · **lunch package IDR 630,000**
+> - **Flying dress IDR 300,000** · **koi pond boat IDR 300,000** (optional)
+> - **Shuttle IDR 400,000 Ubud / 650,000 south coast** — required
+> - **14 spots** included on both packages — photos on your own phone
+> - Not Tegallalang · not Happy Swing
+
+## All options (2026 IDR)
+
+| Option | Price | What you get |
+| --- | --- | --- |
+| **Swing Heaven Package** | **530,000** / person | All listed swings & nests, insurance, tea/coffee/water |
+| **Package + lunch** | **630,000** / person | Same access + lunch at the park |
+| **Flying dress hire** | **300,000** / person | Optional flowing photo dress — confirm size/colour |
+| **Koi pond boat photo** | **300,000** / person | Ice tea + fruit platter · own phone · lobby availability |
+| **Private shuttle from Ubud** | **400,000** once | Required · hotel pickup & return · driver waits |
+| **Private shuttle from south coast** | **650,000** once | Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, Uluwatu |
+
+## Which package should you pick?
+
+| You want… | Book |
+| --- | --- |
+| Max photo time, eat later in Ubud | **530,000** package |
+| Stay at the park through lunch | **630,000** lunch package |
+| Nest / Stairs portraits | Add **flying dress** |
+| Extra still-life after the swings | Ask for **koi pond boat** (lobby may be full) |
+| Hotel collect | Tick shuttle — pin sets **400K or 650K** |
+
+Spot-by-spot: [Swing Heaven photo spots](/blog/swing-heaven-photo-spots-bali-2026). Bird nest detail: [bird nest at Swing Heaven](/blog/swing-heaven-bird-nest-bali-2026).
+
+## Worked totals (examples)
+
+| Guests | Ticket | Shuttle (Ubud) | Dress ×1 | Total |
+| --- | --- | --- | --- | --- |
+| 2 · package | 2 × 530,000 | 400,000 | — | **1,460,000** |
+| 2 · lunch + 1 dress | 2 × 630,000 | 400,000 | 300,000 | **1,960,000** |
+| 2 · package from Seminyak | 2 × 530,000 | 650,000 | — | **1,710,000** |
+
+## How to book
+
+1. Open [Swing Heaven Bali](/tours/swing-heaven-bali)
+2. WhatsApp **date, guests, lunch yes/no, dress yes/no, hotel pin**
+3. We confirm the shuttle zone and total — **no payment to inquire**
+
+**Ready?** [Book Swing Heaven](/tours/swing-heaven-bali) · [lunch vs no lunch](/blog/bali-swing-with-lunch-ubud) · [flying dress](/blog/flying-dress-hire-bali-swing).
+`,
+  },
+  {
+    slug: 'swing-heaven-photo-spots-bali-2026',
+    title: 'Swing Heaven Photo Spots 2026: All 14 Swings, Nests & Jungle Beds',
+    seoTitle: 'Swing Heaven Photo Spots | 14 Options 2026',
+    excerpt:
+      'Every Swing Heaven Bali photo spot in one guide: tandem bench, single and adrenaline swings, egg / heart / bird / onion nests, Stairs 2 Heaven, Titanic, jungle bed, and more — all included from IDR 530,000.',
+    publishedAt: '2026-10-16',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/swing-heaven-stairs.jpg',
+    content: `
+**What photo spots are included at Swing Heaven Bali?** The Bongkasa jungle park ticket covers **14 listed spots** over the Ayung River valley — swings, nests, beds, and Stairs 2 Heaven. Sekar Bali Activity books the park from **IDR 530,000** (or **IDR 630,000** with lunch). Photos are on **your own phone**. [Book Swing Heaven](/tours/swing-heaven-bali).
+
+> **Key Takeaways**
+> - **14 spots** on both the 530K and 630K packages
+> - Nests + Stairs are the classic flying-dress frames
+> - Adrenaline / jumping swings are for thrill, not still portraits
+> - Dress hire **IDR 300,000** optional · photographer **not** included
+> - Plan **1.5–2.5 hours** to rotate the list without rushing
+
+## The 14 spots (what to book them for)
+
+| Spot | Best for |
+| --- | --- |
+| **Tandem Bench Swing** | Couples side-by-side |
+| **Single Swings** | Solo Ayung-valley shots |
+| **Egg Nest** | Framed nest portraits |
+| **Adrenaline Swing** | High thrill rides |
+| **Libra Swings** | Balanced pair swings |
+| **Jumping Swing** | Launch / jump frames |
+| **Romantic Bed Swing** | Couples lying-out shots |
+| **Onion Nests** | Layered nest + dress |
+| **Jungle Bed** | Flat jungle backdrop |
+| **Titanic** | Arms-out “flying” pose |
+| **Stone** | Grounded stills |
+| **Heart Nests** | Heart-shaped nest photos |
+| **Bird Nests** | Circular nest + reflection pool looks |
+| **Stairs 2 Heaven** | Stair + dress drama |
+
+Bird nest close-up: [Swing Heaven bird nest](/blog/swing-heaven-bird-nest-bali-2026). Full price table: [Swing Heaven package price 2026](/blog/swing-heaven-package-price-2026).
+
+## Suggested order (photos first)
+
+1. **Nests + Stairs 2 Heaven** while you are fresh (and while the dress is clean)
+2. **Romantic bed / Titanic / hanging sofa** for group frames
+3. **Adrenaline / jumping / libra** last — harness thrills after the portraits
+
+## Add-ons that change the photos
+
+| Add-on | Price | Use it when… |
+| --- | --- | --- |
+| Flying dress | **300,000** | Nests, Stairs, jungle bed |
+| Koi pond boat | **300,000** | Extra still after the swing circuit (lobby availability) |
+| Lunch package | **+100,000** | You want to eat on site after the spots |
+
+## Honest limits
+
+- We do **not** invent a photographer package — shoot on your phone
+- Spots can queue late morning; **early slots** are quieter
+- Rain can pause high swings — venue weather rules apply ([refund / voucher notes](/blog/swing-heaven-bali-ubud-guide))
+
+**Ready?** [Book Swing Heaven](/tours/swing-heaven-bali) and tell WhatsApp if you want **dress**, **lunch**, or a **morning** pin.
+`,
+  },
+  {
+    slug: 'swing-heaven-bird-nest-bali-2026',
+    title: 'Swing Heaven Bird Nest Bali 2026: Photo Spot, Dress & Price',
+    seoTitle: 'Swing Heaven Bird Nest | Photo Spot 2026',
+    excerpt:
+      'The bird nest at Swing Heaven Bali is one of 14 included photo spots — circular nest over jungle and reflecting water. Package from IDR 530,000. Optional flying dress IDR 300,000. How to shoot it.',
+    publishedAt: '2026-10-16',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/swing-heaven-bird-nest-reflection.jpg',
+    content: `
+**What is the bird nest at Swing Heaven Bali?** It is a **circular woven nest** photo spot in the Bongkasa jungle park — one of the **14 spots included** in the Swing Heaven package from **IDR 530,000** (or **IDR 630,000** with lunch). Guests often pair it with a **flying dress (IDR 300,000)** for framed portraits over the foliage and reflecting pool. [Book Swing Heaven](/tours/swing-heaven-bali).
+
+> **Key Takeaways**
+> - **Included** in the jungle-swing ticket — not a separate nest fee
+> - Best with **flying dress** for colour against the green canopy
+> - Photos on **your phone** — no park photographer in the rate
+> - Same park as Heart / Onion nests and Stairs 2 Heaven
+> - Shuttle **IDR 400,000 Ubud / 650,000 south** required
+
+## Bird nest vs other nests
+
+| Spot | Look |
+| --- | --- |
+| **Bird Nest** | Round opening · often shot with water reflection |
+| **Heart Nest** | Heart-shaped frame |
+| **Onion Nest** | Layered / bulb shape |
+| **Egg Nest** | Oval nest frame |
+
+All four sit on the same ticket. Full list: [Swing Heaven photo spots](/blog/swing-heaven-photo-spots-bali-2026).
+
+## How to shoot it
+
+1. Book a **morning** slot for softer light and shorter queues
+2. Add **flying dress** if you want the long train in the circle
+3. Shoot wide for the nest + ferns, then a reflection shot if the pool is still
+4. Keep the adrenaline swings for **after** the dress portraits
+
+## Price reminder
+
+| Item | IDR |
+| --- | --- |
+| Package (includes bird nest) | **530,000** |
+| Package + lunch | **630,000** |
+| Flying dress | **300,000** |
+| Shuttle Ubud / south | **400,000 / 650,000** once |
+
+**Ready?** [Book Swing Heaven](/tours/swing-heaven-bali) — say **bird nest + dress** on WhatsApp if that is your priority frame.
+`,
+  },
+  {
+    slug: 'swing-heaven-atv-combo-ubud-2026',
+    title: 'Swing Heaven + ATV Combo near Ubud 2026: Same-District Day',
+    seoTitle: 'Swing Heaven + ATV Combo Ubud | Same Day',
+    excerpt:
+      'Pair Swing Heaven in Bongkasa with ATV at All New Bali Adventure in Sedang — same Abiansemal district. Swing from IDR 530,000, ATV from IDR 750,000. Shuttle rules for each. One WhatsApp thread.',
+    publishedAt: '2026-10-16',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/swing-heaven-ayung.jpg',
+    content: `
+**Can I do Swing Heaven and ATV the same day near Ubud?** Yes. Both sit in **Abiansemal**: [Swing Heaven](/tours/swing-heaven-bali) on **Jl. Tangga Yuda, Bongkasa**, and [ATV](/tours/bali-atv-adventure) at **All New Bali Adventure in Sedang**. Sekar Bali Activity books both on **one WhatsApp thread**. Swing from **IDR 530,000**; Single ATV from **IDR 750,000**.
+
+> **Key Takeaways**
+> - **Morning swing → afternoon ATV** (or reverse if you want mud first)
+> - Swing ticket **530,000 / 630,000 lunch** · ATV from **750,000** (lunch on the ATV ticket)
+> - **Two shuttle rules** — do not merge them
+> - Same district, short transfer between parks
+> - Not Happy Swing · not Tegallalang
+
+## 2026 from-prices
+
+| Piece | From (IDR) | Transport |
+| --- | --- | --- |
+| Swing Heaven Package | **530,000** | Required shuttle **400,000 Ubud / 650,000 south** |
+| Swing Heaven + lunch | **630,000** | Same shuttle |
+| Single ATV | **750,000** | Optional shuttle **400,000 Ubud / 650,000 south**, or self-meet free |
+| Tandem ATV | **1,100,000** | Same ATV shuttle rule |
+
+Example couple (2 × swing package + 2 × single ATV, one Ubud shuttle for swing, self-meet ATV): ask WhatsApp for a pinned total — IDs and pins change the shuttle line.
+
+## Suggested clock
+
+| Time | Plan |
+| --- | --- |
+| Morning | Swing Heaven nests + Stairs (dress optional) |
+| Midday | Light lunch — park lunch **or** save appetite for ATV lunch |
+| Afternoon | Sedang ATV 1.5-hour ride |
+
+If you add **park lunch (630K)** and **ATV lunch**, say so — two lunches is fine for some guests and too much for others.
+
+## Shuttle honesty
+
+- **Swing Heaven:** shuttle **required** (no self-meet)
+- **ATV:** shuttle **optional** — self-meet at Sedang is free
+- South-coast hotels pay **650,000** per required/optional shuttle booking when that pin applies
+
+Private shuttle detail: [shuttle vs Grab](/blog/private-shuttle-vs-grab-bali-activities-2026).
+
+## Other pairings
+
+| Pairing | Link |
+| --- | --- |
+| Swing + Tumang cooking | [Swing + cooking itinerary](/blog/swing-heaven-cooking-class-ubud) |
+| ATV + Ayung rafting | [ATV + rafting combo](/tours/atv-rafting-combo) |
+
+**Ready?** Message from [Swing Heaven](/tours/swing-heaven-bali) or [ATV](/tours/bali-atv-adventure) — first line **swing + ATV, date, hotel**.
+`,
+  },
   {
     slug: 'swing-heaven-cooking-class-ubud',
     title: 'Swing Heaven + Cooking Class in Ubud: Jungle Swing Then Tumang Kitchen',
@@ -17,7 +247,7 @@ export const SWING_CLUSTER_POSTS = [
 > - Morning: [Swing Heaven](/tours/swing-heaven-bali) **IDR 530,000** · **IDR 630,000** with lunch · Bongkasa / Ayung
 > - Afternoon: [Tumang cooking](/tours/balinese-cooking-class) promo **IDR 450,000** · max 8 · free Ubud pickup
 > - From-price if you add both published tickets: **IDR 980,000** per person (530K + 450K)
-> - Pickup stays honest: swing **hotel driver included** (required) · cooking **free Ubud**
+> - Pickup stays honest: swing **required shuttle 400K Ubud / 650K south** · cooking **free Ubud**
 > - We do **not** sell Happy Swing or a temple + swing aggregator day
 > - Book: [Swing + cooking combo](/book?activity=combo-swing-cooking)
 
@@ -34,8 +264,8 @@ If you want the holy-spring morning instead of the swing, book [Tirta Empu Purif
 
 | Piece | From (IDR) | Pickup | What you get |
 | --- | --- | --- | --- |
-| Swing Heaven Package | **530,000** | Hotel driver included (required) | 14 jungle spots, insurance, tea/coffee/water · own-phone photos |
-| Swing Heaven + lunch | **630,000** | Same | Same access + lunch at the park |
+| Swing Heaven Package | **530,000** | Required shuttle 400K Ubud / 650K south | 14 jungle spots, insurance, tea/coffee/water · own-phone photos |
+| Swing Heaven + lunch | **630,000** | Same shuttle | Same access + lunch at the park |
 | Flying dress hire | **300,000** | — | Optional wardrobe · not a photographer |
 | Tumang cooking (shared) | **450,000** promo | **Free Ubud** | 10+ dishes · max 8 · rice-field walk · AM market on morning sessions |
 | **Swing + cooking (no lunch SKU)** | **980,000** | Swing driver included · cooking free Ubud | Morning park + afternoon kitchen |
@@ -57,7 +287,7 @@ Afternoon Tumang is the right kitchen slot after a swing morning. Morning cookin
 
 ## Pickup honesty (do not merge the rules)
 
-- **Swing Heaven:** hotel driver **included and required** — no self-meet at Bongkasa and no IDR 400,000 add-on. Share the hotel pin on WhatsApp.
+- **Swing Heaven:** required private shuttle — **IDR 400,000 from Ubud** or **IDR 650,000 from the south coast** (no self-meet). Share the hotel pin on WhatsApp.
 - **Tumang cooking:** complimentary **Ubud-area** hotel pickup on the kitchen ticket.
 - We will not pretend the cooking transfer is the swing driver — Swing Heaven already includes its own hotel collect. Tell WhatsApp both venues so the driver plan is one thread.
 
@@ -222,7 +452,7 @@ Because Bongkasa and Sedang share the Abiansemal district, a common stack is **m
 | Swing Heaven park ticket | No — book the package separately |
 | Photographer / edited album | No |
 | Makeup or hair | No |
-| Hotel pickup | Yes — **included and required** (no self-meet) |
+| Hotel shuttle | Required — **IDR 400,000 Ubud / 650,000 south** (no self-meet) |
 
 Tell us **size and colour preference** when you book. The lobby stocks a set of flying dresses; we cannot promise a specific shade on a sold-out morning. If you already packed a long dress, save the 300K.
 
@@ -274,7 +504,7 @@ The **koi pond boat** (ice tea + fruit platter, photos on your phone) is also **
 | Tea / coffee / water | Yes | Yes |
 | Lunch | No | Yes |
 | Flying dress | Extra 300K | Extra 300K |
-| Hotel pickup | Included (required) | Included (required) |
+| Hotel shuttle | Required 400K / 650K | Required 400K / 650K |
 
 If you already have a restaurant plan in Ubud, or you are stacking [ATV](/tours/bali-atv-adventure) (lunch included on that ticket), the **530K** is the honest buy. If Swing Heaven is the only activity before a late dinner, the **630K** keeps you on site.
 

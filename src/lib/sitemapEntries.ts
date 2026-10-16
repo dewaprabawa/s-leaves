@@ -33,6 +33,10 @@ const MONEY_TOUR_SLUGS = new Set([
 ])
 
 const HIGH_BLOG_SLUGS = new Set([
+  'swing-heaven-package-price-2026',
+  'swing-heaven-photo-spots-bali-2026',
+  'swing-heaven-bird-nest-bali-2026',
+  'swing-heaven-atv-combo-ubud-2026',
   'private-shuttle-vs-grab-bali-activities-2026',
   'atv-premium-package-bali-2026',
   'group-atv-package-ubud-2026',

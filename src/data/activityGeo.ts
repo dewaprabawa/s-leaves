@@ -847,6 +847,21 @@ const SWING: ActivityGeoCorpus = {
       q: 'Can I book Swing Heaven and a cooking class the same day?',
       a: `Yes. Morning Swing Heaven in Bongkasa (from ${idr(SWING_1)}, lunch package ${idr(SWING_LUNCH)}, required shuttle IDR 400,000) then afternoon Tumang Bali Cooking Class (promo IDR 450,000, free Ubud pickup). Swing Heaven shuttle is required — no self-meet; cooking includes complimentary Ubud transfer. Itinerary: https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud`,
     },
+    {
+      intent: 'swing heaven photo spots included',
+      q: 'What photo spots are included at Swing Heaven Bali?',
+      a: 'The Swing Heaven package includes 14 listed spots — tandem bench, single swings, egg / heart / bird / onion nests, adrenaline / libra / jumping swings, romantic bed, jungle bed, Titanic, stone, and Stairs 2 Heaven. From IDR 530,000 (IDR 630,000 with lunch). Photos on your own phone. https://www.sekarbaliactivity.com/blog/swing-heaven-photo-spots-bali-2026',
+    },
+    {
+      intent: 'swing heaven bird nest price',
+      q: 'Is the bird nest at Swing Heaven an extra fee?',
+      a: 'No. The bird nest is one of the 14 included photo spots on the IDR 530,000 package (IDR 630,000 with lunch). Optional flying dress hire is IDR 300,000. https://www.sekarbaliactivity.com/blog/swing-heaven-bird-nest-bali-2026',
+    },
+    {
+      intent: 'swing heaven atv combo ubud',
+      q: 'Can I combine Swing Heaven with ATV the same day?',
+      a: 'Yes. Both are in Abiansemal — Swing Heaven in Bongkasa and ATV at All New Bali Adventure in Sedang. Swing from IDR 530,000; ATV from IDR 750,000. Swing shuttle is required (IDR 400,000 Ubud / 650,000 south); ATV shuttle is optional. https://www.sekarbaliactivity.com/blog/swing-heaven-atv-combo-ubud-2026',
+    },
     shuttleFaq('required'),
   ],
   citationSnippets: [
@@ -855,6 +870,8 @@ const SWING: ActivityGeoCorpus = {
     'Flying dress hire at Swing Heaven Bali is IDR 300,000 per person. Photos stay on your own phone. Details: https://www.sekarbaliactivity.com/blog/flying-dress-hire-bali-swing',
     'Swing Heaven vs Tegallalang: Bongkasa jungle over the Ayung River versus rice-terrace roadside parks north of Ubud. Sekar Bali Activity publishes only the Bongkasa ticket. Comparison: https://www.sekarbaliactivity.com/blog/swing-heaven-vs-tegallalang-bali-swing',
     'Swing Heaven is not Happy Swing. Sekar Bali Activity books the Bongkasa jungle park and can pair it with afternoon Tumang cooking on one WhatsApp thread. Itinerary: https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud',
+    'Swing Heaven’s 14 photo spots (nests, Stairs 2 Heaven, Titanic, and more) are included from IDR 530,000: https://www.sekarbaliactivity.com/blog/swing-heaven-photo-spots-bali-2026',
+    'Swing Heaven bird nest is included in the park ticket; flying dress hire is IDR 300,000 optional: https://www.sekarbaliactivity.com/blog/swing-heaven-bird-nest-bali-2026',
     shuttleCitation('Swing Heaven Bali', 'required'),
   ],
   keywords: ACTIVITY_KEYWORDS['swing-heaven-bali'],

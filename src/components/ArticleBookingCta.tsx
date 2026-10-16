@@ -382,7 +382,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'best-price-atv-rafting-cycling-scooter-ubud-2026': {
     headline: 'Lock the published best rate on WhatsApp',
-    body: 'ATV from 750K · rafting 500K (450K for 2+) · cycling promo 650K (was 750K) with free Ubud pickup · scooter promo 450K. No deposit to inquire.',
+    body: 'ATV from 750K · rafting 500K (450K for 2+) · cycling promo 550K (was 650K) with free Ubud pickup · scooter promo 450K. No deposit to inquire.',
     primaryHref: '/tours/bali-atv-adventure',
     primaryLabel: 'Book ATV',
     secondaryHref: '/tours/bali-motorbike-traveling-trip',
@@ -494,7 +494,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'is-ubud-cycling-tour-worth-it': {
     headline: 'Book Pejeng ricefield cycling',
-    body: 'Promo IDR 650,000 (was 750,000) · 2 hours · lunch · free Ubud pickup.',
+    body: 'Promo IDR 550,000 (was 650,000) · 2 hours · lunch · free Ubud pickup.',
     primaryHref: '/tours/ubud-ricefield-cycling-tour',
     primaryLabel: 'Book cycling',
     secondaryHref: '/book?activity=combo-cycling-cooking',
@@ -508,7 +508,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'cycling-cooking-class-ubud-full-day-itinerary': {
     headline: 'Book the cycling + cooking culture day',
-    body: 'Promo 650K cycling (was 750K) + cooking 450K = IDR 1,100,000 (was 1,200,000). One WhatsApp thread.',
+    body: 'Promo 550K cycling (was 650K) + cooking 450K = IDR 1,000,000. One WhatsApp thread.',
     primaryHref: '/book?activity=combo-cycling-cooking',
     primaryLabel: 'Book the combo',
     secondaryHref: '/tours/balinese-cooking-class',
@@ -610,7 +610,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'ebike-vs-pedal-ubud-cycling-tour': {
     headline: 'Book the pedal Pejeng ride (not an e-bike)',
-    body: 'Promo IDR 650,000 (was 750,000) · 2 hours · lunch · free Ubud pickup. Afternoon departure.',
+    body: 'Promo IDR 550,000 (was 650,000) · 2 hours · lunch · free Ubud pickup. Afternoon departure.',
     primaryHref: '/tours/ubud-ricefield-cycling-tour',
     primaryLabel: 'Book cycling',
     secondaryHref: '/book?activity=combo-cycling-cooking',
@@ -618,7 +618,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'what-to-wear-ubud-ricefield-cycling': {
     headline: 'Pack sneakers, then book the ride',
-    body: 'Closed shoes, sun shirt, helmet included. Promo IDR 650,000 (was 750,000) with lunch.',
+    body: 'Closed shoes, sun shirt, helmet included. Promo IDR 550,000 (was 650,000) with lunch.',
     primaryHref: '/tours/ubud-ricefield-cycling-tour',
     primaryLabel: 'Book cycling',
   },
@@ -832,7 +832,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'pejeng-rice-terrace-cycling-vs-tegallalang': {
     headline: 'Book the quiet Pejeng cycling route',
-    body: 'Promo IDR 650,000 (was 750,000) · lunch · free Ubud pickup. Not a Tegallalang queue.',
+    body: 'Promo IDR 550,000 (was 650,000) · lunch · free Ubud pickup. Not a Tegallalang queue.',
     primaryHref: '/tours/ubud-ricefield-cycling-tour',
     primaryLabel: 'Book cycling',
   },
@@ -914,7 +914,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'what-is-the-subak-system-bali': {
     headline: 'Ride Subak lanes on the Pejeng cycling tour',
-    body: 'Promo IDR 650,000 (was 750,000) · 2 hours · lunch · free Ubud pickup. Quiet village paths, not Tegallalang.',
+    body: 'Promo IDR 550,000 (was 650,000) · 2 hours · lunch · free Ubud pickup. Quiet village paths, not Tegallalang.',
     primaryHref: '/tours/ubud-ricefield-cycling-tour',
     primaryLabel: 'Book cycling',
     secondaryHref: '/tours/balinese-cooking-class',
@@ -922,7 +922,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'history-of-pejeng-bali-ancient-kingdom': {
     headline: 'Cycle the Pejeng kingdom paths',
-    body: 'Promo IDR 650,000 (was 750,000) · 2 hours · lunch · free Ubud pickup. Village lanes, not a Tegallalang queue.',
+    body: 'Promo IDR 550,000 (was 650,000) · 2 hours · lunch · free Ubud pickup. Village lanes, not a Tegallalang queue.',
     primaryHref: '/tours/ubud-ricefield-cycling-tour',
     primaryLabel: 'Book Pejeng cycling',
     secondaryHref: '/tours/balinese-cooking-class',
@@ -930,7 +930,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'ubud-travel-guide-escape-crowds-2026': {
     headline: 'Skip the centre — book a village day',
-    body: 'Pejeng cycling promo IDR 650,000 (was 750,000) with free Ubud pickup, or Tumang cooking promo IDR 450,000. One WhatsApp thread.',
+    body: 'Pejeng cycling promo IDR 550,000 (was 650,000) with free Ubud pickup, or Tumang cooking promo IDR 450,000. One WhatsApp thread.',
     primaryHref: '/tours/ubud-ricefield-cycling-tour',
     primaryLabel: 'Book cycling',
     secondaryHref: '/tours/balinese-cooking-class',

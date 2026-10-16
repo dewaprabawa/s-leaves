@@ -482,12 +482,12 @@ const CYCLING: ActivityGeoCorpus = {
     {
       intent: 'ubud cycling worth it',
       q: 'Is an Ubud cycling tour worth it?',
-      a: 'Yes for culture-focused travelers who want quiet Subak paths and a village house visit instead of Tegallalang bus crowds. The 2-hour Pejeng ride is promo IDR 650,000 (was 750,000) with lunch and free Ubud pickup. Thrill seekers may prefer ATV or rafting instead.',
+      a: 'Yes for culture-focused travelers who want quiet Subak paths and a village house visit instead of Tegallalang bus crowds. The 2-hour Pejeng ride is promo IDR 550,000 (was 650,000) with lunch and free Ubud pickup. Thrill seekers may prefer ATV or rafting instead.',
     },
     {
       intent: 'cycling cooking combo ubud',
       q: 'Can I pair cycling with a cooking class the same day?',
-      a: 'Yes. Book morning or midday Pejeng cycling (promo IDR 650,000, was 750,000, lunch included), then afternoon Tumang Bali Cooking Class (promo IDR 450,000, Ubud pickup). Combo from IDR 1,100,000. One WhatsApp thread can reserve both.',
+      a: 'Yes. Book morning or midday Pejeng cycling (promo IDR 550,000, was 650,000, lunch included), then afternoon Tumang Bali Cooking Class (promo IDR 450,000, Ubud pickup). Combo from IDR 1,000,000. One WhatsApp thread can reserve both.',
     },
     {
       intent: 'rice paddy cycling ubud',
@@ -1080,7 +1080,7 @@ const GIRLS_TRIP: ActivityGeoCorpus = {
     {
       intent: 'long private driver day ubud',
       q: 'What is a long private driver day near Ubud?',
-      a: `One English-speaking car for 10–14 hours from ${idr(GIRLS_TRIP_DRIVER_DAY_FROM_IDR)} (HiAce quoted for 6+), plus published activity tickets. Typical stacks: cycling + cooking (IDR 1,100,000 — cycling promo 650K + cooking 450K, both free Ubud pickup), Swing Heaven + cooking (IDR 980,000), or Griya Beji then Tumang. Consultation only — no all-in luxury package. Guide: https://www.sekarbaliactivity.com/blog/long-private-driver-day-ubud-2026`,
+      a: `One English-speaking car for 10–14 hours from ${idr(GIRLS_TRIP_DRIVER_DAY_FROM_IDR)} (HiAce quoted for 6+), plus published activity tickets. Typical stacks: cycling + cooking (IDR 1,000,000 — cycling promo 550K + cooking 450K, both free Ubud pickup), Swing Heaven + cooking (IDR 980,000), or Griya Beji then Tumang. Consultation only — no all-in luxury package. Guide: https://www.sekarbaliactivity.com/blog/long-private-driver-day-ubud-2026`,
     },
   ],
   citationSnippets: [

@@ -40,8 +40,8 @@ const adventureOffers: AdventureOffer[] = [
   {
     name: "Ubud Ricefield & Village Cycling Tour",
     description:
-      "Ubud rice paddy & countryside cycling through Pejeng — 2 hours, lunch included, free Ubud hotel pickup. Promo IDR 650K (was 750K).",
-    price: "650000",
+      "Ubud rice paddy & countryside cycling through Pejeng — 2 hours, lunch included, free Ubud hotel pickup. Promo IDR 550K (was 650K).",
+    price: "550000",
     originalPrice: "750000",
     image: "/images/adventures/cycling-pejeng-group.jpg",
   },

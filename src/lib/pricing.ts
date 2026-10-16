@@ -52,7 +52,7 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'tandem-atv': [1_100_000, 1_060_000, 1_030_000], // per tandem bike
   'rafting': [500_000, 450_000, 450_000],
   'canyon-tubing': [500_000, 450_000, 450_000],
-  'cycling': [650_000, 625_000, 600_000],
+  'cycling': [550_000, 525_000, 500_000],
   // Internal 1-pax cell is unused on the site (min 2). Public rate is the 2-pax package.
   'jeep-sunrise': [1_350_000, JEEP_SITIN_PAIR_TOTAL_IDR / 2, JEEP_SITIN_GROUP_IDR], // sit-in: IDR 2,300,000 for 2 · 2,850,000 for 3
   'jeep-tracking': [1_350_000, JEEP_TRACKING_PAIR_TOTAL_IDR / 2, JEEP_TRACKING_GROUP_IDR], // tracking: IDR 1,800,000 for 2
@@ -65,12 +65,12 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
 }
 
 /** Published compare-at list for Pejeng cycling (was / strikethrough). Bookable promo is TIER_PRICES_IDR.cycling. */
-export const CYCLING_LIST_IDR = 750_000
-export const CYCLING_PROMO_IDR = 650_000
+export const CYCLING_LIST_IDR = 650_000
+export const CYCLING_PROMO_IDR = 550_000
 export const CYCLING_PROMO_TIER_LABEL =
-  'Promo / person · 625K (2) · 600K (3+) · lunch + free Ubud pickup'
+  'Promo / person · 525K (2) · 500K (3+) · lunch + free Ubud pickup'
 
-/** Guest-facing cycling promo vs 750K list. Do not use getPromoListPrice vs getListPrice (that is 600 vs 650). */
+/** Guest-facing cycling promo vs 650K list. Do not use getPromoListPrice vs getListPrice (that is 500 vs 550). */
 export function getCyclingPromoDisplay() {
   return {
     promoPrice: CYCLING_PROMO_IDR,

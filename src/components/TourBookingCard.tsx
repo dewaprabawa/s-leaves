@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Car, Clock, ExternalLink, MapPin, MessageCircle } from "lucide-react"
 import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
-import InsuranceBadge, { isInsuredTour } from "@/components/InsuranceBadge"
 import { getTravelerRecommendPercent } from "@/data/tours"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
@@ -495,9 +494,6 @@ export default function TourBookingCard(props: TourBookingCardProps) {
             variant="inline"
             className="w-full justify-center"
           />
-        ) : null}
-        {isInsuredTour(props.tourSlug) ? (
-          <InsuranceBadge slug={props.tourSlug} variant="inline" className="w-full justify-center" />
         ) : null}
         {props.getYourGuideUrl && (
           <a

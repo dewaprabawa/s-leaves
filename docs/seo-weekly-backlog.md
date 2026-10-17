@@ -68,7 +68,8 @@ Skip generic “best Bali” ideas. P2 day tours stay on hold.
 | P0 | Lawar / kitchen / mortar spokes | /tours/balinese-cooking-class | live 2026-09-21 |
 | P0 | E-bike vs pedal + family + what to wear | /tours/ubud-ricefield-cycling-tour | live 2026-09-21 |
 | P0 | Sunrise vs sunset · sit-in vs tracking · Kintamani Day | /tours/batur-sunrise-jeep-tour | live 2026-09-21 |
-| P0 | ATV Ubud unwritten spoke (price already live) | /tours/bali-atv-adventure | todo |
+| P0 | Private vs shared Tumang kitchen | /tours/balinese-cooking-class | drafted 2026-09-28 `/blog/private-vs-shared-cooking-class-ubud` |
+| P0 | ATV Ubud unwritten spoke (price already live) | /tours/bali-atv-adventure | todo — next: ATV + Ayung rafting combo (no invented bundle IDR) |
 Do **not** write these in this run (A3 cluster writer). Next-up after those: `Is a Balinese Cooking Class in Ubud Worth It in 2026?` → `/tours/balinese-cooking-class` (promo 450K, max 8, free pickup, vegetarian on request).
 
 ## Sales friction notes

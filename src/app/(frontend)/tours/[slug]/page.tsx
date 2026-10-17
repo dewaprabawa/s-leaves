@@ -1322,12 +1322,6 @@ export default async function TourPage({ params }: Props) {
                   <SwingHeavenShuttleMustLabel variant="aloha-ubud-swing" />
                 ) : null}
                 <div className="flex flex-wrap items-center gap-3">
-                  {tour.recommendedByTravelersPercent ? (
-                    <TravelerRecommendBadge
-                      percent={tour.recommendedByTravelersPercent}
-                      variant="inline"
-                    />
-                  ) : null}
                   {isPayOnSpotTour(tour.slug) ? <PayOnSpotNote variant="inline" /> : null}
                   {isRequiredShuttleTour(tour) ? (
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">

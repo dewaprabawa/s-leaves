@@ -61,7 +61,7 @@ Most listings for a "Bali guide" are really a car charter: a driver who speaks s
 | Option | What you get | Best if |
 | --- | --- | --- |
 | **Licensed guide only** — [book here](/tours/licensed-tour-guide-bali) | Licensed guide, 8 hours, from IDR 600,000 per booking | You already have a car, a rented driver, or a villa driver |
-| **Licensed guide + our separate shuttle** | Licensed guide, plus a private car and driver for the whole guided day (up to 6 guests), shuttle quoted on WhatsApp | You want your own route and need transport |
+| **Licensed guide + our separate shuttle** | Licensed guide, plus a private car and driver for the whole guided day (up to 6 guests). Ubud area: day totals IDR 850,000; outside Ubud: guide + IDR 550,000 driver | You want your own route and need transport |
 | **Driver-guide charter** (elsewhere) | Car + driver who speaks English | You want transport and light commentary only |
 | **Our tour + licensed guide add-on** | Private car and driver, plus a licensed guide for the **whole tour** at the same flat price | You need a car and a proper guide in one booking |
 
@@ -90,7 +90,8 @@ Tell us your route in the notes: temples, the Ubud palace and art market, rice t
 ## Japanese and French guides
 
 Fewer licensed guides in Bali work in Japanese or French than in English, so send your date early. Language guides:
-- [Japanese-speaking guide in Bali](/blog/japanese-speaking-guide-bali-2026) — IDR 850,000 with driver in Ubud
+- [Japanese-speaking guide in Bali](/blog/japanese-speaking-guide-bali-2026) — guide only 700K · with driver 850K in Ubud
+- [Japanese guide Bali price](/blog/japanese-guide-bali-price-2026) · [+ private driver](/blog/japanese-guide-with-private-driver-bali-2026) · [Ubud day](/blog/japanese-licensed-guide-ubud-day-2026) · [Tirta Empul in Japanese](/blog/tirta-empul-with-japanese-guide-2026)
 - [French-speaking guide in Bali](/blog/french-speaking-guide-bali-2026) — IDR 850,000 with driver in Ubud
 
 Not sure you need one? Read [is a tour guide worth it in Bali?](/blog/is-a-tour-guide-worth-it-bali-2026) and [temples with a guide vs without](/blog/bali-temples-with-a-guide-2026).
@@ -158,6 +159,12 @@ On our tours, the guide price covers the full scheduled tour. The IDR 150,000 ho
 4. We confirm on WhatsApp. Our booking desk writes in English; your guide speaks Japanese.
 
 Fewer licensed guides work in Japanese than in English, so send your date early. More for Japanese, Korean, and Chinese visitors: [Bali tours booked in English](/blog/bali-tours-for-japanese-chinese-travelers-2026). Price and licence details for all languages: [licensed tour guide in Bali](/blog/licensed-tour-guide-bali-2026).
+
+### More Japanese guide guides
+- [Japanese guide Bali price](/blog/japanese-guide-bali-price-2026) — full 2026 rate card
+- [Japanese guide + private driver](/blog/japanese-guide-with-private-driver-bali-2026) — the IDR 850,000 Ubud option
+- [Japanese licensed guide Ubud day](/blog/japanese-licensed-guide-ubud-day-2026) — sample temple itinerary
+- [Tirta Empul with a Japanese guide](/blog/tirta-empul-with-japanese-guide-2026) — melukat in Japanese
 
 **Ready?** [Book a Japanese-speaking licensed guide](/tours/licensed-tour-guide-bali) — guide only IDR 700,000, or + driver IDR 850,000 in Ubud.
 `,
@@ -390,7 +397,7 @@ Full checklist: [Bali temple dress code](/blog/bali-temple-dress-code).
 | 15:00 | Rice terraces | The *subak* irrigation system — UNESCO World Heritage since 2012 |
 | 16:00 | Back to your hotel | Within the 8 hours — extra time is IDR 150,000 per hour |
 
-Entrance tickets and transport are not included in the guide price. Have a car already? Book the [guide only](/tours/licensed-tour-guide-bali). Need a car? Add our separate private shuttle in the same booking (quoted on WhatsApp), or add the guide to the [Full Day Ubud Tour](/tours/full-day-ubud-tour) for the whole day at the same flat price.
+Entrance tickets and transport are not included in the guide price. Have a car already? Book the [guide only](/tours/licensed-tour-guide-bali). Need a car? Add private shuttle in the same booking (Ubud area: day totals IDR 850,000; outside Ubud: guide + IDR 550,000 driver), or add the guide to the [Full Day Ubud Tour](/tours/full-day-ubud-tour) for the whole day at the same flat price.
 
 More on why a guide is worth it: [8 ways a licensed guide makes your holiday better](/blog/is-a-tour-guide-worth-it-bali-2026).
 
@@ -467,7 +474,7 @@ One or two guided days give you the context that makes the rest of the trip make
 | Extra hour | 150,000 |
 | Full Day Ubud Tour (car + driver) | 600,000 solo → 350,000 each for 4+, guide add-on extra |
 
-Not included: entrance tickets and meals. Transport is optional — add our separate private shuttle (quoted on WhatsApp). More detail: [licensed tour guide in Bali](/blog/licensed-tour-guide-bali-2026) · [is a tour guide worth it?](/blog/is-a-tour-guide-worth-it-bali-2026) · [temples with a guide vs without](/blog/bali-temples-with-a-guide-2026).
+Not included: entrance tickets and meals. Transport is optional — add private shuttle (Ubud area: day totals IDR 850,000; outside Ubud: guide + IDR 550,000 driver). More detail: [licensed tour guide in Bali](/blog/licensed-tour-guide-bali-2026) · [is a tour guide worth it?](/blog/is-a-tour-guide-worth-it-bali-2026) · [temples with a guide vs without](/blog/bali-temples-with-a-guide-2026).
 
 **Ready?** [Book a local licensed guide](/tours/licensed-tour-guide-bali) for your culture day — WhatsApp, **no payment to inquire**.
 `,
@@ -504,7 +511,7 @@ Not included: entrance tickets and meals. Transport is optional — add our sepa
 | **English guide, 8 hours** | Varies by host and product | **IDR 600,000** guide only |
 | **Japanese / French** | Japanese listed among guide languages; French less visible on the Bali guides filters | **IDR 850,000** with private driver in Ubud |
 | **Guide without a car** | Many Bali products are day trips **by car** with a local | English yes — **guide only**; Japanese/French require a driver |
-| **Private shuttle** | Usually bundled inside a car day-trip product | Optional separate shuttle (car + driver), quoted on WhatsApp |
+| **Private shuttle** | Usually bundled inside a car day-trip product | Optional separate shuttle (car + driver) at published Ubud / outside rates |
 | **Reviews** | Strong first-party review counts on experience cards | We do not invent review counts on this site |
 | **Cancellation** | Withlocals lists refund up to **7 days** before (their guest policy) | Our [cancellation policy](/cancellation-policy) — free cancel 24 hours before start |
 
@@ -540,7 +547,7 @@ Many Bali listings — on Withlocals and elsewhere — are **car day trips with 
 | Need | Book |
 | --- | --- |
 | Licensed explanation at temples, you already have a driver | [Licensed guide only](/tours/licensed-tour-guide-bali) from IDR 600,000 |
-| Licensed guide + private car for your group | Guide + optional shuttle (quoted on WhatsApp) |
+| Licensed guide + private car for your group | Guide + optional shuttle (Ubud day totals IDR 850,000; outside guide + IDR 550,000) |
 | Set Ubud route + car, optional guide | [Full Day Ubud Tour](/tours/full-day-ubud-tour) |
 | Still deciding if a guide is worth it | [Is a tour guide worth it in Bali?](/blog/is-a-tour-guide-worth-it-bali-2026) · [temples with a guide vs without](/blog/bali-temples-with-a-guide-2026) |
 
@@ -563,6 +570,253 @@ Many Bali listings — on Withlocals and elsewhere — are **car day trips with 
 **Can I book Japanese or French?** Yes — both include a private driver: **IDR 850,000** in Ubud for 8 hours (outside: Japanese 700K + 550K, French 750K + 550K). Language guides: [Japanese](/blog/japanese-speaking-guide-bali-2026) · [French](/blog/french-speaking-guide-bali-2026).
 
 **Ready?** [Book a licensed Bali guide](/tours/licensed-tour-guide-bali) — English, Japanese, or French, from IDR 600,000 per booking. Prefer a set route first? Start with the [Full Day Ubud Tour](/tours/full-day-ubud-tour) and add the guide.
+`,
+  },
+
+  {
+    slug: 'japanese-guide-bali-price-2026',
+    title: 'Japanese Guide Bali Price (2026): Licensed Guide Only vs + Driver',
+    seoTitle: 'Japanese Guide Bali Price 2026 | 700K or 850K',
+    excerpt:
+      'Japanese licensed guide price in Bali 2026: guide only IDR 700,000 for 8 hours, or + private driver IDR 850,000 in Ubud (outside 700K + 550K). Extra hour 150K. 料金表あり。',
+    publishedAt: '2026-10-17',
+    author: 'Sekar Bali Activity',
+    image: '/images/guide/licensed-guide-bali.jpg',
+    content: `
+**How much is a Japanese guide in Bali in 2026?** Sekar Bali Activity books a **government-licensed Japanese-speaking guide (KTPP)** at published IDR: **guide only IDR 700,000** for **8 hours** per booking, or the **optional + private driver** tour at **IDR 850,000** in the **Ubud area** (outside Ubud: **IDR 700,000 + IDR 550,000** driver). Each extra hour is **IDR 150,000**. Not per person. [Book a Japanese guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+
+> **日本語の料金まとめ**
+> - **ガイドのみ：** 8時間 **IDR 700,000**（1予約・人数に関係なし）
+> - **ガイド＋専用車（ウブド）：** **IDR 850,000**
+> - **ウブド以外＋ドライバー：** **700,000 + 550,000 = IDR 1,250,000**
+> - **延長：** 1時間 **IDR 150,000**
+> - 入場料・食事は別途
+> - 詳しい手配： [日本語ガイドのページ](/blog/japanese-speaking-guide-bali-2026)
+
+## Japanese guide price table (2026)
+
+| Option | Price (IDR) | What you get |
+| --- | --- | --- |
+| **Guide only** | **700,000** | Licensed Japanese commentary, 8 hours — you already have a car or villa driver |
+| **Guide + private driver (Ubud)** | **850,000** | Same guide + car for the day from an Ubud-area hotel (up to 6 guests) |
+| **Guide + driver (outside Ubud)** | **700,000 + 550,000** | Canggu, Seminyak, Sanur, Jimbaran, and nearby — hotel pin sets the zone |
+| **Extra hour** | **150,000** | Same rate whether guide-only or with-driver |
+
+One price for the **whole group**. A couple and a family of five pay the same guide fee.
+
+## Worked examples
+
+- **Japanese couple in Ubud, already have a villa driver:** guide only → **IDR 700,000**
+- **Same couple, need a car too:** with-driver tour → **IDR 850,000** total
+- **Family of four in Canggu, need car + Japanese guide:** 700,000 + 550,000 → **IDR 1,250,000**
+- **Day runs to 10 hours:** add 2 × 150,000 → **+ IDR 300,000**
+
+Not included: temple tickets, meals, tips. Bigger groups (van) get a WhatsApp quote for the vehicle.
+
+## Guide only vs + driver — which price to pick
+
+| You already have… | Book | Total in Ubud |
+| --- | --- | --- |
+| Villa driver / rented car | [Guide only](/tours/licensed-tour-guide-bali) | **700,000** |
+| Nothing — need car + guide | Japanese + private driver option | **850,000** |
+| Prefer a fixed Ubud route | [Full Day Ubud Tour](/tours/full-day-ubud-tour) + Japanese guide add-on | Tour price + **700,000** |
+
+Deep dive on the with-driver option: [Japanese guide with private driver](/blog/japanese-guide-with-private-driver-bali-2026). Sample temple day: [Japanese guide Ubud day](/blog/japanese-licensed-guide-ubud-day-2026).
+
+## Why Japanese costs more than English
+
+Fewer licensed Bali guides work in Japanese than in English. The **guide-only** rate is **IDR 700,000** (English is **IDR 600,000**). The **Ubud with-driver** total is still capped at **IDR 850,000** — same published day total as French — so the driver line adjusts by language. Full licence notes: [licensed tour guide in Bali](/blog/licensed-tour-guide-bali-2026).
+
+## How to book at this price
+
+1. Open [licensed tour guide Bali](/tours/licensed-tour-guide-bali).
+2. Choose **Japanese (guide only)** or **Japanese + private driver**.
+3. Drop your hotel pin — that sets Ubud vs outside for the driver fee.
+4. Confirm on WhatsApp. Desk messages in English; your guide speaks Japanese.
+
+**Ready?** [Book at the published Japanese guide price](/tours/licensed-tour-guide-bali) — from IDR 700,000 per booking.
+`,
+  },
+
+  {
+    slug: 'japanese-guide-with-private-driver-bali-2026',
+    title: 'Japanese Guide with Private Driver in Bali (2026): IDR 850,000 in Ubud',
+    seoTitle: 'Japanese Guide + Driver Bali | IDR 850K Ubud',
+    excerpt:
+      'Book a licensed Japanese guide with private car and driver: IDR 850,000 in Ubud for 8 hours (outside: 700K guide + 550K driver). Up to 6 guests. Guide-only still available at 700K.',
+    publishedAt: '2026-10-17',
+    author: 'Sekar Bali Activity',
+    image: '/images/guide/bali-guide-thumbs-up.jpg',
+    content: `
+**Want a Japanese guide and a private car in one booking?** Sekar Bali Activity’s **Japanese + private driver** tour option is **IDR 850,000** for **8 hours** in the **Ubud area** — one published total for the licensed guide and the car (up to **6 guests**). Outside Ubud: **IDR 700,000** guide + **IDR 550,000** driver. Prefer guide only? That stays **IDR 700,000**. [Book Japanese + driver](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+
+> **Key Takeaways**
+> - **Ubud with-driver total:** **IDR 850,000** (guide + car)
+> - **Outside Ubud:** **700,000 + 550,000 = IDR 1,250,000**
+> - **Guide only still available:** **IDR 700,000** if you already have transport
+> - **Extra hour:** IDR 150,000
+> - **Van / bigger groups:** vehicle quoted on WhatsApp
+> - Full price list: [Japanese guide Bali price](/blog/japanese-guide-bali-price-2026)
+
+## What “Japanese + private driver” includes
+
+| Included | Not included |
+| --- | --- |
+| Government-licensed **Japanese-speaking** guide (KTPP) | Temple and attraction tickets |
+| Private car and driver for the guided day (up to 6 guests) | Meals and drinks |
+| Hotel pickup / drop for the day’s route (pin required) | Tips |
+| 8 hours of commentary in Japanese | Extra hours beyond 8 (IDR 150,000 each) |
+
+The driver handles the road; the **licensed guide** walks into temples and villages with you and explains in Japanese — not the same as a Japanese-speaking driver who waits at the gate.
+
+## Ubud vs outside Ubud
+
+Your **hotel pin** sets the driver zone:
+
+- **Ubud area** → day total **IDR 850,000**
+- **Outside Ubud** (Canggu, Seminyak, Sanur, Jimbaran, Nusa Dua, and similar) → guide **700,000** + driver **550,000**
+
+Same logic as the French with-driver option. Overview: [Japanese-speaking guide in Bali](/blog/japanese-speaking-guide-bali-2026).
+
+## When to pick with-driver vs guide only vs Full Day Ubud
+
+| Situation | Book |
+| --- | --- |
+| Stay in Ubud, need car + Japanese commentary | **Japanese + private driver** (850K) |
+| Stay in Canggu / Seminyak, same need | **Japanese + driver outside** (700K + 550K) |
+| Villa already provides a driver | **Guide only** (700K) |
+| Want a fixed Ubud sightseeing loop | [Full Day Ubud Tour](/tours/full-day-ubud-tour) + Japanese guide add-on (700K) |
+| Holy spring morning in Japanese | [Tirta Empul with Japanese guide](/blog/tirta-empul-with-japanese-guide-2026) |
+
+## Sample day shape (you choose the stops)
+
+Morning temples (Ubud palace, Saraswati, or a village *pura*), mid-day rice terrace or coffee stop, afternoon holy spring or art market — the guide builds the order around ceremonies and heat. A worked Ubud culture day: [Japanese licensed guide Ubud day](/blog/japanese-licensed-guide-ubud-day-2026).
+
+## How to book
+
+1. On [licensed tour guide Bali](/tours/licensed-tour-guide-bali), choose **Japanese + private driver**.
+2. Set date, start time, and hotel pin.
+3. Add extra hours if you already know the day will run long.
+4. Confirm on WhatsApp (desk in English; guide in Japanese).
+
+**Ready?** [Book Japanese guide + private driver](/tours/licensed-tour-guide-bali) — **IDR 850,000** in Ubud.
+`,
+  },
+
+  {
+    slug: 'japanese-licensed-guide-ubud-day-2026',
+    title: 'Japanese Licensed Guide Ubud Day (2026): Sample Temple & Culture Itinerary',
+    seoTitle: 'Japanese Guide Ubud Day 2026 | Sample Itinerary',
+    excerpt:
+      'Sample 8-hour Ubud day with a licensed Japanese guide: palace, temples, rice terraces, optional Tirta Empul. Guide only 700K, or + driver 850K in Ubud. 日本語の行程例あり。',
+    publishedAt: '2026-10-17',
+    author: 'Sekar Bali Activity',
+    image: '/images/guide/licensed-guide-bali.jpg',
+    content: `
+**What does a day with a Japanese licensed guide in Ubud look like?** Below is a **sample 8-hour culture day** — not a fixed package. You choose the stops; the guide explains in Japanese and keeps temple etiquette calm. Sekar Bali Activity: **guide only IDR 700,000**, or **Japanese + private driver IDR 850,000** in Ubud. [Book the Japanese guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+
+> **日本語の行程イメージ（例）**
+> - 午前：ウブド王宮・サラワティ寺院・市場
+> - 昼前後：棚田またはコーヒー農園
+> - 午後：ティルタエンプル（メラカット）または村の寺院
+> - **ガイドのみ 700,000** / **車付きウブド 850,000**（8時間）
+> - 入場料は現地払い
+
+## Sample itinerary (flexible)
+
+| Time | Stop | What the Japanese guide covers |
+| --- | --- | --- |
+| 08:00–08:30 | Hotel meet | Dress check (sarong/sash), day’s order, any ceremony notes |
+| 08:30–10:00 | Ubud Palace & Saraswati | Courtyards, royal history, photo etiquette |
+| 10:00–11:00 | Ubud Art Market | Crafts vs tourist kitsch — what is worth buying |
+| 11:00–12:30 | Tegallalang or nearby *subak* rice fields | Water temples, irrigation, why terraces matter |
+| 12:30–13:30 | Lunch (your choice, not included) | Guide can suggest warung vs café |
+| 13:30–15:30 | Tirta Empul **or** a quieter village temple | Fountain order, offerings, what to skip — see [melukat with Japanese guide](/blog/tirta-empul-with-japanese-guide-2026) |
+| 15:30–16:00 | Return / extend | Extra hour **IDR 150,000** if you want more stops |
+
+Prefer a **set car route** instead of building your own? Use the [Full Day Ubud Tour](/tours/full-day-ubud-tour) and add the Japanese guide (**IDR 700,000**) — car already included.
+
+## Guide only or with driver for this day?
+
+| Stay | Best booking for this sample day |
+| --- | --- |
+| Ubud villa with driver | Guide only **700,000** |
+| Ubud hotel, need a car | Japanese + driver **850,000** |
+| Canggu / Seminyak | Japanese + driver outside (**700K + 550K**) |
+
+Price detail: [Japanese guide Bali price](/blog/japanese-guide-bali-price-2026) · with-driver product: [Japanese guide + private driver](/blog/japanese-guide-with-private-driver-bali-2026).
+
+## Why Japanese commentary changes the day
+
+English signs at temples are short. A licensed Japanese guide can explain **offerings (*canang sari*)**, **which courtyards are off-limits**, and **how holy-spring purification works** before you join the queue — useful for parents, first-timers, and anyone who prefers Japanese over English. Broader temple guide: [Bali temples with a guide](/blog/bali-temples-with-a-guide-2026).
+
+## Booking tips for Japanese travelers
+
+1. Send the **date early** — fewer licensed Japanese guides than English.
+2. Tell us in the notes: palace + market, rice terraces, Tirta Empul, or a quiet village focus.
+3. Booking desk on WhatsApp is in **English**; the guide on the day speaks **Japanese**.
+4. More for Japan / Korea / China visitors booking in English: [Bali tours for Japanese travelers](/blog/bali-tours-for-japanese-chinese-travelers-2026).
+
+**Ready?** [Book a Japanese licensed guide for your Ubud day](/tours/licensed-tour-guide-bali) — from IDR 700,000 per booking.
+`,
+  },
+
+  {
+    slug: 'tirta-empul-with-japanese-guide-2026',
+    title: 'Tirta Empul with a Japanese Guide (2026): Melukat Explained in Japanese',
+    seoTitle: 'Tirta Empul Japanese Guide 2026 | Melukat',
+    excerpt:
+      'Visit Tirta Empul melukat with a licensed Japanese guide: fountain order, offerings, and etiquette in Japanese. Guide only from IDR 700,000, or pair with our private melukat package.',
+    publishedAt: '2026-10-17',
+    author: 'Sekar Bali Activity',
+    image: '/images/guide/bali-guide-thumbs-up.jpg',
+    content: `
+**Can you do Tirta Empul melukat with a Japanese-speaking guide?** Yes. Sekar Bali Activity books a **government-licensed Japanese guide** who explains the **holy-spring purification** — fountain order, which spouts to skip, offerings, and dress — in Japanese. Guide only from **IDR 700,000** for 8 hours (or **+ driver IDR 850,000** in Ubud). Prefer a **private melukat package** with shuttle and breakfast? See [Tirta Empu Purification](/tours/tirta-empu-purification). [Book the Japanese guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+
+> **日本語のポイント**
+> - ティルタエンプルの**メラカット**を日本語で説明できる**政府公認ガイド**を手配
+> - どの水口を使うか・避けるか、サロンの着方、供物の意味を事前に説明
+> - **ガイドのみ IDR 700,000**（8時間）／ウブドで車付き **IDR 850,000**
+> - 専用メラカット（送迎・朝食込み）は別パッケージ：[浄化ツアー](/tours/tirta-empu-purification)
+
+## Two ways to book Tirta Empul in Japanese
+
+| Option | Best if | From-price |
+| --- | --- | --- |
+| **Japanese licensed guide** (this page’s product) | You want Japanese explanation for Tirta Empul **plus** other Ubud stops the same day | Guide only **700,000** / + driver **850,000** Ubud |
+| **[Private melukat package](/tours/tirta-empu-purification)** | You want a focused 3–4 hour purification with Ubud shuttle, offering, sarong, breakfast | **IDR 1,200,000** per person (English guide on the package — ask WhatsApp if you need Japanese commentary layered on) |
+
+Many Japanese couples book the **licensed Japanese guide** for a full culture day that **includes** Tirta Empul after the palace and rice terraces — see [Japanese Ubud day itinerary](/blog/japanese-licensed-guide-ubud-day-2026).
+
+## What the Japanese guide explains at Tirta Empul
+
+- **Why** the spring is sacred in Balinese Hindu practice
+- **Fountain order** — which spouts are for purification and which to skip
+- **Sarong, sash, and wet clothes** — what to bring and what the temple provides
+- **Offerings (*canang*)** and how to behave in the inner courtyards
+- **Photo etiquette** during other visitors’ rituals
+
+More temple context (all languages): [Bali temples with a guide vs without](/blog/bali-temples-with-a-guide-2026).
+
+## Price add-ons for a Tirta-focused morning
+
+| Add-on | IDR |
+| --- | --- |
+| Japanese guide only (8 hours — room for other stops) | **700,000** per booking |
+| Japanese + private driver (Ubud) | **850,000** |
+| Extra hour | **150,000** |
+| Temple entrance | Paid at the gate (not in guide fee) |
+
+Full Japanese rate card: [Japanese guide Bali price](/blog/japanese-guide-bali-price-2026).
+
+## Practical tips for Japanese visitors
+
+1. **Start early** — queues grow mid-morning.
+2. Bring a change of clothes and a small dry bag for phones.
+3. Tell WhatsApp you want **Tirta Empul melukat explained in Japanese** so we confirm guide language and timing.
+4. Pura Beji is a quieter alternative on the same [purification tour](/tours/tirta-empu-purification) if you prefer fewer crowds.
+
+**Ready?** [Book a Japanese licensed guide for Tirta Empul](/tours/licensed-tour-guide-bali) — or start with the [private melukat package](/tours/tirta-empu-purification).
 `,
   },
 

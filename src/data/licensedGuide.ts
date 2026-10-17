@@ -34,16 +34,7 @@ export const GUIDE_EXTRA_HOUR_ADDON = {
 }
 
 export const GUIDE_SHUTTLE_MAX_GUESTS = 6
-
-/** Optional car + driver for guide-only bookings — quoted on WhatsApp (English, or JP/FR if not using the published with-driver option). */
-export const GUIDE_SHUTTLE_ADDON = {
-  id: "guide-private-shuttle",
-  label: "Private shuttle (car + driver)",
-  blurb: `Need transport too? Add a private car and driver for the whole guided day, extra hours included — up to ${GUIDE_SHUTTLE_MAX_GUESTS} guests per car. Bigger groups get a van quote. Japanese and French also have a published with-driver option in the booking menu.`,
-  perPerson: 0,
-  flat: true as const,
-  quoteOnly: true,
-}
+export const GUIDE_SHUTTLE_ADDON_ID = "guide-private-shuttle"
 
 /**
  * Optional Japanese / French tour option: licensed guide + private driver.
@@ -62,14 +53,23 @@ export function guideOffersWithDriverOption(lang: GuideLanguageKey): boolean {
   return (GUIDE_WITH_DRIVER_LANGUAGES as readonly string[]).includes(lang)
 }
 
+/**
+ * Private driver fee for a language + hotel area.
+ * Ubud: so guide + driver totals GUIDE_UBUD_WITH_DRIVER_IDR.
+ * Outside Ubud: flat GUIDE_OUTSIDE_DRIVER_IDR.
+ */
+export function guideDriverFeeIdr(lang: GuideLanguageKey, outsideUbud: boolean): number {
+  if (outsideUbud) return GUIDE_OUTSIDE_DRIVER_IDR
+  return GUIDE_UBUD_WITH_DRIVER_IDR - LICENSED_GUIDE_PRICES_IDR[lang]
+}
+
 /** Driver line when the Japanese/French with-driver tour option is selected. */
 export function guideWithDriverFeeIdr(
   lang: GuideLanguageKey,
   outsideUbud: boolean,
 ): number {
   if (!guideOffersWithDriverOption(lang)) return 0
-  if (outsideUbud) return GUIDE_OUTSIDE_DRIVER_IDR
-  return GUIDE_UBUD_WITH_DRIVER_IDR - LICENSED_GUIDE_PRICES_IDR[lang]
+  return guideDriverFeeIdr(lang, outsideUbud)
 }
 
 /** Total for the Japanese/French with-driver tour option. */
@@ -87,14 +87,33 @@ export function guideWithDriverFees(lang: GuideLanguageKey): {
 } | null {
   if (!guideOffersWithDriverOption(lang)) return null
   return {
-    ubud: guideWithDriverFeeIdr(lang, false),
+    ubud: guideDriverFeeIdr(lang, false),
     outside: GUIDE_OUTSIDE_DRIVER_IDR,
   }
 }
 
+/** Optional private shuttle on guide-only bookings — published Ubud / outside IDR. */
+export function buildGuideShuttleAddon(lang: GuideLanguageKey) {
+  const ubud = guideDriverFeeIdr(lang, false)
+  const outside = GUIDE_OUTSIDE_DRIVER_IDR
+  return {
+    id: GUIDE_SHUTTLE_ADDON_ID,
+    label: "Private shuttle (car + driver)",
+    blurb: `Private car and driver for the whole guided day (up to ${GUIDE_SHUTTLE_MAX_GUESTS} guests). Ubud area ${formatGuideIdr(ubud)}; outside Ubud ${formatGuideIdr(outside)}. Your hotel pin sets the rate. Bigger groups get a van quote on WhatsApp.`,
+    perPerson: ubud,
+    flat: true as const,
+    unitLabel: "per booking · Ubud from-price",
+    zonedFeesIdr: { ubud, outside } as const,
+  }
+}
+
+function formatGuideIdr(amount: number) {
+  return `IDR ${amount.toLocaleString("id-ID")}`
+}
+
 export const GUIDE_MEET_COPY = {
   title: "Guide meets you at your hotel or first stop",
-  body: "The guide's own transport is included. Need a car too? Tick the private shuttle option — price quoted on WhatsApp — or choose the Japanese/French with-driver tour option for a published IDR total. Drop your hotel or first-stop pin below.",
+  body: "The guide's own transport is included. Need a car too? Tick private shuttle — Ubud and outside rates are published — or choose the Japanese/French with-driver tour option. Drop your hotel or first-stop pin below.",
   short: "Guide meets you here (guide transport included)",
 }
 
@@ -104,7 +123,7 @@ export const GUIDE_WITH_DRIVER_MEET_COPY = {
   short: "Hotel pin (private driver included)",
 }
 
-export const GUIDE_EXTRA_HOURS_INTRO = `The price covers ${GUIDE_ONLY_HOURS} hours with your guide, once per booking — not per person. Every language can book guide only. Need a car? Add a private shuttle (quoted on WhatsApp), or choose the Japanese/French with-driver tour option — IDR ${(GUIDE_UBUD_WITH_DRIVER_IDR / 1000).toFixed(0)},000 total in the Ubud area, or guide fee + IDR ${(GUIDE_OUTSIDE_DRIVER_IDR / 1000).toFixed(0)},000 outside Ubud. Need more time? Extra hours are IDR 150,000 each.`
+export const GUIDE_EXTRA_HOURS_INTRO = `The price covers ${GUIDE_ONLY_HOURS} hours with your guide, once per booking — not per person. Every language can book guide only. Need a car? Add private shuttle (Ubud rate brings the day to IDR ${(GUIDE_UBUD_WITH_DRIVER_IDR / 1000).toFixed(0)},000 total; outside Ubud guide + IDR ${(GUIDE_OUTSIDE_DRIVER_IDR / 1000).toFixed(0)},000), or choose the Japanese/French with-driver tour option. Need more time? Extra hours are IDR 150,000 each.`
 
 export const GUIDE_OVERRUN_NOTE =
   "If the day runs past the tour's normal length, extra guide time is IDR 150,000 per hour."

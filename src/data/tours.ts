@@ -1493,7 +1493,7 @@ Card payments at the park (if you pay on site) add a **3% surcharge**. WhatsApp 
 ### Pair it with ATV, cooking, or rafting
 Swing Heaven sits in Abiansemal, the same district as our [ATV arena](/tours/bali-atv-adventure). Ask WhatsApp to stack a morning swing with afternoon ATV or [Ayung River rafting](/tours/whitewater-rafting). For a jungle-photo + kitchen day, book morning Swing Heaven then afternoon [Tumang cooking](/tours/balinese-cooking-class) — [swing + cooking itinerary](/blog/swing-heaven-cooking-class-ubud) · [book the combo](/book?activity=combo-swing-cooking). This is **not** Happy Swing.
 
-Commercial guides: [2026 prices for every option](/blog/swing-heaven-package-price-2026) · [all 14 photo spots](/blog/swing-heaven-photo-spots-bali-2026) · [bird nest](/blog/swing-heaven-bird-nest-bali-2026) · [Swing + ATV same day](/blog/swing-heaven-atv-combo-ubud-2026). Still deciding: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it) · [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location) · [Lunch package](/blog/bali-swing-with-lunch-ubud) · [Flying dress hire](/blog/flying-dress-hire-bali-swing) · [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).`,
+Commercial guides: [2026 prices for every option](/blog/swing-heaven-package-price-2026) · [what is a Bali jungle swing?](/blog/what-is-bali-jungle-swing-2026) · [why spend on a Bali swing?](/blog/why-spend-on-bali-swing-2026) · [Instagram moments](/blog/bali-swing-instagram-moments-2026) · [couples & honeymoon photos](/blog/bali-swing-couples-honeymoon-photos-2026) · [all 14 photo spots](/blog/swing-heaven-photo-spots-bali-2026) · [bird nest](/blog/swing-heaven-bird-nest-bali-2026) · [Swing + ATV same day](/blog/swing-heaven-atv-combo-ubud-2026). Still deciding: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it) · [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location) · [Lunch package](/blog/bali-swing-with-lunch-ubud) · [Flying dress hire](/blog/flying-dress-hire-bali-swing) · [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).`,
     highlights: [
       "14 jungle swings, nests, and photo spots over the Ayung valley",
       "From IDR 530,000 — insurance, tea/coffee/water",
@@ -2508,7 +2508,7 @@ One guide for your whole group. The price does not change with the number of gue
 | Japanese | **IDR 700,000** | IDR 150,000 |
 | French | **IDR 750,000** | IDR 150,000 |
 
-Already have a car? Book guide only — the guide meets you at your hotel or first stop; the guide's own transport is included. Need a car on a guide-only booking? Add a separate private shuttle, quoted on WhatsApp.
+Already have a car? Book guide only — the guide meets you at your hotel or first stop; the guide's own transport is included. Need a car on a guide-only booking? Add private shuttle in the booking menu: Ubud area brings the day to **IDR 850,000** total (guide + driver); outside Ubud is guide fee + **IDR 550,000** for the driver. Your hotel pin sets the rate.
 
 ### Optional tour: Japanese / French + private driver
 Pick this option in the booking menu when you want the licensed guide **and** a private car in one published total (up to 6 guests per car).
@@ -2547,7 +2547,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
       "Commentary in English, Japanese, or French",
     ],
     notIncluded: [
-      "Car and driver on guide-only bookings (optional shuttle on WhatsApp, or pick the JP/FR with-driver tour)",
+      "Car and driver on guide-only bookings (optional private shuttle at published Ubud/outside rates, or pick the JP/FR with-driver tour)",
       "Entrance tickets",
       "Meals and drinks",
       "Extra hours beyond 8 (IDR 150,000 per hour)",
@@ -2591,7 +2591,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         id: "faq-guide-3",
         question: "Does the guide come with a car or driver?",
         answer:
-          "Not by default — every language can book guide only, and the guide's own transport to your hotel or first stop is included. Need a car? Add our separate private shuttle on WhatsApp, or choose the Japanese/French + private driver tour option (IDR 850,000 in Ubud; outside guide + IDR 550,000). Or book the Full Day Ubud Tour / Half Day Ubud & Tanah Lot (car already included) and add the guide fee only.",
+          "Not by default — every language can book guide only, and the guide's own transport to your hotel or first stop is included. Need a car? Add private shuttle in the booking menu (Ubud area: day totals IDR 850,000 with guide + driver; outside Ubud: guide fee + IDR 550,000 driver), or choose the Japanese/French + private driver tour option at the same published rates. Or book the Full Day Ubud Tour / Half Day Ubud & Tanah Lot (car already included) and add the guide fee only.",
       },
       {
         id: "faq-guide-4",

@@ -71,6 +71,8 @@ export type TourOptionalAddon = {
   unitLabel?: string
   /** Requested on the booking but priced on WhatsApp — adds nothing to the estimate. Use with flat. */
   quoteOnly?: boolean
+  /** Flat add-on priced by hotel pin (e.g. licensed-guide private shuttle). */
+  zonedFeesIdr?: { ubud: number; outside: number }
 }
 
 function addonMaxQty(addon: TourOptionalAddon, guestCount: number) {
@@ -79,17 +81,29 @@ function addonMaxQty(addon: TourOptionalAddon, guestCount: number) {
   return Math.max(1, guestCount)
 }
 
-function addonAmount(addon: TourOptionalAddon, qty: number) {
-  if (qty <= 0 || addon.quoteOnly) return 0
-  return addon.flat ? addon.perPerson : addon.perPerson * qty
+function addonUnitPrice(addon: TourOptionalAddon, isOutUbud = false) {
+  if (addon.zonedFeesIdr) {
+    return isOutUbud ? addon.zonedFeesIdr.outside : addon.zonedFeesIdr.ubud
+  }
+  return addon.perPerson
 }
 
-function addonSummary(addon: TourOptionalAddon, qty: number) {
+function addonAmount(addon: TourOptionalAddon, qty: number, isOutUbud = false) {
+  if (qty <= 0 || addon.quoteOnly) return 0
+  const unit = addonUnitPrice(addon, isOutUbud)
+  return addon.flat ? unit : unit * qty
+}
+
+function addonSummary(addon: TourOptionalAddon, qty: number, isOutUbud = false) {
   if (addon.quoteOnly) return `${addon.label} · price quoted on WhatsApp`
-  if (addon.flat) {
-    return `${addon.label} · ${formatIdr(addon.perPerson)} (once per booking)`
+  const unit = addonUnitPrice(addon, isOutUbud)
+  if (addon.zonedFeesIdr) {
+    return `${addon.label} · ${formatIdr(unit)} (${isOutUbud ? "outside Ubud" : "Ubud area"})`
   }
-  return `${addon.label} · ${formatIdr(addon.perPerson)} × ${qty}`
+  if (addon.flat) {
+    return `${addon.label} · ${formatIdr(unit)} (once per booking)`
+  }
+  return `${addon.label} · ${formatIdr(unit)} × ${qty}`
 }
 
 export interface TourConfig {
@@ -354,7 +368,7 @@ export function BookingPopup({
     }))
     .filter((row) => row.qty > 0)
   const addonTotal = selectedAddons.reduce(
-    (sum, { addon, qty }) => sum + addonAmount(addon, qty),
+    (sum, { addon, qty }) => sum + addonAmount(addon, qty, isOutUbud),
     0,
   )
   const hasFreeUbudPickup = activeTour.freeUbudPickup === true;
@@ -587,7 +601,7 @@ export function BookingPopup({
       )
     }
     for (const { addon, qty } of selectedAddons) {
-      pickupNoteParts.push(addonSummary(addon, qty))
+      pickupNoteParts.push(addonSummary(addon, qty, isOutUbud))
     }
 
     const lineItems: { label: string; amount: number }[] = []
@@ -633,11 +647,14 @@ export function BookingPopup({
     }
     for (const { addon, qty } of selectedAddons) {
       if (addon.quoteOnly) continue
+      const unit = addonUnitPrice(addon, isOutUbud)
       lineItems.push({
-        label: addon.flat
-          ? `${addon.label} — ${formatIdr(addon.perPerson)} (once per booking)`
-          : `${addon.label} — ${qty} × ${formatIdr(addon.perPerson)}`,
-        amount: addonAmount(addon, qty),
+        label: addon.zonedFeesIdr
+          ? `${addon.label} — ${formatIdr(unit)} (${isOutUbud ? "outside Ubud" : "Ubud area"})`
+          : addon.flat
+            ? `${addon.label} — ${formatIdr(unit)} (once per booking)`
+            : `${addon.label} — ${qty} × ${formatIdr(unit)}`,
+        amount: addonAmount(addon, qty, isOutUbud),
       })
     }
     if (requiredShuttle || pickupFee > 0) {
@@ -959,7 +976,8 @@ export function BookingPopup({
                   )
                   const max = addonMaxQty(opt, addonGuestCount)
                   const active = qty > 0
-                  const lineTotal = addonAmount(opt, qty)
+                  const unit = addonUnitPrice(opt, isOutUbud)
+                  const lineTotal = addonAmount(opt, qty, isOutUbud)
                   return (
                     <div
                       key={opt.id}
@@ -977,15 +995,19 @@ export function BookingPopup({
                             <span className="block text-xs font-semibold text-brand-green mt-1.5">
                               {opt.quoteOnly
                                 ? 'Requested — price quoted on WhatsApp'
+                                : opt.zonedFeesIdr
+                                ? `${formatIdr(unit)} (${isOutUbud ? 'outside Ubud' : 'Ubud area'})`
                                 : opt.flat
-                                ? formatIdr(opt.perPerson)
-                                : `${formatIdr(opt.perPerson)} × ${qty} = ${formatIdr(lineTotal)}`}
+                                ? formatIdr(unit)
+                                : `${formatIdr(unit)} × ${qty} = ${formatIdr(lineTotal)}`}
                             </span>
                           ) : (
                             <span className="block text-xs font-semibold text-brand-green-light mt-1.5">
                               {opt.quoteOnly
                                 ? 'Price quoted on WhatsApp'
-                                : `${formatIdr(opt.perPerson)} ${opt.unitLabel ?? (opt.flat ? "per booking" : "per guest")}`}
+                                : opt.zonedFeesIdr
+                                ? `${formatIdr(opt.zonedFeesIdr.ubud)} Ubud · ${formatIdr(opt.zonedFeesIdr.outside)} outside`
+                                : `${formatIdr(unit)} ${opt.unitLabel ?? (opt.flat ? "per booking" : "per guest")}`}
                             </span>
                           )}
                         </div>
@@ -1403,9 +1425,9 @@ export function BookingPopup({
                 key={addon.id}
                 className="flex justify-between items-center mb-2 text-sm text-brand-green-light"
               >
-                <span>{addonSummary(addon, qty)}</span>
+                <span>{addonSummary(addon, qty, isOutUbud)}</span>
                 <span className="font-semibold text-brand-green">
-                  {addon.quoteOnly ? 'Quoted' : formatIdr(addonAmount(addon, qty))}
+                  {addon.quoteOnly ? 'Quoted' : formatIdr(addonAmount(addon, qty, isOutUbud))}
                 </span>
               </div>
             ))}

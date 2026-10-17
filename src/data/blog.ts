@@ -1149,17 +1149,18 @@ Message WhatsApp with your temple stop (if any), preferred adventure, and hotel 
 > - Book Swing Heaven if photos are the goal — **IDR 530,000** / **IDR 630,000** with lunch
 > - It is in **Bongkasa**, not Tegallalang
 > - Dress hire **IDR 300,000** · photos on **your phone**
+> - Required shuttle **IDR 400,000 Ubud / 650,000 south** — no self-meet
 > - Peak-season waits still happen; go early
 > - Skip it if you want culture over content — cycling + cooking is the better day
 
 ### Two different “Bali Swing” products
 
-The phrase “Bali Swing” is an industry, not one park. Dozens of venues sit around **Tegallalang**. **Swing Heaven** is a separate jungle park on **Jl. Tangga Yuda, Bongkasa**. We sell the Bongkasa park because the IDR is published, lunch is optional, and it pairs with ATV in the same Abiansemal district.
+The phrase “Bali Swing” is an industry, not one park. Dozens of venues sit around **Tegallalang**. **Swing Heaven** is a separate jungle park on **Jl. Tangga Yuda, Bongkasa**. We sell the Bongkasa park because the IDR is published, lunch is optional, and it pairs with ATV in the same Abiansemal district. How the product works: [What is a Bali jungle swing?](/blog/what-is-bali-jungle-swing-2026).
 
 **The pros (Swing Heaven):**
 - Listed photo spots (swings, nests, jungle beds, Stairs 2 Heaven) in one ticket
 - Insurance and a drink included; lunch package on the board
-- Short drive from Ubud; optional IDR 400,000 hotel pickup
+- Short drive from Ubud; required private shuttle **IDR 400,000** (Ubud) or **650,000** (south coast)
 
 **The cons:**
 - It is still a commercial photo park — not a temple or a village
@@ -1169,7 +1170,7 @@ The phrase “Bali Swing” is an industry, not one park. Dozens of venues sit a
 
 ### The verdict
 
-If you are travelling with teens, on a honeymoon, or you specifically want the jungle-swing photo, **do it at Swing Heaven** and go in the morning. Book the [Swing Heaven money page](/tours/swing-heaven-bali) or read the [2026 price and pickup guide](/blog/swing-heaven-bali-ubud-guide). Side-by-side with the terrace parks: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing). If you only want rice terraces without a swing ticket, walk Tegalalang on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) and skip the extra.
+If you are travelling with teens, on a honeymoon, or you specifically want the jungle-swing photo, **do it at Swing Heaven** and go in the morning. Full spend math: [Why spend on a Bali swing?](/blog/why-spend-on-bali-swing-2026). Social frames: [Instagram moments](/blog/bali-swing-instagram-moments-2026) · [couples / honeymoon](/blog/bali-swing-couples-honeymoon-photos-2026). Book the [Swing Heaven money page](/tours/swing-heaven-bali) or read the [2026 price and pickup guide](/blog/swing-heaven-bali-ubud-guide). Side-by-side with the terrace parks: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing). If you only want rice terraces without a swing ticket, walk Tegalalang on the [Full Day Ubud Tour](/tours/full-day-ubud-tour) and skip the extra.
 
 **Book Swing Heaven** — [from IDR 530,000](/tours/swing-heaven-bali).
 `

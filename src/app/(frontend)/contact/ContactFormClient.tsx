@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
 import { Send, CheckCircle2, Loader2, AlertCircle, User, Mail, MessageSquare } from "lucide-react"
-import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
+import WhatsAppContactLink from "@/components/WhatsAppContactLink"
 import { submitWeb3Form } from "@/lib/web3forms"
 
 const formSchema = z.object({
@@ -87,14 +87,12 @@ export default function ContactFormClient() {
           >
             Send another message
           </button>
-          <a
-            href={CONTACT_WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppContactLink
+            pageUrl="/contact"
             className="inline-flex items-center h-11 px-6 rounded-full btn-gold-shimmer text-sm font-bold uppercase tracking-wider"
           >
             WhatsApp us
-          </a>
+          </WhatsAppContactLink>
         </div>
       </div>
     )

@@ -687,6 +687,10 @@ export function BookingPopup({
       ].filter(Boolean).join(' · ') || undefined,
       lineItems,
       total: totalCost,
+      pageUrl:
+        typeof window !== 'undefined'
+          ? `${window.location.origin}${window.location.pathname}${window.location.search}`
+          : undefined,
     };
 
     void notifyBookingSubmitted({

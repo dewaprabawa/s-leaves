@@ -4,7 +4,7 @@ import { useEffect } from "react"
 import Link from "next/link"
 import { MessageCircle, X } from "lucide-react"
 import { useConsultationInterests } from "@/hooks/useConsultationInterests"
-import { buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
+import { buildWhatsAppConsultationUrl, getBrowserPageUrl } from "@/lib/whatsapp"
 import { SITE_URL } from "@/lib/seo"
 
 export default function ConsultationInterestTray() {
@@ -25,12 +25,11 @@ export default function ConsultationInterestTray() {
 
   if (!visible) return null
 
-  const consultationUrl = buildWhatsAppConsultationUrl(
-    items.map((item) => ({
-      title: item.title,
-      pageUrl: `${SITE_URL}/tours/${item.slug}`,
-    })),
-  )
+  const activityRefs = items.map((item) => ({
+    title: item.title,
+    pageUrl: `${SITE_URL}/tours/${item.slug}`,
+  }))
+  const consultationUrl = buildWhatsAppConsultationUrl(activityRefs)
 
   return (
     <div
@@ -81,6 +80,16 @@ export default function ConsultationInterestTray() {
           target="_blank"
           rel="noopener noreferrer"
           className="flex h-11 w-full items-center justify-center gap-2 rounded-full btn-gold-shimmer px-5 text-sm font-bold uppercase tracking-wider"
+          onClick={(event) => {
+            const fromPage = getBrowserPageUrl()
+            if (!fromPage) return
+            event.preventDefault()
+            window.open(
+              buildWhatsAppConsultationUrl(activityRefs, fromPage),
+              "_blank",
+              "noopener,noreferrer",
+            )
+          }}
         >
           <MessageCircle className="h-4 w-4" />
           WhatsApp these activities

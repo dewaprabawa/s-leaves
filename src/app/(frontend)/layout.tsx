@@ -7,7 +7,8 @@ import { CurrencyProvider } from "@/context/CurrencyContext"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
 import HeaderNav from "@/components/HeaderNav"
 import ConsultationInterestTray from "@/components/ConsultationInterestTray"
-import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from "@/lib/contact"
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/contact"
+import WhatsAppContactLink from "@/components/WhatsAppContactLink"
 import { ACTIVITY_BASE } from "@/lib/locations"
 import {
   DEFAULT_DESCRIPTION,
@@ -224,7 +225,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <div>
                 <p className="font-display text-sm font-bold uppercase tracking-wider mb-5 text-accent-amber">Get in Touch</p>
                 <ul className="space-y-4">
-                  <li><a href={CONTACT_WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Phone className="w-4 h-4 shrink-0" />{CONTACT_PHONE_DISPLAY}</a></li>
+                  <li><WhatsAppContactLink className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Phone className="w-4 h-4 shrink-0" />{CONTACT_PHONE_DISPLAY}</WhatsAppContactLink></li>
                   <li><a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"><Mail className="w-4 h-4 shrink-0" />{CONTACT_EMAIL}</a></li>
                   <li className="flex items-start gap-3 text-sm opacity-70">
                     <Compass className="w-4 h-4 shrink-0 mt-0.5 text-accent-amber" />

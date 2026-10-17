@@ -8,6 +8,7 @@
  * Official: https://griyabejiwaterfallbali.com/
  */
 
+import { SITE_URL } from '@/lib/seo'
 import { buildWhatsAppBookingUrl } from '@/lib/whatsapp'
 
 export const GRIYA_BEJI_PURIFICATION_IDR = 300_000
@@ -87,5 +88,6 @@ export function buildGriyaBejiWhatsAppUrl(guestName = 'Guest') {
     price: GRIYA_BEJI_SALES.priceIdr,
     notes:
       'Please confirm Griya Beji Waterfall (Taman Beji Griya, Desa Punggul). I want purification / palm reading / mental healing (say which). Gate admission IDR 50,000 international is extra. Pickup IDR 400,000 or self-meet. This is not Tirta Empul or Pura Beji.',
+    pageUrl: `${SITE_URL}/tours/griya-beji-waterfall`,
   })
 }

@@ -162,6 +162,10 @@ export default function BookingForm({ tour }: Props) {
           data.phone ? `Phone: ${data.phone}` : null,
           data.infants > 0 ? `Infants: ${data.infants}` : null,
         ].filter(Boolean).join(" · ") || undefined,
+        pageUrl:
+          typeof window !== "undefined"
+            ? `${window.location.origin}${window.location.pathname}${window.location.search}`
+            : undefined,
       })
 
       setServerResult({

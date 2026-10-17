@@ -1,5 +1,6 @@
 import { CONTACT_WHATSAPP_URL } from '@/lib/contact'
 import { trackGenerateLead } from '@/lib/ga'
+import { SITE_URL } from '@/lib/seo'
 
 export type WhatsAppBookingPayload = {
   guestName: string
@@ -16,10 +17,32 @@ export type WhatsAppBookingPayload = {
   locationMapUrl?: string
   price: string | number
   notes?: string
+  /** Absolute page URL so one WhatsApp number can attribute the lead. */
+  pageUrl?: string
 }
 
 export function formatIdr(amount: number) {
   return `IDR ${amount.toLocaleString('id-ID')}`
+}
+
+/** Browser page URL for WhatsApp attribution (origin + path + query, no hash). */
+export function getBrowserPageUrl(): string | undefined {
+  if (typeof window === 'undefined') return undefined
+  const { origin, pathname, search } = window.location
+  return `${origin}${pathname}${search}`
+}
+
+/** Prefer an explicit page URL; otherwise use the current browser page. */
+export function resolveWhatsAppPageUrl(pageUrl?: string | null): string | undefined {
+  const explicit = pageUrl?.trim()
+  if (explicit) return explicit
+  return getBrowserPageUrl()
+}
+
+function appendFromWebsiteLine(lines: string[], pageUrl?: string | null) {
+  const url = resolveWhatsAppPageUrl(pageUrl)
+  if (!url) return
+  lines.push(`*From website:* ${url}`)
 }
 
 /** Build a clear WhatsApp booking message with guest + trip details */
@@ -70,17 +93,25 @@ export function buildWhatsAppBookingMessage(payload: WhatsAppBookingPayload) {
     lines.push(`*Notes:* ${payload.notes}`)
   }
 
+  appendFromWebsiteLine(lines, payload.pageUrl)
+
   lines.push('', 'Please confirm availability. Thank you!')
   return lines.join('\n')
 }
 
 export function buildWhatsAppBookingUrl(payload: WhatsAppBookingPayload) {
-  const text = buildWhatsAppBookingMessage(payload)
+  const text = buildWhatsAppBookingMessage({
+    ...payload,
+    pageUrl: resolveWhatsAppPageUrl(payload.pageUrl),
+  })
   return `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(text)}`
 }
 
 export function openWhatsAppBooking(payload: WhatsAppBookingPayload) {
-  trackGenerateLead('whatsapp_booking', { activity: payload.activity })
+  trackGenerateLead('whatsapp_booking', {
+    activity: payload.activity,
+    page_url: resolveWhatsAppPageUrl(payload.pageUrl) ?? '(unknown)',
+  })
   window.open(buildWhatsAppBookingUrl(payload), '_blank', 'noopener,noreferrer')
 }
 
@@ -106,6 +137,9 @@ export function buildWhatsAppConsultationMessage(
   pageUrl?: string,
 ) {
   const items = normalizeConsultationActivities(activity, pageUrl)
+  const fromPage = resolveWhatsAppPageUrl(
+    typeof activity === 'string' ? pageUrl : pageUrl ?? items[0]?.pageUrl,
+  )
   const lines = [
     'Hello Sekar Bali Activity! I would like a WhatsApp consultation.',
     '',
@@ -128,6 +162,15 @@ export function buildWhatsAppConsultationMessage(
     })
   }
 
+  // Always attribute the chat to a site URL (one phone number → many pages).
+  if (fromPage && (items.length !== 1 || items[0]?.pageUrl !== fromPage)) {
+    lines.push(`*From website:* ${fromPage}`)
+  } else if (items.length === 0) {
+    appendFromWebsiteLine(lines, fromPage)
+  } else if (items.length === 1 && !items[0].pageUrl) {
+    appendFromWebsiteLine(lines, fromPage)
+  }
+
   lines.push(
     '',
     'Please help with availability, group pricing, and pickup options. Thank you!',
@@ -140,5 +183,21 @@ export function buildWhatsAppConsultationUrl(
   pageUrl?: string,
 ) {
   const text = buildWhatsAppConsultationMessage(activity, pageUrl)
+  return `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(text)}`
+}
+
+/** Generic WhatsApp hello that always carries the website page for attribution. */
+export function buildWhatsAppContactMessage(pageUrl?: string) {
+  const lines = [
+    'Hello Sekar Bali Activity! I found you on the website and would like to chat.',
+    '',
+  ]
+  appendFromWebsiteLine(lines, pageUrl ?? SITE_URL)
+  lines.push('', 'Thank you!')
+  return lines.join('\n')
+}
+
+export function buildWhatsAppContactUrl(pageUrl?: string) {
+  const text = buildWhatsAppContactMessage(resolveWhatsAppPageUrl(pageUrl) ?? SITE_URL)
   return `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(text)}`
 }

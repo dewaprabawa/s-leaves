@@ -1,7 +1,8 @@
 import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from '@/lib/contact'
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from '@/lib/contact'
+import WhatsAppContactLink from '@/components/WhatsAppContactLink'
 import { SITE_NAME, SITE_URL } from '@/lib/seo'
 
 export const metadata: Metadata = {
@@ -180,14 +181,12 @@ export default function CancellationPolicyPage() {
             <ul className="space-y-2">
               <li>
                 WhatsApp:{' '}
-                <a
-                  href={CONTACT_WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsAppContactLink
+                  pageUrl="/cancellation-policy"
                   className="text-brand-green underline underline-offset-2 hover:opacity-80"
                 >
                   {CONTACT_PHONE_DISPLAY}
-                </a>
+                </WhatsAppContactLink>
               </li>
               <li>
                 Email:{' '}

@@ -1,6 +1,6 @@
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from '@/lib/contact'
 import { trackGenerateLead } from '@/lib/ga'
-import { formatIdr } from '@/lib/whatsapp'
+import { formatIdr, resolveWhatsAppPageUrl } from '@/lib/whatsapp'
 import { formatPaymentWhatsAppNote } from '@/lib/payment'
 import type { TransferOption } from '@/lib/adminInvoiceCatalog'
 
@@ -37,6 +37,8 @@ export type InvoiceDraft = {
   depositPercent?: number
   transferOption?: TransferOption
   guestWhatsApp?: string
+  /** Website page the guest started from — shown in WhatsApp for attribution. */
+  pageUrl?: string
 }
 
 export function createInvoiceNumber(date = new Date()): string {
@@ -264,6 +266,8 @@ export function buildInvoiceWhatsAppMessage(invoice: InvoiceDraft): string {
       : `*Amount due:* ${formatIdr(due)}`,
   )
   if (invoice.createdBy) lines.push(`*Prepared by:* ${invoice.createdBy}`)
+  const fromPage = resolveWhatsAppPageUrl(invoice.pageUrl)
+  if (fromPage) lines.push(`*From website:* ${fromPage}`)
   lines.push('')
   lines.push(formatPaymentWhatsAppNote())
   lines.push('')
@@ -383,7 +387,11 @@ export function buildInvoiceShareUrl(invoice: InvoiceDraft, origin?: string): st
 }
 
 export function buildInvoiceWhatsAppUrl(invoice: InvoiceDraft): string {
-  return `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(buildInvoiceWhatsAppMessage(invoice))}`
+  const withPage: InvoiceDraft = {
+    ...invoice,
+    pageUrl: resolveWhatsAppPageUrl(invoice.pageUrl),
+  }
+  return `${CONTACT_WHATSAPP_URL}?text=${encodeURIComponent(buildInvoiceWhatsAppMessage(withPage))}`
 }
 
 export function buildPaymentConfirmationWhatsAppUrl(invoice: InvoiceDraft): string {

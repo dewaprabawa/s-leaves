@@ -11,7 +11,7 @@ import {
   getSwingCookingCombo,
 } from "@/data/cultureSales"
 import { GRIYA_BEJI_SALES } from "@/data/griyaBeji"
-import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
+import WhatsAppContactLink from "@/components/WhatsAppContactLink"
 import { SITE_NAME, SITE_URL } from "@/lib/seo"
 import { BOOK_PAGE_KEYWORDS } from "@/data/activityKeywords"
 import { ATV_RAFTING_COMBO_ID } from "@/data/atvRaftingCombo"
@@ -263,15 +263,13 @@ export default async function BookPage({ searchParams }: Props) {
             Starting from {formatIdr(minAdventurePrice)}.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
-            <a
-              href={CONTACT_WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppContactLink
+              pageUrl="/book"
               className="inline-flex items-center gap-2 h-11 px-5 rounded-full border border-brand-green/20 text-brand-green font-semibold text-sm hover:bg-brand-green/5 transition-colors"
             >
               <MessageCircle className="w-4 h-4" />
               Chat on WhatsApp
-            </a>
+            </WhatsAppContactLink>
             <Link
               href="/#pricing"
               className="inline-flex items-center h-11 px-5 rounded-full text-brand-green-light font-medium text-sm hover:text-brand-green transition-colors"
@@ -330,14 +328,12 @@ export default async function BookPage({ searchParams }: Props) {
             ATV + rafting day, tubing, cycling, cooking, Tirta Empu melukat, Griya Beji waterfall,
             or a combo that fits your day.
           </p>
-          <a
-            href={CONTACT_WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppContactLink
+            pageUrl="/book"
             className="inline-flex items-center justify-center gap-2 h-12 px-8 rounded-full btn-gold-shimmer text-brand-green font-bold text-sm uppercase tracking-wider"
           >
             Get a free recommendation
-          </a>
+          </WhatsAppContactLink>
         </section>
       </div>
     </main>

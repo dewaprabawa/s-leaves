@@ -6,7 +6,7 @@ import {
   JEEP_PRICE_ROWS,
 } from '@/data/jeepGeo'
 import { getQueryAliasLine } from '@/data/activityKeywords'
-import { CONTACT_WHATSAPP_URL } from '@/lib/contact'
+import WhatsAppContactLink from '@/components/WhatsAppContactLink'
 
 /** Answer-first SSR block for Mount Batur jeep tour GEO / AI citability */
 export default function JeepGeoBlock() {
@@ -101,14 +101,12 @@ export default function JeepGeoBlock() {
           Pejeng ricefield cycling
         </Link>
         . Message{' '}
-        <a
-          href={CONTACT_WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+        <WhatsAppContactLink
+          pageUrl="/tours/batur-sunrise-jeep-tour"
           className="font-semibold text-brand-green underline underline-offset-2 hover:text-brand-green-light"
         >
           WhatsApp
-        </a>{' '}
+        </WhatsAppContactLink>{' '}
         with your guest count for the exact per-person quote.
       </p>
     </section>

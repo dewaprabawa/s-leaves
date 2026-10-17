@@ -19,7 +19,7 @@ import {
   type TourCategoryId,
 } from "@/data/tours"
 import { COOKING_GEO_ENTITY } from "@/data/cookingGeo"
-import { CONTACT_WHATSAPP_URL } from "@/lib/contact"
+import WhatsAppContactLink from "@/components/WhatsAppContactLink"
 import { buildWhatsAppConsultationUrl, formatIdr } from "@/lib/whatsapp"
 import PromoPrice from "@/components/PromoPrice"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR } from "@/lib/pricing"
@@ -177,15 +177,13 @@ export default function ExperiencesCatalogClient() {
       {/* Mobile-only sticky CTA when the guest has not built a consultation list yet */}
       {items.length === 0 ? (
       <div className="lg:hidden fixed inset-x-0 bottom-0 z-40 border-t border-brand-green/10 bg-white/95 backdrop-blur px-4 py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] [padding-bottom:max(0.75rem,env(safe-area-inset-bottom))]">
-        <a
-          href={CONTACT_WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+        <WhatsAppContactLink
+          pageUrl="/experiences"
           className="mx-auto flex h-12 w-full max-w-7xl items-center justify-center gap-2 rounded-full btn-gold-shimmer px-6 font-bold text-sm uppercase tracking-wider"
         >
           <MessageCircle className="h-4 w-4" />
           Chat on WhatsApp — no payment to inquire
-        </a>
+        </WhatsAppContactLink>
       </div>
       ) : null}
 
@@ -263,14 +261,12 @@ export default function ExperiencesCatalogClient() {
           <p className="mt-2 text-sm text-brand-green-light">
             Try a different keyword, or message us directly on WhatsApp.
           </p>
-          <a
-            href={CONTACT_WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppContactLink
+            pageUrl="/experiences"
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-green px-6 py-3 text-xs font-bold uppercase tracking-wider text-sand"
           >
             <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
-          </a>
+          </WhatsAppContactLink>
         </div>
       ) : (
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4">

@@ -1,5 +1,6 @@
 import { CYCLING_LIST_IDR, getListPrice } from '@/lib/pricing'
 import { SWING_HEAVEN_PRICE_IDR, SWING_HEAVEN_LUNCH_PRICE_IDR } from '@/data/swingHeaven'
+import { SITE_URL } from '@/lib/seo'
 import { buildWhatsAppBookingUrl, formatIdr } from '@/lib/whatsapp'
 
 /** Shared small-group list / compare-at rate (matches tumangbaliclass.com). */
@@ -119,6 +120,7 @@ export function buildMelukatWhatsAppUrl(guestName = 'Guest') {
     price: MELUKAT_SALES.priceIdr,
     notes:
       'Please confirm a private purification (melukat) on this date. I would like Tirta Empul or Pura Beji (say which). Price is IDR 1,200,000 per person and includes private shuttle (Ubud area), English-speaking guide, offering, sarong, temple entrance, and breakfast. Share hotel name and guest count.',
+    pageUrl: `${SITE_URL}/tours/tirta-empu-purification`,
   })
 }
 
@@ -132,6 +134,7 @@ export function buildCookingClassWhatsAppUrl(guestName = 'Guest') {
     price: COOKING_CLASS_SALES.priceIdr,
     notes:
       'Please confirm Tumang Bali Cooking Class seats (shared promo IDR 450,000 / person, was IDR 506,370; or private IDR 1,000,000 per person). Morning includes market tour. Happy to pair with ricefield cycling the same day.',
+    pageUrl: `${SITE_URL}/tours/balinese-cooking-class`,
   })
 }
 
@@ -144,6 +147,7 @@ export function buildCyclingCookingComboWhatsAppUrl(guestName = 'Guest') {
     price: combo.totalFromIdr,
     notes:
       'Please confirm availability for Pejeng ricefield cycling promo 550K (was 650K, free Ubud pickup + lunch) and an afternoon Tumang Bali Cooking Class on the same date.',
+    pageUrl: `${SITE_URL}/book?activity=combo-cycling-cooking`,
   })
 }
 
@@ -195,5 +199,6 @@ export function buildSwingCookingComboWhatsAppUrl(guestName = 'Guest') {
     price: combo.totalFromIdr,
     notes:
       'Please confirm Swing Heaven in the morning (Bongkasa — not Tegallalang / Happy Swing) and an afternoon Tumang Bali Cooking Class on the same date. Swing Heaven includes the hotel driver (required, no self-meet). Cooking includes free Ubud pickup. Say lunch package or dress hire if you want them.',
+    pageUrl: `${SITE_URL}/book?activity=combo-swing-cooking`,
   })
 }

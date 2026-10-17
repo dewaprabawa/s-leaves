@@ -3,7 +3,8 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { Mail, Phone, MapPin, Clock, Building2, Navigation, Mountain, MessageCircle, ArrowRight } from "lucide-react"
 import ContactFormClient from "./ContactFormClient"
-import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from "@/lib/contact"
+import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/contact"
+import WhatsAppContactLink from "@/components/WhatsAppContactLink"
 import {
   ACTIVITY_BASE,
   CORPORATE_OFFICE,
@@ -76,15 +77,13 @@ export default function ContactPage() {
             </strong>
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
-            <a
-              href={CONTACT_WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppContactLink
+              pageUrl="/contact"
               className="inline-flex items-center gap-2 h-11 px-6 rounded-full btn-gold-shimmer font-bold text-sm uppercase tracking-wider"
             >
               <MessageCircle className="w-4 h-4" />
               Chat on WhatsApp
-            </a>
+            </WhatsAppContactLink>
             <Link
               href="/book"
               className="inline-flex items-center gap-2 h-11 px-6 rounded-full border border-brand-green/20 text-brand-green font-semibold text-sm hover:bg-brand-green/5 transition-colors"
@@ -118,10 +117,8 @@ export default function ContactPage() {
               </div>
             </a>
 
-            <a
-              href={CONTACT_WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppContactLink
+              pageUrl="/contact"
               className="block bg-white border border-brand-green/10 p-6 hover:border-accent-gold/40 transition-colors"
             >
               <div className="flex items-start gap-4">
@@ -140,7 +137,7 @@ export default function ContactPage() {
                   </span>
                 </div>
               </div>
-            </a>
+            </WhatsAppContactLink>
 
             <div className="bg-white border border-brand-green/10 p-6">
               <div className="flex items-start gap-4">

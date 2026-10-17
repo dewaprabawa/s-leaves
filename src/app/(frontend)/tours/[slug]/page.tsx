@@ -1328,7 +1328,6 @@ export default async function TourPage({ params }: Props) {
                       variant="inline"
                     />
                   ) : null}
-                  {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="inline" /> : null}
                   {isPayOnSpotTour(tour.slug) ? <PayOnSpotNote variant="inline" /> : null}
                   {isRequiredShuttleTour(tour) ? (
                     <span className="inline-flex rounded-full bg-accent-gold px-3 py-1 text-xs font-bold uppercase tracking-wider text-white">

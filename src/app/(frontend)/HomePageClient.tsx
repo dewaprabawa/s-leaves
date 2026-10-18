@@ -279,7 +279,7 @@ const travelGuides = [
   },
   {
     title: "Aloha Ubud Swing Price 2026",
-    excerpt: "Tegallalang Active Package IDR 400K, Entrance 50K, required shuttle 400K/650K. Not Swing Heaven.",
+    excerpt: "Tegallalang Active Package IDR 450K (includes required 50K fee), Entrance 50K, required shuttle 400K/650K. Not Swing Heaven.",
     href: "/blog/aloha-ubud-swing-price-2026",
   },
   {

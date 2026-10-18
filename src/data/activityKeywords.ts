@@ -987,7 +987,7 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
   ],
   'aloha-ubud-swing-price-2026': [
     'Aloha Ubud Swing price 2026',
-    'Aloha Active Package 400000',
+    'Aloha Active Package 450000',
     'Aloha Entrance Package 50000',
     'Tegallalang swing price Ubud',
   ],

@@ -539,7 +539,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | Whitewater rafting | **500,000** · **450,000** for 2+ | 3 hrs | IDR 400K or self-meet | [Rafting](/tours/whitewater-rafting) |
 | Canyon tubing | **500,000** · **450,000** for 2+ | 2.5 hrs | IDR 400K or self-meet | [Tubing](/tours/canyon-tubing) |
 | Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | Required shuttle 400K Ubud / 650K south | [Swing Heaven](/tours/swing-heaven-bali) |
-| Aloha Ubud Swing | **400,000** Active · **50,000** Entrance | 1.5–2.5 hrs | Required shuttle 400K Ubud / 650K south | [Aloha](/tours/aloha-ubud-swing) |
+| Aloha Ubud Swing | **450,000** Active · **50,000** Entrance | 1.5–2.5 hrs | Required shuttle 400K Ubud / 650K south | [Aloha](/tours/aloha-ubud-swing) |
 | Griya Beji Waterfall | **300,000** · palm **1,000,000** · healing **1,500,000** | 1–2.5 hrs | IDR 400K or self-meet Punggul | [Griya Beji](/tours/griya-beji-waterfall) |
 | Tirta Empu Purification | **1,200,000** private | 3–4 hrs | Shuttle included (Ubud) | [Tirta Empul / Beji](/tours/tirta-empu-purification) |
 | Private Batur jeep | from **750,000** (3+ tracking) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
@@ -576,7 +576,7 @@ Same-day combo: morning ride + afternoon kitchen. [Cycling + cooking itinerary](
 
 **[Swing Heaven Bali](/tours/swing-heaven-bali)** is the Bongkasa jungle park over the Ayung River — **IDR 530,000** (tea/coffee/water + insurance) or **IDR 630,000** with lunch, 14 photo spots, own-phone photos. Flying dress hire **IDR 300,000**. **Required shuttle IDR 400,000 Ubud / 650,000 south** — no self-meet. Guides: [Swing Heaven Ubud](/blog/swing-heaven-bali-ubud-guide) · [vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location).
 
-**[Aloha Ubud Swing](/tours/aloha-ubud-swing)** is the Tegallalang park on **Jl. Raya Tegallalang** — **Active Package IDR 400,000** (eight activities once each) or **Entrance IDR 50,000** (chicken nest only). Optional dress and photographer add-ons. **Required shuttle IDR 400,000 Ubud / 650,000 south** — no self-meet. It is **not** Swing Heaven. Guides: [Aloha price 2026](/blog/aloha-ubud-swing-price-2026) · [vs Swing Heaven](/blog/aloha-ubud-swing-vs-swing-heaven-2026) · [Tegallalang guide](/blog/aloha-ubud-swing-tegallalang-guide-2026).
+**[Aloha Ubud Swing](/tours/aloha-ubud-swing)** is the Tegallalang park on **Jl. Raya Tegallalang** — **Active Package IDR 450,000** (eight activities + required IDR 50,000 park fee) or **Entrance IDR 50,000** (chicken nest only). Optional dress and photographer add-ons. **Required shuttle IDR 400,000 Ubud / 650,000 south** — no self-meet. It is **not** Swing Heaven. Guides: [Aloha price 2026](/blog/aloha-ubud-swing-price-2026) · [vs Swing Heaven](/blog/aloha-ubud-swing-vs-swing-heaven-2026) · [Tegallalang guide](/blog/aloha-ubud-swing-tegallalang-guide-2026).
 
 ## Culture & healing
 

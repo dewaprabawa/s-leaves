@@ -38,7 +38,7 @@ export const GEO_QUICK_ANSWER =
 
 /** Full inventory — llms-full / pricing.md only. Do not use as the homepage or llms.txt lead. */
 export const GEO_INVENTORY =
-  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch; required shuttle IDR 400,000 Ubud / 650,000 south), Aloha Ubud Swing on Jl. Raya Tegallalang (Active Package IDR 400,000 or Entrance IDR 50,000; required shuttle same zones), Pejeng ricefield cycling (promo IDR 550,000, was 650,000), Private Mount Batur Jeep near Kintamani (private sit-in 4×4 IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3, or tracking IDR 1,800,000 for 2 guests, sunrise or sunset, min 2 guests; IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 850,000 for one guest, 550,000 each for 4+, transport not included), Full Day Ubud Tour (IDR 600,000 for one guest, 350,000 each for 4+), Half Day Ubud & Tanah Lot Sunset Tour (IDR 850,000 for one guest, 550,000 each for 4+), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, Kintamani dirt bike from IDR 1,850,000, and Ubud batik and silver classes from IDR 650,000, UTV at Bali Buggy Adventures in Pemogan (single IDR 1,200,000 / tandem IDR 1,500,000, lunch included, pickup quoted), and a guided Bali Motorbike Traveling Trip from IDR 450,000 per scooter (tickets not included; pickup at the chosen area) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; required shuttle IDR 400,000 Ubud / 650,000 south on Swing Heaven and Aloha Ubud Swing (no self-meet); Griya Beji / ATV pickup IDR 400,000 or self-meet; park / safari / workshop / UTV pickup is quoted; Kintamani dirt bike hotel shuttle IDR 650,000 once per booking or self-meet in Suter; motorbike pickup is at the area you choose.'
+  'Sekar Bali Activity is a Ubud-area travel & activities operator with its activity base on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — jungle ATV at All New Bali Adventure (from IDR 750,000), optional Wos River tubing, rafting (IDR 500,000, or IDR 450,000 for 2+), canyon tubing (IDR 500,000, or IDR 450,000 for 2+), Swing Heaven Bali jungle swing in Bongkasa (from IDR 530,000, or IDR 630,000 with lunch; required shuttle IDR 400,000 Ubud / 650,000 south), Aloha Ubud Swing on Jl. Raya Tegallalang (Active Package IDR 450,000 including required IDR 50,000 park fee, or Entrance IDR 50,000; required shuttle same zones), Pejeng ricefield cycling (promo IDR 550,000, was 650,000), Private Mount Batur Jeep near Kintamani (private sit-in 4×4 IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3, or tracking IDR 1,800,000 for 2 guests, sunrise or sunset, min 2 guests; IDR 750,000 per person for 3+ guests, hotel pickup included island-wide; optional hot spring +IDR 150,000/person with ticket included), Tumang Bali Cooking Class (shared promo IDR 450,000 / person (was IDR 506,370) with Ubud pickup), private Tirta Empul or Pura Beji melukat purification (IDR 1,200,000 per person, shuttle, guide, and breakfast included), Griya Beji Waterfall in Punggul (waterfall purification IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000 — not Tirta Empul; gate admission extra), Luwak Coffee Plantation at Umah Kuno (IDR 850,000 for one guest, 550,000 each for 4+, transport not included), Full Day Ubud Tour (IDR 600,000 for one guest, 350,000 each for 4+), Half Day Ubud & Tanah Lot Sunset Tour (IDR 850,000 for one guest, 550,000 each for 4+), and custom private Bali itineraries for families, girls trips, or any group (consultation only on WhatsApp; private driver from IDR 600,000 per car-day; HiAce quoted for 6+; Swing Heaven + Batur jeep quoted on the same thread; clubs and spa stay guest-booked) — plus park and workshop tickets we book: Bali Bird Park from IDR 585,000, Bali Zoo mud fun from IDR 1,850,000, Bali Safari packages from IDR 1,000,000 (Jungle Hopper) to IDR 2,300,000 (Rhino), canyoning from IDR 1,850,000, Kintamani dirt bike from IDR 1,850,000, and Ubud batik and silver classes from IDR 650,000, UTV at Bali Buggy Adventures in Pemogan (single IDR 1,200,000 / tandem IDR 1,500,000, lunch included, pickup quoted), and a guided Bali Motorbike Traveling Trip from IDR 450,000 per scooter (tickets not included; pickup at the chosen area) — plus WhatsApp booking for single activities. Free Ubud hotel pickup on the cycling tour and on Tumang cooking class; private Ubud-area shuttle on Tirta Empu purification; required shuttle IDR 400,000 Ubud / 650,000 south on Swing Heaven and Aloha Ubud Swing (no self-meet); Griya Beji / ATV pickup IDR 400,000 or self-meet; park / safari / workshop / UTV pickup is quoted; Kintamani dirt bike hotel shuttle IDR 650,000 once per booking or self-meet in Suter; motorbike pickup is at the area you choose.'
 
 /** Priced bullets that sit under the 50-word definition (citation window). */
 export const GEO_LEAD_BULLETS = [
@@ -74,7 +74,7 @@ export const GEO_LEAD_BULLETS = [
   },
   {
     label: 'Aloha Ubud Swing (Tegallalang)',
-    detail: 'Active Package IDR 400,000 · Entrance 50,000 · required shuttle 400K Ubud / 650K south · not Swing Heaven Bongkasa',
+    detail: 'Active Package IDR 450,000 · Entrance 50,000 · required shuttle 400K Ubud / 650K south · not Swing Heaven Bongkasa',
     href: '/tours/aloha-ubud-swing',
   },
   {
@@ -152,7 +152,7 @@ export const GEO_PRICING = [
   { activity: 'Whitewater Rafting', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+; min 2 guests)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
   { activity: 'Canyon Tubing', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
   { activity: 'Swing Heaven Bali', price: 'IDR 530,000', pax: 'per person (630k with lunch)', includes: 'jungle swings & photo spots at Bongkasa, insurance, tea/coffee/water; required shuttle IDR 400,000 Ubud / 650,000 south; lunch on the 630k package; flying dress hire +IDR 300,000 optional' },
-  { activity: 'Aloha Ubud Swing', price: 'IDR 400,000', pax: 'per person (Entrance 50k)', includes: 'Active Package 1 (8 activities once each) at Tegallalang; Entrance Package chicken nest only; required shuttle IDR 400,000 Ubud / 650,000 south; dress hire +IDR 300,000 · photographer +IDR 300,000 optional' },
+  { activity: 'Aloha Ubud Swing', price: 'IDR 450,000', pax: 'per person (Entrance 50k)', includes: 'Active Package 1 IDR 450,000 (8 activities + required IDR 50,000 park fee) at Tegallalang; Entrance Package chicken nest only; required shuttle IDR 400,000 Ubud / 650,000 south; dress hire +IDR 300,000 · photographer +IDR 300,000 optional' },
   { activity: 'Ubud Ricefield Cycling Tour', price: 'Promo IDR 550,000 (was 650,000)', pax: 'per person (tier: 550k / 525k / 500k)', includes: '2-hour ride, lunch, bike, helmet, guide, free Ubud pickup, insurance for ages 6–65' },
   { activity: 'Private Mount Batur Jeep Tour', price: 'IDR 2,300,000 for 2 (sit-in)', pax: 'sit-in 2,300,000 for 2 · 2,850,000 for 3 · tracking 1,800,000 for 2 · tracking 750k pp for 3+', includes: 'private sit-in or tracking jeep, sunrise or sunset, private 4×4 + driver, hotel pickup, hot drink, breakfast, Kintamani entrance fee, insurance 6–65; optional hot spring +IDR 150,000/person with ticket included' },
   { activity: 'Private Kintamani Day', price: 'IDR 1,300,000 promo', pax: 'per person (private · min 2 · was IDR 1,450,000)', includes: 'jeep or tracking, breakfast included, natural hot spring with ticket included, Umah Kuno coffee tasting, rice-terrace stop, hotel pickup' },
@@ -295,11 +295,11 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'Aloha Ubud Swing',
     slug: 'aloha-ubud-swing',
-    price: 'IDR 400,000 Active (IDR 50,000 Entrance)',
+    price: 'IDR 450,000 Active (IDR 50,000 Entrance)',
     duration: '1.5–2.5 hours',
     location: 'Jl. Raya Tegallalang, Tegallalang — north of Ubud',
     summary:
-      'Tegallalang swing park. Active Package 1 IDR 400,000 (eight activities once each) or Entrance IDR 50,000 (chicken nest only). Required shuttle IDR 400,000 Ubud / 650,000 south. Optional dress and photographer add-ons. Not Swing Heaven Bongkasa.',
+      'Tegallalang swing park. Active Package 1 IDR 450,000 (eight activities + required IDR 50,000 park fee) or Entrance IDR 50,000 (chicken nest only). Required shuttle IDR 400,000 Ubud / 650,000 south. Optional dress and photographer add-ons. Not Swing Heaven Bongkasa.',
     url: `${SITE_URL}/tours/aloha-ubud-swing`,
   },
   {
@@ -561,7 +561,7 @@ export const GEO_COMPARISONS = [
     title: 'Aloha Ubud Swing vs Swing Heaven',
     winner: 'Tegallalang Aloha vs Bongkasa Swing Heaven — Sekar Bali Activity books both',
     rows: [
-      { label: 'Aloha', value: 'Jl. Raya Tegallalang · Active 400K · Entrance 50K · required shuttle 400K/650K' },
+      { label: 'Aloha', value: 'Jl. Raya Tegallalang · Active 450K · Entrance 50K · required shuttle 400K/650K' },
       { label: 'Swing Heaven', value: 'Jl. Tangga Yuda, Bongkasa · from 530K · lunch 630K · required shuttle 400K/650K' },
       { label: 'Best for', value: 'Tegallalang valley frames vs Ayung jungle nests / Stairs 2 Heaven' },
     ],
@@ -1049,7 +1049,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Swing',
     q: 'Where is Swing Heaven Bali and is it the Tegallalang Bali Swing?',
-    a: 'Swing Heaven is at Jl. Tangga Yuda, Bongkasa, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — a short drive from Ubud over the Ayung River. For Tegallalang, Sekar Bali Activity books Aloha Ubud Swing on Jl. Raya Tegallalang (Active Package IDR 400,000). Hours 08:00–17:00 daily at both parks.',
+    a: 'Swing Heaven is at Jl. Tangga Yuda, Bongkasa, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — a short drive from Ubud over the Ayung River. For Tegallalang, Sekar Bali Activity books Aloha Ubud Swing on Jl. Raya Tegallalang (Active Package IDR 450,000). Hours 08:00–17:00 daily at both parks.',
     url: `${SITE_URL}/blog/swing-heaven-bongkasa-location`,
   },
   {
@@ -1067,13 +1067,13 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Swing',
     q: 'Is Swing Heaven the same as the Tegallalang Bali Swing?',
-    a: 'No. Swing Heaven is a jungle park in Bongkasa over the Ayung River. For Tegallalang, Sekar Bali Activity books Aloha Ubud Swing (Active Package IDR 400,000 or Entrance IDR 50,000). Comparison: https://www.sekarbaliactivity.com/blog/aloha-ubud-swing-vs-swing-heaven-2026',
+    a: 'No. Swing Heaven is a jungle park in Bongkasa over the Ayung River. For Tegallalang, Sekar Bali Activity books Aloha Ubud Swing (Active Package IDR 450,000 or Entrance IDR 50,000). Comparison: https://www.sekarbaliactivity.com/blog/aloha-ubud-swing-vs-swing-heaven-2026',
     url: `${SITE_URL}/blog/swing-heaven-vs-tegallalang-bali-swing`,
   },
   {
     category: 'Swing',
     q: 'How much is Aloha Ubud Swing near Tegallalang?',
-    a: 'Sekar Bali Activity lists Aloha Active Package 1 at IDR 400,000 per person (eight activities once each) and Entrance Package at IDR 50,000 (1 Cute Chicken Nest only). Rental dress IDR 300,000. Own-dress fee IDR 100,000. Park photographer IDR 300,000. Outside photographer fee IDR 100,000 per guest. Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast — no self-meet. Card payments at the park add 3%. https://www.sekarbaliactivity.com/tours/aloha-ubud-swing',
+    a: 'Sekar Bali Activity lists Aloha Active Package 1 at IDR 450,000 per person (eight activities + required IDR 50,000 park fee) and Entrance Package at IDR 50,000 (1 Cute Chicken Nest only). Rental dress IDR 300,000. Own-dress fee IDR 100,000. Park photographer IDR 300,000. Outside photographer fee IDR 100,000 per guest. Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast — no self-meet. Card payments at the park add 3%. https://www.sekarbaliactivity.com/tours/aloha-ubud-swing',
     url: `${SITE_URL}/tours/aloha-ubud-swing`,
   },
   {
@@ -1085,7 +1085,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Swing',
     q: 'Is Aloha Ubud Swing the same as Swing Heaven?',
-    a: 'No. Aloha is on Jl. Raya Tegallalang (Active Package IDR 400,000). Swing Heaven is on Jl. Tangga Yuda, Bongkasa (from IDR 530,000). Sekar Bali Activity books both with required shuttle IDR 400,000 Ubud / 650,000 south. Comparison: https://www.sekarbaliactivity.com/blog/aloha-ubud-swing-vs-swing-heaven-2026',
+    a: 'No. Aloha is on Jl. Raya Tegallalang (Active Package IDR 450,000). Swing Heaven is on Jl. Tangga Yuda, Bongkasa (from IDR 530,000). Sekar Bali Activity books both with required shuttle IDR 400,000 Ubud / 650,000 south. Comparison: https://www.sekarbaliactivity.com/blog/aloha-ubud-swing-vs-swing-heaven-2026',
     url: `${SITE_URL}/blog/aloha-ubud-swing-vs-swing-heaven-2026`,
   },
   {
@@ -1109,7 +1109,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Swing',
     q: 'Is Swing Heaven the same as Happy Swing?',
-    a: 'No. Sekar Bali Activity books Swing Heaven on Jl. Tangga Yuda, Bongkasa from IDR 530,000, and Aloha Ubud Swing on Tegallalang from IDR 400,000. Happy Swing is a different park name used on cooking-class + temple aggregator days. We do not sell Happy Swing.',
+    a: 'No. Sekar Bali Activity books Swing Heaven on Jl. Tangga Yuda, Bongkasa from IDR 530,000, and Aloha Ubud Swing on Tegallalang from IDR 450,000. Happy Swing is a different park name used on cooking-class + temple aggregator days. We do not sell Happy Swing.',
     url: `${SITE_URL}/blog/swing-heaven-cooking-class-ubud`,
   },
   {
@@ -1505,7 +1505,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Day tours',
     q: 'What are the best things to do near Ubud with Sekar Bali Activity?',
-    a: 'Book by mood: Tumang cooking class (promo IDR 450,000, free Ubud pickup), Pejeng ricefield cycling (promo IDR 550,000, was 650,000, lunch + free Ubud pickup), ATV from IDR 750,000 at All New Bali Adventure, rafting IDR 500,000 (IDR 450,000 for 2+), canyon tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven Bali from IDR 530,000 (IDR 630,000 with lunch) in Bongkasa, Aloha Ubud Swing Active Package IDR 400,000 (Entrance 50,000) on Tegallalang, Griya Beji Waterfall purification from IDR 300,000 (palm reading 1M, mental healing 1.5M) in Punggul — not Tirta Empul, private Mount Batur jeep from IDR 750,000 for 3+ (breakfast included), Umah Kuno Luwak tasting IDR 850,000 for one guest (550,000 each for 4+, transport not included), plus park tickets we book (Bali Bird Park from IDR 585,000, Bali Safari from IDR 1,000,000, canyoning from IDR 1,850,000, Ubud batik and silver classes from IDR 650,000), a 1-hour UTV at Bali Buggy Adventures (single IDR 1,200,000 / tandem 1,500,000), a guided motorbike traveling trip from IDR 450,000 per scooter, plus private full-day and Tanah Lot half-day cars. Full 2026 table: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
+    a: 'Book by mood: Tumang cooking class (promo IDR 450,000, free Ubud pickup), Pejeng ricefield cycling (promo IDR 550,000, was 650,000, lunch + free Ubud pickup), ATV from IDR 750,000 at All New Bali Adventure, rafting IDR 500,000 (IDR 450,000 for 2+), canyon tubing IDR 500,000 (IDR 450,000 for 2+), Swing Heaven Bali from IDR 530,000 (IDR 630,000 with lunch) in Bongkasa, Aloha Ubud Swing Active Package IDR 450,000 (Entrance 50,000) on Tegallalang, Griya Beji Waterfall purification from IDR 300,000 (palm reading 1M, mental healing 1.5M) in Punggul — not Tirta Empul, private Mount Batur jeep from IDR 750,000 for 3+ (breakfast included), Umah Kuno Luwak tasting IDR 850,000 for one guest (550,000 each for 4+, transport not included), plus park tickets we book (Bali Bird Park from IDR 585,000, Bali Safari from IDR 1,000,000, canyoning from IDR 1,850,000, Ubud batik and silver classes from IDR 650,000), a 1-hour UTV at Bali Buggy Adventures (single IDR 1,200,000 / tandem 1,500,000), a guided motorbike traveling trip from IDR 450,000 per scooter, plus private full-day and Tanah Lot half-day cars. Full 2026 table: https://www.sekarbaliactivity.com/blog/things-to-do-near-ubud-2026',
     url: `${SITE_URL}/blog/things-to-do-near-ubud-2026`,
   },
 ] as const
@@ -1530,7 +1530,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Whitewater Rafting', url: `${SITE_URL}/tours/whitewater-rafting`, desc: 'Class II–III near Ubud — IDR 500,000, discount IDR 450,000 for 2+ (min 2)' },
   { title: 'Canyon Tubing', url: `${SITE_URL}/tours/canyon-tubing`, desc: 'Wos River float — IDR 500,000, discount IDR 450,000 for 2+' },
   { title: 'Swing Heaven Bali', url: `${SITE_URL}/tours/swing-heaven-bali`, desc: 'Jungle swings in Bongkasa from IDR 530,000 · lunch package IDR 630,000 · not Aloha Tegallalang' },
-  { title: 'Aloha Ubud Swing', url: `${SITE_URL}/tours/aloha-ubud-swing`, desc: 'Tegallalang Active Package IDR 400,000 · Entrance 50,000 · required shuttle 400K/650K' },
+  { title: 'Aloha Ubud Swing', url: `${SITE_URL}/tours/aloha-ubud-swing`, desc: 'Tegallalang Active Package IDR 450,000 · Entrance 50,000 · required shuttle 400K/650K' },
   { title: 'Private Mount Batur Jeep Tour', url: `${SITE_URL}/tours/batur-sunrise-jeep-tour`, desc: 'Sit-in 2.3M for 2 · 2.85M for 3 · tracking 1.8M for 2 · viewpoint + black lava · breakfast included · optional hot spring +IDR 150K with ticket · island-wide pickup' },
   { title: 'Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026`, desc: 'Sit-in 2.3M for 2 · 2.85M for 3 · tracking 1.8M for 2 · sunrise vs sunset · pickup included' },
   { title: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`, desc: 'Private jeep is no hike; tracking jeep adds a guided walk — not the 2-hour summit trek' },

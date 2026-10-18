@@ -381,7 +381,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Aloha Ubud Swing price 2026',
       href: '/blog/aloha-ubud-swing-price-2026',
-      blurb: 'Active 400K · Entrance 50K · dress & photographer add-ons.',
+      blurb: 'Active 450K · Entrance 50K · dress & photographer add-ons.',
     },
     {
       title: 'Tegallalang location guide',
@@ -428,7 +428,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Aloha Ubud Swing (Tegallalang)',
       href: '/tours/aloha-ubud-swing',
-      blurb: 'Tegallalang Active Package IDR 400,000 — different park.',
+      blurb: 'Tegallalang Active Package IDR 450,000 — different park.',
     },
     {
       title: 'Swing Heaven vs Tegallalang',

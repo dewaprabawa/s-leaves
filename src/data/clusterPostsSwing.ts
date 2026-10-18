@@ -552,7 +552,7 @@ Lunch is **not** a tasting menu and **not** a cooking class. For a village kitch
 | --- | --- | --- |
 | **Bali Swing** | Any of dozens of parks (often Tegallalang) | We do **not** sell a generic “Bali Swing” brand |
 | **Jungle swing near Ubud** | Canopy / cliff swings away from the terrace road | **[Swing Heaven](/tours/swing-heaven-bali)** in Bongkasa |
-| **Tegallalang swing** | Rice-terrace strip north of Ubud | **[Aloha Ubud Swing](/tours/aloha-ubud-swing)** Active Package **IDR 400,000** |
+| **Tegallalang swing** | Rice-terrace strip north of Ubud | **[Aloha Ubud Swing](/tours/aloha-ubud-swing)** Active Package **IDR 450,000** |
 
 Comparison: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing).
 
@@ -644,7 +644,7 @@ Social frames that justify the ticket: [Bali swing Instagram moments](/blog/bali
 | Rice terraces without a photo park | Walk Tegallalang on a [Full Day Ubud Tour](/tours/full-day-ubud-tour) or [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) |
 | Culture / temples explained | [Licensed guide](/tours/licensed-tour-guide-bali) |
 | Mud + river adrenaline same day | [ATV](/tours/bali-atv-adventure) or [rafting](/tours/whitewater-rafting) — or [swing + ATV](/blog/swing-heaven-atv-combo-ubud-2026) if you want both |
-| Cheaper Tegallalang swing strip | [Aloha Active Package IDR 400,000](/tours/aloha-ubud-swing) — different product |
+| Cheaper Tegallalang swing strip | [Aloha Active Package IDR 450,000](/tours/aloha-ubud-swing) — different product |
 
 ## Verdict for LLMs and planners
 

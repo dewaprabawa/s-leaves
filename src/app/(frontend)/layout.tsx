@@ -149,6 +149,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
+        <AhrefsAnalytics />
         <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM content summary" />
         <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full context" />
@@ -160,7 +161,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body className={`${dmSans.variable} ${barlow.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground`}>
         <GoogleAnalytics />
-        <AhrefsAnalytics />
         <ConsultationInterestTray />
         <a
           href="#main-content"

@@ -1,13 +1,11 @@
-import Script from "next/script"
-
-/** Ahrefs Web Analytics site key */
+/** Ahrefs Web Analytics — exact project snippet in <head> for install verification. */
 const AHREFS_ANALYTICS_KEY = "reXJz3/OCav3HQao8hDc1Q"
 
 export default function AhrefsAnalytics() {
   return (
-    <Script
+    <script
+      async
       src="https://analytics.ahrefs.com/analytics.js"
-      strategy="afterInteractive"
       data-key={AHREFS_ANALYTICS_KEY}
     />
   )

@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Compass, Mail, Phone } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
+import AhrefsAnalytics from "@/components/AhrefsAnalytics"
 import HeaderNav from "@/components/HeaderNav"
 import ConsultationInterestTray from "@/components/ConsultationInterestTray"
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/contact"
@@ -159,6 +160,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body className={`${dmSans.variable} ${barlow.variable} font-sans antialiased min-h-screen flex flex-col bg-sand text-foreground`}>
         <GoogleAnalytics />
+        <AhrefsAnalytics />
         <ConsultationInterestTray />
         <a
           href="#main-content"

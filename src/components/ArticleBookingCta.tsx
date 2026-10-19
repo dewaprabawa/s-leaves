@@ -678,7 +678,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'swing-heaven-vs-tegallalang-bali-swing': {
     headline: 'Book Bongkasa or Tegallalang — we sell both',
-    body: 'Swing Heaven from IDR 530,000 over the Ayung River, or Aloha Ubud Swing Active Package IDR 400,000 on Tegallalang. Both require shuttle.',
+    body: 'Swing Heaven from IDR 530,000 over the Ayung River, or Aloha Ubud Swing Active Package IDR 450,000 on Tegallalang. Both require shuttle.',
     primaryHref: '/tours/swing-heaven-bali',
     primaryLabel: 'View Swing Heaven',
     secondaryHref: '/tours/aloha-ubud-swing',
@@ -686,7 +686,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'aloha-ubud-swing-price-2026': {
     headline: 'Book Aloha Ubud Swing from IDR 400K',
-    body: 'Active Package IDR 400,000 · Entrance 50,000 · dress and photographer add-ons. Required shuttle 400K Ubud / 650K south.',
+    body: 'Active Package IDR 450,000 (includes required 50K park fee) · Entrance 50,000 · dress and photographer add-ons. Required shuttle 400K Ubud / 650K south.',
     primaryHref: '/tours/aloha-ubud-swing',
     primaryLabel: 'Book Aloha',
     secondaryHref: '/blog/aloha-ubud-swing-vs-swing-heaven-2026',
@@ -694,7 +694,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'aloha-ubud-swing-tegallalang-guide-2026': {
     headline: 'Book Aloha on Jl. Raya Tegallalang',
-    body: 'Hours 08:00–17:00. Active Package IDR 400,000 or Entrance 50,000. Required shuttle — no self-meet.',
+    body: 'Hours 08:00–17:00. Active Package IDR 450,000 or Entrance 50,000. Required shuttle — no self-meet.',
     primaryHref: '/tours/aloha-ubud-swing',
     primaryLabel: 'Book Aloha',
     secondaryHref: '/blog/aloha-ubud-swing-price-2026',
@@ -702,7 +702,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'aloha-ubud-swing-vs-swing-heaven-2026': {
     headline: 'Pick Tegallalang or Bongkasa',
-    body: 'Aloha Active Package IDR 400,000 on Tegallalang, or Swing Heaven from IDR 530,000 in Bongkasa. Both need required shuttle.',
+    body: 'Aloha Active Package IDR 450,000 on Tegallalang, or Swing Heaven from IDR 530,000 in Bongkasa. Both need required shuttle.',
     primaryHref: '/tours/aloha-ubud-swing',
     primaryLabel: 'Book Aloha',
     secondaryHref: '/tours/swing-heaven-bali',

@@ -6,15 +6,15 @@ export const ALOHA_CLUSTER_POSTS = [
     title: 'Aloha Ubud Swing Price 2026: Active Package, Entrance, Dress & Photographer',
     seoTitle: 'Aloha Ubud Swing Price | 400K Active 2026',
     excerpt:
-      'Aloha Ubud Swing Tegallalang 2026 prices: Active Package IDR 400,000 (8 activities), Entrance 50,000, dress 300,000, photographer 300,000, required shuttle 400,000 Ubud / 650,000 south.',
+      'Aloha Ubud Swing Tegallalang 2026 prices: Active Package IDR 450,000 (8 activities + required 50K fee), Entrance 50,000, dress 300,000, photographer 300,000, required shuttle 400,000 Ubud / 650,000 south.',
     publishedAt: '2026-10-16',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/aloha-ubud-swing/single-swing.jpg',
     content: `
-**How much is Aloha Ubud Swing in 2026?** Sekar Bali Activity books the Tegallalang park on **Jl. Raya Tegallalang** from **IDR 400,000** per person for **Active Package 1** (eight activities once each) or **IDR 50,000** for the **Entrance Package** (1 Cute Chicken Nest only). Optional **rental dress IDR 300,000**, **own-dress fee IDR 100,000**, **park photographer IDR 300,000**, **outside photographer fee IDR 100,000** per guest. Required private shuttle **IDR 400,000 from Ubud** or **IDR 650,000 from the south coast** — once per booking, no self-meet. Card payments at the park add **3%**. [Book Aloha Ubud Swing](/tours/aloha-ubud-swing) — WhatsApp, **no payment to inquire**.
+**How much is Aloha Ubud Swing in 2026?** Sekar Bali Activity books the Tegallalang park on **Jl. Raya Tegallalang** from **IDR 450,000** per person for **Active Package 1** (eight activities once each + required **IDR 50,000** park fee — not optional) or **IDR 50,000** for the **Entrance Package** (1 Cute Chicken Nest only). Optional **rental dress IDR 300,000**, **own-dress fee IDR 100,000**, **park photographer IDR 300,000**, **outside photographer fee IDR 100,000** per guest. Required private shuttle **IDR 400,000 from Ubud** or **IDR 650,000 from the south coast** — once per booking, no self-meet. Card payments at the park add **3%**. [Book Aloha Ubud Swing](/tours/aloha-ubud-swing) — WhatsApp, **no payment to inquire**.
 
 > **Key Takeaways**
-> - **Active Package IDR 400,000** · eight activities **once** each
+> - **Active Package IDR 450,000** · eight activities **once** each + required **IDR 50,000** park fee
 > - **Entrance Package IDR 50,000** · chicken nest only
 > - **Dress IDR 300,000** · own dress **+100,000** · photographer **300,000** / outside **100,000**
 > - **Shuttle IDR 400,000 Ubud / 650,000 south** — required
@@ -24,7 +24,7 @@ export const ALOHA_CLUSTER_POSTS = [
 
 | Option | Price | What you get |
 | --- | --- | --- |
-| **Active Package 1** | **400,000** / person | Adrenaline, Libra, Single, Tandem, Bed Swing, Chicken Nest, Bird Nest, Swan Lovers — once each |
+| **Active Package 1** | **450,000** / person | 8 activities once each + **required IDR 50,000 park fee** (not optional) |
 | **Entrance Package** | **50,000** / person | 1 Cute Chicken Nest only |
 | **Rental dress** | **300,000** / dress | Optional · confirm size/colour |
 | **Own special dress fee** | **100,000** / dress | Must meet park safety standards |
@@ -37,7 +37,7 @@ export const ALOHA_CLUSTER_POSTS = [
 
 | You want… | Book |
 | --- | --- |
-| Full photo day across swings and nests | **400,000** Active Package |
+| Full photo day across swings and nests | **450,000** Active Package |
 | Quick chicken-nest frame only | **50,000** Entrance |
 | Flying-dress portraits | Add **rental dress** (or own-dress fee) |
 | Pro photos | Add **park photographer** or outside fee |
@@ -49,9 +49,9 @@ Location and hours: [Aloha Tegallalang guide](/blog/aloha-ubud-swing-tegallalang
 
 | Guests | Ticket | Shuttle (Ubud) | Dress ×1 | Total |
 | --- | --- | --- | --- | --- |
-| 2 · Active | 2 × 400,000 | 400,000 | — | **1,200,000** |
-| 2 · Active + 1 dress | 2 × 400,000 | 400,000 | 300,000 | **1,500,000** |
-| 2 · Active from Seminyak | 2 × 400,000 | 650,000 | — | **1,450,000** |
+| 2 · Active | 2 × 450,000 | 400,000 | — | **1,300,000** |
+| 2 · Active + 1 dress | 2 × 450,000 | 400,000 | 300,000 | **1,600,000** |
+| 2 · Active from Seminyak | 2 × 450,000 | 650,000 | — | **1,550,000** |
 | 2 · Entrance only | 2 × 50,000 | 400,000 | — | **500,000** |
 
 ## How to book
@@ -68,16 +68,16 @@ Location and hours: [Aloha Tegallalang guide](/blog/aloha-ubud-swing-tegallalang
     title: 'Aloha Ubud Swing Tegallalang Guide 2026: Location, Hours & What to Book',
     seoTitle: 'Aloha Ubud Swing Tegallalang | Guide 2026',
     excerpt:
-      'Aloha Ubud Swing on Jl. Raya Tegallalang near Ubud: hours 08:00–17:00, Active Package IDR 400,000, Entrance 50,000, required shuttle 400K/650K. How to get there and what each package includes.',
+      'Aloha Ubud Swing on Jl. Raya Tegallalang near Ubud: hours 08:00–17:00, Active Package IDR 450,000, Entrance 50,000, required shuttle 400K/650K. How to get there and what each package includes.',
     publishedAt: '2026-10-16',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/aloha-ubud-swing/gate.jpg',
     content: `
-**Where is Aloha Ubud Swing?** On **Jl. Raya Tegallalang, Tegallalang, Kabupaten Gianyar, Bali 80561** — the Tegallalang road north of Ubud. Park hours **08:00–17:00 daily**. Sekar Bali Activity books **Active Package 1 at IDR 400,000** or **Entrance at IDR 50,000**, with a **required private shuttle** (IDR 400,000 Ubud / IDR 650,000 south coast). [Book Aloha](/tours/aloha-ubud-swing).
+**Where is Aloha Ubud Swing?** On **Jl. Raya Tegallalang, Tegallalang, Kabupaten Gianyar, Bali 80561** — the Tegallalang road north of Ubud. Park hours **08:00–17:00 daily**. Sekar Bali Activity books **Active Package 1 at IDR 450,000** or **Entrance at IDR 50,000**, with a **required private shuttle** (IDR 400,000 Ubud / IDR 650,000 south coast). [Book Aloha](/tours/aloha-ubud-swing).
 
 > **Key Takeaways**
 > - Address: **Jl. Raya Tegallalang** · hours **08:00–17:00**
-> - **Active 400K** (8 spots once) · **Entrance 50K** (chicken nest)
+> - **Active 450K** (8 spots + required 50K fee) · **Entrance 50K** (chicken nest)
 > - **Shuttle required** — no self-meet
 > - Different park from [Swing Heaven Bongkasa](/tours/swing-heaven-bali)
 
@@ -116,7 +116,7 @@ Full price table: [Aloha price 2026](/blog/aloha-ubud-swing-price-2026).
     title: 'Aloha Ubud Swing vs Swing Heaven 2026: Tegallalang or Bongkasa?',
     seoTitle: 'Aloha vs Swing Heaven | Which Swing 2026',
     excerpt:
-      'Honest comparison: Aloha Ubud Swing (Tegallalang, from IDR 400,000) vs Swing Heaven (Bongkasa, from IDR 530,000). Different parks, different photos — Sekar Bali Activity books both with required shuttle.',
+      'Honest comparison: Aloha Ubud Swing (Tegallalang, from IDR 450,000) vs Swing Heaven (Bongkasa, from IDR 530,000). Different parks, different photos — Sekar Bali Activity books both with required shuttle.',
     publishedAt: '2026-10-16',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/aloha-ubud-swing/libra-swing.jpg',
@@ -134,7 +134,7 @@ Full price table: [Aloha price 2026](/blog/aloha-ubud-swing-price-2026).
 | | Aloha Ubud Swing | Swing Heaven Bali |
 | --- | --- | --- |
 | Area | Tegallalang | Bongkasa (Abiansemal) |
-| From price | **IDR 400,000** Active | **IDR 530,000** package |
+| From price | **IDR 450,000** Active | **IDR 530,000** package |
 | Budget option | **IDR 50,000** Entrance | — |
 | Lunch package | No | **IDR 630,000** |
 | Spots | 8 on Active (once each) | 14 listed spots |

@@ -49,6 +49,26 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Guide only 700K · optional + driver 850K in Ubud — Japanese summary.',
     },
     {
+      title: 'Japanese guide Bali price',
+      href: '/blog/japanese-guide-bali-price-2026',
+      blurb: '2026 rate card: 700K guide only, 850K with driver in Ubud.',
+    },
+    {
+      title: 'Japanese guide + private driver',
+      href: '/blog/japanese-guide-with-private-driver-bali-2026',
+      blurb: 'IDR 850,000 Ubud day total — car and licensed Japanese guide.',
+    },
+    {
+      title: 'Japanese guide Ubud day',
+      href: '/blog/japanese-licensed-guide-ubud-day-2026',
+      blurb: 'Sample palace, rice terraces, and Tirta Empul day in Japanese.',
+    },
+    {
+      title: 'Tirta Empul with Japanese guide',
+      href: '/blog/tirta-empul-with-japanese-guide-2026',
+      blurb: 'Melukat fountain order and etiquette explained in Japanese.',
+    },
+    {
       title: 'French-speaking guide',
       href: '/blog/french-speaking-guide-bali-2026',
       blurb: 'Guide only 750K · optional + driver 850K in Ubud — French summary.',
@@ -361,7 +381,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Aloha Ubud Swing price 2026',
       href: '/blog/aloha-ubud-swing-price-2026',
-      blurb: 'Active 400K · Entrance 50K · dress & photographer add-ons.',
+      blurb: 'Active 450K · Entrance 50K · dress & photographer add-ons.',
     },
     {
       title: 'Tegallalang location guide',
@@ -386,9 +406,29 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'IDR 530K / 630K with lunch, spots, pickup, weather voucher.',
     },
     {
+      title: 'What is a Bali jungle swing?',
+      href: '/blog/what-is-bali-jungle-swing-2026',
+      blurb: 'How the harnessed photo park works — not a free terrace walk.',
+    },
+    {
+      title: 'Why spend on a Bali swing?',
+      href: '/blog/why-spend-on-bali-swing-2026',
+      blurb: 'Real couple totals and when IDR 530K is worth it.',
+    },
+    {
+      title: 'Bali swing Instagram moments',
+      href: '/blog/bali-swing-instagram-moments-2026',
+      blurb: 'Nests, Stairs, Titanic, Reels order — shoot for social.',
+    },
+    {
+      title: 'Couples & honeymoon photos',
+      href: '/blog/bali-swing-couples-honeymoon-photos-2026',
+      blurb: 'Tandem, romantic bed, dress circuit for two.',
+    },
+    {
       title: 'Aloha Ubud Swing (Tegallalang)',
       href: '/tours/aloha-ubud-swing',
-      blurb: 'Tegallalang Active Package IDR 400,000 — different park.',
+      blurb: 'Tegallalang Active Package IDR 450,000 — different park.',
     },
     {
       title: 'Swing Heaven vs Tegallalang',

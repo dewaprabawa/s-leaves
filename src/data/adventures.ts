@@ -133,12 +133,12 @@ export const ADVENTURES: AdventureCatalogItem[] = [
   {
     id: "aloha-ubud-swing",
     name: "Aloha Ubud Swing",
-    tagline: "Tegallalang swings · Active Package 400K",
+    tagline: "Tegallalang swings · Active Package 450K",
     paxLabel: "Per person",
     description:
-      "Aloha Ubud Swing on Jl. Raya Tegallalang — Active Package 1 IDR 400,000 with eight activities once each (adrenaline, libra, single, tandem, bed swing, chicken nest, bird nest, swan lovers). Entrance Package IDR 50,000 (1 Cute Chicken Nest only). Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast — no self-meet. Optional rental dress IDR 300,000, own-dress fee IDR 100,000, park photographer IDR 300,000, outside photographer IDR 100,000. Card +3%. Not Swing Heaven Bongkasa.",
+      "Aloha Ubud Swing on Jl. Raya Tegallalang — Active Package 1 IDR 450,000 (includes required IDR 50,000 park fee) with eight activities once each (adrenaline, libra, single, tandem, bed swing, chicken nest, bird nest, swan lovers). Entrance Package IDR 50,000 (1 Cute Chicken Nest only). Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast — no self-meet. Optional rental dress IDR 300,000, own-dress fee IDR 100,000, park photographer IDR 300,000, outside photographer IDR 100,000. Card +3%. Not Swing Heaven Bongkasa.",
     highlights: [
-      "Active Package IDR 400,000 · 8 activities once each",
+      "Active Package IDR 450,000 · 8 activities + required IDR 50,000 park fee",
       "Entrance Package IDR 50,000 · chicken nest only",
       "Required shuttle — IDR 400,000 Ubud / 650,000 south",
       "Dress & photographer add-ons · Tegallalang",

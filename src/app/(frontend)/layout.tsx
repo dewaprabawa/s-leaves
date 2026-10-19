@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Compass, Mail, Phone } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
+import AhrefsAnalytics from "@/components/AhrefsAnalytics"
 import HeaderNav from "@/components/HeaderNav"
 import ConsultationInterestTray from "@/components/ConsultationInterestTray"
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/contact"
@@ -148,6 +149,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
+        <AhrefsAnalytics />
         <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM content summary" />
         <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM full context" />

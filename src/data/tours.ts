@@ -1493,7 +1493,7 @@ Card payments at the park (if you pay on site) add a **3% surcharge**. WhatsApp 
 ### Pair it with ATV, cooking, or rafting
 Swing Heaven sits in Abiansemal, the same district as our [ATV arena](/tours/bali-atv-adventure). Ask WhatsApp to stack a morning swing with afternoon ATV or [Ayung River rafting](/tours/whitewater-rafting). For a jungle-photo + kitchen day, book morning Swing Heaven then afternoon [Tumang cooking](/tours/balinese-cooking-class) — [swing + cooking itinerary](/blog/swing-heaven-cooking-class-ubud) · [book the combo](/book?activity=combo-swing-cooking). This is **not** Happy Swing.
 
-Commercial guides: [2026 prices for every option](/blog/swing-heaven-package-price-2026) · [all 14 photo spots](/blog/swing-heaven-photo-spots-bali-2026) · [bird nest](/blog/swing-heaven-bird-nest-bali-2026) · [Swing + ATV same day](/blog/swing-heaven-atv-combo-ubud-2026). Still deciding: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it) · [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location) · [Lunch package](/blog/bali-swing-with-lunch-ubud) · [Flying dress hire](/blog/flying-dress-hire-bali-swing) · [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).`,
+Commercial guides: [2026 prices for every option](/blog/swing-heaven-package-price-2026) · [what is a Bali jungle swing?](/blog/what-is-bali-jungle-swing-2026) · [why spend on a Bali swing?](/blog/why-spend-on-bali-swing-2026) · [Instagram moments](/blog/bali-swing-instagram-moments-2026) · [couples & honeymoon photos](/blog/bali-swing-couples-honeymoon-photos-2026) · [all 14 photo spots](/blog/swing-heaven-photo-spots-bali-2026) · [bird nest](/blog/swing-heaven-bird-nest-bali-2026) · [Swing + ATV same day](/blog/swing-heaven-atv-combo-ubud-2026). Still deciding: [Is the Bali Swing worth it?](/blog/is-bali-swing-worth-it) · [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-bali-swing) · [Bongkasa location](/blog/swing-heaven-bongkasa-location) · [Lunch package](/blog/bali-swing-with-lunch-ubud) · [Flying dress hire](/blog/flying-dress-hire-bali-swing) · [Swing Heaven Ubud guide](/blog/swing-heaven-bali-ubud-guide).`,
     highlights: [
       "14 jungle swings, nests, and photo spots over the Ayung valley",
       "From IDR 530,000 — insurance, tea/coffee/water",
@@ -1602,7 +1602,7 @@ Commercial guides: [2026 prices for every option](/blog/swing-heaven-package-pri
         id: "faq-swing-6",
         question: "Is this the famous Tegallalang Bali Swing?",
         answer:
-          "No. Swing Heaven is a separate jungle park in Bongkasa over the Ayung River. For the Tegallalang road park we book Aloha Ubud Swing (Active Package IDR 400,000) — a different ticket from this Bongkasa package.",
+          "No. Swing Heaven is a separate jungle park in Bongkasa over the Ayung River. For the Tegallalang road park we book Aloha Ubud Swing (Active Package IDR 450,000 including the required IDR 50,000 park fee) — a different ticket from this Bongkasa package.",
       },
       {
         id: "faq-swing-shuttle",
@@ -1623,9 +1623,9 @@ Commercial guides: [2026 prices for every option](/blog/swing-heaven-package-pri
     pickup: "Required shuttle — IDR 400,000 Ubud / 650,000 south coast",
     duration: "1.5–2.5 Hours",
     basePrice: ALOHA_ACTIVE_PACKAGE_IDR,
-    seoTitle: "Aloha Ubud Swing | Active 400K · Tegallalang",
+    seoTitle: "Aloha Ubud Swing | Active 450K · Tegallalang",
     seoDescription:
-      "Aloha Ubud Swing Tegallalang: Active Package IDR 400K (8 activities). Entrance 50K. Dress 300K. Photographer 300K. Shuttle 400K Ubud / 650K south. WhatsApp.",
+      "Aloha Ubud Swing Tegallalang: Active Package IDR 450K (8 activities + required 50K fee). Entrance 50K. Dress 300K. Photographer 300K. Shuttle 400K Ubud / 650K south. WhatsApp.",
     heroImage: {
       url: "/images/adventures/aloha-ubud-swing/single-swing.jpg",
       alt: "Guest on the single swing over the valley at Aloha Ubud Swing Tegallalang",
@@ -1635,7 +1635,7 @@ Commercial guides: [2026 prices for every option](/blog/swing-heaven-package-pri
     heroThumbnails: [...ALOHA_UBUD_SWING_PHOTOS],
     gallery: [...ALOHA_UBUD_SWING_PHOTOS],
     shortDescription:
-      "Aloha Ubud Swing on Jl. Raya Tegallalang — Active Package 1 IDR 400,000 with eight swings and photo spots once each. Entrance Package IDR 50,000 (chicken nest only). Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast. Optional dress and photographer add-ons. Book via WhatsApp.",
+      "Aloha Ubud Swing on Jl. Raya Tegallalang — Active Package 1 IDR 450,000 (includes required IDR 50,000 park fee) with eight swings and photo spots once each. Entrance Package IDR 50,000 (chicken nest only). Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast. Optional dress and photographer add-ons. Book via WhatsApp.",
     fullDescription: `**Aloha Ubud Swing — Tegallalang valley swings (not Swing Heaven Bongkasa)**
 
 [Aloha Ubud Swing](${ALOHA_UBUD_SWING_VENUE.website}) is a swing and photo park on **${ALOHA_UBUD_SWING_VENUE.address}** — the Tegallalang road north of Ubud. This is a **different park** from [Swing Heaven](/tours/swing-heaven-bali) in Bongkasa. We book Aloha for you on one WhatsApp thread with ATV, rafting, cooking, and cycling.
@@ -1643,7 +1643,7 @@ Commercial guides: [2026 prices for every option](/blog/swing-heaven-package-pri
 ### 2026 packages (per person)
 | Package | Price | Includes |
 |--------|-------|----------|
-| Active Package 1 | **IDR ${ALOHA_ACTIVE_PACKAGE_IDR.toLocaleString("id-ID")}** | All listed activities — each **once** per guest |
+| Active Package 1 | **IDR ${ALOHA_ACTIVE_PACKAGE_IDR.toLocaleString("id-ID")}** | All listed activities once each + **required IDR 50,000 park fee** (not optional) |
 | Entrance Package | **IDR ${ALOHA_ENTRANCE_PACKAGE_IDR.toLocaleString("id-ID")}** | 1 Cute Chicken Nest only |
 | Required shuttle from Ubud | **IDR 400,000** | Once per booking · no self-meet |
 | Required shuttle from south coast | **IDR 650,000** | Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, Uluwatu |
@@ -1665,13 +1665,14 @@ Want the **Tegallalang** roadside valley park? Book Aloha. Want the **Bongkasa /
 
 Commercial guides: [2026 prices](/blog/aloha-ubud-swing-price-2026) · [Tegallalang guide](/blog/aloha-ubud-swing-tegallalang-guide-2026).`,
     highlights: [
-      "Active Package IDR 400,000 — 8 activities once each",
+      "Active Package IDR 450,000 — 8 activities + required IDR 50,000 park fee",
       "Entrance Package IDR 50,000 — chicken nest only",
       "Required shuttle — IDR 400,000 Ubud / 650,000 south coast",
       "Dress hire, own-dress fee, park or outside photographer add-ons",
     ],
     included: [
       "Active Package: adrenaline, libra, single, tandem, bed swing, chicken nest, bird nest, swan lovers (once each)",
+      "Required IDR 50,000 park fee (included in the Active Package total — not optional)",
       "Or Entrance Package: 1 Cute Chicken Nest only",
       "Required hotel shuttle (IDR 400,000 Ubud / 650,000 south coast)",
     ],
@@ -1754,7 +1755,7 @@ Commercial guides: [2026 prices](/blog/aloha-ubud-swing-price-2026) · [Tegallal
       {
         id: "faq-aloha-1",
         question: "How much is Aloha Ubud Swing near Tegallalang?",
-        answer: `Active Package 1 is IDR ${ALOHA_ACTIVE_PACKAGE_IDR.toLocaleString("id-ID")} per person (eight activities once each). Entrance Package is IDR ${ALOHA_ENTRANCE_PACKAGE_IDR.toLocaleString("id-ID")} (1 Cute Chicken Nest only). Rental dress IDR ${ALOHA_DRESS_HIRE_IDR.toLocaleString("id-ID")}. Own special dress fee IDR ${ALOHA_OWN_DRESS_FEE_IDR.toLocaleString("id-ID")}. Park photographer IDR ${ALOHA_PHOTOGRAPHER_IDR.toLocaleString("id-ID")}. Outside photographer fee IDR ${ALOHA_OUTSIDE_PHOTOGRAPHER_FEE_IDR.toLocaleString("id-ID")} per guest. Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast — no self-meet. Card payments at the park add ${ALOHA_CARD_SURCHARGE_PCT}%.`,
+        answer: `Active Package 1 is IDR ${ALOHA_ACTIVE_PACKAGE_IDR.toLocaleString("id-ID")} per person — eight activities once each plus the required IDR 50,000 park fee (not optional). Entrance Package is IDR ${ALOHA_ENTRANCE_PACKAGE_IDR.toLocaleString("id-ID")} (1 Cute Chicken Nest only). Rental dress IDR ${ALOHA_DRESS_HIRE_IDR.toLocaleString("id-ID")}. Own special dress fee IDR ${ALOHA_OWN_DRESS_FEE_IDR.toLocaleString("id-ID")}. Park photographer IDR ${ALOHA_PHOTOGRAPHER_IDR.toLocaleString("id-ID")}. Outside photographer fee IDR ${ALOHA_OUTSIDE_PHOTOGRAPHER_FEE_IDR.toLocaleString("id-ID")} per guest. Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast — no self-meet. Card payments at the park add ${ALOHA_CARD_SURCHARGE_PCT}%.`,
       },
       {
         id: "faq-aloha-2",
@@ -2508,7 +2509,7 @@ One guide for your whole group. The price does not change with the number of gue
 | Japanese | **IDR 700,000** | IDR 150,000 |
 | French | **IDR 750,000** | IDR 150,000 |
 
-Already have a car? Book guide only — the guide meets you at your hotel or first stop; the guide's own transport is included. Need a car on a guide-only booking? Add a separate private shuttle, quoted on WhatsApp.
+Already have a car? Book guide only — the guide meets you at your hotel or first stop; the guide's own transport is included. Need a car on a guide-only booking? Add private shuttle in the booking menu: Ubud area brings the day to **IDR 850,000** total (guide + driver); outside Ubud is guide fee + **IDR 550,000** for the driver. Your hotel pin sets the rate.
 
 ### Optional tour: Japanese / French + private driver
 Pick this option in the booking menu when you want the licensed guide **and** a private car in one published total (up to 6 guests per car).
@@ -2547,7 +2548,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
       "Commentary in English, Japanese, or French",
     ],
     notIncluded: [
-      "Car and driver on guide-only bookings (optional shuttle on WhatsApp, or pick the JP/FR with-driver tour)",
+      "Car and driver on guide-only bookings (optional private shuttle at published Ubud/outside rates, or pick the JP/FR with-driver tour)",
       "Entrance tickets",
       "Meals and drinks",
       "Extra hours beyond 8 (IDR 150,000 per hour)",
@@ -2591,7 +2592,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         id: "faq-guide-3",
         question: "Does the guide come with a car or driver?",
         answer:
-          "Not by default — every language can book guide only, and the guide's own transport to your hotel or first stop is included. Need a car? Add our separate private shuttle on WhatsApp, or choose the Japanese/French + private driver tour option (IDR 850,000 in Ubud; outside guide + IDR 550,000). Or book the Full Day Ubud Tour / Half Day Ubud & Tanah Lot (car already included) and add the guide fee only.",
+          "Not by default — every language can book guide only, and the guide's own transport to your hotel or first stop is included. Need a car? Add private shuttle in the booking menu (Ubud area: day totals IDR 850,000 with guide + driver; outside Ubud: guide fee + IDR 550,000 driver), or choose the Japanese/French + private driver tour option at the same published rates. Or book the Full Day Ubud Tour / Half Day Ubud & Tanah Lot (car already included) and add the guide fee only.",
       },
       {
         id: "faq-guide-4",

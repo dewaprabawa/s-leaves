@@ -3,7 +3,12 @@ import { PICKUP_FEE_IDR, PICKUP_FEE_SOUTH_IDR } from '@/lib/pricing'
 /** Aloha Ubud Swing — Tegallalang swing park we book with required private shuttle. */
 export const ALOHA_UBUD_SWING_SLUG = 'aloha-ubud-swing'
 
-export const ALOHA_ACTIVE_PACKAGE_IDR = 400_000
+/** Park activities ticket before the required park fee. */
+export const ALOHA_ACTIVE_BASE_IDR = 400_000
+/** Required park fee on every Active Package booking — not optional. */
+export const ALOHA_REQUIRED_FEE_IDR = 50_000
+/** Published Active Package total = base + required fee. */
+export const ALOHA_ACTIVE_PACKAGE_IDR = ALOHA_ACTIVE_BASE_IDR + ALOHA_REQUIRED_FEE_IDR
 export const ALOHA_ENTRANCE_PACKAGE_IDR = 50_000
 export const ALOHA_DRESS_HIRE_IDR = 300_000
 export const ALOHA_OWN_DRESS_FEE_IDR = 100_000
@@ -111,7 +116,7 @@ export const ALOHA_ADDONS = {
 } as const
 
 export const ALOHA_ADDONS_INTRO =
-  `Required shuttle IDR ${(PICKUP_FEE_IDR / 1000).toFixed(0)},000 from Ubud or IDR ${(PICKUP_FEE_SOUTH_IDR / 1000).toFixed(0)},000 from the south coast — no self-meet. Optional: rental dress, own-dress fee, park photographer, or outside-photographer fee. Card payments at the park add ${ALOHA_CARD_SURCHARGE_PCT}%. Each Active Package activity is once per guest.`
+  `Active Package is IDR ${(ALOHA_ACTIVE_PACKAGE_IDR / 1000).toFixed(0)},000 per person (IDR ${(ALOHA_ACTIVE_BASE_IDR / 1000).toFixed(0)},000 ticket + required IDR ${(ALOHA_REQUIRED_FEE_IDR / 1000).toFixed(0)},000 park fee — not optional). Required shuttle IDR ${(PICKUP_FEE_IDR / 1000).toFixed(0)},000 from Ubud or IDR ${(PICKUP_FEE_SOUTH_IDR / 1000).toFixed(0)},000 from the south coast — no self-meet. Optional: rental dress, own-dress fee, park photographer, or outside-photographer fee. Card payments at the park add ${ALOHA_CARD_SURCHARGE_PCT}%. Each Active Package activity is once per guest.`
 
 export const ALOHA_ENTRANCE_ADDONS_INTRO =
   `Entrance Package includes 1 Cute Chicken Nest only. Required shuttle IDR ${(PICKUP_FEE_IDR / 1000).toFixed(0)},000 from Ubud or IDR ${(PICKUP_FEE_SOUTH_IDR / 1000).toFixed(0)},000 from the south coast — no self-meet. Optional dress and photographer add-ons available.`

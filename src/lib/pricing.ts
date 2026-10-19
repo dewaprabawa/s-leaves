@@ -42,7 +42,7 @@ export const BASE_COST_IDR: Record<ActivityId, number> = {
   'kintamani-day': 1_000_000, // private jeep/trek + hot spring + Umah Kuno + rice terrace
   'swing-heaven': 350_000, // per person (internal floor — Swing Heaven Bongkasa ticket)
   'swing-heaven-lunch': 400_000, // per person (internal floor — package + lunch)
-  'aloha-ubud-swing': 250_000, // per person (internal floor — Aloha Active Package 1)
+  'aloha-ubud-swing': 280_000, // per person (internal floor — Aloha Active Package + required 50K fee)
   'aloha-ubud-swing-entrance': 30_000, // per person (internal floor — entrance / chicken nest only)
 }
 
@@ -60,7 +60,7 @@ export const TIER_PRICES_IDR: Record<ActivityId, [number, number, number]> = {
   'kintamani-day': [1_450_000, 1_300_000, 1_300_000],
   'swing-heaven': [530_000, 530_000, 530_000],
   'swing-heaven-lunch': [630_000, 630_000, 630_000],
-  'aloha-ubud-swing': [400_000, 400_000, 400_000],
+  'aloha-ubud-swing': [450_000, 450_000, 450_000], // Active + required IDR 50K park fee
   'aloha-ubud-swing-entrance': [50_000, 50_000, 50_000],
 }
 
@@ -329,7 +329,7 @@ export function formatTierPriceTable(activityId: ActivityId): string {
     return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · same package + lunch · required shuttle`
   }
   if (activityId === 'aloha-ubud-swing') {
-    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · Active Package 1 (8 activities once each) · required shuttle 400K Ubud / 650K south`
+    return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · Active Package 1 (8 activities + required 50K park fee) · required shuttle 400K Ubud / 650K south`
   }
   if (activityId === 'aloha-ubud-swing-entrance') {
     return `IDR ${(t1 / 1000).toFixed(0)}k ${unit} · Entrance Package (1 Cute Chicken Nest) · required shuttle`

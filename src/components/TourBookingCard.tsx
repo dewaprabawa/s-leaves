@@ -24,10 +24,10 @@ import {
   GUIDE_MEET_COPY,
   GUIDE_ONLY_HOURS,
   GUIDE_OUTSIDE_DRIVER_IDR,
-  GUIDE_SHUTTLE_ADDON,
   GUIDE_UBUD_WITH_DRIVER_IDR,
   GUIDE_WITH_DRIVER_MEET_COPY,
   GUIDE_WITH_DRIVER_LANGUAGES,
+  buildGuideShuttleAddon,
   guideWithDriverFees,
   LICENSED_GUIDE_PRICES_IDR,
   LICENSED_GUIDE_SLUG,
@@ -256,7 +256,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       perBooking: true,
       pickupIncluded: true,
       includedMeetCopy: GUIDE_MEET_COPY,
-      optionalAddons: [GUIDE_SHUTTLE_ADDON, GUIDE_EXTRA_HOUR_ADDON],
+      optionalAddons: [buildGuideShuttleAddon(lang.key), GUIDE_EXTRA_HOUR_ADDON],
       optionalAddonsIntro: GUIDE_EXTRA_HOURS_INTRO,
     }))
     const withDriver = GUIDE_WITH_DRIVER_LANGUAGES.map((key) => {

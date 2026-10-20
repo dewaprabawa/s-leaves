@@ -33,7 +33,13 @@ function PackagePanel({ id, eyebrow, title, intro, packages, included, separateH
             <Crown className="h-3.5 w-3.5" />
             {eyebrow}
           </p>
-          <h2 id={id} className="font-display text-3xl md:text-4xl font-bold uppercase leading-tight">
+          {/* Inline color: globals.css sets h1-h6 to brand-green outside
+              Tailwind layers, which would override a text-white class. */}
+          <h2
+            id={id}
+            style={{ color: "#ffffff" }}
+            className="font-display text-3xl md:text-4xl font-bold uppercase leading-tight text-white"
+          >
             {title}
           </h2>
           <p className="max-w-2xl text-sm md:text-base text-sand/80 leading-relaxed">{intro}</p>

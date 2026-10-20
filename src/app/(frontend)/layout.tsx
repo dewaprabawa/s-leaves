@@ -7,6 +7,7 @@ import { CurrencyProvider } from "@/context/CurrencyContext"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
 import AhrefsAnalytics from "@/components/AhrefsAnalytics"
 import HeaderNav from "@/components/HeaderNav"
+import CardBrandLogos from "@/components/CardBrandLogos"
 import ConsultationInterestTray from "@/components/ConsultationInterestTray"
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY } from "@/lib/contact"
 import WhatsAppContactLink from "@/components/WhatsAppContactLink"
@@ -270,6 +271,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
             <div className="border-t border-sand/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-xs opacity-50">© {new Date().getFullYear()} {siteName}. All rights reserved.</p>
+              <p className="flex items-center gap-2.5">
+                <span className="text-xs opacity-60">We accept</span>
+                <CardBrandLogos logoClassName="h-7" />
+              </p>
               <nav aria-label="Legal" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs opacity-50">
                 <Link href="/anti-scam" className="hover:opacity-100 transition-opacity underline underline-offset-4">Anti-Scam</Link>
                 <Link href="/privacy-policy" className="hover:opacity-100 transition-opacity underline underline-offset-4">Privacy Policy</Link>

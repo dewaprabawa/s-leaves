@@ -217,7 +217,7 @@ That is lunch, gear, insurance, the ride, and a private car — per guest, all i
 
 Insurance covers riders aged **6–65**. Younger children usually ride as the tandem passenger with a parent, and the arena team decides at the briefing. Send each child's age and height on WhatsApp before you book. Full family notes: [Bali ATV, rafting and jeep with kids](/blog/bali-atv-rafting-jeep-with-kids-2026).
 
-**Ready?** [Book the ATV premium package](/tours/atv-premium-package-bali) — pick Trio (3), Squad (4) or Crew (5). Want the numbers first? Read the [premium package price breakdown](/blog/atv-premium-package-bali-2026).
+**Ready?** [Book the ATV premium package](/tours/atv-premium-package-bali) — pick Trio (3), Squad (4) or Crew (5). Want the numbers first? Read the [premium package price breakdown](/blog/atv-premium-package-bali-2026). Bringing the kids? See the [family ATV package guide](/blog/family-atv-package-ubud-2026). Comparing deals? Here is [the promo math](/blog/atv-premium-promo-deal-ubud-2026).
 `,
   },
   {
@@ -279,6 +279,126 @@ Each includes a 1.5-hour jungle mud ride, lunch, helmet, boot shoes, a trail gui
 If you hired a private driver for the day, you do not need our shuttle. Book singles and tandems on the [standard ATV ride page](/tours/bali-atv-adventure) and self-meet at the arena — directions in the [All New Bali Adventure location guide](/blog/bali-atv-all-new-bali-adventure-location-guide). Doing ATV and rafting the same day? See [ATV & rafting from Seminyak, Canggu and Kuta](/blog/atv-rafting-from-seminyak-canggu-kuta-2026).
 
 **Ready?** [Book the ATV premium package](/tours/atv-premium-package-bali) — drop your hotel pin, pick Trio, Squad or Crew, and we confirm the pickup time on WhatsApp.
+`,
+  },
+  {
+    slug: 'family-atv-package-ubud-2026',
+    title: 'Family ATV Package Near Ubud (2026): Tandem for the Kids, Private Shuttle, One Price',
+    seoTitle: 'Family ATV Package Ubud 2026 | Kids Tandem + Private Car',
+    excerpt:
+      'A family ATV package near Ubud built for parents and kids: singles for the drivers, one tandem so a child rides behind a parent, and a private shuttle just for your family. 3 guests IDR 2,025,000, 4 guests IDR 2,655,000, 5 guests IDR 3,240,000 — 10% off booking separately.',
+    publishedAt: '2026-10-21',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-jungle-mud-track-riders.jpg',
+    content: `
+**What is the best family ATV package near Ubud?** For most families it is our [ATV premium package](/tours/atv-premium-package-bali): **single ATVs for the confident drivers, one tandem ATV so a child rides behind a parent**, and a **private shuttle just for your family** — hotel pickup, the ride, lunch, and the drive home in one published price. **3 guests IDR 2,025,000 · 4 guests IDR 2,655,000 · 5 guests IDR 3,240,000**, which is **10% off** booking the same bikes and shuttle separately. WhatsApp — **no payment to inquire**.
+
+> **Key Takeaways**
+> - **Premium Trio** — 3 guests (1 single + 1 tandem): **IDR 2,025,000** (675,000 per person)
+> - **Premium Squad** — 4 guests (2 singles + 1 tandem): **IDR 2,655,000** (about 664,000 per person)
+> - **Premium Crew** — 5 guests (3 singles + 1 tandem): **IDR 3,240,000** (648,000 per person)
+> - Kids ride as **tandem passengers behind a parent**; ATV insurance covers **ages 6–65**
+> - **Private shuttle for your family only** — no Grab hunting with tired, muddy kids
+
+## Which family package fits?
+
+| Your family | Package | Who rides what | Price (IDR) |
+| --- | --- | --- | --- |
+| 2 adults + 1 child | **Premium Trio** | 1 single + 1 tandem (parent + child) | **2,025,000** |
+| 2 adults + 2 kids, or 3 adults + 1 child | **Premium Squad** | 2 singles + 1 tandem | **2,655,000** |
+| Bigger family / two families sharing | **Premium Crew** | 3 singles + 1 tandem | **3,240,000** |
+| Family with teens who all want to drive + rafting | **Land & River** (2–4 guests) | Single ATV each + Ayung rafting | **2,475,000 – 4,500,000** |
+
+Prices are **per package, not per person**, and already include the private shuttle, the 1.5-hour ride, lunch, helmets, boot shoes, a trail guide, the safety briefing, and insurance. Send **every rider's age on WhatsApp** before you book so we confirm who drives and who rides tandem.
+
+## Why families pick the package (not separate bookings)
+
+- **One car, your family only.** Your driver collects you at the hotel, waits during the ride, and drives you home. Nobody has to order a Grab with muddy kids at a rural arena.
+- **The right bike for each person.** Confident riders get their own quad; a nervous rider or younger child sits behind a parent on the tandem. Nobody is forced onto a bike they don't want.
+- **One price, known before you go.** The package is 10% below the same bikes + shuttle booked separately — see the [promo math](/blog/atv-premium-promo-deal-ubud-2026). No extras appear at the arena.
+- **Maintained bikes.** Our ATVs are new and checked after every ride day (brakes, tyres, engine) — performance matters more, not less, with kids on board. Track story: [why the price is worth it](/tours/bali-atv-adventure).
+
+## Ages, safety and the track
+
+ATV rides suit **ages 6+** as tandem passengers and older kids/teens as drivers after the briefing; insurance covers **ages 6–65**. Every rider gets a helmet and boot shoes, and guides run a flat-ground **safety briefing in English** before the jungle. The 1.5-hour track at All New Bali Adventure in Sedang runs through **jungle, muddy sections, real river crossings and its own authentic cave tunnel** — muddy enough to be the highlight of the trip, guided the whole way.
+
+Adding the river? **Ayung rafting is typically age 7+** with basic swimming confidence. On ATV + rafting days the latest start is **1:00 PM** (the ride plus the ~15-minute transfer must reach the river's final run); ATV-only family rides keep all normal times, including afternoon starts.
+
+## Family day timing that works
+
+From **Ubud**, allow about **3.5–4 hours** door to door for the ATV package. From **Seminyak, Canggu or Kuta**, plan **5–6 hours** and take a **morning start** — you beat the traffic both ways and the kids ride before the afternoon rain. Pack a change of clothes for everyone; there are changing rooms and lunch at the arena.
+
+## Questions
+
+**Can a child drive their own ATV?** Older kids and teens who pass the guide's briefing control check can ride single; younger children ride tandem behind a parent. Send ages on WhatsApp and we will set the line-up honestly.
+
+**Is the family package cheaper than booking separately?** Yes — exactly 10% below the same singles, tandem and private shuttle at published rates, and the shuttle is included rather than added per booking.
+
+**What if we are 6 or more?** Book the packages side by side or mix singles/tandems on the [standard ATV page](/tours/bali-atv-adventure); we confirm family transport on WhatsApp.
+
+**Ready?** [Book the family ATV package](/tours/atv-premium-package-bali) — pick Trio, Squad or Crew, send the riders' ages and your hotel pin, and we confirm pickup on WhatsApp.
+`,
+  },
+  {
+    slug: 'atv-premium-promo-deal-ubud-2026',
+    title: 'ATV Promo Near Ubud (2026): The Premium Package Deal — 10% Off ATV or ATV + Rafting, Private Shuttle Included',
+    seoTitle: 'ATV Promo Ubud 2026 | Premium Deal 10% Off + Private Car',
+    excerpt:
+      'The honest ATV promo near Ubud in 2026: premium packages at 10% off the published bikes + private shuttle — ATV family/group packages from IDR 2,025,000 and ATV + rafting Land & River from IDR 2,475,000. No promo code, no fake countdown, no payment to inquire.',
+    publishedAt: '2026-10-21',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-cave-tunnel-track.jpg',
+    content: `
+**What is the best ATV promo near Ubud in 2026?** It is our [ATV premium package](/tours/atv-premium-package-bali): **10% off the published total — bikes and private shuttle included** — with no promo code to hunt and no fake countdown timer. ATV packages for 3–5 guests run **IDR 2,025,000–3,240,000**; ATV + rafting (Land & River) for 2–4 guests runs **IDR 2,475,000–4,500,000**. The discount is already in the package price, and there is **no payment just to inquire** on WhatsApp.
+
+> **Key Takeaways**
+> - **10% off everything in the package** — ATVs, rafting (Land & River) and the private shuttle
+> - **You save IDR 225,000–500,000 per package** versus booking the same parts separately
+> - Prices are **per package, not per person** — from about **IDR 648,000 per guest** all-in
+> - Published 2026 prices, known before you book; the WhatsApp price is the page price
+
+## The promo math — ATV packages (private shuttle included)
+
+| Package | Guests | Booked separately | Promo price | You save |
+| --- | --- | --- | --- | --- |
+| **Premium Trio** (1 single + 1 tandem) | 3 | 2,250,000 | **2,025,000** | 225,000 |
+| **Premium Squad** (2 singles + 1 tandem) | 4 | 2,950,000 | **2,655,000** | 295,000 |
+| **Premium Crew** (3 singles + 1 tandem) | 5 | 3,600,000 | **3,240,000** | 360,000 |
+
+Separate math uses our published rates: single ATV 750,000 / 725,000 / 700,000 by group size, tandem 1,100,000, private shuttle 400,000 once.
+
+## The promo math — ATV + rafting (Land & River)
+
+| Package | Guests | Booked separately | Promo price | You save |
+| --- | --- | --- | --- | --- |
+| **Land & River Duo** | 2 | 2,750,000 | **2,475,000** | 275,000 |
+| **Land & River Trio** | 3 | 3,850,000 | **3,465,000** | 385,000 |
+| **Land & River Squad** | 4 | 5,000,000 | **4,500,000** | 500,000 |
+
+Every Land & River guest rides a **single ATV** and rafts the **Ayung River (Class II–III)**; the private shuttle is yours all day. Full comparison with the standard combo: [Land & River premium package](/blog/atv-rafting-premium-package-2026).
+
+## Why this deal beats the cheap stickers
+
+Ubud is full of IDR 235,000–450,000 ATV stickers. Those usually mean a short loop, older high-hour bikes, shared transport, or lunch/gear charged at the arena. This promo keeps the full product and discounts it:
+
+- **New, well-maintained ATVs** — checked after every ride day for performance and safety
+- **The full 1.5-hour track** — jungle, mud, real river crossings and our authentic cave tunnel at All New Bali Adventure in Sedang
+- **Everything in the price** — lunch, helmet, boot shoes, guides, insurance (ages 6–65), and the private shuttle
+- **A real, published discount** — 10% off rates you can verify on our [ATV price pages](/tours/bali-atv-adventure), not a crossed-out invented price
+
+Families: the same packages set up as singles + tandem for parents and kids are broken down in our [family ATV package guide](/blog/family-atv-package-ubud-2026).
+
+## How to claim the promo
+
+1. Open the [ATV premium package page](/tours/atv-premium-package-bali) and pick ATV-only or Land & River.
+2. Choose your package size (2–5 guests) and send your **date, riders' ages and hotel pin** on WhatsApp.
+3. We confirm the pickup time — the price you saw is the price you pay. **No payment to inquire.**
+
+## Honest terms
+
+This is our standing 2026 package pricing, not a limited-time flash sale: the 10% comes from bundling, and the same math is published here and on the tour page all season. Hotel pickup in the packages is the Ubud-area private shuttle rate; south-coast hotels are confirmed on WhatsApp before you book.
+
+**Ready?** [Get the premium ATV deal](/tours/atv-premium-package-bali) — pick your package, drop your hotel pin, and lock the day on WhatsApp.
 `,
   },
 ]

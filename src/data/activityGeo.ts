@@ -285,6 +285,16 @@ const ATV_PREMIUM: ActivityGeoCorpus = {
       a: 'Yes. Parents or confident riders take single ATVs, and a child or nervous rider shares the tandem with one adult. Insurance covers ages 6–65 — send every rider’s age on WhatsApp before you book.',
     },
     {
+      intent: 'family atv package ubud price',
+      q: 'What is the best family ATV package near Ubud and what does it cost?',
+      a: `The family set-up is the premium package: singles for the drivers, one tandem so a child rides behind a parent, and a private shuttle just for your family. ${PREMIUM_TRIO.name} (3 guests) ${idr(PREMIUM_TRIO.priceIdr)}, ${PREMIUM_SQUAD.name} (4) ${idr(PREMIUM_SQUAD.priceIdr)}, ${PREMIUM_CREW.name} (5) ${idr(PREMIUM_CREW.priceIdr)} per package — 10% off booking separately, lunch, gear, guide and insurance included. Guide: https://www.sekarbaliactivity.com/blog/family-atv-package-ubud-2026`,
+    },
+    {
+      intent: 'atv promo deal ubud 2026',
+      q: 'Is there an ATV promo or package deal near Ubud in 2026?',
+      a: `Yes — the standing premium deal: ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the published bikes + private shuttle, no promo code. ATV packages ${idr(PREMIUM_TRIO.priceIdr)}–${idr(PREMIUM_CREW.priceIdr)} (save ${idr(PREMIUM_TRIO.savingIdr)}–${idr(PREMIUM_CREW.savingIdr)}); Land & River ATV + rafting ${landRiverPrices}. Math: https://www.sekarbaliactivity.com/blog/atv-premium-promo-deal-ubud-2026`,
+    },
+    {
       intent: 'atv rafting package private transfer',
       q: 'Is there a premium ATV + rafting package with a private shuttle?',
       a: `Yes — Land & River. Every guest rides a single ATV at All New Bali Adventure, then rafts the Ayung River (Class II–III), with a private shuttle just for the group all day. ${landRiverPrices} — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same ATV, rafting, and IDR 400,000 pickup separately. No tubing. Plan 5–7 hours. https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,

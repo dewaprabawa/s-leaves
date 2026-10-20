@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, useMapEvents, Circle, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { Search } from 'lucide-react';
+import { Search, LocateFixed, MapPin } from 'lucide-react';
 
 // Fix leaflet icon issue in Next.js
 delete (L.Icon.Default.prototype as any)._getIconUrl;
@@ -42,11 +42,11 @@ function MapController({ center }: { center: L.LatLng | null }) {
   return null;
 }
 
-export default function MapPicker({ 
+export default function MapPicker({
   onLocationSelect,
   initialPosition
-}: { 
-  onLocationSelect: (lat: number, lng: number, isOutUbud: boolean) => void,
+}: {
+  onLocationSelect: (lat: number, lng: number, isOutUbud: boolean, placeName?: string) => void,
   initialPosition?: { lat: number, lng: number } | null
 }) {
   const [position, setPosition] = useState<L.LatLng | null>(
@@ -54,6 +54,7 @@ export default function MapPicker({
   );
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearching, setIsSearching] = useState(false);
+  const [isLocating, setIsLocating] = useState(false);
   const [mapCenter, setMapCenter] = useState<L.LatLng | null>(
     initialPosition ? new L.LatLng(initialPosition.lat, initialPosition.lng) : null
   );
@@ -94,7 +95,7 @@ export default function MapPicker({
         
         const distance = getDistance(UBUD_CENTER.lat, UBUD_CENTER.lng, lat, lon);
         const isOut = distance > UBUD_RADIUS_METERS;
-        onLocationSelect(lat, lon, isOut);
+        onLocationSelect(lat, lon, isOut, result.name || searchQuery.trim());
       } else {
         alert("Location not found. Please try a different search term or drop the pin manually.");
       }
@@ -104,6 +105,29 @@ export default function MapPicker({
     } finally {
       setIsSearching(false);
     }
+  };
+
+  const handleLocate = () => {
+    if (!navigator.geolocation) {
+      alert("Location is not available on this device. Please search your hotel or tap the map.");
+      return;
+    }
+    setIsLocating(true);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const newPos = new L.LatLng(pos.coords.latitude, pos.coords.longitude);
+        setMapCenter(newPos);
+        setPosition(newPos);
+        const distance = getDistance(UBUD_CENTER.lat, UBUD_CENTER.lng, newPos.lat, newPos.lng);
+        onLocationSelect(newPos.lat, newPos.lng, distance > UBUD_RADIUS_METERS);
+        setIsLocating(false);
+      },
+      () => {
+        setIsLocating(false);
+        alert("Could not get your location. Please search your hotel name or tap the map to drop the pin.");
+      },
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
   };
 
   return (
@@ -126,6 +150,23 @@ export default function MapPicker({
             {isSearching ? <span className="text-xs font-semibold">Wait...</span> : <Search className="w-5 h-5" />}
           </button>
         </form>
+      </div>
+
+      {/* Use-my-location — big touch target for phones */}
+      <button
+        type="button"
+        onClick={handleLocate}
+        disabled={isLocating}
+        className="absolute top-[74px] right-4 z-[400] inline-flex min-h-[44px] items-center gap-2 rounded-full bg-white px-4 py-2.5 text-sm font-bold text-brand-green shadow-lg border border-brand-green/20 active:scale-[0.98] disabled:opacity-70"
+      >
+        <LocateFixed className="h-4 w-4 shrink-0" />
+        {isLocating ? "Locating…" : "Use my location"}
+      </button>
+
+      {/* On-map note: how to set the pin */}
+      <div className="pointer-events-none absolute bottom-4 left-4 z-[400] inline-flex max-w-[75%] items-center gap-1.5 rounded-full bg-brand-green/90 px-3 py-2 text-xs font-semibold text-sand shadow-lg">
+        <MapPin className="h-3.5 w-3.5 shrink-0" />
+        Tap the map to drop your hotel pin
       </div>
 
       <MapContainer center={[UBUD_CENTER.lat, UBUD_CENTER.lng]} zoom={12} style={{ height: '100%', width: '100%', zIndex: 0 }}>

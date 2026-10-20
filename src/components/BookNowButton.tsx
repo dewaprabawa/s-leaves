@@ -89,7 +89,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   {
     id: "rafting",
     title: "Whitewater Rafting",
-    times: ["08:30", "11:00", "14:00"],
+    times: ["08:30", "11:00", "12:00"],
     adultPrice: getListPrice("rafting"),
     kidPrice: 450000,
     minPax: 2,

@@ -91,7 +91,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     image: "/images/adventures/rafting-ayung-paddle-team.jpg",
     imageAlt: "Ayung River rafting paddle team hitting Class II–III rapids near Ubud",
     tourSlug: "whitewater-rafting",
-    times: ["08:30", "11:00", "14:00"],
+    times: ["08:30", "11:00", "12:00"],
     minPax: 2,
   },
   {

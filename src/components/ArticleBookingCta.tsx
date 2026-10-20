@@ -222,7 +222,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-rafting-rainy-season-oct-dec-2026': {
     headline: 'Book Ayung rafting for Oct–Dec',
-    body: 'IDR 450,000 each for 2+ (list 500,000). Lunch, gear, insurance included. Morning slots 08:30 / 11:00. Weather cancellations refunded or rescheduled free.',
+    body: 'IDR 450,000 each for 2+ (list 500,000). Lunch, gear, insurance included. Slots 08:30 / 11:00 / 12:00 (last booking). Weather cancellations refunded or rescheduled free.',
     primaryHref: '/tours/whitewater-rafting',
     primaryLabel: 'View rafting',
     secondaryHref: '/tours/atv-rafting-combo',

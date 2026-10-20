@@ -2,6 +2,13 @@ import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from '@/li
 import { trackGenerateLead } from '@/lib/ga'
 import { formatIdr, resolveWhatsAppPageUrl } from '@/lib/whatsapp'
 import { formatPaymentWhatsAppNote } from '@/lib/payment'
+import {
+  PAY_ON_SPOT_CARD_SURCHARGE_PERCENT,
+  PAY_ON_SPOT_METHODS,
+} from '@/data/payOnSpot'
+
+/** Payment methods line for invoice text (WhatsApp / PDF). */
+export const INVOICE_PAYMENT_METHODS_LINE = `Payment methods we accept: ${PAY_ON_SPOT_METHODS.join(', ')}. Card payments add a ${PAY_ON_SPOT_CARD_SURCHARGE_PERCENT}% surcharge.`
 import type { TransferOption } from '@/lib/adminInvoiceCatalog'
 
 export type InvoiceLineItem = {
@@ -27,6 +34,10 @@ export type InvoiceDraft = {
   location: string
   /** Google Maps link for the self-meet point — set when no shuttle/pickup is booked. */
   mapUrl?: string
+  /** True when a driver/pickup is included in this booking. */
+  hasPickup?: boolean
+  /** Venue guests show the invoice to on arrival (e.g. All New Bali Adventure). */
+  venueName?: string
   notes?: string
   lineItems: InvoiceLineItem[]
   /** Full package / booking total before deposit split */
@@ -228,7 +239,10 @@ export async function downloadInvoicePdf(invoice: InvoiceDraft): Promise<void> {
   doc.setFontSize(10)
   const paymentNote = doc.splitTextToSize(formatPaymentWhatsAppNote(), 174)
   doc.text(paymentNote, margin, y)
-  y += paymentNote.length * 5 + 4
+  y += paymentNote.length * 5 + 2
+  const methodsNote = doc.splitTextToSize(INVOICE_PAYMENT_METHODS_LINE, 174)
+  doc.text(methodsNote, margin, y)
+  y += methodsNote.length * 5 + 4
   doc.setFontSize(9)
   doc.setTextColor(90, 90, 90)
   const footer = doc.splitTextToSize(
@@ -271,6 +285,15 @@ export function buildInvoiceWhatsAppMessage(invoice: InvoiceDraft): string {
     lines.push(
       'No shuttle booked — please open the map link above and meet us at that pin at your booking time.',
     )
+    lines.push(
+      invoice.venueName
+        ? `Please show this invoice to the ${invoice.venueName} operator when you arrive. See you there — enjoy!`
+        : 'Please show this invoice when you arrive. See you there — enjoy!',
+    )
+  } else if (invoice.hasPickup) {
+    lines.push(
+      '*Pickup driver:* We are preparing your driver, please wait a moment — please be ready at your pickup point at the pickup time.',
+    )
   }
   if (invoice.transferOption && invoice.transferOption !== 'none') {
     lines.push(`*Transfer:* ${invoice.transferOption}`)
@@ -286,10 +309,9 @@ export function buildInvoiceWhatsAppMessage(invoice: InvoiceDraft): string {
   if (fromPage) lines.push(`*From website:* ${fromPage}`)
   lines.push('')
   lines.push(formatPaymentWhatsAppNote())
+  lines.push(`*${INVOICE_PAYMENT_METHODS_LINE}*`)
   lines.push('')
-  lines.push(
-    'I downloaded the PDF invoice with your logo and will attach it here if needed. Please send payment instructions on this WhatsApp thread.',
-  )
+  lines.push('Please confirm my booking and send payment instructions on this WhatsApp thread.')
   if (invoice.notes) {
     lines.push('')
     lines.push(`*Notes:* ${invoice.notes}`)

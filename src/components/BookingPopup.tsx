@@ -766,6 +766,12 @@ export function BookingPopup({
       // No shuttle: send the self-meet pin (All New Bali Adventure for
       // ATV / rafting / tubing) in the WhatsApp invoice + PDF.
       mapUrl: !effectiveWantsPickup ? bookingMapUrl : undefined,
+      hasPickup: effectiveWantsPickup,
+      venueName: !effectiveWantsPickup
+        ? involvesArenaActivity
+          ? MEETING_POINT.name
+          : selfMeet?.name
+        : undefined,
       notes: [
         notes.trim() || null,
         mixedQuote

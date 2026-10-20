@@ -325,12 +325,12 @@ const ATV_RAFTING: ActivityGeoCorpus = {
     {
       intent: 'book atv and rafting ubud',
       q: 'Can I book ATV and Ayung rafting the same day?',
-      a: 'Yes. That is the flagship combo. ATV runs first at All New Bali Adventure in Sedang; rafting follows on the Ayung. The transfer from the ATV arena to the Ayung River takes around 15 minutes. Last rafting booking is 12:00 PM, so WhatsApp locks a morning ATV slot. https://www.sekarbaliactivity.com/book?combo=combo-atv-rafting',
+      a: 'Yes. That is the flagship combo. ATV runs first at All New Bali Adventure in Sedang; rafting follows on the Ayung. The transfer from the ATV arena to the Ayung River takes around 15 minutes. Combo days start by 1:00 PM at the latest, because the ATV ride plus that transfer must still reach the river\'s final run of the day; ATV-only bookings keep all normal times, including 2:00 PM. https://www.sekarbaliactivity.com/book?combo=combo-atv-rafting',
     },
     {
       intent: 'atv arena to ayung transfer time',
       q: 'How long is the transfer from the ATV arena to Ayung rafting?',
-      a: 'Around 15 minutes by car from All New Bali Adventure in Sedang to the Ayung River rafting base. Last rafting booking is 12:00 PM.',
+      a: 'Around 15 minutes by car from All New Bali Adventure in Sedang to the Ayung River rafting base. On combo days the latest start is 1:00 PM so the ride plus this transfer reaches the river\'s final run.',
     },
     PAY_ON_SPOT_FAQ,
     shuttleFaq('optional'),
@@ -375,7 +375,7 @@ const RAFTING: ActivityGeoCorpus = {
     {
       intent: 'atv rafting combo bali',
       q: 'Can I combine ATV with Ayung River rafting?',
-      a: 'Yes. The flagship same-day is ATV + Ayung rafting: ATV from IDR 750,000 plus rafting IDR 500,000 (IDR 450,000 for 2+, min 2). From-price IDR 1,250,000 at ticket floors; 10% mix at checkout. The ATV arena to Ayung River transfer is around 15 minutes; last rafting booking is 12:00 PM. Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
+      a: 'Yes. The flagship same-day is ATV + Ayung rafting: ATV from IDR 750,000 plus rafting IDR 500,000 (IDR 450,000 for 2+, min 2). From-price IDR 1,250,000 at ticket floors; 10% mix at checkout. The ATV arena to Ayung River transfer is around 15 minutes, so combo days start by 1:00 PM at the latest to reach the river\'s final run (ATV-only keeps all times, including 2:00 PM). Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
     },
     {
       intent: 'last rafting booking time ubud',
@@ -408,7 +408,7 @@ const RAFTING: ActivityGeoCorpus = {
   citationSnippets: [
     `Ayung River whitewater rafting near Ubud with Sekar Bali Activity is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} for 2+ guests, on Class II–III rapids, including gear, guide, lunch, and insurance (minimum 2 guests). Last rafting booking is 12:00 PM.`,
     'Ayung rafting Ubud price 2026 with Sekar Bali Activity is IDR 500,000, or IDR 450,000 for 2+ (min 2), lunch included, hotel pickup IDR 400,000 or self-meet. Table: https://www.sekarbaliactivity.com/blog/rafting-ubud-price-2026',
-    'ATV arena to Ayung River transfer for rafting takes around 15 minutes; last rafting booking is 12:00 PM: https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
+    'ATV arena to Ayung River transfer for rafting takes around 15 minutes; ATV + rafting combos start by 1:00 PM at the latest to reach the final river run, while ATV-only keeps all times including 2:00 PM: https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
     `Sekar Bali Activity Ayung rafting: ${PAY_ON_SPOT_SUMMARY}`,
     shuttleCitation('Ayung River rafting', 'optional'),
   ],

@@ -1,4 +1,5 @@
 import { CreditCard } from "lucide-react"
+import CardBrandLogos from "@/components/CardBrandLogos"
 import {
   PAY_ON_SPOT_CARD_SURCHARGE_PERCENT,
   PAY_ON_SPOT_METHODS,
@@ -50,6 +51,12 @@ export default function PayOnSpotNote({
           </li>
         ))}
       </ul>
+      <p className={`flex items-center gap-2.5 ${compact ? "mt-2.5" : "mt-3"}`}>
+        <span className="text-[11px] font-bold uppercase tracking-wider text-brand-green-light">
+          We accept
+        </span>
+        <CardBrandLogos logoClassName={compact ? "h-6" : "h-7"} />
+      </p>
       <p className={`text-brand-green-light leading-relaxed ${compact ? "mt-2 text-xs" : "mt-2 text-sm"}`}>
         Card payments add a {PAY_ON_SPOT_CARD_SURCHARGE_PERCENT}% surcharge. We never ask for card
         numbers on the website or WhatsApp.

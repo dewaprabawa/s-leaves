@@ -8,6 +8,8 @@ export const ATV_PREMIUM_POST_SLUGS = new Set([
   "group-atv-package-ubud-2026",
   "atv-package-private-transfer-bali-2026",
   "atv-rafting-premium-package-2026",
+  "family-atv-package-ubud-2026",
+  "atv-premium-promo-deal-ubud-2026",
 ])
 
 export type AtvPremiumPackage = {

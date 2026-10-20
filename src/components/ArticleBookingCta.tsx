@@ -84,6 +84,22 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/bali-atv-adventure',
     secondaryLabel: 'Standard ATV ride',
   },
+  'family-atv-package-ubud-2026': {
+    headline: 'Book the family ATV package',
+    body: 'Singles for the drivers, one tandem so a child rides behind a parent, and a private shuttle just for your family. 3 guests IDR 2,025,000 · 4 guests 2,655,000 · 5 guests 3,240,000 — 10% off booking separately.',
+    primaryHref: '/tours/atv-premium-package-bali',
+    primaryLabel: 'Choose your family package',
+    secondaryHref: '/blog/bali-atv-rafting-jeep-with-kids-2026',
+    secondaryLabel: 'ATV with kids (ages 6+)',
+  },
+  'atv-premium-promo-deal-ubud-2026': {
+    headline: 'Get 10% off the premium ATV deal',
+    body: 'ATV packages 2,025,000–3,240,000 · Land & River ATV + rafting 2,475,000–4,500,000 — private shuttle included, no promo code needed.',
+    primaryHref: '/tours/atv-premium-package-bali',
+    primaryLabel: 'Claim the package deal',
+    secondaryHref: '/tours/atv-rafting-combo',
+    secondaryLabel: 'Standard ATV + rafting',
+  },
   'group-atv-package-ubud-2026': {
     headline: 'Put your group on the right bikes',
     body: 'Singles for the confident riders, one tandem for two who share, and a private shuttle for your group only. From IDR 2,025,000 for 3 guests.',

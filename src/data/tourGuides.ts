@@ -32,6 +32,16 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Single ATV + Ayung rafting for 2, 3 or 4, with your own car all day.',
     },
     {
+      title: 'Family ATV package near Ubud',
+      href: '/blog/family-atv-package-ubud-2026',
+      blurb: 'Tandem so a child rides behind a parent, private shuttle for your family, one price.',
+    },
+    {
+      title: 'ATV promo: the premium deal (10% off)',
+      href: '/blog/atv-premium-promo-deal-ubud-2026',
+      blurb: 'The full promo math — save IDR 225,000–500,000 per package, shuttle included.',
+    },
+    {
       title: 'Single vs tandem ATV',
       href: '/blog/tandem-atv-ubud-price',
       blurb: 'How tandem riding works and who should share a bike.',

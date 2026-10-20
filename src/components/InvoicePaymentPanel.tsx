@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { CheckCircle2, Download, MessageCircle, Loader2 } from 'lucide-react'
+import { CheckCircle2, Download, MessageCircle, Loader2, MapPin } from 'lucide-react'
 import {
   downloadInvoicePdf,
   openInvoiceWhatsApp,
@@ -138,6 +138,29 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
           <p className="text-xs text-brand-green-light pt-1">Prepared by {invoice.createdBy}</p>
         ) : null}
       </div>
+
+      {invoice.mapUrl ? (
+        <div className="rounded-2xl border-2 border-brand-green/25 bg-brand-green/5 p-4 md:p-5 mb-4">
+          <p className="text-xs font-bold uppercase tracking-wider text-brand-green mb-1.5">
+            No shuttle — where to meet
+          </p>
+          <p className="text-sm font-semibold text-brand-green leading-relaxed">
+            {invoice.location}
+          </p>
+          <p className="text-xs text-brand-green-light leading-relaxed mt-1">
+            This map pin is also included in the WhatsApp invoice and PDF, so you can open it on the day.
+          </p>
+          <a
+            href={invoice.mapUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-3 inline-flex min-h-[44px] items-center gap-2 rounded-xl bg-brand-green px-4 py-2.5 text-sm font-bold text-sand hover:bg-brand-green-light transition-colors"
+          >
+            <MapPin className="h-4 w-4 shrink-0" />
+            Open meeting point in Google Maps
+          </a>
+        </div>
+      ) : null}
 
       <div className="rounded-2xl border border-accent-gold/30 bg-accent-gold/5 p-4 md:p-5 mb-5">
         <p className="text-xs font-bold uppercase tracking-wider text-accent-gold-dark mb-2">

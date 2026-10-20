@@ -288,15 +288,17 @@ export function BookingPopup({
     return () => document.removeEventListener("keydown", handleKeyDown)
   }, [isOpen, onClose])
 
-  // ATV (single/tandem) + rafting/tubing combo: start time capped at 12:00.
-  // If a later time (13:00/14:00) was picked first, clamp to the latest allowed slot.
+  // ATV (single/tandem) + rafting/tubing combo: latest start 1:00 PM (13:00),
+  // because the ATV ride + ~15 min transfer must still reach the river's final run.
+  // ATV-only bookings keep every normal time, including 2:00 PM.
+  // If a later time (14:00) was picked first, clamp to the latest allowed slot.
   useEffect(() => {
     if (!isOpen || !activeTour) return
     const ids = [activeTour.pricingActivityId ?? activeTour.id, ...mixIds]
     const hasAtv = ids.includes('single-atv') || ids.includes('tandem-atv')
     const hasWater = ids.includes('rafting') || ids.includes('canyon-tubing')
     if (!hasAtv || !hasWater) return
-    const allowed = activeTour.times.filter((t) => t <= '12:00')
+    const allowed = activeTour.times.filter((t) => t <= '13:00')
     if (!allowed.length) return
     setTime((prev) => (allowed.includes(prev) ? prev : allowed[allowed.length - 1]))
   }, [isOpen, activeTour?.id, activeTour?.pricingActivityId, activeTour?.times, mixIds])
@@ -347,19 +349,22 @@ export function BookingPopup({
   const isCombo = mixIds.length > 0;
   const includesRafting =
     activeTour.id === 'rafting' || mixIds.includes('rafting');
-  // Single/tandem ATV + tubing or rafting combo cannot start after 12:00.
+  // Single/tandem ATV + tubing or rafting combo: latest start 1:00 PM.
+  // The ATV ride plus the ~15-minute transfer to the river must still reach
+  // the final rafting/tubing run of the day — a 2:00 PM start arrives too late.
+  // ATV on its own is not capped and keeps all normal times.
   const comboActivityIds = [
     activeTour.pricingActivityId ?? activeTour.id,
     ...mixIds,
   ]
-  const capsTimeAtNoon =
+  const capsAtOnePm =
     isCombo &&
     (comboActivityIds.includes('single-atv') ||
       comboActivityIds.includes('tandem-atv')) &&
     (comboActivityIds.includes('rafting') ||
       comboActivityIds.includes('canyon-tubing'))
-  const availableTimes = capsTimeAtNoon
-    ? activeTour.times.filter((t) => t <= '12:00')
+  const availableTimes = capsAtOnePm
+    ? activeTour.times.filter((t) => t <= '13:00')
     : activeTour.times
   /** Adults used for pricing — must match steppers; rafting requires 2+ */
   const minAdults = isTandem || includesRafting ? 2 : Math.max(activeTour.minPax, 1);
@@ -414,7 +419,14 @@ export function BookingPopup({
     isAlohaUbudSwingBookingId(activeTour.pricingActivityId);
   const isZonedRequiredShuttle = isSwingHeaven || isAlohaSwing;
   const pickupNotOffered = activeTour.pickupNotOffered === true;
-  const meetsAtArena = activeTour.meetsAtArena === true;
+  // ATV / rafting / tubing always self-meet at All New Bali Adventure when no
+  // shuttle is booked — even when the entry point did not flag meetsAtArena
+  // (e.g. tour detail pages), so the invoice can send the arena location.
+  const arenaActivityIds = ['single-atv', 'tandem-atv', 'rafting', 'canyon-tubing'];
+  const involvesArenaActivity =
+    arenaActivityIds.includes(activeTour.pricingActivityId ?? activeTour.id) ||
+    mixIds.some((id) => arenaActivityIds.includes(id));
+  const meetsAtArena = activeTour.meetsAtArena === true || involvesArenaActivity;
   const selfMeet = activeTour.selfMeet
   const meetLabel = meetsAtArena
     ? MEETING_POINT.label
@@ -543,8 +555,8 @@ export function BookingPopup({
 
   const handleBook = () => {
     if (!nameOk) return alert("Please enter your name.");
-    if (capsTimeAtNoon && time > '12:00') {
-      return alert('ATV + rafting/tubing combo must start by 12:00 PM. Please pick 12:00 or earlier.');
+    if (capsAtOnePm && time > '13:00') {
+      return alert('ATV + rafting/tubing combo must start by 1:00 PM at the latest — the ATV ride plus the ~15-minute transfer to the river must still reach the final rafting run of the day. Please pick 1:00 PM or earlier. (ATV-only bookings can still start at 2:00 PM.)');
     }
     if (isTandem && (adults < 2 || adults % 2 !== 0)) {
       return alert('Tandem ATV requires an even number of riders (2, 4, 6…).');
@@ -737,6 +749,9 @@ export function BookingPopup({
       date,
       time,
       location: bookingLocation,
+      // No shuttle: send the self-meet pin (All New Bali Adventure for
+      // ATV / rafting / tubing) in the WhatsApp invoice + PDF.
+      mapUrl: !effectiveWantsPickup ? bookingMapUrl : undefined,
       notes: [
         notes.trim() || null,
         mixedQuote
@@ -970,9 +985,9 @@ export function BookingPopup({
               <p className="text-brand-green font-bold text-sm mb-1">Mix activities (combo)</p>
               <p className="text-brand-green-light text-xs mb-3 leading-relaxed">
                 Add ATV, tubing, or rafting for a same-day package with ATV. Combos save 10% (2 activities) or 12% (3+).
-                {capsTimeAtNoon ? (
+                {capsAtOnePm ? (
                   <span className="block mt-1 font-semibold text-brand-green">
-                    ATV + rafting/tubing combo: start time is max 12:00 PM — later times are removed.
+                    ATV + rafting/tubing combo: latest start is 1:00 PM — the 2:00 PM slot is removed. The ATV ride plus the ~15-minute transfer to the river must still reach the final rafting run of the day. ATV-only bookings keep all normal times, including 2:00 PM.
                   </span>
                 ) : null}
               </p>
@@ -1368,15 +1383,15 @@ export function BookingPopup({
                 />
               </div>
               <div className="flex-1">
-                <label className="block text-brand-green font-bold text-sm mb-2">{effectiveWantsPickup ? "Pickup Time" : "Meeting Time"}{capsTimeAtNoon ? " (max 12:00)" : ""}</label>
+                <label className="block text-brand-green font-bold text-sm mb-2">{effectiveWantsPickup ? "Pickup Time" : "Meeting Time"}{capsAtOnePm ? " (latest 1:00 PM)" : ""}</label>
                 <select value={time} onChange={e => setTime(e.target.value)} className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm appearance-none cursor-pointer">
                   {availableTimes.map((t, idx) => (
                     <option key={idx} value={t}>{t}</option>
                   ))}
                 </select>
-                {capsTimeAtNoon ? (
+                {capsAtOnePm ? (
                   <p className="text-[11px] text-brand-green-light mt-1.5 leading-relaxed">
-                    Combo with tubing/rafting — no starts after 12:00 PM.
+                    ATV + rafting/tubing combo — latest start 1:00 PM, because the ride plus the ~15-minute transfer to the river must reach the final rafting run. ATV-only keeps the 2:00 PM slot.
                   </p>
                 ) : null}
               </div>

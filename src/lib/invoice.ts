@@ -25,6 +25,8 @@ export type InvoiceDraft = {
   date: string
   time: string
   location: string
+  /** Google Maps link for the self-meet point — set when no shuttle/pickup is booked. */
+  mapUrl?: string
   notes?: string
   lineItems: InvoiceLineItem[]
   /** Full package / booking total before deposit split */
@@ -150,6 +152,14 @@ export async function downloadInvoicePdf(invoice: InvoiceDraft): Promise<void> {
     doc.text(line, margin, y)
     y += 5
   }
+  if (invoice.mapUrl) {
+    const mapLines = doc.splitTextToSize(
+      `Meeting point (no shuttle — meet at the pin): ${invoice.mapUrl}`,
+      170,
+    )
+    doc.text(mapLines, margin, y)
+    y += mapLines.length * 5 + 2
+  }
   if (invoice.notes) {
     const noteLines = doc.splitTextToSize(`Notes: ${invoice.notes}`, 170)
     doc.text(noteLines, margin, y)
@@ -256,6 +266,12 @@ export function buildInvoiceWhatsAppMessage(invoice: InvoiceDraft): string {
   lines.push(`*Date:* ${invoice.date}`)
   lines.push(`*Time:* ${invoice.time}`)
   lines.push(`*Location / pickup:* ${invoice.location}`)
+  if (invoice.mapUrl) {
+    lines.push(`*Meeting point map:* ${invoice.mapUrl}`)
+    lines.push(
+      'No shuttle booked — please open the map link above and meet us at that pin at your booking time.',
+    )
+  }
   if (invoice.transferOption && invoice.transferOption !== 'none') {
     lines.push(`*Transfer:* ${invoice.transferOption}`)
   }
@@ -295,6 +311,12 @@ export function buildStaffToGuestInvoiceMessage(
     `*Activity:* ${invoice.activity}`,
     `*Date:* ${invoice.date} · ${invoice.time}`,
     `*Location:* ${invoice.location}`,
+    ...(invoice.mapUrl
+      ? [
+          `*Meeting point map:* ${invoice.mapUrl}`,
+          'No shuttle booked — please meet us at that pin at your booking time.',
+        ]
+      : []),
     `*Package total:* ${formatIdr(invoice.total)}`,
     isDeposit
       ? `*Deposit due now:* ${formatIdr(due)}`

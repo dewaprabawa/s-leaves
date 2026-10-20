@@ -56,6 +56,20 @@ const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: ()
 
 const UBUD_CENTER = { lat: -8.5069, lng: 115.2625 };
 
+/**
+ * Start times for ATV + rafting/tubing combos. ATV on its own lists
+ * 08:00/09:00/10:00/13:00/14:00 — combos additionally offer 11:00 and 12:00,
+ * and are capped at 13:00 (1:00 PM) so the day still reaches the river's
+ * final run. ATV-only bookings keep their normal times unchanged.
+ */
+function comboAvailableTimes(times: string[]): string[] {
+  const capped = times.filter((t) => t <= '13:00');
+  for (const extra of ['11:00', '12:00']) {
+    if (!capped.includes(extra)) capped.push(extra);
+  }
+  return capped.sort();
+}
+
 export type TourOptionalAddon = {
   id: string
   label: string
@@ -298,7 +312,7 @@ export function BookingPopup({
     const hasAtv = ids.includes('single-atv') || ids.includes('tandem-atv')
     const hasWater = ids.includes('rafting') || ids.includes('canyon-tubing')
     if (!hasAtv || !hasWater) return
-    const allowed = activeTour.times.filter((t) => t <= '13:00')
+    const allowed = comboAvailableTimes(activeTour.times)
     if (!allowed.length) return
     setTime((prev) => (allowed.includes(prev) ? prev : allowed[allowed.length - 1]))
   }, [isOpen, activeTour?.id, activeTour?.pricingActivityId, activeTour?.times, mixIds])
@@ -364,7 +378,7 @@ export function BookingPopup({
     (comboActivityIds.includes('rafting') ||
       comboActivityIds.includes('canyon-tubing'))
   const availableTimes = capsAtOnePm
-    ? activeTour.times.filter((t) => t <= '13:00')
+    ? comboAvailableTimes(activeTour.times)
     : activeTour.times
   /** Adults used for pricing — must match steppers; rafting requires 2+ */
   const minAdults = isTandem || includesRafting ? 2 : Math.max(activeTour.minPax, 1);
@@ -987,7 +1001,7 @@ export function BookingPopup({
                 Add ATV, tubing, or rafting for a same-day package with ATV. Combos save 10% (2 activities) or 12% (3+).
                 {capsAtOnePm ? (
                   <span className="block mt-1 font-semibold text-brand-green">
-                    ATV + rafting/tubing combo: latest start is 1:00 PM — the 2:00 PM slot is removed. The ATV ride plus the ~15-minute transfer to the river must still reach the final rafting run of the day. ATV-only bookings keep all normal times, including 2:00 PM.
+                    ATV + rafting/tubing combo: latest start is 1:00 PM — the 2:00 PM slot is removed, and 11:00 AM / 12:00 PM starts are added ({availableTimes.join(', ')}). The ATV ride plus the ~15-minute transfer to the river must still reach the final rafting run of the day. ATV-only bookings keep all normal times, including 2:00 PM.
                   </span>
                 ) : null}
               </p>

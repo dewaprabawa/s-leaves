@@ -14,6 +14,7 @@ import { isPayOnSpotTour } from "@/data/payOnSpot"
 import PrivateShuttleNote from "@/components/PrivateShuttleNote"
 import { getPrivateShuttleMode } from "@/data/privateShuttle"
 import AtvPremiumShowcase from "@/components/AtvPremiumShowcase"
+import AtvWorthItSection from "@/components/AtvWorthItSection"
 import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import TourPhotoGrid from "@/components/TourPhotoGrid"
@@ -1481,6 +1482,8 @@ export default async function TourPage({ params }: Props) {
             )}
 
             {tour.slug === ATV_PREMIUM_SLUG ? <AtvPremiumShowcase /> : null}
+
+            {isAtvArenaTour(tour.slug) ? <AtvWorthItSection /> : null}
 
             {cooking ? <CookingGeoBlock /> : null}
             {jeep ? <JeepGeoBlock /> : null}

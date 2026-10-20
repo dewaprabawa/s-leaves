@@ -95,7 +95,7 @@ Wet-season tip for riders: Kintamani lava rides **better** when damp — less du
 | --- | --- | --- |
 | **08:30** | Coolest, calmest, best light | Best pick in Nov–Dec |
 | **11:00** | Easier wake-up from south Bali | Usually done before showers |
-| **14:00** | Fits a morning flight arrival | Higher chance of afternoon rain |
+| **12:00** | Last rafting booking | No later starts — plan the morning around it |
 
 ## Year-end price (what you actually pay)
 

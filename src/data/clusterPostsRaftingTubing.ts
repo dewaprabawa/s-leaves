@@ -185,7 +185,7 @@ Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-ex
 
 ## What the 3-hour clock actually covers
 
-Typical slots: **08:30**, **11:00**, **14:00**. Door-to-door is longer if you book pickup.
+Typical slots: **08:30**, **11:00**, **12:00** — **12:00 PM is the last rafting booking**. Door-to-door is longer if you book pickup. On ATV + rafting days, the ATV arena to Ayung River transfer is around **15 minutes**.
 
 1. Meet / hotel collection
 2. Safety briefing and gear fit
@@ -209,7 +209,7 @@ Tubing price table: [Wos River tubing price 2026](/blog/wos-river-tubing-price-2
 ## How to book
 
 1. Open [Whitewater Rafting](/tours/whitewater-rafting)
-2. WhatsApp **date, guest count (min 2), hotel area, 08:30 / 11:00 / 14:00**
+2. WhatsApp **date, guest count (min 2), hotel area, 08:30 / 11:00 / 12:00 (last booking)**
 3. We confirm **450K vs 500K** and whether pickup is **400K** or self-meet
 4. No deposit to inquire
 

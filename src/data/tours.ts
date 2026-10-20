@@ -611,7 +611,7 @@ Different mix of bikes? Book singles and tandems separately on the [ATV ride pag
         time: "Land & River",
         title: "Ayung rafting after lunch",
         description:
-          "On Land & River packages, the private shuttle takes you from the ATV arena to the Ayung River for Class II–III rafting with a river guide, then home.",
+          "On Land & River packages, the private shuttle takes you from the ATV arena to the Ayung River — around 15 minutes — for Class II–III rafting with a river guide, then home. Last rafting booking is 12:00 PM.",
       },
     ],
     addons: [],
@@ -725,7 +725,7 @@ Book the checkout mix: [ATV + rafting](/book?combo=combo-atv-rafting). Single-AT
 
 ### How the day runs
 1. **ATV first** — briefing, 1.5-hour mud ride, lunch at Sedang.
-2. **Transfer** — we time the Ayung slot on WhatsApp. Same 400,000 pickup can cover both pins when you book the hotel collect.
+2. **Transfer (~15 minutes)** — the drive from the ATV arena to the Ayung River rafting base takes around **15 minutes**. We time the Ayung slot on WhatsApp (last rafting booking **12:00 PM**). Same 400,000 pickup can cover both pins when you book the hotel collect.
 3. **Rafting** — Class II–III splash, lunch on the river ticket, dry clothes after.
 
 Beginner briefing on both tickets. No ATV licence. Rafting wants basic swimming confidence; ages typically **7+** on the river and insurance **6–65** on ATV.
@@ -759,10 +759,10 @@ The [Land & River premium package](/tours/atv-premium-package-bali) bundles a si
       },
       {
         id: "iti-combo-2",
-        time: "Midday",
+        time: "~15 min",
         title: "Transfer to Ayung",
         description:
-          "We lock the rafting slot on WhatsApp. Same-day order can flip if the river clock is tighter.",
+          "Around 15 minutes by car from the ATV arena in Sedang to the Ayung River rafting base. We lock the rafting slot on WhatsApp — last rafting booking is 12:00 PM.",
       },
       {
         id: "iti-combo-3",
@@ -1196,10 +1196,10 @@ Ayung River rafting near Ubud is a **guided Class II–III** paddle — splash a
 ### A Great Standalone Adventure or Combo Day
 Book this page when you only want the river. The flagship land-and-water day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — from **IDR 1,250,000** at ticket floors, **10% mix** at checkout, pickup **IDR 400,000 once** or self-meet. Gentler water on a tube: [Wos River tubing](/tours/canyon-tubing) at the same 500K / 450K-for-2+ list (lunch not included). Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud). Check pickup first on the [hotel pickup checker](/planners/hotel-pickup-checker). WhatsApp locks the same-day slots.
 
-**Available Schedules:**
+**Available Schedules (last booking 12:00 PM):**
 - **Morning:** 08:30 AM
 - **Midday:** 11:00 AM
-- **Afternoon:** 02:00 PM`,
+- **Last booking:** 12:00 PM — no later rafting starts`,
     highlights: [
       "Class II-III rapids with professional crew",
       "Jungle canyon scenery and waterfalls",
@@ -1283,6 +1283,12 @@ Book this page when you only want the river. The flagship land-and-water day is 
         question: "Is this Ayung River rafting near Ubud?",
         answer:
           "Yes. This is Class II–III whitewater rafting on the Ayung River / Ubud canyon — jungle cliffs, waterfalls, and stone carvings. Beginner-friendly with a full safety briefing. Pair with ATV the same day if you want a land-and-water combo.",
+      },
+      {
+        id: "faq-raft-last",
+        question: "What is the last rafting booking time?",
+        answer:
+          "The last bookable rafting start is 12:00 PM. Bookable starts are 08:30, 11:00, and 12:00 — there is no 14:00 rafting start. On ATV + rafting days, the transfer from the ATV arena to the Ayung River takes around 15 minutes, so we lock the morning ATV slot to meet the 12:00 PM river cut-off.",
       },
       {
         id: "faq-raft-pay",

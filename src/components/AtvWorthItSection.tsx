@@ -54,11 +54,17 @@ export default function AtvWorthItSection() {
       <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent-gold/20 blur-3xl" />
       <div className="relative space-y-6">
         <div className="space-y-2">
-          <p className="inline-flex items-center gap-2 rounded-full border border-accent-gold/60 px-3 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-accent-gold">
-            <BadgeCheck className="h-3.5 w-3.5" />
+          <p className="inline-flex items-center gap-2 rounded-full border border-accent-gold/60 px-3 py-1 text-[10px] font-black uppercase tracking-[0.2em] text-white">
+            <BadgeCheck className="h-3.5 w-3.5 text-accent-gold" />
             Why our price is worth it
           </p>
-          <h2 id="atv-worth-it" className="font-display text-3xl md:text-4xl font-bold uppercase leading-tight text-white">
+          {/* Inline color: globals.css sets h1-h6 to brand-green outside
+              Tailwind layers, which would override text-white. */}
+          <h2
+            id="atv-worth-it"
+            style={{ color: "#ffffff" }}
+            className="font-display text-3xl md:text-4xl font-bold uppercase leading-tight text-white"
+          >
             What your ATV price actually buys
           </h2>
           <p className="max-w-3xl text-sm md:text-base text-sand/80 leading-relaxed">

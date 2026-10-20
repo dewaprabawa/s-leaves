@@ -206,6 +206,14 @@ const SWING_HEAVEN_PHOTOS = [
 
 const ATV_TRACK_PHOTOS = [
   {
+    url: "/images/adventures/atv-cave-tunnel-track.jpg",
+    alt: "Riders exiting the authentic cave tunnel on the ATV track at All New Bali Adventure near Ubud",
+  },
+  {
+    url: "/images/adventures/atv-river-crossing-single.jpg",
+    alt: "Single ATV crossing a jungle river on the All New Bali Adventure track near Ubud",
+  },
+  {
     url: "/images/adventures/atv-canyon-wall-mud.jpg",
     alt: "Rider grinning on a muddy ATV track below a rock canyon wall near Ubud",
   },
@@ -246,6 +254,22 @@ export const TOURS: Tour[] = [
     },
     gallery: [
       {
+        url: "/images/adventures/atv-cave-tunnel-track.jpg",
+        alt: "Riders exiting the authentic cave tunnel on the ATV track at All New Bali Adventure near Ubud",
+      },
+      {
+        url: "/images/adventures/atv-river-crossing-single.jpg",
+        alt: "Single ATV crossing a jungle river on the All New Bali Adventure track near Ubud",
+      },
+      {
+        url: "/images/adventures/atv-jungle-mud-track-riders.jpg",
+        alt: "Group of riders on the jungle mud track at All New Bali Adventure near Ubud",
+      },
+      {
+        url: "/images/adventures/atv-muddy-jungle-trail-pov.jpg",
+        alt: "Rider POV on a muddy jungle trail following the guide at All New Bali Adventure",
+      },
+      {
         url: "/images/adventures/atv-mud-river-splash.jpg",
         alt: "Rider on a green ATV splashing through muddy water near Ubud",
       },
@@ -284,8 +308,18 @@ Hop on a powerful ATV and race scenic off-road trails with expert guides. Packag
 ### Quad biking Ubud price (same as ATV)
 **Quad bike** and **ATV** are the same machine here. **Quad biking Ubud price** in 2026: **IDR 750,000** (1), **725,000** (2), **700,000** (3+). Tandem **IDR 1,100,000**. Lunch, helmet, boots, insurance included. Hotel pickup is **IDR 400,000** or free self-meet. There is **no free quad biking Ubud** ride — “free” means no payment to inquire, free self-meet, and the [free ATV price calculator](/planners/atv-price-calculator).
 
-### Not Gorilla Cave — and not a waterfall-cave park
-Searches for **Ubud ATV Quad Bike adventure with Gorilla Cave and lunch** or **ATV tour Ubud waterfall** describe other arenas (Alasan Gorilla Cave, Kuber cave + waterfall). We include **lunch**. We do **not** sell Gorilla Cave, Kuber tunnel, or a waterfall cave. Our track is jungle mud and river crossings at All New Bali Adventure in Sedang. Honest compare: [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026) · [Ubud quad biking 2026](/blog/ubud-quad-biking-price-2026). Want canyon waterfalls? Book **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — the waterfalls are on the river, not on the ATV track.
+### Our own cave tunnel — not the Gorilla Cave / Kuber parks
+Our track has its **own authentic cave tunnel**: you ride out through the carved beast-mouth cave on the course at All New Bali Adventure in Sedang (see the track photos on this page). That is different from the **Gorilla Cave** and **Kuber** parks people search for — we do not sell those tickets, and this is not a waterfall-cave park. Our course is jungle mud, river crossings and its own cave tunnel. Honest compare: [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026) · [Ubud quad biking 2026](/blog/ubud-quad-biking-price-2026). Want canyon waterfalls? Book **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — the waterfalls are on the river, not on the ATV track.
+
+### Why our ATV price is worth it
+Cheaper ATV listings usually mean a shorter loop, older bikes, or gear and lunch charged later. Our published price — **IDR 750,000** single (725,000 each for 2, 700,000 each for 3+), **IDR 1,100,000** tandem — buys the full adventure:
+
+- **New ATVs, great maintenance for performance** — quads are checked after every ride day (brakes, tyres, engine), so the bike pulls cleanly through mud and river instead of struggling. Performance is safety here.
+- **A real 1.5-hour track, not a field loop** — jungle trails, deep muddy sections, real river crossings, and our authentic cave tunnel, all in one course.
+- **Everything included up front** — lunch, helmet, boot shoes, safety briefing, trail guide, and insurance for ages 6–65. No hidden add-ons at the arena.
+- **Published prices, honest value** — the price on this page is the price on WhatsApp. No payment just to inquire, and a private shuttle is a clear IDR 400,000 once per booking (or meet free at the arena).
+
+That combination — maintained bikes, a varied jungle/river/mud/cave track, and all-in pricing — is why the ride is worth it.
 
 ### Combine with River Tubing or Rafting
 Want even more adventure? The flagship same-day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — mud then Class II–III. From **IDR 1,250,000** at ticket floors; **10% mix** at checkout. Gentler water: [Wos River tubing](/tours/canyon-tubing). After the mud track, cool off on the river.
@@ -310,6 +344,8 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     highlights: [
       "ATV arena at All New Bali Adventure",
       "Complete Bali quad bike (ATV) adventure",
+      "Own authentic cave tunnel, river crossings & jungle mud track",
+      "New, well-maintained ATVs — checked for performance daily",
       "Optional river tubing on the Wos River",
       "Boot shoes, helmet, lunch & insurance for ages 6–65 included",
       "Suitable for beginners with full safety briefing",
@@ -412,6 +448,18 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
           "Yes. The flagship same-day is ATV + Ayung rafting — from IDR 1,250,000 at published floors, 10% mix at checkout. Book: https://www.sekarbaliactivity.com/tours/atv-rafting-combo. Couple tandem + two rafts is IDR 2,000,000 before mix. Wos River tubing is the gentler add-on at the same 1.25M floors: https://www.sekarbaliactivity.com/book?combo=combo-atv-tubing. WhatsApp date and guest count. On combo days the latest start is 1:00 PM: the ATV ride plus the ~15-minute transfer to the river must still reach the river's final run of the day. ATV-only bookings are not capped and keep all normal times, including 2:00 PM.",
       },
       {
+        id: "faq-atv-worth",
+        question: "Why is your ATV price worth it?",
+        answer:
+          "The published price (single IDR 750,000; 725,000 each for 2; 700,000 each for 3+; tandem IDR 1,100,000) covers new, well-maintained ATVs checked for performance after every ride day, the full 1.5-hour All New Bali Adventure track — jungle, muddy sections, real river crossings and our authentic cave tunnel — plus lunch, helmet, boot shoes, a trail guide, safety briefing and insurance for ages 6–65, with no hidden fees. Cheaper listings usually mean a shorter loop, older bikes, or extras charged at the arena.",
+      },
+      {
+        id: "faq-atv-cave",
+        question: "Does your ATV track have a cave?",
+        answer:
+          "Yes — our Sedang track has its own authentic cave tunnel that you ride out through (see the photos on this page), alongside jungle mud and river crossings. It is our own course feature, not the Gorilla Cave or Kuber parks, which we do not sell.",
+      },
+      {
         id: "faq-atv-6",
         question: "What should I bring?",
         answer:
@@ -451,7 +499,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-12",
         question: "Do you run an ATV tour Ubud waterfall or Gorilla Cave with lunch?",
         answer:
-          "Lunch is included. Gorilla Cave and waterfall-cave ATV are other operators (Alasan, Kuber). Our track is jungle mud and river crossings in Sedang — not a cave. For canyon waterfalls, book ATV + Ayung rafting from IDR 1,250,000. Compare: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026",
+          "Lunch is included. Gorilla Cave and waterfall-cave ATV are other operators (Alasan, Kuber) — we do not sell those tickets. Our Sedang track is jungle mud, river crossings and its own authentic cave tunnel. For canyon waterfalls, book ATV + Ayung rafting from IDR 1,250,000. Compare: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026",
       },
       {
         id: "faq-atv-13",
@@ -548,7 +596,7 @@ Every guest rides a single ATV in the morning, then rafts the Ayung River after 
 - **One price, nothing to add.** Ride, lunch, helmet, boot shoes, trail guide, insurance for ages 6–65, and the shuttle — all in the package.
 
 ### The ride
-The same jungle ATV track as our [standard ATV ride](/tours/bali-atv-adventure): a **1.5-hour ride** through jungle mud, soft soil and river crossings at **All New Bali Adventure** in Sedang, near Ubud — plus the safety briefing and lunch. No licence or experience needed. This is a mud and river-crossing track, not a cave or tunnel park.
+The same jungle ATV track as our [standard ATV ride](/tours/bali-atv-adventure): a **1.5-hour ride** through jungle mud, soft soil, river crossings and the track's own cave tunnel at **All New Bali Adventure** in Sedang, near Ubud — plus the safety briefing and lunch. No licence or experience needed. New, well-maintained ATVs, checked for performance after every ride day.
 
 ### Who it suits
 - **Families** — parents on singles, a child or grandparent on the tandem with one adult. Insurance covers ages 6–65; send every rider's age before you book.

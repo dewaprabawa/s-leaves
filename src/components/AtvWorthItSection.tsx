@@ -58,7 +58,7 @@ export default function AtvWorthItSection() {
             <BadgeCheck className="h-3.5 w-3.5" />
             Why our price is worth it
           </p>
-          <h2 id="atv-worth-it" className="font-display text-3xl md:text-4xl font-bold uppercase leading-tight">
+          <h2 id="atv-worth-it" className="font-display text-3xl md:text-4xl font-bold uppercase leading-tight text-white">
             What your ATV price actually buys
           </h2>
           <p className="max-w-3xl text-sm md:text-base text-sand/80 leading-relaxed">

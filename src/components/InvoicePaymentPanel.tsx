@@ -1,15 +1,14 @@
 'use client'
 
-import { useState } from 'react'
-import { CheckCircle2, Download, MessageCircle, Loader2, MapPin } from 'lucide-react'
+import { CheckCircle2, MessageCircle, MapPin } from 'lucide-react'
 import {
-  downloadInvoicePdf,
+  INVOICE_PAYMENT_METHODS_LINE,
   openInvoiceWhatsApp,
-  openPaymentConfirmationWhatsApp,
   type InvoiceDraft,
 } from '@/lib/invoice'
 import { PAYMENT_INSTRUCTIONS } from '@/lib/payment'
 import { formatIdr } from '@/lib/whatsapp'
+import CardBrandLogos from '@/components/CardBrandLogos'
 
 type Props = {
   invoice: InvoiceDraft
@@ -18,40 +17,8 @@ type Props = {
 }
 
 export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props) {
-  const [downloading, setDownloading] = useState(false)
-  const [pdfReady, setPdfReady] = useState(false)
-  const [error, setError] = useState<string | null>(null)
-
-  const handleDownloadPdf = async () => {
-    setDownloading(true)
-    setError(null)
-    try {
-      await downloadInvoicePdf(invoice)
-      setPdfReady(true)
-    } catch (err) {
-      console.error(err)
-      setError('Could not create the PDF. Please try again or send the WhatsApp invoice text.')
-    } finally {
-      setDownloading(false)
-    }
-  }
-
-  const handleSendInvoice = async () => {
-    setError(null)
-    try {
-      if (!pdfReady) {
-        await downloadInvoicePdf(invoice)
-        setPdfReady(true)
-      }
-    } catch (err) {
-      console.error(err)
-      // Still open WhatsApp with text even if PDF fails
-    }
+  const handleSendInvoice = () => {
     openInvoiceWhatsApp(invoice)
-  }
-
-  const handleConfirmPayment = () => {
-    openPaymentConfirmationWhatsApp(invoice)
   }
 
   return (
@@ -65,8 +32,8 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
             Agree &amp; pay by invoice
           </h2>
           <p className="text-sm text-brand-green-light mt-1 leading-relaxed">
-            Download the PDF invoice (with our logo), send it to our WhatsApp, then pay using the
-            instructions we send on that thread.
+            Review your booking below, then tap <strong>Agree — send invoice to WhatsApp</strong>.
+            We confirm and send payment instructions on that thread.
           </p>
         </div>
       </div>
@@ -148,7 +115,8 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
             {invoice.location}
           </p>
           <p className="text-xs text-brand-green-light leading-relaxed mt-1">
-            This map pin is also included in the WhatsApp invoice and PDF, so you can open it on the day.
+            This map pin is also included in the WhatsApp invoice, so you can open it on the day.
+            Please show your invoice to the operator when you arrive — see you there!
           </p>
           <a
             href={invoice.mapUrl}
@@ -172,26 +140,19 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
               · {line}
             </li>
           ))}
+          <li className="text-xs text-brand-green-light leading-relaxed">
+            · {INVOICE_PAYMENT_METHODS_LINE}
+          </li>
         </ul>
+        <p className="mt-3 flex items-center gap-2.5">
+          <span className="text-[11px] font-bold uppercase tracking-wider text-brand-green-light">
+            We accept
+          </span>
+          <CardBrandLogos logoClassName="h-7" />
+        </p>
       </div>
 
-      {error ? (
-        <p className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-xl px-3 py-2 mb-3">
-          {error}
-        </p>
-      ) : null}
-
       <div className="space-y-3 mt-auto">
-        <button
-          type="button"
-          onClick={handleDownloadPdf}
-          disabled={downloading}
-          className="w-full py-3.5 rounded-xl font-bold text-sm border border-brand-green/20 bg-white text-brand-green hover:bg-sand transition-colors inline-flex items-center justify-center gap-2 disabled:opacity-60"
-        >
-          {downloading ? <Loader2 className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
-          {pdfReady ? 'Download PDF invoice again' : 'Download PDF invoice (with logo)'}
-        </button>
-
         <button
           type="button"
           onClick={handleSendInvoice}
@@ -199,15 +160,6 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
         >
           <MessageCircle className="w-5 h-5" />
           Agree — send invoice to WhatsApp
-        </button>
-
-        <button
-          type="button"
-          onClick={handleConfirmPayment}
-          className="w-full py-3.5 rounded-xl font-bold text-sm bg-accent-gold text-brand-green hover:brightness-95 transition-all inline-flex items-center justify-center gap-2"
-        >
-          <CheckCircle2 className="w-4 h-4" />
-          I finished payment — confirm on WhatsApp
         </button>
 
         <div className="flex gap-3 pt-1">

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import dynamic from 'next/dynamic';
-import { X, ExternalLink, Info } from 'lucide-react';
+import { X, ExternalLink, Info, MapPin, CheckCircle2 } from 'lucide-react';
 import { formatIdr } from '@/lib/whatsapp';
 import {
   createInvoiceNumber,
@@ -188,6 +188,8 @@ export function BookingPopup({
   const [date, setDate] = useState("");
   const [location, setLocation] = useState<{lat: number, lng: number} | null>(UBUD_CENTER);
   const [isOutUbud, setIsOutUbud] = useState(false);
+  /** True once the guest has tapped / searched / located — pin starts at Ubud centre by default. */
+  const [pinSet, setPinSet] = useState(false);
   const [locationDetails, setLocationDetails] = useState("");
   const [notes, setNotes] = useState("");
   const [selectedTourId, setSelectedTourId] = useState(tour?.id || "");
@@ -221,6 +223,7 @@ export function BookingPopup({
       setDate(new Date().toISOString().split('T')[0]);
       setLocation(UBUD_CENTER);
       setIsOutUbud(false);
+      setPinSet(false);
       setLocationDetails("");
       setNotes("");
       setShowDetails(false);
@@ -285,6 +288,19 @@ export function BookingPopup({
     return () => document.removeEventListener("keydown", handleKeyDown)
   }, [isOpen, onClose])
 
+  // ATV (single/tandem) + rafting/tubing combo: start time capped at 12:00.
+  // If a later time (13:00/14:00) was picked first, clamp to the latest allowed slot.
+  useEffect(() => {
+    if (!isOpen || !activeTour) return
+    const ids = [activeTour.pricingActivityId ?? activeTour.id, ...mixIds]
+    const hasAtv = ids.includes('single-atv') || ids.includes('tandem-atv')
+    const hasWater = ids.includes('rafting') || ids.includes('canyon-tubing')
+    if (!hasAtv || !hasWater) return
+    const allowed = activeTour.times.filter((t) => t <= '12:00')
+    if (!allowed.length) return
+    setTime((prev) => (allowed.includes(prev) ? prev : allowed[allowed.length - 1]))
+  }, [isOpen, activeTour?.id, activeTour?.pricingActivityId, activeTour?.times, mixIds])
+
   // Keep adult count in sync with activity minimums (rafting / tandem need 2+)
   useEffect(() => {
     if (!isOpen || !activeTour) return
@@ -331,6 +347,20 @@ export function BookingPopup({
   const isCombo = mixIds.length > 0;
   const includesRafting =
     activeTour.id === 'rafting' || mixIds.includes('rafting');
+  // Single/tandem ATV + tubing or rafting combo cannot start after 12:00.
+  const comboActivityIds = [
+    activeTour.pricingActivityId ?? activeTour.id,
+    ...mixIds,
+  ]
+  const capsTimeAtNoon =
+    isCombo &&
+    (comboActivityIds.includes('single-atv') ||
+      comboActivityIds.includes('tandem-atv')) &&
+    (comboActivityIds.includes('rafting') ||
+      comboActivityIds.includes('canyon-tubing'))
+  const availableTimes = capsTimeAtNoon
+    ? activeTour.times.filter((t) => t <= '12:00')
+    : activeTour.times
   /** Adults used for pricing — must match steppers; rafting requires 2+ */
   const minAdults = isTandem || includesRafting ? 2 : Math.max(activeTour.minPax, 1);
   const isInvalidPax =
@@ -492,6 +522,15 @@ export function BookingPopup({
       return next
     })
   }
+  const handlePinSelect = (lat: number, lng: number, isOut: boolean, placeName?: string) => {
+    setLocation({ lat, lng });
+    setIsOutUbud(isOut);
+    setPinSet(true);
+    if (placeName) {
+      setLocationDetails((prev) => (prev.trim().length >= 2 ? prev : placeName));
+    }
+  };
+
   const nameOk = guestName.trim().length >= 2;
   const needsHotelAddress = effectiveWantsPickup
   const locationOk = needsHotelAddress
@@ -504,6 +543,9 @@ export function BookingPopup({
 
   const handleBook = () => {
     if (!nameOk) return alert("Please enter your name.");
+    if (capsTimeAtNoon && time > '12:00') {
+      return alert('ATV + rafting/tubing combo must start by 12:00 PM. Please pick 12:00 or earlier.');
+    }
     if (isTandem && (adults < 2 || adults % 2 !== 0)) {
       return alert('Tandem ATV requires an even number of riders (2, 4, 6…).');
     }
@@ -767,7 +809,7 @@ export function BookingPopup({
           </button>
         </div>
 
-        <div className="w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
+        <div className={`w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10 ${effectiveWantsPickup ? "hidden md:block" : ""}`}>
           {!effectiveWantsPickup ? (
             hasFixedMeet && meetLabel ? (
               <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">
@@ -808,12 +850,9 @@ export function BookingPopup({
               </div>
             )
           ) : (
-            <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={(lat, lng, isOut) => {
-              setLocation({lat, lng});
-              setIsOutUbud(isOut);
-            }} />
+            <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={handlePinSelect} />
           )}
-          <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
+          <div className="hidden md:block absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
             <strong className="block mb-1">{effectiveWantsPickup ? "Pickup Location" : "Meeting Point"}</strong>
             {!effectiveWantsPickup ? (
               meetLabel ? (
@@ -931,6 +970,11 @@ export function BookingPopup({
               <p className="text-brand-green font-bold text-sm mb-1">Mix activities (combo)</p>
               <p className="text-brand-green-light text-xs mb-3 leading-relaxed">
                 Add ATV, tubing, or rafting for a same-day package with ATV. Combos save 10% (2 activities) or 12% (3+).
+                {capsTimeAtNoon ? (
+                  <span className="block mt-1 font-semibold text-brand-green">
+                    ATV + rafting/tubing combo: start time is max 12:00 PM — later times are removed.
+                  </span>
+                ) : null}
               </p>
               <div className="space-y-2">
                 {mixOptions.map((opt) => {
@@ -1132,8 +1176,8 @@ export function BookingPopup({
                       : SWING_HEAVEN_SHUTTLE_NOTICE}
                 </span>
                 <span className="text-brand-green-light block mt-1 mb-2">
-                  {isAlohaSwing ? ALOHA_SHUTTLE_NOTICE : SWING_HEAVEN_SHUTTLE_NOTICE} Move the map
-                  pin — the shuttle line updates automatically.
+                  {isAlohaSwing ? ALOHA_SHUTTLE_NOTICE : SWING_HEAVEN_SHUTTLE_NOTICE} Set your hotel
+                  pin on the map below — the shuttle line updates automatically.
                 </span>
                 <span className={`font-bold block ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>
                   {requiredShuttleLabel}: {pickupFee > 0 ? formatIdr(pickupFee) : 'IDR 0'}
@@ -1170,10 +1214,10 @@ export function BookingPopup({
                     {pickupFlatFee !== null && meetLabel
                       ? `Optional hotel shuttle, ${formatIdr(pickupFlatFee)} once per booking. If unchecked, meet at ${meetLabel}.`
                       : meetLabel
-                      ? `Optional. If unchecked, meet at ${meetLabel}. Check this to add your hotel address on the map.`
+                      ? `Optional. If unchecked, meet at ${meetLabel}. Then add your address + pin on the map below.`
                       : hasFreeUbudPickup
-                        ? "Free within Ubud (surcharge applies outside Ubud). Check this to add your hotel address on the map."
-                        : "Optional — a hotel pickup fee may apply. Check this to add your hotel address on the map."}
+                        ? "Free within Ubud (surcharge applies outside Ubud). Then add your address + pin on the map below."
+                        : "Optional — a hotel pickup fee may apply. Then add your address + pin on the map below."}
                   </span>
                   {activeTour.privateShuttle ? (
                     <span className="mt-1.5 block space-y-1.5 text-xs text-brand-green-light">
@@ -1209,6 +1253,43 @@ export function BookingPopup({
                 placeholder="e.g. Maya Ubud, Room 102" 
                 className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
               />
+              <p className="mt-1.5 text-xs text-brand-green-light">
+                Then set the pin on the map below — so the driver finds your hotel and the right shuttle price applies.
+              </p>
+            </div>
+
+            {/* Mobile only: map sits right here, next to the shuttle/address fields.
+                On desktop the large side map is used instead. */}
+            <div className="md:hidden overflow-hidden rounded-2xl border-2 border-brand-green/25 bg-white shadow-sm">
+              <div className="bg-brand-green px-4 py-3 text-sand">
+                <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wide">
+                  <MapPin className="h-4 w-4 shrink-0" /> Set your hotel pin
+                </p>
+                <ol className="mt-1.5 list-decimal space-y-0.5 pl-5 text-xs leading-relaxed text-sand/90">
+                  <li>Search your hotel name, or tap <strong>Use my location</strong></li>
+                  <li>Or tap anywhere on the map to drop the pin</li>
+                  <li>Check the green ✓ below — your pin sets the shuttle price</li>
+                </ol>
+              </div>
+              <div className="relative h-72">
+                <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={handlePinSelect} />
+              </div>
+              {pinSet ? (
+                <p className="flex items-start gap-2 bg-green-50 px-4 py-3 text-sm font-bold text-brand-green">
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" />
+                  <span>
+                    Pin set — {isOutUbud ? "Outside Ubud" : "Ubud area"}
+                    {pickupFee > 0 ? ` · Pickup ${formatIdr(pickupFee)}` : " · No extra pickup fee"}
+                    <span className="block text-xs font-semibold text-brand-green-light">
+                      Wrong spot? Tap the map again to move it.
+                    </span>
+                  </span>
+                </p>
+              ) : (
+                <p className="bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
+                  Pin not set yet — it starts at Ubud centre. Search, use your location, or tap the map above so we quote the right shuttle price.
+                </p>
+              )}
             </div>
             {pickupFlatFee === null &&
             ((!hasFreeUbudPickup && !pickupIncluded && !requiredShuttle) || (isOutUbud && !pickupIncluded && !requiredShuttle)) ? (
@@ -1287,12 +1368,17 @@ export function BookingPopup({
                 />
               </div>
               <div className="flex-1">
-                <label className="block text-brand-green font-bold text-sm mb-2">{effectiveWantsPickup ? "Pickup Time" : "Meeting Time"}</label>
+                <label className="block text-brand-green font-bold text-sm mb-2">{effectiveWantsPickup ? "Pickup Time" : "Meeting Time"}{capsTimeAtNoon ? " (max 12:00)" : ""}</label>
                 <select value={time} onChange={e => setTime(e.target.value)} className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm appearance-none cursor-pointer">
-                  {activeTour.times.map((t, idx) => (
+                  {availableTimes.map((t, idx) => (
                     <option key={idx} value={t}>{t}</option>
                   ))}
                 </select>
+                {capsTimeAtNoon ? (
+                  <p className="text-[11px] text-brand-green-light mt-1.5 leading-relaxed">
+                    Combo with tubing/rafting — no starts after 12:00 PM.
+                  </p>
+                ) : null}
               </div>
             </div>
 

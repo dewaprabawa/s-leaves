@@ -61,7 +61,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     image: "/images/adventures/atv-mud-river-splash.jpg",
     imageAlt: "Muddy ATV river crossing at All New Bali Adventure near Ubud",
     tourSlug: "bali-atv-adventure",
-    times: [...DEFAULT_TIMES],
+    times: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
     minPax: 1,
   },
   {
@@ -76,7 +76,7 @@ export const ADVENTURES: AdventureCatalogItem[] = [
     image: "/images/adventures/atv-mud-jungle-pov.jpg",
     imageAlt: "Tandem muddy quad bike on the jungle track near Ubud",
     tourSlug: "bali-atv-adventure",
-    times: [...DEFAULT_TIMES],
+    times: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
     minPax: 2,
   },
   {

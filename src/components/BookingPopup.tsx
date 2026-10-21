@@ -56,18 +56,21 @@ const MapPicker = dynamic(() => import('./MapPicker'), { ssr: false, loading: ()
 
 const UBUD_CENTER = { lat: -8.5069, lng: 115.2625 };
 
+/** Midday slots offered for ATV (single/tandem) and ATV combos. */
+function withMiddaySlots(times: string[]): string[] {
+  const merged = [...times];
+  for (const extra of ['11:00', '12:00']) {
+    if (!merged.includes(extra)) merged.push(extra);
+  }
+  return merged.sort();
+}
+
 /**
- * Start times for ATV + rafting/tubing combos. ATV on its own lists
- * 08:00/09:00/10:00/13:00/14:00 — combos additionally offer 11:00 and 12:00,
- * and are capped at 13:00 (1:00 PM) so the day still reaches the river's
- * final run. ATV-only bookings keep their normal times unchanged.
+ * Start times for ATV + rafting/tubing combos: includes 11:00 and 12:00,
+ * capped at 13:00 (1:00 PM) so the day still reaches the river's final run.
  */
 function comboAvailableTimes(times: string[]): string[] {
-  const capped = times.filter((t) => t <= '13:00');
-  for (const extra of ['11:00', '12:00']) {
-    if (!capped.includes(extra)) capped.push(extra);
-  }
-  return capped.sort();
+  return withMiddaySlots(times.filter((t) => t <= '13:00'));
 }
 
 export type TourOptionalAddon = {
@@ -377,9 +380,16 @@ export function BookingPopup({
       comboActivityIds.includes('tandem-atv')) &&
     (comboActivityIds.includes('rafting') ||
       comboActivityIds.includes('canyon-tubing'))
+  // Single/tandem ATV also offers 11:00 and 12:00 starts (not just combos),
+  // even if an entry point's time list does not include them yet.
+  const isAtvPrimary = ['single-atv', 'tandem-atv'].includes(
+    activeTour.pricingActivityId ?? activeTour.id,
+  )
   const availableTimes = capsAtOnePm
     ? comboAvailableTimes(activeTour.times)
-    : activeTour.times
+    : isAtvPrimary
+      ? withMiddaySlots(activeTour.times)
+      : activeTour.times
   /** Adults used for pricing — must match steppers; rafting requires 2+ */
   const minAdults = isTandem || includesRafting ? 2 : Math.max(activeTour.minPax, 1);
   const isInvalidPax =
@@ -844,7 +854,10 @@ export function BookingPopup({
           </button>
         </div>
 
-        <div className={`w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10 ${effectiveWantsPickup ? "hidden md:block" : ""}`}>
+        {/* Desktop side panel (meeting point / big map). Hidden on mobile:
+            the form starts immediately, meeting info sits in the form, and
+            the pickup map appears inline when shuttle is toggled. */}
+        <div className="hidden md:block w-full md:w-1/2 h-64 md:h-auto min-h-[350px] relative md:rounded-l-3xl md:rounded-tr-none overflow-hidden border-r border-brand-green/10">
           {!effectiveWantsPickup ? (
             hasFixedMeet && meetLabel ? (
               <div className="flex h-full min-h-[350px] flex-col justify-center bg-brand-green/5 p-6 md:p-8">

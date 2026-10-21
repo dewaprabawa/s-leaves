@@ -69,7 +69,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   {
     id: "single-atv",
     title: "Single ATV Ride",
-    times: ["08:00", "09:00", "10:00", "13:00", "14:00"],
+    times: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
     adultPrice: getListPrice("single-atv"),
     kidPrice: 700000,
     minPax: 1,
@@ -79,7 +79,7 @@ export const BOOKABLE_TOURS: TourConfig[] = [
   {
     id: "tandem-atv",
     title: "Tandem ATV Ride",
-    times: ["08:00", "09:00", "10:00", "13:00", "14:00"],
+    times: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
     adultPrice: getListPrice("tandem-atv"),
     kidPrice: null,
     minPax: 2,

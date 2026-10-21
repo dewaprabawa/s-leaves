@@ -887,6 +887,9 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'atv-rafting-premium-package-2026': ['atv-premium-package-bali', 'atv-rafting-combo'],
   'family-atv-package-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'atv-premium-promo-deal-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'atv-cave-tunnel-bali-2026': 'bali-atv-adventure',
+  'bali-atv-price-no-hidden-fees-2026': 'bali-atv-adventure',
+  'best-atv-bali-small-groups-2026': 'bali-atv-adventure',
   'licensed-tour-guide-bali-2026': 'licensed-tour-guide-bali',
   'withlocals-bali-guide-alternative-2026': 'licensed-tour-guide-bali',
   'japanese-speaking-guide-bali-2026': 'licensed-tour-guide-bali',
@@ -964,6 +967,25 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
 }
 
 const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
+  'atv-cave-tunnel-bali-2026': [
+    'ATV cave Bali',
+    'ATV tunnel Bali',
+    'quad bike cave Ubud',
+    'Bali ATV through cave',
+    'cave ATV ride near Ubud',
+  ],
+  'bali-atv-price-no-hidden-fees-2026': [
+    'Bali ATV price explained',
+    'what should ATV cost Bali',
+    'ATV publish price vs street price Bali',
+    'cheap ATV Bali hidden fees',
+  ],
+  'best-atv-bali-small-groups-2026': [
+    'best ATV Bali small group',
+    'ATV Bali without crowds',
+    'private ATV Ubud maintained bikes',
+    'best quad bike Bali 2026',
+  ],
   'atv-premium-package-bali-2026': [
     'ATV premium package Bali 2026',
     'ATV package with private shuttle',

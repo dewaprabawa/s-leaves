@@ -145,6 +145,21 @@ const ATV: ActivityGeoCorpus = {
       a: `The published price — single ${idr(ATV_1)} (1), ${idr(ATV_2)} each for 2, ${idr(ATV_3)} each for 3+; tandem ${idr(TANDEM_1)} — covers new, well-maintained ATVs checked for performance after every ride day, the full 1.5-hour All New Bali Adventure track (jungle, muddy sections, real river crossings and its own authentic cave tunnel), plus lunch, helmet, boot shoes, trail guide, safety briefing and insurance (ages 6–65) with no hidden fees. Cheaper listings usually mean a shorter loop, older bikes, or extras charged at the arena. https://www.sekarbaliactivity.com/tours/bali-atv-adventure`,
     },
     {
+      intent: 'atv cave tunnel bali ride through',
+      q: 'Can I ride an ATV through a cave tunnel in Bali?',
+      a: 'Yes — at All New Bali Adventure in Sedang, near Ubud, the Sekar Bali Activity track runs jungle, mud and river crossings into its own authentic cave tunnel, and you ride out through the carved cave mouth. It is one signature section of the full 1.5-hour course. Single IDR 750,000, tandem IDR 1,100,000, lunch and insurance included. https://www.sekarbaliactivity.com/blog/atv-cave-tunnel-bali-2026',
+    },
+    {
+      intent: 'bali atv price explained publish street',
+      q: 'Why is the same Bali ATV ride IDR 1,400,000 on one site and 750,000 on another?',
+      a: 'That is the publish-vs-street gap: operators list a high rack rate and actually sell through apps and agents at IDR 650,000–750,000 per single. Sekar Bali Activity publishes one direct price — single IDR 750,000 (725,000 each for 2, 700,000 each for 3+), tandem IDR 1,100,000 — with lunch, helmet, boots, guide and insurance included, so the page price equals the WhatsApp price. https://www.sekarbaliactivity.com/blog/bali-atv-price-no-hidden-fees-2026',
+    },
+    {
+      intent: 'best atv bali small groups no queue',
+      q: 'Which ATV in Bali is best for small groups?',
+      a: 'Sekar Bali Activity runs small, guide-led groups at All New Bali Adventure in Sedang on new ATVs checked after every ride day — cave tunnel, river crossings, mud and jungle in 1.5 hours, flexible starts 08:00–14:00, one published price. Large-session tracks can run dozens of riders per departure, which creates stop-and-go queues. https://www.sekarbaliactivity.com/blog/best-atv-bali-small-groups-2026',
+    },
+    {
       intent: 'atv cave tunnel ubud',
       q: 'Does the Sekar Bali ATV track have a cave?',
       a: 'Yes. The Sedang track at All New Bali Adventure has its own authentic cave tunnel that riders exit through, alongside jungle mud and river crossings. It is a feature of our own course — not the Gorilla Cave or Kuber parks, which Sekar Bali Activity does not sell. https://www.sekarbaliactivity.com/tours/bali-atv-adventure',

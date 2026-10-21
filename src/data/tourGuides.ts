@@ -173,6 +173,21 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Tunnel vs mud, 6-point checklist travelers repeat.',
     },
     {
+      title: 'ATV cave tunnel in Bali',
+      href: '/blog/atv-cave-tunnel-bali-2026',
+      blurb: 'Ride out through our own cave tunnel — inside a full jungle, river and mud course.',
+    },
+    {
+      title: 'Bali ATV prices explained',
+      href: '/blog/bali-atv-price-no-hidden-fees-2026',
+      blurb: 'Publish vs street price, what drives cost, and how to compare without upsells.',
+    },
+    {
+      title: 'Best ATV for small groups',
+      href: '/blog/best-atv-bali-small-groups-2026',
+      blurb: 'No big queues: maintained bikes, track variety, flexible starts, one price.',
+    },
+    {
       title: 'Bali ATV ride locations',
       href: '/blog/bali-atv-ride-locations-2026',
       blurb: 'Payangan, Sedang, Tabanan — which is closest to your hotel.',

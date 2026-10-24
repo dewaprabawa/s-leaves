@@ -1345,6 +1345,26 @@ export default async function TourPage({ params }: Props) {
                 </div>
 
                 {tour.heroThumbnails?.length ? <TourPhotoGrid photos={tour.heroThumbnails} /> : null}
+                {tour.gallery.some(
+                  (photo) =>
+                    photo.url !== tour.heroImage.url &&
+                    !tour.heroThumbnails?.some((thumb) => thumb.url === photo.url)
+                ) ? (
+                  <div className="space-y-2">
+                    <h2 className="flex items-center gap-2 text-sm font-bold text-brand-green">
+                      <Camera className="h-4 w-4 text-brand-green" />
+                      Experience Photo Gallery
+                    </h2>
+                    <TourPhotoGrid
+                      photos={tour.gallery.filter(
+                        (photo) =>
+                          photo.url !== tour.heroImage.url &&
+                          !tour.heroThumbnails?.some((thumb) => thumb.url === photo.url)
+                      )}
+                      variant="strip"
+                    />
+                  </div>
+                ) : null}
               </div>
 
               <div className="space-y-4">
@@ -1553,36 +1573,6 @@ export default async function TourPage({ params }: Props) {
                 </ReactMarkdown>
               </article>
             </section>
-
-            {tour.gallery.length > 0 && (
-              <section className="rounded-3xl border border-brand-green/10 bg-white p-6 md:p-8 shadow-sm space-y-6">
-                <h2 className="text-xl font-bold text-brand-green flex items-center gap-2">
-                  <Camera className="w-5 h-5 text-brand-green" />
-                  Experience Photo Gallery
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {tour.gallery.map((imgItem, idx) => (
-                    <div
-                      key={`${imgItem.url}-${idx}`}
-                      className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-brand-green/10 shadow-sm group"
-                    >
-                      <Image
-                        src={imgItem.url}
-                        alt={imgItem.alt || tour.title}
-                        fill
-                        sizes="(max-width: 640px) 100vw, 50vw"
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                      {imgItem.alt ? (
-                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent p-3 text-xs text-white font-medium">
-                          {imgItem.alt}
-                        </div>
-                      ) : null}
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
 
             <TourItinerary items={tour.itinerary} />
 

@@ -36,7 +36,7 @@ const COPY: Record<
   cooking: {
     eyebrow: "Why the cooking class price is worth it",
     title: "Market, kitchen, and lunch in one promo",
-    body: `Shared class is promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} per person (was ${formatIdr(COOKING_CLASS_STANDARD_PRICE_IDR)}), max 8 guests. That covers the Ubud market visit, the rice-field walk, cooking, and the meal you eat, plus free Ubud hotel pickup. A private kitchen is separate: IDR 1,000,000 for one guest, or IDR 2,000,000 for two.`,
+    body: `The Sekar booking rate for the Tumang class is promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} per person (was ${formatIdr(COOKING_CLASS_STANDARD_PRICE_IDR)}), max 8 guests. That covers the Ubud market visit, the rice-field walk, cooking, and the meal you eat, plus free Ubud hotel pickup. The class is still with Chef Wayan Suryana in Tumang. A private kitchen is separate: IDR 1,000,000 for one guest, or IDR 2,000,000 for two.`,
     included: [
       "Morning market or afternoon class in Tumang",
       "Rice-field walk and hands-on cooking",

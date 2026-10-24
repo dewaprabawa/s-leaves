@@ -2280,7 +2280,7 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
 [Tumang Bali](https://tumangbaliclass.com/) is a family-run cooking school in Tumang village near Ubud for travellers who want hands-on Balinese cuisine — not a hotel demo. Head Chef **Wayan Suryana** teaches Base Genep (bumbu), sate lilit, pepes ikan, sambal matah, lawar, and more. Classes are taught in English. Complimentary pickup in the Ubud area. Max **8 guests** per shared class.
 
 ### Why book Tumang through Sekar Bali Activity
-We list Tumang as our flagship food experience so you can book adventure, village cycling, and this cooking class on one WhatsApp thread — with clear IDR before you confirm.
+The class is still at Tumang with Chef Wayan Suryana. **IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}** shared (was ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString("id-ID")}) and the private kitchen rates below are the **Sekar Bali Activity booking rate** — the price you pay when you reserve on this page. You can book this class with village cycling or another activity on one WhatsApp thread.
 
 ### What’s included
 - Hands-on cooking of **10+ Balinese dishes**
@@ -2393,7 +2393,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
       {
         id: "faq-cook-1",
         question: "How much is Tumang Bali Cooking Class?",
-        answer: `Shared small-group class is promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")} per person (was IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString("id-ID")}). Private kitchen is IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")} for 1 guest, or IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} for 2 guests. Complimentary Ubud-area hotel pickup is included.`,
+        answer: `The Sekar Bali Activity booking rate is promo IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")} per person for the shared class (was IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString("id-ID")}). Private kitchen is IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString("id-ID")} for 1 guest, or IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString("id-ID")} for 2 guests. The class is at Tumang with Chef Wayan Suryana, and complimentary Ubud-area hotel pickup is included.`,
       },
       {
         id: "faq-cook-2",

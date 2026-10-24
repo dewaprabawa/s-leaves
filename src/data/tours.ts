@@ -1868,6 +1868,26 @@ Commercial guides: [2026 prices](/blog/aloha-ubud-swing-price-2026) · [Tegallal
     },
     gallery: [
       {
+        url: "/images/cycling/cycling-rice-terrace-lane.jpg",
+        alt: "Rider on a quiet paved lane through green Pejeng rice terraces near Ubud",
+      },
+      {
+        url: "/images/cycling/cycling-village-temple-road.jpg",
+        alt: "Cycling group riding a Pejeng village road past family temple compounds",
+      },
+      {
+        url: "/images/cycling/cycling-jungle-path-group.jpg",
+        alt: "Small cycling group on a shaded jungle path lined with banana and coconut palms near Ubud",
+      },
+      {
+        url: "/images/cycling/cycling-countryside-road.jpg",
+        alt: "Parent and child cycling a countryside road beside rice fields and old trees near Ubud",
+      },
+      {
+        url: "/images/cycling/cycling-irrigation-canal-path.jpg",
+        alt: "Two riders on a narrow path beside a Subak irrigation canal in Pejeng",
+      },
+      {
         url: "/images/cycling/pejeng-ricefield-group.jpg",
         alt: "Group cycling through Pejeng rice terraces on the Ubud ricefield village tour",
       },
@@ -1906,6 +1926,9 @@ Commercial guides: [2026 prices](/blog/aloha-ubud-swing-price-2026) · [Tegallal
 Discover the real Bali on two wheels with our Ubud rice paddy cycling tour through Pejeng. This is a relaxing countryside bike ride through beautiful green ricefields and quiet village paths — a cultural immersion designed for all fitness levels.
 
 We pick you up from your hotel in the Ubud area and transport you to the starting point, where you are fitted with a bicycle, helmet, and briefed by your English-speaking guide before setting off into the countryside.
+
+### Why this ride is worth the promo
+The roads themselves are the activity, and every kind of road is in the one price: **rice terrace lanes, village temple streets, shaded jungle paths, open countryside, and canal-side Subak paths**. The route is mostly flat, so it stays relaxing for families and first-time riders. Promo **IDR 550,000** (was 650,000; 525,000 each for 2; 500,000 each for 3+) also includes rice harvesting, a family-house visit, a wood-carving studio, lunch, bike, helmet, guide, insurance, and **free Ubud pickup**. ATV, rafting, and tubing are the adrenaline days — their hotel pickup is an extra IDR 400,000. Cycling is the scenic day where pickup is already free.
 
 ### Rice Paddy & Countryside Cycling
 Cycle through stunning green rice paddies and village trails east of central Ubud. Stop to see local farmers at work and try harvesting rice with them. Your Pejeng guide explains traditional Balinese farming methods and the Subak irrigation rhythm of rural life — quieter than crowded Tegallalang photo stops.
@@ -1991,6 +2014,12 @@ The itinerary may sometimes change due to field conditions, weather, or village 
     ],
     addons: [],
     faqs: [
+      {
+        id: "faq-ubud-cyc-worth",
+        question: "Why is the Ubud cycling tour worth the price?",
+        answer:
+          "Promo IDR 550,000 (was 650,000; 525,000 each for 2; 500,000 each for 3+) covers every scenic road on the ride — rice terraces, village temple streets, jungle paths, countryside, and canal lanes — plus rice harvesting, a Balinese family-house visit, a wood-carving studio, lunch, bike, helmet, guide, insurance (ages 6–65), and free Ubud hotel pickup and drop-off. ATV, rafting, and tubing charge hotel pickup separately at IDR 400,000.",
+      },
       {
         id: "faq-ubud-cyc-1",
         question: "How much is the Ubud rice paddy cycling tour?",

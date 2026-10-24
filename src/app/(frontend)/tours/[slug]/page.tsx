@@ -16,6 +16,8 @@ import { getPrivateShuttleMode } from "@/data/privateShuttle"
 import AtvPremiumShowcase from "@/components/AtvPremiumShowcase"
 import AtvWorthItSection from "@/components/AtvWorthItSection"
 import CyclingWorthItSection from "@/components/CyclingWorthItSection"
+import ActivityWorthItSection from "@/components/ActivityWorthItSection"
+import ActivityPriceCompare, { type ActivityCompareId } from "@/components/ActivityPriceCompare"
 import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import TourPhotoGrid from "@/components/TourPhotoGrid"
@@ -131,6 +133,33 @@ function isMotorbikeTour(tour: Tour) {
 
 function isCyclingTour(tour: Tour) {
   return tour.slug === "ubud-ricefield-cycling-tour"
+}
+
+function priceCompareId(tour: Tour): ActivityCompareId | null {
+  switch (tour.slug) {
+    case "bali-atv-adventure":
+    case "atv-rafting-combo":
+    case "atv-premium-package-bali":
+      return "atv"
+    case "whitewater-rafting":
+      return "rafting"
+    case "canyon-tubing":
+      return "tubing"
+    case "batur-sunrise-jeep-tour":
+      return "jeep"
+    case "luwak-coffee-plantation":
+      return "luwak"
+    case "full-day-ubud-tour":
+      return "full-day"
+    case "half-day-ubud-tanah-lot-tour":
+      return "half-day"
+    case "bali-motorbike-traveling-trip":
+      return "motorbike"
+    case "utv-buggy-bali-adventure":
+      return "utv"
+    default:
+      return null
+  }
 }
 
 function isRaftingTour(tour: Tour) {
@@ -1487,6 +1516,18 @@ export default async function TourPage({ params }: Props) {
             {isAtvArenaTour(tour.slug) ? <AtvWorthItSection /> : null}
 
             {isCyclingTour(tour) ? <CyclingWorthItSection /> : null}
+
+            {isSwingTour(tour) ? <ActivityWorthItSection variant="swing" /> : null}
+            {isAlohaSwingTour(tour) ? <ActivityWorthItSection variant="aloha" /> : null}
+            {isCookingTour(tour) ? <ActivityWorthItSection variant="cooking" /> : null}
+            {tour.slug === "tirta-empu-purification" ? <ActivityWorthItSection variant="melukat" /> : null}
+            {isGriyaTour(tour) ? <ActivityWorthItSection variant="griya" /> : null}
+
+            {priceCompareId(tour) ? (
+              <section className="rounded-3xl bg-brand-green p-6 md:p-8 text-sand shadow-xl">
+                <ActivityPriceCompare highlight={priceCompareId(tour) ?? undefined} />
+              </section>
+            ) : null}
 
             {cooking ? <CookingGeoBlock /> : null}
             {jeep ? <JeepGeoBlock /> : null}

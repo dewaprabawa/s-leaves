@@ -1,19 +1,14 @@
 import Image from "next/image"
 import { Bike, Check, Leaf, MapPin, Trees, Waves } from "lucide-react"
-import { COOKING_CLASS_PRICE_IDR } from "@/data/cultureSales"
-import { SWING_HEAVEN_PRICE_IDR } from "@/data/swingHeaven"
+import ActivityPriceCompare from "@/components/ActivityPriceCompare"
 import {
   CYCLING_LIST_IDR,
   CYCLING_PROMO_IDR,
-  PICKUP_FEE_IDR,
   TIER_PRICES_IDR,
 } from "@/lib/pricing"
 import { formatIdr } from "@/lib/whatsapp"
 
 const [CYCLE_1, CYCLE_2, CYCLE_3] = TIER_PRICES_IDR.cycling
-const [ATV_1] = TIER_PRICES_IDR["single-atv"]
-const [RAFT_1] = TIER_PRICES_IDR.rafting
-const [TUBE_1] = TIER_PRICES_IDR["canyon-tubing"]
 
 const ROADS = [
   {
@@ -71,51 +66,6 @@ function idr(n: number) {
  * Why the Pejeng cycling promo is worth it: scenic roads + all-in price vs other activities.
  */
 export default function CyclingWorthItSection() {
-  const rows = [
-    {
-      activity: "Pejeng cycling (this tour)",
-      price: `${idr(CYCLE_1)} promo`,
-      note: `was ${idr(CYCLING_LIST_IDR)} · ${idr(CYCLE_2)} each for 2 · ${idr(CYCLE_3)} each for 3+`,
-      pickup: "Free in Ubud",
-      feel: "Relaxing scenic roads",
-    },
-    {
-      activity: "Single ATV",
-      price: idr(ATV_1),
-      note: "1.5 h mud, river, cave tunnel",
-      pickup: `+ ${idr(PICKUP_FEE_IDR)} or self-meet`,
-      feel: "Adrenaline",
-    },
-    {
-      activity: "Ayung rafting",
-      price: idr(RAFT_1),
-      note: "450,000 each for 2+ · min 2",
-      pickup: `+ ${idr(PICKUP_FEE_IDR)} or self-meet`,
-      feel: "Splash",
-    },
-    {
-      activity: "Wos canyon tubing",
-      price: idr(TUBE_1),
-      note: "Lunch not included",
-      pickup: `+ ${idr(PICKUP_FEE_IDR)} or self-meet`,
-      feel: "Gentle float",
-    },
-    {
-      activity: "Tumang cooking class",
-      price: idr(COOKING_CLASS_PRICE_IDR),
-      note: "Shared promo · max 8",
-      pickup: "Free in Ubud",
-      feel: "Hands-on kitchen",
-    },
-    {
-      activity: "Swing Heaven",
-      price: idr(SWING_HEAVEN_PRICE_IDR),
-      note: "Photos on your phone",
-      pickup: `Shuttle required ${idr(PICKUP_FEE_IDR)}`,
-      feel: "Photo swings",
-    },
-  ]
-
   return (
     <section
       aria-labelledby="cycling-worth-it"
@@ -184,49 +134,7 @@ export default function CyclingWorthItSection() {
           </ul>
         </div>
 
-        <div>
-          <h3 style={{ color: "#ffffff" }} className="text-lg font-bold text-white">
-            Compare the price with our other activities
-          </h3>
-          <p className="mt-1 text-sm text-sand/75 leading-relaxed">
-            Cycling is the relaxing scenic day. ATV, rafting, and tubing are the adrenaline days —
-            and their hotel pickup is extra. Cooking is the other culture option with free Ubud pickup.
-          </p>
-          <div className="mt-3 overflow-x-auto rounded-2xl border border-white/15">
-            <table className="w-full min-w-[640px] text-left text-sm">
-              <thead className="bg-white/10 text-white">
-                <tr>
-                  <th className="px-3 py-2.5 font-bold">Activity</th>
-                  <th className="px-3 py-2.5 font-bold">From</th>
-                  <th className="px-3 py-2.5 font-bold">Hotel pickup</th>
-                  <th className="px-3 py-2.5 font-bold">The day feels like</th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows.map((row, i) => (
-                  <tr
-                    key={row.activity}
-                    className={i === 0 ? "bg-white text-brand-green" : "border-t border-white/10 text-sand/90"}
-                  >
-                    <td className="px-3 py-2.5 font-semibold">{row.activity}</td>
-                    <td className="px-3 py-2.5 whitespace-nowrap">
-                      {row.price}
-                      <span className={`block text-xs font-normal ${i === 0 ? "text-brand-green-light" : "text-sand/60"}`}>
-                        {row.note}
-                      </span>
-                    </td>
-                    <td className="px-3 py-2.5">{row.pickup}</td>
-                    <td className="px-3 py-2.5">{row.feel}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="mt-2 text-xs text-sand/60 leading-relaxed">
-            Published 2026 rates. Rafting and tubing drop to IDR 450,000 each for 2+ guests. ATV
-            singles drop to IDR 725,000 (2) and IDR 700,000 (3+). Swing Heaven shuttle is required.
-          </p>
-        </div>
+        <ActivityPriceCompare highlight="cycling" />
       </div>
     </section>
   )

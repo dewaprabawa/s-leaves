@@ -528,7 +528,7 @@ const CYCLING: ActivityGeoCorpus = {
     {
       intent: 'ubud cycling worth it',
       q: 'Is an Ubud cycling tour worth it?',
-      a: 'Yes for culture-focused travelers who want quiet Subak paths and a village house visit instead of Tegallalang bus crowds. The 2-hour Pejeng ride is promo IDR 550,000 (was 650,000) with lunch and free Ubud pickup. Thrill seekers may prefer ATV or rafting instead.',
+      a: 'Yes if you want the relaxing scenic day. The promo (IDR 550,000; was 650,000; 525,000 each for 2; 500,000 each for 3+) covers every road on the Pejeng ride — rice terrace lanes, village temple streets, shaded jungle paths, open countryside, and canal-side Subak paths — plus rice harvesting, a family-house visit, a wood-carving studio, lunch, bike, helmet, guide, insurance, and free Ubud pickup. ATV, rafting, and tubing are the adrenaline options and charge hotel pickup separately at IDR 400,000. https://www.sekarbaliactivity.com/tours/ubud-ricefield-cycling-tour',
     },
     {
       intent: 'cycling cooking combo ubud',

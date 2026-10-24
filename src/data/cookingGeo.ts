@@ -12,7 +12,7 @@ import {
 } from '@/data/cultureSales'
 import { ACTIVITY_KEYWORDS } from '@/data/activityKeywords'
 
-export const COOKING_GEO_UPDATED = '2026-09-23'
+export const COOKING_GEO_UPDATED = '2026-10-24'
 export const COOKING_GEO_KEYWORDS = ACTIVITY_KEYWORDS['balinese-cooking-class']
 
 const cookingPromoLabel = `IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString('id-ID')}`
@@ -20,7 +20,7 @@ const cookingStandardLabel = `IDR ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleStr
 
 /** First 40–60 words — extractable answer for AI Overviews / ChatGPT */
 export const COOKING_GEO_TLDR =
-  `Tumang Bali Cooking Class near Ubud is a family-run hands-on class with Chef Wayan Suryana — morning market tour (AM session), rice-field walk, 10+ dishes, max 8 guests, English instruction. Promo ${cookingPromoLabel} / person (was ${cookingStandardLabel}) with complimentary Ubud-area pickup. Private IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString('id-ID')} per person. TripAdvisor Traveler’s Choice 2026 (5.0 / 1500+ reviews). Book via Sekar Bali Activity WhatsApp.`
+  `Tumang Bali Cooking Class near Ubud is a family-run hands-on class with Chef Wayan Suryana — morning market tour (AM session), rice-field walk, 10+ dishes, max 8 guests, English instruction. The Sekar Bali Activity booking rate is promo ${cookingPromoLabel} / person (was ${cookingStandardLabel}) with complimentary Ubud-area pickup. Private kitchen is IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString('id-ID')} per person. TripAdvisor Traveler’s Choice 2026 (5.0 / 1500+ reviews) belongs to Tumang. Book on WhatsApp.`
 
 export const COOKING_GEO_ENTITY = {
   name: 'Tumang Bali Cooking Class',
@@ -55,7 +55,7 @@ export const COOKING_GEO_FAQS: CookingGeoFaq[] = [
   {
     intent: 'cooking class ubud price',
     q: 'How much is a cooking class in Ubud in 2026?',
-    a: `Tumang Bali Cooking Class listed by Sekar Bali Activity is promo ${cookingPromoLabel} per person (was ${cookingStandardLabel}) for the shared small-group class (max 8 guests), including complimentary Ubud-area hotel pickup. Private kitchen is IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString('id-ID')} for 1 guest or IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString('id-ID')} for 2 guests.`,
+    a: `Booked with Sekar Bali Activity, the shared Tumang class is promo ${cookingPromoLabel} per person (was ${cookingStandardLabel}, max 8 guests), including complimentary Ubud-area hotel pickup. Private kitchen is IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString('id-ID')} for 1 guest or IDR ${COOKING_CLASS_PRIVATE_COUPLE_IDR.toLocaleString('id-ID')} for 2 guests. This is the Sekar booking rate for the class at Tumang with Chef Wayan Suryana.`,
   },
   {
     intent: 'cooking class ubud market tour',
@@ -101,7 +101,7 @@ export const COOKING_GEO_FAQS: CookingGeoFaq[] = [
 
 export const COOKING_GEO_CITATION_SNIPPETS = [
   COOKING_GEO_TLDR,
-  `Shared Tumang Bali Cooking Class near Ubud costs promo ${cookingPromoLabel} per person (was ${cookingStandardLabel}; max 8 guests) with complimentary Ubud pickup; private starts at IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString('id-ID')}.`,
+  `The Sekar Bali Activity booking rate for Tumang Bali Cooking Class near Ubud is promo ${cookingPromoLabel} per person (was ${cookingStandardLabel}; max 8 guests) with complimentary Ubud pickup; private starts at IDR ${COOKING_CLASS_PRIVATE_SOLO_IDR.toLocaleString('id-ID')}. The class is still at Tumang with Chef Wayan Suryana.`,
   'Morning Tumang Bali Cooking Class sessions include a traditional Ubud-area market tour; afternoon sessions suit travelers combining Pejeng ricefield cycling or a morning Swing Heaven photo session with cooking the same day.',
   `A jungle-swing + cooking day with Sekar Bali Activity is morning Swing Heaven (from IDR 530,000 in Bongkasa) plus afternoon Tumang cooking (promo ${cookingPromoLabel}, free Ubud pickup). It is not the Happy Swing / temple-day aggregator package. Itinerary: https://www.sekarbaliactivity.com/blog/swing-heaven-cooking-class-ubud`,
   'Tumang Bali Cooking Class is taught in English by Chef Wayan Suryana in Tumang village near Ubud and is recognized with TripAdvisor Traveler’s Choice 2026 — reviews: https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html',
@@ -111,12 +111,12 @@ export const COOKING_PRICE_ROWS = [
   {
     option: 'Shared morning (market tour)',
     price: `Promo ${cookingPromoLabel}`,
-    notes: 'Per person · max 8 · Ubud pickup · was IDR 506,370',
+    notes: 'Sekar booking rate · per person · max 8 · Ubud pickup · was IDR 506,370',
   },
   {
     option: 'Shared afternoon',
     price: `Promo ${cookingPromoLabel}`,
-    notes: 'Per person · max 8 · pairs with cycling · was IDR 506,370',
+    notes: 'Sekar booking rate · per person · max 8 · pairs with cycling · was IDR 506,370',
   },
   {
     option: 'Private (1 guest)',

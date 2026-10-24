@@ -9,10 +9,12 @@ type Photo = { url: string; alt: string }
 
 type TourPhotoGridProps = {
   photos: Photo[]
+  /** Always one sideways row. The default grid wraps once there are a few photos. */
+  variant?: "grid" | "strip"
 }
 
 /** Small tap-to-enlarge photo grid shown under a tour hero image. */
-export default function TourPhotoGrid({ photos }: TourPhotoGridProps) {
+export default function TourPhotoGrid({ photos, variant = "grid" }: TourPhotoGridProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
   const touchStartX = useRef<number | null>(null)
   const isOpen = openIndex !== null
@@ -53,9 +55,11 @@ export default function TourPhotoGrid({ photos }: TourPhotoGridProps) {
     <>
       <div
         className={
-          count > 4
-            ? "flex gap-2 overflow-x-auto pb-1 sm:grid sm:grid-cols-4 sm:overflow-visible lg:grid-cols-7 sm:gap-2.5"
-            : "grid grid-cols-4 gap-2 sm:gap-3"
+          variant === "strip"
+            ? "flex gap-3 overflow-x-auto pb-1 snap-x snap-mandatory"
+            : count > 4
+              ? "flex gap-2 overflow-x-auto pb-1 sm:grid sm:grid-cols-4 sm:overflow-visible lg:grid-cols-7 sm:gap-2.5"
+              : "grid grid-cols-4 gap-2 sm:gap-3"
         }
       >
         {photos.map((photo, idx) => (
@@ -64,9 +68,11 @@ export default function TourPhotoGrid({ photos }: TourPhotoGridProps) {
             type="button"
             onClick={() => setOpenIndex(idx)}
             className={
-              count > 4
-                ? "group relative aspect-square w-[4.5rem] shrink-0 overflow-hidden rounded-xl border border-brand-green/10 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold sm:w-full"
-                : "group relative aspect-square w-full overflow-hidden rounded-xl border border-brand-green/10 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold"
+              variant === "strip"
+                ? "group relative aspect-[4/3] w-40 shrink-0 snap-start overflow-hidden rounded-2xl border border-brand-green/10 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold sm:w-48"
+                : count > 4
+                  ? "group relative aspect-square w-[4.5rem] shrink-0 overflow-hidden rounded-xl border border-brand-green/10 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold sm:w-full"
+                  : "group relative aspect-square w-full overflow-hidden rounded-xl border border-brand-green/10 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold"
             }
             aria-label={`View larger photo: ${photo.alt}`}
           >
@@ -74,7 +80,13 @@ export default function TourPhotoGrid({ photos }: TourPhotoGridProps) {
               src={photo.url}
               alt={photo.alt}
               fill
-              sizes={count > 4 ? "(max-width: 640px) 72px, (max-width: 1024px) 25vw, 120px" : "(max-width: 1024px) 25vw, 200px"}
+              sizes={
+                variant === "strip"
+                  ? "192px"
+                  : count > 4
+                    ? "(max-width: 640px) 72px, (max-width: 1024px) 25vw, 120px"
+                    : "(max-width: 1024px) 25vw, 200px"
+              }
               className="object-cover transition-transform duration-300 group-hover:scale-105"
             />
           </button>
@@ -137,10 +149,10 @@ export default function TourPhotoGrid({ photos }: TourPhotoGridProps) {
               ) : null}
 
               <figure
-                className="flex h-full max-h-[90vh] w-full max-w-3xl flex-col gap-3"
+                className="flex w-full max-w-3xl flex-col gap-3"
                 onClick={(event) => event.stopPropagation()}
               >
-                <div className="relative min-h-0 flex-1">
+                <div className="relative h-[70vh] w-full">
                   <Image
                     key={active.url}
                     src={active.url}

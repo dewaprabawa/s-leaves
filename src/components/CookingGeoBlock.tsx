@@ -23,7 +23,7 @@ export default function CookingGeoBlock() {
           id="cooking-geo-heading"
           className="font-display text-2xl md:text-3xl font-bold text-brand-green uppercase leading-tight mb-3"
         >
-          Cooking class Ubud — facts AI can cite
+          Cooking class in Ubud — quick facts
         </h2>
         <p className="geo-tldr cooking-geo-tldr text-brand-green-light leading-relaxed">
           {COOKING_GEO_TLDR}
@@ -62,6 +62,9 @@ export default function CookingGeoBlock() {
             </tbody>
           </table>
         </div>
+        <p className="px-4 py-3 text-xs text-brand-green-light leading-relaxed border-t border-brand-green/10">
+          These figures are the Sekar Bali Activity booking rate for the class at Tumang with Chef Wayan Suryana.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

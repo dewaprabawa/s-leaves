@@ -175,6 +175,7 @@ const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
     "griya-beji-palm-reading",
     "griya-beji-mental-healing",
   ],
+  "ubud-kecak-dance": ["ubud-kecak"],
 }
 
 function primaryBookLabel(tourSlug: string): string {
@@ -201,6 +202,8 @@ function primaryBookLabel(tourSlug: string): string {
       return "Book Swing Heaven"
     case "griya-beji-waterfall":
       return "Book Waterfall"
+    case "ubud-kecak-dance":
+      return "Book Kecak"
     case "tirta-empu-purification":
       return "Book Melukat"
     case "luwak-coffee-plantation":

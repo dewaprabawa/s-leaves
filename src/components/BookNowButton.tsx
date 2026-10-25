@@ -25,6 +25,13 @@ import {
   GRIYA_BEJI_PURIFICATION_IDR,
   GRIYA_BEJI_VENUE,
 } from "@/data/griyaBeji"
+import {
+  KECAK_ACTIVITY_ID,
+  KECAK_PRICE_IDR,
+  KECAK_SHOW_TIME,
+  KECAK_VENUE,
+  KECAK_WEEKDAYS,
+} from "@/data/kecakUbud"
 
 const JEEP_HOT_SPRING_ADDON = {
   id: "hotspring",
@@ -260,6 +267,21 @@ export const BOOKABLE_TOURS: TourConfig[] = [
       name: GRIYA_BEJI_VENUE.name,
       address: GRIYA_BEJI_VENUE.address,
       mapUrl: GRIYA_BEJI_VENUE.mapUrl,
+    },
+  },
+  {
+    id: KECAK_ACTIVITY_ID,
+    title: "Ubud Kecak at Pura Dalem Kutuh Kaja",
+    times: [KECAK_SHOW_TIME],
+    adultPrice: KECAK_PRICE_IDR,
+    kidPrice: KECAK_PRICE_IDR,
+    minPax: 1,
+    privateShuttle: true,
+    allowedWeekdays: KECAK_WEEKDAYS,
+    selfMeet: {
+      name: KECAK_VENUE.name,
+      address: KECAK_VENUE.address,
+      mapUrl: KECAK_VENUE.mapUrl,
     },
   },
 ]

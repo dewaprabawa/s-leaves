@@ -115,7 +115,7 @@ export function buildGirlsTripWhatsAppMessage(opts?: {
     '- Activities we sell that fit the group (Swing Heaven, Batur jeep, cooking, cycling, ATV, Griya Beji)',
     `- DPS airport transfer if needed (from ${formatIdr(GIRLS_TRIP_AIRPORT_TRANSFER_IDR)} / MPV)`,
     '',
-    '*We will book ourselves:* beach clubs, nightclubs, Cretya, Kecak seats, spa, jewelry class, watersports, restaurant tables.',
+    '*We will book ourselves:* beach clubs, nightclubs, Cretya, Uluwatu Kecak seats, spa, jewelry class, watersports, restaurant tables. The Sunday and Tuesday Kecak at Pura Dalem Kutuh Kaja is a published Sekar ticket.',
     '',
     `*Page:* ${GIRLS_TRIP_PAGE_URL}`,
   ]

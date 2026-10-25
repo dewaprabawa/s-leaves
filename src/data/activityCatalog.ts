@@ -78,6 +78,7 @@ export function getCatalogTopPicks(): Tour[] {
     'balinese-cooking-class',
     'tirta-empu-purification',
     'ubud-ricefield-cycling-tour',
+    'ubud-kecak-dance',
   ]
   const ranked = [...picks].sort((a, b) => {
     const ai = priority.indexOf(a.slug)

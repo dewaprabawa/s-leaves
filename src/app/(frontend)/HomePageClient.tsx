@@ -408,6 +408,10 @@ function ExperienceCard({ tour }: { tour: Tour }) {
             <span className="absolute top-3 left-3 bg-brand-green text-sand text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">
               Promo
             </span>
+          ) : tour.slug === "ubud-kecak-dance" ? (
+            <span className="absolute top-3 left-3 bg-accent-gold text-white text-[10px] font-bold px-2.5 py-1 uppercase tracking-wider">
+              Most picked
+            </span>
           ) : null}
           {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="card" /> : null}
         </div>

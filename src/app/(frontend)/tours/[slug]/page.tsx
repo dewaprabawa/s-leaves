@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowLeft, Camera, Car, Check, Clock, MapPin } from "lucide-react"
+import { ArrowLeft, Car, Check, Clock, MapPin } from "lucide-react"
 import TravelerRecommendBadge from "@/components/TravelerRecommendBadge"
 import InsuranceBadge, { isInsuredTour } from "@/components/InsuranceBadge"
 import ReactMarkdown from "react-markdown"
@@ -1204,6 +1204,14 @@ export default async function TourPage({ params }: Props) {
   }
 
   const cooking = isCookingTour(tour)
+  const underHeroPhotos = [
+    ...(tour.heroThumbnails ?? []),
+    ...tour.gallery.filter(
+      (photo) =>
+        photo.url !== tour.heroImage.url &&
+        !tour.heroThumbnails?.some((thumb) => thumb.url === photo.url)
+    ),
+  ]
   const groupTiers = getGroupPricedTour(tour.slug)?.tiersIdr
   const jeep = isJeepTour(tour)
   const shuttleMode = getPrivateShuttleMode(tour.slug)
@@ -1324,7 +1332,7 @@ export default async function TourPage({ params }: Props) {
               <div className="space-y-2 sm:space-y-3">
                 <div
                   className={`relative w-full overflow-hidden rounded-3xl shadow-xl ${
-                    tour.heroThumbnails?.length ? "aspect-[16/10] sm:aspect-[16/9]" : "aspect-[16/9]"
+                    underHeroPhotos.length ? "aspect-[16/10] sm:aspect-[16/9]" : "aspect-[16/9]"
                   }`}
                 >
                   <Image
@@ -1344,27 +1352,7 @@ export default async function TourPage({ params }: Props) {
                   {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="hero" /> : null}
                 </div>
 
-                {tour.heroThumbnails?.length ? <TourPhotoGrid photos={tour.heroThumbnails} /> : null}
-                {tour.gallery.some(
-                  (photo) =>
-                    photo.url !== tour.heroImage.url &&
-                    !tour.heroThumbnails?.some((thumb) => thumb.url === photo.url)
-                ) ? (
-                  <div className="space-y-2">
-                    <h2 className="flex items-center gap-2 text-sm font-bold text-brand-green">
-                      <Camera className="h-4 w-4 text-brand-green" />
-                      Experience Photo Gallery
-                    </h2>
-                    <TourPhotoGrid
-                      photos={tour.gallery.filter(
-                        (photo) =>
-                          photo.url !== tour.heroImage.url &&
-                          !tour.heroThumbnails?.some((thumb) => thumb.url === photo.url)
-                      )}
-                      variant="strip"
-                    />
-                  </div>
-                ) : null}
+                {underHeroPhotos.length ? <TourPhotoGrid photos={underHeroPhotos} /> : null}
               </div>
 
               <div className="space-y-4">

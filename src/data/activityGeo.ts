@@ -280,6 +280,21 @@ const ATV_PREMIUM: ActivityGeoCorpus = {
   })),
   faqs: [
     {
+      intent: 'premium atv adventure bali',
+      q: 'What is a premium ATV adventure near Ubud?',
+      a: `A premium ATV adventure with Sekar Bali Activity is a 1.5-hour jungle, mud, river and cave-tunnel ride at All New Bali Adventure in Sedang, plus a private shuttle just for your group. ${PREMIUM_TRIO.name} (3 guests) ${idr(PREMIUM_TRIO.priceIdr)}, ${PREMIUM_SQUAD.name} (4) ${idr(PREMIUM_SQUAD.priceIdr)}, ${PREMIUM_CREW.name} (5) ${idr(PREMIUM_CREW.priceIdr)} — 10% off booking the same bikes and shuttle separately. Lunch, gear, guide and insurance (ages 6–65) are included. https://www.sekarbaliactivity.com/blog/premium-atv-adventure-bali-2026`,
+    },
+    {
+      intent: 'premium atv adventure itinerary',
+      q: 'How long is a premium ATV adventure day?',
+      a: 'ATV-only is about 4–5 hours door to door: private hotel pickup, a 1.5-hour ride, lunch, and the drive home. Land & River (ATV then Ayung rafting) is about 5–7 hours. ATV-only starts 08:00–14:00. With rafting, the latest ATV start is 1:00 PM. https://www.sekarbaliactivity.com/blog/premium-atv-adventure-itinerary-ubud-2026',
+    },
+    {
+      intent: 'premium atv adventure worth it',
+      q: 'Is a premium ATV adventure worth it versus booking separately?',
+      a: `Yes when the group shares one tandem and wants a private car. Trio is ${idr(PREMIUM_TRIO.priceIdr)} versus ${idr(PREMIUM_TRIO.partsIdr)} separately (save ${idr(PREMIUM_TRIO.savingIdr)}). If every rider wants a single ATV, book singles on the standard page instead. https://www.sekarbaliactivity.com/blog/premium-atv-adventure-worth-it-2026`,
+    },
+    {
       intent: 'atv package bali price',
       q: 'How much is the ATV premium package in Bali?',
       a: `${PREMIUM_TRIO.name} (1 single + 1 tandem, 3 guests) is ${idr(PREMIUM_TRIO.priceIdr)}, ${PREMIUM_SQUAD.name} (2 singles + 1 tandem, 4 guests) is ${idr(PREMIUM_SQUAD.priceIdr)}, and ${PREMIUM_CREW.name} (3 singles + 1 tandem, 5 guests) is ${idr(PREMIUM_CREW.priceIdr)}. Each price covers the whole group, including a private shuttle. Book: https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,

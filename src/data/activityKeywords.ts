@@ -881,6 +881,9 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'how-to-spot-ethical-luwak-coffee-in-bali': 'luwak-coffee-plantation',
   'full-day-ubud-tour-guide-2026': 'full-day-ubud-tour',
   'atv-premium-package-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'premium-atv-adventure-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'premium-atv-adventure-itinerary-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'premium-atv-adventure-worth-it-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'group-atv-package-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'atv-package-private-transfer-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'private-shuttle-vs-grab-bali-activities-2026': ['bali-atv-adventure', 'whitewater-rafting', 'canyon-tubing'],
@@ -990,6 +993,22 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'ATV premium package Bali 2026',
     'ATV package with private shuttle',
     'Bali ATV group discount',
+  ],
+  'premium-atv-adventure-bali-2026': [
+    'premium ATV adventure Bali',
+    'premium ATV adventure Ubud',
+    'private ATV adventure near Ubud',
+    'ATV adventure with private car Bali',
+  ],
+  'premium-atv-adventure-itinerary-ubud-2026': [
+    'premium ATV adventure itinerary',
+    'ATV day plan Ubud private shuttle',
+    'how long is a premium ATV adventure',
+  ],
+  'premium-atv-adventure-worth-it-2026': [
+    'is premium ATV adventure worth it',
+    'premium ATV package vs booking separately',
+    'ATV adventure package saving Bali',
   ],
   'group-atv-package-ubud-2026': [
     'ATV for a group of 3 Bali',

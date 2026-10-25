@@ -12,6 +12,21 @@ export type TourRelatedGuide = {
 export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   'atv-premium-package-bali': [
     {
+      title: 'Premium ATV adventure near Ubud',
+      href: '/blog/premium-atv-adventure-bali-2026',
+      blurb: 'Private car, cave tunnel, mud and river — what the premium day actually is.',
+    },
+    {
+      title: 'Premium ATV adventure itinerary',
+      href: '/blog/premium-atv-adventure-itinerary-ubud-2026',
+      blurb: 'Hotel pickup, 1.5-hour ride, lunch, and home — or Ayung rafting after.',
+    },
+    {
+      title: 'Is the premium ATV adventure worth it?',
+      href: '/blog/premium-atv-adventure-worth-it-2026',
+      blurb: '10% off singles + tandem + shuttle, and when to book singles instead.',
+    },
+    {
       title: 'ATV premium package Bali 2026',
       href: '/blog/atv-premium-package-bali-2026',
       blurb: 'The three packages, the 10% math, and what the private shuttle covers.',

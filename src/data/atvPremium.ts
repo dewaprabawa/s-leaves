@@ -4,6 +4,9 @@ export const ATV_PREMIUM_SLUG = "atv-premium-package-bali"
 export const ATV_PREMIUM_DISCOUNT_PERCENT = 10
 
 export const ATV_PREMIUM_POST_SLUGS = new Set([
+  "premium-atv-adventure-bali-2026",
+  "premium-atv-adventure-itinerary-ubud-2026",
+  "premium-atv-adventure-worth-it-2026",
   "atv-premium-package-bali-2026",
   "group-atv-package-ubud-2026",
   "atv-package-private-transfer-bali-2026",

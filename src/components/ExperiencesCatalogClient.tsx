@@ -72,6 +72,10 @@ function ExperienceGridCard({ tour }: { tour: Tour }) {
           <span className="absolute left-2.5 top-2.5 z-10 bg-accent-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
             Private
           </span>
+        ) : tour.slug === "ubud-kecak-dance" ? (
+          <span className="absolute left-2.5 top-2.5 z-10 bg-accent-gold px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
+            Most picked
+          </span>
         ) : null}
         {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="card" /> : null}
       </Link>

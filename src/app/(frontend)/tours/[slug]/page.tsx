@@ -1351,6 +1351,10 @@ export default async function TourPage({ params }: Props) {
                       percent={tour.recommendedByTravelersPercent}
                       variant="hero"
                     />
+                  ) : tour.slug === "ubud-kecak-dance" ? (
+                    <span className="absolute left-3 top-3 z-10 bg-accent-gold px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white shadow-md">
+                      Most picked
+                    </span>
                   ) : null}
                   {isInsuredTour(tour.slug) ? <InsuranceBadge slug={tour.slug} variant="hero" /> : null}
                 </div>

@@ -31,6 +31,7 @@ export const ACTIVITY_SHORT_LABEL: Record<string, string> = {
   'swing-heaven-lunch': 'Swing Heaven + Lunch',
   'aloha-ubud-swing': 'Aloha Ubud Swing Active Package',
   'aloha-ubud-swing-entrance': 'Aloha Ubud Swing Entrance',
+  'ubud-kecak': 'Ubud Kecak',
 }
 
 /** Compatible add-ons for each primary activity (excluding cycling) */

@@ -121,7 +121,7 @@ const faqs = [
   },
   {
     question: "Can you handle a family, girls trip, or any private multi-day itinerary?",
-    answer: "Yes — consultation only. There is no booking form for this product. WhatsApp group type, dates, villa area, guest count, and the day list. We quote private driver days (car from IDR 600,000 / day; HiAce quoted for 6+), plus Swing Heaven, the Mount Batur jeep, cooking, or cycling. FINNS, La Favela, Cretya, Kecak, spa, and watersports stay on your bookings. No payment to inquire."
+    answer: "Yes — consultation only. There is no booking form for this product. WhatsApp group type, dates, villa area, guest count, and the day list. We quote private driver days (car from IDR 600,000 / day; HiAce quoted for 6+), plus Swing Heaven, the Mount Batur jeep, cooking, cycling, or the Sunday and Tuesday Kecak at Pura Dalem Kutuh Kaja. FINNS, La Favela, Cretya, Uluwatu Kecak, spa, and watersports stay on your bookings. No payment to inquire."
   }
 ];
 

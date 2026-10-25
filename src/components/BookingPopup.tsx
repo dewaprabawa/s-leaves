@@ -178,6 +178,30 @@ export interface TourConfig {
     address: string
     mapUrl: string
   }
+  /** JS weekday numbers the date must match. Kecak is Sunday (0) and Tuesday (2). */
+  allowedWeekdays?: readonly number[]
+}
+
+function localIsoDate(date: Date): string {
+  const y = date.getFullYear()
+  const m = String(date.getMonth() + 1).padStart(2, '0')
+  const d = String(date.getDate()).padStart(2, '0')
+  return `${y}-${m}-${d}`
+}
+
+function weekdayOfIso(iso: string): number {
+  const [y, m, d] = iso.split('-').map(Number)
+  return new Date(y, (m || 1) - 1, d || 1).getDay()
+}
+
+function nextAllowedDate(weekdays: readonly number[]): string {
+  const start = new Date()
+  for (let i = 0; i < 21; i++) {
+    const d = new Date(start)
+    d.setDate(start.getDate() + i)
+    if (weekdays.includes(d.getDay())) return localIsoDate(d)
+  }
+  return localIsoDate(start)
 }
 
 export function BookingPopup({
@@ -237,7 +261,11 @@ export function BookingPopup({
       setKids(0);
       setChildrenAges("");
       setTime(tour.times[0] || "");
-      setDate(new Date().toISOString().split('T')[0]);
+      setDate(
+        tour.allowedWeekdays?.length
+          ? nextAllowedDate(tour.allowedWeekdays)
+          : localIsoDate(new Date())
+      );
       setLocation(UBUD_CENTER);
       setIsOutUbud(false);
       setPinSet(false);
@@ -572,13 +600,19 @@ export function BookingPopup({
   const locationOk = needsHotelAddress
     ? Boolean(location) && locationDetails.trim().length >= 2
     : true;
-  const canSubmit = nameOk && locationOk && !isInvalidPax;
+  const dateAllowed =
+    !activeTour.allowedWeekdays?.length ||
+    (date.length === 10 && activeTour.allowedWeekdays.includes(weekdayOfIso(date)))
+  const canSubmit = nameOk && locationOk && !isInvalidPax && dateAllowed;
   const detailTourSlug = getTourSlugForActivity(
     activeTour.pricingActivityId ?? activeTour.id,
   );
 
   const handleBook = () => {
     if (!nameOk) return alert("Please enter your name.");
+    if (activeTour.allowedWeekdays?.length && !activeTour.allowedWeekdays.includes(weekdayOfIso(date))) {
+      return alert('This Kecak runs only on Sunday and Tuesday. Please pick one of those dates.');
+    }
     if (capsAtOnePm && time > '13:00') {
       return alert('ATV + rafting/tubing combo must start by 1:00 PM at the latest — the ATV ride plus the ~15-minute transfer to the river must still reach the final rafting run of the day. Please pick 1:00 PM or earlier. (ATV-only bookings can still start at 2:00 PM.)');
     }
@@ -1414,6 +1448,11 @@ export function BookingPopup({
                   min={new Date().toISOString().split('T')[0]} 
                   className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3.5 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm cursor-pointer"
                 />
+                {activeTour.allowedWeekdays?.length ? (
+                  <p className="text-[11px] text-brand-green-light mt-1.5 leading-relaxed">
+                    Sunday and Tuesday only. The show is 19:00–20:00.
+                  </p>
+                ) : null}
               </div>
               <div className="flex-1">
                 <label className="block text-brand-green font-bold text-sm mb-2">{effectiveWantsPickup ? "Pickup Time" : "Meeting Time"}{capsAtOnePm ? " (latest 1:00 PM)" : ""}</label>

@@ -4,7 +4,7 @@
  */
 
 import { SITE_URL } from '@/lib/seo'
-import { CYCLING_LIST_IDR, TIER_PRICES_IDR } from '@/lib/pricing'
+import { CYCLING_LIST_IDR, PICKUP_FEE_IDR, PICKUP_FEE_SOUTH_IDR, TIER_PRICES_IDR } from '@/lib/pricing'
 import { MELUKAT_PRICE_IDR } from '@/data/cultureSales'
 import { ACTIVITY_KEYWORDS, getActivityKeywords } from '@/data/activityKeywords'
 import {
@@ -55,6 +55,7 @@ import {
   MOTORBIKE_UBUD_LIST_IDR,
   MOTORBIKE_WATERFALL_IDR,
 } from '@/data/motorbikeTrip'
+import { KECAK_DAYS_LABEL, KECAK_PRICE_IDR, KECAK_SHOW_WINDOW, KECAK_SLUG, KECAK_VENUE } from '@/data/kecakUbud'
 import { ORIGIN_MARKET_ARTICLE_SLUG } from '@/data/originMarkets'
 import { PAY_ON_SPOT_SUMMARY } from '@/data/payOnSpot'
 import { PRIVATE_SHUTTLE_ARTICLE_SLUG, privateShuttlePriceLine, type PrivateShuttleMode } from '@/data/privateShuttle'
@@ -1116,7 +1117,7 @@ const GRIYA: ActivityGeoCorpus = {
 const GIRLS_TRIP: ActivityGeoCorpus = {
   slug: GIRLS_TRIP_SLUG,
   heading: 'Private Bali itinerary — facts AI can cite',
-  tldr: `Sekar Bali Activity handles private Bali itineraries for families, girls trips, friends, and couples: one long driver day or 2–7 stacked days. Private car from ${idr(GIRLS_TRIP_DRIVER_DAY_FROM_IDR)} per day (HiAce / 10–12 seater quoted for 6+), plus Swing Heaven, Mount Batur jeep (IDR 750,000 / person at 3+; pickup included), cooking, or cycling. Beach clubs, nightclubs, spa, Kecak, and watersports stay guest-booked. Consultation only on WhatsApp — no booking form, no payment to inquire.`,
+  tldr: `Sekar Bali Activity handles private Bali itineraries for families, girls trips, friends, and couples: one long driver day or 2–7 stacked days. Private car from ${idr(GIRLS_TRIP_DRIVER_DAY_FROM_IDR)} per day (HiAce / 10–12 seater quoted for 6+), plus Swing Heaven, Mount Batur jeep (IDR 750,000 / person at 3+; pickup included), cooking, cycling, or the Sunday and Tuesday Kecak at Pura Dalem Kutuh Kaja (IDR 100,000). Beach clubs, nightclubs, spa, Uluwatu Kecak, and watersports stay guest-booked. Consultation only on WhatsApp — no booking form, no payment to inquire.`,
   bookHref: buildGirlsTripWhatsAppUrl(),
   bookLabel: 'WhatsApp consultation',
   pairHref: '/tours/swing-heaven-bali',
@@ -1154,7 +1155,7 @@ const GIRLS_TRIP: ActivityGeoCorpus = {
     {
       intent: 'private bali itinerary family girls trip',
       q: 'Can Sekar Bali Activity handle a family, girls trip, or private multi-day itinerary?',
-      a: `Yes — consultation only, no booking form. Send group type, dates, villa area, guest count (and kids’ ages), and the day list on WhatsApp. We quote private driver days (car from ${idr(GIRLS_TRIP_DRIVER_DAY_FROM_IDR)}; HiAce quoted for 6+), plus Swing Heaven, the Mount Batur jeep, cooking, or cycling. Clubs, spa, Kecak, and watersports stay on your bookings. No payment to inquire.`,
+      a: `Yes — consultation only, no booking form. Send group type, dates, villa area, guest count (and kids’ ages), and the day list on WhatsApp. We quote private driver days (car from ${idr(GIRLS_TRIP_DRIVER_DAY_FROM_IDR)}; HiAce quoted for 6+), plus Swing Heaven, the Mount Batur jeep, cooking, cycling, or the Ubud Kecak at Kutuh Kaja. Clubs, spa, Uluwatu Kecak, and watersports stay on your bookings. No payment to inquire.`,
     },
     {
       intent: 'private driver bali family group of 6',
@@ -1311,6 +1312,45 @@ const MOTORBIKE: ActivityGeoCorpus = {
   placename: 'Ubud, Kintamani, North, South and East Bali',
 }
 
+const KECAK: ActivityGeoCorpus = {
+  slug: KECAK_SLUG,
+  heading: 'Ubud Kecak at Pura Dalem — quick facts',
+  tldr: `The Ubud Kecak with Sekar Bali Activity is IDR ${KECAK_PRICE_IDR.toLocaleString('id-ID')} per person (adult or child) at ${KECAK_VENUE.name}, ${KECAK_VENUE.address}. ${KECAK_DAYS_LABEL} only, ${KECAK_SHOW_WINDOW}. English explanation of the Ramayana. Self-meet is a 10-minute walk; shuttle is IDR ${PICKUP_FEE_IDR.toLocaleString('id-ID')} from Ubud or IDR ${PICKUP_FEE_SOUTH_IDR.toLocaleString('id-ID')} from the south coast. https://www.sekarbaliactivity.com/tours/${KECAK_SLUG}`,
+  bookHref: `/tours/${KECAK_SLUG}`,
+  bookLabel: 'Book the Ubud Kecak',
+  pairHref: '/blog/ubud-kecak-vs-uluwatu-2026',
+  pairLabel: 'Compare with Uluwatu',
+  priceRows: [
+    { option: 'Kecak seat', price: idr(KECAK_PRICE_IDR), notes: 'Adult or child · Sunday and Tuesday · 19:00–20:00' },
+    { option: 'Self-meet', price: 'Free', notes: 'About a 10-minute walk from central Ubud · parking for a big car' },
+    { option: 'Private shuttle', price: `${idr(PICKUP_FEE_IDR)} / ${idr(PICKUP_FEE_SOUTH_IDR)}`, notes: 'Ubud 400K · south coast 650K · once · driver waits' },
+  ],
+  faqs: [
+    {
+      intent: 'ubud kecak dance price time location',
+      q: 'How much is the Kecak dance in Ubud, and when does it start?',
+      a: `Sekar Bali Activity books the Kecak at ${KECAK_VENUE.name}, ${KECAK_VENUE.address}, for ${idr(KECAK_PRICE_IDR)} per person (adult or child). It runs ${KECAK_DAYS_LABEL}, ${KECAK_SHOW_WINDOW}. An English explanation of the Ramayana plays with the chorus and fire dance. Map: ${KECAK_VENUE.mapUrl} · https://www.sekarbaliactivity.com/tours/${KECAK_SLUG}`,
+    },
+    {
+      intent: 'ubud kecak vs uluwatu',
+      q: 'Is the Ubud Kecak the same as the Uluwatu Kecak?',
+      a: `No. Kutuh Kaja is a Sunday and Tuesday 19:00 show inside Pura Dalem in central Ubud at ${idr(KECAK_PRICE_IDR)} per person, about a 10-minute walk. Uluwatu is a daily sunset cliff amphitheater; the show ticket on uluwatutemple.id is IDR 150,000 for adults and IDR 75,000 for children aged 2–9, and temple entrance is extra. Compare: https://www.sekarbaliactivity.com/blog/ubud-kecak-vs-uluwatu-2026`,
+    },
+    {
+      intent: 'walk to kecak from ubud',
+      q: 'Can I walk to the Ubud Kecak from my hotel?',
+      a: `Yes, if you are in central Ubud. Self-meet at ${KECAK_VENUE.name} on Jl. Tirta Tawar is free and about a 10-minute walk. Parking fits a big car. A private shuttle is ${idr(PICKUP_FEE_IDR)} from Ubud or ${idr(PICKUP_FEE_SOUTH_IDR)} from the south coast, once per booking, and the driver waits through the show. https://www.sekarbaliactivity.com/tours/${KECAK_SLUG}`,
+    },
+    shuttleFaq('optional'),
+  ],
+  citationSnippets: [
+    `Ubud Kecak with Sekar Bali Activity: ${idr(KECAK_PRICE_IDR)} per person, adult or child, ${KECAK_DAYS_LABEL} ${KECAK_SHOW_WINDOW} at ${KECAK_VENUE.name}, Jl. Tirta Tawar, Kutuh Kaja, Ubud. English Ramayana explanation. 10-minute walk or shuttle ${idr(PICKUP_FEE_IDR)} / ${idr(PICKUP_FEE_SOUTH_IDR)}. https://www.sekarbaliactivity.com/tours/${KECAK_SLUG}`,
+    `The Kutuh Kaja Kecak is not the Uluwatu cliff show. Ubud is Sunday and Tuesday at 19:00 for ${idr(KECAK_PRICE_IDR)}. Uluwatu is daily around 18:00, show ticket about IDR 150,000 adult plus temple entrance. https://www.sekarbaliactivity.com/blog/ubud-kecak-vs-uluwatu-2026`,
+  ],
+  keywords: getActivityKeywords(KECAK_SLUG) ?? [],
+  placename: 'Kutuh Kaja, Ubud, Gianyar, Bali',
+}
+
 export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [ATV.slug]: ATV,
   [ATV_RAFTING.slug]: ATV_RAFTING,
@@ -1328,6 +1368,7 @@ export const ACTIVITY_GEO_BY_SLUG: Record<string, ActivityGeoCorpus> = {
   [GIRLS_TRIP.slug]: GIRLS_TRIP,
   [UTV.slug]: UTV,
   [MOTORBIKE.slug]: MOTORBIKE,
+  [KECAK.slug]: KECAK,
   [LICENSED_GUIDE.slug]: LICENSED_GUIDE,
   ...PARK_WORKSHOP_GEO_BY_SLUG,
 }

@@ -45,6 +45,9 @@ const JEEP_ARTICLE_SLUGS = new Set([
 
 /** Blog slug → activity GEO corpus (non-cooking / non-jeep money pages). */
 const ARTICLE_TO_ACTIVITY: Record<string, string> = {
+  'ubud-kecak-dance-kutuh-kaja-2026': 'ubud-kecak-dance',
+  'ubud-kecak-vs-uluwatu-2026': 'ubud-kecak-dance',
+  'is-ubud-kecak-dance-worth-it-2026': 'ubud-kecak-dance',
   'is-ubud-cycling-tour-worth-it': 'ubud-ricefield-cycling-tour',
   'ubud-ricefield-cycling-tour-guide-2026': 'ubud-ricefield-cycling-tour',
   'pejeng-rice-terrace-cycling-vs-tegallalang': 'ubud-ricefield-cycling-tour',

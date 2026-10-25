@@ -20,6 +20,30 @@ const DEFAULT_CTA: ArticleCta = {
 }
 
 const CTA_BY_SLUG: Record<string, ArticleCta> = {
+  'ubud-kecak-dance-kutuh-kaja-2026': {
+    headline: 'Book the Sunday or Tuesday Kecak',
+    body: 'IDR 100,000 per person at Pura Dalem Kutuh Kaja, 19:00–20:00. Walk about 10 minutes, or add the usual shuttle. No payment to inquire.',
+    primaryHref: '/tours/ubud-kecak-dance',
+    primaryLabel: 'Book the Ubud Kecak',
+    secondaryHref: '/blog/ubud-kecak-vs-uluwatu-2026',
+    secondaryLabel: 'Compare with Uluwatu',
+  },
+  'ubud-kecak-vs-uluwatu-2026': {
+    headline: 'Book the Ubud temple Kecak',
+    body: 'IDR 100,000, Sunday and Tuesday at 19:00, in central Ubud. Uluwatu stays a separate cliff ticket.',
+    primaryHref: '/tours/ubud-kecak-dance',
+    primaryLabel: 'Book Kutuh Kaja',
+    secondaryHref: '/blog/is-ubud-kecak-dance-worth-it-2026',
+    secondaryLabel: 'Is it worth 100K?',
+  },
+  'is-ubud-kecak-dance-worth-it-2026': {
+    headline: 'Hold Sunday or Tuesday night',
+    body: 'IDR 100,000 covers the courtyard seat and the English Ramayana. Shuttle is extra. Self-meet is a 10-minute walk.',
+    primaryHref: '/tours/ubud-kecak-dance',
+    primaryLabel: 'Book the Ubud Kecak',
+    secondaryHref: '/blog/ubud-kecak-dance-kutuh-kaja-2026',
+    secondaryLabel: 'Times and the pin',
+  },
   'bali-6-day-girls-trip-itinerary-2026': {
     headline: 'WhatsApp a consultation for this 6-day plan',
     body: 'Consultation only — no booking form. Send dates, villa area, and guest count. We quote the driver, Swing Heaven, and the Batur jeep. Clubs and spa stay on your bookings.',
@@ -38,7 +62,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-private-itinerary-what-we-book-vs-you-book': {
     headline: 'Send the split on WhatsApp',
-    body: 'Consultation only — we quote driver days plus the activities we operate. You keep FINNS, Cretya, Kecak, and spa reservations.',
+    body: 'Consultation only — we quote driver days plus the activities we operate, including the Kutuh Kaja Kecak. You keep FINNS, Cretya, Uluwatu Kecak, and spa reservations.',
     primaryHref: buildGirlsTripWhatsAppUrl(),
     primaryLabel: 'WhatsApp consultation',
     secondaryHref: '/tours/batur-sunrise-jeep-tour',

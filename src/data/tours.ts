@@ -42,6 +42,15 @@ import {
   GIRLS_TRIP_SLUG,
 } from "@/data/girlsTrip"
 import {
+  KECAK_DAYS_LABEL,
+  KECAK_PHOTOS,
+  KECAK_PRICE_IDR,
+  KECAK_SHOW_WINDOW,
+  KECAK_SLUG,
+  KECAK_VENUE,
+  ULUWATU_KECAK_ADULT_IDR,
+} from "@/data/kecakUbud"
+import {
   PARK_WORKSHOP_TOURS,
   resolveBaliSafariSlug,
 } from "@/data/parkWorkshopTours"
@@ -272,10 +281,6 @@ export const TOURS: Tour[] = [
       {
         url: "/images/adventures/atv-mud-river-splash.jpg",
         alt: "Rider on a green ATV splashing through muddy water near Ubud",
-      },
-      {
-        url: "/images/adventures/atv-mud-jungle-pov.jpg",
-        alt: "Rider POV of a muddy jungle ATV track near Ubud",
       },
       {
         url: "/images/adventures/atv-arena-quad-fleet.jpg",
@@ -3231,8 +3236,8 @@ Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-m
       },
     ],
     shortDescription:
-      "Paste a family week, a girls trip, or one long private day. We book the driver (car from IDR 600,000 / day; HiAce quoted for 6+), plus Swing Heaven, Batur jeep, cooking, or cycling. Beach clubs, spa, and Kecak stay on your cards.",
-    fullDescription: `**Can you handle a private Bali itinerary — family week, girls trip, or one long driver day?** Yes. Paste the plan on WhatsApp. **Sekar Bali Activity** books the **private driver** plus the days we actually sell: **[Swing Heaven](/tours/swing-heaven-bali)**, **[Mount Batur jeep](/tours/batur-sunrise-jeep-tour)**, **[Tumang cooking](/tours/balinese-cooking-class)**, **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)**, ATV, Griya Beji, airport transfer. You keep beach clubs, nightclubs, spa, Kecak seats, and restaurant tables.
+      "Paste a family week, a girls trip, or one long private day. We book the driver (car from IDR 600,000 / day; HiAce quoted for 6+), plus Swing Heaven, Batur jeep, cooking, cycling, or the Sunday and Tuesday Kecak at Pura Dalem Kutuh Kaja. Beach clubs, spa, and Uluwatu Kecak seats stay on your cards.",
+    fullDescription: `**Can you handle a private Bali itinerary — family week, girls trip, or one long driver day?** Yes. Paste the plan on WhatsApp. **Sekar Bali Activity** books the **private driver** plus the days we actually sell: **[Swing Heaven](/tours/swing-heaven-bali)**, **[Mount Batur jeep](/tours/batur-sunrise-jeep-tour)**, **[Tumang cooking](/tours/balinese-cooking-class)**, **[Pejeng cycling](/tours/ubud-ricefield-cycling-tour)**, **[Ubud Kecak at Kutuh Kaja](/tours/ubud-kecak-dance)**, ATV, Griya Beji, airport transfer. You keep beach clubs, nightclubs, spa, Uluwatu Kecak seats, and restaurant tables.
 
 ### Who this is for
 
@@ -3276,7 +3281,7 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
       "One long private day or 2–7 stacked driver days",
       "Private driver from IDR 600,000 / car-day · HiAce quoted for 6+",
       "We book Swing Heaven, Batur jeep, cooking, cycling, ATV, Griya Beji, airport runs",
-      "You keep clubs, spa, Kecak, and restaurant tables — we still drive those pins",
+      "You keep clubs, spa, Uluwatu Kecak, and restaurant tables — we still drive those pins. The Kutuh Kaja Kecak is a published ticket.",
       "Honest skip list: Penida, Lovina, extra temples, mall days",
     ],
     included: [
@@ -3286,7 +3291,7 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
       "Published IDR on Swing Heaven, Batur jeep, cooking, cycling, ATV, Griya Beji, airport transfer",
     ],
     notIncluded: [
-      "FINNS, La Favela, Savaya, Cretya, Taman Dedari, spa, jewelry class, Kecak, watersports tickets",
+      "FINNS, La Favela, Savaya, Cretya, Taman Dedari, spa, jewelry class, Uluwatu Kecak, watersports tickets",
       "HiAce / 10–12 seater rate (quoted — not the car-day from-price)",
       "Swing Heaven photographer (own phone) and park extras (koi boat, flying dress)",
       "Temple / beach-club / restaurant entrance and consumption",
@@ -3342,7 +3347,7 @@ More: [what we book vs you book](/blog/bali-private-itinerary-what-we-book-vs-yo
         id: "faq-gt-1",
         question: "Can you handle a family, girls trip, or any private multi-day itinerary?",
         answer:
-          "Yes — consultation only. There is no booking form. Send group type, dates, villa area, guest count (and kids’ ages), and the day list on WhatsApp. We quote private driver days (car from IDR 600,000 / day; HiAce quoted for 6+) plus Swing Heaven, the Mount Batur jeep, cooking, cycling, or ATV. Beach clubs, spa, Kecak, and watersports stay on your bookings. No payment to inquire.",
+          "Yes — consultation only. There is no booking form. Send group type, dates, villa area, guest count (and kids’ ages), and the day list on WhatsApp. We quote private driver days (car from IDR 600,000 / day; HiAce quoted for 6+) plus Swing Heaven, the Mount Batur jeep, cooking, cycling, ATV, or the Sunday and Tuesday Kecak at Pura Dalem Kutuh Kaja. Beach clubs, spa, Uluwatu Kecak, and watersports stay on your bookings. No payment to inquire.",
       },
       {
         id: "faq-gt-consult",
@@ -3748,6 +3753,117 @@ WhatsApp **date, guest count, and single or tandem**. No payment to inquire.`,
         question: "Is hotel pickup included?",
         answer:
           "Usually not in the from-price. We quote a private driver or you self-meet. Say your hotel area on WhatsApp.",
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: KECAK_SLUG,
+    title: "Kecak Dance at Pura Dalem Kutuh Kaja, Ubud",
+    slug: KECAK_SLUG,
+    category: "culture",
+    area: "Kutuh Kaja / Ubud",
+    venue: `${KECAK_VENUE.name} — Jl. Tirta Tawar`,
+    pickup: "Self-meet free · about 10 minutes on foot · shuttle IDR 400,000 Ubud / 650,000 south",
+    duration: "1 Hour (19:00–20:00)",
+    basePrice: KECAK_PRICE_IDR,
+    childPrice: KECAK_PRICE_IDR,
+    seoTitle: "Kecak Dance Ubud | Pura Dalem · Sun & Tue 100K",
+    seoDescription:
+      "Sunday and Tuesday Kecak at Pura Dalem Gede Kutuh Kaja, Jl. Tirta Tawar, Ubud. IDR 100,000 adult or child. English Ramayana. 10-minute walk or shuttle.",
+    heroImage: KECAK_PHOTOS[0],
+    gallery: [...KECAK_PHOTOS],
+    heroThumbnails: [KECAK_PHOTOS[1]],
+    shortDescription:
+      "Sunday and Tuesday Kecak and fire dance in the Pura Dalem courtyard at Kutuh Kaja, central Ubud. IDR 100,000 per person. English telling of the Ramayana. About a 10-minute walk, or the usual hotel shuttle.",
+    fullDescription: `**Want the Kecak inside a living Ubud temple, not the cliff sunset at Uluwatu?** This is the **Sunday and Tuesday** show at **${KECAK_VENUE.name}**, **${KECAK_VENUE.address}**. It runs **${KECAK_SHOW_WINDOW}**. The Sekar booking rate is **IDR ${KECAK_PRICE_IDR.toLocaleString("id-ID")} per person**, adult or child. [Open the pin](${KECAK_VENUE.mapUrl}).
+
+### Why this night feels like Ubud
+The courtyard sits in the middle of the temple banjar: a sacred **Pura Dalem**, a local chorus, and a story of Balinese life that most visitors never hear because they only know the Uluwatu name. Come around **18:30** and walk the temple before you sit. The chant, the fire, and the characters happen in that shrine. Guests talk about it on the walk back because the setting is close, quiet, and not a tourist amphitheater.
+
+An **English explanation** runs with the performance so you can follow the **Ramayana** — Hanoman, Rama, Sinta, and Ravana — while the Kecak stays the Kecak.
+
+### Getting there
+Self-meet is free. From central Ubud it is about a **10-minute walk**. There is **parking for a big car**. A private shuttle is **IDR 400,000** from Ubud or **IDR 650,000** from the south coast, once per booking. The driver waits through the show.
+
+### Not the Uluwatu show
+Uluwatu is a daily sunset cliff amphitheater. Its show ticket is about **IDR ${ULUWATU_KECAK_ADULT_IDR.toLocaleString("id-ID")}** for adults, and the temple entrance is extra ([uluwatutemple.id](https://uluwatutemple.id/uluwatu-kecak-dance)). This ticket is **IDR 100,000**, **${KECAK_DAYS_LABEL} only**, in central Ubud. Full comparison: [Ubud Kecak vs Uluwatu](/blog/ubud-kecak-vs-uluwatu-2026).
+
+Cover shoulders and knees. Women who are menstruating are asked not to enter the inner temple space. Book on WhatsApp — **no payment to inquire**.`,
+    highlights: [
+      "Sunday and Tuesday, 19:00–20:00",
+      "Pura Dalem courtyard in central Ubud",
+      "English telling of the Ramayana Kecak",
+      "IDR 100,000 adult or child",
+      "About a 10-minute walk, or hotel shuttle",
+    ],
+    included: [
+      "Kecak and fire dance seat",
+      "English explanation of the Ramayana",
+      "Time in the Pura Dalem courtyard before the show",
+    ],
+    notIncluded: [
+      "Hotel shuttle (IDR 400,000 Ubud / 650,000 south) — self-meet is free",
+      "Dinner",
+      "Uluwatu temple or Uluwatu Kecak tickets",
+    ],
+    itinerary: [
+      {
+        id: "kecak-arrive",
+        time: "18:30",
+        title: "Arrive at Pura Dalem",
+        description:
+          "Walk the temple courtyard at Kutuh Kaja. Self-meet is about 10 minutes on foot from central Ubud, or the shuttle drops you at the pin. Parking fits a big car.",
+      },
+      {
+        id: "kecak-show",
+        time: "19:00",
+        title: "Kecak and fire",
+        description:
+          "One hour. The chorus, the Ramayana characters, and the fire circle, with an English explanation so the story is clear.",
+      },
+      {
+        id: "kecak-return",
+        time: "20:00",
+        title: "Walk or shuttle back",
+        description: "The show ends around 20:00. Walk back into Ubud, or the same car is waiting.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-kecak-1",
+        question: "When and where is the Ubud Kecak?",
+        answer: `Sunday and Tuesday only, ${KECAK_SHOW_WINDOW}, at ${KECAK_VENUE.name}, ${KECAK_VENUE.address}. Map: ${KECAK_VENUE.mapUrl}`,
+      },
+      {
+        id: "faq-kecak-2",
+        question: "How much is the Kecak at Kutuh Kaja?",
+        answer:
+          "IDR 100,000 per person. The adult price and the child price are the same. That is the Sekar booking rate for this show.",
+      },
+      {
+        id: "faq-kecak-3",
+        question: "Can I walk there from Ubud?",
+        answer:
+          "Yes. Self-meet is free and the walk from central Ubud is about 10 minutes. Parking fits a big car. Hotel shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast, once per booking.",
+      },
+      {
+        id: "faq-kecak-4",
+        question: "How is this different from the Uluwatu Kecak?",
+        answer:
+          "Uluwatu is a daily sunset show on a south-Bali cliff. The Uluwatu show ticket is about IDR 150,000 for adults, and temple entrance is extra. This show is Sunday and Tuesday at 19:00 inside Pura Dalem in central Ubud, at IDR 100,000, with an English telling of the legend. https://www.sekarbaliactivity.com/blog/ubud-kecak-vs-uluwatu-2026",
+      },
+      {
+        id: "faq-kecak-5",
+        question: "Is the story explained in English?",
+        answer:
+          "Yes. The performance includes an English explanation of the Ramayana so guests can follow Hanoman, Rama, Sinta, and Ravana while the Kecak chorus and fire dance continue.",
+      },
+      {
+        id: "faq-kecak-shuttle",
+        question: PRIVATE_SHUTTLE_FAQ_QUESTION,
+        answer: privateShuttleFaqAnswer("optional"),
       },
     ],
     reviews: [],

@@ -18,6 +18,7 @@ import {
   TIER_PRICES_IDR,
 } from "@/lib/pricing"
 import { formatIdr } from "@/lib/whatsapp"
+import { KECAK_PRICE_IDR } from "@/data/kecakUbud"
 
 const [CYCLE_1, CYCLE_2, CYCLE_3] = TIER_PRICES_IDR.cycling
 const [ATV_1] = TIER_PRICES_IDR["single-atv"]
@@ -43,6 +44,7 @@ export type ActivityCompareId =
   | "motorbike"
   | "utv"
   | "kintamani"
+  | "kecak"
 
 function idr(n: number) {
   return formatIdr(n)
@@ -183,6 +185,14 @@ const ROWS: {
     note: `Tandem ${idr(UTV_BUGGY_TANDEM_IDR)} · lunch included`,
     pickup: "Quoted or self-meet",
     feel: "1-hour buggy trail",
+  },
+  {
+    id: "kecak",
+    activity: "Ubud Kecak, Kutuh Kaja",
+    price: idr(KECAK_PRICE_IDR),
+    note: "Adult or child · Sunday and Tuesday 19:00",
+    pickup: `Optional ${idr(PICKUP_FEE_IDR)} · or 10-minute walk`,
+    feel: "Temple courtyard Ramayana and fire",
   },
 ]
 

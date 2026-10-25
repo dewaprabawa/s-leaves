@@ -254,6 +254,12 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book Kintamani dirt bike', href: '/tours/dirt-bike-kintamani-black-lava' },
     { title: 'Book the Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
   ],
+  kecak: [
+    { title: 'Ubud Kecak at Kutuh Kaja', href: '/blog/ubud-kecak-dance-kutuh-kaja-2026' },
+    { title: 'Ubud Kecak vs Uluwatu', href: '/blog/ubud-kecak-vs-uluwatu-2026' },
+    { title: 'Is the Ubud Kecak worth it', href: '/blog/is-ubud-kecak-dance-worth-it-2026' },
+    { title: 'Book the Ubud Kecak', href: '/tours/ubud-kecak-dance' },
+  ],
   site: [
     { title: "What's new in Bali 2026", href: '/blog/whats-new-in-bali-ubud-2026' },
     HUB,
@@ -273,6 +279,9 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
 type ClusterId = keyof typeof ACTIVITY_ARTICLE_CLUSTERS
 
 const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
+  'ubud-kecak-dance-kutuh-kaja-2026': 'kecak',
+  'ubud-kecak-vs-uluwatu-2026': 'kecak',
+  'is-ubud-kecak-dance-worth-it-2026': 'kecak',
   'mount-batur-sunrise-jeep-tour-guide-2026': 'jeep',
   'mount-batur-sunrise-jeep-tour-price-guide-2026': 'jeep',
   'mount-batur-jeep-vs-sunrise-trek': 'jeep',
@@ -415,6 +424,12 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
 
 /** Other-activity hops so Google can walk jeep ↔ cooking ↔ ATV ↔ Griya. */
 const CROSS_CLUSTER: Record<ClusterId, ArticleLink[]> = {
+  kecak: [
+    { title: 'Tumang cooking class', href: '/tours/balinese-cooking-class' },
+    { title: 'Pejeng ricefield cycling', href: '/tours/ubud-ricefield-cycling-tour' },
+    { title: 'Private Tirta Empul melukat', href: '/tours/tirta-empu-purification' },
+    HUB,
+  ],
   jeep: [
     { title: 'Tumang cooking class (free Ubud pickup)', href: '/tours/balinese-cooking-class' },
     { title: 'Pejeng ricefield cycling', href: '/tours/ubud-ricefield-cycling-tour' },

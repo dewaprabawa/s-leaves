@@ -18,6 +18,7 @@ import AtvWorthItSection from "@/components/AtvWorthItSection"
 import CyclingWorthItSection from "@/components/CyclingWorthItSection"
 import ActivityWorthItSection from "@/components/ActivityWorthItSection"
 import ActivityPriceCompare, { type ActivityCompareId } from "@/components/ActivityPriceCompare"
+import KecakVenueBlock from "@/components/KecakVenueBlock"
 import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import TourPhotoGrid from "@/components/TourPhotoGrid"
@@ -157,6 +158,8 @@ function priceCompareId(tour: Tour): ActivityCompareId | null {
       return "motorbike"
     case "utv-buggy-bali-adventure":
       return "utv"
+    case "ubud-kecak-dance":
+      return "kecak"
     default:
       return null
   }
@@ -1504,6 +1507,8 @@ export default async function TourPage({ params }: Props) {
                 {shuttleMode ? <PrivateShuttleNote mode={shuttleMode} /> : null}
               </div>
             </header>
+
+            {tour.slug === "ubud-kecak-dance" ? <KecakVenueBlock /> : null}
 
             {tour.highlights.length > 0 && (
               <section className="flex flex-wrap gap-2">

@@ -14,6 +14,7 @@ export const PRIVATE_SHUTTLE_TOURS: Record<string, PrivateShuttleMode> = {
   'whitewater-rafting': 'optional',
   'canyon-tubing': 'optional',
   'griya-beji-waterfall': 'optional',
+  'ubud-kecak-dance': 'optional',
   'atv-premium-package-bali': 'included',
   'swing-heaven-bali': 'required',
   'aloha-ubud-swing': 'required',

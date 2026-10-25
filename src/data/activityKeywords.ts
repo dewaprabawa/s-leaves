@@ -38,6 +38,7 @@ export type ActivityKeywordSlug =
   | 'bali-motorbike-traveling-trip'
   | 'licensed-tour-guide-bali'
   | 'atv-premium-package-bali'
+  | 'ubud-kecak-dance'
 
 export type KeywordCluster = {
   /** What travelers type first (H1 / title language). */
@@ -471,6 +472,26 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'waterfall purification vs Tirta Empul ceremony',
     ],
   },
+  'ubud-kecak-dance': {
+    head: [
+      'Ubud Kecak dance',
+      'Kecak dance Ubud',
+      'Pura Dalem Kutuh Kaja Kecak',
+    ],
+    book: [
+      'Ubud Kecak ticket',
+      'Kecak dance Ubud price',
+      'Kutuh Kaja Kecak Sunday Tuesday',
+      'Kecak fire dance Ubud',
+      'Tirta Tawar Kecak',
+      'book Ubud Kecak WhatsApp',
+    ],
+    compare: [
+      'Ubud Kecak vs Uluwatu',
+      'Kecak Ubud or Uluwatu',
+      'is Ubud Kecak worth it',
+    ],
+  },
   'bali-private-itinerary': {
     head: [
       'private Bali itinerary',
@@ -565,6 +586,7 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'bali-motorbike-traveling-trip': flattenCluster(KEYWORD_CLUSTERS['bali-motorbike-traveling-trip']),
   'licensed-tour-guide-bali': flattenCluster(KEYWORD_CLUSTERS['licensed-tour-guide-bali']),
   'atv-premium-package-bali': flattenCluster(KEYWORD_CLUSTERS['atv-premium-package-bali']),
+  'ubud-kecak-dance': flattenCluster(KEYWORD_CLUSTERS['ubud-kecak-dance']),
 }
 
 export const COMBO_KEYWORDS = [
@@ -620,6 +642,7 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
   'batur-sunrise-jeep-tour',
   'tirta-empu-purification',
   'griya-beji-waterfall',
+  'ubud-kecak-dance',
   'swing-heaven-bali',
   'aloha-ubud-swing',
   'luwak-coffee-plantation',
@@ -817,6 +840,9 @@ export function getQueryAliasLine(slug: string): string | undefined {
 }
 
 const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug[] | 'site'> = {
+  'ubud-kecak-dance-kutuh-kaja-2026': 'ubud-kecak-dance',
+  'ubud-kecak-vs-uluwatu-2026': 'ubud-kecak-dance',
+  'is-ubud-kecak-dance-worth-it-2026': 'ubud-kecak-dance',
   'mount-batur-sunrise-jeep-tour-guide-2026': 'batur-sunrise-jeep-tour',
   'mount-batur-jeep-vs-sunrise-trek': 'batur-sunrise-jeep-tour',
   'mount-batur-jeep-pickup-times-canggu-ubud-2026': 'batur-sunrise-jeep-tour',

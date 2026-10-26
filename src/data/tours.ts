@@ -149,7 +149,7 @@ export interface Tour {
   pickup?: string
   /** Featured on homepage top-picks rail when true. */
   isTopPick?: boolean
-  /** Star badge: “Recommended by N% of travelers” (ATV, UTV, Kintamani dirt bike). */
+  /** Shows the Most picked label (ATV, UTV, Kintamani dirt bike). */
   recommendedByTravelersPercent?: number
   duration: string
   basePrice: number
@@ -510,7 +510,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-13",
         question: "What are Ubud quad biking reviews like?",
         answer:
-          "Guests book this as a beginner-friendly Ubud quad bike adventure. The money page shows Recommended by 96% of travelers. We do not invent a review count. Lunch, helmet, boots, and insurance are on the card. WhatsApp — no payment to inquire.",
+          "Guests book this as a beginner-friendly Ubud quad bike adventure. The money page labels it Most picked. We do not invent a review score. Lunch, helmet, boots, and insurance are on the card. WhatsApp — no payment to inquire.",
       },
       {
         id: "faq-atv-14",

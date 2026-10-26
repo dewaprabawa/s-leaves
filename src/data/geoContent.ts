@@ -882,7 +882,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'ATV',
     q: 'What are Ubud Quad Biking reviews? Is this the best ATV ride in Ubud?',
-    a: 'This is a beginner-friendly Ubud quad bike adventure at All New Bali Adventure. The money page shows Recommended by 96% of travelers. We do not invent a review count or claim “best in Bali.” Book if you want published IDR, lunch, and jungle mud — not a cave park. https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
+    a: 'This is a beginner-friendly Ubud quad bike adventure at All New Bali Adventure. The money page labels it Most picked. We do not invent a review score or claim “best in Bali.” Book if you want published IDR, lunch, and jungle mud — not a cave park. https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
     url: `${SITE_URL}/tours/bali-atv-adventure`,
   },
   {

@@ -474,6 +474,9 @@ The ride starts at **${KINTAMANI_DIRT_BIKE_HOST}**, ${KINTAMANI_DIRT_BIKE_ADDRES
 | KTM 250 / 300 / 350cc | ${KINTAMANI_DIRT_BIKE_PRICES.ktm.toLocaleString("id-ID")} |
 | Kids bike 75cc | ${KINTAMANI_DIRT_BIKE_PRICES.kids75.toLocaleString("id-ID")} |
 
+### The 350cc is the real adventure bike
+**KTM 250 / 300 / 350cc** (IDR ${KINTAMANI_DIRT_BIKE_PRICES.ktm.toLocaleString("id-ID")} per rider) is the full-size off-road bike on this day. It is for riders who already ride a geared bike with a clutch. The guide uses it on the black-lava dunes and the forest, not on the easy starter line. The **150cc** is the bike for a first dirt day. The **75cc** is the kids bike. A road scooter is a different product. Tell us how many months you have ridden a clutch bike so this 350cc is booked only when it fits.
+
 Pick the bike on this page. Tell us your riding months on a geared bike so the guide matches the line to your level.
 
 Wet season (December–May) is the usual Kintamani window (traction, less dust). About 8 hours. Hotel shuttle IDR ${KINTAMANI_DIRT_BIKE_SHUTTLE_IDR.toLocaleString("id-ID")} per booking, or self-meet in Suter.`,
@@ -520,7 +523,7 @@ Wet season (December–May) is the usual Kintamani window (traction, less dust).
       {
         name: "KTM 250 / 300 / 350cc",
         priceDiff: KINTAMANI_DIRT_BIKE_PRICES.ktm - KINTAMANI_DIRT_BIKE_PRICES.klx150,
-        description: `IDR ${KINTAMANI_DIRT_BIKE_PRICES.ktm.toLocaleString("id-ID")} per rider`,
+        description: `IDR ${KINTAMANI_DIRT_BIKE_PRICES.ktm.toLocaleString("id-ID")} per rider · real off-road bike for riders who already use a clutch`,
       },
       {
         name: "Kids bike 75cc",

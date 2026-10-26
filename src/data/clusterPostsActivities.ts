@@ -89,7 +89,7 @@ Do **not** wear white linen you care about. Do **not** expect a cave-and-falls p
 
 Full table: [quad biking price](/blog/ubud-quad-biking-price-2026) · published “good price” (not cheapest): [good price ATV Ubud](/blog/good-price-atv-quad-bike-ubud-2026) · calculator: [ATV price calculator](/planners/atv-price-calculator).
 
-We do not match **235K–450K** shared SERP stickers that skip lunch. Recommended by **96%** of travelers on the money page — we do not invent a review count or “best muddy ATV in Bali.”
+We do not match **235K–450K** shared SERP stickers that skip lunch. The money page labels it **Most picked**. We do not invent a review score or “best muddy ATV in Bali.”
 
 ## How to book the muddy quad
 
@@ -196,7 +196,7 @@ The gazebo, parked scooters, and rubber boots are the start of the paid morning.
 
 ![Rider on a green ATV splashing through muddy water near Ubud](/images/adventures/atv-mud-river-splash.jpg)
 
-That splash is the product the 750K ticket is for. Recommended by **96%** of travelers on the money page. We do not claim “cheapest ATV in Bali.”
+That splash is the product the 750K ticket is for. The money page labels it **Most picked**. We do not claim “cheapest ATV in Bali.”
 
 ## How to book the good published ATV rate
 
@@ -410,7 +410,7 @@ Full catalog: [things to do near Ubud 2026](/blog/things-to-do-near-ubud-2026). 
 > - **Bali Quad biking** = Sedang ATV · from **750K** · lunch in
 > - **Free quad biking Ubud** does **not** exist here — free = no deposit, self-meet, 24h cancel, [price calculator](/planners/atv-price-calculator)
 > - **ATV tour Ubud waterfall** and **Gorilla Cave + lunch** are other parks — we include lunch; we do **not** sell the cave
-> - **Ubud Quad Biking reviews:** Recommended by **96%** of travelers — no invented review count
+> - **Ubud Quad Biking reviews:** labeled **Most picked** on the money page — no invented review score
 > - **Best ATV ride in Ubud** if you want published IDR and jungle mud, not a cave photo set
 > - Book: [ATV money page](/tours/bali-atv-adventure) · flagship [ATV + rafting](/tours/atv-rafting-combo) from **1.25M**
 
@@ -471,7 +471,7 @@ Compare: [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026) · [mud vs cave 
 
 ## Ubud Quad Biking reviews
 
-Guests book this as a beginner-friendly **Ubud quad bike adventure**. The money page shows **Recommended by 96% of travelers**. We do not invent a TripAdvisor count or paste fake quotes.
+Guests book this as a beginner-friendly **Ubud quad bike adventure**. The money page labels it **Most picked**. We do not invent a TripAdvisor count or paste fake quotes.
 
 What reviewers actually ask us on WhatsApp:
 

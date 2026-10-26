@@ -291,6 +291,10 @@ export const TOURS: Tour[] = [
         alt: "ATV arena briefing base with rubber boots at All New Bali Adventure",
       },
       {
+        url: "/images/adventures/atv-arena-entrance-sedang.jpg",
+        alt: "Road entrance to the All New Bali Adventure ATV arena on Jl. Raya Krasan, Sedang",
+      },
+      {
         url: "/images/adventures/atv-adventure.jpg",
         alt: "Quad bike ATV ride through Bali jungle trails",
       },

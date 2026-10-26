@@ -34,6 +34,7 @@ const TRACK_CARDS = [
 
 const INCLUDED_VALUE = [
   "1.5-hour full jungle track — cave tunnel, river crossings, mud and forest trails",
+  "350cc sport ATVs — power for mud, river crossings and the cave tunnel",
   "New, well-maintained ATVs checked for performance before every ride",
   "Lunch, helmet, boot shoes and insurance (ages 6–65) included in the price",
   "Safety briefing and a trail guide riding with your group",
@@ -74,6 +75,59 @@ export default function AtvWorthItSection() {
             full All New Bali Adventure track — jungle, river crossings, mud and our authentic cave
             tunnel — with lunch, gear, guide and insurance already in.
           </p>
+        </div>
+
+        <div className="grid gap-4 md:grid-cols-2">
+          <article className="overflow-hidden rounded-2xl border border-accent-gold/40 bg-white/5">
+            <div className="relative aspect-[3/4] w-full">
+              <Image
+                src="/images/adventures/atv-350cc-sport-quad.jpg"
+                alt="350cc sport ATV quad lined up at All New Bali Adventure, with a front rack, light bar and knobby tyres"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-[center_35%]"
+              />
+            </div>
+            <div className="p-5">
+              <h3
+                style={{ color: "#ffffff" }}
+                className="font-display text-2xl font-bold uppercase leading-tight text-white"
+              >
+                350cc for adventure and power
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-sand/85">
+                The quad in this price is a 350cc sport ATV. That size is the power for the adventure:
+                it pulls through deep jungle mud and climbs out of the river crossings instead of
+                stalling in the ruts. Same bike on the cave tunnel. Single from IDR 750,000, tandem
+                IDR 1,100,000 — lunch, helmet, boots and insurance stay in the price.
+              </p>
+            </div>
+          </article>
+
+          <article className="overflow-hidden rounded-2xl border border-accent-gold/40 bg-white/5">
+            <div className="relative aspect-[3/4] w-full">
+              <Image
+                src="/images/adventures/atv-briefing-session.jpg"
+                alt="Riders in yellow helmets and rubber boots at the ATV safety briefing in the jungle at All New Bali Adventure"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover object-center"
+              />
+            </div>
+            <div className="p-5">
+              <h3
+                style={{ color: "#ffffff" }}
+                className="font-display text-2xl font-bold uppercase leading-tight text-white"
+              >
+                Briefing session
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-sand/85">
+                Before the track, the guide fits yellow helmets and rubber boots and walks the group
+                through throttle, brake, and how to ride together. No licence and no prior ATV
+                experience. The briefing is on flat ground at All New Bali Adventure, then you ride.
+              </p>
+            </div>
+          </article>
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">

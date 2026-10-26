@@ -228,7 +228,7 @@ const ATV: ActivityGeoCorpus = {
     {
       intent: 'ubud quad biking reviews best atv ride',
       q: 'Is this the best ATV ride in Ubud? What are the reviews?',
-      a: 'Guests who want Sedang mud, lunch, and published IDR book here. The money page shows Recommended by 96% of travelers. We do not invent a review count or claim “best in Bali.” Cave seekers should compare Kuber or Alasan — we do not sell those tickets. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
+      a: 'Guests who want Sedang mud, lunch, and published IDR book here. The money page labels it Most picked. We do not invent a review score or claim “best in Bali.” Cave seekers should compare Kuber or Alasan — we do not sell those tickets. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
     },
     {
       intent: 'muddy quad bike ubud',

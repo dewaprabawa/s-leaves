@@ -295,7 +295,7 @@ const DIRT_KINTAMANI = ticketGeo({
     { option: 'KLX / CRF 150cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.klx150)} / rider`, notes: 'Guided · ~8 hours · lunch + fuel included' },
     { option: 'KLX 230cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.klx230)} / rider`, notes: 'Same day, bigger bike' },
     { option: 'YZ 250cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.yz250)} / rider`, notes: 'Experienced riders' },
-    { option: 'KTM 250 / 300 / 350cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.ktm)} / rider`, notes: 'Experienced riders' },
+    { option: 'KTM 250 / 300 / 350cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.ktm)} / rider`, notes: 'Real off-road adventure bike for riders who already use a clutch' },
     { option: 'Kids bike 75cc', price: `${idr(KINTAMANI_DIRT_BIKE_PRICES.kids75)} / rider`, notes: 'Children' },
     { option: 'Hotel shuttle', price: `${idr(KINTAMANI_DIRT_BIKE_SHUTTLE_IDR)} / booking`, notes: 'Optional · or self-meet in Suter' },
   ],
@@ -309,6 +309,11 @@ const DIRT_KINTAMANI = ticketGeo({
       intent: 'kintamani dirt bike meeting point',
       q: 'Where does the Kintamani dirt bike start?',
       a: `At ${KINTAMANI_DIRT_BIKE_HOST}, ${KINTAMANI_DIRT_BIKE_ADDRESS}. Self-meet there, or add the hotel shuttle for ${idr(KINTAMANI_DIRT_BIKE_SHUTTLE_IDR)} once per booking.`,
+    },
+    {
+      intent: 'ktm 350cc kintamani dirt bike real adventure',
+      q: 'What is the 350cc dirt bike for?',
+      a: `The KTM 250 / 300 / 350cc at ${idr(KINTAMANI_DIRT_BIKE_PRICES.ktm)} per rider is the real off-road adventure bike on the Kintamani day: a full-size geared machine for riders who already use a clutch. The guide runs it on the black-lava dunes and forest, not the easy starter line. The KLX/CRF 150 from ${idr(P.dirtKintamani)} is the first dirt day. The 75cc is the kids bike. A road scooter is a different tour. https://www.sekarbaliactivity.com/tours/dirt-bike-kintamani-black-lava`,
     },
     {
       intent: 'dirt bike vs mount batur jeep',

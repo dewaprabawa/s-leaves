@@ -1,5 +1,13 @@
+import Image from "next/image"
 import { MapPin } from "lucide-react"
 import { ACTIVITY_BASE, CORPORATE_OFFICE } from "@/lib/locations"
+
+const ARENA_ENTRANCE = {
+  src: "/images/adventures/atv-arena-entrance-sedang.jpg",
+  alt: "Road entrance to the All New Bali Adventure ATV arena on Jl. Raya Krasan, Sedang",
+  width: 765,
+  height: 1020,
+}
 
 export const ATV_ARENA_TOUR_SLUGS = new Set([
   "bali-atv-adventure",
@@ -28,6 +36,19 @@ export default function AtvArenaMeetNote({
       role="note"
       aria-label="ATV meet point is All New Bali Adventure, not the office"
     >
+      <figure className={compact ? "mb-2" : "mb-3"}>
+        <Image
+          src={ARENA_ENTRANCE.src}
+          alt={ARENA_ENTRANCE.alt}
+          width={ARENA_ENTRANCE.width}
+          height={ARENA_ENTRANCE.height}
+          className={`w-full rounded-xl object-cover ${compact ? "h-44 object-[center_40%]" : "mx-auto h-auto max-w-md object-center"}`}
+          sizes={compact ? "320px" : "(min-width: 768px) 720px, 100vw"}
+        />
+        <figcaption className={`text-brand-green-light ${compact ? "mt-1 text-[10px]" : "mt-1.5 text-xs"}`}>
+          The ATV arena entrance on Jl. Raya Krasan, Sedang.
+        </figcaption>
+      </figure>
       <p className="text-[10px] font-black uppercase tracking-[0.14em] text-accent-gold-dark">
         Meet here — not the office
       </p>

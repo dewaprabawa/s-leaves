@@ -1745,7 +1745,7 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
       'Directions to All New Bali Adventure in Sedang. Book the ATV from 750K on the tour page — this URL is the pin only.',
     publishedAt: '2026-09-02',
     author: 'Sekar Bali Activity',
-    image: '/images/adventures/atv-adventure.jpg',
+    image: '/images/adventures/atv-arena-entrance-sedang.jpg',
     content: `
 **Where is All New Bali Adventure?** This page is **directions only**. Book the ride on [Bali ATV Adventure](/tours/bali-atv-adventure) — **All New ATV Bali from IDR 750,000**, lunch in. All ATV rides booked through Sekar Bali Activity meet at **All New Bali Adventure** on **Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352**, near Ubud. The arena’s own site is [allnewbaliadventure.com](https://allnewbaliadventure.com/). We book the ride (WhatsApp, published IDR) — we do not operate the park.
 
@@ -1765,6 +1765,8 @@ Most adventures include hotel transfer (see pickup policy), safety gear, English
 All New Bali Adventure is the jungle ATV arena where Sekar Bali Activity runs all quad bike tours. This is not a roadside rental — it is a purpose-built off-road track through jungle paths, muddy stretches, and river crossings with professional guides and on-site gear fitting.
 
 **The arena is not the office.** Guests who open the Sekar Bali Google pin land at Jalan Tunjung Biru, Banjar Kenderan. That is admin only. Self-meet ATV at **Jl. Raya Krasan, Sedang**.
+
+![Road entrance to the All New Bali Adventure ATV arena on Jl. Raya Krasan, Sedang](/images/adventures/atv-arena-entrance-sedang.jpg)
 
 ## What Happens When You Arrive
 

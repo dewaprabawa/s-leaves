@@ -2245,14 +2245,22 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
     basePrice: COOKING_CLASS_PRICE_IDR,
     seoTitle: "Cooking Class Ubud | Tumang · Free Pickup 450K",
     seoDescription:
-      "Tumang Bali Cooking Class near Ubud — AM market tour, 10+ dishes, max 8 guests. Promo IDR 450,000 (was 506,370) + free Ubud pickup. WhatsApp booking.",
+      "Local market visit with Tumang cooking near Ubud. Morning pasar, rice-field walk, 10+ dishes. Promo IDR 450,000 and free Ubud pickup.",
     heroImage: {
-      url: "/images/cooking/satay-class.jpg",
-      alt: "Guests preparing sate skewers during Tumang Bali Cooking Class near Ubud",
-      width: 1200,
-      height: 630,
+      url: "/images/cooking/local-market-visit.jpg",
+      alt: "Local market visit before Tumang Bali Cooking Class, with chili, fruit, and spice stalls in a village pasar",
+      width: 1024,
+      height: 686,
     },
     gallery: [
+      {
+        url: "/images/cooking/rice-field-walk.jpg",
+        alt: "Rice-field walk near Tumang, with a farmer in a conical hat working the green paddy",
+      },
+      {
+        url: "/images/cooking/tumang-feast-table.jpg",
+        alt: "Dishes from the Tumang Bali Cooking Class laid out after the local market visit",
+      },
       {
         url: "/images/cooking/market-guide.jpg",
         alt: "Morning market tour before Tumang Bali Cooking Class",
@@ -2283,8 +2291,18 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
       },
     ],
     shortDescription:
-      "Family-run Tumang Bali Cooking Class near Ubud — morning market tour (AM), rice-field walk, 10+ dishes with Chef Wayan Suryana, max 8 guests, English instruction. Promo IDR 450,000 / person (was IDR 506,370) with complimentary Ubud-area pickup. TripAdvisor Traveler’s Choice 2026.",
-    fullDescription: `**Tumang Bali Cooking Class — authentic village kitchen near Ubud**
+      "Morning local market visit, then a rice-field walk and 10+ dishes with Chef Wayan Suryana at Tumang. Max 8 guests. Promo IDR 450,000 / person (was IDR 506,370) with free Ubud pickup.",
+    fullDescription: `**The morning starts with a local market visit**
+
+On the **morning shared class**, the day opens at a traditional **pasar** near Ubud — chili, citrus, banana, ginger, and the spice stall — then a **rice-field walk**, then the Tumang kitchen. That market visit is included in the promo **IDR ${COOKING_CLASS_PRICE_IDR.toLocaleString("id-ID")}** (was ${COOKING_CLASS_STANDARD_PRICE_IDR.toLocaleString("id-ID")}). It is not a separate ticket. Afternoon classes skip the pasar and keep the rice-field walk and the kitchen. [How the visit works](/blog/ubud-local-market-visit-2026).
+
+![Local market visit before the Tumang cooking class](/images/cooking/local-market-visit.jpg)
+
+![Rice-field walk near Tumang](/images/cooking/rice-field-walk.jpg)
+
+![Dishes cooked after the market visit at Tumang Bali](/images/cooking/tumang-feast-table.jpg)
+
+**Tumang Bali Cooking Class — authentic village kitchen near Ubud**
 
 [Tumang Bali](https://tumangbaliclass.com/) is a family-run cooking school in Tumang village near Ubud for travellers who want hands-on Balinese cuisine — not a hotel demo. Head Chef **Wayan Suryana** teaches Base Genep (bumbu), sate lilit, pepes ikan, sambal matah, lawar, and more. Classes are taught in English. Complimentary pickup in the Ubud area. Max **8 guests** per shared class.
 
@@ -2319,7 +2337,7 @@ TripAdvisor **[Traveler’s Choice 2026](https://www.tripadvisor.com/Attraction_
 Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud) · Compare Ubud classes: [compare guide](https://tumangbaliclass.com/compare-ubud-cooking-classes) · [TripAdvisor reviews](https://www.tripadvisor.com/Attraction_Review-g297701-d26364507-Reviews-Tumang_Bali_Cooking_Class-Ubud_Gianyar_Regency_Bali.html)`,
     highlights: [
       "10+ dishes with Chef Wayan Suryana",
-      "Morning market tour (AM class) + rice-field walk",
+      "Local market visit on the morning class, then a rice-field walk",
       "Max 8 guests · fully hands-on · English",
       "Complimentary Ubud-area hotel pickup",
       "TripAdvisor Traveler’s Choice 2026",
@@ -2408,7 +2426,7 @@ Full operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-c
         id: "faq-cook-2",
         question: "Is there a market tour?",
         answer:
-          "Yes — the morning shared class includes a traditional pasar (market) tour. Afternoon classes focus on the rice-field walk and kitchen.",
+          "Yes. The morning shared class is a local market visit: a traditional pasar, then the rice-field walk, then the kitchen. It is included in the IDR 450,000 promo, not a separate ticket. Afternoon classes keep the rice-field walk and the kitchen and skip the pasar. https://www.sekarbaliactivity.com/blog/ubud-local-market-visit-2026",
       },
       {
         id: "faq-cook-3",

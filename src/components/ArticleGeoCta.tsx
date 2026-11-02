@@ -16,6 +16,11 @@ type ArticleGeoSnippet = {
 }
 
 const COOKING_ARTICLE_SLUGS = new Set([
+  'ubud-local-market-visit-2026',
+  'ubud-pasar-spices-cooking-class-2026',
+  'ubud-market-visit-rice-field-walk-2026',
+  'is-ubud-local-market-visit-worth-it-2026',
+  'ubud-local-market-visit-itinerary-2026',
   'cooking-class-ubud-price-2026-worth-it',
   'vegetarian-vegan-cooking-class-ubud',
   'morning-vs-afternoon-ubud-cooking-class',

@@ -602,6 +602,36 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/balinese-cooking-class',
     secondaryLabel: 'Cooking class only',
   },
+  'ubud-local-market-visit-2026': {
+    headline: 'Book the morning market visit',
+    body: 'Pasar, rice-field walk, and 10+ dishes. Promo IDR 450,000. Free Ubud pickup. No payment to inquire.',
+    primaryHref: '/tours/balinese-cooking-class',
+    primaryLabel: 'Book the morning class',
+  },
+  'ubud-pasar-spices-cooking-class-2026': {
+    headline: 'Cook the spices you just saw',
+    body: 'Morning pasar is included in the IDR 450,000 Tumang class. Max 8. Free Ubud pickup.',
+    primaryHref: '/tours/balinese-cooking-class',
+    primaryLabel: 'Book Tumang',
+  },
+  'ubud-market-visit-rice-field-walk-2026': {
+    headline: 'Book the market and the rice-field walk',
+    body: 'Both stops are in the morning class at IDR 450,000. Afternoon keeps the rice field and skips the pasar.',
+    primaryHref: '/tours/balinese-cooking-class',
+    primaryLabel: 'Book a session',
+  },
+  'is-ubud-local-market-visit-worth-it-2026': {
+    headline: 'Choose morning if you want the pasar',
+    body: 'Same promo IDR 450,000 as the afternoon. The market visit is the difference.',
+    primaryHref: '/tours/balinese-cooking-class',
+    primaryLabel: 'Book the morning class',
+  },
+  'ubud-local-market-visit-itinerary-2026': {
+    headline: 'Reserve the 08:30 market morning',
+    body: 'Pickup, pasar, rice field, then the meal you cooked. Promo IDR 450,000. Free Ubud pickup.',
+    primaryHref: '/tours/balinese-cooking-class',
+    primaryLabel: 'Book the morning class',
+  },
   'cooking-class-ubud-price-2026-worth-it': {
     headline: 'Book Tumang cooking class (promo 450K)',
     body: 'Max 8 guests, complimentary Ubud pickup, 10+ dishes. No payment to inquire.',

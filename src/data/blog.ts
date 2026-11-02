@@ -16,6 +16,7 @@ import { ATV_PREMIUM_CLUSTER_POSTS } from './clusterPostsAtvPremium'
 import { PRIVATE_SHUTTLE_CLUSTER_POSTS } from './clusterPostsPrivateShuttle'
 import { CAVE_ATV_CLUSTER_POSTS } from './clusterPostsCaveAtv'
 import { KECAK_CLUSTER_POSTS } from './clusterPostsKecak'
+import { MARKET_VISIT_CLUSTER_POSTS } from './clusterPostsMarketVisit'
 
 export type BlogPost = {
   slug: string
@@ -30,6 +31,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...MARKET_VISIT_CLUSTER_POSTS,
   ...KECAK_CLUSTER_POSTS,
   ...CAVE_ATV_CLUSTER_POSTS,
   ...PRIVATE_SHUTTLE_CLUSTER_POSTS,

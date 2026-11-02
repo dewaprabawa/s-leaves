@@ -60,7 +60,7 @@ export const COOKING_GEO_FAQS: CookingGeoFaq[] = [
   {
     intent: 'cooking class ubud market tour',
     q: 'Does the Ubud cooking class include a market tour?',
-    a: 'Yes — the morning shared Tumang Bali Cooking Class includes a traditional pasar (market) tour before the kitchen. Afternoon sessions focus on the rice-field walk and hands-on cooking of 10+ dishes. Request vegetarian or vegan menus when you book on WhatsApp.',
+    a: 'Yes. The morning shared Tumang Bali Cooking Class is a local market visit: a traditional pasar, then a rice-field walk, then 10+ dishes in the kitchen. It is included in the Sekar booking rate of IDR 450,000 per person, with free Ubud-area pickup. Afternoon sessions skip the pasar and keep the rice-field walk and the kitchen. https://www.sekarbaliactivity.com/blog/ubud-local-market-visit-2026',
   },
   {
     intent: 'best cooking class in ubud',

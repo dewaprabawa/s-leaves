@@ -4,7 +4,7 @@ import "../globals.css"
 import Link from "next/link"
 import { Compass, Mail, Phone } from "lucide-react"
 import { CurrencyProvider } from "@/context/CurrencyContext"
-import GoogleAnalytics from "@/components/GoogleAnalytics"
+import GoogleAnalytics, { GoogleTagManagerHead } from "@/components/GoogleAnalytics"
 import AhrefsAnalytics from "@/components/AhrefsAnalytics"
 import HeaderNav from "@/components/HeaderNav"
 import CardBrandLogos from "@/components/CardBrandLogos"
@@ -150,6 +150,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
+        <GoogleTagManagerHead />
         <AhrefsAnalytics />
         <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM content summary" />

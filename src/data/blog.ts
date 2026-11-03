@@ -658,7 +658,7 @@ Book: [ATV money page](/tours/bali-atv-adventure) · [tubing money page](/tours/
 
 Book **ATV + tubing** when someone wants water after the mud **without** a paddle team. Kids and first-timers who are nervous about rapids usually prefer the tube. Book **[ATV + rafting](/tours/atv-rafting-combo)** when the group wants splash and a crew. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-We do **not** sell cave ATV, Gorilla Cave, or a waterfall tunnel. The waterfalls people search for sit on the **Ayung raft**, not the Sedang track.
+We do **not** sell cave ATV, Gorilla Cave, or a waterfall tunnel. The Sedang track has a **small waterfall section**; the tall canyon waterfalls people search for sit on the **Ayung raft**.
 
 ## How the day runs
 

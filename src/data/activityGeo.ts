@@ -125,7 +125,7 @@ const ATV: ActivityGeoCorpus = {
   bookLabel: 'Book the ATV ride',
   pairHref: '/tours/atv-rafting-combo',
   pairLabel: 'Add Ayung rafting',
-  extraNote: 'This is a jungle mud / river-crossing sport ATV track with its own authentic cave tunnel — not the Gorilla Cave or Kuber waterfall-cave parks.',
+  extraNote: 'This is a jungle mud / river-crossing sport ATV track with its own authentic cave tunnel and a small waterfall section — not the Gorilla Cave or Kuber waterfall-cave parks.',
   priceRows: [
     { option: 'Single ATV (1 rider)', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 1.5-hour ride' },
     { option: 'Single ATV (2 riders)', price: `${idr(ATV_2)} / person`, notes: 'Same inclusions · group tier' },
@@ -223,7 +223,7 @@ const ATV: ActivityGeoCorpus = {
     {
       intent: 'atv tour ubud waterfall gorilla cave',
       q: 'Do you sell Ubud ATV with Gorilla Cave, waterfall, and lunch?',
-      a: 'Lunch is included. Gorilla Cave (Alasan Adventure) and waterfall-cave ATV (Kuber Premium) are different operators — we do not sell those tickets. Our own Sedang track at All New Bali Adventure has jungle mud, river crossings and its own authentic cave tunnel that you ride out through. For canyon waterfalls, book ATV + Ayung rafting from IDR 1,250,000. https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
+      a: 'Lunch is included. Gorilla Cave (Alasan Adventure) and waterfall-cave ATV (Kuber Premium) are different operators — we do not sell those tickets. Most ATV tracks in Bali do not have a big waterfall. Our own Sedang track at All New Bali Adventure has jungle mud, river crossings, its own authentic cave tunnel, and a small waterfall section — not a big waterfall-cave park. For tall canyon waterfalls, book ATV + Ayung rafting from IDR 1,250,000. https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
     },
     {
       intent: 'ubud quad biking reviews best atv ride',

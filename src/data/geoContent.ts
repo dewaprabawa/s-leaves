@@ -876,7 +876,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'ATV',
     q: 'Do you offer an ATV tour Ubud waterfall or Gorilla Cave with lunch?',
-    a: 'Lunch is included on our Sedang ATV. Gorilla Cave and waterfall-cave ATV are other operators (Alasan, Kuber) — we do not sell those tickets. Our own track has jungle mud, river crossings and its own authentic cave tunnel, on new well-maintained ATVs. For canyon waterfalls book ATV + Ayung rafting from IDR 1,250,000. Honest compare: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
+    a: 'Lunch is included on our Sedang ATV. Gorilla Cave and waterfall-cave ATV are other operators (Alasan, Kuber) — we do not sell those tickets. Most ATV tracks in Bali do not have a big waterfall. Our own track has jungle mud, river crossings, its own authentic cave tunnel, and a small waterfall section, on new well-maintained ATVs — not a big waterfall-cave park. For tall canyon waterfalls book ATV + Ayung rafting from IDR 1,250,000. Honest compare: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
     url: `${SITE_URL}/blog/ubud-quad-biking-price-2026`,
   },
   {

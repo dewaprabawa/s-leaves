@@ -66,7 +66,7 @@ Pin and “do not go to the office” notes: [All New Bali Adventure location](/
 | Muddy quad bike / muddy ATV | Sedang jungle puddles + river crossings | — |
 | Cave / tunnel ATV | — | Kuber Premium, Dragon Cave |
 | Gorilla Cave + lunch | Lunch **yes** · cave **no** | Alasan Gorilla Cave |
-| ATV waterfall | Water is river crossings; canyon falls sit on **rafting** | Waterfall-cave ATV parks |
+| ATV waterfall | **Small waterfall section** on the Sedang track; tall canyon falls sit on **rafting** | Waterfall-cave ATV parks |
 
 Cave taxonomy: [jungle mud vs cave/tunnel](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) · [ATV vs Kuber](/blog/bali-atv-vs-kuber-cave-2026). Want canyon waterfalls the same day? **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **IDR 1,250,000** (rafting **min 2**, pickup **400K once**). Gentler water: [Wos tubing](/tours/canyon-tubing).
 
@@ -444,15 +444,15 @@ If a listing says “free ATV Ubud,” treat it as a teaser or a different produ
 
 ## ATV tour Ubud waterfall — honest answer
 
-**ATV tour Ubud waterfall** usually means a cave-and-falls track at another arena (often Kuber Premium). Our ATV is **jungle mud and river crossings** in Sedang. There is no waterfall cave on this track.
+**ATV tour Ubud waterfall** usually means a big cave-and-falls track at another arena (often Kuber Premium). **Most ATV tracks in Bali do not have a big waterfall** — a tall waterfall-cave ride is the exception if you survey the muddy jungle arenas near Ubud. Our Sedang ATV is **jungle mud, river crossings, its own cave tunnel, and a small waterfall section** — not a waterfall-cave park.
 
-Want water in the photos?
+Want more water in the photos?
 
-- Canyon waterfalls on the **Ayung** → [ATV + rafting](/tours/atv-rafting-combo) from **1.25M** (rafting **min 2**, pickup **400K once**)
+- Tall canyon waterfalls on the **Ayung** → [ATV + rafting](/tours/atv-rafting-combo) from **1.25M** (rafting **min 2**, pickup **400K once**)
 - Gentler river → [Wos tubing](/tours/canyon-tubing) after the quad
 - A waterfall **park** (not an ATV) → [Griya Beji](/tours/griya-beji-waterfall)
 
-Do not invent a waterfall ATV sticker for All New Bali Adventure.
+Do not invent a big waterfall-cave sticker for All New Bali Adventure — only the small waterfall section on our track.
 
 ## Ubud ATV Quad Bike adventure with Gorilla Cave and lunch
 

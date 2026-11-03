@@ -14,14 +14,14 @@ const TRACK_CARDS = [
     alt: "Single ATV crossing a jungle river on the All New Bali Adventure track near Ubud",
     icon: Waves,
     title: "Real river crossings",
-    text: "The course drops into the river and climbs back out — proper water, rocks and mud under the wheels, with a trail guide riding with you the whole way.",
+    text: "The course drops into the river and climbs back out — proper water, rocks and mud under the wheels, with a trail guide riding with you the whole way. A small waterfall section sits on the same track.",
   },
   {
     src: "/images/adventures/atv-jungle-mud-track-riders.jpg",
     alt: "Group of riders on the jungle mud track at All New Bali Adventure near Ubud",
     icon: Leaf,
     title: "Jungle mud track",
-    text: "A full 1.5-hour jungle course: muddy ruts, shaded forest trails and open sections — not a short loop around a field. You get the whole track, every booking.",
+    text: "A full 1.5-hour jungle course: muddy ruts, shaded forest trails, a small waterfall section and open sections — not a short loop around a field. You get the whole track, every booking.",
   },
   {
     src: "/images/adventures/atv-muddy-jungle-trail-pov.jpg",
@@ -33,7 +33,7 @@ const TRACK_CARDS = [
 ] as const
 
 const INCLUDED_VALUE = [
-  "1.5-hour full jungle track — cave tunnel, river crossings, mud and forest trails",
+  "1.5-hour full jungle track — cave tunnel, small waterfall section, river crossings, mud and forest trails",
   "350cc sport ATVs — power for mud, river crossings and the cave tunnel",
   "New, well-maintained ATVs checked for performance before every ride",
   "Lunch, helmet, boot shoes and insurance (ages 6–65) included in the price",
@@ -72,8 +72,10 @@ export default function AtvWorthItSection() {
             Single ATV is IDR 750,000 (725,000 each for 2 riders, 700,000 each for 3+); tandem is
             IDR 1,100,000 for two on one bike. Cheaper listings usually mean a shorter loop, older
             bikes, or fees added later. Here the price covers a new, well-maintained quad and the
-            full All New Bali Adventure track — jungle, river crossings, mud and our authentic cave
-            tunnel — with lunch, gear, guide and insurance already in.
+            full All New Bali Adventure track — jungle, river crossings, mud, a small waterfall
+            section and our authentic cave tunnel — with lunch, gear, guide and insurance already in.
+            Most ATV tracks in Bali do not have a big waterfall; ours keeps a small waterfall section
+            on the course.
           </p>
         </div>
 

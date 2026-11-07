@@ -2,9 +2,11 @@ import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AntiScamSection from '@/components/AntiScamSection'
+import TrustAndSafetySection from '@/components/TrustAndSafetySection'
 import {
   ANTI_SCAM_RULES,
   OFFICIAL_PAYMENT,
+  TRUST_AND_SAFETY,
   TRUST_POLICIES_UPDATED,
   TRUST_POLICY_CARDS,
   TRUST_POLICY_LINKS,
@@ -43,6 +45,21 @@ export default function AntiScamPage() {
         </p>
 
         <div className="space-y-10 text-brand-green-light leading-relaxed">
+          <section>
+            <h2 className="text-2xl font-serif text-brand-green font-bold mb-3">
+              {TRUST_AND_SAFETY.title}
+            </h2>
+            <p className="mb-4">{TRUST_AND_SAFETY.lead}</p>
+            <ul className="list-disc pl-5 space-y-2">
+              {TRUST_AND_SAFETY.points.map((point) => (
+                <li key={point.title}>
+                  <span className="font-semibold text-brand-green">{point.title}.</span>{' '}
+                  {point.text}
+                </li>
+              ))}
+            </ul>
+          </section>
+
           <section>
             <h2 className="text-2xl font-serif text-brand-green font-bold mb-3">
               How to verify it is us

@@ -37,9 +37,10 @@ export default function AntiScamSection({
             Book safe with Sekar Bali Activity
           </h2>
           <p className="text-brand-green-light leading-relaxed">
-            We are a Pejeng / Ubud operator with a Google Business Profile that matches our
-            registered office. Inquire on WhatsApp for free. Payment instructions are sent on
-            official WhatsApp only — we do not publish a bank account.
+            We are an officially registered Indonesian tour and activity business with a Google
+            Business Profile that matches our registered office. Inquire on WhatsApp for free.
+            Payment instructions are sent on official WhatsApp only — we do not publish a bank
+            account.
           </p>
         </div>
 

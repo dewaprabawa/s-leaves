@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, Compass, Users, MapPin } from 'lucide-react';
+import TrustAndSafetySection from '@/components/TrustAndSafetySection';
 
 export const metadata = {
   title: 'About Us',
@@ -69,6 +70,8 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
+
+        <TrustAndSafetySection compact id="about-trust-and-safety" />
 
         {/* Linking to Contact (Fixing the Orphan Page issue) */}
         <div className="bg-ink-soft text-sand p-12 text-center flex flex-col items-center">

@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { FAQSection } from "@/components/FAQSection"
 import AntiScamSection from "@/components/AntiScamSection"
+import TrustAndSafetySection from "@/components/TrustAndSafetySection"
 import GeoAnswerBlock from "@/components/GeoAnswerBlock"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
 import { BOOKABLE_TOURS } from "@/components/BookNowButton"
@@ -1243,6 +1244,7 @@ export default function Home() {
 
       <GeoAnswerBlock />
       <FAQSection />
+      <TrustAndSafetySection />
       <AntiScamSection />
 
       {/* ═══ CONTACT CTA ═══ */}

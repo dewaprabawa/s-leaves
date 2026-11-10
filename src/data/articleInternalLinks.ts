@@ -69,6 +69,7 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Book Pejeng cycling', href: '/tours/ubud-ricefield-cycling-tour' },
   ],
   atv: [
+    { title: 'Book ATV Ubud tickets 2026', href: '/blog/book-atv-ubud-tickets-2026' },
     { title: "What's new in Bali 2026", href: '/blog/whats-new-in-bali-ubud-2026' },
     { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV Ubud price calculator', href: '/planners/atv-price-calculator' },
@@ -333,6 +334,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'bali-atv-for-beginners-first-time-guide': 'atv',
   'how-much-does-atv-cost-bali-ubud-2026': 'atv',
   'ubud-quad-biking-price-2026': 'atv',
+  'book-atv-ubud-tickets-2026': 'atv',
   'ubud-muddy-quad-bike-atv-2026': 'atv',
   'good-price-atv-quad-bike-ubud-2026': 'atv',
   'private-atv-vs-mass-market-ubud': 'atv',

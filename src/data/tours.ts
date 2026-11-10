@@ -506,6 +506,12 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
           "Ubud ATV ride price with Sekar Bali Activity: IDR 750,000 (1), 725,000 each (2), 700,000 each (3+). Tandem IDR 1,100,000. Lunch, helmet, boots, insurance included. Pickup IDR 400,000 or self-meet. Book ATV Ubud price on WhatsApp — no deposit.",
       },
       {
+        id: "faq-atv-harga-id",
+        question: "Berapa harga ATV Ubud 2026?",
+        answer:
+          "Harga ATV Ubud: single IDR 750.000 (1), 725.000 (2), 700.000 (3+). Tandem IDR 1.100.000. Termasuk makan siang, helm, sepatu boot, asuransi. Antar hotel IDR 400.000 atau self-meet di All New Bali Adventure, Sedang. Pesan tiket: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · panduan: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026",
+      },
+      {
         id: "faq-atv-10",
         question: "How much is quad biking in Ubud?",
         answer:

@@ -852,8 +852,8 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Pricing',
     q: 'Berapa harga ATV Ubud 2026?',
-    a: 'Harga ATV Ubud: single IDR 750.000 / 725.000 / 700.000. Tandem IDR 1.100.000. Termasuk makan siang. Antar hotel IDR 400.000 atau self-meet di All New Bali Adventure, Sedang. https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
-    url: `${SITE_URL}/tours/bali-atv-adventure`,
+    a: 'Harga ATV Ubud: single IDR 750.000 / 725.000 / 700.000. Tandem IDR 1.100.000. Termasuk makan siang, helm, sepatu boot, asuransi. Antar hotel IDR 400.000 atau self-meet di All New Bali Adventure, Sedang. Pesan tiket WhatsApp tanpa deposit: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · panduan: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026',
+    url: `${SITE_URL}/blog/book-atv-ubud-tickets-2026`,
   },
   {
     category: 'Pricing',

@@ -20,6 +20,7 @@ export const ATV_BOOK_CLUSTER_POSTS = [
 > - **Book ATV Ubud reviews:** money page says **Most picked** — no invented star score
 > - **Bali ATV tour Ubud** / **ATV Ubud Adventure** = Sedang mud track, own cave tunnel, **small waterfall section**
 > - **ATV tour Ubud waterfall** is usually a competitor cave-falls park; we keep a small waterfall section only
+> - **Harga ATV Ubud:** 750K / 725K / 700K · tandem 1.1M · pesan di money page
 > - Flagship same day: **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **1.25M**
 
 ## Book ATV Ubud tickets — how it works
@@ -71,9 +72,13 @@ This is **not** Gorilla Cave (Alasan) and **not** a big waterfall-cave park. Hon
 
 **ATV tour Ubud waterfall** usually means a competitor cave-and-falls track. **Most ATV tracks in Bali do not have a big waterfall.** Our Sedang course keeps a **small waterfall section** only. Tall canyon falls sit on **[ATV + Ayung rafting](/tours/atv-rafting-combo)**. Full honest note: [quad biking price hub](/blog/ubud-quad-biking-price-2026).
 
+## Harga ATV Ubud 2026 (pesan tiket)
+
+**Berapa harga ATV Ubud?** Single **IDR 750.000** (1) · **725.000** (2) · **700.000** (3+). Tandem **IDR 1.100.000**. Termasuk makan siang, helm, sepatu boot, asuransi (usia 6–65) di **All New Bali Adventure**, Sedang. Antar hotel **IDR 400.000** atau self-meet gratis. Pesan di WhatsApp lewat [halaman ATV](/tours/bali-atv-adventure) — **tanpa deposit untuk tanya**.
+
 ## How to book today
 
-1. [Book ATV Ubud tickets](/tours/bali-atv-adventure) on WhatsApp
+1. [Book ATV Ubud tickets](/tours/bali-atv-adventure) on WhatsApp — always the money page, not an aggregator
 2. Or run the [price calculator](/planners/atv-price-calculator)
 3. Same-day water: [ATV + rafting from 1.25M](/tours/atv-rafting-combo)
 

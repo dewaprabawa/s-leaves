@@ -524,6 +524,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/atv-rafting-combo',
     secondaryLabel: 'Add Ayung rafting',
   },
+  'book-atv-ubud-tickets-2026': {
+    headline: 'Book ATV Ubud tickets on WhatsApp',
+    body: 'Ubud ATV ride price from IDR 750,000 with lunch. ATV Ubud Adventure at All New Bali Adventure. Pickup 400K or self-meet. No deposit.',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'Book ATV Ubud tickets',
+    secondaryHref: '/tours/atv-rafting-combo',
+    secondaryLabel: 'Add Ayung rafting',
+  },
   'ubud-muddy-quad-bike-atv-2026': {
     headline: 'Book the muddy quad bike near Ubud',
     body: 'Jungle puddles and river crossings at All New Bali Adventure from IDR 750,000. Arena boots, lunch, helmet. Pickup 400K or self-meet. No deposit.',

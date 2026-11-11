@@ -1,6 +1,6 @@
 import { CONTACT_WHATSAPP_URL } from '@/lib/contact'
 import { SITE_URL } from '@/lib/seo'
-import { formatIdr } from '@/lib/whatsapp'
+import { appendWhatsAppLeadFooter, formatIdr } from '@/lib/whatsapp'
 
 /** Same catalog “from” as the Full Day Ubud private car — not a HiAce rate. */
 export const GIRLS_TRIP_SLUG = 'bali-private-itinerary'
@@ -116,14 +116,14 @@ export function buildGirlsTripWhatsAppMessage(opts?: {
     `- DPS airport transfer if needed (from ${formatIdr(GIRLS_TRIP_AIRPORT_TRANSFER_IDR)} / MPV)`,
     '',
     '*We will book ourselves:* beach clubs, nightclubs, Cretya, Uluwatu Kecak seats, spa, jewelry class, watersports, restaurant tables. The Sunday and Tuesday Kecak at Pura Dalem Kutuh Kaja is a published Sekar ticket.',
-    '',
-    `*Page:* ${GIRLS_TRIP_PAGE_URL}`,
   ]
   if (opts?.notes) {
     lines.push('', `*Itinerary notes:* ${opts.notes}`)
   } else {
     lines.push('', '*Itinerary notes:* (paste your day-by-day or long-day plan here)')
   }
+  lines.push('')
+  appendWhatsAppLeadFooter(lines, GIRLS_TRIP_PAGE_URL)
   lines.push('', 'Consultation only — no payment to inquire. Please confirm driver + activity totals. Thank you!')
   return lines.join('\n')
 }

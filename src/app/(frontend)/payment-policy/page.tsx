@@ -2,6 +2,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import AntiScamSection from '@/components/AntiScamSection'
+import WhatsAppContactLink from '@/components/WhatsAppContactLink'
 import { OFFICIAL_PAYMENT, TRUST_POLICIES_UPDATED, TRUST_POLICY_LINKS } from '@/data/trustPolicies'
 import { PAY_ON_SPOT_CARD_SURCHARGE_PERCENT } from '@/data/payOnSpot'
 import { SITE_NAME, SITE_URL } from '@/lib/seo'
@@ -119,14 +120,12 @@ export default function PaymentPolicyPage() {
             <ul className="list-disc pl-5 space-y-2">
               <li>
                 WhatsApp:{' '}
-                <a
-                  href={OFFICIAL_PAYMENT.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsAppContactLink
+                  pageUrl="/payment-policy"
                   className="text-brand-green underline underline-offset-2 hover:opacity-80"
                 >
                   {OFFICIAL_PAYMENT.whatsappDisplay}
-                </a>
+                </WhatsAppContactLink>
               </li>
               <li>
                 Email:{' '}

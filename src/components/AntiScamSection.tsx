@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { ShieldCheck } from 'lucide-react'
+import WhatsAppContactLink from '@/components/WhatsAppContactLink'
 import {
   ANTI_SCAM_RULES,
   OFFICIAL_PAYMENT,
@@ -78,14 +79,12 @@ export default function AntiScamSection({
               <div className="flex flex-wrap gap-x-2">
                 <dt className="text-brand-green-light">WhatsApp</dt>
                 <dd>
-                  <a
-                    href={OFFICIAL_PAYMENT.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WhatsAppContactLink
+                    pageUrl="/anti-scam"
                     className="font-semibold underline underline-offset-2 hover:text-accent-gold-dark"
                   >
                     {OFFICIAL_PAYMENT.whatsappDisplay}
-                  </a>
+                  </WhatsAppContactLink>
                 </dd>
               </div>
             </dl>

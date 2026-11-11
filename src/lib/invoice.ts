@@ -1,6 +1,10 @@
 import { CONTACT_EMAIL, CONTACT_PHONE_DISPLAY, CONTACT_WHATSAPP_URL } from '@/lib/contact'
 import { trackGenerateLead } from '@/lib/ga'
-import { formatIdr, resolveWhatsAppPageUrl } from '@/lib/whatsapp'
+import {
+  appendWhatsAppLeadFooter,
+  formatIdr,
+  resolveWhatsAppPageUrl,
+} from '@/lib/whatsapp'
 import { formatPaymentWhatsAppNote } from '@/lib/payment'
 import {
   PAY_ON_SPOT_CARD_SURCHARGE_PERCENT,
@@ -305,8 +309,8 @@ export function buildInvoiceWhatsAppMessage(invoice: InvoiceDraft): string {
       : `*Amount due:* ${formatIdr(due)}`,
   )
   if (invoice.createdBy) lines.push(`*Prepared by:* ${invoice.createdBy}`)
-  const fromPage = resolveWhatsAppPageUrl(invoice.pageUrl)
-  if (fromPage) lines.push(`*From website:* ${fromPage}`)
+  lines.push('')
+  appendWhatsAppLeadFooter(lines, invoice.pageUrl)
   lines.push('')
   lines.push(formatPaymentWhatsAppNote())
   lines.push(`*${INVOICE_PAYMENT_METHODS_LINE}*`)
@@ -370,7 +374,7 @@ export function buildStaffToGuestWhatsAppUrl(
 /** WhatsApp message after guest finishes payment */
 export function buildPaymentConfirmationWhatsAppMessage(invoice: InvoiceDraft): string {
   const paid = amountDueNow(invoice)
-  return [
+  const lines = [
     'Hello Sekar Bali Activity! I have finished payment.',
     '',
     `*Invoice:* ${invoice.invoiceNumber}`,
@@ -379,11 +383,16 @@ export function buildPaymentConfirmationWhatsAppMessage(invoice: InvoiceDraft): 
     `*Date:* ${invoice.date}`,
     `*Amount paid:* ${formatIdr(paid)}`,
     '',
+  ]
+  appendWhatsAppLeadFooter(lines, invoice.pageUrl)
+  lines.push(
+    '',
     formatPaymentWhatsAppNote(),
     '',
     'Please confirm you received the payment. I can send the receipt screenshot next.',
     'Thank you!',
-  ].join('\n')
+  )
+  return lines.join('\n')
 }
 
 /** Encode invoice for unlisted share links (URL-safe base64 JSON) */

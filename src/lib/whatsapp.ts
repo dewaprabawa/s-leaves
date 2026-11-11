@@ -2,6 +2,11 @@ import { CONTACT_WHATSAPP_URL } from '@/lib/contact'
 import { trackGenerateLead } from '@/lib/ga'
 import { SITE_URL } from '@/lib/seo'
 
+/** Fake website promo code — guests must leave it in the prefilled WhatsApp text. */
+export const WHATSAPP_PROMO_CODE = 'SBA-WEB26'
+export const WHATSAPP_PROMO_KEEP_TEXT =
+  'Do not remove this to get promo price'
+
 export type WhatsAppBookingPayload = {
   guestName: string
   guestAge?: number | string
@@ -39,10 +44,22 @@ export function resolveWhatsAppPageUrl(pageUrl?: string | null): string | undefi
   return getBrowserPageUrl()
 }
 
-function appendFromWebsiteLine(lines: string[], pageUrl?: string | null) {
+/**
+ * Page URL + fake promo code + keep-text — append to every guest WhatsApp prefills.
+ * Omit pageUrl only when the message already listed the page (still adds promo lines).
+ */
+export function appendWhatsAppLeadFooter(
+  lines: string[],
+  pageUrl?: string | null,
+  options?: { includePageUrl?: boolean },
+) {
+  const includePageUrl = options?.includePageUrl !== false
   const url = resolveWhatsAppPageUrl(pageUrl)
-  if (!url) return
-  lines.push(`*From website:* ${url}`)
+  if (includePageUrl && url) {
+    lines.push(`*From website:* ${url}`)
+  }
+  lines.push(`*Promo code:* ${WHATSAPP_PROMO_CODE}`)
+  lines.push(WHATSAPP_PROMO_KEEP_TEXT)
 }
 
 /** Build a clear WhatsApp booking message with guest + trip details */
@@ -93,7 +110,8 @@ export function buildWhatsAppBookingMessage(payload: WhatsAppBookingPayload) {
     lines.push(`*Notes:* ${payload.notes}`)
   }
 
-  appendFromWebsiteLine(lines, payload.pageUrl)
+  lines.push('')
+  appendWhatsAppLeadFooter(lines, payload.pageUrl)
 
   lines.push('', 'Please confirm availability. Thank you!')
   return lines.join('\n')
@@ -149,9 +167,6 @@ export function buildWhatsAppConsultationMessage(
     lines.push('I would like help choosing activities.')
   } else if (items.length === 1) {
     lines.push(`*Activity:* ${items[0].title}`)
-    if (items[0].pageUrl) {
-      lines.push(`*Page:* ${items[0].pageUrl}`)
-    }
   } else {
     lines.push(`I am interested in these ${items.length} activities:`)
     items.forEach((item, index) => {
@@ -162,14 +177,8 @@ export function buildWhatsAppConsultationMessage(
     })
   }
 
-  // Always attribute the chat to a site URL (one phone number → many pages).
-  if (fromPage && (items.length !== 1 || items[0]?.pageUrl !== fromPage)) {
-    lines.push(`*From website:* ${fromPage}`)
-  } else if (items.length === 0) {
-    appendFromWebsiteLine(lines, fromPage)
-  } else if (items.length === 1 && !items[0].pageUrl) {
-    appendFromWebsiteLine(lines, fromPage)
-  }
+  lines.push('')
+  appendWhatsAppLeadFooter(lines, fromPage ?? items[0]?.pageUrl ?? SITE_URL)
 
   lines.push(
     '',
@@ -192,7 +201,7 @@ export function buildWhatsAppContactMessage(pageUrl?: string) {
     'Hello Sekar Bali Activity! I found you on the website and would like to chat.',
     '',
   ]
-  appendFromWebsiteLine(lines, pageUrl ?? SITE_URL)
+  appendWhatsAppLeadFooter(lines, pageUrl ?? SITE_URL)
   lines.push('', 'Thank you!')
   return lines.join('\n')
 }

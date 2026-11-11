@@ -1,3 +1,5 @@
+import { SITE_URL } from '@/lib/seo'
+import { buildWhatsAppContactUrl } from '@/lib/whatsapp'
 import { COOKING_JEEP_CLUSTER_POSTS } from './clusterPostsCookingJeep'
 import { ACTIVITY_CLUSTER_POSTS } from './clusterPostsActivities'
 import { JEEP_COOKING_CYCLING_CLUSTER_POSTS } from './clusterPostsJeepCookingCycling'
@@ -1291,7 +1293,7 @@ After cooking, the group sits family-style and eats what everyone prepared — c
 
 Price verdict: [Is a cooking class in Ubud worth it?](/blog/cooking-class-ubud-price-2026-worth-it). Pair with cycling the same day: [Cycling + Tumang cooking itinerary](/blog/cycling-cooking-class-ubud-full-day-itinerary). Operator site: [tumangbaliclass.com](https://tumangbaliclass.com/balinese-cooking-class-ubud).
 
-**Ready to cook?** [Book Tumang Bali Cooking Class](/tours/balinese-cooking-class) or message [WhatsApp](https://wa.me/6281775723663).
+**Ready to cook?** [Book Tumang Bali Cooking Class](/tours/balinese-cooking-class) or message [WhatsApp](${buildWhatsAppContactUrl(`${SITE_URL}/blog/inside-balinese-cooking-class-pejeng`)}).
 `
   },
   {

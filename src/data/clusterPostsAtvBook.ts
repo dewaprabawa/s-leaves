@@ -59,7 +59,7 @@ Pay later by the instructions we send on official WhatsApp, or pay on the spot a
 | Hotel pickup | Optional | **400,000** once | Or free self-meet |
 | ATV + rafting | Same day | from **1,250,000** | **10% mix** · rafting **min 2** |
 
-Full ladder: [ATV cost 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) · good published rate: [good price ATV](/blog/good-price-atv-quad-bike-ubud-2026) · calculator: [ATV price calculator](/planners/atv-price-calculator) · arena brand: [All New Bali Adventure price](/blog/all-new-bali-adventure-price-2026).
+Full ladder: [ATV cost 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) · good published rate: [good price ATV](/blog/good-price-atv-quad-bike-ubud-2026) · calculator: [ATV price calculator](/planners/atv-price-calculator) · arena brand: [All New Bali Adventure price](/blog/all-new-bali-adventure-price-2026). Couple math: [tandem 1.1M vs two singles 1.45M](/blog/tandem-atv-ubud-price).
 
 ## Book ATV Ubud reviews
 

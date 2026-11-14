@@ -493,7 +493,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-9",
         question: "Should I book a single ATV or a tandem?",
         answer:
-          "Book a single ATV (from IDR 750,000) if each guest wants their own bike. Book tandem (IDR 1,100,000 for two sharing one bike) if you are a couple or one rider prefers not to drive. Both include lunch, gear, and insurance — say 1 or 2 riders on WhatsApp and we will quote the right option.",
+          "Tandem ATV Ubud is IDR 1,100,000 for two on one bike. Two singles at the couple tier are IDR 1,450,000 — tandem saves IDR 350,000 if one guest will not drive. Book two singles if both want the throttle. Single alone starts at IDR 750,000. Say tandem or two singles in the first WhatsApp line. Full math: https://www.sekarbaliactivity.com/blog/tandem-atv-ubud-price",
       },
       {
         id: "faq-atv-book-tickets",
@@ -762,9 +762,9 @@ Different mix of bikes? Book singles and tandems separately on the [ATV ride pag
     pickup: "Private shuttle IDR 400,000 Ubud / 650,000 south once, or free self-meet",
     duration: "5–7 Hours",
     basePrice: 1250000,
-    seoTitle: "ATV + Rafting Ubud | From 1.25M",
+    seoTitle: "ATV + Rafting Ubud From 1.25M | Why Not 850K",
     seoDescription:
-      "Book ATV + Ayung rafting near Ubud. ATV from 750K + rafting 500K (450K for 2+). 10% mix at checkout. Pickup 400K or self-meet. WhatsApp.",
+      "Sedang ATV + Ayung rafting from 1.25M (750K + 500K floors). Not an unnamed 850K sticker. 10% mix. Pickup 400K or self-meet. WhatsApp — no deposit.",
     heroImage: {
       url: "/images/adventures/atv-mud-river-splash.jpg",
       alt: "Muddy ATV near Ubud paired with Ayung River whitewater rafting",
@@ -801,7 +801,10 @@ Different mix of bikes? Book singles and tandems separately on the [ATV ride pag
 
 **From-price on this page is IDR 1,250,000** — one ATV list + one rafting list. Rafting needs **two guests**. A typical couple on two singles is **IDR 2,350,000** before mix (**2,115,000** after 10%). One tandem + two rafting seats is **IDR 2,000,000** before mix (**1,800,000** after 10%). WhatsApp confirms the mix total. We do not invent a third “secret” bundle sticker.
 
-Book the checkout mix: [ATV + rafting](/book?combo=combo-atv-rafting). Single-ATV price story: [ATV + rafting Ubud 2026](/blog/atv-rafting-combo-ubud-2026). Couple share: [tandem ATV + rafting](/blog/atv-tandem-rafting-ubud-2026). Gentler water: [ATV + Wos tubing](/blog/atv-river-tubing-wos-river-bali). Sit-in hour instead of the quad: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026).
+### Why 1.25M — not an 850K combo sticker
+Cheap **ATV + rafting** ads often sit around **IDR 850,000–1,100,000**. Those packages usually hide a shorter ATV loop, skip lunch on one ticket, or bury pickup inside a “free transfer” discount. Our **1.25M** from-price is the published **Sedang ATV 750K + Ayung rafting 500K** floor — named arena, Class II–III paddle, lunch on both tickets, and a clear **400K** pickup line (or free self-meet). Full compare: [ATV + rafting Ubud 2026](/blog/atv-rafting-combo-ubud-2026).
+
+Book the checkout mix: [ATV + rafting](/book?combo=combo-atv-rafting). Couple share: [tandem ATV + rafting](/blog/atv-tandem-rafting-ubud-2026). Gentler water: [ATV + Wos tubing](/blog/atv-river-tubing-wos-river-bali). Sit-in hour instead of the quad: [ATV vs UTV](/blog/bali-atv-vs-utv-buggy-2026).
 
 ### How the day runs
 1. **ATV first** — briefing, 1.5-hour mud ride, lunch at Sedang.
@@ -871,6 +874,12 @@ The [Land & River premium package](/tours/atv-premium-package-bali) bundles a si
         question: "How much is ATV + rafting near Ubud?",
         answer:
           "Published floors are ATV from IDR 750,000 and Ayung rafting IDR 500,000 (IDR 450,000 for 2+, minimum 2). The from-price on this page is IDR 1,250,000 for one ATV list plus one rafting list. Booking both as a same-day mix takes 10% off the activity subtotal at checkout. Hotel pickup is IDR 400,000 once or self-meet. WhatsApp — no payment to inquire.",
+      },
+      {
+        id: "faq-atv-raft-850k",
+        question: "Why is your ATV + rafting from 1.25M when others advertise 850K?",
+        answer:
+          "We publish the Sedang ATV floor (from IDR 750,000) plus Ayung Class II–III rafting (IDR 500,000 list) as separate lines — from IDR 1,250,000 for one seat of each, then 10% off when you book both the same day. Cheaper 850K–1.1M stickers usually mean a shorter or unnamed ATV loop, lunch missing on one ticket, or pickup hidden in the discount. We will not invent a fake 999K package. Full compare: https://www.sekarbaliactivity.com/blog/atv-rafting-combo-ubud-2026",
       },
       {
         id: "faq-atv-raft-2",

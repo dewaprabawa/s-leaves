@@ -4,10 +4,10 @@ export const RAFTING_TUBING_CLUSTER_POSTS = [
   {
     slug: 'atv-rafting-combo-ubud-2026',
     title: 'ATV Single + Rafting Ubud 2026: Flagship Mud Then Ayung',
-    seoTitle: 'ATV Single + Rafting Ubud | From 1.25M',
+    seoTitle: 'ATV + Rafting Ubud From 1.25M | Why Not 850K',
     excerpt:
-      'Book single ATV + Ayung rafting near Ubud. From 1.25M at floors. Couple two singles 2.35M before 10% mix. Pickup 400K or self-meet. WhatsApp.',
-    publishedAt: '2026-09-30',
+      'ATV + Ayung rafting from 1.25M at published floors — Sedang ATV + Class II–III, not an unnamed 850K sticker. Couple two singles 2.35M before 10%. WhatsApp.',
+    publishedAt: '2026-11-14',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/rafting.jpg',
     content: `
@@ -18,9 +18,24 @@ export const RAFTING_TUBING_CLUSTER_POSTS = [
 > - Single ATV **750,000** (725,000 for 2 · 700,000 for 3+) · rafting **500,000** / **450,000** for 2+
 > - From-price **1,250,000** is **one seat of each** — not a couple sticker
 > - Couple on two singles: **2,350,000** before mix · **2,115,000** after 10%
+> - **Why not 850K stickers?** Those usually skip a named Sedang arena, lunch on both tickets, or clear pickup math — we publish floors, not a fake 999K package
 > - Share one bike instead? [Tandem ATV + rafting](/blog/atv-tandem-rafting-ubud-2026) is **2,000,000** before mix
 > - Pickup **400,000** once · not free Ubud pickup
 > - Gentler water: [ATV + Wos tubing](/blog/atv-river-tubing-wos-river-bali)
+
+## Why 1.25M — not an 850K combo sticker
+
+You will see **ATV + rafting** ads from about **IDR 850,000–1,100,000**. We do **not** match those stickers. Our **from 1,250,000** is the honest floor of **published ATV 750,000 + rafting 500,000** at named venues:
+
+| What to check | Sekar (this combo) | Typical cheap sticker |
+| --- | --- | --- |
+| ATV arena | **All New Bali Adventure, Sedang** — named pin | Often unnamed or a short loop |
+| ATV ticket | **750K** ladder · lunch · 350cc · 1.5h · insurance | May exclude lunch or use older bikes |
+| Rafting | **Ayung Class II–III** · lunch · min 2 | Sometimes a gentler river sold as “rafting” |
+| Pickup | **400,000** once or free self-meet — two clear lines | “Free pickup” often baked into a higher rack then discounted |
+| Same-day mix | **10% off** both activity lines at checkout | One opaque package number |
+
+We will **not** print a fake “package 999K” to beat Klook or Adeeva. If you want Sedang mud then real Ayung paddle with two lunches on the tickets, the math starts at **1.25M** for one seat of each. Couple day: two singles **2.35M** before mix, or [tandem + rafting](/blog/atv-tandem-rafting-ubud-2026) **2.0M** before mix.
 
 ## What you pay (single ATV + rafting)
 
@@ -31,7 +46,7 @@ export const RAFTING_TUBING_CLUSTER_POSTS = [
 | Same-day mix | **10%** off the two activity lines |
 | Pickup | **400,000** once · or self-meet |
 
-**From-price 1,250,000** = one 750,000 ATV + one 500,000 rafting seat. Rafting still needs **two guests**. A typical couple on **two singles** is **1,450,000 + 900,000 = 2,350,000** before mix, **2,115,000** after 10%. Three singles at the 700,000 tier plus three rafting seats is **2,100,000 + 1,350,000 = 3,450,000** before mix. We will not print a fake “package 999K” to beat a Klook sticker.
+**From-price 1,250,000** = one 750,000 ATV + one 500,000 rafting seat. Rafting still needs **two guests**. A typical couple on **two singles** is **1,450,000 + 900,000 = 2,350,000** before mix, **2,115,000** after 10%. Three singles at the 700,000 tier plus three rafting seats is **2,100,000 + 1,350,000 = 3,450,000** before mix.
 
 Sharing one bike? That is a different quote: [tandem ATV + rafting](/blog/atv-tandem-rafting-ubud-2026).
 

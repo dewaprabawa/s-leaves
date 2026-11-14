@@ -54,23 +54,24 @@ export const BLOG_POSTS: BlogPost[] = [
   ...ACTIVITY_CLUSTER_POSTS,
   {
     slug: 'tandem-atv-ubud-price',
-    title: 'Single vs Tandem ATV Near Ubud: 2026 Price and Who Should Share',
-    seoTitle: 'Tandem ATV Price Ubud | 1.1M · 750K',
+    title: 'Tandem ATV Ubud 2026: 1.1M for Two vs Two Singles 1.45M',
+    seoTitle: 'Tandem ATV Ubud 1.1M · Two Singles 1.45M',
     excerpt:
-      'Tandem ATV Ubud is IDR 1,100,000 for two on one bike; single from IDR 750,000. Who should share, pickup IDR 400K vs self-meet, WhatsApp booking.',
-    publishedAt: '2026-09-21',
+      'Tandem ATV Ubud is IDR 1,100,000 for two on one bike. Two singles are IDR 1,450,000. Save 350K if one guest will not drive. Pickup 400K or self-meet. WhatsApp.',
+    publishedAt: '2026-11-14',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**How much is a tandem ATV near Ubud, and should you share?** At Sekar Bali Activity a **Tandem ATV is IDR 1,100,000 for two people on one bike**. A **Single ATV starts at IDR 750,000** per rider (IDR 725,000 each for two singles · IDR 700,000 each for 3+). We ride at **All New Bali Adventure** in Sedang, Abiansemal — not a roadside rental. **Hotel pickup is IDR 400,000** or you self-meet at the arena for free. The ride is **1.5 hours** (single or tandem), with lunch, helmet, boot shoes, and insurance for ages 6–65. Book on WhatsApp — **no payment to inquire**.
+**Tandem ATV Ubud price:** **IDR 1,100,000** for two people on one bike. **Two singles** at the couple tier are **IDR 1,450,000** (2 × 725,000). Tandem saves **IDR 350,000** when one guest is happy not to drive. A **Single ATV** alone starts at **IDR 750,000** (725,000 each for two · 700,000 each for 3+). We ride at **All New Bali Adventure** in Sedang — lunch, helmet, boots, insurance ages 6–65, **1.5-hour** ride. Pickup **IDR 400,000** or free self-meet. On WhatsApp say **tandem** or **two singles** in the first line. **No payment to inquire.**
 
 > **Key Takeaways**
-> - **Tandem:** IDR **1,100,000** per bike (2 guests share) · more bikes: **1,060,000** / **1,030,000**
-> - **Single:** IDR **750,000** (1) · **725,000** (2) · **700,000** (3+) · child single **700,000**
-> - Two singles cost **IDR 1,450,000** — tandem is cheaper if one guest is happy not to drive
-> - Venue: **All New Bali Adventure**, Jl. Raya Krasan, Sedang — jungle mud + river crossings
-> - Pickup **IDR 400,000** or free self-meet · ride **1.5 hours**
-> - WhatsApp **1 or 2 riders + hotel** — we quote single vs tandem. No deposit to ask
+> - **Tandem ATV Ubud:** **1,100,000** / bike (2 guests) · more bikes: **1,060,000** / **1,030,000**
+> - **Two singles:** **1,450,000** — pick this if both want the throttle
+> - **Math:** tandem is **350,000 cheaper** than two singles when one guest will not drive
+> - Single alone: **750,000** (1) · **725,000** (2) · **700,000** (3+)
+> - Venue: **All New Bali Adventure**, Sedang — jungle mud + river crossings
+> - Pickup **400,000** or free self-meet · WhatsApp — no deposit to ask
+> - Bahasa harga: [harga ATV Ubud 2026](/blog/harga-atv-ubud-2026) · book hub: [Book ATV Ubud tickets](/blog/book-atv-ubud-tickets-2026)
 
 ## Quick answer: single or tandem?
 
@@ -83,7 +84,7 @@ export const BLOG_POSTS: BlogPost[] = [
 | Pickup | IDR 400,000 or self-meet | Same rule |
 | Ride time | 1.5 hours | 1.5 hours |
 
-Book the money page: [Bali ATV Adventure near Ubud](/tours/bali-atv-adventure). Full IDR table: [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026).
+Book the money page: [Bali ATV Adventure near Ubud](/tours/bali-atv-adventure). Full IDR table: [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026). Arena brand: [All New Bali Adventure price](/blog/all-new-bali-adventure-price-2026).
 
 ## What you actually pay (verified 2026 tiers)
 

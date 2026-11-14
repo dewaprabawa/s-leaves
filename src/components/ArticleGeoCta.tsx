@@ -65,6 +65,8 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'how-much-does-atv-cost-bali-ubud-2026': 'bali-atv-adventure',
   'ubud-quad-biking-price-2026': 'bali-atv-adventure',
   'book-atv-ubud-tickets-2026': 'bali-atv-adventure',
+  'harga-atv-ubud-2026': 'bali-atv-adventure',
+  'all-new-bali-adventure-price-2026': 'bali-atv-adventure',
   'ubud-muddy-quad-bike-atv-2026': 'bali-atv-adventure',
   'good-price-atv-quad-bike-ubud-2026': 'bali-atv-adventure',
   'private-atv-vs-mass-market-ubud': 'bali-atv-adventure',

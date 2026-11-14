@@ -304,7 +304,7 @@ export const TOURS: Tour[] = [
       "Book ATV Ubud tickets for a muddy sport ATV at All New Bali Adventure — jungle mud, river crossings, small waterfall section, and cave tunnel. Lunch, helmet, boots & insurance. From IDR 750K. WhatsApp — no deposit.",
     fullDescription: `**Looking for a Bali Quad Bike / ATV Ride Near Ubud?**
 
-**Book ATV Ubud tickets** on WhatsApp — no payment to inquire. **Ubud ATV ride price** starts at **IDR 750,000**. This **Bali ATV tour Ubud** / **ATV Ubud Adventure** is a private muddy sport ATV ride through jungle mud, river crossings, a small waterfall section, and our own cave tunnel at All New Bali Adventure. Every ride is designed for sensation, excitement, and joy — whether you go solo (single ATV) or share a tandem ATV with a partner. Beginner-friendly with a full safety briefing. Booking hub: [Book ATV Ubud tickets 2026](/blog/book-atv-ubud-tickets-2026).
+**Book ATV Ubud tickets** on WhatsApp — no payment to inquire. **Ubud ATV ride price** starts at **IDR 750,000**. This **Bali ATV tour Ubud** / **ATV Ubud Adventure** is a private muddy sport ATV ride through jungle mud, river crossings, a small waterfall section, and our own cave tunnel at All New Bali Adventure. Every ride is designed for sensation, excitement, and joy — whether you go solo (single ATV) or share a tandem ATV with a partner. Beginner-friendly with a full safety briefing. Booking hub: [Book ATV Ubud tickets 2026](/blog/book-atv-ubud-tickets-2026). Bahasa harga: [Harga ATV Ubud 2026](/blog/harga-atv-ubud-2026). Arena price: [All New Bali Adventure price](/blog/all-new-bali-adventure-price-2026).
 
 ### ATV Arena Location: All New Bali Adventure — not the office
 All ATV rides take place at **All New Bali Adventure** on **Jl. Raya Krasan, Sedang, Kec. Abiansemal** — the jungle arena near Ubud. This is where you meet your guide, get fitted with boot shoes and a helmet, and start the safety briefing.
@@ -339,6 +339,8 @@ Want even more adventure? The flagship same-day is **[ATV + Ayung rafting](/tour
 - [Muddy quad bike Ubud](/blog/ubud-muddy-quad-bike-atv-2026) — jungle puddles, river crossings, boots, photos
 - [Good price ATV Ubud](/blog/good-price-atv-quad-bike-ubud-2026) — published 750K / 725K / 700K, not a 235K sticker
 - [Book ATV Ubud tickets 2026](/blog/book-atv-ubud-tickets-2026) — tickets, ride price, reviews, waterfall honesty
+- [Harga ATV Ubud 2026](/blog/harga-atv-ubud-2026) — Bahasa: 750K / 725K / 700K · tandem 1.1M
+- [All New Bali Adventure price 2026](/blog/all-new-bali-adventure-price-2026) — official Sekar arena ticket vs 450K/USD listings
 - [Ubud quad biking price 2026](/blog/ubud-quad-biking-price-2026) — price, reviews, waterfall, Gorilla Cave (honest)
 - [ATV cost near Ubud 2026](/blog/how-much-does-atv-cost-bali-ubud-2026) — single IDR 750K vs tandem IDR 1.1M
 - [Single vs tandem ATV](/blog/tandem-atv-ubud-price) — who should share, two-single vs one-bike math
@@ -509,7 +511,7 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
         id: "faq-atv-harga-id",
         question: "Berapa harga ATV Ubud 2026?",
         answer:
-          "Harga ATV Ubud: single IDR 750.000 (1), 725.000 (2), 700.000 (3+). Tandem IDR 1.100.000. Termasuk makan siang, helm, sepatu boot, asuransi. Antar hotel IDR 400.000 atau self-meet di All New Bali Adventure, Sedang. Pesan tiket: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · panduan: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026",
+          "Harga ATV Ubud: single IDR 750.000 (1), 725.000 (2), 700.000 (3+). Tandem IDR 1.100.000. Termasuk makan siang, helm, sepatu boot, asuransi. Antar hotel IDR 400.000 atau self-meet di All New Bali Adventure, Sedang. Pesan tiket: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · panduan Bahasa: https://www.sekarbaliactivity.com/blog/harga-atv-ubud-2026 · hub EN: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026",
       },
       {
         id: "faq-atv-10",

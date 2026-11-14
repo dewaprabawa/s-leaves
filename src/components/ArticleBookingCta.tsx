@@ -532,6 +532,22 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/atv-rafting-combo',
     secondaryLabel: 'Add Ayung rafting',
   },
+  'harga-atv-ubud-2026': {
+    headline: 'Pesan ATV Ubud di WhatsApp',
+    body: 'Harga single 750K / 725K / 700K · tandem 1.1 juta. Makan siang termasuk di All New Bali Adventure. Antar 400K atau self-meet. Tanpa deposit.',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'Pesan ATV sekarang',
+    secondaryHref: '/tours/atv-rafting-combo',
+    secondaryLabel: 'ATV + rafting Ayung',
+  },
+  'all-new-bali-adventure-price-2026': {
+    headline: 'Book All New Bali Adventure on WhatsApp',
+    body: 'Official Sekar ticket: 750K / 725K / 700K · tandem 1.1M. 350cc, lunch, Sedang track. Pickup 400K or self-meet. No deposit.',
+    primaryHref: '/tours/bali-atv-adventure',
+    primaryLabel: 'Book this arena ticket',
+    secondaryHref: '/blog/harga-atv-ubud-2026',
+    secondaryLabel: 'Harga ATV Ubud (Bahasa)',
+  },
   'ubud-muddy-quad-bike-atv-2026': {
     headline: 'Book the muddy quad bike near Ubud',
     body: 'Jungle puddles and river crossings at All New Bali Adventure from IDR 750,000. Arena boots, lunch, helmet. Pickup 400K or self-meet. No deposit.',

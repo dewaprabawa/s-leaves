@@ -56,6 +56,8 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Book ATV + tubing', href: '/book?combo=combo-atv-tubing' },
   { label: 'ATV ride / quad bike Ubud', href: '/tours/bali-atv-adventure' },
   { label: 'Book ATV Ubud tickets', href: '/blog/book-atv-ubud-tickets-2026' },
+  { label: 'Harga ATV Ubud 2026', href: '/blog/harga-atv-ubud-2026' },
+  { label: 'All New Bali Adventure price', href: '/blog/all-new-bali-adventure-price-2026' },
   { label: 'ATV prices near Ubud (2026)', href: '/blog/how-much-does-atv-cost-bali-ubud-2026' },
   { label: 'Ubud quad biking price 2026', href: '/blog/ubud-quad-biking-price-2026' },
   { label: 'Muddy quad bike Ubud', href: '/blog/ubud-muddy-quad-bike-atv-2026' },

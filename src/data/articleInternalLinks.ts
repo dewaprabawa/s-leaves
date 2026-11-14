@@ -70,6 +70,8 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
   ],
   atv: [
     { title: 'Book ATV Ubud tickets 2026', href: '/blog/book-atv-ubud-tickets-2026' },
+    { title: 'Harga ATV Ubud 2026', href: '/blog/harga-atv-ubud-2026' },
+    { title: 'All New Bali Adventure price', href: '/blog/all-new-bali-adventure-price-2026' },
     { title: "What's new in Bali 2026", href: '/blog/whats-new-in-bali-ubud-2026' },
     { title: 'Best price ATV rafting cycling scooter', href: '/blog/best-price-atv-rafting-cycling-scooter-ubud-2026' },
     { title: 'ATV Ubud price calculator', href: '/planners/atv-price-calculator' },
@@ -335,6 +337,8 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'how-much-does-atv-cost-bali-ubud-2026': 'atv',
   'ubud-quad-biking-price-2026': 'atv',
   'book-atv-ubud-tickets-2026': 'atv',
+  'harga-atv-ubud-2026': 'atv',
+  'all-new-bali-adventure-price-2026': 'atv',
   'ubud-muddy-quad-bike-atv-2026': 'atv',
   'good-price-atv-quad-bike-ubud-2026': 'atv',
   'private-atv-vs-mass-market-ubud': 'atv',

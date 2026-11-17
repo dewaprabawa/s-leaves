@@ -1570,7 +1570,7 @@ Want a full cultural day? Pair this ride with an afternoon [Tumang Bali Cooking 
     author: 'Sekar Bali Activity',
     image: '/images/adventures/rafting.jpg',
     content: `
-**How much does whitewater rafting near Ubud cost?** Sekar Bali Activity offers whitewater rafting at **IDR 500,000 per person**, or **IDR 450,000** when 2 or more guests book (minimum 2), including safety equipment, professional guides, and a post-ride lunch. **Hotel pickup is IDR 400,000** or self-meet — it is not the free Ubud rule on cycling and cooking. Full 2026 IDR table: [Ayung rafting Ubud price](/blog/rafting-ubud-price-2026).
+**How much does whitewater rafting near Ubud cost?** Sekar Bali Activity offers whitewater rafting at **IDR 500,000 per person**, or **IDR 450,000** when 2 or more guests book (minimum 2), including safety equipment, professional guides, and a post-ride lunch. **Hotel pickup is IDR 400,000 from Ubud or IDR 650,000 from the south coast**, or self-meet — it is not the free Ubud rule on cycling and cooking. Full 2026 IDR table: [Ayung rafting Ubud price](/blog/rafting-ubud-price-2026) · Bahasa: [harga rafting Ubud 2026](/blog/harga-rafting-ubud-2026).
 
 > **Key Takeaways**
 > - **IDR 500,000** · **IDR 450,000** for 2+ (min 2) on Class II–III rapids

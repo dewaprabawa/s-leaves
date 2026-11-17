@@ -148,7 +148,12 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Ayung rafting Ubud price 2026',
       href: '/blog/rafting-ubud-price-2026',
-      blurb: '500K · 450K for 2+ · lunch in · pickup extra.',
+      blurb: '500K · 450K for 2+ · lunch in · pickup 400K / 650K.',
+    },
+    {
+      title: 'Harga rafting Ubud 2026',
+      href: '/blog/harga-rafting-ubud-2026',
+      blurb: 'Bahasa: 450K untuk 2+ · antar Ubud 400K / selatan 650K.',
     },
     {
       title: 'Rafting vs tubing vs ATV',
@@ -210,7 +215,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'ATV from Seminyak, Canggu & Kuta',
       href: '/blog/atv-rafting-from-seminyak-canggu-kuta-2026',
-      blurb: 'Flat 400K pickup per booking — no area surcharge.',
+      blurb: 'South-coast shuttle 650K once · Ubud 400K · totals for 1 rider, tandem, couple.',
     },
     {
       title: 'Bali ATV with kids (ages 6+)',
@@ -357,7 +362,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Ayung rafting Ubud price 2026',
       href: '/blog/rafting-ubud-price-2026',
-      blurb: '500K · 450K for 2+ · lunch in · pickup extra.',
+      blurb: '500K · 450K for 2+ · lunch in · pickup 400K / 650K.',
     },
     {
       title: 'Things to do near Ubud 2026',

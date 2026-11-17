@@ -150,23 +150,88 @@ Beginners are fine. No ATV licence. Rafting wants basic swimming confidence. Ins
 `,
   },
   {
+    slug: 'harga-rafting-ubud-2026',
+    title: 'Harga Rafting Ubud 2026: Ayung 450K (2+) · Makan Siang Termasuk',
+    seoTitle: 'Harga Rafting Ubud 2026 | 450K untuk 2+',
+    excerpt:
+      'Berapa harga rafting Ayung Ubud 2026? IDR 500.000 (1) · 450.000 untuk 2+. Makan siang, helm, asuransi termasuk. Antar Ubud 400.000 / selatan 650.000. WhatsApp tanpa deposit.',
+    publishedAt: '2026-11-17',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/rafting.jpg',
+    content: `
+**Berapa harga rafting Ubud 2026?** Di **Sekar Bali Activity**, rafting **Sungai Ayung** Class II–III adalah **IDR 500.000** per orang, atau **IDR 450.000** per orang jika **2 orang atau lebih** (minimum 2). Harga sudah termasuk **makan siang**, helm, life jacket, guide bahasa Inggris, dan asuransi (usia 6–65). Antar hotel **IDR 400.000** (area Ubud) atau **IDR 650.000** (pantai selatan: Canggu, Seminyak, Kuta, Sanur, Nusa Dua), atau self-meet gratis. Pesan lewat [halaman rafting](/tours/whitewater-rafting) — **tanpa deposit untuk tanya**.
+
+> **Poin utama**
+> - **Harga rafting Ubud:** **500.000** list · **450.000** untuk 2+ · **min 2 orang**
+> - Termasuk makan siang + helm + life jacket + asuransi — bukan sticker 350K tanpa lunch
+> - Antar: **400.000** Ubud · **650.000** selatan · atau self-meet
+> - Class II–III (splash, bukan Class IV ekstrem) · usia biasanya **7+**
+> - Combo seharian: [ATV + rafting](/tours/atv-rafting-combo) dari **1.250.000**
+> - Panduan EN: [Ayung rafting Ubud price](/blog/rafting-ubud-price-2026)
+
+## Tabel harga rafting Ayung Ubud 2026
+
+| Opsi | Harga IDR | Apa yang termasuk |
+| --- | --- | --- |
+| 1 orang | Tidak dijual | Raft butuh **minimum 2** |
+| 2+ orang | **450.000** /orang | Class II–III, makan siang, gear, guide, asuransi |
+| List (satu orang dihitung) | **500.000** /orang | Inklusi sama |
+| Antar hotel Ubud | **400.000** sekali | Opsional |
+| Antar pantai selatan | **650.000** sekali | Canggu / Seminyak / Kuta / Sanur / Nusa Dua |
+| Self-meet | **0** | Datang sendiri ke put-in Ayung |
+
+Dua orang = **900.000** untuk rafting saja (tanpa antar). Empat orang = **1.800.000**. Hitungan lengkap EN: [rafting Ubud price 2026](/blog/rafting-ubud-price-2026).
+
+## Apa yang termasuk — dan yang tidak
+
+**Termasuk:** paddle Class II–III di Ayung, briefing, helm, life jacket, guide, makan siang setelah turun, asuransi usia 6–65, shower/ganti.
+
+**Tidak termasuk di tiket dasar:** antar hotel (400K / 650K), paket foto, tip, tiket ATV (combo terpisah).
+
+## Kenapa ada harga 350.000 di Google?
+
+Sticker **IDR 235.000–350.000** sering berarti paket shared/WNI, lunch belum termasuk, atau asuransi tipis. Sobek-style listing Inggris bisa jauh lebih tinggi. Kami terbitkan tangga **500K / 450K untuk 2+** dengan lunch di tiket — tidak mencocokkan sticker termurah yang menghilangkan inklusi. Bandingkan jujur di [harga EN](/blog/rafting-ubud-price-2026).
+
+## Rafting vs tubing vs ATV + rafting
+
+| | Rafting Ayung | Tubing Wos | ATV + rafting |
+| --- | --- | --- | --- |
+| Harga | **450K** (2+) | **450K** (2+) | dari **1.250.000** |
+| Sungai | **Ayung** | **Wos** | Sedang ATV lalu Ayung |
+| Lunch | **Ya** | **Tidak** di tiket tubing | Lunch di kedua tiket |
+| Cocok untuk | Tim dayung, splash | Float lebih tenang | Hari land + water |
+
+Tubing: [Wos River tubing](/tours/canyon-tubing). Flagship: [ATV + rafting](/tours/atv-rafting-combo) · kenapa bukan sticker 850K: [ATV + rafting dari 1.25M](/blog/atv-rafting-combo-ubud-2026).
+
+## Cara pesan WhatsApp
+
+1. Buka [Whitewater Rafting](/tours/whitewater-rafting)
+2. Kirim **tanggal**, **jumlah orang (min 2)**, **slot 08:30 / 11:00 / 12:00** (terakhir 12:00), **pin hotel** atau self-meet
+3. Kami konfirmasi **450K vs 500K** dan antar **400K / 650K**
+4. **Tanpa deposit untuk tanya**
+
+**Ready?** Pesan di [halaman rafting Ayung](/tours/whitewater-rafting) atau baca [panduan rafting Ubud](/blog/bali-whitewater-rafting-near-ubud-guide).
+`,
+  },
+  {
     slug: 'rafting-ubud-price-2026',
     title: 'Ayung River Rafting Ubud Price 2026: 500K, Lunch, Pickup Extra',
     seoTitle: 'Ayung Rafting Ubud Price 2026 | 500K · 450K',
     excerpt:
-      'Ayung River rafting near Ubud is IDR 500,000, or IDR 450,000 for 2+ (min 2). Lunch, gear, and insurance included. Hotel pickup is IDR 400,000 — not free.',
-    publishedAt: '2026-09-23',
+      'Ayung River rafting near Ubud is IDR 500,000, or IDR 450,000 for 2+ (min 2). Lunch, gear, and insurance included. Pickup IDR 400,000 Ubud / 650,000 south — or self-meet.',
+    publishedAt: '2026-11-17',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/rafting.jpg',
     content: `
-**How much is Ayung River rafting in Ubud in 2026?** Sekar Bali Activity lists **IDR 500,000 per person**, or **IDR 450,000 per person when 2 or more guests book** (minimum 2). That rate is Class II–III on the **Ayung River canyon near Ubud** and includes helmet, life jacket, English-speaking guide, lunch, and insurance for ages 6–65. **Hotel pickup is not included** — it is an optional **IDR 400,000** add-on, or you self-meet at the river base for free. Book on WhatsApp — **no payment to inquire**.
+**How much is Ayung River rafting in Ubud in 2026?** Sekar Bali Activity lists **IDR 500,000 per person**, or **IDR 450,000 per person when 2 or more guests book** (minimum 2). That rate is Class II–III on the **Ayung River canyon near Ubud** and includes helmet, life jacket, English-speaking guide, lunch, and insurance for ages 6–65. **Hotel pickup is not included** — **IDR 400,000** from Ubud or **IDR 650,000** from the south coast, or free self-meet. Bahasa table: [harga rafting Ubud 2026](/blog/harga-rafting-ubud-2026). WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - **IDR 500,000** list · **IDR 450,000** for 2+ · **minimum 2 guests**
 > - Lunch, helmet, life jacket, guide, insurance 6–65 **included**
-> - Pickup **IDR 400,000** or free self-meet — not the free Ubud rule on cycling / cooking
+> - Pickup **IDR 400,000** Ubud · **IDR 650,000** south coast · or free self-meet
 > - Class II–III (splash, not extreme Class IV+) · ages typically **7+**
 > - Cheaper 2026 SERP listings (about IDR 235K–350K) are usually shared / WNI / no-lunch packages — we do not match those stickers
+> - Bahasa: [harga rafting Ubud 2026](/blog/harga-rafting-ubud-2026)
 
 ## Quick answer: what you pay
 
@@ -175,16 +240,17 @@ Beginners are fine. No ATV licence. Rafting wants basic swimming confidence. Ins
 | 1 guest | Not sold | **Minimum 2** to run a raft |
 | 2+ guests (discount) | **450,000** / person | Class II–III, lunch, gear, guide, insurance |
 | List (same inclusions) | **500,000** / person | Same river, same lunch |
-| Hotel pickup | **400,000** | Optional · per booking, not per person |
+| Hotel pickup · Ubud | **400,000** | Optional · once per booking |
+| Hotel pickup · south coast | **650,000** | Canggu / Seminyak / Kuta / Sanur / Nusa Dua |
 | Self-meet | **0** | You get yourself to the Ayung put-in |
 
-Book the money page: [Ayung River rafting Ubud](/tours/whitewater-rafting). Flagship same-day: [ATV + rafting](/tours/atv-rafting-combo) from **IDR 1,250,000**. Route and who it suits: [whitewater rafting near Ubud guide](/blog/bali-whitewater-rafting-near-ubud-guide). Intensity compare: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
+Book the money page: [Ayung River rafting Ubud](/tours/whitewater-rafting). Bahasa: [harga rafting Ubud 2026](/blog/harga-rafting-ubud-2026). Flagship same-day: [ATV + rafting](/tours/atv-rafting-combo) from **IDR 1,250,000**. Route and who it suits: [whitewater rafting near Ubud guide](/blog/bali-whitewater-rafting-near-ubud-guide). Intensity compare: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
 ## Why our number is not the cheapest on Google
 
-September 2026 SERPs for “Ayung rafting Ubud price” are crowded with **IDR 235,000–350,000** group tickets (often Indonesian-resident or high-occupancy vans) and mid-market operators around **IDR 420,000–550,000**. Sobek-style English listings still publish closer to **IDR 600,000** before a self-drive discount.
+2026 SERPs for “Ayung rafting Ubud price” are crowded with **IDR 235,000–350,000** group tickets (often Indonesian-resident or high-occupancy vans) and mid-market operators around **IDR 420,000–550,000**. Sobek-style English listings still publish closer to **IDR 600,000** before a self-drive discount.
 
-Sekar Bali Activity sits in the **mid band on purpose**: lunch, insurance, and a WhatsApp quote that states pickup as a separate **IDR 400,000** line. We will not advertise “from 235K” or “hotel transfer included” to win a click. If you only want the lowest sticker and a shared minibus, a mass listing is cheaper. If you want the inclusions written before you pay, use this page.
+Sekar Bali Activity sits in the **mid band on purpose**: lunch, insurance, and a WhatsApp quote that states pickup as a **separate** line (**400K** Ubud / **650K** south). We will not advertise “from 235K” or “hotel transfer included” to win a click. If you only want the lowest sticker and a shared minibus, a mass listing is cheaper. If you want the inclusions written before you pay, use this page.
 
 ## Pickup vs “with transfer” titles
 
@@ -192,11 +258,12 @@ Competitor titles often say **“with pickup”** or **“Ubud transfer included
 
 For rafting:
 
-- Stay in Ubud, Canggu, Seminyak, or Sanur and want a car → add **IDR 400,000**
+- Stay in **Ubud** and want a car → **IDR 400,000** once
+- Stay in **Canggu / Seminyak / Kuta / Sanur / Nusa Dua** → **IDR 650,000** once
 - Have a driver or Grab → **self-meet**, no transport fee
 - Do not assume the cycling “free Ubud” rule applies here
 
-Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
+South-coast day totals: [ATV & rafting from Seminyak / Canggu](/blog/atv-rafting-from-seminyak-canggu-kuta-2026). Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
 
 ## What the 3-hour clock actually covers
 

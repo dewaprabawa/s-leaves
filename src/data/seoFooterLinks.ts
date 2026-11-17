@@ -67,6 +67,8 @@ export const SEO_FOOTER_LINKS: SeoFooterLink[] = [
   { label: 'Whitewater rafting', href: '/tours/whitewater-rafting' },
   { label: 'Ayung River rafting guide', href: '/blog/bali-whitewater-rafting-near-ubud-guide' },
   { label: 'Ayung rafting Ubud price 2026', href: '/blog/rafting-ubud-price-2026' },
+  { label: 'Harga rafting Ubud 2026', href: '/blog/harga-rafting-ubud-2026' },
+  { label: 'ATV from Canggu / Seminyak', href: '/blog/atv-rafting-from-seminyak-canggu-kuta-2026' },
   { label: 'Canyon tubing', href: '/tours/canyon-tubing' },
   { label: 'Wos River tubing guide', href: '/blog/bali-canyon-tubing-guide-ubud' },
   { label: 'Wos River tubing price 2026', href: '/blog/wos-river-tubing-price-2026' },

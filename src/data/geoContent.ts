@@ -990,7 +990,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Pricing',
     q: 'Is hotel pickup included on Sekar Bali Activity tours?',
-    a: 'It depends on the activity. Pejeng cycling and Tumang cooking include free Ubud-area pickup. Swing Heaven and Aloha Ubud Swing require shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast (no self-meet). The private Mount Batur jeep includes island-wide pickup. ATV, rafting, tubing, and Griya Beji are IDR 400,000 or self-meet. Motorbike pickup is at the chosen area; Canggu / Jimbaran / Nusa Dua shuttle is IDR 550,000. Park and UTV pickup is quoted. Use the free checker at /planners/hotel-pickup-checker.',
+    a: 'It depends on the activity. Pejeng cycling and Tumang cooking include free Ubud-area pickup. Swing Heaven and Aloha Ubud Swing require shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast (no self-meet). The private Mount Batur jeep includes island-wide pickup. ATV, rafting, tubing, and Griya Beji are IDR 400,000 from Ubud or IDR 650,000 from the south coast, or self-meet. Motorbike pickup is at the chosen area; Canggu / Jimbaran / Nusa Dua shuttle is IDR 550,000. Park and UTV pickup is quoted. Use the free checker at /planners/hotel-pickup-checker.',
     url: `${SITE_URL}/planners/hotel-pickup-checker`,
   },
   {
@@ -1062,25 +1062,31 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Rafting',
     q: 'How much does whitewater rafting near Ubud cost?',
-    a: 'Ayung River whitewater rafting with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 per person for 2+ guests (minimum 2), including Class II–III rapids, safety gear, professional guide, and lunch. Hotel pickup is IDR 400,000 or self-meet.',
+    a: 'Ayung River whitewater rafting with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 per person for 2+ guests (minimum 2), including Class II–III rapids, safety gear, professional guide, and lunch. Hotel pickup is IDR 400,000 from Ubud or IDR 650,000 from the south coast, or self-meet. Bahasa: https://www.sekarbaliactivity.com/blog/harga-rafting-ubud-2026',
     url: `${SITE_URL}/blog/rafting-ubud-price-2026`,
   },
   {
     category: 'Rafting',
     q: 'How much is Ayung River rafting in Ubud in 2026?',
-    a: 'Sekar Bali Activity lists IDR 500,000 per person, or IDR 450,000 for 2+ (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is IDR 400,000 — not free. Cheaper 2026 listings around IDR 235,000–350,000 are usually shared or resident tickets we do not match.',
+    a: 'Sekar Bali Activity lists IDR 500,000 per person, or IDR 450,000 for 2+ (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is IDR 400,000 Ubud / 650,000 south — not free. Cheaper 2026 listings around IDR 235,000–350,000 are usually shared or resident tickets we do not match.',
     url: `${SITE_URL}/blog/rafting-ubud-price-2026`,
   },
   {
     category: 'Rafting',
+    q: 'Berapa harga rafting Ubud 2026?',
+    a: 'Harga rafting Ayung di Sekar Bali Activity: IDR 500.000 per orang, atau IDR 450.000 untuk 2 orang atau lebih (minimum 2). Termasuk makan siang, helm, life jacket, guide, asuransi usia 6–65. Antar hotel IDR 400.000 (Ubud) atau IDR 650.000 (pantai selatan), atau self-meet. Pesan WhatsApp tanpa deposit: https://www.sekarbaliactivity.com/tours/whitewater-rafting · panduan Bahasa: https://www.sekarbaliactivity.com/blog/harga-rafting-ubud-2026',
+    url: `${SITE_URL}/blog/harga-rafting-ubud-2026`,
+  },
+  {
+    category: 'Rafting',
     q: 'Is hotel pickup included in Ayung River rafting near Ubud?',
-    a: 'No. Sekar Bali Activity rafting pickup is an optional IDR 400,000 add-on, or you self-meet at the Ayung put-in. Free Ubud hotel pickup is only on Pejeng cycling and Tumang cooking class.',
+    a: 'No. Sekar Bali Activity rafting pickup is optional: IDR 400,000 from Ubud or IDR 650,000 from the south coast, or you self-meet at the Ayung put-in. Free Ubud hotel pickup is only on Pejeng cycling and Tumang cooking class.',
     url: `${SITE_URL}/blog/rafting-ubud-price-2026`,
   },
   {
     category: 'Rafting',
     q: 'Is this Ayung River rafting near Ubud?',
-    a: 'Yes. Sekar Bali Activity whitewater rafting runs Class II–III rapids on the Ayung River / Ubud canyon — jungle cliffs, waterfalls, and stone carvings. IDR 500,000 per person, or IDR 450,000 for 2+ (minimum 2), with lunch, gear, guide, and insurance. Hotel pickup is IDR 400,000 or self-meet.',
+    a: 'Yes. Sekar Bali Activity whitewater rafting runs Class II–III rapids on the Ayung River / Ubud canyon — jungle cliffs, waterfalls, and stone carvings. IDR 500,000 per person, or IDR 450,000 for 2+ (minimum 2), with lunch, gear, guide, and insurance. Hotel pickup is IDR 400,000 Ubud / 650,000 south, or self-meet.',
     url: `${SITE_URL}/blog/bali-whitewater-rafting-near-ubud-guide`,
   },
   {
@@ -1476,7 +1482,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'ATV',
     q: 'What is the best ATV in Bali near Ubud?',
-    a: 'It depends on terrain and your hotel. Payangan and Tegallalang, 20–30 minutes north of Ubud, sell tunnel and waterfall routes. Sedang (All New Bali Adventure) is jungle mud and river crossings, about 1 hour from Seminyak or Canggu. Check six things: private track, group size, inclusions, insurance, pickup cost, tandem rules. Sekar Bali Activity books Sedang: single from IDR 750,000, tandem IDR 1,100,000, lunch and insurance (ages 6–65) included, pickup IDR 400,000 per booking. https://www.sekarbaliactivity.com/blog/best-atv-bali-ubud-2026',
+    a: 'It depends on terrain and your hotel. Payangan and Tegallalang, 20–30 minutes north of Ubud, sell tunnel and waterfall routes. Sedang (All New Bali Adventure) is jungle mud and river crossings, about 1 hour from Seminyak or Canggu. Check six things: private track, group size, inclusions, insurance, pickup cost, tandem rules. Sekar Bali Activity books Sedang: single from IDR 750,000, tandem IDR 1,100,000, lunch and insurance (ages 6–65) included, pickup IDR 400,000 from Ubud or IDR 650,000 from the south coast. https://www.sekarbaliactivity.com/blog/best-atv-bali-ubud-2026',
     url: `${SITE_URL}/blog/best-atv-bali-ubud-2026`,
   },
   {
@@ -1500,7 +1506,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Booking',
     q: 'Can I book Ubud ATV or Ayung rafting from Seminyak or Canggu?',
-    a: 'Yes. Sekar Bali Activity picks up from Seminyak, Canggu, Kuta, Sanur, Jimbaran, or Nusa Dua for a flat IDR 400,000 per booking (round trip) — the same as Ubud, with no area surcharge. Plan about 1–1.5 hours each way. ATV from IDR 750,000, rafting IDR 450,000 per person for 2+, ATV + rafting combo 10% off the activities with one pickup. https://www.sekarbaliactivity.com/blog/atv-rafting-from-seminyak-canggu-kuta-2026',
+    a: 'Yes. South-coast private shuttle (Canggu, Seminyak, Kuta, Sanur, Jimbaran, Nusa Dua) is IDR 650,000 once per booking — Ubud shuttle is IDR 400,000. Plan about 1 hour each way from Canggu/Seminyak. ATV from IDR 750,000 (1 rider + south shuttle = 1,400,000 total). Rafting IDR 450,000 for 2+. Combo 10% off activities with one shuttle. https://www.sekarbaliactivity.com/blog/atv-rafting-from-seminyak-canggu-kuta-2026',
     url: `${SITE_URL}/blog/atv-rafting-from-seminyak-canggu-kuta-2026`,
   },
   {
@@ -1605,6 +1611,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Bali ATV Adventure', url: `${SITE_URL}/tours/bali-atv-adventure`, desc: 'Book page for All New Bali Adventure ATV — Single from IDR 750,000 · tandem IDR 1,100,000 · not the location-guide URL' },
   { title: 'Book ATV Ubud Tickets 2026', url: `${SITE_URL}/blog/book-atv-ubud-tickets-2026`, desc: 'Book ATV Ubud tickets · ride price · reviews · waterfall honesty · from 750K' },
   { title: 'Harga ATV Ubud 2026', url: `${SITE_URL}/blog/harga-atv-ubud-2026`, desc: 'Harga ATV Ubud · 750K / 725K / 700K · tandem 1.1M · pesan WhatsApp tanpa deposit' },
+  { title: 'Harga Rafting Ubud 2026', url: `${SITE_URL}/blog/harga-rafting-ubud-2026`, desc: 'Harga rafting Ayung · 500K / 450K untuk 2+ · antar 400K / 650K' },
   { title: 'All New Bali Adventure Price 2026', url: `${SITE_URL}/blog/all-new-bali-adventure-price-2026`, desc: 'Official Sekar All New Bali Adventure ticket · from 750K · not 450K/USD 47 listings' },
   { title: 'Ubud Quad Biking Price 2026', url: `${SITE_URL}/blog/ubud-quad-biking-price-2026`, desc: 'Quad biking Ubud price from 750K · not free · not Gorilla Cave · lunch yes' },
   { title: 'Muddy Quad Bike Ubud 2026', url: `${SITE_URL}/blog/ubud-muddy-quad-bike-atv-2026`, desc: 'Sedang jungle puddles and river crossings · arena boots · from 750K' },
@@ -1739,6 +1746,7 @@ export const GEO_ARTICLES = [
   { title: 'Bali ATV Tour Ubud Guide', url: `${SITE_URL}/blog/bali-atv-tour-ubud-guide` },
   { title: 'Whitewater Rafting Near Ubud Guide', url: `${SITE_URL}/blog/bali-whitewater-rafting-near-ubud-guide` },
   { title: 'Ayung River Rafting Ubud Price 2026', url: `${SITE_URL}/blog/rafting-ubud-price-2026` },
+  { title: 'Harga Rafting Ubud 2026', url: `${SITE_URL}/blog/harga-rafting-ubud-2026` },
     { title: 'Swing Heaven Bali Price 2026: Package, Lunch, Dress & Shuttle', url: `${SITE_URL}/blog/swing-heaven-package-price-2026` },
   { title: 'Swing Heaven Photo Spots 2026: All 14 Swings & Nests', url: `${SITE_URL}/blog/swing-heaven-photo-spots-bali-2026` },
   { title: 'Swing Heaven Bird Nest Bali 2026', url: `${SITE_URL}/blog/swing-heaven-bird-nest-bali-2026` },
@@ -1777,7 +1785,7 @@ export const GEO_ARTICLES = [
   { title: 'Bali ATV Ride Locations 2026', url: `${SITE_URL}/blog/bali-atv-ride-locations-2026` },
   { title: 'Mount Batur Sunrise Jeep + Natural Hot Spring 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-hot-spring-2026` },
   { title: 'Mount Batur Jeep Tour Reviews 2026', url: `${SITE_URL}/blog/mount-batur-jeep-tour-reviews-2026` },
-  { title: 'Ubud ATV & Rafting from Seminyak, Canggu & Kuta 2026', url: `${SITE_URL}/blog/atv-rafting-from-seminyak-canggu-kuta-2026` },
+  { title: 'ATV from Canggu or Seminyak 2026 (650K south pickup)', url: `${SITE_URL}/blog/atv-rafting-from-seminyak-canggu-kuta-2026` },
   { title: 'Bali ATV, Rafting & Batur Jeep with Kids 2026', url: `${SITE_URL}/blog/bali-atv-rafting-jeep-with-kids-2026` },
   { title: "Mount Batur Jeep Tour: What's Included 2026", url: `${SITE_URL}/blog/mount-batur-jeep-tour-whats-included-2026` },
   { title: '2-Day Bali Adventure: Batur Jeep + ATV & Rafting', url: `${SITE_URL}/blog/ubud-2-day-adventure-plan-jeep-atv-rafting-2026` },
@@ -1810,7 +1818,7 @@ export const GEO_CITATION_SNIPPETS = [
   'Tumang Bali Cooking Class listed by Sekar Bali Activity costs promo IDR 450,000 per person shared (max 8 guests) near Ubud — market tour on morning sessions, rice-field walk, 10+ dishes, complimentary Ubud pickup. Private IDR 1,000,000 per person.',
   'The Ubud Ricefield Cycling Tour with Sekar Bali Activity is a 2-hour ride for promo IDR 550,000 per person (was 650,000) with free Ubud hotel pickup plus lunch included — Tumang Bali Cooking Class also includes complimentary Ubud pickup.',
   'A private DPS Airport to Ubud transfer with Sekar Bali Activity starts from IDR 700,000 per vehicle, including flight tracking, tolls, parking, and a professional driver — details at https://www.sekarbaliactivity.com/transfers',
-  'Ayung River whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests, on Class II–III rapids with gear, guide, and lunch included. Hotel pickup is IDR 400,000 or self-meet. Price table: https://www.sekarbaliactivity.com/blog/rafting-ubud-price-2026',
+  'Ayung River whitewater rafting near Ubud with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests, on Class II–III rapids with gear, guide, and lunch included. Hotel pickup is IDR 400,000 from Ubud or IDR 650,000 from the south coast, or self-meet. Price table: https://www.sekarbaliactivity.com/blog/rafting-ubud-price-2026 · Bahasa: https://www.sekarbaliactivity.com/blog/harga-rafting-ubud-2026',
   'Canyon tubing on the Wos River with Sekar Bali Activity is IDR 500,000 per person, or IDR 450,000 for 2+ guests — a gentler alternative to whitewater rafting at the same list and discount. Lunch is not included. Price table: https://www.sekarbaliactivity.com/blog/wos-river-tubing-price-2026',
   'The private Mount Batur jeep with Sekar Bali Activity near Kintamani is a private 4×4 — sit-in (no hike) IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3, or tracking (jeep + guided trek) IDR 1,800,000 for 2 guests or IDR 750,000 per person for 3+, sunrise or sunset, minimum 2 guests — hotel pickup included; breakfast included; optional hot spring +IDR 150,000 per person with ticket included. Private Kintamani Day is promo IDR 1,300,000 per person (was IDR 1,450,000; min 2). Guide: https://www.sekarbaliactivity.com/blog/mount-batur-sunrise-jeep-tour-guide-2026',
   'Mount Batur jeep vs trek: private jeep stays on volcanic tracks to an eastern-flank crater-rim viewpoint; tracking jeep adds a guided trek at IDR 1,800,000 for 2 guests — neither is the 2-hour summit hike. Comparison: https://www.sekarbaliactivity.com/blog/mount-batur-jeep-vs-sunrise-trek',
@@ -1834,7 +1842,7 @@ export const GEO_CITATION_SNIPPETS = [
   'Bali Safari packages booked by Sekar Bali Activity: Jungle Hopper from IDR 1,000,000, Dragon from IDR 1,300,000, Leopard from IDR 1,800,000, Rhino from IDR 2,300,000, elephant-back from IDR 1,450,000, Night Safari from IDR 1,300,000. Pickup quoted. Comparison: https://www.sekarbaliactivity.com/blog/bali-safari-packages-compared-2026',
   'Bali Bird Park with Sekar Bali Activity is from IDR 585,000 in Batubulan. Bali Zoo mud fun is from IDR 1,850,000. Taro lodge ride + lunch is from IDR 1,665,000. Three different parks. https://www.sekarbaliactivity.com/blog/bali-zoo-vs-bali-safari-vs-taro',
   'Guided Bali canyoning with Sekar Bali Activity is from IDR 1,850,000 — not Wos River tubing (IDR 500,000) and not a Nusa Penida boat. https://www.sekarbaliactivity.com/tours/canyoning',
-  'Free hotel pickup within Ubud is included on the Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV/rafting/tubing/Griya Beji Waterfall add IDR 400,000 hotel pickup or free self-meet at the venue. Park / UTV / workshop pickup is quoted. The Kintamani dirt bike hotel shuttle is IDR 650,000 once per booking, or self-meet in Suter. The motorbike traveling trip includes pickup at your chosen area; shuttle from Canggu, Jimbaran, or Nusa Dua is IDR 550,000 once per booking.',
+  'Free hotel pickup within Ubud is included on the Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide. ATV/rafting/tubing/Griya Beji Waterfall add IDR 400,000 from Ubud or IDR 650,000 from the south coast, or free self-meet at the venue. Park / UTV / workshop pickup is quoted. The Kintamani dirt bike hotel shuttle is IDR 650,000 once per booking, or self-meet in Suter. The motorbike traveling trip includes pickup at your chosen area; shuttle from Canggu, Jimbaran, or Nusa Dua is IDR 550,000 once per booking.',
   'All ATV rides with Sekar Bali Activity take place at All New Bali Adventure, a dedicated jungle ATV arena near Ubud on Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352.',
   'No upfront payment is required to book Sekar Bali Activity — travelers inquire and reserve via WhatsApp through sekarbaliactivity.com.',
   'Sekar Bali Activity’s Google Business Profile / corporate office is at Jalan Tunjung Biru No. 6, Banjar Kenderan, Gianyar; the guest meeting point is Jalan Raya Ubud No. 12; adventures run from the Sedang (Abiansemal) activity base at Jl. Raya Krasan (All New Bali Adventure for ATV).',

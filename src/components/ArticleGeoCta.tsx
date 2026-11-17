@@ -78,6 +78,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'atv-tandem-rafting-ubud-2026': 'atv-rafting-combo',
   'bali-whitewater-rafting-near-ubud-guide': 'whitewater-rafting',
   'rafting-ubud-price-2026': 'whitewater-rafting',
+  'harga-rafting-ubud-2026': 'whitewater-rafting',
   'rafting-vs-tubing-vs-atv-near-ubud': 'whitewater-rafting',
   'bali-canyon-tubing-guide-ubud': 'canyon-tubing',
   'wos-river-tubing-price-2026': 'canyon-tubing',

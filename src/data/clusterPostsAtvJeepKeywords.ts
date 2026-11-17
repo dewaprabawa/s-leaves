@@ -39,7 +39,7 @@ Full map of where the tracks are: [Bali ATV ride locations](/blog/bali-atv-ride-
 2. **Group size and pacing.** Long convoys stall behind one nervous rider. Ask how many quads go out per guide.
 3. **What is included.** Lunch, helmet, boots, shower, locker. A low ticket that adds lunch and pickup is not cheaper.
 4. **Insurance.** Ask if activity insurance is included and for which ages. Ours covers **ages 6–65**.
-5. **Pickup cost from your hotel.** Many operators charge by area. We charge **IDR 400,000 per booking**, any hotel area — [from Seminyak, Canggu, Kuta](/blog/atv-rafting-from-seminyak-canggu-kuta-2026).
+5. **Pickup cost from your hotel.** Many operators charge by area. We charge **IDR 400,000 from Ubud** or **IDR 650,000 from the south coast** (Canggu, Seminyak, Kuta) once per booking — [ATV from Canggu / Seminyak](/blog/atv-rafting-from-seminyak-canggu-kuta-2026).
 6. **Tandem and age rules.** Rules differ by operator. Send every rider's age before you pay — [ATV with kids](/blog/bali-atv-rafting-jeep-with-kids-2026).
 
 Two more tips that show up in nearly every review: **wear clothes you can bin** (mud stains do not wash out), and **lock your phone away** unless you have a waterproof pouch. Photo packages are usually optional extras.
@@ -109,7 +109,7 @@ Drive times are traffic estimates — Saturday afternoons and holiday weeks run 
 
 ## Our location: All New Bali Adventure, Sedang
 
-The Sekar Bali Activity ATV starts at **All New Bali Adventure, Jl. Raya Krasan, Sedang, Kec. Abiansemal, Badung** — a dedicated jungle track, not a roadside rental and **not the company office pin** in Banjar Kenderan. Self-drivers: [directions and map](/blog/bali-atv-all-new-bali-adventure-location-guide). Everyone else: take the hotel pickup — **IDR 400,000 per booking**, round trip, any hotel area.
+The Sekar Bali Activity ATV starts at **All New Bali Adventure, Jl. Raya Krasan, Sedang, Kec. Abiansemal, Badung** — a dedicated jungle track, not a roadside rental and **not the company office pin** in Banjar Kenderan. Self-drivers: [directions and map](/blog/bali-atv-all-new-bali-adventure-location-guide). Everyone else: take the hotel pickup — **IDR 400,000 from Ubud** or **IDR 650,000 from the south coast**, round trip, once per booking.
 
 Same district, same day: [Ayung rafting](/blog/atv-rafting-combo-ubud-2026) after the ATV, or [Swing Heaven](/tours/swing-heaven-bali) nearby.
 

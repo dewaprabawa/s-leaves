@@ -167,6 +167,8 @@ export interface Tour {
   gallery: { url: string; alt: string }[]
   /** Small tap-to-enlarge photo grid rendered directly under the hero image. */
   heroThumbnails?: { url: string; alt: string }[]
+  /** Guest mp4 clips under the hero (Vercel Blob or similar https). */
+  heroVideos?: { url: string; label: string; poster?: string }[]
   shortDescription: string
   fullDescription: string
   highlights: string[]
@@ -180,6 +182,28 @@ export interface Tour {
   getYourGuideUrl?: string
   youtubeVideoId?: string
 }
+
+const SWING_HEAVEN_GUEST_VIDEOS = [
+  {
+    url: "https://ozlaogfktmmzyjml.public.blob.vercel-storage.com/WhatsApp%20Video%202026-09-23%20at%2018.29.36.mp4",
+    label: "Swing Heaven Bongkasa — guest swing clip",
+    poster: "/images/adventures/swing-heaven-stairs.jpg",
+  },
+  {
+    url: "https://ozlaogfktmmzyjml.public.blob.vercel-storage.com/WhatsApp%20Video%202026-09-23%20at%2018.29.54.mp4",
+    label: "Swing Heaven Bongkasa — jungle swing clip",
+    poster: "/images/adventures/swing-heaven-ayung.jpg",
+  },
+] as const
+
+const BATUR_JEEP_GUEST_VIDEOS = [
+  {
+    url: "https://ozlaogfktmmzyjml.public.blob.vercel-storage.com/WhatsApp%20Video%202026-10-08%20at%2016.33.52.mp4",
+    label: "Mount Batur private jeep — guest ride clip",
+    poster: "/images/adventures/batur-jeep-yellow-jeep-lava-field.jpg",
+  },
+] as const
+
 
 
 const SWING_HEAVEN_PHOTOS = [
@@ -974,6 +998,7 @@ The [Land & River premium package](/tours/atv-premium-package-bali) bundles a si
         alt: "Guests sitting on a yellow 4x4 jeep in the Mount Batur lava field",
       },
     ],
+    heroVideos: [...BATUR_JEEP_GUEST_VIDEOS],
     shortDescription:
       "Mount Batur sunrise without hiking — private 4×4 to a crater-rim viewpoint (~1,350m), not the summit trek. Sit-in IDR 2,300,000 for 2 guests (or 2,850,000 for 3). Tracking jeep IDR 1,800,000 for 2 · 750,000 pp at 3+. Breakfast + island-wide pickup included. Optional hot spring +150K / Toya Devasya +300K.",
     fullDescription: `**Want Mount Batur sunrise without hiking?** Book the **private sit-in jeep** — your 4×4 stays on volcanic tracks to an **eastern-flank crater-rim viewpoint (~1,350m)** near Kintamani for **sunrise or sunset** over **Lake Batur** and **Mount Agung**. This is **not** the classic 2-hour summit trek to 1,717m. **Price for 2:** sit-in **IDR 2,300,000** total · tracking **IDR 1,800,000** total. **Minimum 2 guests.** Choose **private jeep** (stay seated, no hike) or **private tracking jeep** (jeep plus a short guided walk — still not the summit). Sit-in for 3 is **IDR 2,850,000**; tracking 3+ is **IDR 750,000 per person**. The route is **(1) the sunrise or sunset viewpoint**, then **(2) the black lava field**. Driver, hot drink, **breakfast**, and **island-wide hotel pickup** are included; **lunch is optional**. Food is not cooked inside the 4×4 — breakfast is after the viewpoint. Compare: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
@@ -1564,6 +1589,7 @@ Many guests race the [All New Bali Adventure ATV](/tours/bali-atv-adventure) fir
     },
     heroThumbnails: SWING_HEAVEN_PHOTOS,
     gallery: SWING_HEAVEN_PHOTOS,
+    heroVideos: [...SWING_HEAVEN_GUEST_VIDEOS],
     shortDescription:
       "Jungle swing park in Bongkasa near Ubud — 14 photo spots over the Ayung River valley. Package from IDR 530,000 or IDR 630,000 with lunch. Required shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast. Flying dress and koi pond boat IDR 300,000 each. Book via WhatsApp.",
     fullDescription: `**Swing Heaven Bali — jungle swings over the Ayung River (not Tegallalang)**

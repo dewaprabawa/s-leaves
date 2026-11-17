@@ -22,6 +22,7 @@ import KecakVenueBlock from "@/components/KecakVenueBlock"
 import SwingHeavenShuttleMustLabel from "@/components/SwingHeavenShuttleMustLabel"
 import TourItinerary, { TourIncludedLists } from "@/components/TourItinerary"
 import TourPhotoGrid from "@/components/TourPhotoGrid"
+import TourHeroVideos from "@/components/TourHeroVideos"
 import CookingGeoBlock from "@/components/CookingGeoBlock"
 import JeepGeoBlock from "@/components/JeepGeoBlock"
 import ActivityGeoBlock from "@/components/ActivityGeoBlock"
@@ -1360,6 +1361,7 @@ export default async function TourPage({ params }: Props) {
                 </div>
 
                 {underHeroPhotos.length ? <TourPhotoGrid photos={underHeroPhotos} /> : null}
+                {tour.heroVideos?.length ? <TourHeroVideos videos={tour.heroVideos} /> : null}
               </div>
 
               <div className="space-y-4">

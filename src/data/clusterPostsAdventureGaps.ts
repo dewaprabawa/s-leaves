@@ -3,72 +3,77 @@
 export const ADVENTURE_GAP_CLUSTER_POSTS = [
   {
     slug: 'atv-rafting-from-seminyak-canggu-kuta-2026',
-    title: 'Ubud ATV & Ayung Rafting from Seminyak, Canggu & Kuta (2026): Pickup, Timing, Total Price',
-    seoTitle: 'ATV & Rafting from Seminyak, Canggu | 400K Pickup',
+    title: 'ATV from Canggu or Seminyak 2026: 750K Ride + 650K South Pickup',
+    seoTitle: 'ATV from Canggu/Seminyak | 750K + 650K',
     excerpt:
-      'Staying in Seminyak, Canggu, Kuta, or Nusa Dua? Book Ubud ATV and Ayung rafting with one flat IDR 400,000 hotel pickup per booking — no area surcharge. Drive times, slots, and real totals.',
-    publishedAt: '2026-10-08',
+      'ATV from Canggu or Seminyak: ride from IDR 750,000 + south-coast private shuttle IDR 650,000 once. Totals for 1 rider, tandem, couple. Rafting add-on. WhatsApp.',
+    publishedAt: '2026-11-17',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-mud-river-splash.jpg',
     content: `
-**Can I do Ubud ATV or rafting from Seminyak or Canggu?** Yes. Sekar Bali Activity collects you from **Seminyak, Canggu, Kuta, Legian, Sanur, Jimbaran, or Nusa Dua** for one flat **IDR 400,000 per booking** — the same price as an Ubud hotel, with **no area surcharge**. The [ATV](/tours/bali-atv-adventure) runs at All New Bali Adventure in **Sedang**, and the [Ayung River rafting](/tours/whitewater-rafting) runs near **Ubud**. Plan **about 1–1.5 hours each way** from south Bali in normal traffic. WhatsApp — **no payment to inquire**.
+**How much is ATV from Canggu or Seminyak in 2026?** The Sedang ride at **All New Bali Adventure** starts at **IDR 750,000** (one single). Private shuttle from the **south coast** (Canggu, Seminyak, Kuta, Legian, Sanur, Jimbaran, Nusa Dua, Uluwatu) is **IDR 650,000 once per booking** — the driver waits and brings you back. From **Ubud** the same shuttle is **IDR 400,000**. Self-meet at Sedang is free. WhatsApp — **no payment to inquire**. Money page: [Bali ATV Adventure](/tours/bali-atv-adventure).
 
 > **Key Takeaways**
-> - **Pickup:** **IDR 400,000 once per booking**, any south Bali hotel — not per person, not per area
-> - **ATV:** single from **750,000** (725K each for 2, 700K for 3+) · tandem **1,100,000** per bike
-> - **Rafting:** **450,000** each for 2+ guests · lunch, gear, insurance (ages 6–65)
-> - **Combo:** ATV + rafting from **1,250,000** per person, then **10% off** the activities at checkout
-> - **Timing:** take a **morning slot** from the south to beat traffic and afternoon rain
+> - **South-coast pickup:** **IDR 650,000** once (not per person) · Ubud pickup **IDR 400,000**
+> - **ATV:** single **750,000** (725K each for 2 · 700K for 3+) · tandem **1,100,000** / bike
+> - **1 rider + south shuttle:** **1,400,000** total · **tandem + south:** **1,750,000**
+> - **Couple two singles + south:** **2,100,000** · drive ~**1 hour** each way in normal traffic
+> - Same shuttle covers **Ayung rafting** or the [ATV + rafting combo](/tours/atv-rafting-combo) the same day
+> - Latest ATV start on combo days: **13:00**
 
-## Pickup price from south Bali: flat, not by area
+## Totals from Canggu / Seminyak (south-coast shuttle 650K)
 
-**Many operators price transfers by zone.** In 2026 listings it is common to see one rate for Ubud and a higher rate per car for Kuta, Seminyak, Canggu, Nusa Dua, or Uluwatu. Sekar Bali Activity keeps it simple for ATV, rafting, and the ATV + rafting combo:
-
-| Your hotel area | Hotel pickup + drop-off (IDR) | Typical drive each way |
-| --- | --- | --- |
-| Ubud | **400,000** per booking | 20–40 min |
-| Seminyak / Legian / Kuta | **400,000** per booking | about 1–1.5 h |
-| Canggu / Berawa / Pererenan | **400,000** per booking | about 1–1.5 h |
-| Sanur | **400,000** per booking | about 1 h |
-| Jimbaran / Nusa Dua | **400,000** per booking | about 1.5 h+ |
-| Your own driver or scooter | **0** — self-meet | — |
-
-Drive times are traffic estimates, not promises — we confirm your exact pickup time on WhatsApp. Check your pin in the free [hotel pickup checker](/planners/hotel-pickup-checker). Full pickup rules: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
-
-## What a south Bali day really costs (2 guests)
-
-**Pickup is one fee for the whole booking, so it gets cheaper per person the more of you ride.** Published 2026 IDR, two guests, pickup from Seminyak or Canggu:
-
-| Plan | Activities (IDR) | Pickup (IDR) | Total (IDR) |
+| Group | ATV (IDR) | + South shuttle | Total |
 | --- | --- | --- | --- |
-| Rafting only | 2 × 450,000 = **900,000** | 400,000 | **1,300,000** |
-| ATV — two single quads | 2 × 725,000 = **1,450,000** | 400,000 | **1,850,000** |
-| ATV — one tandem quad | **1,100,000** | 400,000 | **1,500,000** |
-| ATV (two singles) + rafting combo | 2,350,000 − 10% = **2,115,000** | 400,000 once | **2,515,000** |
+| 1 single rider | **750,000** | **650,000** | **1,400,000** |
+| Couple · one tandem | **1,100,000** | **650,000** | **1,750,000** |
+| Couple · two singles | **1,450,000** | **650,000** | **2,100,000** |
+| 3 singles | **2,100,000** | **650,000** | **2,750,000** |
+| 4 singles | **2,800,000** | **650,000** | **3,450,000** |
 
-Lunch, helmet, gear, guide, and insurance are inside every activity price. One pickup covers the combo day — you do not pay twice. Compare the full menu in [best price ATV, rafting, cycling, and scooter](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026).
+Pickup is **one car for the booking**, so it gets cheaper per head as the group grows. Lunch, helmet, boots, and insurance (ages 6–65) are in the ATV ticket. Math: [tandem 1.1M vs two singles 1.45M](/blog/tandem-atv-ubud-price) · [harga ATV Ubud](/blog/harga-atv-ubud-2026).
 
-## Best timing from Seminyak, Canggu, or Kuta
+## Pickup zones (published 2026)
 
-**Book the morning.** South Bali traffic builds after 15:00, and wet-season rain (November–March) tends to fall in the afternoon.
+| Hotel area | Private shuttle (once) | Typical drive to Sedang |
+| --- | --- | --- |
+| Ubud | **400,000** | 20–40 min |
+| Canggu / Berawa / Pererenan | **650,000** | ~1 h |
+| Seminyak / Legian / Kerobokan | **650,000** | ~1 h |
+| Kuta | **650,000** | ~1–1¼ h |
+| Sanur | **650,000** | ~45–60 min |
+| Jimbaran / Nusa Dua / Uluwatu | **650,000** | ~1¼–2 h |
+| Own driver / Grab / scooter | **0** — self-meet | — |
 
-1. **Rafting only:** take the **08:30** or **11:00** slot — back at your hotel by late afternoon
-2. **ATV only:** ask for a morning start — the ride is **1.5 hours**, plus briefing and lunch
-3. **ATV + rafting:** a full day — ATV in the morning, rafting after lunch, one pickup and one drop-off ([combo guide](/blog/atv-rafting-combo-ubud-2026))
+Confirm the hotel pin on WhatsApp. Checker: [hotel pickup checker](/planners/hotel-pickup-checker). Arena pin: [All New Bali Adventure location](/blog/bali-atv-all-new-bali-adventure-location-guide).
 
-## Should I self-meet instead?
+## Add Ayung rafting the same day
 
-**Self-meet saves IDR 400,000 if you already have a driver for the day.** If you hired a private driver for Ubud sightseeing, send them to All New Bali Adventure, Jl. Raya Krasan, Sedang — [directions here](/blog/bali-atv-all-new-bali-adventure-location-guide). Riding a scooter yourself from Canggu after a muddy ATV and a river is tiring; most south Bali guests take the pickup.
+Rafting is **IDR 450,000 each for 2+** (list 500,000 · **min 2**). Same-day **ATV + rafting** from-price is **IDR 1,250,000** at floors, then **10% off** the activity lines. One south-coast shuttle (**650,000**) can cover both pins — you do not pay the shuttle twice. Why not an 850K sticker: [ATV + rafting from 1.25M](/blog/atv-rafting-combo-ubud-2026). Bahasa rafting: [harga rafting Ubud](/blog/harga-rafting-ubud-2026).
 
-## Common questions from south Bali guests
+**Example — couple, two singles + rafting, south pickup:** activities **2,350,000** before 10% mix → **2,115,000** after mix · + **650,000** shuttle ≈ **2,765,000**.
 
-**Is the pickup per person?** No — **IDR 400,000 per booking**, round trip.
+## Timing from the south
 
-**Is Nusa Dua or Uluwatu extra?** Not for ATV, rafting, or the combo — the flat fee applies. Very far pins we confirm on WhatsApp first.
+1. **ATV only:** morning start preferred — ride **1.5 hours** plus briefing and lunch · ~1 hour each way in the car  
+2. **ATV + rafting:** full day · ATV first · latest ATV start **13:00** so the ~15-minute transfer still reaches the river’s last run  
+3. **Rafting only:** slots **08:30 / 11:00 / 12:00** (last booking 12:00)
 
-**Can we do the Batur jeep from Seminyak too?** Yes — and jeep pickup is **already included** island-wide. See [Batur jeep pickup times from Canggu and Ubud](/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026).
+Afternoon rain (Nov–Mar) and south-coast traffic after 15:00 both argue for a morning start.
 
-**Ready?** Book the [Bali ATV](/tours/bali-atv-adventure), [Ayung rafting](/tours/whitewater-rafting), or the [ATV + rafting combo](/tours/atv-rafting-combo) — send your hotel name on WhatsApp and we confirm the pickup time.
+## Self-meet instead?
+
+Self-meet saves the **650,000** if you already have a driver for the day. Send them to **All New Bali Adventure, Jl. Raya Krasan, Sedang** — not the Banjar Kenderan office. Scootering yourself back to Canggu after mud and a river is tiring; most south Bali guests take the private shuttle (driver waits).
+
+## FAQ
+
+**Is the 650K per person?** No — once per booking, round trip, driver waits.
+
+**Is Ubud the same price?** No — Ubud shuttle is **400,000**. South coast is **650,000**.
+
+**Can we do the Batur jeep from Seminyak?** Yes — jeep pickup is **already included** island-wide. [Pickup times](/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026).
+
+**Ready?** Book [Bali ATV](/tours/bali-atv-adventure), [Ayung rafting](/tours/whitewater-rafting), or [ATV + rafting](/tours/atv-rafting-combo) — send the hotel pin and say **south pickup** or **self-meet**.
 `,
   },
   {
@@ -112,7 +117,7 @@ The track is **jungle mud and river crossings** — not caves or tunnels. Pack a
 
 **The Ayung is a beginner river.** It is **Class II–III** — splashy rapids, calm pools, and a guide steering every boat. Every rafter wears a **helmet and life jacket**, and insurance covers ages 6–65. Children are typically **7+** on the river and should have basic swimming confidence — send ages and we confirm before you pay. Expect a walk down steps into the valley and a climb back up after the run; tell us if anyone in your group has mobility limits. In the wet season (November–March), the river runs higher — take the **08:30** or **11:00** slot ([rainy season rafting guide](/blog/bali-rafting-rainy-season-oct-dec-2026)).
 
-A family of 4 rafting with pickup: **4 × 450,000 + 400,000 = 2,200,000** IDR, lunch included.
+A family of 4 rafting with pickup: **4 × 450,000 + 400,000 = 2,200,000** from Ubud, or **+ 650,000 = 2,450,000** from the south coast — lunch included.
 
 ## Mount Batur jeep with kids: sunrise or sunset?
 
@@ -210,7 +215,7 @@ Sunrise pickup is **02:00–03:00** (south Bali leaves earliest), and the day ru
 > **Key Takeaways**
 > - **Never stack all three on one day** — a 02:00 jeep pickup plus ATV and rafting is too much
 > - **Day 1:** Batur jeep sunrise · pickup and breakfast **included**
-> - **Day 2:** ATV + rafting combo · **10% off** the activities · pickup **400,000 once**
+> - **Day 2:** ATV + rafting combo · **10% off** the activities · pickup **400,000** Ubud / **650,000** south
 > - **2 guests, all-in:** from **4,000,000** (tracking jeep + tandem ATV + rafting)
 > - **Swap rule:** if day 1 is cloudy, sunset jeep later in the week
 
@@ -230,8 +235,9 @@ Sunrise pickup is **02:00–03:00** (south Bali leaves earliest), and the day ru
 
 | Plan for 2 guests | Day 1 jeep | Day 2 ATV + rafting (after 10%) | Day 2 pickup | Total |
 | --- | --- | --- | --- | --- |
-| **Value:** tracking jeep + one tandem ATV + rafting | 1,800,000 | (1,100,000 + 900,000) − 10% = **1,800,000** | 400,000 | **4,000,000** |
-| **Classic:** sit-in jeep + two single ATVs + rafting | 2,300,000 | (1,450,000 + 900,000) − 10% = **2,115,000** | 400,000 | **4,815,000** |
+| **Value (Ubud pickup):** tracking jeep + tandem ATV + rafting | 1,800,000 | (1,100,000 + 900,000) − 10% = **1,800,000** | 400,000 | **4,000,000** |
+| **Classic (Ubud pickup):** sit-in jeep + two singles + rafting | 2,300,000 | (1,450,000 + 900,000) − 10% = **2,115,000** | 400,000 | **4,815,000** |
+| **Classic (south pickup):** sit-in jeep + two singles + rafting | 2,300,000 | **2,115,000** | 650,000 | **5,065,000** |
 
 The jeep price already includes island-wide pickup and breakfast. The ATV and rafting prices include lunch, gear, guide, and insurance (ages 6–65). Groups of 3+ pay less per person: the tracking jeep drops to **750,000 each**, ATV singles to **700,000 each**. Compare more: [Bali adventure packages and prices](/blog/bali-adventure-packages-prices-2026).
 
@@ -244,11 +250,11 @@ The jeep price already includes island-wide pickup and breakfast. The ATV and ra
 ## Variations
 
 - **Families with children:** sit-in jeep at **sunset** (age 6+), rafting only on day 2 (typically 7+) — [Bali adventures with kids](/blog/bali-atv-rafting-jeep-with-kids-2026)
-- **Staying in Seminyak or Canggu:** same plan, same flat pickup — [ATV and rafting from south Bali](/blog/atv-rafting-from-seminyak-canggu-kuta-2026)
+- **Staying in Seminyak or Canggu:** same plan — day-2 shuttle is **IDR 650,000** (not 400K) — [ATV from Canggu / Seminyak](/blog/atv-rafting-from-seminyak-canggu-kuta-2026)
 - **Hikers:** take the tracking jeep — or compare the summit trek in [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek)
 - **Riders:** swap day 2 for the [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava)
 
 **Ready?** Book the [Batur jeep](/tours/batur-sunrise-jeep-tour) and the [ATV + rafting combo](/tours/atv-rafting-combo) in one WhatsApp thread — send both dates, guest count, and your hotel.
 `,
   },
-]
+] as const

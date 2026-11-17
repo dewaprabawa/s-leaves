@@ -223,21 +223,21 @@ Warm jacket, closed shoes, camera, and cash for optional coffee souvenirs. A hot
   },
   {
     slug: 'mount-batur-jeep-vs-sunrise-trek',
-    title: 'Mount Batur Jeep vs Sunrise Trek',
-    seoTitle: 'Mount Batur Jeep vs Sunrise Trek',
+    title: 'Mount Batur Jeep vs Sunrise Trek: Without Hiking vs Summit Hike',
+    seoTitle: 'Batur Jeep vs Trek | Without Hiking · 2.3M for 2',
     excerpt:
-      'Private 4×4 crater-rim viewpoint vs the 2-hour summit hike — who should skip the trek. Breakfast included on jeep and tracking.',
+      'Mount Batur sunrise without hiking? Private sit-in jeep IDR 2,300,000 for 2 to a crater-rim viewpoint (~1,350m). Tracking 1.8M for 2. Summit trek is a different product — not our jeep.',
     publishedAt: '2026-09-19',
     author: 'Sekar Bali Activity',
     image: 'https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80',
     content: `
-**Should you do a Mount Batur sunrise jeep or the summit trek?** Choose the **jeep** if you want sunrise over Lake Batur and Mount Agung **without hiking**. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) drives a private 4×4 on volcanic tracks to an **eastern-flank crater-rim viewpoint (~1,350m)** near Kintamani. Choose a **trek** if walking the dark lava trail to the **summit** is the goal. They are different products — the jeep is not a shortcut to the same summit pin.
+**Mount Batur jeep or sunrise trek?** Book the **jeep** if you want sunrise over Lake Batur **without hiking**. [Sekar Bali Activity](/tours/batur-sunrise-jeep-tour) drives a private 4×4 to an **eastern-flank crater-rim viewpoint (~1,350m)** — **sit-in price for 2 is IDR 2,300,000** (pickup + breakfast included). Book a **summit trek** only if walking ~2 hours in the dark to **1,717m** is the goal. The jeep is **not** a shortcut to the same summit pin.
 
 > **Key Takeaways**
-> - Private jeep: sit in a 4×4 · no 2-hour hike · **breakfast included** · **min 2 guests**
-> - Private tracking jeep: IDR 1,800,000 for 2 · jeep + guided trek · not the summit
-> - Trek: ~2 hours up in the dark · summit trail · higher fitness
-> - Jeep prices (2026): sit-in **2,300,000** for 2 · **2,850,000** for 3 · tracking **1,800,000** for 2 · **750,000** (3+ tracking) · hot spring **+150,000** with ticket
+> - **Without hiking:** private sit-in jeep · crater rim ~1,350m · **IDR 2,300,000 for 2**
+> - Tracking jeep: **IDR 1,800,000 for 2** · short guided walk · **still not the summit**
+> - Summit trek: ~2 hours up in the dark · different route · higher fitness
+> - Sit-in 3 guests **2,850,000** · tracking 3+ **750,000** pp · hot spring **+150,000**
 > - Hotel pickup **included island-wide** on our jeep
 > - Do not book the jeep if your checklist says “stand on the summit”
 
@@ -267,17 +267,17 @@ Trek prices vary by group size and whether a guide, headlamp, and pickup are ext
 
 ## Pickup from Ubud vs south Bali
 
-Our jeep includes hotel pickup island-wide. South Bali (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leaves earliest; Ubud is a little later. Confirm the exact time on WhatsApp. That is different from ATV/rafting, which add IDR 400,000 for hotel pickup — see [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained) and [pickup times by area](/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026).
+Our jeep includes hotel pickup island-wide. South Bali (Nusa Dua, Jimbaran, Kuta, Sanur, Seminyak, Canggu) leaves earliest; Ubud is a little later. Confirm the exact time on WhatsApp. That is different from ATV/rafting, which add **IDR 400,000 from Ubud** or **IDR 650,000 from the south coast** — see [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained) and [pickup times by area](/blog/mount-batur-jeep-pickup-times-canggu-ubud-2026).
 
 ## Who should book the jeep
 
-Book the [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) if you want caldera sunrise photographs without scrambling rock, a private vehicle, and a seated climb.
+Book the [private Mount Batur jeep — without hiking](/tours/batur-sunrise-jeep-tour) if you want caldera sunrise photographs without scrambling rock, a private vehicle, and a seated climb at **IDR 2,300,000 for 2**.
 
 Do not book the jeep if you need the summit stamp. We will not pretend the 4×4 replaces that hike.
 
-Itinerary: [2026 jeep guide](/blog/mount-batur-sunrise-jeep-tour-guide-2026). Prices: [2026 price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026).
+Itinerary: [2026 jeep guide](/blog/mount-batur-sunrise-jeep-tour-guide-2026). Prices: [2026 price guide](/blog/mount-batur-sunrise-jeep-tour-price-guide-2026). What’s in the ticket: [jeep what’s included](/blog/mount-batur-jeep-tour-whats-included-2026).
 
-**Ready for sunrise without the hike?** Message WhatsApp with hotel area, date, and guest count.
+**Ready for sunrise without hiking?** Open the [jeep money page](/tours/batur-sunrise-jeep-tour) — WhatsApp hotel area, date, and guest count. No payment to inquire.
 `,
   },
   {
@@ -313,7 +313,7 @@ Tiers: private · min 2 guests · sit-in **IDR 2,300,000** for 2 · **IDR 2,850,
 
 ## Jeep vs ATV pickup
 
-ATV, rafting, and canyon tubing add **IDR 400,000** for hotel pickup or you self-meet at All New Bali Adventure. The jeep is the opposite: **island-wide pickup is in the price**. Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
+ATV, rafting, and canyon tubing add **IDR 400,000 from Ubud** or **IDR 650,000 from the south coast**, or you self-meet. The jeep is the opposite: **island-wide pickup is in the price**. Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
 
 ## How to book the exact time
 

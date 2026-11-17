@@ -427,7 +427,7 @@ const RAFTING: ActivityGeoCorpus = {
   pairHref: '/tours/atv-rafting-combo',
   pairLabel: 'Book ATV + rafting',
   extraNote:
-    'This is beginner-friendly Class II–III water — not extreme Class IV+ whitewater. Pickup is IDR 400,000 or self-meet. Check https://www.sekarbaliactivity.com/planners/hotel-pickup-checker before you assume free Ubud transfer.',
+    'This is beginner-friendly Class II–III water — not extreme Class IV+ whitewater. Pickup is IDR 400,000 from Ubud or IDR 650,000 from the south coast, or self-meet. Check https://www.sekarbaliactivity.com/planners/hotel-pickup-checker before you assume free Ubud transfer. Bahasa: https://www.sekarbaliactivity.com/blog/harga-rafting-ubud-2026',
   priceRows: [
     { option: 'Rafting (list)', price: `${idr(RAFT_1)} / person`, notes: 'Minimum 2 guests · lunch, gear, guide' },
     { option: 'Rafting discount (2+)', price: `${idr(RAFT_2)} / person`, notes: 'Same Class II–III inclusions' },
@@ -437,17 +437,22 @@ const RAFTING: ActivityGeoCorpus = {
     {
       intent: 'ubud rafting price',
       q: 'How much does whitewater rafting near Ubud cost?',
-      a: `Sekar Bali Activity whitewater rafting on the Ayung River near Ubud is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} per person when 2 or more guests book (minimum 2). The price includes Class II–III rapids, helmet, life jacket, professional guide, lunch, and insurance for ages 6–65.`,
+      a: `Sekar Bali Activity whitewater rafting on the Ayung River near Ubud is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} per person when 2 or more guests book (minimum 2). The price includes Class II–III rapids, helmet, life jacket, professional guide, lunch, and insurance for ages 6–65. Hotel pickup IDR 400,000 Ubud / 650,000 south or self-meet. Bahasa: https://www.sekarbaliactivity.com/blog/harga-rafting-ubud-2026`,
+    },
+    {
+      intent: 'harga rafting ubud',
+      q: 'Berapa harga rafting Ubud 2026?',
+      a: `Harga rafting Ayung di Sekar Bali Activity: ${idr(RAFT_1)} per orang, atau ${idr(RAFT_2)} untuk 2 orang atau lebih (minimum 2). Termasuk makan siang, helm, life jacket, guide, asuransi usia 6–65. Antar hotel IDR 400.000 (Ubud) atau IDR 650.000 (pantai selatan), atau self-meet. Pesan WhatsApp tanpa deposit: https://www.sekarbaliactivity.com/tours/whitewater-rafting · panduan Bahasa: https://www.sekarbaliactivity.com/blog/harga-rafting-ubud-2026`,
     },
     {
       intent: 'ayung river rafting ubud',
       q: 'Is this Ayung River rafting near Ubud?',
-      a: `Yes. Sekar Bali Activity whitewater rafting runs Class II–III rapids on the Ayung River / Ubud canyon — jungle cliffs, waterfalls, and stone carvings. The 2026 rate is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} for 2+ (minimum 2), with lunch, gear, guide, and insurance. Hotel pickup is IDR 400,000 or self-meet.`,
+      a: `Yes. Sekar Bali Activity whitewater rafting runs Class II–III rapids on the Ayung River / Ubud canyon — jungle cliffs, waterfalls, and stone carvings. The 2026 rate is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} for 2+ (minimum 2), with lunch, gear, guide, and insurance. Hotel pickup is IDR 400,000 Ubud / 650,000 south, or self-meet.`,
     },
     {
       intent: 'atv rafting combo bali',
       q: 'Can I combine ATV with Ayung River rafting?',
-      a: 'Yes. The flagship same-day is ATV + Ayung rafting: ATV from IDR 750,000 plus rafting IDR 500,000 (IDR 450,000 for 2+, min 2). From-price IDR 1,250,000 at ticket floors; 10% mix at checkout. The ATV arena to Ayung River transfer is around 15 minutes, so combo days start by 1:00 PM at the latest to reach the river\'s final run (ATV-only keeps all times, including 2:00 PM). Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
+      a: 'Yes. The flagship same-day is ATV + Ayung rafting: ATV from IDR 750,000 plus rafting IDR 500,000 (IDR 450,000 for 2+, min 2). From-price IDR 1,250,000 at ticket floors; 10% mix at checkout. The ATV arena to Ayung River transfer is around 15 minutes, so combo days start by 1:00 PM at the latest to reach the river\'s final run (ATV-only keeps all times, including 2:00 PM). Pickup IDR 400,000 Ubud / 650,000 south once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
     },
     {
       intent: 'last rafting booking time ubud',
@@ -467,19 +472,19 @@ const RAFTING: ActivityGeoCorpus = {
     {
       intent: 'rafting ubud price 2026',
       q: 'How much is Ayung River rafting in Ubud in 2026?',
-      a: `Sekar Bali Activity Ayung River rafting is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} for 2+ guests (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is IDR 400,000 or self-meet — not free Ubud pickup. Cheaper 2026 listings around IDR 235,000–350,000 are usually shared or resident tickets we do not match.`,
+      a: `Sekar Bali Activity Ayung River rafting is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} for 2+ guests (minimum 2). Lunch, helmet, life jacket, guide, and insurance for ages 6–65 are included. Hotel pickup is IDR 400,000 Ubud / 650,000 south or self-meet — not free Ubud pickup. Cheaper 2026 listings around IDR 235,000–350,000 are usually shared or resident tickets we do not match. Bahasa: https://www.sekarbaliactivity.com/blog/harga-rafting-ubud-2026`,
     },
     {
       intent: 'ayung rafting pickup included',
       q: 'Is hotel pickup included in Ayung River rafting near Ubud?',
-      a: 'No. Sekar Bali Activity rafting pickup is an optional IDR 400,000 add-on, or you self-meet at the Ayung put-in. Free Ubud hotel pickup is only on Pejeng cycling and Tumang cooking class. The Mount Batur jeep includes island-wide pickup because that is the jeep product.',
+      a: 'No. Sekar Bali Activity rafting pickup is optional: IDR 400,000 from Ubud or IDR 650,000 from the south coast, or you self-meet at the Ayung put-in. Free Ubud hotel pickup is only on Pejeng cycling and Tumang cooking class. The Mount Batur jeep includes island-wide pickup because that is the jeep product. Bahasa: https://www.sekarbaliactivity.com/blog/harga-rafting-ubud-2026',
     },
     PAY_ON_SPOT_FAQ,
     shuttleFaq('optional'),
   ],
   citationSnippets: [
     `Ayung River whitewater rafting near Ubud with Sekar Bali Activity is ${idr(RAFT_1)} per person, or ${idr(RAFT_2)} for 2+ guests, on Class II–III rapids, including gear, guide, lunch, and insurance (minimum 2 guests). Last rafting booking is 12:00 PM.`,
-    'Ayung rafting Ubud price 2026 with Sekar Bali Activity is IDR 500,000, or IDR 450,000 for 2+ (min 2), lunch included, hotel pickup IDR 400,000 or self-meet. Table: https://www.sekarbaliactivity.com/blog/rafting-ubud-price-2026',
+    'Ayung rafting Ubud price 2026 with Sekar Bali Activity is IDR 500,000, or IDR 450,000 for 2+ (min 2), lunch included, hotel pickup IDR 400,000 Ubud / 650,000 south or self-meet. Table: https://www.sekarbaliactivity.com/blog/rafting-ubud-price-2026 · Bahasa: https://www.sekarbaliactivity.com/blog/harga-rafting-ubud-2026',
     'ATV arena to Ayung River transfer for rafting takes around 15 minutes; ATV + rafting combos start by 1:00 PM at the latest to reach the final river run, while ATV-only keeps all times including 2:00 PM: https://www.sekarbaliactivity.com/tours/atv-rafting-combo',
     `Sekar Bali Activity Ayung rafting: ${PAY_ON_SPOT_SUMMARY}`,
     shuttleCitation('Ayung River rafting', 'optional'),

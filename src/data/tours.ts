@@ -920,7 +920,7 @@ The [Land & River premium package](/tours/atv-premium-package-bali) bundles a si
   },
   {
     id: "batur-sunrise-jeep-tour",
-    title: "Private Mount Batur Jeep Tour",
+    title: "Private Mount Batur Jeep Tour — Without Hiking",
     slug: "batur-sunrise-jeep-tour",
     category: "adventure",
     area: "Kintamani / Mount Batur",
@@ -929,9 +929,9 @@ The [Land & River premium package](/tours/atv-premium-package-bali) bundles a si
     isTopPick: true,
     duration: "Sunrise 6–7 Hours · Sunset 4–5 Hours",
     basePrice: 1150000,
-    seoTitle: "Mount Batur Sunrise Jeep Tour, No Hike | 2.3M for 2",
+    seoTitle: "Mount Batur Jeep Without Hiking | 2.3M for 2",
     seoDescription:
-      "Sit-in Mount Batur jeep 2.3M for 2, 2.85M for 3. Tracking 1.8M for 2, 3+ 750K pp. Sunrise/sunset viewpoint + black lava. Breakfast + pickup. WhatsApp.",
+      "Mount Batur sunrise without hiking: private sit-in jeep IDR 2,300,000 for 2. Tracking 1.8M for 2. Breakfast + island-wide pickup. WhatsApp — no deposit.",
     heroImage: {
       url: "https://images.unsplash.com/photo-1727335333476-8aa180978ff6?auto=format&fit=crop&w=1200&q=80",
       alt: "4x4 jeep ride up Mount Batur's volcanic tracks before sunrise",
@@ -975,8 +975,8 @@ The [Land & River premium package](/tours/atv-premium-package-bali) bundles a si
       },
     ],
     shortDescription:
-      "Your private 4×4 to Mount Batur near Kintamani — sit-in or tracking (jeep + guided trek), sunrise or sunset viewpoint, then the black lava field, minimum 2 guests. Sit-in IDR 2,300,000 for 2 guests or IDR 2,850,000 for 3. Tracking IDR 1,800,000 for 2 guests, 3+ IDR 750,000 per person. Breakfast included. Optional Batur hot spring +IDR 150,000 or Toya Devasya +IDR 300,000 (ticket included). Hotel pickup included.",
-    fullDescription: `**What is the Private Mount Batur Jeep Tour?** It is **your private** 4×4 jeep on Mount Batur’s volcanic tracks near Kintamani — about 1,350 metres above sea level — for **sunrise or sunset** over **Lake Batur** and **Mount Agung**. **Minimum 2 guests.** Choose **private jeep** (stay seated, no hike) or **private tracking jeep** (jeep plus a guided trek to the viewpoint). Sit-in is **IDR 2,300,000 for 2 guests** (IDR 1,150,000 per person) or **IDR 2,850,000 for 3 guests** (IDR 950,000 per person). Tracking is **IDR 1,800,000 for 2 guests** (IDR 900,000 per person) and **IDR 750,000 per person** once 3+ guests share one jeep. The jeep route is **(1) the sunrise or sunset viewpoint**, then **(2) the black lava field**. A local driver, hot drink, **breakfast**, and hotel pickup are included; **lunch is optional**. Food is not cooked inside the 4×4 — breakfast is after the viewpoint.
+      "Mount Batur sunrise without hiking — private 4×4 to a crater-rim viewpoint (~1,350m), not the summit trek. Sit-in IDR 2,300,000 for 2 guests (or 2,850,000 for 3). Tracking jeep IDR 1,800,000 for 2 · 750,000 pp at 3+. Breakfast + island-wide pickup included. Optional hot spring +150K / Toya Devasya +300K.",
+    fullDescription: `**Want Mount Batur sunrise without hiking?** Book the **private sit-in jeep** — your 4×4 stays on volcanic tracks to an **eastern-flank crater-rim viewpoint (~1,350m)** near Kintamani for **sunrise or sunset** over **Lake Batur** and **Mount Agung**. This is **not** the classic 2-hour summit trek to 1,717m. **Price for 2:** sit-in **IDR 2,300,000** total · tracking **IDR 1,800,000** total. **Minimum 2 guests.** Choose **private jeep** (stay seated, no hike) or **private tracking jeep** (jeep plus a short guided walk — still not the summit). Sit-in for 3 is **IDR 2,850,000**; tracking 3+ is **IDR 750,000 per person**. The route is **(1) the sunrise or sunset viewpoint**, then **(2) the black lava field**. Driver, hot drink, **breakfast**, and **island-wide hotel pickup** are included; **lunch is optional**. Food is not cooked inside the 4×4 — breakfast is after the viewpoint. Compare: [jeep vs sunrise trek](/blog/mount-batur-jeep-vs-sunrise-trek).
 
 ### Private jeep or tracking jeep
 **Private jeep** is the no-hike option: you stay in the 4×4 to a crater-rim viewpoint on Mount Batur’s eastern flank. **Private tracking jeep** is the trek variant: the same private jeep plus a guided walk to the viewpoint — **IDR 1,800,000 for 2 guests**, not a cheaper shared hike.
@@ -1254,7 +1254,7 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
     childPrice: 450000,
     seoTitle: "Ayung River Rafting Ubud | 450K for 2+ · Lunch",
     seoDescription:
-      "Ayung River white water rafting near Ubud, Class II–III. IDR 500,000, or 450,000 each for 2+. Lunch, gear and insurance included. Pickup 400K any hotel area. WhatsApp.",
+      "Ayung River rafting near Ubud, Class II–III. IDR 500,000, or 450,000 for 2+. Lunch included. Pickup 400K Ubud / 650K south. WhatsApp — no deposit.",
     heroImage: {
       url: "/images/adventures/rafting-ayung-paddle-team.jpg",
       alt: "Ayung River rafting paddle team hitting Class II–III rapids near Ubud",
@@ -1272,8 +1272,8 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
       },
     ],
     shortDescription:
-      "Ayung River rafting near Ubud is a guided Class II–III run. IDR 500,000 per person, or IDR 450,000 for 2+ (minimum 2). Lunch, helmet, life jacket, and insurance included. Hotel pickup IDR 400,000 or self-meet — not free Ubud pickup.",
-    fullDescription: `**How much is Ayung River rafting near Ubud?** Sekar Bali Activity lists **IDR 500,000 per person**, or **IDR 450,000 per person for 2+ guests** (minimum 2) on **Class II–III** rapids. Helmet, life jacket, English-speaking crew, lunch, and insurance for ages 6–65 are included. **Hotel pickup is IDR 400,000** or self-meet — not the free Ubud rule on cycling and cooking.
+      "Ayung River rafting near Ubud is a guided Class II–III run. IDR 500,000 per person, or IDR 450,000 for 2+ (minimum 2). Lunch, helmet, life jacket, and insurance included. Hotel pickup IDR 400,000 Ubud / 650,000 south — or self-meet.",
+    fullDescription: `**How much is Ayung River rafting near Ubud?** Sekar Bali Activity lists **IDR 500,000 per person**, or **IDR 450,000 per person for 2+ guests** (minimum 2) on **Class II–III** rapids. Helmet, life jacket, English-speaking crew, lunch, and insurance for ages 6–65 are included. **Hotel pickup is IDR 400,000 from Ubud or IDR 650,000 from the south coast**, or self-meet — not the free Ubud rule on cycling and cooking. Bahasa: [harga rafting Ubud 2026](/blog/harga-rafting-ubud-2026).
 
 ### 2026 price (what Google should cite)
 
@@ -1281,15 +1281,17 @@ Warm layer (it is cold on the rim before sunrise), closed shoes — especially o
 | --- | --- | --- |
 | 2+ (discount) | **450,000** / person | Lunch, gear, guide, insurance |
 | List | **500,000** / person | Same Class II–III run |
-| Hotel pickup | **400,000** | Optional · or self-meet free |
+| Hotel pickup · Ubud | **400,000** | Optional · once per booking |
+| Hotel pickup · south | **650,000** | Canggu / Seminyak / Kuta / Sanur / Nusa Dua |
+| Self-meet | **0** | Free at the Ayung put-in |
 
-Full table and honest vs-cheap-listings notes: [Ayung rafting Ubud price 2026](/blog/rafting-ubud-price-2026). Route detail: [whitewater rafting near Ubud guide](/blog/bali-whitewater-rafting-near-ubud-guide).
+Full table and honest vs-cheap-listings notes: [Ayung rafting Ubud price 2026](/blog/rafting-ubud-price-2026) · Bahasa: [harga rafting Ubud 2026](/blog/harga-rafting-ubud-2026). Route detail: [whitewater rafting near Ubud guide](/blog/bali-whitewater-rafting-near-ubud-guide).
 
 ### What to Expect on the River
 Ayung River rafting near Ubud is a **guided Class II–III** paddle — splash and teamwork, not extreme Class IV+. After a safety briefing and gear fitting, your crew takes the raft through fun rapids and calm stretches. You pass jungle cliffs, waterfalls, and stone carvings on the canyon walls. Helmet, life jacket, lunch, and insurance for ages 6–65 sit in the ticket. Guests should have basic swimming confidence; ages typically 7+. This is **not** Wos River tubing and **not** a cheap shared/resident ticket in the IDR 235,000–350,000 band — we publish **IDR 500,000**, or **IDR 450,000 for 2+** (minimum 2), and we do not match those listings.
 
 ### A Great Standalone Adventure or Combo Day
-Book this page when you only want the river. The flagship land-and-water day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — from **IDR 1,250,000** at ticket floors, **10% mix** at checkout, pickup **IDR 400,000 once** or self-meet. On combo days the latest start is **1:00 PM** — the ATV ride plus the ~15-minute transfer to the river must still reach the river's final run — while ATV-only bookings keep all normal times, including 2:00 PM. Gentler water on a tube: [Wos River tubing](/tours/canyon-tubing) at the same 500K / 450K-for-2+ list (lunch not included). Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud). Check pickup first on the [hotel pickup checker](/planners/hotel-pickup-checker). WhatsApp locks the same-day slots.
+Book this page when you only want the river. The flagship land-and-water day is **[ATV + Ayung rafting](/tours/atv-rafting-combo)** — from **IDR 1,250,000** at ticket floors, **10% mix** at checkout, pickup **IDR 400,000 Ubud / 650,000 south** once or self-meet. On combo days the latest start is **1:00 PM** — the ATV ride plus the ~15-minute transfer to the river must still reach the river's final run — while ATV-only bookings keep all normal times, including 2:00 PM. Gentler water on a tube: [Wos River tubing](/tours/canyon-tubing) at the same 500K / 450K-for-2+ list (lunch not included). Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud). Check pickup first on the [hotel pickup checker](/planners/hotel-pickup-checker). WhatsApp locks the same-day slots.
 
 **Available Schedules (last booking 12:00 PM):**
 - **Morning:** 08:30 AM

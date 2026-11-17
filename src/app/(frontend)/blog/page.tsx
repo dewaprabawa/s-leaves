@@ -27,6 +27,8 @@ const ACTIVITY_GUIDES = [
   { label: 'Rafting', href: '/tours/whitewater-rafting' },
   { label: 'Ayung rafting guide', href: '/blog/bali-whitewater-rafting-near-ubud-guide' },
   { label: 'Rafting price 2026', href: '/blog/rafting-ubud-price-2026' },
+  { label: 'Harga rafting Ubud', href: '/blog/harga-rafting-ubud-2026' },
+  { label: 'ATV from Canggu', href: '/blog/atv-rafting-from-seminyak-canggu-kuta-2026' },
   { label: 'Tubing', href: '/tours/canyon-tubing' },
   { label: 'Tubing price 2026', href: '/blog/wos-river-tubing-price-2026' },
   { label: 'Swing Heaven', href: '/tours/swing-heaven-bali' },

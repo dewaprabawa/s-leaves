@@ -1,10 +1,16 @@
-import { GTM_CONTAINER_ID } from "@/lib/ga"
+import { GA_MEASUREMENT_ID, GTM_CONTAINER_ID } from "@/lib/ga"
 import GaLeadTracker from "@/components/GaLeadTracker"
 
-const GTM_BOOTSTRAP = `
+/**
+ * Static head install so GA4 Tag Assistant / “Google tag wasn’t detected”
+ * can see `gtag/js?id=G-…` in view-source. GTM alone with an empty
+ * container does not count as a detected Google tag for this property.
+ */
+const HEAD_BOOTSTRAP = `
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}');
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -12,9 +18,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');
 `
 
-/** Static head tag so the container is in the first HTML response. */
+/** GA4 Google tag + GTM bootstrap in the first HTML response. */
 export function GoogleTagManagerHead() {
-  return <script id="google-tag-manager" dangerouslySetInnerHTML={{ __html: GTM_BOOTSTRAP }} />
+  return (
+    <>
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+      />
+      <script id="google-tag-manager" dangerouslySetInnerHTML={{ __html: HEAD_BOOTSTRAP }} />
+    </>
+  )
 }
 
 /** Noscript fallback plus the WhatsApp lead listener. Render at the start of body. */

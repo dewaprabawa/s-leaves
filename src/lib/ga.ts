@@ -1,4 +1,8 @@
-/** Configure this ID on the GA4 tag inside the GTM container. Do not also load gtag.js. */
+/**
+ * GA4 measurement ID — loaded via gtag.js in `GoogleAnalytics.tsx`.
+ * Keep GTM free of a duplicate GA4 Configuration tag for this same ID
+ * (otherwise page views double-count). Use GTM for extra tags only.
+ */
 export const GA_MEASUREMENT_ID = 'G-TJW418QSF8'
 export const GTM_CONTAINER_ID = 'GTM-MRSRZFNP'
 
@@ -13,7 +17,7 @@ declare global {
   }
 }
 
-/** Pushes a GTM custom event. The container listens for the event name. */
+/** Sends the event to GA4 via gtag and mirrors it on dataLayer for GTM. */
 export function trackGaEvent(eventName: string, params?: GaEventParams) {
   if (typeof window === 'undefined') return
   window.dataLayer = window.dataLayer || []
@@ -24,6 +28,9 @@ export function trackGaEvent(eventName: string, params?: GaEventParams) {
     }
   }
   window.dataLayer.push(payload)
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, params)
+  }
 }
 
 /** Primary conversion: guest opens official WhatsApp. Mark `generate_lead` as a key event in GA4. */

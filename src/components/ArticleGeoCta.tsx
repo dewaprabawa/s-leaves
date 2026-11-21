@@ -112,6 +112,7 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'which-bali-wheels-2026': 'bali-motorbike-traveling-trip',
   'perfect-one-day-ubud-itinerary': 'full-day-ubud-tour',
   'tirta-empu-melukat-ubud-guide': 'tirta-empu-purification',
+  'best-price-tirta-empul-tour-2026': 'tirta-empu-purification',
   'bali-temple-dress-code': 'tirta-empu-purification',
   'swing-heaven-bali-ubud-guide': 'swing-heaven-bali',
   'is-bali-swing-worth-it': 'swing-heaven-bali',

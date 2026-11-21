@@ -73,7 +73,7 @@ const faqs = [
   },
   {
     question: "How much is the Tirta Empul spiritual melukat?",
-    answer: "IDR 780,000 per person for an exclusive spiritual purification at Tirta Empul. Includes temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Optional shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast; self-meet or your own driver is free. Pay on the spot — cash or card. Typical start 08:00 or 09:00. This is not Griya Beji Waterfall in Punggul."
+    answer: "IDR 780,000 per person for an exclusive spiritual purification at Tirta Empul — about 2.5 hours. Includes temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Breakfast is not included. Optional shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast; self-meet or your own driver is free. Pay on the spot — cash or card. Typical start 08:00 or 09:00. This is not Griya Beji Waterfall in Punggul."
   },
   {
     question: "How much is Griya Beji Waterfall purification near Ubud?",

@@ -21,7 +21,10 @@ import {
   quoteCookingPlanner,
   quoteJeepPlanner,
   quoteMotorbikePlanner,
+  quoteTirtaEmpulPlanner,
+  TIRTA_PICKUP_ZONES,
   type PlannerQuote,
+  type TirtaPickupZoneId,
 } from "@/lib/plannerQuotes"
 import { buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
 
@@ -87,6 +90,55 @@ function ErrorBox({ message }: { message: string }) {
     <p className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-800">
       {message}
     </p>
+  )
+}
+
+export function TirtaEmpulPriceCalculator() {
+  const [guests, setGuests] = useState(2)
+  const [pickupZone, setPickupZone] = useState<TirtaPickupZoneId>("self-meet")
+  const quote = useMemo(
+    () => quoteTirtaEmpulPlanner({ guests, pickupZone }),
+    [guests, pickupZone],
+  )
+
+  return (
+    <div className="space-y-5">
+      <label className="block">
+        <span className={labelClass}>Guests</span>
+        <input
+          type="number"
+          min={1}
+          max={20}
+          value={guests}
+          onChange={(event) => setGuests(Number(event.target.value))}
+          className={fieldClass}
+        />
+      </label>
+      <label className="block">
+        <span className={labelClass}>Pickup from every Bali zone (extra)</span>
+        <select
+          value={pickupZone}
+          onChange={(event) => setPickupZone(event.target.value as TirtaPickupZoneId)}
+          className={fieldClass}
+        >
+          {TIRTA_PICKUP_ZONES.map((zone) => (
+            <option key={zone.id} value={zone.id}>
+              {zone.label}
+            </option>
+          ))}
+        </select>
+      </label>
+      <p className="text-xs leading-relaxed text-brand-green-light">
+        Ceremony is about 2.5 hours · IDR 780,000 per person (ticket, sarong, offering, licensed guide, locker · no
+        breakfast). Shuttle is optional — Ubud area IDR 400,000 · south coast IDR 650,000 · self-meet free · North /
+        East quoted on WhatsApp.
+      </p>
+      {quote.ok ? (
+        <QuoteResult quote={quote} pagePath="/planners/tirta-empul-price-calculator" />
+      ) : (
+        <ErrorBox message={quote.error} />
+      )}
+    </div>
   )
 }
 
@@ -404,6 +456,8 @@ export function PlannerWidget({ slug }: { slug: string }) {
   switch (slug) {
     case "atv-price-calculator":
       return <AtvPriceCalculator />
+    case "tirta-empul-price-calculator":
+      return <TirtaEmpulPriceCalculator />
     case "motorbike-tour-price":
       return <MotorbikePriceCalculator />
     case "batur-jeep-price":

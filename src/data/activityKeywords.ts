@@ -317,7 +317,9 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
   'tirta-empu-purification': {
     head: [
       'Tirta Empul purification',
-      'private melukat Bali',
+      'best price Tirta Empul tour',
+      'Tirta Empul price calculator',
+      'Tirta Empul calculator price',
       'melukat Ubud',
       'Tirta Empul water purification ceremony',
       'melukat ceremony Ubud',
@@ -331,7 +333,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'water purification ritual Bali',
       'sacred water spring Bali',
       'Tirta Empul tour with shuttle optional',
-      'spiritual cleansing Bali',
+      'Tirta Empul pickup from Bali',
       'Tirta Empul purification price',
       'melukat cooking class Ubud',
     ],
@@ -926,6 +928,7 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
     'bali-atv-adventure',
   ],
   'tirta-empu-melukat-ubud-guide': 'tirta-empu-purification',
+  'best-price-tirta-empul-tour-2026': 'tirta-empu-purification',
   'bali-temple-dress-code': ['tirta-empu-purification', 'griya-beji-waterfall'],
   'luwak-coffee-plantation-umah-kuno-price-2026': 'luwak-coffee-plantation',
   'luwak-coffee-ethical-sourcing': 'luwak-coffee-plantation',
@@ -1378,6 +1381,13 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'Tirta Empul price',
     'Tirta Empul water purification ceremony',
     'melukat ceremony Ubud',
+  ],
+  'best-price-tirta-empul-tour-2026': [
+    'best price Tirta Empul tour',
+    'Tirta Empul calculator price',
+    'Tirta Empul price calculator',
+    'Tirta Empul tour cost 2026',
+    'Tirta Empul pickup price Bali',
   ],
   'griya-beji-waterfall-ubud-guide': [
     'Griya Beji Waterfall price',

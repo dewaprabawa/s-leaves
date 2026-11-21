@@ -168,11 +168,12 @@ export const ACTIVITY_ARTICLE_CLUSTERS = {
     { title: 'Long driver day + kitchen', href: '/blog/long-private-driver-day-ubud-2026' },
   ],
   melukat: [
+    { title: 'Best price Tirta Empul tour 2026', href: '/blog/best-price-tirta-empul-tour-2026' },
+    { title: 'Tirta Empul price calculator', href: '/planners/tirta-empul-price-calculator' },
     { title: 'Tirta Empu melukat guide', href: '/blog/tirta-empu-melukat-ubud-guide' },
     { title: 'Griya Beji vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
     { title: 'Bali temple dress code', href: '/blog/bali-temple-dress-code' },
-    { title: 'Afternoon Tumang cooking class', href: '/tours/balinese-cooking-class' },
-    { title: 'Book Tirta Empul / Beji', href: '/tours/tirta-empu-purification' },
+    { title: 'Book Tirta Empul melukat', href: '/tours/tirta-empu-purification' },
   ],
   coffee: [
     { title: 'Umah Kuno Luwak price 2026', href: '/blog/luwak-coffee-plantation-umah-kuno-price-2026' },
@@ -380,6 +381,7 @@ const SLUG_TO_CLUSTER: Record<string, ClusterId> = {
   'palm-reading-bali-griya-beji': 'griya',
   'mental-healing-bali-griya-beji': 'griya',
   'tirta-empu-melukat-ubud-guide': 'melukat',
+  'best-price-tirta-empul-tour-2026': 'melukat',
   'bali-temple-dress-code': 'melukat',
   'luwak-coffee-plantation-umah-kuno-price-2026': 'coffee',
   'luwak-coffee-ethical-sourcing': 'coffee',

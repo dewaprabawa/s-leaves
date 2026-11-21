@@ -24,14 +24,14 @@ export const MELUKAT_SALES = {
   shortName: 'Tirta Empul Melukat',
   tagline: 'Exclusive spiritual tour at Bali’s legendary holy spring',
   description:
-    'Exclusive spiritual melukat at Tirta Empul — Bali’s most legendary sacred water-spring temple. Licensed guide walks you through purification. Includes temple ticket, sarong, Balinese-style offering, and locker. IDR 780,000 per person. Optional shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast; self-meet or your own driver is free. Pay on the spot — cash or card.',
+    'Exclusive spiritual melukat at Tirta Empul — about 2.5 hours. Licensed guide walks you through purification. Includes temple ticket, sarong, Balinese-style offering, and locker. No breakfast. IDR 780,000 per person. Optional shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast; self-meet or your own driver is free. Pay on the spot — cash or card.',
   highlights: [
-    'Tirta Empul — legendary sacred water-spring temple',
+    'Tirta Empul — about 2.5 hours · no breakfast',
     'Licensed guide through the purification',
     'Ticket, sarong, offering, and locker included',
     'Optional shuttle · self-meet free · cash or card',
   ],
-  duration: '3–4 hours',
+  duration: 'Approx. 2.5 hours',
   image: '/images/melukat/tirta-empu-hero-2026-11.jpg',
   imageAlt:
     'Guest at Tirta Empul sacred water spring during a guided melukat purification near Ubud',

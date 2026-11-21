@@ -11,7 +11,7 @@
  * Money-page heads stay on /tours/[slug]. Compare / worth stay on /blog/*.
  */
 
-export const PLANNER_UPDATED = '2026-09-29'
+export const PLANNER_UPDATED = '2026-11-21'
 
 export type PlannerCategoryId = 'pricing' | 'logistics' | 'chooser'
 
@@ -137,6 +137,51 @@ export const PLANNERS: Planner[] = [
     ],
   },
   {
+    slug: 'tirta-empul-price-calculator',
+    category: 'pricing',
+    seoTitle: 'Tirta Empul price calculator',
+    h1: 'Free Tirta Empul price calculator',
+    job: 'Ceremony IDR 780,000 / person (~2.5 hours, no breakfast) plus optional pickup from every Bali zone.',
+    description:
+      'Free Tirta Empul price calculator. Exclusive spiritual melukat IDR 780,000 per person for about 2.5 hours (ticket, sarong, offering, licensed guide, locker — no breakfast). Add optional shuttle from Ubud (IDR 400,000), south coast (IDR 650,000), or self-meet free. North / East quoted on WhatsApp.',
+    definition:
+      'The Tirta Empul price calculator is a free IDR estimator for Sekar Bali Activity’s exclusive spiritual melukat at Pura Tirta Empul in Tampaksiring. Ceremony is about 2.5 hours at IDR 780,000 per person and includes temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Breakfast is not included. Private shuttle is optional: IDR 400,000 from Ubud / Gianyar, IDR 650,000 from the south coast (Canggu, Seminyak, Kuta, Sanur, Jimbaran, Nusa Dua, Uluwatu), or free self-meet / own driver. Pickup from North or East Bali is quoted on WhatsApp. Pay cash or card on the spot. Not Griya Beji Waterfall.',
+    keywords: [
+      'Tirta Empul price calculator',
+      'Tirta Empul calculator price',
+      'Tirta Empul tour cost calculator',
+      'melukat price calculator Bali',
+      'Tirta Empul pickup price',
+    ],
+    tryLabel: 'Calculate Tirta Empul IDR',
+    tourHref: '/tours/tirta-empu-purification',
+    tourLabel: 'Tirta Empul money page',
+    blogHref: '/blog/best-price-tirta-empul-tour-2026',
+    blogLabel: 'Best price Tirta Empul tour 2026',
+    howItWorks: [
+      'Enter guest count — ceremony is IDR 780,000 per person.',
+      'Choose pickup: self-meet free, Ubud area IDR 400,000, south coast IDR 650,000, or elsewhere (WhatsApp quote).',
+      'Read the total, then WhatsApp the estimate — no deposit to inquire.',
+    ],
+    qa: [
+      {
+        question: 'How much is a Tirta Empul tour with Sekar Bali Activity?',
+        answer:
+          'The exclusive spiritual melukat is IDR 780,000 per person for about 2.5 hours at the temple. That covers temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Breakfast is not included. Optional private shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking. Self-meet is free.',
+      },
+      {
+        question: 'Can I get pickup from every area of Bali?',
+        answer:
+          'Yes as an extra. Published shuttle zones are Ubud / Gianyar (IDR 400,000) and south coast (IDR 650,000). Self-meet or your own driver is free. North Bali, East Bali, Lovina, Amed, Candidasa, and Sidemen are quoted on WhatsApp — use the calculator’s elsewhere option, then send your hotel pin.',
+      },
+      {
+        question: 'Is this the cheapest Tirta Empul ticket?',
+        answer:
+          'No — and we do not claim cheapest. Walk-in temple tickets without a licensed guide are lower. This calculator prices the guided spiritual package with offering, sarong, and locker published on our money page.',
+      },
+    ],
+  },
+  {
     slug: 'motorbike-tour-price',
     category: 'pricing',
     seoTitle: 'Bali motorbike tour calculator',
@@ -182,9 +227,9 @@ export const PLANNERS: Planner[] = [
     h1: 'Is hotel pickup included in Ubud?',
     job: 'Check free Ubud, island-wide jeep, IDR 400,000, or quoted pickup in one pass.',
     description:
-      'Free hotel pickup checker for Sekar Bali Activity. Cycling and cooking include free Ubud pickup. Swing Heaven includes the hotel driver. The Batur jeep includes island-wide pickup. ATV, rafting, tubing, and Griya Beji are IDR 400,000 or self-meet.',
+      'Free hotel pickup checker for Sekar Bali Activity. Cycling and cooking include free Ubud pickup. Swing Heaven includes the hotel driver. The Batur jeep includes island-wide pickup. ATV, rafting, tubing, Griya Beji, and Tirta Empul are IDR 400,000 Ubud / 650,000 south or self-meet.',
     definition:
-      'The hotel pickup checker answers whether hotel pickup is included on a Sekar Bali Activity booking. Pejeng cycling and Tumang cooking include free Ubud-area pickup. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). The private Mount Batur jeep includes island-wide pickup. ATV, rafting, tubing, and Griya Beji are IDR 400,000 or self-meet. Motorbike pickup is at the area you choose. Park and UTV pickup is quoted.',
+      'The hotel pickup checker answers whether hotel pickup is included on a Sekar Bali Activity booking. Pejeng cycling and Tumang cooking include free Ubud-area pickup. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). The private Mount Batur jeep includes island-wide pickup. ATV, rafting, tubing, Griya Beji, and Tirta Empul melukat are IDR 400,000 from Ubud or IDR 650,000 from the south coast, or free self-meet. Motorbike pickup is at the area you choose. Park and UTV pickup is quoted.',
     keywords: [
       'hotel pickup checker Ubud',
       'is hotel pickup included Bali',
@@ -205,12 +250,12 @@ export const PLANNERS: Planner[] = [
       {
         question: 'Which tours include free Ubud hotel pickup?',
         answer:
-          'Pejeng ricefield cycling and Tumang Bali Cooking Class include complimentary Ubud-area hotel pickup. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). The private Mount Batur jeep includes island-wide pickup in the published rate. ATV, rafting, tubing, and Griya Beji do not.',
+          'Pejeng ricefield cycling and Tumang Bali Cooking Class include complimentary Ubud-area hotel pickup. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). The private Mount Batur jeep includes island-wide pickup in the published rate. ATV, rafting, tubing, Griya Beji, and Tirta Empul melukat do not — they use optional shuttle or self-meet.',
       },
       {
         question: 'What is the IDR 400,000 pickup fee?',
         answer:
-          'It is the optional hotel pickup and drop-off surcharge on ATV, rafting, canyon tubing, and Griya Beji. Self-meet has no pickup fee. It is not Swing Heaven (driver included), not the motorbike south shuttle, and not jeep pickup.',
+          'It is the optional hotel pickup and drop-off surcharge on ATV, rafting, canyon tubing, Griya Beji, and Tirta Empul melukat. Self-meet has no pickup fee. It is not Swing Heaven (driver included), not the motorbike south shuttle, and not jeep pickup. South coast on those activities is IDR 650,000 once. Tirta Empul calculator: /planners/tirta-empul-price-calculator.',
       },
     ],
   },
@@ -336,7 +381,7 @@ export const PICKUP_ACTIVITIES: Array<{
   { id: 'cooking', label: 'Tumang cooking class', href: '/tours/balinese-cooking-class' },
   { id: 'jeep', label: 'Mount Batur jeep', href: '/tours/batur-sunrise-jeep-tour' },
   { id: 'motorbike', label: 'Motorbike / scooter tour', href: '/tours/bali-motorbike-traveling-trip' },
-  { id: 'melukat', label: 'Tirta Empu / Beji melukat', href: '/tours/tirta-empu-purification' },
+  { id: 'melukat', label: 'Tirta Empul spiritual melukat', href: '/tours/tirta-empu-purification' },
   { id: 'coffee', label: 'Umah Kuno luwak', href: '/tours/luwak-coffee-plantation' },
   { id: 'utv', label: 'UTV at Bali Buggy Adventures', href: '/tours/utv-buggy-bali-adventure' },
   { id: 'parks', label: 'Park / workshop tickets', href: '/tours/bali-bird-park' },

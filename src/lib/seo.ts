@@ -143,6 +143,8 @@ export const SITE_NAV_LINKS = [
   { name: 'Bali Motorbike Traveling Trip', url: `${SITE_URL}/tours/bali-motorbike-traveling-trip` },
   { name: 'Free Bali activity planners', url: `${SITE_URL}/planners` },
   { name: 'ATV Ubud price calculator', url: `${SITE_URL}/planners/atv-price-calculator` },
+  { name: 'Tirta Empul price calculator', url: `${SITE_URL}/planners/tirta-empul-price-calculator` },
+  { name: 'Best Price Tirta Empul Tour 2026', url: `${SITE_URL}/blog/best-price-tirta-empul-tour-2026` },
   { name: 'Hotel pickup checker', url: `${SITE_URL}/planners/hotel-pickup-checker` },
   { name: 'Mount Batur jeep calculator', url: `${SITE_URL}/planners/batur-jeep-price` },
   { name: 'Ubud Batik Class', url: `${SITE_URL}/tours/batik-class` },

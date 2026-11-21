@@ -541,7 +541,7 @@ Want mud and rapids the same day? [ATV + Ayung rafting](/tours/atv-rafting-combo
 | Swing Heaven Bali | **530,000** · **630,000** with lunch | 1.5–2.5 hrs | Required shuttle 400K Ubud / 650K south | [Swing Heaven](/tours/swing-heaven-bali) |
 | Aloha Ubud Swing | **450,000** Active · **50,000** Entrance | 1.5–2.5 hrs | Required shuttle 400K Ubud / 650K south | [Aloha](/tours/aloha-ubud-swing) |
 | Griya Beji Waterfall | **300,000** · palm **1,000,000** · healing **1,500,000** | 1–2.5 hrs | IDR 400K or self-meet Punggul | [Griya Beji](/tours/griya-beji-waterfall) |
-| Tirta Empul Purification | **780,000** | 3–4 hrs | Shuttle optional (400K/650K) or self-meet | [Tirta Empul](/tours/tirta-empu-purification) |
+| Tirta Empul Purification | **780,000** | ~2.5 hrs · no breakfast | Shuttle optional (400K/650K) or self-meet | [Tirta Empul](/tours/tirta-empu-purification) |
 | Private Batur jeep | from **750,000** (3+ tracking) | 4–7 hrs | Island-wide included | [Private jeep](/tours/batur-sunrise-jeep-tour) |
 | Umah Kuno Luwak | **850,000** (1) · **550,000** each (4+) | 1.5 hrs | Not included | [Coffee](/tours/luwak-coffee-plantation) |
 | Full day Ubud tour | **600,000** (1) · **350,000** each (4+) | 10 hrs | Private car | [Full day](/tours/full-day-ubud-tour) |

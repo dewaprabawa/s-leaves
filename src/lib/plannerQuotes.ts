@@ -3,7 +3,9 @@ import {
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
   COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
+  MELUKAT_PRICE_IDR,
 } from '@/data/cultureSales'
+import { PRIVATE_SHUTTLE_SOUTH_AREAS } from '@/data/privateShuttle'
 import {
   GIRLS_TRIP_DRIVER_DAY_FROM_IDR,
 } from '@/data/girlsTrip'
@@ -50,6 +52,89 @@ export type PlannerQuote = {
 export type PlannerQuoteError = {
   ok: false
   error: string
+}
+
+export type TirtaPickupZoneId =
+  | 'self-meet'
+  | 'ubud'
+  | 'south'
+  | 'elsewhere'
+
+export const TIRTA_PICKUP_ZONES: Array<{
+  id: TirtaPickupZoneId
+  label: string
+  feeIdr: number | null
+}> = [
+  {
+    id: 'self-meet',
+    label: 'Self-meet at Tirta Empul (or your own driver) — free',
+    feeIdr: 0,
+  },
+  {
+    id: 'ubud',
+    label: 'Ubud / Pejeng / Tegallalang / Gianyar / Tampaksiring — IDR 400,000 once',
+    feeIdr: PICKUP_FEE_IDR,
+  },
+  {
+    id: 'south',
+    label: `${PRIVATE_SHUTTLE_SOUTH_AREAS} — IDR 650,000 once`,
+    feeIdr: PICKUP_FEE_SOUTH_IDR,
+  },
+  {
+    id: 'elsewhere',
+    label: 'North, East, Lovina, Amed, Candidasa, Sidemen, or other — quote on WhatsApp',
+    feeIdr: null,
+  },
+]
+
+export function quoteTirtaEmpulPlanner(input: {
+  guests: number
+  pickupZone: TirtaPickupZoneId
+}): PlannerQuote | PlannerQuoteError {
+  const guests = Math.floor(input.guests)
+  if (!Number.isFinite(guests) || guests < 1) {
+    return { ok: false, error: 'Enter at least 1 guest.' }
+  }
+
+  const zone = TIRTA_PICKUP_ZONES.find((row) => row.id === input.pickupZone)
+  if (!zone) return { ok: false, error: 'Choose a pickup zone.' }
+
+  const ceremonySubtotal = MELUKAT_PRICE_IDR * guests
+  const pickupFee = zone.feeIdr ?? 0
+  const pickupQuoted = zone.feeIdr === null
+
+  return {
+    ok: true,
+    headline: `${guests} guest${guests === 1 ? '' : 's'} · Tirta Empul spiritual melukat`,
+    lines: [
+      {
+        label: `${guests} × ceremony (${formatPlannerIdr(MELUKAT_PRICE_IDR)} / person)`,
+        amount: ceremonySubtotal,
+      },
+      {
+        label: pickupQuoted
+          ? 'Private shuttle (outside published zones — WhatsApp quote)'
+          : zone.id === 'self-meet'
+            ? 'Self-meet / own driver'
+            : `Private shuttle (${zone.id === 'ubud' ? 'Ubud area' : 'south coast'})`,
+        amount: pickupFee,
+      },
+    ],
+    total: ceremonySubtotal + pickupFee,
+    notes: [
+      'Ceremony is about 2.5 hours and includes temple ticket, sarong, Balinese-style offering, licensed guide, and locker.',
+      'Breakfast and lunch are not included. Pay on the spot — cash or card.',
+      pickupQuoted
+        ? 'Pickup from North / East Bali and other pins is quoted on WhatsApp — the total above is ceremony only until we confirm the car.'
+        : zone.id === 'self-meet'
+          ? 'Self-meet at Pura Tirta Empul (Tampaksiring) has no transport fee. Grab or your own driver is on you.'
+          : `Shuttle is ${formatPlannerIdr(pickupFee)} once per booking (not per guest). Driver waits through the ritual, then returns you.`,
+      'We do not claim the cheapest walk-in ticket. This is the published guided spiritual package.',
+    ],
+    tourHref: '/tours/tirta-empu-purification',
+    tourLabel: 'Open the Tirta Empul money page',
+    whatsappActivity: `Tirta Empul melukat (${guests} guest${guests === 1 ? '' : 's'}, ${zone.id} pickup)`,
+  }
 }
 
 export function quoteAtvPlanner(input: {
@@ -254,7 +339,7 @@ export function checkPickupRule(input: {
     feeIdr: PICKUP_FEE_IDR,
     headline: `Hotel pickup is ${formatPlannerIdr(PICKUP_FEE_IDR)} or free self-meet`,
     detail:
-      'This is the optional adventure surcharge for ATV, rafting, canyon tubing, and Griya Beji. It is not free Ubud cycling/cooking pickup, not the required Swing Heaven / Aloha shuttle, and not island-wide jeep pickup.',
+      'This is the optional adventure surcharge for ATV, rafting, canyon tubing, Griya Beji, and Tirta Empul melukat (south coast IDR 650,000). It is not free Ubud cycling/cooking pickup, not the required Swing Heaven / Aloha shuttle, and not island-wide jeep pickup.',
   }
 
   switch (input.activity) {
@@ -384,17 +469,34 @@ export function checkPickupRule(input: {
         tourLabel: 'Motorbike money page',
         whatsappActivity: 'Bali motorbike tour — pickup at chosen area',
       }
-    case 'melukat':
-      return {
-        included: true,
-        feeIdr: 0,
-        headline: 'Private Ubud-area shuttle is included',
-        detail:
-          'Tirta Empul spiritual melukat includes ticket, sarong, offering, licensed guide, and locker in the IDR 780,000 per-person rate (shuttle optional).',
-        tourHref: '/tours/tirta-empu-purification',
-        tourLabel: 'Melukat money page',
-        whatsappActivity: 'Tirta Empu purification — confirm shuttle',
+    case 'melukat': {
+      const melukatFee =
+        input.area === 'ubud' ? PICKUP_FEE_IDR : input.area === 'elsewhere' ? null : PICKUP_FEE_SOUTH_IDR
+      if (melukatFee === null) {
+        return {
+          included: false,
+          feeIdr: null,
+          headline: 'Pickup outside Ubud / south coast is quoted on WhatsApp',
+          detail:
+            'Tirta Empul ceremony is IDR 780,000 per person (ticket, sarong, offering, licensed guide, locker). Self-meet is free. Ubud-area shuttle is IDR 400,000; south coast is IDR 650,000. North / East pins need a WhatsApp quote. Calculator: /planners/tirta-empul-price-calculator.',
+          tourHref: '/tours/tirta-empu-purification',
+          tourLabel: 'Tirta Empul money page',
+          whatsappActivity: 'Tirta Empul melukat — quote pickup from my hotel',
+        }
       }
+      return {
+        included: false,
+        feeIdr: melukatFee,
+        headline: `Optional shuttle ${formatPlannerIdr(melukatFee)} once — or free self-meet`,
+        detail:
+          input.area === 'ubud'
+            ? 'Tirta Empul spiritual melukat uses the same optional shuttle as ATV: IDR 400,000 from Ubud once, or free self-meet / own driver at Tampaksiring.'
+            : `Tirta Empul spiritual melukat south-coast shuttle is IDR 650,000 once (${PRIVATE_SHUTTLE_SOUTH_AREAS}). Self-meet or your own driver is free.`,
+        tourHref: '/tours/tirta-empu-purification',
+        tourLabel: 'Tirta Empul money page',
+        whatsappActivity: 'Tirta Empul melukat — confirm shuttle or self-meet',
+      }
+    }
     case 'coffee':
       return {
         included: false,

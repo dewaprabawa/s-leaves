@@ -20,6 +20,7 @@ import { CAVE_ATV_CLUSTER_POSTS } from './clusterPostsCaveAtv'
 import { KECAK_CLUSTER_POSTS } from './clusterPostsKecak'
 import { MARKET_VISIT_CLUSTER_POSTS } from './clusterPostsMarketVisit'
 import { ATV_BOOK_CLUSTER_POSTS } from './clusterPostsAtvBook'
+import { TIRTA_CLUSTER_POSTS } from './clusterPostsTirta'
 
 export type BlogPost = {
   slug: string
@@ -34,6 +35,7 @@ export type BlogPost = {
 }
 
 export const BLOG_POSTS: BlogPost[] = [
+  ...TIRTA_CLUSTER_POSTS,
   ...ATV_BOOK_CLUSTER_POSTS,
   ...MARKET_VISIT_CLUSTER_POSTS,
   ...KECAK_CLUSTER_POSTS,
@@ -187,10 +189,10 @@ Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-
     image: '/images/melukat/tirta-empu-hero-2026-11.jpg',
     seoTitle: 'Tirta Empul Melukat Guide | 780K',
     content: `
-**How much is a Tirta Empul spiritual melukat near Ubud?** **IDR 780,000 per person** with Sekar Bali Activity. This is an **exclusive spiritual tour** at **Tirta Empul** — Bali’s most legendary sacred water-spring temple. A **licensed guide** explains and walks you through purification. The rate includes **temple ticket**, **sarong**, a **Balinese-style offering**, and a **locker**. Optional private shuttle is **IDR 400,000** from Ubud or **IDR 650,000** from the south coast; **self-meet** or **your own driver** is free. Pay on the spot — **cash or card**. Lunch is not included.
+**How much is a Tirta Empul spiritual melukat near Ubud?** **IDR 780,000 per person** with Sekar Bali Activity. This is an **exclusive spiritual tour** at **Tirta Empul** — about **2.5 hours** at the temple. A **licensed guide** explains and walks you through purification. The rate includes **temple ticket**, **sarong**, a **Balinese-style offering**, and a **locker**. **Breakfast is not included.** Optional private shuttle is **IDR 400,000** from Ubud or **IDR 650,000** from the south coast; **self-meet** or **your own driver** is free. Pay on the spot — **cash or card**.
 
 > **Key Takeaways**
-> - **Tirta Empul** — legendary sacred spring; never skip this journey if you come to Bali
+> - **About 2.5 hours** at Tirta Empul · **no breakfast**
 > - Exclusive spiritual tour with a **licensed guide** through purification
 > - **IDR 780,000 / person** — ticket + sarong + offering + guide + locker
 > - Shuttle optional (400K Ubud / 650K south) · self-meet free · cash or card
@@ -211,19 +213,21 @@ A walk-in ticket only covers the grounds. It does not include a licensed guide w
 | Included | Not included |
 | --- | --- |
 | Temple ticket (entrance) | Private shuttle (optional 400K / 650K) |
-| Licensed guide through purification | Lunch |
-| Sarong (and sash / bathing wrap as needed) | Personal expenses / tips |
-| Balinese-style offering (canang) | Extra priest blessing (optional) |
-| Locker for dry clothes and valuables | |
+| Licensed guide through purification | **Breakfast** |
+| Sarong (and sash / bathing wrap as needed) | Lunch |
+| Balinese-style offering (canang) | Personal expenses / tips |
+| Locker for dry clothes and valuables | Extra priest blessing (optional) |
+
+**Duration:** about **2.5 hours** at the temple (shuttle drive time extra).
 
 Book the money page: [Tirta Empul Purification (Melukat)](/tours/tirta-empu-purification).
 
-## What the morning looks like
+## What the morning looks like (~2.5 hours)
 
 1. **Meet** — optional shuttle drop-off or self-meet at Tirta Empul (08:00 or 09:00).
 2. **Briefing** — locker, sarong, offering, which spouts to use.
 3. **Melukat** in the sacred spring pools (cold mountain water).
-4. **Change** into dry clothes, optional courtyard walk.
+4. **Change** into dry clothes, short courtyard walk.
 5. **Return** with shuttle or your own driver.
 
 The pools are chest-deep for most adults. Tell us children’s ages on WhatsApp so we can judge comfort.
@@ -239,6 +243,8 @@ Same flow as ATV and rafting: optional private shuttle **IDR 400,000** from Ubud
 ## Pairing the same day
 
 A Tampaksiring Tirta Empul morning sits next to [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation). Afternoon [Tumang cooking class](/tours/balinese-cooking-class) also works after a morning ritual.
+
+**Price tools:** [Best price Tirta Empul tour 2026](/blog/best-price-tirta-empul-tour-2026) · [Tirta Empul price calculator](/planners/tirta-empul-price-calculator) (pickup from every Bali zone as an extra).
 
 **Ready to book?** Open [Tirta Empul Purification](/tours/tirta-empu-purification) or [book on WhatsApp](/book?activity=tirta-empu-purification) with date, hotel, and guest count. No payment to inquire.
 `,

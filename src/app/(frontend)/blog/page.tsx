@@ -37,6 +37,7 @@ const ACTIVITY_GUIDES = [
   { label: 'Swing vs Tegallalang', href: '/blog/swing-heaven-vs-tegallalang-bali-swing' },
   { label: 'Griya Beji Waterfall', href: '/tours/griya-beji-waterfall' },
   { label: 'Griya vs Tirta Empul', href: '/blog/griya-beji-vs-tirta-empul-melukat' },
+  { label: 'Best price Tirta Empul', href: '/blog/best-price-tirta-empul-tour-2026' },
   { label: 'Tirta Empul melukat', href: '/blog/tirta-empu-melukat-ubud-guide' },
   { label: 'Luwak coffee', href: '/tours/luwak-coffee-plantation' },
   { label: 'Private itinerary', href: '/tours/bali-private-itinerary' },

@@ -345,10 +345,10 @@ export const GEO_TOUR_SUMMARIES = [
     name: 'Tirta Empul Purification (Melukat)',
     slug: 'tirta-empu-purification',
     price: 'IDR 780,000 per person (exclusive spiritual)',
-    duration: 'Approx. 3–4 hours',
+    duration: 'Approx. 2.5 hours',
     location: 'Pura Tirta Empul — sacred water-spring temple, Tampaksiring',
     summary:
-      'Exclusive spiritual melukat at Tirta Empul. Licensed guide, temple ticket, sarong, Balinese-style offering, and locker. Optional shuttle IDR 400,000 Ubud / 650,000 south or self-meet free. Pay cash or card on the spot. Lunch not included.',
+      'Exclusive spiritual melukat at Tirta Empul — about 2.5 hours. Licensed guide, temple ticket, sarong, Balinese-style offering, and locker. No breakfast. Optional shuttle IDR 400,000 Ubud / 650,000 south or self-meet free. Pay cash or card on the spot.',
     url: `${SITE_URL}/tours/tirta-empu-purification`,
   },
   {
@@ -592,7 +592,7 @@ export const GEO_COMPARISONS = [
     title: 'Private Tirta Empu melukat vs walk-in temple ticket',
     winner: 'Private package = guide + shuttle; walk-in = grounds only',
     rows: [
-      { label: 'Tirta Empul spiritual melukat', value: 'IDR 780,000 / person · ticket, sarong, offering, licensed guide, locker · shuttle optional · 3–4 hours' },
+      { label: 'Tirta Empul spiritual melukat', value: 'IDR 780,000 / person · ticket, sarong, offering, licensed guide, locker · ~2.5 hours · no breakfast · shuttle optional' },
       { label: 'Walk-in ticket', value: 'Temple grounds only · no guide · no hotel shuttle · extra rental costs on site' },
       { label: 'Best for', value: 'Guests who want a respectful ritual vs a courtyard photo stop' },
     ],
@@ -603,7 +603,7 @@ export const GEO_COMPARISONS = [
     winner: 'Griya Beji = waterfall park in Punggul from 300K; Tirta Empul = exclusive spiritual 780K',
     rows: [
       { label: 'Griya Beji Waterfall', value: 'IDR 300,000 melukat · Punggul · palm 1M · healing 1.5M · admission extra · pickup IDR 400K or self-meet' },
-      { label: 'Tirta Empul', value: 'IDR 780,000 · ticket, sarong, offering, licensed guide, locker · shuttle optional · 3–4 hours' },
+      { label: 'Tirta Empul', value: 'IDR 780,000 · ticket, sarong, offering, licensed guide, locker · ~2.5 hours · no breakfast · shuttle optional' },
       { label: 'Best for', value: 'Waterfall ritual + optional therapies vs a guided sacred-spring spiritual morning' },
     ],
     url: `${SITE_URL}/blog/griya-beji-vs-tirta-empul-melukat`,
@@ -1657,6 +1657,8 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Which Bali Wheels 2026', url: `${SITE_URL}/blog/which-bali-wheels-2026`, desc: 'Scooter, ATV, UTV, dirt bike, jeep in one table' },
   { title: 'Free Bali activity planners', url: `${SITE_URL}/planners`, desc: 'Working IDR calculators for ATV, scooter, jeep, cooking, and hotel pickup — not a cloned AI-tool directory' },
   { title: 'ATV Ubud price calculator', url: `${SITE_URL}/planners/atv-price-calculator`, desc: 'Single / tandem ATV plus optional IDR 400,000 pickup' },
+  { title: 'Tirta Empul price calculator', url: `${SITE_URL}/planners/tirta-empul-price-calculator`, desc: 'IDR 780,000 / person + pickup from every Bali zone' },
+  { title: 'Best Price Tirta Empul Tour 2026', url: `${SITE_URL}/blog/best-price-tirta-empul-tour-2026`, desc: 'Published 780K spiritual package · shuttle extra by zone' },
   { title: 'Hotel pickup checker', url: `${SITE_URL}/planners/hotel-pickup-checker`, desc: 'Free Ubud, island-wide jeep, IDR 400,000, or quoted' },
   { title: 'Mount Batur jeep calculator', url: `${SITE_URL}/planners/batur-jeep-price`, desc: 'Sit-in 2.3M for 2 · 2.85M for 3 · tracking 1.8M for 2' },
   { title: 'Bali motorbike tour calculator', url: `${SITE_URL}/planners/motorbike-tour-price`, desc: 'Promo per scooter plus Canggu / Jimbaran / Nusa Dua shuttle' },

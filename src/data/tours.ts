@@ -2937,11 +2937,11 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
     venue: "Pura Tirta Empul — sacred water-spring temple",
     pickup: "Optional shuttle IDR 400K Ubud / 650K south · self-meet free",
     isTopPick: true,
-    duration: "Approx. 3–4 Hours",
+    duration: "Approx. 2.5 Hours",
     basePrice: MELUKAT_PRICE_IDR,
     seoTitle: "Tirta Empul Melukat | Spiritual Tour 780K",
     seoDescription:
-      "Exclusive spiritual melukat at Tirta Empul — Bali’s legendary sacred spring. Ticket, sarong, offering, licensed guide, locker. IDR 780,000 / person. Shuttle optional. Cash or card.",
+      "Exclusive spiritual melukat at Tirta Empul — about 2.5 hours. Ticket, sarong, offering, licensed guide, locker. No breakfast. IDR 780,000 / person. Shuttle optional. Cash or card.",
     heroImage: {
       url: "/images/melukat/tirta-empu-hero-2026-11.jpg",
       alt: "Guest at Tirta Empul sacred water spring during a guided melukat purification near Ubud",
@@ -2967,7 +2967,7 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
       },
     ],
     shortDescription:
-      "Exclusive spiritual tour at Tirta Empul — Bali’s most legendary sacred water-spring temple. Licensed guide, ticket, sarong, offering, and locker. IDR 780,000 per person.",
+      "Exclusive spiritual tour at Tirta Empul — about 2.5 hours. Licensed guide, ticket, sarong, offering, and locker. No breakfast. IDR 780,000 per person.",
     fullDescription: `**Exclusive spiritual melukat at Tirta Empul**
 
 Tirta Empul (Pura Tirta Empul, Tampaksiring) is one of Bali’s most legendary sacred water-spring temples. This booking is an **exclusive spiritual tour**: a licensed guide explains the meaning of melukat and walks you through the purification step by step — not a rushed photo stop.
@@ -2975,6 +2975,8 @@ Tirta Empul (Pura Tirta Empul, Tampaksiring) is one of Bali’s most legendary s
 In Balinese belief, purification is one way to clear a dirty vibe and negative aura. At Tirta Empul you experience an **authentic** holy-spring ritual the way local families still practice it: **sarong**, a **Balinese-style offering (canang)**, and the sequence under the sacred spouts.
 
 **Never skip this journey if you come to Bali** — the spring water, the courtyards, and the living temple etiquette are hard to feel from a guidebook alone.
+
+The ceremony is about **2.5 hours** at the temple. **Breakfast is not included** — eat before you arrive or after you finish.
 
 ### What IDR 780,000 per person includes
 - Temple **ticket** (entrance)
@@ -2984,10 +2986,13 @@ In Balinese belief, purification is one way to clear a dirty vibe and negative a
 - **Locker** for dry clothes and valuables
 
 ### Shuttle and meeting point
-Same flow as our adventure activities:
-- Optional private shuttle **IDR 400,000** from Ubud or **IDR 650,000** from the south coast (once per booking, pickup and return)
+Same flow as our adventure activities — **pickup from every Bali zone is an extra**:
+- Optional private shuttle **IDR 400,000** from Ubud / Gianyar or **IDR 650,000** from the south coast (once per booking, pickup and return)
 - **Self-meet** at Tirta Empul is free
 - Prefer **your own driver**? That is free — no transport fee
+- North / East Bali pins — quote on WhatsApp
+
+Price tools: [best price Tirta Empul tour](/blog/best-price-tirta-empul-tour-2026) · [Tirta Empul price calculator](/planners/tirta-empul-price-calculator)
 
 ### Payment
 Pay on the spot — **cash or card**. We never ask for card numbers on the website or on WhatsApp to inquire. Book via WhatsApp; no deposit required to ask availability.
@@ -3003,10 +3008,10 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
 
 **Typical start:** 08:00 or 09:00 so you reach the spring before the mid-morning crowds.`,
     highlights: [
-      "Exclusive spiritual tour at legendary Tirta Empul",
+      "About 2.5 hours at legendary Tirta Empul",
       "Licensed guide through purification",
       "Ticket, sarong, offering, and locker included",
-      "Optional shuttle · self-meet or own driver free",
+      "No breakfast · optional shuttle or free self-meet",
       "Pay on the spot — cash or card",
     ],
     included: [
@@ -3018,8 +3023,8 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
     ],
     notIncluded: [
       "Private shuttle (optional IDR 400,000 Ubud / IDR 650,000 south — or self-meet / own driver free)",
-      "Lunch and personal expenses",
-      "Gratuities",
+      "Breakfast and lunch",
+      "Personal expenses and gratuities",
       "Optional priest blessing beyond the standard guided ritual",
     ],
     activityOptions: [
@@ -3073,7 +3078,7 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
         id: "faq-melukat-1",
         question: "How much is the Tirta Empul spiritual melukat?",
         answer:
-          "IDR 780,000 per person. The rate includes temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Optional private shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking. Self-meet or your own driver is free. Lunch is not included. Pay on the spot — cash or card.",
+          "IDR 780,000 per person. The rate includes temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Optional private shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking. Self-meet or your own driver is free. Breakfast and lunch are not included. Pay on the spot — cash or card.",
       },
       {
         id: "faq-melukat-2",
@@ -3118,10 +3123,16 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
           "Yes. Pay on the spot when you arrive — cash (IDR) or card. Card payments add a small surcharge; cash has no card fee. We never ask for card numbers on the website or on WhatsApp to inquire.",
       },
       {
-        id: "faq-melukat-9",
-        question: "Can anyone join the ritual?",
+        id: "faq-melukat-10",
+        question: "How long is the Tirta Empul melukat?",
         answer:
-          "Guests of any faith may take part if they follow temple etiquette. Women who are menstruating should not enter the inner courtyards or the purification pools. Children may join when they are comfortable in chest-deep water; tell us ages on WhatsApp.",
+          "About 2.5 hours at the temple — briefing, offering, purification under the spouts, and time to change. Shuttle drive time from your hotel is extra.",
+      },
+      {
+        id: "faq-melukat-11",
+        question: "Is breakfast included?",
+        answer:
+          "No. Breakfast and lunch are not included. The IDR 780,000 rate covers ticket, sarong, offering, licensed guide, and locker only.",
       },
     ],
     reviews: [],

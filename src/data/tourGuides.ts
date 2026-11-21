@@ -652,9 +652,14 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'tirta-empu-purification': [
     {
-      title: 'Temples with a guide vs without',
-      href: '/blog/bali-temples-with-a-guide-2026',
-      blurb: 'Which Tirta Empul spouts to skip, temple courtyards, and etiquette — what a guide explains.',
+      title: 'Best price Tirta Empul tour 2026',
+      href: '/blog/best-price-tirta-empul-tour-2026',
+      blurb: 'Published 780K spiritual package · pickup from every Bali zone as an extra.',
+    },
+    {
+      title: 'Tirta Empul price calculator',
+      href: '/planners/tirta-empul-price-calculator',
+      blurb: 'Guests × 780K plus Ubud 400K / south 650K / self-meet free.',
     },
     {
       title: 'Tirta Empu melukat near Ubud',
@@ -669,12 +674,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Ubud hotel pickup explained',
       href: '/blog/ubud-hotel-pickup-bali-adventures-explained',
-      blurb: 'How the included Ubud-area shuttle differs from the ATV add-on.',
-    },
-    {
-      title: 'Ethical luwak nearby',
-      href: '/blog/how-to-spot-ethical-luwak-coffee-in-bali',
-      blurb: 'Pair a Tampaksiring morning with Umah Kuno tasting.',
+      blurb: 'Optional Tirta Empul shuttle vs free self-meet — same zones as ATV.',
     },
     {
       title: 'Griya Beji vs Tirta Empul',
@@ -684,7 +684,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Tumang cooking class (afternoon)',
       href: '/tours/balinese-cooking-class',
-      blurb: 'Kitchen meal after the temple breakfast — lunch is not on this ticket.',
+      blurb: 'Kitchen meal after the temple morning — lunch is not on this ticket.',
     },
     {
       title: 'Pejeng ricefield cycling',

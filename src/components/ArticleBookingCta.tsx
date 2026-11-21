@@ -1013,8 +1013,16 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     body: 'IDR 780,000 per person · ticket, sarong, offering, licensed guide, locker. Shuttle optional. Cash or card.',
     primaryHref: '/tours/tirta-empu-purification',
     primaryLabel: 'View melukat',
-    secondaryHref: '/tours/balinese-cooking-class',
-    secondaryLabel: 'Add afternoon cooking',
+    secondaryHref: '/planners/tirta-empul-price-calculator',
+    secondaryLabel: 'Price calculator',
+  },
+  'best-price-tirta-empul-tour-2026': {
+    headline: 'Book the published Tirta Empul rate',
+    body: 'IDR 780,000 / person · pickup from every Bali zone as an extra. Run the calculator, then WhatsApp.',
+    primaryHref: '/tours/tirta-empu-purification',
+    primaryLabel: 'View Tirta Empul tour',
+    secondaryHref: '/planners/tirta-empul-price-calculator',
+    secondaryLabel: 'Open calculator',
   },
   'bali-temple-dress-code': {
     headline: 'Need a guided temple morning? Book melukat',

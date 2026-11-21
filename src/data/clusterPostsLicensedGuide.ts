@@ -784,7 +784,7 @@ English signs at temples are short. A licensed Japanese guide can explain **offe
 | Option | Best if | From-price |
 | --- | --- | --- |
 | **Japanese licensed guide** (this page’s product) | You want Japanese explanation for Tirta Empul **plus** other Ubud stops the same day | Guide only **700,000** / + driver **850,000** Ubud |
-| **[Tirta Empul spiritual melukat](/tours/tirta-empu-purification)** | You want a focused 3–4 hour purification with licensed guide, offering, sarong, locker | **IDR 780,000** per person (ask WhatsApp if you need Japanese commentary layered on) |
+| **[Tirta Empul spiritual melukat](/tours/tirta-empu-purification)** | You want a focused ~2.5 hour purification with licensed guide, offering, sarong, locker (no breakfast) | **IDR 780,000** per person (ask WhatsApp if you need Japanese commentary layered on) |
 
 Many Japanese couples book the **licensed Japanese guide** for a full culture day that **includes** Tirta Empul after the palace and rice terraces — see [Japanese Ubud day itinerary](/blog/japanese-licensed-guide-ubud-day-2026).
 

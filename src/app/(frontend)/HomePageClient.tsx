@@ -155,7 +155,7 @@ const pricingData: PricingRow[] = [
   {
     activity: "Tirta Empul Purification (Melukat)",
     bookHref: "/book?activity=tirta-empu-purification",
-    pax: "Exclusive spiritual · ticket + sarong + offering + guide + locker · shuttle optional",
+    pax: "Exclusive spiritual · ~2.5 hrs · no breakfast · ticket + sarong + offering + guide + locker · shuttle optional",
     price: MELUKAT_PRICE_IDR,
     highlight: true,
   },

@@ -120,7 +120,7 @@ const CATEGORY_SECTION_META: {
     eyebrow: "Holy water",
     title: "Culture & heritage",
     subtitle:
-      "Private Tirta Empul or Pura Beji melukat from IDR 1,200,000, plus Griya Beji Waterfall purification, palm reading, and mental healing in Punggul.",
+      "Exclusive Tirta Empul spiritual melukat from IDR 780,000, plus Griya Beji Waterfall purification, palm reading, and mental healing in Punggul.",
   },
 ]
 
@@ -153,9 +153,9 @@ const pricingData: PricingRow[] = [
     highlight: true,
   },
   {
-    activity: "Tirta Empu Purification (Melukat)",
+    activity: "Tirta Empul Purification (Melukat)",
     bookHref: "/book?activity=tirta-empu-purification",
-    pax: "Private · Tirta Empul or Beji · shuttle + breakfast included",
+    pax: "Exclusive spiritual · ticket + sarong + offering + guide + locker · shuttle optional",
     price: MELUKAT_PRICE_IDR,
     highlight: true,
   },
@@ -315,7 +315,7 @@ const travelGuides = [
   },
   {
     title: "Tirta Empu Melukat near Ubud",
-    excerpt: "Private holy-spring purification — Tirta Empul or Beji, breakfast included, IDR 1,200,000 / person.",
+    excerpt: "Exclusive spiritual purification at Tirta Empul — ticket, sarong, offering, licensed guide, locker · IDR 780,000 / person.",
     href: "/blog/tirta-empu-melukat-ubud-guide",
   },
   {

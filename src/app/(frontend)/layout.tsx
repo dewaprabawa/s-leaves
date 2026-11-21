@@ -119,7 +119,7 @@ const footerLinks = {
     { label: "Swing Heaven Bali", href: "/tours/swing-heaven-bali" },
     { label: "Aloha Ubud Swing", href: "/tours/aloha-ubud-swing" },
     { label: "Private Mount Batur Jeep", href: "/tours/batur-sunrise-jeep-tour" },
-    { label: "Tirta Empu Purification", href: "/tours/tirta-empu-purification" },
+    { label: "Tirta Empul Purification", href: "/tours/tirta-empu-purification" },
     { label: "Griya Beji Waterfall", href: "/tours/griya-beji-waterfall" },
     { label: "Luwak Coffee Plantation", href: "/tours/luwak-coffee-plantation" },
     { label: "Book All Activities", href: "/book" },

@@ -45,20 +45,20 @@ const COPY: Record<
     ],
   },
   melukat: {
-    eyebrow: "Why the private melukat price is worth it",
-    title: "Shuttle, guide, and breakfast are in the 1,200,000",
-    body: `${formatIdr(MELUKAT_PRICE_IDR)} per person is a private ceremony at Tirta Empul or Pura Beji — your group, not a walk-in ticket. The rate includes the Ubud-area shuttle, English-speaking guide, temple entrance, canang offering, sarong, and breakfast. Lunch is not included. Griya Beji waterfall purification is a different place and a lower park price, with admission and pickup extra.`,
+    eyebrow: "Why the Tirta Empul spiritual tour is worth it",
+    title: "Licensed guide, ticket, sarong, offering, and locker",
+    body: `${formatIdr(MELUKAT_PRICE_IDR)} per person is an exclusive spiritual melukat at Tirta Empul — Bali’s most legendary sacred water-spring temple. A licensed guide walks you through purification. The rate includes temple ticket, sarong, Balinese-style offering, and locker. Shuttle is optional (${formatIdr(PICKUP_FEE_IDR)} Ubud / south-coast tier) or self-meet free. Pay cash or card on the spot. Griya Beji waterfall purification is a different place and a lower park price.`,
     included: [
-      "Choose Tirta Empul or Pura Beji",
-      "Private shuttle, guide, entrance, offering, and sarong",
-      "Breakfast after the ritual",
-      "Ubud pickup already inside the price",
+      "Exclusive spiritual tour at legendary Tirta Empul",
+      "Licensed guide through the purification",
+      "Ticket, sarong, offering, and locker",
+      "Optional shuttle · self-meet or own driver free",
     ],
   },
   griya: {
     eyebrow: "Why the Griya Beji price is worth it",
     title: "Waterfall purification at the park menu price",
-    body: `${formatIdr(GRIYA_BEJI_PURIFICATION_IDR)} is the Punggul waterfall melukat on the park menu. Palm reading is IDR 1,000,000 and mental healing is IDR 1,500,000. International admission (IDR 50,000) is paid at the gate. Hotel pickup is ${formatIdr(PICKUP_FEE_IDR)}, or you can self-meet. This is not the private Tirta Empul ceremony, which includes shuttle and breakfast at ${formatIdr(MELUKAT_PRICE_IDR)}.`,
+    body: `${formatIdr(GRIYA_BEJI_PURIFICATION_IDR)} is the Punggul waterfall melukat on the park menu. Palm reading is IDR 1,000,000 and mental healing is IDR 1,500,000. International admission (IDR 50,000) is paid at the gate. Hotel pickup is ${formatIdr(PICKUP_FEE_IDR)}, or you can self-meet. This is not Tirta Empul (${formatIdr(MELUKAT_PRICE_IDR)} spiritual melukat with licensed guide).`,
     included: [
       "Waterfall purification at Taman Beji Griya, Punggul",
       "Palm reading and mental healing are separate menu prices",

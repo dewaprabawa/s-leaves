@@ -92,11 +92,11 @@ const ROWS: {
   },
   {
     id: "melukat",
-    activity: "Tirta Empul or Beji melukat",
+    activity: "Tirta Empul spiritual melukat",
     price: idr(MELUKAT_PRICE_IDR),
-    note: "Private · guide, entrance, offering, sarong, breakfast",
-    pickup: "Ubud shuttle included",
-    feel: "Private holy-spring ceremony",
+    note: "Ticket · sarong · offering · licensed guide · locker",
+    pickup: `+ ${idr(PICKUP_FEE_IDR)} or self-meet`,
+    feel: "Exclusive sacred-spring spiritual tour",
   },
   {
     id: "griya",

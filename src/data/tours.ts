@@ -2662,8 +2662,8 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
         alt: "Balinese elder in an udeng headcloth arranging temple offerings — the customs a licensed guide explains in your language",
       },
       {
-        url: "/images/melukat/tirta-empu-temple.jpg",
-        alt: "Balinese temple gate and courtyard — the kind of stop a licensed guide explains in your language",
+        url: "/images/melukat/tirta-empu-gallery-03-2026-11.jpg",
+        alt: "Tirta Empul temple courtyard — the kind of stop a licensed guide explains in your language",
       },
       {
         url: "/images/adventures/full-day-ubud-tour.jpg",
@@ -2930,192 +2930,195 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
   },
   {
     id: "tirta-empu-purification",
-    title: "Tirta Empu Purification (Melukat)",
+    title: "Tirta Empul Purification (Melukat)",
     slug: "tirta-empu-purification",
     category: "culture",
     area: "Tampaksiring / Ubud",
-    venue: "Tirta Empul or Pura Beji holy spring",
-    pickup: "Private shuttle included (Ubud area)",
+    venue: "Pura Tirta Empul — sacred water-spring temple",
+    pickup: "Optional shuttle IDR 400K Ubud / 650K south · self-meet free",
     isTopPick: true,
     duration: "Approx. 3–4 Hours",
     basePrice: MELUKAT_PRICE_IDR,
-    seoTitle: "Tirta Empul or Beji Melukat | 1.2M + Breakfast",
+    seoTitle: "Tirta Empul Melukat | Spiritual Tour 780K",
     seoDescription:
-      "Private melukat at Tirta Empul or Pura Beji near Ubud. Shuttle, guide, and breakfast included. IDR 1,200,000 / person.",
+      "Exclusive spiritual melukat at Tirta Empul — Bali’s legendary sacred spring. Ticket, sarong, offering, licensed guide, locker. IDR 780,000 / person. Shuttle optional. Cash or card.",
     heroImage: {
-      url: "/images/melukat/tirta-empu-spout.jpg",
-      alt: "Guest receiving holy spring water during a Tirta Empu melukat purification",
-      width: 1600,
-      height: 1346,
+      url: "/images/melukat/tirta-empu-hero-2026-11.jpg",
+      alt: "Guest at Tirta Empul sacred water spring during a guided melukat purification near Ubud",
+      width: 1200,
+      height: 900,
     },
     gallery: [
       {
-        url: "/images/melukat/tirta-empu-spout.jpg",
-        alt: "Guest receiving holy spring water during a Tirta Empu melukat purification",
+        url: "/images/melukat/tirta-empu-hero-2026-11.jpg",
+        alt: "Guest at Tirta Empul sacred water spring during a guided melukat purification near Ubud",
       },
       {
-        url: "/images/melukat/tirta-empu-pool.jpg",
-        alt: "Guests in the Tirta Empu holy spring pool for a guided melukat ritual",
+        url: "/images/melukat/tirta-empu-gallery-01-2026-11.jpg",
+        alt: "Sacred spout line at Tirta Empul during a Balinese water purification ceremony",
       },
       {
-        url: "/images/melukat/tirta-empu-temple.jpg",
-        alt: "Temple courtyard near Tirta Empu on a private purification morning",
+        url: "/images/melukat/tirta-empu-gallery-02-2026-11.jpg",
+        alt: "Guest in sarong under holy spring water at Tirta Empul melukat",
+      },
+      {
+        url: "/images/melukat/tirta-empu-gallery-03-2026-11.jpg",
+        alt: "Tirta Empul temple courtyard and purification pools near Tampaksiring",
       },
     ],
     shortDescription:
-      "Private Balinese water purification (melukat) at Tirta Empul or Pura Beji. Dedicated guide, private shuttle, offering, sarong, and breakfast. IDR 1,200,000 per person.",
-    fullDescription: `**Private holy-spring purification (Melukat)**
+      "Exclusive spiritual tour at Tirta Empul — Bali’s most legendary sacred water-spring temple. Licensed guide, ticket, sarong, offering, and locker. IDR 780,000 per person.",
+    fullDescription: `**Exclusive spiritual melukat at Tirta Empul**
 
-Melukat is a Balinese Hindu water-purification ritual. This is a **private** ceremony for your group — dedicated guide, private shuttle, and **breakfast included**. You choose the spring when you book:
+Tirta Empul (Pura Tirta Empul, Tampaksiring) is one of Bali’s most legendary sacred water-spring temples. This booking is an **exclusive spiritual tour**: a licensed guide explains the meaning of melukat and walks you through the purification step by step — not a rushed photo stop.
 
-- **Tirta Empul** (Tirta Empu) — the famous holy spring temple in Manukaya, Tampaksiring, about 30–40 minutes north of central Ubud. Maps list it as **Pura Tirta Empul**.
-- **Pura Beji** — a quieter holy-spring alternative. Same private guide, shuttle, offering, and breakfast. We confirm the Beji location on WhatsApp.
+In Balinese belief, purification is one way to clear a dirty vibe and negative aura. At Tirta Empul you experience an **authentic** holy-spring ritual the way local families still practice it: **sarong**, a **Balinese-style offering (canang)**, and the sequence under the sacred spouts.
 
-You are not on a mixed bus tour. The temple grounds themselves remain public and sacred.
+**Never skip this journey if you come to Bali** — the spring water, the courtyards, and the living temple etiquette are hard to feel from a guidebook alone.
 
-### Why book a guided private ritual
-A general temple ticket lets you walk the courtyards. It does **not** explain which fountains are for living guests, which are reserved for funeral rites, or how to make the offering. Your guide walks you through prayer, the canang offering, and the sequence under the sacred spouts so the visit stays respectful.
+### What IDR 780,000 per person includes
+- Temple **ticket** (entrance)
+- **Sarong** (and sash / bathing wrap as needed)
+- **Offering** — prepared in the Balinese way
+- **Licensed guide** who explains and guides you through purification
+- **Locker** for dry clothes and valuables
 
-The **IDR 1,200,000 per person** private rate includes:
+### Shuttle and meeting point
+Same flow as our adventure activities:
+- Optional private shuttle **IDR 400,000** from Ubud or **IDR 650,000** from the south coast (once per booking, pickup and return)
+- **Self-meet** at Tirta Empul is free
+- Prefer **your own driver**? That is free — no transport fee
 
-- Private shuttle pickup and drop-off in the **Ubud area**
-- English-speaking local guide
-- Temple entrance
-- Canang offering
-- Temple sarong and sash (plus a separate bathing sarong for the pools)
-- **Breakfast** after the ritual
+### Payment
+Pay on the spot — **cash or card**. We never ask for card numbers on the website or on WhatsApp to inquire. Book via WhatsApp; no deposit required to ask availability.
 
 ### What happens
-After hotel pickup you drive to the spring you chose — Tirta Empul in Tampaksiring, or Pura Beji. At the temple you change into a sarong and sash, present the offering, then enter the purification pools. You move spout to spout as your guide explains each step. Some fountains are skipped on purpose — follow the guide, not the photo queue.
-
-After the ritual there is time to change into dry clothes, then **breakfast is included** before the shuttle returns you to your hotel.
+Meet your licensed guide at the temple (or after shuttle drop-off). Change into a sarong, present the offering, then enter the purification pools. You move spout to spout as the guide explains each step. Some fountains are skipped on purpose — follow the guide, not the photo queue. Use the locker for dry clothes; change after the ritual.
 
 ### What to wear and bring
-Covered shoulders and a change of clothes. We supply the temple sarong, sash, and bathing wrap. See our [Bali temple dress code](/blog/bali-temple-dress-code) before you go. Women who are menstruating should not enter the inner courtyards or the pools — this is a living religious rule.
+Covered shoulders and a change of clothes. We supply the sarong and offering. See our [Bali temple dress code](/blog/bali-temple-dress-code). Women who are menstruating should not enter the inner courtyards or the pools — this is a living religious rule.
 
 ### Pairing ideas
-Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation) (Tampaksiring; transport not included on that tasting) or an afternoon [Tumang cooking class](/tours/balinese-cooking-class). Quiet paddies instead of a second temple: [Pejeng cycling](/tours/ubud-ricefield-cycling-tour). Message WhatsApp to reserve both.
+Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation) (Tampaksiring) or afternoon [Tumang cooking class](/tours/balinese-cooking-class). Quiet paddies: [Pejeng cycling](/tours/ubud-ricefield-cycling-tour).
 
-**Typical start:** 08:00 or 09:00 so you reach the springs before the mid-morning crowds.`,
+**Typical start:** 08:00 or 09:00 so you reach the spring before the mid-morning crowds.`,
     highlights: [
-      "Choose Tirta Empul or Pura Beji",
-      "Private melukat — your group only",
-      "Breakfast included after the ritual",
-      "Private shuttle included (Ubud-area hotels)",
-      "English-speaking guide through offering and pools",
+      "Exclusive spiritual tour at legendary Tirta Empul",
+      "Licensed guide through purification",
+      "Ticket, sarong, offering, and locker included",
+      "Optional shuttle · self-meet or own driver free",
+      "Pay on the spot — cash or card",
     ],
     included: [
-      "Private shuttle pickup & drop-off (Ubud area)",
-      "English-speaking local guide",
-      "Melukat ritual at Tirta Empul or Pura Beji",
-      "Temple entrance fee",
-      "Canang offering",
-      "Temple sarong, sash, and bathing wrap",
-      "Breakfast",
+      "Temple ticket (Tirta Empul entrance)",
+      "Licensed guide through the purification",
+      "Sarong (and sash / bathing wrap as needed)",
+      "Balinese-style offering (canang)",
+      "Locker for dry clothes and valuables",
     ],
     notIncluded: [
-      "Hotel pickup outside the Ubud area (ask WhatsApp for a shuttle quote)",
-      "Lunch",
-      "Personal expenses and gratuities",
+      "Private shuttle (optional IDR 400,000 Ubud / IDR 650,000 south — or self-meet / own driver free)",
+      "Lunch and personal expenses",
+      "Gratuities",
       "Optional priest blessing beyond the standard guided ritual",
     ],
     activityOptions: [
       {
-        name: "Tirta Empul holy spring",
+        name: "Tirta Empul spiritual melukat",
         priceDiff: 0,
         description:
-          "Pura Tirta Empul / Tirta Empu, Tampaksiring — classic public holy spring · breakfast included",
-      },
-      {
-        name: "Pura Beji holy spring",
-        priceDiff: 0,
-        description:
-          "Quieter Beji spring alternative — same private guide, shuttle, and breakfast",
+          "Pura Tirta Empul, Tampaksiring — exclusive guided purification · ticket, sarong, offering, licensed guide, locker",
       },
     ],
     itinerary: [
       {
         id: "iti-melukat-1",
-        time: "Pickup",
-        title: "Private shuttle from your Ubud hotel",
+        time: "Meet",
+        title: "Shuttle drop-off or self-meet at Tirta Empul",
         description:
-          "Your driver collects you in the Ubud area (typical 08:00 or 09:00 start). Drive to Tirta Empul (Tampaksiring) or Pura Beji — whichever spring you booked.",
+          "Typical start 08:00 or 09:00. Optional private shuttle from your hotel, or meet at Pura Tirta Empul with your own driver / Grab — self-meet is free.",
       },
       {
         id: "iti-melukat-2",
         time: "Arrive",
-        title: "Sarong, offering, and temple briefing",
+        title: "Sarong, offering, locker, and briefing",
         description:
-          "Meet your guide at the spring. Change into a sarong and sash, prepare the canang offering, and hear which fountains to use — and which to skip.",
+          "Meet your licensed guide. Store dry clothes in the locker, change into a sarong, prepare the Balinese-style offering, and hear which fountains to use — and which to skip.",
       },
       {
         id: "iti-melukat-3",
         time: "Ritual",
-        title: "Melukat in the holy spring pools",
+        title: "Melukat in the sacred spring pools",
         description:
-          "Enter the purification pools and move under the sacred spouts in sequence. The water is cold mountain spring water. Your guide stays with you through each step.",
+          "Enter the purification pools and move under the sacred spouts in sequence. Cold mountain spring water. Your guide stays with you through each step of the spiritual cleansing.",
       },
       {
         id: "iti-melukat-4",
-        time: "Breakfast",
-        title: "Breakfast included",
+        time: "After",
+        title: "Change and temple courtyards",
         description:
-          "Change into dry clothes, then sit down for breakfast — included in the private rate.",
+          "Return to the locker, change into dry clothes, and optionally walk the courtyards before your shuttle or driver takes you onward.",
       },
       {
         id: "iti-melukat-5",
         time: "Finish",
-        title: "Return shuttle",
+        title: "Return or continue your day",
         description:
-          "Optional courtyard walk, then the private shuttle returns you to your hotel.",
+          "Shuttle return if booked, or continue with your own driver — e.g. luwak tasting nearby or afternoon cooking in Tumang.",
       },
     ],
     addons: [],
     faqs: [
       {
         id: "faq-melukat-1",
-        question: "How much is a private Tirta Empul or Beji melukat?",
+        question: "How much is the Tirta Empul spiritual melukat?",
         answer:
-          "IDR 1,200,000 per person for a private purification at Tirta Empul or Pura Beji. The price includes a Ubud-area shuttle (pickup and drop-off), an English-speaking guide, temple entrance, canang offering, sarong, and breakfast. Lunch is not included. Pickup outside Ubud — ask WhatsApp for a shuttle quote.",
+          "IDR 780,000 per person. The rate includes temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Optional private shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking. Self-meet or your own driver is free. Lunch is not included. Pay on the spot — cash or card.",
       },
       {
         id: "faq-melukat-2",
-        question: "Is this a private ceremony or a shared group?",
+        question: "Is this an exclusive spiritual tour?",
         answer:
-          "Private. The shuttle and guide are for your booking only. The temple itself is a public holy site, so other worshippers and visitors will be in the courtyards and pools — you are not renting the entire temple.",
+          "Yes — this is our exclusive spiritual melukat at Tirta Empul, Bali’s most legendary sacred water-spring temple. A licensed guide explains and guides you through purification. The temple grounds remain a public holy site, so other worshippers and visitors will be present; you are not renting the entire temple.",
       },
       {
         id: "faq-melukat-3",
-        question: "Can I choose Tirta Empul or Pura Beji?",
+        question: "Why do Balinese people do melukat?",
         answer:
-          "Yes. Same private rate for either spring. Tirta Empul (Tirta Empu) is the famous holy spring in Tampaksiring. Pura Beji is a quieter holy-spring alternative. Say which you prefer on WhatsApp when you book.",
+          "In Balinese belief, purification is one way to clear a dirty vibe and negative aura. Tirta Empul is a living sacred spring where you see an authentic ritual — offering, sarong, and the spout sequence — not a staged show.",
       },
       {
         id: "faq-melukat-4",
-        question: "Is breakfast included?",
+        question: "What is included — ticket, sarong, offering, guide, locker?",
         answer:
-          "Yes. Breakfast is included after the ritual. Lunch is not included.",
+          "Yes. IDR 780,000 covers temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Shuttle is optional and priced separately.",
       },
       {
         id: "faq-melukat-5",
         question: "Is Tirta Empu the same as Tirta Empul?",
         answer:
-          "Yes. Tirta Empu is the name we use for this purification booking. Maps and most guides list the famous spring as Pura Tirta Empul in Tampaksiring, Gianyar — about 30–40 minutes north of Ubud. You can also book Pura Beji instead.",
+          "Yes. Tirta Empu is the short name we use on this booking. Maps list the temple as Pura Tirta Empul in Tampaksiring, Gianyar — about 30–40 minutes north of Ubud.",
       },
       {
         id: "faq-melukat-6",
         question: "What should I wear for melukat?",
         answer:
-          "A sleeved top that covers the shoulders, and a change of dry clothes. We provide the temple sarong, sash, and a bathing wrap for the pools. Do not wear the temple (dry) sarong into the water. Full rules: our Bali temple dress code guide.",
+          "A sleeved top that covers the shoulders, and a change of dry clothes. We provide the sarong and offering. Do not wear the dry temple sarong into the water — use the bathing wrap. Full rules: our Bali temple dress code guide.",
       },
       {
         id: "faq-melukat-7",
         question: "Is hotel shuttle included?",
         answer:
-          "Yes — private shuttle pickup and drop-off are included for hotels in the Ubud area. That is part of the IDR 1,200,000 per person rate, not the IDR 400,000 ATV/rafting add-on. Stays in Canggu, Seminyak, or other areas — message WhatsApp for a transfer quote.",
+          "No — shuttle is optional, same as ATV and rafting. Add private shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking. Self-meet at Tirta Empul or arrive with your own driver for free.",
       },
       {
         id: "faq-melukat-8",
+        question: "Can I pay cash or card?",
+        answer:
+          "Yes. Pay on the spot when you arrive — cash (IDR) or card. Card payments add a small surcharge; cash has no card fee. We never ask for card numbers on the website or on WhatsApp to inquire.",
+      },
+      {
+        id: "faq-melukat-9",
         question: "Can anyone join the ritual?",
         answer:
           "Guests of any faith may take part if they follow temple etiquette. Women who are menstruating should not enter the inner courtyards or the purification pools. Children may join when they are comfortable in chest-deep water; tell us ages on WhatsApp.",
@@ -3161,7 +3164,7 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
       "Griya Beji Waterfall near Ubud is waterfall purification (melukat) at Taman Beji Griya in Punggul from IDR 300,000. Palm reading IDR 1,000,000. Mental healing IDR 1,500,000. Gate admission extra. Pickup IDR 400,000 or self-meet — not Tirta Empul or Pura Beji.",
     fullDescription: `**Griya Beji Waterfall — purification, palm reading, mental healing (not Tirta Empul)**
 
-[Taman Beji Griya Waterfall](${GRIYA_BEJI_VENUE.siteUrl}) is a living shrine on **Jl. Mawar, Desa Punggul, Abiansemal** — a short drive from Ubud, in the same Badung district as our ATV arena. The park runs **waterfall melukat**, **palm reading**, and **mental healing**. This is **not** [Tirta Empul or Pura Beji](/tours/tirta-empu-purification) (our private **IDR 1,200,000** temple morning with shuttle and breakfast).
+[Taman Beji Griya Waterfall](${GRIYA_BEJI_VENUE.siteUrl}) is a living shrine on **Jl. Mawar, Desa Punggul, Abiansemal** — a short drive from Ubud, in the same Badung district as our ATV arena. The park runs **waterfall melukat**, **palm reading**, and **mental healing**. This is **not** [Tirta Empul](/tours/tirta-empu-purification) (our exclusive spiritual melukat at **IDR 780,000** — ticket, sarong, offering, licensed guide, locker; shuttle optional).
 
 ### 2026 park menu (per person)
 | Offering | Price | Notes |
@@ -3255,7 +3258,7 @@ Honest comparison: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-m
         id: "faq-griya-2",
         question: "Is Griya Beji the same as Pura Beji or Tirta Empul?",
         answer:
-          "No. Taman Beji Griya Waterfall is in Desa Punggul, Abiansemal. Our private Tirta Empul or Pura Beji ticket is a different spring, IDR 1,200,000, with shuttle and breakfast. Do not treat the names as one park.",
+          "No. Taman Beji Griya Waterfall is in Desa Punggul, Abiansemal. Our Tirta Empul spiritual melukat is a different temple — IDR 780,000 with ticket, sarong, offering, licensed guide, and locker (shuttle optional). Do not treat the names as one park.",
       },
       {
         id: "faq-griya-3",

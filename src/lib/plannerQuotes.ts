@@ -390,7 +390,7 @@ export function checkPickupRule(input: {
         feeIdr: 0,
         headline: 'Private Ubud-area shuttle is included',
         detail:
-          'Tirta Empu / Pura Beji purification includes a private shuttle, guide, and breakfast in the IDR 1,200,000 per-person rate.',
+          'Tirta Empul spiritual melukat includes ticket, sarong, offering, licensed guide, and locker in the IDR 780,000 per-person rate (shuttle optional).',
         tourHref: '/tours/tirta-empu-purification',
         tourLabel: 'Melukat money page',
         whatsappActivity: 'Tirta Empu purification — confirm shuttle',

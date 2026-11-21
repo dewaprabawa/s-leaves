@@ -15,26 +15,26 @@ export const COOKING_CLASS_PRIVATE_SOLO_IDR = 1_000_000
 /** Private kitchen — 2 guests (total = 2 × private per-person rate) */
 export const COOKING_CLASS_PRIVATE_COUPLE_IDR = 2_000_000
 
-/** Private Tirta Empul or Pura Beji melukat — per person, shuttle + guide + breakfast included. */
-export const MELUKAT_PRICE_IDR = 1_200_000
+/** Exclusive Tirta Empul spiritual melukat — per person; ticket, sarong, offering, licensed guide, locker. Shuttle optional. */
+export const MELUKAT_PRICE_IDR = 780_000
 
 export const MELUKAT_SALES = {
   id: 'tirta-empu-purification',
   name: 'Tirta Empu Purification (Melukat)',
-  shortName: 'Tirta Empu Melukat',
-  tagline: 'Private holy-spring purification',
+  shortName: 'Tirta Empul Melukat',
+  tagline: 'Exclusive spiritual tour at Bali’s legendary holy spring',
   description:
-    'Private melukat (water purification) at Tirta Empul or Pura Beji. Dedicated English-speaking guide, private shuttle pickup and drop-off, offering, temple sarong, and breakfast. IDR 1,200,000 per person. Choose the spring when you book.',
+    'Exclusive spiritual melukat at Tirta Empul — Bali’s most legendary sacred water-spring temple. Licensed guide walks you through purification. Includes temple ticket, sarong, Balinese-style offering, and locker. IDR 780,000 per person. Optional shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast; self-meet or your own driver is free. Pay on the spot — cash or card.',
   highlights: [
-    'Choose Tirta Empul or Pura Beji',
-    'Private ceremony — your group only',
-    'Shuttle pickup & drop-off included (Ubud area)',
-    'English-speaking local guide + breakfast included',
+    'Tirta Empul — legendary sacred water-spring temple',
+    'Licensed guide through the purification',
+    'Ticket, sarong, offering, and locker included',
+    'Optional shuttle · self-meet free · cash or card',
   ],
   duration: '3–4 hours',
-  image: '/images/melukat/tirta-empu-spout.jpg',
+  image: '/images/melukat/tirta-empu-hero-2026-11.jpg',
   imageAlt:
-    'Guest receiving holy spring water during a Tirta Empu melukat purification',
+    'Guest at Tirta Empul sacred water spring during a guided melukat purification near Ubud',
   tourSlug: 'tirta-empu-purification',
   itineraryHref: '/tours/tirta-empu-purification',
   priceIdr: MELUKAT_PRICE_IDR,
@@ -115,11 +115,11 @@ export function buildMelukatWhatsAppUrl(guestName = 'Guest') {
     guestName,
     activity: MELUKAT_SALES.name,
     activityOption:
-      'Private melukat at Tirta Empul or Pura Beji · shuttle + guide + breakfast included · IDR 1,200,000 / person',
+      'Exclusive Tirta Empul spiritual melukat · ticket + sarong + offering + licensed guide + locker · IDR 780,000 / person · shuttle optional',
     time: '08:00',
     price: MELUKAT_SALES.priceIdr,
     notes:
-      'Please confirm a private purification (melukat) on this date. I would like Tirta Empul or Pura Beji (say which). Price is IDR 1,200,000 per person and includes private shuttle (Ubud area), English-speaking guide, offering, sarong, temple entrance, and breakfast. Share hotel name and guest count.',
+      'Please confirm an exclusive Tirta Empul purification (melukat) on this date. Price is IDR 780,000 per person and includes temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Optional private shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast; self-meet or my own driver is free. Pay on the spot — cash or card. Share hotel name and guest count.',
     pageUrl: `${SITE_URL}/tours/tirta-empu-purification`,
   })
 }

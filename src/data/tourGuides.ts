@@ -659,7 +659,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Tirta Empu melukat near Ubud',
       href: '/blog/tirta-empu-melukat-ubud-guide',
-      blurb: 'Tirta Empul or Pura Beji, breakfast included, and IDR 1.2M price.',
+      blurb: 'Exclusive Tirta Empul spiritual melukat — IDR 780K · ticket, sarong, offering, licensed guide, locker.',
     },
     {
       title: 'Bali temple dress code',
@@ -679,7 +679,7 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
     {
       title: 'Griya Beji vs Tirta Empul',
       href: '/blog/griya-beji-vs-tirta-empul-melukat',
-      blurb: 'Waterfall park in Punggul vs the private 1.2M temple morning.',
+      blurb: 'Waterfall park in Punggul vs Tirta Empul spiritual melukat at 780K.',
     },
     {
       title: 'Tumang cooking class (afternoon)',
@@ -1053,7 +1053,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'tirta-empu-purification': {
     title: 'From our holy-spring hosts',
-    body: 'We run private melukat mornings at Tirta Empul or Pura Beji most days — hotel shuttle from the Ubud area, a canang offering, breakfast after the ritual, and a guide who tells you which fountains to use and which to skip. The temple is public and sacred: we keep the ritual unhurried and respectful, then return you in dry clothes. Lunch is not included.',
+    body: 'We run exclusive spiritual melukat mornings at Tirta Empul most days — licensed guide, temple ticket, sarong, Balinese-style offering, and locker. Optional shuttle or free self-meet. The guide tells you which fountains to use and which to skip. The temple is public and sacred: we keep the ritual unhurried and respectful. Lunch is not included. Pay cash or card on the spot.',
   },
   'batur-sunrise-jeep-tour': {
     title: 'From our Kintamani jeep drivers',
@@ -1085,7 +1085,7 @@ export const TOUR_HOST_NOTES: Record<
   },
   'griya-beji-waterfall': {
     title: 'From our Punggul purification hosts',
-    body: 'Taman Beji Griya Waterfall is a living shrine on Jl. Mawar, Desa Punggul — waterfall melukat, palm reading, and mental healing. It is not Tirta Empul and not the Pura Beji spring on our 1.2M private ticket. We confirm the 2026 park board and practitioner availability on WhatsApp. Healing is guided relaxation, not a hospital clinic.',
+    body: 'Taman Beji Griya Waterfall is a living shrine on Jl. Mawar, Desa Punggul — waterfall melukat, palm reading, and mental healing. It is not Tirta Empul (our exclusive spiritual melukat at IDR 780,000). We confirm the 2026 park board and practitioner availability on WhatsApp. Healing is guided relaxation, not a hospital clinic.',
   },
   'bali-bird-park': {
     title: 'From our booking desk',

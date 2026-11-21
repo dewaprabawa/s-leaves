@@ -13,11 +13,11 @@ const faqs = [
   },
   {
     question: "What activities and tours do you offer?",
-    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the private Mount Batur jeep (sit-in IDR 2,300,000 for 2 or IDR 2,850,000 for 3, tracking IDR 1,800,000 for 2, sunrise or sunset; optional hot spring +IDR 150,000 with ticket included). Private Kintamani Day is a full-day promo at IDR 1,300,000 per person (min 2; was IDR 1,450,000). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: private Tirta Empul or Pura Beji melukat purification — IDR 1,200,000 per person with shuttle, guide, and breakfast. Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
+    answer: "We cover travel and activities near Ubud — not sports only. Adventure: Single/Tandem ATV, whitewater rafting, canyon tubing, and the private Mount Batur jeep (sit-in IDR 2,300,000 for 2 or IDR 2,850,000 for 3, tracking IDR 1,800,000 for 2, sunrise or sunset; optional hot spring +IDR 150,000 with ticket included). Private Kintamani Day is a full-day promo at IDR 1,300,000 per person (min 2; was IDR 1,450,000). Village: 2-hour Pejeng ricefield cycling with free Ubud pickup. Food: Tumang Bali Cooking Class (market tour, 10+ dishes) and luwak coffee tasting. Culture: exclusive Tirta Empul spiritual melukat — IDR 780,000 per person with ticket, sarong, offering, licensed guide, and locker (shuttle optional). Day tours: full-day Ubud and half-day Tanah Lot sunset. Mix combos and culture days on WhatsApp."
   },
   {
     question: "Is hotel pickup included in the price?",
-    answer: "Free hotel pickup within Ubud is included on our Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Swing Heaven includes a hotel driver in the ticket (required — no self-meet at Bongkasa). The private Tirta Empu Purification (Melukat) includes a Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes hotel pickup island-wide (Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua) in the jeep price. For ATV, rafting, canyon tubing, and Griya Beji Waterfall, optional hotel pickup is IDR 400,000. You can also self-meet at All New Bali Adventure (ATV/rafting/tubing) or Taman Beji Griya Waterfall in Punggul with no transport fee — often cheaper than Grab or GoCar."
+    answer: "Free hotel pickup within Ubud is included on our Ubud Ricefield Cycling Tour and Tumang Bali Cooking Class. Swing Heaven includes a hotel driver in the ticket (required — no self-meet at Bongkasa). Tirta Empul Purification (Melukat) uses optional private shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast — or free self-meet / own driver. The private Mount Batur jeep includes hotel pickup island-wide (Ubud, Canggu, Seminyak, Sanur, Kuta, Nusa Dua) in the jeep price. For ATV, rafting, canyon tubing, and Griya Beji Waterfall, optional hotel pickup is IDR 400,000 (south coast 650,000). You can also self-meet at All New Bali Adventure (ATV/rafting/tubing), Tirta Empul, or Taman Beji Griya Waterfall in Punggul with no transport fee — often cheaper than Grab or GoCar."
   },
   {
     question: "Do I need experience to ride an ATV, go rafting, or cycle?",
@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     question: "Which tours have free Ubud hotel pickup?",
-    answer: "Ubud Ricefield Cycling Tour (promo IDR 550,000, was 650,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). Tirta Empu Purification includes a private Ubud-area shuttle in the IDR 1,200,000 per person rate. The private Mount Batur jeep includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, canyon tubing, and Griya Beji Waterfall charge IDR 400,000 for hotel pickup."
+    answer: "Ubud Ricefield Cycling Tour (promo IDR 550,000, was 650,000) and Tumang Bali Cooking Class (shared promo IDR 450,000 / person) include complimentary hotel pickup within Ubud. Swing Heaven includes a hotel driver in the ticket (required — no self-meet). Tirta Empul Purification uses optional shuttle IDR 400,000 / 650,000 or free self-meet — IDR 780,000 covers ticket, sarong, offering, licensed guide, and locker. The private Mount Batur jeep includes pickup island-wide in the jeep price — not the IDR 400,000 ATV/rafting add-on. ATV, rafting, canyon tubing, and Griya Beji Waterfall charge IDR 400,000 for hotel pickup."
   },
   {
     question: "How much is Tumang Bali Cooking Class?",
@@ -72,16 +72,16 @@ const faqs = [
     answer: "IDR 850,000 for one guest, 700,000 each for two, 650,000 each for three, and 550,000 each for four or more at Umah Kuno. A licensed guide is optional: English 600,000, Japanese 700,000, French 750,000 per booking. Includes the guided plantation walk, roasting demonstration, and tasting flight of 10 teas and coffees including ethical Kopi Luwak. Transport to Tampaksiring is not included."
   },
   {
-    question: "How much is a private Tirta Empul or Beji melukat?",
-    answer: "IDR 1,200,000 per person for a private purification at Tirta Empul or Pura Beji. The price includes a Ubud-area shuttle, English-speaking guide, temple entrance, canang offering, sarong, and breakfast. Lunch is not included. Typical start 08:00 or 09:00 — book on the Tirta Empu page via WhatsApp and say which spring you want. This is not Griya Beji Waterfall in Punggul."
+    question: "How much is the Tirta Empul spiritual melukat?",
+    answer: "IDR 780,000 per person for an exclusive spiritual purification at Tirta Empul. Includes temple ticket, sarong, Balinese-style offering, licensed guide, and locker. Optional shuttle IDR 400,000 from Ubud or IDR 650,000 from the south coast; self-meet or your own driver is free. Pay on the spot — cash or card. Typical start 08:00 or 09:00. This is not Griya Beji Waterfall in Punggul."
   },
   {
     question: "How much is Griya Beji Waterfall purification near Ubud?",
-    answer: "Waterfall purification (melukat) at Taman Beji Griya Waterfall in Punggul is IDR 300,000 per person. Palm reading is IDR 1,000,000. Mental healing is IDR 1,500,000. International admission IDR 50,000 (domestic 20,000) is extra at the gate. Hotel pickup is IDR 400,000 or self-meet. This is not Tirta Empul or Pura Beji. Confirm the 2026 park board on WhatsApp."
+    answer: "Waterfall purification (melukat) at Taman Beji Griya Waterfall in Punggul is IDR 300,000 per person. Palm reading is IDR 1,000,000. Mental healing is IDR 1,500,000. International admission IDR 50,000 (domestic 20,000) is extra at the gate. Hotel pickup is IDR 400,000 or self-meet. This is not Tirta Empul. Confirm the 2026 park board on WhatsApp."
   },
   {
-    question: "Is Griya Beji the same as Tirta Empul or Pura Beji?",
-    answer: "No. Taman Beji Griya Waterfall is on Jl. Mawar, Desa Punggul, Abiansemal. Tirta Empul and Pura Beji are a different private ticket — IDR 1,200,000 with shuttle, guide, and breakfast. “Beji” in both names does not mean the same spring."
+    question: "Is Griya Beji the same as Tirta Empul?",
+    answer: "No. Taman Beji Griya Waterfall is on Jl. Mawar, Desa Punggul, Abiansemal. Tirta Empul is a different temple — exclusive spiritual melukat IDR 780,000 with ticket, sarong, offering, licensed guide, and locker (shuttle optional). “Beji” in the waterfall name does not mean Tirta Empul."
   },
   {
     question: "How much is a private full day or half day Ubud tour?",

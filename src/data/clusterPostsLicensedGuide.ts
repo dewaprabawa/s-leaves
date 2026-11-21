@@ -332,7 +332,7 @@ Full details on licensing and booking: [licensed tour guide in Bali](/blog/licen
       'Visiting Bali temples alone is easy — understanding them is not. What a licensed guide explains at Tirta Empul, Ubud palace, and village temples: courtyards, offerings, fountain order, odalan ceremonies, and etiquette. Guide from IDR 600,000 per booking.',
     publishedAt: '2026-10-12',
     author: 'Sekar Bali Activity',
-    image: '/images/melukat/tirta-empu-spout.jpg',
+    image: '/images/melukat/tirta-empu-gallery-01-2026-11.jpg',
     content: `
 **Should you visit Bali temples with a guide?** You can visit without one — buy a ticket, borrow a sarong, take photos. But you will miss **why** the temple is laid out the way it is, **what** the offerings mean, and **how** to take part in rituals like holy-spring purification. A licensed guide fills those gaps in your language. Sekar Bali Activity books [licensed guides](/tours/licensed-tour-guide-bali) from **IDR 600,000** (English guide only) or **IDR 850,000** (Japanese/French with private driver in Ubud).
 
@@ -771,7 +771,7 @@ English signs at temples are short. A licensed Japanese guide can explain **offe
     author: 'Sekar Bali Activity',
     image: '/images/guide/bali-guide-thumbs-up.jpg',
     content: `
-**Can you do Tirta Empul melukat with a Japanese-speaking guide?** Yes. Sekar Bali Activity books a **government-licensed Japanese guide** who explains the **holy-spring purification** — fountain order, which spouts to skip, offerings, and dress — in Japanese. Guide only from **IDR 700,000** for 8 hours (or **+ driver IDR 850,000** in Ubud). Prefer a **private melukat package** with shuttle and breakfast? See [Tirta Empu Purification](/tours/tirta-empu-purification). [Book the Japanese guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
+**Can you do Tirta Empul melukat with a Japanese-speaking guide?** Yes. Sekar Bali Activity books a **government-licensed Japanese guide** who explains the **holy-spring purification** — fountain order, which spouts to skip, offerings, and dress — in Japanese. Guide only from **IDR 700,000** for 8 hours (or **+ driver IDR 850,000** in Ubud). Prefer the **Tirta Empul spiritual melukat** (IDR 780,000 — ticket, sarong, offering, licensed guide, locker)? See [Tirta Empul Purification](/tours/tirta-empu-purification). [Book the Japanese guide](/tours/licensed-tour-guide-bali) — WhatsApp, **no payment to inquire**.
 
 > **日本語のポイント**
 > - ティルタエンプルの**メラカット**を日本語で説明できる**政府公認ガイド**を手配
@@ -784,7 +784,7 @@ English signs at temples are short. A licensed Japanese guide can explain **offe
 | Option | Best if | From-price |
 | --- | --- | --- |
 | **Japanese licensed guide** (this page’s product) | You want Japanese explanation for Tirta Empul **plus** other Ubud stops the same day | Guide only **700,000** / + driver **850,000** Ubud |
-| **[Private melukat package](/tours/tirta-empu-purification)** | You want a focused 3–4 hour purification with Ubud shuttle, offering, sarong, breakfast | **IDR 1,200,000** per person (English guide on the package — ask WhatsApp if you need Japanese commentary layered on) |
+| **[Tirta Empul spiritual melukat](/tours/tirta-empu-purification)** | You want a focused 3–4 hour purification with licensed guide, offering, sarong, locker | **IDR 780,000** per person (ask WhatsApp if you need Japanese commentary layered on) |
 
 Many Japanese couples book the **licensed Japanese guide** for a full culture day that **includes** Tirta Empul after the palace and rice terraces — see [Japanese Ubud day itinerary](/blog/japanese-licensed-guide-ubud-day-2026).
 

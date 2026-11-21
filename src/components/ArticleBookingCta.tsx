@@ -926,7 +926,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'griya-beji-vs-tirta-empul-melukat': {
     headline: 'Pick the right Beji — then book',
-    body: 'Waterfall park from 300K in Punggul, or private Tirta Empul / Pura Beji at 1.2M with shuttle and breakfast.',
+    body: 'Waterfall park from 300K in Punggul, or exclusive Tirta Empul spiritual melukat at 780K (shuttle optional).',
     primaryHref: '/tours/griya-beji-waterfall',
     primaryLabel: 'Book Griya Beji',
     secondaryHref: '/tours/tirta-empu-purification',
@@ -1009,8 +1009,8 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryLabel: 'Culture-day combo',
   },
   'tirta-empu-melukat-ubud-guide': {
-    headline: 'Book private Tirta Empul or Beji melukat',
-    body: 'IDR 1,200,000 per person · Ubud shuttle, guide, and breakfast. Choose the spring on WhatsApp.',
+    headline: 'Book Tirta Empul spiritual melukat',
+    body: 'IDR 780,000 per person · ticket, sarong, offering, licensed guide, locker. Shuttle optional. Cash or card.',
     primaryHref: '/tours/tirta-empu-purification',
     primaryLabel: 'View melukat',
     secondaryHref: '/tours/balinese-cooking-class',
@@ -1018,7 +1018,7 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
   },
   'bali-temple-dress-code': {
     headline: 'Need a guided temple morning? Book melukat',
-    body: 'Private Tirta Empul or Beji — IDR 1,200,000 includes shuttle, sarong, and breakfast.',
+    body: 'Exclusive Tirta Empul spiritual melukat — IDR 780,000 includes ticket, sarong, offering, licensed guide, locker.',
     primaryHref: '/tours/tirta-empu-purification',
     primaryLabel: 'Book melukat',
     secondaryHref: '/tours/balinese-cooking-class',

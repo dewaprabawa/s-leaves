@@ -35,7 +35,7 @@ export const GRIYA_BEJI_OFFERS = {
     priceIdr: GRIYA_BEJI_PURIFICATION_IDR,
     duration: '1–2 hours',
     blurb:
-      'Melukat in the sacred spring-fed pool at Griya Beji Waterfall — offerings, prayer, and water immersion. Not the Tirta Empul / Pura Beji private 1.2M ritual.',
+      'Melukat in the sacred spring-fed pool at Griya Beji Waterfall — offerings, prayer, and water immersion. Not the Tirta Empul spiritual 780K melukat.',
   },
   palmReading: {
     id: 'griya-beji-palm-reading',
@@ -61,12 +61,12 @@ export const GRIYA_BEJI_SALES = {
   shortName: 'Griya Beji',
   tagline: 'Waterfall melukat, palm reading & mental healing',
   description:
-    'Taman Beji Griya Waterfall in Desa Punggul, Abiansemal — waterfall purification (melukat) IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000. International admission IDR 50,000 (domestic 20,000) is extra at the gate. Not Tirta Empul or Pura Beji. Pickup IDR 400,000 or self-meet.',
+    'Taman Beji Griya Waterfall in Desa Punggul, Abiansemal — waterfall purification (melukat) IDR 300,000, palm reading IDR 1,000,000, mental healing IDR 1,500,000. International admission IDR 50,000 (domestic 20,000) is extra at the gate. Not Tirta Empul. Pickup IDR 400,000 or self-meet.',
   highlights: [
     'Waterfall purification (melukat) IDR 300,000',
     'Palm reading IDR 1,000,000 · mental healing IDR 1,500,000',
     'Punggul, Abiansemal — same district as ATV',
-    'Not the Tirta Empul / Pura Beji 1.2M private ritual',
+    'Not the Tirta Empul 780K spiritual melukat',
   ],
   duration: '1–2.5 hours',
   image: '/images/adventures/griya-beji-waterfall.jpg',

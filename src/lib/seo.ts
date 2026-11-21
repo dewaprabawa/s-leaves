@@ -36,7 +36,7 @@ export function buildOrganizationSchema() {
     alternateName: ['Sekar Bali', 'Sekar Bali Activity Ubud', 'Sekar Bali Pejeng'],
     legalName: SITE_NAME,
     description:
-      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Swing Heaven jungle swing (Bongkasa), Aloha Ubud Swing (Tegallalang), ricefield cycling, Mount Batur sunrise jeep (Kintamani), Tumang Bali Cooking Class, Tirta Empul or Pura Beji private melukat, Griya Beji Waterfall purification / palm reading / mental healing, coffee tasting, private day tours, a guided motorbike traveling trip, and UTV at Bali Buggy Adventures. Free Ubud hotel pickup on cycling and Tumang cooking class; required shuttle IDR 400,000 Ubud / 650,000 south on Swing Heaven and Aloha; private shuttle on Tirta Empul / Beji purification; Griya Beji pickup IDR 400,000 or self-meet; park / UTV / workshop pickup quoted.',
+      'Bali travel activities in Pejeng near Ubud — ATV rides, whitewater rafting, canyon tubing, Swing Heaven jungle swing (Bongkasa), Aloha Ubud Swing (Tegallalang), ricefield cycling, Mount Batur sunrise jeep (Kintamani), Tumang Bali Cooking Class, exclusive Tirta Empul spiritual melukat, Griya Beji Waterfall purification / palm reading / mental healing, coffee tasting, private day tours, a guided motorbike traveling trip, and UTV at Bali Buggy Adventures. Free Ubud hotel pickup on cycling and Tumang cooking class; required shuttle IDR 400,000 Ubud / 650,000 south on Swing Heaven and Aloha; optional shuttle or free self-meet on Tirta Empul purification; Griya Beji pickup IDR 400,000 or self-meet; park / UTV / workshop pickup quoted.',
     url: SITE_URL,
     telephone: CONTACT_PHONE_E164,
     email: CONTACT_EMAIL,

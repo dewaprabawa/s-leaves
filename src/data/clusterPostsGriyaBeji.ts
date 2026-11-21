@@ -11,13 +11,13 @@ export const GRIYA_BEJI_CLUSTER_POSTS = [
     author: 'Sekar Bali Activity',
     image: '/images/adventures/griya-beji-waterfall.jpg',
     content: `
-**How much is Griya Beji Waterfall purification near Ubud?** Sekar Bali Activity books **[Taman Beji Griya Waterfall](/tours/griya-beji-waterfall)** in **Desa Punggul, Abiansemal** — a **waterfall purification (melukat)** at **IDR 300,000**, **palm reading IDR 1,000,000**, **mental healing IDR 1,500,000**. International **admission is IDR 50,000** (domestic **IDR 20,000**) at the gate unless we confirm it is waived. Hours **09:00–18:00**. This is **not** a [Tirta Empul water purification ceremony](/tours/tirta-empu-purification) (private **IDR 1,200,000** with shuttle and breakfast). **Hotel pickup is IDR 400,000** or self-meet. Book on WhatsApp — **no payment to inquire**.
+**How much is Griya Beji Waterfall purification near Ubud?** Sekar Bali Activity books **[Taman Beji Griya Waterfall](/tours/griya-beji-waterfall)** in **Desa Punggul, Abiansemal** — a **waterfall purification (melukat)** at **IDR 300,000**, **palm reading IDR 1,000,000**, **mental healing IDR 1,500,000**. International **admission is IDR 50,000** (domestic **IDR 20,000**) at the gate unless we confirm it is waived. Hours **09:00–18:00**. This is **not** a [Tirta Empul water purification ceremony](/tours/tirta-empu-purification) (exclusive spiritual **IDR 780,000** — ticket, sarong, offering, licensed guide, locker; shuttle optional). **Hotel pickup is IDR 400,000** or self-meet. Book on WhatsApp — **no payment to inquire**.
 
 > **Key Takeaways**
 > - Venue: **Jl. Mawar, Desa Punggul**, Abiansemal (Badung) — same district as ATV and Swing Heaven
 > - Waterfall purification **IDR 300,000** · palm reading **IDR 1,000,000** · mental healing **IDR 1,500,000**
 > - Gate admission **IDR 50,000** intl / **IDR 20,000** domestic — extra
-> - Not Tirta Empul and **not** the Pura Beji spring on the 1.2M private ticket
+> - Not Tirta Empul (exclusive spiritual melukat at **IDR 780,000**)
 > - Pickup **IDR 400,000** or free self-meet · confirm the 2026 board on WhatsApp
 > - Pair afternoon **[Tumang cooking](/tours/balinese-cooking-class)** or a [long driver day](/blog/long-private-driver-day-ubud-2026)
 
@@ -35,15 +35,15 @@ These are the **2026 published park prices**. We confirm the live board on Whats
 
 ## Griya Beji vs Tirta Empul vs Pura Beji
 
-| | Griya Beji Waterfall | Tirta Empul / Pura Beji (our other ticket) |
+| | Griya Beji Waterfall | Tirta Empul (our other ticket) |
 | --- | --- | --- |
-| Where | **Punggul, Abiansemal** | Tampaksiring (Empul) or a quieter holy spring |
+| Where | **Punggul, Abiansemal** | Tampaksiring sacred spring |
 | Setting | Waterfall + spring pool | Temple fountains |
-| From (IDR) | **300,000** ritual | **1,200,000** private |
-| Includes | Ritual you book | Shuttle, guide, offering, sarong, **breakfast** |
-| Extra | Gate admission | Lunch not included |
+| From (IDR) | **300,000** ritual | **780,000** spiritual |
+| Includes | Ritual you book | Ticket, sarong, offering, licensed guide, locker |
+| Extra | Gate admission | Shuttle optional · lunch not included |
 
-If you want a **private temple water purification ceremony with breakfast**, book [Tirta Empu Purification](/tours/tirta-empu-purification). If you want a **waterfall melukat** plus optional palm reading or healing, book [Griya Beji](/tours/griya-beji-waterfall). Side-by-side: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat).
+If you want an **exclusive Tirta Empul spiritual melukat**, book [Tirta Empul Purification](/tours/tirta-empu-purification). If you want a **waterfall melukat** plus optional palm reading or healing, book [Griya Beji](/tours/griya-beji-waterfall). Side-by-side: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat).
 
 ## Suggested clock
 
@@ -64,7 +64,7 @@ Mental healing is typically **60–90 minutes** and should not share the same ti
 | Village paddies + kitchen | [Cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary) | **Free Ubud** on both |
 | Jungle photos + kitchen | [Swing Heaven + cooking](/blog/swing-heaven-cooking-class-ubud) | Swing driver included · cooking free Ubud |
 | Waterfall + kitchen | This park, then afternoon Tumang | Griya **400K** or self-meet · cooking free Ubud |
-| Temple ceremony, not a waterfall | [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) **1.2M** | Shuttle **included** |
+| Temple ceremony, not a waterfall | [Tirta Empul](/tours/tirta-empu-purification) **780K** | Shuttle **optional** |
 | Mud then ritual | Morning [ATV](/tours/bali-atv-adventure) in Sedang, then Griya | Both **400K** or self-meet · same Abiansemal district |
 | Family or girls week | [Private itinerary](/tours/bali-private-itinerary) | Driver day replaces the 400K add-on |
 
@@ -88,30 +88,30 @@ Sarong and sash — swimwear is not the ritual dress. Women who are menstruating
     title: 'Griya Beji vs Tirta Empul Melukat: Which Purification to Book',
     seoTitle: 'Griya Beji vs Tirta Empul | Which Melukat',
     excerpt:
-      'Griya Beji waterfall melukat is IDR 300,000 in Punggul. Private Tirta Empul or Pura Beji is IDR 1,200,000 with shuttle and breakfast. Honest 2026 comparison.',
+      'Griya Beji waterfall melukat is IDR 300,000 in Punggul. Tirta Empul spiritual melukat is IDR 780,000 with ticket, sarong, offering, licensed guide, and locker (shuttle optional). Honest 2026 comparison.',
     publishedAt: '2026-09-23',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/griya-beji-purification.jpg',
     content: `
-**Should you book Griya Beji or a Tirta Empul water purification ceremony?** Book **[Griya Beji Waterfall](/tours/griya-beji-waterfall)** if you want a **waterfall purification** in **Punggul, Abiansemal** at **IDR 300,000** (plus gate admission). Book **[Tirta Empu Purification](/tours/tirta-empu-purification)** if you want a **private temple water purification ceremony** at **Tirta Empul or Pura Beji** for **IDR 1,200,000** with **shuttle, guide, offering, sarong, and breakfast**. They are different sites and different tickets. Aggregator “melukat + cooking + jungle swing” days usually mean **Happy Swing + walk-in Empul** — we sell neither of those as a bundle.
+**Should you book Griya Beji or a Tirta Empul water purification ceremony?** Book **[Griya Beji Waterfall](/tours/griya-beji-waterfall)** if you want a **waterfall purification** in **Punggul, Abiansemal** at **IDR 300,000** (plus gate admission). Book **[Tirta Empul Purification](/tours/tirta-empu-purification)** if you want an **exclusive spiritual melukat** at **Tirta Empul** for **IDR 780,000** with **ticket, sarong, offering, licensed guide, and locker** (shuttle optional). They are different sites and different tickets. Aggregator “melukat + cooking + jungle swing” days usually mean **Happy Swing + walk-in Empul** — we sell neither of those as a bundle.
 
 > **Key Takeaways**
 > - Griya Beji = waterfall park in **Punggul** · ritual **IDR 300,000**
-> - Tirta Empul / Pura Beji = **private 1.2M** temple morning with breakfast
-> - “Beji” in both names does **not** mean the same spring
+> - Tirta Empul = exclusive spiritual **IDR 780,000** · ticket, sarong, offering, licensed guide, locker
+> - “Beji” in the waterfall name does **not** mean Tirta Empul
 > - Palm reading and mental healing exist only on the Griya Beji menu
 > - Afternoon kitchen: [Tumang cooking](/tours/balinese-cooking-class) after either morning — pickup rules stay separate
 > - Confirm the live IDR on WhatsApp — **no payment to inquire**
 
 ## Side-by-side
 
-| | Griya Beji Waterfall | Tirta Empul or Pura Beji |
+| | Griya Beji Waterfall | Tirta Empul |
 | --- | --- | --- |
-| Address | Jl. Mawar, **Desa Punggul**, Abiansemal | Tampaksiring (Empul) or quieter Beji spring |
-| Ritual price | **IDR 300,000** | **IDR 1,200,000** private |
-| Gate ticket | **50,000** intl / **20,000** domestic | Included in the private rate |
-| Shuttle | Optional **IDR 400,000** | **Included** (Ubud area) |
-| Breakfast | No | **Yes** |
+| Address | Jl. Mawar, **Desa Punggul**, Abiansemal | Tampaksiring sacred spring |
+| Ritual price | **IDR 300,000** | **IDR 780,000** spiritual |
+| Gate ticket | **50,000** intl / **20,000** domestic | Included in the rate |
+| Shuttle | Optional **IDR 400,000** | Optional **400K Ubud / 650K south** or self-meet free |
+| Included extras | — | Sarong, offering, licensed guide, locker |
 | Extra therapies | Palm **1M** · healing **1.5M** | No |
 | Hours | 09:00–18:00 | Typical 08:00 / 09:00 start |
 

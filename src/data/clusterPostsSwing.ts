@@ -258,7 +258,7 @@ Aggregator listings rank for **“Ubud cooking class temple tour and jungle swin
 1. A **Bongkasa jungle-swing ticket** with a published IDR
 2. A **capped village kitchen** with Chef Wayan Suryana
 
-If you want the holy-spring morning instead of the swing, book [Tirta Empu Purification](/tours/tirta-empu-purification) (**IDR 1,200,000**, shuttle + breakfast) and keep the afternoon kitchen. If you want paddies instead of a swing, book [cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary).
+If you want the holy-spring morning instead of the swing, book [Tirta Empul Purification](/tours/tirta-empu-purification) (**IDR 780,000**, shuttle optional) and keep the afternoon kitchen. If you want paddies instead of a swing, book [cycling + cooking](/blog/cycling-cooking-class-ubud-full-day-itinerary).
 
 ## 2026 price table (published tickets)
 
@@ -308,7 +308,7 @@ Side-by-side: [Swing Heaven vs Tegallalang](/blog/swing-heaven-vs-tegallalang-ba
 | If you want… | Book this instead |
 | --- | --- |
 | Village paddies + kitchen | [Cycling + Tumang](/blog/cycling-cooking-class-ubud-full-day-itinerary) — both include **free Ubud pickup** |
-| Holy spring + kitchen | Morning [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) (**IDR 1,200,000**, shuttle + breakfast) then afternoon cooking |
+| Holy spring + kitchen | Morning [Tirta Empul](/tours/tirta-empu-purification) (**IDR 780,000**, shuttle optional) then afternoon cooking |
 | Mud then jungle photos | [ATV](/tours/bali-atv-adventure) + Swing Heaven — both Abiansemal. Swing driver included; ATV pickup **IDR 400,000** or self-meet |
 | Waterfall ritual, not a temple | [Griya Beji](/tours/griya-beji-waterfall) in Punggul — **not** Tirta Empul |
 

@@ -179,71 +179,68 @@ Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-
   },
   {
     slug: 'tirta-empu-melukat-ubud-guide',
-    title: 'Private Tirta Empu Melukat near Ubud (2026)',
+    title: 'Tirta Empul Spiritual Melukat near Ubud (2026)',
     excerpt:
-      'Private holy-spring purification at Tirta Empul or Pura Beji — IDR 1,200,000 per person with shuttle, guide, and breakfast. What to wear, what is included, and how to book.',
+      'Exclusive spiritual purification at Tirta Empul — Bali’s legendary sacred spring. IDR 780,000 per person with ticket, sarong, offering, licensed guide, and locker. Shuttle optional. Cash or card.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
-    image: '/images/melukat/tirta-empu-spout.jpg',
-    seoTitle: 'Melukat Morning Guide | What to Wear',
+    image: '/images/melukat/tirta-empu-hero-2026-11.jpg',
+    seoTitle: 'Tirta Empul Melukat Guide | 780K',
     content: `
-**How much is a private Tirta Empul or Beji melukat near Ubud?** **IDR 1,200,000 per person** with Sekar Bali Activity. The private rate includes a **Ubud-area shuttle** (pickup and drop-off), an **English-speaking guide**, temple entrance, a canang offering, sarong, and **breakfast**. Choose **Tirta Empul** (Tampaksiring) or **Pura Beji** (quieter holy spring) when you book. Lunch is not included.
+**How much is a Tirta Empul spiritual melukat near Ubud?** **IDR 780,000 per person** with Sekar Bali Activity. This is an **exclusive spiritual tour** at **Tirta Empul** — Bali’s most legendary sacred water-spring temple. A **licensed guide** explains and walks you through purification. The rate includes **temple ticket**, **sarong**, a **Balinese-style offering**, and a **locker**. Optional private shuttle is **IDR 400,000** from Ubud or **IDR 650,000** from the south coast; **self-meet** or **your own driver** is free. Pay on the spot — **cash or card**. Lunch is not included.
 
 > **Key Takeaways**
-> - Choose **Tirta Empul** or **Pura Beji** — same private rate
-> - Private booking — your group, your shuttle, your guide (the temple itself is public)
-> - **IDR 1,200,000 / person** — shuttle + guide + **breakfast** included
-> - Typical start 08:00 or 09:00 · about 3–4 hours hotel to hotel
-> - Dress: covered shoulders + change of clothes — we supply sarong, sash, and bathing wrap
+> - **Tirta Empul** — legendary sacred spring; never skip this journey if you come to Bali
+> - Exclusive spiritual tour with a **licensed guide** through purification
+> - **IDR 780,000 / person** — ticket + sarong + offering + guide + locker
+> - Shuttle optional (400K Ubud / 650K south) · self-meet free · cash or card
+> - In Balinese belief, purification helps clear a dirty vibe and negative aura
 
 ---
 
-## Tirta Empul or Pura Beji?
+## Why Tirta Empul?
 
-**Tirta Empul** (we also write Tirta Empu) is the famous holy spring temple in Manukaya, Tampaksiring, Gianyar — about 30–40 minutes north of Ubud. Maps list it as **Pura Tirta Empul**.
+**Tirta Empul** (we also write Tirta Empu) is the famous holy spring temple in Manukaya, Tampaksiring, Gianyar — about 30–40 minutes north of Ubud. Maps list it as **Pura Tirta Empul**. Here you see an **authentic** sacred-spring ritual: offering, sarong, and the spout sequence the way Balinese families still practice it.
 
-**Pura Beji** is a quieter holy-spring alternative. Same private guide, shuttle, offering, and breakfast. Confirm which spring you want on WhatsApp.
-
-A walk-in ticket only covers the grounds. It does not include a guide who explains which fountains are for living guests and which are reserved for funeral rites. That is why we sell a **guided private** package, not a temple-ticket markup.
+A walk-in ticket only covers the grounds. It does not include a licensed guide who explains which fountains are for living guests and which are reserved for funeral rites. That is why we sell a **guided spiritual** package, not a temple-ticket markup.
 
 **Not the same spring:** [Griya Beji Waterfall](/tours/griya-beji-waterfall) (Taman Beji Griya in **Punggul**) is a different park — waterfall purification from **IDR 300,000**, plus palm reading and mental healing. Side-by-side: [Griya Beji vs Tirta Empul](/blog/griya-beji-vs-tirta-empul-melukat).
 
-## What is included in IDR 1,200,000
+## What is included in IDR 780,000
 
 | Included | Not included |
 | --- | --- |
-| Private shuttle (Ubud-area hotels) | Pickup outside Ubud (ask WhatsApp) |
-| English-speaking local guide | Lunch |
-| Temple entrance | Personal expenses / tips |
-| Canang offering | Extra priest blessing (optional) |
-| Temple sarong, sash, bathing wrap | |
-| **Breakfast** after the ritual | |
+| Temple ticket (entrance) | Private shuttle (optional 400K / 650K) |
+| Licensed guide through purification | Lunch |
+| Sarong (and sash / bathing wrap as needed) | Personal expenses / tips |
+| Balinese-style offering (canang) | Extra priest blessing (optional) |
+| Locker for dry clothes and valuables | |
 
-Book the money page: [Tirta Empu Purification (Melukat)](/tours/tirta-empu-purification).
+Book the money page: [Tirta Empul Purification (Melukat)](/tours/tirta-empu-purification).
 
 ## What the morning looks like
 
-1. **Pickup** from your Ubud hotel (08:00 or 09:00).
-2. **Drive** to Tirta Empul (Tampaksiring) or Pura Beji.
-3. **Briefing** — offering, sash, which spouts to use.
-4. **Melukat** in the holy spring pools (cold mountain water).
-5. **Breakfast** (included), then shuttle back.
+1. **Meet** — optional shuttle drop-off or self-meet at Tirta Empul (08:00 or 09:00).
+2. **Briefing** — locker, sarong, offering, which spouts to use.
+3. **Melukat** in the sacred spring pools (cold mountain water).
+4. **Change** into dry clothes, optional courtyard walk.
+5. **Return** with shuttle or your own driver.
 
 The pools are chest-deep for most adults. Tell us children’s ages on WhatsApp so we can judge comfort.
 
 ## Dress code and etiquette
 
-Covered shoulders. We bring sarong and sash. Do **not** wear the dry temple sarong into the water — use the bathing wrap. Women who are menstruating should not enter the inner courtyards or the pools. Full rules: [Bali temple dress code](/blog/bali-temple-dress-code).
+Covered shoulders. We bring sarong and offering. Do **not** wear the dry temple sarong into the water — use the bathing wrap. Women who are menstruating should not enter the inner courtyards or the pools. Full rules: [Bali temple dress code](/blog/bali-temple-dress-code).
 
 ## Shuttle vs other pickup rules
 
-This is **not** the IDR 400,000 ATV/rafting pickup add-on. The Ubud-area shuttle is built into the 1.2M private rate. Cycling and Tumang cooking use complimentary Ubud pickup; the Mount Batur jeep includes island-wide pickup. Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
+Same flow as ATV and rafting: optional private shuttle **IDR 400,000** from Ubud or **IDR 650,000** from the south coast, or free self-meet / own driver. Cycling and Tumang cooking still use complimentary Ubud pickup; the Mount Batur jeep includes island-wide pickup. Policy: [Ubud hotel pickup explained](/blog/ubud-hotel-pickup-bali-adventures-explained).
 
 ## Pairing the same day
 
-A Tampaksiring Tirta Empul morning sits next to [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation) (transport **not** included on that tasting — ask us to keep the shuttle). Afternoon [Tumang cooking class](/tours/balinese-cooking-class) also works after a morning ritual.
+A Tampaksiring Tirta Empul morning sits next to [Umah Kuno luwak tasting](/tours/luwak-coffee-plantation). Afternoon [Tumang cooking class](/tours/balinese-cooking-class) also works after a morning ritual.
 
-**Ready to book?** Open [Tirta Empu Purification](/tours/tirta-empu-purification) or [book on WhatsApp](/book?activity=tirta-empu-purification) with date, hotel, guest count, and **Tirta Empul or Beji**. No payment to inquire.
+**Ready to book?** Open [Tirta Empul Purification](/tours/tirta-empu-purification) or [book on WhatsApp](/book?activity=tirta-empu-purification) with date, hotel, and guest count. No payment to inquire.
 `,
   },
   {
@@ -1676,12 +1673,12 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
     slug: 'bali-adventure-packages-prices-2026',
     title: 'Bali Adventure Prices 2026',
     seoTitle: 'Bali Activity Prices 2026 | From 450K',
-    excerpt: 'ATV from IDR 750K, rafting and tubing 500K (450K for 2+), ricefield cycling promo 550K (was 650K), private Mount Batur jeep sit-in 2.3M for 2 / 2.85M for 3 / tracking 1.8M for 2 / 750K (3+ tracking), Kintamani Day 1.3M promo, Tirta Empu 1.2M, Luwak 850K solo / 550K each for 4+, cooking 450K, full-day Ubud 600K solo / 350K each for 4+ — 2026 package prices in one place.',
+    excerpt: 'ATV from IDR 750K, rafting and tubing 500K (450K for 2+), ricefield cycling promo 550K (was 650K), private Mount Batur jeep sit-in 2.3M for 2 / 2.85M for 3 / tracking 1.8M for 2 / 750K (3+ tracking), Kintamani Day 1.3M promo, Tirta Empul 780K, Luwak 850K solo / 550K each for 4+, cooking 450K, full-day Ubud 600K solo / 350K each for 4+ — 2026 package prices in one place.',
     publishedAt: '2026-09-01',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/hero-banner.jpg',
     content: `
-**What do Bali adventure tours cost near Ubud in 2026?** Shopping **best price ATV / rafting / cycling / scooter** first? Use the [published best-rate hub](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026). Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000 (IDR 450,000 for 2+)**, **Canyon Tubing IDR 500,000 (IDR 450,000 for 2+)**, **Ubud Ricefield Cycling Tour promo IDR 550,000 (was 650,000)**, **Mount Batur sit-in jeep IDR 2,300,000 for 2 (minimum) · IDR 2,850,000 for 3 · tracking IDR 1,800,000 for 2 · tracking IDR 750,000 per person for 3+** (optional hot spring +IDR 150,000 with ticket), **Private Kintamani Day promo IDR 1,300,000** (was IDR 1,450,000; min 2), **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Tirta Empu Purification IDR 1,200,000**, **Luwak Coffee Plantation IDR 850,000 for one guest, 550,000 each for 4+** (transport not included), **Full Day Ubud Tour IDR 600,000 for one guest (350,000 each for 4+)**, and **Half Day Ubud & Tanah Lot IDR 850,000 for one guest (550,000 each for 4+)**.
+**What do Bali adventure tours cost near Ubud in 2026?** Shopping **best price ATV / rafting / cycling / scooter** first? Use the [published best-rate hub](/blog/best-price-atv-rafting-cycling-scooter-ubud-2026). Sekar Bali Activity publishes transparent IDR pricing: **Single ATV from IDR 750,000**, **Tandem ATV from IDR 1,100,000**, **Whitewater Rafting IDR 500,000 (IDR 450,000 for 2+)**, **Canyon Tubing IDR 500,000 (IDR 450,000 for 2+)**, **Ubud Ricefield Cycling Tour promo IDR 550,000 (was 650,000)**, **Mount Batur sit-in jeep IDR 2,300,000 for 2 (minimum) · IDR 2,850,000 for 3 · tracking IDR 1,800,000 for 2 · tracking IDR 750,000 per person for 3+** (optional hot spring +IDR 150,000 with ticket), **Private Kintamani Day promo IDR 1,300,000** (was IDR 1,450,000; min 2), **Tumang Bali Cooking Class promo from IDR 450,000** (shared, Ubud pickup included), **Tirta Empul Purification IDR 780,000**, **Luwak Coffee Plantation IDR 850,000 for one guest, 550,000 each for 4+** (transport not included), **Full Day Ubud Tour IDR 600,000 for one guest (350,000 each for 4+)**, and **Half Day Ubud & Tanah Lot IDR 850,000 for one guest (550,000 each for 4+)**.
 
 > **Key Takeaways**
 > - All prices in Indonesian Rupiah (IDR) — no hidden booking fees to inquire
@@ -1707,7 +1704,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 | Mount Batur tracking jeep | IDR 1,800,000 for 2 (min) · 750,000 (3+) | 2-guest package, jeep + trek | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Private Kintamani Day | IDR 1,300,000 promo (was 1,450,000) | person (min 2) | [Batur Jeep](/tours/batur-sunrise-jeep-tour) |
 | Tumang Bali Cooking Class | IDR 450,000 promo | person shared | [Cooking Class](/tours/balinese-cooking-class) |
-| Tirta Empu Purification (Melukat) | IDR 1,200,000 | person / private · Tirta Empul or Beji · breakfast included | [Tirta Empu Melukat](/tours/tirta-empu-purification) |
+| Tirta Empul Purification (Melukat) | IDR 780,000 | person · ticket, sarong, offering, licensed guide, locker · shuttle optional | [Tirta Empu Melukat](/tours/tirta-empu-purification) |
 | Luwak Coffee Plantation (Umah Kuno) | IDR 850,000 (1 guest) · 550,000 each (4+) | person | [Luwak Coffee](/tours/luwak-coffee-plantation) |
 | Full Day Ubud Tour | IDR 600,000 (1 guest) · 350,000 each (4+) | private car | [Full Day Ubud](/tours/full-day-ubud-tour) |
 | Half Day Ubud & Tanah Lot | IDR 850,000 (1 guest) · 550,000 each (4+) | private shuttle · tickets not included | [Half Day Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) |
@@ -1716,7 +1713,7 @@ Visit the [Canyon Tubing Adventure page](/tours/canyon-tubing) or select tubing 
 
 - **Ubud Ricefield Cycling Tour:** Free pickup and drop-off within Ubud
 - **Tumang Bali Cooking Class:** Complimentary Ubud-area pickup (shared & private)
-- **Tirta Empu Purification (Melukat):** Private Ubud-area shuttle included in IDR 1,200,000 / person
+- **Tirta Empul Purification (Melukat):** IDR 780,000 / person · shuttle optional (400K Ubud / 650K south) or self-meet free
 - **Private Mount Batur jeep / Private Kintamani Day:** Hotel pickup included island-wide (not the IDR 400,000 add-on)
 - **ATV, rafting, tubing:** Pickup available; **IDR 400,000** hotel pickup charge applies
 - **Luwak Coffee Plantation:** Transport not included — arrange your own ride to Tampaksiring / Umah Kuno
@@ -1814,11 +1811,11 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
     author: 'Sekar Bali Activity',
     image: '/images/adventures/cycling.jpg',
     content: `
-**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (promo IDR 550,000, was 650,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. **Swing Heaven** includes a **hotel driver in the ticket** (required — no self-meet). **Tirta Empu Purification (Melukat)** includes a **private Ubud-area shuttle** in the IDR 1,200,000 per person rate. The **private Mount Batur jeep** includes hotel pickup **island-wide** in the jeep price. ATV, whitewater rafting, canyon tubing, and **Griya Beji Waterfall** do not — IDR 400,000 hotel pickup charge applies (or self-meet at the venue).
+**Which Bali tours include free Ubud hotel pickup?** The **Ubud Ricefield Cycling Tour** (promo IDR 550,000, was 650,000) and **Tumang Bali Cooking Class** (promo IDR 450,000 / person; was IDR 506,370) include complimentary hotel pickup within Ubud. **Swing Heaven** includes a **hotel driver in the ticket** (required — no self-meet). **Tirta Empul Purification (Melukat)** uses optional shuttle (**IDR 400,000** Ubud / **IDR 650,000** south) or free self-meet — IDR 780,000 per person covers ticket, sarong, offering, licensed guide, and locker. The **private Mount Batur jeep** includes hotel pickup **island-wide** in the jeep price. ATV, whitewater rafting, canyon tubing, and **Griya Beji Waterfall** do not — IDR 400,000 hotel pickup charge applies (or self-meet at the venue).
 
 > **Key Takeaways**
 > - **Free Ubud pickup:** Ricefield cycling + Tumang Bali Cooking Class
-> - **Private shuttle in the package price:** Tirta Empu / Tirta Empul melukat (IDR 1,200,000 / person)
+> - **Optional shuttle (same as ATV):** Tirta Empul melukat (IDR 780,000 / person · ticket, guide, sarong, offering, locker)
 > - **Island-wide pickup included:** private Mount Batur jeep
 > - **Private shuttle:** IDR 400,000 from Ubud · IDR 650,000 from the south coast (ATV, rafting, tubing, Griya Beji)
 > - **Swing Heaven:** required shuttle — same zone rates (no self-meet)
@@ -1835,7 +1832,7 @@ After the track at All New Bali Adventure, many guests add [Wos River tubing](/t
 | --- | --- | --- |
 | Ubud Ricefield Cycling Tour | ✅ Yes | +IDR 400,000 |
 | Tumang Bali Cooking Class | ✅ Yes | Ask WhatsApp |
-| Tirta Empu Purification (Melukat) | ✅ Private shuttle in IDR 1,200,000 / person | Ask WhatsApp |
+| Tirta Empul Purification (Melukat) | Optional 400K / 650K or self-meet free | Ask WhatsApp |
 | Private Mount Batur jeep | ✅ Island-wide (included) | Included in jeep price |
 | Single / Tandem ATV | ❌ No | +IDR 400,000 |
 | Whitewater Rafting | ❌ No | +IDR 400,000 |
@@ -1854,7 +1851,7 @@ Tumang Bali Cooking Class includes complimentary pickup for hotels in the Ubud a
 
 ## Tirta Empu Melukat Shuttle
 
-The [Tirta Empu Purification (Melukat)](/tours/tirta-empu-purification) private rate (**IDR 1,200,000 per person**) includes shuttle pickup and drop-off for Ubud-area hotels — not the IDR 400,000 ATV/rafting add-on. Guide: [Tirta Empu melukat near Ubud](/blog/tirta-empu-melukat-ubud-guide).
+The [Tirta Empul Purification (Melukat)](/tours/tirta-empu-purification) rate (**IDR 780,000 per person**) includes ticket, sarong, offering, licensed guide, and locker. Shuttle is optional (IDR 400,000 Ubud / IDR 650,000 south) or self-meet free. Guide: [Tirta Empu melukat near Ubud](/blog/tirta-empu-melukat-ubud-guide).
 
 ## Mount Batur Jeep Pickup (Island-Wide)
 
@@ -1889,7 +1886,7 @@ ATV rides run at **All New Bali Adventure** arena. Most guests book hotel pickup
 
 The [Bali motorbike tour](/tours/bali-motorbike-traveling-trip) includes pickup at your chosen area in the scooter promo. If we collect you from **Canggu, Jimbaran, or Nusa Dua**, add **IDR 550,000 once per booking**. That is not the IDR 400,000 ATV/rafting surcharge. Skip it if your pin is already in the ride area. Table: [motorbike tour price 2026](/blog/bali-motorbike-tour-price-2026).
 
-**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empu melukat (shuttle included)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure) · [Swing Heaven (required shuttle IDR 400K)](/tours/swing-heaven-bali) · [Griya Beji Waterfall (IDR 400K or self-meet)](/tours/griya-beji-waterfall) · [Bali motorbike tour (Canggu / Jimbaran / Nusa Dua shuttle IDR 550K)](/tours/bali-motorbike-traveling-trip).
+**Book with the right pickup** — [Ubud Ricefield Cycling (free Ubud pickup)](/tours/ubud-ricefield-cycling-tour) · [Tirta Empul melukat (shuttle optional)](/tours/tirta-empu-purification) · [private Mount Batur jeep (pickup included)](/tours/batur-sunrise-jeep-tour) · [ATV at All New Bali Adventure](/tours/bali-atv-adventure) · [Swing Heaven (required shuttle IDR 400K)](/tours/swing-heaven-bali) · [Griya Beji Waterfall (IDR 400K or self-meet)](/tours/griya-beji-waterfall) · [Bali motorbike tour (Canggu / Jimbaran / Nusa Dua shuttle IDR 550K)](/tours/bali-motorbike-traveling-trip).
 `
   },
   {

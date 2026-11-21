@@ -104,7 +104,7 @@ Tanjung Benoa **flying fish / parasailing** is yours. If the group wants a sport
 > - You add **published SKUs** — we do not invent a mix discount
 > - Best long-day pairs we already sell: **cycling + cooking** (both free Ubud pickup) or **swing + cooking** (530K + 450K = **980K**, swing driver included)
 > - Waterfall ritual: **[Griya Beji](/tours/griya-beji-waterfall)** **IDR 300,000** in Punggul — **not** Tirta Empul
-> - Temple water purification: **[Tirta Empul / Pura Beji](/tours/tirta-empu-purification)** **IDR 1,200,000** with shuttle + breakfast
+> - Temple water purification: **[Tirta Empul](/tours/tirta-empu-purification)** **IDR 780,000** · ticket, sarong, offering, licensed guide, locker · shuttle optional
 > - WhatsApp **group type, date, hotel, guest count** — no payment to inquire
 
 ## When one long day is enough
@@ -120,9 +120,9 @@ Do **not** stack Penida, Lovina, three temples, and a mall. Skip list: [what to 
 | Village + kitchen | [Pejeng cycling](/tours/ubud-ricefield-cycling-tour) **promo 550K** (was 650K, lunch) | [Tumang cooking](/tours/balinese-cooking-class) **450K** | **1,000,000** | **Free Ubud** on both |
 | Jungle photo + kitchen | [Swing Heaven](/tours/swing-heaven-bali) **530K** (lunch **630K**) | Tumang cooking **450K** | **980,000** (530+450) | Swing driver included (required) · cooking free Ubud |
 | Waterfall + kitchen | [Griya Beji](/tours/griya-beji-waterfall) **300K** (+ gate) | Tumang cooking **450K** | **750,000** + admission | Griya **400K** or self-meet · cooking free Ubud |
-| Temple ceremony + kitchen | [Tirta Empul / Beji](/tours/tirta-empu-purification) **1,200,000** | Tumang cooking **450K** | **1,650,000** | Temple **shuttle included** · cooking free Ubud |
+| Temple ceremony + kitchen | [Tirta Empul](/tours/tirta-empu-purification) **780,000** | Tumang cooking **450K** | **1,230,000** | Temple shuttle optional · cooking free Ubud |
 
-The **car-day** sits on top unless the SKU already includes pickup (cycling, cooking, Tirta Empul shuttle, **Swing Heaven driver**). We will not pretend Griya pickup is “free because cooking includes a transfer.”
+The **car-day** sits on top unless the SKU already includes pickup (cycling, cooking, **Swing Heaven driver**) or you add optional Tirta Empul shuttle. We will not pretend Griya pickup is “free because cooking includes a transfer.”
 
 Book the culture SKUs on checkout when you already know the pair: [cycling + cooking](/book?activity=combo-cycling-cooking) · [swing + cooking](/book?activity=combo-swing-cooking). For a custom long day, stay on the [itinerary consultation](/tours/bali-private-itinerary).
 
@@ -248,7 +248,7 @@ What we **do** control is published on this domain: **IDR**, pickup rules, and W
 | [Swing Heaven + cooking](/book?activity=combo-swing-cooking) | **IDR 980,000** | 530K + 450K · **no mix discount** · swing driver included · cooking free Ubud. |
 | [ATV](/tours/bali-atv-adventure) | **IDR 750,000** single | All New Bali Adventure. Pickup **IDR 400,000** or self-meet. Insurance 6–65. |
 | [Griya Beji](/tours/griya-beji-waterfall) | **IDR 300,000** purification | Punggul waterfall melukat — **not** Tirta Empul. Admission extra. |
-| [Tirta Empul / Pura Beji](/tours/tirta-empu-purification) | **IDR 1,200,000** | Private water purification ceremony · shuttle + breakfast. |
+| [Tirta Empul](/tours/tirta-empu-purification) | **IDR 780,000** | Exclusive spiritual melukat · ticket, sarong, offering, licensed guide, locker · shuttle optional. |
 | [DPS → Ubud transfer](/transfers) | **IDR 700,000** / MPV | HiAce airport run quoted. |
 
 ## You book (we still drive)

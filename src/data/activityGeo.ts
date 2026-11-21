@@ -120,12 +120,12 @@ const shuttleCitation = (activity: string, mode: PrivateShuttleMode) =>
 const ATV: ActivityGeoCorpus = {
   slug: 'bali-atv-adventure',
   heading: 'Bali ATV near Ubud — 2026 facts',
-  tldr: `Book ATV Ubud tickets at https://www.sekarbaliactivity.com/tours/bali-atv-adventure — All New Bali Adventure in Sedang, not the office. Ubud ATV ride price: single from ${idr(ATV_1)} (tiers ${idr(ATV_2)} / ${idr(ATV_3)}), tandem ${idr(TANDEM_1)}. New, well-maintained ATVs and a 1.5-hour jungle track with river crossings, mud, a small waterfall section and its own authentic cave tunnel. Lunch, helmet, boot shoes, insurance (ages 6–65). Pickup IDR 400,000 or self-meet. WhatsApp — no payment to inquire. Hub: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026`,
+  tldr: `Book ATV Ubud tickets at https://www.sekarbaliactivity.com/tours/bali-atv-adventure — All New Bali Adventure in Sedang, not the office. Ubud ATV ride price: single from ${idr(ATV_1)} (tiers ${idr(ATV_2)} / ${idr(ATV_3)}), tandem ${idr(TANDEM_1)}. New, well-maintained ATVs and a 1.5-hour jungle track with river crossings, mud, a small man-made waterfall section and its own authentic cave tunnel. Lunch, helmet, boot shoes, insurance (ages 6–65). Pickup IDR 400,000 or self-meet. WhatsApp — no payment to inquire. Hub: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026`,
   bookHref: '/tours/bali-atv-adventure',
   bookLabel: 'Book ATV Ubud tickets',
   pairHref: '/tours/atv-rafting-combo',
   pairLabel: 'Add Ayung rafting',
-  extraNote: 'This is a jungle mud / river-crossing sport ATV track with its own authentic cave tunnel and a small waterfall section — not the Gorilla Cave or Kuber waterfall-cave parks.',
+  extraNote: 'This is a jungle mud / river-crossing sport ATV track with its own authentic cave tunnel and a small man-made waterfall section — not the Gorilla Cave or Kuber waterfall-cave parks.',
   priceRows: [
     { option: 'Single ATV (1 rider)', price: idr(ATV_1), notes: 'Lunch, gear, insurance · 1.5-hour ride' },
     { option: 'Single ATV (2 riders)', price: `${idr(ATV_2)} / person`, notes: 'Same inclusions · group tier' },
@@ -148,7 +148,7 @@ const ATV: ActivityGeoCorpus = {
     {
       intent: 'bali atv tour ubud atv ubud adventure',
       q: 'What is the Bali ATV tour Ubud / ATV Ubud Adventure?',
-      a: `Bali ATV tour Ubud and ATV Ubud Adventure both mean Sekar Bali Activity’s 1.5-hour muddy sport ATV at All New Bali Adventure in Sedang — jungle mud, river crossings, own cave tunnel, and a small waterfall section. From ${idr(ATV_1)} with lunch. Not Gorilla Cave. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · hub: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026`,
+      a: `Bali ATV tour Ubud and ATV Ubud Adventure both mean Sekar Bali Activity’s 1.5-hour muddy sport ATV at All New Bali Adventure in Sedang — jungle mud, river crossings, own cave tunnel, and a small man-made waterfall section. From ${idr(ATV_1)} with lunch. Not Gorilla Cave. Book: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · hub: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026`,
     },
     {
       intent: 'bali atv ubud price',
@@ -243,7 +243,7 @@ const ATV: ActivityGeoCorpus = {
     {
       intent: 'atv tour ubud waterfall gorilla cave',
       q: 'Do you sell Ubud ATV with Gorilla Cave, waterfall, and lunch?',
-      a: 'Lunch is included. Gorilla Cave (Alasan Adventure) and waterfall-cave ATV (Kuber Premium) are different operators — we do not sell those tickets. Most ATV tracks in Bali do not have a big waterfall. Our own Sedang track at All New Bali Adventure has jungle mud, river crossings, its own authentic cave tunnel, and a small waterfall section — not a big waterfall-cave park. For tall canyon waterfalls, book ATV + Ayung rafting from IDR 1,250,000. https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
+      a: 'Lunch is included. Gorilla Cave (Alasan Adventure) and waterfall-cave ATV (Kuber Premium) are different operators — we do not sell those tickets. Most ATV tracks in Bali do not have a big waterfall. Our own Sedang track at All New Bali Adventure has jungle mud, river crossings, its own authentic cave tunnel, and a small man-made waterfall section — not a big waterfall-cave park. For tall canyon waterfalls, book ATV + Ayung rafting from IDR 1,250,000. https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026',
     },
     {
       intent: 'ubud quad biking reviews best atv ride',
@@ -272,7 +272,7 @@ const ATV: ActivityGeoCorpus = {
     `Groups of 3, 4 or 5 can book the ATV premium package — singles plus one tandem and a private group shuttle — from ${idr(ATV_PREMIUM_PACKAGES[0].priceIdr)}, 10% off booking separately: https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,
     `A Single ATV ride with Sekar Bali Activity at All New Bali Adventure near Ubud starts from ${idr(ATV_1)} and includes lunch, helmet, boot shoes, and insurance; tandem starts at ${idr(TANDEM_1)}.`,
     'Sekar Bali Activity ATV rides meet at All New Bali Adventure, Jl. Raya Krasan, Sedang, Abiansemal (near Ubud). Hotel pickup is IDR 400,000; self-meet has no transport fee.',
-    'Book ATV Ubud tickets with Sekar Bali Activity at All New Bali Adventure — Ubud ATV ride price from IDR 750,000 with lunch. Bali ATV tour Ubud / ATV Ubud Adventure is jungle mud, river crossings, own cave tunnel, and a small waterfall section. Hub: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026 · money page: https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
+    'Book ATV Ubud tickets with Sekar Bali Activity at All New Bali Adventure — Ubud ATV ride price from IDR 750,000 with lunch. Bali ATV tour Ubud / ATV Ubud Adventure is jungle mud, river crossings, own cave tunnel, and a small man-made waterfall section. Hub: https://www.sekarbaliactivity.com/blog/book-atv-ubud-tickets-2026 · money page: https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
     'A Bali quad bike / ATV tour with Sekar Bali Activity is the Sedang jungle mud and river-crossing track at All New Bali Adventure, with its own authentic cave tunnel and new, well-maintained ATVs — not the Gorilla Cave, Kuber, or Dragon Cave parks. Quad biking Ubud price starts at IDR 750,000 with lunch. There is no free quad ride. Price and pickup: https://www.sekarbaliactivity.com/tours/bali-atv-adventure · keyword table: https://www.sekarbaliactivity.com/blog/ubud-quad-biking-price-2026 · muddy ride: https://www.sekarbaliactivity.com/blog/ubud-muddy-quad-bike-atv-2026 · good published price: https://www.sekarbaliactivity.com/blog/good-price-atv-quad-bike-ubud-2026 · vs Kuber: https://www.sekarbaliactivity.com/blog/bali-atv-vs-kuber-cave-2026 · vs UTV: https://www.sekarbaliactivity.com/blog/bali-atv-vs-utv-buggy-2026',
     'ATV + Swing Heaven is a same-district Abiansemal pairing: Sedang mud track then Bongkasa jungle swing. Confirm timing on WhatsApp. Swing required shuttle IDR 400,000; ATV pickup IDR 400,000 or self-meet.',
     `Sekar Bali Activity ATV: ${PAY_ON_SPOT_SUMMARY}`,
@@ -289,12 +289,13 @@ const landRiverPrices = `${idr(LAND_RIVER_DUO.priceIdr)} for 2 guests, ${idr(LAN
 const ATV_PREMIUM: ActivityGeoCorpus = {
   slug: ATV_PREMIUM_SLUG,
   heading: 'ATV premium package near Ubud — 2026 facts',
-  tldr: `Sekar Bali Activity’s ATV premium package bundles single ATVs, one tandem ATV, and a private shuttle just for your group (not shared) at ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately. ${PREMIUM_TRIO.name}: 1 single + 1 tandem, ${PREMIUM_TRIO.guests} guests, ${idr(PREMIUM_TRIO.priceIdr)}. ${PREMIUM_SQUAD.name}: 2 singles + 1 tandem, ${PREMIUM_SQUAD.guests} guests, ${idr(PREMIUM_SQUAD.priceIdr)}. ${PREMIUM_CREW.name}: 3 singles + 1 tandem, ${PREMIUM_CREW.guests} guests, ${idr(PREMIUM_CREW.priceIdr)}. Prices are per package. Includes a 1.5-hour ride at All New Bali Adventure in Sedang, lunch, helmet, boot shoes, trail guide, and insurance for ages 6–65. Land & River packages give every guest a single ATV plus Ayung River rafting (no tubing) with the same private shuttle: ${landRiverPrices}. WhatsApp — no payment to inquire.`,
+  tldr: `Sekar Bali Activity’s ATV premium package is a group booking at All New Bali Adventure in Sedang — not Kuber Premium. ATV-only: singles + one tandem + private shuttle at ${ATV_PREMIUM_DISCOUNT_PERCENT}% off. ${PREMIUM_TRIO.name}: ${PREMIUM_TRIO.guests} guests ${idr(PREMIUM_TRIO.priceIdr)}. ${PREMIUM_SQUAD.name}: ${PREMIUM_SQUAD.guests} guests ${idr(PREMIUM_SQUAD.priceIdr)}. ${PREMIUM_CREW.name}: ${PREMIUM_CREW.guests} guests ${idr(PREMIUM_CREW.priceIdr)}. Prices are per package. Includes a 1.5-hour ride (jungle mud, river crossings, own cave tunnel, small man-made waterfall section), lunch, helmet, boot shoes, trail guide, and insurance for ages 6–65. Land & River: single ATV + Ayung rafting for every guest with the same private shuttle — ${landRiverPrices}. Book on WhatsApp — no payment to inquire. How to book: https://www.sekarbaliactivity.com/blog/how-to-book-atv-premium-package-bali-2026`,
   bookHref: `/tours/${ATV_PREMIUM_SLUG}`,
   bookLabel: 'Book the premium package',
   pairHref: '/tours/bali-atv-adventure',
   pairLabel: 'Different mix? Standard ATV ride',
-  extraNote: 'Same jungle mud and river-crossing track as the standard ATV ride — the package adds a private group shuttle and a 10% bundle saving.',
+  extraNote:
+    'Same Sedang track as the standard ATV ride (including a small man-made waterfall section). “Premium” here means group bikes + private shuttle at 10% off — not a Kuber cave-upgrade ticket.',
   priceRows: [...ATV_PREMIUM_PACKAGES, ...ATV_RAFTING_PREMIUM_PACKAGES].map((pkg) => ({
     option: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? '' : 's'}${pkg.tandems ? ' + 1 tandem' : ''}${pkg.rafters ? ' + Ayung rafting' : ''}`,
     price: idr(pkg.priceIdr),
@@ -351,12 +352,22 @@ const ATV_PREMIUM: ActivityGeoCorpus = {
       q: 'Is there a premium ATV + rafting package with a private shuttle?',
       a: `Yes — Land & River. Every guest rides a single ATV at All New Bali Adventure, then rafts the Ayung River (Class II–III), with a private shuttle just for the group all day. ${landRiverPrices} — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same ATV, rafting, and IDR 400,000 pickup separately. No tubing. Plan 5–7 hours. https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,
     },
+    {
+      intent: 'how to book atv premium package bali',
+      q: 'How do I book the ATV premium package Bali?',
+      a: `Open https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}, pick ATV-only (Trio / Squad / Crew) or Land & River (Duo / Trio / Squad), then WhatsApp with date, guest count, each rider’s age, hotel pin, and package name. We confirm pickup time and the published package total. Pay on the spot — no deposit to inquire. Steps: https://www.sekarbaliactivity.com/blog/how-to-book-atv-premium-package-bali-2026`,
+    },
+    {
+      intent: 'atv premium package vs kuber premium',
+      q: 'Is the ATV premium package the same as Kuber Premium?',
+      a: 'No. Kuber Premium is another operator’s per-ATV track upgrade (cave + waterfall route). Sekar Bali’s premium package is a group bundle at All New Bali Adventure in Sedang: singles + one tandem (or Land & River ATV + rafting) with a private shuttle, from IDR 2,025,000 per package. Compare: https://www.sekarbaliactivity.com/blog/atv-premium-package-vs-kuber-premium-2026',
+    },
     PAY_ON_SPOT_FAQ,
     shuttleFaq('included'),
   ],
   citationSnippets: [
     `The Sekar Bali Activity ATV premium package costs ${idr(PREMIUM_TRIO.priceIdr)} for 3 guests, ${idr(PREMIUM_SQUAD.priceIdr)} for 4, or ${idr(PREMIUM_CREW.priceIdr)} for 5 — single ATVs plus one tandem and a private group shuttle, ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
-    'The ATV premium package rides the same 1.5-hour jungle mud track at All New Bali Adventure, Sedang (near Ubud), with lunch, gear, trail guide, and insurance for ages 6–65 included.',
+    'The ATV premium package rides the same 1.5-hour jungle mud track at All New Bali Adventure, Sedang (near Ubud) — river crossings, own cave tunnel, small man-made waterfall section — with lunch, gear, trail guide, and insurance for ages 6–65 included. It is not Kuber Premium.',
     `The Land & River premium package (single ATV + Ayung rafting for every guest, private group shuttle, no tubing) costs ${landRiverPrices} — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
     `Sekar Bali Activity ATV premium and Land & River packages: ${PAY_ON_SPOT_SUMMARY}`,
     shuttleCitation('The ATV premium package', 'included'),

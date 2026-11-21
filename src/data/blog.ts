@@ -186,7 +186,7 @@ Want land then water? [ATV + Wos River tubing](/blog/atv-river-tubing-wos-river-
       'Exclusive spiritual purification at Tirta Empul — Bali’s legendary sacred spring. IDR 780,000 per person with ticket, sarong, offering, licensed guide, and locker. Shuttle optional. Cash or card.',
     publishedAt: '2026-09-20',
     author: 'Sekar Bali Activity',
-    image: '/images/melukat/tirta-empu-hero-2026-11.jpg',
+    image: '/images/melukat/tirta-empu-hero-2026-11-20.jpg',
     seoTitle: 'Tirta Empul Melukat Guide | 780K',
     content: `
 **How much is a Tirta Empul spiritual melukat near Ubud?** **IDR 780,000 per person** with Sekar Bali Activity. This is an **exclusive spiritual tour** at **Tirta Empul** — about **2.5 hours** at the temple. A **licensed guide** explains and walks you through purification. The rate includes **temple ticket**, **sarong**, a **Balinese-style offering**, and a **locker**. **Breakfast is not included.** Optional private shuttle is **IDR 400,000** from Ubud or **IDR 650,000** from the south coast; **self-meet** or **your own driver** is free. Pay on the spot — **cash or card**.
@@ -666,7 +666,7 @@ Book: [ATV money page](/tours/bali-atv-adventure) · [tubing money page](/tours/
 
 Book **ATV + tubing** when someone wants water after the mud **without** a paddle team. Kids and first-timers who are nervous about rapids usually prefer the tube. Book **[ATV + rafting](/tours/atv-rafting-combo)** when the group wants splash and a crew. Side-by-side: [rafting vs tubing vs ATV](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-We do **not** sell cave ATV, Gorilla Cave, or a waterfall tunnel. The Sedang track has a **small waterfall section**; the tall canyon waterfalls people search for sit on the **Ayung raft**.
+We do **not** sell cave ATV, Gorilla Cave, or a waterfall tunnel. The Sedang track has a **small man-made waterfall section**; the tall canyon waterfalls people search for sit on the **Ayung raft**.
 
 ## How the day runs
 

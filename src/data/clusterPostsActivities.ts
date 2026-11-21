@@ -444,7 +444,7 @@ If a listing says “free ATV Ubud,” treat it as a teaser or a different produ
 
 ## ATV tour Ubud waterfall — honest answer
 
-**ATV tour Ubud waterfall** usually means a big cave-and-falls track at another arena (often Kuber Premium). **Most ATV tracks in Bali do not have a big waterfall** — a tall waterfall-cave ride is the exception if you survey the muddy jungle arenas near Ubud. Our Sedang ATV is **jungle mud, river crossings, its own cave tunnel, and a small waterfall section** — not a waterfall-cave park.
+**ATV tour Ubud waterfall** usually means a big cave-and-falls track at another arena (often Kuber Premium). **Most ATV tracks in Bali do not have a big waterfall** — a tall waterfall-cave ride is the exception if you survey the muddy jungle arenas near Ubud. Our Sedang ATV is **jungle mud, river crossings, its own cave tunnel, and a small man-made waterfall section** — not a waterfall-cave park.
 
 Want more water in the photos?
 
@@ -452,7 +452,7 @@ Want more water in the photos?
 - Gentler river → [Wos tubing](/tours/canyon-tubing) after the quad
 - A waterfall **park** (not an ATV) → [Griya Beji](/tours/griya-beji-waterfall)
 
-Do not invent a big waterfall-cave sticker for All New Bali Adventure — only the small waterfall section on our track.
+Do not invent a big waterfall-cave sticker for All New Bali Adventure — only the small man-made waterfall section on our track.
 
 ## Ubud ATV Quad Bike adventure with Gorilla Cave and lunch
 

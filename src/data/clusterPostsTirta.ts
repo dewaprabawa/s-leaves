@@ -10,7 +10,7 @@ export const TIRTA_CLUSTER_POSTS: BlogPost[] = [
       'Published best price Tirta Empul tour: exclusive spiritual melukat IDR 780,000 / person. Ticket, sarong, offering, licensed guide, locker. Pickup from every Bali zone as an extra — calculator included.',
     publishedAt: '2026-11-21',
     author: 'Sekar Bali Activity',
-    image: '/images/melukat/tirta-empu-hero-2026-11.jpg',
+    image: '/images/melukat/tirta-empu-hero-2026-11-20.jpg',
     content: `
 **What is the best price Tirta Empul tour near Ubud in 2026?** Sekar Bali Activity’s published rate for an **exclusive spiritual melukat** at **Pura Tirta Empul** (Tampaksiring) is **IDR 780,000 per person** for about **2.5 hours**. That covers **temple ticket**, **sarong**, a **Balinese-style offering**, a **licensed guide** through purification, and a **locker**. **Breakfast is not included.** Optional private shuttle is **extra**: **IDR 400,000** from Ubud / Gianyar, **IDR 650,000** from the south coast, or **free** self-meet / own driver. Run the math: [Tirta Empul price calculator](/planners/tirta-empul-price-calculator). Book: [Tirta Empul Purification](/tours/tirta-empu-purification).
 

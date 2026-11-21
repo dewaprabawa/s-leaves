@@ -565,4 +565,130 @@ This is our standing 2026 package pricing, not a limited-time flash sale: the 10
 **Ready?** [Get the premium ATV deal](/tours/atv-premium-package-bali) — pick your package, drop your hotel pin, and lock the day on WhatsApp.
 `,
   },
+  {
+    slug: 'how-to-book-atv-premium-package-bali-2026',
+    title: 'How to Book the ATV Premium Package Bali (2026): WhatsApp in 4 Steps',
+    seoTitle: 'How to Book ATV Premium Package Bali | WhatsApp',
+    excerpt:
+      'Book the ATV premium package Bali in four WhatsApp steps: pick ATV-only or Land & River, send date, ages and hotel pin, confirm pickup, pay on the spot. From IDR 2,025,000. No deposit to inquire.',
+    publishedAt: '2026-11-21',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-arena-quad-fleet.jpg',
+    content: `
+**How do you book the ATV premium package Bali?** Open the [money page](/tours/atv-premium-package-bali), choose **ATV-only** (3–5 guests) or **Land & River** (2–4 guests), tap **Book WhatsApp**, and send **date + guest count + each rider’s age + hotel pin + package name**. We confirm the **pickup time** and the **published IDR total**. **Pay on the spot** at the venue — cash, QRIS, or card. **No deposit** to inquire.
+
+> **Key Takeaways**
+> - **One WhatsApp message** locks the package — no online checkout form
+> - Tell us **which package**: Premium Trio / Squad / Crew, or Land & River Duo / Trio / Squad
+> - Price on WhatsApp matches the page: from **IDR 2,025,000** (ATV-only) or **2,475,000** (Land & River)
+> - Private shuttle is **already in** the package — say your hotel area so the pickup time is real
+
+## Step 1 — Choose ATV-only or Land & River
+
+| Choose | Guests | What you get | From price |
+| --- | --- | --- | --- |
+| **ATV-only** | 3, 4 or 5 | Singles + **one tandem** + private shuttle | **2,025,000** |
+| **Land & River** | 2, 3 or 4 | **Single ATV + Ayung rafting** each + private shuttle all day | **2,475,000** |
+
+If every adult wants a single ATV and you do **not** want rafting, skip the package and book on the [standard ATV page](/tours/bali-atv-adventure). The ATV-only premium line-up always includes one tandem.
+
+## Step 2 — Send these five lines on WhatsApp
+
+Copy-paste and fill:
+
+1. Package name (example: **Premium Squad** or **Land & River Duo**)
+2. Date and preferred start (ATV-only: 08:00–14:00 · Land & River: by **13:00**)
+3. Guest count
+4. Ages of every rider (insurance **6–65**; rafting typically **7+**)
+5. Hotel name + Google Maps pin
+
+## Step 3 — We confirm pickup and the total
+
+You get back: confirmed **package IDR**, **pickup time**, and the Sedang arena meet plan. Ubud-area hotels fit the included private shuttle. Seminyak, Canggu, Kuta, Sanur and other south-coast pins are checked on WhatsApp before you lock the day — [private transfer notes](/blog/atv-package-private-transfer-bali-2026).
+
+## Step 4 — Ride and pay on the spot
+
+Arrive with the group, gear up, ride. **Pay at the venue** when you arrive — we never ask for card numbers on the website or WhatsApp. Card payments add a 3% surcharge.
+
+## What to say if you are unsure
+
+| Situation | Message us |
+| --- | --- |
+| Child on the tandem | Ages + who drives the tandem |
+| Two couples, all want singles + rafting | Land & River Squad |
+| Already have a villa driver | Ask for self-meet pricing on the ATV / combo pages instead |
+| Comparing “Kuber Premium” | We are **not** that ticket — [honest compare](/blog/atv-premium-package-vs-kuber-premium-2026) |
+
+## Prices to expect (2026)
+
+| Package | Guests | Package IDR |
+| --- | --- | --- |
+| Premium Trio | 3 | **2,025,000** |
+| Premium Squad | 4 | **2,655,000** |
+| Premium Crew | 5 | **3,240,000** |
+| Land & River Duo | 2 | **2,475,000** |
+| Land & River Trio | 3 | **3,465,000** |
+| Land & River Squad | 4 | **4,500,000** |
+
+Full math: [ATV premium package Bali 2026](/blog/atv-premium-package-bali-2026) · day shape: [itinerary](/blog/premium-atv-adventure-itinerary-ubud-2026).
+
+**Ready?** [Book the ATV premium package](/tours/atv-premium-package-bali) — WhatsApp, **no payment to inquire**.
+`,
+  },
+  {
+    slug: 'atv-premium-package-vs-kuber-premium-2026',
+    title: 'ATV Premium Package vs Kuber Premium (2026): Two Different “Premium” Tickets',
+    seoTitle: 'ATV Premium Package vs Kuber Premium | Not the Same',
+    excerpt:
+      '“ATV premium package Bali” often means Kuber’s cave-upgrade ticket. Sekar Bali’s premium package is a group bundle at All New Bali Adventure with a private shuttle from IDR 2,025,000. Same word — different product.',
+    publishedAt: '2026-11-21',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-cave-tunnel-track.jpg',
+    content: `
+**Is the ATV premium package the same as Kuber Premium?** **No.** In Bali search results, **“Premium”** usually means **Kuber’s longer cave-and-waterfall route**, priced **per ATV**. **Sekar Bali Activity’s ATV premium package** is a **group booking** at **All New Bali Adventure in Sedang**: singles + one tandem (or Land & River ATV + rafting), with a **private shuttle**, from **IDR 2,025,000** per package — **10% off** booking the parts separately. [See our packages](/tours/atv-premium-package-bali) — WhatsApp, **no payment to inquire**.
+
+> **Key Takeaways**
+> - **Kuber Premium** ≈ track upgrade on another arena (often Payangan) · priced **per ATV**
+> - **Sekar premium package** ≈ **group + private car** at Sedang · priced **per package**
+> - Our waterfall is a **small man-made section** on the Sedang track — we do not sell Kuber tickets
+> - Want mud + private shuttle for 3–5? Book **us**. Want Kuber’s cave route? Book a Kuber seller.
+
+## Side-by-side (what travelers confuse)
+
+| | **Sekar Bali premium package** | **Typical Kuber Premium listing** |
+| --- | --- | --- |
+| What “premium” means | Bundle: bikes + **private shuttle** + 10% off | Longer route with cave + waterfall sections |
+| Arena | **All New Bali Adventure**, Sedang (Abiansemal) | Kuber / Payangan area |
+| How you pay for it | **Per package** (2–5 guests) | **Per ATV** (single or tandem) |
+| From price shape | **2,025,000** for 3 guests all-in with car | Often ~750,000 single / ~1,000,000 tandem **before** pickup |
+| Waterfall | **Small man-made** section on our course | Their premium waterfall feature |
+| Rafting add-on | **Land & River** packages (shuttle all day) | Separate combo sellers |
+
+We do **not** sell Kuber, Gorilla Cave, or Alasan tickets. Honest Sedang track notes: [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026).
+
+## When to book Sekar’s premium package
+
+- You are **3–5 guests** and one pair will share a **tandem**
+- You want **hotel pickup + return** in the price (Ubud-area shuttle included)
+- You want **ATV + Ayung rafting** the same day with one car → **Land & River** from **2,475,000** for 2
+
+How to send the WhatsApp: [how to book](/blog/how-to-book-atv-premium-package-bali-2026).
+
+## When Kuber Premium is the better search result
+
+- Your friend sent a photo of **their** long natural cave / hidden waterfall route and you want **that specific park**
+- You are shopping **per-ATV** Regular vs Premium upgrades at Kuber
+
+Those are valid reasons — just do not expect our Sedang package to be that ticket.
+
+## Our published 2026 package prices
+
+| Package | Guests | IDR |
+| --- | --- | --- |
+| Premium Trio / Squad / Crew | 3 / 4 / 5 | **2,025,000 / 2,655,000 / 3,240,000** |
+| Land & River Duo / Trio / Squad | 2 / 3 / 4 | **2,475,000 / 3,465,000 / 4,500,000** |
+
+**Ready?** [Book Sekar’s ATV premium package](/tours/atv-premium-package-bali) if you want the Sedang group day with a private shuttle — or keep searching Kuber if that cave is the goal.
+`,
+  },
 ]

@@ -32,7 +32,7 @@ export const MELUKAT_SALES = {
     'Optional shuttle · self-meet free · cash or card',
   ],
   duration: 'Approx. 2.5 hours',
-  image: '/images/melukat/tirta-empu-hero-2026-11.jpg',
+  image: '/images/melukat/tirta-empu-hero-2026-11-20.jpg',
   imageAlt:
     'Guest at Tirta Empul sacred water spring during a guided melukat purification near Ubud',
   tourSlug: 'tirta-empu-purification',

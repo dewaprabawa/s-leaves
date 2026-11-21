@@ -108,6 +108,22 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/tours/bali-atv-adventure',
     secondaryLabel: 'Standard ATV ride',
   },
+  'how-to-book-atv-premium-package-bali-2026': {
+    headline: 'Send your package on WhatsApp',
+    body: 'Pick Trio / Squad / Crew or Land & River, then send date, ages, hotel pin. Pay on the spot — no deposit to inquire.',
+    primaryHref: '/tours/atv-premium-package-bali',
+    primaryLabel: 'Book WhatsApp now',
+    secondaryHref: '/blog/atv-premium-package-vs-kuber-premium-2026',
+    secondaryLabel: 'Not Kuber Premium?',
+  },
+  'atv-premium-package-vs-kuber-premium-2026': {
+    headline: 'Book Sekar’s group premium package',
+    body: 'All New Bali Adventure + private shuttle from IDR 2,025,000 — not Kuber’s per-ATV cave upgrade. Land & River ATV + rafting from 2,475,000.',
+    primaryHref: '/tours/atv-premium-package-bali',
+    primaryLabel: 'See our packages',
+    secondaryHref: '/blog/how-to-book-atv-premium-package-bali-2026',
+    secondaryLabel: 'How to book',
+  },
   'atv-cave-tunnel-bali-2026': {
     headline: 'Book the cave ATV ride',
     body: 'Cave tunnel, river crossings and jungle mud in one 1.5-hour track. Single IDR 750,000 · tandem 1,100,000 — lunch, gear and insurance included.',

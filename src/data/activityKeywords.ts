@@ -149,6 +149,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'group ATV package Ubud',
       'ATV package with private transfer Bali',
       'ATV rafting premium package Bali',
+      'how to book ATV premium package Bali',
     ],
     book: [
       'ATV package Bali price 2026',
@@ -159,10 +160,13 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'private shuttle ATV Ubud',
       'ATV and rafting package with private transfer',
       'ATV rafting package for 2 Bali',
+      'book ATV package WhatsApp Ubud',
     ],
     compare: [
       'ATV package vs booking separately',
       'single vs tandem ATV for groups',
+      'ATV premium package vs Kuber Premium',
+      'Kuber Premium vs All New Bali Adventure',
     ],
   },
   'whitewater-rafting': {
@@ -944,6 +948,8 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'atv-rafting-premium-package-2026': ['atv-premium-package-bali', 'atv-rafting-combo'],
   'family-atv-package-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'atv-premium-promo-deal-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'how-to-book-atv-premium-package-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'atv-premium-package-vs-kuber-premium-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'atv-cave-tunnel-bali-2026': 'bali-atv-adventure',
   'bali-atv-price-no-hidden-fees-2026': 'bali-atv-adventure',
   'best-atv-bali-small-groups-2026': 'bali-atv-adventure',
@@ -1089,6 +1095,16 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'best ATV package deal Ubud',
     'ATV discount Bali premium package',
     'cheap ATV Ubud worth it',
+  ],
+  'how-to-book-atv-premium-package-bali-2026': [
+    'how to book ATV premium package Bali',
+    'book ATV package WhatsApp Ubud',
+    'ATV premium package booking steps',
+  ],
+  'atv-premium-package-vs-kuber-premium-2026': [
+    'ATV premium package vs Kuber Premium',
+    'Kuber Premium vs All New Bali Adventure',
+    'is Sekar ATV the same as Kuber Premium',
   ],
   'private-shuttle-vs-grab-bali-activities-2026': [
     'Grab to ATV Ubud',

@@ -20,8 +20,8 @@ export const ATV_BOOK_CLUSTER_POSTS = [
 > - **All New Bali Adventure price:** [official arena ticket](/blog/all-new-bali-adventure-price-2026)
 > - **Ubud ATV ride price** is the same as the ATV / quad ticket — not a free ride
 > - **Book ATV Ubud reviews:** money page says **Most picked** — no invented star score
-> - **Bali ATV tour Ubud** / **ATV Ubud Adventure** = Sedang mud track, own cave tunnel, **small waterfall section**
-> - **ATV tour Ubud waterfall** is usually a competitor cave-falls park; we keep a small waterfall section only
+> - **Bali ATV tour Ubud** / **ATV Ubud Adventure** = Sedang mud track, own cave tunnel, **small man-made waterfall section**
+> - **ATV tour Ubud waterfall** is usually a competitor cave-falls park; we keep a small man-made waterfall section only
 > - Flagship same day: **[ATV + Ayung rafting](/tours/atv-rafting-combo)** from **1.25M**
 
 ## Harga ATV Ubud 2026 (pesan tiket)
@@ -76,7 +76,7 @@ First ride: [ATV for beginners](/blog/bali-atv-for-beginners-first-time-guide). 
 
 ## Bali ATV tour Ubud / ATV Ubud Adventure
 
-**Bali ATV tour Ubud** and **ATV Ubud Adventure** both mean the same Sekar product: a **1.5-hour** muddy sport ATV at **All New Bali Adventure** near Ubud — jungle mud, river crossings, own cave tunnel, and a **small waterfall section**. New, maintained bikes. Starts **08:00–14:00**.
+**Bali ATV tour Ubud** and **ATV Ubud Adventure** both mean the same Sekar product: a **1.5-hour** muddy sport ATV at **All New Bali Adventure** near Ubud — jungle mud, river crossings, own cave tunnel, and a **small man-made waterfall section**. New, maintained bikes. Starts **08:00–14:00**.
 
 This is **not** Gorilla Cave (Alasan) and **not** a big waterfall-cave park. Honest compare: [ATV vs Kuber](/blog/bali-atv-vs-kuber-cave-2026) · [mud vs cave](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel).
 
@@ -86,7 +86,7 @@ This is **not** Gorilla Cave (Alasan) and **not** a big waterfall-cave park. Hon
 
 ## ATV tour Ubud waterfall
 
-**ATV tour Ubud waterfall** usually means a competitor cave-and-falls track. **Most ATV tracks in Bali do not have a big waterfall.** Our Sedang course keeps a **small waterfall section** only. Tall canyon falls sit on **[ATV + Ayung rafting](/tours/atv-rafting-combo)**. Full honest note: [quad biking price hub](/blog/ubud-quad-biking-price-2026).
+**ATV tour Ubud waterfall** usually means a competitor cave-and-falls track. **Most ATV tracks in Bali do not have a big waterfall.** Our Sedang course keeps a **small man-made waterfall section** only. Tall canyon falls sit on **[ATV + Ayung rafting](/tours/atv-rafting-combo)**. Full honest note: [quad biking price hub](/blog/ubud-quad-biking-price-2026).
 
 ## Sedang mud vs Payangan cave (quick table)
 
@@ -200,7 +200,7 @@ Bayar nanti sesuai instruksi WhatsApp resmi, atau bayar di arena (tunai IDR, QRI
 > **Key Takeaways**
 > - **All New Bali Adventure price (Sekar)** = 750K / 725K / 700K · tandem **1.1M**
 > - Arena: **Jl. Raya Krasan, Sedang** — not the Banjar Kenderan office pin
-> - Track: jungle mud, river crossings, own cave tunnel, **small waterfall section**
+> - Track: jungle mud, river crossings, own cave tunnel, **small man-made waterfall section**
 > - Some third-party pages list **450K** or **USD 47** for “All New” — that is **not** this Sekar ticket
 > - Bahasa: [harga ATV Ubud 2026](/blog/harga-atv-ubud-2026) · book hub: [Book ATV Ubud tickets](/blog/book-atv-ubud-tickets-2026)
 
@@ -228,7 +228,7 @@ We do **not** invent a review percentage. The money page may say **Most picked**
 ## What the Sedang track includes
 
 - **1.5 hours** on the bike after briefing
-- Jungle mud, real river crossings, the arena’s **own cave tunnel**, and a **small waterfall section**
+- Jungle mud, real river crossings, the arena’s **own cave tunnel**, and a **small man-made waterfall section**
 - Starts **08:00–14:00** (latest **13:00** if the same day includes rafting or tubing)
 - English briefing on flat ground; beginners welcome; tandem if one guest does not drive
 

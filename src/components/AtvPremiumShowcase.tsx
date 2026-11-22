@@ -2,21 +2,25 @@
 
 import { useMemo, useState } from "react"
 import Link from "next/link"
-import { ArrowRight, Car, Check, Crown, MapPin, Users, Waves } from "lucide-react"
+import { ArrowRight, Bus, Car, Check, Crown, MapPin, Users, Waves } from "lucide-react"
 import {
   ATV_PREMIUM_DISCOUNT_PERCENT,
   ATV_PREMIUM_INCLUDED,
   ATV_PREMIUM_PACKAGES,
-  ATV_PREMIUM_SELF_MEET_COPY,
   ATV_PREMIUM_SELF_MEET_INCLUDED,
   ATV_PREMIUM_SELF_MEET_PACKAGES,
-  ATV_PREMIUM_SHUTTLE_COPY,
   ATV_PREMIUM_SLUG,
+  ATV_RAFTING_HIACE_INCLUDED,
+  ATV_RAFTING_HIACE_PACKAGES,
+  ATV_RAFTING_HIACE_SELF_MEET_INCLUDED,
+  ATV_RAFTING_HIACE_SELF_MEET_PACKAGES,
   ATV_RAFTING_PREMIUM_INCLUDED,
   ATV_RAFTING_PREMIUM_PACKAGES,
   ATV_RAFTING_PREMIUM_SELF_MEET_INCLUDED,
   ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES,
   ALL_ATV_PREMIUM_PACKAGES,
+  HIACE_SHUTTLE_IDR,
+  meetCopyForPackage,
   type AtvPremiumPackage,
 } from "@/data/atvPremium"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
@@ -24,11 +28,16 @@ import { formatIdr } from "@/lib/whatsapp"
 
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
+function transportTitleBit(pkg: AtvPremiumPackage): string {
+  if (pkg.vehicle === "hiace") return " + private HiAce"
+  if (pkg.vehicle === "car") return " + private shuttle"
+  return " · self-meet (no shuttle)"
+}
+
 function packageTourConfig(pkg: AtvPremiumPackage): TourConfig {
-  const shuttleBit = pkg.shuttleIncluded ? "" : " · self-meet"
   return {
     id: `${ATV_PREMIUM_SLUG}-${pkg.key}`,
-    title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"}${pkg.tandems ? " + 1 tandem" : ""}${pkg.rafters ? " + rafting" : ""}${pkg.shuttleIncluded ? " + private shuttle" : " · self-meet (no shuttle)"} · ${pkg.guests} guests${shuttleBit}`,
+    title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"}${pkg.tandems ? " + 1 tandem" : ""}${pkg.rafters ? " + rafting" : ""}${transportTitleBit(pkg)} · ${pkg.guests} guests`,
     times: DEFAULT_TIMES,
     adultPrice: pkg.priceIdr,
     kidPrice: null,
@@ -38,8 +47,14 @@ function packageTourConfig(pkg: AtvPremiumPackage): TourConfig {
     perBooking: true,
     pickupIncluded: pkg.shuttleIncluded,
     meetsAtArena: !pkg.shuttleIncluded,
-    includedMeetCopy: pkg.shuttleIncluded ? ATV_PREMIUM_SHUTTLE_COPY : ATV_PREMIUM_SELF_MEET_COPY,
+    includedMeetCopy: meetCopyForPackage(pkg),
   }
+}
+
+function transportLine(pkg: AtvPremiumPackage, shuttleMode: boolean): string {
+  if (!shuttleMode) return "Self-meet — no shuttle"
+  if (pkg.vehicle === "hiace") return "Private HiAce minibus — not shared"
+  return "Private car shuttle — not shared"
 }
 
 type PackagePanelProps = {
@@ -51,6 +66,7 @@ type PackagePanelProps = {
   included: readonly string[]
   separateHref: string
   shuttleMode: boolean
+  gridClassName?: string
   onBook: (pkg: AtvPremiumPackage) => void
 }
 
@@ -63,6 +79,7 @@ function PackagePanel({
   included,
   separateHref,
   shuttleMode,
+  gridClassName = "grid gap-4 md:grid-cols-3",
   onBook,
 }: PackagePanelProps) {
   return (
@@ -87,7 +104,7 @@ function PackagePanel({
           <p className="max-w-2xl text-sm md:text-base text-sand/80 leading-relaxed">{intro}</p>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-3">
+        <div className={gridClassName}>
           {packages.map((pkg) => (
             <article
               key={pkg.key}
@@ -116,12 +133,14 @@ function PackagePanel({
                   </li>
                 ) : null}
                 <li className="flex gap-2">
-                  {shuttleMode ? (
+                  {pkg.vehicle === "hiace" && shuttleMode ? (
+                    <Bus className="mt-0.5 h-4 w-4 shrink-0 text-accent-gold" />
+                  ) : shuttleMode ? (
                     <Car className="mt-0.5 h-4 w-4 shrink-0 text-accent-gold" />
                   ) : (
                     <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent-gold" />
                   )}
-                  {shuttleMode ? "Private shuttle — not shared" : "Self-meet — no shuttle"}
+                  {transportLine(pkg, shuttleMode)}
                 </li>
               </ul>
               <div className="mt-auto pt-5">
@@ -181,9 +200,12 @@ export default function AtvPremiumShowcase() {
   }
 
   const atvPackages = shuttleMode ? ATV_PREMIUM_PACKAGES : ATV_PREMIUM_SELF_MEET_PACKAGES
-  const landRiverPackages = shuttleMode
+  const landRiverCar = shuttleMode
     ? ATV_RAFTING_PREMIUM_PACKAGES
     : ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES
+  const landRiverHiace = shuttleMode
+    ? ATV_RAFTING_HIACE_PACKAGES
+    : ATV_RAFTING_HIACE_SELF_MEET_PACKAGES
 
   return (
     <div className="space-y-6">
@@ -219,8 +241,8 @@ export default function AtvPremiumShowcase() {
       </div>
       <p className="text-sm text-brand-green-light leading-relaxed">
         {shuttleMode
-          ? `Private car for your group only is in the package price (Ubud-area rate). ${ATV_PREMIUM_DISCOUNT_PERCENT}% off bikes + shuttle vs booking separately.`
-          : `Already have a driver or staying near Sedang? Self-meet packages drop the shuttle and keep the same ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the bikes (and rafting on Land & River). Meet at All New Bali Adventure.`}
+          ? `Groups of 2–7 ride in a private car. Groups of 8–15 get a private HiAce minibus (${formatIdr(HIACE_SHUTTLE_IDR)} in the package math). ${ATV_PREMIUM_DISCOUNT_PERCENT}% off bikes + transport vs booking separately.`
+          : `Already have a driver or staying near Sedang? Self-meet packages drop the car or HiAce and keep the same ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the bikes (and rafting on Land & River). Meet at All New Bali Adventure.`}
       </p>
 
       <PackagePanel
@@ -229,7 +251,7 @@ export default function AtvPremiumShowcase() {
         title="Your group, your ride"
         intro={
           shuttleMode
-            ? `Best when one pair shares a tandem. Singles for the drivers, one tandem for two who share, and a private shuttle that is yours alone. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately. Not Kuber Premium.`
+            ? `Best when one pair shares a tandem. Singles for the drivers, one tandem for two who share, and a private car shuttle that is yours alone. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately. Not Kuber Premium.`
             : `Same singles + one tandem lineup, without the car. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the bikes only. Self-meet at All New Bali Adventure in Sedang.`
         }
         packages={atvPackages}
@@ -240,19 +262,38 @@ export default function AtvPremiumShowcase() {
       />
       <PackagePanel
         id="atv-rafting-premium-packages"
-        eyebrow={shuttleMode ? "2 · Land & River (2–4 guests)" : "2 · Land & River self-meet (2–4)"}
+        eyebrow={shuttleMode ? "2 · Land & River car (2–7)" : "2 · Land & River self-meet (2–7)"}
         title="Mud in the morning, river after lunch"
         intro={
           shuttleMode
-            ? `Best when everyone wants their own ATV plus Ayung rafting. One private shuttle for the whole day. No tubing. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately.`
+            ? `Best for couples and small friend groups who each want a single ATV plus Ayung rafting. One private car for the whole day. No tubing. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately.`
             : `Single ATV + Ayung rafting for every guest, no shuttle. You cover Sedang ↔ Ayung after lunch. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the activity lines. No tubing.`
         }
-        packages={landRiverPackages}
+        packages={landRiverCar}
         included={
           shuttleMode ? ATV_RAFTING_PREMIUM_INCLUDED : ATV_RAFTING_PREMIUM_SELF_MEET_INCLUDED
         }
         separateHref="/tours/atv-rafting-combo"
         shuttleMode={shuttleMode}
+        gridClassName="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        onBook={openBook}
+      />
+      <PackagePanel
+        id="atv-rafting-hiace-packages"
+        eyebrow={shuttleMode ? "3 · Group HiAce (8–15)" : "3 · Group self-meet (8–15)"}
+        title="Big group, one private HiAce"
+        intro={
+          shuttleMode
+            ? `Built for bachelor parties, family weeks, and office trips. Every guest gets a single ATV and Ayung rafting. Pickup and return in a private Toyota HiAce minibus — not a shared tourist bus. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the whole stack.`
+            : `Same single ATV + rafting for 8, 10, 12 or 15 guests — without the HiAce. Bring your own bus or driver. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the activity lines.`
+        }
+        packages={landRiverHiace}
+        included={
+          shuttleMode ? ATV_RAFTING_HIACE_INCLUDED : ATV_RAFTING_HIACE_SELF_MEET_INCLUDED
+        }
+        separateHref="/tours/atv-rafting-combo"
+        shuttleMode={shuttleMode}
+        gridClassName="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
         onBook={openBook}
       />
 

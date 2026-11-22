@@ -70,6 +70,7 @@ import {
   ATV_PREMIUM_PACKAGES,
   ATV_PREMIUM_SELF_MEET_PACKAGES,
   ATV_PREMIUM_SLUG,
+  ATV_RAFTING_HIACE_PACKAGES,
   ATV_RAFTING_PREMIUM_PACKAGES,
 } from "@/data/atvPremium"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
@@ -1462,8 +1463,9 @@ export default async function TourPage({ params }: Props) {
                   ) : tour.slug === ATV_PREMIUM_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">
                       Shuttle from {formatIdr(ATV_PREMIUM_PACKAGES[0].priceIdr)} · self-meet from{" "}
-                      {formatIdr(ATV_PREMIUM_SELF_MEET_PACKAGES[0].priceIdr)} · ATV + rafting from{" "}
-                      {formatIdr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)} · per package
+                      {formatIdr(ATV_PREMIUM_SELF_MEET_PACKAGES[0].priceIdr)} · Land & River from{" "}
+                      {formatIdr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)} · HiAce from{" "}
+                      {formatIdr(ATV_RAFTING_HIACE_PACKAGES[0].priceIdr)} · per package
                     </span>
                   ) : tour.slug === LICENSED_GUIDE_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">

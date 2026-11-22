@@ -28,8 +28,11 @@ import {
   ATV_PREMIUM_PACKAGES,
   ATV_PREMIUM_SELF_MEET_PACKAGES,
   ATV_PREMIUM_SLUG,
+  ATV_RAFTING_HIACE_PACKAGES,
+  ATV_RAFTING_HIACE_SELF_MEET_PACKAGES,
   ATV_RAFTING_PREMIUM_PACKAGES,
   ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES,
+  HIACE_SHUTTLE_IDR,
 } from '@/data/atvPremium'
 import { resolveBaliSafariSlug } from '@/data/parkWorkshopTours'
 import {
@@ -134,7 +137,8 @@ const ATV: ActivityGeoCorpus = {
     { option: 'Single ATV (3+)', price: `${idr(ATV_3)} / person`, notes: 'Best single-bike group rate' },
     { option: 'Tandem ATV (2 on one bike)', price: idr(TANDEM_1), notes: 'One driver + one passenger' },
     { option: 'Private shuttle', price: 'IDR 400,000 / 650,000', notes: 'Ubud 400K · south coast 650K · once · or self-meet' },
-    { option: 'Premium package (3–5 guests)', price: `From ${idr(ATV_PREMIUM_PACKAGES[0].priceIdr)}`, notes: 'Singles + 1 tandem + private group shuttle · 10% off' },
+    { option: 'Premium package (3–5 guests)', price: `From ${idr(ATV_PREMIUM_PACKAGES[0].priceIdr)}`, notes: 'Singles + 1 tandem + private car · 10% off' },
+    { option: 'Land & River HiAce (8–15)', price: `From ${idr(ATV_RAFTING_HIACE_PACKAGES[0].priceIdr)}`, notes: 'Single ATV + rafting · private HiAce · 10% off' },
   ],
   faqs: [
     {
@@ -288,27 +292,31 @@ const [PREMIUM_TRIO, PREMIUM_SQUAD, PREMIUM_CREW] = ATV_PREMIUM_PACKAGES
 const [PREMIUM_TRIO_SELF] = ATV_PREMIUM_SELF_MEET_PACKAGES
 const [LAND_RIVER_DUO, LAND_RIVER_TRIO, LAND_RIVER_SQUAD] = ATV_RAFTING_PREMIUM_PACKAGES
 const [LAND_RIVER_DUO_SELF] = ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES
+const [LAND_RIVER_8, LAND_RIVER_10, LAND_RIVER_12, LAND_RIVER_15] = ATV_RAFTING_HIACE_PACKAGES
 const landRiverPrices = `${idr(LAND_RIVER_DUO.priceIdr)} for 2 guests, ${idr(LAND_RIVER_TRIO.priceIdr)} for 3, ${idr(LAND_RIVER_SQUAD.priceIdr)} for 4`
+const landRiverHiacePrices = `${idr(LAND_RIVER_8.priceIdr)} for 8, ${idr(LAND_RIVER_10.priceIdr)} for 10, ${idr(LAND_RIVER_12.priceIdr)} for 12, ${idr(LAND_RIVER_15.priceIdr)} for 15`
 
 const ATV_PREMIUM: ActivityGeoCorpus = {
   slug: ATV_PREMIUM_SLUG,
   heading: 'ATV premium package near Ubud — 2026 facts',
-  tldr: `Sekar Bali Activity’s ATV premium package is a group booking at All New Bali Adventure in Sedang — not Kuber Premium. Choose private shuttle or self-meet (no shuttle). With shuttle — ATV-only ${idr(PREMIUM_TRIO.priceIdr)} / ${idr(PREMIUM_SQUAD.priceIdr)} / ${idr(PREMIUM_CREW.priceIdr)} for 3 / 4 / 5 guests; Land & River ${landRiverPrices}. Self-meet ATV-only from ${idr(PREMIUM_TRIO_SELF.priceIdr)}; Land & River self-meet from ${idr(LAND_RIVER_DUO_SELF.priceIdr)}. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately. Christmas and New Year use the same rates — no holiday surcharge. WhatsApp — no payment to inquire. https://www.sekarbaliactivity.com/blog/atv-christmas-new-year-promo-ubud-2026`,
+  tldr: `Sekar Bali Activity’s ATV premium package is a group booking at All New Bali Adventure in Sedang — not Kuber Premium. ATV-only ${idr(PREMIUM_TRIO.priceIdr)} / ${idr(PREMIUM_SQUAD.priceIdr)} / ${idr(PREMIUM_CREW.priceIdr)} for 3 / 4 / 5. Land & River car ${landRiverPrices}; HiAce groups ${landRiverHiacePrices}. Self-meet from ${idr(PREMIUM_TRIO_SELF.priceIdr)}. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off. Christmas and New Year same rates. WhatsApp — no payment to inquire. https://www.sekarbaliactivity.com/blog/atv-rafting-group-hiace-ubud-2026`,
   bookHref: `/tours/${ATV_PREMIUM_SLUG}`,
   bookLabel: 'Book the premium package',
   pairHref: '/tours/bali-atv-adventure',
   pairLabel: 'Different mix? Standard ATV ride',
   extraNote:
-    'Same Sedang track as the standard ATV ride (including a small man-made waterfall section). Toggle shuttle or self-meet on the money page. “Premium” means group bikes at 10% off — not a Kuber cave-upgrade ticket.',
+    'Same Sedang track as the standard ATV ride (including a small man-made waterfall section). Toggle shuttle or self-meet on the money page. Groups of 8–15 Land & River use a private HiAce minibus. “Premium” means group bikes at 10% off — not a Kuber cave-upgrade ticket.',
   priceRows: [
     ...ATV_PREMIUM_PACKAGES,
     ...ATV_PREMIUM_SELF_MEET_PACKAGES,
     ...ATV_RAFTING_PREMIUM_PACKAGES,
     ...ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES,
+    ...ATV_RAFTING_HIACE_PACKAGES,
+    ...ATV_RAFTING_HIACE_SELF_MEET_PACKAGES,
   ].map((pkg) => ({
     option: `${pkg.name}${pkg.shuttleIncluded ? '' : ' · self-meet'} — ${pkg.singles} single${pkg.singles === 1 ? '' : 's'}${pkg.tandems ? ' + 1 tandem' : ''}${pkg.rafters ? ' + Ayung rafting' : ''}`,
     price: idr(pkg.priceIdr),
-    notes: `${pkg.guests} guests · ${pkg.shuttleIncluded ? 'private shuttle' : 'no shuttle'} · save ${idr(pkg.savingIdr)} vs ${idr(pkg.partsIdr)} separately`,
+    notes: `${pkg.guests} guests · ${pkg.vehicle === 'hiace' ? 'private HiAce' : pkg.vehicle === 'car' ? 'private car' : 'no shuttle'} · save ${idr(pkg.savingIdr)} vs ${idr(pkg.partsIdr)} separately`,
   })),
   faqs: [
     {
@@ -359,12 +367,17 @@ const ATV_PREMIUM: ActivityGeoCorpus = {
     {
       intent: 'atv rafting package private transfer',
       q: 'Is there a premium ATV + rafting package with a private shuttle?',
-      a: `Yes — Land & River. Every guest rides a single ATV at All New Bali Adventure, then rafts the Ayung River (Class II–III), with a private shuttle just for the group all day. ${landRiverPrices} — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same ATV, rafting, and IDR 400,000 pickup separately. No tubing. Plan 5–7 hours. https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,
+      a: `Yes — Land & River. Every guest rides a single ATV at All New Bali Adventure, then rafts the Ayung River (Class II–III). Groups of 2–7 get a private car; 8–15 get a private HiAce minibus. Small groups ${landRiverPrices}; HiAce ${landRiverHiacePrices}. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off. No tubing. Plan 5–7 hours. https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,
+    },
+    {
+      intent: 'atv rafting group hiace ubud',
+      q: 'Can a group of 8–15 book ATV + rafting with a private HiAce near Ubud?',
+      a: `Yes. Land & River HiAce packages: ${landRiverHiacePrices} — each guest gets a single ATV plus Ayung rafting, with a private Toyota HiAce (${idr(HIACE_SHUTTLE_IDR)} in the package math) for hotel pickup, Sedang, Ayung, and return. Not a shared tourist bus. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately. https://www.sekarbaliactivity.com/blog/atv-rafting-group-hiace-ubud-2026`,
     },
     {
       intent: 'how to book atv premium package bali',
       q: 'How do I book the ATV premium package Bali?',
-      a: `Open https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}, pick ATV-only (Trio / Squad / Crew) or Land & River (Duo / Trio / Squad), then WhatsApp with date, guest count, each rider’s age, hotel pin, and package name. We confirm pickup time and the published package total. Pay on the spot — no deposit to inquire. Steps: https://www.sekarbaliactivity.com/blog/how-to-book-atv-premium-package-bali-2026`,
+      a: `Open https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}, pick ATV-only (3–5), Land & River car (2–7), or Land & River HiAce (8–15), then WhatsApp with date, guest count, each rider’s age, hotel pin, and package name. We confirm pickup time and the published package total. Pay on the spot — no deposit to inquire. Steps: https://www.sekarbaliactivity.com/blog/how-to-book-atv-premium-package-bali-2026`,
     },
     {
       intent: 'atv premium package vs kuber premium',
@@ -388,7 +401,8 @@ const ATV_PREMIUM: ActivityGeoCorpus = {
     `The Sekar Bali Activity ATV premium package with private shuttle costs ${idr(PREMIUM_TRIO.priceIdr)} for 3 guests, ${idr(PREMIUM_SQUAD.priceIdr)} for 4, or ${idr(PREMIUM_CREW.priceIdr)} for 5 — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
     `Self-meet (no shuttle) ATV premium packages start at ${idr(PREMIUM_TRIO_SELF.priceIdr)} for 3 guests; Land & River self-meet from ${idr(LAND_RIVER_DUO_SELF.priceIdr)} for 2.`,
     'The ATV premium package rides the same 1.5-hour jungle mud track at All New Bali Adventure, Sedang (near Ubud) — river crossings, own cave tunnel, small man-made waterfall section — with lunch, gear, trail guide, and insurance for ages 6–65 included. It is not Kuber Premium.',
-    `The Land & River premium package (single ATV + Ayung rafting for every guest, private group shuttle, no tubing) costs ${landRiverPrices} — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
+    `The Land & River premium package (single ATV + Ayung rafting for every guest, private car for 2–7, no tubing) costs ${landRiverPrices} — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
+    `Land & River HiAce packages for 8–15 guests cost ${landRiverHiacePrices}, with a private Toyota HiAce (${idr(HIACE_SHUTTLE_IDR)}) included — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off. https://www.sekarbaliactivity.com/blog/atv-rafting-group-hiace-ubud-2026`,
     'Christmas and New Year ATV premium packages use the same published rates — no holiday surcharge.',
     `Sekar Bali Activity ATV premium and Land & River packages: ${PAY_ON_SPOT_SUMMARY}`,
     shuttleCitation('The ATV premium package (shuttle option)', 'included'),
@@ -413,7 +427,8 @@ const ATV_RAFTING: ActivityGeoCorpus = {
     { option: 'Couple tandem + 2 rafting', price: 'IDR 2,000,000 before mix', notes: '1,800,000 after 10% · 1.1M bike' },
     { option: 'Ayung rafting', price: `${idr(RAFT_1)} / ${idr(RAFT_2)} for 2+`, notes: 'Min 2 · lunch, gear, crew' },
     { option: 'Private shuttle', price: 'IDR 400,000 / 650,000', notes: 'Ubud 400K · south coast 650K · once · or self-meet' },
-    { option: 'Land & River premium (2–4 guests)', price: `From ${idr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)}`, notes: 'Single ATV + rafting each · private group shuttle · 10% off all in' },
+    { option: 'Land & River premium (2–7 guests)', price: `From ${idr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)}`, notes: 'Single ATV + rafting each · private car · 10% off all in' },
+    { option: 'Land & River HiAce (8–15)', price: `From ${idr(ATV_RAFTING_HIACE_PACKAGES[0].priceIdr)}`, notes: `Single ATV + rafting · private HiAce ${idr(HIACE_SHUTTLE_IDR)} · 10% off` },
   ],
   faqs: [
     {
@@ -440,7 +455,7 @@ const ATV_RAFTING: ActivityGeoCorpus = {
     shuttleFaq('optional'),
   ],
   citationSnippets: [
-    `Want a private shuttle for an ATV + rafting day? The Land & River premium package (single ATV + Ayung rafting for every guest, no tubing) costs ${landRiverPrices}, private group shuttle included: https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,
+    `Want a private shuttle for an ATV + rafting day? Land & River car packages cost ${landRiverPrices}; HiAce groups of 8–15 cost ${landRiverHiacePrices}: https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,
     `ATV + Ayung rafting with Sekar Bali Activity is from IDR 1,250,000 at published ticket floors (ATV from ${idr(ATV_1)} + rafting ${idr(RAFT_1)}). Same-day mix is 10% off at checkout. Pickup IDR 400,000 once or self-meet. https://www.sekarbaliactivity.com/tours/atv-rafting-combo`,
     'Tandem ATV + rafting for a couple with Sekar Bali Activity is IDR 2,000,000 before the 10% mix (1.1M bike + two 450K rafting seats) and IDR 1,800,000 after. https://www.sekarbaliactivity.com/blog/atv-tandem-rafting-ubud-2026',
     `Sekar Bali Activity ATV + rafting: ${PAY_ON_SPOT_SUMMARY}`,

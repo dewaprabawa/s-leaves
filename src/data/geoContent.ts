@@ -148,7 +148,7 @@ export const GEO_PRICING = [
   { activity: 'Single ATV Ride', price: 'IDR 750,000+', pax: '1 pax (tier: 750k / 725k / 700k)', includes: 'lunch, boot shoes, helmet, insurance for ages 6–65 at All New Bali Adventure' },
   { activity: 'Tandem ATV Ride', price: 'IDR 1,100,000', pax: '2 pax (tier: 1,100k / 1,060k / 1,030k per bike)', includes: 'lunch, boot shoes, helmet, insurance for ages 6–65 at All New Bali Adventure' },
   { activity: 'ATV Premium Package', price: 'IDR 2,025,000+', pax: 'per package: 3 guests 2,025k (1 single + 1 tandem) · 4 guests 2,655k (2 singles + 1 tandem) · 5 guests 3,240k (3 singles + 1 tandem) · 10% off booking separately', includes: 'private shuttle for the group only (hotel pickup + return), 1.5-hour ride, lunch, boot shoes, helmet, insurance for ages 6–65 at All New Bali Adventure' },
-  { activity: 'ATV + Rafting Premium (Land & River)', price: 'IDR 2,475,000+', pax: 'per package: 2 guests 2,475k · 3 guests 3,465k · 4 guests 4,500k (single ATV + Ayung rafting each) · 10% off booking separately · no tubing', includes: 'private shuttle for the group only all day, 1.5-hour ATV ride, Class II–III rafting, lunch, gear, insurance for ages 6–65' },
+  { activity: 'ATV + Rafting Premium (Land & River)', price: 'IDR 2,475,000+', pax: 'per package: car 2–7 from 2,475k · HiAce 8/10/12/15 at 9,540k / 11,610k / 13,680k / 16,785k (single ATV + Ayung rafting each) · 10% off · no tubing', includes: 'private car (2–7) or private HiAce (8–15), 1.5-hour ATV, Class II–III rafting, lunch, gear, insurance ages 6–65' },
   { activity: 'Whitewater Rafting', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+; min 2 guests)', includes: 'Class II–III rapids, helmet, life jacket, guide, lunch, insurance for ages 6–65' },
   { activity: 'Canyon Tubing', price: 'IDR 500,000', pax: 'per person (500k list · 450k discount for 2+)', includes: 'Wos River tube, life jacket, guide, insurance for ages 6–65' },
   { activity: 'Swing Heaven Bali', price: 'IDR 530,000', pax: 'per person (630k with lunch)', includes: 'jungle swings & photo spots at Bongkasa, insurance, tea/coffee/water; required shuttle IDR 400,000 Ubud / 650,000 south; lunch on the 630k package; flying dress hire +IDR 300,000 optional' },
@@ -250,10 +250,10 @@ export const GEO_TOUR_SUMMARIES = [
   {
     name: 'ATV Premium Package',
     slug: 'atv-premium-package-bali',
-    price: 'ATV: IDR 2,025,000 (3 guests) / 2,655,000 (4) / 3,240,000 (5) · ATV + rafting: 2,475,000 (2) / 3,465,000 (3) / 4,500,000 (4) per package',
+    price: 'ATV: IDR 2,025,000 (3) / 2,655,000 (4) / 3,240,000 (5) · Land & River car from 2,475,000 · HiAce 8–15 from 9,540,000',
     duration: '1.5-hour ride + private shuttle · 5–7 hours with rafting',
     location: 'All New Bali Adventure arena, Sedang, near Ubud',
-    summary: 'Single ATVs + one tandem + a private shuttle just for the group (not shared), or Land & River: a single ATV + Ayung rafting for every guest with the same private shuttle (no tubing). 10% off booking the same parts separately. Lunch, gear, and insurance for ages 6–65 included.',
+    summary: 'Single ATVs + one tandem + private car (3–5), or Land & River: single ATV + Ayung rafting for every guest — private car for 2–7 or private HiAce for 8–15 (no tubing). Self-meet optional. 10% off booking separately. Lunch, gear, insurance ages 6–65.',
     url: `${SITE_URL}/tours/atv-premium-package-bali`,
   },
   {
@@ -792,8 +792,14 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Pricing',
     q: 'Is there a premium ATV + rafting package with private transfer in Bali?',
-    a: 'Yes. Sekar Bali Activity’s Land & River package gives every guest a single ATV at All New Bali Adventure and Ayung River rafting (Class II–III), with a private shuttle just for the group all day: 2 guests IDR 2,475,000, 3 guests IDR 3,465,000, 4 guests IDR 4,500,000 — 10% off booking separately. No tubing. https://www.sekarbaliactivity.com/tours/atv-premium-package-bali',
+    a: 'Yes. Sekar Bali Activity’s Land & River package gives every guest a single ATV and Ayung rafting. Private car for 2–7 (from IDR 2,475,000); private HiAce for 8 / 10 / 12 / 15 (IDR 9,540,000 / 11,610,000 / 13,680,000 / 16,785,000) — 10% off. No tubing. https://www.sekarbaliactivity.com/tours/atv-premium-package-bali',
     url: `${SITE_URL}/blog/atv-rafting-premium-package-2026`,
+  },
+  {
+    category: 'Pricing',
+    q: 'Can a group of 8–15 book ATV + rafting with a private HiAce near Ubud?',
+    a: 'Yes. Land & River HiAce packages: 8 guests IDR 9,540,000, 10 guests 11,610,000, 12 guests 13,680,000, 15 guests 16,785,000 — each guest gets a single ATV plus Ayung rafting, with a private Toyota HiAce (IDR 1,400,000 in the package math) for hotel pickup, Sedang, Ayung, and return. Not a shared tourist bus. 10% off. https://www.sekarbaliactivity.com/blog/atv-rafting-group-hiace-ubud-2026',
+    url: `${SITE_URL}/blog/atv-rafting-group-hiace-ubud-2026`,
   },
   {
     category: 'Pricing',
@@ -978,7 +984,7 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'ATV',
     q: 'How do I book the ATV premium package Bali?',
-    a: 'Open https://www.sekarbaliactivity.com/tours/atv-premium-package-bali, pick ATV-only (Trio / Squad / Crew for 3–5) or Land & River (Duo / Trio / Squad for 2–4), then WhatsApp with date, guest count, each rider’s age, hotel pin, and package name. Confirm pickup time and the published total. Pay on the spot — no deposit to inquire. https://www.sekarbaliactivity.com/blog/how-to-book-atv-premium-package-bali-2026',
+    a: 'Open https://www.sekarbaliactivity.com/tours/atv-premium-package-bali, pick ATV-only (3–5), Land & River car (2–7), or Land & River HiAce (8–15), then WhatsApp with date, guest count, each rider’s age, hotel pin, and package name. Confirm pickup time and the published total. Pay on the spot — no deposit to inquire. https://www.sekarbaliactivity.com/blog/how-to-book-atv-premium-package-bali-2026',
     url: `${SITE_URL}/blog/how-to-book-atv-premium-package-bali-2026`,
   },
   {
@@ -1727,6 +1733,7 @@ export const GEO_ARTICLES = [
   { title: 'Bali ATV With a Private Transfer: Seminyak, Canggu, Kuta, Ubud', url: `${SITE_URL}/blog/atv-package-private-transfer-bali-2026` },
   { title: 'Private Shuttle vs Grab for ATV, Rafting & Tubing near Ubud', url: `${SITE_URL}/blog/private-shuttle-vs-grab-bali-activities-2026` },
   { title: 'ATV + Rafting Premium Package 2026: Land & River With Private Shuttle', url: `${SITE_URL}/blog/atv-rafting-premium-package-2026` },
+  { title: 'ATV + Rafting Group HiAce Ubud 2026: 8–15 Guests', url: `${SITE_URL}/blog/atv-rafting-group-hiace-ubud-2026` },
   { title: 'Japanese-Speaking Guide in Bali 2026', url: `${SITE_URL}/blog/japanese-speaking-guide-bali-2026` },
   { title: 'Japanese Guide Bali Price 2026', url: `${SITE_URL}/blog/japanese-guide-bali-price-2026` },
   { title: 'Japanese Guide with Private Driver Bali 2026', url: `${SITE_URL}/blog/japanese-guide-with-private-driver-bali-2026` },

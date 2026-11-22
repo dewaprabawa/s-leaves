@@ -28,6 +28,7 @@ These are the rates on our tour pages for October–December 2026. Group tiers a
 | --- | --- | --- | --- |
 | [Ayung River rafting](/tours/whitewater-rafting) | **450,000** / person | 2+ guests (list 500,000) | **400,000** or self-meet |
 | [ATV + rafting combo](/tours/atv-rafting-combo) | from **1,250,000** | 10% mix discount at checkout | **400,000** once or self-meet |
+| [ATV premium / Christmas & NYE](/blog/atv-christmas-new-year-promo-ubud-2026) | from **1,665,000** self-meet · **2,025,000** with shuttle | Same rates, no holiday surcharge | Shuttle or self-meet |
 | [Private Batur jeep (tracking)](/tours/batur-sunrise-jeep-tour) | **750,000** / person | 3+ guests | **Island-wide included** |
 | [Private Batur jeep (sit-in)](/tours/batur-sunrise-jeep-tour) | **2,300,000** for 2 · **2,850,000** for 3 | Private car | **Island-wide included** |
 | [Private Kintamani Day](/tours/batur-sunrise-jeep-tour) | **1,300,000** / person promo | Min 2 (was 1,450,000) | Included |

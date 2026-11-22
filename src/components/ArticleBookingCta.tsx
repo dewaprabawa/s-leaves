@@ -124,6 +124,14 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/blog/how-to-book-atv-premium-package-bali-2026',
     secondaryLabel: 'How to book',
   },
+  'atv-christmas-new-year-promo-ubud-2026': {
+    headline: 'Book Christmas / New Year ATV',
+    body: 'Same published rates — no holiday surcharge. Shuttle from 2,025,000 or self-meet from 1,665,000. Morning starts for 24 Dec–2 Jan.',
+    primaryHref: '/tours/atv-premium-package-bali',
+    primaryLabel: 'Choose shuttle or self-meet',
+    secondaryHref: '/blog/bali-october-november-december-2026-deals',
+    secondaryLabel: 'More year-end deals',
+  },
   'atv-cave-tunnel-bali-2026': {
     headline: 'Book the cave ATV ride',
     body: 'Cave tunnel, river crossings and jungle mud in one 1.5-hour track. Single IDR 750,000 · tandem 1,100,000 — lunch, gear and insurance included.',

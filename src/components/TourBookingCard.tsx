@@ -36,8 +36,11 @@ import {
   ATV_PREMIUM_DISCOUNT_PERCENT,
   ALL_ATV_PREMIUM_PACKAGES,
   ATV_PREMIUM_PACKAGES,
+  ATV_PREMIUM_SELF_MEET_COPY,
+  ATV_PREMIUM_SELF_MEET_PACKAGES,
   ATV_PREMIUM_SHUTTLE_COPY,
   ATV_RAFTING_PREMIUM_PACKAGES,
+  ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES,
   ATV_PREMIUM_SLUG,
 } from "@/data/atvPremium"
 import {
@@ -235,7 +238,7 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   if (props.tourSlug === ATV_PREMIUM_SLUG) {
     return ALL_ATV_PREMIUM_PACKAGES.map((pkg) => ({
       id: `${props.tourId}-${pkg.key}`,
-      title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"}${pkg.tandems ? " + 1 tandem" : ""}${pkg.rafters ? " + rafting" : ""} + private shuttle · ${pkg.guests} guests`,
+      title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"}${pkg.tandems ? " + 1 tandem" : ""}${pkg.rafters ? " + rafting" : ""}${pkg.shuttleIncluded ? " + private shuttle" : " · self-meet (no shuttle)"} · ${pkg.guests} guests`,
       times: DEFAULT_TIMES,
       adultPrice: pkg.priceIdr,
       kidPrice: null,
@@ -243,8 +246,9 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
       fixedPax: pkg.guests,
       compareAtPrice: pkg.partsIdr,
       perBooking: true,
-      pickupIncluded: true,
-      includedMeetCopy: ATV_PREMIUM_SHUTTLE_COPY,
+      pickupIncluded: pkg.shuttleIncluded,
+      meetsAtArena: !pkg.shuttleIncluded,
+      includedMeetCopy: pkg.shuttleIncluded ? ATV_PREMIUM_SHUTTLE_COPY : ATV_PREMIUM_SELF_MEET_COPY,
     }))
   }
 
@@ -544,8 +548,10 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {isAtvPremium ? (
             <div className="mt-2 space-y-2 text-sm text-brand-green-light">
               {[
-                { label: "ATV · singles + 1 tandem", packages: ATV_PREMIUM_PACKAGES },
-                { label: "Land & River · single ATV + rafting", packages: ATV_RAFTING_PREMIUM_PACKAGES },
+                { label: "ATV + shuttle", packages: ATV_PREMIUM_PACKAGES },
+                { label: "ATV self-meet", packages: ATV_PREMIUM_SELF_MEET_PACKAGES },
+                { label: "Land & River + shuttle", packages: ATV_RAFTING_PREMIUM_PACKAGES },
+                { label: "Land & River self-meet", packages: ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES },
               ].map((set) => (
                 <div key={set.label}>
                   <p className="text-[11px] font-bold uppercase tracking-wider text-brand-green">{set.label}</p>
@@ -560,7 +566,7 @@ export default function TourBookingCard(props: TourBookingCardProps) {
                   </ul>
                 </div>
               ))}
-              <p>Per package, not per person · private shuttle for your group only.</p>
+              <p>Per package, not per person · toggle shuttle or self-meet in the cards below.</p>
             </div>
           ) : null}
           {props.tourSlug === "atv-rafting-combo" ? (

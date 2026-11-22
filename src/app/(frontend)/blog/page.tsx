@@ -25,6 +25,7 @@ const ACTIVITY_GUIDES = [
   { label: 'ATV premium package', href: '/tours/atv-premium-package-bali' },
   { label: 'Book ATV premium', href: '/blog/how-to-book-atv-premium-package-bali-2026' },
   { label: 'Premium vs Kuber', href: '/blog/atv-premium-package-vs-kuber-premium-2026' },
+  { label: 'ATV Christmas / NYE', href: '/blog/atv-christmas-new-year-promo-ubud-2026' },
   { label: 'Tandem + rafting', href: '/blog/atv-tandem-rafting-ubud-2026' },
   { label: 'ATV + tubing', href: '/blog/atv-river-tubing-wos-river-bali' },
   { label: 'Rafting', href: '/tours/whitewater-rafting' },

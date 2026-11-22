@@ -68,6 +68,7 @@ import {
   ATV_PREMIUM_DISCOUNT_PERCENT,
   ALL_ATV_PREMIUM_PACKAGES,
   ATV_PREMIUM_PACKAGES,
+  ATV_PREMIUM_SELF_MEET_PACKAGES,
   ATV_PREMIUM_SLUG,
   ATV_RAFTING_PREMIUM_PACKAGES,
 } from "@/data/atvPremium"
@@ -1460,9 +1461,9 @@ export default async function TourPage({ params }: Props) {
                     </span>
                   ) : tour.slug === ATV_PREMIUM_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">
-                      ATV {ATV_PREMIUM_PACKAGES.map((pkg) => `${pkg.guests} guests ${formatIdr(pkg.priceIdr)}`).join(" · ")} ·
-                      ATV + rafting from {formatIdr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)} for{" "}
-                      {ATV_RAFTING_PREMIUM_PACKAGES[0].guests} · per package
+                      Shuttle from {formatIdr(ATV_PREMIUM_PACKAGES[0].priceIdr)} · self-meet from{" "}
+                      {formatIdr(ATV_PREMIUM_SELF_MEET_PACKAGES[0].priceIdr)} · ATV + rafting from{" "}
+                      {formatIdr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)} · per package
                     </span>
                   ) : tour.slug === LICENSED_GUIDE_SLUG ? (
                     <span className="text-sm font-bold text-brand-green">

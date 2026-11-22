@@ -47,7 +47,7 @@ The tandem is the seat for a child (age 6+), a guest who would rather not drive,
 
 ## Add the river: Land & River
 
-**Land & River** is the longer premium adventure: every guest rides a **single ATV**, then the same private car takes you to **Ayung River rafting** (Class II–III) after lunch. No tubing.
+**Land & River** is the longer premium adventure: every guest rides a **single ATV**, then the same private car (2–7) or **HiAce** (8–15) takes you to **Ayung River rafting** (Class II–III) after lunch. No tubing.
 
 | Package | Guests | Price |
 | --- | --- | --- |
@@ -170,29 +170,30 @@ You are not paying extra for a different, shorter loop. Premium riders get the s
     title: 'ATV + Rafting Premium Package (2026): Land & River With a Private Shuttle, 10% Off',
     seoTitle: 'ATV + Rafting Premium Package Bali 2026 | Private Car',
     excerpt:
-      'Land & River: a single ATV and Ayung River rafting for every guest, with a private shuttle just for your group all day. 2 guests IDR 2,475,000, 3 guests IDR 3,465,000, 4 guests IDR 4,500,000 — 10% off booking separately. No tubing.',
+      'Land & River: single ATV + Ayung rafting for every guest. Private car for 2–7 (from IDR 2,475,000) or private HiAce for 8–15 (from 9,540,000). 10% off. No tubing.',
     publishedAt: '2026-10-12',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/rafting-ayung-paddle-team.jpg',
     content: `
-**What is the Land & River premium package?** It is our ATV + rafting day with your own car: every guest rides a **single ATV** at All New Bali Adventure, then rafts the **Ayung River** (Class II–III) after lunch, with a **private shuttle just for your group** from hotel pickup to drop-off. **2 guests IDR 2,475,000 · 3 guests IDR 3,465,000 · 4 guests IDR 4,500,000** — 10% off booking the same parts separately. No tubing. [Choose Land & River](/tours/atv-premium-package-bali) — WhatsApp, **no payment to inquire**.
+**What is the Land & River premium package?** It is our ATV + rafting day with your own vehicle: every guest rides a **single ATV** at All New Bali Adventure, then rafts the **Ayung River** (Class II–III) after lunch. **Private car for 2–7** (from **IDR 2,475,000**) or **private HiAce for 8–15** (from **IDR 9,540,000**) — **10% off** booking the same parts separately. No tubing. [Choose Land & River](/tours/atv-premium-package-bali) — WhatsApp, **no payment to inquire**.
 
 > **Key Takeaways**
-> - **Land & River Duo** — 2 guests: **IDR 2,475,000**
-> - **Land & River Trio** — 3 guests: **IDR 3,465,000**
-> - **Land & River Squad** — 4 guests: **IDR 4,500,000**
-> - Every guest gets a **single ATV + Ayung rafting**; the **private shuttle** is yours alone all day
+> - **Car packages (2–7):** from **IDR 2,475,000** (2) to **7,605,000** (7)
+> - **HiAce packages (8 / 10 / 12 / 15):** **9,540,000 · 11,610,000 · 13,680,000 · 16,785,000**
+> - Every guest gets a **single ATV + Ayung rafting**; the vehicle is yours alone all day
 > - Lunch, gear, guides, and insurance (ages 6–65) included · plan **5–7 hours** door to door
+> - Big groups: [HiAce guide](/blog/atv-rafting-group-hiace-ubud-2026)
 
-## The three packages (2026 IDR)
+## Land & River with private car (2–7)
 
 Prices are **per package**, not per person.
 
-| Package | Guests | Includes | Premium price | About per guest |
-| --- | --- | --- | --- | --- |
-| **Land & River Duo** | 2 | 2 single ATVs + rafting for 2 | **2,475,000** | 1,237,500 |
-| **Land & River Trio** | 3 | 3 single ATVs + rafting for 3 | **3,465,000** | 1,155,000 |
-| **Land & River Squad** | 4 | 4 single ATVs + rafting for 4 | **4,500,000** | 1,125,000 |
+| Package | Guests | Premium price | About per guest |
+| --- | --- | --- | --- |
+| **Land & River Duo** | 2 | **2,475,000** | 1,237,500 |
+| **Land & River Trio** | 3 | **3,465,000** | 1,155,000 |
+| **Land & River Squad** | 4 | **4,500,000** | 1,125,000 |
+| **Land & River 5 / 6 / 7** | 5 / 6 / 7 | **5,535,000 / 6,570,000 / 7,605,000** | ~1.1M |
 
 ## The 10% math
 
@@ -238,11 +239,11 @@ Land & River suits friends, couples travelling together, and families with older
 
 **Is tubing included?** No. Land & River is ATV and Ayung **rafting** only. Wos River tubing is a different, gentler river — [compare rafting and tubing](/blog/rafting-vs-tubing-vs-atv-near-ubud).
 
-**Can we book Land & River for 5 or more?** The packages are set at 2, 3 and 4 guests. Larger groups book the [standard combo](/tours/atv-rafting-combo) and we confirm transport on WhatsApp.
+**Can we book Land & River for 5 or more?** Yes. Land & River now runs **2–7 guests with a private car** and **8–15 with a private HiAce**. Full group card: [ATV + rafting HiAce for 8–15](/blog/atv-rafting-group-hiace-ubud-2026).
 
 **Can one guest skip rafting?** Then it is a different mix — book on the standard combo page and tell us who rafts.
 
-**Ready?** [Book Land & River](/tours/atv-premium-package-bali) — pick Duo, Trio or Squad, drop your hotel pin, and we confirm the pickup time on WhatsApp.
+**Ready?** [Book Land & River](/tours/atv-premium-package-bali) — pick your guest count (2–15), drop your hotel pin, and we confirm the pickup time on WhatsApp.
 `,
   },
   {
@@ -765,6 +766,95 @@ Step-by-step: [How to book ATV premium](/blog/how-to-book-atv-premium-package-ba
 This is **not** a fake countdown code. The “promo” is the standing **10% package discount** plus a **no-surcharge promise** for Christmas and New Year weeks. South-coast hotels on shuttle packages are confirmed on WhatsApp before you lock the pickup time. Free cancel up to **24 hours**; weather cancellations are refunded or rescheduled — [cancellation policy](/cancellation-policy).
 
 **Ready?** [Book the Christmas / New Year ATV package](/tours/atv-premium-package-bali) — same rates, morning starts, shuttle or self-meet.
+`,
+  },
+  {
+    slug: 'atv-rafting-group-hiace-ubud-2026',
+    title: 'ATV + Rafting for Groups of 8–15 near Ubud (2026): Private HiAce Minibus',
+    seoTitle: 'ATV Rafting Group HiAce Ubud 2026 | 8–15 Guests',
+    excerpt:
+      'Land & River for big groups: every guest gets a single ATV plus Ayung rafting, with a private Toyota HiAce for pickup. 8 guests IDR 9,540,000 · 10 guests 11,610,000 · 12 guests 13,680,000 · 15 guests 16,785,000 — 10% off.',
+    publishedAt: '2026-11-22',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/rafting-ayung-paddle-team.jpg',
+    content: `
+**Can a group of 8–15 book ATV + rafting with a private HiAce near Ubud?** Yes. Sekar Bali Activity’s **Land & River HiAce** packages put every guest on a **single ATV** at All New Bali Adventure in Sedang, then on **Ayung River rafting** (Class II–III), with a **private Toyota HiAce minibus** — hotel pickup, arena, river, and return. **8 guests IDR 9,540,000 · 10 guests 11,610,000 · 12 guests 13,680,000 · 15 guests 16,785,000** — **10% off** booking the same parts separately. Not a shared tourist bus. [Book on the premium page](/tours/atv-premium-package-bali) — WhatsApp, **no payment to inquire**.
+
+> **Key Takeaways**
+> - Built for **bachelor parties, family weeks, office trips, and friend groups of 8–15**
+> - **Private HiAce** in the package (IDR **1,400,000** in the math) — not a shared minibus
+> - Every guest: **1.5-hour single ATV + Ayung rafting** · lunch · gear · insurance ages 6–65
+> - Smaller groups (2–7) use a **private car** instead — same Land & River day
+> - Self-meet option drops the HiAce if you already have a bus
+
+## The four HiAce packages (2026 IDR)
+
+Prices are **per package**, not per person.
+
+| Package | Guests | Booked separately | Premium price | About per guest |
+| --- | --- | --- | --- | --- |
+| **Land & River 8** | 8 | 10,600,000 | **9,540,000** | 1,192,500 |
+| **Land & River 10** | 10 | 12,900,000 | **11,610,000** | 1,161,000 |
+| **Land & River 12** | 12 | 15,200,000 | **13,680,000** | 1,140,000 |
+| **Land & River 15** | 15 | 18,650,000 | **16,785,000** | 1,119,000 |
+
+## The 10% math (HiAce included)
+
+Each line uses published 2026 rates: single ATV **IDR 700,000** (3+ tier), rafting **IDR 450,000** (2+), HiAce **IDR 1,400,000**, then **10% off the total**.
+
+| Guests | ATVs | Rafting | HiAce | Separately | Package |
+| --- | --- | --- | --- | --- | --- |
+| 8 | 8 × 700,000 | 8 × 450,000 | 1,400,000 | 10,600,000 | **9,540,000** |
+| 10 | 10 × 700,000 | 10 × 450,000 | 1,400,000 | 12,900,000 | **11,610,000** |
+| 12 | 12 × 700,000 | 12 × 450,000 | 1,400,000 | 15,200,000 | **13,680,000** |
+| 15 | 15 × 700,000 | 15 × 450,000 | 1,400,000 | 18,650,000 | **16,785,000** |
+
+## Why a HiAce instead of two cars?
+
+A Toyota HiAce (about **10–15 seats**) keeps one group in **one vehicle** for the whole day: hotel → Sedang → Ayung → hotel. Two Avanza/Innova cars split the party and double the coordination. The HiAce is **private for your booking** — not shared with other tourists.
+
+Groups of **2–7** stay on the **private car** Land & River cards (from **IDR 2,475,000**). Full small-group math: [Land & River premium](/blog/atv-rafting-premium-package-2026).
+
+## Self-meet for big groups
+
+Already have a villa bus or tour coach? Toggle **Self-meet · no shuttle** on the [money page](/tours/atv-premium-package-bali). Self-meet HiAce sizes:
+
+| Guests | Self-meet price |
+| --- | --- |
+| 8 / 10 / 12 / 15 | **8,280,000 / 10,350,000 / 12,420,000 / 15,525,000** |
+
+You cover hotel → Sedang and Sedang → Ayung (about **15 minutes**) after lunch.
+
+## How the day runs
+
+1. **Pickup** — private HiAce at your hotel (time confirmed on WhatsApp).
+2. **ATV** — briefing and **1.5-hour** single-ATV ride at All New Bali Adventure, Sedang.
+3. **Lunch** — change into dry clothes.
+4. **Rafting** — same HiAce to the Ayung for Class II–III rafting.
+5. **Home** — dry off; HiAce returns to your hotel.
+
+Plan **5–7 hours** door to door from Ubud; longer from the south coast. Latest ATV start with rafting: **1:00 PM**.
+
+## Who it suits
+
+| Group type | Why HiAce Land & River fits |
+| --- | --- |
+| Bachelor / hen weekend | One bus, one price, mud then river |
+| Extended family (8–12) | Everyone drives their own ATV |
+| Office / incentive trip | Fixed package total before finance signs |
+| Friends’ villa (10–15) | No Grab roulette between Sedang and Ayung |
+
+Ages: ATV from **6**; rafting typically **7+** with swimming confidence. Insurance **6–65** — send every age on WhatsApp.
+
+## Questions
+
+**Is this a shared tourist bus?** No. The HiAce is booked for **your group only**.
+
+**Do Christmas / NYE cost more?** No holiday surcharge — [Christmas & New Year ATV promo](/blog/atv-christmas-new-year-promo-ubud-2026).
+
+**Is this Kuber Premium?** No — different operator, different product. [Compare](/blog/atv-premium-package-vs-kuber-premium-2026).
+
+**Ready?** Open [ATV premium package Bali](/tours/atv-premium-package-bali), toggle shuttle on, scroll to **Group HiAce (8–15)**, tap **Book**, and send date + ages + hotel pin on WhatsApp.
 `,
   },
 ]

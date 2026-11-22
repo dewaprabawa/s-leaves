@@ -1,3 +1,7 @@
+"use client"
+
+import { useMemo, useState } from "react"
+import { ChevronDown, ChevronUp } from "lucide-react"
 import { ALOHA_ACTIVE_PACKAGE_IDR } from "@/data/alohaUbudSwing"
 import { COOKING_CLASS_PRICE_IDR } from "@/data/cultureSales"
 import { MELUKAT_PRICE_IDR } from "@/data/cultureSales"
@@ -24,8 +28,11 @@ const [CYCLE_1, CYCLE_2, CYCLE_3] = TIER_PRICES_IDR.cycling
 const [ATV_1] = TIER_PRICES_IDR["single-atv"]
 const [RAFT_1, RAFT_2] = TIER_PRICES_IDR.rafting
 const [TUBE_1] = TIER_PRICES_IDR["canyon-tubing"]
-const [, KINTAMANI_PROMO, ] = TIER_PRICES_IDR["kintamani-day"]
+const [, KINTAMANI_PROMO] = TIER_PRICES_IDR["kintamani-day"]
 const [KINTAMANI_LIST] = TIER_PRICES_IDR["kintamani-day"]
+
+/** Rows shown before “Show more”. */
+const PREVIEW_COUNT = 4
 
 export type ActivityCompareId =
   | "cycling"
@@ -201,6 +208,16 @@ export default function ActivityPriceCompare({
 }: {
   highlight?: ActivityCompareId
 }) {
+  const [expanded, setExpanded] = useState(false)
+  const hiddenCount = Math.max(0, ROWS.length - PREVIEW_COUNT)
+
+  const visibleRows = useMemo(() => {
+    if (expanded) return ROWS
+    const highlighted = highlight ? ROWS.filter((r) => r.id === highlight) : []
+    const rest = ROWS.filter((r) => r.id !== highlight)
+    return [...highlighted, ...rest].slice(0, PREVIEW_COUNT)
+  }, [expanded, highlight])
+
   return (
     <div>
       <h3 style={{ color: "#ffffff" }} className="text-lg font-bold text-white">
@@ -222,7 +239,7 @@ export default function ActivityPriceCompare({
             </tr>
           </thead>
           <tbody>
-            {ROWS.map((row) => {
+            {visibleRows.map((row) => {
               const on = row.id === highlight
               return (
                 <tr
@@ -244,11 +261,31 @@ export default function ActivityPriceCompare({
           </tbody>
         </table>
       </div>
-      <p className="mt-2 text-xs text-sand/60 leading-relaxed">
-        South-coast shuttle is IDR 650,000 where a shuttle is charged. Swing dress hire and the koi
-        pond are optional. Griya Beji international admission is paid at the gate. Healing is not a
-        medical clinic.
-      </p>
+      {hiddenCount > 0 ? (
+        <button
+          type="button"
+          onClick={() => setExpanded((v) => !v)}
+          aria-expanded={expanded}
+          className="mt-3 flex w-full items-center justify-center gap-2 rounded-full border border-white/25 bg-white/5 px-4 py-2.5 text-sm font-bold text-sand transition-colors hover:bg-white/10"
+        >
+          {expanded ? (
+            <>
+              Show less <ChevronUp className="h-4 w-4" />
+            </>
+          ) : (
+            <>
+              Show all {ROWS.length} activities <ChevronDown className="h-4 w-4" />
+            </>
+          )}
+        </button>
+      ) : null}
+      {expanded ? (
+        <p className="mt-2 text-xs text-sand/60 leading-relaxed">
+          South-coast shuttle is IDR 650,000 where a shuttle is charged. Swing dress hire and the koi
+          pond are optional. Griya Beji international admission is paid at the gate. Healing is not a
+          medical clinic.
+        </p>
+      ) : null}
     </div>
   )
 }

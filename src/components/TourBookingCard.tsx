@@ -36,12 +36,13 @@ import {
   ATV_PREMIUM_DISCOUNT_PERCENT,
   ALL_ATV_PREMIUM_PACKAGES,
   ATV_PREMIUM_PACKAGES,
-  ATV_PREMIUM_SELF_MEET_COPY,
   ATV_PREMIUM_SELF_MEET_PACKAGES,
-  ATV_PREMIUM_SHUTTLE_COPY,
+  ATV_RAFTING_HIACE_PACKAGES,
+  ATV_RAFTING_HIACE_SELF_MEET_PACKAGES,
   ATV_RAFTING_PREMIUM_PACKAGES,
   ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES,
   ATV_PREMIUM_SLUG,
+  meetCopyForPackage,
 } from "@/data/atvPremium"
 import {
   COOKING_CLASS_PRICE_IDR,
@@ -236,20 +237,28 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   }
 
   if (props.tourSlug === ATV_PREMIUM_SLUG) {
-    return ALL_ATV_PREMIUM_PACKAGES.map((pkg) => ({
-      id: `${props.tourId}-${pkg.key}`,
-      title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"}${pkg.tandems ? " + 1 tandem" : ""}${pkg.rafters ? " + rafting" : ""}${pkg.shuttleIncluded ? " + private shuttle" : " · self-meet (no shuttle)"} · ${pkg.guests} guests`,
-      times: DEFAULT_TIMES,
-      adultPrice: pkg.priceIdr,
-      kidPrice: null,
-      minPax: pkg.guests,
-      fixedPax: pkg.guests,
-      compareAtPrice: pkg.partsIdr,
-      perBooking: true,
-      pickupIncluded: pkg.shuttleIncluded,
-      meetsAtArena: !pkg.shuttleIncluded,
-      includedMeetCopy: pkg.shuttleIncluded ? ATV_PREMIUM_SHUTTLE_COPY : ATV_PREMIUM_SELF_MEET_COPY,
-    }))
+    return ALL_ATV_PREMIUM_PACKAGES.map((pkg) => {
+      const transport =
+        pkg.vehicle === "hiace"
+          ? " + private HiAce"
+          : pkg.vehicle === "car"
+            ? " + private shuttle"
+            : " · self-meet (no shuttle)"
+      return {
+        id: `${props.tourId}-${pkg.key}`,
+        title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"}${pkg.tandems ? " + 1 tandem" : ""}${pkg.rafters ? " + rafting" : ""}${transport} · ${pkg.guests} guests`,
+        times: DEFAULT_TIMES,
+        adultPrice: pkg.priceIdr,
+        kidPrice: null,
+        minPax: pkg.guests,
+        fixedPax: pkg.guests,
+        compareAtPrice: pkg.partsIdr,
+        perBooking: true,
+        pickupIncluded: pkg.shuttleIncluded,
+        meetsAtArena: !pkg.shuttleIncluded,
+        includedMeetCopy: meetCopyForPackage(pkg),
+      }
+    })
   }
 
   if (props.tourSlug === LICENSED_GUIDE_SLUG) {
@@ -548,10 +557,12 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {isAtvPremium ? (
             <div className="mt-2 space-y-2 text-sm text-brand-green-light">
               {[
-                { label: "ATV + shuttle", packages: ATV_PREMIUM_PACKAGES },
-                { label: "ATV self-meet", packages: ATV_PREMIUM_SELF_MEET_PACKAGES },
-                { label: "Land & River + shuttle", packages: ATV_RAFTING_PREMIUM_PACKAGES },
-                { label: "Land & River self-meet", packages: ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES },
+                { label: "ATV + car (3–5)", packages: ATV_PREMIUM_PACKAGES },
+                { label: "ATV self-meet (3–5)", packages: ATV_PREMIUM_SELF_MEET_PACKAGES },
+                { label: "Land & River + car (2–7)", packages: ATV_RAFTING_PREMIUM_PACKAGES },
+                { label: "Land & River self-meet (2–7)", packages: ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES },
+                { label: "Land & River + HiAce (8–15)", packages: ATV_RAFTING_HIACE_PACKAGES },
+                { label: "Land & River self-meet (8–15)", packages: ATV_RAFTING_HIACE_SELF_MEET_PACKAGES },
               ].map((set) => (
                 <div key={set.label}>
                   <p className="text-[11px] font-bold uppercase tracking-wider text-brand-green">{set.label}</p>
@@ -572,8 +583,8 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           {props.tourSlug === "atv-rafting-combo" ? (
             <p className="text-sm text-brand-green-light mt-1">
               <Link href={`/tours/${ATV_PREMIUM_SLUG}`} className="font-semibold text-brand-green underline-offset-2 hover:underline">
-                Want a private shuttle? Land & River premium from {formatIdr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)} for{" "}
-                {ATV_RAFTING_PREMIUM_PACKAGES[0].guests}
+                Want a private shuttle or HiAce? Land & River from {formatIdr(ATV_RAFTING_PREMIUM_PACKAGES[0].priceIdr)}{" "}
+                (2 guests) · HiAce from {formatIdr(ATV_RAFTING_HIACE_PACKAGES[0].priceIdr)} (8 guests)
               </Link>
             </p>
           ) : null}

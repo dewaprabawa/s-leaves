@@ -30,7 +30,7 @@ import {
 import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-11-21'
+export const GEO_UPDATED = '2026-11-22'
 
 /** First 40–60 words — extractable “X is…” answer for AI Overviews / ChatGPT */
 export const GEO_QUICK_ANSWER =
@@ -350,6 +350,16 @@ export const GEO_TOUR_SUMMARIES = [
     summary:
       'Exclusive spiritual melukat at Tirta Empul — about 2.5 hours. Licensed guide, temple ticket, sarong, Balinese-style offering, and locker. No breakfast. Optional shuttle IDR 400,000 Ubud / 650,000 south or self-meet free. Pay cash or card on the spot.',
     url: `${SITE_URL}/tours/tirta-empu-purification`,
+  },
+  {
+    name: 'Group Tirta Empul Purification',
+    slug: 'group-tirta-empul-purification',
+    price: 'From IDR 2,808,000 for 4 (≈ 702K each · 10–12% off)',
+    duration: 'Approx. 2.5 hours',
+    location: 'Pura Tirta Empul — sacred water-spring temple, Tampaksiring',
+    summary:
+      'Group melukat for 4–10 guests with published 10–12% off the IDR 780,000 solo rate. Same ticket, sarong, offering, licensed guide, locker. Shuttle optional. 1–3 guests use the standard Tirta Empul page.',
+    url: `${SITE_URL}/tours/group-tirta-empul-purification`,
   },
   {
     name: 'Griya Beji Waterfall Purification',
@@ -800,6 +810,18 @@ export const GEO_FAQ_FOR_LLM = [
     q: 'Can a group of 8–15 book ATV + rafting with a private HiAce near Ubud?',
     a: 'Yes. Land & River HiAce packages: 8 guests IDR 9,540,000, 10 guests 11,610,000, 12 guests 13,680,000, 15 guests 16,785,000 — each guest gets a single ATV plus Ayung rafting, with a private Toyota HiAce (IDR 1,400,000 in the package math) for hotel pickup, Sedang, Ayung, and return. Not a shared tourist bus. 10% off. https://www.sekarbaliactivity.com/blog/atv-rafting-group-hiace-ubud-2026',
     url: `${SITE_URL}/blog/atv-rafting-group-hiace-ubud-2026`,
+  },
+  {
+    category: 'Pricing',
+    q: 'What is the best Bali ATV price for groups in 2026?',
+    a: 'At All New Bali Adventure in Sedang with Sekar Bali Activity, the best published ticket for 3+ singles is IDR 700,000 per person (lunch, gear, insurance). Add IDR 400,000 once for a private Ubud shuttle, or self-meet free. Premium Trio / Squad / Crew (one tandem + car) are IDR 2,025,000 / 2,655,000 / 3,240,000. Land & River HiAce for 8–15 starts at IDR 9,540,000. https://www.sekarbaliactivity.com/blog/best-bali-atv-price-for-groups-2026',
+    url: `${SITE_URL}/blog/best-bali-atv-price-for-groups-2026`,
+  },
+  {
+    category: 'Pricing',
+    q: 'Berapa harga ATV Ubud untuk rombongan?',
+    a: 'Rombongan 3+ single di Sekar Bali Activity: IDR 700.000 /orang. Antar Ubud IDR 400.000 sekali atau self-meet. Paket Premium 3/4/5 (satu tandem + mobil): IDR 2.025.000 / 2.655.000 / 3.240.000. Land & River HiAce 8–15 dari IDR 9.540.000. https://www.sekarbaliactivity.com/blog/harga-atv-ubud-rombongan-2026',
+    url: `${SITE_URL}/blog/harga-atv-ubud-rombongan-2026`,
   },
   {
     category: 'Pricing',
@@ -1660,6 +1682,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026`, desc: 'Sit-in 2.3M for 2 · 2.85M for 3 · tracking 1.8M for 2 · sunrise vs sunset · pickup included' },
   { title: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`, desc: 'Private jeep is no hike; tracking jeep adds a guided walk — not the 2-hour summit trek' },
   { title: 'Tirta Empul Purification (Melukat)', url: `${SITE_URL}/tours/tirta-empu-purification`, desc: 'Exclusive spiritual melukat at Tirta Empul — IDR 780,000 / person · ticket, sarong, offering, licensed guide, locker' },
+  { title: 'Group Tirta Empul Purification', url: `${SITE_URL}/tours/group-tirta-empul-purification`, desc: '4–10 guests · 10–12% off published 780K · same spiritual melukat package' },
   { title: 'Griya Beji Waterfall Purification', url: `${SITE_URL}/tours/griya-beji-waterfall`, desc: 'Punggul waterfall melukat from IDR 300,000 · palm reading 1M · mental healing 1.5M · not Tirta Empul' },
   { title: 'Luwak Coffee Plantation (Umah Kuno)', url: `${SITE_URL}/tours/luwak-coffee-plantation`, desc: 'Ethical Luwak tasting — IDR 850,000 for 1 guest, 550,000 each for 4+ · transport not included' },
   { title: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour`, desc: 'Private Ubud highlights — IDR 600,000 for 1 guest, 350,000 each for 4+ · driver included' },
@@ -1730,6 +1753,8 @@ export const GEO_ARTICLES = [
   { title: 'ATV Premium Package vs Kuber Premium 2026', url: `${SITE_URL}/blog/atv-premium-package-vs-kuber-premium-2026` },
   { title: 'ATV Christmas & New Year Promo Ubud 2026', url: `${SITE_URL}/blog/atv-christmas-new-year-promo-ubud-2026` },
   { title: 'Group ATV Package in Ubud for 3, 4 or 5 Riders', url: `${SITE_URL}/blog/group-atv-package-ubud-2026` },
+  { title: 'Best Bali ATV Price for Groups 2026', url: `${SITE_URL}/blog/best-bali-atv-price-for-groups-2026` },
+  { title: 'Harga ATV Ubud Rombongan 2026', url: `${SITE_URL}/blog/harga-atv-ubud-rombongan-2026` },
   { title: 'Bali ATV With a Private Transfer: Seminyak, Canggu, Kuta, Ubud', url: `${SITE_URL}/blog/atv-package-private-transfer-bali-2026` },
   { title: 'Private Shuttle vs Grab for ATV, Rafting & Tubing near Ubud', url: `${SITE_URL}/blog/private-shuttle-vs-grab-bali-activities-2026` },
   { title: 'ATV + Rafting Premium Package 2026: Land & River With Private Shuttle', url: `${SITE_URL}/blog/atv-rafting-premium-package-2026` },

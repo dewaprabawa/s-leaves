@@ -204,6 +204,22 @@ const CTA_BY_SLUG: Record<string, ArticleCta> = {
     secondaryHref: '/blog/tandem-atv-ubud-price',
     secondaryLabel: 'How tandem works',
   },
+  'best-bali-atv-price-for-groups-2026': {
+    headline: 'Book your group’s published ATV total',
+    body: '3+ singles from IDR 700,000 each · Premium packages from 2,025,000 · HiAce Land & River 8–15 from 9,540,000. Shuttle or self-meet. WhatsApp — no deposit.',
+    primaryHref: '/tours/atv-premium-package-bali',
+    primaryLabel: 'Book a group package',
+    secondaryHref: '/tours/bali-atv-adventure',
+    secondaryLabel: 'All singles instead',
+  },
+  'harga-atv-ubud-rombongan-2026': {
+    headline: 'Pesan harga ATV rombongan yang terbit',
+    body: '3+ single dari IDR 700.000/orang · Premium dari 2.025.000 · HiAce Land & River 8–15 dari 9.540.000. Antar atau self-meet. WhatsApp — tanpa deposit.',
+    primaryHref: '/tours/atv-premium-package-bali',
+    primaryLabel: 'Pesan paket rombongan',
+    secondaryHref: '/tours/bali-atv-adventure',
+    secondaryLabel: 'Semua single',
+  },
   'atv-rafting-premium-package-2026': {
     headline: 'Book Land & River with a private shuttle',
     body: 'Single ATV + Ayung rafting for every guest, your own car all day. 2 guests IDR 2,475,000 · 3 guests 3,465,000 · 4 guests 4,500,000 — 10% off booking separately.',

@@ -182,7 +182,56 @@ Bayar nanti sesuai instruksi WhatsApp resmi, atau bayar di arena (tunai IDR, QRI
 
 **Bisa dari Canggu / Seminyak?** Ya — antar **IDR 650.000** sekali dari pantai selatan, atau self-meet. Detail: [ATV dari Seminyak/Canggu](/blog/atv-rafting-from-seminyak-canggu-kuta-2026).
 
+**Harga untuk rombongan?** Lihat tangga lengkap: [harga ATV Ubud rombongan](/blog/harga-atv-ubud-rombongan-2026).
+
 **Ready?** Pesan di [halaman ATV](/tours/bali-atv-adventure) atau baca hub EN [Book ATV Ubud tickets](/blog/book-atv-ubud-tickets-2026) — tanpa deposit untuk tanya.
+`,
+  },
+  {
+    slug: 'harga-atv-ubud-rombongan-2026',
+    title: 'Harga ATV Ubud Rombongan 2026: 3, 4, 5 Orang & HiAce 8–15',
+    seoTitle: 'Harga ATV Ubud Rombongan 2026 | Dari 700.000',
+    excerpt:
+      'Harga ATV Ubud untuk rombongan: 700.000/orang untuk 3+ single, paket Premium dari 2.025.000, Land & River HiAce dari 9.540.000. Antar atau self-meet. WhatsApp tanpa deposit.',
+    publishedAt: '2026-11-22',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-arena-quad-fleet.jpg',
+    content: `
+**Berapa harga ATV Ubud untuk rombongan 2026?** Di **Sekar Bali Activity** (arena **All New Bali Adventure, Sedang**), tiket **single untuk 3 orang atau lebih** adalah **IDR 700.000 /orang** — sudah termasuk makan siang, helm, sepatu boot, dan asuransi (usia 6–65). Antar hotel Ubud **IDR 400.000 sekali** per booking, atau **self-meet gratis**. Rombongan **3–5** yang satu pasangan berbagi tandem sering lebih hemat dengan [paket Premium](/tours/atv-premium-package-bali) dari **IDR 2.025.000** (mobil pribadi). Rombongan **8–15** yang mau ATV + rafting: [Land & River HiAce](/blog/atv-rafting-group-hiace-ubud-2026) dari **IDR 9.540.000**. WhatsApp — **tanpa deposit untuk tanya**. Panduan EN: [best Bali ATV price for groups](/blog/best-bali-atv-price-for-groups-2026).
+
+> **Poin utama**
+> - **3+ single:** **700.000**/orang · antar **400.000** sekali atau self-meet
+> - **Premium 3 / 4 / 5** (1 tandem): **2.025.000 / 2.655.000 / 3.240.000** ≈ 648–675K/orang all-in
+> - **Self-meet Premium:** dari **1.665.000** (3 orang)
+> - **HiAce 8 / 10 / 12 / 15** (ATV + rafting): **9.540.000 / 11.610.000 / 13.680.000 / 16.785.000**
+> - Sticker di bawah ~500.000 biasanya beda arena / lunch / aturan bayar — bandingkan isi paket
+
+## Tabel harga rombongan (tiket + antar)
+
+| Jumlah | Semua single (tiket) | + antar Ubud | Catatan |
+| --- | --- | --- | --- |
+| 3 | 2.100.000 | **2.500.000** | Tier 700K |
+| 4 | 2.800.000 | **3.200.000** | ≈ 800K/orang dengan mobil |
+| 5 | 3.500.000 | **3.900.000** | ≈ 780K/orang dengan mobil |
+| 3 Premium Trio | — | **2.025.000** | 1 single + 1 tandem |
+| 4 Premium Squad | — | **2.655.000** | 2 single + 1 tandem |
+| 5 Premium Crew | — | **3.240.000** | 3 single + 1 tandem |
+
+Antar pantai selatan (jika dihitung terpisah): **IDR 650.000**. Hitung cepat: [kalkulator ATV](/planners/atv-price-calculator). Harga satuan: [harga ATV Ubud 2026](/blog/harga-atv-ubud-2026).
+
+## Kapan pilih Premium vs semua single?
+
+- **Semua mau mengemudi** → pesan single di [halaman ATV](/tours/bali-atv-adventure) (tier 3+ = 700K).
+- **Satu pasangan / anak di belakang** → [Premium](/tours/atv-premium-package-bali) + toggle self-meet jika sudah punya driver.
+- **8–15 + rafting Ayung** → [HiAce Land & River](/blog/atv-rafting-group-hiace-ubud-2026).
+
+## Cara pesan
+
+1. Buka [paket Premium](/tours/atv-premium-package-bali) atau [ATV standar](/tours/bali-atv-adventure).
+2. Kirim **tanggal**, **jumlah orang**, **single/tandem**, **usia**, **pin hotel** atau self-meet.
+3. Kami konfirmasi **harga terbit** — bayar di tempat (tunai / QRIS / kartu).
+
+**Ready?** Pesan rombongan di [ATV Premium](/tours/atv-premium-package-bali) — tanpa deposit untuk tanya.
 `,
   },
   {

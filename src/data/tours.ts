@@ -8,6 +8,15 @@ import {
   MELUKAT_PRICE_IDR,
 } from "@/data/cultureSales"
 import {
+  GROUP_PURIFICATION_DISCOUNT_BY_GUESTS,
+  GROUP_PURIFICATION_HERO,
+  GROUP_PURIFICATION_INCLUDED,
+  GROUP_PURIFICATION_PACKAGES,
+  GROUP_PURIFICATION_SLUG,
+  groupPurificationFromPerGuestIdr,
+  groupPurificationFromPriceIdr,
+} from "@/data/groupPurification"
+import {
   SWING_HEAVEN_DRESS_HIRE_IDR,
   SWING_HEAVEN_KOI_POND_IDR,
   SWING_HEAVEN_LUNCH_DIFF_IDR,
@@ -431,14 +440,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     ],
     activityOptions: [
       {
-        name: "Single ATV Ride",
+        name: "Single and/or Tandem ATV",
         priceDiff: 0,
-        description: "1 pax · solo jungle thrill",
-      },
-      {
-        name: "Tandem ATV Ride",
-        priceDiff: 350000,
-        description: "2 pax · share the adventure",
+        description: "Pick single bikes, tandem bikes, or both in one booking · from IDR 750,000 / single · 1,100,000 / tandem",
       },
       {
         name: "ATV + Ayung Rafting Combo",
@@ -3110,6 +3114,9 @@ Covered shoulders and a change of clothes. We supply the sarong and offering. Se
 ### Pairing ideas
 Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation) (Tampaksiring) or afternoon [Tumang cooking class](/tours/balinese-cooking-class). Quiet paddies: [Pejeng cycling](/tours/ubud-ricefield-cycling-tour).
 
+### Coming with 4 or more?
+Friends, family, or a retreat group: book the [group Tirta Empul purification](/tours/${GROUP_PURIFICATION_SLUG}) — **10–12% off** the published IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} rate, one WhatsApp thread for everyone.
+
 **Typical start:** 08:00 or 09:00 so you reach the spring before the mid-morning crowds.`,
     highlights: [
       "About 2.5 hours at legendary Tirta Empul",
@@ -3237,6 +3244,170 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
         question: "Is breakfast included?",
         answer:
           "No. Breakfast and lunch are not included. The IDR 780,000 rate covers ticket, sarong, offering, licensed guide, and locker only.",
+      },
+      {
+        id: "faq-melukat-12",
+        question: "Is there a group discount for Tirta Empul melukat?",
+        answer: `Yes — for 4 or more guests, book the group purification page. Published promo: 4 guests ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}% off, 6 guests ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[6]}% off, 8–10 guests ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off vs IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} each. Same inclusions. https://www.sekarbaliactivity.com/tours/${GROUP_PURIFICATION_SLUG}`,
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: GROUP_PURIFICATION_SLUG,
+    title: "Group Tirta Empul Purification",
+    slug: GROUP_PURIFICATION_SLUG,
+    category: "culture",
+    area: "Tampaksiring / Ubud",
+    venue: "Pura Tirta Empul — sacred water-spring temple",
+    pickup: "Optional shuttle IDR 400K Ubud / 650K south · self-meet free",
+    isTopPick: false,
+    duration: "Approx. 2.5 Hours",
+    basePrice: groupPurificationFromPriceIdr(),
+    seoTitle: "Group Tirta Empul Melukat | 10–12% Off",
+    seoDescription:
+      "Group purification at Tirta Empul for 4–10 guests — 10–12% off the 780K rate. Ticket, sarong, offering, licensed guide, locker. From IDR 702K / person. Shuttle optional.",
+    heroImage: {
+      url: GROUP_PURIFICATION_HERO.url,
+      alt: GROUP_PURIFICATION_HERO.alt,
+      width: GROUP_PURIFICATION_HERO.width,
+      height: GROUP_PURIFICATION_HERO.height,
+    },
+    gallery: [
+      {
+        url: GROUP_PURIFICATION_HERO.url,
+        alt: GROUP_PURIFICATION_HERO.alt,
+      },
+      {
+        url: "/images/melukat/tirta-empu-hero-2026-11-20.jpg",
+        alt: "Guest under a sacred spout at Tirta Empul during guided melukat purification",
+      },
+      {
+        url: "/images/melukat/tirta-empu-hero-2026-11.jpg",
+        alt: "Guests with licensed guide in sarong at Tirta Empul temple courtyard",
+      },
+      {
+        url: "/images/melukat/tirta-empu-gallery-01-2026-11.jpg",
+        alt: "Sacred spout line at Tirta Empul during a Balinese water purification ceremony",
+      },
+      {
+        url: "/images/melukat/tirta-empu-gallery-02-2026-11.jpg",
+        alt: "Guest in sarong under holy spring water at Tirta Empul melukat",
+      },
+      {
+        url: "/images/melukat/tirta-empu-gallery-03-2026-11.jpg",
+        alt: "Tirta Empul temple courtyard and purification pools near Tampaksiring",
+      },
+    ],
+    shortDescription: `Group melukat at Tirta Empul for 4–10 guests — ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}–${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off vs IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} each. Same spiritual tour: ticket, sarong, offering, licensed guide, locker.`,
+    fullDescription: `**Group purification at Tirta Empul — published promo for 4–10**
+
+Bring friends, family, or a retreat circle to **Pura Tirta Empul** (Tampaksiring) for the same exclusive spiritual melukat as our [solo Tirta Empul page](/tours/tirta-empu-purification) — with a **standing group discount** on the published IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} per-person rate.
+
+| Guests | Promo | Per person (approx.) | Package total |
+| --- | --- | --- | --- |
+| 4 | ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}% off | IDR ${GROUP_PURIFICATION_PACKAGES[0].perGuestIdr.toLocaleString("id-ID")} | **IDR ${GROUP_PURIFICATION_PACKAGES[0].priceIdr.toLocaleString("id-ID")}** |
+| 6 | ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[6]}% off | IDR ${GROUP_PURIFICATION_PACKAGES[1].perGuestIdr.toLocaleString("id-ID")} | **IDR ${GROUP_PURIFICATION_PACKAGES[1].priceIdr.toLocaleString("id-ID")}** |
+| 8 | ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off | IDR ${GROUP_PURIFICATION_PACKAGES[2].perGuestIdr.toLocaleString("id-ID")} | **IDR ${GROUP_PURIFICATION_PACKAGES[2].priceIdr.toLocaleString("id-ID")}** |
+| 10 | ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[10]}% off | IDR ${GROUP_PURIFICATION_PACKAGES[3].perGuestIdr.toLocaleString("id-ID")} | **IDR ${GROUP_PURIFICATION_PACKAGES[3].priceIdr.toLocaleString("id-ID")}** |
+
+From-price on this page is **IDR ${groupPurificationFromPriceIdr().toLocaleString("id-ID")}** for 4 guests (≈ **IDR ${groupPurificationFromPerGuestIdr().toLocaleString("id-ID")}** each). Compare-at is always guests × IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")}.
+
+### What every guest gets
+${GROUP_PURIFICATION_INCLUDED.map((line) => `- ${line}`).join("\n")}
+
+### Who this page is for
+- **4–10 adults** who want one WhatsApp confirmation and one published total
+- Families or friends who prefer to stay together under the guide
+- Retreat / wellness groups who need clear group math before they fly
+
+**1–3 guests** stay on the [standard Tirta Empul purification](/tours/tirta-empu-purification) at IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} each — this group promo starts at 4.
+
+### Shuttle
+Optional — same as adventure days: **IDR 400,000** from Ubud or **IDR 650,000** from the south coast once per booking, or **free self-meet** / your own driver.
+
+### Payment
+Pay on the spot — cash or card. No deposit to inquire on WhatsApp.
+
+**Typical start:** 08:00 or 09:00. Send date, guest count (4 / 6 / 8 / 10), and hotel pin or self-meet.`,
+    highlights: [
+      `4–10 guests · ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}–${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off published 780K`,
+      "Same Tirta Empul spiritual melukat as the solo page",
+      "Ticket, sarong, offering, licensed guide, locker for every guest",
+      "One WhatsApp booking for the whole group",
+      "Optional shuttle · pay on the spot",
+    ],
+    included: [...GROUP_PURIFICATION_INCLUDED],
+    notIncluded: [
+      "Private shuttle (optional IDR 400,000 Ubud / IDR 650,000 south — or self-meet / own driver free)",
+      "Breakfast and lunch",
+      "Personal expenses and gratuities",
+      "Optional priest blessing beyond the standard guided ritual",
+    ],
+    activityOptions: GROUP_PURIFICATION_PACKAGES.map((pkg) => ({
+      name: `${pkg.name} (${pkg.discountPercent}% off)`,
+      priceDiff: pkg.priceIdr - groupPurificationFromPriceIdr(),
+      description: `${pkg.guests} guests · IDR ${pkg.priceIdr.toLocaleString("id-ID")} total · ≈ IDR ${pkg.perGuestIdr.toLocaleString("id-ID")} each · was IDR ${pkg.partsIdr.toLocaleString("id-ID")}`,
+    })),
+    itinerary: [
+      {
+        id: "iti-group-melukat-1",
+        time: "Meet",
+        title: "Group meet at Tirta Empul",
+        description:
+          "Typical start 08:00 or 09:00. Optional private shuttle for the whole group, or self-meet at Pura Tirta Empul.",
+      },
+      {
+        id: "iti-group-melukat-2",
+        time: "Arrive",
+        title: "Sarong, offerings, lockers, and briefing",
+        description:
+          "Your licensed guide briefs everyone together — which spouts to use, which to skip, and how to move as a group without rushing worshippers.",
+      },
+      {
+        id: "iti-group-melukat-3",
+        time: "Ritual",
+        title: "Group melukat in the sacred pools",
+        description:
+          "Enter the purification pools and move under the sacred spouts in sequence. Cold mountain spring water. The guide stays with your group through each step.",
+      },
+      {
+        id: "iti-group-melukat-4",
+        time: "After",
+        title: "Change and courtyards",
+        description:
+          "Return to lockers, change into dry clothes, and optionally walk the courtyards before shuttle or your own driver continues the day.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-group-melukat-1",
+        question: "How much is group Tirta Empul purification?",
+        answer: `From IDR ${groupPurificationFromPriceIdr().toLocaleString("id-ID")} for 4 guests (${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}% off). 6 guests IDR ${GROUP_PURIFICATION_PACKAGES[1].priceIdr.toLocaleString("id-ID")} (${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[6]}% off). 8 guests IDR ${GROUP_PURIFICATION_PACKAGES[2].priceIdr.toLocaleString("id-ID")} and 10 guests IDR ${GROUP_PURIFICATION_PACKAGES[3].priceIdr.toLocaleString("id-ID")} (${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off). Same inclusions as the solo melukat. Shuttle optional.`,
+      },
+      {
+        id: "faq-group-melukat-2",
+        question: "What is the minimum group size?",
+        answer: `Four guests. Smaller parties book the standard Tirta Empul purification at IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} per person: https://www.sekarbaliactivity.com/tours/tirta-empu-purification`,
+      },
+      {
+        id: "faq-group-melukat-3",
+        question: "Is the ritual private for our group only?",
+        answer:
+          "You share one licensed guide and one booking confirmation. Tirta Empul remains a public holy site — other worshippers and visitors will be present. You are not renting the entire temple.",
+      },
+      {
+        id: "faq-group-melukat-4",
+        question: "Is hotel shuttle included in the group promo?",
+        answer:
+          "No. The % off applies to the melukat package (ticket, sarong, offering, guide, locker). Optional private shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking — or self-meet free.",
+      },
+      {
+        id: "faq-group-melukat-5",
+        question: "Can we pay on the spot?",
+        answer:
+          "Yes. Cash (IDR), QRIS, or card at the venue. Card payments add a 3% surcharge. No deposit to inquire on WhatsApp.",
       },
     ],
     reviews: [],

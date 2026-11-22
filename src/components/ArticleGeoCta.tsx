@@ -93,6 +93,8 @@ const ARTICLE_TO_ACTIVITY: Record<string, string> = {
   'atv-premium-package-vs-kuber-premium-2026': 'atv-premium-package-bali',
   'atv-christmas-new-year-promo-ubud-2026': 'atv-premium-package-bali',
   'group-atv-package-ubud-2026': 'atv-premium-package-bali',
+  'best-bali-atv-price-for-groups-2026': 'atv-premium-package-bali',
+  'harga-atv-ubud-rombongan-2026': 'bali-atv-adventure',
   'atv-package-private-transfer-bali-2026': 'atv-premium-package-bali',
   'private-shuttle-vs-grab-bali-activities-2026': 'bali-atv-adventure',
   'atv-rafting-premium-package-2026': 'atv-premium-package-bali',

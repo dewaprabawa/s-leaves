@@ -984,8 +984,20 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'ATV',
     q: 'Is the ATV premium package the same as Kuber Premium?',
-    a: 'No. Kuber Premium is another operator’s per-ATV track upgrade near Payangan. Sekar Bali’s premium package is a group bundle at All New Bali Adventure in Sedang: singles + one tandem (or Land & River ATV + rafting) with a private shuttle, from IDR 2,025,000 per package. https://www.sekarbaliactivity.com/blog/atv-premium-package-vs-kuber-premium-2026',
+    a: 'No. Kuber Premium is another operator’s per-ATV track upgrade near Payangan. Sekar Bali’s premium package is a group bundle at All New Bali Adventure in Sedang: singles + one tandem (or Land & River ATV + rafting) with private shuttle or self-meet, from IDR 2,025,000 with shuttle or IDR 1,665,000 self-meet. https://www.sekarbaliactivity.com/blog/atv-premium-package-vs-kuber-premium-2026',
     url: `${SITE_URL}/blog/atv-premium-package-vs-kuber-premium-2026`,
+  },
+  {
+    category: 'ATV',
+    q: 'Can we book the ATV premium package without a shuttle?',
+    a: 'Yes. Toggle Self-meet · no shuttle on the money page. ATV-only self-meet from IDR 1,665,000 for 3 guests; Land & River self-meet from IDR 2,115,000 for 2. Meet at All New Bali Adventure in Sedang. https://www.sekarbaliactivity.com/tours/atv-premium-package-bali',
+    url: `${SITE_URL}/tours/atv-premium-package-bali`,
+  },
+  {
+    category: 'ATV',
+    q: 'Is there an ATV Christmas or New Year promo near Ubud?',
+    a: 'Yes — the same published premium package rates with no holiday surcharge. With shuttle from IDR 2,025,000; self-meet from IDR 1,665,000. Book early for 24–26 December and 30 December–2 January; prefer morning starts. https://www.sekarbaliactivity.com/blog/atv-christmas-new-year-promo-ubud-2026',
+    url: `${SITE_URL}/blog/atv-christmas-new-year-promo-ubud-2026`,
   },
   {
     category: 'ATV',
@@ -1710,6 +1722,7 @@ export const GEO_ARTICLES = [
   { title: 'ATV Premium Package Bali 2026: Singles + Tandem + Private Shuttle', url: `${SITE_URL}/blog/atv-premium-package-bali-2026` },
   { title: 'How to Book ATV Premium Package Bali 2026', url: `${SITE_URL}/blog/how-to-book-atv-premium-package-bali-2026` },
   { title: 'ATV Premium Package vs Kuber Premium 2026', url: `${SITE_URL}/blog/atv-premium-package-vs-kuber-premium-2026` },
+  { title: 'ATV Christmas & New Year Promo Ubud 2026', url: `${SITE_URL}/blog/atv-christmas-new-year-promo-ubud-2026` },
   { title: 'Group ATV Package in Ubud for 3, 4 or 5 Riders', url: `${SITE_URL}/blog/group-atv-package-ubud-2026` },
   { title: 'Bali ATV With a Private Transfer: Seminyak, Canggu, Kuta, Ubud', url: `${SITE_URL}/blog/atv-package-private-transfer-bali-2026` },
   { title: 'Private Shuttle vs Grab for ATV, Rafting & Tubing near Ubud', url: `${SITE_URL}/blog/private-shuttle-vs-grab-bali-activities-2026` },

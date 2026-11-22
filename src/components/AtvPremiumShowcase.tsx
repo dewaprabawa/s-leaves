@@ -2,15 +2,20 @@
 
 import { useMemo, useState } from "react"
 import Link from "next/link"
-import { ArrowRight, Car, Check, Crown, Users, Waves } from "lucide-react"
+import { ArrowRight, Car, Check, Crown, MapPin, Users, Waves } from "lucide-react"
 import {
   ATV_PREMIUM_DISCOUNT_PERCENT,
   ATV_PREMIUM_INCLUDED,
   ATV_PREMIUM_PACKAGES,
+  ATV_PREMIUM_SELF_MEET_COPY,
+  ATV_PREMIUM_SELF_MEET_INCLUDED,
+  ATV_PREMIUM_SELF_MEET_PACKAGES,
   ATV_PREMIUM_SHUTTLE_COPY,
   ATV_PREMIUM_SLUG,
   ATV_RAFTING_PREMIUM_INCLUDED,
   ATV_RAFTING_PREMIUM_PACKAGES,
+  ATV_RAFTING_PREMIUM_SELF_MEET_INCLUDED,
+  ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES,
   ALL_ATV_PREMIUM_PACKAGES,
   type AtvPremiumPackage,
 } from "@/data/atvPremium"
@@ -20,9 +25,10 @@ import { formatIdr } from "@/lib/whatsapp"
 const DEFAULT_TIMES = ["08:00", "09:00", "10:00", "13:00", "14:00"]
 
 function packageTourConfig(pkg: AtvPremiumPackage): TourConfig {
+  const shuttleBit = pkg.shuttleIncluded ? "" : " · self-meet"
   return {
     id: `${ATV_PREMIUM_SLUG}-${pkg.key}`,
-    title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"}${pkg.tandems ? " + 1 tandem" : ""}${pkg.rafters ? " + rafting" : ""} + private shuttle · ${pkg.guests} guests`,
+    title: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? "" : "s"}${pkg.tandems ? " + 1 tandem" : ""}${pkg.rafters ? " + rafting" : ""}${pkg.shuttleIncluded ? " + private shuttle" : " · self-meet (no shuttle)"} · ${pkg.guests} guests${shuttleBit}`,
     times: DEFAULT_TIMES,
     adultPrice: pkg.priceIdr,
     kidPrice: null,
@@ -30,8 +36,9 @@ function packageTourConfig(pkg: AtvPremiumPackage): TourConfig {
     fixedPax: pkg.guests,
     compareAtPrice: pkg.partsIdr,
     perBooking: true,
-    pickupIncluded: true,
-    includedMeetCopy: ATV_PREMIUM_SHUTTLE_COPY,
+    pickupIncluded: pkg.shuttleIncluded,
+    meetsAtArena: !pkg.shuttleIncluded,
+    includedMeetCopy: pkg.shuttleIncluded ? ATV_PREMIUM_SHUTTLE_COPY : ATV_PREMIUM_SELF_MEET_COPY,
   }
 }
 
@@ -43,6 +50,7 @@ type PackagePanelProps = {
   packages: readonly AtvPremiumPackage[]
   included: readonly string[]
   separateHref: string
+  shuttleMode: boolean
   onBook: (pkg: AtvPremiumPackage) => void
 }
 
@@ -54,6 +62,7 @@ function PackagePanel({
   packages,
   included,
   separateHref,
+  shuttleMode,
   onBook,
 }: PackagePanelProps) {
   return (
@@ -68,8 +77,6 @@ function PackagePanel({
             <Crown className="h-3.5 w-3.5" />
             {eyebrow}
           </p>
-          {/* Inline color: globals.css sets h1-h6 to brand-green outside
-              Tailwind layers, which would override a text-white class. */}
           <h2
             id={id}
             style={{ color: "#ffffff" }}
@@ -109,8 +116,12 @@ function PackagePanel({
                   </li>
                 ) : null}
                 <li className="flex gap-2">
-                  <Car className="mt-0.5 h-4 w-4 shrink-0 text-accent-gold" />
-                  Private shuttle — not shared
+                  {shuttleMode ? (
+                    <Car className="mt-0.5 h-4 w-4 shrink-0 text-accent-gold" />
+                  ) : (
+                    <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent-gold" />
+                  )}
+                  {shuttleMode ? "Private shuttle — not shared" : "Self-meet — no shuttle"}
                 </li>
               </ul>
               <div className="mt-auto pt-5">
@@ -154,8 +165,9 @@ function PackagePanel({
   )
 }
 
-/** Package comparison for the ATV premium page — ATV-only and Land & River sets, one private shuttle each. */
+/** Package comparison for the ATV premium page — shuttle or self-meet, ATV-only and Land & River. */
 export default function AtvPremiumShowcase() {
+  const [shuttleMode, setShuttleMode] = useState(true)
   const [open, setOpen] = useState(false)
   const [selectedKey, setSelectedKey] = useState<string | null>(null)
 
@@ -168,26 +180,79 @@ export default function AtvPremiumShowcase() {
     setOpen(true)
   }
 
+  const atvPackages = shuttleMode ? ATV_PREMIUM_PACKAGES : ATV_PREMIUM_SELF_MEET_PACKAGES
+  const landRiverPackages = shuttleMode
+    ? ATV_RAFTING_PREMIUM_PACKAGES
+    : ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES
+
   return (
     <div className="space-y-6">
+      <div
+        role="group"
+        aria-label="Choose shuttle or self-meet"
+        className="flex flex-wrap gap-2 rounded-2xl border border-brand-green/15 bg-white p-2 shadow-sm"
+      >
+        <button
+          type="button"
+          onClick={() => setShuttleMode(true)}
+          className={`flex flex-1 min-w-[10rem] items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-bold transition-colors ${
+            shuttleMode
+              ? "bg-brand-green text-sand"
+              : "bg-transparent text-brand-green hover:bg-brand-green/5"
+          }`}
+        >
+          <Car className="h-4 w-4" />
+          With private shuttle
+        </button>
+        <button
+          type="button"
+          onClick={() => setShuttleMode(false)}
+          className={`flex flex-1 min-w-[10rem] items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-bold transition-colors ${
+            !shuttleMode
+              ? "bg-brand-green text-sand"
+              : "bg-transparent text-brand-green hover:bg-brand-green/5"
+          }`}
+        >
+          <MapPin className="h-4 w-4" />
+          Self-meet · no shuttle
+        </button>
+      </div>
+      <p className="text-sm text-brand-green-light leading-relaxed">
+        {shuttleMode
+          ? `Private car for your group only is in the package price (Ubud-area rate). ${ATV_PREMIUM_DISCOUNT_PERCENT}% off bikes + shuttle vs booking separately.`
+          : `Already have a driver or staying near Sedang? Self-meet packages drop the shuttle and keep the same ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the bikes (and rafting on Land & River). Meet at All New Bali Adventure.`}
+      </p>
+
       <PackagePanel
         id="atv-premium-packages"
-        eyebrow="1 · ATV-only (3–5 guests)"
-        title="Your group, your car, your ride"
-        intro={`Best when one pair shares a tandem. Singles for the drivers, one tandem for two who share, and a private shuttle that is yours alone. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately. Not Kuber Premium.`}
-        packages={ATV_PREMIUM_PACKAGES}
-        included={ATV_PREMIUM_INCLUDED}
+        eyebrow={shuttleMode ? "1 · ATV-only (3–5 guests)" : "1 · ATV-only self-meet (3–5)"}
+        title="Your group, your ride"
+        intro={
+          shuttleMode
+            ? `Best when one pair shares a tandem. Singles for the drivers, one tandem for two who share, and a private shuttle that is yours alone. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately. Not Kuber Premium.`
+            : `Same singles + one tandem lineup, without the car. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the bikes only. Self-meet at All New Bali Adventure in Sedang.`
+        }
+        packages={atvPackages}
+        included={shuttleMode ? ATV_PREMIUM_INCLUDED : ATV_PREMIUM_SELF_MEET_INCLUDED}
         separateHref="/tours/bali-atv-adventure"
+        shuttleMode={shuttleMode}
         onBook={openBook}
       />
       <PackagePanel
         id="atv-rafting-premium-packages"
-        eyebrow="2 · Land & River (2–4 guests)"
+        eyebrow={shuttleMode ? "2 · Land & River (2–4 guests)" : "2 · Land & River self-meet (2–4)"}
         title="Mud in the morning, river after lunch"
-        intro={`Best when everyone wants their own ATV plus Ayung rafting. One private shuttle for the whole day. No tubing. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately.`}
-        packages={ATV_RAFTING_PREMIUM_PACKAGES}
-        included={ATV_RAFTING_PREMIUM_INCLUDED}
+        intro={
+          shuttleMode
+            ? `Best when everyone wants their own ATV plus Ayung rafting. One private shuttle for the whole day. No tubing. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking the same parts separately.`
+            : `Single ATV + Ayung rafting for every guest, no shuttle. You cover Sedang ↔ Ayung after lunch. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off the activity lines. No tubing.`
+        }
+        packages={landRiverPackages}
+        included={
+          shuttleMode ? ATV_RAFTING_PREMIUM_INCLUDED : ATV_RAFTING_PREMIUM_SELF_MEET_INCLUDED
+        }
         separateHref="/tours/atv-rafting-combo"
+        shuttleMode={shuttleMode}
         onBook={openBook}
       />
 

@@ -26,8 +26,10 @@ import { LICENSED_GUIDE_SLUG } from '@/data/licensedGuide'
 import {
   ATV_PREMIUM_DISCOUNT_PERCENT,
   ATV_PREMIUM_PACKAGES,
+  ATV_PREMIUM_SELF_MEET_PACKAGES,
   ATV_PREMIUM_SLUG,
   ATV_RAFTING_PREMIUM_PACKAGES,
+  ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES,
 } from '@/data/atvPremium'
 import { resolveBaliSafariSlug } from '@/data/parkWorkshopTours'
 import {
@@ -283,23 +285,30 @@ const ATV: ActivityGeoCorpus = {
 }
 
 const [PREMIUM_TRIO, PREMIUM_SQUAD, PREMIUM_CREW] = ATV_PREMIUM_PACKAGES
+const [PREMIUM_TRIO_SELF] = ATV_PREMIUM_SELF_MEET_PACKAGES
 const [LAND_RIVER_DUO, LAND_RIVER_TRIO, LAND_RIVER_SQUAD] = ATV_RAFTING_PREMIUM_PACKAGES
+const [LAND_RIVER_DUO_SELF] = ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES
 const landRiverPrices = `${idr(LAND_RIVER_DUO.priceIdr)} for 2 guests, ${idr(LAND_RIVER_TRIO.priceIdr)} for 3, ${idr(LAND_RIVER_SQUAD.priceIdr)} for 4`
 
 const ATV_PREMIUM: ActivityGeoCorpus = {
   slug: ATV_PREMIUM_SLUG,
   heading: 'ATV premium package near Ubud — 2026 facts',
-  tldr: `Sekar Bali Activity’s ATV premium package is a group booking at All New Bali Adventure in Sedang — not Kuber Premium. ATV-only: singles + one tandem + private shuttle at ${ATV_PREMIUM_DISCOUNT_PERCENT}% off. ${PREMIUM_TRIO.name}: ${PREMIUM_TRIO.guests} guests ${idr(PREMIUM_TRIO.priceIdr)}. ${PREMIUM_SQUAD.name}: ${PREMIUM_SQUAD.guests} guests ${idr(PREMIUM_SQUAD.priceIdr)}. ${PREMIUM_CREW.name}: ${PREMIUM_CREW.guests} guests ${idr(PREMIUM_CREW.priceIdr)}. Prices are per package. Includes a 1.5-hour ride (jungle mud, river crossings, own cave tunnel, small man-made waterfall section), lunch, helmet, boot shoes, trail guide, and insurance for ages 6–65. Land & River: single ATV + Ayung rafting for every guest with the same private shuttle — ${landRiverPrices}. Book on WhatsApp — no payment to inquire. How to book: https://www.sekarbaliactivity.com/blog/how-to-book-atv-premium-package-bali-2026`,
+  tldr: `Sekar Bali Activity’s ATV premium package is a group booking at All New Bali Adventure in Sedang — not Kuber Premium. Choose private shuttle or self-meet (no shuttle). With shuttle — ATV-only ${idr(PREMIUM_TRIO.priceIdr)} / ${idr(PREMIUM_SQUAD.priceIdr)} / ${idr(PREMIUM_CREW.priceIdr)} for 3 / 4 / 5 guests; Land & River ${landRiverPrices}. Self-meet ATV-only from ${idr(PREMIUM_TRIO_SELF.priceIdr)}; Land & River self-meet from ${idr(LAND_RIVER_DUO_SELF.priceIdr)}. ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately. Christmas and New Year use the same rates — no holiday surcharge. WhatsApp — no payment to inquire. https://www.sekarbaliactivity.com/blog/atv-christmas-new-year-promo-ubud-2026`,
   bookHref: `/tours/${ATV_PREMIUM_SLUG}`,
   bookLabel: 'Book the premium package',
   pairHref: '/tours/bali-atv-adventure',
   pairLabel: 'Different mix? Standard ATV ride',
   extraNote:
-    'Same Sedang track as the standard ATV ride (including a small man-made waterfall section). “Premium” here means group bikes + private shuttle at 10% off — not a Kuber cave-upgrade ticket.',
-  priceRows: [...ATV_PREMIUM_PACKAGES, ...ATV_RAFTING_PREMIUM_PACKAGES].map((pkg) => ({
-    option: `${pkg.name} — ${pkg.singles} single${pkg.singles === 1 ? '' : 's'}${pkg.tandems ? ' + 1 tandem' : ''}${pkg.rafters ? ' + Ayung rafting' : ''}`,
+    'Same Sedang track as the standard ATV ride (including a small man-made waterfall section). Toggle shuttle or self-meet on the money page. “Premium” means group bikes at 10% off — not a Kuber cave-upgrade ticket.',
+  priceRows: [
+    ...ATV_PREMIUM_PACKAGES,
+    ...ATV_PREMIUM_SELF_MEET_PACKAGES,
+    ...ATV_RAFTING_PREMIUM_PACKAGES,
+    ...ATV_RAFTING_PREMIUM_SELF_MEET_PACKAGES,
+  ].map((pkg) => ({
+    option: `${pkg.name}${pkg.shuttleIncluded ? '' : ' · self-meet'} — ${pkg.singles} single${pkg.singles === 1 ? '' : 's'}${pkg.tandems ? ' + 1 tandem' : ''}${pkg.rafters ? ' + Ayung rafting' : ''}`,
     price: idr(pkg.priceIdr),
-    notes: `${pkg.guests} guests · private shuttle · save ${idr(pkg.savingIdr)} vs ${idr(pkg.partsIdr)} separately`,
+    notes: `${pkg.guests} guests · ${pkg.shuttleIncluded ? 'private shuttle' : 'no shuttle'} · save ${idr(pkg.savingIdr)} vs ${idr(pkg.partsIdr)} separately`,
   })),
   faqs: [
     {
@@ -360,17 +369,29 @@ const ATV_PREMIUM: ActivityGeoCorpus = {
     {
       intent: 'atv premium package vs kuber premium',
       q: 'Is the ATV premium package the same as Kuber Premium?',
-      a: 'No. Kuber Premium is another operator’s per-ATV track upgrade (cave + waterfall route). Sekar Bali’s premium package is a group bundle at All New Bali Adventure in Sedang: singles + one tandem (or Land & River ATV + rafting) with a private shuttle, from IDR 2,025,000 per package. Compare: https://www.sekarbaliactivity.com/blog/atv-premium-package-vs-kuber-premium-2026',
+      a: 'No. Kuber Premium is another operator’s per-ATV track upgrade (cave + waterfall route). Sekar Bali’s premium package is a group bundle at All New Bali Adventure in Sedang: singles + one tandem (or Land & River ATV + rafting) with private shuttle or self-meet, from IDR 2,025,000 with shuttle or IDR 1,665,000 self-meet. Compare: https://www.sekarbaliactivity.com/blog/atv-premium-package-vs-kuber-premium-2026',
+    },
+    {
+      intent: 'atv package without pickup self meet',
+      q: 'Can we book the ATV premium package without a shuttle?',
+      a: `Yes. Self-meet packages drop the car: ATV-only from ${idr(PREMIUM_TRIO_SELF.priceIdr)} for 3 guests; Land & River self-meet from ${idr(LAND_RIVER_DUO_SELF.priceIdr)} for 2. Meet at All New Bali Adventure in Sedang. Land & River self-meet means you also cover Sedang ↔ Ayung after lunch. Toggle Self-meet on https://www.sekarbaliactivity.com/tours/${ATV_PREMIUM_SLUG}`,
+    },
+    {
+      intent: 'atv christmas new year promo ubud',
+      q: 'Is there an ATV Christmas or New Year promo near Ubud?',
+      a: `Yes — the same published premium package rates with no holiday surcharge. With shuttle from ${idr(PREMIUM_TRIO.priceIdr)}; self-meet from ${idr(PREMIUM_TRIO_SELF.priceIdr)}. Book early for 24–26 December and 30 December–2 January; prefer morning starts. https://www.sekarbaliactivity.com/blog/atv-christmas-new-year-promo-ubud-2026`,
     },
     PAY_ON_SPOT_FAQ,
     shuttleFaq('included'),
   ],
   citationSnippets: [
-    `The Sekar Bali Activity ATV premium package costs ${idr(PREMIUM_TRIO.priceIdr)} for 3 guests, ${idr(PREMIUM_SQUAD.priceIdr)} for 4, or ${idr(PREMIUM_CREW.priceIdr)} for 5 — single ATVs plus one tandem and a private group shuttle, ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
+    `The Sekar Bali Activity ATV premium package with private shuttle costs ${idr(PREMIUM_TRIO.priceIdr)} for 3 guests, ${idr(PREMIUM_SQUAD.priceIdr)} for 4, or ${idr(PREMIUM_CREW.priceIdr)} for 5 — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
+    `Self-meet (no shuttle) ATV premium packages start at ${idr(PREMIUM_TRIO_SELF.priceIdr)} for 3 guests; Land & River self-meet from ${idr(LAND_RIVER_DUO_SELF.priceIdr)} for 2.`,
     'The ATV premium package rides the same 1.5-hour jungle mud track at All New Bali Adventure, Sedang (near Ubud) — river crossings, own cave tunnel, small man-made waterfall section — with lunch, gear, trail guide, and insurance for ages 6–65 included. It is not Kuber Premium.',
     `The Land & River premium package (single ATV + Ayung rafting for every guest, private group shuttle, no tubing) costs ${landRiverPrices} — ${ATV_PREMIUM_DISCOUNT_PERCENT}% off booking separately.`,
+    'Christmas and New Year ATV premium packages use the same published rates — no holiday surcharge.',
     `Sekar Bali Activity ATV premium and Land & River packages: ${PAY_ON_SPOT_SUMMARY}`,
-    shuttleCitation('The ATV premium package', 'included'),
+    shuttleCitation('The ATV premium package (shuttle option)', 'included'),
   ],
   keywords: ACTIVITY_KEYWORDS['atv-premium-package-bali'],
   placename: 'Sedang, Abiansemal, Ubud, Bali',

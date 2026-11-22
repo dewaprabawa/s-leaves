@@ -583,14 +583,16 @@ This is our standing 2026 package pricing, not a limited-time flash sale: the 10
 > - Price on WhatsApp matches the page: from **IDR 2,025,000** (ATV-only) or **2,475,000** (Land & River)
 > - Private shuttle is **already in** the package — say your hotel area so the pickup time is real
 
-## Step 1 — Choose ATV-only or Land & River
+## Step 1 — Choose shuttle or self-meet, then ATV-only or Land & River
 
 | Choose | Guests | What you get | From price |
 | --- | --- | --- | --- |
-| **ATV-only** | 3, 4 or 5 | Singles + **one tandem** + private shuttle | **2,025,000** |
-| **Land & River** | 2, 3 or 4 | **Single ATV + Ayung rafting** each + private shuttle all day | **2,475,000** |
+| **ATV-only + shuttle** | 3, 4 or 5 | Singles + **one tandem** + private shuttle | **2,025,000** |
+| **ATV-only self-meet** | 3, 4 or 5 | Same bikes, **no shuttle** | **1,665,000** |
+| **Land & River + shuttle** | 2, 3 or 4 | **Single ATV + Ayung rafting** each + car all day | **2,475,000** |
+| **Land & River self-meet** | 2, 3 or 4 | Same activities, **you** cover Sedang ↔ Ayung | **2,115,000** |
 
-If every adult wants a single ATV and you do **not** want rafting, skip the package and book on the [standard ATV page](/tours/bali-atv-adventure). The ATV-only premium line-up always includes one tandem.
+Toggle **With private shuttle** or **Self-meet · no shuttle** on the money page before you tap Book. If every adult wants a single ATV and you do **not** want rafting, skip the package and book on the [standard ATV page](/tours/bali-atv-adventure). Christmas & NYE: [holiday promo](/blog/atv-christmas-new-year-promo-ubud-2026).
 
 ## Step 2 — Send these five lines on WhatsApp
 
@@ -689,6 +691,80 @@ Those are valid reasons — just do not expect our Sedang package to be that tic
 | Land & River Duo / Trio / Squad | 2 / 3 / 4 | **2,475,000 / 3,465,000 / 4,500,000** |
 
 **Ready?** [Book Sekar’s ATV premium package](/tours/atv-premium-package-bali) if you want the Sedang group day with a private shuttle — or keep searching Kuber if that cave is the goal.
+`,
+  },
+  {
+    slug: 'atv-christmas-new-year-promo-ubud-2026',
+    title: 'ATV Christmas & New Year Promo Ubud 2026: Same Rates, Morning Starts, Shuttle or Self-Meet',
+    seoTitle: 'ATV Christmas & New Year Promo Ubud 2026 | Same Rates',
+    excerpt:
+      'Christmas and New Year ATV near Ubud at the same published premium package rates — no holiday surcharge. With shuttle from IDR 2,025,000 or self-meet from 1,665,000. Book early for 24 Dec–2 Jan.',
+    publishedAt: '2026-11-22',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-arena-quad-fleet.jpg',
+    content: `
+**Is there an ATV Christmas or New Year promo near Ubud?** Yes — and it is honest: **the same published [ATV premium package](/tours/atv-premium-package-bali) rates** on **24–26 December** and **30 December–2 January**, with **no holiday surcharge**. Choose **with private shuttle** (from **IDR 2,025,000** for 3 guests) or **self-meet / no shuttle** (from **IDR 1,665,000**). Land & River ATV + Ayung rafting runs the same week. WhatsApp — **no payment to inquire**.
+
+> **Key Takeaways**
+> - **No holiday markup** — Christmas and NYE use the 2026 package card on the money page
+> - **Book 7+ days ahead** for 24–26 Dec and 30 Dec–2 Jan (peak school-holiday weeks)
+> - **Morning starts** — December afternoons often bring wet-season showers
+> - **Shuttle or self-meet** — villa drivers pick self-meet; south-coast hotels usually want the car
+> - **31 Dec tip:** morning ATV (or Land & River) leaves the evening free for NYE plans
+
+## The Christmas & New Year price card (2026 IDR)
+
+Prices are **per package**, not per person — **10% off** booking the same parts separately.
+
+### With private shuttle
+
+| Package | Guests | Price |
+| --- | --- | --- |
+| Premium Trio / Squad / Crew | 3 / 4 / 5 | **2,025,000 / 2,655,000 / 3,240,000** |
+| Land & River Duo / Trio / Squad | 2 / 3 / 4 | **2,475,000 / 3,465,000 / 4,500,000** |
+
+### Self-meet (no shuttle)
+
+| Package | Guests | Price |
+| --- | --- | --- |
+| Premium Trio / Squad / Crew | 3 / 4 / 5 | **1,665,000 / 2,295,000 / 2,880,000** |
+| Land & River Duo / Trio / Squad | 2 / 3 / 4 | **2,115,000 / 3,105,000 / 4,140,000** |
+
+Toggle shuttle vs self-meet on the [money page](/tours/atv-premium-package-bali), then tap **Book**.
+
+## Why a dedicated holiday page?
+
+Most “ATV promo Bali” results are year-round stickers or Kuber Regular vs Premium upgrades. Holiday searchers need three answers competitors often skip:
+
+1. **Do prices jump on 25 Dec / 31 Dec?** Ours do **not**.
+2. **Will the arena run?** We confirm the slot on WhatsApp before you travel — wet-season mornings are the safe bet.
+3. **Shuttle or self-meet?** Peak weeks mean traffic; self-meet helps if your villa already has a driver.
+
+Year-end context across activities: [Bali October–December 2026 deals](/blog/bali-october-november-december-2026-deals). Batur jeep for NYE/sunrise: [Mount Batur jeep New Year](/blog/mount-batur-jeep-new-year-sunrise-2026).
+
+## Sample holiday days
+
+| Day | Plan | Why |
+| --- | --- | --- |
+| **24–26 Dec** | ATV-only morning (shuttle or self-meet) | Short door-to-door (~4–5 hrs); keeps Christmas dinner free |
+| **30 Dec** | Land & River (ATV then Ayung) | Full land-and-water day before NYE |
+| **31 Dec** | ATV-only start by **10:00** | Back for evening plans — avoid stacking a 02:00 jeep after the party |
+| **1–2 Jan** | ATV-only or Land & River | Quieter than NYE night; morning still preferred |
+
+## How to book the holiday promo
+
+1. Open [ATV premium package Bali](/tours/atv-premium-package-bali).
+2. Toggle **With private shuttle** or **Self-meet · no shuttle**.
+3. Tap **Book** on Trio / Squad / Crew or Land & River Duo / Trio / Squad.
+4. WhatsApp **date + ages + hotel pin** (or self-meet). We confirm the published total.
+
+Step-by-step: [How to book ATV premium](/blog/how-to-book-atv-premium-package-bali-2026). Not the Kuber cave upgrade: [premium vs Kuber](/blog/atv-premium-package-vs-kuber-premium-2026).
+
+## Honest terms
+
+This is **not** a fake countdown code. The “promo” is the standing **10% package discount** plus a **no-surcharge promise** for Christmas and New Year weeks. South-coast hotels on shuttle packages are confirmed on WhatsApp before you lock the pickup time. Free cancel up to **24 hours**; weather cancellations are refunded or rescheduled — [cancellation policy](/cancellation-policy).
+
+**Ready?** [Book the Christmas / New Year ATV package](/tours/atv-premium-package-bali) — same rates, morning starts, shuttle or self-meet.
 `,
   },
 ]

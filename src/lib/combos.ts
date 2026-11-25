@@ -40,40 +40,40 @@ export const MIX_ADDON_OPTIONS: Partial<
 > = {
   'single-atv': [
     {
-      id: 'canyon-tubing',
-      label: 'Canyon Tubing',
-      blurb: 'Float the Wos River after the ATV track',
+      id: 'rafting',
+      label: 'Ayung rafting',
+      blurb: 'Class II–III after the ATV · same guest count · 10% combo off',
     },
     {
-      id: 'rafting',
-      label: 'Whitewater Rafting',
-      blurb: 'Class II–III rapids after your ATV ride',
+      id: 'canyon-tubing',
+      label: 'Wos canyon tubing',
+      blurb: 'Gentler river after the ATV · same guest count · 10% combo off',
     },
   ],
   'tandem-atv': [
     {
-      id: 'canyon-tubing',
-      label: 'Canyon Tubing',
-      blurb: 'Cool down on the river after tandem ATV',
+      id: 'rafting',
+      label: 'Ayung rafting',
+      blurb: 'Class II–III after tandem ATV · 10% combo off',
     },
     {
-      id: 'rafting',
-      label: 'Whitewater Rafting',
-      blurb: 'Land + water combo for couples & friends',
+      id: 'canyon-tubing',
+      label: 'Wos canyon tubing',
+      blurb: 'Cool-down float after tandem ATV · 10% combo off',
     },
   ],
   'canyon-tubing': [
     {
       id: 'single-atv',
-      label: 'Single ATV',
-      blurb: 'Jungle ATV before or after tubing',
+      label: 'Jungle ATV',
+      blurb: 'Sedang mud track before or after tubing · 10% combo off',
     },
   ],
   rafting: [
     {
       id: 'single-atv',
-      label: 'Single ATV',
-      blurb: 'ATV trails paired with rafting',
+      label: 'Jungle ATV',
+      blurb: 'Sedang mud track with your rafting day · 10% combo off',
     },
   ],
 }

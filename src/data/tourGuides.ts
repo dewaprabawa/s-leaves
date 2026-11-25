@@ -193,9 +193,14 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Singles + 1 tandem + a private shuttle for your group — 10% off booking separately.',
     },
     {
-      title: 'Best ATV in Bali: how to choose',
+      title: 'Best ATV package: how to choose',
       href: '/blog/best-atv-bali-ubud-2026',
-      blurb: 'Tunnel vs mud, 6-point checklist travelers repeat.',
+      blurb: 'Match group size, shuttle, and terrain — not a slogan.',
+    },
+    {
+      title: 'Fun ATV Bali vs All New',
+      href: '/blog/fun-atv-bali-vs-all-new-bali-adventure-2026',
+      blurb: 'Sukawati brand vs Sedang mud arena — published prices side by side.',
     },
     {
       title: 'ATV cave tunnel in Bali',

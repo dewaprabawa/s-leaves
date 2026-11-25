@@ -237,21 +237,35 @@ Antar pantai selatan (jika dihitung terpisah): **IDR 650.000**. Hitung cepat: [k
   {
     slug: 'all-new-bali-adventure-price-2026',
     title: 'All New Bali Adventure Price 2026: Official ATV Ticket from Sekar',
-    seoTitle: 'All New Bali Adventure Price | From 750K',
+    seoTitle: 'All New Bali Adventure Price | ATV Adventures from 750K',
     excerpt:
-      'All New Bali Adventure ATV price with Sekar: single IDR 750,000 / 725,000 / 700,000 · tandem 1,100,000. 350cc, lunch, Sedang track. Why other sites list 450K or USD 47.',
+      'ATV adventures Bali price at All New Bali Adventure with Sekar: single IDR 750,000 / 725,000 / 700,000 · tandem 1,100,000. 350cc, lunch, Sedang track. Why other sites list 450K or USD 47.',
     publishedAt: '2026-11-14',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-jungle-mud-track-riders.jpg',
     content: `
-**What is the All New Bali Adventure price in 2026?** When you book the Sedang arena through **Sekar Bali Activity**, the published ticket is **IDR 750,000** for one single rider · **725,000** each for two · **700,000** each for three or more · **IDR 1,100,000** for a tandem (two on one bike). That is a **1.5-hour** ride on a **350cc** sport ATV with lunch, helmet, boots, briefing, and insurance (ages 6–65). Pickup **IDR 400,000** or free self-meet. WhatsApp — **no payment to inquire**. Money page: [Bali ATV Adventure](/tours/bali-atv-adventure).
+**What is the All New Bali Adventure price in 2026?** When you book the Sedang arena through **Sekar Bali Activity**, the published **ATV adventures Bali price** is **IDR 750,000** for one single rider · **725,000** each for two · **700,000** each for three or more · **IDR 1,100,000** for a tandem (two on one bike). That is a **1.5-hour** ride on a **350cc** sport ATV with lunch, helmet, boots, briefing, and insurance (ages 6–65). Pickup **IDR 400,000** from Ubud / **650,000** from the south — or free self-meet. WhatsApp — **no payment to inquire**. Money page: [Bali ATV Adventure](/tours/bali-atv-adventure).
 
 > **Key Takeaways**
-> - **All New Bali Adventure price (Sekar)** = 750K / 725K / 700K · tandem **1.1M**
+> - **ATV adventures Bali price (All New / Sekar)** = 750K / 725K / 700K · tandem **1.1M**
 > - Arena: **Jl. Raya Krasan, Sedang** — not the Banjar Kenderan office pin
 > - Track: jungle mud, river crossings, own cave tunnel, **small man-made waterfall section**
 > - Some third-party pages list **450K** or **USD 47** for “All New” — that is **not** this Sekar ticket
 > - Bahasa: [harga ATV Ubud 2026](/blog/harga-atv-ubud-2026) · book hub: [Book ATV Ubud tickets](/blog/book-atv-ubud-tickets-2026)
+
+## ATV adventures Bali price at All New (2026)
+
+| Adventure option | Guests | IDR | Included |
+| --- | --- | --- | --- |
+| Single ATV adventure | 1 | **750,000** | 1.5h track, lunch, gear, insurance, briefing |
+| Single ATV adventure | 2 | **725,000** each | Same |
+| Single ATV adventure | 3+ | **700,000** each | Same |
+| Tandem ATV adventure | 2 on 1 bike | **1,100,000** | Same |
+| Hotel pickup | Optional | **400,000** Ubud / **650,000** south | Or free self-meet at Sedang |
+| ATV + Ayung rafting | Same day | from **1,250,000** | **10% mix** · rafting min 2 |
+| [Premium package](/tours/atv-premium-package-bali) (3–5) | Group | from **2,025,000** | Singles + 1 tandem + private shuttle · 10% off |
+
+Full Ubud price guide: [how much an ATV costs in Bali](/blog/how-much-does-atv-cost-bali-ubud-2026). Instant math: [ATV price calculator](/planners/atv-price-calculator). Comparing Fun ATV Bali’s Sukawati list prices? [Fun ATV vs All New](/blog/fun-atv-bali-vs-all-new-bali-adventure-2026).
 
 ## Official price table (Sekar ticket)
 
@@ -261,7 +275,7 @@ Antar pantai selatan (jika dihitung terpisah): **IDR 650.000**. Hitung cepat: [k
 | Single ATV | 2 | **725,000** each | Same |
 | Single ATV | 3+ | **700,000** each | Same |
 | Tandem ATV | 2 on 1 bike | **1,100,000** | Same |
-| Hotel pickup | Optional | **400,000** once | Or free self-meet at Sedang |
+| Hotel pickup | Optional | **400,000** Ubud / **650,000** south | Or free self-meet at Sedang |
 | ATV + Ayung rafting | Same day | from **1,250,000** | **10% mix** · rafting min 2 |
 
 Calculator: [ATV price calculator](/planners/atv-price-calculator). Worth-it story: [why this ATV price](/tours/bali-atv-adventure).

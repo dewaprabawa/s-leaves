@@ -665,7 +665,7 @@ Full math: [ATV premium package Bali 2026](/blog/atv-premium-package-bali-2026) 
 | Waterfall | **Small man-made** section on our course | Their premium waterfall feature |
 | Rafting add-on | **Land & River** packages (shuttle all day) | Separate combo sellers |
 
-We do **not** sell Kuber, Gorilla Cave, or Alasan tickets. Honest Sedang track notes: [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026).
+We do **not** sell Kuber, Gorilla Cave, or Alasan tickets. Honest Sedang track notes: [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026). Saw **Fun ATV Bali** instead? That is a Sukawati brand — [Fun ATV vs All New](/blog/fun-atv-bali-vs-all-new-bali-adventure-2026). Package chooser: [best ATV package for your group](/blog/best-atv-bali-ubud-2026).
 
 ## When to book Sekar’s premium package
 

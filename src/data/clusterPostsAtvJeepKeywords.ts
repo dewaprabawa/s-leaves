@@ -4,9 +4,9 @@ export const ATV_JEEP_KEYWORD_CLUSTER_POSTS = [
   {
     slug: 'best-atv-bali-ubud-2026',
     title: 'Best ATV in Bali & Ubud (2026): How to Choose — What Reddit and Reviews Keep Saying',
-    seoTitle: 'Best ATV in Bali Ubud 2026 | Reddit-Tested Checklist',
+    seoTitle: 'Best ATV Package Bali Ubud 2026 | How to Choose',
     excerpt:
-      'Which is the best ATV in Bali? It depends on tunnel vs mud, drive time, and what is included. The 6-point checklist travelers repeat on Reddit and review sites, plus our Sedang ATV from IDR 750,000 with lunch and insurance.',
+      'Best ATV package in Bali? Match terrain, group size, and shuttle — not a slogan. Sedang ATV from IDR 750,000; group premium packages from 2,025,000. Checklist from Reddit and reviews.',
     publishedAt: '2026-10-11',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-mud-jungle-pov.jpg',
@@ -15,10 +15,24 @@ export const ATV_JEEP_KEYWORD_CLUSTER_POSTS = [
 
 > **Key Takeaways**
 > - **"Best" depends on terrain:** tunnels and waterfalls (Payangan, north of Ubud) vs jungle mud and rivers (Sedang)
+> - **Best ATV package** = match **group size + shuttle + terrain** — not a slogan
 > - **Check 6 things:** private track, group size, what is included, insurance, pickup cost, tandem rules
-> - **You will get muddy** — every honest review says it; bring clothes you can throw away
-> - **Our pick for mud + lunch + short drive from the south:** Sedang ATV, **750K**, pickup **400K per booking**
+> - **Our pick for mud + lunch + short drive from the south:** Sedang ATV, **750K**, pickup **400K** Ubud / **650K** south
 > - **We do not claim "best in Bali"** — compare on the checklist, then book what fits
+
+## Best ATV package for your group (2026)
+
+Searching **best ATV package** usually means: which booking fits my guests without hidden pickup fees? Use this map — then open the money page that matches.
+
+| Your group | Book this | From (IDR) | Why |
+| --- | --- | --- | --- |
+| 1–2 riders, ATV only | [Standard ATV](/tours/bali-atv-adventure) | **750,000** single · **1,100,000** tandem | Simple ticket · lunch included |
+| 3–5, one pair shares a tandem + need a car | [Premium Trio / Squad / Crew](/tours/atv-premium-package-bali) | **2,025,000** · **2,655,000** · **3,240,000** | Private shuttle · 10% off parts |
+| 3–5, already have a driver | [Premium self-meet](/tours/atv-premium-package-bali) | from **1,665,000** | Same bikes · no shuttle |
+| 2–7, every guest wants ATV + rafting | [Land & River](/tours/atv-premium-package-bali) | from **2,475,000** | Single ATV each + Ayung · private car |
+| Same day ATV + rafting (ticket mix) | [ATV + rafting combo](/tours/atv-rafting-combo) | from **1,250,000** | 10% mix · one pickup |
+
+**“Premium” on Google often means Kuber’s cave upgrade** — a different arena and a per-ATV price. Our premium package is a **group bundle** at Sedang. Side-by-side: [ATV premium vs Kuber Premium](/blog/atv-premium-package-vs-kuber-premium-2026). Price ladder: [ATV adventures Bali price](/blog/how-much-does-atv-cost-bali-ubud-2026).
 
 ## Best ATV in Bali by what you want
 
@@ -31,7 +45,7 @@ export const ATV_JEEP_KEYWORD_CLUSTER_POSTS = [
 | Kids | Any track with **tandem** quads | A parent drives; child rides behind |
 | Beach ride | **Tabanan** west coast | Black-sand routes, different from Ubud jungle |
 
-Full map of where the tracks are: [Bali ATV ride locations](/blog/bali-atv-ride-locations-2026). Cave vs mud in detail: [mud track vs cave/tunnel](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) · [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026).
+Full map of where the tracks are: [Bali ATV ride locations](/blog/bali-atv-ride-locations-2026). Cave vs mud in detail: [mud track vs cave/tunnel](/blog/ubud-atv-track-types-mud-jungle-vs-cave-tunnel) · [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026). Saw **Fun ATV Bali** in search? That is a Sukawati brand — compare: [Fun ATV vs All New](/blog/fun-atv-bali-vs-all-new-bali-adventure-2026).
 
 ## The 6-point checklist (what Reddit and reviews keep repeating)
 
@@ -62,7 +76,7 @@ The ride is **1.5 hours** (single or tandem), plus briefing and lunch. No licenc
 
 Skip it with **back, neck, or pregnancy concerns** — the track is bumpy. If you hate mud or want speed on open roads, look at the [Kintamani dirt bike](/tours/dirt-bike-kintamani-black-lava) or a [scooter tour](/blog/bali-scooter-tour-vs-atv-2026) instead.
 
-**Ready?** Book the [Bali ATV](/tours/bali-atv-adventure) or the [ATV + rafting combo](/tours/atv-rafting-combo) — send date, riders, and hotel on WhatsApp.
+**Ready?** Book the [Bali ATV](/tours/bali-atv-adventure), the [ATV premium package](/tours/atv-premium-package-bali), or the [ATV + rafting combo](/tours/atv-rafting-combo) — send date, riders, and hotel on WhatsApp.
 `,
   },
   {
@@ -233,6 +247,76 @@ Prefer an afternoon? The **sunset** jeep (pickup 14:30–15:30) can add the hot 
 | Private Kintamani Day | **1,300,000** pp promo (min 2) |
 
 **Ready?** Book the [private Mount Batur jeep](/tours/batur-sunrise-jeep-tour) — send date, guests, and hotel on WhatsApp.
+`,
+  },
+  {
+    slug: 'fun-atv-bali-vs-all-new-bali-adventure-2026',
+    title: 'Fun ATV Bali vs All New Bali Adventure (2026): Two Different Arenas Near Ubud',
+    seoTitle: 'Fun ATV Bali vs All New Bali Adventure | Price & Track',
+    excerpt:
+      'Fun ATV Bali is a Sukawati brand. All New Bali Adventure in Sedang is where Sekar books jungle mud ATV from IDR 750,000. Side-by-side location, published prices, and when to book which — we do not sell Fun ATV tickets.',
+    publishedAt: '2026-11-25',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-jungle-mud-track-riders.jpg',
+    content: `
+**Is Fun ATV Bali the same as All New Bali Adventure?** **No.** **Fun ATV Bali** is a **Sukawati / Singapadu** operator with its own brand site. **All New Bali Adventure** is the **Sedang, Abiansemal** arena where **Sekar Bali Activity** books jungle mud ATV from **IDR 750,000** (tandem **IDR 1,100,000**) with lunch, gear, and insurance. We do **not** sell Fun ATV tickets. WhatsApp — **no payment to inquire**. Money page: [Bali ATV Adventure](/tours/bali-atv-adventure).
+
+> **Key Takeaways**
+> - **Fun ATV Bali** ≈ Sukawati brand · their site lists single from about **IDR 1,300,000** · tandem about **IDR 1,600,000** (confirm on their channel)
+> - **All New / Sekar** ≈ Sedang mud track · single **750K / 725K / 700K** · tandem **1.1M** · published on this site
+> - Searching **fun atv bali** usually means the brand — not a generic “fun ATV”
+> - Want Sedang mud + published IDR? Book **us**. Want Fun ATV’s six-track product? Book **them**
+> - We do **not** claim “best in Bali”
+
+## Side-by-side (what travelers confuse)
+
+| | **All New Bali Adventure (Sekar)** | **Fun ATV Bali (their brand)** |
+| --- | --- | --- |
+| Area | **Sedang, Abiansemal** — near Ubud / closer to south coast | **Sukawati / Singapadu Kaler**, Gianyar |
+| What “fun ATV” means in Google | Generic muddy ride language | Usually **their brand name** |
+| Published single (as of late 2026 research) | **IDR 750,000** (1) · **725,000** (2) · **700,000** (3+) | Their FAQ lists about **IDR 1,300,000** per rider |
+| Published tandem | **IDR 1,100,000** per bike | Their FAQ lists about **IDR 1,600,000** |
+| Track pitch | Jungle mud, river crossings, own cave tunnel, small man-made waterfall | Six tracks (rice field, jungle, cave tunnel, maze, jumps, mud) |
+| Pickup | **IDR 400,000** Ubud / **650,000** south · or free self-meet | Their site: optional shuttle from Ubud / Kuta / Canggu |
+| Who books it | [sekarbaliactivity.com](/tours/bali-atv-adventure) | funatvbali.com / their WhatsApp |
+
+Fun ATV list prices and WhatsApp deals can differ — always confirm with **them**. Our IDR above is the **Sekar** invoice ladder only.
+
+## ATV adventures Bali price — Sedang ticket
+
+| Option | Guests | IDR |
+| --- | --- | --- |
+| Single ATV | 1 / 2 / 3+ | **750,000** · **725,000** · **700,000** |
+| Tandem ATV | 2 on 1 bike | **1,100,000** |
+| Hotel pickup | Optional | **400,000** Ubud / **650,000** south |
+| [Premium package](/tours/atv-premium-package-bali) | 3–5 | from **2,025,000** with private shuttle |
+
+Full table: [ATV adventures Bali price](/blog/how-much-does-atv-cost-bali-ubud-2026) · [All New Bali Adventure price](/blog/all-new-bali-adventure-price-2026) · [calculator](/planners/atv-price-calculator).
+
+## When to book All New / Sekar
+
+- You want a **published** Sedang ticket with lunch and insurance in the IDR
+- You stay in **Ubud or the south coast** and prefer the shorter drive to **Sedang**
+- You want a **group premium package** (singles + one tandem + private car) or **ATV + Ayung rafting**
+- You are comparing **mud / river** terrain, not shopping a specific Sukawati brand
+
+## When Fun ATV Bali is the better search result
+
+- A friend sent a **Fun ATV Bali** booking link or Google Maps pin in **Sukawati**
+- You specifically want **their** six-track product and brand experience
+- You are happy to book and pay on **their** site or WhatsApp
+
+Those are valid reasons — just do not expect our Sedang WhatsApp to be their ticket.
+
+## Other “premium” and cave searches
+
+Google **best ATV package** often surfaces **Kuber Premium** (Payangan cave + waterfall upgrade). That is a third product line — not Fun ATV and not our Sedang group package. Compare: [ATV premium vs Kuber Premium](/blog/atv-premium-package-vs-kuber-premium-2026) · [how to choose](/blog/best-atv-bali-ubud-2026).
+
+## Where to meet for Sekar’s ride
+
+**All New Bali Adventure**, Jl. Raya Krasan, Sedang, Kec. Abiansemal, Kabupaten Badung, Bali 80352 — **not** the Banjar Kenderan office pin. Guide: [All New Bali Adventure location](/blog/bali-atv-all-new-bali-adventure-location-guide).
+
+**Ready?** Book the [Bali ATV at All New](/tours/bali-atv-adventure) if Sedang mud + published IDR is the fit — or keep Fun ATV’s channel if that brand is the goal.
 `,
   },
 ]

@@ -594,9 +594,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     pickup: "Private car (2–7) · HiAce (8–15) · or self-meet",
     duration: "1.5 Hours (ride) + shuttle · 5–7 hrs with rafting",
     basePrice: 2025000,
-    seoTitle: "ATV Premium Package Bali | Car, HiAce or Self-Meet",
+    seoTitle: "Best ATV Package Bali | Premium from 2,025,000",
     seoDescription:
-      "ATV premium Bali: shuttle from 2,025,000 or self-meet from 1,665,000. Land & River 2–7 + HiAce groups 8–15. Christmas & NYE same rates. WhatsApp — no deposit.",
+      "Best ATV package for your group: Premium Trio/Squad/Crew from 2,025,000 or Land & River from 2,475,000. Not Kuber Premium. WhatsApp — no deposit.",
     heroImage: {
       url: "/images/adventures/atv-arena-quad-fleet.jpg",
       alt: "Sport ATV quad bikes lined up for a private group at All New Bali Adventure in Sedang",
@@ -622,16 +622,17 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     heroThumbnails: ATV_TRACK_PHOTOS,
     shortDescription:
       "ATV-only (3–5) or Land & River ATV + rafting for 2–15. Car for 2–7 · private HiAce for 8–15. Shuttle from IDR 2,025,000 · self-meet from 1,665,000. 10% off. Christmas & NYE same rates.",
-    fullDescription: `**What is the ATV premium package Bali?** One WhatsApp booking for your group: the right mix of **single and tandem ATVs** (or Land & River ATV + rafting for **2–15 guests**), lunch, gear and insurance — **10% off** booking the same parts separately. Choose **with private shuttle** (car for 2–7, **HiAce minibus for 8–15**) or **self-meet (no shuttle)**. **Not** Kuber’s “Premium” cave-upgrade ticket. We ride at **All New Bali Adventure** in Sedang near Ubud.
+    fullDescription: `**What is the best ATV package Bali for a small group?** Match **guest count + shuttle + rafting**, then book the published IDR — not a slogan. Sekar’s **ATV premium package** is one WhatsApp booking: the right mix of **single and tandem ATVs** (or Land & River ATV + rafting for **2–15 guests**), lunch, gear and insurance — **10% off** booking the same parts separately. Choose **with private shuttle** (car for 2–7, **HiAce minibus for 8–15**) or **self-meet (no shuttle)**. **Not** Kuber’s “Premium” cave-upgrade ticket. We ride at **All New Bali Adventure** in Sedang near Ubud.
 
 > **Key Takeaways**
+> - **Best ATV package** here = the row that matches your group — we do **not** claim “best in Bali”
 > - **With car — ATV-only (3 / 4 / 5):** IDR **2,025,000** · **2,655,000** · **3,240,000**
 > - **Self-meet — ATV-only (3 / 4 / 5):** IDR **1,665,000** · **2,295,000** · **2,880,000**
 > - **Land & River + car (2–7):** from IDR **2,475,000** (2) to **7,605,000** (7)
 > - **Land & River + HiAce (8 / 10 / 12 / 15):** IDR **9,540,000** · **11,610,000** · **13,680,000** · **16,785,000**
 > - **Christmas & New Year:** same published rates — no holiday surcharge · [holiday promo](/blog/atv-christmas-new-year-promo-ubud-2026)
 
-### Pick your package in 30 seconds
+### Best ATV package for your group (pick in 30 seconds)
 
 | Your group | Book this | Why |
 |---|---|---|
@@ -641,8 +642,10 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
 | **8–15 people**, ATV + rafting + bus | **Land & River + HiAce** | Same activities · private Toyota HiAce |
 | **2–15**, ATV + rafting, own transport | **Land & River self-meet** | Same activities; you cover transfers |
 | **Everyone wants a single**, ATV only | [Standard ATV page](/tours/bali-atv-adventure) | Premium ATV-only always includes one tandem |
+| Comparing **Kuber Premium** cave tickets | [Premium vs Kuber](/blog/atv-premium-package-vs-kuber-premium-2026) | Different product — Payangan arena |
+| Saw **Fun ATV Bali** in search | [Fun ATV vs All New](/blog/fun-atv-bali-vs-all-new-bali-adventure-2026) | Different Sukawati brand |
 
-Use the **With private shuttle / Self-meet** toggle on the cards above, then tap **Book**.
+Use the **With private shuttle / Self-meet** toggle on the cards above, then tap **Book**. Checklist guide: [best ATV package / how to choose](/blog/best-atv-bali-ubud-2026).
 
 ### How to book (about 2 minutes)
 
@@ -793,6 +796,12 @@ Different bike mix? Book on the [ATV ride page](/tours/bali-atv-adventure).`,
         question: "How much is the ATV premium package?",
         answer:
           "With private car — ATV-only: Trio IDR 2,025,000 · Squad 2,655,000 · Crew 3,240,000. Land & River car (2–7): from 2,475,000 (2) to 7,605,000 (7). Land & River HiAce (8 / 10 / 12 / 15): 9,540,000 · 11,610,000 · 13,680,000 · 16,785,000. Self-meet drops the vehicle. Prices are per package, 10% off booking the same parts separately.",
+      },
+      {
+        id: "faq-atv-premium-best",
+        question: "What is the best ATV package for my group?",
+        answer:
+          "There is no single best ATV package in Bali — match guest count, shuttle need, and whether you want rafting. 3–5 with one tandem + car: Premium Trio / Squad / Crew from IDR 2,025,000. 2–7 wanting ATV + Ayung rafting: Land & River from 2,475,000. 8–15: Land & River HiAce from 9,540,000. Everyone wants a single ATV only: use the standard ATV page. Compare: https://www.sekarbaliactivity.com/blog/best-atv-bali-ubud-2026 · vs Kuber: https://www.sekarbaliactivity.com/blog/atv-premium-package-vs-kuber-premium-2026",
       },
       {
         id: "faq-atv-premium-choose",

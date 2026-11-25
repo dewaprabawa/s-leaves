@@ -8,6 +8,15 @@ import {
   MELUKAT_PRICE_IDR,
 } from "@/data/cultureSales"
 import {
+  GROUP_PURIFICATION_DISCOUNT_BY_GUESTS,
+  GROUP_PURIFICATION_HERO,
+  GROUP_PURIFICATION_INCLUDED,
+  GROUP_PURIFICATION_PACKAGES,
+  GROUP_PURIFICATION_SLUG,
+  groupPurificationFromPerGuestIdr,
+  groupPurificationFromPriceIdr,
+} from "@/data/groupPurification"
+import {
   SWING_HEAVEN_DRESS_HIRE_IDR,
   SWING_HEAVEN_KOI_POND_IDR,
   SWING_HEAVEN_LUNCH_DIFF_IDR,
@@ -431,14 +440,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     ],
     activityOptions: [
       {
-        name: "Single ATV Ride",
+        name: "Single and/or Tandem ATV",
         priceDiff: 0,
-        description: "1 pax · solo jungle thrill",
-      },
-      {
-        name: "Tandem ATV Ride",
-        priceDiff: 350000,
-        description: "2 pax · share the adventure",
+        description: "Pick single bikes, tandem bikes, or both in one booking · from IDR 750,000 / single · 1,100,000 / tandem",
       },
       {
         name: "ATV + Ayung Rafting Combo",
@@ -590,9 +594,9 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     pickup: "Private car (2–7) · HiAce (8–15) · or self-meet",
     duration: "1.5 Hours (ride) + shuttle · 5–7 hrs with rafting",
     basePrice: 2025000,
-    seoTitle: "ATV Premium Package Bali | Car, HiAce or Self-Meet",
+    seoTitle: "Best ATV Package Bali | Premium from 2,025,000",
     seoDescription:
-      "ATV premium Bali: shuttle from 2,025,000 or self-meet from 1,665,000. Land & River 2–7 + HiAce groups 8–15. Christmas & NYE same rates. WhatsApp — no deposit.",
+      "Best ATV package for your group: Premium Trio/Squad/Crew from 2,025,000 or Land & River from 2,475,000. Not Kuber Premium. WhatsApp — no deposit.",
     heroImage: {
       url: "/images/adventures/atv-arena-quad-fleet.jpg",
       alt: "Sport ATV quad bikes lined up for a private group at All New Bali Adventure in Sedang",
@@ -618,16 +622,17 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
     heroThumbnails: ATV_TRACK_PHOTOS,
     shortDescription:
       "ATV-only (3–5) or Land & River ATV + rafting for 2–15. Car for 2–7 · private HiAce for 8–15. Shuttle from IDR 2,025,000 · self-meet from 1,665,000. 10% off. Christmas & NYE same rates.",
-    fullDescription: `**What is the ATV premium package Bali?** One WhatsApp booking for your group: the right mix of **single and tandem ATVs** (or Land & River ATV + rafting for **2–15 guests**), lunch, gear and insurance — **10% off** booking the same parts separately. Choose **with private shuttle** (car for 2–7, **HiAce minibus for 8–15**) or **self-meet (no shuttle)**. **Not** Kuber’s “Premium” cave-upgrade ticket. We ride at **All New Bali Adventure** in Sedang near Ubud.
+    fullDescription: `**What is the best ATV package Bali for a small group?** Match **guest count + shuttle + rafting**, then book the published IDR — not a slogan. Sekar’s **ATV premium package** is one WhatsApp booking: the right mix of **single and tandem ATVs** (or Land & River ATV + rafting for **2–15 guests**), lunch, gear and insurance — **10% off** booking the same parts separately. Choose **with private shuttle** (car for 2–7, **HiAce minibus for 8–15**) or **self-meet (no shuttle)**. **Not** Kuber’s “Premium” cave-upgrade ticket. We ride at **All New Bali Adventure** in Sedang near Ubud.
 
 > **Key Takeaways**
+> - **Best ATV package** here = the row that matches your group — we do **not** claim “best in Bali”
 > - **With car — ATV-only (3 / 4 / 5):** IDR **2,025,000** · **2,655,000** · **3,240,000**
 > - **Self-meet — ATV-only (3 / 4 / 5):** IDR **1,665,000** · **2,295,000** · **2,880,000**
 > - **Land & River + car (2–7):** from IDR **2,475,000** (2) to **7,605,000** (7)
 > - **Land & River + HiAce (8 / 10 / 12 / 15):** IDR **9,540,000** · **11,610,000** · **13,680,000** · **16,785,000**
 > - **Christmas & New Year:** same published rates — no holiday surcharge · [holiday promo](/blog/atv-christmas-new-year-promo-ubud-2026)
 
-### Pick your package in 30 seconds
+### Best ATV package for your group (pick in 30 seconds)
 
 | Your group | Book this | Why |
 |---|---|---|
@@ -637,8 +642,10 @@ Message us on WhatsApp to book Single ATV, Tandem ATV, or an ATV + River Tubing 
 | **8–15 people**, ATV + rafting + bus | **Land & River + HiAce** | Same activities · private Toyota HiAce |
 | **2–15**, ATV + rafting, own transport | **Land & River self-meet** | Same activities; you cover transfers |
 | **Everyone wants a single**, ATV only | [Standard ATV page](/tours/bali-atv-adventure) | Premium ATV-only always includes one tandem |
+| Comparing **Kuber Premium** cave tickets | [Premium vs Kuber](/blog/atv-premium-package-vs-kuber-premium-2026) | Different product — Payangan arena |
+| Saw **Fun ATV Bali** in search | [Fun ATV vs All New](/blog/fun-atv-bali-vs-all-new-bali-adventure-2026) | Different Sukawati brand |
 
-Use the **With private shuttle / Self-meet** toggle on the cards above, then tap **Book**.
+Use the **With private shuttle / Self-meet** toggle on the cards above, then tap **Book**. Checklist guide: [best ATV package / how to choose](/blog/best-atv-bali-ubud-2026).
 
 ### How to book (about 2 minutes)
 
@@ -789,6 +796,12 @@ Different bike mix? Book on the [ATV ride page](/tours/bali-atv-adventure).`,
         question: "How much is the ATV premium package?",
         answer:
           "With private car — ATV-only: Trio IDR 2,025,000 · Squad 2,655,000 · Crew 3,240,000. Land & River car (2–7): from 2,475,000 (2) to 7,605,000 (7). Land & River HiAce (8 / 10 / 12 / 15): 9,540,000 · 11,610,000 · 13,680,000 · 16,785,000. Self-meet drops the vehicle. Prices are per package, 10% off booking the same parts separately.",
+      },
+      {
+        id: "faq-atv-premium-best",
+        question: "What is the best ATV package for my group?",
+        answer:
+          "There is no single best ATV package in Bali — match guest count, shuttle need, and whether you want rafting. 3–5 with one tandem + car: Premium Trio / Squad / Crew from IDR 2,025,000. 2–7 wanting ATV + Ayung rafting: Land & River from 2,475,000. 8–15: Land & River HiAce from 9,540,000. Everyone wants a single ATV only: use the standard ATV page. Compare: https://www.sekarbaliactivity.com/blog/best-atv-bali-ubud-2026 · vs Kuber: https://www.sekarbaliactivity.com/blog/atv-premium-package-vs-kuber-premium-2026",
       },
       {
         id: "faq-atv-premium-choose",
@@ -2743,9 +2756,9 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
     pickup: "Guide meets you · optional Japanese/French + private driver tour",
     duration: "8 Hours (extendable)",
     basePrice: 600000,
-    seoTitle: "Licensed Tour Guide Bali | English, Japanese, French",
+    seoTitle: "Licensed Tour Guide Bali | Real History · From 600K",
     seoDescription:
-      "Licensed Bali guide (KTPP): English 600K, Japanese 700K, French 750K guide only. Optional JP/FR + driver: 850K Ubud / guide + 550K outside. WhatsApp.",
+      "Worth it for culture days: genuine KTPP guides explain real Bali history — not tourist myths. English 600K · Japanese 700K · French 750K. WhatsApp.",
     heroImage: {
       url: "/images/guide/bali-guide-thumbs-up.jpg",
       alt: "Smiling Balinese guide in a white udeng headcloth giving a thumbs-up, ready to meet guests",
@@ -2771,10 +2784,17 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
       },
     ],
     shortDescription:
-      "Book a government-licensed Bali tour guide — guide only in English, Japanese, or French. English IDR 600,000, Japanese IDR 700,000, French IDR 750,000 per booking for 8 hours. Optional Japanese/French + private driver tour: IDR 850,000 in Ubud; outside Ubud guide + IDR 550,000 driver. Extra hours IDR 150,000 each.",
-    fullDescription: `**Licensed Tour Guide in Bali**
+      "Genuine government-licensed Bali guide (KTPP) with proven temple experience — real history, not tourist myths, explained clearly in your language. Guide only: English IDR 600,000 · Japanese 700,000 · French 750,000 per booking for 8 hours. Optional Japanese/French + private driver: IDR 850,000 in Ubud.",
+    fullDescription: `**Licensed Tour Guide in Bali — is the price worth it?**
 
-A government-licensed guide joins you for 8 hours and explains the temples, palaces, villages, and rice terraces on your route — in English, Japanese, or French. **Every language can book guide only.** Japanese and French also offer a **with private driver** tour option at published IDR.
+Yes for **culture days**, if you want a **genuine licensed guide** who explains **real history** — not recycled tourist myths — and walks you through temples, palaces, villages, and rice terraces with clear, calm commentary. A driver gets you to the gate; a licensed guide comes inside, answers questions, and makes the day make sense. Sekar Bali Activity books government-licensed (**KTPP**) guides in **English, Japanese, or French**. **Every language can book guide only.** Japanese and French also offer a **with private driver** tour option at published IDR.
+
+> **Why guests book this fee**
+> - **Real history** — trained, licensed explanation of temples, offerings, and village life — not made-up “legend for tourists”
+> - **Proven experience** — guides who regularly walk temple courtyards and holy springs, not a first-day host reading a script
+> - **Explained clearly** — slow enough to follow, detailed enough to remember, in **your** language
+> - **Honest worth-it take:** [Is a tour guide worth it in Bali?](/blog/is-a-tour-guide-worth-it-bali-2026)
+
 
 ### Guide only (all languages)
 One guide for your whole group. The price does not change with the number of guests.
@@ -2803,25 +2823,25 @@ Platforms such as [Withlocals](https://www.withlocals.com/locals/indonesia/bali/
 Prefer a set route? Book the [Full Day Ubud Tour](/tours/full-day-ubud-tour) or the [Half Day Ubud & Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) and add the same licensed guide on top (those tours already include a car — guide add-on is English 600,000 / Japanese 700,000 / French 750,000).
 
 ### What "Licensed" Means in Bali
-Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Provincial Regulation No. 5 of 2016 on tour guides. Bali's 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) also lists travelling with a licensed guide when visiting tourist attractions among visitor obligations. Ask your guide to show the card when you meet.
+Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Provincial Regulation No. 5 of 2016 on tour guides. That is what makes the guide **genuine and accountable** — ask to see the card when you meet, not a casual storyteller at the car park. Bali's 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) also lists travelling with a licensed guide when visiting tourist attractions among visitor obligations.
 
 ### Good to Know
 - One language per booking: English, Japanese, or French.
 - Entrance tickets and meals are not included.
 - Tell us your route on WhatsApp — temples, Ubud palace and market, rice terraces, or a full custom day.`,
     highlights: [
-      "Government-licensed guide (KTPP card holder)",
-      "English, Japanese, or French — guide only available for every language",
-      "Optional Japanese/French + private driver tour: IDR 850,000 in Ubud",
-      "Outside Ubud with-driver option: guide + IDR 550,000",
-      "Extra hours IDR 150,000 each",
-      "Priced per booking for 8 hours, not per person",
+      "Real history explained — not tourist myths",
+      "Genuine KTPP-licensed guide with proven temple experience",
+      "Clear commentary in English, Japanese, or French",
+      "Guide only for every language — from IDR 600,000 / 8 hours",
+      "Optional Japanese/French + private driver: IDR 850,000 in Ubud",
+      "Priced per booking, not per person",
     ],
     included: [
       "Government-licensed guide for 8 hours",
+      "Clear commentary on real temple and village history in your language",
       "Guide's own transport to your hotel or first stop (guide-only option)",
       "Optional Japanese/French tour: private car and driver (Ubud 850K total; outside guide + 550K)",
-      "Commentary in English, Japanese, or French",
     ],
     notIncluded: [
       "Car and driver on guide-only bookings (optional private shuttle at published Ubud/outside rates, or pick the JP/FR with-driver tour)",
@@ -2834,14 +2854,14 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
       {
         id: "iti-guide-1",
         time: "Your start time",
-        title: "Guide meets you",
-        description: "Your licensed guide meets you at your hotel or your first stop — you choose the time and pin when booking.",
+        title: "Genuine licensed guide meets you",
+        description: "Your KTPP-licensed guide meets you at your hotel or first stop — ask to see the card. You choose the time and pin when booking.",
       },
       {
         id: "iti-guide-2",
         time: "8 hours",
-        title: "Your route, explained",
-        description: "Temples, the Ubud palace and market, villages, or rice terraces — the guide explains history, offerings, and temple etiquette in your language.",
+        title: "Real history, explained clearly",
+        description: "Temples, the Ubud palace and market, villages, or rice terraces — the guide explains real history, offerings, and etiquette in your language, without invented tourist stories.",
       },
       {
         id: "iti-guide-3",
@@ -2859,6 +2879,12 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
           "Guide only: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 8 hours. Optional Japanese/French + private driver tour: IDR 850,000 total in the Ubud area; outside Ubud Japanese IDR 700,000 + IDR 550,000 driver, or French IDR 750,000 + IDR 550,000 driver. Each extra hour is IDR 150,000. Entrance tickets and meals are not included.",
       },
       {
+        id: "faq-guide-worth",
+        question: "Is a licensed tour guide worth the price in Bali?",
+        answer:
+          "Yes for culture days — temples, holy springs, ceremonies, palace and villages — if you want real history explained clearly by a genuine KTPP-licensed guide with proven experience, not tourist myths or a driver who stays in the car. Skip the guide for beach clubs and short Grab trips. From IDR 600,000 per booking for 8 hours. Full take: https://www.sekarbaliactivity.com/blog/is-a-tour-guide-worth-it-bali-2026",
+      },
+      {
         id: "faq-guide-2",
         question: "Is the guide price per person?",
         answer:
@@ -2874,7 +2900,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         id: "faq-guide-4",
         question: "What does a licensed guide mean in Bali?",
         answer:
-          "Licensed Bali guides (pramuwisata) carry a KTPP guide ID card issued under Bali Provincial Regulation No. 5 of 2016. Bali's 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) lists travelling with a licensed guide at tourist attractions among visitor obligations. You can ask to see the card when you meet.",
+          "Licensed Bali guides (pramuwisata) carry a KTPP guide ID card issued under Bali Provincial Regulation No. 5 of 2016. That is what makes the guide genuine and accountable — ask to see the card when you meet. Bali's 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) lists travelling with a licensed guide at tourist attractions among visitor obligations.",
       },
       {
         id: "faq-guide-5",
@@ -3110,6 +3136,9 @@ Covered shoulders and a change of clothes. We supply the sarong and offering. Se
 ### Pairing ideas
 Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation) (Tampaksiring) or afternoon [Tumang cooking class](/tours/balinese-cooking-class). Quiet paddies: [Pejeng cycling](/tours/ubud-ricefield-cycling-tour).
 
+### Coming with 4 or more?
+Friends, family, or a retreat group: book the [group Tirta Empul purification](/tours/${GROUP_PURIFICATION_SLUG}) — **10–12% off** the published IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} rate, one WhatsApp thread for everyone.
+
 **Typical start:** 08:00 or 09:00 so you reach the spring before the mid-morning crowds.`,
     highlights: [
       "About 2.5 hours at legendary Tirta Empul",
@@ -3237,6 +3266,170 @@ Morning melukat, then [Luwak coffee at Umah Kuno](/tours/luwak-coffee-plantation
         question: "Is breakfast included?",
         answer:
           "No. Breakfast and lunch are not included. The IDR 780,000 rate covers ticket, sarong, offering, licensed guide, and locker only.",
+      },
+      {
+        id: "faq-melukat-12",
+        question: "Is there a group discount for Tirta Empul melukat?",
+        answer: `Yes — for 4 or more guests, book the group purification page. Published promo: 4 guests ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}% off, 6 guests ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[6]}% off, 8–10 guests ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off vs IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} each. Same inclusions. https://www.sekarbaliactivity.com/tours/${GROUP_PURIFICATION_SLUG}`,
+      },
+    ],
+    reviews: [],
+  },
+  {
+    id: GROUP_PURIFICATION_SLUG,
+    title: "Group Tirta Empul Purification",
+    slug: GROUP_PURIFICATION_SLUG,
+    category: "culture",
+    area: "Tampaksiring / Ubud",
+    venue: "Pura Tirta Empul — sacred water-spring temple",
+    pickup: "Optional shuttle IDR 400K Ubud / 650K south · self-meet free",
+    isTopPick: false,
+    duration: "Approx. 2.5 Hours",
+    basePrice: groupPurificationFromPriceIdr(),
+    seoTitle: "Group Tirta Empul Melukat | 10–12% Off",
+    seoDescription:
+      "Group purification at Tirta Empul for 4–10 guests — 10–12% off the 780K rate. Ticket, sarong, offering, licensed guide, locker. From IDR 702K / person. Shuttle optional.",
+    heroImage: {
+      url: GROUP_PURIFICATION_HERO.url,
+      alt: GROUP_PURIFICATION_HERO.alt,
+      width: GROUP_PURIFICATION_HERO.width,
+      height: GROUP_PURIFICATION_HERO.height,
+    },
+    gallery: [
+      {
+        url: GROUP_PURIFICATION_HERO.url,
+        alt: GROUP_PURIFICATION_HERO.alt,
+      },
+      {
+        url: "/images/melukat/tirta-empu-hero-2026-11-20.jpg",
+        alt: "Guest under a sacred spout at Tirta Empul during guided melukat purification",
+      },
+      {
+        url: "/images/melukat/tirta-empu-hero-2026-11.jpg",
+        alt: "Guests with licensed guide in sarong at Tirta Empul temple courtyard",
+      },
+      {
+        url: "/images/melukat/tirta-empu-gallery-01-2026-11.jpg",
+        alt: "Sacred spout line at Tirta Empul during a Balinese water purification ceremony",
+      },
+      {
+        url: "/images/melukat/tirta-empu-gallery-02-2026-11.jpg",
+        alt: "Guest in sarong under holy spring water at Tirta Empul melukat",
+      },
+      {
+        url: "/images/melukat/tirta-empu-gallery-03-2026-11.jpg",
+        alt: "Tirta Empul temple courtyard and purification pools near Tampaksiring",
+      },
+    ],
+    shortDescription: `Group melukat at Tirta Empul for 4–10 guests — ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}–${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off vs IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} each. Same spiritual tour: ticket, sarong, offering, licensed guide, locker.`,
+    fullDescription: `**Group purification at Tirta Empul — published promo for 4–10**
+
+Bring friends, family, or a retreat circle to **Pura Tirta Empul** (Tampaksiring) for the same exclusive spiritual melukat as our [solo Tirta Empul page](/tours/tirta-empu-purification) — with a **standing group discount** on the published IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} per-person rate.
+
+| Guests | Promo | Per person (approx.) | Package total |
+| --- | --- | --- | --- |
+| 4 | ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}% off | IDR ${GROUP_PURIFICATION_PACKAGES[0].perGuestIdr.toLocaleString("id-ID")} | **IDR ${GROUP_PURIFICATION_PACKAGES[0].priceIdr.toLocaleString("id-ID")}** |
+| 6 | ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[6]}% off | IDR ${GROUP_PURIFICATION_PACKAGES[1].perGuestIdr.toLocaleString("id-ID")} | **IDR ${GROUP_PURIFICATION_PACKAGES[1].priceIdr.toLocaleString("id-ID")}** |
+| 8 | ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off | IDR ${GROUP_PURIFICATION_PACKAGES[2].perGuestIdr.toLocaleString("id-ID")} | **IDR ${GROUP_PURIFICATION_PACKAGES[2].priceIdr.toLocaleString("id-ID")}** |
+| 10 | ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[10]}% off | IDR ${GROUP_PURIFICATION_PACKAGES[3].perGuestIdr.toLocaleString("id-ID")} | **IDR ${GROUP_PURIFICATION_PACKAGES[3].priceIdr.toLocaleString("id-ID")}** |
+
+From-price on this page is **IDR ${groupPurificationFromPriceIdr().toLocaleString("id-ID")}** for 4 guests (≈ **IDR ${groupPurificationFromPerGuestIdr().toLocaleString("id-ID")}** each). Compare-at is always guests × IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")}.
+
+### What every guest gets
+${GROUP_PURIFICATION_INCLUDED.map((line) => `- ${line}`).join("\n")}
+
+### Who this page is for
+- **4–10 adults** who want one WhatsApp confirmation and one published total
+- Families or friends who prefer to stay together under the guide
+- Retreat / wellness groups who need clear group math before they fly
+
+**1–3 guests** stay on the [standard Tirta Empul purification](/tours/tirta-empu-purification) at IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} each — this group promo starts at 4.
+
+### Shuttle
+Optional — same as adventure days: **IDR 400,000** from Ubud or **IDR 650,000** from the south coast once per booking, or **free self-meet** / your own driver.
+
+### Payment
+Pay on the spot — cash or card. No deposit to inquire on WhatsApp.
+
+**Typical start:** 08:00 or 09:00. Send date, guest count (4 / 6 / 8 / 10), and hotel pin or self-meet.`,
+    highlights: [
+      `4–10 guests · ${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}–${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off published 780K`,
+      "Same Tirta Empul spiritual melukat as the solo page",
+      "Ticket, sarong, offering, licensed guide, locker for every guest",
+      "One WhatsApp booking for the whole group",
+      "Optional shuttle · pay on the spot",
+    ],
+    included: [...GROUP_PURIFICATION_INCLUDED],
+    notIncluded: [
+      "Private shuttle (optional IDR 400,000 Ubud / IDR 650,000 south — or self-meet / own driver free)",
+      "Breakfast and lunch",
+      "Personal expenses and gratuities",
+      "Optional priest blessing beyond the standard guided ritual",
+    ],
+    activityOptions: GROUP_PURIFICATION_PACKAGES.map((pkg) => ({
+      name: `${pkg.name} (${pkg.discountPercent}% off)`,
+      priceDiff: pkg.priceIdr - groupPurificationFromPriceIdr(),
+      description: `${pkg.guests} guests · IDR ${pkg.priceIdr.toLocaleString("id-ID")} total · ≈ IDR ${pkg.perGuestIdr.toLocaleString("id-ID")} each · was IDR ${pkg.partsIdr.toLocaleString("id-ID")}`,
+    })),
+    itinerary: [
+      {
+        id: "iti-group-melukat-1",
+        time: "Meet",
+        title: "Group meet at Tirta Empul",
+        description:
+          "Typical start 08:00 or 09:00. Optional private shuttle for the whole group, or self-meet at Pura Tirta Empul.",
+      },
+      {
+        id: "iti-group-melukat-2",
+        time: "Arrive",
+        title: "Sarong, offerings, lockers, and briefing",
+        description:
+          "Your licensed guide briefs everyone together — which spouts to use, which to skip, and how to move as a group without rushing worshippers.",
+      },
+      {
+        id: "iti-group-melukat-3",
+        time: "Ritual",
+        title: "Group melukat in the sacred pools",
+        description:
+          "Enter the purification pools and move under the sacred spouts in sequence. Cold mountain spring water. The guide stays with your group through each step.",
+      },
+      {
+        id: "iti-group-melukat-4",
+        time: "After",
+        title: "Change and courtyards",
+        description:
+          "Return to lockers, change into dry clothes, and optionally walk the courtyards before shuttle or your own driver continues the day.",
+      },
+    ],
+    addons: [],
+    faqs: [
+      {
+        id: "faq-group-melukat-1",
+        question: "How much is group Tirta Empul purification?",
+        answer: `From IDR ${groupPurificationFromPriceIdr().toLocaleString("id-ID")} for 4 guests (${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[4]}% off). 6 guests IDR ${GROUP_PURIFICATION_PACKAGES[1].priceIdr.toLocaleString("id-ID")} (${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[6]}% off). 8 guests IDR ${GROUP_PURIFICATION_PACKAGES[2].priceIdr.toLocaleString("id-ID")} and 10 guests IDR ${GROUP_PURIFICATION_PACKAGES[3].priceIdr.toLocaleString("id-ID")} (${GROUP_PURIFICATION_DISCOUNT_BY_GUESTS[8]}% off). Same inclusions as the solo melukat. Shuttle optional.`,
+      },
+      {
+        id: "faq-group-melukat-2",
+        question: "What is the minimum group size?",
+        answer: `Four guests. Smaller parties book the standard Tirta Empul purification at IDR ${MELUKAT_PRICE_IDR.toLocaleString("id-ID")} per person: https://www.sekarbaliactivity.com/tours/tirta-empu-purification`,
+      },
+      {
+        id: "faq-group-melukat-3",
+        question: "Is the ritual private for our group only?",
+        answer:
+          "You share one licensed guide and one booking confirmation. Tirta Empul remains a public holy site — other worshippers and visitors will be present. You are not renting the entire temple.",
+      },
+      {
+        id: "faq-group-melukat-4",
+        question: "Is hotel shuttle included in the group promo?",
+        answer:
+          "No. The % off applies to the melukat package (ticket, sarong, offering, guide, locker). Optional private shuttle is IDR 400,000 from Ubud or IDR 650,000 from the south coast once per booking — or self-meet free.",
+      },
+      {
+        id: "faq-group-melukat-5",
+        question: "Can we pay on the spot?",
+        answer:
+          "Yes. Cash (IDR), QRIS, or card at the venue. Card payments add a 3% surcharge. No deposit to inquire on WhatsApp.",
       },
     ],
     reviews: [],

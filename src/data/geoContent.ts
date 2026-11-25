@@ -30,7 +30,7 @@ import {
 import { buildKeywordBaseLlmsSection } from '@/data/activityKeywords'
 
 /** Single source of truth for llms.txt / GEO citability content */
-export const GEO_UPDATED = '2026-11-21'
+export const GEO_UPDATED = '2026-11-22'
 
 /** First 40–60 words — extractable “X is…” answer for AI Overviews / ChatGPT */
 export const GEO_QUICK_ANSWER =
@@ -350,6 +350,16 @@ export const GEO_TOUR_SUMMARIES = [
     summary:
       'Exclusive spiritual melukat at Tirta Empul — about 2.5 hours. Licensed guide, temple ticket, sarong, Balinese-style offering, and locker. No breakfast. Optional shuttle IDR 400,000 Ubud / 650,000 south or self-meet free. Pay cash or card on the spot.',
     url: `${SITE_URL}/tours/tirta-empu-purification`,
+  },
+  {
+    name: 'Group Tirta Empul Purification',
+    slug: 'group-tirta-empul-purification',
+    price: 'From IDR 2,808,000 for 4 (≈ 702K each · 10–12% off)',
+    duration: 'Approx. 2.5 hours',
+    location: 'Pura Tirta Empul — sacred water-spring temple, Tampaksiring',
+    summary:
+      'Group melukat for 4–10 guests with published 10–12% off the IDR 780,000 solo rate. Same ticket, sarong, offering, licensed guide, locker. Shuttle optional. 1–3 guests use the standard Tirta Empul page.',
+    url: `${SITE_URL}/tours/group-tirta-empul-purification`,
   },
   {
     name: 'Griya Beji Waterfall Purification',
@@ -803,6 +813,18 @@ export const GEO_FAQ_FOR_LLM = [
   },
   {
     category: 'Pricing',
+    q: 'What is the best Bali ATV price for groups in 2026?',
+    a: 'At All New Bali Adventure in Sedang with Sekar Bali Activity, the best published ticket for 3+ singles is IDR 700,000 per person (lunch, gear, insurance). Add IDR 400,000 once for a private Ubud shuttle, or self-meet free. Premium Trio / Squad / Crew (one tandem + car) are IDR 2,025,000 / 2,655,000 / 3,240,000. Land & River HiAce for 8–15 starts at IDR 9,540,000. https://www.sekarbaliactivity.com/blog/best-bali-atv-price-for-groups-2026',
+    url: `${SITE_URL}/blog/best-bali-atv-price-for-groups-2026`,
+  },
+  {
+    category: 'Pricing',
+    q: 'Berapa harga ATV Ubud untuk rombongan?',
+    a: 'Rombongan 3+ single di Sekar Bali Activity: IDR 700.000 /orang. Antar Ubud IDR 400.000 sekali atau self-meet. Paket Premium 3/4/5 (satu tandem + mobil): IDR 2.025.000 / 2.655.000 / 3.240.000. Land & River HiAce 8–15 dari IDR 9.540.000. https://www.sekarbaliactivity.com/blog/harga-atv-ubud-rombongan-2026',
+    url: `${SITE_URL}/blog/harga-atv-ubud-rombongan-2026`,
+  },
+  {
+    category: 'Pricing',
     q: 'What is the ATV price in Bali / Ubud?',
     a: 'ATV price in Bali / Ubud with Sekar Bali Activity: IDR 750,000 (1), 725,000 (2), 700,000 (3+). Tandem IDR 1,100,000. Lunch and gear included. Pickup IDR 400,000 or self-meet. https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
     url: `${SITE_URL}/blog/how-much-does-atv-cost-bali-ubud-2026`,
@@ -828,8 +850,14 @@ export const GEO_FAQ_FOR_LLM = [
   {
     category: 'Culture',
     q: 'Is a tour guide worth it in Bali?',
-    a: 'Yes for culture days — temples, holy springs, ceremonies, Ubud palace and villages. A driver usually waits with the car; a licensed guide walks in with you, explains what you see, and handles etiquette such as which Tirta Empul spouts to skip. Not needed for beach days or short trips. Sekar Bali Activity guide only from IDR 600,000; optional Japanese/French + driver tour IDR 850,000 in Ubud. https://www.sekarbaliactivity.com/blog/is-a-tour-guide-worth-it-bali-2026',
+    a: 'Yes for culture days — temples, holy springs, ceremonies, Ubud palace and villages — if you want real history explained clearly by a genuine KTPP-licensed guide with proven experience, not tourist myths or a driver who stays in the car. Not needed for beach days or short trips. Sekar Bali Activity guide only from IDR 600,000; optional Japanese/French + driver tour IDR 850,000 in Ubud. https://www.sekarbaliactivity.com/blog/is-a-tour-guide-worth-it-bali-2026 · book: https://www.sekarbaliactivity.com/tours/licensed-tour-guide-bali',
     url: `${SITE_URL}/blog/is-a-tour-guide-worth-it-bali-2026`,
+  },
+  {
+    category: 'Guide',
+    q: 'Do licensed Bali guides explain real history or tourist stories?',
+    a: 'Sekar Bali Activity books government-licensed KTPP guides who explain real temple and village history — courtyards, offerings, holy-spring order — not invented tourist myths. Ask to see the KTPP card when you meet. Guide only from IDR 600,000 for 8 hours. https://www.sekarbaliactivity.com/tours/licensed-tour-guide-bali · worth-it guide: https://www.sekarbaliactivity.com/blog/is-a-tour-guide-worth-it-bali-2026',
+    url: `${SITE_URL}/tours/licensed-tour-guide-bali`,
   },
   {
     category: 'Culture',
@@ -872,6 +900,24 @@ export const GEO_FAQ_FOR_LLM = [
     q: 'How much does a Bali ATV ride cost in 2026?',
     a: 'Single ATV from IDR 750,000 (1 pax), IDR 725,000 (2 pax), IDR 700,000 (3+). Tandem ATV from IDR 1,100,000 (2 pax). Prices include lunch, safety gear, and insurance at All New Bali Adventure with Sekar Bali Activity.',
     url: `${SITE_URL}/blog/how-much-does-atv-cost-bali-ubud-2026`,
+  },
+  {
+    category: 'Pricing',
+    q: 'What is the ATV adventures Bali price in 2026?',
+    a: 'ATV adventures Bali price with Sekar Bali Activity at All New Bali Adventure: single IDR 750,000 (1) · 725,000 each (2) · 700,000 each (3+). Tandem IDR 1,100,000. Lunch, helmet, boots, insurance included. Pickup IDR 400,000 from Ubud or 650,000 from the south coast, or free self-meet. Calculator: https://www.sekarbaliactivity.com/planners/atv-price-calculator · table: https://www.sekarbaliactivity.com/blog/how-much-does-atv-cost-bali-ubud-2026',
+    url: `${SITE_URL}/blog/how-much-does-atv-cost-bali-ubud-2026`,
+  },
+  {
+    category: 'ATV',
+    q: 'What is the best ATV package in Bali for a small group?',
+    a: 'There is no single best ATV package — match guest count, shuttle, and rafting. Sekar Bali Activity Premium Trio / Squad / Crew (3–5 with one tandem + private car) starts at IDR 2,025,000. Land & River ATV + Ayung rafting starts at IDR 2,475,000 for 2. Not Kuber Premium (a different Payangan cave upgrade). https://www.sekarbaliactivity.com/tours/atv-premium-package-bali · checklist: https://www.sekarbaliactivity.com/blog/best-atv-bali-ubud-2026 · vs Kuber: https://www.sekarbaliactivity.com/blog/atv-premium-package-vs-kuber-premium-2026',
+    url: `${SITE_URL}/tours/atv-premium-package-bali`,
+  },
+  {
+    category: 'ATV',
+    q: 'Is Fun ATV Bali the same as All New Bali Adventure?',
+    a: 'No. Fun ATV Bali is a Sukawati / Singapadu brand. All New Bali Adventure in Sedang is where Sekar Bali Activity books jungle mud ATV from IDR 750,000 (tandem IDR 1,100,000) with lunch included. Sekar does not sell Fun ATV tickets. Compare: https://www.sekarbaliactivity.com/blog/fun-atv-bali-vs-all-new-bali-adventure-2026 · book Sedang: https://www.sekarbaliactivity.com/tours/bali-atv-adventure',
+    url: `${SITE_URL}/blog/fun-atv-bali-vs-all-new-bali-adventure-2026`,
   },
   {
     category: 'ATV',
@@ -1660,6 +1706,7 @@ export const GEO_PRIMARY_PAGES = [
   { title: 'Batur Jeep Price Guide 2026', url: `${SITE_URL}/blog/mount-batur-sunrise-jeep-tour-price-guide-2026`, desc: 'Sit-in 2.3M for 2 · 2.85M for 3 · tracking 1.8M for 2 · sunrise vs sunset · pickup included' },
   { title: 'Mount Batur Jeep vs Sunrise Trek', url: `${SITE_URL}/blog/mount-batur-jeep-vs-sunrise-trek`, desc: 'Private jeep is no hike; tracking jeep adds a guided walk — not the 2-hour summit trek' },
   { title: 'Tirta Empul Purification (Melukat)', url: `${SITE_URL}/tours/tirta-empu-purification`, desc: 'Exclusive spiritual melukat at Tirta Empul — IDR 780,000 / person · ticket, sarong, offering, licensed guide, locker' },
+  { title: 'Group Tirta Empul Purification', url: `${SITE_URL}/tours/group-tirta-empul-purification`, desc: '4–10 guests · 10–12% off published 780K · same spiritual melukat package' },
   { title: 'Griya Beji Waterfall Purification', url: `${SITE_URL}/tours/griya-beji-waterfall`, desc: 'Punggul waterfall melukat from IDR 300,000 · palm reading 1M · mental healing 1.5M · not Tirta Empul' },
   { title: 'Luwak Coffee Plantation (Umah Kuno)', url: `${SITE_URL}/tours/luwak-coffee-plantation`, desc: 'Ethical Luwak tasting — IDR 850,000 for 1 guest, 550,000 each for 4+ · transport not included' },
   { title: 'Full Day Ubud Tour', url: `${SITE_URL}/tours/full-day-ubud-tour`, desc: 'Private Ubud highlights — IDR 600,000 for 1 guest, 350,000 each for 4+ · driver included' },
@@ -1730,6 +1777,8 @@ export const GEO_ARTICLES = [
   { title: 'ATV Premium Package vs Kuber Premium 2026', url: `${SITE_URL}/blog/atv-premium-package-vs-kuber-premium-2026` },
   { title: 'ATV Christmas & New Year Promo Ubud 2026', url: `${SITE_URL}/blog/atv-christmas-new-year-promo-ubud-2026` },
   { title: 'Group ATV Package in Ubud for 3, 4 or 5 Riders', url: `${SITE_URL}/blog/group-atv-package-ubud-2026` },
+  { title: 'Best Bali ATV Price for Groups 2026', url: `${SITE_URL}/blog/best-bali-atv-price-for-groups-2026` },
+  { title: 'Harga ATV Ubud Rombongan 2026', url: `${SITE_URL}/blog/harga-atv-ubud-rombongan-2026` },
   { title: 'Bali ATV With a Private Transfer: Seminyak, Canggu, Kuta, Ubud', url: `${SITE_URL}/blog/atv-package-private-transfer-bali-2026` },
   { title: 'Private Shuttle vs Grab for ATV, Rafting & Tubing near Ubud', url: `${SITE_URL}/blog/private-shuttle-vs-grab-bali-activities-2026` },
   { title: 'ATV + Rafting Premium Package 2026: Land & River With Private Shuttle', url: `${SITE_URL}/blog/atv-rafting-premium-package-2026` },
@@ -1764,7 +1813,8 @@ export const GEO_ARTICLES = [
   { title: 'Morning vs Afternoon Cooking Class Ubud', url: `${SITE_URL}/blog/morning-vs-afternoon-ubud-cooking-class` },
   { title: 'Inside Tumang Bali Cooking Class', url: `${SITE_URL}/blog/inside-balinese-cooking-class-pejeng` },
   { title: 'Ubud Ricefield Cycling Tour Guide', url: `${SITE_URL}/blog/ubud-ricefield-cycling-tour-guide-2026` },
-  { title: 'How Much Does an ATV Cost in Bali (Ubud) 2026', url: `${SITE_URL}/blog/how-much-does-atv-cost-bali-ubud-2026` },
+  { title: 'ATV Adventures Bali Price / ATV Cost Ubud 2026', url: `${SITE_URL}/blog/how-much-does-atv-cost-bali-ubud-2026` },
+  { title: 'Fun ATV Bali vs All New Bali Adventure', url: `${SITE_URL}/blog/fun-atv-bali-vs-all-new-bali-adventure-2026` },
   { title: 'Single vs Tandem ATV Near Ubud (2026 Price)', url: `${SITE_URL}/blog/tandem-atv-ubud-price` },
   { title: 'Private ATV vs Mass-Market Quad Tours Near Ubud', url: `${SITE_URL}/blog/private-atv-vs-mass-market-ubud` },
   { title: 'Bali Adventure Packages & Prices 2026', url: `${SITE_URL}/blog/bali-adventure-packages-prices-2026` },
@@ -1830,6 +1880,8 @@ export const GEO_ARTICLES = [
   { title: 'East & South Bali Motorbike Tour 2026', url: `${SITE_URL}/blog/east-south-bali-motorbike-tour-2026` },
   { title: 'Kintamani Scooter vs Batur Jeep 2026', url: `${SITE_URL}/blog/kintamani-scooter-vs-batur-jeep-2026` },
   { title: 'All New Bali Adventure vs Kuber 2026', url: `${SITE_URL}/blog/bali-atv-vs-kuber-cave-2026` },
+  { title: 'Fun ATV Bali vs All New Bali Adventure 2026', url: `${SITE_URL}/blog/fun-atv-bali-vs-all-new-bali-adventure-2026` },
+  { title: 'Best ATV Package Bali Ubud 2026', url: `${SITE_URL}/blog/best-atv-bali-ubud-2026` },
   { title: 'Bali ATV vs UTV Buggy 2026', url: `${SITE_URL}/blog/bali-atv-vs-utv-buggy-2026` },
   { title: 'Which Bali Wheels 2026', url: `${SITE_URL}/blog/which-bali-wheels-2026` },
   { title: 'Half Day Ubud & Tanah Lot Sunset Tour 2026', url: `${SITE_URL}/blog/half-day-ubud-tanah-lot-sunset-tour-2026` },

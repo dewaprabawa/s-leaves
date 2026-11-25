@@ -6,6 +6,7 @@ export const PAY_ON_SPOT_SLUGS = new Set([
   'whitewater-rafting',
   'canyon-tubing',
   'tirta-empu-purification',
+  'group-tirta-empul-purification',
 ])
 
 export function isPayOnSpotTour(slug: string) {

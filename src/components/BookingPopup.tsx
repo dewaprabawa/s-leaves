@@ -19,6 +19,7 @@ import {
   PICKUP_FEE_SOUTH_IDR,
   getHotelPickupFeeIdr,
   getCompareAtSubtotal,
+  getListPrice,
   hasTierPromo,
   JEEP_SITIN_GROUP_IDR,
   JEEP_SITIN_PAIR_TOTAL_IDR,
@@ -30,6 +31,8 @@ import {
 import {
   ACTIVITY_SHORT_LABEL,
   MIX_ADDON_OPTIONS,
+  atvFleetGuestCount,
+  quoteAtvFleet,
   quoteMixedActivities,
   type MixableActivityId,
 } from '@/lib/combos';
@@ -180,6 +183,11 @@ export interface TourConfig {
   }
   /** JS weekday numbers the date must match. Kecak is Sunday (0) and Tuesday (2). */
   allowedWeekdays?: readonly number[]
+  /**
+   * ATV adventure: guest picks how many single bikes and how many tandem bikes
+   * in one order (not either/or).
+   */
+  atvFleetMix?: boolean
 }
 
 function localIsoDate(date: Date): string {
@@ -210,6 +218,7 @@ export function BookingPopup({
   tour,
   tourOptions,
   initialMixIds,
+  initialFleet,
 }: {
   isOpen: boolean
   onClose: () => void
@@ -217,6 +226,8 @@ export function BookingPopup({
   tourOptions?: TourConfig[]
   /** Pre-selected mix-in activities for combo packages */
   initialMixIds?: string[]
+  /** Prefill single/tandem bike counts when opening an ATV fleet booking */
+  initialFleet?: { singleBikes: number; tandemBikes: number }
 }) {
   const [mounted, setMounted] = useState(false);
   const [guestName, setGuestName] = useState("");
@@ -242,10 +253,17 @@ export function BookingPopup({
   const [mixIds, setMixIds] = useState<string[]>([]);
   /** Optional add-on quantities by id (0 = not selected). */
   const [addonQty, setAddonQty] = useState<Record<string, number>>({});
+  /** ATV fleet mix: single bikes (1 rider) + tandem bikes (2 riders). */
+  const [singleBikes, setSingleBikes] = useState(1);
+  const [tandemBikes, setTandemBikes] = useState(0);
 
   const activeTour =
     (tourOptions && tourOptions.find((t) => t.id === selectedTourId)) ||
     tour
+  const isAtvFleetMix = activeTour?.atvFleetMix === true
+  const fleetGuestAdults = isAtvFleetMix
+    ? atvFleetGuestCount(singleBikes, tandemBikes)
+    : 0
 
   useEffect(() => {
     setMounted(true);
@@ -283,8 +301,19 @@ export function BookingPopup({
       setInvoice(null);
       setMixIds(initialMixIds ?? []);
       setAddonQty({});
+      if (tour.atvFleetMix) {
+        setSingleBikes(Math.max(0, initialFleet?.singleBikes ?? 1))
+        setTandemBikes(Math.max(0, initialFleet?.tandemBikes ?? 0))
+        if ((initialFleet?.singleBikes ?? 1) + (initialFleet?.tandemBikes ?? 0) < 1) {
+          setSingleBikes(1)
+          setTandemBikes(0)
+        }
+      } else {
+        setSingleBikes(1)
+        setTandemBikes(0)
+      }
     }
-  }, [isOpen, tour, initialMixIds]);
+  }, [isOpen, tour, initialMixIds, initialFleet]);
 
   useEffect(() => {
     if (!isOpen || !activeTour?.title) return
@@ -302,8 +331,16 @@ export function BookingPopup({
           activeTour.pickupIncluded === true ||
           activeTour.freeUbudPickup === true),
     )
-    const allowed = new Set((MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? []).map((o) => o.id))
-    setMixIds((prev) => prev.filter((id) => allowed.has(id as MixableActivityId) && id !== activeTour.id))
+    const mixKey = (activeTour.pricingActivityId ?? activeTour.id) as MixableActivityId
+    const allowed = new Set((MIX_ADDON_OPTIONS[mixKey] ?? []).map((o) => o.id))
+    setMixIds((prev) =>
+      prev.filter(
+        (id) =>
+          allowed.has(id as MixableActivityId) &&
+          id !== activeTour.id &&
+          id !== activeTour.pricingActivityId,
+      ),
+    )
     const allowedAddons = new Set((activeTour.optionalAddons ?? []).map((a) => a.id))
     setAddonQty((prev) => {
       const next: Record<string, number> = {}
@@ -340,17 +377,33 @@ export function BookingPopup({
   useEffect(() => {
     if (!isOpen || !activeTour) return
     const ids = [activeTour.pricingActivityId ?? activeTour.id, ...mixIds]
-    const hasAtv = ids.includes('single-atv') || ids.includes('tandem-atv')
+    const hasAtv =
+      activeTour.atvFleetMix === true ||
+      ids.includes('single-atv') ||
+      ids.includes('tandem-atv')
     const hasWater = ids.includes('rafting') || ids.includes('canyon-tubing')
     if (!hasAtv || !hasWater) return
     const allowed = comboAvailableTimes(activeTour.times)
     if (!allowed.length) return
     setTime((prev) => (allowed.includes(prev) ? prev : allowed[allowed.length - 1]))
-  }, [isOpen, activeTour?.id, activeTour?.pricingActivityId, activeTour?.times, mixIds])
+  }, [isOpen, activeTour?.id, activeTour?.pricingActivityId, activeTour?.atvFleetMix, activeTour?.times, mixIds])
+
+  // When switching into ATV fleet via the activity dropdown, seed at least one bike.
+  useEffect(() => {
+    if (!isOpen || !activeTour?.atvFleetMix) return
+    if (singleBikes + tandemBikes >= 1) return
+    setSingleBikes(1)
+    setTandemBikes(0)
+  }, [isOpen, activeTour?.id, activeTour?.atvFleetMix, singleBikes, tandemBikes])
 
   // Keep adult count in sync with activity minimums (rafting / tandem need 2+)
   useEffect(() => {
     if (!isOpen || !activeTour) return
+    if (activeTour.atvFleetMix) {
+      const fleetAdults = atvFleetGuestCount(singleBikes, tandemBikes)
+      setAdults(Math.max(1, fleetAdults))
+      return
+    }
     const rafting = activeTour.id === 'rafting' || mixIds.includes('rafting')
     const tandem = activeTour.id === 'tandem-atv'
     const min = tandem || rafting ? 2 : Math.max(activeTour.minPax, 1)
@@ -363,7 +416,7 @@ export function BookingPopup({
       if (tandem && next % 2 !== 0) return next + 1
       return next
     })
-  }, [isOpen, activeTour?.id, activeTour?.fixedPax, mixIds])
+  }, [isOpen, activeTour?.id, activeTour?.fixedPax, activeTour?.atvFleetMix, mixIds, singleBikes, tandemBikes])
 
   // Cap add-on qty when guest count drops (hooks must run before any early return).
   useEffect(() => {
@@ -390,7 +443,10 @@ export function BookingPopup({
   const hasKidPricing = activeTour.kidPrice !== null && activeTour.kidPrice !== undefined;
   const totalPax = adults + kids;
   const isTandem = activeTour.id === 'tandem-atv';
-  const mixOptions = MIX_ADDON_OPTIONS[activeTour.id as MixableActivityId] ?? [];
+  const mixOptions =
+    MIX_ADDON_OPTIONS[
+      (activeTour.pricingActivityId ?? activeTour.id) as MixableActivityId
+    ] ?? [];
   const isCombo = mixIds.length > 0;
   const includesRafting =
     activeTour.id === 'rafting' || mixIds.includes('rafting');
@@ -400,19 +456,23 @@ export function BookingPopup({
   // ATV on its own is not capped and keeps all normal times.
   const comboActivityIds = [
     activeTour.pricingActivityId ?? activeTour.id,
+    ...(isAtvFleetMix && tandemBikes > 0 ? (['tandem-atv'] as const) : []),
     ...mixIds,
   ]
   const capsAtOnePm =
     isCombo &&
     (comboActivityIds.includes('single-atv') ||
-      comboActivityIds.includes('tandem-atv')) &&
+      comboActivityIds.includes('tandem-atv') ||
+      isAtvFleetMix) &&
     (comboActivityIds.includes('rafting') ||
       comboActivityIds.includes('canyon-tubing'))
   // Single/tandem ATV also offers 11:00 and 12:00 starts (not just combos),
   // even if an entry point's time list does not include them yet.
-  const isAtvPrimary = ['single-atv', 'tandem-atv'].includes(
-    activeTour.pricingActivityId ?? activeTour.id,
-  )
+  const isAtvPrimary =
+    isAtvFleetMix ||
+    ['single-atv', 'tandem-atv'].includes(
+      activeTour.pricingActivityId ?? activeTour.id,
+    )
   const availableTimes = capsAtOnePm
     ? comboAvailableTimes(activeTour.times)
     : isAtvPrimary
@@ -420,30 +480,46 @@ export function BookingPopup({
       : activeTour.times
   /** Adults used for pricing — must match steppers; rafting requires 2+ */
   const minAdults = isTandem || includesRafting ? 2 : Math.max(activeTour.minPax, 1);
+  const fleetNeedsBike = isAtvFleetMix && singleBikes + tandemBikes < 1
+  const fleetKidsNeedSingle = isAtvFleetMix && kids > 0 && singleBikes < 1
   const isInvalidPax =
     adults < minAdults ||
     totalPax < activeTour.minPax ||
-    (isTandem && adults % 2 !== 0);
+    (isTandem && adults % 2 !== 0) ||
+    fleetNeedsBike ||
+    fleetKidsNeedSingle;
 
-  const mixedQuote = isCombo
-    ? quoteMixedActivities({
-        primaryId: activeTour.pricingActivityId ?? activeTour.id,
+  const fleetQuote = isAtvFleetMix
+    ? quoteAtvFleet({
+        singleBikes,
+        tandemBikes,
+        children: kids,
         mixIds,
+      })
+    : null
+  const mixedQuote = isAtvFleetMix
+    ? fleetQuote
+    : isCombo
+      ? quoteMixedActivities({
+          primaryId: activeTour.pricingActivityId ?? activeTour.id,
+          mixIds,
+          adults,
+          children: kids,
+        })
+      : null
+  const activityQuote = isAtvFleetMix
+    ? null
+    : quoteActivity({
+        activityId: activeTour.pricingActivityId ?? activeTour.id,
         adults,
         children: kids,
+        // Keeps the price visible for tours without a tiered pricing table
+        // (cooking class, coffee plantation, private day tours, etc.)
+        fallbackAdultPrice: activeTour.adultPrice,
+        fallbackChildPrice: activeTour.kidPrice,
+        fallbackTierPrices: activeTour.groupTierPricesIdr,
+        fallbackPerBooking: activeTour.perBooking,
       })
-    : null;
-  const activityQuote = quoteActivity({
-    activityId: activeTour.pricingActivityId ?? activeTour.id,
-    adults,
-    children: kids,
-    // Keeps the price visible for tours without a tiered pricing table
-    // (cooking class, coffee plantation, private day tours, etc.)
-    fallbackAdultPrice: activeTour.adultPrice,
-    fallbackChildPrice: activeTour.kidPrice,
-    fallbackTierPrices: activeTour.groupTierPricesIdr,
-    fallbackPerBooking: activeTour.perBooking,
-  });
   const addonGuestCount = Math.max(1, adults) + kids
   const selectedAddons = (activeTour.optionalAddons ?? [])
     .map((addon) => ({
@@ -794,16 +870,34 @@ export function BookingPopup({
       adults,
       children: kids,
       childrenAges: kids > 0 ? childrenAges.trim() || undefined : undefined,
-      activity: mixedQuote
-        ? `${activeTour.title} + ${mixedQuote.labels.slice(1).join(' + ')}`
-        : selectedAddons.length
-          ? `${activeTour.title} + ${selectedAddons.map(({ addon, qty }) =>
-              addon.flat ? addon.label : `${addon.label} ×${qty}`,
-            ).join(' + ')}`
-          : activeTour.title,
-      activityOption: mixedQuote
-        ? `Combo (${mixedQuote.discountPercent}% mix discount)`
-        : undefined,
+      activity: isAtvFleetMix
+        ? [
+            `ATV · ${singleBikes} single bike${singleBikes === 1 ? '' : 's'}`,
+            tandemBikes > 0
+              ? `${tandemBikes} tandem bike${tandemBikes === 1 ? '' : 's'}`
+              : null,
+            mixIds.length
+              ? mixIds.map((id) => ACTIVITY_SHORT_LABEL[id] ?? id).join(' + ')
+              : null,
+          ]
+            .filter(Boolean)
+            .join(' · ')
+        : mixedQuote
+          ? `${activeTour.title} + ${mixedQuote.labels.slice(1).join(' + ')}`
+          : selectedAddons.length
+            ? `${activeTour.title} + ${selectedAddons.map(({ addon, qty }) =>
+                addon.flat ? addon.label : `${addon.label} ×${qty}`,
+              ).join(' + ')}`
+            : activeTour.title,
+      activityOption: isAtvFleetMix
+        ? `Fleet mix · ${fleetGuestAdults} adult rider${fleetGuestAdults === 1 ? '' : 's'}${
+            mixIds.length && mixedQuote?.discountPercent
+              ? ` · ${mixedQuote.discountPercent}% combo`
+              : ''
+          }`
+        : mixedQuote
+          ? `Combo (${mixedQuote.discountPercent}% mix discount)`
+          : undefined,
       date,
       time,
       location: bookingLocation,
@@ -818,9 +912,15 @@ export function BookingPopup({
         : undefined,
       notes: [
         notes.trim() || null,
-        mixedQuote
-          ? `Mixed activities: ${mixedQuote.labels.join(' + ')} · save ${formatIdr(mixedQuote.discountAmount)}`
-          : null,
+        isAtvFleetMix
+          ? `ATV fleet: ${singleBikes} single · ${tandemBikes} tandem · ${fleetGuestAdults} adult riders${
+              mixedQuote && mixedQuote.discountAmount > 0
+                ? ` · combo save ${formatIdr(mixedQuote.discountAmount)}`
+                : ''
+            }`
+          : mixedQuote
+            ? `Mixed activities: ${mixedQuote.labels.join(' + ')} · save ${formatIdr(mixedQuote.discountAmount)}`
+            : null,
         pickupNoteParts.join(' · '),
       ].filter(Boolean).join(' · ') || undefined,
       lineItems,
@@ -1469,6 +1569,103 @@ export function BookingPopup({
               </div>
             </div>
 
+            {isAtvFleetMix ? (
+              <div className="space-y-3 rounded-2xl border border-brand-green/15 bg-sand/40 p-3">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-brand-green-light">
+                  Your ATV bikes — mix single and tandem in one order
+                </p>
+                <p className="text-xs text-brand-green-light leading-relaxed">
+                  Example: <span className="font-semibold text-brand-green">1 single</span> +{" "}
+                  <span className="font-semibold text-brand-green">2 tandems</span> = 5 riders
+                  (1 + 2×2).
+                </p>
+                <div className="flex gap-3">
+                  <div className="flex-1">
+                    <label className="block text-brand-green font-bold text-sm mb-2">
+                      Single bikes
+                      <span className="font-medium text-brand-green-light"> · 1 rider each</span>
+                    </label>
+                    <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setSingleBikes((n) =>
+                            Math.max(kids > 0 || tandemBikes === 0 ? 1 : 0, n - 1),
+                          )
+                        }
+                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
+                      >
+                        -
+                      </button>
+                      <span className="flex-1 text-center font-bold text-brand-green text-lg">{singleBikes}</span>
+                      <button
+                        type="button"
+                        onClick={() => setSingleBikes((n) => n + 1)}
+                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <label className="block text-brand-green font-bold text-sm mb-2">
+                      Tandem bikes
+                      <span className="font-medium text-brand-green-light"> · 2 share</span>
+                    </label>
+                    <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
+                      <button
+                        type="button"
+                        onClick={() => setTandemBikes((n) => Math.max(0, n - 1))}
+                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
+                      >
+                        -
+                      </button>
+                      <span className="flex-1 text-center font-bold text-brand-green text-lg">{tandemBikes}</span>
+                      <button
+                        type="button"
+                        onClick={() => setTandemBikes((n) => n + 1)}
+                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <p className="text-xs text-brand-green-light leading-relaxed">
+                  Guests on bikes: <span className="font-semibold text-brand-green">{fleetGuestAdults}</span>
+                  {kids > 0 ? ` + ${kids} child seat${kids === 1 ? '' : 's'} on singles` : ''}
+                  {' · '}
+                  from {formatIdr(getListPrice('single-atv'))} / single · {formatIdr(getListPrice('tandem-atv'))} / tandem
+                </p>
+                {hasKidPricing ? (
+                  <div>
+                    <label className="block text-brand-green font-bold text-sm mb-2">
+                      Children on single bikes ({(activeTour.kidPrice || 0) / 1000}k)
+                    </label>
+                    <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm max-w-[12rem]">
+                      <button
+                        type="button"
+                        onClick={() => setKids(Math.max(0, kids - 1))}
+                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
+                      >
+                        -
+                      </button>
+                      <span className="flex-1 text-center font-bold text-brand-green text-lg">{kids}</span>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (singleBikes < 1) setSingleBikes(1)
+                          setKids((n) => n + 1)
+                        }}
+                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            ) : (
             <div className="flex gap-4">
               <div className="flex-1">
                 <label className="block text-brand-green font-bold text-sm mb-2">
@@ -1505,6 +1702,7 @@ export function BookingPopup({
                 </div>
               )}
             </div>
+            )}
 
             {hasKidPricing && kids > 0 && (
               <div>
@@ -1522,7 +1720,20 @@ export function BookingPopup({
             {isTandem && adults % 2 !== 0 && adults >= 2 && (
               <p className="text-amber-700 text-sm font-bold bg-amber-50 p-2 rounded-lg border border-amber-100">Tandem ATV needs an even number of riders (2, 4, 6…).</p>
             )}
-            {isInvalidPax && <p className="text-red-500 text-sm font-bold bg-red-50 p-2 rounded-lg border border-red-100">Minimum {minAdults} adult{minAdults > 1 ? 's' : ''} required{includesRafting ? ' for rafting' : ''}{isTandem ? ' (even count for tandem)' : ''}{totalPax < activeTour.minPax ? ` · ${activeTour.minPax} persons total` : ''}.</p>}
+            {fleetKidsNeedSingle ? (
+              <p className="text-amber-700 text-sm font-bold bg-amber-50 p-2 rounded-lg border border-amber-100">
+                Child seats need at least one single ATV bike.
+              </p>
+            ) : null}
+            {isInvalidPax && (
+              <p className="text-red-500 text-sm font-bold bg-red-50 p-2 rounded-lg border border-red-100">
+                {fleetNeedsBike
+                  ? 'Add at least one single or tandem ATV bike.'
+                  : fleetKidsNeedSingle
+                    ? 'Add a single ATV bike for child seats.'
+                    : `Minimum ${minAdults} adult${minAdults > 1 ? 's' : ''} required${includesRafting ? ' for rafting' : ''}${isTandem ? ' (even count for tandem)' : ''}${totalPax < activeTour.minPax ? ` · ${activeTour.minPax} persons total` : ''}.`}
+              </p>
+            )}
 
             <div>
               <label className="block text-brand-green font-bold text-sm mb-2">Special Notes (Optional)</label>
@@ -1544,7 +1755,7 @@ export function BookingPopup({
                     <div className="flex justify-between items-center text-sm text-brand-green-light">
                       <span>
                         {ACTIVITY_SHORT_LABEL[q.activityId]} · {q.activityId === 'tandem-atv'
-                          ? `${adults} riders · ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`
+                          ? `${q.units * 2} riders · ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`
                           : `${formatIdr(q.unitPrice)} × ${q.units} adult(s)`}
                       </span>
                       <span className="font-semibold text-brand-green">{formatIdr(q.activitySubtotal)}</span>

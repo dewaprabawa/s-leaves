@@ -15,6 +15,7 @@ export const PRIVATE_SHUTTLE_TOURS: Record<string, PrivateShuttleMode> = {
   'canyon-tubing': 'optional',
   'griya-beji-waterfall': 'optional',
   'tirta-empu-purification': 'optional',
+  'group-tirta-empul-purification': 'optional',
   'ubud-kecak-dance': 'optional',
   'atv-premium-package-bali': 'included',
   'swing-heaven-bali': 'required',

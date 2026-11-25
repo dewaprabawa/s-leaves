@@ -321,54 +321,50 @@ More planning: [group ATV package for 3, 4 or 5](/blog/group-atv-package-ubud-20
   },
   {
     slug: 'group-atv-package-ubud-2026',
-    title: 'Group ATV in Ubud for 3, 4 or 5 Riders (2026): Who Rides Single, Who Rides Tandem',
-    seoTitle: 'Group ATV Package Ubud 2026 | 3, 4 or 5 Riders',
+    title: 'Group ATV in Ubud (2026): 3–5 Premium, Self-Meet, or HiAce for 8–15',
+    seoTitle: 'Group ATV Package Ubud 2026 | 3–5 or HiAce 8–15',
     excerpt:
-      'Booking an ATV near Ubud for 3, 4 or 5? How to split the group between single ATVs and one tandem, what each set-up costs, and when the premium package (with a private group shuttle) beats booking bikes one by one.',
+      'Book ATV near Ubud for 3–5 with singles + one tandem, or Land & River for 2–15. Private car, self-meet, or HiAce for big groups. Prices from IDR 2,025,000.',
     publishedAt: '2026-10-12',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-mud-river-splash.jpg',
     content: `
-**What is the best way to book ATV for a group of 3, 4 or 5 in Ubud?** If everyone wants to drive, book single ATVs. If one or two guests would rather ride together — a child, a nervous rider, or a couple — put them on **one tandem** and the rest on singles. That is exactly what our [ATV premium package](/tours/atv-premium-package-bali) bundles, with a **private shuttle for your group only**, from **IDR 2,025,000** for 3 guests.
+**What is the best way to book ATV for a group near Ubud?** If you are **3–5** and one pair can share a bike, use the [ATV premium package](/tours/atv-premium-package-bali) (singles + one tandem) from **IDR 2,025,000** with a private car — or toggle **self-meet** to drop the shuttle. If **everyone wants a single**, book the 3+ tier (**IDR 700,000** each) on the [standard ATV page](/tours/bali-atv-adventure). Groups of **8–15** who also want Ayung rafting book **Land & River HiAce**. Full price ladders: [best Bali ATV price for groups](/blog/best-bali-atv-price-for-groups-2026).
 
 > **Key Takeaways**
-> - **Singles** suit riders who want their own bike and control
-> - **A tandem** suits two who would rather share: one drives, one sits behind
-> - **Premium packages:** 3 guests **2,025,000** · 4 guests **2,655,000** · 5 guests **3,240,000** — private shuttle included
+> - **Premium 3 / 4 / 5:** **2,025,000 / 2,655,000 / 3,240,000** with private car · self-meet from **1,665,000**
+> - **All singles (3+):** **700,000** each · shuttle **400,000** once or free self-meet
+> - **Land & River 2–7:** private car · **8–15:** private **HiAce** ([guide](/blog/atv-rafting-group-hiace-ubud-2026))
 > - Insurance covers **ages 6–65** — send every rider's age before you book
 
 ## Single or tandem: who rides what
 
-**Single ATV** — one rider, one quad. You control throttle and brakes the whole ride. Best for confident adults and teenagers who want the mud.
+**Single ATV** — one rider, one quad. Best for confident adults who want the mud.
 
-**Tandem ATV** — two riders on one quad. One drives, one sits behind and holds on (and takes the photos). Best for a younger child with a parent, a guest who is nervous about driving, or a couple who want to ride together. The arena team confirms who drives at the safety briefing. More detail: [single vs tandem ATV](/blog/tandem-atv-ubud-price).
+**Tandem ATV** — two on one quad. Best for a child with a parent, a nervous rider, or a couple. More detail: [single vs tandem ATV](/blog/tandem-atv-ubud-price).
 
-## Common group set-ups
+## Common set-ups (3–5 with one tandem)
 
 | Your group | Set-up | Package | Price (IDR) |
 | --- | --- | --- | --- |
-| Couple + a friend | Couple on the tandem, friend on a single | **Premium Trio** | **2,025,000** |
-| Parent + parent + child | One parent single, child on the tandem with the other parent | **Premium Trio** | **2,025,000** |
-| Four friends, one nervous rider | Two singles, nervous rider on the tandem with a friend | **Premium Squad** | **2,655,000** |
-| Family of four, younger child | Two singles, child on the tandem with a parent | **Premium Squad** | **2,655,000** |
-| Family of five, youngest child | One parent and two older kids on singles, youngest on the tandem with the other parent | **Premium Crew** | **3,240,000** |
+| Couple + a friend | Couple on tandem, friend on single | **Premium Trio** | **2,025,000** |
+| Four friends, one nervous rider | Two singles + tandem | **Premium Squad** | **2,655,000** |
+| Family of five, youngest on tandem | Three singles + tandem | **Premium Crew** | **3,240,000** |
 
-Every package includes a 1.5-hour ride at All New Bali Adventure in Sedang, lunch, helmet, boot shoes, a trail guide, insurance for ages 6–65, and the private shuttle.
+Self-meet (no car): Trio **1,665,000** · Squad **2,295,000** · Crew **2,880,000**. Toggle on the money page.
 
 ## When the package is not the right fit
 
-We would rather you book the right thing. Published 2026 prices, hotel pickup IDR 400,000 included:
-
 | Your group | Better option | Total (IDR) |
 | --- | --- | --- |
-| 3 who all want to drive | 3 singles × 700,000 + pickup | 2,500,000 |
-| 4 who all want to drive | 4 singles × 700,000 + pickup | 3,200,000 |
-| Two couples who both want to share | 2 tandems × 1,060,000 + pickup | 2,520,000 |
-| 6 or more | Mix singles and tandems | Use the [ATV price calculator](/planners/atv-price-calculator) |
+| 3 who all want to drive | 3 × 700,000 + pickup 400,000 | 2,500,000 |
+| 4 who all want to drive | 4 × 700,000 + pickup | 3,200,000 |
+| Two couples who both share | 2 tandems + pickup | ~2,520,000 |
+| 8–15 + rafting | Land & River HiAce | from **9,540,000** |
 
-Book any of these on the [standard ATV ride page](/tours/bali-atv-adventure). The premium package is for groups where **one pair shares a bike and the rest ride solo** — and want their own private car for the day.
+Book all-singles on [Bali ATV Adventure](/tours/bali-atv-adventure). Calculator: [ATV price calculator](/planners/atv-price-calculator).
 
-## Per-guest cost of the packages
+## Per-guest cost (premium with car)
 
 | Package | Guests | Price | About per guest |
 | --- | --- | --- | --- |
@@ -376,13 +372,15 @@ Book any of these on the [standard ATV ride page](/tours/bali-atv-adventure). Th
 | Premium Squad | 4 | 2,655,000 | 663,750 |
 | Premium Crew | 5 | 3,240,000 | 648,000 |
 
-That is lunch, gear, insurance, the ride, and a private car — per guest, all in.
+## Big groups (8–15)
+
+Land & River: every guest on a **single ATV**, then **Ayung rafting**, private **HiAce** — 8 / 10 / 12 / 15 at **9,540,000 / 11,610,000 / 13,680,000 / 16,785,000**. [HiAce group guide](/blog/atv-rafting-group-hiace-ubud-2026).
 
 ## Kids and ages
 
-Insurance covers riders aged **6–65**. Younger children usually ride as the tandem passenger with a parent, and the arena team decides at the briefing. Send each child's age and height on WhatsApp before you book. Full family notes: [Bali ATV, rafting and jeep with kids](/blog/bali-atv-rafting-jeep-with-kids-2026).
+Insurance **6–65**. Younger children usually ride tandem with a parent. [ATV with kids](/blog/bali-atv-rafting-jeep-with-kids-2026).
 
-**Ready?** [Book the ATV premium package](/tours/atv-premium-package-bali) — pick Trio (3), Squad (4) or Crew (5). Want the numbers first? Read the [premium package price breakdown](/blog/atv-premium-package-bali-2026). Bringing the kids? See the [family ATV package guide](/blog/family-atv-package-ubud-2026). Comparing deals? Here is [the promo math](/blog/atv-premium-promo-deal-ubud-2026).
+**Ready?** [Book the ATV premium package](/tours/atv-premium-package-bali) · [group price guide](/blog/best-bali-atv-price-for-groups-2026) · [family guide](/blog/family-atv-package-ubud-2026).
 `,
   },
   {
@@ -667,7 +665,7 @@ Full math: [ATV premium package Bali 2026](/blog/atv-premium-package-bali-2026) 
 | Waterfall | **Small man-made** section on our course | Their premium waterfall feature |
 | Rafting add-on | **Land & River** packages (shuttle all day) | Separate combo sellers |
 
-We do **not** sell Kuber, Gorilla Cave, or Alasan tickets. Honest Sedang track notes: [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026).
+We do **not** sell Kuber, Gorilla Cave, or Alasan tickets. Honest Sedang track notes: [ATV vs Kuber cave](/blog/bali-atv-vs-kuber-cave-2026). Saw **Fun ATV Bali** instead? That is a Sukawati brand — [Fun ATV vs All New](/blog/fun-atv-bali-vs-all-new-bali-adventure-2026). Package chooser: [best ATV package for your group](/blog/best-atv-bali-ubud-2026).
 
 ## When to book Sekar’s premium package
 
@@ -855,6 +853,107 @@ Ages: ATV from **6**; rafting typically **7+** with swimming confidence. Insuran
 **Is this Kuber Premium?** No — different operator, different product. [Compare](/blog/atv-premium-package-vs-kuber-premium-2026).
 
 **Ready?** Open [ATV premium package Bali](/tours/atv-premium-package-bali), toggle shuttle on, scroll to **Group HiAce (8–15)**, tap **Book**, and send date + ages + hotel pin on WhatsApp.
+`,
+  },
+  {
+    slug: 'best-bali-atv-price-for-groups-2026',
+    title: 'Best Bali ATV Price for Groups 2026: Published Totals for 3, 4, 5, 8–15',
+    seoTitle: 'Best Bali ATV Price for Groups 2026 | From 700K',
+    excerpt:
+      'Best published Bali ATV price for groups at Sedang: 700K each for 3+ singles, Premium packages from 2,025,000, Land & River HiAce from 9,540,000. Shuttle or self-meet. WhatsApp — no deposit.',
+    publishedAt: '2026-11-22',
+    author: 'Sekar Bali Activity',
+    image: '/images/adventures/atv-arena-quad-fleet.jpg',
+    content: `
+**What is the best Bali ATV price for groups in 2026?** At **All New Bali Adventure in Sedang** (booked with Sekar Bali Activity), the best published **ticket** for groups of **3 or more on single ATVs** is **IDR 700,000 per person** — lunch, helmet, boots, and insurance (ages 6–65) included. Add **IDR 400,000 once** for a private Ubud shuttle, or self-meet free. Groups of **3–5** who share one tandem often pay less per guest with the [ATV premium package](/tours/atv-premium-package-bali) (from **IDR 2,025,000** all-in with car). Groups of **8–15** doing ATV + rafting use [Land & River HiAce](/blog/atv-rafting-group-hiace-ubud-2026) from **IDR 9,540,000**. WhatsApp — **no payment to inquire**.
+
+> **Key Takeaways**
+> - **3+ all singles:** **700,000**/person · shuttle **400,000** once (Ubud) or self-meet
+> - **Premium Trio / Squad / Crew (one tandem):** **2,025,000 / 2,655,000 / 3,240,000** ≈ **648K–675K**/guest all-in with car
+> - **Self-meet premium:** from **1,665,000** (3 guests) — same bikes, no car
+> - **Land & River HiAce 8 / 10 / 12 / 15:** **9,540,000 / 11,610,000 / 13,680,000 / 16,785,000**
+> - Stickers under ~**500,000** usually change arena, prepaid rules, or drop lunch — compare inclusions, not stickers
+
+## What is the best Bali ATV price for groups?
+
+The honest answer is a **decision**, not one number. “Best” depends on whether everyone wants their own bike, whether you need a private car, and whether you add Ayung rafting.
+
+| Your group | Best published option | About per guest |
+| --- | --- | --- |
+| 3+ all want singles, own driver | 700,000 × N on [ATV page](/tours/bali-atv-adventure) | **700,000** |
+| 3+ all singles + hotel car | Same + **400,000** shuttle once | **~780–833K** (3–5 guests) |
+| 3–5 with one shared tandem + car | [Premium package](/tours/atv-premium-package-bali) | **~648–675K** |
+| 2–7 ATV + rafting + car | [Land & River](/blog/atv-rafting-premium-package-2026) | from **~1.09–1.24M** |
+| 8–15 ATV + rafting + bus | [HiAce Land & River](/blog/atv-rafting-group-hiace-ubud-2026) | **~1.12–1.19M** |
+
+Bahasa rombongan: [harga ATV Ubud rombongan](/blog/harga-atv-ubud-rombongan-2026).
+
+## Group price table (ticket + shuttle)
+
+Published **2026** Sedang rates. Shuttle is **one fee per booking**, not per person.
+
+| Guests | All singles (ticket) | + Ubud shuttle | Notes |
+| --- | --- | --- | --- |
+| 3 | 2,100,000 | **2,500,000** | 700K tier |
+| 4 | 2,800,000 | **3,200,000** | ≈ 800K each with car |
+| 5 | 3,500,000 | **3,900,000** | ≈ 780K each with car |
+| 3 (1 single + tandem) Premium | — | **2,025,000** | ≈ 675K each |
+| 4 Premium Squad | — | **2,655,000** | ≈ 664K each |
+| 5 Premium Crew | — | **3,240,000** | ≈ 648K each |
+
+South-coast shuttle is **IDR 650,000** when charged separately. Premium packages use the Ubud-area car rate in the published math. Calculator: [ATV price calculator](/planners/atv-price-calculator).
+
+## When is a 490K “group deal” not the better buy?
+
+SERP ads often show **440K–550K per person** for large groups with “private transport included.” Before you book on sticker alone, check:
+
+1. **Which arena** — Sedang mud trail vs another park’s loop  
+2. **Lunch and insurance** — in the ticket or paid at the gate  
+3. **Bike class** — our published ride is a maintained **sport ATV** day with gear  
+4. **Car privacy** — shared minibus vs your own car/HiAce  
+5. **Payment** — prepaid unlock vs WhatsApp confirm with **pay on the spot**
+
+We do **not** claim “cheapest in Bali.” We claim **published group math** you can cite before you travel. More on stickers: [ATV price with no hidden fees](/blog/bali-atv-price-no-hidden-fees-2026) · [vs Kuber Premium](/blog/atv-premium-package-vs-kuber-premium-2026).
+
+## Singles for everyone vs Premium (one tandem)
+
+- **All singles** — every adult drives. Use the 3+ tier on the [standard ATV page](/tours/bali-atv-adventure).  
+- **One tandem** — child, nervous rider, or couple shares. Use [Premium Trio / Squad / Crew](/blog/group-atv-package-ubud-2026).
+
+## Self-meet vs private car vs HiAce
+
+| Transport | When | Fee in package math |
+| --- | --- | --- |
+| **Self-meet** | Villa already has a driver | **0** — meet at Sedang |
+| **Private car** | 2–7 guests | **400,000** (Ubud-area) |
+| **Private HiAce** | 8–15 Land & River | **1,400,000** |
+
+Toggle shuttle / self-meet on the [premium money page](/tours/atv-premium-package-bali).
+
+## ATV-only vs Land & River for groups
+
+ATV-only is about **4–5 hours** door to door from Ubud. Land & River (ATV then Ayung Class II–III) is about **5–7 hours**; latest ATV start with rafting is **1:00 PM**. Full stacks: [Land & River](/blog/atv-rafting-premium-package-2026) · [HiAce 8–15](/blog/atv-rafting-group-hiace-ubud-2026).
+
+## What four friends pay (camera-ready total)
+
+Four adults, **all singles**, Ubud hotel, private car:
+
+- Tickets: 4 × 700,000 = **2,800,000**  
+- Shuttle: **400,000**  
+- **Day total: IDR 3,200,000** (≈ **800,000** each)
+
+Four adults, **Premium Squad** (two singles + one tandem) with car: **IDR 2,655,000** (≈ **663,750** each) — better when one pair shares.
+
+Film tip for a group day video: open on the **IDR total on WhatsApp**, cut to Sedang fleet, mud splash, lunch, then the same private car home. Title idea: *“4 friends Bali ATV — real 2026 total”*. Description should link this page and [bali-atv-adventure](/tours/bali-atv-adventure).
+
+## How to book on WhatsApp
+
+1. Open [ATV premium](/tours/atv-premium-package-bali) or [standard ATV](/tours/bali-atv-adventure).  
+2. Send **date**, **guest count**, **single/tandem mix**, **ages**, **hotel pin** or self-meet.  
+3. We confirm the **same IDR** as published here.  
+4. **Pay on the spot** — cash, QRIS, or card. No deposit to inquire.
+
+**Ready?** Pick your row in the table, then [book the group day](/tours/atv-premium-package-bali) — or start from [Sedang ATV tickets](/tours/bali-atv-adventure).
 `,
   },
 ]

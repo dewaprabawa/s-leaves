@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Car, Clock, ExternalLink, MapPin, MessageCircle } from "lucide-react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
-import { BOOKABLE_TOURS } from "@/components/BookNowButton"
+import { ATV_FLEET_TOUR, BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, getCyclingPromoDisplay, getListPrice, getPromoListPrice } from "@/lib/pricing"
 import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
@@ -45,10 +45,16 @@ import {
   meetCopyForPackage,
 } from "@/data/atvPremium"
 import {
+  GROUP_PURIFICATION_PACKAGES,
+  GROUP_PURIFICATION_SLUG,
+  groupPurificationFromPerGuestIdr,
+} from "@/data/groupPurification"
+import {
   COOKING_CLASS_PRICE_IDR,
   COOKING_CLASS_PRIVATE_COUPLE_IDR,
   COOKING_CLASS_PRIVATE_SOLO_IDR,
   COOKING_CLASS_STANDARD_PRICE_IDR,
+  MELUKAT_PRICE_IDR,
 } from "@/data/cultureSales"
 import {
   BALI_SAFARI_PRICES,
@@ -129,6 +135,14 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
       tierLabel: `${first.name} · ${first.guests} guests · ${ATV_PREMIUM_DISCOUNT_PERCENT}% off`,
     }
   }
+  if (tourSlug === GROUP_PURIFICATION_SLUG) {
+    const first = GROUP_PURIFICATION_PACKAGES[0]
+    return {
+      promoPrice: first.priceIdr,
+      standardPrice: first.partsIdr,
+      tierLabel: `${first.guests} guests · ${first.discountPercent}% off · ≈ ${formatIdr(first.perGuestIdr)} each`,
+    }
+  }
   if (tourSlug === "atv-rafting-combo") {
     return {
       promoPrice: fallbackBase,
@@ -160,7 +174,7 @@ function getPromoPricesForSlug(tourSlug: string, fallbackBase: number) {
 }
 
 const SLUG_TO_BOOKABLE_IDS: Record<string, string[]> = {
-  "bali-atv-adventure": ["single-atv", "tandem-atv"],
+  // Fleet mix is built in buildTourConfigs (singles and/or tandems in one order).
   "whitewater-rafting": ["rafting"],
   "canyon-tubing": ["canyon-tubing"],
   "ubud-ricefield-cycling-tour": ["cycling"],
@@ -210,6 +224,8 @@ function primaryBookLabel(tourSlug: string): string {
       return "Book Kecak"
     case "tirta-empu-purification":
       return "Book Melukat"
+    case GROUP_PURIFICATION_SLUG:
+      return "Book Group Melukat"
     case "luwak-coffee-plantation":
       return "Book Coffee Tasting"
     case "full-day-ubud-tour":
@@ -230,6 +246,10 @@ function stickyBookLabel(tourSlug: string): string {
 }
 
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
+  if (props.tourSlug === "bali-atv-adventure") {
+    return [ATV_FLEET_TOUR]
+  }
+
   const mapped = SLUG_TO_BOOKABLE_IDS[props.tourSlug]
   if (mapped) {
     const configs = BOOKABLE_TOURS.filter((t) => mapped.includes(t.id))
@@ -259,6 +279,21 @@ function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
         includedMeetCopy: meetCopyForPackage(pkg),
       }
     })
+  }
+
+  if (props.tourSlug === GROUP_PURIFICATION_SLUG) {
+    return GROUP_PURIFICATION_PACKAGES.map((pkg) => ({
+      id: `${props.tourId}-${pkg.key}`,
+      title: `${pkg.name} — ${pkg.guests} guests · ${pkg.discountPercent}% off`,
+      times: ["08:00", "09:00"],
+      adultPrice: pkg.priceIdr,
+      kidPrice: null,
+      minPax: pkg.guests,
+      fixedPax: pkg.guests,
+      compareAtPrice: pkg.partsIdr,
+      perBooking: true,
+      privateShuttle: true,
+    }))
   }
 
   if (props.tourSlug === LICENSED_GUIDE_SLUG) {
@@ -400,15 +435,18 @@ export default function TourBookingCard(props: TourBookingCardProps) {
   const groupPricing = getGroupPricedTour(props.tourSlug)
   const isGuideOnly = props.tourSlug === LICENSED_GUIDE_SLUG
   const isAtvPremium = props.tourSlug === ATV_PREMIUM_SLUG
+  const isGroupMelukat = props.tourSlug === GROUP_PURIFICATION_SLUG
   const consultationActivity =
     props.tourSlug === "balinese-cooking-class"
       ? `${props.title} — promo ${formatIdr(COOKING_CLASS_PRICE_IDR)} / person`
       : props.tourSlug === "ubud-ricefield-cycling-tour"
         ? `${props.title} — promo ${formatIdr(CYCLING_PROMO_IDR)} / person (was ${formatIdr(CYCLING_LIST_IDR)})`
       : props.tourSlug === "bali-atv-adventure"
-        ? `${props.title} — single from ${formatIdr(props.basePrice)}`
+        ? `${props.title} — single from ${formatIdr(props.basePrice)} · tandem ${formatIdr(getListPrice("tandem-atv"))} · mix OK`
         : props.tourSlug === ATV_PREMIUM_SLUG
           ? `${props.title} — ${ALL_ATV_PREMIUM_PACKAGES.map((pkg) => `${pkg.name} ${formatIdr(pkg.priceIdr)}`).join(" · ")}`
+        : isGroupMelukat
+          ? `${props.title} — from ${formatIdr(GROUP_PURIFICATION_PACKAGES[0].priceIdr)} for 4 (≈ ${formatIdr(groupPurificationFromPerGuestIdr())} each · was ${formatIdr(MELUKAT_PRICE_IDR)})`
         : props.tourSlug === "atv-rafting-combo"
           ? `${props.title} — from ${formatIdr(props.basePrice)} (ATV 750K + rafting 500K · 10% mix)`
           : props.title
@@ -444,6 +482,8 @@ export default function TourBookingCard(props: TourBookingCardProps) {
                     ? "From · per booking"
                     : isAtvPremium
                       ? `From · ${ATV_PREMIUM_PACKAGES[0].guests} guests`
+                      : isGroupMelukat
+                        ? `From · ${GROUP_PURIFICATION_PACKAGES[0].guests} guests`
                       : "From"}
             </p>
             <div className="flex items-baseline gap-2">
@@ -548,9 +588,31 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           ) : null}
           {props.tourSlug === "bali-atv-adventure" ? (
             <p className="text-sm text-brand-green-light mt-1">
-              Tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing ·{" "}
+              Order <span className="font-semibold text-brand-green">single bikes, tandem bikes, or both</span> in one booking ·
+              tandem {formatIdr(getListPrice("tandem-atv"))} for two sharing ·{" "}
               <Link href={`/tours/${ATV_PREMIUM_SLUG}`} className="font-semibold text-brand-green underline-offset-2 hover:underline">
-                Group of 3–5? Premium package {ATV_PREMIUM_DISCOUNT_PERCENT}% off
+                Group of 3–5 with one tandem? Premium {ATV_PREMIUM_DISCOUNT_PERCENT}% off
+              </Link>
+            </p>
+          ) : null}
+          {isGroupMelukat ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              4 / 6 / 8 / 10 guests · 10–12% off vs {formatIdr(MELUKAT_PRICE_IDR)} each ·{" "}
+              <Link
+                href="/tours/tirta-empu-purification"
+                className="font-semibold text-brand-green underline-offset-2 hover:underline"
+              >
+                1–3 guests? Standard melukat
+              </Link>
+            </p>
+          ) : null}
+          {props.tourSlug === "tirta-empu-purification" ? (
+            <p className="text-sm text-brand-green-light mt-1">
+              <Link
+                href={`/tours/${GROUP_PURIFICATION_SLUG}`}
+                className="font-semibold text-brand-green underline-offset-2 hover:underline"
+              >
+                Group of 4+? Group purification 10–12% off
               </Link>
             </p>
           ) : null}
@@ -759,6 +821,9 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           onClose={() => setOpen(false)}
           tour={primary}
           tourOptions={configs.length > 1 ? configs : undefined}
+          initialFleet={
+            primary.atvFleetMix ? { singleBikes: 1, tandemBikes: 0 } : undefined
+          }
         />
       )}
     </>

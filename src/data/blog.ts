@@ -355,24 +355,40 @@ Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) nea
   {
     slug: 'how-much-does-atv-cost-bali-ubud-2026',
     title: 'ATV Price in Bali / Ubud (2026)',
-    seoTitle: 'ATV Price Bali Ubud | From 750K',
+    seoTitle: 'ATV Adventures Bali Price | From 750K',
     excerpt:
-      'ATV price in Bali / Ubud from IDR 750,000 (single) / 1.1M (tandem). Lunch and gear in. Pickup 400K or self-meet. Book WhatsApp.',
+      'ATV adventures Bali price 2026: single from IDR 750,000 · tandem 1.1M at All New Bali Adventure. Lunch and gear in. Pickup 400K or self-meet. Book WhatsApp.',
     publishedAt: '2026-09-03',
     author: 'Sekar Bali Activity',
     image: '/images/adventures/atv-adventure.jpg',
     content: `
-**How much does it cost to ride an ATV in Ubud, Bali?** With Sekar Bali Activity in 2026, a **Single ATV** starts at **IDR 750,000** (IDR 725,000 each for 2 · IDR 700,000 for 3+) and a **Tandem ATV** is **IDR 1,100,000** for two on one bike. Packages at **All New Bali Adventure** include lunch, boot shoes, helmet, insurance, and a full safety briefing. Hotel pickup is **IDR 400,000** or free self-meet.
+**How much does an ATV adventure in Bali cost?** With Sekar Bali Activity in 2026, a **Single ATV** starts at **IDR 750,000** (IDR 725,000 each for 2 · IDR 700,000 for 3+) and a **Tandem ATV** is **IDR 1,100,000** for two on one bike. Packages at **All New Bali Adventure** include lunch, boot shoes, helmet, insurance, and a full safety briefing. Hotel pickup is **IDR 400,000** from Ubud / **IDR 650,000** from the south coast — or free self-meet.
 
 > **Key Takeaways**
-> - Single ATV: **IDR 750,000** (1 pax) · **IDR 725,000** (2) · **IDR 700,000** (3+)
+> - **ATV adventures Bali price (Sekar):** Single **IDR 750,000** (1) · **725,000** (2) · **700,000** (3+)
 > - Tandem ATV: **IDR 1,100,000** for 2 pax sharing one quad
 > - Included: lunch, boot shoes, helmet, insurance, English-speaking guide
-> - Pickup: **IDR 400,000** hotel pickup charge — or self-meet free
-> - Optional: **ATV + Wos River tubing** combo after the track
+> - Pickup: **IDR 400,000** Ubud / **650,000** south — or self-meet free
+> - Run the numbers: [ATV price calculator](/planners/atv-price-calculator)
 > - Book on WhatsApp — **no upfront payment** to inquire
 
 ---
+
+## ATV adventures Bali price (2026)
+
+Searching **ATV adventures Bali price** usually means: what does a guided Ubud-area quad day cost once lunch, gear, and pickup are clear? Here is the published Sekar ladder at **All New Bali Adventure** in Sedang — not a third-party sticker for another arena.
+
+| Adventure option | Guests | From price (IDR) | What’s included |
+| --- | --- | --- | --- |
+| Single ATV adventure | 1 | **750,000** | 1.5h track · lunch · gear · insurance · briefing |
+| Single ATV adventure | 2 | **725,000** each | Same · group tier |
+| Single ATV adventure | 3+ | **700,000** each | Same · group tier |
+| Tandem ATV adventure | 2 sharing | **1,100,000** | Same · one bike for two |
+| Hotel pickup (optional) | — | **400,000** Ubud / **650,000** south | Or free self-meet at Sedang |
+| [ATV + Ayung rafting](/tours/atv-rafting-combo) | Same day | from **1,250,000** | 10% mix · rafting min 2 |
+| [ATV premium package](/tours/atv-premium-package-bali) | 3–5 | from **2,025,000** | Singles + 1 tandem + private shuttle · 10% off |
+
+Arena ticket detail: [All New Bali Adventure price](/blog/all-new-bali-adventure-price-2026). Instant math: [ATV price calculator](/planners/atv-price-calculator). Book: [Bali ATV Adventure](/tours/bali-atv-adventure).
 
 ## Bali ATV Price Table (Ubud / Pejeng, 2026)
 
@@ -382,10 +398,10 @@ Prefer more splash than mud? [Whitewater rafting](/tours/whitewater-rafting) nea
 | Single ATV | 2 | 725,000 each | Same inclusions · group tier |
 | Single ATV | 3+ | 700,000 each | Same inclusions · group tier |
 | Tandem ATV | 2 sharing | 1,100,000 | Same inclusions · one bike for two |
-| Optional pickup | — | 400,000 | Hotel pickup charge |
+| Optional pickup | — | 400,000 Ubud / 650,000 south | Hotel pickup charge |
 | Canyon tubing add-on | Ask | 500,000 · 450,000 for 2+ | Wos River float after ATV |
 
-Aggregator listings often hide whether lunch, insurance, or pickup are extras. Our [adventure packages page](/blog/bali-adventure-packages-prices-2026) and [ATV tour guide](/blog/bali-atv-tour-ubud-guide) keep IDR totals transparent before you message WhatsApp.
+Aggregator listings often hide whether lunch, insurance, or pickup are extras. Our [adventure packages page](/blog/bali-adventure-packages-prices-2026) and [ATV tour guide](/blog/bali-atv-tour-ubud-guide) keep IDR totals transparent before you message WhatsApp. Comparing Sukawati’s Fun ATV brand? [Fun ATV Bali vs All New](/blog/fun-atv-bali-vs-all-new-bali-adventure-2026).
 
 ## What “From IDR 750K” Actually Buys
 
@@ -432,7 +448,7 @@ Step-by-step: [How to book on WhatsApp](/blog/how-to-book-bali-adventure-whatsap
 
 **Booking for 3–5 with one tandem?** The [ATV premium package](/tours/atv-premium-package-bali) is IDR 2,025,000 (3 guests), 2,655,000 (4) or 3,240,000 (5) with a private group shuttle — 10% off the same parts booked separately. [Package math](/blog/atv-premium-package-bali-2026).
 
-**Ready to lock a 2026 ATV price?** Book the [Bali ATV Adventure](/tours/bali-atv-adventure) or compare all [packages & prices](/#pricing).
+**Ready to lock a 2026 ATV adventures Bali price?** Book the [Bali ATV Adventure](/tours/bali-atv-adventure), run the [ATV price calculator](/planners/atv-price-calculator), or open the [ATV premium package](/tours/atv-premium-package-bali) for groups of 3–5.
 `
   },
   {

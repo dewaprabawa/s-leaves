@@ -20,6 +20,7 @@ export const ATV_PREMIUM_POST_SLUGS = new Set([
   "atv-premium-package-vs-kuber-premium-2026",
   "atv-christmas-new-year-promo-ubud-2026",
   "atv-rafting-group-hiace-ubud-2026",
+  "best-bali-atv-price-for-groups-2026",
 ])
 
 export type AtvPremiumVehicle = "none" | "car" | "hiace"

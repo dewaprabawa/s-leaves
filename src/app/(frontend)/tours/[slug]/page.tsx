@@ -14,6 +14,7 @@ import { isPayOnSpotTour } from "@/data/payOnSpot"
 import PrivateShuttleNote from "@/components/PrivateShuttleNote"
 import { getPrivateShuttleMode } from "@/data/privateShuttle"
 import AtvPremiumShowcase from "@/components/AtvPremiumShowcase"
+import GroupPurificationShowcase from "@/components/GroupPurificationShowcase"
 import AtvWorthItSection from "@/components/AtvWorthItSection"
 import CyclingWorthItSection from "@/components/CyclingWorthItSection"
 import ActivityWorthItSection from "@/components/ActivityWorthItSection"
@@ -73,6 +74,10 @@ import {
   ATV_RAFTING_HIACE_PACKAGES,
   ATV_RAFTING_PREMIUM_PACKAGES,
 } from "@/data/atvPremium"
+import {
+  GROUP_PURIFICATION_PACKAGES,
+  GROUP_PURIFICATION_SLUG,
+} from "@/data/groupPurification"
 import { ACTIVITY_GEO_UPDATED, getActivityGeo } from "@/data/activityGeo"
 import { getTourPageKeywords } from "@/data/activityKeywords"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, PICKUP_FEE_IDR, TIER_PRICES_IDR } from "@/lib/pricing"
@@ -819,6 +824,42 @@ function buildTourSchema(tour: Tour) {
     }
   }
 
+  if (tour.slug === GROUP_PURIFICATION_SLUG) {
+    const prices = GROUP_PURIFICATION_PACKAGES.map((pkg) => pkg.priceIdr)
+    return {
+      ...base,
+      offers: {
+        "@type": "AggregateOffer",
+        name: tour.title,
+        lowPrice: String(Math.min(...prices)),
+        highPrice: String(Math.max(...prices)),
+        priceCurrency: "IDR",
+        offerCount: GROUP_PURIFICATION_PACKAGES.length,
+        availability: "https://schema.org/InStock",
+        url: `${SITE_URL}/tours/${tour.slug}`,
+        description: tour.included.join(", "),
+        offers: GROUP_PURIFICATION_PACKAGES.map((pkg) => ({
+          "@type": "Offer",
+          name: pkg.name,
+          description: `${pkg.guests} guests · ${pkg.discountPercent}% off vs solo melukat rate`,
+          priceSpecification: {
+            "@type": "UnitPriceSpecification",
+            price: pkg.priceIdr,
+            priceCurrency: "IDR",
+            unitText: `per package, ${pkg.guests} guests`,
+          },
+          eligibleQuantity: {
+            "@type": "QuantitativeValue",
+            value: pkg.guests,
+            unitText: "guests",
+          },
+          availability: "https://schema.org/InStock",
+          url: `${SITE_URL}/tours/${tour.slug}`,
+        })),
+      },
+    }
+  }
+
   if (tour.slug === LICENSED_GUIDE_SLUG) {
     const guideOnlyOffers = GUIDE_LANGUAGES.map((lang) => ({
       "@type": "Offer" as const,
@@ -1534,6 +1575,10 @@ export default async function TourPage({ params }: Props) {
             )}
 
             {tour.slug === ATV_PREMIUM_SLUG ? <AtvPremiumShowcase /> : null}
+            {tour.slug === GROUP_PURIFICATION_SLUG ? <GroupPurificationShowcase /> : null}
+            {tour.slug === GROUP_PURIFICATION_SLUG ? (
+              <ActivityWorthItSection variant="melukat" />
+            ) : null}
 
             {isAtvArenaTour(tour.slug) ? <AtvWorthItSection /> : null}
 

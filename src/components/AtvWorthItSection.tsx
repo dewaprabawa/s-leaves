@@ -81,7 +81,7 @@ export default function AtvWorthItSection() {
 
         <div className="grid gap-4 md:grid-cols-2">
           <article className="overflow-hidden rounded-2xl border border-accent-gold/40 bg-white/5">
-            <div className="relative aspect-[3/4] w-full">
+            <div className="relative h-40 w-full overflow-hidden md:h-auto md:aspect-[3/4]">
               <Image
                 src="/images/adventures/atv-350cc-sport-quad.jpg"
                 alt="350cc sport ATV quad lined up at All New Bali Adventure, with a front rack, light bar and knobby tyres"
@@ -107,7 +107,7 @@ export default function AtvWorthItSection() {
           </article>
 
           <article className="overflow-hidden rounded-2xl border border-accent-gold/40 bg-white/5">
-            <div className="relative aspect-[3/4] w-full">
+            <div className="relative h-40 w-full overflow-hidden md:h-auto md:aspect-[3/4]">
               <Image
                 src="/images/adventures/atv-briefing-session.jpg"
                 alt="Riders in yellow helmets and rubber boots at the ATV safety briefing in the jungle at All New Bali Adventure"
@@ -138,7 +138,7 @@ export default function AtvWorthItSection() {
               key={card.src}
               className="overflow-hidden rounded-2xl border border-accent-gold/40 bg-white/5 backdrop-blur-sm"
             >
-              <div className="relative aspect-[3/2] w-full">
+              <div className="relative h-32 w-full overflow-hidden sm:h-auto sm:aspect-[3/2]">
                 <Image
                   src={card.src}
                   alt={card.alt}

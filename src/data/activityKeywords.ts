@@ -29,6 +29,7 @@ export type ActivityKeywordSlug =
   | 'full-day-ubud-tour'
   | 'half-day-ubud-tanah-lot-tour'
   | 'tirta-empu-purification'
+  | 'group-tirta-empul-purification'
   | 'balinese-cooking-class'
   | 'batur-sunrise-jeep-tour'
   | 'swing-heaven-bali'
@@ -147,6 +148,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'ATV premium package Bali',
       'private ATV package Bali',
       'group ATV package Ubud',
+      'best Bali ATV price for groups',
       'ATV package with private transfer Bali',
       'ATV rafting premium package Bali',
       'ATV rafting group HiAce Ubud',
@@ -160,6 +162,9 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
       'family ATV package Bali',
       'ATV Bali with hotel pickup',
       'ATV for 3 4 5 people Bali',
+      'ATV Ubud group price',
+      'ATV for 4 people Bali',
+      'ATV for 5 people Bali',
       'ATV rafting for 8 people Bali',
       'ATV rafting for 10 people Ubud',
       'ATV rafting for 15 people Bali',
@@ -176,6 +181,7 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
     compare: [
       'ATV package vs booking separately',
       'single vs tandem ATV for groups',
+      'best ATV group deal vs cheap sticker',
       'ATV premium package vs Kuber Premium',
       'Kuber Premium vs All New Bali Adventure',
       'ATV package with shuttle vs self meet',
@@ -356,6 +362,24 @@ export const KEYWORD_CLUSTERS: Record<ActivityKeywordSlug, KeywordCluster> = {
     compare: [
       'Tirta Empul vs Griya Beji Waterfall',
       'private melukat vs walk-in ticket',
+    ],
+  },
+  'group-tirta-empul-purification': {
+    head: [
+      'group Tirta Empul purification',
+      'group melukat Bali',
+      'Tirta Empul group discount',
+      'group purification ceremony Bali',
+    ],
+    book: [
+      'book group melukat Tirta Empul',
+      'Tirta Empul for groups of 4',
+      'family melukat Tirta Empul',
+      'retreat group purification Bali',
+      'Tirta Empul group package price',
+    ],
+    compare: [
+      'group vs solo Tirta Empul melukat',
     ],
   },
   'balinese-cooking-class': {
@@ -611,6 +635,7 @@ export const ACTIVITY_KEYWORDS: Record<ActivityKeywordSlug, string[]> = {
   'full-day-ubud-tour': flattenCluster(KEYWORD_CLUSTERS['full-day-ubud-tour']),
   'half-day-ubud-tanah-lot-tour': flattenCluster(KEYWORD_CLUSTERS['half-day-ubud-tanah-lot-tour']),
   'tirta-empu-purification': flattenCluster(KEYWORD_CLUSTERS['tirta-empu-purification']),
+  'group-tirta-empul-purification': flattenCluster(KEYWORD_CLUSTERS['group-tirta-empul-purification']),
   'balinese-cooking-class': flattenCluster(KEYWORD_CLUSTERS['balinese-cooking-class']),
   'batur-sunrise-jeep-tour': flattenCluster(KEYWORD_CLUSTERS['batur-sunrise-jeep-tour']),
   'swing-heaven-bali': flattenCluster(KEYWORD_CLUSTERS['swing-heaven-bali']),
@@ -675,6 +700,7 @@ const ACTIVITY_ORDER: ActivityKeywordSlug[] = [
   'canyon-tubing',
   'batur-sunrise-jeep-tour',
   'tirta-empu-purification',
+  'group-tirta-empul-purification',
   'griya-beji-waterfall',
   'ubud-kecak-dance',
   'swing-heaven-bali',
@@ -955,6 +981,12 @@ const BLOG_TO_ACTIVITY: Record<string, ActivityKeywordSlug | ActivityKeywordSlug
   'premium-atv-adventure-itinerary-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'premium-atv-adventure-worth-it-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'group-atv-package-ubud-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
+  'best-bali-atv-price-for-groups-2026': [
+    'atv-premium-package-bali',
+    'bali-atv-adventure',
+    'atv-rafting-combo',
+  ],
+  'harga-atv-ubud-rombongan-2026': 'bali-atv-adventure',
   'atv-package-private-transfer-bali-2026': ['atv-premium-package-bali', 'bali-atv-adventure'],
   'private-shuttle-vs-grab-bali-activities-2026': ['bali-atv-adventure', 'whitewater-rafting', 'canyon-tubing'],
   'atv-rafting-premium-package-2026': ['atv-premium-package-bali', 'atv-rafting-combo'],
@@ -1097,6 +1129,21 @@ const BLOG_EXTRA_KEYWORDS: Record<string, string[]> = {
     'ATV for 4 people Ubud',
     'ATV for 5 people Bali',
     'family ATV Ubud tandem',
+  ],
+  'best-bali-atv-price-for-groups-2026': [
+    'best Bali ATV price for groups',
+    'ATV Ubud group price',
+    'ATV for 4 people Bali',
+    'ATV for 5 people Bali',
+    'group ATV discount Bali 2026',
+    'ATV Bali private shuttle group',
+  ],
+  'harga-atv-ubud-rombongan-2026': [
+    'harga ATV Ubud rombongan',
+    'harga ATV Ubud 3 orang',
+    'harga ATV Ubud 4 orang',
+    'harga ATV Ubud 5 orang',
+    'paket ATV rombongan Ubud',
   ],
   'atv-rafting-premium-package-2026': [
     'ATV rafting package Bali 2026',

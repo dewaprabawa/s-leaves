@@ -37,6 +37,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Who rides single, who rides tandem — families, couples with a friend, birthday groups.',
     },
     {
+      title: 'Best Bali ATV price for groups',
+      href: '/blog/best-bali-atv-price-for-groups-2026',
+      blurb: 'Published totals for 3–5 singles, Premium packages, and HiAce Land & River 8–15.',
+    },
+    {
       title: 'ATV with a private transfer',
       href: '/blog/atv-package-private-transfer-bali-2026',
       blurb: 'From Seminyak, Canggu, Kuta or Ubud — drive times and what the private car means.',
@@ -188,9 +193,14 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       blurb: 'Singles + 1 tandem + a private shuttle for your group — 10% off booking separately.',
     },
     {
-      title: 'Best ATV in Bali: how to choose',
+      title: 'Best ATV package: how to choose',
       href: '/blog/best-atv-bali-ubud-2026',
-      blurb: 'Tunnel vs mud, 6-point checklist travelers repeat.',
+      blurb: 'Match group size, shuttle, and terrain — not a slogan.',
+    },
+    {
+      title: 'Fun ATV Bali vs All New',
+      href: '/blog/fun-atv-bali-vs-all-new-bali-adventure-2026',
+      blurb: 'Sukawati brand vs Sedang mud arena — published prices side by side.',
     },
     {
       title: 'ATV cave tunnel in Bali',
@@ -652,6 +662,11 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
   ],
   'tirta-empu-purification': [
     {
+      title: 'Group Tirta Empul purification',
+      href: '/tours/group-tirta-empul-purification',
+      blurb: '4–10 guests · 10–12% off the published 780K rate · one WhatsApp booking.',
+    },
+    {
       title: 'Best price Tirta Empul tour 2026',
       href: '/blog/best-price-tirta-empul-tour-2026',
       blurb: 'Published 780K spiritual package · pickup from every Bali zone as an extra.',
@@ -690,6 +705,38 @@ export const TOUR_RELATED_GUIDES: Record<string, TourRelatedGuide[]> = {
       title: 'Pejeng ricefield cycling',
       href: '/tours/ubud-ricefield-cycling-tour',
       blurb: 'Quiet Subak ride if you want paddies instead of a second temple.',
+    },
+  ],
+  'group-tirta-empul-purification': [
+    {
+      title: 'Standard Tirta Empul melukat (1–3)',
+      href: '/tours/tirta-empu-purification',
+      blurb: 'Solo and small groups at IDR 780,000 per person — same ritual, no group minimum.',
+    },
+    {
+      title: 'Best price Tirta Empul tour 2026',
+      href: '/blog/best-price-tirta-empul-tour-2026',
+      blurb: 'How the published 780K rate is built — ticket, sarong, offering, guide, locker.',
+    },
+    {
+      title: 'Tirta Empul price calculator',
+      href: '/planners/tirta-empul-price-calculator',
+      blurb: 'Guests × rate plus Ubud 400K / south 650K / self-meet free.',
+    },
+    {
+      title: 'Bali temple dress code',
+      href: '/blog/bali-temple-dress-code',
+      blurb: 'Sarong, sash, and pool etiquette before your group enters.',
+    },
+    {
+      title: 'Griya Beji vs Tirta Empul',
+      href: '/blog/griya-beji-vs-tirta-empul-melukat',
+      blurb: 'Waterfall park in Punggul vs Tirta Empul spiritual melukat.',
+    },
+    {
+      title: 'Tumang cooking class (afternoon)',
+      href: '/tours/balinese-cooking-class',
+      blurb: 'Kitchen meal after the temple morning — lunch is not on this ticket.',
     },
   ],
   'griya-beji-waterfall': [
@@ -1054,6 +1101,10 @@ export const TOUR_HOST_NOTES: Record<
   'tirta-empu-purification': {
     title: 'From our holy-spring hosts',
     body: 'We run exclusive spiritual melukat mornings at Tirta Empul most days — licensed guide, temple ticket, sarong, Balinese-style offering, and locker. Optional shuttle or free self-meet. The guide tells you which fountains to use and which to skip. The temple is public and sacred: we keep the ritual unhurried and respectful. Lunch is not included. Pay cash or card on the spot.',
+  },
+  'group-tirta-empul-purification': {
+    title: 'From our holy-spring hosts',
+    body: 'Groups of 4–10 book one WhatsApp thread and a published group promo (10–12% off the IDR 780,000 solo rate). Same Tirta Empul ritual — licensed guide, ticket, sarong, offering, locker for every guest. The temple stays a public holy site; you are not renting it privately. Shuttle optional. Pay cash or card on the spot.',
   },
   'batur-sunrise-jeep-tour': {
     title: 'From our Kintamani jeep drivers',

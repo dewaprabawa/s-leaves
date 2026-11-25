@@ -72,27 +72,41 @@ const JEEP_TRACKING_BOOKING = {
   optionalAddonsIntro: JEEP_HOT_SPRING_ADDONS_INTRO,
 }
 
+/** One ATV booking: guest sets single bikes and/or tandem bikes in the dialog. */
+export const ATV_FLEET_TOUR: TourConfig = {
+  id: "atv-fleet",
+  title: "ATV Ride — single and/or tandem",
+  times: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
+  adultPrice: getListPrice("single-atv"),
+  kidPrice: 700000,
+  minPax: 1,
+  meetsAtArena: true,
+  privateShuttle: true,
+  pricingActivityId: "single-atv",
+  atvFleetMix: true,
+}
+
+const ATV_ACTIVITY_ALIASES = new Set(["single-atv", "tandem-atv", "atv-fleet"])
+
+/** Resolve book/?activity=single-atv|tandem-atv and combo primaries to the fleet tour. */
+export function resolveBookableTour(activityId: string): TourConfig | undefined {
+  if (ATV_ACTIVITY_ALIASES.has(activityId)) return ATV_FLEET_TOUR
+  return (
+    BOOKABLE_TOURS.find((t) => t.id === activityId) ??
+    BOOKABLE_TOURS.find((t) => t.pricingActivityId === activityId)
+  )
+}
+
+export function initialAtvFleetForActivity(activityId: string): {
+  singleBikes: number
+  tandemBikes: number
+} {
+  if (activityId === "tandem-atv") return { singleBikes: 0, tandemBikes: 1 }
+  return { singleBikes: 1, tandemBikes: 0 }
+}
+
 export const BOOKABLE_TOURS: TourConfig[] = [
-  {
-    id: "single-atv",
-    title: "Single ATV Ride",
-    times: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
-    adultPrice: getListPrice("single-atv"),
-    kidPrice: 700000,
-    minPax: 1,
-    meetsAtArena: true,
-    privateShuttle: true,
-  },
-  {
-    id: "tandem-atv",
-    title: "Tandem ATV Ride",
-    times: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
-    adultPrice: getListPrice("tandem-atv"),
-    kidPrice: null,
-    minPax: 2,
-    meetsAtArena: true,
-    privateShuttle: true,
-  },
+  ATV_FLEET_TOUR,
   {
     id: "rafting",
     title: "Whitewater Rafting",

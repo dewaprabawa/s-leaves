@@ -218,6 +218,7 @@ export function BookingPopup({
   tour,
   tourOptions,
   initialMixIds,
+  initialFleet,
 }: {
   isOpen: boolean
   onClose: () => void
@@ -225,6 +226,8 @@ export function BookingPopup({
   tourOptions?: TourConfig[]
   /** Pre-selected mix-in activities for combo packages */
   initialMixIds?: string[]
+  /** Prefill single/tandem bike counts when opening an ATV fleet booking */
+  initialFleet?: { singleBikes: number; tandemBikes: number }
 }) {
   const [mounted, setMounted] = useState(false);
   const [guestName, setGuestName] = useState("");
@@ -298,8 +301,19 @@ export function BookingPopup({
       setInvoice(null);
       setMixIds(initialMixIds ?? []);
       setAddonQty({});
+      if (tour.atvFleetMix) {
+        setSingleBikes(Math.max(0, initialFleet?.singleBikes ?? 1))
+        setTandemBikes(Math.max(0, initialFleet?.tandemBikes ?? 0))
+        if ((initialFleet?.singleBikes ?? 1) + (initialFleet?.tandemBikes ?? 0) < 1) {
+          setSingleBikes(1)
+          setTandemBikes(0)
+        }
+      } else {
+        setSingleBikes(1)
+        setTandemBikes(0)
+      }
     }
-  }, [isOpen, tour, initialMixIds]);
+  }, [isOpen, tour, initialMixIds, initialFleet]);
 
   useEffect(() => {
     if (!isOpen || !activeTour?.title) return
@@ -373,6 +387,14 @@ export function BookingPopup({
     if (!allowed.length) return
     setTime((prev) => (allowed.includes(prev) ? prev : allowed[allowed.length - 1]))
   }, [isOpen, activeTour?.id, activeTour?.pricingActivityId, activeTour?.atvFleetMix, activeTour?.times, mixIds])
+
+  // When switching into ATV fleet via the activity dropdown, seed at least one bike.
+  useEffect(() => {
+    if (!isOpen || !activeTour?.atvFleetMix) return
+    if (singleBikes + tandemBikes >= 1) return
+    setSingleBikes(1)
+    setTandemBikes(0)
+  }, [isOpen, activeTour?.id, activeTour?.atvFleetMix, singleBikes, tandemBikes])
 
   // Keep adult count in sync with activity minimums (rafting / tandem need 2+)
   useEffect(() => {
@@ -1550,7 +1572,12 @@ export function BookingPopup({
             {isAtvFleetMix ? (
               <div className="space-y-3 rounded-2xl border border-brand-green/15 bg-sand/40 p-3">
                 <p className="text-[11px] font-bold uppercase tracking-wider text-brand-green-light">
-                  Your ATV bikes — single, tandem, or both
+                  Your ATV bikes — mix single and tandem in one order
+                </p>
+                <p className="text-xs text-brand-green-light leading-relaxed">
+                  Example: <span className="font-semibold text-brand-green">1 single</span> +{" "}
+                  <span className="font-semibold text-brand-green">2 tandems</span> = 5 riders
+                  (1 + 2×2).
                 </p>
                 <div className="flex gap-3">
                   <div className="flex-1">

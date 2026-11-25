@@ -8,7 +8,12 @@ import AntiScamSection from "@/components/AntiScamSection"
 import TrustAndSafetySection from "@/components/TrustAndSafetySection"
 import GeoAnswerBlock from "@/components/GeoAnswerBlock"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
-import { BOOKABLE_TOURS } from "@/components/BookNowButton"
+import {
+  ATV_FLEET_TOUR,
+  BOOKABLE_TOURS,
+  initialAtvFleetForActivity,
+  resolveBookableTour,
+} from "@/components/BookNowButton"
 import HomeActivitySearch from "@/components/HomeActivitySearch"
 import PromoPrice from "@/components/PromoPrice"
 import { notifyActivityClick } from "@/lib/web3forms"
@@ -364,6 +369,7 @@ function toTourConfig(adv: AdventureCatalogItem): TourConfig {
 function bookingSetupForAdventure(adventureId: string): {
   tour: TourConfig
   tourOptions?: TourConfig[]
+  initialFleet?: { singleBikes: number; tandemBikes: number }
 } | null {
   if (adventureId === "kintamani-day") {
     const tour = BOOKABLE_TOURS.find((t) => t.id === "jeep-kintamani-day")
@@ -374,6 +380,17 @@ function bookingSetupForAdventure(adventureId: string): {
     const tour = BOOKABLE_TOURS.find((t) => t.id === "jeep-sunrise")
     if (!tour) return null
     return { tour, tourOptions: JEEP_BOOKABLE_TOURS }
+  }
+  if (
+    adventureId === "single-atv" ||
+    adventureId === "tandem-atv" ||
+    adventureId === "atv-fleet"
+  ) {
+    return {
+      tour: resolveBookableTour(adventureId) ?? ATV_FLEET_TOUR,
+      tourOptions: BOOKABLE_TOURS,
+      initialFleet: initialAtvFleetForActivity(adventureId),
+    }
   }
   const adv = ADVENTURES.find((a) => a.id === adventureId)
   if (!adv) return null
@@ -460,6 +477,9 @@ export default function Home() {
   const [bookingTourOptions, setBookingTourOptions] = useState<TourConfig[] | undefined>()
   const [bookingOpen, setBookingOpen] = useState(false)
   const [bookingMixIds, setBookingMixIds] = useState<string[]>([])
+  const [bookingInitialFleet, setBookingInitialFleet] = useState<
+    { singleBikes: number; tandemBikes: number } | undefined
+  >()
   const [storyIndex, setStoryIndex] = useState(0)
 
   const topPicks = getCatalogTopPicks()
@@ -474,6 +494,7 @@ export default function Home() {
     setBookingTour(setup.tour)
     setBookingTourOptions(setup.tourOptions)
     setBookingMixIds(mixIds)
+    setBookingInitialFleet(setup.initialFleet)
     setBookingOpen(true)
   }
 
@@ -517,10 +538,12 @@ export default function Home() {
           setBookingOpen(false)
           setBookingMixIds([])
           setBookingTourOptions(undefined)
+          setBookingInitialFleet(undefined)
         }}
         tour={bookingTour}
         tourOptions={bookingTourOptions}
         initialMixIds={bookingMixIds}
+        initialFleet={bookingInitialFleet}
       />
 
       {/* ═══ HERO ═══ */}

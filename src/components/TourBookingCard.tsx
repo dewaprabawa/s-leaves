@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Car, Clock, ExternalLink, MapPin, MessageCircle } from "lucide-react"
 import { BookingPopup, type TourConfig } from "@/components/BookingPopup"
-import { BOOKABLE_TOURS } from "@/components/BookNowButton"
+import { ATV_FLEET_TOUR, BOOKABLE_TOURS } from "@/components/BookNowButton"
 import PromoPrice from "@/components/PromoPrice"
 import { CYCLING_LIST_IDR, CYCLING_PROMO_IDR, getCyclingPromoDisplay, getListPrice, getPromoListPrice } from "@/lib/pricing"
 import { formatIdr, buildWhatsAppConsultationUrl } from "@/lib/whatsapp"
@@ -247,20 +247,7 @@ function stickyBookLabel(tourSlug: string): string {
 
 function buildTourConfigs(props: TourBookingCardProps): TourConfig[] {
   if (props.tourSlug === "bali-atv-adventure") {
-    return [
-      {
-        id: "atv-fleet",
-        title: "ATV Ride — single and/or tandem",
-        times: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
-        adultPrice: getListPrice("single-atv"),
-        kidPrice: 700_000,
-        minPax: 1,
-        meetsAtArena: true,
-        privateShuttle: true,
-        pricingActivityId: "single-atv",
-        atvFleetMix: true,
-      },
-    ]
+    return [ATV_FLEET_TOUR]
   }
 
   const mapped = SLUG_TO_BOOKABLE_IDS[props.tourSlug]
@@ -834,6 +821,9 @@ export default function TourBookingCard(props: TourBookingCardProps) {
           onClose={() => setOpen(false)}
           tour={primary}
           tourOptions={configs.length > 1 ? configs : undefined}
+          initialFleet={
+            primary.atvFleetMix ? { singleBikes: 1, tandemBikes: 0 } : undefined
+          }
         />
       )}
     </>

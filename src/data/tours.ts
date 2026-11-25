@@ -2756,9 +2756,9 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
     pickup: "Guide meets you · optional Japanese/French + private driver tour",
     duration: "8 Hours (extendable)",
     basePrice: 600000,
-    seoTitle: "Licensed Tour Guide Bali | English, Japanese, French",
+    seoTitle: "Licensed Tour Guide Bali | Real History · From 600K",
     seoDescription:
-      "Licensed Bali guide (KTPP): English 600K, Japanese 700K, French 750K guide only. Optional JP/FR + driver: 850K Ubud / guide + 550K outside. WhatsApp.",
+      "Worth it for culture days: genuine KTPP guides explain real Bali history — not tourist myths. English 600K · Japanese 700K · French 750K. WhatsApp.",
     heroImage: {
       url: "/images/guide/bali-guide-thumbs-up.jpg",
       alt: "Smiling Balinese guide in a white udeng headcloth giving a thumbs-up, ready to meet guests",
@@ -2784,10 +2784,17 @@ If the day runs past the tour's normal length, extra guide time is IDR 150,000 p
       },
     ],
     shortDescription:
-      "Book a government-licensed Bali tour guide — guide only in English, Japanese, or French. English IDR 600,000, Japanese IDR 700,000, French IDR 750,000 per booking for 8 hours. Optional Japanese/French + private driver tour: IDR 850,000 in Ubud; outside Ubud guide + IDR 550,000 driver. Extra hours IDR 150,000 each.",
-    fullDescription: `**Licensed Tour Guide in Bali**
+      "Genuine government-licensed Bali guide (KTPP) with proven temple experience — real history, not tourist myths, explained clearly in your language. Guide only: English IDR 600,000 · Japanese 700,000 · French 750,000 per booking for 8 hours. Optional Japanese/French + private driver: IDR 850,000 in Ubud.",
+    fullDescription: `**Licensed Tour Guide in Bali — is the price worth it?**
 
-A government-licensed guide joins you for 8 hours and explains the temples, palaces, villages, and rice terraces on your route — in English, Japanese, or French. **Every language can book guide only.** Japanese and French also offer a **with private driver** tour option at published IDR.
+Yes for **culture days**, if you want a **genuine licensed guide** who explains **real history** — not recycled tourist myths — and walks you through temples, palaces, villages, and rice terraces with clear, calm commentary. A driver gets you to the gate; a licensed guide comes inside, answers questions, and makes the day make sense. Sekar Bali Activity books government-licensed (**KTPP**) guides in **English, Japanese, or French**. **Every language can book guide only.** Japanese and French also offer a **with private driver** tour option at published IDR.
+
+> **Why guests book this fee**
+> - **Real history** — trained, licensed explanation of temples, offerings, and village life — not made-up “legend for tourists”
+> - **Proven experience** — guides who regularly walk temple courtyards and holy springs, not a first-day host reading a script
+> - **Explained clearly** — slow enough to follow, detailed enough to remember, in **your** language
+> - **Honest worth-it take:** [Is a tour guide worth it in Bali?](/blog/is-a-tour-guide-worth-it-bali-2026)
+
 
 ### Guide only (all languages)
 One guide for your whole group. The price does not change with the number of guests.
@@ -2816,25 +2823,25 @@ Platforms such as [Withlocals](https://www.withlocals.com/locals/indonesia/bali/
 Prefer a set route? Book the [Full Day Ubud Tour](/tours/full-day-ubud-tour) or the [Half Day Ubud & Tanah Lot](/tours/half-day-ubud-tanah-lot-tour) and add the same licensed guide on top (those tours already include a car — guide add-on is English 600,000 / Japanese 700,000 / French 750,000).
 
 ### What "Licensed" Means in Bali
-Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Provincial Regulation No. 5 of 2016 on tour guides. Bali's 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) also lists travelling with a licensed guide when visiting tourist attractions among visitor obligations. Ask your guide to show the card when you meet.
+Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Provincial Regulation No. 5 of 2016 on tour guides. That is what makes the guide **genuine and accountable** — ask to see the card when you meet, not a casual storyteller at the car park. Bali's 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) also lists travelling with a licensed guide when visiting tourist attractions among visitor obligations.
 
 ### Good to Know
 - One language per booking: English, Japanese, or French.
 - Entrance tickets and meals are not included.
 - Tell us your route on WhatsApp — temples, Ubud palace and market, rice terraces, or a full custom day.`,
     highlights: [
-      "Government-licensed guide (KTPP card holder)",
-      "English, Japanese, or French — guide only available for every language",
-      "Optional Japanese/French + private driver tour: IDR 850,000 in Ubud",
-      "Outside Ubud with-driver option: guide + IDR 550,000",
-      "Extra hours IDR 150,000 each",
-      "Priced per booking for 8 hours, not per person",
+      "Real history explained — not tourist myths",
+      "Genuine KTPP-licensed guide with proven temple experience",
+      "Clear commentary in English, Japanese, or French",
+      "Guide only for every language — from IDR 600,000 / 8 hours",
+      "Optional Japanese/French + private driver: IDR 850,000 in Ubud",
+      "Priced per booking, not per person",
     ],
     included: [
       "Government-licensed guide for 8 hours",
+      "Clear commentary on real temple and village history in your language",
       "Guide's own transport to your hotel or first stop (guide-only option)",
       "Optional Japanese/French tour: private car and driver (Ubud 850K total; outside guide + 550K)",
-      "Commentary in English, Japanese, or French",
     ],
     notIncluded: [
       "Car and driver on guide-only bookings (optional private shuttle at published Ubud/outside rates, or pick the JP/FR with-driver tour)",
@@ -2847,14 +2854,14 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
       {
         id: "iti-guide-1",
         time: "Your start time",
-        title: "Guide meets you",
-        description: "Your licensed guide meets you at your hotel or your first stop — you choose the time and pin when booking.",
+        title: "Genuine licensed guide meets you",
+        description: "Your KTPP-licensed guide meets you at your hotel or first stop — ask to see the card. You choose the time and pin when booking.",
       },
       {
         id: "iti-guide-2",
         time: "8 hours",
-        title: "Your route, explained",
-        description: "Temples, the Ubud palace and market, villages, or rice terraces — the guide explains history, offerings, and temple etiquette in your language.",
+        title: "Real history, explained clearly",
+        description: "Temples, the Ubud palace and market, villages, or rice terraces — the guide explains real history, offerings, and etiquette in your language, without invented tourist stories.",
       },
       {
         id: "iti-guide-3",
@@ -2872,6 +2879,12 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
           "Guide only: English IDR 600,000, Japanese IDR 700,000, or French IDR 750,000 per booking for 8 hours. Optional Japanese/French + private driver tour: IDR 850,000 total in the Ubud area; outside Ubud Japanese IDR 700,000 + IDR 550,000 driver, or French IDR 750,000 + IDR 550,000 driver. Each extra hour is IDR 150,000. Entrance tickets and meals are not included.",
       },
       {
+        id: "faq-guide-worth",
+        question: "Is a licensed tour guide worth the price in Bali?",
+        answer:
+          "Yes for culture days — temples, holy springs, ceremonies, palace and villages — if you want real history explained clearly by a genuine KTPP-licensed guide with proven experience, not tourist myths or a driver who stays in the car. Skip the guide for beach clubs and short Grab trips. From IDR 600,000 per booking for 8 hours. Full take: https://www.sekarbaliactivity.com/blog/is-a-tour-guide-worth-it-bali-2026",
+      },
+      {
         id: "faq-guide-2",
         question: "Is the guide price per person?",
         answer:
@@ -2887,7 +2900,7 @@ Bali tour guides (pramuwisata) carry a guide ID card (KTPP) issued under Bali Pr
         id: "faq-guide-4",
         question: "What does a licensed guide mean in Bali?",
         answer:
-          "Licensed Bali guides (pramuwisata) carry a KTPP guide ID card issued under Bali Provincial Regulation No. 5 of 2016. Bali's 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) lists travelling with a licensed guide at tourist attractions among visitor obligations. You can ask to see the card when you meet.",
+          "Licensed Bali guides (pramuwisata) carry a KTPP guide ID card issued under Bali Provincial Regulation No. 5 of 2016. That is what makes the guide genuine and accountable — ask to see the card when you meet. Bali's 2025 code of conduct for foreign visitors (Governor Circular No. 7 of 2025) lists travelling with a licensed guide at tourist attractions among visitor obligations.",
       },
       {
         id: "faq-guide-5",

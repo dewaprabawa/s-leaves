@@ -2,7 +2,11 @@
 
 import { useState } from "react"
 import { BookingPopup } from "@/components/BookingPopup"
-import { BOOKABLE_TOURS } from "@/components/BookNowButton"
+import {
+  BOOKABLE_TOURS,
+  initialAtvFleetForActivity,
+  resolveBookableTour,
+} from "@/components/BookNowButton"
 
 type Props = {
   activityId: string
@@ -10,7 +14,7 @@ type Props = {
   label?: string
   /** When true, popup lets the guest switch between all activities */
   allowSwitchAll?: boolean
-  /** Pre-select mix-in activities for combo packages */
+  /** Pre-selected mix-in activities for combo packages */
   initialMixIds?: string[]
 }
 
@@ -22,10 +26,10 @@ export default function BookActivityButton({
   initialMixIds,
 }: Props) {
   const [open, setOpen] = useState(false)
-  const tour =
-    BOOKABLE_TOURS.find((t) => t.id === activityId) ??
-    BOOKABLE_TOURS.find((t) => t.pricingActivityId === activityId) ??
-    BOOKABLE_TOURS[0]
+  const tour = resolveBookableTour(activityId) ?? BOOKABLE_TOURS[0]
+  const initialFleet = tour.atvFleetMix
+    ? initialAtvFleetForActivity(activityId)
+    : undefined
 
   return (
     <>
@@ -38,6 +42,7 @@ export default function BookActivityButton({
         tour={tour}
         tourOptions={allowSwitchAll ? BOOKABLE_TOURS : undefined}
         initialMixIds={initialMixIds}
+        initialFleet={initialFleet}
       />
     </>
   )

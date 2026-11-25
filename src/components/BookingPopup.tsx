@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import dynamic from 'next/dynamic';
-import { X, ExternalLink, Info, MapPin, CheckCircle2 } from 'lucide-react';
+import { X, ExternalLink, Info, MapPin, CheckCircle2, Bike, Waves, Users } from 'lucide-react';
 import { formatIdr } from '@/lib/whatsapp';
 import {
   createInvoiceNumber,
@@ -14,7 +14,6 @@ import { getTourSlugForActivity } from '@/lib/bookingTourDetails';
 import { MEETING_POINT } from '@/lib/meetingPoint';
 import { privateShuttleBookingLabel } from '@/data/privateShuttle';
 import {
-  DROP_SAME_HOTEL_FEE_IDR,
   PICKUP_FEE_IDR,
   PICKUP_FEE_SOUTH_IDR,
   getHotelPickupFeeIdr,
@@ -246,8 +245,10 @@ export function BookingPopup({
   const [notes, setNotes] = useState("");
   const [selectedTourId, setSelectedTourId] = useState(tour?.id || "");
   const [showDetails, setShowDetails] = useState(false);
+  const [showPinMap, setShowPinMap] = useState(false);
   const [wantsPickup, setWantsPickup] = useState(false);
-  const [sameDropOff, setSameDropOff] = useState(false);
+  /** Return to the same hotel is always included with hotel pickup — no extra tick. */
+  const sameDropOff = true;
   const [step, setStep] = useState<'form' | 'invoice'>('form');
   const [invoice, setInvoice] = useState<InvoiceDraft | null>(null);
   const [mixIds, setMixIds] = useState<string[]>([]);
@@ -290,18 +291,20 @@ export function BookingPopup({
       setLocationDetails("");
       setNotes("");
       setShowDetails(false);
+      setShowPinMap(false);
       setWantsPickup(
         tour.pickupNotOffered !== true &&
           (tour.requiredShuttle === true ||
             tour.pickupIncluded === true ||
             tour.freeUbudPickup === true),
       );
-      setSameDropOff(false);
       setStep('form');
       setInvoice(null);
       setMixIds(initialMixIds ?? []);
       setAddonQty({});
       if (tour.atvFleetMix) {
+        setKids(0)
+        setChildrenAges('')
         setSingleBikes(Math.max(0, initialFleet?.singleBikes ?? 1))
         setTandemBikes(Math.max(0, initialFleet?.tandemBikes ?? 0))
         if ((initialFleet?.singleBikes ?? 1) + (initialFleet?.tandemBikes ?? 0) < 1) {
@@ -443,6 +446,17 @@ export function BookingPopup({
   const hasKidPricing = activeTour.kidPrice !== null && activeTour.kidPrice !== undefined;
   const totalPax = adults + kids;
   const isTandem = activeTour.id === 'tandem-atv';
+  /** ATV uses bike counts / child seats — hide the Adult/Child “You are” toggle. */
+  const isAtvBooking =
+    isAtvFleetMix ||
+    activeTour.id === 'atv-fleet' ||
+    activeTour.id === 'single-atv' ||
+    activeTour.id === 'tandem-atv' ||
+    activeTour.pricingActivityId === 'single-atv' ||
+    activeTour.pricingActivityId === 'tandem-atv' ||
+    Boolean(activeTour.id?.startsWith('atv-premium'))
+  const invoiceGuestType = isAtvBooking ? 'Adult' : guestType
+
   const mixOptions =
     MIX_ADDON_OPTIONS[
       (activeTour.pricingActivityId ?? activeTour.id) as MixableActivityId
@@ -635,6 +649,17 @@ export function BookingPopup({
     : activityQuote
       ? hasTierPromo(activityQuote)
       : false;
+  const totalSavings = Math.max(0, compareAtTotal - totalCost)
+  /** Never show “Combo · 0% off” — prefer real combo %, else group/package rate. */
+  const promoBadgeLabel = mixedQuote
+    ? mixedQuote.discountPercent > 0
+      ? `Combo · ${mixedQuote.discountPercent}% off`
+      : totalSavings > 0
+        ? mixedQuote.quotes.find((q) => hasTierPromo(q))?.tierLabel ?? 'Group rate'
+        : undefined
+    : packageCompareAt
+      ? 'Package promo'
+      : activityQuote?.tierLabel
 
   const toggleMixId = (id: string) => {
     setMixIds((prev) =>
@@ -674,7 +699,7 @@ export function BookingPopup({
   const nameOk = guestName.trim().length >= 2;
   const needsHotelAddress = effectiveWantsPickup
   const locationOk = needsHotelAddress
-    ? Boolean(location) && locationDetails.trim().length >= 2
+    ? pinSet && Boolean(location) && locationDetails.trim().length >= 2
     : true;
   const dateAllowed =
     !activeTour.allowedWeekdays?.length ||
@@ -697,13 +722,13 @@ export function BookingPopup({
     }
     if (!effectiveWantsPickup) {
       // meet at arena / self-arranged — no address needed
-    } else if (!location) {
+    } else if (!pinSet || !location) {
       return alert(
         requiredShuttle
-          ? "Required shuttle: please select your hotel pin on the map."
-          : "Please select a pickup location on the map.",
+          ? "Required shuttle: please set your hotel pin."
+          : "Please set your hotel pin.",
       );
-    } else if (!locationOk) {
+    } else if (locationDetails.trim().length < 2) {
       return alert(
         requiredShuttle
           ? "Required shuttle: please enter your hotel / pickup address."
@@ -866,7 +891,7 @@ export function BookingPopup({
         year: 'numeric',
       }),
       guestName: guestName.trim(),
-      guestType,
+      guestType: invoiceGuestType,
       adults,
       children: kids,
       childrenAges: kids > 0 ? childrenAges.trim() || undefined : undefined,
@@ -949,6 +974,7 @@ export function BookingPopup({
   };
 
   return createPortal(
+    <>
     <div
       className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6"
       role="dialog"
@@ -1027,7 +1053,7 @@ export function BookingPopup({
                   Self-arranged
                 </h3>
                 <p className="text-sm text-brand-green-light leading-relaxed mb-4">
-                  This tour doesn&apos;t use the All New Bali Adventure arena. Check &quot;I need hotel pickup&quot; to add your address, or tell us your plan in Special Notes.
+                  This tour doesn&apos;t use the All New Bali Adventure arena. Check &quot;I need hotel pickup &amp; drop&quot; to add your address, or tell us your plan in Special Notes.
                 </p>
               </div>
             )
@@ -1147,40 +1173,56 @@ export function BookingPopup({
             </div>
           )}
           
-          {mixOptions.length > 0 ? (
+          {/* Non-ATV mix (e.g. rafting → add ATV): keep early. ATV fleet mixes sit with bike steppers below. */}
+          {mixOptions.length > 0 && !isAtvFleetMix ? (
             <div className="mb-6 pb-4 border-b border-brand-green/10">
-              <p className="text-brand-green font-bold text-sm mb-1">Mix activities (combo)</p>
+              <p className="text-brand-green font-bold text-sm mb-1">Same-day combo (optional)</p>
               <p className="text-brand-green-light text-xs mb-3 leading-relaxed">
-                Add ATV, tubing, or rafting for a same-day package with ATV. Combos save 10% (2 activities) or 12% (3+).
+                Pair another activity for one day. Combos save 10% (2 activities) or 12% (3+).
                 {capsAtOnePm ? (
                   <span className="block mt-1 font-semibold text-brand-green">
-                    ATV + rafting/tubing combo: latest start is 1:00 PM — the 2:00 PM slot is removed, and 11:00 AM / 12:00 PM starts are added ({availableTimes.join(', ')}). The ATV ride plus the ~15-minute transfer to the river must still reach the final rafting run of the day. ATV-only bookings keep all normal times, including 2:00 PM.
+                    With ATV + river: latest start is 1:00 PM ({availableTimes.join(', ')}). Solo bookings keep all normal times.
                   </span>
                 ) : null}
               </p>
-              <div className="space-y-2">
+              <div className="space-y-2" role="group" aria-label="Same-day combo options">
                 {mixOptions.map((opt) => {
                   const checked = mixIds.includes(opt.id)
+                  const addOnList = getListPrice(opt.id)
                   return (
-                    <label
+                    <button
                       key={opt.id}
-                      className={`flex items-start gap-3 rounded-xl border px-3 py-3 cursor-pointer transition-colors ${
+                      type="button"
+                      aria-pressed={checked}
+                      onClick={() => toggleMixId(opt.id)}
+                      className={`w-full text-left flex items-start gap-3 rounded-xl border px-3 py-3 min-h-[44px] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green/40 ${
                         checked
                           ? 'border-brand-green bg-brand-green/5'
                           : 'border-brand-green/15 bg-white hover:border-brand-green/30'
                       }`}
                     >
-                      <input
-                        type="checkbox"
-                        className="mt-1 accent-brand-green"
-                        checked={checked}
-                        onChange={() => toggleMixId(opt.id)}
-                      />
-                      <span className="min-w-0">
-                        <span className="block text-sm font-bold text-brand-green">{opt.label}</span>
+                      <span
+                        className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded border ${
+                          checked
+                            ? 'border-brand-green bg-brand-green text-white'
+                            : 'border-brand-green/30 bg-white'
+                        }`}
+                        aria-hidden
+                      >
+                        {checked ? <CheckCircle2 className="h-3.5 w-3.5" /> : null}
+                      </span>
+                      <span className="min-w-0 flex-1">
+                        <span className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
+                          <span className="text-sm font-bold text-brand-green">{opt.label}</span>
+                          {addOnList > 0 ? (
+                            <span className="text-xs font-semibold text-brand-green-light">
+                              from {formatIdr(addOnList)}/person
+                            </span>
+                          ) : null}
+                        </span>
                         <span className="block text-xs text-brand-green-light mt-0.5">{opt.blurb}</span>
                       </span>
-                    </label>
+                    </button>
                   )
                 })}
               </div>
@@ -1317,6 +1359,7 @@ export function BookingPopup({
                   className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-brand-green font-medium focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
                 />
               </div>
+              {!isAtvBooking ? (
               <div className="sm:col-span-2">
                 <label className="block text-brand-green font-bold text-sm mb-2">You are *</label>
                 <div className="flex gap-2">
@@ -1336,207 +1379,8 @@ export function BookingPopup({
                   ))}
                 </div>
               </div>
-            </div>
-
-            {requiredShuttle ? (
-              <div className="rounded-xl border-2 border-accent-gold bg-accent-gold/15 px-4 py-4 text-sm">
-                <span className="text-[10px] font-black uppercase tracking-[0.16em] text-accent-gold-dark block">
-                  Must include
-                </span>
-                <span className="font-black uppercase tracking-wide text-brand-green text-xl block mt-1">
-                  {isSwingHeaven
-                    ? SWING_HEAVEN_SHUTTLE_MUST_LABEL
-                    : isAlohaSwing
-                      ? ALOHA_SHUTTLE_MUST_LABEL
-                      : SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}
-                </span>
-                <span className="text-brand-green font-semibold block mt-1">
-                  {isSwingHeaven
-                    ? SWING_HEAVEN_SHUTTLE_MUST_SUBLINE
-                    : isAlohaSwing
-                      ? ALOHA_SHUTTLE_MUST_SUBLINE
-                      : SWING_HEAVEN_SHUTTLE_NOTICE}
-                </span>
-                <span className="text-brand-green-light block mt-1 mb-2">
-                  {isAlohaSwing ? ALOHA_SHUTTLE_NOTICE : SWING_HEAVEN_SHUTTLE_NOTICE} Set your hotel
-                  pin on the map below — the shuttle line updates automatically.
-                </span>
-                <span className={`font-bold block ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>
-                  {requiredShuttleLabel}: {pickupFee > 0 ? formatIdr(pickupFee) : 'IDR 0'}
-                </span>
-              </div>
-            ) : pickupIncluded ? (
-              <div className="rounded-xl border border-brand-green/15 bg-brand-green/5 px-4 py-3.5 text-sm">
-                <span className="font-bold text-brand-green block mb-0.5">
-                  {activeTour.includedMeetCopy?.title ?? 'Hotel pickup included'}
-                </span>
-                <span className="text-brand-green-light">
-                  {activeTour.includedMeetCopy?.body ??
-                    "Pickup & drop-off is included in this tour's price — no arena self-meet and no extra fee. Add your hotel address below."}
-                </span>
-              </div>
-            ) : pickupNotOffered ? (
-              <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 text-sm">
-                <span className="font-bold text-brand-green block mb-0.5">Transport not included</span>
-                <span className="text-brand-green-light">
-                  Arrange your own transport to the venue. This experience does not include hotel pickup.
-                </span>
-              </div>
-            ) : (
-              <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 shadow-sm">
-                <input
-                  type="checkbox"
-                  checked={wantsPickup}
-                  onChange={(e) => setWantsPickup(e.target.checked)}
-                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-brand-green/30 text-brand-green focus:ring-brand-green"
-                />
-                <span className="text-sm leading-relaxed">
-                  <span className="font-bold text-brand-green block mb-0.5">I need hotel pickup</span>
-                  <span className="text-brand-green-light">
-                    {pickupFlatFee !== null && meetLabel
-                      ? `Optional hotel shuttle, ${formatIdr(pickupFlatFee)} once per booking. If unchecked, meet at ${meetLabel}.`
-                      : meetLabel
-                      ? `Optional. If unchecked, meet at ${meetLabel}. Then add your address + pin on the map below.`
-                      : hasFreeUbudPickup
-                        ? "Free within Ubud (surcharge applies outside Ubud). Then add your address + pin on the map below."
-                        : "Optional — a hotel pickup fee may apply. Then add your address + pin on the map below."}
-                  </span>
-                  {activeTour.privateShuttle ? (
-                    <span className="mt-1.5 block space-y-1.5 text-xs text-brand-green-light">
-                      <span className="block font-semibold text-brand-green">
-                        Private car for your group — your driver waits during the activity and drives
-                        you back. No Grab needed.
-                      </span>
-                      <span className="block">
-                        <span className="font-bold text-brand-green">From Ubud · IDR {(PICKUP_FEE_IDR).toLocaleString('id-ID')} once</span>
-                        {' — '}hotel pickup and drop-off in Ubud.
-                      </span>
-                      <span className="block">
-                        <span className="font-bold text-brand-green">From the south coast · IDR {(PICKUP_FEE_SOUTH_IDR).toLocaleString('id-ID')} once</span>
-                        {' — '}Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, or Uluwatu.
-                      </span>
-                      <span className="block font-semibold text-brand-green">
-                        Your pin sets the rate: {privateShuttleBookingLabel(isOutUbud)}.
-                      </span>
-                    </span>
-                  ) : null}
-                </span>
-              </label>
-            )}
-
-            {effectiveWantsPickup ? (
-            <>
-            <div>
-              <label className="block text-brand-green font-bold text-sm mb-2">Hotel / Pickup Address *</label>
-              <input 
-                type="text" 
-                value={locationDetails} 
-                onChange={(e) => setLocationDetails(e.target.value)}
-                placeholder="e.g. Maya Ubud, Room 102" 
-                className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
-              />
-              <p className="mt-1.5 text-xs text-brand-green-light">
-                Then set the pin on the map below — so the driver finds your hotel and the right shuttle price applies.
-              </p>
-            </div>
-
-            {/* Mobile only: map sits right here, next to the shuttle/address fields.
-                On desktop the large side map is used instead. */}
-            <div className="md:hidden overflow-hidden rounded-2xl border-2 border-brand-green/25 bg-white shadow-sm">
-              <div className="bg-brand-green px-4 py-3 text-sand">
-                <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wide">
-                  <MapPin className="h-4 w-4 shrink-0" /> Set your hotel pin
-                </p>
-                <ol className="mt-1.5 list-decimal space-y-0.5 pl-5 text-xs leading-relaxed text-sand/90">
-                  <li>Search your hotel name, or tap <strong>Use my location</strong></li>
-                  <li>Or tap anywhere on the map to drop the pin</li>
-                  <li>Check the green ✓ below — your pin sets the shuttle price</li>
-                </ol>
-              </div>
-              <div className="relative h-72">
-                <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={handlePinSelect} />
-              </div>
-              {pinSet ? (
-                <p className="flex items-start gap-2 bg-green-50 px-4 py-3 text-sm font-bold text-brand-green">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" />
-                  <span>
-                    Pin set — {isOutUbud ? "Outside Ubud" : "Ubud area"}
-                    {pickupFee > 0 ? ` · Pickup ${formatIdr(pickupFee)}` : " · No extra pickup fee"}
-                    <span className="block text-xs font-semibold text-brand-green-light">
-                      Wrong spot? Tap the map again to move it.
-                    </span>
-                  </span>
-                </p>
-              ) : (
-                <p className="bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
-                  Pin not set yet — it starts at Ubud centre. Search, use your location, or tap the map above so we quote the right shuttle price.
-                </p>
-              )}
-            </div>
-            {pickupFlatFee === null &&
-            ((!hasFreeUbudPickup && !pickupIncluded && !requiredShuttle) || (isOutUbud && !pickupIncluded && !requiredShuttle)) ? (
-              <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3 shadow-sm">
-                <input
-                  type="checkbox"
-                  checked={sameDropOff}
-                  onChange={(e) => setSameDropOff(e.target.checked)}
-                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-brand-green/30 text-brand-green focus:ring-brand-green"
-                />
-                <span className="text-sm leading-relaxed text-brand-green-light">
-                  <span className="font-bold text-brand-green block mb-0.5">Return drop-off to same hotel (included)</span>
-                  Hotel pickup charge IDR {hotelPickupFeeIdr.toLocaleString('id-ID')}
-                  {isOutUbud ? ' (south coast)' : ' (Ubud)'}
-                  {sameDropOff ? ' · includes return to same hotel' : ' · pickup only'}
-                </span>
-              </label>
-            ) : null}
-            {pickupIncluded || requiredShuttle || !meetLabel ? null : meetMapUrl ? (
-              <p className="text-xs text-brand-green-light opacity-80">
-                Prefer to self-meet? Uncheck hotel pickup —{' '}
-                <a
-                  href={meetMapUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline font-semibold text-brand-green"
-                >
-                  open {meetLabel} map
-                </a>
-                .
-              </p>
-            ) : null}
-            </>
-            ) : hasFixedMeet && meetLabel ? (
-            <>
-            <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
-              <span className="font-bold text-brand-green">Meeting at:</span> {meetLabel}
-              {meetAddress ? `, ${meetAddress}` : ''}
-              {meetMapUrl ? (
-                <>
-                  {' · '}
-                  <a
-                    href={meetMapUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline font-semibold text-brand-green"
-                  >
-                    open map
-                  </a>
-                </>
               ) : null}
             </div>
-            <p className="text-xs text-brand-green-light opacity-80 px-1">
-              No pickup surcharge when you self-meet. Need hotel pickup? Check &quot;I need hotel pickup&quot; above — IDR{' '}
-              {hotelPickupFeeIdr.toLocaleString('id-ID')}{pickupFlatFee !== null ? ' once per booking' : ''}.
-            </p>
-            </>
-            ) : (
-            <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
-              <span className="font-bold text-brand-green">Meeting:</span>{" "}
-              {pickupNotOffered
-                ? "Self-arranged — transport is not included. Add venue notes under Special Notes if needed."
-                : "Self-arranged — no fixed arena for this tour. Check \"I need hotel pickup\" above, or add details in Special Notes."}
-            </div>
-            )}
 
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex-1">
@@ -1570,98 +1414,212 @@ export function BookingPopup({
             </div>
 
             {isAtvFleetMix ? (
-              <div className="space-y-3 rounded-2xl border border-brand-green/15 bg-sand/40 p-3">
-                <p className="text-[11px] font-bold uppercase tracking-wider text-brand-green-light">
-                  Your ATV bikes — mix single and tandem in one order
-                </p>
-                <p className="text-xs text-brand-green-light leading-relaxed">
-                  Example: <span className="font-semibold text-brand-green">1 single</span> +{" "}
-                  <span className="font-semibold text-brand-green">2 tandems</span> = 5 riders
-                  (1 + 2×2).
-                </p>
-                <div className="flex gap-3">
-                  <div className="flex-1">
-                    <label className="block text-brand-green font-bold text-sm mb-2">
-                      Single bikes
-                      <span className="font-medium text-brand-green-light"> · 1 rider each</span>
-                    </label>
-                    <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
-                      <button
-                        type="button"
-                        onClick={() =>
-                          setSingleBikes((n) =>
-                            Math.max(kids > 0 || tandemBikes === 0 ? 1 : 0, n - 1),
-                          )
-                        }
-                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
-                      >
-                        -
-                      </button>
-                      <span className="flex-1 text-center font-bold text-brand-green text-lg">{singleBikes}</span>
-                      <button
-                        type="button"
-                        onClick={() => setSingleBikes((n) => n + 1)}
-                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
-                      >
-                        +
-                      </button>
+              <div className="space-y-5 rounded-2xl border border-brand-green/15 bg-sand/40 p-3 sm:p-4">
+                <div>
+                  <p className="text-brand-green font-bold text-sm mb-0.5">
+                    <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-brand-green text-white text-[10px] font-bold mr-1.5 align-middle">
+                      1
+                    </span>
+                    Your ATV bikes
+                  </p>
+                  <p className="text-xs text-brand-green-light leading-relaxed mb-3 pl-7">
+                    Mix single and tandem in one order. Example:{" "}
+                    <span className="font-semibold text-brand-green">1 single</span> +{" "}
+                    <span className="font-semibold text-brand-green">2 tandems</span> = 5 riders.
+                  </p>
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    <div
+                      className={`rounded-xl border bg-white p-3 transition-colors ${
+                        singleBikes > 0
+                          ? 'border-brand-green shadow-sm'
+                          : 'border-brand-green/15'
+                      }`}
+                    >
+                      <div className="flex items-start gap-2 mb-2">
+                        <Bike className="w-5 h-5 text-brand-green shrink-0 mt-0.5" aria-hidden />
+                        <div className="min-w-0">
+                          <p className="text-sm font-bold text-brand-green">Single</p>
+                          <p className="text-xs text-brand-green-light">
+                            1 rider · from {formatIdr(getListPrice('single-atv'))}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-center bg-sand/60 border border-brand-green/15 rounded-xl overflow-hidden">
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setSingleBikes((n) =>
+                              Math.max(tandemBikes === 0 ? 1 : 0, n - 1),
+                            )
+                          }
+                          className="min-h-[44px] min-w-[44px] hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-green/40"
+                          aria-label="Remove one single ATV"
+                        >
+                          −
+                        </button>
+                        <span
+                          className="flex-1 text-center font-bold text-brand-green text-lg tabular-nums"
+                          aria-live="polite"
+                        >
+                          {singleBikes}
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => setSingleBikes((n) => Math.min(12, n + 1))}
+                          className="min-h-[44px] min-w-[44px] hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-green/40"
+                          aria-label="Add one single ATV"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      className={`rounded-xl border bg-white p-3 transition-colors ${
+                        tandemBikes > 0
+                          ? 'border-brand-green shadow-sm'
+                          : 'border-brand-green/15'
+                      }`}
+                    >
+                      <div className="flex items-start gap-2 mb-2">
+                        <Users className="w-5 h-5 text-brand-green shrink-0 mt-0.5" aria-hidden />
+                        <div className="min-w-0">
+                          <p className="text-sm font-bold text-brand-green">Tandem</p>
+                          <p className="text-xs text-brand-green-light">
+                            2 share · from {formatIdr(getListPrice('tandem-atv'))}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-center bg-sand/60 border border-brand-green/15 rounded-xl overflow-hidden">
+                        <button
+                          type="button"
+                          onClick={() => setTandemBikes((n) => Math.max(0, n - 1))}
+                          className="min-h-[44px] min-w-[44px] hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-green/40"
+                          aria-label="Remove one tandem ATV"
+                        >
+                          −
+                        </button>
+                        <span
+                          className="flex-1 text-center font-bold text-brand-green text-lg tabular-nums"
+                          aria-live="polite"
+                        >
+                          {tandemBikes}
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => setTandemBikes((n) => Math.min(8, n + 1))}
+                          className="min-h-[44px] min-w-[44px] hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-brand-green/40"
+                          aria-label="Add one tandem ATV"
+                        >
+                          +
+                        </button>
+                      </div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <label className="block text-brand-green font-bold text-sm mb-2">
-                      Tandem bikes
-                      <span className="font-medium text-brand-green-light"> · 2 share</span>
-                    </label>
-                    <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm">
-                      <button
-                        type="button"
-                        onClick={() => setTandemBikes((n) => Math.max(0, n - 1))}
-                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
-                      >
-                        -
-                      </button>
-                      <span className="flex-1 text-center font-bold text-brand-green text-lg">{tandemBikes}</span>
-                      <button
-                        type="button"
-                        onClick={() => setTandemBikes((n) => n + 1)}
-                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
-                      >
-                        +
-                      </button>
-                    </div>
-                  </div>
+                  {singleBikes + tandemBikes < 1 ? (
+                    <p className="mt-2 text-xs font-semibold text-red-700" role="alert">
+                      Add at least one bike to continue.
+                    </p>
+                  ) : (
+                    <p className="mt-2 text-xs font-semibold text-brand-green" aria-live="polite">
+                      {[
+                        singleBikes > 0
+                          ? `${singleBikes} single`
+                          : null,
+                        tandemBikes > 0
+                          ? `${tandemBikes} tandem`
+                          : null,
+                      ]
+                        .filter(Boolean)
+                        .join(' · ')}
+                      {' · '}
+                      {fleetGuestAdults} rider{fleetGuestAdults === 1 ? '' : 's'}
+                    </p>
+                  )}
                 </div>
-                <p className="text-xs text-brand-green-light leading-relaxed">
-                  Guests on bikes: <span className="font-semibold text-brand-green">{fleetGuestAdults}</span>
-                  {kids > 0 ? ` + ${kids} child seat${kids === 1 ? '' : 's'} on singles` : ''}
-                  {' · '}
-                  from {formatIdr(getListPrice('single-atv'))} / single · {formatIdr(getListPrice('tandem-atv'))} / tandem
-                </p>
-                {hasKidPricing ? (
-                  <div>
-                    <label className="block text-brand-green font-bold text-sm mb-2">
-                      Children on single bikes ({(activeTour.kidPrice || 0) / 1000}k)
-                    </label>
-                    <div className="flex items-center bg-white border border-brand-green/20 rounded-xl overflow-hidden shadow-sm max-w-[12rem]">
-                      <button
-                        type="button"
-                        onClick={() => setKids(Math.max(0, kids - 1))}
-                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
-                      >
-                        -
-                      </button>
-                      <span className="flex-1 text-center font-bold text-brand-green text-lg">{kids}</span>
-                      <button
-                        type="button"
-                        onClick={() => {
-                          if (singleBikes < 1) setSingleBikes(1)
-                          setKids((n) => n + 1)
-                        }}
-                        className="px-4 py-3.5 hover:bg-sand text-brand-green font-bold text-lg active:bg-sand-dark transition-colors"
-                      >
-                        +
-                      </button>
+
+                {mixOptions.length > 0 ? (
+                  <div className="border-t border-brand-green/10 pt-4">
+                    <p className="text-brand-green font-bold text-sm mb-0.5">
+                      <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-brand-green text-white text-[10px] font-bold mr-1.5 align-middle">
+                        2
+                      </span>
+                      Same-day river (optional)
+                    </p>
+                    <p className="text-xs text-brand-green-light leading-relaxed mb-3 pl-7">
+                      Add rafting and/or tubing after ATV — same guest count. Combos save 10% (one river) or 12% (both).
+                      {capsAtOnePm ? (
+                        <span className="block mt-1 font-semibold text-brand-green">
+                          With a river add-on, latest ATV start is 1:00 PM. ATV-only keeps 2:00 PM.
+                        </span>
+                      ) : null}
+                    </p>
+                    <div className="space-y-2" role="group" aria-label="Same-day river add-ons">
+                      {mixOptions.map((opt) => {
+                        const checked = mixIds.includes(opt.id)
+                        const addOnList = getListPrice(opt.id)
+                        const isRaft = opt.id === 'rafting'
+                        return (
+                          <button
+                            key={opt.id}
+                            type="button"
+                            aria-pressed={checked}
+                            onClick={() => toggleMixId(opt.id)}
+                            className={`w-full text-left flex items-start gap-3 rounded-xl border px-3 py-3 min-h-[44px] bg-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green/40 ${
+                              checked
+                                ? 'border-brand-green shadow-sm'
+                                : 'border-brand-green/15 hover:border-brand-green/30'
+                            }`}
+                          >
+                            <span
+                              className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${
+                                checked
+                                  ? 'bg-brand-green text-white'
+                                  : 'bg-sand text-brand-green'
+                              }`}
+                              aria-hidden
+                            >
+                              <Waves className="h-5 w-5" />
+                            </span>
+                            <span className="min-w-0 flex-1">
+                              <span className="flex flex-wrap items-baseline justify-between gap-x-2 gap-y-0.5">
+                                <span className="text-sm font-bold text-brand-green">
+                                  {opt.label}
+                                </span>
+                                {addOnList > 0 ? (
+                                  <span className="text-xs font-semibold text-brand-green-light">
+                                    from {formatIdr(addOnList)}/person
+                                  </span>
+                                ) : null}
+                              </span>
+                              <span className="block text-xs text-brand-green-light mt-0.5">
+                                {opt.blurb}
+                              </span>
+                              {checked && fleetGuestAdults > 0 ? (
+                                <span className="mt-1 inline-block text-[11px] font-bold uppercase tracking-wide text-brand-green">
+                                  {isRaft ? 'Rafting' : 'Tubing'} for {fleetGuestAdults}
+                                  {' · '}combo discount in total
+                                </span>
+                              ) : null}
+                            </span>
+                            <span
+                              className={`mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-md border-2 transition-colors ${
+                                checked
+                                  ? 'border-brand-green bg-brand-green text-white'
+                                  : 'border-brand-green/30 bg-white'
+                              }`}
+                              aria-hidden
+                            >
+                              {checked ? <CheckCircle2 className="h-4 w-4" /> : null}
+                            </span>
+                          </button>
+                        )
+                      })}
                     </div>
+                    <p className="mt-2 text-xs text-brand-green-light">
+                      {mixIds.length > 0
+                        ? 'Tip: one river or both — or clear both for ATV-only.'
+                        : 'Skip for ATV-only. You keep every normal start time, including 2:00 PM.'}
+                    </p>
                   </div>
                 ) : null}
               </div>
@@ -1735,6 +1693,202 @@ export function BookingPopup({
               </p>
             )}
 
+            {requiredShuttle ? (
+              <div className="rounded-xl border-2 border-accent-gold bg-accent-gold/15 px-4 py-4 text-sm">
+                <span className="text-[10px] font-black uppercase tracking-[0.16em] text-accent-gold-dark block">
+                  Must include
+                </span>
+                <span className="font-black uppercase tracking-wide text-brand-green text-xl block mt-1">
+                  {isSwingHeaven
+                    ? SWING_HEAVEN_SHUTTLE_MUST_LABEL
+                    : isAlohaSwing
+                      ? ALOHA_SHUTTLE_MUST_LABEL
+                      : SWING_HEAVEN_SHUTTLE_NOTICE_SHORT}
+                </span>
+                <span className="text-brand-green font-semibold block mt-1">
+                  {isSwingHeaven
+                    ? SWING_HEAVEN_SHUTTLE_MUST_SUBLINE
+                    : isAlohaSwing
+                      ? ALOHA_SHUTTLE_MUST_SUBLINE
+                      : SWING_HEAVEN_SHUTTLE_NOTICE}
+                </span>
+                <span className="text-brand-green-light block mt-1 mb-2">
+                  {isAlohaSwing ? ALOHA_SHUTTLE_NOTICE : SWING_HEAVEN_SHUTTLE_NOTICE} Tap{" "}
+                  <span className="font-semibold text-brand-green">Set your hotel pin</span> — the
+                  shuttle line updates automatically.
+                </span>
+                <span className={`font-bold block ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>
+                  {requiredShuttleLabel}: {pickupFee > 0 ? formatIdr(pickupFee) : 'IDR 0'}
+                </span>
+              </div>
+            ) : pickupIncluded ? (
+              <div className="rounded-xl border border-brand-green/15 bg-brand-green/5 px-4 py-3.5 text-sm">
+                <span className="font-bold text-brand-green block mb-0.5">
+                  {activeTour.includedMeetCopy?.title ?? 'Hotel pickup included'}
+                </span>
+                <span className="text-brand-green-light">
+                  {activeTour.includedMeetCopy?.body ??
+                    "Pickup & drop-off is included in this tour's price — no arena self-meet and no extra fee. Add your hotel address below."}
+                </span>
+              </div>
+            ) : pickupNotOffered ? (
+              <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 text-sm">
+                <span className="font-bold text-brand-green block mb-0.5">Transport not included</span>
+                <span className="text-brand-green-light">
+                  Arrange your own transport to the venue. This experience does not include hotel pickup.
+                </span>
+              </div>
+            ) : (
+              <label className="flex items-start gap-3 cursor-pointer rounded-xl border border-brand-green/15 bg-white px-4 py-3.5 shadow-sm">
+                <input
+                  type="checkbox"
+                  checked={wantsPickup}
+                  onChange={(e) => {
+                    const on = e.target.checked
+                    setWantsPickup(on)
+                    setShowPinMap(on)
+                  }}
+                  className="mt-0.5 h-4 w-4 shrink-0 rounded border-brand-green/30 text-brand-green focus:ring-brand-green"
+                />
+                <span className="text-sm leading-relaxed">
+                  <span className="font-bold text-brand-green block mb-0.5">I need hotel pickup &amp; drop</span>
+                  <span className="text-brand-green-light">
+                    {pickupFlatFee !== null && meetLabel
+                      ? `Optional hotel shuttle, ${formatIdr(pickupFlatFee)} once per booking. If unchecked, meet at ${meetLabel}.`
+                      : meetLabel
+                      ? `Optional. If unchecked, meet at ${meetLabel}. Then set your hotel pin.`
+                      : hasFreeUbudPickup
+                        ? "Free within Ubud (surcharge applies outside Ubud). Then set your hotel pin."
+                        : "Optional — a hotel pickup fee may apply. Then set your hotel pin."}
+                  </span>
+                  {activeTour.privateShuttle ? (
+                    <span className="mt-1.5 block space-y-1.5 text-xs text-brand-green-light">
+                      <span className="block font-semibold text-brand-green">
+                        Private car for your group — your driver waits during the activity and drives
+                        you back. No Grab needed.
+                      </span>
+                      <span className="block">
+                        <span className="font-bold text-brand-green">From Ubud · IDR {(PICKUP_FEE_IDR).toLocaleString('id-ID')} once</span>
+                        {' — '}hotel pickup and drop-off in Ubud.
+                      </span>
+                      <span className="block">
+                        <span className="font-bold text-brand-green">From the south coast · IDR {(PICKUP_FEE_SOUTH_IDR).toLocaleString('id-ID')} once</span>
+                        {' — '}Canggu, Kuta, Legian, Seminyak, Jimbaran, Sanur, Nusa Dua, or Uluwatu.
+                      </span>
+                      <span className="block font-semibold text-brand-green">
+                        Your pin sets the rate: {privateShuttleBookingLabel(isOutUbud)}.
+                      </span>
+                    </span>
+                  ) : null}
+                </span>
+              </label>
+            )}
+
+            {effectiveWantsPickup ? (
+            <>
+            <div>
+              <label className="block text-brand-green font-bold text-sm mb-2">Hotel / Pickup Address *</label>
+              <input 
+                type="text" 
+                value={locationDetails} 
+                onChange={(e) => setLocationDetails(e.target.value)}
+                placeholder="e.g. Maya Ubud, Room 102" 
+                className="w-full bg-white border border-brand-green/20 rounded-xl px-4 py-3 text-sm text-brand-green focus:outline-none focus:ring-2 focus:ring-brand-green shadow-sm"
+              />
+              <p className="mt-1.5 text-xs text-brand-green-light">
+                Then open <span className="font-semibold text-brand-green">Set your hotel pin</span> so the driver finds your hotel and the right shuttle price applies.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setShowPinMap(true)}
+              className={`w-full text-left rounded-2xl border-2 px-4 py-3.5 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green/40 ${
+                pinSet
+                  ? 'border-brand-green bg-brand-green/5'
+                  : 'border-amber-300/80 bg-amber-50 hover:border-brand-green/40'
+              }`}
+            >
+              <span className="flex items-start gap-3">
+                <span
+                  className={`mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg ${
+                    pinSet ? 'bg-brand-green text-sand' : 'bg-white text-brand-green'
+                  }`}
+                  aria-hidden
+                >
+                  <MapPin className="h-5 w-5" />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block text-sm font-bold text-brand-green">
+                    {pinSet ? 'Hotel pin set' : 'Set your hotel pin'}
+                  </span>
+                  {pinSet ? (
+                    <span className="mt-0.5 block text-xs font-semibold text-brand-green leading-relaxed">
+                      {isOutUbud ? 'Outside Ubud' : 'Ubud area'}
+                      {pickupFee > 0 ? ` · Pickup ${formatIdr(pickupFee)}` : ' · No extra pickup fee'}
+                      <span className="block font-medium text-brand-green-light">
+                        Tap to change the pin
+                      </span>
+                    </span>
+                  ) : (
+                    <span className="mt-0.5 block text-xs font-semibold text-amber-800 leading-relaxed">
+                      Opens a map popup — no scrolling needed. Search, use your location, or tap the map.
+                    </span>
+                  )}
+                </span>
+                {pinSet ? (
+                  <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-brand-green" aria-hidden />
+                ) : null}
+              </span>
+            </button>
+            {pickupIncluded || requiredShuttle || !meetLabel ? null : meetMapUrl ? (
+              <p className="text-xs text-brand-green-light opacity-80">
+                Prefer to self-meet? Uncheck hotel pickup &amp; drop —{' '}
+                <a
+                  href={meetMapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline font-semibold text-brand-green"
+                >
+                  open {meetLabel} map
+                </a>
+                .
+              </p>
+            ) : null}
+            </>
+            ) : hasFixedMeet && meetLabel ? (
+            <>
+            <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
+              <span className="font-bold text-brand-green">Meeting at:</span> {meetLabel}
+              {meetAddress ? `, ${meetAddress}` : ''}
+              {meetMapUrl ? (
+                <>
+                  {' · '}
+                  <a
+                    href={meetMapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline font-semibold text-brand-green"
+                  >
+                    open map
+                  </a>
+                </>
+              ) : null}
+            </div>
+            <p className="text-xs text-brand-green-light opacity-80 px-1">
+              No pickup surcharge when you self-meet. Need a transfer? Check &quot;I need hotel pickup &amp; drop&quot; above — IDR{' '}
+              {hotelPickupFeeIdr.toLocaleString('id-ID')}{pickupFlatFee !== null ? ' once per booking' : ''}.
+            </p>
+            </>
+            ) : (
+            <div className="rounded-xl border border-brand-green/15 bg-white px-4 py-3 text-sm text-brand-green-light">
+              <span className="font-bold text-brand-green">Meeting:</span>{" "}
+              {pickupNotOffered
+                ? "Self-arranged — transport is not included. Add venue notes under Special Notes if needed."
+                : 'Self-arranged — no fixed arena for this tour. Check "I need hotel pickup & drop" above, or add details in Special Notes.'}
+            </div>
+            )}
+
             <div>
               <label className="block text-brand-green font-bold text-sm mb-2">Special Notes (Optional)</label>
               <textarea 
@@ -1748,107 +1902,186 @@ export function BookingPopup({
           </div>
 
           <div className="mt-6 pt-6 border-t border-brand-green/10">
-            {mixedQuote ? (
-              <>
-                {mixedQuote.quotes.map((q) => (
-                  <div key={q.activityId} className="mb-2 space-y-1">
-                    <div className="flex justify-between items-center text-sm text-brand-green-light">
-                      <span>
-                        {ACTIVITY_SHORT_LABEL[q.activityId]} · {q.activityId === 'tandem-atv'
-                          ? `${q.units * 2} riders · ${formatIdr(q.unitPrice)} × ${q.units} ${q.unitLabel}`
-                          : `${formatIdr(q.unitPrice)} × ${q.units} adult(s)`}
-                      </span>
-                      <span className="font-semibold text-brand-green">{formatIdr(q.activitySubtotal)}</span>
-                    </div>
-                    {q.childCount > 0 && q.childSubtotal > 0 ? (
-                      <div className="flex justify-between items-center text-sm text-brand-green-light">
-                        <span>{ACTIVITY_SHORT_LABEL[q.activityId]} · {formatIdr(q.childUnitPrice)} × {q.childCount} child(ren)</span>
-                        <span className="font-semibold text-brand-green">{formatIdr(q.childSubtotal)}</span>
-                      </div>
-                    ) : null}
-                  </div>
-                ))}
-                {mixedQuote.discountAmount > 0 ? (
-                  <div className="flex justify-between items-center mb-2 text-sm text-brand-green">
-                    <span>Combo discount ({mixedQuote.discountPercent}%)</span>
-                    <span className="font-semibold">−{formatIdr(mixedQuote.discountAmount)}</span>
-                  </div>
-                ) : null}
-              </>
-            ) : activityQuote ? (
-              <>
-                <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
-                  <span>
-                    {activityQuote.activityId === 'tandem-atv'
-                      ? `${adults} riders · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`
-                      : activeTour.fixedPax
-                        ? `Package for ${adults} guests`
-                      : activityQuote.unitLabel === 'booking'
-                        ? `Once per booking · ${adults} guest${adults === 1 ? '' : 's'}`
-                        : `${activityQuote.tierLabel} · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} adult(s)`}
+            <div className="rounded-2xl border border-brand-green/15 bg-sand/50 p-4 mb-5 space-y-3">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-[11px] font-bold uppercase tracking-wider text-brand-green-light">
+                  Your estimate
+                </p>
+                {totalSavings > 0 && promoBadgeLabel ? (
+                  <span className="inline-flex max-w-full items-center rounded-full bg-brand-green px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-sand">
+                    {promoBadgeLabel}
+                    <span className="mx-1.5 opacity-50" aria-hidden>
+                      ·
+                    </span>
+                    Save {formatIdr(totalSavings)}
                   </span>
-                  {tierPromoActive ? (
-                    <div className="text-right">
-                      <span className="block text-xs line-through opacity-70">{formatIdr(compareAtActivityTotal)}</span>
-                      <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
-                    </div>
-                  ) : (
-                    <span className="font-semibold text-brand-green">{formatIdr(activityQuote.activitySubtotal)}</span>
-                  )}
-                </div>
-                {activityQuote.childCount > 0 && activityQuote.childSubtotal > 0 ? (
-                  <div className="flex justify-between items-center mb-2 text-sm text-brand-green-light">
-                    <span>Children · {formatIdr(activityQuote.childUnitPrice)} × {activityQuote.childCount}</span>
-                    <span className="font-semibold text-brand-green">{formatIdr(activityQuote.childSubtotal)}</span>
-                  </div>
                 ) : null}
-              </>
-            ) : null}
-            {selectedAddons.map(({ addon, qty }) => (
-              <div
-                key={addon.id}
-                className="flex justify-between items-center mb-2 text-sm text-brand-green-light"
-              >
-                <span>{addonSummary(addon, qty, isOutUbud)}</span>
-                <span className="font-semibold text-brand-green">
-                  {addon.quoteOnly ? 'Quoted' : formatIdr(addonAmount(addon, qty, isOutUbud))}
-                </span>
               </div>
-            ))}
-            {(requiredShuttle || pickupFee > 0) && (
-              <div className="flex justify-between items-center mb-3 text-sm text-brand-green-light">
-                <span>
-                  {requiredShuttle
-                    ? requiredShuttleLabel
-                    : pickupFlatFee !== null
-                      ? 'Hotel shuttle (once per booking)'
-                      : `Pickup & transfer${sameDropOff ? ' (round trip)' : ''}`}
-                </span>
-                <span className={`font-semibold ${pickupFee > 0 ? 'text-red-600' : 'text-brand-green'}`}>
-                  {formatIdr(pickupFee)}
-                </span>
-              </div>
-            )}
-            <div className="flex justify-between items-end mb-5">
-              <span className="text-brand-green-light font-bold">Total Estimate</span>
-              {tierPromoActive || (mixedQuote && mixedQuote.discountAmount > 0) ? (
-                <PromoPrice
-                  price={totalCost}
-                  originalPrice={compareAtTotal}
-                  variant="total"
-                  tierLabel={
-                    mixedQuote
-                      ? `Combo · ${mixedQuote.discountPercent}% off`
-                      : packageCompareAt
-                        ? `Package · save ${formatIdr(packageCompareAt - activityTotal)}`
-                        : activityQuote?.tierLabel
-                  }
-                />
-              ) : (
-                <span className="text-3xl font-bold text-brand-green">{formatIdr(totalCost)}</span>
+
+              {mixedQuote ? (
+                <ul className="space-y-3">
+                  {mixedQuote.quotes.map((q) => {
+                    const lineCompare = getCompareAtSubtotal(q)
+                    const linePromo = hasTierPromo(q)
+                    const isTandemLine = q.activityId === 'tandem-atv'
+                    const isSingleAtv = q.activityId === 'single-atv'
+                    const lineDetail = isTandemLine
+                      ? `${q.units} bike${q.units === 1 ? '' : 's'} · ${q.units * 2} riders · ${formatIdr(q.unitPrice)} each`
+                      : isSingleAtv
+                        ? `${q.units} bike${q.units === 1 ? '' : 's'} · ${formatIdr(q.unitPrice)} each`
+                        : q.unitLabel === 'booking'
+                          ? `Once per booking · ${formatIdr(q.unitPrice)}`
+                          : `${formatIdr(q.unitPrice)} × ${q.units} guest${q.units === 1 ? '' : 's'}`
+                    return (
+                      <li key={q.activityId} className="space-y-1">
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="min-w-0">
+                            <p className="text-sm font-bold text-brand-green">
+                              {ACTIVITY_SHORT_LABEL[q.activityId] ?? q.activityId}
+                            </p>
+                            <p className="text-xs text-brand-green-light mt-0.5 leading-relaxed">
+                              {lineDetail}
+                            </p>
+                            {linePromo ? (
+                              <span className="mt-1 inline-flex rounded-full bg-brand-green/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-brand-green">
+                                {q.tierLabel}
+                              </span>
+                            ) : null}
+                          </div>
+                          <div className="text-right shrink-0">
+                            {linePromo ? (
+                              <span className="block text-[11px] text-brand-green-light line-through opacity-70">
+                                {formatIdr(lineCompare)}
+                              </span>
+                            ) : null}
+                            <span className="text-sm font-bold text-brand-green tabular-nums">
+                              {formatIdr(q.activitySubtotal)}
+                            </span>
+                          </div>
+                        </div>
+                        {q.childCount > 0 && q.childSubtotal > 0 ? (
+                          <div className="flex justify-between gap-3 text-xs text-brand-green-light pl-0.5">
+                            <span>
+                              Children · {formatIdr(q.childUnitPrice)} × {q.childCount}
+                            </span>
+                            <span className="font-semibold text-brand-green tabular-nums">
+                              {formatIdr(q.childSubtotal)}
+                            </span>
+                          </div>
+                        ) : null}
+                      </li>
+                    )
+                  })}
+                </ul>
+              ) : activityQuote ? (
+                <div className="space-y-1">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <p className="text-sm font-bold text-brand-green">{activeTour.title}</p>
+                      <p className="text-xs text-brand-green-light mt-0.5 leading-relaxed">
+                        {activityQuote.activityId === 'tandem-atv'
+                          ? `${adults} riders · ${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} ${activityQuote.unitLabel}`
+                          : activeTour.fixedPax
+                            ? `Package for ${adults} guests`
+                            : activityQuote.unitLabel === 'booking'
+                              ? `Once per booking · ${adults} guest${adults === 1 ? '' : 's'}`
+                              : `${formatIdr(activityQuote.unitPrice)} × ${activityQuote.units} adult(s)`}
+                      </p>
+                      {tierPromoActive && activityQuote.tierLabel ? (
+                        <span className="mt-1 inline-flex rounded-full bg-brand-green/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-brand-green">
+                          {activityQuote.tierLabel}
+                        </span>
+                      ) : null}
+                    </div>
+                    <div className="text-right shrink-0">
+                      {tierPromoActive ? (
+                        <span className="block text-[11px] text-brand-green-light line-through opacity-70">
+                          {formatIdr(compareAtActivityTotal)}
+                        </span>
+                      ) : null}
+                      <span className="text-sm font-bold text-brand-green tabular-nums">
+                        {formatIdr(activityQuote.activitySubtotal)}
+                      </span>
+                    </div>
+                  </div>
+                  {activityQuote.childCount > 0 && activityQuote.childSubtotal > 0 ? (
+                    <div className="flex justify-between gap-3 text-xs text-brand-green-light">
+                      <span>
+                        Children · {formatIdr(activityQuote.childUnitPrice)} × {activityQuote.childCount}
+                      </span>
+                      <span className="font-semibold text-brand-green tabular-nums">
+                        {formatIdr(activityQuote.childSubtotal)}
+                      </span>
+                    </div>
+                  ) : null}
+                </div>
+              ) : null}
+
+              {mixedQuote && mixedQuote.discountAmount > 0 ? (
+                <div className="flex justify-between items-center gap-3 rounded-xl bg-brand-green/10 px-3 py-2.5">
+                  <span className="text-sm font-bold text-brand-green">
+                    Combo discount · {mixedQuote.discountPercent}% off
+                  </span>
+                  <span className="text-sm font-bold text-brand-green tabular-nums">
+                    −{formatIdr(mixedQuote.discountAmount)}
+                  </span>
+                </div>
+              ) : null}
+
+              {selectedAddons.map(({ addon, qty }) => (
+                <div
+                  key={addon.id}
+                  className="flex justify-between items-center gap-3 text-sm text-brand-green-light"
+                >
+                  <span>{addonSummary(addon, qty, isOutUbud)}</span>
+                  <span className="font-semibold text-brand-green tabular-nums">
+                    {addon.quoteOnly ? 'Quoted' : formatIdr(addonAmount(addon, qty, isOutUbud))}
+                  </span>
+                </div>
+              ))}
+
+              {(requiredShuttle || pickupFee > 0) && (
+                <div className="flex justify-between items-center gap-3 text-sm text-brand-green-light">
+                  <span>
+                    {requiredShuttle
+                      ? requiredShuttleLabel
+                      : pickupFlatFee !== null
+                        ? 'Hotel shuttle (once per booking)'
+                        : `Pickup & transfer${sameDropOff ? ' (round trip)' : ''}`}
+                  </span>
+                  <span
+                    className={`font-semibold tabular-nums ${
+                      pickupFee > 0 ? 'text-red-600' : 'text-brand-green'
+                    }`}
+                  >
+                    {formatIdr(pickupFee)}
+                  </span>
+                </div>
               )}
+
+              <div className="border-t border-brand-green/10 pt-3 flex justify-between items-end gap-3">
+                <div>
+                  <p className="text-sm font-bold text-brand-green">Total estimate</p>
+                  {totalSavings > 0 ? (
+                    <p className="text-xs text-brand-green-light mt-0.5">
+                      List {formatIdr(compareAtTotal)} · you save {formatIdr(totalSavings)}
+                    </p>
+                  ) : null}
+                </div>
+                {totalSavings > 0 ? (
+                  <PromoPrice
+                    price={totalCost}
+                    originalPrice={compareAtTotal}
+                    variant="total"
+                  />
+                ) : (
+                  <span className="text-3xl font-bold text-brand-green tabular-nums">
+                    {formatIdr(totalCost)}
+                  </span>
+                )}
+              </div>
             </div>
-            
+
             <button 
               type="button"
               onClick={handleBook}
@@ -1866,7 +2099,81 @@ export function BookingPopup({
         </div>
         </div>
       </div>
-    </div>,
+    </div>
+
+    {showPinMap && effectiveWantsPickup ? (
+      <div
+        className="fixed inset-0 z-[400] flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm p-0 sm:p-6"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Set your hotel pin"
+        onClick={() => setShowPinMap(false)}
+      >
+        <div
+          className="relative flex w-full max-w-lg max-h-[92vh] flex-col overflow-hidden rounded-t-3xl sm:rounded-3xl bg-sand shadow-2xl"
+          onClick={(event) => event.stopPropagation()}
+        >
+          <div className="flex items-start justify-between gap-3 bg-brand-green px-4 py-3.5 text-sand">
+            <div className="min-w-0">
+              <p className="flex items-center gap-2 text-sm font-black uppercase tracking-wide">
+                <MapPin className="h-4 w-4 shrink-0" aria-hidden />
+                Set your hotel pin
+              </p>
+              <ol className="mt-1.5 list-decimal space-y-0.5 pl-5 text-xs leading-relaxed text-sand/90">
+                <li>Search your hotel name, or tap <strong>Use my location</strong></li>
+                <li>Or tap anywhere on the map to drop the pin</li>
+                <li>Confirm below — your pin sets the shuttle price</li>
+              </ol>
+            </div>
+            <button
+              type="button"
+              onClick={() => setShowPinMap(false)}
+              className="shrink-0 rounded-full bg-white/15 p-2.5 text-sand hover:bg-white/25 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sand/60"
+              aria-label="Close map"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+
+          <div className="relative h-[min(52vh,420px)] min-h-[280px] w-full bg-sand-dark">
+            <MapPicker initialPosition={location ?? UBUD_CENTER} onLocationSelect={handlePinSelect} />
+          </div>
+
+          {pinSet ? (
+            <p className="flex items-start gap-2 bg-green-50 px-4 py-3 text-sm font-bold text-brand-green">
+              <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0" aria-hidden />
+              <span>
+                Pin set — {isOutUbud ? 'Outside Ubud' : 'Ubud area'}
+                {pickupFee > 0 ? ` · Pickup ${formatIdr(pickupFee)}` : ' · No extra pickup fee'}
+                <span className="block text-xs font-semibold text-brand-green-light">
+                  Wrong spot? Move the pin on the map, then tap Done.
+                </span>
+              </span>
+            </p>
+          ) : (
+            <p className="bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800">
+              Pin not set yet — it starts at Ubud centre. Search, use your location, or tap the map.
+            </p>
+          )}
+
+          <div className="border-t border-brand-green/10 bg-sand p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+            <button
+              type="button"
+              onClick={() => setShowPinMap(false)}
+              disabled={!pinSet}
+              className={`w-full min-h-[48px] rounded-xl py-3.5 text-base font-bold transition-colors ${
+                pinSet
+                  ? 'bg-brand-green text-sand hover:bg-brand-green-light'
+                  : 'bg-gray-200 text-brand-green-light cursor-not-allowed'
+              }`}
+            >
+              {pinSet ? 'Done — use this pin' : 'Set a pin to continue'}
+            </button>
+          </div>
+        </div>
+      </div>
+    ) : null}
+    </>,
     document.body
   )
 }

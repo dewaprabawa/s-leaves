@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckCircle2, MessageCircle, MapPin } from 'lucide-react'
+import { CheckCircle2, MessageCircle, MapPin, Pencil } from 'lucide-react'
 import {
   INVOICE_PAYMENT_METHODS_LINE,
   openInvoiceWhatsApp,
@@ -23,19 +23,29 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
 
   return (
     <div className="w-full p-6 md:p-8 flex flex-col max-h-[95vh] overflow-y-auto">
-      <div className="flex items-start gap-3 mb-5">
-        <div className="w-10 h-10 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
-          <CheckCircle2 className="w-5 h-5 text-brand-green" />
+      <div className="flex items-start justify-between gap-3 mb-5">
+        <div className="flex items-start gap-3 min-w-0">
+          <div className="w-10 h-10 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
+            <CheckCircle2 className="w-5 h-5 text-brand-green" />
+          </div>
+          <div className="min-w-0">
+            <h2 className="text-2xl md:text-3xl font-serif text-brand-green font-bold">
+              Agree &amp; pay by invoice
+            </h2>
+            <p className="text-sm text-brand-green-light mt-1 leading-relaxed">
+              Review your booking below, then tap <strong>Agree — send invoice to WhatsApp</strong>.
+              We confirm and send payment instructions on that thread.
+            </p>
+          </div>
         </div>
-        <div>
-          <h2 className="text-2xl md:text-3xl font-serif text-brand-green font-bold">
-            Agree &amp; pay by invoice
-          </h2>
-          <p className="text-sm text-brand-green-light mt-1 leading-relaxed">
-            Review your booking below, then tap <strong>Agree — send invoice to WhatsApp</strong>.
-            We confirm and send payment instructions on that thread.
-          </p>
-        </div>
+        <button
+          type="button"
+          onClick={onBack}
+          className="shrink-0 inline-flex min-h-[44px] items-center gap-1.5 rounded-xl border border-brand-green/25 bg-white px-3.5 py-2 text-sm font-bold text-brand-green hover:bg-sand transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-green/40"
+        >
+          <Pencil className="h-3.5 w-3.5" aria-hidden />
+          Edit
+        </button>
       </div>
 
       <div className="rounded-2xl border border-brand-green/15 bg-white p-4 md:p-5 mb-4 space-y-2">
@@ -166,14 +176,15 @@ export default function InvoicePaymentPanel({ invoice, onBack, onClose }: Props)
           <button
             type="button"
             onClick={onBack}
-            className="flex-1 py-2.5 text-sm font-semibold text-brand-green-light hover:text-brand-green"
+            className="flex-1 inline-flex min-h-[44px] items-center justify-center gap-1.5 rounded-xl border border-brand-green/20 bg-white py-2.5 text-sm font-bold text-brand-green hover:bg-sand transition-colors"
           >
-            ← Edit booking
+            <Pencil className="h-3.5 w-3.5" aria-hidden />
+            Edit booking
           </button>
           <button
             type="button"
             onClick={onClose}
-            className="flex-1 py-2.5 text-sm font-semibold text-brand-green-light hover:text-brand-green"
+            className="flex-1 min-h-[44px] rounded-xl py-2.5 text-sm font-semibold text-brand-green-light hover:text-brand-green hover:bg-sand/60 transition-colors"
           >
             Close
           </button>

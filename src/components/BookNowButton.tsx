@@ -78,7 +78,7 @@ export const ATV_FLEET_TOUR: TourConfig = {
   title: "ATV Ride — single and/or tandem",
   times: ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
   adultPrice: getListPrice("single-atv"),
-  kidPrice: 700000,
+  kidPrice: null,
   minPax: 1,
   meetsAtArena: true,
   privateShuttle: true,

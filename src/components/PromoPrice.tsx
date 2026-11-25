@@ -86,15 +86,15 @@ export default function PromoPrice({
     return (
       <div className={`text-right ${className}`}>
         {tierLabel ? (
-          <span className="block text-[10px] font-bold uppercase tracking-wider text-brand-green mb-0.5">
+          <span className="mb-1.5 inline-flex max-w-full items-center rounded-full bg-brand-green px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-sand">
             {tierLabel}
           </span>
         ) : null}
         <span className="block text-sm text-brand-green-light line-through opacity-70">
           {format(originalPrice)}
         </span>
-        <span className="text-3xl font-bold text-brand-green">{format(price)}</span>
-        <span className="block text-xs font-bold text-brand-green mt-0.5">
+        <span className="block text-3xl font-bold text-brand-green leading-tight">{format(price)}</span>
+        <span className="mt-1 inline-flex items-center rounded-full bg-accent-gold/20 px-2.5 py-0.5 text-xs font-bold text-accent-gold-dark">
           Save {format(savings)}
         </span>
       </div>

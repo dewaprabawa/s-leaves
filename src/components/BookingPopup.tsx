@@ -246,6 +246,8 @@ export function BookingPopup({
   const [selectedTourId, setSelectedTourId] = useState(tour?.id || "");
   const [showDetails, setShowDetails] = useState(false);
   const [showPinMap, setShowPinMap] = useState(false);
+  /** Safari’s location prompt must sit above the booking sheet to be tappable. */
+  const [locationPromptOpen, setLocationPromptOpen] = useState(false);
   const [wantsPickup, setWantsPickup] = useState(false);
   /** Return to the same hotel is always included with hotel pickup — no extra tick. */
   const sameDropOff = true;
@@ -292,6 +294,7 @@ export function BookingPopup({
       setNotes("");
       setShowDetails(false);
       setShowPinMap(false);
+      setLocationPromptOpen(false);
       setWantsPickup(
         tour.pickupNotOffered !== true &&
           (tour.requiredShuttle === true ||
@@ -354,13 +357,31 @@ export function BookingPopup({
     })
   }, [activeTour?.id])
 
-  // Keep dialog above the fixed navbar and lock page scroll while open
+  // Keep dialog above the fixed navbar and lock page scroll while open.
+  // iOS Safari’s toolbar and keyboard sit on top of `bottom: 0`. Track the
+  // visual viewport so the invoice button and “use this pin” stay tappable.
   useEffect(() => {
     if (!isOpen) return
     const previousOverflow = document.body.style.overflow
     document.body.style.overflow = "hidden"
+    const root = document.documentElement
+    const syncViewport = () => {
+      const vv = window.visualViewport
+      const inset = vv
+        ? Math.max(0, window.innerHeight - vv.offsetTop - vv.height)
+        : 0
+      root.style.setProperty('--booking-vv-bottom', `${Math.round(inset)}px`)
+    }
+    syncViewport()
+    window.visualViewport?.addEventListener('resize', syncViewport)
+    window.visualViewport?.addEventListener('scroll', syncViewport)
+    window.addEventListener('resize', syncViewport)
     return () => {
       document.body.style.overflow = previousOverflow
+      window.visualViewport?.removeEventListener('resize', syncViewport)
+      window.visualViewport?.removeEventListener('scroll', syncViewport)
+      window.removeEventListener('resize', syncViewport)
+      root.style.removeProperty('--booking-vv-bottom')
     }
   }, [isOpen])
 
@@ -705,6 +726,23 @@ export function BookingPopup({
     !activeTour.allowedWeekdays?.length ||
     (date.length === 10 && activeTour.allowedWeekdays.includes(weekdayOfIso(date)))
   const canSubmit = nameOk && locationOk && !isInvalidPax && dateAllowed;
+  const submitHint = !nameOk
+    ? 'Enter your name to continue'
+    : !dateAllowed
+      ? 'Pick a Sunday or Tuesday'
+      : fleetNeedsBike
+        ? 'Add at least one ATV'
+        : fleetKidsNeedSingle
+          ? 'Add a single ATV for child seats'
+          : isInvalidPax
+            ? includesRafting && adults < minAdults
+              ? 'Rafting needs 2 riders — add a bike'
+              : `Need ${minAdults} riders to continue`
+            : needsHotelAddress && (!pinSet || !location)
+              ? 'Set your hotel pin to continue'
+              : needsHotelAddress && locationDetails.trim().length < 2
+                ? 'Add your hotel address to continue'
+                : null
   const detailTourSlug = getTourSlugForActivity(
     activeTour.pricingActivityId ?? activeTour.id,
   );
@@ -976,14 +1014,15 @@ export function BookingPopup({
   return createPortal(
     <>
     <div
-      className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 md:p-6"
+      className={`fixed inset-x-0 top-0 z-[200] flex justify-center bg-black/60 p-3 sm:p-6 ${locationPromptOpen ? 'pointer-events-none' : ''}`}
+      style={{ bottom: 'var(--booking-vv-bottom, 0px)' }}
       role="dialog"
       aria-modal="true"
       aria-label="Book experience"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-4xl max-h-[95vh]"
+        className="relative flex h-full min-h-0 w-full max-w-4xl flex-col"
         onClick={(event) => event.stopPropagation()}
       >
         <button
@@ -995,14 +1034,14 @@ export function BookingPopup({
           <X className="w-5 h-5" />
         </button>
 
-        <div className="bg-sand w-full max-h-[95vh] overflow-y-auto rounded-3xl shadow-2xl relative flex flex-col md:flex-row">
+        <div className="relative flex min-h-0 w-full flex-1 flex-col overflow-y-auto overscroll-contain rounded-3xl bg-sand shadow-2xl md:flex-row">
         {showDetails && detailTourSlug ? (
           <BookingTourDetailPanel
             tourSlug={detailTourSlug}
             onClose={() => setShowDetails(false)}
           />
         ) : null}
-        <div className="md:hidden sticky top-0 z-[300] flex items-center justify-between gap-3 px-4 py-3 bg-sand/95 backdrop-blur border-b border-brand-green/10 rounded-t-3xl">
+        <div className="md:hidden sticky top-0 z-[300] flex items-center justify-between gap-3 px-4 py-3 bg-sand border-b border-brand-green/10 rounded-t-3xl">
           <h2 className="text-xl font-serif text-brand-green font-bold truncate">Book Experience</h2>
           <button
             type="button"
@@ -1058,7 +1097,11 @@ export function BookingPopup({
               </div>
             )
           ) : (
-            <MapPicker initialPosition={UBUD_CENTER} onLocationSelect={handlePinSelect} />
+            <MapPicker
+              initialPosition={UBUD_CENTER}
+              onLocationSelect={handlePinSelect}
+              onLocatingChange={setLocationPromptOpen}
+            />
           )}
           <div className="hidden md:block absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur text-brand-green p-3.5 rounded-xl text-sm font-medium shadow-lg z-[1000] border border-brand-green/10">
             <strong className="block mb-1">{effectiveWantsPickup ? "Pickup Location" : "Meeting Point"}</strong>
@@ -2082,17 +2125,19 @@ export function BookingPopup({
               </div>
             </div>
 
+            <div className="sticky bottom-0 z-20 -mx-6 mt-4 border-t border-brand-green/10 bg-sand px-6 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))] md:-mx-8 md:px-8">
             <button 
               type="button"
               onClick={handleBook}
               disabled={!canSubmit}
-              className={`w-full py-4 rounded-xl font-bold text-lg transition-all ${!canSubmit ? 'bg-gray-200 text-brand-green-light cursor-not-allowed' : 'bg-brand-green text-sand hover:bg-brand-green-light shadow-lg hover:shadow-xl hover:-translate-y-0.5'}`}
+              className={`w-full min-h-[52px] touch-manipulation py-4 rounded-xl font-bold text-lg transition-all ${!canSubmit ? 'bg-gray-200 text-brand-green-light cursor-not-allowed' : 'bg-brand-green text-sand hover:bg-brand-green-light shadow-lg hover:shadow-xl hover:-translate-y-0.5'}`}
             >
-              Agree &amp; get invoice
+              {submitHint ?? 'Agree & get invoice'}
             </button>
             <p className="text-xs text-brand-green-light text-center mt-3">
               Next: download PDF invoice with our logo, send it on WhatsApp, then pay using the instructions we send on that thread.
             </p>
+            </div>
           </div>
           </div>
           )}
@@ -2103,14 +2148,15 @@ export function BookingPopup({
 
     {showPinMap && effectiveWantsPickup ? (
       <div
-        className="fixed inset-0 z-[400] flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-sm p-0 sm:p-6"
+        className={`fixed inset-x-0 top-0 z-[400] flex items-end sm:items-center justify-center bg-black/70 p-0 sm:p-6 ${locationPromptOpen ? 'pointer-events-none' : ''}`}
+        style={{ bottom: 'var(--booking-vv-bottom, 0px)' }}
         role="dialog"
         aria-modal="true"
         aria-label="Set your hotel pin"
         onClick={() => setShowPinMap(false)}
       >
         <div
-          className="relative flex w-full max-w-lg max-h-[92vh] flex-col overflow-hidden rounded-t-3xl sm:rounded-3xl bg-sand shadow-2xl"
+          className="relative flex h-[min(100%,40rem)] max-h-full min-h-0 w-full max-w-lg flex-col overflow-hidden rounded-t-3xl sm:rounded-3xl bg-sand shadow-2xl"
           onClick={(event) => event.stopPropagation()}
         >
           <div className="flex items-start justify-between gap-3 bg-brand-green px-4 py-3.5 text-sand">
@@ -2135,8 +2181,12 @@ export function BookingPopup({
             </button>
           </div>
 
-          <div className="relative h-[min(52vh,420px)] min-h-[280px] w-full bg-sand-dark">
-            <MapPicker initialPosition={location ?? UBUD_CENTER} onLocationSelect={handlePinSelect} />
+          <div className="relative min-h-0 w-full flex-1 bg-sand-dark">
+            <MapPicker
+              initialPosition={location ?? UBUD_CENTER}
+              onLocationSelect={handlePinSelect}
+              onLocatingChange={setLocationPromptOpen}
+            />
           </div>
 
           {pinSet ? (
@@ -2146,7 +2196,7 @@ export function BookingPopup({
                 Pin set — {isOutUbud ? 'Outside Ubud' : 'Ubud area'}
                 {pickupFee > 0 ? ` · Pickup ${formatIdr(pickupFee)}` : ' · No extra pickup fee'}
                 <span className="block text-xs font-semibold text-brand-green-light">
-                  Wrong spot? Move the pin on the map, then tap Done.
+                  Wrong spot? Move the pin on the map, then tap Use this pin.
                 </span>
               </span>
             </p>
@@ -2156,18 +2206,18 @@ export function BookingPopup({
             </p>
           )}
 
-          <div className="border-t border-brand-green/10 bg-sand p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
+          <div className="relative z-[500] shrink-0 border-t border-brand-green/10 bg-sand p-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
             <button
               type="button"
               onClick={() => setShowPinMap(false)}
               disabled={!pinSet}
-              className={`w-full min-h-[48px] rounded-xl py-3.5 text-base font-bold transition-colors ${
+              className={`w-full min-h-[48px] touch-manipulation rounded-xl py-3.5 text-base font-bold transition-colors ${
                 pinSet
                   ? 'bg-brand-green text-sand hover:bg-brand-green-light'
                   : 'bg-gray-200 text-brand-green-light cursor-not-allowed'
               }`}
             >
-              {pinSet ? 'Done — use this pin' : 'Set a pin to continue'}
+              {pinSet ? 'Use this pin' : 'Set a pin to continue'}
             </button>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Barlow_Condensed, DM_Sans } from "next/font/google"
 import "../globals.css"
 import Link from "next/link"
@@ -39,6 +39,13 @@ const barlow = Barlow_Condensed({
   subsets: ["latin"],
   weight: ["500", "600", "700", "800"],
 })
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  interactiveWidget: "resizes-content",
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

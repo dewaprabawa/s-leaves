@@ -42,12 +42,33 @@ function MapController({ center }: { center: L.LatLng | null }) {
   return null;
 }
 
+/** Modal maps often open at 0×0. Until Leaflet remeasures, taps land off the pin. */
+function MapReady() {
+  const map = useMap();
+  useEffect(() => {
+    const fix = () => map.invalidateSize();
+    const soon = window.setTimeout(fix, 50);
+    const later = window.setTimeout(fix, 300);
+    const observer = new ResizeObserver(fix);
+    observer.observe(map.getContainer());
+    return () => {
+      window.clearTimeout(soon);
+      window.clearTimeout(later);
+      observer.disconnect();
+    };
+  }, [map]);
+  return null;
+}
+
 export default function MapPicker({
   onLocationSelect,
-  initialPosition
+  initialPosition,
+  onLocatingChange,
 }: {
   onLocationSelect: (lat: number, lng: number, isOutUbud: boolean, placeName?: string) => void,
   initialPosition?: { lat: number, lng: number } | null
+  /** True while Safari’s location prompt is up, so the booking sheet can stop covering it. */
+  onLocatingChange?: (locating: boolean) => void
 }) {
   const [position, setPosition] = useState<L.LatLng | null>(
     initialPosition ? new L.LatLng(initialPosition.lat, initialPosition.lng) : null
@@ -112,7 +133,14 @@ export default function MapPicker({
       alert("Location is not available on this device. Please search your hotel or tap the map.");
       return;
     }
+    // Must run inside the tap. A short timeout cancels Safari’s “use this
+    // position” prompt before the guest can tap it.
     setIsLocating(true);
+    onLocatingChange?.(true);
+    const finish = () => {
+      setIsLocating(false);
+      onLocatingChange?.(false);
+    };
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         const newPos = new L.LatLng(pos.coords.latitude, pos.coords.longitude);
@@ -120,20 +148,20 @@ export default function MapPicker({
         setPosition(newPos);
         const distance = getDistance(UBUD_CENTER.lat, UBUD_CENTER.lng, newPos.lat, newPos.lng);
         onLocationSelect(newPos.lat, newPos.lng, distance > UBUD_RADIUS_METERS);
-        setIsLocating(false);
+        finish();
       },
       () => {
-        setIsLocating(false);
-        alert("Could not get your location. Please search your hotel name or tap the map to drop the pin.");
+        finish();
+        alert("Safari did not share your location. Search your hotel name, or tap the map to drop the pin.");
       },
-      { enableHighAccuracy: true, timeout: 10000 }
+      { enableHighAccuracy: false, maximumAge: 120000, timeout: 25000 }
     );
   };
 
   return (
     <div className="relative w-full h-full">
       {/* Search Bar Overlay */}
-      <div className="absolute top-4 left-4 right-16 md:right-4 z-[400]">
+      <div className="absolute top-4 left-4 right-16 md:right-4 z-[500]">
         <form onSubmit={handleSearch} className="flex bg-white rounded-xl shadow-lg border border-brand-green/20 overflow-hidden">
           <input 
             type="text" 
@@ -157,7 +185,7 @@ export default function MapPicker({
         type="button"
         onClick={handleLocate}
         disabled={isLocating}
-        className="absolute top-[74px] right-4 z-[400] inline-flex min-h-[44px] items-center gap-2 rounded-full bg-white px-4 py-2.5 text-sm font-bold text-brand-green shadow-lg border border-brand-green/20 active:scale-[0.98] disabled:opacity-70"
+        className="absolute top-[74px] right-4 z-[500] inline-flex min-h-[44px] touch-manipulation items-center gap-2 rounded-full bg-white px-4 py-2.5 text-sm font-bold text-brand-green shadow-lg border border-brand-green/20 active:scale-[0.98] disabled:opacity-70"
       >
         <LocateFixed className="h-4 w-4 shrink-0" />
         {isLocating ? "Locating…" : "Use my location"}
@@ -169,7 +197,12 @@ export default function MapPicker({
         Tap the map to drop your hotel pin
       </div>
 
-      <MapContainer center={[UBUD_CENTER.lat, UBUD_CENTER.lng]} zoom={12} style={{ height: '100%', width: '100%', zIndex: 0 }}>
+      <MapContainer
+        center={[UBUD_CENTER.lat, UBUD_CENTER.lng]}
+        zoom={12}
+        className="touch-none"
+        style={{ height: '100%', width: '100%', zIndex: 0, touchAction: 'none' }}
+      >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -177,6 +210,7 @@ export default function MapPicker({
         <Circle center={[UBUD_CENTER.lat, UBUD_CENTER.lng]} radius={UBUD_RADIUS_METERS} pathOptions={{ color: '#0a1628', fillColor: '#0a1628', fillOpacity: 0.15 }} />
         <LocationMarker />
         <MapController center={mapCenter} />
+        <MapReady />
       </MapContainer>
     </div>
   );
